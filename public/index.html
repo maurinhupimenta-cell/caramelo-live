@@ -69,13 +69,27 @@ async function tick(){
 
 function render(d){
   const a=d.analise, mkt=d.mercado;
-  const aquece=a.aquecendo;
+  const aquece=a.aquecingo||a.aquecendo;
+  const sig=a.sinal||{};
   const term=a.termometro;
   const maxv=Math.max(...term.map(t=>t.v||0),1);
   const termHtml=term.map((t,i)=>{
     const h=t.v==null?4:Math.max(4,Math.round(t.v/maxv*100));
-    const col=t.v==null?'var(--panel2)':(i===0&&aquece?'var(--greenb)':'var(--blue)');
+    const col=t.v==null?'var(--panel2)':(i===0&&a.aquecendo?'var(--greenb)':'var(--blue)');
     return `<div class="b" style="height:${h}%;background:${col}"><span>${t.v==null?'—':t.v+'%'}</span><small>${t.n}</small></div>`;
+  }).join('');
+
+  // GRAFICO DA LINHA (SVG)
+  const serie=a.serie||[];
+  const chart=lineChart(serie);
+
+  // cor do sinal
+  const sinalCor = /PAGAMENTO|PROTEGER/.test(sig.sinal)?'var(--amber)' : /COMPRA|SUBINDO/.test(sig.sinal)?'var(--greenb)' : /RISCO|RECUO/.test(sig.sinal)?'var(--red)':'var(--muted)';
+
+  // PROXIMOS JOGOS
+  const prox=(d.proximos||[]).map(p=>{
+    const good=p.vale;
+    return `<tr class="${good?'ok':''}"><td>${p.nome}</td><td>${p.odd?'@'+p.odd.toFixed(2):'—'}</td><td>${p.base}%</td><td>${p.amostra}</td><td>${p.justa??'—'}</td><td class="${good?'pos':'neg'}">${p.ev!=null?(p.ev>0?'+':'')+p.ev+'%':'—'}</td><td><span class="tag ${good?'ok':'no'}">${good?'vale':'cara'}</span></td></tr>`;
   }).join('');
 
   const rankHtml=a.ranking.map(r=>{
@@ -83,23 +97,35 @@ function render(d){
     return `<tr class="${good?'ok':''}"><td>@${r.odd.toFixed(2)}</td><td>${r.hit}/${r.tot}</td><td>${r.p}%</td><td>${r.justa??'—'}</td><td class="${good?'pos':'neg'}">${r.ev>0?'+':''}${r.ev}%</td><td><span class="tag ${good?'ok':'no'}">${good?'vale':'cara'}</span></td></tr>`;
   }).join('');
 
-  const sigAtual=a.atual;
   const sigHuman=s=>s.split('').map(c=>c==='1'?'✓':'·').join(' ');
+  const sigAtual=a.atual;
   const sigHtml=a.signatures.map(s=>`<tr><td>${sigHuman(s.sig)}</td><td>${s.n}</td><td>${s.paid}</td><td class="${s.p>=a.base?'pos':''}">${s.p}%</td></tr>`).join('');
-
   const ultimos=d.ultimos.map(u=>`${u.placar} (${u.total})`).join(' &nbsp;·&nbsp; ');
 
   $('#conteudo').innerHTML=`
-    <div class="grid">
-      <div class="card"><h3>Jogos no histórico</h3><div class="big">${a.total}</div><div class="note">${d.liga.toUpperCase()}</div></div>
-      <div class="card"><h3>% que paga ${nomeMkt[mkt]}</h3><div class="big">${a.base}%</div><div class="note">taxa real (base)</div></div>
-      <div class="card"><h3>Odd justa</h3><div class="big">${a.justa??'—'}</div><div class="note">só vale acima disso</div></div>
-      <div class="card"><h3>Formação</h3><div class="big ${aquece?'pos':'neu'}">${aquece?'Esquentando':'Estável'}</div><div class="note">${aquece?'120 acima das longas':'120 perto/abaixo'}</div></div>
+    <div class="sec">Gráfico — ${nomeMkt[mkt]} (linha de % nos últimos jogos)</div>
+    <div class="card">${chart}
+      <div style="display:flex;gap:18px;flex-wrap:wrap;margin-top:12px;font-size:13px">
+        <div><span class="note">Sinal</span><br><b style="color:${sinalCor};font-size:16px">${sig.sinal||'—'}</b></div>
+        <div><span class="note">Zona</span><br><b>${sig.zona||'—'} ${sig.zonaPct!=null?sig.zonaPct+'%':''}</b></div>
+        <div><span class="note">Direção</span><br><b>${sig.direcao||'—'}</b></div>
+        <div><span class="note">Pagamento</span><br><b>${sig.pagamento||'—'}</b></div>
+      </div>
     </div>
 
-    <div class="sec">Termômetro de formação — 120 / 240 / 480 / 960</div>
+    <div class="sec">Próximos jogos — odds e veredito (${nomeMkt[mkt]})</div>
+    <table><thead><tr><th>Jogo</th><th>Odd</th><th>% base</th><th>Amostra</th><th>Odd justa</th><th>EV</th><th>Veredito</th></tr></thead><tbody>${prox||'<tr><td colspan=7>aguardando próximos jogos...</td></tr>'}</tbody></table>
+
+    <div class="grid" style="margin-top:14px">
+      <div class="card"><h3>Jogos no histórico</h3><div class="big">${a.total}</div><div class="note">${d.liga.toUpperCase()}</div></div>
+      <div class="card"><h3>% que paga ${nomeMkt[mkt]}</h3><div class="big">${a.base}%</div><div class="note">taxa real</div></div>
+      <div class="card"><h3>Odd justa</h3><div class="big">${a.justa??'—'}</div><div class="note">só vale acima</div></div>
+      <div class="card"><h3>Formação</h3><div class="big ${a.aquecendo?'pos':'neu'}">${a.aquecendo?'Esquentando':'Estável'}</div><div class="note">120 vs longas</div></div>
+    </div>
+
+    <div class="sec">Termômetro 120 / 240 / 480 / 960</div>
     <div class="card"><div class="therm">${termHtml}</div>
-      <div class="hint">Quando a 120 (curta) fica verde e acima das longas, ${nomeMkt[mkt]} está esquentando.</div></div>
+      <div class="hint">120 verde e acima das longas = ${nomeMkt[mkt]} esquentando.</div></div>
 
     <div class="sec">Últimos resultados</div>
     <div class="card"><div style="font-size:13px">${ultimos}</div></div>
@@ -107,12 +133,33 @@ function render(d){
     <div class="sec">Ranking de odds — onde a base paga mais que a odd embute</div>
     <table><thead><tr><th>Odd</th><th>Acertos</th><th>% base</th><th>Odd justa</th><th>EV</th><th>Veredito</th></tr></thead><tbody>${rankHtml}</tbody></table>
 
-    <div class="sec">Assinatura atual (últimos 5 jogos): ${sigHuman(sigAtual.sig)}</div>
-    <div class="card"><div style="font-size:13px">Esse padrão apareceu <b>${sigAtual.n}</b> vezes no histórico e pagou ${nomeMkt[mkt]} no jogo seguinte <b class="${sigAtual.p>=a.base?'pos':'neg'}">${sigAtual.p}%</b> das vezes ${sigAtual.p>=a.base?'(acima da média — sinal a favor)':'(abaixo da média)'}.</div></div>
+    <div class="sec">Assinatura atual (últimos 5): ${sigHuman(sigAtual.sig)}</div>
+    <div class="card"><div style="font-size:13px">Apareceu <b>${sigAtual.n}</b> vezes e pagou depois <b class="${sigAtual.p>=a.base?'pos':'neg'}">${sigAtual.p}%</b> ${sigAtual.p>=a.base?'(acima da média)':'(abaixo)'}.</div></div>
 
     <div class="sec">Top assinaturas que mais pagam depois</div>
     <table><thead><tr><th>Padrão (últimos 5)</th><th>Vezes</th><th>Pagou</th><th>%</th></tr></thead><tbody>${sigHtml}</tbody></table>
   `;
+}
+
+function lineChart(serie){
+  if(!serie.length)return '<div class="note">sem dados para o gráfico</div>';
+  const W=680,H=180,pad=24;
+  const min=Math.min(...serie),max=Math.max(...serie);
+  const rng=Math.max(1,max-min);
+  const x=i=>pad+i*((W-2*pad)/(serie.length-1||1));
+  const y=v=>pad+(1-(v-min)/rng)*(H-2*pad);
+  const pts=serie.map((v,i)=>x(i)+','+y(v)).join(' ');
+  const last=serie[serie.length-1], prev=serie[serie.length-4]??last;
+  const cor=last>prev?'#3fb950':last<prev?'#da3633':'#8b98a8';
+  const dots=serie.map((v,i)=>`<circle cx="${x(i)}" cy="${y(v)}" r="2.5" fill="${i===serie.length-1?cor:'#5a6677'}"/>`).join('');
+  return `<svg viewBox="0 0 ${W} ${H}" style="width:100%;height:auto">
+    <line x1="${pad}" y1="${pad}" x2="${W-pad}" y2="${pad}" stroke="#2d3543" stroke-dasharray="3 3"/>
+    <line x1="${pad}" y1="${H-pad}" x2="${W-pad}" y2="${H-pad}" stroke="#2d3543" stroke-dasharray="3 3"/>
+    <polyline points="${pts}" fill="none" stroke="${cor}" stroke-width="2"/>
+    ${dots}
+    <text x="${W-pad}" y="${pad-6}" fill="#8b98a8" font-size="11" text-anchor="end">Topo ${max}%</text>
+    <text x="${W-pad}" y="${H-pad+14}" fill="#8b98a8" font-size="11" text-anchor="end">Fundo ${min}%</text>
+  </svg>`;
 }
 
 ligaSel.onchange=tick;

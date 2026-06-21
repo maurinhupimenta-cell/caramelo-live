@@ -13,27 +13,44 @@ const REFRESH_MS = 15000;
 // cache em memoria: liga -> { games, computed, lastUpdated, fetchedAt }
 const store = {};
 
-function parseGame(s) {
-  if (typeof s !== "string") return null;
-  const m = s.match(/^(.+?)(\d+)-(\d+)/);
-  if (!m) return null;
-  const a = +m[2], b = +m[3];
-  if (!Number.isFinite(a) || !Number.isFinite(b)) return null;
+function parseOdds(s) {
   const odds = {};
   s.replace(/([a-z0-9]+)@([\d.]+)/gi, (_, k, v) => { odds[k] = parseFloat(v); });
-  return { nome: m[1].trim(), a, b, total: a + b, odds };
+  return odds;
+}
+
+function parseGame(s) {
+  if (typeof s !== "string") return null;
+  // aceita placar normal (1-3) e notacao 5+ (ex: 5+-0, 1-5+)
+  const m = s.match(/^(.+?)(\d+|\d*\+)-(\d+|\d*\+)/);
+  if (!m) return null;
+  const norm = x => x.includes("+") ? 5 : +x;
+  const a = norm(m[2]), b = norm(m[3]);
+  if (!Number.isFinite(a) || !Number.isFinite(b)) return null;
+  return { nome: m[1].trim(), a, b, total: a + b, odds: parseOdds(s) };
+}
+
+function parseUpcoming(s) {
+  if (typeof s !== "string") return null;
+  if (/\d-\d|\d\+-|-\d\+/.test(s)) return null;  // tem placar (inc. 5+) = nao e futuro
+  if (!/@[\d.]+/.test(s)) return null;
+  const nome = s.split(/\s{2,}|\n/)[0].replace(/[a-z0-9]+@[\d.]+/gi, "").trim();
+  return { nome, odds: parseOdds(s) };
 }
 
 function decodeRows(json) {
   const rows = (json && json.table && json.table.rows) || [];
-  const games = [];
+  const games = [], upcoming = [];
   for (const row of rows) {
     for (const cell of (row.c || [])) {
-      const g = parseGame(cell && cell.v);
+      const v = cell && cell.v;
+      const u = parseUpcoming(v);
+      if (u && u.nome) { upcoming.push(u); continue; }
+      const g = parseGame(v);
       if (g) games.push(g);
     }
   }
-  return games;
+  return { games, upcoming: upcoming.slice(0, 6) };
 }
 
 function pays(g, mkt) {
@@ -49,6 +66,57 @@ function windowPct(games, mkt, n) {
   const s = games.slice(-n);
   if (!s.length) return null;
   return pct(s.filter(g => pays(g, mkt)).length, s.length);
+}
+
+function chartSeries(games, mkt, win = 8) {
+  const vals = [];
+  for (let i = win; i <= games.length; i++) {
+    const block = games.slice(i - win, i);
+    vals.push(pct(block.filter(g => pays(g, mkt)).length, win));
+  }
+  return vals.slice(-40);
+}
+
+function zoneSignal(series) {
+  if (!series.length) return { zona: "—", zonaPct: 0, direcao: "—", pagamento: "—", sinal: "AGUARDAR" };
+  const sorted = series.slice().sort((a, b) => a - b);
+  const p = (q) => sorted[Math.min(sorted.length - 1, Math.max(0, Math.round((sorted.length - 1) * q)))];
+  const min = p(0.05), max = p(0.95), cur = series[series.length - 1];
+  const range = Math.max(1, max - min);
+  const zonaPct = Math.round((Math.max(min, Math.min(max, cur)) - min) / range * 100);
+  const prev = series[series.length - 4] ?? cur;
+  const subindo = cur > prev, descendo = cur < prev;
+  const zona = zonaPct <= 25 ? "Fundo" : zonaPct <= 45 ? "Baixa" : zonaPct >= 78 ? "Topo" : zonaPct >= 60 ? "Alta" : "Meio";
+  let sinal = "AGUARDAR", pagamento = "—";
+  if (zonaPct >= 78 && descendo) { sinal = "PAGAMENTO"; pagamento = "Ponto bom"; }
+  else if (zonaPct >= 60 && descendo) { sinal = "PROTEGER PARCIAL"; pagamento = "Parcial"; }
+  else if (zonaPct <= 35 && subindo) { sinal = "COMPRA NASCENDO"; pagamento = "Alvo meio/topo"; }
+  else if (zonaPct >= 70) { sinal = "RISCO ALTO (caro)"; }
+  else if (subindo) { sinal = "SUBINDO"; }
+  else if (descendo) { sinal = "RECUO"; }
+  return { zona, zonaPct, direcao: subindo ? "Subindo" : descendo ? "Descendo" : "Lateral", pagamento, sinal };
+}
+
+function evalUpcoming(upcoming, games, mkt) {
+  const byOdd = {};
+  for (const g of games) {
+    const o = g.odds[mkt]; if (!o) continue;
+    const k = o.toFixed(2);
+    (byOdd[k] = byOdd[k] || { tot: 0, hit: 0 });
+    byOdd[k].tot++; if (pays(g, mkt)) byOdd[k].hit++;
+  }
+  const baseGeral = pct(games.filter(g => pays(g, mkt)).length, games.length);
+  return upcoming.map(u => {
+    const odd = u.odds[mkt];
+    let p = baseGeral, amostra = "geral";
+    if (odd) {
+      const k = odd.toFixed(2);
+      if (byOdd[k] && byOdd[k].tot >= 5) { p = pct(byOdd[k].hit, byOdd[k].tot); amostra = byOdd[k].hit + "/" + byOdd[k].tot; }
+    }
+    const justa = p > 0 ? +(100 / p).toFixed(2) : null;
+    const ev = odd ? Math.round((p / 100 * odd - 1) * 1000) / 10 : null;
+    return { nome: u.nome, odd: odd || null, base: p, amostra, justa, ev, vale: ev != null && ev > 0 };
+  });
 }
 
 function computeMarket(games, mkt) {
@@ -98,10 +166,15 @@ function computeMarket(games, mkt) {
     .sort((a, b) => b.p - a.p)
     .slice(0, 10);
 
+  const serie = chartSeries(games, mkt);
+  const sinal = zoneSignal(serie);
+
   return {
     total, base, justa,
     termometro: wins,
     aquecendo,
+    serie,
+    sinal,
     ranking: ranking.slice(0, 14),
     signatures,
     atual: { sig: atualSig, n: atualStat.n, paid: atualStat.paid, p: pct(atualStat.paid, atualStat.n) }
@@ -113,16 +186,22 @@ async function refreshLiga(liga) {
     const r = await fetch(BASE + liga + ".json", { cache: "no-store" });
     if (!r.ok) throw new Error("HTTP " + r.status);
     const j = await r.json();
-    const games = decodeRows(j);
+    const { games, upcoming } = decodeRows(j);
     if (!games.length) throw new Error("zero jogos");
     store[liga] = {
       games,
+      upcomingRaw: upcoming,
       lastUpdated: j.lastUpdated || (j.table && j.table.lastUpdated) || null,
       fetchedAt: new Date().toISOString(),
       computed: {
         o35: computeMarket(games, "o35"),
         ge5: computeMarket(games, "ge5"),
         o25: computeMarket(games, "o25")
+      },
+      upcoming: {
+        o35: evalUpcoming(upcoming, games, "o35"),
+        ge5: evalUpcoming(upcoming, games, "ge5"),
+        o25: evalUpcoming(upcoming, games, "o25")
       },
       ultimos: games.slice(-10).map(g => ({ nome: g.nome, placar: g.a + "-" + g.b, total: g.total }))
     };
@@ -154,6 +233,7 @@ app.get("/api/liga/:liga", (req, res) => {
     lastUpdated: d.lastUpdated,
     fetchedAt: d.fetchedAt,
     analise: d.computed[mkt] || d.computed.o35,
+    proximos: (d.upcoming && d.upcoming[mkt]) || [],
     ultimos: d.ultimos
   });
 });
