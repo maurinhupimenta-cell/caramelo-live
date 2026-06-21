@@ -93,11 +93,25 @@ function render(d){
     return `<div class="card" style="flex:1;min-width:120px;text-align:center"><h3>${j.nome}</h3><div style="font-size:16px;font-weight:700;color:${cor}">${j.dir}</div><div class="note">${j.pct!=null?j.pct+'% • incl '+j.slope:'sem dados'}</div></div>`;
   }).join('');
 
-  // PROXIMOS JOGOS
+  // PROXIMOS JOGOS (info completa da extensao)
+  const statusCor=s=>/ENTRADA BOA/.test(s)?'var(--greenb)':/VANTAGEM/.test(s)?'#7fd17f':/MARGINAL/.test(s)?'var(--amber)':'var(--red)';
   const prox=(d.proximos||[]).map(p=>{
     const good=p.vale;
-    return `<tr class="${good?'ok':''}"><td>${p.nome}</td><td>${p.odd?'@'+p.odd.toFixed(2):'—'}</td><td>${p.base}%</td><td>${p.amostra}</td><td>${p.justa??'—'}</td><td class="${good?'pos':'neg'}">${p.ev!=null?(p.ev>0?'+':'')+p.ev+'%':'—'}</td><td><span class="tag ${good?'ok':'no'}">${good?'vale':'cara'}</span></td></tr>`;
+    return `<tr class="${good?'ok':''}">
+      <td><b>${p.nome}</b></td>
+      <td>${p.odd?'@'+p.odd.toFixed(2):'—'}</td>
+      <td><span style="color:${statusCor(p.status)}">${p.status}</span></td>
+      <td>${p.prob}%</td>
+      <td>${p.justa??'—'}</td>
+      <td class="${p.ev>0?'pos':'neg'}">${p.ev!=null?(p.ev>0?'+':'')+p.ev+'%':'—'}</td>
+      <td>${p.oddBase}</td>
+      <td>${p.teamBase}</td>
+    </tr>`;
   }).join('');
+
+  // status da liga (QUENTE/FRIA)
+  const ls=a.ligaStatus||{};
+  const lsCor=ls.cls==='ok'?'var(--greenb)':ls.cls==='bad'?'var(--red)':'var(--amber)';
 
   const rankHtml=a.ranking.map(r=>{
     const good=r.ev>0;
@@ -127,8 +141,8 @@ function render(d){
       <div class="hint" style="margin-top:10px">Quando as três janelas apontam pro mesmo lado, o sinal é forte. <b style="color:${a.confluencia&&/forte/.test(a.confluencia.confluencia)?'var(--greenb)':'var(--muted)'}">${a.confluencia?a.confluencia.confluencia:'—'}</b></div>
     </div>
 
-    <div class="sec">Próximos jogos — odds e veredito (${nomeMkt[mkt]})</div>
-    <table><thead><tr><th>Jogo</th><th>Odd</th><th>% base</th><th>Amostra</th><th>Odd justa</th><th>EV</th><th>Veredito</th></tr></thead><tbody>${prox||'<tr><td colspan=7>aguardando próximos jogos...</td></tr>'}</tbody></table>
+    <div class="sec">Próximos jogos — ${nomeMkt[mkt]} <span style="color:${lsCor};font-size:13px">• Liga: ${ls.label||'—'}</span></div>
+    <table><thead><tr><th>Jogo</th><th>Odd</th><th>Status</th><th>Prob</th><th>Odd justa</th><th>EV</th><th>Base odd</th><th>Base time</th></tr></thead><tbody>${prox||'<tr><td colspan=8>aguardando próximos jogos...</td></tr>'}</tbody></table>
 
     <div class="grid" style="margin-top:14px">
       <div class="card"><h3>Jogos no histórico</h3><div class="big">${a.total}</div><div class="note">${d.liga.toUpperCase()}</div></div>

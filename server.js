@@ -151,6 +151,81 @@ function confluencia(games, mkt) {
   return { janelas: out, confluencia: forte };
 }
 
+function teamNames(nome) {
+  if (!nome) return [];
+  return nome.toLowerCase().split(/\s+x\s+/).map(s => s.trim()).filter(Boolean);
+}
+
+function teamPayPct(games, nome, mkt) {
+  const names = teamNames(nome);
+  if (!names.length) return { g: 0, j: 0, p: null };
+  const rows = games.filter(g => {
+    const t = (g.nome || "").toLowerCase();
+    return names.some(n => n && t.includes(n));
+  });
+  const g = rows.filter(x => pays(x, mkt)).length;
+  return { g, j: rows.length, p: rows.length ? Math.round(g / rows.length * 1000) / 10 : null };
+}
+
+function oddPayPct(games, odd, mkt) {
+  if (!odd) return { g: 0, j: 0, p: null };
+  const rows = games.filter(g => {
+    const o = g.odds[mkt];
+    return o && Math.abs(o - odd) <= 0.05;
+  });
+  const g = rows.filter(x => pays(x, mkt)).length;
+  return { g, j: rows.length, p: rows.length ? Math.round(g / rows.length * 1000) / 10 : null };
+}
+
+function statForRows(games, mkt, n) {
+  const sub = games.slice(-n);
+  const g = sub.filter(x => pays(x, mkt)).length;
+  return { g, j: sub.length, p: sub.length ? Math.round(g / sub.length * 1000) / 10 : null };
+}
+
+function radarDecision(s15, s30, s120) {
+  if (!s30.j || s30.j < 12) return { label: "JUNTANDO BASE", cls: "warn" };
+  const p15 = Number.isFinite(s15.p) ? s15.p : s30.p;
+  const p30 = s30.p, p120 = Number.isFinite(s120.p) ? s120.p : p30;
+  const delta = p15 - p30;
+  if (p15 >= 58 && p30 >= 52 && delta >= -6) return { label: "LIGA QUENTE", cls: "ok" };
+  if (p15 >= 50 && delta >= 8 && p15 >= p120) return { label: "VIRANDO P/ ALTA", cls: "ok" };
+  if (p15 <= 35 && p30 <= 42) return { label: "LIGA FRIA", cls: "bad" };
+  if (delta <= -10) return { label: "CAINDO", cls: "bad" };
+  if (p30 <= 42 && p15 >= p30 + 6) return { label: "FUNDO REAGINDO", cls: "warn" };
+  return { label: "NEUTRA", cls: "warn" };
+}
+
+function fullEvalUpcoming(upcoming, games, mkt) {
+  const baseGeral = pct(games.filter(g => pays(g, mkt)).length, games.length);
+  return upcoming.map(u => {
+    const odd = u.odds[mkt];
+    const oddBase = oddPayPct(games, odd, mkt);
+    const teamBase = teamPayPct(games, u.nome, mkt);
+    // prob calibrada: combina base da odd (peso 2) e base geral (peso 1)
+    let prob = baseGeral;
+    if (oddBase.j >= 5) prob = (oddBase.p * 2 + baseGeral) / 3;
+    prob = Math.round(prob * 10) / 10;
+    const justa = prob > 0 ? +(100 / prob).toFixed(2) : null;
+    const ev = odd ? Math.round((prob / 100 * odd - 1) * 1000) / 10 : null;
+    const edge = odd && justa ? Math.round((justa - odd) / justa * -1000) / 10 : null;
+    let status = "NEUTRO";
+    if (ev != null) {
+      if (ev > 8) status = "ENTRADA BOA";
+      else if (ev > 0) status = "LEVE VANTAGEM";
+      else if (ev > -10) status = "MARGINAL";
+      else status = "EVITAR (caro)";
+    }
+    return {
+      nome: u.nome, odd: odd || null,
+      prob, justa, ev, edge, status,
+      oddBase: oddBase.j ? `${oddBase.g}/${oddBase.j} ${oddBase.p}%` : "sem base",
+      teamBase: teamBase.j ? `${teamBase.g}/${teamBase.j} ${teamBase.p}%` : "sem base",
+      vale: ev != null && ev > 0
+    };
+  });
+}
+
 function computeMarket(games, mkt) {
   const total = games.length;
   const hit = games.filter(g => pays(g, mkt)).length;
@@ -201,6 +276,8 @@ function computeMarket(games, mkt) {
   const serie = chartSeries(games, mkt);
   const sinal = zoneSignal(serie);
   const conf = confluencia(games, mkt);
+  const s15 = statForRows(games, mkt, 15), s30 = statForRows(games, mkt, 30), s120 = statForRows(games, mkt, 120);
+  const ligaStatus = radarDecision(s15, s30, s120);
 
   return {
     total, base, justa,
@@ -209,6 +286,8 @@ function computeMarket(games, mkt) {
     serie,
     sinal,
     confluencia: conf,
+    ligaStatus,
+    stats: { s15: s15.p, s30: s30.p, s120: s120.p },
     ranking: ranking.slice(0, 14),
     signatures,
     atual: { sig: atualSig, n: atualStat.n, paid: atualStat.paid, p: pct(atualStat.paid, atualStat.n) }
@@ -233,9 +312,9 @@ async function refreshLiga(liga) {
         o25: computeMarket(games, "o25")
       },
       upcoming: {
-        o35: evalUpcoming(upcoming, games, "o35"),
-        ge5: evalUpcoming(upcoming, games, "ge5"),
-        o25: evalUpcoming(upcoming, games, "o25")
+        o35: fullEvalUpcoming(upcoming, games, "o35"),
+        ge5: fullEvalUpcoming(upcoming, games, "ge5"),
+        o25: fullEvalUpcoming(upcoming, games, "o25")
       },
       ultimos: games.slice(-10).map(g => ({ nome: g.nome, placar: g.a + "-" + g.b, total: g.total }))
     };
