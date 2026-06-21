@@ -86,6 +86,13 @@ function render(d){
   // cor do sinal
   const sinalCor = /PAGAMENTO|PROTEGER/.test(sig.sinal)?'var(--amber)' : /COMPRA|SUBINDO/.test(sig.sinal)?'var(--greenb)' : /RISCO|RECUO/.test(sig.sinal)?'var(--red)':'var(--muted)';
 
+  // confluencia 3h/6h/12h
+  const conf=a.confluencia||{janelas:[]};
+  const confHtml=(conf.janelas||[]).map(j=>{
+    const cor=j.dir==='Subindo'?'var(--greenb)':j.dir==='Descendo'?'var(--red)':'var(--muted)';
+    return `<div class="card" style="flex:1;min-width:120px;text-align:center"><h3>${j.nome}</h3><div style="font-size:16px;font-weight:700;color:${cor}">${j.dir}</div><div class="note">${j.pct!=null?j.pct+'% • incl '+j.slope:'sem dados'}</div></div>`;
+  }).join('');
+
   // PROXIMOS JOGOS
   const prox=(d.proximos||[]).map(p=>{
     const good=p.vale;
@@ -109,8 +116,15 @@ function render(d){
         <div><span class="note">Sinal</span><br><b style="color:${sinalCor};font-size:16px">${sig.sinal||'—'}</b></div>
         <div><span class="note">Zona</span><br><b>${sig.zona||'—'} ${sig.zonaPct!=null?sig.zonaPct+'%':''}</b></div>
         <div><span class="note">Direção</span><br><b>${sig.direcao||'—'}</b></div>
+        <div><span class="note">Inclinação</span><br><b>${sig.inclinacao??'—'}</b></div>
         <div><span class="note">Pagamento</span><br><b>${sig.pagamento||'—'}</b></div>
       </div>
+    </div>
+
+    <div class="sec">Confluência por tempo — 3h / 6h / 12h</div>
+    <div class="card">
+      <div style="display:flex;gap:12px;flex-wrap:wrap">${confHtml}</div>
+      <div class="hint" style="margin-top:10px">Quando as três janelas apontam pro mesmo lado, o sinal é forte. <b style="color:${a.confluencia&&/forte/.test(a.confluencia.confluencia)?'var(--greenb)':'var(--muted)'}">${a.confluencia?a.confluencia.confluencia:'—'}</b></div>
     </div>
 
     <div class="sec">Próximos jogos — odds e veredito (${nomeMkt[mkt]})</div>

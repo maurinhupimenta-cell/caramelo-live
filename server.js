@@ -77,24 +77,35 @@ function chartSeries(games, mkt, win = 8) {
   return vals.slice(-40);
 }
 
-function zoneSignal(series) {
-  if (!series.length) return { zona: "—", zonaPct: 0, direcao: "—", pagamento: "—", sinal: "AGUARDAR" };
-  const sorted = series.slice().sort((a, b) => a - b);
-  const p = (q) => sorted[Math.min(sorted.length - 1, Math.max(0, Math.round((sorted.length - 1) * q)))];
-  const min = p(0.05), max = p(0.95), cur = series[series.length - 1];
-  const range = Math.max(1, max - min);
-  const zonaPct = Math.round((Math.max(min, Math.min(max, cur)) - min) / range * 100);
-  const prev = series[series.length - 4] ?? cur;
-  const subindo = cur > prev, descendo = cur < prev;
-  const zona = zonaPct <= 25 ? "Fundo" : zonaPct <= 45 ? "Baixa" : zonaPct >= 78 ? "Topo" : zonaPct >= 60 ? "Alta" : "Meio";
-  let sinal = "AGUARDAR", pagamento = "—";
-  if (zonaPct >= 78 && descendo) { sinal = "PAGAMENTO"; pagamento = "Ponto bom"; }
-  else if (zonaPct >= 60 && descendo) { sinal = "PROTEGER PARCIAL"; pagamento = "Parcial"; }
-  else if (zonaPct <= 35 && subindo) { sinal = "COMPRA NASCENDO"; pagamento = "Alvo meio/topo"; }
-  else if (zonaPct >= 70) { sinal = "RISCO ALTO (caro)"; }
-  else if (subindo) { sinal = "SUBINDO"; }
-  else if (descendo) { sinal = "RECUO"; }
-  return { zona, zonaPct, direcao: subindo ? "Subindo" : descendo ? "Descendo" : "Lateral", pagamento, sinal };
+function slopeOf(series){
+  const n=series.length;
+  if(n<3)return 0;
+  const xm=(n-1)/2, ym=series.reduce((a,b)=>a+b,0)/n;
+  let num=0,den=0;
+  series.forEach((y,x)=>{num+=(x-xm)*(y-ym);den+=(x-xm)**2;});
+  return den?num/den:0;
+}
+
+function zoneSignal(series){
+  if(!series.length)return{zona:"—",zonaPct:0,direcao:"—",pagamento:"—",sinal:"AGUARDAR",inclinacao:0};
+  const sorted=series.slice().sort((a,b)=>a-b);
+  const p=(q)=>sorted[Math.min(sorted.length-1,Math.max(0,Math.round((sorted.length-1)*q)))];
+  const min=p(0.05),max=p(0.95),cur=series[series.length-1];
+  const range=Math.max(1,max-min);
+  const zonaPct=Math.round((Math.max(min,Math.min(max,cur))-min)/range*100);
+  // DIRECAO FIEL: inclinacao por regressao sobre os ultimos pontos (tendencia real)
+  const tail=series.slice(-Math.min(10,series.length));
+  const slope=slopeOf(tail);
+  const subindo=slope>0.3, descendo=slope<-0.3;
+  const zona=zonaPct<=25?"Fundo":zonaPct<=45?"Baixa":zonaPct>=78?"Topo":zonaPct>=60?"Alta":"Meio";
+  let sinal="AGUARDAR",pagamento="—";
+  if(zonaPct>=78&&descendo){sinal="PAGAMENTO";pagamento="Ponto bom";}
+  else if(zonaPct>=60&&descendo){sinal="PROTEGER PARCIAL";pagamento="Parcial";}
+  else if(zonaPct<=35&&subindo){sinal="COMPRA NASCENDO";pagamento="Alvo meio/topo";}
+  else if(zonaPct>=70){sinal="RISCO ALTO (caro)";}
+  else if(subindo){sinal="SUBINDO";}
+  else if(descendo){sinal="RECUO";}
+  return{zona,zonaPct,direcao:subindo?"Subindo":descendo?"Descendo":"Lateral",pagamento,sinal,inclinacao:+slope.toFixed(2)};
 }
 
 function evalUpcoming(upcoming, games, mkt) {
@@ -117,6 +128,27 @@ function evalUpcoming(upcoming, games, mkt) {
     const ev = odd ? Math.round((p / 100 * odd - 1) * 1000) / 10 : null;
     return { nome: u.nome, odd: odd || null, base: p, amostra, justa, ev, vale: ev != null && ev > 0 };
   });
+}
+
+function confluencia(games, mkt) {
+  // janelas crescentes (proxy de 3h/6h/12h por quantidade de jogos recentes)
+  // jogos rolam ~a cada 3min, entao 3h~60 jogos, 6h~120, 12h~240
+  const janelas = [{ nome: "3h", n: 60 }, { nome: "6h", n: 120 }, { nome: "12h", n: 240 }];
+  const win = 20;
+  const out = janelas.map(j => {
+    const sub = games.slice(-j.n);
+    if (sub.length < win + 3) return { nome: j.nome, dir: "—", slope: 0, pct: null };
+    const serie = [];
+    for (let i = win; i <= sub.length; i++) serie.push(pct(sub.slice(i - win, i).filter(g => pays(g, mkt)).length, win));
+    const s = slopeOf(serie.slice(-Math.min(10, serie.length)));
+    return { nome: j.nome, dir: s > 0.3 ? "Subindo" : s < -0.3 ? "Descendo" : "Lateral", slope: +s.toFixed(2), pct: serie[serie.length - 1] };
+  });
+  // confluencia: todas as janelas com dados apontam pro mesmo lado?
+  const dirs = out.filter(o => o.dir !== "—").map(o => o.dir);
+  const todasSubindo = dirs.length && dirs.every(d => d === "Subindo");
+  const todasDescendo = dirs.length && dirs.every(d => d === "Descendo");
+  const forte = todasSubindo ? "Subindo (confluência forte)" : todasDescendo ? "Descendo (confluência forte)" : "Misto";
+  return { janelas: out, confluencia: forte };
 }
 
 function computeMarket(games, mkt) {
@@ -168,6 +200,7 @@ function computeMarket(games, mkt) {
 
   const serie = chartSeries(games, mkt);
   const sinal = zoneSignal(serie);
+  const conf = confluencia(games, mkt);
 
   return {
     total, base, justa,
@@ -175,6 +208,7 @@ function computeMarket(games, mkt) {
     aquecendo,
     serie,
     sinal,
+    confluencia: conf,
     ranking: ranking.slice(0, 14),
     signatures,
     atual: { sig: atualSig, n: atualStat.n, paid: atualStat.paid, p: pct(atualStat.paid, atualStat.n) }
