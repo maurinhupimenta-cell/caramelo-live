@@ -57,6 +57,7 @@ function pays(g, mkt) {
   if (mkt === "o25") return g.total >= 3;
   if (mkt === "o35") return g.total >= 4;
   if (mkt === "ge5") return g.total >= 5;
+  if (mkt === "ambas") return g.a > 0 && g.b > 0;
   return false;
 }
 
@@ -169,8 +170,9 @@ function teamPayPct(games, nome, mkt) {
 
 function oddPayPct(games, odd, mkt) {
   if (!odd) return { g: 0, j: 0, p: null };
+  const k = oddKey(mkt);
   const rows = games.filter(g => {
-    const o = g.odds[mkt];
+    const o = g.odds[k];
     return o && Math.abs(o - odd) <= 0.05;
   });
   const g = rows.filter(x => pays(x, mkt)).length;
@@ -198,17 +200,18 @@ function radarDecision(s15, s30, s120) {
 
 function fullEvalUpcoming(upcoming, games, mkt) {
   const baseGeral = pct(games.filter(g => pays(g, mkt)).length, games.length);
+  const cycle = cycleStats(games, mkt);
   return upcoming.map(u => {
-    const odd = u.odds[mkt];
+    const odd = u.odds[oddKey(mkt)];
     const oddBase = oddPayPct(games, odd, mkt);
     const teamBase = teamPayPct(games, u.nome, mkt);
-    // prob calibrada: combina base da odd (peso 2) e base geral (peso 1)
+    const dist = odd ? scoreDistribution(games, odd, mkt) : null;
     let prob = baseGeral;
     if (oddBase.j >= 5) prob = (oddBase.p * 2 + baseGeral) / 3;
     prob = Math.round(prob * 10) / 10;
     const justa = prob > 0 ? +(100 / prob).toFixed(2) : null;
     const ev = odd ? Math.round((prob / 100 * odd - 1) * 1000) / 10 : null;
-    const edge = odd && justa ? Math.round((justa - odd) / justa * -1000) / 10 : null;
+    const edge = odd && justa ? Math.round((odd - justa) / odd * 1000) / 10 : null;
     let status = "NEUTRO";
     if (ev != null) {
       if (ev > 8) status = "ENTRADA BOA";
@@ -221,9 +224,46 @@ function fullEvalUpcoming(upcoming, games, mkt) {
       prob, justa, ev, edge, status,
       oddBase: oddBase.j ? `${oddBase.g}/${oddBase.j} ${oddBase.p}%` : "sem base",
       teamBase: teamBase.j ? `${teamBase.g}/${teamBase.j} ${teamBase.p}%` : "sem base",
+      placarCorreto: dist ? dist.top.join(" | ") : "—",
+      mercadoBase: dist ? `${dist.marketP}% (${dist.j} jogos)` : "—",
+      ciclo: cycle ? `${cycle.streak} ${cycle.cur} | fase ${cycle.fase} | pressão ${cycle.pressao}` : "—",
       vale: ev != null && ev > 0
     };
   });
+}
+
+function oddKey(mkt) { return mkt === "ambas" ? "ambs" : mkt; }
+
+function cycleStats(games, mkt) {
+  // ultimos 80 resultados como GREEN(paga)/RED(nao paga), do mais novo
+  const hist = games.slice(-80).reverse().map(g => pays(g, mkt));
+  if (!hist.length) return null;
+  const cur = hist[0] ? "GREEN" : "RED";
+  let streak = 0;
+  for (const h of hist) { if ((h ? "GREEN" : "RED") === cur) streak++; else break; }
+  let lastGreen = null;
+  for (let i = 0; i < hist.length; i++) { if (hist[i]) { lastGreen = i; break; } }
+  const blocks = { GREEN: [], RED: [] };
+  let last = hist[0] ? "GREEN" : "RED", n = 0;
+  hist.forEach(x => { const s = x ? "GREEN" : "RED"; if (s === last) n++; else { blocks[last].push(n); last = s; n = 1; } });
+  blocks[last].push(n);
+  const avg = a => a.length ? a.reduce((x, y) => x + y, 0) / a.length : null;
+  const avgRed = avg(blocks.RED), avgGreen = avg(blocks.GREEN);
+  const fase = cur === "RED" && avgRed && streak >= avgRed ? "ponto de virada" : cur === "RED" ? "inicio/meio" : "bloco green";
+  const pressao = cur === "RED" && avgRed ? Math.min(100, streak / avgRed * 50) : 0;
+  return { cur, streak, lastGreen, avgRed: avgRed ? +avgRed.toFixed(1) : null, avgGreen: avgGreen ? +avgGreen.toFixed(1) : null, fase, pressao: Math.round(pressao) };
+}
+
+function scoreDistribution(games, odd, mkt) {
+  // jogos com odd parecida; top placares e % que o mercado pagou
+  const band = games.filter(g => { const o = g.odds[oddKey(mkt)]; return o && Math.abs(o - odd) <= 0.4; });
+  if (!band.length) return null;
+  const counts = {};
+  band.forEach(g => { const k = g.a + "-" + g.b; counts[k] = (counts[k] || 0) + 1; });
+  const top = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 3)
+    .map(([k, v]) => `${k} ${Math.round(v / band.length * 100)}%`);
+  const green = band.filter(g => pays(g, mkt)).length;
+  return { j: band.length, top, marketP: Math.round(green / band.length * 1000) / 10 };
 }
 
 function computeMarket(games, mkt) {
@@ -309,12 +349,14 @@ async function refreshLiga(liga) {
       computed: {
         o35: computeMarket(games, "o35"),
         ge5: computeMarket(games, "ge5"),
-        o25: computeMarket(games, "o25")
+        o25: computeMarket(games, "o25"),
+        ambas: computeMarket(games, "ambas")
       },
       upcoming: {
         o35: fullEvalUpcoming(upcoming, games, "o35"),
         ge5: fullEvalUpcoming(upcoming, games, "ge5"),
-        o25: fullEvalUpcoming(upcoming, games, "o25")
+        o25: fullEvalUpcoming(upcoming, games, "o25"),
+        ambas: fullEvalUpcoming(upcoming, games, "ambas")
       },
       ultimos: games.slice(-10).map(g => ({ nome: g.nome, placar: g.a + "-" + g.b, total: g.total }))
     };

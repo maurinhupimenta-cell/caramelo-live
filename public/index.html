@@ -44,7 +44,7 @@
 
 <div class="bar">
   <select id="liga"><option value="euro">Euro</option><option value="copa">Copa</option><option value="super">Super</option><option value="premier">Premier</option></select>
-  <select id="mkt"><option value="o35">Over 3.5</option><option value="ge5">5+ gols</option><option value="o25">Over 2.5</option></select>
+  <select id="mkt"><option value="o35">Over 3.5</option><option value="ge5">5+ gols</option><option value="o25">Over 2.5</option><option value="ambas">Ambas Marcam</option></select>
   <span class="live"><span class="dot"></span><span id="liveinfo">conectando...</span></span>
 </div>
 
@@ -53,7 +53,7 @@
 <script>
 const $=s=>document.querySelector(s);
 const ligaSel=$('#liga'), mktSel=$('#mkt');
-const nomeMkt={o35:'Over 3.5',ge5:'5+ gols',o25:'Over 2.5'};
+const nomeMkt={o35:'Over 3.5',ge5:'5+ gols',o25:'Over 2.5',ambas:'Ambas Marcam'};
 
 async function tick(){
   const liga=ligaSel.value, mkt=mktSel.value;
@@ -93,23 +93,29 @@ function render(d){
     return `<div class="card" style="flex:1;min-width:120px;text-align:center"><h3>${j.nome}</h3><div style="font-size:16px;font-weight:700;color:${cor}">${j.dir}</div><div class="note">${j.pct!=null?j.pct+'% • incl '+j.slope:'sem dados'}</div></div>`;
   }).join('');
 
-  // PROXIMOS JOGOS (info completa da extensao)
+  // PROXIMOS JOGOS (cards detalhados como a extensao)
   const statusCor=s=>/ENTRADA BOA/.test(s)?'var(--greenb)':/VANTAGEM/.test(s)?'#7fd17f':/MARGINAL/.test(s)?'var(--amber)':'var(--red)';
   const prox=(d.proximos||[]).map(p=>{
-    const good=p.vale;
-    return `<tr class="${good?'ok':''}">
-      <td><b>${p.nome}</b></td>
-      <td>${p.odd?'@'+p.odd.toFixed(2):'—'}</td>
-      <td><span style="color:${statusCor(p.status)}">${p.status}</span></td>
-      <td>${p.prob}%</td>
-      <td>${p.justa??'—'}</td>
-      <td class="${p.ev>0?'pos':'neg'}">${p.ev!=null?(p.ev>0?'+':'')+p.ev+'%':'—'}</td>
-      <td>${p.oddBase}</td>
-      <td>${p.teamBase}</td>
-    </tr>`;
+    return `<div class="card" style="margin-bottom:10px;border-left:3px solid ${statusCor(p.status)}">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+        <b style="font-size:15px">${p.nome}</b>
+        <span>${p.odd?'@'+p.odd.toFixed(2):'—'} • <span style="color:${statusCor(p.status)};font-weight:700">${p.status}</span></span>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin-top:10px;font-size:12px">
+        <div><span class="note">Prob calibrada</span><br><b>${p.prob}%</b></div>
+        <div><span class="note">Odd justa</span><br><b>${p.justa??'—'}</b></div>
+        <div><span class="note">EV real</span><br><b class="${p.ev>0?'pos':'neg'}">${p.ev!=null?(p.ev>0?'+':'')+p.ev+'%':'—'}</b></div>
+        <div><span class="note">Edge</span><br><b>${p.edge!=null?(p.edge>0?'+':'')+p.edge+'%':'—'}</b></div>
+        <div><span class="note">Base dessa odd</span><br><b>${p.oddBase}</b></div>
+        <div><span class="note">Base dos times</span><br><b>${p.teamBase}</b></div>
+        <div><span class="note">Mercado nessa base</span><br><b>${p.mercadoBase}</b></div>
+        <div><span class="note">Placar correto</span><br><b>${p.placarCorreto}</b></div>
+        <div style="grid-column:1/-1"><span class="note">Ciclo</span><br><b>${p.ciclo}</b></div>
+      </div>
+    </div>`;
   }).join('');
 
-  // status da liga (QUENTE/FRIA)
+  // status da liga
   const ls=a.ligaStatus||{};
   const lsCor=ls.cls==='ok'?'var(--greenb)':ls.cls==='bad'?'var(--red)':'var(--amber)';
 
@@ -142,7 +148,7 @@ function render(d){
     </div>
 
     <div class="sec">Próximos jogos — ${nomeMkt[mkt]} <span style="color:${lsCor};font-size:13px">• Liga: ${ls.label||'—'}</span></div>
-    <table><thead><tr><th>Jogo</th><th>Odd</th><th>Status</th><th>Prob</th><th>Odd justa</th><th>EV</th><th>Base odd</th><th>Base time</th></tr></thead><tbody>${prox||'<tr><td colspan=8>aguardando próximos jogos...</td></tr>'}</tbody></table>
+    ${prox||'<div class="card">aguardando próximos jogos...</div>'}
 
     <div class="grid" style="margin-top:14px">
       <div class="card"><h3>Jogos no histórico</h3><div class="big">${a.total}</div><div class="note">${d.liga.toUpperCase()}</div></div>
