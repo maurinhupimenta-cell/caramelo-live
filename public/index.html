@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Caramelo Live — Over 3.5 / 5+</title>
+<style>
+  :root{--bg:#0d1117;--panel:#161b22;--panel2:#1c2330;--line:#2d3543;--txt:#e6edf3;--muted:#8b98a8;--green:#2ea043;--greenb:#3fb950;--red:#da3633;--amber:#d29922;--blue:#388bfd}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font:14px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;padding:14px;max-width:1100px;margin:0 auto}
+  h1{font-size:19px;color:var(--greenb)}
+  .sub{color:var(--muted);font-size:12px;margin-bottom:14px}
+  .bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:14px;padding:10px;background:var(--panel);border:1px solid var(--line);border-radius:10px}
+  select{background:var(--panel2);color:var(--txt);border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:13px}
+  .live{margin-left:auto;display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted)}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--green);animation:pulse 1.5s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-bottom:14px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:13px}
+  .card h3{font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:7px}
+  .big{font-size:24px;font-weight:700}
+  .note{font-size:11px;color:var(--muted);margin-top:3px}
+  .pos{color:var(--greenb)}.neg{color:var(--red)}.neu{color:var(--amber)}
+  .sec{font-size:14px;font-weight:700;margin:16px 0 8px}
+  table{width:100%;border-collapse:collapse;font-size:13px;background:var(--panel);border-radius:10px;overflow:hidden}
+  th{background:var(--panel2);text-align:left;padding:8px 10px;font-size:10px;text-transform:uppercase;color:var(--muted)}
+  td{padding:8px 10px;border-bottom:1px solid var(--line)}
+  tr:last-child td{border-bottom:none}
+  tr.ok{background:rgba(46,160,67,.10)}
+  .tag{padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600}
+  .tag.ok{background:rgba(46,160,67,.18);color:var(--greenb)}
+  .tag.no{background:rgba(218,54,51,.18);color:#f85149}
+  .therm{display:flex;gap:8px;align-items:flex-end;height:64px;margin:20px 0}
+  .therm .b{flex:1;border-radius:4px 4px 0 0;position:relative;min-height:4px}
+  .therm .b span{position:absolute;top:-15px;left:0;right:0;text-align:center;font-size:10px;color:var(--muted)}
+  .therm .b small{position:absolute;bottom:-15px;left:0;right:0;text-align:center;font-size:10px;color:var(--muted)}
+  .hint{font-size:11px;color:var(--muted);margin-top:6px}
+  .err{color:var(--amber);font-size:12px}
+</style>
+</head>
+<body>
+<h1>Caramelo Live</h1>
+<div class="sub">Over 3.5 / 5+ ao vivo — atualiza sozinho direto da API, sem travar.</div>
+
+<div class="bar">
+  <select id="liga"><option value="euro">Euro</option><option value="copa">Copa</option><option value="super">Super</option><option value="premier">Premier</option></select>
+  <select id="mkt"><option value="o35">Over 3.5</option><option value="ge5">5+ gols</option><option value="o25">Over 2.5</option></select>
+  <span class="live"><span class="dot"></span><span id="liveinfo">conectando...</span></span>
+</div>
+
+<div id="conteudo"></div>
+
+<script>
+const $=s=>document.querySelector(s);
+const ligaSel=$('#liga'), mktSel=$('#mkt');
+const nomeMkt={o35:'Over 3.5',ge5:'5+ gols',o25:'Over 2.5'};
+
+async function tick(){
+  const liga=ligaSel.value, mkt=mktSel.value;
+  try{
+    const r=await fetch('/api/liga/'+liga+'?mkt='+mkt,{cache:'no-store'});
+    const d=await r.json();
+    if(d.erro){ $('#liveinfo').textContent='aguardando dados...'; return; }
+    render(d);
+    const upd=d.lastUpdated?new Date(d.lastUpdated):null;
+    $('#liveinfo').textContent='ao vivo • atualizado '+(upd?upd.toLocaleTimeString('pt-BR'):'agora');
+  }catch(e){ $('#liveinfo').textContent='erro de conexao'; }
+}
+
+function render(d){
+  const a=d.analise, mkt=d.mercado;
+  const aquece=a.aquecendo;
+  const term=a.termometro;
+  const maxv=Math.max(...term.map(t=>t.v||0),1);
+  const termHtml=term.map((t,i)=>{
+    const h=t.v==null?4:Math.max(4,Math.round(t.v/maxv*100));
+    const col=t.v==null?'var(--panel2)':(i===0&&aquece?'var(--greenb)':'var(--blue)');
+    return `<div class="b" style="height:${h}%;background:${col}"><span>${t.v==null?'—':t.v+'%'}</span><small>${t.n}</small></div>`;
+  }).join('');
+
+  const rankHtml=a.ranking.map(r=>{
+    const good=r.ev>0;
+    return `<tr class="${good?'ok':''}"><td>@${r.odd.toFixed(2)}</td><td>${r.hit}/${r.tot}</td><td>${r.p}%</td><td>${r.justa??'—'}</td><td class="${good?'pos':'neg'}">${r.ev>0?'+':''}${r.ev}%</td><td><span class="tag ${good?'ok':'no'}">${good?'vale':'cara'}</span></td></tr>`;
+  }).join('');
+
+  const sigAtual=a.atual;
+  const sigHuman=s=>s.split('').map(c=>c==='1'?'✓':'·').join(' ');
+  const sigHtml=a.signatures.map(s=>`<tr><td>${sigHuman(s.sig)}</td><td>${s.n}</td><td>${s.paid}</td><td class="${s.p>=a.base?'pos':''}">${s.p}%</td></tr>`).join('');
+
+  const ultimos=d.ultimos.map(u=>`${u.placar} (${u.total})`).join(' &nbsp;·&nbsp; ');
+
+  $('#conteudo').innerHTML=`
+    <div class="grid">
+      <div class="card"><h3>Jogos no histórico</h3><div class="big">${a.total}</div><div class="note">${d.liga.toUpperCase()}</div></div>
+      <div class="card"><h3>% que paga ${nomeMkt[mkt]}</h3><div class="big">${a.base}%</div><div class="note">taxa real (base)</div></div>
+      <div class="card"><h3>Odd justa</h3><div class="big">${a.justa??'—'}</div><div class="note">só vale acima disso</div></div>
+      <div class="card"><h3>Formação</h3><div class="big ${aquece?'pos':'neu'}">${aquece?'Esquentando':'Estável'}</div><div class="note">${aquece?'120 acima das longas':'120 perto/abaixo'}</div></div>
+    </div>
+
+    <div class="sec">Termômetro de formação — 120 / 240 / 480 / 960</div>
+    <div class="card"><div class="therm">${termHtml}</div>
+      <div class="hint">Quando a 120 (curta) fica verde e acima das longas, ${nomeMkt[mkt]} está esquentando.</div></div>
+
+    <div class="sec">Últimos resultados</div>
+    <div class="card"><div style="font-size:13px">${ultimos}</div></div>
+
+    <div class="sec">Ranking de odds — onde a base paga mais que a odd embute</div>
+    <table><thead><tr><th>Odd</th><th>Acertos</th><th>% base</th><th>Odd justa</th><th>EV</th><th>Veredito</th></tr></thead><tbody>${rankHtml}</tbody></table>
+
+    <div class="sec">Assinatura atual (últimos 5 jogos): ${sigHuman(sigAtual.sig)}</div>
+    <div class="card"><div style="font-size:13px">Esse padrão apareceu <b>${sigAtual.n}</b> vezes no histórico e pagou ${nomeMkt[mkt]} no jogo seguinte <b class="${sigAtual.p>=a.base?'pos':'neg'}">${sigAtual.p}%</b> das vezes ${sigAtual.p>=a.base?'(acima da média — sinal a favor)':'(abaixo da média)'}.</div></div>
+
+    <div class="sec">Top assinaturas que mais pagam depois</div>
+    <table><thead><tr><th>Padrão (últimos 5)</th><th>Vezes</th><th>Pagou</th><th>%</th></tr></thead><tbody>${sigHtml}</tbody></table>
+  `;
+}
+
+ligaSel.onchange=tick;
+mktSel.onchange=tick;
+tick();
+setInterval(tick,10000);
+</script>
+</body>
+</html>

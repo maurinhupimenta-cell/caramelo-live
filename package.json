@@ -1,0 +1,16 @@
+{
+  "name": "caramelo-live",
+  "version": "1.0.0",
+  "description": "Analisador ao vivo Over 3.5 / 5+ usando a API publica do caramelo",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
