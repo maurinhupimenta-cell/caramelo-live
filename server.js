@@ -22,8 +22,13 @@ function brainEval(games, upcoming, liga, mkt) {
     return res.map(r => {
       if (r.error || !r.analysis) return { nome: r.game?.name || "?", erro: r.error || "sem analise" };
       const a = r.analysis;
+      // acha o jogo original pra pegar horario/casa/fora
+      const orig = upcoming.find(u => u.nome === r.game.name) || {};
       return {
         nome: r.game.name,
+        horario: orig.horario || "",
+        casa: orig.casa || "",
+        fora: orig.fora || "",
         odd: r.game.odd || null,
         score: a.score ?? null,
         status: a.status || "—",
@@ -89,7 +94,17 @@ function parseUpcoming(s) {
   if (/\d-\d|\d\+-|-\d\+/.test(s)) return null;  // tem placar (inc. 5+) = nao e futuro
   if (!/@[\d.]+/.test(s)) return null;
   const nome = s.split(/\s{2,}|\n/)[0].replace(/[a-z0-9]+@[\d.]+/gi, "").trim();
-  return { nome, odds: parseOdds(s) };
+  // horario: procura H.MM ou H:MM nas linhas (igual timeFromGameText do robo)
+  let horario = "";
+  for (const line of s.split(/\n/).map(x => x.trim()).slice(0, 5)) {
+    const m = line.match(/^(?:hor[aá]rio|hora)?\s*[:\-]?\s*(\d{1,2})[.:](\d{2})$/i);
+    if (m) { horario = `${m[1]}:${m[2]}`; break; }
+  }
+  // times separados (casa x fora)
+  const partes = nome.split(/\s+x\s+/i);
+  const casa = partes[0] ? partes[0].trim() : "";
+  const fora = partes[1] ? partes[1].trim() : "";
+  return { nome, horario, casa, fora, odds: parseOdds(s) };
 }
 
 function decodeRows(json) {
@@ -130,7 +145,8 @@ function chartSeries(games, mkt, qtdJogos = 20) {
     const block = games.slice(i - qtdJogos, i);
     vals.push(Math.round(block.filter(g => pays(g, mkt)).length / qtdJogos * 100));
   }
-  return vals.slice(-40);
+  // mostra exatamente "Qtd. Jogos" pontos (como o caramelo: 20 jogos = 20 marcacoes)
+  return vals.slice(-qtdJogos);
 }
 
 function ema(arr, period) {
@@ -494,7 +510,7 @@ function computeMarket(games, mkt, qtdJogos = 20) {
     aquecendo,
     qtdJogos,
     serie,
-    macdHist: macdHist.slice(-40),
+    macdHist: macdHist.slice(-qtdJogos),
     sinal,
     alertas,
     confluencia: conf,
@@ -575,7 +591,7 @@ app.get("/api/liga/:liga", (req, res) => {
     const sinal = zoneSignal(serie);
     const { hist } = macdData(serie);
     const alertas = buildAlerts(d.games, serie, sinal, mkt, analise.base);
-    analise = { ...analise, serie, macdHist: hist.slice(-40), sinal, alertas, qtdJogos: qtd };
+    analise = { ...analise, serie, macdHist: hist.slice(-qtd), sinal, alertas, qtdJogos: qtd };
   }
 
   // se a extensao mandou a curva REAL do caramelo, usa ela (identica)
@@ -593,7 +609,7 @@ app.get("/api/liga/:liga", (req, res) => {
       macdHist = macdData(serie).hist;
     }
     const alertas = buildAlerts(d.games || [], serie, sinal, mkt, analise.base);
-    analise = { ...analise, serie, macdHist: macdHist.slice(-40), sinal, alertas, qtdJogos: qtd, curvaReal: true, topo: curvaReal.topo, fundo: curvaReal.fundo };
+    analise = { ...analise, serie, macdHist: macdHist.slice(-qtdJogos), sinal, alertas, qtdJogos: qtd, curvaReal: true, topo: curvaReal.topo, fundo: curvaReal.fundo };
   }
 
   res.json({

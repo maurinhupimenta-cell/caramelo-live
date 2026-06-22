@@ -108,7 +108,7 @@ function render(d){
     if(p.erro)return `<div class="card" style="margin-bottom:10px"><b>${p.nome||'?'}</b> <span class="note">— ${p.erro}</span></div>`;
     return `<div class="card" style="margin-bottom:10px;border-left:4px solid ${scoreCor(p.score||0)}">
       <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
-        <b style="font-size:15px">${p.nome} <span style="color:var(--muted);font-size:11px;font-weight:400">[${d.liga.toUpperCase()}]</span></b>
+        <b style="font-size:15px">${p.horario?`<span style="color:var(--blue);margin-right:8px">🕐 ${p.horario}</span>`:''}${p.nome} <span style="color:var(--muted);font-size:11px;font-weight:400">[${d.liga.toUpperCase()}]</span></b>
         <div style="display:flex;align-items:center;gap:12px">
           <div style="text-align:center"><div style="font-size:26px;font-weight:800;color:${scoreCor(p.score||0)};line-height:1">${p.score??'—'}</div><div class="note" style="font-size:9px">SCORE</div></div>
           <div style="text-align:right"><div>${p.odd?'@'+(typeof p.odd==='number'?p.odd.toFixed(2):p.odd):'—'}</div><div style="color:${statusCor(p.status)};font-weight:700;font-size:13px">${p.status}</div></div>
