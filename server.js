@@ -576,12 +576,21 @@ app.get("/api/debug/:liga", (req, res) => {
   const liga = req.params.liga;
   const d = store[liga];
   if (!d) return res.json({ erro: "sem store" });
+  // testa brainEval direto agora
+  let brainTest = "nao testado";
+  try {
+    const bt = brainEval(d.games, d.upcomingRaw, liga, "o35");
+    brainTest = bt ? `${bt.length} itens, ex: ${JSON.stringify(bt[0]).slice(0, 150)}` : "null (brain nao carregou)";
+  } catch (e) {
+    brainTest = "THROW: " + e.message;
+  }
   res.json({
+    brainCarregou: !!brainAdapter,
     jogos: d.games?.length || 0,
     upcomingRaw_len: d.upcomingRaw?.length || 0,
-    upcomingRaw: (d.upcomingRaw || []).map(u => ({ nome: u.nome, horario: u.horario, casa: u.casa, fora: u.fora, temOdds: Object.keys(u.odds || {}).length })),
+    upcomingRaw_nomes: (d.upcomingRaw || []).map(u => u.nome),
     upcoming_o35_len: d.upcoming?.o35?.length || 0,
-    upcoming_o35_ex: d.upcoming?.o35?.[0] || null
+    brainTest
   });
 });
 
