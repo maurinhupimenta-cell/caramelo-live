@@ -145,7 +145,7 @@ function render(d){
   $('#conteudo').innerHTML=`
     ${alertaHtml?`<div class="sec">⚠️ Alertas</div><div class="card">${alertaHtml}</div>`:''}
 
-    <div class="sec">Gráfico — ${nomeMkt[mkt]} • Qtd. Jogos: ${a.qtdJogos||d.qtd||20}</div>
+    <div class="sec">Gráfico — ${nomeMkt[mkt]} • Qtd. Jogos: ${a.qtdJogos||d.qtd||20} ${d.curvaReal?'<span style="color:var(--greenb);font-size:12px">● curva real do caramelo</span>':'<span style="color:var(--amber);font-size:12px">○ aproximada (abra o caramelo + captura)</span>'}</div>
     <div class="card">${chart}
       <div style="display:flex;gap:18px;flex-wrap:wrap;margin-top:12px;font-size:13px">
         <div><span class="note">Sinal</span><br><b style="color:${sinalCor};font-size:16px">${sig.sinal||'—'}</b></div>

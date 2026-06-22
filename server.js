@@ -49,6 +49,7 @@ function brainEval(games, upcoming, liga, mkt) {
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 const PORT = process.env.PORT || 3000;
+app.use(express.json({ limit: "1mb" }));
 
 const LIGAS = ["euro", "copa", "super", "premier"];
 const BASE = "https://www.caramelotips.com.br/final/";
@@ -56,6 +57,7 @@ const REFRESH_MS = 15000;
 
 // cache em memoria: liga -> { games, computed, lastUpdated, fetchedAt }
 const store = {};
+const liveCurves = {}; // curva REAL capturada da extensao: liga|mkt -> {curva,mm1,mm2,topo,fundo,ts}
 
 function parseOdds(s) {
   const odds = {};
@@ -538,6 +540,17 @@ refreshAll();
 setInterval(refreshAll, REFRESH_MS);
 
 // API
+app.post("/api/curve", (req, res) => {
+  try {
+    const { liga, mkt, curva, mm1, mm2, topo, fundo, labels, markerColors } = req.body || {};
+    if (!liga || !mkt || !Array.isArray(curva)) return res.status(400).json({ ok: false, erro: "dados invalidos" });
+    liveCurves[liga + "|" + mkt] = { curva, mm1, mm2, topo, fundo, labels, markerColors, ts: Date.now() };
+    res.json({ ok: true, pontos: curva.length });
+  } catch (e) {
+    res.status(500).json({ ok: false, erro: e.message });
+  }
+});
+
 app.get("/api/liga/:liga", (req, res) => {
   const liga = req.params.liga;
   if (!LIGAS.includes(liga)) return res.status(404).json({ erro: "liga invalida" });
@@ -557,6 +570,24 @@ app.get("/api/liga/:liga", (req, res) => {
     analise = { ...analise, serie, macdHist: hist.slice(-40), sinal, alertas, qtdJogos: qtd };
   }
 
+  // se a extensao mandou a curva REAL do caramelo, usa ela (identica)
+  const curveKey = liga + "|" + mkt;
+  const live = liveCurves[curveKey];
+  const curvaReal = live && (Date.now() - live.ts < 120000) ? live : null;
+  if (curvaReal) {
+    const serie = curvaReal.curva;
+    const sinal = zoneSignal(serie);
+    // histograma vem do MM1-MM2 real do caramelo, se veio
+    let macdHist = [];
+    if (Array.isArray(curvaReal.mm1) && Array.isArray(curvaReal.mm2)) {
+      macdHist = curvaReal.mm1.map((v, i) => +((v - (curvaReal.mm2[i] ?? v))).toFixed(2));
+    } else {
+      macdHist = macdData(serie).hist;
+    }
+    const alertas = buildAlerts(d.games || [], serie, sinal, mkt, analise.base);
+    analise = { ...analise, serie, macdHist: macdHist.slice(-40), sinal, alertas, qtdJogos: qtd, curvaReal: true, topo: curvaReal.topo, fundo: curvaReal.fundo };
+  }
+
   res.json({
     liga,
     mercado: mkt,
@@ -565,7 +596,8 @@ app.get("/api/liga/:liga", (req, res) => {
     fetchedAt: d.fetchedAt,
     analise,
     proximos: (d.upcoming && d.upcoming[mkt]) || [],
-    ultimos: d.ultimos
+    ultimos: d.ultimos,
+    curvaReal: !!curvaReal
   });
 });
 
