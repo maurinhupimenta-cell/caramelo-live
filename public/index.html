@@ -45,6 +45,8 @@
 <div class="bar">
   <select id="liga"><option value="euro">Euro</option><option value="copa">Copa</option><option value="super">Super</option><option value="premier">Premier</option></select>
   <select id="mkt"><option value="o35">Over 3.5</option><option value="ge5">5+ gols</option><option value="o25">Over 2.5</option><option value="ambas">Ambas Marcam</option></select>
+  <label style="font-size:12px;color:var(--muted)">Qtd. Jogos</label>
+  <select id="qtd"><option>20</option><option>40</option><option>60</option><option>80</option><option>100</option><option>120</option><option>240</option></select>
   <span class="live"><span class="dot"></span><span id="liveinfo">conectando...</span></span>
 </div>
 
@@ -52,13 +54,13 @@
 
 <script>
 const $=s=>document.querySelector(s);
-const ligaSel=$('#liga'), mktSel=$('#mkt');
+const ligaSel=$('#liga'), mktSel=$('#mkt'), qtdSel=$('#qtd');
 const nomeMkt={o35:'Over 3.5',ge5:'5+ gols',o25:'Over 2.5',ambas:'Ambas Marcam'};
 
 async function tick(){
-  const liga=ligaSel.value, mkt=mktSel.value;
+  const liga=ligaSel.value, mkt=mktSel.value, qtd=qtdSel.value;
   try{
-    const r=await fetch('/api/liga/'+liga+'?mkt='+mkt,{cache:'no-store'});
+    const r=await fetch('/api/liga/'+liga+'?mkt='+mkt+'&qtd='+qtd,{cache:'no-store'});
     const d=await r.json();
     if(d.erro){ $('#liveinfo').textContent='aguardando dados...'; return; }
     render(d);
@@ -79,12 +81,18 @@ function render(d){
     return `<div class="b" style="height:${h}%;background:${col}"><span>${t.v==null?'—':t.v+'%'}</span><small>${t.n}</small></div>`;
   }).join('');
 
-  // GRAFICO DA LINHA (SVG)
+  // GRAFICO DA LINHA (SVG) com numeros nos pontos + histograma MACD
   const serie=a.serie||[];
-  const chart=lineChart(serie);
+  const chart=lineChart(serie, a.macdHist||[]);
+
+  // PAINEL DE ALERTAS (no topo, em destaque)
+  const alertaHtml=(a.alertas||[]).map(al=>{
+    const cor=al.cls==='ok'?'var(--greenb)':al.cls==='bad'?'var(--red)':'var(--amber)';
+    return `<div style="padding:8px 12px;border-radius:8px;background:rgba(255,255,255,.03);border-left:3px solid ${cor};margin-bottom:6px;font-size:13px"><b style="color:${cor}">${al.tipo}</b> — ${al.txt}</div>`;
+  }).join('');
 
   // cor do sinal
-  const sinalCor = /PAGAMENTO|PROTEGER/.test(sig.sinal)?'var(--amber)' : /COMPRA|SUBINDO/.test(sig.sinal)?'var(--greenb)' : /RISCO|RECUO/.test(sig.sinal)?'var(--red)':'var(--muted)';
+  const sinalCor = /COMPRA|SUBINDO/.test(sig.sinal)?'var(--greenb)' : /TOPO|RISCO|RECUO/.test(sig.sinal)?'var(--red)' : /PROTEGER|FUNDO|MINIMA/.test(sig.sinal)?'var(--amber)':'var(--muted)';
 
   // confluencia 3h/6h/12h
   const conf=a.confluencia||{janelas:[]};
@@ -98,7 +106,7 @@ function render(d){
   const prox=(d.proximos||[]).map(p=>{
     return `<div class="card" style="margin-bottom:10px;border-left:3px solid ${statusCor(p.status)}">
       <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
-        <b style="font-size:15px">${p.nome}</b>
+        <b style="font-size:15px">${p.nome} <span style="color:var(--muted);font-size:11px;font-weight:400">[${d.liga.toUpperCase()}]</span></b>
         <span>${p.odd?'@'+p.odd.toFixed(2):'—'} • <span style="color:${statusCor(p.status)};font-weight:700">${p.status}</span></span>
       </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin-top:10px;font-size:12px">
@@ -130,13 +138,16 @@ function render(d){
   const ultimos=d.ultimos.map(u=>`${u.placar} (${u.total})`).join(' &nbsp;·&nbsp; ');
 
   $('#conteudo').innerHTML=`
-    <div class="sec">Gráfico — ${nomeMkt[mkt]} (linha de % nos últimos jogos)</div>
+    ${alertaHtml?`<div class="sec">⚠️ Alertas</div><div class="card">${alertaHtml}</div>`:''}
+
+    <div class="sec">Gráfico — ${nomeMkt[mkt]} • Qtd. Jogos: ${a.qtdJogos||d.qtd||20}</div>
     <div class="card">${chart}
       <div style="display:flex;gap:18px;flex-wrap:wrap;margin-top:12px;font-size:13px">
         <div><span class="note">Sinal</span><br><b style="color:${sinalCor};font-size:16px">${sig.sinal||'—'}</b></div>
         <div><span class="note">Zona</span><br><b>${sig.zona||'—'} ${sig.zonaPct!=null?sig.zonaPct+'%':''}</b></div>
         <div><span class="note">Direção</span><br><b>${sig.direcao||'—'}</b></div>
-        <div><span class="note">Inclinação</span><br><b>${sig.inclinacao??'—'}</b></div>
+        <div><span class="note">MACD</span><br><b class="${sig.macd>0?'pos':'neg'}">${sig.macd??'—'}</b></div>
+        <div><span class="note">MM1 / MM2</span><br><b>${sig.mm1??'—'} / ${sig.mm2??'—'}</b></div>
         <div><span class="note">Pagamento</span><br><b>${sig.pagamento||'—'}</b></div>
       </div>
     </div>
@@ -175,29 +186,54 @@ function render(d){
   `;
 }
 
-function lineChart(serie){
+function lineChart(serie, macdHist){
   if(!serie.length)return '<div class="note">sem dados para o gráfico</div>';
-  const W=680,H=180,pad=24;
+  const W=680,H=200,pad=28, hH=70, gap=14; // H=linha, hH=histograma
+  const totalH=H+gap+hH;
   const min=Math.min(...serie),max=Math.max(...serie);
   const rng=Math.max(1,max-min);
   const x=i=>pad+i*((W-2*pad)/(serie.length-1||1));
   const y=v=>pad+(1-(v-min)/rng)*(H-2*pad);
+  // linha com cor por direcao geral
+  const last=serie[serie.length-1], first=serie[0];
+  const cor=last>first?'#3fb950':last<first?'#da3633':'#8b98a8';
   const pts=serie.map((v,i)=>x(i)+','+y(v)).join(' ');
-  const last=serie[serie.length-1], prev=serie[serie.length-4]??last;
-  const cor=last>prev?'#3fb950':last<prev?'#da3633':'#8b98a8';
-  const dots=serie.map((v,i)=>`<circle cx="${x(i)}" cy="${y(v)}" r="2.5" fill="${i===serie.length-1?cor:'#5a6677'}"/>`).join('');
-  return `<svg viewBox="0 0 ${W} ${H}" style="width:100%;height:auto">
+  // bolinhas + numeros nos pontos (so quando o valor muda, pra nao poluir)
+  let dots='', labels='';
+  serie.forEach((v,i)=>{
+    dots+=`<circle cx="${x(i)}" cy="${y(v)}" r="3" fill="${i===serie.length-1?cor:'#8b98a8'}"/>`;
+    if(i===0||v!==serie[i-1]){ // numero so quando muda
+      labels+=`<text x="${x(i)}" y="${y(v)-8}" fill="#e6edf3" font-size="11" font-weight="600" text-anchor="middle">${v}</text>`;
+    }
+  });
+  // histograma MACD embaixo
+  let macdSvg='';
+  if(macdHist&&macdHist.length){
+    const hm=Math.max(...macdHist.map(Math.abs),0.5);
+    const baseY=H+gap+hH/2;
+    const hx=i=>pad+i*((W-2*pad)/(macdHist.length-1||1));
+    macdSvg=`<line x1="${pad}" y1="${baseY}" x2="${W-pad}" y2="${baseY}" stroke="#2d3543"/>`;
+    macdHist.forEach((m,i)=>{
+      const bh=Math.abs(m)/hm*(hH/2-2);
+      const col=m>=0?'#2ea043':'#da3633';
+      macdSvg+=`<rect x="${hx(i)-2}" y="${m>=0?baseY-bh:baseY}" width="4" height="${bh}" fill="${col}"/>`;
+    });
+    macdSvg+=`<text x="${pad}" y="${H+gap+10}" fill="#8b98a8" font-size="10">Histograma MACD (MM1 vs MM2)</text>`;
+  }
+  return `<svg viewBox="0 0 ${W} ${totalH}" style="width:100%;height:auto">
     <line x1="${pad}" y1="${pad}" x2="${W-pad}" y2="${pad}" stroke="#2d3543" stroke-dasharray="3 3"/>
     <line x1="${pad}" y1="${H-pad}" x2="${W-pad}" y2="${H-pad}" stroke="#2d3543" stroke-dasharray="3 3"/>
     <polyline points="${pts}" fill="none" stroke="${cor}" stroke-width="2"/>
-    ${dots}
-    <text x="${W-pad}" y="${pad-6}" fill="#8b98a8" font-size="11" text-anchor="end">Topo ${max}%</text>
-    <text x="${W-pad}" y="${H-pad+14}" fill="#8b98a8" font-size="11" text-anchor="end">Fundo ${min}%</text>
+    ${dots}${labels}
+    <text x="${W-pad}" y="${pad-8}" fill="#8b98a8" font-size="11" text-anchor="end">Topo ${max}%</text>
+    <text x="${W-pad}" y="${H-pad+16}" fill="#8b98a8" font-size="11" text-anchor="end">Fundo ${min}%</text>
+    ${macdSvg}
   </svg>`;
 }
 
 ligaSel.onchange=tick;
 mktSel.onchange=tick;
+qtdSel.onchange=tick;
 tick();
 setInterval(tick,10000);
 </script>

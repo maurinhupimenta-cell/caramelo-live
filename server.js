@@ -69,13 +69,23 @@ function windowPct(games, mkt, n) {
   return pct(s.filter(g => pays(g, mkt)).length, s.length);
 }
 
-function chartSeries(games, mkt, win = 8) {
+function chartSeries(games, mkt, qtdJogos = 20) {
+  // EXATO como o caramelo: janela = Qtd. Jogos. valor = % do mercado nessa janela.
   const vals = [];
-  for (let i = win; i <= games.length; i++) {
-    const block = games.slice(i - win, i);
-    vals.push(pct(block.filter(g => pays(g, mkt)).length, win));
+  for (let i = qtdJogos; i <= games.length; i++) {
+    const block = games.slice(i - qtdJogos, i);
+    vals.push(Math.round(block.filter(g => pays(g, mkt)).length / qtdJogos * 100));
   }
   return vals.slice(-40);
+}
+
+function ema(arr, period) {
+  // media movel exponencial (como MM do caramelo)
+  if (!arr.length) return [];
+  const k = 2 / (period + 1);
+  const out = [arr[0]];
+  for (let i = 1; i < arr.length; i++) out.push(arr[i] * k + out[i - 1] * (1 - k));
+  return out;
 }
 
 function slopeOf(series){
@@ -87,26 +97,48 @@ function slopeOf(series){
   return den?num/den:0;
 }
 
+function macdData(series) {
+  // MM1 curta (10), MM2 longa (20), igual ao caramelo. MACD = MM1 - MM2
+  const mm1 = ema(series, 10), mm2 = ema(series, 20);
+  const hist = series.map((_, i) => +(mm1[i] - mm2[i]).toFixed(2));
+  return { mm1, mm2, hist };
+}
+
 function zoneSignal(series){
-  if(!series.length)return{zona:"—",zonaPct:0,direcao:"—",pagamento:"—",sinal:"AGUARDAR",inclinacao:0};
+  if(!series.length)return{zona:"—",zonaPct:0,direcao:"—",pagamento:"—",sinal:"AGUARDAR",macd:0,mm1:0,mm2:0};
   const sorted=series.slice().sort((a,b)=>a-b);
   const p=(q)=>sorted[Math.min(sorted.length-1,Math.max(0,Math.round((sorted.length-1)*q)))];
   const min=p(0.05),max=p(0.95),cur=series[series.length-1];
   const range=Math.max(1,max-min);
   const zonaPct=Math.round((Math.max(min,Math.min(max,cur))-min)/range*100);
-  // DIRECAO FIEL: inclinacao por regressao sobre os ultimos pontos (tendencia real)
-  const tail=series.slice(-Math.min(10,series.length));
-  const slope=slopeOf(tail);
-  const subindo=slope>0.3, descendo=slope<-0.3;
+
+  // DIRECAO CORRETA (como o caramelo): MACD = MM1(10) - MM2(20)
+  const { mm1, mm2, hist } = macdData(series);
+  const macd = hist[hist.length - 1];
+  const macdPrev = hist[hist.length - 4] ?? macd;
+  // direcao = sinal do MACD + se ele esta crescendo (histograma abrindo pra cima)
+  const macdSubindo = macd > 0 && macd >= macdPrev;
+  const macdDescendo = macd < 0 || (macd < macdPrev);
+  const subindo = macd > 0.2 && macd >= macdPrev;   // so "subindo" se MACD positivo E abrindo
+  const descendo = macd < -0.2 || (macd < macdPrev - 0.2);
+
   const zona=zonaPct<=25?"Fundo":zonaPct<=45?"Baixa":zonaPct>=78?"Topo":zonaPct>=60?"Alta":"Meio";
   let sinal="AGUARDAR",pagamento="—";
-  if(zonaPct>=78&&descendo){sinal="PAGAMENTO";pagamento="Ponto bom";}
+  // REGRA CORRIGIDA: so COMPRA no fundo subindo com MACD positivo. NUNCA compra no topo.
+  if(zonaPct>=78){sinal="TOPO - NAO ENTRAR (risco RED)";pagamento=descendo?"Saída/pagamento":"—";}
   else if(zonaPct>=60&&descendo){sinal="PROTEGER PARCIAL";pagamento="Parcial";}
-  else if(zonaPct<=35&&subindo){sinal="COMPRA NASCENDO";pagamento="Alvo meio/topo";}
-  else if(zonaPct>=70){sinal="RISCO ALTO (caro)";}
-  else if(subindo){sinal="SUBINDO";}
+  else if(zonaPct<=35&&subindo){sinal="COMPRA (fundo subindo)";pagamento="Alvo meio";}
+  else if(zonaPct<=35&&!subindo){sinal="FUNDO - aguardar virada";}
+  else if(subindo&&zonaPct<60){sinal="SUBINDO (a favor)";}
   else if(descendo){sinal="RECUO";}
-  return{zona,zonaPct,direcao:subindo?"Subindo":descendo?"Descendo":"Lateral",pagamento,sinal,inclinacao:+slope.toFixed(2)};
+  return{
+    zona,zonaPct,
+    direcao:subindo?"Subindo":descendo?"Descendo":"Lateral",
+    pagamento,sinal,
+    macd:+macd.toFixed(2),
+    mm1:+mm1[mm1.length-1].toFixed(1),
+    mm2:+mm2[mm2.length-1].toFixed(1)
+  };
 }
 
 function evalUpcoming(upcoming, games, mkt) {
@@ -128,6 +160,7 @@ function evalUpcoming(upcoming, games, mkt) {
     const justa = p > 0 ? +(100 / p).toFixed(2) : null;
     const ev = odd ? Math.round((p / 100 * odd - 1) * 1000) / 10 : null;
     return { nome: u.nome, odd: odd || null, base: p, amostra, justa, ev, vale: ev != null && ev > 0 };
+
   });
 }
 
@@ -266,7 +299,47 @@ function scoreDistribution(games, odd, mkt) {
   return { j: band.length, top, marketP: Math.round(green / band.length * 1000) / 10 };
 }
 
-function computeMarket(games, mkt) {
+function buildAlerts(games, serie, sinal, mkt, base) {
+  const alertas = [];
+  if (!serie.length) return alertas;
+  const cur = serie[serie.length - 1];
+  const min = Math.min(...serie), max = Math.max(...serie);
+
+  // 1) ALERTA DE MINIMA: mercado no fundo historico (oportunidade de formacao)
+  if (cur <= min + 2 && sinal.zonaPct <= 20) {
+    alertas.push({ tipo: "MINIMA", cls: "warn", txt: `Mercado na MÍNIMA (${cur}%) — fundo. Espere VIRAR pra cima antes de entrar.` });
+  }
+
+  // 2) ALERTA DE TENDENCIA (so quando SUBINDO de verdade: MACD positivo e abrindo, fora do topo)
+  if (sinal.macd > 0.2 && sinal.direcao === "Subindo" && sinal.zonaPct < 70) {
+    alertas.push({ tipo: "TENDENCIA ALTA", cls: "ok", txt: `${mktNome(mkt)} SUBINDO (MACD +${sinal.macd}, zona ${sinal.zonaPct}%) — tendência a favor.` });
+  }
+  // alerta de topo (protecao contra o RED)
+  if (sinal.zonaPct >= 78) {
+    alertas.push({ tipo: "TOPO", cls: "bad", txt: `${mktNome(mkt)} no TOPO (${sinal.zonaPct}%) — NÃO entrar, risco de RED. Mercado já pagou.` });
+  }
+
+  // 3) ALERTA DE ANCORA: nos ultimos ~6 jogos, algum padrao de odd/time que paga forte
+  const recent = games.slice(-30);
+  const byOdd = {};
+  for (const g of recent) {
+    const o = g.odds[oddKey(mkt)]; if (!o) continue;
+    const k = o.toFixed(2);
+    (byOdd[k] = byOdd[k] || { tot: 0, hit: 0, odd: o });
+    byOdd[k].tot++; if (pays(g, mkt)) byOdd[k].hit++;
+  }
+  Object.values(byOdd).forEach(r => {
+    if (r.tot >= 6 && r.hit / r.tot >= 0.6) {
+      alertas.push({ tipo: "ÂNCORA ODD", cls: "ok", txt: `Odd @${r.odd.toFixed(2)} pagou ${r.hit}/${r.tot} (${Math.round(r.hit / r.tot * 100)}%) nos últimos jogos — âncora forte.` });
+    }
+  });
+
+  return alertas;
+}
+
+function mktNome(m) { return { o35: "Over 3.5", ge5: "5+ gols", o25: "Over 2.5", ambas: "Ambas" }[m] || m; }
+
+function computeMarket(games, mkt, qtdJogos = 20) {
   const total = games.length;
   const hit = games.filter(g => pays(g, mkt)).length;
   const base = pct(hit, total);
@@ -279,7 +352,7 @@ function computeMarket(games, mkt) {
   // ranking por odd
   const byOdd = {};
   for (const g of games) {
-    const o = g.odds[mkt];
+    const o = g.odds[oddKey(mkt)];
     if (!o) continue;
     const k = o.toFixed(2);
     (byOdd[k] = byOdd[k] || { odd: o, tot: 0, hit: 0 });
@@ -295,7 +368,7 @@ function computeMarket(games, mkt) {
     })
     .sort((a, b) => b.ev - a.ev);
 
-  // assinaturas: padrao dos ultimos 5 -> paga no proximo
+  // assinaturas
   const sigMap = {};
   for (let i = 5; i < games.length; i++) {
     const sig = games.slice(i - 5, i).map(g => (pays(g, mkt) ? "1" : "0")).join("");
@@ -303,28 +376,31 @@ function computeMarket(games, mkt) {
     sigMap[sig].n++;
     if (pays(games[i], mkt)) sigMap[sig].paid++;
   }
-  // assinatura ATUAL (ultimos 5 jogos) e o que costuma vir depois
   const atualSig = games.slice(-5).map(g => (pays(g, mkt) ? "1" : "0")).join("");
   const atualStat = sigMap[atualSig] || { n: 0, paid: 0 };
-
   const signatures = Object.entries(sigMap)
     .filter(([_, d]) => d.n >= 8)
     .map(([sig, d]) => ({ sig, n: d.n, paid: d.paid, p: pct(d.paid, d.n) }))
     .sort((a, b) => b.p - a.p)
     .slice(0, 10);
 
-  const serie = chartSeries(games, mkt);
+  const serie = chartSeries(games, mkt, qtdJogos);
   const sinal = zoneSignal(serie);
+  const { hist: macdHist } = macdData(serie);
   const conf = confluencia(games, mkt);
   const s15 = statForRows(games, mkt, 15), s30 = statForRows(games, mkt, 30), s120 = statForRows(games, mkt, 120);
   const ligaStatus = radarDecision(s15, s30, s120);
+  const alertas = buildAlerts(games, serie, sinal, mkt, base);
 
   return {
     total, base, justa,
     termometro: wins,
     aquecendo,
+    qtdJogos,
     serie,
+    macdHist: macdHist.slice(-40),
     sinal,
+    alertas,
     confluencia: conf,
     ligaStatus,
     stats: { s15: s15.p, s30: s30.p, s120: s120.p },
@@ -382,12 +458,26 @@ app.get("/api/liga/:liga", (req, res) => {
   const d = store[liga];
   if (!d || d.erro) return res.json({ erro: (d && d.erro) || "carregando...", liga });
   const mkt = req.query.mkt || "o35";
+  const qtd = Math.min(240, Math.max(20, parseInt(req.query.qtd) || 20));
+
+  // analise base (pre-calculada com qtd=20)
+  let analise = d.computed[mkt] || d.computed.o35;
+  // se o usuario pediu outra Qtd. Jogos, recalcula a serie/sinal/macd/alertas pra essa janela
+  if (qtd !== 20 && d.games) {
+    const serie = chartSeries(d.games, mkt, qtd);
+    const sinal = zoneSignal(serie);
+    const { hist } = macdData(serie);
+    const alertas = buildAlerts(d.games, serie, sinal, mkt, analise.base);
+    analise = { ...analise, serie, macdHist: hist.slice(-40), sinal, alertas, qtdJogos: qtd };
+  }
+
   res.json({
     liga,
     mercado: mkt,
+    qtd,
     lastUpdated: d.lastUpdated,
     fetchedAt: d.fetchedAt,
-    analise: d.computed[mkt] || d.computed.o35,
+    analise,
     proximos: (d.upcoming && d.upcoming[mkt]) || [],
     ultimos: d.ultimos
   });
