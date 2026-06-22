@@ -146,12 +146,22 @@ function analyzeWithBrain(games, upcoming, liga, marketKey) {
     }).filter(g => g.odd);
   }
 
-  // 5) analysisForGame em cada jogo
+  // 5) analysisForGame em cada jogo + detalhes completos (igual extensao)
   const out = [];
   for (const g of games2) {
     try {
       const a = brain.analysisForGame(g, []);
-      out.push({ game: g, analysis: a });
+      // detalhes extras usando as funcoes REAIS do robo
+      const detalhes = {};
+      try { detalhes.oddFixa = brain.exactOddText && brain.exactOddStats ? brain.exactOddText(brain.exactOddStats(g, g.market)) : null; } catch (e) {}
+      try { detalhes.horario = brain.hourStatsText && brain.hourStatsForGame ? brain.hourStatsText(brain.hourStatsForGame(g, g.market)) : null; } catch (e) {}
+      try { detalhes.liga = brain.ligaStatsText ? brain.ligaStatsText(g.market) : null; } catch (e) {}
+      try { detalhes.teamDetail = brain.teamDetailText ? brain.teamDetailText(g, g.market) : null; } catch (e) {}
+      try { detalhes.placar = brain.scorePullText && brain.scoreModelForGame ? brain.scorePullText(brain.scoreModelForGame(g, g.market)) : null; } catch (e) {}
+      try { detalhes.oneXTwo = brain.oneXTwoOddsText ? brain.oneXTwoOddsText(g) : null; } catch (e) {}
+      try { detalhes.cicloTxt = brain.cycleText ? brain.cycleText(a.cycle || brain.marketCycleStats(g.market)) : null; } catch (e) {}
+      try { detalhes.teamGeral = brain.fmtBaseStat ? brain.fmtBaseStat(a.team) : null; } catch (e) {}
+      out.push({ game: g, analysis: a, detalhes });
     } catch (e) {
       out.push({ game: g, error: String(e && e.message || e) });
     }

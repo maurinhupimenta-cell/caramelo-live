@@ -125,6 +125,16 @@ function render(d){
         <div><span class="note">Base dos times</span><br><b>${p.teamBase}</b></div>
         <div style="grid-column:1/-1"><span class="note">Ciclo</span><br><b>${p.ciclo}</b></div>
       </div>
+      <div style="margin-top:10px;padding-top:10px;border-top:1px solid var(--line);font-size:12px;line-height:1.7;color:var(--muted)">
+        ${p.cicloTxt?`<div>${p.cicloTxt}</div>`:''}
+        ${p.placarCorreto?`<div>${p.placarCorreto}</div>`:''}
+        ${p.oddFixa&&!/sem base/.test(p.oddFixa)?`<div>${p.oddFixa}</div>`:''}
+        ${p.horarioStat&&!/sem base/.test(p.horarioStat)?`<div>${p.horarioStat}</div>`:''}
+        ${p.ligaStat?`<div>${p.ligaStat}</div>`:''}
+        ${p.teamGeral?`<div><b>Times geral:</b> ${p.teamGeral}</div>`:''}
+        ${p.oneXTwo&&!/sem odds/.test(p.oneXTwo)?`<div>${p.oneXTwo}</div>`:''}
+        ${p.teamDetail?`<div>${p.teamDetail}</div>`:''}
+      </div>
     </div>`;
   }).join('');
 

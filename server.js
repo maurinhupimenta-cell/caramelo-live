@@ -43,7 +43,16 @@ function brainEval(games, upcoming, liga, mkt) {
         ciclo: a.cycle ? `${a.cycle.streak} ${a.cycle.cur} | ${a.cycle.fase} | pressão ${Math.round(a.cycle.pressao || 0)}` : "—",
         coldOdd: !!a.coldOdd,
         ready: !!(a.combo && a.combo.ready),
-        pontos: a.combo ? a.combo.points : null
+        pontos: a.combo ? a.combo.points : null,
+        // detalhes completos (igual extensao)
+        oddFixa: r.detalhes?.oddFixa || null,
+        horarioStat: r.detalhes?.horario || null,
+        ligaStat: r.detalhes?.liga || null,
+        teamDetail: r.detalhes?.teamDetail || null,
+        placarCorreto: r.detalhes?.placar || null,
+        oneXTwo: r.detalhes?.oneXTwo || null,
+        cicloTxt: r.detalhes?.cicloTxt || null,
+        teamGeral: r.detalhes?.teamGeral || null
       };
     });
   } catch (e) {
