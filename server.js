@@ -1,6 +1,50 @@
 import express from "express";
 import { fileURLToPath } from "url";
 import { dirname, join } from "path";
+import { createRequire } from "module";
+
+const require = createRequire(import.meta.url);
+let brainAdapter = null;
+try {
+  brainAdapter = require("./brain/adapter.cjs");
+  console.log("Cerebro da extensao carregado (robot.js real)");
+} catch (e) {
+  console.error("Falha ao carregar cerebro:", e.message);
+}
+const BRAIN_MKT = { o35: "over35", o25: "over25", ge5: "over5", ambas: "ambas_sim" };
+
+function brainEval(games, upcoming, liga, mkt) {
+  if (!brainAdapter) return null;
+  const bk = BRAIN_MKT[mkt];
+  if (!bk) return null;
+  try {
+    const res = brainAdapter.analyzeWithBrain(games, upcoming, liga, bk);
+    return res.map(r => {
+      if (r.error || !r.analysis) return { nome: r.game?.name || "?", erro: r.error || "sem analise" };
+      const a = r.analysis;
+      return {
+        nome: r.game.name,
+        odd: r.game.odd || null,
+        score: a.score ?? null,
+        status: a.status || "—",
+        motivo: a.motivo || "—",
+        prob: Number.isFinite(a.prob) ? +a.prob.toFixed(1) : null,
+        justa: Number.isFinite(a.fairOdd) ? +a.fairOdd.toFixed(2) : null,
+        ev: Number.isFinite(a.ev) ? +a.ev.toFixed(1) : null,
+        edge: Number.isFinite(a.probEdge) ? +a.probEdge.toFixed(1) : null,
+        evGale: Number.isFinite(a.evGale) ? +a.evGale.toFixed(1) : null,
+        teamBase: a.team && Number.isFinite(a.team.p) ? `${a.team.g}/${a.team.j} ${a.team.p.toFixed(0)}%` : "sem base",
+        oddBase: a.odd && Number.isFinite(a.odd.p) ? `${a.odd.g}/${a.odd.j} ${a.odd.p.toFixed(0)}%` : "sem base",
+        ciclo: a.cycle ? `${a.cycle.streak} ${a.cycle.cur} | ${a.cycle.fase} | pressão ${Math.round(a.cycle.pressao || 0)}` : "—",
+        coldOdd: !!a.coldOdd,
+        ready: !!(a.combo && a.combo.ready),
+        pontos: a.combo ? a.combo.points : null
+      };
+    });
+  } catch (e) {
+    return [{ erro: "brain: " + e.message }];
+  }
+}
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -471,10 +515,10 @@ async function refreshLiga(liga) {
         ambas: computeMarket(games, "ambas")
       },
       upcoming: {
-        o35: fullEvalUpcoming(upcoming, games, "o35"),
-        ge5: fullEvalUpcoming(upcoming, games, "ge5"),
-        o25: fullEvalUpcoming(upcoming, games, "o25"),
-        ambas: fullEvalUpcoming(upcoming, games, "ambas")
+        o35: brainEval(games, upcoming, liga, "o35") || fullEvalUpcoming(upcoming, games, "o35"),
+        ge5: brainEval(games, upcoming, liga, "ge5") || fullEvalUpcoming(upcoming, games, "ge5"),
+        o25: brainEval(games, upcoming, liga, "o25") || fullEvalUpcoming(upcoming, games, "o25"),
+        ambas: brainEval(games, upcoming, liga, "ambas") || fullEvalUpcoming(upcoming, games, "ambas")
       },
       ultimos: games.slice(-10).map(g => ({ nome: g.nome, placar: g.a + "-" + g.b, total: g.total }))
     };
