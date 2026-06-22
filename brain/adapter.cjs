@@ -136,8 +136,12 @@ function analyzeWithBrain(games, upcoming, liga, marketKey) {
   if (!games2 || !games2.length) {
     const m = brain.MARKETS.find(x => x.key === marketKey);
     const oddFromObj = sandbox.oddFromObj;
+    // chave direta no objeto de odds do caramelo pra cada mercado do robo
+    const DIRECT = { over35: "o35", over25: "o25", over5: "ge5", ambas_sim: "ambs" };
+    const dk = DIRECT[marketKey];
     games2 = upcoming.map((u, i) => {
-      const odd = oddFromObj ? oddFromObj(u.odds, m) : null;
+      let odd = oddFromObj ? oddFromObj(u.odds, m) : null;
+      if (!odd && dk && u.odds[dk]) odd = parseFloat(u.odds[dk]);   // fallback direto pela chave
       return { time: `99.${i}`, name: u.nome, market: m, odd, text: buildTxt({ name: u.nome, odds: u.odds }), api: true };
     }).filter(g => g.odd);
   }
