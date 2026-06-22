@@ -231,9 +231,35 @@ function radarDecision(s15, s30, s120) {
   return { label: "NEUTRA", cls: "warn" };
 }
 
+function comboScore({ graphSubindo, graphTopo, temMinima, minimaLonga, cycleStrong, cycleBuilding, probStrong, evStrong, baseForte, coldOdd }) {
+  // FORMULA FIEL DA EXTENSAO (comboScoreForGame)
+  const points = {
+    hist: graphSubindo ? 15 : graphTopo ? -15 : 0,       // histograma/direcao
+    trend: graphSubindo ? 10 : graphTopo ? -10 : 0,       // tendencia
+    minimum: temMinima ? 25 : 0,                           // mínima = maior peso
+    cycle: cycleStrong ? 15 : cycleBuilding ? 8 : 0,
+    prob: probStrong ? 15 : 0,
+    ev: evStrong ? 10 : 0,
+    base: baseForte ? 10 : 0,
+    longMinimum: minimaLonga ? 5 : 0
+  };
+  let score = Object.values(points).reduce((a, b) => a + b, 0);
+  score = Math.max(0, Math.min(100, score));
+  // tetos de seguranca (igual extensao)
+  if (!temMinima || !graphSubindo) score = Math.min(score, 64);
+  if (coldOdd || !probStrong || !evStrong) score = Math.min(score, 54);
+  const ready = score >= 70 && temMinima && graphSubindo && probStrong && evStrong && baseForte && !coldOdd;
+  return { score: Math.round(score), ready, points };
+}
+
 function fullEvalUpcoming(upcoming, games, mkt) {
   const baseGeral = pct(games.filter(g => pays(g, mkt)).length, games.length);
   const cycle = cycleStats(games, mkt);
+  // sinal do grafico da liga (direcao/zona) - vale pra todos os jogos da liga
+  const serie = chartSeries(games, mkt, 20);
+  const sinal = zoneSignal(serie);
+  const cur = serie.length ? serie[serie.length - 1] : 0;
+  const minSerie = serie.length ? Math.min(...serie) : 0;
   return upcoming.map(u => {
     const odd = u.odds[oddKey(mkt)];
     const oddBase = oddPayPct(games, odd, mkt);
@@ -245,22 +271,38 @@ function fullEvalUpcoming(upcoming, games, mkt) {
     const justa = prob > 0 ? +(100 / prob).toFixed(2) : null;
     const ev = odd ? Math.round((prob / 100 * odd - 1) * 1000) / 10 : null;
     const edge = odd && justa ? Math.round((odd - justa) / odd * 1000) / 10 : null;
-    let status = "NEUTRO";
-    if (ev != null) {
-      if (ev > 8) status = "ENTRADA BOA";
-      else if (ev > 0) status = "LEVE VANTAGEM";
-      else if (ev > -10) status = "MARGINAL";
-      else status = "EVITAR (caro)";
-    }
+
+    // ingredientes do combo (os 3 pilares: grafico + base + ev/prob)
+    const graphSubindo = sinal.direcao === "Subindo" && sinal.zonaPct < 70;
+    const graphTopo = sinal.zonaPct >= 78;
+    const temMinima = cur <= minSerie + 5 && sinal.zonaPct <= 40; // perto do fundo
+    const cycleStrong = cycle && cycle.cur === "RED" && cycle.avgRed && cycle.streak >= cycle.avgRed;
+    const cycleBuilding = cycle && cycle.cur === "RED" && cycle.pressao >= 35;
+    const probStrong = prob >= (mkt === "ge5" ? 12 : mkt === "o35" ? 28 : 45);
+    const evStrong = ev != null && ev >= 0;
+    const baseForte = (teamBase.j >= 6 && teamBase.p >= 52) || (oddBase.j >= 8 && oddBase.p >= 52);
+    const coldOdd = oddBase.j >= 8 && oddBase.p < 30;
+    const combo = comboScore({ graphSubindo, graphTopo, temMinima, minimaLonga: false, cycleStrong, cycleBuilding, probStrong, evStrong, baseForte, coldOdd });
+
+    // status agora reflete o COMBO (nao so EV) - protege contra RED
+    let status = "PASSAR";
+    if (combo.ready) status = "ENTRADA FORTE";
+    else if (combo.score >= 58) status = "OBSERVAR";
+    else if (graphTopo) status = "TOPO - EVITAR";
+    else if (ev != null && ev > 0) status = "LEVE VANTAGEM";
+    else status = "PASSAR";
+
     return {
       nome: u.nome, odd: odd || null,
+      score: combo.score, ready: combo.ready,
       prob, justa, ev, edge, status,
       oddBase: oddBase.j ? `${oddBase.g}/${oddBase.j} ${oddBase.p}%` : "sem base",
       teamBase: teamBase.j ? `${teamBase.g}/${teamBase.j} ${teamBase.p}%` : "sem base",
       placarCorreto: dist ? dist.top.join(" | ") : "—",
       mercadoBase: dist ? `${dist.marketP}% (${dist.j} jogos)` : "—",
       ciclo: cycle ? `${cycle.streak} ${cycle.cur} | fase ${cycle.fase} | pressão ${cycle.pressao}` : "—",
-      vale: ev != null && ev > 0
+      pilares: { grafico: graphSubindo ? "+" : graphTopo ? "-" : "0", base: baseForte ? "+" : "0", ev: evStrong ? "+" : "0" },
+      vale: combo.ready
     };
   });
 }

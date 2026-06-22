@@ -102,13 +102,23 @@ function render(d){
   }).join('');
 
   // PROXIMOS JOGOS (cards detalhados como a extensao)
-  const statusCor=s=>/ENTRADA BOA/.test(s)?'var(--greenb)':/VANTAGEM/.test(s)?'#7fd17f':/MARGINAL/.test(s)?'var(--amber)':'var(--red)';
+  const statusCor=s=>/ENTRADA FORTE/.test(s)?'var(--greenb)':/OBSERVAR/.test(s)?'#7fd17f':/LEVE/.test(s)?'var(--amber)':/TOPO|EVITAR/.test(s)?'var(--red)':'var(--muted)';
+  const scoreCor=sc=>sc>=70?'var(--greenb)':sc>=58?'var(--amber)':'var(--red)';
+  const pilarTag=(v,nome)=>{
+    const c=v==='+'?'var(--greenb)':v==='-'?'var(--red)':'var(--muted)';
+    return `<span style="display:inline-block;padding:1px 6px;border-radius:4px;background:rgba(255,255,255,.04);color:${c};font-size:11px;margin-right:4px">${nome} ${v}</span>`;
+  };
   const prox=(d.proximos||[]).map(p=>{
-    return `<div class="card" style="margin-bottom:10px;border-left:3px solid ${statusCor(p.status)}">
+    const pil=p.pilares||{};
+    return `<div class="card" style="margin-bottom:10px;border-left:4px solid ${scoreCor(p.score||0)}">
       <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
         <b style="font-size:15px">${p.nome} <span style="color:var(--muted);font-size:11px;font-weight:400">[${d.liga.toUpperCase()}]</span></b>
-        <span>${p.odd?'@'+p.odd.toFixed(2):'—'} • <span style="color:${statusCor(p.status)};font-weight:700">${p.status}</span></span>
+        <div style="display:flex;align-items:center;gap:10px">
+          <div style="text-align:center"><div style="font-size:24px;font-weight:800;color:${scoreCor(p.score||0)};line-height:1">${p.score??'—'}</div><div class="note" style="font-size:9px">SCORE</div></div>
+          <span>${p.odd?'@'+p.odd.toFixed(2):'—'} • <span style="color:${statusCor(p.status)};font-weight:700">${p.status}</span></span>
+        </div>
       </div>
+      <div style="margin-top:8px">${pilarTag(pil.grafico||'0','Gráfico')}${pilarTag(pil.base||'0','Time/Base')}${pilarTag(pil.ev||'0','EV')}</div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin-top:10px;font-size:12px">
         <div><span class="note">Prob calibrada</span><br><b>${p.prob}%</b></div>
         <div><span class="note">Odd justa</span><br><b>${p.justa??'—'}</b></div>
