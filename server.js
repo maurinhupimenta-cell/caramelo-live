@@ -572,6 +572,19 @@ async function refreshAll() {
 refreshAll();
 setInterval(refreshAll, REFRESH_MS);
 
+app.get("/api/debug/:liga", (req, res) => {
+  const liga = req.params.liga;
+  const d = store[liga];
+  if (!d) return res.json({ erro: "sem store" });
+  res.json({
+    jogos: d.games?.length || 0,
+    upcomingRaw_len: d.upcomingRaw?.length || 0,
+    upcomingRaw: (d.upcomingRaw || []).map(u => ({ nome: u.nome, horario: u.horario, casa: u.casa, fora: u.fora, temOdds: Object.keys(u.odds || {}).length })),
+    upcoming_o35_len: d.upcoming?.o35?.length || 0,
+    upcoming_o35_ex: d.upcoming?.o35?.[0] || null
+  });
+});
+
 // API
 app.post("/api/curve", (req, res) => {
   try {
