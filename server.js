@@ -581,6 +581,9 @@ app.get("/api/debug/:liga", (req, res) => {
   try {
     const res = brainAdapter.analyzeWithBrain(d.games, d.upcomingRaw, liga, "over35");
     brainTest = `adapter retornou ${res.length} itens; item0: ${JSON.stringify(res[0] ? { name: res[0].game?.name, temAnalise: !!res[0].analysis, erro: res[0].error, detalhes: res[0].detalhes ? Object.keys(res[0].detalhes) : null } : "vazio").slice(0, 300)}`;
+    // mostra as odds CRUAS do primeiro futuro pra ver as chaves reais
+    const u0 = d.upcomingRaw && d.upcomingRaw[0];
+    brainTest += " || odds_cruas: " + JSON.stringify(u0 ? u0.odds : "sem upcoming");
   } catch (e) {
     brainTest = "THROW: " + e.message + " @ " + (e.stack || "").split("\n")[1];
   }
