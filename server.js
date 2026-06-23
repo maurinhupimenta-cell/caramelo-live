@@ -593,31 +593,6 @@ async function refreshAll() {
 refreshAll();
 setInterval(refreshAll, REFRESH_MS);
 
-app.get("/api/debug/:liga", (req, res) => {
-  const liga = req.params.liga;
-  const d = store[liga];
-  if (!d) return res.json({ erro: "sem store" });
-  // testa brainEval direto agora
-  let brainTest = "nao testado";
-  try {
-    const res = brainAdapter.analyzeWithBrain(d.games, d.upcomingRaw, liga, "over35");
-    brainTest = `adapter retornou ${res.length} itens; item0: ${JSON.stringify(res[0] ? { name: res[0].game?.name, temAnalise: !!res[0].analysis, erro: res[0].error, detalhes: res[0].detalhes ? Object.keys(res[0].detalhes) : null } : "vazio").slice(0, 300)}`;
-    // mostra as odds CRUAS do primeiro futuro pra ver as chaves reais
-    const u0 = d.upcomingRaw && d.upcomingRaw[0];
-    brainTest += " || odds_cruas: " + JSON.stringify(u0 ? u0.odds : "sem upcoming");
-  } catch (e) {
-    brainTest = "THROW: " + e.message + " @ " + (e.stack || "").split("\n")[1];
-  }
-  res.json({
-    brainCarregou: !!brainAdapter,
-    jogos: d.games?.length || 0,
-    upcomingRaw_len: d.upcomingRaw?.length || 0,
-    upcomingRaw_nomes: (d.upcomingRaw || []).map(u => u.nome),
-    upcoming_o35_len: d.upcoming?.o35?.length || 0,
-    brainTest
-  });
-});
-
 // API
 app.post("/api/curve", (req, res) => {
   try {
