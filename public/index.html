@@ -84,9 +84,25 @@ function render(d){
     return `<div class="b" style="height:${h}%;background:${col}"><span>${t.v==null?'—':t.v+'%'}</span><small>${t.n}</small></div>`;
   }).join('');
 
-  // GRAFICO DA LINHA (SVG) com numeros nos pontos + histograma MACD
+  // GRAFICO DA LINHA (SVG) com numeros nos pontos + histograma MACD + LTA/LTB
   const serie=a.serie||[];
-  const chart=lineChart(serie, a.macdHist||[]);
+  const chart=lineChart(serie, a.macdHist||[], a.trend);
+
+  // AVISO DE ROMPIMENTO (o sinal de ouro: reversao de ciclo)
+  let rompHtml='';
+  if(a.trend&&a.trend.rompimento){
+    const r=a.trend.rompimento;
+    const cor=r.cor==='verde'?'var(--greenb)':'var(--red)';
+    rompHtml=`<div style="padding:12px 16px;border-radius:10px;background:${r.cor==='verde'?'rgba(46,160,67,.12)':'rgba(218,54,51,.12)'};border:1.5px solid ${cor};margin-bottom:10px;font-size:14px"><b style="color:${cor}">⚡ ${r.msg}</b></div>`;
+  }
+  // resumo das linhas de tendencia (sempre visivel)
+  let tendHtml='';
+  if(a.trend){
+    const t=a.trend;
+    const ltaTxt=t.lta?`<span style="color:var(--greenb)">LTA ${t.lta.inclinacao>0?'↗':'→'} (suporte)</span>`:'<span class="note">LTA: sem fundos ascendentes</span>';
+    const ltbTxt=t.ltb?`<span style="color:var(--red)">LTB ${t.ltb.inclinacao<0?'↘':'→'} (resistência)</span>`:'<span class="note">LTB: sem topos descendentes</span>';
+    tendHtml=`<div style="font-size:12px;color:var(--muted);margin-top:6px">Tendência: <b style="color:#e8edf4">${t.tendencia}</b> &nbsp;•&nbsp; ${ltaTxt} &nbsp;•&nbsp; ${ltbTxt}</div>`;
+  }
 
   // PAINEL DE ALERTAS (no topo, em destaque)
   const alertaHtml=(a.alertas||[]).map(al=>{
@@ -159,7 +175,9 @@ function render(d){
     ${alertaHtml?`<div class="sec">⚠️ Alertas</div><div class="card">${alertaHtml}</div>`:''}
 
     <div class="sec">Gráfico — ${nomeMkt[mkt]} • Qtd. Jogos: ${a.qtdJogos||d.qtd||20} ${d.curvaReal?'<span style="color:var(--greenb);font-size:12px">● curva real do caramelo</span>':'<span style="color:var(--amber);font-size:12px">○ aproximada (abra o caramelo + captura)</span>'}</div>
+    ${rompHtml}
     <div class="card">${chart}
+    ${tendHtml}
       <div style="display:flex;gap:18px;flex-wrap:wrap;margin-top:12px;font-size:13px">
         <div><span class="note">Sinal</span><br><b style="color:${sinalCor};font-size:16px">${sig.sinal||'—'}</b></div>
         <div><span class="note">Zona</span><br><b>${sig.zona||'—'} ${sig.zonaPct!=null?sig.zonaPct+'%':''}</b></div>
@@ -204,7 +222,7 @@ function render(d){
   `;
 }
 
-function lineChart(serie, macdHist){
+function lineChart(serie, macdHist, trend){
   if(!serie.length)return '<div class="note">sem dados para o gráfico</div>';
   const W=680,H=200,pad=28, hH=70, gap=14; // H=linha, hH=histograma
   const totalH=H+gap+hH;
@@ -212,6 +230,21 @@ function lineChart(serie, macdHist){
   const rng=Math.max(1,max-min);
   const x=i=>pad+i*((W-2*pad)/(serie.length-1||1));
   const y=v=>pad+(1-(v-min)/rng)*(H-2*pad);
+  // LINHAS DE TENDENCIA LTA (verde, suporte) e LTB (vermelho, resistencia)
+  let trendSvg='';
+  if(trend){
+    const buildLine=(s,cor,nome)=>{
+      if(!s)return '';
+      const pontos=s.map((v,i)=>v==null?null:x(i)+','+y(v)).filter(Boolean).join(' ');
+      if(!pontos)return '';
+      // acha o ultimo ponto pra rotular
+      let lastI=s.length-1; while(lastI>=0&&s[lastI]==null)lastI--;
+      const lab=lastI>=0?`<text x="${x(lastI)+4}" y="${y(s[lastI])}" fill="${cor}" font-size="10" font-weight="700">${nome}</text>`:'';
+      return `<polyline points="${pontos}" fill="none" stroke="${cor}" stroke-width="1.6" stroke-dasharray="5 3" opacity="0.9"/>${lab}`;
+    };
+    trendSvg += buildLine(trend.lta&&trend.lta.serie,'#3fb950','LTA');
+    trendSvg += buildLine(trend.ltb&&trend.ltb.serie,'#da3633','LTB');
+  }
   // linha com cor por direcao geral
   const last=serie[serie.length-1], first=serie[0];
   const cor=last>first?'#3fb950':last<first?'#da3633':'#8b98a8';
@@ -242,6 +275,7 @@ function lineChart(serie, macdHist){
     <line x1="${pad}" y1="${pad}" x2="${W-pad}" y2="${pad}" stroke="#2d3543" stroke-dasharray="3 3"/>
     <line x1="${pad}" y1="${H-pad}" x2="${W-pad}" y2="${H-pad}" stroke="#2d3543" stroke-dasharray="3 3"/>
     <polyline points="${pts}" fill="none" stroke="${cor}" stroke-width="2"/>
+    ${trendSvg}
     ${dots}${labels}
     <text x="${W-pad}" y="${pad-8}" fill="#8b98a8" font-size="11" text-anchor="end">Topo ${max}%</text>
     <text x="${W-pad}" y="${H-pad+16}" fill="#8b98a8" font-size="11" text-anchor="end">Fundo ${min}%</text>

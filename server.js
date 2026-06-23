@@ -168,6 +168,88 @@ function windowPct(games, mkt, n) {
   return pct(s.filter(g => pays(g, mkt)).length, s.length);
 }
 
+// ===== LINHAS DE TENDENCIA (LTA / LTB) + GATILHO DE ROMPIMENTO =====
+// Metodo do usuario (price action no virtual): LTA liga 2 fundos ascendentes
+// (suporte, fica ABAIXO da curva); LTB liga 2 topos descendentes (resistencia,
+// fica ACIMA). O sinal de ouro e o ROMPIMENTO (reversao/fim de ciclo).
+function pivots(serie) {
+  // acha topos e fundos locais (um ponto maior/menor que os vizinhos)
+  const topos = [], fundos = [];
+  for (let i = 1; i < serie.length - 1; i++) {
+    if (serie[i] >= serie[i - 1] && serie[i] > serie[i + 1]) topos.push({ i, v: serie[i] });
+    if (serie[i] <= serie[i - 1] && serie[i] < serie[i + 1]) fundos.push({ i, v: serie[i] });
+  }
+  return { topos, fundos };
+}
+
+function trendLines(serie) {
+  if (!serie || serie.length < 6) return null;
+  const n = serie.length;
+  // foca na tendencia RECENTE (ultimos ~20 pontos = micro/macro do virtual)
+  const jan = Math.min(20, n);
+  const ini = n - jan;
+  const sub = serie.slice(ini);
+  const { topos, fundos } = pivots(sub);
+  // reindexa pivots pro indice global da serie
+  topos.forEach(p => p.i += ini);
+  fundos.forEach(p => p.i += ini);
+  const lineFrom = (p1, p2) => {
+    if (!p1 || !p2 || p2.i === p1.i) return null;
+    const m = (p2.v - p1.v) / (p2.i - p1.i);
+    const projeta = x => p1.v + m * (x - p1.i);
+    return { m, p1, p2, valorEm: projeta, atual: projeta(n - 1) };
+  };
+
+  // LTA: 2 fundos ASCENDENTES mais recentes
+  let lta = null;
+  for (let j = fundos.length - 1; j >= 1; j--) {
+    const f2 = fundos[j], f1 = fundos[j - 1];
+    if (f2.v > f1.v) { lta = lineFrom(f1, f2); break; }
+  }
+  // LTB: 2 topos DESCENDENTES mais recentes
+  let ltb = null;
+  for (let j = topos.length - 1; j >= 1; j--) {
+    const t2 = topos[j], t1 = topos[j - 1];
+    if (t2.v < t1.v) { ltb = lineFrom(t1, t2); break; }
+  }
+
+  // GATILHO: a curva rompeu alguma linha no ultimo ponto?
+  const atual = serie[n - 1], ant = serie[n - 2];
+  let rompimento = null;
+  if (ltb) {
+    const linhaAtual = ltb.atual, linhaAnt = ltb.valorEm(n - 2);
+    // rompeu pra CIMA: antes estava abaixo da LTB, agora fechou acima
+    if (ant <= linhaAnt && atual > linhaAtual) {
+      rompimento = { tipo: "ROMPEU_LTB_CIMA", cor: "verde",
+        msg: "ROMPEU LTB pra cima — ciclo virou, mercado vai pagar Over. Sinal de ENTRADA." };
+    }
+  }
+  if (lta && !rompimento) {
+    const linhaAtual = lta.atual, linhaAnt = lta.valorEm(n - 2);
+    // rompeu pra BAIXO: antes acima da LTA, agora fechou abaixo
+    if (ant >= linhaAnt && atual < linhaAtual) {
+      rompimento = { tipo: "ROMPEU_LTA_BAIXO", cor: "vermelho",
+        msg: "ROMPEU LTA pra baixo — mercado saturou, vai pro Under. SEGURA A MÃO / proteja." };
+    }
+  }
+
+  // status da tendencia vigente (sem rompimento)
+  let tendencia = "lateral";
+  if (lta && atual >= lta.atual && (!ltb || atual < ltb.atual)) tendencia = "alta (sobre a LTA)";
+  else if (ltb && atual <= ltb.atual) tendencia = "baixa (sob a LTB)";
+
+  // serie projetada das linhas (pra desenhar) - so a partir do 1o pivo, clampada 0-100
+  const clamp = v => Math.max(0, Math.min(100, Math.round(v * 10) / 10));
+  const ltaSerie = lta ? serie.map((_, x) => x >= lta.p1.i ? clamp(lta.valorEm(x)) : null) : null;
+  const ltbSerie = ltb ? serie.map((_, x) => x >= ltb.p1.i ? clamp(ltb.valorEm(x)) : null) : null;
+
+  return {
+    lta: lta ? { inclinacao: +lta.m.toFixed(2), atual: Math.round(lta.atual), serie: ltaSerie } : null,
+    ltb: ltb ? { inclinacao: +ltb.m.toFixed(2), atual: Math.round(ltb.atual), serie: ltbSerie } : null,
+    rompimento, tendencia
+  };
+}
+
 function chartSeries(games, mkt, qtdJogos = 20) {
   // EXATO como o caramelo: janela = Qtd. Jogos. valor = % do mercado nessa janela.
   const vals = [];
@@ -552,6 +634,30 @@ function computeMarket(games, mkt, qtdJogos = 20) {
   };
 }
 
+// monta o store de uma liga a partir dos jogos (funciona com qualquer fonte:
+// JSON antigo OU placares vindos da sonda ao vivo)
+function buildStore(liga, games, upcoming, lastUpdated) {
+  return {
+    games,
+    upcomingRaw: upcoming,
+    lastUpdated: lastUpdated || new Date().toISOString(),
+    fetchedAt: new Date().toISOString(),
+    computed: {
+      o35: computeMarket(games, "o35"),
+      ge5: computeMarket(games, "ge5"),
+      o25: computeMarket(games, "o25"),
+      ambas: computeMarket(games, "ambas")
+    },
+    upcoming: {
+      o35: brainEval(games, upcoming, liga, "o35") || fullEvalUpcoming(upcoming, games, "o35"),
+      ge5: brainEval(games, upcoming, liga, "ge5") || fullEvalUpcoming(upcoming, games, "ge5"),
+      o25: brainEval(games, upcoming, liga, "o25") || fullEvalUpcoming(upcoming, games, "o25"),
+      ambas: brainEval(games, upcoming, liga, "ambas") || fullEvalUpcoming(upcoming, games, "ambas")
+    },
+    ultimos: games.slice(-10).map(g => ({ nome: g.nome, placar: g.a + "-" + g.b, total: g.total }))
+  };
+}
+
 async function refreshLiga(liga) {
   try {
     const r = await fetch(BASE + liga + ".json", { cache: "no-store" });
@@ -559,25 +665,16 @@ async function refreshLiga(liga) {
     const j = await r.json();
     const { games, upcoming } = decodeRows(j);
     if (!games.length) throw new Error("zero jogos");
-    store[liga] = {
-      games,
-      upcomingRaw: upcoming,
-      lastUpdated: j.lastUpdated || (j.table && j.table.lastUpdated) || null,
-      fetchedAt: new Date().toISOString(),
-      computed: {
-        o35: computeMarket(games, "o35"),
-        ge5: computeMarket(games, "ge5"),
-        o25: computeMarket(games, "o25"),
-        ambas: computeMarket(games, "ambas")
-      },
-      upcoming: {
-        o35: brainEval(games, upcoming, liga, "o35") || fullEvalUpcoming(upcoming, games, "o35"),
-        ge5: brainEval(games, upcoming, liga, "ge5") || fullEvalUpcoming(upcoming, games, "ge5"),
-        o25: brainEval(games, upcoming, liga, "o25") || fullEvalUpcoming(upcoming, games, "o25"),
-        ambas: brainEval(games, upcoming, liga, "ambas") || fullEvalUpcoming(upcoming, games, "ambas")
-      },
-      ultimos: games.slice(-10).map(g => ({ nome: g.nome, placar: g.a + "-" + g.b, total: g.total }))
-    };
+    const lu = j.lastUpdated || (j.table && j.table.lastUpdated) || null;
+    // so usa o JSON se ele estiver FRESCO (< 20 min). Se estiver velho (caramelo
+    // migrou pra WebSocket e congelou o arquivo), NAO sobrescreve dados da sonda.
+    const ageMin = lu ? (Date.now() - new Date(lu).getTime()) / 60000 : 9999;
+    if (ageMin > 20 && store[liga] && store[liga].fonte === "sonda") {
+      return; // mantem os dados frescos da sonda
+    }
+    const s = buildStore(liga, games, upcoming, lu);
+    s.fonte = ageMin > 20 ? "json-velho" : "json";
+    store[liga] = s;
   } catch (e) {
     if (!store[liga]) store[liga] = {};
     store[liga].erro = e.message;
@@ -594,6 +691,28 @@ refreshAll();
 setInterval(refreshAll, REFRESH_MS);
 
 // API
+// recebe os DADOS AO VIVO da sonda (placares da grade) - fonte nova, JSON morreu
+app.post("/api/dados", (req, res) => {
+  try {
+    const { liga, mkt, placares, curva, mm1, mm2, topo, fundo } = req.body || {};
+    if (!liga || !Array.isArray(placares) || !placares.length) {
+      return res.status(400).json({ ok: false, erro: "sem placares" });
+    }
+    const games = placares.map((p, i) => ({
+      nome: "Jogo " + (i + 1), a: p.a, b: p.b, total: p.total, odds: {}
+    }));
+    const s = buildStore(liga, games, [], new Date().toISOString());
+    s.fonte = "sonda";
+    if (Array.isArray(curva)) {
+      liveCurves[liga + "|" + (mkt || "o35")] = { curva, mm1, mm2, topo, fundo, ts: Date.now() };
+    }
+    store[liga] = s;
+    res.json({ ok: true, placares: placares.length, mercados: Object.keys(s.computed) });
+  } catch (e) {
+    res.status(500).json({ ok: false, erro: e.message });
+  }
+});
+
 app.post("/api/curve", (req, res) => {
   try {
     const { liga, mkt, curva, mm1, mm2, topo, fundo, labels, markerColors } = req.body || {};
@@ -639,8 +758,12 @@ app.get("/api/liga/:liga", (req, res) => {
       macdHist = macdData(serie).hist;
     }
     const alertas = buildAlerts(d.games || [], serie, sinal, mkt, analise.base);
-    analise = { ...analise, serie, macdHist: macdHist.slice(-qtdJogos), sinal, alertas, qtdJogos: qtd, curvaReal: true, topo: curvaReal.topo, fundo: curvaReal.fundo };
+    analise = { ...analise, serie, macdHist: macdHist.slice(-qtd), sinal, alertas, qtdJogos: qtd, curvaReal: true, topo: curvaReal.topo, fundo: curvaReal.fundo };
   }
+
+  // LINHAS DE TENDENCIA (LTA/LTB) + gatilho de rompimento, sobre a serie atual
+  const tend = trendLines(analise.serie || []);
+  analise = { ...analise, trend: tend };
 
   res.json({
     liga,
