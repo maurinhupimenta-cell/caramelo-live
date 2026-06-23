@@ -57,13 +57,16 @@ const $=s=>document.querySelector(s);
 const ligaSel=$('#liga'), mktSel=$('#mkt'), qtdSel=$('#qtd');
 const nomeMkt={o35:'Over 3.5',ge5:'5+ gols',o25:'Over 2.5',ambas:'Ambas Marcam'};
 
+let _lastHash = "";
 async function tick(){
   const liga=ligaSel.value, mkt=mktSel.value, qtd=qtdSel.value;
   try{
     const r=await fetch('/api/liga/'+liga+'?mkt='+mkt+'&qtd='+qtd,{cache:'no-store'});
     const d=await r.json();
     if(d.erro){ $('#liveinfo').textContent='aguardando dados...'; return; }
-    render(d);
+    // so re-renderiza se os dados mudaram (evita travar reconstruindo tudo a cada 10s)
+    const hash=JSON.stringify({u:d.lastUpdated,n:(d.proximos||[]).length,s:d.analise&&d.analise.serie,cr:d.curvaReal,m:mkt,l:liga,q:qtd});
+    if(hash!==_lastHash){ _lastHash=hash; render(d); }
     const upd=d.lastUpdated?new Date(d.lastUpdated):null;
     $('#liveinfo').textContent='ao vivo • atualizado '+(upd?upd.toLocaleTimeString('pt-BR'):'agora');
   }catch(e){ $('#liveinfo').textContent='erro de conexao'; }
