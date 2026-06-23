@@ -84,6 +84,27 @@ const liveCurves = {}; // curva REAL capturada da extensao: liga|mkt -> {curva,m
 function parseOdds(s) {
   const odds = {};
   s.replace(/([a-z0-9]+)@([\d.]+)/gi, (_, k, v) => { odds[k] = parseFloat(v); });
+  // os jogos FUTUROS do caramelo as vezes so trazem as odds de UNDER (u15/u25/u35)
+  // e ambn. Como over e under sao mercados complementares (ou da um, ou da outro),
+  // derivamos a odd de OVER a partir da de UNDER quando a de over nao veio.
+  // prob_under = 1/odd_under (sem margem); prob_over = 1 - prob_under; odd_over = 1/prob_over.
+  const deriveOver = (uKey, oKey) => {
+    if (odds[oKey] == null && odds[uKey] != null && odds[uKey] > 1) {
+      const pUnder = 1 / odds[uKey];
+      const pOver = 1 - pUnder;
+      if (pOver > 0.01) odds[oKey] = +(1 / pOver).toFixed(2);
+    }
+  };
+  deriveOver("u15", "o15");
+  deriveOver("u25", "o25");
+  deriveOver("u35", "o35");
+  // ambas sim a partir de ambas nao
+  if (odds.ambs == null && odds.ambn != null && odds.ambn > 1) {
+    const pNao = 1 / odds.ambn, pSim = 1 - pNao;
+    if (pSim > 0.01) odds.ambs = +(1 / pSim).toFixed(2);
+  }
+  // 5+ (ge5): se nao veio, deriva de o35 (aproximacao: 5+ e mais raro que 3.5+)
+  // melhor deixar sem do que inventar; ge5 fica ausente se nao houver base
   return odds;
 }
 
