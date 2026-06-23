@@ -579,10 +579,10 @@ app.get("/api/debug/:liga", (req, res) => {
   // testa brainEval direto agora
   let brainTest = "nao testado";
   try {
-    const bt = brainEval(d.games, d.upcomingRaw, liga, "o35");
-    brainTest = bt ? `${bt.length} itens, ex: ${JSON.stringify(bt[0]).slice(0, 150)}` : "null (brain nao carregou)";
+    const res = brainAdapter.analyzeWithBrain(d.games, d.upcomingRaw, liga, "over35");
+    brainTest = `adapter retornou ${res.length} itens; item0: ${JSON.stringify(res[0] ? { name: res[0].game?.name, temAnalise: !!res[0].analysis, erro: res[0].error, detalhes: res[0].detalhes ? Object.keys(res[0].detalhes) : null } : "vazio").slice(0, 300)}`;
   } catch (e) {
-    brainTest = "THROW: " + e.message;
+    brainTest = "THROW: " + e.message + " @ " + (e.stack || "").split("\n")[1];
   }
   res.json({
     brainCarregou: !!brainAdapter,
