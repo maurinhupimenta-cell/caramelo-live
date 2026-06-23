@@ -72,10 +72,15 @@ function toApiRows(games, upcoming, liga) {
     });
   });
   // futuros (sem score) - 6 proximos
+  // IMPORTANTE: liga fica undefined de proposito. O readGridGames do robo filtra
+  // futuros por liga (Number(r.liga)===activeLiga). Como nao conseguimos trocar o
+  // activeLiga lexical de dentro da IIFE, deixamos r.liga vazio: o filtro tem um
+  // "!r.liga" que deixa passar quando a liga nao esta setada. Assim os 6 futuros
+  // sempre entram, e ja filtramos a liga certa por fora (1 liga por chamada).
   upcoming.forEach((u, i) => {
     rows.push({
       key: `fut|${liga}|${i}|${u.nome}`,
-      liga: ligaNum, time: `99.${String(i).padStart(2, "0")}`, name: u.nome,
+      liga: null, time: `99.${String(i).padStart(2, "0")}`, name: u.nome,
       score: null, odds: u.odds, future: true, platform: "CARAMELO", hours: "Horas3",
       api: `caramelo/${liga}?futuro=true`, idx: 1000 + i,
       txt: `${u.nome} ${Object.entries(u.odds).map(([k, v]) => `${k}@${v}`).join(" ")}`
@@ -124,27 +129,18 @@ function analyzeWithBrain(games, upcoming, liga, marketKey) {
   }));
   brain.RESULTS_CACHE = resultsCache;
 
-  // 4) roda o cerebro: pega os jogos futuros e analisa cada um
-  let readGridGames = sandbox.readGridGames;
-  let games2;
-  try {
-    games2 = readGridGames ? readGridGames() : [];
-  } catch (e) {
-    games2 = [];
-  }
-  // fallback: monta os jogos futuros na mao se readGridGames nao achou
-  if (!games2 || !games2.length) {
-    const m = brain.MARKETS.find(x => x.key === marketKey);
-    const oddFromObj = sandbox.oddFromObj;
-    // chave direta no objeto de odds do caramelo pra cada mercado do robo
-    const DIRECT = { over35: "o35", over25: "o25", over5: "ge5", ambas_sim: "ambs" };
-    const dk = DIRECT[marketKey];
-    games2 = upcoming.map((u, i) => {
-      let odd = oddFromObj ? oddFromObj(u.odds, m) : null;
-      if (!odd && dk && u.odds[dk]) odd = parseFloat(u.odds[dk]);   // fallback direto pela chave
-      return { time: `99.${i}`, name: u.nome, market: m, odd, text: buildTxt({ name: u.nome, odds: u.odds }), api: true };
-    }).filter(g => g.odd);
-  }
+  // 4) monta os jogos futuros DIRETAMENTE (nao usamos readGridGames porque ele
+  //    depende de activeLiga/isFuture lexicais que nao conseguimos controlar de fora).
+  const m = brain.MARKETS.find(x => x.key === marketKey);
+  const oddFromObj = sandbox.oddFromObj;
+  const DIRECT = { over35: "o35", over25: "o25", over5: "ge5", ambas_sim: "ambs" };
+  const dk = DIRECT[marketKey];
+  const games2 = upcoming.map((u, i) => {
+    let odd = null;
+    try { odd = oddFromObj ? oddFromObj(u.odds, m) : null; } catch (e) {}
+    if (!odd && dk && u.odds && u.odds[dk] != null) odd = parseFloat(u.odds[dk]);
+    return { time: `99.${String(i).padStart(2, "0")}`, name: u.nome, market: m, odd, text: buildTxt({ name: u.nome, odds: u.odds }), api: true };
+  }).filter(g => g.odd);
 
   // 5) analysisForGame em cada jogo + detalhes completos (igual extensao)
   const out = [];
