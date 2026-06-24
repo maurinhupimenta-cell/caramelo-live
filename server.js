@@ -698,26 +698,35 @@ setInterval(refreshAll, REFRESH_MS);
 
 // API
 // recebe os DADOS AO VIVO da sonda (placares da grade) - fonte nova, JSON morreu
+let lastDebug = {};
 app.post("/api/dados", (req, res) => {
   try {
-    const { liga, mkt, placares, curva, mm1, mm2, topo, fundo } = req.body || {};
+    const { liga, mkt, placares, upcoming, curva, mm1, mm2, topo, fundo, debug } = req.body || {};
+    if (debug) lastDebug[liga || "?"] = { debug, ts: Date.now() };
     if (!liga || !Array.isArray(placares) || !placares.length) {
       return res.status(400).json({ ok: false, erro: "sem placares" });
     }
     const games = placares.map((p, i) => ({
       nome: "Jogo " + (i + 1), a: p.a, b: p.b, total: p.total, odds: {}
     }));
-    const s = buildStore(liga, games, [], new Date().toISOString());
+    // jogos futuros vindos da sonda (teams + odds lidos da grade)
+    const upc = Array.isArray(upcoming) ? upcoming.filter(u => u && u.nome) : [];
+    const s = buildStore(liga, games, upc, new Date().toISOString());
     s.fonte = "sonda";
     s.sondaTs = Date.now();
     if (Array.isArray(curva)) {
       liveCurves[liga + "|" + (mkt || "o35")] = { curva, mm1, mm2, topo, fundo, ts: Date.now() };
     }
     store[liga] = s;
-    res.json({ ok: true, placares: placares.length, mercados: Object.keys(s.computed) });
+    res.json({ ok: true, placares: placares.length, upcoming: upc.length, mercados: Object.keys(s.computed) });
   } catch (e) {
     res.status(500).json({ ok: false, erro: e.message });
   }
+});
+
+// le o que a sonda achou na tela (pra debug remoto, ja que a aba trava pra automacao)
+app.get("/api/debug/:liga", (req, res) => {
+  res.json(lastDebug[req.params.liga] || { vazio: true });
 });
 
 app.post("/api/curve", (req, res) => {

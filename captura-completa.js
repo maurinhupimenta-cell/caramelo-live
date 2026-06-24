@@ -1,16 +1,20 @@
-// ===== CARAMELO LIVE - SONDA COMPLETA (placares + curva + jogos) =====
-// O caramelo trocou pra WebSocket ao vivo e os arquivos JSON morreram.
-// Esta sonda LE da tela ao vivo (fonte que o caramelo realmente usa agora)
-// e manda pro nosso servidor. Deixe a aba do caramelo aberta (pode minimizar).
-//
-// Troque pela URL do SEU site no Render se mudar:
+// ==UserScript==
+// @name         Caramelo Live - Sonda v4
+// @namespace    caramelo-live
+// @version      4.0
+// @match        https://www.caramelotips.com.br/*
+// @grant        none
+// ==/UserScript==
+// Cole no Console (F12) da aba do caramelo, ou instale no Tampermonkey.
+// Deixe a aba aberta. Le placares + jogos futuros + curva e manda pro site.
+
 const SITE = "https://mr-betlive.onrender.com";
 
 (function () {
-  if (window.__SONDA_ON) { console.log("sonda ja rodando"); return; }
-  window.__SONDA_ON = true;
+  if (window.__SONDA4) { console.log("sonda v4 ja ativa"); return; }
+  window.__SONDA4 = true;
+  const TIPO = { over35: "o35", over25: "o25", over5: "ge5", ge5: "ge5", ambas_sim: "ambas", "ambas sim": "ambas" };
 
-  // ---- liga ativa: botao com fundo verde (rgb(31,204,89)) ----
   function ligaAtiva() {
     const spans = [...document.querySelectorAll("span")].filter(e =>
       ["copa", "euro", "super", "premier"].includes((e.textContent || "").trim().toLowerCase()));
@@ -18,68 +22,75 @@ const SITE = "https://mr-betlive.onrender.com";
     for (const s of spans) {
       const btn = s.closest("button") || s.parentElement;
       const m = getComputedStyle(btn).backgroundColor.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/);
-      let verde = 0;
-      if (m) { const [, r, g, b] = m.map(Number); verde = (g > r + 15 && g > b + 15) ? g - Math.max(r, b) : 0; }
-      if (verde > best.verde) best = { liga: s.textContent.trim().toLowerCase(), verde };
+      let v = 0; if (m) { const [, r, g, b] = m.map(Number); v = (g > r + 15 && g > b + 15) ? g - Math.max(r, b) : 0; }
+      if (v > best.verde) best = { liga: s.textContent.trim().toLowerCase(), verde: v };
     }
     return best.liga;
   }
 
-  // ---- mercado do grafico: _tipo do dataset ----
-  const TIPO_MKT = { over35: "o35", over25: "o25", over5: "ge5", ge5: "ge5", ambas_sim: "ambas", "ambas sim": "ambas" };
-  function mercadoGrafico() {
-    const t = window.__gpLastCfg?.datasets?.[0]?._tipo || "over35";
-    return TIPO_MKT[t] || "o35";
-  }
-
-  // ---- placares da grade, na ORDEM CRONOLOGICA CORRETA ----
-  // (validado: linhas de baixo pra cima, cada linha esq->dir, bate 41/41 com a curva real)
+  // placares pela ordem do DOM (leve). baixo->cima, esq->dir, descarta 2 ultimos.
   function lerPlacares() {
     const cells = [...document.querySelectorAll("div")].filter(el =>
-      /^\d{1,2}-\d{1,2}$/.test((el.textContent || "").trim()) && el.children.length === 0);
+      el.children.length === 0 && /^\d{1,2}-\d{1,2}$/.test((el.textContent || "").trim()));
     if (!cells.length) return [];
-    const pts = cells.map(c => { const r = c.getBoundingClientRect(); return { s: c.textContent.trim(), x: Math.round(r.x), y: Math.round(r.y) }; });
-    const xs = [...new Set(pts.map(p => p.x))].sort((a, b) => a - b);
-    const ys = [...new Set(pts.map(p => p.y))].sort((a, b) => a - b);
-    const mat = ys.map(y => xs.map(x => { const c = pts.find(p => p.x === x && p.y === y); return c ? c.s : null; }));
-    // baixo->cima, esq->dir. Os 2 ultimos placares ainda nao entram na curva
-    // do caramelo (validado ao vivo: descartar 2 faz a curva bater 41/41).
-    const ordenados = [...mat].reverse().flat().filter(Boolean).slice(0, -2);
-    return ordenados.map(s => { const m = s.match(/(\d+)-(\d+)/); return { a: +m[1], b: +m[2], total: +m[1] + +m[2] }; });
+    const tabela = cells[0].closest("table"); if (!tabela) return [];
+    const linhas = [...tabela.querySelectorAll("tr")]
+      .map(tr => [...tr.querySelectorAll("div")]
+        .filter(d => d.children.length === 0 && /^\d{1,2}-\d{1,2}$/.test((d.textContent || "").trim()))
+        .map(d => d.textContent.trim())).filter(a => a.length);
+    const ord = [...linhas].reverse().flat().slice(0, -2);
+    return ord.map(s => { const m = s.match(/(\d+)-(\d+)/); return { a: +m[1], b: +m[2], total: +m[1] + +m[2] }; });
   }
 
-  // ---- curva pronta do grafico (a real do caramelo) ----
-  function lerCurva() {
-    const c = window.__gpLastCfg;
-    if (!c || !c.datasets || !c.datasets[0]) return null;
-    const d = c.datasets[0];
-    return { curva: d.data, mm1: c.mediaMovel1, mm2: c.mediaMovel2, topo: c.maxValor, fundo: c.minValor, tipo: d._tipo };
+  // jogos FUTUROS: celulas da grade com "Time x Time" + odds (AMBS / O2.5 / O3.5).
+  // retorna {upcoming, debugCells} - debug pra eu ver a estrutura real.
+  function lerFuturos() {
+    const cand = [...document.querySelectorAll("td,div")].filter(el => {
+      const t = (el.innerText || "").trim();
+      return el.children.length <= 6 && /\sx\s/i.test(t) && /\d\.\d{2}/.test(t) && t.length < 90;
+    });
+    const debugCells = cand.slice(0, 6).map(el => (el.innerText || "").replace(/\n+/g, " | ").trim().slice(0, 90));
+    const upcoming = [];
+    const vistos = new Set();
+    for (const el of cand) {
+      const raw = (el.innerText || "").replace(/\n+/g, " ").trim();
+      const nm = raw.match(/([A-Za-zÀ-ú.\s]+?\sx\s[A-Za-zÀ-ú.\s]+?)(?=\s*(AMBS|AMBN|O2|O3|U2|U3|\d\.\d{2}|$))/i);
+      if (!nm) continue;
+      const nome = nm[1].replace(/\s+/g, " ").trim();
+      if (!nome || vistos.has(nome)) continue;
+      vistos.add(nome);
+      const odds = {};
+      const amb = raw.match(/AMBS[^\d]*(\d\.\d{2})/i); if (amb) odds.ambs = +amb[1];
+      const o25 = raw.match(/O2\.?5[^\d]*(\d\.\d{2})/i); if (o25) odds.o25 = +o25[1];
+      const o35 = raw.match(/O3\.?5[^\d]*(\d\.\d{2})/i); if (o35) odds.o35 = +o35[1];
+      upcoming.push({ nome, horario: "", casa: "", fora: "", odds });
+    }
+    return { upcoming, debugCells };
   }
 
   async function enviar() {
     try {
+      const c = window.__gpLastCfg;
       const liga = ligaAtiva();
-      const mkt = mercadoGrafico();
+      const mkt = TIPO[c && c.datasets && c.datasets[0] && c.datasets[0]._tipo] || "o35";
       const placares = lerPlacares();
-      const g = lerCurva();
-      if (!placares.length && !g) return;
-      const payload = {
-        liga, mkt,
-        placares,                                  // historico cronologico (recalcula tudo)
-        curva: g ? g.curva : null,                 // curva real pronta
-        mm1: g ? g.mm1 : null, mm2: g ? g.mm2 : null,
-        topo: g ? g.topo : null, fundo: g ? g.fundo : null,
-        ts: Date.now()
+      if (!placares.length) return;
+      const fut = lerFuturos();
+      const body = {
+        liga, mkt, placares, upcoming: fut.upcoming,
+        curva: c && c.datasets && c.datasets[0] ? c.datasets[0].data : null,
+        mm1: c ? c.mediaMovel1 : null, mm2: c ? c.mediaMovel2 : null,
+        topo: c ? c.maxValor : null, fundo: c ? c.minValor : null,
+        debug: { futuros: fut.upcoming.length, cells: fut.debugCells }, ts: Date.now()
       };
-      const r = await fetch(SITE + "/api/dados", {
-        method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload)
-      });
+      const r = await fetch(SITE + "/api/dados", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
       const j = await r.json();
-      window.__sondaLast = `${liga}/${mkt}: ${placares.length} placares, curva ${g ? g.curva.length : 0}pts @${new Date().toLocaleTimeString()}`;
+      window.__sondaLast = `${liga}/${mkt}: ${placares.length}pl ${fut.upcoming.length}fut ${j.ok ? "ok" : "?"} @${new Date().toLocaleTimeString()}`;
     } catch (e) { window.__sondaLast = "erro: " + e.message; }
   }
 
+  let ultimo = 0;
+  setInterval(() => { const n = Date.now(); if (n - ultimo >= 8000) { ultimo = n; enviar(); } }, 2000);
   enviar();
-  window.__sondaTimer = setInterval(enviar, 5000);
-  console.log("=== SONDA CARAMELO LIGADA === enviando placares+curva a cada 5s para " + SITE);
+  console.log("=== SONDA v4 LIGADA === " + SITE);
 })();
