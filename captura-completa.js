@@ -42,8 +42,9 @@ const SITE = "https://mr-betlive.onrender.com";
     const xs = [...new Set(pts.map(p => p.x))].sort((a, b) => a - b);
     const ys = [...new Set(pts.map(p => p.y))].sort((a, b) => a - b);
     const mat = ys.map(y => xs.map(x => { const c = pts.find(p => p.x === x && p.y === y); return c ? c.s : null; }));
-    // baixo->cima, esq->dir
-    const ordenados = [...mat].reverse().flat().filter(Boolean);
+    // baixo->cima, esq->dir. Os 2 ultimos placares ainda nao entram na curva
+    // do caramelo (validado ao vivo: descartar 2 faz a curva bater 41/41).
+    const ordenados = [...mat].reverse().flat().filter(Boolean).slice(0, -2);
     return ordenados.map(s => { const m = s.match(/(\d+)-(\d+)/); return { a: +m[1], b: +m[2], total: +m[1] + +m[2] }; });
   }
 
