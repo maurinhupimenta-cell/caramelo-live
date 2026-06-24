@@ -768,6 +768,11 @@ app.get("/api/liga/:liga", (req, res) => {
   const tend = trendLines(analise.serie || []);
   analise = { ...analise, trend: tend };
 
+  // se os dados vieram da SONDA (placares reais ao vivo), a curva calculada e EXATA
+  // pra qualquer mercado — marca como real mesmo sem curva capturada desse mercado
+  const fonteSonda = d.fonte === "sonda";
+  const ehReal = !!curvaReal || fonteSonda;
+
   res.json({
     liga,
     mercado: mkt,
@@ -777,7 +782,8 @@ app.get("/api/liga/:liga", (req, res) => {
     analise,
     proximos: (d.upcoming && d.upcoming[mkt]) || [],
     ultimos: d.ultimos,
-    curvaReal: !!curvaReal
+    curvaReal: ehReal,
+    fonte: d.fonte || "json"
   });
 });
 
