@@ -238,8 +238,11 @@ function trendLines(serie) {
   if (lta && atual >= lta.atual && (!ltb || atual < ltb.atual)) tendencia = "alta (sobre a LTA)";
   else if (ltb && atual <= ltb.atual) tendencia = "baixa (sob a LTB)";
 
-  // serie projetada das linhas (pra desenhar) - so a partir do 1o pivo, clampada 0-100
-  const clamp = v => Math.max(0, Math.min(100, Math.round(v * 10) / 10));
+  // serie projetada das linhas (pra desenhar) - so a partir do 1o pivo, clampada
+  // na faixa da propria curva (nao deixa a reta disparar longe da curva)
+  const sMin = Math.min(...serie), sMax = Math.max(...serie);
+  const margem = Math.max(5, (sMax - sMin) * 0.3);
+  const clamp = v => Math.max(sMin - margem, Math.min(sMax + margem, Math.round(v * 10) / 10));
   const ltaSerie = lta ? serie.map((_, x) => x >= lta.p1.i ? clamp(lta.valorEm(x)) : null) : null;
   const ltbSerie = ltb ? serie.map((_, x) => x >= ltb.p1.i ? clamp(ltb.valorEm(x)) : null) : null;
 
