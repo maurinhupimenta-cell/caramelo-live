@@ -662,31 +662,123 @@ function buildStore(liga, games, upcoming, lastUpdated) {
 }
 
 async function refreshLiga(liga) {
+  // O JSON estatico do caramelo foi APAGADO (404). A fonte agora e o WebSocket
+  // (ver wsConnect). Esta funcao so age como ultimo recurso: se NAO ha dados da
+  // WS nem da sonda, tenta o JSON (provavelmente 404, mas nao custa).
+  const atual = store[liga];
+  if (atual && (atual.fonte === "ws" || atual.fonte === "sonda")) {
+    const ts = atual.wsTs || atual.sondaTs || 0;
+    if (Date.now() - ts < 180000) return; // dados vivos recentes: nao mexe
+  }
   try {
-    // se ja temos dados frescos da SONDA (< 3 min), o JSON nem e consultado.
-    // a sonda e a fonte viva; o JSON estatico do caramelo morreu.
-    const atual = store[liga];
-    if (atual && atual.fonte === "sonda" && atual.sondaTs && (Date.now() - atual.sondaTs) < 180000) {
-      return;
-    }
     const r = await fetch(BASE + liga + ".json", { cache: "no-store" });
     if (!r.ok) throw new Error("HTTP " + r.status);
     const j = await r.json();
     const { games, upcoming } = decodeRows(j);
     if (!games.length) throw new Error("zero jogos");
     const lu = j.lastUpdated || (j.table && j.table.lastUpdated) || null;
-    const ageMin = lu ? (Date.now() - new Date(lu).getTime()) / 60000 : 9999;
-    // JSON velho (caramelo migrou pra WebSocket): nao sobrescreve se ja ha sonda
-    if (ageMin > 20 && atual && atual.fonte === "sonda") return;
+    if (atual && (atual.fonte === "ws" || atual.fonte === "sonda")) return;
     const s = buildStore(liga, games, upcoming, lu);
-    s.fonte = ageMin > 20 ? "json-velho" : "json";
+    s.fonte = "json";
     store[liga] = s;
   } catch (e) {
-    if (!store[liga]) store[liga] = {};
-    store[liga].erro = e.message;
-    store[liga].fetchedAt = new Date().toISOString();
+    if (!store[liga]) store[liga] = { erro: e.message, fetchedAt: new Date().toISOString() };
   }
 }
+
+// ===== FONTE DIRETA: cliente WebSocket do caramelo =====
+// O caramelo migrou pra WebSocket (wss://.../ws-dados). Apagou os JSON estaticos.
+// A pagina pede dados com {"type":"liga:get","liga":X} e recebe um "snapshot"
+// com data.cells[] (cada celula tem times, placar.ft, odds, linha_visual, coluna_visual,
+// status). Aqui o SERVIDOR faz o mesmo: conecta, pede cada liga, recebe e processa.
+// Robusto: nao depende de aba aberta nem da tela travando.
+import { WebSocket as WSClient } from "ws";
+
+const WS_URL = "wss://www.caramelotips.com.br/ws-dados";
+
+// converte o snapshot do caramelo nos games/upcoming que o servidor ja usa
+function decodeSnapshot(data) {
+  const cells = (data && data.cells) || [];
+  const passados = [], futuros = [];
+  for (const c of cells) {
+    const cell = c.cell || {};
+    const ft = cell.placar && cell.placar.ft;
+    const times = cell.times || {};
+    const nome = (times.casa || "?") + " x " + (times.fora || "?");
+    // ordem cronologica: linha_visual DESC (linha 1 = mais recente/topo), coluna ASC
+    const ordem = (-(c.linha_visual || 0)) * 1000 + (c.coluna_visual || 0);
+    if (c.status === "futuro" || (cell.futuro === true)) {
+      const o = cell.odds || {};
+      futuros.push({
+        ordem,
+        nome,
+        horario: (c.hora_base || "") + ":" + (c.minuto || ""),
+        casa: times.casa || "", fora: times.fora || "",
+        odds: { o25: o.o25, o35: o.o35, ge5: o.ge5, ambs: o.ambs }
+      });
+    } else if (ft && /^\d+-\d+$/.test(ft)) {
+      const m = ft.match(/(\d+)-(\d+)/);
+      passados.push({ ordem, nome, a: +m[1], b: +m[2], total: +m[1] + +m[2] });
+    }
+  }
+  // ordena cronologicamente (mais antigo -> mais novo)
+  passados.sort((x, y) => x.ordem - y.ordem);
+  futuros.sort((x, y) => x.ordem - y.ordem);
+  // os 2 jogos mais recentes ainda nao entram na curva do caramelo (validado: drop2)
+  const games = passados.slice(0, -2).map(g => ({ nome: g.nome, a: g.a, b: g.b, total: g.total, odds: {} }));
+  const upcoming = futuros.slice(0, 6).map(u => ({ nome: u.nome, horario: u.horario, casa: u.casa, fora: u.fora, odds: u.odds }));
+  return { games, upcoming };
+}
+
+function aplicaSnapshot(liga, data) {
+  try {
+    const { games, upcoming } = decodeSnapshot(data);
+    if (!games.length) return;
+    const s = buildStore(liga, games, upcoming, new Date(data.atualizadoEm || Date.now()).toISOString());
+    s.fonte = "ws";
+    s.wsTs = Date.now();
+    store[liga] = s;
+  } catch (e) {
+    console.error("erro aplicaSnapshot " + liga + ":", e.message);
+  }
+}
+
+let ws = null, wsReady = false, wsReconnectTimer = null;
+function wsConnect() {
+  try {
+    ws = new WSClient(WS_URL, { headers: { Origin: "https://www.caramelotips.com.br" } });
+    ws.on("open", () => {
+      wsReady = true;
+      console.log("WS caramelo conectado");
+      LIGAS.forEach(l => pedeLiga(l));
+    });
+    ws.on("message", (buf) => {
+      try {
+        const msg = JSON.parse(buf.toString());
+        if (msg.type === "snapshot" && msg.liga && msg.data) {
+          aplicaSnapshot(msg.liga, msg.data);
+        } else if (msg.type === "liga:refresh" && msg.liga) {
+          pedeLiga(msg.liga); // dados mudaram -> pede snapshot novo
+        }
+      } catch (e) { /* ignora msgs nao-JSON */ }
+    });
+    ws.on("close", () => { wsReady = false; agendaReconexao(); });
+    ws.on("error", (e) => { wsReady = false; console.error("WS erro:", e.message); });
+  } catch (e) {
+    console.error("WS connect falhou:", e.message);
+    agendaReconexao();
+  }
+}
+function pedeLiga(liga) {
+  if (ws && wsReady) { try { ws.send(JSON.stringify({ type: "liga:get", liga })); } catch (e) { } }
+}
+function agendaReconexao() {
+  if (wsReconnectTimer) return;
+  wsReconnectTimer = setTimeout(() => { wsReconnectTimer = null; wsConnect(); }, 4000);
+}
+wsConnect();
+// re-pede todas as ligas periodicamente (garante frescor mesmo sem refresh ping)
+setInterval(() => { if (wsReady) LIGAS.forEach(pedeLiga); }, 20000);
 
 async function refreshAll() {
   await Promise.all(LIGAS.map(refreshLiga));
