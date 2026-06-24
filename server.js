@@ -663,18 +663,21 @@ function buildStore(liga, games, upcoming, lastUpdated) {
 
 async function refreshLiga(liga) {
   try {
+    // se ja temos dados frescos da SONDA (< 3 min), o JSON nem e consultado.
+    // a sonda e a fonte viva; o JSON estatico do caramelo morreu.
+    const atual = store[liga];
+    if (atual && atual.fonte === "sonda" && atual.sondaTs && (Date.now() - atual.sondaTs) < 180000) {
+      return;
+    }
     const r = await fetch(BASE + liga + ".json", { cache: "no-store" });
     if (!r.ok) throw new Error("HTTP " + r.status);
     const j = await r.json();
     const { games, upcoming } = decodeRows(j);
     if (!games.length) throw new Error("zero jogos");
     const lu = j.lastUpdated || (j.table && j.table.lastUpdated) || null;
-    // so usa o JSON se ele estiver FRESCO (< 20 min). Se estiver velho (caramelo
-    // migrou pra WebSocket e congelou o arquivo), NAO sobrescreve dados da sonda.
     const ageMin = lu ? (Date.now() - new Date(lu).getTime()) / 60000 : 9999;
-    if (ageMin > 20 && store[liga] && store[liga].fonte === "sonda") {
-      return; // mantem os dados frescos da sonda
-    }
+    // JSON velho (caramelo migrou pra WebSocket): nao sobrescreve se ja ha sonda
+    if (ageMin > 20 && atual && atual.fonte === "sonda") return;
     const s = buildStore(liga, games, upcoming, lu);
     s.fonte = ageMin > 20 ? "json-velho" : "json";
     store[liga] = s;
@@ -706,6 +709,7 @@ app.post("/api/dados", (req, res) => {
     }));
     const s = buildStore(liga, games, [], new Date().toISOString());
     s.fonte = "sonda";
+    s.sondaTs = Date.now();
     if (Array.isArray(curva)) {
       liveCurves[liga + "|" + (mkt || "o35")] = { curva, mm1, mm2, topo, fundo, ts: Date.now() };
     }
