@@ -743,8 +743,15 @@ function aplicaSnapshot(liga, data) {
   }
 }
 
+// NOTA: o WS do caramelo exige LOGIN (fecha com code 4001 sem sessao). Por isso o
+// servidor sozinho nao consegue conectar. A sonda (no navegador logado do usuario)
+// captura o snapshot do WS e manda pra /api/snapshot. Mantemos decodeSnapshot e o
+// cliente WS abaixo desligado (so liga se um dia houver auth no servidor).
+const WS_SERVER_ENABLED = false;
+
 let ws = null, wsReady = false, wsReconnectTimer = null;
 function wsConnect() {
+  if (!WS_SERVER_ENABLED) return;
   try {
     ws = new WSClient(WS_URL, { headers: { Origin: "https://www.caramelotips.com.br" } });
     ws.on("open", () => {
@@ -778,7 +785,7 @@ function agendaReconexao() {
 }
 wsConnect();
 // re-pede todas as ligas periodicamente (garante frescor mesmo sem refresh ping)
-setInterval(() => { if (wsReady) LIGAS.forEach(pedeLiga); }, 20000);
+setInterval(() => { if (WS_SERVER_ENABLED && wsReady) LIGAS.forEach(pedeLiga); }, 20000);
 
 async function refreshAll() {
   await Promise.all(LIGAS.map(refreshLiga));
@@ -789,6 +796,28 @@ refreshAll();
 setInterval(refreshAll, REFRESH_MS);
 
 // API
+// recebe o SNAPSHOT CRU do WebSocket do caramelo, capturado pela sonda no
+// navegador logado do usuario (o WS exige login, code 4001 sem sessao).
+// dados limpos: placares + futuros + odds completas.
+app.post("/api/snapshot", (req, res) => {
+  try {
+    const { liga, data, mkt, curva, mm1, mm2, topo, fundo } = req.body || {};
+    if (!liga || !data || !Array.isArray(data.cells)) {
+      return res.status(400).json({ ok: false, erro: "snapshot invalido" });
+    }
+    const { games, upcoming } = decodeSnapshot(data);
+    if (!games.length) return res.status(400).json({ ok: false, erro: "zero jogos no snapshot" });
+    const s = buildStore(liga, games, upcoming, new Date(data.atualizadoEm || Date.now()).toISOString());
+    s.fonte = "ws";
+    s.wsTs = Date.now();
+    if (Array.isArray(curva)) liveCurves[liga + "|" + (mkt || "o35")] = { curva, mm1, mm2, topo, fundo, ts: Date.now() };
+    store[liga] = s;
+    res.json({ ok: true, liga, placares: games.length, futuros: upcoming.length, mercados: Object.keys(s.computed) });
+  } catch (e) {
+    res.status(500).json({ ok: false, erro: e.message });
+  }
+});
+
 // recebe os DADOS AO VIVO da sonda (placares da grade) - fonte nova, JSON morreu
 let lastDebug = {};
 app.post("/api/dados", (req, res) => {
@@ -875,7 +904,7 @@ app.get("/api/liga/:liga", (req, res) => {
 
   // se os dados vieram da SONDA (placares reais ao vivo), a curva calculada e EXATA
   // pra qualquer mercado — marca como real mesmo sem curva capturada desse mercado
-  const fonteSonda = d.fonte === "sonda";
+  const fonteSonda = d.fonte === "sonda" || d.fonte === "ws";
   const ehReal = !!curvaReal || fonteSonda;
 
   res.json({
