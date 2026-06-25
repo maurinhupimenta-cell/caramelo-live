@@ -885,7 +885,7 @@ app.get("/api/liga/:liga", (req, res) => {
   const live = liveCurves[curveKey];
   const curvaReal = live && (Date.now() - live.ts < 120000) ? live : null;
   if (curvaReal) {
-    const serie = curvaReal.curva;
+    const serie = curvaReal.curva.slice(-qtd);
     const sinal = zoneSignal(serie);
     // histograma vem do MM1-MM2 real do caramelo, se veio
     let macdHist = [];
