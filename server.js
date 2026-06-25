@@ -254,14 +254,15 @@ function trendLines(serie) {
 }
 
 function chartSeries(games, mkt, qtdJogos = 20) {
-  // EXATO como o caramelo: janela = Qtd. Jogos. valor = % do mercado nessa janela.
+  // EXATO como o caramelo: janela rolante de qtdJogos. Cada ponto = % do mercado nos
+  // ultimos qtdJogos jogos. Gera todos os pontos possiveis (nao corta no final —
+  // o frontend ja recebe a serie inteira e renderiza).
   const vals = [];
   for (let i = qtdJogos; i <= games.length; i++) {
     const block = games.slice(i - qtdJogos, i);
     vals.push(Math.round(block.filter(g => pays(g, mkt)).length / qtdJogos * 100));
   }
-  // mostra exatamente "Qtd. Jogos" pontos (como o caramelo: 20 jogos = 20 marcacoes)
-  return vals.slice(-qtdJogos);
+  return vals;
 }
 
 function ema(arr, period) {
@@ -611,7 +612,8 @@ function computeMarket(games, mkt, qtdJogos = 20) {
     .sort((a, b) => b.p - a.p)
     .slice(0, 10);
 
-  const serie = chartSeries(games, mkt, qtdJogos);
+  const serieFull = chartSeries(games, mkt, qtdJogos);
+  const serie = serieFull.slice(-qtdJogos);
   const sinal = zoneSignal(serie);
   const { hist: macdHist } = macdData(serie);
   const conf = confluencia(games, mkt);
@@ -701,32 +703,48 @@ function decodeSnapshot(data) {
   const cells = (data && data.cells) || [];
   const passados = [], futuros = [];
   for (const c of cells) {
-    const cell = c.cell || {};
+    // O snapshot do WS tem dois formatos possiveis:
+    // Formato A (wrapper): { cell: { times, placar, odds, ... }, linha_visual, coluna_visual, status }
+    // Formato B (direto):  { times, placar, odds, linha_visual, coluna_visual, status }
+    // Suportamos os dois: preferimos .cell se existir, senao usa o proprio c.
+    const cell = (c.cell && typeof c.cell === "object") ? c.cell : c;
     const ft = cell.placar && cell.placar.ft;
     const times = cell.times || {};
     const nome = (times.casa || "?") + " x " + (times.fora || "?");
     // ordem cronologica: linha_visual DESC (linha 1 = mais recente/topo), coluna ASC
-    const ordem = (-(c.linha_visual || 0)) * 1000 + (c.coluna_visual || 0);
-    if (c.status === "futuro" || (cell.futuro === true)) {
+    const lv = c.linha_visual ?? cell.linha_visual ?? 0;
+    const cv = c.coluna_visual ?? cell.coluna_visual ?? 0;
+    const ordem = (-lv) * 1000 + cv;
+    const status = c.status ?? cell.status;
+    if (status === "futuro" || cell.futuro === true) {
       const o = cell.odds || {};
       futuros.push({
         ordem,
         nome,
-        horario: (c.hora_base || "") + ":" + (c.minuto || ""),
+        horario: (c.hora_base || cell.hora_base || "") + ":" + (c.minuto || cell.minuto || ""),
         casa: times.casa || "", fora: times.fora || "",
         odds: { o25: o.o25, o35: o.o35, ge5: o.ge5, ambs: o.ambs }
       });
-    } else if (ft && /^\d+-\d+$/.test(ft)) {
-      const m = ft.match(/(\d+)-(\d+)/);
-      passados.push({ ordem, nome, a: +m[1], b: +m[2], total: +m[1] + +m[2] });
+    } else if (ft && /^\d+-\d+$/.test(String(ft).trim())) {
+      const m = String(ft).trim().match(/(\d+)-(\d+)/);
+      const o = cell.odds || {};
+      passados.push({
+        ordem, nome, a: +m[1], b: +m[2], total: +m[1] + +m[2],
+        odds: { o25: o.o25, o35: o.o35, ge5: o.ge5, ambs: o.ambs }
+      });
     }
   }
   // ordena cronologicamente (mais antigo -> mais novo)
   passados.sort((x, y) => x.ordem - y.ordem);
   futuros.sort((x, y) => x.ordem - y.ordem);
   // os 2 jogos mais recentes ainda nao entram na curva do caramelo (validado: drop2)
-  const games = passados.slice(0, -2).map(g => ({ nome: g.nome, a: g.a, b: g.b, total: g.total, odds: {} }));
-  const upcoming = futuros.slice(0, 6).map(u => ({ nome: u.nome, horario: u.horario, casa: u.casa, fora: u.fora, odds: u.odds }));
+  const games = passados.slice(0, -2).map(g => ({
+    nome: g.nome, a: g.a, b: g.b, total: g.total, odds: g.odds || {}
+  }));
+  const upcoming = futuros.slice(0, 6).map(u => ({
+    nome: u.nome, horario: u.horario, casa: u.casa, fora: u.fora, odds: u.odds
+  }));
+  console.log(`decodeSnapshot: ${passados.length} passados → ${games.length} games, ${futuros.length} futuros → ${upcoming.length} upcoming`);
   return { games, upcoming };
 }
 
@@ -873,7 +891,8 @@ app.get("/api/liga/:liga", (req, res) => {
   let analise = d.computed[mkt] || d.computed.o35;
   // se o usuario pediu outra Qtd. Jogos, recalcula a serie/sinal/macd/alertas pra essa janela
   if (qtd !== 20 && d.games) {
-    const serie = chartSeries(d.games, mkt, qtd);
+    const serieFull = chartSeries(d.games, mkt, qtd);
+    const serie = serieFull.slice(-qtd); // exibe os ultimos qtd pontos (como o caramelo)
     const sinal = zoneSignal(serie);
     const { hist } = macdData(serie);
     const alertas = buildAlerts(d.games, serie, sinal, mkt, analise.base);
