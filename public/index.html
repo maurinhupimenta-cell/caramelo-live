@@ -249,14 +249,28 @@ function lineChart(serie, macdHist, trend){
   const last=serie[serie.length-1], first=serie[0];
   const cor=last>first?'#3fb950':last<first?'#da3633':'#8b98a8';
   const pts=serie.map((v,i)=>x(i)+','+y(v)).join(' ');
-  // bolinhas + numeros nos pontos (so quando o valor muda, pra nao poluir)
+  // bolinhas + numeros nos pontos - ADAPTATIVO pra nao poluir com muitos pontos
   let dots='', labels='';
+  const N=serie.length;
+  const mostraNumeros = N<=24;   // numeros so com poucos jogos
+  const mostraBolinhas = N<=60;  // bolinhas so ate 60 jogos
   serie.forEach((v,i)=>{
-    dots+=`<circle cx="${x(i)}" cy="${y(v)}" r="3" fill="${i===serie.length-1?cor:'#8b98a8'}"/>`;
-    if(i===0||v!==serie[i-1]){ // numero so quando muda
+    if(mostraBolinhas){
+      const r = N<=24?3:2;
+      dots+=`<circle cx="${x(i)}" cy="${y(v)}" r="${r}" fill="${i===N-1?cor:'#8b98a8'}"/>`;
+    }
+    if(mostraNumeros && (i===0||v!==serie[i-1])){
       labels+=`<text x="${x(i)}" y="${y(v)-8}" fill="#e6edf3" font-size="11" font-weight="600" text-anchor="middle">${v}</text>`;
     }
   });
+  // sempre marca o ultimo ponto (atual) com numero, mesmo com muitos jogos
+  if(!mostraNumeros){
+    const lv=serie[N-1];
+    labels+=`<circle cx="${x(N-1)}" cy="${y(lv)}" r="3.5" fill="${cor}"/>`+
+            `<text x="${x(N-1)-6}" y="${y(lv)-8}" fill="${cor}" font-size="12" font-weight="700" text-anchor="end">${lv}%</text>`;
+  }
+  // linha mais fina quando ha muitos pontos
+  const larguraLinha = N<=24?2: N<=80?1.6:1.2;
   // histograma MACD embaixo
   let macdSvg='';
   if(macdHist&&macdHist.length){
@@ -274,7 +288,7 @@ function lineChart(serie, macdHist, trend){
   return `<svg viewBox="0 0 ${W} ${totalH}" style="width:100%;height:auto">
     <line x1="${pad}" y1="${pad}" x2="${W-pad}" y2="${pad}" stroke="#2d3543" stroke-dasharray="3 3"/>
     <line x1="${pad}" y1="${H-pad}" x2="${W-pad}" y2="${H-pad}" stroke="#2d3543" stroke-dasharray="3 3"/>
-    <polyline points="${pts}" fill="none" stroke="${cor}" stroke-width="2"/>
+    <polyline points="${pts}" fill="none" stroke="${cor}" stroke-width="${larguraLinha}"/>
     ${trendSvg}
     ${dots}${labels}
     <text x="${W-pad}" y="${pad-8}" fill="#8b98a8" font-size="11" text-anchor="end">Topo ${max}%</text>
