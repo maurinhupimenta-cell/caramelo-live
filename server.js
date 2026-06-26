@@ -688,7 +688,7 @@ function bigPlacarStats(games) {
 }
 const ANCORA_CORTE = 0.30;   // >=30% = alta taxa de placar-gatilho (2-1/3-0/2-0HT)
 const ANCORA_MIN_JOGOS = 8;  // amostra minima pra a taxa valer
-const BIG_CORTE = 0.60;      // >=60% de Over 3.5 na janela de 3 = "paga big placar"
+const BIG_CORTE = 0.65;      // >=65% de Over 3.5 na janela de 3 = "paga big placar" (seletivo)
 function avaliaAncora(u, stats, big) {
   const cs = stats[u.casa], fs = stats[u.fora];
   const cb = big[u.casa], fb = big[u.fora];
