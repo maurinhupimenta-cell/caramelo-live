@@ -790,7 +790,9 @@ function decodeSnapshot(data) {
   passados.sort((x, y) => x.ordem - y.ordem);
   futuros.sort((x, y) => x.ordem - y.ordem);
   // os 2 jogos mais recentes ainda nao entram na curva do caramelo (validado: drop2)
-  const games = passados.slice(0, -2).map(g => ({
+  // e limita aos ~1200 jogos recentes: a curva (janela 20) e as stats usam os recentes,
+  // e o historico cru pode passar de 4000 jogos (deixa o servidor lento sem necessidade).
+  const games = passados.slice(0, -2).slice(-1200).map(g => ({
     nome: g.nome, a: g.a, b: g.b, total: g.total,
     casa: g.casa, fora: g.fora, ht: g.ht, odds: g.odds || {}
   }));
