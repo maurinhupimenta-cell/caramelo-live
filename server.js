@@ -669,28 +669,55 @@ function anchorStats(games) {
   }
   return t;
 }
-const ANCORA_CORTE = 0.30;   // >=30% = alta taxa
+// BIG PLACAR: pra cada jogo do time (casa/fora), olha a janela de 3 jogos na ordem
+// da liga — o ANTERIOR, o DELE e o SEGUINTE. Se em qualquer um saiu Over 3.5 (>=4)
+// ou 5+ (>=5), conta. Mede "esse time costuma aparecer perto de big placar".
+function bigPlacarStats(games) {
+  const t = {};
+  const get = n => (t[n] || (t[n] = { casaJogos: 0, casaO35: 0, casa5: 0, foraJogos: 0, foraO35: 0, fora5: 0 }));
+  for (let i = 0; i < games.length; i++) {
+    const g = games[i];
+    if (!g.casa || !g.fora) continue;
+    const win = [games[i - 1], g, games[i + 1]];
+    const o35 = win.some(x => x && x.total >= 4);
+    const p5 = win.some(x => x && x.total >= 5);
+    const c = get(g.casa); c.casaJogos++; if (o35) c.casaO35++; if (p5) c.casa5++;
+    const f = get(g.fora); f.foraJogos++; if (o35) f.foraO35++; if (p5) f.fora5++;
+  }
+  return t;
+}
+const ANCORA_CORTE = 0.30;   // >=30% = alta taxa de placar-gatilho (2-1/3-0/2-0HT)
 const ANCORA_MIN_JOGOS = 8;  // amostra minima pra a taxa valer
-function avaliaAncora(u, stats) {
+const BIG_CORTE = 0.60;      // >=60% de Over 3.5 na janela de 3 = "paga big placar"
+function avaliaAncora(u, stats, big) {
   const cs = stats[u.casa], fs = stats[u.fora];
+  const cb = big[u.casa], fb = big[u.fora];
   const casaRate = cs && cs.casaJogos >= ANCORA_MIN_JOGOS ? cs.casaAnc / cs.casaJogos : null;
   const foraRate = fs && fs.foraJogos >= ANCORA_MIN_JOGOS ? fs.foraAnc / fs.foraJogos : null;
-  const casaHit = casaRate != null && casaRate >= ANCORA_CORTE;
-  const foraHit = foraRate != null && foraRate >= ANCORA_CORTE;
+  // taxas de big placar (janela de 3) por lado
+  const casaO35 = cb && cb.casaJogos >= ANCORA_MIN_JOGOS ? cb.casaO35 / cb.casaJogos : null;
+  const casa5 = cb && cb.casaJogos >= ANCORA_MIN_JOGOS ? cb.casa5 / cb.casaJogos : null;
+  const foraO35 = fb && fb.foraJogos >= ANCORA_MIN_JOGOS ? fb.foraO35 / fb.foraJogos : null;
+  const fora5 = fb && fb.fora5 >= 0 && fb.foraJogos >= ANCORA_MIN_JOGOS ? fb.fora5 / fb.foraJogos : null;
+  // dispara se: alta taxa de placar-gatilho OU alta taxa de big placar (Over 3.5 janela)
+  const casaHit = (casaRate != null && casaRate >= ANCORA_CORTE) || (casaO35 != null && casaO35 >= BIG_CORTE);
+  const foraHit = (foraRate != null && foraRate >= ANCORA_CORTE) || (foraO35 != null && foraO35 >= BIG_CORTE);
   const nivel = (casaHit && foraHit) ? "forte" : (casaHit || foraHit) ? "normal" : null;
   if (!nivel) return null;
+  const pc = x => x != null ? Math.round(x * 100) : null;
   return {
     nivel,
-    casa: { time: u.casa, taxa: casaRate != null ? Math.round(casaRate * 100) : null, jogos: cs ? cs.casaJogos : 0, hit: casaHit },
-    fora: { time: u.fora, taxa: foraRate != null ? Math.round(foraRate * 100) : null, jogos: fs ? fs.foraJogos : 0, hit: foraHit }
+    casa: { time: u.casa, taxa: pc(casaRate), jogos: cs ? cs.casaJogos : 0, hit: casaHit, o35: pc(casaO35), p5: pc(casa5) },
+    fora: { time: u.fora, taxa: pc(foraRate), jogos: fs ? fs.foraJogos : 0, hit: foraHit, o35: pc(foraO35), p5: pc(fora5) }
   };
 }
 
 function buildStore(liga, games, upcoming, lastUpdated) {
   const stats = anchorStats(games);
+  const big = bigPlacarStats(games);
   // mapa de ancora por nome de jogo futuro (so os que disparam)
   const ancoras = {};
-  for (const u of upcoming) { const a = avaliaAncora(u, stats); if (a) ancoras[u.nome] = a; }
+  for (const u of upcoming) { const a = avaliaAncora(u, stats, big); if (a) ancoras[u.nome] = a; }
   return {
     games,
     upcomingRaw: upcoming,
