@@ -237,7 +237,7 @@ function render(d){
     ${ancoraAlertHtml}
     ${alertaHtml?`<div class="sec">⚠️ Alertas</div><div class="card">${alertaHtml}</div>`:''}
 
-    <div class="sec">Gráfico — ${nomeMkt[mkt]} • Qtd. Jogos: ${a.qtdJogos||d.qtd||20} ${d.curvaReal?'<span style="color:var(--greenb);font-size:12px">● curva real do caramelo</span>':'<span style="color:var(--amber);font-size:12px">○ aproximada (abra o caramelo + captura)</span>'}</div>
+    <div class="sec">Gráfico — ${nomeMkt[mkt]} • Qtd. Jogos: ${d.qtd||a.qtdJogos||20} ${d.curvaReal?'<span style="color:var(--greenb);font-size:12px">● curva real do caramelo</span>':'<span style="color:var(--amber);font-size:12px">○ aproximada (abra o caramelo + captura)</span>'}</div>
     ${rompHtml}
     <div class="card">${chart}
     ${tendHtml}
