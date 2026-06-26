@@ -641,7 +641,53 @@ function computeMarket(games, mkt, qtdJogos = 20) {
 
 // monta o store de uma liga a partir dos jogos (funciona com qualquer fonte:
 // JSON antigo OU placares vindos da sonda ao vivo)
+// ===== ANCORAS: times que pagam placares-gatilho (2-1, 3-0, 2-0 HT) =====
+// Calcula, por time, a taxa historica de placares-ancora jogando em CASA e FORA.
+// Esses placares costumam anteceder/acompanhar big placares (Over 3.5 / 5+).
+// Tudo SEPARADO e ADITIVO — nao altera score/EV/grafico existentes.
+function ehPlacarAncora(g) {
+  const a = g.a, b = g.b;
+  // FT 2-1 / 1-2 / 3-0 / 0-3
+  if ((a === 2 && b === 1) || (a === 1 && b === 2)) return true;
+  if ((a === 3 && b === 0) || (a === 0 && b === 3)) return true;
+  // HT 2-0 / 0-2
+  const ht = (g.ht || "").replace(/\s/g, "");
+  if (ht === "2-0" || ht === "0-2") return true;
+  return false;
+}
+function anchorStats(games) {
+  const t = {};
+  const get = n => (t[n] || (t[n] = { casaJogos: 0, casaAnc: 0, foraJogos: 0, foraAnc: 0 }));
+  for (const g of games) {
+    if (!g.casa || !g.fora) continue;
+    const anc = ehPlacarAncora(g);
+    const c = get(g.casa); c.casaJogos++; if (anc) c.casaAnc++;
+    const f = get(g.fora); f.foraJogos++; if (anc) f.foraAnc++;
+  }
+  return t;
+}
+const ANCORA_CORTE = 0.30;   // >=30% = alta taxa
+const ANCORA_MIN_JOGOS = 8;  // amostra minima pra a taxa valer
+function avaliaAncora(u, stats) {
+  const cs = stats[u.casa], fs = stats[u.fora];
+  const casaRate = cs && cs.casaJogos >= ANCORA_MIN_JOGOS ? cs.casaAnc / cs.casaJogos : null;
+  const foraRate = fs && fs.foraJogos >= ANCORA_MIN_JOGOS ? fs.foraAnc / fs.foraJogos : null;
+  const casaHit = casaRate != null && casaRate >= ANCORA_CORTE;
+  const foraHit = foraRate != null && foraRate >= ANCORA_CORTE;
+  const nivel = (casaHit && foraHit) ? "forte" : (casaHit || foraHit) ? "normal" : null;
+  if (!nivel) return null;
+  return {
+    nivel,
+    casa: { time: u.casa, taxa: casaRate != null ? Math.round(casaRate * 100) : null, jogos: cs ? cs.casaJogos : 0, hit: casaHit },
+    fora: { time: u.fora, taxa: foraRate != null ? Math.round(foraRate * 100) : null, jogos: fs ? fs.foraJogos : 0, hit: foraHit }
+  };
+}
+
 function buildStore(liga, games, upcoming, lastUpdated) {
+  const stats = anchorStats(games);
+  // mapa de ancora por nome de jogo futuro (so os que disparam)
+  const ancoras = {};
+  for (const u of upcoming) { const a = avaliaAncora(u, stats); if (a) ancoras[u.nome] = a; }
   return {
     games,
     upcomingRaw: upcoming,
@@ -659,7 +705,8 @@ function buildStore(liga, games, upcoming, lastUpdated) {
       o25: brainEval(games, upcoming, liga, "o25") || fullEvalUpcoming(upcoming, games, "o25"),
       ambas: brainEval(games, upcoming, liga, "ambas") || fullEvalUpcoming(upcoming, games, "ambas")
     },
-    ultimos: games.slice(-10).map(g => ({ nome: g.nome, placar: g.a + "-" + g.b, total: g.total }))
+    ultimos: games.slice(-10).map(g => ({ nome: g.nome, placar: g.a + "-" + g.b, total: g.total })),
+    ancoras
   };
 }
 
@@ -728,8 +775,10 @@ function decodeSnapshot(data) {
     } else if (ft && /^\d+-\d+$/.test(String(ft).trim())) {
       const m = String(ft).trim().match(/(\d+)-(\d+)/);
       const o = cell.odds || {};
+      const ht = (cell.placar && cell.placar.ht) ? String(cell.placar.ht).trim() : "";
       passados.push({
         ordem, nome, a: +m[1], b: +m[2], total: +m[1] + +m[2],
+        casa: times.casa || "", fora: times.fora || "", ht,
         odds: { o25: o.o25, o35: o.o35, ge5: o.ge5, ambs: o.ambs }
       });
     }
@@ -739,7 +788,8 @@ function decodeSnapshot(data) {
   futuros.sort((x, y) => x.ordem - y.ordem);
   // os 2 jogos mais recentes ainda nao entram na curva do caramelo (validado: drop2)
   const games = passados.slice(0, -2).map(g => ({
-    nome: g.nome, a: g.a, b: g.b, total: g.total, odds: g.odds || {}
+    nome: g.nome, a: g.a, b: g.b, total: g.total,
+    casa: g.casa, fora: g.fora, ht: g.ht, odds: g.odds || {}
   }));
   const upcoming = futuros.slice(0, 6).map(u => ({
     nome: u.nome, horario: u.horario, casa: u.casa, fora: u.fora, odds: u.odds
@@ -926,6 +976,13 @@ app.get("/api/liga/:liga", (req, res) => {
   const fonteSonda = d.fonte === "sonda" || d.fonte === "ws";
   const ehReal = !!curvaReal || fonteSonda;
 
+  // anexa a ancora (placares-gatilho) a cada proximo jogo, pelo nome. ADITIVO.
+  const ancoras = d.ancoras || {};
+  const proximos = ((d.upcoming && d.upcoming[mkt]) || []).map(p => {
+    const anc = ancoras[p.nome];
+    return anc ? { ...p, ancora: anc } : p;
+  });
+
   res.json({
     liga,
     mercado: mkt,
@@ -933,7 +990,7 @@ app.get("/api/liga/:liga", (req, res) => {
     lastUpdated: d.lastUpdated,
     fetchedAt: d.fetchedAt,
     analise,
-    proximos: (d.upcoming && d.upcoming[mkt]) || [],
+    proximos,
     ultimos: d.ultimos,
     curvaReal: ehReal,
     fonte: d.fonte || "json"

@@ -72,6 +72,26 @@ async function tick(){
   }catch(e){ $('#liveinfo').textContent='erro de conexao'; }
 }
 
+// som de alerta de ancora (beep via Web Audio, sem arquivo). 2 bips, +1 se FORTE.
+function tocaAlertaAncora(forte){
+  try{
+    const Ctx=window.AudioContext||window.webkitAudioContext; if(!Ctx)return;
+    window.__actx=window.__actx||new Ctx();
+    const ctx=window.__actx; if(ctx.state==='suspended')ctx.resume();
+    const beep=(freq,start,dur)=>{
+      const o=ctx.createOscillator(),g=ctx.createGain();
+      o.connect(g);g.connect(ctx.destination);o.type='sine';o.frequency.value=freq;
+      const t=ctx.currentTime+start;
+      g.gain.setValueAtTime(0.0001,t);
+      g.gain.exponentialRampToValueAtTime(0.35,t+0.02);
+      g.gain.exponentialRampToValueAtTime(0.0001,t+dur);
+      o.start(t);o.stop(t+dur+0.02);
+    };
+    beep(880,0,0.16); beep(1175,0.2,0.16);
+    if(forte)beep(1568,0.42,0.22);
+  }catch(e){}
+}
+
 function render(d){
   const a=d.analise, mkt=d.mercado;
   const aquece=a.aquecingo||a.aquecendo;
@@ -127,7 +147,7 @@ function render(d){
     if(p.erro)return `<div class="card" style="margin-bottom:10px"><b>${p.nome||'?'}</b> <span class="note">— ${p.erro}</span></div>`;
     return `<div class="card" style="margin-bottom:10px;border-left:4px solid ${scoreCor(p.score||0)}">
       <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
-        <b style="font-size:15px">${p.horario?`<span style="color:var(--blue);margin-right:8px">🕐 ${p.horario}</span>`:''}${p.nome} <span style="color:var(--muted);font-size:11px;font-weight:400">[${d.liga.toUpperCase()}]</span></b>
+        <b style="font-size:15px">${p.horario?`<span style="color:var(--blue);margin-right:8px">🕐 ${p.horario}</span>`:''}${p.nome} <span style="color:var(--muted);font-size:11px;font-weight:400">[${d.liga.toUpperCase()}]</span>${p.ancora?`<span style="margin-left:8px;padding:2px 8px;border-radius:6px;font-size:11px;font-weight:800;background:${p.ancora.nivel==='forte'?'#f0a020':'#1f6feb'};color:#0d1117">⚓ ÂNCORA${p.ancora.nivel==='forte'?' FORTE':''}</span>`:''}</b>
         <div style="display:flex;align-items:center;gap:12px">
           <div style="text-align:center"><div style="font-size:26px;font-weight:800;color:${scoreCor(p.score||0)};line-height:1">${p.score??'—'}</div><div class="note" style="font-size:9px">SCORE</div></div>
           <div style="text-align:right"><div>${p.odd?'@'+(typeof p.odd==='number'?p.odd.toFixed(2):p.odd):'—'}</div><div style="color:${statusCor(p.status)};font-weight:700;font-size:13px">${p.status}</div></div>
@@ -145,6 +165,7 @@ function render(d){
         <div style="grid-column:1/-1"><span class="note">Ciclo</span><br><b>${p.ciclo}</b></div>
       </div>
       <div style="margin-top:10px;padding-top:10px;border-top:1px solid var(--line);font-size:12px;line-height:1.7;color:#e8edf4">
+        ${p.ancora?`<div style="color:${p.ancora.nivel==='forte'?'#f0a020':'#58a6ff'};font-weight:700">⚓ Âncora ${p.ancora.nivel==='forte'?'FORTE (2 lados)':'(1 lado)'} — placares 2-1/3-0/2-0HT, chamando big placar (3.5/5+):${p.ancora.casa.hit?` 🏠 ${p.ancora.casa.time} ${p.ancora.casa.taxa}% em casa (${p.ancora.casa.jogos}j)`:''}${p.ancora.fora.hit?` ✈️ ${p.ancora.fora.time} ${p.ancora.fora.taxa}% fora (${p.ancora.fora.jogos}j)`:''}</div>`:''}
         ${p.cicloTxt?`<div>${p.cicloTxt}</div>`:''}
         ${p.placarCorreto?`<div>${p.placarCorreto}</div>`:''}
         ${p.oddFixa&&!/sem base/.test(p.oddFixa)?`<div>${p.oddFixa}</div>`:''}
@@ -157,7 +178,25 @@ function render(d){
     </div>`;
   }).join('');
 
-  // status da liga
+  // ===== ANCORA: alerta no topo + som (novo, separado do resto) =====
+  const jogosAncora=(d.proximos||[]).filter(p=>p.ancora);
+  let ancoraAlertHtml='';
+  if(jogosAncora.length){
+    const itens=jogosAncora.map(p=>{
+      const lados=[];
+      if(p.ancora.casa.hit)lados.push(`🏠 ${p.ancora.casa.time} ${p.ancora.casa.taxa}% casa`);
+      if(p.ancora.fora.hit)lados.push(`✈️ ${p.ancora.fora.time} ${p.ancora.fora.taxa}% fora`);
+      return `<div style="margin:4px 0">${p.ancora.nivel==='forte'?'🔥':'⚓'} <b>${p.nome}</b> ${p.horario?`<span style="color:var(--blue)">${p.horario}</span>`:''} — ${lados.join(' • ')}${p.ancora.nivel==='forte'?' <b style="color:#f0a020">FORTE</b>':''}</div>`;
+    }).join('');
+    ancoraAlertHtml=`<div style="padding:12px 16px;border-radius:10px;background:rgba(240,160,32,.12);border:2px solid #f0a020;margin-bottom:10px"><div style="font-weight:800;color:#f0a020;font-size:15px;margin-bottom:4px">⚓ ÂNCORA — times chamando big placar (3.5 / 5+)</div><div style="font-size:13px;color:#e8edf4">${itens}</div></div>`;
+    // som: toca quando aparece ancora NOVA (nao repete a cada atualizacao)
+    window.__ancorasVistas=window.__ancorasVistas||new Set();
+    const novas=jogosAncora.filter(p=>!window.__ancorasVistas.has(d.liga+'|'+p.nome+'|'+p.horario));
+    if(novas.length){
+      novas.forEach(p=>window.__ancorasVistas.add(d.liga+'|'+p.nome+'|'+p.horario));
+      tocaAlertaAncora(novas.some(p=>p.ancora.nivel==='forte'));
+    }
+  }
   const ls=a.ligaStatus||{};
   const lsCor=ls.cls==='ok'?'var(--greenb)':ls.cls==='bad'?'var(--red)':'var(--amber)';
 
@@ -172,6 +211,7 @@ function render(d){
   const ultimos=d.ultimos.map(u=>`${u.placar} (${u.total})`).join(' &nbsp;·&nbsp; ');
 
   $('#conteudo').innerHTML=`
+    ${ancoraAlertHtml}
     ${alertaHtml?`<div class="sec">⚠️ Alertas</div><div class="card">${alertaHtml}</div>`:''}
 
     <div class="sec">Gráfico — ${nomeMkt[mkt]} • Qtd. Jogos: ${a.qtdJogos||d.qtd||20} ${d.curvaReal?'<span style="color:var(--greenb);font-size:12px">● curva real do caramelo</span>':'<span style="color:var(--amber);font-size:12px">○ aproximada (abra o caramelo + captura)</span>'}</div>
