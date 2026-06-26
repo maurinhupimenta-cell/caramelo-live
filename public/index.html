@@ -72,13 +72,13 @@ async function tick(){
   }catch(e){ $('#liveinfo').textContent='erro de conexao'; }
 }
 
-// som de alerta de ancora (beep via Web Audio, sem arquivo). 2 bips, +1 se FORTE.
-function tocaAlertaAncora(forte){
+// toca uma sequencia de bips. notas = [[freq, inicio_s, duracao_s], ...]
+function bipSeq(notas){
   try{
     const Ctx=window.AudioContext||window.webkitAudioContext; if(!Ctx)return;
     window.__actx=window.__actx||new Ctx();
     const ctx=window.__actx; if(ctx.state==='suspended')ctx.resume();
-    const beep=(freq,start,dur)=>{
+    notas.forEach(([freq,start,dur])=>{
       const o=ctx.createOscillator(),g=ctx.createGain();
       o.connect(g);g.connect(ctx.destination);o.type='sine';o.frequency.value=freq;
       const t=ctx.currentTime+start;
@@ -86,10 +86,14 @@ function tocaAlertaAncora(forte){
       g.gain.exponentialRampToValueAtTime(0.35,t+0.02);
       g.gain.exponentialRampToValueAtTime(0.0001,t+dur);
       o.start(t);o.stop(t+dur+0.02);
-    };
-    beep(880,0,0.16); beep(1175,0.2,0.16);
-    if(forte)beep(1568,0.42,0.22);
+    });
   }catch(e){}
+}
+// som de ancora (2 bips, +1 se FORTE)
+function tocaAlertaAncora(forte){
+  const seq=[[880,0,0.16],[1175,0.2,0.16]];
+  if(forte)seq.push([1568,0.42,0.22]);
+  bipSeq(seq);
 }
 
 function render(d){
@@ -197,6 +201,23 @@ function render(d){
       tocaAlertaAncora(novas.some(p=>p.ancora.nivel==='forte'));
     }
   }
+
+  // ===== ALERTA: subida de pagamento + minima da liga (lidos do grafico) =====
+  const chaveLM=d.liga+'|'+mkt;
+  window.__estadoLM=window.__estadoLM||{};
+  const prevLM=window.__estadoLM[chaveLM]||{};
+  const noFundo=sig.zona==='Fundo'||(sig.zonaPct!=null&&sig.zonaPct<=25);
+  const subindoPg=/SUBINDO|COMPRA/.test(sig.sinal||'')||sig.direcao==='Subindo';
+  let minimaHtml='',subidaHtml='';
+  if(noFundo){
+    minimaHtml=`<div style="padding:12px 16px;border-radius:10px;background:rgba(88,166,255,.12);border:2px solid #58a6ff;margin-bottom:10px"><div style="font-weight:800;color:#58a6ff;font-size:15px">📉 MÍNIMA DA LIGA — ${nomeMkt[mkt]}</div><div style="font-size:13px;color:#e8edf4;margin-top:3px">Curva no fundo (zona ${sig.zonaPct}%). Mercado descarregado — zona de virada pra Over. ${subindoPg?'<b style="color:var(--greenb)">já começando a subir!</b>':'aguardando a virada.'}</div></div>`;
+    if(!prevLM.fundo)bipSeq([[523,0,0.16],[392,0.2,0.24]]); // desce = fundo
+  }
+  if(subindoPg){
+    subidaHtml=`<div style="padding:12px 16px;border-radius:10px;background:rgba(46,160,67,.12);border:2px solid var(--greenb);margin-bottom:10px"><div style="font-weight:800;color:var(--greenb);font-size:15px">📈 SUBIU O PAGAMENTO — ${nomeMkt[mkt]}</div><div style="font-size:13px;color:#e8edf4;margin-top:3px">Mercado esquentando (MACD ${sig.macd}, ${sig.direcao}). Começou a pagar — ${sig.sinal}.</div></div>`;
+    if(!prevLM.sobe)bipSeq([[660,0,0.15],[990,0.18,0.2]]); // sobe = pagamento subindo
+  }
+  window.__estadoLM[chaveLM]={fundo:noFundo,sobe:subindoPg};
   const ls=a.ligaStatus||{};
   const lsCor=ls.cls==='ok'?'var(--greenb)':ls.cls==='bad'?'var(--red)':'var(--amber)';
 
@@ -211,6 +232,8 @@ function render(d){
   const ultimos=d.ultimos.map(u=>`${u.placar} (${u.total})`).join(' &nbsp;·&nbsp; ');
 
   $('#conteudo').innerHTML=`
+    ${subidaHtml}
+    ${minimaHtml}
     ${ancoraAlertHtml}
     ${alertaHtml?`<div class="sec">⚠️ Alertas</div><div class="card">${alertaHtml}</div>`:''}
 

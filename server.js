@@ -612,7 +612,10 @@ function computeMarket(games, mkt, qtdJogos = 20) {
     .sort((a, b) => b.p - a.p)
     .slice(0, 10);
 
-  const serieFull = chartSeries(games, mkt, qtdJogos);
+  // JANELA FIXA (forma da curva, igual caramelo); qtd so define quantos pontos exibir.
+  // Antes usava qtdJogos como janela -> com poucos jogos ou qtd alto, curva quebrava.
+  const JANELA = Math.max(2, Math.min(20, games.length));
+  const serieFull = chartSeries(games, mkt, JANELA);
   const serie = serieFull.slice(-qtdJogos);
   const sinal = zoneSignal(serie);
   const { hist: macdHist } = macdData(serie);
@@ -941,8 +944,9 @@ app.get("/api/liga/:liga", (req, res) => {
   let analise = d.computed[mkt] || d.computed.o35;
   // se o usuario pediu outra Qtd. Jogos, recalcula a serie/sinal/macd/alertas pra essa janela
   if (qtd !== 20 && d.games) {
-    const serieFull = chartSeries(d.games, mkt, qtd);
-    const serie = serieFull.slice(-qtd); // exibe os ultimos qtd pontos (como o caramelo)
+    const JANELA = Math.max(2, Math.min(20, d.games.length)); // janela fixa = forma da curva
+    const serieFull = chartSeries(d.games, mkt, JANELA);
+    const serie = serieFull.slice(-qtd); // exibe os ultimos qtd pontos (zoom), sem quebrar
     const sinal = zoneSignal(serie);
     const { hist } = macdData(serie);
     const alertas = buildAlerts(d.games, serie, sinal, mkt, analise.base);
