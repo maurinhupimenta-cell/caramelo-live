@@ -260,7 +260,13 @@ function chartSeries(games, mkt, qtdJogos = 20) {
   const vals = [];
   for (let i = qtdJogos; i <= games.length; i++) {
     const block = games.slice(i - qtdJogos, i);
-    vals.push(Math.round(block.filter(g => pays(g, mkt)).length / qtdJogos * 100));
+    if (mkt === "totft") {
+      // Total Gols (FT): media de gols por jogo na janela, x10 (ex: 2.8 gols -> 28)
+      const avg = block.reduce((s, g) => s + (g.total || 0), 0) / qtdJogos;
+      vals.push(Math.round(avg * 10));
+    } else {
+      vals.push(Math.round(block.filter(g => pays(g, mkt)).length / qtdJogos * 100));
+    }
   }
   return vals;
 }
@@ -528,6 +534,7 @@ function scoreDistribution(games, odd, mkt) {
 }
 
 function buildAlerts(games, serie, sinal, mkt, base) {
+  if (mkt === "totft") return []; // Total Gols nao tem alerta de over/under
   const alertas = [];
   if (!serie.length) return alertas;
   const cur = serie[serie.length - 1];
@@ -568,6 +575,21 @@ function buildAlerts(games, serie, sinal, mkt, base) {
 function mktNome(m) { return { o35: "Over 3.5", ge5: "5+ gols", o25: "Over 2.5", ambas: "Ambas" }[m] || m; }
 
 function computeMarket(games, mkt, qtdJogos = 20) {
+  // Total Gols (FT): mercado de MEDIA de gols (nao e taxa de acerto). O grafico mostra
+  // a media de gols por jogo na janela; nao tem EV/odd justa (nao e aposta sim/nao).
+  if (mkt === "totft") {
+    const JANELA = Math.max(2, Math.min(20, games.length));
+    const serie = chartSeries(games, "totft", JANELA).slice(-qtdJogos);
+    const sinal = zoneSignal(serie);
+    const { hist: macdHist } = macdData(serie);
+    const mediaGols = games.length ? +(games.reduce((s, g) => s + (g.total || 0), 0) / games.length).toFixed(2) : 0;
+    return {
+      total: games.length, base: mediaGols, justa: null, mediaGols, ehTotalGols: true,
+      termometro: [], aquecendo: false, qtdJogos, serie,
+      macdHist: macdHist.slice(-qtdJogos), sinal, alertas: [],
+      confluencia: null, ligaStatus: {}, stats: {}, ranking: [], signatures: [], atual: null
+    };
+  }
   const total = games.length;
   const hit = games.filter(g => pays(g, mkt)).length;
   const base = pct(hit, total);
@@ -727,13 +749,16 @@ function buildStore(liga, games, upcoming, lastUpdated) {
       o35: computeMarket(games, "o35"),
       ge5: computeMarket(games, "ge5"),
       o25: computeMarket(games, "o25"),
-      ambas: computeMarket(games, "ambas")
+      ambas: computeMarket(games, "ambas"),
+      totft: computeMarket(games, "totft")
     },
     upcoming: {
       o35: brainEval(games, upcoming, liga, "o35") || fullEvalUpcoming(upcoming, games, "o35"),
       ge5: brainEval(games, upcoming, liga, "ge5") || fullEvalUpcoming(upcoming, games, "ge5"),
       o25: brainEval(games, upcoming, liga, "o25") || fullEvalUpcoming(upcoming, games, "o25"),
-      ambas: brainEval(games, upcoming, liga, "ambas") || fullEvalUpcoming(upcoming, games, "ambas")
+      ambas: brainEval(games, upcoming, liga, "ambas") || fullEvalUpcoming(upcoming, games, "ambas"),
+      // Total Gols (FT): nao e aposta sim/nao, entao mostra so o jogo (sem EV/score)
+      totft: upcoming.map(u => ({ nome: u.nome, horario: u.horario, casa: u.casa, fora: u.fora, semEV: true }))
     },
     ultimos: games.slice(-10).map(g => ({ nome: g.nome, placar: g.a + "-" + g.b, total: g.total })),
     ancoras

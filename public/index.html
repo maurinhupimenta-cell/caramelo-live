@@ -44,9 +44,10 @@
 
 <div class="bar">
   <select id="liga"><option value="euro">Euro</option><option value="copa">Copa</option><option value="super">Super</option><option value="premier">Premier</option></select>
-  <select id="mkt"><option value="o35">Over 3.5</option><option value="ge5">5+ gols</option><option value="o25">Over 2.5</option><option value="ambas">Ambas Marcam</option></select>
+  <select id="mkt"><option value="o35">Over 3.5</option><option value="ge5">5+ gols</option><option value="o25">Over 2.5</option><option value="ambas">Ambas Marcam</option><option value="totft">Total Gols (FT)</option></select>
   <label style="font-size:12px;color:var(--muted)">Qtd. Jogos</label>
   <select id="qtd"><option>20</option><option>40</option><option>60</option><option>80</option><option>100</option><option>120</option><option>240</option></select>
+  <button id="somBtn" style="font-size:12px;padding:6px 12px;border-radius:8px;border:1px solid var(--line);background:#1c2333;color:#e8edf4;cursor:pointer">🔔 Ativar som</button>
   <span class="live"><span class="dot"></span><span id="liveinfo">conectando...</span></span>
 </div>
 
@@ -55,7 +56,7 @@
 <script>
 const $=s=>document.querySelector(s);
 const ligaSel=$('#liga'), mktSel=$('#mkt'), qtdSel=$('#qtd');
-const nomeMkt={o35:'Over 3.5',ge5:'5+ gols',o25:'Over 2.5',ambas:'Ambas Marcam'};
+const nomeMkt={o35:'Over 3.5',ge5:'5+ gols',o25:'Over 2.5',ambas:'Ambas Marcam',totft:'Total Gols (FT)'};
 
 let _lastHash = "";
 async function tick(){
@@ -77,7 +78,10 @@ function bipSeq(notas){
   try{
     const Ctx=window.AudioContext||window.webkitAudioContext; if(!Ctx)return;
     window.__actx=window.__actx||new Ctx();
-    const ctx=window.__actx; if(ctx.state==='suspended')ctx.resume();
+    const ctx=window.__actx;
+    if(ctx.state==='suspended'){ ctx.resume(); }
+    // se ainda nao foi destravado por um gesto do usuario, nao toca (politica do navegador)
+    if(ctx.state!=='running'){ window.__somPendente=true; return; }
     notas.forEach(([freq,start,dur])=>{
       const o=ctx.createOscillator(),g=ctx.createGain();
       o.connect(g);g.connect(ctx.destination);o.type='sine';o.frequency.value=freq;
@@ -110,7 +114,7 @@ function render(d){
 
   // GRAFICO DA LINHA (SVG) com numeros nos pontos + histograma MACD + LTA/LTB
   const serie=a.serie||[];
-  const chart=lineChart(serie, a.macdHist||[], a.trend);
+  const chart=lineChart(serie, a.macdHist||[], a.trend, a.ehTotalGols);
 
   // AVISO DE ROMPIMENTO (o sinal de ouro: reversao de ciclo)
   let rompHtml='';
@@ -149,6 +153,11 @@ function render(d){
   const scoreCor=sc=>sc>=70?'var(--greenb)':sc>=55?'var(--amber)':'var(--red)';
   const prox=(d.proximos||[]).map(p=>{
     if(p.erro)return `<div class="card" style="margin-bottom:10px"><b>${p.nome||'?'}</b> <span class="note">— ${p.erro}</span></div>`;
+    if(p.semEV)return `<div class="card" style="margin-bottom:10px;border-left:4px solid #58a6ff">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+        <b style="font-size:15px">${p.horario?`<span style="color:var(--blue);margin-right:8px">🕐 ${p.horario}</span>`:''}${p.nome} <span style="color:var(--muted);font-size:11px;font-weight:400">[${d.liga.toUpperCase()}]</span>${p.ancora?`<span style="margin-left:8px;padding:2px 8px;border-radius:6px;font-size:11px;font-weight:800;background:${p.ancora.nivel==='forte'?'#f0a020':'#1f6feb'};color:#0d1117">⚓ ÂNCORA${p.ancora.nivel==='forte'?' FORTE':''}</span>`:''}</b>
+        <span class="note" style="font-size:11px">Total Gols — use o gráfico</span>
+      </div>${p.ancora?`<div style="margin-top:8px;font-size:12px;color:${p.ancora.nivel==='forte'?'#f0a020':'#58a6ff'};font-weight:700">⚓ ${p.ancora.casa.hit?`🏠 ${p.ancora.casa.time} ${p.ancora.casa.o35}% O3.5/${p.ancora.casa.p5}% 5+`:''} ${p.ancora.fora.hit?`✈️ ${p.ancora.fora.time} ${p.ancora.fora.o35}% O3.5/${p.ancora.fora.p5}% 5+`:''}</div>`:''}</div>`;
     return `<div class="card" style="margin-bottom:10px;border-left:4px solid ${scoreCor(p.score||0)}">
       <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
         <b style="font-size:15px">${p.horario?`<span style="color:var(--blue);margin-right:8px">🕐 ${p.horario}</span>`:''}${p.nome} <span style="color:var(--muted);font-size:11px;font-weight:400">[${d.liga.toUpperCase()}]</span>${p.ancora?`<span style="margin-left:8px;padding:2px 8px;border-radius:6px;font-size:11px;font-weight:800;background:${p.ancora.nivel==='forte'?'#f0a020':'#1f6feb'};color:#0d1117">⚓ ÂNCORA${p.ancora.nivel==='forte'?' FORTE':''}</span>`:''}</b>
@@ -237,7 +246,7 @@ function render(d){
     ${ancoraAlertHtml}
     ${alertaHtml?`<div class="sec">⚠️ Alertas</div><div class="card">${alertaHtml}</div>`:''}
 
-    <div class="sec">Gráfico — ${nomeMkt[mkt]} • Qtd. Jogos: ${d.qtd||a.qtdJogos||20} ${d.curvaReal?'<span style="color:var(--greenb);font-size:12px">● curva real do caramelo</span>':'<span style="color:var(--amber);font-size:12px">○ aproximada (abra o caramelo + captura)</span>'}</div>
+    <div class="sec">Gráfico — ${nomeMkt[mkt]} • Qtd. Jogos: ${d.qtd||a.qtdJogos||20}${a.ehTotalGols?` <span style="color:#58a6ff;font-size:12px">● média de gols ×10 (ex: 28 = 2.8 gols) — média atual ${a.mediaGols} gols</span>`:''} ${d.curvaReal?'<span style="color:var(--greenb);font-size:12px">● curva real do caramelo</span>':'<span style="color:var(--amber);font-size:12px">○ aproximada (abra o caramelo + captura)</span>'}</div>
     ${rompHtml}
     <div class="card">${chart}
     ${tendHtml}
@@ -285,7 +294,7 @@ function render(d){
   `;
 }
 
-function lineChart(serie, macdHist, trend){
+function lineChart(serie, macdHist, trend, ehGols){const uni=ehGols?"":"%";
   if(!serie.length)return '<div class="note">sem dados para o gráfico</div>';
   const W=680,H=200,pad=28, hH=70, gap=14; // H=linha, hH=histograma
   const totalH=H+gap+hH;
@@ -330,7 +339,7 @@ function lineChart(serie, macdHist, trend){
   if(!mostraNumeros){
     const lv=serie[N-1];
     labels+=`<circle cx="${x(N-1)}" cy="${y(lv)}" r="3.5" fill="${cor}"/>`+
-            `<text x="${x(N-1)-6}" y="${y(lv)-8}" fill="${cor}" font-size="12" font-weight="700" text-anchor="end">${lv}%</text>`;
+            `<text x="${x(N-1)-6}" y="${y(lv)-8}" fill="${cor}" font-size="12" font-weight="700" text-anchor="end">${lv}${uni}</text>`;
   }
   // linha mais fina quando ha muitos pontos
   const larguraLinha = N<=24?2: N<=80?1.6:1.2;
@@ -354,8 +363,8 @@ function lineChart(serie, macdHist, trend){
     <polyline points="${pts}" fill="none" stroke="${cor}" stroke-width="${larguraLinha}"/>
     ${trendSvg}
     ${dots}${labels}
-    <text x="${W-pad}" y="${pad-8}" fill="#8b98a8" font-size="11" text-anchor="end">Topo ${max}%</text>
-    <text x="${W-pad}" y="${H-pad+16}" fill="#8b98a8" font-size="11" text-anchor="end">Fundo ${min}%</text>
+    <text x="${W-pad}" y="${pad-8}" fill="#8b98a8" font-size="11" text-anchor="end">Topo ${max}${uni}</text>
+    <text x="${W-pad}" y="${H-pad+16}" fill="#8b98a8" font-size="11" text-anchor="end">Fundo ${min}${uni}</text>
     ${macdSvg}
   </svg>`;
 }
@@ -363,6 +372,27 @@ function lineChart(serie, macdHist, trend){
 ligaSel.onchange=tick;
 mktSel.onchange=tick;
 qtdSel.onchange=tick;
+
+// ===== DESTRAVA O SOM (politica de autoplay exige um gesto do usuario) =====
+function destravaSom(){
+  try{
+    const Ctx=window.AudioContext||window.webkitAudioContext; if(!Ctx)return;
+    window.__actx=window.__actx||new Ctx();
+    window.__actx.resume().then(()=>{
+      const b=document.getElementById('somBtn');
+      if(window.__actx.state==='running'){
+        if(b){b.textContent='🔔 Som ativado';b.style.background='rgba(46,160,67,.2)';b.style.borderColor='var(--greenb)';b.style.color='var(--greenb)';}
+        bipSeq([[880,0,0.12],[1175,0.14,0.14]]); // bip de confirmacao
+      }
+    });
+  }catch(e){}
+}
+document.getElementById('somBtn').addEventListener('click',destravaSom);
+// qualquer primeiro clique/tecla na pagina ja destrava
+['click','keydown','touchstart'].forEach(ev=>window.addEventListener(ev,function once(){
+  destravaSom(); ['click','keydown','touchstart'].forEach(e=>window.removeEventListener(e,once));
+},{once:true}));
+
 tick();
 setInterval(tick,10000);
 </script>
