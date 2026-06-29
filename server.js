@@ -708,6 +708,34 @@ function bigPlacarStats(games) {
   }
   return t;
 }
+// RANK DE TIMES: ranqueia os times que mais "pagam" um mercado dentro de uma janela
+// de tempo (em numero de jogos recentes). Soma aparicoes em casa+fora.
+function teamRanking(games, mkt, nGames, minJogos = 3, topN = 5) {
+  const recent = games.slice(-nGames);
+  const t = {};
+  for (const g of recent) {
+    if (!g.casa || !g.fora) continue;
+    const paid = pays(g, mkt);
+    for (const time of [g.casa, g.fora]) {
+      (t[time] = t[time] || { jogos: 0, hit: 0 });
+      t[time].jogos++;
+      if (paid) t[time].hit++;
+    }
+  }
+  return Object.entries(t)
+    .filter(([_, d]) => d.jogos >= minJogos)
+    .map(([time, d]) => ({ time, jogos: d.jogos, hit: d.hit, pct: Math.round(d.hit / d.jogos * 100) }))
+    .sort((a, b) => b.pct - a.pct || b.jogos - a.jogos)
+    .slice(0, topN);
+}
+// janelas de tempo (virtual ~20 jogos/hora): 3h/6h/12h/24h
+const JANELAS_HORA = { h3: 60, h6: 120, h12: 240, h24: 480 };
+function rankTimesPorJanela(games, mkt) {
+  const out = {};
+  for (const [k, n] of Object.entries(JANELAS_HORA)) out[k] = teamRanking(games, mkt, n);
+  return out;
+}
+
 const ANCORA_CORTE = 0.30;   // >=30% = alta taxa de placar-gatilho (2-1/3-0/2-0HT)
 const ANCORA_MIN_JOGOS = 8;  // amostra minima pra a taxa valer
 const BIG_CORTE = 0.65;      // >=65% de Over 3.5 na janela de 3 = "paga big placar" (seletivo)
@@ -1064,6 +1092,11 @@ app.get("/api/liga/:liga", (req, res) => {
     ord.forEach((p, i) => { p.rankJogo = i + 1; p.rankTotal = ord.length; });
   }
 
+  // RANK DE TIMES por janela de tempo (3h/6h/12h/24h) p/ o mercado aberto + Over 2.5 + Ambas
+  const mktsRankTimes = [...new Set([mkt === "totft" ? "o25" : mkt, "o25", "ambas"])];
+  const rankTimes = {};
+  for (const m of mktsRankTimes) rankTimes[m] = rankTimesPorJanela(d.games || [], m);
+
   res.json({
     liga,
     mercado: mkt,
@@ -1072,6 +1105,7 @@ app.get("/api/liga/:liga", (req, res) => {
     fetchedAt: d.fetchedAt,
     analise,
     proximos,
+    rankTimes,
     ultimos: d.ultimos,
     curvaReal: ehReal,
     fonte: d.fonte || "json"

@@ -192,7 +192,21 @@ function render(d){
     </div>`;
   }).join('');
 
-  // ===== ANCORA: alerta no topo + som (novo, separado do resto) =====
+  // ===== RANK DE TIMES por janela de tempo (3h/6h/12h/24h) =====
+  const janelaNomes={h3:'3h',h6:'6h',h12:'12h',h24:'24h'};
+  const rtMkts=d.rankTimes?Object.keys(d.rankTimes):[];
+  let rankTimesHtml='';
+  if(rtMkts.length){
+    rankTimesHtml=`<div class="sec">🏅 Rank de times — quem mais paga por janela de tempo</div>`+
+    rtMkts.map(m=>`<div class="card" style="margin-bottom:10px">
+      <div style="font-weight:700;color:var(--blue);margin-bottom:6px">${nomeMkt[m]||m}</div>
+      ${Object.entries(janelaNomes).map(([k,lbl])=>{
+        const lista=(d.rankTimes[m][k]||[]);
+        const top=lista.map((t,i)=>`<span style="color:${i===0?'var(--greenb)':'#9fb0c3'};${i===0?'font-weight:700':''}">${i+1}º ${t.time} ${t.pct}% <span class="note">(${t.jogos}j)</span></span>`).join(' · ');
+        return `<div style="font-size:12px;margin:4px 0"><b style="color:var(--amber);display:inline-block;width:32px">${lbl}</b> ${top||'<span class="note">sem dados</span>'}</div>`;
+      }).join('')}
+    </div>`).join('');
+  }
   const jogosAncora=(d.proximos||[]).filter(p=>p.ancora);
   let ancoraAlertHtml='';
   if(jogosAncora.length){
@@ -269,6 +283,8 @@ function render(d){
 
     <div class="sec">Próximos jogos — ${nomeMkt[mkt]} <span style="color:${lsCor};font-size:13px">• Liga: ${ls.label||'—'}</span></div>
     ${prox||'<div class="card">aguardando próximos jogos...</div>'}
+
+    ${rankTimesHtml}
 
     ${!a.ehTotalGols ? `
     <div class="grid" style="margin-top:14px">
