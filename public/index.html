@@ -236,7 +236,7 @@ function render(d){
   }).join('');
 
   const sigHuman=s=>s.split('').map(c=>c==='1'?'✓':'·').join(' ');
-  const sigAtual=a.atual;
+  const sigAtual=a.atual||{sig:'',n:0,p:0};
   const sigHtml=a.signatures.map(s=>`<tr><td>${sigHuman(s.sig)}</td><td>${s.n}</td><td>${s.paid}</td><td class="${s.p>=a.base?'pos':''}">${s.p}%</td></tr>`).join('');
   const ultimos=d.ultimos.map(u=>`${u.placar} (${u.total})`).join(' &nbsp;·&nbsp; ');
 
@@ -269,6 +269,7 @@ function render(d){
     <div class="sec">Próximos jogos — ${nomeMkt[mkt]} <span style="color:${lsCor};font-size:13px">• Liga: ${ls.label||'—'}</span></div>
     ${prox||'<div class="card">aguardando próximos jogos...</div>'}
 
+    ${!a.ehTotalGols ? `
     <div class="grid" style="margin-top:14px">
       <div class="card"><h3>Jogos no histórico</h3><div class="big">${a.total}</div><div class="note">${d.liga.toUpperCase()}</div></div>
       <div class="card"><h3>% que paga ${nomeMkt[mkt]}</h3><div class="big">${a.base}%</div><div class="note">taxa real</div></div>
@@ -291,6 +292,14 @@ function render(d){
 
     <div class="sec">Top assinaturas que mais pagam depois</div>
     <table><thead><tr><th>Padrão (últimos 5)</th><th>Vezes</th><th>Pagou</th><th>%</th></tr></thead><tbody>${sigHtml}</tbody></table>
+    ` : `
+    <div class="grid" style="margin-top:14px">
+      <div class="card"><h3>Jogos no histórico</h3><div class="big">${a.total}</div><div class="note">${d.liga.toUpperCase()}</div></div>
+      <div class="card"><h3>Média de gols</h3><div class="big pos">${a.mediaGols}</div><div class="note">por jogo (FT)</div></div>
+    </div>
+    <div class="sec">Últimos resultados</div>
+    <div class="card"><div style="font-size:13px">${ultimos}</div></div>
+    `}
   `;
 }
 
