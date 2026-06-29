@@ -160,13 +160,14 @@ function render(d){
       </div>${p.ancora?`<div style="margin-top:8px;font-size:12px;color:${p.ancora.nivel==='forte'?'#f0a020':'#58a6ff'};font-weight:700">⚓ ${p.ancora.casa.hit?`🏠 ${p.ancora.casa.time} ${p.ancora.casa.o35}% O3.5/${p.ancora.casa.p5}% 5+`:''} ${p.ancora.fora.hit?`✈️ ${p.ancora.fora.time} ${p.ancora.fora.o35}% O3.5/${p.ancora.fora.p5}% 5+`:''}</div>`:''}</div>`;
     return `<div class="card" style="margin-bottom:10px;border-left:4px solid ${scoreCor(p.score||0)}">
       <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
-        <b style="font-size:15px">${p.horario?`<span style="color:var(--blue);margin-right:8px">🕐 ${p.horario}</span>`:''}${p.nome} <span style="color:var(--muted);font-size:11px;font-weight:400">[${d.liga.toUpperCase()}]</span>${p.ancora?`<span style="margin-left:8px;padding:2px 8px;border-radius:6px;font-size:11px;font-weight:800;background:${p.ancora.nivel==='forte'?'#f0a020':'#1f6feb'};color:#0d1117">⚓ ÂNCORA${p.ancora.nivel==='forte'?' FORTE':''}</span>`:''}</b>
+        <b style="font-size:15px">${p.rankJogo?`<span style="margin-right:8px;padding:2px 8px;border-radius:6px;font-size:12px;font-weight:800;background:${p.rankJogo===1?'#f0a020':'#26314a'};color:${p.rankJogo===1?'#0d1117':'#9fb0c3'}">🏆 ${p.rankJogo}º/${p.rankTotal}</span>`:''}${p.horario?`<span style="color:var(--blue);margin-right:8px">🕐 ${p.horario}</span>`:''}${p.nome} <span style="color:var(--muted);font-size:11px;font-weight:400">[${d.liga.toUpperCase()}]</span>${p.ancora?`<span style="margin-left:8px;padding:2px 8px;border-radius:6px;font-size:11px;font-weight:800;background:${p.ancora.nivel==='forte'?'#f0a020':'#1f6feb'};color:#0d1117">⚓ ÂNCORA${p.ancora.nivel==='forte'?' FORTE':''}</span>`:''}</b>
         <div style="display:flex;align-items:center;gap:12px">
           <div style="text-align:center"><div style="font-size:26px;font-weight:800;color:${scoreCor(p.score||0)};line-height:1">${p.score??'—'}</div><div class="note" style="font-size:9px">SCORE</div></div>
           <div style="text-align:right"><div>${p.odd?'@'+(typeof p.odd==='number'?p.odd.toFixed(2):p.odd):'—'}</div><div style="color:${statusCor(p.status)};font-weight:700;font-size:13px">${p.status}</div></div>
         </div>
       </div>
       <div style="margin-top:6px;font-size:12px;color:var(--muted)">Motivo: <b style="color:${/FORTE/.test(p.motivo)?'var(--greenb)':/CONTRA|FRACA|FRIA|SEM/.test(p.motivo)?'var(--red)':'var(--txt)'}">${p.motivo}</b></div>
+      ${p.rankMercados&&p.rankMercados.length?`<div style="margin-top:6px;font-size:12px;color:var(--muted)">📊 Rank mercados (score+EV): ${p.rankMercados.map((r,i)=>`<span style="color:${i===0?'var(--greenb)':'#9fb0c3'};${i===0?'font-weight:700':''}">${i+1}º ${nomeMkt[r.mkt]} <b>${r.combo}</b></span>`).join(' › ')}</div>`:''}
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin-top:10px;font-size:12px">
         <div><span class="note">Prob calibrada</span><br><b>${p.prob!=null?p.prob+'%':'—'}</b></div>
         <div><span class="note">Odd justa</span><br><b>${p.justa??'—'}</b></div>

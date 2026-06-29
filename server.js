@@ -1036,10 +1036,33 @@ app.get("/api/liga/:liga", (req, res) => {
 
   // anexa a ancora (placares-gatilho) a cada proximo jogo, pelo nome. ADITIVO.
   const ancoras = d.ancoras || {};
+  // === RANK ===
+  // combo = score + EV (criterio escolhido). Indexa cada mercado por nome de jogo.
+  const MKTS_RANK = ["o25", "o35", "ge5", "ambas"];
+  const comboDe = e => e && e.score != null ? Math.round((e.score || 0) + (e.ev || 0)) : null;
+  const upByMkt = {};
+  for (const m of MKTS_RANK) {
+    upByMkt[m] = {};
+    for (const e of (d.upcoming && d.upcoming[m]) || []) upByMkt[m][e.nome] = e;
+  }
   const proximos = ((d.upcoming && d.upcoming[mkt]) || []).map(p => {
     const anc = ancoras[p.nome];
-    return anc ? { ...p, ancora: anc } : p;
+    const base = anc ? { ...p, ancora: anc } : { ...p };
+    if (mkt !== "totft") {
+      base.combo = comboDe(p);
+      // rank dos MERCADOS pra ESSE jogo (qual mercado paga melhor nele)
+      base.rankMercados = MKTS_RANK
+        .map(m => { const e = upByMkt[m][p.nome]; return e ? { mkt: m, combo: comboDe(e), score: e.score, ev: e.ev } : null; })
+        .filter(x => x && x.combo != null)
+        .sort((a, b) => b.combo - a.combo);
+    }
+    return base;
   });
+  // rank dos JOGOS no mercado aberto (melhor -> pior por combo)
+  if (mkt !== "totft") {
+    const ord = proximos.filter(p => p.combo != null).sort((a, b) => b.combo - a.combo);
+    ord.forEach((p, i) => { p.rankJogo = i + 1; p.rankTotal = ord.length; });
+  }
 
   res.json({
     liga,
