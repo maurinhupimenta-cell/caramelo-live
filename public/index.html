@@ -420,7 +420,25 @@ document.getElementById('somBtn').addEventListener('click',destravaSom);
 },{once:true}));
 
 tick();
-setInterval(tick,10000);
+setInterval(tick,10000); // reserva: continua igual, caso o SSE caia
+
+// ===== TEMPO REAL (SSE): servidor avisa quando a liga atualiza -> busca na hora =====
+// Nao altera nenhuma analise; so elimina a espera do ciclo de 10s.
+function ligaSSE(){
+  try{
+    const es=new EventSource('/api/eventos');
+    es.onmessage=ev=>{
+      try{
+        const m=JSON.parse(ev.data);
+        if(m.tipo==='liga'&&m.liga===ligaSel.value){ _lastHash=''; tick(); }
+      }catch(e){}
+    };
+    es.onerror=()=>{ /* EventSource reconecta sozinho; o ciclo de 10s cobre o intervalo */ };
+  }catch(e){}
+}
+ligaSSE();
+// ao voltar pra aba, atualiza imediatamente (sem esperar ciclo)
+document.addEventListener('visibilitychange',()=>{ if(!document.hidden){ _lastHash=''; tick(); } });
 </script>
 </body>
 </html>

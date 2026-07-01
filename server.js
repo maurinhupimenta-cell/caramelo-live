@@ -891,6 +891,7 @@ function aplicaSnapshot(liga, data) {
     s.fonte = "ws";
     s.wsTs = Date.now();
     store[liga] = s;
+    avisaClientes(liga);
   } catch (e) {
     console.error("erro aplicaSnapshot " + liga + ":", e.message);
   }
@@ -965,6 +966,7 @@ app.post("/api/snapshot", (req, res) => {
     s.wsTs = Date.now();
     if (Array.isArray(curva)) liveCurves[liga + "|" + (mkt || "o35")] = { curva, mm1, mm2, topo, fundo, ts: Date.now() };
     store[liga] = s;
+    avisaClientes(liga); // SSE: avisa as telas abertas que essa liga atualizou (nao altera analises)
     res.json({ ok: true, liga, placares: games.length, futuros: upcoming.length, mercados: Object.keys(s.computed) });
   } catch (e) {
     res.status(500).json({ ok: false, erro: e.message });
@@ -992,6 +994,7 @@ app.post("/api/dados", (req, res) => {
       liveCurves[liga + "|" + (mkt || "o35")] = { curva, mm1, mm2, topo, fundo, ts: Date.now() };
     }
     store[liga] = s;
+    avisaClientes(liga);
     res.json({ ok: true, placares: placares.length, upcoming: upc.length, mercados: Object.keys(s.computed) });
   } catch (e) {
     res.status(500).json({ ok: false, erro: e.message });
@@ -1121,6 +1124,30 @@ app.get("/api/status", (req, res) => {
     erro: store[l]?.erro || null
   })));
 });
+
+// ===== SSE (Server-Sent Events): canal de aviso em tempo real p/ as telas =====
+// NAO altera nenhuma analise/calculo. So avisa "liga X atualizou" pra tela buscar na hora
+// em vez de esperar o ciclo de 10s. Fallback: o ciclo de 10s continua funcionando igual.
+const sseClientes = new Set();
+function avisaClientes(liga) {
+  const msg = `data: ${JSON.stringify({ tipo: "liga", liga, ts: Date.now() })}\n\n`;
+  for (const res of sseClientes) { try { res.write(msg); } catch (e) { sseClientes.delete(res); } }
+}
+app.get("/api/eventos", (req, res) => {
+  res.writeHead(200, {
+    "Content-Type": "text/event-stream",
+    "Cache-Control": "no-cache, no-transform",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*"
+  });
+  res.write(`data: ${JSON.stringify({ tipo: "oi", ts: Date.now() })}\n\n`);
+  sseClientes.add(res);
+  req.on("close", () => sseClientes.delete(res));
+});
+// batimento a cada 25s pra conexao nao ser derrubada por proxies/idle
+setInterval(() => {
+  for (const res of sseClientes) { try { res.write(": ping\n\n"); } catch (e) { sseClientes.delete(res); } }
+}, 25000);
 
 app.use(express.static(join(__dirname, "public")));
 
