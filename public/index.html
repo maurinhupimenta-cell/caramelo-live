@@ -100,6 +100,32 @@ function tocaAlertaAncora(forte){
   bipSeq(seq);
 }
 
+// ===== HISTORICO DE INDICACOES (backtest) — so tela, nao altera analises =====
+async function carregaBacktest(liga,mkt){
+  const el=document.getElementById('btSec'); if(!el)return;
+  const k=liga+'|'+mkt;
+  window.__btC=window.__btC||{};
+  const c=window.__btC[k];
+  if(c&&Date.now()-c.ts<60000){el.innerHTML=c.html;return;}
+  el.innerHTML='<div class="sec">📋 Histórico de indicações (backtest)</div><div class="card note">calculando histórico…</div>';
+  try{
+    const r=await fetch('/api/backtest/'+liga+'?mkt='+mkt+'&n=100',{cache:'no-store'});
+    const b=await r.json();
+    if(b.erro){el.innerHTML='';return;}
+    const ind=b.indicados||{};
+    const lst=(b.ultimos10indicados||[]).slice().reverse(); // mais recente primeiro
+    const linhas=lst.map(u=>`<div style="display:flex;justify-content:space-between;gap:8px;padding:6px 0;border-bottom:1px solid var(--line);font-size:12px;flex-wrap:wrap"><span>${u.resultado==='GREEN'?'🟢':'🔴'} <b>${u.nome}</b> ${u.placar?`<span class="note">(${u.placar})</span>`:''}</span><span class="note">@${u.odd} · score ${u.score} · EV ${u.ev>0?'+':''}${u.ev}%</span></div>`).join('');
+    const html=`<div class="sec">📋 Histórico de indicações (backtest) — ${nomeMkt[mkt]}</div>
+      <div class="card" style="margin-bottom:10px">
+        <div style="font-size:13px;margin-bottom:8px">Regra <b>score ≥30 + EV positivo</b>, reavaliada jogo a jogo com o histórico daquele momento (últimos ${b.jogosAvaliados} jogos): indicados <b>${ind.n||0}</b> · GREEN <b class="pos">${ind.green||0}</b> (<b>${ind.pct!=null?ind.pct+'%':'—'}</b>) · base da liga ${b.baseGeral}%</div>
+        ${linhas||'<div class="note">nenhuma indicação na janela avaliada</div>'}
+        <div class="note" style="margin-top:8px;font-size:11px">⚠️ reconstrução retroativa com os mesmos critérios; amostras pequenas oscilam — use como acompanhamento, não como garantia.</div>
+      </div>`;
+    window.__btC[k]={ts:Date.now(),html};
+    el.innerHTML=html;
+  }catch(e){el.innerHTML='';}
+}
+
 function render(d){
   const a=d.analise, mkt=d.mercado;
   const aquece=a.aquecingo||a.aquecendo;
@@ -286,6 +312,8 @@ function render(d){
 
     ${rankTimesHtml}
 
+    ${!a.ehTotalGols?'<div id="btSec"></div>':''}
+
     ${!a.ehTotalGols ? `
     <div class="grid" style="margin-top:14px">
       <div class="card"><h3>Jogos no histórico</h3><div class="big">${a.total}</div><div class="note">${d.liga.toUpperCase()}</div></div>
@@ -318,6 +346,7 @@ function render(d){
     <div class="card"><div style="font-size:13px">${ultimos}</div></div>
     `}
   `;
+  if(!a.ehTotalGols)carregaBacktest(d.liga,mkt); // async: preenche #btSec sem travar a tela
 }
 
 function lineChart(serie, macdHist, trend, ehGols){const uni=ehGols?"":"%";
