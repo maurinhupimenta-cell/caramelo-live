@@ -1249,14 +1249,19 @@ function atualizaRadar(liga, s) {
       // Histerese: depois de entrar, so sai quando voltar acima de 85% do normal (sem pisca-pisca).
       const fundo = cur != null && c.base != null &&
         (prev.fundo ? cur < c.base * 0.85 : cur <= c.base * 0.7);
-      // subida VALIDA: direcao subindo + fora do topo + curva realmente mexendo (mata residuo de MACD)
-      const sobe = (sin.direcao === "Subindo" || /SUBINDO|COMPRA/.test(sin.sinal || "")) && sin.zona !== "Topo" && mexeu;
+      // SUBIDA SIMPLES: taxa subiu >=10 pontos nos ultimos 5 jogos (movimento real) e ainda
+      // nao passou muito do normal (<=120%; chegar depois disso e atrasado).
+      // Histerese: permanece enquanto o ganho nao morrer (>=3 pontos) e nao esticar (<=135%).
+      const antes = serie.length >= 6 ? serie[serie.length - 6] : null;
+      const ganho = (cur != null && antes != null) ? cur - antes : null;
+      const sobe = ganho != null && c.base != null &&
+        (prev.sobe ? (ganho >= 3 && cur <= c.base * 1.35) : (ganho >= 10 && cur <= c.base * 1.2));
       if (fundo && !prev.fundo) {
         radarAtivos[k + "|minima"] = { liga, mkt, tipo: "minima", pagando: cur, base: c.base, ts: Date.now() };
         avisaRadar(radarAtivos[k + "|minima"]);
       } else if (!fundo) delete radarAtivos[k + "|minima"];
       if (sobe && !prev.sobe) {
-        radarAtivos[k + "|subida"] = { liga, mkt, tipo: "subida", pagando: cur, macd: sin.macd, base: c.base, ts: Date.now() };
+        radarAtivos[k + "|subida"] = { liga, mkt, tipo: "subida", pagando: cur, deOnde: antes, base: c.base, ts: Date.now() };
         avisaRadar(radarAtivos[k + "|subida"]);
       } else if (!sobe) delete radarAtivos[k + "|subida"];
       radarEstado[k] = { fundo, sobe };

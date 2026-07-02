@@ -108,8 +108,8 @@ const nomeLiga={euro:'Euro',copa:'Copa',super:'Super',premier:'Premier'};
 function radarHtml(lista){
   if(!lista||!lista.length)return '';
   const chips=lista.map(a=>a.tipo==='minima'
-    ?`<span style="display:inline-block;margin:3px 6px 3px 0;padding:5px 10px;border-radius:8px;border:1px solid #58a6ff;background:rgba(88,166,255,.1);font-size:12px;font-weight:700;color:#58a6ff">📉 ${nomeLiga[a.liga]||a.liga} · ${nomeMkt[a.mkt]||a.mkt} — mínima, pagando ${a.pagando!=null?a.pagando+'%':'—'}${a.base!=null?` <span style="opacity:.7">(base ${a.base}%)</span>`:''}</span>`
-    :`<span style="display:inline-block;margin:3px 6px 3px 0;padding:5px 10px;border-radius:8px;border:1px solid var(--greenb);background:rgba(46,160,67,.1);font-size:12px;font-weight:700;color:var(--greenb)">📈 ${nomeLiga[a.liga]||a.liga} · ${nomeMkt[a.mkt]||a.mkt} — subindo, pagando ${a.pagando!=null?a.pagando+'%':'—'}</span>`).join('');
+    ?`<span style="display:inline-block;margin:3px 6px 3px 0;padding:5px 10px;border-radius:8px;border:1px solid #58a6ff;background:rgba(88,166,255,.1);font-size:12px;font-weight:700;color:#58a6ff">📉 ${nomeLiga[a.liga]||a.liga} · ${nomeMkt[a.mkt]||a.mkt} — mínima, pagando ${a.pagando!=null?a.pagando+'%':'—'}${a.base!=null?` <span style="opacity:.7">(normal ${a.base}%)</span>`:''}</span>`
+    :`<span style="display:inline-block;margin:3px 6px 3px 0;padding:5px 10px;border-radius:8px;border:1px solid var(--greenb);background:rgba(46,160,67,.1);font-size:12px;font-weight:700;color:var(--greenb)">📈 ${nomeLiga[a.liga]||a.liga} · ${nomeMkt[a.mkt]||a.mkt} — subindo: ${a.deOnde!=null?a.deOnde+'% → ':''}${a.pagando!=null?a.pagando+'%':'—'}${a.base!=null?` <span style="opacity:.7">(normal ${a.base}%)</span>`:''}</span>`).join('');
   return `<div class="card" style="margin:0 0 12px 0"><div class="note" style="font-size:11px;margin-bottom:4px">🛰️ Radar — mínimas e subidas em todas as ligas/mercados</div>${chips}</div>`;
 }
 async function carregaRadar(){
@@ -118,7 +118,7 @@ async function carregaRadar(){
 }
 function notificaRadar(a){
   const nomeL=nomeLiga[a.liga]||a.liga, nomeM=nomeMkt[a.mkt]||a.mkt;
-  const titulo=a.tipo==='minima'?`📉 MÍNIMA — ${nomeL} · ${nomeM}${a.pagando!=null?` — pagando ${a.pagando}%`:''}`:`📈 SUBINDO — ${nomeL} · ${nomeM}${a.pagando!=null?` — pagando ${a.pagando}%`:''}`;
+  const titulo=a.tipo==='minima'?`📉 MÍNIMA — ${nomeL} · ${nomeM}${a.pagando!=null?` — pagando ${a.pagando}%`:''}`:`📈 SUBINDO — ${nomeL} · ${nomeM}${a.deOnde!=null&&a.pagando!=null?` — ${a.deOnde}% → ${a.pagando}%`:''}`;
   const corpo=a.tipo==='minima'?'Mercado descarregado — zona de virada pra Over.':'Pagamento esquentando (curva subindo).';
   try{if('Notification' in window&&Notification.permission==='granted')new Notification(titulo,{body:corpo,tag:a.liga+'|'+a.mkt+'|'+a.tipo});}catch(e){}
   bipSeq(a.tipo==='minima'?[[523,0,0.16],[392,0.2,0.24]]:[[660,0,0.15],[990,0.18,0.2]]);
