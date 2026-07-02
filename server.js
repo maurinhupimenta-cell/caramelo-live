@@ -892,6 +892,7 @@ function aplicaSnapshot(liga, data) {
     s.fonte = "ws";
     s.wsTs = Date.now();
     store[liga] = s;
+    atualizaRadar(liga, s);
     avisaClientes(liga);
   } catch (e) {
     console.error("erro aplicaSnapshot " + liga + ":", e.message);
@@ -967,6 +968,7 @@ app.post("/api/snapshot", (req, res) => {
     s.wsTs = Date.now();
     if (Array.isArray(curva)) liveCurves[liga + "|" + (mkt || "o35")] = { curva, mm1, mm2, topo, fundo, ts: Date.now() };
     store[liga] = s;
+    atualizaRadar(liga, s);
     avisaClientes(liga); // SSE: avisa as telas abertas que essa liga atualizou (nao altera analises)
     res.json({ ok: true, liga, placares: games.length, futuros: upcoming.length, mercados: Object.keys(s.computed) });
   } catch (e) {
@@ -1226,6 +1228,39 @@ app.get("/api/relatorio/:liga", (req, res) => {
     res.json({ liga, dias: lista, aviso: "datas inferidas pela virada de horário; acumulado zera quando o servidor reinicia" });
   } catch (e) { res.status(500).json({ erro: e.message }); }
 });
+
+// ===== RADAR GLOBAL: minima/subida em TODAS as ligas+mercados (nao altera analises) =====
+// Le o sinal ja calculado em s.computed (zero recalculo). Na TRANSICAO (entrou no fundo /
+// virou subida) manda aviso via SSE com liga+mercado; quando a condicao acaba, sai do painel.
+const RADAR_MKTS = ["o25", "o35", "ge5", "ambas"];
+const radarEstado = {}; // liga|mkt -> {fundo, sobe}
+const radarAtivos = {}; // liga|mkt|tipo -> info (painel do momento)
+function atualizaRadar(liga, s) {
+  try {
+    for (const mkt of RADAR_MKTS) {
+      const c = s.computed && s.computed[mkt]; if (!c || !c.sinal) continue;
+      const sin = c.sinal;
+      const fundo = sin.zona === "Fundo" || (sin.zonaPct != null && sin.zonaPct <= 25);
+      const sobe = sin.direcao === "Subindo" || /SUBINDO|COMPRA/.test(sin.sinal || "");
+      const k = liga + "|" + mkt;
+      const prev = radarEstado[k] || {};
+      if (fundo && !prev.fundo) {
+        radarAtivos[k + "|minima"] = { liga, mkt, tipo: "minima", pct: sin.zonaPct, base: c.base, ts: Date.now() };
+        avisaRadar(radarAtivos[k + "|minima"]);
+      } else if (!fundo) delete radarAtivos[k + "|minima"];
+      if (sobe && !prev.sobe) {
+        radarAtivos[k + "|subida"] = { liga, mkt, tipo: "subida", macd: sin.macd, base: c.base, ts: Date.now() };
+        avisaRadar(radarAtivos[k + "|subida"]);
+      } else if (!sobe) delete radarAtivos[k + "|subida"];
+      radarEstado[k] = { fundo, sobe };
+    }
+  } catch (e) {}
+}
+function avisaRadar(info) {
+  const msg = `data: ${JSON.stringify({ tipo: "radar", ...info })}\n\n`;
+  for (const res of sseClientes) { try { res.write(msg); } catch (e) { sseClientes.delete(res); } }
+}
+app.get("/api/radar", (req, res) => res.json(Object.values(radarAtivos).sort((a, b) => b.ts - a.ts)));
 
 // ===== SSE (Server-Sent Events): canal de aviso em tempo real p/ as telas =====
 // NAO altera nenhuma analise/calculo. So avisa "liga X atualizou" pra tela buscar na hora

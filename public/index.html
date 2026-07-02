@@ -48,9 +48,11 @@
   <label style="font-size:12px;color:var(--muted)">Qtd. Jogos</label>
   <select id="qtd"><option>20</option><option>40</option><option>60</option><option>80</option><option>100</option><option>120</option><option>240</option></select>
   <button id="somBtn" style="font-size:12px;padding:6px 12px;border-radius:8px;border:1px solid var(--line);background:#1c2333;color:#e8edf4;cursor:pointer">🔔 Ativar som</button>
+  <button id="notifBtn" style="font-size:12px;padding:6px 12px;border-radius:8px;border:1px solid var(--line);background:#1c2333;color:#e8edf4;cursor:pointer">�🖥️ Notificações</button>
   <span class="live"><span class="dot"></span><span id="liveinfo">conectando...</span></span>
 </div>
 
+<div id="radar"></div>
 <div id="conteudo"></div>
 
 <script>
@@ -99,6 +101,37 @@ function tocaAlertaAncora(forte){
   if(forte)seq.push([1568,0.42,0.22]);
   bipSeq(seq);
 }
+
+
+// ===== RADAR GLOBAL (todas as ligas x mercados): painel + notificacao + som =====
+const nomeLiga={euro:'Euro',copa:'Copa',super:'Super',premier:'Premier'};
+function radarHtml(lista){
+  if(!lista||!lista.length)return '';
+  const chips=lista.map(a=>a.tipo==='minima'
+    ?`<span style="display:inline-block;margin:3px 6px 3px 0;padding:5px 10px;border-radius:8px;border:1px solid #58a6ff;background:rgba(88,166,255,.1);font-size:12px;font-weight:700;color:#58a6ff">📉 ${nomeLiga[a.liga]||a.liga} · ${nomeMkt[a.mkt]||a.mkt} — mínima${a.pct!=null?' '+a.pct+'%':''}</span>`
+    :`<span style="display:inline-block;margin:3px 6px 3px 0;padding:5px 10px;border-radius:8px;border:1px solid var(--greenb);background:rgba(46,160,67,.1);font-size:12px;font-weight:700;color:var(--greenb)">📈 ${nomeLiga[a.liga]||a.liga} · ${nomeMkt[a.mkt]||a.mkt} — subindo</span>`).join('');
+  return `<div class="card" style="margin:0 0 12px 0"><div class="note" style="font-size:11px;margin-bottom:4px">🛰️ Radar — mínimas e subidas em todas as ligas/mercados</div>${chips}</div>`;
+}
+async function carregaRadar(){
+  try{const r=await fetch('/api/radar',{cache:'no-store'});const l=await r.json();
+    const el=document.getElementById('radar');if(el)el.innerHTML=radarHtml(l);}catch(e){}
+}
+function notificaRadar(a){
+  const nomeL=nomeLiga[a.liga]||a.liga, nomeM=nomeMkt[a.mkt]||a.mkt;
+  const titulo=a.tipo==='minima'?`📉 MÍNIMA${a.pct!=null?' '+a.pct+'%':''} — ${nomeL} · ${nomeM}`:`📈 SUBINDO — ${nomeL} · ${nomeM}`;
+  const corpo=a.tipo==='minima'?'Mercado descarregado — zona de virada pra Over.':'Pagamento esquentando (curva subindo).';
+  try{if('Notification' in window&&Notification.permission==='granted')new Notification(titulo,{body:corpo,tag:a.liga+'|'+a.mkt+'|'+a.tipo});}catch(e){}
+  bipSeq(a.tipo==='minima'?[[523,0,0.16],[392,0.2,0.24]]:[[660,0,0.15],[990,0.18,0.2]]);
+}
+document.getElementById('notifBtn').addEventListener('click',()=>{
+  if(!('Notification' in window)){alert('Este navegador não suporta notificações.');return;}
+  Notification.requestPermission().then(p=>{
+    const b=document.getElementById('notifBtn');
+    if(p==='granted'){b.textContent='🖥️ Notificações ativas';b.style.borderColor='var(--greenb)';b.style.color='var(--greenb)';b.style.background='rgba(46,160,67,.2)';
+      try{new Notification('🛰️ Radar ativo',{body:'Você será avisado de mínimas e subidas em todas as ligas e mercados.'});}catch(e){}}
+    else if(p==='denied'){b.textContent='🖥️ Bloqueadas no navegador';}
+  });
+});
 
 // ===== RELATORIO POR DATA (so tela; diagnostico do regime diario) =====
 async function carregaRelatorio(liga){
@@ -478,7 +511,9 @@ document.getElementById('somBtn').addEventListener('click',destravaSom);
 },{once:true}));
 
 tick();
-setInterval(tick,10000); // reserva: continua igual, caso o SSE caia
+carregaRadar();
+setInterval(tick,10000); // reserva
+setInterval(carregaRadar,15000); // radar: painel some quando a condicao acaba
 
 // ===== TEMPO REAL (SSE): servidor avisa quando a liga atualiza -> busca na hora =====
 // Nao altera nenhuma analise; so elimina a espera do ciclo de 10s.
@@ -489,6 +524,7 @@ function ligaSSE(){
       try{
         const m=JSON.parse(ev.data);
         if(m.tipo==='liga'&&m.liga===ligaSel.value){ _lastHash=''; tick(); }
+        else if(m.tipo==='radar'){ notificaRadar(m); carregaRadar(); }
       }catch(e){}
     };
     es.onerror=()=>{ /* EventSource reconecta sozinho; o ciclo de 10s cobre o intervalo */ };
