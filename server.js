@@ -1243,6 +1243,7 @@ function atualizaRadar(liga, s) {
       const serie = c.serie || [];
       const cur = serie.length ? serie[serie.length - 1] : null; // taxa atual (ultimo ponto da curva)
       const mexeu = serie.length >= 4 && cur > serie[serie.length - 4]; // curva subiu de verdade (vs 3 pontos atras)
+      const fita = (s.games || []).slice(-6).map(g => pays(g, mkt) ? 1 : 0); // jogo a jogo (ultimos 6)
       const k = liga + "|" + mkt;
       const prev = radarEstado[k] || {};
       // REGRA SIMPLES: minima = pagando no maximo 70% do normal da liga (compressao forte).
@@ -1257,11 +1258,11 @@ function atualizaRadar(liga, s) {
       const sobe = ganho != null && c.base != null &&
         (prev.sobe ? (ganho >= 3 && cur <= c.base * 1.35) : (ganho >= 10 && cur <= c.base * 1.2));
       if (fundo && !prev.fundo) {
-        radarAtivos[k + "|minima"] = { liga, mkt, tipo: "minima", pagando: cur, base: c.base, ts: Date.now() };
+        radarAtivos[k + "|minima"] = { liga, mkt, tipo: "minima", pagando: cur, base: c.base, fita, ts: Date.now() };
         avisaRadar(radarAtivos[k + "|minima"]);
       } else if (!fundo) delete radarAtivos[k + "|minima"];
       if (sobe && !prev.sobe) {
-        radarAtivos[k + "|subida"] = { liga, mkt, tipo: "subida", pagando: cur, deOnde: antes, base: c.base, ts: Date.now() };
+        radarAtivos[k + "|subida"] = { liga, mkt, tipo: "subida", pagando: cur, deOnde: antes, base: c.base, fita, ts: Date.now() };
         avisaRadar(radarAtivos[k + "|subida"]);
       } else if (!sobe) delete radarAtivos[k + "|subida"];
       radarEstado[k] = { fundo, sobe };
