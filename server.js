@@ -846,12 +846,13 @@ function decodeSnapshot(data) {
     const cv = c.coluna_visual ?? cell.coluna_visual ?? 0;
     const ordem = (-lv) * 1000 + cv;
     const status = c.status ?? cell.status;
+    const horaJogo = (c.hora_base || cell.hora_base || "") + ":" + String(c.minuto || cell.minuto || "").padStart(2, "0");
     if (status === "futuro" || cell.futuro === true) {
       const o = cell.odds || {};
       futuros.push({
         ordem,
         nome,
-        horario: (c.hora_base || cell.hora_base || "") + ":" + (c.minuto || cell.minuto || ""),
+        horario: horaJogo,
         casa: times.casa || "", fora: times.fora || "",
         odds: { o25: o.o25, o35: o.o35, ge5: o.ge5, ambs: o.ambs }
       });
@@ -861,7 +862,7 @@ function decodeSnapshot(data) {
       const ht = (cell.placar && cell.placar.ht) ? String(cell.placar.ht).trim() : "";
       passados.push({
         ordem, nome, a: +m[1], b: +m[2], total: +m[1] + +m[2],
-        casa: times.casa || "", fora: times.fora || "", ht,
+        casa: times.casa || "", fora: times.fora || "", ht, horario: horaJogo,
         odds: { o25: o.o25, o35: o.o35, ge5: o.ge5, ambs: o.ambs }
       });
     }
@@ -874,7 +875,7 @@ function decodeSnapshot(data) {
   // e o historico cru pode passar de 4000 jogos (deixa o servidor lento sem necessidade).
   const games = passados.slice(0, -2).slice(-1200).map(g => ({
     nome: g.nome, a: g.a, b: g.b, total: g.total,
-    casa: g.casa, fora: g.fora, ht: g.ht, odds: g.odds || {}
+    casa: g.casa, fora: g.fora, ht: g.ht, horario: g.horario || "", odds: g.odds || {}
   }));
   const upcoming = futuros.slice(0, 6).map(u => ({
     nome: u.nome, horario: u.horario, casa: u.casa, fora: u.fora, odds: u.odds
@@ -1150,7 +1151,7 @@ app.get("/api/backtest/:liga", (req, res) => {
       const hist = games.slice(0, i).slice(-400); // 400 anteriores: mesmas stats, 3x mais leve
       const ev = fullEvalUpcoming([{ nome: g.nome, horario: "", casa: g.casa, fora: g.fora, odds: g.odds }], hist, mkt)[0] || {};
       resultados.push({
-        nome: g.nome, odd: g.odds[oddKey(mkt)],
+        nome: g.nome, horario: g.horario || "", odd: g.odds[oddKey(mkt)],
         score: ev.score ?? null, ev: ev.ev ?? null, motivo: ev.motivo || "",
         green: pays(g, mkt), placar: (g.a != null && g.b != null) ? g.a + "-" + g.b : null
       });
@@ -1168,7 +1169,7 @@ app.get("/api/backtest/:liga", (req, res) => {
       faixas: { forte_60mais: faixa(60, 999), media_30a59: faixa(30, 60), fraca_0a29: faixa(0, 30), negativa: faixa(-999, 0) },
       evPositivo: { n: evPos.length, green: evPos.filter(r => r.green).length, pct: evPos.length ? Math.round(evPos.filter(r => r.green).length / evPos.length * 100) : null },
       indicados: { n: indicados.length, green: indicados.filter(r => r.green).length, pct: indicados.length ? Math.round(indicados.filter(r => r.green).length / indicados.length * 100) : null },
-      ultimos10indicados: indicados.slice(-10).map(r => ({ nome: r.nome, odd: r.odd, score: r.score, ev: r.ev, placar: r.placar, resultado: r.green ? "GREEN" : "RED" }))
+      ultimos10indicados: indicados.slice(-10).map(r => ({ nome: r.nome, horario: r.horario, odd: r.odd, score: r.score, ev: r.ev, placar: r.placar, resultado: r.green ? "GREEN" : "RED" }))
     };
     btCache[key] = { ts: Date.now(), lu: d.lastUpdated, out };
     res.json(out);
