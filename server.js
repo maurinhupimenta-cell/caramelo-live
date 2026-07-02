@@ -1240,16 +1240,20 @@ function atualizaRadar(liga, s) {
     for (const mkt of RADAR_MKTS) {
       const c = s.computed && s.computed[mkt]; if (!c || !c.sinal) continue;
       const sin = c.sinal;
+      const serie = c.serie || [];
+      const cur = serie.length ? serie[serie.length - 1] : null; // taxa atual (ultimo ponto da curva)
+      const mexeu = serie.length >= 4 && cur > serie[serie.length - 4]; // curva subiu de verdade (vs 3 pontos atras)
       const fundo = sin.zona === "Fundo" || (sin.zonaPct != null && sin.zonaPct <= 25);
-      const sobe = sin.direcao === "Subindo" || /SUBINDO|COMPRA/.test(sin.sinal || "");
+      // subida VALIDA: direcao subindo + fora do topo + curva realmente mexendo (mata residuo de MACD)
+      const sobe = (sin.direcao === "Subindo" || /SUBINDO|COMPRA/.test(sin.sinal || "")) && sin.zona !== "Topo" && mexeu;
       const k = liga + "|" + mkt;
       const prev = radarEstado[k] || {};
       if (fundo && !prev.fundo) {
-        radarAtivos[k + "|minima"] = { liga, mkt, tipo: "minima", pct: sin.zonaPct, base: c.base, ts: Date.now() };
+        radarAtivos[k + "|minima"] = { liga, mkt, tipo: "minima", pagando: cur, base: c.base, ts: Date.now() };
         avisaRadar(radarAtivos[k + "|minima"]);
       } else if (!fundo) delete radarAtivos[k + "|minima"];
       if (sobe && !prev.sobe) {
-        radarAtivos[k + "|subida"] = { liga, mkt, tipo: "subida", macd: sin.macd, base: c.base, ts: Date.now() };
+        radarAtivos[k + "|subida"] = { liga, mkt, tipo: "subida", pagando: cur, macd: sin.macd, base: c.base, ts: Date.now() };
         avisaRadar(radarAtivos[k + "|subida"]);
       } else if (!sobe) delete radarAtivos[k + "|subida"];
       radarEstado[k] = { fundo, sobe };
