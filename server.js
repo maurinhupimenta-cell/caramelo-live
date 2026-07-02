@@ -1243,12 +1243,14 @@ function atualizaRadar(liga, s) {
       const serie = c.serie || [];
       const cur = serie.length ? serie[serie.length - 1] : null; // taxa atual (ultimo ponto da curva)
       const mexeu = serie.length >= 4 && cur > serie[serie.length - 4]; // curva subiu de verdade (vs 3 pontos atras)
-      const fundo = (sin.zona === "Fundo" || (sin.zonaPct != null && sin.zonaPct <= 25))
-        && cur != null && c.base != null && cur < c.base; // minima REAL: fundo da janela E pagando abaixo da base
-      // subida VALIDA: direcao subindo + fora do topo + curva realmente mexendo (mata residuo de MACD)
-      const sobe = (sin.direcao === "Subindo" || /SUBINDO|COMPRA/.test(sin.sinal || "")) && sin.zona !== "Topo" && mexeu;
       const k = liga + "|" + mkt;
       const prev = radarEstado[k] || {};
+      // REGRA SIMPLES: minima = pagando no maximo 70% do normal da liga (compressao forte).
+      // Histerese: depois de entrar, so sai quando voltar acima de 85% do normal (sem pisca-pisca).
+      const fundo = cur != null && c.base != null &&
+        (prev.fundo ? cur < c.base * 0.85 : cur <= c.base * 0.7);
+      // subida VALIDA: direcao subindo + fora do topo + curva realmente mexendo (mata residuo de MACD)
+      const sobe = (sin.direcao === "Subindo" || /SUBINDO|COMPRA/.test(sin.sinal || "")) && sin.zona !== "Topo" && mexeu;
       if (fundo && !prev.fundo) {
         radarAtivos[k + "|minima"] = { liga, mkt, tipo: "minima", pagando: cur, base: c.base, ts: Date.now() };
         avisaRadar(radarAtivos[k + "|minima"]);
