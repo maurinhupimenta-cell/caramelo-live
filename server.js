@@ -1147,7 +1147,7 @@ app.get("/api/backtest/:liga", (req, res) => {
     for (let i = ini; i < games.length; i++) {
       const g = games[i];
       if (!g.odds || !g.odds[oddKey(mkt)]) continue;
-      const hist = games.slice(0, i);
+      const hist = games.slice(0, i).slice(-400); // 400 anteriores: mesmas stats, 3x mais leve
       const ev = fullEvalUpcoming([{ nome: g.nome, horario: "", casa: g.casa, fora: g.fora, odds: g.odds }], hist, mkt)[0] || {};
       resultados.push({
         nome: g.nome, odd: g.odds[oddKey(mkt)],
