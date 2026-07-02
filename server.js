@@ -1125,6 +1125,56 @@ app.get("/api/status", (req, res) => {
   })));
 });
 
+// ===== BACKTEST (somente leitura, nao altera nenhuma analise) =====
+// Reconstroi, jogo a jogo, o que a avaliacao teria indicado usando SO os jogos
+// anteriores (sem olhar o futuro), e confere GREEN/RED contra o placar real.
+const btCache = {};
+app.get("/api/backtest/:liga", (req, res) => {
+  try {
+    const liga = req.params.liga;
+    const mkt = req.query.mkt || "o35";
+    const n = Math.min(parseInt(req.query.n || "80", 10) || 80, 150);
+    const key = liga + "|" + mkt + "|" + n;
+    const d = store[liga];
+    if (!d || !d.games || d.games.length < 150) return res.json({ erro: "historico insuficiente" });
+    // cache 60s (backtest e pesado; evita recalcular a cada clique)
+    if (btCache[key] && Date.now() - btCache[key].ts < 60000 && btCache[key].lu === d.lastUpdated) {
+      return res.json(btCache[key].out);
+    }
+    const games = d.games;
+    const ini = Math.max(120, games.length - n); // exige 120 jogos de historico minimo
+    const resultados = [];
+    for (let i = ini; i < games.length; i++) {
+      const g = games[i];
+      if (!g.odds || !g.odds[oddKey(mkt)]) continue;
+      const hist = games.slice(0, i);
+      const ev = fullEvalUpcoming([{ nome: g.nome, horario: "", casa: g.casa, fora: g.fora, odds: g.odds }], hist, mkt)[0] || {};
+      resultados.push({
+        nome: g.nome, odd: g.odds[oddKey(mkt)],
+        score: ev.score ?? null, ev: ev.ev ?? null, motivo: ev.motivo || "",
+        green: pays(g, mkt), placar: (g.a != null && g.b != null) ? g.a + "-" + g.b : null
+      });
+    }
+    // agregados por faixa
+    const faixa = (min, max) => {
+      const f = resultados.filter(r => r.score != null && r.score >= min && r.score < max);
+      return { n: f.length, green: f.filter(r => r.green).length, pct: f.length ? Math.round(f.filter(r => r.green).length / f.length * 100) : null };
+    };
+    const evPos = resultados.filter(r => r.ev != null && r.ev > 0);
+    const baseGeral = Math.round(resultados.filter(r => r.green).length / (resultados.length || 1) * 100);
+    const indicados = resultados.filter(r => r.score != null && r.score >= 30 && r.ev > 0);
+    const out = {
+      liga, mkt, jogosAvaliados: resultados.length, baseGeral,
+      faixas: { forte_60mais: faixa(60, 999), media_30a59: faixa(30, 60), fraca_0a29: faixa(0, 30), negativa: faixa(-999, 0) },
+      evPositivo: { n: evPos.length, green: evPos.filter(r => r.green).length, pct: evPos.length ? Math.round(evPos.filter(r => r.green).length / evPos.length * 100) : null },
+      indicados: { n: indicados.length, green: indicados.filter(r => r.green).length, pct: indicados.length ? Math.round(indicados.filter(r => r.green).length / indicados.length * 100) : null },
+      ultimos10indicados: indicados.slice(-10).map(r => ({ nome: r.nome, odd: r.odd, score: r.score, ev: r.ev, placar: r.placar, resultado: r.green ? "GREEN" : "RED" }))
+    };
+    btCache[key] = { ts: Date.now(), lu: d.lastUpdated, out };
+    res.json(out);
+  } catch (e) { res.status(500).json({ erro: e.message }); }
+});
+
 // ===== SSE (Server-Sent Events): canal de aviso em tempo real p/ as telas =====
 // NAO altera nenhuma analise/calculo. So avisa "liga X atualizou" pra tela buscar na hora
 // em vez de esperar o ciclo de 10s. Fallback: o ciclo de 10s continua funcionando igual.
