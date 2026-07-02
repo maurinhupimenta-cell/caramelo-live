@@ -1243,7 +1243,8 @@ function atualizaRadar(liga, s) {
       const serie = c.serie || [];
       const cur = serie.length ? serie[serie.length - 1] : null; // taxa atual (ultimo ponto da curva)
       const mexeu = serie.length >= 4 && cur > serie[serie.length - 4]; // curva subiu de verdade (vs 3 pontos atras)
-      const fundo = sin.zona === "Fundo" || (sin.zonaPct != null && sin.zonaPct <= 25);
+      const fundo = (sin.zona === "Fundo" || (sin.zonaPct != null && sin.zonaPct <= 25))
+        && cur != null && c.base != null && cur < c.base; // minima REAL: fundo da janela E pagando abaixo da base
       // subida VALIDA: direcao subindo + fora do topo + curva realmente mexendo (mata residuo de MACD)
       const sobe = (sin.direcao === "Subindo" || /SUBINDO|COMPRA/.test(sin.sinal || "")) && sin.zona !== "Topo" && mexeu;
       const k = liga + "|" + mkt;
