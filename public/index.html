@@ -100,6 +100,32 @@ function tocaAlertaAncora(forte){
   bipSeq(seq);
 }
 
+// ===== RELATORIO POR DATA (so tela; diagnostico do regime diario) =====
+async function carregaRelatorio(liga){
+  const el=document.getElementById('relSec'); if(!el)return;
+  window.__relC=window.__relC||{};
+  const c=window.__relC[liga];
+  if(c&&Date.now()-c.ts<120000){el.innerHTML=c.html;return;}
+  el.innerHTML='<div class="sec">📅 Relatório por data</div><div class="card note">calculando…</div>';
+  try{
+    const r=await fetch('/api/relatorio/'+liga,{cache:'no-store'});
+    const b=await r.json();
+    if(b.erro){el.innerHTML='';return;}
+    const seta=v=>v==null?'':v>2?` <span style="color:var(--greenb)">📈 +${v}</span>`:v<-2?` <span style="color:var(--red)">📉 ${v}</span>`:' <span class="note">≈</span>';
+    const cards=(b.dias||[]).map((d,i)=>{
+      const dl=d.delta||{};
+      const per=d.periodos||{};
+      const perTxt=[['madrugada','madrugada'],['manha','manhã'],['tarde','tarde'],['noite','noite']].map(([k,lbl])=>per[k]?`${lbl} <b>${per[k].o35}%</b> (${per[k].n}j)`:null).filter(Boolean).join(' · ');
+      return `<div class="card" style="margin-bottom:8px"><div style="font-weight:700;color:var(--blue)">📆 ${d.data}${i===0?' <span class="note">(em andamento)</span>':''} — ${d.jogos} jogos · média ${d.mediaGols} gols</div>
+      <div style="font-size:12px;margin-top:4px">Over 2.5 <b>${d.o25}%</b>${seta(dl.o25)} · Over 3.5 <b>${d.o35}%</b>${seta(dl.o35)} · 5+ <b>${d.ge5}%</b>${seta(dl.ge5)} · Ambas <b>${d.ambas}%</b>${seta(dl.ambas)}</div>
+      ${perTxt?`<div class="note" style="font-size:11px;margin-top:4px">Over 3.5 por período: ${perTxt}</div>`:''}</div>`;
+    }).join('');
+    const html=`<div class="sec">📅 Relatório por data — regime diário do algoritmo <span class="note" style="font-size:11px">(📈/📉 = comparado ao dia anterior)</span></div>${cards}<div class="note" style="font-size:11px;margin-bottom:10px">⚠️ ${b.aviso}</div>`;
+    window.__relC[liga]={ts:Date.now(),html};
+    el.innerHTML=html;
+  }catch(e){el.innerHTML='';}
+}
+
 // ===== HISTORICO DE INDICACOES (backtest) — so tela, nao altera analises =====
 async function carregaBacktest(liga,mkt){
   const el=document.getElementById('btSec'); if(!el)return;
@@ -314,6 +340,8 @@ function render(d){
 
     ${!a.ehTotalGols?'<div id="btSec"></div>':''}
 
+    <div id="relSec"></div>
+
     ${!a.ehTotalGols ? `
     <div class="grid" style="margin-top:14px">
       <div class="card"><h3>Jogos no histórico</h3><div class="big">${a.total}</div><div class="note">${d.liga.toUpperCase()}</div></div>
@@ -347,6 +375,7 @@ function render(d){
     `}
   `;
   if(!a.ehTotalGols)carregaBacktest(d.liga,mkt); // async: preenche #btSec sem travar a tela
+  carregaRelatorio(d.liga); // async: relatorio por data (independe do mercado)
 }
 
 function lineChart(serie, macdHist, trend, ehGols){const uni=ehGols?"":"%";

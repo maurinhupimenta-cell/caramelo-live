@@ -1176,6 +1176,57 @@ app.get("/api/backtest/:liga", (req, res) => {
   } catch (e) { res.status(500).json({ erro: e.message }); }
 });
 
+// ===== RELATORIO POR DATA (diagnostico do regime diario; nao altera analises) =====
+// Datas inferidas: os jogos vem em ordem cronologica so com hora; quando a hora "volta"
+// (23:57 -> 00:01), e a virada do dia. Ancora: ultimo jogo = hoje (fuso de Sao Paulo).
+// Acumula resumos por dia em memoria (zera em restart do Render).
+const relAcum = {};
+function horaMin(h) { const m = /^(\d{1,2}):(\d{1,2})/.exec(h || ""); return m ? (+m[1]) * 60 + (+m[2]) : null; }
+function dataBR(diasAtras) { const d = new Date(Date.now() - diasAtras * 86400000); return d.toLocaleDateString("pt-BR", { timeZone: "America/Sao_Paulo" }); }
+app.get("/api/relatorio/:liga", (req, res) => {
+  try {
+    const liga = req.params.liga; const d = store[liga];
+    if (!d || !d.games || !d.games.length) return res.json({ erro: "sem dados" });
+    // separa os jogos em dias pela virada de horario (queda > 60min = novo dia)
+    const dias = [[]];
+    let prev = null;
+    for (const g of d.games) {
+      const t = horaMin(g.horario);
+      if (prev != null && t != null && t < prev - 60 && dias[dias.length - 1].length) dias.push([]);
+      if (t != null) prev = t;
+      dias[dias.length - 1].push(g);
+    }
+    const resumo = (gs) => {
+      const n = gs.length;
+      const p = (mk) => Math.round(gs.filter(g => pays(g, mk)).length / n * 100);
+      const per = (a, b) => {
+        const s = gs.filter(g => { const t = horaMin(g.horario); return t != null && t >= a * 60 && t < b * 60; });
+        return s.length ? { n: s.length, o35: Math.round(s.filter(g => pays(g, "o35")).length / s.length * 100) } : null;
+      };
+      return {
+        jogos: n, o25: p("o25"), o35: p("o35"), ge5: p("ge5"), ambas: p("ambas"),
+        mediaGols: +(gs.reduce((s, g) => s + (g.total || 0), 0) / n).toFixed(2),
+        periodos: { madrugada: per(0, 6), manha: per(6, 12), tarde: per(12, 18), noite: per(18, 24) }
+      };
+    };
+    relAcum[liga] = relAcum[liga] || {};
+    const nDias = dias.length;
+    dias.forEach((gs, i) => { if (gs.length) relAcum[liga][dataBR(nDias - 1 - i)] = resumo(gs); });
+    // lista ordenada (mais recente primeiro) com delta vs dia anterior
+    const ord = Object.keys(relAcum[liga]).sort((a, b) => {
+      const pa = a.split("/").reverse().join(""), pb = b.split("/").reverse().join("");
+      return pb.localeCompare(pa);
+    });
+    const lista = ord.map((data, i) => {
+      const r = relAcum[liga][data]; const ant = relAcum[liga][ord[i + 1]];
+      let delta = null;
+      if (ant) { delta = {}; for (const k of ["o25", "o35", "ge5", "ambas"]) delta[k] = r[k] - ant[k]; }
+      return { data, ...r, delta };
+    });
+    res.json({ liga, dias: lista, aviso: "datas inferidas pela virada de horário; acumulado zera quando o servidor reinicia" });
+  } catch (e) { res.status(500).json({ erro: e.message }); }
+});
+
 // ===== SSE (Server-Sent Events): canal de aviso em tempo real p/ as telas =====
 // NAO altera nenhuma analise/calculo. So avisa "liga X atualizou" pra tela buscar na hora
 // em vez de esperar o ciclo de 10s. Fallback: o ciclo de 10s continua funcionando igual.
