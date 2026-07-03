@@ -139,9 +139,9 @@ app.post("/api/admin/revogar", async (req, res) => {
 });
 // pagina /admin (painel do dono)
 app.get("/admin", (req, res) => {
-  res.type("html").send(`<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin — Caramelo Live</title>
+  res.type("html").send(`<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin — AMD Live</title>
 <style>body{background:#0d1117;color:#e8edf4;font-family:system-ui;margin:0;padding:20px;max-width:760px;margin:auto}h2{color:#3fb950}input,select,button{padding:9px 12px;border-radius:8px;border:1px solid #2d3646;background:#1c2333;color:#e8edf4;font-size:14px}button{cursor:pointer}table{width:100%;border-collapse:collapse;margin-top:14px;font-size:13px}td,th{padding:8px;border-bottom:1px solid #2d3646;text-align:left}.ok{color:#3fb950}.exp{color:#f85149}.note{color:#8b98a8;font-size:12px}</style></head><body>
-<h2>🔑 Admin — Caramelo Live</h2>
+<h2>🔑 Admin — AMD Live</h2>
 <div id="login"><p>Senha do admin: <input id="k" type="password"> <button onclick="entrar()">Entrar</button></p><p class="note" id="dica"></p></div>
 <div id="painel" style="display:none">
   <p>Nome: <input id="nome" placeholder="ex: João teste"> Duração:
@@ -1395,4 +1395,4 @@ setInterval(() => {
 
 app.use(express.static(join(__dirname, "public")));
 
-app.listen(PORT, () => console.log("Caramelo Live rodando na porta " + PORT));
+app.listen(PORT, () => console.log("AMD Live rodando na porta " + PORT));
