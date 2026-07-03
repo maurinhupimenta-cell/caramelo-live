@@ -119,6 +119,11 @@ app.post("/api/acesso/validar", (req, res) => {
   else res.status(401).json({ ok: false, erro: "código inválido ou expirado" });
 });
 const isAdmin = req => ADMIN_KEY && (req.headers["x-admin"] === ADMIN_KEY || req.query.k === ADMIN_KEY);
+app.post("/api/admin/testar-alerta", (req, res) => {
+  if (!isAdmin(req)) return res.status(401).json({ erro: "admin" });
+  avisaRadar({ liga: "copa", mkt: "o25", tipo: "subida", pagando: 35, deOnde: 25, base: 38, fita: [0,1,1,0,1,1], teste: true, ts: Date.now() });
+  res.json({ ok: true, msg: "alerta de teste enviado a todas as telas abertas" });
+});
 app.get("/api/admin/codigos", (req, res) => {
   if (!isAdmin(req)) return res.status(401).json({ erro: "admin" });
   res.json({ codigos, persistencia: !!GH_T, adminKeyDefinida: !!ADMIN_KEY });
@@ -146,7 +151,7 @@ app.get("/admin", (req, res) => {
 <div id="painel" style="display:none">
   <p>Nome: <input id="nome" placeholder="ex: João teste"> Duração:
     <select id="dias"><option value="1">1 dia (teste)</option><option value="30">30 dias</option><option value="7">7 dias</option><option value="0.125">3 horas</option></select>
-    <button onclick="criar()">➕ Criar código</button></p>
+    <button onclick="criar()">➕ Criar código</button> <button onclick="teste()">🔔 Testar alerta</button></p>
   <p id="novo" style="font-weight:700;color:#3fb950"></p>
   <table><thead><tr><th>Código</th><th>Nome</th><th>Expira</th><th>Usos</th><th></th></tr></thead><tbody id="lista"></tbody></table>
   <p class="note" id="aviso"></p>
@@ -163,6 +168,7 @@ async function lista(){const j=await api('/api/admin/codigos');const tb=document
  document.getElementById('aviso').textContent=j.persistencia?'✔ códigos salvos com persistência (sobrevivem a reinício)':'⚠️ SEM persistência (defina GH_TOKEN no Render) — códigos somem se o servidor reiniciar';}
 async function criar(){const j=await api('/api/admin/criar','POST',{nome:document.getElementById('nome').value,dias:document.getElementById('dias').value});
  document.getElementById('novo').textContent='Código criado: '+j.codigo+' — envie ao usuário';await lista();}
+async function teste(){await api('/api/admin/testar-alerta','POST',{});alert('Alerta de teste enviado! Olhe a notificação no canto (com o site aberto em outra aba).');}
 async function revogar(c){if(!confirm('Revogar '+c+'?'))return;await api('/api/admin/revogar','POST',{codigo:c});await lista();}
 </script></body></html>`);
 });
@@ -1364,7 +1370,7 @@ function atualizaRadar(liga, s) {
   } catch (e) {}
 }
 function avisaRadar(info) {
-  const msg = `data: ${JSON.stringify({ tipo: "radar", ...info })}\n\n`;
+  const msg = `data: ${JSON.stringify({ tipo: "radar", alerta: info })}\n\n`; // BUGFIX: info.tipo sobrescrevia o rotulo "radar"
   for (const res of sseClientes) { try { res.write(msg); } catch (e) { sseClientes.delete(res); } }
 }
 app.get("/api/radar", (req, res) => res.json(Object.values(radarAtivos).sort((a, b) => b.ts - a.ts)));

@@ -550,7 +550,7 @@ function ligaSSE(){
       try{
         const m=JSON.parse(ev.data);
         if(m.tipo==='liga'&&m.liga===ligaSel.value){ _lastHash=''; tick(); }
-        else if(m.tipo==='radar'){ notificaRadar(m); carregaRadar(); }
+        else if(m.tipo==='radar'){ notificaRadar(m.alerta||m); carregaRadar(); }
       }catch(e){}
     };
     es.onerror=()=>{ /* EventSource reconecta sozinho; o ciclo de 10s cobre o intervalo */ };
