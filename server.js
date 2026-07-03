@@ -73,6 +73,100 @@ app.use((req, res, next) => {
 });
 app.use(express.json({ limit: "25mb" }));
 
+// ===== ACESSO POR CODIGO + ADMIN (controle de testes 1 dia e assinantes 30 dias) =====
+const ADMIN_KEY = process.env.ADMIN_KEY || "";
+const GH_T = process.env.GH_TOKEN || "";
+const GH_REPO = "maurinhupimenta-cell/caramelo-live";
+const GH_BRANCH = "dados";
+const GH_FILE = "codigos.json";
+let codigos = {}; // codigo -> {nome, criado, expira, usos, ultimoUso}
+let ghSha = null;
+const ghHead = () => ({ "Authorization": "Bearer " + GH_T, "Accept": "application/vnd.github+json", "User-Agent": "caramelo-live" });
+async function carregaCodigos() {
+  if (!GH_T) return;
+  try {
+    const r = await fetch(`https://api.github.com/repos/${GH_REPO}/contents/${GH_FILE}?ref=${GH_BRANCH}`, { headers: ghHead() });
+    if (r.ok) { const j = await r.json(); ghSha = j.sha; codigos = JSON.parse(Buffer.from(j.content, "base64").toString()); }
+  } catch (e) {}
+}
+async function salvaCodigos() {
+  if (!GH_T) return;
+  try {
+    const body = { message: "codigos", content: Buffer.from(JSON.stringify(codigos, null, 1)).toString("base64"), branch: GH_BRANCH };
+    if (ghSha) body.sha = ghSha;
+    const r = await fetch(`https://api.github.com/repos/${GH_REPO}/contents/${GH_FILE}`, { method: "PUT", headers: { ...ghHead(), "Content-Type": "application/json" }, body: JSON.stringify(body) });
+    if (r.ok) { const j = await r.json(); ghSha = j.content.sha; }
+  } catch (e) {}
+}
+carregaCodigos();
+function codigoValido(c) {
+  const d = codigos[c]; if (!d) return false;
+  if (Date.now() > d.expira) return false;
+  d.usos = (d.usos || 0) + 1; d.ultimoUso = Date.now(); return true;
+}
+// PORTAO: protege os dados; deixa livre snapshot (sonda), eventos (SSE), acesso/admin e arquivos estaticos
+app.use((req, res, next) => {
+  const p = req.path;
+  const livre = p === "/api/snapshot" || p === "/api/eventos" || p.startsWith("/api/acesso") || p.startsWith("/api/admin") || !p.startsWith("/api/");
+  if (livre) return next();
+  const c = String(req.headers["x-acesso"] || req.query.c || "").toUpperCase().trim();
+  if (codigoValido(c)) return next();
+  res.status(401).json({ erro: "acesso" });
+});
+app.post("/api/acesso/validar", (req, res) => {
+  const c = String((req.body || {}).codigo || "").toUpperCase().trim();
+  if (codigoValido(c)) { const d = codigos[c]; res.json({ ok: true, nome: d.nome, expira: d.expira }); }
+  else res.status(401).json({ ok: false, erro: "código inválido ou expirado" });
+});
+const isAdmin = req => ADMIN_KEY && (req.headers["x-admin"] === ADMIN_KEY || req.query.k === ADMIN_KEY);
+app.get("/api/admin/codigos", (req, res) => {
+  if (!isAdmin(req)) return res.status(401).json({ erro: "admin" });
+  res.json({ codigos, persistencia: !!GH_T, adminKeyDefinida: !!ADMIN_KEY });
+});
+app.post("/api/admin/criar", async (req, res) => {
+  if (!isAdmin(req)) return res.status(401).json({ erro: "admin" });
+  const { nome, dias } = req.body || {};
+  const cod = "CL-" + Math.random().toString(36).slice(2, 8).toUpperCase();
+  codigos[cod] = { nome: String(nome || ""), criado: Date.now(), expira: Date.now() + (parseFloat(dias) || 1) * 86400000, usos: 0 };
+  await salvaCodigos();
+  res.json({ ok: true, codigo: cod, expira: codigos[cod].expira });
+});
+app.post("/api/admin/revogar", async (req, res) => {
+  if (!isAdmin(req)) return res.status(401).json({ erro: "admin" });
+  delete codigos[String((req.body || {}).codigo || "").toUpperCase().trim()];
+  await salvaCodigos();
+  res.json({ ok: true });
+});
+// pagina /admin (painel do dono)
+app.get("/admin", (req, res) => {
+  res.type("html").send(`<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin — Caramelo Live</title>
+<style>body{background:#0d1117;color:#e8edf4;font-family:system-ui;margin:0;padding:20px;max-width:760px;margin:auto}h2{color:#3fb950}input,select,button{padding:9px 12px;border-radius:8px;border:1px solid #2d3646;background:#1c2333;color:#e8edf4;font-size:14px}button{cursor:pointer}table{width:100%;border-collapse:collapse;margin-top:14px;font-size:13px}td,th{padding:8px;border-bottom:1px solid #2d3646;text-align:left}.ok{color:#3fb950}.exp{color:#f85149}.note{color:#8b98a8;font-size:12px}</style></head><body>
+<h2>🔑 Admin — Caramelo Live</h2>
+<div id="login"><p>Senha do admin: <input id="k" type="password"> <button onclick="entrar()">Entrar</button></p><p class="note" id="dica"></p></div>
+<div id="painel" style="display:none">
+  <p>Nome: <input id="nome" placeholder="ex: João teste"> Duração:
+    <select id="dias"><option value="1">1 dia (teste)</option><option value="30">30 dias</option><option value="7">7 dias</option><option value="0.125">3 horas</option></select>
+    <button onclick="criar()">➕ Criar código</button></p>
+  <p id="novo" style="font-weight:700;color:#3fb950"></p>
+  <table><thead><tr><th>Código</th><th>Nome</th><th>Expira</th><th>Usos</th><th></th></tr></thead><tbody id="lista"></tbody></table>
+  <p class="note" id="aviso"></p>
+</div>
+<script>
+let K='';
+async function api(p,m,b){const r=await fetch(p+(p.includes('?')?'&':'?')+'k='+encodeURIComponent(K),{method:m||'GET',headers:{'Content-Type':'application/json'},body:b?JSON.stringify(b):undefined});if(r.status===401)throw new Error('senha errada');return r.json();}
+async function entrar(){K=document.getElementById('k').value;try{await lista();document.getElementById('login').style.display='none';document.getElementById('painel').style.display='block';}catch(e){document.getElementById('dica').textContent='Senha incorreta (ou ADMIN_KEY não definida no Render).';}}
+async function lista(){const j=await api('/api/admin/codigos');const tb=document.getElementById('lista');tb.innerHTML='';
+ const agora=Date.now();
+ Object.entries(j.codigos).sort((a,b)=>b[1].criado-a[1].criado).forEach(([c,d])=>{
+  const exp=new Date(d.expira);const ativo=agora<d.expira;
+  tb.innerHTML+=\`<tr><td><b>\${c}</b></td><td>\${d.nome||'—'}</td><td class="\${ativo?'ok':'exp'}">\${exp.toLocaleString('pt-BR')} \${ativo?'✅':'⛔ expirado'}</td><td>\${d.usos||0}\${d.ultimoUso?' <span class=note>('+new Date(d.ultimoUso).toLocaleTimeString('pt-BR')+')</span>':''}</td><td><button onclick="revogar('\${c}')">🗑️</button></td></tr>\`;});
+ document.getElementById('aviso').textContent=j.persistencia?'✔ códigos salvos com persistência (sobrevivem a reinício)':'⚠️ SEM persistência (defina GH_TOKEN no Render) — códigos somem se o servidor reiniciar';}
+async function criar(){const j=await api('/api/admin/criar','POST',{nome:document.getElementById('nome').value,dias:document.getElementById('dias').value});
+ document.getElementById('novo').textContent='Código criado: '+j.codigo+' — envie ao usuário';await lista();}
+async function revogar(c){if(!confirm('Revogar '+c+'?'))return;await api('/api/admin/revogar','POST',{codigo:c});await lista();}
+</script></body></html>`);
+});
+
 const LIGAS = ["euro", "copa", "super", "premier"];
 const BASE = "https://www.caramelotips.com.br/final/";
 const REFRESH_MS = 15000;

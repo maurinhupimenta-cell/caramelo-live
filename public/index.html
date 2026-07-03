@@ -65,6 +65,7 @@ async function tick(){
   const liga=ligaSel.value, mkt=mktSel.value, qtd=qtdSel.value;
   try{
     const r=await fetch('/api/liga/'+liga+'?mkt='+mkt+'&qtd='+qtd,{cache:'no-store'});
+    if(r.status===401){mostraPortao(window.__cod?'Seu acesso expirou.':'Digite seu código de acesso');$('#liveinfo').textContent='🔒 acesso necessário';return;}
     const d=await r.json();
     if(d.erro){ $('#liveinfo').textContent='aguardando dados...'; return; }
     // so re-renderiza se os dados mudaram (evita travar reconstruindo tudo a cada 10s)
@@ -104,6 +105,30 @@ function tocaAlertaAncora(forte){
 
 
 // ===== RADAR GLOBAL (todas as ligas x mercados): painel + notificacao + som =====
+
+// ===== PORTAO DE ACESSO (codigo do assinante) =====
+window.__cod=localStorage.getItem('cl_cod')||'';
+const _f=window.fetch.bind(window);
+window.fetch=(u,o={})=>{const s=String(u);if(s.includes('/api/')){o.headers=Object.assign({},o.headers,{'x-acesso':window.__cod});}return _f(u,o);};
+function mostraPortao(msg){
+  if(document.getElementById('portao'))return;
+  const d=document.createElement('div');d.id='portao';
+  d.style.cssText='position:fixed;inset:0;background:#0d1117;z-index:9999;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px';
+  d.innerHTML='<h2 style="color:#3fb950;margin:0">🔒 Acesso</h2><div style="color:#8b98a8">'+(msg||'Digite seu código de acesso')+'</div><input id="codIn" style="padding:10px 14px;border-radius:8px;border:1px solid #2d3646;background:#1c2333;color:#e8edf4;font-size:16px;text-transform:uppercase;text-align:center" placeholder="CL-XXXXXX"><button id="codBt" style="padding:10px 18px;border-radius:8px;border:1px solid #3fb950;background:rgba(46,160,67,.15);color:#3fb950;font-weight:700;cursor:pointer;font-size:15px">Entrar</button><div id="codErr" style="color:#f85149;font-size:13px"></div>';
+  document.body.appendChild(d);
+  const tenta=async()=>{
+    const c=document.getElementById('codIn').value.trim().toUpperCase();
+    if(!c)return;
+    try{
+      const r=await _f('/api/acesso/validar',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({codigo:c})});
+      if(r.ok){localStorage.setItem('cl_cod',c);window.__cod=c;d.remove();_lastHash='';tick();carregaRadar();}
+      else document.getElementById('codErr').textContent='Código inválido ou expirado.';
+    }catch(e){document.getElementById('codErr').textContent='Erro de conexão — tente de novo.';}
+  };
+  document.getElementById('codBt').onclick=tenta;
+  document.getElementById('codIn').addEventListener('keydown',e=>{if(e.key==='Enter')tenta();});
+}
+
 const nomeLiga={euro:'Euro',copa:'Copa',super:'Super',premier:'Premier'};
 const fitaTxt=f=>(f&&f.length)?' · últimos: '+f.map(v=>v?'🟢':'🔴').join(''):'';
 function radarHtml(lista){
@@ -347,7 +372,7 @@ function render(d){
     ${ancoraAlertHtml}
     ${alertaHtml?`<div class="sec">⚠️ Alertas</div><div class="card">${alertaHtml}</div>`:''}
 
-    <div class="sec">Gráfico — ${nomeMkt[mkt]} • Qtd. Jogos: ${d.qtd||a.qtdJogos||20}${a.ehTotalGols?` <span style="color:#58a6ff;font-size:12px">● média de gols ×10 (ex: 28 = 2.8 gols) — média atual ${a.mediaGols} gols</span>`:''} ${d.curvaReal?'<span style="color:var(--greenb);font-size:12px">● curva real do caramelo</span>':'<span style="color:var(--amber);font-size:12px">○ aproximada (abra o caramelo + captura)</span>'}</div>
+    <div class="sec">Gráfico — ${nomeMkt[mkt]} • Qtd. Jogos: ${d.qtd||a.qtdJogos||20}${a.ehTotalGols?` <span style="color:#58a6ff;font-size:12px">● média de gols ×10 (ex: 28 = 2.8 gols) — média atual ${a.mediaGols} gols</span>`:''} ${d.curvaReal?'<span style="color:var(--greenb);font-size:12px">● curva real</span>':'<span style="color:var(--amber);font-size:12px">○ aproximada (aguardando captura)</span>'}</div>
     ${rompHtml}
     <div class="card">${chart}
     ${tendHtml}
