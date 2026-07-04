@@ -1335,6 +1335,12 @@ app.get("/api/relatorio/:liga", (req, res) => {
 const RADAR_MKTS = ["o25", "o35", "ge5", "ambas"];
 const radarEstado = {}; // liga|mkt -> {fundo, sobe}
 const radarAtivos = {}; // liga|mkt|tipo -> info (painel do momento)
+const radarUltimoAviso = {}; // liga|mkt|tipo -> ts (nao repete o mesmo aviso em <30min)
+function podeAvisar(chave) {
+  const ag = Date.now();
+  if (radarUltimoAviso[chave] && ag - radarUltimoAviso[chave] < 30 * 60000) return false;
+  radarUltimoAviso[chave] = ag; return true;
+}
 function atualizaRadar(liga, s) {
   try {
     for (const mkt of RADAR_MKTS) {
@@ -1357,13 +1363,14 @@ function atualizaRadar(liga, s) {
       const ganho = (cur != null && antes != null) ? cur - antes : null;
       const sobe = ganho != null && c.base != null &&
         (prev.sobe ? (ganho >= 3 && cur <= c.base * 1.35) : (ganho >= 10 && cur <= c.base * 1.2));
+      const primeira = !(k in radarEstado); // 1a leitura apos ligar: registra SEM avisar (mata a enxurrada pos-restart)
       if (fundo && !prev.fundo) {
         radarAtivos[k + "|minima"] = { liga, mkt, tipo: "minima", pagando: cur, base: c.base, fita, ts: Date.now() };
-        avisaRadar(radarAtivos[k + "|minima"]);
+        if (!primeira && podeAvisar(k + "|minima")) avisaRadar(radarAtivos[k + "|minima"]);
       } else if (!fundo) delete radarAtivos[k + "|minima"];
       if (sobe && !prev.sobe) {
         radarAtivos[k + "|subida"] = { liga, mkt, tipo: "subida", pagando: cur, deOnde: antes, base: c.base, fita, ts: Date.now() };
-        avisaRadar(radarAtivos[k + "|subida"]);
+        if (!primeira && podeAvisar(k + "|subida")) avisaRadar(radarAtivos[k + "|subida"]);
       } else if (!sobe) delete radarAtivos[k + "|subida"];
       radarEstado[k] = { fundo, sobe };
     }
