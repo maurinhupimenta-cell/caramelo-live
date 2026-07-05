@@ -81,6 +81,7 @@ const GH_BRANCH = "dados";
 const GH_FILE = "codigos.json";
 let codigos = {}; // codigo -> {nome, criado, expira, usos, ultimoUso}
 let ghSha = null;
+let ghErro = null; // ultimo erro de salvamento (visivel no /admin)
 const ghHead = () => ({ "Authorization": "Bearer " + GH_T, "Accept": "application/vnd.github+json", "User-Agent": "caramelo-live" });
 async function carregaCodigos() {
   if (!GH_T) return;
@@ -95,8 +96,9 @@ async function salvaCodigos() {
     const body = { message: "codigos", content: Buffer.from(JSON.stringify(codigos, null, 1)).toString("base64"), branch: GH_BRANCH };
     if (ghSha) body.sha = ghSha;
     const r = await fetch(`https://api.github.com/repos/${GH_REPO}/contents/${GH_FILE}`, { method: "PUT", headers: { ...ghHead(), "Content-Type": "application/json" }, body: JSON.stringify(body) });
-    if (r.ok) { const j = await r.json(); ghSha = j.content.sha; }
-  } catch (e) {}
+    if (r.ok) { const j = await r.json(); ghSha = j.content.sha; ghErro = null; }
+    else { ghErro = "HTTP " + r.status + " — token sem permissão Contents:Read/Write nesse repo, ou token inválido"; }
+  } catch (e) { ghErro = e.message; }
 }
 carregaCodigos();
 function codigoValido(c) {
@@ -126,7 +128,7 @@ app.post("/api/admin/testar-alerta", (req, res) => {
 });
 app.get("/api/admin/codigos", (req, res) => {
   if (!isAdmin(req)) return res.status(401).json({ erro: "admin" });
-  res.json({ codigos, persistencia: !!GH_T, adminKeyDefinida: !!ADMIN_KEY });
+  res.json({ codigos, persistencia: !!GH_T && !ghErro && !!ghSha, tokenPresente: !!GH_T, erroSave: ghErro, adminKeyDefinida: !!ADMIN_KEY });
 });
 app.post("/api/admin/criar", async (req, res) => {
   if (!isAdmin(req)) return res.status(401).json({ erro: "admin" });
@@ -165,7 +167,7 @@ async function lista(){const j=await api('/api/admin/codigos');const tb=document
  Object.entries(j.codigos).sort((a,b)=>b[1].criado-a[1].criado).forEach(([c,d])=>{
   const exp=new Date(d.expira);const ativo=agora<d.expira;
   tb.innerHTML+=\`<tr><td><b>\${c}</b></td><td>\${d.nome||'—'}</td><td class="\${ativo?'ok':'exp'}">\${exp.toLocaleString('pt-BR')} \${ativo?'✅':'⛔ expirado'}</td><td>\${d.usos||0}\${d.ultimoUso?' <span class=note>('+new Date(d.ultimoUso).toLocaleTimeString('pt-BR')+')</span>':''}</td><td><button onclick="revogar('\${c}')">🗑️</button></td></tr>\`;});
- document.getElementById('aviso').textContent=j.persistencia?'✔ códigos salvos com persistência (sobrevivem a reinício)':'⚠️ SEM persistência (defina GH_TOKEN no Render) — códigos somem se o servidor reiniciar';}
+ document.getElementById('aviso').textContent=j.persistencia?'✔ códigos salvos com persistência (sobrevivem a reinício)':(j.tokenPresente?('⚠️ GH_TOKEN presente mas o salvamento FALHOU: '+(j.erroSave||'crie um código para testar')):'⚠️ SEM persistência — falta GH_TOKEN no Render; códigos somem a cada reinício');}
 async function criar(){const j=await api('/api/admin/criar','POST',{nome:document.getElementById('nome').value,dias:document.getElementById('dias').value});
  document.getElementById('novo').textContent='Código criado: '+j.codigo+' — envie ao usuário';await lista();}
 async function teste(){await api('/api/admin/testar-alerta','POST',{});alert('Alerta de teste enviado! Olhe a notificação no canto (com o site aberto em outra aba).');}
