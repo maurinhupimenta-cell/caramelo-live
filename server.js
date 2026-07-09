@@ -1368,6 +1368,79 @@ app.get("/api/relatorio/:liga", (req, res) => {
   } catch (e) { res.status(500).json({ erro: e.message }); }
 });
 
+// ===== ESTUDO: tempo ate pagar apos cada sinal + temperatura da liga (leitura, nao altera nada) =====
+const estudoCache = {};
+app.get("/api/estudo/:liga", (req, res) => {
+  try {
+    const liga = req.params.liga, mkt = req.query.mkt || "o35";
+    const d = store[liga];
+    if (!d || !d.games || d.games.length < 250) return res.json({ erro: "historico insuficiente" });
+    const key = liga + "|" + mkt;
+    if (estudoCache[key] && Date.now() - estudoCache[key].ts < 120000 && estudoCache[key].lu === d.lastUpdated) return res.json(estudoCache[key].out);
+    const games = d.games;
+    const baseG = games.filter(g => pays(g, mkt)).length / games.length;
+    const basePct = Math.round(baseG * 1000) / 10;
+    const JAN = Math.max(2, Math.min(20, games.length));
+    const serieF = chartSeries(games, mkt, JAN); // ponto k <-> jogo k+JAN-1
+    // distancia (em jogos) ate o primeiro pagamento a partir de gi+1
+    const distPagar = gi => { for (let j = gi + 1; j < games.length; j++) { if (pays(games[j], mkt)) return j - gi; } return null; };
+    const mede = idxs => {
+      const ds = idxs.map(distPagar).filter(x => x != null);
+      if (!ds.length) return { eventos: idxs.length, mediaJogos: null };
+      const media = ds.reduce((a, b) => a + b, 0) / ds.length;
+      const em3 = ds.filter(x => x <= 3).length / ds.length;
+      return { eventos: idxs.length, mediaJogos: +media.toFixed(1), mediaMin: Math.round(media * 3), pagouEm3: Math.round(em3 * 100) };
+    };
+    // REGUA: a partir de um jogo QUALQUER (todos os pontos com folga de futuro)
+    const todos = []; for (let gi = JAN; gi < games.length - 30; gi++) todos.push(gi);
+    const regua = mede(todos);
+    // eventos por sinal (replay das MESMAS regras do radar, na serie com drop igual analise)
+    const evMin = [], evSub = [], evLtb = [];
+    let stM = false, stS = false, ultLtb = -99;
+    for (let k = 6; k < serieF.length - 1; k++) {
+      const gi = k + JAN - 1; if (gi >= games.length - 1) break;
+      const cur = serieF[k], antes = serieF[k - 5];
+      const fundo = cur <= basePct * 0.7;
+      const sobe = (cur - antes) >= 10 && cur <= basePct * 1.2;
+      if (fundo && !stM) evMin.push(gi);
+      if (sobe && !stS) evSub.push(gi);
+      stM = fundo ? (cur < basePct * 0.85) : false;
+      stS = sobe;
+      if (k >= 25 && k - ultLtb >= 3) {
+        try {
+          const t = trendLines(serieF.slice(Math.max(0, k - 19), k + 1));
+          if (t && t.rompimento && t.rompimento.tipo === "ROMPEU_LTB_CIMA") { evLtb.push(gi); ultLtb = k; }
+        } catch (e) {}
+      }
+    }
+    // EV+ (indicados: score>=30 e EV>0) — mede se O PROPRIO jogo pagou e, se nao, ate pagar
+    const evPosIdx = []; let evPosGreen = 0;
+    const ini = Math.max(150, games.length - 100);
+    for (let i = ini; i < games.length - 1; i++) {
+      const g = games[i]; if (!g.odds || !g.odds[oddKey(mkt)]) continue;
+      const ev = fullEvalUpcoming([{ nome: g.nome, horario: "", casa: g.casa, fora: g.fora, odds: g.odds }], games.slice(0, i).slice(-400), mkt)[0] || {};
+      if (ev.score != null && ev.score >= 30 && ev.ev > 0) { evPosIdx.push(i - 1); if (pays(g, mkt)) evPosGreen++; }
+    }
+    // temperatura: taxa da janela (relativa a base) x pagamento do proximo jogo
+    const buckets = { "muito_fria_<60%": [0, 0], "fria_60-85%": [0, 0], "normal_85-115%": [0, 0], "quente_115-140%": [0, 0], "muito_quente_>140%": [0, 0] };
+    for (let k = 0; k < serieF.length - 1; k++) {
+      const gi = k + JAN - 1; if (gi + 1 >= games.length) break;
+      const rel = serieF[k] / basePct;
+      const b = rel < 0.6 ? "muito_fria_<60%" : rel < 0.85 ? "fria_60-85%" : rel < 1.15 ? "normal_85-115%" : rel < 1.4 ? "quente_115-140%" : "muito_quente_>140%";
+      buckets[b][0]++; if (pays(games[gi + 1], mkt)) buckets[b][1]++;
+    }
+    const temperatura = {};
+    for (const [b, [n, hit]] of Object.entries(buckets)) temperatura[b] = { jogos: n, proximoPagou: n ? Math.round(hit / n * 100) : null };
+    const out = { liga, mkt, base: basePct,
+      regua_sem_sinal: regua,
+      minima: mede(evMin), subida: mede(evSub), quebraLTB: mede(evLtb),
+      evPositivo: { eventos: evPosIdx.length, oProprioJogoPagou: evPosIdx.length ? Math.round(evPosGreen / evPosIdx.length * 100) : null, ...mede(evPosIdx) },
+      temperatura };
+    estudoCache[key] = { ts: Date.now(), lu: d.lastUpdated, out };
+    res.json(out);
+  } catch (e) { res.status(500).json({ erro: e.message }); }
+});
+
 // MEDICAO: o que aconteceu historicamente APOS cada quebra de LTB pra cima?
 app.get("/api/ltbtest/:liga", (req, res) => {
   try {
