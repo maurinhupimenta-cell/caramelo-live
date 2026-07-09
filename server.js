@@ -1431,7 +1431,31 @@ app.get("/api/estudo/:liga", (req, res) => {
     }
     const temperatura = {};
     for (const [b, [n, hit]] of Object.entries(buckets)) temperatura[b] = { jogos: n, proximoPagou: n ? Math.round(hit / n * 100) : null };
-    const out = { liga, mkt, base: basePct,
+    // APOS PAGAR: o mercado emenda ou segura? (memoria serial)
+    let ppN=0,ppH=0,pnN=0,pnH=0;
+    for (let i = 1; i < games.length - 1; i++) {
+      const prev = pays(games[i], mkt), nx = pays(games[i + 1], mkt);
+      if (prev) { ppN++; if (nx) ppH++; } else { pnN++; if (nx) pnH++; }
+    }
+    // 1o pagamento que ENCERRA a seca fria (janela <60% do normal): o seguinte emenda?
+    let frioN=0,frioH=0,frio2H=0;
+    for (let k = 0; k < serieF.length - 2; k++) {
+      const gi = k + JAN - 1; if (gi + 2 >= games.length) break;
+      if (serieF[k] < basePct * 0.6 && pays(games[gi + 1], mkt)) { // seca fria + veio o 1o green
+        frioN++;
+        if (pays(games[gi + 2], mkt)) frioH++;
+        if (pays(games[gi + 2], mkt) || pays(games[gi + 3], mkt)) frio2H++;
+      }
+    }
+    const aposPagamento = {
+      seguinte_apos_GREEN: ppN ? Math.round(ppH / ppN * 100) : null,
+      seguinte_apos_RED: pnN ? Math.round(pnH / pnN * 100) : null,
+      amostras: { aposGreen: ppN, aposRed: pnN },
+      primeiroGreen_da_seca_fria: { eventos: frioN,
+        seguinte_pagou: frioN ? Math.round(frioH / frioN * 100) : null,
+        pagou_em_2: frioN ? Math.round(frio2H / frioN * 100) : null }
+    };
+    const out = { liga, mkt, base: basePct, aposPagamento,
       regua_sem_sinal: regua,
       minima: mede(evMin), subida: mede(evSub), quebraLTB: mede(evLtb),
       evPositivo: { eventos: evPosIdx.length, oProprioJogoPagou: evPosIdx.length ? Math.round(evPosGreen / evPosIdx.length * 100) : null, ...mede(evPosIdx) },
