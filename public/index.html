@@ -65,6 +65,9 @@ async function tick(){
   const liga=ligaSel.value, mkt=mktSel.value, qtd=qtdSel.value;
   try{
     const r=await fetch('/api/liga/'+liga+'?mkt='+mkt+'&qtd='+qtd,{cache:'no-store'});
+    // BUGFIX: se o usuario trocou liga/mercado enquanto essa resposta viajava, descarta
+    // (respostas fora de ordem desenhavam o grafico de outra liga na tela)
+    if(liga!==ligaSel.value||mkt!==mktSel.value||qtd!==qtdSel.value)return;
     if(r.status===401){mostraPortao(window.__cod?'Seu acesso expirou.':'Digite seu código de acesso');$('#liveinfo').textContent='🔒 acesso necessário';return;}
     const d=await r.json();
     if(d.erro){ $('#liveinfo').textContent='aguardando dados...'; return; }

@@ -975,20 +975,24 @@ function decodeSnapshot(data) {
   // os 2 jogos mais recentes ainda nao entram na curva do caramelo (validado: drop2)
   // e limita aos ~1200 jogos recentes: a curva (janela 20) e as stats usam os recentes,
   // e o historico cru pode passar de 4000 jogos (deixa o servidor lento sem necessidade).
-  const games = passados.slice(0, -2).slice(-1200).map(g => ({
+  const mapa = g => ({
     nome: g.nome, a: g.a, b: g.b, total: g.total,
     casa: g.casa, fora: g.fora, ht: g.ht, horario: g.horario || "", odds: g.odds || {}
-  }));
+  });
+  const games = passados.slice(0, -2).slice(-1200).map(mapa);
+  // gamesAll: SEM o drop-2 (inclui os 2 jogos mais recentes) — usado SO pelo radar,
+  // pra alertar no fechamento real (~6 min mais cedo). Grafico/analises seguem com drop-2.
+  const gamesAll = passados.slice(-1200).map(mapa);
   const upcoming = futuros.slice(0, 6).map(u => ({
     nome: u.nome, horario: u.horario, casa: u.casa, fora: u.fora, odds: u.odds
   }));
   console.log(`decodeSnapshot: ${passados.length} passados → ${games.length} games, ${futuros.length} futuros → ${upcoming.length} upcoming`);
-  return { games, upcoming };
+  return { games, upcoming, gamesAll };
 }
 
 function aplicaSnapshot(liga, data) {
   try {
-    const { games, upcoming } = decodeSnapshot(data);
+    const { games, upcoming, gamesAll } = decodeSnapshot(data);
     if (!games.length) return;
     const s = buildStore(liga, games, upcoming, new Date(data.atualizadoEm || Date.now()).toISOString());
     s.fonte = "ws";
@@ -1063,7 +1067,7 @@ app.post("/api/snapshot", (req, res) => {
     if (!liga || !data || !Array.isArray(data.cells)) {
       return res.status(400).json({ ok: false, erro: "snapshot invalido" });
     }
-    const { games, upcoming } = decodeSnapshot(data);
+    const { games, upcoming, gamesAll } = decodeSnapshot(data);
     if (!games.length) return res.status(400).json({ ok: false, erro: "zero jogos no snapshot" });
     const s = buildStore(liga, games, upcoming, new Date(data.atualizadoEm || Date.now()).toISOString());
     s.fonte = "ws";
@@ -1347,11 +1351,13 @@ function atualizaRadar(liga, s) {
   try {
     for (const mkt of RADAR_MKTS) {
       const c = s.computed && s.computed[mkt]; if (!c || !c.sinal) continue;
-      const sin = c.sinal;
-      const serie = c.serie || [];
-      const cur = serie.length ? serie[serie.length - 1] : null; // taxa atual (ultimo ponto da curva)
-      const mexeu = serie.length >= 4 && cur > serie[serie.length - 4]; // curva subiu de verdade (vs 3 pontos atras)
-      const fita = (s.games || []).slice(-6).map(g => pays(g, mkt) ? 1 : 0); // jogo a jogo (ultimos 6)
+      // RADAR SEM DROP-2: usa gamesAll (inclui os 2 jogos mais recentes) — alerta no
+      // fechamento real do jogo. Grafico/analises continuam com drop-2 (fieis ao caramelo).
+      const gAll = s.gamesAll || s.games || [];
+      const JANR = Math.max(2, Math.min(20, gAll.length));
+      const serie = gAll.length ? chartSeries(gAll, mkt, JANR).slice(-20) : (c.serie || []);
+      const cur = serie.length ? serie[serie.length - 1] : null; // taxa atual (ultimo ponto, sem drop)
+      const fita = gAll.slice(-6).map(g => pays(g, mkt) ? 1 : 0); // jogo a jogo (ultimos 6, sem drop)
       const k = liga + "|" + mkt;
       const prev = radarEstado[k] || {};
       // REGRA SIMPLES: minima = pagando no maximo 70% do normal da liga (compressao forte).
