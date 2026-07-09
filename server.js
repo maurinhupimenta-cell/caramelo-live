@@ -838,6 +838,22 @@ function rankTimesPorJanela(games, mkt) {
   return out;
 }
 
+// PLACAR PROVAVEL: distribuicao de placares dos jogos recentes da liga (peso 1) +
+// historico do mandante em casa e do visitante fora (peso 3). Top 2 com %.
+function placarProvavel(games, casa, fora, nome) {
+  if ((!casa || !fora) && nome && nome.includes(" x ")) {
+    const pp = nome.split(" x "); casa = casa || pp[0].trim(); fora = fora || (pp[1] || "").trim();
+  }
+  const cont = {}; let tot = 0;
+  const add = (g, w) => { if (g.a == null || g.b == null) return; const k = g.a + "-" + g.b; cont[k] = (cont[k] || 0) + w; tot += w; };
+  for (const g of games.slice(-150)) add(g, 1);
+  if (casa || fora) for (const g of games) { if (casa && g.casa === casa) add(g, 3); if (fora && g.fora === fora) add(g, 3); }
+  if (!tot) return null;
+  const top = Object.entries(cont).sort((a, b) => b[1] - a[1]).slice(0, 2)
+    .map(([p, w]) => ({ placar: p, pct: Math.round(w / tot * 100) }));
+  return { top };
+}
+
 const ANCORA_CORTE = 0.30;   // >=30% = alta taxa de placar-gatilho (2-1/3-0/2-0HT)
 const ANCORA_MIN_JOGOS = 8;  // amostra minima pra a taxa valer
 const BIG_CORTE = 0.65;      // >=65% de Over 3.5 na janela de 3 = "paga big placar" (seletivo)
@@ -1188,6 +1204,7 @@ app.get("/api/liga/:liga", (req, res) => {
   const proximos = ((d.upcoming && d.upcoming[mkt]) || []).map(p => {
     const anc = ancoras[p.nome];
     const base = anc ? { ...p, ancora: anc } : { ...p };
+    base.placarProvavel = placarProvavel(d.games || [], p.casa, p.fora, p.nome);
     if (mkt !== "totft") {
       base.combo = comboDe(p);
       // rank dos MERCADOS pra ESSE jogo (qual mercado paga melhor nele)
@@ -1335,6 +1352,36 @@ app.get("/api/relatorio/:liga", (req, res) => {
   } catch (e) { res.status(500).json({ erro: e.message }); }
 });
 
+// MEDICAO: o que aconteceu historicamente APOS cada quebra de LTB pra cima?
+app.get("/api/ltbtest/:liga", (req, res) => {
+  try {
+    const liga = req.params.liga, mkt = req.query.mkt || "o35";
+    const d = store[liga];
+    if (!d || !d.games || d.games.length < 200) return res.json({ erro: "historico insuficiente" });
+    const games = d.games;
+    const JAN = Math.max(2, Math.min(20, games.length));
+    const serieFull = chartSeries(games, mkt, JAN); // ponto k <-> jogo k+JAN-1
+    const eventos = []; let ultI = -99;
+    for (let i = 25; i <= serieFull.length; i++) {
+      const win = serieFull.slice(Math.max(0, i - 20), i);
+      let r = null;
+      try { const t = trendLines(win); r = t && t.rompimento; } catch (e) {}
+      if (r && r.tipo === "ROMPEU_LTB_CIMA" && i - ultI >= 3) {
+        ultI = i;
+        const gi = (i - 1) + JAN - 1;
+        const nx = games[gi + 1], nx3 = games.slice(gi + 1, gi + 4);
+        if (nx) eventos.push({ hora: games[gi].horario || "", prox: pays(nx, mkt), em3: nx3.some(g => pays(g, mkt)) });
+      }
+    }
+    const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 100);
+    const pc = (arr, f) => arr.length ? Math.round(arr.filter(f).length / arr.length * 100) : null;
+    res.json({ liga, mkt, base, quebras: eventos.length,
+      pagouProximoJogo: pc(eventos, e => e.prox),
+      pagouEmAte3Jogos: pc(eventos, e => e.em3),
+      ultimas5: eventos.slice(-5) });
+  } catch (e) { res.status(500).json({ erro: e.message }); }
+});
+
 // ===== RADAR GLOBAL: minima/subida em TODAS as ligas+mercados (nao altera analises) =====
 // Le o sinal ja calculado em s.computed (zero recalculo). Na TRANSICAO (entrou no fundo /
 // virou subida) manda aviso via SSE com liga+mercado; quando a condicao acaba, sai do painel.
@@ -1380,7 +1427,14 @@ function atualizaRadar(liga, s) {
         radarAtivos[k + "|subida"] = { liga, mkt, tipo: "subida", pagando: cur, deOnde: antes, base: c.base, fita, ts: Date.now() };
         if (!primeira && podeAvisar(k + "|subida")) avisaRadar(radarAtivos[k + "|subida"]);
       } else if (!sobe) delete radarAtivos[k + "|subida"];
-      radarEstado[k] = { fundo, sobe };
+      // 💥 QUEBRA DE LTB pra cima (detector oficial do grafico, na serie SEM drop-2)
+      let quebrouLTB = false;
+      try { const t = trendLines(serie); quebrouLTB = !!(t && t.rompimento && t.rompimento.tipo === "ROMPEU_LTB_CIMA"); } catch (e) {}
+      if (quebrouLTB && !prev.ltb) {
+        radarAtivos[k + "|ltb"] = { liga, mkt, tipo: "ltb", pagando: cur, base: c.base, fita, ts: Date.now() };
+        if (!primeira && podeAvisar(k + "|ltb")) avisaRadar(radarAtivos[k + "|ltb"]);
+      } else if (!quebrouLTB) delete radarAtivos[k + "|ltb"];
+      radarEstado[k] = { fundo, sobe, ltb: quebrouLTB };
     }
   } catch (e) {}
 }
