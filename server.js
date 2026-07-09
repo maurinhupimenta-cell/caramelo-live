@@ -844,14 +844,30 @@ function placarProvavel(games, casa, fora, nome) {
   if ((!casa || !fora) && nome && nome.includes(" x ")) {
     const pp = nome.split(" x "); casa = casa || pp[0].trim(); fora = fora || (pp[1] || "").trim();
   }
-  const cont = {}; let tot = 0;
-  const add = (g, w) => { if (g.a == null || g.b == null) return; const k = g.a + "-" + g.b; cont[k] = (cont[k] || 0) + w; tot += w; };
-  for (const g of games.slice(-150)) add(g, 1);
-  if (casa || fora) for (const g of games) { if (casa && g.casa === casa) add(g, 3); if (fora && g.fora === fora) add(g, 3); }
-  if (!tot) return null;
-  const top = Object.entries(cont).sort((a, b) => b[1] - a[1]).slice(0, 2)
-    .map(([p, w]) => ({ placar: p, pct: Math.round(w / tot * 100) }));
-  return { top };
+  // duas distribuicoes: liga (referencia) e confronto (mandante em casa + visitante fora, peso 3 + liga peso 1)
+  const liga = {}, conf = {}; let totL = 0, totC = 0;
+  const add = (m, g, w) => { if (g.a == null || g.b == null) return 0; const k = g.a + "-" + g.b; m[k] = (m[k] || 0) + w; return w; };
+  for (const g of games.slice(-300)) totL += add(liga, g, 1);
+  for (const g of games.slice(-150)) totC += add(conf, g, 1);
+  if (casa || fora) for (const g of games) {
+    if (casa && g.casa === casa) totC += add(conf, g, 3);
+    if (fora && g.fora === fora) totC += add(conf, g, 3);
+  }
+  if (!totC || !totL) return null;
+  const soma = k => k.split("-").reduce((a, b) => +a + +b, 0);
+  const top = filtro => {
+    const e = Object.entries(conf).filter(([k]) => filtro(soma(k))).sort((a, b) => b[1] - a[1])[0];
+    return e ? { placar: e[0], pct: Math.round(e[1] / totC * 100) } : null;
+  };
+  // placar que ESSE confronto puxa acima do normal da liga (lift >= 1.5x, minimo de ocorrencias)
+  let puxa = null;
+  for (const [k, w] of Object.entries(conf)) {
+    if (w < 6) continue;
+    const pC = w / totC, pL = (liga[k] || 0.5) / totL;
+    const x = pC / pL;
+    if (x >= 1.5 && (!puxa || x > puxa.x)) puxa = { placar: k, x: Math.round(x * 10) / 10 };
+  }
+  return { under: top(t => t <= 2), over: top(t => t >= 3), puxa };
 }
 
 const ANCORA_CORTE = 0.30;   // >=30% = alta taxa de placar-gatilho (2-1/3-0/2-0HT)
