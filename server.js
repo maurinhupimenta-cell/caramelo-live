@@ -1368,6 +1368,33 @@ app.get("/api/relatorio/:liga", (req, res) => {
   } catch (e) { res.status(500).json({ erro: e.message }); }
 });
 
+// ===== ESTUDO 3H (tese do usuario): bloco de 3h bom -> o proximo bloco continua bom? =====
+app.get("/api/estudo3h/:liga", (req, res) => {
+  try {
+    const liga = req.params.liga, mkt = req.query.mkt || "o25";
+    const d = store[liga];
+    if (!d || !d.games || d.games.length < 300) return res.json({ erro: "historico insuficiente" });
+    const games = d.games, TAM = 60; // ~3h de liga
+    const blocos = [];
+    for (let i = 0; i + TAM <= games.length; i += TAM) {
+      const b = games.slice(i, i + TAM);
+      blocos.push(Math.round(b.filter(g => pays(g, mkt)).length / TAM * 1000) / 10);
+    }
+    const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
+    // transicoes: bloco ALTO (>= base) -> proximo bloco foi o que?
+    let aa = 0, ab = 0, ba = 0, bb = 0; const prox = { altoDepois: [], baixoDepois: [] };
+    for (let i = 0; i + 1 < blocos.length; i++) {
+      const alto = blocos[i] >= base, proxAlto = blocos[i + 1] >= base;
+      if (alto) { prox.altoDepois.push(blocos[i + 1]); proxAlto ? aa++ : ab++; }
+      else { prox.baixoDepois.push(blocos[i + 1]); proxAlto ? ba++ : bb++; }
+    }
+    const med = a => a.length ? +(a.reduce((x, y) => x + y, 0) / a.length).toFixed(1) : null;
+    res.json({ liga, mkt, base, blocos,
+      aposBlocoALTO: { n: aa + ab, continuouAlto: aa, caiu: ab, taxaMediaDoProximo: med(prox.altoDepois) },
+      aposBlocoBAIXO: { n: ba + bb, subiu: ba, continuouBaixo: bb, taxaMediaDoProximo: med(prox.baixoDepois) } });
+  } catch (e) { res.status(500).json({ erro: e.message }); }
+});
+
 // ===== ESTUDO: tempo ate pagar apos cada sinal + temperatura da liga (leitura, nao altera nada) =====
 const estudoCache = {};
 app.get("/api/estudo/:liga", (req, res) => {
