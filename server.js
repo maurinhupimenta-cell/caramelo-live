@@ -1520,10 +1520,12 @@ function atualizaRadar(liga, s) {
       const fita = gAll.slice(-6).map(g => pays(g, mkt) ? 1 : 0); // jogo a jogo (ultimos 6, sem drop)
       const k = liga + "|" + mkt;
       const prev = radarEstado[k] || {};
-      // REGRA SIMPLES: minima = pagando no maximo 70% do normal da liga (compressao forte).
-      // Histerese: depois de entrar, so sai quando voltar acima de 85% do normal (sem pisca-pisca).
-      const fundo = cur != null && c.base != null &&
-        (prev.fundo ? cur < c.base * 0.85 : cur <= c.base * 0.7);
+      // ZONA DE OPERACAO (estudo): minima = pagando <=60% do normal (janela dos ~31%).
+      // Desarma no 1o GREEN (o edge cai apos o 1o pagamento — medido) e re-arma so apos
+      // novo jogo sem pagar ainda na zona. Histerese de saida: >=85% do normal.
+      const ultimoPagou = gAll.length ? pays(gAll[gAll.length - 1], mkt) : false;
+      const fundo = cur != null && c.base != null && !ultimoPagou &&
+        (prev.fundo ? cur < c.base * 0.85 : cur <= c.base * 0.6);
       // SUBIDA SIMPLES: taxa subiu >=10 pontos nos ultimos 5 jogos (movimento real) e ainda
       // nao passou muito do normal (<=120%; chegar depois disso e atrasado).
       // Histerese: permanece enquanto o ganho nao morrer (>=3 pontos) e nao esticar (<=135%).
@@ -1533,7 +1535,7 @@ function atualizaRadar(liga, s) {
         (prev.sobe ? (ganho >= 3 && cur <= c.base * 1.35) : (ganho >= 10 && cur <= c.base * 1.2));
       const primeira = !(k in radarEstado); // 1a leitura apos ligar: registra SEM avisar (mata a enxurrada pos-restart)
       if (fundo && !prev.fundo) {
-        radarAtivos[k + "|minima"] = { liga, mkt, tipo: "minima", pagando: cur, base: c.base, fita, ts: Date.now() };
+        radarAtivos[k + "|minima"] = { liga, mkt, tipo: "minima", pagando: cur, base: c.base, rel: c.base ? Math.round(cur / c.base * 100) : null, fita, ts: Date.now() };
         if (!primeira && podeAvisar(k + "|minima")) avisaRadar(radarAtivos[k + "|minima"]);
       } else if (!fundo) delete radarAtivos[k + "|minima"];
       if (sobe && !prev.sobe) {

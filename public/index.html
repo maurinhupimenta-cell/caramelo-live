@@ -137,7 +137,7 @@ const fitaTxt=f=>(f&&f.length)?' · últimos: '+f.map(v=>v?'🟢':'🔴').join('
 function radarHtml(lista){
   if(!lista||!lista.length)return '';
   const chips=lista.map(a=>a.tipo==='ltb'?`<span style="display:inline-block;margin:3px 6px 3px 0;padding:5px 10px;border-radius:8px;border:1px solid #f0a020;background:rgba(240,160,32,.12);font-size:12px;font-weight:700;color:#f0a020">💥 ${nomeLiga[a.liga]||a.liga} · ${nomeMkt[a.mkt]||a.mkt} — QUEBROU A LTB, pagando ${a.pagando!=null?a.pagando+'%':'—'}${fitaTxt(a.fita)}</span>`:a.tipo==='minima'
-    ?`<span style="display:inline-block;margin:3px 6px 3px 0;padding:5px 10px;border-radius:8px;border:1px solid #58a6ff;background:rgba(88,166,255,.1);font-size:12px;font-weight:700;color:#58a6ff">📉 ${nomeLiga[a.liga]||a.liga} · ${nomeMkt[a.mkt]||a.mkt} — mínima, pagando ${a.pagando!=null?a.pagando+'%':'—'}${a.base!=null?` <span style="opacity:.7">(normal ${a.base}%)</span>`:''}${fitaTxt(a.fita)}</span>`
+    ?`<span style="display:inline-block;margin:3px 6px 3px 0;padding:5px 10px;border-radius:8px;border:1px solid #58a6ff;background:rgba(88,166,255,.1);font-size:12px;font-weight:700;color:#58a6ff">📉 ${nomeLiga[a.liga]||a.liga} · ${nomeMkt[a.mkt]||a.mkt} — ${a.rel!=null?`<b>${a.rel}% do normal</b>, `:''}pagando ${a.pagando!=null?a.pagando+'%':'—'}${a.base!=null?` <span style="opacity:.7">(normal ${a.base}%)</span>`:''}${fitaTxt(a.fita)}</span>`
     :`<span style="display:inline-block;margin:3px 6px 3px 0;padding:5px 10px;border-radius:8px;border:1px solid var(--greenb);background:rgba(46,160,67,.1);font-size:12px;font-weight:700;color:var(--greenb)">📈 ${nomeLiga[a.liga]||a.liga} · ${nomeMkt[a.mkt]||a.mkt} — subindo: ${a.deOnde!=null?a.deOnde+'% → ':''}${a.pagando!=null?a.pagando+'%':'—'}${a.base!=null?` <span style="opacity:.7">(normal ${a.base}%)</span>`:''}${fitaTxt(a.fita)}</span>`).join('');
   return `<div class="card" style="margin:0 0 12px 0"><div class="note" style="font-size:11px;margin-bottom:4px">🛰️ Radar — mínimas e subidas em todas as ligas/mercados</div>${chips}</div>`;
 }
@@ -370,7 +370,15 @@ function render(d){
   const sigHtml=a.signatures.map(s=>`<tr><td>${sigHuman(s.sig)}</td><td>${s.n}</td><td>${s.paid}</td><td class="${s.p>=a.base?'pos':''}">${s.p}%</td></tr>`).join('');
   const ultimos=d.ultimos.map(u=>`${u.placar} (${u.total})`).join(' &nbsp;·&nbsp; ');
 
+  const _cur=(a.serie&&a.serie.length)?a.serie[a.serie.length-1]:null;
+  const _rel=(!a.ehTotalGols&&_cur!=null&&a.base)?Math.round(_cur/a.base*100):null;
+  const tempHtml=_rel==null?'':(_rel<60
+    ?`<div style="padding:10px 16px;border-radius:10px;background:rgba(88,166,255,.15);border:2px solid #58a6ff;margin-bottom:10px;font-weight:800;color:#58a6ff;font-size:15px">🌡️ ${_rel}% do normal — 🔵 ZONA DE OPERAÇÃO (seca fria: pagando ${_cur}%, normal ${a.base}%)</div>`
+    :_rel>115
+    ?`<div style="padding:8px 14px;border-radius:10px;background:rgba(248,81,73,.10);border:1px solid var(--red);margin-bottom:10px;font-weight:700;color:var(--red);font-size:13px">🌡️ ${_rel}% do normal — 🔴 QUENTE, NÃO OPERAR (pagando ${_cur}%, normal ${a.base}%)</div>`
+    :`<div style="padding:8px 14px;border-radius:10px;background:#161c28;border:1px solid var(--line);margin-bottom:10px;color:#8b98a8;font-size:13px">🌡️ ${_rel}% do normal — neutro (pagando ${_cur}%, normal ${a.base}%) · zona de operação: abaixo de 60%</div>`);
   $('#conteudo').innerHTML=`
+    ${tempHtml}
     ${subidaHtml}
     ${minimaHtml}
     ${ancoraAlertHtml}
