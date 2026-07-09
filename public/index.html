@@ -146,6 +146,9 @@ async function carregaRadar(){
     const el=document.getElementById('radar');if(el)el.innerHTML=radarHtml(l);}catch(e){}
 }
 function notificaRadar(a){
+  // So a MINIMA (zona de operacao) interrompe com notificacao+som; subida/LTB ficam
+  // como contexto no painel (o estudo mediu: pagam igual a regua — nao merecem interromper)
+  if(a.tipo!=='minima'&&!a.teste)return;
   const nomeL=nomeLiga[a.liga]||a.liga, nomeM=nomeMkt[a.mkt]||a.mkt;
   const titulo=a.tipo==='minima'?`📉 MÍNIMA — ${nomeL} · ${nomeM}${a.pagando!=null?` — pagando ${a.pagando}%`:''}`:a.tipo==='ltb'?`💥 QUEBROU A LTB — ${nomeL} · ${nomeM}${a.pagando!=null?` — pagando ${a.pagando}%`:''}`:`📈 SUBINDO — ${nomeL} · ${nomeM}${a.deOnde!=null&&a.pagando!=null?` — ${a.deOnde}% → ${a.pagando}%`:''}`;
   const corpo=(a.tipo==='minima'?'Mercado segurando — pagando abaixo do normal.':a.tipo==='ltb'?'Curva rompeu a linha de baixa pra cima — ciclo virando.':'Pagamento voltando agora.')+fitaTxt(a.fita);
