@@ -1368,6 +1368,40 @@ app.get("/api/relatorio/:liga", (req, res) => {
   } catch (e) { res.status(500).json({ erro: e.message }); }
 });
 
+// ===== ESTUDO MAXIMAS (metrica do usuario): frequencia de pulo de 3+/4+ REDs por zona =====
+app.get("/api/maximas/:liga", (req, res) => {
+  try {
+    const liga = req.params.liga, mkt = req.query.mkt || "o25";
+    const d = store[liga];
+    if (!d || !d.games || d.games.length < 300) return res.json({ erro: "historico insuficiente" });
+    const games = d.games;
+    const base = games.filter(g => pays(g, mkt)).length / games.length * 100;
+    const JAN = 20;
+    const serieF = chartSeries(games, mkt, JAN); // ponto k <-> jogo k+JAN-1
+    const zonas = { fria_menor60: [0,0,0], media_60a115: [0,0,0], alta_maior115: [0,0,0] }; // [n, maxima3, maxima4]
+    for (let k = 0; k < serieF.length; k++) {
+      const gi = k + JAN - 1;
+      if (gi + 4 >= games.length) break;
+      const rel = serieF[k] / base * 100;
+      const z = rel < 60 ? "fria_menor60" : rel <= 115 ? "media_60a115" : "alta_maior115";
+      const r1 = !pays(games[gi+1], mkt), r2 = !pays(games[gi+2], mkt), r3 = !pays(games[gi+3], mkt), r4 = !pays(games[gi+4], mkt);
+      zonas[z][0]++;
+      if (r1 && r2 && r3) zonas[z][1]++;
+      if (r1 && r2 && r3 && r4) zonas[z][2]++;
+    }
+    const out = {};
+    for (const [z, [n, m3, m4]] of Object.entries(zonas))
+      out[z] = { momentos: n, pulou3casas: n ? Math.round(m3/n*1000)/10 : null, pulou4casas: n ? Math.round(m4/n*1000)/10 : null };
+    // frequencia geral de maximas >=3 na liga (pra ranquear "ligas que abrem maxima toda linha")
+    let runs3 = 0, i = 0;
+    while (i < games.length) {
+      if (!pays(games[i], mkt)) { let j = i; while (j < games.length && !pays(games[j], mkt)) j++; if (j - i >= 3) runs3++; i = j; }
+      else i++;
+    }
+    res.json({ liga, mkt, base: Math.round(base*10)/10, porZona: out, maximas3_por100jogos: Math.round(runs3 / games.length * 1000) / 10 });
+  } catch (e) { res.status(500).json({ erro: e.message }); }
+});
+
 // ===== ESTUDO 3H (tese do usuario): bloco de 3h bom -> o proximo bloco continua bom? =====
 app.get("/api/estudo3h/:liga", (req, res) => {
   try {
