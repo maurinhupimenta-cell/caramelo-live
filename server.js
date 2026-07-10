@@ -1388,8 +1388,8 @@ app.get("/api/dicas", (req, res) => {
       const cur = sf.length ? sf[sf.length - 1] : null;
       if (cur == null) continue;
       const rel = Math.round(cur / base * 100);
-      const evs = d[mkt] || []; // avaliacoes ja prontas no store (mesmas do /api/liga)
-      if (!evs.length) continue;
+      const evs = (d.upcoming && d.upcoming[mkt]) || []; // avaliacoes prontas no store (aninhadas em upcoming)
+      if (!Array.isArray(evs) || !evs.length) continue;
       for (const p of evs) {
         if (p.odd == null || p.ev == null) continue;
         const grade = (rel < 60 && p.ev > 0) ? "entrada" : ((rel < 75 && p.ev > 0) || (rel < 60 && p.ev > -3)) ? "observar" : "aguardar";
@@ -1402,8 +1402,8 @@ app.get("/api/dicas", (req, res) => {
       const dbg = { v: 2, ligasNoStore: Object.keys(store), porLiga: {} };
       for (const liga of Object.keys(store)) {
         const d = store[liga];
-        const evs = (d && d[mkt]) || [];
-        dbg.porLiga[liga] = { nGames: d && d.games ? d.games.length : 0, tipoDmkt: typeof (d && d[mkt]), nEvs: Array.isArray(evs) ? evs.length : -1,
+        const evs = (d && d.upcoming && d.upcoming[mkt]) || [];
+        dbg.porLiga[liga] = { nGames: d && d.games ? d.games.length : 0, tipoDmkt: typeof (d && d.upcoming && d.upcoming[mkt]), nEvs: Array.isArray(evs) ? evs.length : -1,
           chavesPrimeiro: Array.isArray(evs) && evs[0] ? Object.keys(evs[0]).slice(0, 14) : null };
       }
       return res.json(dbg);
