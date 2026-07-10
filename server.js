@@ -1379,7 +1379,7 @@ app.get("/api/dicas", (req, res) => {
     const tudo = [];
     for (const liga of Object.keys(store)) {
       const d = store[liga];
-      if (!d || !d.games || d.games.length < 60 || !d.upcoming || !d.upcoming.length) continue;
+      if (!d || !d.games || d.games.length < 60) continue;
       const games = d.games;
       const base = games.filter(g => pays(g, mkt)).length / games.length * 100;
       if (!base) continue;
@@ -1388,8 +1388,8 @@ app.get("/api/dicas", (req, res) => {
       const cur = sf.length ? sf[sf.length - 1] : null;
       if (cur == null) continue;
       const rel = Math.round(cur / base * 100);
-      let evs = [];
-      try { evs = fullEvalUpcoming(d.upcoming, games, mkt) || []; } catch (e) {}
+      const evs = d[mkt] || []; // avaliacoes ja prontas no store (mesmas do /api/liga)
+      if (!evs.length) continue;
       for (const p of evs) {
         if (p.odd == null || p.ev == null) continue;
         const grade = (rel < 60 && p.ev > 0) ? "entrada" : ((rel < 75 && p.ev > 0) || (rel < 60 && p.ev > -3)) ? "observar" : "aguardar";
