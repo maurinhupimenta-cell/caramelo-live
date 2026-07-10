@@ -1398,6 +1398,16 @@ app.get("/api/dicas", (req, res) => {
     }
     tudo.sort((a, b) => b.nota - a.nota);
     const out = tudo.slice(0, 3).map(({ nota, ...r }) => r);
+    if (req.query.debug) {
+      const dbg = { v: 2, ligasNoStore: Object.keys(store), porLiga: {} };
+      for (const liga of Object.keys(store)) {
+        const d = store[liga];
+        const evs = (d && d[mkt]) || [];
+        dbg.porLiga[liga] = { nGames: d && d.games ? d.games.length : 0, tipoDmkt: typeof (d && d[mkt]), nEvs: Array.isArray(evs) ? evs.length : -1,
+          chavesPrimeiro: Array.isArray(evs) && evs[0] ? Object.keys(evs[0]).slice(0, 14) : null };
+      }
+      return res.json(dbg);
+    }
     dicasCache[mkt] = { ts: now, out };
     res.json(out);
   } catch (e) { res.status(500).json({ erro: e.message }); }
