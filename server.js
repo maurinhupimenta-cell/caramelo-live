@@ -1390,10 +1390,18 @@ app.get("/api/dicas", (req, res) => {
       const rel = Math.round(cur / base * 100);
       const evs = (d.upcoming && d.upcoming[mkt]) || []; // avaliacoes prontas no store (aninhadas em upcoming)
       if (!Array.isArray(evs) || !evs.length) continue;
+      // rank da rodada dentro da liga (1o = maior score)
+      const porScore = evs.filter(p => p.score != null).slice().sort((a, b) => b.score - a.score);
+      const rankDe = {}; porScore.forEach((p, i) => rankDe[p.nome] = i + 1);
       for (const p of evs) {
         if (p.odd == null || p.ev == null) continue;
+        const rank = rankDe[p.nome] || null;
+        const anc = d.ancoras && d.ancoras[p.nome] ? (d.ancoras[p.nome].nivel || "SIM") : null;
+        const veto = /CONTRA|TOPO/i.test(p.motivo || "");
         const grade = (rel < 60 && p.ev > 0) ? "entrada" : ((rel < 75 && p.ev > 0) || (rel < 60 && p.ev > -3)) ? "observar" : "aguardar";
-        tudo.push({ liga, rel, pagando: cur, base: Math.round(base * 10) / 10, h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev, grade, nota: (100 - rel) * 2 + p.ev });
+        // NOTA = o modelo na ordem: ZONA (peso dominante) > PRECO > rank/ancora/motivo (desempate)
+        const nota = (100 - rel) * 2 + p.ev + (rank === 1 ? 12 : rank === 2 ? 6 : 0) + (anc ? (String(anc).includes("FORTE") ? 12 : 8) : 0) - (veto ? 10 : 0);
+        tudo.push({ liga, rel, pagando: cur, base: Math.round(base * 10) / 10, h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev, rank, anc, veto, grade, nota });
       }
     }
     tudo.sort((a, b) => b.nota - a.nota);
