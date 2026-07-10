@@ -922,7 +922,7 @@ function buildStore(liga, games, upcoming, lastUpdated) {
       // Total Gols (FT): nao e aposta sim/nao, entao mostra so o jogo (sem EV/score)
       totft: upcoming.map(u => ({ nome: u.nome, horario: u.horario, casa: u.casa, fora: u.fora, semEV: true }))
     },
-    ultimos: games.slice(-10).map(g => ({ nome: g.nome, placar: g.a + "-" + g.b, total: g.total })),
+    ultimos: games.slice(-20).map(g => ({ nome: g.nome, placar: g.a + "-" + g.b, total: g.total })),
     ancoras
   };
 }
@@ -1365,6 +1365,41 @@ app.get("/api/relatorio/:liga", (req, res) => {
       return { data, ...r, delta };
     });
     res.json({ liga, dias: lista, aviso: "datas inferidas pela virada de horário; acumulado zera quando o servidor reinicia" });
+  } catch (e) { res.status(500).json({ erro: e.message }); }
+});
+
+// ===== DICAS: 3 melhores do quadro (todas as ligas) para o mercado, com carimbo honesto =====
+const dicasCache = {};
+app.get("/api/dicas", (req, res) => {
+  try {
+    const mkt = req.query.mkt || "o35";
+    if (mkt === "totft") return res.json([]);
+    const now = Date.now();
+    if (dicasCache[mkt] && now - dicasCache[mkt].ts < 15000) return res.json(dicasCache[mkt].out);
+    const tudo = [];
+    for (const liga of Object.keys(store)) {
+      const d = store[liga];
+      if (!d || !d.games || d.games.length < 60 || !d.upcoming || !d.upcoming.length) continue;
+      const games = d.games;
+      const base = games.filter(g => pays(g, mkt)).length / games.length * 100;
+      if (!base) continue;
+      const JR = Math.max(2, Math.min(20, games.length));
+      const sf = chartSeries(games, mkt, JR);
+      const cur = sf.length ? sf[sf.length - 1] : null;
+      if (cur == null) continue;
+      const rel = Math.round(cur / base * 100);
+      let evs = [];
+      try { evs = fullEvalUpcoming(d.upcoming, games, mkt) || []; } catch (e) {}
+      for (const p of evs) {
+        if (p.odd == null || p.ev == null) continue;
+        const grade = (rel < 60 && p.ev > 0) ? "entrada" : ((rel < 75 && p.ev > 0) || (rel < 60 && p.ev > -3)) ? "observar" : "aguardar";
+        tudo.push({ liga, rel, pagando: cur, base: Math.round(base * 10) / 10, h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev, grade, nota: (100 - rel) * 2 + p.ev });
+      }
+    }
+    tudo.sort((a, b) => b.nota - a.nota);
+    const out = tudo.slice(0, 3).map(({ nota, ...r }) => r);
+    dicasCache[mkt] = { ts: now, out };
+    res.json(out);
   } catch (e) { res.status(500).json({ erro: e.message }); }
 });
 

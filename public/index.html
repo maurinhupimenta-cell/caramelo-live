@@ -145,6 +145,24 @@ const ligaSel=$('#liga'), mktSel=$('#mkt'), qtdSel=$('#qtd');
 const nomeMkt={o35:'Over 3.5',ge5:'5+ gols',o25:'Over 2.5',ambas:'Ambas Marcam',totft:'Total Gols (FT)'};
 
 let _lastHash = "";
+async function carregaDicas(mkt){
+  const el=document.getElementById('dicasBox');
+  if(!el)return;
+  if(mkt==='totft'){el.innerHTML='';return;}
+  try{
+    const r=await fetch('/api/dicas?mkt='+mkt,{cache:'no-store'});
+    if(!r.ok)return;
+    const ds=await r.json();
+    if(mkt!==mktSel.value)return; // trocou de mercado no meio — descarta
+    if(!Array.isArray(ds)||!ds.length){el.innerHTML='';return;}
+    const B={entrada:['🟢 ENTRADA','#3fb950','seca + preço a favor'],observar:['🟡 OBSERVAR','#d29922','quase no padrão'],aguardar:['🔴 AGUARDAR','#f85149','fora do padrão']};
+    el.innerHTML=`<div class="sec">🎯 Dicas do quadro — 3 melhores das 4 ligas</div>`+ds.map(d=>{
+      const b=B[d.grade]||B.aguardar;
+      const mot=d.grade==='aguardar'?(d.rel>=75?`zona ${d.rel}%`:`EV ${d.ev>0?'+':''}${d.ev}%`):b[2];
+      return `<div class="card" style="border-left:3px solid ${b[1]}"><div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px"><div><b style="color:${b[1]};font-size:12px">${b[0]}</b> <span class="note" style="font-size:11px">(${mot})</span></div><span class="note" style="font-size:11px">${nomeLiga[d.liga]||d.liga} · zona ${d.rel}% do normal</span></div><div style="margin-top:4px;font-size:14px"><b>${d.h?d.h+' · ':''}${d.jogo}</b></div><div style="margin-top:2px;font-size:12px">odd <b>@${d.odd}</b> · justa ${d.justa} · EV <b style="color:${d.ev>0?'var(--greenb)':'var(--red)'}">${d.ev>0?'+':''}${d.ev}%</b></div></div>`;
+    }).join('')+`<div class="note" style="font-size:11px;margin:2px 0 10px">🟢 = padrão completo (zona &lt;60% + EV+). Estatística do histórico, não certeza — unidade de 1% da banca.</div>`;
+  }catch(e){}
+}
 async function tick(){
   const liga=ligaSel.value, mkt=mktSel.value, qtd=qtdSel.value;
   try{
@@ -157,7 +175,8 @@ async function tick(){
     if(d.erro){ $('#liveinfo').textContent='aguardando dados...'; return; }
     // so re-renderiza se os dados mudaram (evita travar reconstruindo tudo a cada 10s)
     const hash=JSON.stringify({u:d.lastUpdated,n:(d.proximos||[]).length,s:d.analise&&d.analise.serie,cr:d.curvaReal,m:mkt,l:liga,q:qtd});
-    if(hash!==_lastHash){ _lastHash=hash; render(d); }
+    if(hash!==_lastHash){ _lastHash=hash; render(d);
+    carregaDicas(mkt); }
     const upd=d.lastUpdated?new Date(d.lastUpdated):null;
     $('#liveinfo').textContent='ao vivo • atualizado '+(upd?upd.toLocaleTimeString('pt-BR'):'agora');
   }catch(e){ $('#liveinfo').textContent='erro de conexao'; }
@@ -455,7 +474,10 @@ function render(d){
   const sigHuman=s=>s.split('').map(c=>c==='1'?'✓':'·').join(' ');
   const sigAtual=a.atual||{sig:'',n:0,p:0};
   const sigHtml=a.signatures.map(s=>`<tr><td>${sigHuman(s.sig)}</td><td>${s.n}</td><td>${s.paid}</td><td class="${s.p>=a.base?'pos':''}">${s.p}%</td></tr>`).join('');
-  const ultimos=d.ultimos.map(u=>`${u.placar} (${u.total})`).join(' &nbsp;·&nbsp; ');
+  const _pu=u=>{const _p=(u.placar||'').split('-').map(Number);return mkt==='o25'?u.total>=3:mkt==='o35'?u.total>=4:mkt==='ge5'?u.total>=5:mkt==='ambas'?(_p[0]>0&&_p[1]>0):null;};
+  const _ul=(d.ultimos||[]).slice().reverse();
+  const _gc=_ul.filter(u=>_pu(u)===true).length;
+  const ultimos=`<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap"><b style="font-size:13px">📜 Últimos ${_ul.length} jogos <span class="note">(mais recente primeiro)</span></b>${mkt!=='totft'?`<span style="font-size:12px"><b style="color:var(--greenb)">${_gc} 🟢</b> · <b style="color:var(--red)">${_ul.length-_gc} 🔴</b></span>`:''}</div><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));gap:6px">${_ul.map((u,i)=>{const pg=_pu(u);return `<div style="background:#161b22;border-left:3px solid ${pg===true?'#3fb950':pg===false?'#f85149':'#30363d'};border-radius:6px;padding:6px 8px;font-size:12px">${(u.nome||'').replace(' x ',` <b style="color:${pg===true?'#3fb950':'#e6edf3'}">${u.placar}</b> `)}${i===0?`<div style="color:#58a6ff;font-size:9px;font-weight:700">＋ recente</div>`:''}</div>`;}).join('')}</div>`;
 
   const _cur=(a.serie&&a.serie.length)?a.serie[a.serie.length-1]:null;
   const _rel=(!a.ehTotalGols&&_cur!=null&&a.base)?Math.round(_cur/a.base*100):null;
@@ -491,6 +513,7 @@ function render(d){
       <div class="hint" style="margin-top:10px">Quando as três janelas apontam pro mesmo lado, o sinal é forte. <b style="color:${a.confluencia&&/forte/.test(a.confluencia.confluencia)?'var(--greenb)':'var(--muted)'}">${a.confluencia?a.confluencia.confluencia:'—'}</b></div>
     </div>
 
+    <div id="dicasBox"></div>
     <div class="sec">Próximos jogos — ${nomeMkt[mkt]} <span style="color:${lsCor};font-size:13px">• Liga: ${ls.label||'—'}</span></div>
     ${prox||'<div class="card">aguardando próximos jogos...</div>'}
 
