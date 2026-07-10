@@ -98,6 +98,47 @@ Acende quando o selo cruza <b>abaixo de 60%</b> — é a única notificação qu
 <div id="radar"></div>
 <div id="conteudo"></div>
 
+<details style="max-width:1100px;margin:26px auto 40px;background:#11161f;border:1px solid #223;border-radius:12px;padding:0 18px">
+<summary style="cursor:pointer;padding:14px 0;font-weight:800;font-size:15px;color:#58a6ff">❓ Como funciona — de onde vem cada número</summary>
+<div style="padding:4px 0 18px;font-size:13px;line-height:1.65;color:#c7d0da">
+
+<p style="color:#8b98a8">O site tem <b style="color:#e6edf3">duas máquinas independentes</b>: uma mede o <b style="color:#58a6ff">MOMENTO da liga</b> (quando vale a pena olhar) e outra mede o <b style="color:#3fb950">PREÇO de cada jogo</b> (se a odd oferecida vale a chance real). As duas precisam aprovar.</p>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0">
+<div style="background:#0d1117;border:1px solid #1f6feb44;border-radius:10px;padding:14px">
+<div style="font-weight:800;color:#58a6ff;margin-bottom:8px">🌡️ Máquina do MOMENTO</div>
+<div><b>Pagando</b> = o último ponto do gráfico: de cada 100 dos últimos 20 jogos, quantos pagaram o mercado.</div>
+<div style="margin-top:6px"><b>Normal</b> = o cartão "% QUE PAGA": a média do histórico inteiro da liga (~1200 jogos).</div>
+<div style="margin-top:6px"><b>Selo 🌡️</b> = pagando ÷ normal × 100. Ex.: pagando 15, normal 26 → <b>57% do normal</b>.</div>
+<div style="margin-top:6px"><b>Chip 📉 + notificação</b> = acende quando o selo cruza <b>abaixo de 60%</b> (seca forte) e <b>apaga no primeiro green</b>. A fita 🟢🔴 mostra os últimos 6 jogos.</div>
+</div>
+<div style="background:#0d1117;border:1px solid #23863644;border-radius:10px;padding:14px">
+<div style="font-weight:800;color:#3fb950;margin-bottom:8px">💰 Máquina do PREÇO</div>
+<div><b>Chance real</b> = calculada do histórico (times, faixa da odd, liga). Ex.: 26.4%.</div>
+<div style="margin-top:6px"><b>Odd justa</b> = 100 ÷ chance real. Ex.: 100 ÷ 26.4 = <b>3.79</b> — a odd "honesta".</div>
+<div style="margin-top:6px"><b>EV</b> = chance × odd − 100. Ex.: casa pagando 4.50 → 26.4 × 4.50 − 100 = <b>+18.6%</b> (a casa pagando acima do justo). EV negativo = a casa cobrando caro: não se entra, nunca.</div>
+</div>
+</div>
+
+<div style="background:#0d1117;border:1px solid #223;border-radius:10px;padding:14px;margin:0 0 14px">
+<div style="font-weight:800;color:#e6edf3;margin-bottom:8px">📋 O ritual de leitura (4 perguntas, nessa ordem)</div>
+<div>1️⃣ <b>Zona?</b> Selo azul (&lt;60% do normal)? Se não, PARE aqui — número bonito em zona errada é armadilha.</div>
+<div>2️⃣ <b>Preço?</b> EV positivo e odd acima da justa? Se não, PARE — zona boa com preço ruim continua aposta ruim.</div>
+<div>3️⃣ <b>Qual?</b> Entre os aprovados: melhor rank 🏆 da rodada, âncora ⚓, ciclo cobrando.</div>
+<div>4️⃣ <b>Chip vivo?</b> Confira o 📉 no segundo do clique. Apagou = alguém pagou = janela consumida.</div>
+</div>
+
+<div style="background:#0d1117;border:1px solid #223;border-radius:10px;padding:14px">
+<div style="font-weight:800;color:#e6edf3;margin-bottom:8px">🚪 Regras de saída</div>
+<div>• <b>Green em qualquer tiro = ciclo encerrado.</b> O primeiro pagamento consome a janela — não se emenda.</div>
+<div>• Gale é sempre no <b>próximo jogo VÁLIDO</b> (EV+ com chip aceso), nunca no próximo jogo qualquer. Máximo 2 gales.</div>
+<div>• Unidade sugerida: 1% da banca (ciclo completo 1-2-4 = 7% no pior caso).</div>
+</div>
+
+<p style="color:#8b98a8;margin-top:14px;font-size:12px">⚠️ Transparência: os números acima são estatísticas do histórico — indicam probabilidade, nunca certeza. Mesmo a melhor entrada perde com frequência; a gestão de banca é o que mantém você no jogo. Isto não é promessa de lucro.</p>
+</div>
+</details>
+
 <script>
 const $=s=>document.querySelector(s);
 const ligaSel=$('#liga'), mktSel=$('#mkt'), qtdSel=$('#qtd');
