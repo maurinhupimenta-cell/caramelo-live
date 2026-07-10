@@ -49,9 +49,52 @@
   <select id="qtd"><option>20</option><option>40</option><option>60</option><option>80</option><option>100</option><option>120</option><option>240</option></select>
   <button id="somBtn" style="font-size:12px;padding:6px 12px;border-radius:8px;border:1px solid var(--line);background:#1c2333;color:#e8edf4;cursor:pointer">🔔 Ativar som</button>
   <button id="notifBtn" style="font-size:12px;padding:6px 12px;border-radius:8px;border:1px solid var(--line);background:#1c2333;color:#e8edf4;cursor:pointer">�🖥️ Notificações</button>
+  <button onclick="document.getElementById('comoFunciona').style.display='flex'" style="font-size:12px;padding:6px 12px;border-radius:8px;border:1px solid var(--line);background:#1c2333;color:#e8edf4;cursor:pointer">📖 Como funciona</button>
   <span class="live"><span class="dot"></span><span id="liveinfo">conectando...</span></span>
 </div>
 
+
+<div id="comoFunciona" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:99;align-items:flex-start;justify-content:center;overflow:auto;padding:24px 12px" onclick="if(event.target===this)this.style.display='none'">
+<div style="max-width:680px;width:100%;background:#11151f;border:1px solid var(--line);border-radius:14px;padding:22px 24px;position:relative">
+<button onclick="document.getElementById('comoFunciona').style.display='none'" style="position:absolute;top:12px;right:14px;background:none;border:none;color:#8b98a8;font-size:20px;cursor:pointer">✕</button>
+<h2 style="margin:0 0 4px 0;font-size:19px">📖 Como funciona a AMD Live</h2>
+<div class="note" style="margin-bottom:16px">Onde mora cada número da tela e como ele é calculado.</div>
+
+<div style="display:grid;gap:12px;font-size:13px;line-height:1.55">
+<div style="background:#161c28;border:1px solid var(--line);border-radius:10px;padding:12px 14px">
+<b style="color:#58a6ff">1 · 🌡️ Selo de temperatura</b> (topo da tela)<br>
+<b>selo = pagando ÷ normal × 100</b>. Ex.: pagando 15 numa liga cujo normal é 26 → <b>57% do normal</b>.<br>
+🔵 <b>Abaixo de 60%</b> = seca fria, a ZONA DE OPERAÇÃO · ⚪ 60–115% = neutro, aguarde · 🔴 acima de 115% = quente, não opere.</div>
+
+<div style="background:#161c28;border:1px solid var(--line);border-radius:10px;padding:12px 14px">
+<b style="color:#58a6ff">2 · "Pagando"</b> (último ponto do gráfico)<br>
+A % de jogos que pagaram o mercado <b>nos últimos 20 jogos</b>. É o AGORA da liga. Cada bolinha da curva é essa conta numa janela que anda jogo a jogo.</div>
+
+<div style="background:#161c28;border:1px solid var(--line);border-radius:10px;padding:12px 14px">
+<b style="color:#58a6ff">3 · "Normal"</b> (cartão "% QUE PAGA")<br>
+A média do <b>histórico inteiro</b> da liga (centenas de jogos). É o DE SEMPRE — o contrato que a máquina mantém e para onde ela sempre volta.</div>
+
+<div style="background:#161c28;border:1px solid var(--line);border-radius:10px;padding:12px 14px">
+<b style="color:#58a6ff">4 · 🟢🔴 Fita</b> (no chip do radar)<br>
+Os últimos 6 jogos, um a um. Direita = mais recente. É a prova visual da seca ou da rajada.</div>
+
+<div style="background:#161c28;border:1px solid var(--line);border-radius:10px;padding:12px 14px">
+<b style="color:#58a6ff">5 · 💰 Odd justa e EV</b> (no card de cada jogo)<br>
+O servidor calcula a <b>chance real</b> do jogo (histórico dos times + faixa da odd + liga). Daí:<br>
+<b>justa = 100 ÷ chance</b> → ex.: chance 26.4% → justa 3.79.<br>
+<b>EV = chance × odd − 100</b> → odd 4.50: 26.4 × 4.50 − 100 = <b>+18.6%</b> (a casa pagando acima do que vale = valor a seu favor). EV negativo = a casa cobrando caro — não importa o resto do card.</div>
+
+<div style="background:#161c28;border:1px solid var(--line);border-radius:10px;padding:12px 14px">
+<b style="color:#58a6ff">6 · 📉 Chip de mínima</b> (radar + notificação)<br>
+Acende quando o selo cruza <b>abaixo de 60%</b> — é a única notificação que interrompe você, porque é a única zona com vantagem medida. <b>Apaga sozinho no primeiro green</b>: chip aceso = janela ainda aberta; apagou = acabou.</div>
+
+<div style="background:rgba(88,166,255,.08);border:1px solid #58a6ff;border-radius:10px;padding:12px 14px">
+<b style="color:#58a6ff">O método em 4 perguntas</b> (antes de qualquer entrada)<br>
+<b>1. Zona?</b> Selo azul (&lt;60%). <b>2. Preço?</b> EV positivo com odd acima da justa. <b>3. Qual?</b> Desempate por rank 🏆, âncora ⚓ e ciclo. <b>4. Chip aceso?</b> Confirma no segundo do clique.<br><br>
+<b>Saídas:</b> green em qualquer tiro = ciclo encerrado (não emende) · chip apagou = janela fechou · máximo 2 gales, nunca o 3º · unidade de 1% da banca.<br><br>
+<span class="note">Nada aqui é promessa de lucro: a zona azul historicamente elevou a chance do próximo jogo, mas a maioria dos tiros individuais ainda perde — a vantagem aparece na repetição disciplinada, e resultados passados não garantem futuros.</span></div>
+</div>
+</div></div>
 <div id="radar"></div>
 <div id="conteudo"></div>
 
