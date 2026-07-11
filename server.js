@@ -1384,7 +1384,7 @@ app.get("/api/robo", (req, res) => {
       const cur = sf.length ? sf[sf.length - 1] : null;
       if (cur == null) continue;
       const rel = Math.round(cur / base * 100);
-      if (rel >= 60) continue; // robo so aparece com zona azul
+      if (rel >= 140) continue; // MODO TESTE temporario (o corte real e 60) — reverter apos o usuario ver a caixa
       if (melhor && rel >= melhor.rel) continue;
       const evs = (d.upcoming && d.upcoming[mkt]) || [];
       const degraus = [], pulados = [];
@@ -1395,7 +1395,7 @@ app.get("/api/robo", (req, res) => {
         if (p.ev > 0) degraus.push({ papel: papeis[degraus.length], unidades: [1, 2, 4][degraus.length], h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev });
         else if (pulados.length < 4) pulados.push({ h: p.horario || "", jogo: p.nome, odd: p.odd, ev: p.ev });
       }
-      melhor = { liga, rel, pagando: cur, base: Math.round(base * 10) / 10, degraus, pulados };
+      melhor = { liga, rel, pagando: cur, base: Math.round(base * 10) / 10, degraus, pulados, teste: rel >= 60 };
     }
     res.json(melhor || {});
   } catch (e) { res.status(500).json({ erro: e.message }); }
