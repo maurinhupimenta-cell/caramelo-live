@@ -1695,7 +1695,7 @@ app.get("/api/ltbtest/:liga", (req, res) => {
 // ===== RADAR GLOBAL: minima/subida em TODAS as ligas+mercados (nao altera analises) =====
 // Le o sinal ja calculado em s.computed (zero recalculo). Na TRANSICAO (entrou no fundo /
 // virou subida) manda aviso via SSE com liga+mercado; quando a condicao acaba, sai do painel.
-const RADAR_MKTS = ["o25", "o35", "ge5", "ambas", "u25", "u15"];
+const RADAR_MKTS = ["o25", "o35", "ge5", "ambas"]; // unders FORA do radar/FIGHT por decisao do usuario (so consulta)
 const radarEstado = {}; // liga|mkt -> {fundo, sobe}
 const radarAtivos = {}; // liga|mkt|tipo -> info (painel do momento)
 const radarUltimoAviso = {}; // liga|mkt|tipo -> ts (nao repete o mesmo aviso em <30min)
