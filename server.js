@@ -1384,7 +1384,7 @@ app.get("/api/robo", (req, res) => {
       const cur = sf.length ? sf[sf.length - 1] : null;
       if (cur == null) continue;
       const rel = Math.round(cur / base * 100);
-      if (rel >= 140) continue; // MODO TESTE temporario (o corte real e 60) — reverter apos o usuario ver a caixa
+      if (rel >= 60) continue; // robo so aparece com ZONA AZUL de verdade (<60% do normal)
       if (melhor && rel >= melhor.rel) continue;
       const evs = (d.upcoming && d.upcoming[mkt]) || [];
       const degraus = [], pulados = [];
