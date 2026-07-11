@@ -513,6 +513,9 @@ function render(d){
   const _pu=u=>{const _p=(u.placar||'').split('-').map(Number);return mkt==='o25'?u.total>=3:mkt==='o35'?u.total>=4:mkt==='ge5'?u.total>=5:mkt==='ambas'?(_p[0]>0&&_p[1]>0):mkt==='u05'?u.total<=0:mkt==='u15'?u.total<=1:mkt==='u25'?u.total<=2:null;};
   const _ul=(d.ultimos||[]).slice().reverse();
   const _gc=_ul.filter(u=>_pu(u)===true).length;
+  const _mx=d.maximas;
+  const _tdS='padding:4px 8px;border-bottom:1px solid #1c2430;text-align:center';
+  const maximasHtml=_mx?`<div style="margin-top:14px"><b style="font-size:13px">📏 Máxima de reds seguidos <span class="note">(maior pulo sem pagar por janela · dimensiona o gale)</span></b><table style="width:100%;margin-top:6px;font-size:12px;border-collapse:collapse"><tr style="color:#8b98a8"><td style="${_tdS};text-align:left">mercado</td><td style="${_tdS}">3h</td><td style="${_tdS}">6h</td><td style="${_tdS}">12h</td><td style="${_tdS}">24h</td><td style="${_tdS}">seca atual</td></tr>${['o25','o35','ambas','ge5'].map(m=>{const r=_mx[m];if(!r)return '';const on=m===mkt;return `<tr style="${on?'color:#58a6ff;font-weight:700':'color:#c7d0da'}"><td style="${_tdS};text-align:left">${nomeMkt[m]}${on?' ◀':''}</td><td style="${_tdS}">${r.h3}</td><td style="${_tdS}">${r.h6}</td><td style="${_tdS}">${r.h12}</td><td style="${_tdS}">${r.h24}</td><td style="${_tdS};font-weight:800;color:${r.agora>=r.h24?'var(--amber)':'inherit'}">${r.agora}</td></tr>`;}).join('')}</table></div>`:'';
   const ultimos=`<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap"><b style="font-size:13px">📜 Últimos ${_ul.length} jogos <span class="note">(mais recente primeiro)</span></b>${mkt!=='totft'?`<span style="font-size:12px"><b style="color:var(--greenb)">${_gc} 🟢</b> · <b style="color:var(--red)">${_ul.length-_gc} 🔴</b></span>`:''}</div><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));gap:6px">${_ul.map((u,i)=>{const pg=_pu(u);return `<div style="background:#161b22;border-left:3px solid ${pg===true?'#3fb950':pg===false?'#f85149':'#30363d'};border-radius:6px;padding:6px 8px;font-size:12px">${(u.nome||'').replace(' x ',` <b style="color:${pg===true?'#3fb950':'#e6edf3'}">${u.placar}</b> `)}${i===0?`<div style="color:#58a6ff;font-size:9px;font-weight:700">＋ recente</div>`:''}</div>`;}).join('')}</div>`;
 
   const _cur=(a.pagandoTempoReal!=null)?a.pagandoTempoReal:((a.serie&&a.serie.length)?a.serie[a.serie.length-1]:null);
@@ -573,7 +576,7 @@ function render(d){
       <div class="hint">120 verde e acima das longas = ${nomeMkt[mkt]} esquentando.</div></div>
 
     <div class="sec">Últimos resultados</div>
-    <div class="card"><div style="font-size:13px">${ultimos}</div></div>
+    <div class="card"><div style="font-size:13px">${ultimos}${maximasHtml}</div></div>
 
     <div class="sec">Ranking de odds — onde a base paga mais que a odd embute</div>
     <table><thead><tr><th>Odd</th><th>Acertos</th><th>% base</th><th>Odd justa</th><th>EV</th><th>Veredito</th></tr></thead><tbody>${rankHtml}</tbody></table>
@@ -589,7 +592,7 @@ function render(d){
       <div class="card"><h3>Média de gols</h3><div class="big pos">${a.mediaGols}</div><div class="note">por jogo (FT)</div></div>
     </div>
     <div class="sec">Últimos resultados</div>
-    <div class="card"><div style="font-size:13px">${ultimos}</div></div>
+    <div class="card"><div style="font-size:13px">${ultimos}${maximasHtml}</div></div>
     `}
   `;
   if(!a.ehTotalGols)carregaBacktest(d.liga,mkt); // async: preenche #btSec sem travar a tela
