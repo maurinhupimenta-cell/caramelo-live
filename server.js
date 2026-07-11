@@ -996,6 +996,22 @@ function completaOdds(o) {
   return odds;
 }
 
+// MAXIMAS DE REDS: maior corda de nao-pagamento por janela de tempo (~3min/jogo) + seca atual
+function maximasReds(gamesArr, mkt) {
+  const janelas = { h3: 60, h6: 120, h12: 240, h24: 480 };
+  const out = {};
+  for (const [k, n] of Object.entries(janelas)) {
+    const g = gamesArr.slice(-n);
+    let mx = 0, run = 0;
+    for (const x of g) { if (!pays(x, mkt)) { run++; if (run > mx) mx = run; } else run = 0; }
+    out[k] = mx;
+  }
+  let agora = 0;
+  for (let i = gamesArr.length - 1; i >= 0; i--) { if (!pays(gamesArr[i], mkt)) agora++; else break; }
+  out.agora = agora;
+  return out;
+}
+
 function decodeSnapshot(data) {
   const cells = (data && data.cells) || [];
   const passados = [], futuros = [];
@@ -1244,6 +1260,9 @@ app.get("/api/liga/:liga", (req, res) => {
   } catch (e) {}
   const tend = trendLines(analise.serie || []);
   analise = { ...analise, trend: tend };
+  const _gM = d.gamesAll || d.games || [];
+  const maximas = {};
+  for (const _mm of ["o25", "o35", "ambas", "ge5"]) maximas[_mm] = maximasReds(_gM, _mm);
 
   // se os dados vieram da SONDA (placares reais ao vivo), a curva calculada e EXATA
   // pra qualquer mercado — marca como real mesmo sem curva capturada desse mercado
@@ -1293,6 +1312,7 @@ app.get("/api/liga/:liga", (req, res) => {
     lastUpdated: d.lastUpdated,
     fetchedAt: d.fetchedAt,
     analise,
+    maximas,
     proximos,
     rankTimes,
     ultimos: d.ultimos,
