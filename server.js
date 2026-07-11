@@ -200,6 +200,16 @@ function parseOdds(s) {
   deriveOver("u15", "o15");
   deriveOver("u25", "o25");
   deriveOver("u35", "o35");
+  // e o caminho inverso: deriva UNDER quando so veio o OVER (mercados complementares)
+  const deriveUnder = (oKey, uKey) => {
+    if (odds[uKey] == null && odds[oKey] != null && odds[oKey] > 1) {
+      const pOver = 1 / odds[oKey];
+      const pUnder = 1 - pOver;
+      if (pUnder > 0.01) odds[uKey] = +(1 / pUnder).toFixed(2);
+    }
+  };
+  deriveUnder("o15", "u15");
+  deriveUnder("o25", "u25");
   // ambas sim a partir de ambas nao
   if (odds.ambs == null && odds.ambn != null && odds.ambn > 1) {
     const pNao = 1 / odds.ambn, pSim = 1 - pNao;
@@ -259,6 +269,9 @@ function pays(g, mkt) {
   if (mkt === "o35") return g.total >= 4;
   if (mkt === "ge5") return g.total >= 5;
   if (mkt === "ambas") return g.a > 0 && g.b > 0;
+  if (mkt === "u05") return g.total <= 0;
+  if (mkt === "u15") return g.total <= 1;
+  if (mkt === "u25") return g.total <= 2;
   return false;
 }
 
@@ -912,6 +925,9 @@ function buildStore(liga, games, upcoming, lastUpdated) {
       ge5: computeMarket(games, "ge5"),
       o25: computeMarket(games, "o25"),
       ambas: computeMarket(games, "ambas"),
+      u25: computeMarket(games, "u25"),
+      u15: computeMarket(games, "u15"),
+      u05: computeMarket(games, "u05"),
       totft: computeMarket(games, "totft")
     },
     upcoming: {
@@ -919,6 +935,9 @@ function buildStore(liga, games, upcoming, lastUpdated) {
       ge5: brainEval(games, upcoming, liga, "ge5") || fullEvalUpcoming(upcoming, games, "ge5"),
       o25: brainEval(games, upcoming, liga, "o25") || fullEvalUpcoming(upcoming, games, "o25"),
       ambas: brainEval(games, upcoming, liga, "ambas") || fullEvalUpcoming(upcoming, games, "ambas"),
+      u25: fullEvalUpcoming(upcoming, games, "u25"),
+      u15: fullEvalUpcoming(upcoming, games, "u15"),
+      u05: fullEvalUpcoming(upcoming, games, "u05"),
       // Total Gols (FT): nao e aposta sim/nao, entao mostra so o jogo (sem EV/score)
       totft: upcoming.map(u => ({ nome: u.nome, horario: u.horario, casa: u.casa, fora: u.fora, semEV: true }))
     },
@@ -1662,7 +1681,7 @@ app.get("/api/ltbtest/:liga", (req, res) => {
 // ===== RADAR GLOBAL: minima/subida em TODAS as ligas+mercados (nao altera analises) =====
 // Le o sinal ja calculado em s.computed (zero recalculo). Na TRANSICAO (entrou no fundo /
 // virou subida) manda aviso via SSE com liga+mercado; quando a condicao acaba, sai do painel.
-const RADAR_MKTS = ["o25", "o35", "ge5", "ambas"];
+const RADAR_MKTS = ["o25", "o35", "ge5", "ambas", "u25", "u15"];
 const radarEstado = {}; // liga|mkt -> {fundo, sobe}
 const radarAtivos = {}; // liga|mkt|tipo -> info (painel do momento)
 const radarUltimoAviso = {}; // liga|mkt|tipo -> ts (nao repete o mesmo aviso em <30min)

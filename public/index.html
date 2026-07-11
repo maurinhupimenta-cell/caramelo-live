@@ -44,7 +44,7 @@
 
 <div class="bar">
   <select id="liga"><option value="euro">Euro</option><option value="copa">Copa</option><option value="super">Super</option><option value="premier">Premier</option></select>
-  <select id="mkt"><option value="o35">Over 3.5</option><option value="ge5">5+ gols</option><option value="o25">Over 2.5</option><option value="ambas">Ambas Marcam</option><option value="totft">Total Gols (FT)</option></select>
+  <select id="mkt"><option value="o35">Over 3.5</option><option value="ge5">5+ gols</option><option value="o25">Over 2.5</option><option value="ambas">Ambas Marcam</option><option value="u25">Under 2.5</option><option value="u15">Under 1.5</option><option value="u05">Under 0.5</option><option value="totft">Total Gols (FT)</option></select>
   <label style="font-size:12px;color:var(--muted)">Qtd. Jogos</label>
   <select id="qtd"><option>20</option><option>40</option><option>60</option><option>80</option><option>100</option><option>120</option><option>240</option></select>
   <button id="somBtn" style="font-size:12px;padding:6px 12px;border-radius:8px;border:1px solid var(--line);background:#1c2333;color:#e8edf4;cursor:pointer">🔔 Ativar som</button>
@@ -142,7 +142,7 @@ Acende quando o selo cruza <b>abaixo de 60%</b> — é a única notificação qu
 <script>
 const $=s=>document.querySelector(s);
 const ligaSel=$('#liga'), mktSel=$('#mkt'), qtdSel=$('#qtd');
-const nomeMkt={o35:'Over 3.5',ge5:'5+ gols',o25:'Over 2.5',ambas:'Ambas Marcam',totft:'Total Gols (FT)'};
+const nomeMkt={o35:'Over 3.5',ge5:'5+ gols',o25:'Over 2.5',ambas:'Ambas Marcam',u25:'Under 2.5',u15:'Under 1.5',u05:'Under 0.5',totft:'Total Gols (FT)'};
 
 let _lastHash = "";
 async function carregaRobo(){
@@ -285,7 +285,7 @@ function notificaRadar(a){
     localStorage.setItem(ch,ag);
   }catch(e){}
   const nomeL=nomeLiga[a.liga]||a.liga, nomeM=nomeMkt[a.mkt]||a.mkt;
-  const titulo=a.tipo==='minima'?`🥊 1, 2, 3... FIGHT! — ZONA DE OPERAÇÃO — ${nomeL} · ${nomeM}${a.rel!=null?` (${a.rel}% do normal)`:''}`:a.tipo==='ltb'?`💥 QUEBROU A LTB — ${nomeL} · ${nomeM}${a.pagando!=null?` — pagando ${a.pagando}%`:''}`:`📈 SUBINDO — ${nomeL} · ${nomeM}${a.deOnde!=null&&a.pagando!=null?` — ${a.deOnde}% → ${a.pagando}%`:''}`;
+  const titulo=(a.tipo==='minima'&&a.rel!=null&&a.rel<=60)?`🥊 1, 2, 3... FIGHT! — ZONA DE OPERAÇÃO — ${nomeL} · ${nomeM} (${a.rel}% do normal)`:a.tipo==='minima'?`📉 MÍNIMA — ${nomeL} · ${nomeM}${a.pagando!=null?` — pagando ${a.pagando}%`:''}`:a.tipo==='ltb'?`💥 QUEBROU A LTB — ${nomeL} · ${nomeM}${a.pagando!=null?` — pagando ${a.pagando}%`:''}`:`📈 SUBINDO — ${nomeL} · ${nomeM}${a.deOnde!=null&&a.pagando!=null?` — ${a.deOnde}% → ${a.pagando}%`:''}`;
   const corpo=(a.tipo==='minima'?'Mercado segurando — pagando abaixo do normal.':a.tipo==='ltb'?'Curva rompeu a linha de baixa pra cima — ciclo virando.':'Pagamento voltando agora.')+fitaTxt(a.fita);
   try{if('Notification' in window&&Notification.permission==='granted')new Notification(titulo,{body:corpo,tag:a.liga+'|'+a.mkt+'|'+a.tipo});}catch(e){}
   bipSeq(a.tipo==='minima'?[[600,0,0.14],[800,0.18,0.14],[1000,0.36,0.3]]:[[660,0,0.15],[990,0.18,0.2]]); // FIGHT = 3 bips crescentes
@@ -506,7 +506,7 @@ function render(d){
   const sigHuman=s=>s.split('').map(c=>c==='1'?'✓':'·').join(' ');
   const sigAtual=a.atual||{sig:'',n:0,p:0};
   const sigHtml=a.signatures.map(s=>`<tr><td>${sigHuman(s.sig)}</td><td>${s.n}</td><td>${s.paid}</td><td class="${s.p>=a.base?'pos':''}">${s.p}%</td></tr>`).join('');
-  const _pu=u=>{const _p=(u.placar||'').split('-').map(Number);return mkt==='o25'?u.total>=3:mkt==='o35'?u.total>=4:mkt==='ge5'?u.total>=5:mkt==='ambas'?(_p[0]>0&&_p[1]>0):null;};
+  const _pu=u=>{const _p=(u.placar||'').split('-').map(Number);return mkt==='o25'?u.total>=3:mkt==='o35'?u.total>=4:mkt==='ge5'?u.total>=5:mkt==='ambas'?(_p[0]>0&&_p[1]>0):mkt==='u05'?u.total<=0:mkt==='u15'?u.total<=1:mkt==='u25'?u.total<=2:null;};
   const _ul=(d.ultimos||[]).slice().reverse();
   const _gc=_ul.filter(u=>_pu(u)===true).length;
   const ultimos=`<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap"><b style="font-size:13px">📜 Últimos ${_ul.length} jogos <span class="note">(mais recente primeiro)</span></b>${mkt!=='totft'?`<span style="font-size:12px"><b style="color:var(--greenb)">${_gc} 🟢</b> · <b style="color:var(--red)">${_ul.length-_gc} 🔴</b></span>`:''}</div><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));gap:6px">${_ul.map((u,i)=>{const pg=_pu(u);return `<div style="background:#161b22;border-left:3px solid ${pg===true?'#3fb950':pg===false?'#f85149':'#30363d'};border-radius:6px;padding:6px 8px;font-size:12px">${(u.nome||'').replace(' x ',` <b style="color:${pg===true?'#3fb950':'#e6edf3'}">${u.placar}</b> `)}${i===0?`<div style="color:#58a6ff;font-size:9px;font-weight:700">＋ recente</div>`:''}</div>`;}).join('')}</div>`;
