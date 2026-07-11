@@ -517,7 +517,7 @@ function render(d){
     ?`<div style="padding:10px 16px;border-radius:10px;background:rgba(88,166,255,.15);border:2px solid #58a6ff;margin-bottom:10px;font-weight:800;color:#58a6ff;font-size:15px">🌡️ ${_rel}% do normal — 🔵 ZONA DE OPERAÇÃO (seca fria: pagando ${_cur}%, normal ${a.base}%)</div>`
     :_rel>115
     ?`<div style="padding:8px 14px;border-radius:10px;background:rgba(248,81,73,.10);border:1px solid var(--red);margin-bottom:10px;font-weight:700;color:var(--red);font-size:13px">🌡️ ${_rel}% do normal — 🔴 QUENTE, NÃO OPERAR (pagando ${_cur}%, normal ${a.base}%)</div>`
-    :`<div style="padding:8px 14px;border-radius:10px;background:#161c28;border:1px solid var(--line);margin-bottom:10px;color:#8b98a8;font-size:13px">🌡️ ${_rel}% do normal — neutro (pagando ${_cur}%, normal ${a.base}%) · zona de operação: abaixo de 60% · <span style="opacity:.75">selo em tempo real; gráfico com 2 jogos de atraso (fiel ao caramelo)</span></div>`);
+    :`<div style="padding:8px 14px;border-radius:10px;background:#161c28;border:1px solid var(--line);margin-bottom:10px;color:#8b98a8;font-size:13px">🌡️ ${_rel}% do normal — neutro (pagando ${_cur}%, normal ${a.base}%) · zona de operação: abaixo de 60% · <span style="opacity:.75">selo em tempo real; o gráfico atualiza com 2 jogos de atraso</span></div>`);
   $('#conteudo').innerHTML=`
     ${tempHtml}
     ${subidaHtml}
