@@ -1198,6 +1198,15 @@ app.get("/api/liga/:liga", (req, res) => {
   }
 
   // LINHAS DE TENDENCIA (LTA/LTB) + gatilho de rompimento, sobre a serie atual
+  // pagando em TEMPO REAL (sem o atraso de 2 jogos): o selo/zona operam com este;
+  // o grafico continua com drop-2, fiel ao caramelo
+  try {
+    const gAllTR = d.gamesAll || d.games || [];
+    if (gAllTR.length >= 2 && !analise.ehTotalGols) {
+      const sfTR = chartSeries(gAllTR, mkt, Math.max(2, Math.min(20, gAllTR.length)));
+      if (sfTR.length) analise.pagandoTempoReal = sfTR[sfTR.length - 1];
+    }
+  } catch (e) {}
   const tend = trendLines(analise.serie || []);
   analise = { ...analise, trend: tend };
 
@@ -1680,7 +1689,9 @@ function atualizaRadar(liga, s) {
       // Desarma no 1o GREEN (o edge cai apos o 1o pagamento — medido) e re-arma so apos
       // novo jogo sem pagar ainda na zona. Histerese de saida: >=85% do normal.
       const ultimoPagou = gAll.length ? pays(gAll[gAll.length - 1], mkt) : false;
-      const fundo = cur != null && c.base != null && !ultimoPagou &&
+      // mercados de base pequena (<15%, ex: 5+ gols) ficam FORA da minima: a janela de 20
+      // jogos pula dezenas de pontos com 1 jogo — "<60%" ali e ruido, nao seca
+      const fundo = cur != null && c.base != null && c.base >= 15 && !ultimoPagou &&
         (prev.fundo ? cur < c.base * 0.85 : cur <= c.base * 0.6);
       // SUBIDA SIMPLES: taxa subiu >=10 pontos nos ultimos 5 jogos (movimento real) e ainda
       // nao passou muito do normal (<=120%; chegar depois disso e atrasado).
