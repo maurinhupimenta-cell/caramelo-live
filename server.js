@@ -1407,7 +1407,15 @@ app.get("/api/dicas", (req, res) => {
     tudo.sort((a, b) => b.nota - a.nota);
     const out = tudo.slice(0, 3).map(({ nota, ...r }) => r);
     if (req.query.debug) {
-      const dbg = { v: 2, ligasNoStore: Object.keys(store), porLiga: {} };
+      const dbg = { v: 3, ligasNoStore: Object.keys(store), porLiga: {} };
+      // chaves de odds reais (pra descobrir se casa5+/fora5+ chegam no snapshot)
+      const dLiga = store[Object.keys(store)[0]];
+      if (dLiga) {
+        const gU = (dLiga.upcomingRaw || [])[0];
+        const gP = (dLiga.games || [])[dLiga.games.length - 1];
+        dbg.oddsKeysUpcoming = gU && gU.odds ? Object.keys(gU.odds) : null;
+        dbg.oddsKeysPassado = gP && gP.odds ? Object.keys(gP.odds) : null;
+      }
       for (const liga of Object.keys(store)) {
         const d = store[liga];
         const evs = (d && d.upcoming && d.upcoming[mkt]) || [];
