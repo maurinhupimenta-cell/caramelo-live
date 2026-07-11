@@ -1659,7 +1659,8 @@ const radarAtivos = {}; // liga|mkt|tipo -> info (painel do momento)
 const radarUltimoAviso = {}; // liga|mkt|tipo -> ts (nao repete o mesmo aviso em <30min)
 function podeAvisar(chave) {
   const ag = Date.now();
-  if (radarUltimoAviso[chave] && ag - radarUltimoAviso[chave] < 30 * 60000) return false;
+  const tregua = chave.endsWith("|minima") ? 60 * 60000 : 30 * 60000; // FIGHT: no maximo 1 por combo por hora
+  if (radarUltimoAviso[chave] && ag - radarUltimoAviso[chave] < tregua) return false;
   radarUltimoAviso[chave] = ag; return true;
 }
 function atualizaRadar(liga, s) {
