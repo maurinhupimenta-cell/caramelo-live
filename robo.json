@@ -1,10 +1,17 @@
 {
- "saldo": 0,
- "ciclos": 0,
+ "saldo": -1,
+ "ciclos": 1,
  "greens": 0,
  "redsCiclo": 0,
- "aborts": 0,
- "historico": [],
+ "aborts": 1,
+ "historico": [
+  {
+   "quando": "2026-07-11T17:40:45.149Z",
+   "resultado": "ABORT",
+   "unidades": -1,
+   "detalhe": "premier · janela fechou no meio do ciclo"
+  }
+ ],
  "cicloAberto": {
   "liga": "premier",
   "degrau": 1,
