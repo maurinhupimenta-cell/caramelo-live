@@ -982,6 +982,20 @@ import { WebSocket as WSClient } from "ws";
 const WS_URL = "wss://www.caramelotips.com.br/ws-dados";
 
 // converte o snapshot do caramelo nos games/upcoming que o servidor ja usa
+// completa odds complementares (over<->under, sem margem) no objeto que a sonda entrega pronto
+function completaOdds(o) {
+  const odds = { ...(o || {}) };
+  const deriva = (deKey, paraKey) => {
+    if (odds[paraKey] == null && odds[deKey] != null && odds[deKey] > 1) {
+      const p = 1 - 1 / odds[deKey];
+      if (p > 0.01) odds[paraKey] = +(1 / p).toFixed(2);
+    }
+  };
+  deriva("u15", "o15"); deriva("u25", "o25"); deriva("u35", "o35");
+  deriva("o15", "u15"); deriva("o25", "u25"); deriva("o35", "u35");
+  return odds;
+}
+
 function decodeSnapshot(data) {
   const cells = (data && data.cells) || [];
   const passados = [], futuros = [];
@@ -1007,7 +1021,7 @@ function decodeSnapshot(data) {
         nome,
         horario: horaJogo,
         casa: times.casa || "", fora: times.fora || "",
-        odds: { o25: o.o25, o35: o.o35, ge5: o.ge5, ambs: o.ambs }
+        odds: { o25: o.o25, o35: o.o35, ge5: o.ge5, ambs: o.ambs, u05: o.u05, u15: o.u15, u25: o.u25, o15: o.o15 }
       });
     } else if (ft && /^\d+-\d+$/.test(String(ft).trim())) {
       const m = String(ft).trim().match(/(\d+)-(\d+)/);
@@ -1016,7 +1030,7 @@ function decodeSnapshot(data) {
       passados.push({
         ordem, nome, a: +m[1], b: +m[2], total: +m[1] + +m[2],
         casa: times.casa || "", fora: times.fora || "", ht, horario: horaJogo,
-        odds: { o25: o.o25, o35: o.o35, ge5: o.ge5, ambs: o.ambs }
+        odds: { o25: o.o25, o35: o.o35, ge5: o.ge5, ambs: o.ambs, u05: o.u05, u15: o.u15, u25: o.u25, o15: o.o15 }
       });
     }
   }
@@ -1028,14 +1042,14 @@ function decodeSnapshot(data) {
   // e o historico cru pode passar de 4000 jogos (deixa o servidor lento sem necessidade).
   const mapa = g => ({
     nome: g.nome, a: g.a, b: g.b, total: g.total,
-    casa: g.casa, fora: g.fora, ht: g.ht, horario: g.horario || "", odds: g.odds || {}
+    casa: g.casa, fora: g.fora, ht: g.ht, horario: g.horario || "", odds: completaOdds(g.odds)
   });
   const games = passados.slice(0, -2).slice(-1200).map(mapa);
   // gamesAll: SEM o drop-2 (inclui os 2 jogos mais recentes) — usado SO pelo radar,
   // pra alertar no fechamento real (~6 min mais cedo). Grafico/analises seguem com drop-2.
   const gamesAll = passados.slice(-1200).map(mapa);
   const upcoming = futuros.slice(0, 6).map(u => ({
-    nome: u.nome, horario: u.horario, casa: u.casa, fora: u.fora, odds: u.odds
+    nome: u.nome, horario: u.horario, casa: u.casa, fora: u.fora, odds: completaOdds(u.odds)
   }));
   console.log(`decodeSnapshot: ${passados.length} passados → ${games.length} games, ${futuros.length} futuros → ${upcoming.length} upcoming`);
   return { games, upcoming, gamesAll };
