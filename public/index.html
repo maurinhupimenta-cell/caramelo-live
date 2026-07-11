@@ -145,6 +145,19 @@ const ligaSel=$('#liga'), mktSel=$('#mkt'), qtdSel=$('#qtd');
 const nomeMkt={o35:'Over 3.5',ge5:'5+ gols',o25:'Over 2.5',ambas:'Ambas Marcam',totft:'Total Gols (FT)'};
 
 let _lastHash = "";
+async function carregaRobo(){
+  const el=document.getElementById('roboBox');
+  if(!el)return;
+  try{
+    const r=await fetch('/api/robo',{cache:'no-store'});
+    if(!r.ok)return;
+    const b=await r.json();
+    if(!b||!b.liga){el.innerHTML='';return;}
+    const deg=(b.degraus||[]).map(d=>`<div style="display:inline-block;background:#0f2417;border:1px solid #3fb950;border-radius:8px;padding:6px 10px;margin:4px 6px 4px 0;font-size:12px"><b style="color:#3fb950">${d.papel} · ${d.unidades}u</b><br><b>${d.h?d.h+' · ':''}${d.jogo}</b><br>@${d.odd} (justa ${d.justa}) · EV <b style="color:var(--greenb)">+${d.ev}%</b></div>`).join('<span style="font-size:16px;color:#8b98a8;vertical-align:middle">→</span>');
+    const pul=(b.pulados||[]).length?`<div class="note" style="font-size:11px;margin-top:4px">degraus pulados (EV−): ${b.pulados.map(p=>`${p.h} ${p.jogo.split(' x ')[0]} (${p.ev}%)`).join(' · ')}</div>`:'';
+    el.innerHTML=`<div class="card" style="border:2px solid #3fb950;background:rgba(63,185,80,.06)"><div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px;align-items:center"><b style="font-size:14px">🤖 ROBÔ 2-GALE O3.5 — ${nomeLiga[b.liga]||b.liga}</b><span style="font-size:12px;color:#58a6ff;font-weight:700">🌡️ ${b.rel}% do normal (pagando ${b.pagando}%, normal ${b.base}%)</span></div><div style="margin-top:8px">${deg||'<span class="note">zona aberta, mas nenhum degrau com EV+ ainda — aguardando a casa destravar o preço</span>'}</div>${pul}<div class="note" style="font-size:11px;margin-top:6px">green em QUALQUER degrau = ciclo encerrado · nunca 3º gale · unidade sugerida: 1% da banca</div></div>`;
+  }catch(e){}
+}
 async function carregaDicas(mkt){
   const el=document.getElementById('dicasBox');
   if(!el)return;
@@ -178,7 +191,8 @@ async function tick(){
     // so re-renderiza se os dados mudaram (evita travar reconstruindo tudo a cada 10s)
     const hash=JSON.stringify({u:d.lastUpdated,n:(d.proximos||[]).length,s:d.analise&&d.analise.serie,cr:d.curvaReal,m:mkt,l:liga,q:qtd});
     if(hash!==_lastHash){ _lastHash=hash; render(d);
-    carregaDicas(mkt); }
+    carregaDicas(mkt);
+    carregaRobo(); }
     const upd=d.lastUpdated?new Date(d.lastUpdated):null;
     $('#liveinfo').textContent='ao vivo • atualizado '+(upd?upd.toLocaleTimeString('pt-BR'):'agora');
   }catch(e){ $('#liveinfo').textContent='erro de conexao'; }
@@ -255,10 +269,10 @@ function notificaRadar(a){
   // como contexto no painel (o estudo mediu: pagam igual a regua — nao merecem interromper)
   if(a.tipo!=='minima'&&!a.teste)return;
   const nomeL=nomeLiga[a.liga]||a.liga, nomeM=nomeMkt[a.mkt]||a.mkt;
-  const titulo=a.tipo==='minima'?`📉 MÍNIMA — ${nomeL} · ${nomeM}${a.pagando!=null?` — pagando ${a.pagando}%`:''}`:a.tipo==='ltb'?`💥 QUEBROU A LTB — ${nomeL} · ${nomeM}${a.pagando!=null?` — pagando ${a.pagando}%`:''}`:`📈 SUBINDO — ${nomeL} · ${nomeM}${a.deOnde!=null&&a.pagando!=null?` — ${a.deOnde}% → ${a.pagando}%`:''}`;
+  const titulo=a.tipo==='minima'?`🥊 1, 2, 3... FIGHT! — ZONA DE OPERAÇÃO — ${nomeL} · ${nomeM}${a.rel!=null?` (${a.rel}% do normal)`:''}`:a.tipo==='ltb'?`💥 QUEBROU A LTB — ${nomeL} · ${nomeM}${a.pagando!=null?` — pagando ${a.pagando}%`:''}`:`📈 SUBINDO — ${nomeL} · ${nomeM}${a.deOnde!=null&&a.pagando!=null?` — ${a.deOnde}% → ${a.pagando}%`:''}`;
   const corpo=(a.tipo==='minima'?'Mercado segurando — pagando abaixo do normal.':a.tipo==='ltb'?'Curva rompeu a linha de baixa pra cima — ciclo virando.':'Pagamento voltando agora.')+fitaTxt(a.fita);
   try{if('Notification' in window&&Notification.permission==='granted')new Notification(titulo,{body:corpo,tag:a.liga+'|'+a.mkt+'|'+a.tipo});}catch(e){}
-  bipSeq(a.tipo==='minima'?[[523,0,0.16],[392,0.2,0.24]]:[[660,0,0.15],[990,0.18,0.2]]);
+  bipSeq(a.tipo==='minima'?[[600,0,0.14],[800,0.18,0.14],[1000,0.36,0.3]]:[[660,0,0.15],[990,0.18,0.2]]); // FIGHT = 3 bips crescentes
 }
 document.getElementById('notifBtn').addEventListener('click',()=>{
   if(!('Notification' in window)){alert('Este navegador não suporta notificações.');return;}
@@ -515,6 +529,7 @@ function render(d){
       <div class="hint" style="margin-top:10px">Quando as três janelas apontam pro mesmo lado, o sinal é forte. <b style="color:${a.confluencia&&/forte/.test(a.confluencia.confluencia)?'var(--greenb)':'var(--muted)'}">${a.confluencia?a.confluencia.confluencia:'—'}</b></div>
     </div>
 
+    <div id="roboBox"></div>
     <div id="dicasBox"></div>
     <div class="sec">Próximos jogos — ${nomeMkt[mkt]} <span style="color:${lsCor};font-size:13px">• Liga: ${ls.label||'—'}</span></div>
     ${prox||'<div class="card">aguardando próximos jogos...</div>'}

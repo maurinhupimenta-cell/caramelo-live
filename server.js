@@ -1368,6 +1368,39 @@ app.get("/api/relatorio/:liga", (req, res) => {
   } catch (e) { res.status(500).json({ erro: e.message }); }
 });
 
+// ===== ROBO 2-GALE O3.5: quando ha zona azul no O3.5, monta a escada entrada->gale1->gale2 =====
+app.get("/api/robo", (req, res) => {
+  try {
+    const mkt = "o35";
+    let melhor = null;
+    for (const liga of Object.keys(store)) {
+      const d = store[liga];
+      if (!d || !d.games || d.games.length < 60) continue;
+      const games = d.games;
+      const base = games.filter(g => pays(g, mkt)).length / games.length * 100;
+      if (!base) continue;
+      const JR = Math.max(2, Math.min(20, games.length));
+      const sf = chartSeries(games, mkt, JR);
+      const cur = sf.length ? sf[sf.length - 1] : null;
+      if (cur == null) continue;
+      const rel = Math.round(cur / base * 100);
+      if (rel >= 60) continue; // robo so aparece com zona azul
+      if (melhor && rel >= melhor.rel) continue;
+      const evs = (d.upcoming && d.upcoming[mkt]) || [];
+      const degraus = [], pulados = [];
+      const papeis = ["ENTRADA", "GALE 1", "GALE 2"];
+      for (const p of evs) {
+        if (degraus.length >= 3) break;
+        if (p.odd == null || p.ev == null) continue;
+        if (p.ev > 0) degraus.push({ papel: papeis[degraus.length], unidades: [1, 2, 4][degraus.length], h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev });
+        else if (pulados.length < 4) pulados.push({ h: p.horario || "", jogo: p.nome, odd: p.odd, ev: p.ev });
+      }
+      melhor = { liga, rel, pagando: cur, base: Math.round(base * 10) / 10, degraus, pulados };
+    }
+    res.json(melhor || {});
+  } catch (e) { res.status(500).json({ erro: e.message }); }
+});
+
 // ===== DICAS: 3 melhores do quadro (todas as ligas) para o mercado, com carimbo honesto =====
 const dicasCache = {};
 app.get("/api/dicas", (req, res) => {
