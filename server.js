@@ -1064,6 +1064,7 @@ function aplicaSnapshot(liga, data) {
     s.wsTs = Date.now();
     store[liga] = s;
     atualizaRadar(liga, s);
+    atualizaRoboLedger();
     avisaClientes(liga);
   } catch (e) {
     console.error("erro aplicaSnapshot " + liga + ":", e.message);
@@ -1140,6 +1141,7 @@ app.post("/api/snapshot", (req, res) => {
     if (Array.isArray(curva)) liveCurves[liga + "|" + (mkt || "o35")] = { curva, mm1, mm2, topo, fundo, ts: Date.now() };
     store[liga] = s;
     atualizaRadar(liga, s);
+    atualizaRoboLedger();
     avisaClientes(liga); // SSE: avisa as telas abertas que essa liga atualizou (nao altera analises)
     res.json({ ok: true, liga, placares: games.length, futuros: upcoming.length, mercados: Object.keys(s.computed) });
   } catch (e) {
@@ -1410,36 +1412,125 @@ app.get("/api/relatorio/:liga", (req, res) => {
   } catch (e) { res.status(500).json({ erro: e.message }); }
 });
 
+
+// ===== CADERNO DO ROBO: acompanha o resultado real de cada indicacao (saldo em unidades) =====
+const ROBO_FILE = "robo.json";
+let roboSha = null;
+let roboLedger = { saldo: 0, ciclos: 0, greens: 0, redsCiclo: 0, aborts: 0, historico: [] };
+let roboCiclo = null; // { liga, degrau, apostado, alvo:{h,jogo,odd,unidades}, iniciadoEm }
+async function carregaRobo() {
+  if (!GH_T) return;
+  try {
+    const r = await fetch(`https://api.github.com/repos/${GH_REPO}/contents/${ROBO_FILE}?ref=${GH_BRANCH}`, { headers: ghHead() });
+    if (r.ok) { const j = await r.json(); roboSha = j.sha; const dados = JSON.parse(Buffer.from(j.content, "base64").toString()); if (dados && typeof dados.saldo === "number") { roboLedger = dados; roboCiclo = dados.cicloAberto || null; } }
+  } catch (e) {}
+}
+async function salvaRoboLedger() {
+  if (!GH_T) return;
+  try {
+    const body = { message: "robo ledger", content: Buffer.from(JSON.stringify({ ...roboLedger, cicloAberto: roboCiclo }, null, 1)).toString("base64"), branch: GH_BRANCH };
+    if (roboSha) body.sha = roboSha;
+    const r = await fetch(`https://api.github.com/repos/${GH_REPO}/contents/${ROBO_FILE}`, { method: "PUT", headers: { ...ghHead(), "Content-Type": "application/json" }, body: JSON.stringify(body) });
+    if (r.ok) { const j = await r.json(); roboSha = j.content.sha; }
+  } catch (e) {}
+}
+carregaRobo();
+function registraCiclo(resultado, unidades, detalhe) {
+  roboLedger.ciclos++;
+  if (resultado === "GREEN") roboLedger.greens++; else if (resultado === "RED_CICLO") roboLedger.redsCiclo++; else roboLedger.aborts++;
+  roboLedger.saldo = Math.round((roboLedger.saldo + unidades) * 10) / 10;
+  roboLedger.historico.unshift({ quando: new Date().toISOString(), resultado, unidades, detalhe });
+  roboLedger.historico = roboLedger.historico.slice(0, 20);
+  salvaRoboLedger();
+}
+// roda a cada snapshot: abre ciclo quando o robo montar entrada, resolve degraus quando jogos fecham
+function atualizaRoboLedger() {
+  try {
+    const melhor = montaRobo();
+    if (!roboCiclo) {
+      if (melhor && melhor.degraus && melhor.degraus[0]) {
+        const d0 = melhor.degraus[0];
+        roboCiclo = { liga: melhor.liga, degrau: 0, apostado: 0, alvo: { h: d0.h, jogo: d0.jogo, odd: d0.odd, unidades: 1 }, iniciadoEm: Date.now() };
+        salvaRoboLedger();
+      }
+      return;
+    }
+    const d = store[roboCiclo.liga];
+    if (!d) return;
+    const gAll = d.gamesAll || d.games || [];
+    // o alvo fechou? (procura nome+horario nos ~40 jogos mais recentes)
+    if (roboCiclo.alvo) {
+      const g = gAll.slice(-40).find(x => x.nome === roboCiclo.alvo.jogo && (!roboCiclo.alvo.h || x.horario === roboCiclo.alvo.h));
+      if (g) {
+        if (pays(g, "o35")) {
+          const lucro = Math.round((roboCiclo.alvo.unidades * roboCiclo.alvo.odd - (roboCiclo.apostado + roboCiclo.alvo.unidades)) * 10) / 10;
+          registraCiclo("GREEN", lucro, `${roboCiclo.liga} · ${roboCiclo.alvo.jogo} @${roboCiclo.alvo.odd} (degrau ${roboCiclo.degrau + 1})`);
+          roboCiclo = null;
+          return;
+        }
+        // RED no degrau
+        roboCiclo.apostado += roboCiclo.alvo.unidades;
+        roboCiclo.degrau++;
+        roboCiclo.alvo = null;
+        if (roboCiclo.degrau >= 3) {
+          registraCiclo("RED_CICLO", -roboCiclo.apostado, `${roboCiclo.liga} · ciclo perdido (3 tiros)`);
+          roboCiclo = null;
+          return;
+        }
+        salvaRoboLedger();
+      }
+    }
+    // precisa de novo alvo (apos red): pega o proximo degrau EV+ do robo na MESMA liga
+    if (!roboCiclo.alvo) {
+      if (melhor && melhor.liga === roboCiclo.liga && melhor.degraus && melhor.degraus[0]) {
+        const dn = melhor.degraus[0];
+        roboCiclo.alvo = { h: dn.h, jogo: dn.jogo, odd: dn.odd, unidades: [1, 2, 4][roboCiclo.degrau] };
+        salvaRoboLedger();
+      } else if (!melhor || melhor.liga !== roboCiclo.liga) {
+        // janela fechou sem alvo: aborta o ciclo (perde o que apostou)
+        if (roboCiclo.apostado > 0) registraCiclo("ABORT", -roboCiclo.apostado, `${roboCiclo.liga} · janela fechou no meio do ciclo`);
+        roboCiclo = null;
+      }
+    }
+  } catch (e) {}
+}
+
 // ===== ROBO 2-GALE O3.5: quando ha zona azul no O3.5, monta a escada entrada->gale1->gale2 =====
+function montaRobo() {
+  const mkt = "o35";
+  let melhor = null;
+  for (const liga of Object.keys(store)) {
+    const d = store[liga];
+    if (!d || !d.games || d.games.length < 60) continue;
+    const games = d.games;
+    const base = games.filter(g => pays(g, mkt)).length / games.length * 100;
+    if (!base) continue;
+    const JR = Math.max(2, Math.min(20, games.length));
+    const sf = chartSeries(games, mkt, JR);
+    const cur = sf.length ? sf[sf.length - 1] : null;
+    if (cur == null) continue;
+    const rel = Math.round(cur / base * 100);
+    if (rel >= 60) continue; // robo so aparece com ZONA AZUL de verdade (<60% do normal)
+    if (melhor && rel >= melhor.rel) continue;
+    const evs = (d.upcoming && d.upcoming[mkt]) || [];
+    const degraus = [], pulados = [];
+    const papeis = ["ENTRADA", "GALE 1", "GALE 2"];
+    for (const p of evs) {
+      if (degraus.length >= 3) break;
+      if (p.odd == null || p.ev == null) continue;
+      if (p.ev > 0) degraus.push({ papel: papeis[degraus.length], unidades: [1, 2, 4][degraus.length], h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev });
+      else if (pulados.length < 4) pulados.push({ h: p.horario || "", jogo: p.nome, odd: p.odd, ev: p.ev });
+    }
+    melhor = { liga, rel, pagando: cur, base: Math.round(base * 10) / 10, degraus, pulados, teste: rel >= 60 };
+  }
+  return melhor;
+}
 app.get("/api/robo", (req, res) => {
   try {
-    const mkt = "o35";
-    let melhor = null;
-    for (const liga of Object.keys(store)) {
-      const d = store[liga];
-      if (!d || !d.games || d.games.length < 60) continue;
-      const games = d.games;
-      const base = games.filter(g => pays(g, mkt)).length / games.length * 100;
-      if (!base) continue;
-      const JR = Math.max(2, Math.min(20, games.length));
-      const sf = chartSeries(games, mkt, JR);
-      const cur = sf.length ? sf[sf.length - 1] : null;
-      if (cur == null) continue;
-      const rel = Math.round(cur / base * 100);
-      if (rel >= 60) continue; // robo so aparece com ZONA AZUL de verdade (<60% do normal)
-      if (melhor && rel >= melhor.rel) continue;
-      const evs = (d.upcoming && d.upcoming[mkt]) || [];
-      const degraus = [], pulados = [];
-      const papeis = ["ENTRADA", "GALE 1", "GALE 2"];
-      for (const p of evs) {
-        if (degraus.length >= 3) break;
-        if (p.odd == null || p.ev == null) continue;
-        if (p.ev > 0) degraus.push({ papel: papeis[degraus.length], unidades: [1, 2, 4][degraus.length], h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev });
-        else if (pulados.length < 4) pulados.push({ h: p.horario || "", jogo: p.nome, odd: p.odd, ev: p.ev });
-      }
-      melhor = { liga, rel, pagando: cur, base: Math.round(base * 10) / 10, degraus, pulados, teste: rel >= 60 };
-    }
-    res.json(melhor || {});
+    const melhor = montaRobo() || {};
+    melhor.registro = { saldo: roboLedger.saldo, ciclos: roboLedger.ciclos, greens: roboLedger.greens, redsCiclo: roboLedger.redsCiclo, aborts: roboLedger.aborts };
+    if (roboCiclo) melhor.cicloAndamento = { degrau: roboCiclo.degrau + 1, apostado: roboCiclo.apostado, esperando: roboCiclo.alvo ? roboCiclo.alvo.jogo : "proximo degrau EV+" };
+    res.json(melhor);
   } catch (e) { res.status(500).json({ erro: e.message }); }
 });
 
