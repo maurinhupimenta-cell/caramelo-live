@@ -289,17 +289,32 @@ function notificaRadar(a){
     localStorage.setItem(ch,ag);
   }catch(e){}
   const nomeL=nomeLiga[a.liga]||a.liga, nomeM=nomeMkt[a.mkt]||a.mkt;
-  const titulo=(a.tipo==='minima'&&a.rel!=null&&a.rel<=60)?`🥊 1, 2, 3... FIGHT! — ZONA DE OPERAÇÃO — ${nomeL} · ${nomeM} (${a.rel}% do normal)`:a.tipo==='minima'?`📉 MÍNIMA — ${nomeL} · ${nomeM}${a.pagando!=null?` — pagando ${a.pagando}%`:''}`:a.tipo==='ltb'?`💥 QUEBROU A LTB — ${nomeL} · ${nomeM}${a.pagando!=null?` — pagando ${a.pagando}%`:''}`:`📈 SUBINDO — ${nomeL} · ${nomeM}${a.deOnde!=null&&a.pagando!=null?` — ${a.deOnde}% → ${a.pagando}%`:''}`;
+  const titulo=(a.tipo==='minima'&&a.rel!=null&&a.rel<=60)?`🚨 ZONA DE OPERAÇÃO — ${nomeL} · ${nomeM} (${a.rel}% do normal)`:a.tipo==='minima'?`📉 MÍNIMA — ${nomeL} · ${nomeM}${a.pagando!=null?` — pagando ${a.pagando}%`:''}`:a.tipo==='ltb'?`💥 QUEBROU A LTB — ${nomeL} · ${nomeM}${a.pagando!=null?` — pagando ${a.pagando}%`:''}`:`📈 SUBINDO — ${nomeL} · ${nomeM}${a.deOnde!=null&&a.pagando!=null?` — ${a.deOnde}% → ${a.pagando}%`:''}`;
   const corpo=(a.tipo==='minima'?'Mercado segurando — pagando abaixo do normal.':a.tipo==='ltb'?'Curva rompeu a linha de baixa pra cima — ciclo virando.':'Pagamento voltando agora.')+fitaTxt(a.fita);
-  try{if('Notification' in window&&Notification.permission==='granted')new Notification(titulo,{body:corpo,tag:a.liga+'|'+a.mkt+'|'+a.tipo});}catch(e){}
+  try{if(localStorage.getItem('pushOn')!=='1'&&'Notification' in window&&Notification.permission==='granted')new Notification(titulo,{body:corpo,tag:a.liga+'|'+a.mkt+'|'+a.tipo});}catch(e){} // com WEB PUSH ativo, o banner vem do sistema (evita duplicar)
   bipSeq(a.tipo==='minima'?[[600,0,0.14],[800,0.18,0.14],[1000,0.36,0.3]]:[[660,0,0.15],[990,0.18,0.2]]); // FIGHT = 3 bips crescentes
 }
+async function initPush(){
+  try{
+    if(!('serviceWorker' in navigator)||!('PushManager' in window))return;
+    const reg=await navigator.serviceWorker.register('/sw.js');
+    const k=await (await fetch('/api/push/key',{cache:'no-store'})).json();
+    if(!k||!k.key)return;
+    const conv=b64=>{const p='='.repeat((4-b64.length%4)%4);const s=(b64+p).replace(/-/g,'+').replace(/_/g,'/');const raw=atob(s);const a=new Uint8Array(raw.length);for(let i=0;i<raw.length;i++)a[i]=raw.charCodeAt(i);return a;};
+    let sub=await reg.pushManager.getSubscription();
+    if(!sub)sub=await reg.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:conv(k.key)});
+    const r=await fetch('/api/push/sub',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(sub)});
+    if(r.ok)localStorage.setItem('pushOn','1');
+  }catch(e){}
+}
+if('Notification' in window&&Notification.permission==='granted')initPush();
 document.getElementById('notifBtn').addEventListener('click',()=>{
   if(!('Notification' in window)){alert('Este navegador não suporta notificações.');return;}
   Notification.requestPermission().then(p=>{
     const b=document.getElementById('notifBtn');
     if(p==='granted'){b.textContent='🖥️ Notificações ativas';b.style.borderColor='var(--greenb)';b.style.color='var(--greenb)';b.style.background='rgba(46,160,67,.2)';
-      try{new Notification('🛰️ Radar ativo',{body:'Você será avisado de mínimas e subidas em todas as ligas e mercados.'});}catch(e){}}
+      initPush();
+      try{new Notification('🛰️ Radar ativo',{body:'Zona de operação chega direto no sistema — mesmo com o site fechado.'});}catch(e){}}
     else if(p==='denied'){b.textContent='🖥️ Bloqueadas no navegador';}
   });
 });

@@ -78,6 +78,9 @@ const ADMIN_KEY = process.env.ADMIN_KEY || "";
 const GH_T = process.env.GH_TOKEN || "";
 const GH_REPO = "maurinhupimenta-cell/caramelo-live";
 const GH_BRANCH = "dados";
+let webpush = null;
+try { webpush = require("web-push"); } catch (e) { console.log("web-push indisponivel:", e.message); }
+
 const GH_FILE = "codigos.json";
 let codigos = {}; // codigo -> {nome, criado, expira, usos, ultimoUso}
 let ghSha = null;
@@ -1864,10 +1867,69 @@ function atualizaRadar(liga, s) {
     }
   } catch (e) {}
 }
+
+// ===== WEB PUSH: alerta de ZONA DE OPERACAO direto no sistema (funciona com aba congelada/fechada) =====
+const PUSH_FILE = "push.json";
+let pushSha = null;
+let pushData = { vapid: null, subs: [] };
+const NOMES_L = { copa: "Copa do Mundo", euro: "Euro Cup", super: "Super Léague", premier: "Premiership" };
+const NOMES_M = { o25: "Over 2.5", o35: "Over 3.5", ambas: "Ambas Marcam", ge5: "5+ gols" };
+async function salvaPush() {
+  if (!GH_T) return;
+  try {
+    const body = { message: "push", content: Buffer.from(JSON.stringify(pushData, null, 1)).toString("base64"), branch: GH_BRANCH };
+    if (pushSha) body.sha = pushSha;
+    const r = await fetch(`https://api.github.com/repos/${GH_REPO}/contents/${PUSH_FILE}`, { method: "PUT", headers: { ...ghHead(), "Content-Type": "application/json" }, body: JSON.stringify(body) });
+    if (r.ok) { const j = await r.json(); pushSha = j.content.sha; }
+  } catch (e) {}
+}
+async function carregaPush() {
+  if (GH_T) {
+    try {
+      const r = await fetch(`https://api.github.com/repos/${GH_REPO}/contents/${PUSH_FILE}?ref=${GH_BRANCH}`, { headers: ghHead() });
+      if (r.ok) { const j = await r.json(); pushSha = j.sha; const dados = JSON.parse(Buffer.from(j.content, "base64").toString()); if (dados) pushData = { vapid: dados.vapid || null, subs: dados.subs || [] }; }
+    } catch (e) {}
+  }
+  if (webpush) {
+    if (!pushData.vapid) { pushData.vapid = webpush.generateVAPIDKeys(); salvaPush(); }
+    try { webpush.setVapidDetails("mailto:amd@live.local", pushData.vapid.publicKey, pushData.vapid.privateKey); } catch (e) {}
+  }
+}
+carregaPush();
+function enviaPushMinima(info) {
+  if (!webpush || !pushData.vapid || !pushData.subs.length) return;
+  if (!info || info.tipo !== "minima") return;
+  const titulo = `🚨 ZONA DE OPERAÇÃO — ${NOMES_L[info.liga] || info.liga} · ${NOMES_M[info.mkt] || info.mkt}${info.rel != null ? ` (${info.rel}% do normal)` : ""}`;
+  const corpo = `pagando ${info.pagando ?? "—"}% (normal ${info.base ?? "—"}%) — janela aberta AGORA`;
+  const payload = JSON.stringify({ t: titulo, b: corpo, tag: info.liga + "|" + info.mkt });
+  for (const s of [...pushData.subs]) {
+    webpush.sendNotification(s, payload).catch(err => {
+      if (err && (err.statusCode === 410 || err.statusCode === 404)) {
+        pushData.subs = pushData.subs.filter(x => x.endpoint !== s.endpoint);
+        salvaPush();
+      }
+    });
+  }
+}
+
 function avisaRadar(info) {
   const msg = `data: ${JSON.stringify({ tipo: "radar", alerta: info })}\n\n`; // BUGFIX: info.tipo sobrescrevia o rotulo "radar"
   for (const res of sseClientes) { try { res.write(msg); } catch (e) { sseClientes.delete(res); } }
+  enviaPushMinima(info); // WEB PUSH: chega no sistema mesmo com aba congelada/fechada
 }
+app.get("/api/push/key", (req, res) => res.json({ key: (pushData.vapid && pushData.vapid.publicKey) || null, pronto: !!(webpush && pushData.vapid), inscritos: pushData.subs.length }));
+app.post("/api/push/sub", (req, res) => {
+  try {
+    const s = req.body;
+    if (!s || !s.endpoint) return res.status(400).json({ erro: "inscricao invalida" });
+    if (!pushData.subs.find(x => x.endpoint === s.endpoint)) {
+      pushData.subs.push(s);
+      if (pushData.subs.length > 50) pushData.subs = pushData.subs.slice(-50);
+      salvaPush();
+    }
+    res.json({ ok: true, inscritos: pushData.subs.length });
+  } catch (e) { res.status(500).json({ erro: e.message }); }
+});
 app.get("/api/radar", (req, res) => res.json(Object.values(radarAtivos).sort((a, b) => b.ts - a.ts)));
 
 // ===== SSE (Server-Sent Events): canal de aviso em tempo real p/ as telas =====
