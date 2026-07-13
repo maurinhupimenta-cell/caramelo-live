@@ -1874,9 +1874,18 @@ app.get("/api/estudocol/:liga", (req, res) => {
     }
     const fx = {}; for (const [k, [n, h]] of Object.entries(faixas)) fx[k] = { jogos: n, pagou: n ? Math.round(h / n * 100) : null };
     const cz = {}; for (const [k, [n, h]] of Object.entries(cruz)) cz[k] = { jogos: n, pagou: n ? Math.round(h / n * 100) : null };
+    // PROFUNDIDADE DA ZONA: o proximo jogo paga quanto conforme o quao fundo a liga esta?
+    const prof = { "<40": [0, 0], "40-60": [0, 0], "60-85": [0, 0], "85-115": [0, 0], ">115": [0, 0] };
+    for (let i = JANx; i < games.length; i++) {
+      const r = relAntes(i); if (r == null) continue;
+      const b2 = r < 40 ? "<40" : r < 60 ? "40-60" : r < 85 ? "60-85" : r <= 115 ? "85-115" : ">115";
+      prof[b2][0]++; if (pays(games[i], mkt)) prof[b2][1]++;
+    }
+    const pf = {}; for (const [k, [n, h]] of Object.entries(prof)) pf[k] = { jogos: n, pagou: n ? Math.round(h / n * 100) : null };
     res.json({ liga, mkt, base,
       teste_EV_por_faixa: fx,
       cruzado_EV_x_estado: cz,
+      porProfundidade: pf,
       teste_coluna: {
         aposGreen_qualquer: { n: gAnyN, proximoPagou: gAnyN ? Math.round(gAnyH / gAnyN * 100) : null },
         aposGreen_em_coluna_fraca: { n: fracaN, proximoPagou: fracaN ? Math.round(fracaH / fracaN * 100) : null },
