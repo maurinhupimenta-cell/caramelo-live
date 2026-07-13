@@ -1,10 +1,16 @@
 {
  "saldo": -8.9,
- "ciclos": 26,
+ "ciclos": 27,
  "greens": 6,
  "redsCiclo": 4,
  "aborts": 13,
  "historico": [
+  {
+   "quando": "2026-07-13T20:30:03.045Z",
+   "resultado": "DESCARTADO",
+   "unidades": 0,
+   "detalhe": "premier · Lima x Belo Horizonte — alvo sem fechamento em 15min (reinicio/liga trocada), anulado sem contar"
+  },
   {
    "quando": "2026-07-13T20:14:04.028Z",
    "resultado": "DESCARTADO",
@@ -118,12 +124,6 @@
    "resultado": "RED_CICLO",
    "unidades": -7,
    "detalhe": "premier · ciclo perdido (3 tiros)"
-  },
-  {
-   "quando": "2026-07-13T13:59:28.969Z",
-   "resultado": "GREEN",
-   "unidades": 2.8,
-   "detalhe": "premier · Newcastle x Palace @3.8 (degrau 1)"
   }
  ],
  "cicloAberto": {
@@ -139,6 +139,6 @@
   },
   "iniciadoEm": 1783973703024
  },
- "descartes": 3,
+ "descartes": 4,
  "consumidas": {}
 }
