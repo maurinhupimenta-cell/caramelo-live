@@ -1665,6 +1665,72 @@ app.get("/api/dicas", (req, res) => {
   } catch (e) { res.status(500).json({ erro: e.message }); }
 });
 
+// ===== ACUMULADOR DIARIO POR FAIXA DE HORA (persistente): responde se existe ciclo diario =====
+const HORAS_FILE = "horas.json";
+let horasSha = null;
+let horasData = {};
+async function carregaHoras() {
+  if (!GH_T) return;
+  try {
+    const r = await fetch(`https://api.github.com/repos/${GH_REPO}/contents/${HORAS_FILE}?ref=${GH_BRANCH}`, { headers: ghHead() });
+    if (r.ok) { const j = await r.json(); horasSha = j.sha; horasData = JSON.parse(Buffer.from(j.content, "base64").toString()) || {}; }
+  } catch (e) {}
+}
+async function salvaHoras() {
+  if (!GH_T) return;
+  try {
+    const body = { message: "horas", content: Buffer.from(JSON.stringify(horasData)).toString("base64"), branch: GH_BRANCH };
+    if (horasSha) body.sha = horasSha;
+    const r = await fetch(`https://api.github.com/repos/${GH_REPO}/contents/${HORAS_FILE}`, { method: "PUT", headers: { ...ghHead(), "Content-Type": "application/json" }, body: JSON.stringify(body) });
+    if (r.ok) { const j = await r.json(); horasSha = j.content.sha; }
+  } catch (e) {}
+}
+carregaHoras();
+function acumulaHoras() {
+  try {
+    const hoje = new Date().toISOString().slice(0, 10);
+    const ontem = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+    const agrupa = {};
+    for (const liga of Object.keys(store)) {
+      const d = store[liga]; const gAll = (d && d.gamesAll) || []; if (!gAll.length) continue;
+      // separa os segmentos pela virada do dia (hora despenca: 23:xx -> 00:xx)
+      const seg = [[]];
+      for (const g of gAll) {
+        const h = parseInt((g.horario || "").split(":")[0]); if (isNaN(h)) continue;
+        const atual = seg[seg.length - 1];
+        if (atual.length) { const hp = parseInt((atual[atual.length - 1].horario || "").split(":")[0]); if (h < hp - 12) seg.push([]); }
+        seg[seg.length - 1].push(g);
+      }
+      const segs = seg.slice(-2);
+      const datas = segs.length === 2 ? [ontem, hoje] : [hoje];
+      segs.forEach((sg, ix) => {
+        const data = datas[ix]; agrupa[data] = agrupa[data] || {};
+        for (const mkt of ["o25", "o35", "ambas", "ge5"]) {
+          const m = agrupa[data][mkt] = agrupa[data][mkt] || { "00-07": [0, 0], "07-12": [0, 0], "12-18": [0, 0], "18-24": [0, 0] };
+          for (const g of sg) {
+            const h = parseInt((g.horario || "").split(":")[0]); if (isNaN(h)) continue;
+            const f = h < 7 ? "00-07" : h < 12 ? "07-12" : h < 18 ? "12-18" : "18-24";
+            m[f][0]++; if (pays(g, mkt)) m[f][1]++;
+          }
+        }
+      });
+    }
+    for (const [data, v] of Object.entries(agrupa)) horasData[data] = v; // sobrescreve: idempotente, sem dupla contagem
+    salvaHoras();
+  } catch (e) {}
+}
+setTimeout(acumulaHoras, 4 * 60000);
+setInterval(acumulaHoras, 30 * 60000);
+app.get("/api/horas", (req, res) => {
+  try {
+    const tot = {};
+    for (const dia of Object.values(horasData)) for (const [mkt, fx] of Object.entries(dia)) for (const [f, [n, h]] of Object.entries(fx)) { (tot[mkt] = tot[mkt] || {}); (tot[mkt][f] = tot[mkt][f] || [0, 0]); tot[mkt][f][0] += n; tot[mkt][f][1] += h; }
+    const fmt = {};
+    for (const [mkt, fx] of Object.entries(tot)) { fmt[mkt] = {}; for (const [f, [n, h]] of Object.entries(fx)) fmt[mkt][f] = { jogos: n, pagou: n ? Math.round(h / n * 100) : null }; }
+    res.json({ diasAcumulados: Object.keys(horasData).sort(), total: fmt });
+  } catch (e) { res.status(500).json({ erro: e.message }); }
+});
+
 // ===== ESTUDO HORA DO DIA: pagamento por faixa de hora (hipotese: madrugada paga mais, manha menos) =====
 app.get("/api/estudohora/:liga", (req, res) => {
   try {
