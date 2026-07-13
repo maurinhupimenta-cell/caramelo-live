@@ -1,10 +1,16 @@
 {
- "saldo": -15.4,
- "ciclos": 9,
+ "saldo": -16.4,
+ "ciclos": 10,
  "greens": 2,
  "redsCiclo": 2,
- "aborts": 4,
+ "aborts": 5,
  "historico": [
+  {
+   "quando": "2026-07-13T15:14:04.774Z",
+   "resultado": "ABORT",
+   "unidades": -1,
+   "detalhe": "euro · janela fechou no meio do ciclo"
+  },
   {
    "quando": "2026-07-13T14:53:44.168Z",
    "resultado": "RED_CICLO",
@@ -61,11 +67,17 @@
   }
  ],
  "cicloAberto": {
-  "liga": "euro",
-  "degrau": 1,
-  "apostado": 1,
-  "alvo": null,
-  "iniciadoEm": 1783954925577
+  "liga": "copa",
+  "degrau": 0,
+  "apostado": 0,
+  "alvo": {
+   "h": "16:19",
+   "jogo": "Senegal x Áustria",
+   "odd": 5,
+   "unidades": 1,
+   "desde": 1783956004077
+  },
+  "iniciadoEm": 1783956004077
  },
  "descartes": 1
 }
