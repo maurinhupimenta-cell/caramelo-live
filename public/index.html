@@ -152,6 +152,7 @@ async function carregaRobo(){
     const r=await fetch('/api/robo',{cache:'no-store'});
     if(!r.ok)return;
     const b=await r.json();
+    if(b&&!b.liga&&b.consumida){el.innerHTML=`<div class="card" style="border:1px dashed #4a5568;color:#8b98a8;font-size:12px">🤖 Robô O3.5: janela da <b>${nomeLiga[b.consumida.liga]||b.consumida.liga}</b> (${b.consumida.rel}% do normal) <b>já foi operada neste mergulho</b> — 1 ciclo por janela. Re-arma quando a liga subir de 85% e mergulhar de novo.${b.registro&&b.registro.ciclos?` · saldo ${b.registro.saldo>0?'+':''}${b.registro.saldo}u`:''}</div>`;return;}
     if(!b||!b.liga){el.innerHTML='';return;}
     let _acum=0;
     const deg=(b.degraus||[]).map(d=>{

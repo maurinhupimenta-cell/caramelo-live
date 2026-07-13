@@ -1539,6 +1539,8 @@ function atualizaRoboLedger() {
       if (g) {
         if (pays(g, "o35")) {
           const lucro = Math.round((roboCiclo.alvo.unidades * roboCiclo.alvo.odd - (roboCiclo.apostado + roboCiclo.alvo.unidades)) * 10) / 10;
+          roboLedger.consumidas = roboLedger.consumidas || {};
+          roboLedger.consumidas[roboCiclo.liga] = true; // green consome a janela
           registraCiclo("GREEN", lucro, `${roboCiclo.liga} · ${roboCiclo.alvo.jogo} @${roboCiclo.alvo.odd} (degrau ${roboCiclo.degrau + 1})`);
           roboCiclo = null;
           return;
@@ -1548,6 +1550,8 @@ function atualizaRoboLedger() {
         roboCiclo.degrau++;
         roboCiclo.alvo = null;
         if (roboCiclo.degrau >= 3) {
+          roboLedger.consumidas = roboLedger.consumidas || {};
+          roboLedger.consumidas[roboCiclo.liga] = true; // ciclo perdido = sair da janela (nunca 4o tiro na mesma seca)
           registraCiclo("RED_CICLO", -roboCiclo.apostado, `${roboCiclo.liga} · ciclo perdido (3 tiros)`);
           roboCiclo = null;
           return;
@@ -1585,6 +1589,13 @@ function montaRobo() {
     const cur = sf.length ? sf[sf.length - 1] : null;
     if (cur == null) continue;
     const rel = Math.round(cur / base * 100);
+    // 1 CICLO POR JANELA: liga cujo mergulho ja foi operado (green ou ciclo perdido) fica
+    // consumida ate re-armar (subir de 85% do normal) — igual ao chip do radar
+    roboLedger.consumidas = roboLedger.consumidas || {};
+    if (roboLedger.consumidas[liga]) {
+      if (rel >= 85) { delete roboLedger.consumidas[liga]; salvaRoboLedger(); }
+      else continue;
+    }
     if (rel >= 60) continue; // robo so aparece com ZONA AZUL de verdade (<60% do normal)
     if (melhor && rel >= melhor.rel) continue;
     const evs = (d.upcoming && d.upcoming[mkt]) || [];
@@ -1605,6 +1616,17 @@ function montaRobo() {
 app.get("/api/robo", (req, res) => {
   try {
     const melhor = montaRobo() || {};
+    if (!melhor.liga && roboLedger.consumidas) {
+      // alguma liga azul porem ja operada? comunica em vez de sumir
+      for (const liga of Object.keys(roboLedger.consumidas)) {
+        const d = store[liga]; if (!d || !d.games || d.games.length < 60) continue;
+        const base = d.games.filter(g => pays(g, "o35")).length / d.games.length * 100; if (!base) continue;
+        const sf = chartSeries(d.games, "o35", Math.max(2, Math.min(20, d.games.length)));
+        const cur = sf.length ? sf[sf.length - 1] : null; if (cur == null) continue;
+        const rel = Math.round(cur / base * 100);
+        if (rel < 60) { melhor.consumida = { liga, rel }; break; }
+      }
+    }
     melhor.registro = { saldo: roboLedger.saldo, ciclos: roboLedger.ciclos, greens: roboLedger.greens, redsCiclo: roboLedger.redsCiclo, aborts: roboLedger.aborts, descartes: roboLedger.descartes || 0 };
     if (roboCiclo) melhor.cicloAndamento = { degrau: roboCiclo.degrau + 1, apostado: roboCiclo.apostado, esperando: roboCiclo.alvo ? `${roboCiclo.alvo.h || ""} ${roboCiclo.alvo.jogo}`.trim() : "proximo degrau com odd no piso" };
     if (req.query.debug) { melhor.dbgCiclo = roboCiclo; melhor.dbgHistorico = roboLedger.historico.slice(0, 6); }
