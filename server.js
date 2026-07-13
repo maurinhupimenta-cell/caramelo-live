@@ -1665,6 +1665,29 @@ app.get("/api/dicas", (req, res) => {
   } catch (e) { res.status(500).json({ erro: e.message }); }
 });
 
+// ===== ESTUDO HORA DO DIA: pagamento por faixa de hora (hipotese: madrugada paga mais, manha menos) =====
+app.get("/api/estudohora/:liga", (req, res) => {
+  try {
+    const liga = req.params.liga, mkt = req.query.mkt || "o25";
+    const d = store[liga];
+    if (!d || !d.games || d.games.length < 200) return res.json({ erro: "historico insuficiente" });
+    const games = d.gamesAll || d.games;
+    const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
+    const faixas = { "00-07": [0, 0], "07-12": [0, 0], "12-18": [0, 0], "18-24": [0, 0] };
+    const porHora = {};
+    for (const g of games) {
+      const h = parseInt((g.horario || "").split(":")[0]);
+      if (isNaN(h)) continue;
+      const f = h < 7 ? "00-07" : h < 12 ? "07-12" : h < 18 ? "12-18" : "18-24";
+      faixas[f][0]++; const pagou = pays(g, mkt); if (pagou) faixas[f][1]++;
+      const hh = String(h).padStart(2, "0");
+      porHora[hh] = porHora[hh] || [0, 0]; porHora[hh][0]++; if (pagou) porHora[hh][1]++;
+    }
+    const fmt = o => { const r = {}; for (const [k, [n, h]] of Object.entries(o)) r[k] = { jogos: n, pagou: n ? Math.round(h / n * 100) : null }; return r; };
+    res.json({ liga, mkt, base, faixasHora: fmt(faixas), porHora: fmt(porHora) });
+  } catch (e) { res.status(500).json({ erro: e.message }); }
+});
+
 // ===== ESTUDO ANCORA: jogos com ancora pagam acima da base? (afirmacao do usuario) =====
 app.get("/api/estudoancora/:liga", (req, res) => {
   try {
