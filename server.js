@@ -1303,11 +1303,12 @@ app.get("/api/liga/:liga", (req, res) => {
     upByMkt[m] = {};
     for (const e of (d.upcoming && d.upcoming[m]) || []) upByMkt[m][e.nome] = e;
   }
-  // posicao REAL de cada time no rank do mercado escolhido (24h, ranking completo)
+  // posicao REAL de cada time no rank do mercado escolhido (ULTIMAS 3 HORAS ~60 jogos,
+  // ranking completo - retrato do agora, a pedido do usuario; minimo 2 jogos por time)
   let posTimes = null, posTotal = 0;
   if (mkt !== "totft") {
     try {
-      const rkFull = teamRanking(d.games || [], mkt, 480, 3, 999);
+      const rkFull = teamRanking(d.games || [], mkt, 60, 2, 999);
       posTimes = {}; posTotal = rkFull.length;
       rkFull.forEach((t, i) => posTimes[t.time] = i + 1);
     } catch (e) {}
