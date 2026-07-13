@@ -1,10 +1,16 @@
 {
- "saldo": -29.4,
- "ciclos": 16,
- "greens": 2,
+ "saldo": -22.4,
+ "ciclos": 17,
+ "greens": 3,
  "redsCiclo": 3,
  "aborts": 9,
  "historico": [
+  {
+   "quando": "2026-07-13T17:46:04.983Z",
+   "resultado": "GREEN",
+   "unidades": 7,
+   "detalhe": "copa · Irã x Nova Zelândia @5 (degrau 2)"
+  },
   {
    "quando": "2026-07-13T17:28:02.886Z",
    "resultado": "DESCARTADO",
@@ -106,9 +112,17 @@
   "liga": "copa",
   "degrau": 1,
   "apostado": 1,
-  "alvo": null,
+  "alvo": {
+   "h": "18:37",
+   "jogo": "Irã x Nova Zelândia",
+   "odd": 5,
+   "unidades": 2,
+   "desde": 1783964223380
+  },
   "iniciadoEm": 1783963683778
  },
  "descartes": 2,
- "consumidas": {}
+ "consumidas": {
+  "copa": true
+ }
 }
