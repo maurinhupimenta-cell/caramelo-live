@@ -1703,6 +1703,35 @@ app.get("/api/dicas", (req, res) => {
   } catch (e) { res.status(500).json({ erro: e.message }); }
 });
 
+// ===== ESTUDO DO PULO: P(pagar | seca atual do mercado) + distribuicao dos saltos entre greens =====
+app.get("/api/estudopulo/:liga", (req, res) => {
+  try {
+    const liga = req.params.liga, mkt = req.query.mkt || "o35";
+    const d = store[liga];
+    if (!d || !d.games || d.games.length < 300) return res.json({ erro: "historico insuficiente" });
+    const games = d.gamesAll || d.games;
+    const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
+    // P(pagar | seca atual = k) e histograma dos pulos realizados
+    const porSeca = {}; // k -> [n, pagou]
+    const pulos = {};   // tamanho do salto -> vezes
+    let seca = null;
+    for (const g of games) {
+      const pagou = pays(g, mkt);
+      if (seca != null) {
+        const k = seca >= 10 ? "10+" : String(seca);
+        porSeca[k] = porSeca[k] || [0, 0]; porSeca[k][0]++; if (pagou) porSeca[k][1]++;
+      }
+      if (pagou) { if (seca != null) { const p = seca >= 12 ? "12+" : String(seca); pulos[p] = (pulos[p] || 0) + 1; } seca = 0; }
+      else if (seca != null) seca++;
+      else seca = pagou ? 0 : null;
+      if (seca == null && !pagou) seca = 1;
+    }
+    const ps = {}; const ordem = ["0","1","2","3","4","5","6","7","8","9","10+"];
+    for (const k of ordem) if (porSeca[k]) ps[k] = { jogos: porSeca[k][0], pagou: Math.round(porSeca[k][1] / porSeca[k][0] * 100) };
+    res.json({ liga, mkt, base, P_pagar_dado_seca: ps, distribuicao_pulos: pulos });
+  } catch (e) { res.status(500).json({ erro: e.message }); }
+});
+
 // ===== ACUMULADOR DIARIO POR FAIXA DE HORA (persistente): responde se existe ciclo diario =====
 const HORAS_FILE = "horas.json";
 let horasSha = null;
