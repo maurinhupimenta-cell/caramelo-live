@@ -1601,13 +1601,18 @@ function montaRobo() {
     const evs = (d.upcoming && d.upcoming[mkt]) || [];
     const degraus = [], pulados = [];
     const papeis = ["ENTRADA", "GALE 1", "GALE 2"];
-    for (const p of evs) {
-      if (degraus.length >= 3) break;
-      if (p.odd == null || p.ev == null) continue;
-      // METODO v2: dentro da zona azul, o criterio de preco e o PISO DE ODD (chance real da
-      // zona O3.5 = ~31% medidos -> breakeven 3.23 -> exige odd >= 3.60). EV vira referencia.
-      if (p.odd >= 3.6) degraus.push({ papel: papeis[degraus.length], unidades: [1, 2, 4][degraus.length], h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev, evAlto: p.ev > 10, col: colunaPct(d.gamesAll || games, p.horario, mkt) });
-      else if (pulados.length < 4) pulados.push({ h: p.horario || "", jogo: p.nome, odd: p.odd, ev: p.ev });
+    // METODO v2.1: dentro da zona azul, piso de odd (>=3.60) E preferencia pelo MAIOR EV-
+    // (celula medida: EV- durante a seca paga 29% vs base 21 no O3.5 — a casa certa + a mola)
+    const cands = evs.map((p, i) => ({ ...p, _i: i })).filter(p => p.odd != null && p.ev != null);
+    for (const p of cands) { if (p.odd < 3.6 && pulados.length < 4) pulados.push({ h: p.horario || "", jogo: p.nome, odd: p.odd, ev: p.ev }); }
+    const validos = cands.filter(p => p.odd >= 3.6);
+    let idxAnterior = -1;
+    for (let dgi = 0; dgi < 3; dgi++) {
+      const pool = validos.filter(p => p._i > idxAnterior);
+      if (!pool.length) break;
+      const p = pool.reduce((a, b) => (b.ev < a.ev ? b : a)); // maior EV- disponivel dali em diante
+      idxAnterior = p._i;
+      degraus.push({ papel: papeis[dgi], unidades: [1, 2, 4][dgi], h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev, evAlto: p.ev > 10, col: colunaPct(d.gamesAll || games, p.horario, mkt) });
     }
     melhor = { liga, rel, pagando: cur, base: Math.round(base * 10) / 10, degraus, pulados, teste: rel >= 60, taxas: taxaJanelas(d.gamesAll || games, mkt) };
   }
