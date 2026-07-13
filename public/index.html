@@ -113,17 +113,17 @@ Acende quando o selo cruza <b>abaixo de 60%</b> — é a única notificação qu
 <div style="margin-top:6px"><b>Chip 📉 + notificação</b> = acende quando o selo cruza <b>abaixo de 60%</b> (seca forte) e <b>apaga no primeiro green</b>. A fita 🟢🔴 mostra os últimos 6 jogos.</div>
 </div>
 <div style="background:#0d1117;border:1px solid #23863644;border-radius:10px;padding:14px">
-<div style="font-weight:800;color:#3fb950;margin-bottom:8px">💰 Máquina do PREÇO</div>
-<div><b>Chance real</b> = calculada do histórico (times, faixa da odd, liga). Ex.: 26.4%.</div>
-<div style="margin-top:6px"><b>Odd justa</b> = 100 ÷ chance real. Ex.: 100 ÷ 26.4 = <b>3.79</b> — a odd "honesta".</div>
-<div style="margin-top:6px"><b>EV</b> = chance × odd − 100. Ex.: casa pagando 4.50 → 26.4 × 4.50 − 100 = <b>+18.6%</b> (a casa pagando acima do justo). EV negativo = a casa cobrando caro: não se entra, nunca.</div>
+<div style="font-weight:800;color:#3fb950;margin-bottom:8px">💰 Máquina do PREÇO (piso de odd da zona)</div>
+<div>Dentro da zona azul, a chance real foi <b>medida</b>: O3.5 paga ~31% e O2.5 ~54% dos próximos jogos.</div>
+<div style="margin-top:6px">Logo, só vale entrar quando a odd cobre essa chance com folga: <b>O3.5 exige odd ≥ 3.60</b> · <b>O2.5 exige odd ≥ 2.00</b>. Abaixo do piso, mesmo a zona perfeita perde no longo prazo.</div>
+<div style="margin-top:6px"><b>EV do card = referência</b>, não critério: testes com 1.120 jogos mostraram que EV acima de +10 historicamente <b>paga MENOS</b> (quando o modelo discorda muito da casa, a casa costuma estar certa).</div>
 </div>
 </div>
 
 <div style="background:#0d1117;border:1px solid #223;border-radius:10px;padding:14px;margin:0 0 14px">
 <div style="font-weight:800;color:#e6edf3;margin-bottom:8px">📋 O ritual de leitura (4 perguntas, nessa ordem)</div>
 <div>1️⃣ <b>Zona?</b> Selo azul (&lt;60% do normal)? Se não, PARE aqui — número bonito em zona errada é armadilha.</div>
-<div>2️⃣ <b>Preço?</b> EV positivo e odd acima da justa? Se não, PARE — zona boa com preço ruim continua aposta ruim.</div>
+<div>2️⃣ <b>Preço?</b> Odd no piso da zona (O3.5 ≥ 3.60 · O2.5 ≥ 2.00)? Se não, PARE — zona boa com odd curta perde no longo prazo. EV é só referência (e EV &gt; +10 é bandeira vermelha).</div>
 <div>3️⃣ <b>Qual?</b> Entre os aprovados: melhor rank 🏆 da rodada, âncora ⚓, ciclo cobrando.</div>
 <div>4️⃣ <b>Chip vivo?</b> Confira o 📉 no segundo do clique. Apagou = alguém pagou = janela consumida.</div>
 </div>
@@ -157,13 +157,13 @@ async function carregaRobo(){
     const deg=(b.degraus||[]).map(d=>{
       _acum+=d.unidades;
       const lucro=Math.round((d.unidades*d.odd-_acum)*10)/10;
-      return `<div style="display:inline-block;background:#0f2417;border:1px solid #3fb950;border-radius:8px;padding:6px 10px;margin:4px 6px 4px 0;font-size:12px"><b style="color:#3fb950">${d.papel} · ${d.unidades}u</b><br><b>${d.h?d.h+' · ':''}${d.jogo}</b><br>@${d.odd} (justa ${d.justa}) · EV <b style="color:var(--greenb)">+${d.ev}%</b><br><span style="color:#3fb950;font-weight:800">green aqui = +${lucro}u líquidas</span> <span class="note" style="font-size:10px">(${_acum}u no ciclo)</span>${d.col?`<br><span style="font-size:10px;color:#9fb0c3">⏱️ col :${d.col.min} — 3h ${d.col.h3??'—'}% · 6h ${d.col.h6??'—'}% · 24h ${d.col.h24??'—'}%</span>`:''}</div>`;
+      return `<div style="display:inline-block;background:#0f2417;border:1px solid #3fb950;border-radius:8px;padding:6px 10px;margin:4px 6px 4px 0;font-size:12px"><b style="color:#3fb950">${d.papel} · ${d.unidades}u</b><br><b>${d.h?d.h+' · ':''}${d.jogo}</b><br>@${d.odd} · <span style="color:${d.evAlto?'var(--red)':'#9fb0c3'};font-size:11px">${d.evAlto?'⚠️ EV +'+d.ev+'% (casa discorda)':'ref EV '+(d.ev>0?'+':'')+d.ev+'%'}</span><br><span style="color:#3fb950;font-weight:800">green aqui = +${lucro}u líquidas</span> <span class="note" style="font-size:10px">(${_acum}u no ciclo)</span>${d.col?`<br><span style="font-size:10px;color:#9fb0c3">⏱️ col :${d.col.min} — 3h ${d.col.h3??'—'}% · 6h ${d.col.h6??'—'}% · 24h ${d.col.h24??'—'}%</span>`:''}</div>`;
     }).join('<span style="font-size:16px;color:#8b98a8;vertical-align:middle">→</span>');
     // degraus que ainda nao existem viram espacos reservados (a rodada renova a ~3min e eles se preenchem)
     const _falta=['ENTRADA · 1u','GALE 1 · 2u','GALE 2 · 4u'].slice((b.degraus||[]).length);
     const degFalta=_falta.map(f=>`<div style="display:inline-block;border:1px dashed #4a5568;border-radius:8px;padding:6px 10px;margin:4px 6px 4px 0;font-size:12px;color:#8b98a8"><b>${f}</b><br>⏳ aguardando jogo com EV+<br><span style="font-size:10px">a rodada renova a cada ~3 min</span></div>`).join('<span style="font-size:16px;color:#4a5568;vertical-align:middle">→</span>');
     const escada=deg?(degFalta?deg+'<span style="font-size:16px;color:#4a5568;vertical-align:middle">→</span>'+degFalta:deg):degFalta;
-    const pul=(b.pulados||[]).length?`<div class="note" style="font-size:11px;margin-top:4px">degraus pulados (EV−): ${b.pulados.map(p=>`${p.h} ${p.jogo.split(' x ')[0]} (${p.ev}%)`).join(' · ')}</div>`:'';
+    const pul=(b.pulados||[]).length?`<div class="note" style="font-size:11px;margin-top:4px">degraus pulados (odd abaixo do piso 3.60): ${b.pulados.map(p=>`${p.h} ${p.jogo.split(' x ')[0]} (@${p.odd})`).join(' · ')}</div>`:'';
     const reg=b.registro||{};
     const saldoCor=reg.saldo>0?'var(--greenb)':reg.saldo<0?'var(--red)':'#9fb0c3';
     const saldoTxt=reg.ciclos?`💰 Saldo do robô: <b style="color:${saldoCor}">${reg.saldo>0?'+':''}${reg.saldo}u</b> <span class="note" style="font-size:11px">(${reg.ciclos} ciclos: ${reg.greens}🟢 ${reg.redsCiclo}🔴${reg.aborts?' '+reg.aborts+'⚠️':''} — simulação fiel das indicações)</span>`:`💰 Saldo do robô: <b style="color:#9fb0c3">0u</b> <span class="note" style="font-size:11px">(nenhum ciclo concluído ainda)</span>`;
@@ -186,9 +186,9 @@ async function carregaDicas(mkt){
       const b=B[d.grade]||B.aguardar;
       const mot=d.grade==='aguardar'?(d.rel>=75?`zona ${d.rel}%`:`EV ${d.ev>0?'+':''}${d.ev}%`):b[2];
       const chk=(ok,txt)=>`<span style="display:inline-block;margin-right:8px;font-size:11px;color:${ok===true?'var(--greenb)':ok===false?'var(--red)':'#9fb0c3'}">${ok===true?'✓':ok===false?'✗':'•'} ${txt}</span>`;
-      const checklist=chk(d.rel<60,`🌡️ zona ${d.rel}%${d.rel<60?'':' (precisa <60%)'}`)+chk(d.ev>0,`💰 EV ${d.ev>0?'+':''}${d.ev}% (@${d.odd} vs justa ${d.justa})`)+(d.rank?chk(d.rank<=2,`🏆 ${d.rank}º da rodada`):'')+(d.anc?chk(true,`⚓ âncora${String(d.anc).includes('FORTE')?' FORTE':''}`):'')+(d.veto?chk(false,'gráfico contra'):'');
+      const checklist=chk(d.rel<60,`🌡️ zona ${d.rel}%${d.rel<60?'':' (precisa <60%)'}`)+(d.piso?chk(d.oddOk,`💰 odd @${d.odd}${d.oddOk?' ≥ ':' < piso '}${d.piso}`):`<span style="display:inline-block;margin-right:8px;font-size:11px;color:#9fb0c3">• odd @${d.odd}</span>`)+(d.rank?chk(d.rank<=2,`🏆 ${d.rank}º da rodada`):'')+(d.anc?chk(true,`⚓ âncora`):'')+(d.veto?chk(false,'gráfico contra'):'')+`<span style="display:inline-block;margin-right:8px;font-size:11px;color:${d.evAlto?'var(--red)':'#9fb0c3'}">${d.evAlto?'⚠️ EV +'+d.ev+'% — modelo discorda da casa (historicamente a casa vence)':'ref: EV '+(d.ev>0?'+':'')+d.ev+'%'}</span>`;
       return `<div class="card" style="border-left:3px solid ${b[1]}"><div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px"><div><b style="color:${b[1]};font-size:12px">${b[0]}</b> <span class="note" style="font-size:11px">(${mot})</span></div><span class="note" style="font-size:11px">${nomeLiga[d.liga]||d.liga} · pagando ${d.pagando}% (normal ${d.base}%)</span></div><div style="margin-top:4px;font-size:14px"><b>${d.h?d.h+' · ':''}${d.jogo}</b></div><div style="margin-top:5px;line-height:1.7">${checklist}</div>${d.col?`<div style="font-size:11px;color:#9fb0c3">⏱️ coluna :${d.col.min} — 3h <b>${d.col.h3??'—'}%</b> · 6h ${d.col.h6??'—'}% · 12h ${d.col.h12??'—'}% · 24h ${d.col.h24??'—'}%</div>`:''}</div>`;
-    }).join('')+`<div class="note" style="font-size:11px;margin:2px 0 10px">Ordem do modelo: 🌡️ zona (quando) → 💰 preço (se) → 🏆⚓ desempate (qual). 🟢 só quando zona &lt;60% E EV+. Estatística, não certeza — unidade de 1% da banca.</div>`;
+    }).join('')+`<div class="note" style="font-size:11px;margin:2px 0 10px">Ordem do modelo: 🌡️ zona (quando) → 💰 piso de odd (se: O3.5 ≥3.60 · O2.5 ≥2.00) → 🏆⚓ desempate (qual). EV é referência — acima de +10, historicamente decepciona. Estatística, não certeza — unidade de 1% da banca.</div>`;
   }catch(e){}
 }
 async function tick(){

@@ -1570,7 +1570,9 @@ function montaRobo() {
     for (const p of evs) {
       if (degraus.length >= 3) break;
       if (p.odd == null || p.ev == null) continue;
-      if (p.ev > 0) degraus.push({ papel: papeis[degraus.length], unidades: [1, 2, 4][degraus.length], h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev, col: colunaPct(d.gamesAll || games, p.horario, mkt) });
+      // METODO v2: dentro da zona azul, o criterio de preco e o PISO DE ODD (chance real da
+      // zona O3.5 = ~31% medidos -> breakeven 3.23 -> exige odd >= 3.60). EV vira referencia.
+      if (p.odd >= 3.6) degraus.push({ papel: papeis[degraus.length], unidades: [1, 2, 4][degraus.length], h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev, evAlto: p.ev > 10, col: colunaPct(d.gamesAll || games, p.horario, mkt) });
       else if (pulados.length < 4) pulados.push({ h: p.horario || "", jogo: p.nome, odd: p.odd, ev: p.ev });
     }
     melhor = { liga, rel, pagando: cur, base: Math.round(base * 10) / 10, degraus, pulados, teste: rel >= 60, taxas: taxaJanelas(d.gamesAll || games, mkt) };
@@ -1617,10 +1619,13 @@ app.get("/api/dicas", (req, res) => {
         const rank = rankDe[p.nome] || null;
         const anc = d.ancoras && d.ancoras[p.nome] ? (d.ancoras[p.nome].nivel || "SIM") : null;
         const veto = /CONTRA|TOPO/i.test(p.motivo || "");
-        const grade = (rel < 60 && p.ev > 0) ? "entrada" : ((rel < 75 && p.ev > 0) || (rel < 60 && p.ev > -3)) ? "observar" : "aguardar";
-        // NOTA = o modelo na ordem: ZONA (peso dominante) > PRECO > rank/ancora/motivo (desempate)
-        const nota = (100 - rel) * 2 + p.ev + (rank === 1 ? 12 : rank === 2 ? 6 : 0) + (anc ? (String(anc).includes("FORTE") ? 12 : 8) : 0) - (veto ? 10 : 0);
-        tudo.push({ liga, rel, pagando: cur, base: Math.round(base * 10) / 10, h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev, rank, anc, veto, grade, nota, col: colunaPct(d.gamesAll || games, p.horario, mkt) });
+        // METODO v2: preco = PISO DE ODD da zona (chances reais medidas: O3.5 31% -> odd>=3.60; O2.5 54% -> odd>=2.00)
+        const piso = ({ o35: 3.6, o25: 2.0 })[mkt] || null;
+        const oddOk = !!(piso && p.odd >= piso);
+        const evAlto = p.ev > 10; // historicamente decepciona: a casa costuma estar certa
+        const grade = (rel < 60 && oddOk) ? "entrada" : (rel < 60 || (rel < 75 && oddOk)) ? "observar" : "aguardar";
+        const nota = (100 - rel) * 2 + (oddOk ? 10 : 0) - (evAlto ? 8 : 0) + (rank === 1 ? 12 : rank === 2 ? 6 : 0) + (anc ? 8 : 0) - (veto ? 10 : 0);
+        tudo.push({ liga, rel, pagando: cur, base: Math.round(base * 10) / 10, h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev, evAlto, piso, oddOk, rank, anc, veto, grade, nota, col: colunaPct(d.gamesAll || games, p.horario, mkt) });
       }
     }
     tudo.sort((a, b) => b.nota - a.nota);
