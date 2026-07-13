@@ -1,10 +1,16 @@
 {
- "saldo": -4,
- "ciclos": 3,
- "greens": 0,
+ "saldo": -0.2,
+ "ciclos": 4,
+ "greens": 1,
  "redsCiclo": 0,
  "aborts": 2,
  "historico": [
+  {
+   "quando": "2026-07-13T13:11:04.966Z",
+   "resultado": "GREEN",
+   "unidades": 3.8,
+   "detalhe": "euro · Portugal x Dinamarca @4.75 (degrau 1)"
+  },
   {
    "quando": "2026-07-13T13:05:19.678Z",
    "resultado": "ABORT",
@@ -25,11 +31,17 @@
   }
  ],
  "cicloAberto": {
-  "liga": "super",
-  "degrau": 2,
-  "apostado": 3,
-  "alvo": null,
-  "iniciadoEm": 1783946721208
+  "liga": "euro",
+  "degrau": 0,
+  "apostado": 0,
+  "alvo": {
+   "h": "14:02",
+   "jogo": "Portugal x Dinamarca",
+   "odd": 4.75,
+   "unidades": 1,
+   "desde": 1783947920575
+  },
+  "iniciadoEm": 1783947920575
  },
  "descartes": 1
 }
