@@ -1648,6 +1648,61 @@ app.get("/api/dicas", (req, res) => {
   } catch (e) { res.status(500).json({ erro: e.message }); }
 });
 
+// ===== ESTUDO COLUNA + FAIXAS DE EV (hipoteses do usuario) =====
+app.get("/api/estudocol/:liga", (req, res) => {
+  try {
+    const liga = req.params.liga, mkt = req.query.mkt || "o25";
+    const d = store[liga];
+    if (!d || !d.games || d.games.length < 300) return res.json({ erro: "historico insuficiente" });
+    const games = d.games;
+    const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
+    // --- taxa da coluna ANTES de cada jogo (12 ocorrencias anteriores do mesmo minuto) ---
+    const porMin = {};
+    const colAntes = new Array(games.length).fill(null);
+    for (let i = 0; i < games.length; i++) {
+      const h = games[i].horario || ""; const min = h.includes(":") ? h.split(":")[1] : null;
+      if (!min) continue;
+      const arr = porMin[min] || (porMin[min] = []);
+      if (arr.length >= 4) colAntes[i] = Math.round(arr.slice(-12).reduce((a, b) => a + b, 0) / Math.min(12, arr.length) * 100);
+      arr.push(pays(games[i], mkt) ? 1 : 0);
+    }
+    // TESTE 2: green em coluna FRACA (<=33%) -> proximo jogo paga mais?
+    let fracaN = 0, fracaH = 0, gAnyN = 0, gAnyH = 0;
+    for (let i = 0; i < games.length - 1; i++) {
+      if (!pays(games[i], mkt)) continue;
+      gAnyN++; if (pays(games[i + 1], mkt)) gAnyH++;
+      if (colAntes[i] != null && colAntes[i] <= 33) { fracaN++; if (pays(games[i + 1], mkt)) fracaH++; }
+    }
+    // e o proximo jogo de coluna FORTE (>=50) em ate 3 apos o green na fraca
+    let ffN = 0, ffH = 0;
+    for (let i = 0; i < games.length - 3; i++) {
+      if (!pays(games[i], mkt) || colAntes[i] == null || colAntes[i] > 33) continue;
+      for (let j = i + 1; j <= i + 3 && j < games.length; j++) {
+        if (colAntes[j] != null && colAntes[j] >= 50) { ffN++; if (pays(games[j], mkt)) ffH++; break; }
+      }
+    }
+    // TESTE 1: faixas de EV (ultimos 140 jogos com odd)
+    const faixas = { "EV>+10": [0, 0], "EV_0_a_+10": [0, 0], "EV_-10_a_0": [0, 0], "EV<-10": [0, 0] };
+    const ini = Math.max(150, games.length - 140);
+    for (let i = ini; i < games.length; i++) {
+      const g = games[i]; if (!g.odds || g.odds[oddKey(mkt)] == null) continue;
+      let ev = null;
+      try { ev = (fullEvalUpcoming([{ nome: g.nome, horario: "", casa: g.casa, fora: g.fora, odds: g.odds }], games.slice(0, i).slice(-400), mkt)[0] || {}).ev; } catch (e) {}
+      if (ev == null) continue;
+      const f = ev > 10 ? "EV>+10" : ev > 0 ? "EV_0_a_+10" : ev > -10 ? "EV_-10_a_0" : "EV<-10";
+      faixas[f][0]++; if (pays(g, mkt)) faixas[f][1]++;
+    }
+    const fx = {}; for (const [k, [n, h]] of Object.entries(faixas)) fx[k] = { jogos: n, pagou: n ? Math.round(h / n * 100) : null };
+    res.json({ liga, mkt, base,
+      teste_EV_por_faixa: fx,
+      teste_coluna: {
+        aposGreen_qualquer: { n: gAnyN, proximoPagou: gAnyN ? Math.round(gAnyH / gAnyN * 100) : null },
+        aposGreen_em_coluna_fraca: { n: fracaN, proximoPagou: fracaN ? Math.round(fracaH / fracaN * 100) : null },
+        greenFraca_entao_colunaForte_em3: { n: ffN, pagou: ffN ? Math.round(ffH / ffN * 100) : null }
+      } });
+  } catch (e) { res.status(500).json({ erro: e.message }); }
+});
+
 // ===== ESTUDO MAXIMAS (metrica do usuario): frequencia de pulo de 3+/4+ REDs por zona =====
 app.get("/api/maximas/:liga", (req, res) => {
   try {
