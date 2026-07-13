@@ -1508,8 +1508,14 @@ function registraCiclo(resultado, unidades, detalhe) {
 function atualizaRoboLedger() {
   try {
     const melhor = montaRobo();
+    // sonda as vezes rotula snapshot com liga trocada: so aceita alvo cujo time da casa exista no historico da liga
+    const pertenceALiga = (liga, jogo) => {
+      const d2 = store[liga]; const g2 = (d2 && (d2.gamesAll || d2.games)) || [];
+      const casa = (jogo || "").split(" x ")[0];
+      return !!casa && g2.slice(-480).some(x => x.casa === casa);
+    };
     if (!roboCiclo) {
-      if (melhor && melhor.degraus && melhor.degraus[0]) {
+      if (melhor && melhor.degraus && melhor.degraus[0] && pertenceALiga(melhor.liga, melhor.degraus[0].jogo)) {
         const d0 = melhor.degraus[0];
         roboCiclo = { liga: melhor.liga, degrau: 0, apostado: 0, alvo: { h: d0.h, jogo: d0.jogo, odd: d0.odd, unidades: 1, desde: Date.now() }, iniciadoEm: Date.now() };
         salvaRoboLedger();
@@ -1522,8 +1528,8 @@ function atualizaRoboLedger() {
     // o alvo fechou? (procura nome+horario nos ~40 jogos mais recentes)
     if (roboCiclo.alvo) {
       // ANTI-ZUMBI: alvo sem resolucao ha 30+ min (reinicios, jogo sumiu da janela) = descarta o ciclo sem contabilizar
-      if (!roboCiclo.alvo.desde || Date.now() - roboCiclo.alvo.desde > 30 * 60000) {
-        registraCiclo("DESCARTADO", 0, `${roboCiclo.liga} · ${roboCiclo.alvo.jogo} — perdi o fechamento (reinicio), ciclo anulado sem contar`);
+      if (!roboCiclo.alvo.desde || Date.now() - roboCiclo.alvo.desde > 15 * 60000) {
+        registraCiclo("DESCARTADO", 0, `${roboCiclo.liga} · ${roboCiclo.alvo.jogo} — alvo sem fechamento em 15min (reinicio/liga trocada), anulado sem contar`);
         roboCiclo = null;
         return;
       }
@@ -1551,7 +1557,7 @@ function atualizaRoboLedger() {
     }
     // precisa de novo alvo (apos red): pega o proximo degrau EV+ do robo na MESMA liga
     if (!roboCiclo.alvo) {
-      if (melhor && melhor.liga === roboCiclo.liga && melhor.degraus && melhor.degraus[0]) {
+      if (melhor && melhor.liga === roboCiclo.liga && melhor.degraus && melhor.degraus[0] && pertenceALiga(melhor.liga, melhor.degraus[0].jogo)) {
         const dn = melhor.degraus[0];
         roboCiclo.alvo = { h: dn.h, jogo: dn.jogo, odd: dn.odd, unidades: [1, 2, 4][roboCiclo.degrau], desde: Date.now() };
         salvaRoboLedger();
