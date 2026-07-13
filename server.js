@@ -1303,11 +1303,22 @@ app.get("/api/liga/:liga", (req, res) => {
     upByMkt[m] = {};
     for (const e of (d.upcoming && d.upcoming[m]) || []) upByMkt[m][e.nome] = e;
   }
+  // posicao REAL de cada time no rank do mercado escolhido (24h, ranking completo)
+  let posTimes = null, posTotal = 0;
+  if (mkt !== "totft") {
+    try {
+      const rkFull = teamRanking(d.games || [], mkt, 480, 3, 999);
+      posTimes = {}; posTotal = rkFull.length;
+      rkFull.forEach((t, i) => posTimes[t.time] = i + 1);
+    } catch (e) {}
+  }
+
   const proximos = ((d.upcoming && d.upcoming[mkt]) || []).map(p => {
     const anc = ancoras[p.nome];
     const base = anc ? { ...p, ancora: anc } : { ...p };
     base.placarProvavel = placarProvavel(d.games || [], p.casa, p.fora, p.nome);
     if (mkt !== "totft") base.coluna = colunaPct(d.gamesAll || d.games || [], p.horario, mkt);
+    if (mkt !== "totft" && posTimes) { base.posCasa = posTimes[p.casa] || null; base.posFora = posTimes[p.fora] || null; base.posTotal = posTotal; }
     if (mkt !== "totft") {
       base.combo = comboDe(p);
       // rank dos MERCADOS pra ESSE jogo (qual mercado paga melhor nele)
