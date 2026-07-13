@@ -1480,6 +1480,11 @@ async function carregaRobo() {
     const r = await fetch(`https://api.github.com/repos/${GH_REPO}/contents/${ROBO_FILE}?ref=${GH_BRANCH}`, { headers: ghHead() });
     if (r.ok) { const j = await r.json(); roboSha = j.sha; const dados = JSON.parse(Buffer.from(j.content, "base64").toString()); if (dados && typeof dados.saldo === "number") { roboLedger = dados; roboCiclo = dados.cicloAberto || null; } }
   } catch (e) {}
+  // ciclo antigo sem carimbo de hora (anterior ao anti-zumbi) = anulado ja no boot
+  if (roboCiclo && roboCiclo.alvo && !roboCiclo.alvo.desde) {
+    registraCiclo("DESCARTADO", 0, `${roboCiclo.liga} · ciclo antigo sem carimbo (pre-fix) anulado no boot`);
+    roboCiclo = null;
+  }
 }
 async function salvaRoboLedger() {
   if (!GH_T) return;
@@ -1493,7 +1498,7 @@ async function salvaRoboLedger() {
 carregaRobo();
 function registraCiclo(resultado, unidades, detalhe) {
   roboLedger.ciclos++;
-  if (resultado === "GREEN") roboLedger.greens++; else if (resultado === "RED_CICLO") roboLedger.redsCiclo++; else if (resultado === "ABORT") roboLedger.aborts++;
+  if (resultado === "GREEN") roboLedger.greens++; else if (resultado === "RED_CICLO") roboLedger.redsCiclo++; else if (resultado === "ABORT") roboLedger.aborts++; else roboLedger.descartes = (roboLedger.descartes || 0) + 1;
   roboLedger.saldo = Math.round((roboLedger.saldo + unidades) * 10) / 10;
   roboLedger.historico.unshift({ quando: new Date().toISOString(), resultado, unidades, detalhe });
   roboLedger.historico = roboLedger.historico.slice(0, 20);
@@ -1517,12 +1522,12 @@ function atualizaRoboLedger() {
     // o alvo fechou? (procura nome+horario nos ~40 jogos mais recentes)
     if (roboCiclo.alvo) {
       // ANTI-ZUMBI: alvo sem resolucao ha 30+ min (reinicios, jogo sumiu da janela) = descarta o ciclo sem contabilizar
-      if (roboCiclo.alvo.desde && Date.now() - roboCiclo.alvo.desde > 30 * 60000) {
+      if (!roboCiclo.alvo.desde || Date.now() - roboCiclo.alvo.desde > 30 * 60000) {
         registraCiclo("DESCARTADO", 0, `${roboCiclo.liga} · ${roboCiclo.alvo.jogo} — perdi o fechamento (reinicio), ciclo anulado sem contar`);
         roboCiclo = null;
         return;
       }
-      const cauda = gAll.slice(-30);
+      const cauda = gAll.slice(-60);
       let g = cauda.find(x => x.nome === roboCiclo.alvo.jogo && roboCiclo.alvo.h && x.horario === roboCiclo.alvo.h);
       if (!g) { const soNome = cauda.filter(x => x.nome === roboCiclo.alvo.jogo); if (soNome.length === 1) g = soNome[0]; }
       if (g) {
@@ -1594,8 +1599,8 @@ function montaRobo() {
 app.get("/api/robo", (req, res) => {
   try {
     const melhor = montaRobo() || {};
-    melhor.registro = { saldo: roboLedger.saldo, ciclos: roboLedger.ciclos, greens: roboLedger.greens, redsCiclo: roboLedger.redsCiclo, aborts: roboLedger.aborts };
-    if (roboCiclo) melhor.cicloAndamento = { degrau: roboCiclo.degrau + 1, apostado: roboCiclo.apostado, esperando: roboCiclo.alvo ? roboCiclo.alvo.jogo : "proximo degrau EV+" };
+    melhor.registro = { saldo: roboLedger.saldo, ciclos: roboLedger.ciclos, greens: roboLedger.greens, redsCiclo: roboLedger.redsCiclo, aborts: roboLedger.aborts, descartes: roboLedger.descartes || 0 };
+    if (roboCiclo) melhor.cicloAndamento = { degrau: roboCiclo.degrau + 1, apostado: roboCiclo.apostado, esperando: roboCiclo.alvo ? `${roboCiclo.alvo.h || ""} ${roboCiclo.alvo.jogo}`.trim() : "proximo degrau com odd no piso" };
     if (req.query.debug) { melhor.dbgCiclo = roboCiclo; melhor.dbgHistorico = roboLedger.historico.slice(0, 6); }
     res.json(melhor);
   } catch (e) { res.status(500).json({ erro: e.message }); }
