@@ -1713,8 +1713,12 @@ app.get("/api/estudocol/:liga", (req, res) => {
         if (colAntes[j] != null && colAntes[j] >= 50) { ffN++; if (pays(games[j], mkt)) ffH++; break; }
       }
     }
-    // TESTE 1: faixas de EV (ultimos 140 jogos com odd)
+    // TESTE 1: faixas de EV (ultimos 140 jogos com odd) + CRUZADO com o estado da liga
+    const JANx = 20;
+    const serieX = chartSeries(games, mkt, JANx); // ponto k <-> jogo k+19
+    const relAntes = i => { const k = i - JANx; return (k >= 0 && k < serieX.length && base) ? serieX[k] / base * 100 : null; };
     const faixas = { "EV>+10": [0, 0], "EV_0_a_+10": [0, 0], "EV_-10_a_0": [0, 0], "EV<-10": [0, 0] };
+    const cruz = { EVpos_ligaPagante: [0, 0], EVpos_ligaMaxima: [0, 0], EVneg_ligaPagante: [0, 0], EVneg_ligaMaxima: [0, 0] };
     const ini = Math.max(150, games.length - 140);
     for (let i = ini; i < games.length; i++) {
       const g = games[i]; if (!g.odds || g.odds[oddKey(mkt)] == null) continue;
@@ -1722,11 +1726,18 @@ app.get("/api/estudocol/:liga", (req, res) => {
       try { ev = (fullEvalUpcoming([{ nome: g.nome, horario: "", casa: g.casa, fora: g.fora, odds: g.odds }], games.slice(0, i).slice(-400), mkt)[0] || {}).ev; } catch (e) {}
       if (ev == null) continue;
       const f = ev > 10 ? "EV>+10" : ev > 0 ? "EV_0_a_+10" : ev > -10 ? "EV_-10_a_0" : "EV<-10";
-      faixas[f][0]++; if (pays(g, mkt)) faixas[f][1]++;
+      faixas[f][0]++; const pagou = pays(g, mkt); if (pagou) faixas[f][1]++;
+      const r = relAntes(i);
+      if (r != null) {
+        const estado = r >= 100 ? "ligaPagante" : r < 70 ? "ligaMaxima" : null; // pagante x abrindo maxima
+        if (estado) { const ch = (ev > 0 ? "EVpos_" : "EVneg_") + estado; cruz[ch][0]++; if (pagou) cruz[ch][1]++; }
+      }
     }
     const fx = {}; for (const [k, [n, h]] of Object.entries(faixas)) fx[k] = { jogos: n, pagou: n ? Math.round(h / n * 100) : null };
+    const cz = {}; for (const [k, [n, h]] of Object.entries(cruz)) cz[k] = { jogos: n, pagou: n ? Math.round(h / n * 100) : null };
     res.json({ liga, mkt, base,
       teste_EV_por_faixa: fx,
+      cruzado_EV_x_estado: cz,
       teste_coluna: {
         aposGreen_qualquer: { n: gAnyN, proximoPagou: gAnyN ? Math.round(gAnyH / gAnyN * 100) : null },
         aposGreen_em_coluna_fraca: { n: fracaN, proximoPagou: fracaN ? Math.round(fracaH / fracaN * 100) : null },
