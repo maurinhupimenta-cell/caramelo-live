@@ -1,10 +1,16 @@
 {
- "saldo": -3.2,
- "ciclos": 5,
+ "saldo": -4.2,
+ "ciclos": 6,
  "greens": 1,
  "redsCiclo": 0,
- "aborts": 3,
+ "aborts": 4,
  "historico": [
+  {
+   "quando": "2026-07-13T13:49:34.566Z",
+   "resultado": "ABORT",
+   "unidades": -1,
+   "detalhe": "super · janela fechou no meio do ciclo"
+  },
   {
    "quando": "2026-07-13T13:33:09.573Z",
    "resultado": "ABORT",
@@ -37,11 +43,17 @@
   }
  ],
  "cicloAberto": {
-  "liga": "super",
-  "degrau": 1,
-  "apostado": 1,
-  "alvo": null,
-  "iniciadoEm": 1783950004467
+  "liga": "premier",
+  "degrau": 0,
+  "apostado": 0,
+  "alvo": {
+   "h": "14:51",
+   "jogo": "Newcastle x Palace",
+   "odd": 3.8,
+   "unidades": 1,
+   "desde": 1783950642965
+  },
+  "iniciadoEm": 1783950642965
  },
  "descartes": 1
 }
