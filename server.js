@@ -1648,6 +1648,33 @@ app.get("/api/dicas", (req, res) => {
   } catch (e) { res.status(500).json({ erro: e.message }); }
 });
 
+// ===== ESTUDO ANCORA: jogos com ancora pagam acima da base? (afirmacao do usuario) =====
+app.get("/api/estudoancora/:liga", (req, res) => {
+  try {
+    const liga = req.params.liga, mkt = req.query.mkt || "o35";
+    const d = store[liga];
+    if (!d || !d.games || d.games.length < 300) return res.json({ erro: "historico insuficiente" });
+    const games = d.games;
+    const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
+    let comN = 0, comH = 0, forteN = 0, forteH = 0, semN = 0, semH = 0;
+    const ini = Math.max(200, games.length - 150);
+    for (let i = ini; i < games.length; i++) {
+      const g = games[i];
+      const hist = games.slice(0, i);
+      let anc = null;
+      try { anc = avaliaAncora({ nome: g.nome, casa: g.casa, fora: g.fora, odds: g.odds || {} }, anchorStats(hist), bigPlacarStats(hist)); } catch (e) {}
+      const pagou = pays(g, mkt);
+      if (anc) { comN++; if (pagou) comH++; if (String(anc.nivel || "").includes("FORTE")) { forteN++; if (pagou) forteH++; } }
+      else { semN++; if (pagou) semH++; }
+    }
+    const pc = (h, n) => n ? Math.round(h / n * 100) : null;
+    res.json({ liga, mkt, base,
+      comAncora: { jogos: comN, pagou: pc(comH, comN) },
+      ancoraFORTE: { jogos: forteN, pagou: pc(forteH, forteN) },
+      semAncora: { jogos: semN, pagou: pc(semH, semN) } });
+  } catch (e) { res.status(500).json({ erro: e.message }); }
+});
+
 // ===== ESTUDO COLUNA + FAIXAS DE EV (hipoteses do usuario) =====
 app.get("/api/estudocol/:liga", (req, res) => {
   try {
