@@ -1,10 +1,16 @@
 {
- "saldo": -18.4,
- "ciclos": 12,
+ "saldo": -25.4,
+ "ciclos": 13,
  "greens": 2,
- "redsCiclo": 2,
+ "redsCiclo": 3,
  "aborts": 7,
  "historico": [
+  {
+   "quando": "2026-07-13T16:15:06.374Z",
+   "resultado": "RED_CICLO",
+   "unidades": -7,
+   "detalhe": "super · ciclo perdido (3 tiros)"
+  },
   {
    "quando": "2026-07-13T15:48:33.172Z",
    "resultado": "ABORT",
@@ -80,15 +86,9 @@
  ],
  "cicloAberto": {
   "liga": "super",
-  "degrau": 2,
-  "apostado": 3,
-  "alvo": {
-   "h": "17:07",
-   "jogo": "Belo Horizonte x Sao Paulo",
-   "odd": 3.6,
-   "unidades": 4,
-   "desde": 1783958761875
-  },
+  "degrau": 3,
+  "apostado": 7,
+  "alvo": null,
   "iniciadoEm": 1783957724672
  },
  "descartes": 1
