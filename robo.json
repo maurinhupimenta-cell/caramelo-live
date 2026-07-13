@@ -1,10 +1,16 @@
 {
  "saldo": -29.4,
- "ciclos": 15,
+ "ciclos": 16,
  "greens": 2,
  "redsCiclo": 3,
  "aborts": 9,
  "historico": [
+  {
+   "quando": "2026-07-13T17:28:02.886Z",
+   "resultado": "DESCARTADO",
+   "unidades": 0,
+   "detalhe": "euro · França x Alemanha — alvo sem fechamento em 15min (reinicio/liga trocada), anulado sem contar"
+  },
   {
    "quando": "2026-07-13T16:53:00.888Z",
    "resultado": "ABORT",
@@ -100,9 +106,15 @@
   "liga": "euro",
   "degrau": 2,
   "apostado": 3,
-  "alvo": null,
+  "alvo": {
+   "h": "18:13",
+   "jogo": "França x Alemanha",
+   "odd": 4.2,
+   "unidades": 4,
+   "desde": 1783962782580
+  },
   "iniciadoEm": 1783961581789
  },
- "descartes": 1,
+ "descartes": 2,
  "consumidas": {}
 }
