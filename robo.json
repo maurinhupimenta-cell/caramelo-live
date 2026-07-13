@@ -1,10 +1,16 @@
 {
- "saldo": -9.9,
- "ciclos": 23,
+ "saldo": -16.9,
+ "ciclos": 24,
  "greens": 5,
- "redsCiclo": 3,
+ "redsCiclo": 4,
  "aborts": 13,
  "historico": [
+  {
+   "quando": "2026-07-13T19:26:06.784Z",
+   "resultado": "RED_CICLO",
+   "unidades": -7,
+   "detalhe": "super · ciclo perdido (3 tiros)"
+  },
   {
    "quando": "2026-07-13T18:58:01.782Z",
    "resultado": "ABORT",
@@ -118,27 +124,17 @@
    "resultado": "ABORT",
    "unidades": -3,
    "detalhe": "super · janela fechou no meio do ciclo"
-  },
-  {
-   "quando": "2026-07-13T13:11:04.966Z",
-   "resultado": "GREEN",
-   "unidades": 3.8,
-   "detalhe": "euro · Portugal x Dinamarca @4.75 (degrau 1)"
   }
  ],
  "cicloAberto": {
   "liga": "super",
-  "degrau": 2,
-  "apostado": 3,
-  "alvo": {
-   "h": "20:16",
-   "jogo": "Buenos Aires x La Boca",
-   "odd": 4.33,
-   "unidades": 4,
-   "desde": 1783970164082
-  },
+  "degrau": 3,
+  "apostado": 7,
+  "alvo": null,
   "iniciadoEm": 1783969082983
  },
  "descartes": 2,
- "consumidas": {}
+ "consumidas": {
+  "super": true
+ }
 }
