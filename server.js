@@ -1882,7 +1882,7 @@ app.get("/api/estudocol/:liga", (req, res) => {
       }
     }
     // TESTE 1: faixas de EV (ultimos 140 jogos com odd) + CRUZADO com o estado da liga
-    const JANx = 20;
+    const JANx = Math.max(10, Math.min(120, parseInt(req.query.jan) || 20)); // janela da zona (20=1h, 60=3h)
     const serieX = chartSeries(games, mkt, JANx); // ponto k <-> jogo k+19
     const relAntes = i => { const k = i - JANx; return (k >= 0 && k < serieX.length && base) ? serieX[k] / base * 100 : null; };
     const faixas = { "EV>+10": [0, 0], "EV_0_a_+10": [0, 0], "EV_-10_a_0": [0, 0], "EV<-10": [0, 0] };
