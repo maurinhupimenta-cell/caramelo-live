@@ -1,10 +1,16 @@
 {
- "saldo": -21.9,
- "ciclos": 21,
- "greens": 4,
+ "saldo": -6.9,
+ "ciclos": 22,
+ "greens": 5,
  "redsCiclo": 3,
  "aborts": 12,
  "historico": [
+  {
+   "quando": "2026-07-13T18:32:04.282Z",
+   "resultado": "GREEN",
+   "unidades": 15,
+   "detalhe": "euro · Albânia x Croácia @5.5 (degrau 3)"
+  },
   {
    "quando": "2026-07-13T18:11:05.484Z",
    "resultado": "GREEN",
@@ -118,21 +124,23 @@
    "resultado": "ABORT",
    "unidades": -3,
    "detalhe": "super · janela fechou no meio do ciclo"
-  },
-  {
-   "quando": "2026-07-13T12:45:01.841Z",
-   "resultado": "DESCARTADO",
-   "unidades": 0,
-   "detalhe": "euro · ciclo antigo sem carimbo (pre-fix) anulado no boot"
   }
  ],
  "cicloAberto": {
   "liga": "euro",
   "degrau": 2,
   "apostado": 3,
-  "alvo": null,
+  "alvo": {
+   "h": "19:23",
+   "jogo": "Albânia x Croácia",
+   "odd": 5.5,
+   "unidades": 4,
+   "desde": 1783967104680
+  },
   "iniciadoEm": 1783966266583
  },
  "descartes": 2,
- "consumidas": {}
+ "consumidas": {
+  "euro": true
+ }
 }
