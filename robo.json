@@ -1,10 +1,16 @@
 {
  "saldo": -8.9,
- "ciclos": 27,
+ "ciclos": 28,
  "greens": 6,
  "redsCiclo": 4,
  "aborts": 13,
  "historico": [
+  {
+   "quando": "2026-07-13T20:47:01.736Z",
+   "resultado": "DESCARTADO",
+   "unidades": 0,
+   "detalhe": "super · Quito x Guayaquil — alvo sem fechamento em 15min (reinicio/liga trocada), anulado sem contar"
+  },
   {
    "quando": "2026-07-13T20:30:03.045Z",
    "resultado": "DESCARTADO",
@@ -118,12 +124,6 @@
    "resultado": "RED_CICLO",
    "unidades": -7,
    "detalhe": "premier · ciclo perdido (3 tiros)"
-  },
-  {
-   "quando": "2026-07-13T14:26:29.169Z",
-   "resultado": "RED_CICLO",
-   "unidades": -7,
-   "detalhe": "premier · ciclo perdido (3 tiros)"
   }
  ],
  "cicloAberto": {
@@ -139,6 +139,6 @@
   },
   "iniciadoEm": 1783974684738
  },
- "descartes": 4,
+ "descartes": 5,
  "consumidas": {}
 }
