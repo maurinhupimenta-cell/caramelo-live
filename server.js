@@ -1000,6 +1000,14 @@ function completaOdds(o) {
 }
 
 // MAXIMAS DE REDS: maior corda de nao-pagamento por janela de tempo (~3min/jogo) + seca atual
+function taxaJanelas(gamesArr, mkt) {
+  const out = {};
+  for (const [k, n] of Object.entries({ h3: 60, h6: 120, h12: 240, h24: 480 })) {
+    const g = gamesArr.slice(-n);
+    out[k] = g.length ? Math.round(g.filter(x => pays(x, mkt)).length / g.length * 100) : null;
+  }
+  return out;
+}
 function maximasReds(gamesArr, mkt) {
   const janelas = { h3: 60, h6: 120, h12: 240, h24: 480 };
   const out = {};
@@ -1460,7 +1468,7 @@ async function salvaRoboLedger() {
 carregaRobo();
 function registraCiclo(resultado, unidades, detalhe) {
   roboLedger.ciclos++;
-  if (resultado === "GREEN") roboLedger.greens++; else if (resultado === "RED_CICLO") roboLedger.redsCiclo++; else roboLedger.aborts++;
+  if (resultado === "GREEN") roboLedger.greens++; else if (resultado === "RED_CICLO") roboLedger.redsCiclo++; else if (resultado === "ABORT") roboLedger.aborts++;
   roboLedger.saldo = Math.round((roboLedger.saldo + unidades) * 10) / 10;
   roboLedger.historico.unshift({ quando: new Date().toISOString(), resultado, unidades, detalhe });
   roboLedger.historico = roboLedger.historico.slice(0, 20);
@@ -1473,7 +1481,7 @@ function atualizaRoboLedger() {
     if (!roboCiclo) {
       if (melhor && melhor.degraus && melhor.degraus[0]) {
         const d0 = melhor.degraus[0];
-        roboCiclo = { liga: melhor.liga, degrau: 0, apostado: 0, alvo: { h: d0.h, jogo: d0.jogo, odd: d0.odd, unidades: 1 }, iniciadoEm: Date.now() };
+        roboCiclo = { liga: melhor.liga, degrau: 0, apostado: 0, alvo: { h: d0.h, jogo: d0.jogo, odd: d0.odd, unidades: 1, desde: Date.now() }, iniciadoEm: Date.now() };
         salvaRoboLedger();
       }
       return;
@@ -1483,7 +1491,15 @@ function atualizaRoboLedger() {
     const gAll = d.gamesAll || d.games || [];
     // o alvo fechou? (procura nome+horario nos ~40 jogos mais recentes)
     if (roboCiclo.alvo) {
-      const g = gAll.slice(-40).find(x => x.nome === roboCiclo.alvo.jogo && (!roboCiclo.alvo.h || x.horario === roboCiclo.alvo.h));
+      // ANTI-ZUMBI: alvo sem resolucao ha 30+ min (reinicios, jogo sumiu da janela) = descarta o ciclo sem contabilizar
+      if (roboCiclo.alvo.desde && Date.now() - roboCiclo.alvo.desde > 30 * 60000) {
+        registraCiclo("DESCARTADO", 0, `${roboCiclo.liga} · ${roboCiclo.alvo.jogo} — perdi o fechamento (reinicio), ciclo anulado sem contar`);
+        roboCiclo = null;
+        return;
+      }
+      const cauda = gAll.slice(-30);
+      let g = cauda.find(x => x.nome === roboCiclo.alvo.jogo && roboCiclo.alvo.h && x.horario === roboCiclo.alvo.h);
+      if (!g) { const soNome = cauda.filter(x => x.nome === roboCiclo.alvo.jogo); if (soNome.length === 1) g = soNome[0]; }
       if (g) {
         if (pays(g, "o35")) {
           const lucro = Math.round((roboCiclo.alvo.unidades * roboCiclo.alvo.odd - (roboCiclo.apostado + roboCiclo.alvo.unidades)) * 10) / 10;
@@ -1507,7 +1523,7 @@ function atualizaRoboLedger() {
     if (!roboCiclo.alvo) {
       if (melhor && melhor.liga === roboCiclo.liga && melhor.degraus && melhor.degraus[0]) {
         const dn = melhor.degraus[0];
-        roboCiclo.alvo = { h: dn.h, jogo: dn.jogo, odd: dn.odd, unidades: [1, 2, 4][roboCiclo.degrau] };
+        roboCiclo.alvo = { h: dn.h, jogo: dn.jogo, odd: dn.odd, unidades: [1, 2, 4][roboCiclo.degrau], desde: Date.now() };
         salvaRoboLedger();
       } else if (!melhor || melhor.liga !== roboCiclo.liga) {
         // janela fechou sem alvo: aborta o ciclo (perde o que apostou)
@@ -1544,7 +1560,7 @@ function montaRobo() {
       if (p.ev > 0) degraus.push({ papel: papeis[degraus.length], unidades: [1, 2, 4][degraus.length], h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev });
       else if (pulados.length < 4) pulados.push({ h: p.horario || "", jogo: p.nome, odd: p.odd, ev: p.ev });
     }
-    melhor = { liga, rel, pagando: cur, base: Math.round(base * 10) / 10, degraus, pulados, teste: rel >= 60 };
+    melhor = { liga, rel, pagando: cur, base: Math.round(base * 10) / 10, degraus, pulados, teste: rel >= 60, taxas: taxaJanelas(d.gamesAll || games, mkt) };
   }
   return melhor;
 }
@@ -1553,6 +1569,7 @@ app.get("/api/robo", (req, res) => {
     const melhor = montaRobo() || {};
     melhor.registro = { saldo: roboLedger.saldo, ciclos: roboLedger.ciclos, greens: roboLedger.greens, redsCiclo: roboLedger.redsCiclo, aborts: roboLedger.aborts };
     if (roboCiclo) melhor.cicloAndamento = { degrau: roboCiclo.degrau + 1, apostado: roboCiclo.apostado, esperando: roboCiclo.alvo ? roboCiclo.alvo.jogo : "proximo degrau EV+" };
+    if (req.query.debug) { melhor.dbgCiclo = roboCiclo; melhor.dbgHistorico = roboLedger.historico.slice(0, 6); }
     res.json(melhor);
   } catch (e) { res.status(500).json({ erro: e.message }); }
 });
