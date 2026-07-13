@@ -1000,6 +1000,18 @@ function completaOdds(o) {
 }
 
 // MAXIMAS DE REDS: maior corda de nao-pagamento por janela de tempo (~3min/jogo) + seca atual
+function colunaPct(gamesArr, horario, mkt) {
+  if (!horario || !horario.includes(":")) return null;
+  const min = horario.split(":")[1];
+  const hist = [];
+  for (let i = gamesArr.length - 1; i >= 0 && hist.length < 24; i--) {
+    const h = gamesArr[i].horario || "";
+    if (h.endsWith(":" + min)) hist.push(pays(gamesArr[i], mkt) ? 1 : 0);
+  }
+  if (!hist.length) return null;
+  const pc = n => { const s = hist.slice(0, n); return s.length ? Math.round(s.reduce((a, b) => a + b, 0) / s.length * 100) : null; };
+  return { min, h3: pc(3), h6: pc(6), h12: pc(12), h24: pc(24) };
+}
 function taxaJanelas(gamesArr, mkt) {
   const out = {};
   for (const [k, n] of Object.entries({ h3: 60, h6: 120, h12: 240, h24: 480 })) {
@@ -1295,6 +1307,7 @@ app.get("/api/liga/:liga", (req, res) => {
     const anc = ancoras[p.nome];
     const base = anc ? { ...p, ancora: anc } : { ...p };
     base.placarProvavel = placarProvavel(d.games || [], p.casa, p.fora, p.nome);
+    if (mkt !== "totft") base.coluna = colunaPct(d.gamesAll || d.games || [], p.horario, mkt);
     if (mkt !== "totft") {
       base.combo = comboDe(p);
       // rank dos MERCADOS pra ESSE jogo (qual mercado paga melhor nele)
@@ -1557,7 +1570,7 @@ function montaRobo() {
     for (const p of evs) {
       if (degraus.length >= 3) break;
       if (p.odd == null || p.ev == null) continue;
-      if (p.ev > 0) degraus.push({ papel: papeis[degraus.length], unidades: [1, 2, 4][degraus.length], h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev });
+      if (p.ev > 0) degraus.push({ papel: papeis[degraus.length], unidades: [1, 2, 4][degraus.length], h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev, col: colunaPct(d.gamesAll || games, p.horario, mkt) });
       else if (pulados.length < 4) pulados.push({ h: p.horario || "", jogo: p.nome, odd: p.odd, ev: p.ev });
     }
     melhor = { liga, rel, pagando: cur, base: Math.round(base * 10) / 10, degraus, pulados, teste: rel >= 60, taxas: taxaJanelas(d.gamesAll || games, mkt) };
@@ -1607,7 +1620,7 @@ app.get("/api/dicas", (req, res) => {
         const grade = (rel < 60 && p.ev > 0) ? "entrada" : ((rel < 75 && p.ev > 0) || (rel < 60 && p.ev > -3)) ? "observar" : "aguardar";
         // NOTA = o modelo na ordem: ZONA (peso dominante) > PRECO > rank/ancora/motivo (desempate)
         const nota = (100 - rel) * 2 + p.ev + (rank === 1 ? 12 : rank === 2 ? 6 : 0) + (anc ? (String(anc).includes("FORTE") ? 12 : 8) : 0) - (veto ? 10 : 0);
-        tudo.push({ liga, rel, pagando: cur, base: Math.round(base * 10) / 10, h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev, rank, anc, veto, grade, nota });
+        tudo.push({ liga, rel, pagando: cur, base: Math.round(base * 10) / 10, h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev, rank, anc, veto, grade, nota, col: colunaPct(d.gamesAll || games, p.horario, mkt) });
       }
     }
     tudo.sort((a, b) => b.nota - a.nota);
