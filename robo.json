@@ -85,13 +85,19 @@
   }
  },
  "o25": {
-  "saldo": 0,
-  "ciclos": 1,
-  "greens": 0,
+  "saldo": 1.2,
+  "ciclos": 2,
+  "greens": 1,
   "redsCiclo": 0,
   "aborts": 0,
   "descartes": 1,
   "historico": [
+   {
+    "quando": "2026-07-14T21:02:31.508Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Cabo Verde x Jordânia @2.2 (tiro 1)"
+   },
    {
     "quando": "2026-07-14T17:37:48.905Z",
     "resultado": "DESCARTADO",
@@ -99,7 +105,9 @@
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "copa": true
+  },
   "ciclo": {
    "liga": "copa",
    "degrau": 0,
@@ -113,7 +121,9 @@
    },
    "iniciadoEm": 1784062352612
   },
-  "cooldown": {}
+  "cooldown": {
+   "copa": 1784062951508
+  }
  },
  "ambas": {
   "saldo": 4,
@@ -161,19 +171,7 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "21:49",
-    "jogo": "Itaquera x La Plata",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1784061694111
-   },
-   "iniciadoEm": 1784061694111
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784050140511,
    "super": 1784052435011,
