@@ -1284,6 +1284,11 @@ app.get("/api/liga/:liga", (req, res) => {
   const tend = trendLines(analise.serie || []);
   analise = { ...analise, trend: tend };
   const _gM = d.gamesAll || d.games || [];
+  const _trioOdds = o => ({ ambs: o && o.ambs != null ? o.ambs : null, o25: o && o.o25 != null ? o.o25 : null, o35: o && o.o35 != null ? o.o35 : null });
+  const mosaico = {
+    passados: _gM.slice(-66).map(g => ({ h: g.horario || "", casa: g.casa, fora: g.fora, placar: g.a + "-" + g.b, total: g.total, odds: _trioOdds(g.odds) })),
+    futuros: (d.upcomingRaw || []).map(u => ({ h: u.horario || "", casa: u.casa, fora: u.fora, odds: _trioOdds(u.odds) }))
+  };
   const maximas = {};
   for (const _mm of ["o25", "o35", "ambas", "ge5"]) maximas[_mm] = maximasReds(_gM, _mm);
 
@@ -1349,6 +1354,7 @@ app.get("/api/liga/:liga", (req, res) => {
     fetchedAt: d.fetchedAt,
     analise,
     maximas,
+    mosaico,
     proximos,
     rankTimes,
     ultimos: d.ultimos,

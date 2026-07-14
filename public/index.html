@@ -196,6 +196,14 @@ async function carregaDicas(mkt){
     }).join('')+`<div class="note" style="font-size:11px;margin:2px 0 10px">Ordem do modelo: 🌡️ zona (quando) → 💰 piso de odd (se: O3.5 ≥3.60 · O2.5 ≥2.00) → 🏆⚓ desempate (qual). EV é referência — acima de +10, historicamente decepciona. Estatística, não certeza — unidade de 1% da banca.</div>`;
   }catch(e){}
 }
+window.__mosaicoClick||(window.__mosaicoClick=1,document.addEventListener('click',function(e){
+  const t=e.target.closest('[data-team]');const o=e.target.closest('[data-odd]');
+  if(!t&&!o)return;
+  const tog=(k,v)=>{let a=[];try{a=JSON.parse(localStorage.getItem(k)||'[]')}catch(_){}
+    const i=a.indexOf(v);i>=0?a.splice(i,1):a.push(v);localStorage.setItem(k,JSON.stringify(a.slice(-12)));};
+  if(t)tog('amdMarkTimes',t.dataset.team);else tog('amdMarkOdds',String(o.dataset.odd));
+  try{if(window.__lastD&&typeof render==='function')render(window.__lastD);}catch(_){}
+}));
 async function tick(){
   const liga=ligaSel.value, mkt=mktSel.value, qtd=qtdSel.value;
   try{
@@ -208,7 +216,8 @@ async function tick(){
     if(d.erro){ $('#liveinfo').textContent='aguardando dados...'; return; }
     // so re-renderiza se os dados mudaram (evita travar reconstruindo tudo a cada 10s)
     const hash=JSON.stringify({u:d.lastUpdated,n:(d.proximos||[]).length,s:d.analise&&d.analise.serie,cr:d.curvaReal,m:mkt,l:liga,q:qtd});
-    if(hash!==_lastHash){ _lastHash=hash; render(d);
+    if(hash!==_lastHash){ _lastHash=hash; window.__lastD=d;
+    render(d);
     carregaDicas(mkt);
     carregaRobo(); }
     const upd=d.lastUpdated?new Date(d.lastUpdated):null;
@@ -532,13 +541,38 @@ function render(d){
   const sigHuman=s=>s.split('').map(c=>c==='1'?'✓':'·').join(' ');
   const sigAtual=a.atual||{sig:'',n:0,p:0};
   const sigHtml=a.signatures.map(s=>`<tr><td>${sigHuman(s.sig)}</td><td>${s.n}</td><td>${s.paid}</td><td class="${s.p>=a.base?'pos':''}">${s.p}%</td></tr>`).join('');
-  const _pu=u=>{const _p=(u.placar||'').split('-').map(Number);return mkt==='o25'?u.total>=3:mkt==='o35'?u.total>=4:mkt==='ge5'?u.total>=5:mkt==='ambas'?(_p[0]>0&&_p[1]>0):mkt==='u05'?u.total<=0:mkt==='u15'?u.total<=1:mkt==='u25'?u.total<=2:null;};
-  const _ul=(d.ultimos||[]).slice().reverse();
-  const _gc=_ul.filter(u=>_pu(u)===true).length;
-  const _mx=d.maximas;
-  const _tdS='padding:4px 8px;border-bottom:1px solid #1c2430;text-align:center';
-  const maximasHtml=_mx?`<div style="margin-top:14px"><b style="font-size:13px">📏 Máxima de reds seguidos <span class="note">(maior pulo sem pagar por janela · dimensiona o gale)</span></b><table style="width:100%;margin-top:6px;font-size:12px;border-collapse:collapse"><tr style="color:#8b98a8"><td style="${_tdS};text-align:left">mercado</td><td style="${_tdS}">3h</td><td style="${_tdS}">6h</td><td style="${_tdS}">12h</td><td style="${_tdS}">24h</td><td style="${_tdS}">seca atual</td></tr>${['o25','o35','ambas','ge5'].map(m=>{const r=_mx[m];if(!r)return '';const on=m===mkt;return `<tr style="${on?'color:#58a6ff;font-weight:700':'color:#c7d0da'}"><td style="${_tdS};text-align:left">${nomeMkt[m]}${on?' ◀':''}</td><td style="${_tdS}">${r.h3}</td><td style="${_tdS}">${r.h6}</td><td style="${_tdS}">${r.h12}</td><td style="${_tdS}">${r.h24}</td><td style="${_tdS};font-weight:800;color:${r.agora>=r.h24?'var(--amber)':'inherit'}">${r.agora}</td></tr>`;}).join('')}</table></div>`:'';
-  const ultimos=`<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap"><b style="font-size:13px">📜 Últimos ${_ul.length} jogos <span class="note">(mais recente primeiro)</span></b>${mkt!=='totft'?`<span style="font-size:12px"><b style="color:var(--greenb)">${_gc} 🟢</b> · <b style="color:var(--red)">${_ul.length-_gc} 🔴</b></span>`:''}</div><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));gap:6px">${_ul.map((u,i)=>{const pg=_pu(u);return `<div style="background:#161b22;border-left:3px solid ${pg===true?'#3fb950':pg===false?'#f85149':'#30363d'};border-radius:6px;padding:6px 8px;font-size:12px">${(u.nome||'').replace(' x ',` <b style="color:${pg===true?'#3fb950':'#e6edf3'}">${u.placar}</b> `)}${i===0?`<div style="color:#58a6ff;font-size:9px;font-weight:700">＋ recente</div>`:''}</div>`;}).join('')}</div>`;
+  const _mkTimes=(()=>{try{return JSON.parse(localStorage.getItem('amdMarkTimes')||'[]')}catch(e){return[]}})();
+  const _mkOdds=(()=>{try{return JSON.parse(localStorage.getItem('amdMarkOdds')||'[]')}catch(e){return[]}})();
+  const _pg=(total,placar)=>{const _p=(placar||'').split('-').map(Number);return mkt==='o25'?total>=3:mkt==='o35'?total>=4:mkt==='ge5'?total>=5:mkt==='ambas'?(_p[0]>0&&_p[1]>0):mkt==='u05'?total<=0:mkt==='u15'?total<=1:mkt==='u25'?total<=2:null;};
+  const _tm=nome=>`<span data-team="${nome}" style="cursor:pointer;${_mkTimes.includes(nome)?'color:#e3b341;font-weight:800':''}">${nome}</span>`;
+  const _od=v=>v==null?'—':`<b data-odd="${v}" style="cursor:pointer;${_mkOdds.includes(String(v))?'color:#bc8cff;text-decoration:underline':''}">${v}</b>`;
+  const _oddsLinha=o=>`<div style="color:#8b949e;font-size:9px;margin-top:2px">A ${_od(o.ambs)} · 2.5 ${_od(o.o25)} · 3.5 ${_od(o.o35)}</div>`;
+  const _marcado=(c,f)=>_mkTimes.includes(c)||_mkTimes.includes(f);
+  let ultimos='';
+  {
+    const M=d.mosaico||{passados:[],futuros:[]};
+    const horaDe=h=>(h||'').split(':')[0], minDe=h=>(h||'').split(':')[1];
+    const mins=[...new Set([...M.passados,...M.futuros].map(g=>minDe(g.h)).filter(Boolean))].sort((a,b)=>+a-+b);
+    const horas=[...new Set(M.passados.map(g=>horaDe(g.h)).filter(Boolean))];
+    const horasShow=horas.slice(-4);
+    const celVazia=`<div style="background:#10151d;border-radius:5px;min-height:34px"></div>`;
+    const linha=(hh,jogos,fut)=>{
+      const porMin={};jogos.forEach(g=>porMin[minDe(g.h)]=g);
+      let greens=0,tot=0;
+      const cels=mins.map(mm=>{
+        const g=porMin[mm];if(!g)return celVazia;
+        if(fut)return `<div style="background:#0d2137;border:1px solid #1f6feb66;border-radius:5px;padding:3px 5px;font-size:10px;${_marcado(g.casa,g.fora)?'outline:2px solid #e3b341;':''}">${_tm(g.casa)} x ${_tm(g.fora)}${_oddsLinha(g.odds||{})}</div>`;
+        const pg=_pg(g.total,g.placar);if(pg!=null){tot++;if(pg)greens++;}
+        return `<div style="background:#161b22;border-left:3px solid ${pg===true?'#3fb950':pg===false?'#f85149':'#30363d'};border-radius:5px;padding:3px 5px;font-size:10px;${_marcado(g.casa,g.fora)?'outline:2px solid #e3b341;':''}">${_tm(g.casa)} <b style="color:${pg===true?'#3fb950':'#e6edf3'}">${g.placar}</b> ${_tm(g.fora)}${_oddsLinha(g.odds||{})}</div>`;
+      }).join('');
+      const pct=tot?Math.round(greens/tot*100):null;
+      const pctHtml=fut?`<div style="background:#161b22;color:#8b949e;border-radius:5px;text-align:center;align-self:center;padding:4px 0;font-size:9px">—</div>`:`<div style="background:${pct>=34?'#0f2417':pct===0?'#2b1113':'#161b22'};color:${pct>=34?'#3fb950':pct===0?'#f85149':'#c9d1d9'};font-weight:800;border-radius:5px;text-align:center;align-self:center;padding:4px 0;font-size:10px">${pct==null?'—':pct+'%'}</div>`;
+      return `<div style="color:${fut?'#e3b341':'#58a6ff'};font-weight:700;text-align:center;align-self:center;font-size:10px">${fut?'FUT':hh}</div>${cels}${pctHtml}`;
+    };
+    const corpo=horasShow.map(hh=>linha(hh,M.passados.filter(g=>horaDe(g.h)===hh),false)).join('')+(M.futuros.length?linha('',M.futuros,true):'');
+    const cab=`<div style="color:#8b949e;text-align:center;font-size:9px;align-self:center">H⏱️</div>${mins.map(m=>`<div style="color:#8b949e;text-align:center;font-size:9px">:${m}</div>`).join('')}<div style="color:#8b949e;text-align:center;font-size:9px">%hora</div>`;
+    ultimos=`<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap;gap:4px"><b style="font-size:13px">🧩 Mosaico — últimas horas + próxima rodada <span class="note">(${nomeMkt[mkt]||mkt})</span></b><span class="note" style="font-size:10px">clique num <b style="color:#e3b341">time</b> ou numa <b style="color:#bc8cff">odd</b> para marcar</span></div><div style="overflow-x:auto"><div style="display:grid;grid-template-columns:30px repeat(${mins.length},minmax(118px,1fr)) 44px;gap:4px;min-width:${30+mins.length*122+48}px">${cab}${corpo}</div></div>`;
+  }
 
   const _cur=(a.pagandoTempoReal!=null)?a.pagandoTempoReal:((a.serie&&a.serie.length)?a.serie[a.serie.length-1]:null);
   const _rel=(!a.ehTotalGols&&_cur!=null&&a.base)?Math.round(_cur/a.base*100):null;
