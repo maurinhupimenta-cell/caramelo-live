@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": 5.5,
-  "ciclos": 53,
-  "greens": 10,
+  "saldo": 8.7,
+  "ciclos": 54,
+  "greens": 11,
   "redsCiclo": 4,
   "aborts": 15,
   "descartes": 24,
   "historico": [
+   {
+    "quando": "2026-07-14T09:34:12.550Z",
+    "resultado": "GREEN",
+    "unidades": 3.2,
+    "detalhe": "super · Rio de Janeiro x Agua Branca @4.2 (tiro 1)"
+   },
    {
     "quando": "2026-07-14T09:19:13.350Z",
     "resultado": "DESCARTADO",
@@ -120,15 +126,11 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min, anulado sem contar"
-   },
-   {
-    "quando": "2026-07-14T01:25:25.335Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · Guayaquil x Santiago — alvo sem fechamento em 15min (reinicio/liga trocada), anulado sem contar"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "super": true
+  },
   "ciclo": {
    "liga": "super",
    "degrau": 0,
