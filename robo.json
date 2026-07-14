@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": 12.5,
-  "ciclos": 9,
+  "saldo": 5.5,
+  "ciclos": 10,
   "greens": 3,
-  "redsCiclo": 1,
+  "redsCiclo": 2,
   "aborts": 0,
   "descartes": 5,
   "historico": [
+   {
+    "quando": "2026-07-14T21:25:32.206Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-14T20:53:31.609Z",
     "resultado": "RED_CICLO",
@@ -63,38 +69,12 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "alvo": {
-    "h": "22:14",
-    "jogo": "Portugal x Suíça",
-    "odd": 4.2,
-    "unidades": 4,
-    "desde": 1784063669013
-   },
-   "iniciadoEm": 1784062473319,
-   "tiros": [
-    {
-     "h": "21:56",
-     "jogo": "Bélgica x Geórgia",
-     "odd": 4.5,
-     "unidades": 1
-    },
-    {
-     "h": "22:05",
-     "jogo": "Escócia x Hungria",
-     "odd": 4.75,
-     "unidades": 2
-    }
-   ],
-   "semAlvoDesde": null
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784055333206,
    "premier": 1784056666414,
-   "euro": 1784062411609
+   "euro": 1784062411609,
+   "super": 1784064332205
   }
  },
  "o25": {
