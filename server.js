@@ -1538,10 +1538,12 @@ function montaRobo(mkt) {
     if (cur == null) continue;
     const rel = Math.round(cur / base * 100);
     L.consumidas = L.consumidas || {};
+    L.cooldown = L.cooldown || {};
     if (L.consumidas[liga]) {
-      if (rel >= 85) { delete L.consumidas[liga]; salvaRoboLedger(); }
+      if (rel >= 100) { delete L.consumidas[liga]; salvaRoboLedger(); } // re-arma so com a liga de volta ao NORMAL
       else continue;
     }
+    if (L.cooldown[liga] && Date.now() - L.cooldown[liga] < 30 * 60000) continue; // descanso de 30min pos-ciclo
     if (rel >= 60) continue;
     if (melhor && rel >= melhor.rel) continue;
     const evs = (d.upcoming && d.upcoming[mkt]) || [];
@@ -1614,6 +1616,7 @@ function atualizaRoboMkt(mkt) {
         if (pays(g, mkt)) {
           const lucro = Math.round((L.ciclo.alvo.unidades * L.ciclo.alvo.odd - (L.ciclo.apostado + L.ciclo.alvo.unidades)) * 10) / 10;
           L.consumidas = L.consumidas || {}; L.consumidas[L.ciclo.liga] = true;
+          L.cooldown = L.cooldown || {}; L.cooldown[L.ciclo.liga] = Date.now();
           registraCiclo(mkt, "GREEN", lucro, `${L.ciclo.liga} · ${L.ciclo.alvo.jogo} @${L.ciclo.alvo.odd} (tiro ${L.ciclo.degrau + 1})`);
           L.ciclo = null;
           return;
@@ -1623,6 +1626,7 @@ function atualizaRoboMkt(mkt) {
         L.ciclo.alvo = null;
         if (L.ciclo.degrau >= 3) {
           L.consumidas = L.consumidas || {}; L.consumidas[L.ciclo.liga] = true;
+          L.cooldown = L.cooldown || {}; L.cooldown[L.ciclo.liga] = Date.now();
           registraCiclo(mkt, "RED_CICLO", -L.ciclo.apostado, `${L.ciclo.liga} · ciclo perdido (3 tiros)`);
           L.ciclo = null;
           return;
@@ -1631,13 +1635,24 @@ function atualizaRoboMkt(mkt) {
       }
     }
     if (!L.ciclo.alvo) {
-      if (melhor && melhor.liga === L.ciclo.liga && melhor.degraus && melhor.degraus[0] && pertenceALiga(melhor.liga, melhor.degraus[0].jogo)) {
-        const dn = melhor.degraus[0];
-        L.ciclo.alvo = { h: dn.h, jogo: dn.jogo, odd: dn.odd, unidades: [1, 2, 4][L.ciclo.degrau], desde: Date.now() };
+      // COMECOU, TERMINA (regra do usuario): o ciclo cumpre os 3 tiros mesmo se a janela fechar.
+      // O proximo degrau vem da PROPRIA liga do ciclo: primeiro jogo futuro com odd no piso.
+      const evs2 = (d.upcoming && d.upcoming[mkt]) || [];
+      const cand = evs2.find(p => p.odd != null && p.odd >= ROBO_PISO[mkt] && pertenceALiga(L.ciclo.liga, p.nome));
+      if (cand) {
+        L.ciclo.alvo = { h: cand.horario || "", jogo: cand.nome, odd: cand.odd, unidades: [1, 2, 4][L.ciclo.degrau], desde: Date.now() };
+        L.ciclo.semAlvoDesde = null;
         salvaRoboLedger();
-      } else if (!melhor || melhor.liga !== L.ciclo.liga) {
-        if (L.ciclo.apostado > 0) registraCiclo(mkt, "ABORT", -L.ciclo.apostado, `${L.ciclo.liga} · janela fechou no meio do ciclo`);
-        L.ciclo = null;
+      } else {
+        // seguranca: sem candidato no piso por 20min (liga parada/sem odds) -> encerra com o apostado
+        if (!L.ciclo.semAlvoDesde) { L.ciclo.semAlvoDesde = Date.now(); salvaRoboLedger(); }
+        else if (Date.now() - L.ciclo.semAlvoDesde > 20 * 60000) {
+          L.consumidas = L.consumidas || {}; L.consumidas[L.ciclo.liga] = true;
+          L.cooldown = L.cooldown || {}; L.cooldown[L.ciclo.liga] = Date.now();
+          if (L.ciclo.apostado > 0) registraCiclo(mkt, "ABORT", -L.ciclo.apostado, `${L.ciclo.liga} · 20min sem jogo no piso, ciclo encerrado`);
+          else registraCiclo(mkt, "DESCARTADO", 0, `${L.ciclo.liga} · 20min sem jogo no piso`);
+          L.ciclo = null;
+        }
       }
     }
   } catch (e) {}
