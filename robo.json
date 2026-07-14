@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": 11,
-  "ciclos": 3,
-  "greens": 1,
+  "saldo": 13.8,
+  "ciclos": 4,
+  "greens": 2,
   "redsCiclo": 0,
   "aborts": 0,
   "descartes": 2,
   "historico": [
+   {
+    "quando": "2026-07-14T18:55:33.207Z",
+    "resultado": "GREEN",
+    "unidades": 2.8,
+    "detalhe": "copa · Costa do Marfim x Equador @3.8 (tiro 1)"
+   },
    {
     "quando": "2026-07-14T18:46:32.304Z",
     "resultado": "DESCARTADO",
@@ -26,7 +32,9 @@
     "detalhe": "copa · Bélgica x Austrália @4.5 (tiro 3)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "copa": true
+  },
   "ciclo": {
    "liga": "copa",
    "degrau": 0,
@@ -41,7 +49,7 @@
    "iniciadoEm": 1784054793610
   },
   "cooldown": {
-   "copa": 1784048853509
+   "copa": 1784055333206
   }
  },
  "o25": {
