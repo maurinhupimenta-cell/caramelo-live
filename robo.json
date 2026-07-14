@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -2.9,
-  "ciclos": 36,
-  "greens": 8,
+  "saldo": 1.1,
+  "ciclos": 37,
+  "greens": 9,
   "redsCiclo": 4,
   "aborts": 14,
   "descartes": 10,
   "historico": [
+   {
+    "quando": "2026-07-14T02:28:01.352Z",
+    "resultado": "GREEN",
+    "unidades": 4,
+    "detalhe": "copa · Senegal x Áustria @5 (tiro 1)"
+   },
    {
     "quando": "2026-07-14T02:19:03.857Z",
     "resultado": "DESCARTADO",
@@ -120,15 +126,11 @@
     "resultado": "ABORT",
     "unidades": -1,
     "detalhe": "euro · janela fechou no meio do ciclo"
-   },
-   {
-    "quando": "2026-07-13T17:46:04.983Z",
-    "resultado": "GREEN",
-    "unidades": 7,
-    "detalhe": "copa · Irã x Nova Zelândia @5 (degrau 2)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "copa": true
+  },
   "ciclo": {
    "liga": "copa",
    "degrau": 0,
