@@ -79,13 +79,19 @@
   "cooldown": {}
  },
  "ambas": {
-  "saldo": 3,
-  "ciclos": 4,
-  "greens": 2,
+  "saldo": 4,
+  "ciclos": 5,
+  "greens": 3,
   "redsCiclo": 0,
   "aborts": 0,
   "descartes": 2,
   "historico": [
+   {
+    "quando": "2026-07-14T19:20:04.409Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · West Ham x Everton @2.05 (tiro 1)"
+   },
    {
     "quando": "2026-07-14T18:07:15.012Z",
     "resultado": "GREEN",
@@ -111,7 +117,9 @@
     "detalhe": "super · alvo sem fechamento em 15min, anulado sem contar"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "premier": true
+  },
   "ciclo": {
    "liga": "premier",
    "degrau": 0,
@@ -127,7 +135,8 @@
   },
   "cooldown": {
    "euro": 1784050140511,
-   "super": 1784052435011
+   "super": 1784052435011,
+   "premier": 1784056804409
   }
  }
 }
