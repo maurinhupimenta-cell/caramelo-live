@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": 8.7,
-  "ciclos": 55,
-  "greens": 11,
+  "saldo": 11.5,
+  "ciclos": 56,
+  "greens": 12,
   "redsCiclo": 4,
   "aborts": 15,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-14T09:59:53.949Z",
+    "resultado": "GREEN",
+    "unidades": 2.8,
+    "detalhe": "premier · Brighton x Chelsea @3.8 (tiro 1)"
+   },
    {
     "quando": "2026-07-14T09:49:31.153Z",
     "resultado": "DESCARTADO",
@@ -120,15 +126,11 @@
     "resultado": "GREEN",
     "unidades": 4,
     "detalhe": "copa · Senegal x Áustria @5 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-14T02:19:03.857Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min, anulado sem contar"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "premier": true
+  },
   "ciclo": {
    "liga": "premier",
    "degrau": 0,
@@ -261,18 +263,6 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "alvo": {
-    "h": "10:57",
-    "jogo": "Islington x Norwich",
-    "odd": 2,
-    "unidades": 4,
-    "desde": 1784022114048
-   },
-   "iniciadoEm": 1784020511751
-  }
+  "ciclo": null
  }
 }
