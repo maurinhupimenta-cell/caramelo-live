@@ -133,18 +133,30 @@
    "liga": "super",
    "degrau": 2,
    "apostado": 3,
-   "alvo": null,
+   "alvo": {
+    "h": "10:13",
+    "jogo": "Belo Horizonte x Guayaquil",
+    "odd": 3.8,
+    "unidades": 4,
+    "desde": 1784019852752
+   },
    "iniciadoEm": 1784018712649
   }
  },
  "o25": {
   "saldo": -0.8,
-  "ciclos": 7,
+  "ciclos": 8,
   "greens": 2,
   "redsCiclo": 0,
   "aborts": 1,
-  "descartes": 4,
+  "descartes": 5,
   "historico": [
+   {
+    "quando": "2026-07-14T09:12:11.947Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min, anulado sem contar"
+   },
    {
     "quando": "2026-07-14T08:57:10.853Z",
     "resultado": "DESCARTADO",
