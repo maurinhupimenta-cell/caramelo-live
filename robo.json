@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": 0.1,
-  "ciclos": 44,
-  "greens": 9,
+  "saldo": 5.5,
+  "ciclos": 45,
+  "greens": 10,
   "redsCiclo": 4,
   "aborts": 15,
   "descartes": 16,
   "historico": [
+   {
+    "quando": "2026-07-14T05:38:52.696Z",
+    "resultado": "GREEN",
+    "unidades": 5.4,
+    "detalhe": "premier · Brighton x Southampton @4.2 (tiro 2)"
+   },
    {
     "quando": "2026-07-14T05:21:05.903Z",
     "resultado": "DESCARTADO",
@@ -120,20 +126,22 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · Bogota x Belo Horizonte — alvo sem fechamento em 15min (reinicio/liga trocada), anulado sem contar"
-   },
-   {
-    "quando": "2026-07-13T19:41:42.788Z",
-    "resultado": "GREEN",
-    "unidades": 8,
-    "detalhe": "premier · Watford x West Ham @5.5 (degrau 2)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "premier": true
+  },
   "ciclo": {
    "liga": "premier",
    "degrau": 1,
    "apostado": 1,
-   "alvo": null,
+   "alvo": {
+    "h": "06:30",
+    "jogo": "Brighton x Southampton",
+    "odd": 4.2,
+    "unidades": 2,
+    "desde": 1784006995997
+   },
    "iniciadoEm": 1784006468204
   }
  },
