@@ -1,12 +1,18 @@
 {
  "o35": {
   "saldo": 16.7,
-  "ciclos": 71,
+  "ciclos": 72,
   "greens": 14,
   "redsCiclo": 4,
   "aborts": 16,
-  "descartes": 37,
+  "descartes": 38,
   "historico": [
+   {
+    "quando": "2026-07-14T16:37:33.557Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min, anulado sem contar"
+   },
    {
     "quando": "2026-07-14T16:35:33.144Z",
     "resultado": "DESCARTADO",
@@ -120,28 +126,23 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min, anulado sem contar"
-   },
-   {
-    "quando": "2026-07-14T08:45:11.944Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "premier · alvo sem fechamento em 15min, anulado sem contar"
    }
   ],
   "consumidas": {},
   "ciclo": {
-   "liga": "super",
+   "liga": "copa",
    "degrau": 0,
    "apostado": 0,
    "alvo": {
-    "h": "17:25",
-    "jogo": "Cabo Verde x Canadá",
-    "odd": 4.5,
+    "h": "17:40",
+    "jogo": "Egito x Colômbia",
+    "odd": 4,
     "unidades": 1,
-    "desde": 1784046032757
+    "desde": 1784047054557
    },
-   "iniciadoEm": 1784046032757
-  }
+   "iniciadoEm": 1784047054557
+  },
+  "cooldown": {}
  },
  "o25": {
   "saldo": -0.3,
@@ -255,7 +256,8 @@
     "desde": 1784046515747
    },
    "iniciadoEm": 1784046515747
-  }
+  },
+  "cooldown": {}
  },
  "ambas": {
   "saldo": 2,
@@ -327,6 +329,7 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null
+  "ciclo": null,
+  "cooldown": {}
  }
 }
