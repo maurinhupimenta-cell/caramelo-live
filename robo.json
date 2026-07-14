@@ -144,13 +144,19 @@
   }
  },
  "o25": {
-  "saldo": 1.2,
-  "ciclos": 2,
-  "greens": 1,
+  "saldo": 2.2,
+  "ciclos": 3,
+  "greens": 2,
   "redsCiclo": 0,
   "aborts": 0,
   "descartes": 1,
   "historico": [
+   {
+    "quando": "2026-07-14T04:11:01.760Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Alemanha x França @2.02 (tiro 1)"
+   },
    {
     "quando": "2026-07-14T02:23:02.251Z",
     "resultado": "GREEN",
@@ -164,7 +170,9 @@
     "detalhe": "copa · alvo sem fechamento em 15min, anulado sem contar"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "euro": true
+  },
   "ciclo": {
    "liga": "euro",
    "degrau": 0,
