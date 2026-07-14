@@ -1,12 +1,18 @@
 {
  "o35": {
   "saldo": 5.5,
-  "ciclos": 47,
+  "ciclos": 48,
   "greens": 10,
   "redsCiclo": 4,
   "aborts": 15,
-  "descartes": 18,
+  "descartes": 19,
   "historico": [
+   {
+    "quando": "2026-07-14T07:01:21.015Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min, anulado sem contar"
+   },
    {
     "quando": "2026-07-14T06:46:13.599Z",
     "resultado": "DESCARTADO",
@@ -120,12 +126,6 @@
     "resultado": "ABORT",
     "unidades": -1,
     "detalhe": "premier · janela fechou no meio do ciclo"
-   },
-   {
-    "quando": "2026-07-13T20:47:01.736Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · Quito x Guayaquil — alvo sem fechamento em 15min (reinicio/liga trocada), anulado sem contar"
    }
   ],
   "consumidas": {},
