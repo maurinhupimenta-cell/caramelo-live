@@ -1,12 +1,18 @@
 {
  "o35": {
   "saldo": 5.5,
-  "ciclos": 46,
+  "ciclos": 47,
   "greens": 10,
   "redsCiclo": 4,
   "aborts": 15,
-  "descartes": 17,
+  "descartes": 18,
   "historico": [
+   {
+    "quando": "2026-07-14T06:46:13.599Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "copa · alvo sem fechamento em 15min, anulado sem contar"
+   },
    {
     "quando": "2026-07-14T06:31:11.801Z",
     "resultado": "DESCARTADO",
@@ -120,27 +126,21 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · Quito x Guayaquil — alvo sem fechamento em 15min (reinicio/liga trocada), anulado sem contar"
-   },
-   {
-    "quando": "2026-07-13T20:30:03.045Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "premier · Lima x Belo Horizonte — alvo sem fechamento em 15min (reinicio/liga trocada), anulado sem contar"
    }
   ],
   "consumidas": {},
   "ciclo": {
-   "liga": "copa",
+   "liga": "euro",
    "degrau": 0,
    "apostado": 0,
    "alvo": {
-    "h": "07:46",
-    "jogo": "Brasil x Argentina",
-    "odd": 4.2,
+    "h": "07:55",
+    "jogo": "Guayaquil x Belo Horizonte",
+    "odd": 3.75,
     "unidades": 1,
-    "desde": 1784010672601
+    "desde": 1784011574298
    },
-   "iniciadoEm": 1784010672601
+   "iniciadoEm": 1784011574298
   }
  },
  "o25": {
@@ -183,19 +183,7 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "07:31",
-    "jogo": "Colômbia x Uruguai",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1784009971697
-   },
-   "iniciadoEm": 1784009971697
-  }
+  "ciclo": null
  },
  "ambas": {
   "saldo": 1,
