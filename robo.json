@@ -1,12 +1,18 @@
 {
  "o35": {
   "saldo": 5.5,
-  "ciclos": 50,
+  "ciclos": 51,
   "greens": 10,
   "redsCiclo": 4,
   "aborts": 15,
-  "descartes": 21,
+  "descartes": 22,
   "historico": [
+   {
+    "quando": "2026-07-14T08:30:11.047Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "premier · alvo sem fechamento em 15min, anulado sem contar"
+   },
    {
     "quando": "2026-07-14T07:40:22.445Z",
     "resultado": "DESCARTADO",
@@ -120,12 +126,6 @@
     "resultado": "GREEN",
     "unidades": 3.5,
     "detalhe": "premier · Newcastle x Tottenham @4.5 (degrau 1)"
-   },
-   {
-    "quando": "2026-07-13T23:08:17.644Z",
-    "resultado": "GREEN",
-    "unidades": 3.5,
-    "detalhe": "premier · Watford x Leicester @4.5 (degrau 1)"
    }
   ],
   "consumidas": {},
@@ -187,7 +187,13 @@
    "liga": "premier",
    "degrau": 1,
    "apostado": 1,
-   "alvo": null,
+   "alvo": {
+    "h": "09:33",
+    "jogo": "Watford x Leicester",
+    "odd": 2.3,
+    "unidades": 2,
+    "desde": 1784017794054
+   },
    "iniciadoEm": 1784017255750
   }
  },
