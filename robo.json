@@ -1,12 +1,18 @@
 {
  "o35": {
   "saldo": 16.7,
-  "ciclos": 68,
+  "ciclos": 69,
   "greens": 14,
   "redsCiclo": 4,
   "aborts": 16,
-  "descartes": 34,
+  "descartes": 35,
   "historico": [
+   {
+    "quando": "2026-07-14T15:58:00.654Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "copa · alvo sem fechamento em 15min, anulado sem contar"
+   },
    {
     "quando": "2026-07-14T15:42:45.550Z",
     "resultado": "DESCARTADO",
@@ -120,12 +126,6 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min, anulado sem contar"
-   },
-   {
-    "quando": "2026-07-14T07:19:23.020Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min, anulado sem contar"
    }
   ],
   "consumidas": {},
@@ -134,13 +134,13 @@
    "degrau": 0,
    "apostado": 0,
    "alvo": {
-    "h": "16:31",
-    "jogo": "Equador x Inglaterra",
-    "odd": 4,
+    "h": "16:52",
+    "jogo": "Bélgica x Canadá",
+    "odd": 5,
     "unidades": 1,
-    "desde": 1784042691647
+    "desde": 1784043766345
    },
-   "iniciadoEm": 1784042691647
+   "iniciadoEm": 1784043766345
   }
  },
  "o25": {
@@ -241,12 +241,18 @@
  },
  "ambas": {
   "saldo": 2,
-  "ciclos": 9,
+  "ciclos": 10,
   "greens": 2,
   "redsCiclo": 0,
   "aborts": 0,
-  "descartes": 7,
+  "descartes": 8,
   "historico": [
+   {
+    "quando": "2026-07-14T15:42:45.552Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min, anulado sem contar"
+   },
    {
     "quando": "2026-07-14T14:40:20.947Z",
     "resultado": "DESCARTADO",
@@ -303,18 +309,6 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "alvo": {
-    "h": "16:37",
-    "jogo": "Brasil x Tunísia",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1784042752046
-   },
-   "iniciadoEm": 1784042003747
-  }
+  "ciclo": null
  }
 }
