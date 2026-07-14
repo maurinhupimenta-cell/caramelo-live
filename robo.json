@@ -144,13 +144,19 @@
   }
  },
  "o25": {
-  "saldo": -0.8,
-  "ciclos": 10,
-  "greens": 2,
+  "saldo": 0.7,
+  "ciclos": 11,
+  "greens": 3,
   "redsCiclo": 0,
   "aborts": 1,
   "descartes": 7,
   "historico": [
+   {
+    "quando": "2026-07-14T11:46:10.347Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "copa · Bélgica x Iraque @2.5 (tiro 1)"
+   },
    {
     "quando": "2026-07-14T10:00:10.653Z",
     "resultado": "DESCARTADO",
@@ -212,20 +218,10 @@
     "detalhe": "copa · alvo sem fechamento em 15min, anulado sem contar"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "12:37",
-    "jogo": "Bélgica x Iraque",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1784028670749
-   },
-   "iniciadoEm": 1784028670749
-  }
+  "consumidas": {
+   "copa": true
+  },
+  "ciclo": null
  },
  "ambas": {
   "saldo": 2,
@@ -278,9 +274,7 @@
     "detalhe": "copa · alvo sem fechamento em 15min, anulado sem contar"
    }
   ],
-  "consumidas": {
-   "copa": true
-  },
+  "consumidas": {},
   "ciclo": null
  }
 }
