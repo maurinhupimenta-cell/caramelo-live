@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": 13.8,
-  "ciclos": 4,
-  "greens": 2,
+  "saldo": 19.5,
+  "ciclos": 5,
+  "greens": 3,
   "redsCiclo": 0,
   "aborts": 0,
   "descartes": 2,
   "historico": [
+   {
+    "quando": "2026-07-14T19:17:46.414Z",
+    "resultado": "GREEN",
+    "unidades": 5.7,
+    "detalhe": "premier · Watford x Chelsea @4.33 (tiro 2)"
+   },
    {
     "quando": "2026-07-14T18:55:33.207Z",
     "resultado": "GREEN",
@@ -33,13 +39,20 @@
    }
   ],
   "consumidas": {
-   "copa": true
+   "copa": true,
+   "premier": true
   },
   "ciclo": {
    "liga": "premier",
    "degrau": 1,
    "apostado": 1,
-   "alvo": null,
+   "alvo": {
+    "h": "20:09",
+    "jogo": "Watford x Chelsea",
+    "odd": 4.33,
+    "unidades": 2,
+    "desde": 1784056126008
+   },
    "iniciadoEm": 1784055582613,
    "tiros": [
     {
@@ -48,10 +61,12 @@
      "odd": 4,
      "unidades": 1
     }
-   ]
+   ],
+   "semAlvoDesde": null
   },
   "cooldown": {
-   "copa": 1784055333206
+   "copa": 1784055333206,
+   "premier": 1784056666414
   }
  },
  "o25": {
@@ -107,7 +122,19 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "alvo": {
+    "h": "20:12",
+    "jogo": "West Ham x Everton",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1784056126010
+   },
+   "iniciadoEm": 1784056126010
+  },
   "cooldown": {
    "euro": 1784050140511,
    "super": 1784052435011
