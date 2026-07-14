@@ -46,13 +46,19 @@
   "cooldown": {}
  },
  "ambas": {
-  "saldo": 1,
-  "ciclos": 3,
-  "greens": 1,
+  "saldo": 3,
+  "ciclos": 4,
+  "greens": 2,
   "redsCiclo": 0,
   "aborts": 0,
   "descartes": 2,
   "historico": [
+   {
+    "quando": "2026-07-14T18:07:15.012Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "super · Santos x Bogota @2.25 (tiro 3)"
+   },
    {
     "quando": "2026-07-14T17:29:00.511Z",
     "resultado": "GREEN",
@@ -72,7 +78,9 @@
     "detalhe": "super · alvo sem fechamento em 15min, anulado sem contar"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "super": true
+  },
   "ciclo": {
    "liga": "super",
    "degrau": 2,
@@ -102,7 +110,8 @@
    "semAlvoDesde": null
   },
   "cooldown": {
-   "euro": 1784050140511
+   "euro": 1784050140511,
+   "super": 1784052435011
   }
  }
 }
