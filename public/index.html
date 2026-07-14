@@ -577,27 +577,37 @@ function render(d){
     // ===== PAINEL DOS FUTUROS (topo, destacado) =====
     const futs=(M.futuros||[]).slice(0,8);
     const futHtml=futs.length?`<div style="background:#0a1d33;border:2px solid #1f6feb;border-radius:8px;padding:8px;margin-bottom:10px"><div style="font-size:12px;font-weight:800;color:#58a6ff;margin-bottom:6px">⚽ PRÓXIMA RODADA (${futs.length} jogos)</div><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px">${futs.map(g=>`<div style="background:#0d2137;border:1px solid #388bfd;border-radius:8px;padding:8px;${_marcado(g.casa,g.fora)?'outline:3px solid #e3b341;':''}"><div style="font-size:13px;font-weight:700">${g.h?`🕐 ${g.h} · `:''}${_tm(g.casa)} x ${_tm(g.fora)}</div><div style="margin-top:6px;display:flex;gap:6px;flex-wrap:wrap">${chipOdd('A',(g.odds||{}).ambs)}${chipOdd('2.5',(g.odds||{}).o25)}${chipOdd('3.5',(g.odds||{}).o35)}</div></div>`).join('')}</div></div>`:'';
-    // ===== HISTORICO POR HORA =====
+    // ===== HISTORICO TRANSPOSTO: horas nas COLUNAS (cabe na tela), minutos nas LINHAS =====
     const mins=[...new Set(M.passados.map(g=>minDe(g.h)).filter(Boolean))].sort((a,b)=>+a-+b);
     const horas=[...new Set(M.passados.map(g=>horaDe(g.h)).filter(Boolean))];
     const horasShow=horas.slice(-4);
-    const celVazia=`<div style="background:#10151d;border-radius:6px;min-height:44px"></div>`;
-    const oddsMini=o=>{const _o=(rot,v)=>v==null?'':`${rot} <b data-odd="${v}" style="cursor:pointer;${_mkOdds.includes(String(v))?'color:#bc8cff;text-decoration:underline':''}">${v}</b>`;const ps=[_o('A',o.ambs),_o('2.5',o.o25),_o('3.5',o.o35)].filter(Boolean);return ps.length?`<div style="font-size:11px;color:#9fb0c3;margin-top:2px">${ps.join(' · ')}</div>`:'';};
-    const linha=(hh,jogos)=>{
-      const porMin={};jogos.forEach(g=>porMin[minDe(g.h)]=g);
-      let greens=0,tot=0;
-      const cels=mins.map(mm=>{
-        const g=porMin[mm];if(!g)return celVazia;
-        const pg=_pg(g.total,g.placar);if(pg!=null){tot++;if(pg)greens++;}
-        return `<div style="background:#161b22;border-left:4px solid ${pg===true?'#3fb950':pg===false?'#f85149':'#30363d'};border-radius:6px;padding:6px 8px;${_marcado(g.casa,g.fora)?'outline:2px solid #e3b341;':''}"><div style="font-size:12px">${_tm(g.casa)} <b style="font-size:13px;color:${pg===true?'#3fb950':'#e6edf3'}">${g.placar}</b> ${_tm(g.fora)}</div>${oddsMini(g.odds||{})}</div>`;
-      }).join('');
-      const pct=tot?Math.round(greens/tot*100):null;
-      const pctHtml=`<div style="background:${pct>=34?'#0f2417':pct===0?'#2b1113':'#161b22'};color:${pct>=34?'#3fb950':pct===0?'#f85149':'#c9d1d9'};font-weight:800;border-radius:6px;text-align:center;align-self:center;padding:8px 0;font-size:13px">${pct==null?'—':pct+'%'}</div>`;
-      return `<div style="color:#58a6ff;font-weight:800;text-align:center;align-self:center;font-size:12px">${hh}</div>${cels}${pctHtml}`;
+    const idx={};M.passados.forEach(g=>{const hh=horaDe(g.h),mm=minDe(g.h);if(hh&&mm){(idx[hh]=idx[hh]||{})[mm]=g;}});
+    const celVazia=`<div style="background:#10151d;border-radius:6px;min-height:40px"></div>`;
+    const oddsMini=o=>{const _o=(rot,v)=>v==null?'':`${rot} <b data-odd="${v}" style="cursor:pointer;${_mkOdds.includes(String(v))?'color:#bc8cff;text-decoration:underline':''}">${v}</b>`;const ps=[_o('A',o.ambs),_o('2.5',o.o25),_o('3.5',o.o35)].filter(Boolean);return ps.length?`<div style="font-size:10px;color:#9fb0c3;margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${ps.join(' · ')}</div>`:'';};
+    const cel=g=>{
+      if(!g)return celVazia;
+      const pg=_pg(g.total,g.placar);
+      return `<div style="background:#161b22;border-left:4px solid ${pg===true?'#3fb950':pg===false?'#f85149':'#30363d'};border-radius:6px;padding:4px 6px;min-width:0;${_marcado(g.casa,g.fora)?'outline:2px solid #e3b341;':''}"><div style="font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${_tm(g.casa)} <b style="font-size:12px;color:${pg===true?'#3fb950':'#e6edf3'}">${g.placar}</b> ${_tm(g.fora)}</div>${oddsMini(g.odds||{})}</div>`;
     };
-    const corpo=horasShow.map(hh=>linha(hh,M.passados.filter(g=>horaDe(g.h)===hh))).join('');
-    const cab=`<div style="color:#8b949e;text-align:center;font-size:10px;align-self:center">H⏱️</div>${mins.map(m=>`<div style="color:#8b949e;text-align:center;font-size:10px">:${m}</div>`).join('')}<div style="color:#8b949e;text-align:center;font-size:10px">%hora</div>`;
-    ultimos=`<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap;gap:4px"><b style="font-size:13px">🧩 Mosaico — próxima rodada + últimas horas <span class="note">(${nomeMkt[mkt]||mkt})</span></b><span class="note" style="font-size:10px">clique num <b style="color:#e3b341">time</b> ou numa <b style="color:#bc8cff">odd</b> para marcar</span></div>${futHtml}<div style="overflow-x:auto"><div style="display:grid;grid-template-columns:30px repeat(${mins.length},minmax(150px,1fr)) 48px;gap:5px;min-width:${30+mins.length*155+52}px">${cab}${corpo}</div></div>`;
+    const linhas=mins.map(mm=>{
+      let g2=0,t2=0;
+      const cels=horasShow.map(hh=>{
+        const g=(idx[hh]||{})[mm];
+        if(g){const pg=_pg(g.total,g.placar);if(pg!=null){t2++;if(pg)g2++;}}
+        return cel(g);
+      }).join('');
+      const pctL=t2?Math.round(g2/t2*100):null;
+      return `<div style="color:#8b949e;font-weight:800;text-align:center;align-self:center;font-size:11px">:${mm}</div>${cels}<div style="background:${pctL>=50?'#0f2417':pctL===0?'#2b1113':'#161b22'};color:${pctL>=50?'#3fb950':pctL===0?'#f85149':'#c9d1d9'};font-weight:800;border-radius:6px;text-align:center;align-self:center;padding:6px 0;font-size:11px">${pctL==null?'—':pctL+'%'}</div>`;
+    }).join('');
+    const pctHora=horasShow.map(hh=>{
+      const js=Object.values(idx[hh]||{});let g3=0,t3=0;
+      js.forEach(g=>{const pg=_pg(g.total,g.placar);if(pg!=null){t3++;if(pg)g3++;}});
+      const p=t3?Math.round(g3/t3*100):null;
+      return `<div style="background:${p>=34?'#0f2417':p===0?'#2b1113':'#161b22'};color:${p>=34?'#3fb950':p===0?'#f85149':'#c9d1d9'};font-weight:800;border-radius:6px;text-align:center;padding:6px 0;font-size:12px">${p==null?'—':p+'%'}</div>`;
+    }).join('');
+    const cab=`<div style="color:#8b949e;text-align:center;font-size:10px;align-self:center">col</div>${horasShow.map(h=>`<div style="color:#58a6ff;text-align:center;font-size:12px;font-weight:800">${h}h</div>`).join('')}<div style="color:#8b949e;text-align:center;font-size:10px;align-self:center">%col</div>`;
+    const rodape=`<div style="color:#8b949e;text-align:center;font-size:10px;align-self:center">%hora</div>${pctHora}<div></div>`;
+    ultimos=`<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap;gap:4px"><b style="font-size:13px">🧩 Mosaico — próxima rodada + últimas horas <span class="note">(${nomeMkt[mkt]||mkt})</span></b><span class="note" style="font-size:10px">clique num <b style="color:#e3b341">time</b> ou numa <b style="color:#bc8cff">odd</b> para marcar</span></div>${futHtml}<div style="display:grid;grid-template-columns:38px repeat(${horasShow.length},minmax(0,1fr)) 46px;gap:5px">${cab}${linhas}${rodape}</div>`;
   }
 
   const _cur=(a.pagandoTempoReal!=null)?a.pagandoTempoReal:((a.serie&&a.serie.length)?a.serie[a.serie.length-1]:null);
