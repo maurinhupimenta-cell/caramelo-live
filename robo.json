@@ -72,14 +72,18 @@
     "detalhe": "super · alvo sem fechamento em 15min, anulado sem contar"
    }
   ],
-  "consumidas": {
-   "euro": true
-  },
+  "consumidas": {},
   "ciclo": {
    "liga": "super",
    "degrau": 1,
    "apostado": 1,
-   "alvo": null,
+   "alvo": {
+    "h": "18:38",
+    "jogo": "Hungria x Albânia",
+    "odd": 2.3,
+    "unidades": 2,
+    "desde": 1784050687813
+   },
    "iniciadoEm": 1784050152008,
    "tiros": [
     {
@@ -88,7 +92,8 @@
      "odd": 2.25,
      "unidades": 1
     }
-   ]
+   ],
+   "semAlvoDesde": null
   },
   "cooldown": {
    "euro": 1784050140511
