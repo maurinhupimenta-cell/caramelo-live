@@ -1,22 +1,39 @@
 {
  "o35": {
-  "saldo": 0,
-  "ciclos": 0,
-  "greens": 0,
+  "saldo": 11,
+  "ciclos": 1,
+  "greens": 1,
   "redsCiclo": 0,
   "aborts": 0,
   "descartes": 0,
-  "historico": [],
-  "consumidas": {},
+  "historico": [
+   {
+    "quando": "2026-07-14T17:07:33.509Z",
+    "resultado": "GREEN",
+    "unidades": 11,
+    "detalhe": "copa · Bélgica x Austrália @4.5 (tiro 3)"
+   }
+  ],
+  "consumidas": {
+   "copa": true
+  },
   "ciclo": {
    "liga": "copa",
    "degrau": 2,
    "apostado": 3,
-   "alvo": null,
+   "alvo": {
+    "h": "17:58",
+    "jogo": "Bélgica x Austrália",
+    "odd": 4.5,
+    "unidades": 4,
+    "desde": 1784048373604
+   },
    "iniciadoEm": 1784047293106,
    "semAlvoDesde": null
   },
-  "cooldown": {}
+  "cooldown": {
+   "copa": 1784048853509
+  }
  },
  "o25": {
   "saldo": 0,
