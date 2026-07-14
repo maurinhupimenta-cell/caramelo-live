@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": 13.5,
-  "ciclos": 65,
-  "greens": 13,
+  "saldo": 16.7,
+  "ciclos": 66,
+  "greens": 14,
   "redsCiclo": 4,
   "aborts": 16,
   "descartes": 32,
   "historico": [
+   {
+    "quando": "2026-07-14T14:34:11.950Z",
+    "resultado": "GREEN",
+    "unidades": 3.2,
+    "detalhe": "super · Medellin x Santiago @4.2 (tiro 1)"
+   },
    {
     "quando": "2026-07-14T14:19:31.457Z",
     "resultado": "ABORT",
@@ -120,15 +126,11 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min, anulado sem contar"
-   },
-   {
-    "quando": "2026-07-14T06:31:11.801Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min, anulado sem contar"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "super": true
+  },
   "ciclo": {
    "liga": "super",
    "degrau": 0,
@@ -223,7 +225,13 @@
    "liga": "super",
    "degrau": 1,
    "apostado": 1,
-   "alvo": null,
+   "alvo": {
+    "h": "15:40",
+    "jogo": "Buenos Aires x Lima",
+    "odd": 2.02,
+    "unidades": 2,
+    "desde": 1784039472245
+   },
    "iniciadoEm": 1784038573244
   }
  },
