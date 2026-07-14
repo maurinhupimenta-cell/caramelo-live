@@ -144,13 +144,19 @@
   }
  },
  "o25": {
-  "saldo": 0,
-  "ciclos": 1,
-  "greens": 0,
+  "saldo": 1.2,
+  "ciclos": 2,
+  "greens": 1,
   "redsCiclo": 0,
   "aborts": 0,
   "descartes": 1,
   "historico": [
+   {
+    "quando": "2026-07-14T02:23:02.251Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Bósnia e Herzegovina x Qatar @2.2 (tiro 1)"
+   },
    {
     "quando": "2026-07-14T02:10:03.853Z",
     "resultado": "DESCARTADO",
@@ -158,7 +164,9 @@
     "detalhe": "copa · alvo sem fechamento em 15min, anulado sem contar"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "copa": true
+  },
   "ciclo": {
    "liga": "copa",
    "degrau": 0,
