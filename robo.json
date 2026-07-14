@@ -12,8 +12,15 @@
    "liga": "copa",
    "degrau": 1,
    "apostado": 1,
-   "alvo": null,
-   "iniciadoEm": 1784047293106
+   "alvo": {
+    "h": "17:49",
+    "jogo": "Escócia x Irã",
+    "odd": 6.5,
+    "unidades": 2,
+    "desde": 1784047833308
+   },
+   "iniciadoEm": 1784047293106,
+   "semAlvoDesde": null
   },
   "cooldown": {}
  },
@@ -31,12 +38,19 @@
  },
  "ambas": {
   "saldo": 0,
-  "ciclos": 0,
+  "ciclos": 1,
   "greens": 0,
   "redsCiclo": 0,
   "aborts": 0,
-  "descartes": 0,
-  "historico": [],
+  "descartes": 1,
+  "historico": [
+   {
+    "quando": "2026-07-14T16:56:44.606Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min, anulado sem contar"
+   }
+  ],
   "consumidas": {},
   "ciclo": {
    "liga": "super",
