@@ -21,19 +21,7 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "18:13",
-    "jogo": "Portugal x México",
-    "odd": 4.2,
-    "unidades": 1,
-    "desde": 1784048914112
-   },
-   "iniciadoEm": 1784048914112
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784048853509
   }
@@ -63,13 +51,19 @@
   "cooldown": {}
  },
  "ambas": {
-  "saldo": 0,
-  "ciclos": 2,
-  "greens": 0,
+  "saldo": 1,
+  "ciclos": 3,
+  "greens": 1,
   "redsCiclo": 0,
   "aborts": 0,
   "descartes": 2,
   "historico": [
+   {
+    "quando": "2026-07-14T17:29:00.511Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · França x Geórgia @2.05 (tiro 1)"
+   },
    {
     "quando": "2026-07-14T16:58:33.907Z",
     "resultado": "DESCARTADO",
@@ -83,7 +77,9 @@
     "detalhe": "super · alvo sem fechamento em 15min, anulado sem contar"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "euro": true
+  },
   "ciclo": {
    "liga": "euro",
    "degrau": 0,
@@ -97,6 +93,8 @@
    },
    "iniciadoEm": 1784049334709
   },
-  "cooldown": {}
+  "cooldown": {
+   "euro": 1784050140511
+  }
  }
 }
