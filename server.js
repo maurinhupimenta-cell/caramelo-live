@@ -1689,17 +1689,22 @@ app.get("/api/padroes/:liga", (req, res) => {
         g.n++; if (prox === "G") g.G++; if (horas[i + L]) g.horas.add(horas[i + L]);
       }
     }
+    const baseG = Math.round(seq.filter(c => c === "G").length / seq.length * 100); // regua do dia
     const out = [];
     for (const [chave, g] of Object.entries(grupos)) {
-      if (g.n < 4) continue;
-      const taxaG = g.G / g.n;
-      const prox = taxaG >= 0.5 ? "G" : "R";
-      const taxa = Math.round((prox === "G" ? taxaG : 1 - taxaG) * 100);
-      if (taxa < 90) continue;
-      if (g.horas.size < 2) continue; // precisa repetir em horas DIFERENTES (pedido do usuario)
-      out.push({ seq: chave, prox, taxa, n: g.n, acertos: prox === "G" ? g.G : g.n - g.G, horas: [...g.horas].sort().slice(0, 6) });
+      if (g.n < 5) continue;
+      if (g.horas.size < 2) continue; // precisa repetir em horas DIFERENTES
+      const taxaG = Math.round(g.G / g.n * 100);
+      // compara cada desfecho com a REGUA correspondente: so entra quem FOGE dela
+      const edgeG = taxaG - baseG;              // padrao que puxa GREEN acima da regua
+      const edgeR = (100 - taxaG) - (100 - baseG); // padrao que puxa RED alem do normal
+      let prox, taxa, regua, edge;
+      if (edgeG >= 15) { prox = "G"; taxa = taxaG; regua = baseG; edge = edgeG; }
+      else if (edgeR >= 15) { prox = "R"; taxa = 100 - taxaG; regua = 100 - baseG; edge = edgeR; }
+      else continue;
+      out.push({ seq: chave, prox, taxa, regua, edge, n: g.n, acertos: prox === "G" ? g.G : g.n - g.G, horas: [...g.horas].sort().slice(0, 6) });
     }
-    out.sort((a, b) => b.n - a.n || b.taxa - a.taxa);
+    out.sort((a, b) => b.edge - a.edge || b.n - a.n);
     const resp = { liga, mkt, padroes: out.slice(0, 10) };
     padroesCache[ck] = { ts: now, out: resp };
     res.json(resp);
