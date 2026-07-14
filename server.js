@@ -1469,114 +1469,56 @@ app.get("/api/relatorio/:liga", (req, res) => {
 });
 
 
-// ===== CADERNO DO ROBO: acompanha o resultado real de cada indicacao (saldo em unidades) =====
+// ===== CADERNO DOS ROBOS (O3.5 + O2.5): dois robos fixos, cada um com saldo persistente =====
 const ROBO_FILE = "robo.json";
 let roboSha = null;
-let roboLedger = { saldo: 0, ciclos: 0, greens: 0, redsCiclo: 0, aborts: 0, historico: [] };
-let roboCiclo = null; // { liga, degrau, apostado, alvo:{h,jogo,odd,unidades}, iniciadoEm }
-async function carregaRobo() {
-  if (!GH_T) return;
-  try {
-    const r = await fetch(`https://api.github.com/repos/${GH_REPO}/contents/${ROBO_FILE}?ref=${GH_BRANCH}`, { headers: ghHead() });
-    if (r.ok) { const j = await r.json(); roboSha = j.sha; const dados = JSON.parse(Buffer.from(j.content, "base64").toString()); if (dados && typeof dados.saldo === "number") { roboLedger = dados; roboCiclo = dados.cicloAberto || null; } }
-  } catch (e) {}
-  // ciclo antigo sem carimbo de hora (anterior ao anti-zumbi) = anulado ja no boot
-  if (roboCiclo && roboCiclo.alvo && !roboCiclo.alvo.desde) {
-    registraCiclo("DESCARTADO", 0, `${roboCiclo.liga} · ciclo antigo sem carimbo (pre-fix) anulado no boot`);
-    roboCiclo = null;
-  }
-}
+const ROBO_MKTS = ["o35", "o25", "ambas"];
+const ROBO_PISO = { o35: 3.6, o25: 2.0, ambas: 2.0 };
+function roboVazio() { return { saldo: 0, ciclos: 0, greens: 0, redsCiclo: 0, aborts: 0, descartes: 0, historico: [], consumidas: {}, ciclo: null }; }
+let roboState = { o35: roboVazio(), o25: roboVazio(), ambas: roboVazio() };
 async function salvaRoboLedger() {
   if (!GH_T) return;
   try {
-    const body = { message: "robo ledger", content: Buffer.from(JSON.stringify({ ...roboLedger, cicloAberto: roboCiclo }, null, 1)).toString("base64"), branch: GH_BRANCH };
+    const body = { message: "robo", content: Buffer.from(JSON.stringify(roboState, null, 1)).toString("base64"), branch: GH_BRANCH };
     if (roboSha) body.sha = roboSha;
     const r = await fetch(`https://api.github.com/repos/${GH_REPO}/contents/${ROBO_FILE}`, { method: "PUT", headers: { ...ghHead(), "Content-Type": "application/json" }, body: JSON.stringify(body) });
     if (r.ok) { const j = await r.json(); roboSha = j.content.sha; }
   } catch (e) {}
 }
-carregaRobo();
-function registraCiclo(resultado, unidades, detalhe) {
-  roboLedger.ciclos++;
-  if (resultado === "GREEN") roboLedger.greens++; else if (resultado === "RED_CICLO") roboLedger.redsCiclo++; else if (resultado === "ABORT") roboLedger.aborts++; else roboLedger.descartes = (roboLedger.descartes || 0) + 1;
-  roboLedger.saldo = Math.round((roboLedger.saldo + unidades) * 10) / 10;
-  roboLedger.historico.unshift({ quando: new Date().toISOString(), resultado, unidades, detalhe });
-  roboLedger.historico = roboLedger.historico.slice(0, 20);
+function registraCiclo(mkt, resultado, unidades, detalhe) {
+  const L = roboState[mkt];
+  L.ciclos++;
+  if (resultado === "GREEN") L.greens++; else if (resultado === "RED_CICLO") L.redsCiclo++; else if (resultado === "ABORT") L.aborts++; else L.descartes++;
+  L.saldo = Math.round((L.saldo + unidades) * 10) / 10;
+  L.historico.unshift({ quando: new Date().toISOString(), resultado, unidades, detalhe });
+  L.historico = L.historico.slice(0, 20);
   salvaRoboLedger();
 }
-// roda a cada snapshot: abre ciclo quando o robo montar entrada, resolve degraus quando jogos fecham
-function atualizaRoboLedger() {
-  try {
-    const melhor = montaRobo();
-    // sonda as vezes rotula snapshot com liga trocada: so aceita alvo cujo time da casa exista no historico da liga
-    const pertenceALiga = (liga, jogo) => {
-      const d2 = store[liga]; const g2 = (d2 && (d2.gamesAll || d2.games)) || [];
-      const casa = (jogo || "").split(" x ")[0];
-      return !!casa && g2.slice(-480).some(x => x.casa === casa);
-    };
-    if (!roboCiclo) {
-      if (melhor && melhor.degraus && melhor.degraus[0] && pertenceALiga(melhor.liga, melhor.degraus[0].jogo)) {
-        const d0 = melhor.degraus[0];
-        roboCiclo = { liga: melhor.liga, degrau: 0, apostado: 0, alvo: { h: d0.h, jogo: d0.jogo, odd: d0.odd, unidades: 1, desde: Date.now() }, iniciadoEm: Date.now() };
-        salvaRoboLedger();
-      }
-      return;
-    }
-    const d = store[roboCiclo.liga];
-    if (!d) return;
-    const gAll = d.gamesAll || d.games || [];
-    // o alvo fechou? (procura nome+horario nos ~40 jogos mais recentes)
-    if (roboCiclo.alvo) {
-      // ANTI-ZUMBI: alvo sem resolucao ha 30+ min (reinicios, jogo sumiu da janela) = descarta o ciclo sem contabilizar
-      if (!roboCiclo.alvo.desde || Date.now() - roboCiclo.alvo.desde > 15 * 60000) {
-        registraCiclo("DESCARTADO", 0, `${roboCiclo.liga} · ${roboCiclo.alvo.jogo} — alvo sem fechamento em 15min (reinicio/liga trocada), anulado sem contar`);
-        roboCiclo = null;
-        return;
-      }
-      const cauda = gAll.slice(-60);
-      let g = cauda.find(x => x.nome === roboCiclo.alvo.jogo && roboCiclo.alvo.h && x.horario === roboCiclo.alvo.h);
-      if (!g) { const soNome = cauda.filter(x => x.nome === roboCiclo.alvo.jogo); if (soNome.length === 1) g = soNome[0]; }
-      if (g) {
-        if (pays(g, "o35")) {
-          const lucro = Math.round((roboCiclo.alvo.unidades * roboCiclo.alvo.odd - (roboCiclo.apostado + roboCiclo.alvo.unidades)) * 10) / 10;
-          roboLedger.consumidas = roboLedger.consumidas || {};
-          roboLedger.consumidas[roboCiclo.liga] = true; // green consome a janela
-          registraCiclo("GREEN", lucro, `${roboCiclo.liga} · ${roboCiclo.alvo.jogo} @${roboCiclo.alvo.odd} (degrau ${roboCiclo.degrau + 1})`);
-          roboCiclo = null;
-          return;
+async function carregaRobo() {
+  if (GH_T) {
+    try {
+      const r = await fetch(`https://api.github.com/repos/${GH_REPO}/contents/${ROBO_FILE}?ref=${GH_BRANCH}`, { headers: ghHead() });
+      if (r.ok) {
+        const j = await r.json(); roboSha = j.sha;
+        const dados = JSON.parse(Buffer.from(j.content, "base64").toString());
+        if (dados && dados.o35 && dados.o35.historico) { for (const m of ROBO_MKTS) if (dados[m]) roboState[m] = { ...roboVazio(), ...dados[m] }; }
+        else if (dados && typeof dados.saldo === "number") { // migra formato antigo (robo unico o35)
+          roboState.o35 = { ...roboVazio(), saldo: dados.saldo, ciclos: dados.ciclos || 0, greens: dados.greens || 0, redsCiclo: dados.redsCiclo || 0, aborts: dados.aborts || 0, descartes: dados.descartes || 0, historico: dados.historico || [], consumidas: dados.consumidas || {}, ciclo: dados.cicloAberto || null };
         }
-        // RED no degrau
-        roboCiclo.apostado += roboCiclo.alvo.unidades;
-        roboCiclo.degrau++;
-        roboCiclo.alvo = null;
-        if (roboCiclo.degrau >= 3) {
-          roboLedger.consumidas = roboLedger.consumidas || {};
-          roboLedger.consumidas[roboCiclo.liga] = true; // ciclo perdido = sair da janela (nunca 4o tiro na mesma seca)
-          registraCiclo("RED_CICLO", -roboCiclo.apostado, `${roboCiclo.liga} · ciclo perdido (3 tiros)`);
-          roboCiclo = null;
-          return;
-        }
-        salvaRoboLedger();
       }
-    }
-    // precisa de novo alvo (apos red): pega o proximo degrau EV+ do robo na MESMA liga
-    if (!roboCiclo.alvo) {
-      if (melhor && melhor.liga === roboCiclo.liga && melhor.degraus && melhor.degraus[0] && pertenceALiga(melhor.liga, melhor.degraus[0].jogo)) {
-        const dn = melhor.degraus[0];
-        roboCiclo.alvo = { h: dn.h, jogo: dn.jogo, odd: dn.odd, unidades: [1, 2, 4][roboCiclo.degrau], desde: Date.now() };
-        salvaRoboLedger();
-      } else if (!melhor || melhor.liga !== roboCiclo.liga) {
-        // janela fechou sem alvo: aborta o ciclo (perde o que apostou)
-        if (roboCiclo.apostado > 0) registraCiclo("ABORT", -roboCiclo.apostado, `${roboCiclo.liga} · janela fechou no meio do ciclo`);
-        roboCiclo = null;
-      }
-    }
-  } catch (e) {}
+    } catch (e) {}
+  }
+  for (const m of ROBO_MKTS) {
+    const c = roboState[m].ciclo;
+    if (c && c.alvo && !c.alvo.desde) { registraCiclo(m, "DESCARTADO", 0, `${c.liga} · ciclo antigo sem carimbo anulado no boot`); roboState[m].ciclo = null; }
+  }
 }
+carregaRobo();
 
-// ===== ROBO 2-GALE O3.5: quando ha zona azul no O3.5, monta a escada entrada->gale1->gale2 =====
-function montaRobo() {
-  const mkt = "o35";
+// ===== ROBO 2-GALE (por mercado): zona azul + piso de odd + maior EV- + 1 ciclo por janela =====
+function montaRobo(mkt) {
+  const piso = ROBO_PISO[mkt];
+  const L = roboState[mkt];
   let melhor = null;
   for (const liga of Object.keys(store)) {
     const d = store[liga];
@@ -1589,53 +1531,134 @@ function montaRobo() {
     const cur = sf.length ? sf[sf.length - 1] : null;
     if (cur == null) continue;
     const rel = Math.round(cur / base * 100);
-    // 1 CICLO POR JANELA: liga cujo mergulho ja foi operado (green ou ciclo perdido) fica
-    // consumida ate re-armar (subir de 85% do normal) — igual ao chip do radar
-    roboLedger.consumidas = roboLedger.consumidas || {};
-    if (roboLedger.consumidas[liga]) {
-      if (rel >= 85) { delete roboLedger.consumidas[liga]; salvaRoboLedger(); }
+    L.consumidas = L.consumidas || {};
+    if (L.consumidas[liga]) {
+      if (rel >= 85) { delete L.consumidas[liga]; salvaRoboLedger(); }
       else continue;
     }
-    if (rel >= 60) continue; // robo so aparece com ZONA AZUL de verdade (<60% do normal)
+    if (rel >= 60) continue;
     if (melhor && rel >= melhor.rel) continue;
     const evs = (d.upcoming && d.upcoming[mkt]) || [];
     const degraus = [], pulados = [];
     const papeis = ["ENTRADA", "GALE 1", "GALE 2"];
-    // METODO v2.1: dentro da zona azul, piso de odd (>=3.60) E preferencia pelo MAIOR EV-
-    // (celula medida: EV- durante a seca paga 29% vs base 21 no O3.5 — a casa certa + a mola)
     const cands = evs.map((p, i) => ({ ...p, _i: i })).filter(p => p.odd != null && p.ev != null);
-    for (const p of cands) { if (p.odd < 3.6 && pulados.length < 4) pulados.push({ h: p.horario || "", jogo: p.nome, odd: p.odd, ev: p.ev }); }
-    const validos = cands.filter(p => p.odd >= 3.6);
+    for (const p of cands) { if (p.odd < piso && pulados.length < 4) pulados.push({ h: p.horario || "", jogo: p.nome, odd: p.odd, ev: p.ev }); }
+    const validos = cands.filter(p => p.odd >= piso);
+    // PLACAR COMPOSTO v3 (pedido do usuario): forma dos times (rank 3h) + coluna 24h do jogo
+    // + EV- preferido (celula medida) + curva virando; recalculado a cada rodada, o dia inteiro
+    let rk = null;
+    try { const r = teamRanking(games, mkt, 60, 2, 999); const m = {}; r.forEach((t, i) => m[t.time] = i + 1); rk = { m, n: r.length }; } catch (e) {}
+    const virando = sf.length >= 2 && sf[sf.length - 1] > sf[sf.length - 2];
+    for (const p of validos) {
+      p._col = colunaPct(d.gamesAll || games, p.horario, mkt);
+      let n = 0;
+      if (p.ev < 0) n += Math.min(15, -p.ev * 0.5);      // EV- preferido (casa confiante na seca)
+      if (p.ev > 10) n -= 8;                              // modelo iludido: bandeira vermelha
+      if (rk) {
+        const tc = rk.m[(p.nome || "").split(" x ")[0]], tf = rk.m[(p.nome || "").split(" x ")[1]];
+        if (tc && tc <= 3) n += 6; if (tf && tf <= 3) n += 6;          // times em sequencia pagadora (3h)
+        if (tc && tc >= rk.n - 2) n -= 3; if (tf && tf >= rk.n - 2) n -= 3; // lanternas seguram
+      }
+      if (p._col && p._col.h24 != null) n += (p._col.h24 - base) * 0.15; // coluna 24h acima da media
+      if (virando) n += 5;                                // curva ja virando = pagamento comecando
+      p._nota = Math.round(n * 10) / 10;
+    }
     let idxAnterior = -1;
     for (let dgi = 0; dgi < 3; dgi++) {
       const pool = validos.filter(p => p._i > idxAnterior);
       if (!pool.length) break;
-      const p = pool.reduce((a, b) => (b.ev < a.ev ? b : a)); // maior EV- disponivel dali em diante
+      const p = pool.reduce((a, b) => (b._nota > a._nota ? b : a));
       idxAnterior = p._i;
-      degraus.push({ papel: papeis[dgi], unidades: [1, 2, 4][dgi], h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev, evAlto: p.ev > 10, col: colunaPct(d.gamesAll || games, p.horario, mkt) });
+      degraus.push({ papel: papeis[dgi], unidades: [1, 2, 4][dgi], h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev, evAlto: p.ev > 10, nota: p._nota, col: p._col });
     }
-    melhor = { liga, rel, pagando: cur, base: Math.round(base * 10) / 10, degraus, pulados, teste: rel >= 60, taxas: taxaJanelas(d.gamesAll || games, mkt) };
+    melhor = { mkt, piso, liga, rel, pagando: cur, base: Math.round(base * 10) / 10, degraus, pulados, teste: rel >= 60, taxas: taxaJanelas(d.gamesAll || games, mkt) };
   }
   return melhor;
 }
-app.get("/api/robo", (req, res) => {
+function atualizaRoboMkt(mkt) {
   try {
-    const melhor = montaRobo() || {};
-    if (!melhor.liga && roboLedger.consumidas) {
-      // alguma liga azul porem ja operada? comunica em vez de sumir
-      for (const liga of Object.keys(roboLedger.consumidas)) {
-        const d = store[liga]; if (!d || !d.games || d.games.length < 60) continue;
-        const base = d.games.filter(g => pays(g, "o35")).length / d.games.length * 100; if (!base) continue;
-        const sf = chartSeries(d.games, "o35", Math.max(2, Math.min(20, d.games.length)));
-        const cur = sf.length ? sf[sf.length - 1] : null; if (cur == null) continue;
-        const rel = Math.round(cur / base * 100);
-        if (rel < 60) { melhor.consumida = { liga, rel }; break; }
+    const L = roboState[mkt];
+    const melhor = montaRobo(mkt);
+    const pertenceALiga = (liga, jogo) => {
+      const d2 = store[liga]; const g2 = (d2 && (d2.gamesAll || d2.games)) || [];
+      const casa = (jogo || "").split(" x ")[0];
+      return !!casa && g2.slice(-480).some(x => x.casa === casa);
+    };
+    if (!L.ciclo) {
+      if (melhor && melhor.degraus && melhor.degraus[0] && pertenceALiga(melhor.liga, melhor.degraus[0].jogo)) {
+        const d0 = melhor.degraus[0];
+        L.ciclo = { liga: melhor.liga, degrau: 0, apostado: 0, alvo: { h: d0.h, jogo: d0.jogo, odd: d0.odd, unidades: 1, desde: Date.now() }, iniciadoEm: Date.now() };
+        salvaRoboLedger();
+      }
+      return;
+    }
+    const d = store[L.ciclo.liga];
+    if (!d) return;
+    const gAll = d.gamesAll || d.games || [];
+    if (L.ciclo.alvo) {
+      if (!L.ciclo.alvo.desde || Date.now() - L.ciclo.alvo.desde > 15 * 60000) {
+        registraCiclo(mkt, "DESCARTADO", 0, `${L.ciclo.liga} · alvo sem fechamento em 15min, anulado sem contar`);
+        L.ciclo = null;
+        return;
+      }
+      const cauda = gAll.slice(-60);
+      let g = cauda.find(x => x.nome === L.ciclo.alvo.jogo && L.ciclo.alvo.h && x.horario === L.ciclo.alvo.h);
+      if (!g) { const soNome = cauda.filter(x => x.nome === L.ciclo.alvo.jogo); if (soNome.length === 1) g = soNome[0]; }
+      if (g) {
+        if (pays(g, mkt)) {
+          const lucro = Math.round((L.ciclo.alvo.unidades * L.ciclo.alvo.odd - (L.ciclo.apostado + L.ciclo.alvo.unidades)) * 10) / 10;
+          L.consumidas = L.consumidas || {}; L.consumidas[L.ciclo.liga] = true;
+          registraCiclo(mkt, "GREEN", lucro, `${L.ciclo.liga} · ${L.ciclo.alvo.jogo} @${L.ciclo.alvo.odd} (tiro ${L.ciclo.degrau + 1})`);
+          L.ciclo = null;
+          return;
+        }
+        L.ciclo.apostado += L.ciclo.alvo.unidades;
+        L.ciclo.degrau++;
+        L.ciclo.alvo = null;
+        if (L.ciclo.degrau >= 3) {
+          L.consumidas = L.consumidas || {}; L.consumidas[L.ciclo.liga] = true;
+          registraCiclo(mkt, "RED_CICLO", -L.ciclo.apostado, `${L.ciclo.liga} · ciclo perdido (3 tiros)`);
+          L.ciclo = null;
+          return;
+        }
+        salvaRoboLedger();
       }
     }
-    melhor.registro = { saldo: roboLedger.saldo, ciclos: roboLedger.ciclos, greens: roboLedger.greens, redsCiclo: roboLedger.redsCiclo, aborts: roboLedger.aborts, descartes: roboLedger.descartes || 0 };
-    if (roboCiclo) melhor.cicloAndamento = { degrau: roboCiclo.degrau + 1, apostado: roboCiclo.apostado, esperando: roboCiclo.alvo ? `${roboCiclo.alvo.h || ""} ${roboCiclo.alvo.jogo}`.trim() : "proximo degrau com odd no piso" };
-    if (req.query.debug) { melhor.dbgCiclo = roboCiclo; melhor.dbgHistorico = roboLedger.historico.slice(0, 6); }
-    res.json(melhor);
+    if (!L.ciclo.alvo) {
+      if (melhor && melhor.liga === L.ciclo.liga && melhor.degraus && melhor.degraus[0] && pertenceALiga(melhor.liga, melhor.degraus[0].jogo)) {
+        const dn = melhor.degraus[0];
+        L.ciclo.alvo = { h: dn.h, jogo: dn.jogo, odd: dn.odd, unidades: [1, 2, 4][L.ciclo.degrau], desde: Date.now() };
+        salvaRoboLedger();
+      } else if (!melhor || melhor.liga !== L.ciclo.liga) {
+        if (L.ciclo.apostado > 0) registraCiclo(mkt, "ABORT", -L.ciclo.apostado, `${L.ciclo.liga} · janela fechou no meio do ciclo`);
+        L.ciclo = null;
+      }
+    }
+  } catch (e) {}
+}
+function atualizaRoboLedger() { for (const m of ROBO_MKTS) atualizaRoboMkt(m); }
+app.get("/api/robo", (req, res) => {
+  try {
+    const out = {};
+    for (const mkt of ROBO_MKTS) {
+      const L = roboState[mkt];
+      const melhor = montaRobo(mkt) || {};
+      melhor.registro = { saldo: L.saldo, ciclos: L.ciclos, greens: L.greens, redsCiclo: L.redsCiclo, aborts: L.aborts, descartes: L.descartes || 0 };
+      if (L.ciclo) melhor.cicloAndamento = { degrau: L.ciclo.degrau + 1, apostado: L.ciclo.apostado, esperando: L.ciclo.alvo ? `${L.ciclo.alvo.h || ""} ${L.ciclo.alvo.jogo}`.trim() : "proximo degrau com odd no piso" };
+      if (!melhor.liga && L.consumidas) {
+        for (const liga of Object.keys(L.consumidas)) {
+          const d = store[liga]; if (!d || !d.games || d.games.length < 60) continue;
+          const base = d.games.filter(g => pays(g, mkt)).length / d.games.length * 100; if (!base) continue;
+          const sf = chartSeries(d.games, mkt, Math.max(2, Math.min(20, d.games.length)));
+          const cur = sf.length ? sf[sf.length - 1] : null; if (cur == null) continue;
+          const rel = Math.round(cur / base * 100);
+          if (rel < 60) { melhor.consumida = { liga, rel }; break; }
+        }
+      }
+      if (req.query.debug) { melhor.dbgCiclo = L.ciclo; melhor.dbgHistorico = L.historico.slice(0, 6); }
+      out[mkt] = melhor;
+    }
+    res.json(out);
   } catch (e) { res.status(500).json({ erro: e.message }); }
 });
 
