@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": 14.5,
-  "ciclos": 64,
+  "saldo": 13.5,
+  "ciclos": 65,
   "greens": 13,
   "redsCiclo": 4,
-  "aborts": 15,
+  "aborts": 16,
   "descartes": 32,
   "historico": [
+   {
+    "quando": "2026-07-14T14:19:31.457Z",
+    "resultado": "ABORT",
+    "unidades": -1,
+    "detalhe": "copa · janela fechou no meio do ciclo"
+   },
    {
     "quando": "2026-07-14T14:06:11.853Z",
     "resultado": "DESCARTADO",
@@ -120,21 +126,21 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min, anulado sem contar"
-   },
-   {
-    "quando": "2026-07-14T05:38:52.696Z",
-    "resultado": "GREEN",
-    "unidades": 5.4,
-    "detalhe": "premier · Brighton x Southampton @4.2 (tiro 2)"
    }
   ],
   "consumidas": {},
   "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "alvo": null,
-   "iniciadoEm": 1784037973152
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "alvo": {
+    "h": "15:25",
+    "jogo": "Medellin x Santiago",
+    "odd": 4.2,
+    "unidades": 1,
+    "desde": 1784038772155
+   },
+   "iniciadoEm": 1784038772155
   }
  },
  "o25": {
@@ -229,12 +235,18 @@
  },
  "ambas": {
   "saldo": 2,
-  "ciclos": 7,
+  "ciclos": 8,
   "greens": 2,
   "redsCiclo": 0,
   "aborts": 0,
-  "descartes": 5,
+  "descartes": 6,
   "historico": [
+   {
+    "quando": "2026-07-14T14:24:52.544Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min, anulado sem contar"
+   },
    {
     "quando": "2026-07-14T11:22:10.844Z",
     "resultado": "GREEN",
@@ -284,13 +296,13 @@
    "degrau": 0,
    "apostado": 0,
    "alvo": {
-    "h": "15:16",
-    "jogo": "Rio de Janeiro x Santos",
-    "odd": 2.05,
+    "h": "15:34",
+    "jogo": "Santiago x La Plata",
+    "odd": 2.02,
     "unidades": 1,
-    "desde": 1784038192050
+    "desde": 1784039093351
    },
-   "iniciadoEm": 1784038192050
+   "iniciadoEm": 1784039093351
   }
  }
 }
