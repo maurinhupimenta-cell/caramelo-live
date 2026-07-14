@@ -1628,6 +1628,8 @@ function atualizaRoboMkt(mkt) {
           L.ciclo = null;
           return;
         }
+        L.ciclo.tiros = L.ciclo.tiros || [];
+        L.ciclo.tiros.push({ h: L.ciclo.alvo.h, jogo: L.ciclo.alvo.jogo, odd: L.ciclo.alvo.odd, unidades: L.ciclo.alvo.unidades });
         L.ciclo.apostado += L.ciclo.alvo.unidades;
         L.ciclo.degrau++;
         L.ciclo.alvo = null;
@@ -1670,10 +1672,26 @@ app.get("/api/robo", (req, res) => {
     const out = {};
     for (const mkt of ROBO_MKTS) {
       const L = roboState[mkt];
-      const melhor = montaRobo(mkt) || {};
+      let melhor;
+      if (L.ciclo) {
+        // CICLO ABERTO: a caixa mostra o ciclo REAL (tiros dados + alvo vigiado), nao a previa
+        let rel = null;
+        try {
+          const d2 = store[L.ciclo.liga];
+          if (d2 && d2.games && d2.games.length >= 60) {
+            const b2 = d2.games.filter(g => pays(g, mkt)).length / d2.games.length * 100;
+            const sf2 = chartSeries(d2.games, mkt, Math.max(2, Math.min(20, d2.games.length)));
+            const c2 = sf2.length ? sf2[sf2.length - 1] : null;
+            if (b2 && c2 != null) rel = Math.round(c2 / b2 * 100);
+          }
+        } catch (e) {}
+        melhor = { cicloView: { liga: L.ciclo.liga, rel, degrau: L.ciclo.degrau, apostado: L.ciclo.apostado, tiros: L.ciclo.tiros || [], alvo: L.ciclo.alvo ? { h: L.ciclo.alvo.h, jogo: L.ciclo.alvo.jogo, odd: L.ciclo.alvo.odd, unidades: L.ciclo.alvo.unidades } : null } };
+      } else {
+        melhor = montaRobo(mkt) || {};
+        if (melhor.liga) melhor.previa = true;
+      }
       melhor.registro = { saldo: L.saldo, ciclos: L.ciclos, greens: L.greens, redsCiclo: L.redsCiclo, aborts: L.aborts, descartes: L.descartes || 0 };
-      if (L.ciclo) melhor.cicloAndamento = { degrau: L.ciclo.degrau + 1, apostado: L.ciclo.apostado, esperando: L.ciclo.alvo ? `${L.ciclo.alvo.h || ""} ${L.ciclo.alvo.jogo}`.trim() : "proximo degrau com odd no piso" };
-      if (!melhor.liga && L.consumidas) {
+      if (!melhor.liga && !melhor.cicloView && L.consumidas) {
         for (const liga of Object.keys(L.consumidas)) {
           const d = store[liga]; if (!d || !d.games || d.games.length < 60) continue;
           const base = d.games.filter(g => pays(g, mkt)).length / d.games.length * 100; if (!base) continue;
