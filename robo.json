@@ -145,12 +145,19 @@
  },
  "o25": {
   "saldo": 0,
-  "ciclos": 0,
+  "ciclos": 1,
   "greens": 0,
   "redsCiclo": 0,
   "aborts": 0,
-  "descartes": 0,
-  "historico": [],
+  "descartes": 1,
+  "historico": [
+   {
+    "quando": "2026-07-14T02:10:03.853Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "copa · alvo sem fechamento em 15min, anulado sem contar"
+   }
+  ],
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
@@ -161,9 +168,9 @@
     "jogo": "Bósnia e Herzegovina x Qatar",
     "odd": 2.2,
     "unidades": 1,
-    "desde": 1783994101957
+    "desde": 1783995004652
    },
-   "iniciadoEm": 1783994101957
+   "iniciadoEm": 1783995004652
   }
  },
  "ambas": {
