@@ -1668,6 +1668,44 @@ app.get("/api/robo", (req, res) => {
   } catch (e) { res.status(500).json({ erro: e.message }); }
 });
 
+// ===== CACADOR DE PADROES: sequencias G/R que se repetiram no dia com o mesmo desfecho =====
+const padroesCache = {};
+app.get("/api/padroes/:liga", (req, res) => {
+  try {
+    const liga = req.params.liga, mkt = req.query.mkt || "o35";
+    const ck = liga + "|" + mkt, now = Date.now();
+    if (padroesCache[ck] && now - padroesCache[ck].ts < 30000) return res.json(padroesCache[ck].out);
+    const d = store[liga];
+    if (!d || !d.games || d.games.length < 200) return res.json({ padroes: [] });
+    const games = d.gamesAll || d.games;
+    const seq = games.map(g => (pays(g, mkt) ? "G" : "R"));
+    const horas = games.map(g => (g.horario || "").split(":")[0]);
+    const grupos = {};
+    for (const L of [4, 5]) {
+      for (let i = 0; i + L < seq.length; i++) {
+        const chave = seq.slice(i, i + L).join("");
+        const prox = seq[i + L];
+        const g = grupos[chave] || (grupos[chave] = { n: 0, G: 0, horas: new Set() });
+        g.n++; if (prox === "G") g.G++; if (horas[i + L]) g.horas.add(horas[i + L]);
+      }
+    }
+    const out = [];
+    for (const [chave, g] of Object.entries(grupos)) {
+      if (g.n < 4) continue;
+      const taxaG = g.G / g.n;
+      const prox = taxaG >= 0.5 ? "G" : "R";
+      const taxa = Math.round((prox === "G" ? taxaG : 1 - taxaG) * 100);
+      if (taxa < 90) continue;
+      if (g.horas.size < 2) continue; // precisa repetir em horas DIFERENTES (pedido do usuario)
+      out.push({ seq: chave, prox, taxa, n: g.n, acertos: prox === "G" ? g.G : g.n - g.G, horas: [...g.horas].sort().slice(0, 6) });
+    }
+    out.sort((a, b) => b.n - a.n || b.taxa - a.taxa);
+    const resp = { liga, mkt, padroes: out.slice(0, 10) };
+    padroesCache[ck] = { ts: now, out: resp };
+    res.json(resp);
+  } catch (e) { res.status(500).json({ erro: e.message }); }
+});
+
 // ===== DICAS: 3 melhores do quadro (todas as ligas) para o mercado, com carimbo honesto =====
 const dicasCache = {};
 app.get("/api/dicas", (req, res) => {
