@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": 19.5,
-  "ciclos": 8,
+  "saldo": 12.5,
+  "ciclos": 9,
   "greens": 3,
-  "redsCiclo": 0,
+  "redsCiclo": 1,
   "aborts": 0,
   "descartes": 5,
   "historico": [
+   {
+    "quando": "2026-07-14T20:53:31.609Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-14T20:20:33.613Z",
     "resultado": "DESCARTADO",
@@ -56,18 +62,14 @@
     "detalhe": "copa · Bélgica x Austrália @4.5 (tiro 3)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "euro": true
+  },
   "ciclo": {
    "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "alvo": {
-    "h": "21:43",
-    "jogo": "Arábia Saudita x Panamá",
-    "odd": 4.5,
-    "unidades": 4,
-    "desde": 1784061993616
-   },
+   "degrau": 3,
+   "apostado": 7,
+   "alvo": null,
    "iniciadoEm": 1784060434414,
    "tiros": [
     {
@@ -81,13 +83,20 @@
      "jogo": "Egito x EUA",
      "odd": 4,
      "unidades": 2
+    },
+    {
+     "h": "21:43",
+     "jogo": "Arábia Saudita x Panamá",
+     "odd": 4.5,
+     "unidades": 4
     }
    ],
    "semAlvoDesde": null
   },
   "cooldown": {
    "copa": 1784055333206,
-   "premier": 1784056666414
+   "premier": 1784056666414,
+   "euro": 1784062411609
   }
  },
  "o25": {
