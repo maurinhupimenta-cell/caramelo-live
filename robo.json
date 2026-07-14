@@ -216,13 +216,19 @@
   "ciclo": null
  },
  "ambas": {
-  "saldo": 1,
-  "ciclos": 6,
-  "greens": 1,
+  "saldo": 2,
+  "ciclos": 7,
+  "greens": 2,
   "redsCiclo": 0,
   "aborts": 0,
   "descartes": 5,
   "historico": [
+   {
+    "quando": "2026-07-14T11:22:10.844Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · África do Sul x Argentina @2 (tiro 1)"
+   },
    {
     "quando": "2026-07-14T11:13:11.245Z",
     "resultado": "DESCARTADO",
@@ -260,7 +266,9 @@
     "detalhe": "copa · alvo sem fechamento em 15min, anulado sem contar"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "copa": true
+  },
   "ciclo": {
    "liga": "copa",
    "degrau": 0,
