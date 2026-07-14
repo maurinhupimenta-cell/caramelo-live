@@ -62,14 +62,18 @@
     "detalhe": "copa · Bélgica x Austrália @4.5 (tiro 3)"
    }
   ],
-  "consumidas": {
-   "euro": true
-  },
+  "consumidas": {},
   "ciclo": {
    "liga": "super",
    "degrau": 1,
    "apostado": 1,
-   "alvo": null,
+   "alvo": {
+    "h": "22:05",
+    "jogo": "Escócia x Hungria",
+    "odd": 4.75,
+    "unidades": 2,
+    "desde": 1784063194508
+   },
    "iniciadoEm": 1784062473319,
    "tiros": [
     {
@@ -78,7 +82,8 @@
      "odd": 4.5,
      "unidades": 1
     }
-   ]
+   ],
+   "semAlvoDesde": null
   },
   "cooldown": {
    "copa": 1784055333206,
