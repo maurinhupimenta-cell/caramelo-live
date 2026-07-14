@@ -1,12 +1,18 @@
 {
  "o35": {
   "saldo": 16.7,
-  "ciclos": 69,
+  "ciclos": 70,
   "greens": 14,
   "redsCiclo": 4,
   "aborts": 16,
-  "descartes": 35,
+  "descartes": 36,
   "historico": [
+   {
+    "quando": "2026-07-14T16:19:32.143Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "premier · alvo sem fechamento em 15min, anulado sem contar"
+   },
    {
     "quando": "2026-07-14T15:58:00.654Z",
     "resultado": "DESCARTADO",
@@ -120,12 +126,6 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "premier · alvo sem fechamento em 15min, anulado sem contar"
-   },
-   {
-    "quando": "2026-07-14T07:40:22.445Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min, anulado sem contar"
    }
   ],
   "consumidas": {},
@@ -241,7 +241,13 @@
    "liga": "super",
    "degrau": 1,
    "apostado": 1,
-   "alvo": null,
+   "alvo": {
+    "h": "17:28",
+    "jogo": "Lima x Sao Paulo",
+    "odd": 2,
+    "unidades": 2,
+    "desde": 1784045612346
+   },
    "iniciadoEm": 1784044867443
   }
  },
