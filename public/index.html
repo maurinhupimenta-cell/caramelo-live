@@ -219,6 +219,9 @@ window.__mosaicoClick||(window.__mosaicoClick=1,document.addEventListener('click
   try{if(window.__lastD&&typeof render==='function')render(window.__lastD);}catch(_){}
 }));
 async function tick(){
+  // aba em segundo plano DORME: zero trabalho (nao trava o Chrome com varias abas);
+  // ao voltar, o visibilitychange ja dispara tick() e ela acorda atualizada na hora
+  if(document.hidden)return;
   const liga=ligaSel.value, mkt=mktSel.value, qtd=qtdSel.value;
   try{
     const r=await fetch('/api/liga/'+liga+'?mkt='+mkt+'&qtd='+qtd,{cache:'no-store'});
