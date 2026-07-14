@@ -1680,29 +1680,33 @@ app.get("/api/padroes/:liga", (req, res) => {
     const games = d.gamesAll || d.games;
     const seq = games.map(g => (pays(g, mkt) ? "G" : "R"));
     const horas = games.map(g => (g.horario || "").split(":")[0]);
+    // DESFECHO NO CICLO DE 3 TIROS (como o usuario opera): apos a sequencia, veio green em ate 3 jogos?
     const grupos = {};
     for (const L of [4, 5]) {
-      for (let i = 0; i + L < seq.length; i++) {
+      for (let i = 0; i + L + 2 < seq.length; i++) {
         const chave = seq.slice(i, i + L).join("");
-        const prox = seq[i + L];
-        const g = grupos[chave] || (grupos[chave] = { n: 0, G: 0, horas: new Set() });
-        g.n++; if (prox === "G") g.G++; if (horas[i + L]) g.horas.add(horas[i + L]);
+        const tres = seq.slice(i + L, i + L + 3);
+        const pagouCiclo = tres.includes("G");
+        const g = grupos[chave] || (grupos[chave] = { n: 0, G3: 0, horas: new Set() });
+        g.n++; if (pagouCiclo) g.G3++; if (horas[i + L]) g.horas.add(horas[i + L]);
       }
     }
-    const baseG = Math.round(seq.filter(c => c === "G").length / seq.length * 100); // regua do dia
+    // regua do CICLO: em qualquer trecho de 3 jogos, quantos % tem pelo menos 1 green?
+    let regN = 0, regH = 0;
+    for (let i = 0; i + 2 < seq.length; i++) { regN++; if (seq.slice(i, i + 3).includes("G")) regH++; }
+    const regua3 = regN ? Math.round(regH / regN * 100) : 0;
     const out = [];
     for (const [chave, g] of Object.entries(grupos)) {
       if (g.n < 5) continue;
       if (g.horas.size < 2) continue; // precisa repetir em horas DIFERENTES
-      const taxaG = Math.round(g.G / g.n * 100);
-      // compara cada desfecho com a REGUA correspondente: so entra quem FOGE dela
-      const edgeG = taxaG - baseG;              // padrao que puxa GREEN acima da regua
-      const edgeR = (100 - taxaG) - (100 - baseG); // padrao que puxa RED alem do normal
-      let prox, taxa, regua, edge;
-      if (edgeG >= 15) { prox = "G"; taxa = taxaG; regua = baseG; edge = edgeG; }
-      else if (edgeR >= 15) { prox = "R"; taxa = 100 - taxaG; regua = 100 - baseG; edge = edgeR; }
+      const taxa3 = Math.round(g.G3 / g.n * 100);
+      const edgeG = taxa3 - regua3;          // ciclo paga MAIS que a regua apos essa sequencia
+      const edgeR = regua3 - taxa3;          // ciclo MORRE mais que o normal (fuja)
+      let prox, taxa, edge;
+      if (edgeG >= 15) { prox = "G"; taxa = taxa3; edge = edgeG; }
+      else if (edgeR >= 15) { prox = "R"; taxa = 100 - taxa3; edge = edgeR; }
       else continue;
-      out.push({ seq: chave, prox, taxa, regua, edge, n: g.n, acertos: prox === "G" ? g.G : g.n - g.G, horas: [...g.horas].sort().slice(0, 6) });
+      out.push({ seq: chave, prox, taxa, regua: prox === "G" ? regua3 : 100 - regua3, edge, n: g.n, acertos: prox === "G" ? g.G3 : g.n - g.G3, horas: [...g.horas].sort().slice(0, 6) });
     }
     out.sort((a, b) => b.edge - a.edge || b.n - a.n);
     const resp = { liga, mkt, padroes: out.slice(0, 10) };
