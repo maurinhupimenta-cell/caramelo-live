@@ -1,12 +1,18 @@
 {
  "o35": {
   "saldo": 0.1,
-  "ciclos": 40,
+  "ciclos": 41,
   "greens": 9,
   "redsCiclo": 4,
   "aborts": 15,
-  "descartes": 12,
+  "descartes": 13,
   "historico": [
+   {
+    "quando": "2026-07-14T04:12:01.160Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "premier · alvo sem fechamento em 15min, anulado sem contar"
+   },
    {
     "quando": "2026-07-14T03:48:03.758Z",
     "resultado": "DESCARTADO",
@@ -120,12 +126,6 @@
     "resultado": "GREEN",
     "unidades": 15,
     "detalhe": "euro · Albânia x Croácia @5.5 (degrau 3)"
-   },
-   {
-    "quando": "2026-07-13T18:11:05.484Z",
-    "resultado": "GREEN",
-    "unidades": 3.5,
-    "detalhe": "premier · Tottenham x City @4.5 (degrau 1)"
    }
   ],
   "consumidas": {},
@@ -171,7 +171,19 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "alvo": {
+    "h": "05:20",
+    "jogo": "Inglaterra x Suíça",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1784002283949
+   },
+   "iniciadoEm": 1784002283949
+  }
  },
  "ambas": {
   "saldo": 1,
