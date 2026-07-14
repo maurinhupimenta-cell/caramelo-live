@@ -1,12 +1,18 @@
 {
  "o35": {
   "saldo": 11,
-  "ciclos": 2,
+  "ciclos": 3,
   "greens": 1,
   "redsCiclo": 0,
   "aborts": 0,
-  "descartes": 1,
+  "descartes": 2,
   "historico": [
+   {
+    "quando": "2026-07-14T18:46:32.304Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-14T17:24:13.910Z",
     "resultado": "DESCARTADO",
@@ -22,7 +28,7 @@
   ],
   "consumidas": {},
   "ciclo": {
-   "liga": "euro",
+   "liga": "copa",
    "degrau": 0,
    "apostado": 0,
    "alvo": {
@@ -30,9 +36,9 @@
     "jogo": "Costa do Marfim x Equador",
     "odd": 3.8,
     "unidades": 1,
-    "desde": 1784053892216
+    "desde": 1784054793610
    },
-   "iniciadoEm": 1784053892216
+   "iniciadoEm": 1784054793610
   },
   "cooldown": {
    "copa": 1784048853509
