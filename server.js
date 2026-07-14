@@ -1605,8 +1605,15 @@ function atualizaRoboMkt(mkt) {
     const gAll = d.gamesAll || d.games || [];
     if (L.ciclo.alvo) {
       if (!L.ciclo.alvo.desde || Date.now() - L.ciclo.alvo.desde > 15 * 60000) {
-        registraCiclo(mkt, "DESCARTADO", 0, `${L.ciclo.liga} · alvo sem fechamento em 15min, anulado sem contar`);
-        L.ciclo = null;
+        if (L.ciclo.apostado === 0) {
+          // abortar ANTES da 1a aposta pode (maos vazias)
+          registraCiclo(mkt, "DESCARTADO", 0, `${L.ciclo.liga} · alvo sem fechamento em 15min antes da 1a aposta`);
+          L.ciclo = null;
+        } else {
+          // NO MEIO DA ENTRADA NAO ABORTA (regra do usuario): troca de alvo e o ciclo segue
+          L.ciclo.alvo = null;
+          salvaRoboLedger();
+        }
         return;
       }
       const cauda = gAll.slice(-60);
@@ -1646,11 +1653,11 @@ function atualizaRoboMkt(mkt) {
       } else {
         // seguranca: sem candidato no piso por 20min (liga parada/sem odds) -> encerra com o apostado
         if (!L.ciclo.semAlvoDesde) { L.ciclo.semAlvoDesde = Date.now(); salvaRoboLedger(); }
-        else if (Date.now() - L.ciclo.semAlvoDesde > 20 * 60000) {
+        else if (Date.now() - L.ciclo.semAlvoDesde > 20 * 60000 && L.ciclo.apostado === 0) {
+          // so encerra de MAOS VAZIAS; com aposta na mesa o ciclo espera o tempo que for (regra do usuario)
           L.consumidas = L.consumidas || {}; L.consumidas[L.ciclo.liga] = true;
           L.cooldown = L.cooldown || {}; L.cooldown[L.ciclo.liga] = Date.now();
-          if (L.ciclo.apostado > 0) registraCiclo(mkt, "ABORT", -L.ciclo.apostado, `${L.ciclo.liga} · 20min sem jogo no piso, ciclo encerrado`);
-          else registraCiclo(mkt, "DESCARTADO", 0, `${L.ciclo.liga} · 20min sem jogo no piso`);
+          registraCiclo(mkt, "DESCARTADO", 0, `${L.ciclo.liga} · 20min sem jogo no piso`);
           L.ciclo = null;
         }
       }
