@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": 11.5,
-  "ciclos": 57,
-  "greens": 12,
+  "saldo": 14.5,
+  "ciclos": 58,
+  "greens": 13,
   "redsCiclo": 4,
   "aborts": 15,
   "descartes": 26,
   "historico": [
+   {
+    "quando": "2026-07-14T11:22:11.546Z",
+    "resultado": "GREEN",
+    "unidades": 3,
+    "detalhe": "super · Lima x Rio de Janeiro @4 (tiro 1)"
+   },
    {
     "quando": "2026-07-14T11:07:12.956Z",
     "resultado": "DESCARTADO",
@@ -120,27 +126,21 @@
     "resultado": "ABORT",
     "unidades": -1,
     "detalhe": "premier · janela fechou no meio do ciclo"
-   },
-   {
-    "quando": "2026-07-14T02:54:06.750Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "premier · alvo sem fechamento em 15min, anulado sem contar"
    }
   ],
   "consumidas": {},
   "ciclo": {
-   "liga": "super",
+   "liga": "copa",
    "degrau": 0,
    "apostado": 0,
    "alvo": {
-    "h": "12:13",
-    "jogo": "Lima x Rio de Janeiro",
-    "odd": 4,
+    "h": "12:31",
+    "jogo": "Argentina x Paraguai",
+    "odd": 4.5,
     "unidades": 1,
-    "desde": 1784027250749
+    "desde": 1784028132152
    },
-   "iniciadoEm": 1784027250749
+   "iniciadoEm": 1784028132152
   }
  },
  "o25": {
@@ -213,7 +213,19 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "alvo": {
+    "h": "12:37",
+    "jogo": "Bélgica x Iraque",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1784028670749
+   },
+   "iniciadoEm": 1784028670749
+  }
  },
  "ambas": {
   "saldo": 2,
@@ -269,18 +281,6 @@
   "consumidas": {
    "copa": true
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "12:13",
-    "jogo": "África do Sul x Argentina",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1784027591944
-   },
-   "iniciadoEm": 1784027591944
-  }
+  "ciclo": null
  }
 }
