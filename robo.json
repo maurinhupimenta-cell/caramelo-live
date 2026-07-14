@@ -133,18 +133,30 @@
    "liga": "super",
    "degrau": 1,
    "apostado": 1,
-   "alvo": null,
+   "alvo": {
+    "h": "09:55",
+    "jogo": "Medellin x Buenos Aires",
+    "odd": 4.2,
+    "unidades": 2,
+    "desde": 1784019132547
+   },
    "iniciadoEm": 1784018712649
   }
  },
  "o25": {
   "saldo": -0.8,
-  "ciclos": 6,
+  "ciclos": 7,
   "greens": 2,
   "redsCiclo": 0,
   "aborts": 1,
-  "descartes": 3,
+  "descartes": 4,
   "historico": [
+   {
+    "quando": "2026-07-14T08:57:10.853Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min, anulado sem contar"
+   },
    {
     "quando": "2026-07-14T08:41:59.550Z",
     "resultado": "ABORT",
