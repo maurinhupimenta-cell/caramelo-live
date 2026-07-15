@@ -133,7 +133,13 @@
    "liga": "premier",
    "degrau": 1,
    "apostado": 1,
-   "alvo": null,
+   "alvo": {
+    "h": "22:45",
+    "jogo": "Brentford x Tottenham",
+    "odd": 5,
+    "unidades": 2,
+    "desde": 1784151871282
+   },
    "iniciadoEm": 1784145194691,
    "tiros": [
     {
@@ -143,7 +149,7 @@
      "unidades": 1
     }
    ],
-   "semAlvoDesde": 1784145762784
+   "semAlvoDesde": null
   },
   "cooldown": {
    "copa": 1784145194081,
@@ -223,7 +229,13 @@
    "liga": "premier",
    "degrau": 2,
    "apostado": 3,
-   "alvo": null,
+   "alvo": {
+    "h": "22:45",
+    "jogo": "Brentford x Tottenham",
+    "odd": 2.45,
+    "unidades": 4,
+    "desde": 1784151871284
+   },
    "iniciadoEm": 1784144162690,
    "tiros": [
     {
@@ -239,7 +251,7 @@
      "unidades": 2
     }
    ],
-   "semAlvoDesde": 1784145762785
+   "semAlvoDesde": null
   },
   "cooldown": {
    "copa": 1784062951508,
@@ -331,36 +343,19 @@
     "detalhe": "super · alvo sem fechamento em 15min, anulado sem contar"
    }
   ],
-  "consumidas": {
-   "euro": true
-  },
+  "consumidas": {},
   "ciclo": {
    "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
+   "degrau": 0,
+   "apostado": 0,
    "alvo": {
-    "h": "20:56",
-    "jogo": "Países Baixos x República Tcheca",
-    "odd": 2.02,
-    "unidades": 4,
-    "desde": 1784145177185
+    "h": "22:56",
+    "jogo": "Hungria x Itália",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1784151872184
    },
-   "iniciadoEm": 1784142176092,
-   "tiros": [
-    {
-     "h": "20:02",
-     "jogo": "Sérvia x Bélgica",
-     "odd": 2,
-     "unidades": 1
-    },
-    {
-     "h": "20:44",
-     "jogo": "Turquia x Romênia",
-     "odd": 2.02,
-     "unidades": 2
-    }
-   ],
-   "semAlvoDesde": null
+   "iniciadoEm": 1784151872184
   },
   "cooldown": {
    "euro": 1784145944989,
