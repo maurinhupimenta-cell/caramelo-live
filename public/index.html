@@ -151,7 +151,8 @@ function _roboBox(mkt,b){
   const piso=(b&&b.piso)||({o35:3.6,o25:2.0,ambas:2.0})[mkt];
   const reg=(b&&b.registro)||{};
   const saldoCor=reg.saldo>0?'var(--greenb)':reg.saldo<0?'var(--red)':'#9fb0c3';
-  const saldoTxt=reg.ciclos?`💰 <b style="color:${saldoCor}">${reg.saldo>0?'+':''}${reg.saldo}u</b> <span class="note" style="font-size:11px">(${reg.ciclos} ciclos: ${reg.greens}🟢 ${reg.redsCiclo}🔴${reg.aborts?' '+reg.aborts+'⚠️':''}${reg.descartes?' '+reg.descartes+'🗑️':''})</span>`:`💰 <b style="color:#9fb0c3">0u</b> <span class="note" style="font-size:11px">(sem ciclos ainda)</span>`;
+  const _cu=v=>`<b style="color:${v>0?'var(--greenb)':v<0?'var(--red)':'#9fb0c3'}">${v>0?'+':''}${v??0}u</b>`;
+  const saldoTxt=reg.ciclos?`💰 hoje ${_cu(reg.hoje)} · 7d ${_cu(reg.semana7)} · mês ${_cu(reg.mes30)} · total ${_cu(reg.saldo)} <span class="note" style="font-size:11px">(${reg.ciclos} ciclos: ${reg.greens}🟢 ${reg.redsCiclo}🔴${reg.aborts?' '+reg.aborts+'⚠️':''}${reg.descartes?' '+reg.descartes+'🗑️':''})</span>`:`💰 <b style="color:#9fb0c3">0u</b> <span class="note" style="font-size:11px">(sem ciclos ainda)</span>`;
   if(b&&b.cicloView){
     const c=b.cicloView;
     const un=[1,2,4];

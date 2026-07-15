@@ -1491,9 +1491,15 @@ async function salvaRoboLedger() {
     if (r.ok) { const j = await r.json(); roboSha = j.content.sha; }
   } catch (e) {}
 }
+function diaHoje() { try { return new Date().toLocaleDateString("en-CA", { timeZone: "America/Sao_Paulo" }); } catch (e) { return new Date().toISOString().slice(0, 10); } }
 function registraCiclo(mkt, resultado, unidades, detalhe) {
   const L = roboState[mkt];
   L.ciclos++;
+  L.dias = L.dias || {};
+  const dh = diaHoje();
+  L.dias[dh] = Math.round(((L.dias[dh] || 0) + unidades) * 10) / 10;
+  const chaves = Object.keys(L.dias).sort();
+  if (chaves.length > 60) for (const c of chaves.slice(0, chaves.length - 60)) delete L.dias[c];
   if (resultado === "GREEN") L.greens++; else if (resultado === "RED_CICLO") L.redsCiclo++; else if (resultado === "ABORT") L.aborts++; else L.descartes++;
   L.saldo = Math.round((L.saldo + unidades) * 10) / 10;
   L.historico.unshift({ quando: new Date().toISOString(), resultado, unidades, detalhe });
@@ -1691,7 +1697,10 @@ app.get("/api/robo", (req, res) => {
         melhor = montaRobo(mkt) || {};
         if (melhor.liga) melhor.previa = true;
       }
-      melhor.registro = { saldo: L.saldo, ciclos: L.ciclos, greens: L.greens, redsCiclo: L.redsCiclo, aborts: L.aborts, descartes: L.descartes || 0 };
+      const dias = L.dias || {};
+      const dh2 = diaHoje();
+      const somaDias = n => { let s = 0; for (let i = 0; i < n; i++) { const d3 = new Date(Date.now() - i * 86400000).toLocaleDateString("en-CA", { timeZone: "America/Sao_Paulo" }); s += dias[d3] || 0; } return Math.round(s * 10) / 10; };
+      melhor.registro = { saldo: L.saldo, hoje: Math.round((dias[dh2] || 0) * 10) / 10, semana7: somaDias(7), mes30: somaDias(30), ciclos: L.ciclos, greens: L.greens, redsCiclo: L.redsCiclo, aborts: L.aborts, descartes: L.descartes || 0 };
       if (!melhor.liga && !melhor.cicloView && L.consumidas) {
         for (const liga of Object.keys(L.consumidas)) {
           const d = store[liga]; if (!d || !d.games || d.games.length < 60) continue;
