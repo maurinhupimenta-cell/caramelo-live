@@ -133,7 +133,13 @@
    "liga": "premier",
    "degrau": 2,
    "apostado": 3,
-   "alvo": null,
+   "alvo": {
+    "h": "19:16",
+    "jogo": "Guayaquil x Rio de Janeiro",
+    "odd": 4,
+    "unidades": 4,
+    "desde": 1784139418645
+   },
    "iniciadoEm": 1784138158545,
    "tiros": [
     {
@@ -209,16 +215,25 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "alvo": {
-    "h": "19:12",
-    "jogo": "Leicester x Everton",
+    "h": "19:24",
+    "jogo": "Wolverhampton x Aston",
     "odd": 2.2,
-    "unidades": 1,
-    "desde": 1784138923347
+    "unidades": 2,
+    "desde": 1784139642757
    },
-   "iniciadoEm": 1784138923347
+   "iniciadoEm": 1784138923347,
+   "tiros": [
+    {
+     "h": "19:12",
+     "jogo": "Leicester x Everton",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ],
+   "semAlvoDesde": null
   },
   "cooldown": {
    "copa": 1784062951508,
