@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": 19.7,
-  "ciclos": 17,
+  "saldo": 12.7,
+  "ciclos": 18,
   "greens": 6,
-  "redsCiclo": 3,
+  "redsCiclo": 4,
   "aborts": 0,
   "descartes": 8,
   "historico": [
+   {
+    "quando": "2026-07-15T13:32:56.607Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-15T05:52:59.614Z",
     "resultado": "GREEN",
@@ -111,27 +117,12 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "alvo": null,
-   "iniciadoEm": 1784095826306,
-   "tiros": [
-    {
-     "h": "07:10",
-     "jogo": "Agua Branca x Itaquera",
-     "odd": 4.33,
-     "unidades": 1
-    }
-   ],
-   "semAlvoDesde": null
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784077711915,
    "premier": 1784056666414,
    "euro": 1784094779614,
-   "super": 1784093759713
+   "super": 1784122376607
   }
  },
  "o25": {
