@@ -190,7 +190,13 @@
    "liga": "premier",
    "degrau": 2,
    "apostado": 3,
-   "alvo": null,
+   "alvo": {
+    "h": "19:36",
+    "jogo": "Brentford x Norwich",
+    "odd": 2.25,
+    "unidades": 4,
+    "desde": 1784140398381
+   },
    "iniciadoEm": 1784138923347,
    "tiros": [
     {
@@ -215,12 +221,18 @@
  },
  "ambas": {
   "saldo": 4,
-  "ciclos": 9,
+  "ciclos": 10,
   "greens": 3,
   "redsCiclo": 0,
   "aborts": 0,
-  "descartes": 6,
+  "descartes": 7,
   "historico": [
+   {
+    "quando": "2026-07-15T18:38:47.678Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-15T03:51:37.216Z",
     "resultado": "DESCARTADO",
@@ -294,6 +306,9 @@
    "euro": 1784050140511,
    "super": 1784052435011,
    "premier": 1784056804409
+  },
+  "dias": {
+   "2026-07-15": 0
   }
  }
 }
