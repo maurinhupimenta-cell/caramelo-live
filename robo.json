@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -1.3,
-  "ciclos": 27,
+  "saldo": -8.3,
+  "ciclos": 28,
   "greens": 6,
-  "redsCiclo": 6,
+  "redsCiclo": 7,
   "aborts": 0,
   "descartes": 15,
   "historico": [
+   {
+    "quando": "2026-07-15T18:28:58.248Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-15T17:55:57.747Z",
     "resultado": "DESCARTADO",
@@ -120,51 +126,18 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-14T20:20:33.613Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "alvo": {
-    "h": "19:16",
-    "jogo": "Guayaquil x Rio de Janeiro",
-    "odd": 4,
-    "unidades": 4,
-    "desde": 1784139418645
-   },
-   "iniciadoEm": 1784138158545,
-   "tiros": [
-    {
-     "h": "18:55",
-     "jogo": "Montevideo x Santos",
-     "odd": 4.5,
-     "unidades": 1
-    },
-    {
-     "h": "19:07",
-     "jogo": "Rio de Janeiro x Guayaquil",
-     "odd": 4.2,
-     "unidades": 2
-    }
-   ],
-   "semAlvoDesde": null
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784077711915,
-   "premier": 1784056666414,
+   "premier": 1784140138248,
    "euro": 1784128254106,
    "super": 1784124972907
   },
   "dias": {
-   "2026-07-15": 0
+   "2026-07-15": -7
   }
  },
  "o25": {
