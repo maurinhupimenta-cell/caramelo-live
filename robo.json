@@ -108,13 +108,19 @@
   }
  },
  "o25": {
-  "saldo": 1.2,
-  "ciclos": 2,
-  "greens": 1,
+  "saldo": 2.4,
+  "ciclos": 3,
+  "greens": 2,
   "redsCiclo": 0,
   "aborts": 0,
   "descartes": 1,
   "historico": [
+   {
+    "quando": "2026-07-15T02:17:52.313Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · City x Brentford @2.15 (tiro 1)"
+   },
    {
     "quando": "2026-07-14T21:02:31.508Z",
     "resultado": "GREEN",
@@ -128,7 +134,9 @@
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "premier": true
+  },
   "ciclo": {
    "liga": "premier",
    "degrau": 0,
@@ -143,7 +151,8 @@
    "iniciadoEm": 1784081193811
   },
   "cooldown": {
-   "copa": 1784062951508
+   "copa": 1784062951508,
+   "premier": 1784081872313
   }
  },
  "ambas": {
