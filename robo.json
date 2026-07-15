@@ -221,13 +221,19 @@
   }
  },
  "ambas": {
-  "saldo": 5.1,
-  "ciclos": 13,
-  "greens": 4,
+  "saldo": 6.2,
+  "ciclos": 14,
+  "greens": 5,
   "redsCiclo": 0,
   "aborts": 0,
   "descartes": 9,
   "historico": [
+   {
+    "quando": "2026-07-15T22:53:42.079Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Palace x West Ham @2.1 (tiro 1)"
+   },
    {
     "quando": "2026-07-15T21:59:32.486Z",
     "resultado": "DESCARTADO",
@@ -307,7 +313,9 @@
     "detalhe": "super · alvo sem fechamento em 15min, anulado sem contar"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "premier": true
+  },
   "ciclo": {
    "liga": "premier",
    "degrau": 0,
@@ -324,10 +332,10 @@
   "cooldown": {
    "euro": 1784145944989,
    "super": 1784052435011,
-   "premier": 1784056804409
+   "premier": 1784156022079
   },
   "dias": {
-   "2026-07-15": 1.1
+   "2026-07-15": 2.2
   }
  }
 }
