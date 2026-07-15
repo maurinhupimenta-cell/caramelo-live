@@ -141,13 +141,19 @@
   }
  },
  "o25": {
-  "saldo": 2.4,
-  "ciclos": 6,
+  "saldo": -4.6,
+  "ciclos": 7,
   "greens": 2,
-  "redsCiclo": 0,
+  "redsCiclo": 1,
   "aborts": 0,
   "descartes": 4,
   "historico": [
+   {
+    "quando": "2026-07-15T18:44:53.286Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-15T06:46:05.309Z",
     "resultado": "DESCARTADO",
@@ -185,18 +191,14 @@
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "premier": true
+  },
   "ciclo": {
    "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "alvo": {
-    "h": "19:36",
-    "jogo": "Brentford x Norwich",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1784140398381
-   },
+   "degrau": 3,
+   "apostado": 7,
+   "alvo": null,
    "iniciadoEm": 1784138923347,
    "tiros": [
     {
@@ -210,13 +212,22 @@
      "jogo": "Wolverhampton x Aston",
      "odd": 2.2,
      "unidades": 2
+    },
+    {
+     "h": "19:36",
+     "jogo": "Brentford x Norwich",
+     "odd": 2.25,
+     "unidades": 4
     }
    ],
    "semAlvoDesde": null
   },
   "cooldown": {
    "copa": 1784062951508,
-   "premier": 1784081872313
+   "premier": 1784141093285
+  },
+  "dias": {
+   "2026-07-15": -7
   }
  },
  "ambas": {
@@ -289,19 +300,7 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "19:33",
-    "jogo": "Islington x Southampton",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1784139821549
-   },
-   "iniciadoEm": 1784139821549
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784050140511,
    "super": 1784052435011,
