@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -15.3,
-  "ciclos": 30,
+  "saldo": -22.3,
+  "ciclos": 31,
   "greens": 6,
-  "redsCiclo": 8,
+  "redsCiclo": 9,
   "aborts": 0,
   "descartes": 16,
   "historico": [
+   {
+    "quando": "2026-07-15T22:05:53.180Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-15T19:53:14.081Z",
     "resultado": "RED_CICLO",
@@ -120,51 +126,18 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-15T01:08:31.915Z",
-    "resultado": "GREEN",
-    "unidades": 5.4,
-    "detalhe": "copa · Qatar x Equador @4.2 (tiro 2)"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "alvo": {
-    "h": "22:57",
-    "jogo": "Everton x Watford",
-    "odd": 4.2,
-    "unidades": 4,
-    "desde": 1784152425090
-   },
-   "iniciadoEm": 1784145194691,
-   "tiros": [
-    {
-     "h": "20:54",
-     "jogo": "Leicester x West Ham",
-     "odd": 5.5,
-     "unidades": 1
-    },
-    {
-     "h": "22:45",
-     "jogo": "Brentford x Tottenham",
-     "odd": 5,
-     "unidades": 2
-    }
-   ],
-   "semAlvoDesde": null
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784145194081,
-   "premier": 1784140138248,
+   "premier": 1784153153180,
    "euro": 1784128254106,
    "super": 1784124972907
   },
   "dias": {
-   "2026-07-15": -14
+   "2026-07-15": -21
   }
  },
  "o25": {
@@ -335,19 +308,7 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "22:56",
-    "jogo": "Hungria x Itália",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1784151872184
-   },
-   "iniciadoEm": 1784151872184
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784145944989,
    "super": 1784052435011,
