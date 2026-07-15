@@ -221,15 +221,9 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "alvo": {
-    "h": "20:54",
-    "jogo": "Leicester x West Ham",
-    "odd": 2.6,
-    "unidades": 2,
-    "desde": 1784145046580
-   },
+   "degrau": 2,
+   "apostado": 3,
+   "alvo": null,
    "iniciadoEm": 1784144162690,
    "tiros": [
     {
@@ -237,9 +231,15 @@
      "jogo": "Brighton x United",
      "odd": 2.05,
      "unidades": 1
+    },
+    {
+     "h": "20:54",
+     "jogo": "Leicester x West Ham",
+     "odd": 2.6,
+     "unidades": 2
     }
    ],
-   "semAlvoDesde": null
+   "semAlvoDesde": 1784145762785
   },
   "cooldown": {
    "copa": 1784062951508,
@@ -251,13 +251,19 @@
   }
  },
  "ambas": {
-  "saldo": 4,
-  "ciclos": 11,
-  "greens": 3,
+  "saldo": 5.1,
+  "ciclos": 12,
+  "greens": 4,
   "redsCiclo": 0,
   "aborts": 0,
   "descartes": 8,
   "historico": [
+   {
+    "quando": "2026-07-15T20:05:44.990Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Países Baixos x República Tcheca @2.02 (tiro 3)"
+   },
    {
     "quando": "2026-07-15T19:02:45.891Z",
     "resultado": "DESCARTADO",
@@ -325,7 +331,9 @@
     "detalhe": "super · alvo sem fechamento em 15min, anulado sem contar"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "euro": true
+  },
   "ciclo": {
    "liga": "euro",
    "degrau": 2,
@@ -355,12 +363,12 @@
    "semAlvoDesde": null
   },
   "cooldown": {
-   "euro": 1784050140511,
+   "euro": 1784145944989,
    "super": 1784052435011,
    "premier": 1784056804409
   },
   "dias": {
-   "2026-07-15": 0
+   "2026-07-15": 1.1
   }
  }
 }
