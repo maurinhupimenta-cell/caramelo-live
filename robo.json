@@ -233,16 +233,25 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "alvo": {
-    "h": "20:42",
-    "jogo": "Brighton x United",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1784144162690
+    "h": "20:54",
+    "jogo": "Leicester x West Ham",
+    "odd": 2.6,
+    "unidades": 2,
+    "desde": 1784145046580
    },
-   "iniciadoEm": 1784144162690
+   "iniciadoEm": 1784144162690,
+   "tiros": [
+    {
+     "h": "20:42",
+     "jogo": "Brighton x United",
+     "odd": 2.05,
+     "unidades": 1
+    }
+   ],
+   "semAlvoDesde": null
   },
   "cooldown": {
    "copa": 1784062951508,
@@ -331,15 +340,9 @@
   "consumidas": {},
   "ciclo": {
    "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "alvo": {
-    "h": "20:44",
-    "jogo": "Turquia x Romênia",
-    "odd": 2.02,
-    "unidades": 2,
-    "desde": 1784144517580
-   },
+   "degrau": 2,
+   "apostado": 3,
+   "alvo": null,
    "iniciadoEm": 1784142176092,
    "tiros": [
     {
@@ -347,6 +350,12 @@
      "jogo": "Sérvia x Bélgica",
      "odd": 2,
      "unidades": 1
+    },
+    {
+     "h": "20:44",
+     "jogo": "Turquia x Romênia",
+     "odd": 2.02,
+     "unidades": 2
     }
    ],
    "semAlvoDesde": null
