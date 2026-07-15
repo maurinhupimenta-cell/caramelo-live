@@ -1,12 +1,18 @@
 {
  "o35": {
   "saldo": -8.3,
-  "ciclos": 28,
+  "ciclos": 29,
   "greens": 6,
   "redsCiclo": 7,
   "aborts": 0,
-  "descartes": 15,
+  "descartes": 16,
   "historico": [
+   {
+    "quando": "2026-07-15T19:02:45.889Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-15T18:28:58.248Z",
     "resultado": "RED_CICLO",
@@ -120,28 +126,10 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-14T20:53:31.609Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "19:58",
-    "jogo": "Áustria x Países Baixos",
-    "odd": 4.5,
-    "unidades": 1,
-    "desde": 1784141157679
-   },
-   "iniciadoEm": 1784141157679
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784077711915,
    "premier": 1784140138248,
@@ -154,12 +142,18 @@
  },
  "o25": {
   "saldo": -4.6,
-  "ciclos": 7,
+  "ciclos": 8,
   "greens": 2,
   "redsCiclo": 1,
   "aborts": 0,
-  "descartes": 4,
+  "descartes": 5,
   "historico": [
+   {
+    "quando": "2026-07-15T19:02:45.890Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-15T18:44:53.286Z",
     "resultado": "RED_CICLO",
@@ -215,12 +209,18 @@
  },
  "ambas": {
   "saldo": 4,
-  "ciclos": 10,
+  "ciclos": 11,
   "greens": 3,
   "redsCiclo": 0,
   "aborts": 0,
-  "descartes": 7,
+  "descartes": 8,
   "historico": [
+   {
+    "quando": "2026-07-15T19:02:45.891Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-15T18:38:47.678Z",
     "resultado": "DESCARTADO",
