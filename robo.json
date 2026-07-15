@@ -162,13 +162,19 @@
   }
  },
  "o25": {
-  "saldo": -4.6,
-  "ciclos": 8,
+  "saldo": -11.6,
+  "ciclos": 9,
   "greens": 2,
-  "redsCiclo": 1,
+  "redsCiclo": 2,
   "aborts": 0,
   "descartes": 5,
   "historico": [
+   {
+    "quando": "2026-07-15T19:36:01.990Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-15T19:02:45.890Z",
     "resultado": "DESCARTADO",
@@ -218,41 +224,29 @@
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "euro": true
+  },
   "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "alvo": {
-    "h": "20:26",
-    "jogo": "Albânia x Escócia",
-    "odd": 2.55,
-    "unidades": 4,
-    "desde": 1784143365188
+    "h": "20:42",
+    "jogo": "Brighton x United",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1784144162690
    },
-   "iniciadoEm": 1784142176091,
-   "tiros": [
-    {
-     "h": "20:02",
-     "jogo": "Sérvia x Bélgica",
-     "odd": 2.35,
-     "unidades": 1
-    },
-    {
-     "h": "20:14",
-     "jogo": "Áustria x Croácia",
-     "odd": 2.25,
-     "unidades": 2
-    }
-   ],
-   "semAlvoDesde": null
+   "iniciadoEm": 1784144162690
   },
   "cooldown": {
    "copa": 1784062951508,
-   "premier": 1784141093285
+   "premier": 1784141093285,
+   "euro": 1784144161990
   },
   "dias": {
-   "2026-07-15": -7
+   "2026-07-15": -14
   }
  },
  "ambas": {
