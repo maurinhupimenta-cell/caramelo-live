@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": 20.7,
-  "ciclos": 15,
+  "saldo": 13.7,
+  "ciclos": 16,
   "greens": 5,
-  "redsCiclo": 2,
+  "redsCiclo": 3,
   "aborts": 0,
   "descartes": 8,
   "historico": [
+   {
+    "quando": "2026-07-15T05:35:59.713Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-15T04:19:57.116Z",
     "resultado": "GREEN",
@@ -98,34 +104,27 @@
     "detalhe": "copa · Bélgica x Austrália @4.5 (tiro 3)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "super": true
+  },
   "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "alvo": null,
-   "iniciadoEm": 1784091137805,
-   "tiros": [
-    {
-     "h": "05:55",
-     "jogo": "Rio de Janeiro x Itaquera",
-     "odd": 4.5,
-     "unidades": 1
-    },
-    {
-     "h": "06:17",
-     "jogo": "República Tcheca x Suíça",
-     "odd": 5,
-     "unidades": 2
-    }
-   ],
-   "semAlvoDesde": null
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "alvo": {
+    "h": "06:35",
+    "jogo": "Inglaterra x Geórgia",
+    "odd": 4.33,
+    "unidades": 1,
+    "desde": 1784093761007
+   },
+   "iniciadoEm": 1784093761007
   },
   "cooldown": {
    "copa": 1784077711915,
    "premier": 1784056666414,
    "euro": 1784062411609,
-   "super": 1784089197116
+   "super": 1784093759713
   }
  },
  "o25": {
