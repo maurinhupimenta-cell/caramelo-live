@@ -307,7 +307,7 @@ function mostraPortao(msg){
 }
 
 const nomeLiga={euro:'Euro',copa:'Copa',super:'Super',premier:'Premier'};
-const fitaTxt=f=>(f&&f.length)?' · últimos: '+f.map(v=>v?'🟢':'🔴').join(''):'';
+const fitaTxt=f=>(f&&f.length)?' · últimos: '+f.map(v=>{const p=(typeof v==='object')?v.p:v;const m=(typeof v==='object'&&v.m)?`<span style=\"font-size:9px;opacity:.75\">${v.m}</span>`:'';return (p?'🟢':'🔴')+m;}).join(' '):'';
 function radarHtml(lista){
   if(!lista||!lista.length)return '';
   const chips=lista.map(a=>a.tipo==='ltb'?`<span style="display:inline-block;margin:3px 6px 3px 0;padding:5px 10px;border-radius:8px;border:1px solid #f0a020;background:rgba(240,160,32,.12);font-size:12px;font-weight:700;color:#f0a020">💥 ${nomeLiga[a.liga]||a.liga} · ${nomeMkt[a.mkt]||a.mkt} — QUEBROU A LTB, pagando ${a.pagando!=null?a.pagando+'%':'—'}${fitaTxt(a.fita)}</span>`:a.tipo==='minima'

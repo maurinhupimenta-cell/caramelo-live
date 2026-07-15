@@ -2251,7 +2251,7 @@ function atualizaRadar(liga, s) {
       const JANR = Math.max(2, Math.min(20, gAll.length));
       const serie = gAll.length ? chartSeries(gAll, mkt, JANR).slice(-20) : (c.serie || []);
       const cur = serie.length ? serie[serie.length - 1] : null; // taxa atual (ultimo ponto, sem drop)
-      const fita = gAll.slice(-6).map(g => pays(g, mkt) ? 1 : 0); // jogo a jogo (ultimos 6, sem drop)
+      const fita = gAll.slice(-6).map(g => ({ p: pays(g, mkt) ? 1 : 0, m: (g.horario || "").split(":")[1] || "" })); // jogo a jogo com o MINUTO de cada um (aprender a olho nu)
       const k = liga + "|" + mkt;
       const prev = radarEstado[k] || {};
       // ZONA DE OPERACAO (estudo): minima = pagando <=60% do normal (janela dos ~31%).
