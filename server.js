@@ -1571,7 +1571,7 @@ function montaRobo(mkt) {
       if (virando) n += 5;                                // curva ja virando = pagamento comecando
       p._nota = Math.round(n * 10) / 10;
     }
-    let idxAnterior = -1;
+    let idxAnterior = 0; // nunca escolhe o jogo iminente (indice 0): folga minima de ~3min para acompanhar
     for (let dgi = 0; dgi < 3; dgi++) {
       const pool = validos.filter(p => p._i > idxAnterior);
       if (!pool.length) break;
@@ -1647,7 +1647,8 @@ function atualizaRoboMkt(mkt) {
       // COMECOU, TERMINA (regra do usuario): o ciclo cumpre os 3 tiros mesmo se a janela fechar.
       // O proximo degrau vem da PROPRIA liga do ciclo: primeiro jogo futuro com odd no piso.
       const evs2 = (d.upcoming && d.upcoming[mkt]) || [];
-      const cand = evs2.find(p => p.odd != null && p.odd >= ROBO_PISO[mkt] && pertenceALiga(L.ciclo.liga, p.nome));
+      // pula o jogo iminente (indice 0): alvo novo sempre com folga de ~3min para dar tempo de acompanhar
+      const cand = evs2.find((p, i2) => i2 >= 1 && p.odd != null && p.odd >= ROBO_PISO[mkt] && pertenceALiga(L.ciclo.liga, p.nome));
       if (cand) {
         L.ciclo.alvo = { h: cand.horario || "", jogo: cand.nome, odd: cand.odd, unidades: [1, 2, 4][L.ciclo.degrau], desde: Date.now() };
         L.ciclo.semAlvoDesde = null;
