@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": 5.7,
-  "ciclos": 20,
+  "saldo": -1.3,
+  "ciclos": 21,
   "greens": 6,
-  "redsCiclo": 5,
+  "redsCiclo": 6,
   "aborts": 0,
   "descartes": 9,
   "historico": [
+   {
+    "quando": "2026-07-15T15:10:54.106Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-15T14:43:13.911Z",
     "resultado": "DESCARTADO",
@@ -120,26 +126,16 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-14T17:07:33.509Z",
-    "resultado": "GREEN",
-    "unidades": 11,
-    "detalhe": "copa · Bélgica x Austrália @4.5 (tiro 3)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "euro": true
+  },
   "ciclo": {
    "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "alvo": {
-    "h": "16:02",
-    "jogo": "Albânia x Portugal",
-    "odd": 5.5,
-    "unidades": 4,
-    "desde": 1784127815109
-   },
+   "degrau": 3,
+   "apostado": 7,
+   "alvo": null,
    "iniciadoEm": 1784126594708,
    "tiros": [
     {
@@ -153,6 +149,12 @@
      "jogo": "Polônia x Ucrânia",
      "odd": 5.25,
      "unidades": 2
+    },
+    {
+     "h": "16:02",
+     "jogo": "Albânia x Portugal",
+     "odd": 5.5,
+     "unidades": 4
     }
    ],
    "semAlvoDesde": null
@@ -160,7 +162,7 @@
   "cooldown": {
    "copa": 1784077711915,
    "premier": 1784056666414,
-   "euro": 1784094779614,
+   "euro": 1784128254106,
    "super": 1784124972907
   }
  },
