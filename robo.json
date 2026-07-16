@@ -145,12 +145,18 @@
  },
  "o25": {
   "saldo": -26.1,
-  "ciclos": 35,
+  "ciclos": 36,
   "greens": 11,
   "redsCiclo": 6,
   "aborts": 0,
-  "descartes": 18,
+  "descartes": 19,
   "historico": [
+   {
+    "quando": "2026-07-16T19:35:58.837Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-16T19:11:31.131Z",
     "resultado": "RED_CICLO",
@@ -264,12 +270,6 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-16T02:04:51.766Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {},
@@ -431,19 +431,7 @@
    "copa": true,
    "super": true
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "20:22",
-    "jogo": "Agua Branca x Porto Alegre",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1784229572226
-   },
-   "iniciadoEm": 1784229572226
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784226930331,
    "super": 1784230410533,
