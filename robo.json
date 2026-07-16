@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -42.3,
-  "ciclos": 53,
+  "saldo": -49.3,
+  "ciclos": 54,
   "greens": 7,
-  "redsCiclo": 13,
+  "redsCiclo": 14,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-16T17:14:42.628Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-16T16:30:28.178Z",
     "resultado": "DESCARTADO",
@@ -120,26 +126,16 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-16T01:02:44.187Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "premier": true
+  },
   "ciclo": {
    "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "alvo": {
-    "h": "18:06",
-    "jogo": "West Ham x Liverpool",
-    "odd": 5,
-    "unidades": 4,
-    "desde": 1784221357138
-   },
+   "degrau": 3,
+   "apostado": 7,
+   "alvo": null,
    "iniciadoEm": 1784220028232,
    "tiros": [
     {
@@ -153,19 +149,25 @@
      "jogo": "Brentford x West Ham",
      "odd": 5.5,
      "unidades": 2
+    },
+    {
+     "h": "18:06",
+     "jogo": "West Ham x Liverpool",
+     "odd": 5,
+     "unidades": 4
     }
    ],
    "semAlvoDesde": null
   },
   "cooldown": {
    "copa": 1784171590565,
-   "premier": 1784173851860,
+   "premier": 1784222082526,
    "euro": 1784169368557,
    "super": 1784176277258
   },
   "dias": {
    "2026-07-15": -35,
-   "2026-07-16": -6
+   "2026-07-16": -13
   }
  },
  "o25": {
@@ -301,28 +303,7 @@
    "euro": true,
    "premier": true
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "alvo": {
-    "h": "18:03",
-    "jogo": "Leicester x Islington",
-    "odd": 2.25,
-    "unidades": 2,
-    "desde": 1784221185034
-   },
-   "iniciadoEm": 1784220461637,
-   "tiros": [
-    {
-     "h": "17:51",
-     "jogo": "United x Brighton",
-     "odd": 2.07,
-     "unidades": 1
-    }
-   ],
-   "semAlvoDesde": null
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784209571721,
    "premier": 1784221914129,
