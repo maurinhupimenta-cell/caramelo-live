@@ -128,9 +128,7 @@
     "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {
-   "super": true
-  },
+  "consumidas": {},
   "ciclo": {
    "liga": "copa",
    "degrau": 0,
@@ -289,7 +287,13 @@
    "liga": "premier",
    "degrau": 1,
    "apostado": 1,
-   "alvo": null,
+   "alvo": {
+    "h": "06:09",
+    "jogo": "Watford x Leicester",
+    "odd": 2.3,
+    "unidades": 2,
+    "desde": 1784178331251
+   },
    "iniciadoEm": 1784177449164,
    "tiros": [
     {
@@ -298,7 +302,8 @@
      "odd": 2.4,
      "unidades": 1
     }
-   ]
+   ],
+   "semAlvoDesde": null
   },
   "cooldown": {
    "copa": 1784062951508,
@@ -443,7 +448,19 @@
   "consumidas": {
    "super": true
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "alvo": {
+    "h": "06:09",
+    "jogo": "Watford x Leicester",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1784178331355
+   },
+   "iniciadoEm": 1784178331355
+  },
   "cooldown": {
    "euro": 1784174331366,
    "super": 1784176626053,
