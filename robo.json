@@ -129,19 +129,7 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "15:16",
-    "jogo": "Medellin x Avellaneda",
-    "odd": 4.75,
-    "unidades": 1,
-    "desde": 1784210653427
-   },
-   "iniciadoEm": 1784210653427
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784171590565,
    "premier": 1784173851860,
@@ -155,12 +143,18 @@
  },
  "o25": {
   "saldo": -22.1,
-  "ciclos": 29,
+  "ciclos": 30,
   "greens": 9,
   "redsCiclo": 5,
   "aborts": 0,
-  "descartes": 15,
+  "descartes": 16,
   "historico": [
+   {
+    "quando": "2026-07-16T14:19:32.018Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-16T13:46:11.913Z",
     "resultado": "RED_CICLO",
@@ -274,30 +268,10 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-15T21:53:45.091Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {
-   "copa": true
-  },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "15:19",
-    "jogo": "Santiago x Rio de Janeiro",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1784210653619
-   },
-   "iniciadoEm": 1784210653619
-  },
+  "consumidas": {},
+  "ciclo": null,
   "cooldown": {
    "copa": 1784209571721,
    "premier": 1784186409417,
