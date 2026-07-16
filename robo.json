@@ -311,12 +311,18 @@
  },
  "ambas": {
   "saldo": 0.5,
-  "ciclos": 22,
+  "ciclos": 23,
   "greens": 6,
   "redsCiclo": 1,
   "aborts": 0,
-  "descartes": 15,
+  "descartes": 16,
   "historico": [
+   {
+    "quando": "2026-07-16T04:56:58.651Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-16T04:37:06.054Z",
     "resultado": "RED_CICLO",
@@ -430,12 +436,6 @@
     "resultado": "GREEN",
     "unidades": 2,
     "detalhe": "super · Santos x Bogota @2.25 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-14T17:29:00.511Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · França x Geórgia @2.05 (tiro 1)"
    }
   ],
   "consumidas": {
