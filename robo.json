@@ -154,12 +154,18 @@
  },
  "o25": {
   "saldo": -17.2,
-  "ciclos": 14,
+  "ciclos": 15,
   "greens": 3,
   "redsCiclo": 3,
   "aborts": 0,
-  "descartes": 8,
+  "descartes": 9,
   "historico": [
+   {
+    "quando": "2026-07-16T01:49:33.068Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-16T01:10:30.184Z",
     "resultado": "DESCARTADO",
@@ -251,13 +257,13 @@
    "degrau": 0,
    "apostado": 0,
    "alvo": {
-    "h": "02:41",
-    "jogo": "Croácia x Bélgica",
-    "odd": 2.15,
+    "h": "02:56",
+    "jogo": "Eslováquia x Alemanha",
+    "odd": 2.2,
     "unidades": 1,
-    "desde": 1784165673059
+    "desde": 1784166574361
    },
-   "iniciadoEm": 1784165673059
+   "iniciadoEm": 1784166574361
   },
   "cooldown": {
    "copa": 1784062951508,
@@ -386,19 +392,7 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "02:45",
-    "jogo": "Everton x Tottenham",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1784165391139
-   },
-   "iniciadoEm": 1784165391139
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784145944989,
    "super": 1784052435011,
