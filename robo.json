@@ -313,13 +313,19 @@
   }
  },
  "ambas": {
-  "saldo": 1.6,
-  "ciclos": 38,
-  "greens": 15,
+  "saldo": 2.7,
+  "ciclos": 39,
+  "greens": 16,
   "redsCiclo": 2,
   "aborts": 0,
   "descartes": 21,
   "historico": [
+   {
+    "quando": "2026-07-16T23:02:48.125Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Brentford x Aston @2.05 (tiro 2)"
+   },
    {
     "quando": "2026-07-16T22:15:29.827Z",
     "resultado": "GREEN",
@@ -433,15 +439,11 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-16T03:11:48.258Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "premier": true
+  },
   "ciclo": {
    "liga": "premier",
    "degrau": 1,
@@ -467,12 +469,12 @@
   "cooldown": {
    "euro": 1784240129627,
    "super": 1784230410533,
-   "premier": 1784232528138,
+   "premier": 1784242967933,
    "copa": 1784227770533
   },
   "dias": {
    "2026-07-15": 2.2,
-   "2026-07-16": -4.6
+   "2026-07-16": -3.5
   }
  }
 }
