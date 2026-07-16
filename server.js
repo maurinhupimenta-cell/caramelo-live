@@ -1306,6 +1306,11 @@ app.get("/api/liga/:liga", (req, res) => {
   } catch (e) {}
   const tend = trendLines(analise.serie || []);
   analise = { ...analise, trend: tend };
+  // horarios dos jogos por tras de cada ponto da serie (eixo do tempo no grafico)
+  try {
+    const Lh = (analise.serie || []).length;
+    analise.serieHoras = (d.games || []).slice(-Lh).map(g => g.horario || "");
+  } catch (e) {}
   const _gM = d.gamesAll || d.games || [];
   const _trioOdds = o => ({ ambs: o && o.ambs != null ? o.ambs : null, o25: o && o.o25 != null ? o.o25 : null, o35: o && o.o35 != null ? o.o35 : null });
   const mosaico = {

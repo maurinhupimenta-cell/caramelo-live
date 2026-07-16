@@ -430,7 +430,7 @@ function render(d){
 
   // GRAFICO DA LINHA (SVG) com numeros nos pontos + histograma MACD + LTA/LTB
   const serie=a.serie||[];
-  const chart=lineChart(serie, a.macdHist||[], a.trend, a.ehTotalGols);
+  const chart=lineChart(serie, a.macdHist||[], a.trend, a.ehTotalGols, a.serieHoras||[]);
 
   // AVISO DE ROMPIMENTO (o sinal de ouro: reversao de ciclo)
   let rompHtml='';
@@ -704,7 +704,7 @@ function render(d){
   carregaRelatorio(d.liga); // async: relatorio por data (independe do mercado)
 }
 
-function lineChart(serie, macdHist, trend, ehGols){const uni=ehGols?"":"%";
+function lineChart(serie, macdHist, trend, ehGols, horas){const uni=ehGols?"":"%";
   if(!serie.length)return '<div class="note">sem dados para o gráfico</div>';
   const W=680,H=200,pad=28, hH=70, gap=14; // H=linha, hH=histograma
   const totalH=H+gap+hH;
@@ -769,6 +769,15 @@ function lineChart(serie, macdHist, trend, ehGols){const uni=ehGols?"":"%";
       labels+=`<text x="${x(i)}" y="${y(v)-8}" fill="#e6edf3" font-size="11" font-weight="600" text-anchor="middle">${v}</text>`;
     }
   });
+  // 🕐 EIXO DO TEMPO: horario do jogo por baixo dos pontos (espacado pra nao poluir)
+  try{
+    if(horas&&horas.length===N){
+      const passo=Math.max(1,Math.ceil(N/8));
+      for(let i=N-1;i>=0;i-=passo){
+        if(horas[i])labels+=`<text x="${x(i)}" y="${H-3}" fill="#8b98a8" font-size="8.5" text-anchor="middle">${horas[i]}</text>`;
+      }
+    }
+  }catch(e){}
   // sempre marca o ultimo ponto (atual) com numero, mesmo com muitos jogos
   if(!mostraNumeros){
     const lv=serie[N-1];
