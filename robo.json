@@ -273,15 +273,9 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "alvo": {
-    "h": "09:40",
-    "jogo": "Cabo Verde x Gana",
-    "odd": 2.3,
-    "unidades": 2,
-    "desde": 1784190997717
-   },
+   "degrau": 2,
+   "apostado": 3,
+   "alvo": null,
    "iniciadoEm": 1784190297715,
    "tiros": [
     {
@@ -289,6 +283,12 @@
      "jogo": "Turquia x Arábia Saudita",
      "odd": 2.2,
      "unidades": 1
+    },
+    {
+     "h": "09:40",
+     "jogo": "Cabo Verde x Gana",
+     "odd": 2.3,
+     "unidades": 2
     }
    ],
    "semAlvoDesde": null
@@ -436,34 +436,7 @@
   "consumidas": {
    "euro": true
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 3,
-   "apostado": 7,
-   "alvo": null,
-   "iniciadoEm": 1784188918337,
-   "tiros": [
-    {
-     "h": "09:08",
-     "jogo": "Turquia x Escócia",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "09:23",
-     "jogo": "Ucrânia x Geórgia",
-     "odd": 2.07,
-     "unidades": 2
-    },
-    {
-     "h": "09:35",
-     "jogo": "Suíça x Geórgia",
-     "odd": 2.02,
-     "unidades": 4
-    }
-   ],
-   "semAlvoDesde": null
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784191438326,
    "super": 1784176626053,
