@@ -129,19 +129,7 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "14:46",
-    "jogo": "Curação x Nova Zelândia",
-    "odd": 4,
-    "unidades": 1,
-    "desde": 1784209012516
-   },
-   "iniciadoEm": 1784209012516
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784171590565,
    "premier": 1784173851860,
@@ -299,12 +287,18 @@
  },
  "ambas": {
   "saldo": -5.5,
-  "ciclos": 27,
+  "ciclos": 28,
   "greens": 7,
   "redsCiclo": 2,
   "aborts": 0,
-  "descartes": 18,
+  "descartes": 19,
   "historico": [
+   {
+    "quando": "2026-07-16T13:52:11.526Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-16T08:43:58.517Z",
     "resultado": "RED_CICLO",
@@ -418,12 +412,6 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-15T03:35:45.017Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
