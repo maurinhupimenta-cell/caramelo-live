@@ -1166,6 +1166,25 @@ setInterval(refreshAll, REFRESH_MS);
 // recebe o SNAPSHOT CRU do WebSocket do caramelo, capturado pela sonda no
 // navegador logado do usuario (o WS exige login, code 4001 sem sessao).
 // dados limpos: placares + futuros + odds completas.
+// ===== PORTEIRO DE CONTEUDO: impressao digital dos times por liga (rejeita snapshot com liga trocada) =====
+const FP_PREMIER = ["Arsenal", "City", "United", "Chelsea", "Liverpool", "Everton", "Newcastle", "Aston", "Tottenham", "West Ham", "Wolves", "Leeds", "Southampton", "Fulham", "Brighton", "Palace", "Brentford", "Forest", "Bournemouth", "Burnley"];
+const FP_SUPER = ["Santiago", "Itaquera", "La Boca", "Medellin", "Bogota", "Lima", "Quito", "Asuncion", "Montevideo", "La Plata", "Buenos Aires", "Guayaquil", "Porto Alegre", "Belo Horizonte", "Rio de Janeiro", "Sao Paulo", "São Paulo", "Santos", "Penarol", "Agua Branca", "Água Branca", "Avellaneda"];
+const FP_NAO_EUROPEU = ["Brasil", "Argentina", "Japão", "Coreia", "EUA", "México", "Qatar", "Arábia", "Irã", "Iraque", "Marrocos", "Egito", "Senegal", "Gana", "Tunísia", "Colômbia", "Equador", "Uruguai", "Paraguai", "Haiti", "Panamá", "Curação", "Cabo Verde", "Nova Zelândia", "Austrália", "Uzbequistão", "Jordânia", "RD Congo", "África do Sul", "Costa do Marfim", "Argélia", "Canadá", "Peru", "Chile", "Cuba"];
+let snapshotsRejeitados = {};
+function ligaBateComConteudo(liga, games) {
+  try {
+    const nomes = new Set();
+    for (const g of games.slice(-80)) { if (g.casa) nomes.add(g.casa); if (g.fora) nomes.add(g.fora); }
+    const conta = lista => { let n = 0; for (const nm of nomes) if (lista.some(f => nm.includes(f))) n++; return n; };
+    const nPrem = conta(FP_PREMIER), nSuper = conta(FP_SUPER), nNaoEu = conta(FP_NAO_EUROPEU);
+    if (liga === "premier") return nPrem >= 2 && nSuper === 0;
+    if (liga === "super") return nSuper >= 2 && nPrem === 0;
+    if (liga === "copa") return nNaoEu >= 2 && nPrem === 0 && nSuper === 0;   // copa tem selecoes do mundo todo
+    if (liga === "euro") return nNaoEu === 0 && nPrem === 0 && nSuper === 0;  // euro e 100% selecoes europeias
+    return true;
+  } catch (e) { return true; }
+}
+
 app.post("/api/snapshot", (req, res) => {
   try {
     const { liga, data, mkt, curva, mm1, mm2, topo, fundo } = req.body || {};
@@ -1174,6 +1193,10 @@ app.post("/api/snapshot", (req, res) => {
     }
     const { games, upcoming, gamesAll } = decodeSnapshot(data);
     if (!games.length) return res.status(400).json({ ok: false, erro: "zero jogos no snapshot" });
+    if (!ligaBateComConteudo(liga, games)) {
+      snapshotsRejeitados[liga] = (snapshotsRejeitados[liga] || 0) + 1;
+      return res.status(422).json({ ok: false, erro: "conteudo nao bate com a liga (rotulo trocado) - snapshot rejeitado", liga });
+    }
     const s = buildStore(liga, games, upcoming, new Date(data.atualizadoEm || Date.now()).toISOString());
     s.fonte = "ws";
     s.wsTs = Date.now();
@@ -1369,6 +1392,7 @@ app.get("/api/status", (req, res) => {
     jogos: store[l]?.games?.length || 0,
     lastUpdated: store[l]?.lastUpdated || null,
     fetchedAt: store[l]?.fetchedAt || null,
+    snapshotsRejeitados: snapshotsRejeitados[l] || 0,
     erro: store[l]?.erro || null
   })));
 });
