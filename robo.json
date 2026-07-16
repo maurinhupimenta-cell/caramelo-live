@@ -310,13 +310,19 @@
   }
  },
  "ambas": {
-  "saldo": -2.1,
-  "ciclos": 34,
-  "greens": 11,
+  "saldo": -1.1,
+  "ciclos": 35,
+  "greens": 12,
   "redsCiclo": 2,
   "aborts": 0,
   "descartes": 21,
   "historico": [
+   {
+    "quando": "2026-07-16T18:49:30.633Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Argentina x Coreia do Sul @2.05 (tiro 1)"
+   },
    {
     "quando": "2026-07-16T18:35:30.433Z",
     "resultado": "GREEN",
@@ -430,17 +436,12 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-16T00:20:52.180Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
    "premier": true,
-   "euro": true
+   "euro": true,
+   "copa": true
   },
   "ciclo": {
    "liga": "copa",
@@ -459,11 +460,11 @@
    "euro": 1784226930331,
    "super": 1784211492125,
    "premier": 1784224960731,
-   "copa": 1784220330336
+   "copa": 1784227770533
   },
   "dias": {
    "2026-07-15": 2.2,
-   "2026-07-16": -8.3
+   "2026-07-16": -7.3
   }
  }
 }
