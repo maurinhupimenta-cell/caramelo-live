@@ -1793,7 +1793,29 @@ app.get("/api/padroes/:liga", (req, res) => {
       out.push({ seq: chave, prox, taxa, regua: prox === "G" ? regua3 : 100 - regua3, edge, n: g.n, acertos: prox === "G" ? g.G3 : g.n - g.G3, horas: [...g.horas].sort().slice(0, 6) });
     }
     out.sort((a, b) => b.edge - a.edge || b.n - a.n);
-    const resp = { liga, mkt, padroes: out.slice(0, 10) };
+    // ===== CACA PADRAO DE ODD E TIMES (desfecho no ciclo de 3 tiros, vs regua do ciclo) =====
+    const okey = mkt === "ambas" ? "ambs" : mkt;
+    const ciclo3 = i => seq.slice(i, i + 3).includes("G");
+    const porOdd = {}, porTime = {};
+    for (let i = 0; i + 2 < games.length; i++) {
+      const g = games[i]; const pago = ciclo3(i);
+      const ov = g.odds && g.odds[okey] != null ? String(g.odds[okey]) : null;
+      if (ov) { (porOdd[ov] = porOdd[ov] || [0, 0])[0]++; if (pago) porOdd[ov][1]++; }
+      for (const t of [g.casa, g.fora]) { if (!t) continue; (porTime[t] = porTime[t] || [0, 0])[0]++; if (pago) porTime[t][1]++; }
+    }
+    const garimpa = (obj, minN) => {
+      const arr = [];
+      for (const [k, [n, h]] of Object.entries(obj)) {
+        if (n < minN) continue;
+        const taxaG = Math.round(h / n * 100);
+        const eG = taxaG - regua3, eR = regua3 - taxaG;
+        if (eG >= 12) arr.push({ chave: k, prox: "G", taxa: taxaG, regua: regua3, edge: eG, n, acertos: h });
+        else if (eR >= 12) arr.push({ chave: k, prox: "R", taxa: 100 - taxaG, regua: 100 - regua3, edge: eR, n, acertos: n - h });
+      }
+      arr.sort((a, b) => b.edge - a.edge || b.n - a.n);
+      return arr.slice(0, 8);
+    };
+    const resp = { liga, mkt, padroes: out.slice(0, 10), porOdd: garimpa(porOdd, 6), porTime: garimpa(porTime, 6) };
     padroesCache[ck] = { ts: now, out: resp };
     res.json(resp);
   } catch (e) { res.status(500).json({ erro: e.message }); }
