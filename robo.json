@@ -142,13 +142,19 @@
   }
  },
  "o25": {
-  "saldo": -32,
-  "ciclos": 38,
-  "greens": 12,
+  "saldo": -30,
+  "ciclos": 39,
+  "greens": 13,
   "redsCiclo": 7,
   "aborts": 0,
   "descartes": 19,
   "historico": [
+   {
+    "quando": "2026-07-16T23:10:29.233Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "copa · Colômbia x Bélgica @2.25 (tiro 3)"
+   },
    {
     "quando": "2026-07-16T22:14:40.428Z",
     "resultado": "GREEN",
@@ -262,16 +268,11 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-16T03:11:48.255Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
-   "premier": true
+   "premier": true,
+   "copa": true
   },
   "ciclo": {
    "liga": "copa",
@@ -302,14 +303,14 @@
    "semAlvoDesde": null
   },
   "cooldown": {
-   "copa": 1784209571721,
+   "copa": 1784243429126,
    "premier": 1784240080234,
    "euro": 1784220092729,
    "super": 1784234371537
   },
   "dias": {
    "2026-07-15": -19.6,
-   "2026-07-16": -14.8
+   "2026-07-16": -12.8
   }
  },
  "ambas": {
@@ -444,28 +445,7 @@
   "consumidas": {
    "premier": true
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "alvo": {
-    "h": "23:54",
-    "jogo": "Brentford x Aston",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1784242241926
-   },
-   "iniciadoEm": 1784241521133,
-   "tiros": [
-    {
-     "h": "23:42",
-     "jogo": "City x Islington",
-     "odd": 1.87,
-     "unidades": 1
-    }
-   ],
-   "semAlvoDesde": null
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784240129627,
    "super": 1784230410533,
