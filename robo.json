@@ -154,12 +154,18 @@
  },
  "o25": {
   "saldo": -17.2,
-  "ciclos": 13,
+  "ciclos": 14,
   "greens": 3,
   "redsCiclo": 3,
   "aborts": 0,
-  "descartes": 7,
+  "descartes": 8,
   "historico": [
+   {
+    "quando": "2026-07-16T01:10:30.184Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-16T00:44:41.187Z",
     "resultado": "GREEN",
@@ -368,19 +374,7 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "02:09",
-    "jogo": "United x Southampton",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1784163269992
-   },
-   "iniciadoEm": 1784163269992
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784145944989,
    "super": 1784052435011,
