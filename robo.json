@@ -274,28 +274,7 @@
    "premier": true,
    "euro": true
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "alvo": {
-    "h": "06:35",
-    "jogo": "Polônia x Ucrânia",
-    "odd": 2.5,
-    "unidades": 2,
-    "desde": 1784179918622
-   },
-   "iniciadoEm": 1784179030123,
-   "tiros": [
-    {
-     "h": "06:23",
-     "jogo": "Albânia x Bélgica",
-     "odd": 2.45,
-     "unidades": 1
-    }
-   ],
-   "semAlvoDesde": null
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784062951508,
    "premier": 1784179024715,
@@ -439,7 +418,19 @@
   "consumidas": {
    "premier": true
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "alvo": {
+    "h": "06:55",
+    "jogo": "Coreia do Sul x Noruega",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1784180717423
+   },
+   "iniciadoEm": 1784180717423
+  },
   "cooldown": {
    "euro": 1784174331366,
    "super": 1784176626053,
