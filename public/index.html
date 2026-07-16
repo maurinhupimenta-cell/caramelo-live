@@ -727,6 +727,28 @@ function lineChart(serie, macdHist, trend, ehGols){const uni=ehGols?"":"%";
     trendSvg += buildLine(trend.lta&&trend.lta.serie,'#3fb950','LTA');
     trendSvg += buildLine(trend.ltb&&trend.ltb.serie,'#da3633','LTB');
   }
+  // ===== 📐 FIBONACCI AUTOMÁTICA: acha o balanço mais recente (fundo↔topo) e desenha os níveis =====
+  let fibSvg='';
+  if(serie.length>=8){
+    let iMin=0,iMax=0;
+    serie.forEach((v,i)=>{if(v<serie[iMin])iMin=i;if(v>=serie[iMax])iMax=i;});
+    const lo=serie[iMin],hi=serie[iMax],amp=hi-lo;
+    if(amp>=8){
+      const subida=iMin<iMax; // fundo antes do topo = balanço de ALTA (retrações descem do topo)
+      const x0=x(Math.min(iMin,iMax));
+      const cur=serie[serie.length-1];
+      const niveis=[[0,subida?hi:lo],[23.6,null],[38.2,null],[50,null],[61.8,null],[78.6,null],[100,subida?lo:hi]];
+      for(const nv of niveis){if(nv[1]==null)nv[1]=Math.round((subida?hi-amp*nv[0]/100:lo+amp*nv[0]/100)*10)/10;}
+      let maisPerto=niveis[0];for(const nv of niveis){if(Math.abs(cur-nv[1])<Math.abs(cur-maisPerto[1]))maisPerto=nv;}
+      for(const [pct,val] of niveis){
+        const forte=(pct===61.8||pct===50);
+        const ehPerto=(pct===maisPerto[0]);
+        fibSvg+=`<line x1="${x0}" y1="${y(val)}" x2="${W-pad}" y2="${y(val)}" stroke="${ehPerto?'#e3b341':'#bc8cff'}" stroke-width="${ehPerto?1.6:forte?1.1:0.7}" stroke-dasharray="2 4" opacity="${ehPerto?0.95:0.55}"/>`;
+        fibSvg+=`<text x="${W-pad+2}" y="${y(val)+3}" fill="${ehPerto?'#e3b341':'#bc8cff'}" font-size="8.5" font-weight="${ehPerto?'800':'600'}">${pct}${pct?'%':''} ${val}</text>`;
+      }
+      fibSvg+=`<text x="${x0}" y="${pad-6}" fill="#bc8cff" font-size="9" font-weight="700">📐 Fib ${subida?'alta':'baixa'} ${lo}→${hi} · linha no ${maisPerto[0]}%</text>`;
+    }
+  }
   // linha com cor por direcao geral
   const last=serie[serie.length-1], first=serie[0];
   const cor=last>first?'#3fb950':last<first?'#da3633':'#8b98a8';
@@ -771,7 +793,7 @@ function lineChart(serie, macdHist, trend, ehGols){const uni=ehGols?"":"%";
     <line x1="${pad}" y1="${pad}" x2="${W-pad}" y2="${pad}" stroke="#2d3543" stroke-dasharray="3 3"/>
     <line x1="${pad}" y1="${H-pad}" x2="${W-pad}" y2="${H-pad}" stroke="#2d3543" stroke-dasharray="3 3"/>
     <polyline points="${pts}" fill="none" stroke="${cor}" stroke-width="${larguraLinha}"/>
-    ${trendSvg}
+    ${fibSvg}${trendSvg}
     ${dots}${labels}
     <text x="${W-pad}" y="${pad-8}" fill="#8b98a8" font-size="11" text-anchor="end">Topo ${max}${uni}</text>
     <text x="${W-pad}" y="${H-pad+16}" fill="#8b98a8" font-size="11" text-anchor="end">Fundo ${min}${uni}</text>
