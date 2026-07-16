@@ -1,12 +1,18 @@
 {
  "o35": {
   "saldo": -42.3,
-  "ciclos": 44,
+  "ciclos": 45,
   "greens": 7,
   "redsCiclo": 13,
   "aborts": 0,
-  "descartes": 24,
+  "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-16T05:02:48.549Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-16T04:47:39.867Z",
     "resultado": "DESCARTADO",
@@ -120,12 +126,6 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-15T17:18:55.488Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
@@ -441,19 +441,7 @@
   "consumidas": {
    "super": true
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "05:54",
-    "jogo": "Liverpool x West Ham",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1784176909158
-   },
-   "iniciadoEm": 1784176909158
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784174331366,
    "super": 1784176626053,
