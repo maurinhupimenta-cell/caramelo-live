@@ -729,6 +729,7 @@ function lineChart(serie, macdHist, trend, ehGols){const uni=ehGols?"":"%";
   }
   // ===== 📐 FIBONACCI AUTOMÁTICA: acha o balanço mais recente (fundo↔topo) e desenha os níveis =====
   let fibSvg='';
+  try{
   if(serie.length>=8){
     let iMin=0,iMax=0;
     serie.forEach((v,i)=>{if(v<serie[iMin])iMin=i;if(v>=serie[iMax])iMax=i;});
@@ -749,6 +750,7 @@ function lineChart(serie, macdHist, trend, ehGols){const uni=ehGols?"":"%";
       fibSvg+=`<text x="${x0}" y="${pad-6}" fill="#bc8cff" font-size="9" font-weight="700">📐 Fib ${subida?'alta':'baixa'} ${lo}→${hi} · linha no ${maisPerto[0]}%</text>`;
     }
   }
+  }catch(e){fibSvg='';}
   // linha com cor por direcao geral
   const last=serie[serie.length-1], first=serie[0];
   const cor=last>first?'#3fb950':last<first?'#da3633':'#8b98a8';
