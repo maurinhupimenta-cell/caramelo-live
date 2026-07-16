@@ -274,32 +274,17 @@
    "euro": true
   },
   "ciclo": {
-   "liga": "euro",
-   "degrau": 3,
-   "apostado": 7,
-   "alvo": null,
-   "iniciadoEm": 1784187637915,
-   "tiros": [
-    {
-     "h": "08:44",
-     "jogo": "Alemanha x Portugal",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "08:56",
-     "jogo": "Itália x Bélgica",
-     "odd": 2.2,
-     "unidades": 2
-    },
-    {
-     "h": "09:08",
-     "jogo": "Turquia x Escócia",
-     "odd": 2.4,
-     "unidades": 4
-    }
-   ],
-   "semAlvoDesde": null
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "alvo": {
+    "h": "09:28",
+    "jogo": "Turquia x Arábia Saudita",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1784190297715
+   },
+   "iniciadoEm": 1784190297715
   },
   "cooldown": {
    "copa": 1784062951508,
@@ -444,16 +429,25 @@
   "consumidas": {},
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "alvo": {
-    "h": "09:08",
-    "jogo": "Turquia x Escócia",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1784188918337
+    "h": "09:23",
+    "jogo": "Ucrânia x Geórgia",
+    "odd": 2.07,
+    "unidades": 2,
+    "desde": 1784189779120
    },
-   "iniciadoEm": 1784188918337
+   "iniciadoEm": 1784188918337,
+   "tiros": [
+    {
+     "h": "09:08",
+     "jogo": "Turquia x Escócia",
+     "odd": 2.05,
+     "unidades": 1
+    }
+   ],
+   "semAlvoDesde": null
   },
   "cooldown": {
    "euro": 1784174331366,
