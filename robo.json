@@ -133,16 +133,18 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "21:04",
-    "jogo": "Uruguai x Panamá",
-    "odd": 4.75,
-    "unidades": 1,
-    "desde": 1784232089235
-   },
-   "iniciadoEm": 1784232089235
+   "degrau": 1,
+   "apostado": 1,
+   "alvo": null,
+   "iniciadoEm": 1784232089235,
+   "tiros": [
+    {
+     "h": "21:04",
+     "jogo": "Uruguai x Panamá",
+     "odd": 4.75,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784226390030,
@@ -444,19 +446,7 @@
    "super": true,
    "premier": true
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "21:00",
-    "jogo": "Brighton x Wolverhampton",
-    "odd": 1.76,
-    "unidades": 1,
-    "desde": 1784231802435
-   },
-   "iniciadoEm": 1784231802435
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784226930331,
    "super": 1784230410533,
