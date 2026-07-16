@@ -282,14 +282,18 @@
     "detalhe": "euro · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {
-   "euro": true
-  },
+  "consumidas": {},
   "ciclo": {
    "liga": "copa",
    "degrau": 1,
    "apostado": 1,
-   "alvo": null,
+   "alvo": {
+    "h": "09:40",
+    "jogo": "Cabo Verde x Gana",
+    "odd": 2.3,
+    "unidades": 2,
+    "desde": 1784190997717
+   },
    "iniciadoEm": 1784190297715,
    "tiros": [
     {
@@ -298,7 +302,8 @@
      "odd": 2.2,
      "unidades": 1
     }
-   ]
+   ],
+   "semAlvoDesde": null
   },
   "cooldown": {
    "copa": 1784062951508,
