@@ -142,13 +142,19 @@
   }
  },
  "o25": {
-  "saldo": -11.2,
-  "ciclos": 25,
-  "greens": 7,
+  "saldo": -9.2,
+  "ciclos": 26,
+  "greens": 8,
   "redsCiclo": 3,
   "aborts": 0,
   "descartes": 15,
   "historico": [
+   {
+    "quando": "2026-07-16T05:44:38.621Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "euro · Polônia x Ucrânia @2.5 (tiro 2)"
+   },
    {
     "quando": "2026-07-16T05:17:04.918Z",
     "resultado": "GREEN",
@@ -262,16 +268,11 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-15T06:46:05.309Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
-   "premier": true
+   "premier": true,
+   "euro": true
   },
   "ciclo": {
    "liga": "euro",
@@ -298,12 +299,12 @@
   "cooldown": {
    "copa": 1784062951508,
    "premier": 1784179024715,
-   "euro": 1784173111865,
+   "euro": 1784180678515,
    "super": 1784176089155
   },
   "dias": {
    "2026-07-15": -19.6,
-   "2026-07-16": 6
+   "2026-07-16": 8
   }
  },
  "ambas": {
