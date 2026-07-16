@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -14.9,
-  "ciclos": 22,
-  "greens": 5,
+  "saldo": -12.8,
+  "ciclos": 23,
+  "greens": 6,
   "redsCiclo": 3,
   "aborts": 0,
   "descartes": 14,
   "historico": [
+   {
+    "quando": "2026-07-16T04:28:09.155Z",
+    "resultado": "GREEN",
+    "unidades": 2.1,
+    "detalhe": "super · Penarol x Santos @2.55 (tiro 2)"
+   },
    {
     "quando": "2026-07-16T04:05:08.353Z",
     "resultado": "GREEN",
@@ -283,15 +289,11 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-15T02:17:52.313Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "premier · City x Brentford @2.15 (tiro 1)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "super": true
+  },
   "ciclo": {
    "liga": "super",
    "degrau": 1,
@@ -317,11 +319,12 @@
   "cooldown": {
    "copa": 1784062951508,
    "premier": 1784174708263,
-   "euro": 1784173111865
+   "euro": 1784173111865,
+   "super": 1784176089155
   },
   "dias": {
    "2026-07-15": -19.6,
-   "2026-07-16": 2.3
+   "2026-07-16": 4.4
   }
  },
  "ambas": {
@@ -458,7 +461,13 @@
    "liga": "super",
    "degrau": 2,
    "apostado": 3,
-   "alvo": null,
+   "alvo": {
+    "h": "05:28",
+    "jogo": "Buenos Aires x La Plata",
+    "odd": 2.02,
+    "unidades": 4,
+    "desde": 1784175906859
+   },
    "iniciadoEm": 1784174332756,
    "tiros": [
     {
