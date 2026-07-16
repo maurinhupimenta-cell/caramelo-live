@@ -154,13 +154,19 @@
   }
  },
  "o25": {
-  "saldo": -15.1,
-  "ciclos": 28,
+  "saldo": -22.1,
+  "ciclos": 29,
   "greens": 9,
-  "redsCiclo": 4,
+  "redsCiclo": 5,
   "aborts": 0,
   "descartes": 15,
   "historico": [
+   {
+    "quando": "2026-07-16T13:46:11.913Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-16T08:16:19.117Z",
     "resultado": "RED_CICLO",
@@ -274,26 +280,16 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-15T19:36:01.990Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "copa": true
+  },
   "ciclo": {
    "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "alvo": {
-    "h": "14:37",
-    "jogo": "Haiti x Colômbia",
-    "odd": 2.1,
-    "unidades": 4,
-    "desde": 1784209013523
-   },
+   "degrau": 3,
+   "apostado": 7,
+   "alvo": null,
    "iniciadoEm": 1784190297715,
    "tiros": [
     {
@@ -307,19 +303,25 @@
      "jogo": "Cabo Verde x Gana",
      "odd": 2.3,
      "unidades": 2
+    },
+    {
+     "h": "14:37",
+     "jogo": "Haiti x Colômbia",
+     "odd": 2.1,
+     "unidades": 4
     }
    ],
    "semAlvoDesde": null
   },
   "cooldown": {
-   "copa": 1784062951508,
+   "copa": 1784209571721,
    "premier": 1784186409417,
    "euro": 1784189778922,
    "super": 1784176089155
   },
   "dias": {
    "2026-07-15": -19.6,
-   "2026-07-16": 2.1
+   "2026-07-16": -4.9
   }
  },
  "ambas": {
@@ -454,7 +456,19 @@
   "consumidas": {
    "euro": true
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "alvo": {
+    "h": "14:51",
+    "jogo": "West Ham x Newcastle",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1784209015824
+   },
+   "iniciadoEm": 1784209015824
+  },
   "cooldown": {
    "euro": 1784191438326,
    "super": 1784176626053,
