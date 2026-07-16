@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -48.5,
-  "ciclos": 57,
-  "greens": 9,
+  "saldo": -45.3,
+  "ciclos": 58,
+  "greens": 10,
   "redsCiclo": 15,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-16T21:44:59.032Z",
+    "resultado": "GREEN",
+    "unidades": 3.2,
+    "detalhe": "premier · Leicester x Burnley @4.2 (tiro 1)"
+   },
    {
     "quando": "2026-07-16T20:37:29.735Z",
     "resultado": "RED_CICLO",
@@ -120,15 +126,11 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-16T01:59:29.756Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "premier": true
+  },
   "ciclo": {
    "liga": "premier",
    "degrau": 0,
@@ -144,13 +146,13 @@
   },
   "cooldown": {
    "copa": 1784234249433,
-   "premier": 1784222082526,
+   "premier": 1784238298927,
    "euro": 1784169368557,
    "super": 1784230410427
   },
   "dias": {
    "2026-07-15": -35,
-   "2026-07-16": -12.2
+   "2026-07-16": -9
   }
  },
  "o25": {
