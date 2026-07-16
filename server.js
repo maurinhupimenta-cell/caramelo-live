@@ -1795,9 +1795,10 @@ app.get("/api/padroes/:liga", (req, res) => {
     out.sort((a, b) => b.edge - a.edge || b.n - a.n);
     // ===== CACA PADRAO DE ODD E TIMES (desfecho no ciclo de 3 tiros, vs regua do ciclo) =====
     const okey = mkt === "ambas" ? "ambs" : mkt;
-    const ciclo3 = i => seq.slice(i, i + 3).includes("G");
+    // janela CENTRADA no jogo do gatilho: 1 antes + NELE + 1 depois (spec do usuario)
+    const ciclo3 = i => seq.slice(Math.max(0, i - 1), i + 2).includes("G");
     const porOdd = {}, porTime = {};
-    for (let i = 0; i + 2 < games.length; i++) {
+    for (let i = 1; i + 1 < games.length; i++) {
       const g = games[i]; const pago = ciclo3(i);
       const ov = g.odds && g.odds[okey] != null ? String(g.odds[okey]) : null;
       if (ov) { (porOdd[ov] = porOdd[ov] || [0, 0])[0]++; if (pago) porOdd[ov][1]++; }
