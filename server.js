@@ -1615,6 +1615,7 @@ function montaRobo(mkt) {
   }
   return melhor;
 }
+const NMR = { o35: "O3.5", o25: "O2.5", ambas: "AMBAS" };
 function atualizaRoboMkt(mkt) {
   try {
     const L = roboState[mkt];
@@ -1629,6 +1630,7 @@ function atualizaRoboMkt(mkt) {
         const d0 = melhor.degraus[0];
         L.ciclo = { liga: melhor.liga, degrau: 0, apostado: 0, alvo: { h: d0.h, jogo: d0.jogo, odd: d0.odd, unidades: 1, desde: Date.now() }, iniciadoEm: Date.now() };
         salvaRoboLedger();
+        enviaPushRobo(`🤖 ROBÔ ${NMR[mkt]} ENTROU — ${melhor.liga.toUpperCase()} 🔥${melhor.rel}%`, `TIRO 1 · 1u · ${d0.h ? d0.h + " · " : ""}${d0.jogo} @${d0.odd}`, "robo-" + mkt);
       }
       return;
     }
@@ -1656,6 +1658,7 @@ function atualizaRoboMkt(mkt) {
           const lucro = Math.round((L.ciclo.alvo.unidades * L.ciclo.alvo.odd - (L.ciclo.apostado + L.ciclo.alvo.unidades)) * 10) / 10;
           L.consumidas = L.consumidas || {}; L.consumidas[L.ciclo.liga] = true;
           L.cooldown = L.cooldown || {}; L.cooldown[L.ciclo.liga] = Date.now();
+          enviaPushRobo(`🟢 ${NMR[mkt]} GREEN +${lucro}u — ${L.ciclo.liga.toUpperCase()}`, `${L.ciclo.alvo.jogo} @${L.ciclo.alvo.odd} (tiro ${L.ciclo.degrau + 1}) · ciclo encerrado`, "robo-" + mkt);
           registraCiclo(mkt, "GREEN", lucro, `${L.ciclo.liga} · ${L.ciclo.alvo.jogo} @${L.ciclo.alvo.odd} (tiro ${L.ciclo.degrau + 1})`);
           L.ciclo = null;
           return;
@@ -1668,6 +1671,7 @@ function atualizaRoboMkt(mkt) {
         if (L.ciclo.degrau >= 3) {
           L.consumidas = L.consumidas || {}; L.consumidas[L.ciclo.liga] = true;
           L.cooldown = L.cooldown || {}; L.cooldown[L.ciclo.liga] = Date.now();
+          enviaPushRobo(`🔴 ${NMR[mkt]} ciclo perdido −${L.ciclo.apostado}u — ${L.ciclo.liga.toUpperCase()}`, `3 tiros sem green · descanso de 30min na liga`, "robo-" + mkt);
           registraCiclo(mkt, "RED_CICLO", -L.ciclo.apostado, `${L.ciclo.liga} · ciclo perdido (3 tiros)`);
           L.ciclo = null;
           return;
@@ -1685,6 +1689,7 @@ function atualizaRoboMkt(mkt) {
         L.ciclo.alvo = { h: cand.horario || "", jogo: cand.nome, odd: cand.odd, unidades: [1, 2, 4][L.ciclo.degrau], desde: Date.now() };
         L.ciclo.semAlvoDesde = null;
         salvaRoboLedger();
+        if (L.ciclo.degrau > 0) enviaPushRobo(`🤖 ${NMR[mkt]} GALE ${L.ciclo.degrau} — ${L.ciclo.liga.toUpperCase()}`, `TIRO ${L.ciclo.degrau + 1} · ${[1, 2, 4][L.ciclo.degrau]}u · ${cand.horario ? cand.horario + " · " : ""}${cand.nome} @${cand.odd}`, "robo-" + mkt);
       } else {
         // seguranca: sem candidato no piso por 20min (liga parada/sem odds) -> encerra com o apostado
         if (!L.ciclo.semAlvoDesde) { L.ciclo.semAlvoDesde = Date.now(); salvaRoboLedger(); }
@@ -2364,6 +2369,19 @@ async function carregaPush() {
   }
 }
 carregaPush();
+function enviaPushRobo(titulo, corpo, tag) {
+  if (!webpush || !pushData.vapid || !pushData.subs.length) return;
+  const payload = JSON.stringify({ t: titulo, b: corpo, tag: tag || "robo" });
+  for (const s of [...pushData.subs]) {
+    webpush.sendNotification(s, payload).catch(err => {
+      if (err && (err.statusCode === 410 || err.statusCode === 404)) {
+        pushData.subs = pushData.subs.filter(x => x.endpoint !== s.endpoint);
+        salvaPush();
+      }
+    });
+  }
+}
+
 function enviaPushMinima(info) {
   if (!webpush || !pushData.vapid || !pushData.subs.length) return;
   if (!info || info.tipo !== "minima") return;
