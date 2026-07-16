@@ -1,12 +1,18 @@
 {
  "o35": {
   "saldo": -42.3,
-  "ciclos": 49,
+  "ciclos": 50,
   "greens": 7,
   "redsCiclo": 13,
   "aborts": 0,
-  "descartes": 29,
+  "descartes": 30,
   "historico": [
+   {
+    "quando": "2026-07-16T15:08:32.315Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-16T14:19:32.016Z",
     "resultado": "DESCARTADO",
@@ -120,12 +126,6 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-15T19:53:14.081Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {},
