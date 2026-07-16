@@ -1,12 +1,18 @@
 {
  "o35": {
   "saldo": -42.3,
-  "ciclos": 48,
+  "ciclos": 49,
   "greens": 7,
   "redsCiclo": 13,
   "aborts": 0,
-  "descartes": 28,
+  "descartes": 29,
   "historico": [
+   {
+    "quando": "2026-07-16T14:19:32.016Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-16T13:51:53.217Z",
     "resultado": "DESCARTADO",
@@ -120,12 +126,6 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-15T19:02:45.889Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {},
@@ -441,19 +441,7 @@
   "consumidas": {
    "super": true
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "15:10",
-    "jogo": "Sao Paulo x La Plata",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1784210653723
-   },
-   "iniciadoEm": 1784210653723
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784191438326,
    "super": 1784211492125,
