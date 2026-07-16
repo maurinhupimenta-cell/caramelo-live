@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -22.3,
-  "ciclos": 32,
+  "saldo": -29.3,
+  "ciclos": 33,
   "greens": 6,
-  "redsCiclo": 9,
+  "redsCiclo": 10,
   "aborts": 0,
   "descartes": 17,
   "historico": [
+   {
+    "quando": "2026-07-16T00:46:30.682Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-16T00:07:31.686Z",
     "resultado": "DESCARTADO",
@@ -120,26 +126,16 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-15T01:56:34.510Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "copa": true
+  },
   "ciclo": {
    "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "alvo": {
-    "h": "01:37",
-    "jogo": "Colômbia x Iraque",
-    "odd": 5,
-    "unidades": 4,
-    "desde": 1784162070587
-   },
+   "degrau": 3,
+   "apostado": 7,
+   "alvo": null,
    "iniciadoEm": 1784160473582,
    "tiros": [
     {
@@ -153,18 +149,24 @@
      "jogo": "Inglaterra x Suíça",
      "odd": 4.5,
      "unidades": 2
+    },
+    {
+     "h": "01:37",
+     "jogo": "Colômbia x Iraque",
+     "odd": 5,
+     "unidades": 4
     }
    ],
    "semAlvoDesde": null
   },
   "cooldown": {
-   "copa": 1784145194081,
+   "copa": 1784162790682,
    "premier": 1784153153180,
    "euro": 1784128254106,
    "super": 1784124972907
   },
   "dias": {
-   "2026-07-15": -21
+   "2026-07-15": -28
   }
  },
  "o25": {
@@ -257,19 +259,7 @@
   "consumidas": {
    "premier": true
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "01:36",
-    "jogo": "Tottenham x Burnley",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1784161830580
-   },
-   "iniciadoEm": 1784161830580
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784062951508,
    "premier": 1784162681187,
