@@ -154,13 +154,19 @@
   }
  },
  "o25": {
-  "saldo": -12.8,
-  "ciclos": 24,
-  "greens": 6,
+  "saldo": -11.2,
+  "ciclos": 25,
+  "greens": 7,
   "redsCiclo": 3,
   "aborts": 0,
   "descartes": 15,
   "historico": [
+   {
+    "quando": "2026-07-16T05:17:04.918Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "premier · Watford x Leicester @2.3 (tiro 2)"
+   },
    {
     "quando": "2026-07-16T04:50:27.959Z",
     "resultado": "DESCARTADO",
@@ -274,56 +280,37 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-15T06:29:42.009Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "alvo": {
-    "h": "06:09",
-    "jogo": "Watford x Leicester",
-    "odd": 2.3,
-    "unidades": 2,
-    "desde": 1784178331251
-   },
-   "iniciadoEm": 1784177449164,
-   "tiros": [
-    {
-     "h": "05:57",
-     "jogo": "Islington x Tottenham",
-     "odd": 2.4,
-     "unidades": 1
-    }
-   ],
-   "semAlvoDesde": null
+  "consumidas": {
+   "premier": true
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784062951508,
-   "premier": 1784174708263,
+   "premier": 1784179024715,
    "euro": 1784173111865,
    "super": 1784176089155
   },
   "dias": {
    "2026-07-15": -19.6,
-   "2026-07-16": 4.4
+   "2026-07-16": 6
   }
  },
  "ambas": {
-  "saldo": 0.5,
-  "ciclos": 23,
-  "greens": 6,
+  "saldo": 1.5,
+  "ciclos": 24,
+  "greens": 7,
   "redsCiclo": 1,
   "aborts": 0,
   "descartes": 16,
   "historico": [
+   {
+    "quando": "2026-07-16T05:17:05.214Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Watford x Leicester @2 (tiro 1)"
+   },
    {
     "quando": "2026-07-16T04:56:58.651Z",
     "resultado": "DESCARTADO",
@@ -437,15 +424,11 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · West Ham x Everton @2.05 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-14T18:07:15.012Z",
-    "resultado": "GREEN",
-    "unidades": 2,
-    "detalhe": "super · Santos x Bogota @2.25 (tiro 3)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "premier": true
+  },
   "ciclo": {
    "liga": "premier",
    "degrau": 0,
@@ -462,11 +445,11 @@
   "cooldown": {
    "euro": 1784174331366,
    "super": 1784176626053,
-   "premier": 1784156022079
+   "premier": 1784179025015
   },
   "dias": {
    "2026-07-15": 2.2,
-   "2026-07-16": -5.7
+   "2026-07-16": -4.7
   }
  }
 }
