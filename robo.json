@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -43.3,
-  "ciclos": 40,
+  "saldo": -50.3,
+  "ciclos": 41,
   "greens": 6,
-  "redsCiclo": 12,
+  "redsCiclo": 13,
   "aborts": 0,
   "descartes": 22,
   "historico": [
+   {
+    "quando": "2026-07-16T03:50:51.861Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-16T03:13:10.565Z",
     "resultado": "RED_CICLO",
@@ -120,26 +126,16 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-15T15:10:54.106Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "premier": true
+  },
   "ciclo": {
    "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "alvo": {
-    "h": "04:42",
-    "jogo": "Leicester x Norwich",
-    "odd": 4.5,
-    "unidades": 4,
-    "desde": 1784173127264
-   },
+   "degrau": 3,
+   "apostado": 7,
+   "alvo": null,
    "iniciadoEm": 1784171591954,
    "tiros": [
     {
@@ -153,19 +149,25 @@
      "jogo": "Brighton x Norwich",
      "odd": 3.8,
      "unidades": 2
+    },
+    {
+     "h": "04:42",
+     "jogo": "Leicester x Norwich",
+     "odd": 4.5,
+     "unidades": 4
     }
    ],
    "semAlvoDesde": null
   },
   "cooldown": {
    "copa": 1784171590565,
-   "premier": 1784153153180,
+   "premier": 1784173851860,
    "euro": 1784169368557,
    "super": 1784124972907
   },
   "dias": {
    "2026-07-15": -35,
-   "2026-07-16": -7
+   "2026-07-16": -14
   }
  },
  "o25": {
