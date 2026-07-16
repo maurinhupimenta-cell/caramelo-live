@@ -286,13 +286,19 @@
   }
  },
  "ambas": {
-  "saldo": 2.7,
-  "ciclos": 39,
-  "greens": 16,
+  "saldo": 3.9,
+  "ciclos": 40,
+  "greens": 17,
   "redsCiclo": 2,
   "aborts": 0,
   "descartes": 21,
   "historico": [
+   {
+    "quando": "2026-07-16T23:43:28.932Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Panamá x Croácia @2.1 (tiro 2)"
+   },
    {
     "quando": "2026-07-16T23:02:48.125Z",
     "resultado": "GREEN",
@@ -406,41 +412,21 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "euro · Itália x Dinamarca @2.07 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-16T03:26:52.461Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
    "premier": true
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "alvo": null,
-   "iniciadoEm": 1784243967935,
-   "tiros": [
-    {
-     "h": "00:22",
-     "jogo": "Nova Zelândia x Colômbia",
-     "odd": 1.93,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784240129627,
    "super": 1784230410533,
    "premier": 1784242967933,
-   "copa": 1784227770533
+   "copa": 1784245408828
   },
   "dias": {
    "2026-07-15": 2.2,
-   "2026-07-16": -3.5
+   "2026-07-16": -2.3
   }
  }
 }
