@@ -1574,10 +1574,13 @@ function montaRobo(mkt) {
       else continue;
     }
     if (L.cooldown[liga] && Date.now() - L.cooldown[liga] < 30 * 60000) continue; // descanso de 30min pos-ciclo
-    // MODO PAGAMENTO (regra do usuario): opera a liga QUENTE - pagando >=110% do normal e com a curva subindo
-    const subindo = sf.length >= 2 && sf[sf.length - 1] >= sf[sf.length - 2];
-    if (rel < 110 || !subindo) continue;
-    if (melhor && rel <= melhor.rel) continue; // escolhe a MAIS quente
+    // MODO PAGAMENTO v4.1 (spec do usuario): LINHA PAGANTE + GRAFICO SUBINDO CONSISTENTE
+    // - linha pagante: rel >= 100 (pagando acima do normal)
+    // - grafico subindo: 3 pontos consecutivos em alta (sobe de verdade, nao ruido de 1 ponto)
+    const n = sf.length;
+    const subindoFirme = n >= 3 && sf[n - 1] > sf[n - 2] && sf[n - 2] > sf[n - 3];
+    if (rel < 100 || !subindoFirme) continue;
+    if (melhor && rel <= melhor.rel) continue; // entre as que sobem, a mais quente
     const evs = (d.upcoming && d.upcoming[mkt]) || [];
     const degraus = [], pulados = [];
     const papeis = ["ENTRADA", "GALE 1", "GALE 2"];
