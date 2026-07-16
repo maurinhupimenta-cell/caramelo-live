@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -41.5,
-  "ciclos": 56,
+  "saldo": -48.5,
+  "ciclos": 57,
   "greens": 9,
-  "redsCiclo": 14,
+  "redsCiclo": 15,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-16T20:37:29.735Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-16T19:33:30.530Z",
     "resultado": "GREEN",
@@ -120,21 +126,16 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-16T01:43:53.454Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
-   "super": true
+   "super": true,
+   "copa": true
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
+   "degrau": 3,
+   "apostado": 7,
    "alvo": null,
    "iniciadoEm": 1784232089235,
    "tiros": [
@@ -149,19 +150,25 @@
      "jogo": "Canadá x Paraguai",
      "odd": 5.25,
      "unidades": 2
+    },
+    {
+     "h": "21:28",
+     "jogo": "Argentina x Qatar",
+     "odd": 4.33,
+     "unidades": 4
     }
    ],
    "semAlvoDesde": null
   },
   "cooldown": {
-   "copa": 1784226390030,
+   "copa": 1784234249433,
    "premier": 1784222082526,
    "euro": 1784169368557,
    "super": 1784230410427
   },
   "dias": {
    "2026-07-15": -35,
-   "2026-07-16": -5.2
+   "2026-07-16": -12.2
   }
  },
  "o25": {
