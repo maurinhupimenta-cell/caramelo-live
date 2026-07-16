@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -36.3,
-  "ciclos": 39,
+  "saldo": -43.3,
+  "ciclos": 40,
   "greens": 6,
-  "redsCiclo": 11,
+  "redsCiclo": 12,
   "aborts": 0,
   "descartes": 22,
   "historico": [
+   {
+    "quando": "2026-07-16T03:13:10.565Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-16T02:36:08.557Z",
     "resultado": "RED_CICLO",
@@ -120,51 +126,33 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-15T14:43:13.911Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "copa": true
+  },
   "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "alvo": {
-    "h": "04:04",
-    "jogo": "Arábia Saudita x França",
+    "h": "04:18",
+    "jogo": "Brighton x Brentford",
     "odd": 4,
-    "unidades": 4,
-    "desde": 1784170849567
+    "unidades": 1,
+    "desde": 1784171591954
    },
-   "iniciadoEm": 1784169369557,
-   "tiros": [
-    {
-     "h": "03:40",
-     "jogo": "Panamá x Japão",
-     "odd": 5,
-     "unidades": 1
-    },
-    {
-     "h": "03:52",
-     "jogo": "Cabo Verde x Noruega",
-     "odd": 4,
-     "unidades": 2
-    }
-   ],
-   "semAlvoDesde": null
+   "iniciadoEm": 1784171591954
   },
   "cooldown": {
-   "copa": 1784162790682,
+   "copa": 1784171590565,
    "premier": 1784153153180,
    "euro": 1784169368557,
    "super": 1784124972907
   },
   "dias": {
-   "2026-07-15": -35
+   "2026-07-15": -35,
+   "2026-07-16": -7
   }
  },
  "o25": {
@@ -438,7 +426,19 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "alvo": {
+    "h": "04:26",
+    "jogo": "Romênia x Albânia",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1784171511357
+   },
+   "iniciadoEm": 1784171511357
+  },
   "cooldown": {
    "euro": 1784145944989,
    "super": 1784052435011,
