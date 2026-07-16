@@ -169,12 +169,18 @@
  },
  "o25": {
   "saldo": -17.2,
-  "ciclos": 18,
+  "ciclos": 19,
   "greens": 3,
   "redsCiclo": 3,
   "aborts": 0,
-  "descartes": 12,
+  "descartes": 13,
   "historico": [
+   {
+    "quando": "2026-07-16T03:11:48.255Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-16T02:36:25.961Z",
     "resultado": "DESCARTADO",
@@ -285,36 +291,31 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "04:08",
-    "jogo": "Croácia x França",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1784170603163
-   },
-   "iniciadoEm": 1784170603163
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784062951508,
    "premier": 1784162681187,
    "euro": 1784144161990
   },
   "dias": {
-   "2026-07-15": -19.6
+   "2026-07-15": -19.6,
+   "2026-07-16": 0
   }
  },
  "ambas": {
   "saldo": 6.2,
-  "ciclos": 18,
+  "ciclos": 19,
   "greens": 5,
   "redsCiclo": 0,
   "aborts": 0,
-  "descartes": 13,
+  "descartes": 14,
   "historico": [
+   {
+    "quando": "2026-07-16T03:11:48.258Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-16T01:44:56.857Z",
     "resultado": "DESCARTADO",
@@ -444,7 +445,8 @@
    "premier": 1784156022079
   },
   "dias": {
-   "2026-07-15": 2.2
+   "2026-07-15": 2.2,
+   "2026-07-16": 0
   }
  }
 }
