@@ -131,16 +131,18 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "01:13",
-    "jogo": "África do Sul x Inglaterra",
-    "odd": 4.75,
-    "unidades": 1,
-    "desde": 1784160473582
-   },
-   "iniciadoEm": 1784160473582
+   "degrau": 1,
+   "apostado": 1,
+   "alvo": null,
+   "iniciadoEm": 1784160473582,
+   "tiros": [
+    {
+     "h": "01:13",
+     "jogo": "África do Sul x Inglaterra",
+     "odd": 4.75,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784145194081,
@@ -350,19 +352,7 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "01:15",
-    "jogo": "Southampton x Watford",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1784160343283
-   },
-   "iniciadoEm": 1784160343283
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784145944989,
    "super": 1784052435011,
