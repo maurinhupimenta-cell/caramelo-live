@@ -133,15 +133,9 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "alvo": {
-    "h": "21:16",
-    "jogo": "Canadá x Paraguai",
-    "odd": 5.25,
-    "unidades": 2,
-    "desde": 1784232810131
-   },
+   "degrau": 2,
+   "apostado": 3,
+   "alvo": null,
    "iniciadoEm": 1784232089235,
    "tiros": [
     {
@@ -149,6 +143,12 @@
      "jogo": "Uruguai x Panamá",
      "odd": 4.75,
      "unidades": 1
+    },
+    {
+     "h": "21:16",
+     "jogo": "Canadá x Paraguai",
+     "odd": 5.25,
+     "unidades": 2
     }
    ],
    "semAlvoDesde": null
@@ -298,7 +298,13 @@
    "liga": "super",
    "degrau": 2,
    "apostado": 3,
-   "alvo": null,
+   "alvo": {
+    "h": "21:28",
+    "jogo": "La Plata x Quito",
+    "odd": 2.55,
+    "unidades": 4,
+    "desde": 1784233530828
+   },
    "iniciadoEm": 1784232212936,
    "tiros": [
     {
