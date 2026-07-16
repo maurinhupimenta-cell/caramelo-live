@@ -285,19 +285,7 @@
   "consumidas": {
    "euro": true
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "17:32",
-    "jogo": "Albânia x Alemanha",
-    "odd": 2.45,
-    "unidades": 1,
-    "desde": 1784219311386
-   },
-   "iniciadoEm": 1784219311386
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784209571721,
    "premier": 1784186409417,
@@ -310,13 +298,19 @@
   }
  },
  "ambas": {
-  "saldo": -4.5,
-  "ciclos": 31,
-  "greens": 8,
+  "saldo": -3.6,
+  "ciclos": 32,
+  "greens": 9,
   "redsCiclo": 2,
   "aborts": 0,
   "descartes": 21,
   "historico": [
+   {
+    "quando": "2026-07-16T16:45:30.525Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · Colômbia x Curação @1.95 (tiro 2)"
+   },
    {
     "quando": "2026-07-16T16:24:12.661Z",
     "resultado": "DESCARTADO",
@@ -430,15 +424,11 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-15T20:05:44.990Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "euro · Países Baixos x República Tcheca @2.02 (tiro 3)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "copa": true
+  },
   "ciclo": {
    "liga": "copa",
    "degrau": 1,
@@ -464,11 +454,12 @@
   "cooldown": {
    "euro": 1784191438326,
    "super": 1784211492125,
-   "premier": 1784179025015
+   "premier": 1784179025015,
+   "copa": 1784220330336
   },
   "dias": {
    "2026-07-15": 2.2,
-   "2026-07-16": -10.7
+   "2026-07-16": -9.8
   }
  }
 }
