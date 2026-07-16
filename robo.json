@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -45.3,
-  "ciclos": 58,
-  "greens": 10,
+  "saldo": -39.9,
+  "ciclos": 59,
+  "greens": 11,
   "redsCiclo": 15,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-16T22:46:30.233Z",
+    "resultado": "GREEN",
+    "unidades": 5.4,
+    "detalhe": "super · Avellaneda x Guayaquil @4.2 (tiro 2)"
+   },
    {
     "quando": "2026-07-16T21:44:59.032Z",
     "resultado": "GREEN",
@@ -120,46 +126,21 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-16T02:36:08.557Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "alvo": {
-    "h": "23:37",
-    "jogo": "Avellaneda x Guayaquil",
-    "odd": 4.2,
-    "unidades": 2,
-    "desde": 1784241332627
-   },
-   "iniciadoEm": 1784239258232,
-   "tiros": [
-    {
-     "h": "23:04",
-     "jogo": "La Plata x Itaquera",
-     "odd": 5.5,
-     "unidades": 1
-    }
-   ],
-   "semAlvoDesde": null
+  "consumidas": {
+   "super": true
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784234249433,
    "premier": 1784238298927,
    "euro": 1784169368557,
-   "super": 1784230410427
+   "super": 1784241990132
   },
   "dias": {
    "2026-07-15": -35,
-   "2026-07-16": -9
+   "2026-07-16": -3.6
   }
  },
  "o25": {
@@ -456,9 +437,7 @@
     "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {
-   "euro": true
-  },
+  "consumidas": {},
   "ciclo": {
    "liga": "premier",
    "degrau": 0,
