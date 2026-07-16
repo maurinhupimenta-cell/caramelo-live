@@ -2362,7 +2362,26 @@ function atualizaRadar(liga, s) {
         radarAtivos[k + "|ltb"] = { liga, mkt, tipo: "ltb", pagando: cur, base: c.base, fita, ts: Date.now() };
         if (!primeira && podeAvisar(k + "|ltb")) avisaRadar(radarAtivos[k + "|ltb"]);
       } else if (!quebrouLTB) delete radarAtivos[k + "|ltb"];
-      radarEstado[k] = { fundo, sobe, ltb: quebrouLTB };
+      // 🧊 MINIMA DE JANELA: a linha pagante tocando o FUNDO das ultimas 3/6/12/24 horas
+      let nivelMin = null;
+      try {
+        if (cur != null && c.base != null && c.base >= 15 && gAll.length >= 60) {
+          const serieLonga = chartSeries(gAll, mkt, JANR);
+          for (const hz of [24, 12, 6, 3]) {
+            const pts = hz * 20;
+            if (serieLonga.length >= pts) {
+              const rec = serieLonga.slice(-pts);
+              if (cur <= Math.min(...rec)) { nivelMin = hz; break; }
+            }
+          }
+        }
+      } catch (e) {}
+      if (nivelMin) {
+        const antes2 = (radarAtivos[k + "|minjan"] || {}).nivel || null;
+        radarAtivos[k + "|minjan"] = { liga, mkt, tipo: "minjan", nivel: nivelMin, pagando: cur, base: c.base, rel: c.base ? Math.round(cur / c.base * 100) : null, fita, ts: Date.now() };
+        if (!primeira && nivelMin !== antes2 && nivelMin >= 6 && podeAvisar(k + "|minjan" + nivelMin)) avisaRadar(radarAtivos[k + "|minjan"]);
+      } else delete radarAtivos[k + "|minjan"];
+      radarEstado[k] = { fundo, sobe, ltb: quebrouLTB, nivelMin };
     }
   } catch (e) {}
 }
