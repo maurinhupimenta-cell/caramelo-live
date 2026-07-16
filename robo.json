@@ -165,13 +165,19 @@
   }
  },
  "o25": {
-  "saldo": -17.2,
-  "ciclos": 20,
-  "greens": 3,
+  "saldo": -16,
+  "ciclos": 21,
+  "greens": 4,
   "redsCiclo": 3,
   "aborts": 0,
   "descartes": 14,
   "historico": [
+   {
+    "quando": "2026-07-16T03:38:31.866Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Croácia x Alemanha @2.15 (tiro 1)"
+   },
    {
     "quando": "2026-07-16T03:26:52.460Z",
     "resultado": "DESCARTADO",
@@ -285,15 +291,11 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "copa · Cabo Verde x Jordânia @2.2 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-14T17:37:48.905Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "euro": true
+  },
   "ciclo": {
    "liga": "euro",
    "degrau": 0,
@@ -310,11 +312,11 @@
   "cooldown": {
    "copa": 1784062951508,
    "premier": 1784162681187,
-   "euro": 1784144161990
+   "euro": 1784173111865
   },
   "dias": {
    "2026-07-15": -19.6,
-   "2026-07-16": 0
+   "2026-07-16": 1.2
   }
  },
  "ambas": {
@@ -451,7 +453,13 @@
    "liga": "euro",
    "degrau": 1,
    "apostado": 1,
-   "alvo": null,
+   "alvo": {
+    "h": "04:38",
+    "jogo": "Eslovênia x Espanha",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1784172891559
+   },
    "iniciadoEm": 1784172424057,
    "tiros": [
     {
@@ -460,7 +468,8 @@
      "odd": 2.1,
      "unidades": 1
     }
-   ]
+   ],
+   "semAlvoDesde": null
   },
   "cooldown": {
    "euro": 1784145944989,
