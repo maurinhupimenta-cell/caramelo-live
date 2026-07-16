@@ -154,13 +154,19 @@
   }
  },
  "o25": {
-  "saldo": -16,
-  "ciclos": 21,
-  "greens": 4,
+  "saldo": -14.9,
+  "ciclos": 22,
+  "greens": 5,
   "redsCiclo": 3,
   "aborts": 0,
   "descartes": 14,
   "historico": [
+   {
+    "quando": "2026-07-16T04:05:08.353Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Wolverhampton x United @2.07 (tiro 2)"
+   },
    {
     "quando": "2026-07-16T03:38:31.866Z",
     "resultado": "GREEN",
@@ -274,15 +280,11 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "premier · City x Brentford @2.15 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-14T21:02:31.508Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "copa · Cabo Verde x Jordânia @2.2 (tiro 1)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "premier": true
+  },
   "ciclo": {
    "liga": "premier",
    "degrau": 1,
@@ -307,12 +309,12 @@
   },
   "cooldown": {
    "copa": 1784062951508,
-   "premier": 1784162681187,
+   "premier": 1784174708263,
    "euro": 1784173111865
   },
   "dias": {
    "2026-07-15": -19.6,
-   "2026-07-16": 1.2
+   "2026-07-16": 2.3
   }
  },
  "ambas": {
@@ -445,7 +447,19 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "alvo": {
+    "h": "05:04",
+    "jogo": "Santos x Medellin",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1784174332756
+   },
+   "iniciadoEm": 1784174332756
+  },
   "cooldown": {
    "euro": 1784174331366,
    "super": 1784052435011,
