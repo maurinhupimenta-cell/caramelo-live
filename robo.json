@@ -297,19 +297,7 @@
    "super": true,
    "premier": true
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "23:06",
-    "jogo": "Liverpool x City",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1784239360531
-   },
-   "iniciadoEm": 1784239360531
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784209571721,
    "premier": 1784240080234,
@@ -322,13 +310,19 @@
   }
  },
  "ambas": {
-  "saldo": 0.9,
-  "ciclos": 37,
-  "greens": 14,
+  "saldo": 1.6,
+  "ciclos": 38,
+  "greens": 15,
   "redsCiclo": 2,
   "aborts": 0,
   "descartes": 21,
   "historico": [
+   {
+    "quando": "2026-07-16T22:15:29.827Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "euro · Bélgica x Suíça @1.86 (tiro 2)"
+   },
    {
     "quando": "2026-07-16T20:08:48.328Z",
     "resultado": "GREEN",
@@ -442,15 +436,11 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-16T01:44:56.857Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "euro": true
+  },
   "ciclo": {
    "liga": "euro",
    "degrau": 1,
@@ -474,14 +464,14 @@
    "semAlvoDesde": null
   },
   "cooldown": {
-   "euro": 1784226930331,
+   "euro": 1784240129627,
    "super": 1784230410533,
    "premier": 1784232528138,
    "copa": 1784227770533
   },
   "dias": {
    "2026-07-15": 2.2,
-   "2026-07-16": -5.3
+   "2026-07-16": -4.6
   }
  }
 }
