@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -29.3,
-  "ciclos": 38,
+  "saldo": -36.3,
+  "ciclos": 39,
   "greens": 6,
-  "redsCiclo": 10,
+  "redsCiclo": 11,
   "aborts": 0,
   "descartes": 22,
   "historico": [
+   {
+    "quando": "2026-07-16T02:36:08.557Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-16T01:59:29.756Z",
     "resultado": "DESCARTADO",
@@ -120,19 +126,15 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-15T14:16:12.907Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "euro": true
+  },
   "ciclo": {
    "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
+   "degrau": 3,
+   "apostado": 7,
    "alvo": null,
    "iniciadoEm": 1784167230654,
    "tiros": [
@@ -147,6 +149,12 @@
      "jogo": "Sérvia x Escócia",
      "odd": 5,
      "unidades": 2
+    },
+    {
+     "h": "03:26",
+     "jogo": "Escócia x Portugal",
+     "odd": 4.2,
+     "unidades": 4
     }
    ],
    "semAlvoDesde": null
@@ -154,11 +162,11 @@
   "cooldown": {
    "copa": 1784162790682,
    "premier": 1784153153180,
-   "euro": 1784128254106,
+   "euro": 1784169368557,
    "super": 1784124972907
   },
   "dias": {
-   "2026-07-15": -28
+   "2026-07-15": -35
   }
  },
  "o25": {
