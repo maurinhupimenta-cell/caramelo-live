@@ -271,19 +271,7 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "16:21",
-    "jogo": "Wolverhampton x Islington",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1784214667117
-   },
-   "iniciadoEm": 1784214667117
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784209571721,
    "premier": 1784186409417,
@@ -297,12 +285,18 @@
  },
  "ambas": {
   "saldo": -4.5,
-  "ciclos": 29,
+  "ciclos": 30,
   "greens": 8,
   "redsCiclo": 2,
   "aborts": 0,
-  "descartes": 19,
+  "descartes": 20,
   "historico": [
+   {
+    "quando": "2026-07-16T15:26:51.419Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-16T14:18:12.317Z",
     "resultado": "GREEN",
@@ -416,12 +410,6 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-15T18:38:47.678Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
