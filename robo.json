@@ -316,13 +316,19 @@
   }
  },
  "ambas": {
-  "saldo": 6.2,
-  "ciclos": 20,
-  "greens": 5,
+  "saldo": 7.5,
+  "ciclos": 21,
+  "greens": 6,
   "redsCiclo": 0,
   "aborts": 0,
   "descartes": 15,
   "historico": [
+   {
+    "quando": "2026-07-16T03:58:51.366Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "euro · Itália x Dinamarca @2.07 (tiro 3)"
+   },
    {
     "quando": "2026-07-16T03:26:52.461Z",
     "resultado": "DESCARTADO",
@@ -436,51 +442,18 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-14T16:56:44.606Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min, anulado sem contar"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "alvo": {
-    "h": "04:50",
-    "jogo": "Itália x Dinamarca",
-    "odd": 2.07,
-    "unidades": 4,
-    "desde": 1784173650057
-   },
-   "iniciadoEm": 1784172424057,
-   "tiros": [
-    {
-     "h": "04:26",
-     "jogo": "Romênia x Albânia",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "04:38",
-     "jogo": "Eslovênia x Espanha",
-     "odd": 2.05,
-     "unidades": 2
-    }
-   ],
-   "semAlvoDesde": null
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784145944989,
+   "euro": 1784174331366,
    "super": 1784052435011,
    "premier": 1784156022079
   },
   "dias": {
    "2026-07-15": 2.2,
-   "2026-07-16": 0
+   "2026-07-16": 1.3
   }
  }
 }
