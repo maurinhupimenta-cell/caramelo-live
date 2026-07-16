@@ -142,13 +142,19 @@
   }
  },
  "o25": {
-  "saldo": -8.1,
-  "ciclos": 27,
+  "saldo": -15.1,
+  "ciclos": 28,
   "greens": 9,
-  "redsCiclo": 3,
+  "redsCiclo": 4,
   "aborts": 0,
   "descartes": 15,
   "historico": [
+   {
+    "quando": "2026-07-16T08:16:19.117Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-16T07:20:09.521Z",
     "resultado": "GREEN",
@@ -262,19 +268,15 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-15T19:02:45.890Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "euro": true
+  },
   "ciclo": {
    "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
+   "degrau": 3,
+   "apostado": 7,
    "alvo": null,
    "iniciadoEm": 1784187637915,
    "tiros": [
@@ -289,6 +291,12 @@
      "jogo": "Itália x Bélgica",
      "odd": 2.2,
      "unidades": 2
+    },
+    {
+     "h": "09:08",
+     "jogo": "Turquia x Escócia",
+     "odd": 2.4,
+     "unidades": 4
     }
    ],
    "semAlvoDesde": null
@@ -296,12 +304,12 @@
   "cooldown": {
    "copa": 1784062951508,
    "premier": 1784186409417,
-   "euro": 1784180678515,
+   "euro": 1784189778922,
    "super": 1784176089155
   },
   "dias": {
    "2026-07-15": -19.6,
-   "2026-07-16": 9.1
+   "2026-07-16": 2.1
   }
  },
  "ambas": {
