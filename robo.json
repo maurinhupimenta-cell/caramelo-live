@@ -301,13 +301,19 @@
   }
  },
  "ambas": {
-  "saldo": -3.2,
-  "ciclos": 33,
-  "greens": 10,
+  "saldo": -2.1,
+  "ciclos": 34,
+  "greens": 11,
   "redsCiclo": 2,
   "aborts": 0,
   "descartes": 21,
   "historico": [
+   {
+    "quando": "2026-07-16T18:35:30.433Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Inglaterra x Geórgia @2.05 (tiro 2)"
+   },
    {
     "quando": "2026-07-16T18:02:40.831Z",
     "resultado": "GREEN",
@@ -421,16 +427,11 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-15T22:53:42.079Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "premier · Palace x West Ham @2.1 (tiro 1)"
    }
   ],
   "consumidas": {
-   "premier": true
+   "premier": true,
+   "euro": true
   },
   "ciclo": {
    "liga": "euro",
@@ -455,14 +456,14 @@
    "semAlvoDesde": null
   },
   "cooldown": {
-   "euro": 1784191438326,
+   "euro": 1784226930331,
    "super": 1784211492125,
    "premier": 1784224960731,
    "copa": 1784220330336
   },
   "dias": {
    "2026-07-15": 2.2,
-   "2026-07-16": -9.4
+   "2026-07-16": -8.3
   }
  }
 }
