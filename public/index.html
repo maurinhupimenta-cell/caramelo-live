@@ -417,8 +417,9 @@ async function carregaBacktest(liga,mkt){
 }
 
 function render(d){
+  if(!d||!d.analise)return; // payload de erro/restart: ignora em vez de quebrar
   const a=d.analise, mkt=d.mercado;
-  const aquece=a.aquecingo||a.aquecendo;
+  const aquece=a.aquecendo;
   const sig=a.sinal||{};
   const term=a.termometro;
   const maxv=Math.max(...term.map(t=>t.v||0),1);
