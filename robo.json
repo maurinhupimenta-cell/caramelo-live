@@ -128,36 +128,19 @@
     "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {
-   "euro": true
-  },
+  "consumidas": {},
   "ciclo": {
-   "liga": "euro",
-   "degrau": 3,
-   "apostado": 7,
-   "alvo": null,
-   "iniciadoEm": 1784167230654,
-   "tiros": [
-    {
-     "h": "03:02",
-     "jogo": "Sérvia x Geórgia",
-     "odd": 5.5,
-     "unidades": 1
-    },
-    {
-     "h": "03:14",
-     "jogo": "Sérvia x Escócia",
-     "odd": 5,
-     "unidades": 2
-    },
-    {
-     "h": "03:26",
-     "jogo": "Escócia x Portugal",
-     "odd": 4.2,
-     "unidades": 4
-    }
-   ],
-   "semAlvoDesde": null
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "alvo": {
+    "h": "03:40",
+    "jogo": "Panamá x Japão",
+    "odd": 5,
+    "unidades": 1,
+    "desde": 1784169369557
+   },
+   "iniciadoEm": 1784169369557
   },
   "cooldown": {
    "copa": 1784162790682,
@@ -171,12 +154,18 @@
  },
  "o25": {
   "saldo": -17.2,
-  "ciclos": 17,
+  "ciclos": 18,
   "greens": 3,
   "redsCiclo": 3,
   "aborts": 0,
-  "descartes": 11,
+  "descartes": 12,
   "historico": [
+   {
+    "quando": "2026-07-16T02:36:25.961Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-16T02:19:52.966Z",
     "resultado": "DESCARTADO",
