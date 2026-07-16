@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -45.8,
-  "ciclos": 55,
-  "greens": 8,
+  "saldo": -41.5,
+  "ciclos": 56,
+  "greens": 9,
   "redsCiclo": 14,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-16T19:33:30.530Z",
+    "resultado": "GREEN",
+    "unidades": 4.3,
+    "detalhe": "super · Agua Branca x Porto Alegre @5.25 (tiro 1)"
+   },
    {
     "quando": "2026-07-16T18:26:30.226Z",
     "resultado": "GREEN",
@@ -120,37 +126,21 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-16T01:26:32.239Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "20:22",
-    "jogo": "Agua Branca x Porto Alegre",
-    "odd": 5.25,
-    "unidades": 1,
-    "desde": 1784229572031
-   },
-   "iniciadoEm": 1784229572031
+  "consumidas": {
+   "super": true
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784226390030,
    "premier": 1784222082526,
    "euro": 1784169368557,
-   "super": 1784176277258
+   "super": 1784230410427
   },
   "dias": {
    "2026-07-15": -35,
-   "2026-07-16": -9.5
+   "2026-07-16": -5.2
   }
  },
  "o25": {
@@ -308,13 +298,19 @@
   }
  },
  "ambas": {
-  "saldo": -1.1,
-  "ciclos": 35,
-  "greens": 12,
+  "saldo": 0.1,
+  "ciclos": 36,
+  "greens": 13,
   "redsCiclo": 2,
   "aborts": 0,
   "descartes": 21,
   "historico": [
+   {
+    "quando": "2026-07-16T19:33:30.726Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Agua Branca x Porto Alegre @2.15 (tiro 1)"
+   },
    {
     "quando": "2026-07-16T18:49:30.633Z",
     "resultado": "GREEN",
@@ -428,17 +424,12 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-16T01:09:30.781Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
    "euro": true,
-   "copa": true
+   "copa": true,
+   "super": true
   },
   "ciclo": {
    "liga": "super",
@@ -455,13 +446,13 @@
   },
   "cooldown": {
    "euro": 1784226930331,
-   "super": 1784211492125,
+   "super": 1784230410533,
    "premier": 1784224960731,
    "copa": 1784227770533
   },
   "dias": {
    "2026-07-15": 2.2,
-   "2026-07-16": -7.3
+   "2026-07-16": -6.1
   }
  }
 }
