@@ -289,13 +289,19 @@
   }
  },
  "ambas": {
-  "saldo": -3.6,
-  "ciclos": 32,
-  "greens": 9,
+  "saldo": -3.2,
+  "ciclos": 33,
+  "greens": 10,
   "redsCiclo": 2,
   "aborts": 0,
   "descartes": 21,
   "historico": [
+   {
+    "quando": "2026-07-16T18:02:40.831Z",
+    "resultado": "GREEN",
+    "unidades": 0.4,
+    "detalhe": "premier · Wolverhampton x Burnley @1.85 (tiro 3)"
+   },
    {
     "quando": "2026-07-16T16:45:30.525Z",
     "resultado": "GREEN",
@@ -409,20 +415,22 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "premier · Palace x West Ham @2.1 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-15T21:59:32.486Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "premier": true
+  },
   "ciclo": {
    "liga": "premier",
    "degrau": 2,
    "apostado": 3,
-   "alvo": null,
+   "alvo": {
+    "h": "18:54",
+    "jogo": "Wolverhampton x Burnley",
+    "odd": 1.85,
+    "unidades": 4,
+    "desde": 1784224293736
+   },
    "iniciadoEm": 1784222820432,
    "tiros": [
     {
@@ -443,12 +451,12 @@
   "cooldown": {
    "euro": 1784191438326,
    "super": 1784211492125,
-   "premier": 1784179025015,
+   "premier": 1784224960731,
    "copa": 1784220330336
   },
   "dias": {
    "2026-07-15": 2.2,
-   "2026-07-16": -9.8
+   "2026-07-16": -9.4
   }
  }
 }
