@@ -135,7 +135,13 @@
    "liga": "copa",
    "degrau": 1,
    "apostado": 1,
-   "alvo": null,
+   "alvo": {
+    "h": "21:16",
+    "jogo": "Canadá x Paraguai",
+    "odd": 5.25,
+    "unidades": 2,
+    "desde": 1784232810131
+   },
    "iniciadoEm": 1784232089235,
    "tiros": [
     {
@@ -144,7 +150,8 @@
      "odd": 4.75,
      "unidades": 1
     }
-   ]
+   ],
+   "semAlvoDesde": null
   },
   "cooldown": {
    "copa": 1784226390030,
@@ -289,16 +296,25 @@
   "consumidas": {},
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "alvo": {
-    "h": "21:04",
-    "jogo": "La Plata x Rio de Janeiro",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1784232212936
+    "h": "21:16",
+    "jogo": "Penarol x Lima",
+    "odd": 2.3,
+    "unidades": 2,
+    "desde": 1784232811227
    },
-   "iniciadoEm": 1784232212936
+   "iniciadoEm": 1784232212936,
+   "tiros": [
+    {
+     "h": "21:04",
+     "jogo": "La Plata x Rio de Janeiro",
+     "odd": 2.5,
+     "unidades": 1
+    }
+   ],
+   "semAlvoDesde": null
   },
   "cooldown": {
    "copa": 1784209571721,
@@ -442,7 +458,6 @@
   ],
   "consumidas": {
    "euro": true,
-   "copa": true,
    "super": true,
    "premier": true
   },
