@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -50.3,
-  "ciclos": 42,
-  "greens": 6,
+  "saldo": -42.3,
+  "ciclos": 43,
+  "greens": 7,
   "redsCiclo": 13,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-16T04:31:17.259Z",
+    "resultado": "GREEN",
+    "unidades": 8,
+    "detalhe": "super · Bogota x Quito @5.5 (tiro 2)"
+   },
    {
     "quando": "2026-07-16T04:06:29.365Z",
     "resultado": "DESCARTADO",
@@ -120,15 +126,11 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-15T17:08:35.030Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "super": true
+  },
   "ciclo": {
    "liga": "super",
    "degrau": 1,
@@ -155,11 +157,11 @@
    "copa": 1784171590565,
    "premier": 1784173851860,
    "euro": 1784169368557,
-   "super": 1784124972907
+   "super": 1784176277258
   },
   "dias": {
    "2026-07-15": -35,
-   "2026-07-16": -14
+   "2026-07-16": -6
   }
  },
  "o25": {
@@ -294,28 +296,7 @@
   "consumidas": {
    "super": true
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "alvo": {
-    "h": "05:19",
-    "jogo": "Penarol x Santos",
-    "odd": 2.55,
-    "unidades": 2,
-    "desde": 1784175347554
-   },
-   "iniciadoEm": 1784174710355,
-   "tiros": [
-    {
-     "h": "05:07",
-     "jogo": "Sao Paulo x Porto Alegre",
-     "odd": 2.4,
-     "unidades": 1
-    }
-   ],
-   "semAlvoDesde": null
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784062951508,
    "premier": 1784174708263,
