@@ -142,13 +142,19 @@
   }
  },
  "o25": {
-  "saldo": -9.2,
-  "ciclos": 26,
-  "greens": 8,
+  "saldo": -8.1,
+  "ciclos": 27,
+  "greens": 9,
   "redsCiclo": 3,
   "aborts": 0,
   "descartes": 15,
   "historico": [
+   {
+    "quando": "2026-07-16T07:20:09.521Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Wolverhampton x Liverpool @2.07 (tiro 2)"
+   },
    {
     "quando": "2026-07-16T05:44:38.621Z",
     "resultado": "GREEN",
@@ -262,15 +268,11 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-15T18:44:53.286Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "premier": true
+  },
   "ciclo": {
    "liga": "premier",
    "degrau": 1,
@@ -295,13 +297,13 @@
   },
   "cooldown": {
    "copa": 1784062951508,
-   "premier": 1784179024715,
+   "premier": 1784186409417,
    "euro": 1784180678515,
    "super": 1784176089155
   },
   "dias": {
    "2026-07-15": -19.6,
-   "2026-07-16": 8
+   "2026-07-16": 9.1
   }
  },
  "ambas": {
