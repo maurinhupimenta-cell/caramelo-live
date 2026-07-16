@@ -168,13 +168,19 @@
   }
  },
  "o25": {
-  "saldo": -18.6,
-  "ciclos": 12,
-  "greens": 2,
+  "saldo": -17.2,
+  "ciclos": 13,
+  "greens": 3,
   "redsCiclo": 3,
   "aborts": 0,
   "descartes": 7,
   "historico": [
+   {
+    "quando": "2026-07-16T00:44:41.187Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "premier · Tottenham x Burnley @2.35 (tiro 1)"
+   },
    {
     "quando": "2026-07-16T00:30:29.685Z",
     "resultado": "DESCARTADO",
@@ -248,7 +254,9 @@
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "premier": true
+  },
   "ciclo": {
    "liga": "premier",
    "degrau": 0,
@@ -264,11 +272,11 @@
   },
   "cooldown": {
    "copa": 1784062951508,
-   "premier": 1784152425091,
+   "premier": 1784162681187,
    "euro": 1784144161990
   },
   "dias": {
-   "2026-07-15": -21
+   "2026-07-15": -19.6
   }
  },
  "ambas": {
