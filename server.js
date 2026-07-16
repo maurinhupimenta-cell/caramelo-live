@@ -1584,35 +1584,14 @@ function montaRobo(mkt) {
     const evs = (d.upcoming && d.upcoming[mkt]) || [];
     const degraus = [], pulados = [];
     const papeis = ["ENTRADA", "GALE 1", "GALE 2"];
-    const cands = evs.map((p, i) => ({ ...p, _i: i })).filter(p => p.odd != null && p.ev != null);
-    for (const p of cands) { if (p.odd < piso && pulados.length < 4) pulados.push({ h: p.horario || "", jogo: p.nome, odd: p.odd, ev: p.ev }); }
-    const validos = cands.filter(p => p.odd >= piso);
-    // PLACAR COMPOSTO v3 (pedido do usuario): forma dos times (rank 3h) + coluna 24h do jogo
-    // + EV- preferido (celula medida) + curva virando; recalculado a cada rodada, o dia inteiro
-    let rk = null;
-    try { const r = teamRanking(games, mkt, 60, 2, 999); const m = {}; r.forEach((t, i) => m[t.time] = i + 1); rk = { m, n: r.length }; } catch (e) {}
-    const virando = sf.length >= 2 && sf[sf.length - 1] > sf[sf.length - 2];
-    for (const p of validos) {
-      p._col = colunaPct(d.gamesAll || games, p.horario, mkt);
-      let n = 0;
-      if (p.ev < 0) n += Math.min(15, -p.ev * 0.5);      // EV- preferido (casa confiante na seca)
-      if (p.ev > 10) n -= 8;                              // modelo iludido: bandeira vermelha
-      if (rk) {
-        const tc = rk.m[(p.nome || "").split(" x ")[0]], tf = rk.m[(p.nome || "").split(" x ")[1]];
-        if (tc && tc <= 3) n += 6; if (tf && tf <= 3) n += 6;          // times em sequencia pagadora (3h)
-        if (tc && tc >= rk.n - 2) n -= 3; if (tf && tf >= rk.n - 2) n -= 3; // lanternas seguram
-      }
-      if (p._col && p._col.h24 != null) n += (p._col.h24 - base) * 0.15; // coluna 24h acima da media
-      if (virando) n += 5;                                // curva ja virando = pagamento comecando
-      p._nota = Math.round(n * 10) / 10;
-    }
-    let idxAnterior = 0; // nunca escolhe o jogo iminente (indice 0): folga minima de ~3min para acompanhar
-    for (let dgi = 0; dgi < 3; dgi++) {
-      const pool = validos.filter(p => p._i > idxAnterior);
-      if (!pool.length) break;
-      const p = pool.reduce((a, b) => (b._nota > a._nota ? b : a));
-      idxAnterior = p._i;
-      degraus.push({ papel: papeis[dgi], unidades: [1, 2, 4][dgi], h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev, evAlto: p.ev > 10, nota: p._nota, col: p._col });
+    // v4.2 (ordem do usuario): SEM PULAR JOGO NENHUM - degraus sao os 3 PROXIMOS jogos
+    // consecutivos da fila (pulando so o iminente, para dar tempo de acompanhar).
+    // EV/odd viram referencia exibida; nenhum filtro descarta jogo do meio do ciclo.
+    const cands = evs.map((p, i) => ({ ...p, _i: i })).filter(p => p.odd != null);
+    const seq3 = cands.filter(p => p._i >= 1).slice(0, 3);
+    for (let dgi = 0; dgi < seq3.length; dgi++) {
+      const p = seq3[dgi];
+      degraus.push({ papel: papeis[dgi], unidades: [1, 2, 4][dgi], h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev, evAlto: p.ev > 10, col: colunaPct(d.gamesAll || games, p.horario, mkt) });
     }
     melhor = { mkt, piso, liga, rel, pagando: cur, base: Math.round(base * 10) / 10, degraus, pulados, teste: rel >= 60, taxas: taxaJanelas(d.gamesAll || games, mkt) };
   }
@@ -1687,7 +1666,7 @@ function atualizaRoboMkt(mkt) {
       // O proximo degrau vem da PROPRIA liga do ciclo: primeiro jogo futuro com odd no piso.
       const evs2 = (d.upcoming && d.upcoming[mkt]) || [];
       // pula o jogo iminente (indice 0): alvo novo sempre com folga de ~3min para dar tempo de acompanhar
-      const cand = evs2.find((p, i2) => i2 >= 1 && p.odd != null && p.odd >= ROBO_PISO[mkt] && pertenceALiga(L.ciclo.liga, p.nome));
+      const cand = evs2.find((p, i2) => i2 >= 1 && p.odd != null && pertenceALiga(L.ciclo.liga, p.nome)); // proximo da fila, sem pular
       if (cand) {
         L.ciclo.alvo = { h: cand.horario || "", jogo: cand.nome, odd: cand.odd, unidades: [1, 2, 4][L.ciclo.degrau], desde: Date.now() };
         L.ciclo.semAlvoDesde = null;
@@ -1700,7 +1679,7 @@ function atualizaRoboMkt(mkt) {
           // so encerra de MAOS VAZIAS; com aposta na mesa o ciclo espera o tempo que for (regra do usuario)
           L.consumidas = L.consumidas || {}; L.consumidas[L.ciclo.liga] = true;
           L.cooldown = L.cooldown || {}; L.cooldown[L.ciclo.liga] = Date.now();
-          registraCiclo(mkt, "DESCARTADO", 0, `${L.ciclo.liga} · 20min sem jogo no piso`);
+          registraCiclo(mkt, "DESCARTADO", 0, `${L.ciclo.liga} · 20min sem jogo na fila`);
           L.ciclo = null;
         }
       }
@@ -2381,7 +2360,21 @@ function atualizaRadar(liga, s) {
         radarAtivos[k + "|minjan"] = { liga, mkt, tipo: "minjan", nivel: nivelMin, pagando: cur, base: c.base, rel: c.base ? Math.round(cur / c.base * 100) : null, fita, ts: Date.now() };
         if (!primeira && nivelMin !== antes2 && nivelMin >= 6 && podeAvisar(k + "|minjan" + nivelMin)) avisaRadar(radarAtivos[k + "|minjan"]);
       } else delete radarAtivos[k + "|minjan"];
-      radarEstado[k] = { fundo, sobe, ltb: quebrouLTB, nivelMin };
+      // 💠 PULLBACK: linha acima do normal, recuou 8-25 pts do topo recente e VOLTOU a subir
+      let pull = false, topoRec = null;
+      try {
+        if (cur != null && c.base != null && serie.length >= 6) {
+          topoRec = Math.max(...serie.slice(-10));
+          const recuo = topoRec - cur;
+          const retomou = serie[serie.length - 1] > serie[serie.length - 2];
+          pull = cur >= c.base && recuo >= 8 && recuo <= 25 && retomou;
+        }
+      } catch (e) {}
+      if (pull && !prev.pull) {
+        radarAtivos[k + "|pull"] = { liga, mkt, tipo: "pull", pagando: cur, topo: topoRec, base: c.base, fita, ts: Date.now() };
+        if (!primeira && podeAvisar(k + "|pull")) avisaRadar(radarAtivos[k + "|pull"]);
+      } else if (!pull) delete radarAtivos[k + "|pull"];
+      radarEstado[k] = { fundo, sobe, ltb: quebrouLTB, nivelMin, pull };
     }
   } catch (e) {}
 }
