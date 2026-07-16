@@ -310,13 +310,19 @@
   }
  },
  "ambas": {
-  "saldo": -5.5,
-  "ciclos": 28,
-  "greens": 7,
+  "saldo": -4.5,
+  "ciclos": 29,
+  "greens": 8,
   "redsCiclo": 2,
   "aborts": 0,
   "descartes": 19,
   "historico": [
+   {
+    "quando": "2026-07-16T14:18:12.317Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Sao Paulo x La Plata @2.02 (tiro 1)"
+   },
    {
     "quando": "2026-07-16T13:52:11.526Z",
     "resultado": "DESCARTADO",
@@ -430,24 +436,32 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-15T03:51:37.216Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
-  "ciclo": null,
+  "consumidas": {
+   "super": true
+  },
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "alvo": {
+    "h": "15:10",
+    "jogo": "Sao Paulo x La Plata",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1784210653723
+   },
+   "iniciadoEm": 1784210653723
+  },
   "cooldown": {
    "euro": 1784191438326,
-   "super": 1784176626053,
+   "super": 1784211492125,
    "premier": 1784179025015
   },
   "dias": {
    "2026-07-15": 2.2,
-   "2026-07-16": -11.7
+   "2026-07-16": -10.7
   }
  }
 }
