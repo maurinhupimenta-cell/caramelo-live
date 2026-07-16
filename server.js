@@ -1570,12 +1570,14 @@ function montaRobo(mkt) {
     L.consumidas = L.consumidas || {};
     L.cooldown = L.cooldown || {};
     if (L.consumidas[liga]) {
-      if (rel >= 100) { delete L.consumidas[liga]; salvaRoboLedger(); } // re-arma so com a liga de volta ao NORMAL
+      if (rel <= 85) { delete L.consumidas[liga]; salvaRoboLedger(); } // re-arma quando a liga ESFRIAR (para poder esquentar de novo)
       else continue;
     }
     if (L.cooldown[liga] && Date.now() - L.cooldown[liga] < 30 * 60000) continue; // descanso de 30min pos-ciclo
-    if (rel >= 60) continue;
-    if (melhor && rel >= melhor.rel) continue;
+    // MODO PAGAMENTO (regra do usuario): opera a liga QUENTE - pagando >=110% do normal e com a curva subindo
+    const subindo = sf.length >= 2 && sf[sf.length - 1] >= sf[sf.length - 2];
+    if (rel < 110 || !subindo) continue;
+    if (melhor && rel <= melhor.rel) continue; // escolhe a MAIS quente
     const evs = (d.upcoming && d.upcoming[mkt]) || [];
     const degraus = [], pulados = [];
     const papeis = ["ENTRADA", "GALE 1", "GALE 2"];
@@ -1732,7 +1734,7 @@ app.get("/api/robo", (req, res) => {
           const sf = chartSeries(d.games, mkt, Math.max(2, Math.min(20, d.games.length)));
           const cur = sf.length ? sf[sf.length - 1] : null; if (cur == null) continue;
           const rel = Math.round(cur / base * 100);
-          if (rel < 60) { melhor.consumida = { liga, rel }; break; }
+          if (rel >= 110) { melhor.consumida = { liga, rel }; break; }
         }
       }
       if (req.query.debug) { melhor.dbgCiclo = L.ciclo; melhor.dbgHistorico = L.historico.slice(0, 6); }
