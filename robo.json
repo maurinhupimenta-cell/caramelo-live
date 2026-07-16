@@ -133,7 +133,13 @@
    "liga": "copa",
    "degrau": 1,
    "apostado": 1,
-   "alvo": null,
+   "alvo": {
+    "h": "01:25",
+    "jogo": "Inglaterra x Suíça",
+    "odd": 4.5,
+    "unidades": 2,
+    "desde": 1784161351792
+   },
    "iniciadoEm": 1784160473582,
    "tiros": [
     {
@@ -142,7 +148,8 @@
      "odd": 4.75,
      "unidades": 1
     }
-   ]
+   ],
+   "semAlvoDesde": null
   },
   "cooldown": {
    "copa": 1784145194081,
@@ -156,12 +163,18 @@
  },
  "o25": {
   "saldo": -18.6,
-  "ciclos": 11,
+  "ciclos": 12,
   "greens": 2,
   "redsCiclo": 3,
   "aborts": 0,
-  "descartes": 6,
+  "descartes": 7,
   "historico": [
+   {
+    "quando": "2026-07-16T00:30:29.685Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-16T00:14:59.680Z",
     "resultado": "DESCARTADO",
@@ -235,13 +248,13 @@
    "degrau": 0,
    "apostado": 0,
    "alvo": {
-    "h": "01:30",
-    "jogo": "United x Brighton",
-    "odd": 2.07,
+    "h": "01:36",
+    "jogo": "Tottenham x Burnley",
+    "odd": 2.35,
     "unidades": 1,
-    "desde": 1784160929582
+    "desde": 1784161830580
    },
-   "iniciadoEm": 1784160929582
+   "iniciadoEm": 1784161830580
   },
   "cooldown": {
    "copa": 1784062951508,
