@@ -285,7 +285,19 @@
   "consumidas": {
    "euro": true
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "alvo": {
+    "h": "17:51",
+    "jogo": "United x Brighton",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1784220461637
+   },
+   "iniciadoEm": 1784220461637
+  },
   "cooldown": {
    "copa": 1784209571721,
    "premier": 1784186409417,
@@ -429,28 +441,7 @@
   "consumidas": {
    "copa": true
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "alvo": {
-    "h": "17:37",
-    "jogo": "Colômbia x Curação",
-    "odd": 1.95,
-    "unidades": 2,
-    "desde": 1784219651871
-   },
-   "iniciadoEm": 1784219053657,
-   "tiros": [
-    {
-     "h": "17:25",
-     "jogo": "Austrália x Suécia",
-     "odd": 2.1,
-     "unidades": 1
-    }
-   ],
-   "semAlvoDesde": null
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784191438326,
    "super": 1784211492125,
