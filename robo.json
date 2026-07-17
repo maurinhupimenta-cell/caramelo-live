@@ -131,28 +131,7 @@
   "consumidas": {
    "premier": true
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "alvo": {
-    "h": "14:48",
-    "jogo": "Tottenham x Palace",
-    "odd": 5,
-    "unidades": 2,
-    "desde": 1784295883913
-   },
-   "iniciadoEm": 1784295167212,
-   "tiros": [
-    {
-     "h": "14:36",
-     "jogo": "United x Palace",
-     "odd": 4.33,
-     "unidades": 1
-    }
-   ],
-   "semAlvoDesde": null
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784264309716,
    "premier": 1784296616615,
@@ -166,13 +145,19 @@
   }
  },
  "o25": {
-  "saldo": -42,
-  "ciclos": 53,
-  "greens": 22,
+  "saldo": -40.6,
+  "ciclos": 54,
+  "greens": 23,
   "redsCiclo": 11,
   "aborts": 0,
   "descartes": 20,
   "historico": [
+   {
+    "quando": "2026-07-17T13:56:56.920Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "premier · Tottenham x Palace @2.4 (tiro 1)"
+   },
    {
     "quando": "2026-07-17T13:11:56.118Z",
     "resultado": "RED_CICLO",
@@ -286,40 +271,23 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-16T17:11:54.230Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "premier · Leicester x Islington @2.25 (tiro 2)"
    }
   ],
   "consumidas": {
-   "copa": true
+   "copa": true,
+   "premier": true
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "14:48",
-    "jogo": "Tottenham x Palace",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1784295884017
-   },
-   "iniciadoEm": 1784295884017
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784290553524,
-   "premier": 1784276797122,
+   "premier": 1784296616815,
    "euro": 1784293916016,
    "super": 1784284815413
   },
   "dias": {
    "2026-07-15": -19.6,
    "2026-07-16": -14.2,
-   "2026-07-17": -10.6
+   "2026-07-17": -9.2
   }
  },
  "ambas": {
@@ -451,9 +419,7 @@
     "detalhe": "super · Agua Branca x Porto Alegre @2.15 (tiro 1)"
    }
   ],
-  "consumidas": {
-   "euro": true
-  },
+  "consumidas": {},
   "ciclo": null,
   "cooldown": {
    "euro": 1784291155121,
