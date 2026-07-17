@@ -298,13 +298,19 @@
   }
  },
  "ambas": {
-  "saldo": 5.7,
-  "ciclos": 51,
-  "greens": 26,
+  "saldo": 6.8,
+  "ciclos": 52,
+  "greens": 27,
   "redsCiclo": 3,
   "aborts": 0,
   "descartes": 22,
   "historico": [
+   {
+    "quando": "2026-07-17T12:12:53.922Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Cabo Verde x Irã @2.1 (tiro 1)"
+   },
    {
     "quando": "2026-07-17T11:01:15.511Z",
     "resultado": "GREEN",
@@ -418,15 +424,11 @@
     "resultado": "GREEN",
     "unidades": 0.4,
     "detalhe": "premier · Wolverhampton x Burnley @1.85 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-16T16:45:30.525Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "copa · Colômbia x Curação @1.95 (tiro 2)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "copa": true
+  },
   "ciclo": {
    "liga": "copa",
    "degrau": 0,
@@ -444,12 +446,12 @@
    "euro": 1784283955412,
    "super": 1784286075317,
    "premier": 1784284727419,
-   "copa": 1784254227123
+   "copa": 1784290373819
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
-   "2026-07-17": -0.2
+   "2026-07-17": 0.9
   }
  }
 }
