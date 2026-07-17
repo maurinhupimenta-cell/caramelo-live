@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -26.4,
-  "ciclos": 69,
+  "saldo": -33.4,
+  "ciclos": 70,
   "greens": 17,
-  "redsCiclo": 19,
+  "redsCiclo": 20,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-17T15:08:56.620Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-17T14:15:53.520Z",
     "resultado": "GREEN",
@@ -120,29 +126,18 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-16T15:08:32.315Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
    "premier": true,
-   "copa": true
+   "copa": true,
+   "super": true
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "alvo": {
-    "h": "15:58",
-    "jogo": "Asuncion x Belo Horizonte",
-    "odd": 4,
-    "unidades": 4,
-    "desde": 1784300115117
-   },
+   "degrau": 3,
+   "apostado": 7,
+   "alvo": null,
    "iniciadoEm": 1784298655613,
    "tiros": [
     {
@@ -156,6 +151,12 @@
      "jogo": "Porto Alegre x Sao Paulo",
      "odd": 4.75,
      "unidades": 2
+    },
+    {
+     "h": "15:58",
+     "jogo": "Asuncion x Belo Horizonte",
+     "odd": 4,
+     "unidades": 4
     }
    ],
    "semAlvoDesde": null
@@ -164,12 +165,12 @@
    "copa": 1784297753418,
    "premier": 1784296616615,
    "euro": 1784283955214,
-   "super": 1784294535524
+   "super": 1784300936518
   },
   "dias": {
    "2026-07-15": -35,
    "2026-07-16": -10.6,
-   "2026-07-17": 20.5
+   "2026-07-17": 13.5
   }
  },
  "o25": {
