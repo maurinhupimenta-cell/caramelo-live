@@ -289,13 +289,19 @@
   }
  },
  "ambas": {
-  "saldo": 2.1,
-  "ciclos": 47,
-  "greens": 22,
+  "saldo": 3.1,
+  "ciclos": 48,
+  "greens": 23,
   "redsCiclo": 3,
   "aborts": 0,
   "descartes": 22,
   "historico": [
+   {
+    "quando": "2026-07-17T09:07:16.411Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Medellin x Lima @1.98 (tiro 2)"
+   },
    {
     "quando": "2026-07-17T08:41:44.218Z",
     "resultado": "GREEN",
@@ -409,16 +415,11 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "super · Sao Paulo x La Plata @2.02 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-16T13:52:11.526Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
-   "premier": true
+   "premier": true,
+   "super": true
   },
   "ciclo": {
    "liga": "super",
@@ -444,14 +445,14 @@
   },
   "cooldown": {
    "euro": 1784250649415,
-   "super": 1784270195623,
+   "super": 1784279236013,
    "premier": 1784277704115,
    "copa": 1784254227123
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
-   "2026-07-17": -3.8
+   "2026-07-17": -2.8
   }
  }
 }
