@@ -143,13 +143,19 @@
   }
  },
  "o25": {
-  "saldo": -48.4,
-  "ciclos": 61,
-  "greens": 28,
+  "saldo": -46.9,
+  "ciclos": 62,
+  "greens": 29,
   "redsCiclo": 13,
   "aborts": 0,
   "descartes": 20,
   "historico": [
+   {
+    "quando": "2026-07-17T23:47:39.671Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "premier · Leicester x Liverpool @2.25 (tiro 2)"
+   },
    {
     "quando": "2026-07-17T23:28:26.669Z",
     "resultado": "GREEN",
@@ -263,63 +269,20 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-17T01:01:12.220Z",
-    "resultado": "GREEN",
-    "unidades": 2.8,
-    "detalhe": "super · Medellin x Santos @2.45 (tiro 3)"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "00:36",
-     "jogo": "Chelsea x Watford",
-     "odd": 2.25
-    },
-    {
-     "h": "00:39",
-     "jogo": "Leicester x Liverpool",
-     "odd": 2.25
-    },
-    {
-     "h": "00:42",
-     "jogo": "Everton x Newcastle",
-     "odd": 2.02
-    }
-   ],
-   "alvo": {
-    "h": "00:39",
-    "jogo": "Leicester x Liverpool",
-    "odd": 2.25,
-    "unidades": 2,
-    "desde": 1784331877975
-   },
-   "iniciadoEm": 1784330979573,
-   "tiros": [
-    {
-     "h": "00:36",
-     "jogo": "Chelsea x Watford",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784330906567,
-   "premier": 1784309021814,
+   "premier": 1784332059567,
    "euro": 1784305109618,
    "super": 1784320288613
   },
   "dias": {
    "2026-07-15": -19.6,
    "2026-07-16": -14.2,
-   "2026-07-17": -17
+   "2026-07-17": -15.5
   }
  },
  "ambas": {
