@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -46.9,
-  "ciclos": 60,
-  "greens": 11,
+  "saldo": -43.6,
+  "ciclos": 61,
+  "greens": 12,
   "redsCiclo": 16,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-17T03:02:39.721Z",
+    "resultado": "GREEN",
+    "unidades": 3.3,
+    "detalhe": "premier · United x Liverpool @4.33 (tiro 1)"
+   },
    {
     "quando": "2026-07-17T02:29:28.323Z",
     "resultado": "RED_CICLO",
@@ -120,15 +126,11 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-16T03:50:51.861Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "premier": true
+  },
   "ciclo": {
    "liga": "premier",
    "degrau": 0,
@@ -144,13 +146,14 @@
   },
   "cooldown": {
    "copa": 1784234249433,
-   "premier": 1784238298927,
+   "premier": 1784257359622,
    "euro": 1784255368222,
    "super": 1784241990132
   },
   "dias": {
    "2026-07-15": -35,
-   "2026-07-16": -10.6
+   "2026-07-16": -10.6,
+   "2026-07-17": 3.3
   }
  },
  "o25": {
