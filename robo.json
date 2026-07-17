@@ -276,7 +276,13 @@
    "liga": "super",
    "degrau": 2,
    "apostado": 3,
-   "alvo": null,
+   "alvo": {
+    "h": "11:31",
+    "jogo": "Agua Branca x Quito",
+    "odd": 2.2,
+    "unidades": 4,
+    "desde": 1784284096812
+   },
    "iniciadoEm": 1784282655817,
    "tiros": [
     {
@@ -307,13 +313,19 @@
   }
  },
  "ambas": {
-  "saldo": 3.6,
-  "ciclos": 49,
-  "greens": 24,
+  "saldo": 4.6,
+  "ciclos": 50,
+  "greens": 25,
   "redsCiclo": 3,
   "aborts": 0,
   "descartes": 22,
   "historico": [
+   {
+    "quando": "2026-07-17T10:38:47.616Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · City x Aston @2.05 (tiro 1)"
+   },
    {
     "quando": "2026-07-17T10:25:55.517Z",
     "resultado": "GREEN",
@@ -427,15 +439,11 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-16T15:26:51.419Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "premier": true
+  },
   "ciclo": {
    "liga": "premier",
    "degrau": 0,
@@ -452,13 +460,13 @@
   "cooldown": {
    "euro": 1784283955412,
    "super": 1784279236013,
-   "premier": 1784277704115,
+   "premier": 1784284727419,
    "copa": 1784254227123
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
-   "2026-07-17": -2.3
+   "2026-07-17": -1.3
   }
  }
 }
