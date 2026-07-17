@@ -143,13 +143,19 @@
   }
  },
  "o25": {
-  "saldo": -45.1,
-  "ciclos": 57,
-  "greens": 25,
+  "saldo": -44.2,
+  "ciclos": 58,
+  "greens": 26,
   "redsCiclo": 12,
   "aborts": 0,
   "descartes": 20,
   "historico": [
+   {
+    "quando": "2026-07-17T17:23:41.918Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Brighton x City @1.95 (tiro 2)"
+   },
    {
     "quando": "2026-07-17T16:18:29.813Z",
     "resultado": "RED_CICLO",
@@ -263,15 +269,11 @@
     "resultado": "GREEN",
     "unidades": 2,
     "detalhe": "copa · Colômbia x Bélgica @2.25 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-16T22:14:40.428Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "premier · Liverpool x City @2.07 (tiro 1)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "premier": true
+  },
   "ciclo": {
    "liga": "premier",
    "degrau": 1,
@@ -296,14 +298,14 @@
   },
   "cooldown": {
    "copa": 1784290553524,
-   "premier": 1784296616815,
+   "premier": 1784309021814,
    "euro": 1784305109618,
    "super": 1784300936713
   },
   "dias": {
    "2026-07-15": -19.6,
    "2026-07-16": -14.2,
-   "2026-07-17": -13.7
+   "2026-07-17": -12.8
   }
  },
  "ambas": {
@@ -435,37 +437,8 @@
     "detalhe": "copa · Bélgica x Japão @2.07 (tiro 3)"
    }
   ],
-  "consumidas": {
-   "premier": true
-  },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 3,
-   "apostado": 7,
-   "alvo": null,
-   "iniciadoEm": 1784306677818,
-   "tiros": [
-    {
-     "h": "17:48",
-     "jogo": "Leicester x Aston",
-     "odd": 2.07,
-     "unidades": 1
-    },
-    {
-     "h": "18:00",
-     "jogo": "Watford x Brentford",
-     "odd": 2,
-     "unidades": 2
-    },
-    {
-     "h": "18:12",
-     "jogo": "Leicester x West Ham",
-     "odd": 2.15,
-     "unidades": 4
-    }
-   ],
-   "semAlvoDesde": null
-  },
+  "consumidas": {},
+  "ciclo": null,
   "cooldown": {
    "euro": 1784306291125,
    "super": 1784301735817,
