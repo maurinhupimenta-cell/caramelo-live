@@ -300,13 +300,19 @@
   }
  },
  "ambas": {
-  "saldo": 0.9,
-  "ciclos": 54,
-  "greens": 28,
+  "saldo": 2,
+  "ciclos": 55,
+  "greens": 29,
   "redsCiclo": 4,
   "aborts": 0,
   "descartes": 22,
   "historico": [
+   {
+    "quando": "2026-07-17T13:37:15.917Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Asuncion x Penarol @2.1 (tiro 1)"
+   },
    {
     "quando": "2026-07-17T13:05:41.019Z",
     "resultado": "RED_CICLO",
@@ -420,16 +426,11 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "super · Agua Branca x Porto Alegre @2.15 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-16T18:49:30.633Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Argentina x Coreia do Sul @2.05 (tiro 1)"
    }
   ],
   "consumidas": {
-   "euro": true
+   "euro": true,
+   "super": true
   },
   "ciclo": {
    "liga": "super",
@@ -446,14 +447,14 @@
   },
   "cooldown": {
    "euro": 1784291155121,
-   "super": 1784286075317,
+   "super": 1784295435725,
    "premier": 1784293540915,
    "copa": 1784290373819
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
-   "2026-07-17": -5
+   "2026-07-17": -3.9
   }
  }
 }
