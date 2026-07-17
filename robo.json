@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -29.6,
-  "ciclos": 71,
+  "saldo": -36.6,
+  "ciclos": 72,
   "greens": 18,
-  "redsCiclo": 20,
+  "redsCiclo": 21,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-17T20:53:30.617Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-17T16:05:56.520Z",
     "resultado": "GREEN",
@@ -120,19 +126,15 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-16T16:08:32.201Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "euro": true
+  },
   "ciclo": {
    "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
+   "degrau": 3,
+   "apostado": 7,
    "alvo": null,
    "iniciadoEm": 1784319447623,
    "tiros": [
@@ -147,6 +149,12 @@
      "jogo": "Eslováquia x Espanha",
      "odd": 4,
      "unidades": 2
+    },
+    {
+     "h": "21:44",
+     "jogo": "Dinamarca x Países Baixos",
+     "odd": 4.2,
+     "unidades": 4
     }
    ],
    "semAlvoDesde": null
@@ -154,13 +162,13 @@
   "cooldown": {
    "copa": 1784297753418,
    "premier": 1784304356416,
-   "euro": 1784283955214,
+   "euro": 1784321610513,
    "super": 1784300936518
   },
   "dias": {
    "2026-07-15": -35,
    "2026-07-16": -10.6,
-   "2026-07-17": 17.3
+   "2026-07-17": 10.3
   }
  },
  "o25": {
