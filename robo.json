@@ -281,16 +281,25 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "alvo": {
-    "h": "16:14",
-    "jogo": "Inglaterra x Itália",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1784301056216
+    "h": "16:26",
+    "jogo": "Eslováquia x Romênia",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1784301774617
    },
-   "iniciadoEm": 1784301056216
+   "iniciadoEm": 1784301056216,
+   "tiros": [
+    {
+     "h": "16:14",
+     "jogo": "Inglaterra x Itália",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ],
+   "semAlvoDesde": null
   },
   "cooldown": {
    "copa": 1784290553524,
@@ -437,28 +446,7 @@
    "premier": true,
    "super": true
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "alvo": {
-    "h": "16:13",
-    "jogo": "Lima x Santos",
-    "odd": 1.98,
-    "unidades": 2,
-    "desde": 1784301015515
-   },
-   "iniciadoEm": 1784300295316,
-   "tiros": [
-    {
-     "h": "16:01",
-     "jogo": "Montevideo x Sao Paulo",
-     "odd": 1.8,
-     "unidades": 1
-    }
-   ],
-   "semAlvoDesde": null
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784291155121,
    "super": 1784301735817,
