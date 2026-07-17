@@ -145,13 +145,19 @@
   }
  },
  "o25": {
-  "saldo": -32.9,
-  "ciclos": 48,
-  "greens": 19,
+  "saldo": -30.7,
+  "ciclos": 49,
+  "greens": 20,
   "redsCiclo": 9,
   "aborts": 0,
   "descartes": 20,
   "historico": [
+   {
+    "quando": "2026-07-17T07:58:34.212Z",
+    "resultado": "GREEN",
+    "unidades": 2.2,
+    "detalhe": "euro · Bélgica x Geórgia @2.3 (tiro 3)"
+   },
    {
     "quando": "2026-07-17T06:34:15.819Z",
     "resultado": "GREEN",
@@ -265,16 +271,11 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-16T13:46:11.913Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
-   "super": true
+   "super": true,
+   "euro": true
   },
   "ciclo": {
    "liga": "euro",
@@ -307,13 +308,13 @@
   "cooldown": {
    "copa": 1784264309822,
    "premier": 1784259394425,
-   "euro": 1784253599318,
+   "euro": 1784275114021,
    "super": 1784270055714
   },
   "dias": {
    "2026-07-15": -19.6,
    "2026-07-16": -14.2,
-   "2026-07-17": -1.5
+   "2026-07-17": 0.7
   }
  },
  "ambas": {
