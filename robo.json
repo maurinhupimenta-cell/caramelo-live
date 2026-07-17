@@ -303,8 +303,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "22:19",
@@ -323,13 +323,21 @@
     }
    ],
    "alvo": {
-    "h": "22:19",
-    "jogo": "Colômbia x França",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1784322973643
+    "h": "22:22",
+    "jogo": "República Tcheca x Jordânia",
+    "odd": 2.3,
+    "unidades": 2,
+    "desde": 1784323709544
    },
-   "iniciadoEm": 1784322973643
+   "iniciadoEm": 1784322973643,
+   "tiros": [
+    {
+     "h": "22:19",
+     "jogo": "Colômbia x França",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784290553524,
@@ -344,13 +352,19 @@
   }
  },
  "ambas": {
-  "saldo": 4.3,
-  "ciclos": 65,
-  "greens": 38,
+  "saldo": 5.2,
+  "ciclos": 66,
+  "greens": 39,
   "redsCiclo": 5,
   "aborts": 0,
   "descartes": 22,
   "historico": [
+   {
+    "quando": "2026-07-17T21:28:30.144Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · Colômbia x França @1.93 (tiro 1)"
+   },
    {
     "quando": "2026-07-17T21:15:28.338Z",
     "resultado": "GREEN",
@@ -464,55 +478,20 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · Aston x Liverpool @2 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-17T06:36:35.813Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "super · Sao Paulo x Porto Alegre @2.07 (tiro 3)"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:19",
-     "jogo": "Colômbia x França",
-     "odd": 1.93
-    },
-    {
-     "h": "22:22",
-     "jogo": "República Tcheca x Jordânia",
-     "odd": 2.05
-    },
-    {
-     "h": "22:25",
-     "jogo": "Bélgica x Equador",
-     "odd": 1.93
-    }
-   ],
-   "alvo": {
-    "h": "22:19",
-    "jogo": "Colômbia x França",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1784322973840
-   },
-   "iniciadoEm": 1784322973840
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784322928133,
    "super": 1784314587616,
    "premier": 1784308842916,
-   "copa": 1784320469915
+   "copa": 1784323709838
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
-   "2026-07-17": -1.6
+   "2026-07-17": -0.7
   }
  }
 }
