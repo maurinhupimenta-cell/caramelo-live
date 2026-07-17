@@ -313,13 +313,19 @@
   }
  },
  "ambas": {
-  "saldo": 3,
-  "ciclos": 56,
-  "greens": 30,
+  "saldo": 4,
+  "ciclos": 57,
+  "greens": 31,
   "redsCiclo": 4,
   "aborts": 0,
   "descartes": 22,
   "historico": [
+   {
+    "quando": "2026-07-17T14:50:51.612Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Norwich x United @1.95 (tiro 1)"
+   },
    {
     "quando": "2026-07-17T14:27:53.919Z",
     "resultado": "GREEN",
@@ -433,16 +439,11 @@
     "resultado": "GREEN",
     "unidades": 0.7,
     "detalhe": "euro · Bélgica x Suíça @1.86 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-16T20:08:48.328Z",
-    "resultado": "GREEN",
-    "unidades": 0.8,
-    "detalhe": "premier · Brighton x Wolverhampton @1.76 (tiro 1)"
    }
   ],
   "consumidas": {
-   "copa": true
+   "copa": true,
+   "premier": true
   },
   "ciclo": {
    "liga": "premier",
@@ -460,13 +461,13 @@
   "cooldown": {
    "euro": 1784291155121,
    "super": 1784295435725,
-   "premier": 1784293540915,
+   "premier": 1784299851425,
    "copa": 1784298473819
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
-   "2026-07-17": -2.9
+   "2026-07-17": -1.9
   }
  }
 }
