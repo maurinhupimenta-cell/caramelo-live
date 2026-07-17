@@ -274,19 +274,7 @@
   "consumidas": {
    "copa": true
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "13:07",
-    "jogo": "Costa do Marfim x Japão",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1784289833911
-   },
-   "iniciadoEm": 1784289833911
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784290553524,
    "premier": 1784276797122,
@@ -300,13 +288,19 @@
   }
  },
  "ambas": {
-  "saldo": 6.8,
-  "ciclos": 52,
-  "greens": 27,
+  "saldo": 7.9,
+  "ciclos": 53,
+  "greens": 28,
   "redsCiclo": 3,
   "aborts": 0,
   "descartes": 22,
   "historico": [
+   {
+    "quando": "2026-07-17T12:25:55.312Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Escócia x Polônia @2.07 (tiro 1)"
+   },
    {
     "quando": "2026-07-17T12:12:53.922Z",
     "resultado": "GREEN",
@@ -420,16 +414,11 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "euro · Inglaterra x Geórgia @2.05 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-16T18:02:40.831Z",
-    "resultado": "GREEN",
-    "unidades": 0.4,
-    "detalhe": "premier · Wolverhampton x Burnley @1.85 (tiro 3)"
    }
   ],
   "consumidas": {
-   "copa": true
+   "copa": true,
+   "euro": true
   },
   "ciclo": {
    "liga": "euro",
@@ -445,7 +434,7 @@
    "iniciadoEm": 1784290437525
   },
   "cooldown": {
-   "euro": 1784283955412,
+   "euro": 1784291155121,
    "super": 1784286075317,
    "premier": 1784284727419,
    "copa": 1784290373819
@@ -453,7 +442,7 @@
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
-   "2026-07-17": 0.9
+   "2026-07-17": 2
   }
  }
 }
