@@ -170,13 +170,19 @@
   }
  },
  "o25": {
-  "saldo": -35,
-  "ciclos": 52,
+  "saldo": -42,
+  "ciclos": 53,
   "greens": 22,
-  "redsCiclo": 10,
+  "redsCiclo": 11,
   "aborts": 0,
   "descartes": 20,
   "historico": [
+   {
+    "quando": "2026-07-17T13:11:56.118Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-17T12:15:53.714Z",
     "resultado": "GREEN",
@@ -290,28 +296,17 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "premier · Leicester x Islington @2.25 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-16T16:41:32.833Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "euro · Albânia x Alemanha @2.45 (tiro 1)"
    }
   ],
   "consumidas": {
-   "copa": true
+   "copa": true,
+   "euro": true
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "alvo": {
-    "h": "14:02",
-    "jogo": "Dinamarca x Ucrânia",
-    "odd": 2.4,
-    "unidades": 4,
-    "desde": 1784293177321
-   },
+   "degrau": 3,
+   "apostado": 7,
+   "alvo": null,
    "iniciadoEm": 1784291694317,
    "tiros": [
     {
@@ -325,6 +320,12 @@
      "jogo": "França x Sérvia",
      "odd": 2.3,
      "unidades": 2
+    },
+    {
+     "h": "14:02",
+     "jogo": "Dinamarca x Ucrânia",
+     "odd": 2.4,
+     "unidades": 4
     }
    ],
    "semAlvoDesde": null
@@ -332,13 +333,13 @@
   "cooldown": {
    "copa": 1784290553524,
    "premier": 1784276797122,
-   "euro": 1784275114021,
+   "euro": 1784293916016,
    "super": 1784284815413
   },
   "dias": {
    "2026-07-15": -19.6,
    "2026-07-16": -14.2,
-   "2026-07-17": -3.6
+   "2026-07-17": -10.6
   }
  },
  "ambas": {
