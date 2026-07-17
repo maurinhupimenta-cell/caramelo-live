@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -39.9,
-  "ciclos": 59,
+  "saldo": -46.9,
+  "ciclos": 60,
   "greens": 11,
-  "redsCiclo": 15,
+  "redsCiclo": 16,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-17T02:29:28.323Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-16T22:46:30.233Z",
     "resultado": "GREEN",
@@ -120,19 +126,15 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-16T03:13:10.565Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "euro": true
+  },
   "ciclo": {
    "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
+   "degrau": 3,
+   "apostado": 7,
    "alvo": null,
    "iniciadoEm": 1784253190814,
    "tiros": [
@@ -147,6 +149,12 @@
      "jogo": "Escócia x Hungria",
      "odd": 4.75,
      "unidades": 2
+    },
+    {
+     "h": "03:20",
+     "jogo": "Inglaterra x Eslováquia",
+     "odd": 4.2,
+     "unidades": 4
     }
    ],
    "semAlvoDesde": null
@@ -154,12 +162,12 @@
   "cooldown": {
    "copa": 1784234249433,
    "premier": 1784238298927,
-   "euro": 1784169368557,
+   "euro": 1784255368222,
    "super": 1784241990132
   },
   "dias": {
    "2026-07-15": -35,
-   "2026-07-16": -3.6
+   "2026-07-16": -10.6
   }
  },
  "o25": {
