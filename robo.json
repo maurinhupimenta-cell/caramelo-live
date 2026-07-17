@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -30.2,
-  "ciclos": 66,
+  "saldo": -37.2,
+  "ciclos": 67,
   "greens": 15,
-  "redsCiclo": 18,
+  "redsCiclo": 19,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-17T13:22:15.714Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-17T10:25:55.318Z",
     "resultado": "GREEN",
@@ -120,26 +126,16 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-16T08:42:19.214Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "super": true
+  },
   "ciclo": {
    "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "alvo": {
-    "h": "14:13",
-    "jogo": "Quito x Buenos Aires",
-    "odd": 4,
-    "unidades": 4,
-    "desde": 1784293816624
-   },
+   "degrau": 3,
+   "apostado": 7,
+   "alvo": null,
    "iniciadoEm": 1784292376021,
    "tiros": [
     {
@@ -153,6 +149,12 @@
      "jogo": "Belo Horizonte x Asuncion",
      "odd": 4.2,
      "unidades": 2
+    },
+    {
+     "h": "14:13",
+     "jogo": "Quito x Buenos Aires",
+     "odd": 4,
+     "unidades": 4
     }
    ],
    "semAlvoDesde": null
@@ -161,12 +163,12 @@
    "copa": 1784264309716,
    "premier": 1784273743913,
    "euro": 1784283955214,
-   "super": 1784270055524
+   "super": 1784294535524
   },
   "dias": {
    "2026-07-15": -35,
    "2026-07-16": -10.6,
-   "2026-07-17": 16.7
+   "2026-07-17": 9.7
   }
  },
  "o25": {
@@ -299,37 +301,9 @@
    }
   ],
   "consumidas": {
-   "copa": true,
-   "euro": true
+   "copa": true
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 3,
-   "apostado": 7,
-   "alvo": null,
-   "iniciadoEm": 1784291694317,
-   "tiros": [
-    {
-     "h": "13:38",
-     "jogo": "Croácia x Suíça",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "13:50",
-     "jogo": "França x Sérvia",
-     "odd": 2.3,
-     "unidades": 2
-    },
-    {
-     "h": "14:02",
-     "jogo": "Dinamarca x Ucrânia",
-     "odd": 2.4,
-     "unidades": 4
-    }
-   ],
-   "semAlvoDesde": null
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784290553524,
    "premier": 1784276797122,
