@@ -180,13 +180,19 @@
   }
  },
  "o25": {
-  "saldo": -42.7,
-  "ciclos": 59,
+  "saldo": -49.7,
+  "ciclos": 60,
   "greens": 27,
-  "redsCiclo": 12,
+  "redsCiclo": 13,
   "aborts": 0,
   "descartes": 20,
   "historico": [
+   {
+    "quando": "2026-07-17T21:33:54.102Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-17T20:31:28.716Z",
     "resultado": "GREEN",
@@ -300,61 +306,12 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "copa · Irã x Arábia Saudita @2.4 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-16T23:58:12.840Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "copa · Irã x Arábia Saudita @2.4 (tiro 1)"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "22:19",
-     "jogo": "Colômbia x França",
-     "odd": 2.2
-    },
-    {
-     "h": "22:22",
-     "jogo": "República Tcheca x Jordânia",
-     "odd": 2.3
-    },
-    {
-     "h": "22:25",
-     "jogo": "Bélgica x Equador",
-     "odd": 2.2
-    }
-   ],
-   "alvo": {
-    "h": "22:25",
-    "jogo": "Bélgica x Equador",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1784323947498
-   },
-   "iniciadoEm": 1784322973643,
-   "tiros": [
-    {
-     "h": "22:19",
-     "jogo": "Colômbia x França",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "22:22",
-     "jogo": "República Tcheca x Jordânia",
-     "odd": 2.3,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784290553524,
+   "copa": 1784324033998,
    "premier": 1784309021814,
    "euro": 1784305109618,
    "super": 1784320288613
@@ -362,7 +319,7 @@
   "dias": {
    "2026-07-15": -19.6,
    "2026-07-16": -14.2,
-   "2026-07-17": -11.3
+   "2026-07-17": -18.3
   }
  },
  "ambas": {
