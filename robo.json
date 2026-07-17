@@ -131,16 +131,25 @@
   "consumidas": {},
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "alvo": {
-    "h": "02:56",
-    "jogo": "França x Alemanha",
-    "odd": 3.8,
-    "unidades": 1,
-    "desde": 1784253190814
+    "h": "03:08",
+    "jogo": "Escócia x Hungria",
+    "odd": 4.75,
+    "unidades": 2,
+    "desde": 1784253929919
    },
-   "iniciadoEm": 1784253190814
+   "iniciadoEm": 1784253190814,
+   "tiros": [
+    {
+     "h": "02:56",
+     "jogo": "França x Alemanha",
+     "odd": 3.8,
+     "unidades": 1
+    }
+   ],
+   "semAlvoDesde": null
   },
   "cooldown": {
    "copa": 1784234249433,
@@ -285,34 +294,7 @@
   "consumidas": {
    "euro": true
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 3,
-   "apostado": 7,
-   "alvo": null,
-   "iniciadoEm": 1784251407818,
-   "tiros": [
-    {
-     "h": "02:26",
-     "jogo": "Eslovênia x Inglaterra",
-     "odd": 2.4,
-     "unidades": 1
-    },
-    {
-     "h": "02:38",
-     "jogo": "Inglaterra x República Tcheca",
-     "odd": 2.37,
-     "unidades": 2
-    },
-    {
-     "h": "02:50",
-     "jogo": "Eslovênia x Espanha",
-     "odd": 2.4,
-     "unidades": 4
-    }
-   ],
-   "semAlvoDesde": null
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784246336717,
    "premier": 1784240080234,
