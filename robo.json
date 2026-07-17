@@ -301,7 +301,36 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "00:16",
+     "jogo": "Argélia x Irã",
+     "odd": 2.6
+    },
+    {
+     "h": "00:19",
+     "jogo": "Austrália x Haiti",
+     "odd": 2.15
+    },
+    {
+     "h": "00:22",
+     "jogo": "República Tcheca x Argentina",
+     "odd": 2.25
+    }
+   ],
+   "alvo": {
+    "h": "00:16",
+    "jogo": "Argélia x Irã",
+    "odd": 2.6,
+    "unidades": 1,
+    "desde": 1784330067976
+   },
+   "iniciadoEm": 1784330067976
+  },
   "cooldown": {
    "copa": 1784324033998,
    "premier": 1784309021814,
@@ -444,36 +473,7 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "00:04",
-     "jogo": "Jordânia x Canadá",
-     "odd": 2
-    },
-    {
-     "h": "00:07",
-     "jogo": "Colômbia x Países Baixos",
-     "odd": 1.98
-    },
-    {
-     "h": "00:10",
-     "jogo": "Iraque x República Tcheca",
-     "odd": 2.15
-    }
-   ],
-   "alvo": {
-    "h": "00:04",
-    "jogo": "Jordânia x Canadá",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1784328928471
-   },
-   "iniciadoEm": 1784328928471
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784327967401,
    "super": 1784314587616,
