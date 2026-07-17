@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -43.6,
-  "ciclos": 61,
+  "saldo": -50.6,
+  "ciclos": 62,
   "greens": 12,
-  "redsCiclo": 16,
+  "redsCiclo": 17,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-17T03:56:29.211Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-17T03:02:39.721Z",
     "resultado": "GREEN",
@@ -120,28 +126,17 @@
     "resultado": "GREEN",
     "unidades": 8,
     "detalhe": "super · Bogota x Quito @5.5 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-16T04:06:29.365Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
-   "premier": true
+   "premier": true,
+   "super": true
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "alvo": {
-    "h": "04:46",
-    "jogo": "Bogota x Asuncion",
-    "odd": 5.5,
-    "unidades": 4,
-    "desde": 1784259808313
-   },
+   "degrau": 3,
+   "apostado": 7,
+   "alvo": null,
    "iniciadoEm": 1784258249122,
    "tiros": [
     {
@@ -155,6 +150,12 @@
      "jogo": "Itaquera x Santiago",
      "odd": 4,
      "unidades": 2
+    },
+    {
+     "h": "04:46",
+     "jogo": "Bogota x Asuncion",
+     "odd": 5.5,
+     "unidades": 4
     }
    ],
    "semAlvoDesde": null
@@ -163,12 +164,12 @@
    "copa": 1784234249433,
    "premier": 1784257359622,
    "euro": 1784255368222,
-   "super": 1784241990132
+   "super": 1784260589017
   },
   "dias": {
    "2026-07-15": -35,
    "2026-07-16": -10.6,
-   "2026-07-17": 3.3
+   "2026-07-17": -3.7
   }
  },
  "o25": {
@@ -307,7 +308,13 @@
    "liga": "super",
    "degrau": 1,
    "apostado": 1,
-   "alvo": null,
+   "alvo": {
+    "h": "04:55",
+    "jogo": "Avellaneda x Medellin",
+    "odd": 2.4,
+    "unidades": 2,
+    "desde": 1784260319724
+   },
    "iniciadoEm": 1784259628320,
    "tiros": [
     {
@@ -316,7 +323,8 @@
      "odd": 2.4,
      "unidades": 1
     }
-   ]
+   ],
+   "semAlvoDesde": null
   },
   "cooldown": {
    "copa": 1784246336717,
