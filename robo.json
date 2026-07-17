@@ -129,7 +129,19 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "alvo": {
+    "h": "21:20",
+    "jogo": "Alemanha x Croácia",
+    "odd": 4.2,
+    "unidades": 1,
+    "desde": 1784319447623
+   },
+   "iniciadoEm": 1784319447623
+  },
   "cooldown": {
    "copa": 1784297753418,
    "premier": 1784304356416,
@@ -419,7 +431,13 @@
    "liga": "copa",
    "degrau": 1,
    "apostado": 1,
-   "alvo": null,
+   "alvo": {
+    "h": "21:13",
+    "jogo": "Noruega x República Tcheca",
+    "odd": 2,
+    "unidades": 2,
+    "desde": 1784319028622
+   },
    "iniciadoEm": 1784318306628,
    "tiros": [
     {
@@ -428,7 +446,8 @@
      "odd": 1.95,
      "unidades": 1
     }
-   ]
+   ],
+   "semAlvoDesde": null
   },
   "cooldown": {
    "euro": 1784312609520,
