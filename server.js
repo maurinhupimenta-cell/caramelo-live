@@ -1574,18 +1574,30 @@ function montaRobo(mkt) {
     const rel = Math.round(cur / base * 100);
     L.consumidas = L.consumidas || {};
     L.cooldown = L.cooldown || {};
+    // ===== v5 (spec do usuario): BOLSAO DE OURO DA FIBONACCI =====
+    // balanco de ALTA no grafico (fundo antes do topo, amplitude >=8) e a linha
+    // RETRAIDA entre 38.2% e 61.8% do balanco, JA RETOMANDO a subida
+    let noBolsao = false, fibInfo = null;
+    try {
+      const sr = sf.slice(-20);
+      if (sr.length >= 8) {
+        let iMin = 0, iMax = 0;
+        sr.forEach((v, i) => { if (v < sr[iMin]) iMin = i; if (v >= sr[iMax]) iMax = i; });
+        const lo = sr[iMin], hi = sr[iMax], amp = hi - lo;
+        const curF = sr[sr.length - 1];
+        if (amp >= 8 && iMin < iMax) {
+          const retr = (hi - curF) / amp * 100;
+          const retomou = sr[sr.length - 1] > sr[sr.length - 2];
+          if (retr >= 38.2 && retr <= 61.8 && retomou) { noBolsao = true; fibInfo = { retr: Math.round(retr), lo, hi }; }
+        }
+      }
+    } catch (e) {}
     if (L.consumidas[liga]) {
-      if (rel <= 85) { delete L.consumidas[liga]; salvaRoboLedger(); } // re-arma quando a liga ESFRIAR (para poder esquentar de novo)
-      else continue;
+      if (!noBolsao) { delete L.consumidas[liga]; salvaRoboLedger(); } // saiu do bolsao: re-arma para o proximo
+      continue;
     }
     if (L.cooldown[liga] && Date.now() - L.cooldown[liga] < 30 * 60000) continue; // descanso de 30min pos-ciclo
-    // MODO PAGAMENTO v4.1 (spec do usuario): LINHA PAGANTE + GRAFICO SUBINDO CONSISTENTE
-    // - linha pagante: rel >= 100 (pagando acima do normal)
-    // - grafico subindo: 3 pontos consecutivos em alta (sobe de verdade, nao ruido de 1 ponto)
-    const n = sf.length;
-    const subindoFirme = n >= 3 && sf[n - 1] > sf[n - 2] && sf[n - 2] > sf[n - 3];
-    if (rel < 100 || !subindoFirme) continue;
-    if (melhor && rel <= melhor.rel) continue; // entre as que sobem, a mais quente
+    if (!noBolsao) continue;
     const evs = (d.upcoming && d.upcoming[mkt]) || [];
     const degraus = [], pulados = [];
     const papeis = ["ENTRADA", "GALE 1", "GALE 2"];
@@ -1598,7 +1610,31 @@ function montaRobo(mkt) {
       const p = seq3[dgi];
       degraus.push({ papel: papeis[dgi], unidades: [1, 2, 4][dgi], h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev, evAlto: p.ev > 10, col: colunaPct(d.gamesAll || games, p.horario, mkt) });
     }
-    melhor = { mkt, piso, liga, rel, pagando: cur, base: Math.round(base * 10) / 10, degraus, pulados, teste: rel >= 60, taxas: taxaJanelas(d.gamesAll || games, mkt) };
+    // ⚓ ANCORAS DO DIA: taxa de cada time SO nos jogos do dia atual (segmento desde a virada 23h->00h)
+    let ancoraDia = 0;
+    try {
+      const ga = d.gamesAll || games;
+      let idxDia = 0;
+      for (let i2 = 1; i2 < ga.length; i2++) {
+        const h1 = parseInt((ga[i2].horario || "").split(":")[0]);
+        const h0 = parseInt((ga[i2 - 1].horario || "").split(":")[0]);
+        if (!isNaN(h1) && !isNaN(h0) && h1 < h0 - 12) idxDia = i2; // 23:xx -> 00:xx = novo dia
+      }
+      const diaGames = ga.slice(idxDia);
+      const st = {};
+      for (const g2 of diaGames) for (const t2 of [g2.casa, g2.fora]) { if (!t2) continue; (st[t2] = st[t2] || [0, 0])[0]++; if (pays(g2, mkt)) st[t2][1]++; }
+      const scoreT = t2 => { const s2 = st[t2]; return s2 && s2[0] >= 2 ? s2[1] / s2[0] * 100 : null; };
+      let soma = 0, nA = 0;
+      for (const dg of degraus) {
+        const c1 = scoreT((dg.jogo || "").split(" x ")[0]), c2 = scoreT((dg.jogo || "").split(" x ")[1]);
+        const m2 = Math.max(c1 == null ? -1 : c1, c2 == null ? -1 : c2);
+        if (m2 >= 0) { soma += m2; nA++; }
+        dg.ancora = m2 >= 0 ? Math.round(m2) : null;
+      }
+      ancoraDia = nA ? Math.round(soma / nA) : 0;
+    } catch (e) {}
+    if (melhor && ancoraDia <= (melhor.ancoraDia || 0)) continue; // entre bolsoes, as MELHORES ancoras do dia
+    melhor = { mkt, piso, liga, rel, pagando: cur, base: Math.round(base * 10) / 10, degraus, pulados, fib: fibInfo, ancoraDia, teste: false, taxas: taxaJanelas(d.gamesAll || games, mkt) };
   }
   return melhor;
 }
