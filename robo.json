@@ -274,34 +274,7 @@
   "consumidas": {
    "super": true
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 3,
-   "apostado": 7,
-   "alvo": null,
-   "iniciadoEm": 1784282655817,
-   "tiros": [
-    {
-     "h": "11:07",
-     "jogo": "Santos x Avellaneda",
-     "odd": 2.4,
-     "unidades": 1
-    },
-    {
-     "h": "11:19",
-     "jogo": "Bogota x Penarol",
-     "odd": 2.75,
-     "unidades": 2
-    },
-    {
-     "h": "11:31",
-     "jogo": "Agua Branca x Quito",
-     "odd": 2.2,
-     "unidades": 4
-    }
-   ],
-   "semAlvoDesde": null
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784264309822,
    "premier": 1784276797122,
@@ -446,7 +419,19 @@
   "consumidas": {
    "premier": true
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "alvo": {
+    "h": "11:52",
+    "jogo": "Bogota x Rio de Janeiro",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1784285336516
+   },
+   "iniciadoEm": 1784285336516
+  },
   "cooldown": {
    "euro": 1784283955412,
    "super": 1784279236013,
