@@ -132,7 +132,19 @@
    "premier": true,
    "copa": true
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "alvo": {
+    "h": "15:34",
+    "jogo": "Guayaquil x Montevideo",
+    "odd": 3.8,
+    "unidades": 1,
+    "desde": 1784298655613
+   },
+   "iniciadoEm": 1784298655613
+  },
   "cooldown": {
    "copa": 1784297753418,
    "premier": 1784296616615,
@@ -423,28 +435,7 @@
   "consumidas": {
    "copa": true
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "alvo": {
-    "h": "15:19",
-    "jogo": "Japão x Inglaterra",
-    "odd": 2,
-    "unidades": 2,
-    "desde": 1784297753614
-   },
-   "iniciadoEm": 1784297054020,
-   "tiros": [
-    {
-     "h": "15:07",
-     "jogo": "Senegal x Espanha",
-     "odd": 2,
-     "unidades": 1
-    }
-   ],
-   "semAlvoDesde": null
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784291155121,
    "super": 1784295435725,
