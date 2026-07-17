@@ -292,13 +292,19 @@
   }
  },
  "ambas": {
-  "saldo": 1.1,
-  "ciclos": 46,
-  "greens": 21,
+  "saldo": 2.1,
+  "ciclos": 47,
+  "greens": 22,
   "redsCiclo": 3,
   "aborts": 0,
   "descartes": 22,
   "historico": [
+   {
+    "quando": "2026-07-17T08:41:44.218Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Aston x Liverpool @2 (tiro 2)"
+   },
    {
     "quando": "2026-07-17T06:36:35.813Z",
     "resultado": "GREEN",
@@ -412,15 +418,11 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-16T08:43:58.517Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "premier": true
+  },
   "ciclo": {
    "liga": "premier",
    "degrau": 1,
@@ -446,13 +448,13 @@
   "cooldown": {
    "euro": 1784250649415,
    "super": 1784270195623,
-   "premier": 1784261687612,
+   "premier": 1784277704115,
    "copa": 1784254227123
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
-   "2026-07-17": -4.8
+   "2026-07-17": -3.8
   }
  }
 }
