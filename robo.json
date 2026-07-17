@@ -307,13 +307,19 @@
   }
  },
  "ambas": {
-  "saldo": 2.6,
-  "ciclos": 63,
-  "greens": 36,
+  "saldo": 3.1,
+  "ciclos": 64,
+  "greens": 37,
   "redsCiclo": 5,
   "aborts": 0,
   "descartes": 22,
   "historico": [
+   {
+    "quando": "2026-07-17T20:34:30.017Z",
+    "resultado": "GREEN",
+    "unidades": 0.5,
+    "detalhe": "copa · Jordânia x Curação @1.87 (tiro 3)"
+   },
    {
     "quando": "2026-07-17T18:56:28.016Z",
     "resultado": "GREEN",
@@ -427,15 +433,11 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-17T04:22:29.621Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "super · Montevideo x Agua Branca @1.85 (tiro 1)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "copa": true
+  },
   "ciclo": {
    "liga": "copa",
    "degrau": 2,
@@ -468,12 +470,12 @@
    "euro": 1784312609520,
    "super": 1784314587616,
    "premier": 1784308842916,
-   "copa": 1784298473819
+   "copa": 1784320469915
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
-   "2026-07-17": -3.3
+   "2026-07-17": -2.8
   }
  }
 }
