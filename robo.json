@@ -142,13 +142,19 @@
   }
  },
  "o25": {
-  "saldo": -27.2,
-  "ciclos": 41,
-  "greens": 15,
+  "saldo": -24.4,
+  "ciclos": 42,
+  "greens": 16,
   "redsCiclo": 7,
   "aborts": 0,
   "descartes": 19,
   "historico": [
+   {
+    "quando": "2026-07-17T01:01:12.220Z",
+    "resultado": "GREEN",
+    "unidades": 2.8,
+    "detalhe": "super · Medellin x Santos @2.45 (tiro 3)"
+   },
    {
     "quando": "2026-07-16T23:58:57.118Z",
     "resultado": "GREEN",
@@ -262,15 +268,11 @@
     "resultado": "GREEN",
     "unidades": 2.1,
     "detalhe": "super · Penarol x Santos @2.55 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-16T04:05:08.353Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "premier · Wolverhampton x United @2.07 (tiro 2)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "super": true
+  },
   "ciclo": {
    "liga": "super",
    "degrau": 2,
@@ -303,11 +305,11 @@
    "copa": 1784246336717,
    "premier": 1784240080234,
    "euro": 1784220092729,
-   "super": 1784234371537
+   "super": 1784250072118
   },
   "dias": {
    "2026-07-15": -19.6,
-   "2026-07-16": -10
+   "2026-07-16": -7.2
   }
  },
  "ambas": {
