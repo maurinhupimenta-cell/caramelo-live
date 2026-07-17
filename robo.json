@@ -275,7 +275,13 @@
    "liga": "super",
    "degrau": 2,
    "apostado": 3,
-   "alvo": null,
+   "alvo": {
+    "h": "01:52",
+    "jogo": "Medellin x Santos",
+    "odd": 2.45,
+    "unidades": 4,
+    "desde": 1784249331713
+   },
    "iniciadoEm": 1784247892125,
    "tiros": [
     {
@@ -436,16 +442,25 @@
   "consumidas": {},
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "alvo": {
-    "h": "01:50",
-    "jogo": "Eslováquia x Eslovênia",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1784249211013
+    "h": "02:02",
+    "jogo": "Croácia x França",
+    "odd": 1.85,
+    "unidades": 2,
+    "desde": 1784249951018
    },
-   "iniciadoEm": 1784249211013
+   "iniciadoEm": 1784249211013,
+   "tiros": [
+    {
+     "h": "01:50",
+     "jogo": "Eslováquia x Eslovênia",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ],
+   "semAlvoDesde": null
   },
   "cooldown": {
    "euro": 1784240129627,
