@@ -1589,7 +1589,7 @@ function montaRobo(mkt) {
         const curF = sr[sr.length - 1];
         if (amp >= 8 && iMin < iMax) {
           const retr = (hi - curF) / amp * 100;
-          const retomou = sr[sr.length - 1] > sr[sr.length - 2];
+          const retomou = sr.length >= 3 && sr[sr.length - 1] > sr[sr.length - 2] && sr[sr.length - 2] > sr[sr.length - 3]; // SUBIDA CONFIRMADA: 2 pontos de alta
           if (retr >= 38.2 && retr <= 61.8 && retomou) { noBolsao = true; fibInfo = { retr: Math.round(retr), lo, hi }; }
         }
       }
@@ -1607,34 +1607,37 @@ function montaRobo(mkt) {
     // consecutivos da fila (pulando so o iminente, para dar tempo de acompanhar).
     // EV/odd viram referencia exibida; nenhum filtro descarta jogo do meio do ciclo.
     const cands = evs.map((p, i) => ({ ...p, _i: i })).filter(p => p.odd != null);
-    const seq3 = cands.filter(p => p._i >= 1).slice(0, 3);
-    for (let dgi = 0; dgi < seq3.length; dgi++) {
-      const p = seq3[dgi];
-      degraus.push({ papel: papeis[dgi], unidades: [1, 2, 4][dgi], h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev, evAlto: p.ev > 10, col: colunaPct(d.gamesAll || games, p.horario, mkt) });
-    }
-    // ⚓ ANCORAS DO DIA: taxa de cada time SO nos jogos do dia atual (segmento desde a virada 23h->00h)
-    let ancoraDia = 0;
+    // ⚓ tabela de ancoras do DIA (zerada na virada 23h->00h do relogio do jogo)
+    let scoreT = () => null;
     try {
       const ga = d.gamesAll || games;
       let idxDia = 0;
       for (let i2 = 1; i2 < ga.length; i2++) {
         const h1 = parseInt((ga[i2].horario || "").split(":")[0]);
         const h0 = parseInt((ga[i2 - 1].horario || "").split(":")[0]);
-        if (!isNaN(h1) && !isNaN(h0) && h1 < h0 - 12) idxDia = i2; // 23:xx -> 00:xx = novo dia
+        if (!isNaN(h1) && !isNaN(h0) && h1 < h0 - 12) idxDia = i2;
       }
-      const diaGames = ga.slice(idxDia);
       const st = {};
-      for (const g2 of diaGames) for (const t2 of [g2.casa, g2.fora]) { if (!t2) continue; (st[t2] = st[t2] || [0, 0])[0]++; if (pays(g2, mkt)) st[t2][1]++; }
-      const scoreT = t2 => { const s2 = st[t2]; return s2 && s2[0] >= 2 ? s2[1] / s2[0] * 100 : null; };
-      let soma = 0, nA = 0;
-      for (const dg of degraus) {
-        const c1 = scoreT((dg.jogo || "").split(" x ")[0]), c2 = scoreT((dg.jogo || "").split(" x ")[1]);
-        const m2 = Math.max(c1 == null ? -1 : c1, c2 == null ? -1 : c2);
-        if (m2 >= 0) { soma += m2; nA++; }
-        dg.ancora = m2 >= 0 ? Math.round(m2) : null;
-      }
-      ancoraDia = nA ? Math.round(soma / nA) : 0;
+      for (const g2 of ga.slice(idxDia)) for (const t2 of [g2.casa, g2.fora]) { if (!t2) continue; (st[t2] = st[t2] || [0, 0])[0]++; if (pays(g2, mkt)) st[t2][1]++; }
+      scoreT = t2 => { const s2 = st[t2]; return s2 && s2[0] >= 2 ? s2[1] / s2[0] * 100 : null; };
     } catch (e) {}
+    const ancDoJogo = p => { const c1 = scoreT((p.nome || "").split(" x ")[0]), c2 = scoreT((p.nome || "").split(" x ")[1]); const m2 = Math.max(c1 == null ? -1 : c1, c2 == null ? -1 : c2); return m2 >= 0 ? m2 : null; };
+    // LARGADA: entre os inicios possiveis (indices 1..3 da fila), o jogo com MELHOR time-ancora + MELHOR odd
+    const porIdx = {}; for (const p of cands) porIdx[p._i] = p;
+    let melhorStart = null, melhorScore = -1;
+    for (const s of [1, 2, 3]) {
+      if (!(porIdx[s] && porIdx[s + 1] && porIdx[s + 2])) continue; // trio consecutivo precisa existir
+      const p0 = porIdx[s];
+      const sc = (ancDoJogo(p0) || 0) + p0.odd; // time domina, odd desempata/soma
+      if (sc > melhorScore) { melhorScore = sc; melhorStart = s; }
+    }
+    if (melhorStart == null) continue; // sem trio completo agora: espera a proxima rodada
+    for (let dgi = 0; dgi < 3; dgi++) {
+      const p = porIdx[melhorStart + dgi];
+      degraus.push({ papel: papeis[dgi], unidades: [1, 2, 4][dgi], h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev, evAlto: p.ev > 10, ancora: ancDoJogo(p) != null ? Math.round(ancDoJogo(p)) : null, col: colunaPct(d.gamesAll || games, p.horario, mkt) });
+    }
+    let ancoraDia = 0;
+    try { let soma = 0, nA = 0; for (const dg of degraus) { if (dg.ancora != null) { soma += dg.ancora; nA++; } } ancoraDia = nA ? Math.round(soma / nA) : 0; } catch (e) {}
     if (melhor && ancoraDia <= (melhor.ancoraDia || 0)) continue; // entre bolsoes, as MELHORES ancoras do dia
     melhor = { mkt, piso, liga, rel, pagando: cur, base: Math.round(base * 10) / 10, degraus, pulados, fib: fibInfo, ancoraDia, teste: false, taxas: taxaJanelas(d.gamesAll || games, mkt) };
   }
