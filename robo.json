@@ -132,19 +132,7 @@
    "premier": true,
    "copa": true
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "15:07",
-    "jogo": "Senegal x Espanha",
-    "odd": 4.75,
-    "unidades": 1,
-    "desde": 1784297053917
-   },
-   "iniciadoEm": 1784297053917
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784297753418,
    "premier": 1784296616615,
@@ -304,13 +292,19 @@
   }
  },
  "ambas": {
-  "saldo": 2,
-  "ciclos": 55,
-  "greens": 29,
+  "saldo": 3,
+  "ciclos": 56,
+  "greens": 30,
   "redsCiclo": 4,
   "aborts": 0,
   "descartes": 22,
   "historico": [
+   {
+    "quando": "2026-07-17T14:27:53.919Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Japão x Inglaterra @2 (tiro 2)"
+   },
    {
     "quando": "2026-07-17T13:37:15.917Z",
     "resultado": "GREEN",
@@ -424,38 +418,43 @@
     "resultado": "GREEN",
     "unidades": 0.8,
     "detalhe": "premier · Brighton x Wolverhampton @1.76 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-16T19:33:30.726Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "super · Agua Branca x Porto Alegre @2.15 (tiro 1)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "copa": true
+  },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "alvo": {
-    "h": "15:07",
-    "jogo": "Senegal x Espanha",
+    "h": "15:19",
+    "jogo": "Japão x Inglaterra",
     "odd": 2,
-    "unidades": 1,
-    "desde": 1784297054020
+    "unidades": 2,
+    "desde": 1784297753614
    },
-   "iniciadoEm": 1784297054020
+   "iniciadoEm": 1784297054020,
+   "tiros": [
+    {
+     "h": "15:07",
+     "jogo": "Senegal x Espanha",
+     "odd": 2,
+     "unidades": 1
+    }
+   ],
+   "semAlvoDesde": null
   },
   "cooldown": {
    "euro": 1784291155121,
    "super": 1784295435725,
    "premier": 1784293540915,
-   "copa": 1784290373819
+   "copa": 1784298473819
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
-   "2026-07-17": -3.9
+   "2026-07-17": -2.9
   }
  }
 }
