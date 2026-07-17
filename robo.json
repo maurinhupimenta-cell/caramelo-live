@@ -307,13 +307,19 @@
   }
  },
  "ambas": {
-  "saldo": 4.6,
-  "ciclos": 41,
-  "greens": 18,
+  "saldo": 5.9,
+  "ciclos": 42,
+  "greens": 19,
   "redsCiclo": 2,
   "aborts": 0,
   "descartes": 21,
   "historico": [
+   {
+    "quando": "2026-07-17T02:10:27.313Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "copa · Bélgica x Japão @2.07 (tiro 3)"
+   },
    {
     "quando": "2026-07-17T01:10:49.519Z",
     "resultado": "GREEN",
@@ -427,15 +433,11 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-16T04:37:06.054Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "copa": true
+  },
   "ciclo": {
    "liga": "copa",
    "degrau": 2,
@@ -468,11 +470,11 @@
    "euro": 1784250649415,
    "super": 1784230410533,
    "premier": 1784242967933,
-   "copa": 1784245408828
+   "copa": 1784254227123
   },
   "dias": {
    "2026-07-15": 2.2,
-   "2026-07-16": -1.6
+   "2026-07-16": -0.3
   }
  }
 }
