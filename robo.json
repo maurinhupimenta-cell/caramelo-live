@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -25.2,
-  "ciclos": 76,
+  "saldo": -32.2,
+  "ciclos": 77,
   "greens": 21,
-  "redsCiclo": 22,
+  "redsCiclo": 23,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-17T23:26:30.271Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-17T22:35:41.594Z",
     "resultado": "GREEN",
@@ -120,69 +126,22 @@
     "resultado": "GREEN",
     "unidades": 3.2,
     "detalhe": "premier · Leicester x Burnley @4.2 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-16T20:37:29.735Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "00:11",
-     "jogo": "Bélgica x Dinamarca",
-     "odd": 4.5
-    },
-    {
-     "h": "00:14",
-     "jogo": "Turquia x Alemanha",
-     "odd": 4.75
-    },
-    {
-     "h": "00:17",
-     "jogo": "Hungria x Itália",
-     "odd": 5
-    }
-   ],
-   "alvo": {
-    "h": "00:17",
-    "jogo": "Hungria x Itália",
-    "odd": 5,
-    "unidades": 4,
-    "desde": 1784330606375
-   },
-   "iniciadoEm": 1784329586278,
-   "tiros": [
-    {
-     "h": "00:11",
-     "jogo": "Bélgica x Dinamarca",
-     "odd": 4.5,
-     "unidades": 1
-    },
-    {
-     "h": "00:14",
-     "jogo": "Turquia x Alemanha",
-     "odd": 4.75,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "euro": true
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784297753418,
    "premier": 1784327741400,
-   "euro": 1784321610513,
+   "euro": 1784330790168,
    "super": 1784326408000
   },
   "dias": {
    "2026-07-15": -35,
    "2026-07-16": -10.6,
-   "2026-07-17": 21.7
+   "2026-07-17": 14.7
   }
  },
  "o25": {
