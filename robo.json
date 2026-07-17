@@ -295,7 +295,19 @@
   "consumidas": {
    "copa": true
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "alvo": {
+    "h": "14:48",
+    "jogo": "Tottenham x Palace",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1784295884017
+   },
+   "iniciadoEm": 1784295884017
+  },
   "cooldown": {
    "copa": 1784290553524,
    "premier": 1784276797122,
@@ -438,8 +450,7 @@
    }
   ],
   "consumidas": {
-   "euro": true,
-   "super": true
+   "euro": true
   },
   "ciclo": null,
   "cooldown": {
