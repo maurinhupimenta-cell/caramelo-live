@@ -1651,11 +1651,13 @@ function atualizaRoboMkt(mkt) {
       return !!casa && g2.slice(-480).some(x => x.casa === casa);
     };
     if (!L.ciclo) {
-      if (melhor && melhor.degraus && melhor.degraus[0] && pertenceALiga(melhor.liga, melhor.degraus[0].jogo)) {
-        const d0 = melhor.degraus[0];
-        L.ciclo = { liga: melhor.liga, degrau: 0, apostado: 0, alvo: { h: d0.h, jogo: d0.jogo, odd: d0.odd, unidades: 1, desde: Date.now() }, iniciadoEm: Date.now() };
+      if (melhor && melhor.degraus && melhor.degraus.length === 3 && pertenceALiga(melhor.liga, melhor.degraus[0].jogo)) {
+        // PLANO SELADO (regra do usuario): os 3 tiros sao travados JUNTOS na abertura - ex copa :10 :13 :16
+        const plano = melhor.degraus.map(dg => ({ h: dg.h, jogo: dg.jogo, odd: dg.odd }));
+        const d0 = plano[0];
+        L.ciclo = { liga: melhor.liga, degrau: 0, apostado: 0, plano, alvo: { h: d0.h, jogo: d0.jogo, odd: d0.odd, unidades: 1, desde: Date.now() }, iniciadoEm: Date.now() };
         salvaRoboLedger();
-        try { enviaPushRobo(`🤖 ROBÔ ${NMR[mkt]} ENTROU — ${melhor.liga.toUpperCase()} 🔥${melhor.rel}%`, `TIRO 1 · 1u · ${d0.h ? d0.h + " · " : ""}${d0.jogo} @${d0.odd}`, "robo-" + mkt); } catch (e) {}
+        try { enviaPushRobo(`🤖 ROBÔ ${NMR[mkt]} ENTROU — ${melhor.liga.toUpperCase()}`, `PLANO: T1 ${plano[0].h} @${plano[0].odd} → T2 ${plano[1].h} @${plano[1].odd} → T3 ${plano[2].h} @${plano[2].odd} · ${plano[0].jogo}`, "robo-" + mkt); } catch (e) {}
       }
       return;
     }
@@ -1701,7 +1703,10 @@ function atualizaRoboMkt(mkt) {
           registraCiclo(mkt, "RED_CICLO", -cR.apostado, `${cR.liga} · ciclo perdido (3 tiros)`);
           return;
         }
+        const pl = (L.ciclo.plano || [])[L.ciclo.degrau];
+        if (pl) L.ciclo.alvo = { h: pl.h, jogo: pl.jogo, odd: pl.odd, unidades: [1, 2, 4][L.ciclo.degrau] || 4, desde: Date.now() };
         salvaRoboLedger();
+        try { if (L.ciclo.alvo) enviaPushRobo(`🤖 ${NMR[mkt]} GALE ${L.ciclo.degrau} — ${L.ciclo.liga.toUpperCase()}`, `TIRO ${L.ciclo.degrau + 1} · ${L.ciclo.alvo.unidades}u · ${L.ciclo.alvo.h} · ${L.ciclo.alvo.jogo} @${L.ciclo.alvo.odd} (do plano)`, "robo-" + mkt); } catch (e) {}
       }
     }
     if (!L.ciclo.alvo) {
@@ -1719,6 +1724,7 @@ function atualizaRoboMkt(mkt) {
       const cand = evs2.find((p, i2) => i2 >= 1 && p.odd != null && pertenceALiga(L.ciclo.liga, p.nome)); // proximo da fila, sem pular
       if (cand) {
         L.ciclo.alvo = { h: cand.horario || "", jogo: cand.nome, odd: cand.odd, unidades: [1, 2, 4][L.ciclo.degrau] || 4, desde: Date.now() };
+        if (L.ciclo.plano && L.ciclo.plano[L.ciclo.degrau]) L.ciclo.plano[L.ciclo.degrau] = { h: L.ciclo.alvo.h, jogo: L.ciclo.alvo.jogo, odd: L.ciclo.alvo.odd };
         L.ciclo.semAlvoDesde = null;
         salvaRoboLedger();
         if (L.ciclo.degrau > 0) try { enviaPushRobo(`🤖 ${NMR[mkt]} GALE ${L.ciclo.degrau} — ${L.ciclo.liga.toUpperCase()}`, `TIRO ${L.ciclo.degrau + 1} · ${[1, 2, 4][L.ciclo.degrau]}u · ${cand.horario ? cand.horario + " · " : ""}${cand.nome} @${cand.odd}`, "robo-" + mkt); } catch (e) {}
@@ -1755,7 +1761,7 @@ app.get("/api/robo", (req, res) => {
             if (b2 && c2 != null) rel = Math.round(c2 / b2 * 100);
           }
         } catch (e) {}
-        melhor = { cicloView: { liga: L.ciclo.liga, rel, degrau: L.ciclo.degrau, apostado: L.ciclo.apostado, tiros: L.ciclo.tiros || [], alvo: L.ciclo.alvo ? { h: L.ciclo.alvo.h, jogo: L.ciclo.alvo.jogo, odd: L.ciclo.alvo.odd, unidades: L.ciclo.alvo.unidades } : null } };
+        melhor = { cicloView: { liga: L.ciclo.liga, rel, degrau: L.ciclo.degrau, apostado: L.ciclo.apostado, plano: L.ciclo.plano || null, tiros: L.ciclo.tiros || [], alvo: L.ciclo.alvo ? { h: L.ciclo.alvo.h, jogo: L.ciclo.alvo.jogo, odd: L.ciclo.alvo.odd, unidades: L.ciclo.alvo.unidades } : null } };
       } else {
         melhor = montaRobo(mkt) || {};
         if (melhor.liga) melhor.previa = true;
