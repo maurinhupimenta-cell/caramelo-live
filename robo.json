@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -33.4,
-  "ciclos": 70,
-  "greens": 17,
+  "saldo": -29.6,
+  "ciclos": 71,
+  "greens": 18,
   "redsCiclo": 20,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-17T16:05:56.520Z",
+    "resultado": "GREEN",
+    "unidades": 3.8,
+    "detalhe": "premier · Southampton x Liverpool @4.75 (tiro 1)"
+   },
    {
     "quando": "2026-07-17T15:08:56.620Z",
     "resultado": "RED_CICLO",
@@ -120,38 +126,22 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-16T16:00:12.979Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "16:57",
-    "jogo": "Southampton x Liverpool",
-    "odd": 4.75,
-    "unidades": 1,
-    "desde": 1784303640221
-   },
-   "iniciadoEm": 1784303640221
+  "consumidas": {
+   "premier": true
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784297753418,
-   "premier": 1784296616615,
+   "premier": 1784304356416,
    "euro": 1784283955214,
    "super": 1784300936518
   },
   "dias": {
    "2026-07-15": -35,
    "2026-07-16": -10.6,
-   "2026-07-17": 13.5
+   "2026-07-17": 17.3
   }
  },
  "o25": {
@@ -325,13 +315,19 @@
   }
  },
  "ambas": {
-  "saldo": 5,
-  "ciclos": 58,
-  "greens": 32,
+  "saldo": 6,
+  "ciclos": 59,
+  "greens": 33,
   "redsCiclo": 4,
   "aborts": 0,
   "descartes": 22,
   "historico": [
+   {
+    "quando": "2026-07-17T16:05:56.717Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Southampton x Liverpool @2 (tiro 1)"
+   },
    {
     "quando": "2026-07-17T15:22:15.917Z",
     "resultado": "GREEN",
@@ -445,38 +441,20 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "copa · Panamá x Croácia @2.1 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-16T23:02:48.125Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "premier · Brentford x Aston @2.05 (tiro 2)"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "16:57",
-    "jogo": "Southampton x Liverpool",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1784303640418
-   },
-   "iniciadoEm": 1784303640418
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784291155121,
    "super": 1784301735817,
-   "premier": 1784299851425,
+   "premier": 1784304356522,
    "copa": 1784298473819
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
-   "2026-07-17": -0.9
+   "2026-07-17": 0.1
   }
  }
 }
