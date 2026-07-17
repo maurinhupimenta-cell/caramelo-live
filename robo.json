@@ -274,16 +274,25 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "alvo": {
-    "h": "18:03",
-    "jogo": "West Ham x Leicester",
-    "odd": 2.55,
-    "unidades": 1,
-    "desde": 1784307585625
+    "h": "18:15",
+    "jogo": "Brighton x City",
+    "odd": 1.95,
+    "unidades": 2,
+    "desde": 1784308297922
    },
-   "iniciadoEm": 1784307585625
+   "iniciadoEm": 1784307585625,
+   "tiros": [
+    {
+     "h": "18:03",
+     "jogo": "West Ham x Leicester",
+     "odd": 2.55,
+     "unidades": 1
+    }
+   ],
+   "semAlvoDesde": null
   },
   "cooldown": {
    "copa": 1784290553524,
@@ -431,7 +440,13 @@
    "liga": "premier",
    "degrau": 2,
    "apostado": 3,
-   "alvo": null,
+   "alvo": {
+    "h": "18:12",
+    "jogo": "Leicester x West Ham",
+    "odd": 2.15,
+    "unidades": 4,
+    "desde": 1784308118625
+   },
    "iniciadoEm": 1784306677818,
    "tiros": [
     {
