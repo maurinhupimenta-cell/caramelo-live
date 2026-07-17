@@ -131,19 +131,7 @@
   "consumidas": {
    "premier": true
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "03:54",
-    "jogo": "United x Liverpool",
-    "odd": 4.33,
-    "unidades": 1,
-    "desde": 1784256643211
-   },
-   "iniciadoEm": 1784256643211
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784234249433,
    "premier": 1784257359622,
@@ -288,16 +276,25 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "alvo": {
-    "h": "04:03",
-    "jogo": "Southampton x Liverpool",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1784257241923
+    "h": "04:15",
+    "jogo": "Burnley x Islington",
+    "odd": 2.1,
+    "unidades": 2,
+    "desde": 1784257914317
    },
-   "iniciadoEm": 1784257241923
+   "iniciadoEm": 1784257241923,
+   "tiros": [
+    {
+     "h": "04:03",
+     "jogo": "Southampton x Liverpool",
+     "odd": 2.3,
+     "unidades": 1
+    }
+   ],
+   "semAlvoDesde": null
   },
   "cooldown": {
    "copa": 1784246336717,
