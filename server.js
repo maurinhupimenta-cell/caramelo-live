@@ -1511,6 +1511,7 @@ const ROBO_MKTS = ["o35", "o25", "ambas"];
 const ROBO_PISO = { o35: 3.6, o25: 2.0, ambas: 2.0 };
 function roboVazio() { return { saldo: 0, ciclos: 0, greens: 0, redsCiclo: 0, aborts: 0, descartes: 0, historico: [], consumidas: {}, ciclo: null }; }
 let roboState = { o35: roboVazio(), o25: roboVazio(), ambas: roboVazio() };
+const fibPrev = {}; // retracao anterior por liga|mkt (para detectar o TOQUE no bolsao)
 async function salvaRoboLedger() {
   if (!GH_T) return;
   try {
@@ -1589,9 +1590,17 @@ function montaRobo(mkt) {
         const curF = sr[sr.length - 1];
         if (amp >= 8 && iMin < iMax) {
           const retr = (hi - curF) / amp * 100;
-          const retomou = sr.length >= 3 && sr[sr.length - 1] > sr[sr.length - 2] && sr[sr.length - 2] > sr[sr.length - 3]; // SUBIDA CONFIRMADA: 2 pontos de alta
-          if (retr >= 38.2 && retr <= 61.8 && retomou) { noBolsao = true; fibInfo = { retr: Math.round(retr), lo, hi }; }
-        }
+          const key2 = liga + "|" + mkt;
+          const prevR = fibPrev[key2];
+          fibPrev[key2] = retr;
+          // ENTRADA NO TOQUE (timing do usuario): dispara quando a retracao CRUZA para dentro
+          // da faixa 38.2-61.8 (vindo de cima ou voltando de baixo) - antecipa a virada em vez
+          // de confirmar depois dela (com a cortina da fonte, esperar subida = chegar tarde)
+          if (retr >= 38.2 && retr <= 61.8) {
+            const tocouAgora = prevR == null || prevR < 38.2 || prevR > 61.8;
+            if (tocouAgora) { noBolsao = true; fibInfo = { retr: Math.round(retr), lo, hi }; }
+          }
+        } else { fibPrev[liga + "|" + mkt] = null; }
       }
     } catch (e) {}
     if (L.consumidas[liga]) {
