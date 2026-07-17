@@ -277,34 +277,7 @@
    "premier": true,
    "super": true
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "alvo": {
-    "h": "05:07",
-    "jogo": "Agua Branca x Medellin",
-    "odd": 2.3,
-    "unidades": 4,
-    "desde": 1784261068912
-   },
-   "iniciadoEm": 1784259628320,
-   "tiros": [
-    {
-     "h": "04:43",
-     "jogo": "Santiago x Porto Alegre",
-     "odd": 2.4,
-     "unidades": 1
-    },
-    {
-     "h": "04:55",
-     "jogo": "Avellaneda x Medellin",
-     "odd": 2.4,
-     "unidades": 2
-    }
-   ],
-   "semAlvoDesde": null
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784246336717,
    "premier": 1784259394425,
@@ -318,13 +291,19 @@
   }
  },
  "ambas": {
-  "saldo": -1.1,
-  "ciclos": 43,
-  "greens": 19,
+  "saldo": -0.2,
+  "ciclos": 44,
+  "greens": 20,
   "redsCiclo": 3,
   "aborts": 0,
   "descartes": 21,
   "historico": [
+   {
+    "quando": "2026-07-17T04:22:29.621Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Montevideo x Agua Branca @1.85 (tiro 1)"
+   },
    {
     "quando": "2026-07-17T04:14:47.717Z",
     "resultado": "RED_CICLO",
@@ -438,15 +417,11 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-16T05:17:05.214Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Watford x Leicester @2 (tiro 1)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "super": true
+  },
   "ciclo": {
    "liga": "super",
    "degrau": 0,
@@ -462,14 +437,14 @@
   },
   "cooldown": {
    "euro": 1784250649415,
-   "super": 1784230410533,
+   "super": 1784262149517,
    "premier": 1784261687612,
    "copa": 1784254227123
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
-   "2026-07-17": -7
+   "2026-07-17": -6.1
   }
  }
 }
