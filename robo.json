@@ -299,7 +299,13 @@
    "liga": "euro",
    "degrau": 2,
    "apostado": 3,
-   "alvo": null,
+   "alvo": {
+    "h": "14:02",
+    "jogo": "Dinamarca x Ucrânia",
+    "odd": 2.4,
+    "unidades": 4,
+    "desde": 1784293177321
+   },
    "iniciadoEm": 1784291694317,
    "tiros": [
     {
@@ -330,13 +336,19 @@
   }
  },
  "ambas": {
-  "saldo": 7.9,
-  "ciclos": 53,
+  "saldo": 0.9,
+  "ciclos": 54,
   "greens": 28,
-  "redsCiclo": 3,
+  "redsCiclo": 4,
   "aborts": 0,
   "descartes": 22,
   "historico": [
+   {
+    "quando": "2026-07-17T13:05:41.019Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-17T12:25:55.312Z",
     "resultado": "GREEN",
@@ -450,29 +462,18 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · Argentina x Coreia do Sul @2.05 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-16T18:35:30.433Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "euro · Inglaterra x Geórgia @2.05 (tiro 2)"
    }
   ],
   "consumidas": {
    "copa": true,
-   "euro": true
+   "euro": true,
+   "premier": true
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "alvo": {
-    "h": "13:57",
-    "jogo": "Leicester x Tottenham",
-    "odd": 2.1,
-    "unidades": 4,
-    "desde": 1784292824914
-   },
+   "degrau": 3,
+   "apostado": 7,
+   "alvo": null,
    "iniciadoEm": 1784291400518,
    "tiros": [
     {
@@ -486,6 +487,12 @@
      "jogo": "Watford x Tottenham",
      "odd": 2.1,
      "unidades": 2
+    },
+    {
+     "h": "13:57",
+     "jogo": "Leicester x Tottenham",
+     "odd": 2.1,
+     "unidades": 4
     }
    ],
    "semAlvoDesde": null
@@ -493,13 +500,13 @@
   "cooldown": {
    "euro": 1784291155121,
    "super": 1784286075317,
-   "premier": 1784284727419,
+   "premier": 1784293540915,
    "copa": 1784290373819
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
-   "2026-07-17": 2
+   "2026-07-17": -5
   }
  }
 }
