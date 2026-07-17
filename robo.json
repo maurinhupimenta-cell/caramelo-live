@@ -307,13 +307,19 @@
   }
  },
  "ambas": {
-  "saldo": 7.4,
-  "ciclos": 60,
+  "saldo": 0.4,
+  "ciclos": 61,
   "greens": 34,
-  "redsCiclo": 4,
+  "redsCiclo": 5,
   "aborts": 0,
   "descartes": 22,
   "historico": [
+   {
+    "quando": "2026-07-17T17:20:43.021Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-17T16:38:11.317Z",
     "resultado": "GREEN",
@@ -427,26 +433,16 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "copa · Bélgica x Japão @2.07 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-17T01:10:49.519Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "euro · Croácia x França @1.85 (tiro 2)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "premier": true
+  },
   "ciclo": {
    "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "alvo": {
-    "h": "18:12",
-    "jogo": "Leicester x West Ham",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1784308118625
-   },
+   "degrau": 3,
+   "apostado": 7,
+   "alvo": null,
    "iniciadoEm": 1784306677818,
    "tiros": [
     {
@@ -460,6 +456,12 @@
      "jogo": "Watford x Brentford",
      "odd": 2,
      "unidades": 2
+    },
+    {
+     "h": "18:12",
+     "jogo": "Leicester x West Ham",
+     "odd": 2.15,
+     "unidades": 4
     }
    ],
    "semAlvoDesde": null
@@ -467,13 +469,13 @@
   "cooldown": {
    "euro": 1784306291125,
    "super": 1784301735817,
-   "premier": 1784304356522,
+   "premier": 1784308842916,
    "copa": 1784298473819
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
-   "2026-07-17": 1.5
+   "2026-07-17": -5.5
   }
  }
 }
