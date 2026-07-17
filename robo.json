@@ -286,13 +286,19 @@
   }
  },
  "ambas": {
-  "saldo": 1.7,
-  "ciclos": 62,
-  "greens": 35,
+  "saldo": 2.6,
+  "ciclos": 63,
+  "greens": 36,
   "redsCiclo": 5,
   "aborts": 0,
   "descartes": 22,
   "historico": [
+   {
+    "quando": "2026-07-17T18:56:28.016Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Santos x Agua Branca @1.95 (tiro 2)"
+   },
    {
     "quando": "2026-07-17T18:23:29.621Z",
     "resultado": "GREEN",
@@ -406,40 +412,20 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "super · Montevideo x Agua Branca @1.85 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-17T04:14:47.717Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "alvo": null,
-   "iniciadoEm": 1784313089521,
-   "tiros": [
-    {
-     "h": "19:34",
-     "jogo": "Rio de Janeiro x Santos",
-     "odd": 2.05,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784312609520,
-   "super": 1784301735817,
+   "super": 1784314587616,
    "premier": 1784308842916,
    "copa": 1784298473819
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
-   "2026-07-17": -4.2
+   "2026-07-17": -3.3
   }
  }
 }
