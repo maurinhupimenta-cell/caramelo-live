@@ -293,7 +293,19 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "alvo": {
+    "h": "11:07",
+    "jogo": "Santos x Avellaneda",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1784282655817
+   },
+   "iniciadoEm": 1784282655817
+  },
   "cooldown": {
    "copa": 1784264309822,
    "premier": 1784276797122,
@@ -438,16 +450,25 @@
   "consumidas": {},
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "alvo": {
-    "h": "10:53",
-    "jogo": "Eslovênia x Itália",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1784281794712
+    "h": "11:05",
+    "jogo": "Romênia x Suíça",
+    "odd": 1.85,
+    "unidades": 2,
+    "desde": 1784282514816
    },
-   "iniciadoEm": 1784281794712
+   "iniciadoEm": 1784281794712,
+   "tiros": [
+    {
+     "h": "10:53",
+     "jogo": "Eslovênia x Itália",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ],
+   "semAlvoDesde": null
   },
   "cooldown": {
    "euro": 1784250649415,
