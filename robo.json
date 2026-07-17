@@ -143,13 +143,19 @@
   }
  },
  "o25": {
-  "saldo": -38.1,
-  "ciclos": 56,
+  "saldo": -45.1,
+  "ciclos": 57,
   "greens": 25,
-  "redsCiclo": 11,
+  "redsCiclo": 12,
   "aborts": 0,
   "descartes": 20,
   "historico": [
+   {
+    "quando": "2026-07-17T16:18:29.813Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-17T15:35:14.816Z",
     "resultado": "GREEN",
@@ -263,26 +269,16 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "premier · Liverpool x City @2.07 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-16T20:39:31.727Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "euro": true
+  },
   "ciclo": {
    "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "alvo": {
-    "h": "17:08",
-    "jogo": "Hungria x Turquia",
-    "odd": 2.6,
-    "unidades": 4,
-    "desde": 1784304328915
-   },
+   "degrau": 3,
+   "apostado": 7,
+   "alvo": null,
    "iniciadoEm": 1784301056216,
    "tiros": [
     {
@@ -296,6 +292,12 @@
      "jogo": "Itália x Albânia",
      "odd": 2.7,
      "unidades": 2
+    },
+    {
+     "h": "17:08",
+     "jogo": "Hungria x Turquia",
+     "odd": 2.6,
+     "unidades": 4
     }
    ],
    "semAlvoDesde": null
@@ -303,13 +305,13 @@
   "cooldown": {
    "copa": 1784290553524,
    "premier": 1784296616815,
-   "euro": 1784302514715,
+   "euro": 1784305109618,
    "super": 1784300936713
   },
   "dias": {
    "2026-07-15": -19.6,
    "2026-07-16": -14.2,
-   "2026-07-17": -6.7
+   "2026-07-17": -13.7
   }
  },
  "ambas": {
