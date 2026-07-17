@@ -1590,17 +1590,11 @@ function montaRobo(mkt) {
         const curF = sr[sr.length - 1];
         if (amp >= 8 && iMin < iMax) {
           const retr = (hi - curF) / amp * 100;
-          const key2 = liga + "|" + mkt;
-          const prevR = fibPrev[key2];
-          fibPrev[key2] = retr;
-          // ENTRADA NO TOQUE (timing do usuario): dispara quando a retracao CRUZA para dentro
-          // da faixa 38.2-61.8 (vindo de cima ou voltando de baixo) - antecipa a virada em vez
-          // de confirmar depois dela (com a cortina da fonte, esperar subida = chegar tarde)
-          if (retr >= 38.2 && retr <= 61.8) {
-            const tocouAgora = prevR == null || prevR < 38.2 || prevR > 61.8;
-            if (tocouAgora) { noBolsao = true; fibInfo = { retr: Math.round(retr), lo, hi }; }
-          }
-        } else { fibPrev[liga + "|" + mkt] = null; }
+          // REGRA DEFINITIVA: dentro do bolsao (38.2-61.8) + PRIMEIRO ponto de VIRADA pra cima.
+          // JAMAIS com o grafico caindo; e sem esperar confirmacao longa (que chega tarde).
+          const virouAgora = sr[sr.length - 1] > sr[sr.length - 2];
+          if (retr >= 38.2 && retr <= 61.8 && virouAgora) { noBolsao = true; fibInfo = { retr: Math.round(retr), lo, hi }; }
+        }
       }
     } catch (e) {}
     if (L.consumidas[liga]) {
