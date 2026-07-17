@@ -280,7 +280,13 @@
    "liga": "super",
    "degrau": 2,
    "apostado": 3,
-   "alvo": null,
+   "alvo": {
+    "h": "05:07",
+    "jogo": "Agua Branca x Medellin",
+    "odd": 2.3,
+    "unidades": 4,
+    "desde": 1784261068912
+   },
    "iniciadoEm": 1784259628320,
    "tiros": [
     {
@@ -311,13 +317,19 @@
   }
  },
  "ambas": {
-  "saldo": 5.9,
-  "ciclos": 42,
+  "saldo": -1.1,
+  "ciclos": 43,
   "greens": 19,
-  "redsCiclo": 2,
+  "redsCiclo": 3,
   "aborts": 0,
   "descartes": 21,
   "historico": [
+   {
+    "quando": "2026-07-17T04:14:47.717Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-17T02:10:27.313Z",
     "resultado": "GREEN",
@@ -431,52 +443,32 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · Watford x Leicester @2 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-16T04:56:58.651Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {},
   "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
    "alvo": {
-    "h": "05:06",
-    "jogo": "Palace x Watford",
-    "odd": 1.98,
-    "unidades": 4,
-    "desde": 1784260955315
+    "h": "05:13",
+    "jogo": "Montevideo x Agua Branca",
+    "odd": 1.85,
+    "unidades": 1,
+    "desde": 1784261688717
    },
-   "iniciadoEm": 1784259394711,
-   "tiros": [
-    {
-     "h": "04:39",
-     "jogo": "Palace x Islington",
-     "odd": 1.93,
-     "unidades": 1
-    },
-    {
-     "h": "04:54",
-     "jogo": "Everton x West Ham",
-     "odd": 2.07,
-     "unidades": 2
-    }
-   ],
-   "semAlvoDesde": null
+   "iniciadoEm": 1784261688717
   },
   "cooldown": {
    "euro": 1784250649415,
    "super": 1784230410533,
-   "premier": 1784242967933,
+   "premier": 1784261687612,
    "copa": 1784254227123
   },
   "dias": {
    "2026-07-15": 2.2,
-   "2026-07-16": -0.3
+   "2026-07-16": -0.3,
+   "2026-07-17": -7
   }
  }
 }
