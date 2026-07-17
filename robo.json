@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -37.2,
-  "ciclos": 67,
-  "greens": 15,
+  "saldo": -30.2,
+  "ciclos": 68,
+  "greens": 16,
   "redsCiclo": 19,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-17T13:56:56.811Z",
+    "resultado": "GREEN",
+    "unidades": 7,
+    "detalhe": "premier · Tottenham x Palace @5 (tiro 2)"
+   },
    {
     "quando": "2026-07-17T13:22:15.714Z",
     "resultado": "RED_CICLO",
@@ -120,15 +126,11 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-16T13:51:53.217Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "premier": true
+  },
   "ciclo": {
    "liga": "premier",
    "degrau": 1,
@@ -153,14 +155,14 @@
   },
   "cooldown": {
    "copa": 1784264309716,
-   "premier": 1784273743913,
+   "premier": 1784296616615,
    "euro": 1784283955214,
    "super": 1784294535524
   },
   "dias": {
    "2026-07-15": -35,
    "2026-07-16": -10.6,
-   "2026-07-17": 9.7
+   "2026-07-17": 16.7
   }
  },
  "o25": {
