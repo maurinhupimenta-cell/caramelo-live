@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -36.6,
-  "ciclos": 72,
+  "saldo": -43.6,
+  "ciclos": 73,
   "greens": 18,
-  "redsCiclo": 21,
+  "redsCiclo": 22,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-17T21:04:50.615Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo de 3 tiros fechado no boot (restart no meio do fechamento)"
+   },
    {
     "quando": "2026-07-17T20:53:30.617Z",
     "resultado": "RED_CICLO",
@@ -120,48 +126,10 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-16T16:30:28.178Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 3,
-   "apostado": 7,
-   "alvo": {
-    "h": "21:59",
-    "jogo": "Albânia x Dinamarca",
-    "odd": 6,
-    "desde": 1784321894413
-   },
-   "iniciadoEm": 1784319447623,
-   "tiros": [
-    {
-     "h": "21:20",
-     "jogo": "Alemanha x Croácia",
-     "odd": 4.2,
-     "unidades": 1
-    },
-    {
-     "h": "21:32",
-     "jogo": "Eslováquia x Espanha",
-     "odd": 4,
-     "unidades": 2
-    },
-    {
-     "h": "21:44",
-     "jogo": "Dinamarca x Países Baixos",
-     "odd": 4.2,
-     "unidades": 4
-    }
-   ],
-   "semAlvoDesde": null
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784297753418,
    "premier": 1784304356416,
@@ -171,7 +139,7 @@
   "dias": {
    "2026-07-15": -35,
    "2026-07-16": -10.6,
-   "2026-07-17": 10.3
+   "2026-07-17": 3.3
   }
  },
  "o25": {
