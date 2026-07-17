@@ -1552,6 +1552,8 @@ async function carregaRobo() {
   for (const m of ROBO_MKTS) {
     const c = roboState[m].ciclo;
     if (c && c.alvo && !c.alvo.desde) { registraCiclo(m, "DESCARTADO", 0, `${c.liga} · ciclo antigo sem carimbo anulado no boot`); roboState[m].ciclo = null; }
+    const c2 = roboState[m].ciclo;
+    if (c2 && c2.degrau >= 3) { roboState[m].ciclo = null; registraCiclo(m, "RED_CICLO", -(c2.apostado || 7), `${c2.liga} · ciclo de 3 tiros fechado no boot (restart no meio do fechamento)`); }
   }
 }
 carregaRobo();
@@ -1653,7 +1655,7 @@ function atualizaRoboMkt(mkt) {
         const d0 = melhor.degraus[0];
         L.ciclo = { liga: melhor.liga, degrau: 0, apostado: 0, alvo: { h: d0.h, jogo: d0.jogo, odd: d0.odd, unidades: 1, desde: Date.now() }, iniciadoEm: Date.now() };
         salvaRoboLedger();
-        enviaPushRobo(`🤖 ROBÔ ${NMR[mkt]} ENTROU — ${melhor.liga.toUpperCase()} 🔥${melhor.rel}%`, `TIRO 1 · 1u · ${d0.h ? d0.h + " · " : ""}${d0.jogo} @${d0.odd}`, "robo-" + mkt);
+        try { enviaPushRobo(`🤖 ROBÔ ${NMR[mkt]} ENTROU — ${melhor.liga.toUpperCase()} 🔥${melhor.rel}%`, `TIRO 1 · 1u · ${d0.h ? d0.h + " · " : ""}${d0.jogo} @${d0.odd}`, "robo-" + mkt); } catch (e) {}
       }
       return;
     }
@@ -1681,9 +1683,9 @@ function atualizaRoboMkt(mkt) {
           const lucro = Math.round((L.ciclo.alvo.unidades * L.ciclo.alvo.odd - (L.ciclo.apostado + L.ciclo.alvo.unidades)) * 10) / 10;
           L.consumidas = L.consumidas || {}; L.consumidas[L.ciclo.liga] = true;
           L.cooldown = L.cooldown || {}; L.cooldown[L.ciclo.liga] = Date.now();
-          enviaPushRobo(`🟢 ${NMR[mkt]} GREEN +${lucro}u — ${L.ciclo.liga.toUpperCase()}`, `${L.ciclo.alvo.jogo} @${L.ciclo.alvo.odd} (tiro ${L.ciclo.degrau + 1}) · ciclo encerrado`, "robo-" + mkt);
-          registraCiclo(mkt, "GREEN", lucro, `${L.ciclo.liga} · ${L.ciclo.alvo.jogo} @${L.ciclo.alvo.odd} (tiro ${L.ciclo.degrau + 1})`);
-          L.ciclo = null;
+          const cG = L.ciclo; L.ciclo = null; // anula ANTES: nenhum save intermediario persiste ciclo fechado
+          try { enviaPushRobo(`🟢 ${NMR[mkt]} GREEN +${lucro}u — ${cG.liga.toUpperCase()}`, `${cG.alvo.jogo} @${cG.alvo.odd} (tiro ${cG.degrau + 1}) · ciclo encerrado`, "robo-" + mkt); } catch (e) {}
+          registraCiclo(mkt, "GREEN", lucro, `${cG.liga} · ${cG.alvo.jogo} @${cG.alvo.odd} (tiro ${cG.degrau + 1})`);
           return;
         }
         L.ciclo.tiros = L.ciclo.tiros || [];
@@ -1692,27 +1694,34 @@ function atualizaRoboMkt(mkt) {
         L.ciclo.degrau++;
         L.ciclo.alvo = null;
         if (L.ciclo.degrau >= 3) {
-          L.consumidas = L.consumidas || {}; L.consumidas[L.ciclo.liga] = true;
-          L.cooldown = L.cooldown || {}; L.cooldown[L.ciclo.liga] = Date.now();
-          enviaPushRobo(`🔴 ${NMR[mkt]} ciclo perdido −${L.ciclo.apostado}u — ${L.ciclo.liga.toUpperCase()}`, `3 tiros sem green · descanso de 30min na liga`, "robo-" + mkt);
-          registraCiclo(mkt, "RED_CICLO", -L.ciclo.apostado, `${L.ciclo.liga} · ciclo perdido (3 tiros)`);
-          L.ciclo = null;
+          const cR = L.ciclo; L.ciclo = null; // anula ANTES do registro (blindagem contra restart no meio)
+          L.consumidas = L.consumidas || {}; L.consumidas[cR.liga] = true;
+          L.cooldown = L.cooldown || {}; L.cooldown[cR.liga] = Date.now();
+          try { enviaPushRobo(`🔴 ${NMR[mkt]} ciclo perdido −${cR.apostado}u — ${cR.liga.toUpperCase()}`, `3 tiros sem green · descanso de 30min na liga`, "robo-" + mkt); } catch (e) {}
+          registraCiclo(mkt, "RED_CICLO", -cR.apostado, `${cR.liga} · ciclo perdido (3 tiros)`);
           return;
         }
         salvaRoboLedger();
       }
     }
     if (!L.ciclo.alvo) {
+      if (L.ciclo.degrau >= 3) { // zumbi de degrau 3 (restart no meio do fechamento): fecha como ciclo perdido
+        const cZ = L.ciclo; L.ciclo = null;
+        L.consumidas = L.consumidas || {}; L.consumidas[cZ.liga] = true;
+        L.cooldown = L.cooldown || {}; L.cooldown[cZ.liga] = Date.now();
+        registraCiclo(mkt, "RED_CICLO", -(cZ.apostado || 7), `${cZ.liga} · ciclo perdido (3 tiros, fechado pos-reinicio)`);
+        return;
+      }
       // COMECOU, TERMINA (regra do usuario): o ciclo cumpre os 3 tiros mesmo se a janela fechar.
       // O proximo degrau vem da PROPRIA liga do ciclo: primeiro jogo futuro com odd no piso.
       const evs2 = (d.upcoming && d.upcoming[mkt]) || [];
       // pula o jogo iminente (indice 0): alvo novo sempre com folga de ~3min para dar tempo de acompanhar
       const cand = evs2.find((p, i2) => i2 >= 1 && p.odd != null && pertenceALiga(L.ciclo.liga, p.nome)); // proximo da fila, sem pular
       if (cand) {
-        L.ciclo.alvo = { h: cand.horario || "", jogo: cand.nome, odd: cand.odd, unidades: [1, 2, 4][L.ciclo.degrau], desde: Date.now() };
+        L.ciclo.alvo = { h: cand.horario || "", jogo: cand.nome, odd: cand.odd, unidades: [1, 2, 4][L.ciclo.degrau] || 4, desde: Date.now() };
         L.ciclo.semAlvoDesde = null;
         salvaRoboLedger();
-        if (L.ciclo.degrau > 0) enviaPushRobo(`🤖 ${NMR[mkt]} GALE ${L.ciclo.degrau} — ${L.ciclo.liga.toUpperCase()}`, `TIRO ${L.ciclo.degrau + 1} · ${[1, 2, 4][L.ciclo.degrau]}u · ${cand.horario ? cand.horario + " · " : ""}${cand.nome} @${cand.odd}`, "robo-" + mkt);
+        if (L.ciclo.degrau > 0) try { enviaPushRobo(`🤖 ${NMR[mkt]} GALE ${L.ciclo.degrau} — ${L.ciclo.liga.toUpperCase()}`, `TIRO ${L.ciclo.degrau + 1} · ${[1, 2, 4][L.ciclo.degrau]}u · ${cand.horario ? cand.horario + " · " : ""}${cand.nome} @${cand.odd}`, "robo-" + mkt); } catch (e) {}
       } else {
         // seguranca: sem candidato no piso por 20min (liga parada/sem odds) -> encerra com o apostado
         if (!L.ciclo.semAlvoDesde) { L.ciclo.semAlvoDesde = Date.now(); salvaRoboLedger(); }
