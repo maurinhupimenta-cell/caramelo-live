@@ -305,13 +305,19 @@
   }
  },
  "ambas": {
-  "saldo": 4,
-  "ciclos": 57,
-  "greens": 31,
+  "saldo": 5,
+  "ciclos": 58,
+  "greens": 32,
   "redsCiclo": 4,
   "aborts": 0,
   "descartes": 22,
   "historico": [
+   {
+    "quando": "2026-07-17T15:22:15.917Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Lima x Santos @1.98 (tiro 2)"
+   },
    {
     "quando": "2026-07-17T14:50:51.612Z",
     "resultado": "GREEN",
@@ -425,16 +431,11 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "premier · Brentford x Aston @2.05 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-16T22:15:29.827Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "euro · Bélgica x Suíça @1.86 (tiro 2)"
    }
   ],
   "consumidas": {
-   "premier": true
+   "premier": true,
+   "super": true
   },
   "ciclo": {
    "liga": "super",
@@ -460,14 +461,14 @@
   },
   "cooldown": {
    "euro": 1784291155121,
-   "super": 1784295435725,
+   "super": 1784301735817,
    "premier": 1784299851425,
    "copa": 1784298473819
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
-   "2026-07-17": -1.9
+   "2026-07-17": -0.9
   }
  }
 }
