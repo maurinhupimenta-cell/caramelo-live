@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -39.2,
-  "ciclos": 65,
-  "greens": 14,
+  "saldo": -30.2,
+  "ciclos": 66,
+  "greens": 15,
   "redsCiclo": 18,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-17T10:25:55.318Z",
+    "resultado": "GREEN",
+    "unidades": 9,
+    "detalhe": "euro · Suíça x Portugal @4 (tiro 3)"
+   },
    {
     "quando": "2026-07-17T07:35:44.017Z",
     "resultado": "GREEN",
@@ -120,53 +126,20 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-16T05:18:29.727Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "alvo": {
-    "h": "11:17",
-    "jogo": "Suíça x Portugal",
-    "odd": 4,
-    "unidades": 4,
-    "desde": 1784283235317
-   },
-   "iniciadoEm": 1784281794518,
-   "tiros": [
-    {
-     "h": "10:53",
-     "jogo": "Eslovênia x Itália",
-     "odd": 5.5,
-     "unidades": 1
-    },
-    {
-     "h": "11:05",
-     "jogo": "Romênia x Suíça",
-     "odd": 3.8,
-     "unidades": 2
-    }
-   ],
-   "semAlvoDesde": null
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784264309716,
    "premier": 1784273743913,
-   "euro": 1784255368222,
+   "euro": 1784283955214,
    "super": 1784270055524
   },
   "dias": {
    "2026-07-15": -35,
    "2026-07-16": -10.6,
-   "2026-07-17": 7.7
+   "2026-07-17": 16.7
   }
  },
  "o25": {
@@ -334,13 +307,19 @@
   }
  },
  "ambas": {
-  "saldo": 3.1,
-  "ciclos": 48,
-  "greens": 23,
+  "saldo": 3.6,
+  "ciclos": 49,
+  "greens": 24,
   "redsCiclo": 3,
   "aborts": 0,
   "descartes": 22,
   "historico": [
+   {
+    "quando": "2026-07-17T10:25:55.517Z",
+    "resultado": "GREEN",
+    "unidades": 0.5,
+    "detalhe": "euro · Suíça x Portugal @1.87 (tiro 3)"
+   },
    {
     "quando": "2026-07-17T09:07:16.411Z",
     "resultado": "GREEN",
@@ -454,45 +433,12 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-16T14:18:12.317Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "super · Sao Paulo x La Plata @2.02 (tiro 1)"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "alvo": {
-    "h": "11:17",
-    "jogo": "Suíça x Portugal",
-    "odd": 1.87,
-    "unidades": 4,
-    "desde": 1784283235513
-   },
-   "iniciadoEm": 1784281794712,
-   "tiros": [
-    {
-     "h": "10:53",
-     "jogo": "Eslovênia x Itália",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "11:05",
-     "jogo": "Romênia x Suíça",
-     "odd": 1.85,
-     "unidades": 2
-    }
-   ],
-   "semAlvoDesde": null
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784250649415,
+   "euro": 1784283955412,
    "super": 1784279236013,
    "premier": 1784277704115,
    "copa": 1784254227123
@@ -500,7 +446,7 @@
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
-   "2026-07-17": -2.8
+   "2026-07-17": -2.3
   }
  }
 }
