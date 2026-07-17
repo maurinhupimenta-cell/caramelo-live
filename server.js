@@ -1579,7 +1579,7 @@ function montaRobo(mkt) {
     // RETRAIDA entre 38.2% e 61.8% do balanco, JA RETOMANDO a subida
     let noBolsao = false, fibInfo = null;
     try {
-      const sr = sf.slice(-20);
+      const sr = sf.slice(-100); // MESMA JANELA DO OLHO DO USUARIO: balanco dos ultimos 100 jogos (~5h)
       if (sr.length >= 8) {
         let iMin = 0, iMax = 0;
         sr.forEach((v, i) => { if (v < sr[iMin]) iMin = i; if (v >= sr[iMax]) iMax = i; });
