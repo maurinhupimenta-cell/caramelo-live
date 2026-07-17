@@ -128,9 +128,7 @@
     "detalhe": "copa · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {
-   "premier": true
-  },
+  "consumidas": {},
   "ciclo": null,
   "cooldown": {
    "copa": 1784297753418,
@@ -288,13 +286,19 @@
   }
  },
  "ambas": {
-  "saldo": 6.1,
-  "ciclos": 67,
-  "greens": 40,
+  "saldo": 7,
+  "ciclos": 68,
+  "greens": 41,
   "redsCiclo": 5,
   "aborts": 0,
   "descartes": 22,
   "historico": [
+   {
+    "quando": "2026-07-17T22:39:27.597Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Bélgica x Romênia @1.87 (tiro 1)"
+   },
    {
     "quando": "2026-07-17T22:15:56.695Z",
     "resultado": "GREEN",
@@ -408,47 +412,12 @@
     "resultado": "GREEN",
     "unidades": 0.5,
     "detalhe": "euro · Suíça x Portugal @1.87 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-17T09:07:16.411Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "super · Medellin x Lima @1.98 (tiro 2)"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:29",
-     "jogo": "Bélgica x Romênia",
-     "odd": 1.87
-    },
-    {
-     "h": "23:32",
-     "jogo": "Áustria x Suíça",
-     "odd": 1.93
-    },
-    {
-     "h": "23:35",
-     "jogo": "Eslováquia x Itália",
-     "odd": 2.02
-    }
-   ],
-   "alvo": {
-    "h": "23:29",
-    "jogo": "Bélgica x Romênia",
-    "odd": 1.87,
-    "unidades": 1,
-    "desde": 1784327249496
-   },
-   "iniciadoEm": 1784327249496
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784322928133,
+   "euro": 1784327967401,
    "super": 1784314587616,
    "premier": 1784308842916,
    "copa": 1784326556495
@@ -456,7 +425,7 @@
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
-   "2026-07-17": 0.2
+   "2026-07-17": 1.1
   }
  }
 }
