@@ -143,13 +143,19 @@
   }
  },
  "o25": {
-  "saldo": -29.3,
-  "ciclos": 50,
+  "saldo": -36.3,
+  "ciclos": 51,
   "greens": 21,
-  "redsCiclo": 9,
+  "redsCiclo": 10,
   "aborts": 0,
   "descartes": 20,
   "historico": [
+   {
+    "quando": "2026-07-17T10:40:15.816Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-17T08:26:37.221Z",
     "resultado": "GREEN",
@@ -263,26 +269,16 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-16T15:26:11.822Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "super": true
+  },
   "ciclo": {
    "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "alvo": {
-    "h": "11:31",
-    "jogo": "Agua Branca x Quito",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1784284096812
-   },
+   "degrau": 3,
+   "apostado": 7,
+   "alvo": null,
    "iniciadoEm": 1784282655817,
    "tiros": [
     {
@@ -296,6 +292,12 @@
      "jogo": "Bogota x Penarol",
      "odd": 2.75,
      "unidades": 2
+    },
+    {
+     "h": "11:31",
+     "jogo": "Agua Branca x Quito",
+     "odd": 2.2,
+     "unidades": 4
     }
    ],
    "semAlvoDesde": null
@@ -304,12 +306,12 @@
    "copa": 1784264309822,
    "premier": 1784276797122,
    "euro": 1784275114021,
-   "super": 1784270055714
+   "super": 1784284815413
   },
   "dias": {
    "2026-07-15": -19.6,
    "2026-07-16": -14.2,
-   "2026-07-17": 2.1
+   "2026-07-17": -4.9
   }
  },
  "ambas": {
@@ -444,19 +446,7 @@
   "consumidas": {
    "premier": true
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "11:30",
-    "jogo": "City x Aston",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1784283998021
-   },
-   "iniciadoEm": 1784283998021
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784283955412,
    "super": 1784279236013,
