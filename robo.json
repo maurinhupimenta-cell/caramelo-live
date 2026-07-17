@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -50.6,
-  "ciclos": 62,
+  "saldo": -57.6,
+  "ciclos": 63,
   "greens": 12,
-  "redsCiclo": 17,
+  "redsCiclo": 18,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-17T04:58:29.819Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-17T03:56:29.211Z",
     "resultado": "RED_CICLO",
@@ -120,47 +126,15 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-16T04:31:17.259Z",
-    "resultado": "GREEN",
-    "unidades": 8,
-    "detalhe": "super · Bogota x Quito @5.5 (tiro 2)"
    }
   ],
   "consumidas": {
-   "super": true
+   "super": true,
+   "copa": true
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "alvo": {
-    "h": "05:49",
-    "jogo": "Paraguai x Áustria",
-    "odd": 4.75,
-    "unidades": 4,
-    "desde": 1784263647112
-   },
-   "iniciadoEm": 1784262208715,
-   "tiros": [
-    {
-     "h": "05:25",
-     "jogo": "Espanha x Suíça",
-     "odd": 4.33,
-     "unidades": 1
-    },
-    {
-     "h": "05:37",
-     "jogo": "Portugal x Bélgica",
-     "odd": 4.33,
-     "unidades": 2
-    }
-   ],
-   "semAlvoDesde": null
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784234249433,
+   "copa": 1784264309716,
    "premier": 1784257359622,
    "euro": 1784255368222,
    "super": 1784260589017
@@ -168,17 +142,23 @@
   "dias": {
    "2026-07-15": -35,
    "2026-07-16": -10.6,
-   "2026-07-17": -3.7
+   "2026-07-17": -10.7
   }
  },
  "o25": {
-  "saldo": -27.2,
-  "ciclos": 45,
+  "saldo": -34.2,
+  "ciclos": 46,
   "greens": 18,
-  "redsCiclo": 8,
+  "redsCiclo": 9,
   "aborts": 0,
   "descartes": 19,
   "historico": [
+   {
+    "quando": "2026-07-17T04:58:30.015Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-17T04:18:28.423Z",
     "resultado": "GREEN",
@@ -292,28 +272,17 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "premier · Wolverhampton x Liverpool @2.07 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-16T05:44:38.621Z",
-    "resultado": "GREEN",
-    "unidades": 2,
-    "detalhe": "euro · Polônia x Ucrânia @2.5 (tiro 2)"
    }
   ],
   "consumidas": {
-   "premier": true
+   "premier": true,
+   "copa": true
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "alvo": {
-    "h": "05:49",
-    "jogo": "Paraguai x Áustria",
-    "odd": 2.35,
-    "unidades": 4,
-    "desde": 1784263647414
-   },
+   "degrau": 3,
+   "apostado": 7,
+   "alvo": null,
    "iniciadoEm": 1784262208814,
    "tiros": [
     {
@@ -327,12 +296,18 @@
      "jogo": "Portugal x Bélgica",
      "odd": 2.2,
      "unidades": 2
+    },
+    {
+     "h": "05:49",
+     "jogo": "Paraguai x Áustria",
+     "odd": 2.35,
+     "unidades": 4
     }
    ],
    "semAlvoDesde": null
   },
   "cooldown": {
-   "copa": 1784246336717,
+   "copa": 1784264309822,
    "premier": 1784259394425,
    "euro": 1784253599318,
    "super": 1784261908323
@@ -340,7 +315,7 @@
   "dias": {
    "2026-07-15": -19.6,
    "2026-07-16": -14.2,
-   "2026-07-17": 4.2
+   "2026-07-17": -2.8
   }
  },
  "ambas": {
