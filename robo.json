@@ -288,7 +288,19 @@
   "consumidas": {
    "copa": true
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "alvo": {
+    "h": "07:13",
+    "jogo": "Agua Branca x Santiago",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1784268615813
+   },
+   "iniciadoEm": 1784268615813
+  },
   "cooldown": {
    "copa": 1784264309822,
    "premier": 1784259394425,
@@ -433,16 +445,18 @@
   "consumidas": {},
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "07:04",
-    "jogo": "Asuncion x Sao Paulo",
-    "odd": 1.87,
-    "unidades": 1,
-    "desde": 1784268076219
-   },
-   "iniciadoEm": 1784268076219
+   "degrau": 1,
+   "apostado": 1,
+   "alvo": null,
+   "iniciadoEm": 1784268076219,
+   "tiros": [
+    {
+     "h": "07:04",
+     "jogo": "Asuncion x Sao Paulo",
+     "odd": 1.87,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784250649415,
