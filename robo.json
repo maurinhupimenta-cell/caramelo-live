@@ -131,15 +131,9 @@
   "consumidas": {},
   "ciclo": {
    "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "alvo": {
-    "h": "21:32",
-    "jogo": "Eslováquia x Espanha",
-    "odd": 4,
-    "unidades": 2,
-    "desde": 1784320228015
-   },
+   "degrau": 2,
+   "apostado": 3,
+   "alvo": null,
    "iniciadoEm": 1784319447623,
    "tiros": [
     {
@@ -147,6 +141,12 @@
      "jogo": "Alemanha x Croácia",
      "odd": 4.2,
      "unidades": 1
+    },
+    {
+     "h": "21:32",
+     "jogo": "Eslováquia x Espanha",
+     "odd": 4,
+     "unidades": 2
     }
    ],
    "semAlvoDesde": null
@@ -435,37 +435,8 @@
     "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {
-   "copa": true
-  },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "alvo": {
-    "h": "21:25",
-    "jogo": "Jordânia x Curação",
-    "odd": 1.87,
-    "unidades": 4,
-    "desde": 1784319748322
-   },
-   "iniciadoEm": 1784318306628,
-   "tiros": [
-    {
-     "h": "21:01",
-     "jogo": "Gana x Costa do Marfim",
-     "odd": 1.95,
-     "unidades": 1
-    },
-    {
-     "h": "21:13",
-     "jogo": "Noruega x República Tcheca",
-     "odd": 2,
-     "unidades": 2
-    }
-   ],
-   "semAlvoDesde": null
-  },
+  "consumidas": {},
+  "ciclo": null,
   "cooldown": {
    "euro": 1784312609520,
    "super": 1784314587616,
