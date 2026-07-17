@@ -133,7 +133,13 @@
    "liga": "euro",
    "degrau": 1,
    "apostado": 1,
-   "alvo": null,
+   "alvo": {
+    "h": "21:32",
+    "jogo": "Eslováquia x Espanha",
+    "odd": 4,
+    "unidades": 2,
+    "desde": 1784320228015
+   },
    "iniciadoEm": 1784319447623,
    "tiros": [
     {
@@ -142,7 +148,8 @@
      "odd": 4.2,
      "unidades": 1
     }
-   ]
+   ],
+   "semAlvoDesde": null
   },
   "cooldown": {
    "copa": 1784297753418,
@@ -157,13 +164,19 @@
   }
  },
  "o25": {
-  "saldo": -44.2,
-  "ciclos": 58,
-  "greens": 26,
+  "saldo": -42.7,
+  "ciclos": 59,
+  "greens": 27,
   "redsCiclo": 12,
   "aborts": 0,
   "descartes": 20,
   "historico": [
+   {
+    "quando": "2026-07-17T20:31:28.716Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "super · Asuncion x La Plata @2.55 (tiro 1)"
+   },
    {
     "quando": "2026-07-17T17:23:41.918Z",
     "resultado": "GREEN",
@@ -277,38 +290,20 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "copa · Irã x Arábia Saudita @2.4 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-16T23:10:29.233Z",
-    "resultado": "GREEN",
-    "unidades": 2,
-    "detalhe": "copa · Colômbia x Bélgica @2.25 (tiro 3)"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "alvo": {
-    "h": "21:22",
-    "jogo": "Asuncion x La Plata",
-    "odd": 2.55,
-    "unidades": 1,
-    "desde": 1784319688415
-   },
-   "iniciadoEm": 1784319688415
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784290553524,
    "premier": 1784309021814,
    "euro": 1784305109618,
-   "super": 1784300936713
+   "super": 1784320288613
   },
   "dias": {
    "2026-07-15": -19.6,
    "2026-07-16": -14.2,
-   "2026-07-17": -12.8
+   "2026-07-17": -11.3
   }
  },
  "ambas": {
