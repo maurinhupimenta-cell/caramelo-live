@@ -133,16 +133,25 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "alvo": {
-    "h": "07:13",
-    "jogo": "Agua Branca x Santiago",
-    "odd": 3.75,
-    "unidades": 1,
-    "desde": 1784268615619
+    "h": "07:25",
+    "jogo": "Rio de Janeiro x Agua Branca",
+    "odd": 4.2,
+    "unidades": 2,
+    "desde": 1784269316612
    },
-   "iniciadoEm": 1784268615619
+   "iniciadoEm": 1784268615619,
+   "tiros": [
+    {
+     "h": "07:13",
+     "jogo": "Agua Branca x Santiago",
+     "odd": 3.75,
+     "unidades": 1
+    }
+   ],
+   "semAlvoDesde": null
   },
   "cooldown": {
    "copa": 1784264309716,
@@ -447,7 +456,13 @@
    "liga": "super",
    "degrau": 1,
    "apostado": 1,
-   "alvo": null,
+   "alvo": {
+    "h": "07:16",
+    "jogo": "Medellin x Bogota",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1784268796218
+   },
    "iniciadoEm": 1784268076219,
    "tiros": [
     {
@@ -456,7 +471,8 @@
      "odd": 1.87,
      "unidades": 1
     }
-   ]
+   ],
+   "semAlvoDesde": null
   },
   "cooldown": {
    "euro": 1784250649415,
