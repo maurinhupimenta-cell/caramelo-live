@@ -112,7 +112,7 @@ function codigoValido(c) {
 // PORTAO: protege os dados; deixa livre snapshot (sonda), eventos (SSE), acesso/admin e arquivos estaticos
 app.use((req, res, next) => {
   const p = req.path;
-  const livre = p === "/api/snapshot" || p === "/api/eventos" || p.startsWith("/api/acesso") || p.startsWith("/api/admin") || !p.startsWith("/api/");
+  const livre = p === "/api/snapshot" || p === "/api/snapshot2" || p === "/api/eventos" || p.startsWith("/api/acesso") || p.startsWith("/api/admin") || !p.startsWith("/api/");
   if (livre) return next();
   const c = String(req.headers["x-acesso"] || req.query.c || "").toUpperCase().trim();
   if (codigoValido(c)) return next();
@@ -1185,6 +1185,60 @@ function ligaBateComConteudo(liga, games) {
   } catch (e) { return true; }
 }
 
+// ===== SONDA 2 (bet365 resultados): resultados RAPIDOS que furam a cortina da fonte 1 =====
+// A sonda 2 envia resultados crus sem saber a liga; o servidor identifica a liga casando
+// horario+casa com o upcomingRaw de cada uma, e mantem um OVERLAY (rapidos) que alimenta
+// robo e radar ~6min antes do feed oficial. Quando o oficial chega, o overlay se dissolve.
+let rapidos = {}; // liga -> { "hor|casa": game }
+let sonda2Stats = { recebidos: 0, casados: 0, ultimoEm: null };
+function gamesFundidos(liga) {
+  const d = store[liga];
+  const ga = (d && d.gamesAll) || [];
+  const r = rapidos[liga] || {};
+  const cauda = ga.slice(-40);
+  const extra = Object.values(r).filter(g => !cauda.some(x => x.horario === g.horario && x.casa === g.casa));
+  extra.sort((a, b) => (a.horario < b.horario ? -1 : 1));
+  return extra.length ? ga.concat(extra) : ga;
+}
+app.post("/api/snapshot2", (req, res) => {
+  try {
+    const jogos = (req.body || {}).jogos || [];
+    sonda2Stats.recebidos += jogos.length;
+    sonda2Stats.ultimoEm = new Date().toISOString();
+    let casados = 0;
+    for (const j of jogos) {
+      if (!j || !j.casa || !j.fora || j.a == null || j.b == null) continue;
+      for (const liga of Object.keys(store)) {
+        const d = store[liga];
+        if (!d || !d.upcomingRaw) continue;
+        const u = d.upcomingRaw.find(x => x.casa === j.casa && x.fora === j.fora && (!j.horario || !x.horario || x.horario === j.horario));
+        if (u) {
+          const a = parseInt(j.a), b = parseInt(j.b);
+          const g = { casa: j.casa, fora: j.fora, a, b, total: a + b, placar: a + "-" + b, horario: u.horario || j.horario || "", odds: u.odds || null, _rapido: true };
+          (rapidos[liga] = rapidos[liga] || {})[g.horario + "|" + g.casa] = g;
+          casados++; break;
+        }
+      }
+    }
+    sonda2Stats.casados += casados;
+    // poda: overlay que ja apareceu no oficial se dissolve
+    for (const liga of Object.keys(rapidos)) {
+      const d = store[liga]; if (!d || !d.gamesAll) continue;
+      const cauda = d.gamesAll.slice(-40);
+      for (const k of Object.keys(rapidos[liga])) {
+        const g = rapidos[liga][k];
+        if (cauda.some(x => x.horario === g.horario && x.casa === g.casa)) delete rapidos[liga][k];
+      }
+    }
+    if (casados) { atualizaRoboLedger(); for (const liga of Object.keys(store)) atualizaRadar(liga); }
+    res.json({ ok: true, recebidos: jogos.length, casados });
+  } catch (e) { res.status(500).json({ ok: false, erro: e.message }); }
+});
+app.get("/api/sonda2", (req, res) => {
+  const porLiga = {}; for (const l of Object.keys(rapidos)) porLiga[l] = Object.keys(rapidos[l]).length;
+  res.json({ ...sonda2Stats, overlayAtivo: porLiga });
+});
+
 app.post("/api/snapshot", (req, res) => {
   try {
     const { liga, data, mkt, curva, mm1, mm2, topo, fundo } = req.body || {};
@@ -1567,7 +1621,7 @@ function montaRobo(mkt) {
   for (const liga of Object.keys(store)) {
     const d = store[liga];
     if (!d || !d.games || d.games.length < 60) continue;
-    const games = d.games;
+    const games = gamesFundidos(liga); // linha com os resultados rapidos da sonda 2
     const base = games.filter(g => pays(g, mkt)).length / games.length * 100;
     if (!base) continue;
     const JR = Math.max(2, Math.min(20, games.length));
@@ -1674,7 +1728,7 @@ function atualizaRoboMkt(mkt) {
     }
     const d = store[L.ciclo.liga];
     if (!d) return;
-    const gAll = d.gamesAll || d.games || [];
+    const gAll = gamesFundidos(L.ciclo.liga); // resolucao ~6min mais cedo com a sonda 2
     if (L.ciclo.alvo) {
       if (!L.ciclo.alvo.desde || Date.now() - L.ciclo.alvo.desde > 15 * 60000) {
         if (L.ciclo.apostado === 0) {
