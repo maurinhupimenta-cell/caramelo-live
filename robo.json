@@ -143,13 +143,19 @@
   }
  },
  "o25": {
-  "saldo": -46.9,
-  "ciclos": 65,
-  "greens": 29,
+  "saldo": -45.3,
+  "ciclos": 66,
+  "greens": 30,
   "redsCiclo": 13,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-18T02:06:44.968Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "super · Sao Paulo x Quito @2.15 (tiro 3)"
+   },
    {
     "quando": "2026-07-18T01:46:50.975Z",
     "resultado": "DESCARTADO",
@@ -263,69 +269,22 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-17T04:58:30.015Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "02:52",
-     "jogo": "Quito x Belo Horizonte",
-     "odd": 2.1
-    },
-    {
-     "h": "02:55",
-     "jogo": "Santiago x Porto Alegre",
-     "odd": 2.4
-    },
-    {
-     "h": "02:58",
-     "jogo": "Sao Paulo x Quito",
-     "odd": 2.15
-    }
-   ],
-   "alvo": {
-    "h": "02:58",
-    "jogo": "Sao Paulo x Quito",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1784340243573
-   },
-   "iniciadoEm": 1784339344971,
-   "tiros": [
-    {
-     "h": "02:52",
-     "jogo": "Quito x Belo Horizonte",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "02:55",
-     "jogo": "Santiago x Porto Alegre",
-     "odd": 2.4,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "super": true
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784330906567,
    "premier": 1784332059567,
    "euro": 1784305109618,
-   "super": 1784320288613
+   "super": 1784340404868
   },
   "dias": {
    "2026-07-15": -19.6,
    "2026-07-16": -14.2,
-   "2026-07-17": -15.5
+   "2026-07-17": -13.9
   }
  },
  "ambas": {
