@@ -129,7 +129,36 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:48",
+     "jogo": "Watford x Norwich",
+     "odd": 4.33
+    },
+    {
+     "h": "02:51",
+     "jogo": "Newcastle x Wolverhampton",
+     "odd": 3.6
+    },
+    {
+     "h": "02:54",
+     "jogo": "Norwich x United",
+     "odd": 4.2
+    }
+   ],
+   "alvo": {
+    "h": "02:48",
+    "jogo": "Watford x Norwich",
+    "odd": 4.33,
+    "unidades": 1,
+    "desde": 1784339090378
+   },
+   "iniciadoEm": 1784339090378
+  },
   "cooldown": {
    "copa": 1784297753418,
    "premier": 1784333140978,
@@ -444,36 +473,7 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "02:31",
-     "jogo": "Sao Paulo x Buenos Aires",
-     "odd": 1.76
-    },
-    {
-     "h": "02:34",
-     "jogo": "Belo Horizonte x Penarol",
-     "odd": 2.07
-    },
-    {
-     "h": "02:37",
-     "jogo": "Rio de Janeiro x Agua Branca",
-     "odd": 1.9
-    }
-   ],
-   "alvo": {
-    "h": "02:31",
-    "jogo": "Sao Paulo x Buenos Aires",
-    "odd": 1.76,
-    "unidades": 1,
-    "desde": 1784337746169
-   },
-   "iniciadoEm": 1784337746169
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784334714775,
    "super": 1784314587616,
