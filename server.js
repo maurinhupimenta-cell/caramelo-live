@@ -1590,10 +1590,15 @@ function montaRobo(mkt) {
         const curF = sr[sr.length - 1];
         if (amp >= 8 && iMin < iMax) {
           const retr = (hi - curF) / amp * 100;
-          // REGRA DEFINITIVA: dentro do bolsao (38.2-61.8) + PRIMEIRO ponto de VIRADA pra cima.
-          // JAMAIS com o grafico caindo; e sem esperar confirmacao longa (que chega tarde).
-          const virouAgora = sr[sr.length - 1] > sr[sr.length - 2];
-          if (retr >= 38.2 && retr <= 61.8 && virouAgora) { noBolsao = true; fibInfo = { retr: Math.round(retr), lo, hi }; }
+          // SENSOR DO OLHO HUMANO: a curva SUAVIZADA (EMA-5) virando pra cima dentro do bolsao.
+          // Um green solitario no meio da descida NAO vira a EMA (mata as entradas em queda);
+          // a virada real vira a EMA cedo (sem a espera longa que chegava tarde).
+          const kE = 2 / 6; let eAc = sr[0];
+          const ema = sr.map(v => (eAc = v * kE + eAc * (1 - kE)));
+          const nS = sr.length;
+          const emaVirando = ema[nS - 1] > ema[nS - 2];
+          const naoCaindoAgora = sr[nS - 1] >= sr[nS - 2];
+          if (retr >= 38.2 && retr <= 61.8 && emaVirando && naoCaindoAgora) { noBolsao = true; fibInfo = { retr: Math.round(retr), lo, hi }; }
         }
       }
     } catch (e) {}
