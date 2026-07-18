@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -21.8,
-  "ciclos": 80,
+  "saldo": -28.8,
+  "ciclos": 81,
   "greens": 23,
-  "redsCiclo": 24,
+  "redsCiclo": 25,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-18T02:02:42.869Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-18T01:18:29.371Z",
     "resultado": "GREEN",
@@ -120,69 +126,22 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-17T03:02:39.721Z",
-    "resultado": "GREEN",
-    "unidades": 3.3,
-    "detalhe": "premier · United x Liverpool @4.33 (tiro 1)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "02:48",
-     "jogo": "Watford x Norwich",
-     "odd": 4.33
-    },
-    {
-     "h": "02:51",
-     "jogo": "Newcastle x Wolverhampton",
-     "odd": 3.6
-    },
-    {
-     "h": "02:54",
-     "jogo": "Norwich x United",
-     "odd": 4.2
-    }
-   ],
-   "alvo": {
-    "h": "02:54",
-    "jogo": "Norwich x United",
-    "odd": 4.2,
-    "unidades": 4,
-    "desde": 1784339982270
-   },
-   "iniciadoEm": 1784339090378,
-   "tiros": [
-    {
-     "h": "02:48",
-     "jogo": "Watford x Norwich",
-     "odd": 4.33,
-     "unidades": 1
-    },
-    {
-     "h": "02:51",
-     "jogo": "Newcastle x Wolverhampton",
-     "odd": 3.6,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": true
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784297753418,
-   "premier": 1784333140978,
+   "premier": 1784340162672,
    "euro": 1784337509180,
    "super": 1784326408000
   },
   "dias": {
    "2026-07-15": -35,
    "2026-07-16": -10.6,
-   "2026-07-17": 25.1
+   "2026-07-17": 18.1
   }
  },
  "o25": {
