@@ -272,36 +272,7 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "01:25",
-     "jogo": "Gana x Noruega",
-     "odd": 2.25
-    },
-    {
-     "h": "01:28",
-     "jogo": "México x Equador",
-     "odd": 2.15
-    },
-    {
-     "h": "01:31",
-     "jogo": "Canadá x Suécia",
-     "odd": 2.7
-    }
-   ],
-   "alvo": {
-    "h": "01:25",
-    "jogo": "Gana x Noruega",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1784333773069
-   },
-   "iniciadoEm": 1784333773069
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784330906567,
    "premier": 1784332059567,
@@ -315,13 +286,19 @@
   }
  },
  "ambas": {
-  "saldo": 7,
-  "ciclos": 69,
-  "greens": 41,
+  "saldo": 8,
+  "ciclos": 70,
+  "greens": 42,
   "redsCiclo": 5,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-18T00:31:55.167Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Portugal x Áustria @2 (tiro 3)"
+   },
    {
     "quando": "2026-07-17T23:11:26.566Z",
     "resultado": "DESCARTADO",
@@ -435,61 +412,43 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "super · Bogota x Rio de Janeiro @2.1 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-17T10:38:47.616Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · City x Aston @2.05 (tiro 1)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "euro": true
+  },
   "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "01:17",
-     "jogo": "Dinamarca x Sérvia",
-     "odd": 2.15
-    },
-    {
-     "h": "01:20",
-     "jogo": "Bélgica x Ucrânia",
-     "odd": 1.95
-    },
-    {
-     "h": "01:23",
-     "jogo": "Portugal x Áustria",
+     "h": "01:37",
+     "jogo": "França x Nova Zelândia",
      "odd": 2
+    },
+    {
+     "h": "01:40",
+     "jogo": "Áustria x Suíça",
+     "odd": 1.98
+    },
+    {
+     "h": "01:43",
+     "jogo": "Haiti x Marrocos",
+     "odd": 1.93
     }
    ],
    "alvo": {
-    "h": "01:23",
-    "jogo": "Portugal x Áustria",
+    "h": "01:37",
+    "jogo": "França x Nova Zelândia",
     "odd": 2,
-    "unidades": 4,
-    "desde": 1784334534870
+    "unidades": 1,
+    "desde": 1784334715980
    },
-   "iniciadoEm": 1784333633778,
-   "tiros": [
-    {
-     "h": "01:17",
-     "jogo": "Dinamarca x Sérvia",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "01:20",
-     "jogo": "Bélgica x Ucrânia",
-     "odd": 1.95,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1784334715980
   },
   "cooldown": {
-   "euro": 1784327967401,
+   "euro": 1784334714775,
    "super": 1784314587616,
    "premier": 1784308842916,
    "copa": 1784326556495
@@ -497,7 +456,7 @@
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
-   "2026-07-17": 1.1
+   "2026-07-17": 2.1
   }
  }
 }
