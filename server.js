@@ -1234,6 +1234,14 @@ app.post("/api/snapshot2", (req, res) => {
     res.json({ ok: true, recebidos: jogos.length, casados });
   } catch (e) { res.status(500).json({ ok: false, erro: e.message }); }
 });
+// serve o script da sonda 2 (colar no console vira uma linha so)
+app.get("/sonda2.js", (req, res) => {
+  try {
+    const fs = require("fs");
+    res.type("application/javascript").send(fs.readFileSync(__dirname + "/captura-bet365.js", "utf8"));
+  } catch (e) { res.status(500).send("// erro: " + e.message); }
+});
+
 app.get("/api/sonda2", (req, res) => {
   const porLiga = {}; for (const l of Object.keys(rapidos)) porLiga[l] = Object.keys(rapidos[l]).length;
   res.json({ ...sonda2Stats, overlayAtivo: porLiga });
