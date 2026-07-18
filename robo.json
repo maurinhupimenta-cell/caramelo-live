@@ -129,7 +129,36 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:02",
+     "jogo": "Polônia x Eslovênia",
+     "odd": 6.5
+    },
+    {
+     "h": "02:05",
+     "jogo": "Espanha x República Tcheca",
+     "odd": 4.75
+    },
+    {
+     "h": "02:08",
+     "jogo": "Suíça x Turquia",
+     "odd": 4.75
+    }
+   ],
+   "alvo": {
+    "h": "02:02",
+    "jogo": "Polônia x Eslovênia",
+    "odd": 6.5,
+    "unidades": 1,
+    "desde": 1784336323674
+   },
+   "iniciadoEm": 1784336323674
+  },
   "cooldown": {
    "copa": 1784297753418,
    "premier": 1784333140978,
@@ -414,39 +443,8 @@
     "detalhe": "copa · Cabo Verde x Irã @2.1 (tiro 1)"
    }
   ],
-  "consumidas": {
-   "euro": true
-  },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "01:37",
-     "jogo": "França x Nova Zelândia",
-     "odd": 2
-    },
-    {
-     "h": "01:40",
-     "jogo": "Áustria x Suíça",
-     "odd": 1.98
-    },
-    {
-     "h": "01:43",
-     "jogo": "Haiti x Marrocos",
-     "odd": 1.93
-    }
-   ],
-   "alvo": {
-    "h": "01:37",
-    "jogo": "França x Nova Zelândia",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1784334715980
-   },
-   "iniciadoEm": 1784334715980
-  },
+  "consumidas": {},
+  "ciclo": null,
   "cooldown": {
    "euro": 1784334714775,
    "super": 1784314587616,
