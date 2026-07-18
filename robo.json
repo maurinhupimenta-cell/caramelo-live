@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -33.8,
-  "ciclos": 79,
-  "greens": 22,
+  "saldo": -21.8,
+  "ciclos": 80,
+  "greens": 23,
   "redsCiclo": 24,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-18T01:18:29.371Z",
+    "resultado": "GREEN",
+    "unidades": 12,
+    "detalhe": "euro · Suíça x Turquia @4.75 (tiro 3)"
+   },
    {
     "quando": "2026-07-18T00:25:54.271Z",
     "resultado": "RED_CICLO",
@@ -120,69 +126,22 @@
     "resultado": "GREEN",
     "unidades": 3.3,
     "detalhe": "premier · United x Liverpool @4.33 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-17T02:29:28.323Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "02:02",
-     "jogo": "Polônia x Eslovênia",
-     "odd": 6.5
-    },
-    {
-     "h": "02:05",
-     "jogo": "Espanha x República Tcheca",
-     "odd": 4.75
-    },
-    {
-     "h": "02:08",
-     "jogo": "Suíça x Turquia",
-     "odd": 4.75
-    }
-   ],
-   "alvo": {
-    "h": "02:08",
-    "jogo": "Suíça x Turquia",
-    "odd": 4.75,
-    "unidades": 4,
-    "desde": 1784337266068
-   },
-   "iniciadoEm": 1784336323674,
-   "tiros": [
-    {
-     "h": "02:02",
-     "jogo": "Polônia x Eslovênia",
-     "odd": 6.5,
-     "unidades": 1
-    },
-    {
-     "h": "02:05",
-     "jogo": "Espanha x República Tcheca",
-     "odd": 4.75,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "euro": true
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784297753418,
    "premier": 1784333140978,
-   "euro": 1784334354076,
+   "euro": 1784337509180,
    "super": 1784326408000
   },
   "dias": {
    "2026-07-15": -35,
    "2026-07-16": -10.6,
-   "2026-07-17": 13.1
+   "2026-07-17": 25.1
   }
  },
  "o25": {
@@ -315,36 +274,7 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "02:10",
-     "jogo": "Belo Horizonte x La Boca",
-     "odd": 2.2
-    },
-    {
-     "h": "02:13",
-     "jogo": "Guayaquil x Medellin",
-     "odd": 2.25
-    },
-    {
-     "h": "02:16",
-     "jogo": "Avellaneda x Itaquera",
-     "odd": 2.35
-    }
-   ],
-   "alvo": {
-    "h": "02:10",
-    "jogo": "Belo Horizonte x La Boca",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1784336485867
-   },
-   "iniciadoEm": 1784336485867
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784330906567,
    "premier": 1784332059567,
