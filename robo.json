@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -65.1,
-  "ciclos": 95,
-  "greens": 28,
+  "saldo": -58.1,
+  "ciclos": 96,
+  "greens": 29,
   "redsCiclo": 34,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-19T17:52:14.895Z",
+    "resultado": "GREEN",
+    "unidades": 7,
+    "detalhe": "copa · Marrocos x Gana @5 (tiro 2)"
+   },
    {
     "quando": "2026-07-19T17:17:12.894Z",
     "resultado": "RED_CICLO",
@@ -120,55 +126,14 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-17T22:35:41.594Z",
-    "resultado": "GREEN",
-    "unidades": 5.4,
-    "detalhe": "premier · Southampton x City @4.2 (tiro 2)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "18:46",
-     "jogo": "Arábia Saudita x RD Congo",
-     "odd": 3.8
-    },
-    {
-     "h": "18:49",
-     "jogo": "Marrocos x Gana",
-     "odd": 5
-    },
-    {
-     "h": "18:52",
-     "jogo": "Panamá x Coreia do Sul",
-     "odd": 5.5
-    }
-   ],
-   "alvo": {
-    "h": "18:49",
-    "jogo": "Marrocos x Gana",
-    "odd": 5,
-    "unidades": 2,
-    "desde": 1784483354507
-   },
-   "iniciadoEm": 1784483233203,
-   "tiros": [
-    {
-     "h": "18:46",
-     "jogo": "Arábia Saudita x RD Congo",
-     "odd": 3.8,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "copa": 1784483534795
   },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784481432705,
+   "copa": 1784483534795,
    "premier": 1784468339201,
    "euro": 1784476193195,
    "super": 1784479932698
@@ -177,7 +142,7 @@
    "2026-07-15": -35,
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
-   "2026-07-19": -36.3
+   "2026-07-19": -29.3
   }
  },
  "o25": {
