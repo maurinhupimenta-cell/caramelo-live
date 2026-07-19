@@ -289,13 +289,19 @@
   }
  },
  "ambas": {
-  "saldo": 10.9,
-  "ciclos": 83,
-  "greens": 52,
+  "saldo": 11.9,
+  "ciclos": 84,
+  "greens": 53,
   "redsCiclo": 6,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-19T09:39:35.801Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Santiago x Bogota @2 (tiro 2)"
+   },
    {
     "quando": "2026-07-19T08:36:54.897Z",
     "resultado": "GREEN",
@@ -409,56 +415,15 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "euro · França x Albânia @2.15 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-17T20:34:30.017Z",
-    "resultado": "GREEN",
-    "unidades": 0.5,
-    "detalhe": "copa · Jordânia x Curação @1.87 (tiro 3)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "10:34",
-     "jogo": "Lima x Buenos Aires",
-     "odd": 1.83
-    },
-    {
-     "h": "10:37",
-     "jogo": "Santiago x Bogota",
-     "odd": 2
-    },
-    {
-     "h": "10:40",
-     "jogo": "Itaquera x Penarol",
-     "odd": 2.15
-    }
-   ],
-   "alvo": {
-    "h": "10:37",
-    "jogo": "Santiago x Bogota",
-    "odd": 2,
-    "unidades": 2,
-    "desde": 1784453795396
-   },
-   "iniciadoEm": 1784453436002,
-   "tiros": [
-    {
-     "h": "10:34",
-     "jogo": "Lima x Buenos Aires",
-     "odd": 1.83,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "super": 1784453975702
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784448653897,
-   "super": 1784450214795,
+   "super": 1784453975702,
    "premier": 1784441535028,
    "copa": 1784444655532
   },
@@ -466,7 +431,7 @@
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
-   "2026-07-19": 2.9
+   "2026-07-19": 3.9
   }
  }
 }
