@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -51.4,
-  "ciclos": 86,
-  "greens": 24,
+  "saldo": -48.1,
+  "ciclos": 87,
+  "greens": 25,
   "redsCiclo": 29,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-19T09:51:52.500Z",
+    "resultado": "GREEN",
+    "unidades": 3.3,
+    "detalhe": "copa · México x Uruguai @4.33 (tiro 1)"
+   },
    {
     "quando": "2026-07-19T09:32:36.101Z",
     "resultado": "GREEN",
@@ -120,47 +126,14 @@
     "resultado": "GREEN",
     "unidades": 7,
     "detalhe": "premier · Tottenham x Palace @5 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-17T13:22:15.714Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "10:49",
-     "jogo": "México x Uruguai",
-     "odd": 4.33
-    },
-    {
-     "h": "10:52",
-     "jogo": "Suécia x Paraguai",
-     "odd": 5.5
-    },
-    {
-     "h": "10:55",
-     "jogo": "República Tcheca x Equador",
-     "odd": 4.5
-    }
-   ],
-   "alvo": {
-    "h": "10:49",
-    "jogo": "México x Uruguai",
-    "odd": 4.33,
-    "unidades": 1,
-    "desde": 1784454012402
-   },
-   "iniciadoEm": 1784454012402
+  "consumidas": {
+   "copa": 1784454712397
   },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784440513022,
+   "copa": 1784454712397,
    "premier": 1784453555996,
    "euro": 1784448015005,
    "super": 1784326408000
@@ -169,7 +142,7 @@
    "2026-07-15": -35,
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
-   "2026-07-19": -22.6
+   "2026-07-19": -19.3
   }
  },
  "o25": {
@@ -318,13 +291,19 @@
   }
  },
  "ambas": {
-  "saldo": 11.9,
-  "ciclos": 84,
-  "greens": 53,
+  "saldo": 12.6,
+  "ciclos": 85,
+  "greens": 54,
   "redsCiclo": 6,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-19T09:51:52.697Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "copa · México x Uruguai @1.93 (tiro 3)"
+   },
    {
     "quando": "2026-07-19T09:39:35.801Z",
     "resultado": "GREEN",
@@ -438,70 +417,23 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "copa · Colômbia x França @1.93 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-17T21:15:28.338Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "euro · França x Albânia @2.15 (tiro 1)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "10:43",
-     "jogo": "Austrália x Áustria",
-     "odd": 1.93
-    },
-    {
-     "h": "10:46",
-     "jogo": "Senegal x Curação",
-     "odd": 2.1
-    },
-    {
-     "h": "10:49",
-     "jogo": "México x Uruguai",
-     "odd": 1.93
-    }
-   ],
-   "alvo": {
-    "h": "10:49",
-    "jogo": "México x Uruguai",
-    "odd": 1.93,
-    "unidades": 4,
-    "desde": 1784454532803
-   },
-   "iniciadoEm": 1784454012597,
-   "tiros": [
-    {
-     "h": "10:43",
-     "jogo": "Austrália x Áustria",
-     "odd": 1.93,
-     "unidades": 1
-    },
-    {
-     "h": "10:46",
-     "jogo": "Senegal x Curação",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "copa": 1784454712595
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784448653897,
    "super": 1784453975702,
    "premier": 1784441535028,
-   "copa": 1784444655532
+   "copa": 1784454712595
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
-   "2026-07-19": 3.9
+   "2026-07-19": 4.6
   }
  }
 }
