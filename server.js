@@ -68,8 +68,12 @@ const PORT = process.env.PORT || 3000;
 const ORIGENS_OK = ["https://mr-betlive.onrender.com"];
 app.use((req, res, next) => {
   const origin = req.headers.origin || "";
-  // CORS travado: so o proprio dominio recebe Allow-Origin (bloqueia fetch de outros sites)
-  if (ORIGENS_OK.includes(origin)) res.header("Access-Control-Allow-Origin", origin);
+  const p = req.path;
+  // SONDAS precisam enviar cross-origin (rodam no caramelo/bet365): CORS LIBERADO nelas.
+  // O envio ja e protegido pela impressao digital de liga (porteiro de conteudo).
+  const ehSonda = p === "/api/snapshot" || p === "/api/snapshot2";
+  if (ehSonda) res.header("Access-Control-Allow-Origin", "*");
+  else if (ORIGENS_OK.includes(origin)) res.header("Access-Control-Allow-Origin", origin);
   res.header("Vary", "Origin");
   res.header("Access-Control-Allow-Methods", "GET,POST,OPTIONS");
   res.header("Access-Control-Allow-Headers", "Content-Type,X-Acesso");
@@ -79,8 +83,6 @@ app.use((req, res, next) => {
   res.header("X-Robots-Tag", "noindex, nofollow");        // fora dos buscadores
   if (req.method === "OPTIONS") return res.sendStatus(204);
   // API de dados: exige vir do PROPRIO site (referer/origin), fecha para curl/bots/outros sites.
-  // As sondas (/api/snapshot, /api/snapshot2) e admin sao liberadas aqui e protegidas por chave propria.
-  const p = req.path;
   const ehApiDado = p.startsWith("/api/") && !p.startsWith("/api/snapshot") && !p.startsWith("/api/admin") && !p.startsWith("/api/acesso") && !p.startsWith("/api/eventos");
   if (ehApiDado) {
     const ref = (req.headers.referer || req.headers.origin || "");
