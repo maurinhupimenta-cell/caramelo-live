@@ -2069,11 +2069,11 @@ app.get("/api/padroes/:liga", (req, res) => {
     }
     // ===== FAMILIA 3: PADRAO DE PULO (distancia entre greens: 5, 6, 10 casas...) =====
     const idxG = []; for (let i = 0; i < seq.length; i++) if (seq[i] === "G") idxG.push(i);
-    const pulos = {};
-    for (let i = 1; i < idxG.length; i++) { const gap = idxG[i] - idxG[i - 1]; pulos[gap] = (pulos[gap] || 0) + 1; }
+    const pulos = {}; // PULO = casas vazias (reds) ENTRE dois greens consecutivos (o que o olho ve no quadro)
+    for (let i = 1; i < idxG.length; i++) { const vazias = idxG[i] - idxG[i - 1] - 1; pulos[vazias] = (pulos[vazias] || 0) + 1; }
     const totPulos = Object.values(pulos).reduce((a, b) => a + b, 0);
     const distPulo = Object.entries(pulos).map(([gap, n]) => ({ pulo: +gap, vezes: n, pct: totPulos ? Math.round(n / totPulos * 100) : 0 })).sort((a, b) => b.vezes - a.vezes).slice(0, 8);
-    const desdeUltimoG = idxG.length ? (seq.length - 1 - idxG[idxG.length - 1]) : null;
+    const desdeUltimoG = idxG.length ? (seq.length - 1 - idxG[idxG.length - 1]) : null; // reds ja acumulados desde o ultimo green
 
     const resp = { liga, mkt, jogosNoDia: games.length, regua3, padroes: out.slice(0, 10), porOdd: garimpa(porOdd, 6), porTime: garimpa(porTime, 6),
       porPlacar: garimpa(porPlacar, 6), porColuna: garimpa(porColuna, 5), distPulo, desdeUltimoG };
