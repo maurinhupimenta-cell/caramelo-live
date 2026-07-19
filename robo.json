@@ -289,13 +289,19 @@
   }
  },
  "ambas": {
-  "saldo": -0.9,
-  "ciclos": 94,
+  "saldo": -7.9,
+  "ciclos": 95,
   "greens": 60,
-  "redsCiclo": 9,
+  "redsCiclo": 10,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-19T19:55:54.999Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-19T16:37:14.194Z",
     "resultado": "GREEN",
@@ -409,58 +415,23 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "euro · Bélgica x Alemanha @1.85 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-19T04:35:37.924Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "20:27",
-     "jogo": "Burnley x Chelsea",
-     "odd": 1.9
-    },
-    {
-     "h": "20:30",
-     "jogo": "Southampton x Brentford",
-     "odd": 2.07
-    },
-    {
-     "h": "20:33",
-     "jogo": "Burnley x Leeds",
-     "odd": 2.05
-    }
-   ],
-   "alvo": null,
-   "iniciadoEm": 1784488693700,
-   "tiros": [
-    {
-     "h": "20:27",
-     "jogo": "Burnley x Chelsea",
-     "odd": 1.9,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "premier": 1784490954807
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784473885402,
    "super": 1784479033995,
-   "premier": 1784469761995,
+   "premier": 1784490954807,
    "copa": 1784471632896
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
-   "2026-07-19": -8.9
+   "2026-07-19": -15.9
   }
  }
 }
