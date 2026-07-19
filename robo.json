@@ -144,13 +144,19 @@
   }
  },
  "o25": {
-  "saldo": -49.9,
-  "ciclos": 75,
-  "greens": 37,
+  "saldo": -49.1,
+  "ciclos": 76,
+  "greens": 38,
   "redsCiclo": 15,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-19T08:38:42.395Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "premier · Newcastle x Wolverhampton @1.95 (tiro 3)"
+   },
    {
     "quando": "2026-07-19T07:10:13.772Z",
     "resultado": "RED_CICLO",
@@ -264,62 +270,15 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-17T15:35:14.816Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "euro · Eslováquia x Romênia @2.2 (tiro 2)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "09:30",
-     "jogo": "Newcastle x Brentford",
-     "odd": 2.15
-    },
-    {
-     "h": "09:33",
-     "jogo": "Tottenham x Aston",
-     "odd": 2.6
-    },
-    {
-     "h": "09:36",
-     "jogo": "Newcastle x Wolverhampton",
-     "odd": 1.95
-    }
-   ],
-   "alvo": {
-    "h": "09:36",
-    "jogo": "Newcastle x Wolverhampton",
-    "odd": 1.95,
-    "unidades": 4,
-    "desde": 1784450131598
-   },
-   "iniciadoEm": 1784449419007,
-   "tiros": [
-    {
-     "h": "09:30",
-     "jogo": "Newcastle x Brentford",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "09:33",
-     "jogo": "Tottenham x Aston",
-     "odd": 2.6,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1784450322203
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784430612433,
-   "premier": 1784443840491,
+   "premier": 1784450322203,
    "euro": 1784438392434,
    "super": 1784445013670
   },
@@ -328,7 +287,7 @@
    "2026-07-16": -14.2,
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
-   "2026-07-19": -9
+   "2026-07-19": -8.2
   }
  },
  "ambas": {
