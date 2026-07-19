@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -54.1,
-  "ciclos": 90,
+  "saldo": -61.1,
+  "ciclos": 91,
   "greens": 26,
-  "redsCiclo": 31,
+  "redsCiclo": 32,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-19T14:34:14.301Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-19T13:38:59.302Z",
     "resultado": "GREEN",
@@ -120,70 +126,23 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-17T16:05:56.520Z",
-    "resultado": "GREEN",
-    "unidades": 3.8,
-    "detalhe": "premier · Southampton x Liverpool @4.75 (tiro 1)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "15:25",
-     "jogo": "Rio de Janeiro x Asuncion",
-     "odd": 4.5
-    },
-    {
-     "h": "15:28",
-     "jogo": "Bogota x La Plata",
-     "odd": 6.5
-    },
-    {
-     "h": "15:31",
-     "jogo": "Avellaneda x Porto Alegre",
-     "odd": 6
-    }
-   ],
-   "alvo": {
-    "h": "15:31",
-    "jogo": "Avellaneda x Porto Alegre",
-    "odd": 6,
-    "unidades": 4,
-    "desde": 1784471474999
-   },
-   "iniciadoEm": 1784470934996,
-   "tiros": [
-    {
-     "h": "15:25",
-     "jogo": "Rio de Janeiro x Asuncion",
-     "odd": 4.5,
-     "unidades": 1
-    },
-    {
-     "h": "15:28",
-     "jogo": "Bogota x La Plata",
-     "odd": 6.5,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "super": 1784471654198
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784467672200,
    "premier": 1784468339201,
    "euro": 1784448015005,
-   "super": 1784326408000
+   "super": 1784471654198
   },
   "dias": {
    "2026-07-15": -35,
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
-   "2026-07-19": -25.3
+   "2026-07-19": -32.3
   }
  },
  "o25": {
