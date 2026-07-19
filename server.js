@@ -1917,7 +1917,8 @@ function atualizaRoboLedger() { roboRuns++; for (const m of ROBO_MKTS) atualizaR
 app.get("/api/robo/rodar", (req, res) => {
   let err = null;
   try { atualizaRoboLedger(); } catch (e) { err = e.message + " | " + String(e.stack || "").split("\n")[1]; }
-  res.json({ err, roboRuns, traceKeys: Object.keys(roboTrace).length, roboTrace, estados: Object.fromEntries(ROBO_MKTS.map(m => [m, roboState[m].ciclo ? "CICLO " + roboState[m].ciclo.liga : "vigilia"])) });
+  const storeShape = Object.keys(store).map(l => { const d = store[l] || {}; return { liga: l, games: (d.games || []).length, gamesAll: (d.gamesAll || []).length, upcoming: (d.upcomingRaw || []).length, fundidos: gamesFundidos(l).length }; });
+  res.json({ err, roboRuns, traceKeys: Object.keys(roboTrace).length, storeShape, roboTrace, estados: Object.fromEntries(ROBO_MKTS.map(m => [m, roboState[m].ciclo ? "CICLO " + roboState[m].ciclo.liga : "vigilia"])) });
 });
 app.get("/api/robo", (req, res) => {
   try {
