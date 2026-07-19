@@ -144,13 +144,19 @@
   }
  },
  "o25": {
-  "saldo": -46.3,
-  "ciclos": 78,
-  "greens": 40,
+  "saldo": -45.2,
+  "ciclos": 79,
+  "greens": 41,
   "redsCiclo": 15,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-19T11:37:14.496Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Rio de Janeiro x Belo Horizonte @2.07 (tiro 1)"
+   },
    {
     "quando": "2026-07-19T10:32:36.801Z",
     "resultado": "GREEN",
@@ -264,57 +270,22 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-17T20:31:28.716Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "super · Asuncion x La Plata @2.55 (tiro 1)"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "12:34",
-     "jogo": "Rio de Janeiro x Belo Horizonte",
-     "odd": 2.07
-    },
-    {
-     "h": "12:37",
-     "jogo": "La Plata x Avellaneda",
-     "odd": 2.55
-    },
-    {
-     "h": "12:40",
-     "jogo": "Penarol x Santos",
-     "odd": 2.55
-    }
-   ],
-   "alvo": {
-    "h": "12:34",
-    "jogo": "Rio de Janeiro x Belo Horizonte",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1784460674793
-   },
-   "iniciadoEm": 1784460674793
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784430612433,
    "premier": 1784457156700,
    "euro": 1784438392434,
-   "super": 1784445013670
+   "super": 1784461034304
   },
   "dias": {
    "2026-07-15": -19.6,
    "2026-07-16": -14.2,
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
-   "2026-07-19": -5.4
+   "2026-07-19": -4.3
   }
  },
  "ambas": {
