@@ -173,13 +173,19 @@
   }
  },
  "o25": {
-  "saldo": -40.8,
-  "ciclos": 82,
+  "saldo": -47.8,
+  "ciclos": 83,
   "greens": 44,
-  "redsCiclo": 15,
+  "redsCiclo": 16,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-19T15:08:14.499Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-19T14:45:52.202Z",
     "resultado": "GREEN",
@@ -293,63 +299,16 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-18T00:31:14.275Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "15:59",
-     "jogo": "Alemanha x República Tcheca",
-     "odd": 2.45
-    },
-    {
-     "h": "16:02",
-     "jogo": "Inglaterra x Geórgia",
-     "odd": 2.2
-    },
-    {
-     "h": "16:05",
-     "jogo": "Escócia x Países Baixos",
-     "odd": 2.07
-    }
-   ],
-   "alvo": {
-    "h": "16:05",
-    "jogo": "Escócia x Países Baixos",
-    "odd": 2.07,
-    "unidades": 4,
-    "desde": 1784473493495
-   },
-   "iniciadoEm": 1784472973397,
-   "tiros": [
-    {
-     "h": "15:59",
-     "jogo": "Alemanha x República Tcheca",
-     "odd": 2.45,
-     "unidades": 1
-    },
-    {
-     "h": "16:02",
-     "jogo": "Inglaterra x Geórgia",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "euro": 1784473694398
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784472352097,
    "premier": 1784457156700,
-   "euro": 1784466653209,
+   "euro": 1784473694398,
    "super": 1784461034304
   },
   "dias": {
@@ -357,7 +316,7 @@
    "2026-07-16": -14.2,
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
-   "2026-07-19": 0.1
+   "2026-07-19": -6.9
   }
  },
  "ambas": {
