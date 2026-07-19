@@ -277,8 +277,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "07:03",
@@ -297,13 +297,21 @@
     }
    ],
    "alvo": {
-    "h": "07:03",
-    "jogo": "Newcastle x Watford",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1784440814937
+    "h": "07:06",
+    "jogo": "United x Leeds",
+    "odd": 2.5,
+    "unidades": 2,
+    "desde": 1784441141726
    },
-   "iniciadoEm": 1784440814937
+   "iniciadoEm": 1784440814937,
+   "tiros": [
+    {
+     "h": "07:03",
+     "jogo": "Newcastle x Watford",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784430612433,
@@ -449,7 +457,36 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:09",
+     "jogo": "Liverpool x Newcastle",
+     "odd": 1.9
+    },
+    {
+     "h": "07:12",
+     "jogo": "Wolverhampton x Chelsea",
+     "odd": 1.85
+    },
+    {
+     "h": "07:15",
+     "jogo": "Everton x Leeds",
+     "odd": 2.07
+    }
+   ],
+   "alvo": {
+    "h": "07:09",
+    "jogo": "Liverpool x Newcastle",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1784440815128
+   },
+   "iniciadoEm": 1784440815128
+  },
   "cooldown": {
    "euro": 1784436412132,
    "super": 1784440142925,
