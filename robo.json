@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -65.1,
-  "ciclos": 97,
+  "saldo": -72.1,
+  "ciclos": 98,
   "greens": 29,
-  "redsCiclo": 35,
+  "redsCiclo": 36,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-19T18:49:11.600Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-19T18:25:46.104Z",
     "resultado": "RED_CICLO",
@@ -120,70 +126,23 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-18T00:05:41.170Z",
-    "resultado": "GREEN",
-    "unidades": 5.4,
-    "detalhe": "premier · City x Watford @4.2 (tiro 2)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "19:38",
-     "jogo": "Itália x Suíça",
-     "odd": 4.33
-    },
-    {
-     "h": "19:41",
-     "jogo": "Polônia x Bélgica",
-     "odd": 4.75
-    },
-    {
-     "h": "19:44",
-     "jogo": "Eslovênia x Turquia",
-     "odd": 6.5
-    }
-   ],
-   "alvo": {
-    "h": "19:44",
-    "jogo": "Eslovênia x Turquia",
-    "odd": 6.5,
-    "unidades": 4,
-    "desde": 1784486727002
-   },
-   "iniciadoEm": 1784485952803,
-   "tiros": [
-    {
-     "h": "19:38",
-     "jogo": "Itália x Suíça",
-     "odd": 4.33,
-     "unidades": 1
-    },
-    {
-     "h": "19:41",
-     "jogo": "Polônia x Bélgica",
-     "odd": 4.75,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "euro": 1784486951501
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784483534795,
    "premier": 1784468339201,
-   "euro": 1784476193195,
+   "euro": 1784486951501,
    "super": 1784485546004
   },
   "dias": {
    "2026-07-15": -35,
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
-   "2026-07-19": -36.3
+   "2026-07-19": -43.3
   }
  },
  "o25": {
