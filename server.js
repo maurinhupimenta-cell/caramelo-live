@@ -1220,7 +1220,11 @@ app.post("/api/snapshot2", (req, res) => {
     let casados = 0;
     for (const j of jogos) {
       if (!j || !j.casa || !j.fora || j.a == null || j.b == null) continue;
-      if (sonda2Amostras.length < 30) sonda2Amostras.push({ casa: j.casa, fora: j.fora, placar: j.a + "-" + j.b });
+      const temLetras = s => (String(s).match(/[A-Za-zÀ-ÿ]/g) || []).length >= 3;
+      const ehLixo = s => /resultado|encerr|ao vivo|final|partida|jogo|data|hora/i.test(String(s));
+      if (!temLetras(j.casa) || !temLetras(j.fora) || ehLixo(j.casa) || ehLixo(j.fora)) continue;
+      if (parseInt(j.a) > 9 || parseInt(j.b) > 9) continue;
+      if (sonda2Amostras.length < 60 && (String(j.casa).match(/[A-Za-zÀ-ÿ]/g) || []).length >= 3) sonda2Amostras.push({ casa: j.casa, fora: j.fora, placar: j.a + "-" + j.b });
       for (const liga of Object.keys(store)) {
         const d = store[liga];
         if (!d || !d.upcomingRaw) continue;

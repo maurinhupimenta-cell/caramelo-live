@@ -6,17 +6,19 @@
   const vistos=new Set();
   function parseTexto(txt){
     const jogos=[];
-    const re1=/([A-Za-zÀ-ÿ0-9'. ]{3,28}?)\s+(\d{1,2})\s*[-–x:]\s*(\d{1,2})\s+([A-Za-zÀ-ÿ0-9'. ]{3,28})/g;
+    const re1=/([A-Za-zÀ-ÿ][A-Za-zÀ-ÿ'. ]{2,27}?)\s+(\d{1,2})\s*[-–x:]\s*(\d{1,2})\s+([A-Za-zÀ-ÿ][A-Za-zÀ-ÿ'. ]{2,27})/g;
     let m;
     while((m=re1.exec(txt))!==null){
       const casa=m[1].trim(),fora=m[4].trim();
       if(casa.length<3||fora.length<3)continue;
+      if(/resultado|encerr|ao vivo|final|partida/i.test(casa+fora))continue;
+      if(parseInt(m[2])>9||parseInt(m[3])>9)continue;
       jogos.push({casa,fora,a:m[2],b:m[3],horario:null});
     }
     const linhas=txt.split("\n").map(s=>s.trim()).filter(Boolean);
     for(let i=1;i+1<linhas.length;i++){
       const sc=linhas[i].match(/^(\d{1,2})\s*[-–x:]\s*(\d{1,2})$/);
-      if(sc&&linhas[i-1].length>=3&&linhas[i-1].length<=28&&linhas[i+1].length>=3&&linhas[i+1].length<=28){
+      if(sc&&parseInt(sc[1])<=9&&parseInt(sc[2])<=9&&/[A-Za-zÀ-ÿ]{3}/.test(linhas[i-1])&&/[A-Za-zÀ-ÿ]{3}/.test(linhas[i+1])&&!/\d/.test(linhas[i-1])&&!/\d/.test(linhas[i+1])&&linhas[i-1].length<=28&&linhas[i+1].length<=28){
         jogos.push({casa:linhas[i-1],fora:linhas[i+1],a:sc[1],b:sc[2],horario:null});
       }
     }
@@ -54,5 +56,5 @@
   }
   setInterval(envia,15000);
   envia();
-  console.log("🛰️ SONDA 2 v2 ATIVA — auto-atualização a cada 15s. Diagnóstico: window.__s2Diag");
+  console.log("🛰️ SONDA 2 v3 ATIVA — auto-atualização a cada 15s. Diagnóstico: window.__s2Diag");
 })();
