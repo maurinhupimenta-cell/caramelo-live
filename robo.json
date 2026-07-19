@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -72.1,
-  "ciclos": 98,
+  "saldo": -79.1,
+  "ciclos": 99,
   "greens": 29,
-  "redsCiclo": 36,
+  "redsCiclo": 37,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-19T19:28:12.204Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-19T18:49:11.600Z",
     "resultado": "RED_CICLO",
@@ -120,61 +126,12 @@
     "resultado": "GREEN",
     "unidades": 12,
     "detalhe": "euro · Suíça x Turquia @4.75 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-18T00:25:54.271Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "20:19",
-     "jogo": "Cabo Verde x França",
-     "odd": 4.2
-    },
-    {
-     "h": "20:22",
-     "jogo": "Alemanha x Escócia",
-     "odd": 5
-    },
-    {
-     "h": "20:25",
-     "jogo": "Brasil x Bélgica",
-     "odd": 4.5
-    }
-   ],
-   "alvo": {
-    "h": "20:25",
-    "jogo": "Brasil x Bélgica",
-    "odd": 4.5,
-    "unidades": 4,
-    "desde": 1784489114505
-   },
-   "iniciadoEm": 1784488632305,
-   "tiros": [
-    {
-     "h": "20:19",
-     "jogo": "Cabo Verde x França",
-     "odd": 4.2,
-     "unidades": 1
-    },
-    {
-     "h": "20:22",
-     "jogo": "Alemanha x Escócia",
-     "odd": 5,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784483534795,
+   "copa": 1784489292106,
    "premier": 1784468339201,
    "euro": 1784486951501,
    "super": 1784485546004
@@ -183,7 +140,7 @@
    "2026-07-15": -35,
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
-   "2026-07-19": -43.3
+   "2026-07-19": -50.3
   }
  },
  "o25": {
