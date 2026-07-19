@@ -2068,15 +2068,30 @@ app.get("/api/padroes/:liga", (req, res) => {
       (porColuna[":" + min] = porColuna[":" + min] || [0, 0])[0]++; if (pago) porColuna[":" + min][1]++;
     }
     // ===== FAMILIA 3: PADRAO DE PULO (distancia entre greens: 5, 6, 10 casas...) =====
-    const idxG = []; for (let i = 0; i < seq.length; i++) if (seq[i] === "G") idxG.push(i);
-    const pulos = {}; // PULO = casas vazias (reds) ENTRE dois greens consecutivos (o que o olho ve no quadro)
-    for (let i = 1; i < idxG.length; i++) { const vazias = idxG[i] - idxG[i - 1] - 1; pulos[vazias] = (pulos[vazias] || 0) + 1; }
-    const totPulos = Object.values(pulos).reduce((a, b) => a + b, 0);
-    const distPulo = Object.entries(pulos).map(([gap, n]) => ({ pulo: +gap, vezes: n, pct: totPulos ? Math.round(n / totPulos * 100) : 0 })).sort((a, b) => b.vezes - a.vezes).slice(0, 8);
-    const desdeUltimoG = idxG.length ? (seq.length - 1 - idxG[idxG.length - 1]) : null; // reds ja acumulados desde o ultimo green
+    // ===== PULO POR PLACAR: de quantas em quantas casas o MESMO placar se repete (leitura do usuario) =====
+    // ex: 1-0 aparece, conta as casas ate o proximo 1-0 (pulou 4); 4-1 pulou 3; etc.
+    const posPlacar = {};
+    for (let i = 0; i < games.length; i++) {
+      const g = games[i]; if (g.a == null || g.b == null) continue;
+      const pl = g.a + "-" + g.b;
+      (posPlacar[pl] = posPlacar[pl] || []).push(i);
+    }
+    const pulosPorPlacar = [];
+    for (const [pl, idxs] of Object.entries(posPlacar)) {
+      if (idxs.length < 2) continue;
+      const gaps = []; for (let i = 1; i < idxs.length; i++) gaps.push(idxs[i] - idxs[i - 1]);
+      const soma = gaps.reduce((a, b) => a + b, 0);
+      const medio = Math.round(soma / gaps.length * 10) / 10;
+      const cont = {}; for (const gp of gaps) cont[gp] = (cont[gp] || 0) + 1;
+      const maisComum = +Object.entries(cont).sort((a, b) => b[1] - a[1])[0][0];
+      const desde = games.length - 1 - idxs[idxs.length - 1]; // casas desde a ultima vez que esse placar saiu
+      pulosPorPlacar.push({ placar: pl, vezes: idxs.length, puloMedio: medio, puloComum: maisComum, ultimos: gaps.slice(-6), desde, prontoSe: maisComum });
+    }
+    pulosPorPlacar.sort((a, b) => b.vezes - a.vezes);
+    const distPulo = pulosPorPlacar.slice(0, 12);
 
     const resp = { liga, mkt, jogosNoDia: games.length, regua3, padroes: out.slice(0, 10), porOdd: garimpa(porOdd, 6), porTime: garimpa(porTime, 6),
-      porPlacar: garimpa(porPlacar, 6), porColuna: garimpa(porColuna, 5), distPulo, desdeUltimoG };
+      porPlacar: garimpa(porPlacar, 6), porColuna: garimpa(porColuna, 5), pulosPorPlacar: distPulo };
     padroesCache[ck] = { ts: now, out: resp };
     res.json(resp);
   } catch (e) { res.status(500).json({ erro: e.message }); }
