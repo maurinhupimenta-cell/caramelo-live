@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -58.1,
-  "ciclos": 96,
+  "saldo": -65.1,
+  "ciclos": 97,
   "greens": 29,
-  "redsCiclo": 34,
+  "redsCiclo": 35,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-19T18:25:46.104Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-19T17:52:14.895Z",
     "resultado": "GREEN",
@@ -120,70 +126,23 @@
     "resultado": "GREEN",
     "unidades": 5.4,
     "detalhe": "premier · City x Watford @4.2 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-17T23:26:30.271Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "19:16",
-     "jogo": "Itaquera x Lima",
-     "odd": 4.2
-    },
-    {
-     "h": "19:19",
-     "jogo": "Santiago x Buenos Aires",
-     "odd": 3.5
-    },
-    {
-     "h": "19:22",
-     "jogo": "Agua Branca x Guayaquil",
-     "odd": 4
-    }
-   ],
-   "alvo": {
-    "h": "19:22",
-    "jogo": "Agua Branca x Guayaquil",
-    "odd": 4,
-    "unidades": 4,
-    "desde": 1784485345401
-   },
-   "iniciadoEm": 1784484774407,
-   "tiros": [
-    {
-     "h": "19:16",
-     "jogo": "Itaquera x Lima",
-     "odd": 4.2,
-     "unidades": 1
-    },
-    {
-     "h": "19:19",
-     "jogo": "Santiago x Buenos Aires",
-     "odd": 3.5,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "super": 1784485546004
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784483534795,
    "premier": 1784468339201,
    "euro": 1784476193195,
-   "super": 1784479932698
+   "super": 1784485546004
   },
   "dias": {
    "2026-07-15": -35,
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
-   "2026-07-19": -29.3
+   "2026-07-19": -36.3
   }
  },
  "o25": {
