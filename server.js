@@ -1289,6 +1289,10 @@ app.post("/api/snapshot2", (req, res) => {
   } catch (e) { res.status(500).json({ ok: false, erro: e.message }); }
 });
 // serve o script da sonda 2 (colar no console vira uma linha so)
+app.get("/sonda.js", (req, res) => {
+  try { const fs = require("fs"); res.type("application/javascript").send(fs.readFileSync(__dirname + "/captura-completa.js", "utf8")); }
+  catch (e) { res.status(500).send("// erro: " + e.message); }
+});
 app.get("/sonda2.js", (req, res) => {
   try {
     const fs = require("fs");
