@@ -289,13 +289,19 @@
   }
  },
  "ambas": {
-  "saldo": 1.8,
-  "ciclos": 90,
-  "greens": 57,
+  "saldo": 2.7,
+  "ciclos": 91,
+  "greens": 58,
   "redsCiclo": 8,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-19T14:46:34.398Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Asuncion x Agua Branca @1.93 (tiro 2)"
+   },
    {
     "quando": "2026-07-19T14:33:52.997Z",
     "resultado": "RED_CICLO",
@@ -409,56 +415,15 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-18T00:53:03.673Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "15:40",
-     "jogo": "Rio de Janeiro x Buenos Aires",
-     "odd": 1.86
-    },
-    {
-     "h": "15:43",
-     "jogo": "Asuncion x Agua Branca",
-     "odd": 1.93
-    },
-    {
-     "h": "15:46",
-     "jogo": "Guayaquil x Sao Paulo",
-     "odd": 1.8
-    }
-   ],
-   "alvo": {
-    "h": "15:43",
-    "jogo": "Asuncion x Agua Branca",
-    "odd": 1.93,
-    "unidades": 2,
-    "desde": 1784472195206
-   },
-   "iniciadoEm": 1784471654393,
-   "tiros": [
-    {
-     "h": "15:40",
-     "jogo": "Rio de Janeiro x Buenos Aires",
-     "odd": 1.86,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "super": 1784472394294
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784448653897,
-   "super": 1784456136299,
+   "super": 1784472394294,
    "premier": 1784469761995,
    "copa": 1784471632896
   },
@@ -466,7 +431,7 @@
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
-   "2026-07-19": -6.2
+   "2026-07-19": -5.3
   }
  }
 }
