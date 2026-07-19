@@ -1190,6 +1190,20 @@ function ligaBateComConteudo(liga, games) {
 // horario+casa com o upcomingRaw de cada uma, e mantem um OVERLAY (rapidos) que alimenta
 // robo e radar ~6min antes do feed oficial. Quando o oficial chega, o overlay se dissolve.
 let rapidos = {}; // liga -> { "hor|casa": game }
+let upVistos = {}; // liga -> [{casa,fora,horario,odds,ts}] futuros vistos nos ultimos 40min (o resultado chega DEPOIS do jogo sair do upcoming)
+function registraUpVistos(liga, upcoming) {
+  try {
+    const arr = upVistos[liga] = upVistos[liga] || [];
+    for (const u of upcoming || []) {
+      if (!u || !u.casa || !u.fora) continue;
+      const ja = arr.find(x => x.casa === u.casa && x.fora === u.fora && x.horario === (u.horario || ""));
+      if (ja) { ja.ts = Date.now(); if (u.odds) ja.odds = u.odds; }
+      else arr.push({ casa: u.casa, fora: u.fora, horario: u.horario || "", odds: u.odds || null, ts: Date.now() });
+    }
+    const corte = Date.now() - 40 * 60000;
+    upVistos[liga] = arr.filter(x => x.ts >= corte).slice(-80);
+  } catch (e) {}
+}
 let sonda2Stats = { recebidos: 0, casados: 0, ultimoEm: null };
 let sonda2Amostras = []; // ultimos crus recebidos (diagnostico de calibracao)
 function normNome(s) {
@@ -1226,9 +1240,8 @@ app.post("/api/snapshot2", (req, res) => {
       if (parseInt(j.a) > 9 || parseInt(j.b) > 9) continue;
       if (sonda2Amostras.length < 60 && (String(j.casa).match(/[A-Za-zÀ-ÿ]/g) || []).length >= 3) sonda2Amostras.push({ casa: j.casa, fora: j.fora, placar: j.a + "-" + j.b });
       for (const liga of Object.keys(store)) {
-        const d = store[liga];
-        if (!d || !d.upcomingRaw) continue;
-        const u = d.upcomingRaw.find(x => nomesBatem(x.casa, j.casa) && nomesBatem(x.fora, j.fora));
+        const vistos = (upVistos[liga] || []).concat(((store[liga] || {}).upcomingRaw) || []);
+        const u = vistos.find(x => nomesBatem(x.casa, j.casa) && nomesBatem(x.fora, j.fora));
         if (u) {
           const a = parseInt(j.a), b = parseInt(j.b);
           const g = { casa: j.casa, fora: j.fora, a, b, total: a + b, placar: a + "-" + b, horario: u.horario || j.horario || "", odds: u.odds || null, _rapido: true };
@@ -1330,6 +1343,7 @@ app.post("/api/snapshot", (req, res) => {
       }
     } catch (e) {}
     jogosDirty = true;
+    registraUpVistos(liga, upcoming); // memoria dos futuros p/ casamento da sonda 2
     if (!ligaBateComConteudo(liga, games)) {
       snapshotsRejeitados[liga] = (snapshotsRejeitados[liga] || 0) + 1;
       return res.status(422).json({ ok: false, erro: "conteudo nao bate com a liga (rotulo trocado) - snapshot rejeitado", liga });
