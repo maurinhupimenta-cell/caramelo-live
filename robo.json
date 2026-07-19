@@ -289,13 +289,19 @@
   }
  },
  "ambas": {
-  "saldo": -7.9,
-  "ciclos": 95,
-  "greens": 60,
+  "saldo": -6.9,
+  "ciclos": 96,
+  "greens": 61,
   "redsCiclo": 10,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-19T22:41:12.301Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Hungria x Alemanha @1.98 (tiro 1)"
+   },
    {
     "quando": "2026-07-19T19:55:54.999Z",
     "resultado": "RED_CICLO",
@@ -409,47 +415,14 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "premier · Leicester x Islington @1.95 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-19T04:46:52.322Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "euro · Bélgica x Alemanha @1.85 (tiro 1)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:38",
-     "jogo": "Hungria x Alemanha",
-     "odd": 1.98
-    },
-    {
-     "h": "23:41",
-     "jogo": "Suíça x Turquia",
-     "odd": 2.02
-    },
-    {
-     "h": "23:44",
-     "jogo": "Croácia x Alemanha",
-     "odd": 1.87
-    }
-   ],
-   "alvo": {
-    "h": "23:38",
-    "jogo": "Hungria x Alemanha",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1784500153705
-   },
-   "iniciadoEm": 1784500153705
+  "consumidas": {
+   "euro": 1784500872197
   },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784473885402,
+   "euro": 1784500872197,
    "super": 1784479033995,
    "premier": 1784490954807,
    "copa": 1784471632896
@@ -458,7 +431,7 @@
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
-   "2026-07-19": -15.9
+   "2026-07-19": -14.9
   }
  }
 }
