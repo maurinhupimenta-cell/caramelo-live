@@ -2110,7 +2110,7 @@ app.get("/api/padroes/:liga", (req, res) => {
     const pulosPorPlacar = achados.slice(0, 14);
 
     const resp = { liga, mkt, jogosNoDia: games.length, regua3, padroes: out.slice(0, 10), porOdd: garimpa(porOdd, 6), porTime: garimpa(porTime, 6),
-      porPlacar: garimpa(porPlacar, 6), porColuna: garimpa(porColuna, 5), pulosPorPlacar: distPulo };
+      porPlacar: garimpa(porPlacar, 6), porColuna: garimpa(porColuna, 5), pulosPorPlacar };
     padroesCache[ck] = { ts: now, out: resp };
     res.json(resp);
   } catch (e) { res.status(500).json({ erro: e.message }); }
