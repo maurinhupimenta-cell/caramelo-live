@@ -301,9 +301,7 @@
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {
-   "euro": 1784473694398
-  },
+  "consumidas": {},
   "ciclo": null,
   "cooldown": {
    "copa": 1784472352097,
@@ -320,13 +318,19 @@
   }
  },
  "ambas": {
-  "saldo": 2.7,
-  "ciclos": 91,
+  "saldo": -4.3,
+  "ciclos": 92,
   "greens": 58,
-  "redsCiclo": 8,
+  "redsCiclo": 9,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-19T15:11:25.502Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-19T14:46:34.398Z",
     "resultado": "GREEN",
@@ -440,55 +444,12 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · Portugal x Itália @1.98 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-18T01:37:26.876Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "16:02",
-     "jogo": "Inglaterra x Geórgia",
-     "odd": 2.05
-    },
-    {
-     "h": "16:05",
-     "jogo": "Escócia x Países Baixos",
-     "odd": 1.85
-    },
-    {
-     "h": "16:08",
-     "jogo": "Sérvia x Inglaterra",
-     "odd": 1.98
-    }
-   ],
-   "alvo": {
-    "h": "16:05",
-    "jogo": "Escócia x Países Baixos",
-    "odd": 1.85,
-    "unidades": 2,
-    "desde": 1784473493600
-   },
-   "iniciadoEm": 1784472973500,
-   "tiros": [
-    {
-     "h": "16:02",
-     "jogo": "Inglaterra x Geórgia",
-     "odd": 2.05,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784448653897,
+   "euro": 1784473885402,
    "super": 1784472394294,
    "premier": 1784469761995,
    "copa": 1784471632896
@@ -497,7 +458,7 @@
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
-   "2026-07-19": -5.3
+   "2026-07-19": -12.3
   }
  }
 }
