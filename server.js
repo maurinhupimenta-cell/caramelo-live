@@ -1757,8 +1757,9 @@ function montaRobo(mkt) {
       }
     } catch (e) {}
     if (L.consumidas[liga]) {
-      if (!noBolsao) { delete L.consumidas[liga]; salvaRoboLedger(); } // saiu do bolsao: re-arma para o proximo
-      continue;
+      const idade = Date.now() - (typeof L.consumidas[liga] === "number" ? L.consumidas[liga] : 0);
+      if (!noBolsao || idade > 60 * 60000) { delete L.consumidas[liga]; salvaRoboLedger(); } // re-arma: saiu do bolsao OU 60min de trava
+      else continue;
     }
     if (L.cooldown[liga] && Date.now() - L.cooldown[liga] < 30 * 60000) continue; // descanso de 30min pos-ciclo
     if (!noBolsao) continue;
@@ -1848,7 +1849,7 @@ function atualizaRoboMkt(mkt) {
       if (g) {
         if (pays(g, mkt)) {
           const lucro = Math.round((L.ciclo.alvo.unidades * L.ciclo.alvo.odd - (L.ciclo.apostado + L.ciclo.alvo.unidades)) * 10) / 10;
-          L.consumidas = L.consumidas || {}; L.consumidas[L.ciclo.liga] = true;
+          L.consumidas = L.consumidas || {}; L.consumidas[L.ciclo.liga] = Date.now();
           L.cooldown = L.cooldown || {}; L.cooldown[L.ciclo.liga] = Date.now();
           const cG = L.ciclo; L.ciclo = null; // anula ANTES: nenhum save intermediario persiste ciclo fechado
           try { enviaPushRobo(`🟢 ${NMR[mkt]} GREEN +${lucro}u — ${cG.liga.toUpperCase()}`, `${cG.alvo.jogo} @${cG.alvo.odd} (tiro ${cG.degrau + 1}) · ciclo encerrado`, "robo-" + mkt); } catch (e) {}
@@ -1862,7 +1863,7 @@ function atualizaRoboMkt(mkt) {
         L.ciclo.alvo = null;
         if (L.ciclo.degrau >= 3) {
           const cR = L.ciclo; L.ciclo = null; // anula ANTES do registro (blindagem contra restart no meio)
-          L.consumidas = L.consumidas || {}; L.consumidas[cR.liga] = true;
+          L.consumidas = L.consumidas || {}; L.consumidas[cR.liga] = Date.now();
           L.cooldown = L.cooldown || {}; L.cooldown[cR.liga] = Date.now();
           try { enviaPushRobo(`🔴 ${NMR[mkt]} ciclo perdido −${cR.apostado}u — ${cR.liga.toUpperCase()}`, `3 tiros sem green · descanso de 30min na liga`, "robo-" + mkt); } catch (e) {}
           registraCiclo(mkt, "RED_CICLO", -cR.apostado, `${cR.liga} · ciclo perdido (3 tiros)`);
@@ -1877,7 +1878,7 @@ function atualizaRoboMkt(mkt) {
     if (!L.ciclo.alvo) {
       if (L.ciclo.degrau >= 3) { // zumbi de degrau 3 (restart no meio do fechamento): fecha como ciclo perdido
         const cZ = L.ciclo; L.ciclo = null;
-        L.consumidas = L.consumidas || {}; L.consumidas[cZ.liga] = true;
+        L.consumidas = L.consumidas || {}; L.consumidas[cZ.liga] = Date.now();
         L.cooldown = L.cooldown || {}; L.cooldown[cZ.liga] = Date.now();
         registraCiclo(mkt, "RED_CICLO", -(cZ.apostado || 7), `${cZ.liga} · ciclo perdido (3 tiros, fechado pos-reinicio)`);
         return;
@@ -1898,7 +1899,7 @@ function atualizaRoboMkt(mkt) {
         if (!L.ciclo.semAlvoDesde) { L.ciclo.semAlvoDesde = Date.now(); salvaRoboLedger(); }
         else if (Date.now() - L.ciclo.semAlvoDesde > 20 * 60000 && L.ciclo.apostado === 0) {
           // so encerra de MAOS VAZIAS; com aposta na mesa o ciclo espera o tempo que for (regra do usuario)
-          L.consumidas = L.consumidas || {}; L.consumidas[L.ciclo.liga] = true;
+          L.consumidas = L.consumidas || {}; L.consumidas[L.ciclo.liga] = Date.now();
           L.cooldown = L.cooldown || {}; L.cooldown[L.ciclo.liga] = Date.now();
           registraCiclo(mkt, "DESCARTADO", 0, `${L.ciclo.liga} · 20min sem jogo na fila`);
           L.ciclo = null;
@@ -1934,6 +1935,7 @@ app.get("/api/robo", (req, res) => {
       const dias = L.dias || {};
       const dh2 = diaHoje();
       const somaDias = n => { let s = 0; for (let i = 0; i < n; i++) { const d3 = new Date(Date.now() - i * 86400000).toLocaleDateString("en-CA", { timeZone: "America/Sao_Paulo" }); s += dias[d3] || 0; } return Math.round(s * 10) / 10; };
+      melhor.travas = { consumidas: Object.fromEntries(Object.entries(L.consumidas || {}).map(([k, v]) => [k, typeof v === "number" ? Math.round((Date.now() - v) / 60000) + "min" : String(v)])), cooldown: Object.fromEntries(Object.entries(L.cooldown || {}).filter(([k, v]) => Date.now() - v < 30 * 60000).map(([k, v]) => [k, Math.round((30 * 60000 - (Date.now() - v)) / 60000) + "min restantes"])) };
       melhor.registro = { saldo: L.saldo, hoje: Math.round((dias[dh2] || 0) * 10) / 10, semana7: somaDias(7), mes30: somaDias(30), ciclos: L.ciclos, greens: L.greens, redsCiclo: L.redsCiclo, aborts: L.aborts, descartes: L.descartes || 0 };
       if (!melhor.liga && !melhor.cicloView && L.consumidas) {
         for (const liga of Object.keys(L.consumidas)) {
