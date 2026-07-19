@@ -289,13 +289,19 @@
   }
  },
  "ambas": {
-  "saldo": 10.1,
-  "ciclos": 74,
+  "saldo": 3.1,
+  "ciclos": 75,
   "greens": 44,
-  "redsCiclo": 5,
+  "redsCiclo": 6,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-19T04:35:37.924Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-19T04:01:13.127Z",
     "resultado": "GREEN",
@@ -409,70 +415,21 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · Japão x Inglaterra @2 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-17T13:37:15.917Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "super · Asuncion x Penarol @2.1 (tiro 1)"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "05:27",
-     "jogo": "Chelsea x Brighton",
-     "odd": 1.93
-    },
-    {
-     "h": "05:30",
-     "jogo": "City x Watford",
-     "odd": 2.02
-    },
-    {
-     "h": "05:33",
-     "jogo": "Everton x United",
-     "odd": 1.9
-    }
-   ],
-   "alvo": {
-    "h": "05:33",
-    "jogo": "Everton x United",
-    "odd": 1.9,
-    "unidades": 4,
-    "desde": 1784435579224
-   },
-   "iniciadoEm": 1784435027025,
-   "tiros": [
-    {
-     "h": "05:27",
-     "jogo": "Chelsea x Brighton",
-     "odd": 1.93,
-     "unidades": 1
-    },
-    {
-     "h": "05:30",
-     "jogo": "City x Watford",
-     "odd": 2.02,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784433371823,
    "super": 1784433672933,
-   "premier": 1784308842916,
+   "premier": 1784435737731,
    "copa": 1784326556495
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
-   "2026-07-19": 2.1
+   "2026-07-19": -4.9
   }
  }
 }
