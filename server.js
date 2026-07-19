@@ -1191,6 +1191,18 @@ function ligaBateComConteudo(liga, games) {
 // robo e radar ~6min antes do feed oficial. Quando o oficial chega, o overlay se dissolve.
 let rapidos = {}; // liga -> { "hor|casa": game }
 let sonda2Stats = { recebidos: 0, casados: 0, ultimoEm: null };
+let sonda2Amostras = []; // ultimos crus recebidos (diagnostico de calibracao)
+function normNome(s) {
+  return String(s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim();
+}
+function nomesBatem(a, b) {
+  const na = normNome(a), nb = normNome(b);
+  if (!na || !nb) return false;
+  if (na === nb || na.includes(nb) || nb.includes(na)) return true;
+  const ta = na.split(" ").filter(w => w.length >= 4);
+  const tb = nb.split(" ").filter(w => w.length >= 4);
+  return ta.some(w => tb.includes(w));
+}
 function gamesFundidos(liga) {
   const d = store[liga];
   const ga = (d && d.gamesAll) || [];
@@ -1208,10 +1220,11 @@ app.post("/api/snapshot2", (req, res) => {
     let casados = 0;
     for (const j of jogos) {
       if (!j || !j.casa || !j.fora || j.a == null || j.b == null) continue;
+      if (sonda2Amostras.length < 30) sonda2Amostras.push({ casa: j.casa, fora: j.fora, placar: j.a + "-" + j.b });
       for (const liga of Object.keys(store)) {
         const d = store[liga];
         if (!d || !d.upcomingRaw) continue;
-        const u = d.upcomingRaw.find(x => x.casa === j.casa && x.fora === j.fora && (!j.horario || !x.horario || x.horario === j.horario));
+        const u = d.upcomingRaw.find(x => nomesBatem(x.casa, j.casa) && nomesBatem(x.fora, j.fora));
         if (u) {
           const a = parseInt(j.a), b = parseInt(j.b);
           const g = { casa: j.casa, fora: j.fora, a, b, total: a + b, placar: a + "-" + b, horario: u.horario || j.horario || "", odds: u.odds || null, _rapido: true };
@@ -1244,7 +1257,13 @@ app.get("/sonda2.js", (req, res) => {
 
 app.get("/api/sonda2", (req, res) => {
   const porLiga = {}; for (const l of Object.keys(rapidos)) porLiga[l] = Object.keys(rapidos[l]).length;
-  res.json({ ...sonda2Stats, overlayAtivo: porLiga });
+  const out = { ...sonda2Stats, overlayAtivo: porLiga };
+  if (req.query.debug) {
+    out.amostrasRecebidas = sonda2Amostras.slice(-15);
+    out.upcomingPorLiga = {};
+    for (const l of Object.keys(store)) out.upcomingPorLiga[l] = ((store[l] || {}).upcomingRaw || []).slice(0, 4).map(u => u.casa + " x " + u.fora);
+  }
+  res.json(out);
 });
 
 app.post("/api/snapshot", (req, res) => {
