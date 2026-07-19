@@ -131,8 +131,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:43",
@@ -151,13 +151,21 @@
     }
    ],
    "alvo": {
-    "h": "17:43",
-    "jogo": "Montevideo x Lima",
-    "odd": 3.8,
-    "unidades": 1,
-    "desde": 1784479033803
+    "h": "17:46",
+    "jogo": "Penarol x Rio de Janeiro",
+    "odd": 4.75,
+    "unidades": 2,
+    "desde": 1784479573702
    },
-   "iniciadoEm": 1784479033803
+   "iniciadoEm": 1784479033803,
+   "tiros": [
+    {
+     "h": "17:43",
+     "jogo": "Montevideo x Lima",
+     "odd": 3.8,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784467672200,
@@ -173,13 +181,19 @@
   }
  },
  "o25": {
-  "saldo": -45.9,
-  "ciclos": 84,
-  "greens": 45,
+  "saldo": -44.8,
+  "ciclos": 85,
+  "greens": 46,
   "redsCiclo": 16,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-19T16:42:15.598Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Portugal x Inglaterra @2.07 (tiro 2)"
+   },
    {
     "quando": "2026-07-19T15:49:53.403Z",
     "resultado": "GREEN",
@@ -293,57 +307,14 @@
     "resultado": "GREEN",
     "unidades": 1.6,
     "detalhe": "super · Sao Paulo x Quito @2.15 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-18T01:46:50.975Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:32",
-     "jogo": "Hungria x Polônia",
-     "odd": 2.6
-    },
-    {
-     "h": "17:35",
-     "jogo": "Portugal x Inglaterra",
-     "odd": 2.07
-    },
-    {
-     "h": "17:38",
-     "jogo": "Escócia x Eslovênia",
-     "odd": 2.6
-    }
-   ],
-   "alvo": {
-    "h": "17:35",
-    "jogo": "Portugal x Inglaterra",
-    "odd": 2.07,
-    "unidades": 2,
-    "desde": 1784479333599
-   },
-   "iniciadoEm": 1784478590794,
-   "tiros": [
-    {
-     "h": "17:32",
-     "jogo": "Hungria x Polônia",
-     "odd": 2.6,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784472352097,
    "premier": 1784457156700,
-   "euro": 1784476193296,
+   "euro": 1784479335407,
    "super": 1784461034304
   },
   "dias": {
@@ -351,7 +322,7 @@
    "2026-07-16": -14.2,
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
-   "2026-07-19": -5
+   "2026-07-19": -3.9
   }
  },
  "ambas": {
