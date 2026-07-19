@@ -1222,7 +1222,7 @@ function nomesBatem(a, b) {
 }
 function gamesFundidos(liga) {
   const d = store[liga];
-  const ga = (d && d.gamesAll) || [];
+  const ga = (d && (d.gamesAll || d.games)) || []; // fallback: gamesAll sumiu do buildStore numa reforma antiga
   const r = rapidos[liga] || {};
   const cauda = ga.slice(-40);
   const extra = Object.values(r).filter(g => !cauda.some(x => x.horario === g.horario && x.casa === g.casa));
@@ -1352,6 +1352,7 @@ app.post("/api/snapshot", (req, res) => {
       return res.status(422).json({ ok: false, erro: "conteudo nao bate com a liga (rotulo trocado) - snapshot rejeitado", liga });
     }
     const s = buildStore(liga, games, upcoming, new Date(data.atualizadoEm || Date.now()).toISOString());
+    s.gamesAll = gamesAll; // ressuscitado: a linha SEM drop (hoje = games, mantido por clareza/futuro)
     s.fonte = "ws";
     s.wsTs = Date.now();
     if (Array.isArray(curva)) liveCurves[liga + "|" + (mkt || "o35")] = { curva, mm1, mm2, topo, fundo, ts: Date.now() };
