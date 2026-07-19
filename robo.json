@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -55.1,
-  "ciclos": 92,
-  "greens": 27,
+  "saldo": -51.1,
+  "ciclos": 93,
+  "greens": 28,
   "redsCiclo": 32,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-19T15:49:53.295Z",
+    "resultado": "GREEN",
+    "unidades": 4,
+    "detalhe": "euro · França x Eslovênia @5 (tiro 1)"
+   },
    {
     "quando": "2026-07-19T15:16:13.498Z",
     "resultado": "GREEN",
@@ -120,66 +126,37 @@
     "resultado": "GREEN",
     "unidades": 9,
     "detalhe": "premier · Burnley x Chelsea @4 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-17T21:04:50.615Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo de 3 tiros fechado no boot (restart no meio do fechamento)"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:47",
-     "jogo": "França x Eslovênia",
-     "odd": 5
-    },
-    {
-     "h": "16:50",
-     "jogo": "Escócia x Turquia",
-     "odd": 5
-    },
-    {
-     "h": "16:53",
-     "jogo": "Polônia x Croácia",
-     "odd": 5
-    }
-   ],
-   "alvo": {
-    "h": "16:47",
-    "jogo": "França x Eslovênia",
-    "odd": 5,
-    "unidades": 1,
-    "desde": 1784475793702
-   },
-   "iniciadoEm": 1784475793702
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784467672200,
    "premier": 1784468339201,
-   "euro": 1784448015005,
+   "euro": 1784476193195,
    "super": 1784474173396
   },
   "dias": {
    "2026-07-15": -35,
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
-   "2026-07-19": -26.3
+   "2026-07-19": -22.3
   }
  },
  "o25": {
-  "saldo": -47.8,
-  "ciclos": 83,
-  "greens": 44,
+  "saldo": -45.9,
+  "ciclos": 84,
+  "greens": 45,
   "redsCiclo": 16,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-19T15:49:53.403Z",
+    "resultado": "GREEN",
+    "unidades": 1.9,
+    "detalhe": "euro · França x Eslovênia @2.45 (tiro 2)"
+   },
    {
     "quando": "2026-07-19T15:08:14.499Z",
     "resultado": "RED_CICLO",
@@ -293,57 +270,14 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-18T01:16:26.570Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "16:44",
-     "jogo": "Ucrânia x Albânia",
-     "odd": 2.7
-    },
-    {
-     "h": "16:47",
-     "jogo": "França x Eslovênia",
-     "odd": 2.45
-    },
-    {
-     "h": "16:50",
-     "jogo": "Escócia x Turquia",
-     "odd": 2.4
-    }
-   ],
-   "alvo": {
-    "h": "16:47",
-    "jogo": "França x Eslovênia",
-    "odd": 2.45,
-    "unidades": 2,
-    "desde": 1784476012500
-   },
-   "iniciadoEm": 1784475573301,
-   "tiros": [
-    {
-     "h": "16:44",
-     "jogo": "Ucrânia x Albânia",
-     "odd": 2.7,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784472352097,
    "premier": 1784457156700,
-   "euro": 1784473694398,
+   "euro": 1784476193296,
    "super": 1784461034304
   },
   "dias": {
@@ -351,7 +285,7 @@
    "2026-07-16": -14.2,
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
-   "2026-07-19": -6.9
+   "2026-07-19": -5
   }
  },
  "ambas": {
