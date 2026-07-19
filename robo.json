@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -49.8,
-  "ciclos": 84,
+  "saldo": -56.8,
+  "ciclos": 85,
   "greens": 23,
-  "redsCiclo": 28,
+  "redsCiclo": 29,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-19T08:00:15.197Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-19T06:47:40.396Z",
     "resultado": "RED_CICLO",
@@ -120,71 +126,21 @@
     "resultado": "GREEN",
     "unidades": 9,
     "detalhe": "euro · Suíça x Portugal @4 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-17T07:35:44.017Z",
-    "resultado": "GREEN",
-    "unidades": 13,
-    "detalhe": "premier · Southampton x Watford @5 (tiro 3)"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "08:17",
-     "jogo": "Países Baixos x Espanha",
-     "odd": 3.6
-    },
-    {
-     "h": "08:20",
-     "jogo": "Croácia x República Tcheca",
-     "odd": 5.25
-    },
-    {
-     "h": "08:56",
-     "jogo": "Itália x Alemanha",
-     "odd": 4.33
-    }
-   ],
-   "alvo": {
-    "h": "08:56",
-    "jogo": "Itália x Alemanha",
-    "odd": 4.33,
-    "unidades": 4,
-    "desde": 1784447623597
-   },
-   "iniciadoEm": 1784445134369,
-   "tiros": [
-    {
-     "h": "08:17",
-     "jogo": "Países Baixos x Espanha",
-     "odd": 3.6,
-     "unidades": 1
-    },
-    {
-     "h": "08:20",
-     "jogo": "Croácia x República Tcheca",
-     "odd": 5.25,
-     "unidades": 2
-    }
-   ],
-   "semAlvoDesde": null
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784440513022,
    "premier": 1784443660200,
-   "euro": 1784337509180,
+   "euro": 1784448015005,
    "super": 1784326408000
   },
   "dias": {
    "2026-07-15": -35,
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
-   "2026-07-19": -21
+   "2026-07-19": -28
   }
  },
  "o25": {
