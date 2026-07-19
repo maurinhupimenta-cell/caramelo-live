@@ -144,13 +144,19 @@
   }
  },
  "o25": {
-  "saldo": -42.9,
-  "ciclos": 74,
+  "saldo": -49.9,
+  "ciclos": 75,
   "greens": 37,
-  "redsCiclo": 14,
+  "redsCiclo": 15,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-19T07:10:13.772Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-19T06:50:40.693Z",
     "resultado": "GREEN",
@@ -264,71 +270,22 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "euro · Eslováquia x Romênia @2.2 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-17T15:08:56.817Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "super · Asuncion x Belo Horizonte @2.1 (tiro 1)"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "08:01",
-     "jogo": "Rio de Janeiro x Buenos Aires",
-     "odd": 2.07
-    },
-    {
-     "h": "08:04",
-     "jogo": "Lima x La Plata",
-     "odd": 2.4
-    },
-    {
-     "h": "08:07",
-     "jogo": "Quito x Santos",
-     "odd": 2.4
-    }
-   ],
-   "alvo": {
-    "h": "08:07",
-    "jogo": "Quito x Santos",
-    "odd": 2.4,
-    "unidades": 4,
-    "desde": 1784444820680
-   },
-   "iniciadoEm": 1784444294241,
-   "tiros": [
-    {
-     "h": "08:01",
-     "jogo": "Rio de Janeiro x Buenos Aires",
-     "odd": 2.07,
-     "unidades": 1
-    },
-    {
-     "h": "08:04",
-     "jogo": "Lima x La Plata",
-     "odd": 2.4,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784430612433,
    "premier": 1784443840491,
    "euro": 1784438392434,
-   "super": 1784439233230
+   "super": 1784445013670
   },
   "dias": {
    "2026-07-15": -19.6,
    "2026-07-16": -14.2,
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
-   "2026-07-19": -2
+   "2026-07-19": -9
   }
  },
  "ambas": {
