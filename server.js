@@ -1961,7 +1961,18 @@ app.get("/api/padroes/:liga", (req, res) => {
     if (padroesCache[ck] && now - padroesCache[ck].ts < 30000) return res.json(padroesCache[ck].out);
     const d = store[liga];
     if (!d || !d.games || d.games.length < 200) return res.json({ padroes: [] });
-    const games = d.gamesAll || d.games;
+    let games = d.gamesAll || d.games;
+    // ZERA AS 00 DO JOGO (regra do usuario): o cacador conta SO o dia atual do relogio do jogo
+    try {
+      let idxDia = 0;
+      for (let i2 = 1; i2 < games.length; i2++) {
+        const h1 = parseInt((games[i2].horario || "").split(":")[0]);
+        const h0 = parseInt((games[i2 - 1].horario || "").split(":")[0]);
+        if (!isNaN(h1) && !isNaN(h0) && h1 < h0 - 12) idxDia = i2; // virada 23:xx -> 00:xx
+      }
+      games = games.slice(idxDia);
+    } catch (e) {}
+    if (games.length < 30) { const outV = { liga, mkt, padroes: [], porOdd: [], porTime: [], dia: true, jogosNoDia: games.length }; padroesCache[ck] = { ts: now, out: outV }; return res.json(outV); }
     const seq = games.map(g => (pays(g, mkt) ? "G" : "R"));
     const horas = games.map(g => (g.horario || "").split(":")[0]);
     // DESFECHO NO CICLO DE 3 TIROS (como o usuario opera): apos a sequencia, veio green em ate 3 jogos?
