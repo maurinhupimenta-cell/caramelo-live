@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -79.1,
-  "ciclos": 99,
-  "greens": 29,
+  "saldo": -76.3,
+  "ciclos": 100,
+  "greens": 30,
   "redsCiclo": 37,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-19T23:04:14.500Z",
+    "resultado": "GREEN",
+    "unidades": 2.8,
+    "detalhe": "super · Belo Horizonte x Agua Branca @3.8 (tiro 1)"
+   },
    {
     "quando": "2026-07-19T19:28:12.204Z",
     "resultado": "RED_CICLO",
@@ -120,56 +126,23 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-18T01:18:29.371Z",
-    "resultado": "GREEN",
-    "unidades": 12,
-    "detalhe": "euro · Suíça x Turquia @4.75 (tiro 3)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "00:01",
-     "jogo": "Belo Horizonte x Agua Branca",
-     "odd": 3.8
-    },
-    {
-     "h": "00:04",
-     "jogo": "Quito x Itaquera",
-     "odd": 4.75
-    },
-    {
-     "h": "00:07",
-     "jogo": "Penarol x Porto Alegre",
-     "odd": 6.5
-    }
-   ],
-   "alvo": {
-    "h": "00:01",
-    "jogo": "Belo Horizonte x Agua Branca",
-    "odd": 3.8,
-    "unidades": 1,
-    "desde": 1784501714599
-   },
-   "iniciadoEm": 1784501714599
+  "consumidas": {
+   "super": 1784502254399
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784489292106,
    "premier": 1784468339201,
    "euro": 1784486951501,
-   "super": 1784485546004
+   "super": 1784502254399
   },
   "dias": {
    "2026-07-15": -35,
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
-   "2026-07-19": -50.3
+   "2026-07-19": -47.5
   }
  },
  "o25": {
@@ -318,13 +291,19 @@
   }
  },
  "ambas": {
-  "saldo": -6.9,
-  "ciclos": 96,
-  "greens": 61,
+  "saldo": -6.1,
+  "ciclos": 97,
+  "greens": 62,
   "redsCiclo": 10,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-19T23:04:14.700Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "super · Belo Horizonte x Agua Branca @1.83 (tiro 1)"
+   },
    {
     "quando": "2026-07-19T22:41:12.301Z",
     "resultado": "GREEN",
@@ -438,48 +417,15 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "copa · Noruega x Austrália @1.9 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-19T05:17:48.326Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "premier · Leicester x Islington @1.95 (tiro 2)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "00:01",
-     "jogo": "Belo Horizonte x Agua Branca",
-     "odd": 1.83
-    },
-    {
-     "h": "00:04",
-     "jogo": "Quito x Itaquera",
-     "odd": 2
-    },
-    {
-     "h": "00:07",
-     "jogo": "Penarol x Porto Alegre",
-     "odd": 2.3
-    }
-   ],
-   "alvo": {
-    "h": "00:01",
-    "jogo": "Belo Horizonte x Agua Branca",
-    "odd": 1.83,
-    "unidades": 1,
-    "desde": 1784501532403
-   },
-   "iniciadoEm": 1784501532403
+  "consumidas": {
+   "super": 1784502254595
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784500872197,
-   "super": 1784479033995,
+   "super": 1784502254595,
    "premier": 1784490954807,
    "copa": 1784471632896
   },
@@ -487,7 +433,7 @@
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
-   "2026-07-19": -14.9
+   "2026-07-19": -14.1
   }
  }
 }
