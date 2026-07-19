@@ -1669,6 +1669,7 @@ function roboVazio() { return { saldo: 0, ciclos: 0, greens: 0, redsCiclo: 0, ab
 let roboState = { o35: roboVazio(), o25: roboVazio(), ambas: roboVazio() };
 const fibPrev = {}; // (legado)
 let roboTrace = {}; // caixa-preta: por que cada liga entrou/nao entrou (debug)
+let entradasLog = []; // foto de cada entrada real (auditoria: subindo ou caindo?)
 async function salvaRoboLedger() {
   if (!GH_T) return;
   try {
@@ -1828,6 +1829,16 @@ function atualizaRoboMkt(mkt) {
         const plano = melhor.degraus.map(dg => ({ h: dg.h, jogo: dg.jogo, odd: dg.odd }));
         const d0 = plano[0];
         L.ciclo = { liga: melhor.liga, degrau: 0, apostado: 0, plano, alvo: { h: d0.h, jogo: d0.jogo, odd: d0.odd, unidades: 1, desde: Date.now() }, iniciadoEm: Date.now() };
+        // FOTO DA ENTRADA (auditoria): a serie estava subindo ou caindo no disparo?
+        try {
+          const dd = store[melhor.liga];
+          const sfx = chartSeries(listaCheia(dd), mkt, Math.max(2, Math.min(20, listaCheia(dd).length))).slice(-100);
+          const n7 = sfx.length;
+          const ult7 = sfx.slice(-7);
+          const kE = 2 / 6; let eAc = sfx[0]; const ema = sfx.map(v => (eAc = v * kE + eAc * (1 - kE)));
+          entradasLog.unshift({ hora: new Date().toLocaleTimeString("pt-BR", { timeZone: "America/Sao_Paulo" }), mkt, liga: melhor.liga, jogoT1: d0.jogo + " @" + d0.odd, fib: melhor.fib || null, ancora: melhor.ancoraDia, ult7pontos: ult7, subiuNoUltimo: n7 >= 2 ? sfx[n7 - 1] >= sfx[n7 - 2] : null, emaSubindo: n7 >= 2 ? ema[n7 - 1] > ema[n7 - 2] : null });
+          entradasLog = entradasLog.slice(0, 25);
+        } catch (e) {}
         salvaRoboLedger();
         try { enviaPushRobo(`🤖 ROBÔ ${NMR[mkt]} ENTROU — ${melhor.liga.toUpperCase()}`, `PLANO: T1 ${plano[0].h} @${plano[0].odd} → T2 ${plano[1].h} @${plano[1].odd} → T3 ${plano[2].h} @${plano[2].odd} · ${plano[0].jogo}`, "robo-" + mkt); } catch (e) {}
       }
@@ -1922,6 +1933,7 @@ app.get("/api/robo/rodar", (req, res) => {
   const storeShape = Object.keys(store).map(l => { const d = store[l] || {}; return { liga: l, games: (d.games || []).length, gamesAll: (d.gamesAll || []).length, upcoming: (d.upcomingRaw || []).length, fundidos: gamesFundidos(l).length }; });
   res.json({ err, roboRuns, traceKeys: Object.keys(roboTrace).length, storeShape, roboTrace, estados: Object.fromEntries(ROBO_MKTS.map(m => [m, roboState[m].ciclo ? "CICLO " + roboState[m].ciclo.liga : "vigilia"])) });
 });
+app.get("/api/entradas", (req, res) => { res.json({ total: entradasLog.length, entradas: entradasLog }); });
 app.get("/api/robo", (req, res) => {
   try {
     const out = {};
