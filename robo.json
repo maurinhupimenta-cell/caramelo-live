@@ -289,13 +289,19 @@
   }
  },
  "ambas": {
-  "saldo": 3.1,
-  "ciclos": 75,
-  "greens": 44,
+  "saldo": 4,
+  "ciclos": 76,
+  "greens": 45,
   "redsCiclo": 6,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-19T04:46:52.322Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Bélgica x Alemanha @1.85 (tiro 1)"
+   },
    {
     "quando": "2026-07-19T04:35:37.924Z",
     "resultado": "RED_CICLO",
@@ -409,18 +415,14 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · Norwich x United @1.95 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-17T14:27:53.919Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Japão x Inglaterra @2 (tiro 2)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "euro": 1784436412132
+  },
   "ciclo": null,
   "cooldown": {
-   "euro": 1784433371823,
+   "euro": 1784436412132,
    "super": 1784433672933,
    "premier": 1784435737731,
    "copa": 1784326556495
@@ -429,7 +431,7 @@
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
-   "2026-07-19": -4.9
+   "2026-07-19": -4
   }
  }
 }
