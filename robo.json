@@ -289,13 +289,19 @@
   }
  },
  "ambas": {
-  "saldo": 7.7,
-  "ciclos": 88,
-  "greens": 56,
+  "saldo": 8.8,
+  "ciclos": 89,
+  "greens": 57,
   "redsCiclo": 7,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-19T14:02:42.099Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Burnley x West Ham @2.05 (tiro 2)"
+   },
    {
     "quando": "2026-07-19T11:09:52.595Z",
     "resultado": "RED_CICLO",
@@ -409,64 +415,23 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · Portugal x Áustria @2 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-17T23:11:26.566Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "14:57",
-     "jogo": "Islington x Leicester",
-     "odd": 2
-    },
-    {
-     "h": "15:00",
-     "jogo": "Burnley x West Ham",
-     "odd": 2.05
-    },
-    {
-     "h": "15:03",
-     "jogo": "Chelsea x Newcastle",
-     "odd": 1.9
-    }
-   ],
-   "alvo": {
-    "h": "15:00",
-    "jogo": "Burnley x West Ham",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1784469579898
-   },
-   "iniciadoEm": 1784469087595,
-   "tiros": [
-    {
-     "h": "14:57",
-     "jogo": "Islington x Leicester",
-     "odd": 2,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "premier": 1784469761995
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784448653897,
    "super": 1784456136299,
-   "premier": 1784441535028,
+   "premier": 1784469761995,
    "copa": 1784459392407
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
-   "2026-07-19": -0.3
+   "2026-07-19": 0.8
   }
  }
 }
