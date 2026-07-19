@@ -144,13 +144,19 @@
   }
  },
  "o25": {
-  "saldo": -47.9,
-  "ciclos": 70,
-  "greens": 33,
+  "saldo": -46.6,
+  "ciclos": 71,
+  "greens": 34,
   "redsCiclo": 14,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-19T05:19:52.533Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "euro · Escócia x Romênia @2.15 (tiro 2)"
+   },
    {
     "quando": "2026-07-19T03:10:12.624Z",
     "resultado": "RED_CICLO",
@@ -264,57 +270,16 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "copa · Costa do Marfim x Japão @2.25 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-17T10:40:15.816Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "06:14",
-     "jogo": "Dinamarca x Países Baixos",
-     "odd": 2.2
-    },
-    {
-     "h": "06:17",
-     "jogo": "Escócia x Romênia",
-     "odd": 2.15
-    },
-    {
-     "h": "06:20",
-     "jogo": "Sérvia x Hungria",
-     "odd": 2.6
-    }
-   ],
-   "alvo": {
-    "h": "06:17",
-    "jogo": "Escócia x Romênia",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1784438212134
-   },
-   "iniciadoEm": 1784437851226,
-   "tiros": [
-    {
-     "h": "06:14",
-     "jogo": "Dinamarca x Países Baixos",
-     "odd": 2.2,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "euro": 1784438392434
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784430612433,
    "premier": 1784343230683,
-   "euro": 1784428571923,
+   "euro": 1784438392434,
    "super": 1784340404868
   },
   "dias": {
@@ -322,7 +287,7 @@
    "2026-07-16": -14.2,
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
-   "2026-07-19": -7
+   "2026-07-19": -5.7
   }
  },
  "ambas": {
