@@ -1665,7 +1665,8 @@ const ROBO_MKTS = ["o35", "o25", "ambas"];
 const ROBO_PISO = { o35: 3.6, o25: 2.0, ambas: 2.0 };
 function roboVazio() { return { saldo: 0, ciclos: 0, greens: 0, redsCiclo: 0, aborts: 0, descartes: 0, historico: [], consumidas: {}, ciclo: null }; }
 let roboState = { o35: roboVazio(), o25: roboVazio(), ambas: roboVazio() };
-const fibPrev = {}; // retracao anterior por liga|mkt (para detectar o TOQUE no bolsao)
+const fibPrev = {}; // (legado)
+let roboTrace = {}; // caixa-preta: por que cada liga entrou/nao entrou (debug)
 async function salvaRoboLedger() {
   if (!GH_T) return;
   try {
@@ -1737,25 +1738,28 @@ function montaRobo(mkt) {
     let noBolsao = false, fibInfo = null;
     try {
       const sr = sf.slice(-100); // MESMA JANELA DO OLHO DO USUARIO: balanco dos ultimos 100 jogos (~5h)
+      const tk = mkt + "|" + liga;
+      roboTrace[tk] = { pontos: sr.length };
       if (sr.length >= 8) {
         let iMin = 0, iMax = 0;
         sr.forEach((v, i) => { if (v < sr[iMin]) iMin = i; if (v >= sr[iMax]) iMax = i; });
         const lo = sr[iMin], hi = sr[iMax], amp = hi - lo;
         const curF = sr[sr.length - 1];
-        if (amp >= 8 && iMin < iMax) {
+        const alta = iMin < iMax;
+        Object.assign(roboTrace[tk], { amp, alta });
+        if (amp >= 8 && alta) {
           const retr = (hi - curF) / amp * 100;
-          // SENSOR DO OLHO HUMANO: a curva SUAVIZADA (EMA-5) virando pra cima dentro do bolsao.
-          // Um green solitario no meio da descida NAO vira a EMA (mata as entradas em queda);
-          // a virada real vira a EMA cedo (sem a espera longa que chegava tarde).
           const kE = 2 / 6; let eAc = sr[0];
           const ema = sr.map(v => (eAc = v * kE + eAc * (1 - kE)));
           const nS = sr.length;
           const emaVirando = ema[nS - 1] > ema[nS - 2];
           const naoCaindoAgora = sr[nS - 1] >= sr[nS - 2];
+          Object.assign(roboTrace[tk], { retr: Math.round(retr), emaVirando, naoCaindoAgora });
           if (retr >= 38.2 && retr <= 61.8 && emaVirando && naoCaindoAgora) { noBolsao = true; fibInfo = { retr: Math.round(retr), lo, hi }; }
         }
       }
-    } catch (e) {}
+      roboTrace[tk].noBolsao = noBolsao;
+    } catch (e) { roboTrace[mkt + "|" + liga] = { erro: e.message }; }
     if (L.consumidas[liga]) {
       const idade = Date.now() - (typeof L.consumidas[liga] === "number" ? L.consumidas[liga] : 0);
       if (!noBolsao || idade > 60 * 60000) { delete L.consumidas[liga]; salvaRoboLedger(); } // re-arma: saiu do bolsao OU 60min de trava
@@ -1794,7 +1798,7 @@ function montaRobo(mkt) {
       const sc = (ancDoJogo(p0) || 0) + p0.odd; // time domina, odd desempata/soma
       if (sc > melhorScore) { melhorScore = sc; melhorStart = s; }
     }
-    if (melhorStart == null) continue; // sem trio completo agora: espera a proxima rodada
+    if (melhorStart == null) { roboTrace[mkt + "|" + liga].semTrio = true; continue; } // sem trio completo: espera a rodada
     for (let dgi = 0; dgi < 3; dgi++) {
       const p = porIdx[melhorStart + dgi];
       degraus.push({ papel: papeis[dgi], unidades: [1, 2, 4][dgi], h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev, evAlto: p.ev > 10, ancora: ancDoJogo(p) != null ? Math.round(ancDoJogo(p)) : null, col: colunaPct(d.gamesAll || games, p.horario, mkt) });
@@ -1935,6 +1939,7 @@ app.get("/api/robo", (req, res) => {
       const dias = L.dias || {};
       const dh2 = diaHoje();
       const somaDias = n => { let s = 0; for (let i = 0; i < n; i++) { const d3 = new Date(Date.now() - i * 86400000).toLocaleDateString("en-CA", { timeZone: "America/Sao_Paulo" }); s += dias[d3] || 0; } return Math.round(s * 10) / 10; };
+      melhor.trace = Object.fromEntries(Object.entries(roboTrace).filter(([k]) => k.startsWith(m + "|")));
       melhor.travas = { consumidas: Object.fromEntries(Object.entries(L.consumidas || {}).map(([k, v]) => [k, typeof v === "number" ? Math.round((Date.now() - v) / 60000) + "min" : String(v)])), cooldown: Object.fromEntries(Object.entries(L.cooldown || {}).filter(([k, v]) => Date.now() - v < 30 * 60000).map(([k, v]) => [k, Math.round((30 * 60000 - (Date.now() - v)) / 60000) + "min restantes"])) };
       melhor.registro = { saldo: L.saldo, hoje: Math.round((dias[dh2] || 0) * 10) / 10, semana7: somaDias(7), mes30: somaDias(30), ciclos: L.ciclos, greens: L.greens, redsCiclo: L.redsCiclo, aborts: L.aborts, descartes: L.descartes || 0 };
       if (!melhor.liga && !melhor.cicloView && L.consumidas) {
