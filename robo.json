@@ -144,13 +144,19 @@
   }
  },
  "o25": {
-  "saldo": -44.8,
-  "ciclos": 85,
+  "saldo": -51.8,
+  "ciclos": 86,
   "greens": 46,
-  "redsCiclo": 16,
+  "redsCiclo": 17,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-19T17:31:48.494Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-19T16:42:15.598Z",
     "resultado": "GREEN",
@@ -264,63 +270,14 @@
     "resultado": "GREEN",
     "unidades": 1.8,
     "detalhe": "premier · Burnley x Leeds @2.4 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-18T02:06:44.968Z",
-    "resultado": "GREEN",
-    "unidades": 1.6,
-    "detalhe": "super · Sao Paulo x Quito @2.15 (tiro 3)"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "18:23",
-     "jogo": "Eslovênia x Suíça",
-     "odd": 2.45
-    },
-    {
-     "h": "18:26",
-     "jogo": "Países Baixos x Croácia",
-     "odd": 2.07
-    },
-    {
-     "h": "18:29",
-     "jogo": "Geórgia x Eslováquia",
-     "odd": 2.4
-    }
-   ],
-   "alvo": {
-    "h": "18:29",
-    "jogo": "Geórgia x Eslováquia",
-    "odd": 2.4,
-    "unidades": 4,
-    "desde": 1784482133100
-   },
-   "iniciadoEm": 1784481434403,
-   "tiros": [
-    {
-     "h": "18:23",
-     "jogo": "Eslovênia x Suíça",
-     "odd": 2.45,
-     "unidades": 1
-    },
-    {
-     "h": "18:26",
-     "jogo": "Países Baixos x Croácia",
-     "odd": 2.07,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784472352097,
    "premier": 1784457156700,
-   "euro": 1784479335407,
+   "euro": 1784482308397,
    "super": 1784461034304
   },
   "dias": {
@@ -328,7 +285,7 @@
    "2026-07-16": -14.2,
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
-   "2026-07-19": -3.9
+   "2026-07-19": -10.9
   }
  },
  "ambas": {
