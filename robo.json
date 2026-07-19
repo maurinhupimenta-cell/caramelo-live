@@ -144,13 +144,19 @@
   }
  },
  "o25": {
-  "saldo": -51.8,
-  "ciclos": 86,
-  "greens": 46,
+  "saldo": -49.7,
+  "ciclos": 87,
+  "greens": 47,
   "redsCiclo": 17,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-19T23:32:13.496Z",
+    "resultado": "GREEN",
+    "unidades": 2.1,
+    "detalhe": "euro · República Tcheca x Itália @2.55 (tiro 2)"
+   },
    {
     "quando": "2026-07-19T17:31:48.494Z",
     "resultado": "RED_CICLO",
@@ -264,57 +270,14 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "copa · Alemanha x Coreia do Sul @2.35 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-18T02:53:50.786Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "premier · Burnley x Leeds @2.4 (tiro 2)"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "00:26",
-     "jogo": "Países Baixos x Portugal",
-     "odd": 2.07
-    },
-    {
-     "h": "00:29",
-     "jogo": "República Tcheca x Itália",
-     "odd": 2.55
-    },
-    {
-     "h": "00:32",
-     "jogo": "Inglaterra x Sérvia",
-     "odd": 2.3
-    }
-   ],
-   "alvo": {
-    "h": "00:29",
-    "jogo": "República Tcheca x Itália",
-    "odd": 2.55,
-    "unidades": 2,
-    "desde": 1784503751905
-   },
-   "iniciadoEm": 1784503176495,
-   "tiros": [
-    {
-     "h": "00:26",
-     "jogo": "Países Baixos x Portugal",
-     "odd": 2.07,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784472352097,
    "premier": 1784457156700,
-   "euro": 1784482308397,
+   "euro": 1784503933307,
    "super": 1784461034304
   },
   "dias": {
@@ -322,7 +285,7 @@
    "2026-07-16": -14.2,
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
-   "2026-07-19": -10.9
+   "2026-07-19": -8.8
   }
  },
  "ambas": {
