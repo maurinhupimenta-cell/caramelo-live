@@ -2068,27 +2068,46 @@ app.get("/api/padroes/:liga", (req, res) => {
       (porColuna[":" + min] = porColuna[":" + min] || [0, 0])[0]++; if (pago) porColuna[":" + min][1]++;
     }
     // ===== FAMILIA 3: PADRAO DE PULO (distancia entre greens: 5, 6, 10 casas...) =====
-    // ===== PULO POR PLACAR: de quantas em quantas casas o MESMO placar se repete (leitura do usuario) =====
-    // ex: 1-0 aparece, conta as casas ate o proximo 1-0 (pulou 4); 4-1 pulou 3; etc.
-    const posPlacar = {};
-    for (let i = 0; i < games.length; i++) {
-      const g = games[i]; if (g.a == null || g.b == null) continue;
-      const pl = g.a + "-" + g.b;
-      (posPlacar[pl] = posPlacar[pl] || []).push(i);
-    }
-    const pulosPorPlacar = [];
-    for (const [pl, idxs] of Object.entries(posPlacar)) {
-      if (idxs.length < 2) continue;
-      const gaps = []; for (let i = 1; i < idxs.length; i++) gaps.push(idxs[i] - idxs[i - 1]);
-      const soma = gaps.reduce((a, b) => a + b, 0);
-      const medio = Math.round(soma / gaps.length * 10) / 10;
+    // ===== CACA-PADROES AUTOMATICO: varre DEZENAS de eventos e acha sozinho os que se repetem como metronomo =====
+    const soma2 = (a, b) => a + b;
+    const totGols = g => (g.a || 0) + (g.b || 0);
+    const mx = g => Math.max(g.a || 0, g.b || 0);
+    // biblioteca de eventos testados (cada um: nome + funcao que diz se o jogo i "e" esse evento)
+    const eventos = [];
+    // A) cada placar exato que apareceu >=3x
+    const contaPl = {}; for (const g of games) if (g.a != null) contaPl[g.a + "-" + g.b] = (contaPl[g.a + "-" + g.b] || 0) + 1;
+    for (const pl of Object.keys(contaPl)) if (contaPl[pl] >= 3) eventos.push({ nome: "placar " + pl, fn: g => (g.a + "-" + g.b) === pl });
+    // B) mercados e faixas de gols
+    eventos.push({ nome: "Over 2.5", fn: g => totGols(g) >= 3 });
+    eventos.push({ nome: "Under 2.5", fn: g => totGols(g) < 3 });
+    eventos.push({ nome: "Over 3.5", fn: g => totGols(g) >= 4 });
+    eventos.push({ nome: "Ambas marcam", fn: g => (g.a || 0) > 0 && (g.b || 0) > 0 });
+    eventos.push({ nome: "0-0 seco", fn: g => totGols(g) === 0 });
+    eventos.push({ nome: "goleada (3+ de um)", fn: g => mx(g) >= 3 });
+    eventos.push({ nome: "jogo de 1 gol só", fn: g => totGols(g) === 1 });
+    eventos.push({ nome: "acima de 1-0 (2+ gols)", fn: g => totGols(g) >= 2 });
+    eventos.push({ nome: "empate", fn: g => (g.a || 0) === (g.b || 0) });
+    // C) o proprio mercado selecionado (green/red) como evento
+    eventos.push({ nome: "GREEN do mercado", fn: g => pays(g, mkt) });
+
+    const stdev = arr => { const m = arr.reduce(soma2, 0) / arr.length; return Math.sqrt(arr.map(x => (x - m) ** 2).reduce(soma2, 0) / arr.length); };
+    const achados = [];
+    for (const ev of eventos) {
+      const pos = []; for (let i = 0; i < games.length; i++) if (ev.fn(games[i])) pos.push(i);
+      if (pos.length < 4) continue; // precisa de pelo menos 3 pulos
+      const gaps = []; for (let i = 1; i < pos.length; i++) gaps.push(pos[i] - pos[i - 1]);
+      const media = gaps.reduce(soma2, 0) / gaps.length;
+      if (media < 1.5) continue; // evento quase todo jogo nao tem "pulo" util
+      const cv = media ? stdev(gaps) / media : 9; // coef de variacao
+      const regular = Math.max(0, Math.round((1 - cv) * 100)); // 100 = metronomo perfeito
+      if (regular < 45) continue; // so entra o que realmente se repete
       const cont = {}; for (const gp of gaps) cont[gp] = (cont[gp] || 0) + 1;
-      const maisComum = +Object.entries(cont).sort((a, b) => b[1] - a[1])[0][0];
-      const desde = games.length - 1 - idxs[idxs.length - 1]; // casas desde a ultima vez que esse placar saiu
-      pulosPorPlacar.push({ placar: pl, vezes: idxs.length, puloMedio: medio, puloComum: maisComum, ultimos: gaps.slice(-6), desde, prontoSe: maisComum });
+      const comum = +Object.entries(cont).sort((a, b) => b[1] - a[1])[0][0];
+      const desde = games.length - 1 - pos[pos.length - 1];
+      achados.push({ nome: ev.nome, regular, puloMedio: Math.round(media * 10) / 10, puloComum: comum, vezes: pos.length, ultimos: gaps.slice(-6), desde, prontoAgora: desde === comum, quaseProximo: comum - desde });
     }
-    pulosPorPlacar.sort((a, b) => b.vezes - a.vezes);
-    const distPulo = pulosPorPlacar.slice(0, 12);
+    achados.sort((a, b) => b.regular - a.regular || b.vezes - a.vezes);
+    const pulosPorPlacar = achados.slice(0, 14);
 
     const resp = { liga, mkt, jogosNoDia: games.length, regua3, padroes: out.slice(0, 10), porOdd: garimpa(porOdd, 6), porTime: garimpa(porTime, 6),
       porPlacar: garimpa(porPlacar, 6), porColuna: garimpa(porColuna, 5), pulosPorPlacar: distPulo };
