@@ -318,13 +318,19 @@
   }
  },
  "ambas": {
-  "saldo": 4.9,
-  "ciclos": 77,
-  "greens": 46,
+  "saldo": 5.8,
+  "ciclos": 78,
+  "greens": 47,
   "redsCiclo": 6,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-19T05:31:11.525Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · Noruega x Austrália @1.9 (tiro 1)"
+   },
    {
     "quando": "2026-07-19T05:17:48.326Z",
     "resultado": "GREEN",
@@ -438,56 +444,23 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · Southampton x Liverpool @2 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-17T15:22:15.917Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "super · Lima x Santos @1.98 (tiro 2)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:28",
-     "jogo": "Noruega x Austrália",
-     "odd": 1.9
-    },
-    {
-     "h": "06:31",
-     "jogo": "Coreia do Sul x Irã",
-     "odd": 2.3
-    },
-    {
-     "h": "06:34",
-     "jogo": "Argélia x Espanha",
-     "odd": 1.93
-    }
-   ],
-   "alvo": {
-    "h": "06:28",
-    "jogo": "Noruega x Austrália",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1784438511422
-   },
-   "iniciadoEm": 1784438511422
+  "consumidas": {
+   "copa": 1784439071332
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784436412132,
    "super": 1784433672933,
    "premier": 1784438268136,
-   "copa": 1784326556495
+   "copa": 1784439071332
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
-   "2026-07-19": -3.1
+   "2026-07-19": -2.2
   }
  }
 }
