@@ -84,8 +84,10 @@ app.use((req, res, next) => {
   const ehApiDado = p.startsWith("/api/") && !p.startsWith("/api/snapshot") && !p.startsWith("/api/admin") && !p.startsWith("/api/acesso") && !p.startsWith("/api/eventos");
   if (ehApiDado) {
     const ref = (req.headers.referer || req.headers.origin || "");
-    const doProprioSite = ORIGENS_OK.some(o => ref.startsWith(o));
-    if (!doProprioSite) return res.status(403).json({ erro: "acesso restrito ao aplicativo" });
+    // bloqueia SO quando o referer aponta claramente para OUTRO site (scraping via browser de terceiro).
+    // Sem referer (navegacao direta, app instalado, reload) e permitido - a protecao real e o codigo de acesso.
+    const deOutroSite = ref && !ORIGENS_OK.some(o => ref.startsWith(o));
+    if (deOutroSite) return res.status(403).json({ erro: "acesso restrito ao aplicativo" });
   }
   next();
 });
