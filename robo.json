@@ -289,13 +289,19 @@
   }
  },
  "ambas": {
-  "saldo": 14.7,
-  "ciclos": 87,
+  "saldo": 7.7,
+  "ciclos": 88,
   "greens": 56,
-  "redsCiclo": 6,
+  "redsCiclo": 7,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-19T11:09:52.595Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-19T10:31:52.897Z",
     "resultado": "GREEN",
@@ -409,70 +415,23 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-17T22:39:27.597Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "euro · Bélgica x Romênia @1.87 (tiro 1)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "12:01",
-     "jogo": "Croácia x Iraque",
-     "odd": 2.2
-    },
-    {
-     "h": "12:04",
-     "jogo": "Marrocos x Senegal",
-     "odd": 2.1
-    },
-    {
-     "h": "12:07",
-     "jogo": "Tunísia x Nova Zelândia",
-     "odd": 2.1
-    }
-   ],
-   "alvo": {
-    "h": "12:07",
-    "jogo": "Tunísia x Nova Zelândia",
-    "odd": 2.1,
-    "unidades": 4,
-    "desde": 1784459212597
-   },
-   "iniciadoEm": 1784458912899,
-   "tiros": [
-    {
-     "h": "12:01",
-     "jogo": "Croácia x Iraque",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "12:04",
-     "jogo": "Marrocos x Senegal",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "copa": 1784459392407
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784448653897,
    "super": 1784456136299,
    "premier": 1784441535028,
-   "copa": 1784457112794
+   "copa": 1784459392407
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
-   "2026-07-19": 6.7
+   "2026-07-19": -0.3
   }
  }
 }
