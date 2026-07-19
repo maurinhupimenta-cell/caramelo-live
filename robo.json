@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -35.8,
-  "ciclos": 82,
+  "saldo": -42.8,
+  "ciclos": 83,
   "greens": 23,
-  "redsCiclo": 26,
+  "redsCiclo": 27,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-19T05:55:13.126Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-19T03:17:12.122Z",
     "resultado": "RED_CICLO",
@@ -120,61 +126,14 @@
     "resultado": "GREEN",
     "unidades": 5.4,
     "detalhe": "super · Rio de Janeiro x Agua Branca @4.2 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-17T04:58:29.819Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "06:46",
-     "jogo": "Qatar x Suíça",
-     "odd": 4.75
-    },
-    {
-     "h": "06:49",
-     "jogo": "Bélgica x Turquia",
-     "odd": 4.75
-    },
-    {
-     "h": "06:52",
-     "jogo": "Escócia x Equador",
-     "odd": 5
-    }
-   ],
-   "alvo": {
-    "h": "06:52",
-    "jogo": "Escócia x Equador",
-    "odd": 5,
-    "unidades": 4,
-    "desde": 1784440413826
-   },
-   "iniciadoEm": 1784439796030,
-   "tiros": [
-    {
-     "h": "06:46",
-     "jogo": "Qatar x Suíça",
-     "odd": 4.75,
-     "unidades": 1
-    },
-    {
-     "h": "06:49",
-     "jogo": "Bélgica x Turquia",
-     "odd": 4.75,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "copa": 1784440513022
   },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784431031924,
+   "copa": 1784440513022,
    "premier": 1784340162672,
    "euro": 1784337509180,
    "super": 1784326408000
@@ -183,7 +142,7 @@
    "2026-07-15": -35,
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
-   "2026-07-19": -7
+   "2026-07-19": -14
   }
  },
  "o25": {
