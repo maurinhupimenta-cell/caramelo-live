@@ -289,13 +289,19 @@
   }
  },
  "ambas": {
-  "saldo": 12.6,
-  "ciclos": 85,
-  "greens": 54,
+  "saldo": 13.7,
+  "ciclos": 86,
+  "greens": 55,
   "redsCiclo": 6,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-19T10:15:36.493Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Bogota x Montevideo @2.07 (tiro 1)"
+   },
    {
     "quando": "2026-07-19T09:51:52.697Z",
     "resultado": "GREEN",
@@ -409,48 +415,15 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "copa · Egito x Inglaterra @1.9 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-17T21:28:30.144Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "copa · Colômbia x França @1.93 (tiro 1)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "11:13",
-     "jogo": "Bogota x Montevideo",
-     "odd": 2.07
-    },
-    {
-     "h": "11:16",
-     "jogo": "Lima x Itaquera",
-     "odd": 1.93
-    },
-    {
-     "h": "11:19",
-     "jogo": "Medellin x Agua Branca",
-     "odd": 1.98
-    }
-   ],
-   "alvo": {
-    "h": "11:13",
-    "jogo": "Bogota x Montevideo",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1784455834401
-   },
-   "iniciadoEm": 1784455834401
+  "consumidas": {
+   "super": 1784456136299
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784448653897,
-   "super": 1784453975702,
+   "super": 1784456136299,
    "premier": 1784441535028,
    "copa": 1784454712595
   },
@@ -458,7 +431,7 @@
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
-   "2026-07-19": 4.6
+   "2026-07-19": 5.7
   }
  }
 }
