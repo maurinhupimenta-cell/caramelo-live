@@ -332,13 +332,19 @@
   }
  },
  "ambas": {
-  "saldo": 10.3,
-  "ciclos": 82,
-  "greens": 51,
+  "saldo": 10.9,
+  "ciclos": 83,
+  "greens": 52,
   "redsCiclo": 6,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-19T08:36:54.897Z",
+    "resultado": "GREEN",
+    "unidades": 0.6,
+    "detalhe": "super · Montevideo x Rio de Janeiro @1.9 (tiro 3)"
+   },
    {
     "quando": "2026-07-19T08:10:53.999Z",
     "resultado": "GREEN",
@@ -452,62 +458,13 @@
     "resultado": "GREEN",
     "unidades": 0.5,
     "detalhe": "copa · Jordânia x Curação @1.87 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-17T18:56:28.016Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "super · Santos x Agua Branca @1.95 (tiro 2)"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "09:28",
-     "jogo": "Santos x Medellin",
-     "odd": 2.15
-    },
-    {
-     "h": "09:31",
-     "jogo": "Itaquera x La Boca",
-     "odd": 2.05
-    },
-    {
-     "h": "09:34",
-     "jogo": "Montevideo x Rio de Janeiro",
-     "odd": 1.9
-    }
-   ],
-   "alvo": {
-    "h": "09:34",
-    "jogo": "Montevideo x Rio de Janeiro",
-    "odd": 1.9,
-    "unidades": 4,
-    "desde": 1784450055498
-   },
-   "iniciadoEm": 1784449155099,
-   "tiros": [
-    {
-     "h": "09:28",
-     "jogo": "Santos x Medellin",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "09:31",
-     "jogo": "Itaquera x La Boca",
-     "odd": 2.05,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784448653897,
-   "super": 1784440142925,
+   "super": 1784450214795,
    "premier": 1784441535028,
    "copa": 1784444655532
   },
@@ -515,7 +472,7 @@
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
-   "2026-07-19": 2.3
+   "2026-07-19": 2.9
   }
  }
 }
