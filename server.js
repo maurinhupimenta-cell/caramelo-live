@@ -1756,9 +1756,15 @@ function montaRobo(mkt) {
           const ema = sr.map(v => (eAc = v * kE + eAc * (1 - kE)));
           const nS = sr.length;
           const emaVirando = ema[nS - 1] > ema[nS - 2];
-          const naoCaindoAgora = sr[nS - 1] >= sr[nS - 2];
-          Object.assign(roboTrace[tk], { retr: Math.round(retr), emaVirando, naoCaindoAgora });
-          if (retr >= 38.2 && retr <= 61.8 && emaVirando && naoCaindoAgora) { noBolsao = true; fibInfo = { retr: Math.round(retr), lo, hi }; }
+          // SUBIDA DE VERDADE (conserto): o ultimo ponto tem que estar ACIMA da media dos 3 anteriores
+          // E ter subido no ultimo passo. Mata entrada em linha CHAPADA/PARADA (ex 20,20,20 que a EMA
+          // lenta ainda marca 'subindo' por causa de subida antiga) - a causa real das entradas em queda.
+          const ant3 = nS >= 4 ? (sr[nS - 2] + sr[nS - 3] + sr[nS - 4]) / 3 : sr[nS - 2];
+          const subiuRecente = sr[nS - 1] > sr[nS - 2];
+          const acimaDaMedia = sr[nS - 1] > ant3;
+          const subeDeVerdade = subiuRecente && acimaDaMedia && emaVirando;
+          Object.assign(roboTrace[tk], { retr: Math.round(retr), emaVirando, subiuRecente, acimaDaMedia, subeDeVerdade });
+          if (retr >= 38.2 && retr <= 61.8 && subeDeVerdade) { noBolsao = true; fibInfo = { retr: Math.round(retr), lo, hi }; }
         }
       }
       roboTrace[tk].noBolsao = noBolsao;
