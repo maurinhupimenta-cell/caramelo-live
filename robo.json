@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -51.1,
-  "ciclos": 93,
+  "saldo": -58.1,
+  "ciclos": 94,
   "greens": 28,
-  "redsCiclo": 32,
+  "redsCiclo": 33,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-19T16:52:12.800Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-19T15:49:53.295Z",
     "resultado": "GREEN",
@@ -120,70 +126,23 @@
     "resultado": "GREEN",
     "unidades": 4,
     "detalhe": "super · Avellaneda x Santos @5 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-17T21:38:57.098Z",
-    "resultado": "GREEN",
-    "unidades": 9,
-    "detalhe": "premier · Burnley x Chelsea @4 (tiro 3)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "17:43",
-     "jogo": "Montevideo x Lima",
-     "odd": 3.8
-    },
-    {
-     "h": "17:46",
-     "jogo": "Penarol x Rio de Janeiro",
-     "odd": 4.75
-    },
-    {
-     "h": "17:49",
-     "jogo": "Santiago x Itaquera",
-     "odd": 4
-    }
-   ],
-   "alvo": {
-    "h": "17:49",
-    "jogo": "Santiago x Itaquera",
-    "odd": 4,
-    "unidades": 4,
-    "desde": 1784479873996
-   },
-   "iniciadoEm": 1784479033803,
-   "tiros": [
-    {
-     "h": "17:43",
-     "jogo": "Montevideo x Lima",
-     "odd": 3.8,
-     "unidades": 1
-    },
-    {
-     "h": "17:46",
-     "jogo": "Penarol x Rio de Janeiro",
-     "odd": 4.75,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "super": 1784479932698
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784467672200,
    "premier": 1784468339201,
    "euro": 1784476193195,
-   "super": 1784474173396
+   "super": 1784479932698
   },
   "dias": {
    "2026-07-15": -35,
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
-   "2026-07-19": -22.3
+   "2026-07-19": -29.3
   }
  },
  "o25": {
