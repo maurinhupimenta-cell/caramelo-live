@@ -289,13 +289,19 @@
   }
  },
  "ambas": {
-  "saldo": -4.3,
-  "ciclos": 92,
-  "greens": 58,
+  "saldo": -2.5,
+  "ciclos": 93,
+  "greens": 59,
   "redsCiclo": 9,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-19T15:35:01.698Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "super · La Plata x Quito @2.2 (tiro 3)"
+   },
    {
     "quando": "2026-07-19T15:11:25.502Z",
     "resultado": "RED_CICLO",
@@ -409,62 +415,15 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "super · Rio de Janeiro x Medellin @2.1 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-19T03:56:11.926Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · Portugal x Itália @1.98 (tiro 1)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "16:25",
-     "jogo": "Quito x La Plata",
-     "odd": 2.15
-    },
-    {
-     "h": "16:28",
-     "jogo": "Belo Horizonte x Asuncion",
-     "odd": 2.02
-    },
-    {
-     "h": "16:31",
-     "jogo": "La Plata x Quito",
-     "odd": 2.2
-    }
-   ],
-   "alvo": {
-    "h": "16:31",
-    "jogo": "La Plata x Quito",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1784475054302
-   },
-   "iniciadoEm": 1784474356895,
-   "tiros": [
-    {
-     "h": "16:25",
-     "jogo": "Quito x La Plata",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "16:28",
-     "jogo": "Belo Horizonte x Asuncion",
-     "odd": 2.02,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "super": 1784475301598
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784473885402,
-   "super": 1784472394294,
+   "super": 1784475301598,
    "premier": 1784469761995,
    "copa": 1784471632896
   },
@@ -472,7 +431,7 @@
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
-   "2026-07-19": -12.3
+   "2026-07-19": -10.5
   }
  }
 }
