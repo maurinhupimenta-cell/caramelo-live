@@ -326,13 +326,19 @@
   }
  },
  "ambas": {
-  "saldo": 4,
-  "ciclos": 76,
-  "greens": 45,
+  "saldo": 4.9,
+  "ciclos": 77,
+  "greens": 46,
   "redsCiclo": 6,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-19T05:17:48.326Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Leicester x Islington @1.95 (tiro 2)"
+   },
    {
     "quando": "2026-07-19T04:46:52.322Z",
     "resultado": "GREEN",
@@ -446,64 +452,21 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "super · Lima x Santos @1.98 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-17T14:50:51.612Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Norwich x United @1.95 (tiro 1)"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "06:12",
-     "jogo": "Brentford x Watford",
-     "odd": 2
-    },
-    {
-     "h": "06:15",
-     "jogo": "Leicester x Islington",
-     "odd": 1.95
-    },
-    {
-     "h": "06:18",
-     "jogo": "Burnley x Aston",
-     "odd": 1.95
-    }
-   ],
-   "alvo": {
-    "h": "06:15",
-    "jogo": "Leicester x Islington",
-    "odd": 1.95,
-    "unidades": 2,
-    "desde": 1784438084224
-   },
-   "iniciadoEm": 1784437538830,
-   "tiros": [
-    {
-     "h": "06:12",
-     "jogo": "Brentford x Watford",
-     "odd": 2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784436412132,
    "super": 1784433672933,
-   "premier": 1784435737731,
+   "premier": 1784438268136,
    "copa": 1784326556495
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
-   "2026-07-19": -4
+   "2026-07-19": -3.1
   }
  }
 }
