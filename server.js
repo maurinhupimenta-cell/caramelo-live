@@ -2836,6 +2836,12 @@ setInterval(() => {
   for (const res of sseClientes) { try { res.write(": ping\n\n"); } catch (e) { sseClientes.delete(res); } }
 }, 25000);
 
+app.get("/api/admin/zerar-liga", (req, res) => {
+  if (!isAdmin(req)) return res.status(403).json({ erro: "admin" });
+  const liga = req.query.liga;
+  if (liga && store[liga]) { delete store[liga]; return res.json({ ok: true, zerada: liga }); }
+  res.json({ ok: false, erro: "liga nao encontrada" });
+});
 app.get("/api/admin/limpar-erro", (req, res) => {
   if (!isAdmin(req)) return res.status(403).json({ erro: "admin" });
   let limpos = 0;
