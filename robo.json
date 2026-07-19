@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -28.8,
-  "ciclos": 81,
+  "saldo": -35.8,
+  "ciclos": 82,
   "greens": 23,
-  "redsCiclo": 25,
+  "redsCiclo": 26,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-19T03:17:12.122Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-18T02:02:42.869Z",
     "resultado": "RED_CICLO",
@@ -120,61 +126,14 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-17T03:56:29.211Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:07",
-     "jogo": "Marrocos x Áustria",
-     "odd": 4.5
-    },
-    {
-     "h": "04:10",
-     "jogo": "Inglaterra x Iraque",
-     "odd": 5
-    },
-    {
-     "h": "04:13",
-     "jogo": "Espanha x Turquia",
-     "odd": 4.33
-    }
-   ],
-   "alvo": {
-    "h": "04:13",
-    "jogo": "Espanha x Turquia",
-    "odd": 4.33,
-    "unidades": 4,
-    "desde": 1784430831224
-   },
-   "iniciadoEm": 1784429891223,
-   "tiros": [
-    {
-     "h": "04:07",
-     "jogo": "Marrocos x Áustria",
-     "odd": 4.5,
-     "unidades": 1
-    },
-    {
-     "h": "04:10",
-     "jogo": "Inglaterra x Iraque",
-     "odd": 5,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "copa": 1784431031924
   },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784297753418,
+   "copa": 1784431031924,
    "premier": 1784340162672,
    "euro": 1784337509180,
    "super": 1784326408000
@@ -182,7 +141,8 @@
   "dias": {
    "2026-07-15": -35,
    "2026-07-16": -10.6,
-   "2026-07-17": 18.1
+   "2026-07-17": 18.1,
+   "2026-07-19": -7
   }
  },
  "o25": {
