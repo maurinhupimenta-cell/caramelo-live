@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -42.8,
-  "ciclos": 83,
+  "saldo": -49.8,
+  "ciclos": 84,
   "greens": 23,
-  "redsCiclo": 27,
+  "redsCiclo": 28,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-19T06:47:40.396Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-19T05:55:13.126Z",
     "resultado": "RED_CICLO",
@@ -120,62 +126,15 @@
     "resultado": "GREEN",
     "unidades": 13,
     "detalhe": "premier · Southampton x Watford @5 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-17T06:34:15.712Z",
-    "resultado": "GREEN",
-    "unidades": 5.4,
-    "detalhe": "super · Rio de Janeiro x Agua Branca @4.2 (tiro 2)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "07:39",
-     "jogo": "Newcastle x West Ham",
-     "odd": 4.75
-    },
-    {
-     "h": "07:42",
-     "jogo": "Wolverhampton x Liverpool",
-     "odd": 4
-    },
-    {
-     "h": "07:45",
-     "jogo": "Watford x Newcastle",
-     "odd": 4
-    }
-   ],
-   "alvo": {
-    "h": "07:45",
-    "jogo": "Watford x Newcastle",
-    "odd": 4,
-    "unidades": 4,
-    "desde": 1784443480901
-   },
-   "iniciadoEm": 1784442940857,
-   "tiros": [
-    {
-     "h": "07:39",
-     "jogo": "Newcastle x West Ham",
-     "odd": 4.75,
-     "unidades": 1
-    },
-    {
-     "h": "07:42",
-     "jogo": "Wolverhampton x Liverpool",
-     "odd": 4,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1784443660200
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784440513022,
-   "premier": 1784340162672,
+   "premier": 1784443660200,
    "euro": 1784337509180,
    "super": 1784326408000
   },
@@ -183,7 +142,7 @@
    "2026-07-15": -35,
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
-   "2026-07-19": -14
+   "2026-07-19": -21
   }
  },
  "o25": {
