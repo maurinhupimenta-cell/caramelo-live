@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -55.1,
-  "ciclos": 88,
+  "saldo": -62.1,
+  "ciclos": 89,
   "greens": 25,
-  "redsCiclo": 30,
+  "redsCiclo": 31,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-19T13:27:52.393Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-19T10:31:52.701Z",
     "resultado": "RED_CICLO",
@@ -120,61 +126,12 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-17T14:15:53.520Z",
-    "resultado": "GREEN",
-    "unidades": 3.8,
-    "detalhe": "copa · Senegal x Espanha @4.75 (tiro 1)"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "14:19",
-     "jogo": "Alemanha x Marrocos",
-     "odd": 4.33
-    },
-    {
-     "h": "14:22",
-     "jogo": "Jordânia x Países Baixos",
-     "odd": 4.33
-    },
-    {
-     "h": "14:25",
-     "jogo": "Turquia x Senegal",
-     "odd": 5.25
-    }
-   ],
-   "alvo": {
-    "h": "14:25",
-    "jogo": "Turquia x Senegal",
-    "odd": 5.25,
-    "unidades": 4,
-    "desde": 1784467492601
-   },
-   "iniciadoEm": 1784466952108,
-   "tiros": [
-    {
-     "h": "14:19",
-     "jogo": "Alemanha x Marrocos",
-     "odd": 4.33,
-     "unidades": 1
-    },
-    {
-     "h": "14:22",
-     "jogo": "Jordânia x Países Baixos",
-     "odd": 4.33,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784457112597,
+   "copa": 1784467672200,
    "premier": 1784453555996,
    "euro": 1784448015005,
    "super": 1784326408000
@@ -183,7 +140,7 @@
    "2026-07-15": -35,
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
-   "2026-07-19": -26.3
+   "2026-07-19": -33.3
   }
  },
  "o25": {
