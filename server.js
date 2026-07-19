@@ -2045,7 +2045,38 @@ app.get("/api/padroes/:liga", (req, res) => {
       arr.sort((a, b) => b.edge - a.edge || b.n - a.n);
       return arr.slice(0, 8);
     };
-    const resp = { liga, mkt, padroes: out.slice(0, 10), porOdd: garimpa(porOdd, 6), porTime: garimpa(porTime, 6) };
+    // ===== FAMILIA 1: GATILHO POR PLACAR (linha de baixo / jogos em cima de 1-0) =====
+    // o ciclo iniciado num jogo com esse PLACAR paga green em ate 3 tiros?
+    const catPlacar = g => {
+      const a = g.a, b = g.b, tot = (a || 0) + (b || 0), mx = Math.max(a || 0, b || 0);
+      if (tot === 0) return "0-0";
+      if (tot === 1) return "1-0 / 0-1";
+      if (mx >= 3) return "goleada (3+)";
+      if (a === b) return "empate " + a + "-" + b;
+      return "acima de 1-0 (" + Math.max(a, b) + "-" + Math.min(a, b) + ")";
+    };
+    const porPlacar = {};
+    for (let i = 0; i + 1 < games.length; i++) {
+      const cat = catPlacar(games[i]); const pago = ciclo3(i);
+      (porPlacar[cat] = porPlacar[cat] || [0, 0])[0]++; if (pago) porPlacar[cat][1]++;
+    }
+    // ===== FAMILIA 2: PADRAO DE COLUNA (minuto do relogio) =====
+    const porColuna = {};
+    for (let i = 1; i + 1 < games.length; i++) {
+      const min = (games[i].horario || "").split(":")[1]; if (!min) continue;
+      const pago = ciclo3(i);
+      (porColuna[":" + min] = porColuna[":" + min] || [0, 0])[0]++; if (pago) porColuna[":" + min][1]++;
+    }
+    // ===== FAMILIA 3: PADRAO DE PULO (distancia entre greens: 5, 6, 10 casas...) =====
+    const idxG = []; for (let i = 0; i < seq.length; i++) if (seq[i] === "G") idxG.push(i);
+    const pulos = {};
+    for (let i = 1; i < idxG.length; i++) { const gap = idxG[i] - idxG[i - 1]; pulos[gap] = (pulos[gap] || 0) + 1; }
+    const totPulos = Object.values(pulos).reduce((a, b) => a + b, 0);
+    const distPulo = Object.entries(pulos).map(([gap, n]) => ({ pulo: +gap, vezes: n, pct: totPulos ? Math.round(n / totPulos * 100) : 0 })).sort((a, b) => b.vezes - a.vezes).slice(0, 8);
+    const desdeUltimoG = idxG.length ? (seq.length - 1 - idxG[idxG.length - 1]) : null;
+
+    const resp = { liga, mkt, jogosNoDia: games.length, regua3, padroes: out.slice(0, 10), porOdd: garimpa(porOdd, 6), porTime: garimpa(porTime, 6),
+      porPlacar: garimpa(porPlacar, 6), porColuna: garimpa(porColuna, 5), distPulo, desdeUltimoG };
     padroesCache[ck] = { ts: now, out: resp };
     res.json(resp);
   } catch (e) { res.status(500).json({ erro: e.message }); }
