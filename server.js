@@ -1096,7 +1096,7 @@ function decodeSnapshot(data) {
 
 function aplicaSnapshot(liga, data) {
   try {
-    const { games, upcoming, gamesAll } = decodeSnapshot(data);
+    let { games, upcoming, gamesAll } = decodeSnapshot(data);
     if (!games.length) return;
     const s = buildStore(liga, games, upcoming, new Date(data.atualizadoEm || Date.now()).toISOString());
     s.fonte = "ws";
@@ -1266,6 +1266,43 @@ app.get("/api/sonda2", (req, res) => {
   res.json(out);
 });
 
+// ===== MEMORIA PERSISTENTE DE JOGOS: a linha dos 100 jogos sobrevive a deploy/restart =====
+const JOGOS_FILE = "jogos.json";
+let jogosSha = null;
+let jogosSemente = {}; // liga -> gamesAll persistido (semeado no 1o snapshot pos-boot)
+let jogosDirty = false;
+async function salvaJogos() {
+  if (!GH_T || !jogosDirty) return;
+  jogosDirty = false;
+  try {
+    const dump = {};
+    for (const l of Object.keys(store)) { const ga = (store[l] || {}).gamesAll; if (ga && ga.length) dump[l] = ga.slice(-600); }
+    if (!Object.keys(dump).length) return;
+    const body = { message: "jogos", content: Buffer.from(JSON.stringify(dump)).toString("base64"), branch: GH_BRANCH };
+    if (jogosSha) body.sha = jogosSha;
+    const r = await fetch(`https://api.github.com/repos/${GH_REPO}/contents/${JOGOS_FILE}`, { method: "PUT", headers: { ...ghHead(), "Content-Type": "application/json" }, body: JSON.stringify(body) });
+    if (r.ok) { const j = await r.json(); jogosSha = j.content.sha; }
+    else if (r.status === 409 || r.status === 422) { // sha defasado: rebusca
+      const g = await fetch(`https://api.github.com/repos/${GH_REPO}/contents/${JOGOS_FILE}?ref=${GH_BRANCH}`, { headers: ghHead() });
+      if (g.ok) { const j2 = await g.json(); jogosSha = j2.sha; }
+    }
+  } catch (e) {}
+}
+async function carregaJogos() {
+  if (!GH_T) return;
+  try {
+    const r = await fetch(`https://api.github.com/repos/${GH_REPO}/contents/${JOGOS_FILE}?ref=${GH_BRANCH}`, { headers: ghHead() });
+    if (r.ok) {
+      const j = await r.json();
+      jogosSha = j.sha;
+      const dados = JSON.parse(Buffer.from(j.content, "base64").toString());
+      if (dados && typeof dados === "object") { jogosSemente = dados; console.log("memoria de jogos carregada:", Object.keys(dados).map(l => l + ":" + dados[l].length).join(" ")); }
+    }
+  } catch (e) {}
+}
+carregaJogos();
+setInterval(salvaJogos, 3 * 60000); // salva a cada 3min (se mudou)
+
 app.post("/api/snapshot", (req, res) => {
   try {
     const { liga, data, mkt, curva, mm1, mm2, topo, fundo } = req.body || {};
@@ -1274,6 +1311,21 @@ app.post("/api/snapshot", (req, res) => {
     }
     const { games, upcoming, gamesAll } = decodeSnapshot(data);
     if (!games.length) return res.status(400).json({ ok: false, erro: "zero jogos no snapshot" });
+    // semeadura pos-boot: emenda a memoria persistida ANTES do quadro novo (dedupe horario|casa)
+    try {
+      if (jogosSemente[liga] && jogosSemente[liga].length) {
+        const chavesNovas = new Set(gamesAll.map(g => g.horario + "|" + g.casa));
+        const antigos = jogosSemente[liga].filter(g => !chavesNovas.has(g.horario + "|" + g.casa));
+        if (antigos.length) {
+          gamesAll = antigos.concat(gamesAll);
+          const chavesG = new Set(games.map(g => g.horario + "|" + g.casa));
+          games = antigos.filter(g => !chavesG.has(g.horario + "|" + g.casa)).concat(games);
+        }
+        delete jogosSemente[liga];
+        console.log(`liga ${liga}: memoria emendada (+${antigos.length} jogos persistidos)`);
+      }
+    } catch (e) {}
+    jogosDirty = true;
     if (!ligaBateComConteudo(liga, games)) {
       snapshotsRejeitados[liga] = (snapshotsRejeitados[liga] || 0) + 1;
       return res.status(422).json({ ok: false, erro: "conteudo nao bate com a liga (rotulo trocado) - snapshot rejeitado", liga });
