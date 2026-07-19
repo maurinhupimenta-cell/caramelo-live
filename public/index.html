@@ -418,7 +418,11 @@ async function carregaBacktest(liga,mkt){
 }
 
 function render(d){
-  if(!d||!d.analise)return; // payload de erro/restart: ignora em vez de quebrar
+  if(!d||!d.analise){ // sem dados (sonda parou/reiniciando): mostra aviso claro em vez de tela branca
+    const el=document.getElementById('conteudo');
+    if(el&&el.innerHTML.length<500){el.innerHTML=`<div style="padding:24px;text-align:center;background:#161b22;border:1px solid #30363d;border-radius:12px;margin-top:16px"><div style="font-size:15px;font-weight:700;color:#e3b341">⏳ Aguardando dados ao vivo</div><div class="note" style="font-size:12px;margin-top:8px">A conexão de dados está reiniciando. Isso costuma se resolver em segundos.<br>Se persistir, recarregue a aba de captura de dados.</div></div>`;}
+    return;
+  }
   const a=d.analise, mkt=d.mercado;
   const aquece=a.aquecendo;
   const sig=a.sinal||{};

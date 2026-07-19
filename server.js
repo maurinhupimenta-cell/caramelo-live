@@ -2833,6 +2833,12 @@ setInterval(() => {
   for (const res of sseClientes) { try { res.write(": ping\n\n"); } catch (e) { sseClientes.delete(res); } }
 }, 25000);
 
+app.get("/api/admin/limpar-erro", (req, res) => {
+  if (!isAdmin(req)) return res.status(403).json({ erro: "admin" });
+  let limpos = 0;
+  for (const l of Object.keys(store)) { if (store[l] && store[l].erro) { delete store[l].erro; limpos++; } }
+  res.json({ ok: true, limpos });
+});
 app.get("/robots.txt", (req, res) => { res.type("text/plain").send("User-agent: *\nDisallow: /\n"); });
 
 app.use(express.static(join(__dirname, "public")));
