@@ -1949,7 +1949,7 @@ app.get("/api/robo", (req, res) => {
       const dias = L.dias || {};
       const dh2 = diaHoje();
       const somaDias = n => { let s = 0; for (let i = 0; i < n; i++) { const d3 = new Date(Date.now() - i * 86400000).toLocaleDateString("en-CA", { timeZone: "America/Sao_Paulo" }); s += dias[d3] || 0; } return Math.round(s * 10) / 10; };
-      melhor.trace = Object.fromEntries(Object.entries(roboTrace).filter(([k]) => k.startsWith(m + "|") || k.startsWith("ERRO|" + m)));
+      if (req.query.debug) melhor.trace = Object.fromEntries(Object.entries(roboTrace).filter(([k]) => k.startsWith(mkt + "|") || k.startsWith("ERRO|" + mkt)));
       melhor.travas = { consumidas: Object.fromEntries(Object.entries(L.consumidas || {}).map(([k, v]) => [k, typeof v === "number" ? Math.round((Date.now() - v) / 60000) + "min" : String(v)])), cooldown: Object.fromEntries(Object.entries(L.cooldown || {}).filter(([k, v]) => Date.now() - v < 30 * 60000).map(([k, v]) => [k, Math.round((30 * 60000 - (Date.now() - v)) / 60000) + "min restantes"])) };
       melhor.registro = { saldo: L.saldo, hoje: Math.round((dias[dh2] || 0) * 10) / 10, semana7: somaDias(7), mes30: somaDias(30), ciclos: L.ciclos, greens: L.greens, redsCiclo: L.redsCiclo, aborts: L.aborts, descartes: L.descartes || 0 };
       if (!melhor.liga && !melhor.cicloView && L.consumidas) {
