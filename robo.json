@@ -144,13 +144,19 @@
   }
  },
  "o25": {
-  "saldo": -43.8,
-  "ciclos": 80,
-  "greens": 42,
+  "saldo": -42.6,
+  "ciclos": 81,
+  "greens": 43,
   "redsCiclo": 15,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-19T13:10:53.397Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Eslováquia x Países Baixos @2.1 (tiro 2)"
+   },
    {
     "quando": "2026-07-19T12:01:54.098Z",
     "resultado": "GREEN",
@@ -264,57 +270,16 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "premier · Leicester x Liverpool @2.25 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-17T23:28:26.669Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "copa · Austrália x Haiti @2.15 (tiro 2)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "14:05",
-     "jogo": "Eslovênia x Polônia",
-     "odd": 2.87
-    },
-    {
-     "h": "14:08",
-     "jogo": "Eslováquia x Países Baixos",
-     "odd": 2.1
-    },
-    {
-     "h": "14:11",
-     "jogo": "Romênia x Espanha",
-     "odd": 2.02
-    }
-   ],
-   "alvo": {
-    "h": "14:08",
-    "jogo": "Eslováquia x Países Baixos",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1784466473099
-   },
-   "iniciadoEm": 1784465933698,
-   "tiros": [
-    {
-     "h": "14:05",
-     "jogo": "Eslovênia x Polônia",
-     "odd": 2.87,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "euro": 1784466653209
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784430612433,
    "premier": 1784457156700,
-   "euro": 1784462513908,
+   "euro": 1784466653209,
    "super": 1784461034304
   },
   "dias": {
@@ -322,7 +287,7 @@
    "2026-07-16": -14.2,
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
-   "2026-07-19": -2.9
+   "2026-07-19": -1.7
   }
  },
  "ambas": {
