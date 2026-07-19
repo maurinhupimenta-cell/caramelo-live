@@ -361,13 +361,19 @@
   }
  },
  "ambas": {
-  "saldo": 8.8,
-  "ciclos": 89,
+  "saldo": 1.8,
+  "ciclos": 90,
   "greens": 57,
-  "redsCiclo": 7,
+  "redsCiclo": 8,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-19T14:33:52.997Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-19T14:02:42.099Z",
     "resultado": "GREEN",
@@ -481,70 +487,21 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-18T00:31:55.167Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · Portugal x Áustria @2 (tiro 3)"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "15:25",
-     "jogo": "Croácia x Noruega",
-     "odd": 1.98
-    },
-    {
-     "h": "15:28",
-     "jogo": "Argentina x Equador",
-     "odd": 1.86
-    },
-    {
-     "h": "15:31",
-     "jogo": "Suíça x Austrália",
-     "odd": 1.98
-    }
-   ],
-   "alvo": {
-    "h": "15:31",
-    "jogo": "Suíça x Austrália",
-    "odd": 1.98,
-    "unidades": 4,
-    "desde": 1784471452599
-   },
-   "iniciadoEm": 1784470732098,
-   "tiros": [
-    {
-     "h": "15:25",
-     "jogo": "Croácia x Noruega",
-     "odd": 1.98,
-     "unidades": 1
-    },
-    {
-     "h": "15:28",
-     "jogo": "Argentina x Equador",
-     "odd": 1.86,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784448653897,
    "super": 1784456136299,
    "premier": 1784469761995,
-   "copa": 1784459392407
+   "copa": 1784471632896
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
-   "2026-07-19": 0.8
+   "2026-07-19": -6.2
   }
  }
 }
