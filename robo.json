@@ -304,8 +304,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:32",
@@ -324,13 +324,21 @@
     }
    ],
    "alvo": {
-    "h": "17:32",
-    "jogo": "Hungria x Polônia",
-    "odd": 2.6,
-    "unidades": 1,
-    "desde": 1784478590794
+    "h": "17:35",
+    "jogo": "Portugal x Inglaterra",
+    "odd": 2.07,
+    "unidades": 2,
+    "desde": 1784479333599
    },
-   "iniciadoEm": 1784478590794
+   "iniciadoEm": 1784478590794,
+   "tiros": [
+    {
+     "h": "17:32",
+     "jogo": "Hungria x Polônia",
+     "odd": 2.6,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784472352097,
@@ -347,13 +355,19 @@
   }
  },
  "ambas": {
-  "saldo": -2.5,
-  "ciclos": 93,
-  "greens": 59,
+  "saldo": -0.9,
+  "ciclos": 94,
+  "greens": 60,
   "redsCiclo": 9,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-19T16:37:14.194Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "super · Belo Horizonte x Porto Alegre @2.15 (tiro 3)"
+   },
    {
     "quando": "2026-07-19T15:35:01.698Z",
     "resultado": "GREEN",
@@ -467,62 +481,13 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-19T04:01:13.127Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "super · Rio de Janeiro x Medellin @2.1 (tiro 1)"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "17:28",
-     "jogo": "Itaquera x Quito",
-     "odd": 2.05
-    },
-    {
-     "h": "17:31",
-     "jogo": "Guayaquil x La Boca",
-     "odd": 1.98
-    },
-    {
-     "h": "17:34",
-     "jogo": "Belo Horizonte x Porto Alegre",
-     "odd": 2.15
-    }
-   ],
-   "alvo": {
-    "h": "17:34",
-    "jogo": "Belo Horizonte x Porto Alegre",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1784478880500
-   },
-   "iniciadoEm": 1784478334699,
-   "tiros": [
-    {
-     "h": "17:28",
-     "jogo": "Itaquera x Quito",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "17:31",
-     "jogo": "Guayaquil x La Boca",
-     "odd": 1.98,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784473885402,
-   "super": 1784475301598,
+   "super": 1784479033995,
    "premier": 1784469761995,
    "copa": 1784471632896
   },
@@ -530,7 +495,7 @@
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
-   "2026-07-19": -10.5
+   "2026-07-19": -8.9
   }
  }
 }
