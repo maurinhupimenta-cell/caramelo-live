@@ -273,7 +273,36 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:34",
+     "jogo": "Rio de Janeiro x Belo Horizonte",
+     "odd": 2.07
+    },
+    {
+     "h": "12:37",
+     "jogo": "La Plata x Avellaneda",
+     "odd": 2.55
+    },
+    {
+     "h": "12:40",
+     "jogo": "Penarol x Santos",
+     "odd": 2.55
+    }
+   ],
+   "alvo": {
+    "h": "12:34",
+    "jogo": "Rio de Janeiro x Belo Horizonte",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1784460674793
+   },
+   "iniciadoEm": 1784460674793
+  },
   "cooldown": {
    "copa": 1784430612433,
    "premier": 1784457156700,
@@ -417,9 +446,7 @@
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {
-   "copa": 1784459392407
-  },
+  "consumidas": {},
   "ciclo": null,
   "cooldown": {
    "euro": 1784448653897,
