@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -61.1,
-  "ciclos": 91,
-  "greens": 26,
+  "saldo": -55.1,
+  "ciclos": 92,
+  "greens": 27,
   "redsCiclo": 32,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-19T15:16:13.498Z",
+    "resultado": "GREEN",
+    "unidades": 6,
+    "detalhe": "super · Asuncion x Quito @4.5 (tiro 2)"
+   },
    {
     "quando": "2026-07-19T14:34:14.301Z",
     "resultado": "RED_CICLO",
@@ -120,64 +126,23 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo de 3 tiros fechado no boot (restart no meio do fechamento)"
-   },
-   {
-    "quando": "2026-07-17T20:53:30.617Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "16:10",
-     "jogo": "Bogota x Guayaquil",
-     "odd": 4.75
-    },
-    {
-     "h": "16:13",
-     "jogo": "Asuncion x Quito",
-     "odd": 4.5
-    },
-    {
-     "h": "16:16",
-     "jogo": "Lima x Sao Paulo",
-     "odd": 3.75
-    }
-   ],
-   "alvo": {
-    "h": "16:13",
-    "jogo": "Asuncion x Quito",
-    "odd": 4.5,
-    "unidades": 2,
-    "desde": 1784473994499
-   },
-   "iniciadoEm": 1784473614005,
-   "tiros": [
-    {
-     "h": "16:10",
-     "jogo": "Bogota x Guayaquil",
-     "odd": 4.75,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "super": 1784474173396
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784467672200,
    "premier": 1784468339201,
    "euro": 1784448015005,
-   "super": 1784471654198
+   "super": 1784474173396
   },
   "dias": {
    "2026-07-15": -35,
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
-   "2026-07-19": -32.3
+   "2026-07-19": -26.3
   }
  },
  "o25": {
