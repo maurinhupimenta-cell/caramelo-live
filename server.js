@@ -1350,8 +1350,9 @@ app.post("/api/snapshot", (req, res) => {
     if (!liga || !data || !Array.isArray(data.cells)) {
       return res.status(400).json({ ok: false, erro: "snapshot invalido" });
     }
+    ultimoSnapshotCru[liga] = { cells: (data && data.cells) ? data.cells.length : 0, temData: !!data, hora: new Date().toLocaleTimeString("pt-BR", { timeZone: "America/Sao_Paulo" }), amostraCell: (data && data.cells && data.cells[0]) ? JSON.stringify(data.cells[0]).slice(0, 200) : null };
     let { games, upcoming, gamesAll } = decodeSnapshot(data);
-    if (!games.length) return res.status(400).json({ ok: false, erro: "zero jogos no snapshot" });
+    if (!games.length) return res.status(400).json({ ok: false, erro: "zero jogos no snapshot", cellsRecebidas: (data && data.cells) ? data.cells.length : 0 });
     // semeadura pos-boot: emenda a memoria persistida ANTES do quadro novo (dedupe horario|casa)
     try {
       if (jogosSemente[liga] && jogosSemente[liga].length) {
@@ -1690,6 +1691,7 @@ let roboState = { o35: roboVazio(), o25: roboVazio(), ambas: roboVazio() };
 const fibPrev = {}; // (legado)
 let roboTrace = {}; // caixa-preta: por que cada liga entrou/nao entrou (debug)
 let entradasLog = []; // foto de cada entrada real (auditoria: subindo ou caindo?)
+let ultimoSnapshotCru = {}; // diagnostico: o que a sonda mandou por liga
 async function salvaRoboLedger() {
   if (!GH_T) return;
   try {
@@ -1959,6 +1961,7 @@ app.get("/api/robo/rodar", (req, res) => {
   const storeShape = Object.keys(store).map(l => { const d = store[l] || {}; return { liga: l, games: (d.games || []).length, gamesAll: (d.gamesAll || []).length, upcoming: (d.upcomingRaw || []).length, fundidos: gamesFundidos(l).length }; });
   res.json({ err, roboRuns, traceKeys: Object.keys(roboTrace).length, storeShape, roboTrace, estados: Object.fromEntries(ROBO_MKTS.map(m => [m, roboState[m].ciclo ? "CICLO " + roboState[m].ciclo.liga : "vigilia"])) });
 });
+app.get("/api/snapdiag", (req, res) => { res.json(ultimoSnapshotCru); });
 app.get("/api/entradas", (req, res) => { res.json({ total: entradasLog.length, entradas: entradasLog }); });
 app.get("/api/robo", (req, res) => {
   try {
