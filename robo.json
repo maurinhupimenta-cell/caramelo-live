@@ -318,13 +318,19 @@
   }
  },
  "ambas": {
-  "saldo": 5.8,
-  "ciclos": 78,
-  "greens": 47,
+  "saldo": 6.8,
+  "ciclos": 79,
+  "greens": 48,
   "redsCiclo": 6,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-19T05:49:03.031Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Bogota x Buenos Aires @2 (tiro 1)"
+   },
    {
     "quando": "2026-07-19T05:31:11.525Z",
     "resultado": "GREEN",
@@ -438,48 +444,15 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "euro · Ucrânia x Albânia @2.2 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-17T16:05:56.717Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Southampton x Liverpool @2 (tiro 1)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:46",
-     "jogo": "Bogota x Buenos Aires",
-     "odd": 2
-    },
-    {
-     "h": "06:49",
-     "jogo": "Sao Paulo x Belo Horizonte",
-     "odd": 1.8
-    },
-    {
-     "h": "06:52",
-     "jogo": "Agua Branca x Itaquera",
-     "odd": 1.95
-    }
-   ],
-   "alvo": {
-    "h": "06:46",
-    "jogo": "Bogota x Buenos Aires",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1784439501222
-   },
-   "iniciadoEm": 1784439501222
+  "consumidas": {
+   "super": 1784440142925
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784436412132,
-   "super": 1784433672933,
+   "super": 1784440142925,
    "premier": 1784438268136,
    "copa": 1784439071332
   },
@@ -487,7 +460,7 @@
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
-   "2026-07-19": -2.2
+   "2026-07-19": -1.2
   }
  }
 }
