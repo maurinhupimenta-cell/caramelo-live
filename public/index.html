@@ -39,7 +39,7 @@
 </style>
 </head>
 <body>
-<h1>AMD Live</h1>
+<h1 style="display:flex;align-items:center;gap:10px"><svg width="34" height="34" viewBox="0 0 34 34" style="flex-shrink:0"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#58a6ff"/><stop offset="1" stop-color="#1f6feb"/></linearGradient></defs><rect x="1" y="1" width="32" height="32" rx="8" fill="#0d1117" stroke="url(#lg)" stroke-width="2"/><path d="M7 24 L12 11 L17 20 L22 8 L27 24" fill="none" stroke="url(#lg)" stroke-width="2.4" stroke-linjoin="round" stroke-linecap="round"/><circle cx="22" cy="8" r="2.4" fill="#3fb950"/></svg>AMD Live</h1>
 <div class="sub">Over 3.5 / 5+ ao vivo — atualiza sozinho direto da API, sem travar.</div>
 
 <div class="bar">
@@ -622,7 +622,7 @@ function render(d){
     }).join('');
     const cab=`<div style="color:#8b949e;text-align:center;font-size:10px;align-self:center">col</div>${horasShow.map(h=>`<div style="color:#58a6ff;text-align:center;font-size:12px;font-weight:800">${h}h</div>`).join('')}<div style="color:#8b949e;text-align:center;font-size:10px;align-self:center">%col</div>`;
     const rodape=`<div style="color:#8b949e;text-align:center;font-size:10px;align-self:center">%hora</div>${pctHora}<div></div>`;
-    ultimos=`<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap;gap:4px"><b style="font-size:13px">🧩 Mosaico — próxima rodada + últimas horas <span class="note">(${nomeMkt[mkt]||mkt})</span></b><span class="note" style="font-size:10px">clique num <b style="color:#e3b341">time</b> ou numa <b style="color:#bc8cff">odd</b> para marcar</span></div>${futHtml}<div style="display:grid;grid-template-columns:38px repeat(${horasShow.length},minmax(0,1fr)) 46px;gap:5px">${cab}${linhas}${rodape}</div>`;
+    ultimos=`<details open style="margin:0"><summary style="cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap;gap:4px;user-select:none"><b style="font-size:13px">🧩 Mosaico — próxima rodada + últimas horas <span class="note">(${nomeMkt[mkt]||mkt})</span> <span style="font-size:10px;color:#8b949e">▾ clique para recolher</span></b><span class="note" style="font-size:10px">clique num <b style="color:#e3b341">time</b> ou numa <b style="color:#bc8cff">odd</b> para marcar</span></summary>${futHtml}<div style="display:grid;grid-template-columns:38px repeat(${horasShow.length},minmax(0,1fr)) 46px;gap:5px">${cab}${linhas}${rodape}</div></details>`;
   }
 
   const _cur=(a.pagandoTempoReal!=null)?a.pagandoTempoReal:((a.serie&&a.serie.length)?a.serie[a.serie.length-1]:null);

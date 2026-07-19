@@ -64,11 +64,29 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 const PORT = process.env.PORT || 3000;
 // libera CORS pra extensao no caramelo conseguir mandar a curva
+// ===== BLINDAGEM ANTI-SCRAPING: so o proprio site consome a API =====
+const ORIGENS_OK = ["https://mr-betlive.onrender.com"];
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*");
+  const origin = req.headers.origin || "";
+  // CORS travado: so o proprio dominio recebe Allow-Origin (bloqueia fetch de outros sites)
+  if (ORIGENS_OK.includes(origin)) res.header("Access-Control-Allow-Origin", origin);
+  res.header("Vary", "Origin");
   res.header("Access-Control-Allow-Methods", "GET,POST,OPTIONS");
-  res.header("Access-Control-Allow-Headers", "Content-Type");
+  res.header("Access-Control-Allow-Headers", "Content-Type,X-Acesso");
+  res.header("X-Frame-Options", "SAMEORIGIN");            // nao deixa embutir o site em iframe de terceiros
+  res.header("X-Content-Type-Options", "nosniff");
+  res.header("Referrer-Policy", "same-origin");
+  res.header("X-Robots-Tag", "noindex, nofollow");        // fora dos buscadores
   if (req.method === "OPTIONS") return res.sendStatus(204);
+  // API de dados: exige vir do PROPRIO site (referer/origin), fecha para curl/bots/outros sites.
+  // As sondas (/api/snapshot, /api/snapshot2) e admin sao liberadas aqui e protegidas por chave propria.
+  const p = req.path;
+  const ehApiDado = p.startsWith("/api/") && !p.startsWith("/api/snapshot") && !p.startsWith("/api/admin") && !p.startsWith("/api/acesso") && !p.startsWith("/api/eventos");
+  if (ehApiDado) {
+    const ref = (req.headers.referer || req.headers.origin || "");
+    const doProprioSite = ORIGENS_OK.some(o => ref.startsWith(o));
+    if (!doProprioSite) return res.status(403).json({ erro: "acesso restrito ao aplicativo" });
+  }
   next();
 });
 app.use(express.json({ limit: "25mb" }));
@@ -2812,6 +2830,8 @@ app.get("/api/eventos", (req, res) => {
 setInterval(() => {
   for (const res of sseClientes) { try { res.write(": ping\n\n"); } catch (e) { sseClientes.delete(res); } }
 }, 25000);
+
+app.get("/robots.txt", (req, res) => { res.type("text/plain").send("User-agent: *\nDisallow: /\n"); });
 
 app.use(express.static(join(__dirname, "public")));
 
