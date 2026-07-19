@@ -1329,7 +1329,7 @@ app.post("/api/snapshot", (req, res) => {
     if (!liga || !data || !Array.isArray(data.cells)) {
       return res.status(400).json({ ok: false, erro: "snapshot invalido" });
     }
-    const { games, upcoming, gamesAll } = decodeSnapshot(data);
+    let { games, upcoming, gamesAll } = decodeSnapshot(data);
     if (!games.length) return res.status(400).json({ ok: false, erro: "zero jogos no snapshot" });
     // semeadura pos-boot: emenda a memoria persistida ANTES do quadro novo (dedupe horario|casa)
     try {
@@ -1912,7 +1912,13 @@ function atualizaRoboMkt(mkt) {
     }
   } catch (e) { roboTrace["ERRO|" + mkt] = e.message + " @" + String(e.stack||"").split("\n")[1]; console.error("atualizaRoboMkt " + mkt + ":", e.message);}
 }
-function atualizaRoboLedger() { for (const m of ROBO_MKTS) atualizaRoboMkt(m); }
+let roboRuns = 0;
+function atualizaRoboLedger() { roboRuns++; for (const m of ROBO_MKTS) atualizaRoboMkt(m); }
+app.get("/api/robo/rodar", (req, res) => {
+  let err = null;
+  try { atualizaRoboLedger(); } catch (e) { err = e.message + " | " + String(e.stack || "").split("\n")[1]; }
+  res.json({ err, roboRuns, traceKeys: Object.keys(roboTrace).length, roboTrace, estados: Object.fromEntries(ROBO_MKTS.map(m => [m, roboState[m].ciclo ? "CICLO " + roboState[m].ciclo.liga : "vigilia"])) });
+});
 app.get("/api/robo", (req, res) => {
   try {
     const out = {};
