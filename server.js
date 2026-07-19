@@ -1083,7 +1083,10 @@ function decodeSnapshot(data) {
     nome: g.nome, a: g.a, b: g.b, total: g.total,
     casa: g.casa, fora: g.fora, ht: g.ht, horario: g.horario || "", odds: completaOdds(g.odds)
   });
-  const games = passados.slice(0, -2).slice(-1200).map(mapa);
+  // DROP-2 ABOLIDO (o usuario estava certo): os 2 resultados mais frescos que a fonte ja
+  // entrega NAO sao mais descartados - grafico, zonas, estudos e robo rodam na linha cheia.
+  // (o descarte existia so para imitar a curva da fonte, que atrasa em relacao ao proprio quadro)
+  const games = passados.slice(-1200).map(mapa);
   // gamesAll: SEM o drop-2 (inclui os 2 jogos mais recentes) — usado SO pelo radar,
   // pra alertar no fechamento real (~6 min mais cedo). Grafico/analises seguem com drop-2.
   const gamesAll = passados.slice(-1200).map(mapa);
