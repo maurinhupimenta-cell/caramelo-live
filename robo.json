@@ -289,13 +289,19 @@
   }
  },
  "ambas": {
-  "saldo": 8,
-  "ciclos": 72,
-  "greens": 42,
+  "saldo": 9,
+  "ciclos": 73,
+  "greens": 43,
   "redsCiclo": 5,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-19T03:56:11.926Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Portugal x Itália @1.98 (tiro 1)"
+   },
    {
     "quando": "2026-07-18T01:37:26.876Z",
     "resultado": "DESCARTADO",
@@ -409,47 +415,12 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-17T12:25:55.312Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "euro · Escócia x Polônia @2.07 (tiro 1)"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:53",
-     "jogo": "Portugal x Itália",
-     "odd": 1.98
-    },
-    {
-     "h": "04:56",
-     "jogo": "Romênia x Países Baixos",
-     "odd": 1.8
-    },
-    {
-     "h": "04:59",
-     "jogo": "Escócia x Hungria",
-     "odd": 2.02
-    }
-   ],
-   "alvo": {
-    "h": "04:53",
-    "jogo": "Portugal x Itália",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1784432832431
-   },
-   "iniciadoEm": 1784432832431
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784334714775,
+   "euro": 1784433371823,
    "super": 1784314587616,
    "premier": 1784308842916,
    "copa": 1784326556495
@@ -457,7 +428,8 @@
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
-   "2026-07-17": 2.1
+   "2026-07-17": 2.1,
+   "2026-07-19": 1
   }
  }
 }
