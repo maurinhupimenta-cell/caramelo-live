@@ -144,13 +144,19 @@
   }
  },
  "o25": {
-  "saldo": -42.6,
-  "ciclos": 81,
-  "greens": 43,
+  "saldo": -40.8,
+  "ciclos": 82,
+  "greens": 44,
   "redsCiclo": 15,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-19T14:45:52.202Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "copa · Qatar x Paraguai @2.4 (tiro 2)"
+   },
    {
     "quando": "2026-07-19T13:10:53.397Z",
     "resultado": "GREEN",
@@ -264,55 +270,12 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-17T23:47:39.671Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "premier · Leicester x Liverpool @2.25 (tiro 2)"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "15:40",
-     "jogo": "Panamá x RD Congo",
-     "odd": 2.25
-    },
-    {
-     "h": "15:43",
-     "jogo": "Qatar x Paraguai",
-     "odd": 2.4
-    },
-    {
-     "h": "15:46",
-     "jogo": "Áustria x Brasil",
-     "odd": 2.2
-    }
-   ],
-   "alvo": {
-    "h": "15:43",
-    "jogo": "Qatar x Paraguai",
-    "odd": 2.4,
-    "unidades": 2,
-    "desde": 1784472152393
-   },
-   "iniciadoEm": 1784471452497,
-   "tiros": [
-    {
-     "h": "15:40",
-     "jogo": "Panamá x RD Congo",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784430612433,
+   "copa": 1784472352097,
    "premier": 1784457156700,
    "euro": 1784466653209,
    "super": 1784461034304
@@ -322,7 +285,7 @@
    "2026-07-16": -14.2,
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
-   "2026-07-19": -1.7
+   "2026-07-19": 0.1
   }
  },
  "ambas": {
