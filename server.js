@@ -1220,9 +1220,10 @@ function nomesBatem(a, b) {
   const tb = nb.split(" ").filter(w => w.length >= 4);
   return ta.some(w => tb.includes(w));
 }
+function listaCheia(d, alt) { const a = d && d.gamesAll; if (a && a.length) return a; const g = (d && d.games) || alt || []; return (g && g.length) ? g : (alt || []); }
 function gamesFundidos(liga) {
   const d = store[liga];
-  const ga = (d && (d.gamesAll || d.games)) || []; // fallback: gamesAll sumiu do buildStore numa reforma antiga
+  const ga = listaCheia(d); // fallback a prova de array VAZIO (que e truthy em JS)
   const r = rapidos[liga] || {};
   const cauda = ga.slice(-40);
   const extra = Object.values(r).filter(g => !cauda.some(x => x.horario === g.horario && x.casa === g.casa));
@@ -1453,7 +1454,7 @@ app.get("/api/liga/:liga", (req, res) => {
   // pagando em TEMPO REAL (sem o atraso de 2 jogos): o selo/zona operam com este;
   // o grafico continua com drop-2, fiel ao caramelo
   try {
-    const gAllTR = d.gamesAll || d.games || [];
+    const gAllTR = listaCheia(d);
     if (gAllTR.length >= 2 && !analise.ehTotalGols) {
       const sfTR = chartSeries(gAllTR, mkt, Math.max(2, Math.min(20, gAllTR.length)));
       if (sfTR.length) analise.pagandoTempoReal = sfTR[sfTR.length - 1];
@@ -1466,7 +1467,7 @@ app.get("/api/liga/:liga", (req, res) => {
     const Lh = (analise.serie || []).length;
     analise.serieHoras = (d.games || []).slice(-Lh).map(g => g.horario || "");
   } catch (e) {}
-  const _gM = d.gamesAll || d.games || [];
+  const _gM = listaCheia(d);
   const _trioOdds = o => ({ ambs: o && o.ambs != null ? o.ambs : null, o25: o && o.o25 != null ? o.o25 : null, o35: o && o.o35 != null ? o.o35 : null });
   const mosaico = {
     passados: _gM.slice(-66).map(g => ({ h: g.horario || "", casa: g.casa, fora: g.fora, placar: g.a + "-" + g.b, total: g.total, odds: _trioOdds(g.odds) })),
@@ -1506,7 +1507,7 @@ app.get("/api/liga/:liga", (req, res) => {
     const anc = ancoras[p.nome];
     const base = anc ? { ...p, ancora: anc } : { ...p };
     base.placarProvavel = placarProvavel(d.games || [], p.casa, p.fora, p.nome);
-    if (mkt !== "totft") base.coluna = colunaPct(d.gamesAll || d.games || [], p.horario, mkt);
+    if (mkt !== "totft") base.coluna = colunaPct(listaCheia(d), p.horario, mkt);
     if (mkt !== "totft" && posTimes) { base.posCasa = posTimes[p.casa] || null; base.posFora = posTimes[p.fora] || null; base.posTotal = posTotal; }
     if (mkt !== "totft") {
       base.combo = comboDe(p);
@@ -1778,7 +1779,7 @@ function montaRobo(mkt) {
     // ⚓ tabela de ancoras do DIA (zerada na virada 23h->00h do relogio do jogo)
     let scoreT = () => null;
     try {
-      const ga = d.gamesAll || games;
+      const ga = listaCheia(d, games);
       let idxDia = 0;
       for (let i2 = 1; i2 < ga.length; i2++) {
         const h1 = parseInt((ga[i2].horario || "").split(":")[0]);
@@ -1802,12 +1803,12 @@ function montaRobo(mkt) {
     if (melhorStart == null) { roboTrace[mkt + "|" + liga].semTrio = true; continue; } // sem trio completo: espera a rodada
     for (let dgi = 0; dgi < 3; dgi++) {
       const p = porIdx[melhorStart + dgi];
-      degraus.push({ papel: papeis[dgi], unidades: [1, 2, 4][dgi], h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev, evAlto: p.ev > 10, ancora: ancDoJogo(p) != null ? Math.round(ancDoJogo(p)) : null, col: colunaPct(d.gamesAll || games, p.horario, mkt) });
+      degraus.push({ papel: papeis[dgi], unidades: [1, 2, 4][dgi], h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev, evAlto: p.ev > 10, ancora: ancDoJogo(p) != null ? Math.round(ancDoJogo(p)) : null, col: colunaPct(listaCheia(d, games), p.horario, mkt) });
     }
     let ancoraDia = 0;
     try { let soma = 0, nA = 0; for (const dg of degraus) { if (dg.ancora != null) { soma += dg.ancora; nA++; } } ancoraDia = nA ? Math.round(soma / nA) : 0; } catch (e) {}
     if (melhor && ancoraDia <= (melhor.ancoraDia || 0)) continue; // entre bolsoes, as MELHORES ancoras do dia
-    melhor = { mkt, piso, liga, rel, pagando: cur, base: Math.round(base * 10) / 10, degraus, pulados, fib: fibInfo, ancoraDia, teste: false, taxas: taxaJanelas(d.gamesAll || games, mkt) };
+    melhor = { mkt, piso, liga, rel, pagando: cur, base: Math.round(base * 10) / 10, degraus, pulados, fib: fibInfo, ancoraDia, teste: false, taxas: taxaJanelas(listaCheia(d, games), mkt) };
   }
   return melhor;
 }
@@ -1817,7 +1818,7 @@ function atualizaRoboMkt(mkt) {
     const L = roboState[mkt];
     const melhor = montaRobo(mkt);
     const pertenceALiga = (liga, jogo) => {
-      const d2 = store[liga]; const g2 = (d2 && (d2.gamesAll || d2.games)) || [];
+      const d2 = store[liga]; const g2 = listaCheia(d2);
       const casa = (jogo || "").split(" x ")[0];
       return !!casa && g2.slice(-480).some(x => x.casa === casa);
     };
@@ -1925,6 +1926,7 @@ app.get("/api/robo", (req, res) => {
   try {
     const out = {};
     for (const mkt of ROBO_MKTS) {
+      try {
       const L = roboState[mkt];
       let melhor;
       if (L.ciclo) {
@@ -1962,6 +1964,7 @@ app.get("/api/robo", (req, res) => {
       }
       if (req.query.debug) { melhor.dbgCiclo = L.ciclo; melhor.dbgHistorico = L.historico.slice(0, 6); }
       out[mkt] = melhor;
+      } catch (eMkt) { out[mkt] = { erro: eMkt.message }; } // um robo quebrado nao derruba os outros
     }
     res.json(out);
   } catch (e) { res.status(500).json({ erro: e.message }); }
@@ -1976,7 +1979,7 @@ app.get("/api/padroes/:liga", (req, res) => {
     if (padroesCache[ck] && now - padroesCache[ck].ts < 30000) return res.json(padroesCache[ck].out);
     const d = store[liga];
     if (!d || !d.games || d.games.length < 200) return res.json({ padroes: [] });
-    let games = d.gamesAll || d.games;
+    let games = listaCheia(d);
     // ZERA AS 00 DO JOGO (regra do usuario): o cacador conta SO o dia atual do relogio do jogo
     try {
       let idxDia = 0;
@@ -2084,7 +2087,7 @@ app.get("/api/dicas", (req, res) => {
         const evAlto = p.ev > 10; // historicamente decepciona: a casa costuma estar certa
         const grade = (rel < 60 && oddOk) ? "entrada" : (rel < 60 || (rel < 75 && oddOk)) ? "observar" : "aguardar";
         const nota = (100 - rel) * 2 + (oddOk ? 10 : 0) - (evAlto ? 8 : 0) + (rank === 1 ? 12 : rank === 2 ? 6 : 0) + (anc ? 8 : 0) - (veto ? 10 : 0);
-        tudo.push({ liga, rel, pagando: cur, base: Math.round(base * 10) / 10, h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev, evAlto, piso, oddOk, rank, anc, veto, grade, nota, col: colunaPct(d.gamesAll || games, p.horario, mkt) });
+        tudo.push({ liga, rel, pagando: cur, base: Math.round(base * 10) / 10, h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev, evAlto, piso, oddOk, rank, anc, veto, grade, nota, col: colunaPct(listaCheia(d, games), p.horario, mkt) });
       }
     }
     tudo.sort((a, b) => b.nota - a.nota);
@@ -2118,7 +2121,7 @@ app.get("/api/estudopulo/:liga", (req, res) => {
     const liga = req.params.liga, mkt = req.query.mkt || "o35";
     const d = store[liga];
     if (!d || !d.games || d.games.length < 300) return res.json({ erro: "historico insuficiente" });
-    const games = d.gamesAll || d.games;
+    const games = listaCheia(d);
     const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
     // P(pagar | seca atual = k) e histograma dos pulos realizados
     const porSeca = {}; // k -> [n, pagou]
@@ -2213,7 +2216,7 @@ app.get("/api/estudohora/:liga", (req, res) => {
     const liga = req.params.liga, mkt = req.query.mkt || "o25";
     const d = store[liga];
     if (!d || !d.games || d.games.length < 200) return res.json({ erro: "historico insuficiente" });
-    const games = d.gamesAll || d.games;
+    const games = listaCheia(d);
     const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
     const faixas = { "00-07": [0, 0], "07-12": [0, 0], "12-18": [0, 0], "18-24": [0, 0] };
     const porHora = {};
@@ -2550,7 +2553,7 @@ function atualizaRadar(liga, s) {
       const c = s.computed && s.computed[mkt]; if (!c || !c.sinal) continue;
       // RADAR SEM DROP-2: usa gamesAll (inclui os 2 jogos mais recentes) — alerta no
       // fechamento real do jogo. Grafico/analises continuam com drop-2 (fieis ao caramelo).
-      const gAll = s.gamesAll || s.games || [];
+      const gAll = listaCheia(s);
       const JANR = Math.max(2, Math.min(20, gAll.length));
       const serie = gAll.length ? chartSeries(gAll, mkt, JANR).slice(-20) : (c.serie || []);
       const cur = serie.length ? serie[serie.length - 1] : null; // taxa atual (ultimo ponto, sem drop)
