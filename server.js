@@ -1289,6 +1289,9 @@ app.post("/api/snapshot2", (req, res) => {
   } catch (e) { res.status(500).json({ ok: false, erro: e.message }); }
 });
 // serve o script da sonda 2 (colar no console vira uma linha so)
+app.get("/api/wsstatus", (req, res) => {
+  res.json({ wsReady: typeof wsReady !== "undefined" ? wsReady : null, wsServerEnabled: typeof WS_SERVER_ENABLED !== "undefined" ? WS_SERVER_ENABLED : null, temReconnectTimer: typeof wsReconnectTimer !== "undefined" ? !!wsReconnectTimer : null, wsUrl: typeof WS_URL !== "undefined" ? WS_URL : null });
+});
 app.get("/sonda.js", (req, res) => {
   try { const fs = require("fs"); res.type("application/javascript").send(fs.readFileSync(__dirname + "/captura-completa.js", "utf8")); }
   catch (e) { res.status(500).send("// erro: " + e.message); }
