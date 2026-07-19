@@ -128,9 +128,7 @@
     "detalhe": "euro · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {
-   "super": 1784471654198
-  },
+  "consumidas": {},
   "ciclo": null,
   "cooldown": {
    "copa": 1784467672200,
@@ -277,8 +275,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "15:40",
@@ -297,13 +295,21 @@
     }
    ],
    "alvo": {
-    "h": "15:40",
-    "jogo": "Panamá x RD Congo",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1784471452497
+    "h": "15:43",
+    "jogo": "Qatar x Paraguai",
+    "odd": 2.4,
+    "unidades": 2,
+    "desde": 1784472152393
    },
-   "iniciadoEm": 1784471452497
+   "iniciadoEm": 1784471452497,
+   "tiros": [
+    {
+     "h": "15:40",
+     "jogo": "Panamá x RD Congo",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784430612433,
@@ -449,7 +455,36 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:40",
+     "jogo": "Rio de Janeiro x Buenos Aires",
+     "odd": 1.86
+    },
+    {
+     "h": "15:43",
+     "jogo": "Asuncion x Agua Branca",
+     "odd": 1.93
+    },
+    {
+     "h": "15:46",
+     "jogo": "Guayaquil x Sao Paulo",
+     "odd": 1.8
+    }
+   ],
+   "alvo": {
+    "h": "15:40",
+    "jogo": "Rio de Janeiro x Buenos Aires",
+    "odd": 1.86,
+    "unidades": 1,
+    "desde": 1784471654393
+   },
+   "iniciadoEm": 1784471654393
+  },
   "cooldown": {
    "euro": 1784448653897,
    "super": 1784456136299,
