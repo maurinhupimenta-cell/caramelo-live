@@ -129,7 +129,36 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:27",
+     "jogo": "Liverpool x Aston",
+     "odd": 4.75
+    },
+    {
+     "h": "10:30",
+     "jogo": "Palace x Chelsea",
+     "odd": 4.2
+    },
+    {
+     "h": "10:33",
+     "jogo": "Liverpool x Islington",
+     "odd": 4.33
+    }
+   ],
+   "alvo": {
+    "h": "10:27",
+    "jogo": "Liverpool x Aston",
+    "odd": 4.75,
+    "unidades": 1,
+    "desde": 1784453023294
+   },
+   "iniciadoEm": 1784453023294
+  },
   "cooldown": {
    "copa": 1784440513022,
    "premier": 1784443660200,
@@ -144,13 +173,19 @@
   }
  },
  "o25": {
-  "saldo": -49.1,
-  "ciclos": 76,
-  "greens": 38,
+  "saldo": -47.6,
+  "ciclos": 77,
+  "greens": 39,
   "redsCiclo": 15,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-19T09:23:43.597Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "premier · West Ham x Liverpool @2.45 (tiro 1)"
+   },
    {
     "quando": "2026-07-19T08:38:42.395Z",
     "resultado": "GREEN",
@@ -264,48 +299,15 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "premier · Brighton x City @1.95 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-17T16:18:29.813Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "10:21",
-     "jogo": "West Ham x Liverpool",
-     "odd": 2.45
-    },
-    {
-     "h": "10:24",
-     "jogo": "Leeds x Newcastle",
-     "odd": 2.3
-    },
-    {
-     "h": "10:27",
-     "jogo": "Liverpool x Aston",
-     "odd": 2.35
-    }
-   ],
-   "alvo": {
-    "h": "10:21",
-    "jogo": "West Ham x Liverpool",
-    "odd": 2.45,
-    "unidades": 1,
-    "desde": 1784452663600
-   },
-   "iniciadoEm": 1784452663600
+  "consumidas": {
+   "premier": 1784453023398
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784430612433,
-   "premier": 1784450322203,
+   "premier": 1784453023398,
    "euro": 1784438392434,
    "super": 1784445013670
   },
@@ -314,7 +316,7 @@
    "2026-07-16": -14.2,
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
-   "2026-07-19": -8.2
+   "2026-07-19": -6.7
   }
  },
  "ambas": {
