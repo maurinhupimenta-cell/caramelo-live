@@ -444,7 +444,36 @@
    "premier": 1784561751116,
    "super": 1784563485708
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:31",
+     "jogo": "Austrália x EUA",
+     "odd": 1.93
+    },
+    {
+     "h": "17:34",
+     "jogo": "Brasil x Equador",
+     "odd": 1.9
+    },
+    {
+     "h": "17:37",
+     "jogo": "Suécia x Curação",
+     "odd": 2.15
+    }
+   ],
+   "alvo": {
+    "h": "17:31",
+    "jogo": "Austrália x EUA",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1784564892920
+   },
+   "iniciadoEm": 1784564892920
+  },
   "cooldown": {
    "euro": 1784561545319,
    "super": 1784563485708,
@@ -460,8 +489,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 18,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 53,
    "start": 1
   }
  }
