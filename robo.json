@@ -180,13 +180,19 @@
   }
  },
  "o25": {
-  "saldo": -39.4,
-  "ciclos": 124,
-  "greens": 78,
+  "saldo": -38.2,
+  "ciclos": 125,
+  "greens": 79,
   "redsCiclo": 23,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T13:25:11.709Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Uzbequistão x Curação @2.2 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T13:19:12.912Z",
     "resultado": "GREEN",
@@ -300,51 +306,17 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "premier · Newcastle x Liverpool @2.07 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T07:18:32.808Z",
-    "resultado": "GREEN",
-    "unidades": 3,
-    "detalhe": "super · Bogota x Porto Alegre @3 (tiro 2)"
    }
   ],
   "consumidas": {
    "premier": 1784550937410,
    "euro": 1784552514316,
-   "super": 1784553552811
+   "super": 1784553552811,
+   "copa": 1784553911606
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:22",
-     "jogo": "Uzbequistão x Curação",
-     "odd": 2.2
-    },
-    {
-     "h": "14:25",
-     "jogo": "RD Congo x Paraguai",
-     "odd": 2.25
-    },
-    {
-     "h": "14:28",
-     "jogo": "Colômbia x Espanha",
-     "odd": 2.15
-    }
-   ],
-   "alvo": {
-    "h": "14:22",
-    "jogo": "Uzbequistão x Curação",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1784553554509
-   },
-   "iniciadoEm": 1784553554509
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784549593720,
+   "copa": 1784553911606,
    "premier": 1784550937410,
    "euro": 1784552514316,
    "super": 1784553552811
@@ -355,12 +327,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 13.5
+   "2026-07-20": 14.7
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 41,
+   "tipo": "seq",
+   "chave": "RGRGG",
+   "n": 9,
    "start": 1
   }
  },
