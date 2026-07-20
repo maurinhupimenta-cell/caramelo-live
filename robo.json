@@ -323,7 +323,36 @@
    "copa": 1784553911606,
    "premier": 1784555075316
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:05",
+     "jogo": "Áustria x França",
+     "odd": 2.15
+    },
+    {
+     "h": "15:08",
+     "jogo": "Itália x Geórgia",
+     "odd": 2.4
+    },
+    {
+     "h": "15:11",
+     "jogo": "Alemanha x Dinamarca",
+     "odd": 2.3
+    }
+   ],
+   "alvo": {
+    "h": "15:05",
+    "jogo": "Áustria x França",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1784556313709
+   },
+   "iniciadoEm": 1784556313709
+  },
   "cooldown": {
    "copa": 1784553911606,
    "premier": 1784555075316,
@@ -339,9 +368,9 @@
    "2026-07-20": 7.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":51",
-   "n": 14,
+   "tipo": "seq",
+   "chave": "GGGRR",
+   "n": 7,
    "start": 1
   }
  },
