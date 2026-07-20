@@ -287,8 +287,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "09:14",
@@ -307,11 +307,11 @@
     }
    ],
    "alvo": {
-    "h": "09:17",
-    "jogo": "Hungria x França",
+    "h": "09:20",
+    "jogo": "Alemanha x Áustria",
     "odd": 2.2,
-    "unidades": 2,
-    "desde": 1784535396916
+    "unidades": 4,
+    "desde": 1784535575807
    },
    "iniciadoEm": 1784535105208,
    "tiros": [
@@ -320,6 +320,12 @@
      "jogo": "Inglaterra x Portugal",
      "odd": 2.1,
      "unidades": 1
+    },
+    {
+     "h": "09:17",
+     "jogo": "Hungria x França",
+     "odd": 2.2,
+     "unidades": 2
     }
    ]
   },
@@ -338,10 +344,10 @@
    "2026-07-20": 9.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":25",
-   "n": 9,
-   "start": 2
+   "tipo": "seq",
+   "chave": "GRGRR",
+   "n": 6,
+   "start": 1
   }
  },
  "ambas": {
