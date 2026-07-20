@@ -287,8 +287,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "10:29",
@@ -307,13 +307,21 @@
     }
    ],
    "alvo": {
-    "h": "10:29",
-    "jogo": "Países Baixos x Hungria",
+    "h": "10:32",
+    "jogo": "Dinamarca x Inglaterra",
     "odd": 2.2,
-    "unidades": 1,
-    "desde": 1784539554809
+    "unidades": 2,
+    "desde": 1784539935009
    },
-   "iniciadoEm": 1784539554809
+   "iniciadoEm": 1784539554809,
+   "tiros": [
+    {
+     "h": "10:29",
+     "jogo": "Países Baixos x Hungria",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784536073615,
@@ -331,8 +339,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 26,
+   "chave": "goleada (3+)",
+   "n": 40,
    "start": 1
   }
  },
