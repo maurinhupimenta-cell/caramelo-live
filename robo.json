@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -37,
-  "ciclos": 109,
-  "greens": 66,
+  "saldo": -35.8,
+  "ciclos": 110,
+  "greens": 67,
   "redsCiclo": 20,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T09:17:38.014Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · Palace x Liverpool @2.2 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T08:37:15.608Z",
     "resultado": "GREEN",
@@ -273,52 +279,18 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "euro · Espanha x Ucrânia @2.15 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T01:28:11.904Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "copa · Iraque x Gana @2.55 (tiro 1)"
    }
   ],
   "consumidas": {
    "euro": 1784535775021,
    "copa": 1784536073615,
-   "super": 1784536635419
+   "super": 1784536635419,
+   "premier": 1784539057915
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "10:15",
-     "jogo": "Palace x Liverpool",
-     "odd": 2.2
-    },
-    {
-     "h": "10:18",
-     "jogo": "Brentford x Leicester",
-     "odd": 2.3
-    },
-    {
-     "h": "10:21",
-     "jogo": "Aston x Southampton",
-     "odd": 2.45
-    }
-   ],
-   "alvo": {
-    "h": "10:15",
-    "jogo": "Palace x Liverpool",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1784538708214
-   },
-   "iniciadoEm": 1784538708214
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784536073615,
-   "premier": 1784535103814,
+   "premier": 1784539057915,
    "euro": 1784535775021,
    "super": 1784536635419
   },
@@ -328,12 +300,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 15.9
+   "2026-07-20": 17.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Aston",
-   "n": 20,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 52,
    "start": 1
   }
  },
