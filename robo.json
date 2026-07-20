@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -96.2,
-  "ciclos": 118,
+  "saldo": -103.2,
+  "ciclos": 119,
   "greens": 38,
-  "redsCiclo": 47,
+  "redsCiclo": 48,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-20T12:24:55.616Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-20T11:14:38.112Z",
     "resultado": "RED_CICLO",
@@ -120,71 +126,24 @@
     "resultado": "GREEN",
     "unidades": 2.8,
     "detalhe": "super · Belo Horizonte x Agua Branca @3.8 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-19T19:28:12.204Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "13:16",
-     "jogo": "Bogota x Belo Horizonte",
-     "odd": 4.5
-    },
-    {
-     "h": "13:19",
-     "jogo": "Medellin x La Plata",
-     "odd": 5.5
-    },
-    {
-     "h": "13:22",
-     "jogo": "La Boca x Rio de Janeiro",
-     "odd": 4.75
-    }
-   ],
-   "alvo": {
-    "h": "13:22",
-    "jogo": "La Boca x Rio de Janeiro",
-    "odd": 4.75,
-    "unidades": 4,
-    "desde": 1784550095316
-   },
-   "iniciadoEm": 1784549575408,
-   "tiros": [
-    {
-     "h": "13:16",
-     "jogo": "Bogota x Belo Horizonte",
-     "odd": 4.5,
-     "unidades": 1
-    },
-    {
-     "h": "13:19",
-     "jogo": "Medellin x La Plata",
-     "odd": 5.5,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "super": 1784550295516
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784542934710,
    "premier": 1784546078012,
    "euro": 1784545133910,
-   "super": 1784538055315
+   "super": 1784550295516
   },
   "dias": {
    "2026-07-15": -35,
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
-   "2026-07-20": -18.9
+   "2026-07-20": -25.9
   },
   "_gatilhoAtual": {
    "tipo": "placar",
@@ -483,7 +442,36 @@
    "copa": 1784546873613,
    "euro": 1784548554607
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:25",
+     "jogo": "Buenos Aires x Asuncion",
+     "odd": 1.95
+    },
+    {
+     "h": "13:28",
+     "jogo": "Quito x Bogota",
+     "odd": 2.15
+    },
+    {
+     "h": "13:31",
+     "jogo": "Belo Horizonte x Santiago",
+     "odd": 1.9
+    }
+   ],
+   "alvo": {
+    "h": "13:25",
+    "jogo": "Buenos Aires x Asuncion",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1784550095509
+   },
+   "iniciadoEm": 1784550095509
+  },
   "cooldown": {
    "euro": 1784548554607,
    "super": 1784546336408,
@@ -498,9 +486,9 @@
    "2026-07-20": -6.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Sérvia",
-   "n": 20,
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 29,
    "start": 1
   }
  }
