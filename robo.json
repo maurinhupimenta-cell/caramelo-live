@@ -311,13 +311,19 @@
   }
  },
  "ambas": {
-  "saldo": -18.6,
-  "ciclos": 149,
-  "greens": 104,
+  "saldo": -17.3,
+  "ciclos": 150,
+  "greens": 105,
   "redsCiclo": 18,
   "aborts": 0,
   "descartes": 27,
   "historico": [
+   {
+    "quando": "2026-07-20T19:37:15.009Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "super · La Boca x Itaquera @2.07 (tiro 3)"
+   },
    {
     "quando": "2026-07-20T19:21:12.516Z",
     "resultado": "GREEN",
@@ -431,65 +437,17 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · Islington x Brentford @2.05 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T13:55:13.210Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "copa · Arábia Saudita x Portugal @1.85 (tiro 1)"
    }
   ],
   "consumidas": {
    "copa": 1784573351513,
-   "euro": 1784575272412
+   "euro": 1784575272412,
+   "super": 1784576234818
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "20:28",
-     "jogo": "Quito x Agua Branca",
-     "odd": 1.93
-    },
-    {
-     "h": "20:31",
-     "jogo": "La Plata x Rio de Janeiro",
-     "odd": 2.1
-    },
-    {
-     "h": "20:34",
-     "jogo": "La Boca x Itaquera",
-     "odd": 2.07
-    }
-   ],
-   "alvo": {
-    "h": "20:34",
-    "jogo": "La Boca x Itaquera",
-    "odd": 2.07,
-    "unidades": 4,
-    "desde": 1784576112208
-   },
-   "iniciadoEm": 1784575514409,
-   "tiros": [
-    {
-     "h": "20:28",
-     "jogo": "Quito x Agua Branca",
-     "odd": 1.93,
-     "unidades": 1
-    },
-    {
-     "h": "20:31",
-     "jogo": "La Plata x Rio de Janeiro",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784575272412,
-   "super": 1784571432114,
+   "super": 1784576234818,
    "premier": 1784571833012,
    "copa": 1784573351513
   },
@@ -498,12 +456,12 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": 0
+   "2026-07-20": 1.3
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 44,
+   "tipo": "odd",
+   "chave": "2.2",
+   "n": 11,
    "start": 1
   }
  }
