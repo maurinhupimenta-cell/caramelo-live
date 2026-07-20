@@ -132,7 +132,36 @@
    "super": 1784531595920,
    "premier": 1784532222107
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:07",
+     "jogo": "Uruguai x Senegal",
+     "odd": 5
+    },
+    {
+     "h": "09:10",
+     "jogo": "República Tcheca x Escócia",
+     "odd": 5.5
+    },
+    {
+     "h": "09:13",
+     "jogo": "Qatar x Tunísia",
+     "odd": 5.5
+    }
+   ],
+   "alvo": {
+    "h": "09:07",
+    "jogo": "Uruguai x Senegal",
+    "odd": 5,
+    "unidades": 1,
+    "desde": 1784534295114
+   },
+   "iniciadoEm": 1784534295114
+  },
   "cooldown": {
    "copa": 1784530695008,
    "premier": 1784532222107,
@@ -147,10 +176,10 @@
    "2026-07-20": 23.1
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 10,
-   "start": 1
+   "tipo": "time",
+   "chave": "Escócia",
+   "n": 6,
+   "start": 3
   }
  },
  "o25": {
@@ -310,13 +339,19 @@
   }
  },
  "ambas": {
-  "saldo": -20.7,
-  "ciclos": 114,
-  "greens": 75,
+  "saldo": -19.3,
+  "ciclos": 115,
+  "greens": 76,
   "redsCiclo": 14,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-20T08:00:53.215Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "copa · Tunísia x Uzbequistão @2.2 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T07:48:55.909Z",
     "resultado": "GREEN",
@@ -430,69 +465,27 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · Hungria x Alemanha @1.98 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-19T19:55:54.999Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
    "euro": 1784531834118,
    "premier": 1784533296517,
-   "super": 1784533735716
+   "super": 1784533735716,
+   "copa": 1784534453114
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "08:55",
-     "jogo": "Portugal x Países Baixos",
-     "odd": 1.93
-    },
-    {
-     "h": "08:58",
-     "jogo": "Tunísia x Uzbequistão",
-     "odd": 2.2
-    },
-    {
-     "h": "09:01",
-     "jogo": "Áustria x Iraque",
-     "odd": 2.07
-    }
-   ],
-   "alvo": {
-    "h": "08:58",
-    "jogo": "Tunísia x Uzbequistão",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1784534254215
-   },
-   "iniciadoEm": 1784533916710,
-   "tiros": [
-    {
-     "h": "08:55",
-     "jogo": "Portugal x Países Baixos",
-     "odd": 1.93,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784531834118,
    "super": 1784533735716,
    "premier": 1784533296517,
-   "copa": 1784530316507
+   "copa": 1784534453114
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": -2.1
+   "2026-07-20": -0.7
   },
   "_gatilhoAtual": {
    "tipo": "odd",
