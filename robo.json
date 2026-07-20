@@ -310,13 +310,19 @@
   }
  },
  "ambas": {
-  "saldo": -23.9,
-  "ciclos": 125,
-  "greens": 84,
+  "saldo": -22.9,
+  "ciclos": 126,
+  "greens": 85,
   "redsCiclo": 16,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-20T12:39:53.813Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Nova Zelândia x República Tcheca @2 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T12:31:36.014Z",
     "resultado": "GREEN",
@@ -430,73 +436,31 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-20T05:02:38.713Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Leicester x Burnley @1.95 (tiro 1)"
    }
   ],
   "consumidas": {
    "euro": 1784548554607,
-   "super": 1784550695912
+   "super": 1784550695912,
+   "copa": 1784551193616
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "13:34",
-     "jogo": "Paraguai x Canadá",
-     "odd": 2.1
-    },
-    {
-     "h": "13:37",
-     "jogo": "Nova Zelândia x República Tcheca",
-     "odd": 2
-    },
-    {
-     "h": "13:40",
-     "jogo": "Croácia x Equador",
-     "odd": 1.98
-    }
-   ],
-   "alvo": {
-    "h": "13:37",
-    "jogo": "Nova Zelândia x República Tcheca",
-    "odd": 2,
-    "unidades": 2,
-    "desde": 1784551013612
-   },
-   "iniciadoEm": 1784550696919,
-   "tiros": [
-    {
-     "h": "13:34",
-     "jogo": "Paraguai x Canadá",
-     "odd": 2.1,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784548554607,
    "super": 1784550695912,
    "premier": 1784533296517,
-   "copa": 1784546873613
+   "copa": 1784551193616
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": -5.3
+   "2026-07-20": -4.3
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.02",
-   "n": 8,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 39,
    "start": 1
   }
  }
