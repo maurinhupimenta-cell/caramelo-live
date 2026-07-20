@@ -288,8 +288,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "19:27",
@@ -308,13 +308,21 @@
     }
    ],
    "alvo": {
-    "h": "19:27",
-    "jogo": "Tottenham x Liverpool",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1784571832808
+    "h": "19:30",
+    "jogo": "Southampton x Aston",
+    "odd": 2.5,
+    "unidades": 2,
+    "desde": 1784572188715
    },
-   "iniciadoEm": 1784571832808
+   "iniciadoEm": 1784571832808,
+   "tiros": [
+    {
+     "h": "19:27",
+     "jogo": "Tottenham x Liverpool",
+     "odd": 2.4,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784571312209,
@@ -332,8 +340,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 92,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 60,
    "start": 1
   }
  },
