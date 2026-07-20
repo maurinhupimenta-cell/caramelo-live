@@ -191,13 +191,19 @@
   }
  },
  "o25": {
-  "saldo": -47.6,
-  "ciclos": 104,
-  "greens": 61,
+  "saldo": -44.6,
+  "ciclos": 105,
+  "greens": 62,
   "redsCiclo": 20,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T07:18:32.808Z",
+    "resultado": "GREEN",
+    "unidades": 3,
+    "detalhe": "super · Bogota x Porto Alegre @3 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T07:09:50.412Z",
     "resultado": "GREEN",
@@ -311,62 +317,20 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-19T16:42:15.598Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "euro · Portugal x Inglaterra @2.07 (tiro 2)"
    }
   ],
   "consumidas": {
    "euro": 1784530574419,
    "premier": 1784530962416,
-   "copa": 1784531390311
+   "copa": 1784531390311,
+   "super": 1784531912619
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "08:13",
-     "jogo": "Itaquera x La Boca",
-     "odd": 2.4
-    },
-    {
-     "h": "08:16",
-     "jogo": "Bogota x Porto Alegre",
-     "odd": 3
-    },
-    {
-     "h": "08:19",
-     "jogo": "Guayaquil x Lima",
-     "odd": 2.07
-    }
-   ],
-   "alvo": {
-    "h": "08:16",
-    "jogo": "Bogota x Porto Alegre",
-    "odd": 3,
-    "unidades": 2,
-    "desde": 1784531835113
-   },
-   "iniciadoEm": 1784531593610,
-   "tiros": [
-    {
-     "h": "08:13",
-     "jogo": "Itaquera x La Boca",
-     "odd": 2.4,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784531390311,
    "premier": 1784530962416,
    "euro": 1784530574419,
-   "super": 1784527976616
+   "super": 1784531912619
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -374,12 +338,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 5.3
+   "2026-07-20": 8.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":22",
-   "n": 8,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 33,
    "start": 1
   }
  },
