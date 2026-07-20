@@ -131,7 +131,36 @@
   "consumidas": {
    "super": 1784538055315
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:39",
+     "jogo": "Brentford x West Ham",
+     "odd": 5.5
+    },
+    {
+     "h": "10:42",
+     "jogo": "Leicester x Wolverhampton",
+     "odd": 4
+    },
+    {
+     "h": "10:45",
+     "jogo": "Brighton x Burnley",
+     "odd": 3.75
+    }
+   ],
+   "alvo": {
+    "h": "10:39",
+    "jogo": "Brentford x West Ham",
+    "odd": 5.5,
+    "unidades": 1,
+    "desde": 1784540137520
+   },
+   "iniciadoEm": 1784540137520
+  },
   "cooldown": {
    "copa": 1784535373707,
    "premier": 1784532222107,
@@ -148,7 +177,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 11,
+   "n": 13,
    "start": 1
   }
  },
@@ -527,10 +556,10 @@
    "2026-07-20": -5.5
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 32,
-   "start": 1
+   "tipo": "time",
+   "chave": "Sérvia",
+   "n": 14,
+   "start": 2
   }
  }
 }
