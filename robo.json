@@ -289,8 +289,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "20:56",
@@ -309,13 +309,21 @@
     }
    ],
    "alvo": {
-    "h": "20:56",
-    "jogo": "Bélgica x Sérvia",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1784577270417
+    "h": "20:59",
+    "jogo": "Turquia x Geórgia",
+    "odd": 2.6,
+    "unidades": 2,
+    "desde": 1784577672419
    },
-   "iniciadoEm": 1784577270417
+   "iniciadoEm": 1784577270417,
+   "tiros": [
+    {
+     "h": "20:56",
+     "jogo": "Bélgica x Sérvia",
+     "odd": 2.35,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784575991709,
@@ -332,9 +340,9 @@
    "2026-07-20": 20.1
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 64,
+   "tipo": "seq",
+   "chave": "GGGRR",
+   "n": 8,
    "start": 1
   }
  },
