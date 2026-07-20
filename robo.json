@@ -282,11 +282,39 @@
    }
   ],
   "consumidas": {
-   "copa": 1784549593720,
    "premier": 1784550937410,
    "euro": 1784552514316
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:13",
+     "jogo": "Avellaneda x Medellin",
+     "odd": 2.4
+    },
+    {
+     "h": "14:16",
+     "jogo": "Asuncion x Buenos Aires",
+     "odd": 2.1
+    },
+    {
+     "h": "14:19",
+     "jogo": "Lima x Rio de Janeiro",
+     "odd": 2.1
+    }
+   ],
+   "alvo": {
+    "h": "14:13",
+    "jogo": "Avellaneda x Medellin",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1784552995216
+   },
+   "iniciadoEm": 1784552995216
+  },
   "cooldown": {
    "copa": 1784549593720,
    "premier": 1784550937410,
@@ -303,8 +331,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 55,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 33,
    "start": 1
   }
  },
