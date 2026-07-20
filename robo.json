@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -40.5,
-  "ciclos": 108,
-  "greens": 65,
+  "saldo": -37,
+  "ciclos": 109,
+  "greens": 66,
   "redsCiclo": 20,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T08:37:15.608Z",
+    "resultado": "GREEN",
+    "unidades": 3.5,
+    "detalhe": "super · Asuncion x Porto Alegre @2.62 (tiro 3)"
+   },
    {
     "quando": "2026-07-20T08:27:53.715Z",
     "resultado": "GREEN",
@@ -273,68 +279,20 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "copa · Iraque x Gana @2.55 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T00:23:12.904Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · Inglaterra x Suíça @2.05 (tiro 1)"
    }
   ],
   "consumidas": {
    "premier": 1784535103814,
    "euro": 1784535775021,
-   "copa": 1784536073615
+   "copa": 1784536073615,
+   "super": 1784536635419
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "09:28",
-     "jogo": "Itaquera x Guayaquil",
-     "odd": 2.2
-    },
-    {
-     "h": "09:31",
-     "jogo": "Agua Branca x Medellin",
-     "odd": 2.3
-    },
-    {
-     "h": "09:34",
-     "jogo": "Asuncion x Porto Alegre",
-     "odd": 2.62
-    }
-   ],
-   "alvo": {
-    "h": "09:34",
-    "jogo": "Asuncion x Porto Alegre",
-    "odd": 2.62,
-    "unidades": 4,
-    "desde": 1784536456007
-   },
-   "iniciadoEm": 1784536074615,
-   "tiros": [
-    {
-     "h": "09:28",
-     "jogo": "Itaquera x Guayaquil",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "09:31",
-     "jogo": "Agua Branca x Medellin",
-     "odd": 2.3,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784536073615,
    "premier": 1784535103814,
    "euro": 1784535775021,
-   "super": 1784531912619
+   "super": 1784536635419
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -342,12 +300,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 12.4
+   "2026-07-20": 15.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.2",
-   "n": 9,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 17,
    "start": 1
   }
  },
