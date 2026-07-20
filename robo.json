@@ -309,13 +309,19 @@
   }
  },
  "ambas": {
-  "saldo": -25.5,
-  "ciclos": 141,
-  "greens": 97,
+  "saldo": -24.6,
+  "ciclos": 142,
+  "greens": 98,
   "redsCiclo": 18,
   "aborts": 0,
   "descartes": 26,
   "historico": [
+   {
+    "quando": "2026-07-20T17:06:14.417Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Avellaneda x Santiago @1.93 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T16:50:38.612Z",
     "resultado": "GREEN",
@@ -429,52 +435,18 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · Bélgica x Marrocos @2.02 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T11:18:56.510Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
    "copa": 1784565491207,
    "euro": 1784566032521,
-   "premier": 1784566238507
+   "premier": 1784566238507,
+   "super": 1784567174319
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:01",
-     "jogo": "Avellaneda x Santiago",
-     "odd": 1.93
-    },
-    {
-     "h": "18:04",
-     "jogo": "Quito x Montevideo",
-     "odd": 1.93
-    },
-    {
-     "h": "18:07",
-     "jogo": "Porto Alegre x Buenos Aires",
-     "odd": 2.05
-    }
-   ],
-   "alvo": {
-    "h": "18:01",
-    "jogo": "Avellaneda x Santiago",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1784567112713
-   },
-   "iniciadoEm": 1784567112713
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784566032521,
-   "super": 1784563485708,
+   "super": 1784567174319,
    "premier": 1784566238507,
    "copa": 1784565491207
   },
@@ -483,12 +455,12 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": -6.9
+   "2026-07-20": -6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGG",
-   "n": 7,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 44,
    "start": 1
   }
  }
