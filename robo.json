@@ -311,13 +311,19 @@
   }
  },
  "ambas": {
-  "saldo": -20.2,
-  "ciclos": 138,
-  "greens": 95,
+  "saldo": -19.4,
+  "ciclos": 139,
+  "greens": 96,
   "redsCiclo": 17,
   "aborts": 0,
   "descartes": 26,
   "historico": [
+   {
+    "quando": "2026-07-20T16:38:11.313Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "copa · Brasil x Equador @1.9 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T16:04:45.814Z",
     "resultado": "GREEN",
@@ -431,72 +437,30 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "super · Penarol x Lima @2.02 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-20T09:40:54.712Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "euro · Dinamarca x Hungria @2.15 (tiro 2)"
    }
   ],
   "consumidas": {
-   "super": 1784563485708
+   "super": 1784563485708,
+   "copa": 1784565491207
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:31",
-     "jogo": "Austrália x EUA",
-     "odd": 1.93
-    },
-    {
-     "h": "17:34",
-     "jogo": "Brasil x Equador",
-     "odd": 1.9
-    },
-    {
-     "h": "17:37",
-     "jogo": "Suécia x Curação",
-     "odd": 2.15
-    }
-   ],
-   "alvo": {
-    "h": "17:34",
-    "jogo": "Brasil x Equador",
-    "odd": 1.9,
-    "unidades": 2,
-    "desde": 1784565256208
-   },
-   "iniciadoEm": 1784564892920,
-   "tiros": [
-    {
-     "h": "17:31",
-     "jogo": "Austrália x EUA",
-     "odd": 1.93,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784561545319,
    "super": 1784563485708,
    "premier": 1784561751116,
-   "copa": 1784560924819
+   "copa": 1784565491207
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": -1.6
+   "2026-07-20": -0.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Argentina",
-   "n": 18,
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 49,
    "start": 1
   }
  }
