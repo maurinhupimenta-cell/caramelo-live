@@ -1766,47 +1766,76 @@ function montaRobo(mkt) {
     const rel = Math.round(cur / base * 100);
     L.consumidas = L.consumidas || {};
     L.cooldown = L.cooldown || {};
-    // ===== v5 (spec do usuario): BOLSAO DE OURO DA FIBONACCI =====
-    // balanco de ALTA no grafico (fundo antes do topo, amplitude >=8) e a linha
-    // RETRAIDA entre 38.2% e 61.8% do balanco, JA RETOMANDO a subida
-    let noBolsao = false, fibInfo = null;
-    try {
-      const sr = sf.slice(-100); // MESMA JANELA DO OLHO DO USUARIO: balanco dos ultimos 100 jogos (~5h)
-      const tk = mkt + "|" + liga;
-      roboTrace[tk] = { pontos: sr.length };
-      if (sr.length >= 8) {
-        let iMin = 0, iMax = 0;
-        sr.forEach((v, i) => { if (v < sr[iMin]) iMin = i; if (v >= sr[iMax]) iMax = i; });
-        const lo = sr[iMin], hi = sr[iMax], amp = hi - lo;
-        const curF = sr[sr.length - 1];
-        const alta = iMin < iMax;
-        Object.assign(roboTrace[tk], { amp, alta });
-        if (amp >= 8 && alta) {
-          const retr = (hi - curF) / amp * 100;
-          const kE = 2 / 6; let eAc = sr[0];
-          const ema = sr.map(v => (eAc = v * kE + eAc * (1 - kE)));
-          const nS = sr.length;
-          const emaVirando = ema[nS - 1] > ema[nS - 2];
-          // SUBIDA DE VERDADE (conserto): o ultimo ponto tem que estar ACIMA da media dos 3 anteriores
-          // E ter subido no ultimo passo. Mata entrada em linha CHAPADA/PARADA (ex 20,20,20 que a EMA
-          // lenta ainda marca 'subindo' por causa de subida antiga) - a causa real das entradas em queda.
-          const ant3 = nS >= 4 ? (sr[nS - 2] + sr[nS - 3] + sr[nS - 4]) / 3 : sr[nS - 2];
-          const subiuRecente = sr[nS - 1] > sr[nS - 2];
-          const acimaDaMedia = sr[nS - 1] > ant3;
-          const subeDeVerdade = subiuRecente && acimaDaMedia && emaVirando;
-          Object.assign(roboTrace[tk], { retr: Math.round(retr), emaVirando, subiuRecente, acimaDaMedia, subeDeVerdade });
-          if (retr >= 38.2 && retr <= 61.8 && subeDeVerdade) { noBolsao = true; fibInfo = { retr: Math.round(retr), lo, hi }; }
-        }
-      }
-      roboTrace[tk].noBolsao = noBolsao;
-    } catch (e) { roboTrace[mkt + "|" + liga] = { erro: e.message }; }
+    // ===== v6 MODO CACADOR 100% (ordem do usuario): a Fibonacci chegava atrasada pela
+    // cortina de dados -> entradas em queda. Agora o robo SO entra quando um PADRAO 100%
+    // do cacador do dia esta disparando NESTE momento (evento nao sofre do atraso da curva).
+    let fibInfo = null; // mantido por compatibilidade de payload
     if (L.consumidas[liga]) {
       const idade = Date.now() - (typeof L.consumidas[liga] === "number" ? L.consumidas[liga] : 0);
-      if (!noBolsao || idade > 60 * 60000) { delete L.consumidas[liga]; salvaRoboLedger(); } // re-arma: saiu do bolsao OU 60min de trava
+      if (idade > 60 * 60000) { delete L.consumidas[liga]; salvaRoboLedger(); }
       else continue;
     }
-    if (L.cooldown[liga] && Date.now() - L.cooldown[liga] < 30 * 60000) continue; // descanso de 30min pos-ciclo
-    if (!noBolsao) continue;
+    if (L.cooldown[liga] && Date.now() - L.cooldown[liga] < 30 * 60000) continue;
+    let gatilho = null;
+    try {
+      const pad = calculaPadroes(liga, mkt) || {};
+      const cem = arr => (arr || []).filter(p => p.prox === "G" && p.taxa === 100);
+      const evsF = (d.upcoming && d.upcoming[mkt]) || [];
+      const fila = evsF.map((p, i) => ({ ...p, _i: i })).filter(p => p.odd != null);
+      const porIdx = {}; for (const p of fila) porIdx[p._i] = p;
+      const trioExiste = s => porIdx[s] && porIdx[s + 1] && porIdx[s + 2];
+      const tk = mkt + "|" + liga;
+      roboTrace[tk] = { modo: "cacador100" };
+      // dia atual (mesmo corte do cacador) para a cauda das sequencias
+      const ga = listaCheia(d);
+      let idxDia = 0;
+      for (let i2 = 1; i2 < ga.length; i2++) {
+        const h1 = parseInt((ga[i2].horario || "").split(":")[0]);
+        const h0 = parseInt((ga[i2 - 1].horario || "").split(":")[0]);
+        if (!isNaN(h1) && !isNaN(h0) && h1 < h0 - 12) idxDia = i2;
+      }
+      const diaG = ga.slice(idxDia);
+      const seqDia = diaG.map(g => (pays(g, mkt) ? "G" : "R")).join("");
+      // 1) SEQUENCIA 100%: a fita do dia termina exatamente na sequencia -> proximo trio
+      for (const p of cem(pad.padroes)) {
+        const s = (p.seq || "").replace(/[^GR]/g, "");
+        if (s && seqDia.endsWith(s) && trioExiste(1)) { gatilho = { tipo: "seq", chave: s, n: p.n, start: 1 }; break; }
+      }
+      // 2) PLACAR 100%: ultimo jogo do dia caiu na categoria -> proximo trio
+      if (!gatilho) {
+        const gU = diaG[diaG.length - 1];
+        if (gU && gU.a != null) {
+          const a = gU.a, b = gU.b, tot = a + b, mxx = Math.max(a, b);
+          const cat = tot === 0 ? "0-0" : tot === 1 ? "1-0 / 0-1" : mxx >= 3 ? "goleada (3+)" : a === b ? ("empate " + a + "-" + b) : ("acima de 1-0 (" + Math.max(a, b) + "-" + Math.min(a, b) + ")");
+          const hit = cem(pad.porPlacar).find(p => p.chave === cat);
+          if (hit && trioExiste(1)) gatilho = { tipo: "placar", chave: cat, n: hit.n, start: 1 };
+        }
+      }
+      // 3) TIME 100% na fila -> trio CENTRADO nele (1 antes + NELE + 1 depois, como foi medido)
+      if (!gatilho) {
+        for (const p of cem(pad.porTime)) {
+          const alvo = fila.find(f => f._i >= 1 && ((f.nome || "").split(" x ").some(t => t.trim() === p.chave)));
+          if (alvo) { const s = alvo._i >= 2 && trioExiste(alvo._i - 1) ? alvo._i - 1 : (trioExiste(alvo._i) ? alvo._i : null); if (s != null) { gatilho = { tipo: "time", chave: p.chave, n: p.n, start: s }; break; } }
+        }
+      }
+      // 4) ODD 100% na fila -> trio centrado
+      if (!gatilho) {
+        for (const p of cem(pad.porOdd)) {
+          const alvo = fila.find(f => f._i >= 1 && String(f.odd) === String(p.chave));
+          if (alvo) { const s = alvo._i >= 2 && trioExiste(alvo._i - 1) ? alvo._i - 1 : (trioExiste(alvo._i) ? alvo._i : null); if (s != null) { gatilho = { tipo: "odd", chave: p.chave, n: p.n, start: s }; break; } }
+        }
+      }
+      // 5) COLUNA (minuto) 100% na fila -> trio centrado
+      if (!gatilho) {
+        for (const p of cem(pad.porColuna)) {
+          const alvo = fila.find(f => f._i >= 1 && (":" + ((f.horario || "").split(":")[1] || "")) === p.chave);
+          if (alvo) { const s = alvo._i >= 2 && trioExiste(alvo._i - 1) ? alvo._i - 1 : (trioExiste(alvo._i) ? alvo._i : null); if (s != null) { gatilho = { tipo: "coluna", chave: p.chave, n: p.n, start: s }; break; } }
+        }
+      }
+      roboTrace[tk].gatilho = gatilho ? (gatilho.tipo + " " + gatilho.chave + " (" + gatilho.n + "x)") : null;
+    } catch (e) { roboTrace[mkt + "|" + liga] = { erro: e.message }; }
+    if (!gatilho) continue;
+    const noBolsao = true; L._gatilhoAtual = gatilho;
     const evs = (d.upcoming && d.upcoming[mkt]) || [];
     const degraus = [], pulados = [];
     const papeis = ["ENTRADA", "GALE 1", "GALE 2"];
@@ -1829,24 +1858,19 @@ function montaRobo(mkt) {
       scoreT = t2 => { const s2 = st[t2]; return s2 && s2[0] >= 2 ? s2[1] / s2[0] * 100 : null; };
     } catch (e) {}
     const ancDoJogo = p => { const c1 = scoreT((p.nome || "").split(" x ")[0]), c2 = scoreT((p.nome || "").split(" x ")[1]); const m2 = Math.max(c1 == null ? -1 : c1, c2 == null ? -1 : c2); return m2 >= 0 ? m2 : null; };
-    // LARGADA: entre os inicios possiveis (indices 1..3 da fila), o jogo com MELHOR time-ancora + MELHOR odd
+    // LARGADA definida pelo GATILHO do padrao (start ja calculado); trio consecutivo obrigatorio
     const porIdx = {}; for (const p of cands) porIdx[p._i] = p;
-    let melhorStart = null, melhorScore = -1;
-    for (const s of [1, 2, 3]) {
-      if (!(porIdx[s] && porIdx[s + 1] && porIdx[s + 2])) continue; // trio consecutivo precisa existir
-      const p0 = porIdx[s];
-      const sc = (ancDoJogo(p0) || 0) + p0.odd; // time domina, odd desempata/soma
-      if (sc > melhorScore) { melhorScore = sc; melhorStart = s; }
-    }
-    if (melhorStart == null) { roboTrace[mkt + "|" + liga].semTrio = true; continue; } // sem trio completo: espera a rodada
+    let melhorStart = (L._gatilhoAtual && L._gatilhoAtual.start != null) ? L._gatilhoAtual.start : 1;
+    if (!(porIdx[melhorStart] && porIdx[melhorStart + 1] && porIdx[melhorStart + 2])) { roboTrace[mkt + "|" + liga].semTrio = true; continue; }
     for (let dgi = 0; dgi < 3; dgi++) {
       const p = porIdx[melhorStart + dgi];
       degraus.push({ papel: papeis[dgi], unidades: [1, 2, 4][dgi], h: p.horario || "", jogo: p.nome, odd: p.odd, justa: p.justa, ev: p.ev, evAlto: p.ev > 10, ancora: ancDoJogo(p) != null ? Math.round(ancDoJogo(p)) : null, col: colunaPct(listaCheia(d, games), p.horario, mkt) });
     }
     let ancoraDia = 0;
     try { let soma = 0, nA = 0; for (const dg of degraus) { if (dg.ancora != null) { soma += dg.ancora; nA++; } } ancoraDia = nA ? Math.round(soma / nA) : 0; } catch (e) {}
-    if (melhor && ancoraDia <= (melhor.ancoraDia || 0)) continue; // entre bolsoes, as MELHORES ancoras do dia
-    melhor = { mkt, piso, liga, rel, pagando: cur, base: Math.round(base * 10) / 10, degraus, pulados, fib: fibInfo, ancoraDia, teste: false, taxas: taxaJanelas(listaCheia(d, games), mkt) };
+    const forcaGatilho = (L._gatilhoAtual && L._gatilhoAtual.n) || 0;
+    if (melhor && forcaGatilho <= (melhor.forcaGatilho || 0)) continue; // entre gatilhos 100%, o mais PROVADO (maior n)
+    melhor = { mkt, piso, liga, rel, pagando: cur, base: Math.round(base * 10) / 10, degraus, pulados, fib: fibInfo, ancoraDia, forcaGatilho, gatilhoDbg: L._gatilhoAtual ? L._gatilhoAtual.tipo + " " + L._gatilhoAtual.chave : null, teste: false, taxas: taxaJanelas(listaCheia(d, games), mkt) };
   }
   return melhor;
 }
@@ -2022,13 +2046,11 @@ app.get("/api/robo", (req, res) => {
 
 // ===== CACADOR DE PADROES: sequencias G/R que se repetiram no dia com o mesmo desfecho =====
 const padroesCache = {};
-app.get("/api/padroes/:liga", (req, res) => {
-  try {
-    const liga = req.params.liga, mkt = req.query.mkt || "o35";
+function calculaPadroes(liga, mkt) {
     const ck = liga + "|" + mkt, now = Date.now();
-    if (padroesCache[ck] && now - padroesCache[ck].ts < 30000) return res.json(padroesCache[ck].out);
+    if (padroesCache[ck] && now - padroesCache[ck].ts < 30000) return padroesCache[ck].out;
     const d = store[liga];
-    if (!d || !d.games || d.games.length < 200) return res.json({ padroes: [] });
+    if (!d || !d.games || d.games.length < 200) return { padroes: [], porOdd: [], porTime: [], porPlacar: [], porColuna: [], pulosPorPlacar: [] };
     let games = listaCheia(d);
     // ZERA AS 00 DO JOGO (regra do usuario): o cacador conta SO o dia atual do relogio do jogo
     try {
@@ -2040,7 +2062,7 @@ app.get("/api/padroes/:liga", (req, res) => {
       }
       games = games.slice(idxDia);
     } catch (e) {}
-    if (games.length < 30) { const outV = { liga, mkt, padroes: [], porOdd: [], porTime: [], dia: true, jogosNoDia: games.length }; padroesCache[ck] = { ts: now, out: outV }; return res.json(outV); }
+    if (games.length < 30) { const outV = { liga, mkt, padroes: [], porOdd: [], porTime: [], dia: true, jogosNoDia: games.length }; padroesCache[ck] = { ts: now, out: outV }; return outV; }
     const seq = games.map(g => (pays(g, mkt) ? "G" : "R"));
     const horas = games.map(g => (g.horario || "").split(":")[0]);
     // DESFECHO NO CICLO DE 3 TIROS (como o usuario opera): apos a sequencia, veio green em ate 3 jogos?
@@ -2162,8 +2184,11 @@ app.get("/api/padroes/:liga", (req, res) => {
     const resp = { liga, mkt, jogosNoDia: games.length, regua3, padroes: out.slice(0, 10), porOdd: garimpa(porOdd, 6), porTime: garimpa(porTime, 6),
       porPlacar: garimpa(porPlacar, 6), porColuna: garimpa(porColuna, 5), pulosPorPlacar };
     padroesCache[ck] = { ts: now, out: resp };
-    res.json(resp);
-  } catch (e) { res.status(500).json({ erro: e.message }); }
+    return resp;
+}
+app.get("/api/padroes/:liga", (req, res) => {
+  try { res.json(calculaPadroes(req.params.liga, req.query.mkt || "o35")); }
+  catch (e) { res.status(500).json({ erro: e.message }); }
 });
 
 // ===== DICAS: 3 melhores do quadro (todas as ligas) para o mercado, com carimbo honesto =====
