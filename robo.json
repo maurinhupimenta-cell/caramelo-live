@@ -131,7 +131,36 @@
   "consumidas": {
    "premier": 1784546078012
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:16",
+     "jogo": "Bogota x Belo Horizonte",
+     "odd": 4.5
+    },
+    {
+     "h": "13:19",
+     "jogo": "Medellin x La Plata",
+     "odd": 5.5
+    },
+    {
+     "h": "13:22",
+     "jogo": "La Boca x Rio de Janeiro",
+     "odd": 4.75
+    }
+   ],
+   "alvo": {
+    "h": "13:16",
+    "jogo": "Bogota x Belo Horizonte",
+    "odd": 4.5,
+    "unidades": 1,
+    "desde": 1784549575408
+   },
+   "iniciadoEm": 1784549575408
+  },
   "cooldown": {
    "copa": 1784542934710,
    "premier": 1784546078012,
@@ -146,9 +175,9 @@
    "2026-07-20": -18.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "4.75",
-   "n": 6,
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 13,
    "start": 1
   }
  },
@@ -286,7 +315,36 @@
    "euro": 1784548554407,
    "super": 1784549395115
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:10",
+     "jogo": "Austrália x Canadá",
+     "odd": 2.35
+    },
+    {
+     "h": "13:13",
+     "jogo": "Haiti x Uruguai",
+     "odd": 2.1
+    },
+    {
+     "h": "13:16",
+     "jogo": "Irã x Gana",
+     "odd": 2.62
+    }
+   ],
+   "alvo": {
+    "h": "13:10",
+    "jogo": "Austrália x Canadá",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1784549396613
+   },
+   "iniciadoEm": 1784549396613
+  },
   "cooldown": {
    "copa": 1784545273415,
    "premier": 1784547157820,
@@ -302,10 +360,10 @@
    "2026-07-20": 8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRRR",
+   "tipo": "time",
+   "chave": "Austrália",
    "n": 7,
-   "start": 1
+   "start": 3
   }
  },
  "ambas": {
