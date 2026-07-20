@@ -439,11 +439,39 @@
    }
   ],
   "consumidas": {
-   "euro": 1784575272412,
    "super": 1784576234818,
    "premier": 1784576513118
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:23",
+     "jogo": "Inglaterra x Áustria",
+     "odd": 1.93
+    },
+    {
+     "h": "21:26",
+     "jogo": "Espanha x Eslováquia",
+     "odd": 1.95
+    },
+    {
+     "h": "21:29",
+     "jogo": "Países Baixos x Ucrânia",
+     "odd": 1.9
+    }
+   ],
+   "alvo": {
+    "h": "21:23",
+    "jogo": "Inglaterra x Áustria",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1784578873216
+   },
+   "iniciadoEm": 1784578873216
+  },
   "cooldown": {
    "euro": 1784575272412,
    "super": 1784576234818,
@@ -458,9 +486,9 @@
    "2026-07-20": 2.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":48",
-   "n": 19,
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 53,
    "start": 1
   }
  }
