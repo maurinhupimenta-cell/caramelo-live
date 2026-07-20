@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -41.7,
-  "ciclos": 107,
-  "greens": 64,
+  "saldo": -40.5,
+  "ciclos": 108,
+  "greens": 65,
   "redsCiclo": 20,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T08:27:53.715Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · México x Nova Zelândia @2.2 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T08:22:55.118Z",
     "resultado": "GREEN",
@@ -273,50 +279,16 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · Inglaterra x Suíça @2.05 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T00:08:16.099Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
    "premier": 1784535103814,
-   "euro": 1784535775021
+   "euro": 1784535775021,
+   "copa": 1784536073615
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "09:25",
-     "jogo": "México x Nova Zelândia",
-     "odd": 2.2
-    },
-    {
-     "h": "09:28",
-     "jogo": "RD Congo x Canadá",
-     "odd": 2.25
-    },
-    {
-     "h": "09:31",
-     "jogo": "Brasil x Costa do Marfim",
-     "odd": 2.15
-    }
-   ],
-   "alvo": {
-    "h": "09:25",
-    "jogo": "México x Nova Zelândia",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1784535776208
-   },
-   "iniciadoEm": 1784535776208
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784531390311,
+   "copa": 1784536073615,
    "premier": 1784535103814,
    "euro": 1784535775021,
    "super": 1784531912619
@@ -327,7 +299,7 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 11.2
+   "2026-07-20": 12.4
   },
   "_gatilhoAtual": {
    "tipo": "odd",
@@ -514,9 +486,9 @@
    "2026-07-20": -0.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":29",
-   "n": 9,
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 26,
    "start": 1
   }
  }
