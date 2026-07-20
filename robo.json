@@ -154,13 +154,19 @@
   }
  },
  "o25": {
-  "saldo": -39.6,
-  "ciclos": 113,
-  "greens": 69,
+  "saldo": -38.4,
+  "ciclos": 114,
+  "greens": 70,
   "redsCiclo": 21,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T10:23:37.310Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · City x Leicester @2.15 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T09:51:54.208Z",
     "resultado": "GREEN",
@@ -274,52 +280,18 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · Norwich x Wolverhampton @2.05 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T04:31:55.821Z",
-    "resultado": "GREEN",
-    "unidades": 1.7,
-    "detalhe": "euro · Ucrânia x Eslováquia @2.35 (tiro 2)"
    }
   ],
   "consumidas": {
    "euro": 1784540275020,
    "super": 1784540595711,
-   "copa": 1784541114020
+   "copa": 1784541114020,
+   "premier": 1784543017208
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "11:21",
-     "jogo": "City x Leicester",
-     "odd": 2.15
-    },
-    {
-     "h": "11:24",
-     "jogo": "United x Palace",
-     "odd": 2.2
-    },
-    {
-     "h": "11:27",
-     "jogo": "Leeds x Wolverhampton",
-     "odd": 2.3
-    }
-   ],
-   "alvo": {
-    "h": "11:21",
-    "jogo": "City x Leicester",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1784542658309
-   },
-   "iniciadoEm": 1784542658309
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784541114020,
-   "premier": 1784539057915,
+   "premier": 1784543017208,
    "euro": 1784540275020,
    "super": 1784540595711
   },
@@ -329,7 +301,7 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 13.3
+   "2026-07-20": 14.5
   },
   "_gatilhoAtual": {
    "tipo": "placar",
