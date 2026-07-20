@@ -288,8 +288,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "21:43",
@@ -308,13 +308,21 @@
     }
    ],
    "alvo": {
-    "h": "21:43",
-    "jogo": "Austrália x Haiti",
+    "h": "21:46",
+    "jogo": "Alemanha x Áustria",
     "odd": 2.15,
-    "unidades": 1,
-    "desde": 1784580134810
+    "unidades": 2,
+    "desde": 1784580371708
    },
-   "iniciadoEm": 1784580134810
+   "iniciadoEm": 1784580134810,
+   "tiros": [
+    {
+     "h": "21:43",
+     "jogo": "Austrália x Haiti",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784575991709,
@@ -331,10 +339,10 @@
    "2026-07-20": 15.3
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 86,
-   "start": 1
+   "tipo": "time",
+   "chave": "Irã",
+   "n": 18,
+   "start": 2
   }
  },
  "ambas": {
@@ -514,9 +522,9 @@
    "2026-07-20": 4.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":48",
-   "n": 19,
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 18,
    "start": 1
   }
  }
