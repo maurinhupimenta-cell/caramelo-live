@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -75.2,
-  "ciclos": 115,
+  "saldo": -82.2,
+  "ciclos": 116,
   "greens": 38,
-  "redsCiclo": 44,
+  "redsCiclo": 45,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-20T10:22:14.812Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-20T09:47:36.616Z",
     "resultado": "RED_CICLO",
@@ -120,63 +126,15 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-19T17:52:14.895Z",
-    "resultado": "GREEN",
-    "unidades": 7,
-    "detalhe": "copa · Marrocos x Gana @5 (tiro 2)"
    }
   ],
   "consumidas": {
-   "premier": 1784540856514
+   "premier": 1784540856514,
+   "copa": 1784542934710
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "11:13",
-     "jogo": "Coreia do Sul x México",
-     "odd": 5
-    },
-    {
-     "h": "11:16",
-     "jogo": "Escócia x Egito",
-     "odd": 5
-    },
-    {
-     "h": "11:19",
-     "jogo": "Nova Zelândia x Alemanha",
-     "odd": 4
-    }
-   ],
-   "alvo": {
-    "h": "11:19",
-    "jogo": "Nova Zelândia x Alemanha",
-    "odd": 4,
-    "unidades": 4,
-    "desde": 1784542713320
-   },
-   "iniciadoEm": 1784542193813,
-   "tiros": [
-    {
-     "h": "11:13",
-     "jogo": "Coreia do Sul x México",
-     "odd": 5,
-     "unidades": 1
-    },
-    {
-     "h": "11:16",
-     "jogo": "Escócia x Egito",
-     "odd": 5,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784535373707,
+   "copa": 1784542934710,
    "premier": 1784540856514,
    "euro": 1784522533511,
    "super": 1784538055315
@@ -186,7 +144,7 @@
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
-   "2026-07-20": 2.1
+   "2026-07-20": -4.9
   },
   "_gatilhoAtual": {
    "tipo": "placar",
@@ -374,9 +332,9 @@
    "2026-07-20": 13.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "City",
-   "n": 18,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 55,
    "start": 1
   }
  },
