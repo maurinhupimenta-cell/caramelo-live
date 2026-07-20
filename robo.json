@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -77.3,
-  "ciclos": 102,
-  "greens": 31,
+  "saldo": -67.5,
+  "ciclos": 103,
+  "greens": 32,
   "redsCiclo": 38,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-20T03:31:00.205Z",
+    "resultado": "GREEN",
+    "unidades": 9.8,
+    "detalhe": "super · Buenos Aires x Quito @4.2 (tiro 3)"
+   },
    {
     "quando": "2026-07-20T02:44:38.094Z",
     "resultado": "GREEN",
@@ -120,70 +126,24 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-19T05:55:13.126Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:22",
-     "jogo": "Santos x La Plata",
-     "odd": 6
-    },
-    {
-     "h": "04:25",
-     "jogo": "Agua Branca x Itaquera",
-     "odd": 4.33
-    },
-    {
-     "h": "04:28",
-     "jogo": "Buenos Aires x Quito",
-     "odd": 4.2
-    }
-   ],
-   "alvo": {
-    "h": "04:28",
-    "jogo": "Buenos Aires x Quito",
-    "odd": 4.2,
-    "unidades": 4,
-    "desde": 1784518080702
-   },
-   "iniciadoEm": 1784517536694,
-   "tiros": [
-    {
-     "h": "04:22",
-     "jogo": "Santos x La Plata",
-     "odd": 6,
-     "unidades": 1
-    },
-    {
-     "h": "04:25",
-     "jogo": "Agua Branca x Itaquera",
-     "odd": 4.33,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "super": 1784518260107
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784489292106,
    "premier": 1784515477905,
    "euro": 1784486951501,
-   "super": 1784502254399
+   "super": 1784518260107
   },
   "dias": {
    "2026-07-15": -35,
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
-   "2026-07-19": -48.5
+   "2026-07-19": -48.5,
+   "2026-07-20": 9.8
   }
  },
  "o25": {
@@ -369,13 +329,19 @@
   }
  },
  "ambas": {
-  "saldo": -18.6,
-  "ciclos": 101,
-  "greens": 64,
+  "saldo": -17.7,
+  "ciclos": 102,
+  "greens": 65,
   "redsCiclo": 12,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-20T03:31:00.402Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Buenos Aires x Quito @1.93 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T02:44:38.200Z",
     "resultado": "GREEN",
@@ -489,48 +455,13 @@
     "resultado": "GREEN",
     "unidades": 0.6,
     "detalhe": "super · Montevideo x Rio de Janeiro @1.9 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-19T08:10:53.999Z",
-    "resultado": "GREEN",
-    "unidades": 1.6,
-    "detalhe": "euro · Dinamarca x Albânia @2.3 (tiro 2)"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:28",
-     "jogo": "Buenos Aires x Quito",
-     "odd": 1.93
-    },
-    {
-     "h": "04:31",
-     "jogo": "Santos x Lima",
-     "odd": 2.02
-    },
-    {
-     "h": "04:34",
-     "jogo": "Buenos Aires x Agua Branca",
-     "odd": 1.83
-    }
-   ],
-   "alvo": {
-    "h": "04:28",
-    "jogo": "Buenos Aires x Quito",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1784517536798
-   },
-   "iniciadoEm": 1784517536798
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784507895404,
-   "super": 1784504775197,
+   "super": 1784518260296,
    "premier": 1784515478096,
    "copa": 1784471632896
   },
@@ -538,7 +469,8 @@
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
-   "2026-07-19": -26.6
+   "2026-07-19": -26.6,
+   "2026-07-20": 0.9
   }
  }
 }
