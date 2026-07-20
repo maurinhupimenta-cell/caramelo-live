@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -40,
-  "ciclos": 141,
-  "greens": 92,
+  "saldo": -38,
+  "ciclos": 142,
+  "greens": 93,
   "redsCiclo": 26,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T18:33:11.511Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "premier · Southampton x Aston @2.5 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T18:17:12.014Z",
     "resultado": "GREEN",
@@ -273,60 +279,18 @@
     "resultado": "GREEN",
     "unidades": 1.9,
     "detalhe": "euro · Polônia x Eslovênia @2.87 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T12:35:37.511Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Burnley x Newcastle @2 (tiro 1)"
    }
   ],
   "consumidas": {
    "euro": 1784569093314,
    "copa": 1784571312209,
-   "super": 1784571431911
+   "super": 1784571431911,
+   "premier": 1784572391318
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "19:27",
-     "jogo": "Tottenham x Liverpool",
-     "odd": 2.4
-    },
-    {
-     "h": "19:30",
-     "jogo": "Southampton x Aston",
-     "odd": 2.5
-    },
-    {
-     "h": "19:33",
-     "jogo": "Newcastle x Watford",
-     "odd": 2.15
-    }
-   ],
-   "alvo": {
-    "h": "19:30",
-    "jogo": "Southampton x Aston",
-    "odd": 2.5,
-    "unidades": 2,
-    "desde": 1784572188715
-   },
-   "iniciadoEm": 1784571832808,
-   "tiros": [
-    {
-     "h": "19:27",
-     "jogo": "Tottenham x Liverpool",
-     "odd": 2.4,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784571312209,
-   "premier": 1784568038516,
+   "premier": 1784572391318,
    "euro": 1784569093314,
    "super": 1784571431911
   },
@@ -336,12 +300,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 12.9
+   "2026-07-20": 14.9
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 60,
+   "tipo": "seq",
+   "chave": "RGGRG",
+   "n": 14,
    "start": 1
   }
  },
