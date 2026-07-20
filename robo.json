@@ -131,7 +131,36 @@
   "consumidas": {
    "premier": 1784554179814
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:58",
+     "jogo": "Argentina x Noruega",
+     "odd": 4
+    },
+    {
+     "h": "15:01",
+     "jogo": "Haiti x Marrocos",
+     "odd": 4.2
+    },
+    {
+     "h": "15:04",
+     "jogo": "Suíça x Costa do Marfim",
+     "odd": 4.2
+    }
+   ],
+   "alvo": {
+    "h": "14:58",
+    "jogo": "Argentina x Noruega",
+    "odd": 4,
+    "unidades": 1,
+    "desde": 1784555712914
+   },
+   "iniciadoEm": 1784555712914
+  },
   "cooldown": {
    "copa": 1784542934710,
    "premier": 1784554179814,
@@ -148,7 +177,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 17,
+   "n": 13,
    "start": 1
   }
  },
