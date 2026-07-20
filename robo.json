@@ -339,13 +339,19 @@
   }
  },
  "ambas": {
-  "saldo": -19.9,
-  "ciclos": 129,
-  "greens": 88,
+  "saldo": -19,
+  "ciclos": 130,
+  "greens": 89,
   "redsCiclo": 16,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-20T13:55:13.210Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · Arábia Saudita x Portugal @1.85 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T13:45:13.514Z",
     "resultado": "GREEN",
@@ -459,65 +465,60 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "copa · Escócia x Países Baixos @2.15 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T06:26:37.707Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "premier · Islington x Watford @2.05 (tiro 2)"
    }
   ],
   "consumidas": {
    "euro": 1784552514416,
-   "super": 1784555113414
+   "super": 1784555113414,
+   "copa": 1784555713107
   },
   "ciclo": {
-   "liga": "copa",
+   "liga": "premier",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "14:52",
-     "jogo": "Arábia Saudita x Portugal",
-     "odd": 1.85
+     "h": "15:00",
+     "jogo": "Islington x Brentford",
+     "odd": 2.05
     },
     {
-     "h": "14:55",
-     "jogo": "Gana x Alemanha",
-     "odd": 1.95
-    },
-    {
-     "h": "14:58",
-     "jogo": "Argentina x Noruega",
+     "h": "15:03",
+     "jogo": "Liverpool x Wolverhampton",
      "odd": 1.86
+    },
+    {
+     "h": "15:06",
+     "jogo": "Aston x West Ham",
+     "odd": 2.2
     }
    ],
    "alvo": {
-    "h": "14:52",
-    "jogo": "Arábia Saudita x Portugal",
-    "odd": 1.85,
+    "h": "15:00",
+    "jogo": "Islington x Brentford",
+    "odd": 2.05,
     "unidades": 1,
-    "desde": 1784555114314
+    "desde": 1784555831910
    },
-   "iniciadoEm": 1784555114314
+   "iniciadoEm": 1784555831910
   },
   "cooldown": {
    "euro": 1784552514416,
    "super": 1784555113414,
    "premier": 1784552020311,
-   "copa": 1784551193616
+   "copa": 1784555713107
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": -1.3
+   "2026-07-20": -0.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Argentina",
-   "n": 15,
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 30,
    "start": 1
   }
  }
