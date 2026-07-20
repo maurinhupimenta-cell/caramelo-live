@@ -154,13 +154,19 @@
   }
  },
  "o25": {
-  "saldo": -22.1,
-  "ciclos": 156,
-  "greens": 106,
+  "saldo": -20.6,
+  "ciclos": 157,
+  "greens": 107,
   "redsCiclo": 27,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T23:08:12.608Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "copa · África do Sul x Canadá @2.55 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T22:58:12.916Z",
     "resultado": "GREEN",
@@ -274,51 +280,17 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · Burnley x Wolverhampton @2 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T17:01:11.707Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "copa · Nova Zelândia x Alemanha @2.1 (tiro 2)"
    }
   ],
   "consumidas": {
    "premier": 1784585916508,
    "euro": 1784586240511,
-   "super": 1784588292815
+   "super": 1784588292815,
+   "copa": 1784588892418
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "00:04",
-     "jogo": "África do Sul x Canadá",
-     "odd": 2.55
-    },
-    {
-     "h": "00:07",
-     "jogo": "Noruega x Costa do Marfim",
-     "odd": 2.07
-    },
-    {
-     "h": "00:10",
-     "jogo": "Gana x Bósnia e Herzegovina",
-     "odd": 2.25
-    }
-   ],
-   "alvo": {
-    "h": "00:04",
-    "jogo": "África do Sul x Canadá",
-    "odd": 2.55,
-    "unidades": 1,
-    "desde": 1784588582007
-   },
-   "iniciadoEm": 1784588582007
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784584933316,
+   "copa": 1784588892418,
    "premier": 1784585916508,
    "euro": 1784586240511,
    "super": 1784588292815
@@ -329,7 +301,7 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 30.8
+   "2026-07-20": 32.3
   },
   "_gatilhoAtual": {
    "tipo": "seq",
