@@ -131,7 +131,36 @@
   "consumidas": {
    "copa": 1784535373707
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:52",
+     "jogo": "Quito x Medellin",
+     "odd": 5
+    },
+    {
+     "h": "09:55",
+     "jogo": "Sao Paulo x Lima",
+     "odd": 3.75
+    },
+    {
+     "h": "09:58",
+     "jogo": "Rio de Janeiro x Asuncion",
+     "odd": 4.5
+    }
+   ],
+   "alvo": {
+    "h": "09:52",
+    "jogo": "Quito x Medellin",
+    "odd": 5,
+    "unidades": 1,
+    "desde": 1784537355614
+   },
+   "iniciadoEm": 1784537355614
+  },
   "cooldown": {
    "copa": 1784535373707,
    "premier": 1784532222107,
@@ -146,10 +175,10 @@
    "2026-07-20": 16.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Escócia",
-   "n": 6,
-   "start": 2
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 11,
+   "start": 1
   }
  },
  "o25": {
