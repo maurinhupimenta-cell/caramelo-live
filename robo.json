@@ -133,8 +133,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "18:43",
@@ -142,9 +142,9 @@
      "odd": 4.75
     },
     {
-     "h": "18:46",
-     "jogo": "Marrocos x Jordânia",
-     "odd": 4.5
+     "h": "19:10",
+     "jogo": "Argentina x Portugal",
+     "odd": 4
     },
     {
      "h": "18:49",
@@ -152,7 +152,13 @@
      "odd": 4
     }
    ],
-   "alvo": null,
+   "alvo": {
+    "h": "18:49",
+    "jogo": "Equador x Uruguai",
+    "odd": 4,
+    "unidades": 4,
+    "desde": 1784571311911
+   },
    "iniciadoEm": 1784569212114,
    "tiros": [
     {
@@ -160,8 +166,15 @@
      "jogo": "Uzbequistão x Canadá",
      "odd": 4.75,
      "unidades": 1
+    },
+    {
+     "h": "19:10",
+     "jogo": "Argentina x Portugal",
+     "odd": 4,
+     "unidades": 2
     }
-   ]
+   ],
+   "semAlvoDesde": null
   },
   "cooldown": {
    "copa": 1784562904318,
@@ -361,20 +374,26 @@
    "2026-07-20": 10.2
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 60,
+   "tipo": "coluna",
+   "chave": ":13",
+   "n": 19,
    "start": 1
   }
  },
  "ambas": {
   "saldo": -23.6,
-  "ciclos": 143,
+  "ciclos": 144,
   "greens": 99,
   "redsCiclo": 18,
   "aborts": 0,
-  "descartes": 26,
+  "descartes": 27,
   "historico": [
+   {
+    "quando": "2026-07-20T18:08:14.309Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-20T17:43:12.711Z",
     "resultado": "GREEN",
@@ -488,16 +507,9 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "super · Quito x Bogota @2.15 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T11:55:54.714Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "euro · Eslováquia x Albânia @2.2 (tiro 2)"
    }
   ],
   "consumidas": {
-   "premier": 1784566238507,
    "copa": 1784569392608
   },
   "ciclo": {
@@ -506,29 +518,29 @@
    "apostado": 0,
    "plano": [
     {
-     "h": "18:50",
-     "jogo": "Países Baixos x Dinamarca",
-     "odd": 1.93
+     "h": "19:11",
+     "jogo": "Turquia x Países Baixos",
+     "odd": 1.95
     },
     {
-     "h": "18:53",
-     "jogo": "Hungria x Ucrânia",
-     "odd": 2.05
+     "h": "19:14",
+     "jogo": "Bélgica x Ucrânia",
+     "odd": 1.95
     },
     {
-     "h": "18:56",
-     "jogo": "Alemanha x Sérvia",
-     "odd": 2.05
+     "h": "19:17",
+     "jogo": "Geórgia x Eslovênia",
+     "odd": 2.25
     }
    ],
    "alvo": {
-    "h": "18:50",
-    "jogo": "Países Baixos x Dinamarca",
-    "odd": 1.93,
+    "h": "19:11",
+    "jogo": "Turquia x Países Baixos",
+    "odd": 1.95,
     "unidades": 1,
-    "desde": 1784569692511
+    "desde": 1784570895608
    },
-   "iniciadoEm": 1784569692511
+   "iniciadoEm": 1784570895608
   },
   "cooldown": {
    "euro": 1784566032521,
@@ -545,8 +557,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 63,
+   "chave": "empate 1-1",
+   "n": 53,
    "start": 1
   }
  }
