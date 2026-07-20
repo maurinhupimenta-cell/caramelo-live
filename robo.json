@@ -339,13 +339,19 @@
   }
  },
  "ambas": {
-  "saldo": -19.4,
-  "ciclos": 139,
+  "saldo": -26.4,
+  "ciclos": 140,
   "greens": 96,
-  "redsCiclo": 17,
+  "redsCiclo": 18,
   "aborts": 0,
   "descartes": 26,
   "historico": [
+   {
+    "quando": "2026-07-20T16:47:12.710Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-20T16:38:11.313Z",
     "resultado": "GREEN",
@@ -459,64 +465,16 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "euro · Espanha x Eslovênia @2.1 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T10:10:15.709Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "super · Penarol x Lima @2.02 (tiro 3)"
    }
   ],
   "consumidas": {
    "super": 1784563485708,
-   "copa": 1784565491207
+   "copa": 1784565491207,
+   "euro": 1784566032521
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "17:38",
-     "jogo": "Eslovênia x Dinamarca",
-     "odd": 2.25
-    },
-    {
-     "h": "17:41",
-     "jogo": "Suíça x Alemanha",
-     "odd": 1.85
-    },
-    {
-     "h": "17:44",
-     "jogo": "República Tcheca x Itália",
-     "odd": 2.15
-    }
-   ],
-   "alvo": {
-    "h": "17:44",
-    "jogo": "República Tcheca x Itália",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1784565913908
-   },
-   "iniciadoEm": 1784565493110,
-   "tiros": [
-    {
-     "h": "17:38",
-     "jogo": "Eslovênia x Dinamarca",
-     "odd": 2.25,
-     "unidades": 1
-    },
-    {
-     "h": "17:41",
-     "jogo": "Suíça x Alemanha",
-     "odd": 1.85,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784561545319,
+   "euro": 1784566032521,
    "super": 1784563485708,
    "premier": 1784561751116,
    "copa": 1784565491207
@@ -526,12 +484,12 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": -0.8
+   "2026-07-20": -7.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.85",
-   "n": 18,
+   "tipo": "seq",
+   "chave": "GGRRR",
+   "n": 13,
    "start": 1
   }
  }
