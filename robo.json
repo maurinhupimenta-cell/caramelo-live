@@ -290,8 +290,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "06:35",
@@ -310,13 +310,21 @@
     }
    ],
    "alvo": {
-    "h": "06:35",
-    "jogo": "Turquia x Itália",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1784525516010
+    "h": "06:38",
+    "jogo": "Polônia x Hungria",
+    "odd": 2.55,
+    "unidades": 2,
+    "desde": 1784525874810
    },
-   "iniciadoEm": 1784525516010
+   "iniciadoEm": 1784525516010,
+   "tiros": [
+    {
+     "h": "06:35",
+     "jogo": "Turquia x Itália",
+     "odd": 2.5,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784522935710,
@@ -334,8 +342,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRG",
-   "n": 12,
+   "chave": "RRRGR",
+   "n": 5,
    "start": 1
   }
  },
@@ -469,12 +477,40 @@
    }
   ],
   "consumidas": {
-   "copa": 1784522115971,
    "euro": 1784522618214,
    "super": 1784523313407,
    "premier": 1784523758608
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:37",
+     "jogo": "Suíça x Senegal",
+     "odd": 2.1
+    },
+    {
+     "h": "06:40",
+     "jogo": "Curação x Turquia",
+     "odd": 1.93
+    },
+    {
+     "h": "06:43",
+     "jogo": "Noruega x Equador",
+     "odd": 1.85
+    }
+   ],
+   "alvo": {
+    "h": "06:37",
+    "jogo": "Suíça x Senegal",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1784525716118
+   },
+   "iniciadoEm": 1784525716118
+  },
   "cooldown": {
    "euro": 1784522618214,
    "super": 1784523313407,
@@ -489,10 +525,10 @@
    "2026-07-20": 5.5
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 10,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.95",
+   "n": 9,
+   "start": 2
   }
  }
 }
