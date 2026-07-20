@@ -348,13 +348,19 @@
   }
  },
  "ambas": {
-  "saldo": -9.9,
-  "ciclos": 157,
-  "greens": 112,
+  "saldo": -8.6,
+  "ciclos": 158,
+  "greens": 113,
   "redsCiclo": 18,
   "aborts": 0,
   "descartes": 27,
   "historico": [
+   {
+    "quando": "2026-07-20T22:57:22.112Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "euro · Polônia x República Tcheca @2.25 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T21:53:49.711Z",
     "resultado": "GREEN",
@@ -468,47 +474,14 @@
     "resultado": "GREEN",
     "unidades": 0.8,
     "detalhe": "copa · Brasil x Equador @1.9 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T16:04:45.814Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "super · Medellin x Avellaneda @2.05 (tiro 2)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:53",
-     "jogo": "Polônia x República Tcheca",
-     "odd": 2.25
-    },
-    {
-     "h": "23:56",
-     "jogo": "Itália x Alemanha",
-     "odd": 1.93
-    },
-    {
-     "h": "00:02",
-     "jogo": "Hungria x França",
-     "odd": 1.93
-    }
-   ],
-   "alvo": {
-    "h": "23:53",
-    "jogo": "Polônia x República Tcheca",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1784587811813
-   },
-   "iniciadoEm": 1784587811813
+  "consumidas": {
+   "euro": 1784588241921
   },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784583371910,
+   "euro": 1784588241921,
    "super": 1784584227915,
    "premier": 1784584429609,
    "copa": 1784573351513
@@ -518,12 +491,12 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": 8.7
+   "2026-07-20": 10
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 67,
+   "chave": "empate 1-1",
+   "n": 52,
    "start": 1
   }
  }
