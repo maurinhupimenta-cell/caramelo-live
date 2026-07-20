@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -83.3,
-  "ciclos": 101,
-  "greens": 30,
+  "saldo": -77.3,
+  "ciclos": 102,
+  "greens": 31,
   "redsCiclo": 38,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-20T02:44:38.094Z",
+    "resultado": "GREEN",
+    "unidades": 6,
+    "detalhe": "premier · Leeds x Wolverhampton @4.5 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T01:59:46.800Z",
     "resultado": "RED_CICLO",
@@ -120,56 +126,13 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-19T03:17:12.122Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "03:39",
-     "jogo": "West Ham x Burnley",
-     "odd": 4.75
-    },
-    {
-     "h": "03:42",
-     "jogo": "Leeds x Wolverhampton",
-     "odd": 4.5
-    },
-    {
-     "h": "03:45",
-     "jogo": "Leicester x Southampton",
-     "odd": 5
-    }
-   ],
-   "alvo": {
-    "h": "03:42",
-    "jogo": "Leeds x Wolverhampton",
-    "odd": 4.5,
-    "unidades": 2,
-    "desde": 1784515298295
-   },
-   "iniciadoEm": 1784514589604,
-   "tiros": [
-    {
-     "h": "03:39",
-     "jogo": "West Ham x Burnley",
-     "odd": 4.75,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784489292106,
-   "premier": 1784512786698,
+   "premier": 1784515477905,
    "euro": 1784486951501,
    "super": 1784502254399
   },
@@ -177,7 +140,7 @@
    "2026-07-15": -35,
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
-   "2026-07-19": -54.5
+   "2026-07-19": -48.5
   }
  },
  "o25": {
@@ -326,13 +289,19 @@
   }
  },
  "ambas": {
-  "saldo": -19.6,
-  "ciclos": 100,
-  "greens": 63,
+  "saldo": -18.6,
+  "ciclos": 101,
+  "greens": 64,
   "redsCiclo": 12,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-20T02:44:38.200Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Leeds x Wolverhampton @2 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T00:38:15.505Z",
     "resultado": "RED_CICLO",
@@ -446,64 +415,21 @@
     "resultado": "GREEN",
     "unidades": 1.6,
     "detalhe": "euro · Dinamarca x Albânia @2.3 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-19T07:04:15.634Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Costa do Marfim x Iraque @2.02 (tiro 1)"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "03:39",
-     "jogo": "West Ham x Burnley",
-     "odd": 2.07
-    },
-    {
-     "h": "03:42",
-     "jogo": "Leeds x Wolverhampton",
-     "odd": 2
-    },
-    {
-     "h": "03:45",
-     "jogo": "Leicester x Southampton",
-     "odd": 2.05
-    }
-   ],
-   "alvo": {
-    "h": "03:42",
-    "jogo": "Leeds x Wolverhampton",
-    "odd": 2,
-    "unidades": 2,
-    "desde": 1784515298399
-   },
-   "iniciadoEm": 1784514751099,
-   "tiros": [
-    {
-     "h": "03:39",
-     "jogo": "West Ham x Burnley",
-     "odd": 2.07,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784507895404,
    "super": 1784504775197,
-   "premier": 1784505697596,
+   "premier": 1784515478096,
    "copa": 1784471632896
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
-   "2026-07-19": -27.6
+   "2026-07-19": -26.6
   }
  }
 }
