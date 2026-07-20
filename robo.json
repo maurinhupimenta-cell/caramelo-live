@@ -449,7 +449,36 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:28",
+     "jogo": "França x Qatar",
+     "odd": 2.05
+    },
+    {
+     "h": "05:31",
+     "jogo": "Haiti x Cabo Verde",
+     "odd": 1.87
+    },
+    {
+     "h": "05:34",
+     "jogo": "EUA x Senegal",
+     "odd": 2.07
+    }
+   ],
+   "alvo": {
+    "h": "05:28",
+    "jogo": "França x Qatar",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1784521376922
+   },
+   "iniciadoEm": 1784521376922
+  },
   "cooldown": {
    "euro": 1784507895404,
    "super": 1784518260296,
@@ -462,6 +491,12 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 0.9
+  },
+  "_gatilhoAtual": {
+   "tipo": "coluna",
+   "chave": ":31",
+   "n": 5,
+   "start": 2
   }
  }
 }
