@@ -185,9 +185,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":49",
+   "chave": ":03",
    "n": 5,
-   "start": 1
+   "start": 3
   }
  },
  "o25": {
@@ -369,10 +369,10 @@
    "2026-07-20": 7.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Buenos Aires",
-   "n": 10,
-   "start": 3
+   "tipo": "seq",
+   "chave": "RRRR",
+   "n": 8,
+   "start": 1
   }
  },
  "ambas": {
@@ -510,8 +510,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "05:46",
@@ -530,11 +530,11 @@
     }
    ],
    "alvo": {
-    "h": "05:49",
-    "jogo": "Quito x Santiago",
-    "odd": 1.9,
-    "unidades": 2,
-    "desde": 1784522936114
+    "h": "05:52",
+    "jogo": "Bogota x Santos",
+    "odd": 2.2,
+    "unidades": 4,
+    "desde": 1784523194613
    },
    "iniciadoEm": 1784522619414,
    "tiros": [
@@ -543,6 +543,12 @@
      "jogo": "Medellin x Agua Branca",
      "odd": 1.98,
      "unidades": 1
+    },
+    {
+     "h": "05:49",
+     "jogo": "Quito x Santiago",
+     "odd": 1.9,
+     "unidades": 2
     }
    ]
   },
@@ -561,8 +567,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 9,
+   "chave": "empate 1-1",
+   "n": 11,
    "start": 1
   }
  }
