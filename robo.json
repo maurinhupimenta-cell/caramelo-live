@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -66.5,
-  "ciclos": 108,
-  "greens": 35,
+  "saldo": -55.5,
+  "ciclos": 109,
+  "greens": 36,
   "redsCiclo": 40,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-20T06:08:32.607Z",
+    "resultado": "GREEN",
+    "unidades": 11,
+    "detalhe": "premier · City x Tottenham @4.5 (tiro 3)"
+   },
    {
     "quando": "2026-07-20T05:28:15.618Z",
     "resultado": "RED_CICLO",
@@ -120,64 +126,16 @@
     "resultado": "GREEN",
     "unidades": 8,
     "detalhe": "premier · Leeds x Watford @5.5 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-19T13:27:52.393Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
-   "super": 1784525295517
+   "super": 1784525295517,
+   "premier": 1784527712320
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "07:00",
-     "jogo": "Palace x Norwich",
-     "odd": 4.2
-    },
-    {
-     "h": "07:03",
-     "jogo": "Watford x United",
-     "odd": 4.33
-    },
-    {
-     "h": "07:06",
-     "jogo": "City x Tottenham",
-     "odd": 4.5
-    }
-   ],
-   "alvo": {
-    "h": "07:06",
-    "jogo": "City x Tottenham",
-    "odd": 4.5,
-    "unidades": 4,
-    "desde": 1784527542518
-   },
-   "iniciadoEm": 1784526814910,
-   "tiros": [
-    {
-     "h": "07:00",
-     "jogo": "Palace x Norwich",
-     "odd": 4.2,
-     "unidades": 1
-    },
-    {
-     "h": "07:03",
-     "jogo": "Watford x United",
-     "odd": 4.33,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784522115668,
-   "premier": 1784523214710,
+   "premier": 1784527712320,
    "euro": 1784522533511,
    "super": 1784525295517
   },
@@ -186,7 +144,7 @@
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
-   "2026-07-20": 10.8
+   "2026-07-20": 21.8
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
