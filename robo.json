@@ -315,7 +315,36 @@
    "super": 1784584227807,
    "copa": 1784584933315
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:09",
+     "jogo": "Leeds x Tottenham",
+     "odd": 2.75
+    },
+    {
+     "h": "23:12",
+     "jogo": "United x Liverpool",
+     "odd": 2.2
+    },
+    {
+     "h": "23:15",
+     "jogo": "Palace x Leicester",
+     "odd": 2.25
+    }
+   ],
+   "alvo": {
+    "h": "23:09",
+    "jogo": "Leeds x Tottenham",
+    "odd": 2.75,
+    "unidades": 1,
+    "desde": 1784585156215
+   },
+   "iniciadoEm": 1784585156215
+  },
   "cooldown": {
    "copa": 1784584933316,
    "premier": 1784581552218,
@@ -331,9 +360,9 @@
    "2026-07-20": 25.9
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 16,
+   "tipo": "seq",
+   "chave": "GGRGR",
+   "n": 11,
    "start": 1
   }
  },
