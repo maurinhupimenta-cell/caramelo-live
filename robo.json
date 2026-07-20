@@ -131,8 +131,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:25",
@@ -151,13 +151,21 @@
     }
    ],
    "alvo": {
-    "h": "05:25",
-    "jogo": "Coreia do Sul x Tunísia",
-    "odd": 6,
-    "unidades": 1,
-    "desde": 1784521211998
+    "h": "05:28",
+    "jogo": "França x Qatar",
+    "odd": 4.5,
+    "unidades": 2,
+    "desde": 1784521674421
    },
-   "iniciadoEm": 1784521211998
+   "iniciadoEm": 1784521211998,
+   "tiros": [
+    {
+     "h": "05:25",
+     "jogo": "Coreia do Sul x Tunísia",
+     "odd": 6,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784489292106,
@@ -171,6 +179,12 @@
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
    "2026-07-20": 16.3
+  },
+  "_gatilhoAtual": {
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 7,
+   "start": 1
   }
  },
  "o25": {
@@ -303,7 +317,36 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:26",
+     "jogo": "Bélgica x Romênia",
+     "odd": 2.07
+    },
+    {
+     "h": "05:29",
+     "jogo": "Ucrânia x Eslováquia",
+     "odd": 2.35
+    },
+    {
+     "h": "05:32",
+     "jogo": "Romênia x Portugal",
+     "odd": 2.15
+    }
+   ],
+   "alvo": {
+    "h": "05:26",
+    "jogo": "Bélgica x Romênia",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1784521378324
+   },
+   "iniciadoEm": 1784521378324
+  },
   "cooldown": {
    "copa": 1784520777499,
    "premier": 1784518537694,
@@ -317,6 +360,12 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 3.2
+  },
+  "_gatilhoAtual": {
+   "tipo": "time",
+   "chave": "Suíça",
+   "n": 8,
+   "start": 3
   }
  },
  "ambas": {
@@ -493,10 +542,10 @@
    "2026-07-20": 0.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":31",
-   "n": 5,
-   "start": 2
+   "tipo": "time",
+   "chave": "Suíça",
+   "n": 8,
+   "start": 3
   }
  }
 }
