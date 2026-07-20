@@ -289,8 +289,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "12:47",
@@ -309,11 +309,11 @@
     }
    ],
    "alvo": {
-    "h": "12:50",
-    "jogo": "Romênia x Bélgica",
-    "odd": 2.07,
-    "unidades": 2,
-    "desde": 1784548194712
+    "h": "12:53",
+    "jogo": "Eslováquia x Albânia",
+    "odd": 2.7,
+    "unidades": 4,
+    "desde": 1784548394009
    },
    "iniciadoEm": 1784547835207,
    "tiros": [
@@ -322,6 +322,12 @@
      "jogo": "Hungria x Turquia",
      "odd": 2.6,
      "unidades": 1
+    },
+    {
+     "h": "12:50",
+     "jogo": "Romênia x Bélgica",
+     "odd": 2.07,
+     "unidades": 2
     }
    ]
   },
@@ -481,8 +487,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "12:50",
@@ -501,13 +507,21 @@
     }
    ],
    "alvo": {
-    "h": "12:50",
-    "jogo": "Romênia x Bélgica",
-    "odd": 1.85,
-    "unidades": 1,
-    "desde": 1784548015618
+    "h": "12:53",
+    "jogo": "Eslováquia x Albânia",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1784548394112
    },
-   "iniciadoEm": 1784548015618
+   "iniciadoEm": 1784548015618,
+   "tiros": [
+    {
+     "h": "12:50",
+     "jogo": "Romênia x Bélgica",
+     "odd": 1.85,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784544415206,
@@ -523,9 +537,9 @@
    "2026-07-20": -8
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 35,
+   "tipo": "time",
+   "chave": "Sérvia",
+   "n": 20,
    "start": 1
   }
  }
