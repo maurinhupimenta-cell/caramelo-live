@@ -311,13 +311,19 @@
   }
  },
  "ambas": {
-  "saldo": -27.1,
-  "ciclos": 108,
-  "greens": 69,
+  "saldo": -25.9,
+  "ciclos": 109,
+  "greens": 70,
   "redsCiclo": 14,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-20T06:15:57.107Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Quito x La Boca @2.05 (tiro 3)"
+   },
    {
     "quando": "2026-07-20T05:55:53.810Z",
     "resultado": "RED_CICLO",
@@ -431,65 +437,17 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-19T14:02:42.099Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "premier · Burnley x West Ham @2.05 (tiro 2)"
    }
   ],
   "consumidas": {
    "copa": 1784526353806,
-   "euro": 1784526953706
+   "euro": 1784526953706,
+   "super": 1784528156912
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "07:07",
-     "jogo": "Sao Paulo x Agua Branca",
-     "odd": 1.8
-    },
-    {
-     "h": "07:10",
-     "jogo": "Santos x Bogota",
-     "odd": 2.25
-    },
-    {
-     "h": "07:13",
-     "jogo": "Quito x La Boca",
-     "odd": 2.05
-    }
-   ],
-   "alvo": {
-    "h": "07:13",
-    "jogo": "Quito x La Boca",
-    "odd": 2.05,
-    "unidades": 4,
-    "desde": 1784527976812
-   },
-   "iniciadoEm": 1784527155608,
-   "tiros": [
-    {
-     "h": "07:07",
-     "jogo": "Sao Paulo x Agua Branca",
-     "odd": 1.8,
-     "unidades": 1
-    },
-    {
-     "h": "07:10",
-     "jogo": "Santos x Bogota",
-     "odd": 2.25,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784526953706,
-   "super": 1784523313407,
+   "super": 1784528156912,
    "premier": 1784523758608,
    "copa": 1784526353806
   },
@@ -498,12 +456,12 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": -8.5
+   "2026-07-20": -7.3
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 19,
+   "tipo": "seq",
+   "chave": "GRRG",
+   "n": 10,
    "start": 1
   }
  }
