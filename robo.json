@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -55.5,
-  "ciclos": 109,
-  "greens": 36,
+  "saldo": -50.5,
+  "ciclos": 110,
+  "greens": 37,
   "redsCiclo": 40,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-20T06:58:15.107Z",
+    "resultado": "GREEN",
+    "unidades": 5,
+    "detalhe": "copa · Japão x Irã @6 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T06:08:32.607Z",
     "resultado": "GREEN",
@@ -120,49 +126,15 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-19T13:38:59.302Z",
-    "resultado": "GREEN",
-    "unidades": 8,
-    "detalhe": "premier · Leeds x Watford @5.5 (tiro 2)"
    }
   ],
   "consumidas": {
-   "premier": 1784527712320
+   "premier": 1784527712320,
+   "copa": 1784530695008
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "07:55",
-     "jogo": "Japão x Irã",
-     "odd": 6
-    },
-    {
-     "h": "07:58",
-     "jogo": "Áustria x Escócia",
-     "odd": 5.25
-    },
-    {
-     "h": "08:01",
-     "jogo": "Jordânia x Senegal",
-     "odd": 4.75
-    }
-   ],
-   "alvo": {
-    "h": "07:55",
-    "jogo": "Japão x Irã",
-    "odd": 6,
-    "unidades": 1,
-    "desde": 1784530316313
-   },
-   "iniciadoEm": 1784530316313
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784522115668,
+   "copa": 1784530695008,
    "premier": 1784527712320,
    "euro": 1784522533511,
    "super": 1784525295517
@@ -172,7 +144,7 @@
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
-   "2026-07-20": 21.8
+   "2026-07-20": 26.8
   },
   "_gatilhoAtual": {
    "tipo": "placar",
