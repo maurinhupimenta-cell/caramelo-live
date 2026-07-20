@@ -338,13 +338,19 @@
   }
  },
  "ambas": {
-  "saldo": -16.1,
-  "ciclos": 151,
-  "greens": 106,
+  "saldo": -15.2,
+  "ciclos": 152,
+  "greens": 107,
   "redsCiclo": 18,
   "aborts": 0,
   "descartes": 27,
   "historico": [
+   {
+    "quando": "2026-07-20T20:27:11.313Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Inglaterra x Áustria @1.93 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T19:41:53.311Z",
     "resultado": "GREEN",
@@ -458,50 +464,16 @@
     "resultado": "GREEN",
     "unidades": 0.6,
     "detalhe": "super · Sao Paulo x Belo Horizonte @1.8 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T14:12:14.110Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
    "super": 1784576234818,
-   "premier": 1784576513118
+   "premier": 1784576513118,
+   "euro": 1784579231121
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:23",
-     "jogo": "Inglaterra x Áustria",
-     "odd": 1.93
-    },
-    {
-     "h": "21:26",
-     "jogo": "Espanha x Eslováquia",
-     "odd": 1.95
-    },
-    {
-     "h": "21:29",
-     "jogo": "Países Baixos x Ucrânia",
-     "odd": 1.9
-    }
-   ],
-   "alvo": {
-    "h": "21:23",
-    "jogo": "Inglaterra x Áustria",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1784578873216
-   },
-   "iniciadoEm": 1784578873216
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784575272412,
+   "euro": 1784579231121,
    "super": 1784576234818,
    "premier": 1784576513118,
    "copa": 1784573351513
@@ -511,13 +483,13 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": 2.5
+   "2026-07-20": 3.4
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":32",
    "n": 19,
-   "start": 2
+   "start": 1
   }
  }
 }
