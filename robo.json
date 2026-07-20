@@ -339,13 +339,19 @@
   }
  },
  "ambas": {
-  "saldo": -22.8,
-  "ciclos": 119,
-  "greens": 79,
+  "saldo": -21.7,
+  "ciclos": 120,
+  "greens": 80,
   "redsCiclo": 15,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-20T10:10:15.709Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Penarol x Lima @2.02 (tiro 3)"
+   },
    {
     "quando": "2026-07-20T09:40:54.712Z",
     "resultado": "GREEN",
@@ -459,64 +465,16 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · Leeds x Wolverhampton @2 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T00:38:15.505Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
-   "euro": 1784540454610
+   "euro": 1784540454610,
+   "super": 1784542215516
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "11:01",
-     "jogo": "Santos x Guayaquil",
-     "odd": 1.98
-    },
-    {
-     "h": "11:04",
-     "jogo": "Sao Paulo x Montevideo",
-     "odd": 1.85
-    },
-    {
-     "h": "11:07",
-     "jogo": "Penarol x Lima",
-     "odd": 2.02
-    }
-   ],
-   "alvo": {
-    "h": "11:07",
-    "jogo": "Penarol x Lima",
-    "odd": 2.02,
-    "unidades": 4,
-    "desde": 1784542015710
-   },
-   "iniciadoEm": 1784541475408,
-   "tiros": [
-    {
-     "h": "11:01",
-     "jogo": "Santos x Guayaquil",
-     "odd": 1.98,
-     "unidades": 1
-    },
-    {
-     "h": "11:04",
-     "jogo": "Sao Paulo x Montevideo",
-     "odd": 1.85,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784540454610,
-   "super": 1784537875312,
+   "super": 1784542215516,
    "premier": 1784533296517,
    "copa": 1784538273916
   },
@@ -525,12 +483,12 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": -4.2
+   "2026-07-20": -3.1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":10",
-   "n": 11,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 26,
    "start": 1
   }
  }
