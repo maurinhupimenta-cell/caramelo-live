@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -59.5,
-  "ciclos": 107,
+  "saldo": -66.5,
+  "ciclos": 108,
   "greens": 35,
-  "redsCiclo": 39,
+  "redsCiclo": 40,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-20T05:28:15.618Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-20T04:53:34.813Z",
     "resultado": "GREEN",
@@ -120,75 +126,27 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-19T10:31:52.701Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
    "copa": 1784522115668,
    "euro": 1784522533511,
-   "premier": 1784523214710
+   "premier": 1784523214710,
+   "super": 1784525295517
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "06:19",
-     "jogo": "Guayaquil x Montevideo",
-     "odd": 3.8
-    },
-    {
-     "h": "06:22",
-     "jogo": "Porto Alegre x Lima",
-     "odd": 5
-    },
-    {
-     "h": "06:25",
-     "jogo": "Belo Horizonte x Agua Branca",
-     "odd": 3.8
-    }
-   ],
-   "alvo": {
-    "h": "06:25",
-    "jogo": "Belo Horizonte x Agua Branca",
-    "odd": 3.8,
-    "unidades": 4,
-    "desde": 1784525116108
-   },
-   "iniciadoEm": 1784524558413,
-   "tiros": [
-    {
-     "h": "06:19",
-     "jogo": "Guayaquil x Montevideo",
-     "odd": 3.8,
-     "unidades": 1
-    },
-    {
-     "h": "06:22",
-     "jogo": "Porto Alegre x Lima",
-     "odd": 5,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784522115668,
    "premier": 1784523214710,
    "euro": 1784522533511,
-   "super": 1784518260107
+   "super": 1784525295517
   },
   "dias": {
    "2026-07-15": -35,
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
-   "2026-07-20": 17.8
+   "2026-07-20": 10.8
   },
   "_gatilhoAtual": {
    "tipo": "placar",
