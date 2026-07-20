@@ -312,13 +312,19 @@
   }
  },
  "ambas": {
-  "saldo": -22.7,
-  "ciclos": 112,
-  "greens": 73,
+  "saldo": -21.8,
+  "ciclos": 113,
+  "greens": 74,
   "redsCiclo": 14,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-20T07:41:36.713Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Chelsea x Palace @1.98 (tiro 3)"
+   },
    {
     "quando": "2026-07-20T07:17:14.217Z",
     "resultado": "GREEN",
@@ -432,66 +438,18 @@
     "resultado": "GREEN",
     "unidades": 1.6,
     "detalhe": "super · Belo Horizonte x Porto Alegre @2.15 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-19T15:35:01.698Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "super · La Plata x Quito @2.2 (tiro 3)"
    }
   ],
   "consumidas": {
    "copa": 1784530316507,
-   "euro": 1784531834118
+   "euro": 1784531834118,
+   "premier": 1784533296517
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "08:33",
-     "jogo": "Brentford x Palace",
-     "odd": 1.95
-    },
-    {
-     "h": "08:36",
-     "jogo": "Newcastle x United",
-     "odd": 1.86
-    },
-    {
-     "h": "08:39",
-     "jogo": "Chelsea x Palace",
-     "odd": 1.98
-    }
-   ],
-   "alvo": {
-    "h": "08:39",
-    "jogo": "Chelsea x Palace",
-    "odd": 1.98,
-    "unidades": 4,
-    "desde": 1784533120715
-   },
-   "iniciadoEm": 1784532580316,
-   "tiros": [
-    {
-     "h": "08:33",
-     "jogo": "Brentford x Palace",
-     "odd": 1.95,
-     "unidades": 1
-    },
-    {
-     "h": "08:36",
-     "jogo": "Newcastle x United",
-     "odd": 1.86,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784531834118,
    "super": 1784528156912,
-   "premier": 1784528797515,
+   "premier": 1784533296517,
    "copa": 1784530316507
   },
   "dias": {
@@ -499,13 +457,13 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": -4.1
+   "2026-07-20": -3.2
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":48",
-   "n": 8,
-   "start": 2
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 24,
+   "start": 1
   }
  }
 }
