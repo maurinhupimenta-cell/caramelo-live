@@ -473,8 +473,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "17:38",
@@ -493,11 +493,11 @@
     }
    ],
    "alvo": {
-    "h": "17:41",
-    "jogo": "Suíça x Alemanha",
-    "odd": 1.85,
-    "unidades": 2,
-    "desde": 1784565672316
+    "h": "17:44",
+    "jogo": "República Tcheca x Itália",
+    "odd": 2.15,
+    "unidades": 4,
+    "desde": 1784565913908
    },
    "iniciadoEm": 1784565493110,
    "tiros": [
@@ -506,6 +506,12 @@
      "jogo": "Eslovênia x Dinamarca",
      "odd": 2.25,
      "unidades": 1
+    },
+    {
+     "h": "17:41",
+     "jogo": "Suíça x Alemanha",
+     "odd": 1.85,
+     "unidades": 2
     }
    ]
   },
@@ -523,9 +529,9 @@
    "2026-07-20": -0.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGR",
-   "n": 22,
+   "tipo": "odd",
+   "chave": "1.85",
+   "n": 18,
    "start": 1
   }
  }
