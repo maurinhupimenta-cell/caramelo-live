@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -64.5,
-  "ciclos": 106,
-  "greens": 34,
+  "saldo": -59.5,
+  "ciclos": 107,
+  "greens": 35,
   "redsCiclo": 39,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-20T04:53:34.813Z",
+    "resultado": "GREEN",
+    "unidades": 5,
+    "detalhe": "premier · Chelsea x Wolverhampton @4 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T04:42:13.708Z",
     "resultado": "GREEN",
@@ -120,59 +126,17 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-19T09:51:52.500Z",
-    "resultado": "GREEN",
-    "unidades": 3.3,
-    "detalhe": "copa · México x Uruguai @4.33 (tiro 1)"
    }
   ],
   "consumidas": {
    "copa": 1784522115668,
-   "euro": 1784522533511
+   "euro": 1784522533511,
+   "premier": 1784523214710
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "05:48",
-     "jogo": "Brighton x City",
-     "odd": 3.5
-    },
-    {
-     "h": "05:51",
-     "jogo": "Chelsea x Wolverhampton",
-     "odd": 4
-    },
-    {
-     "h": "05:54",
-     "jogo": "Leeds x Everton",
-     "odd": 4.75
-    }
-   ],
-   "alvo": {
-    "h": "05:51",
-    "jogo": "Chelsea x Wolverhampton",
-    "odd": 4,
-    "unidades": 2,
-    "desde": 1784523034512
-   },
-   "iniciadoEm": 1784522535216,
-   "tiros": [
-    {
-     "h": "05:48",
-     "jogo": "Brighton x City",
-     "odd": 3.5,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784522115668,
-   "premier": 1784519474695,
+   "premier": 1784523214710,
    "euro": 1784522533511,
    "super": 1784518260107
   },
@@ -181,7 +145,7 @@
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
-   "2026-07-20": 12.8
+   "2026-07-20": 17.8
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
