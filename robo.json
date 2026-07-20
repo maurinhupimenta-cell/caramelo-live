@@ -131,7 +131,36 @@
   "consumidas": {
    "super": 1784525295517
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:00",
+     "jogo": "Palace x Norwich",
+     "odd": 4.2
+    },
+    {
+     "h": "07:03",
+     "jogo": "Watford x United",
+     "odd": 4.33
+    },
+    {
+     "h": "07:06",
+     "jogo": "City x Tottenham",
+     "odd": 4.5
+    }
+   ],
+   "alvo": {
+    "h": "07:00",
+    "jogo": "Palace x Norwich",
+    "odd": 4.2,
+    "unidades": 1,
+    "desde": 1784526814910
+   },
+   "iniciadoEm": 1784526814910
+  },
   "cooldown": {
    "copa": 1784522115668,
    "premier": 1784523214710,
@@ -146,10 +175,10 @@
    "2026-07-20": 10.8
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 8,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":03",
+   "n": 6,
+   "start": 2
   }
  },
  "o25": {
@@ -288,8 +317,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "06:52",
@@ -308,13 +337,21 @@
     }
    ],
    "alvo": {
-    "h": "06:52",
-    "jogo": "Inglaterra x Marrocos",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1784526554117
+    "h": "06:55",
+    "jogo": "Uzbequistão x EUA",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1784526893012
    },
-   "iniciadoEm": 1784526554117
+   "iniciadoEm": 1784526554117,
+   "tiros": [
+    {
+     "h": "06:52",
+     "jogo": "Inglaterra x Marrocos",
+     "odd": 2.3,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784522935710,
