@@ -445,8 +445,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "12:10",
@@ -465,11 +465,11 @@
     }
    ],
    "alvo": {
-    "h": "12:13",
-    "jogo": "Itaquera x Avellaneda",
-    "odd": 2.02,
-    "unidades": 2,
-    "desde": 1784545995613
+    "h": "12:16",
+    "jogo": "Guayaquil x Santos",
+    "odd": 1.95,
+    "unidades": 4,
+    "desde": 1784546175522
    },
    "iniciadoEm": 1784545815620,
    "tiros": [
@@ -478,6 +478,12 @@
      "jogo": "Montevideo x La Plata",
      "odd": 2.05,
      "unidades": 1
+    },
+    {
+     "h": "12:13",
+     "jogo": "Itaquera x Avellaneda",
+     "odd": 2.02,
+     "unidades": 2
     }
    ]
   },
@@ -495,10 +501,10 @@
    "2026-07-20": -2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.1",
-   "n": 7,
-   "start": 2
+   "tipo": "seq",
+   "chave": "RRRR",
+   "n": 21,
+   "start": 1
   }
  }
 }
