@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -65.2,
-  "ciclos": 130,
-  "greens": 46,
+  "saldo": -56.2,
+  "ciclos": 131,
+  "greens": 47,
   "redsCiclo": 51,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-20T20:44:46.909Z",
+    "resultado": "GREEN",
+    "unidades": 9,
+    "detalhe": "premier · Norwich x Burnley @4 (tiro 3)"
+   },
    {
     "quando": "2026-07-20T19:33:11.614Z",
     "resultado": "GREEN",
@@ -120,62 +126,15 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-20T07:13:16.107Z",
-    "resultado": "GREEN",
-    "unidades": 3.3,
-    "detalhe": "super · Penarol x Belo Horizonte @4.33 (tiro 1)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "21:36",
-     "jogo": "Southampton x Brentford",
-     "odd": 5
-    },
-    {
-     "h": "21:39",
-     "jogo": "Watford x West Ham",
-     "odd": 5.5
-    },
-    {
-     "h": "21:42",
-     "jogo": "Norwich x Burnley",
-     "odd": 4
-    }
-   ],
-   "alvo": {
-    "h": "21:42",
-    "jogo": "Norwich x Burnley",
-    "odd": 4,
-    "unidades": 4,
-    "desde": 1784580105710
-   },
-   "iniciadoEm": 1784579559011,
-   "tiros": [
-    {
-     "h": "21:36",
-     "jogo": "Southampton x Brentford",
-     "odd": 5,
-     "unidades": 1
-    },
-    {
-     "h": "21:39",
-     "jogo": "Watford x West Ham",
-     "odd": 5.5,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1784580286611
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784575991511,
-   "premier": 1784573444517,
+   "premier": 1784580286611,
    "euro": 1784568371515,
    "super": 1784574852420
   },
@@ -184,12 +143,12 @@
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
-   "2026-07-20": 12.1
+   "2026-07-20": 21.1
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 19,
+   "n": 18,
    "start": 1
   }
  },
@@ -372,9 +331,9 @@
    "2026-07-20": 15.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Austrália",
-   "n": 13,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 86,
    "start": 1
   }
  },
