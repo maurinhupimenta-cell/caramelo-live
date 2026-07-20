@@ -133,8 +133,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "09:52",
@@ -153,11 +153,11 @@
     }
    ],
    "alvo": {
-    "h": "09:55",
-    "jogo": "Sao Paulo x Lima",
-    "odd": 3.75,
-    "unidades": 2,
-    "desde": 1784537695915
+    "h": "09:58",
+    "jogo": "Rio de Janeiro x Asuncion",
+    "odd": 4.5,
+    "unidades": 4,
+    "desde": 1784537875121
    },
    "iniciadoEm": 1784537355614,
    "tiros": [
@@ -166,6 +166,12 @@
      "jogo": "Quito x Medellin",
      "odd": 5,
      "unidades": 1
+    },
+    {
+     "h": "09:55",
+     "jogo": "Sao Paulo x Lima",
+     "odd": 3.75,
+     "unidades": 2
     }
    ]
   },
@@ -347,13 +353,19 @@
   }
  },
  "ambas": {
-  "saldo": -18.1,
-  "ciclos": 116,
+  "saldo": -25.1,
+  "ciclos": 117,
   "greens": 77,
-  "redsCiclo": 14,
+  "redsCiclo": 15,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-20T08:57:55.414Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-20T08:34:54.711Z",
     "resultado": "GREEN",
@@ -467,59 +479,17 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-19T23:04:14.700Z",
-    "resultado": "GREEN",
-    "unidades": 0.8,
-    "detalhe": "super · Belo Horizonte x Agua Branca @1.83 (tiro 1)"
    }
   ],
   "consumidas": {
    "copa": 1784534453114,
-   "euro": 1784536494610
+   "euro": 1784536494610,
+   "super": 1784537875312
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "09:49",
-     "jogo": "La Boca x Santiago",
-     "odd": 2
-    },
-    {
-     "h": "09:52",
-     "jogo": "Quito x Medellin",
-     "odd": 2.05
-    },
-    {
-     "h": "09:55",
-     "jogo": "Sao Paulo x Lima",
-     "odd": 1.86
-    }
-   ],
-   "alvo": {
-    "h": "09:52",
-    "jogo": "Quito x Medellin",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1784537495411
-   },
-   "iniciadoEm": 1784537336006,
-   "tiros": [
-    {
-     "h": "09:49",
-     "jogo": "La Boca x Santiago",
-     "odd": 2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784536494610,
-   "super": 1784533735716,
+   "super": 1784537875312,
    "premier": 1784533296517,
    "copa": 1784534453114
   },
@@ -528,13 +498,13 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": 0.5
+   "2026-07-20": -6.5
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 11,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":10",
+   "n": 9,
+   "start": 3
   }
  }
 }
