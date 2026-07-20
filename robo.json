@@ -132,7 +132,36 @@
    "super": 1784584687318,
    "copa": 1784585350910
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:21",
+     "jogo": "Leeds x Chelsea",
+     "odd": 5
+    },
+    {
+     "h": "23:24",
+     "jogo": "Watford x Everton",
+     "odd": 4.2
+    },
+    {
+     "h": "23:27",
+     "jogo": "Islington x Leicester",
+     "odd": 4.5
+    }
+   ],
+   "alvo": {
+    "h": "23:21",
+    "jogo": "Leeds x Chelsea",
+    "odd": 5,
+    "unidades": 1,
+    "desde": 1784585916314
+   },
+   "iniciadoEm": 1784585916314
+  },
   "cooldown": {
    "copa": 1784585350910,
    "premier": 1784580286611,
@@ -149,7 +178,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 17,
+   "n": 18,
    "start": 1
   }
  },
@@ -347,7 +376,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "goleada (3+)",
-   "n": 84,
+   "n": 85,
    "start": 1
   }
  },
