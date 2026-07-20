@@ -129,7 +129,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1784535373707,
    "super": 1784538055315
   },
   "ciclo": null,
@@ -287,7 +286,36 @@
    "copa": 1784536073615,
    "super": 1784536635419
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:15",
+     "jogo": "Palace x Liverpool",
+     "odd": 2.2
+    },
+    {
+     "h": "10:18",
+     "jogo": "Brentford x Leicester",
+     "odd": 2.3
+    },
+    {
+     "h": "10:21",
+     "jogo": "Aston x Southampton",
+     "odd": 2.45
+    }
+   ],
+   "alvo": {
+    "h": "10:15",
+    "jogo": "Palace x Liverpool",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1784538708214
+   },
+   "iniciadoEm": 1784538708214
+  },
   "cooldown": {
    "copa": 1784536073615,
    "premier": 1784535103814,
@@ -303,9 +331,9 @@
    "2026-07-20": 15.9
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 17,
+   "tipo": "time",
+   "chave": "Aston",
+   "n": 20,
    "start": 1
   }
  },
