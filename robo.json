@@ -132,7 +132,36 @@
    "copa": 1784556492115,
    "super": 1784557874210
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:36",
+     "jogo": "Brentford x Burnley",
+     "odd": 4.2
+    },
+    {
+     "h": "15:39",
+     "jogo": "Chelsea x Liverpool",
+     "odd": 4.33
+    },
+    {
+     "h": "15:42",
+     "jogo": "Burnley x Palace",
+     "odd": 4
+    }
+   ],
+   "alvo": {
+    "h": "15:36",
+    "jogo": "Brentford x Burnley",
+    "odd": 4.2,
+    "unidades": 1,
+    "desde": 1784557960309
+   },
+   "iniciadoEm": 1784557960309
+  },
   "cooldown": {
    "copa": 1784556492115,
    "premier": 1784554179814,
@@ -149,7 +178,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 16,
+   "n": 19,
    "start": 1
   }
  },
@@ -333,8 +362,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 58,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 46,
    "start": 1
   }
  },
