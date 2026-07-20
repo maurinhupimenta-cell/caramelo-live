@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -61.2,
-  "ciclos": 113,
+  "saldo": -68.2,
+  "ciclos": 114,
   "greens": 38,
-  "redsCiclo": 42,
+  "redsCiclo": 43,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-20T09:00:55.413Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-20T08:16:13.806Z",
     "resultado": "RED_CICLO",
@@ -120,73 +126,25 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-19T16:52:12.800Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
-   "copa": 1784535373707
+   "copa": 1784535373707,
+   "super": 1784538055315
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "09:52",
-     "jogo": "Quito x Medellin",
-     "odd": 5
-    },
-    {
-     "h": "09:55",
-     "jogo": "Sao Paulo x Lima",
-     "odd": 3.75
-    },
-    {
-     "h": "09:58",
-     "jogo": "Rio de Janeiro x Asuncion",
-     "odd": 4.5
-    }
-   ],
-   "alvo": {
-    "h": "09:58",
-    "jogo": "Rio de Janeiro x Asuncion",
-    "odd": 4.5,
-    "unidades": 4,
-    "desde": 1784537875121
-   },
-   "iniciadoEm": 1784537355614,
-   "tiros": [
-    {
-     "h": "09:52",
-     "jogo": "Quito x Medellin",
-     "odd": 5,
-     "unidades": 1
-    },
-    {
-     "h": "09:55",
-     "jogo": "Sao Paulo x Lima",
-     "odd": 3.75,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784535373707,
    "premier": 1784532222107,
    "euro": 1784522533511,
-   "super": 1784531595920
+   "super": 1784538055315
   },
   "dias": {
    "2026-07-15": -35,
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
-   "2026-07-20": 16.1
+   "2026-07-20": 9.1
   },
   "_gatilhoAtual": {
    "tipo": "placar",
@@ -353,13 +311,19 @@
   }
  },
  "ambas": {
-  "saldo": -25.1,
-  "ciclos": 117,
-  "greens": 77,
+  "saldo": -24.1,
+  "ciclos": 118,
+  "greens": 78,
   "redsCiclo": 15,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-20T09:04:34.018Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Bélgica x Curação @2.05 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T08:57:55.414Z",
     "resultado": "RED_CICLO",
@@ -473,37 +437,32 @@
     "resultado": "GREEN",
     "unidades": 0.5,
     "detalhe": "premier · Newcastle x Brighton @1.76 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-19T23:46:15.396Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
    "euro": 1784536494610,
-   "super": 1784537875312
+   "super": 1784537875312,
+   "copa": 1784538273916
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1784536494610,
    "super": 1784537875312,
    "premier": 1784533296517,
-   "copa": 1784534453114
+   "copa": 1784538273916
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": -6.5
+   "2026-07-20": -5.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":10",
-   "n": 9,
-   "start": 3
+   "tipo": "odd",
+   "chave": "1.95",
+   "n": 10,
+   "start": 2
   }
  }
 }
