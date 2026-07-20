@@ -326,13 +326,19 @@
   }
  },
  "ambas": {
-  "saldo": -13.1,
-  "ciclos": 98,
-  "greens": 62,
+  "saldo": -12.6,
+  "ciclos": 99,
+  "greens": 63,
   "redsCiclo": 11,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-20T00:01:37.696Z",
+    "resultado": "GREEN",
+    "unidades": 0.5,
+    "detalhe": "premier · Newcastle x Brighton @1.76 (tiro 2)"
+   },
    {
     "quando": "2026-07-19T23:46:15.396Z",
     "resultado": "RED_CICLO",
@@ -446,64 +452,23 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "premier · Liverpool x Newcastle @1.9 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-19T05:49:03.031Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "super · Bogota x Buenos Aires @2 (tiro 1)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "00:54",
-     "jogo": "Leicester x Islington",
-     "odd": 1.95
-    },
-    {
-     "h": "00:57",
-     "jogo": "Newcastle x Brighton",
-     "odd": 1.76
-    },
-    {
-     "h": "01:00",
-     "jogo": "Southampton x Norwich",
-     "odd": 2.05
-    }
-   ],
-   "alvo": {
-    "h": "00:57",
-    "jogo": "Newcastle x Brighton",
-    "odd": 1.76,
-    "unidades": 2,
-    "desde": 1784505413996
-   },
-   "iniciadoEm": 1784505040297,
-   "tiros": [
-    {
-     "h": "00:54",
-     "jogo": "Leicester x Islington",
-     "odd": 1.95,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "premier": 1784505697596
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784500872197,
    "super": 1784504775197,
-   "premier": 1784490954807,
+   "premier": 1784505697596,
    "copa": 1784471632896
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
-   "2026-07-19": -21.1
+   "2026-07-19": -20.6
   }
  }
 }
