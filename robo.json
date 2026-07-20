@@ -287,8 +287,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "07:47",
@@ -307,13 +307,21 @@
     }
    ],
    "alvo": {
-    "h": "07:47",
-    "jogo": "Romênia x Escócia",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1784529835914
+    "h": "07:50",
+    "jogo": "França x Sérvia",
+    "odd": 2.3,
+    "unidades": 2,
+    "desde": 1784530216610
    },
-   "iniciadoEm": 1784529835914
+   "iniciadoEm": 1784529835914,
+   "tiros": [
+    {
+     "h": "07:47",
+     "jogo": "Romênia x Escócia",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784527254316,
@@ -330,9 +338,9 @@
    "2026-07-20": -0.1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":50",
-   "n": 6,
+   "tipo": "seq",
+   "chave": "GGRR",
+   "n": 5,
    "start": 1
   }
  },
