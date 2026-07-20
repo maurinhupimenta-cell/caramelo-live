@@ -287,7 +287,36 @@
    "copa": 1784562544816,
    "premier": 1784563368016
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:23",
+     "jogo": "Albânia x Ucrânia",
+     "odd": 2.62
+    },
+    {
+     "h": "17:26",
+     "jogo": "Croácia x Hungria",
+     "odd": 2.35
+    },
+    {
+     "h": "17:29",
+     "jogo": "Suíça x França",
+     "odd": 2.02
+    }
+   ],
+   "alvo": {
+    "h": "17:23",
+    "jogo": "Albânia x Ucrânia",
+    "odd": 2.62,
+    "unidades": 1,
+    "desde": 1784564531310
+   },
+   "iniciadoEm": 1784564531310
+  },
   "cooldown": {
    "copa": 1784562544816,
    "premier": 1784563368016,
@@ -304,8 +333,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 83,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 57,
    "start": 1
   }
  },
