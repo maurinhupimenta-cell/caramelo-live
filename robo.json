@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -37.9,
-  "ciclos": 136,
-  "greens": 88,
+  "saldo": -36.7,
+  "ciclos": 137,
+  "greens": 89,
   "redsCiclo": 25,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T17:01:11.707Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Nova Zelândia x Alemanha @2.1 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T16:53:15.006Z",
     "resultado": "GREEN",
@@ -273,59 +279,17 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "premier · Palace x Brighton @2.05 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T11:01:13.514Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "copa · Argentina x Gana @2.3 (tiro 1)"
    }
   ],
   "consumidas": {
    "premier": 1784563368016,
    "euro": 1784564773720,
-   "super": 1784566394814
+   "super": 1784566394814,
+   "copa": 1784566871516
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:55",
-     "jogo": "RD Congo x Coreia do Sul",
-     "odd": 2.3
-    },
-    {
-     "h": "17:58",
-     "jogo": "Nova Zelândia x Alemanha",
-     "odd": 2.1
-    },
-    {
-     "h": "18:01",
-     "jogo": "Canadá x Brasil",
-     "odd": 2.35
-    }
-   ],
-   "alvo": {
-    "h": "17:58",
-    "jogo": "Nova Zelândia x Alemanha",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1784566692814
-   },
-   "iniciadoEm": 1784566423116,
-   "tiros": [
-    {
-     "h": "17:55",
-     "jogo": "RD Congo x Coreia do Sul",
-     "odd": 2.3,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784562544816,
+   "copa": 1784566871516,
    "premier": 1784563368016,
    "euro": 1784564773720,
    "super": 1784566394814
@@ -336,12 +300,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 15
+   "2026-07-20": 16.2
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 57,
+   "chave": "goleada (3+)",
+   "n": 67,
    "start": 1
   }
  },
