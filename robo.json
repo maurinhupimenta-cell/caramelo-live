@@ -129,10 +129,38 @@
    }
   ],
   "consumidas": {
-   "premier": 1784527712320,
    "copa": 1784530695008
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:10",
+     "jogo": "Penarol x Belo Horizonte",
+     "odd": 4.33
+    },
+    {
+     "h": "08:13",
+     "jogo": "Itaquera x La Boca",
+     "odd": 5
+    },
+    {
+     "h": "08:16",
+     "jogo": "Bogota x Porto Alegre",
+     "odd": 7
+    }
+   ],
+   "alvo": {
+    "h": "08:10",
+    "jogo": "Penarol x Belo Horizonte",
+    "odd": 4.33,
+    "unidades": 1,
+    "desde": 1784531237417
+   },
+   "iniciadoEm": 1784531237417
+  },
   "cooldown": {
    "copa": 1784530695008,
    "premier": 1784527712320,
@@ -149,7 +177,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 6,
+   "n": 9,
    "start": 1
   }
  },
@@ -527,7 +555,7 @@
    "tipo": "coluna",
    "chave": ":14",
    "n": 8,
-   "start": 2
+   "start": 1
   }
  }
 }
