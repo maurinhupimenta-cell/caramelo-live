@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -59,
-  "ciclos": 133,
-  "greens": 48,
+  "saldo": -54.7,
+  "ciclos": 134,
+  "greens": 49,
   "redsCiclo": 52,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-20T22:09:11.011Z",
+    "resultado": "GREEN",
+    "unidades": 4.3,
+    "detalhe": "copa · Suíça x Coreia do Sul @5.25 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T21:58:07.510Z",
     "resultado": "GREEN",
@@ -120,49 +126,15 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-20T09:00:55.413Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
-   "super": 1784584687318
+   "super": 1784584687318,
+   "copa": 1784585350910
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:04",
-     "jogo": "Suíça x Coreia do Sul",
-     "odd": 5.25
-    },
-    {
-     "h": "23:07",
-     "jogo": "Arábia Saudita x Tunísia",
-     "odd": 5
-    },
-    {
-     "h": "23:10",
-     "jogo": "Paraguai x Turquia",
-     "odd": 5
-    }
-   ],
-   "alvo": {
-    "h": "23:04",
-    "jogo": "Suíça x Coreia do Sul",
-    "odd": 5.25,
-    "unidades": 1,
-    "desde": 1784584933207
-   },
-   "iniciadoEm": 1784584933207
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784575991511,
+   "copa": 1784585350910,
    "premier": 1784580286611,
    "euro": 1784581151719,
    "super": 1784584687318
@@ -172,12 +144,12 @@
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
-   "2026-07-20": 18.3
+   "2026-07-20": 22.6
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 16,
+   "n": 17,
    "start": 1
   }
  },
