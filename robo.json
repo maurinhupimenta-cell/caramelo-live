@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -82.2,
-  "ciclos": 116,
+  "saldo": -89.2,
+  "ciclos": 117,
   "greens": 38,
-  "redsCiclo": 45,
+  "redsCiclo": 46,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-20T10:58:54.011Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-20T10:22:14.812Z",
     "resultado": "RED_CICLO",
@@ -120,65 +126,46 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-19T18:25:46.104Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
-   "copa": 1784542934710
+   "copa": 1784542934710,
+   "euro": 1784545133910
   },
   "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "11:50",
-     "jogo": "Geórgia x Sérvia",
-     "odd": 5.5
-    },
-    {
-     "h": "11:53",
-     "jogo": "Escócia x Itália",
+     "h": "12:06",
+     "jogo": "Islington x Leicester",
      "odd": 4.5
     },
     {
-     "h": "11:56",
-     "jogo": "Turquia x Dinamarca",
-     "odd": 5.5
+     "h": "12:09",
+     "jogo": "City x Leeds",
+     "odd": 4.75
+    },
+    {
+     "h": "12:12",
+     "jogo": "Palace x Newcastle",
+     "odd": 3.8
     }
    ],
    "alvo": {
-    "h": "11:56",
-    "jogo": "Turquia x Dinamarca",
-    "odd": 5.5,
-    "unidades": 4,
-    "desde": 1784544953516
+    "h": "12:06",
+    "jogo": "Islington x Leicester",
+    "odd": 4.5,
+    "unidades": 1,
+    "desde": 1784545135413
    },
-   "iniciadoEm": 1784544415013,
-   "tiros": [
-    {
-     "h": "11:50",
-     "jogo": "Geórgia x Sérvia",
-     "odd": 5.5,
-     "unidades": 1
-    },
-    {
-     "h": "11:53",
-     "jogo": "Escócia x Itália",
-     "odd": 4.5,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1784545135413
   },
   "cooldown": {
    "copa": 1784542934710,
    "premier": 1784540856514,
-   "euro": 1784522533511,
+   "euro": 1784545133910,
    "super": 1784538055315
   },
   "dias": {
@@ -186,13 +173,13 @@
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
-   "2026-07-20": -4.9
+   "2026-07-20": -11.9
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "4.75",
    "n": 6,
-   "start": 1
+   "start": 3
   }
  },
  "o25": {
@@ -374,8 +361,8 @@
    "2026-07-20": 8.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Egito",
+   "tipo": "placar",
+   "chave": "empate 2-2",
    "n": 11,
    "start": 1
   }
