@@ -310,13 +310,19 @@
   }
  },
  "ambas": {
-  "saldo": -20.5,
-  "ciclos": 128,
-  "greens": 87,
+  "saldo": -19.9,
+  "ciclos": 129,
+  "greens": 88,
   "redsCiclo": 16,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-20T13:45:13.514Z",
+    "resultado": "GREEN",
+    "unidades": 0.6,
+    "detalhe": "super · Belo Horizonte x Buenos Aires @1.8 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T13:01:54.609Z",
     "resultado": "GREEN",
@@ -430,59 +436,17 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "premier · Islington x Watford @2.05 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T06:15:57.107Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "super · Quito x La Boca @2.05 (tiro 3)"
    }
   ],
   "consumidas": {
    "premier": 1784552020311,
-   "euro": 1784552514416
+   "euro": 1784552514416,
+   "super": 1784555113414
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "14:37",
-     "jogo": "Itaquera x Montevideo",
-     "odd": 1.98
-    },
-    {
-     "h": "14:40",
-     "jogo": "Belo Horizonte x Buenos Aires",
-     "odd": 1.8
-    },
-    {
-     "h": "14:43",
-     "jogo": "Santos x Santiago",
-     "odd": 1.98
-    }
-   ],
-   "alvo": {
-    "h": "14:40",
-    "jogo": "Belo Horizonte x Buenos Aires",
-    "odd": 1.8,
-    "unidades": 2,
-    "desde": 1784554932915
-   },
-   "iniciadoEm": 1784554517419,
-   "tiros": [
-    {
-     "h": "14:37",
-     "jogo": "Itaquera x Montevideo",
-     "odd": 1.98,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784552514416,
-   "super": 1784550695912,
+   "super": 1784555113414,
    "premier": 1784552020311,
    "copa": 1784551193616
   },
@@ -491,12 +455,12 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": -1.9
+   "2026-07-20": -1.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRR",
-   "n": 27,
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 31,
    "start": 1
   }
  }
