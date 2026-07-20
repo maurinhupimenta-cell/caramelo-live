@@ -188,13 +188,19 @@
   }
  },
  "o25": {
-  "saldo": -45.1,
-  "ciclos": 132,
-  "greens": 84,
+  "saldo": -43.8,
+  "ciclos": 133,
+  "greens": 85,
   "redsCiclo": 25,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T15:49:05.014Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "copa · Países Baixos x Brasil @2.25 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T15:40:07.711Z",
     "resultado": "RED_CICLO",
@@ -308,51 +314,16 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "premier · City x Leicester @2.15 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T09:51:54.208Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "copa · Irã x Espanha @2.4 (tiro 2)"
    }
   ],
   "consumidas": {
-   "premier": 1784559036715,
    "euro": 1784560906614,
-   "super": 1784562007608
+   "super": 1784562007608,
+   "copa": 1784562544816
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:46",
-     "jogo": "Países Baixos x Brasil",
-     "odd": 2.25
-    },
-    {
-     "h": "16:49",
-     "jogo": "Paraguai x Panamá",
-     "odd": 2.5
-    },
-    {
-     "h": "16:52",
-     "jogo": "Croácia x Alemanha",
-     "odd": 2.25
-    }
-   ],
-   "alvo": {
-    "h": "16:46",
-    "jogo": "Países Baixos x Brasil",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1784562165513
-   },
-   "iniciadoEm": 1784562165513
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784558053318,
+   "copa": 1784562544816,
    "premier": 1784559036715,
    "euro": 1784560906614,
    "super": 1784562007608
@@ -363,13 +334,13 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 7.8
+   "2026-07-20": 9.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Austrália",
-   "n": 11,
-   "start": 2
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 51,
+   "start": 1
   }
  },
  "ambas": {
