@@ -290,8 +290,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "23:52",
@@ -310,13 +310,21 @@
     }
    ],
    "alvo": {
-    "h": "23:52",
-    "jogo": "Avellaneda x Porto Alegre",
-    "odd": 2.7,
-    "unidades": 1,
-    "desde": 1784587871612
+    "h": "23:55",
+    "jogo": "Guayaquil x Santos",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1784588087215
    },
-   "iniciadoEm": 1784587871612
+   "iniciadoEm": 1784587871612,
+   "tiros": [
+    {
+     "h": "23:52",
+     "jogo": "Avellaneda x Porto Alegre",
+     "odd": 2.7,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784584933316,
@@ -334,8 +342,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 66,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 58,
    "start": 1
   }
  },
@@ -513,9 +521,9 @@
    "2026-07-20": 8.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRGG",
-   "n": 15,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 67,
    "start": 1
   }
  }
