@@ -286,7 +286,36 @@
    "super": 1784536635419,
    "premier": 1784539057915
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:29",
+     "jogo": "Países Baixos x Hungria",
+     "odd": 2.2
+    },
+    {
+     "h": "10:32",
+     "jogo": "Dinamarca x Inglaterra",
+     "odd": 2.2
+    },
+    {
+     "h": "10:35",
+     "jogo": "Ucrânia x Geórgia",
+     "odd": 2.4
+    }
+   ],
+   "alvo": {
+    "h": "10:29",
+    "jogo": "Países Baixos x Hungria",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1784539554809
+   },
+   "iniciadoEm": 1784539554809
+  },
   "cooldown": {
    "copa": 1784536073615,
    "premier": 1784539057915,
@@ -303,8 +332,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 52,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 26,
    "start": 1
   }
  },
