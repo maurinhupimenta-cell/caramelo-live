@@ -287,7 +287,36 @@
    "copa": 1784541114020,
    "premier": 1784543017208
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:41",
+     "jogo": "Turquia x Países Baixos",
+     "odd": 2.25
+    },
+    {
+     "h": "11:44",
+     "jogo": "Espanha x Eslovênia",
+     "odd": 2.45
+    },
+    {
+     "h": "11:47",
+     "jogo": "Romênia x Croácia",
+     "odd": 2.15
+    }
+   ],
+   "alvo": {
+    "h": "11:41",
+    "jogo": "Turquia x Países Baixos",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1784543894608
+   },
+   "iniciadoEm": 1784543894608
+  },
   "cooldown": {
    "copa": 1784541114020,
    "premier": 1784543017208,
@@ -304,8 +333,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 55,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 30,
    "start": 1
   }
  },
