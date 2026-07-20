@@ -131,7 +131,36 @@
   "consumidas": {
    "premier": 1784527712320
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:55",
+     "jogo": "Japão x Irã",
+     "odd": 6
+    },
+    {
+     "h": "07:58",
+     "jogo": "Áustria x Escócia",
+     "odd": 5.25
+    },
+    {
+     "h": "08:01",
+     "jogo": "Jordânia x Senegal",
+     "odd": 4.75
+    }
+   ],
+   "alvo": {
+    "h": "07:55",
+    "jogo": "Japão x Irã",
+    "odd": 6,
+    "unidades": 1,
+    "desde": 1784530316313
+   },
+   "iniciadoEm": 1784530316313
+  },
   "cooldown": {
    "copa": 1784522115668,
    "premier": 1784527712320,
@@ -146,8 +175,8 @@
    "2026-07-20": 21.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":03",
+   "tipo": "placar",
+   "chave": "empate 2-2",
    "n": 6,
    "start": 1
   }
@@ -345,13 +374,19 @@
   }
  },
  "ambas": {
-  "saldo": -24.8,
-  "ciclos": 110,
-  "greens": 71,
+  "saldo": -23.5,
+  "ciclos": 111,
+  "greens": 72,
   "redsCiclo": 14,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-20T06:51:56.611Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "copa · Escócia x Países Baixos @2.15 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T06:26:37.707Z",
     "resultado": "GREEN",
@@ -465,75 +500,33 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-19T14:46:34.398Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "super · Asuncion x Agua Branca @1.93 (tiro 2)"
    }
   ],
   "consumidas": {
    "euro": 1784526953706,
    "super": 1784528156912,
-   "premier": 1784528797515
+   "premier": 1784528797515,
+   "copa": 1784530316507
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "07:46",
-     "jogo": "Suécia x Inglaterra",
-     "odd": 2.1
-    },
-    {
-     "h": "07:49",
-     "jogo": "Escócia x Países Baixos",
-     "odd": 2.15
-    },
-    {
-     "h": "07:52",
-     "jogo": "Nova Zelândia x Espanha",
-     "odd": 1.9
-    }
-   ],
-   "alvo": {
-    "h": "07:49",
-    "jogo": "Escócia x Países Baixos",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1784530133713
-   },
-   "iniciadoEm": 1784529955711,
-   "tiros": [
-    {
-     "h": "07:46",
-     "jogo": "Suécia x Inglaterra",
-     "odd": 2.1,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784526953706,
    "super": 1784528156912,
    "premier": 1784528797515,
-   "copa": 1784526353806
+   "copa": 1784530316507
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": -6.2
+   "2026-07-20": -4.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.05",
-   "n": 8,
-   "start": 3
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 6,
+   "start": 1
   }
  }
 }
