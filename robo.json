@@ -286,7 +286,36 @@
    "euro": 1784535775021,
    "copa": 1784536073615
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:28",
+     "jogo": "Itaquera x Guayaquil",
+     "odd": 2.2
+    },
+    {
+     "h": "09:31",
+     "jogo": "Agua Branca x Medellin",
+     "odd": 2.3
+    },
+    {
+     "h": "09:34",
+     "jogo": "Asuncion x Porto Alegre",
+     "odd": 2.62
+    }
+   ],
+   "alvo": {
+    "h": "09:28",
+    "jogo": "Itaquera x Guayaquil",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1784536074615
+   },
+   "iniciadoEm": 1784536074615
+  },
   "cooldown": {
    "copa": 1784536073615,
    "premier": 1784535103814,
@@ -444,8 +473,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "09:26",
@@ -464,13 +493,21 @@
     }
    ],
    "alvo": {
-    "h": "09:26",
-    "jogo": "Turquia x Alemanha",
+    "h": "09:29",
+    "jogo": "Geórgia x Escócia",
     "odd": 2,
-    "unidades": 1,
-    "desde": 1784535434914
+    "unidades": 2,
+    "desde": 1784536134410
    },
-   "iniciadoEm": 1784535434914
+   "iniciadoEm": 1784535434914,
+   "tiros": [
+    {
+     "h": "09:26",
+     "jogo": "Turquia x Alemanha",
+     "odd": 2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784531834118,
@@ -486,10 +523,10 @@
    "2026-07-20": -0.7
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 26,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":41",
+   "n": 9,
+   "start": 3
   }
  }
 }
