@@ -282,12 +282,40 @@
    }
   ],
   "consumidas": {
-   "super": 1784575514213,
    "copa": 1784575991709,
    "premier": 1784577257808,
    "euro": 1784577791208
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:28",
+     "jogo": "Guayaquil x Penarol",
+     "odd": 2.35
+    },
+    {
+     "h": "21:31",
+     "jogo": "Bogota x Buenos Aires",
+     "odd": 2.3
+    },
+    {
+     "h": "21:34",
+     "jogo": "Porto Alegre x Penarol",
+     "odd": 2.87
+    }
+   ],
+   "alvo": {
+    "h": "21:28",
+    "jogo": "Guayaquil x Penarol",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1784579208815
+   },
+   "iniciadoEm": 1784579208815
+  },
   "cooldown": {
    "copa": 1784575991709,
    "premier": 1784577257808,
@@ -303,9 +331,9 @@
    "2026-07-20": 22.3
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 81,
+   "tipo": "seq",
+   "chave": "RRRRR",
+   "n": 15,
    "start": 1
   }
  },
@@ -486,10 +514,10 @@
    "2026-07-20": 2.5
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 53,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":32",
+   "n": 19,
+   "start": 2
   }
  }
 }
