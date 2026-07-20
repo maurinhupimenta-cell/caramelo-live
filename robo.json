@@ -319,12 +319,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1784577257808,
    "euro": 1784577791208,
    "super": 1784580133812,
    "copa": 1784580731516
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:57",
+     "jogo": "Leicester x Islington",
+     "odd": 2.25
+    },
+    {
+     "h": "22:00",
+     "jogo": "Burnley x Brentford",
+     "odd": 2.2
+    },
+    {
+     "h": "22:03",
+     "jogo": "West Ham x Chelsea",
+     "odd": 2.45
+    }
+   ],
+   "alvo": {
+    "h": "21:57",
+    "jogo": "Leicester x Islington",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1784580911208
+   },
+   "iniciadoEm": 1784580911208
+  },
   "cooldown": {
    "copa": 1784580731516,
    "premier": 1784577257808,
@@ -340,9 +368,9 @@
    "2026-07-20": 17.3
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 81,
+   "tipo": "seq",
+   "chave": "RGGRR",
+   "n": 8,
    "start": 1
   }
  },
