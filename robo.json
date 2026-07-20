@@ -287,8 +287,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "10:29",
@@ -307,11 +307,11 @@
     }
    ],
    "alvo": {
-    "h": "10:32",
-    "jogo": "Dinamarca x Inglaterra",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1784539935009
+    "h": "10:35",
+    "jogo": "Ucrânia x Geórgia",
+    "odd": 2.4,
+    "unidades": 4,
+    "desde": 1784540114509
    },
    "iniciadoEm": 1784539554809,
    "tiros": [
@@ -320,6 +320,12 @@
      "jogo": "Países Baixos x Hungria",
      "odd": 2.2,
      "unidades": 1
+    },
+    {
+     "h": "10:32",
+     "jogo": "Dinamarca x Inglaterra",
+     "odd": 2.2,
+     "unidades": 2
     }
    ]
   },
@@ -338,9 +344,9 @@
    "2026-07-20": 17.1
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 40,
+   "tipo": "seq",
+   "chave": "GGRR",
+   "n": 7,
    "start": 1
   }
  },
@@ -477,7 +483,36 @@
    "super": 1784537875312,
    "copa": 1784538273916
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:35",
+     "jogo": "Ucrânia x Geórgia",
+     "odd": 2.07
+    },
+    {
+     "h": "10:38",
+     "jogo": "Dinamarca x Hungria",
+     "odd": 2.15
+    },
+    {
+     "h": "10:41",
+     "jogo": "Albânia x Croácia",
+     "odd": 2.15
+    }
+   ],
+   "alvo": {
+    "h": "10:35",
+    "jogo": "Ucrânia x Geórgia",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1784540094708
+   },
+   "iniciadoEm": 1784540094708
+  },
   "cooldown": {
    "euro": 1784536494610,
    "super": 1784537875312,
@@ -492,10 +527,10 @@
    "2026-07-20": -5.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.95",
-   "n": 10,
-   "start": 2
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 32,
+   "start": 1
   }
  }
 }
