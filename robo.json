@@ -361,19 +361,25 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRG",
-   "n": 7,
+   "chave": "RGGR",
+   "n": 6,
    "start": 1
   }
  },
  "ambas": {
-  "saldo": -17,
-  "ciclos": 103,
-  "greens": 66,
+  "saldo": -15.9,
+  "ciclos": 104,
+  "greens": 67,
   "redsCiclo": 12,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-20T04:43:38.315Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Itália x Hungria @2.07 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T04:35:16.168Z",
     "resultado": "GREEN",
@@ -487,57 +493,15 @@
     "resultado": "GREEN",
     "unidades": 0.7,
     "detalhe": "copa · México x Uruguai @1.93 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-19T09:39:35.801Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "super · Santiago x Bogota @2 (tiro 2)"
    }
   ],
   "consumidas": {
-   "copa": 1784522115971
+   "copa": 1784522115971,
+   "euro": 1784522618214
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "05:38",
-     "jogo": "Suíça x Dinamarca",
-     "odd": 1.98
-    },
-    {
-     "h": "05:41",
-     "jogo": "Itália x Hungria",
-     "odd": 2.07
-    },
-    {
-     "h": "05:44",
-     "jogo": "Portugal x Espanha",
-     "odd": 1.85
-    }
-   ],
-   "alvo": {
-    "h": "05:41",
-    "jogo": "Itália x Hungria",
-    "odd": 2.07,
-    "unidades": 2,
-    "desde": 1784522533807
-   },
-   "iniciadoEm": 1784522176258,
-   "tiros": [
-    {
-     "h": "05:38",
-     "jogo": "Suíça x Dinamarca",
-     "odd": 1.98,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784507895404,
+   "euro": 1784522618214,
    "super": 1784518260296,
    "premier": 1784515478096,
    "copa": 1784522115971
@@ -547,13 +511,13 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": 1.6
+   "2026-07-20": 2.7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Suíça",
-   "n": 8,
-   "start": 3
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 14,
+   "start": 1
   }
  }
 }
