@@ -151,13 +151,19 @@
   }
  },
  "o25": {
-  "saldo": -38.1,
-  "ciclos": 131,
+  "saldo": -45.1,
+  "ciclos": 132,
   "greens": 84,
-  "redsCiclo": 24,
+  "redsCiclo": 25,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T15:40:07.711Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-20T15:21:46.714Z",
     "resultado": "GREEN",
@@ -271,67 +277,19 @@
     "resultado": "GREEN",
     "unidades": 1.8,
     "detalhe": "copa · Irã x Espanha @2.4 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T09:43:15.817Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "super · Sao Paulo x La Plata @2.35 (tiro 1)"
    }
   ],
   "consumidas": {
    "premier": 1784559036715,
-   "euro": 1784560906614
+   "euro": 1784560906614,
+   "super": 1784562007608
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "16:31",
-     "jogo": "Buenos Aires x Santos",
-     "odd": 2.2
-    },
-    {
-     "h": "16:34",
-     "jogo": "Lima x Penarol",
-     "odd": 2.3
-    },
-    {
-     "h": "16:37",
-     "jogo": "Asuncion x Rio de Janeiro",
-     "odd": 2.25
-    }
-   ],
-   "alvo": {
-    "h": "16:37",
-    "jogo": "Asuncion x Rio de Janeiro",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1784561806413
-   },
-   "iniciadoEm": 1784561306511,
-   "tiros": [
-    {
-     "h": "16:31",
-     "jogo": "Buenos Aires x Santos",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "16:34",
-     "jogo": "Lima x Penarol",
-     "odd": 2.3,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784558053318,
    "premier": 1784559036715,
    "euro": 1784560906614,
-   "super": 1784557575909
+   "super": 1784562007608
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -339,7 +297,7 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 14.8
+   "2026-07-20": 7.8
   },
   "_gatilhoAtual": {
    "tipo": "placar",
