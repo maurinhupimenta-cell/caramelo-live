@@ -445,8 +445,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:31",
@@ -465,13 +465,21 @@
     }
    ],
    "alvo": {
-    "h": "17:31",
-    "jogo": "Austrália x EUA",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1784564892920
+    "h": "17:34",
+    "jogo": "Brasil x Equador",
+    "odd": 1.9,
+    "unidades": 2,
+    "desde": 1784565256208
    },
-   "iniciadoEm": 1784564892920
+   "iniciadoEm": 1784564892920,
+   "tiros": [
+    {
+     "h": "17:31",
+     "jogo": "Austrália x EUA",
+     "odd": 1.93,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784561545319,
@@ -487,9 +495,9 @@
    "2026-07-20": -1.6
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 54,
+   "tipo": "seq",
+   "chave": "RGGR",
+   "n": 21,
    "start": 1
   }
  }
