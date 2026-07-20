@@ -288,7 +288,36 @@
    "premier": 1784585916508,
    "euro": 1784586240511
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:52",
+     "jogo": "Avellaneda x Porto Alegre",
+     "odd": 2.7
+    },
+    {
+     "h": "23:55",
+     "jogo": "Guayaquil x Santos",
+     "odd": 2.25
+    },
+    {
+     "h": "00:01",
+     "jogo": "Penarol x Buenos Aires",
+     "odd": 2.25
+    }
+   ],
+   "alvo": {
+    "h": "23:52",
+    "jogo": "Avellaneda x Porto Alegre",
+    "odd": 2.7,
+    "unidades": 1,
+    "desde": 1784587871612
+   },
+   "iniciadoEm": 1784587871612
+  },
   "cooldown": {
    "copa": 1784584933316,
    "premier": 1784585916508,
@@ -305,8 +334,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 67,
+   "chave": "goleada (3+)",
+   "n": 66,
    "start": 1
   }
  },
