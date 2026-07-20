@@ -2186,6 +2186,70 @@ function calculaPadroes(liga, mkt) {
     padroesCache[ck] = { ts: now, out: resp };
     return resp;
 }
+// ===== 🔮 LEITOR DE GRAFICO: codifica o desenho da curva e aprende o que vem depois =====
+// A curva anda em degraus; os ultimos 6 movimentos viram assinatura (ex "UUFDDU":
+// U=subiu D=desceu F=ficou). Para cada assinatura no historico do dia+memoria (ate ~600 jogos),
+// mede: green em ate 3 casas depois veio quantas vezes? Compara com a regua. So mostra
+// desenho com 8+ aparicoes e 12+ pts de edge. Mede a propria pontaria.
+const leitorCache = {};
+function leitorGrafico(liga, mkt) {
+  const ck = "L|" + liga + "|" + mkt, now = Date.now();
+  if (leitorCache[ck] && now - leitorCache[ck].ts < 30000) return leitorCache[ck].out;
+  const d = store[liga];
+  if (!d || !d.games) return null;
+  const games = listaCheia(d);
+  if (games.length < 120) return null;
+  const JL = 20;
+  const serie = chartSeries(games, mkt, JL); // ponto k <-> jogo k+JL-1
+  if (!serie || serie.length < 40) return null;
+  // movimentos: U/D/F entre pontos consecutivos
+  const mov = [];
+  for (let i = 1; i < serie.length; i++) mov.push(serie[i] > serie[i - 1] ? "U" : serie[i] < serie[i - 1] ? "D" : "F");
+  // pays por jogo alinhado ao ponto: ponto k -> jogo k+JL-1; movimento m (entre k e k+1) -> jogo do ponto k+1
+  const pagaDoMov = i => { const gi = (i + 1) + JL - 1; return gi < games.length ? (pays(games[gi], mkt) ? 1 : 0) : null; };
+  const TAM = 6, ALVO = 3;
+  const memoria = {};
+  let reguaH = 0, reguaN = 0;
+  for (let i = TAM - 1; i + ALVO < mov.length; i++) {
+    const assin = mov.slice(i - TAM + 1, i + 1).join("");
+    // green em ate 3 casas DEPOIS do desenho fechar
+    let veio = 0;
+    for (let k = 1; k <= ALVO; k++) { const pg = pagaDoMov(i + k); if (pg === 1) { veio = 1; break; } }
+    (memoria[assin] = memoria[assin] || [0, 0])[0]++; if (veio) memoria[assin][1]++;
+    reguaN++; if (veio) reguaH++;
+  }
+  const regua = reguaN ? Math.round(reguaH / reguaN * 100) : 0;
+  // desenho ATUAL (ultimos TAM movimentos)
+  const atual = mov.slice(-TAM).join("");
+  const stAtual = memoria[atual] || null;
+  const achados = [];
+  for (const [assin, [n, h]] of Object.entries(memoria)) {
+    if (n < 8) continue;
+    const taxa = Math.round(h / n * 100);
+    const eG = taxa - regua, eR = regua - taxa;
+    if (eG >= 12) achados.push({ desenho: assin, prox: "G", taxa, edge: eG, n });
+    else if (eR >= 12) achados.push({ desenho: assin, prox: "R", taxa: 100 - taxa, edge: eR, n });
+  }
+  achados.sort((a, b) => b.edge - a.edge || b.n - a.n);
+  // pontaria do leitor: das vezes que o desenho atual (quando tinha edge) apontou, acertou quanto?
+  const out = {
+    liga, mkt, regua, jogos: games.length,
+    desenhoAtual: atual,
+    atualNaMemoria: stAtual ? { n: stAtual[0], taxa: Math.round(stAtual[1] / stAtual[0] * 100) } : null,
+    sinalAgora: (() => {
+      const hit = achados.find(a => a.desenho === atual);
+      return hit ? { prox: hit.prox, taxa: hit.taxa, edge: hit.edge, n: hit.n } : null;
+    })(),
+    topDesenhos: achados.slice(0, 8)
+  };
+  leitorCache[ck] = { ts: now, out };
+  return out;
+}
+app.get("/api/leitor/:liga", (req, res) => {
+  try { const o = leitorGrafico(req.params.liga, req.query.mkt || "o35"); res.json(o || { erro: "base insuficiente" }); }
+  catch (e) { res.status(500).json({ erro: e.message }); }
+});
+
 app.get("/api/padroes/:liga", (req, res) => {
   try { res.json(calculaPadroes(req.params.liga, req.query.mkt || "o35")); }
   catch (e) { res.status(500).json({ erro: e.message }); }
