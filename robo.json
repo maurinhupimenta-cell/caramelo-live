@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -56.2,
-  "ciclos": 131,
+  "saldo": -63.2,
+  "ciclos": 132,
   "greens": 47,
-  "redsCiclo": 51,
+  "redsCiclo": 52,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-20T20:59:11.906Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-20T20:44:46.909Z",
     "resultado": "GREEN",
@@ -120,65 +126,17 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-20T07:23:42.209Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
-   "premier": 1784580286611
+   "premier": 1784580286611,
+   "euro": 1784581151719
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "21:50",
-     "jogo": "Eslováquia x Albânia",
-     "odd": 5.5
-    },
-    {
-     "h": "21:53",
-     "jogo": "Sérvia x República Tcheca",
-     "odd": 6
-    },
-    {
-     "h": "21:56",
-     "jogo": "Espanha x Geórgia",
-     "odd": 4.33
-    }
-   ],
-   "alvo": {
-    "h": "21:56",
-    "jogo": "Espanha x Geórgia",
-    "odd": 4.33,
-    "unidades": 4,
-    "desde": 1784581033612
-   },
-   "iniciadoEm": 1784580433713,
-   "tiros": [
-    {
-     "h": "21:50",
-     "jogo": "Eslováquia x Albânia",
-     "odd": 5.5,
-     "unidades": 1
-    },
-    {
-     "h": "21:53",
-     "jogo": "Sérvia x República Tcheca",
-     "odd": 6,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784575991511,
    "premier": 1784580286611,
-   "euro": 1784568371515,
+   "euro": 1784581151719,
    "super": 1784574852420
   },
   "dias": {
@@ -186,7 +144,7 @@
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
-   "2026-07-20": 21.1
+   "2026-07-20": 14.1
   },
   "_gatilhoAtual": {
    "tipo": "placar",
