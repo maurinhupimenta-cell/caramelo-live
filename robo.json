@@ -287,7 +287,36 @@
    "premier": 1784563368016,
    "euro": 1784564773720
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:43",
+     "jogo": "Avellaneda x Guayaquil",
+     "odd": 2.2
+    },
+    {
+     "h": "17:46",
+     "jogo": "La Boca x Porto Alegre",
+     "odd": 2.8
+    },
+    {
+     "h": "17:49",
+     "jogo": "La Plata x Agua Branca",
+     "odd": 2.4
+    }
+   ],
+   "alvo": {
+    "h": "17:43",
+    "jogo": "Avellaneda x Guayaquil",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1784565731417
+   },
+   "iniciadoEm": 1784565731417
+  },
   "cooldown": {
    "copa": 1784562544816,
    "premier": 1784563368016,
@@ -303,9 +332,9 @@
    "2026-07-20": 12.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGRG",
-   "n": 5,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 69,
    "start": 1
   }
  },
@@ -496,7 +525,7 @@
   "_gatilhoAtual": {
    "tipo": "seq",
    "chave": "RGGR",
-   "n": 21,
+   "n": 22,
    "start": 1
   }
  }
