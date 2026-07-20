@@ -346,13 +346,19 @@
   }
  },
  "ambas": {
-  "saldo": -26.4,
-  "ciclos": 140,
-  "greens": 96,
+  "saldo": -25.5,
+  "ciclos": 141,
+  "greens": 97,
   "redsCiclo": 18,
   "aborts": 0,
   "descartes": 26,
   "historico": [
+   {
+    "quando": "2026-07-20T16:50:38.612Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Norwich x Islington @1.93 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T16:47:12.710Z",
     "resultado": "RED_CICLO",
@@ -466,53 +472,19 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-20T10:46:55.311Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "euro · Espanha x Eslovênia @2.1 (tiro 1)"
    }
   ],
   "consumidas": {
    "super": 1784563485708,
    "copa": 1784565491207,
-   "euro": 1784566032521
+   "euro": 1784566032521,
+   "premier": 1784566238507
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:48",
-     "jogo": "Norwich x Islington",
-     "odd": 1.93
-    },
-    {
-     "h": "17:51",
-     "jogo": "City x Leicester",
-     "odd": 1.95
-    },
-    {
-     "h": "17:54",
-     "jogo": "Tottenham x Watford",
-     "odd": 2.15
-    }
-   ],
-   "alvo": {
-    "h": "17:48",
-    "jogo": "Norwich x Islington",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1784566034207
-   },
-   "iniciadoEm": 1784566034207
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784566032521,
    "super": 1784563485708,
-   "premier": 1784561751116,
+   "premier": 1784566238507,
    "copa": 1784565491207
   },
   "dias": {
@@ -520,12 +492,12 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": -7.8
+   "2026-07-20": -6.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":51",
-   "n": 17,
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 38,
    "start": 1
   }
  }
