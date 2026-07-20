@@ -443,7 +443,44 @@
    "super": 1784580131813,
    "premier": 1784580467411
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "22:29",
+     "jogo": "Espanha x Croácia",
+     "odd": 1.86
+    },
+    {
+     "h": "22:32",
+     "jogo": "Polônia x Países Baixos",
+     "odd": 1.95
+    },
+    {
+     "h": "22:35",
+     "jogo": "Dinamarca x Geórgia",
+     "odd": 2.2
+    }
+   ],
+   "alvo": {
+    "h": "22:32",
+    "jogo": "Polônia x Países Baixos",
+    "odd": 1.95,
+    "unidades": 2,
+    "desde": 1784583194320
+   },
+   "iniciadoEm": 1784582832717,
+   "tiros": [
+    {
+     "h": "22:29",
+     "jogo": "Espanha x Croácia",
+     "odd": 1.86,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1784579231121,
    "super": 1784580131813,
@@ -458,10 +495,10 @@
    "2026-07-20": 5.7
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 19,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.8",
+   "n": 10,
+   "start": 2
   }
  }
 }
