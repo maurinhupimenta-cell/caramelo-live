@@ -312,13 +312,19 @@
   }
  },
  "ambas": {
-  "saldo": -25,
-  "ciclos": 132,
-  "greens": 90,
+  "saldo": -24.4,
+  "ciclos": 133,
+  "greens": 91,
   "redsCiclo": 17,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-20T14:54:12.415Z",
+    "resultado": "GREEN",
+    "unidades": 0.6,
+    "detalhe": "super · Sao Paulo x Belo Horizonte @1.8 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T14:12:14.110Z",
     "resultado": "RED_CICLO",
@@ -432,60 +438,18 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "super · Quito x Penarol @2.1 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T07:41:36.713Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "premier · Chelsea x Palace @1.98 (tiro 3)"
    }
   ],
   "consumidas": {
    "copa": 1784555713107,
    "premier": 1784556192208,
-   "euro": 1784556733916
+   "euro": 1784556733916,
+   "super": 1784559252312
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "15:46",
-     "jogo": "Santos x Rio de Janeiro",
-     "odd": 2
-    },
-    {
-     "h": "15:49",
-     "jogo": "Sao Paulo x Belo Horizonte",
-     "odd": 1.8
-    },
-    {
-     "h": "15:52",
-     "jogo": "Guayaquil x Agua Branca",
-     "odd": 1.85
-    }
-   ],
-   "alvo": {
-    "h": "15:49",
-    "jogo": "Sao Paulo x Belo Horizonte",
-    "odd": 1.8,
-    "unidades": 2,
-    "desde": 1784558951709
-   },
-   "iniciadoEm": 1784558771816,
-   "tiros": [
-    {
-     "h": "15:46",
-     "jogo": "Santos x Rio de Janeiro",
-     "odd": 2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784556733916,
-   "super": 1784555113414,
+   "super": 1784559252312,
    "premier": 1784556192208,
    "copa": 1784555713107
   },
@@ -494,7 +458,7 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": -6.4
+   "2026-07-20": -5.8
   },
   "_gatilhoAtual": {
    "tipo": "placar",
