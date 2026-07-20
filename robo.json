@@ -325,8 +325,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "22:55",
@@ -345,13 +345,21 @@
     }
    ],
    "alvo": {
-    "h": "22:55",
-    "jogo": "Irã x Uzbequistão",
-    "odd": 2.55,
-    "unidades": 1,
-    "desde": 1784584346113
+    "h": "22:58",
+    "jogo": "Uruguai x Gana",
+    "odd": 2.35,
+    "unidades": 2,
+    "desde": 1784584686310
    },
-   "iniciadoEm": 1784584346113
+   "iniciadoEm": 1784584346113,
+   "tiros": [
+    {
+     "h": "22:55",
+     "jogo": "Irã x Uzbequistão",
+     "odd": 2.55,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784580731516,
@@ -368,10 +376,10 @@
    "2026-07-20": 24.2
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 82,
-   "start": 1
+   "tipo": "time",
+   "chave": "Arábia Saudita",
+   "n": 8,
+   "start": 2
   }
  },
  "ambas": {
