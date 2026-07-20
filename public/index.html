@@ -197,6 +197,8 @@ async function carregaPadroes(liga,mkt){
     const j=await r.json();
     const lt=rl&&rl.ok?await rl.json():null;
     if(mkt!==mktSel.value)return;
+    window.__leitor=(lt&&!lt.erro)?lt:null;
+    try{const f=document.getElementById('leitorFaixa');if(f){f.outerHTML=leitorFaixaHtml();}}catch(e){}
     const ps=(j&&j.padroes)||[];
     const po=(j&&j.porOdd)||[], pt=(j&&j.porTime)||[];
     const ppl=(j&&j.porPlacar)||[], pcol=(j&&j.porColuna)||[], pupl=(j&&j.pulosPorPlacar)||[];
@@ -437,7 +439,7 @@ function render(d){
 
   // GRAFICO DA LINHA (SVG) com numeros nos pontos + histograma MACD + LTA/LTB
   const serie=a.serie||[];
-  const chart=lineChart(serie, a.macdHist||[], a.trend, a.ehTotalGols, a.serieHoras||[]);
+  const chart=lineChart(serie, a.macdHist||[], a.trend, a.ehTotalGols, a.serieHoras||[])+leitorFaixaHtml();
 
   // AVISO DE ROMPIMENTO (o sinal de ouro: reversao de ciclo)
   let rompHtml='';
@@ -711,6 +713,22 @@ function render(d){
   carregaRelatorio(d.liga); // async: relatorio por data (independe do mercado)
 }
 
+
+function leitorFaixaHtml(){
+  const lt=window.__leitor;
+  const setas=s=>String(s||'').replace(/U/g,'↑').replace(/D/g,'↓').replace(/F/g,'→');
+  if(!lt)return `<div id="leitorFaixa"></div>`;
+  const sig=lt.sinalAgora;
+  const cor=sig?(sig.prox==='G'?'#3fb950':'#f85149'):'#30363d';
+  const corTxt=sig?(sig.prox==='G'?'var(--greenb)':'var(--red)'):'#8b98a8';
+  const mem=lt.atualNaMemoria;
+  return `<div id="leitorFaixa" style="margin-top:6px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;background:#10151c;border:1px solid ${cor};border-radius:8px;padding:6px 10px;font-size:12px">
+    <b>🔮 leitor:</b>
+    <span style="font-family:monospace;font-size:16px;letter-spacing:3px;color:#58a6ff">${setas(lt.desenhoAtual)}</span>
+    ${mem?`<span class="note" style="font-size:10px">visto ${mem.n}× · green depois ${mem.taxa}% · régua ${lt.regua}%</span>`:`<span class="note" style="font-size:10px">desenho inédito no dia</span>`}
+    ${sig?`<b style="color:${corTxt}">${sig.prox==='G'?'ANUNCIA GREEN em até 3':'ANUNCIA MORTE do ciclo'} +${sig.edge} pts (${sig.n}×)</b>`:`<span class="note" style="font-size:10px">sem sinal (desenho neutro ou memória rasa)</span>`}
+  </div>`;
+}
 function lineChart(serie, macdHist, trend, ehGols, horas){const uni=ehGols?"":"%";
   if(!serie.length)return '<div class="note">sem dados para o gráfico</div>';
   const W=680,H=200,pad=28, hH=70, gap=14; // H=linha, hH=histograma
