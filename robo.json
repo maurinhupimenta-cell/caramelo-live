@@ -284,7 +284,36 @@
    "super": 1784566394814,
    "copa": 1784566871516
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:18",
+     "jogo": "Burnley x Wolverhampton",
+     "odd": 2
+    },
+    {
+     "h": "18:21",
+     "jogo": "Aston x City",
+     "odd": 2.2
+    },
+    {
+     "h": "18:24",
+     "jogo": "Chelsea x Norwich",
+     "odd": 2.2
+    }
+   ],
+   "alvo": {
+    "h": "18:18",
+    "jogo": "Burnley x Wolverhampton",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1784567684116
+   },
+   "iniciadoEm": 1784567684116
+  },
   "cooldown": {
    "copa": 1784566871516,
    "premier": 1784563368016,
@@ -302,7 +331,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "goleada (3+)",
-   "n": 67,
+   "n": 87,
    "start": 1
   }
  },
