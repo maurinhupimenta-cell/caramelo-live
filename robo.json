@@ -353,13 +353,19 @@
   }
  },
  "ambas": {
-  "saldo": -20.6,
-  "ciclos": 147,
-  "greens": 102,
+  "saldo": -19.5,
+  "ciclos": 148,
+  "greens": 103,
   "redsCiclo": 18,
   "aborts": 0,
   "descartes": 27,
   "historico": [
+   {
+    "quando": "2026-07-20T18:49:11.708Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Marrocos x Paraguai @2.07 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T18:23:53.208Z",
     "resultado": "GREEN",
@@ -473,61 +479,27 @@
     "resultado": "GREEN",
     "unidades": 0.6,
     "detalhe": "super · Belo Horizonte x Buenos Aires @1.8 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T13:01:54.609Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "euro · Polônia x Eslovênia @2.35 (tiro 1)"
    }
   ],
   "consumidas": {
    "euro": 1784571313808,
    "super": 1784571432114,
-   "premier": 1784571833012
+   "premier": 1784571833012,
+   "copa": 1784573351513
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "19:46",
-     "jogo": "Marrocos x Paraguai",
-     "odd": 2.07
-    },
-    {
-     "h": "19:49",
-     "jogo": "Haiti x Panamá",
-     "odd": 1.95
-    },
-    {
-     "h": "19:52",
-     "jogo": "Uzbequistão x Cabo Verde",
-     "odd": 1.95
-    }
-   ],
-   "alvo": {
-    "h": "19:46",
-    "jogo": "Marrocos x Paraguai",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1784573051713
-   },
-   "iniciadoEm": 1784573051713
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784571313808,
    "super": 1784571432114,
    "premier": 1784571833012,
-   "copa": 1784569392608
+   "copa": 1784573351513
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": -2
+   "2026-07-20": -0.9
   },
   "_gatilhoAtual": {
    "tipo": "time",
