@@ -332,20 +332,26 @@
    "2026-07-20": 10.1
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 41,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":36",
+   "n": 12,
+   "start": 2
   }
  },
  "ambas": {
-  "saldo": -27.6,
-  "ciclos": 122,
-  "greens": 81,
+  "saldo": -26.6,
+  "ciclos": 123,
+  "greens": 82,
   "redsCiclo": 16,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-20T11:27:53.715Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Bélgica x Marrocos @2.02 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T11:18:56.510Z",
     "resultado": "RED_CICLO",
@@ -459,65 +465,31 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "euro · Itália x Hungria @2.07 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T04:35:16.168Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "copa · Haiti x Cabo Verde @1.87 (tiro 2)"
    }
   ],
   "consumidas": {
    "euro": 1784544415206,
-   "super": 1784546336408
+   "super": 1784546336408,
+   "copa": 1784546873613
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "12:25",
-     "jogo": "Bélgica x Marrocos",
-     "odd": 2.02
-    },
-    {
-     "h": "12:28",
-     "jogo": "Senegal x Argentina",
-     "odd": 2
-    },
-    {
-     "h": "12:31",
-     "jogo": "Inglaterra x Haiti",
-     "odd": 2.02
-    }
-   ],
-   "alvo": {
-    "h": "12:25",
-    "jogo": "Bélgica x Marrocos",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1784546337317
-   },
-   "iniciadoEm": 1784546337317
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784544415206,
    "super": 1784546336408,
    "premier": 1784533296517,
-   "copa": 1784538273916
+   "copa": 1784546873613
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": -9
+   "2026-07-20": -8
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 34,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 35,
    "start": 1
   }
  }
