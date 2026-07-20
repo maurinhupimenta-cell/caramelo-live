@@ -311,13 +311,19 @@
   }
  },
  "ambas": {
-  "saldo": -22.6,
-  "ciclos": 145,
-  "greens": 100,
+  "saldo": -21.6,
+  "ciclos": 146,
+  "greens": 101,
   "redsCiclo": 18,
   "aborts": 0,
   "descartes": 27,
   "historico": [
+   {
+    "quando": "2026-07-20T18:17:12.310Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Asuncion x Quito @2 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T18:15:14.215Z",
     "resultado": "GREEN",
@@ -431,59 +437,46 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · Brentford x Islington @1.98 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T12:39:53.813Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Nova Zelândia x República Tcheca @2 (tiro 2)"
    }
   ],
   "consumidas": {
    "copa": 1784569392608,
-   "euro": 1784571313808
+   "euro": 1784571313808,
+   "super": 1784571432114
   },
   "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "19:10",
-     "jogo": "Bogota x Santos",
-     "odd": 2.2
+     "h": "19:21",
+     "jogo": "Tottenham x Everton",
+     "odd": 2.02
     },
     {
-     "h": "19:13",
-     "jogo": "Asuncion x Quito",
-     "odd": 2
+     "h": "19:24",
+     "jogo": "Leicester x City",
+     "odd": 1.9
     },
     {
-     "h": "19:16",
-     "jogo": "La Boca x Avellaneda",
-     "odd": 2.07
+     "h": "19:27",
+     "jogo": "Tottenham x Liverpool",
+     "odd": 2.05
     }
    ],
    "alvo": {
-    "h": "19:13",
-    "jogo": "Asuncion x Quito",
-    "odd": 2,
-    "unidades": 2,
-    "desde": 1784571375007
+    "h": "19:21",
+    "jogo": "Tottenham x Everton",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1784571460311
    },
-   "iniciadoEm": 1784571315609,
-   "tiros": [
-    {
-     "h": "19:10",
-     "jogo": "Bogota x Santos",
-     "odd": 2.2,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1784571460311
   },
   "cooldown": {
    "euro": 1784571313808,
-   "super": 1784567174319,
+   "super": 1784571432114,
    "premier": 1784566238507,
    "copa": 1784569392608
   },
@@ -492,12 +485,12 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": -4
+   "2026-07-20": -3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGRG",
-   "n": 6,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 59,
    "start": 1
   }
  }
