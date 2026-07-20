@@ -348,13 +348,19 @@
   }
  },
  "ambas": {
-  "saldo": -14.1,
-  "ciclos": 105,
-  "greens": 68,
+  "saldo": -13.1,
+  "ciclos": 106,
+  "greens": 69,
   "redsCiclo": 12,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-20T05:02:38.713Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Leicester x Burnley @1.95 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T04:55:13.507Z",
     "resultado": "GREEN",
@@ -468,53 +474,19 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · Uzbequistão x Uruguai @1.98 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-19T10:15:36.493Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "super · Bogota x Montevideo @2.07 (tiro 1)"
    }
   ],
   "consumidas": {
    "copa": 1784522115971,
    "euro": 1784522618214,
-   "super": 1784523313407
+   "super": 1784523313407,
+   "premier": 1784523758608
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:00",
-     "jogo": "Leicester x Burnley",
-     "odd": 1.95
-    },
-    {
-     "h": "06:03",
-     "jogo": "Chelsea x Aston",
-     "odd": 2.07
-    },
-    {
-     "h": "06:06",
-     "jogo": "Norwich x Leeds",
-     "odd": 2.1
-    }
-   ],
-   "alvo": {
-    "h": "06:00",
-    "jogo": "Leicester x Burnley",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1784523314412
-   },
-   "iniciadoEm": 1784523314412
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784522618214,
    "super": 1784523313407,
-   "premier": 1784515478096,
+   "premier": 1784523758608,
    "copa": 1784522115971
   },
   "dias": {
@@ -522,12 +494,12 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": 4.5
+   "2026-07-20": 5.5
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 12,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 10,
    "start": 1
   }
  }
