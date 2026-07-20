@@ -479,7 +479,36 @@
   "consumidas": {
    "euro": 1784588241921
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:57",
+     "jogo": "Brighton x Everton",
+     "odd": 1.8
+    },
+    {
+     "h": "00:00",
+     "jogo": "Burnley x Palace",
+     "odd": 1.87
+    },
+    {
+     "h": "00:03",
+     "jogo": "Wolverhampton x Newcastle",
+     "odd": 1.8
+    }
+   ],
+   "alvo": {
+    "h": "23:57",
+    "jogo": "Brighton x Everton",
+    "odd": 1.8,
+    "unidades": 1,
+    "desde": 1784588254920
+   },
+   "iniciadoEm": 1784588254920
+  },
   "cooldown": {
    "euro": 1784588241921,
    "super": 1784584227915,
@@ -495,8 +524,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 52,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 68,
    "start": 1
   }
  }
