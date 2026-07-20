@@ -154,13 +154,19 @@
   }
  },
  "o25": {
-  "saldo": -50.8,
-  "ciclos": 102,
-  "greens": 59,
+  "saldo": -49.3,
+  "ciclos": 103,
+  "greens": 60,
   "redsCiclo": 20,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T07:02:42.516Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "premier · Chelsea x West Ham @2.5 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T06:56:14.606Z",
     "resultado": "GREEN",
@@ -274,51 +280,17 @@
     "resultado": "GREEN",
     "unidades": 1.9,
     "detalhe": "euro · França x Eslovênia @2.45 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-19T15:08:14.499Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
    "super": 1784527976616,
-   "euro": 1784530574419
+   "euro": 1784530574419,
+   "premier": 1784530962416
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "08:00",
-     "jogo": "Chelsea x West Ham",
-     "odd": 2.5
-    },
-    {
-     "h": "08:03",
-     "jogo": "Watford x Newcastle",
-     "odd": 2.1
-    },
-    {
-     "h": "08:06",
-     "jogo": "Liverpool x Southampton",
-     "odd": 2.35
-    }
-   ],
-   "alvo": {
-    "h": "08:00",
-    "jogo": "Chelsea x West Ham",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1784530608609
-   },
-   "iniciadoEm": 1784530608609
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784527254316,
-   "premier": 1784526456415,
+   "premier": 1784530962416,
    "euro": 1784530574419,
    "super": 1784527976616
   },
@@ -328,12 +300,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 2.1
+   "2026-07-20": 3.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Watford",
-   "n": 14,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 34,
    "start": 1
   }
  },
