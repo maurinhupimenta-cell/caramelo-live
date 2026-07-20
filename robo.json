@@ -131,8 +131,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "05:25",
@@ -151,11 +151,11 @@
     }
    ],
    "alvo": {
-    "h": "05:28",
-    "jogo": "França x Qatar",
-    "odd": 4.5,
-    "unidades": 2,
-    "desde": 1784521674421
+    "h": "05:31",
+    "jogo": "Haiti x Cabo Verde",
+    "odd": 4,
+    "unidades": 4,
+    "desde": 1784521851118
    },
    "iniciadoEm": 1784521211998,
    "tiros": [
@@ -164,6 +164,12 @@
      "jogo": "Coreia do Sul x Tunísia",
      "odd": 6,
      "unidades": 1
+    },
+    {
+     "h": "05:28",
+     "jogo": "França x Qatar",
+     "odd": 4.5,
+     "unidades": 2
     }
    ]
   },
@@ -550,10 +556,10 @@
    "2026-07-20": 0.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Suíça",
-   "n": 8,
-   "start": 3
+   "tipo": "seq",
+   "chave": "GRRR",
+   "n": 9,
+   "start": 1
   }
  }
 }
