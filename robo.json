@@ -311,7 +311,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1784580731516,
    "premier": 1784581552218,
    "euro": 1784582052916,
    "super": 1784584227807
@@ -339,13 +338,19 @@
   }
  },
  "ambas": {
-  "saldo": -12,
-  "ciclos": 155,
-  "greens": 110,
+  "saldo": -10.7,
+  "ciclos": 156,
+  "greens": 111,
   "redsCiclo": 18,
   "aborts": 0,
   "descartes": 27,
   "historico": [
+   {
+    "quando": "2026-07-20T21:50:28.017Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "super · Asuncion x La Plata @2.15 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T21:36:12.012Z",
     "resultado": "GREEN",
@@ -459,58 +464,45 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "premier · Everton x Islington @1.87 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T15:32:25.509Z",
-    "resultado": "GREEN",
-    "unidades": 0.8,
-    "detalhe": "euro · Ucrânia x Inglaterra @1.9 (tiro 2)"
    }
   ],
   "consumidas": {
-   "euro": 1784583371910
+   "euro": 1784583371910,
+   "super": 1784584227915
   },
   "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "22:43",
-     "jogo": "Avellaneda x Agua Branca",
-     "odd": 1.93
-    },
-    {
-     "h": "22:46",
-     "jogo": "Asuncion x La Plata",
-     "odd": 2.15
-    },
-    {
-     "h": "22:49",
-     "jogo": "Buenos Aires x Belo Horizonte",
+     "h": "22:51",
+     "jogo": "Everton x Wolverhampton",
      "odd": 1.8
+    },
+    {
+     "h": "22:54",
+     "jogo": "Brighton x Leeds",
+     "odd": 2
+    },
+    {
+     "h": "22:57",
+     "jogo": "Liverpool x City",
+     "odd": 1.85
     }
    ],
    "alvo": {
-    "h": "22:46",
-    "jogo": "Asuncion x La Plata",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1784583946311
+    "h": "22:51",
+    "jogo": "Everton x Wolverhampton",
+    "odd": 1.8,
+    "unidades": 1,
+    "desde": 1784584229520
    },
-   "iniciadoEm": 1784583746614,
-   "tiros": [
-    {
-     "h": "22:43",
-     "jogo": "Avellaneda x Agua Branca",
-     "odd": 1.93,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1784584229520
   },
   "cooldown": {
    "euro": 1784583371910,
-   "super": 1784580131813,
+   "super": 1784584227915,
    "premier": 1784580467411,
    "copa": 1784573351513
   },
@@ -519,7 +511,7 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": 6.6
+   "2026-07-20": 7.9
   },
   "_gatilhoAtual": {
    "tipo": "placar",
