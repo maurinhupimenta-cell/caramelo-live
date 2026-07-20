@@ -154,13 +154,19 @@
   }
  },
  "o25": {
-  "saldo": -45.2,
-  "ciclos": 126,
-  "greens": 79,
+  "saldo": -43,
+  "ciclos": 127,
+  "greens": 80,
   "redsCiclo": 24,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T14:15:13.914Z",
+    "resultado": "GREEN",
+    "unidades": 2.2,
+    "detalhe": "euro · Alemanha x Dinamarca @2.3 (tiro 3)"
+   },
    {
     "quando": "2026-07-20T13:44:35.508Z",
     "resultado": "RED_CICLO",
@@ -274,61 +280,19 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "copa · México x Nova Zelândia @2.2 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T08:22:55.118Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "euro · Alemanha x Áustria @2.2 (tiro 3)"
    }
   ],
   "consumidas": {
    "super": 1784553552811,
    "copa": 1784553911606,
-   "premier": 1784555075316
+   "premier": 1784555075316,
+   "euro": 1784556913814
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "15:05",
-     "jogo": "Áustria x França",
-     "odd": 2.15
-    },
-    {
-     "h": "15:08",
-     "jogo": "Itália x Geórgia",
-     "odd": 2.4
-    },
-    {
-     "h": "15:11",
-     "jogo": "Alemanha x Dinamarca",
-     "odd": 2.3
-    }
-   ],
-   "alvo": {
-    "h": "15:08",
-    "jogo": "Itália x Geórgia",
-    "odd": 2.4,
-    "unidades": 2,
-    "desde": 1784556732318
-   },
-   "iniciadoEm": 1784556313709,
-   "tiros": [
-    {
-     "h": "15:05",
-     "jogo": "Áustria x França",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784553911606,
    "premier": 1784555075316,
-   "euro": 1784552514316,
+   "euro": 1784556913814,
    "super": 1784553552811
   },
   "dias": {
@@ -337,23 +301,29 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 7.7
+   "2026-07-20": 9.9
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 63,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 49,
    "start": 1
   }
  },
  "ambas": {
-  "saldo": -18,
-  "ciclos": 131,
+  "saldo": -25,
+  "ciclos": 132,
   "greens": 90,
-  "redsCiclo": 16,
+  "redsCiclo": 17,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-20T14:12:14.110Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-20T14:03:12.309Z",
     "resultado": "GREEN",
@@ -467,65 +437,17 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "premier · Chelsea x Palace @1.98 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-20T07:17:14.217Z",
-    "resultado": "GREEN",
-    "unidades": 0.8,
-    "detalhe": "euro · Países Baixos x Espanha @1.76 (tiro 1)"
    }
   ],
   "consumidas": {
    "super": 1784555113414,
    "copa": 1784555713107,
-   "premier": 1784556192208
+   "premier": 1784556192208,
+   "euro": 1784556733916
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "15:02",
-     "jogo": "Eslováquia x Hungria",
-     "odd": 2.05
-    },
-    {
-     "h": "15:05",
-     "jogo": "Áustria x França",
-     "odd": 1.9
-    },
-    {
-     "h": "15:08",
-     "jogo": "Itália x Geórgia",
-     "odd": 2.15
-    }
-   ],
-   "alvo": {
-    "h": "15:08",
-    "jogo": "Itália x Geórgia",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1784556732508
-   },
-   "iniciadoEm": 1784556251616,
-   "tiros": [
-    {
-     "h": "15:02",
-     "jogo": "Eslováquia x Hungria",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "15:05",
-     "jogo": "Áustria x França",
-     "odd": 1.9,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784552514416,
+   "euro": 1784556733916,
    "super": 1784555113414,
    "premier": 1784556192208,
    "copa": 1784555713107
@@ -535,7 +457,7 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": 0.6
+   "2026-07-20": -6.4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
