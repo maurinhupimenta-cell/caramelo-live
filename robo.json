@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -93.2,
-  "ciclos": 127,
-  "greens": 43,
+  "saldo": -81.2,
+  "ciclos": 128,
+  "greens": 44,
   "redsCiclo": 51,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-20T18:50:44.709Z",
+    "resultado": "GREEN",
+    "unidades": 12,
+    "detalhe": "premier · Aston x Watford @4.75 (tiro 3)"
+   },
    {
     "quando": "2026-07-20T18:15:13.513Z",
     "resultado": "RED_CICLO",
@@ -120,64 +126,16 @@
     "resultado": "GREEN",
     "unidades": 11,
     "detalhe": "premier · City x Tottenham @4.5 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-20T05:28:15.618Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
-   "copa": 1784571313408
+   "copa": 1784571313408,
+   "premier": 1784573444517
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "19:42",
-     "jogo": "Islington x Wolverhampton",
-     "odd": 4
-    },
-    {
-     "h": "19:45",
-     "jogo": "Southampton x Leicester",
-     "odd": 5
-    },
-    {
-     "h": "19:48",
-     "jogo": "Aston x Watford",
-     "odd": 4.75
-    }
-   ],
-   "alvo": {
-    "h": "19:48",
-    "jogo": "Aston x Watford",
-    "odd": 4.75,
-    "unidades": 4,
-    "desde": 1784573261110
-   },
-   "iniciadoEm": 1784572725711,
-   "tiros": [
-    {
-     "h": "19:42",
-     "jogo": "Islington x Wolverhampton",
-     "odd": 4,
-     "unidades": 1
-    },
-    {
-     "h": "19:45",
-     "jogo": "Southampton x Leicester",
-     "odd": 5,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784571313408,
-   "premier": 1784558323707,
+   "premier": 1784573444517,
    "euro": 1784568371515,
    "super": 1784563994808
   },
@@ -186,7 +144,7 @@
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
-   "2026-07-20": -15.9
+   "2026-07-20": -3.9
   },
   "_gatilhoAtual": {
    "tipo": "placar",
