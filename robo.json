@@ -182,13 +182,19 @@
   }
  },
  "o25": {
-  "saldo": -49.3,
-  "ciclos": 103,
-  "greens": 60,
+  "saldo": -47.6,
+  "ciclos": 104,
+  "greens": 61,
   "redsCiclo": 20,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T07:09:50.412Z",
+    "resultado": "GREEN",
+    "unidades": 1.7,
+    "detalhe": "copa · Egito x África do Sul @2.35 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T07:02:42.516Z",
     "resultado": "GREEN",
@@ -302,59 +308,17 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "euro · Portugal x Inglaterra @2.07 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-19T15:49:53.403Z",
-    "resultado": "GREEN",
-    "unidades": 1.9,
-    "detalhe": "euro · França x Eslovênia @2.45 (tiro 2)"
    }
   ],
   "consumidas": {
    "super": 1784527976616,
    "euro": 1784530574419,
-   "premier": 1784530962416
+   "premier": 1784530962416,
+   "copa": 1784531390311
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "08:04",
-     "jogo": "Paraguai x Uzbequistão",
-     "odd": 2.4
-    },
-    {
-     "h": "08:07",
-     "jogo": "Egito x África do Sul",
-     "odd": 2.35
-    },
-    {
-     "h": "08:10",
-     "jogo": "Jordânia x Noruega",
-     "odd": 2.1
-    }
-   ],
-   "alvo": {
-    "h": "08:07",
-    "jogo": "Egito x África do Sul",
-    "odd": 2.35,
-    "unidades": 2,
-    "desde": 1784531235811
-   },
-   "iniciadoEm": 1784530991919,
-   "tiros": [
-    {
-     "h": "08:04",
-     "jogo": "Paraguai x Uzbequistão",
-     "odd": 2.4,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784527254316,
+   "copa": 1784531390311,
    "premier": 1784530962416,
    "euro": 1784530574419,
    "super": 1784527976616
@@ -365,12 +329,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 3.6
+   "2026-07-20": 5.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Egito",
-   "n": 10,
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 8,
    "start": 1
   }
  },
