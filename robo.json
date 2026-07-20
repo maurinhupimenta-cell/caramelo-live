@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -63.2,
-  "ciclos": 132,
-  "greens": 47,
+  "saldo": -59,
+  "ciclos": 133,
+  "greens": 48,
   "redsCiclo": 52,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-20T21:58:07.510Z",
+    "resultado": "GREEN",
+    "unidades": 4.2,
+    "detalhe": "super · Buenos Aires x Sao Paulo @3.6 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T20:59:11.906Z",
     "resultado": "RED_CICLO",
@@ -120,67 +126,24 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-20T08:16:13.806Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
-   "euro": 1784581151719
+   "super": 1784584687318
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "22:52",
-     "jogo": "Quito x Medellin",
-     "odd": 5
-    },
-    {
-     "h": "22:55",
-     "jogo": "Buenos Aires x Sao Paulo",
-     "odd": 3.6
-    },
-    {
-     "h": "22:58",
-     "jogo": "Penarol x La Plata",
-     "odd": 6
-    }
-   ],
-   "alvo": {
-    "h": "22:55",
-    "jogo": "Buenos Aires x Sao Paulo",
-    "odd": 3.6,
-    "unidades": 2,
-    "desde": 1784584552719
-   },
-   "iniciadoEm": 1784584227614,
-   "tiros": [
-    {
-     "h": "22:52",
-     "jogo": "Quito x Medellin",
-     "odd": 5,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784575991511,
    "premier": 1784580286611,
    "euro": 1784581151719,
-   "super": 1784574852420
+   "super": 1784584687318
   },
   "dias": {
    "2026-07-15": -35,
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
-   "2026-07-20": 14.1
+   "2026-07-20": 18.3
   },
   "_gatilhoAtual": {
    "tipo": "placar",
