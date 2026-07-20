@@ -131,8 +131,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "18:20",
@@ -151,13 +151,21 @@
     }
    ],
    "alvo": {
-    "h": "18:20",
-    "jogo": "Suíça x Sérvia",
-    "odd": 4.75,
-    "unidades": 1,
-    "desde": 1784567835719
+    "h": "18:23",
+    "jogo": "Portugal x Bélgica",
+    "odd": 4.2,
+    "unidades": 2,
+    "desde": 1784568192517
    },
-   "iniciadoEm": 1784567835719
+   "iniciadoEm": 1784567835719,
+   "tiros": [
+    {
+     "h": "18:20",
+     "jogo": "Suíça x Sérvia",
+     "odd": 4.75,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784562904318,
@@ -175,7 +183,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 9,
+   "n": 16,
    "start": 1
   }
  },
