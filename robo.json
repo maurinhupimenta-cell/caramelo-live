@@ -283,7 +283,6 @@
    }
   ],
   "consumidas": {
-   "super": 1784557575909,
    "copa": 1784558053318,
    "premier": 1784559036715,
    "euro": 1784560906614
@@ -443,7 +442,36 @@
    "super": 1784559252312,
    "copa": 1784560924819
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:26",
+     "jogo": "Geórgia x República Tcheca",
+     "odd": 2.2
+    },
+    {
+     "h": "16:29",
+     "jogo": "Ucrânia x Inglaterra",
+     "odd": 1.9
+    },
+    {
+     "h": "16:32",
+     "jogo": "Países Baixos x Espanha",
+     "odd": 1.76
+    }
+   ],
+   "alvo": {
+    "h": "16:26",
+    "jogo": "Geórgia x República Tcheca",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1784560926016
+   },
+   "iniciadoEm": 1784560926016
+  },
   "cooldown": {
    "euro": 1784556733916,
    "super": 1784559252312,
@@ -458,10 +486,10 @@
    "2026-07-20": -4.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":29",
-   "n": 15,
-   "start": 2
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 53,
+   "start": 1
   }
  }
 }
