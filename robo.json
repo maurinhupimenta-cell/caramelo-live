@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -104.2,
-  "ciclos": 121,
+  "saldo": -111.2,
+  "ciclos": 122,
   "greens": 39,
-  "redsCiclo": 49,
+  "redsCiclo": 50,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-20T14:31:14.311Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-20T14:08:12.213Z",
     "resultado": "RED_CICLO",
@@ -120,73 +126,25 @@
     "resultado": "GREEN",
     "unidades": 9.8,
     "detalhe": "super · Buenos Aires x Quito @4.2 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-20T02:44:38.094Z",
-    "resultado": "GREEN",
-    "unidades": 6,
-    "detalhe": "premier · Leeds x Wolverhampton @4.5 (tiro 2)"
    }
   ],
   "consumidas": {
-   "copa": 1784556492115
+   "copa": 1784556492115,
+   "super": 1784557874210
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "15:22",
-     "jogo": "Agua Branca x Avellaneda",
-     "odd": 4.33
-    },
-    {
-     "h": "15:25",
-     "jogo": "Santos x La Plata",
-     "odd": 6
-    },
-    {
-     "h": "15:28",
-     "jogo": "Sao Paulo x Rio de Janeiro",
-     "odd": 4
-    }
-   ],
-   "alvo": {
-    "h": "15:28",
-    "jogo": "Sao Paulo x Rio de Janeiro",
-    "odd": 4,
-    "unidades": 4,
-    "desde": 1784557694113
-   },
-   "iniciadoEm": 1784557152720,
-   "tiros": [
-    {
-     "h": "15:22",
-     "jogo": "Agua Branca x Avellaneda",
-     "odd": 4.33,
-     "unidades": 1
-    },
-    {
-     "h": "15:25",
-     "jogo": "Santos x La Plata",
-     "odd": 6,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784556492115,
    "premier": 1784554179814,
    "euro": 1784545133910,
-   "super": 1784550295516
+   "super": 1784557874210
   },
   "dias": {
    "2026-07-15": -35,
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
-   "2026-07-20": -26.9
+   "2026-07-20": -33.9
   },
   "_gatilhoAtual": {
    "tipo": "placar",
