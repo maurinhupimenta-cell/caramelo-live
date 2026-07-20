@@ -154,13 +154,19 @@
   }
  },
  "o25": {
-  "saldo": -34.2,
-  "ciclos": 145,
-  "greens": 96,
+  "saldo": -32.8,
+  "ciclos": 146,
+  "greens": 97,
   "redsCiclo": 26,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T19:54:17.911Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "premier · Everton x Watford @2.2 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T19:33:11.815Z",
     "resultado": "GREEN",
@@ -274,51 +280,17 @@
     "resultado": "GREEN",
     "unidades": 2.2,
     "detalhe": "euro · Alemanha x Dinamarca @2.3 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-20T13:44:35.508Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
    "super": 1784575514213,
-   "copa": 1784575991709
+   "copa": 1784575991709,
+   "premier": 1784577257808
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:48",
-     "jogo": "Norwich x Aston",
-     "odd": 2.3
-    },
-    {
-     "h": "20:51",
-     "jogo": "Everton x Watford",
-     "odd": 2.2
-    },
-    {
-     "h": "20:54",
-     "jogo": "City x United",
-     "odd": 2.1
-    }
-   ],
-   "alvo": {
-    "h": "20:48",
-    "jogo": "Norwich x Aston",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1784576332416
-   },
-   "iniciadoEm": 1784576332416
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784575991709,
-   "premier": 1784572391318,
+   "premier": 1784577257808,
    "euro": 1784573234108,
    "super": 1784575514213
   },
@@ -328,12 +300,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 18.7
+   "2026-07-20": 20.1
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 79,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 64,
    "start": 1
   }
  },
