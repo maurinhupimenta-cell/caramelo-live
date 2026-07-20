@@ -154,13 +154,19 @@
   }
  },
  "o25": {
-  "saldo": -41.7,
-  "ciclos": 118,
-  "greens": 73,
+  "saldo": -37.9,
+  "ciclos": 119,
+  "greens": 74,
   "redsCiclo": 22,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T11:55:54.511Z",
+    "resultado": "GREEN",
+    "unidades": 3.8,
+    "detalhe": "euro · Eslováquia x Albânia @2.7 (tiro 3)"
+   },
    {
     "quando": "2026-07-20T11:32:38.008Z",
     "resultado": "GREEN",
@@ -274,66 +280,18 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-20T05:47:36.607Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "premier · Newcastle x Norwich @2.07 (tiro 1)"
    }
   ],
   "consumidas": {
    "copa": 1784545273415,
-   "premier": 1784547157820
+   "premier": 1784547157820,
+   "euro": 1784548554407
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "12:47",
-     "jogo": "Hungria x Turquia",
-     "odd": 2.6
-    },
-    {
-     "h": "12:50",
-     "jogo": "Romênia x Bélgica",
-     "odd": 2.07
-    },
-    {
-     "h": "12:53",
-     "jogo": "Eslováquia x Albânia",
-     "odd": 2.7
-    }
-   ],
-   "alvo": {
-    "h": "12:53",
-    "jogo": "Eslováquia x Albânia",
-    "odd": 2.7,
-    "unidades": 4,
-    "desde": 1784548394009
-   },
-   "iniciadoEm": 1784547835207,
-   "tiros": [
-    {
-     "h": "12:47",
-     "jogo": "Hungria x Turquia",
-     "odd": 2.6,
-     "unidades": 1
-    },
-    {
-     "h": "12:50",
-     "jogo": "Romênia x Bélgica",
-     "odd": 2.07,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784545273415,
    "premier": 1784547157820,
-   "euro": 1784544234813,
+   "euro": 1784548554407,
    "super": 1784544915808
   },
   "dias": {
@@ -342,12 +300,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 11.2
+   "2026-07-20": 15
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRRR",
-   "n": 9,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 49,
    "start": 1
   }
  },
