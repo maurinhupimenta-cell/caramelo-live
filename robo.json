@@ -444,7 +444,36 @@
    "copa": 1784530316507,
    "euro": 1784531834118
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:33",
+     "jogo": "Brentford x Palace",
+     "odd": 1.95
+    },
+    {
+     "h": "08:36",
+     "jogo": "Newcastle x United",
+     "odd": 1.86
+    },
+    {
+     "h": "08:39",
+     "jogo": "Chelsea x Palace",
+     "odd": 1.98
+    }
+   ],
+   "alvo": {
+    "h": "08:33",
+    "jogo": "Brentford x Palace",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1784532580316
+   },
+   "iniciadoEm": 1784532580316
+  },
   "cooldown": {
    "euro": 1784531834118,
    "super": 1784528156912,
@@ -459,9 +488,9 @@
    "2026-07-20": -4.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRGG",
-   "n": 9,
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 11,
    "start": 1
   }
  }
