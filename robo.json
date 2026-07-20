@@ -183,13 +183,19 @@
   }
  },
  "o25": {
-  "saldo": -41.8,
-  "ciclos": 128,
-  "greens": 81,
+  "saldo": -40.4,
+  "ciclos": 129,
+  "greens": 82,
   "redsCiclo": 24,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T14:34:13.509Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "copa · México x Japão @2.35 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T14:26:16.011Z",
     "resultado": "GREEN",
@@ -303,51 +309,17 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "premier · Palace x Liverpool @2.2 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T08:37:15.608Z",
-    "resultado": "GREEN",
-    "unidades": 3.5,
-    "detalhe": "super · Asuncion x Porto Alegre @2.62 (tiro 3)"
    }
   ],
   "consumidas": {
    "premier": 1784555075316,
    "euro": 1784556913814,
-   "super": 1784557575909
+   "super": 1784557575909,
+   "copa": 1784558053318
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:31",
-     "jogo": "México x Japão",
-     "odd": 2.35
-    },
-    {
-     "h": "15:34",
-     "jogo": "Costa do Marfim x Suíça",
-     "odd": 2.2
-    },
-    {
-     "h": "15:37",
-     "jogo": "Bélgica x Paraguai",
-     "odd": 2.4
-    }
-   ],
-   "alvo": {
-    "h": "15:31",
-    "jogo": "México x Japão",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1784557691607
-   },
-   "iniciadoEm": 1784557691607
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784553911606,
+   "copa": 1784558053318,
    "premier": 1784555075316,
    "euro": 1784556913814,
    "super": 1784557575909
@@ -358,7 +330,7 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 11.1
+   "2026-07-20": 12.5
   },
   "_gatilhoAtual": {
    "tipo": "placar",
