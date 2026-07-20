@@ -512,7 +512,36 @@
    "euro": 1784561545319,
    "premier": 1784561751116
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:58",
+     "jogo": "La Plata x Belo Horizonte",
+     "odd": 2.02
+    },
+    {
+     "h": "17:01",
+     "jogo": "Medellin x Avellaneda",
+     "odd": 2.05
+    },
+    {
+     "h": "17:04",
+     "jogo": "Lima x Santos",
+     "odd": 1.98
+    }
+   ],
+   "alvo": {
+    "h": "16:58",
+    "jogo": "La Plata x Belo Horizonte",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1784562873119
+   },
+   "iniciadoEm": 1784562873119
+  },
   "cooldown": {
    "euro": 1784561545319,
    "super": 1784559252312,
@@ -528,8 +557,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 52,
+   "chave": "empate 1-1",
+   "n": 40,
    "start": 1
   }
  }
