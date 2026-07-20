@@ -375,13 +375,19 @@
   }
  },
  "ambas": {
-  "saldo": -13.8,
-  "ciclos": 153,
-  "greens": 108,
+  "saldo": -12.9,
+  "ciclos": 154,
+  "greens": 109,
   "redsCiclo": 18,
   "aborts": 0,
   "descartes": 27,
   "historico": [
+   {
+    "quando": "2026-07-20T20:47:47.515Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Watford x Brighton @1.87 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T20:42:11.915Z",
     "resultado": "GREEN",
@@ -495,52 +501,18 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "copa · França x Panamá @2.1 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-20T15:21:45.707Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
    "euro": 1784579231121,
-   "super": 1784580131813
+   "super": 1784580131813,
+   "premier": 1784580467411
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:45",
-     "jogo": "Watford x Brighton",
-     "odd": 1.87
-    },
-    {
-     "h": "21:48",
-     "jogo": "Norwich x Brentford",
-     "odd": 1.95
-    },
-    {
-     "h": "21:51",
-     "jogo": "Watford x Tottenham",
-     "odd": 2.1
-    }
-   ],
-   "alvo": {
-    "h": "21:45",
-    "jogo": "Watford x Brighton",
-    "odd": 1.87,
-    "unidades": 1,
-    "desde": 1784580133909
-   },
-   "iniciadoEm": 1784580133909
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784579231121,
    "super": 1784580131813,
-   "premier": 1784576513118,
+   "premier": 1784580467411,
    "copa": 1784573351513
   },
   "dias": {
@@ -548,12 +520,12 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": 4.8
+   "2026-07-20": 5.7
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 18,
+   "n": 19,
    "start": 1
   }
  }
