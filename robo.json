@@ -133,8 +133,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "22:52",
@@ -153,13 +153,21 @@
     }
    ],
    "alvo": {
-    "h": "22:52",
-    "jogo": "Quito x Medellin",
-    "odd": 5,
-    "unidades": 1,
-    "desde": 1784584227614
+    "h": "22:55",
+    "jogo": "Buenos Aires x Sao Paulo",
+    "odd": 3.6,
+    "unidades": 2,
+    "desde": 1784584552719
    },
-   "iniciadoEm": 1784584227614
+   "iniciadoEm": 1784584227614,
+   "tiros": [
+    {
+     "h": "22:52",
+     "jogo": "Quito x Medellin",
+     "odd": 5,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784575991511,
@@ -360,9 +368,9 @@
    "2026-07-20": 24.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Irã",
-   "n": 16,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 82,
    "start": 1
   }
  },
