@@ -311,13 +311,19 @@
   }
  },
  "ambas": {
-  "saldo": -25.9,
-  "ciclos": 109,
-  "greens": 70,
+  "saldo": -24.8,
+  "ciclos": 110,
+  "greens": 71,
   "redsCiclo": 14,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-20T06:26:37.707Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Islington x Watford @2.05 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T06:15:57.107Z",
     "resultado": "GREEN",
@@ -431,61 +437,19 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "super · Asuncion x Agua Branca @1.93 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-19T14:33:52.997Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
    "copa": 1784526353806,
    "euro": 1784526953706,
-   "super": 1784528156912
+   "super": 1784528156912,
+   "premier": 1784528797515
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "07:21",
-     "jogo": "Brentford x Wolverhampton",
-     "odd": 1.87
-    },
-    {
-     "h": "07:24",
-     "jogo": "Islington x Watford",
-     "odd": 2.05
-    },
-    {
-     "h": "07:27",
-     "jogo": "Palace x Tottenham",
-     "odd": 2.05
-    }
-   ],
-   "alvo": {
-    "h": "07:24",
-    "jogo": "Islington x Watford",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1784528617409
-   },
-   "iniciadoEm": 1784528263111,
-   "tiros": [
-    {
-     "h": "07:21",
-     "jogo": "Brentford x Wolverhampton",
-     "odd": 1.87,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784526953706,
    "super": 1784528156912,
-   "premier": 1784523758608,
+   "premier": 1784528797515,
    "copa": 1784526353806
   },
   "dias": {
@@ -493,7 +457,7 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": -7.3
+   "2026-07-20": -6.2
   },
   "_gatilhoAtual": {
    "tipo": "placar",
