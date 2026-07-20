@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -89.2,
-  "ciclos": 117,
+  "saldo": -96.2,
+  "ciclos": 118,
   "greens": 38,
-  "redsCiclo": 46,
+  "redsCiclo": 47,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-20T11:14:38.112Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-20T10:58:54.011Z",
     "resultado": "RED_CICLO",
@@ -120,65 +126,17 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-19T18:49:11.600Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
    "copa": 1784542934710,
-   "euro": 1784545133910
+   "euro": 1784545133910,
+   "premier": 1784546078012
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "12:06",
-     "jogo": "Islington x Leicester",
-     "odd": 4.5
-    },
-    {
-     "h": "12:09",
-     "jogo": "City x Leeds",
-     "odd": 4.75
-    },
-    {
-     "h": "12:12",
-     "jogo": "Palace x Newcastle",
-     "odd": 3.8
-    }
-   ],
-   "alvo": {
-    "h": "12:12",
-    "jogo": "Palace x Newcastle",
-    "odd": 3.8,
-    "unidades": 4,
-    "desde": 1784545898511
-   },
-   "iniciadoEm": 1784545135413,
-   "tiros": [
-    {
-     "h": "12:06",
-     "jogo": "Islington x Leicester",
-     "odd": 4.5,
-     "unidades": 1
-    },
-    {
-     "h": "12:09",
-     "jogo": "City x Leeds",
-     "odd": 4.75,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784542934710,
-   "premier": 1784540856514,
+   "premier": 1784546078012,
    "euro": 1784545133910,
    "super": 1784538055315
   },
@@ -187,7 +145,7 @@
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
-   "2026-07-20": -11.9
+   "2026-07-20": -18.9
   },
   "_gatilhoAtual": {
    "tipo": "odd",
