@@ -352,13 +352,19 @@
   }
  },
  "ambas": {
-  "saldo": -19.3,
-  "ciclos": 115,
-  "greens": 76,
+  "saldo": -18.1,
+  "ciclos": 116,
+  "greens": 77,
   "redsCiclo": 14,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-20T08:34:54.711Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Turquia x Croácia @2.05 (tiro 3)"
+   },
    {
     "quando": "2026-07-20T08:00:53.215Z",
     "resultado": "GREEN",
@@ -472,65 +478,17 @@
     "resultado": "GREEN",
     "unidades": 0.8,
     "detalhe": "super · Belo Horizonte x Agua Branca @1.83 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-19T22:41:12.301Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · Hungria x Alemanha @1.98 (tiro 1)"
    }
   ],
   "consumidas": {
    "premier": 1784533296517,
    "super": 1784533735716,
-   "copa": 1784534453114
+   "copa": 1784534453114,
+   "euro": 1784536494610
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "09:26",
-     "jogo": "Turquia x Alemanha",
-     "odd": 2
-    },
-    {
-     "h": "09:29",
-     "jogo": "Geórgia x Escócia",
-     "odd": 2
-    },
-    {
-     "h": "09:32",
-     "jogo": "Turquia x Croácia",
-     "odd": 2.05
-    }
-   ],
-   "alvo": {
-    "h": "09:32",
-    "jogo": "Turquia x Croácia",
-    "odd": 2.05,
-    "unidades": 4,
-    "desde": 1784536314908
-   },
-   "iniciadoEm": 1784535434914,
-   "tiros": [
-    {
-     "h": "09:26",
-     "jogo": "Turquia x Alemanha",
-     "odd": 2,
-     "unidades": 1
-    },
-    {
-     "h": "09:29",
-     "jogo": "Geórgia x Escócia",
-     "odd": 2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784531834118,
+   "euro": 1784536494610,
    "super": 1784533735716,
    "premier": 1784533296517,
    "copa": 1784534453114
@@ -540,13 +498,13 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": -0.7
+   "2026-07-20": 0.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":41",
-   "n": 9,
-   "start": 2
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 27,
+   "start": 1
   }
  }
 }
