@@ -442,7 +442,36 @@
    "euro": 1784566032521,
    "premier": 1784566238507
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:01",
+     "jogo": "Avellaneda x Santiago",
+     "odd": 1.93
+    },
+    {
+     "h": "18:04",
+     "jogo": "Quito x Montevideo",
+     "odd": 1.93
+    },
+    {
+     "h": "18:07",
+     "jogo": "Porto Alegre x Buenos Aires",
+     "odd": 2.05
+    }
+   ],
+   "alvo": {
+    "h": "18:01",
+    "jogo": "Avellaneda x Santiago",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1784567112713
+   },
+   "iniciadoEm": 1784567112713
+  },
   "cooldown": {
    "euro": 1784566032521,
    "super": 1784563485708,
@@ -457,9 +486,9 @@
    "2026-07-20": -6.9
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 38,
+   "tipo": "seq",
+   "chave": "GGGG",
+   "n": 7,
    "start": 1
   }
  }
