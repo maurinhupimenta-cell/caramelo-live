@@ -133,8 +133,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "14:58",
@@ -153,13 +153,21 @@
     }
    ],
    "alvo": {
-    "h": "14:58",
-    "jogo": "Argentina x Noruega",
-    "odd": 4,
-    "unidades": 1,
-    "desde": 1784555712914
+    "h": "15:01",
+    "jogo": "Haiti x Marrocos",
+    "odd": 4.2,
+    "unidades": 2,
+    "desde": 1784556075712
    },
-   "iniciadoEm": 1784555712914
+   "iniciadoEm": 1784555712914,
+   "tiros": [
+    {
+     "h": "14:58",
+     "jogo": "Argentina x Noruega",
+     "odd": 4,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784542934710,
@@ -177,7 +185,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 13,
+   "n": 15,
    "start": 1
   }
  },
@@ -517,8 +525,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 30,
+   "chave": "empate 2-2",
+   "n": 17,
    "start": 1
   }
  }
