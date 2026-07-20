@@ -444,7 +444,36 @@
    "super": 1784584227915,
    "premier": 1784584429609
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:53",
+     "jogo": "Polônia x República Tcheca",
+     "odd": 2.25
+    },
+    {
+     "h": "23:56",
+     "jogo": "Itália x Alemanha",
+     "odd": 1.93
+    },
+    {
+     "h": "00:02",
+     "jogo": "Hungria x França",
+     "odd": 1.93
+    }
+   ],
+   "alvo": {
+    "h": "23:53",
+    "jogo": "Polônia x República Tcheca",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1784587811813
+   },
+   "iniciadoEm": 1784587811813
+  },
   "cooldown": {
    "euro": 1784583371910,
    "super": 1784584227915,
@@ -459,9 +488,9 @@
    "2026-07-20": 8.7
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 64,
+   "tipo": "seq",
+   "chave": "RRRGG",
+   "n": 15,
    "start": 1
   }
  }
