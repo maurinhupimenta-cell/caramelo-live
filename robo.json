@@ -144,13 +144,19 @@
   }
  },
  "o25": {
-  "saldo": -49.7,
-  "ciclos": 87,
+  "saldo": -56.7,
+  "ciclos": 88,
   "greens": 47,
-  "redsCiclo": 17,
+  "redsCiclo": 18,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T00:08:16.099Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-19T23:32:13.496Z",
     "resultado": "GREEN",
@@ -264,71 +270,24 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "euro · Croácia x Escócia @2.2 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-19T02:21:59.530Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "copa · Alemanha x Coreia do Sul @2.35 (tiro 1)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "00:58",
-     "jogo": "Itaquera x La Boca",
-     "odd": 2.4
-    },
-    {
-     "h": "01:01",
-     "jogo": "Asuncion x Santos",
-     "odd": 2.4
-    },
-    {
-     "h": "01:04",
-     "jogo": "Belo Horizonte x Itaquera",
-     "odd": 2.15
-    }
-   ],
-   "alvo": {
-    "h": "01:04",
-    "jogo": "Belo Horizonte x Itaquera",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1784505853503
-   },
-   "iniciadoEm": 1784504953003,
-   "tiros": [
-    {
-     "h": "00:58",
-     "jogo": "Itaquera x La Boca",
-     "odd": 2.4,
-     "unidades": 1
-    },
-    {
-     "h": "01:01",
-     "jogo": "Asuncion x Santos",
-     "odd": 2.4,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "super": 1784506095998
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784472352097,
    "premier": 1784457156700,
    "euro": 1784503933307,
-   "super": 1784461034304
+   "super": 1784506095998
   },
   "dias": {
    "2026-07-15": -19.6,
    "2026-07-16": -14.2,
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
-   "2026-07-19": -8.8
+   "2026-07-19": -15.8
   }
  },
  "ambas": {
