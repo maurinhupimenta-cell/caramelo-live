@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -76.3,
-  "ciclos": 100,
+  "saldo": -83.3,
+  "ciclos": 101,
   "greens": 30,
-  "redsCiclo": 37,
+  "redsCiclo": 38,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-20T01:59:46.800Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-19T23:04:14.500Z",
     "resultado": "GREEN",
@@ -120,62 +126,15 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-18T02:02:42.869Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "02:51",
-     "jogo": "Chelsea x Everton",
-     "odd": 4
-    },
-    {
-     "h": "02:54",
-     "jogo": "Leicester x Norwich",
-     "odd": 4.5
-    },
-    {
-     "h": "02:57",
-     "jogo": "Wolverhampton x Newcastle",
-     "odd": 3.6
-    }
-   ],
-   "alvo": {
-    "h": "02:57",
-    "jogo": "Wolverhampton x Newcastle",
-    "odd": 3.6,
-    "unidades": 4,
-    "desde": 1784512598202
-   },
-   "iniciadoEm": 1784511898403,
-   "tiros": [
-    {
-     "h": "02:51",
-     "jogo": "Chelsea x Everton",
-     "odd": 4,
-     "unidades": 1
-    },
-    {
-     "h": "02:54",
-     "jogo": "Leicester x Norwich",
-     "odd": 4.5,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1784512786698
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784489292106,
-   "premier": 1784468339201,
+   "premier": 1784512786698,
    "euro": 1784486951501,
    "super": 1784502254399
   },
@@ -183,7 +142,7 @@
    "2026-07-15": -35,
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
-   "2026-07-19": -47.5
+   "2026-07-19": -54.5
   }
  },
  "o25": {
