@@ -287,7 +287,36 @@
    "euro": 1784526235113,
    "premier": 1784526456415
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:52",
+     "jogo": "Inglaterra x Marrocos",
+     "odd": 2.3
+    },
+    {
+     "h": "06:55",
+     "jogo": "Uzbequistão x EUA",
+     "odd": 2.25
+    },
+    {
+     "h": "06:58",
+     "jogo": "Bélgica x Gana",
+     "odd": 2.4
+    }
+   ],
+   "alvo": {
+    "h": "06:52",
+    "jogo": "Inglaterra x Marrocos",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1784526554117
+   },
+   "iniciadoEm": 1784526554117
+  },
   "cooldown": {
    "copa": 1784522935710,
    "premier": 1784526456415,
@@ -303,9 +332,9 @@
    "2026-07-20": 5.2
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 28,
+   "tipo": "seq",
+   "chave": "RRRG",
+   "n": 8,
    "start": 1
   }
  },
