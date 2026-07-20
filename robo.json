@@ -446,8 +446,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "08:33",
@@ -466,11 +466,11 @@
     }
    ],
    "alvo": {
-    "h": "08:36",
-    "jogo": "Newcastle x United",
-    "odd": 1.86,
-    "unidades": 2,
-    "desde": 1784532936615
+    "h": "08:39",
+    "jogo": "Chelsea x Palace",
+    "odd": 1.98,
+    "unidades": 4,
+    "desde": 1784533120715
    },
    "iniciadoEm": 1784532580316,
    "tiros": [
@@ -479,6 +479,12 @@
      "jogo": "Brentford x Palace",
      "odd": 1.95,
      "unidades": 1
+    },
+    {
+     "h": "08:36",
+     "jogo": "Newcastle x United",
+     "odd": 1.86,
+     "unidades": 2
     }
    ]
   },
@@ -496,10 +502,10 @@
    "2026-07-20": -4.1
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 11,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":48",
+   "n": 8,
+   "start": 2
   }
  }
 }
