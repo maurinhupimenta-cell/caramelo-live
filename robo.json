@@ -131,7 +131,36 @@
   "consumidas": {
    "super": 1784584687318
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:04",
+     "jogo": "Suíça x Coreia do Sul",
+     "odd": 5.25
+    },
+    {
+     "h": "23:07",
+     "jogo": "Arábia Saudita x Tunísia",
+     "odd": 5
+    },
+    {
+     "h": "23:10",
+     "jogo": "Paraguai x Turquia",
+     "odd": 5
+    }
+   ],
+   "alvo": {
+    "h": "23:04",
+    "jogo": "Suíça x Coreia do Sul",
+    "odd": 5.25,
+    "unidades": 1,
+    "desde": 1784584933207
+   },
+   "iniciadoEm": 1784584933207
+  },
   "cooldown": {
    "copa": 1784575991511,
    "premier": 1784580286611,
@@ -148,18 +177,24 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 17,
+   "n": 16,
    "start": 1
   }
  },
  "o25": {
-  "saldo": -28.7,
-  "ciclos": 152,
-  "greens": 102,
+  "saldo": -27,
+  "ciclos": 153,
+  "greens": 103,
   "redsCiclo": 27,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T22:02:13.510Z",
+    "resultado": "GREEN",
+    "unidades": 1.7,
+    "detalhe": "copa · Uruguai x Gana @2.35 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T21:50:27.913Z",
     "resultado": "GREEN",
@@ -273,59 +308,17 @@
     "resultado": "GREEN",
     "unidades": 1.7,
     "detalhe": "premier · Leicester x Watford @2.35 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T15:49:05.014Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "copa · Países Baixos x Brasil @2.25 (tiro 1)"
    }
   ],
   "consumidas": {
    "premier": 1784581552218,
    "euro": 1784582052916,
-   "super": 1784584227807
+   "super": 1784584227807,
+   "copa": 1784584933315
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "22:55",
-     "jogo": "Irã x Uzbequistão",
-     "odd": 2.55
-    },
-    {
-     "h": "22:58",
-     "jogo": "Uruguai x Gana",
-     "odd": 2.35
-    },
-    {
-     "h": "23:01",
-     "jogo": "Iraque x Portugal",
-     "odd": 2.3
-    }
-   ],
-   "alvo": {
-    "h": "22:58",
-    "jogo": "Uruguai x Gana",
-    "odd": 2.35,
-    "unidades": 2,
-    "desde": 1784584686310
-   },
-   "iniciadoEm": 1784584346113,
-   "tiros": [
-    {
-     "h": "22:55",
-     "jogo": "Irã x Uzbequistão",
-     "odd": 2.55,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784580731516,
+   "copa": 1784584933316,
    "premier": 1784581552218,
    "euro": 1784582052916,
    "super": 1784584227807
@@ -336,13 +329,13 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 24.2
+   "2026-07-20": 25.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Arábia Saudita",
-   "n": 8,
-   "start": 2
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 16,
+   "start": 1
   }
  },
  "ambas": {
