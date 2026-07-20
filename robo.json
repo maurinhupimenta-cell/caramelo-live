@@ -345,13 +345,19 @@
   }
  },
  "ambas": {
-  "saldo": -22.2,
-  "ciclos": 136,
-  "greens": 93,
+  "saldo": -21.3,
+  "ciclos": 137,
+  "greens": 94,
   "redsCiclo": 17,
   "aborts": 0,
   "descartes": 26,
   "historico": [
+   {
+    "quando": "2026-07-20T15:35:51.215Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Everton x Islington @1.87 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T15:32:25.509Z",
     "resultado": "GREEN",
@@ -465,53 +471,19 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · Bélgica x Curação @2.05 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T08:57:55.414Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
    "super": 1784559252312,
    "copa": 1784560924819,
-   "euro": 1784561545319
+   "euro": 1784561545319,
+   "premier": 1784561751116
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:33",
-     "jogo": "Everton x Islington",
-     "odd": 1.87
-    },
-    {
-     "h": "16:36",
-     "jogo": "Palace x Leeds",
-     "odd": 2.1
-    },
-    {
-     "h": "16:39",
-     "jogo": "Norwich x Newcastle",
-     "odd": 1.83
-    }
-   ],
-   "alvo": {
-    "h": "16:33",
-    "jogo": "Everton x Islington",
-    "odd": 1.87,
-    "unidades": 1,
-    "desde": 1784561546416
-   },
-   "iniciadoEm": 1784561546416
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784561545319,
    "super": 1784559252312,
-   "premier": 1784556192208,
+   "premier": 1784561751116,
    "copa": 1784560924819
   },
   "dias": {
@@ -519,12 +491,12 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": -3.6
+   "2026-07-20": -2.7
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 20,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 52,
    "start": 1
   }
  }
