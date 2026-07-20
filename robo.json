@@ -286,7 +286,36 @@
    "copa": 1784527254316,
    "super": 1784527976616
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:47",
+     "jogo": "Romênia x Escócia",
+     "odd": 2.15
+    },
+    {
+     "h": "07:50",
+     "jogo": "França x Sérvia",
+     "odd": 2.3
+    },
+    {
+     "h": "07:53",
+     "jogo": "Geórgia x Portugal",
+     "odd": 2.3
+    }
+   ],
+   "alvo": {
+    "h": "07:47",
+    "jogo": "Romênia x Escócia",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1784529835914
+   },
+   "iniciadoEm": 1784529835914
+  },
   "cooldown": {
    "copa": 1784527254316,
    "premier": 1784526456415,
@@ -304,7 +333,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "goleada (3+)",
-   "n": 28,
+   "n": 36,
    "start": 1
   }
  },
@@ -438,7 +467,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1784526353806,
    "euro": 1784526953706,
    "super": 1784528156912,
    "premier": 1784528797515
