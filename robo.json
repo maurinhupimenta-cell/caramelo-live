@@ -129,7 +129,6 @@
    }
   ],
   "consumidas": {
-   "premier": 1784532222107,
    "copa": 1784535373707
   },
   "ciclo": null,
@@ -286,7 +285,36 @@
    "premier": 1784535103814,
    "euro": 1784535775021
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:25",
+     "jogo": "México x Nova Zelândia",
+     "odd": 2.2
+    },
+    {
+     "h": "09:28",
+     "jogo": "RD Congo x Canadá",
+     "odd": 2.25
+    },
+    {
+     "h": "09:31",
+     "jogo": "Brasil x Costa do Marfim",
+     "odd": 2.15
+    }
+   ],
+   "alvo": {
+    "h": "09:25",
+    "jogo": "México x Nova Zelândia",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1784535776208
+   },
+   "iniciadoEm": 1784535776208
+  },
   "cooldown": {
    "copa": 1784531390311,
    "premier": 1784535103814,
@@ -302,9 +330,9 @@
    "2026-07-20": 11.2
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 40,
+   "tipo": "odd",
+   "chave": "2.2",
+   "n": 9,
    "start": 1
   }
  },
@@ -489,7 +517,7 @@
    "tipo": "coluna",
    "chave": ":29",
    "n": 9,
-   "start": 2
+   "start": 1
   }
  }
 }
