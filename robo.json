@@ -288,7 +288,36 @@
    "super": 1784557575909,
    "copa": 1784558053318
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:48",
+     "jogo": "Liverpool x City",
+     "odd": 2.07
+    },
+    {
+     "h": "15:51",
+     "jogo": "Islington x Tottenham",
+     "odd": 2.4
+    },
+    {
+     "h": "15:54",
+     "jogo": "Southampton x Everton",
+     "odd": 2.25
+    }
+   ],
+   "alvo": {
+    "h": "15:48",
+    "jogo": "Liverpool x City",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1784558685919
+   },
+   "iniciadoEm": 1784558685919
+  },
   "cooldown": {
    "copa": 1784558053318,
    "premier": 1784555075316,
@@ -305,8 +334,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 46,
+   "chave": "goleada (3+)",
+   "n": 71,
    "start": 1
   }
  },
@@ -440,7 +469,6 @@
    }
   ],
   "consumidas": {
-   "super": 1784555113414,
    "copa": 1784555713107,
    "premier": 1784556192208,
    "euro": 1784556733916
