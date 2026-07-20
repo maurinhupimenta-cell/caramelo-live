@@ -152,13 +152,7 @@
      "odd": 4
     }
    ],
-   "alvo": {
-    "h": "18:46",
-    "jogo": "Marrocos x Jordânia",
-    "odd": 4.5,
-    "unidades": 2,
-    "desde": 1784569631407
-   },
+   "alvo": null,
    "iniciadoEm": 1784569212114,
    "tiros": [
     {
@@ -322,7 +316,36 @@
    "premier": 1784568038516,
    "euro": 1784569093314
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:10",
+     "jogo": "Argentina x Portugal",
+     "odd": 2.07
+    },
+    {
+     "h": "19:13",
+     "jogo": "Iraque x Gana",
+     "odd": 2.55
+    },
+    {
+     "h": "19:16",
+     "jogo": "Nova Zelândia x Suíça",
+     "odd": 2.25
+    }
+   ],
+   "alvo": {
+    "h": "19:10",
+    "jogo": "Argentina x Portugal",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1784570894016
+   },
+   "iniciadoEm": 1784570894016
+  },
   "cooldown": {
    "copa": 1784566871516,
    "premier": 1784568038516,
@@ -338,9 +361,9 @@
    "2026-07-20": 10.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGRG",
-   "n": 6,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 60,
    "start": 1
   }
  },
@@ -475,7 +498,6 @@
   ],
   "consumidas": {
    "premier": 1784566238507,
-   "super": 1784567174319,
    "copa": 1784569392608
   },
   "ciclo": {
