@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -68,
-  "ciclos": 105,
-  "greens": 33,
+  "saldo": -64.5,
+  "ciclos": 106,
+  "greens": 34,
   "redsCiclo": 39,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-20T04:42:13.708Z",
+    "resultado": "GREEN",
+    "unidades": 3.5,
+    "detalhe": "euro · Suíça x Dinamarca @4.5 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T04:35:15.871Z",
     "resultado": "RED_CICLO",
@@ -120,51 +126,17 @@
     "resultado": "GREEN",
     "unidades": 3.3,
     "detalhe": "copa · México x Uruguai @4.33 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-19T09:32:36.101Z",
-    "resultado": "GREEN",
-    "unidades": 5.4,
-    "detalhe": "premier · Palace x Chelsea @4.2 (tiro 2)"
    }
   ],
   "consumidas": {
-   "copa": 1784522115668
+   "copa": 1784522115668,
+   "euro": 1784522533511
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:38",
-     "jogo": "Suíça x Dinamarca",
-     "odd": 4.5
-    },
-    {
-     "h": "05:41",
-     "jogo": "Itália x Hungria",
-     "odd": 5
-    },
-    {
-     "h": "05:44",
-     "jogo": "Portugal x Espanha",
-     "odd": 4
-    }
-   ],
-   "alvo": {
-    "h": "05:38",
-    "jogo": "Suíça x Dinamarca",
-    "odd": 4.5,
-    "unidades": 1,
-    "desde": 1784522164373
-   },
-   "iniciadoEm": 1784522164373
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784522115668,
    "premier": 1784519474695,
-   "euro": 1784486951501,
+   "euro": 1784522533511,
    "super": 1784518260107
   },
   "dias": {
@@ -172,7 +144,7 @@
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
-   "2026-07-20": 9.3
+   "2026-07-20": 12.8
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
@@ -512,9 +484,9 @@
    "2026-07-20": 1.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRGG",
-   "n": 7,
+   "tipo": "time",
+   "chave": "City",
+   "n": 9,
    "start": 1
   }
  }
