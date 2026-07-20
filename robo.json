@@ -131,7 +131,36 @@
   "consumidas": {
    "premier": 1784540856514
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:13",
+     "jogo": "Coreia do Sul x México",
+     "odd": 5
+    },
+    {
+     "h": "11:16",
+     "jogo": "Escócia x Egito",
+     "odd": 5
+    },
+    {
+     "h": "11:19",
+     "jogo": "Nova Zelândia x Alemanha",
+     "odd": 4
+    }
+   ],
+   "alvo": {
+    "h": "11:13",
+    "jogo": "Coreia do Sul x México",
+    "odd": 5,
+    "unidades": 1,
+    "desde": 1784542193813
+   },
+   "iniciadoEm": 1784542193813
+  },
   "cooldown": {
    "copa": 1784535373707,
    "premier": 1784540856514,
@@ -148,7 +177,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 13,
+   "n": 11,
    "start": 1
   }
  },
