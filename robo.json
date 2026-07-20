@@ -443,7 +443,36 @@
    "premier": 1784552020311,
    "euro": 1784552514416
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:37",
+     "jogo": "Itaquera x Montevideo",
+     "odd": 1.98
+    },
+    {
+     "h": "14:40",
+     "jogo": "Belo Horizonte x Buenos Aires",
+     "odd": 1.8
+    },
+    {
+     "h": "14:43",
+     "jogo": "Santos x Santiago",
+     "odd": 1.98
+    }
+   ],
+   "alvo": {
+    "h": "14:37",
+    "jogo": "Itaquera x Montevideo",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1784554517419
+   },
+   "iniciadoEm": 1784554517419
+  },
   "cooldown": {
    "euro": 1784552514416,
    "super": 1784550695912,
@@ -458,10 +487,10 @@
    "2026-07-20": -1.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.1",
-   "n": 8,
-   "start": 2
+   "tipo": "seq",
+   "chave": "RRRR",
+   "n": 27,
+   "start": 1
   }
  }
 }
