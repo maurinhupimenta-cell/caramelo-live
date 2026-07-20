@@ -370,8 +370,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 81,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 64,
    "start": 1
   }
  },
@@ -510,8 +510,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "20:28",
@@ -530,13 +530,21 @@
     }
    ],
    "alvo": {
-    "h": "20:28",
-    "jogo": "Quito x Agua Branca",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1784575514409
+    "h": "20:31",
+    "jogo": "La Plata x Rio de Janeiro",
+    "odd": 2.1,
+    "unidades": 2,
+    "desde": 1784575933215
    },
-   "iniciadoEm": 1784575514409
+   "iniciadoEm": 1784575514409,
+   "tiros": [
+    {
+     "h": "20:28",
+     "jogo": "Quito x Agua Branca",
+     "odd": 1.93,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784575272412,
@@ -552,10 +560,10 @@
    "2026-07-20": 0
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 65,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.2",
+   "n": 11,
+   "start": 2
   }
  }
 }
