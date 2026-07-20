@@ -131,7 +131,36 @@
   "consumidas": {
    "premier": 1784580286611
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:50",
+     "jogo": "Eslováquia x Albânia",
+     "odd": 5.5
+    },
+    {
+     "h": "21:53",
+     "jogo": "Sérvia x República Tcheca",
+     "odd": 6
+    },
+    {
+     "h": "21:56",
+     "jogo": "Espanha x Geórgia",
+     "odd": 4.33
+    }
+   ],
+   "alvo": {
+    "h": "21:50",
+    "jogo": "Eslováquia x Albânia",
+    "odd": 5.5,
+    "unidades": 1,
+    "desde": 1784580433713
+   },
+   "iniciadoEm": 1784580433713
+  },
   "cooldown": {
    "copa": 1784575991511,
    "premier": 1784580286611,
@@ -148,7 +177,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 18,
+   "n": 9,
    "start": 1
   }
  },
