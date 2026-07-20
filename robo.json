@@ -289,13 +289,19 @@
   }
  },
  "ambas": {
-  "saldo": -12.6,
-  "ciclos": 99,
+  "saldo": -19.6,
+  "ciclos": 100,
   "greens": 63,
-  "redsCiclo": 11,
+  "redsCiclo": 12,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-20T00:38:15.505Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-20T00:01:37.696Z",
     "resultado": "GREEN",
@@ -409,61 +415,14 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · Costa do Marfim x Iraque @2.02 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-19T06:12:15.128Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "premier · Liverpool x Newcastle @1.9 (tiro 1)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "01:29",
-     "jogo": "Turquia x Albânia",
-     "odd": 2.37
-    },
-    {
-     "h": "01:32",
-     "jogo": "Inglaterra x Áustria",
-     "odd": 1.93
-    },
-    {
-     "h": "01:35",
-     "jogo": "França x Dinamarca",
-     "odd": 1.98
-    }
-   ],
-   "alvo": {
-    "h": "01:35",
-    "jogo": "França x Dinamarca",
-    "odd": 1.98,
-    "unidades": 4,
-    "desde": 1784507832400
-   },
-   "iniciadoEm": 1784506992994,
-   "tiros": [
-    {
-     "h": "01:29",
-     "jogo": "Turquia x Albânia",
-     "odd": 2.37,
-     "unidades": 1
-    },
-    {
-     "h": "01:32",
-     "jogo": "Inglaterra x Áustria",
-     "odd": 1.93,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "euro": 1784507895404
   },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784500872197,
+   "euro": 1784507895404,
    "super": 1784504775197,
    "premier": 1784505697596,
    "copa": 1784471632896
@@ -472,7 +431,7 @@
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
-   "2026-07-19": -20.6
+   "2026-07-19": -27.6
   }
  }
 }
