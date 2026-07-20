@@ -134,8 +134,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "15:22",
@@ -154,13 +154,21 @@
     }
    ],
    "alvo": {
-    "h": "15:22",
-    "jogo": "Agua Branca x Avellaneda",
-    "odd": 4.33,
-    "unidades": 1,
-    "desde": 1784557152720
+    "h": "15:25",
+    "jogo": "Santos x La Plata",
+    "odd": 6,
+    "unidades": 2,
+    "desde": 1784557575714
    },
-   "iniciadoEm": 1784557152720
+   "iniciadoEm": 1784557152720,
+   "tiros": [
+    {
+     "h": "15:22",
+     "jogo": "Agua Branca x Avellaneda",
+     "odd": 4.33,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784556492115,
@@ -183,13 +191,19 @@
   }
  },
  "o25": {
-  "saldo": -43,
-  "ciclos": 127,
-  "greens": 80,
+  "saldo": -41.8,
+  "ciclos": 128,
+  "greens": 81,
   "redsCiclo": 24,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T14:26:16.011Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Agua Branca x Avellaneda @2.2 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T14:15:13.914Z",
     "resultado": "GREEN",
@@ -303,53 +317,19 @@
     "resultado": "GREEN",
     "unidades": 3.5,
     "detalhe": "super · Asuncion x Porto Alegre @2.62 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-20T08:27:53.715Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "copa · México x Nova Zelândia @2.2 (tiro 1)"
    }
   ],
   "consumidas": {
    "premier": 1784555075316,
-   "euro": 1784556913814
+   "euro": 1784556913814,
+   "super": 1784557575909
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:22",
-     "jogo": "Agua Branca x Avellaneda",
-     "odd": 2.2
-    },
-    {
-     "h": "15:25",
-     "jogo": "Santos x La Plata",
-     "odd": 2.7
-    },
-    {
-     "h": "15:28",
-     "jogo": "Sao Paulo x Rio de Janeiro",
-     "odd": 2.07
-    }
-   ],
-   "alvo": {
-    "h": "15:22",
-    "jogo": "Agua Branca x Avellaneda",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1784557152914
-   },
-   "iniciadoEm": 1784557152914
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784553911606,
    "premier": 1784555075316,
    "euro": 1784556913814,
-   "super": 1784553552811
+   "super": 1784557575909
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -357,12 +337,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 9.9
+   "2026-07-20": 11.1
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 59,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 38,
    "start": 1
   }
  },
