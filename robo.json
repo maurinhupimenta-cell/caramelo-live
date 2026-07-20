@@ -339,13 +339,19 @@
   }
  },
  "ambas": {
-  "saldo": -24.6,
-  "ciclos": 142,
-  "greens": 98,
+  "saldo": -23.6,
+  "ciclos": 143,
+  "greens": 99,
   "redsCiclo": 18,
   "aborts": 0,
   "descartes": 26,
   "historico": [
+   {
+    "quando": "2026-07-20T17:43:12.711Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Paraguai x Equador @1.95 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T17:06:14.417Z",
     "resultado": "GREEN",
@@ -459,67 +465,33 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "euro · Eslováquia x Albânia @2.2 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T11:27:53.715Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Bélgica x Marrocos @2.02 (tiro 1)"
    }
   ],
   "consumidas": {
    "euro": 1784566032521,
    "premier": 1784566238507,
-   "super": 1784567174319
+   "super": 1784567174319,
+   "copa": 1784569392608
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:40",
-     "jogo": "Paraguai x Equador",
-     "odd": 1.95
-    },
-    {
-     "h": "18:43",
-     "jogo": "Uzbequistão x Canadá",
-     "odd": 2.05
-    },
-    {
-     "h": "18:46",
-     "jogo": "Marrocos x Jordânia",
-     "odd": 2.05
-    }
-   ],
-   "alvo": {
-    "h": "18:40",
-    "jogo": "Paraguai x Equador",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1784569092110
-   },
-   "iniciadoEm": 1784569092110
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784566032521,
    "super": 1784567174319,
    "premier": 1784566238507,
-   "copa": 1784565491207
+   "copa": 1784569392608
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": -6
+   "2026-07-20": -5
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Uzbequistão",
-   "n": 20,
-   "start": 1
+   "chave": "Paraguai",
+   "n": 19,
+   "start": 2
   }
  }
 }
