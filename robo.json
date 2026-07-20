@@ -316,7 +316,36 @@
    "premier": 1784522494506,
    "copa": 1784522935710
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:58",
+     "jogo": "La Boca x Bogota",
+     "odd": 2.7
+    },
+    {
+     "h": "06:01",
+     "jogo": "Itaquera x Buenos Aires",
+     "odd": 2.15
+    },
+    {
+     "h": "06:04",
+     "jogo": "Santiago x Agua Branca",
+     "odd": 2
+    }
+   ],
+   "alvo": {
+    "h": "05:58",
+    "jogo": "La Boca x Bogota",
+    "odd": 2.7,
+    "unidades": 1,
+    "desde": 1784523016009
+   },
+   "iniciadoEm": 1784523016009
+  },
   "cooldown": {
    "copa": 1784522935710,
    "premier": 1784522494506,
@@ -333,9 +362,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Bogota",
-   "n": 6,
-   "start": 1
+   "chave": "Buenos Aires",
+   "n": 10,
+   "start": 3
   }
  },
  "ambas": {
@@ -473,8 +502,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:46",
@@ -493,13 +522,21 @@
     }
    ],
    "alvo": {
-    "h": "05:46",
-    "jogo": "Medellin x Agua Branca",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1784522619414
+    "h": "05:49",
+    "jogo": "Quito x Santiago",
+    "odd": 1.9,
+    "unidades": 2,
+    "desde": 1784522936114
    },
-   "iniciadoEm": 1784522619414
+   "iniciadoEm": 1784522619414,
+   "tiros": [
+    {
+     "h": "05:46",
+     "jogo": "Medellin x Agua Branca",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784522618214,
