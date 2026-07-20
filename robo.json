@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -37.9,
-  "ciclos": 119,
+  "saldo": -44.9,
+  "ciclos": 120,
   "greens": 74,
-  "redsCiclo": 22,
+  "redsCiclo": 23,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T12:09:55.214Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-20T11:55:54.511Z",
     "resultado": "GREEN",
@@ -273,67 +279,19 @@
     "resultado": "GREEN",
     "unidades": 1.7,
     "detalhe": "super · Santos x Bogota @2.7 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T06:00:54.509Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
    "premier": 1784547157820,
-   "euro": 1784548554407
+   "euro": 1784548554407,
+   "super": 1784549395115
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "13:01",
-     "jogo": "Bogota x Asuncion",
-     "odd": 2.55
-    },
-    {
-     "h": "13:04",
-     "jogo": "Lima x Belo Horizonte",
-     "odd": 2
-    },
-    {
-     "h": "13:07",
-     "jogo": "Sao Paulo x Avellaneda",
-     "odd": 2.15
-    }
-   ],
-   "alvo": {
-    "h": "13:07",
-    "jogo": "Sao Paulo x Avellaneda",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1784549255412
-   },
-   "iniciadoEm": 1784548695719,
-   "tiros": [
-    {
-     "h": "13:01",
-     "jogo": "Bogota x Asuncion",
-     "odd": 2.55,
-     "unidades": 1
-    },
-    {
-     "h": "13:04",
-     "jogo": "Lima x Belo Horizonte",
-     "odd": 2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784545273415,
    "premier": 1784547157820,
    "euro": 1784548554407,
-   "super": 1784544915808
+   "super": 1784549395115
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -341,12 +299,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 15
+   "2026-07-20": 8
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGGRR",
-   "n": 11,
+   "chave": "GGRRR",
+   "n": 7,
    "start": 1
   }
  },
