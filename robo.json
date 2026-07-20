@@ -333,20 +333,26 @@
    "2026-07-20": 7.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRR",
-   "n": 8,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 21,
    "start": 1
   }
  },
  "ambas": {
-  "saldo": -15.9,
-  "ciclos": 104,
-  "greens": 67,
+  "saldo": -14.1,
+  "ciclos": 105,
+  "greens": 68,
   "redsCiclo": 12,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-20T04:55:13.507Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "super · Bogota x Santos @2.2 (tiro 3)"
+   },
    {
     "quando": "2026-07-20T04:43:38.315Z",
     "resultado": "GREEN",
@@ -460,65 +466,46 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "super · Bogota x Montevideo @2.07 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-19T09:51:52.697Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "copa · México x Uruguai @1.93 (tiro 3)"
    }
   ],
   "consumidas": {
    "copa": 1784522115971,
-   "euro": 1784522618214
+   "euro": 1784522618214,
+   "super": 1784523313407
   },
   "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "05:46",
-     "jogo": "Medellin x Agua Branca",
-     "odd": 1.98
+     "h": "06:00",
+     "jogo": "Leicester x Burnley",
+     "odd": 1.95
     },
     {
-     "h": "05:49",
-     "jogo": "Quito x Santiago",
-     "odd": 1.9
+     "h": "06:03",
+     "jogo": "Chelsea x Aston",
+     "odd": 2.07
     },
     {
-     "h": "05:52",
-     "jogo": "Bogota x Santos",
-     "odd": 2.2
+     "h": "06:06",
+     "jogo": "Norwich x Leeds",
+     "odd": 2.1
     }
    ],
    "alvo": {
-    "h": "05:52",
-    "jogo": "Bogota x Santos",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1784523194613
+    "h": "06:00",
+    "jogo": "Leicester x Burnley",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1784523314412
    },
-   "iniciadoEm": 1784522619414,
-   "tiros": [
-    {
-     "h": "05:46",
-     "jogo": "Medellin x Agua Branca",
-     "odd": 1.98,
-     "unidades": 1
-    },
-    {
-     "h": "05:49",
-     "jogo": "Quito x Santiago",
-     "odd": 1.9,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1784523314412
   },
   "cooldown": {
    "euro": 1784522618214,
-   "super": 1784518260296,
+   "super": 1784523313407,
    "premier": 1784515478096,
    "copa": 1784522115971
   },
@@ -527,13 +514,13 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": 2.7
+   "2026-07-20": 4.5
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 11,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":03",
+   "n": 5,
+   "start": 2
   }
  }
 }
