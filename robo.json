@@ -154,13 +154,19 @@
   }
  },
  "o25": {
-  "saldo": -42.8,
-  "ciclos": 117,
-  "greens": 72,
+  "saldo": -41.7,
+  "ciclos": 118,
+  "greens": 73,
   "redsCiclo": 22,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T11:32:38.008Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Palace x Brighton @2.05 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T11:01:13.514Z",
     "resultado": "GREEN",
@@ -274,60 +280,18 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "premier · Newcastle x Norwich @2.07 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T05:43:55.216Z",
-    "resultado": "GREEN",
-    "unidades": 3.8,
-    "detalhe": "euro · Sérvia x Turquia @2.7 (tiro 3)"
    }
   ],
   "consumidas": {
    "euro": 1784544234813,
    "super": 1784544915808,
-   "copa": 1784545273415
+   "copa": 1784545273415,
+   "premier": 1784547157820
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "12:27",
-     "jogo": "Brentford x Tottenham",
-     "odd": 2.45
-    },
-    {
-     "h": "12:30",
-     "jogo": "Palace x Brighton",
-     "odd": 2.05
-    },
-    {
-     "h": "12:33",
-     "jogo": "Norwich x West Ham",
-     "odd": 2.45
-    }
-   ],
-   "alvo": {
-    "h": "12:30",
-    "jogo": "Palace x Brighton",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1784546977813
-   },
-   "iniciadoEm": 1784546618312,
-   "tiros": [
-    {
-     "h": "12:27",
-     "jogo": "Brentford x Tottenham",
-     "odd": 2.45,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784545273415,
-   "premier": 1784543017208,
+   "premier": 1784547157820,
    "euro": 1784544234813,
    "super": 1784544915808
   },
@@ -337,12 +301,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 10.1
+   "2026-07-20": 11.2
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":36",
-   "n": 12,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 60,
    "start": 1
   }
  },
