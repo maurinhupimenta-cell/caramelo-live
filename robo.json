@@ -312,13 +312,19 @@
   }
  },
  "ambas": {
-  "saldo": -20.6,
-  "ciclos": 121,
+  "saldo": -27.6,
+  "ciclos": 122,
   "greens": 81,
-  "redsCiclo": 15,
+  "redsCiclo": 16,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-20T11:18:56.510Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-20T10:46:55.311Z",
     "resultado": "GREEN",
@@ -432,64 +438,16 @@
     "resultado": "GREEN",
     "unidades": 0.7,
     "detalhe": "copa · Haiti x Cabo Verde @1.87 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T03:31:00.402Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "super · Buenos Aires x Quito @1.93 (tiro 1)"
    }
   ],
   "consumidas": {
-   "euro": 1784544415206
+   "euro": 1784544415206,
+   "super": 1784546336408
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "12:10",
-     "jogo": "Montevideo x La Plata",
-     "odd": 2.05
-    },
-    {
-     "h": "12:13",
-     "jogo": "Itaquera x Avellaneda",
-     "odd": 2.02
-    },
-    {
-     "h": "12:16",
-     "jogo": "Guayaquil x Santos",
-     "odd": 1.95
-    }
-   ],
-   "alvo": {
-    "h": "12:16",
-    "jogo": "Guayaquil x Santos",
-    "odd": 1.95,
-    "unidades": 4,
-    "desde": 1784546175522
-   },
-   "iniciadoEm": 1784545815620,
-   "tiros": [
-    {
-     "h": "12:10",
-     "jogo": "Montevideo x La Plata",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "12:13",
-     "jogo": "Itaquera x Avellaneda",
-     "odd": 2.02,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784544415206,
-   "super": 1784542215516,
+   "super": 1784546336408,
    "premier": 1784533296517,
    "copa": 1784538273916
   },
@@ -498,7 +456,7 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": -2
+   "2026-07-20": -9
   },
   "_gatilhoAtual": {
    "tipo": "seq",
