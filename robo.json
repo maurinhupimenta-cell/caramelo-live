@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -67.5,
-  "ciclos": 103,
-  "greens": 32,
+  "saldo": -61,
+  "ciclos": 104,
+  "greens": 33,
   "redsCiclo": 38,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-20T03:51:14.799Z",
+    "resultado": "GREEN",
+    "unidades": 6.5,
+    "detalhe": "premier · United x Aston @4.75 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T03:31:00.205Z",
     "resultado": "GREEN",
@@ -120,56 +126,15 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-19T06:47:40.396Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "04:45",
-     "jogo": "West Ham x City",
-     "odd": 4.5
-    },
-    {
-     "h": "04:48",
-     "jogo": "United x Aston",
-     "odd": 4.75
-    },
-    {
-     "h": "04:51",
-     "jogo": "Palace x Everton",
-     "odd": 4
-    }
-   ],
-   "alvo": {
-    "h": "04:48",
-    "jogo": "United x Aston",
-    "odd": 4.75,
-    "unidades": 2,
-    "desde": 1784519259103
-   },
-   "iniciadoEm": 1784518719601,
-   "tiros": [
-    {
-     "h": "04:45",
-     "jogo": "West Ham x City",
-     "odd": 4.5,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "premier": 1784519474695
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784489292106,
-   "premier": 1784515477905,
+   "premier": 1784519474695,
    "euro": 1784486951501,
    "super": 1784518260107
   },
@@ -178,7 +143,7 @@
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
-   "2026-07-20": 9.8
+   "2026-07-20": 16.3
   }
  },
  "o25": {
