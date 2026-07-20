@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -68.2,
-  "ciclos": 114,
+  "saldo": -75.2,
+  "ciclos": 115,
   "greens": 38,
-  "redsCiclo": 43,
+  "redsCiclo": 44,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-20T09:47:36.616Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-20T09:00:55.413Z",
     "resultado": "RED_CICLO",
@@ -120,64 +126,16 @@
     "resultado": "GREEN",
     "unidades": 7,
     "detalhe": "copa · Marrocos x Gana @5 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-19T17:17:12.894Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
-   "super": 1784538055315
+   "super": 1784538055315,
+   "premier": 1784540856514
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "10:39",
-     "jogo": "Brentford x West Ham",
-     "odd": 5.5
-    },
-    {
-     "h": "10:42",
-     "jogo": "Leicester x Wolverhampton",
-     "odd": 4
-    },
-    {
-     "h": "10:45",
-     "jogo": "Brighton x Burnley",
-     "odd": 3.75
-    }
-   ],
-   "alvo": {
-    "h": "10:45",
-    "jogo": "Brighton x Burnley",
-    "odd": 3.75,
-    "unidades": 4,
-    "desde": 1784540678115
-   },
-   "iniciadoEm": 1784540137520,
-   "tiros": [
-    {
-     "h": "10:39",
-     "jogo": "Brentford x West Ham",
-     "odd": 5.5,
-     "unidades": 1
-    },
-    {
-     "h": "10:42",
-     "jogo": "Leicester x Wolverhampton",
-     "odd": 4,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784535373707,
-   "premier": 1784532222107,
+   "premier": 1784540856514,
    "euro": 1784522533511,
    "super": 1784538055315
   },
@@ -186,7 +144,7 @@
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
-   "2026-07-20": 9.1
+   "2026-07-20": 2.1
   },
   "_gatilhoAtual": {
    "tipo": "placar",
@@ -374,9 +332,9 @@
    "2026-07-20": 11.5
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 41,
+   "tipo": "seq",
+   "chave": "GRGG",
+   "n": 10,
    "start": 1
   }
  },
