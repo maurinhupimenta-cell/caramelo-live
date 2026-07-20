@@ -154,13 +154,19 @@
   }
  },
  "o25": {
-  "saldo": -41.4,
-  "ciclos": 112,
-  "greens": 68,
+  "saldo": -39.6,
+  "ciclos": 113,
+  "greens": 69,
   "redsCiclo": 21,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T09:51:54.208Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "copa · Irã x Espanha @2.4 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T09:43:15.817Z",
     "resultado": "GREEN",
@@ -274,59 +280,17 @@
     "resultado": "GREEN",
     "unidades": 1.7,
     "detalhe": "euro · Ucrânia x Eslováquia @2.35 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T04:12:57.599Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "copa · Portugal x Turquia @2.2 (tiro 2)"
    }
   ],
   "consumidas": {
    "premier": 1784539057915,
    "euro": 1784540275020,
-   "super": 1784540595711
+   "super": 1784540595711,
+   "copa": 1784541114020
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "10:46",
-     "jogo": "Senegal x Iraque",
-     "odd": 2.7
-    },
-    {
-     "h": "10:49",
-     "jogo": "Irã x Espanha",
-     "odd": 2.4
-    },
-    {
-     "h": "10:52",
-     "jogo": "Paraguai x Suíça",
-     "odd": 2.4
-    }
-   ],
-   "alvo": {
-    "h": "10:49",
-    "jogo": "Irã x Espanha",
-    "odd": 2.4,
-    "unidades": 2,
-    "desde": 1784540933706
-   },
-   "iniciadoEm": 1784540596815,
-   "tiros": [
-    {
-     "h": "10:46",
-     "jogo": "Senegal x Iraque",
-     "odd": 2.7,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784536073615,
+   "copa": 1784541114020,
    "premier": 1784539057915,
    "euro": 1784540275020,
    "super": 1784540595711
@@ -337,12 +301,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 11.5
+   "2026-07-20": 13.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGGR",
-   "n": 7,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 25,
    "start": 1
   }
  },
