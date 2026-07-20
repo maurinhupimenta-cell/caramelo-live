@@ -134,8 +134,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "15:22",
@@ -154,11 +154,11 @@
     }
    ],
    "alvo": {
-    "h": "15:25",
-    "jogo": "Santos x La Plata",
-    "odd": 6,
-    "unidades": 2,
-    "desde": 1784557575714
+    "h": "15:28",
+    "jogo": "Sao Paulo x Rio de Janeiro",
+    "odd": 4,
+    "unidades": 4,
+    "desde": 1784557694113
    },
    "iniciadoEm": 1784557152720,
    "tiros": [
@@ -167,6 +167,12 @@
      "jogo": "Agua Branca x Avellaneda",
      "odd": 4.33,
      "unidades": 1
+    },
+    {
+     "h": "15:25",
+     "jogo": "Santos x La Plata",
+     "odd": 6,
+     "unidades": 2
     }
    ]
   },
@@ -324,7 +330,36 @@
    "euro": 1784556913814,
    "super": 1784557575909
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:31",
+     "jogo": "México x Japão",
+     "odd": 2.35
+    },
+    {
+     "h": "15:34",
+     "jogo": "Costa do Marfim x Suíça",
+     "odd": 2.2
+    },
+    {
+     "h": "15:37",
+     "jogo": "Bélgica x Paraguai",
+     "odd": 2.4
+    }
+   ],
+   "alvo": {
+    "h": "15:31",
+    "jogo": "México x Japão",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1784557691607
+   },
+   "iniciadoEm": 1784557691607
+  },
   "cooldown": {
    "copa": 1784553911606,
    "premier": 1784555075316,
@@ -341,8 +376,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 38,
+   "chave": "goleada (3+)",
+   "n": 58,
    "start": 1
   }
  },
