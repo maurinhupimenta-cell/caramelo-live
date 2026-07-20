@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -103.2,
-  "ciclos": 119,
-  "greens": 38,
+  "saldo": -97.2,
+  "ciclos": 120,
+  "greens": 39,
   "redsCiclo": 48,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-20T13:29:39.913Z",
+    "resultado": "GREEN",
+    "unidades": 6,
+    "detalhe": "premier · Leeds x Newcastle @4.5 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T12:24:55.616Z",
     "resultado": "RED_CICLO",
@@ -120,56 +126,15 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-19T23:04:14.500Z",
-    "resultado": "GREEN",
-    "unidades": 2.8,
-    "detalhe": "super · Belo Horizonte x Agua Branca @3.8 (tiro 1)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "14:24",
-     "jogo": "Tottenham x Islington",
-     "odd": 5
-    },
-    {
-     "h": "14:27",
-     "jogo": "Leeds x Newcastle",
-     "odd": 4.5
-    },
-    {
-     "h": "14:30",
-     "jogo": "Brighton x Watford",
-     "odd": 4
-    }
-   ],
-   "alvo": {
-    "h": "14:27",
-    "jogo": "Leeds x Newcastle",
-    "odd": 4.5,
-    "unidades": 2,
-    "desde": 1784554043209
-   },
-   "iniciadoEm": 1784553644215,
-   "tiros": [
-    {
-     "h": "14:24",
-     "jogo": "Tottenham x Islington",
-     "odd": 5,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "premier": 1784554179814
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784542934710,
-   "premier": 1784546078012,
+   "premier": 1784554179814,
    "euro": 1784545133910,
    "super": 1784550295516
   },
@@ -178,12 +143,12 @@
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
-   "2026-07-20": -25.9
+   "2026-07-20": -19.9
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 16,
+   "n": 17,
    "start": 1
   }
  },
