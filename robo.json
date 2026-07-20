@@ -175,20 +175,26 @@
    "2026-07-20": 9.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRGR",
-   "n": 6,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":51",
+   "n": 5,
+   "start": 2
   }
  },
  "o25": {
-  "saldo": -48,
-  "ciclos": 94,
-  "greens": 53,
+  "saldo": -47,
+  "ciclos": 95,
+  "greens": 54,
   "redsCiclo": 18,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T04:41:34.806Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Norwich x Wolverhampton @2.05 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T04:31:55.821Z",
     "resultado": "GREEN",
@@ -302,50 +308,16 @@
     "resultado": "GREEN",
     "unidades": 0.8,
     "detalhe": "premier · Newcastle x Wolverhampton @1.95 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-19T07:10:13.772Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
-   "euro": 1784521915625
+   "euro": 1784521915625,
+   "premier": 1784522494506
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:39",
-     "jogo": "Norwich x Wolverhampton",
-     "odd": 2.05
-    },
-    {
-     "h": "05:42",
-     "jogo": "Burnley x Brighton",
-     "odd": 2
-    },
-    {
-     "h": "05:45",
-     "jogo": "Tottenham x Chelsea",
-     "odd": 2.4
-    }
-   ],
-   "alvo": {
-    "h": "05:39",
-    "jogo": "Norwich x Wolverhampton",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1784521917228
-   },
-   "iniciadoEm": 1784521917228
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784520777499,
-   "premier": 1784518537694,
+   "premier": 1784522494506,
    "euro": 1784521915625,
    "super": 1784506095998
   },
@@ -355,13 +327,13 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 4.9
+   "2026-07-20": 5.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":46",
-   "n": 5,
-   "start": 3
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 27,
+   "start": 1
   }
  },
  "ambas": {
