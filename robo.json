@@ -311,12 +311,40 @@
    }
   ],
   "consumidas": {
-   "euro": 1784569093314,
    "copa": 1784571312209,
    "super": 1784571431911,
    "premier": 1784572391318
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:41",
+     "jogo": "Portugal x Espanha",
+     "odd": 2.07
+    },
+    {
+     "h": "19:44",
+     "jogo": "Países Baixos x Alemanha",
+     "odd": 2.02
+    },
+    {
+     "h": "19:47",
+     "jogo": "Eslovênia x Sérvia",
+     "odd": 2.87
+    }
+   ],
+   "alvo": {
+    "h": "19:41",
+    "jogo": "Portugal x Espanha",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1784572726108
+   },
+   "iniciadoEm": 1784572726108
+  },
   "cooldown": {
    "copa": 1784571312209,
    "premier": 1784572391318,
@@ -332,9 +360,9 @@
    "2026-07-20": 14.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGRG",
-   "n": 14,
+   "tipo": "odd",
+   "chave": "2.87",
+   "n": 7,
    "start": 1
   }
  },
@@ -468,12 +496,40 @@
    }
   ],
   "consumidas": {
-   "copa": 1784569392608,
    "euro": 1784571313808,
    "super": 1784571432114,
    "premier": 1784571833012
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:46",
+     "jogo": "Marrocos x Paraguai",
+     "odd": 2.07
+    },
+    {
+     "h": "19:49",
+     "jogo": "Haiti x Panamá",
+     "odd": 1.95
+    },
+    {
+     "h": "19:52",
+     "jogo": "Uzbequistão x Cabo Verde",
+     "odd": 1.95
+    }
+   ],
+   "alvo": {
+    "h": "19:46",
+    "jogo": "Marrocos x Paraguai",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1784573051713
+   },
+   "iniciadoEm": 1784573051713
+  },
   "cooldown": {
    "euro": 1784571313808,
    "super": 1784571432114,
@@ -488,9 +544,9 @@
    "2026-07-20": -2
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 59,
+   "tipo": "time",
+   "chave": "Paraguai",
+   "n": 21,
    "start": 1
   }
  }
