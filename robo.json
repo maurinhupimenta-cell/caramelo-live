@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -111.2,
-  "ciclos": 122,
-  "greens": 39,
+  "saldo": -108,
+  "ciclos": 123,
+  "greens": 40,
   "redsCiclo": 50,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-20T14:38:43.808Z",
+    "resultado": "GREEN",
+    "unidades": 3.2,
+    "detalhe": "premier · Brentford x Burnley @4.2 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T14:31:14.311Z",
     "resultado": "RED_CICLO",
@@ -120,51 +126,17 @@
     "resultado": "GREEN",
     "unidades": 6.5,
     "detalhe": "premier · United x Aston @4.75 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T03:31:00.205Z",
-    "resultado": "GREEN",
-    "unidades": 9.8,
-    "detalhe": "super · Buenos Aires x Quito @4.2 (tiro 3)"
    }
   ],
   "consumidas": {
    "copa": 1784556492115,
-   "super": 1784557874210
+   "super": 1784557874210,
+   "premier": 1784558323707
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:36",
-     "jogo": "Brentford x Burnley",
-     "odd": 4.2
-    },
-    {
-     "h": "15:39",
-     "jogo": "Chelsea x Liverpool",
-     "odd": 4.33
-    },
-    {
-     "h": "15:42",
-     "jogo": "Burnley x Palace",
-     "odd": 4
-    }
-   ],
-   "alvo": {
-    "h": "15:36",
-    "jogo": "Brentford x Burnley",
-    "odd": 4.2,
-    "unidades": 1,
-    "desde": 1784557960309
-   },
-   "iniciadoEm": 1784557960309
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784556492115,
-   "premier": 1784554179814,
+   "premier": 1784558323707,
    "euro": 1784545133910,
    "super": 1784557874210
   },
@@ -173,7 +145,7 @@
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
-   "2026-07-20": -33.9
+   "2026-07-20": -30.7
   },
   "_gatilhoAtual": {
    "tipo": "placar",
