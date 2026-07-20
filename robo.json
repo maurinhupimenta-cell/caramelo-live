@@ -134,8 +134,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "20:25",
@@ -154,13 +154,21 @@
     }
    ],
    "alvo": {
-    "h": "20:25",
-    "jogo": "Espanha x Haiti",
-    "odd": 4,
-    "unidades": 1,
-    "desde": 1784575331718
+    "h": "20:28",
+    "jogo": "Escócia x Marrocos",
+    "odd": 5.5,
+    "unidades": 2,
+    "desde": 1784575811209
    },
-   "iniciadoEm": 1784575331718
+   "iniciadoEm": 1784575331718,
+   "tiros": [
+    {
+     "h": "20:25",
+     "jogo": "Espanha x Haiti",
+     "odd": 4,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784571313408,
@@ -546,7 +554,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "acima de 1-0 (2-1)",
-   "n": 52,
+   "n": 65,
    "start": 1
   }
  }
