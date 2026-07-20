@@ -335,7 +335,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "goleada (3+)",
-   "n": 71,
+   "n": 72,
    "start": 1
   }
  },
@@ -473,7 +473,44 @@
    "premier": 1784556192208,
    "euro": 1784556733916
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "15:46",
+     "jogo": "Santos x Rio de Janeiro",
+     "odd": 2
+    },
+    {
+     "h": "15:49",
+     "jogo": "Sao Paulo x Belo Horizonte",
+     "odd": 1.8
+    },
+    {
+     "h": "15:52",
+     "jogo": "Guayaquil x Agua Branca",
+     "odd": 1.85
+    }
+   ],
+   "alvo": {
+    "h": "15:49",
+    "jogo": "Sao Paulo x Belo Horizonte",
+    "odd": 1.8,
+    "unidades": 2,
+    "desde": 1784558951709
+   },
+   "iniciadoEm": 1784558771816,
+   "tiros": [
+    {
+     "h": "15:46",
+     "jogo": "Santos x Rio de Janeiro",
+     "odd": 2,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1784556733916,
    "super": 1784555113414,
@@ -488,9 +525,9 @@
    "2026-07-20": -6.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRRR",
-   "n": 9,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 38,
    "start": 1
   }
  }
