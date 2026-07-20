@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -43.8,
-  "ciclos": 133,
-  "greens": 85,
+  "saldo": -42.1,
+  "ciclos": 134,
+  "greens": 86,
   "redsCiclo": 25,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T16:02:48.208Z",
+    "resultado": "GREEN",
+    "unidades": 1.7,
+    "detalhe": "premier · Leicester x Watford @2.35 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T15:49:05.014Z",
     "resultado": "GREEN",
@@ -273,60 +279,18 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "euro · Turquia x Países Baixos @2.25 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T10:23:37.310Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "premier · City x Leicester @2.15 (tiro 1)"
    }
   ],
   "consumidas": {
    "euro": 1784560906614,
    "super": 1784562007608,
-   "copa": 1784562544816
+   "copa": 1784562544816,
+   "premier": 1784563368016
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "16:57",
-     "jogo": "Everton x Aston",
-     "odd": 2.25
-    },
-    {
-     "h": "17:00",
-     "jogo": "Leicester x Watford",
-     "odd": 2.35
-    },
-    {
-     "h": "17:03",
-     "jogo": "Chelsea x Burnley",
-     "odd": 2.15
-    }
-   ],
-   "alvo": {
-    "h": "17:00",
-    "jogo": "Leicester x Watford",
-    "odd": 2.35,
-    "unidades": 2,
-    "desde": 1784563182512
-   },
-   "iniciadoEm": 1784562819807,
-   "tiros": [
-    {
-     "h": "16:57",
-     "jogo": "Everton x Aston",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784562544816,
-   "premier": 1784559036715,
+   "premier": 1784563368016,
    "euro": 1784560906614,
    "super": 1784562007608
   },
@@ -336,12 +300,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 9.1
+   "2026-07-20": 10.8
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 54,
+   "chave": "goleada (3+)",
+   "n": 83,
    "start": 1
   }
  },
