@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -40.6,
-  "ciclos": 123,
-  "greens": 77,
+  "saldo": -39.4,
+  "ciclos": 124,
+  "greens": 78,
   "redsCiclo": 23,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T13:19:12.912Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Asuncion x Buenos Aires @2.1 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T13:01:54.415Z",
     "resultado": "GREEN",
@@ -273,61 +279,19 @@
     "resultado": "GREEN",
     "unidades": 3,
     "detalhe": "super · Bogota x Porto Alegre @3 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T07:09:50.412Z",
-    "resultado": "GREEN",
-    "unidades": 1.7,
-    "detalhe": "copa · Egito x África do Sul @2.35 (tiro 2)"
    }
   ],
   "consumidas": {
    "premier": 1784550937410,
-   "euro": 1784552514316
+   "euro": 1784552514316,
+   "super": 1784553552811
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "14:13",
-     "jogo": "Avellaneda x Medellin",
-     "odd": 2.4
-    },
-    {
-     "h": "14:16",
-     "jogo": "Asuncion x Buenos Aires",
-     "odd": 2.1
-    },
-    {
-     "h": "14:19",
-     "jogo": "Lima x Rio de Janeiro",
-     "odd": 2.1
-    }
-   ],
-   "alvo": {
-    "h": "14:16",
-    "jogo": "Asuncion x Buenos Aires",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1784553355607
-   },
-   "iniciadoEm": 1784552995216,
-   "tiros": [
-    {
-     "h": "14:13",
-     "jogo": "Avellaneda x Medellin",
-     "odd": 2.4,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784549593720,
    "premier": 1784550937410,
    "euro": 1784552514316,
-   "super": 1784549395115
+   "super": 1784553552811
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -335,12 +299,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 12.3
+   "2026-07-20": 13.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.2",
-   "n": 8,
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 14,
    "start": 1
   }
  },
