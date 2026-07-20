@@ -129,7 +129,36 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:45",
+     "jogo": "West Ham x City",
+     "odd": 4.5
+    },
+    {
+     "h": "04:48",
+     "jogo": "United x Aston",
+     "odd": 4.75
+    },
+    {
+     "h": "04:51",
+     "jogo": "Palace x Everton",
+     "odd": 4
+    }
+   ],
+   "alvo": {
+    "h": "04:45",
+    "jogo": "West Ham x City",
+    "odd": 4.5,
+    "unidades": 1,
+    "desde": 1784518719601
+   },
+   "iniciadoEm": 1784518719601
+  },
   "cooldown": {
    "copa": 1784489292106,
    "premier": 1784515477905,
@@ -273,9 +302,7 @@
     "detalhe": "premier · Liverpool x Newcastle @2.07 (tiro 3)"
    }
   ],
-  "consumidas": {
-   "premier": 1784518537694
-  },
+  "consumidas": {},
   "ciclo": null,
   "cooldown": {
    "copa": 1784510891806,
