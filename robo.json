@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -35.7,
-  "ciclos": 138,
+  "saldo": -42.7,
+  "ciclos": 139,
   "greens": 90,
-  "redsCiclo": 25,
+  "redsCiclo": 26,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T17:38:13.510Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-20T17:20:38.707Z",
     "resultado": "GREEN",
@@ -273,67 +279,19 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-20T11:55:54.511Z",
-    "resultado": "GREEN",
-    "unidades": 3.8,
-    "detalhe": "euro · Eslováquia x Albânia @2.7 (tiro 3)"
    }
   ],
   "consumidas": {
    "super": 1784566394814,
    "copa": 1784566871516,
-   "premier": 1784568038516
+   "premier": 1784568038516,
+   "euro": 1784569093314
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "18:29",
-     "jogo": "Espanha x Sérvia",
-     "odd": 2.3
-    },
-    {
-     "h": "18:32",
-     "jogo": "Turquia x Polônia",
-     "odd": 2.7
-    },
-    {
-     "h": "18:35",
-     "jogo": "Sérvia x Romênia",
-     "odd": 2.35
-    }
-   ],
-   "alvo": {
-    "h": "18:35",
-    "jogo": "Sérvia x Romênia",
-    "odd": 2.35,
-    "unidades": 4,
-    "desde": 1784568972109
-   },
-   "iniciadoEm": 1784568374210,
-   "tiros": [
-    {
-     "h": "18:29",
-     "jogo": "Espanha x Sérvia",
-     "odd": 2.3,
-     "unidades": 1
-    },
-    {
-     "h": "18:32",
-     "jogo": "Turquia x Polônia",
-     "odd": 2.7,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784566871516,
    "premier": 1784568038516,
-   "euro": 1784564773720,
+   "euro": 1784569093314,
    "super": 1784566394814
   },
   "dias": {
@@ -342,7 +300,7 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 17.2
+   "2026-07-20": 10.2
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -481,12 +439,40 @@
    }
   ],
   "consumidas": {
-   "copa": 1784565491207,
    "euro": 1784566032521,
    "premier": 1784566238507,
    "super": 1784567174319
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:40",
+     "jogo": "Paraguai x Equador",
+     "odd": 1.95
+    },
+    {
+     "h": "18:43",
+     "jogo": "Uzbequistão x Canadá",
+     "odd": 2.05
+    },
+    {
+     "h": "18:46",
+     "jogo": "Marrocos x Jordânia",
+     "odd": 2.05
+    }
+   ],
+   "alvo": {
+    "h": "18:40",
+    "jogo": "Paraguai x Equador",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1784569092110
+   },
+   "iniciadoEm": 1784569092110
+  },
   "cooldown": {
    "euro": 1784566032521,
    "super": 1784567174319,
@@ -501,9 +487,9 @@
    "2026-07-20": -6
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 44,
+   "tipo": "time",
+   "chave": "Uzbequistão",
+   "n": 20,
    "start": 1
   }
  }
