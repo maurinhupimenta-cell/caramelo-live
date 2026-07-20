@@ -480,7 +480,36 @@
    "super": 1784567174319,
    "copa": 1784569392608
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:50",
+     "jogo": "Países Baixos x Dinamarca",
+     "odd": 1.93
+    },
+    {
+     "h": "18:53",
+     "jogo": "Hungria x Ucrânia",
+     "odd": 2.05
+    },
+    {
+     "h": "18:56",
+     "jogo": "Alemanha x Sérvia",
+     "odd": 2.05
+    }
+   ],
+   "alvo": {
+    "h": "18:50",
+    "jogo": "Países Baixos x Dinamarca",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1784569692511
+   },
+   "iniciadoEm": 1784569692511
+  },
   "cooldown": {
    "euro": 1784566032521,
    "super": 1784567174319,
@@ -495,10 +524,10 @@
    "2026-07-20": -5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Paraguai",
-   "n": 19,
-   "start": 2
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 63,
+   "start": 1
   }
  }
 }
