@@ -154,13 +154,19 @@
   }
  },
  "o25": {
-  "saldo": -41.6,
-  "ciclos": 140,
-  "greens": 91,
+  "saldo": -40,
+  "ciclos": 141,
+  "greens": 92,
   "redsCiclo": 26,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T18:17:12.014Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "super · Asuncion x Quito @2.3 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T18:15:12.314Z",
     "resultado": "GREEN",
@@ -274,62 +280,20 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · Burnley x Newcastle @2 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T12:13:13.908Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "copa · Austrália x Canadá @2.35 (tiro 1)"
    }
   ],
   "consumidas": {
    "premier": 1784568038516,
    "euro": 1784569093314,
-   "copa": 1784571312209
+   "copa": 1784571312209,
+   "super": 1784571431911
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "19:10",
-     "jogo": "Bogota x Santos",
-     "odd": 2.62
-    },
-    {
-     "h": "19:13",
-     "jogo": "Asuncion x Quito",
-     "odd": 2.3
-    },
-    {
-     "h": "19:16",
-     "jogo": "La Boca x Avellaneda",
-     "odd": 2.4
-    }
-   ],
-   "alvo": {
-    "h": "19:13",
-    "jogo": "Asuncion x Quito",
-    "odd": 2.3,
-    "unidades": 2,
-    "desde": 1784571374812
-   },
-   "iniciadoEm": 1784571313516,
-   "tiros": [
-    {
-     "h": "19:10",
-     "jogo": "Bogota x Santos",
-     "odd": 2.62,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784571312209,
    "premier": 1784568038516,
    "euro": 1784569093314,
-   "super": 1784566394814
+   "super": 1784571431911
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -337,7 +301,7 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 11.3
+   "2026-07-20": 12.9
   },
   "_gatilhoAtual": {
    "tipo": "placar",
