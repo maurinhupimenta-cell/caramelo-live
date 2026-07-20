@@ -144,13 +144,19 @@
   }
  },
  "o25": {
-  "saldo": -56.7,
-  "ciclos": 88,
-  "greens": 47,
+  "saldo": -55.7,
+  "ciclos": 89,
+  "greens": 48,
   "redsCiclo": 18,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T00:23:12.904Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Inglaterra x Suíça @2.05 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T00:08:16.099Z",
     "resultado": "RED_CICLO",
@@ -264,49 +270,16 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-19T02:36:12.028Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "euro · Croácia x Escócia @2.2 (tiro 1)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "01:20",
-     "jogo": "Inglaterra x Suíça",
-     "odd": 2.05
-    },
-    {
-     "h": "01:23",
-     "jogo": "Escócia x Países Baixos",
-     "odd": 2.07
-    },
-    {
-     "h": "01:26",
-     "jogo": "Espanha x Eslováquia",
-     "odd": 2.15
-    }
-   ],
-   "alvo": {
-    "h": "01:20",
-    "jogo": "Inglaterra x Suíça",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1784506634903
-   },
-   "iniciadoEm": 1784506634903
+  "consumidas": {
+   "euro": 1784506992803
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784472352097,
    "premier": 1784457156700,
-   "euro": 1784503933307,
+   "euro": 1784506992803,
    "super": 1784506095998
   },
   "dias": {
@@ -314,7 +287,7 @@
    "2026-07-16": -14.2,
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
-   "2026-07-19": -15.8
+   "2026-07-19": -14.8
   }
  },
  "ambas": {
@@ -447,7 +420,36 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "01:29",
+     "jogo": "Turquia x Albânia",
+     "odd": 2.37
+    },
+    {
+     "h": "01:32",
+     "jogo": "Inglaterra x Áustria",
+     "odd": 1.93
+    },
+    {
+     "h": "01:35",
+     "jogo": "França x Dinamarca",
+     "odd": 1.98
+    }
+   ],
+   "alvo": {
+    "h": "01:29",
+    "jogo": "Turquia x Albânia",
+    "odd": 2.37,
+    "unidades": 1,
+    "desde": 1784506992994
+   },
+   "iniciadoEm": 1784506992994
+  },
   "cooldown": {
    "euro": 1784500872197,
    "super": 1784504775197,
