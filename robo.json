@@ -312,13 +312,19 @@
   }
  },
  "ambas": {
-  "saldo": -21.8,
-  "ciclos": 113,
-  "greens": 74,
+  "saldo": -20.7,
+  "ciclos": 114,
+  "greens": 75,
   "redsCiclo": 14,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-20T07:48:55.909Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Quito x Penarol @2.1 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T07:41:36.713Z",
     "resultado": "GREEN",
@@ -432,52 +438,18 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-19T16:37:14.194Z",
-    "resultado": "GREEN",
-    "unidades": 1.6,
-    "detalhe": "super · Belo Horizonte x Porto Alegre @2.15 (tiro 3)"
    }
   ],
   "consumidas": {
    "copa": 1784530316507,
    "euro": 1784531834118,
-   "premier": 1784533296517
+   "premier": 1784533296517,
+   "super": 1784533735716
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "08:46",
-     "jogo": "Quito x Penarol",
-     "odd": 2.1
-    },
-    {
-     "h": "08:49",
-     "jogo": "Guayaquil x Rio de Janeiro",
-     "odd": 1.9
-    },
-    {
-     "h": "08:52",
-     "jogo": "Belo Horizonte x Itaquera",
-     "odd": 1.93
-    }
-   ],
-   "alvo": {
-    "h": "08:46",
-    "jogo": "Quito x Penarol",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1784533300316
-   },
-   "iniciadoEm": 1784533300316
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784531834118,
-   "super": 1784528156912,
+   "super": 1784533735716,
    "premier": 1784533296517,
    "copa": 1784530316507
   },
@@ -486,13 +458,13 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": -3.2
+   "2026-07-20": -2.1
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":49",
-   "n": 8,
-   "start": 2
+   "n": 7,
+   "start": 1
   }
  }
 }
