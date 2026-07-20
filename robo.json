@@ -283,7 +283,6 @@
    }
   ],
   "consumidas": {
-   "super": 1784571431911,
    "premier": 1784572391318,
    "euro": 1784573234108
   },
@@ -439,12 +438,40 @@
    }
   ],
   "consumidas": {
-   "euro": 1784571313808,
    "super": 1784571432114,
    "premier": 1784571833012,
    "copa": 1784573351513
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:17",
+     "jogo": "Áustria x Romênia",
+     "odd": 1.93
+    },
+    {
+     "h": "20:20",
+     "jogo": "Croácia x Turquia",
+     "odd": 2.07
+    },
+    {
+     "h": "20:23",
+     "jogo": "República Tcheca x Eslovênia",
+     "odd": 2.4
+    }
+   ],
+   "alvo": {
+    "h": "20:17",
+    "jogo": "Áustria x Romênia",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1784574914711
+   },
+   "iniciadoEm": 1784574914711
+  },
   "cooldown": {
    "euro": 1784571313808,
    "super": 1784571432114,
@@ -459,9 +486,9 @@
    "2026-07-20": -0.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Paraguai",
-   "n": 21,
+   "tipo": "seq",
+   "chave": "RGGRR",
+   "n": 11,
    "start": 1
   }
  }
