@@ -131,7 +131,36 @@
   "consumidas": {
    "super": 1784550295516
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:24",
+     "jogo": "Tottenham x Islington",
+     "odd": 5
+    },
+    {
+     "h": "14:27",
+     "jogo": "Leeds x Newcastle",
+     "odd": 4.5
+    },
+    {
+     "h": "14:30",
+     "jogo": "Brighton x Watford",
+     "odd": 4
+    }
+   ],
+   "alvo": {
+    "h": "14:24",
+    "jogo": "Tottenham x Islington",
+    "odd": 5,
+    "unidades": 1,
+    "desde": 1784553644215
+   },
+   "iniciadoEm": 1784553644215
+  },
   "cooldown": {
    "copa": 1784542934710,
    "premier": 1784546078012,
@@ -148,7 +177,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 13,
+   "n": 16,
    "start": 1
   }
  },
@@ -286,7 +315,36 @@
    "euro": 1784552514316,
    "super": 1784553552811
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:22",
+     "jogo": "Uzbequistão x Curação",
+     "odd": 2.2
+    },
+    {
+     "h": "14:25",
+     "jogo": "RD Congo x Paraguai",
+     "odd": 2.25
+    },
+    {
+     "h": "14:28",
+     "jogo": "Colômbia x Espanha",
+     "odd": 2.15
+    }
+   ],
+   "alvo": {
+    "h": "14:22",
+    "jogo": "Uzbequistão x Curação",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1784553554509
+   },
+   "iniciadoEm": 1784553554509
+  },
   "cooldown": {
    "copa": 1784549593720,
    "premier": 1784550937410,
@@ -302,10 +360,10 @@
    "2026-07-20": 13.5
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 14,
-   "start": 1
+   "tipo": "time",
+   "chave": "Austrália",
+   "n": 9,
+   "start": 3
   }
  },
  "ambas": {
