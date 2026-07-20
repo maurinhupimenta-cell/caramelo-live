@@ -132,7 +132,36 @@
    "premier": 1784540856514,
    "copa": 1784542934710
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:50",
+     "jogo": "Geórgia x Sérvia",
+     "odd": 5.5
+    },
+    {
+     "h": "11:53",
+     "jogo": "Escócia x Itália",
+     "odd": 4.5
+    },
+    {
+     "h": "11:56",
+     "jogo": "Turquia x Dinamarca",
+     "odd": 5.5
+    }
+   ],
+   "alvo": {
+    "h": "11:50",
+    "jogo": "Geórgia x Sérvia",
+    "odd": 5.5,
+    "unidades": 1,
+    "desde": 1784544415013
+   },
+   "iniciadoEm": 1784544415013
+  },
   "cooldown": {
    "copa": 1784542934710,
    "premier": 1784540856514,
@@ -149,7 +178,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 11,
+   "n": 6,
    "start": 1
   }
  },
@@ -287,7 +316,36 @@
    "premier": 1784543017208,
    "euro": 1784544234813
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:46",
+     "jogo": "La Plata x Santiago",
+     "odd": 2.3
+    },
+    {
+     "h": "11:49",
+     "jogo": "Buenos Aires x Belo Horizonte",
+     "odd": 1.98
+    },
+    {
+     "h": "11:52",
+     "jogo": "Santos x Itaquera",
+     "odd": 2.4
+    }
+   ],
+   "alvo": {
+    "h": "11:46",
+    "jogo": "La Plata x Santiago",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1784544235906
+   },
+   "iniciadoEm": 1784544235906
+  },
   "cooldown": {
    "copa": 1784541114020,
    "premier": 1784543017208,
@@ -305,7 +363,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "goleada (3+)",
-   "n": 48,
+   "n": 44,
    "start": 1
   }
  },
@@ -485,9 +543,9 @@
    "2026-07-20": -3.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRGG",
-   "n": 12,
+   "tipo": "time",
+   "chave": "Sérvia",
+   "n": 16,
    "start": 1
   }
  }
