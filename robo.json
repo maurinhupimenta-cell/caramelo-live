@@ -155,13 +155,19 @@
   }
  },
  "o25": {
-  "saldo": -25,
-  "ciclos": 154,
-  "greens": 104,
+  "saldo": -23.6,
+  "ciclos": 155,
+  "greens": 105,
   "redsCiclo": 27,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T22:24:00.614Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "euro · Itália x Hungria @2.4 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T22:18:36.706Z",
     "resultado": "GREEN",
@@ -275,53 +281,19 @@
     "resultado": "GREEN",
     "unidades": 2.6,
     "detalhe": "super · La Boca x Porto Alegre @2.8 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T16:26:13.912Z",
-    "resultado": "GREEN",
-    "unidades": 1.6,
-    "detalhe": "euro · Albânia x Ucrânia @2.62 (tiro 1)"
    }
   ],
   "consumidas": {
    "super": 1784584227807,
    "copa": 1784584933315,
-   "premier": 1784585916508
+   "premier": 1784585916508,
+   "euro": 1784586240511
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:20",
-     "jogo": "Itália x Hungria",
-     "odd": 2.4
-    },
-    {
-     "h": "23:23",
-     "jogo": "Geórgia x Turquia",
-     "odd": 2.55
-    },
-    {
-     "h": "23:26",
-     "jogo": "Inglaterra x Eslovênia",
-     "odd": 2.45
-    }
-   ],
-   "alvo": {
-    "h": "23:20",
-    "jogo": "Itália x Hungria",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1784585926517
-   },
-   "iniciadoEm": 1784585926517
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784584933316,
    "premier": 1784585916508,
-   "euro": 1784582052916,
+   "euro": 1784586240511,
    "super": 1784584227807
   },
   "dias": {
@@ -330,12 +302,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 27.9
+   "2026-07-20": 29.3
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 85,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 67,
    "start": 1
   }
  },
