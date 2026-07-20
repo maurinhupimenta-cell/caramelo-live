@@ -487,8 +487,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "12:10",
@@ -507,13 +507,21 @@
     }
    ],
    "alvo": {
-    "h": "12:10",
-    "jogo": "Montevideo x La Plata",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1784545815620
+    "h": "12:13",
+    "jogo": "Itaquera x Avellaneda",
+    "odd": 2.02,
+    "unidades": 2,
+    "desde": 1784545995613
    },
-   "iniciadoEm": 1784545815620
+   "iniciadoEm": 1784545815620,
+   "tiros": [
+    {
+     "h": "12:10",
+     "jogo": "Montevideo x La Plata",
+     "odd": 2.05,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784544415206,
@@ -532,7 +540,7 @@
    "tipo": "odd",
    "chave": "2.1",
    "n": 7,
-   "start": 3
+   "start": 2
   }
  }
 }
