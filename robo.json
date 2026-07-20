@@ -129,7 +129,6 @@
    }
   ],
   "consumidas": {
-   "super": 1784538055315,
    "premier": 1784540856514
   },
   "ciclo": null,
@@ -443,7 +442,36 @@
    "copa": 1784538273916,
    "euro": 1784540454610
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:01",
+     "jogo": "Santos x Guayaquil",
+     "odd": 1.98
+    },
+    {
+     "h": "11:04",
+     "jogo": "Sao Paulo x Montevideo",
+     "odd": 1.85
+    },
+    {
+     "h": "11:07",
+     "jogo": "Penarol x Lima",
+     "odd": 2.02
+    }
+   ],
+   "alvo": {
+    "h": "11:01",
+    "jogo": "Santos x Guayaquil",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1784541475408
+   },
+   "iniciadoEm": 1784541475408
+  },
   "cooldown": {
    "euro": 1784540454610,
    "super": 1784537875312,
@@ -459,8 +487,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 33,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 21,
    "start": 1
   }
  }
