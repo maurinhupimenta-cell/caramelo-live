@@ -182,13 +182,19 @@
   }
  },
  "o25": {
-  "saldo": -37.6,
-  "ciclos": 148,
-  "greens": 98,
+  "saldo": -35.6,
+  "ciclos": 149,
+  "greens": 99,
   "redsCiclo": 27,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T20:52:11.708Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "copa · Bósnia e Herzegovina x Japão @2.25 (tiro 3)"
+   },
    {
     "quando": "2026-07-20T20:42:13.908Z",
     "resultado": "RED_CICLO",
@@ -302,65 +308,17 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "premier · Liverpool x City @2.07 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T14:34:13.509Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "copa · México x Japão @2.35 (tiro 1)"
    }
   ],
   "consumidas": {
    "premier": 1784577257808,
    "euro": 1784577791208,
-   "super": 1784580133812
+   "super": 1784580133812,
+   "copa": 1784580731516
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "21:43",
-     "jogo": "Austrália x Haiti",
-     "odd": 2.15
-    },
-    {
-     "h": "21:46",
-     "jogo": "Alemanha x Áustria",
-     "odd": 2.15
-    },
-    {
-     "h": "21:49",
-     "jogo": "Bósnia e Herzegovina x Japão",
-     "odd": 2.25
-    }
-   ],
-   "alvo": {
-    "h": "21:49",
-    "jogo": "Bósnia e Herzegovina x Japão",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1784580611408
-   },
-   "iniciadoEm": 1784580134810,
-   "tiros": [
-    {
-     "h": "21:43",
-     "jogo": "Austrália x Haiti",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "21:46",
-     "jogo": "Alemanha x Áustria",
-     "odd": 2.15,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784575991709,
+   "copa": 1784580731516,
    "premier": 1784577257808,
    "euro": 1784577791208,
    "super": 1784580133812
@@ -371,12 +329,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 15.3
+   "2026-07-20": 17.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Irã",
-   "n": 18,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 81,
    "start": 1
   }
  },
