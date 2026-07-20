@@ -154,13 +154,19 @@
   }
  },
  "o25": {
-  "saldo": -32.8,
-  "ciclos": 146,
-  "greens": 97,
+  "saldo": -30.6,
+  "ciclos": 147,
+  "greens": 98,
   "redsCiclo": 26,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T20:03:11.310Z",
+    "resultado": "GREEN",
+    "unidades": 2.2,
+    "detalhe": "euro · Turquia x Geórgia @2.6 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T19:54:17.911Z",
     "resultado": "GREEN",
@@ -274,61 +280,19 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "super · Agua Branca x Avellaneda @2.2 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T14:15:13.914Z",
-    "resultado": "GREEN",
-    "unidades": 2.2,
-    "detalhe": "euro · Alemanha x Dinamarca @2.3 (tiro 3)"
    }
   ],
   "consumidas": {
    "super": 1784575514213,
    "copa": 1784575991709,
-   "premier": 1784577257808
+   "premier": 1784577257808,
+   "euro": 1784577791208
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "20:56",
-     "jogo": "Bélgica x Sérvia",
-     "odd": 2.35
-    },
-    {
-     "h": "20:59",
-     "jogo": "Turquia x Geórgia",
-     "odd": 2.6
-    },
-    {
-     "h": "21:02",
-     "jogo": "Eslovênia x República Tcheca",
-     "odd": 3
-    }
-   ],
-   "alvo": {
-    "h": "20:59",
-    "jogo": "Turquia x Geórgia",
-    "odd": 2.6,
-    "unidades": 2,
-    "desde": 1784577672419
-   },
-   "iniciadoEm": 1784577270417,
-   "tiros": [
-    {
-     "h": "20:56",
-     "jogo": "Bélgica x Sérvia",
-     "odd": 2.35,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784575991709,
    "premier": 1784577257808,
-   "euro": 1784573234108,
+   "euro": 1784577791208,
    "super": 1784575514213
   },
   "dias": {
@@ -337,12 +301,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 20.1
+   "2026-07-20": 22.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGRR",
-   "n": 8,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 81,
    "start": 1
   }
  },
