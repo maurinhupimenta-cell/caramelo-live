@@ -175,10 +175,10 @@
    "2026-07-20": 9.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":46",
-   "n": 5,
-   "start": 3
+   "tipo": "seq",
+   "chave": "RRRGR",
+   "n": 6,
+   "start": 1
   }
  },
  "o25": {
@@ -496,7 +496,36 @@
   "consumidas": {
    "copa": 1784522115971
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:38",
+     "jogo": "Suíça x Dinamarca",
+     "odd": 1.98
+    },
+    {
+     "h": "05:41",
+     "jogo": "Itália x Hungria",
+     "odd": 2.07
+    },
+    {
+     "h": "05:44",
+     "jogo": "Portugal x Espanha",
+     "odd": 1.85
+    }
+   ],
+   "alvo": {
+    "h": "05:38",
+    "jogo": "Suíça x Dinamarca",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1784522176258
+   },
+   "iniciadoEm": 1784522176258
+  },
   "cooldown": {
    "euro": 1784507895404,
    "super": 1784518260296,
@@ -511,9 +540,9 @@
    "2026-07-20": 1.6
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 14,
+   "tipo": "seq",
+   "chave": "RRRGG",
+   "n": 7,
    "start": 1
   }
  }
