@@ -288,8 +288,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "23:09",
@@ -308,11 +308,11 @@
     }
    ],
    "alvo": {
-    "h": "23:12",
-    "jogo": "United x Liverpool",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1784585514211
+    "h": "23:15",
+    "jogo": "Palace x Leicester",
+    "odd": 2.25,
+    "unidades": 4,
+    "desde": 1784585686814
    },
    "iniciadoEm": 1784585156215,
    "tiros": [
@@ -321,6 +321,12 @@
      "jogo": "Leeds x Tottenham",
      "odd": 2.75,
      "unidades": 1
+    },
+    {
+     "h": "23:12",
+     "jogo": "United x Liverpool",
+     "odd": 2.2,
+     "unidades": 2
     }
    ]
   },
@@ -339,9 +345,9 @@
    "2026-07-20": 25.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRGR",
-   "n": 11,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 84,
    "start": 1
   }
  },
