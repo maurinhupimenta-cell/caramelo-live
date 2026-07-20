@@ -129,7 +129,6 @@
    }
   ],
   "consumidas": {
-   "premier": 1784540856514,
    "copa": 1784542934710
   },
   "ciclo": {
@@ -368,13 +367,19 @@
   }
  },
  "ambas": {
-  "saldo": -21.7,
-  "ciclos": 120,
-  "greens": 80,
+  "saldo": -20.6,
+  "ciclos": 121,
+  "greens": 81,
   "redsCiclo": 15,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-20T10:46:55.311Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Espanha x Eslovênia @2.1 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T10:10:15.709Z",
     "resultado": "GREEN",
@@ -488,49 +493,15 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "super · Buenos Aires x Quito @1.93 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T02:44:38.200Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Leeds x Wolverhampton @2 (tiro 2)"
    }
   ],
   "consumidas": {
-   "super": 1784542215516
+   "super": 1784542215516,
+   "euro": 1784544415206
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "11:44",
-     "jogo": "Espanha x Eslovênia",
-     "odd": 2.1
-    },
-    {
-     "h": "11:47",
-     "jogo": "Romênia x Croácia",
-     "odd": 1.87
-    },
-    {
-     "h": "11:50",
-     "jogo": "Geórgia x Sérvia",
-     "odd": 2.15
-    }
-   ],
-   "alvo": {
-    "h": "11:44",
-    "jogo": "Espanha x Eslovênia",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1784544055308
-   },
-   "iniciadoEm": 1784544055308
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784540454610,
+   "euro": 1784544415206,
    "super": 1784542215516,
    "premier": 1784533296517,
    "copa": 1784538273916
@@ -540,12 +511,12 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": -3.1
+   "2026-07-20": -2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Sérvia",
-   "n": 16,
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 6,
    "start": 1
   }
  }
