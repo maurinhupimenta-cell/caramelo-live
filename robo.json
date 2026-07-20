@@ -289,8 +289,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "08:04",
@@ -309,13 +309,21 @@
     }
    ],
    "alvo": {
-    "h": "08:04",
-    "jogo": "Paraguai x Uzbequistão",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1784530991919
+    "h": "08:07",
+    "jogo": "Egito x África do Sul",
+    "odd": 2.35,
+    "unidades": 2,
+    "desde": 1784531235811
    },
-   "iniciadoEm": 1784530991919
+   "iniciadoEm": 1784530991919,
+   "tiros": [
+    {
+     "h": "08:04",
+     "jogo": "Paraguai x Uzbequistão",
+     "odd": 2.4,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784527254316,
@@ -334,7 +342,7 @@
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Egito",
-   "n": 8,
+   "n": 10,
    "start": 1
   }
  },
@@ -518,8 +526,8 @@
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":14",
-   "n": 7,
-   "start": 3
+   "n": 8,
+   "start": 2
   }
  }
 }
