@@ -284,7 +284,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1784530574419,
    "premier": 1784530962416,
    "copa": 1784531390311,
    "super": 1784531912619
@@ -445,7 +444,36 @@
    "premier": 1784533296517,
    "super": 1784533735716
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:55",
+     "jogo": "Portugal x Países Baixos",
+     "odd": 1.93
+    },
+    {
+     "h": "08:58",
+     "jogo": "Tunísia x Uzbequistão",
+     "odd": 2.2
+    },
+    {
+     "h": "09:01",
+     "jogo": "Áustria x Iraque",
+     "odd": 2.07
+    }
+   ],
+   "alvo": {
+    "h": "08:55",
+    "jogo": "Portugal x Países Baixos",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1784533916710
+   },
+   "iniciadoEm": 1784533916710
+  },
   "cooldown": {
    "euro": 1784531834118,
    "super": 1784533735716,
@@ -460,9 +488,9 @@
    "2026-07-20": -2.1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":49",
-   "n": 7,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 22,
    "start": 1
   }
  }
