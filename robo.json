@@ -283,14 +283,13 @@
    }
   ],
   "consumidas": {
-   "copa": 1784562544816,
    "premier": 1784563368016,
    "euro": 1784564773720
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:43",
@@ -309,13 +308,21 @@
     }
    ],
    "alvo": {
-    "h": "17:43",
-    "jogo": "Avellaneda x Guayaquil",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1784565731417
+    "h": "17:46",
+    "jogo": "La Boca x Porto Alegre",
+    "odd": 2.8,
+    "unidades": 2,
+    "desde": 1784566034110
    },
-   "iniciadoEm": 1784565731417
+   "iniciadoEm": 1784565731417,
+   "tiros": [
+    {
+     "h": "17:43",
+     "jogo": "Avellaneda x Guayaquil",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784562544816,
@@ -472,7 +479,36 @@
    "copa": 1784565491207,
    "euro": 1784566032521
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:48",
+     "jogo": "Norwich x Islington",
+     "odd": 1.93
+    },
+    {
+     "h": "17:51",
+     "jogo": "City x Leicester",
+     "odd": 1.95
+    },
+    {
+     "h": "17:54",
+     "jogo": "Tottenham x Watford",
+     "odd": 2.15
+    }
+   ],
+   "alvo": {
+    "h": "17:48",
+    "jogo": "Norwich x Islington",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1784566034207
+   },
+   "iniciadoEm": 1784566034207
+  },
   "cooldown": {
    "euro": 1784566032521,
    "super": 1784563485708,
@@ -487,9 +523,9 @@
    "2026-07-20": -7.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRRR",
-   "n": 13,
+   "tipo": "coluna",
+   "chave": ":51",
+   "n": 17,
    "start": 1
   }
  }
