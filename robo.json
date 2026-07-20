@@ -182,13 +182,19 @@
   }
  },
  "o25": {
-  "saldo": -35.8,
-  "ciclos": 110,
+  "saldo": -42.8,
+  "ciclos": 111,
   "greens": 67,
-  "redsCiclo": 20,
+  "redsCiclo": 21,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T09:37:55.119Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-20T09:17:38.014Z",
     "resultado": "GREEN",
@@ -302,65 +308,17 @@
     "resultado": "GREEN",
     "unidades": 1.8,
     "detalhe": "premier · Newcastle x Southampton @2.2 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-20T02:13:55.195Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "euro · Espanha x Ucrânia @2.15 (tiro 2)"
    }
   ],
   "consumidas": {
-   "premier": 1784539057915
+   "premier": 1784539057915,
+   "euro": 1784540275020
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "10:29",
-     "jogo": "Países Baixos x Hungria",
-     "odd": 2.2
-    },
-    {
-     "h": "10:32",
-     "jogo": "Dinamarca x Inglaterra",
-     "odd": 2.2
-    },
-    {
-     "h": "10:35",
-     "jogo": "Ucrânia x Geórgia",
-     "odd": 2.4
-    }
-   ],
-   "alvo": {
-    "h": "10:35",
-    "jogo": "Ucrânia x Geórgia",
-    "odd": 2.4,
-    "unidades": 4,
-    "desde": 1784540114509
-   },
-   "iniciadoEm": 1784539554809,
-   "tiros": [
-    {
-     "h": "10:29",
-     "jogo": "Países Baixos x Hungria",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "10:32",
-     "jogo": "Dinamarca x Inglaterra",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784536073615,
    "premier": 1784539057915,
-   "euro": 1784535775021,
+   "euro": 1784540275020,
    "super": 1784536635419
   },
   "dias": {
@@ -369,12 +327,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 17.1
+   "2026-07-20": 10.1
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 27,
+   "tipo": "seq",
+   "chave": "GGRRR",
+   "n": 6,
    "start": 1
   }
  },
@@ -513,8 +471,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "10:35",
@@ -533,13 +491,21 @@
     }
    ],
    "alvo": {
-    "h": "10:35",
-    "jogo": "Ucrânia x Geórgia",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1784540094708
+    "h": "10:38",
+    "jogo": "Dinamarca x Hungria",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1784540275207
    },
-   "iniciadoEm": 1784540094708
+   "iniciadoEm": 1784540094708,
+   "tiros": [
+    {
+     "h": "10:35",
+     "jogo": "Ucrânia x Geórgia",
+     "odd": 2.07,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784536494610,
@@ -558,7 +524,7 @@
    "tipo": "time",
    "chave": "Sérvia",
    "n": 14,
-   "start": 2
+   "start": 1
   }
  }
 }
