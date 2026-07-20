@@ -145,13 +145,19 @@
   }
  },
  "o25": {
-  "saldo": -52.9,
-  "ciclos": 91,
-  "greens": 50,
+  "saldo": -51.1,
+  "ciclos": 92,
+  "greens": 51,
   "redsCiclo": 18,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T03:35:37.800Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "premier · Newcastle x Southampton @2.2 (tiro 3)"
+   },
    {
     "quando": "2026-07-20T02:13:55.195Z",
     "resultado": "GREEN",
@@ -265,62 +271,15 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "premier · Liverpool x Newcastle @2.07 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-19T05:33:53.424Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "super · Quito x Sao Paulo @2.1 (tiro 1)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:27",
-     "jogo": "Everton x Wolverhampton",
-     "odd": 2.02
-    },
-    {
-     "h": "04:30",
-     "jogo": "Chelsea x Liverpool",
-     "odd": 2.2
-    },
-    {
-     "h": "04:33",
-     "jogo": "Newcastle x Southampton",
-     "odd": 2.2
-    }
-   ],
-   "alvo": {
-    "h": "04:33",
-    "jogo": "Newcastle x Southampton",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1784518358097
-   },
-   "iniciadoEm": 1784517639303,
-   "tiros": [
-    {
-     "h": "04:27",
-     "jogo": "Everton x Wolverhampton",
-     "odd": 2.02,
-     "unidades": 1
-    },
-    {
-     "h": "04:30",
-     "jogo": "Chelsea x Liverpool",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1784518537694
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784510891806,
-   "premier": 1784457156700,
+   "premier": 1784518537694,
    "euro": 1784513635004,
    "super": 1784506095998
   },
@@ -329,7 +288,8 @@
    "2026-07-16": -14.2,
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
-   "2026-07-19": -12
+   "2026-07-19": -12,
+   "2026-07-20": 1.8
   }
  },
  "ambas": {
