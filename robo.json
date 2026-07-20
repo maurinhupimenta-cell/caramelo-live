@@ -444,7 +444,36 @@
    "euro": 1784526953706,
    "super": 1784528156912
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:21",
+     "jogo": "Brentford x Wolverhampton",
+     "odd": 1.87
+    },
+    {
+     "h": "07:24",
+     "jogo": "Islington x Watford",
+     "odd": 2.05
+    },
+    {
+     "h": "07:27",
+     "jogo": "Palace x Tottenham",
+     "odd": 2.05
+    }
+   ],
+   "alvo": {
+    "h": "07:21",
+    "jogo": "Brentford x Wolverhampton",
+    "odd": 1.87,
+    "unidades": 1,
+    "desde": 1784528263111
+   },
+   "iniciadoEm": 1784528263111
+  },
   "cooldown": {
    "euro": 1784526953706,
    "super": 1784528156912,
@@ -459,9 +488,9 @@
    "2026-07-20": -7.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRG",
-   "n": 10,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 20,
    "start": 1
   }
  }
