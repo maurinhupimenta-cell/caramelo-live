@@ -282,12 +282,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1784550937410,
    "euro": 1784552514316,
    "super": 1784553552811,
    "copa": 1784553911606
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:36",
+     "jogo": "Brighton x Wolverhampton",
+     "odd": 1.95
+    },
+    {
+     "h": "14:39",
+     "jogo": "Leicester x West Ham",
+     "odd": 2.6
+    },
+    {
+     "h": "14:42",
+     "jogo": "Southampton x Watford",
+     "odd": 2.4
+    }
+   ],
+   "alvo": {
+    "h": "14:36",
+    "jogo": "Brighton x Wolverhampton",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1784554572213
+   },
+   "iniciadoEm": 1784554572213
+  },
   "cooldown": {
    "copa": 1784553911606,
    "premier": 1784550937410,
@@ -303,9 +331,9 @@
    "2026-07-20": 14.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRGG",
-   "n": 9,
+   "tipo": "coluna",
+   "chave": ":36",
+   "n": 14,
    "start": 1
   }
  },
