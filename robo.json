@@ -338,13 +338,19 @@
   }
  },
  "ambas": {
-  "saldo": -23,
-  "ciclos": 135,
-  "greens": 92,
+  "saldo": -22.2,
+  "ciclos": 136,
+  "greens": 93,
   "redsCiclo": 17,
   "aborts": 0,
   "descartes": 26,
   "historico": [
+   {
+    "quando": "2026-07-20T15:32:25.509Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "euro · Ucrânia x Inglaterra @1.9 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T15:22:05.010Z",
     "resultado": "GREEN",
@@ -458,58 +464,45 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-20T08:34:54.711Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "euro · Turquia x Croácia @2.05 (tiro 3)"
    }
   ],
   "consumidas": {
    "super": 1784559252312,
-   "copa": 1784560924819
+   "copa": 1784560924819,
+   "euro": 1784561545319
   },
   "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "16:26",
-     "jogo": "Geórgia x República Tcheca",
-     "odd": 2.2
+     "h": "16:33",
+     "jogo": "Everton x Islington",
+     "odd": 1.87
     },
     {
-     "h": "16:29",
-     "jogo": "Ucrânia x Inglaterra",
-     "odd": 1.9
+     "h": "16:36",
+     "jogo": "Palace x Leeds",
+     "odd": 2.1
     },
     {
-     "h": "16:32",
-     "jogo": "Países Baixos x Espanha",
-     "odd": 1.76
+     "h": "16:39",
+     "jogo": "Norwich x Newcastle",
+     "odd": 1.83
     }
    ],
    "alvo": {
-    "h": "16:29",
-    "jogo": "Ucrânia x Inglaterra",
-    "odd": 1.9,
-    "unidades": 2,
-    "desde": 1784561325709
+    "h": "16:33",
+    "jogo": "Everton x Islington",
+    "odd": 1.87,
+    "unidades": 1,
+    "desde": 1784561546416
    },
-   "iniciadoEm": 1784560926016,
-   "tiros": [
-    {
-     "h": "16:26",
-     "jogo": "Geórgia x República Tcheca",
-     "odd": 2.2,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1784561546416
   },
   "cooldown": {
-   "euro": 1784556733916,
+   "euro": 1784561545319,
    "super": 1784559252312,
    "premier": 1784556192208,
    "copa": 1784560924819
@@ -519,13 +512,13 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": -4.4
+   "2026-07-20": -3.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.07",
-   "n": 12,
-   "start": 3
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 37,
+   "start": 1
   }
  }
 }
