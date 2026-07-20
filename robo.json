@@ -283,12 +283,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1784543017208,
    "euro": 1784544234813,
    "super": 1784544915808,
    "copa": 1784545273415
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:27",
+     "jogo": "Brentford x Tottenham",
+     "odd": 2.45
+    },
+    {
+     "h": "12:30",
+     "jogo": "Palace x Brighton",
+     "odd": 2.05
+    },
+    {
+     "h": "12:33",
+     "jogo": "Norwich x West Ham",
+     "odd": 2.45
+    }
+   ],
+   "alvo": {
+    "h": "12:27",
+    "jogo": "Brentford x Tottenham",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1784546618312
+   },
+   "iniciadoEm": 1784546618312
+  },
   "cooldown": {
    "copa": 1784545273415,
    "premier": 1784543017208,
@@ -305,7 +333,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
+   "chave": "acima de 1-0 (2-1)",
    "n": 41,
    "start": 1
   }
