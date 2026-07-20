@@ -2208,10 +2208,14 @@ function leitorGrafico(liga, mkt) {
   // pays por jogo alinhado ao ponto: ponto k -> jogo k+JL-1; movimento m (entre k e k+1) -> jogo do ponto k+1
   const pagaDoMov = i => { const gi = (i + 1) + JL - 1; return gi < games.length ? (pays(games[gi], mkt) ? 1 : 0) : null; };
   const TAM = 6, ALVO = 3;
+  // FAIXA DO GRAFICO (contexto): o mesmo desenho no FUNDO, MEIO ou TOPO e outro animal.
+  // base do dia inteiro como referencia; ponto k da serie e comparado a ela.
+  const baseRef = (() => { let h = 0; for (const g of games) if (pays(g, mkt)) h++; return games.length ? h / games.length * 100 : 0; })();
+  const faixaDe = v => { if (!baseRef) return "M"; const rl = v / baseRef * 100; return rl < 85 ? "F" : rl > 115 ? "T" : "M"; };
   const memoria = {};
   let reguaH = 0, reguaN = 0;
   for (let i = TAM - 1; i + ALVO < mov.length; i++) {
-    const assin = mov.slice(i - TAM + 1, i + 1).join("");
+    const assin = faixaDe(serie[i + 1]) + "·" + mov.slice(i - TAM + 1, i + 1).join("");
     // green em ate 3 casas DEPOIS do desenho fechar
     let veio = 0;
     for (let k = 1; k <= ALVO; k++) { const pg = pagaDoMov(i + k); if (pg === 1) { veio = 1; break; } }
@@ -2219,8 +2223,8 @@ function leitorGrafico(liga, mkt) {
     reguaN++; if (veio) reguaH++;
   }
   const regua = reguaN ? Math.round(reguaH / reguaN * 100) : 0;
-  // desenho ATUAL (ultimos TAM movimentos)
-  const atual = mov.slice(-TAM).join("");
+  // desenho ATUAL (ultimos TAM movimentos) + faixa atual
+  const atual = faixaDe(serie[serie.length - 1]) + "·" + mov.slice(-TAM).join("");
   const stAtual = memoria[atual] || null;
   const achados = [];
   for (const [assin, [n, h]] of Object.entries(memoria)) {
