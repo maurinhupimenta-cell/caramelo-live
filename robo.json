@@ -346,13 +346,19 @@
   }
  },
  "ambas": {
-  "saldo": -19,
-  "ciclos": 130,
-  "greens": 89,
+  "saldo": -18,
+  "ciclos": 131,
+  "greens": 90,
   "redsCiclo": 16,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-20T14:03:12.309Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Islington x Brentford @2.05 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T13:55:13.210Z",
     "resultado": "GREEN",
@@ -466,52 +472,18 @@
     "resultado": "GREEN",
     "unidades": 0.8,
     "detalhe": "euro · Países Baixos x Espanha @1.76 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T06:51:56.611Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "copa · Escócia x Países Baixos @2.15 (tiro 2)"
    }
   ],
   "consumidas": {
    "super": 1784555113414,
-   "copa": 1784555713107
+   "copa": 1784555713107,
+   "premier": 1784556192208
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:00",
-     "jogo": "Islington x Brentford",
-     "odd": 2.05
-    },
-    {
-     "h": "15:03",
-     "jogo": "Liverpool x Wolverhampton",
-     "odd": 1.86
-    },
-    {
-     "h": "15:06",
-     "jogo": "Aston x West Ham",
-     "odd": 2.2
-    }
-   ],
-   "alvo": {
-    "h": "15:00",
-    "jogo": "Islington x Brentford",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1784555831910
-   },
-   "iniciadoEm": 1784555831910
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784552514416,
    "super": 1784555113414,
-   "premier": 1784552020311,
+   "premier": 1784556192208,
    "copa": 1784555713107
   },
   "dias": {
@@ -519,12 +491,12 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": -0.4
+   "2026-07-20": 0.6
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 17,
+   "tipo": "odd",
+   "chave": "1.9",
+   "n": 8,
    "start": 1
   }
  }
