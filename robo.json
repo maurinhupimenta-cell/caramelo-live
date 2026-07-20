@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -43.5,
-  "ciclos": 121,
-  "greens": 75,
+  "saldo": -42.5,
+  "ciclos": 122,
+  "greens": 76,
   "redsCiclo": 23,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T12:35:37.511Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Burnley x Newcastle @2 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T12:13:13.908Z",
     "resultado": "GREEN",
@@ -273,52 +279,18 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "premier · Chelsea x West Ham @2.5 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T06:56:14.606Z",
-    "resultado": "GREEN",
-    "unidades": 2.2,
-    "detalhe": "euro · Geórgia x Portugal @2.3 (tiro 3)"
    }
   ],
   "consumidas": {
    "euro": 1784548554407,
    "super": 1784549395115,
-   "copa": 1784549593720
+   "copa": 1784549593720,
+   "premier": 1784550937410
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "13:33",
-     "jogo": "Burnley x Newcastle",
-     "odd": 2
-    },
-    {
-     "h": "13:36",
-     "jogo": "Brighton x Liverpool",
-     "odd": 2.05
-    },
-    {
-     "h": "13:39",
-     "jogo": "Leicester x Burnley",
-     "odd": 2.2
-    }
-   ],
-   "alvo": {
-    "h": "13:33",
-    "jogo": "Burnley x Newcastle",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1784550758208
-   },
-   "iniciadoEm": 1784550758208
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784549593720,
-   "premier": 1784547157820,
+   "premier": 1784550937410,
    "euro": 1784548554407,
    "super": 1784549395115
   },
@@ -328,12 +300,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 9.4
+   "2026-07-20": 10.4
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "goleada (3+)",
-   "n": 64,
+   "n": 65,
    "start": 1
   }
  },
@@ -514,10 +486,10 @@
    "2026-07-20": -5.3
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 37,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.02",
+   "n": 8,
+   "start": 2
   }
  }
 }
