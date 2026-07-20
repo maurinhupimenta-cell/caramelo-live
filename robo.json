@@ -311,13 +311,19 @@
   }
  },
  "ambas": {
-  "saldo": -8.6,
-  "ciclos": 158,
-  "greens": 113,
+  "saldo": -7.8,
+  "ciclos": 159,
+  "greens": 114,
   "redsCiclo": 18,
   "aborts": 0,
   "descartes": 27,
   "historico": [
+   {
+    "quando": "2026-07-20T22:59:57.415Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "premier · Brighton x Everton @1.8 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T22:57:22.112Z",
     "resultado": "GREEN",
@@ -431,51 +437,17 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-20T16:38:11.313Z",
-    "resultado": "GREEN",
-    "unidades": 0.8,
-    "detalhe": "copa · Brasil x Equador @1.9 (tiro 2)"
    }
   ],
   "consumidas": {
-   "euro": 1784588241921
+   "euro": 1784588241921,
+   "premier": 1784588397313
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:57",
-     "jogo": "Brighton x Everton",
-     "odd": 1.8
-    },
-    {
-     "h": "00:00",
-     "jogo": "Burnley x Palace",
-     "odd": 1.87
-    },
-    {
-     "h": "00:03",
-     "jogo": "Wolverhampton x Newcastle",
-     "odd": 1.8
-    }
-   ],
-   "alvo": {
-    "h": "23:57",
-    "jogo": "Brighton x Everton",
-    "odd": 1.8,
-    "unidades": 1,
-    "desde": 1784588254920
-   },
-   "iniciadoEm": 1784588254920
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784588241921,
    "super": 1784584227915,
-   "premier": 1784584429609,
+   "premier": 1784588397313,
    "copa": 1784573351513
   },
   "dias": {
@@ -483,12 +455,12 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": 10
+   "2026-07-20": 10.8
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 68,
+   "chave": "empate 1-1",
+   "n": 45,
    "start": 1
   }
  }
