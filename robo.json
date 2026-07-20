@@ -154,13 +154,19 @@
   }
  },
  "o25": {
-  "saldo": -43.5,
-  "ciclos": 106,
-  "greens": 63,
+  "saldo": -41.7,
+  "ciclos": 107,
+  "greens": 64,
   "redsCiclo": 20,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T08:22:55.118Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "euro · Alemanha x Áustria @2.2 (tiro 3)"
+   },
    {
     "quando": "2026-07-20T08:11:43.917Z",
     "resultado": "GREEN",
@@ -274,65 +280,17 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-19T23:32:13.496Z",
-    "resultado": "GREEN",
-    "unidades": 2.1,
-    "detalhe": "euro · República Tcheca x Itália @2.55 (tiro 2)"
    }
   ],
   "consumidas": {
-   "premier": 1784535103814
+   "premier": 1784535103814,
+   "euro": 1784535775021
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "09:14",
-     "jogo": "Inglaterra x Portugal",
-     "odd": 2.1
-    },
-    {
-     "h": "09:17",
-     "jogo": "Hungria x França",
-     "odd": 2.2
-    },
-    {
-     "h": "09:20",
-     "jogo": "Alemanha x Áustria",
-     "odd": 2.2
-    }
-   ],
-   "alvo": {
-    "h": "09:20",
-    "jogo": "Alemanha x Áustria",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1784535575807
-   },
-   "iniciadoEm": 1784535105208,
-   "tiros": [
-    {
-     "h": "09:14",
-     "jogo": "Inglaterra x Portugal",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "09:17",
-     "jogo": "Hungria x França",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784531390311,
    "premier": 1784535103814,
-   "euro": 1784530574419,
+   "euro": 1784535775021,
    "super": 1784531912619
   },
   "dias": {
@@ -341,12 +299,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 9.4
+   "2026-07-20": 11.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGRR",
-   "n": 6,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 40,
    "start": 1
   }
  },
@@ -531,7 +489,7 @@
    "tipo": "coluna",
    "chave": ":29",
    "n": 9,
-   "start": 3
+   "start": 2
   }
  }
 }
