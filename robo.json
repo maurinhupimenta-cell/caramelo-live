@@ -287,7 +287,36 @@
    "premier": 1784559036715,
    "euro": 1784560906614
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:31",
+     "jogo": "Buenos Aires x Santos",
+     "odd": 2.2
+    },
+    {
+     "h": "16:34",
+     "jogo": "Lima x Penarol",
+     "odd": 2.3
+    },
+    {
+     "h": "16:37",
+     "jogo": "Asuncion x Rio de Janeiro",
+     "odd": 2.25
+    }
+   ],
+   "alvo": {
+    "h": "16:31",
+    "jogo": "Buenos Aires x Santos",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1784561306511
+   },
+   "iniciadoEm": 1784561306511
+  },
   "cooldown": {
    "copa": 1784558053318,
    "premier": 1784559036715,
@@ -304,8 +333,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 48,
+   "chave": "goleada (3+)",
+   "n": 63,
    "start": 1
   }
  },
