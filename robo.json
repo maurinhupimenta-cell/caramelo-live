@@ -182,13 +182,19 @@
   }
  },
  "o25": {
-  "saldo": -47.7,
-  "ciclos": 99,
+  "saldo": -54.7,
+  "ciclos": 100,
   "greens": 57,
-  "redsCiclo": 19,
+  "redsCiclo": 20,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T06:00:54.509Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-20T05:47:36.607Z",
     "resultado": "GREEN",
@@ -302,65 +308,17 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "euro · Eslováquia x Países Baixos @2.1 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-19T12:01:54.098Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "euro · Ucrânia x Hungria @2.4 (tiro 1)"
    }
   ],
   "consumidas": {
    "super": 1784524016707,
    "euro": 1784526235113,
-   "premier": 1784526456415
+   "premier": 1784526456415,
+   "copa": 1784527254316
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "06:52",
-     "jogo": "Inglaterra x Marrocos",
-     "odd": 2.3
-    },
-    {
-     "h": "06:55",
-     "jogo": "Uzbequistão x EUA",
-     "odd": 2.25
-    },
-    {
-     "h": "06:58",
-     "jogo": "Bélgica x Gana",
-     "odd": 2.4
-    }
-   ],
-   "alvo": {
-    "h": "06:58",
-    "jogo": "Bélgica x Gana",
-    "odd": 2.4,
-    "unidades": 4,
-    "desde": 1784527073209
-   },
-   "iniciadoEm": 1784526554117,
-   "tiros": [
-    {
-     "h": "06:52",
-     "jogo": "Inglaterra x Marrocos",
-     "odd": 2.3,
-     "unidades": 1
-    },
-    {
-     "h": "06:55",
-     "jogo": "Uzbequistão x EUA",
-     "odd": 2.25,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784522935710,
+   "copa": 1784527254316,
    "premier": 1784526456415,
    "euro": 1784526235113,
    "super": 1784524016707
@@ -371,13 +329,13 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 5.2
+   "2026-07-20": -1.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRGR",
-   "n": 5,
-   "start": 1
+   "tipo": "time",
+   "chave": "Egito",
+   "n": 7,
+   "start": 3
   }
  },
  "ambas": {
