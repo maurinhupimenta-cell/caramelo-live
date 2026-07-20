@@ -131,7 +131,36 @@
   "consumidas": {
    "copa": 1784571313408
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:42",
+     "jogo": "Islington x Wolverhampton",
+     "odd": 4
+    },
+    {
+     "h": "19:45",
+     "jogo": "Southampton x Leicester",
+     "odd": 5
+    },
+    {
+     "h": "19:48",
+     "jogo": "Aston x Watford",
+     "odd": 4.75
+    }
+   ],
+   "alvo": {
+    "h": "19:42",
+    "jogo": "Islington x Wolverhampton",
+    "odd": 4,
+    "unidades": 1,
+    "desde": 1784572725711
+   },
+   "iniciadoEm": 1784572725711
+  },
   "cooldown": {
    "copa": 1784571313408,
    "premier": 1784558323707,
@@ -148,7 +177,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 17,
+   "n": 21,
    "start": 1
   }
  },
