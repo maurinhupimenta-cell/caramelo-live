@@ -194,13 +194,19 @@
   }
  },
  "o25": {
-  "saldo": -30.6,
-  "ciclos": 147,
+  "saldo": -37.6,
+  "ciclos": 148,
   "greens": 98,
-  "redsCiclo": 26,
+  "redsCiclo": 27,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T20:42:13.908Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-20T20:03:11.310Z",
     "resultado": "GREEN",
@@ -314,67 +320,48 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "copa · México x Japão @2.35 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T14:26:16.011Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "super · Agua Branca x Avellaneda @2.2 (tiro 1)"
    }
   ],
   "consumidas": {
    "premier": 1784577257808,
-   "euro": 1784577791208
+   "euro": 1784577791208,
+   "super": 1784580133812
   },
   "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "21:28",
-     "jogo": "Guayaquil x Penarol",
-     "odd": 2.35
+     "h": "21:43",
+     "jogo": "Austrália x Haiti",
+     "odd": 2.15
     },
     {
-     "h": "21:31",
-     "jogo": "Bogota x Buenos Aires",
-     "odd": 2.3
+     "h": "21:46",
+     "jogo": "Alemanha x Áustria",
+     "odd": 2.15
     },
     {
-     "h": "21:34",
-     "jogo": "Porto Alegre x Penarol",
-     "odd": 2.87
+     "h": "21:49",
+     "jogo": "Bósnia e Herzegovina x Japão",
+     "odd": 2.25
     }
    ],
    "alvo": {
-    "h": "21:34",
-    "jogo": "Porto Alegre x Penarol",
-    "odd": 2.87,
-    "unidades": 4,
-    "desde": 1784580131707
+    "h": "21:43",
+    "jogo": "Austrália x Haiti",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1784580134810
    },
-   "iniciadoEm": 1784579208815,
-   "tiros": [
-    {
-     "h": "21:28",
-     "jogo": "Guayaquil x Penarol",
-     "odd": 2.35,
-     "unidades": 1
-    },
-    {
-     "h": "21:31",
-     "jogo": "Bogota x Buenos Aires",
-     "odd": 2.3,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1784580134810
   },
   "cooldown": {
    "copa": 1784575991709,
    "premier": 1784577257808,
    "euro": 1784577791208,
-   "super": 1784575514213
+   "super": 1784580133812
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -382,12 +369,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 22.3
+   "2026-07-20": 15.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRR",
-   "n": 15,
+   "tipo": "time",
+   "chave": "Austrália",
+   "n": 13,
    "start": 1
   }
  },
@@ -524,7 +511,36 @@
    "euro": 1784579231121,
    "super": 1784580131813
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:45",
+     "jogo": "Watford x Brighton",
+     "odd": 1.87
+    },
+    {
+     "h": "21:48",
+     "jogo": "Norwich x Brentford",
+     "odd": 1.95
+    },
+    {
+     "h": "21:51",
+     "jogo": "Watford x Tottenham",
+     "odd": 2.1
+    }
+   ],
+   "alvo": {
+    "h": "21:45",
+    "jogo": "Watford x Brighton",
+    "odd": 1.87,
+    "unidades": 1,
+    "desde": 1784580133909
+   },
+   "iniciadoEm": 1784580133909
+  },
   "cooldown": {
    "euro": 1784579231121,
    "super": 1784580131813,
