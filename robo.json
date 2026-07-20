@@ -179,7 +179,7 @@
    "tipo": "time",
    "chave": "Escócia",
    "n": 6,
-   "start": 3
+   "start": 2
   }
  },
  "o25": {
@@ -312,11 +312,39 @@
    }
   ],
   "consumidas": {
-   "premier": 1784530962416,
    "copa": 1784531390311,
    "super": 1784531912619
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:06",
+     "jogo": "Southampton x Chelsea",
+     "odd": 2.3
+    },
+    {
+     "h": "09:09",
+     "jogo": "Newcastle x Liverpool",
+     "odd": 2.07
+    },
+    {
+     "h": "09:12",
+     "jogo": "Aston x City",
+     "odd": 2.2
+    }
+   ],
+   "alvo": {
+    "h": "09:06",
+    "jogo": "Southampton x Chelsea",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1784534564416
+   },
+   "iniciadoEm": 1784534564416
+  },
   "cooldown": {
    "copa": 1784531390311,
    "premier": 1784530962416,
@@ -333,8 +361,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 33,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 28,
    "start": 1
   }
  },
