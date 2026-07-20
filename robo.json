@@ -190,13 +190,19 @@
   }
  },
  "o25": {
-  "saldo": -38,
-  "ciclos": 142,
-  "greens": 93,
+  "saldo": -37,
+  "ciclos": 143,
+  "greens": 94,
   "redsCiclo": 26,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T18:47:14.212Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Países Baixos x Alemanha @2.02 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T18:33:11.511Z",
     "resultado": "GREEN",
@@ -310,53 +316,19 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "super · Asuncion x Buenos Aires @2.1 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T13:01:54.415Z",
-    "resultado": "GREEN",
-    "unidades": 1.9,
-    "detalhe": "euro · Polônia x Eslovênia @2.87 (tiro 1)"
    }
   ],
   "consumidas": {
    "copa": 1784571312209,
    "super": 1784571431911,
-   "premier": 1784572391318
+   "premier": 1784572391318,
+   "euro": 1784573234108
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "19:41",
-     "jogo": "Portugal x Espanha",
-     "odd": 2.07
-    },
-    {
-     "h": "19:44",
-     "jogo": "Países Baixos x Alemanha",
-     "odd": 2.02
-    },
-    {
-     "h": "19:47",
-     "jogo": "Eslovênia x Sérvia",
-     "odd": 2.87
-    }
-   ],
-   "alvo": {
-    "h": "19:41",
-    "jogo": "Portugal x Espanha",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1784572726108
-   },
-   "iniciadoEm": 1784572726108
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784571312209,
    "premier": 1784572391318,
-   "euro": 1784569093314,
+   "euro": 1784573234108,
    "super": 1784571431911
   },
   "dias": {
@@ -365,12 +337,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 14.9
+   "2026-07-20": 15.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.87",
-   "n": 7,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 67,
    "start": 1
   }
  },
