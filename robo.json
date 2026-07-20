@@ -327,7 +327,36 @@
    "super": 1784562007608,
    "copa": 1784562544816
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:57",
+     "jogo": "Everton x Aston",
+     "odd": 2.25
+    },
+    {
+     "h": "17:00",
+     "jogo": "Leicester x Watford",
+     "odd": 2.35
+    },
+    {
+     "h": "17:03",
+     "jogo": "Chelsea x Burnley",
+     "odd": 2.15
+    }
+   ],
+   "alvo": {
+    "h": "16:57",
+    "jogo": "Everton x Aston",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1784562819807
+   },
+   "iniciadoEm": 1784562819807
+  },
   "cooldown": {
    "copa": 1784562544816,
    "premier": 1784559036715,
@@ -345,7 +374,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "acima de 1-0 (2-1)",
-   "n": 51,
+   "n": 53,
    "start": 1
   }
  },
