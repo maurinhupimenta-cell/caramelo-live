@@ -131,8 +131,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "16:46",
@@ -151,13 +151,21 @@
     }
    ],
    "alvo": {
-    "h": "16:46",
-    "jogo": "Países Baixos x Brasil",
-    "odd": 4.5,
-    "unidades": 1,
-    "desde": 1784562165321
+    "h": "16:49",
+    "jogo": "Paraguai x Panamá",
+    "odd": 5.25,
+    "unidades": 2,
+    "desde": 1784562544708
    },
-   "iniciadoEm": 1784562165321
+   "iniciadoEm": 1784562165321,
+   "tiros": [
+    {
+     "h": "16:46",
+     "jogo": "Países Baixos x Brasil",
+     "odd": 4.5,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784556492115,
@@ -313,7 +321,36 @@
    "euro": 1784560906614,
    "super": 1784562007608
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:46",
+     "jogo": "Países Baixos x Brasil",
+     "odd": 2.25
+    },
+    {
+     "h": "16:49",
+     "jogo": "Paraguai x Panamá",
+     "odd": 2.5
+    },
+    {
+     "h": "16:52",
+     "jogo": "Croácia x Alemanha",
+     "odd": 2.25
+    }
+   ],
+   "alvo": {
+    "h": "16:46",
+    "jogo": "Países Baixos x Brasil",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1784562165513
+   },
+   "iniciadoEm": 1784562165513
+  },
   "cooldown": {
    "copa": 1784558053318,
    "premier": 1784559036715,
@@ -329,10 +366,10 @@
    "2026-07-20": 7.8
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 63,
-   "start": 1
+   "tipo": "time",
+   "chave": "Austrália",
+   "n": 11,
+   "start": 2
   }
  },
  "ambas": {
