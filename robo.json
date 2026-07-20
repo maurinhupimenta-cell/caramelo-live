@@ -154,13 +154,19 @@
   }
  },
  "o25": {
-  "saldo": -35.6,
-  "ciclos": 149,
-  "greens": 99,
+  "saldo": -32.8,
+  "ciclos": 150,
+  "greens": 100,
   "redsCiclo": 27,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T21:05:52.412Z",
+    "resultado": "GREEN",
+    "unidades": 2.8,
+    "detalhe": "premier · West Ham x Chelsea @2.45 (tiro 3)"
+   },
    {
     "quando": "2026-07-20T20:52:11.708Z",
     "resultado": "GREEN",
@@ -274,65 +280,17 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "euro · Países Baixos x Áustria @2.15 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T14:50:36.815Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "premier · Liverpool x City @2.07 (tiro 1)"
    }
   ],
   "consumidas": {
    "super": 1784580133812,
-   "copa": 1784580731516
+   "copa": 1784580731516,
+   "premier": 1784581552218
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "21:57",
-     "jogo": "Leicester x Islington",
-     "odd": 2.25
-    },
-    {
-     "h": "22:00",
-     "jogo": "Burnley x Brentford",
-     "odd": 2.2
-    },
-    {
-     "h": "22:03",
-     "jogo": "West Ham x Chelsea",
-     "odd": 2.45
-    }
-   ],
-   "alvo": {
-    "h": "22:03",
-    "jogo": "West Ham x Chelsea",
-    "odd": 2.45,
-    "unidades": 4,
-    "desde": 1784581358019
-   },
-   "iniciadoEm": 1784580911208,
-   "tiros": [
-    {
-     "h": "21:57",
-     "jogo": "Leicester x Islington",
-     "odd": 2.25,
-     "unidades": 1
-    },
-    {
-     "h": "22:00",
-     "jogo": "Burnley x Brentford",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784580731516,
-   "premier": 1784577257808,
+   "premier": 1784581552218,
    "euro": 1784577791208,
    "super": 1784580133812
   },
@@ -342,12 +300,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 17.3
+   "2026-07-20": 20.1
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGGRR",
-   "n": 8,
+   "chave": "GGGRR",
+   "n": 9,
    "start": 1
   }
  },
