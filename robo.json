@@ -131,7 +131,36 @@
   "consumidas": {
    "euro": 1784568371515
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:43",
+     "jogo": "Uzbequistão x Canadá",
+     "odd": 4.75
+    },
+    {
+     "h": "18:46",
+     "jogo": "Marrocos x Jordânia",
+     "odd": 4.5
+    },
+    {
+     "h": "18:49",
+     "jogo": "Equador x Uruguai",
+     "odd": 4
+    }
+   ],
+   "alvo": {
+    "h": "18:43",
+    "jogo": "Uzbequistão x Canadá",
+    "odd": 4.75,
+    "unidades": 1,
+    "desde": 1784569212114
+   },
+   "iniciadoEm": 1784569212114
+  },
   "cooldown": {
    "copa": 1784562904318,
    "premier": 1784558323707,
@@ -148,7 +177,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 16,
+   "n": 17,
    "start": 1
   }
  },
