@@ -287,8 +287,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "13:01",
@@ -307,13 +307,21 @@
     }
    ],
    "alvo": {
-    "h": "13:01",
-    "jogo": "Bogota x Asuncion",
-    "odd": 2.55,
-    "unidades": 1,
-    "desde": 1784548695719
+    "h": "13:04",
+    "jogo": "Lima x Belo Horizonte",
+    "odd": 2,
+    "unidades": 2,
+    "desde": 1784549075608
    },
-   "iniciadoEm": 1784548695719
+   "iniciadoEm": 1784548695719,
+   "tiros": [
+    {
+     "h": "13:01",
+     "jogo": "Bogota x Asuncion",
+     "odd": 2.55,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784545273415,
@@ -330,10 +338,10 @@
    "2026-07-20": 15
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 28,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":13",
+   "n": 12,
+   "start": 2
   }
  },
  "ambas": {
