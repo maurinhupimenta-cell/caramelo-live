@@ -182,13 +182,19 @@
   }
  },
  "o25": {
-  "saldo": -44.9,
-  "ciclos": 120,
-  "greens": 74,
+  "saldo": -43.5,
+  "ciclos": 121,
+  "greens": 75,
   "redsCiclo": 23,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T12:13:13.908Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "copa · Austrália x Canadá @2.35 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T12:09:55.214Z",
     "resultado": "RED_CICLO",
@@ -302,51 +308,17 @@
     "resultado": "GREEN",
     "unidades": 2.2,
     "detalhe": "euro · Geórgia x Portugal @2.3 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-20T06:12:56.809Z",
-    "resultado": "GREEN",
-    "unidades": 1.7,
-    "detalhe": "super · Santos x Bogota @2.7 (tiro 1)"
    }
   ],
   "consumidas": {
    "premier": 1784547157820,
    "euro": 1784548554407,
-   "super": 1784549395115
+   "super": 1784549395115,
+   "copa": 1784549593720
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "13:10",
-     "jogo": "Austrália x Canadá",
-     "odd": 2.35
-    },
-    {
-     "h": "13:13",
-     "jogo": "Haiti x Uruguai",
-     "odd": 2.1
-    },
-    {
-     "h": "13:16",
-     "jogo": "Irã x Gana",
-     "odd": 2.62
-    }
-   ],
-   "alvo": {
-    "h": "13:10",
-    "jogo": "Austrália x Canadá",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1784549396613
-   },
-   "iniciadoEm": 1784549396613
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784545273415,
+   "copa": 1784549593720,
    "premier": 1784547157820,
    "euro": 1784548554407,
    "super": 1784549395115
@@ -357,13 +329,13 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 8
+   "2026-07-20": 9.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Austrália",
-   "n": 7,
-   "start": 3
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 49,
+   "start": 1
   }
  },
  "ambas": {
