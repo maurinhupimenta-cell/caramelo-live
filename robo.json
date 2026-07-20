@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -73.2,
-  "ciclos": 129,
-  "greens": 45,
+  "saldo": -65.2,
+  "ciclos": 130,
+  "greens": 46,
   "redsCiclo": 51,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-20T19:33:11.614Z",
+    "resultado": "GREEN",
+    "unidades": 8,
+    "detalhe": "copa · Escócia x Marrocos @5.5 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T19:14:12.608Z",
     "resultado": "GREEN",
@@ -120,58 +126,16 @@
     "resultado": "GREEN",
     "unidades": 3.3,
     "detalhe": "super · Penarol x Belo Horizonte @4.33 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T06:58:15.107Z",
-    "resultado": "GREEN",
-    "unidades": 5,
-    "detalhe": "copa · Japão x Irã @6 (tiro 1)"
    }
   ],
   "consumidas": {
    "premier": 1784573444517,
-   "super": 1784574852420
+   "super": 1784574852420,
+   "copa": 1784575991511
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "20:25",
-     "jogo": "Espanha x Haiti",
-     "odd": 4
-    },
-    {
-     "h": "20:28",
-     "jogo": "Escócia x Marrocos",
-     "odd": 5.5
-    },
-    {
-     "h": "20:31",
-     "jogo": "México x Argélia",
-     "odd": 4.5
-    }
-   ],
-   "alvo": {
-    "h": "20:28",
-    "jogo": "Escócia x Marrocos",
-    "odd": 5.5,
-    "unidades": 2,
-    "desde": 1784575811209
-   },
-   "iniciadoEm": 1784575331718,
-   "tiros": [
-    {
-     "h": "20:25",
-     "jogo": "Espanha x Haiti",
-     "odd": 4,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784571313408,
+   "copa": 1784575991511,
    "premier": 1784573444517,
    "euro": 1784568371515,
    "super": 1784574852420
@@ -181,7 +145,7 @@
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
-   "2026-07-20": 4.1
+   "2026-07-20": 12.1
   },
   "_gatilhoAtual": {
    "tipo": "placar",
@@ -191,13 +155,19 @@
   }
  },
  "o25": {
-  "saldo": -35.7,
-  "ciclos": 144,
-  "greens": 95,
+  "saldo": -34.2,
+  "ciclos": 145,
+  "greens": 96,
   "redsCiclo": 26,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T19:33:11.815Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "copa · Escócia x Marrocos @2.55 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T19:25:14.315Z",
     "resultado": "GREEN",
@@ -311,51 +281,16 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-20T13:25:11.709Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "copa · Uzbequistão x Curação @2.2 (tiro 1)"
    }
   ],
   "consumidas": {
-   "premier": 1784572391318,
    "euro": 1784573234108,
-   "super": 1784575514213
+   "super": 1784575514213,
+   "copa": 1784575991709
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:28",
-     "jogo": "Escócia x Marrocos",
-     "odd": 2.55
-    },
-    {
-     "h": "20:31",
-     "jogo": "México x Argélia",
-     "odd": 2.25
-    },
-    {
-     "h": "20:34",
-     "jogo": "Japão x Panamá",
-     "odd": 2.5
-    }
-   ],
-   "alvo": {
-    "h": "20:28",
-    "jogo": "Escócia x Marrocos",
-    "odd": 2.55,
-    "unidades": 1,
-    "desde": 1784575571708
-   },
-   "iniciadoEm": 1784575571708
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784571312209,
+   "copa": 1784575991709,
    "premier": 1784572391318,
    "euro": 1784573234108,
    "super": 1784575514213
@@ -366,12 +301,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 17.2
+   "2026-07-20": 18.7
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 64,
+   "chave": "goleada (3+)",
+   "n": 82,
    "start": 1
   }
  },
@@ -560,10 +495,10 @@
    "2026-07-20": 0
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.2",
-   "n": 11,
-   "start": 2
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 44,
+   "start": 1
   }
  }
 }
