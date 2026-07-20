@@ -133,8 +133,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "07:00",
@@ -153,13 +153,21 @@
     }
    ],
    "alvo": {
-    "h": "07:00",
-    "jogo": "Palace x Norwich",
-    "odd": 4.2,
-    "unidades": 1,
-    "desde": 1784526814910
+    "h": "07:03",
+    "jogo": "Watford x United",
+    "odd": 4.33,
+    "unidades": 2,
+    "desde": 1784527362711
    },
-   "iniciadoEm": 1784526814910
+   "iniciadoEm": 1784526814910,
+   "tiros": [
+    {
+     "h": "07:00",
+     "jogo": "Palace x Norwich",
+     "odd": 4.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784522115668,
@@ -516,10 +524,10 @@
    "2026-07-20": -8.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Santos",
-   "n": 14,
-   "start": 3
+   "tipo": "seq",
+   "chave": "RRRR",
+   "n": 13,
+   "start": 1
   }
  }
 }
