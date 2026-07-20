@@ -439,11 +439,39 @@
    }
   ],
   "consumidas": {
-   "super": 1784533735716,
    "copa": 1784534453114,
    "euro": 1784536494610
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:49",
+     "jogo": "La Boca x Santiago",
+     "odd": 2
+    },
+    {
+     "h": "09:52",
+     "jogo": "Quito x Medellin",
+     "odd": 2.05
+    },
+    {
+     "h": "09:55",
+     "jogo": "Sao Paulo x Lima",
+     "odd": 1.86
+    }
+   ],
+   "alvo": {
+    "h": "09:49",
+    "jogo": "La Boca x Santiago",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1784537336006
+   },
+   "iniciadoEm": 1784537336006
+  },
   "cooldown": {
    "euro": 1784536494610,
    "super": 1784533735716,
@@ -458,9 +486,9 @@
    "2026-07-20": 0.5
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 27,
+   "tipo": "coluna",
+   "chave": ":49",
+   "n": 8,
    "start": 1
   }
  }
