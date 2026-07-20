@@ -180,13 +180,19 @@
   }
  },
  "o25": {
-  "saldo": -36.7,
-  "ciclos": 137,
-  "greens": 89,
+  "saldo": -35.7,
+  "ciclos": 138,
+  "greens": 90,
   "redsCiclo": 25,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T17:20:38.707Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Burnley x Wolverhampton @2 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T17:01:11.707Z",
     "resultado": "GREEN",
@@ -300,52 +306,18 @@
     "resultado": "GREEN",
     "unidades": 3.8,
     "detalhe": "euro · Eslováquia x Albânia @2.7 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-20T11:32:38.008Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "premier · Palace x Brighton @2.05 (tiro 2)"
    }
   ],
   "consumidas": {
    "euro": 1784564773720,
    "super": 1784566394814,
-   "copa": 1784566871516
+   "copa": 1784566871516,
+   "premier": 1784568038516
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:18",
-     "jogo": "Burnley x Wolverhampton",
-     "odd": 2
-    },
-    {
-     "h": "18:21",
-     "jogo": "Aston x City",
-     "odd": 2.2
-    },
-    {
-     "h": "18:24",
-     "jogo": "Chelsea x Norwich",
-     "odd": 2.2
-    }
-   ],
-   "alvo": {
-    "h": "18:18",
-    "jogo": "Burnley x Wolverhampton",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1784567684116
-   },
-   "iniciadoEm": 1784567684116
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784566871516,
-   "premier": 1784563368016,
+   "premier": 1784568038516,
    "euro": 1784564773720,
    "super": 1784566394814
   },
@@ -355,12 +327,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 16.2
+   "2026-07-20": 17.2
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "goleada (3+)",
-   "n": 87,
+   "n": 88,
    "start": 1
   }
  },
