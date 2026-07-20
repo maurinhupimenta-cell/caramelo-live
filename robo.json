@@ -154,13 +154,19 @@
   }
  },
  "o25": {
-  "saldo": -32.8,
-  "ciclos": 150,
-  "greens": 100,
+  "saldo": -30.8,
+  "ciclos": 151,
+  "greens": 101,
   "redsCiclo": 27,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T21:14:13.110Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "euro · Romênia x Eslovênia @2.5 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T21:05:52.412Z",
     "resultado": "GREEN",
@@ -274,61 +280,19 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-20T15:21:46.714Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "euro · Países Baixos x Áustria @2.15 (tiro 1)"
    }
   ],
   "consumidas": {
    "super": 1784580133812,
    "copa": 1784580731516,
-   "premier": 1784581552218
+   "premier": 1784581552218,
+   "euro": 1784582052916
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "22:08",
-     "jogo": "República Tcheca x Croácia",
-     "odd": 2.5
-    },
-    {
-     "h": "22:11",
-     "jogo": "Romênia x Eslovênia",
-     "odd": 2.5
-    },
-    {
-     "h": "22:14",
-     "jogo": "Inglaterra x Bélgica",
-     "odd": 2.05
-    }
-   ],
-   "alvo": {
-    "h": "22:11",
-    "jogo": "Romênia x Eslovênia",
-    "odd": 2.5,
-    "unidades": 2,
-    "desde": 1784581871220
-   },
-   "iniciadoEm": 1784581571413,
-   "tiros": [
-    {
-     "h": "22:08",
-     "jogo": "República Tcheca x Croácia",
-     "odd": 2.5,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784580731516,
    "premier": 1784581552218,
-   "euro": 1784577791208,
+   "euro": 1784582052916,
    "super": 1784580133812
   },
   "dias": {
@@ -337,12 +301,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 20.1
+   "2026-07-20": 22.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGRR",
-   "n": 9,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 82,
    "start": 1
   }
  },
