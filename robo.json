@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -54.2,
-  "ciclos": 112,
+  "saldo": -61.2,
+  "ciclos": 113,
   "greens": 38,
-  "redsCiclo": 41,
+  "redsCiclo": 42,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-20T08:16:13.806Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-20T07:23:42.209Z",
     "resultado": "RED_CICLO",
@@ -120,63 +126,15 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-19T15:49:53.295Z",
-    "resultado": "GREEN",
-    "unidades": 4,
-    "detalhe": "euro · França x Eslovênia @5 (tiro 1)"
    }
   ],
   "consumidas": {
-   "premier": 1784532222107
+   "premier": 1784532222107,
+   "copa": 1784535373707
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "09:07",
-     "jogo": "Uruguai x Senegal",
-     "odd": 5
-    },
-    {
-     "h": "09:10",
-     "jogo": "República Tcheca x Escócia",
-     "odd": 5.5
-    },
-    {
-     "h": "09:13",
-     "jogo": "Qatar x Tunísia",
-     "odd": 5.5
-    }
-   ],
-   "alvo": {
-    "h": "09:13",
-    "jogo": "Qatar x Tunísia",
-    "odd": 5.5,
-    "unidades": 4,
-    "desde": 1784535173618
-   },
-   "iniciadoEm": 1784534295114,
-   "tiros": [
-    {
-     "h": "09:07",
-     "jogo": "Uruguai x Senegal",
-     "odd": 5,
-     "unidades": 1
-    },
-    {
-     "h": "09:10",
-     "jogo": "República Tcheca x Escócia",
-     "odd": 5.5,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784530695008,
+   "copa": 1784535373707,
    "premier": 1784532222107,
    "euro": 1784522533511,
    "super": 1784531595920
@@ -186,7 +144,7 @@
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
-   "2026-07-20": 23.1
+   "2026-07-20": 16.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
@@ -373,10 +331,10 @@
    "2026-07-20": 9.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRG",
+   "tipo": "coluna",
+   "chave": ":25",
    "n": 9,
-   "start": 1
+   "start": 3
   }
  },
  "ambas": {
