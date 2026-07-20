@@ -333,8 +333,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRG",
-   "n": 7,
+   "chave": "RRRGR",
+   "n": 5,
    "start": 1
   }
  },
@@ -474,8 +474,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "06:47",
@@ -494,11 +494,11 @@
     }
    ],
    "alvo": {
-    "h": "06:50",
-    "jogo": "Dinamarca x Turquia",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1784526595318
+    "h": "06:53",
+    "jogo": "Hungria x República Tcheca",
+    "odd": 2.2,
+    "unidades": 4,
+    "desde": 1784526775114
    },
    "iniciadoEm": 1784526355220,
    "tiros": [
@@ -507,6 +507,12 @@
      "jogo": "Áustria x França",
      "odd": 1.9,
      "unidades": 1
+    },
+    {
+     "h": "06:50",
+     "jogo": "Dinamarca x Turquia",
+     "odd": 2.15,
+     "unidades": 2
     }
    ]
   },
@@ -524,10 +530,10 @@
    "2026-07-20": -1.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":56",
-   "n": 5,
-   "start": 1
+   "tipo": "time",
+   "chave": "Portugal",
+   "n": 9,
+   "start": 3
   }
  }
 }
