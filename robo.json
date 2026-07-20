@@ -154,13 +154,19 @@
   }
  },
  "o25": {
-  "saldo": -54.7,
-  "ciclos": 100,
-  "greens": 57,
+  "saldo": -53,
+  "ciclos": 101,
+  "greens": 58,
   "redsCiclo": 20,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T06:12:56.809Z",
+    "resultado": "GREEN",
+    "unidades": 1.7,
+    "detalhe": "super · Santos x Bogota @2.7 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T06:00:54.509Z",
     "resultado": "RED_CICLO",
@@ -274,54 +280,20 @@
     "resultado": "GREEN",
     "unidades": 1.8,
     "detalhe": "copa · Qatar x Paraguai @2.4 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-19T13:10:53.397Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "euro · Eslováquia x Países Baixos @2.1 (tiro 2)"
    }
   ],
   "consumidas": {
    "euro": 1784526235113,
    "premier": 1784526456415,
-   "copa": 1784527254316
+   "copa": 1784527254316,
+   "super": 1784527976616
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "07:10",
-     "jogo": "Santos x Bogota",
-     "odd": 2.7
-    },
-    {
-     "h": "07:13",
-     "jogo": "Quito x La Boca",
-     "odd": 2.4
-    },
-    {
-     "h": "07:16",
-     "jogo": "Bogota x Buenos Aires",
-     "odd": 2.3
-    }
-   ],
-   "alvo": {
-    "h": "07:10",
-    "jogo": "Santos x Bogota",
-    "odd": 2.7,
-    "unidades": 1,
-    "desde": 1784527633807
-   },
-   "iniciadoEm": 1784527633807
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784527254316,
    "premier": 1784526456415,
    "euro": 1784526235113,
-   "super": 1784524016707
+   "super": 1784527976616
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -329,12 +301,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": -1.8
+   "2026-07-20": -0.1
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.4",
-   "n": 7,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 28,
    "start": 1
   }
  },
@@ -473,8 +445,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "07:07",
@@ -493,11 +465,11 @@
     }
    ],
    "alvo": {
-    "h": "07:10",
-    "jogo": "Santos x Bogota",
-    "odd": 2.25,
-    "unidades": 2,
-    "desde": 1784527816816
+    "h": "07:13",
+    "jogo": "Quito x La Boca",
+    "odd": 2.05,
+    "unidades": 4,
+    "desde": 1784527976812
    },
    "iniciadoEm": 1784527155608,
    "tiros": [
@@ -506,6 +478,12 @@
      "jogo": "Sao Paulo x Agua Branca",
      "odd": 1.8,
      "unidades": 1
+    },
+    {
+     "h": "07:10",
+     "jogo": "Santos x Bogota",
+     "odd": 2.25,
+     "unidades": 2
     }
    ]
   },
@@ -523,9 +501,9 @@
    "2026-07-20": -8.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.95",
-   "n": 6,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 19,
    "start": 1
   }
  }
