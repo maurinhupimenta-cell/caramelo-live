@@ -311,13 +311,19 @@
   }
  },
  "ambas": {
-  "saldo": -24.4,
-  "ciclos": 134,
-  "greens": 91,
+  "saldo": -23,
+  "ciclos": 135,
+  "greens": 92,
   "redsCiclo": 17,
   "aborts": 0,
   "descartes": 26,
   "historico": [
+   {
+    "quando": "2026-07-20T15:22:05.010Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "copa · França x Panamá @2.1 (tiro 3)"
+   },
    {
     "quando": "2026-07-20T15:21:45.707Z",
     "resultado": "DESCARTADO",
@@ -431,36 +437,31 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "euro · Turquia x Croácia @2.05 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-20T08:00:53.215Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "copa · Tunísia x Uzbequistão @2.2 (tiro 2)"
    }
   ],
   "consumidas": {
-   "super": 1784559252312
+   "super": 1784559252312,
+   "copa": 1784560924819
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1784556733916,
    "super": 1784559252312,
    "premier": 1784556192208,
-   "copa": 1784555713107
+   "copa": 1784560924819
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": -5.8
+   "2026-07-20": -4.4
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 48,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":29",
+   "n": 15,
+   "start": 2
   }
  }
 }
