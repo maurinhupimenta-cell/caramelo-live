@@ -182,13 +182,19 @@
   }
  },
  "o25": {
-  "saldo": -53,
-  "ciclos": 101,
-  "greens": 58,
+  "saldo": -50.8,
+  "ciclos": 102,
+  "greens": 59,
   "redsCiclo": 20,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T06:56:14.606Z",
+    "resultado": "GREEN",
+    "unidades": 2.2,
+    "detalhe": "euro · Geórgia x Portugal @2.3 (tiro 3)"
+   },
    {
     "quando": "2026-07-20T06:12:56.809Z",
     "resultado": "GREEN",
@@ -302,60 +308,47 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-19T14:45:52.202Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "copa · Qatar x Paraguai @2.4 (tiro 2)"
    }
   ],
   "consumidas": {
    "copa": 1784527254316,
-   "super": 1784527976616
+   "super": 1784527976616,
+   "euro": 1784530574419
   },
   "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "07:47",
-     "jogo": "Romênia x Escócia",
-     "odd": 2.15
+     "h": "08:00",
+     "jogo": "Chelsea x West Ham",
+     "odd": 2.5
     },
     {
-     "h": "07:50",
-     "jogo": "França x Sérvia",
-     "odd": 2.3
+     "h": "08:03",
+     "jogo": "Watford x Newcastle",
+     "odd": 2.1
     },
     {
-     "h": "07:53",
-     "jogo": "Geórgia x Portugal",
-     "odd": 2.3
+     "h": "08:06",
+     "jogo": "Liverpool x Southampton",
+     "odd": 2.35
     }
    ],
    "alvo": {
-    "h": "07:50",
-    "jogo": "França x Sérvia",
-    "odd": 2.3,
-    "unidades": 2,
-    "desde": 1784530216610
+    "h": "08:00",
+    "jogo": "Chelsea x West Ham",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1784530608609
    },
-   "iniciadoEm": 1784529835914,
-   "tiros": [
-    {
-     "h": "07:47",
-     "jogo": "Romênia x Escócia",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1784530608609
   },
   "cooldown": {
    "copa": 1784527254316,
    "premier": 1784526456415,
-   "euro": 1784526235113,
+   "euro": 1784530574419,
    "super": 1784527976616
   },
   "dias": {
@@ -364,12 +357,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": -0.1
+   "2026-07-20": 2.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRR",
-   "n": 5,
+   "tipo": "coluna",
+   "chave": ":03",
+   "n": 8,
    "start": 1
   }
  },
