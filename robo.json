@@ -145,13 +145,19 @@
   }
  },
  "o25": {
-  "saldo": -51.1,
-  "ciclos": 92,
-  "greens": 51,
+  "saldo": -49.7,
+  "ciclos": 93,
+  "greens": 52,
   "redsCiclo": 18,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T04:12:57.599Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "copa · Portugal x Turquia @2.2 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T03:35:37.800Z",
     "resultado": "GREEN",
@@ -265,55 +271,14 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "premier · City x Tottenham @2.3 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-19T06:12:15.026Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "premier · Liverpool x Newcastle @2.07 (tiro 3)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "05:07",
-     "jogo": "Senegal x México",
-     "odd": 2.4
-    },
-    {
-     "h": "05:10",
-     "jogo": "Portugal x Turquia",
-     "odd": 2.2
-    },
-    {
-     "h": "05:13",
-     "jogo": "Argentina x Qatar",
-     "odd": 2.2
-    }
-   ],
-   "alvo": {
-    "h": "05:10",
-    "jogo": "Portugal x Turquia",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1784520732102
-   },
-   "iniciadoEm": 1784519876007,
-   "tiros": [
-    {
-     "h": "05:07",
-     "jogo": "Senegal x México",
-     "odd": 2.4,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "copa": 1784520777499
   },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784510891806,
+   "copa": 1784520777499,
    "premier": 1784518537694,
    "euro": 1784513635004,
    "super": 1784506095998
@@ -324,7 +289,7 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 1.8
+   "2026-07-20": 3.2
   }
  },
  "ambas": {
