@@ -311,13 +311,19 @@
   }
  },
  "ambas": {
-  "saldo": -12.9,
-  "ciclos": 154,
-  "greens": 109,
+  "saldo": -12,
+  "ciclos": 155,
+  "greens": 110,
   "redsCiclo": 18,
   "aborts": 0,
   "descartes": 27,
   "historico": [
+   {
+    "quando": "2026-07-20T21:36:12.012Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Polônia x Países Baixos @1.95 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T20:47:47.515Z",
     "resultado": "GREEN",
@@ -431,58 +437,16 @@
     "resultado": "GREEN",
     "unidades": 0.8,
     "detalhe": "euro · Ucrânia x Inglaterra @1.9 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T15:22:05.010Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "copa · França x Panamá @2.1 (tiro 3)"
    }
   ],
   "consumidas": {
    "super": 1784580131813,
-   "premier": 1784580467411
+   "premier": 1784580467411,
+   "euro": 1784583371910
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "22:29",
-     "jogo": "Espanha x Croácia",
-     "odd": 1.86
-    },
-    {
-     "h": "22:32",
-     "jogo": "Polônia x Países Baixos",
-     "odd": 1.95
-    },
-    {
-     "h": "22:35",
-     "jogo": "Dinamarca x Geórgia",
-     "odd": 2.2
-    }
-   ],
-   "alvo": {
-    "h": "22:32",
-    "jogo": "Polônia x Países Baixos",
-    "odd": 1.95,
-    "unidades": 2,
-    "desde": 1784583194320
-   },
-   "iniciadoEm": 1784582832717,
-   "tiros": [
-    {
-     "h": "22:29",
-     "jogo": "Espanha x Croácia",
-     "odd": 1.86,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784579231121,
+   "euro": 1784583371910,
    "super": 1784580131813,
    "premier": 1784580467411,
    "copa": 1784573351513
@@ -492,13 +456,13 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": 5.7
+   "2026-07-20": 6.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.8",
-   "n": 10,
-   "start": 2
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 67,
+   "start": 1
   }
  }
 }
