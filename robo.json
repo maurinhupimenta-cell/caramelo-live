@@ -334,7 +334,7 @@
   "_gatilhoAtual": {
    "tipo": "seq",
    "chave": "RRRG",
-   "n": 8,
+   "n": 7,
    "start": 1
   }
  },
@@ -474,8 +474,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "06:47",
@@ -494,13 +494,21 @@
     }
    ],
    "alvo": {
-    "h": "06:47",
-    "jogo": "Áustria x França",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1784526355220
+    "h": "06:50",
+    "jogo": "Dinamarca x Turquia",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1784526595318
    },
-   "iniciadoEm": 1784526355220
+   "iniciadoEm": 1784526355220,
+   "tiros": [
+    {
+     "h": "06:47",
+     "jogo": "Áustria x França",
+     "odd": 1.9,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784522618214,
@@ -519,7 +527,7 @@
    "tipo": "coluna",
    "chave": ":56",
    "n": 5,
-   "start": 2
+   "start": 1
   }
  }
 }
