@@ -133,8 +133,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "14:58",
@@ -153,11 +153,11 @@
     }
    ],
    "alvo": {
-    "h": "15:01",
-    "jogo": "Haiti x Marrocos",
+    "h": "15:04",
+    "jogo": "Suíça x Costa do Marfim",
     "odd": 4.2,
-    "unidades": 2,
-    "desde": 1784556075712
+    "unidades": 4,
+    "desde": 1784556315318
    },
    "iniciadoEm": 1784555712914,
    "tiros": [
@@ -166,6 +166,12 @@
      "jogo": "Argentina x Noruega",
      "odd": 4,
      "unidades": 1
+    },
+    {
+     "h": "15:01",
+     "jogo": "Haiti x Marrocos",
+     "odd": 4.2,
+     "unidades": 2
     }
    ]
   },
@@ -368,9 +374,9 @@
    "2026-07-20": 7.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGRR",
-   "n": 7,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 60,
    "start": 1
   }
  },
@@ -510,8 +516,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "15:02",
@@ -530,13 +536,21 @@
     }
    ],
    "alvo": {
-    "h": "15:02",
-    "jogo": "Eslováquia x Hungria",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1784556251616
+    "h": "15:05",
+    "jogo": "Áustria x França",
+    "odd": 1.9,
+    "unidades": 2,
+    "desde": 1784556374420
    },
-   "iniciadoEm": 1784556251616
+   "iniciadoEm": 1784556251616,
+   "tiros": [
+    {
+     "h": "15:02",
+     "jogo": "Eslováquia x Hungria",
+     "odd": 2.05,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784552514416,
@@ -552,9 +566,9 @@
    "2026-07-20": 0.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.9",
-   "n": 8,
+   "tipo": "seq",
+   "chave": "GGRRR",
+   "n": 9,
    "start": 1
   }
  }
