@@ -129,7 +129,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1784542934710,
    "euro": 1784545133910,
    "premier": 1784546078012
   },
@@ -444,7 +443,36 @@
    "euro": 1784544415206,
    "super": 1784546336408
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:25",
+     "jogo": "Bélgica x Marrocos",
+     "odd": 2.02
+    },
+    {
+     "h": "12:28",
+     "jogo": "Senegal x Argentina",
+     "odd": 2
+    },
+    {
+     "h": "12:31",
+     "jogo": "Inglaterra x Haiti",
+     "odd": 2.02
+    }
+   ],
+   "alvo": {
+    "h": "12:25",
+    "jogo": "Bélgica x Marrocos",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1784546337317
+   },
+   "iniciadoEm": 1784546337317
+  },
   "cooldown": {
    "euro": 1784544415206,
    "super": 1784546336408,
@@ -459,9 +487,9 @@
    "2026-07-20": -9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRR",
-   "n": 21,
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 34,
    "start": 1
   }
  }
