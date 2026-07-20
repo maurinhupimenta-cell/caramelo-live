@@ -154,13 +154,19 @@
   }
  },
  "o25": {
-  "saldo": -39.3,
-  "ciclos": 130,
-  "greens": 83,
+  "saldo": -38.1,
+  "ciclos": 131,
+  "greens": 84,
   "redsCiclo": 24,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T15:21:46.714Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Países Baixos x Áustria @2.15 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T14:50:36.815Z",
     "resultado": "GREEN",
@@ -274,24 +280,19 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "super · Sao Paulo x La Plata @2.35 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T09:37:55.119Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
    "super": 1784557575909,
    "copa": 1784558053318,
-   "premier": 1784559036715
+   "premier": 1784559036715,
+   "euro": 1784560906614
   },
   "ciclo": null,
   "cooldown": {
    "copa": 1784558053318,
    "premier": 1784559036715,
-   "euro": 1784556913814,
+   "euro": 1784560906614,
    "super": 1784557575909
   },
   "dias": {
@@ -300,23 +301,29 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 13.6
+   "2026-07-20": 14.8
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 73,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 48,
    "start": 1
   }
  },
  "ambas": {
   "saldo": -24.4,
-  "ciclos": 133,
+  "ciclos": 134,
   "greens": 91,
   "redsCiclo": 17,
   "aborts": 0,
-  "descartes": 25,
+  "descartes": 26,
   "historico": [
+   {
+    "quando": "2026-07-20T15:21:45.707Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-20T14:54:12.415Z",
     "resultado": "GREEN",
@@ -430,49 +437,12 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "copa · Tunísia x Uzbequistão @2.2 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T07:48:55.909Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "super · Quito x Penarol @2.1 (tiro 1)"
    }
   ],
   "consumidas": {
-   "premier": 1784556192208,
-   "euro": 1784556733916,
    "super": 1784559252312
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:01",
-     "jogo": "Alemanha x Curação",
-     "odd": 1.95
-    },
-    {
-     "h": "16:04",
-     "jogo": "Senegal x Equador",
-     "odd": 2
-    },
-    {
-     "h": "16:07",
-     "jogo": "França x Panamá",
-     "odd": 2.1
-    }
-   ],
-   "alvo": {
-    "h": "16:01",
-    "jogo": "Alemanha x Curação",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1784559493417
-   },
-   "iniciadoEm": 1784559493417
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784556733916,
    "super": 1784559252312,
@@ -488,8 +458,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 42,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 48,
    "start": 1
   }
  }
