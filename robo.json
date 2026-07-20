@@ -132,7 +132,36 @@
    "premier": 1784554179814,
    "copa": 1784556492115
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:22",
+     "jogo": "Agua Branca x Avellaneda",
+     "odd": 4.33
+    },
+    {
+     "h": "15:25",
+     "jogo": "Santos x La Plata",
+     "odd": 6
+    },
+    {
+     "h": "15:28",
+     "jogo": "Sao Paulo x Rio de Janeiro",
+     "odd": 4
+    }
+   ],
+   "alvo": {
+    "h": "15:22",
+    "jogo": "Agua Branca x Avellaneda",
+    "odd": 4.33,
+    "unidades": 1,
+    "desde": 1784557152720
+   },
+   "iniciadoEm": 1784557152720
+  },
   "cooldown": {
    "copa": 1784556492115,
    "premier": 1784554179814,
@@ -149,7 +178,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 15,
+   "n": 16,
    "start": 1
   }
  },
@@ -283,7 +312,6 @@
    }
   ],
   "consumidas": {
-   "super": 1784553552811,
    "copa": 1784553911606,
    "premier": 1784555075316,
    "euro": 1784556913814
