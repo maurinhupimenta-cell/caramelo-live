@@ -290,8 +290,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "05:58",
@@ -310,11 +310,11 @@
     }
    ],
    "alvo": {
-    "h": "06:01",
-    "jogo": "Itaquera x Buenos Aires",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1784523675407
+    "h": "06:04",
+    "jogo": "Santiago x Agua Branca",
+    "odd": 2,
+    "unidades": 4,
+    "desde": 1784523815515
    },
    "iniciadoEm": 1784523016009,
    "tiros": [
@@ -323,6 +323,12 @@
      "jogo": "La Boca x Bogota",
      "odd": 2.7,
      "unidades": 1
+    },
+    {
+     "h": "06:01",
+     "jogo": "Itaquera x Buenos Aires",
+     "odd": 2.15,
+     "unidades": 2
     }
    ]
   },
@@ -341,10 +347,10 @@
    "2026-07-20": 7.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Buenos Aires",
-   "n": 10,
-   "start": 3
+   "tipo": "seq",
+   "chave": "RGRRR",
+   "n": 6,
+   "start": 1
   }
  },
  "ambas": {
