@@ -154,13 +154,19 @@
   }
  },
  "o25": {
-  "saldo": -38.4,
-  "ciclos": 114,
-  "greens": 70,
+  "saldo": -37.1,
+  "ciclos": 115,
+  "greens": 71,
   "redsCiclo": 21,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T10:43:54.914Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "euro · Turquia x Países Baixos @2.25 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T10:23:37.310Z",
     "resultado": "GREEN",
@@ -274,52 +280,18 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "copa · Argélia x Canadá @2.4 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T04:41:34.806Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Norwich x Wolverhampton @2.05 (tiro 1)"
    }
   ],
   "consumidas": {
    "copa": 1784541114020,
-   "premier": 1784543017208
+   "premier": 1784543017208,
+   "euro": 1784544234813
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "11:41",
-     "jogo": "Turquia x Países Baixos",
-     "odd": 2.25
-    },
-    {
-     "h": "11:44",
-     "jogo": "Espanha x Eslovênia",
-     "odd": 2.45
-    },
-    {
-     "h": "11:47",
-     "jogo": "Romênia x Croácia",
-     "odd": 2.15
-    }
-   ],
-   "alvo": {
-    "h": "11:41",
-    "jogo": "Turquia x Países Baixos",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1784543894608
-   },
-   "iniciadoEm": 1784543894608
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784541114020,
    "premier": 1784543017208,
-   "euro": 1784540275020,
+   "euro": 1784544234813,
    "super": 1784540595711
   },
   "dias": {
@@ -328,7 +300,7 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 14.5
+   "2026-07-20": 15.8
   },
   "_gatilhoAtual": {
    "tipo": "placar",
