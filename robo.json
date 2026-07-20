@@ -445,7 +445,36 @@
    "euro": 1784556733916,
    "super": 1784559252312
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:01",
+     "jogo": "Alemanha x Curação",
+     "odd": 1.95
+    },
+    {
+     "h": "16:04",
+     "jogo": "Senegal x Equador",
+     "odd": 2
+    },
+    {
+     "h": "16:07",
+     "jogo": "França x Panamá",
+     "odd": 2.1
+    }
+   ],
+   "alvo": {
+    "h": "16:01",
+    "jogo": "Alemanha x Curação",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1784559493417
+   },
+   "iniciadoEm": 1784559493417
+  },
   "cooldown": {
    "euro": 1784556733916,
    "super": 1784559252312,
@@ -461,8 +490,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 38,
+   "chave": "empate 1-1",
+   "n": 42,
    "start": 1
   }
  }
