@@ -133,8 +133,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "07:00",
@@ -153,11 +153,11 @@
     }
    ],
    "alvo": {
-    "h": "07:03",
-    "jogo": "Watford x United",
-    "odd": 4.33,
-    "unidades": 2,
-    "desde": 1784527362711
+    "h": "07:06",
+    "jogo": "City x Tottenham",
+    "odd": 4.5,
+    "unidades": 4,
+    "desde": 1784527542518
    },
    "iniciadoEm": 1784526814910,
    "tiros": [
@@ -166,6 +166,12 @@
      "jogo": "Palace x Norwich",
      "odd": 4.2,
      "unidades": 1
+    },
+    {
+     "h": "07:03",
+     "jogo": "Watford x United",
+     "odd": 4.33,
+     "unidades": 2
     }
    ]
   },
@@ -476,7 +482,6 @@
    }
   ],
   "consumidas": {
-   "premier": 1784523758608,
    "copa": 1784526353806,
    "euro": 1784526953706
   },
@@ -524,10 +529,10 @@
    "2026-07-20": -8.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRR",
-   "n": 13,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.95",
+   "n": 6,
+   "start": 2
   }
  }
 }
