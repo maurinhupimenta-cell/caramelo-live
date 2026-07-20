@@ -328,8 +328,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "21:28",
@@ -348,11 +348,11 @@
     }
    ],
    "alvo": {
-    "h": "21:31",
-    "jogo": "Bogota x Buenos Aires",
-    "odd": 2.3,
-    "unidades": 2,
-    "desde": 1784579452311
+    "h": "21:34",
+    "jogo": "Porto Alegre x Penarol",
+    "odd": 2.87,
+    "unidades": 4,
+    "desde": 1784580131707
    },
    "iniciadoEm": 1784579208815,
    "tiros": [
@@ -361,6 +361,12 @@
      "jogo": "Guayaquil x Penarol",
      "odd": 2.35,
      "unidades": 1
+    },
+    {
+     "h": "21:31",
+     "jogo": "Bogota x Buenos Aires",
+     "odd": 2.3,
+     "unidades": 2
     }
    ]
   },
@@ -386,13 +392,19 @@
   }
  },
  "ambas": {
-  "saldo": -15.2,
-  "ciclos": 152,
-  "greens": 107,
+  "saldo": -13.8,
+  "ciclos": 153,
+  "greens": 108,
   "redsCiclo": 18,
   "aborts": 0,
   "descartes": 27,
   "historico": [
+   {
+    "quando": "2026-07-20T20:42:11.915Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "super · Porto Alegre x Penarol @2.35 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T20:27:11.313Z",
     "resultado": "GREEN",
@@ -506,50 +518,16 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-20T14:54:12.415Z",
-    "resultado": "GREEN",
-    "unidades": 0.6,
-    "detalhe": "super · Sao Paulo x Belo Horizonte @1.8 (tiro 2)"
    }
   ],
   "consumidas": {
-   "euro": 1784579231121
+   "euro": 1784579231121,
+   "super": 1784580131813
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:34",
-     "jogo": "Porto Alegre x Penarol",
-     "odd": 2.35
-    },
-    {
-     "h": "21:37",
-     "jogo": "Avellaneda x Medellin",
-     "odd": 2.07
-    },
-    {
-     "h": "21:40",
-     "jogo": "Penarol x Agua Branca",
-     "odd": 2
-    }
-   ],
-   "alvo": {
-    "h": "21:34",
-    "jogo": "Porto Alegre x Penarol",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1784579892813
-   },
-   "iniciadoEm": 1784579892813
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784579231121,
-   "super": 1784576234818,
+   "super": 1784580131813,
    "premier": 1784576513118,
    "copa": 1784573351513
   },
@@ -558,12 +536,12 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": 3.4
+   "2026-07-20": 4.8
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 51,
+   "tipo": "coluna",
+   "chave": ":48",
+   "n": 19,
    "start": 1
   }
  }
