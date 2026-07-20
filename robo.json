@@ -190,13 +190,19 @@
   }
  },
  "o25": {
-  "saldo": -42.8,
-  "ciclos": 111,
-  "greens": 67,
+  "saldo": -41.4,
+  "ciclos": 112,
+  "greens": 68,
   "redsCiclo": 21,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T09:43:15.817Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "super · Sao Paulo x La Plata @2.35 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T09:37:55.119Z",
     "resultado": "RED_CICLO",
@@ -310,53 +316,48 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "copa · Portugal x Turquia @2.2 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T03:35:37.800Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "premier · Newcastle x Southampton @2.2 (tiro 3)"
    }
   ],
   "consumidas": {
    "premier": 1784539057915,
-   "euro": 1784540275020
+   "euro": 1784540275020,
+   "super": 1784540595711
   },
   "ciclo": {
-   "liga": "super",
+   "liga": "copa",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "10:40",
-     "jogo": "Sao Paulo x La Plata",
-     "odd": 2.35
-    },
-    {
-     "h": "10:43",
-     "jogo": "Santos x Penarol",
-     "odd": 2.6
-    },
-    {
      "h": "10:46",
-     "jogo": "Guayaquil x Santiago",
-     "odd": 2.02
+     "jogo": "Senegal x Iraque",
+     "odd": 2.7
+    },
+    {
+     "h": "10:49",
+     "jogo": "Irã x Espanha",
+     "odd": 2.4
+    },
+    {
+     "h": "10:52",
+     "jogo": "Paraguai x Suíça",
+     "odd": 2.4
     }
    ],
    "alvo": {
-    "h": "10:40",
-    "jogo": "Sao Paulo x La Plata",
-    "odd": 2.35,
+    "h": "10:46",
+    "jogo": "Senegal x Iraque",
+    "odd": 2.7,
     "unidades": 1,
-    "desde": 1784540276222
+    "desde": 1784540596815
    },
-   "iniciadoEm": 1784540276222
+   "iniciadoEm": 1784540596815
   },
   "cooldown": {
    "copa": 1784536073615,
    "premier": 1784539057915,
    "euro": 1784540275020,
-   "super": 1784536635419
+   "super": 1784540595711
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -364,13 +365,13 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 10.1
+   "2026-07-20": 11.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.25",
-   "n": 7,
-   "start": 2
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 41,
+   "start": 1
   }
  },
  "ambas": {
