@@ -310,13 +310,19 @@
   }
  },
  "ambas": {
-  "saldo": -22.9,
-  "ciclos": 126,
-  "greens": 85,
+  "saldo": -21.9,
+  "ciclos": 127,
+  "greens": 86,
   "redsCiclo": 16,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-20T12:53:40.413Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Brentford x Islington @1.98 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T12:39:53.813Z",
     "resultado": "GREEN",
@@ -430,53 +436,19 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-20T05:45:53.912Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
    "euro": 1784548554607,
    "super": 1784550695912,
-   "copa": 1784551193616
+   "copa": 1784551193616,
+   "premier": 1784552020311
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "13:51",
-     "jogo": "Brentford x Islington",
-     "odd": 1.98
-    },
-    {
-     "h": "13:54",
-     "jogo": "City x West Ham",
-     "odd": 2.1
-    },
-    {
-     "h": "13:57",
-     "jogo": "Watford x Everton",
-     "odd": 1.9
-    }
-   ],
-   "alvo": {
-    "h": "13:51",
-    "jogo": "Brentford x Islington",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1784551673217
-   },
-   "iniciadoEm": 1784551673217
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784548554607,
    "super": 1784550695912,
-   "premier": 1784533296517,
+   "premier": 1784552020311,
    "copa": 1784551193616
   },
   "dias": {
@@ -484,11 +456,11 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": -4.3
+   "2026-07-20": -3.3
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":51",
+   "chave": ":54",
    "n": 12,
    "start": 1
   }
