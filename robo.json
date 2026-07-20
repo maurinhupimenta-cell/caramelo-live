@@ -315,7 +315,36 @@
    "euro": 1784582052916,
    "super": 1784584227807
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:55",
+     "jogo": "Irã x Uzbequistão",
+     "odd": 2.55
+    },
+    {
+     "h": "22:58",
+     "jogo": "Uruguai x Gana",
+     "odd": 2.35
+    },
+    {
+     "h": "23:01",
+     "jogo": "Iraque x Portugal",
+     "odd": 2.3
+    }
+   ],
+   "alvo": {
+    "h": "22:55",
+    "jogo": "Irã x Uzbequistão",
+    "odd": 2.55,
+    "unidades": 1,
+    "desde": 1784584346113
+   },
+   "iniciadoEm": 1784584346113
+  },
   "cooldown": {
    "copa": 1784580731516,
    "premier": 1784581552218,
@@ -331,20 +360,26 @@
    "2026-07-20": 24.2
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 17,
+   "tipo": "time",
+   "chave": "Irã",
+   "n": 16,
    "start": 1
   }
  },
  "ambas": {
-  "saldo": -10.7,
-  "ciclos": 156,
-  "greens": 111,
+  "saldo": -9.9,
+  "ciclos": 157,
+  "greens": 112,
   "redsCiclo": 18,
   "aborts": 0,
   "descartes": 27,
   "historico": [
+   {
+    "quando": "2026-07-20T21:53:49.711Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "premier · Everton x Wolverhampton @1.8 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T21:50:28.017Z",
     "resultado": "GREEN",
@@ -458,52 +493,18 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "super · Medellin x Avellaneda @2.05 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T15:35:51.215Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "premier · Everton x Islington @1.87 (tiro 1)"
    }
   ],
   "consumidas": {
    "euro": 1784583371910,
-   "super": 1784584227915
+   "super": 1784584227915,
+   "premier": 1784584429609
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:51",
-     "jogo": "Everton x Wolverhampton",
-     "odd": 1.8
-    },
-    {
-     "h": "22:54",
-     "jogo": "Brighton x Leeds",
-     "odd": 2
-    },
-    {
-     "h": "22:57",
-     "jogo": "Liverpool x City",
-     "odd": 1.85
-    }
-   ],
-   "alvo": {
-    "h": "22:51",
-    "jogo": "Everton x Wolverhampton",
-    "odd": 1.8,
-    "unidades": 1,
-    "desde": 1784584229520
-   },
-   "iniciadoEm": 1784584229520
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784583371910,
    "super": 1784584227915,
-   "premier": 1784580467411,
+   "premier": 1784584429609,
    "copa": 1784573351513
   },
   "dias": {
@@ -511,7 +512,7 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": 7.9
+   "2026-07-20": 8.7
   },
   "_gatilhoAtual": {
    "tipo": "placar",
