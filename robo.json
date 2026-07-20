@@ -132,7 +132,36 @@
    "copa": 1784522115668,
    "euro": 1784522533511
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:48",
+     "jogo": "Brighton x City",
+     "odd": 3.5
+    },
+    {
+     "h": "05:51",
+     "jogo": "Chelsea x Wolverhampton",
+     "odd": 4
+    },
+    {
+     "h": "05:54",
+     "jogo": "Leeds x Everton",
+     "odd": 4.75
+    }
+   ],
+   "alvo": {
+    "h": "05:48",
+    "jogo": "Brighton x City",
+    "odd": 3.5,
+    "unidades": 1,
+    "desde": 1784522535216
+   },
+   "iniciadoEm": 1784522535216
+  },
   "cooldown": {
    "copa": 1784522115668,
    "premier": 1784519474695,
@@ -286,7 +315,36 @@
    "euro": 1784521915625,
    "premier": 1784522494506
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:46",
+     "jogo": "Argélia x Canadá",
+     "odd": 2.4
+    },
+    {
+     "h": "05:49",
+     "jogo": "Suécia x Alemanha",
+     "odd": 2.4
+    },
+    {
+     "h": "05:52",
+     "jogo": "África do Sul x Tunísia",
+     "odd": 2.75
+    }
+   ],
+   "alvo": {
+    "h": "05:46",
+    "jogo": "Argélia x Canadá",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1784522578014
+   },
+   "iniciadoEm": 1784522578014
+  },
   "cooldown": {
    "copa": 1784520777499,
    "premier": 1784522494506,
@@ -302,9 +360,9 @@
    "2026-07-20": 5.9
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 27,
+   "tipo": "seq",
+   "chave": "RRRG",
+   "n": 7,
    "start": 1
   }
  },
@@ -442,8 +500,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:38",
@@ -462,13 +520,21 @@
     }
    ],
    "alvo": {
-    "h": "05:38",
-    "jogo": "Suíça x Dinamarca",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1784522176258
+    "h": "05:41",
+    "jogo": "Itália x Hungria",
+    "odd": 2.07,
+    "unidades": 2,
+    "desde": 1784522533807
    },
-   "iniciadoEm": 1784522176258
+   "iniciadoEm": 1784522176258,
+   "tiros": [
+    {
+     "h": "05:38",
+     "jogo": "Suíça x Dinamarca",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784507895404,
@@ -485,9 +551,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "City",
-   "n": 9,
-   "start": 1
+   "chave": "Suíça",
+   "n": 8,
+   "start": 3
   }
  }
 }
