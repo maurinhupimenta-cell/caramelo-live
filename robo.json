@@ -191,13 +191,19 @@
   }
  },
  "o25": {
-  "saldo": -44.6,
-  "ciclos": 105,
-  "greens": 62,
+  "saldo": -43.5,
+  "ciclos": 106,
+  "greens": 63,
   "redsCiclo": 20,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T08:11:43.917Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Newcastle x Liverpool @2.07 (tiro 2)"
+   },
    {
     "quando": "2026-07-20T07:18:32.808Z",
     "resultado": "GREEN",
@@ -311,59 +317,16 @@
     "resultado": "GREEN",
     "unidades": 2.1,
     "detalhe": "euro · República Tcheca x Itália @2.55 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-19T17:31:48.494Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
-   "copa": 1784531390311,
-   "super": 1784531912619
+   "super": 1784531912619,
+   "premier": 1784535103814
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "09:06",
-     "jogo": "Southampton x Chelsea",
-     "odd": 2.3
-    },
-    {
-     "h": "09:09",
-     "jogo": "Newcastle x Liverpool",
-     "odd": 2.07
-    },
-    {
-     "h": "09:12",
-     "jogo": "Aston x City",
-     "odd": 2.2
-    }
-   ],
-   "alvo": {
-    "h": "09:09",
-    "jogo": "Newcastle x Liverpool",
-    "odd": 2.07,
-    "unidades": 2,
-    "desde": 1784534924910
-   },
-   "iniciadoEm": 1784534564416,
-   "tiros": [
-    {
-     "h": "09:06",
-     "jogo": "Southampton x Chelsea",
-     "odd": 2.3,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784531390311,
-   "premier": 1784530962416,
+   "premier": 1784535103814,
    "euro": 1784530574419,
    "super": 1784531912619
   },
@@ -373,12 +336,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 8.3
+   "2026-07-20": 9.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Aston",
-   "n": 16,
+   "tipo": "seq",
+   "chave": "RRRRG",
+   "n": 9,
    "start": 1
   }
  },
