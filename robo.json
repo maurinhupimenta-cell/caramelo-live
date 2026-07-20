@@ -317,8 +317,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "09:06",
@@ -337,13 +337,21 @@
     }
    ],
    "alvo": {
-    "h": "09:06",
-    "jogo": "Southampton x Chelsea",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1784534564416
+    "h": "09:09",
+    "jogo": "Newcastle x Liverpool",
+    "odd": 2.07,
+    "unidades": 2,
+    "desde": 1784534924910
    },
-   "iniciadoEm": 1784534564416
+   "iniciadoEm": 1784534564416,
+   "tiros": [
+    {
+     "h": "09:06",
+     "jogo": "Southampton x Chelsea",
+     "odd": 2.3,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784531390311,
@@ -360,9 +368,9 @@
    "2026-07-20": 8.3
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 28,
+   "tipo": "time",
+   "chave": "Aston",
+   "n": 16,
    "start": 1
   }
  },
