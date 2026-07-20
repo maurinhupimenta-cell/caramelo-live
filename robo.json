@@ -282,12 +282,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1784547157820,
    "euro": 1784548554407,
    "super": 1784549395115,
    "copa": 1784549593720
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:33",
+     "jogo": "Burnley x Newcastle",
+     "odd": 2
+    },
+    {
+     "h": "13:36",
+     "jogo": "Brighton x Liverpool",
+     "odd": 2.05
+    },
+    {
+     "h": "13:39",
+     "jogo": "Leicester x Burnley",
+     "odd": 2.2
+    }
+   ],
+   "alvo": {
+    "h": "13:33",
+    "jogo": "Burnley x Newcastle",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1784550758208
+   },
+   "iniciadoEm": 1784550758208
+  },
   "cooldown": {
    "copa": 1784549593720,
    "premier": 1784547157820,
@@ -305,7 +333,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "goleada (3+)",
-   "n": 49,
+   "n": 64,
    "start": 1
   }
  },
@@ -442,7 +470,36 @@
    "euro": 1784548554607,
    "super": 1784550695912
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:34",
+     "jogo": "Paraguai x Canadá",
+     "odd": 2.1
+    },
+    {
+     "h": "13:37",
+     "jogo": "Nova Zelândia x República Tcheca",
+     "odd": 2
+    },
+    {
+     "h": "13:40",
+     "jogo": "Croácia x Equador",
+     "odd": 1.98
+    }
+   ],
+   "alvo": {
+    "h": "13:34",
+    "jogo": "Paraguai x Canadá",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1784550696919
+   },
+   "iniciadoEm": 1784550696919
+  },
   "cooldown": {
    "euro": 1784548554607,
    "super": 1784550695912,
@@ -458,8 +515,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 29,
+   "chave": "empate 1-1",
+   "n": 37,
    "start": 1
   }
  }
