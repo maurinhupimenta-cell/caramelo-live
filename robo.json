@@ -316,7 +316,36 @@
    "euro": 1784573234108,
    "super": 1784575514213
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:28",
+     "jogo": "Escócia x Marrocos",
+     "odd": 2.55
+    },
+    {
+     "h": "20:31",
+     "jogo": "México x Argélia",
+     "odd": 2.25
+    },
+    {
+     "h": "20:34",
+     "jogo": "Japão x Panamá",
+     "odd": 2.5
+    }
+   ],
+   "alvo": {
+    "h": "20:28",
+    "jogo": "Escócia x Marrocos",
+    "odd": 2.55,
+    "unidades": 1,
+    "desde": 1784575571708
+   },
+   "iniciadoEm": 1784575571708
+  },
   "cooldown": {
    "copa": 1784571312209,
    "premier": 1784572391318,
@@ -333,8 +362,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 52,
+   "chave": "goleada (3+)",
+   "n": 81,
    "start": 1
   }
  },
@@ -471,7 +500,36 @@
    "copa": 1784573351513,
    "euro": 1784575272412
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:28",
+     "jogo": "Quito x Agua Branca",
+     "odd": 1.93
+    },
+    {
+     "h": "20:31",
+     "jogo": "La Plata x Rio de Janeiro",
+     "odd": 2.1
+    },
+    {
+     "h": "20:34",
+     "jogo": "La Boca x Itaquera",
+     "odd": 2.07
+    }
+   ],
+   "alvo": {
+    "h": "20:28",
+    "jogo": "Quito x Agua Branca",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1784575514409
+   },
+   "iniciadoEm": 1784575514409
+  },
   "cooldown": {
    "euro": 1784575272412,
    "super": 1784571432114,
@@ -488,7 +546,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "acima de 1-0 (2-1)",
-   "n": 67,
+   "n": 52,
    "start": 1
   }
  }
