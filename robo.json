@@ -154,13 +154,19 @@
   }
  },
  "o25": {
-  "saldo": -48.8,
-  "ciclos": 98,
-  "greens": 56,
+  "saldo": -47.7,
+  "ciclos": 99,
+  "greens": 57,
   "redsCiclo": 19,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T05:47:36.607Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Newcastle x Norwich @2.07 (tiro 1)"
+   },
    {
     "quando": "2026-07-20T05:43:55.216Z",
     "resultado": "GREEN",
@@ -274,52 +280,18 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "euro · Ucrânia x Hungria @2.4 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-19T11:37:14.496Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "super · Rio de Janeiro x Belo Horizonte @2.07 (tiro 1)"
    }
   ],
   "consumidas": {
    "copa": 1784522935710,
    "super": 1784524016707,
-   "euro": 1784526235113
+   "euro": 1784526235113,
+   "premier": 1784526456415
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:45",
-     "jogo": "Newcastle x Norwich",
-     "odd": 2.07
-    },
-    {
-     "h": "06:48",
-     "jogo": "Southampton x Watford",
-     "odd": 2.4
-    },
-    {
-     "h": "06:51",
-     "jogo": "Norwich x Brentford",
-     "odd": 2.25
-    }
-   ],
-   "alvo": {
-    "h": "06:45",
-    "jogo": "Newcastle x Norwich",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1784526236211
-   },
-   "iniciadoEm": 1784526236211
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784522935710,
-   "premier": 1784522494506,
+   "premier": 1784526456415,
    "euro": 1784526235113,
    "super": 1784524016707
   },
@@ -329,12 +301,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 4.1
+   "2026-07-20": 5.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.25",
-   "n": 7,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 28,
    "start": 1
   }
  },
@@ -516,10 +488,10 @@
    "2026-07-20": -1.5
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 18,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":56",
+   "n": 5,
+   "start": 2
   }
  }
 }
