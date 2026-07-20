@@ -501,11 +501,39 @@
    }
   ],
   "consumidas": {
-   "super": 1784576234818,
    "premier": 1784576513118,
    "euro": 1784579231121
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:34",
+     "jogo": "Porto Alegre x Penarol",
+     "odd": 2.35
+    },
+    {
+     "h": "21:37",
+     "jogo": "Avellaneda x Medellin",
+     "odd": 2.07
+    },
+    {
+     "h": "21:40",
+     "jogo": "Penarol x Agua Branca",
+     "odd": 2
+    }
+   ],
+   "alvo": {
+    "h": "21:34",
+    "jogo": "Porto Alegre x Penarol",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1784579892813
+   },
+   "iniciadoEm": 1784579892813
+  },
   "cooldown": {
    "euro": 1784579231121,
    "super": 1784576234818,
@@ -520,9 +548,9 @@
    "2026-07-20": 3.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":32",
-   "n": 19,
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 51,
    "start": 1
   }
  }
