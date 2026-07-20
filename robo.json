@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -47.2,
-  "ciclos": 111,
+  "saldo": -54.2,
+  "ciclos": 112,
   "greens": 38,
-  "redsCiclo": 40,
+  "redsCiclo": 41,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-20T07:23:42.209Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-20T07:13:16.107Z",
     "resultado": "GREEN",
@@ -120,65 +126,17 @@
     "resultado": "GREEN",
     "unidades": 4,
     "detalhe": "euro · França x Eslovênia @5 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-19T15:16:13.498Z",
-    "resultado": "GREEN",
-    "unidades": 6,
-    "detalhe": "super · Asuncion x Quito @4.5 (tiro 2)"
    }
   ],
   "consumidas": {
    "copa": 1784530695008,
-   "super": 1784531595920
+   "super": 1784531595920,
+   "premier": 1784532222107
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "08:15",
-     "jogo": "West Ham x Wolverhampton",
-     "odd": 4.5
-    },
-    {
-     "h": "08:18",
-     "jogo": "Burnley x Palace",
-     "odd": 4
-    },
-    {
-     "h": "08:21",
-     "jogo": "Brentford x Chelsea",
-     "odd": 4.33
-    }
-   ],
-   "alvo": {
-    "h": "08:21",
-    "jogo": "Brentford x Chelsea",
-    "odd": 4.33,
-    "unidades": 4,
-    "desde": 1784532036514
-   },
-   "iniciadoEm": 1784531596909,
-   "tiros": [
-    {
-     "h": "08:15",
-     "jogo": "West Ham x Wolverhampton",
-     "odd": 4.5,
-     "unidades": 1
-    },
-    {
-     "h": "08:18",
-     "jogo": "Burnley x Palace",
-     "odd": 4,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784530695008,
-   "premier": 1784527712320,
+   "premier": 1784532222107,
    "euro": 1784522533511,
    "super": 1784531595920
   },
@@ -187,7 +145,7 @@
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
-   "2026-07-20": 30.1
+   "2026-07-20": 23.1
   },
   "_gatilhoAtual": {
    "tipo": "placar",
