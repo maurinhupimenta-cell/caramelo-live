@@ -444,8 +444,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "11:01",
@@ -464,13 +464,21 @@
     }
    ],
    "alvo": {
-    "h": "11:01",
-    "jogo": "Santos x Guayaquil",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1784541475408
+    "h": "11:04",
+    "jogo": "Sao Paulo x Montevideo",
+    "odd": 1.85,
+    "unidades": 2,
+    "desde": 1784541835311
    },
-   "iniciadoEm": 1784541475408
+   "iniciadoEm": 1784541475408,
+   "tiros": [
+    {
+     "h": "11:01",
+     "jogo": "Santos x Guayaquil",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784540454610,
@@ -486,9 +494,9 @@
    "2026-07-20": -4.2
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 21,
+   "tipo": "coluna",
+   "chave": ":10",
+   "n": 10,
    "start": 1
   }
  }
