@@ -154,13 +154,19 @@
   }
  },
  "o25": {
-  "saldo": -52.6,
-  "ciclos": 97,
-  "greens": 55,
+  "saldo": -48.8,
+  "ciclos": 98,
+  "greens": 56,
   "redsCiclo": 19,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-20T05:43:55.216Z",
+    "resultado": "GREEN",
+    "unidades": 3.8,
+    "detalhe": "euro · Sérvia x Turquia @2.7 (tiro 3)"
+   },
    {
     "quando": "2026-07-20T05:06:56.811Z",
     "resultado": "RED_CICLO",
@@ -274,66 +280,18 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "super · Rio de Janeiro x Belo Horizonte @2.07 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-19T10:32:36.801Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "premier · Norwich x Watford @2.25 (tiro 1)"
    }
   ],
   "consumidas": {
    "copa": 1784522935710,
-   "super": 1784524016707
+   "super": 1784524016707,
+   "euro": 1784526235113
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "06:35",
-     "jogo": "Turquia x Itália",
-     "odd": 2.5
-    },
-    {
-     "h": "06:38",
-     "jogo": "Polônia x Hungria",
-     "odd": 2.55
-    },
-    {
-     "h": "06:41",
-     "jogo": "Sérvia x Turquia",
-     "odd": 2.7
-    }
-   ],
-   "alvo": {
-    "h": "06:41",
-    "jogo": "Sérvia x Turquia",
-    "odd": 2.7,
-    "unidades": 4,
-    "desde": 1784526034916
-   },
-   "iniciadoEm": 1784525516010,
-   "tiros": [
-    {
-     "h": "06:35",
-     "jogo": "Turquia x Itália",
-     "odd": 2.5,
-     "unidades": 1
-    },
-    {
-     "h": "06:38",
-     "jogo": "Polônia x Hungria",
-     "odd": 2.55,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784522935710,
    "premier": 1784522494506,
-   "euro": 1784521915625,
+   "euro": 1784526235113,
    "super": 1784524016707
   },
   "dias": {
@@ -342,12 +300,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 0.3
+   "2026-07-20": 4.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Suíça",
-   "n": 11,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 18,
    "start": 1
   }
  },
@@ -481,7 +439,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1784522618214,
    "super": 1784523313407,
    "premier": 1784523758608
   },
@@ -544,9 +501,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "1.95",
-   "n": 9,
-   "start": 1
+   "chave": "2.2",
+   "n": 6,
+   "start": 3
   }
  }
 }
