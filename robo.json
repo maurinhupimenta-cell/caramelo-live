@@ -287,7 +287,36 @@
    "super": 1784524016707,
    "euro": 1784526235113
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:45",
+     "jogo": "Newcastle x Norwich",
+     "odd": 2.07
+    },
+    {
+     "h": "06:48",
+     "jogo": "Southampton x Watford",
+     "odd": 2.4
+    },
+    {
+     "h": "06:51",
+     "jogo": "Norwich x Brentford",
+     "odd": 2.25
+    }
+   ],
+   "alvo": {
+    "h": "06:45",
+    "jogo": "Newcastle x Norwich",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1784526236211
+   },
+   "iniciadoEm": 1784526236211
+  },
   "cooldown": {
    "copa": 1784522935710,
    "premier": 1784522494506,
@@ -303,20 +332,26 @@
    "2026-07-20": 4.1
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 18,
+   "tipo": "odd",
+   "chave": "2.25",
+   "n": 7,
    "start": 1
   }
  },
  "ambas": {
-  "saldo": -13.1,
-  "ciclos": 106,
+  "saldo": -20.1,
+  "ciclos": 107,
   "greens": 69,
-  "redsCiclo": 12,
+  "redsCiclo": 13,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-20T05:45:53.912Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-20T05:02:38.713Z",
     "resultado": "GREEN",
@@ -430,80 +465,61 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-19T10:31:52.897Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Uzbequistão x Uruguai @1.98 (tiro 2)"
    }
   ],
   "consumidas": {
    "super": 1784523313407,
-   "premier": 1784523758608
+   "premier": 1784523758608,
+   "copa": 1784526353806
   },
   "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "06:37",
-     "jogo": "Suíça x Senegal",
-     "odd": 2.1
+     "h": "06:47",
+     "jogo": "Áustria x França",
+     "odd": 1.9
     },
     {
-     "h": "06:40",
-     "jogo": "Curação x Turquia",
-     "odd": 1.93
+     "h": "06:50",
+     "jogo": "Dinamarca x Turquia",
+     "odd": 2.15
     },
     {
-     "h": "06:43",
-     "jogo": "Noruega x Equador",
-     "odd": 1.85
+     "h": "06:53",
+     "jogo": "Hungria x República Tcheca",
+     "odd": 2.2
     }
    ],
    "alvo": {
-    "h": "06:43",
-    "jogo": "Noruega x Equador",
-    "odd": 1.85,
-    "unidades": 4,
-    "desde": 1784526175208
+    "h": "06:47",
+    "jogo": "Áustria x França",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1784526355220
    },
-   "iniciadoEm": 1784525716118,
-   "tiros": [
-    {
-     "h": "06:37",
-     "jogo": "Suíça x Senegal",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "06:40",
-     "jogo": "Curação x Turquia",
-     "odd": 1.93,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1784526355220
   },
   "cooldown": {
    "euro": 1784522618214,
    "super": 1784523313407,
    "premier": 1784523758608,
-   "copa": 1784522115971
+   "copa": 1784526353806
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": 5.5
+   "2026-07-20": -1.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.2",
-   "n": 6,
-   "start": 3
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 18,
+   "start": 1
   }
  }
 }
