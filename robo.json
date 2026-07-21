@@ -485,8 +485,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:12",
@@ -505,13 +505,21 @@
     }
    ],
    "alvo": {
-    "h": "05:12",
-    "jogo": "Southampton x Everton",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1784606687638
+    "h": "05:15",
+    "jogo": "Chelsea x City",
+    "odd": 1.85,
+    "unidades": 2,
+    "desde": 1784607276836
    },
-   "iniciadoEm": 1784606687638
+   "iniciadoEm": 1784606687638,
+   "tiros": [
+    {
+     "h": "05:12",
+     "jogo": "Southampton x Everton",
+     "odd": 1.95,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784606686043,
@@ -528,9 +536,9 @@
    "2026-07-21": 3.8
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 12,
+   "tipo": "time",
+   "chave": "Palace",
+   "n": 13,
    "start": 1
   }
  }
