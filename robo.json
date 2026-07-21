@@ -315,7 +315,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1784646250752,
    "premier": 1784647794057,
    "super": 1784649732949
   },
@@ -373,13 +372,19 @@
   }
  },
  "ambas": {
-  "saldo": -15.3,
-  "ciclos": 201,
-  "greens": 147,
+  "saldo": -14.3,
+  "ciclos": 202,
+  "greens": 148,
   "redsCiclo": 24,
   "aborts": 0,
   "descartes": 30,
   "historico": [
+   {
+    "quando": "2026-07-21T16:03:11.353Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Sérvia x Alemanha @2 (tiro 2) · gatilho: placar empate 1-1"
+   },
    {
     "quando": "2026-07-21T15:56:13.554Z",
     "resultado": "GREEN",
@@ -493,59 +498,16 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "copa · EUA x Alemanha @1.9 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-21T10:01:48.341Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
    "copa": 1784646250950,
-   "super": 1784649373354
+   "super": 1784649373354,
+   "euro": 1784649791152
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "16:56",
-     "jogo": "Itália x Polônia",
-     "odd": 2.15
-    },
-    {
-     "h": "16:59",
-     "jogo": "Sérvia x Alemanha",
-     "odd": 2
-    },
-    {
-     "h": "17:02",
-     "jogo": "Albânia x Áustria",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "placar empate 1-1",
-   "alvo": {
-    "h": "16:59",
-    "jogo": "Sérvia x Alemanha",
-    "odd": 2,
-    "unidades": 2,
-    "desde": 1784649674459
-   },
-   "iniciadoEm": 1784649403253,
-   "tiros": [
-    {
-     "h": "16:56",
-     "jogo": "Itália x Polônia",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784644373854,
+   "euro": 1784649791152,
    "super": 1784649373354,
    "premier": 1784645448456,
    "copa": 1784646250950
@@ -556,12 +518,12 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": -0.2
+   "2026-07-21": 0.8
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 51,
+   "chave": "empate 2-2",
+   "n": 16,
    "start": 1
   }
  }
