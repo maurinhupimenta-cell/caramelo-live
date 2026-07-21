@@ -463,8 +463,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "01:46",
@@ -483,13 +483,21 @@
     }
    ],
    "alvo": {
-    "h": "01:46",
-    "jogo": "Guayaquil x Lima",
-    "odd": 1.86,
-    "unidades": 1,
-    "desde": 1784595012411
+    "h": "01:49",
+    "jogo": "Santos x Belo Horizonte",
+    "odd": 1.93,
+    "unidades": 2,
+    "desde": 1784595192513
    },
-   "iniciadoEm": 1784595012411
+   "iniciadoEm": 1784595012411,
+   "tiros": [
+    {
+     "h": "01:46",
+     "jogo": "Guayaquil x Lima",
+     "odd": 1.86,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784588241921,
@@ -505,9 +513,9 @@
    "2026-07-20": 12.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Guayaquil",
-   "n": 7,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 6,
    "start": 1
   }
  }
