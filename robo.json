@@ -286,7 +286,36 @@
    "super": 1784597444013,
    "premier": 1784598640916
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:11",
+     "jogo": "Albânia x Países Baixos",
+     "odd": 2.4
+    },
+    {
+     "h": "03:14",
+     "jogo": "Suíça x Geórgia",
+     "odd": 2.25
+    },
+    {
+     "h": "03:17",
+     "jogo": "França x Romênia",
+     "odd": 2.05
+    }
+   ],
+   "alvo": {
+    "h": "03:11",
+    "jogo": "Albânia x Países Baixos",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1784599714015
+   },
+   "iniciadoEm": 1784599714015
+  },
   "cooldown": {
    "copa": 1784596205715,
    "premier": 1784598640916,
@@ -302,9 +331,9 @@
    "2026-07-20": 31.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Southampton",
-   "n": 6,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 7,
    "start": 1
   }
  },
@@ -442,7 +471,36 @@
    "euro": 1784598431515,
    "super": 1784599626709
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:10",
+     "jogo": "Suíça x Suécia",
+     "odd": 2.15
+    },
+    {
+     "h": "03:13",
+     "jogo": "Portugal x Paraguai",
+     "odd": 2
+    },
+    {
+     "h": "03:16",
+     "jogo": "Países Baixos x México",
+     "odd": 1.98
+    }
+   ],
+   "alvo": {
+    "h": "03:10",
+    "jogo": "Suíça x Suécia",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1784599628220
+   },
+   "iniciadoEm": 1784599628220
+  },
   "cooldown": {
    "euro": 1784598431515,
    "super": 1784599626709,
@@ -458,8 +516,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 9,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 12,
    "start": 1
   }
  }
