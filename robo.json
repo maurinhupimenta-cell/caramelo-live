@@ -440,7 +440,36 @@
    "copa": 1784600051912,
    "euro": 1784602632818
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:13",
+     "jogo": "La Plata x Penarol",
+     "odd": 2.3
+    },
+    {
+     "h": "04:16",
+     "jogo": "Medellin x Santiago",
+     "odd": 1.93
+    },
+    {
+     "h": "04:19",
+     "jogo": "Buenos Aires x Rio de Janeiro",
+     "odd": 1.85
+    }
+   ],
+   "alvo": {
+    "h": "04:13",
+    "jogo": "La Plata x Penarol",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1784603412432
+   },
+   "iniciadoEm": 1784603412432
+  },
   "cooldown": {
    "euro": 1784602632818,
    "super": 1784599626709,
@@ -456,7 +485,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Polônia",
+   "chave": "Penarol",
    "n": 7,
    "start": 1
   }
