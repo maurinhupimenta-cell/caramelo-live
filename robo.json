@@ -134,8 +134,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "13:01",
@@ -154,11 +154,11 @@
     }
    ],
    "alvo": {
-    "h": "13:04",
-    "jogo": "Montevideo x Porto Alegre",
-    "odd": 5.25,
-    "unidades": 2,
-    "desde": 1784635449840
+    "h": "13:07",
+    "jogo": "Penarol x Santos",
+    "odd": 5.5,
+    "unidades": 4,
+    "desde": 1784635628733
    },
    "iniciadoEm": 1784635089753,
    "tiros": [
@@ -167,6 +167,12 @@
      "jogo": "Lima x Medellin",
      "odd": 4.33,
      "unidades": 1
+    },
+    {
+     "h": "13:04",
+     "jogo": "Montevideo x Porto Alegre",
+     "odd": 5.25,
+     "unidades": 2
     }
    ]
   },
@@ -483,7 +489,36 @@
    "premier": 1784632837331,
    "copa": 1784633808532
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:07",
+     "jogo": "Penarol x Santos",
+     "odd": 2.15
+    },
+    {
+     "h": "13:10",
+     "jogo": "Asuncion x Guayaquil",
+     "odd": 1.9
+    },
+    {
+     "h": "13:13",
+     "jogo": "Rio de Janeiro x Avellaneda",
+     "odd": 2.02
+    }
+   ],
+   "alvo": {
+    "h": "13:07",
+    "jogo": "Penarol x Santos",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1784635450036
+   },
+   "iniciadoEm": 1784635450036
+  },
   "cooldown": {
    "euro": 1784632248731,
    "super": 1784631849438,
@@ -500,8 +535,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 34,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 36,
    "start": 1
   }
  }
