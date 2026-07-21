@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -93,
-  "ciclos": 151,
+  "saldo": -100,
+  "ciclos": 152,
   "greens": 55,
-  "redsCiclo": 62,
+  "redsCiclo": 63,
   "aborts": 0,
   "descartes": 34,
   "historico": [
+   {
+    "quando": "2026-07-21T14:29:29.553Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
+   },
    {
     "quando": "2026-07-21T14:16:13.056Z",
     "resultado": "RED_CICLO",
@@ -120,66 +126,17 @@
     "resultado": "GREEN",
     "unidades": 4.2,
     "detalhe": "super · Buenos Aires x Sao Paulo @3.6 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T20:59:11.906Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
-   "copa": 1784643372759
+   "copa": 1784643372759,
+   "euro": 1784644169356
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "15:20",
-     "jogo": "Eslovênia x República Tcheca",
-     "odd": 7
-    },
-    {
-     "h": "15:23",
-     "jogo": "Albânia x Suíça",
-     "odd": 5
-    },
-    {
-     "h": "15:26",
-     "jogo": "Hungria x França",
-     "odd": 4.2
-    }
-   ],
-   "gatilho": "placar empate 2-2",
-   "alvo": {
-    "h": "15:26",
-    "jogo": "Hungria x França",
-    "odd": 4.2,
-    "unidades": 4,
-    "desde": 1784643971150
-   },
-   "iniciadoEm": 1784643433761,
-   "tiros": [
-    {
-     "h": "15:20",
-     "jogo": "Eslovênia x República Tcheca",
-     "odd": 7,
-     "unidades": 1
-    },
-    {
-     "h": "15:23",
-     "jogo": "Albânia x Suíça",
-     "odd": 5,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784643372759,
    "premier": 1784640216535,
-   "euro": 1784634788236,
+   "euro": 1784644169356,
    "super": 1784635789732
   },
   "dias": {
@@ -188,7 +145,7 @@
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
    "2026-07-20": 19.6,
-   "2026-07-21": -35.3
+   "2026-07-21": -42.3
   },
   "_gatilhoAtual": {
    "tipo": "placar",
