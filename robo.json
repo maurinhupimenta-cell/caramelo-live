@@ -447,7 +447,36 @@
    "euro": 1784632248731,
    "premier": 1784632837331
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:34",
+     "jogo": "Coreia do Sul x Austrália",
+     "odd": 2.05
+    },
+    {
+     "h": "12:37",
+     "jogo": "Japão x Croácia",
+     "odd": 2.1
+    },
+    {
+     "h": "12:40",
+     "jogo": "Qatar x Bélgica",
+     "odd": 2.02
+    }
+   ],
+   "alvo": {
+    "h": "12:34",
+    "jogo": "Coreia do Sul x Austrália",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1784633447034
+   },
+   "iniciadoEm": 1784633447034
+  },
   "cooldown": {
    "euro": 1784632248731,
    "super": 1784631849438,
@@ -463,9 +492,9 @@
    "2026-07-21": -6.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Tottenham",
-   "n": 16,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 38,
    "start": 1
   }
  }
