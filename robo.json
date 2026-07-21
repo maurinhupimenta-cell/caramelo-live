@@ -497,7 +497,36 @@
    "euro": 1784602632818,
    "super": 1784603772332
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:28",
+     "jogo": "Canadá x Senegal",
+     "odd": 2.15
+    },
+    {
+     "h": "04:31",
+     "jogo": "Qatar x Suécia",
+     "odd": 2.15
+    },
+    {
+     "h": "04:34",
+     "jogo": "Brasil x Colômbia",
+     "odd": 1.95
+    }
+   ],
+   "alvo": {
+    "h": "04:28",
+    "jogo": "Canadá x Senegal",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1784604314437
+   },
+   "iniciadoEm": 1784604314437
+  },
   "cooldown": {
    "euro": 1784602632818,
    "super": 1784603772332,
@@ -513,9 +542,9 @@
    "2026-07-21": 1.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRG",
-   "n": 5,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 15,
    "start": 1
   }
  }
