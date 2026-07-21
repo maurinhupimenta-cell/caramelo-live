@@ -521,7 +521,37 @@
    "euro": 1784649791152,
    "copa": 1784650033051
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:12",
+     "jogo": "West Ham x Liverpool",
+     "odd": 2.1
+    },
+    {
+     "h": "17:15",
+     "jogo": "Leeds x Leicester",
+     "odd": 2.15
+    },
+    {
+     "h": "17:18",
+     "jogo": "Chelsea x Southampton",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "placar empate 1-1",
+   "alvo": {
+    "h": "17:12",
+    "jogo": "West Ham x Liverpool",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1784650126561
+   },
+   "iniciadoEm": 1784650126561
+  },
   "cooldown": {
    "euro": 1784649791152,
    "super": 1784649373354,
@@ -537,9 +567,9 @@
    "2026-07-21": 1.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGRG",
-   "n": 11,
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 46,
    "start": 1
   }
  }
