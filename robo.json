@@ -192,13 +192,19 @@
   }
  },
  "o25": {
-  "saldo": -34.2,
-  "ciclos": 207,
+  "saldo": -41.2,
+  "ciclos": 208,
   "greens": 145,
-  "redsCiclo": 37,
+  "redsCiclo": 38,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-21T21:47:33.853Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-07-21T20:26:10.654Z",
     "resultado": "RED_CICLO",
@@ -312,65 +318,16 @@
     "resultado": "GREEN",
     "unidades": 1.7,
     "detalhe": "euro · Alemanha x Polônia @2.35 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-21T12:47:47.334Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "premier · Wolverhampton x City @1.98 (tiro 3)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "21:29",
-     "jogo": "Albânia x Romênia",
-     "odd": 2.45
-    },
-    {
-     "h": "21:32",
-     "jogo": "Geórgia x Escócia",
-     "odd": 2.3
-    },
-    {
-     "h": "22:44",
-     "jogo": "Países Baixos x Dinamarca",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-1)",
-   "alvo": {
-    "h": "22:44",
-    "jogo": "Países Baixos x Dinamarca",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1784670156351
-   },
-   "iniciadoEm": 1784665571556,
-   "tiros": [
-    {
-     "h": "21:29",
-     "jogo": "Albânia x Romênia",
-     "odd": 2.45,
-     "unidades": 1
-    },
-    {
-     "h": "21:32",
-     "jogo": "Geórgia x Escócia",
-     "odd": 2.3,
-     "unidades": 2
-    }
-   ],
-   "semAlvoDesde": null
+  "consumidas": {
+   "euro": 1784670453660
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784658070352,
    "premier": 1784665570463,
-   "euro": 1784656931549,
+   "euro": 1784670453660,
    "super": 1784660293658
   },
   "dias": {
@@ -380,12 +337,12 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": -17.9
+   "2026-07-21": -24.9
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 67,
+   "tipo": "seq",
+   "chave": "RGRG",
+   "n": 25,
    "start": 1
   }
  },
@@ -523,8 +480,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "22:43",
@@ -544,13 +501,21 @@
    ],
    "gatilho": "seq RRRGG",
    "alvo": {
-    "h": "22:43",
-    "jogo": "Nova Zelândia x Tunísia",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1784670174152
+    "h": "22:46",
+    "jogo": "Haiti x Turquia",
+    "odd": 1.93,
+    "unidades": 2,
+    "desde": 1784670354755
    },
-   "iniciadoEm": 1784670174152
+   "iniciadoEm": 1784670174152,
+   "tiros": [
+    {
+     "h": "22:43",
+     "jogo": "Nova Zelândia x Tunísia",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784665554458,
