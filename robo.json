@@ -340,13 +340,19 @@
   }
  },
  "ambas": {
-  "saldo": -22.7,
-  "ciclos": 192,
-  "greens": 139,
+  "saldo": -21.9,
+  "ciclos": 193,
+  "greens": 140,
   "redsCiclo": 24,
   "aborts": 0,
   "descartes": 29,
   "historico": [
+   {
+    "quando": "2026-07-21T13:28:48.539Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "euro · Suíça x Inglaterra @1.83 (tiro 1)"
+   },
    {
     "quando": "2026-07-21T13:24:49.234Z",
     "resultado": "GREEN",
@@ -460,51 +466,17 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "copa · Jordânia x Cabo Verde @1.93 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-21T04:27:47.232Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "super · La Plata x Montevideo @2.1 (tiro 1)"
    }
   ],
   "consumidas": {
    "premier": 1784637168446,
    "copa": 1784637947636,
-   "super": 1784640288838
+   "super": 1784640288838,
+   "euro": 1784640528345
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:26",
-     "jogo": "Suíça x Inglaterra",
-     "odd": 1.83
-    },
-    {
-     "h": "14:29",
-     "jogo": "Países Baixos x Portugal",
-     "odd": 1.85
-    },
-    {
-     "h": "14:32",
-     "jogo": "Alemanha x Polônia",
-     "odd": 2.07
-    }
-   ],
-   "alvo": {
-    "h": "14:26",
-    "jogo": "Suíça x Inglaterra",
-    "odd": 1.83,
-    "unidades": 1,
-    "desde": 1784640349234
-   },
-   "iniciadoEm": 1784640349234
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784636748539,
+   "euro": 1784640528345,
    "super": 1784640288838,
    "premier": 1784637168446,
    "copa": 1784637947636
@@ -515,12 +487,12 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": -7.6
+   "2026-07-21": -6.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRRG",
-   "n": 5,
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 40,
    "start": 1
   }
  }
