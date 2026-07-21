@@ -179,7 +179,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 11,
+   "n": 24,
    "start": 1
   }
  },
@@ -342,13 +342,19 @@
   }
  },
  "ambas": {
-  "saldo": -15,
-  "ciclos": 209,
-  "greens": 154,
+  "saldo": -14.2,
+  "ciclos": 210,
+  "greens": 155,
   "redsCiclo": 25,
   "aborts": 0,
   "descartes": 30,
   "historico": [
+   {
+    "quando": "2026-07-21T18:22:28.657Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "euro · França x Alemanha @1.83 (tiro 1) · gatilho: placar empate 1-1"
+   },
    {
     "quando": "2026-07-21T18:12:11.359Z",
     "resultado": "GREEN",
@@ -462,52 +468,17 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "copa · Colômbia x Tunísia @2.15 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-21T12:32:48.640Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "premier · Liverpool x Chelsea @1.93 (tiro 1)"
    }
   ],
   "consumidas": {
    "premier": 1784656242053,
    "copa": 1784656932655,
-   "super": 1784657531256
+   "super": 1784657531256,
+   "euro": 1784658148555
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "19:17",
-     "jogo": "França x Alemanha",
-     "odd": 1.83
-    },
-    {
-     "h": "19:20",
-     "jogo": "Eslovênia x Inglaterra",
-     "odd": 2.05
-    },
-    {
-     "h": "19:23",
-     "jogo": "Ucrânia x Países Baixos",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "placar empate 1-1",
-   "alvo": {
-    "h": "19:17",
-    "jogo": "França x Alemanha",
-    "odd": 1.83,
-    "unidades": 1,
-    "desde": 1784657733255
-   },
-   "iniciadoEm": 1784657733255
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784654032554,
+   "euro": 1784658148555,
    "super": 1784657531256,
    "premier": 1784656242053,
    "copa": 1784656932655
@@ -518,12 +489,12 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": 0.1
+   "2026-07-21": 0.9
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 1-1",
-   "n": 56,
+   "n": 57,
    "start": 1
   }
  }
