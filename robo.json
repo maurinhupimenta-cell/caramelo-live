@@ -290,8 +290,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "06:52",
@@ -310,13 +310,21 @@
     }
    ],
    "alvo": {
-    "h": "06:52",
-    "jogo": "Arábia Saudita x Egito",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1784612945641
+    "h": "06:55",
+    "jogo": "Tunísia x Iraque",
+    "odd": 2.75,
+    "unidades": 2,
+    "desde": 1784613304639
    },
-   "iniciadoEm": 1784612945641
+   "iniciadoEm": 1784612945641,
+   "tiros": [
+    {
+     "h": "06:52",
+     "jogo": "Arábia Saudita x Egito",
+     "odd": 2.07,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784609344039,
@@ -337,17 +345,23 @@
    "tipo": "time",
    "chave": "Costa do Marfim",
    "n": 7,
-   "start": 3
+   "start": 2
   }
  },
  "ambas": {
-  "saldo": -6.1,
-  "ciclos": 177,
+  "saldo": -13.1,
+  "ciclos": 178,
   "greens": 129,
-  "redsCiclo": 20,
+  "redsCiclo": 21,
   "aborts": 0,
   "descartes": 28,
   "historico": [
+   {
+    "quando": "2026-07-21T05:55:05.036Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-21T05:37:05.738Z",
     "resultado": "GREEN",
@@ -461,68 +475,20 @@
     "resultado": "GREEN",
     "unidades": 0.8,
     "detalhe": "premier · Brighton x Everton @1.8 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T22:57:22.112Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "euro · Polônia x República Tcheca @2.25 (tiro 1)"
    }
   ],
   "consumidas": {
    "euro": 1784610824637,
    "premier": 1784611428935,
-   "super": 1784612225631
+   "super": 1784612225631,
+   "copa": 1784613304835
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "06:46",
-     "jogo": "Gana x Austrália",
-     "odd": 2
-    },
-    {
-     "h": "06:49",
-     "jogo": "Canadá x Marrocos",
-     "odd": 2.05
-    },
-    {
-     "h": "06:52",
-     "jogo": "Arábia Saudita x Egito",
-     "odd": 1.83
-    }
-   ],
-   "alvo": {
-    "h": "06:52",
-    "jogo": "Arábia Saudita x Egito",
-    "odd": 1.83,
-    "unidades": 4,
-    "desde": 1784613123741
-   },
-   "iniciadoEm": 1784612745134,
-   "tiros": [
-    {
-     "h": "06:46",
-     "jogo": "Gana x Austrália",
-     "odd": 2,
-     "unidades": 1
-    },
-    {
-     "h": "06:49",
-     "jogo": "Canadá x Marrocos",
-     "odd": 2.05,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784610824637,
    "super": 1784612225631,
    "premier": 1784611428935,
-   "copa": 1784609144140
+   "copa": 1784613304835
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -530,7 +496,7 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": 9
+   "2026-07-21": 2
   },
   "_gatilhoAtual": {
    "tipo": "time",
