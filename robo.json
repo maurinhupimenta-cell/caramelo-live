@@ -151,13 +151,19 @@
   }
  },
  "o25": {
-  "saldo": -15.6,
-  "ciclos": 159,
-  "greens": 109,
+  "saldo": -14.5,
+  "ciclos": 160,
+  "greens": 110,
   "redsCiclo": 27,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-21T01:30:44.208Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Guayaquil x Agua Branca @2.07 (tiro 1)"
+   },
    {
     "quando": "2026-07-21T01:10:05.816Z",
     "resultado": "GREEN",
@@ -271,53 +277,19 @@
     "resultado": "GREEN",
     "unidades": 1.6,
     "detalhe": "super · Asuncion x Quito @2.3 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T18:15:12.314Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "copa · Argentina x Portugal @2.07 (tiro 1)"
    }
   ],
   "consumidas": {
    "euro": 1784595725211,
-   "copa": 1784596205715
+   "copa": 1784596205715,
+   "super": 1784597444013
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "02:28",
-     "jogo": "Guayaquil x Agua Branca",
-     "odd": 2.07
-    },
-    {
-     "h": "02:31",
-     "jogo": "Medellin x Rio de Janeiro",
-     "odd": 2.3
-    },
-    {
-     "h": "02:34",
-     "jogo": "Agua Branca x Sao Paulo",
-     "odd": 2.02
-    }
-   ],
-   "alvo": {
-    "h": "02:28",
-    "jogo": "Guayaquil x Agua Branca",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1784597113317
-   },
-   "iniciadoEm": 1784597113317
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784596205715,
    "premier": 1784585916508,
    "euro": 1784595725211,
-   "super": 1784588292815
+   "super": 1784597444013
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -325,7 +297,7 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 37.3
+   "2026-07-20": 38.4
   },
   "_gatilhoAtual": {
    "tipo": "placar",
