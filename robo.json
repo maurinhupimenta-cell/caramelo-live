@@ -442,11 +442,40 @@
    }
   ],
   "consumidas": {
-   "euro": 1784644373854,
    "premier": 1784645448456,
    "copa": 1784646250950
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:35",
+     "jogo": "Alemanha x Inglaterra",
+     "odd": 1.83
+    },
+    {
+     "h": "16:38",
+     "jogo": "Eslováquia x Croácia",
+     "odd": 1.95
+    },
+    {
+     "h": "16:41",
+     "jogo": "Portugal x Escócia",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "odd 1.83",
+   "alvo": {
+    "h": "16:35",
+    "jogo": "Alemanha x Inglaterra",
+    "odd": 1.83,
+    "unidades": 1,
+    "desde": 1784647990459
+   },
+   "iniciadoEm": 1784647990459
+  },
   "cooldown": {
    "euro": 1784644373854,
    "super": 1784644089754,
@@ -463,7 +492,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "1.87",
+   "chave": "1.83",
    "n": 14,
    "start": 1
   }
