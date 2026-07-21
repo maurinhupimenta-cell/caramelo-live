@@ -133,7 +133,37 @@
    "copa": 1784649492750,
    "euro": 1784650513155
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:43",
+     "jogo": "Itaquera x Quito",
+     "odd": 4.75
+    },
+    {
+     "h": "17:46",
+     "jogo": "Santiago x Santos",
+     "odd": 4.2
+    },
+    {
+     "h": "17:49",
+     "jogo": "Bogota x La Plata",
+     "odd": 6.5
+    }
+   ],
+   "gatilho": "placar empate 2-2",
+   "alvo": {
+    "h": "17:43",
+    "jogo": "Itaquera x Quito",
+    "odd": 4.75,
+    "unidades": 1,
+    "desde": 1784652055662
+   },
+   "iniciadoEm": 1784652055662
+  },
   "cooldown": {
    "copa": 1784649492750,
    "premier": 1784648869657,
@@ -151,7 +181,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 16,
+   "n": 22,
    "start": 1
   }
  },
