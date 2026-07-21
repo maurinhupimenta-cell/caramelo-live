@@ -132,7 +132,36 @@
    "super": 1784604669135,
    "premier": 1784606922632
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:10",
+     "jogo": "Suíça x Argélia",
+     "odd": 4.75
+    },
+    {
+     "h": "05:13",
+     "jogo": "Portugal x Jordânia",
+     "odd": 4.2
+    },
+    {
+     "h": "05:16",
+     "jogo": "Argentina x Senegal",
+     "odd": 4.75
+    }
+   ],
+   "alvo": {
+    "h": "05:10",
+    "jogo": "Suíça x Argélia",
+    "odd": 4.75,
+    "unidades": 1,
+    "desde": 1784606924340
+   },
+   "iniciadoEm": 1784606924340
+  },
   "cooldown": {
    "copa": 1784585350910,
    "premier": 1784606922632,
@@ -155,13 +184,19 @@
   }
  },
  "o25": {
-  "saldo": -12.9,
-  "ciclos": 168,
+  "saldo": -19.9,
+  "ciclos": 169,
   "greens": 117,
-  "redsCiclo": 28,
+  "redsCiclo": 29,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-21T04:11:43.336Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-21T03:49:14.241Z",
     "resultado": "GREEN",
@@ -275,66 +310,18 @@
     "resultado": "GREEN",
     "unidades": 2.8,
     "detalhe": "premier · West Ham x Chelsea @2.45 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-20T20:52:11.708Z",
-    "resultado": "GREEN",
-    "unidades": 2,
-    "detalhe": "copa · Bósnia e Herzegovina x Japão @2.25 (tiro 3)"
    }
   ],
   "consumidas": {
    "euro": 1784604913737,
    "copa": 1784605452433,
-   "super": 1784605754138
+   "super": 1784605754138,
+   "premier": 1784607103143
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "05:03",
-     "jogo": "Newcastle x Leicester",
-     "odd": 2.15
-    },
-    {
-     "h": "05:06",
-     "jogo": "Brighton x Norwich",
-     "odd": 2.05
-    },
-    {
-     "h": "05:09",
-     "jogo": "Tottenham x Burnley",
-     "odd": 2.35
-    }
-   ],
-   "alvo": {
-    "h": "05:09",
-    "jogo": "Tottenham x Burnley",
-    "odd": 2.35,
-    "unidades": 4,
-    "desde": 1784606922734
-   },
-   "iniciadoEm": 1784606231135,
-   "tiros": [
-    {
-     "h": "05:03",
-     "jogo": "Newcastle x Leicester",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "05:06",
-     "jogo": "Brighton x Norwich",
-     "odd": 2.05,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784605452433,
-   "premier": 1784602621814,
+   "premier": 1784607103143,
    "euro": 1784604913737,
    "super": 1784605754138
   },
@@ -345,13 +332,13 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": 3.4
+   "2026-07-21": -3.6
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Palace",
    "n": 13,
-   "start": 2
+   "start": 1
   }
  },
  "ambas": {
@@ -536,7 +523,7 @@
    "tipo": "time",
    "chave": "Palace",
    "n": 13,
-   "start": 3
+   "start": 2
   }
  }
 }
