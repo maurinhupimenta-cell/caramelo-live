@@ -132,7 +132,37 @@
    "copa": 1784643372759,
    "euro": 1784644169356
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:33",
+     "jogo": "Brighton x Watford",
+     "odd": 4
+    },
+    {
+     "h": "15:36",
+     "jogo": "Leicester x Wolverhampton",
+     "odd": 4
+    },
+    {
+     "h": "15:39",
+     "jogo": "Burnley x Islington",
+     "odd": 4
+    }
+   ],
+   "gatilho": "placar empate 2-2",
+   "alvo": {
+    "h": "15:33",
+    "jogo": "Brighton x Watford",
+    "odd": 4,
+    "unidades": 1,
+    "desde": 1784644183949
+   },
+   "iniciadoEm": 1784644183949
+  },
   "cooldown": {
    "copa": 1784643372759,
    "premier": 1784640216535,
@@ -150,7 +180,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 13,
+   "n": 20,
    "start": 1
   }
  },
@@ -492,9 +522,9 @@
    "2026-07-21": -3.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGRG",
-   "n": 8,
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 44,
    "start": 1
   }
  }
