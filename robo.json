@@ -486,8 +486,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "15:42",
@@ -507,11 +507,11 @@
    ],
    "gatilho": "seq RGGRR",
    "alvo": {
-    "h": "15:45",
-    "jogo": "Brighton x Tottenham",
-    "odd": 1.98,
-    "unidades": 2,
-    "desde": 1784645086852
+    "h": "15:48",
+    "jogo": "Chelsea x Aston",
+    "odd": 2.07,
+    "unidades": 4,
+    "desde": 1784645261658
    },
    "iniciadoEm": 1784644722055,
    "tiros": [
@@ -520,6 +520,12 @@
      "jogo": "Brentford x Leeds",
      "odd": 2.15,
      "unidades": 1
+    },
+    {
+     "h": "15:45",
+     "jogo": "Brighton x Tottenham",
+     "odd": 1.98,
+     "unidades": 2
     }
    ]
   },
@@ -538,9 +544,9 @@
    "2026-07-21": -2.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.07",
-   "n": 11,
+   "tipo": "seq",
+   "chave": "RRRRR",
+   "n": 13,
    "start": 1
   }
  }
