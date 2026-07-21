@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -156.9,
-  "ciclos": 164,
-  "greens": 57,
+  "saldo": -154.1,
+  "ciclos": 165,
+  "greens": 58,
   "redsCiclo": 72,
   "aborts": 0,
   "descartes": 35,
   "historico": [
+   {
+    "quando": "2026-07-21T21:56:48.215Z",
+    "resultado": "GREEN",
+    "unidades": 2.8,
+    "detalhe": "premier · Brighton x United @3.8 (tiro 1) · gatilho: placar empate 2-2"
+   },
    {
     "quando": "2026-07-21T21:51:36.559Z",
     "resultado": "RED_CICLO",
@@ -120,52 +126,17 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-21T10:40:09.336Z",
-    "resultado": "GREEN",
-    "unidades": 3.3,
-    "detalhe": "super · Asuncion x Rio de Janeiro @4.33 (tiro 1)"
    }
   ],
   "consumidas": {
    "super": 1784670159654,
-   "copa": 1784670696456
+   "copa": 1784670696456,
+   "premier": 1784671007920
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:54",
-     "jogo": "Brighton x United",
-     "odd": 3.8
-    },
-    {
-     "h": "22:57",
-     "jogo": "Norwich x Palace",
-     "odd": 4.2
-    },
-    {
-     "h": "23:00",
-     "jogo": "Burnley x Islington",
-     "odd": 4
-    }
-   ],
-   "gatilho": "placar empate 2-2",
-   "alvo": {
-    "h": "22:54",
-    "jogo": "Brighton x United",
-    "odd": 3.8,
-    "unidades": 1,
-    "desde": 1784670697653
-   },
-   "iniciadoEm": 1784670697653
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784670696456,
-   "premier": 1784657321350,
+   "premier": 1784671007920,
    "euro": 1784650513155,
    "super": 1784670159654
   },
@@ -175,7 +146,7 @@
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
    "2026-07-20": 19.6,
-   "2026-07-21": -99.2
+   "2026-07-21": -96.4
   },
   "_gatilhoAtual": {
    "tipo": "placar",
