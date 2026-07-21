@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -49.7,
-  "ciclos": 137,
+  "saldo": -56.7,
+  "ciclos": 138,
   "greens": 51,
-  "redsCiclo": 53,
+  "redsCiclo": 54,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-21T04:08:42.731Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-21T03:31:09.240Z",
     "resultado": "GREEN",
@@ -120,64 +126,16 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-20T11:14:38.112Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
-   "super": 1784604669135
+   "super": 1784604669135,
+   "premier": 1784606922632
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "05:00",
-     "jogo": "Burnley x Everton",
-     "odd": 3.8
-    },
-    {
-     "h": "05:03",
-     "jogo": "Newcastle x Leicester",
-     "odd": 4
-    },
-    {
-     "h": "05:06",
-     "jogo": "Brighton x Norwich",
-     "odd": 3.8
-    }
-   ],
-   "alvo": {
-    "h": "05:06",
-    "jogo": "Brighton x Norwich",
-    "odd": 3.8,
-    "unidades": 4,
-    "desde": 1784606738840
-   },
-   "iniciadoEm": 1784605872038,
-   "tiros": [
-    {
-     "h": "05:00",
-     "jogo": "Burnley x Everton",
-     "odd": 3.8,
-     "unidades": 1
-    },
-    {
-     "h": "05:03",
-     "jogo": "Newcastle x Leicester",
-     "odd": 4,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784585350910,
-   "premier": 1784598640812,
+   "premier": 1784606922632,
    "euro": 1784581151719,
    "super": 1784604669135
   },
@@ -187,7 +145,7 @@
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
    "2026-07-20": 19.6,
-   "2026-07-21": 8
+   "2026-07-21": 1
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
@@ -332,8 +290,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "05:03",
@@ -352,13 +310,27 @@
     }
    ],
    "alvo": {
-    "h": "05:03",
-    "jogo": "Newcastle x Leicester",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1784606231135
+    "h": "05:09",
+    "jogo": "Tottenham x Burnley",
+    "odd": 2.35,
+    "unidades": 4,
+    "desde": 1784606922734
    },
-   "iniciadoEm": 1784606231135
+   "iniciadoEm": 1784606231135,
+   "tiros": [
+    {
+     "h": "05:03",
+     "jogo": "Newcastle x Leicester",
+     "odd": 2.15,
+     "unidades": 1
+    },
+    {
+     "h": "05:06",
+     "jogo": "Brighton x Norwich",
+     "odd": 2.05,
+     "unidades": 2
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784605452433,
@@ -377,9 +349,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Chelsea",
-   "n": 7,
-   "start": 3
+   "chave": "Palace",
+   "n": 13,
+   "start": 2
   }
  },
  "ambas": {
@@ -562,8 +534,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Chelsea",
-   "n": 7,
+   "chave": "Palace",
+   "n": 13,
    "start": 3
   }
  }
