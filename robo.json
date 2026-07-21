@@ -132,7 +132,36 @@
    "premier": 1784632837137,
    "euro": 1784634788236
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:01",
+     "jogo": "Lima x Medellin",
+     "odd": 4.33
+    },
+    {
+     "h": "13:04",
+     "jogo": "Montevideo x Porto Alegre",
+     "odd": 5.25
+    },
+    {
+     "h": "13:07",
+     "jogo": "Penarol x Santos",
+     "odd": 5.5
+    }
+   ],
+   "alvo": {
+    "h": "13:01",
+    "jogo": "Lima x Medellin",
+    "odd": 4.33,
+    "unidades": 1,
+    "desde": 1784635089753
+   },
+   "iniciadoEm": 1784635089753
+  },
   "cooldown": {
    "copa": 1784631286938,
    "premier": 1784632837137,
@@ -150,7 +179,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 11,
+   "n": 17,
    "start": 1
   }
  },
