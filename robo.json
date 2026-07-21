@@ -133,8 +133,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "22:43",
@@ -154,11 +154,11 @@
    ],
    "gatilho": "placar empate 2-2",
    "alvo": {
-    "h": "22:46",
-    "jogo": "Haiti x Turquia",
-    "odd": 4.2,
-    "unidades": 2,
-    "desde": 1784670354558
+    "h": "22:49",
+    "jogo": "Países Baixos x Colômbia",
+    "odd": 4.5,
+    "unidades": 4,
+    "desde": 1784670614858
    },
    "iniciadoEm": 1784670173857,
    "tiros": [
@@ -167,6 +167,12 @@
      "jogo": "Nova Zelândia x Tunísia",
      "odd": 5.25,
      "unidades": 1
+    },
+    {
+     "h": "22:46",
+     "jogo": "Haiti x Turquia",
+     "odd": 4.2,
+     "unidades": 2
     }
    ]
   },
@@ -323,7 +329,37 @@
   "consumidas": {
    "euro": 1784670453660
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:49",
+     "jogo": "Medellin x La Plata",
+     "odd": 2.62
+    },
+    {
+     "h": "22:52",
+     "jogo": "Sao Paulo x Guayaquil",
+     "odd": 2.02
+    },
+    {
+     "h": "22:55",
+     "jogo": "Santiago x La Plata",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "seq RGRG",
+   "alvo": {
+    "h": "22:49",
+    "jogo": "Medellin x La Plata",
+    "odd": 2.62,
+    "unidades": 1,
+    "desde": 1784670455160
+   },
+   "iniciadoEm": 1784670455160
+  },
   "cooldown": {
    "copa": 1784658070352,
    "premier": 1784665570463,
@@ -532,9 +568,9 @@
    "2026-07-21": -4.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRGG",
-   "n": 10,
+   "tipo": "odd",
+   "chave": "2.15",
+   "n": 25,
    "start": 1
   }
  }
