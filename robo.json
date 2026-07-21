@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -100,
-  "ciclos": 152,
+  "saldo": -107,
+  "ciclos": 153,
   "greens": 55,
-  "redsCiclo": 63,
+  "redsCiclo": 64,
   "aborts": 0,
   "descartes": 34,
   "historico": [
+   {
+    "quando": "2026-07-21T14:41:41.749Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
+   },
    {
     "quando": "2026-07-21T14:29:29.553Z",
     "resultado": "RED_CICLO",
@@ -120,66 +126,17 @@
     "resultado": "GREEN",
     "unidades": 4.3,
     "detalhe": "copa · Suíça x Coreia do Sul @5.25 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T21:58:07.510Z",
-    "resultado": "GREEN",
-    "unidades": 4.2,
-    "detalhe": "super · Buenos Aires x Sao Paulo @3.6 (tiro 2)"
    }
   ],
   "consumidas": {
    "copa": 1784643372759,
-   "euro": 1784644169356
+   "euro": 1784644169356,
+   "premier": 1784644901458
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "15:33",
-     "jogo": "Brighton x Watford",
-     "odd": 4
-    },
-    {
-     "h": "15:36",
-     "jogo": "Leicester x Wolverhampton",
-     "odd": 4
-    },
-    {
-     "h": "15:39",
-     "jogo": "Burnley x Islington",
-     "odd": 4
-    }
-   ],
-   "gatilho": "placar empate 2-2",
-   "alvo": {
-    "h": "15:39",
-    "jogo": "Burnley x Islington",
-    "odd": 4,
-    "unidades": 4,
-    "desde": 1784644721950
-   },
-   "iniciadoEm": 1784644183949,
-   "tiros": [
-    {
-     "h": "15:33",
-     "jogo": "Brighton x Watford",
-     "odd": 4,
-     "unidades": 1
-    },
-    {
-     "h": "15:36",
-     "jogo": "Leicester x Wolverhampton",
-     "odd": 4,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784643372759,
-   "premier": 1784640216535,
+   "premier": 1784644901458,
    "euro": 1784644169356,
    "super": 1784635789732
   },
@@ -189,7 +146,7 @@
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
    "2026-07-20": 19.6,
-   "2026-07-21": -42.3
+   "2026-07-21": -49.3
   },
   "_gatilhoAtual": {
    "tipo": "placar",
