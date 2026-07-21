@@ -135,8 +135,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:05",
@@ -156,13 +156,21 @@
    ],
    "gatilho": "placar empate 2-2",
    "alvo": {
-    "h": "17:05",
-    "jogo": "Bélgica x Turquia",
-    "odd": 4.75,
-    "unidades": 1,
-    "desde": 1784649790757
+    "h": "17:08",
+    "jogo": "Croácia x Inglaterra",
+    "odd": 4,
+    "unidades": 2,
+    "desde": 1784650091961
    },
-   "iniciadoEm": 1784649790757
+   "iniciadoEm": 1784649790757,
+   "tiros": [
+    {
+     "h": "17:05",
+     "jogo": "Bélgica x Turquia",
+     "odd": 4.75,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784649492750,
@@ -320,8 +328,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:05",
@@ -341,13 +349,21 @@
    ],
    "gatilho": "placar empate 2-2",
    "alvo": {
-    "h": "17:05",
-    "jogo": "Bélgica x Turquia",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1784649790952
+    "h": "17:08",
+    "jogo": "Croácia x Inglaterra",
+    "odd": 2.07,
+    "unidades": 2,
+    "desde": 1784650092155
    },
-   "iniciadoEm": 1784649790952
+   "iniciadoEm": 1784649790952,
+   "tiros": [
+    {
+     "h": "17:05",
+     "jogo": "Bélgica x Turquia",
+     "odd": 2.35,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784646250752,
@@ -365,9 +381,9 @@
    "2026-07-21": -14.6
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 16,
+   "tipo": "seq",
+   "chave": "GGRG",
+   "n": 8,
    "start": 1
   }
  },
