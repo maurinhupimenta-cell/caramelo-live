@@ -313,7 +313,36 @@
    "super": 1784601609514,
    "premier": 1784602621814
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:29",
+     "jogo": "Eslovênia x Eslováquia",
+     "odd": 2.62
+    },
+    {
+     "h": "04:32",
+     "jogo": "Portugal x Inglaterra",
+     "odd": 2.07
+    },
+    {
+     "h": "04:35",
+     "jogo": "Geórgia x França",
+     "odd": 2.2
+    }
+   ],
+   "alvo": {
+    "h": "04:29",
+    "jogo": "Eslovênia x Eslováquia",
+    "odd": 2.62,
+    "unidades": 1,
+    "desde": 1784604167236
+   },
+   "iniciadoEm": 1784604167236
+  },
   "cooldown": {
    "copa": 1784601252310,
    "premier": 1784602621814,
@@ -329,10 +358,10 @@
    "2026-07-20": 36.6
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 19,
-   "start": 1
+   "tipo": "time",
+   "chave": "Inglaterra",
+   "n": 9,
+   "start": 3
   }
  },
  "ambas": {
