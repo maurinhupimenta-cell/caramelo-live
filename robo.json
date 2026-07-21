@@ -134,8 +134,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "16:49",
@@ -155,13 +155,21 @@
    ],
    "gatilho": "placar empate 2-2",
    "alvo": {
-    "h": "16:49",
-    "jogo": "Curação x Tunísia",
-    "odd": 4.75,
-    "unidades": 1,
-    "desde": 1784648883355
+    "h": "16:52",
+    "jogo": "Colômbia x Costa do Marfim",
+    "odd": 4,
+    "unidades": 2,
+    "desde": 1784649131657
    },
-   "iniciadoEm": 1784648883355
+   "iniciadoEm": 1784648883355,
+   "tiros": [
+    {
+     "h": "16:49",
+     "jogo": "Curação x Tunísia",
+     "odd": 4.75,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784643372759,
@@ -520,8 +528,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GGGRR",
-   "n": 15,
+   "chave": "RGGRG",
+   "n": 11,
    "start": 1
   }
  }
