@@ -129,7 +129,36 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:25",
+     "jogo": "La Boca x Itaquera",
+     "odd": 5
+    },
+    {
+     "h": "04:28",
+     "jogo": "La Plata x Quito",
+     "odd": 5.5
+    },
+    {
+     "h": "04:31",
+     "jogo": "Buenos Aires x Guayaquil",
+     "odd": 3.75
+    }
+   ],
+   "alvo": {
+    "h": "04:25",
+    "jogo": "La Boca x Itaquera",
+    "odd": 5,
+    "unidades": 1,
+    "desde": 1784604126233
+   },
+   "iniciadoEm": 1784604126233
+  },
   "cooldown": {
    "copa": 1784585350910,
    "premier": 1784598640812,
@@ -144,9 +173,9 @@
    "2026-07-20": 19.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRRR",
-   "n": 5,
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 6,
    "start": 1
   }
  },
