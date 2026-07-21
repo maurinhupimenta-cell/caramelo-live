@@ -288,7 +288,36 @@
    "premier": 1784607103143,
    "euro": 1784608864439
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:46",
+     "jogo": "Japão x México",
+     "odd": 2.35
+    },
+    {
+     "h": "05:49",
+     "jogo": "Inglaterra x Qatar",
+     "odd": 2.3
+    },
+    {
+     "h": "05:52",
+     "jogo": "México x Irã",
+     "odd": 2.5
+    }
+   ],
+   "alvo": {
+    "h": "05:46",
+    "jogo": "Japão x México",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1784609063934
+   },
+   "iniciadoEm": 1784609063934
+  },
   "cooldown": {
    "copa": 1784605452433,
    "premier": 1784607103143,
@@ -305,9 +334,9 @@
    "2026-07-21": -2.2
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 19,
+   "tipo": "seq",
+   "chave": "RGRR",
+   "n": 9,
    "start": 1
   }
  },
