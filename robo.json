@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -66.3,
-  "ciclos": 144,
-  "greens": 53,
+  "saldo": -63,
+  "ciclos": 145,
+  "greens": 54,
   "redsCiclo": 57,
   "aborts": 0,
   "descartes": 34,
   "historico": [
+   {
+    "quando": "2026-07-21T10:40:09.336Z",
+    "resultado": "GREEN",
+    "unidades": 3.3,
+    "detalhe": "super · Asuncion x Rio de Janeiro @4.33 (tiro 1)"
+   },
    {
     "quando": "2026-07-21T10:16:48.433Z",
     "resultado": "RED_CICLO",
@@ -120,53 +126,19 @@
     "resultado": "GREEN",
     "unidades": 5.4,
     "detalhe": "euro · Portugal x Bélgica @4.2 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T16:13:14.910Z",
-    "resultado": "GREEN",
-    "unidades": 5.4,
-    "detalhe": "super · Itaquera x Guayaquil @4.2 (tiro 2)"
    }
   ],
   "consumidas": {
    "premier": 1784626912338,
-   "euro": 1784629008239
+   "euro": 1784629008239,
+   "super": 1784630409233
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "11:37",
-     "jogo": "Asuncion x Rio de Janeiro",
-     "odd": 4.33
-    },
-    {
-     "h": "11:40",
-     "jogo": "Bogota x Penarol",
-     "odd": 6
-    },
-    {
-     "h": "11:43",
-     "jogo": "Avellaneda x Rio de Janeiro",
-     "odd": 4.5
-    }
-   ],
-   "alvo": {
-    "h": "11:37",
-    "jogo": "Asuncion x Rio de Janeiro",
-    "odd": 4.33,
-    "unidades": 1,
-    "desde": 1784630049438
-   },
-   "iniciadoEm": 1784630049438
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784607544035,
    "premier": 1784626912338,
    "euro": 1784629008239,
-   "super": 1784610966639
+   "super": 1784630409233
   },
   "dias": {
    "2026-07-15": -35,
@@ -174,7 +146,7 @@
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
    "2026-07-20": 19.6,
-   "2026-07-21": -8.6
+   "2026-07-21": -5.3
   },
   "_gatilhoAtual": {
    "tipo": "placar",
