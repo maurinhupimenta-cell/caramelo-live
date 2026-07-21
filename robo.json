@@ -498,11 +498,39 @@
    }
   ],
   "consumidas": {
-   "euro": 1784602632818,
    "super": 1784603772332,
    "copa": 1784604850638
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:59",
+     "jogo": "Albânia x Inglaterra",
+     "odd": 2.05
+    },
+    {
+     "h": "05:02",
+     "jogo": "Áustria x Polônia",
+     "odd": 2.15
+    },
+    {
+     "h": "05:05",
+     "jogo": "Albânia x Dinamarca",
+     "odd": 2.25
+    }
+   ],
+   "alvo": {
+    "h": "04:59",
+    "jogo": "Albânia x Inglaterra",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1784606282533
+   },
+   "iniciadoEm": 1784606282533
+  },
   "cooldown": {
    "euro": 1784602632818,
    "super": 1784603772332,
@@ -518,10 +546,10 @@
    "2026-07-21": 2.5
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 15,
-   "start": 1
+   "tipo": "time",
+   "chave": "Polônia",
+   "n": 10,
+   "start": 2
   }
  }
 }
