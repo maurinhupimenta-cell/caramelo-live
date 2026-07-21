@@ -155,13 +155,19 @@
   }
  },
  "o25": {
-  "saldo": -13.6,
-  "ciclos": 173,
-  "greens": 121,
+  "saldo": -12.2,
+  "ciclos": 174,
+  "greens": 122,
   "redsCiclo": 29,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-21T05:44:04.837Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "euro · Itália x Dinamarca @2.4 (tiro 1)"
+   },
    {
     "quando": "2026-07-21T05:14:48.435Z",
     "resultado": "GREEN",
@@ -275,53 +281,19 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "euro · Itália x Hungria @2.4 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T22:18:36.706Z",
-    "resultado": "GREEN",
-    "unidades": 2,
-    "detalhe": "premier · Palace x Leicester @2.25 (tiro 3)"
    }
   ],
   "consumidas": {
    "copa": 1784609344039,
    "super": 1784610247137,
-   "premier": 1784610888238
+   "premier": 1784610888238,
+   "euro": 1784612644736
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:41",
-     "jogo": "Itália x Dinamarca",
-     "odd": 2.4
-    },
-    {
-     "h": "06:44",
-     "jogo": "Bélgica x Inglaterra",
-     "odd": 2.02
-    },
-    {
-     "h": "06:47",
-     "jogo": "República Tcheca x Dinamarca",
-     "odd": 2.7
-    }
-   ],
-   "alvo": {
-    "h": "06:41",
-    "jogo": "Itália x Dinamarca",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1784612464743
-   },
-   "iniciadoEm": 1784612464743
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784609344039,
    "premier": 1784610888238,
-   "euro": 1784608864439,
+   "euro": 1784612644736,
    "super": 1784610247137
   },
   "dias": {
@@ -331,12 +303,12 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": 2.7
+   "2026-07-21": 4.1
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 22,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 19,
    "start": 1
   }
  },
