@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -70.7,
-  "ciclos": 140,
-  "greens": 51,
+  "saldo": -67.5,
+  "ciclos": 141,
+  "greens": 52,
   "redsCiclo": 56,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-21T05:35:48.738Z",
+    "resultado": "GREEN",
+    "unidades": 3.2,
+    "detalhe": "premier · Watford x Burnley @4.2 (tiro 1)"
+   },
    {
     "quando": "2026-07-21T05:16:06.833Z",
     "resultado": "RED_CICLO",
@@ -120,50 +126,16 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-20T14:08:12.213Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
-   "super": 1784610966639
+   "super": 1784610966639,
+   "premier": 1784612148634
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:33",
-     "jogo": "Watford x Burnley",
-     "odd": 4.2
-    },
-    {
-     "h": "06:36",
-     "jogo": "Norwich x Chelsea",
-     "odd": 4.2
-    },
-    {
-     "h": "06:39",
-     "jogo": "Southampton x Wolverhampton",
-     "odd": 4.2
-    }
-   ],
-   "alvo": {
-    "h": "06:33",
-    "jogo": "Watford x Burnley",
-    "odd": 4.2,
-    "unidades": 1,
-    "desde": 1784611428740
-   },
-   "iniciadoEm": 1784611428740
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784607544035,
-   "premier": 1784606922632,
+   "premier": 1784612148634,
    "euro": 1784581151719,
    "super": 1784610966639
   },
@@ -173,7 +145,7 @@
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
    "2026-07-20": 19.6,
-   "2026-07-21": -13
+   "2026-07-21": -9.8
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
