@@ -151,13 +151,19 @@
   }
  },
  "o25": {
-  "saldo": -16.8,
-  "ciclos": 158,
-  "greens": 108,
+  "saldo": -15.6,
+  "ciclos": 159,
+  "greens": 109,
   "redsCiclo": 27,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-21T01:10:05.816Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Haiti x Países Baixos @2.2 (tiro 1)"
+   },
    {
     "quando": "2026-07-21T01:02:05.319Z",
     "resultado": "GREEN",
@@ -271,49 +277,15 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "copa · Argentina x Portugal @2.07 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T17:38:13.510Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
-   "euro": 1784595725211
+   "euro": 1784595725211,
+   "copa": 1784596205715
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "02:07",
-     "jogo": "Haiti x Países Baixos",
-     "odd": 2.2
-    },
-    {
-     "h": "02:10",
-     "jogo": "RD Congo x Bélgica",
-     "odd": 2.2
-    },
-    {
-     "h": "02:13",
-     "jogo": "Inglaterra x República Tcheca",
-     "odd": 2.35
-    }
-   ],
-   "alvo": {
-    "h": "02:07",
-    "jogo": "Haiti x Países Baixos",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1784595866009
-   },
-   "iniciadoEm": 1784595866009
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784588892418,
+   "copa": 1784596205715,
    "premier": 1784585916508,
    "euro": 1784595725211,
    "super": 1784588292815
@@ -324,23 +296,29 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 36.1
+   "2026-07-20": 37.3
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 8,
+   "chave": "goleada (3+)",
+   "n": 10,
    "start": 1
   }
  },
  "ambas": {
-  "saldo": -13.5,
-  "ciclos": 162,
-  "greens": 115,
+  "saldo": -12.5,
+  "ciclos": 163,
+  "greens": 116,
   "redsCiclo": 19,
   "aborts": 0,
   "descartes": 28,
   "historico": [
+   {
+    "quando": "2026-07-21T01:04:26.312Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Países Baixos x Suíça @2.02 (tiro 2)"
+   },
    {
     "quando": "2026-07-21T00:55:13.907Z",
     "resultado": "RED_CICLO",
@@ -454,72 +432,30 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-20T17:43:12.711Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Paraguai x Equador @1.95 (tiro 1)"
    }
   ],
   "consumidas": {
-   "super": 1784595313717
+   "super": 1784595313717,
+   "copa": 1784595866207
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "01:58",
-     "jogo": "Panamá x Senegal",
-     "odd": 2.15
-    },
-    {
-     "h": "02:01",
-     "jogo": "Países Baixos x Suíça",
-     "odd": 2.02
-    },
-    {
-     "h": "02:04",
-     "jogo": "Portugal x Austrália",
-     "odd": 1.93
-    }
-   ],
-   "alvo": {
-    "h": "02:01",
-    "jogo": "Países Baixos x Suíça",
-    "odd": 2.02,
-    "unidades": 2,
-    "desde": 1784595664509
-   },
-   "iniciadoEm": 1784595372409,
-   "tiros": [
-    {
-     "h": "01:58",
-     "jogo": "Panamá x Senegal",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784588241921,
    "super": 1784595313717,
    "premier": 1784588397313,
-   "copa": 1784573351513
+   "copa": 1784595866207
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": 5.1
+   "2026-07-20": 6.1
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "acima de 1-0 (2-1)",
-   "n": 7,
+   "n": 8,
    "start": 1
   }
  }
