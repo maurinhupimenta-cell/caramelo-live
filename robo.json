@@ -289,8 +289,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "13:17",
@@ -309,11 +309,11 @@
     }
    ],
    "alvo": {
-    "h": "13:20",
-    "jogo": "Alemanha x Eslováquia",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1784636388144
+    "h": "13:23",
+    "jogo": "Ucrânia x Croácia",
+    "odd": 2.25,
+    "unidades": 4,
+    "desde": 1784636568741
    },
    "iniciadoEm": 1784636027743,
    "tiros": [
@@ -322,6 +322,12 @@
      "jogo": "Bélgica x Suíça",
      "odd": 2.07,
      "unidades": 1
+    },
+    {
+     "h": "13:20",
+     "jogo": "Alemanha x Eslováquia",
+     "odd": 2.2,
+     "unidades": 2
     }
    ]
   },
@@ -342,8 +348,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 41,
+   "chave": "goleada (3+)",
+   "n": 62,
    "start": 1
   }
  },
@@ -477,7 +483,6 @@
    }
   ],
   "consumidas": {
-   "premier": 1784632837331,
    "copa": 1784633808532,
    "super": 1784636169241
   },
@@ -534,9 +539,9 @@
    "2026-07-21": -12.3
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 41,
+   "tipo": "time",
+   "chave": "Tottenham",
+   "n": 17,
    "start": 1
   }
  }
