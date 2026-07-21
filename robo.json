@@ -178,7 +178,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 7,
+   "n": 8,
    "start": 1
   }
  },
@@ -476,8 +476,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "06:28",
@@ -496,13 +496,21 @@
     }
    ],
    "alvo": {
-    "h": "06:28",
-    "jogo": "Medellin x La Plata",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1784611667343
+    "h": "06:31",
+    "jogo": "Porto Alegre x Buenos Aires",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1784611885739
    },
-   "iniciadoEm": 1784611667343
+   "iniciadoEm": 1784611667343,
+   "tiros": [
+    {
+     "h": "06:28",
+     "jogo": "Medellin x La Plata",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784610824637,
@@ -519,9 +527,9 @@
    "2026-07-21": 8.5
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 20,
+   "tipo": "time",
+   "chave": "Bogota",
+   "n": 12,
    "start": 1
   }
  }
