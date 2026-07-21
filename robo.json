@@ -323,8 +323,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "21:29",
@@ -344,11 +344,11 @@
    ],
    "gatilho": "placar acima de 1-0 (2-1)",
    "alvo": {
-    "h": "21:32",
-    "jogo": "Geórgia x Escócia",
-    "odd": 2.3,
-    "unidades": 2,
-    "desde": 1784666051252
+    "h": "21:35",
+    "jogo": "Espanha x Países Baixos",
+    "odd": 1.98,
+    "unidades": 4,
+    "desde": 1784666112359
    },
    "iniciadoEm": 1784665571556,
    "tiros": [
@@ -357,6 +357,12 @@
      "jogo": "Albânia x Romênia",
      "odd": 2.45,
      "unidades": 1
+    },
+    {
+     "h": "21:32",
+     "jogo": "Geórgia x Escócia",
+     "odd": 2.3,
+     "unidades": 2
     }
    ]
   },
@@ -377,8 +383,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 78,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 69,
    "start": 1
   }
  },
@@ -560,9 +566,9 @@
    "2026-07-21": 2.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.02",
-   "n": 22,
+   "tipo": "seq",
+   "chave": "RGRG",
+   "n": 23,
    "start": 1
   }
  }
