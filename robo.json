@@ -155,13 +155,19 @@
   }
  },
  "o25": {
-  "saldo": -30.7,
-  "ciclos": 179,
-  "greens": 123,
+  "saldo": -29.5,
+  "ciclos": 180,
+  "greens": 124,
   "redsCiclo": 32,
   "aborts": 0,
   "descartes": 24,
   "historico": [
+   {
+    "quando": "2026-07-21T10:23:43.138Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · Wolverhampton x Brentford @2.15 (tiro 1)"
+   },
    {
     "quando": "2026-07-21T10:19:09.832Z",
     "resultado": "RED_CICLO",
@@ -275,23 +281,18 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-21T01:30:44.208Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "super · Guayaquil x Agua Branca @2.07 (tiro 1)"
    }
   ],
   "consumidas": {
    "euro": 1784627928542,
    "copa": 1784628587137,
-   "super": 1784629149644
+   "super": 1784629149644,
+   "premier": 1784629423034
   },
   "ciclo": null,
   "cooldown": {
    "copa": 1784628587137,
-   "premier": 1784610888238,
+   "premier": 1784629423034,
    "euro": 1784627928542,
    "super": 1784629149644
   },
@@ -302,12 +303,12 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": -14.4
+   "2026-07-21": -13.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.75",
-   "n": 6,
+   "tipo": "seq",
+   "chave": "GRRG",
+   "n": 11,
    "start": 1
   }
  },
