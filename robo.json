@@ -155,13 +155,19 @@
   }
  },
  "o25": {
-  "saldo": -21,
-  "ciclos": 185,
-  "greens": 129,
+  "saldo": -20,
+  "ciclos": 186,
+  "greens": 130,
   "redsCiclo": 32,
   "aborts": 0,
   "descartes": 24,
   "historico": [
+   {
+    "quando": "2026-07-21T12:31:50.232Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Montevideo x Agua Branca @2.05 (tiro 1)"
+   },
    {
     "quando": "2026-07-21T12:25:48.537Z",
     "resultado": "GREEN",
@@ -275,52 +281,18 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "copa · Uruguai x Noruega @2.15 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-21T03:35:13.934Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "euro · Portugal x Inglaterra @2.07 (tiro 2)"
    }
   ],
   "consumidas": {
-   "euro": 1784636748337
+   "euro": 1784636748337,
+   "super": 1784637109846
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "13:28",
-     "jogo": "Montevideo x Agua Branca",
-     "odd": 2.05
-    },
-    {
-     "h": "13:31",
-     "jogo": "Santiago x Guayaquil",
-     "odd": 2
-    },
-    {
-     "h": "13:34",
-     "jogo": "Buenos Aires x Avellaneda",
-     "odd": 2.15
-    }
-   ],
-   "alvo": {
-    "h": "13:28",
-    "jogo": "Montevideo x Agua Branca",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1784636749740
-   },
-   "iniciadoEm": 1784636749740
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784632547639,
    "premier": 1784633380231,
    "euro": 1784636748337,
-   "super": 1784633109240
+   "super": 1784637109846
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -329,12 +301,12 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": -4.7
+   "2026-07-21": -3.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2",
-   "n": 9,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 59,
    "start": 1
   }
  },
@@ -519,7 +491,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 1-1",
-   "n": 32,
+   "n": 33,
    "start": 1
   }
  }
