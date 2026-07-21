@@ -331,19 +331,25 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 7,
+   "chave": "goleada (3+)",
+   "n": 18,
    "start": 1
   }
  },
  "ambas": {
-  "saldo": -9.3,
-  "ciclos": 166,
-  "greens": 119,
+  "saldo": -8.1,
+  "ciclos": 167,
+  "greens": 120,
   "redsCiclo": 19,
   "aborts": 0,
   "descartes": 28,
   "historico": [
+   {
+    "quando": "2026-07-21T02:14:12.013Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Suíça x Suécia @2.15 (tiro 1)"
+   },
    {
     "quando": "2026-07-21T02:07:06.810Z",
     "resultado": "GREEN",
@@ -457,66 +463,32 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "copa · Marrocos x Paraguai @2.07 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T18:23:53.208Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Tottenham x Everton @2.02 (tiro 1)"
    }
   ],
   "consumidas": {
    "premier": 1784598281714,
    "euro": 1784598431515,
-   "super": 1784599626709
+   "super": 1784599626709,
+   "copa": 1784600051912
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:10",
-     "jogo": "Suíça x Suécia",
-     "odd": 2.15
-    },
-    {
-     "h": "03:13",
-     "jogo": "Portugal x Paraguai",
-     "odd": 2
-    },
-    {
-     "h": "03:16",
-     "jogo": "Países Baixos x México",
-     "odd": 1.98
-    }
-   ],
-   "alvo": {
-    "h": "03:10",
-    "jogo": "Suíça x Suécia",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1784599628220
-   },
-   "iniciadoEm": 1784599628220
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784598431515,
    "super": 1784599626709,
    "premier": 1784598281714,
-   "copa": 1784595866207
+   "copa": 1784600051912
   },
   "dias": {
    "2026-07-15": 2.2,
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": 9.3
+   "2026-07-20": 10.5
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 12,
+   "tipo": "odd",
+   "chave": "1.98",
+   "n": 6,
    "start": 1
   }
  }
