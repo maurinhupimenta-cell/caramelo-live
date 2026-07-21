@@ -335,19 +335,25 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGRR",
-   "n": 9,
+   "chave": "GRRG",
+   "n": 5,
    "start": 1
   }
  },
  "ambas": {
-  "saldo": -9.5,
-  "ciclos": 173,
-  "greens": 125,
+  "saldo": -8.6,
+  "ciclos": 174,
+  "greens": 126,
   "redsCiclo": 20,
   "aborts": 0,
   "descartes": 28,
   "historico": [
+   {
+    "quando": "2026-07-21T04:45:44.334Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · Jordânia x Cabo Verde @1.93 (tiro 1)"
+   },
    {
     "quando": "2026-07-21T04:27:47.232Z",
     "resultado": "GREEN",
@@ -461,54 +467,20 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "euro · Polônia x Países Baixos @1.95 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T20:47:47.515Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "premier · Watford x Brighton @1.87 (tiro 1)"
    }
   ],
   "consumidas": {
    "euro": 1784606686043,
    "premier": 1784607643535,
-   "super": 1784608067040
+   "super": 1784608067040,
+   "copa": 1784609144140
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:43",
-     "jogo": "Jordânia x Cabo Verde",
-     "odd": 1.93
-    },
-    {
-     "h": "05:46",
-     "jogo": "Japão x México",
-     "odd": 2.02
-    },
-    {
-     "h": "05:49",
-     "jogo": "Inglaterra x Qatar",
-     "odd": 2.05
-    }
-   ],
-   "alvo": {
-    "h": "05:43",
-    "jogo": "Jordânia x Cabo Verde",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1784608463946
-   },
-   "iniciadoEm": 1784608463946
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784606686043,
    "super": 1784608067040,
    "premier": 1784607643535,
-   "copa": 1784604850638
+   "copa": 1784609144140
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -516,7 +488,7 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": 5.6
+   "2026-07-21": 6.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
