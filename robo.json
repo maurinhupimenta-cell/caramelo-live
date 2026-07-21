@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -57.7,
-  "ciclos": 136,
-  "greens": 50,
+  "saldo": -49.7,
+  "ciclos": 137,
+  "greens": 51,
   "redsCiclo": 53,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-21T03:31:09.240Z",
+    "resultado": "GREEN",
+    "unidades": 8,
+    "detalhe": "super · La Plata x Quito @5.5 (tiro 2)"
+   },
    {
     "quando": "2026-07-21T01:50:40.915Z",
     "resultado": "RED_CICLO",
@@ -120,70 +126,30 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-20T10:58:54.011Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "04:25",
-     "jogo": "La Boca x Itaquera",
-     "odd": 5
-    },
-    {
-     "h": "04:28",
-     "jogo": "La Plata x Quito",
-     "odd": 5.5
-    },
-    {
-     "h": "04:31",
-     "jogo": "Buenos Aires x Guayaquil",
-     "odd": 3.75
-    }
-   ],
-   "alvo": {
-    "h": "04:28",
-    "jogo": "La Plata x Quito",
-    "odd": 5.5,
-    "unidades": 2,
-    "desde": 1784604551240
-   },
-   "iniciadoEm": 1784604126233,
-   "tiros": [
-    {
-     "h": "04:25",
-     "jogo": "La Boca x Itaquera",
-     "odd": 5,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "super": 1784604669135
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784585350910,
    "premier": 1784598640812,
    "euro": 1784581151719,
-   "super": 1784584687318
+   "super": 1784604669135
   },
   "dias": {
    "2026-07-15": -35,
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
-   "2026-07-20": 19.6
+   "2026-07-20": 19.6,
+   "2026-07-21": 8
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 6,
+   "n": 7,
    "start": 1
   }
  },
@@ -366,9 +332,9 @@
    "2026-07-20": 36.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Inglaterra",
-   "n": 9,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 12,
    "start": 1
   }
  },
