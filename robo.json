@@ -1,12 +1,18 @@
 {
  "o35": {
   "saldo": -67.5,
-  "ciclos": 141,
+  "ciclos": 142,
   "greens": 52,
   "redsCiclo": 56,
   "aborts": 0,
-  "descartes": 33,
+  "descartes": 34,
   "historico": [
+   {
+    "quando": "2026-07-21T09:25:48.535Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-21T05:35:48.738Z",
     "resultado": "GREEN",
@@ -120,48 +126,10 @@
     "resultado": "GREEN",
     "unidades": 3.2,
     "detalhe": "premier · Brentford x Burnley @4.2 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T14:31:14.311Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {
-   "super": 1784610966639,
-   "premier": 1784612148634
-  },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "07:07",
-     "jogo": "Egito x Haiti",
-     "odd": 3.8
-    },
-    {
-     "h": "07:10",
-     "jogo": "Croácia x Tunísia",
-     "odd": 6
-    },
-    {
-     "h": "07:13",
-     "jogo": "Arábia Saudita x Austrália",
-     "odd": 4
-    }
-   ],
-   "alvo": {
-    "h": "07:07",
-    "jogo": "Egito x Haiti",
-    "odd": 3.8,
-    "unidades": 1,
-    "desde": 1784613484239
-   },
-   "iniciadoEm": 1784613484239
-  },
+  "consumidas": {},
+  "ciclo": null,
   "cooldown": {
    "copa": 1784607544035,
    "premier": 1784612148634,
@@ -313,7 +281,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1784612644736,
    "copa": 1784613484433
   },
   "ciclo": null,
@@ -488,9 +455,9 @@
    "2026-07-21": 2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Sérvia",
-   "n": 10,
+   "tipo": "placar",
+   "chave": "0-0",
+   "n": 12,
    "start": 1
   }
  }
