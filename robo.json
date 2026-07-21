@@ -288,8 +288,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "14:43",
@@ -308,11 +308,11 @@
     }
    ],
    "alvo": {
-    "h": "14:46",
-    "jogo": "Jordânia x Argentina",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1784641549234
+    "h": "14:49",
+    "jogo": "Irã x EUA",
+    "odd": 2.45,
+    "unidades": 4,
+    "desde": 1784641727236
    },
    "iniciadoEm": 1784641211234,
    "tiros": [
@@ -321,6 +321,12 @@
      "jogo": "Egito x Suíça",
      "odd": 2.2,
      "unidades": 1
+    },
+    {
+     "h": "14:46",
+     "jogo": "Jordânia x Argentina",
+     "odd": 2.1,
+     "unidades": 2
     }
    ]
   },
@@ -340,10 +346,10 @@
    "2026-07-21": 1.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Suíça",
-   "n": 12,
-   "start": 3
+   "tipo": "seq",
+   "chave": "RGRGR",
+   "n": 11,
+   "start": 1
   }
  },
  "ambas": {
@@ -482,8 +488,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "14:46",
@@ -502,13 +508,21 @@
     }
    ],
    "alvo": {
-    "h": "14:46",
-    "jogo": "Jordânia x Argentina",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1784641548040
+    "h": "14:49",
+    "jogo": "Irã x EUA",
+    "odd": 2.1,
+    "unidades": 2,
+    "desde": 1784641727431
    },
-   "iniciadoEm": 1784641548040
+   "iniciadoEm": 1784641548040,
+   "tiros": [
+    {
+     "h": "14:46",
+     "jogo": "Jordânia x Argentina",
+     "odd": 1.9,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784640528345,
