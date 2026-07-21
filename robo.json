@@ -131,7 +131,36 @@
   "consumidas": {
    "premier": 1784626912338
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:08",
+     "jogo": "Eslováquia x Hungria",
+     "odd": 5
+    },
+    {
+     "h": "11:11",
+     "jogo": "Inglaterra x Croácia",
+     "odd": 4
+    },
+    {
+     "h": "11:14",
+     "jogo": "França x Áustria",
+     "odd": 4.2
+    }
+   ],
+   "alvo": {
+    "h": "11:08",
+    "jogo": "Eslováquia x Hungria",
+    "odd": 5,
+    "unidades": 1,
+    "desde": 1784628288237
+   },
+   "iniciadoEm": 1784628288237
+  },
   "cooldown": {
    "copa": 1784607544035,
    "premier": 1784626912338,
@@ -147,10 +176,10 @@
    "2026-07-21": -1.6
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":36",
-   "n": 7,
-   "start": 3
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 9,
+   "start": 1
   }
  },
  "o25": {
@@ -341,7 +370,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "goleada (3+)",
-   "n": 43,
+   "n": 44,
    "start": 1
   }
  },
