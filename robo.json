@@ -155,13 +155,19 @@
   }
  },
  "o25": {
-  "saldo": -23,
-  "ciclos": 184,
-  "greens": 128,
+  "saldo": -21,
+  "ciclos": 185,
+  "greens": 129,
   "redsCiclo": 32,
   "aborts": 0,
   "descartes": 24,
   "historico": [
+   {
+    "quando": "2026-07-21T12:25:48.537Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "euro · Ucrânia x Croácia @2.25 (tiro 3)"
+   },
    {
     "quando": "2026-07-21T11:29:40.337Z",
     "resultado": "GREEN",
@@ -275,65 +281,17 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "euro · Portugal x Inglaterra @2.07 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-21T02:57:01.915Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "premier · United x West Ham @2.5 (tiro 1)"
    }
   ],
   "consumidas": {
-   "premier": 1784633380231
+   "premier": 1784633380231,
+   "euro": 1784636748337
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "13:17",
-     "jogo": "Bélgica x Suíça",
-     "odd": 2.07
-    },
-    {
-     "h": "13:20",
-     "jogo": "Alemanha x Eslováquia",
-     "odd": 2.2
-    },
-    {
-     "h": "13:23",
-     "jogo": "Ucrânia x Croácia",
-     "odd": 2.25
-    }
-   ],
-   "alvo": {
-    "h": "13:23",
-    "jogo": "Ucrânia x Croácia",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1784636568741
-   },
-   "iniciadoEm": 1784636027743,
-   "tiros": [
-    {
-     "h": "13:17",
-     "jogo": "Bélgica x Suíça",
-     "odd": 2.07,
-     "unidades": 1
-    },
-    {
-     "h": "13:20",
-     "jogo": "Alemanha x Eslováquia",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784632547639,
    "premier": 1784633380231,
-   "euro": 1784632248443,
+   "euro": 1784636748337,
    "super": 1784633109240
   },
   "dias": {
@@ -343,12 +301,12 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": -6.7
+   "2026-07-21": -4.7
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 62,
+   "tipo": "seq",
+   "chave": "RRRGR",
+   "n": 15,
    "start": 1
   }
  },
