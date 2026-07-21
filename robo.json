@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -149.9,
-  "ciclos": 163,
+  "saldo": -156.9,
+  "ciclos": 164,
   "greens": 57,
-  "redsCiclo": 71,
+  "redsCiclo": 72,
   "aborts": 0,
   "descartes": 35,
   "historico": [
+   {
+    "quando": "2026-07-21T21:51:36.559Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
+   },
    {
     "quando": "2026-07-21T21:42:39.758Z",
     "resultado": "RED_CICLO",
@@ -120,64 +126,15 @@
     "resultado": "GREEN",
     "unidades": 3.3,
     "detalhe": "super · Asuncion x Rio de Janeiro @4.33 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-21T10:16:48.433Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
-   "super": 1784670159654
+   "super": 1784670159654,
+   "copa": 1784670696456
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "22:43",
-     "jogo": "Nova Zelândia x Tunísia",
-     "odd": 5.25
-    },
-    {
-     "h": "22:46",
-     "jogo": "Haiti x Turquia",
-     "odd": 4.2
-    },
-    {
-     "h": "22:49",
-     "jogo": "Países Baixos x Colômbia",
-     "odd": 4.5
-    }
-   ],
-   "gatilho": "placar empate 2-2",
-   "alvo": {
-    "h": "22:49",
-    "jogo": "Países Baixos x Colômbia",
-    "odd": 4.5,
-    "unidades": 4,
-    "desde": 1784670614858
-   },
-   "iniciadoEm": 1784670173857,
-   "tiros": [
-    {
-     "h": "22:43",
-     "jogo": "Nova Zelândia x Tunísia",
-     "odd": 5.25,
-     "unidades": 1
-    },
-    {
-     "h": "22:46",
-     "jogo": "Haiti x Turquia",
-     "odd": 4.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784660291350,
+   "copa": 1784670696456,
    "premier": 1784657321350,
    "euro": 1784650513155,
    "super": 1784670159654
@@ -188,12 +145,12 @@
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
    "2026-07-20": 19.6,
-   "2026-07-21": -92.2
+   "2026-07-21": -99.2
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 13,
+   "n": 25,
    "start": 1
   }
  },
@@ -376,20 +333,26 @@
    "2026-07-21": -24.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRG",
-   "n": 25,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":58",
+   "n": 18,
+   "start": 2
   }
  },
  "ambas": {
-  "saldo": -19.3,
-  "ciclos": 214,
-  "greens": 157,
+  "saldo": -18.3,
+  "ciclos": 215,
+  "greens": 158,
   "redsCiclo": 26,
   "aborts": 0,
   "descartes": 31,
   "historico": [
+   {
+    "quando": "2026-07-21T21:51:36.851Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Países Baixos x Colômbia @2 (tiro 3) · gatilho: seq RRRGG"
+   },
    {
     "quando": "2026-07-21T21:42:39.958Z",
     "resultado": "RED_CICLO",
@@ -503,61 +466,18 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "super · Avellaneda x Guayaquil @1.93 (tiro 1) · gatilho: coluna :25"
-   },
-   {
-    "quando": "2026-07-21T13:51:44.931Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "copa · Irã x EUA @2.1 (tiro 2)"
    }
   ],
   "consumidas": {
-   "premier": 1784670159853
+   "premier": 1784670159853,
+   "copa": 1784670696652
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "22:43",
-     "jogo": "Nova Zelândia x Tunísia",
-     "odd": 2.1
-    },
-    {
-     "h": "22:46",
-     "jogo": "Haiti x Turquia",
-     "odd": 1.93
-    },
-    {
-     "h": "22:49",
-     "jogo": "Países Baixos x Colômbia",
-     "odd": 2
-    }
-   ],
-   "gatilho": "seq RRRGG",
-   "alvo": {
-    "h": "22:46",
-    "jogo": "Haiti x Turquia",
-    "odd": 1.93,
-    "unidades": 2,
-    "desde": 1784670354755
-   },
-   "iniciadoEm": 1784670174152,
-   "tiros": [
-    {
-     "h": "22:43",
-     "jogo": "Nova Zelândia x Tunísia",
-     "odd": 2.1,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784665554458,
    "super": 1784657531256,
    "premier": 1784670159853,
-   "copa": 1784656932655
+   "copa": 1784670696652
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -565,12 +485,12 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": -4.2
+   "2026-07-21": -3.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.15",
-   "n": 25,
+   "tipo": "seq",
+   "chave": "GRRRG",
+   "n": 11,
    "start": 1
   }
  }
