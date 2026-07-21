@@ -471,10 +471,38 @@
    }
   ],
   "consumidas": {
-   "copa": 1784628407635,
    "super": 1784631849438
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:05",
+     "jogo": "Inglaterra x Escócia",
+     "odd": 1.9
+    },
+    {
+     "h": "12:08",
+     "jogo": "Turquia x Croácia",
+     "odd": 2.05
+    },
+    {
+     "h": "12:11",
+     "jogo": "Suíça x Alemanha",
+     "odd": 1.85
+    }
+   ],
+   "alvo": {
+    "h": "12:05",
+    "jogo": "Inglaterra x Escócia",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1784631851037
+   },
+   "iniciadoEm": 1784631851037
+  },
   "cooldown": {
    "euro": 1784628108237,
    "super": 1784631849438,
@@ -490,9 +518,9 @@
    "2026-07-21": -0.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":10",
-   "n": 12,
+   "tipo": "seq",
+   "chave": "RRGGR",
+   "n": 6,
    "start": 1
   }
  }
