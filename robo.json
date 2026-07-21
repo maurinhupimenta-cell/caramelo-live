@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -135.9,
-  "ciclos": 161,
+  "saldo": -142.9,
+  "ciclos": 162,
   "greens": 57,
-  "redsCiclo": 69,
+  "redsCiclo": 70,
   "aborts": 0,
   "descartes": 35,
   "historico": [
+   {
+    "quando": "2026-07-21T18:58:11.457Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
+   },
    {
     "quando": "2026-07-21T18:34:13.251Z",
     "resultado": "RED_CICLO",
@@ -120,65 +126,16 @@
     "resultado": "GREEN",
     "unidades": 8.2,
     "detalhe": "premier · Newcastle x Palace @3.8 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-21T09:25:48.535Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
    "premier": 1784657321350,
-   "super": 1784658853060
+   "super": 1784658853060,
+   "copa": 1784660291350
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "19:49",
-     "jogo": "Arábia Saudita x Coreia do Sul",
-     "odd": 4.75
-    },
-    {
-     "h": "19:52",
-     "jogo": "Nova Zelândia x África do Sul",
-     "odd": 5
-    },
-    {
-     "h": "19:55",
-     "jogo": "Uruguai x México",
-     "odd": 4.33
-    }
-   ],
-   "gatilho": "placar empate 2-2",
-   "alvo": {
-    "h": "19:55",
-    "jogo": "Uruguai x México",
-    "odd": 4.33,
-    "unidades": 4,
-    "desde": 1784660111252
-   },
-   "iniciadoEm": 1784659571150,
-   "tiros": [
-    {
-     "h": "19:49",
-     "jogo": "Arábia Saudita x Coreia do Sul",
-     "odd": 4.75,
-     "unidades": 1
-    },
-    {
-     "h": "19:52",
-     "jogo": "Nova Zelândia x África do Sul",
-     "odd": 5,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784649492750,
+   "copa": 1784660291350,
    "premier": 1784657321350,
    "euro": 1784650513155,
    "super": 1784658853060
@@ -189,7 +146,7 @@
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
    "2026-07-20": 19.6,
-   "2026-07-21": -78.2
+   "2026-07-21": -85.2
   },
   "_gatilhoAtual": {
    "tipo": "placar",
@@ -378,9 +335,9 @@
    "2026-07-21": -12.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.6",
-   "n": 8,
+   "tipo": "coluna",
+   "chave": ":58",
+   "n": 18,
    "start": 1
   }
  },
