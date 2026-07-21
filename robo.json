@@ -289,7 +289,37 @@
    "super": 1784645592353,
    "copa": 1784646250752
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:24",
+     "jogo": "Chelsea x Palace",
+     "odd": 2.2
+    },
+    {
+     "h": "16:27",
+     "jogo": "City x Liverpool",
+     "odd": 2.1
+    },
+    {
+     "h": "16:30",
+     "jogo": "Southampton x Watford",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-1)",
+   "alvo": {
+    "h": "16:24",
+    "jogo": "Chelsea x Palace",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1784647242956
+   },
+   "iniciadoEm": 1784647242956
+  },
   "cooldown": {
    "copa": 1784646250752,
    "premier": 1784642919931,
@@ -307,8 +337,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 71,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 37,
    "start": 1
   }
  },
