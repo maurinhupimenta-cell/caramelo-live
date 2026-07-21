@@ -372,13 +372,19 @@
   }
  },
  "ambas": {
-  "saldo": -11.1,
-  "ciclos": 205,
-  "greens": 151,
+  "saldo": -10.1,
+  "ciclos": 206,
+  "greens": 152,
   "redsCiclo": 24,
   "aborts": 0,
   "descartes": 30,
   "historico": [
+   {
+    "quando": "2026-07-21T17:13:52.750Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · República Tcheca x Países Baixos @2 (tiro 2) · gatilho: placar empate 1-1"
+   },
    {
     "quando": "2026-07-21T16:58:01.351Z",
     "resultado": "GREEN",
@@ -492,59 +498,16 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · Coreia do Sul x Austrália @2.05 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-21T11:20:37.437Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
    "premier": 1784650658854,
-   "super": 1784653081156
+   "super": 1784653081156,
+   "euro": 1784654032554
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "18:08",
-     "jogo": "Bélgica x França",
-     "odd": 1.83
-    },
-    {
-     "h": "18:11",
-     "jogo": "República Tcheca x Países Baixos",
-     "odd": 2
-    },
-    {
-     "h": "18:14",
-     "jogo": "Polônia x Eslováquia",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "placar empate 1-1",
-   "alvo": {
-    "h": "18:11",
-    "jogo": "República Tcheca x Países Baixos",
-    "odd": 2,
-    "unidades": 2,
-    "desde": 1784653931955
-   },
-   "iniciadoEm": 1784653572551,
-   "tiros": [
-    {
-     "h": "18:08",
-     "jogo": "Bélgica x França",
-     "odd": 1.83,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784649791152,
+   "euro": 1784654032554,
    "super": 1784653081156,
    "premier": 1784650658854,
    "copa": 1784650033051
@@ -555,12 +518,12 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": 4
+   "2026-07-21": 5
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 10,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 58,
    "start": 1
   }
  }
