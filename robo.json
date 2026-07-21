@@ -347,13 +347,19 @@
   }
  },
  "ambas": {
-  "saldo": -13.8,
-  "ciclos": 169,
-  "greens": 121,
+  "saldo": -12.6,
+  "ciclos": 170,
+  "greens": 122,
   "redsCiclo": 20,
   "aborts": 0,
   "descartes": 28,
   "historico": [
+   {
+    "quando": "2026-07-21T03:34:10.742Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Canadá x Senegal @2.15 (tiro 1)"
+   },
    {
     "quando": "2026-07-21T03:16:12.532Z",
     "resultado": "GREEN",
@@ -467,53 +473,19 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "premier · Tottenham x Aston @2.2 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T19:37:15.009Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "super · La Boca x Itaquera @2.07 (tiro 3)"
    }
   ],
   "consumidas": {
    "euro": 1784602632818,
-   "super": 1784603772332
+   "super": 1784603772332,
+   "copa": 1784604850638
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:28",
-     "jogo": "Canadá x Senegal",
-     "odd": 2.15
-    },
-    {
-     "h": "04:31",
-     "jogo": "Qatar x Suécia",
-     "odd": 2.15
-    },
-    {
-     "h": "04:34",
-     "jogo": "Brasil x Colômbia",
-     "odd": 1.95
-    }
-   ],
-   "alvo": {
-    "h": "04:28",
-    "jogo": "Canadá x Senegal",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1784604314437
-   },
-   "iniciadoEm": 1784604314437
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784602632818,
    "super": 1784603772332,
    "premier": 1784598281714,
-   "copa": 1784600051912
+   "copa": 1784604850638
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -521,7 +493,7 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": 1.3
+   "2026-07-21": 2.5
   },
   "_gatilhoAtual": {
    "tipo": "placar",
