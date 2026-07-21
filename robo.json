@@ -289,7 +289,36 @@
    "super": 1784629149644,
    "premier": 1784629423034
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:05",
+     "jogo": "Inglaterra x Escócia",
+     "odd": 2.1
+    },
+    {
+     "h": "12:08",
+     "jogo": "Turquia x Croácia",
+     "odd": 2.4
+    },
+    {
+     "h": "12:11",
+     "jogo": "Suíça x Alemanha",
+     "odd": 2.07
+    }
+   ],
+   "alvo": {
+    "h": "12:05",
+    "jogo": "Inglaterra x Escócia",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1784631788240
+   },
+   "iniciadoEm": 1784631788240
+  },
   "cooldown": {
    "copa": 1784628587137,
    "premier": 1784629423034,
@@ -306,9 +335,9 @@
    "2026-07-21": -13.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRG",
-   "n": 11,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 43,
    "start": 1
   }
  },
