@@ -357,13 +357,19 @@
   }
  },
  "ambas": {
-  "saldo": -17.8,
-  "ciclos": 197,
-  "greens": 144,
+  "saldo": -16.5,
+  "ciclos": 198,
+  "greens": 145,
   "redsCiclo": 24,
   "aborts": 0,
   "descartes": 29,
   "historico": [
+   {
+    "quando": "2026-07-21T14:50:48.651Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "premier · Chelsea x Aston @2.07 (tiro 3) · gatilho: seq RGGRR"
+   },
    {
     "quando": "2026-07-21T14:32:54.055Z",
     "resultado": "GREEN",
@@ -477,68 +483,19 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-21T05:55:05.036Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
    "copa": 1784641904732,
    "super": 1784644089754,
-   "euro": 1784644373854
+   "euro": 1784644373854,
+   "premier": 1784645448456
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "15:42",
-     "jogo": "Brentford x Leeds",
-     "odd": 2.15
-    },
-    {
-     "h": "15:45",
-     "jogo": "Brighton x Tottenham",
-     "odd": 1.98
-    },
-    {
-     "h": "15:48",
-     "jogo": "Chelsea x Aston",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "seq RGGRR",
-   "alvo": {
-    "h": "15:48",
-    "jogo": "Chelsea x Aston",
-    "odd": 2.07,
-    "unidades": 4,
-    "desde": 1784645261658
-   },
-   "iniciadoEm": 1784644722055,
-   "tiros": [
-    {
-     "h": "15:42",
-     "jogo": "Brentford x Leeds",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "15:45",
-     "jogo": "Brighton x Tottenham",
-     "odd": 1.98,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784644373854,
    "super": 1784644089754,
-   "premier": 1784641117235,
+   "premier": 1784645448456,
    "copa": 1784641904732
   },
   "dias": {
@@ -547,12 +504,12 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": -2.7
+   "2026-07-21": -1.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRR",
-   "n": 13,
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 21,
    "start": 1
   }
  }
