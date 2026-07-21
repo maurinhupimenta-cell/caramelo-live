@@ -287,7 +287,37 @@
    "super": 1784656324651,
    "euro": 1784656931549
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:13",
+     "jogo": "Marrocos x Uzbequistão",
+     "odd": 2.35
+    },
+    {
+     "h": "19:16",
+     "jogo": "Argélia x Bélgica",
+     "odd": 2.35
+    },
+    {
+     "h": "19:19",
+     "jogo": "Cabo Verde x Jordânia",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-1)",
+   "alvo": {
+    "h": "19:13",
+    "jogo": "Marrocos x Uzbequistão",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1784657470856
+   },
+   "iniciadoEm": 1784657470856
+  },
   "cooldown": {
    "copa": 1784650749450,
    "premier": 1784656023060,
@@ -305,8 +335,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 65,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 68,
    "start": 1
   }
  },
