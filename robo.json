@@ -154,13 +154,19 @@
   }
  },
  "o25": {
-  "saldo": -14.9,
-  "ciclos": 190,
+  "saldo": -21.9,
+  "ciclos": 191,
   "greens": 134,
-  "redsCiclo": 32,
+  "redsCiclo": 33,
   "aborts": 0,
   "descartes": 24,
   "historico": [
+   {
+    "quando": "2026-07-21T13:51:44.642Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-21T13:40:09.736Z",
     "resultado": "GREEN",
@@ -274,64 +280,16 @@
     "resultado": "GREEN",
     "unidades": 2.5,
     "detalhe": "super · Belo Horizonte x Bogota @2.37 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-21T04:49:04.238Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "copa · Japão x México @2.35 (tiro 1)"
    }
   ],
   "consumidas": {
    "euro": 1784640888041,
-   "super": 1784641209631
+   "super": 1784641209631,
+   "copa": 1784641904542
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "14:43",
-     "jogo": "Egito x Suíça",
-     "odd": 2.2
-    },
-    {
-     "h": "14:46",
-     "jogo": "Jordânia x Argentina",
-     "odd": 2.1
-    },
-    {
-     "h": "14:49",
-     "jogo": "Irã x EUA",
-     "odd": 2.45
-    }
-   ],
-   "alvo": {
-    "h": "14:49",
-    "jogo": "Irã x EUA",
-    "odd": 2.45,
-    "unidades": 4,
-    "desde": 1784641727236
-   },
-   "iniciadoEm": 1784641211234,
-   "tiros": [
-    {
-     "h": "14:43",
-     "jogo": "Egito x Suíça",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "14:46",
-     "jogo": "Jordânia x Argentina",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784637410141,
+   "copa": 1784641904542,
    "premier": 1784638067132,
    "euro": 1784640888041,
    "super": 1784641209631
@@ -343,23 +301,29 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": 1.4
+   "2026-07-21": -5.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRGR",
-   "n": 11,
+   "tipo": "time",
+   "chave": "Suíça",
+   "n": 13,
    "start": 1
   }
  },
  "ambas": {
-  "saldo": -20.9,
-  "ciclos": 194,
-  "greens": 141,
+  "saldo": -19.7,
+  "ciclos": 195,
+  "greens": 142,
   "redsCiclo": 24,
   "aborts": 0,
   "descartes": 29,
   "historico": [
+   {
+    "quando": "2026-07-21T13:51:44.931Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Irã x EUA @2.1 (tiro 2)"
+   },
    {
     "quando": "2026-07-21T13:38:37.340Z",
     "resultado": "GREEN",
@@ -473,62 +437,20 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "premier · Brentford x City @1.93 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-21T05:13:44.739Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "euro · Eslovênia x Inglaterra @2.05 (tiro 2)"
    }
   ],
   "consumidas": {
    "super": 1784640288838,
    "euro": 1784640528345,
-   "premier": 1784641117235
+   "premier": 1784641117235,
+   "copa": 1784641904732
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "14:46",
-     "jogo": "Jordânia x Argentina",
-     "odd": 1.9
-    },
-    {
-     "h": "14:49",
-     "jogo": "Irã x EUA",
-     "odd": 2.1
-    },
-    {
-     "h": "14:52",
-     "jogo": "Arábia Saudita x Equador",
-     "odd": 1.85
-    }
-   ],
-   "alvo": {
-    "h": "14:49",
-    "jogo": "Irã x EUA",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1784641727431
-   },
-   "iniciadoEm": 1784641548040,
-   "tiros": [
-    {
-     "h": "14:46",
-     "jogo": "Jordânia x Argentina",
-     "odd": 1.9,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784640528345,
    "super": 1784640288838,
    "premier": 1784641117235,
-   "copa": 1784637947636
+   "copa": 1784641904732
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -536,12 +458,12 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": -5.8
+   "2026-07-21": -4.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.85",
-   "n": 9,
+   "tipo": "seq",
+   "chave": "RGRRG",
+   "n": 8,
    "start": 1
   }
  }
