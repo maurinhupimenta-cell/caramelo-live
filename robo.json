@@ -316,8 +316,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "18:53",
@@ -337,11 +337,11 @@
    ],
    "gatilho": "placar acima de 1-0 (2-1)",
    "alvo": {
-    "h": "18:56",
-    "jogo": "Portugal x Romênia",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1784656571553
+    "h": "18:59",
+    "jogo": "Alemanha x Sérvia",
+    "odd": 2.35,
+    "unidades": 4,
+    "desde": 1784656751953
    },
    "iniciadoEm": 1784656326157,
    "tiros": [
@@ -350,6 +350,12 @@
      "jogo": "Hungria x Eslováquia",
      "odd": 2.4,
      "unidades": 1
+    },
+    {
+     "h": "18:56",
+     "jogo": "Portugal x Romênia",
+     "odd": 2.15,
+     "unidades": 2
     }
    ]
   },
@@ -369,9 +375,9 @@
    "2026-07-21": -16.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGGR",
-   "n": 10,
+   "tipo": "time",
+   "chave": "Noruega",
+   "n": 11,
    "start": 1
   }
  },
@@ -510,8 +516,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "18:52",
@@ -531,11 +537,11 @@
    ],
    "gatilho": "placar empate 1-1",
    "alvo": {
-    "h": "18:55",
-    "jogo": "Arábia Saudita x Países Baixos",
-    "odd": 1.93,
-    "unidades": 2,
-    "desde": 1784656574253
+    "h": "18:58",
+    "jogo": "Egito x Japão",
+    "odd": 1.98,
+    "unidades": 4,
+    "desde": 1784656690762
    },
    "iniciadoEm": 1784656243752,
    "tiros": [
@@ -544,6 +550,12 @@
      "jogo": "Iraque x Brasil",
      "odd": 2.05,
      "unidades": 1
+    },
+    {
+     "h": "18:55",
+     "jogo": "Arábia Saudita x Países Baixos",
+     "odd": 1.93,
+     "unidades": 2
     }
    ]
   },
@@ -562,9 +574,9 @@
    "2026-07-21": 5.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Egito",
-   "n": 19,
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 52,
    "start": 1
   }
  }
