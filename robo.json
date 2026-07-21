@@ -283,11 +283,47 @@
    }
   ],
   "consumidas": {
-   "super": 1784601609514,
    "premier": 1784602621814,
    "euro": 1784604913737
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "04:37",
+     "jogo": "Japão x Qatar",
+     "odd": 2.4
+    },
+    {
+     "h": "04:40",
+     "jogo": "Uruguai x Noruega",
+     "odd": 2.15
+    },
+    {
+     "h": "04:43",
+     "jogo": "África do Sul x Senegal",
+     "odd": 2.62
+    }
+   ],
+   "alvo": {
+    "h": "04:40",
+    "jogo": "Uruguai x Noruega",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1784605210942
+   },
+   "iniciadoEm": 1784604914842,
+   "tiros": [
+    {
+     "h": "04:37",
+     "jogo": "Japão x Qatar",
+     "odd": 2.4,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1784601252310,
    "premier": 1784602621814,
@@ -305,9 +341,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.15",
-   "n": 6,
-   "start": 1
+   "chave": "2.25",
+   "n": 7,
+   "start": 3
   }
  },
  "ambas": {
