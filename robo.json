@@ -156,13 +156,19 @@
   }
  },
  "o25": {
-  "saldo": -32,
-  "ciclos": 196,
-  "greens": 137,
+  "saldo": -30.9,
+  "ciclos": 197,
+  "greens": 138,
   "redsCiclo": 35,
   "aborts": 0,
   "descartes": 24,
   "historico": [
+   {
+    "quando": "2026-07-21T16:02:13.150Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Agua Branca x Montevideo @2.07 (tiro 1) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-07-21T15:29:54.254Z",
     "resultado": "GREEN",
@@ -276,54 +282,19 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-21T09:58:48.735Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
    "copa": 1784646250752,
-   "premier": 1784647794057
+   "premier": 1784647794057,
+   "super": 1784649732949
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:58",
-     "jogo": "Agua Branca x Montevideo",
-     "odd": 2.07
-    },
-    {
-     "h": "17:01",
-     "jogo": "Penarol x Porto Alegre",
-     "odd": 2.87
-    },
-    {
-     "h": "17:04",
-     "jogo": "Montevideo x Bogota",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-1)",
-   "alvo": {
-    "h": "16:58",
-    "jogo": "Agua Branca x Montevideo",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1784649373158
-   },
-   "iniciadoEm": 1784649373158
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784646250752,
    "premier": 1784647794057,
    "euro": 1784644671155,
-   "super": 1784645592353
+   "super": 1784649732949
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -332,12 +303,12 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": -15.7
+   "2026-07-21": -14.6
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 44,
+   "chave": "goleada (3+)",
+   "n": 77,
    "start": 1
   }
  },
