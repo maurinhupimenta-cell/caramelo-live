@@ -155,13 +155,19 @@
   }
  },
  "o25": {
-  "saldo": -18.5,
-  "ciclos": 170,
-  "greens": 118,
+  "saldo": -17.1,
+  "ciclos": 171,
+  "greens": 119,
   "redsCiclo": 29,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-21T04:49:04.238Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "copa · Japão x México @2.35 (tiro 1)"
+   },
    {
     "quando": "2026-07-21T04:41:04.634Z",
     "resultado": "GREEN",
@@ -275,51 +281,17 @@
     "resultado": "GREEN",
     "unidades": 2.1,
     "detalhe": "super · Asuncion x La Plata @2.55 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T21:14:13.110Z",
-    "resultado": "GREEN",
-    "unidades": 2,
-    "detalhe": "euro · Romênia x Eslovênia @2.5 (tiro 2)"
    }
   ],
   "consumidas": {
    "super": 1784605754138,
    "premier": 1784607103143,
-   "euro": 1784608864439
+   "euro": 1784608864439,
+   "copa": 1784609344039
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:46",
-     "jogo": "Japão x México",
-     "odd": 2.35
-    },
-    {
-     "h": "05:49",
-     "jogo": "Inglaterra x Qatar",
-     "odd": 2.3
-    },
-    {
-     "h": "05:52",
-     "jogo": "México x Irã",
-     "odd": 2.5
-    }
-   ],
-   "alvo": {
-    "h": "05:46",
-    "jogo": "Japão x México",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1784609063934
-   },
-   "iniciadoEm": 1784609063934
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784605452433,
+   "copa": 1784609344039,
    "premier": 1784607103143,
    "euro": 1784608864439,
    "super": 1784605754138
@@ -331,12 +303,12 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": -2.2
+   "2026-07-21": -0.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRG",
-   "n": 5,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 28,
    "start": 1
   }
  },
