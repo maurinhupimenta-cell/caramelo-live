@@ -285,8 +285,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "10:50",
@@ -305,13 +305,21 @@
     }
    ],
    "alvo": {
-    "h": "10:50",
-    "jogo": "Croácia x Turquia",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1784626868145
+    "h": "10:53",
+    "jogo": "Albânia x Romênia",
+    "odd": 2.45,
+    "unidades": 2,
+    "desde": 1784627567943
    },
-   "iniciadoEm": 1784626868145
+   "iniciadoEm": 1784626868145,
+   "tiros": [
+    {
+     "h": "10:50",
+     "jogo": "Croácia x Turquia",
+     "odd": 2.4,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784613484433,
@@ -329,9 +337,9 @@
    "2026-07-21": 6.6
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 28,
+   "tipo": "seq",
+   "chave": "RRRGR",
+   "n": 13,
    "start": 1
   }
  },
@@ -513,9 +521,9 @@
    "2026-07-21": 4.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGRG",
-   "n": 6,
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 24,
    "start": 1
   }
  }
