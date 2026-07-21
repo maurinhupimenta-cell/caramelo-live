@@ -186,13 +186,19 @@
   }
  },
  "o25": {
-  "saldo": -36.6,
-  "ciclos": 199,
-  "greens": 139,
+  "saldo": -35.4,
+  "ciclos": 200,
+  "greens": 140,
   "redsCiclo": 36,
   "aborts": 0,
   "descartes": 24,
   "historico": [
+   {
+    "quando": "2026-07-21T16:41:58.559Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · City x Norwich @2.1 (tiro 2) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-07-21T16:19:09.558Z",
     "resultado": "GREEN",
@@ -306,61 +312,18 @@
     "resultado": "GREEN",
     "unidades": 1.8,
     "detalhe": "euro · Turquia x Croácia @2.4 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-21T10:23:43.138Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "premier · Wolverhampton x Brentford @2.15 (tiro 1)"
    }
   ],
   "consumidas": {
    "super": 1784649732949,
    "euro": 1784650513352,
-   "copa": 1784650749450
+   "copa": 1784650749450,
+   "premier": 1784652118454
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:36",
-     "jogo": "Everton x United",
-     "odd": 2.15
-    },
-    {
-     "h": "17:39",
-     "jogo": "City x Norwich",
-     "odd": 2.1
-    },
-    {
-     "h": "17:42",
-     "jogo": "Wolverhampton x Southampton",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-1)",
-   "alvo": {
-    "h": "17:39",
-    "jogo": "City x Norwich",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1784651914360
-   },
-   "iniciadoEm": 1784651590653,
-   "tiros": [
-    {
-     "h": "17:36",
-     "jogo": "Everton x United",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784650749450,
-   "premier": 1784647794057,
+   "premier": 1784652118454,
    "euro": 1784650513352,
    "super": 1784649732949
   },
@@ -371,12 +334,12 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": -20.3
+   "2026-07-21": -19.1
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "acima de 1-0 (2-1)",
-   "n": 42,
+   "n": 43,
    "start": 1
   }
  },
