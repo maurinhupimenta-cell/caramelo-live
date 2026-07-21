@@ -317,7 +317,37 @@
    "euro": 1784670453660,
    "super": 1784670719852
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:54",
+     "jogo": "Brighton x United",
+     "odd": 2.05
+    },
+    {
+     "h": "22:57",
+     "jogo": "Norwich x Palace",
+     "odd": 2.2
+    },
+    {
+     "h": "23:00",
+     "jogo": "Burnley x Islington",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "placar empate 2-2",
+   "alvo": {
+    "h": "22:54",
+    "jogo": "Brighton x United",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1784670723960
+   },
+   "iniciadoEm": 1784670723960
+  },
   "cooldown": {
    "copa": 1784658070352,
    "premier": 1784665570463,
@@ -334,8 +364,8 @@
    "2026-07-21": -23.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRG",
+   "tipo": "placar",
+   "chave": "empate 2-2",
    "n": 25,
    "start": 1
   }
