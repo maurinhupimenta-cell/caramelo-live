@@ -325,8 +325,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "11:10",
@@ -345,13 +345,21 @@
     }
    ],
    "alvo": {
-    "h": "11:10",
-    "jogo": "Bogota x Santiago",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1784628588240
+    "h": "11:13",
+    "jogo": "Asuncion x Lima",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1784628789142
    },
-   "iniciadoEm": 1784628588240
+   "iniciadoEm": 1784628588240,
+   "tiros": [
+    {
+     "h": "11:10",
+     "jogo": "Bogota x Santiago",
+     "odd": 2.3,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784628587137,
@@ -369,10 +377,10 @@
    "2026-07-21": -7.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRG",
-   "n": 10,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.75",
+   "n": 6,
+   "start": 3
   }
  },
  "ambas": {
