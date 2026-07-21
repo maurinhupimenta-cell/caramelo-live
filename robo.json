@@ -133,7 +133,36 @@
    "super": 1784630409233,
    "copa": 1784631286938
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:12",
+     "jogo": "Watford x Chelsea",
+     "odd": 4.33
+    },
+    {
+     "h": "12:15",
+     "jogo": "West Ham x Newcastle",
+     "odd": 4.5
+    },
+    {
+     "h": "12:18",
+     "jogo": "Norwich x Liverpool",
+     "odd": 4.2
+    }
+   ],
+   "alvo": {
+    "h": "12:12",
+    "jogo": "Watford x Chelsea",
+    "odd": 4.33,
+    "unidades": 1,
+    "desde": 1784632123437
+   },
+   "iniciadoEm": 1784632123437
+  },
   "cooldown": {
    "copa": 1784631286938,
    "premier": 1784626912338,
@@ -151,7 +180,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 7,
+   "n": 18,
    "start": 1
   }
  },
