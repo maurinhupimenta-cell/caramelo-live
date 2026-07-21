@@ -154,13 +154,19 @@
   }
  },
  "o25": {
-  "saldo": -35.4,
-  "ciclos": 201,
-  "greens": 140,
+  "saldo": -34,
+  "ciclos": 202,
+  "greens": 141,
   "redsCiclo": 36,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-21T17:47:03.250Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "premier · Watford x Wolverhampton @2.1 (tiro 3) · gatilho: placar goleada (3+)"
+   },
    {
     "quando": "2026-07-21T17:46:43.459Z",
     "resultado": "DESCARTADO",
@@ -274,49 +280,45 @@
     "resultado": "GREEN",
     "unidades": 2,
     "detalhe": "super · La Plata x Porto Alegre @3 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-21T11:15:47.834Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "copa · Alemanha x Turquia @2.2 (tiro 1)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "premier": 1784656023060
+  },
   "ciclo": {
-   "liga": "premier",
+   "liga": "super",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "18:18",
-     "jogo": "Southampton x Palace",
-     "odd": 2.3
-    },
-    {
-     "h": "18:21",
-     "jogo": "Liverpool x West Ham",
-     "odd": 2.5
-    },
-    {
-     "h": "18:24",
-     "jogo": "Watford x Wolverhampton",
+     "h": "18:49",
+     "jogo": "Santiago x Itaquera",
      "odd": 2.1
+    },
+    {
+     "h": "18:52",
+     "jogo": "Medellin x Porto Alegre",
+     "odd": 2.75
+    },
+    {
+     "h": "18:55",
+     "jogo": "Montevideo x Santos",
+     "odd": 2.25
     }
    ],
-   "gatilho": "placar goleada (3+)",
+   "gatilho": "odd 2.75",
    "alvo": {
-    "h": "18:18",
-    "jogo": "Southampton x Palace",
-    "odd": 2.3,
+    "h": "18:49",
+    "jogo": "Santiago x Itaquera",
+    "odd": 2.1,
     "unidades": 1,
-    "desde": 1784656005155
+    "desde": 1784656024156
    },
-   "iniciadoEm": 1784656005155
+   "iniciadoEm": 1784656024156
   },
   "cooldown": {
    "copa": 1784650749450,
-   "premier": 1784652118454,
+   "premier": 1784656023060,
    "euro": 1784650513352,
    "super": 1784649732949
   },
@@ -327,12 +329,12 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": -19.1
+   "2026-07-21": -17.7
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 64,
+   "tipo": "odd",
+   "chave": "2.75",
+   "n": 10,
    "start": 1
   }
  },
@@ -469,7 +471,37 @@
    "super": 1784653081156,
    "euro": 1784654032554
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:48",
+     "jogo": "Burnley x Palace",
+     "odd": 1.87
+    },
+    {
+     "h": "18:51",
+     "jogo": "Liverpool x Islington",
+     "odd": 1.93
+    },
+    {
+     "h": "18:54",
+     "jogo": "Palace x Norwich",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "placar empate 1-1",
+   "alvo": {
+    "h": "18:48",
+    "jogo": "Burnley x Palace",
+    "odd": 1.87,
+    "unidades": 1,
+    "desde": 1784656006355
+   },
+   "iniciadoEm": 1784656006355
+  },
   "cooldown": {
    "euro": 1784654032554,
    "super": 1784653081156,
@@ -485,9 +517,9 @@
    "2026-07-21": 5
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 58,
+   "tipo": "seq",
+   "chave": "GRGRR",
+   "n": 8,
    "start": 1
   }
  }
