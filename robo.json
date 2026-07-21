@@ -342,13 +342,19 @@
   }
  },
  "ambas": {
-  "saldo": -17.1,
-  "ciclos": 183,
-  "greens": 132,
+  "saldo": -15.5,
+  "ciclos": 184,
+  "greens": 133,
   "redsCiclo": 22,
   "aborts": 0,
   "descartes": 29,
   "historico": [
+   {
+    "quando": "2026-07-21T11:04:09.541Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "super · Bogota x Quito @2.15 (tiro 3)"
+   },
    {
     "quando": "2026-07-21T10:06:47.834Z",
     "resultado": "GREEN",
@@ -462,64 +468,16 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · Itália x Romênia @1.95 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-21T01:44:41.908Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "premier · Brentford x Newcastle @1.87 (tiro 1)"
    }
   ],
   "consumidas": {
-   "copa": 1784628407635
+   "copa": 1784628407635,
+   "super": 1784631849438
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "11:55",
-     "jogo": "Bogota x Avellaneda",
-     "odd": 2.15
-    },
-    {
-     "h": "11:58",
-     "jogo": "Lima x Montevideo",
-     "odd": 1.83
-    },
-    {
-     "h": "12:01",
-     "jogo": "Bogota x Quito",
-     "odd": 2.15
-    }
-   ],
-   "alvo": {
-    "h": "12:01",
-    "jogo": "Bogota x Quito",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1784631668735
-   },
-   "iniciadoEm": 1784630770636,
-   "tiros": [
-    {
-     "h": "11:55",
-     "jogo": "Bogota x Avellaneda",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "11:58",
-     "jogo": "Lima x Montevideo",
-     "odd": 1.83,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784628108237,
-   "super": 1784627169537,
+   "super": 1784631849438,
    "premier": 1784627450436,
    "copa": 1784628407635
   },
@@ -529,13 +487,13 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": -2
+   "2026-07-21": -0.4
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":10",
    "n": 12,
-   "start": 2
+   "start": 1
   }
  }
 }
