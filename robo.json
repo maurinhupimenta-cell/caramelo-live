@@ -156,13 +156,19 @@
   }
  },
  "o25": {
-  "saldo": -28.8,
-  "ciclos": 205,
-  "greens": 144,
+  "saldo": -27.2,
+  "ciclos": 206,
+  "greens": 145,
   "redsCiclo": 36,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-21T18:58:13.851Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "super · Itaquera x Bogota @2.6 (tiro 1) · gatilho: odd 2.6"
+   },
    {
     "quando": "2026-07-21T18:21:10.456Z",
     "resultado": "GREEN",
@@ -276,54 +282,49 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "copa · Qatar x França @2.25 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-21T12:31:50.232Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "super · Montevideo x Agua Branca @2.05 (tiro 1)"
    }
   ],
   "consumidas": {
    "euro": 1784656931549,
-   "copa": 1784658070352
+   "copa": 1784658070352,
+   "super": 1784660293658
   },
   "ciclo": {
-   "liga": "super",
+   "liga": "premier",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "19:55",
-     "jogo": "Itaquera x Bogota",
+     "h": "20:03",
+     "jogo": "Brentford x Wolverhampton",
+     "odd": 2.1
+    },
+    {
+     "h": "20:06",
+     "jogo": "Tottenham x Aston",
      "odd": 2.6
     },
     {
-     "h": "19:58",
-     "jogo": "Sao Paulo x Rio de Janeiro",
-     "odd": 2.07
-    },
-    {
-     "h": "20:01",
-     "jogo": "Agua Branca x Lima",
-     "odd": 2.07
+     "h": "20:09",
+     "jogo": "United x Leicester",
+     "odd": 2.3
     }
    ],
-   "gatilho": "odd 2.6",
+   "gatilho": "placar goleada (3+)",
    "alvo": {
-    "h": "19:55",
-    "jogo": "Itaquera x Bogota",
-    "odd": 2.6,
+    "h": "20:03",
+    "jogo": "Brentford x Wolverhampton",
+    "odd": 2.1,
     "unidades": 1,
-    "desde": 1784659931251
+    "desde": 1784660395650
    },
-   "iniciadoEm": 1784659931251
+   "iniciadoEm": 1784660395650
   },
   "cooldown": {
    "copa": 1784658070352,
    "premier": 1784656023060,
    "euro": 1784656931549,
-   "super": 1784656324651
+   "super": 1784660293658
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -332,12 +333,12 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": -12.5
+   "2026-07-21": -10.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":58",
-   "n": 18,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 84,
    "start": 1
   }
  },
