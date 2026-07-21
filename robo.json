@@ -288,7 +288,44 @@
    "euro": 1784608864439,
    "copa": 1784609344039
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "05:55",
+     "jogo": "Buenos Aires x Montevideo",
+     "odd": 2.02
+    },
+    {
+     "h": "05:58",
+     "jogo": "La Plata x La Boca",
+     "odd": 2.7
+    },
+    {
+     "h": "06:01",
+     "jogo": "Belo Horizonte x Bogota",
+     "odd": 2.37
+    }
+   ],
+   "alvo": {
+    "h": "05:58",
+    "jogo": "La Plata x La Boca",
+    "odd": 2.7,
+    "unidades": 2,
+    "desde": 1784609886738
+   },
+   "iniciadoEm": 1784609364138,
+   "tiros": [
+    {
+     "h": "05:55",
+     "jogo": "Buenos Aires x Montevideo",
+     "odd": 2.02,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1784609344039,
    "premier": 1784607103143,
@@ -305,9 +342,9 @@
    "2026-07-21": -0.8
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 28,
+   "tipo": "time",
+   "chave": "La Boca",
+   "n": 12,
    "start": 1
   }
  },
