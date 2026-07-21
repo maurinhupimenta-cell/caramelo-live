@@ -314,13 +314,19 @@
   }
  },
  "ambas": {
-  "saldo": -11.3,
-  "ciclos": 171,
-  "greens": 123,
+  "saldo": -10.6,
+  "ciclos": 172,
+  "greens": 124,
   "redsCiclo": 20,
   "aborts": 0,
   "descartes": 28,
   "historico": [
+   {
+    "quando": "2026-07-21T04:20:43.736Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "premier · Palace x United @1.93 (tiro 3)"
+   },
    {
     "quando": "2026-07-21T04:04:46.235Z",
     "resultado": "GREEN",
@@ -434,66 +440,18 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "super · Porto Alegre x Penarol @2.35 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T20:27:11.313Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "euro · Inglaterra x Áustria @1.93 (tiro 1)"
    }
   ],
   "consumidas": {
    "copa": 1784604850638,
-   "euro": 1784606686043
+   "euro": 1784606686043,
+   "premier": 1784607643535
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "05:12",
-     "jogo": "Southampton x Everton",
-     "odd": 1.95
-    },
-    {
-     "h": "05:15",
-     "jogo": "Chelsea x City",
-     "odd": 1.85
-    },
-    {
-     "h": "05:18",
-     "jogo": "Palace x United",
-     "odd": 1.93
-    }
-   ],
-   "alvo": {
-    "h": "05:18",
-    "jogo": "Palace x United",
-    "odd": 1.93,
-    "unidades": 4,
-    "desde": 1784607460144
-   },
-   "iniciadoEm": 1784606687638,
-   "tiros": [
-    {
-     "h": "05:12",
-     "jogo": "Southampton x Everton",
-     "odd": 1.95,
-     "unidades": 1
-    },
-    {
-     "h": "05:15",
-     "jogo": "Chelsea x City",
-     "odd": 1.85,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784606686043,
    "super": 1784603772332,
-   "premier": 1784598281714,
+   "premier": 1784607643535,
    "copa": 1784604850638
   },
   "dias": {
@@ -502,13 +460,13 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": 3.8
+   "2026-07-21": 4.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Buenos Aires",
    "n": 9,
-   "start": 1
+   "start": 2
   }
  }
 }
