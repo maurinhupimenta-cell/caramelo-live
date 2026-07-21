@@ -280,12 +280,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1784598640916,
    "euro": 1784600535412,
    "copa": 1784601252310,
    "super": 1784601609514
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:54",
+     "jogo": "United x West Ham",
+     "odd": 2.5
+    },
+    {
+     "h": "03:57",
+     "jogo": "Tottenham x Norwich",
+     "odd": 2.4
+    },
+    {
+     "h": "04:00",
+     "jogo": "Palace x Newcastle",
+     "odd": 2.05
+    }
+   ],
+   "alvo": {
+    "h": "03:54",
+    "jogo": "United x West Ham",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1784602262508
+   },
+   "iniciadoEm": 1784602262508
+  },
   "cooldown": {
    "copa": 1784601252310,
    "premier": 1784598640916,
@@ -301,9 +329,9 @@
    "2026-07-20": 35.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRG",
-   "n": 5,
+   "tipo": "time",
+   "chave": "Norwich",
+   "n": 13,
    "start": 1
   }
  },
@@ -442,8 +470,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "03:47",
@@ -462,13 +490,21 @@
     }
    ],
    "alvo": {
-    "h": "03:47",
-    "jogo": "Bélgica x Escócia",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1784602032409
+    "h": "03:50",
+    "jogo": "República Tcheca x Eslovênia",
+    "odd": 2.4,
+    "unidades": 2,
+    "desde": 1784602393309
    },
-   "iniciadoEm": 1784602032409
+   "iniciadoEm": 1784602032409,
+   "tiros": [
+    {
+     "h": "03:47",
+     "jogo": "Bélgica x Escócia",
+     "odd": 1.9,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784598431515,
@@ -484,10 +520,10 @@
    "2026-07-20": 10.5
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 14,
-   "start": 1
+   "tipo": "time",
+   "chave": "Polônia",
+   "n": 7,
+   "start": 3
   }
  }
 }
