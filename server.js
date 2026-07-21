@@ -1592,17 +1592,12 @@ app.get("/api/status", (req, res) => {
 // Reconstroi, jogo a jogo, o que a avaliacao teria indicado usando SO os jogos
 // anteriores (sem olhar o futuro), e confere GREEN/RED contra o placar real.
 const btCache = {};
-app.get("/api/backtest/:liga", (req, res) => {
-  try {
-    const liga = req.params.liga;
-    const mkt = req.query.mkt || "o35";
-    const n = Math.min(parseInt(req.query.n || "80", 10) || 80, 150);
+function calculaBacktest(liga, mkt, n) {
     const key = liga + "|" + mkt + "|" + n;
     const d = store[liga];
-    if (!d || !d.games || d.games.length < 150) return res.json({ erro: "historico insuficiente" });
-    // cache 60s (backtest e pesado; evita recalcular a cada clique)
+    if (!d || !d.games || d.games.length < 150) return { erro: "historico insuficiente" };
     if (btCache[key] && Date.now() - btCache[key].ts < 60000 && btCache[key].lu === d.lastUpdated) {
-      return res.json(btCache[key].out);
+      return btCache[key].out;
     }
     const games = d.games;
     const ini = Math.max(120, games.length - n); // exige 120 jogos de historico minimo
@@ -1628,6 +1623,7 @@ app.get("/api/backtest/:liga", (req, res) => {
     const indicados = resultados.filter(r => r.score != null && r.score >= 30 && r.ev > 0);
     const out = {
       liga, mkt, jogosAvaliados: resultados.length, baseGeral,
+      _seqIndicados: indicados.map(r => !!r.green),
       faixas: { forte_60mais: faixa(60, 999), media_30a59: faixa(30, 60), fraca_0a29: faixa(0, 30), negativa: faixa(-999, 0) },
       evPositivo: { n: evPos.length, green: evPos.filter(r => r.green).length, pct: evPos.length ? Math.round(evPos.filter(r => r.green).length / evPos.length * 100) : null },
       indicados: { n: indicados.length, green: indicados.filter(r => r.green).length, pct: indicados.length ? Math.round(indicados.filter(r => r.green).length / indicados.length * 100) : null },
@@ -1644,7 +1640,40 @@ app.get("/api/backtest/:liga", (req, res) => {
       })()
     };
     btCache[key] = { ts: Date.now(), lu: d.lastUpdated, out };
-    res.json(out);
+    return out;
+}
+app.get("/api/backtest/:liga", (req, res) => {
+  try { res.json(calculaBacktest(req.params.liga, req.query.mkt || "o35", Math.min(parseInt(req.query.n || "80", 10) || 80, 150))); }
+  catch (e) { res.status(500).json({ erro: e.message }); }
+});
+
+// ===== ESTUDO: recuperacao pos-red dos indicados (hipotese do usuario: "falhado paga quando volta") =====
+app.get("/api/estudo-recuperacao", (req, res) => {
+  try {
+    const agreg = { aposRed: [0, 0], aposGreen: [0, 0], geral: [0, 0], porCombo: {} };
+    for (const liga of LIGAS) for (const mkt of ["o35", "o25", "ambas"]) {
+      const bt = calculaBacktest(liga, mkt, 150);
+      if (!bt || bt.erro) continue;
+      // precisamos da SEQUENCIA cronologica de TODOS os indicados: recalcular leve aqui a partir do out nao da; usar ultimos (6h) + guardar por combo
+      const seqI = (bt._seqIndicados || []);
+      for (let i = 0; i < seqI.length; i++) {
+        agreg.geral[0]++; if (seqI[i]) agreg.geral[1]++;
+        if (i > 0) {
+          const balde = seqI[i - 1] ? agreg.aposGreen : agreg.aposRed;
+          balde[0]++; if (seqI[i]) balde[1]++;
+        }
+      }
+      agreg.porCombo[liga + "|" + mkt] = { n: seqI.length, seq: seqI.map(v => v ? "G" : "R").join("") };
+    }
+    const pct = ([n, h]) => n ? Math.round(h / n * 100) : null;
+    res.json({
+      hipotese: "apos um indicado RED, o proximo indicado paga mais?",
+      geral: { n: agreg.geral[0], pctGreen: pct(agreg.geral) },
+      aposRED: { n: agreg.aposRed[0], pctGreen: pct(agreg.aposRed) },
+      aposGREEN: { n: agreg.aposGreen[0], pctGreen: pct(agreg.aposGreen) },
+      leitura: "se aposRED >> geral, ha recuperacao explorav el; se igual, e miragem",
+      combos: agreg.porCombo
+    });
   } catch (e) { res.status(500).json({ erro: e.message }); }
 });
 
