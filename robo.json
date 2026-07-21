@@ -334,18 +334,24 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "goleada (3+)",
-   "n": 64,
+   "n": 65,
    "start": 1
   }
  },
  "ambas": {
-  "saldo": -21.9,
-  "ciclos": 193,
-  "greens": 140,
+  "saldo": -20.9,
+  "ciclos": 194,
+  "greens": 141,
   "redsCiclo": 24,
   "aborts": 0,
   "descartes": 29,
   "historico": [
+   {
+    "quando": "2026-07-21T13:38:37.340Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Islington x Watford @2.05 (tiro 1)"
+   },
    {
     "quando": "2026-07-21T13:28:48.539Z",
     "resultado": "GREEN",
@@ -459,53 +465,19 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "euro · Eslovênia x Inglaterra @2.05 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-21T04:45:44.334Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "copa · Jordânia x Cabo Verde @1.93 (tiro 1)"
    }
   ],
   "consumidas": {
    "copa": 1784637947636,
    "super": 1784640288838,
-   "euro": 1784640528345
+   "euro": 1784640528345,
+   "premier": 1784641117235
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:36",
-     "jogo": "Islington x Watford",
-     "odd": 2.05
-    },
-    {
-     "h": "14:39",
-     "jogo": "Everton x Aston",
-     "odd": 1.98
-    },
-    {
-     "h": "14:42",
-     "jogo": "Palace x Brentford",
-     "odd": 1.98
-    }
-   ],
-   "alvo": {
-    "h": "14:36",
-    "jogo": "Islington x Watford",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1784640771536
-   },
-   "iniciadoEm": 1784640771536
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784640528345,
    "super": 1784640288838,
-   "premier": 1784637168446,
+   "premier": 1784641117235,
    "copa": 1784637947636
   },
   "dias": {
@@ -514,12 +486,12 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": -6.8
+   "2026-07-21": -5.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGGG",
-   "n": 9,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 33,
    "start": 1
   }
  }
