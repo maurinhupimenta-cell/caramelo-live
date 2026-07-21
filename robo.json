@@ -372,13 +372,19 @@
   }
  },
  "ambas": {
-  "saldo": -14.3,
-  "ciclos": 202,
-  "greens": 148,
+  "saldo": -13.3,
+  "ciclos": 203,
+  "greens": 149,
   "redsCiclo": 24,
   "aborts": 0,
   "descartes": 30,
   "historico": [
+   {
+    "quando": "2026-07-21T16:07:13.249Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · República Tcheca x Uruguai @2 (tiro 1) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-07-21T16:03:11.353Z",
     "resultado": "GREEN",
@@ -492,25 +498,19 @@
     "resultado": "GREEN",
     "unidades": 1.6,
     "detalhe": "super · Bogota x Quito @2.15 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-21T10:06:47.834Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "copa · EUA x Alemanha @1.9 (tiro 1)"
    }
   ],
   "consumidas": {
-   "copa": 1784646250950,
    "super": 1784649373354,
-   "euro": 1784649791152
+   "euro": 1784649791152,
+   "copa": 1784650033051
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1784649791152,
    "super": 1784649373354,
    "premier": 1784645448456,
-   "copa": 1784646250950
+   "copa": 1784650033051
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -518,12 +518,12 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": 0.8
+   "2026-07-21": 1.8
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 16,
+   "tipo": "seq",
+   "chave": "RRGRG",
+   "n": 11,
    "start": 1
   }
  }
