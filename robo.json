@@ -133,8 +133,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "06:07",
@@ -153,11 +153,11 @@
     }
    ],
    "alvo": {
-    "h": "06:10",
-    "jogo": "Bogota x Medellin",
-    "odd": 5.5,
-    "unidades": 2,
-    "desde": 1784610606641
+    "h": "06:13",
+    "jogo": "Rio de Janeiro x La Plata",
+    "odd": 5.25,
+    "unidades": 4,
+    "desde": 1784610786939
    },
    "iniciadoEm": 1784610246942,
    "tiros": [
@@ -166,6 +166,12 @@
      "jogo": "Santos x Itaquera",
      "odd": 5,
      "unidades": 1
+    },
+    {
+     "h": "06:10",
+     "jogo": "Bogota x Medellin",
+     "odd": 5.5,
+     "unidades": 2
     }
    ]
   },
@@ -324,7 +330,36 @@
    "copa": 1784609344039,
    "super": 1784610247137
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:12",
+     "jogo": "Everton x Newcastle",
+     "odd": 2.02
+    },
+    {
+     "h": "06:15",
+     "jogo": "Aston x Islington",
+     "odd": 2.3
+    },
+    {
+     "h": "06:18",
+     "jogo": "Norwich x Southampton",
+     "odd": 2.3
+    }
+   ],
+   "alvo": {
+    "h": "06:12",
+    "jogo": "Everton x Newcastle",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1784610703744
+   },
+   "iniciadoEm": 1784610703744
+  },
   "cooldown": {
    "copa": 1784609344039,
    "premier": 1784607103143,
@@ -341,9 +376,9 @@
    "2026-07-21": 1.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRG",
-   "n": 8,
+   "tipo": "coluna",
+   "chave": ":15",
+   "n": 6,
    "start": 1
   }
  },
