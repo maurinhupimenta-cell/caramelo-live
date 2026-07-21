@@ -385,13 +385,19 @@
   }
  },
  "ambas": {
-  "saldo": -14.2,
-  "ciclos": 210,
-  "greens": 155,
+  "saldo": -13.2,
+  "ciclos": 211,
+  "greens": 156,
   "redsCiclo": 25,
   "aborts": 0,
   "descartes": 30,
   "historico": [
+   {
+    "quando": "2026-07-21T18:56:49.753Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · West Ham x Newcastle @2.02 (tiro 1) · gatilho: placar empate 1-1"
+   },
    {
     "quando": "2026-07-21T18:22:28.657Z",
     "resultado": "GREEN",
@@ -505,54 +511,19 @@
     "resultado": "GREEN",
     "unidades": 1.8,
     "detalhe": "super · Porto Alegre x Bogota @2.4 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-21T12:45:47.833Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "copa · Colômbia x Tunísia @2.15 (tiro 1)"
    }
   ],
   "consumidas": {
    "copa": 1784656932655,
    "super": 1784657531256,
-   "euro": 1784658148555
+   "euro": 1784658148555,
+   "premier": 1784660209560
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "19:54",
-     "jogo": "West Ham x Newcastle",
-     "odd": 2.02
-    },
-    {
-     "h": "19:57",
-     "jogo": "City x Brighton",
-     "odd": 1.9
-    },
-    {
-     "h": "20:00",
-     "jogo": "Leicester x Aston",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "placar empate 1-1",
-   "alvo": {
-    "h": "19:54",
-    "jogo": "West Ham x Newcastle",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1784659846349
-   },
-   "iniciadoEm": 1784659846349
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784658148555,
    "super": 1784657531256,
-   "premier": 1784656242053,
+   "premier": 1784660209560,
    "copa": 1784656932655
   },
   "dias": {
@@ -561,12 +532,12 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": 0.9
+   "2026-07-21": 1.9
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 52,
+   "chave": "empate 1-1",
+   "n": 49,
    "start": 1
   }
  }
