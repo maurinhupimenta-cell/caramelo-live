@@ -284,7 +284,6 @@
    }
   ],
   "consumidas": {
-   "super": 1784633109240,
    "premier": 1784633380231
   },
   "ciclo": {
@@ -488,8 +487,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "13:17",
@@ -508,11 +507,11 @@
     }
    ],
    "alvo": {
-    "h": "13:20",
-    "jogo": "Alemanha x Eslováquia",
-    "odd": 2.02,
-    "unidades": 2,
-    "desde": 1784636388337
+    "h": "13:23",
+    "jogo": "Ucrânia x Croácia",
+    "odd": 1.95,
+    "unidades": 4,
+    "desde": 1784636568935
    },
    "iniciadoEm": 1784636171037,
    "tiros": [
@@ -521,6 +520,12 @@
      "jogo": "Bélgica x Suíça",
      "odd": 1.86,
      "unidades": 1
+    },
+    {
+     "h": "13:20",
+     "jogo": "Alemanha x Eslováquia",
+     "odd": 2.02,
+     "unidades": 2
     }
    ]
   },
@@ -539,10 +544,10 @@
    "2026-07-21": -12.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Tottenham",
-   "n": 17,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.07",
+   "n": 9,
+   "start": 2
   }
  }
 }
