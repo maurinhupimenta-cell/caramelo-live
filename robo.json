@@ -284,7 +284,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1784609344039,
    "super": 1784610247137,
    "premier": 1784610888238,
    "euro": 1784612644736
@@ -446,7 +445,44 @@
    "premier": 1784611428935,
    "super": 1784612225631
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "06:46",
+     "jogo": "Gana x Austrália",
+     "odd": 2
+    },
+    {
+     "h": "06:49",
+     "jogo": "Canadá x Marrocos",
+     "odd": 2.05
+    },
+    {
+     "h": "06:52",
+     "jogo": "Arábia Saudita x Egito",
+     "odd": 1.83
+    }
+   ],
+   "alvo": {
+    "h": "06:49",
+    "jogo": "Canadá x Marrocos",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1784612944034
+   },
+   "iniciadoEm": 1784612745134,
+   "tiros": [
+    {
+     "h": "06:46",
+     "jogo": "Gana x Austrália",
+     "odd": 2,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1784610824637,
    "super": 1784612225631,
@@ -463,9 +499,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Bogota",
-   "n": 12,
-   "start": 1
+   "chave": "México",
+   "n": 8,
+   "start": 2
   }
  }
 }
