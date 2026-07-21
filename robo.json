@@ -132,7 +132,37 @@
    "super": 1784670159654,
    "copa": 1784670696456
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:54",
+     "jogo": "Brighton x United",
+     "odd": 3.8
+    },
+    {
+     "h": "22:57",
+     "jogo": "Norwich x Palace",
+     "odd": 4.2
+    },
+    {
+     "h": "23:00",
+     "jogo": "Burnley x Islington",
+     "odd": 4
+    }
+   ],
+   "gatilho": "placar empate 2-2",
+   "alvo": {
+    "h": "22:54",
+    "jogo": "Brighton x United",
+    "odd": 3.8,
+    "unidades": 1,
+    "desde": 1784670697653
+   },
+   "iniciadoEm": 1784670697653
+  },
   "cooldown": {
    "copa": 1784670696456,
    "premier": 1784657321350,
@@ -155,13 +185,19 @@
   }
  },
  "o25": {
-  "saldo": -41.2,
-  "ciclos": 208,
-  "greens": 145,
+  "saldo": -39.6,
+  "ciclos": 209,
+  "greens": 146,
   "redsCiclo": 38,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-21T21:51:59.955Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "super · Medellin x La Plata @2.62 (tiro 1) · gatilho: seq RGRG"
+   },
    {
     "quando": "2026-07-21T21:47:33.853Z",
     "resultado": "RED_CICLO",
@@ -275,53 +311,18 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "super · Lima x Itaquera @2.2 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-21T13:34:48.236Z",
-    "resultado": "GREEN",
-    "unidades": 1.7,
-    "detalhe": "euro · Alemanha x Polônia @2.35 (tiro 2)"
    }
   ],
   "consumidas": {
-   "euro": 1784670453660
+   "euro": 1784670453660,
+   "super": 1784670719852
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:49",
-     "jogo": "Medellin x La Plata",
-     "odd": 2.62
-    },
-    {
-     "h": "22:52",
-     "jogo": "Sao Paulo x Guayaquil",
-     "odd": 2.02
-    },
-    {
-     "h": "22:55",
-     "jogo": "Santiago x La Plata",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "seq RGRG",
-   "alvo": {
-    "h": "22:49",
-    "jogo": "Medellin x La Plata",
-    "odd": 2.62,
-    "unidades": 1,
-    "desde": 1784670455160
-   },
-   "iniciadoEm": 1784670455160
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784658070352,
    "premier": 1784665570463,
    "euro": 1784670453660,
-   "super": 1784660293658
+   "super": 1784670719852
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -330,13 +331,13 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": -24.9
+   "2026-07-21": -23.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":58",
-   "n": 18,
-   "start": 2
+   "tipo": "seq",
+   "chave": "RGRG",
+   "n": 25,
+   "start": 1
   }
  },
  "ambas": {
