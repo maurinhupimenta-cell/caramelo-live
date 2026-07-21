@@ -193,13 +193,19 @@
   }
  },
  "o25": {
-  "saldo": -28.9,
-  "ciclos": 192,
-  "greens": 134,
+  "saldo": -27.4,
+  "ciclos": 193,
+  "greens": 135,
   "redsCiclo": 34,
   "aborts": 0,
   "descartes": 24,
   "historico": [
+   {
+    "quando": "2026-07-21T14:37:51.354Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "euro · Países Baixos x Albânia @2.45 (tiro 1) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-07-21T14:08:40.036Z",
     "resultado": "RED_CICLO",
@@ -313,54 +319,19 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "euro · Itália x Dinamarca @2.4 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-21T05:14:48.435Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Everton x Newcastle @2.02 (tiro 1)"
    }
   ],
   "consumidas": {
    "super": 1784641209631,
    "copa": 1784641904542,
-   "premier": 1784642919931
+   "premier": 1784642919931,
+   "euro": 1784644671155
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:35",
-     "jogo": "Países Baixos x Albânia",
-     "odd": 2.45
-    },
-    {
-     "h": "15:38",
-     "jogo": "Polônia x Alemanha",
-     "odd": 2.3
-    },
-    {
-     "h": "15:41",
-     "jogo": "Ucrânia x Eslováquia",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-1)",
-   "alvo": {
-    "h": "15:35",
-    "jogo": "Países Baixos x Albânia",
-    "odd": 2.45,
-    "unidades": 1,
-    "desde": 1784644512362
-   },
-   "iniciadoEm": 1784644512362
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784641904542,
    "premier": 1784642919931,
-   "euro": 1784640888041,
+   "euro": 1784644671155,
    "super": 1784641209631
   },
   "dias": {
@@ -370,12 +341,12 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": -12.6
+   "2026-07-21": -11.1
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 48,
+   "chave": "goleada (3+)",
+   "n": 56,
    "start": 1
   }
  },
