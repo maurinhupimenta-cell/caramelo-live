@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -114.9,
-  "ciclos": 157,
+  "saldo": -121.9,
+  "ciclos": 158,
   "greens": 57,
-  "redsCiclo": 66,
+  "redsCiclo": 67,
   "aborts": 0,
   "descartes": 34,
   "historico": [
+   {
+    "quando": "2026-07-21T16:58:01.152Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
+   },
    {
     "quando": "2026-07-21T16:15:13.350Z",
     "resultado": "RED_CICLO",
@@ -120,62 +126,19 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-21T04:08:42.731Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
    "copa": 1784649492750,
-   "euro": 1784650513155
+   "euro": 1784650513155,
+   "super": 1784653080955
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:43",
-     "jogo": "Itaquera x Quito",
-     "odd": 4.75
-    },
-    {
-     "h": "17:46",
-     "jogo": "Santiago x Santos",
-     "odd": 4.2
-    },
-    {
-     "h": "17:49",
-     "jogo": "Bogota x La Plata",
-     "odd": 6.5
-    }
-   ],
-   "gatilho": "placar empate 2-2",
-   "alvo": {
-    "h": "17:46",
-    "jogo": "Santiago x Santos",
-    "odd": 4.2,
-    "unidades": 2,
-    "desde": 1784652431453
-   },
-   "iniciadoEm": 1784652055662,
-   "tiros": [
-    {
-     "h": "17:43",
-     "jogo": "Itaquera x Quito",
-     "odd": 4.75,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784649492750,
    "premier": 1784648869657,
    "euro": 1784650513155,
-   "super": 1784646972959
+   "super": 1784653080955
   },
   "dias": {
    "2026-07-15": -35,
@@ -183,7 +146,7 @@
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
    "2026-07-20": 19.6,
-   "2026-07-21": -57.2
+   "2026-07-21": -64.2
   },
   "_gatilhoAtual": {
    "tipo": "placar",
@@ -351,13 +314,19 @@
   }
  },
  "ambas": {
-  "saldo": -12,
-  "ciclos": 204,
-  "greens": 150,
+  "saldo": -11.1,
+  "ciclos": 205,
+  "greens": 151,
   "redsCiclo": 24,
   "aborts": 0,
   "descartes": 30,
   "historico": [
+   {
+    "quando": "2026-07-21T16:58:01.351Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Itaquera x Buenos Aires @1.87 (tiro 1) · gatilho: odd 1.83"
+   },
    {
     "quando": "2026-07-21T16:17:39.049Z",
     "resultado": "GREEN",
@@ -471,23 +440,18 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-21T11:10:48.840Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "euro · Turquia x Croácia @2.05 (tiro 2)"
    }
   ],
   "consumidas": {
    "euro": 1784649791152,
    "copa": 1784650033051,
-   "premier": 1784650658854
+   "premier": 1784650658854,
+   "super": 1784653081156
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1784649791152,
-   "super": 1784649373354,
+   "super": 1784653081156,
    "premier": 1784650658854,
    "copa": 1784650033051
   },
@@ -497,12 +461,12 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": 3.1
+   "2026-07-21": 4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGGR",
-   "n": 8,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 51,
    "start": 1
   }
  }
