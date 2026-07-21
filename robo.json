@@ -182,13 +182,19 @@
   }
  },
  "o25": {
-  "saldo": -32.9,
-  "ciclos": 203,
-  "greens": 142,
+  "saldo": -30.5,
+  "ciclos": 204,
+  "greens": 143,
   "redsCiclo": 36,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-21T18:02:11.652Z",
+    "resultado": "GREEN",
+    "unidades": 2.4,
+    "detalhe": "euro · Alemanha x Sérvia @2.35 (tiro 3) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-07-21T17:52:04.849Z",
     "resultado": "GREEN",
@@ -302,67 +308,18 @@
     "resultado": "GREEN",
     "unidades": 2,
     "detalhe": "euro · Ucrânia x Croácia @2.25 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-21T11:29:40.337Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "premier · Tottenham x Watford @2.5 (tiro 1)"
    }
   ],
   "consumidas": {
    "premier": 1784656023060,
-   "super": 1784656324651
+   "super": 1784656324651,
+   "euro": 1784656931549
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "18:53",
-     "jogo": "Hungria x Eslováquia",
-     "odd": 2.4
-    },
-    {
-     "h": "18:56",
-     "jogo": "Portugal x Romênia",
-     "odd": 2.15
-    },
-    {
-     "h": "18:59",
-     "jogo": "Alemanha x Sérvia",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-1)",
-   "alvo": {
-    "h": "18:59",
-    "jogo": "Alemanha x Sérvia",
-    "odd": 2.35,
-    "unidades": 4,
-    "desde": 1784656751953
-   },
-   "iniciadoEm": 1784656326157,
-   "tiros": [
-    {
-     "h": "18:53",
-     "jogo": "Hungria x Eslováquia",
-     "odd": 2.4,
-     "unidades": 1
-    },
-    {
-     "h": "18:56",
-     "jogo": "Portugal x Romênia",
-     "odd": 2.15,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784650749450,
    "premier": 1784656023060,
-   "euro": 1784650513352,
+   "euro": 1784656931549,
    "super": 1784656324651
   },
   "dias": {
@@ -372,23 +329,29 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": -16.6
+   "2026-07-21": -14.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Noruega",
-   "n": 11,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 65,
    "start": 1
   }
  },
  "ambas": {
-  "saldo": -9.2,
-  "ciclos": 207,
+  "saldo": -16.2,
+  "ciclos": 208,
   "greens": 153,
-  "redsCiclo": 24,
+  "redsCiclo": 25,
   "aborts": 0,
   "descartes": 30,
   "historico": [
+   {
+    "quando": "2026-07-21T18:02:12.851Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: placar empate 1-1"
+   },
    {
     "quando": "2026-07-21T17:50:42.157Z",
     "resultado": "GREEN",
@@ -502,68 +465,19 @@
     "resultado": "GREEN",
     "unidades": 0.8,
     "detalhe": "euro · Ucrânia x Croácia @1.95 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-21T12:16:09.435Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
    "euro": 1784654032554,
-   "premier": 1784656242053
+   "premier": 1784656242053,
+   "copa": 1784656932655
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "18:52",
-     "jogo": "Iraque x Brasil",
-     "odd": 2.05
-    },
-    {
-     "h": "18:55",
-     "jogo": "Arábia Saudita x Países Baixos",
-     "odd": 1.93
-    },
-    {
-     "h": "18:58",
-     "jogo": "Egito x Japão",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "placar empate 1-1",
-   "alvo": {
-    "h": "18:58",
-    "jogo": "Egito x Japão",
-    "odd": 1.98,
-    "unidades": 4,
-    "desde": 1784656690762
-   },
-   "iniciadoEm": 1784656243752,
-   "tiros": [
-    {
-     "h": "18:52",
-     "jogo": "Iraque x Brasil",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "18:55",
-     "jogo": "Arábia Saudita x Países Baixos",
-     "odd": 1.93,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784654032554,
    "super": 1784653081156,
    "premier": 1784656242053,
-   "copa": 1784650033051
+   "copa": 1784656932655
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -571,7 +485,7 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": 5.9
+   "2026-07-21": -1.1
   },
   "_gatilhoAtual": {
    "tipo": "placar",
