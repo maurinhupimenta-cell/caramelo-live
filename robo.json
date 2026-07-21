@@ -448,8 +448,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "11:55",
@@ -468,13 +468,21 @@
     }
    ],
    "alvo": {
-    "h": "11:55",
-    "jogo": "Bogota x Avellaneda",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1784630770636
+    "h": "11:58",
+    "jogo": "Lima x Montevideo",
+    "odd": 1.83,
+    "unidades": 2,
+    "desde": 1784631509534
    },
-   "iniciadoEm": 1784630770636
+   "iniciadoEm": 1784630770636,
+   "tiros": [
+    {
+     "h": "11:55",
+     "jogo": "Bogota x Avellaneda",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784628108237,
@@ -491,10 +499,10 @@
    "2026-07-21": -2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.83",
-   "n": 9,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":10",
+   "n": 12,
+   "start": 3
   }
  }
 }
