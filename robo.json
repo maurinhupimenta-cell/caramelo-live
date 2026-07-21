@@ -131,8 +131,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "02:42",
@@ -151,13 +151,21 @@
     }
    ],
    "alvo": {
-    "h": "02:42",
-    "jogo": "Brentford x Newcastle",
+    "h": "02:45",
+    "jogo": "Leicester x Brighton",
     "odd": 4,
-    "unidades": 1,
-    "desde": 1784597930312
+    "unidades": 2,
+    "desde": 1784598281413
    },
-   "iniciadoEm": 1784597930312
+   "iniciadoEm": 1784597930312,
+   "tiros": [
+    {
+     "h": "02:42",
+     "jogo": "Brentford x Newcastle",
+     "odd": 4,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784585350910,
@@ -313,7 +321,44 @@
    "copa": 1784596205715,
    "super": 1784597444013
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "02:42",
+     "jogo": "Brentford x Newcastle",
+     "odd": 2.1
+    },
+    {
+     "h": "02:45",
+     "jogo": "Leicester x Brighton",
+     "odd": 2.15
+    },
+    {
+     "h": "02:48",
+     "jogo": "Liverpool x Southampton",
+     "odd": 2.35
+    }
+   ],
+   "alvo": {
+    "h": "02:45",
+    "jogo": "Leicester x Brighton",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1784598281606
+   },
+   "iniciadoEm": 1784597930507,
+   "tiros": [
+    {
+     "h": "02:42",
+     "jogo": "Brentford x Newcastle",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1784596205715,
    "premier": 1784585916508,
@@ -329,20 +374,26 @@
    "2026-07-20": 38.4
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 8,
+   "tipo": "time",
+   "chave": "Southampton",
+   "n": 6,
    "start": 1
   }
  },
  "ambas": {
-  "saldo": -12.5,
-  "ciclos": 163,
-  "greens": 116,
+  "saldo": -11.6,
+  "ciclos": 164,
+  "greens": 117,
   "redsCiclo": 19,
   "aborts": 0,
   "descartes": 28,
   "historico": [
+   {
+    "quando": "2026-07-21T01:44:41.908Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Brentford x Newcastle @1.87 (tiro 1)"
+   },
    {
     "quando": "2026-07-21T01:04:26.312Z",
     "resultado": "GREEN",
@@ -456,23 +507,18 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · Turquia x Países Baixos @1.95 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T18:08:14.309Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
    "super": 1784595313717,
-   "copa": 1784595866207
+   "copa": 1784595866207,
+   "premier": 1784598281714
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1784588241921,
    "super": 1784595313717,
-   "premier": 1784588397313,
+   "premier": 1784598281714,
    "copa": 1784595866207
   },
   "dias": {
@@ -480,12 +526,12 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": 6.1
+   "2026-07-20": 7
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 8,
+   "tipo": "odd",
+   "chave": "2.1",
+   "n": 6,
    "start": 1
   }
  }
