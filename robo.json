@@ -341,13 +341,19 @@
   }
  },
  "ambas": {
-  "saldo": -16.2,
-  "ciclos": 208,
-  "greens": 153,
+  "saldo": -15,
+  "ciclos": 209,
+  "greens": 154,
   "redsCiclo": 25,
   "aborts": 0,
   "descartes": 30,
   "historico": [
+   {
+    "quando": "2026-07-21T18:12:11.359Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Santos x Penarol @2.2 (tiro 1) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-07-21T18:02:12.851Z",
     "resultado": "RED_CICLO",
@@ -461,53 +467,18 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "premier · Liverpool x Chelsea @1.93 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-21T12:25:48.731Z",
-    "resultado": "GREEN",
-    "unidades": 0.8,
-    "detalhe": "euro · Ucrânia x Croácia @1.95 (tiro 3)"
    }
   ],
   "consumidas": {
    "euro": 1784654032554,
    "premier": 1784656242053,
-   "copa": 1784656932655
+   "copa": 1784656932655,
+   "super": 1784657531256
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "19:07",
-     "jogo": "Santos x Penarol",
-     "odd": 2.2
-    },
-    {
-     "h": "19:10",
-     "jogo": "Montevideo x Santiago",
-     "odd": 1.8
-    },
-    {
-     "h": "19:13",
-     "jogo": "Rio de Janeiro x Asuncion",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-1)",
-   "alvo": {
-    "h": "19:07",
-    "jogo": "Santos x Penarol",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1784657050557
-   },
-   "iniciadoEm": 1784657050557
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784654032554,
-   "super": 1784653081156,
+   "super": 1784657531256,
    "premier": 1784656242053,
    "copa": 1784656932655
   },
@@ -517,7 +488,7 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": -1.1
+   "2026-07-21": 0.1
   },
   "_gatilhoAtual": {
    "tipo": "placar",
