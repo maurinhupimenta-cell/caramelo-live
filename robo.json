@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -128.9,
-  "ciclos": 160,
+  "saldo": -135.9,
+  "ciclos": 161,
   "greens": 57,
-  "redsCiclo": 68,
+  "redsCiclo": 69,
   "aborts": 0,
   "descartes": 35,
   "historico": [
+   {
+    "quando": "2026-07-21T18:34:13.251Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
+   },
    {
     "quando": "2026-07-21T18:08:41.457Z",
     "resultado": "RED_CICLO",
@@ -120,67 +126,18 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-21T05:35:48.738Z",
-    "resultado": "GREEN",
-    "unidades": 3.2,
-    "detalhe": "premier · Watford x Burnley @4.2 (tiro 1)"
    }
   ],
   "consumidas": {
-   "premier": 1784657321350
+   "premier": 1784657321350,
+   "super": 1784658853060
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "19:22",
-     "jogo": "Bogota x Santos",
-     "odd": 5.5
-    },
-    {
-     "h": "19:25",
-     "jogo": "La Plata x Montevideo",
-     "odd": 5
-    },
-    {
-     "h": "19:28",
-     "jogo": "Sao Paulo x La Boca",
-     "odd": 4.33
-    }
-   ],
-   "gatilho": "placar empate 2-2",
-   "alvo": {
-    "h": "19:28",
-    "jogo": "Sao Paulo x La Boca",
-    "odd": 4.33,
-    "unidades": 4,
-    "desde": 1784658496253
-   },
-   "iniciadoEm": 1784657954052,
-   "tiros": [
-    {
-     "h": "19:22",
-     "jogo": "Bogota x Santos",
-     "odd": 5.5,
-     "unidades": 1
-    },
-    {
-     "h": "19:25",
-     "jogo": "La Plata x Montevideo",
-     "odd": 5,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784649492750,
    "premier": 1784657321350,
    "euro": 1784650513155,
-   "super": 1784653080955
+   "super": 1784658853060
   },
   "dias": {
    "2026-07-15": -35,
@@ -188,7 +145,7 @@
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
    "2026-07-20": 19.6,
-   "2026-07-21": -71.2
+   "2026-07-21": -78.2
   },
   "_gatilhoAtual": {
    "tipo": "placar",
