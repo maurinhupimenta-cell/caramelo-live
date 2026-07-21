@@ -332,20 +332,26 @@
    "2026-07-21": -17.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.75",
-   "n": 10,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 62,
    "start": 1
   }
  },
  "ambas": {
-  "saldo": -10.1,
-  "ciclos": 206,
-  "greens": 152,
+  "saldo": -9.2,
+  "ciclos": 207,
+  "greens": 153,
   "redsCiclo": 24,
   "aborts": 0,
   "descartes": 30,
   "historico": [
+   {
+    "quando": "2026-07-21T17:50:42.157Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Burnley x Palace @1.87 (tiro 1) · gatilho: placar empate 1-1"
+   },
    {
     "quando": "2026-07-21T17:13:52.750Z",
     "resultado": "GREEN",
@@ -459,53 +465,48 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-21T11:36:48.640Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Coreia do Sul x Austrália @2.05 (tiro 1)"
    }
   ],
   "consumidas": {
    "super": 1784653081156,
-   "euro": 1784654032554
+   "euro": 1784654032554,
+   "premier": 1784656242053
   },
   "ciclo": {
-   "liga": "premier",
+   "liga": "copa",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "18:48",
-     "jogo": "Burnley x Palace",
-     "odd": 1.87
+     "h": "18:52",
+     "jogo": "Iraque x Brasil",
+     "odd": 2.05
     },
     {
-     "h": "18:51",
-     "jogo": "Liverpool x Islington",
+     "h": "18:55",
+     "jogo": "Arábia Saudita x Países Baixos",
      "odd": 1.93
     },
     {
-     "h": "18:54",
-     "jogo": "Palace x Norwich",
-     "odd": 1.93
+     "h": "18:58",
+     "jogo": "Egito x Japão",
+     "odd": 1.98
     }
    ],
    "gatilho": "placar empate 1-1",
    "alvo": {
-    "h": "18:48",
-    "jogo": "Burnley x Palace",
-    "odd": 1.87,
+    "h": "18:52",
+    "jogo": "Iraque x Brasil",
+    "odd": 2.05,
     "unidades": 1,
-    "desde": 1784656006355
+    "desde": 1784656243752
    },
-   "iniciadoEm": 1784656006355
+   "iniciadoEm": 1784656243752
   },
   "cooldown": {
    "euro": 1784654032554,
    "super": 1784653081156,
-   "premier": 1784650658854,
+   "premier": 1784656242053,
    "copa": 1784650033051
   },
   "dias": {
@@ -514,12 +515,12 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": 5
+   "2026-07-21": 5.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGRR",
-   "n": 8,
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 42,
    "start": 1
   }
  }
