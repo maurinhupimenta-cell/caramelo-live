@@ -314,7 +314,6 @@
    }
   ],
   "consumidas": {
-   "super": 1784656324651,
    "euro": 1784656931549,
    "copa": 1784658070352
   },
@@ -475,7 +474,37 @@
    "super": 1784657531256,
    "euro": 1784658148555
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:54",
+     "jogo": "West Ham x Newcastle",
+     "odd": 2.02
+    },
+    {
+     "h": "19:57",
+     "jogo": "City x Brighton",
+     "odd": 1.9
+    },
+    {
+     "h": "20:00",
+     "jogo": "Leicester x Aston",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "placar empate 1-1",
+   "alvo": {
+    "h": "19:54",
+    "jogo": "West Ham x Newcastle",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1784659846349
+   },
+   "iniciadoEm": 1784659846349
+  },
   "cooldown": {
    "euro": 1784658148555,
    "super": 1784657531256,
@@ -493,7 +522,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 1-1",
-   "n": 57,
+   "n": 48,
    "start": 1
   }
  }
