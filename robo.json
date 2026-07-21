@@ -133,8 +133,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "06:07",
@@ -153,13 +153,21 @@
     }
    ],
    "alvo": {
-    "h": "06:07",
-    "jogo": "Santos x Itaquera",
-    "odd": 5,
-    "unidades": 1,
-    "desde": 1784610246942
+    "h": "06:10",
+    "jogo": "Bogota x Medellin",
+    "odd": 5.5,
+    "unidades": 2,
+    "desde": 1784610606641
    },
-   "iniciadoEm": 1784610246942
+   "iniciadoEm": 1784610246942,
+   "tiros": [
+    {
+     "h": "06:07",
+     "jogo": "Santos x Itaquera",
+     "odd": 5,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784607544035,
@@ -178,7 +186,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 10,
+   "n": 6,
    "start": 1
   }
  },
