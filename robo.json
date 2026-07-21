@@ -183,13 +183,19 @@
   }
  },
  "o25": {
-  "saldo": -16.7,
-  "ciclos": 177,
+  "saldo": -23.7,
+  "ciclos": 178,
   "greens": 123,
-  "redsCiclo": 30,
+  "redsCiclo": 31,
   "aborts": 0,
   "descartes": 24,
   "historico": [
+   {
+    "quando": "2026-07-21T10:09:47.241Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-21T09:58:48.735Z",
     "resultado": "RED_CICLO",
@@ -303,63 +309,15 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "copa · Haiti x Países Baixos @2.2 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-21T01:02:05.319Z",
-    "resultado": "GREEN",
-    "unidades": 3.8,
-    "detalhe": "euro · Ucrânia x Albânia @2.7 (tiro 3)"
    }
   ],
   "consumidas": {
-   "euro": 1784627928542
+   "euro": 1784627928542,
+   "copa": 1784628587137
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "11:01",
-     "jogo": "México x Escócia",
-     "odd": 2.5
-    },
-    {
-     "h": "11:04",
-     "jogo": "EUA x Alemanha",
-     "odd": 2.15
-    },
-    {
-     "h": "11:07",
-     "jogo": "Canadá x Costa do Marfim",
-     "odd": 2.25
-    }
-   ],
-   "alvo": {
-    "h": "11:07",
-    "jogo": "Canadá x Costa do Marfim",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1784628407442
-   },
-   "iniciadoEm": 1784627929845,
-   "tiros": [
-    {
-     "h": "11:01",
-     "jogo": "México x Escócia",
-     "odd": 2.5,
-     "unidades": 1
-    },
-    {
-     "h": "11:04",
-     "jogo": "EUA x Alemanha",
-     "odd": 2.15,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784613484433,
+   "copa": 1784628587137,
    "premier": 1784610888238,
    "euro": 1784627928542,
    "super": 1784610247137
@@ -371,23 +329,29 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": -0.4
+   "2026-07-21": -7.4
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 44,
+   "tipo": "odd",
+   "chave": "2.3",
+   "n": 11,
    "start": 1
   }
  },
  "ambas": {
-  "saldo": -18,
-  "ciclos": 182,
-  "greens": 131,
+  "saldo": -17.1,
+  "ciclos": 183,
+  "greens": 132,
   "redsCiclo": 22,
   "aborts": 0,
   "descartes": 29,
   "historico": [
+   {
+    "quando": "2026-07-21T10:06:47.834Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · EUA x Alemanha @1.9 (tiro 1)"
+   },
    {
     "quando": "2026-07-21T10:01:48.341Z",
     "resultado": "RED_CICLO",
@@ -501,54 +465,20 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "premier · Brentford x Newcastle @1.87 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-21T01:04:26.312Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Países Baixos x Suíça @2.02 (tiro 2)"
    }
   ],
   "consumidas": {
    "super": 1784627169537,
    "premier": 1784627450436,
-   "euro": 1784628108237
+   "euro": 1784628108237,
+   "copa": 1784628407635
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "11:04",
-     "jogo": "EUA x Alemanha",
-     "odd": 1.9
-    },
-    {
-     "h": "11:07",
-     "jogo": "Canadá x Costa do Marfim",
-     "odd": 1.98
-    },
-    {
-     "h": "11:10",
-     "jogo": "Espanha x Nova Zelândia",
-     "odd": 1.98
-    }
-   ],
-   "alvo": {
-    "h": "11:04",
-    "jogo": "EUA x Alemanha",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1784628109632
-   },
-   "iniciadoEm": 1784628109632
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784628108237,
    "super": 1784627169537,
    "premier": 1784627450436,
-   "copa": 1784613304835
+   "copa": 1784628407635
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -556,12 +486,12 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": -2.9
+   "2026-07-21": -2
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 1-1",
-   "n": 25,
+   "n": 26,
    "start": 1
   }
  }
