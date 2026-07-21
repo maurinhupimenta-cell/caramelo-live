@@ -132,7 +132,37 @@
    "euro": 1784650513155,
    "super": 1784653080955
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:13",
+     "jogo": "México x Bélgica",
+     "odd": 4.5
+    },
+    {
+     "h": "18:16",
+     "jogo": "Portugal x Nova Zelândia",
+     "odd": 4.2
+    },
+    {
+     "h": "18:19",
+     "jogo": "Países Baixos x Curação",
+     "odd": 4.33
+    }
+   ],
+   "gatilho": "placar empate 2-2",
+   "alvo": {
+    "h": "18:13",
+    "jogo": "México x Bélgica",
+    "odd": 4.5,
+    "unidades": 1,
+    "desde": 1784653788456
+   },
+   "iniciadoEm": 1784653788456
+  },
   "cooldown": {
    "copa": 1784649492750,
    "premier": 1784648869657,
@@ -150,7 +180,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 22,
+   "n": 10,
    "start": 1
   }
  },
@@ -490,9 +520,9 @@
    "2026-07-21": 4
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 55,
+   "tipo": "seq",
+   "chave": "RRRRR",
+   "n": 16,
    "start": 1
   }
  }
