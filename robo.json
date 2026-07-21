@@ -287,7 +287,36 @@
    "copa": 1784637410141,
    "premier": 1784638067132
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:29",
+     "jogo": "Países Baixos x Portugal",
+     "odd": 2.07
+    },
+    {
+     "h": "14:32",
+     "jogo": "Alemanha x Polônia",
+     "odd": 2.35
+    },
+    {
+     "h": "14:35",
+     "jogo": "Bélgica x República Tcheca",
+     "odd": 2.45
+    }
+   ],
+   "alvo": {
+    "h": "14:29",
+    "jogo": "Países Baixos x Portugal",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1784640369235
+   },
+   "iniciadoEm": 1784640369235
+  },
   "cooldown": {
    "copa": 1784637410141,
    "premier": 1784638067132,
@@ -305,8 +334,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 32,
+   "chave": "goleada (3+)",
+   "n": 51,
    "start": 1
   }
  },
@@ -444,7 +473,36 @@
    "copa": 1784637947636,
    "super": 1784640288838
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:26",
+     "jogo": "Suíça x Inglaterra",
+     "odd": 1.83
+    },
+    {
+     "h": "14:29",
+     "jogo": "Países Baixos x Portugal",
+     "odd": 1.85
+    },
+    {
+     "h": "14:32",
+     "jogo": "Alemanha x Polônia",
+     "odd": 2.07
+    }
+   ],
+   "alvo": {
+    "h": "14:26",
+    "jogo": "Suíça x Inglaterra",
+    "odd": 1.83,
+    "unidades": 1,
+    "desde": 1784640349234
+   },
+   "iniciadoEm": 1784640349234
+  },
   "cooldown": {
    "euro": 1784636748539,
    "super": 1784640288838,
@@ -460,9 +518,9 @@
    "2026-07-21": -7.6
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 40,
+   "tipo": "seq",
+   "chave": "RGRRG",
+   "n": 5,
    "start": 1
   }
  }
