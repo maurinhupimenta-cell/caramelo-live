@@ -385,13 +385,19 @@
   }
  },
  "ambas": {
-  "saldo": -16.2,
-  "ciclos": 200,
-  "greens": 146,
+  "saldo": -15.3,
+  "ciclos": 201,
+  "greens": 147,
   "redsCiclo": 24,
   "aborts": 0,
   "descartes": 30,
   "historico": [
+   {
+    "quando": "2026-07-21T15:56:13.554Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Itaquera x Belo Horizonte @1.9 (tiro 1) · gatilho: placar empate 1-1"
+   },
    {
     "quando": "2026-07-21T15:48:11.360Z",
     "resultado": "DESCARTADO",
@@ -505,51 +511,46 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-21T09:50:50.634Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "premier · West Ham x Norwich @2.15 (tiro 1)"
    }
   ],
   "consumidas": {
-   "copa": 1784646250950
+   "copa": 1784646250950,
+   "super": 1784649373354
   },
   "ciclo": {
-   "liga": "super",
+   "liga": "euro",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "16:52",
-     "jogo": "Itaquera x Belo Horizonte",
-     "odd": 1.9
+     "h": "16:56",
+     "jogo": "Itália x Polônia",
+     "odd": 2.15
     },
     {
-     "h": "16:55",
-     "jogo": "Santos x Santiago",
-     "odd": 1.98
+     "h": "16:59",
+     "jogo": "Sérvia x Alemanha",
+     "odd": 2
     },
     {
-     "h": "16:58",
-     "jogo": "Agua Branca x Montevideo",
-     "odd": 1.93
+     "h": "17:02",
+     "jogo": "Albânia x Áustria",
+     "odd": 2.2
     }
    ],
    "gatilho": "placar empate 1-1",
    "alvo": {
-    "h": "16:52",
-    "jogo": "Itaquera x Belo Horizonte",
-    "odd": 1.9,
+    "h": "16:56",
+    "jogo": "Itália x Polônia",
+    "odd": 2.15,
     "unidades": 1,
-    "desde": 1784648942350
+    "desde": 1784649403253
    },
-   "iniciadoEm": 1784648942350
+   "iniciadoEm": 1784649403253
   },
   "cooldown": {
    "euro": 1784644373854,
-   "super": 1784644089754,
+   "super": 1784649373354,
    "premier": 1784645448456,
    "copa": 1784646250950
   },
@@ -559,7 +560,7 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": -1.1
+   "2026-07-21": -0.2
   },
   "_gatilhoAtual": {
    "tipo": "placar",
