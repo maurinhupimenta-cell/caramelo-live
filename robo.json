@@ -155,13 +155,19 @@
   }
  },
  "o25": {
-  "saldo": -19.9,
-  "ciclos": 169,
-  "greens": 117,
+  "saldo": -18.5,
+  "ciclos": 170,
+  "greens": 118,
   "redsCiclo": 29,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-21T04:41:04.634Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "euro · Sérvia x Suíça @2.35 (tiro 1)"
+   },
    {
     "quando": "2026-07-21T04:11:43.336Z",
     "resultado": "RED_CICLO",
@@ -275,24 +281,19 @@
     "resultado": "GREEN",
     "unidades": 2,
     "detalhe": "euro · Romênia x Eslovênia @2.5 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T21:05:52.412Z",
-    "resultado": "GREEN",
-    "unidades": 2.8,
-    "detalhe": "premier · West Ham x Chelsea @2.45 (tiro 3)"
    }
   ],
   "consumidas": {
    "copa": 1784605452433,
    "super": 1784605754138,
-   "premier": 1784607103143
+   "premier": 1784607103143,
+   "euro": 1784608864439
   },
   "ciclo": null,
   "cooldown": {
    "copa": 1784605452433,
    "premier": 1784607103143,
-   "euro": 1784604913737,
+   "euro": 1784608864439,
    "super": 1784605754138
   },
   "dias": {
@@ -302,12 +303,12 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": -3.6
+   "2026-07-21": -2.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Palace",
-   "n": 13,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 19,
    "start": 1
   }
  },
@@ -493,7 +494,7 @@
    "tipo": "time",
    "chave": "México",
    "n": 6,
-   "start": 3
+   "start": 1
   }
  }
 }
