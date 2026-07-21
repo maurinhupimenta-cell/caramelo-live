@@ -129,7 +129,36 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:15",
+     "jogo": "Brighton x Aston",
+     "odd": 4.2
+    },
+    {
+     "h": "14:18",
+     "jogo": "Southampton x Norwich",
+     "odd": 4.75
+    },
+    {
+     "h": "14:21",
+     "jogo": "Leicester x Leeds",
+     "odd": 5.5
+    }
+   ],
+   "alvo": {
+    "h": "14:15",
+    "jogo": "Brighton x Aston",
+    "odd": 4.2,
+    "unidades": 1,
+    "desde": 1784639550634
+   },
+   "iniciadoEm": 1784639550634
+  },
   "cooldown": {
    "copa": 1784631286938,
    "premier": 1784632837137,
@@ -147,7 +176,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 17,
+   "n": 19,
    "start": 1
   }
  },
