@@ -288,7 +288,36 @@
    "premier": 1784610888238,
    "euro": 1784612644736
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:52",
+     "jogo": "Arábia Saudita x Egito",
+     "odd": 2.07
+    },
+    {
+     "h": "06:55",
+     "jogo": "Tunísia x Iraque",
+     "odd": 2.75
+    },
+    {
+     "h": "06:58",
+     "jogo": "México x Austrália",
+     "odd": 2.2
+    }
+   ],
+   "alvo": {
+    "h": "06:52",
+    "jogo": "Arábia Saudita x Egito",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1784612945641
+   },
+   "iniciadoEm": 1784612945641
+  },
   "cooldown": {
    "copa": 1784609344039,
    "premier": 1784610888238,
@@ -305,10 +334,10 @@
    "2026-07-21": 4.1
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 19,
-   "start": 1
+   "tipo": "time",
+   "chave": "Costa do Marfim",
+   "n": 7,
+   "start": 3
   }
  },
  "ambas": {
@@ -447,8 +476,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "06:46",
@@ -467,11 +496,11 @@
     }
    ],
    "alvo": {
-    "h": "06:49",
-    "jogo": "Canadá x Marrocos",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1784612944034
+    "h": "06:52",
+    "jogo": "Arábia Saudita x Egito",
+    "odd": 1.83,
+    "unidades": 4,
+    "desde": 1784613123741
    },
    "iniciadoEm": 1784612745134,
    "tiros": [
@@ -480,6 +509,12 @@
      "jogo": "Gana x Austrália",
      "odd": 2,
      "unidades": 1
+    },
+    {
+     "h": "06:49",
+     "jogo": "Canadá x Marrocos",
+     "odd": 2.05,
+     "unidades": 2
     }
    ]
   },
@@ -501,7 +536,7 @@
    "tipo": "time",
    "chave": "México",
    "n": 8,
-   "start": 2
+   "start": 1
   }
  }
 }
