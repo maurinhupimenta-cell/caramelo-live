@@ -129,7 +129,6 @@
    }
   ],
   "consumidas": {
-   "super": 1784646972959,
    "premier": 1784648869657,
    "copa": 1784649492750,
    "euro": 1784650513155
@@ -157,13 +156,19 @@
   }
  },
  "o25": {
-  "saldo": -30.9,
-  "ciclos": 197,
+  "saldo": -37.9,
+  "ciclos": 198,
   "greens": 138,
-  "redsCiclo": 35,
+  "redsCiclo": 36,
   "aborts": 0,
   "descartes": 24,
   "historico": [
+   {
+    "quando": "2026-07-21T16:15:13.456Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
+   },
    {
     "quando": "2026-07-21T16:02:13.150Z",
     "resultado": "GREEN",
@@ -277,67 +282,48 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-21T10:09:47.241Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
    "premier": 1784647794057,
-   "super": 1784649732949
+   "super": 1784649732949,
+   "euro": 1784650513352
   },
   "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "17:05",
-     "jogo": "Bélgica x Turquia",
-     "odd": 2.35
+     "h": "17:16",
+     "jogo": "Coreia do Sul x Curação",
+     "odd": 2.3
     },
     {
-     "h": "17:08",
-     "jogo": "Croácia x Inglaterra",
-     "odd": 2.07
+     "h": "17:19",
+     "jogo": "Nova Zelândia x República Tcheca",
+     "odd": 2.3
     },
     {
-     "h": "17:11",
-     "jogo": "Suíça x Ucrânia",
-     "odd": 2.2
+     "h": "17:22",
+     "jogo": "Panamá x México",
+     "odd": 2.3
     }
    ],
-   "gatilho": "placar empate 2-2",
+   "gatilho": "placar acima de 1-0 (2-1)",
    "alvo": {
-    "h": "17:11",
-    "jogo": "Suíça x Ucrânia",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1784650272554
+    "h": "17:16",
+    "jogo": "Coreia do Sul x Curação",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1784650514552
    },
-   "iniciadoEm": 1784649790952,
-   "tiros": [
-    {
-     "h": "17:05",
-     "jogo": "Bélgica x Turquia",
-     "odd": 2.35,
-     "unidades": 1
-    },
-    {
-     "h": "17:08",
-     "jogo": "Croácia x Inglaterra",
-     "odd": 2.07,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1784650514552
   },
   "cooldown": {
    "copa": 1784646250752,
    "premier": 1784647794057,
-   "euro": 1784644671155,
+   "euro": 1784650513352,
    "super": 1784649732949
   },
   "dias": {
@@ -347,12 +333,12 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": -14.6
+   "2026-07-21": -21.6
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 62,
+   "tipo": "seq",
+   "chave": "GRGR",
+   "n": 11,
    "start": 1
   }
  },
