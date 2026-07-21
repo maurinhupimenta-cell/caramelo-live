@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -67.5,
-  "ciclos": 142,
-  "greens": 52,
+  "saldo": -59.3,
+  "ciclos": 143,
+  "greens": 53,
   "redsCiclo": 56,
   "aborts": 0,
   "descartes": 34,
   "historico": [
+   {
+    "quando": "2026-07-21T09:41:52.438Z",
+    "resultado": "GREEN",
+    "unidades": 8.2,
+    "detalhe": "premier · Newcastle x Palace @3.8 (tiro 3)"
+   },
    {
     "quando": "2026-07-21T09:25:48.535Z",
     "resultado": "DESCARTADO",
@@ -120,62 +126,15 @@
     "resultado": "GREEN",
     "unidades": 11,
     "detalhe": "copa · Croácia x Alemanha @4.5 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-20T14:38:43.808Z",
-    "resultado": "GREEN",
-    "unidades": 3.2,
-    "detalhe": "premier · Brentford x Burnley @4.2 (tiro 1)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "10:33",
-     "jogo": "Burnley x Southampton",
-     "odd": 4.5
-    },
-    {
-     "h": "10:36",
-     "jogo": "Aston x City",
-     "odd": 4.2
-    },
-    {
-     "h": "10:39",
-     "jogo": "Newcastle x Palace",
-     "odd": 3.8
-    }
-   ],
-   "alvo": {
-    "h": "10:39",
-    "jogo": "Newcastle x Palace",
-    "odd": 3.8,
-    "unidades": 4,
-    "desde": 1784626725934
-   },
-   "iniciadoEm": 1784625951541,
-   "tiros": [
-    {
-     "h": "10:33",
-     "jogo": "Burnley x Southampton",
-     "odd": 4.5,
-     "unidades": 1
-    },
-    {
-     "h": "10:36",
-     "jogo": "Aston x City",
-     "odd": 4.2,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1784626912338
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784607544035,
-   "premier": 1784612148634,
+   "premier": 1784626912338,
    "euro": 1784581151719,
    "super": 1784610966639
   },
@@ -185,7 +144,7 @@
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
    "2026-07-20": 19.6,
-   "2026-07-21": -9.8
+   "2026-07-21": -1.6
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
