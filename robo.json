@@ -331,7 +331,37 @@
    "copa": 1784646250752,
    "premier": 1784647794057
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:58",
+     "jogo": "Agua Branca x Montevideo",
+     "odd": 2.07
+    },
+    {
+     "h": "17:01",
+     "jogo": "Penarol x Porto Alegre",
+     "odd": 2.87
+    },
+    {
+     "h": "17:04",
+     "jogo": "Montevideo x Bogota",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-1)",
+   "alvo": {
+    "h": "16:58",
+    "jogo": "Agua Branca x Montevideo",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1784649373158
+   },
+   "iniciadoEm": 1784649373158
+  },
   "cooldown": {
    "copa": 1784646250752,
    "premier": 1784647794057,
@@ -350,7 +380,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "acima de 1-0 (2-1)",
-   "n": 38,
+   "n": 44,
    "start": 1
   }
  },
@@ -532,9 +562,9 @@
    "2026-07-21": -1.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGRG",
-   "n": 11,
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 51,
    "start": 1
   }
  }
