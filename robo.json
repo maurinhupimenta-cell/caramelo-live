@@ -432,7 +432,36 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "01:43",
+     "jogo": "Porto Alegre x Santiago",
+     "odd": 2.1
+    },
+    {
+     "h": "01:46",
+     "jogo": "Guayaquil x Lima",
+     "odd": 1.86
+    },
+    {
+     "h": "01:49",
+     "jogo": "Santos x Belo Horizonte",
+     "odd": 1.93
+    }
+   ],
+   "alvo": {
+    "h": "01:43",
+    "jogo": "Porto Alegre x Santiago",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1784594055908
+   },
+   "iniciadoEm": 1784594055908
+  },
   "cooldown": {
    "euro": 1784588241921,
    "super": 1784589167809,
@@ -447,10 +476,10 @@
    "2026-07-20": 12.1
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 59,
-   "start": 1
+   "tipo": "time",
+   "chave": "Guayaquil",
+   "n": 7,
+   "start": 3
   }
  }
 }
