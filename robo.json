@@ -154,13 +154,19 @@
   }
  },
  "o25": {
-  "saldo": -13.9,
-  "ciclos": 167,
-  "greens": 116,
+  "saldo": -12.9,
+  "ciclos": 168,
+  "greens": 117,
   "redsCiclo": 28,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-21T03:49:14.241Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Montevideo x Santiago @2 (tiro 1)"
+   },
    {
     "quando": "2026-07-21T03:44:12.539Z",
     "resultado": "GREEN",
@@ -274,25 +280,20 @@
     "resultado": "GREEN",
     "unidades": 2,
     "detalhe": "copa · Bósnia e Herzegovina x Japão @2.25 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-20T20:42:13.908Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
    "premier": 1784602621814,
    "euro": 1784604913737,
-   "copa": 1784605452433
+   "copa": 1784605452433,
+   "super": 1784605754138
   },
   "ciclo": null,
   "cooldown": {
    "copa": 1784605452433,
    "premier": 1784602621814,
    "euro": 1784604913737,
-   "super": 1784601609514
+   "super": 1784605754138
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -301,7 +302,7 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": 2.4
+   "2026-07-21": 3.4
   },
   "_gatilhoAtual": {
    "tipo": "placar",
