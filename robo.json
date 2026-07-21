@@ -329,20 +329,26 @@
    "2026-07-21": 6.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2",
-   "n": 7,
-   "start": 3
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 28,
+   "start": 1
   }
  },
  "ambas": {
-  "saldo": -12.2,
-  "ciclos": 180,
-  "greens": 130,
+  "saldo": -11,
+  "ciclos": 181,
+  "greens": 131,
   "redsCiclo": 21,
   "aborts": 0,
   "descartes": 29,
   "historico": [
+   {
+    "quando": "2026-07-21T09:50:50.634Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · West Ham x Norwich @2.15 (tiro 1)"
+   },
    {
     "quando": "2026-07-21T09:46:09.638Z",
     "resultado": "GREEN",
@@ -456,22 +462,17 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-21T00:50:11.116Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
-   "super": 1784627169537
+   "super": 1784627169537,
+   "premier": 1784627450436
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1784610824637,
    "super": 1784627169537,
-   "premier": 1784611428935,
+   "premier": 1784627450436,
    "copa": 1784613304835
   },
   "dias": {
@@ -480,12 +481,12 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": 2.9
+   "2026-07-21": 4.1
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 31,
+   "tipo": "seq",
+   "chave": "RRGRG",
+   "n": 6,
    "start": 1
   }
  }
