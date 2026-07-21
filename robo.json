@@ -129,7 +129,44 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "10:33",
+     "jogo": "Burnley x Southampton",
+     "odd": 4.5
+    },
+    {
+     "h": "10:36",
+     "jogo": "Aston x City",
+     "odd": 4.2
+    },
+    {
+     "h": "10:39",
+     "jogo": "Newcastle x Palace",
+     "odd": 3.8
+    }
+   ],
+   "alvo": {
+    "h": "10:36",
+    "jogo": "Aston x City",
+    "odd": 4.2,
+    "unidades": 2,
+    "desde": 1784626542734
+   },
+   "iniciadoEm": 1784625951541,
+   "tiros": [
+    {
+     "h": "10:33",
+     "jogo": "Burnley x Southampton",
+     "odd": 4.5,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1784607544035,
    "premier": 1784612148634,
@@ -146,7 +183,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":10",
+   "chave": ":36",
    "n": 7,
    "start": 3
   }
@@ -280,10 +317,37 @@
     "detalhe": "super · Guayaquil x Santos @2.25 (tiro 2)"
    }
   ],
-  "consumidas": {
-   "copa": 1784613484433
+  "consumidas": {},
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:59",
+     "jogo": "Países Baixos x Romênia",
+     "odd": 2.02
+    },
+    {
+     "h": "07:02",
+     "jogo": "República Tcheca x Sérvia",
+     "odd": 2.75
+    },
+    {
+     "h": "07:05",
+     "jogo": "Eslovênia x França",
+     "odd": 2.4
+    }
+   ],
+   "alvo": {
+    "h": "06:59",
+    "jogo": "Países Baixos x Romênia",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1784625948544
+   },
+   "iniciadoEm": 1784625948544
   },
-  "ciclo": null,
   "cooldown": {
    "copa": 1784613484433,
    "premier": 1784610888238,
@@ -300,9 +364,9 @@
    "2026-07-21": 6.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.3",
-   "n": 6,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 41,
    "start": 1
   }
  },
@@ -435,11 +499,37 @@
     "detalhe": "premier · Brighton x Everton @1.8 (tiro 1)"
    }
   ],
-  "consumidas": {
-   "super": 1784612225631,
-   "copa": 1784613304835
+  "consumidas": {},
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:01",
+     "jogo": "Senegal x Cabo Verde",
+     "odd": 2.15
+    },
+    {
+     "h": "07:04",
+     "jogo": "Coreia do Sul x Costa do Marfim",
+     "odd": 2
+    },
+    {
+     "h": "07:07",
+     "jogo": "Egito x Haiti",
+     "odd": 1.9
+    }
+   ],
+   "alvo": {
+    "h": "07:01",
+    "jogo": "Senegal x Cabo Verde",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1784625948835
+   },
+   "iniciadoEm": 1784625948835
   },
-  "ciclo": null,
   "cooldown": {
    "euro": 1784610824637,
    "super": 1784612225631,
@@ -455,10 +545,10 @@
    "2026-07-21": 2
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "0-0",
-   "n": 12,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.87",
+   "n": 7,
+   "start": 2
   }
  }
 }
