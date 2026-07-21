@@ -381,13 +381,19 @@
   }
  },
  "ambas": {
-  "saldo": -11.6,
-  "ciclos": 164,
-  "greens": 117,
+  "saldo": -10.6,
+  "ciclos": 165,
+  "greens": 118,
   "redsCiclo": 19,
   "aborts": 0,
   "descartes": 28,
   "historico": [
+   {
+    "quando": "2026-07-21T01:47:11.616Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Itália x Romênia @1.95 (tiro 1)"
+   },
    {
     "quando": "2026-07-21T01:44:41.908Z",
     "resultado": "GREEN",
@@ -501,51 +507,17 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "super · Asuncion x Quito @2 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T18:15:14.215Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · Turquia x Países Baixos @1.95 (tiro 1)"
    }
   ],
   "consumidas": {
    "super": 1784595313717,
    "copa": 1784595866207,
-   "premier": 1784598281714
+   "premier": 1784598281714,
+   "euro": 1784598431515
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "02:44",
-     "jogo": "Itália x Romênia",
-     "odd": 1.95
-    },
-    {
-     "h": "02:47",
-     "jogo": "Países Baixos x Eslovênia",
-     "odd": 2.1
-    },
-    {
-     "h": "02:50",
-     "jogo": "Espanha x Turquia",
-     "odd": 2
-    }
-   ],
-   "alvo": {
-    "h": "02:44",
-    "jogo": "Itália x Romênia",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1784598293212
-   },
-   "iniciadoEm": 1784598293212
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784588241921,
+   "euro": 1784598431515,
    "super": 1784595313717,
    "premier": 1784598281714,
    "copa": 1784595866207
@@ -555,13 +527,13 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": 7
+   "2026-07-20": 8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.1",
    "n": 6,
-   "start": 1
+   "start": 3
   }
  }
 }
