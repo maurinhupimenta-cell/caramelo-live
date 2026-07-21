@@ -291,8 +291,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "15:55",
@@ -312,13 +312,21 @@
    ],
    "gatilho": "placar acima de 1-0 (2-1)",
    "alvo": {
-    "h": "15:55",
-    "jogo": "RD Congo x EUA",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1784645593359
+    "h": "15:58",
+    "jogo": "Jordânia x Gana",
+    "odd": 2.3,
+    "unidades": 2,
+    "desde": 1784645951556
    },
-   "iniciadoEm": 1784645593359
+   "iniciadoEm": 1784645593359,
+   "tiros": [
+    {
+     "h": "15:55",
+     "jogo": "RD Congo x EUA",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784641904542,
@@ -478,8 +486,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "15:55",
@@ -499,13 +507,21 @@
    ],
    "gatilho": "placar acima de 1-0 (2-1)",
    "alvo": {
-    "h": "15:55",
-    "jogo": "RD Congo x EUA",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1784645508860
+    "h": "15:58",
+    "jogo": "Jordânia x Gana",
+    "odd": 2,
+    "unidades": 2,
+    "desde": 1784645951755
    },
-   "iniciadoEm": 1784645508860
+   "iniciadoEm": 1784645508860,
+   "tiros": [
+    {
+     "h": "15:55",
+     "jogo": "RD Congo x EUA",
+     "odd": 1.9,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784644373854,
@@ -522,10 +538,10 @@
    "2026-07-21": -1.4
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 55,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.87",
+   "n": 14,
+   "start": 3
   }
  }
 }
