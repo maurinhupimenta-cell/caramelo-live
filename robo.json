@@ -196,12 +196,18 @@
  },
  "o25": {
   "saldo": -9.7,
-  "ciclos": 175,
+  "ciclos": 176,
   "greens": 123,
   "redsCiclo": 29,
   "aborts": 0,
-  "descartes": 23,
+  "descartes": 24,
   "historico": [
+   {
+    "quando": "2026-07-21T09:40:49.332Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-21T05:58:04.633Z",
     "resultado": "GREEN",
@@ -315,45 +321,10 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "copa · África do Sul x Canadá @2.55 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T22:58:12.916Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "super · Guayaquil x Santos @2.25 (tiro 2)"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:59",
-     "jogo": "Países Baixos x Romênia",
-     "odd": 2.02
-    },
-    {
-     "h": "07:02",
-     "jogo": "República Tcheca x Sérvia",
-     "odd": 2.75
-    },
-    {
-     "h": "07:05",
-     "jogo": "Eslovênia x França",
-     "odd": 2.4
-    }
-   ],
-   "alvo": {
-    "h": "06:59",
-    "jogo": "Países Baixos x Romênia",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1784625948544
-   },
-   "iniciadoEm": 1784625948544
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784613484433,
    "premier": 1784610888238,
@@ -371,19 +342,25 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 42,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 33,
    "start": 1
   }
  },
  "ambas": {
   "saldo": -13.1,
-  "ciclos": 178,
+  "ciclos": 179,
   "greens": 129,
   "redsCiclo": 21,
   "aborts": 0,
-  "descartes": 28,
+  "descartes": 29,
   "historico": [
+   {
+    "quando": "2026-07-21T09:40:49.335Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-21T05:55:05.036Z",
     "resultado": "RED_CICLO",
@@ -497,12 +474,6 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "super · La Boca x Lima @2.07 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-20T22:59:57.415Z",
-    "resultado": "GREEN",
-    "unidades": 0.8,
-    "detalhe": "premier · Brighton x Everton @1.8 (tiro 1)"
    }
   ],
   "consumidas": {},
@@ -551,9 +522,9 @@
    "2026-07-21": 2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.87",
-   "n": 7,
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 30,
    "start": 1
   }
  }
