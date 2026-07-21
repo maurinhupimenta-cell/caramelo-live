@@ -155,13 +155,19 @@
   }
  },
  "o25": {
-  "saldo": -23.7,
-  "ciclos": 178,
+  "saldo": -30.7,
+  "ciclos": 179,
   "greens": 123,
-  "redsCiclo": 31,
+  "redsCiclo": 32,
   "aborts": 0,
   "descartes": 24,
   "historico": [
+   {
+    "quando": "2026-07-21T10:19:09.832Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-21T10:09:47.241Z",
     "resultado": "RED_CICLO",
@@ -275,67 +281,19 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "super · Guayaquil x Agua Branca @2.07 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-21T01:10:05.816Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "copa · Haiti x Países Baixos @2.2 (tiro 1)"
    }
   ],
   "consumidas": {
    "euro": 1784627928542,
-   "copa": 1784628587137
+   "copa": 1784628587137,
+   "super": 1784629149644
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "11:10",
-     "jogo": "Bogota x Santiago",
-     "odd": 2.3
-    },
-    {
-     "h": "11:13",
-     "jogo": "Asuncion x Lima",
-     "odd": 2.2
-    },
-    {
-     "h": "11:16",
-     "jogo": "Guayaquil x La Plata",
-     "odd": 2.4
-    }
-   ],
-   "alvo": {
-    "h": "11:16",
-    "jogo": "Guayaquil x La Plata",
-    "odd": 2.4,
-    "unidades": 4,
-    "desde": 1784628969242
-   },
-   "iniciadoEm": 1784628588240,
-   "tiros": [
-    {
-     "h": "11:10",
-     "jogo": "Bogota x Santiago",
-     "odd": 2.3,
-     "unidades": 1
-    },
-    {
-     "h": "11:13",
-     "jogo": "Asuncion x Lima",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784628587137,
    "premier": 1784610888238,
    "euro": 1784627928542,
-   "super": 1784610247137
+   "super": 1784629149644
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -344,13 +302,13 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": -7.4
+   "2026-07-21": -14.4
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.75",
    "n": 6,
-   "start": 2
+   "start": 1
   }
  },
  "ambas": {
