@@ -193,13 +193,19 @@
   }
  },
  "o25": {
-  "saldo": -27.7,
-  "ciclos": 181,
-  "greens": 125,
+  "saldo": -26.5,
+  "ciclos": 182,
+  "greens": 126,
   "redsCiclo": 32,
   "aborts": 0,
   "descartes": 24,
   "historico": [
+   {
+    "quando": "2026-07-21T11:15:47.834Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Alemanha x Turquia @2.2 (tiro 1)"
+   },
    {
     "quando": "2026-07-21T11:10:48.638Z",
     "resultado": "GREEN",
@@ -313,51 +319,17 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "copa · Marrocos x Bósnia e Herzegovina @2.2 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-21T02:22:15.517Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "euro · França x Romênia @2.05 (tiro 3)"
    }
   ],
   "consumidas": {
    "super": 1784629149644,
    "premier": 1784629423034,
-   "euro": 1784632248443
+   "euro": 1784632248443,
+   "copa": 1784632547639
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "12:13",
-     "jogo": "Alemanha x Turquia",
-     "odd": 2.2
-    },
-    {
-     "h": "12:16",
-     "jogo": "Egito x Panamá",
-     "odd": 2.25
-    },
-    {
-     "h": "12:19",
-     "jogo": "Qatar x Senegal",
-     "odd": 2.5
-    }
-   ],
-   "alvo": {
-    "h": "12:13",
-    "jogo": "Alemanha x Turquia",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1784632249840
-   },
-   "iniciadoEm": 1784632249840
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784628587137,
+   "copa": 1784632547639,
    "premier": 1784629423034,
    "euro": 1784632248443,
    "super": 1784629149644
@@ -369,12 +341,12 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": -11.4
+   "2026-07-21": -10.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Egito",
-   "n": 10,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 55,
    "start": 1
   }
  },
@@ -564,10 +536,10 @@
    "2026-07-21": 0.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":21",
-   "n": 12,
-   "start": 1
+   "tipo": "time",
+   "chave": "Tottenham",
+   "n": 16,
+   "start": 3
   }
  }
 }
