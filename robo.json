@@ -1,12 +1,18 @@
 {
  "o35": {
   "saldo": -121.9,
-  "ciclos": 158,
+  "ciclos": 159,
   "greens": 57,
   "redsCiclo": 67,
   "aborts": 0,
-  "descartes": 34,
+  "descartes": 35,
   "historico": [
+   {
+    "quando": "2026-07-21T17:46:43.449Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-21T16:58:01.152Z",
     "resultado": "RED_CICLO",
@@ -120,49 +126,12 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-21T04:19:04.231Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
-   "euro": 1784650513155,
    "super": 1784653080955
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:13",
-     "jogo": "México x Bélgica",
-     "odd": 4.5
-    },
-    {
-     "h": "18:16",
-     "jogo": "Portugal x Nova Zelândia",
-     "odd": 4.2
-    },
-    {
-     "h": "18:19",
-     "jogo": "Países Baixos x Curação",
-     "odd": 4.33
-    }
-   ],
-   "gatilho": "placar empate 2-2",
-   "alvo": {
-    "h": "18:13",
-    "jogo": "México x Bélgica",
-    "odd": 4.5,
-    "unidades": 1,
-    "desde": 1784653788456
-   },
-   "iniciadoEm": 1784653788456
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784649492750,
    "premier": 1784648869657,
@@ -186,12 +155,18 @@
  },
  "o25": {
   "saldo": -35.4,
-  "ciclos": 200,
+  "ciclos": 201,
   "greens": 140,
   "redsCiclo": 36,
   "aborts": 0,
-  "descartes": 24,
+  "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-21T17:46:43.459Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-21T16:41:58.559Z",
     "resultado": "GREEN",
@@ -305,49 +280,39 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "copa · Alemanha x Turquia @2.2 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-21T11:10:48.638Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "euro · Turquia x Croácia @2.4 (tiro 2)"
    }
   ],
-  "consumidas": {
-   "euro": 1784650513352,
-   "copa": 1784650749450,
-   "premier": 1784652118454
-  },
+  "consumidas": {},
   "ciclo": {
-   "liga": "super",
+   "liga": "premier",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "18:13",
-     "jogo": "Sao Paulo x Medellin",
-     "odd": 2.2
+     "h": "18:18",
+     "jogo": "Southampton x Palace",
+     "odd": 2.3
     },
     {
-     "h": "18:16",
-     "jogo": "Quito x Belo Horizonte",
+     "h": "18:21",
+     "jogo": "Liverpool x West Ham",
+     "odd": 2.5
+    },
+    {
+     "h": "18:24",
+     "jogo": "Watford x Wolverhampton",
      "odd": 2.1
-    },
-    {
-     "h": "18:19",
-     "jogo": "Agua Branca x Asuncion",
-     "odd": 2.2
     }
    ],
-   "gatilho": "placar acima de 1-0 (2-1)",
+   "gatilho": "placar goleada (3+)",
    "alvo": {
-    "h": "18:13",
-    "jogo": "Sao Paulo x Medellin",
-    "odd": 2.2,
+    "h": "18:18",
+    "jogo": "Southampton x Palace",
+    "odd": 2.3,
     "unidades": 1,
-    "desde": 1784653809262
+    "desde": 1784656005155
    },
-   "iniciadoEm": 1784653809262
+   "iniciadoEm": 1784656005155
   },
   "cooldown": {
    "copa": 1784650749450,
@@ -366,8 +331,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 52,
+   "chave": "goleada (3+)",
+   "n": 64,
    "start": 1
   }
  },
