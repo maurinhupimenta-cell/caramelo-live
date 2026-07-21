@@ -485,12 +485,41 @@
    }
   ],
   "consumidas": {
-   "euro": 1784640528345,
    "premier": 1784641117235,
    "copa": 1784641904732,
    "super": 1784644089754
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:29",
+     "jogo": "Áustria x Ucrânia",
+     "odd": 2.02
+    },
+    {
+     "h": "15:32",
+     "jogo": "Croácia x Romênia",
+     "odd": 1.9
+    },
+    {
+     "h": "15:35",
+     "jogo": "Países Baixos x Albânia",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "seq RGGRG",
+   "alvo": {
+    "h": "15:29",
+    "jogo": "Áustria x Ucrânia",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1784644128552
+   },
+   "iniciadoEm": 1784644128552
+  },
   "cooldown": {
    "euro": 1784640528345,
    "super": 1784644089754,
@@ -506,9 +535,9 @@
    "2026-07-21": -3.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":25",
-   "n": 15,
+   "tipo": "seq",
+   "chave": "RGGRG",
+   "n": 8,
    "start": 1
   }
  }
