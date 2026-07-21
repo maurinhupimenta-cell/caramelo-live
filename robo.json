@@ -134,8 +134,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "15:33",
@@ -155,13 +155,21 @@
    ],
    "gatilho": "placar empate 2-2",
    "alvo": {
-    "h": "15:33",
-    "jogo": "Brighton x Watford",
+    "h": "15:36",
+    "jogo": "Leicester x Wolverhampton",
     "odd": 4,
-    "unidades": 1,
-    "desde": 1784644183949
+    "unidades": 2,
+    "desde": 1784644547558
    },
-   "iniciadoEm": 1784644183949
+   "iniciadoEm": 1784644183949,
+   "tiros": [
+    {
+     "h": "15:33",
+     "jogo": "Brighton x Watford",
+     "odd": 4,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784643372759,
@@ -318,7 +326,37 @@
    "copa": 1784641904542,
    "premier": 1784642919931
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:35",
+     "jogo": "Países Baixos x Albânia",
+     "odd": 2.45
+    },
+    {
+     "h": "15:38",
+     "jogo": "Polônia x Alemanha",
+     "odd": 2.3
+    },
+    {
+     "h": "15:41",
+     "jogo": "Ucrânia x Eslováquia",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-1)",
+   "alvo": {
+    "h": "15:35",
+    "jogo": "Países Baixos x Albânia",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1784644512362
+   },
+   "iniciadoEm": 1784644512362
+  },
   "cooldown": {
    "copa": 1784641904542,
    "premier": 1784642919931,
@@ -336,8 +374,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 76,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 48,
    "start": 1
   }
  },
