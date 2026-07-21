@@ -289,7 +289,36 @@
    "super": 1784633109240,
    "premier": 1784633380231
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:17",
+     "jogo": "Bélgica x Suíça",
+     "odd": 2.07
+    },
+    {
+     "h": "13:20",
+     "jogo": "Alemanha x Eslováquia",
+     "odd": 2.2
+    },
+    {
+     "h": "13:23",
+     "jogo": "Ucrânia x Croácia",
+     "odd": 2.25
+    }
+   ],
+   "alvo": {
+    "h": "13:17",
+    "jogo": "Bélgica x Suíça",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1784636027743
+   },
+   "iniciadoEm": 1784636027743
+  },
   "cooldown": {
    "copa": 1784632547639,
    "premier": 1784633380231,
@@ -307,8 +336,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 60,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 41,
    "start": 1
   }
  },
