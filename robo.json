@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -86,
-  "ciclos": 150,
+  "saldo": -93,
+  "ciclos": 151,
   "greens": 55,
-  "redsCiclo": 61,
+  "redsCiclo": 62,
   "aborts": 0,
   "descartes": 34,
   "historico": [
+   {
+    "quando": "2026-07-21T14:16:13.056Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-21T13:23:36.733Z",
     "resultado": "RED_CICLO",
@@ -120,63 +126,15 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-20T20:44:46.909Z",
-    "resultado": "GREEN",
-    "unidades": 9,
-    "detalhe": "premier · Norwich x Burnley @4 (tiro 3)"
    }
   ],
   "consumidas": {
-   "premier": 1784640216535
+   "premier": 1784640216535,
+   "copa": 1784643372759
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "15:04",
-     "jogo": "Coreia do Sul x RD Congo",
-     "odd": 4.75
-    },
-    {
-     "h": "15:07",
-     "jogo": "Bósnia e Herzegovina x Uzbequistão",
-     "odd": 4.2
-    },
-    {
-     "h": "15:10",
-     "jogo": "Costa do Marfim x Austrália",
-     "odd": 4
-    }
-   ],
-   "alvo": {
-    "h": "15:10",
-    "jogo": "Costa do Marfim x Austrália",
-    "odd": 4,
-    "unidades": 4,
-    "desde": 1784643072043
-   },
-   "iniciadoEm": 1784642473938,
-   "tiros": [
-    {
-     "h": "15:04",
-     "jogo": "Coreia do Sul x RD Congo",
-     "odd": 4.75,
-     "unidades": 1
-    },
-    {
-     "h": "15:07",
-     "jogo": "Bósnia e Herzegovina x Uzbequistão",
-     "odd": 4.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784631286938,
+   "copa": 1784643372759,
    "premier": 1784640216535,
    "euro": 1784634788236,
    "super": 1784635789732
@@ -187,7 +145,7 @@
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
    "2026-07-20": 19.6,
-   "2026-07-21": -28.3
+   "2026-07-21": -35.3
   },
   "_gatilhoAtual": {
    "tipo": "placar",
