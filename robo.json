@@ -131,7 +131,37 @@
   "consumidas": {
    "super": 1784653080955
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:00",
+     "jogo": "Brighton x West Ham",
+     "odd": 4.75
+    },
+    {
+     "h": "19:03",
+     "jogo": "Palace x Leeds",
+     "odd": 5.25
+    },
+    {
+     "h": "19:06",
+     "jogo": "Newcastle x Brighton",
+     "odd": 3.6
+    }
+   ],
+   "gatilho": "placar empate 2-2",
+   "alvo": {
+    "h": "19:00",
+    "jogo": "Brighton x West Ham",
+    "odd": 4.75,
+    "unidades": 1,
+    "desde": 1784656615861
+   },
+   "iniciadoEm": 1784656615861
+  },
   "cooldown": {
    "copa": 1784649492750,
    "premier": 1784648869657,
@@ -149,7 +179,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 10,
+   "n": 26,
    "start": 1
   }
  },
@@ -483,8 +513,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "18:52",
@@ -504,13 +534,21 @@
    ],
    "gatilho": "placar empate 1-1",
    "alvo": {
-    "h": "18:52",
-    "jogo": "Iraque x Brasil",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1784656243752
+    "h": "18:55",
+    "jogo": "Arábia Saudita x Países Baixos",
+    "odd": 1.93,
+    "unidades": 2,
+    "desde": 1784656574253
    },
-   "iniciadoEm": 1784656243752
+   "iniciadoEm": 1784656243752,
+   "tiros": [
+    {
+     "h": "18:52",
+     "jogo": "Iraque x Brasil",
+     "odd": 2.05,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784654032554,
