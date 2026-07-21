@@ -403,15 +403,15 @@ async function carregaBacktest(liga,mkt){
   if(c&&Date.now()-c.ts<60000){el.innerHTML=c.html;return;}
   el.innerHTML='<div class="sec">📋 Histórico de indicações (backtest)</div><div class="card note">calculando histórico…</div>';
   try{
-    const r=await fetch('/api/backtest/'+liga+'?mkt='+mkt+'&n=100',{cache:'no-store'});
+    const r=await fetch('/api/backtest/'+liga+'?mkt='+mkt+'&n=150',{cache:'no-store'});
     const b=await r.json();
     if(b.erro){el.innerHTML='';return;}
     const ind=b.indicados||{};
     const lst=(b.ultimos10indicados||[]).slice().reverse(); // mais recente primeiro
-    const linhas=lst.map(u=>`<div style="display:flex;justify-content:space-between;gap:8px;padding:6px 0;border-bottom:1px solid var(--line);font-size:12px;flex-wrap:wrap"><span>${u.resultado==='GREEN'?'🟢':'🔴'} ${u.horario?`<span style="color:var(--blue)">🕐 ${u.horario}</span> `:''}<b>${u.nome}</b> ${u.placar?`<span class="note">(${u.placar})</span>`:''}</span><span class="note">@${u.odd} · score ${u.score} · EV ${u.ev>0?'+':''}${u.ev}%</span></div>`).join('');
+    const linhas=lst.map(u=>`<div style="display:flex;justify-content:space-between;gap:8px;padding:6px ${u.alerta?'8px':'0'};border-bottom:1px solid var(--line);font-size:12px;flex-wrap:wrap;${u.alerta?'background:#2b2313;border:1px solid #e3b341;border-radius:8px;margin:4px 0;':''}"><span>${u.alerta?'⚠️ ':''}${u.resultado==='GREEN'?'🟢':'🔴'} ${u.horario?`<span style="color:var(--blue)">🕐 ${u.horario}</span> `:''}<b>${u.nome}</b> ${u.placar?`<span class="note">(${u.placar})</span>`:''}${u.alerta?' <b style="color:#e3b341;font-size:10px">maior EV+ que deu RED (EV alto não é garantia)</b>':''}</span><span class="note">@${u.odd} · score ${u.score} · EV ${u.ev>0?'+':''}${u.ev}%</span></div>`).join('');
     const html=`<div class="sec">📋 Histórico de indicações (backtest) — ${nomeMkt[mkt]}</div>
       <div class="card" style="margin-bottom:10px">
-        <div style="font-size:13px;margin-bottom:8px">Regra <b>score ≥30 + EV positivo</b>, reavaliada jogo a jogo com o histórico daquele momento (últimos ${b.jogosAvaliados} jogos): indicados <b>${ind.n||0}</b> · GREEN <b class="pos">${ind.green||0}</b> (<b>${ind.pct!=null?ind.pct+'%':'—'}</b>) · base da liga ${b.baseGeral}%</div>
+        <div style="font-size:13px;margin-bottom:8px">Regra <b>score ≥30 + EV positivo</b>, reavaliada jogo a jogo com o histórico daquele momento (últimos ${b.jogosAvaliados} jogos · lista = ÚLTIMAS 6H do relógio do jogo): indicados <b>${ind.n||0}</b> · GREEN <b class="pos">${ind.green||0}</b> (<b>${ind.pct!=null?ind.pct+'%':'—'}</b>) · base da liga ${b.baseGeral}%</div>
         ${linhas||'<div class="note">nenhuma indicação na janela avaliada</div>'}
         <div class="note" style="margin-top:8px;font-size:11px">⚠️ reconstrução retroativa com os mesmos critérios; amostras pequenas oscilam — use como acompanhamento, não como garantia.</div>
       </div>`;

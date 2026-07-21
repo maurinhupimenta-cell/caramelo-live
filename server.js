@@ -1631,7 +1631,17 @@ app.get("/api/backtest/:liga", (req, res) => {
       faixas: { forte_60mais: faixa(60, 999), media_30a59: faixa(30, 60), fraca_0a29: faixa(0, 30), negativa: faixa(-999, 0) },
       evPositivo: { n: evPos.length, green: evPos.filter(r => r.green).length, pct: evPos.length ? Math.round(evPos.filter(r => r.green).length / evPos.length * 100) : null },
       indicados: { n: indicados.length, green: indicados.filter(r => r.green).length, pct: indicados.length ? Math.round(indicados.filter(r => r.green).length / indicados.length * 100) : null },
-      ultimos10indicados: indicados.slice(-10).map(r => ({ nome: r.nome, horario: r.horario, odd: r.odd, score: r.score, ev: r.ev, placar: r.placar, resultado: r.green ? "GREEN" : "RED" }))
+      ultimos10indicados: (() => {
+        // JANELA DE 6 HORAS do relogio do jogo (pedido do usuario: os indicados sumiam com o corte de 10)
+        const hm = h => { const m = /^(\d{1,2}):(\d{1,2})/.exec(h || ""); return m ? (+m[1]) * 60 + (+m[2]) : null; };
+        const agoraJogo = (() => { for (let k = resultados.length - 1; k >= 0; k--) { const v = hm(resultados[k].horario); if (v != null) return v; } return null; })();
+        const dentro6h = r => { const v = hm(r.horario); if (v == null || agoraJogo == null) return true; const diff = (agoraJogo - v + 1440) % 1440; return diff <= 360; };
+        const janela = indicados.filter(dentro6h);
+        // ⚠️ TRIANGULO: o MAIOR EV+ que deu RED na janela (aviso: EV alto nao e garantia)
+        let idxAlerta = -1, maiorEv = -1;
+        janela.forEach((r, ix) => { if (!r.green && r.ev != null && r.ev > 0 && r.ev > maiorEv) { maiorEv = r.ev; idxAlerta = ix; } });
+        return janela.map((r, ix) => ({ nome: r.nome, horario: r.horario, odd: r.odd, score: r.score, ev: r.ev, placar: r.placar, resultado: r.green ? "GREEN" : "RED", alerta: ix === idxAlerta }));
+      })()
     };
     btCache[key] = { ts: Date.now(), lu: d.lastUpdated, out };
     res.json(out);
