@@ -287,7 +287,36 @@
    "super": 1784641209631,
    "copa": 1784641904542
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:00",
+     "jogo": "Newcastle x Wolverhampton",
+     "odd": 1.95
+    },
+    {
+     "h": "15:03",
+     "jogo": "Tottenham x Islington",
+     "odd": 2.4
+    },
+    {
+     "h": "15:06",
+     "jogo": "Leeds x West Ham",
+     "odd": 2.87
+    }
+   ],
+   "alvo": {
+    "h": "15:00",
+    "jogo": "Newcastle x Wolverhampton",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1784642197039
+   },
+   "iniciadoEm": 1784642197039
+  },
   "cooldown": {
    "copa": 1784641904542,
    "premier": 1784638067132,
@@ -304,9 +333,9 @@
    "2026-07-21": -5.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Suíça",
-   "n": 13,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 76,
    "start": 1
   }
  },
