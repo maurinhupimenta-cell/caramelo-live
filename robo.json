@@ -471,12 +471,40 @@
    }
   ],
   "consumidas": {
-   "super": 1784627169537,
    "premier": 1784627450436,
    "euro": 1784628108237,
    "copa": 1784628407635
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:55",
+     "jogo": "Bogota x Avellaneda",
+     "odd": 2.15
+    },
+    {
+     "h": "11:58",
+     "jogo": "Lima x Montevideo",
+     "odd": 1.83
+    },
+    {
+     "h": "12:01",
+     "jogo": "Bogota x Quito",
+     "odd": 2.15
+    }
+   ],
+   "alvo": {
+    "h": "11:55",
+    "jogo": "Bogota x Avellaneda",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1784630770636
+   },
+   "iniciadoEm": 1784630770636
+  },
   "cooldown": {
    "euro": 1784628108237,
    "super": 1784627169537,
@@ -492,10 +520,10 @@
    "2026-07-21": -2
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 26,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.83",
+   "n": 9,
+   "start": 3
   }
  }
 }
