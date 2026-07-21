@@ -285,7 +285,36 @@
   "consumidas": {
    "euro": 1784627928542
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:01",
+     "jogo": "México x Escócia",
+     "odd": 2.5
+    },
+    {
+     "h": "11:04",
+     "jogo": "EUA x Alemanha",
+     "odd": 2.15
+    },
+    {
+     "h": "11:07",
+     "jogo": "Canadá x Costa do Marfim",
+     "odd": 2.25
+    }
+   ],
+   "alvo": {
+    "h": "11:01",
+    "jogo": "México x Escócia",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1784627929845
+   },
+   "iniciadoEm": 1784627929845
+  },
   "cooldown": {
    "copa": 1784613484433,
    "premier": 1784610888238,
@@ -302,20 +331,26 @@
    "2026-07-21": -0.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.3",
-   "n": 11,
-   "start": 3
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 43,
+   "start": 1
   }
  },
  "ambas": {
-  "saldo": -11,
-  "ciclos": 181,
+  "saldo": -18,
+  "ciclos": 182,
   "greens": 131,
-  "redsCiclo": 21,
+  "redsCiclo": 22,
   "aborts": 0,
   "descartes": 29,
   "historico": [
+   {
+    "quando": "2026-07-21T10:01:48.341Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-21T09:50:50.634Z",
     "resultado": "GREEN",
@@ -429,64 +464,45 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · Países Baixos x Suíça @2.02 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-21T00:55:13.907Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
    "super": 1784627169537,
-   "premier": 1784627450436
+   "premier": 1784627450436,
+   "euro": 1784628108237
   },
   "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "10:53",
-     "jogo": "Albânia x Romênia",
-     "odd": 2.1
+     "h": "11:04",
+     "jogo": "EUA x Alemanha",
+     "odd": 1.9
     },
     {
-     "h": "10:56",
-     "jogo": "Turquia x Espanha",
-     "odd": 1.95
+     "h": "11:07",
+     "jogo": "Canadá x Costa do Marfim",
+     "odd": 1.98
     },
     {
-     "h": "10:59",
-     "jogo": "Países Baixos x Sérvia",
+     "h": "11:10",
+     "jogo": "Espanha x Nova Zelândia",
      "odd": 1.98
     }
    ],
    "alvo": {
-    "h": "10:59",
-    "jogo": "Países Baixos x Sérvia",
-    "odd": 1.98,
-    "unidades": 4,
-    "desde": 1784627928831
+    "h": "11:04",
+    "jogo": "EUA x Alemanha",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1784628109632
    },
-   "iniciadoEm": 1784627467531,
-   "tiros": [
-    {
-     "h": "10:53",
-     "jogo": "Albânia x Romênia",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "10:56",
-     "jogo": "Turquia x Espanha",
-     "odd": 1.95,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1784628109632
   },
   "cooldown": {
-   "euro": 1784610824637,
+   "euro": 1784628108237,
    "super": 1784627169537,
    "premier": 1784627450436,
    "copa": 1784613304835
@@ -497,12 +513,12 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": 4.1
+   "2026-07-21": -2.9
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 37,
+   "chave": "empate 1-1",
+   "n": 25,
    "start": 1
   }
  }
