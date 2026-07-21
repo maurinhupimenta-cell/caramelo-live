@@ -133,7 +133,37 @@
    "premier": 1784648869657,
    "copa": 1784649492750
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:05",
+     "jogo": "Bélgica x Turquia",
+     "odd": 4.75
+    },
+    {
+     "h": "17:08",
+     "jogo": "Croácia x Inglaterra",
+     "odd": 4
+    },
+    {
+     "h": "17:11",
+     "jogo": "Suíça x Ucrânia",
+     "odd": 4.33
+    }
+   ],
+   "gatilho": "placar empate 2-2",
+   "alvo": {
+    "h": "17:05",
+    "jogo": "Bélgica x Turquia",
+    "odd": 4.75,
+    "unidades": 1,
+    "desde": 1784649790757
+   },
+   "iniciadoEm": 1784649790757
+  },
   "cooldown": {
    "copa": 1784649492750,
    "premier": 1784648869657,
@@ -151,7 +181,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 9,
+   "n": 16,
    "start": 1
   }
  },
@@ -289,7 +319,37 @@
    "premier": 1784647794057,
    "super": 1784649732949
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:05",
+     "jogo": "Bélgica x Turquia",
+     "odd": 2.35
+    },
+    {
+     "h": "17:08",
+     "jogo": "Croácia x Inglaterra",
+     "odd": 2.07
+    },
+    {
+     "h": "17:11",
+     "jogo": "Suíça x Ucrânia",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "placar empate 2-2",
+   "alvo": {
+    "h": "17:05",
+    "jogo": "Bélgica x Turquia",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1784649790952
+   },
+   "iniciadoEm": 1784649790952
+  },
   "cooldown": {
    "copa": 1784646250752,
    "premier": 1784647794057,
@@ -307,8 +367,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 77,
+   "chave": "empate 2-2",
+   "n": 16,
    "start": 1
   }
  },
