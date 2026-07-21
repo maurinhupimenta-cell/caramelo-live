@@ -280,7 +280,36 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "01:53",
+     "jogo": "Turquia x Croácia",
+     "odd": 2.4
+    },
+    {
+     "h": "01:56",
+     "jogo": "Polônia x Suíça",
+     "odd": 2.3
+    },
+    {
+     "h": "01:59",
+     "jogo": "Ucrânia x Albânia",
+     "odd": 2.7
+    }
+   ],
+   "alvo": {
+    "h": "01:53",
+    "jogo": "Turquia x Croácia",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1784595073113
+   },
+   "iniciadoEm": 1784595073113
+  },
   "cooldown": {
    "copa": 1784588892418,
    "premier": 1784585916508,
@@ -297,7 +326,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GGGRG",
+   "chave": "RRRR",
    "n": 5,
    "start": 1
   }
