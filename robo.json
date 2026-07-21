@@ -327,12 +327,40 @@
    }
   ],
   "consumidas": {
-   "super": 1784629149644,
    "premier": 1784629423034,
    "euro": 1784632248443,
    "copa": 1784632547639
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:22",
+     "jogo": "La Plata x Porto Alegre",
+     "odd": 3
+    },
+    {
+     "h": "12:25",
+     "jogo": "Avellaneda x Penarol",
+     "odd": 2.5
+    },
+    {
+     "h": "12:28",
+     "jogo": "Quito x Guayaquil",
+     "odd": 2.2
+    }
+   ],
+   "alvo": {
+    "h": "12:22",
+    "jogo": "La Plata x Porto Alegre",
+    "odd": 3,
+    "unidades": 1,
+    "desde": 1784632750334
+   },
+   "iniciadoEm": 1784632750335
+  },
   "cooldown": {
    "copa": 1784632547639,
    "premier": 1784629423034,
@@ -349,9 +377,9 @@
    "2026-07-21": -10.2
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 55,
+   "tipo": "seq",
+   "chave": "GGGG",
+   "n": 7,
    "start": 1
   }
  },
@@ -490,8 +518,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "12:12",
@@ -510,11 +538,11 @@
     }
    ],
    "alvo": {
-    "h": "12:15",
-    "jogo": "West Ham x Newcastle",
-    "odd": 2.02,
-    "unidades": 2,
-    "desde": 1784632479938
+    "h": "12:18",
+    "jogo": "Norwich x Liverpool",
+    "odd": 1.93,
+    "unidades": 4,
+    "desde": 1784632662535
    },
    "iniciadoEm": 1784632250035,
    "tiros": [
@@ -523,6 +551,12 @@
      "jogo": "Watford x Chelsea",
      "odd": 1.98,
      "unidades": 1
+    },
+    {
+     "h": "12:15",
+     "jogo": "West Ham x Newcastle",
+     "odd": 2.02,
+     "unidades": 2
     }
    ]
   },
@@ -544,7 +578,7 @@
    "tipo": "time",
    "chave": "Tottenham",
    "n": 16,
-   "start": 3
+   "start": 2
   }
  }
 }
