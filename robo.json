@@ -343,13 +343,19 @@
   }
  },
  "ambas": {
-  "saldo": -18.8,
-  "ciclos": 196,
-  "greens": 143,
+  "saldo": -17.8,
+  "ciclos": 197,
+  "greens": 144,
   "redsCiclo": 24,
   "aborts": 0,
   "descartes": 29,
   "historico": [
+   {
+    "quando": "2026-07-21T14:32:54.055Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Áustria x Ucrânia @2.02 (tiro 1) · gatilho: seq RGGRG"
+   },
    {
     "quando": "2026-07-21T14:28:09.955Z",
     "resultado": "GREEN",
@@ -463,52 +469,17 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-21T05:37:05.738Z",
-    "resultado": "GREEN",
-    "unidades": 0.5,
-    "detalhe": "super · Quito x Sao Paulo @1.87 (tiro 3)"
    }
   ],
   "consumidas": {
    "premier": 1784641117235,
    "copa": 1784641904732,
-   "super": 1784644089754
+   "super": 1784644089754,
+   "euro": 1784644373854
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:29",
-     "jogo": "Áustria x Ucrânia",
-     "odd": 2.02
-    },
-    {
-     "h": "15:32",
-     "jogo": "Croácia x Romênia",
-     "odd": 1.9
-    },
-    {
-     "h": "15:35",
-     "jogo": "Países Baixos x Albânia",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "seq RGGRG",
-   "alvo": {
-    "h": "15:29",
-    "jogo": "Áustria x Ucrânia",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1784644128552
-   },
-   "iniciadoEm": 1784644128552
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784640528345,
+   "euro": 1784644373854,
    "super": 1784644089754,
    "premier": 1784641117235,
    "copa": 1784641904732
@@ -519,12 +490,12 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": -3.7
+   "2026-07-21": -2.7
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 44,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 48,
    "start": 1
   }
  }
