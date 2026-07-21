@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -56.7,
-  "ciclos": 138,
+  "saldo": -63.7,
+  "ciclos": 139,
   "greens": 51,
-  "redsCiclo": 54,
+  "redsCiclo": 55,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-21T04:19:04.231Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-21T04:08:42.731Z",
     "resultado": "RED_CICLO",
@@ -120,64 +126,16 @@
     "resultado": "GREEN",
     "unidades": 6,
     "detalhe": "premier · Leeds x Newcastle @4.5 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T12:24:55.616Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
    "super": 1784604669135,
-   "premier": 1784606922632
+   "premier": 1784606922632,
+   "copa": 1784607544035
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "05:10",
-     "jogo": "Suíça x Argélia",
-     "odd": 4.75
-    },
-    {
-     "h": "05:13",
-     "jogo": "Portugal x Jordânia",
-     "odd": 4.2
-    },
-    {
-     "h": "05:16",
-     "jogo": "Argentina x Senegal",
-     "odd": 4.75
-    }
-   ],
-   "alvo": {
-    "h": "05:16",
-    "jogo": "Argentina x Senegal",
-    "odd": 4.75,
-    "unidades": 4,
-    "desde": 1784607343843
-   },
-   "iniciadoEm": 1784606924340,
-   "tiros": [
-    {
-     "h": "05:10",
-     "jogo": "Suíça x Argélia",
-     "odd": 4.75,
-     "unidades": 1
-    },
-    {
-     "h": "05:13",
-     "jogo": "Portugal x Jordânia",
-     "odd": 4.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784585350910,
+   "copa": 1784607544035,
    "premier": 1784606922632,
    "euro": 1784581151719,
    "super": 1784604669135
@@ -188,7 +146,7 @@
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
    "2026-07-20": 19.6,
-   "2026-07-21": 1
+   "2026-07-21": -6
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
