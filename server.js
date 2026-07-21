@@ -2036,7 +2036,7 @@ app.get("/api/robo", (req, res) => {
           if (rel >= 110) { melhor.consumida = { liga, rel }; break; }
         }
       }
-      if (req.query.debug) { melhor.dbgCiclo = L.ciclo; melhor.dbgHistorico = L.historico.slice(0, 6); }
+      if (req.query.debug) { melhor.dbgCiclo = L.ciclo; melhor.dbgHistorico = L.historico.slice(0, 6); melhor.dbgDias = L.dias || {}; melhor.dbgDiaHoje = diaHoje(); }
       out[mkt] = melhor;
       } catch (eMkt) { out[mkt] = { erro: eMkt.message }; } // um robo quebrado nao derruba os outros
     }
