@@ -282,7 +282,36 @@
   "consumidas": {
    "euro": 1784595725211
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:07",
+     "jogo": "Haiti x Países Baixos",
+     "odd": 2.2
+    },
+    {
+     "h": "02:10",
+     "jogo": "RD Congo x Bélgica",
+     "odd": 2.2
+    },
+    {
+     "h": "02:13",
+     "jogo": "Inglaterra x República Tcheca",
+     "odd": 2.35
+    }
+   ],
+   "alvo": {
+    "h": "02:07",
+    "jogo": "Haiti x Países Baixos",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1784595866009
+   },
+   "iniciadoEm": 1784595866009
+  },
   "cooldown": {
    "copa": 1784588892418,
    "premier": 1784585916508,
@@ -299,8 +328,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 6,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 8,
    "start": 1
   }
  },
