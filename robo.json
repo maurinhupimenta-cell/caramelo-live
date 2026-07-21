@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -63.7,
-  "ciclos": 139,
+  "saldo": -70.7,
+  "ciclos": 140,
   "greens": 51,
-  "redsCiclo": 55,
+  "redsCiclo": 56,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-21T05:16:06.833Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-21T04:19:04.231Z",
     "resultado": "RED_CICLO",
@@ -120,66 +126,18 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-20T13:29:39.913Z",
-    "resultado": "GREEN",
-    "unidades": 6,
-    "detalhe": "premier · Leeds x Newcastle @4.5 (tiro 2)"
    }
   ],
   "consumidas": {
-   "copa": 1784607544035
+   "copa": 1784607544035,
+   "super": 1784610966639
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "06:07",
-     "jogo": "Santos x Itaquera",
-     "odd": 5
-    },
-    {
-     "h": "06:10",
-     "jogo": "Bogota x Medellin",
-     "odd": 5.5
-    },
-    {
-     "h": "06:13",
-     "jogo": "Rio de Janeiro x La Plata",
-     "odd": 5.25
-    }
-   ],
-   "alvo": {
-    "h": "06:13",
-    "jogo": "Rio de Janeiro x La Plata",
-    "odd": 5.25,
-    "unidades": 4,
-    "desde": 1784610786939
-   },
-   "iniciadoEm": 1784610246942,
-   "tiros": [
-    {
-     "h": "06:07",
-     "jogo": "Santos x Itaquera",
-     "odd": 5,
-     "unidades": 1
-    },
-    {
-     "h": "06:10",
-     "jogo": "Bogota x Medellin",
-     "odd": 5.5,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784607544035,
    "premier": 1784606922632,
    "euro": 1784581151719,
-   "super": 1784604669135
+   "super": 1784610966639
   },
   "dias": {
    "2026-07-15": -35,
@@ -187,7 +145,7 @@
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
    "2026-07-20": 19.6,
-   "2026-07-21": -6
+   "2026-07-21": -13
   },
   "_gatilhoAtual": {
    "tipo": "placar",
