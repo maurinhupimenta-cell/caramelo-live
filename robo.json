@@ -154,13 +154,19 @@
   }
  },
  "o25": {
-  "saldo": -17.8,
-  "ciclos": 188,
-  "greens": 132,
+  "saldo": -16.1,
+  "ciclos": 189,
+  "greens": 133,
   "redsCiclo": 32,
   "aborts": 0,
   "descartes": 24,
   "historico": [
+   {
+    "quando": "2026-07-21T13:34:48.236Z",
+    "resultado": "GREEN",
+    "unidades": 1.7,
+    "detalhe": "euro · Alemanha x Polônia @2.35 (tiro 2)"
+   },
    {
     "quando": "2026-07-21T12:47:47.334Z",
     "resultado": "GREEN",
@@ -274,60 +280,18 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "euro · Sérvia x Suíça @2.35 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-21T04:11:43.336Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
    "copa": 1784637410141,
-   "premier": 1784638067132
+   "premier": 1784638067132,
+   "euro": 1784640888041
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "14:29",
-     "jogo": "Países Baixos x Portugal",
-     "odd": 2.07
-    },
-    {
-     "h": "14:32",
-     "jogo": "Alemanha x Polônia",
-     "odd": 2.35
-    },
-    {
-     "h": "14:35",
-     "jogo": "Bélgica x República Tcheca",
-     "odd": 2.45
-    }
-   ],
-   "alvo": {
-    "h": "14:32",
-    "jogo": "Alemanha x Polônia",
-    "odd": 2.35,
-    "unidades": 2,
-    "desde": 1784640728336
-   },
-   "iniciadoEm": 1784640369235,
-   "tiros": [
-    {
-     "h": "14:29",
-     "jogo": "Países Baixos x Portugal",
-     "odd": 2.07,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784637410141,
    "premier": 1784638067132,
-   "euro": 1784636748337,
+   "euro": 1784640888041,
    "super": 1784637109846
   },
   "dias": {
@@ -337,12 +301,12 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": -1.5
+   "2026-07-21": 0.2
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "goleada (3+)",
-   "n": 63,
+   "n": 64,
    "start": 1
   }
  },
@@ -480,7 +444,36 @@
    "super": 1784640288838,
    "euro": 1784640528345
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:36",
+     "jogo": "Islington x Watford",
+     "odd": 2.05
+    },
+    {
+     "h": "14:39",
+     "jogo": "Everton x Aston",
+     "odd": 1.98
+    },
+    {
+     "h": "14:42",
+     "jogo": "Palace x Brentford",
+     "odd": 1.98
+    }
+   ],
+   "alvo": {
+    "h": "14:36",
+    "jogo": "Islington x Watford",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1784640771536
+   },
+   "iniciadoEm": 1784640771536
+  },
   "cooldown": {
    "euro": 1784640528345,
    "super": 1784640288838,
@@ -496,9 +489,9 @@
    "2026-07-21": -6.8
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 40,
+   "tipo": "seq",
+   "chave": "RRGGG",
+   "n": 9,
    "start": 1
   }
  }
