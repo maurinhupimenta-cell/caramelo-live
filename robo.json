@@ -156,13 +156,19 @@
   }
  },
  "o25": {
-  "saldo": -34.4,
-  "ciclos": 194,
-  "greens": 135,
+  "saldo": -33.2,
+  "ciclos": 195,
+  "greens": 136,
   "redsCiclo": 35,
   "aborts": 0,
   "descartes": 24,
   "historico": [
+   {
+    "quando": "2026-07-21T15:04:10.855Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · RD Congo x Costa do Marfim @2.05 (tiro 3) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-07-21T14:53:12.549Z",
     "resultado": "RED_CICLO",
@@ -276,66 +282,17 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-21T05:58:04.633Z",
-    "resultado": "GREEN",
-    "unidades": 2.5,
-    "detalhe": "copa · Tunísia x Iraque @2.75 (tiro 2)"
    }
   ],
   "consumidas": {
    "premier": 1784642919931,
    "euro": 1784644671155,
-   "super": 1784645592353
+   "super": 1784645592353,
+   "copa": 1784646250752
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "15:55",
-     "jogo": "RD Congo x EUA",
-     "odd": 2.1
-    },
-    {
-     "h": "15:58",
-     "jogo": "Jordânia x Gana",
-     "odd": 2.3
-    },
-    {
-     "h": "16:01",
-     "jogo": "RD Congo x Costa do Marfim",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-1)",
-   "alvo": {
-    "h": "16:01",
-    "jogo": "RD Congo x Costa do Marfim",
-    "odd": 2.05,
-    "unidades": 4,
-    "desde": 1784646069650
-   },
-   "iniciadoEm": 1784645593359,
-   "tiros": [
-    {
-     "h": "15:55",
-     "jogo": "RD Congo x EUA",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "15:58",
-     "jogo": "Jordânia x Gana",
-     "odd": 2.3,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784641904542,
+   "copa": 1784646250752,
    "premier": 1784642919931,
    "euro": 1784644671155,
    "super": 1784645592353
@@ -347,23 +304,29 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": -18.1
+   "2026-07-21": -16.9
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 55,
+   "chave": "goleada (3+)",
+   "n": 71,
    "start": 1
   }
  },
  "ambas": {
-  "saldo": -16.5,
-  "ciclos": 198,
-  "greens": 145,
+  "saldo": -16.2,
+  "ciclos": 199,
+  "greens": 146,
   "redsCiclo": 24,
   "aborts": 0,
   "descartes": 29,
   "historico": [
+   {
+    "quando": "2026-07-21T15:04:11.256Z",
+    "resultado": "GREEN",
+    "unidades": 0.3,
+    "detalhe": "copa · RD Congo x Costa do Marfim @1.83 (tiro 3) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-07-21T14:50:48.651Z",
     "resultado": "GREEN",
@@ -477,69 +440,20 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "super · Avellaneda x Sao Paulo @1.87 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-21T09:40:49.335Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
    "super": 1784644089754,
    "euro": 1784644373854,
-   "premier": 1784645448456
+   "premier": 1784645448456,
+   "copa": 1784646250950
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "15:55",
-     "jogo": "RD Congo x EUA",
-     "odd": 1.9
-    },
-    {
-     "h": "15:58",
-     "jogo": "Jordânia x Gana",
-     "odd": 2
-    },
-    {
-     "h": "16:01",
-     "jogo": "RD Congo x Costa do Marfim",
-     "odd": 1.83
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-1)",
-   "alvo": {
-    "h": "16:01",
-    "jogo": "RD Congo x Costa do Marfim",
-    "odd": 1.83,
-    "unidades": 4,
-    "desde": 1784646069850
-   },
-   "iniciadoEm": 1784645508860,
-   "tiros": [
-    {
-     "h": "15:55",
-     "jogo": "RD Congo x EUA",
-     "odd": 1.9,
-     "unidades": 1
-    },
-    {
-     "h": "15:58",
-     "jogo": "Jordânia x Gana",
-     "odd": 2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784644373854,
    "super": 1784644089754,
    "premier": 1784645448456,
-   "copa": 1784641904732
+   "copa": 1784646250950
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -547,13 +461,13 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": -1.4
+   "2026-07-21": -1.1
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "1.87",
    "n": 14,
-   "start": 2
+   "start": 1
   }
  }
 }
