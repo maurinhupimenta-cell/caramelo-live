@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -50.7,
-  "ciclos": 135,
+  "saldo": -57.7,
+  "ciclos": 136,
   "greens": 50,
-  "redsCiclo": 52,
+  "redsCiclo": 53,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-21T01:50:40.915Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-20T22:23:44.211Z",
     "resultado": "GREEN",
@@ -120,62 +126,15 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-20T10:22:14.812Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "02:42",
-     "jogo": "Brentford x Newcastle",
-     "odd": 4
-    },
-    {
-     "h": "02:45",
-     "jogo": "Leicester x Brighton",
-     "odd": 4
-    },
-    {
-     "h": "02:48",
-     "jogo": "Liverpool x Southampton",
-     "odd": 4.75
-    }
-   ],
-   "alvo": {
-    "h": "02:48",
-    "jogo": "Liverpool x Southampton",
-    "odd": 4.75,
-    "unidades": 4,
-    "desde": 1784598473207
-   },
-   "iniciadoEm": 1784597930312,
-   "tiros": [
-    {
-     "h": "02:42",
-     "jogo": "Brentford x Newcastle",
-     "odd": 4,
-     "unidades": 1
-    },
-    {
-     "h": "02:45",
-     "jogo": "Leicester x Brighton",
-     "odd": 4,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1784598640812
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784585350910,
-   "premier": 1784586224108,
+   "premier": 1784598640812,
    "euro": 1784581151719,
    "super": 1784584687318
   },
@@ -184,12 +143,12 @@
    "2026-07-16": -10.6,
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
-   "2026-07-20": 26.6
+   "2026-07-20": 19.6
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "0-0",
-   "n": 6,
+   "tipo": "seq",
+   "chave": "RGRRR",
+   "n": 5,
    "start": 1
   }
  },
@@ -329,8 +288,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "02:42",
@@ -349,11 +308,11 @@
     }
    ],
    "alvo": {
-    "h": "02:45",
-    "jogo": "Leicester x Brighton",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1784598281606
+    "h": "02:48",
+    "jogo": "Liverpool x Southampton",
+    "odd": 2.35,
+    "unidades": 4,
+    "desde": 1784598473315
    },
    "iniciadoEm": 1784597930507,
    "tiros": [
@@ -362,6 +321,12 @@
      "jogo": "Brentford x Newcastle",
      "odd": 2.1,
      "unidades": 1
+    },
+    {
+     "h": "02:45",
+     "jogo": "Leicester x Brighton",
+     "odd": 2.15,
+     "unidades": 2
     }
    ]
   },
