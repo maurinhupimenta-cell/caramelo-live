@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -104.2,
-  "ciclos": 154,
-  "greens": 56,
+  "saldo": -100.9,
+  "ciclos": 155,
+  "greens": 57,
   "redsCiclo": 64,
   "aborts": 0,
   "descartes": 34,
   "historico": [
+   {
+    "quando": "2026-07-21T15:47:49.854Z",
+    "resultado": "GREEN",
+    "unidades": 3.3,
+    "detalhe": "premier · Watford x United @4.33 (tiro 1) · gatilho: placar empate 2-2"
+   },
    {
     "quando": "2026-07-21T15:16:13.153Z",
     "resultado": "GREEN",
@@ -120,21 +126,16 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-20T22:23:44.211Z",
-    "resultado": "GREEN",
-    "unidades": 4,
-    "detalhe": "premier · Leeds x Chelsea @5 (tiro 1)"
    }
   ],
   "consumidas": {
-   "super": 1784646972959
+   "super": 1784646972959,
+   "premier": 1784648869657
   },
   "ciclo": null,
   "cooldown": {
    "copa": 1784643372759,
-   "premier": 1784644901458,
+   "premier": 1784648869657,
    "euro": 1784644169356,
    "super": 1784646972959
   },
@@ -144,12 +145,12 @@
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
    "2026-07-20": 19.6,
-   "2026-07-21": -46.5
+   "2026-07-21": -43.2
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 19,
+   "n": 9,
    "start": 1
   }
  },
