@@ -285,7 +285,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1784656931549,
    "copa": 1784658070352,
    "super": 1784660293658
   },
@@ -472,12 +471,41 @@
    }
   ],
   "consumidas": {
-   "copa": 1784656932655,
    "super": 1784657531256,
    "euro": 1784658148555,
    "premier": 1784660209560
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:10",
+     "jogo": "Austrália x Noruega",
+     "odd": 1.87
+    },
+    {
+     "h": "20:13",
+     "jogo": "Áustria x Alemanha",
+     "odd": 1.87
+    },
+    {
+     "h": "20:16",
+     "jogo": "França x Costa do Marfim",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "time Áustria",
+   "alvo": {
+    "h": "20:10",
+    "jogo": "Austrália x Noruega",
+    "odd": 1.87,
+    "unidades": 1,
+    "desde": 1784660533056
+   },
+   "iniciadoEm": 1784660533056
+  },
   "cooldown": {
    "euro": 1784658148555,
    "super": 1784657531256,
@@ -493,10 +521,10 @@
    "2026-07-21": 1.9
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 49,
-   "start": 1
+   "tipo": "time",
+   "chave": "Áustria",
+   "n": 13,
+   "start": 3
   }
  }
 }
