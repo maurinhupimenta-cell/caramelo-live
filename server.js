@@ -1874,6 +1874,28 @@ function montaRobo(mkt) {
       roboTrace[tk].gatilho = gatilho ? (gatilho.tipo + " " + gatilho.chave + " (" + gatilho.n + "x)") : null;
     } catch (e) { roboTrace[mkt + "|" + liga] = { erro: e.message }; }
     if (!gatilho) continue;
+    // ===== PORTAO DE MOMENTUM (estudo 224 casos: apos GREEN 48% x apos RED 33%) =====
+    // o quente continua quente: so atira se o ultimo ciclo FECHADO desta liga neste mercado foi GREEN.
+    // Liga fria fica em observacao: gatilhos dela rodam NO PAPEL (0u) e um green observado rearma.
+    const ultimoDaLiga = (L.historico || []).find(h => (h.detalhe || "").startsWith(liga + " ") || (h.detalhe || "").startsWith(liga + " ·"));
+    const ligaFria = ultimoDaLiga && ultimoDaLiga.resultado !== "GREEN" && ultimoDaLiga.resultado !== "GREEN_OBS";
+    if (ligaFria) {
+      // observacao de graca: o trio do gatilho teria pago? conferimos nos jogos ja fechados depois
+      L._obs = L._obs || {};
+      const obsKey = liga;
+      if (!L._obs[obsKey] || Date.now() - L._obs[obsKey].desde > 40 * 60000) {
+        L._obs[obsKey] = { desde: Date.now(), gatilho: gatilho.tipo + " " + gatilho.chave };
+      }
+      // confere se desde o inicio da observacao saiu um green no mercado (basta 1 nos fechados recentes)
+      const gaObs = listaCheia(d).slice(-3);
+      if (gaObs.some(g => pays(g, mkt))) {
+        registraCiclo(mkt, "GREEN_OBS", 0, `${liga} · green OBSERVADO no papel (gatilho ${L._obs[obsKey].gatilho}) — liga REARMADA`);
+        delete L._obs[obsKey];
+      }
+      roboTrace[mkt + "|" + liga].momentum = "FRIA (ultimo ciclo red) — observando no papel";
+      continue;
+    }
+    roboTrace[mkt + "|" + liga].momentum = ultimoDaLiga ? "QUENTE (ultimo green)" : "NOVA (liberada)";
     const noBolsao = true; L._gatilhoAtual = gatilho;
     const evs = (d.upcoming && d.upcoming[mkt]) || [];
     const degraus = [], pulados = [];
