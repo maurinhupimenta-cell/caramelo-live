@@ -154,13 +154,19 @@
   }
  },
  "o25": {
-  "saldo": -16.3,
-  "ciclos": 165,
-  "greens": 114,
+  "saldo": -15.2,
+  "ciclos": 166,
+  "greens": 115,
   "redsCiclo": 28,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-21T03:35:13.934Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Portugal x Inglaterra @2.07 (tiro 2)"
+   },
    {
     "quando": "2026-07-21T02:57:01.915Z",
     "resultado": "GREEN",
@@ -274,61 +280,18 @@
     "resultado": "GREEN",
     "unidades": 2.2,
     "detalhe": "euro · Turquia x Geórgia @2.6 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T19:54:17.911Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "premier · Everton x Watford @2.2 (tiro 2)"
    }
   ],
   "consumidas": {
-   "copa": 1784601252310,
    "super": 1784601609514,
-   "premier": 1784602621814
+   "premier": 1784602621814,
+   "euro": 1784604913737
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "04:29",
-     "jogo": "Eslovênia x Eslováquia",
-     "odd": 2.62
-    },
-    {
-     "h": "04:32",
-     "jogo": "Portugal x Inglaterra",
-     "odd": 2.07
-    },
-    {
-     "h": "04:35",
-     "jogo": "Geórgia x França",
-     "odd": 2.2
-    }
-   ],
-   "alvo": {
-    "h": "04:32",
-    "jogo": "Portugal x Inglaterra",
-    "odd": 2.07,
-    "unidades": 2,
-    "desde": 1784604730733
-   },
-   "iniciadoEm": 1784604167236,
-   "tiros": [
-    {
-     "h": "04:29",
-     "jogo": "Eslovênia x Eslováquia",
-     "odd": 2.62,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784601252310,
    "premier": 1784602621814,
-   "euro": 1784600535412,
+   "euro": 1784604913737,
    "super": 1784601609514
   },
   "dias": {
@@ -337,13 +300,14 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 36.6
+   "2026-07-20": 36.6,
+   "2026-07-21": 1.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Polônia",
-   "n": 9,
-   "start": 2
+   "tipo": "odd",
+   "chave": "2.15",
+   "n": 6,
+   "start": 1
   }
  },
  "ambas": {
