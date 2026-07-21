@@ -286,7 +286,36 @@
    "premier": 1784598640916,
    "euro": 1784600535412
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:28",
+     "jogo": "Equador x Inglaterra",
+     "odd": 2.15
+    },
+    {
+     "h": "03:31",
+     "jogo": "Marrocos x Bósnia e Herzegovina",
+     "odd": 2.2
+    },
+    {
+     "h": "03:34",
+     "jogo": "Paraguai x RD Congo",
+     "odd": 2.25
+    }
+   ],
+   "alvo": {
+    "h": "03:28",
+    "jogo": "Equador x Inglaterra",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1784600592913
+   },
+   "iniciadoEm": 1784600592913
+  },
   "cooldown": {
    "copa": 1784596205715,
    "premier": 1784598640916,
@@ -302,10 +331,10 @@
    "2026-07-20": 32.6
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 12,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.2",
+   "n": 9,
+   "start": 2
   }
  },
  "ambas": {
