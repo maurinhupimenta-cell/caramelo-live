@@ -308,13 +308,19 @@
   }
  },
  "ambas": {
-  "saldo": -8.1,
-  "ciclos": 167,
+  "saldo": -15.1,
+  "ciclos": 168,
   "greens": 120,
-  "redsCiclo": 19,
+  "redsCiclo": 20,
   "aborts": 0,
   "descartes": 28,
   "historico": [
+   {
+    "quando": "2026-07-21T02:57:13.011Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-21T02:14:12.013Z",
     "resultado": "GREEN",
@@ -428,64 +434,16 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "euro · Áustria x Romênia @1.93 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T18:49:11.708Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "copa · Marrocos x Paraguai @2.07 (tiro 1)"
    }
   ],
   "consumidas": {
    "super": 1784599626709,
-   "copa": 1784600051912
+   "copa": 1784600051912,
+   "euro": 1784602632818
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "03:47",
-     "jogo": "Bélgica x Escócia",
-     "odd": 1.9
-    },
-    {
-     "h": "03:50",
-     "jogo": "República Tcheca x Eslovênia",
-     "odd": 2.4
-    },
-    {
-     "h": "03:53",
-     "jogo": "Itália x França",
-     "odd": 1.87
-    }
-   ],
-   "alvo": {
-    "h": "03:53",
-    "jogo": "Itália x França",
-    "odd": 1.87,
-    "unidades": 4,
-    "desde": 1784602453308
-   },
-   "iniciadoEm": 1784602032409,
-   "tiros": [
-    {
-     "h": "03:47",
-     "jogo": "Bélgica x Escócia",
-     "odd": 1.9,
-     "unidades": 1
-    },
-    {
-     "h": "03:50",
-     "jogo": "República Tcheca x Eslovênia",
-     "odd": 2.4,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784598431515,
+   "euro": 1784602632818,
    "super": 1784599626709,
    "premier": 1784598281714,
    "copa": 1784600051912
@@ -495,13 +453,13 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": 10.5
+   "2026-07-20": 3.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Polônia",
    "n": 7,
-   "start": 2
+   "start": 1
   }
  }
 }
