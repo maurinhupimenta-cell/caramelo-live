@@ -308,13 +308,19 @@
   }
  },
  "ambas": {
-  "saldo": -15.1,
-  "ciclos": 168,
-  "greens": 120,
+  "saldo": -13.8,
+  "ciclos": 169,
+  "greens": 121,
   "redsCiclo": 20,
   "aborts": 0,
   "descartes": 28,
   "historico": [
+   {
+    "quando": "2026-07-21T03:16:12.532Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "super · La Plata x Penarol @2.3 (tiro 1)"
+   },
    {
     "quando": "2026-07-21T02:57:13.011Z",
     "resultado": "RED_CICLO",
@@ -428,50 +434,16 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "super · La Boca x Itaquera @2.07 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-20T19:21:12.516Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "euro · Áustria x Romênia @1.93 (tiro 1)"
    }
   ],
   "consumidas": {
-   "euro": 1784602632818
+   "euro": 1784602632818,
+   "super": 1784603772332
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:13",
-     "jogo": "La Plata x Penarol",
-     "odd": 2.3
-    },
-    {
-     "h": "04:16",
-     "jogo": "Medellin x Santiago",
-     "odd": 1.93
-    },
-    {
-     "h": "04:19",
-     "jogo": "Buenos Aires x Rio de Janeiro",
-     "odd": 1.85
-    }
-   ],
-   "alvo": {
-    "h": "04:13",
-    "jogo": "La Plata x Penarol",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1784603412432
-   },
-   "iniciadoEm": 1784603412432
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784602632818,
-   "super": 1784599626709,
+   "super": 1784603772332,
    "premier": 1784598281714,
    "copa": 1784600051912
   },
@@ -480,13 +452,14 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": 3.5
+   "2026-07-20": 3.5,
+   "2026-07-21": 1.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "La Boca",
-   "n": 11,
-   "start": 3
+   "tipo": "seq",
+   "chave": "RRRG",
+   "n": 5,
+   "start": 1
   }
  }
 }
