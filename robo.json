@@ -284,10 +284,38 @@
    }
   ],
   "consumidas": {
-   "premier": 1784633380231,
    "euro": 1784636748337
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:28",
+     "jogo": "Montevideo x Agua Branca",
+     "odd": 2.05
+    },
+    {
+     "h": "13:31",
+     "jogo": "Santiago x Guayaquil",
+     "odd": 2
+    },
+    {
+     "h": "13:34",
+     "jogo": "Buenos Aires x Avellaneda",
+     "odd": 2.15
+    }
+   ],
+   "alvo": {
+    "h": "13:28",
+    "jogo": "Montevideo x Agua Branca",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1784636749740
+   },
+   "iniciadoEm": 1784636749740
+  },
   "cooldown": {
    "copa": 1784632547639,
    "premier": 1784633380231,
@@ -304,20 +332,26 @@
    "2026-07-21": -4.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRGR",
-   "n": 15,
+   "tipo": "odd",
+   "chave": "2",
+   "n": 9,
    "start": 1
   }
  },
  "ambas": {
-  "saldo": -27.4,
-  "ciclos": 188,
-  "greens": 135,
+  "saldo": -26.6,
+  "ciclos": 189,
+  "greens": 136,
   "redsCiclo": 24,
   "aborts": 0,
   "descartes": 29,
   "historico": [
+   {
+    "quando": "2026-07-21T12:25:48.731Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "euro · Ucrânia x Croácia @1.95 (tiro 3)"
+   },
    {
     "quando": "2026-07-21T12:16:09.435Z",
     "resultado": "RED_CICLO",
@@ -431,64 +465,45 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "copa · Canadá x Senegal @2.15 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-21T03:16:12.532Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "super · La Plata x Penarol @2.3 (tiro 1)"
    }
   ],
   "consumidas": {
    "copa": 1784633808532,
-   "super": 1784636169241
+   "super": 1784636169241,
+   "euro": 1784636748539
   },
   "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "13:17",
-     "jogo": "Bélgica x Suíça",
-     "odd": 1.86
+     "h": "13:30",
+     "jogo": "Liverpool x Chelsea",
+     "odd": 1.93
     },
     {
-     "h": "13:20",
-     "jogo": "Alemanha x Eslováquia",
-     "odd": 2.02
+     "h": "13:33",
+     "jogo": "United x Brentford",
+     "odd": 2.07
     },
     {
-     "h": "13:23",
-     "jogo": "Ucrânia x Croácia",
-     "odd": 1.95
+     "h": "13:36",
+     "jogo": "Everton x Wolverhampton",
+     "odd": 1.8
     }
    ],
    "alvo": {
-    "h": "13:23",
-    "jogo": "Ucrânia x Croácia",
-    "odd": 1.95,
-    "unidades": 4,
-    "desde": 1784636568935
+    "h": "13:30",
+    "jogo": "Liverpool x Chelsea",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1784636749933
    },
-   "iniciadoEm": 1784636171037,
-   "tiros": [
-    {
-     "h": "13:17",
-     "jogo": "Bélgica x Suíça",
-     "odd": 1.86,
-     "unidades": 1
-    },
-    {
-     "h": "13:20",
-     "jogo": "Alemanha x Eslováquia",
-     "odd": 2.02,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1784636749933
   },
   "cooldown": {
-   "euro": 1784632248731,
+   "euro": 1784636748539,
    "super": 1784636169241,
    "premier": 1784632837331,
    "copa": 1784633808532
@@ -499,13 +514,13 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": -12.3
+   "2026-07-21": -11.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.07",
-   "n": 9,
-   "start": 2
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 32,
+   "start": 1
   }
  }
 }
