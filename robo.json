@@ -132,7 +132,37 @@
    "premier": 1784640216535,
    "copa": 1784643372759
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:20",
+     "jogo": "Eslovênia x República Tcheca",
+     "odd": 7
+    },
+    {
+     "h": "15:23",
+     "jogo": "Albânia x Suíça",
+     "odd": 5
+    },
+    {
+     "h": "15:26",
+     "jogo": "Hungria x França",
+     "odd": 4.2
+    }
+   ],
+   "gatilho": "placar empate 2-2",
+   "alvo": {
+    "h": "15:20",
+    "jogo": "Eslovênia x República Tcheca",
+    "odd": 7,
+    "unidades": 1,
+    "desde": 1784643433761
+   },
+   "iniciadoEm": 1784643433761
+  },
   "cooldown": {
    "copa": 1784643372759,
    "premier": 1784640216535,
@@ -150,7 +180,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 18,
+   "n": 13,
    "start": 1
   }
  },
