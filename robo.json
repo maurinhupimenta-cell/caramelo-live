@@ -197,13 +197,19 @@
   }
  },
  "o25": {
-  "saldo": -14.6,
-  "ciclos": 172,
-  "greens": 120,
+  "saldo": -13.6,
+  "ciclos": 173,
+  "greens": 121,
   "redsCiclo": 29,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-21T05:14:48.435Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Everton x Newcastle @2.02 (tiro 1)"
+   },
    {
     "quando": "2026-07-21T05:04:07.336Z",
     "resultado": "GREEN",
@@ -317,52 +323,18 @@
     "resultado": "GREEN",
     "unidades": 2,
     "detalhe": "premier · Palace x Leicester @2.25 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-20T22:02:13.510Z",
-    "resultado": "GREEN",
-    "unidades": 1.7,
-    "detalhe": "copa · Uruguai x Gana @2.35 (tiro 2)"
    }
   ],
   "consumidas": {
    "euro": 1784608864439,
    "copa": 1784609344039,
-   "super": 1784610247137
+   "super": 1784610247137,
+   "premier": 1784610888238
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:12",
-     "jogo": "Everton x Newcastle",
-     "odd": 2.02
-    },
-    {
-     "h": "06:15",
-     "jogo": "Aston x Islington",
-     "odd": 2.3
-    },
-    {
-     "h": "06:18",
-     "jogo": "Norwich x Southampton",
-     "odd": 2.3
-    }
-   ],
-   "alvo": {
-    "h": "06:12",
-    "jogo": "Everton x Newcastle",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1784610703744
-   },
-   "iniciadoEm": 1784610703744
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784609344039,
-   "premier": 1784607103143,
+   "premier": 1784610888238,
    "euro": 1784608864439,
    "super": 1784610247137
   },
@@ -373,12 +345,12 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": 1.7
+   "2026-07-21": 2.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":15",
-   "n": 6,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 16,
    "start": 1
   }
  },
