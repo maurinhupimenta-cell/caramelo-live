@@ -479,12 +479,41 @@
    }
   ],
   "consumidas": {
-   "super": 1784640288838,
    "euro": 1784640528345,
    "premier": 1784641117235,
    "copa": 1784641904732
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:25",
+     "jogo": "Avellaneda x Guayaquil",
+     "odd": 1.93
+    },
+    {
+     "h": "15:28",
+     "jogo": "Medellin x La Boca",
+     "odd": 2.1
+    },
+    {
+     "h": "15:31",
+     "jogo": "Montevideo x Itaquera",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "coluna :25",
+   "alvo": {
+    "h": "15:25",
+    "jogo": "Avellaneda x Guayaquil",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1784643911655
+   },
+   "iniciadoEm": 1784643911655
+  },
   "cooldown": {
    "euro": 1784640528345,
    "super": 1784640288838,
@@ -500,9 +529,9 @@
    "2026-07-21": -4.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRRG",
-   "n": 8,
+   "tipo": "coluna",
+   "chave": ":25",
+   "n": 15,
    "start": 1
   }
  }
