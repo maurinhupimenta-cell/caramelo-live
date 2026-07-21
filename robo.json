@@ -155,13 +155,19 @@
   }
  },
  "o25": {
-  "saldo": -18.7,
-  "ciclos": 187,
-  "greens": 131,
+  "saldo": -17.8,
+  "ciclos": 188,
+  "greens": 132,
   "redsCiclo": 32,
   "aborts": 0,
   "descartes": 24,
   "historico": [
+   {
+    "quando": "2026-07-21T12:47:47.334Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Wolverhampton x City @1.98 (tiro 3)"
+   },
    {
     "quando": "2026-07-21T12:36:50.337Z",
     "resultado": "GREEN",
@@ -275,66 +281,18 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-21T03:49:14.241Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "super · Montevideo x Santiago @2 (tiro 1)"
    }
   ],
   "consumidas": {
    "euro": 1784636748337,
    "super": 1784637109846,
-   "copa": 1784637410141
+   "copa": 1784637410141,
+   "premier": 1784638067132
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "13:39",
-     "jogo": "West Ham x Aston",
-     "odd": 2.62
-    },
-    {
-     "h": "13:42",
-     "jogo": "Tottenham x United",
-     "odd": 2.4
-    },
-    {
-     "h": "13:45",
-     "jogo": "Wolverhampton x City",
-     "odd": 1.98
-    }
-   ],
-   "alvo": {
-    "h": "13:45",
-    "jogo": "Wolverhampton x City",
-    "odd": 1.98,
-    "unidades": 4,
-    "desde": 1784637882039
-   },
-   "iniciadoEm": 1784637411535,
-   "tiros": [
-    {
-     "h": "13:39",
-     "jogo": "West Ham x Aston",
-     "odd": 2.62,
-     "unidades": 1
-    },
-    {
-     "h": "13:42",
-     "jogo": "Tottenham x United",
-     "odd": 2.4,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784637410141,
-   "premier": 1784633380231,
+   "premier": 1784638067132,
    "euro": 1784636748337,
    "super": 1784637109846
   },
@@ -345,12 +303,12 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": -2.4
+   "2026-07-21": -1.5
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 69,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 32,
    "start": 1
   }
  },
