@@ -131,8 +131,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "14:15",
@@ -151,13 +151,21 @@
     }
    ],
    "alvo": {
-    "h": "14:15",
-    "jogo": "Brighton x Aston",
-    "odd": 4.2,
-    "unidades": 1,
-    "desde": 1784639550634
+    "h": "14:18",
+    "jogo": "Southampton x Norwich",
+    "odd": 4.75,
+    "unidades": 2,
+    "desde": 1784639858144
    },
-   "iniciadoEm": 1784639550634
+   "iniciadoEm": 1784639550634,
+   "tiros": [
+    {
+     "h": "14:15",
+     "jogo": "Brighton x Aston",
+     "odd": 4.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784631286938,
@@ -472,7 +480,36 @@
    "premier": 1784637168446,
    "copa": 1784637947636
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:19",
+     "jogo": "Santiago x Penarol",
+     "odd": 1.95
+    },
+    {
+     "h": "14:22",
+     "jogo": "Porto Alegre x Bogota",
+     "odd": 2.4
+    },
+    {
+     "h": "14:25",
+     "jogo": "Asuncion x Quito",
+     "odd": 2
+    }
+   ],
+   "alvo": {
+    "h": "14:19",
+    "jogo": "Santiago x Penarol",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1784639769634
+   },
+   "iniciadoEm": 1784639769634
+  },
   "cooldown": {
    "euro": 1784636748539,
    "super": 1784636169241,
@@ -488,9 +525,9 @@
    "2026-07-21": -9.4
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 43,
+   "tipo": "coluna",
+   "chave": ":22",
+   "n": 14,
    "start": 1
   }
  }
