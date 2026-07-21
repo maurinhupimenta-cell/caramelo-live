@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -59.3,
-  "ciclos": 143,
+  "saldo": -66.3,
+  "ciclos": 144,
   "greens": 53,
-  "redsCiclo": 56,
+  "redsCiclo": 57,
   "aborts": 0,
   "descartes": 34,
   "historico": [
+   {
+    "quando": "2026-07-21T10:16:48.433Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-21T09:41:52.438Z",
     "resultado": "GREEN",
@@ -120,65 +126,17 @@
     "resultado": "GREEN",
     "unidades": 5.4,
     "detalhe": "super · Itaquera x Guayaquil @4.2 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T15:55:04.510Z",
-    "resultado": "GREEN",
-    "unidades": 11,
-    "detalhe": "copa · Croácia x Alemanha @4.5 (tiro 3)"
    }
   ],
   "consumidas": {
-   "premier": 1784626912338
+   "premier": 1784626912338,
+   "euro": 1784629008239
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "11:08",
-     "jogo": "Eslováquia x Hungria",
-     "odd": 5
-    },
-    {
-     "h": "11:11",
-     "jogo": "Inglaterra x Croácia",
-     "odd": 4
-    },
-    {
-     "h": "11:14",
-     "jogo": "França x Áustria",
-     "odd": 4.2
-    }
-   ],
-   "alvo": {
-    "h": "11:14",
-    "jogo": "França x Áustria",
-    "odd": 4.2,
-    "unidades": 4,
-    "desde": 1784628829043
-   },
-   "iniciadoEm": 1784628288237,
-   "tiros": [
-    {
-     "h": "11:08",
-     "jogo": "Eslováquia x Hungria",
-     "odd": 5,
-     "unidades": 1
-    },
-    {
-     "h": "11:11",
-     "jogo": "Inglaterra x Croácia",
-     "odd": 4,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784607544035,
    "premier": 1784626912338,
-   "euro": 1784581151719,
+   "euro": 1784629008239,
    "super": 1784610966639
   },
   "dias": {
@@ -187,7 +145,7 @@
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
    "2026-07-20": 19.6,
-   "2026-07-21": -1.6
+   "2026-07-21": -8.6
   },
   "_gatilhoAtual": {
    "tipo": "placar",
