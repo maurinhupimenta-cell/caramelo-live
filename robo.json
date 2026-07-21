@@ -289,7 +289,37 @@
    "premier": 1784642919931,
    "euro": 1784644671155
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:43",
+     "jogo": "Lima x Agua Branca",
+     "odd": 2.05
+    },
+    {
+     "h": "15:46",
+     "jogo": "Medellin x Santos",
+     "odd": 2.45
+    },
+    {
+     "h": "15:49",
+     "jogo": "La Boca x Rio de Janeiro",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "seq GRGRG",
+   "alvo": {
+    "h": "15:43",
+    "jogo": "Lima x Agua Branca",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1784644934254
+   },
+   "iniciadoEm": 1784644934254
+  },
   "cooldown": {
    "copa": 1784641904542,
    "premier": 1784642919931,
@@ -306,9 +336,9 @@
    "2026-07-21": -11.1
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 56,
+   "tipo": "seq",
+   "chave": "GRGRG",
+   "n": 9,
    "start": 1
   }
  },
@@ -492,9 +522,9 @@
    "2026-07-21": -2.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGRR",
-   "n": 8,
+   "tipo": "odd",
+   "chave": "2.07",
+   "n": 11,
    "start": 1
   }
  }
