@@ -179,18 +179,24 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 24,
+   "n": 11,
    "start": 1
   }
  },
  "o25": {
-  "saldo": -30.5,
-  "ciclos": 204,
-  "greens": 143,
+  "saldo": -28.8,
+  "ciclos": 205,
+  "greens": 144,
   "redsCiclo": 36,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-21T18:21:10.456Z",
+    "resultado": "GREEN",
+    "unidades": 1.7,
+    "detalhe": "copa · Argélia x Bélgica @2.35 (tiro 2) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-07-21T18:02:11.652Z",
     "resultado": "GREEN",
@@ -304,60 +310,17 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "super · Montevideo x Agua Branca @2.05 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-21T12:25:48.537Z",
-    "resultado": "GREEN",
-    "unidades": 2,
-    "detalhe": "euro · Ucrânia x Croácia @2.25 (tiro 3)"
    }
   ],
   "consumidas": {
    "premier": 1784656023060,
    "super": 1784656324651,
-   "euro": 1784656931549
+   "euro": 1784656931549,
+   "copa": 1784658070352
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "19:13",
-     "jogo": "Marrocos x Uzbequistão",
-     "odd": 2.35
-    },
-    {
-     "h": "19:16",
-     "jogo": "Argélia x Bélgica",
-     "odd": 2.35
-    },
-    {
-     "h": "19:19",
-     "jogo": "Cabo Verde x Jordânia",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-1)",
-   "alvo": {
-    "h": "19:16",
-    "jogo": "Argélia x Bélgica",
-    "odd": 2.35,
-    "unidades": 2,
-    "desde": 1784657751959
-   },
-   "iniciadoEm": 1784657470856,
-   "tiros": [
-    {
-     "h": "19:13",
-     "jogo": "Marrocos x Uzbequistão",
-     "odd": 2.35,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784650749450,
+   "copa": 1784658070352,
    "premier": 1784656023060,
    "euro": 1784656931549,
    "super": 1784656324651
@@ -369,12 +332,12 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": -14.2
+   "2026-07-21": -12.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.55",
-   "n": 10,
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 11,
    "start": 1
   }
  },
