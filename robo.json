@@ -154,13 +154,19 @@
   }
  },
  "o25": {
-  "saldo": -9.7,
-  "ciclos": 176,
+  "saldo": -16.7,
+  "ciclos": 177,
   "greens": 123,
-  "redsCiclo": 29,
+  "redsCiclo": 30,
   "aborts": 0,
   "descartes": 24,
   "historico": [
+   {
+    "quando": "2026-07-21T09:58:48.735Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-21T09:40:49.332Z",
     "resultado": "DESCARTADO",
@@ -274,63 +280,16 @@
     "resultado": "GREEN",
     "unidades": 3.8,
     "detalhe": "euro · Ucrânia x Albânia @2.7 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-20T23:08:12.608Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "copa · África do Sul x Canadá @2.55 (tiro 1)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "10:50",
-     "jogo": "Croácia x Turquia",
-     "odd": 2.4
-    },
-    {
-     "h": "10:53",
-     "jogo": "Albânia x Romênia",
-     "odd": 2.45
-    },
-    {
-     "h": "10:56",
-     "jogo": "Turquia x Espanha",
-     "odd": 2.25
-    }
-   ],
-   "alvo": {
-    "h": "10:56",
-    "jogo": "Turquia x Espanha",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1784627748441
-   },
-   "iniciadoEm": 1784626868145,
-   "tiros": [
-    {
-     "h": "10:50",
-     "jogo": "Croácia x Turquia",
-     "odd": 2.4,
-     "unidades": 1
-    },
-    {
-     "h": "10:53",
-     "jogo": "Albânia x Romênia",
-     "odd": 2.45,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "euro": 1784627928542
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784613484433,
    "premier": 1784610888238,
-   "euro": 1784612644736,
+   "euro": 1784627928542,
    "super": 1784610247137
   },
   "dias": {
@@ -340,13 +299,13 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": 6.6
+   "2026-07-21": -0.4
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2",
-   "n": 7,
-   "start": 1
+   "chave": "2.3",
+   "n": 11,
+   "start": 3
   }
  },
  "ambas": {
@@ -484,8 +443,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "10:53",
@@ -504,13 +463,27 @@
     }
    ],
    "alvo": {
-    "h": "10:53",
-    "jogo": "Albânia x Romênia",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1784627467531
+    "h": "10:59",
+    "jogo": "Países Baixos x Sérvia",
+    "odd": 1.98,
+    "unidades": 4,
+    "desde": 1784627928831
    },
-   "iniciadoEm": 1784627467531
+   "iniciadoEm": 1784627467531,
+   "tiros": [
+    {
+     "h": "10:53",
+     "jogo": "Albânia x Romênia",
+     "odd": 2.1,
+     "unidades": 1
+    },
+    {
+     "h": "10:56",
+     "jogo": "Turquia x Espanha",
+     "odd": 1.95,
+     "unidades": 2
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784610824637,
@@ -529,7 +502,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "acima de 1-0 (2-1)",
-   "n": 36,
+   "n": 37,
    "start": 1
   }
  }
