@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -72,
-  "ciclos": 148,
+  "saldo": -79,
+  "ciclos": 149,
   "greens": 55,
-  "redsCiclo": 59,
+  "redsCiclo": 60,
   "aborts": 0,
   "descartes": 34,
   "historico": [
+   {
+    "quando": "2026-07-21T12:09:49.835Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-21T11:53:08.431Z",
     "resultado": "GREEN",
@@ -120,67 +126,19 @@
     "resultado": "GREEN",
     "unidades": 8,
     "detalhe": "copa · Escócia x Marrocos @5.5 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T19:14:12.608Z",
-    "resultado": "GREEN",
-    "unidades": 8,
-    "detalhe": "super · Santiago x Guayaquil @3.75 (tiro 3)"
    }
   ],
   "consumidas": {
    "premier": 1784632837137,
-   "euro": 1784634788236
+   "euro": 1784634788236,
+   "super": 1784635789732
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "13:01",
-     "jogo": "Lima x Medellin",
-     "odd": 4.33
-    },
-    {
-     "h": "13:04",
-     "jogo": "Montevideo x Porto Alegre",
-     "odd": 5.25
-    },
-    {
-     "h": "13:07",
-     "jogo": "Penarol x Santos",
-     "odd": 5.5
-    }
-   ],
-   "alvo": {
-    "h": "13:07",
-    "jogo": "Penarol x Santos",
-    "odd": 5.5,
-    "unidades": 4,
-    "desde": 1784635628733
-   },
-   "iniciadoEm": 1784635089753,
-   "tiros": [
-    {
-     "h": "13:01",
-     "jogo": "Lima x Medellin",
-     "odd": 4.33,
-     "unidades": 1
-    },
-    {
-     "h": "13:04",
-     "jogo": "Montevideo x Porto Alegre",
-     "odd": 5.25,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784631286938,
    "premier": 1784632837137,
    "euro": 1784634788236,
-   "super": 1784630409233
+   "super": 1784635789732
   },
   "dias": {
    "2026-07-15": -35,
@@ -188,7 +146,7 @@
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
    "2026-07-20": 19.6,
-   "2026-07-21": -14.3
+   "2026-07-21": -21.3
   },
   "_gatilhoAtual": {
    "tipo": "placar",
@@ -491,8 +449,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "13:07",
@@ -511,13 +469,21 @@
     }
    ],
    "alvo": {
-    "h": "13:07",
-    "jogo": "Penarol x Santos",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1784635450036
+    "h": "13:10",
+    "jogo": "Asuncion x Guayaquil",
+    "odd": 1.9,
+    "unidades": 2,
+    "desde": 1784635789837
    },
-   "iniciadoEm": 1784635450036
+   "iniciadoEm": 1784635450036,
+   "tiros": [
+    {
+     "h": "13:07",
+     "jogo": "Penarol x Santos",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784632248731,
@@ -534,10 +500,10 @@
    "2026-07-21": -5.3
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 36,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.83",
+   "n": 11,
+   "start": 2
   }
  }
 }
