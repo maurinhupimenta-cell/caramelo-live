@@ -445,7 +445,37 @@
    "premier": 1784650658854,
    "super": 1784653081156
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:08",
+     "jogo": "Bélgica x França",
+     "odd": 1.83
+    },
+    {
+     "h": "18:11",
+     "jogo": "República Tcheca x Países Baixos",
+     "odd": 2
+    },
+    {
+     "h": "18:14",
+     "jogo": "Polônia x Eslováquia",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "placar empate 1-1",
+   "alvo": {
+    "h": "18:08",
+    "jogo": "Bélgica x França",
+    "odd": 1.83,
+    "unidades": 1,
+    "desde": 1784653572551
+   },
+   "iniciadoEm": 1784653572551
+  },
   "cooldown": {
    "euro": 1784649791152,
    "super": 1784653081156,
@@ -462,8 +492,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 51,
+   "chave": "empate 1-1",
+   "n": 55,
    "start": 1
   }
  }
