@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -21.5,
-  "ciclos": 161,
-  "greens": 110,
+  "saldo": -20.3,
+  "ciclos": 162,
+  "greens": 111,
   "redsCiclo": 28,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-21T02:22:15.517Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · França x Romênia @2.05 (tiro 3)"
+   },
    {
     "quando": "2026-07-21T01:50:41.111Z",
     "resultado": "RED_CICLO",
@@ -273,66 +279,18 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · Países Baixos x Alemanha @2.02 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T18:33:11.511Z",
-    "resultado": "GREEN",
-    "unidades": 2,
-    "detalhe": "premier · Southampton x Aston @2.5 (tiro 2)"
    }
   ],
   "consumidas": {
    "super": 1784597444013,
-   "premier": 1784598640916
+   "premier": 1784598640916,
+   "euro": 1784600535412
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "03:11",
-     "jogo": "Albânia x Países Baixos",
-     "odd": 2.4
-    },
-    {
-     "h": "03:14",
-     "jogo": "Suíça x Geórgia",
-     "odd": 2.25
-    },
-    {
-     "h": "03:17",
-     "jogo": "França x Romênia",
-     "odd": 2.05
-    }
-   ],
-   "alvo": {
-    "h": "03:17",
-    "jogo": "França x Romênia",
-    "odd": 2.05,
-    "unidades": 4,
-    "desde": 1784600210111
-   },
-   "iniciadoEm": 1784599714015,
-   "tiros": [
-    {
-     "h": "03:11",
-     "jogo": "Albânia x Países Baixos",
-     "odd": 2.4,
-     "unidades": 1
-    },
-    {
-     "h": "03:14",
-     "jogo": "Suíça x Geórgia",
-     "odd": 2.25,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784596205715,
    "premier": 1784598640916,
-   "euro": 1784595725211,
+   "euro": 1784600535412,
    "super": 1784597444013
   },
   "dias": {
@@ -341,12 +299,12 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 31.4
+   "2026-07-20": 32.6
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "goleada (3+)",
-   "n": 19,
+   "n": 12,
    "start": 1
   }
  },
