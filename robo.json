@@ -182,13 +182,19 @@
   }
  },
  "o25": {
-  "saldo": -27.2,
-  "ciclos": 206,
+  "saldo": -34.2,
+  "ciclos": 207,
   "greens": 145,
-  "redsCiclo": 36,
+  "redsCiclo": 37,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-21T20:26:10.654Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: placar goleada (3+)"
+   },
    {
     "quando": "2026-07-21T18:58:13.851Z",
     "resultado": "GREEN",
@@ -302,51 +308,45 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "premier · Wolverhampton x City @1.98 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-21T12:36:50.337Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "copa · Qatar x França @2.25 (tiro 1)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "premier": 1784665570463
+  },
   "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "20:03",
-     "jogo": "Brentford x Wolverhampton",
-     "odd": 2.1
+     "h": "21:29",
+     "jogo": "Albânia x Romênia",
+     "odd": 2.45
     },
     {
-     "h": "20:06",
-     "jogo": "Tottenham x Aston",
-     "odd": 2.6
-    },
-    {
-     "h": "20:09",
-     "jogo": "United x Leicester",
+     "h": "21:32",
+     "jogo": "Geórgia x Escócia",
      "odd": 2.3
+    },
+    {
+     "h": "21:35",
+     "jogo": "Espanha x Países Baixos",
+     "odd": 1.98
     }
    ],
-   "gatilho": "placar goleada (3+)",
-   "alvo": null,
-   "iniciadoEm": 1784660395650,
-   "tiros": [
-    {
-     "h": "20:03",
-     "jogo": "Brentford x Wolverhampton",
-     "odd": 2.1,
-     "unidades": 1
-    }
-   ]
+   "gatilho": "placar acima de 1-0 (2-1)",
+   "alvo": {
+    "h": "21:29",
+    "jogo": "Albânia x Romênia",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1784665571556
+   },
+   "iniciadoEm": 1784665571556
   },
   "cooldown": {
    "copa": 1784658070352,
-   "premier": 1784656023060,
+   "premier": 1784665570463,
    "euro": 1784656931549,
    "super": 1784660293658
   },
@@ -357,7 +357,7 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": -10.9
+   "2026-07-21": -17.9
   },
   "_gatilhoAtual": {
    "tipo": "placar",
@@ -367,13 +367,25 @@
   }
  },
  "ambas": {
-  "saldo": -13.2,
-  "ciclos": 211,
-  "greens": 156,
+  "saldo": -12.3,
+  "ciclos": 213,
+  "greens": 157,
   "redsCiclo": 25,
   "aborts": 0,
-  "descartes": 30,
+  "descartes": 31,
   "historico": [
+   {
+    "quando": "2026-07-21T20:25:54.658Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Hungria x Países Baixos @1.93 (tiro 1) · gatilho: placar acima de 1-0 (2-1)"
+   },
+   {
+    "quando": "2026-07-21T20:25:51.550Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-21T18:56:49.753Z",
     "resultado": "GREEN",
@@ -481,56 +493,44 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · Islington x Watford @2.05 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-21T13:28:48.539Z",
-    "resultado": "GREEN",
-    "unidades": 0.8,
-    "detalhe": "euro · Suíça x Inglaterra @1.83 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-21T13:24:49.234Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "super · Porto Alegre x Bogota @2.4 (tiro 2)"
    }
   ],
   "consumidas": {
-   "euro": 1784658148555
+   "euro": 1784665554458
   },
   "ciclo": {
-   "liga": "copa",
+   "liga": "premier",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "20:10",
-     "jogo": "Austrália x Noruega",
-     "odd": 1.87
+     "h": "21:33",
+     "jogo": "City x Brentford",
+     "odd": 2.02
     },
     {
-     "h": "20:13",
-     "jogo": "Áustria x Alemanha",
-     "odd": 1.87
+     "h": "21:36",
+     "jogo": "Liverpool x Aston",
+     "odd": 2.07
     },
     {
-     "h": "20:16",
-     "jogo": "França x Costa do Marfim",
-     "odd": 1.93
+     "h": "21:39",
+     "jogo": "Southampton x Burnley",
+     "odd": 1.98
     }
    ],
-   "gatilho": "time Áustria",
+   "gatilho": "odd 2.07",
    "alvo": {
-    "h": "20:10",
-    "jogo": "Austrália x Noruega",
-    "odd": 1.87,
+    "h": "21:33",
+    "jogo": "City x Brentford",
+    "odd": 2.02,
     "unidades": 1,
-    "desde": 1784660533056
+    "desde": 1784665556656
    },
-   "iniciadoEm": 1784660533056
+   "iniciadoEm": 1784665556656
   },
   "cooldown": {
-   "euro": 1784658148555,
+   "euro": 1784665554458,
    "super": 1784657531256,
    "premier": 1784660209560,
    "copa": 1784656932655
@@ -541,12 +541,12 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": 1.9
+   "2026-07-21": 2.8
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 40,
+   "tipo": "time",
+   "chave": "Espanha",
+   "n": 9,
    "start": 1
   }
  }
