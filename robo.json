@@ -283,7 +283,36 @@
    "euro": 1784595725211,
    "copa": 1784596205715
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:28",
+     "jogo": "Guayaquil x Agua Branca",
+     "odd": 2.07
+    },
+    {
+     "h": "02:31",
+     "jogo": "Medellin x Rio de Janeiro",
+     "odd": 2.3
+    },
+    {
+     "h": "02:34",
+     "jogo": "Agua Branca x Sao Paulo",
+     "odd": 2.02
+    }
+   ],
+   "alvo": {
+    "h": "02:28",
+    "jogo": "Guayaquil x Agua Branca",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1784597113317
+   },
+   "iniciadoEm": 1784597113317
+  },
   "cooldown": {
    "copa": 1784596205715,
    "premier": 1784585916508,
@@ -300,8 +329,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 10,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 8,
    "start": 1
   }
  },
