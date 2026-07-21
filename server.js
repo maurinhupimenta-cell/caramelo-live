@@ -1779,7 +1779,7 @@ function montaRobo(mkt) {
     let gatilho = null;
     try {
       const pad = calculaPadroes(liga, mkt) || {};
-      const cem = arr => (arr || []).filter(p => p.prox === "G" && p.taxa === 100);
+      const cem = arr => (arr || []).filter(p => p.prox === "G" && p.taxa === 100 && p.n >= 8); // robo atira so com 8+ provas (6/6 por sorte e comum demais)
       const evsF = (d.upcoming && d.upcoming[mkt]) || [];
       const fila = evsF.map((p, i) => ({ ...p, _i: i })).filter(p => p.odd != null);
       const porIdx = {}; for (const p of fila) porIdx[p._i] = p;
@@ -1889,7 +1889,7 @@ function atualizaRoboMkt(mkt) {
         // PLANO SELADO (regra do usuario): os 3 tiros sao travados JUNTOS na abertura - ex copa :10 :13 :16
         const plano = melhor.degraus.map(dg => ({ h: dg.h, jogo: dg.jogo, odd: dg.odd }));
         const d0 = plano[0];
-        L.ciclo = { liga: melhor.liga, degrau: 0, apostado: 0, plano, alvo: { h: d0.h, jogo: d0.jogo, odd: d0.odd, unidades: 1, desde: Date.now() }, iniciadoEm: Date.now() };
+        L.ciclo = { liga: melhor.liga, degrau: 0, apostado: 0, plano, gatilho: melhor.gatilhoDbg || null, alvo: { h: d0.h, jogo: d0.jogo, odd: d0.odd, unidades: 1, desde: Date.now() }, iniciadoEm: Date.now() };
         // FOTO DA ENTRADA (auditoria): a serie estava subindo ou caindo no disparo?
         try {
           const dd = store[melhor.liga];
@@ -1931,7 +1931,7 @@ function atualizaRoboMkt(mkt) {
           L.cooldown = L.cooldown || {}; L.cooldown[L.ciclo.liga] = Date.now();
           const cG = L.ciclo; L.ciclo = null; // anula ANTES: nenhum save intermediario persiste ciclo fechado
           try { enviaPushRobo(`🟢 ${NMR[mkt]} GREEN +${lucro}u — ${cG.liga.toUpperCase()}`, `${cG.alvo.jogo} @${cG.alvo.odd} (tiro ${cG.degrau + 1}) · ciclo encerrado`, "robo-" + mkt); } catch (e) {}
-          registraCiclo(mkt, "GREEN", lucro, `${cG.liga} · ${cG.alvo.jogo} @${cG.alvo.odd} (tiro ${cG.degrau + 1})`);
+          registraCiclo(mkt, "GREEN", lucro, `${cG.liga} · ${cG.alvo.jogo} @${cG.alvo.odd} (tiro ${cG.degrau + 1})${cG.gatilho ? " · gatilho: " + cG.gatilho : ""}`);
           return;
         }
         L.ciclo.tiros = L.ciclo.tiros || [];
@@ -1944,7 +1944,7 @@ function atualizaRoboMkt(mkt) {
           L.consumidas = L.consumidas || {}; L.consumidas[cR.liga] = Date.now();
           L.cooldown = L.cooldown || {}; L.cooldown[cR.liga] = Date.now();
           try { enviaPushRobo(`🔴 ${NMR[mkt]} ciclo perdido −${cR.apostado}u — ${cR.liga.toUpperCase()}`, `3 tiros sem green · descanso de 30min na liga`, "robo-" + mkt); } catch (e) {}
-          registraCiclo(mkt, "RED_CICLO", -cR.apostado, `${cR.liga} · ciclo perdido (3 tiros)`);
+          registraCiclo(mkt, "RED_CICLO", -cR.apostado, `${cR.liga} · ciclo perdido (3 tiros)${cR.gatilho ? " · gatilho: " + cR.gatilho : ""}`);
           return;
         }
         const pl = (L.ciclo.plano || [])[L.ciclo.degrau];
