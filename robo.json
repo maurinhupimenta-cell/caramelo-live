@@ -336,9 +336,9 @@
    "2026-07-21": -11.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGRG",
-   "n": 9,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 40,
    "start": 1
   }
  },
@@ -478,8 +478,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "15:42",
@@ -499,13 +499,21 @@
    ],
    "gatilho": "seq RGGRR",
    "alvo": {
-    "h": "15:42",
-    "jogo": "Brentford x Leeds",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1784644722055
+    "h": "15:45",
+    "jogo": "Brighton x Tottenham",
+    "odd": 1.98,
+    "unidades": 2,
+    "desde": 1784645086852
    },
-   "iniciadoEm": 1784644722055
+   "iniciadoEm": 1784644722055,
+   "tiros": [
+    {
+     "h": "15:42",
+     "jogo": "Brentford x Leeds",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784644373854,
