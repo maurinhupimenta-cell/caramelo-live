@@ -132,7 +132,36 @@
    "euro": 1784629008239,
    "super": 1784630409233
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:46",
+     "jogo": "EUA x Austrália",
+     "odd": 4.33
+    },
+    {
+     "h": "11:49",
+     "jogo": "Espanha x Inglaterra",
+     "odd": 4.2
+    },
+    {
+     "h": "11:52",
+     "jogo": "Turquia x Irã",
+     "odd": 5.5
+    }
+   ],
+   "alvo": {
+    "h": "11:46",
+    "jogo": "EUA x Austrália",
+    "odd": 4.33,
+    "unidades": 1,
+    "desde": 1784630587733
+   },
+   "iniciadoEm": 1784630587733
+  },
   "cooldown": {
    "copa": 1784607544035,
    "premier": 1784626912338,
@@ -150,7 +179,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 15,
+   "n": 7,
    "start": 1
   }
  },
