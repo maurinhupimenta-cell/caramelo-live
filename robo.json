@@ -290,8 +290,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "20:03",
@@ -311,13 +311,21 @@
    ],
    "gatilho": "placar goleada (3+)",
    "alvo": {
-    "h": "20:03",
-    "jogo": "Brentford x Wolverhampton",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1784660395650
+    "h": "20:06",
+    "jogo": "Tottenham x Aston",
+    "odd": 2.6,
+    "unidades": 2,
+    "desde": 1784660892550
    },
-   "iniciadoEm": 1784660395650
+   "iniciadoEm": 1784660395650,
+   "tiros": [
+    {
+     "h": "20:03",
+     "jogo": "Brentford x Wolverhampton",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784658070352,
@@ -336,8 +344,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 84,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 63,
    "start": 1
   }
  },
@@ -521,10 +529,10 @@
    "2026-07-21": 1.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Áustria",
-   "n": 13,
-   "start": 3
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 40,
+   "start": 1
   }
  }
 }
