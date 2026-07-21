@@ -156,13 +156,19 @@
   }
  },
  "o25": {
-  "saldo": -27.4,
-  "ciclos": 193,
+  "saldo": -34.4,
+  "ciclos": 194,
   "greens": 135,
-  "redsCiclo": 34,
+  "redsCiclo": 35,
   "aborts": 0,
   "descartes": 24,
   "historico": [
+   {
+    "quando": "2026-07-21T14:53:12.549Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: seq GRGRG"
+   },
    {
     "quando": "2026-07-21T14:37:51.354Z",
     "resultado": "GREEN",
@@ -276,68 +282,49 @@
     "resultado": "GREEN",
     "unidades": 2.5,
     "detalhe": "copa · Tunísia x Iraque @2.75 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-21T05:44:04.837Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "euro · Itália x Dinamarca @2.4 (tiro 1)"
    }
   ],
   "consumidas": {
    "premier": 1784642919931,
-   "euro": 1784644671155
+   "euro": 1784644671155,
+   "super": 1784645592353
   },
   "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "15:43",
-     "jogo": "Lima x Agua Branca",
+     "h": "15:55",
+     "jogo": "RD Congo x EUA",
+     "odd": 2.1
+    },
+    {
+     "h": "15:58",
+     "jogo": "Jordânia x Gana",
+     "odd": 2.3
+    },
+    {
+     "h": "16:01",
+     "jogo": "RD Congo x Costa do Marfim",
      "odd": 2.05
-    },
-    {
-     "h": "15:46",
-     "jogo": "Medellin x Santos",
-     "odd": 2.45
-    },
-    {
-     "h": "15:49",
-     "jogo": "La Boca x Rio de Janeiro",
-     "odd": 2.35
     }
    ],
-   "gatilho": "seq GRGRG",
+   "gatilho": "placar acima de 1-0 (2-1)",
    "alvo": {
-    "h": "15:49",
-    "jogo": "La Boca x Rio de Janeiro",
-    "odd": 2.35,
-    "unidades": 4,
-    "desde": 1784645349258
+    "h": "15:55",
+    "jogo": "RD Congo x EUA",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1784645593359
    },
-   "iniciadoEm": 1784644934254,
-   "tiros": [
-    {
-     "h": "15:43",
-     "jogo": "Lima x Agua Branca",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "15:46",
-     "jogo": "Medellin x Santos",
-     "odd": 2.45,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1784645593359
   },
   "cooldown": {
    "copa": 1784641904542,
    "premier": 1784642919931,
    "euro": 1784644671155,
-   "super": 1784641209631
+   "super": 1784645592353
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -346,12 +333,12 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": -11.1
+   "2026-07-21": -18.1
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "acima de 1-0 (2-1)",
-   "n": 40,
+   "n": 55,
    "start": 1
   }
  },
@@ -485,12 +472,41 @@
    }
   ],
   "consumidas": {
-   "copa": 1784641904732,
    "super": 1784644089754,
    "euro": 1784644373854,
    "premier": 1784645448456
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:55",
+     "jogo": "RD Congo x EUA",
+     "odd": 1.9
+    },
+    {
+     "h": "15:58",
+     "jogo": "Jordânia x Gana",
+     "odd": 2
+    },
+    {
+     "h": "16:01",
+     "jogo": "RD Congo x Costa do Marfim",
+     "odd": 1.83
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-1)",
+   "alvo": {
+    "h": "15:55",
+    "jogo": "RD Congo x EUA",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1784645508860
+   },
+   "iniciadoEm": 1784645508860
+  },
   "cooldown": {
    "euro": 1784644373854,
    "super": 1784644089754,
@@ -507,8 +523,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 21,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 55,
    "start": 1
   }
  }
