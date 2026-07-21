@@ -343,13 +343,19 @@
   }
  },
  "ambas": {
-  "saldo": -13.3,
-  "ciclos": 203,
-  "greens": 149,
+  "saldo": -12,
+  "ciclos": 204,
+  "greens": 150,
   "redsCiclo": 24,
   "aborts": 0,
   "descartes": 30,
   "historico": [
+   {
+    "quando": "2026-07-21T16:17:39.049Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "premier · Leeds x Leicester @2.15 (tiro 2) · gatilho: placar empate 1-1"
+   },
    {
     "quando": "2026-07-21T16:07:13.249Z",
     "resultado": "GREEN",
@@ -463,62 +469,19 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "euro · Turquia x Croácia @2.05 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-21T11:04:09.541Z",
-    "resultado": "GREEN",
-    "unidades": 1.6,
-    "detalhe": "super · Bogota x Quito @2.15 (tiro 3)"
    }
   ],
   "consumidas": {
    "super": 1784649373354,
    "euro": 1784649791152,
-   "copa": 1784650033051
+   "copa": 1784650033051,
+   "premier": 1784650658854
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:12",
-     "jogo": "West Ham x Liverpool",
-     "odd": 2.1
-    },
-    {
-     "h": "17:15",
-     "jogo": "Leeds x Leicester",
-     "odd": 2.15
-    },
-    {
-     "h": "17:18",
-     "jogo": "Chelsea x Southampton",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "placar empate 1-1",
-   "alvo": {
-    "h": "17:15",
-    "jogo": "Leeds x Leicester",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1784650477554
-   },
-   "iniciadoEm": 1784650126561,
-   "tiros": [
-    {
-     "h": "17:12",
-     "jogo": "West Ham x Liverpool",
-     "odd": 2.1,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784649791152,
    "super": 1784649373354,
-   "premier": 1784645448456,
+   "premier": 1784650658854,
    "copa": 1784650033051
   },
   "dias": {
@@ -527,7 +490,7 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": 1.8
+   "2026-07-21": 3.1
   },
   "_gatilhoAtual": {
    "tipo": "seq",
