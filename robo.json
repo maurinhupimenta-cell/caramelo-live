@@ -128,10 +128,38 @@
     "detalhe": "premier · Newcastle x Palace @3.8 (tiro 3)"
    }
   ],
-  "consumidas": {
-   "copa": 1784660291350
+  "consumidas": {},
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:28",
+     "jogo": "Belo Horizonte x Medellin",
+     "odd": 4.33
+    },
+    {
+     "h": "21:31",
+     "jogo": "Santos x Guayaquil",
+     "odd": 4.5
+    },
+    {
+     "h": "21:34",
+     "jogo": "Santiago x Penarol",
+     "odd": 4.5
+    }
+   ],
+   "gatilho": "placar empate 2-2",
+   "alvo": {
+    "h": "21:28",
+    "jogo": "Belo Horizonte x Medellin",
+    "odd": 4.33,
+    "unidades": 1,
+    "desde": 1784665551150
+   },
+   "iniciadoEm": 1784665551150
   },
-  "ciclo": null,
   "cooldown": {
    "copa": 1784660291350,
    "premier": 1784657321350,
@@ -149,7 +177,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 12,
+   "n": 28,
    "start": 1
   }
  },
@@ -282,10 +310,7 @@
     "detalhe": "copa · Qatar x França @2.25 (tiro 1)"
    }
   ],
-  "consumidas": {
-   "copa": 1784658070352,
-   "super": 1784660293658
-  },
+  "consumidas": {},
   "ciclo": {
    "liga": "premier",
    "degrau": 1,
@@ -308,13 +333,7 @@
     }
    ],
    "gatilho": "placar goleada (3+)",
-   "alvo": {
-    "h": "20:06",
-    "jogo": "Tottenham x Aston",
-    "odd": 2.6,
-    "unidades": 2,
-    "desde": 1784660892550
-   },
+   "alvo": null,
    "iniciadoEm": 1784660395650,
    "tiros": [
     {
@@ -477,9 +496,7 @@
    }
   ],
   "consumidas": {
-   "super": 1784657531256,
-   "euro": 1784658148555,
-   "premier": 1784660209560
+   "euro": 1784658148555
   },
   "ciclo": {
    "liga": "copa",
