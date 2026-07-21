@@ -179,7 +179,7 @@
    "tipo": "coluna",
    "chave": ":03",
    "n": 5,
-   "start": 3
+   "start": 1
   }
  },
  "o25": {
@@ -312,12 +312,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1784602621814,
    "euro": 1784604913737,
    "copa": 1784605452433,
    "super": 1784605754138
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:03",
+     "jogo": "Newcastle x Leicester",
+     "odd": 2.15
+    },
+    {
+     "h": "05:06",
+     "jogo": "Brighton x Norwich",
+     "odd": 2.05
+    },
+    {
+     "h": "05:09",
+     "jogo": "Tottenham x Burnley",
+     "odd": 2.35
+    }
+   ],
+   "alvo": {
+    "h": "05:03",
+    "jogo": "Newcastle x Leicester",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1784606231135
+   },
+   "iniciadoEm": 1784606231135
+  },
   "cooldown": {
    "copa": 1784605452433,
    "premier": 1784602621814,
@@ -334,10 +362,10 @@
    "2026-07-21": 3.4
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
+   "tipo": "time",
+   "chave": "Norwich",
    "n": 14,
-   "start": 1
+   "start": 2
   }
  },
  "ambas": {
