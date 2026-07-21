@@ -176,10 +176,10 @@
    "2026-07-21": -13
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":36",
-   "n": 6,
-   "start": 3
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 7,
+   "start": 1
   }
  },
  "o25": {
@@ -470,12 +470,40 @@
    }
   ],
   "consumidas": {
-   "super": 1784608067040,
    "copa": 1784609144140,
    "euro": 1784610824637,
    "premier": 1784611428935
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:28",
+     "jogo": "Medellin x La Plata",
+     "odd": 2.2
+    },
+    {
+     "h": "06:31",
+     "jogo": "Porto Alegre x Buenos Aires",
+     "odd": 2.05
+    },
+    {
+     "h": "06:34",
+     "jogo": "Quito x Sao Paulo",
+     "odd": 1.87
+    }
+   ],
+   "alvo": {
+    "h": "06:28",
+    "jogo": "Medellin x La Plata",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1784611667343
+   },
+   "iniciadoEm": 1784611667343
+  },
   "cooldown": {
    "euro": 1784610824637,
    "super": 1784608067040,
@@ -493,7 +521,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 1-1",
-   "n": 14,
+   "n": 20,
    "start": 1
   }
  }
