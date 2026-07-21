@@ -313,13 +313,19 @@
   }
  },
  "ambas": {
-  "saldo": -6.6,
-  "ciclos": 176,
-  "greens": 128,
+  "saldo": -6.1,
+  "ciclos": 177,
+  "greens": 129,
   "redsCiclo": 20,
   "aborts": 0,
   "descartes": 28,
   "historico": [
+   {
+    "quando": "2026-07-21T05:37:05.738Z",
+    "resultado": "GREEN",
+    "unidades": 0.5,
+    "detalhe": "super · Quito x Sao Paulo @1.87 (tiro 3)"
+   },
    {
     "quando": "2026-07-21T05:23:49.137Z",
     "resultado": "GREEN",
@@ -433,66 +439,18 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "euro · Polônia x República Tcheca @2.25 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T21:53:49.711Z",
-    "resultado": "GREEN",
-    "unidades": 0.8,
-    "detalhe": "premier · Everton x Wolverhampton @1.8 (tiro 1)"
    }
   ],
   "consumidas": {
    "copa": 1784609144140,
    "euro": 1784610824637,
-   "premier": 1784611428935
+   "premier": 1784611428935,
+   "super": 1784612225631
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "06:28",
-     "jogo": "Medellin x La Plata",
-     "odd": 2.2
-    },
-    {
-     "h": "06:31",
-     "jogo": "Porto Alegre x Buenos Aires",
-     "odd": 2.05
-    },
-    {
-     "h": "06:34",
-     "jogo": "Quito x Sao Paulo",
-     "odd": 1.87
-    }
-   ],
-   "alvo": {
-    "h": "06:34",
-    "jogo": "Quito x Sao Paulo",
-    "odd": 1.87,
-    "unidades": 4,
-    "desde": 1784612047237
-   },
-   "iniciadoEm": 1784611667343,
-   "tiros": [
-    {
-     "h": "06:28",
-     "jogo": "Medellin x La Plata",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "06:31",
-     "jogo": "Porto Alegre x Buenos Aires",
-     "odd": 2.05,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784610824637,
-   "super": 1784608067040,
+   "super": 1784612225631,
    "premier": 1784611428935,
    "copa": 1784609144140
   },
@@ -502,7 +460,7 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": 8.5
+   "2026-07-21": 9
   },
   "_gatilhoAtual": {
    "tipo": "time",
