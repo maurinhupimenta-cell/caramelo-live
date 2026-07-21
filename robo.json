@@ -154,13 +154,19 @@
   }
  },
  "o25": {
-  "saldo": -16.1,
-  "ciclos": 189,
-  "greens": 133,
+  "saldo": -14.9,
+  "ciclos": 190,
+  "greens": 134,
   "redsCiclo": 32,
   "aborts": 0,
   "descartes": 24,
   "historico": [
+   {
+    "quando": "2026-07-21T13:40:09.736Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Lima x Itaquera @2.2 (tiro 1)"
+   },
    {
     "quando": "2026-07-21T13:34:48.236Z",
     "resultado": "GREEN",
@@ -274,53 +280,19 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "copa · Japão x México @2.35 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-21T04:41:04.634Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "euro · Sérvia x Suíça @2.35 (tiro 1)"
    }
   ],
   "consumidas": {
    "premier": 1784638067132,
-   "euro": 1784640888041
+   "euro": 1784640888041,
+   "super": 1784641209631
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:37",
-     "jogo": "Lima x Itaquera",
-     "odd": 2.2
-    },
-    {
-     "h": "14:40",
-     "jogo": "Buenos Aires x Bogota",
-     "odd": 2.35
-    },
-    {
-     "h": "14:43",
-     "jogo": "Guayaquil x Rio de Janeiro",
-     "odd": 2.15
-    }
-   ],
-   "alvo": {
-    "h": "14:37",
-    "jogo": "Lima x Itaquera",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1784640889238
-   },
-   "iniciadoEm": 1784640889238
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784637410141,
    "premier": 1784638067132,
    "euro": 1784640888041,
-   "super": 1784637109846
+   "super": 1784641209631
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -329,7 +301,7 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": 0.2
+   "2026-07-21": 1.4
   },
   "_gatilhoAtual": {
    "tipo": "placar",
