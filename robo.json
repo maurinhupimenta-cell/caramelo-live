@@ -480,7 +480,37 @@
    "premier": 1784656242053,
    "copa": 1784656932655
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:07",
+     "jogo": "Santos x Penarol",
+     "odd": 2.2
+    },
+    {
+     "h": "19:10",
+     "jogo": "Montevideo x Santiago",
+     "odd": 1.8
+    },
+    {
+     "h": "19:13",
+     "jogo": "Rio de Janeiro x Asuncion",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-1)",
+   "alvo": {
+    "h": "19:07",
+    "jogo": "Santos x Penarol",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1784657050557
+   },
+   "iniciadoEm": 1784657050557
+  },
   "cooldown": {
    "euro": 1784654032554,
    "super": 1784653081156,
@@ -497,8 +527,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 52,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 54,
    "start": 1
   }
  }
