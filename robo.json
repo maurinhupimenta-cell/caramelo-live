@@ -304,12 +304,18 @@
  },
  "ambas": {
   "saldo": -6.5,
-  "ciclos": 160,
+  "ciclos": 161,
   "greens": 115,
   "redsCiclo": 18,
   "aborts": 0,
-  "descartes": 27,
+  "descartes": 28,
   "historico": [
+   {
+    "quando": "2026-07-21T00:50:11.116Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-20T23:12:47.910Z",
     "resultado": "GREEN",
@@ -423,12 +429,6 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "super · Avellaneda x Santiago @1.93 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T16:50:38.612Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "premier · Norwich x Islington @1.93 (tiro 1)"
    }
   ],
   "consumidas": {},
@@ -438,11 +438,6 @@
    "apostado": 0,
    "plano": [
     {
-     "h": "01:43",
-     "jogo": "Porto Alegre x Santiago",
-     "odd": 2.1
-    },
-    {
      "h": "01:46",
      "jogo": "Guayaquil x Lima",
      "odd": 1.86
@@ -451,16 +446,21 @@
      "h": "01:49",
      "jogo": "Santos x Belo Horizonte",
      "odd": 1.93
+    },
+    {
+     "h": "01:52",
+     "jogo": "Bogota x Itaquera",
+     "odd": 2.15
     }
    ],
    "alvo": {
-    "h": "01:43",
-    "jogo": "Porto Alegre x Santiago",
-    "odd": 2.1,
+    "h": "01:46",
+    "jogo": "Guayaquil x Lima",
+    "odd": 1.86,
     "unidades": 1,
-    "desde": 1784594055908
+    "desde": 1784595012411
    },
-   "iniciadoEm": 1784594055908
+   "iniciadoEm": 1784595012411
   },
   "cooldown": {
    "euro": 1784588241921,
@@ -479,7 +479,7 @@
    "tipo": "time",
    "chave": "Guayaquil",
    "n": 7,
-   "start": 3
+   "start": 1
   }
  }
 }
