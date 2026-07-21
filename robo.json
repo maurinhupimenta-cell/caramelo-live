@@ -289,8 +289,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "19:13",
@@ -310,13 +310,21 @@
    ],
    "gatilho": "placar acima de 1-0 (2-1)",
    "alvo": {
-    "h": "19:13",
-    "jogo": "Marrocos x Uzbequistão",
+    "h": "19:16",
+    "jogo": "Argélia x Bélgica",
     "odd": 2.35,
-    "unidades": 1,
-    "desde": 1784657470856
+    "unidades": 2,
+    "desde": 1784657751959
    },
-   "iniciadoEm": 1784657470856
+   "iniciadoEm": 1784657470856,
+   "tiros": [
+    {
+     "h": "19:13",
+     "jogo": "Marrocos x Uzbequistão",
+     "odd": 2.35,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784650749450,
@@ -337,7 +345,7 @@
    "tipo": "odd",
    "chave": "2.55",
    "n": 10,
-   "start": 2
+   "start": 1
   }
  },
  "ambas": {
