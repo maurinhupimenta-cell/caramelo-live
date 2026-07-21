@@ -184,13 +184,19 @@
   }
  },
  "o25": {
-  "saldo": -12.2,
-  "ciclos": 174,
-  "greens": 122,
+  "saldo": -9.7,
+  "ciclos": 175,
+  "greens": 123,
   "redsCiclo": 29,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-21T05:58:04.633Z",
+    "resultado": "GREEN",
+    "unidades": 2.5,
+    "detalhe": "copa · Tunísia x Iraque @2.75 (tiro 2)"
+   },
    {
     "quando": "2026-07-21T05:44:04.837Z",
     "resultado": "GREEN",
@@ -304,59 +310,15 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "super · Guayaquil x Santos @2.25 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-20T22:24:00.614Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "euro · Itália x Hungria @2.4 (tiro 1)"
    }
   ],
   "consumidas": {
-   "super": 1784610247137,
-   "premier": 1784610888238,
-   "euro": 1784612644736
+   "euro": 1784612644736,
+   "copa": 1784613484433
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "06:52",
-     "jogo": "Arábia Saudita x Egito",
-     "odd": 2.07
-    },
-    {
-     "h": "06:55",
-     "jogo": "Tunísia x Iraque",
-     "odd": 2.75
-    },
-    {
-     "h": "06:58",
-     "jogo": "México x Austrália",
-     "odd": 2.2
-    }
-   ],
-   "alvo": {
-    "h": "06:55",
-    "jogo": "Tunísia x Iraque",
-    "odd": 2.75,
-    "unidades": 2,
-    "desde": 1784613304639
-   },
-   "iniciadoEm": 1784612945641,
-   "tiros": [
-    {
-     "h": "06:52",
-     "jogo": "Arábia Saudita x Egito",
-     "odd": 2.07,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784609344039,
+   "copa": 1784613484433,
    "premier": 1784610888238,
    "euro": 1784612644736,
    "super": 1784610247137
@@ -368,13 +330,13 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": 4.1
+   "2026-07-21": 6.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Costa do Marfim",
-   "n": 7,
-   "start": 2
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 23,
+   "start": 1
   }
  },
  "ambas": {
