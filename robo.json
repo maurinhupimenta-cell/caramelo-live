@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -77,
-  "ciclos": 147,
-  "greens": 54,
+  "saldo": -72,
+  "ciclos": 148,
+  "greens": 55,
   "redsCiclo": 59,
   "aborts": 0,
   "descartes": 34,
   "historico": [
+   {
+    "quando": "2026-07-21T11:53:08.431Z",
+    "resultado": "GREEN",
+    "unidades": 5,
+    "detalhe": "euro · Inglaterra x Portugal @4 (tiro 2)"
+   },
    {
     "quando": "2026-07-21T11:20:37.238Z",
     "resultado": "RED_CICLO",
@@ -120,60 +126,18 @@
     "resultado": "GREEN",
     "unidades": 8,
     "detalhe": "super · Santiago x Guayaquil @3.75 (tiro 3)"
-   },
-   {
-    "quando": "2026-07-20T18:50:44.709Z",
-    "resultado": "GREEN",
-    "unidades": 12,
-    "detalhe": "premier · Aston x Watford @4.75 (tiro 3)"
    }
   ],
   "consumidas": {
    "copa": 1784631286938,
-   "premier": 1784632837137
+   "premier": 1784632837137,
+   "euro": 1784634788236
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "12:47",
-     "jogo": "Geórgia x Alemanha",
-     "odd": 4.33
-    },
-    {
-     "h": "12:50",
-     "jogo": "Inglaterra x Portugal",
-     "odd": 4
-    },
-    {
-     "h": "12:53",
-     "jogo": "Itália x Escócia",
-     "odd": 4.5
-    }
-   ],
-   "alvo": {
-    "h": "12:50",
-    "jogo": "Inglaterra x Portugal",
-    "odd": 4,
-    "unidades": 2,
-    "desde": 1784634587542
-   },
-   "iniciadoEm": 1784634228449,
-   "tiros": [
-    {
-     "h": "12:47",
-     "jogo": "Geórgia x Alemanha",
-     "odd": 4.33,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784631286938,
    "premier": 1784632837137,
-   "euro": 1784629008239,
+   "euro": 1784634788236,
    "super": 1784630409233
   },
   "dias": {
@@ -182,7 +146,7 @@
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
    "2026-07-20": 19.6,
-   "2026-07-21": -19.3
+   "2026-07-21": -14.3
   },
   "_gatilhoAtual": {
    "tipo": "placar",
