@@ -2107,7 +2107,8 @@ function calculaPadroes(liga, mkt) {
     // ===== CACA PADRAO DE ODD E TIMES (desfecho no ciclo de 3 tiros, vs regua do ciclo) =====
     const okey = mkt === "ambas" ? "ambs" : mkt;
     // janela CENTRADA no jogo do gatilho: 1 antes + NELE + 1 depois (spec do usuario)
-    const ciclo3 = i => seq.slice(Math.max(0, i - 1), i + 2).includes("G");
+    const ciclo3 = i => seq.slice(Math.max(0, i - 1), i + 2).includes("G"); // janela CENTRADA (odd/time: 1 antes · nele · 1 depois)
+    const ciclo3Depois = i => seq.slice(i + 1, i + 4).includes("G"); // SO os 3 SEGUINTES (placar/coluna: o que o robo aposta; sem contar o proprio gatilho)
     const porOdd = {}, porTime = {};
     for (let i = 1; i + 1 < games.length; i++) {
       const g = games[i]; const pago = ciclo3(i);
@@ -2139,14 +2140,14 @@ function calculaPadroes(liga, mkt) {
     };
     const porPlacar = {};
     for (let i = 0; i + 1 < games.length; i++) {
-      const cat = catPlacar(games[i]); const pago = ciclo3(i);
+      const cat = catPlacar(games[i]); const pago = ciclo3Depois(i);
       (porPlacar[cat] = porPlacar[cat] || [0, 0])[0]++; if (pago) porPlacar[cat][1]++;
     }
     // ===== FAMILIA 2: PADRAO DE COLUNA (minuto do relogio) =====
     const porColuna = {};
     for (let i = 1; i + 1 < games.length; i++) {
       const min = (games[i].horario || "").split(":")[1]; if (!min) continue;
-      const pago = ciclo3(i);
+      const pago = ciclo3Depois(i);
       (porColuna[":" + min] = porColuna[":" + min] || [0, 0])[0]++; if (pago) porColuna[":" + min][1]++;
     }
     // ===== FAMILIA 3: PADRAO DE PULO (distancia entre greens: 5, 6, 10 casas...) =====
