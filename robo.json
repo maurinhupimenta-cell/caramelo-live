@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -100.9,
-  "ciclos": 155,
+  "saldo": -107.9,
+  "ciclos": 156,
   "greens": 57,
-  "redsCiclo": 64,
+  "redsCiclo": 65,
   "aborts": 0,
   "descartes": 34,
   "historico": [
+   {
+    "quando": "2026-07-21T15:58:12.949Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
+   },
    {
     "quando": "2026-07-21T15:47:49.854Z",
     "resultado": "GREEN",
@@ -120,65 +126,16 @@
     "resultado": "GREEN",
     "unidades": 8,
     "detalhe": "super · La Plata x Quito @5.5 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-21T01:50:40.915Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {
    "super": 1784646972959,
-   "premier": 1784648869657
+   "premier": 1784648869657,
+   "copa": 1784649492750
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "16:49",
-     "jogo": "Curação x Tunísia",
-     "odd": 4.75
-    },
-    {
-     "h": "16:52",
-     "jogo": "Colômbia x Costa do Marfim",
-     "odd": 4
-    },
-    {
-     "h": "16:55",
-     "jogo": "Egito x Argélia",
-     "odd": 4.2
-    }
-   ],
-   "gatilho": "placar empate 2-2",
-   "alvo": {
-    "h": "16:55",
-    "jogo": "Egito x Argélia",
-    "odd": 4.2,
-    "unidades": 4,
-    "desde": 1784649312651
-   },
-   "iniciadoEm": 1784648883355,
-   "tiros": [
-    {
-     "h": "16:49",
-     "jogo": "Curação x Tunísia",
-     "odd": 4.75,
-     "unidades": 1
-    },
-    {
-     "h": "16:52",
-     "jogo": "Colômbia x Costa do Marfim",
-     "odd": 4,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784643372759,
+   "copa": 1784649492750,
    "premier": 1784648869657,
    "euro": 1784644169356,
    "super": 1784646972959
@@ -189,7 +146,7 @@
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
    "2026-07-20": 19.6,
-   "2026-07-21": -43.2
+   "2026-07-21": -50.2
   },
   "_gatilhoAtual": {
    "tipo": "placar",
