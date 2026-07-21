@@ -134,8 +134,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:10",
@@ -154,13 +154,21 @@
     }
    ],
    "alvo": {
-    "h": "05:10",
-    "jogo": "Suíça x Argélia",
-    "odd": 4.75,
-    "unidades": 1,
-    "desde": 1784606924340
+    "h": "05:13",
+    "jogo": "Portugal x Jordânia",
+    "odd": 4.2,
+    "unidades": 2,
+    "desde": 1784607165141
    },
-   "iniciadoEm": 1784606924340
+   "iniciadoEm": 1784606924340,
+   "tiros": [
+    {
+     "h": "05:10",
+     "jogo": "Suíça x Argélia",
+     "odd": 4.75,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784585350910,
@@ -520,10 +528,10 @@
    "2026-07-21": 3.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Palace",
-   "n": 13,
-   "start": 2
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 12,
+   "start": 1
   }
  }
 }
