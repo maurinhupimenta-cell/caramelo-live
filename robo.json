@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -142.9,
-  "ciclos": 162,
+  "saldo": -149.9,
+  "ciclos": 163,
   "greens": 57,
-  "redsCiclo": 70,
+  "redsCiclo": 71,
   "aborts": 0,
   "descartes": 35,
   "historico": [
+   {
+    "quando": "2026-07-21T21:42:39.758Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
+   },
    {
     "quando": "2026-07-21T18:58:11.457Z",
     "resultado": "RED_CICLO",
@@ -120,59 +126,47 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-21T09:41:52.438Z",
-    "resultado": "GREEN",
-    "unidades": 8.2,
-    "detalhe": "premier · Newcastle x Palace @3.8 (tiro 3)"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "super": 1784670159654
+  },
   "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "21:28",
-     "jogo": "Belo Horizonte x Medellin",
-     "odd": 4.33
+     "h": "22:43",
+     "jogo": "Nova Zelândia x Tunísia",
+     "odd": 5.25
     },
     {
-     "h": "21:31",
-     "jogo": "Santos x Guayaquil",
-     "odd": 4.5
+     "h": "22:46",
+     "jogo": "Haiti x Turquia",
+     "odd": 4.2
     },
     {
-     "h": "21:34",
-     "jogo": "Santiago x Penarol",
+     "h": "22:49",
+     "jogo": "Países Baixos x Colômbia",
      "odd": 4.5
     }
    ],
    "gatilho": "placar empate 2-2",
-   "alvo": null,
-   "iniciadoEm": 1784665551150,
-   "tiros": [
-    {
-     "h": "21:28",
-     "jogo": "Belo Horizonte x Medellin",
-     "odd": 4.33,
-     "unidades": 1
-    },
-    {
-     "h": "21:31",
-     "jogo": "Santos x Guayaquil",
-     "odd": 4.5,
-     "unidades": 2
-    }
-   ]
+   "alvo": {
+    "h": "22:43",
+    "jogo": "Nova Zelândia x Tunísia",
+    "odd": 5.25,
+    "unidades": 1,
+    "desde": 1784670173857
+   },
+   "iniciadoEm": 1784670173857
   },
   "cooldown": {
    "copa": 1784660291350,
    "premier": 1784657321350,
    "euro": 1784650513155,
-   "super": 1784658853060
+   "super": 1784670159654
   },
   "dias": {
    "2026-07-15": -35,
@@ -180,12 +174,12 @@
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
    "2026-07-20": 19.6,
-   "2026-07-21": -85.2
+   "2026-07-21": -92.2
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 28,
+   "n": 13,
    "start": 1
   }
  },
@@ -335,13 +329,19 @@
      "odd": 2.3
     },
     {
-     "h": "21:35",
-     "jogo": "Espanha x Países Baixos",
-     "odd": 1.98
+     "h": "22:44",
+     "jogo": "Países Baixos x Dinamarca",
+     "odd": 2.2
     }
    ],
    "gatilho": "placar acima de 1-0 (2-1)",
-   "alvo": null,
+   "alvo": {
+    "h": "22:44",
+    "jogo": "Países Baixos x Dinamarca",
+    "odd": 2.2,
+    "unidades": 4,
+    "desde": 1784670156351
+   },
    "iniciadoEm": 1784665571556,
    "tiros": [
     {
@@ -356,7 +356,8 @@
      "odd": 2.3,
      "unidades": 2
     }
-   ]
+   ],
+   "semAlvoDesde": null
   },
   "cooldown": {
    "copa": 1784658070352,
@@ -375,19 +376,25 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 69,
+   "chave": "empate 2-2",
+   "n": 13,
    "start": 1
   }
  },
  "ambas": {
-  "saldo": -12.3,
-  "ciclos": 213,
+  "saldo": -19.3,
+  "ciclos": 214,
   "greens": 157,
-  "redsCiclo": 25,
+  "redsCiclo": 26,
   "aborts": 0,
   "descartes": 31,
   "historico": [
+   {
+    "quando": "2026-07-21T21:42:39.958Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: odd 2.07"
+   },
    {
     "quando": "2026-07-21T20:25:54.658Z",
     "resultado": "GREEN",
@@ -501,60 +508,46 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "copa · Irã x EUA @2.1 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-21T13:38:37.340Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Islington x Watford @2.05 (tiro 1)"
    }
   ],
   "consumidas": {
-   "euro": 1784665554458
+   "premier": 1784670159853
   },
   "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "21:33",
-     "jogo": "City x Brentford",
-     "odd": 2.02
+     "h": "22:43",
+     "jogo": "Nova Zelândia x Tunísia",
+     "odd": 2.1
     },
     {
-     "h": "21:36",
-     "jogo": "Liverpool x Aston",
-     "odd": 2.07
+     "h": "22:46",
+     "jogo": "Haiti x Turquia",
+     "odd": 1.93
     },
     {
-     "h": "21:39",
-     "jogo": "Southampton x Burnley",
-     "odd": 1.98
+     "h": "22:49",
+     "jogo": "Países Baixos x Colômbia",
+     "odd": 2
     }
    ],
-   "gatilho": "odd 2.07",
+   "gatilho": "seq RRRGG",
    "alvo": {
-    "h": "21:36",
-    "jogo": "Liverpool x Aston",
-    "odd": 2.07,
-    "unidades": 2,
-    "desde": 1784666140257
+    "h": "22:43",
+    "jogo": "Nova Zelândia x Tunísia",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1784670174152
    },
-   "iniciadoEm": 1784665556656,
-   "tiros": [
-    {
-     "h": "21:33",
-     "jogo": "City x Brentford",
-     "odd": 2.02,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1784670174152
   },
   "cooldown": {
    "euro": 1784665554458,
    "super": 1784657531256,
-   "premier": 1784660209560,
+   "premier": 1784670159853,
    "copa": 1784656932655
   },
   "dias": {
@@ -563,12 +556,12 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": 2.8
+   "2026-07-21": -4.2
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGRG",
-   "n": 23,
+   "chave": "RRRGG",
+   "n": 10,
    "start": 1
   }
  }
