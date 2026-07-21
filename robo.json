@@ -288,8 +288,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "18:53",
@@ -309,13 +309,21 @@
    ],
    "gatilho": "placar acima de 1-0 (2-1)",
    "alvo": {
-    "h": "18:53",
-    "jogo": "Hungria x Eslováquia",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1784656326157
+    "h": "18:56",
+    "jogo": "Portugal x Romênia",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1784656571553
    },
-   "iniciadoEm": 1784656326157
+   "iniciadoEm": 1784656326157,
+   "tiros": [
+    {
+     "h": "18:53",
+     "jogo": "Hungria x Eslováquia",
+     "odd": 2.4,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784650749450,
@@ -333,9 +341,9 @@
    "2026-07-21": -16.6
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 62,
+   "tipo": "seq",
+   "chave": "GRGGR",
+   "n": 10,
    "start": 1
   }
  },
@@ -519,9 +527,9 @@
    "2026-07-21": 5.9
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 42,
+   "tipo": "time",
+   "chave": "Egito",
+   "n": 19,
    "start": 1
   }
  }
