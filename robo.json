@@ -324,7 +324,36 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:50",
+     "jogo": "Croácia x Turquia",
+     "odd": 2.4
+    },
+    {
+     "h": "10:53",
+     "jogo": "Albânia x Romênia",
+     "odd": 2.45
+    },
+    {
+     "h": "10:56",
+     "jogo": "Turquia x Espanha",
+     "odd": 2.25
+    }
+   ],
+   "alvo": {
+    "h": "10:50",
+    "jogo": "Croácia x Turquia",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1784626868145
+   },
+   "iniciadoEm": 1784626868145
+  },
   "cooldown": {
    "copa": 1784613484433,
    "premier": 1784610888238,
@@ -341,10 +370,10 @@
    "2026-07-21": 6.6
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 33,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.45",
+   "n": 9,
+   "start": 3
   }
  },
  "ambas": {
@@ -478,34 +507,34 @@
   ],
   "consumidas": {},
   "ciclo": {
-   "liga": "copa",
+   "liga": "super",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "07:01",
-     "jogo": "Senegal x Cabo Verde",
+     "h": "10:43",
+     "jogo": "Avellaneda x Sao Paulo",
+     "odd": 1.87
+    },
+    {
+     "h": "10:46",
+     "jogo": "Rio de Janeiro x Penarol",
      "odd": 2.15
     },
     {
-     "h": "07:04",
-     "jogo": "Coreia do Sul x Costa do Marfim",
-     "odd": 2
-    },
-    {
-     "h": "07:07",
-     "jogo": "Egito x Haiti",
-     "odd": 1.9
+     "h": "10:49",
+     "jogo": "Sao Paulo x Lima",
+     "odd": 1.86
     }
    ],
    "alvo": {
-    "h": "07:01",
-    "jogo": "Senegal x Cabo Verde",
-    "odd": 2.15,
+    "h": "10:43",
+    "jogo": "Avellaneda x Sao Paulo",
+    "odd": 1.87,
     "unidades": 1,
-    "desde": 1784625948835
+    "desde": 1784626850245
    },
-   "iniciadoEm": 1784625948835
+   "iniciadoEm": 1784626850245
   },
   "cooldown": {
    "euro": 1784610824637,
