@@ -289,7 +289,37 @@
    "euro": 1784650513352,
    "copa": 1784650749450
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:36",
+     "jogo": "Everton x United",
+     "odd": 2.15
+    },
+    {
+     "h": "17:39",
+     "jogo": "City x Norwich",
+     "odd": 2.1
+    },
+    {
+     "h": "17:42",
+     "jogo": "Wolverhampton x Southampton",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-1)",
+   "alvo": {
+    "h": "17:36",
+    "jogo": "Everton x United",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1784651590653
+   },
+   "iniciadoEm": 1784651590653
+  },
   "cooldown": {
    "copa": 1784650749450,
    "premier": 1784647794057,
@@ -308,7 +338,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "acima de 1-0 (2-1)",
-   "n": 63,
+   "n": 42,
    "start": 1
   }
  },
