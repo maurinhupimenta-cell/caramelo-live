@@ -284,12 +284,40 @@
    }
   ],
   "consumidas": {
-   "euro": 1784608864439,
    "copa": 1784609344039,
    "super": 1784610247137,
    "premier": 1784610888238
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:41",
+     "jogo": "Itália x Dinamarca",
+     "odd": 2.4
+    },
+    {
+     "h": "06:44",
+     "jogo": "Bélgica x Inglaterra",
+     "odd": 2.02
+    },
+    {
+     "h": "06:47",
+     "jogo": "República Tcheca x Dinamarca",
+     "odd": 2.7
+    }
+   ],
+   "alvo": {
+    "h": "06:41",
+    "jogo": "Itália x Dinamarca",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1784612464743
+   },
+   "iniciadoEm": 1784612464743
+  },
   "cooldown": {
    "copa": 1784609344039,
    "premier": 1784610888238,
@@ -307,8 +335,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 16,
+   "chave": "goleada (3+)",
+   "n": 22,
    "start": 1
   }
  },
