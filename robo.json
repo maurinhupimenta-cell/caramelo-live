@@ -129,7 +129,36 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:42",
+     "jogo": "Brentford x Newcastle",
+     "odd": 4
+    },
+    {
+     "h": "02:45",
+     "jogo": "Leicester x Brighton",
+     "odd": 4
+    },
+    {
+     "h": "02:48",
+     "jogo": "Liverpool x Southampton",
+     "odd": 4.75
+    }
+   ],
+   "alvo": {
+    "h": "02:42",
+    "jogo": "Brentford x Newcastle",
+    "odd": 4,
+    "unidades": 1,
+    "desde": 1784597930312
+   },
+   "iniciadoEm": 1784597930312
+  },
   "cooldown": {
    "copa": 1784585350910,
    "premier": 1784586224108,
@@ -145,8 +174,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 18,
+   "chave": "0-0",
+   "n": 6,
    "start": 1
   }
  },
