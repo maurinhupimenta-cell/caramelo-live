@@ -290,8 +290,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "13:17",
@@ -310,13 +310,21 @@
     }
    ],
    "alvo": {
-    "h": "13:17",
-    "jogo": "Bélgica x Suíça",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1784636027743
+    "h": "13:20",
+    "jogo": "Alemanha x Eslováquia",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1784636388144
    },
-   "iniciadoEm": 1784636027743
+   "iniciadoEm": 1784636027743,
+   "tiros": [
+    {
+     "h": "13:17",
+     "jogo": "Bélgica x Suíça",
+     "odd": 2.07,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784632547639,
@@ -334,9 +342,9 @@
    "2026-07-21": -6.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRG",
-   "n": 5,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 41,
    "start": 1
   }
  },
@@ -474,7 +482,44 @@
    "copa": 1784633808532,
    "super": 1784636169241
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "13:17",
+     "jogo": "Bélgica x Suíça",
+     "odd": 1.86
+    },
+    {
+     "h": "13:20",
+     "jogo": "Alemanha x Eslováquia",
+     "odd": 2.02
+    },
+    {
+     "h": "13:23",
+     "jogo": "Ucrânia x Croácia",
+     "odd": 1.95
+    }
+   ],
+   "alvo": {
+    "h": "13:20",
+    "jogo": "Alemanha x Eslováquia",
+    "odd": 2.02,
+    "unidades": 2,
+    "desde": 1784636388337
+   },
+   "iniciadoEm": 1784636171037,
+   "tiros": [
+    {
+     "h": "13:17",
+     "jogo": "Bélgica x Suíça",
+     "odd": 1.86,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1784632248731,
    "super": 1784636169241,
@@ -490,9 +535,9 @@
    "2026-07-21": -12.3
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.83",
-   "n": 11,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 41,
    "start": 1
   }
  }
