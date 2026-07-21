@@ -151,13 +151,19 @@
   }
  },
  "o25": {
-  "saldo": -20.6,
-  "ciclos": 157,
-  "greens": 107,
+  "saldo": -16.8,
+  "ciclos": 158,
+  "greens": 108,
   "redsCiclo": 27,
   "aborts": 0,
   "descartes": 23,
   "historico": [
+   {
+    "quando": "2026-07-21T01:02:05.319Z",
+    "resultado": "GREEN",
+    "unidades": 3.8,
+    "detalhe": "euro · Ucrânia x Albânia @2.7 (tiro 3)"
+   },
    {
     "quando": "2026-07-20T23:08:12.608Z",
     "resultado": "GREEN",
@@ -271,63 +277,16 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-20T17:20:38.707Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Burnley x Wolverhampton @2 (tiro 1)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "01:53",
-     "jogo": "Turquia x Croácia",
-     "odd": 2.4
-    },
-    {
-     "h": "01:56",
-     "jogo": "Polônia x Suíça",
-     "odd": 2.3
-    },
-    {
-     "h": "01:59",
-     "jogo": "Ucrânia x Albânia",
-     "odd": 2.7
-    }
-   ],
-   "alvo": {
-    "h": "01:59",
-    "jogo": "Ucrânia x Albânia",
-    "odd": 2.7,
-    "unidades": 4,
-    "desde": 1784595538518
-   },
-   "iniciadoEm": 1784595073113,
-   "tiros": [
-    {
-     "h": "01:53",
-     "jogo": "Turquia x Croácia",
-     "odd": 2.4,
-     "unidades": 1
-    },
-    {
-     "h": "01:56",
-     "jogo": "Polônia x Suíça",
-     "odd": 2.3,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "euro": 1784595725211
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784588892418,
    "premier": 1784585916508,
-   "euro": 1784586240511,
+   "euro": 1784595725211,
    "super": 1784588292815
   },
   "dias": {
@@ -336,11 +295,11 @@
    "2026-07-17": -12.1,
    "2026-07-18": 2.6,
    "2026-07-19": -12,
-   "2026-07-20": 32.3
+   "2026-07-20": 36.1
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
+   "chave": "goleada (3+)",
    "n": 6,
    "start": 1
   }
