@@ -362,10 +362,10 @@
    "2026-07-21": 3.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Norwich",
-   "n": 14,
-   "start": 2
+   "tipo": "coluna",
+   "chave": ":03",
+   "n": 5,
+   "start": 1
   }
  },
  "ambas": {
@@ -503,8 +503,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "04:59",
@@ -523,13 +523,21 @@
     }
    ],
    "alvo": {
-    "h": "04:59",
-    "jogo": "Albânia x Inglaterra",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1784606282533
+    "h": "05:02",
+    "jogo": "Áustria x Polônia",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1784606572142
    },
-   "iniciadoEm": 1784606282533
+   "iniciadoEm": 1784606282533,
+   "tiros": [
+    {
+     "h": "04:59",
+     "jogo": "Albânia x Inglaterra",
+     "odd": 2.05,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784602632818,
@@ -547,9 +555,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Polônia",
-   "n": 10,
-   "start": 2
+   "chave": "Espanha",
+   "n": 6,
+   "start": 3
   }
  }
 }
