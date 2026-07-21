@@ -133,8 +133,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "22:43",
@@ -154,13 +154,21 @@
    ],
    "gatilho": "placar empate 2-2",
    "alvo": {
-    "h": "22:43",
-    "jogo": "Nova Zelândia x Tunísia",
-    "odd": 5.25,
-    "unidades": 1,
-    "desde": 1784670173857
+    "h": "22:46",
+    "jogo": "Haiti x Turquia",
+    "odd": 4.2,
+    "unidades": 2,
+    "desde": 1784670354558
    },
-   "iniciadoEm": 1784670173857
+   "iniciadoEm": 1784670173857,
+   "tiros": [
+    {
+     "h": "22:43",
+     "jogo": "Nova Zelândia x Tunísia",
+     "odd": 5.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784660291350,
@@ -376,8 +384,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 13,
+   "chave": "goleada (3+)",
+   "n": 67,
    "start": 1
   }
  },
