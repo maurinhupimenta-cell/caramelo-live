@@ -154,13 +154,19 @@
   }
  },
  "o25": {
-  "saldo": -34,
-  "ciclos": 202,
-  "greens": 141,
+  "saldo": -32.9,
+  "ciclos": 203,
+  "greens": 142,
   "redsCiclo": 36,
   "aborts": 0,
   "descartes": 25,
   "historico": [
+   {
+    "quando": "2026-07-21T17:52:04.849Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Santiago x Itaquera @2.1 (tiro 1) · gatilho: odd 2.75"
+   },
    {
     "quando": "2026-07-21T17:47:03.250Z",
     "resultado": "GREEN",
@@ -274,53 +280,48 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "premier · Tottenham x Watford @2.5 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-21T11:25:09.432Z",
-    "resultado": "GREEN",
-    "unidades": 2,
-    "detalhe": "super · La Plata x Porto Alegre @3 (tiro 1)"
    }
   ],
   "consumidas": {
-   "premier": 1784656023060
+   "premier": 1784656023060,
+   "super": 1784656324651
   },
   "ciclo": {
-   "liga": "super",
+   "liga": "euro",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "18:49",
-     "jogo": "Santiago x Itaquera",
-     "odd": 2.1
+     "h": "18:53",
+     "jogo": "Hungria x Eslováquia",
+     "odd": 2.4
     },
     {
-     "h": "18:52",
-     "jogo": "Medellin x Porto Alegre",
-     "odd": 2.75
+     "h": "18:56",
+     "jogo": "Portugal x Romênia",
+     "odd": 2.15
     },
     {
-     "h": "18:55",
-     "jogo": "Montevideo x Santos",
-     "odd": 2.25
+     "h": "18:59",
+     "jogo": "Alemanha x Sérvia",
+     "odd": 2.35
     }
    ],
-   "gatilho": "odd 2.75",
+   "gatilho": "placar acima de 1-0 (2-1)",
    "alvo": {
-    "h": "18:49",
-    "jogo": "Santiago x Itaquera",
-    "odd": 2.1,
+    "h": "18:53",
+    "jogo": "Hungria x Eslováquia",
+    "odd": 2.4,
     "unidades": 1,
-    "desde": 1784656024156
+    "desde": 1784656326157
    },
-   "iniciadoEm": 1784656024156
+   "iniciadoEm": 1784656326157
   },
   "cooldown": {
    "copa": 1784650749450,
    "premier": 1784656023060,
    "euro": 1784650513352,
-   "super": 1784649732949
+   "super": 1784656324651
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -329,7 +330,7 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": -17.7
+   "2026-07-21": -16.6
   },
   "_gatilhoAtual": {
    "tipo": "placar",
