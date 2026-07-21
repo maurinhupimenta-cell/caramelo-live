@@ -131,7 +131,36 @@
   "consumidas": {
    "premier": 1784640216535
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:04",
+     "jogo": "Coreia do Sul x RD Congo",
+     "odd": 4.75
+    },
+    {
+     "h": "15:07",
+     "jogo": "Bósnia e Herzegovina x Uzbequistão",
+     "odd": 4.2
+    },
+    {
+     "h": "15:10",
+     "jogo": "Costa do Marfim x Austrália",
+     "odd": 4
+    }
+   ],
+   "alvo": {
+    "h": "15:04",
+    "jogo": "Coreia do Sul x RD Congo",
+    "odd": 4.75,
+    "unidades": 1,
+    "desde": 1784642473938
+   },
+   "iniciadoEm": 1784642473938
+  },
   "cooldown": {
    "copa": 1784631286938,
    "premier": 1784640216535,
@@ -149,7 +178,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 19,
+   "n": 8,
    "start": 1
   }
  },
