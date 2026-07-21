@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -107,
-  "ciclos": 153,
-  "greens": 55,
+  "saldo": -104.2,
+  "ciclos": 154,
+  "greens": 56,
   "redsCiclo": 64,
   "aborts": 0,
   "descartes": 34,
   "historico": [
+   {
+    "quando": "2026-07-21T15:16:13.153Z",
+    "resultado": "GREEN",
+    "unidades": 2.8,
+    "detalhe": "super · Sao Paulo x Agua Branca @3.75 (tiro 1) · gatilho: placar empate 2-2"
+   },
    {
     "quando": "2026-07-21T14:41:41.749Z",
     "resultado": "RED_CICLO",
@@ -120,55 +126,19 @@
     "resultado": "GREEN",
     "unidades": 4,
     "detalhe": "premier · Leeds x Chelsea @5 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T22:09:11.011Z",
-    "resultado": "GREEN",
-    "unidades": 4.3,
-    "detalhe": "copa · Suíça x Coreia do Sul @5.25 (tiro 1)"
    }
   ],
   "consumidas": {
-   "copa": 1784643372759,
    "euro": 1784644169356,
-   "premier": 1784644901458
+   "premier": 1784644901458,
+   "super": 1784646972959
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:13",
-     "jogo": "Sao Paulo x Agua Branca",
-     "odd": 3.75
-    },
-    {
-     "h": "16:16",
-     "jogo": "Santos x Montevideo",
-     "odd": 4.5
-    },
-    {
-     "h": "16:19",
-     "jogo": "La Plata x Itaquera",
-     "odd": 5.5
-    }
-   ],
-   "gatilho": "placar empate 2-2",
-   "alvo": {
-    "h": "16:13",
-    "jogo": "Sao Paulo x Agua Branca",
-    "odd": 3.75,
-    "unidades": 1,
-    "desde": 1784646611352
-   },
-   "iniciadoEm": 1784646611352
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784643372759,
    "premier": 1784644901458,
    "euro": 1784644169356,
-   "super": 1784635789732
+   "super": 1784646972959
   },
   "dias": {
    "2026-07-15": -35,
@@ -176,7 +146,7 @@
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
    "2026-07-20": 19.6,
-   "2026-07-21": -49.3
+   "2026-07-21": -46.5
   },
   "_gatilhoAtual": {
    "tipo": "placar",
