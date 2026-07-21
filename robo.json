@@ -393,9 +393,9 @@
    "2026-07-21": -14.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRG",
-   "n": 8,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 62,
    "start": 1
   }
  },
@@ -535,8 +535,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:12",
@@ -556,13 +556,21 @@
    ],
    "gatilho": "placar empate 1-1",
    "alvo": {
-    "h": "17:12",
-    "jogo": "West Ham x Liverpool",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1784650126561
+    "h": "17:15",
+    "jogo": "Leeds x Leicester",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1784650477554
    },
-   "iniciadoEm": 1784650126561
+   "iniciadoEm": 1784650126561,
+   "tiros": [
+    {
+     "h": "17:12",
+     "jogo": "West Ham x Liverpool",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784649791152,
@@ -579,9 +587,9 @@
    "2026-07-21": 1.8
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 46,
+   "tipo": "seq",
+   "chave": "RRGGR",
+   "n": 8,
    "start": 1
   }
  }
