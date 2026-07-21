@@ -312,13 +312,19 @@
   }
  },
  "ambas": {
-  "saldo": -24.5,
-  "ciclos": 191,
-  "greens": 138,
+  "saldo": -22.7,
+  "ciclos": 192,
+  "greens": 139,
   "redsCiclo": 24,
   "aborts": 0,
   "descartes": 29,
   "historico": [
+   {
+    "quando": "2026-07-21T13:24:49.234Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "super · Porto Alegre x Bogota @2.4 (tiro 2)"
+   },
    {
     "quando": "2026-07-21T12:45:47.833Z",
     "resultado": "GREEN",
@@ -432,60 +438,18 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "super · La Plata x Montevideo @2.1 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-21T04:20:43.736Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "premier · Palace x United @1.93 (tiro 3)"
    }
   ],
   "consumidas": {
    "euro": 1784636748539,
    "premier": 1784637168446,
-   "copa": 1784637947636
+   "copa": 1784637947636,
+   "super": 1784640288838
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "14:19",
-     "jogo": "Santiago x Penarol",
-     "odd": 1.95
-    },
-    {
-     "h": "14:22",
-     "jogo": "Porto Alegre x Bogota",
-     "odd": 2.4
-    },
-    {
-     "h": "14:25",
-     "jogo": "Asuncion x Quito",
-     "odd": 2
-    }
-   ],
-   "alvo": {
-    "h": "14:22",
-    "jogo": "Porto Alegre x Bogota",
-    "odd": 2.4,
-    "unidades": 2,
-    "desde": 1784640149239
-   },
-   "iniciadoEm": 1784639769634,
-   "tiros": [
-    {
-     "h": "14:19",
-     "jogo": "Santiago x Penarol",
-     "odd": 1.95,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784636748539,
-   "super": 1784636169241,
+   "super": 1784640288838,
    "premier": 1784637168446,
    "copa": 1784637947636
   },
@@ -495,12 +459,12 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": -9.4
+   "2026-07-21": -7.6
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":25",
-   "n": 14,
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 40,
    "start": 1
   }
  }
