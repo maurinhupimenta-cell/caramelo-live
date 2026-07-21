@@ -291,8 +291,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "12:05",
@@ -311,13 +311,21 @@
     }
    ],
    "alvo": {
-    "h": "12:05",
-    "jogo": "Inglaterra x Escócia",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1784631788240
+    "h": "12:08",
+    "jogo": "Turquia x Croácia",
+    "odd": 2.4,
+    "unidades": 2,
+    "desde": 1784632088337
    },
-   "iniciadoEm": 1784631788240
+   "iniciadoEm": 1784631788240,
+   "tiros": [
+    {
+     "h": "12:05",
+     "jogo": "Inglaterra x Escócia",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784628587137,
@@ -475,8 +483,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "12:05",
@@ -495,13 +503,21 @@
     }
    ],
    "alvo": {
-    "h": "12:05",
-    "jogo": "Inglaterra x Escócia",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1784631851037
+    "h": "12:08",
+    "jogo": "Turquia x Croácia",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1784632088442
    },
-   "iniciadoEm": 1784631851037
+   "iniciadoEm": 1784631851037,
+   "tiros": [
+    {
+     "h": "12:05",
+     "jogo": "Inglaterra x Escócia",
+     "odd": 1.9,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784628108237,
@@ -518,9 +534,9 @@
    "2026-07-21": -0.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGGR",
-   "n": 6,
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 32,
    "start": 1
   }
  }
