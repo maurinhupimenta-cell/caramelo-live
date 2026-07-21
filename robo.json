@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -63,
-  "ciclos": 145,
+  "saldo": -70,
+  "ciclos": 146,
   "greens": 54,
-  "redsCiclo": 57,
+  "redsCiclo": 58,
   "aborts": 0,
   "descartes": 34,
   "historico": [
+   {
+    "quando": "2026-07-21T10:54:47.135Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-21T10:40:09.336Z",
     "resultado": "GREEN",
@@ -120,64 +126,16 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-20T17:26:11.708Z",
-    "resultado": "GREEN",
-    "unidades": 5.4,
-    "detalhe": "euro · Portugal x Bélgica @4.2 (tiro 2)"
    }
   ],
   "consumidas": {
    "euro": 1784629008239,
-   "super": 1784630409233
+   "super": 1784630409233,
+   "copa": 1784631286938
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "11:46",
-     "jogo": "EUA x Austrália",
-     "odd": 4.33
-    },
-    {
-     "h": "11:49",
-     "jogo": "Espanha x Inglaterra",
-     "odd": 4.2
-    },
-    {
-     "h": "11:52",
-     "jogo": "Turquia x Irã",
-     "odd": 5.5
-    }
-   ],
-   "alvo": {
-    "h": "11:52",
-    "jogo": "Turquia x Irã",
-    "odd": 5.5,
-    "unidades": 4,
-    "desde": 1784631106837
-   },
-   "iniciadoEm": 1784630587733,
-   "tiros": [
-    {
-     "h": "11:46",
-     "jogo": "EUA x Austrália",
-     "odd": 4.33,
-     "unidades": 1
-    },
-    {
-     "h": "11:49",
-     "jogo": "Espanha x Inglaterra",
-     "odd": 4.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784607544035,
+   "copa": 1784631286938,
    "premier": 1784626912338,
    "euro": 1784629008239,
    "super": 1784630409233
@@ -188,7 +146,7 @@
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
    "2026-07-20": 19.6,
-   "2026-07-21": -5.3
+   "2026-07-21": -12.3
   },
   "_gatilhoAtual": {
    "tipo": "placar",
@@ -536,7 +494,7 @@
    "tipo": "odd",
    "chave": "1.83",
    "n": 9,
-   "start": 2
+   "start": 1
   }
  }
 }
