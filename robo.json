@@ -134,8 +134,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "19:49",
@@ -155,13 +155,21 @@
    ],
    "gatilho": "placar empate 2-2",
    "alvo": {
-    "h": "19:49",
-    "jogo": "Arábia Saudita x Coreia do Sul",
-    "odd": 4.75,
-    "unidades": 1,
-    "desde": 1784659571150
+    "h": "19:52",
+    "jogo": "Nova Zelândia x África do Sul",
+    "odd": 5,
+    "unidades": 2,
+    "desde": 1784659994352
    },
-   "iniciadoEm": 1784659571150
+   "iniciadoEm": 1784659571150,
+   "tiros": [
+    {
+     "h": "19:49",
+     "jogo": "Arábia Saudita x Coreia do Sul",
+     "odd": 4.75,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784649492750,
@@ -317,7 +325,37 @@
    "euro": 1784656931549,
    "copa": 1784658070352
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:55",
+     "jogo": "Itaquera x Bogota",
+     "odd": 2.6
+    },
+    {
+     "h": "19:58",
+     "jogo": "Sao Paulo x Rio de Janeiro",
+     "odd": 2.07
+    },
+    {
+     "h": "20:01",
+     "jogo": "Agua Branca x Lima",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "odd 2.6",
+   "alvo": {
+    "h": "19:55",
+    "jogo": "Itaquera x Bogota",
+    "odd": 2.6,
+    "unidades": 1,
+    "desde": 1784659931251
+   },
+   "iniciadoEm": 1784659931251
+  },
   "cooldown": {
    "copa": 1784658070352,
    "premier": 1784656023060,
@@ -334,9 +372,9 @@
    "2026-07-21": -12.5
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 11,
+   "tipo": "odd",
+   "chave": "2.6",
+   "n": 8,
    "start": 1
   }
  },
