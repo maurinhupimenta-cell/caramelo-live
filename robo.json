@@ -156,13 +156,19 @@
   }
  },
  "o25": {
-  "saldo": -26.5,
-  "ciclos": 182,
-  "greens": 126,
+  "saldo": -24.5,
+  "ciclos": 183,
+  "greens": 127,
   "redsCiclo": 32,
   "aborts": 0,
   "descartes": 24,
   "historico": [
+   {
+    "quando": "2026-07-21T11:25:09.432Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "super · La Plata x Porto Alegre @3 (tiro 1)"
+   },
    {
     "quando": "2026-07-21T11:15:47.834Z",
     "resultado": "GREEN",
@@ -276,53 +282,19 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "super · Santiago x Quito @2.1 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-21T02:34:12.412Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "copa · Marrocos x Bósnia e Herzegovina @2.2 (tiro 2)"
    }
   ],
   "consumidas": {
    "euro": 1784632248443,
-   "copa": 1784632547639
+   "copa": 1784632547639,
+   "super": 1784633109240
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "12:22",
-     "jogo": "La Plata x Porto Alegre",
-     "odd": 3
-    },
-    {
-     "h": "12:25",
-     "jogo": "Avellaneda x Penarol",
-     "odd": 2.5
-    },
-    {
-     "h": "12:28",
-     "jogo": "Quito x Guayaquil",
-     "odd": 2.2
-    }
-   ],
-   "alvo": {
-    "h": "12:22",
-    "jogo": "La Plata x Porto Alegre",
-    "odd": 3,
-    "unidades": 1,
-    "desde": 1784632750334
-   },
-   "iniciadoEm": 1784632750335
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784632547639,
    "premier": 1784629423034,
    "euro": 1784632248443,
-   "super": 1784629149644
+   "super": 1784633109240
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -331,7 +303,7 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": -10.2
+   "2026-07-21": -8.2
   },
   "_gatilhoAtual": {
    "tipo": "seq",
