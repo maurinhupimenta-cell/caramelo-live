@@ -318,7 +318,37 @@
    "copa": 1784650749450,
    "premier": 1784652118454
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:13",
+     "jogo": "Sao Paulo x Medellin",
+     "odd": 2.2
+    },
+    {
+     "h": "18:16",
+     "jogo": "Quito x Belo Horizonte",
+     "odd": 2.1
+    },
+    {
+     "h": "18:19",
+     "jogo": "Agua Branca x Asuncion",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-1)",
+   "alvo": {
+    "h": "18:13",
+    "jogo": "Sao Paulo x Medellin",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1784653809262
+   },
+   "iniciadoEm": 1784653809262
+  },
   "cooldown": {
    "copa": 1784650749450,
    "premier": 1784652118454,
@@ -337,7 +367,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "acima de 1-0 (2-1)",
-   "n": 43,
+   "n": 52,
    "start": 1
   }
  },
@@ -520,9 +550,9 @@
    "2026-07-21": 4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRR",
-   "n": 16,
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 10,
    "start": 1
   }
  }
