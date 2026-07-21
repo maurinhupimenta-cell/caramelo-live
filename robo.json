@@ -129,7 +129,6 @@
    }
   ],
   "consumidas": {
-   "premier": 1784606922632,
    "copa": 1784607544035
   },
   "ciclo": {
@@ -475,7 +474,36 @@
    "super": 1784608067040,
    "copa": 1784609144140
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:08",
+     "jogo": "Polônia x Sérvia",
+     "odd": 2.2
+    },
+    {
+     "h": "06:11",
+     "jogo": "Eslovênia x Inglaterra",
+     "odd": 2.05
+    },
+    {
+     "h": "06:14",
+     "jogo": "Sérvia x Croácia",
+     "odd": 2.05
+    }
+   ],
+   "alvo": {
+    "h": "06:08",
+    "jogo": "Polônia x Sérvia",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1784610286636
+   },
+   "iniciadoEm": 1784610286636
+  },
   "cooldown": {
    "euro": 1784606686043,
    "super": 1784608067040,
@@ -492,8 +520,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "México",
-   "n": 6,
+   "chave": "Sérvia",
+   "n": 8,
    "start": 1
   }
  }
