@@ -332,13 +332,19 @@
   }
  },
  "ambas": {
-  "saldo": -6.5,
-  "ciclos": 161,
+  "saldo": -13.5,
+  "ciclos": 162,
   "greens": 115,
-  "redsCiclo": 18,
+  "redsCiclo": 19,
   "aborts": 0,
   "descartes": 28,
   "historico": [
+   {
+    "quando": "2026-07-21T00:55:13.907Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros)"
+   },
    {
     "quando": "2026-07-21T00:50:11.116Z",
     "resultado": "DESCARTADO",
@@ -452,56 +458,15 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · Paraguai x Equador @1.95 (tiro 1)"
-   },
-   {
-    "quando": "2026-07-20T17:06:14.417Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "super · Avellaneda x Santiago @1.93 (tiro 1)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "01:46",
-     "jogo": "Guayaquil x Lima",
-     "odd": 1.86
-    },
-    {
-     "h": "01:49",
-     "jogo": "Santos x Belo Horizonte",
-     "odd": 1.93
-    },
-    {
-     "h": "01:52",
-     "jogo": "Bogota x Itaquera",
-     "odd": 2.15
-    }
-   ],
-   "alvo": {
-    "h": "01:49",
-    "jogo": "Santos x Belo Horizonte",
-    "odd": 1.93,
-    "unidades": 2,
-    "desde": 1784595192513
-   },
-   "iniciadoEm": 1784595012411,
-   "tiros": [
-    {
-     "h": "01:46",
-     "jogo": "Guayaquil x Lima",
-     "odd": 1.86,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "super": 1784595313717
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784588241921,
-   "super": 1784589167809,
+   "super": 1784595313717,
    "premier": 1784588397313,
    "copa": 1784573351513
   },
@@ -510,12 +475,12 @@
    "2026-07-16": -0.3,
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
-   "2026-07-20": 12.1
+   "2026-07-20": 5.1
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "acima de 1-0 (2-1)",
-   "n": 6,
+   "n": 7,
    "start": 1
   }
  }
