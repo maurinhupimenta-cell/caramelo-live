@@ -284,7 +284,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1784604913737,
    "copa": 1784605452433,
    "super": 1784605754138,
    "premier": 1784607103143
@@ -446,7 +445,36 @@
    "premier": 1784607643535,
    "super": 1784608067040
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:43",
+     "jogo": "Jordânia x Cabo Verde",
+     "odd": 1.93
+    },
+    {
+     "h": "05:46",
+     "jogo": "Japão x México",
+     "odd": 2.02
+    },
+    {
+     "h": "05:49",
+     "jogo": "Inglaterra x Qatar",
+     "odd": 2.05
+    }
+   ],
+   "alvo": {
+    "h": "05:43",
+    "jogo": "Jordânia x Cabo Verde",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1784608463946
+   },
+   "iniciadoEm": 1784608463946
+  },
   "cooldown": {
    "euro": 1784606686043,
    "super": 1784608067040,
@@ -462,10 +490,10 @@
    "2026-07-21": 5.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.05",
-   "n": 9,
-   "start": 1
+   "tipo": "time",
+   "chave": "México",
+   "n": 6,
+   "start": 3
   }
  }
 }
