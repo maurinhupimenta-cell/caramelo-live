@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -50.8,
-  "ciclos": 247,
-  "greens": 171,
+  "saldo": -49.8,
+  "ciclos": 248,
+  "greens": 172,
   "redsCiclo": 45,
   "aborts": 0,
   "descartes": 31,
   "historico": [
+   {
+    "quando": "2026-07-22T18:08:39.723Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Newcastle x Brighton @1.95 (tiro 1) · gatilho: seq RGGRR"
+   },
    {
     "quando": "2026-07-22T17:13:27.527Z",
     "resultado": "RED_CICLO",
@@ -273,51 +279,16 @@
     "resultado": "GREEN",
     "unidades": 2.8,
     "detalhe": "premier · West Ham x Norwich @2.45 (tiro 3) · gatilho: coluna :42"
-   },
-   {
-    "quando": "2026-07-22T09:40:24.234Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "copa · Cabo Verde x Áustria @2.2 (tiro 2) · gatilho: time Cabo Verde"
    }
   ],
   "consumidas": {
-   "copa": 1784740407331
+   "copa": 1784740407331,
+   "premier": 1784743719525
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "19:06",
-     "jogo": "Newcastle x Brighton",
-     "odd": 1.95
-    },
-    {
-     "h": "19:09",
-     "jogo": "Tottenham x Leicester",
-     "odd": 2.5
-    },
-    {
-     "h": "19:12",
-     "jogo": "Brighton x Watford",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "seq RGGRR",
-   "alvo": {
-    "h": "19:06",
-    "jogo": "Newcastle x Brighton",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1784743361625
-   },
-   "iniciadoEm": 1784743361625
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784740407331,
-   "premier": 1784738162229,
+   "premier": 1784743719525,
    "euro": 1784736146528,
    "super": 1784737229232
   },
@@ -329,7 +300,7 @@
    "2026-07-19": -12,
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
-   "2026-07-22": -12.2
+   "2026-07-22": -11.2
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -472,37 +443,7 @@
    "super": 1784740560931,
    "premier": 1784741569933
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:56",
-     "jogo": "Eslováquia x Itália",
-     "odd": 2.02
-    },
-    {
-     "h": "18:59",
-     "jogo": "República Tcheca x Ucrânia",
-     "odd": 2.15
-    },
-    {
-     "h": "19:02",
-     "jogo": "Eslováquia x Albânia",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "coluna :59",
-   "alvo": {
-    "h": "18:56",
-    "jogo": "Eslováquia x Itália",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1784742506830
-   },
-   "iniciadoEm": 1784742506830
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784737707135,
    "super": 1784740560931,
