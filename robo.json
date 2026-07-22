@@ -152,13 +152,19 @@
   }
  },
  "o25": {
-  "saldo": -36.2,
-  "ciclos": 213,
-  "greens": 149,
+  "saldo": -35.2,
+  "ciclos": 214,
+  "greens": 150,
   "redsCiclo": 38,
   "aborts": 0,
   "descartes": 26,
   "historico": [
+   {
+    "quando": "2026-07-22T05:17:18.132Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Suíça x França @2.02 (tiro 2) · gatilho: time Eslovênia"
+   },
    {
     "quando": "2026-07-22T05:13:00.733Z",
     "resultado": "GREEN",
@@ -272,61 +278,18 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "copa · RD Congo x Costa do Marfim @2.05 (tiro 3) · gatilho: placar acima de 1-0 (2-1)"
-   },
-   {
-    "quando": "2026-07-21T14:53:12.549Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: seq GRGRG"
    }
   ],
   "consumidas": {
    "copa": 1784696623631,
-   "super": 1784697180538
+   "super": 1784697180538,
+   "euro": 1784697437934
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "06:11",
-     "jogo": "Eslovênia x República Tcheca",
-     "odd": 3
-    },
-    {
-     "h": "06:14",
-     "jogo": "Suíça x França",
-     "odd": 2.02
-    },
-    {
-     "h": "06:17",
-     "jogo": "Áustria x Alemanha",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Eslovênia",
-   "alvo": {
-    "h": "06:14",
-    "jogo": "Suíça x França",
-    "odd": 2.02,
-    "unidades": 2,
-    "desde": 1784697270329
-   },
-   "iniciadoEm": 1784697182138,
-   "tiros": [
-    {
-     "h": "06:11",
-     "jogo": "Eslovênia x República Tcheca",
-     "odd": 3,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784696623631,
    "premier": 1784671219223,
-   "euro": 1784670453660,
+   "euro": 1784697437934,
    "super": 1784697180538
   },
   "dias": {
@@ -337,13 +300,13 @@
    "2026-07-19": -12,
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
-   "2026-07-22": 2.4
+   "2026-07-22": 3.4
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Southampton",
    "n": 9,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
@@ -530,7 +493,7 @@
    "tipo": "time",
    "chave": "Costa do Marfim",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
