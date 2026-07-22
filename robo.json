@@ -439,10 +439,39 @@
    }
   ],
   "consumidas": {
-   "premier": 1784741569933,
    "copa": 1784745051833
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:38",
+     "jogo": "República Tcheca x França",
+     "odd": 2.02
+    },
+    {
+     "h": "19:41",
+     "jogo": "Albânia x Geórgia",
+     "odd": 2.3
+    },
+    {
+     "h": "19:44",
+     "jogo": "Suíça x Países Baixos",
+     "odd": 1.8
+    }
+   ],
+   "gatilho": "odd 2.3",
+   "alvo": {
+    "h": "19:38",
+    "jogo": "República Tcheca x França",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1784745053531
+   },
+   "iniciadoEm": 1784745053531
+  },
   "cooldown": {
    "euro": 1784737707135,
    "super": 1784740560931,
