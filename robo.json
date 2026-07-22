@@ -182,13 +182,19 @@
   }
  },
  "o25": {
-  "saldo": -45.3,
-  "ciclos": 221,
-  "greens": 153,
+  "saldo": -43.1,
+  "ciclos": 222,
+  "greens": 154,
   "redsCiclo": 40,
   "aborts": 0,
   "descartes": 28,
   "historico": [
+   {
+    "quando": "2026-07-22T07:37:06.929Z",
+    "resultado": "GREEN",
+    "unidades": 2.2,
+    "detalhe": "super · Rio de Janeiro x Avellaneda @2.3 (tiro 3) · gatilho: odd 2.45"
+   },
    {
     "quando": "2026-07-22T07:22:06.640Z",
     "resultado": "GREEN_OBS",
@@ -302,67 +308,18 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "super · Santiago x Itaquera @2.1 (tiro 1) · gatilho: odd 2.75"
-   },
-   {
-    "quando": "2026-07-21T17:47:03.250Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "premier · Watford x Wolverhampton @2.1 (tiro 3) · gatilho: placar goleada (3+)"
    }
   ],
   "consumidas": {
-   "premier": 1784703222636
+   "premier": 1784703222636,
+   "super": 1784705826639
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "08:28",
-     "jogo": "Agua Branca x Montevideo",
-     "odd": 2.07
-    },
-    {
-     "h": "08:31",
-     "jogo": "Porto Alegre x Lima",
-     "odd": 2.45
-    },
-    {
-     "h": "08:34",
-     "jogo": "Rio de Janeiro x Avellaneda",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "odd 2.45",
-   "alvo": {
-    "h": "08:34",
-    "jogo": "Rio de Janeiro x Avellaneda",
-    "odd": 2.3,
-    "unidades": 4,
-    "desde": 1784705645942
-   },
-   "iniciadoEm": 1784704943839,
-   "tiros": [
-    {
-     "h": "08:28",
-     "jogo": "Agua Branca x Montevideo",
-     "odd": 2.07,
-     "unidades": 1
-    },
-    {
-     "h": "08:31",
-     "jogo": "Porto Alegre x Lima",
-     "odd": 2.45,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784701904334,
    "premier": 1784703222636,
    "euro": 1784702105533,
-   "super": 1784701326040
+   "super": 1784705826639
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -372,11 +329,11 @@
    "2026-07-19": -12,
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
-   "2026-07-22": -6.7
+   "2026-07-22": -4.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Cabo Verde",
+   "tipo": "seq",
+   "chave": "RRGG",
    "n": 9,
    "start": 1
   },
