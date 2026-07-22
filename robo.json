@@ -283,7 +283,37 @@
   "consumidas": {
    "copa": 1784696623631
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:10",
+     "jogo": "Guayaquil x Sao Paulo",
+     "odd": 2.02
+    },
+    {
+     "h": "06:13",
+     "jogo": "Porto Alegre x Rio de Janeiro",
+     "odd": 2.55
+    },
+    {
+     "h": "06:16",
+     "jogo": "Itaquera x Santos",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "time Porto Alegre",
+   "alvo": {
+    "h": "06:10",
+    "jogo": "Guayaquil x Sao Paulo",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1784696624733
+   },
+   "iniciadoEm": 1784696624733
+  },
   "cooldown": {
    "copa": 1784696623631,
    "premier": 1784671219223,
@@ -304,7 +334,7 @@
    "tipo": "time",
    "chave": "Eslovênia",
    "n": 10,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -440,8 +470,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "06:00",
@@ -461,11 +491,11 @@
    ],
    "gatilho": "seq GRRR",
    "alvo": {
-    "h": "06:03",
-    "jogo": "United x Leeds",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1784696563032
+    "h": "06:06",
+    "jogo": "Burnley x Liverpool",
+    "odd": 1.9,
+    "unidades": 4,
+    "desde": 1784696746831
    },
    "iniciadoEm": 1784696226439,
    "tiros": [
@@ -474,6 +504,12 @@
      "jogo": "Chelsea x Watford",
      "odd": 2.05,
      "unidades": 1
+    },
+    {
+     "h": "06:03",
+     "jogo": "United x Leeds",
+     "odd": 2.2,
+     "unidades": 2
     }
    ]
   },
@@ -496,7 +532,7 @@
    "tipo": "time",
    "chave": "Eslovênia",
    "n": 10,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
