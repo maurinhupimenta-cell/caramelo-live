@@ -129,7 +129,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:45",
+     "jogo": "Wolverhampton x Southampton",
+     "odd": 4.33
+    },
+    {
+     "h": "08:48",
+     "jogo": "West Ham x Islington",
+     "odd": 5
+    },
+    {
+     "h": "08:51",
+     "jogo": "Southampton x Brighton",
+     "odd": 4.2
+    }
+   ],
+   "gatilho": "coluna :48",
+   "alvo": {
+    "h": "08:45",
+    "jogo": "Wolverhampton x Southampton",
+    "odd": 4.33,
+    "unidades": 1,
+    "desde": 1784705748534
+   },
+   "iniciadoEm": 1784705748534
+  },
   "cooldown": {
    "copa": 1784670696456,
    "premier": 1784671007920,
@@ -145,10 +175,10 @@
    "2026-07-21": -96.4
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 25,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":48",
+   "n": 8,
+   "start": 3
   }
  },
  "o25": {
