@@ -356,13 +356,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -30.3,
-  "ciclos": 250,
-  "greens": 180,
+  "saldo": -29,
+  "ciclos": 251,
+  "greens": 181,
   "redsCiclo": 31,
   "aborts": 0,
   "descartes": 39,
   "historico": [
+   {
+    "quando": "2026-07-22T15:05:26.526Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "euro · Hungria x Geórgia @2.15 (tiro 2) · gatilho: coluna :59"
+   },
    {
     "quando": "2026-07-22T14:46:28.524Z",
     "resultado": "GREEN",
@@ -476,59 +482,16 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho odd 2.1) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-22T08:16:05.531Z",
-    "resultado": "GREEN",
-    "unidades": 1.6,
-    "detalhe": "super · Itaquera x Penarol @2.15 (tiro 3) · gatilho: odd 2.1"
    }
   ],
   "consumidas": {
    "copa": 1784729772424,
-   "super": 1784731588322
+   "super": 1784731588322,
+   "euro": 1784732726334
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "15:56",
-     "jogo": "Itália x Croácia",
-     "odd": 1.98
-    },
-    {
-     "h": "15:59",
-     "jogo": "Hungria x Geórgia",
-     "odd": 2.15
-    },
-    {
-     "h": "16:02",
-     "jogo": "Países Baixos x Eslovênia",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "coluna :59",
-   "alvo": {
-    "h": "15:59",
-    "jogo": "Hungria x Geórgia",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1784732334533
-   },
-   "iniciadoEm": 1784731706633,
-   "tiros": [
-    {
-     "h": "15:56",
-     "jogo": "Itália x Croácia",
-     "odd": 1.98,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784725487431,
+   "euro": 1784732726334,
    "super": 1784731588322,
    "premier": 1784727523924,
    "copa": 1784729772424
@@ -540,13 +503,13 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -12
+   "2026-07-22": -10.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.25",
-   "n": 11,
-   "start": 3
+   "tipo": "coluna",
+   "chave": ":06",
+   "n": 16,
+   "start": 1
   },
   "_obs": {}
  }
