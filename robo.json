@@ -311,13 +311,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -35,
-  "ciclos": 243,
-  "greens": 175,
+  "saldo": -34,
+  "ciclos": 244,
+  "greens": 176,
   "redsCiclo": 31,
   "aborts": 0,
   "descartes": 37,
   "historico": [
+   {
+    "quando": "2026-07-22T13:04:47.627Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Espanha x Hungria @1.95 (tiro 1) · gatilho: time Inglaterra"
+   },
    {
     "quando": "2026-07-22T12:43:05.422Z",
     "resultado": "GREEN",
@@ -431,52 +437,17 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "euro · Sérvia x Geórgia @2.2 (tiro 1) · gatilho: time Sérvia"
-   },
-   {
-    "quando": "2026-07-22T06:20:44.530Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "premier · Newcastle x Southampton @1.93 (tiro 2) · gatilho: time Southampton"
    }
   ],
   "consumidas": {
    "super": 1784722366431,
    "premier": 1784723557632,
-   "copa": 1784724185134
+   "copa": 1784724185134,
+   "euro": 1784725487431
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:02",
-     "jogo": "Espanha x Hungria",
-     "odd": 1.95
-    },
-    {
-     "h": "14:05",
-     "jogo": "Inglaterra x Ucrânia",
-     "odd": 1.95
-    },
-    {
-     "h": "14:08",
-     "jogo": "Portugal x Turquia",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "time Inglaterra",
-   "alvo": {
-    "h": "14:02",
-    "jogo": "Espanha x Hungria",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1784724965330
-   },
-   "iniciadoEm": 1784724965330
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784721344332,
+   "euro": 1784725487431,
    "super": 1784722366431,
    "premier": 1784723557632,
    "copa": 1784724185134
@@ -488,13 +459,13 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -16.7
+   "2026-07-22": -15.7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Inglaterra",
-   "n": 20,
-   "start": 2
+   "tipo": "coluna",
+   "chave": ":08",
+   "n": 14,
+   "start": 1
   },
   "_obs": {}
  }
