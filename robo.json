@@ -286,7 +286,37 @@
    "premier": 1784721580739,
    "super": 1784722605823
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:55",
+     "jogo": "República Tcheca x Curação",
+     "odd": 2.25
+    },
+    {
+     "h": "13:58",
+     "jogo": "Espanha x Cabo Verde",
+     "odd": 2.15
+    },
+    {
+     "h": "14:01",
+     "jogo": "Panamá x Escócia",
+     "odd": 2.62
+    }
+   ],
+   "gatilho": "time Cabo Verde",
+   "alvo": {
+    "h": "13:55",
+    "jogo": "República Tcheca x Curação",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1784724364126
+   },
+   "iniciadoEm": 1784724364126
+  },
   "cooldown": {
    "copa": 1784713224036,
    "premier": 1784721580739,
@@ -304,10 +334,10 @@
    "2026-07-22": 3.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":16",
-   "n": 13,
-   "start": 1
+   "tipo": "time",
+   "chave": "Cabo Verde",
+   "n": 14,
+   "start": 3
   },
   "_obs": {}
  },
