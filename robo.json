@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -34.8,
-  "ciclos": 233,
-  "greens": 163,
+  "saldo": -33.5,
+  "ciclos": 234,
+  "greens": 164,
   "redsCiclo": 41,
   "aborts": 0,
   "descartes": 29,
   "historico": [
+   {
+    "quando": "2026-07-22T12:58:43.626Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "copa · República Tcheca x Curação @2.25 (tiro 1) · gatilho: time Cabo Verde"
+   },
    {
     "quando": "2026-07-22T12:16:46.025Z",
     "resultado": "GREEN",
@@ -273,51 +279,16 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: time Southampton"
-   },
-   {
-    "quando": "2026-07-22T05:17:18.132Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · Suíça x França @2.02 (tiro 2) · gatilho: time Eslovênia"
    }
   ],
   "consumidas": {
    "premier": 1784721580739,
-   "super": 1784722605823
+   "super": 1784722605823,
+   "copa": 1784725123425
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "13:55",
-     "jogo": "República Tcheca x Curação",
-     "odd": 2.25
-    },
-    {
-     "h": "13:58",
-     "jogo": "Espanha x Cabo Verde",
-     "odd": 2.15
-    },
-    {
-     "h": "14:01",
-     "jogo": "Panamá x Escócia",
-     "odd": 2.62
-    }
-   ],
-   "gatilho": "time Cabo Verde",
-   "alvo": {
-    "h": "13:55",
-    "jogo": "República Tcheca x Curação",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1784724364126
-   },
-   "iniciadoEm": 1784724364126
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784713224036,
+   "copa": 1784725123425,
    "premier": 1784721580739,
    "euro": 1784721344134,
    "super": 1784722605824
@@ -330,7 +301,7 @@
    "2026-07-19": -12,
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
-   "2026-07-22": 3.8
+   "2026-07-22": 5.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
