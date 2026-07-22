@@ -284,7 +284,37 @@
    "copa": 1784696623631,
    "super": 1784697180538
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:11",
+     "jogo": "Eslovênia x República Tcheca",
+     "odd": 3
+    },
+    {
+     "h": "06:14",
+     "jogo": "Suíça x França",
+     "odd": 2.02
+    },
+    {
+     "h": "06:17",
+     "jogo": "Áustria x Alemanha",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time Eslovênia",
+   "alvo": {
+    "h": "06:11",
+    "jogo": "Eslovênia x República Tcheca",
+    "odd": 3,
+    "unidades": 1,
+    "desde": 1784697182138
+   },
+   "iniciadoEm": 1784697182138
+  },
   "cooldown": {
    "copa": 1784696623631,
    "premier": 1784671219223,
@@ -303,20 +333,26 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Eslovênia",
-   "n": 10,
-   "start": 1
+   "chave": "Southampton",
+   "n": 9,
+   "start": 3
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -25.3,
-  "ciclos": 219,
-  "greens": 158,
+  "saldo": -24.3,
+  "ciclos": 220,
+  "greens": 159,
   "redsCiclo": 27,
   "aborts": 0,
   "descartes": 34,
   "historico": [
+   {
+    "quando": "2026-07-22T05:13:29.230Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Alemanha x Hungria @2.02 (tiro 1) · gatilho: time Eslovênia"
+   },
    {
     "quando": "2026-07-22T05:08:39.334Z",
     "resultado": "RED_CICLO",
@@ -430,50 +466,45 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "super · Itaquera x Belo Horizonte @1.9 (tiro 1) · gatilho: placar empate 1-1"
-   },
-   {
-    "quando": "2026-07-21T15:48:11.360Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
-   "premier": 1784696919228
+   "premier": 1784696919228,
+   "euro": 1784697209029
   },
   "ciclo": {
-   "liga": "euro",
+   "liga": "copa",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "06:08",
-     "jogo": "Alemanha x Hungria",
-     "odd": 2.02
+     "h": "06:19",
+     "jogo": "Irã x EUA",
+     "odd": 2.1
     },
     {
-     "h": "06:11",
-     "jogo": "Eslovênia x República Tcheca",
-     "odd": 2.4
+     "h": "06:22",
+     "jogo": "Costa do Marfim x RD Congo",
+     "odd": 1.86
     },
     {
-     "h": "06:14",
-     "jogo": "Suíça x França",
-     "odd": 1.83
+     "h": "06:25",
+     "jogo": "Uzbequistão x Panamá",
+     "odd": 2.05
     }
    ],
-   "gatilho": "time Eslovênia",
+   "gatilho": "time Costa do Marfim",
    "alvo": {
-    "h": "06:08",
-    "jogo": "Alemanha x Hungria",
-    "odd": 2.02,
+    "h": "06:19",
+    "jogo": "Irã x EUA",
+    "odd": 2.1,
     "unidades": 1,
-    "desde": 1784696922935
+    "desde": 1784697210037
    },
-   "iniciadoEm": 1784696922935
+   "iniciadoEm": 1784697210037
   },
   "cooldown": {
-   "euro": 1784665554458,
+   "euro": 1784697209029,
    "super": 1784657531256,
    "premier": 1784696919228,
    "copa": 1784670696652
@@ -485,13 +516,13 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -7
+   "2026-07-22": -6
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Eslovênia",
-   "n": 10,
-   "start": 1
+   "chave": "Costa do Marfim",
+   "n": 8,
+   "start": 2
   },
   "_obs": {}
  }
