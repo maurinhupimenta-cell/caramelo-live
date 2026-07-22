@@ -362,21 +362,27 @@
    "2026-07-22": -4.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGG",
-   "n": 9,
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -25.7,
-  "ciclos": 228,
-  "greens": 165,
+  "saldo": -24.9,
+  "ciclos": 229,
+  "greens": 166,
   "redsCiclo": 28,
   "aborts": 0,
   "descartes": 35,
   "historico": [
+   {
+    "quando": "2026-07-22T07:37:44.429Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "euro · Bélgica x Países Baixos @1.83 (tiro 1) · gatilho: time Países Baixos"
+   },
    {
     "quando": "2026-07-22T07:32:37.240Z",
     "resultado": "RED_CICLO",
@@ -490,51 +496,16 @@
     "resultado": "GREEN",
     "unidades": 0.8,
     "detalhe": "euro · França x Alemanha @1.83 (tiro 1) · gatilho: placar empate 1-1"
-   },
-   {
-    "quando": "2026-07-21T18:12:11.359Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "super · Santos x Penarol @2.2 (tiro 1) · gatilho: placar acima de 1-0 (2-1)"
    }
   ],
   "consumidas": {
    "super": 1784703666228,
-   "premier": 1784705557038
+   "premier": 1784705557038,
+   "euro": 1784705864231
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "08:35",
-     "jogo": "Bélgica x Países Baixos",
-     "odd": 1.83
-    },
-    {
-     "h": "08:38",
-     "jogo": "Polônia x Geórgia",
-     "odd": 2.2
-    },
-    {
-     "h": "08:41",
-     "jogo": "Itália x Eslovênia",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "time Países Baixos",
-   "alvo": {
-    "h": "08:35",
-    "jogo": "Bélgica x Países Baixos",
-    "odd": 1.83,
-    "unidades": 1,
-    "desde": 1784705563630
-   },
-   "iniciadoEm": 1784705563630
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784701545036,
+   "euro": 1784705864231,
    "super": 1784703666228,
    "premier": 1784705557038,
    "copa": 1784702083535
@@ -546,13 +517,13 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -7.4
+   "2026-07-22": -6.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.93",
-   "n": 16,
-   "start": 3
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 10,
+   "start": 1
   },
   "_obs": {}
  }
