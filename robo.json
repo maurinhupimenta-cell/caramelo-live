@@ -152,13 +152,19 @@
   }
  },
  "o25": {
-  "saldo": -47.9,
-  "ciclos": 217,
-  "greens": 151,
+  "saldo": -46.5,
+  "ciclos": 218,
+  "greens": 152,
   "redsCiclo": 40,
   "aborts": 0,
   "descartes": 26,
   "historico": [
+   {
+    "quando": "2026-07-22T06:35:05.732Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "euro · Sérvia x Alemanha @2.35 (tiro 1) · gatilho: seq RGRR"
+   },
    {
     "quando": "2026-07-22T06:31:44.531Z",
     "resultado": "GREEN",
@@ -272,53 +278,18 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "copa · Coreia do Sul x Curação @2.3 (tiro 1) · gatilho: placar acima de 1-0 (2-1)"
-   },
-   {
-    "quando": "2026-07-21T16:15:13.456Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
   "consumidas": {
    "super": 1784701326040,
-   "copa": 1784701904334
+   "copa": 1784701904334,
+   "euro": 1784702105533
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "07:32",
-     "jogo": "Sérvia x Alemanha",
-     "odd": 2.35
-    },
-    {
-     "h": "07:35",
-     "jogo": "Portugal x Itália",
-     "odd": 2.3
-    },
-    {
-     "h": "07:38",
-     "jogo": "Polônia x Hungria",
-     "odd": 2.55
-    }
-   ],
-   "gatilho": "seq RGRR",
-   "alvo": {
-    "h": "07:32",
-    "jogo": "Sérvia x Alemanha",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1784701905528
-   },
-   "iniciadoEm": 1784701905528
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784701904334,
    "premier": 1784698194133,
-   "euro": 1784697437934,
+   "euro": 1784702105533,
    "super": 1784701326040
   },
   "dias": {
@@ -329,13 +300,13 @@
    "2026-07-19": -12,
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
-   "2026-07-22": -9.3
+   "2026-07-22": -7.9
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Eslovênia",
    "n": 12,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
