@@ -312,13 +312,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -29.6,
-  "ciclos": 241,
+  "saldo": -36.6,
+  "ciclos": 242,
   "greens": 174,
-  "redsCiclo": 30,
+  "redsCiclo": 31,
   "aborts": 0,
   "descartes": 37,
   "historico": [
+   {
+    "quando": "2026-07-22T12:32:37.828Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: coluna :27"
+   },
    {
     "quando": "2026-07-22T12:25:24.230Z",
     "resultado": "GREEN_OBS",
@@ -432,67 +438,48 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho time Southampton) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-22T05:55:05.233Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "super · Buenos Aires x Avellaneda @1.9 (tiro 1) · gatilho: time La Plata"
    }
   ],
   "consumidas": {
    "euro": 1784721344332,
-   "super": 1784722366431
+   "super": 1784722366431,
+   "premier": 1784723557632
   },
   "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "13:24",
-     "jogo": "Palace x Aston",
-     "odd": 2
+     "h": "13:34",
+     "jogo": "Curação x RD Congo",
+     "odd": 1.83
     },
     {
-     "h": "13:27",
-     "jogo": "United x Norwich",
-     "odd": 2.05
+     "h": "13:37",
+     "jogo": "Egito x Paraguai",
+     "odd": 1.98
     },
     {
-     "h": "13:30",
-     "jogo": "Southampton x Islington",
-     "odd": 2
+     "h": "13:40",
+     "jogo": "Croácia x Uzbequistão",
+     "odd": 2.15
     }
    ],
-   "gatilho": "coluna :27",
+   "gatilho": "coluna :34",
    "alvo": {
-    "h": "13:30",
-    "jogo": "Southampton x Islington",
-    "odd": 2,
-    "unidades": 4,
-    "desde": 1784723379723
+    "h": "13:34",
+    "jogo": "Curação x RD Congo",
+    "odd": 1.83,
+    "unidades": 1,
+    "desde": 1784723559228
    },
-   "iniciadoEm": 1784722903632,
-   "tiros": [
-    {
-     "h": "13:24",
-     "jogo": "Palace x Aston",
-     "odd": 2,
-     "unidades": 1
-    },
-    {
-     "h": "13:27",
-     "jogo": "United x Norwich",
-     "odd": 2.05,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1784723559228
   },
   "cooldown": {
    "euro": 1784721344332,
    "super": 1784722366431,
-   "premier": 1784713707532,
+   "premier": 1784723557632,
    "copa": 1784711384730
   },
   "dias": {
@@ -502,12 +489,12 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -11.3
+   "2026-07-22": -18.3
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":36",
-   "n": 12,
+   "chave": ":34",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
