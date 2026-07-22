@@ -284,7 +284,37 @@
   "consumidas": {
    "premier": 1784743719525
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:04",
+     "jogo": "África do Sul x Bélgica",
+     "odd": 2.45
+    },
+    {
+     "h": "20:07",
+     "jogo": "Irã x Turquia",
+     "odd": 2.55
+    },
+    {
+     "h": "20:10",
+     "jogo": "Senegal x Tunísia",
+     "odd": 2.8
+    }
+   ],
+   "gatilho": "coluna :07",
+   "alvo": {
+    "h": "20:04",
+    "jogo": "África do Sul x Bélgica",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1784746525925
+   },
+   "iniciadoEm": 1784746525925
+  },
   "cooldown": {
    "copa": 1784740407331,
    "premier": 1784743719525,
@@ -302,17 +332,12 @@
    "2026-07-22": -11.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGRR",
-   "n": 10,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":07",
+   "n": 19,
+   "start": 3
   },
-  "_obs": {
-   "copa": {
-    "desde": 1784746524233,
-    "gatilho": "coluna :07"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -35.4,
@@ -449,8 +474,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "19:55",
@@ -470,13 +495,21 @@
    ],
    "gatilho": "seq RRRRG",
    "alvo": {
-    "h": "19:55",
-    "jogo": "Rio de Janeiro x Avellaneda",
+    "h": "19:58",
+    "jogo": "Buenos Aires x Penarol",
     "odd": 2.02,
-    "unidades": 1,
-    "desde": 1784746347128
+    "unidades": 2,
+    "desde": 1784746673127
    },
-   "iniciadoEm": 1784746347128
+   "iniciadoEm": 1784746347128,
+   "tiros": [
+    {
+     "h": "19:55",
+     "jogo": "Rio de Janeiro x Avellaneda",
+     "odd": 2.02,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784746047834,
@@ -497,7 +530,7 @@
    "tipo": "coluna",
    "chave": ":06",
    "n": 19,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
