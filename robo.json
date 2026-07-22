@@ -329,10 +329,10 @@
    "2026-07-22": 0
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGR",
-   "n": 9,
-   "start": 1
+   "tipo": "time",
+   "chave": "Eslovênia",
+   "n": 10,
+   "start": 2
   },
   "_obs": {}
  },
@@ -468,8 +468,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "06:00",
@@ -489,13 +489,21 @@
    ],
    "gatilho": "seq GRRR",
    "alvo": {
-    "h": "06:00",
-    "jogo": "Chelsea x Watford",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1784696226439
+    "h": "06:03",
+    "jogo": "United x Leeds",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1784696563032
    },
-   "iniciadoEm": 1784696226439
+   "iniciadoEm": 1784696226439,
+   "tiros": [
+    {
+     "h": "06:00",
+     "jogo": "Chelsea x Watford",
+     "odd": 2.05,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784665554458,
@@ -514,15 +522,10 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Chelsea",
-   "n": 12,
-   "start": 1
+   "chave": "Eslovênia",
+   "n": 10,
+   "start": 2
   },
-  "_obs": {
-   "euro": {
-    "desde": 1784696364537,
-    "gatilho": "time Eslovênia"
-   }
-  }
+  "_obs": {}
  }
 }
