@@ -441,12 +441,41 @@
    }
   ],
   "consumidas": {
-   "copa": 1784729772424,
    "super": 1784731588322,
    "euro": 1784732726334,
    "premier": 1784732973024
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:16",
+     "jogo": "África do Sul x Haiti",
+     "odd": 2.02
+    },
+    {
+     "h": "16:19",
+     "jogo": "Argentina x Portugal",
+     "odd": 1.85
+    },
+    {
+     "h": "16:22",
+     "jogo": "Austrália x Escócia",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time Portugal",
+   "alvo": {
+    "h": "16:16",
+    "jogo": "África do Sul x Haiti",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1784733384423
+   },
+   "iniciadoEm": 1784733384423
+  },
   "cooldown": {
    "euro": 1784732726334,
    "super": 1784731588322,
@@ -463,9 +492,9 @@
    "2026-07-22": -9.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":06",
-   "n": 16,
+   "tipo": "time",
+   "chave": "Portugal",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
