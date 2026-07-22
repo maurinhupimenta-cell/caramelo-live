@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -39.6,
-  "ciclos": 229,
-  "greens": 160,
+  "saldo": -37.6,
+  "ciclos": 230,
+  "greens": 161,
   "redsCiclo": 41,
   "aborts": 0,
   "descartes": 28,
   "historico": [
+   {
+    "quando": "2026-07-22T11:55:44.329Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "euro · Portugal x República Tcheca @2.5 (tiro 2) · gatilho: coluna :53"
+   },
    {
     "quando": "2026-07-22T09:50:39.537Z",
     "resultado": "GREEN",
@@ -273,58 +279,16 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho seq GRGR) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-21T22:00:19.522Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Brighton x United @2.05 (tiro 1) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "12:50",
-     "jogo": "Países Baixos x Espanha",
-     "odd": 1.98
-    },
-    {
-     "h": "12:53",
-     "jogo": "Portugal x República Tcheca",
-     "odd": 2.5
-    },
-    {
-     "h": "12:56",
-     "jogo": "Albânia x França",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "coluna :53",
-   "alvo": {
-    "h": "12:53",
-    "jogo": "Portugal x República Tcheca",
-    "odd": 2.5,
-    "unidades": 2,
-    "desde": 1784721163736
-   },
-   "iniciadoEm": 1784720665240,
-   "tiros": [
-    {
-     "h": "12:50",
-     "jogo": "Países Baixos x Espanha",
-     "odd": 1.98,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "euro": 1784721344134
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784713224036,
    "premier": 1784713839429,
-   "euro": 1784710924734,
+   "euro": 1784721344134,
    "super": 1784711944836
   },
   "dias": {
@@ -335,13 +299,13 @@
    "2026-07-19": -12,
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
-   "2026-07-22": -1
+   "2026-07-22": 1
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":00",
    "n": 11,
-   "start": 2
+   "start": 1
   },
   "_obs": {
    "super": {
@@ -351,13 +315,19 @@
   }
  },
  "ambas": {
-  "saldo": -23.9,
-  "ciclos": 238,
-  "greens": 173,
+  "saldo": -22.6,
+  "ciclos": 239,
+  "greens": 174,
   "redsCiclo": 29,
   "aborts": 0,
   "descartes": 36,
   "historico": [
+   {
+    "quando": "2026-07-22T11:55:44.530Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "euro · Portugal x República Tcheca @2.15 (tiro 2) · gatilho: coluna :53"
+   },
    {
     "quando": "2026-07-22T10:01:43.034Z",
     "resultado": "GREEN",
@@ -471,56 +441,14 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · Alemanha x Hungria @2.02 (tiro 1) · gatilho: time Eslovênia"
-   },
-   {
-    "quando": "2026-07-22T05:08:39.334Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq GRRR"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "12:50",
-     "jogo": "Países Baixos x Espanha",
-     "odd": 1.76
-    },
-    {
-     "h": "12:53",
-     "jogo": "Portugal x República Tcheca",
-     "odd": 2.15
-    },
-    {
-     "h": "12:56",
-     "jogo": "Albânia x França",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "coluna :53",
-   "alvo": {
-    "h": "12:53",
-    "jogo": "Portugal x República Tcheca",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1784721163935
-   },
-   "iniciadoEm": 1784720665535,
-   "tiros": [
-    {
-     "h": "12:50",
-     "jogo": "Países Baixos x Espanha",
-     "odd": 1.76,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "euro": 1784721344332
   },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784714502833,
+   "euro": 1784721344332,
    "super": 1784712126128,
    "premier": 1784713707532,
    "copa": 1784711384730
@@ -532,13 +460,13 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -5.6
+   "2026-07-22": -4.3
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.1",
    "n": 15,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
