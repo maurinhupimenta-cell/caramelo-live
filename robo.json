@@ -287,8 +287,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:30",
@@ -308,13 +308,21 @@
    ],
    "gatilho": "seq RGGRR",
    "alvo": {
-    "h": "17:30",
-    "jogo": "Burnley x Norwich",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1784737647330
+    "h": "17:33",
+    "jogo": "Leeds x Islington",
+    "odd": 2.45,
+    "unidades": 2,
+    "desde": 1784737976929
    },
-   "iniciadoEm": 1784737647330
+   "iniciadoEm": 1784737647330,
+   "tiros": [
+    {
+     "h": "17:30",
+     "jogo": "Burnley x Norwich",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784734286031,
@@ -522,9 +530,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Senegal",
-   "n": 16,
-   "start": 1
+   "chave": "Portugal",
+   "n": 14,
+   "start": 3
   },
   "_obs": {}
  }
