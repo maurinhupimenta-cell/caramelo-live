@@ -286,7 +286,37 @@
    "euro": 1784736146528,
    "super": 1784737229232
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:30",
+     "jogo": "Burnley x Norwich",
+     "odd": 2.1
+    },
+    {
+     "h": "17:33",
+     "jogo": "Leeds x Islington",
+     "odd": 2.45
+    },
+    {
+     "h": "17:36",
+     "jogo": "Newcastle x West Ham",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "seq RGGRR",
+   "alvo": {
+    "h": "17:30",
+    "jogo": "Burnley x Norwich",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1784737647330
+   },
+   "iniciadoEm": 1784737647330
+  },
   "cooldown": {
    "copa": 1784734286031,
    "premier": 1784732765924,
@@ -304,9 +334,9 @@
    "2026-07-22": -7.1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":16",
-   "n": 17,
+   "tipo": "seq",
+   "chave": "RGGRR",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
