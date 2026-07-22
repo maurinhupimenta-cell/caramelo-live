@@ -154,12 +154,18 @@
  },
  "o25": {
   "saldo": -41.6,
-  "ciclos": 241,
+  "ciclos": 242,
   "greens": 168,
   "redsCiclo": 43,
   "aborts": 0,
-  "descartes": 30,
+  "descartes": 31,
   "historico": [
+   {
+    "quando": "2026-07-22T15:18:26.434Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Cabo Verde) — liga REARMADA"
+   },
    {
     "quando": "2026-07-22T15:06:06.122Z",
     "resultado": "GREEN",
@@ -273,12 +279,6 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "copa · Haiti x Gana @2.25 (tiro 2) · gatilho: seq RRGG"
-   },
-   {
-    "quando": "2026-07-22T07:37:06.929Z",
-    "resultado": "GREEN",
-    "unidades": 2.2,
-    "detalhe": "super · Rio de Janeiro x Avellaneda @2.3 (tiro 3) · gatilho: odd 2.45"
    }
   ],
   "consumidas": {
@@ -286,7 +286,37 @@
    "euro": 1784732005523,
    "premier": 1784732765924
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:25",
+     "jogo": "Panamá x Suíça",
+     "odd": 2.4
+    },
+    {
+     "h": "16:28",
+     "jogo": "Cabo Verde x Escócia",
+     "odd": 2.45
+    },
+    {
+     "h": "16:31",
+     "jogo": "Croácia x Noruega",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "time Cabo Verde",
+   "alvo": {
+    "h": "16:25",
+    "jogo": "Panamá x Suíça",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1784733507623
+   },
+   "iniciadoEm": 1784733507623
+  },
   "cooldown": {
    "copa": 1784729572336,
    "premier": 1784732765924,
@@ -304,10 +334,10 @@
    "2026-07-22": -3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":00",
-   "n": 15,
-   "start": 1
+   "tipo": "time",
+   "chave": "Cabo Verde",
+   "n": 16,
+   "start": 3
   },
   "_obs": {}
  },
