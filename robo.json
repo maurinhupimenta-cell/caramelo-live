@@ -286,7 +286,37 @@
    "copa": 1784729572336,
    "super": 1784729953630
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:50",
+     "jogo": "Espanha x Itália",
+     "odd": 2.15
+    },
+    {
+     "h": "15:53",
+     "jogo": "Sérvia x República Tcheca",
+     "odd": 2.8
+    },
+    {
+     "h": "15:56",
+     "jogo": "Itália x Croácia",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "coluna :53",
+   "alvo": {
+    "h": "15:50",
+    "jogo": "Espanha x Itália",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1784731589532
+   },
+   "iniciadoEm": 1784731589532
+  },
   "cooldown": {
    "copa": 1784729572336,
    "premier": 1784728429230,
@@ -305,20 +335,26 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":16",
+   "chave": ":53",
    "n": 15,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -31.3,
-  "ciclos": 249,
-  "greens": 179,
+  "saldo": -30.3,
+  "ciclos": 250,
+  "greens": 180,
   "redsCiclo": 31,
   "aborts": 0,
   "descartes": 39,
   "historico": [
+   {
+    "quando": "2026-07-22T14:46:28.524Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Montevideo x Bogota @2.05 (tiro 1) · gatilho: seq GRGRR"
+   },
    {
     "quando": "2026-07-22T14:16:12.622Z",
     "resultado": "GREEN",
@@ -432,51 +468,16 @@
     "resultado": "GREEN",
     "unidades": 1.6,
     "detalhe": "super · Itaquera x Penarol @2.15 (tiro 3) · gatilho: odd 2.1"
-   },
-   {
-    "quando": "2026-07-22T07:47:23.938Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Haiti x Gana @1.95 (tiro 1) · gatilho: time Senegal"
    }
   ],
   "consumidas": {
-   "copa": 1784729772424
+   "copa": 1784729772424,
+   "super": 1784731588322
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:43",
-     "jogo": "Montevideo x Bogota",
-     "odd": 2.05
-    },
-    {
-     "h": "15:46",
-     "jogo": "Belo Horizonte x Agua Branca",
-     "odd": 1.83
-    },
-    {
-     "h": "15:49",
-     "jogo": "Bogota x Montevideo",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "seq GRGRR",
-   "alvo": {
-    "h": "15:43",
-    "jogo": "Montevideo x Bogota",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1784731193727
-   },
-   "iniciadoEm": 1784731193727
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784725487431,
-   "super": 1784726886133,
+   "super": 1784731588322,
    "premier": 1784727523924,
    "copa": 1784729772424
   },
@@ -487,12 +488,12 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -13
+   "2026-07-22": -12
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRGRR",
-   "n": 12,
+   "chave": "GRRGG",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
