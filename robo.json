@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -43.6,
-  "ciclos": 240,
-  "greens": 167,
+  "saldo": -41.6,
+  "ciclos": 241,
+  "greens": 168,
   "redsCiclo": 43,
   "aborts": 0,
   "descartes": 30,
   "historico": [
+   {
+    "quando": "2026-07-22T15:06:06.122Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "premier · Leicester x Norwich @2.25 (tiro 3) · gatilho: coluna :00"
+   },
    {
     "quando": "2026-07-22T14:53:49.336Z",
     "resultado": "GREEN_OBS",
@@ -273,67 +279,18 @@
     "resultado": "GREEN",
     "unidades": 2.2,
     "detalhe": "super · Rio de Janeiro x Avellaneda @2.3 (tiro 3) · gatilho: odd 2.45"
-   },
-   {
-    "quando": "2026-07-22T07:22:06.640Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho odd 2.45) — liga REARMADA"
    }
   ],
   "consumidas": {
    "copa": 1784729572336,
    "super": 1784729953630,
-   "euro": 1784732005523
+   "euro": 1784732005523,
+   "premier": 1784732765924
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "15:57",
-     "jogo": "Leicester x Wolverhampton",
-     "odd": 2.15
-    },
-    {
-     "h": "16:00",
-     "jogo": "Aston x West Ham",
-     "odd": 2.62
-    },
-    {
-     "h": "16:03",
-     "jogo": "Leicester x Norwich",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "coluna :00",
-   "alvo": {
-    "h": "16:03",
-    "jogo": "Leicester x Norwich",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1784732605533
-   },
-   "iniciadoEm": 1784732030234,
-   "tiros": [
-    {
-     "h": "15:57",
-     "jogo": "Leicester x Wolverhampton",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "16:00",
-     "jogo": "Aston x West Ham",
-     "odd": 2.62,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784729572336,
-   "premier": 1784728429230,
+   "premier": 1784732765924,
    "euro": 1784732005523,
    "super": 1784729953630
   },
@@ -345,7 +302,7 @@
    "2026-07-19": -12,
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
-   "2026-07-22": -5
+   "2026-07-22": -3
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
@@ -489,7 +446,37 @@
    "super": 1784731588322,
    "euro": 1784732726334
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:06",
+     "jogo": "Brentford x Palace",
+     "odd": 1.95
+    },
+    {
+     "h": "16:09",
+     "jogo": "United x West Ham",
+     "odd": 2.2
+    },
+    {
+     "h": "16:12",
+     "jogo": "Leeds x Wolverhampton",
+     "odd": 2
+    }
+   ],
+   "gatilho": "coluna :06",
+   "alvo": {
+    "h": "16:06",
+    "jogo": "Brentford x Palace",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1784732728028
+   },
+   "iniciadoEm": 1784732728028
+  },
   "cooldown": {
    "euro": 1784732726334,
    "super": 1784731588322,
