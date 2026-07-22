@@ -306,12 +306,24 @@
  },
  "ambas": {
   "saldo": -18.3,
-  "ciclos": 215,
+  "ciclos": 217,
   "greens": 158,
   "redsCiclo": 26,
   "aborts": 0,
-  "descartes": 31,
+  "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-22T00:53:53.932Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho placar 1-0 / 0-1) — liga REARMADA"
+   },
+   {
+    "quando": "2026-07-22T00:26:45.830Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-21T21:51:36.851Z",
     "resultado": "GREEN",
@@ -419,54 +431,10 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "premier · Chelsea x Aston @2.07 (tiro 3) · gatilho: seq RGGRR"
-   },
-   {
-    "quando": "2026-07-21T14:32:54.055Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · Áustria x Ucrânia @2.02 (tiro 1) · gatilho: seq RGGRG"
-   },
-   {
-    "quando": "2026-07-21T14:28:09.955Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "super · Avellaneda x Guayaquil @1.93 (tiro 1) · gatilho: coluna :25"
    }
   ],
-  "consumidas": {
-   "premier": 1784670159853
-  },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:14",
-     "jogo": "Ucrânia x Hungria",
-     "odd": 2.05
-    },
-    {
-     "h": "23:17",
-     "jogo": "Albânia x Dinamarca",
-     "odd": 2.25
-    },
-    {
-     "h": "23:20",
-     "jogo": "Alemanha x Eslováquia",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "coluna :17",
-   "alvo": {
-    "h": "23:14",
-    "jogo": "Ucrânia x Hungria",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1784671571814
-   },
-   "iniciadoEm": 1784671571814
-  },
+  "consumidas": {},
+  "ciclo": null,
   "cooldown": {
    "euro": 1784665554458,
    "super": 1784657531256,
@@ -486,6 +454,12 @@
    "chave": ":17",
    "n": 19,
    "start": 1
+  },
+  "_obs": {
+   "premier": {
+    "desde": 1784680541529,
+    "gatilho": "placar 1-0 / 0-1"
+   }
   }
  }
 }
