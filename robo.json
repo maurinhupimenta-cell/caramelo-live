@@ -285,7 +285,37 @@
    "euro": 1784721344134,
    "premier": 1784721580739
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:13",
+     "jogo": "La Plata x Montevideo",
+     "odd": 2.4
+    },
+    {
+     "h": "13:16",
+     "jogo": "Santos x Medellin",
+     "odd": 2.5
+    },
+    {
+     "h": "13:19",
+     "jogo": "Guayaquil x Buenos Aires",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "coluna :16",
+   "alvo": {
+    "h": "13:13",
+    "jogo": "La Plata x Montevideo",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1784721848829
+   },
+   "iniciadoEm": 1784721848829
+  },
   "cooldown": {
    "copa": 1784713224036,
    "premier": 1784721580739,
@@ -304,16 +334,11 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":00",
-   "n": 11,
-   "start": 1
+   "chave": ":16",
+   "n": 13,
+   "start": 2
   },
-  "_obs": {
-   "super": {
-    "desde": 1784720354487,
-    "gatilho": "coluna :16"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -22.6,
@@ -449,8 +474,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "13:04",
@@ -470,13 +495,21 @@
    ],
    "gatilho": "odd 2.1",
    "alvo": {
-    "h": "13:04",
-    "jogo": "Bogota x Penarol",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1784721345733
+    "h": "13:07",
+    "jogo": "La Boca x Quito",
+    "odd": 2.1,
+    "unidades": 2,
+    "desde": 1784722026323
    },
-   "iniciadoEm": 1784721345733
+   "iniciadoEm": 1784721345733,
+   "tiros": [
+    {
+     "h": "13:04",
+     "jogo": "Bogota x Penarol",
+     "odd": 2.3,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784721344332,
