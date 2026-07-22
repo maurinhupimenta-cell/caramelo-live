@@ -444,7 +444,37 @@
    "euro": 1784721344332,
    "super": 1784722366431
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:24",
+     "jogo": "Palace x Aston",
+     "odd": 2
+    },
+    {
+     "h": "13:27",
+     "jogo": "United x Norwich",
+     "odd": 2.05
+    },
+    {
+     "h": "13:30",
+     "jogo": "Southampton x Islington",
+     "odd": 2
+    }
+   ],
+   "gatilho": "coluna :27",
+   "alvo": {
+    "h": "13:24",
+    "jogo": "Palace x Aston",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1784722903632
+   },
+   "iniciadoEm": 1784722903632
+  },
   "cooldown": {
    "euro": 1784721344332,
    "super": 1784722366431,
@@ -461,9 +491,9 @@
    "2026-07-22": -11.3
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.1",
-   "n": 16,
+   "tipo": "coluna",
+   "chave": ":27",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
