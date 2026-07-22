@@ -444,8 +444,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "20:49",
@@ -465,13 +465,21 @@
    ],
    "gatilho": "time Portugal",
    "alvo": {
-    "h": "20:49",
-    "jogo": "EUA x Austrália",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1784749291123
+    "h": "20:52",
+    "jogo": "Costa do Marfim x Portugal",
+    "odd": 1.85,
+    "unidades": 2,
+    "desde": 1784749945325
    },
-   "iniciadoEm": 1784749291123
+   "iniciadoEm": 1784749291123,
+   "tiros": [
+    {
+     "h": "20:49",
+     "jogo": "EUA x Austrália",
+     "odd": 1.95,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784746047834,
@@ -490,9 +498,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Portugal",
-   "n": 17,
-   "start": 1
+   "chave": "EUA",
+   "n": 9,
+   "start": 3
   },
   "_obs": {}
  }
