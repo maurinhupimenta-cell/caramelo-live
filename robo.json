@@ -286,7 +286,37 @@
    "copa": 1784734286031,
    "euro": 1784736146528
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:13",
+     "jogo": "Santos x Sao Paulo",
+     "odd": 2.2
+    },
+    {
+     "h": "17:16",
+     "jogo": "Buenos Aires x Lima",
+     "odd": 2.02
+    },
+    {
+     "h": "17:19",
+     "jogo": "Agua Branca x Santos",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "coluna :16",
+   "alvo": {
+    "h": "17:13",
+    "jogo": "Santos x Sao Paulo",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1784736266823
+   },
+   "iniciadoEm": 1784736266823
+  },
   "cooldown": {
    "copa": 1784734286031,
    "premier": 1784732765924,
@@ -305,9 +335,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":53",
-   "n": 16,
-   "start": 1
+   "chave": ":16",
+   "n": 17,
+   "start": 3
   },
   "_obs": {}
  },
@@ -447,8 +477,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:01",
@@ -468,13 +498,21 @@
    ],
    "gatilho": "seq RRRRG",
    "alvo": {
-    "h": "17:01",
-    "jogo": "Rio de Janeiro x Porto Alegre",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1784735893533
+    "h": "17:04",
+    "jogo": "Asuncion x Guayaquil",
+    "odd": 1.9,
+    "unidades": 2,
+    "desde": 1784736267022
    },
-   "iniciadoEm": 1784735893533
+   "iniciadoEm": 1784735893533,
+   "tiros": [
+    {
+     "h": "17:01",
+     "jogo": "Rio de Janeiro x Porto Alegre",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784732726334,
