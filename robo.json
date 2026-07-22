@@ -153,12 +153,18 @@
  },
  "o25": {
   "saldo": -45.3,
-  "ciclos": 220,
+  "ciclos": 221,
   "greens": 153,
   "redsCiclo": 40,
   "aborts": 0,
-  "descartes": 27,
+  "descartes": 28,
   "historico": [
+   {
+    "quando": "2026-07-22T07:22:06.640Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho odd 2.45) — liga REARMADA"
+   },
    {
     "quando": "2026-07-22T06:53:42.833Z",
     "resultado": "GREEN",
@@ -272,12 +278,6 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "premier · Watford x Wolverhampton @2.1 (tiro 3) · gatilho: placar goleada (3+)"
-   },
-   {
-    "quando": "2026-07-21T17:46:43.459Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
@@ -285,7 +285,37 @@
    "euro": 1784702105533,
    "premier": 1784703222636
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:28",
+     "jogo": "Agua Branca x Montevideo",
+     "odd": 2.07
+    },
+    {
+     "h": "08:31",
+     "jogo": "Porto Alegre x Lima",
+     "odd": 2.45
+    },
+    {
+     "h": "08:34",
+     "jogo": "Rio de Janeiro x Avellaneda",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "odd 2.45",
+   "alvo": {
+    "h": "08:28",
+    "jogo": "Agua Branca x Montevideo",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1784704943839
+   },
+   "iniciadoEm": 1784704943839
+  },
   "cooldown": {
    "copa": 1784701904334,
    "premier": 1784703222636,
@@ -304,9 +334,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.4",
+   "chave": "2.45",
    "n": 8,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  },
