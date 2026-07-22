@@ -284,7 +284,37 @@
   "consumidas": {
    "copa": 1784740407331
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:06",
+     "jogo": "Newcastle x Brighton",
+     "odd": 1.95
+    },
+    {
+     "h": "19:09",
+     "jogo": "Tottenham x Leicester",
+     "odd": 2.5
+    },
+    {
+     "h": "19:12",
+     "jogo": "Brighton x Watford",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "seq RGGRR",
+   "alvo": {
+    "h": "19:06",
+    "jogo": "Newcastle x Brighton",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1784743361625
+   },
+   "iniciadoEm": 1784743361625
+  },
   "cooldown": {
    "copa": 1784740407331,
    "premier": 1784738162229,
@@ -302,9 +332,9 @@
    "2026-07-22": -12.2
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":07",
-   "n": 18,
+   "tipo": "seq",
+   "chave": "RGGRR",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
