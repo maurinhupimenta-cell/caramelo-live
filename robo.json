@@ -442,7 +442,37 @@
    "copa": 1784745051833,
    "euro": 1784746047834
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:55",
+     "jogo": "Rio de Janeiro x Avellaneda",
+     "odd": 2.02
+    },
+    {
+     "h": "19:58",
+     "jogo": "Buenos Aires x Penarol",
+     "odd": 2.02
+    },
+    {
+     "h": "20:01",
+     "jogo": "Belo Horizonte x Porto Alegre",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "seq RRRRG",
+   "alvo": {
+    "h": "19:55",
+    "jogo": "Rio de Janeiro x Avellaneda",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1784746347128
+   },
+   "iniciadoEm": 1784746347128
+  },
   "cooldown": {
    "euro": 1784746047834,
    "super": 1784740560931,
@@ -459,9 +489,9 @@
    "2026-07-22": -17.1
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.25",
-   "n": 13,
+   "tipo": "seq",
+   "chave": "RRRRG",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
