@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -154.1,
-  "ciclos": 165,
+  "saldo": -161.1,
+  "ciclos": 166,
   "greens": 58,
-  "redsCiclo": 72,
+  "redsCiclo": 73,
   "aborts": 0,
   "descartes": 35,
   "historico": [
+   {
+    "quando": "2026-07-22T07:55:46.629Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: coluna :48"
+   },
    {
     "quando": "2026-07-21T21:56:48.215Z",
     "resultado": "GREEN",
@@ -120,63 +126,15 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-21T10:54:47.135Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "08:45",
-     "jogo": "Wolverhampton x Southampton",
-     "odd": 4.33
-    },
-    {
-     "h": "08:48",
-     "jogo": "West Ham x Islington",
-     "odd": 5
-    },
-    {
-     "h": "08:51",
-     "jogo": "Southampton x Brighton",
-     "odd": 4.2
-    }
-   ],
-   "gatilho": "coluna :48",
-   "alvo": {
-    "h": "08:51",
-    "jogo": "Southampton x Brighton",
-    "odd": 4.2,
-    "unidades": 4,
-    "desde": 1784706686437
-   },
-   "iniciadoEm": 1784705748534,
-   "tiros": [
-    {
-     "h": "08:45",
-     "jogo": "Wolverhampton x Southampton",
-     "odd": 4.33,
-     "unidades": 1
-    },
-    {
-     "h": "08:48",
-     "jogo": "West Ham x Islington",
-     "odd": 5,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1784706946337
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784670696456,
-   "premier": 1784671007920,
+   "premier": 1784706946337,
    "euro": 1784650513155,
    "super": 1784670159654
   },
@@ -186,7 +144,8 @@
    "2026-07-17": 18.1,
    "2026-07-19": -48.5,
    "2026-07-20": 19.6,
-   "2026-07-21": -96.4
+   "2026-07-21": -96.4,
+   "2026-07-22": -7
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
