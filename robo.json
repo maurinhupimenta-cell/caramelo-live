@@ -288,8 +288,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "10:42",
@@ -309,11 +309,11 @@
    ],
    "gatilho": "coluna :42",
    "alvo": {
-    "h": "10:45",
-    "jogo": "Leeds x Chelsea",
+    "h": "10:48",
+    "jogo": "West Ham x Norwich",
     "odd": 2.45,
-    "unidades": 2,
-    "desde": 1784713523735
+    "unidades": 4,
+    "desde": 1784713707335
    },
    "iniciadoEm": 1784713225228,
    "tiros": [
@@ -322,6 +322,12 @@
      "jogo": "Islington x Newcastle",
      "odd": 2.07,
      "unidades": 1
+    },
+    {
+     "h": "10:45",
+     "jogo": "Leeds x Chelsea",
+     "odd": 2.45,
+     "unidades": 2
     }
    ]
   },
@@ -343,20 +349,26 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":48",
+   "chave": ":00",
    "n": 10,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -26.3,
-  "ciclos": 236,
-  "greens": 171,
+  "saldo": -25.2,
+  "ciclos": 237,
+  "greens": 172,
   "redsCiclo": 29,
   "aborts": 0,
   "descartes": 36,
   "historico": [
+   {
+    "quando": "2026-07-22T09:48:27.732Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Leeds x Chelsea @2.1 (tiro 1) · gatilho: odd 2.1"
+   },
    {
     "quando": "2026-07-22T09:22:06.330Z",
     "resultado": "GREEN",
@@ -470,54 +482,19 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho time Eslovênia) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-22T00:53:53.932Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho placar 1-0 / 0-1) — liga REARMADA"
    }
   ],
   "consumidas": {
    "euro": 1784710383738,
    "copa": 1784711384730,
-   "super": 1784712126128
+   "super": 1784712126128,
+   "premier": 1784713707532
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "10:45",
-     "jogo": "Leeds x Chelsea",
-     "odd": 2.1
-    },
-    {
-     "h": "10:48",
-     "jogo": "West Ham x Norwich",
-     "odd": 2.15
-    },
-    {
-     "h": "10:51",
-     "jogo": "Everton x Palace",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "odd 2.1",
-   "alvo": {
-    "h": "10:45",
-    "jogo": "Leeds x Chelsea",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1784713486433
-   },
-   "iniciadoEm": 1784713486433
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784710383738,
    "super": 1784712126128,
-   "premier": 1784709885530,
+   "premier": 1784713707532,
    "copa": 1784711384730
   },
   "dias": {
@@ -527,7 +504,7 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -8
+   "2026-07-22": -6.9
   },
   "_gatilhoAtual": {
    "tipo": "odd",
