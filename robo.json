@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -43.8,
-  "ciclos": 246,
+  "saldo": -50.8,
+  "ciclos": 247,
   "greens": 171,
-  "redsCiclo": 44,
+  "redsCiclo": 45,
   "aborts": 0,
   "descartes": 31,
   "historico": [
+   {
+    "quando": "2026-07-22T17:13:27.527Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: coluna :07"
+   },
    {
     "quando": "2026-07-22T16:36:02.426Z",
     "resultado": "GREEN",
@@ -273,65 +279,16 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "copa · Cabo Verde x Áustria @2.2 (tiro 2) · gatilho: time Cabo Verde"
-   },
-   {
-    "quando": "2026-07-22T09:19:05.230Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: time La Plata"
    }
   ],
   "consumidas": {
    "super": 1784737229232,
-   "premier": 1784738162229
+   "premier": 1784738162229,
+   "copa": 1784740407331
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "18:04",
-     "jogo": "Canadá x Bélgica",
-     "odd": 2.4
-    },
-    {
-     "h": "18:07",
-     "jogo": "Suécia x Croácia",
-     "odd": 2.7
-    },
-    {
-     "h": "18:10",
-     "jogo": "Qatar x Inglaterra",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "coluna :07",
-   "alvo": {
-    "h": "18:10",
-    "jogo": "Qatar x Inglaterra",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1784740224728
-   },
-   "iniciadoEm": 1784739326922,
-   "tiros": [
-    {
-     "h": "18:04",
-     "jogo": "Canadá x Bélgica",
-     "odd": 2.4,
-     "unidades": 1
-    },
-    {
-     "h": "18:07",
-     "jogo": "Suécia x Croácia",
-     "odd": 2.7,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784734286031,
+   "copa": 1784740407331,
    "premier": 1784738162229,
    "euro": 1784736146528,
    "super": 1784737229232
@@ -344,7 +301,7 @@
    "2026-07-19": -12,
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
-   "2026-07-22": -5.2
+   "2026-07-22": -12.2
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
