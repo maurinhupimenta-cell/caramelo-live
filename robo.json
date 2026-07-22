@@ -311,12 +311,18 @@
  },
  "ambas": {
   "saldo": -21.4,
-  "ciclos": 260,
+  "ciclos": 261,
   "greens": 189,
   "redsCiclo": 31,
   "aborts": 0,
-  "descartes": 40,
+  "descartes": 41,
   "historico": [
+   {
+    "quando": "2026-07-22T18:29:13.422Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho odd 2.3) — liga REARMADA"
+   },
    {
     "quando": "2026-07-22T18:04:24.837Z",
     "resultado": "DESCARTADO",
@@ -430,12 +436,6 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: coluna :27"
-   },
-   {
-    "quando": "2026-07-22T12:25:24.230Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho coluna :31) — liga REARMADA"
    }
   ],
   "consumidas": {
@@ -507,6 +507,11 @@
    "n": 16,
    "start": 2
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1784744953338,
+    "gatilho": "odd 2.3"
+   }
+  }
  }
 }
