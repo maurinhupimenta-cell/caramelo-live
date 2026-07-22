@@ -342,12 +342,18 @@
  },
  "ambas": {
   "saldo": -34,
-  "ciclos": 244,
+  "ciclos": 245,
   "greens": 176,
   "redsCiclo": 31,
   "aborts": 0,
-  "descartes": 37,
+  "descartes": 38,
   "historico": [
+   {
+    "quando": "2026-07-22T13:13:21.325Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :25) — liga REARMADA"
+   },
    {
     "quando": "2026-07-22T13:04:47.627Z",
     "resultado": "GREEN",
@@ -461,12 +467,6 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · Escócia x Alemanha @2.05 (tiro 1) · gatilho: time Egito"
-   },
-   {
-    "quando": "2026-07-22T06:25:45.254Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "euro · Sérvia x Geórgia @2.2 (tiro 1) · gatilho: time Sérvia"
    }
   ],
   "consumidas": {
@@ -496,6 +496,11 @@
    "n": 14,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1784726001324,
+    "gatilho": "coluna :25"
+   }
+  }
  }
 }
