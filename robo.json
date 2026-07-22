@@ -442,7 +442,37 @@
    "super": 1784740560931,
    "premier": 1784741569933
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:56",
+     "jogo": "Eslováquia x Itália",
+     "odd": 2.02
+    },
+    {
+     "h": "18:59",
+     "jogo": "República Tcheca x Ucrânia",
+     "odd": 2.15
+    },
+    {
+     "h": "19:02",
+     "jogo": "Eslováquia x Albânia",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "coluna :59",
+   "alvo": {
+    "h": "18:56",
+    "jogo": "Eslováquia x Itália",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1784742506830
+   },
+   "iniciadoEm": 1784742506830
+  },
   "cooldown": {
    "euro": 1784737707135,
    "super": 1784740560931,
@@ -460,9 +490,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":36",
+   "chave": ":59",
    "n": 18,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
