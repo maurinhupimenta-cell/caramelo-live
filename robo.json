@@ -288,8 +288,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "15:57",
@@ -309,13 +309,21 @@
    ],
    "gatilho": "coluna :00",
    "alvo": {
-    "h": "15:57",
-    "jogo": "Leicester x Wolverhampton",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1784732030234
+    "h": "16:00",
+    "jogo": "Aston x West Ham",
+    "odd": 2.62,
+    "unidades": 2,
+    "desde": 1784732385632
    },
-   "iniciadoEm": 1784732030234
+   "iniciadoEm": 1784732030234,
+   "tiros": [
+    {
+     "h": "15:57",
+     "jogo": "Leicester x Wolverhampton",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784729572336,
@@ -529,10 +537,10 @@
    "2026-07-22": -12
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":06",
-   "n": 16,
-   "start": 2
+   "tipo": "odd",
+   "chave": "2.25",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  }
