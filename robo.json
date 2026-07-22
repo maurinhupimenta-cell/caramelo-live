@@ -310,13 +310,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -21.4,
-  "ciclos": 261,
+  "saldo": -28.4,
+  "ciclos": 262,
   "greens": 189,
-  "redsCiclo": 31,
+  "redsCiclo": 32,
   "aborts": 0,
   "descartes": 41,
   "historico": [
+   {
+    "quando": "2026-07-22T18:30:52.030Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Senegal"
+   },
    {
     "quando": "2026-07-22T18:29:13.422Z",
     "resultado": "GREEN_OBS",
@@ -430,67 +436,18 @@
     "resultado": "GREEN",
     "unidades": 1.6,
     "detalhe": "copa · Croácia x Uzbequistão @2.15 (tiro 3) · gatilho: coluna :34"
-   },
-   {
-    "quando": "2026-07-22T12:32:37.828Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: coluna :27"
    }
   ],
   "consumidas": {
-   "premier": 1784741569933
+   "premier": 1784741569933,
+   "copa": 1784745051833
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "19:22",
-     "jogo": "Países Baixos x México",
-     "odd": 1.98
-    },
-    {
-     "h": "19:25",
-     "jogo": "Senegal x Equador",
-     "odd": 2
-    },
-    {
-     "h": "19:28",
-     "jogo": "Irã x Coreia do Sul",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "time Senegal",
-   "alvo": {
-    "h": "19:28",
-    "jogo": "Irã x Coreia do Sul",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1784744893737
-   },
-   "iniciadoEm": 1784743991427,
-   "tiros": [
-    {
-     "h": "19:22",
-     "jogo": "Países Baixos x México",
-     "odd": 1.98,
-     "unidades": 1
-    },
-    {
-     "h": "19:25",
-     "jogo": "Senegal x Equador",
-     "odd": 2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784737707135,
    "super": 1784740560931,
    "premier": 1784741569933,
-   "copa": 1784738245131
+   "copa": 1784745051833
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -499,19 +456,14 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -3.1
+   "2026-07-22": -10.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Portugal",
-   "n": 16,
-   "start": 2
+   "tipo": "odd",
+   "chave": "2.3",
+   "n": 8,
+   "start": 3
   },
-  "_obs": {
-   "euro": {
-    "desde": 1784744953338,
-    "gatilho": "odd 2.3"
-   }
-  }
+  "_obs": {}
  }
 }
