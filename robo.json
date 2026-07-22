@@ -284,8 +284,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "21:48",
@@ -305,13 +305,21 @@
    ],
    "gatilho": "seq RGGRR",
    "alvo": {
-    "h": "21:48",
-    "jogo": "Burnley x United",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1784753083031
+    "h": "21:51",
+    "jogo": "Chelsea x Everton",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1784753449822
    },
-   "iniciadoEm": 1784753083031
+   "iniciadoEm": 1784753083031,
+   "tiros": [
+    {
+     "h": "21:48",
+     "jogo": "Burnley x United",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784747426028,
@@ -331,20 +339,26 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGGRR",
-   "n": 10,
+   "chave": "GGGGG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -62.4,
-  "ciclos": 272,
-  "greens": 190,
+  "saldo": -61.5,
+  "ciclos": 273,
+  "greens": 191,
   "redsCiclo": 37,
   "aborts": 0,
   "descartes": 45,
   "historico": [
+   {
+    "quando": "2026-07-22T20:50:50.128Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Burnley x United @1.9 (tiro 1) · gatilho: seq GGGGR"
+   },
    {
     "quando": "2026-07-22T20:44:43.228Z",
     "resultado": "GREEN_OBS",
@@ -458,54 +472,19 @@
     "resultado": "GREEN",
     "unidades": 0.8,
     "detalhe": "super · Asuncion x Guayaquil @1.9 (tiro 2) · gatilho: seq RRRRG"
-   },
-   {
-    "quando": "2026-07-22T15:22:25.126Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "copa · Argentina x Portugal @1.85 (tiro 2) · gatilho: time Portugal"
    }
   ],
   "consumidas": {
    "copa": 1784750486531,
    "euro": 1784751266125,
-   "super": 1784751926431
+   "super": 1784751926431,
+   "premier": 1784753449930
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:48",
-     "jogo": "Burnley x United",
-     "odd": 1.9
-    },
-    {
-     "h": "21:51",
-     "jogo": "Chelsea x Everton",
-     "odd": 1.9
-    },
-    {
-     "h": "21:54",
-     "jogo": "Norwich x Newcastle",
-     "odd": 1.83
-    }
-   ],
-   "gatilho": "seq GGGGR",
-   "alvo": {
-    "h": "21:48",
-    "jogo": "Burnley x United",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1784753087429
-   },
-   "iniciadoEm": 1784753087429
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784751266125,
    "super": 1784751926431,
-   "premier": 1784748933323,
+   "premier": 1784753449930,
    "copa": 1784750486531
   },
   "dias": {
@@ -515,7 +494,7 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -44.1
+   "2026-07-22": -43.2
   },
   "_gatilhoAtual": {
    "tipo": "seq",
