@@ -445,8 +445,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "18:27",
@@ -466,13 +466,21 @@
    ],
    "gatilho": "coluna :30",
    "alvo": {
-    "h": "18:27",
-    "jogo": "United x Chelsea",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1784740705427
+    "h": "18:30",
+    "jogo": "Everton x Burnley",
+    "odd": 1.86,
+    "unidades": 2,
+    "desde": 1784741384727
    },
-   "iniciadoEm": 1784740705427
+   "iniciadoEm": 1784740705427,
+   "tiros": [
+    {
+     "h": "18:27",
+     "jogo": "United x Chelsea",
+     "odd": 1.95,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784737707135,
@@ -491,7 +499,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":30",
+   "chave": ":36",
    "n": 18,
    "start": 1
   },
