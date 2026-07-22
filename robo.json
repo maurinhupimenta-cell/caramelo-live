@@ -442,8 +442,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "21:08",
@@ -463,13 +463,21 @@
    ],
    "gatilho": "seq GRGGG",
    "alvo": {
-    "h": "21:08",
-    "jogo": "Croácia x República Tcheca",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1784750725529
+    "h": "21:11",
+    "jogo": "Países Baixos x Turquia",
+    "odd": 1.98,
+    "unidades": 2,
+    "desde": 1784751146722
    },
-   "iniciadoEm": 1784750725529
+   "iniciadoEm": 1784750725529,
+   "tiros": [
+    {
+     "h": "21:08",
+     "jogo": "Croácia x República Tcheca",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784746047834,
@@ -487,10 +495,10 @@
    "2026-07-22": -38.1
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.9",
-   "n": 27,
-   "start": 3
+   "tipo": "seq",
+   "chave": "GRRGG",
+   "n": 14,
+   "start": 1
   },
   "_obs": {}
  }
