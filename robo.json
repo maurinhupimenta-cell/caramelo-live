@@ -282,7 +282,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:48",
+     "jogo": "Burnley x United",
+     "odd": 2.1
+    },
+    {
+     "h": "21:51",
+     "jogo": "Chelsea x Everton",
+     "odd": 2.15
+    },
+    {
+     "h": "21:54",
+     "jogo": "Norwich x Newcastle",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "seq RGGRR",
+   "alvo": {
+    "h": "21:48",
+    "jogo": "Burnley x United",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1784753083031
+   },
+   "iniciadoEm": 1784753083031
+  },
   "cooldown": {
    "copa": 1784747426028,
    "premier": 1784743719525,
@@ -300,9 +330,9 @@
    "2026-07-22": -9.1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":07",
-   "n": 20,
+   "tipo": "seq",
+   "chave": "RGGRR",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
