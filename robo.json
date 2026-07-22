@@ -341,12 +341,18 @@
  },
  "ambas": {
   "saldo": -21.4,
-  "ciclos": 259,
+  "ciclos": 260,
   "greens": 189,
   "redsCiclo": 31,
   "aborts": 0,
-  "descartes": 39,
+  "descartes": 40,
   "historico": [
+   {
+    "quando": "2026-07-22T18:04:24.837Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-22T17:32:50.125Z",
     "resultado": "GREEN",
@@ -460,12 +466,6 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho coluna :31) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-22T12:12:46.723Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: odd 2.1"
    }
   ],
   "consumidas": {
