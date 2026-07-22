@@ -286,8 +286,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "20:04",
@@ -307,13 +307,21 @@
    ],
    "gatilho": "coluna :07",
    "alvo": {
-    "h": "20:04",
-    "jogo": "África do Sul x Bélgica",
-    "odd": 2.45,
-    "unidades": 1,
-    "desde": 1784746525925
+    "h": "20:07",
+    "jogo": "Irã x Turquia",
+    "odd": 2.55,
+    "unidades": 2,
+    "desde": 1784747248529
    },
-   "iniciadoEm": 1784746525925
+   "iniciadoEm": 1784746525925,
+   "tiros": [
+    {
+     "h": "20:04",
+     "jogo": "África do Sul x Bélgica",
+     "odd": 2.45,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784740407331,
@@ -340,13 +348,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -35.4,
-  "ciclos": 263,
+  "saldo": -42.4,
+  "ciclos": 264,
   "greens": 189,
-  "redsCiclo": 33,
+  "redsCiclo": 34,
   "aborts": 0,
   "descartes": 41,
   "historico": [
+   {
+    "quando": "2026-07-22T19:05:32.327Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: seq RRRRG"
+   },
    {
     "quando": "2026-07-22T18:47:28.028Z",
     "resultado": "RED_CICLO",
@@ -460,66 +474,17 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho coluna :25) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-22T13:04:47.627Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · Espanha x Hungria @1.95 (tiro 1) · gatilho: time Inglaterra"
    }
   ],
   "consumidas": {
    "copa": 1784745051833,
-   "euro": 1784746047834
+   "euro": 1784746047834,
+   "super": 1784747132222
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "19:55",
-     "jogo": "Rio de Janeiro x Avellaneda",
-     "odd": 2.02
-    },
-    {
-     "h": "19:58",
-     "jogo": "Buenos Aires x Penarol",
-     "odd": 2.02
-    },
-    {
-     "h": "20:01",
-     "jogo": "Belo Horizonte x Porto Alegre",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "seq RRRRG",
-   "alvo": {
-    "h": "20:01",
-    "jogo": "Belo Horizonte x Porto Alegre",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1784747130525
-   },
-   "iniciadoEm": 1784746347128,
-   "tiros": [
-    {
-     "h": "19:55",
-     "jogo": "Rio de Janeiro x Avellaneda",
-     "odd": 2.02,
-     "unidades": 1
-    },
-    {
-     "h": "19:58",
-     "jogo": "Buenos Aires x Penarol",
-     "odd": 2.02,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784746047834,
-   "super": 1784740560931,
+   "super": 1784747132222,
    "premier": 1784741569933,
    "copa": 1784745051833
   },
@@ -530,13 +495,13 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -17.1
+   "2026-07-22": -24.1
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":06",
    "n": 19,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
