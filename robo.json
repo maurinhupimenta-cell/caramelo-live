@@ -285,7 +285,37 @@
    "super": 1784722605823,
    "copa": 1784725123425
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:11",
+     "jogo": "Escócia x Hungria",
+     "odd": 2.35
+    },
+    {
+     "h": "14:14",
+     "jogo": "Albânia x Croácia",
+     "odd": 2.55
+    },
+    {
+     "h": "14:17",
+     "jogo": "Alemanha x Portugal",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "seq GGGGG",
+   "alvo": {
+    "h": "14:11",
+    "jogo": "Escócia x Hungria",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1784725708126
+   },
+   "iniciadoEm": 1784725708126
+  },
   "cooldown": {
    "copa": 1784725123425,
    "premier": 1784721580739,
@@ -303,9 +333,9 @@
    "2026-07-22": 5.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Cabo Verde",
-   "n": 14,
+   "tipo": "seq",
+   "chave": "GGGGG",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
