@@ -312,13 +312,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -24.4,
-  "ciclos": 256,
-  "greens": 186,
+  "saldo": -23.3,
+  "ciclos": 257,
+  "greens": 187,
   "redsCiclo": 31,
   "aborts": 0,
   "descartes": 39,
   "historico": [
+   {
+    "quando": "2026-07-22T16:37:25.331Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Equador x Iraque @2.05 (tiro 2) · gatilho: time Senegal"
+   },
    {
     "quando": "2026-07-22T16:28:27.326Z",
     "resultado": "GREEN",
@@ -432,63 +438,20 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "euro · República Tcheca x Polônia @2.3 (tiro 1) · gatilho: time Inglaterra"
-   },
-   {
-    "quando": "2026-07-22T09:48:27.732Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "premier · Leeds x Chelsea @2.1 (tiro 1) · gatilho: odd 2.1"
    }
   ],
   "consumidas": {
    "super": 1784736746530,
    "premier": 1784737079428,
-   "euro": 1784737707135
+   "euro": 1784737707135,
+   "copa": 1784738245131
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:31",
-     "jogo": "Uzbequistão x Senegal",
-     "odd": 2.1
-    },
-    {
-     "h": "17:34",
-     "jogo": "Equador x Iraque",
-     "odd": 2.05
-    },
-    {
-     "h": "17:37",
-     "jogo": "Escócia x Panamá",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "time Senegal",
-   "alvo": {
-    "h": "17:34",
-    "jogo": "Equador x Iraque",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1784738125524
-   },
-   "iniciadoEm": 1784737743630,
-   "tiros": [
-    {
-     "h": "17:31",
-     "jogo": "Uzbequistão x Senegal",
-     "odd": 2.1,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784737707135,
    "super": 1784736746530,
    "premier": 1784737079428,
-   "copa": 1784733744928
+   "copa": 1784738245131
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -497,13 +460,13 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -6.1
+   "2026-07-22": -5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Portugal",
-   "n": 14,
-   "start": 2
+   "tipo": "seq",
+   "chave": "RRRRG",
+   "n": 13,
+   "start": 1
   },
   "_obs": {}
  }
