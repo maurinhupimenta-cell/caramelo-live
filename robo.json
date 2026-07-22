@@ -443,12 +443,41 @@
    }
   ],
   "consumidas": {
-   "super": 1784703666228,
    "premier": 1784705557038,
    "euro": 1784705864231,
    "copa": 1784706443829
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:07",
+     "jogo": "Rio de Janeiro x Asuncion",
+     "odd": 2.07
+    },
+    {
+     "h": "09:10",
+     "jogo": "Montevideo x Porto Alegre",
+     "odd": 2.1
+    },
+    {
+     "h": "09:13",
+     "jogo": "Itaquera x Penarol",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "odd 2.1",
+   "alvo": {
+    "h": "09:07",
+    "jogo": "Rio de Janeiro x Asuncion",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1784707286233
+   },
+   "iniciadoEm": 1784707286233
+  },
   "cooldown": {
    "euro": 1784705864231,
    "super": 1784703666228,
@@ -465,10 +494,10 @@
    "2026-07-22": -5.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Japão",
-   "n": 8,
-   "start": 3
+   "tipo": "odd",
+   "chave": "2.1",
+   "n": 12,
+   "start": 2
   },
   "_obs": {}
  }
