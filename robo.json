@@ -285,7 +285,37 @@
    "premier": 1784708617932,
    "euro": 1784710924734
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:10",
+     "jogo": "Medellin x Bogota",
+     "odd": 2.62
+    },
+    {
+     "h": "10:13",
+     "jogo": "Itaquera x La Plata",
+     "odd": 2.6
+    },
+    {
+     "h": "10:16",
+     "jogo": "Sao Paulo x Asuncion",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time La Plata",
+   "alvo": {
+    "h": "10:10",
+    "jogo": "Medellin x Bogota",
+    "odd": 2.62,
+    "unidades": 1,
+    "desde": 1784710926430
+   },
+   "iniciadoEm": 1784710926430
+  },
   "cooldown": {
    "copa": 1784706443537,
    "premier": 1784708617932,
@@ -446,8 +476,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "10:01",
@@ -467,13 +497,21 @@
    ],
    "gatilho": "time Egito",
    "alvo": {
-    "h": "10:01",
-    "jogo": "Argentina x Argélia",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1784710385238
+    "h": "10:04",
+    "jogo": "Qatar x Egito",
+    "odd": 1.9,
+    "unidades": 2,
+    "desde": 1784711043429
    },
-   "iniciadoEm": 1784710385238
+   "iniciadoEm": 1784710385238,
+   "tiros": [
+    {
+     "h": "10:01",
+     "jogo": "Argentina x Argélia",
+     "odd": 1.95,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784710383738,
