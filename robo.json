@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -46.5,
-  "ciclos": 252,
-  "greens": 174,
+  "saldo": -45.2,
+  "ciclos": 253,
+  "greens": 175,
   "redsCiclo": 45,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-22T21:08:25.423Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "euro · Suíça x Hungria @2.25 (tiro 1) · gatilho: coluna :08"
+   },
    {
     "quando": "2026-07-22T20:58:25.626Z",
     "resultado": "GREEN",
@@ -273,52 +279,17 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "copa · República Tcheca x Curação @2.25 (tiro 1) · gatilho: time Cabo Verde"
-   },
-   {
-    "quando": "2026-07-22T12:16:46.025Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "super · La Plata x Montevideo @2.4 (tiro 1) · gatilho: coluna :16"
    }
   ],
   "consumidas": {
-   "premier": 1784753905522
+   "premier": 1784753905522,
+   "euro": 1784754505223
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:05",
-     "jogo": "Suíça x Hungria",
-     "odd": 2.25
-    },
-    {
-     "h": "22:08",
-     "jogo": "Polônia x Inglaterra",
-     "odd": 2.25
-    },
-    {
-     "h": "22:11",
-     "jogo": "Croácia x Portugal",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "coluna :08",
-   "alvo": {
-    "h": "22:05",
-    "jogo": "Suíça x Hungria",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1784753966236
-   },
-   "iniciadoEm": 1784753966236
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784747426028,
    "premier": 1784753905522,
-   "euro": 1784736146528,
+   "euro": 1784754505223,
    "super": 1784737229232
   },
   "dias": {
@@ -329,13 +300,13 @@
    "2026-07-19": -12,
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
-   "2026-07-22": -7.9
+   "2026-07-22": -6.6
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":08",
-   "n": 24,
-   "start": 3
+   "chave": ":07",
+   "n": 22,
+   "start": 1
   },
   "_obs": {}
  },
@@ -473,7 +444,37 @@
    "super": 1784751926431,
    "premier": 1784753449930
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:04",
+     "jogo": "Bélgica x Argélia",
+     "odd": 2.05
+    },
+    {
+     "h": "22:07",
+     "jogo": "Curação x Jordânia",
+     "odd": 1.87
+    },
+    {
+     "h": "22:10",
+     "jogo": "Irã x Argélia",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "odd 1.87",
+   "alvo": {
+    "h": "22:04",
+    "jogo": "Bélgica x Argélia",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1784754146324
+   },
+   "iniciadoEm": 1784754146324
+  },
   "cooldown": {
    "euro": 1784751266125,
    "super": 1784751926431,
@@ -490,16 +491,11 @@
    "2026-07-22": -43.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGGR",
-   "n": 8,
+   "tipo": "odd",
+   "chave": "1.87",
+   "n": 14,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1784754144827,
-    "gatilho": "odd 1.87"
-   }
-  }
+  "_obs": {}
  }
 }
