@@ -311,12 +311,18 @@
  },
  "ambas": {
   "saldo": -42.4,
-  "ciclos": 264,
+  "ciclos": 265,
   "greens": 189,
   "redsCiclo": 34,
   "aborts": 0,
-  "descartes": 41,
+  "descartes": 42,
   "historico": [
+   {
+    "quando": "2026-07-22T19:31:24.929Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho coluna :34) — liga REARMADA"
+   },
    {
     "quando": "2026-07-22T19:05:32.327Z",
     "resultado": "RED_CICLO",
@@ -430,16 +436,9 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "super · Sao Paulo x Santos @1.93 (tiro 2) · gatilho: coluna :25"
-   },
-   {
-    "quando": "2026-07-22T13:13:21.325Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :25) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "copa": 1784745051833,
    "euro": 1784746047834,
    "super": 1784747132222
   },
@@ -503,6 +502,11 @@
    "n": 17,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1784748684928,
+    "gatilho": "coluna :34"
+   }
+  }
  }
 }
