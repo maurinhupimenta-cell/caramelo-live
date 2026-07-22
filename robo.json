@@ -444,8 +444,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "20:27",
@@ -465,11 +465,11 @@
    ],
    "gatilho": "odd 2.07",
    "alvo": {
-    "h": "20:30",
-    "jogo": "West Ham x Burnley",
-    "odd": 2.07,
-    "unidades": 2,
-    "desde": 1784748573229
+    "h": "20:33",
+    "jogo": "Newcastle x Wolverhampton",
+    "odd": 1.76,
+    "unidades": 4,
+    "desde": 1784748764134
    },
    "iniciadoEm": 1784747906330,
    "tiros": [
@@ -478,6 +478,12 @@
      "jogo": "Southampton x United",
      "odd": 2.02,
      "unidades": 1
+    },
+    {
+     "h": "20:30",
+     "jogo": "West Ham x Burnley",
+     "odd": 2.07,
+     "unidades": 2
     }
    ]
   },
@@ -497,16 +503,11 @@
    "2026-07-22": -24.1
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.07",
-   "n": 17,
+   "tipo": "coluna",
+   "chave": ":34",
+   "n": 20,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1784748684928,
-    "gatilho": "coluna :34"
-   }
-  }
+  "_obs": {}
  }
 }
