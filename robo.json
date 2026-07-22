@@ -128,9 +128,7 @@
     "detalhe": "premier · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {
-   "premier": 1784706946337
-  },
+  "consumidas": {},
   "ciclo": null,
   "cooldown": {
    "copa": 1784670696456,
@@ -286,7 +284,37 @@
   "consumidas": {
    "premier": 1784708617932
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:59",
+     "jogo": "Eslovênia x Suíça",
+     "odd": 2.45
+    },
+    {
+     "h": "10:02",
+     "jogo": "Áustria x Polônia",
+     "odd": 2.5
+    },
+    {
+     "h": "10:05",
+     "jogo": "Croácia x Dinamarca",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "coluna :02",
+   "alvo": {
+    "h": "09:59",
+    "jogo": "Eslovênia x Suíça",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1784710385038
+   },
+   "iniciadoEm": 1784710385038
+  },
   "cooldown": {
    "copa": 1784706443537,
    "premier": 1784708617932,
@@ -304,10 +332,10 @@
    "2026-07-22": 0.3
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.4",
+   "tipo": "coluna",
+   "chave": ":07",
    "n": 10,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
@@ -445,7 +473,37 @@
    "premier": 1784709885530,
    "euro": 1784710383738
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:01",
+     "jogo": "Argentina x Argélia",
+     "odd": 1.95
+    },
+    {
+     "h": "10:04",
+     "jogo": "Qatar x Egito",
+     "odd": 1.9
+    },
+    {
+     "h": "10:07",
+     "jogo": "Argentina x França",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "time Egito",
+   "alvo": {
+    "h": "10:01",
+    "jogo": "Argentina x Argélia",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1784710385238
+   },
+   "iniciadoEm": 1784710385238
+  },
   "cooldown": {
    "euro": 1784710383738,
    "super": 1784708165334,
@@ -462,10 +520,10 @@
    "2026-07-22": -1.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":56",
-   "n": 9,
-   "start": 1
+   "tipo": "time",
+   "chave": "Egito",
+   "n": 13,
+   "start": 2
   },
   "_obs": {}
  }
