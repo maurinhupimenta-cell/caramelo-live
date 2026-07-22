@@ -154,12 +154,18 @@
  },
  "o25": {
   "saldo": -43.6,
-  "ciclos": 239,
+  "ciclos": 240,
   "greens": 167,
   "redsCiclo": 43,
   "aborts": 0,
-  "descartes": 29,
+  "descartes": 30,
   "historico": [
+   {
+    "quando": "2026-07-22T14:53:49.336Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho coluna :00) — liga REARMADA"
+   },
    {
     "quando": "2026-07-22T14:53:25.629Z",
     "resultado": "GREEN",
@@ -273,12 +279,6 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho odd 2.45) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-22T06:53:42.833Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "premier · Newcastle x Watford @2.15 (tiro 1) · gatilho: odd 2.4"
    }
   ],
   "consumidas": {
@@ -286,7 +286,37 @@
    "super": 1784729953630,
    "euro": 1784732005523
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:57",
+     "jogo": "Leicester x Wolverhampton",
+     "odd": 2.15
+    },
+    {
+     "h": "16:00",
+     "jogo": "Aston x West Ham",
+     "odd": 2.62
+    },
+    {
+     "h": "16:03",
+     "jogo": "Leicester x Norwich",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "coluna :00",
+   "alvo": {
+    "h": "15:57",
+    "jogo": "Leicester x Wolverhampton",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1784732030234
+   },
+   "iniciadoEm": 1784732030234
+  },
   "cooldown": {
    "copa": 1784729572336,
    "premier": 1784728429230,
@@ -305,7 +335,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":53",
+   "chave": ":00",
    "n": 15,
    "start": 1
   },
@@ -446,8 +476,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "15:56",
@@ -467,13 +497,21 @@
    ],
    "gatilho": "coluna :59",
    "alvo": {
-    "h": "15:56",
-    "jogo": "Itália x Croácia",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1784731706633
+    "h": "15:59",
+    "jogo": "Hungria x Geórgia",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1784732334533
    },
-   "iniciadoEm": 1784731706633
+   "iniciadoEm": 1784731706633,
+   "tiros": [
+    {
+     "h": "15:56",
+     "jogo": "Itália x Croácia",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784725487431,
@@ -492,9 +530,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":59",
-   "n": 15,
-   "start": 1
+   "chave": ":06",
+   "n": 16,
+   "start": 2
   },
   "_obs": {}
  }
