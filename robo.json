@@ -341,13 +341,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -22.6,
-  "ciclos": 239,
+  "saldo": -29.6,
+  "ciclos": 240,
   "greens": 174,
-  "redsCiclo": 29,
+  "redsCiclo": 30,
   "aborts": 0,
   "descartes": 36,
   "historico": [
+   {
+    "quando": "2026-07-22T12:12:46.723Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: odd 2.1"
+   },
    {
     "quando": "2026-07-22T11:55:44.530Z",
     "resultado": "GREEN",
@@ -461,65 +467,16 @@
     "resultado": "GREEN",
     "unidades": 0.7,
     "detalhe": "copa · Costa do Marfim x RD Congo @1.86 (tiro 2) · gatilho: time Costa do Marfim"
-   },
-   {
-    "quando": "2026-07-22T05:13:29.230Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · Alemanha x Hungria @2.02 (tiro 1) · gatilho: time Eslovênia"
    }
   ],
   "consumidas": {
-   "euro": 1784721344332
+   "euro": 1784721344332,
+   "super": 1784722366431
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "13:04",
-     "jogo": "Bogota x Penarol",
-     "odd": 2.3
-    },
-    {
-     "h": "13:07",
-     "jogo": "La Boca x Quito",
-     "odd": 2.1
-    },
-    {
-     "h": "13:10",
-     "jogo": "Santiago x Itaquera",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "odd 2.1",
-   "alvo": {
-    "h": "13:10",
-    "jogo": "Santiago x Itaquera",
-    "odd": 1.9,
-    "unidades": 4,
-    "desde": 1784722206327
-   },
-   "iniciadoEm": 1784721345733,
-   "tiros": [
-    {
-     "h": "13:04",
-     "jogo": "Bogota x Penarol",
-     "odd": 2.3,
-     "unidades": 1
-    },
-    {
-     "h": "13:07",
-     "jogo": "La Boca x Quito",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784721344332,
-   "super": 1784712126128,
+   "super": 1784722366431,
    "premier": 1784713707532,
    "copa": 1784711384730
   },
@@ -530,7 +487,7 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -4.3
+   "2026-07-22": -11.3
   },
   "_gatilhoAtual": {
    "tipo": "odd",
