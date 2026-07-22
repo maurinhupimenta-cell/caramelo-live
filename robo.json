@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -38.3,
-  "ciclos": 225,
-  "greens": 157,
+  "saldo": -36.8,
+  "ciclos": 226,
+  "greens": 158,
   "redsCiclo": 40,
   "aborts": 0,
   "descartes": 28,
   "historico": [
+   {
+    "quando": "2026-07-22T09:02:04.934Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "euro · Eslovênia x Suíça @2.45 (tiro 1) · gatilho: coluna :02"
+   },
    {
     "quando": "2026-07-22T08:23:38.132Z",
     "resultado": "GREEN",
@@ -273,52 +279,17 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: placar goleada (3+)"
-   },
-   {
-    "quando": "2026-07-21T18:58:13.851Z",
-    "resultado": "GREEN",
-    "unidades": 1.6,
-    "detalhe": "super · Itaquera x Bogota @2.6 (tiro 1) · gatilho: odd 2.6"
    }
   ],
   "consumidas": {
-   "premier": 1784708617932
+   "premier": 1784708617932,
+   "euro": 1784710924734
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "09:59",
-     "jogo": "Eslovênia x Suíça",
-     "odd": 2.45
-    },
-    {
-     "h": "10:02",
-     "jogo": "Áustria x Polônia",
-     "odd": 2.5
-    },
-    {
-     "h": "10:05",
-     "jogo": "Croácia x Dinamarca",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "coluna :02",
-   "alvo": {
-    "h": "09:59",
-    "jogo": "Eslovênia x Suíça",
-    "odd": 2.45,
-    "unidades": 1,
-    "desde": 1784710385038
-   },
-   "iniciadoEm": 1784710385038
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784706443537,
    "premier": 1784708617932,
-   "euro": 1784706784031,
+   "euro": 1784710924734,
    "super": 1784705826639
   },
   "dias": {
@@ -329,12 +300,12 @@
    "2026-07-19": -12,
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
-   "2026-07-22": 0.3
+   "2026-07-22": 1.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":07",
-   "n": 10,
+   "tipo": "time",
+   "chave": "La Plata",
+   "n": 16,
    "start": 3
   },
   "_obs": {}
@@ -523,7 +494,7 @@
    "tipo": "time",
    "chave": "Egito",
    "n": 13,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
