@@ -443,7 +443,37 @@
    "super": 1784747132222,
    "premier": 1784748933323
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:49",
+     "jogo": "EUA x Austrália",
+     "odd": 1.95
+    },
+    {
+     "h": "20:52",
+     "jogo": "Costa do Marfim x Portugal",
+     "odd": 1.85
+    },
+    {
+     "h": "20:55",
+     "jogo": "Panamá x Irã",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time Portugal",
+   "alvo": {
+    "h": "20:49",
+    "jogo": "EUA x Austrália",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1784749291123
+   },
+   "iniciadoEm": 1784749291123
+  },
   "cooldown": {
    "euro": 1784746047834,
    "super": 1784747132222,
@@ -460,10 +490,10 @@
    "2026-07-22": -31.1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":34",
-   "n": 20,
-   "start": 1
+   "tipo": "time",
+   "chave": "Portugal",
+   "n": 18,
+   "start": 3
   },
   "_obs": {}
  }
