@@ -446,8 +446,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "14:22",
@@ -467,13 +467,21 @@
    ],
    "gatilho": "coluna :25",
    "alvo": {
-    "h": "14:22",
-    "jogo": "Bogota x Quito",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1784726002129
+    "h": "14:25",
+    "jogo": "Sao Paulo x Santos",
+    "odd": 1.93,
+    "unidades": 2,
+    "desde": 1784726849730
    },
-   "iniciadoEm": 1784726002129
+   "iniciadoEm": 1784726002129,
+   "tiros": [
+    {
+     "h": "14:22",
+     "jogo": "Bogota x Quito",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784725487431,
@@ -492,9 +500,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":25",
+   "chave": ":28",
    "n": 14,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
