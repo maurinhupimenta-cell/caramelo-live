@@ -284,7 +284,37 @@
   "consumidas": {
    "premier": 1784753905522
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:05",
+     "jogo": "Suíça x Hungria",
+     "odd": 2.25
+    },
+    {
+     "h": "22:08",
+     "jogo": "Polônia x Inglaterra",
+     "odd": 2.25
+    },
+    {
+     "h": "22:11",
+     "jogo": "Croácia x Portugal",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "coluna :08",
+   "alvo": {
+    "h": "22:05",
+    "jogo": "Suíça x Hungria",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1784753966236
+   },
+   "iniciadoEm": 1784753966236
+  },
   "cooldown": {
    "copa": 1784747426028,
    "premier": 1784753905522,
