@@ -153,12 +153,18 @@
  },
  "o25": {
   "saldo": -46.5,
-  "ciclos": 218,
+  "ciclos": 219,
   "greens": 152,
   "redsCiclo": 40,
   "aborts": 0,
-  "descartes": 26,
+  "descartes": 27,
   "historico": [
+   {
+    "quando": "2026-07-22T06:41:53.636Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho odd 2.4) — liga REARMADA"
+   },
    {
     "quando": "2026-07-22T06:35:05.732Z",
     "resultado": "GREEN",
@@ -272,12 +278,6 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "premier · City x Norwich @2.1 (tiro 2) · gatilho: placar acima de 1-0 (2-1)"
-   },
-   {
-    "quando": "2026-07-21T16:19:09.558Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "copa · Coreia do Sul x Curação @2.3 (tiro 1) · gatilho: placar acima de 1-0 (2-1)"
    }
   ],
   "consumidas": {
@@ -308,7 +308,12 @@
    "n": 12,
    "start": 2
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1784702513636,
+    "gatilho": "odd 2.4"
+   }
+  }
  },
  "ambas": {
   "saldo": -19.6,
