@@ -313,13 +313,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -25.2,
-  "ciclos": 237,
-  "greens": 172,
+  "saldo": -23.9,
+  "ciclos": 238,
+  "greens": 173,
   "redsCiclo": 29,
   "aborts": 0,
   "descartes": 36,
   "historico": [
+   {
+    "quando": "2026-07-22T10:01:43.034Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "euro · República Tcheca x Polônia @2.3 (tiro 1) · gatilho: time Inglaterra"
+   },
    {
     "quando": "2026-07-22T09:48:27.732Z",
     "resultado": "GREEN",
@@ -433,22 +439,17 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq GRRR"
-   },
-   {
-    "quando": "2026-07-22T04:59:24.537Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho time Eslovênia) — liga REARMADA"
    }
   ],
   "consumidas": {
    "copa": 1784711384730,
    "super": 1784712126128,
-   "premier": 1784713707532
+   "premier": 1784713707532,
+   "euro": 1784714502833
   },
   "ciclo": null,
   "cooldown": {
-   "euro": 1784710383738,
+   "euro": 1784714502833,
    "super": 1784712126128,
    "premier": 1784713707532,
    "copa": 1784711384730
@@ -460,12 +461,12 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -6.9
+   "2026-07-22": -5.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.1",
-   "n": 13,
+   "tipo": "time",
+   "chave": "Inglaterra",
+   "n": 16,
    "start": 1
   },
   "_obs": {}
