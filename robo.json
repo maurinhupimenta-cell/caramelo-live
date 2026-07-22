@@ -336,18 +336,24 @@
    "tipo": "time",
    "chave": "Cabo Verde",
    "n": 16,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -28,
-  "ciclos": 252,
-  "greens": 182,
+  "saldo": -27.3,
+  "ciclos": 253,
+  "greens": 183,
   "redsCiclo": 31,
   "aborts": 0,
   "descartes": 39,
   "historico": [
+   {
+    "quando": "2026-07-22T15:22:25.126Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "copa · Argentina x Portugal @1.85 (tiro 2) · gatilho: time Portugal"
+   },
    {
     "quando": "2026-07-22T15:09:33.131Z",
     "resultado": "GREEN",
@@ -461,55 +467,20 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "euro · Hungria x Turquia @2.15 (tiro 2) · gatilho: placar empate 2-2"
-   },
-   {
-    "quando": "2026-07-22T08:44:45.632Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "premier · Chelsea x Wolverhampton @1.86 (tiro 1) · gatilho: odd 2.1"
    }
   ],
   "consumidas": {
    "super": 1784731588322,
    "euro": 1784732726334,
-   "premier": 1784732973024
+   "premier": 1784732973024,
+   "copa": 1784733744928
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:16",
-     "jogo": "África do Sul x Haiti",
-     "odd": 2.02
-    },
-    {
-     "h": "16:19",
-     "jogo": "Argentina x Portugal",
-     "odd": 1.85
-    },
-    {
-     "h": "16:22",
-     "jogo": "Austrália x Escócia",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "time Portugal",
-   "alvo": {
-    "h": "16:16",
-    "jogo": "África do Sul x Haiti",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1784733384423
-   },
-   "iniciadoEm": 1784733384423
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784732726334,
    "super": 1784731588322,
    "premier": 1784732973024,
-   "copa": 1784729772424
+   "copa": 1784733744928
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -518,13 +489,13 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -9.7
+   "2026-07-22": -9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Portugal",
-   "n": 12,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":31",
+   "n": 16,
+   "start": 2
   },
   "_obs": {}
  }
