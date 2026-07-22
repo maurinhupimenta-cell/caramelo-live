@@ -314,13 +314,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -22.3,
-  "ciclos": 232,
-  "greens": 168,
+  "saldo": -21.4,
+  "ciclos": 233,
+  "greens": 169,
   "redsCiclo": 28,
   "aborts": 0,
   "descartes": 36,
   "historico": [
+   {
+    "quando": "2026-07-22T08:44:45.632Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Chelsea x Wolverhampton @1.86 (tiro 1) · gatilho: odd 2.1"
+   },
    {
     "quando": "2026-07-22T08:32:51.230Z",
     "resultado": "GREEN_OBS",
@@ -434,53 +440,48 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: odd 2.07"
-   },
-   {
-    "quando": "2026-07-21T20:25:54.658Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "euro · Hungria x Países Baixos @1.93 (tiro 1) · gatilho: placar acima de 1-0 (2-1)"
    }
   ],
   "consumidas": {
    "copa": 1784706443829,
-   "super": 1784708165334
+   "super": 1784708165334,
+   "premier": 1784709885530
   },
   "ciclo": {
-   "liga": "premier",
+   "liga": "euro",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "09:42",
-     "jogo": "Chelsea x Wolverhampton",
-     "odd": 1.86
+     "h": "09:47",
+     "jogo": "Suíça x Espanha",
+     "odd": 1.8
     },
     {
-     "h": "09:45",
-     "jogo": "City x Leeds",
-     "odd": 2.1
+     "h": "09:50",
+     "jogo": "Hungria x Turquia",
+     "odd": 2.15
     },
     {
-     "h": "09:48",
-     "jogo": "Islington x Norwich",
-     "odd": 2
+     "h": "09:53",
+     "jogo": "Portugal x Espanha",
+     "odd": 1.85
     }
    ],
-   "gatilho": "odd 2.1",
+   "gatilho": "placar empate 2-2",
    "alvo": {
-    "h": "09:42",
-    "jogo": "Chelsea x Wolverhampton",
-    "odd": 1.86,
+    "h": "09:47",
+    "jogo": "Suíça x Espanha",
+    "odd": 1.8,
     "unidades": 1,
-    "desde": 1784709183632
+    "desde": 1784709887034
    },
-   "iniciadoEm": 1784709183632
+   "iniciadoEm": 1784709887034
   },
   "cooldown": {
    "euro": 1784705864231,
    "super": 1784708165334,
-   "premier": 1784705557038,
+   "premier": 1784709885530,
    "copa": 1784706443829
   },
   "dias": {
@@ -490,13 +491,13 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -4
+   "2026-07-22": -3.1
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.1",
-   "n": 12,
-   "start": 2
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 11,
+   "start": 1
   },
   "_obs": {}
  }
