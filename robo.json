@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -37.6,
-  "ciclos": 230,
-  "greens": 161,
+  "saldo": -36.2,
+  "ciclos": 231,
+  "greens": 162,
   "redsCiclo": 41,
   "aborts": 0,
   "descartes": 28,
   "historico": [
+   {
+    "quando": "2026-07-22T11:59:40.932Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "premier · Islington x Tottenham @2.4 (tiro 1) · gatilho: coluna :00"
+   },
    {
     "quando": "2026-07-22T11:55:44.329Z",
     "resultado": "GREEN",
@@ -273,21 +279,16 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "copa · Tunísia x Costa do Marfim @2.4 (tiro 1) · gatilho: odd 2.4"
-   },
-   {
-    "quando": "2026-07-22T04:59:08.230Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho seq GRGR) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "euro": 1784721344134
+   "euro": 1784721344134,
+   "premier": 1784721580739
   },
   "ciclo": null,
   "cooldown": {
    "copa": 1784713224036,
-   "premier": 1784713839429,
+   "premier": 1784721580739,
    "euro": 1784721344134,
    "super": 1784711944836
   },
@@ -299,7 +300,7 @@
    "2026-07-19": -12,
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
-   "2026-07-22": 1
+   "2026-07-22": 2.4
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
@@ -446,7 +447,37 @@
   "consumidas": {
    "euro": 1784721344332
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:04",
+     "jogo": "Bogota x Penarol",
+     "odd": 2.3
+    },
+    {
+     "h": "13:07",
+     "jogo": "La Boca x Quito",
+     "odd": 2.1
+    },
+    {
+     "h": "13:10",
+     "jogo": "Santiago x Itaquera",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "odd 2.1",
+   "alvo": {
+    "h": "13:04",
+    "jogo": "Bogota x Penarol",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1784721345733
+   },
+   "iniciadoEm": 1784721345733
+  },
   "cooldown": {
    "euro": 1784721344332,
    "super": 1784712126128,
@@ -466,7 +497,7 @@
    "tipo": "odd",
    "chave": "2.1",
    "n": 15,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
