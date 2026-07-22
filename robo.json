@@ -153,12 +153,18 @@
  },
  "o25": {
   "saldo": -38.6,
-  "ciclos": 210,
+  "ciclos": 211,
   "greens": 147,
   "redsCiclo": 38,
   "aborts": 0,
-  "descartes": 25,
+  "descartes": 26,
   "historico": [
+   {
+    "quando": "2026-07-22T04:59:08.230Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho seq GRGR) — liga REARMADA"
+   },
    {
     "quando": "2026-07-21T22:00:19.522Z",
     "resultado": "GREEN",
@@ -272,12 +278,6 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-21T13:51:44.642Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {},
@@ -325,13 +325,20 @@
    "2026-07-18": 2.6,
    "2026-07-19": -12,
    "2026-07-20": 36.6,
-   "2026-07-21": -22.3
+   "2026-07-21": -22.3,
+   "2026-07-22": 0
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.4",
    "n": 18,
    "start": 1
+  },
+  "_obs": {
+   "euro": {
+    "desde": 1784696348229,
+    "gatilho": "seq GRGR"
+   }
   }
  },
  "ambas": {
