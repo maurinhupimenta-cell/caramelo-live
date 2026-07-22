@@ -288,8 +288,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "10:42",
@@ -309,13 +309,21 @@
    ],
    "gatilho": "coluna :42",
    "alvo": {
-    "h": "10:42",
-    "jogo": "Islington x Newcastle",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1784713225228
+    "h": "10:45",
+    "jogo": "Leeds x Chelsea",
+    "odd": 2.45,
+    "unidades": 2,
+    "desde": 1784713523735
    },
-   "iniciadoEm": 1784713225228
+   "iniciadoEm": 1784713225228,
+   "tiros": [
+    {
+     "h": "10:42",
+     "jogo": "Islington x Newcastle",
+     "odd": 2.07,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784713224036,
@@ -335,7 +343,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":45",
+   "chave": ":48",
    "n": 10,
    "start": 1
   },
@@ -475,7 +483,37 @@
    "copa": 1784711384730,
    "super": 1784712126128
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:45",
+     "jogo": "Leeds x Chelsea",
+     "odd": 2.1
+    },
+    {
+     "h": "10:48",
+     "jogo": "West Ham x Norwich",
+     "odd": 2.15
+    },
+    {
+     "h": "10:51",
+     "jogo": "Everton x Palace",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "odd 2.1",
+   "alvo": {
+    "h": "10:45",
+    "jogo": "Leeds x Chelsea",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1784713486433
+   },
+   "iniciadoEm": 1784713486433
+  },
   "cooldown": {
    "euro": 1784710383738,
    "super": 1784712126128,
@@ -492,9 +530,9 @@
    "2026-07-22": -8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRG",
-   "n": 8,
+   "tipo": "odd",
+   "chave": "2.1",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
