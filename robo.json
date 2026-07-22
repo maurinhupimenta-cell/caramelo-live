@@ -443,7 +443,37 @@
    "euro": 1784746047834,
    "super": 1784747132222
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:27",
+     "jogo": "Southampton x United",
+     "odd": 2.02
+    },
+    {
+     "h": "20:30",
+     "jogo": "West Ham x Burnley",
+     "odd": 2.07
+    },
+    {
+     "h": "20:33",
+     "jogo": "Newcastle x Wolverhampton",
+     "odd": 1.76
+    }
+   ],
+   "gatilho": "odd 2.07",
+   "alvo": {
+    "h": "20:27",
+    "jogo": "Southampton x United",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1784747906330
+   },
+   "iniciadoEm": 1784747906330
+  },
   "cooldown": {
    "euro": 1784746047834,
    "super": 1784747132222,
@@ -460,10 +490,10 @@
    "2026-07-22": -24.1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":06",
-   "n": 19,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.07",
+   "n": 17,
+   "start": 3
   },
   "_obs": {}
  }
