@@ -342,13 +342,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -25.5,
-  "ciclos": 255,
-  "greens": 185,
+  "saldo": -24.4,
+  "ciclos": 256,
+  "greens": 186,
   "redsCiclo": 31,
   "aborts": 0,
   "descartes": 39,
   "historico": [
+   {
+    "quando": "2026-07-22T16:28:27.326Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Escócia x República Tcheca @2.1 (tiro 1) · gatilho: odd 1.83"
+   },
    {
     "quando": "2026-07-22T16:17:59.626Z",
     "resultado": "GREEN",
@@ -462,51 +468,16 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "premier · Leeds x Chelsea @2.1 (tiro 1) · gatilho: odd 2.1"
-   },
-   {
-    "quando": "2026-07-22T09:22:06.330Z",
-    "resultado": "GREEN",
-    "unidades": 0.8,
-    "detalhe": "super · Santiago x Lima @1.8 (tiro 1) · gatilho: odd 2.1"
    }
   ],
   "consumidas": {
    "super": 1784736746530,
-   "premier": 1784737079428
+   "premier": 1784737079428,
+   "euro": 1784737707135
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:23",
-     "jogo": "Escócia x República Tcheca",
-     "odd": 2.1
-    },
-    {
-     "h": "17:26",
-     "jogo": "Países Baixos x Alemanha",
-     "odd": 1.83
-    },
-    {
-     "h": "17:29",
-     "jogo": "Escócia x França",
-     "odd": 1.85
-    }
-   ],
-   "gatilho": "odd 1.83",
-   "alvo": {
-    "h": "17:23",
-    "jogo": "Escócia x República Tcheca",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1784737167130
-   },
-   "iniciadoEm": 1784737167130
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784732726334,
+   "euro": 1784737707135,
    "super": 1784736746530,
    "premier": 1784737079428,
    "copa": 1784733744928
@@ -518,12 +489,12 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -7.2
+   "2026-07-22": -6.1
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.83",
-   "n": 13,
+   "tipo": "time",
+   "chave": "Senegal",
+   "n": 16,
    "start": 1
   },
   "_obs": {}
