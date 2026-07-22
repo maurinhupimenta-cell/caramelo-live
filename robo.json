@@ -285,7 +285,37 @@
    "euro": 1784710924734,
    "super": 1784711944836
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:34",
+     "jogo": "Arábia Saudita x República Tcheca",
+     "odd": 2.25
+    },
+    {
+     "h": "10:37",
+     "jogo": "Cabo Verde x Áustria",
+     "odd": 2.2
+    },
+    {
+     "h": "10:40",
+     "jogo": "Argélia x Escócia",
+     "odd": 2.6
+    }
+   ],
+   "gatilho": "time Cabo Verde",
+   "alvo": {
+    "h": "10:34",
+    "jogo": "Arábia Saudita x República Tcheca",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1784712304334
+   },
+   "iniciadoEm": 1784712304334
+  },
   "cooldown": {
    "copa": 1784706443537,
    "premier": 1784708617932,
@@ -303,10 +333,10 @@
    "2026-07-22": -5.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.45",
-   "n": 10,
-   "start": 1
+   "tipo": "time",
+   "chave": "Cabo Verde",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  },
