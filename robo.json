@@ -337,7 +337,7 @@
    "tipo": "coluna",
    "chave": ":53",
    "n": 15,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -474,7 +474,37 @@
    "copa": 1784729772424,
    "super": 1784731588322
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:56",
+     "jogo": "Itália x Croácia",
+     "odd": 1.98
+    },
+    {
+     "h": "15:59",
+     "jogo": "Hungria x Geórgia",
+     "odd": 2.15
+    },
+    {
+     "h": "16:02",
+     "jogo": "Países Baixos x Eslovênia",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "coluna :59",
+   "alvo": {
+    "h": "15:56",
+    "jogo": "Itália x Croácia",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1784731706633
+   },
+   "iniciadoEm": 1784731706633
+  },
   "cooldown": {
    "euro": 1784725487431,
    "super": 1784731588322,
@@ -491,10 +521,10 @@
    "2026-07-22": -12
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRGG",
-   "n": 11,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":59",
+   "n": 15,
+   "start": 3
   },
   "_obs": {}
  }
