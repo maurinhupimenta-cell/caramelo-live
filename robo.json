@@ -281,11 +281,40 @@
    }
   ],
   "consumidas": {
-   "super": 1784697180538,
    "euro": 1784697437934,
    "premier": 1784698194133
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:13",
+     "jogo": "La Plata x Porto Alegre",
+     "odd": 3
+    },
+    {
+     "h": "07:16",
+     "jogo": "Bogota x Quito",
+     "odd": 2.55
+    },
+    {
+     "h": "07:19",
+     "jogo": "La Plata x Medellin",
+     "odd": 2.7
+    }
+   ],
+   "gatilho": "seq RGRR",
+   "alvo": {
+    "h": "07:13",
+    "jogo": "La Plata x Porto Alegre",
+    "odd": 3,
+    "unidades": 1,
+    "desde": 1784700783933
+   },
+   "iniciadoEm": 1784700783933
+  },
   "cooldown": {
    "copa": 1784696623631,
    "premier": 1784698194133,
@@ -303,9 +332,9 @@
    "2026-07-22": -3.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Southampton",
-   "n": 9,
+   "tipo": "seq",
+   "chave": "RGRR",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
@@ -444,7 +473,37 @@
    "copa": 1784697983642,
    "super": 1784699704941
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:15",
+     "jogo": "United x City",
+     "odd": 1.85
+    },
+    {
+     "h": "07:18",
+     "jogo": "Newcastle x Southampton",
+     "odd": 1.93
+    },
+    {
+     "h": "07:21",
+     "jogo": "Leeds x Everton",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "time Southampton",
+   "alvo": {
+    "h": "07:15",
+    "jogo": "United x City",
+    "odd": 1.85,
+    "unidades": 1,
+    "desde": 1784700525333
+   },
+   "iniciadoEm": 1784700525333
+  },
   "cooldown": {
    "euro": 1784697209029,
    "super": 1784699704941,
@@ -462,15 +521,10 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "La Plata",
+   "chave": "Southampton",
    "n": 11,
    "start": 1
   },
-  "_obs": {
-   "premier": {
-    "desde": 1784700524133,
-    "gatilho": "time Southampton"
-   }
-  }
+  "_obs": {}
  }
 }
