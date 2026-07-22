@@ -443,7 +443,37 @@
    "super": 1784740560931,
    "premier": 1784741569933
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:22",
+     "jogo": "Países Baixos x México",
+     "odd": 1.98
+    },
+    {
+     "h": "19:25",
+     "jogo": "Senegal x Equador",
+     "odd": 2
+    },
+    {
+     "h": "19:28",
+     "jogo": "Irã x Coreia do Sul",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "time Senegal",
+   "alvo": {
+    "h": "19:22",
+    "jogo": "Países Baixos x México",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1784743991427
+   },
+   "iniciadoEm": 1784743991427
+  },
   "cooldown": {
    "euro": 1784737707135,
    "super": 1784740560931,
@@ -460,9 +490,9 @@
    "2026-07-22": -3.1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":59",
-   "n": 18,
+   "tipo": "time",
+   "chave": "Senegal",
+   "n": 17,
    "start": 3
   },
   "_obs": {}
