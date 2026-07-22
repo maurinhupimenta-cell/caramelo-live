@@ -312,13 +312,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -36.6,
-  "ciclos": 242,
-  "greens": 174,
+  "saldo": -35,
+  "ciclos": 243,
+  "greens": 175,
   "redsCiclo": 31,
   "aborts": 0,
   "descartes": 37,
   "historico": [
+   {
+    "quando": "2026-07-22T12:43:05.422Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "copa · Croácia x Uzbequistão @2.15 (tiro 3) · gatilho: coluna :34"
+   },
    {
     "quando": "2026-07-22T12:32:37.828Z",
     "resultado": "RED_CICLO",
@@ -432,69 +438,20 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "premier · Newcastle x Southampton @1.93 (tiro 2) · gatilho: time Southampton"
-   },
-   {
-    "quando": "2026-07-22T06:08:44.133Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho time Southampton) — liga REARMADA"
    }
   ],
   "consumidas": {
    "euro": 1784721344332,
    "super": 1784722366431,
-   "premier": 1784723557632
+   "premier": 1784723557632,
+   "copa": 1784724185134
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "13:34",
-     "jogo": "Curação x RD Congo",
-     "odd": 1.83
-    },
-    {
-     "h": "13:37",
-     "jogo": "Egito x Paraguai",
-     "odd": 1.98
-    },
-    {
-     "h": "13:40",
-     "jogo": "Croácia x Uzbequistão",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "coluna :34",
-   "alvo": {
-    "h": "13:40",
-    "jogo": "Croácia x Uzbequistão",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1784724004324
-   },
-   "iniciadoEm": 1784723559228,
-   "tiros": [
-    {
-     "h": "13:34",
-     "jogo": "Curação x RD Congo",
-     "odd": 1.83,
-     "unidades": 1
-    },
-    {
-     "h": "13:37",
-     "jogo": "Egito x Paraguai",
-     "odd": 1.98,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784721344332,
    "super": 1784722366431,
    "premier": 1784723557632,
-   "copa": 1784711384730
+   "copa": 1784724185134
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -503,7 +460,7 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -18.3
+   "2026-07-22": -16.7
   },
   "_gatilhoAtual": {
    "tipo": "time",
