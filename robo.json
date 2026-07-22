@@ -434,7 +434,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:00",
+     "jogo": "Chelsea x Watford",
+     "odd": 2.05
+    },
+    {
+     "h": "06:03",
+     "jogo": "United x Leeds",
+     "odd": 2.2
+    },
+    {
+     "h": "06:06",
+     "jogo": "Burnley x Liverpool",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "seq GRRR",
+   "alvo": {
+    "h": "06:00",
+    "jogo": "Chelsea x Watford",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1784696226439
+   },
+   "iniciadoEm": 1784696226439
+  },
   "cooldown": {
    "euro": 1784665554458,
    "super": 1784657531256,
@@ -450,16 +480,11 @@
    "2026-07-21": -3.2
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":17",
-   "n": 19,
+   "tipo": "seq",
+   "chave": "GRRR",
+   "n": 8,
    "start": 1
   },
-  "_obs": {
-   "premier": {
-    "desde": 1784680541529,
-    "gatilho": "placar 1-0 / 0-1"
-   }
-  }
+  "_obs": {}
  }
 }
