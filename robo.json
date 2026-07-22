@@ -448,7 +448,37 @@
    "copa": 1784706443829,
    "super": 1784708165334
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:42",
+     "jogo": "Chelsea x Wolverhampton",
+     "odd": 1.86
+    },
+    {
+     "h": "09:45",
+     "jogo": "City x Leeds",
+     "odd": 2.1
+    },
+    {
+     "h": "09:48",
+     "jogo": "Islington x Norwich",
+     "odd": 2
+    }
+   ],
+   "gatilho": "odd 2.1",
+   "alvo": {
+    "h": "09:42",
+    "jogo": "Chelsea x Wolverhampton",
+    "odd": 1.86,
+    "unidades": 1,
+    "desde": 1784709183632
+   },
+   "iniciadoEm": 1784709183632
+  },
   "cooldown": {
    "euro": 1784705864231,
    "super": 1784708165334,
@@ -465,16 +495,11 @@
    "2026-07-22": -4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":25",
-   "n": 9,
-   "start": 2
+   "tipo": "odd",
+   "chave": "2.1",
+   "n": 12,
+   "start": 3
   },
-  "_obs": {
-   "premier": {
-    "desde": 1784709171229,
-    "gatilho": "odd 2.1"
-   }
-  }
+  "_obs": {}
  }
 }
