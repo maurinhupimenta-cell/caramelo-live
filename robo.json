@@ -313,12 +313,18 @@
  },
  "ambas": {
   "saldo": -29.6,
-  "ciclos": 240,
+  "ciclos": 241,
   "greens": 174,
   "redsCiclo": 30,
   "aborts": 0,
-  "descartes": 36,
+  "descartes": 37,
   "historico": [
+   {
+    "quando": "2026-07-22T12:25:24.230Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho coluna :31) — liga REARMADA"
+   },
    {
     "quando": "2026-07-22T12:12:46.723Z",
     "resultado": "RED_CICLO",
@@ -432,12 +438,6 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "super · Buenos Aires x Avellaneda @1.9 (tiro 1) · gatilho: time La Plata"
-   },
-   {
-    "quando": "2026-07-22T05:26:23.930Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "copa · Costa do Marfim x RD Congo @1.86 (tiro 2) · gatilho: time Costa do Marfim"
    }
   ],
   "consumidas": {
@@ -496,6 +496,11 @@
    "n": 12,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1784723124230,
+    "gatilho": "coluna :31"
+   }
+  }
  }
 }
