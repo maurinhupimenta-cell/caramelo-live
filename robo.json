@@ -286,7 +286,37 @@
    "premier": 1784728429230,
    "copa": 1784729572336
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:13",
+     "jogo": "La Plata x Medellin",
+     "odd": 2.7
+    },
+    {
+     "h": "15:16",
+     "jogo": "Guayaquil x Rio de Janeiro",
+     "odd": 2.15
+    },
+    {
+     "h": "15:19",
+     "jogo": "Avellaneda x Asuncion",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "coluna :16",
+   "alvo": {
+    "h": "15:13",
+    "jogo": "La Plata x Medellin",
+    "odd": 2.7,
+    "unidades": 1,
+    "desde": 1784729574533
+   },
+   "iniciadoEm": 1784729574533
+  },
   "cooldown": {
    "copa": 1784729572336,
    "premier": 1784728429230,
@@ -306,19 +336,25 @@
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":16",
-   "n": 14,
+   "n": 15,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -32.3,
-  "ciclos": 248,
-  "greens": 178,
+  "saldo": -31.3,
+  "ciclos": 249,
+  "greens": 179,
   "redsCiclo": 31,
   "aborts": 0,
   "descartes": 39,
   "historico": [
+   {
+    "quando": "2026-07-22T14:16:12.622Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Arábia Saudita x Senegal @2 (tiro 2) · gatilho: time Senegal"
+   },
    {
     "quando": "2026-07-22T13:38:44.123Z",
     "resultado": "GREEN",
@@ -432,54 +468,19 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · Haiti x Gana @1.95 (tiro 1) · gatilho: time Senegal"
-   },
-   {
-    "quando": "2026-07-22T07:37:44.429Z",
-    "resultado": "GREEN",
-    "unidades": 0.8,
-    "detalhe": "euro · Bélgica x Países Baixos @1.83 (tiro 1) · gatilho: time Países Baixos"
    }
   ],
   "consumidas": {
    "super": 1784726886133,
-   "premier": 1784727523924
+   "premier": 1784727523924,
+   "copa": 1784729772424
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:10",
-     "jogo": "Inglaterra x Turquia",
-     "odd": 2.02
-    },
-    {
-     "h": "15:13",
-     "jogo": "Arábia Saudita x Senegal",
-     "odd": 2
-    },
-    {
-     "h": "15:16",
-     "jogo": "Equador x Qatar",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "time Senegal",
-   "alvo": {
-    "h": "15:10",
-    "jogo": "Inglaterra x Turquia",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1784728911926
-   },
-   "iniciadoEm": 1784728911926
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784725487431,
    "super": 1784726886133,
    "premier": 1784727523924,
-   "copa": 1784724185134
+   "copa": 1784729772424
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -488,12 +489,12 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -14
+   "2026-07-22": -13
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Senegal",
-   "n": 14,
+   "chave": "Bélgica",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
