@@ -482,7 +482,37 @@
    "premier": 1784732973024,
    "copa": 1784733744928
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:01",
+     "jogo": "Rio de Janeiro x Porto Alegre",
+     "odd": 2.25
+    },
+    {
+     "h": "17:04",
+     "jogo": "Asuncion x Guayaquil",
+     "odd": 1.9
+    },
+    {
+     "h": "17:07",
+     "jogo": "Rio de Janeiro x Bogota",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "seq RRRRG",
+   "alvo": {
+    "h": "17:01",
+    "jogo": "Rio de Janeiro x Porto Alegre",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1784735893533
+   },
+   "iniciadoEm": 1784735893533
+  },
   "cooldown": {
    "euro": 1784732726334,
    "super": 1784731588322,
@@ -499,10 +529,10 @@
    "2026-07-22": -9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":31",
-   "n": 16,
-   "start": 2
+   "tipo": "seq",
+   "chave": "RRRRG",
+   "n": 13,
+   "start": 1
   },
   "_obs": {}
  }
