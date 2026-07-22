@@ -282,11 +282,40 @@
    }
   ],
   "consumidas": {
-   "copa": 1784725123425,
    "euro": 1784726179023,
    "premier": 1784728429230
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:04",
+     "jogo": "Noruega x Irã",
+     "odd": 2.4
+    },
+    {
+     "h": "15:07",
+     "jogo": "Costa do Marfim x Curação",
+     "odd": 2.07
+    },
+    {
+     "h": "15:10",
+     "jogo": "Inglaterra x Turquia",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "coluna :07",
+   "alvo": {
+    "h": "15:04",
+    "jogo": "Noruega x Irã",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1784728733828
+   },
+   "iniciadoEm": 1784728733828
+  },
   "cooldown": {
    "copa": 1784725123425,
    "premier": 1784728429230,
@@ -305,8 +334,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":00",
-   "n": 14,
+   "chave": ":07",
+   "n": 15,
    "start": 2
   },
   "_obs": {}
