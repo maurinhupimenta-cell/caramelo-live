@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -43.8,
-  "ciclos": 227,
-  "greens": 158,
+  "saldo": -42.4,
+  "ciclos": 228,
+  "greens": 159,
   "redsCiclo": 41,
   "aborts": 0,
   "descartes": 28,
   "historico": [
+   {
+    "quando": "2026-07-22T09:40:24.234Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "copa · Cabo Verde x Áustria @2.2 (tiro 2) · gatilho: time Cabo Verde"
+   },
    {
     "quando": "2026-07-22T09:19:05.230Z",
     "resultado": "RED_CICLO",
@@ -273,59 +279,16 @@
     "resultado": "GREEN",
     "unidades": 1.6,
     "detalhe": "super · Medellin x La Plata @2.62 (tiro 1) · gatilho: seq RGRG"
-   },
-   {
-    "quando": "2026-07-21T21:47:33.853Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar acima de 1-0 (2-1)"
    }
   ],
   "consumidas": {
    "euro": 1784710924734,
-   "super": 1784711944836
+   "super": 1784711944836,
+   "copa": 1784713224036
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "10:34",
-     "jogo": "Arábia Saudita x República Tcheca",
-     "odd": 2.25
-    },
-    {
-     "h": "10:37",
-     "jogo": "Cabo Verde x Áustria",
-     "odd": 2.2
-    },
-    {
-     "h": "10:40",
-     "jogo": "Argélia x Escócia",
-     "odd": 2.6
-    }
-   ],
-   "gatilho": "time Cabo Verde",
-   "alvo": {
-    "h": "10:37",
-    "jogo": "Cabo Verde x Áustria",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1784713003339
-   },
-   "iniciadoEm": 1784712304334,
-   "tiros": [
-    {
-     "h": "10:34",
-     "jogo": "Arábia Saudita x República Tcheca",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784706443537,
+   "copa": 1784713224036,
    "premier": 1784708617932,
    "euro": 1784710924734,
    "super": 1784711944836
@@ -338,13 +301,13 @@
    "2026-07-19": -12,
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
-   "2026-07-22": -5.2
+   "2026-07-22": -3.8
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":45",
+   "chave": ":42",
    "n": 10,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
