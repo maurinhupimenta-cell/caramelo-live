@@ -131,8 +131,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "08:45",
@@ -152,13 +152,21 @@
    ],
    "gatilho": "coluna :48",
    "alvo": {
-    "h": "08:45",
-    "jogo": "Wolverhampton x Southampton",
-    "odd": 4.33,
-    "unidades": 1,
-    "desde": 1784705748534
+    "h": "08:48",
+    "jogo": "West Ham x Islington",
+    "odd": 5,
+    "unidades": 2,
+    "desde": 1784706462831
    },
-   "iniciadoEm": 1784705748534
+   "iniciadoEm": 1784705748534,
+   "tiros": [
+    {
+     "h": "08:45",
+     "jogo": "Wolverhampton x Southampton",
+     "odd": 4.33,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784670696456,
@@ -315,7 +323,37 @@
    "super": 1784705826639,
    "copa": 1784706443537
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:50",
+     "jogo": "Ucrânia x Turquia",
+     "odd": 2.5
+    },
+    {
+     "h": "08:53",
+     "jogo": "Sérvia x Eslovênia",
+     "odd": 2.9
+    },
+    {
+     "h": "08:56",
+     "jogo": "França x Eslováquia",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time Sérvia",
+   "alvo": {
+    "h": "08:50",
+    "jogo": "Ucrânia x Turquia",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1784706444840
+   },
+   "iniciadoEm": 1784706444840
+  },
   "cooldown": {
    "copa": 1784706443537,
    "premier": 1784703222636,
