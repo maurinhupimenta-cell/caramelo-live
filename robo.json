@@ -311,12 +311,18 @@
  },
  "ambas": {
   "saldo": -56.4,
-  "ciclos": 268,
+  "ciclos": 269,
   "greens": 189,
   "redsCiclo": 36,
   "aborts": 0,
-  "descartes": 43,
+  "descartes": 44,
   "historico": [
+   {
+    "quando": "2026-07-22T20:07:04.122Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho odd 1.9) — liga REARMADA"
+   },
    {
     "quando": "2026-07-22T20:05:24.632Z",
     "resultado": "GREEN_OBS",
@@ -430,12 +436,6 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "super · Montevideo x Bogota @2.05 (tiro 1) · gatilho: seq GRGRR"
-   },
-   {
-    "quando": "2026-07-22T14:16:12.622Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Arábia Saudita x Senegal @2 (tiro 2) · gatilho: time Senegal"
    }
   ],
   "consumidas": {
@@ -494,6 +494,11 @@
    "n": 8,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1784750824121,
+    "gatilho": "odd 1.9"
+   }
+  }
  }
 }
