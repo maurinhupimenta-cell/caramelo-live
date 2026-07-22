@@ -441,7 +441,45 @@
    "copa": 1784750486531,
    "euro": 1784751266125
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "21:16",
+     "jogo": "Agua Branca x Buenos Aires",
+     "odd": 1.83
+    },
+    {
+     "h": "21:19",
+     "jogo": "Sao Paulo x Quito",
+     "odd": 1.9
+    },
+    {
+     "h": "21:22",
+     "jogo": "Agua Branca x Bogota",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "odd 1.9",
+   "alvo": {
+    "h": "21:19",
+    "jogo": "Sao Paulo x Quito",
+    "odd": 1.9,
+    "unidades": 2,
+    "desde": 1784751567829
+   },
+   "iniciadoEm": 1784751267228,
+   "tiros": [
+    {
+     "h": "21:16",
+     "jogo": "Agua Branca x Buenos Aires",
+     "odd": 1.83,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1784751266125,
    "super": 1784747132222,
