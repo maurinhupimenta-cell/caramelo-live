@@ -313,13 +313,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -29,
-  "ciclos": 251,
-  "greens": 181,
+  "saldo": -28,
+  "ciclos": 252,
+  "greens": 182,
   "redsCiclo": 31,
   "aborts": 0,
   "descartes": 39,
   "historico": [
+   {
+    "quando": "2026-07-22T15:09:33.131Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Brentford x Palace @1.95 (tiro 1) · gatilho: coluna :06"
+   },
    {
     "quando": "2026-07-22T15:05:26.526Z",
     "resultado": "GREEN",
@@ -433,54 +439,19 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "premier · Chelsea x Wolverhampton @1.86 (tiro 1) · gatilho: odd 2.1"
-   },
-   {
-    "quando": "2026-07-22T08:32:51.230Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho odd 2.1) — liga REARMADA"
    }
   ],
   "consumidas": {
    "copa": 1784729772424,
    "super": 1784731588322,
-   "euro": 1784732726334
+   "euro": 1784732726334,
+   "premier": 1784732973024
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:06",
-     "jogo": "Brentford x Palace",
-     "odd": 1.95
-    },
-    {
-     "h": "16:09",
-     "jogo": "United x West Ham",
-     "odd": 2.2
-    },
-    {
-     "h": "16:12",
-     "jogo": "Leeds x Wolverhampton",
-     "odd": 2
-    }
-   ],
-   "gatilho": "coluna :06",
-   "alvo": {
-    "h": "16:06",
-    "jogo": "Brentford x Palace",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1784732728028
-   },
-   "iniciadoEm": 1784732728028
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784732726334,
    "super": 1784731588322,
-   "premier": 1784727523924,
+   "premier": 1784732973024,
    "copa": 1784729772424
   },
   "dias": {
@@ -490,7 +461,7 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -10.7
+   "2026-07-22": -9.7
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
