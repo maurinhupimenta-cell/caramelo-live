@@ -182,13 +182,19 @@
   }
  },
  "o25": {
-  "saldo": -43.1,
-  "ciclos": 222,
-  "greens": 154,
+  "saldo": -41.6,
+  "ciclos": 223,
+  "greens": 155,
   "redsCiclo": 40,
   "aborts": 0,
   "descartes": 28,
   "historico": [
+   {
+    "quando": "2026-07-22T07:47:23.730Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "copa · Haiti x Gana @2.25 (tiro 2) · gatilho: seq RRGG"
+   },
    {
     "quando": "2026-07-22T07:37:06.929Z",
     "resultado": "GREEN",
@@ -302,59 +308,16 @@
     "resultado": "GREEN",
     "unidades": 2.4,
     "detalhe": "euro · Alemanha x Sérvia @2.35 (tiro 3) · gatilho: placar acima de 1-0 (2-1)"
-   },
-   {
-    "quando": "2026-07-21T17:52:04.849Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "super · Santiago x Itaquera @2.1 (tiro 1) · gatilho: odd 2.75"
    }
   ],
   "consumidas": {
    "premier": 1784703222636,
-   "super": 1784705826639
+   "super": 1784705826639,
+   "copa": 1784706443537
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "08:40",
-     "jogo": "Jordânia x Croácia",
-     "odd": 2.3
-    },
-    {
-     "h": "08:43",
-     "jogo": "Haiti x Gana",
-     "odd": 2.25
-    },
-    {
-     "h": "08:46",
-     "jogo": "Jordânia x Senegal",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "seq RRGG",
-   "alvo": {
-    "h": "08:43",
-    "jogo": "Haiti x Gana",
-    "odd": 2.25,
-    "unidades": 2,
-    "desde": 1784706263435
-   },
-   "iniciadoEm": 1784705843936,
-   "tiros": [
-    {
-     "h": "08:40",
-     "jogo": "Jordânia x Croácia",
-     "odd": 2.3,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784701904334,
+   "copa": 1784706443537,
    "premier": 1784703222636,
    "euro": 1784702105533,
    "super": 1784705826639
@@ -367,7 +330,7 @@
    "2026-07-19": -12,
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
-   "2026-07-22": -4.5
+   "2026-07-22": -3
   },
   "_gatilhoAtual": {
    "tipo": "time",
@@ -378,13 +341,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -24.9,
-  "ciclos": 229,
-  "greens": 166,
+  "saldo": -23.9,
+  "ciclos": 230,
+  "greens": 167,
   "redsCiclo": 28,
   "aborts": 0,
   "descartes": 35,
   "historico": [
+   {
+    "quando": "2026-07-22T07:47:23.938Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Haiti x Gana @1.95 (tiro 1) · gatilho: time Senegal"
+   },
    {
     "quando": "2026-07-22T07:37:44.429Z",
     "resultado": "GREEN",
@@ -498,55 +467,20 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · West Ham x Newcastle @2.02 (tiro 1) · gatilho: placar empate 1-1"
-   },
-   {
-    "quando": "2026-07-21T18:22:28.657Z",
-    "resultado": "GREEN",
-    "unidades": 0.8,
-    "detalhe": "euro · França x Alemanha @1.83 (tiro 1) · gatilho: placar empate 1-1"
    }
   ],
   "consumidas": {
    "super": 1784703666228,
    "premier": 1784705557038,
-   "euro": 1784705864231
+   "euro": 1784705864231,
+   "copa": 1784706443829
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "08:43",
-     "jogo": "Haiti x Gana",
-     "odd": 1.95
-    },
-    {
-     "h": "08:46",
-     "jogo": "Jordânia x Senegal",
-     "odd": 2.05
-    },
-    {
-     "h": "08:49",
-     "jogo": "Alemanha x Suíça",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "time Senegal",
-   "alvo": {
-    "h": "08:43",
-    "jogo": "Haiti x Gana",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1784705865828
-   },
-   "iniciadoEm": 1784705865828
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784705864231,
    "super": 1784703666228,
    "premier": 1784705557038,
-   "copa": 1784702083535
+   "copa": 1784706443829
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -555,13 +489,13 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -6.6
+   "2026-07-22": -5.6
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Senegal",
-   "n": 9,
-   "start": 1
+   "chave": "Japão",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  }
