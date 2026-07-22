@@ -282,7 +282,6 @@
    }
   ],
   "consumidas": {
-   "super": 1784737229232,
    "premier": 1784738162229,
    "copa": 1784740407331
   },
@@ -445,7 +444,37 @@
    "copa": 1784738245131,
    "super": 1784740560931
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:27",
+     "jogo": "United x Chelsea",
+     "odd": 1.95
+    },
+    {
+     "h": "18:30",
+     "jogo": "Everton x Burnley",
+     "odd": 1.86
+    },
+    {
+     "h": "18:33",
+     "jogo": "Watford x Brentford",
+     "odd": 2
+    }
+   ],
+   "gatilho": "coluna :30",
+   "alvo": {
+    "h": "18:27",
+    "jogo": "United x Chelsea",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1784740705427
+   },
+   "iniciadoEm": 1784740705427
+  },
   "cooldown": {
    "euro": 1784737707135,
    "super": 1784740560931,
@@ -462,10 +491,10 @@
    "2026-07-22": -3.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGGR",
-   "n": 12,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":30",
+   "n": 18,
+   "start": 3
   },
   "_obs": {}
  }
