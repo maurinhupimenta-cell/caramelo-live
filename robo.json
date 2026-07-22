@@ -287,8 +287,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "14:45",
@@ -308,13 +308,21 @@
    ],
    "gatilho": "coluna :48",
    "alvo": {
-    "h": "14:45",
-    "jogo": "Chelsea x Islington",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1784727350231
+    "h": "14:48",
+    "jogo": "Palace x Newcastle",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1784728067728
    },
-   "iniciadoEm": 1784727350231
+   "iniciadoEm": 1784727350231,
+   "tiros": [
+    {
+     "h": "14:45",
+     "jogo": "Chelsea x Islington",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784725123425,
@@ -333,9 +341,9 @@
    "2026-07-22": 6.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":48",
-   "n": 14,
+   "tipo": "odd",
+   "chave": "2.45",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
