@@ -310,13 +310,25 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -49.4,
-  "ciclos": 266,
+  "saldo": -56.4,
+  "ciclos": 268,
   "greens": 189,
-  "redsCiclo": 35,
+  "redsCiclo": 36,
   "aborts": 0,
-  "descartes": 42,
+  "descartes": 43,
   "historico": [
+   {
+    "quando": "2026-07-22T20:05:24.632Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho seq GRGGG) — liga REARMADA"
+   },
+   {
+    "quando": "2026-07-22T20:01:26.822Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Portugal"
+   },
    {
     "quando": "2026-07-22T19:35:33.525Z",
     "resultado": "RED_CICLO",
@@ -424,74 +436,19 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · Arábia Saudita x Senegal @2 (tiro 2) · gatilho: time Senegal"
-   },
-   {
-    "quando": "2026-07-22T13:38:44.123Z",
-    "resultado": "GREEN",
-    "unidades": 0.8,
-    "detalhe": "premier · Wolverhampton x Everton @1.83 (tiro 1) · gatilho: odd 2.07"
-   },
-   {
-    "quando": "2026-07-22T13:32:44.330Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho odd 2.07) — liga REARMADA"
    }
   ],
   "consumidas": {
    "super": 1784747132222,
-   "premier": 1784748933323
+   "premier": 1784748933323,
+   "copa": 1784750486531
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "20:49",
-     "jogo": "EUA x Austrália",
-     "odd": 1.95
-    },
-    {
-     "h": "20:52",
-     "jogo": "Costa do Marfim x Portugal",
-     "odd": 1.85
-    },
-    {
-     "h": "20:55",
-     "jogo": "Panamá x Irã",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Portugal",
-   "alvo": {
-    "h": "20:55",
-    "jogo": "Panamá x Irã",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1784750484632
-   },
-   "iniciadoEm": 1784749291123,
-   "tiros": [
-    {
-     "h": "20:49",
-     "jogo": "EUA x Austrália",
-     "odd": 1.95,
-     "unidades": 1
-    },
-    {
-     "h": "20:52",
-     "jogo": "Costa do Marfim x Portugal",
-     "odd": 1.85,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784746047834,
    "super": 1784747132222,
    "premier": 1784748933323,
-   "copa": 1784745051833
+   "copa": 1784750486531
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -500,7 +457,7 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -31.1
+   "2026-07-22": -38.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
@@ -508,6 +465,11 @@
    "n": 10,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1784750724631,
+    "gatilho": "seq GRGGG"
+   }
+  }
  }
 }
