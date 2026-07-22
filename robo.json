@@ -154,12 +154,18 @@
  },
  "o25": {
   "saldo": -47.7,
-  "ciclos": 250,
+  "ciclos": 251,
   "greens": 173,
   "redsCiclo": 45,
   "aborts": 0,
-  "descartes": 32,
+  "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-22T20:56:25.133Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :08) — liga REARMADA"
+   },
    {
     "quando": "2026-07-22T19:10:26.225Z",
     "resultado": "GREEN",
@@ -273,12 +279,6 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho coluna :16) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-22T11:59:40.932Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "premier · Islington x Tottenham @2.4 (tiro 1) · gatilho: coluna :00"
    }
   ],
   "consumidas": {},
@@ -344,12 +344,17 @@
    "2026-07-22": -9.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGGG",
-   "n": 8,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":07",
+   "n": 21,
+   "start": 3
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1784753785132,
+    "gatilho": "coluna :08"
+   }
+  }
  },
  "ambas": {
   "saldo": -61.5,
