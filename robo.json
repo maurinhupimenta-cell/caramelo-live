@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -45.2,
-  "ciclos": 253,
+  "saldo": -52.2,
+  "ciclos": 254,
   "greens": 175,
-  "redsCiclo": 45,
+  "redsCiclo": 46,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-22T21:23:14.825Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: seq RGGGG"
+   },
    {
     "quando": "2026-07-22T21:08:25.423Z",
     "resultado": "GREEN",
@@ -273,65 +279,16 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "euro · Escócia x Hungria @2.35 (tiro 1) · gatilho: seq GGGGG"
-   },
-   {
-    "quando": "2026-07-22T12:58:43.626Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "copa · República Tcheca x Curação @2.25 (tiro 1) · gatilho: time Cabo Verde"
    }
   ],
   "consumidas": {
    "premier": 1784753905522,
-   "euro": 1784754505223
+   "euro": 1784754505223,
+   "copa": 1784755394627
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "22:13",
-     "jogo": "República Tcheca x Japão",
-     "odd": 2.5
-    },
-    {
-     "h": "22:16",
-     "jogo": "Espanha x África do Sul",
-     "odd": 2.35
-    },
-    {
-     "h": "22:19",
-     "jogo": "Costa do Marfim x Áustria",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "seq RGGGG",
-   "alvo": {
-    "h": "22:19",
-    "jogo": "Costa do Marfim x Áustria",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1784755165725
-   },
-   "iniciadoEm": 1784754610027,
-   "tiros": [
-    {
-     "h": "22:13",
-     "jogo": "República Tcheca x Japão",
-     "odd": 2.5,
-     "unidades": 1
-    },
-    {
-     "h": "22:16",
-     "jogo": "Espanha x África do Sul",
-     "odd": 2.35,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784747426028,
+   "copa": 1784755394627,
    "premier": 1784753905522,
    "euro": 1784754505223,
    "super": 1784737229232
@@ -344,7 +301,7 @@
    "2026-07-19": -12,
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
-   "2026-07-22": -6.6
+   "2026-07-22": -13.6
   },
   "_gatilhoAtual": {
    "tipo": "seq",
