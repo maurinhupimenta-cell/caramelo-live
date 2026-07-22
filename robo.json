@@ -339,13 +339,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -18.3,
-  "ciclos": 218,
+  "saldo": -25.3,
+  "ciclos": 219,
   "greens": 158,
-  "redsCiclo": 26,
+  "redsCiclo": 27,
   "aborts": 0,
   "descartes": 34,
   "historico": [
+   {
+    "quando": "2026-07-22T05:08:39.334Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq GRRR"
+   },
    {
     "quando": "2026-07-22T04:59:24.537Z",
     "resultado": "GREEN_OBS",
@@ -459,64 +465,16 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-21T15:04:11.256Z",
-    "resultado": "GREEN",
-    "unidades": 0.3,
-    "detalhe": "copa · RD Congo x Costa do Marfim @1.83 (tiro 3) · gatilho: placar acima de 1-0 (2-1)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "06:00",
-     "jogo": "Chelsea x Watford",
-     "odd": 2.05
-    },
-    {
-     "h": "06:03",
-     "jogo": "United x Leeds",
-     "odd": 2.2
-    },
-    {
-     "h": "06:06",
-     "jogo": "Burnley x Liverpool",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "seq GRRR",
-   "alvo": {
-    "h": "06:06",
-    "jogo": "Burnley x Liverpool",
-    "odd": 1.9,
-    "unidades": 4,
-    "desde": 1784696746831
-   },
-   "iniciadoEm": 1784696226439,
-   "tiros": [
-    {
-     "h": "06:00",
-     "jogo": "Chelsea x Watford",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "06:03",
-     "jogo": "United x Leeds",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1784696919228
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784665554458,
    "super": 1784657531256,
-   "premier": 1784670159853,
+   "premier": 1784696919228,
    "copa": 1784670696652
   },
   "dias": {
@@ -526,7 +484,7 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": 0
+   "2026-07-22": -7
   },
   "_gatilhoAtual": {
    "tipo": "time",
