@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -39.7,
-  "ciclos": 243,
+  "saldo": -46.7,
+  "ciclos": 244,
   "greens": 169,
-  "redsCiclo": 43,
+  "redsCiclo": 44,
   "aborts": 0,
   "descartes": 31,
   "historico": [
+   {
+    "quando": "2026-07-22T16:02:26.822Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: coluna :53"
+   },
    {
     "quando": "2026-07-22T15:31:26.323Z",
     "resultado": "GREEN",
@@ -273,67 +279,18 @@
     "resultado": "GREEN",
     "unidades": 1.8,
     "detalhe": "premier · Liverpool x Tottenham @2.4 (tiro 2) · gatilho: odd 2.4"
-   },
-   {
-    "quando": "2026-07-22T07:53:04.230Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "euro · Ucrânia x Turquia @2.5 (tiro 1) · gatilho: time Sérvia"
    }
   ],
   "consumidas": {
    "premier": 1784732765924,
-   "copa": 1784734286031
+   "copa": 1784734286031,
+   "euro": 1784736146528
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "16:53",
-     "jogo": "Suíça x Croácia",
-     "odd": 2.15
-    },
-    {
-     "h": "16:56",
-     "jogo": "Ucrânia x Sérvia",
-     "odd": 2.5
-    },
-    {
-     "h": "16:59",
-     "jogo": "Suíça x Áustria",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "coluna :53",
-   "alvo": {
-    "h": "16:59",
-    "jogo": "Suíça x Áustria",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1784735972631
-   },
-   "iniciadoEm": 1784735612922,
-   "tiros": [
-    {
-     "h": "16:53",
-     "jogo": "Suíça x Croácia",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "16:56",
-     "jogo": "Ucrânia x Sérvia",
-     "odd": 2.5,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784734286031,
    "premier": 1784732765924,
-   "euro": 1784732005523,
+   "euro": 1784736146528,
    "super": 1784729953630
   },
   "dias": {
@@ -344,7 +301,7 @@
    "2026-07-19": -12,
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
-   "2026-07-22": -1.1
+   "2026-07-22": -8.1
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
