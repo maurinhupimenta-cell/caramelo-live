@@ -281,7 +281,6 @@
    }
   ],
   "consumidas": {
-   "super": 1784701326040,
    "copa": 1784701904334,
    "euro": 1784702105533,
    "premier": 1784703222636
@@ -445,7 +444,37 @@
    "copa": 1784702083535,
    "super": 1784703666228
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:24",
+     "jogo": "Newcastle x Chelsea",
+     "odd": 1.85
+    },
+    {
+     "h": "08:27",
+     "jogo": "Burnley x Palace",
+     "odd": 1.87
+    },
+    {
+     "h": "08:30",
+     "jogo": "Norwich x Islington",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "time Newcastle",
+   "alvo": {
+    "h": "08:24",
+    "jogo": "Newcastle x Chelsea",
+    "odd": 1.85,
+    "unidades": 1,
+    "desde": 1784704844436
+   },
+   "iniciadoEm": 1784704844436
+  },
   "cooldown": {
    "euro": 1784701545036,
    "super": 1784703666228,
@@ -463,8 +492,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "La Plata",
-   "n": 14,
+   "chave": "Newcastle",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
