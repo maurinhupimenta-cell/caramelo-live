@@ -285,8 +285,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "07:13",
@@ -306,11 +306,11 @@
    ],
    "gatilho": "seq RGRR",
    "alvo": {
-    "h": "07:16",
-    "jogo": "Bogota x Quito",
-    "odd": 2.55,
-    "unidades": 2,
-    "desde": 1784700965130
+    "h": "07:19",
+    "jogo": "La Plata x Medellin",
+    "odd": 2.7,
+    "unidades": 4,
+    "desde": 1784701267132
    },
    "iniciadoEm": 1784700783933,
    "tiros": [
@@ -319,6 +319,12 @@
      "jogo": "La Plata x Porto Alegre",
      "odd": 3,
      "unidades": 1
+    },
+    {
+     "h": "07:16",
+     "jogo": "Bogota x Quito",
+     "odd": 2.55,
+     "unidades": 2
     }
    ]
   },
@@ -480,7 +486,37 @@
    "super": 1784699704941,
    "premier": 1784701244242
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:23",
+     "jogo": "Sérvia x Geórgia",
+     "odd": 2.2
+    },
+    {
+     "h": "07:26",
+     "jogo": "Alemanha x Albânia",
+     "odd": 2.2
+    },
+    {
+     "h": "07:29",
+     "jogo": "Hungria x República Tcheca",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time Sérvia",
+   "alvo": {
+    "h": "07:23",
+    "jogo": "Sérvia x Geórgia",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1784701245236
+   },
+   "iniciadoEm": 1784701245236
+  },
   "cooldown": {
    "euro": 1784697209029,
    "super": 1784699704941,
