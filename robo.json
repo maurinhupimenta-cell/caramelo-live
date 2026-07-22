@@ -285,7 +285,37 @@
    "super": 1784697180538,
    "euro": 1784697437934
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:21",
+     "jogo": "Brighton x Aston",
+     "odd": 2.2
+    },
+    {
+     "h": "06:24",
+     "jogo": "Leeds x Southampton",
+     "odd": 2.62
+    },
+    {
+     "h": "06:27",
+     "jogo": "Wolverhampton x Liverpool",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "time Southampton",
+   "alvo": {
+    "h": "06:21",
+    "jogo": "Brighton x Aston",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1784697439030
+   },
+   "iniciadoEm": 1784697439030
+  },
   "cooldown": {
    "copa": 1784696623631,
    "premier": 1784671219223,
@@ -306,7 +336,7 @@
    "tipo": "time",
    "chave": "Southampton",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -445,8 +475,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "06:19",
@@ -466,13 +496,21 @@
    ],
    "gatilho": "time Costa do Marfim",
    "alvo": {
-    "h": "06:19",
-    "jogo": "Irã x EUA",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1784697210037
+    "h": "06:22",
+    "jogo": "Costa do Marfim x RD Congo",
+    "odd": 1.86,
+    "unidades": 2,
+    "desde": 1784697804935
    },
-   "iniciadoEm": 1784697210037
+   "iniciadoEm": 1784697210037,
+   "tiros": [
+    {
+     "h": "06:19",
+     "jogo": "Irã x EUA",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784697209029,
