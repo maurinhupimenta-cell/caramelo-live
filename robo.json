@@ -312,13 +312,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -19.6,
-  "ciclos": 226,
-  "greens": 164,
+  "saldo": -18.7,
+  "ciclos": 227,
+  "greens": 165,
   "redsCiclo": 27,
   "aborts": 0,
   "descartes": 35,
   "historico": [
+   {
+    "quando": "2026-07-22T07:01:06.334Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Buenos Aires x Rio de Janeiro @1.85 (tiro 1) · gatilho: time La Plata"
+   },
    {
     "quando": "2026-07-22T06:34:43.731Z",
     "resultado": "GREEN",
@@ -432,23 +438,18 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: placar empate 1-1"
-   },
-   {
-    "quando": "2026-07-21T17:50:42.157Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "premier · Burnley x Palace @1.87 (tiro 1) · gatilho: placar empate 1-1"
    }
   ],
   "consumidas": {
    "premier": 1784701244242,
    "euro": 1784701545036,
-   "copa": 1784702083535
+   "copa": 1784702083535,
+   "super": 1784703666228
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1784701545036,
-   "super": 1784699704941,
+   "super": 1784703666228,
    "premier": 1784701244242,
    "copa": 1784702083535
   },
@@ -459,13 +460,13 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -1.3
+   "2026-07-22": -0.4
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Egito",
-   "n": 8,
-   "start": 2
+   "chave": "La Plata",
+   "n": 14,
+   "start": 1
   },
   "_obs": {}
  }
