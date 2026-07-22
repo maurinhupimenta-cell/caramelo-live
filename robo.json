@@ -340,20 +340,26 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRGR",
+   "chave": "RGRR",
    "n": 10,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -22.7,
-  "ciclos": 223,
-  "greens": 161,
+  "saldo": -21.8,
+  "ciclos": 224,
+  "greens": 162,
   "redsCiclo": 27,
   "aborts": 0,
   "descartes": 35,
   "historico": [
+   {
+    "quando": "2026-07-22T06:20:44.530Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Newcastle x Southampton @1.93 (tiro 2) · gatilho: time Southampton"
+   },
    {
     "quando": "2026-07-22T06:08:44.133Z",
     "resultado": "GREEN_OBS",
@@ -467,61 +473,18 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "super · Itaquera x Buenos Aires @1.87 (tiro 1) · gatilho: odd 1.83"
-   },
-   {
-    "quando": "2026-07-21T16:17:39.049Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "premier · Leeds x Leicester @2.15 (tiro 2) · gatilho: placar empate 1-1"
    }
   ],
   "consumidas": {
    "copa": 1784697983642,
-   "super": 1784699704941
+   "super": 1784699704941,
+   "premier": 1784701244242
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "07:15",
-     "jogo": "United x City",
-     "odd": 1.85
-    },
-    {
-     "h": "07:18",
-     "jogo": "Newcastle x Southampton",
-     "odd": 1.93
-    },
-    {
-     "h": "07:21",
-     "jogo": "Leeds x Everton",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "time Southampton",
-   "alvo": {
-    "h": "07:18",
-    "jogo": "Newcastle x Southampton",
-    "odd": 1.93,
-    "unidades": 2,
-    "desde": 1784701060730
-   },
-   "iniciadoEm": 1784700525333,
-   "tiros": [
-    {
-     "h": "07:15",
-     "jogo": "United x City",
-     "odd": 1.85,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784697209029,
    "super": 1784699704941,
-   "premier": 1784696919228,
+   "premier": 1784701244242,
    "copa": 1784697983642
   },
   "dias": {
@@ -531,7 +494,7 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -4.4
+   "2026-07-22": -3.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
