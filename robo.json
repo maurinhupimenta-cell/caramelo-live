@@ -445,8 +445,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "20:27",
@@ -466,13 +466,21 @@
    ],
    "gatilho": "odd 2.07",
    "alvo": {
-    "h": "20:27",
-    "jogo": "Southampton x United",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1784747906330
+    "h": "20:30",
+    "jogo": "West Ham x Burnley",
+    "odd": 2.07,
+    "unidades": 2,
+    "desde": 1784748573229
    },
-   "iniciadoEm": 1784747906330
+   "iniciadoEm": 1784747906330,
+   "tiros": [
+    {
+     "h": "20:27",
+     "jogo": "Southampton x United",
+     "odd": 2.02,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784746047834,
@@ -493,7 +501,7 @@
    "tipo": "odd",
    "chave": "2.07",
    "n": 17,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
