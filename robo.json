@@ -336,7 +336,7 @@
    "tipo": "coluna",
    "chave": ":07",
    "n": 15,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -474,7 +474,37 @@
    "super": 1784726886133,
    "premier": 1784727523924
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:10",
+     "jogo": "Inglaterra x Turquia",
+     "odd": 2.02
+    },
+    {
+     "h": "15:13",
+     "jogo": "Arábia Saudita x Senegal",
+     "odd": 2
+    },
+    {
+     "h": "15:16",
+     "jogo": "Equador x Qatar",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "time Senegal",
+   "alvo": {
+    "h": "15:10",
+    "jogo": "Inglaterra x Turquia",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1784728911926
+   },
+   "iniciadoEm": 1784728911926
+  },
   "cooldown": {
    "euro": 1784725487431,
    "super": 1784726886133,
@@ -491,10 +521,10 @@
    "2026-07-22": -14
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.07",
-   "n": 12,
-   "start": 1
+   "tipo": "time",
+   "chave": "Senegal",
+   "n": 14,
+   "start": 3
   },
   "_obs": {}
  }
