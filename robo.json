@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -47.7,
-  "ciclos": 251,
-  "greens": 173,
+  "saldo": -46.5,
+  "ciclos": 252,
+  "greens": 174,
   "redsCiclo": 45,
   "aborts": 0,
   "descartes": 33,
   "historico": [
+   {
+    "quando": "2026-07-22T20:58:25.626Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · Norwich x Newcastle @2.05 (tiro 3) · gatilho: seq RGGRR"
+   },
    {
     "quando": "2026-07-22T20:56:25.133Z",
     "resultado": "GREEN_OBS",
@@ -273,63 +279,15 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "super · La Plata x Montevideo @2.4 (tiro 1) · gatilho: coluna :16"
-   },
-   {
-    "quando": "2026-07-22T12:04:07.832Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :16) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "21:48",
-     "jogo": "Burnley x United",
-     "odd": 2.1
-    },
-    {
-     "h": "21:51",
-     "jogo": "Chelsea x Everton",
-     "odd": 2.15
-    },
-    {
-     "h": "21:54",
-     "jogo": "Norwich x Newcastle",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "seq RGGRR",
-   "alvo": {
-    "h": "21:54",
-    "jogo": "Norwich x Newcastle",
-    "odd": 2.05,
-    "unidades": 4,
-    "desde": 1784753637634
-   },
-   "iniciadoEm": 1784753083031,
-   "tiros": [
-    {
-     "h": "21:48",
-     "jogo": "Burnley x United",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "21:51",
-     "jogo": "Chelsea x Everton",
-     "odd": 2.15,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1784753905522
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784747426028,
-   "premier": 1784743719525,
+   "premier": 1784753905522,
    "euro": 1784736146528,
    "super": 1784737229232
   },
@@ -341,20 +299,15 @@
    "2026-07-19": -12,
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
-   "2026-07-22": -9.1
+   "2026-07-22": -7.9
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":07",
-   "n": 21,
+   "chave": ":08",
+   "n": 24,
    "start": 3
   },
-  "_obs": {
-   "euro": {
-    "desde": 1784753785132,
-    "gatilho": "coluna :08"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -61.5,
