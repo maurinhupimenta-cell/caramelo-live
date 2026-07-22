@@ -196,13 +196,19 @@
   }
  },
  "o25": {
-  "saldo": -41.6,
-  "ciclos": 223,
-  "greens": 155,
+  "saldo": -40.1,
+  "ciclos": 224,
+  "greens": 156,
   "redsCiclo": 40,
   "aborts": 0,
   "descartes": 28,
   "historico": [
+   {
+    "quando": "2026-07-22T07:53:04.230Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "euro · Ucrânia x Turquia @2.5 (tiro 1) · gatilho: time Sérvia"
+   },
    {
     "quando": "2026-07-22T07:47:23.730Z",
     "resultado": "GREEN",
@@ -316,54 +322,19 @@
     "resultado": "GREEN",
     "unidades": 1.7,
     "detalhe": "copa · Argélia x Bélgica @2.35 (tiro 2) · gatilho: placar acima de 1-0 (2-1)"
-   },
-   {
-    "quando": "2026-07-21T18:02:11.652Z",
-    "resultado": "GREEN",
-    "unidades": 2.4,
-    "detalhe": "euro · Alemanha x Sérvia @2.35 (tiro 3) · gatilho: placar acima de 1-0 (2-1)"
    }
   ],
   "consumidas": {
    "premier": 1784703222636,
    "super": 1784705826639,
-   "copa": 1784706443537
+   "copa": 1784706443537,
+   "euro": 1784706784031
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "08:50",
-     "jogo": "Ucrânia x Turquia",
-     "odd": 2.5
-    },
-    {
-     "h": "08:53",
-     "jogo": "Sérvia x Eslovênia",
-     "odd": 2.9
-    },
-    {
-     "h": "08:56",
-     "jogo": "França x Eslováquia",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "time Sérvia",
-   "alvo": {
-    "h": "08:50",
-    "jogo": "Ucrânia x Turquia",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1784706444840
-   },
-   "iniciadoEm": 1784706444840
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784706443537,
    "premier": 1784703222636,
-   "euro": 1784702105533,
+   "euro": 1784706784031,
    "super": 1784705826639
   },
   "dias": {
@@ -374,7 +345,7 @@
    "2026-07-19": -12,
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
-   "2026-07-22": -3
+   "2026-07-22": -1.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
