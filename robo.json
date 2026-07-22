@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -45.7,
-  "ciclos": 245,
-  "greens": 170,
+  "saldo": -43.8,
+  "ciclos": 246,
+  "greens": 171,
   "redsCiclo": 44,
   "aborts": 0,
   "descartes": 31,
   "historico": [
+   {
+    "quando": "2026-07-22T16:36:02.426Z",
+    "resultado": "GREEN",
+    "unidades": 1.9,
+    "detalhe": "premier · Leeds x Islington @2.45 (tiro 2) · gatilho: seq RGGRR"
+   },
    {
     "quando": "2026-07-22T16:20:29.430Z",
     "resultado": "GREEN",
@@ -273,60 +279,17 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros) · gatilho: time La Plata"
-   },
-   {
-    "quando": "2026-07-22T09:02:04.934Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "euro · Eslovênia x Suíça @2.45 (tiro 1) · gatilho: coluna :02"
    }
   ],
   "consumidas": {
    "euro": 1784736146528,
-   "super": 1784737229232
+   "super": 1784737229232,
+   "premier": 1784738162229
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:30",
-     "jogo": "Burnley x Norwich",
-     "odd": 2.1
-    },
-    {
-     "h": "17:33",
-     "jogo": "Leeds x Islington",
-     "odd": 2.45
-    },
-    {
-     "h": "17:36",
-     "jogo": "Newcastle x West Ham",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "seq RGGRR",
-   "alvo": {
-    "h": "17:33",
-    "jogo": "Leeds x Islington",
-    "odd": 2.45,
-    "unidades": 2,
-    "desde": 1784737976929
-   },
-   "iniciadoEm": 1784737647330,
-   "tiros": [
-    {
-     "h": "17:30",
-     "jogo": "Burnley x Norwich",
-     "odd": 2.1,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784734286031,
-   "premier": 1784732765924,
+   "premier": 1784738162229,
    "euro": 1784736146528,
    "super": 1784737229232
   },
@@ -338,7 +301,7 @@
    "2026-07-19": -12,
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
-   "2026-07-22": -7.1
+   "2026-07-22": -5.2
   },
   "_gatilhoAtual": {
    "tipo": "seq",
