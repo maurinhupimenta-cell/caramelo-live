@@ -339,7 +339,7 @@
    "tipo": "odd",
    "chave": "2.4",
    "n": 10,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
@@ -479,8 +479,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "09:07",
@@ -500,11 +500,11 @@
    ],
    "gatilho": "odd 2.1",
    "alvo": {
-    "h": "09:10",
-    "jogo": "Montevideo x Porto Alegre",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1784707805531
+    "h": "09:13",
+    "jogo": "Itaquera x Penarol",
+    "odd": 2.15,
+    "unidades": 4,
+    "desde": 1784707986230
    },
    "iniciadoEm": 1784707286233,
    "tiros": [
@@ -513,6 +513,12 @@
      "jogo": "Rio de Janeiro x Asuncion",
      "odd": 2.07,
      "unidades": 1
+    },
+    {
+     "h": "09:10",
+     "jogo": "Montevideo x Porto Alegre",
+     "odd": 2.1,
+     "unidades": 2
     }
    ]
   },
@@ -532,10 +538,10 @@
    "2026-07-22": -5.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.1",
-   "n": 13,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":25",
+   "n": 9,
+   "start": 3
   },
   "_obs": {}
  }
