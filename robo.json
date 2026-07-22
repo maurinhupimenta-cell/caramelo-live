@@ -446,8 +446,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "13:24",
@@ -467,13 +467,21 @@
    ],
    "gatilho": "coluna :27",
    "alvo": {
-    "h": "13:24",
-    "jogo": "Palace x Aston",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1784722903632
+    "h": "13:27",
+    "jogo": "United x Norwich",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1784723202832
    },
-   "iniciadoEm": 1784722903632
+   "iniciadoEm": 1784722903632,
+   "tiros": [
+    {
+     "h": "13:24",
+     "jogo": "Palace x Aston",
+     "odd": 2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784721344332,
@@ -492,15 +500,10 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":27",
+   "chave": ":30",
    "n": 12,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1784723124230,
-    "gatilho": "coluna :31"
-   }
-  }
+  "_obs": {}
  }
 }
