@@ -154,12 +154,18 @@
  },
  "o25": {
   "saldo": -36.2,
-  "ciclos": 231,
+  "ciclos": 232,
   "greens": 162,
   "redsCiclo": 41,
   "aborts": 0,
-  "descartes": 28,
+  "descartes": 29,
   "historico": [
+   {
+    "quando": "2026-07-22T12:04:07.832Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :16) — liga REARMADA"
+   },
    {
     "quando": "2026-07-22T11:59:40.932Z",
     "resultado": "GREEN",
@@ -273,12 +279,6 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "super · Guayaquil x Sao Paulo @2.02 (tiro 1) · gatilho: time Porto Alegre"
-   },
-   {
-    "quando": "2026-07-22T05:03:43.737Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "copa · Tunísia x Costa do Marfim @2.4 (tiro 1) · gatilho: odd 2.4"
    }
   ],
   "consumidas": {
@@ -496,7 +496,7 @@
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.1",
-   "n": 15,
+   "n": 16,
    "start": 1
   },
   "_obs": {}
