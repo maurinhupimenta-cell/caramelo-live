@@ -341,13 +341,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -26.5,
-  "ciclos": 254,
-  "greens": 184,
+  "saldo": -25.5,
+  "ciclos": 255,
+  "greens": 185,
   "redsCiclo": 31,
   "aborts": 0,
   "descartes": 39,
   "historico": [
+   {
+    "quando": "2026-07-22T16:17:59.626Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · United x Liverpool @1.95 (tiro 1) · gatilho: odd 2.07"
+   },
    {
     "quando": "2026-07-22T16:12:26.726Z",
     "resultado": "GREEN",
@@ -461,53 +467,18 @@
     "resultado": "GREEN",
     "unidades": 0.8,
     "detalhe": "super · Santiago x Lima @1.8 (tiro 1) · gatilho: odd 2.1"
-   },
-   {
-    "quando": "2026-07-22T09:09:44.837Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Egito"
    }
   ],
   "consumidas": {
    "copa": 1784733744928,
-   "super": 1784736746530
+   "super": 1784736746530,
+   "premier": 1784737079428
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:15",
-     "jogo": "United x Liverpool",
-     "odd": 1.95
-    },
-    {
-     "h": "17:18",
-     "jogo": "Chelsea x Aston",
-     "odd": 2.07
-    },
-    {
-     "h": "17:21",
-     "jogo": "Tottenham x Wolverhampton",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "odd 2.07",
-   "alvo": {
-    "h": "17:15",
-    "jogo": "United x Liverpool",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1784736747729
-   },
-   "iniciadoEm": 1784736747729
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784732726334,
    "super": 1784736746530,
-   "premier": 1784732973024,
+   "premier": 1784737079428,
    "copa": 1784733744928
   },
   "dias": {
@@ -517,7 +488,7 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -8.2
+   "2026-07-22": -7.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
