@@ -154,12 +154,18 @@
  },
  "o25": {
   "saldo": -49.8,
-  "ciclos": 248,
+  "ciclos": 249,
   "greens": 172,
   "redsCiclo": 45,
   "aborts": 0,
-  "descartes": 31,
+  "descartes": 32,
   "historico": [
+   {
+    "quando": "2026-07-22T18:55:24.234Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho coluna :07) — liga REARMADA"
+   },
    {
     "quando": "2026-07-22T18:08:39.723Z",
     "resultado": "GREEN",
@@ -273,12 +279,6 @@
     "resultado": "GREEN",
     "unidades": 2,
     "detalhe": "euro · Portugal x República Tcheca @2.5 (tiro 2) · gatilho: coluna :53"
-   },
-   {
-    "quando": "2026-07-22T09:50:39.537Z",
-    "resultado": "GREEN",
-    "unidades": 2.8,
-    "detalhe": "premier · West Ham x Norwich @2.45 (tiro 3) · gatilho: coluna :42"
    }
   ],
   "consumidas": {
@@ -307,7 +307,12 @@
    "n": 10,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1784746524233,
+    "gatilho": "coluna :07"
+   }
+  }
  },
  "ambas": {
   "saldo": -35.4,
@@ -489,10 +494,10 @@
    "2026-07-22": -17.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRG",
-   "n": 15,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":06",
+   "n": 19,
+   "start": 3
   },
   "_obs": {}
  }
