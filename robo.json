@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -36.8,
-  "ciclos": 226,
+  "saldo": -43.8,
+  "ciclos": 227,
   "greens": 158,
-  "redsCiclo": 40,
+  "redsCiclo": 41,
   "aborts": 0,
   "descartes": 28,
   "historico": [
+   {
+    "quando": "2026-07-22T09:19:05.230Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: time La Plata"
+   },
    {
     "quando": "2026-07-22T09:02:04.934Z",
     "resultado": "GREEN",
@@ -273,68 +279,19 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar acima de 1-0 (2-1)"
-   },
-   {
-    "quando": "2026-07-21T20:26:10.654Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: placar goleada (3+)"
    }
   ],
   "consumidas": {
    "premier": 1784708617932,
-   "euro": 1784710924734
+   "euro": 1784710924734,
+   "super": 1784711944836
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "10:10",
-     "jogo": "Medellin x Bogota",
-     "odd": 2.62
-    },
-    {
-     "h": "10:13",
-     "jogo": "Itaquera x La Plata",
-     "odd": 2.6
-    },
-    {
-     "h": "10:16",
-     "jogo": "Sao Paulo x Asuncion",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "time La Plata",
-   "alvo": {
-    "h": "10:16",
-    "jogo": "Sao Paulo x Asuncion",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1784711764841
-   },
-   "iniciadoEm": 1784710926430,
-   "tiros": [
-    {
-     "h": "10:10",
-     "jogo": "Medellin x Bogota",
-     "odd": 2.62,
-     "unidades": 1
-    },
-    {
-     "h": "10:13",
-     "jogo": "Itaquera x La Plata",
-     "odd": 2.6,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784706443537,
    "premier": 1784708617932,
    "euro": 1784710924734,
-   "super": 1784705826639
+   "super": 1784711944836
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -344,12 +301,12 @@
    "2026-07-19": -12,
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
-   "2026-07-22": 1.8
+   "2026-07-22": -5.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRR",
-   "n": 20,
+   "tipo": "odd",
+   "chave": "2.45",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
@@ -484,12 +441,41 @@
    }
   ],
   "consumidas": {
-   "super": 1784708165334,
    "premier": 1784709885530,
    "euro": 1784710383738,
    "copa": 1784711384730
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:19",
+     "jogo": "Santiago x Lima",
+     "odd": 1.8
+    },
+    {
+     "h": "10:22",
+     "jogo": "Penarol x Avellaneda",
+     "odd": 2.1
+    },
+    {
+     "h": "10:25",
+     "jogo": "Agua Branca x Santiago",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "odd 2.1",
+   "alvo": {
+    "h": "10:19",
+    "jogo": "Santiago x Lima",
+    "odd": 1.8,
+    "unidades": 1,
+    "desde": 1784711766331
+   },
+   "iniciadoEm": 1784711766331
+  },
   "cooldown": {
    "euro": 1784710383738,
    "super": 1784708165334,
@@ -506,9 +492,9 @@
    "2026-07-22": -8.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Egito",
-   "n": 13,
+   "tipo": "odd",
+   "chave": "2.1",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
