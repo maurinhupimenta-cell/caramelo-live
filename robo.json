@@ -443,8 +443,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "19:22",
@@ -464,13 +464,21 @@
    ],
    "gatilho": "time Senegal",
    "alvo": {
-    "h": "19:22",
-    "jogo": "Países Baixos x México",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1784743991427
+    "h": "19:25",
+    "jogo": "Senegal x Equador",
+    "odd": 2,
+    "unidades": 2,
+    "desde": 1784744692233
    },
-   "iniciadoEm": 1784743991427
+   "iniciadoEm": 1784743991427,
+   "tiros": [
+    {
+     "h": "19:22",
+     "jogo": "Países Baixos x México",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784737707135,
@@ -488,10 +496,10 @@
    "2026-07-22": -3.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Senegal",
-   "n": 17,
-   "start": 3
+   "tipo": "coluna",
+   "chave": ":34",
+   "n": 19,
+   "start": 2
   },
   "_obs": {}
  }
