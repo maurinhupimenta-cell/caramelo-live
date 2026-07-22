@@ -482,7 +482,37 @@
    "super": 1784736746530,
    "premier": 1784737079428
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:23",
+     "jogo": "Escócia x República Tcheca",
+     "odd": 2.1
+    },
+    {
+     "h": "17:26",
+     "jogo": "Países Baixos x Alemanha",
+     "odd": 1.83
+    },
+    {
+     "h": "17:29",
+     "jogo": "Escócia x França",
+     "odd": 1.85
+    }
+   ],
+   "gatilho": "odd 1.83",
+   "alvo": {
+    "h": "17:23",
+    "jogo": "Escócia x República Tcheca",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1784737167130
+   },
+   "iniciadoEm": 1784737167130
+  },
   "cooldown": {
    "euro": 1784732726334,
    "super": 1784736746530,
@@ -500,9 +530,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.07",
-   "n": 14,
-   "start": 1
+   "chave": "1.83",
+   "n": 13,
+   "start": 2
   },
   "_obs": {}
  }
