@@ -470,7 +470,37 @@
   "consumidas": {
    "premier": 1784696919228
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:08",
+     "jogo": "Alemanha x Hungria",
+     "odd": 2.02
+    },
+    {
+     "h": "06:11",
+     "jogo": "Eslovênia x República Tcheca",
+     "odd": 2.4
+    },
+    {
+     "h": "06:14",
+     "jogo": "Suíça x França",
+     "odd": 1.83
+    }
+   ],
+   "gatilho": "time Eslovênia",
+   "alvo": {
+    "h": "06:08",
+    "jogo": "Alemanha x Hungria",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1784696922935
+   },
+   "iniciadoEm": 1784696922935
+  },
   "cooldown": {
    "euro": 1784665554458,
    "super": 1784657531256,
