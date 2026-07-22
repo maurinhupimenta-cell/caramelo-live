@@ -310,13 +310,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -28.4,
-  "ciclos": 262,
+  "saldo": -35.4,
+  "ciclos": 263,
   "greens": 189,
-  "redsCiclo": 32,
+  "redsCiclo": 33,
   "aborts": 0,
   "descartes": 41,
   "historico": [
+   {
+    "quando": "2026-07-22T18:47:28.028Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: odd 2.3"
+   },
    {
     "quando": "2026-07-22T18:30:52.030Z",
     "resultado": "RED_CICLO",
@@ -430,64 +436,15 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · Espanha x Hungria @1.95 (tiro 1) · gatilho: time Inglaterra"
-   },
-   {
-    "quando": "2026-07-22T12:43:05.422Z",
-    "resultado": "GREEN",
-    "unidades": 1.6,
-    "detalhe": "copa · Croácia x Uzbequistão @2.15 (tiro 3) · gatilho: coluna :34"
    }
   ],
   "consumidas": {
-   "copa": 1784745051833
+   "copa": 1784745051833,
+   "euro": 1784746047834
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "19:38",
-     "jogo": "República Tcheca x França",
-     "odd": 2.02
-    },
-    {
-     "h": "19:41",
-     "jogo": "Albânia x Geórgia",
-     "odd": 2.3
-    },
-    {
-     "h": "19:44",
-     "jogo": "Suíça x Países Baixos",
-     "odd": 1.8
-    }
-   ],
-   "gatilho": "odd 2.3",
-   "alvo": {
-    "h": "19:44",
-    "jogo": "Suíça x Países Baixos",
-    "odd": 1.8,
-    "unidades": 4,
-    "desde": 1784745864630
-   },
-   "iniciadoEm": 1784745053531,
-   "tiros": [
-    {
-     "h": "19:38",
-     "jogo": "República Tcheca x França",
-     "odd": 2.02,
-     "unidades": 1
-    },
-    {
-     "h": "19:41",
-     "jogo": "Albânia x Geórgia",
-     "odd": 2.3,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784737707135,
+   "euro": 1784746047834,
    "super": 1784740560931,
    "premier": 1784741569933,
    "copa": 1784745051833
@@ -499,12 +456,12 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -10.1
+   "2026-07-22": -17.1
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.07",
-   "n": 16,
+   "chave": "2.25",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
