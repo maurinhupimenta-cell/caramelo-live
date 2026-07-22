@@ -314,7 +314,37 @@
    "premier": 1784703222636,
    "super": 1784705826639
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:40",
+     "jogo": "Jordânia x Croácia",
+     "odd": 2.3
+    },
+    {
+     "h": "08:43",
+     "jogo": "Haiti x Gana",
+     "odd": 2.25
+    },
+    {
+     "h": "08:46",
+     "jogo": "Jordânia x Senegal",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "seq RRGG",
+   "alvo": {
+    "h": "08:40",
+    "jogo": "Jordânia x Croácia",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1784705843936
+   },
+   "iniciadoEm": 1784705843936
+  },
   "cooldown": {
    "copa": 1784701904334,
    "premier": 1784703222636,
