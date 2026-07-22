@@ -339,18 +339,24 @@
    "tipo": "odd",
    "chave": "2.4",
    "n": 10,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -23.9,
-  "ciclos": 230,
-  "greens": 167,
+  "saldo": -22.3,
+  "ciclos": 231,
+  "greens": 168,
   "redsCiclo": 28,
   "aborts": 0,
   "descartes": 35,
   "historico": [
+   {
+    "quando": "2026-07-22T08:16:05.531Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "super · Itaquera x Penarol @2.15 (tiro 3) · gatilho: odd 2.1"
+   },
    {
     "quando": "2026-07-22T07:47:23.938Z",
     "resultado": "GREEN",
@@ -464,67 +470,18 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-21T18:56:49.753Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · West Ham x Newcastle @2.02 (tiro 1) · gatilho: placar empate 1-1"
    }
   ],
   "consumidas": {
    "premier": 1784705557038,
    "euro": 1784705864231,
-   "copa": 1784706443829
+   "copa": 1784706443829,
+   "super": 1784708165334
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "09:07",
-     "jogo": "Rio de Janeiro x Asuncion",
-     "odd": 2.07
-    },
-    {
-     "h": "09:10",
-     "jogo": "Montevideo x Porto Alegre",
-     "odd": 2.1
-    },
-    {
-     "h": "09:13",
-     "jogo": "Itaquera x Penarol",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "odd 2.1",
-   "alvo": {
-    "h": "09:13",
-    "jogo": "Itaquera x Penarol",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1784707986230
-   },
-   "iniciadoEm": 1784707286233,
-   "tiros": [
-    {
-     "h": "09:07",
-     "jogo": "Rio de Janeiro x Asuncion",
-     "odd": 2.07,
-     "unidades": 1
-    },
-    {
-     "h": "09:10",
-     "jogo": "Montevideo x Porto Alegre",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784705864231,
-   "super": 1784703666228,
+   "super": 1784708165334,
    "premier": 1784705557038,
    "copa": 1784706443829
   },
@@ -535,13 +492,13 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -5.6
+   "2026-07-22": -4
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":25",
    "n": 9,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
