@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -49.8,
-  "ciclos": 249,
-  "greens": 172,
+  "saldo": -47.7,
+  "ciclos": 250,
+  "greens": 173,
   "redsCiclo": 45,
   "aborts": 0,
   "descartes": 32,
   "historico": [
+   {
+    "quando": "2026-07-22T19:10:26.225Z",
+    "resultado": "GREEN",
+    "unidades": 2.1,
+    "detalhe": "copa · Irã x Turquia @2.55 (tiro 2) · gatilho: coluna :07"
+   },
    {
     "quando": "2026-07-22T18:55:24.234Z",
     "resultado": "GREEN_OBS",
@@ -273,56 +279,14 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "premier · Islington x Tottenham @2.4 (tiro 1) · gatilho: coluna :00"
-   },
-   {
-    "quando": "2026-07-22T11:55:44.329Z",
-    "resultado": "GREEN",
-    "unidades": 2,
-    "detalhe": "euro · Portugal x República Tcheca @2.5 (tiro 2) · gatilho: coluna :53"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "20:04",
-     "jogo": "África do Sul x Bélgica",
-     "odd": 2.45
-    },
-    {
-     "h": "20:07",
-     "jogo": "Irã x Turquia",
-     "odd": 2.55
-    },
-    {
-     "h": "20:10",
-     "jogo": "Senegal x Tunísia",
-     "odd": 2.8
-    }
-   ],
-   "gatilho": "coluna :07",
-   "alvo": {
-    "h": "20:07",
-    "jogo": "Irã x Turquia",
-    "odd": 2.55,
-    "unidades": 2,
-    "desde": 1784747248529
-   },
-   "iniciadoEm": 1784746525925,
-   "tiros": [
-    {
-     "h": "20:04",
-     "jogo": "África do Sul x Bélgica",
-     "odd": 2.45,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "copa": 1784747426028
   },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784740407331,
+   "copa": 1784747426028,
    "premier": 1784743719525,
    "euro": 1784736146528,
    "super": 1784737229232
@@ -335,7 +299,7 @@
    "2026-07-19": -12,
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
-   "2026-07-22": -11.2
+   "2026-07-22": -9.1
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
