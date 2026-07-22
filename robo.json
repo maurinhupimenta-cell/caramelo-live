@@ -470,12 +470,41 @@
    }
   ],
   "consumidas": {
-   "euro": 1784721344332,
    "super": 1784722366431,
    "premier": 1784723557632,
    "copa": 1784724185134
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:02",
+     "jogo": "Espanha x Hungria",
+     "odd": 1.95
+    },
+    {
+     "h": "14:05",
+     "jogo": "Inglaterra x Ucrânia",
+     "odd": 1.95
+    },
+    {
+     "h": "14:08",
+     "jogo": "Portugal x Turquia",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time Inglaterra",
+   "alvo": {
+    "h": "14:02",
+    "jogo": "Espanha x Hungria",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1784724965330
+   },
+   "iniciadoEm": 1784724965330
+  },
   "cooldown": {
    "euro": 1784721344332,
    "super": 1784722366431,
@@ -493,9 +522,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Bélgica",
-   "n": 8,
-   "start": 1
+   "chave": "Inglaterra",
+   "n": 20,
+   "start": 2
   },
   "_obs": {}
  }
