@@ -287,8 +287,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "10:34",
@@ -308,13 +308,21 @@
    ],
    "gatilho": "time Cabo Verde",
    "alvo": {
-    "h": "10:34",
-    "jogo": "Arábia Saudita x República Tcheca",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1784712304334
+    "h": "10:37",
+    "jogo": "Cabo Verde x Áustria",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1784713003339
    },
-   "iniciadoEm": 1784712304334
+   "iniciadoEm": 1784712304334,
+   "tiros": [
+    {
+     "h": "10:34",
+     "jogo": "Arábia Saudita x República Tcheca",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784706443537,
@@ -333,10 +341,10 @@
    "2026-07-22": -5.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Cabo Verde",
-   "n": 11,
-   "start": 3
+   "tipo": "coluna",
+   "chave": ":45",
+   "n": 10,
+   "start": 2
   },
   "_obs": {}
  },
