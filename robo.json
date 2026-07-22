@@ -349,13 +349,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -24.3,
-  "ciclos": 220,
-  "greens": 159,
+  "saldo": -23.6,
+  "ciclos": 221,
+  "greens": 160,
   "redsCiclo": 27,
   "aborts": 0,
   "descartes": 34,
   "historico": [
+   {
+    "quando": "2026-07-22T05:26:23.930Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "copa · Costa do Marfim x RD Congo @1.86 (tiro 2) · gatilho: time Costa do Marfim"
+   },
    {
     "quando": "2026-07-22T05:13:29.230Z",
     "resultado": "GREEN",
@@ -469,62 +475,19 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · Sérvia x Alemanha @2 (tiro 2) · gatilho: placar empate 1-1"
-   },
-   {
-    "quando": "2026-07-21T15:56:13.554Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "super · Itaquera x Belo Horizonte @1.9 (tiro 1) · gatilho: placar empate 1-1"
    }
   ],
   "consumidas": {
    "premier": 1784696919228,
-   "euro": 1784697209029
+   "euro": 1784697209029,
+   "copa": 1784697983642
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "06:19",
-     "jogo": "Irã x EUA",
-     "odd": 2.1
-    },
-    {
-     "h": "06:22",
-     "jogo": "Costa do Marfim x RD Congo",
-     "odd": 1.86
-    },
-    {
-     "h": "06:25",
-     "jogo": "Uzbequistão x Panamá",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "time Costa do Marfim",
-   "alvo": {
-    "h": "06:22",
-    "jogo": "Costa do Marfim x RD Congo",
-    "odd": 1.86,
-    "unidades": 2,
-    "desde": 1784697804935
-   },
-   "iniciadoEm": 1784697210037,
-   "tiros": [
-    {
-     "h": "06:19",
-     "jogo": "Irã x EUA",
-     "odd": 2.1,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784697209029,
    "super": 1784657531256,
    "premier": 1784696919228,
-   "copa": 1784670696652
+   "copa": 1784697983642
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -533,7 +496,7 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -6
+   "2026-07-22": -5.3
   },
   "_gatilhoAtual": {
    "tipo": "time",
