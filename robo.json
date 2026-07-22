@@ -178,7 +178,7 @@
    "tipo": "coluna",
    "chave": ":48",
    "n": 8,
-   "start": 3
+   "start": 1
   }
  },
  "o25": {
@@ -316,8 +316,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "08:40",
@@ -337,13 +337,21 @@
    ],
    "gatilho": "seq RRGG",
    "alvo": {
-    "h": "08:40",
-    "jogo": "Jordânia x Croácia",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1784705843936
+    "h": "08:43",
+    "jogo": "Haiti x Gana",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1784706263435
    },
-   "iniciadoEm": 1784705843936
+   "iniciadoEm": 1784705843936,
+   "tiros": [
+    {
+     "h": "08:40",
+     "jogo": "Jordânia x Croácia",
+     "odd": 2.3,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784701904334,
@@ -362,10 +370,10 @@
    "2026-07-22": -4.5
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 10,
-   "start": 1
+   "tipo": "time",
+   "chave": "Sérvia",
+   "n": 13,
+   "start": 2
   },
   "_obs": {}
  },
@@ -503,7 +511,37 @@
    "premier": 1784705557038,
    "euro": 1784705864231
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:43",
+     "jogo": "Haiti x Gana",
+     "odd": 1.95
+    },
+    {
+     "h": "08:46",
+     "jogo": "Jordânia x Senegal",
+     "odd": 2.05
+    },
+    {
+     "h": "08:49",
+     "jogo": "Alemanha x Suíça",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "time Senegal",
+   "alvo": {
+    "h": "08:43",
+    "jogo": "Haiti x Gana",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1784705865828
+   },
+   "iniciadoEm": 1784705865828
+  },
   "cooldown": {
    "euro": 1784705864231,
    "super": 1784703666228,
@@ -520,9 +558,9 @@
    "2026-07-22": -6.6
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 10,
+   "tipo": "time",
+   "chave": "Senegal",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
