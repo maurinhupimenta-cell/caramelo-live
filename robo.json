@@ -339,12 +339,18 @@
  },
  "ambas": {
   "saldo": -62.4,
-  "ciclos": 271,
+  "ciclos": 272,
   "greens": 190,
   "redsCiclo": 37,
   "aborts": 0,
-  "descartes": 44,
+  "descartes": 45,
   "historico": [
+   {
+    "quando": "2026-07-22T20:44:43.228Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho seq GGGGR) — liga REARMADA"
+   },
    {
     "quando": "2026-07-22T20:25:26.626Z",
     "resultado": "RED_CICLO",
@@ -458,12 +464,6 @@
     "resultado": "GREEN",
     "unidades": 0.7,
     "detalhe": "copa · Argentina x Portugal @1.85 (tiro 2) · gatilho: time Portugal"
-   },
-   {
-    "quando": "2026-07-22T15:09:33.131Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Brentford x Palace @1.95 (tiro 1) · gatilho: coluna :06"
    }
   ],
   "consumidas": {
@@ -471,7 +471,37 @@
    "euro": 1784751266125,
    "super": 1784751926431
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:48",
+     "jogo": "Burnley x United",
+     "odd": 1.9
+    },
+    {
+     "h": "21:51",
+     "jogo": "Chelsea x Everton",
+     "odd": 1.9
+    },
+    {
+     "h": "21:54",
+     "jogo": "Norwich x Newcastle",
+     "odd": 1.83
+    }
+   ],
+   "gatilho": "seq GGGGR",
+   "alvo": {
+    "h": "21:48",
+    "jogo": "Burnley x United",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1784753087429
+   },
+   "iniciadoEm": 1784753087429
+  },
   "cooldown": {
    "euro": 1784751266125,
    "super": 1784751926431,
@@ -488,10 +518,10 @@
    "2026-07-22": -44.1
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.9",
-   "n": 27,
-   "start": 3
+   "tipo": "seq",
+   "chave": "GGGGR",
+   "n": 8,
+   "start": 1
   },
   "_obs": {}
  }
