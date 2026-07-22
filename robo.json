@@ -484,8 +484,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:31",
@@ -505,13 +505,21 @@
    ],
    "gatilho": "time Senegal",
    "alvo": {
-    "h": "17:31",
-    "jogo": "Uzbequistão x Senegal",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1784737743630
+    "h": "17:34",
+    "jogo": "Equador x Iraque",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1784738125524
    },
-   "iniciadoEm": 1784737743630
+   "iniciadoEm": 1784737743630,
+   "tiros": [
+    {
+     "h": "17:31",
+     "jogo": "Uzbequistão x Senegal",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784737707135,
@@ -532,7 +540,7 @@
    "tipo": "time",
    "chave": "Portugal",
    "n": 14,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
