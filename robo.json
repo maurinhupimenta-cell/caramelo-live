@@ -281,9 +281,7 @@
     "detalhe": "premier · Brighton x United @2.05 (tiro 1) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {
-   "premier": 1784713839429
-  },
+  "consumidas": {},
   "ciclo": null,
   "cooldown": {
    "copa": 1784713224036,
@@ -307,7 +305,12 @@
    "n": 11,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1784717829540,
+    "gatilho": "coluna :16"
+   }
+  }
  },
  "ambas": {
   "saldo": -23.9,
@@ -438,12 +441,7 @@
     "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq GRRR"
    }
   ],
-  "consumidas": {
-   "copa": 1784711384730,
-   "super": 1784712126128,
-   "premier": 1784713707532,
-   "euro": 1784714502833
-  },
+  "consumidas": {},
   "ciclo": null,
   "cooldown": {
    "euro": 1784714502833,
@@ -461,9 +459,9 @@
    "2026-07-22": -5.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Inglaterra",
-   "n": 16,
+   "tipo": "seq",
+   "chave": "RRRRG",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
