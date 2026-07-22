@@ -333,21 +333,27 @@
    "2026-07-22": 1.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "La Plata",
-   "n": 16,
-   "start": 2
+   "tipo": "seq",
+   "chave": "RGRR",
+   "n": 20,
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -20.1,
-  "ciclos": 234,
+  "saldo": -27.1,
+  "ciclos": 235,
   "greens": 170,
-  "redsCiclo": 28,
+  "redsCiclo": 29,
   "aborts": 0,
   "descartes": 36,
   "historico": [
+   {
+    "quando": "2026-07-22T09:09:44.837Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Egito"
+   },
    {
     "quando": "2026-07-22T08:53:03.935Z",
     "resultado": "GREEN",
@@ -461,69 +467,20 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-21T21:51:36.851Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Países Baixos x Colômbia @2 (tiro 3) · gatilho: seq RRRGG"
    }
   ],
   "consumidas": {
    "super": 1784708165334,
    "premier": 1784709885530,
-   "euro": 1784710383738
+   "euro": 1784710383738,
+   "copa": 1784711384730
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "10:01",
-     "jogo": "Argentina x Argélia",
-     "odd": 1.95
-    },
-    {
-     "h": "10:04",
-     "jogo": "Qatar x Egito",
-     "odd": 1.9
-    },
-    {
-     "h": "10:07",
-     "jogo": "Argentina x França",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "time Egito",
-   "alvo": {
-    "h": "10:07",
-    "jogo": "Argentina x França",
-    "odd": 1.9,
-    "unidades": 4,
-    "desde": 1784711223631
-   },
-   "iniciadoEm": 1784710385238,
-   "tiros": [
-    {
-     "h": "10:01",
-     "jogo": "Argentina x Argélia",
-     "odd": 1.95,
-     "unidades": 1
-    },
-    {
-     "h": "10:04",
-     "jogo": "Qatar x Egito",
-     "odd": 1.9,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784710383738,
    "super": 1784708165334,
    "premier": 1784709885530,
-   "copa": 1784706443829
+   "copa": 1784711384730
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -532,7 +489,7 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -1.8
+   "2026-07-22": -8.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
