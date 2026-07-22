@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -33.5,
-  "ciclos": 234,
-  "greens": 164,
+  "saldo": -32.1,
+  "ciclos": 235,
+  "greens": 165,
   "redsCiclo": 41,
   "aborts": 0,
   "descartes": 29,
   "historico": [
+   {
+    "quando": "2026-07-22T13:16:19.226Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "euro · Escócia x Hungria @2.35 (tiro 1) · gatilho: seq GGGGG"
+   },
    {
     "quando": "2026-07-22T12:58:43.626Z",
     "resultado": "GREEN",
@@ -273,53 +279,18 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros) · gatilho: seq RGRR"
-   },
-   {
-    "quando": "2026-07-22T05:29:54.430Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: time Southampton"
    }
   ],
   "consumidas": {
    "super": 1784722605823,
-   "copa": 1784725123425
+   "copa": 1784725123425,
+   "euro": 1784726179023
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:11",
-     "jogo": "Escócia x Hungria",
-     "odd": 2.35
-    },
-    {
-     "h": "14:14",
-     "jogo": "Albânia x Croácia",
-     "odd": 2.55
-    },
-    {
-     "h": "14:17",
-     "jogo": "Alemanha x Portugal",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "seq GGGGG",
-   "alvo": {
-    "h": "14:11",
-    "jogo": "Escócia x Hungria",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1784725708126
-   },
-   "iniciadoEm": 1784725708126
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784725123425,
    "premier": 1784721580739,
-   "euro": 1784721344134,
+   "euro": 1784726179023,
    "super": 1784722605824
   },
   "dias": {
@@ -330,7 +301,7 @@
    "2026-07-19": -12,
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
-   "2026-07-22": 5.1
+   "2026-07-22": 6.5
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -474,7 +445,37 @@
    "copa": 1784724185134,
    "euro": 1784725487431
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:22",
+     "jogo": "Bogota x Quito",
+     "odd": 2.15
+    },
+    {
+     "h": "14:25",
+     "jogo": "Sao Paulo x Santos",
+     "odd": 1.93
+    },
+    {
+     "h": "14:28",
+     "jogo": "Agua Branca x Avellaneda",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "coluna :25",
+   "alvo": {
+    "h": "14:22",
+    "jogo": "Bogota x Quito",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1784726002129
+   },
+   "iniciadoEm": 1784726002129
+  },
   "cooldown": {
    "euro": 1784725487431,
    "super": 1784722366431,
@@ -492,15 +493,10 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":08",
+   "chave": ":25",
    "n": 14,
-   "start": 1
+   "start": 2
   },
-  "_obs": {
-   "super": {
-    "desde": 1784726001324,
-    "gatilho": "coluna :25"
-   }
-  }
+  "_obs": {}
  }
 }
