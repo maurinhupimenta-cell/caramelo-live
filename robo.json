@@ -439,11 +439,40 @@
    }
   ],
   "consumidas": {
-   "super": 1784747132222,
    "premier": 1784748933323,
    "copa": 1784750486531
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:08",
+     "jogo": "Croácia x República Tcheca",
+     "odd": 2.15
+    },
+    {
+     "h": "21:11",
+     "jogo": "Países Baixos x Turquia",
+     "odd": 1.98
+    },
+    {
+     "h": "21:14",
+     "jogo": "Itália x Hungria",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "seq GRGGG",
+   "alvo": {
+    "h": "21:08",
+    "jogo": "Croácia x República Tcheca",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1784750725529
+   },
+   "iniciadoEm": 1784750725529
+  },
   "cooldown": {
    "euro": 1784746047834,
    "super": 1784747132222,
@@ -460,16 +489,11 @@
    "2026-07-22": -38.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "EUA",
-   "n": 10,
+   "tipo": "seq",
+   "chave": "GRGGG",
+   "n": 8,
    "start": 1
   },
-  "_obs": {
-   "euro": {
-    "desde": 1784750724631,
-    "gatilho": "seq GRGGG"
-   }
-  }
+  "_obs": {}
  }
 }
