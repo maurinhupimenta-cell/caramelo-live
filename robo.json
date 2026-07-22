@@ -310,13 +310,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -42.4,
-  "ciclos": 265,
+  "saldo": -49.4,
+  "ciclos": 266,
   "greens": 189,
-  "redsCiclo": 34,
+  "redsCiclo": 35,
   "aborts": 0,
   "descartes": 42,
   "historico": [
+   {
+    "quando": "2026-07-22T19:35:33.525Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: odd 2.07"
+   },
    {
     "quando": "2026-07-22T19:31:24.929Z",
     "resultado": "GREEN_OBS",
@@ -430,67 +436,18 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho odd 2.07) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-22T13:28:06.329Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "super · Sao Paulo x Santos @1.93 (tiro 2) · gatilho: coluna :25"
    }
   ],
   "consumidas": {
    "euro": 1784746047834,
-   "super": 1784747132222
+   "super": 1784747132222,
+   "premier": 1784748933323
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "20:27",
-     "jogo": "Southampton x United",
-     "odd": 2.02
-    },
-    {
-     "h": "20:30",
-     "jogo": "West Ham x Burnley",
-     "odd": 2.07
-    },
-    {
-     "h": "20:33",
-     "jogo": "Newcastle x Wolverhampton",
-     "odd": 1.76
-    }
-   ],
-   "gatilho": "odd 2.07",
-   "alvo": {
-    "h": "20:33",
-    "jogo": "Newcastle x Wolverhampton",
-    "odd": 1.76,
-    "unidades": 4,
-    "desde": 1784748764134
-   },
-   "iniciadoEm": 1784747906330,
-   "tiros": [
-    {
-     "h": "20:27",
-     "jogo": "Southampton x United",
-     "odd": 2.02,
-     "unidades": 1
-    },
-    {
-     "h": "20:30",
-     "jogo": "West Ham x Burnley",
-     "odd": 2.07,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784746047834,
    "super": 1784747132222,
-   "premier": 1784741569933,
+   "premier": 1784748933323,
    "copa": 1784745051833
   },
   "dias": {
@@ -500,7 +457,7 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -24.1
+   "2026-07-22": -31.1
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
