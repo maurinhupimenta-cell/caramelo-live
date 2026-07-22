@@ -311,13 +311,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -34,
-  "ciclos": 245,
-  "greens": 176,
+  "saldo": -33.1,
+  "ciclos": 246,
+  "greens": 177,
   "redsCiclo": 31,
   "aborts": 0,
   "descartes": 38,
   "historico": [
+   {
+    "quando": "2026-07-22T13:28:06.329Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Sao Paulo x Santos @1.93 (tiro 2) · gatilho: coluna :25"
+   },
    {
     "quando": "2026-07-22T13:13:21.325Z",
     "resultado": "GREEN_OBS",
@@ -431,61 +437,18 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "super · Buenos Aires x Rio de Janeiro @1.85 (tiro 1) · gatilho: time La Plata"
-   },
-   {
-    "quando": "2026-07-22T06:34:43.731Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Escócia x Alemanha @2.05 (tiro 1) · gatilho: time Egito"
    }
   ],
   "consumidas": {
    "premier": 1784723557632,
    "copa": 1784724185134,
-   "euro": 1784725487431
+   "euro": 1784725487431,
+   "super": 1784726886133
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "14:22",
-     "jogo": "Bogota x Quito",
-     "odd": 2.15
-    },
-    {
-     "h": "14:25",
-     "jogo": "Sao Paulo x Santos",
-     "odd": 1.93
-    },
-    {
-     "h": "14:28",
-     "jogo": "Agua Branca x Avellaneda",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "coluna :25",
-   "alvo": {
-    "h": "14:25",
-    "jogo": "Sao Paulo x Santos",
-    "odd": 1.93,
-    "unidades": 2,
-    "desde": 1784726849730
-   },
-   "iniciadoEm": 1784726002129,
-   "tiros": [
-    {
-     "h": "14:22",
-     "jogo": "Bogota x Quito",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784725487431,
-   "super": 1784722366431,
+   "super": 1784726886133,
    "premier": 1784723557632,
    "copa": 1784724185134
   },
@@ -496,7 +459,7 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -15.7
+   "2026-07-22": -14.8
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
