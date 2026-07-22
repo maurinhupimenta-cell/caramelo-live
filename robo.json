@@ -286,7 +286,37 @@
    "super": 1784711944836,
    "copa": 1784713224036
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:42",
+     "jogo": "Islington x Newcastle",
+     "odd": 2.07
+    },
+    {
+     "h": "10:45",
+     "jogo": "Leeds x Chelsea",
+     "odd": 2.45
+    },
+    {
+     "h": "10:48",
+     "jogo": "West Ham x Norwich",
+     "odd": 2.45
+    }
+   ],
+   "gatilho": "coluna :42",
+   "alvo": {
+    "h": "10:42",
+    "jogo": "Islington x Newcastle",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1784713225228
+   },
+   "iniciadoEm": 1784713225228
+  },
   "cooldown": {
    "copa": 1784713224036,
    "premier": 1784708617932,
@@ -305,7 +335,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":42",
+   "chave": ":45",
    "n": 10,
    "start": 1
   },
@@ -441,7 +471,6 @@
    }
   ],
   "consumidas": {
-   "premier": 1784709885530,
    "euro": 1784710383738,
    "copa": 1784711384730,
    "super": 1784712126128
