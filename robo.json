@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -46.7,
-  "ciclos": 244,
-  "greens": 169,
+  "saldo": -45.7,
+  "ciclos": 245,
+  "greens": 170,
   "redsCiclo": 44,
   "aborts": 0,
   "descartes": 31,
   "historico": [
+   {
+    "quando": "2026-07-22T16:20:29.430Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Buenos Aires x Lima @2.02 (tiro 2) · gatilho: coluna :16"
+   },
    {
     "quando": "2026-07-22T16:02:26.822Z",
     "resultado": "RED_CICLO",
@@ -273,62 +279,19 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "euro · Eslovênia x Suíça @2.45 (tiro 1) · gatilho: coluna :02"
-   },
-   {
-    "quando": "2026-07-22T08:23:38.132Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "premier · Liverpool x Tottenham @2.4 (tiro 2) · gatilho: odd 2.4"
    }
   ],
   "consumidas": {
    "copa": 1784734286031,
-   "euro": 1784736146528
+   "euro": 1784736146528,
+   "super": 1784737229232
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:13",
-     "jogo": "Santos x Sao Paulo",
-     "odd": 2.2
-    },
-    {
-     "h": "17:16",
-     "jogo": "Buenos Aires x Lima",
-     "odd": 2.02
-    },
-    {
-     "h": "17:19",
-     "jogo": "Agua Branca x Santos",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "coluna :16",
-   "alvo": {
-    "h": "17:16",
-    "jogo": "Buenos Aires x Lima",
-    "odd": 2.02,
-    "unidades": 2,
-    "desde": 1784737105431
-   },
-   "iniciadoEm": 1784736266823,
-   "tiros": [
-    {
-     "h": "17:13",
-     "jogo": "Santos x Sao Paulo",
-     "odd": 2.2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784734286031,
    "premier": 1784732765924,
    "euro": 1784736146528,
-   "super": 1784729953630
+   "super": 1784737229232
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -338,7 +301,7 @@
    "2026-07-19": -12,
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
-   "2026-07-22": -8.1
+   "2026-07-22": -7.1
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
@@ -532,7 +495,7 @@
    "tipo": "odd",
    "chave": "1.83",
    "n": 13,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
