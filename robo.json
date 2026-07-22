@@ -286,7 +286,37 @@
    "super": 1784737229232,
    "premier": 1784738162229
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:04",
+     "jogo": "Canadá x Bélgica",
+     "odd": 2.4
+    },
+    {
+     "h": "18:07",
+     "jogo": "Suécia x Croácia",
+     "odd": 2.7
+    },
+    {
+     "h": "18:10",
+     "jogo": "Qatar x Inglaterra",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "coluna :07",
+   "alvo": {
+    "h": "18:04",
+    "jogo": "Canadá x Bélgica",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1784739326922
+   },
+   "iniciadoEm": 1784739326922
+  },
   "cooldown": {
    "copa": 1784734286031,
    "premier": 1784738162229,
@@ -304,10 +334,10 @@
    "2026-07-22": -5.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGRR",
-   "n": 9,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":07",
+   "n": 18,
+   "start": 3
   },
   "_obs": {}
  },
