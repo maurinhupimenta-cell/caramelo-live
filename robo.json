@@ -282,7 +282,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:50",
+     "jogo": "Países Baixos x Espanha",
+     "odd": 1.98
+    },
+    {
+     "h": "12:53",
+     "jogo": "Portugal x República Tcheca",
+     "odd": 2.5
+    },
+    {
+     "h": "12:56",
+     "jogo": "Albânia x França",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "coluna :53",
+   "alvo": {
+    "h": "12:50",
+    "jogo": "Países Baixos x Espanha",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1784720665240
+   },
+   "iniciadoEm": 1784720665240
+  },
   "cooldown": {
    "copa": 1784713224036,
    "premier": 1784713839429,
@@ -301,13 +331,13 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":07",
-   "n": 11,
-   "start": 1
+   "chave": ":53",
+   "n": 12,
+   "start": 2
   },
   "_obs": {
    "super": {
-    "desde": 1784717829540,
+    "desde": 1784720354487,
     "gatilho": "coluna :16"
    }
   }
@@ -442,7 +472,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:50",
+     "jogo": "Países Baixos x Espanha",
+     "odd": 1.76
+    },
+    {
+     "h": "12:53",
+     "jogo": "Portugal x República Tcheca",
+     "odd": 2.15
+    },
+    {
+     "h": "12:56",
+     "jogo": "Albânia x França",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "coluna :53",
+   "alvo": {
+    "h": "12:50",
+    "jogo": "Países Baixos x Espanha",
+    "odd": 1.76,
+    "unidades": 1,
+    "desde": 1784720665535
+   },
+   "iniciadoEm": 1784720665535
+  },
   "cooldown": {
    "euro": 1784714502833,
    "super": 1784712126128,
@@ -459,10 +519,10 @@
    "2026-07-22": -5.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRG",
-   "n": 9,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":53",
+   "n": 12,
+   "start": 2
   },
   "_obs": {}
  }
