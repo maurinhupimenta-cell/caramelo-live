@@ -341,12 +341,18 @@
  },
  "ambas": {
   "saldo": -61.5,
-  "ciclos": 273,
+  "ciclos": 274,
   "greens": 191,
   "redsCiclo": 37,
   "aborts": 0,
-  "descartes": 45,
+  "descartes": 46,
   "historico": [
+   {
+    "quando": "2026-07-22T21:02:24.827Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho odd 1.87) — liga REARMADA"
+   },
    {
     "quando": "2026-07-22T20:50:50.128Z",
     "resultado": "GREEN",
@@ -460,12 +466,6 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · United x Liverpool @1.95 (tiro 1) · gatilho: odd 2.07"
-   },
-   {
-    "quando": "2026-07-22T16:12:26.726Z",
-    "resultado": "GREEN",
-    "unidades": 0.8,
-    "detalhe": "super · Asuncion x Guayaquil @1.9 (tiro 2) · gatilho: seq RRRRG"
    }
   ],
   "consumidas": {
@@ -495,6 +495,11 @@
    "n": 8,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1784754144827,
+    "gatilho": "odd 1.87"
+   }
+  }
  }
 }
