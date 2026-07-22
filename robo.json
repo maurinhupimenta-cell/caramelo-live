@@ -152,13 +152,19 @@
   }
  },
  "o25": {
-  "saldo": -38.6,
-  "ciclos": 211,
-  "greens": 147,
+  "saldo": -37.2,
+  "ciclos": 212,
+  "greens": 148,
   "redsCiclo": 38,
   "aborts": 0,
   "descartes": 26,
   "historico": [
+   {
+    "quando": "2026-07-22T05:03:43.737Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "copa · Tunísia x Costa do Marfim @2.4 (tiro 1) · gatilho: odd 2.4"
+   },
    {
     "quando": "2026-07-22T04:59:08.230Z",
     "resultado": "GREEN_OBS",
@@ -272,48 +278,14 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "euro · Países Baixos x Albânia @2.45 (tiro 1) · gatilho: placar acima de 1-0 (2-1)"
-   },
-   {
-    "quando": "2026-07-21T14:08:40.036Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:01",
-     "jogo": "Tunísia x Costa do Marfim",
-     "odd": 2.4
-    },
-    {
-     "h": "06:04",
-     "jogo": "Bósnia e Herzegovina x Áustria",
-     "odd": 2.1
-    },
-    {
-     "h": "06:07",
-     "jogo": "Brasil x Jordânia",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "odd 2.4",
-   "alvo": {
-    "h": "06:01",
-    "jogo": "Tunísia x Costa do Marfim",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1784696279734
-   },
-   "iniciadoEm": 1784696279734
+  "consumidas": {
+   "copa": 1784696623631
   },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784658070352,
+   "copa": 1784696623631,
    "premier": 1784671219223,
    "euro": 1784670453660,
    "super": 1784670719852
@@ -326,7 +298,7 @@
    "2026-07-19": -12,
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
-   "2026-07-22": 0
+   "2026-07-22": 1.4
   },
   "_gatilhoAtual": {
    "tipo": "time",
