@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -46.1,
-  "ciclos": 237,
-  "greens": 165,
+  "saldo": -44.8,
+  "ciclos": 238,
+  "greens": 166,
   "redsCiclo": 43,
   "aborts": 0,
   "descartes": 29,
   "historico": [
+   {
+    "quando": "2026-07-22T14:19:13.827Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "super · Guayaquil x Rio de Janeiro @2.15 (tiro 2) · gatilho: coluna :16"
+   },
    {
     "quando": "2026-07-22T14:12:52.624Z",
     "resultado": "RED_CICLO",
@@ -273,62 +279,19 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho odd 2.4) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-22T06:35:05.732Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "euro · Sérvia x Alemanha @2.35 (tiro 1) · gatilho: seq RGRR"
    }
   ],
   "consumidas": {
    "premier": 1784728429230,
-   "copa": 1784729572336
+   "copa": 1784729572336,
+   "super": 1784729953630
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "15:13",
-     "jogo": "La Plata x Medellin",
-     "odd": 2.7
-    },
-    {
-     "h": "15:16",
-     "jogo": "Guayaquil x Rio de Janeiro",
-     "odd": 2.15
-    },
-    {
-     "h": "15:19",
-     "jogo": "Avellaneda x Asuncion",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "coluna :16",
-   "alvo": {
-    "h": "15:16",
-    "jogo": "Guayaquil x Rio de Janeiro",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1784729774021
-   },
-   "iniciadoEm": 1784729574533,
-   "tiros": [
-    {
-     "h": "15:13",
-     "jogo": "La Plata x Medellin",
-     "odd": 2.7,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784729572336,
    "premier": 1784728429230,
    "euro": 1784726179023,
-   "super": 1784722605824
+   "super": 1784729953630
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -338,7 +301,7 @@
    "2026-07-19": -12,
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
-   "2026-07-22": -7.5
+   "2026-07-22": -6.2
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
