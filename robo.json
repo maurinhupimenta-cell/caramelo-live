@@ -336,18 +336,24 @@
    "tipo": "coluna",
    "chave": ":48",
    "n": 14,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -33.1,
-  "ciclos": 247,
-  "greens": 177,
+  "saldo": -32.3,
+  "ciclos": 248,
+  "greens": 178,
   "redsCiclo": 31,
   "aborts": 0,
   "descartes": 39,
   "historico": [
+   {
+    "quando": "2026-07-22T13:38:44.123Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "premier · Wolverhampton x Everton @1.83 (tiro 1) · gatilho: odd 2.07"
+   },
    {
     "quando": "2026-07-22T13:32:44.330Z",
     "resultado": "GREEN_OBS",
@@ -461,54 +467,19 @@
     "resultado": "GREEN",
     "unidades": 0.8,
     "detalhe": "euro · Bélgica x Países Baixos @1.83 (tiro 1) · gatilho: time Países Baixos"
-   },
-   {
-    "quando": "2026-07-22T07:32:37.240Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: time Newcastle"
    }
   ],
   "consumidas": {
    "copa": 1784724185134,
    "euro": 1784725487431,
-   "super": 1784726886133
+   "super": 1784726886133,
+   "premier": 1784727523924
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:36",
-     "jogo": "Wolverhampton x Everton",
-     "odd": 1.83
-    },
-    {
-     "h": "14:39",
-     "jogo": "Leicester x Aston",
-     "odd": 2.07
-    },
-    {
-     "h": "14:42",
-     "jogo": "Palace x Everton",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "odd 2.07",
-   "alvo": {
-    "h": "14:36",
-    "jogo": "Wolverhampton x Everton",
-    "odd": 1.83,
-    "unidades": 1,
-    "desde": 1784727165237
-   },
-   "iniciadoEm": 1784727165237
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784725487431,
    "super": 1784726886133,
-   "premier": 1784723557632,
+   "premier": 1784727523924,
    "copa": 1784724185134
   },
   "dias": {
@@ -518,7 +489,7 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -14.8
+   "2026-07-22": -14
   },
   "_gatilhoAtual": {
    "tipo": "odd",
