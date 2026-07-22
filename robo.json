@@ -332,21 +332,27 @@
    "2026-07-22": -10.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRR",
-   "n": 10,
+   "tipo": "time",
+   "chave": "Sérvia",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -21.8,
-  "ciclos": 224,
-  "greens": 162,
+  "saldo": -20.6,
+  "ciclos": 225,
+  "greens": 163,
   "redsCiclo": 27,
   "aborts": 0,
   "descartes": 35,
   "historico": [
+   {
+    "quando": "2026-07-22T06:25:45.254Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Sérvia x Geórgia @2.2 (tiro 1) · gatilho: time Sérvia"
+   },
    {
     "quando": "2026-07-22T06:20:44.530Z",
     "resultado": "GREEN",
@@ -460,52 +466,17 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · República Tcheca x Países Baixos @2 (tiro 2) · gatilho: placar empate 1-1"
-   },
-   {
-    "quando": "2026-07-21T16:58:01.351Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "super · Itaquera x Buenos Aires @1.87 (tiro 1) · gatilho: odd 1.83"
    }
   ],
   "consumidas": {
    "copa": 1784697983642,
    "super": 1784699704941,
-   "premier": 1784701244242
+   "premier": 1784701244242,
+   "euro": 1784701545036
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "07:23",
-     "jogo": "Sérvia x Geórgia",
-     "odd": 2.2
-    },
-    {
-     "h": "07:26",
-     "jogo": "Alemanha x Albânia",
-     "odd": 2.2
-    },
-    {
-     "h": "07:29",
-     "jogo": "Hungria x República Tcheca",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Sérvia",
-   "alvo": {
-    "h": "07:23",
-    "jogo": "Sérvia x Geórgia",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1784701245236
-   },
-   "iniciadoEm": 1784701245236
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784697209029,
+   "euro": 1784701545036,
    "super": 1784699704941,
    "premier": 1784701244242,
    "copa": 1784697983642
@@ -517,7 +488,7 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -3.5
+   "2026-07-22": -2.3
   },
   "_gatilhoAtual": {
    "tipo": "time",
