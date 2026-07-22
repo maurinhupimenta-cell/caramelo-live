@@ -475,8 +475,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "08:24",
@@ -496,13 +496,21 @@
    ],
    "gatilho": "time Newcastle",
    "alvo": {
-    "h": "08:24",
-    "jogo": "Newcastle x Chelsea",
-    "odd": 1.85,
-    "unidades": 1,
-    "desde": 1784704844436
+    "h": "08:27",
+    "jogo": "Burnley x Palace",
+    "odd": 1.87,
+    "unidades": 2,
+    "desde": 1784705201537
    },
-   "iniciadoEm": 1784704844436
+   "iniciadoEm": 1784704844436,
+   "tiros": [
+    {
+     "h": "08:24",
+     "jogo": "Newcastle x Chelsea",
+     "odd": 1.85,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784701545036,
@@ -520,10 +528,10 @@
    "2026-07-22": -0.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.87",
-   "n": 14,
-   "start": 1
+   "tipo": "time",
+   "chave": "Países Baixos",
+   "n": 11,
+   "start": 2
   },
   "_obs": {}
  }
