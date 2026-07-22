@@ -286,8 +286,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "07:13",
@@ -307,13 +307,21 @@
    ],
    "gatilho": "seq RGRR",
    "alvo": {
-    "h": "07:13",
-    "jogo": "La Plata x Porto Alegre",
-    "odd": 3,
-    "unidades": 1,
-    "desde": 1784700783933
+    "h": "07:16",
+    "jogo": "Bogota x Quito",
+    "odd": 2.55,
+    "unidades": 2,
+    "desde": 1784700965130
    },
-   "iniciadoEm": 1784700783933
+   "iniciadoEm": 1784700783933,
+   "tiros": [
+    {
+     "h": "07:13",
+     "jogo": "La Plata x Porto Alegre",
+     "odd": 3,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784696623631,
@@ -332,9 +340,9 @@
    "2026-07-22": -3.6
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 13,
+   "tipo": "time",
+   "chave": "Porto Alegre",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
@@ -520,9 +528,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Southampton",
-   "n": 11,
-   "start": 1
+   "chave": "Sérvia",
+   "n": 8,
+   "start": 2
   },
   "_obs": {}
  }
