@@ -445,7 +445,37 @@
    "euro": 1784697209029,
    "copa": 1784697983642
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:52",
+     "jogo": "Buenos Aires x Avellaneda",
+     "odd": 1.9
+    },
+    {
+     "h": "06:55",
+     "jogo": "La Plata x Lima",
+     "odd": 2.15
+    },
+    {
+     "h": "06:58",
+     "jogo": "Avellaneda x Porto Alegre",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time La Plata",
+   "alvo": {
+    "h": "06:52",
+    "jogo": "Buenos Aires x Avellaneda",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1784699005433
+   },
+   "iniciadoEm": 1784699005433
+  },
   "cooldown": {
    "euro": 1784697209029,
    "super": 1784657531256,
@@ -463,9 +493,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Costa do Marfim",
-   "n": 8,
-   "start": 1
+   "chave": "La Plata",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  }
