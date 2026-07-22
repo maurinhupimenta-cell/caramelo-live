@@ -152,13 +152,19 @@
   }
  },
  "o25": {
-  "saldo": -42.2,
-  "ciclos": 215,
+  "saldo": -49.2,
+  "ciclos": 216,
   "greens": 150,
-  "redsCiclo": 39,
+  "redsCiclo": 40,
   "aborts": 0,
   "descartes": 26,
   "historico": [
+   {
+    "quando": "2026-07-22T06:22:06.329Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: seq RGRR"
+   },
    {
     "quando": "2026-07-22T05:29:54.430Z",
     "resultado": "RED_CICLO",
@@ -272,67 +278,48 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "super · Agua Branca x Montevideo @2.07 (tiro 1) · gatilho: placar acima de 1-0 (2-1)"
-   },
-   {
-    "quando": "2026-07-21T15:29:54.254Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "premier · City x Liverpool @2.1 (tiro 2) · gatilho: placar acima de 1-0 (2-1)"
    }
   ],
   "consumidas": {
-   "premier": 1784698194133
+   "premier": 1784698194133,
+   "super": 1784701326040
   },
   "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "07:13",
-     "jogo": "La Plata x Porto Alegre",
-     "odd": 3
+     "h": "07:28",
+     "jogo": "Canadá x Arábia Saudita",
+     "odd": 2.25
     },
     {
-     "h": "07:16",
-     "jogo": "Bogota x Quito",
-     "odd": 2.55
+     "h": "07:31",
+     "jogo": "Escócia x Alemanha",
+     "odd": 2.4
     },
     {
-     "h": "07:19",
-     "jogo": "La Plata x Medellin",
-     "odd": 2.7
+     "h": "07:34",
+     "jogo": "Nova Zelândia x Egito",
+     "odd": 2.1
     }
    ],
-   "gatilho": "seq RGRR",
+   "gatilho": "odd 2.4",
    "alvo": {
-    "h": "07:19",
-    "jogo": "La Plata x Medellin",
-    "odd": 2.7,
-    "unidades": 4,
-    "desde": 1784701267132
+    "h": "07:28",
+    "jogo": "Canadá x Arábia Saudita",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1784701327234
    },
-   "iniciadoEm": 1784700783933,
-   "tiros": [
-    {
-     "h": "07:13",
-     "jogo": "La Plata x Porto Alegre",
-     "odd": 3,
-     "unidades": 1
-    },
-    {
-     "h": "07:16",
-     "jogo": "Bogota x Quito",
-     "odd": 2.55,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1784701327234
   },
   "cooldown": {
    "copa": 1784696623631,
    "premier": 1784698194133,
    "euro": 1784697437934,
-   "super": 1784697180538
+   "super": 1784701326040
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -342,7 +329,7 @@
    "2026-07-19": -12,
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
-   "2026-07-22": -3.6
+   "2026-07-22": -10.6
   },
   "_gatilhoAtual": {
    "tipo": "seq",
