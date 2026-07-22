@@ -329,26 +329,27 @@
    "2026-07-22": 0
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.4",
-   "n": 18,
+   "tipo": "seq",
+   "chave": "GRGR",
+   "n": 9,
    "start": 1
   },
-  "_obs": {
-   "euro": {
-    "desde": 1784696348229,
-    "gatilho": "seq GRGR"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -18.3,
-  "ciclos": 217,
+  "ciclos": 218,
   "greens": 158,
   "redsCiclo": 26,
   "aborts": 0,
-  "descartes": 33,
+  "descartes": 34,
   "historico": [
+   {
+    "quando": "2026-07-22T04:59:24.537Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho time Eslovênia) — liga REARMADA"
+   },
    {
     "quando": "2026-07-22T00:53:53.932Z",
     "resultado": "GREEN_OBS",
@@ -462,12 +463,6 @@
     "resultado": "GREEN",
     "unidades": 0.3,
     "detalhe": "copa · RD Congo x Costa do Marfim @1.83 (tiro 3) · gatilho: placar acima de 1-0 (2-1)"
-   },
-   {
-    "quando": "2026-07-21T14:50:48.651Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "premier · Chelsea x Aston @2.07 (tiro 3) · gatilho: seq RGGRR"
    }
   ],
   "consumidas": {},
@@ -514,7 +509,8 @@
    "2026-07-17": 2.1,
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
-   "2026-07-21": -3.2
+   "2026-07-21": -3.2,
+   "2026-07-22": 0
   },
   "_gatilhoAtual": {
    "tipo": "time",
@@ -522,6 +518,11 @@
    "n": 12,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1784696364537,
+    "gatilho": "time Eslovênia"
+   }
+  }
  }
 }
