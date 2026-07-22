@@ -443,8 +443,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "19:38",
@@ -464,13 +464,21 @@
    ],
    "gatilho": "odd 2.3",
    "alvo": {
-    "h": "19:38",
-    "jogo": "República Tcheca x França",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1784745053531
+    "h": "19:41",
+    "jogo": "Albânia x Geórgia",
+    "odd": 2.3,
+    "unidades": 2,
+    "desde": 1784745807630
    },
-   "iniciadoEm": 1784745053531
+   "iniciadoEm": 1784745053531,
+   "tiros": [
+    {
+     "h": "19:38",
+     "jogo": "República Tcheca x França",
+     "odd": 2.02,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784737707135,
@@ -489,9 +497,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.3",
-   "n": 8,
-   "start": 3
+   "chave": "2.07",
+   "n": 16,
+   "start": 1
   },
   "_obs": {}
  }
