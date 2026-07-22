@@ -153,13 +153,19 @@
   }
  },
  "o25": {
-  "saldo": -44.8,
-  "ciclos": 238,
-  "greens": 166,
+  "saldo": -43.6,
+  "ciclos": 239,
+  "greens": 167,
   "redsCiclo": 43,
   "aborts": 0,
   "descartes": 29,
   "historico": [
+   {
+    "quando": "2026-07-22T14:53:25.629Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Espanha x Itália @2.15 (tiro 1) · gatilho: coluna :53"
+   },
    {
     "quando": "2026-07-22T14:19:13.827Z",
     "resultado": "GREEN",
@@ -273,54 +279,19 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "premier · Newcastle x Watford @2.15 (tiro 1) · gatilho: odd 2.4"
-   },
-   {
-    "quando": "2026-07-22T06:41:53.636Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho odd 2.4) — liga REARMADA"
    }
   ],
   "consumidas": {
    "premier": 1784728429230,
    "copa": 1784729572336,
-   "super": 1784729953630
+   "super": 1784729953630,
+   "euro": 1784732005523
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:50",
-     "jogo": "Espanha x Itália",
-     "odd": 2.15
-    },
-    {
-     "h": "15:53",
-     "jogo": "Sérvia x República Tcheca",
-     "odd": 2.8
-    },
-    {
-     "h": "15:56",
-     "jogo": "Itália x Croácia",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "coluna :53",
-   "alvo": {
-    "h": "15:50",
-    "jogo": "Espanha x Itália",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1784731589532
-   },
-   "iniciadoEm": 1784731589532
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784729572336,
    "premier": 1784728429230,
-   "euro": 1784726179023,
+   "euro": 1784732005523,
    "super": 1784729953630
   },
   "dias": {
@@ -331,7 +302,7 @@
    "2026-07-19": -12,
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
-   "2026-07-22": -6.2
+   "2026-07-22": -5
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
@@ -524,7 +495,7 @@
    "tipo": "coluna",
    "chave": ":59",
    "n": 15,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
