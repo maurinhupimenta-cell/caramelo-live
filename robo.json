@@ -285,7 +285,37 @@
    "copa": 1784701904334,
    "euro": 1784702105533
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:51",
+     "jogo": "Newcastle x Watford",
+     "odd": 2.15
+    },
+    {
+     "h": "07:54",
+     "jogo": "Burnley x Leeds",
+     "odd": 2.4
+    },
+    {
+     "h": "07:57",
+     "jogo": "City x Palace",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "odd 2.4",
+   "alvo": {
+    "h": "07:51",
+    "jogo": "Newcastle x Watford",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1784702523833
+   },
+   "iniciadoEm": 1784702523833
+  },
   "cooldown": {
    "copa": 1784701904334,
    "premier": 1784698194133,
@@ -303,17 +333,12 @@
    "2026-07-22": -7.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Eslovênia",
-   "n": 12,
-   "start": 2
+   "tipo": "odd",
+   "chave": "2.4",
+   "n": 8,
+   "start": 3
   },
-  "_obs": {
-   "premier": {
-    "desde": 1784702513636,
-    "gatilho": "odd 2.4"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -19.6,
