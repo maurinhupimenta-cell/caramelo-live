@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -70.1,
-  "ciclos": 283,
-  "greens": 187,
+  "saldo": -68.6,
+  "ciclos": 284,
+  "greens": 188,
   "redsCiclo": 51,
   "aborts": 0,
   "descartes": 45,
   "historico": [
+   {
+    "quando": "2026-07-23T22:48:58.898Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "copa · Brasil x Suécia @2.5 (tiro 1) · gatilho: seq GRGRR"
+   },
    {
     "quando": "2026-07-23T22:39:59.594Z",
     "resultado": "GREEN_OBS",
@@ -283,48 +289,14 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho coluna :46) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-23T16:29:32.603Z",
-    "resultado": "GREEN",
-    "unidades": 1.6,
-    "detalhe": "euro · Suíça x Croácia @2.15 (tiro 3) · gatilho: coluna :20"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:43",
-     "jogo": "Brasil x Suécia",
-     "odd": 2.5
-    },
-    {
-     "h": "23:46",
-     "jogo": "Turquia x Irã",
-     "odd": 2.6
-    },
-    {
-     "h": "23:49",
-     "jogo": "Qatar x Tunísia",
-     "odd": 2.55
-    }
-   ],
-   "gatilho": "seq GRGRR",
-   "alvo": {
-    "h": "23:43",
-    "jogo": "Brasil x Suécia",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1784846401093
-   },
-   "iniciadoEm": 1784846401093
+  "consumidas": {
+   "copa": 1784846938792
   },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784841418393,
+   "copa": 1784846938792,
    "premier": 1784843252494,
    "euro": 1784842718896,
    "super": 1784838719396
@@ -338,7 +310,7 @@
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
-   "2026-07-23": -10.9
+   "2026-07-23": -9.4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
