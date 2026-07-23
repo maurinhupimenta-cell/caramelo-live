@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -73.2,
-  "ciclos": 280,
-  "greens": 185,
+  "saldo": -71.4,
+  "ciclos": 281,
+  "greens": 186,
   "redsCiclo": 51,
   "aborts": 0,
   "descartes": 44,
   "historico": [
+   {
+    "quando": "2026-07-23T21:38:39.000Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "euro · Áustria x Dinamarca @2.4 (tiro 2) · gatilho: seq RRGGG"
+   },
    {
     "quando": "2026-07-23T21:16:58.497Z",
     "resultado": "RED_CICLO",
@@ -283,60 +289,17 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros) · gatilho: coluna :28"
-   },
-   {
-    "quando": "2026-07-23T15:24:57.699Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "copa · Costa do Marfim x Gana @2.25 (tiro 2) · gatilho: time Costa do Marfim"
    }
   ],
   "consumidas": {
-   "copa": 1784841418393
+   "copa": 1784841418393,
+   "euro": 1784842718896
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "22:32",
-     "jogo": "Albânia x Sérvia",
-     "odd": 2.87
-    },
-    {
-     "h": "22:35",
-     "jogo": "Áustria x Dinamarca",
-     "odd": 2.4
-    },
-    {
-     "h": "22:38",
-     "jogo": "Hungria x Turquia",
-     "odd": 2.6
-    }
-   ],
-   "gatilho": "seq RRGGG",
-   "alvo": {
-    "h": "22:35",
-    "jogo": "Áustria x Dinamarca",
-    "odd": 2.4,
-    "unidades": 2,
-    "desde": 1784842680094
-   },
-   "iniciadoEm": 1784842198001,
-   "tiros": [
-    {
-     "h": "22:32",
-     "jogo": "Albânia x Sérvia",
-     "odd": 2.87,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784841418393,
    "premier": 1784829267600,
-   "euro": 1784834520103,
+   "euro": 1784842718896,
    "super": 1784838719396
   },
   "dias": {
@@ -348,7 +311,7 @@
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
-   "2026-07-23": -14
+   "2026-07-23": -12.2
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -538,9 +501,9 @@
    "2026-07-23": -11.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":44",
-   "n": 22,
+   "tipo": "odd",
+   "chave": "1.86",
+   "n": 9,
    "start": 3
   },
   "_obs": {}
