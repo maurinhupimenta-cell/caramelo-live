@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -66.2,
-  "ciclos": 279,
+  "saldo": -73.2,
+  "ciclos": 280,
   "greens": 185,
-  "redsCiclo": 50,
+  "redsCiclo": 51,
   "aborts": 0,
   "descartes": 44,
   "historico": [
+   {
+    "quando": "2026-07-23T21:16:58.497Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time França"
+   },
    {
     "quando": "2026-07-23T21:05:58.592Z",
     "resultado": "GREEN_OBS",
@@ -283,64 +289,15 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "copa · Costa do Marfim x Gana @2.25 (tiro 2) · gatilho: time Costa do Marfim"
-   },
-   {
-    "quando": "2026-07-23T15:12:42.299Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "euro · Geórgia x Alemanha @2.25 (tiro 2) · gatilho: odd 2.45"
    }
   ],
   "consumidas": {
-   "super": 1784838719396
+   "super": 1784838719396,
+   "copa": 1784841418393
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "22:07",
-     "jogo": "Jordânia x Croácia",
-     "odd": 2.3
-    },
-    {
-     "h": "22:10",
-     "jogo": "Espanha x França",
-     "odd": 2.15
-    },
-    {
-     "h": "22:13",
-     "jogo": "Inglaterra x África do Sul",
-     "odd": 2.45
-    }
-   ],
-   "gatilho": "time França",
-   "alvo": {
-    "h": "22:13",
-    "jogo": "Inglaterra x África do Sul",
-    "odd": 2.45,
-    "unidades": 4,
-    "desde": 1784841180400
-   },
-   "iniciadoEm": 1784840759396,
-   "tiros": [
-    {
-     "h": "22:07",
-     "jogo": "Jordânia x Croácia",
-     "odd": 2.3,
-     "unidades": 1
-    },
-    {
-     "h": "22:10",
-     "jogo": "Espanha x França",
-     "odd": 2.15,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784836200603,
+   "copa": 1784841418393,
    "premier": 1784829267600,
    "euro": 1784834520103,
    "super": 1784838719396
@@ -354,7 +311,7 @@
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
-   "2026-07-23": -7
+   "2026-07-23": -14
   },
   "_gatilhoAtual": {
    "tipo": "seq",
