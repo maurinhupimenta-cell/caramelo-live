@@ -164,12 +164,18 @@
  },
  "o25": {
   "saldo": -66.2,
-  "ciclos": 276,
+  "ciclos": 277,
   "greens": 185,
   "redsCiclo": 50,
   "aborts": 0,
-  "descartes": 41,
+  "descartes": 42,
   "historico": [
+   {
+    "quando": "2026-07-23T21:00:57.892Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho seq GGRGG) — liga REARMADA"
+   },
    {
     "quando": "2026-07-23T20:31:59.596Z",
     "resultado": "GREEN",
@@ -283,19 +289,42 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho odd 2.45) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-23T01:47:48.724Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar acima de 1-0 (2-0)"
    }
   ],
   "consumidas": {
-   "copa": 1784836200603,
    "super": 1784838719396
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:04",
+     "jogo": "Cabo Verde x Áustria",
+     "odd": 2.2
+    },
+    {
+     "h": "21:49",
+     "jogo": "Equador x Jordânia",
+     "odd": 2.15
+    },
+    {
+     "h": "21:52",
+     "jogo": "Canadá x Austrália",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "odd 2.15",
+   "alvo": {
+    "h": "22:04",
+    "jogo": "Cabo Verde x Áustria",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1784839801405
+   },
+   "iniciadoEm": 1784839801405
+  },
   "cooldown": {
    "copa": 1784836200603,
    "premier": 1784829267600,
@@ -314,12 +343,17 @@
    "2026-07-23": -7
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 13,
-   "start": 1
+   "tipo": "time",
+   "chave": "França",
+   "n": 15,
+   "start": 2
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1784840457892,
+    "gatilho": "seq GGRGG"
+   }
+  }
  },
  "ambas": {
   "saldo": -70.6,
