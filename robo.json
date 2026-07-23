@@ -322,13 +322,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -67.7,
-  "ciclos": 291,
-  "greens": 199,
+  "saldo": -66.9,
+  "ciclos": 292,
+  "greens": 200,
   "redsCiclo": 39,
   "aborts": 0,
   "descartes": 53,
   "historico": [
+   {
+    "quando": "2026-07-23T18:37:59.098Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "super · Lima x Asuncion @1.9 (tiro 2) · gatilho: seq GRRGG"
+   },
    {
     "quando": "2026-07-23T18:29:02.097Z",
     "resultado": "GREEN_OBS",
@@ -442,59 +448,16 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "premier · Burnley x United @1.9 (tiro 1) · gatilho: seq GGGGR"
-   },
-   {
-    "quando": "2026-07-22T20:44:43.228Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho seq GGGGR) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "euro": 1784828896206
+   "euro": 1784828896206,
+   "super": 1784831878906
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "19:31",
-     "jogo": "Medellin x La Plata",
-     "odd": 2.2
-    },
-    {
-     "h": "19:34",
-     "jogo": "Lima x Asuncion",
-     "odd": 1.9
-    },
-    {
-     "h": "19:37",
-     "jogo": "Porto Alegre x Santiago",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "seq GRRGG",
-   "alvo": {
-    "h": "19:34",
-    "jogo": "Lima x Asuncion",
-    "odd": 1.9,
-    "unidades": 2,
-    "desde": 1784831645201
-   },
-   "iniciadoEm": 1784831343400,
-   "tiros": [
-    {
-     "h": "19:31",
-     "jogo": "Medellin x La Plata",
-     "odd": 2.2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784828896206,
-   "super": 1784825527493,
+   "super": 1784831878906,
    "premier": 1784828151404,
    "copa": 1784824619697
   },
@@ -506,12 +469,12 @@
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
-   "2026-07-23": -9.5
+   "2026-07-23": -8.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGGG",
-   "n": 13,
+   "tipo": "odd",
+   "chave": "1.9",
+   "n": 18,
    "start": 1
   },
   "_obs": {}
