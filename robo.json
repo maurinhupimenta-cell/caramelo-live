@@ -321,13 +321,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -67.2,
-  "ciclos": 305,
-  "greens": 206,
+  "saldo": -66.1,
+  "ciclos": 306,
+  "greens": 207,
   "redsCiclo": 40,
   "aborts": 0,
   "descartes": 59,
   "historico": [
+   {
+    "quando": "2026-07-23T23:08:35.192Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Liverpool x Southampton @2.05 (tiro 2) · gatilho: odd 1.98"
+   },
    {
     "quando": "2026-07-23T22:46:11.693Z",
     "resultado": "GREEN",
@@ -441,60 +447,17 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros) · gatilho: coluna :46"
-   },
-   {
-    "quando": "2026-07-23T16:36:59.896Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "copa · Curação x Tunísia @2.05 (tiro 2) · gatilho: odd 2.05"
    }
   ],
   "consumidas": {
-   "euro": 1784846771497
+   "euro": 1784846771497,
+   "premier": 1784848115000
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "00:03",
-     "jogo": "Brentford x Islington",
-     "odd": 1.98
-    },
-    {
-     "h": "00:06",
-     "jogo": "Liverpool x Southampton",
-     "odd": 2.05
-    },
-    {
-     "h": "00:09",
-     "jogo": "Wolverhampton x Leicester",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "odd 1.98",
-   "alvo": {
-    "h": "00:06",
-    "jogo": "Liverpool x Southampton",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1784847995992
-   },
-   "iniciadoEm": 1784847219393,
-   "tiros": [
-    {
-     "h": "00:03",
-     "jogo": "Brentford x Islington",
-     "odd": 1.98,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784846771497,
    "super": 1784835798195,
-   "premier": 1784842174499,
+   "premier": 1784848115000,
    "copa": 1784824619697
   },
   "dias": {
@@ -505,7 +468,7 @@
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
-   "2026-07-23": -9
+   "2026-07-23": -7.9
   },
   "_gatilhoAtual": {
    "tipo": "odd",
