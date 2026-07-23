@@ -297,8 +297,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:20",
@@ -318,13 +318,21 @@
    ],
    "gatilho": "coluna :20",
    "alvo": {
-    "h": "17:20",
-    "jogo": "Polônia x Albânia",
-    "odd": 2.87,
-    "unidades": 1,
-    "desde": 1784823647595
+    "h": "17:23",
+    "jogo": "Portugal x Escócia",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1784823938800
    },
-   "iniciadoEm": 1784823647595
+   "iniciadoEm": 1784823647595,
+   "tiros": [
+    {
+     "h": "17:20",
+     "jogo": "Polônia x Albânia",
+     "odd": 2.87,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784820297592,
@@ -344,9 +352,9 @@
    "2026-07-23": -11
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":20",
-   "n": 17,
+   "tipo": "time",
+   "chave": "Argentina",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
