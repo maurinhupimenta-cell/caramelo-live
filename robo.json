@@ -324,12 +324,18 @@
  },
  "ambas": {
   "saldo": -72.5,
-  "ciclos": 297,
+  "ciclos": 298,
   "greens": 201,
   "redsCiclo": 40,
   "aborts": 0,
-  "descartes": 56,
+  "descartes": 57,
   "historico": [
+   {
+    "quando": "2026-07-23T20:03:59.103Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-23T19:51:53.195Z",
     "resultado": "GREEN_OBS",
@@ -443,12 +449,6 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho odd 2) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-23T02:03:48.522Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
@@ -502,16 +502,11 @@
    "2026-07-23": -14.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":03",
-   "n": 21,
+   "tipo": "seq",
+   "chave": "GRRGG",
+   "n": 10,
    "start": 1
   },
-  "_obs": {
-   "euro": {
-    "desde": 1784835225594,
-    "gatilho": "coluna :44"
-   }
-  }
+  "_obs": {}
  }
 }
