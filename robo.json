@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -68.9,
-  "ciclos": 274,
-  "greens": 183,
+  "saldo": -67.4,
+  "ciclos": 275,
+  "greens": 184,
   "redsCiclo": 50,
   "aborts": 0,
   "descartes": 41,
   "historico": [
+   {
+    "quando": "2026-07-23T19:50:00.796Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "copa · México x Escócia @2.5 (tiro 1) · gatilho: time Costa do Marfim"
+   },
    {
     "quando": "2026-07-23T19:23:18.897Z",
     "resultado": "GREEN",
@@ -283,51 +289,16 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-23T00:48:47.132Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho placar acima de 1-0 (2-0)) — liga REARMADA"
    }
   ],
   "consumidas": {
    "euro": 1784834520103,
-   "super": 1784834598703
+   "super": 1784834598703,
+   "copa": 1784836200603
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:46",
-     "jogo": "México x Escócia",
-     "odd": 2.5
-    },
-    {
-     "h": "20:49",
-     "jogo": "Nova Zelândia x Costa do Marfim",
-     "odd": 2.1
-    },
-    {
-     "h": "20:52",
-     "jogo": "RD Congo x Colômbia",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "time Costa do Marfim",
-   "alvo": {
-    "h": "20:46",
-    "jogo": "México x Escócia",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1784835455900
-   },
-   "iniciadoEm": 1784835455900
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784830800798,
+   "copa": 1784836200603,
    "premier": 1784829267600,
    "euro": 1784834520103,
    "super": 1784834598703
@@ -341,12 +312,12 @@
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
-   "2026-07-23": -9.7
+   "2026-07-23": -8.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRR",
-   "n": 31,
+   "tipo": "time",
+   "chave": "Costa do Marfim",
+   "n": 21,
    "start": 1
   },
   "_obs": {}
