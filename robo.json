@@ -346,23 +346,24 @@
    "tipo": "time",
    "chave": "França",
    "n": 15,
-   "start": 2
+   "start": 1
   },
-  "_obs": {
-   "premier": {
-    "desde": 1784840457892,
-    "gatilho": "seq GGRGG"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -70.6,
-  "ciclos": 301,
+  "ciclos": 302,
   "greens": 203,
   "redsCiclo": 40,
   "aborts": 0,
-  "descartes": 58,
+  "descartes": 59,
   "historico": [
+   {
+    "quando": "2026-07-23T21:05:00.305Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-23T20:24:06.694Z",
     "resultado": "GREEN",
@@ -476,12 +477,6 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-23T15:50:05.591Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: coluna :44"
    }
   ],
   "consumidas": {
