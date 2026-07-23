@@ -296,7 +296,37 @@
    "copa": 1784820297592,
    "super": 1784820870398
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:12",
+     "jogo": "Leeds x Southampton",
+     "odd": 2.62
+    },
+    {
+     "h": "17:15",
+     "jogo": "Chelsea x Aston",
+     "odd": 2.35
+    },
+    {
+     "h": "17:18",
+     "jogo": "Tottenham x West Ham",
+     "odd": 2.8
+    }
+   ],
+   "gatilho": "odd 2.35",
+   "alvo": {
+    "h": "17:12",
+    "jogo": "Leeds x Southampton",
+    "odd": 2.62,
+    "unidades": 1,
+    "desde": 1784822579102
+   },
+   "iniciadoEm": 1784822579102
+  },
   "cooldown": {
    "copa": 1784820297592,
    "premier": 1784753905522,
@@ -315,9 +345,9 @@
    "2026-07-23": -4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":46",
-   "n": 16,
+   "tipo": "odd",
+   "chave": "2.35",
+   "n": 10,
    "start": 3
   },
   "_obs": {}
