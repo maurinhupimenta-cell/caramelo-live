@@ -321,13 +321,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -71.6,
-  "ciclos": 300,
-  "greens": 202,
+  "saldo": -70.6,
+  "ciclos": 301,
+  "greens": 203,
   "redsCiclo": 40,
   "aborts": 0,
   "descartes": 58,
   "historico": [
+   {
+    "quando": "2026-07-23T20:24:06.694Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Islington x Watford @2.05 (tiro 1) · gatilho: seq GGGRR"
+   },
    {
     "quando": "2026-07-23T20:18:23.206Z",
     "resultado": "GREEN_OBS",
@@ -441,53 +447,18 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: coluna :44"
-   },
-   {
-    "quando": "2026-07-23T15:16:08.393Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Palace x Tottenham @2.05 (tiro 1) · gatilho: odd 1.9"
    }
   ],
   "consumidas": {
    "super": 1784835798195,
-   "euro": 1784837397900
+   "euro": 1784837397900,
+   "premier": 1784838246498
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:21",
-     "jogo": "Islington x Watford",
-     "odd": 2.05
-    },
-    {
-     "h": "21:24",
-     "jogo": "Burnley x Aston",
-     "odd": 1.95
-    },
-    {
-     "h": "21:27",
-     "jogo": "Everton x West Ham",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "seq GGGRR",
-   "alvo": {
-    "h": "21:21",
-    "jogo": "Islington x Watford",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1784837937998
-   },
-   "iniciadoEm": 1784837937998
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784837397900,
    "super": 1784835798195,
-   "premier": 1784832461699,
+   "premier": 1784838246498,
    "copa": 1784824619697
   },
   "dias": {
@@ -498,13 +469,13 @@
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
-   "2026-07-23": -13.4
+   "2026-07-23": -12.4
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":30",
    "n": 21,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
