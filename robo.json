@@ -481,10 +481,39 @@
    }
   ],
   "consumidas": {
-   "super": 1784831878906,
    "premier": 1784832461699
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:40",
+     "jogo": "Porto Alegre x Penarol",
+     "odd": 2.35
+    },
+    {
+     "h": "20:43",
+     "jogo": "Sao Paulo x Medellin",
+     "odd": 1.95
+    },
+    {
+     "h": "20:46",
+     "jogo": "Bogota x Avellaneda",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "seq GRRGG",
+   "alvo": {
+    "h": "20:40",
+    "jogo": "Porto Alegre x Penarol",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1784835480094
+   },
+   "iniciadoEm": 1784835480094
+  },
   "cooldown": {
    "euro": 1784828896206,
    "super": 1784831878906,
@@ -503,7 +532,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGGGR",
+   "chave": "GRRGG",
    "n": 10,
    "start": 1
   },
