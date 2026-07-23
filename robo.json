@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -56.2,
-  "ciclos": 261,
+  "saldo": -63.2,
+  "ciclos": 262,
   "greens": 177,
-  "redsCiclo": 47,
+  "redsCiclo": 48,
   "aborts": 0,
   "descartes": 37,
   "historico": [
+   {
+    "quando": "2026-07-23T15:34:30.598Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: coluna :28"
+   },
    {
     "quando": "2026-07-23T15:24:57.699Z",
     "resultado": "GREEN",
@@ -283,68 +289,19 @@
     "resultado": "GREEN",
     "unidades": 1.9,
     "detalhe": "copa · Cabo Verde x Escócia @2.45 (tiro 2) · gatilho: time Cabo Verde"
-   },
-   {
-    "quando": "2026-07-22T15:18:26.434Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho time Cabo Verde) — liga REARMADA"
    }
   ],
   "consumidas": {
    "euro": 1784819562101,
-   "copa": 1784820297592
+   "copa": 1784820297592,
+   "super": 1784820870398
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "16:25",
-     "jogo": "Rio de Janeiro x Santos",
-     "odd": 2.35
-    },
-    {
-     "h": "16:28",
-     "jogo": "Belo Horizonte x Sao Paulo",
-     "odd": 1.98
-    },
-    {
-     "h": "16:31",
-     "jogo": "Porto Alegre x Quito",
-     "odd": 2.62
-    }
-   ],
-   "gatilho": "coluna :28",
-   "alvo": {
-    "h": "16:31",
-    "jogo": "Porto Alegre x Quito",
-    "odd": 2.62,
-    "unidades": 4,
-    "desde": 1784820661296
-   },
-   "iniciadoEm": 1784820299100,
-   "tiros": [
-    {
-     "h": "16:25",
-     "jogo": "Rio de Janeiro x Santos",
-     "odd": 2.35,
-     "unidades": 1
-    },
-    {
-     "h": "16:28",
-     "jogo": "Belo Horizonte x Sao Paulo",
-     "odd": 1.98,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784820297592,
    "premier": 1784753905522,
    "euro": 1784819562101,
-   "super": 1784737229232
+   "super": 1784820870398
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -355,13 +312,13 @@
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
-   "2026-07-23": 3
+   "2026-07-23": -4
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":30",
+   "chave": ":46",
    "n": 16,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
