@@ -497,7 +497,37 @@
   "consumidas": {
    "premier": 1784819768198
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:41",
+     "jogo": "Alemanha x Romênia",
+     "odd": 1.9
+    },
+    {
+     "h": "16:44",
+     "jogo": "Escócia x Eslováquia",
+     "odd": 1.98
+    },
+    {
+     "h": "16:47",
+     "jogo": "França x Portugal",
+     "odd": 1.86
+    }
+   ],
+   "gatilho": "coluna :44",
+   "alvo": {
+    "h": "16:41",
+    "jogo": "Alemanha x Romênia",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1784820841027
+   },
+   "iniciadoEm": 1784820841027
+  },
   "cooldown": {
    "euro": 1784751266125,
    "super": 1784769747822,
@@ -515,10 +545,10 @@
    "2026-07-23": 1
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.02",
-   "n": 10,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":44",
+   "n": 16,
+   "start": 3
   },
   "_obs": {}
  }
