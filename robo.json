@@ -292,7 +292,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1784819562101,
    "copa": 1784820297592,
    "super": 1784820870398
   },
@@ -348,7 +347,7 @@
    "tipo": "odd",
    "chave": "2.35",
    "n": 10,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
@@ -485,37 +484,7 @@
    "premier": 1784819768198,
    "euro": 1784821805394
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:04",
-     "jogo": "Avellaneda x Penarol",
-     "odd": 2.1
-    },
-    {
-     "h": "16:49",
-     "jogo": "Montevideo x Buenos Aires",
-     "odd": 1.8
-    },
-    {
-     "h": "16:52",
-     "jogo": "Penarol x Agua Branca",
-     "odd": 2
-    }
-   ],
-   "gatilho": "seq RRGGG",
-   "alvo": {
-    "h": "17:04",
-    "jogo": "Avellaneda x Penarol",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1784821806501
-   },
-   "iniciadoEm": 1784821806501
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784821805394,
    "super": 1784769747822,
