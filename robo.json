@@ -164,12 +164,24 @@
  },
  "o25": {
   "saldo": -66.2,
-  "ciclos": 277,
+  "ciclos": 279,
   "greens": 185,
   "redsCiclo": 50,
   "aborts": 0,
-  "descartes": 42,
+  "descartes": 44,
   "historico": [
+   {
+    "quando": "2026-07-23T21:05:58.592Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time França) — liga REARMADA"
+   },
+   {
+    "quando": "2026-07-23T21:05:02.401Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-23T21:00:57.892Z",
     "resultado": "GREEN_OBS",
@@ -277,18 +289,6 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "euro · Geórgia x Alemanha @2.25 (tiro 2) · gatilho: odd 2.45"
-   },
-   {
-    "quando": "2026-07-23T15:10:18.917Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho time Costa do Marfim) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-23T15:03:15.408Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho odd 2.45) — liga REARMADA"
    }
   ],
   "consumidas": {
@@ -300,30 +300,30 @@
    "apostado": 0,
    "plano": [
     {
-     "h": "22:04",
-     "jogo": "Cabo Verde x Áustria",
-     "odd": 2.2
+     "h": "22:07",
+     "jogo": "Jordânia x Croácia",
+     "odd": 2.3
     },
     {
-     "h": "21:49",
-     "jogo": "Equador x Jordânia",
+     "h": "22:10",
+     "jogo": "Espanha x França",
      "odd": 2.15
     },
     {
-     "h": "21:52",
-     "jogo": "Canadá x Austrália",
-     "odd": 2.35
+     "h": "22:13",
+     "jogo": "Inglaterra x África do Sul",
+     "odd": 2.45
     }
    ],
-   "gatilho": "odd 2.15",
+   "gatilho": "time França",
    "alvo": {
-    "h": "22:04",
-    "jogo": "Cabo Verde x Áustria",
-    "odd": 2.2,
+    "h": "22:07",
+    "jogo": "Jordânia x Croácia",
+    "odd": 2.3,
     "unidades": 1,
-    "desde": 1784839801405
+    "desde": 1784840759396
    },
-   "iniciadoEm": 1784839801405
+   "iniciadoEm": 1784840759396
   },
   "cooldown": {
    "copa": 1784836200603,
@@ -483,37 +483,7 @@
    "euro": 1784837397900,
    "premier": 1784838246498
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:04",
-     "jogo": "Rio de Janeiro x La Plata",
-     "odd": 2.15
-    },
-    {
-     "h": "21:49",
-     "jogo": "Asuncion x La Plata",
-     "odd": 2.15
-    },
-    {
-     "h": "21:52",
-     "jogo": "Bogota x Sao Paulo",
-     "odd": 2
-    }
-   ],
-   "gatilho": "seq RRGGG",
-   "alvo": {
-    "h": "22:04",
-    "jogo": "Rio de Janeiro x La Plata",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1784839800102
-   },
-   "iniciadoEm": 1784839800102
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784837397900,
    "super": 1784835798195,
