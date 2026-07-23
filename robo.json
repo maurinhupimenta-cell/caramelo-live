@@ -292,7 +292,45 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "16:05",
+     "jogo": "Albânia x Suíça",
+     "odd": 2.45
+    },
+    {
+     "h": "16:08",
+     "jogo": "Geórgia x Alemanha",
+     "odd": 2.25
+    },
+    {
+     "h": "16:11",
+     "jogo": "República Tcheca x Sérvia",
+     "odd": 2.75
+    }
+   ],
+   "gatilho": "odd 2.45",
+   "alvo": {
+    "h": "16:08",
+    "jogo": "Geórgia x Alemanha",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1784819294793
+   },
+   "iniciadoEm": 1784818997899,
+   "tiros": [
+    {
+     "h": "16:05",
+     "jogo": "Albânia x Suíça",
+     "odd": 2.45,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1784755394627,
    "premier": 1784753905522,
@@ -311,17 +349,12 @@
    "2026-07-23": 0
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-0)",
-   "n": 10,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":17",
+   "n": 16,
+   "start": 2
   },
-  "_obs": {
-   "euro": {
-    "desde": 1784818995407,
-    "gatilho": "odd 2.45"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -58.2,
@@ -453,7 +486,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:12",
+     "jogo": "Palace x Tottenham",
+     "odd": 2.05
+    },
+    {
+     "h": "16:15",
+     "jogo": "Brentford x Everton",
+     "odd": 1.9
+    },
+    {
+     "h": "16:18",
+     "jogo": "Aston x United",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "odd 1.9",
+   "alvo": {
+    "h": "16:12",
+    "jogo": "Palace x Tottenham",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1784818995697
+   },
+   "iniciadoEm": 1784818995697
+  },
   "cooldown": {
    "euro": 1784751266125,
    "super": 1784769747822,
@@ -471,9 +534,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2",
-   "n": 8,
-   "start": 1
+   "chave": "1.9",
+   "n": 12,
+   "start": 2
   },
   "_obs": {}
  }
