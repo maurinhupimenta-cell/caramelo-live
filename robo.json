@@ -294,7 +294,37 @@
   "consumidas": {
    "premier": 1784843252494
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:43",
+     "jogo": "Brasil x Suécia",
+     "odd": 2.5
+    },
+    {
+     "h": "23:46",
+     "jogo": "Turquia x Irã",
+     "odd": 2.6
+    },
+    {
+     "h": "23:49",
+     "jogo": "Qatar x Tunísia",
+     "odd": 2.55
+    }
+   ],
+   "gatilho": "seq GRGRR",
+   "alvo": {
+    "h": "23:43",
+    "jogo": "Brasil x Suécia",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1784846401093
+   },
+   "iniciadoEm": 1784846401093
+  },
   "cooldown": {
    "copa": 1784841418393,
    "premier": 1784843252494,
@@ -314,16 +344,11 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GGRGG",
-   "n": 9,
+   "chave": "RGRRR",
+   "n": 26,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1784845317796,
-    "gatilho": "seq RGRRR"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -68.6,
@@ -454,9 +479,7 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho coluna :46) — liga REARMADA"
    }
   ],
-  "consumidas": {
-   "euro": 1784843039893
-  },
+  "consumidas": {},
   "ciclo": null,
   "cooldown": {
    "euro": 1784843039893,
