@@ -295,7 +295,37 @@
    "copa": 1784825254498,
    "super": 1784825346103
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:45",
+     "jogo": "Wolverhampton x Newcastle",
+     "odd": 1.98
+    },
+    {
+     "h": "18:48",
+     "jogo": "Brighton x Leicester",
+     "odd": 2.1
+    },
+    {
+     "h": "18:51",
+     "jogo": "Wolverhampton x Norwich",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "seq RGGRG",
+   "alvo": {
+    "h": "18:45",
+    "jogo": "Wolverhampton x Newcastle",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1784828697803
+   },
+   "iniciadoEm": 1784828697803
+  },
   "cooldown": {
    "copa": 1784825254498,
    "premier": 1784823645492,
@@ -314,17 +344,12 @@
    "2026-07-23": -6.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":46",
-   "n": 17,
+   "tipo": "seq",
+   "chave": "RGGRG",
+   "n": 11,
    "start": 1
   },
-  "_obs": {
-   "premier": {
-    "desde": 1784828691697,
-    "gatilho": "seq RGGRG"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -68.6,
