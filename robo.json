@@ -295,7 +295,37 @@
    "super": 1784838719396,
    "copa": 1784841418393
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:32",
+     "jogo": "Albânia x Sérvia",
+     "odd": 2.87
+    },
+    {
+     "h": "22:35",
+     "jogo": "Áustria x Dinamarca",
+     "odd": 2.4
+    },
+    {
+     "h": "22:38",
+     "jogo": "Hungria x Turquia",
+     "odd": 2.6
+    }
+   ],
+   "gatilho": "seq RRGGG",
+   "alvo": {
+    "h": "22:32",
+    "jogo": "Albânia x Sérvia",
+    "odd": 2.87,
+    "unidades": 1,
+    "desde": 1784842198001
+   },
+   "iniciadoEm": 1784842198001
+  },
   "cooldown": {
    "copa": 1784841418393,
    "premier": 1784829267600,
@@ -315,8 +345,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGRRR",
-   "n": 23,
+   "chave": "RRGGG",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
