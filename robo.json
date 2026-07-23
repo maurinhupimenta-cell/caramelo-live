@@ -324,12 +324,18 @@
  },
  "ambas": {
   "saldo": -71.6,
-  "ciclos": 299,
+  "ciclos": 300,
   "greens": 202,
   "redsCiclo": 40,
   "aborts": 0,
-  "descartes": 57,
+  "descartes": 58,
   "historico": [
+   {
+    "quando": "2026-07-23T20:18:23.206Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho seq GGGRR) — liga REARMADA"
+   },
    {
     "quando": "2026-07-23T20:09:58.093Z",
     "resultado": "GREEN",
@@ -443,12 +449,6 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · Palace x Tottenham @2.05 (tiro 1) · gatilho: odd 1.9"
-   },
-   {
-    "quando": "2026-07-23T02:29:10.026Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Liverpool x Norwich @2 (tiro 2) · gatilho: odd 2"
    }
   ],
   "consumidas": {
@@ -478,6 +478,11 @@
    "n": 10,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1784837903205,
+    "gatilho": "seq GGGRR"
+   }
+  }
  }
 }
