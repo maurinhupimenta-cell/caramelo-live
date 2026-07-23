@@ -322,13 +322,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -66.9,
-  "ciclos": 292,
+  "saldo": -73.9,
+  "ciclos": 293,
   "greens": 200,
-  "redsCiclo": 39,
+  "redsCiclo": 40,
   "aborts": 0,
   "descartes": 53,
   "historico": [
+   {
+    "quando": "2026-07-23T18:47:41.801Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: odd 1.9"
+   },
    {
     "quando": "2026-07-23T18:37:59.098Z",
     "resultado": "GREEN",
@@ -442,67 +448,18 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho odd 1.87) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-22T20:50:50.128Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "premier · Burnley x United @1.9 (tiro 1) · gatilho: seq GGGGR"
    }
   ],
   "consumidas": {
    "euro": 1784828896206,
-   "super": 1784831878906
+   "super": 1784831878906,
+   "premier": 1784832461699
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "19:39",
-     "jogo": "Brighton x Islington",
-     "odd": 1.85
-    },
-    {
-     "h": "19:42",
-     "jogo": "Norwich x Palace",
-     "odd": 1.9
-    },
-    {
-     "h": "19:45",
-     "jogo": "Southampton x Aston",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "odd 1.9",
-   "alvo": {
-    "h": "19:45",
-    "jogo": "Southampton x Aston",
-    "odd": 2.1,
-    "unidades": 4,
-    "desde": 1784832293703
-   },
-   "iniciadoEm": 1784831880504,
-   "tiros": [
-    {
-     "h": "19:39",
-     "jogo": "Brighton x Islington",
-     "odd": 1.85,
-     "unidades": 1
-    },
-    {
-     "h": "19:42",
-     "jogo": "Norwich x Palace",
-     "odd": 1.9,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784828896206,
    "super": 1784831878906,
-   "premier": 1784828151404,
+   "premier": 1784832461699,
    "copa": 1784824619697
   },
   "dias": {
@@ -513,12 +470,12 @@
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
-   "2026-07-23": -8.7
+   "2026-07-23": -15.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.9",
-   "n": 18,
+   "tipo": "coluna",
+   "chave": ":03",
+   "n": 20,
    "start": 1
   },
   "_obs": {}
