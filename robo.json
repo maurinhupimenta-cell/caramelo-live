@@ -296,8 +296,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "22:07",
@@ -317,13 +317,21 @@
    ],
    "gatilho": "time França",
    "alvo": {
-    "h": "22:07",
-    "jogo": "Jordânia x Croácia",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1784840759396
+    "h": "22:10",
+    "jogo": "Espanha x França",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1784840999104
    },
-   "iniciadoEm": 1784840759396
+   "iniciadoEm": 1784840759396,
+   "tiros": [
+    {
+     "h": "22:07",
+     "jogo": "Jordânia x Croácia",
+     "odd": 2.3,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784836200603,
@@ -343,9 +351,9 @@
    "2026-07-23": -7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "França",
-   "n": 15,
+   "tipo": "seq",
+   "chave": "RGRR",
+   "n": 33,
    "start": 1
   },
   "_obs": {}
@@ -480,7 +488,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1784837397900,
    "premier": 1784838246498
   },
   "ciclo": null,
