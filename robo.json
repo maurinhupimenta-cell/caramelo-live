@@ -295,7 +295,37 @@
    "euro": 1784834520103,
    "super": 1784834598703
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:46",
+     "jogo": "México x Escócia",
+     "odd": 2.5
+    },
+    {
+     "h": "20:49",
+     "jogo": "Nova Zelândia x Costa do Marfim",
+     "odd": 2.1
+    },
+    {
+     "h": "20:52",
+     "jogo": "RD Congo x Colômbia",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time Costa do Marfim",
+   "alvo": {
+    "h": "20:46",
+    "jogo": "México x Escócia",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1784835455900
+   },
+   "iniciadoEm": 1784835455900
+  },
   "cooldown": {
    "copa": 1784830800798,
    "premier": 1784829267600,
@@ -314,10 +344,10 @@
    "2026-07-23": -9.7
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 10,
-   "start": 1
+   "tipo": "time",
+   "chave": "Costa do Marfim",
+   "n": 21,
+   "start": 3
   },
   "_obs": {}
  },
@@ -477,6 +507,11 @@
    "n": 10,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1784835225594,
+    "gatilho": "coluna :44"
+   }
+  }
  }
 }
