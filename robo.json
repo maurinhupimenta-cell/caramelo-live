@@ -456,8 +456,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "18:30",
@@ -477,13 +477,21 @@
    ],
    "gatilho": "coluna :30",
    "alvo": {
-    "h": "18:30",
-    "jogo": "Watford x Burnley",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1784827612796
+    "h": "18:33",
+    "jogo": "Islington x Southampton",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1784827962796
    },
-   "iniciadoEm": 1784827612796
+   "iniciadoEm": 1784827612796,
+   "tiros": [
+    {
+     "h": "18:30",
+     "jogo": "Watford x Burnley",
+     "odd": 1.93,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784821805394,
@@ -503,15 +511,10 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":30",
+   "chave": ":44",
    "n": 18,
-   "start": 1
+   "start": 3
   },
-  "_obs": {
-   "euro": {
-    "desde": 1784827919995,
-    "gatilho": "coluna :44"
-   }
-  }
+  "_obs": {}
  }
 }
