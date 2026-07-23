@@ -294,7 +294,37 @@
   "consumidas": {
    "euro": 1784834520103
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:19",
+     "jogo": "Santiago x Asuncion",
+     "odd": 2.1
+    },
+    {
+     "h": "20:22",
+     "jogo": "Penarol x Medellin",
+     "odd": 2.55
+    },
+    {
+     "h": "20:25",
+     "jogo": "Santiago x La Boca",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "placar empate 2-2",
+   "alvo": {
+    "h": "20:19",
+    "jogo": "Santiago x Asuncion",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1784834578004
+   },
+   "iniciadoEm": 1784834578004
+  },
   "cooldown": {
    "copa": 1784830800798,
    "premier": 1784829267600,
