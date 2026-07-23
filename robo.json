@@ -151,7 +151,12 @@
    "n": 8,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1784768934532,
+    "gatilho": "seq RRRRR"
+   }
+  }
  },
  "o25": {
   "saldo": -52.2,
@@ -283,37 +288,7 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "02:04",
-     "jogo": "Egito x Arábia Saudita",
-     "odd": 2.07
-    },
-    {
-     "h": "01:49",
-     "jogo": "Colômbia x Irã",
-     "odd": 2.5
-    },
-    {
-     "h": "01:52",
-     "jogo": "Alemanha x Cabo Verde",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-0)",
-   "alvo": {
-    "h": "02:04",
-    "jogo": "Egito x Arábia Saudita",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1784767728227
-   },
-   "iniciadoEm": 1784767728227
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784755394627,
    "premier": 1784753905522,
@@ -340,12 +315,18 @@
  },
  "ambas": {
   "saldo": -60.5,
-  "ciclos": 275,
+  "ciclos": 276,
   "greens": 192,
   "redsCiclo": 37,
   "aborts": 0,
-  "descartes": 46,
+  "descartes": 47,
   "historico": [
+   {
+    "quando": "2026-07-23T01:16:27.931Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho placar empate 1-1) — liga REARMADA"
+   },
    {
     "quando": "2026-07-22T21:08:27.026Z",
     "resultado": "GREEN",
@@ -459,12 +440,6 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "copa · Equador x Iraque @2.05 (tiro 2) · gatilho: time Senegal"
-   },
-   {
-    "quando": "2026-07-22T16:28:27.326Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "euro · Escócia x República Tcheca @2.1 (tiro 1) · gatilho: odd 1.83"
    }
   ],
   "consumidas": {},
@@ -490,6 +465,11 @@
    "n": 14,
    "start": 3
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1784769387931,
+    "gatilho": "placar empate 1-1"
+   }
+  }
  }
 }
