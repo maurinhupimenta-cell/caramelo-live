@@ -164,12 +164,18 @@
  },
  "o25": {
   "saldo": -68.6,
-  "ciclos": 264,
+  "ciclos": 265,
   "greens": 178,
   "redsCiclo": 49,
   "aborts": 0,
-  "descartes": 37,
+  "descartes": 38,
   "historico": [
+   {
+    "quando": "2026-07-23T16:34:45.097Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :46) — liga REARMADA"
+   },
    {
     "quando": "2026-07-23T16:29:32.603Z",
     "resultado": "GREEN",
@@ -283,12 +289,6 @@
     "resultado": "GREEN",
     "unidades": 1.9,
     "detalhe": "premier · Leeds x Islington @2.45 (tiro 2) · gatilho: seq RGGRR"
-   },
-   {
-    "quando": "2026-07-22T16:20:29.430Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "super · Buenos Aires x Lima @2.02 (tiro 2) · gatilho: coluna :16"
    }
   ],
   "consumidas": {
@@ -344,21 +344,27 @@
    "2026-07-23": -9.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRRR",
-   "n": 16,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":46",
+   "n": 17,
+   "start": 3
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -63.8,
-  "ciclos": 285,
-  "greens": 196,
+  "saldo": -62.7,
+  "ciclos": 286,
+  "greens": 197,
   "redsCiclo": 38,
   "aborts": 0,
   "descartes": 51,
   "historico": [
+   {
+    "quando": "2026-07-23T16:36:59.896Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Curação x Tunísia @2.05 (tiro 2) · gatilho: odd 2.05"
+   },
    {
     "quando": "2026-07-23T16:34:05.092Z",
     "resultado": "GREEN_OBS",
@@ -472,62 +478,19 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Portugal"
-   },
-   {
-    "quando": "2026-07-22T19:35:33.525Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: odd 2.07"
    }
   ],
   "consumidas": {
    "euro": 1784821805394,
-   "premier": 1784824007292
+   "premier": 1784824007292,
+   "copa": 1784824619697
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:31",
-     "jogo": "Portugal x Croácia",
-     "odd": 1.98
-    },
-    {
-     "h": "17:34",
-     "jogo": "Curação x Tunísia",
-     "odd": 2.05
-    },
-    {
-     "h": "17:37",
-     "jogo": "Jordânia x Egito",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "odd 2.05",
-   "alvo": {
-    "h": "17:34",
-    "jogo": "Curação x Tunísia",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1784824424792
-   },
-   "iniciadoEm": 1784824139792,
-   "tiros": [
-    {
-     "h": "17:31",
-     "jogo": "Portugal x Croácia",
-     "odd": 1.98,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784821805394,
    "super": 1784769747822,
    "premier": 1784824007292,
-   "copa": 1784754506830
+   "copa": 1784824619697
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -537,7 +500,7 @@
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
-   "2026-07-23": -5.6
+   "2026-07-23": -4.5
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
