@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -71.4,
-  "ciclos": 272,
-  "greens": 181,
+  "saldo": -70,
+  "ciclos": 273,
+  "greens": 182,
   "redsCiclo": 50,
   "aborts": 0,
   "descartes": 41,
   "historico": [
+   {
+    "quando": "2026-07-23T19:22:00.295Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "euro · Dinamarca x França @2.2 (tiro 2) · gatilho: coluna :17"
+   },
    {
     "quando": "2026-07-23T18:20:00.901Z",
     "resultado": "GREEN",
@@ -283,58 +289,16 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: seq RGGGG"
-   },
-   {
-    "quando": "2026-07-22T21:08:25.423Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "euro · Suíça x Hungria @2.25 (tiro 1) · gatilho: coluna :08"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "20:14",
-     "jogo": "Hungria x Ucrânia",
-     "odd": 2.4
-    },
-    {
-     "h": "20:17",
-     "jogo": "Dinamarca x França",
-     "odd": 2.2
-    },
-    {
-     "h": "20:20",
-     "jogo": "Turquia x Geórgia",
-     "odd": 2.6
-    }
-   ],
-   "gatilho": "coluna :17",
-   "alvo": {
-    "h": "20:17",
-    "jogo": "Dinamarca x França",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1784834340598
-   },
-   "iniciadoEm": 1784833498994,
-   "tiros": [
-    {
-     "h": "20:14",
-     "jogo": "Hungria x Ucrânia",
-     "odd": 2.4,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "euro": 1784834520103
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784830800798,
    "premier": 1784829267600,
-   "euro": 1784824172404,
+   "euro": 1784834520103,
    "super": 1784825346103
   },
   "dias": {
@@ -346,12 +310,12 @@
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
-   "2026-07-23": -12.2
+   "2026-07-23": -10.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":20",
-   "n": 20,
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
