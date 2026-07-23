@@ -292,7 +292,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1784824172404,
    "copa": 1784825254498,
    "super": 1784825346103
   },
@@ -455,7 +454,37 @@
    "copa": 1784824619697,
    "super": 1784825527493
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:30",
+     "jogo": "Watford x Burnley",
+     "odd": 1.93
+    },
+    {
+     "h": "18:33",
+     "jogo": "Islington x Southampton",
+     "odd": 2.05
+    },
+    {
+     "h": "18:36",
+     "jogo": "Palace x Everton",
+     "odd": 1.87
+    }
+   ],
+   "gatilho": "coluna :30",
+   "alvo": {
+    "h": "18:30",
+    "jogo": "Watford x Burnley",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1784827612796
+   },
+   "iniciadoEm": 1784827612796
+  },
   "cooldown": {
    "euro": 1784821805394,
    "super": 1784825527493,
@@ -473,9 +502,9 @@
    "2026-07-23": -11.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRR",
-   "n": 24,
+   "tipo": "coluna",
+   "chave": ":30",
+   "n": 18,
    "start": 1
   },
   "_obs": {}
