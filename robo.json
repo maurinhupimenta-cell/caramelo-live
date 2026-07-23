@@ -352,13 +352,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -69.6,
-  "ciclos": 303,
-  "greens": 204,
+  "saldo": -68.6,
+  "ciclos": 304,
+  "greens": 205,
   "redsCiclo": 40,
   "aborts": 0,
   "descartes": 59,
   "historico": [
+   {
+    "quando": "2026-07-23T21:44:00.000Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · França x Geórgia @2.05 (tiro 1) · gatilho: coluna :44"
+   },
    {
     "quando": "2026-07-23T21:29:34.696Z",
     "resultado": "GREEN",
@@ -472,50 +478,15 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho coluna :46) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-23T16:26:47.499Z",
-    "resultado": "GREEN",
-    "unidades": 0.4,
-    "detalhe": "premier · Liverpool x Wolverhampton @1.86 (tiro 3) · gatilho: odd 1.9"
    }
   ],
   "consumidas": {
-   "premier": 1784842174499
+   "premier": 1784842174499,
+   "euro": 1784843039893
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:41",
-     "jogo": "França x Geórgia",
-     "odd": 2.05
-    },
-    {
-     "h": "22:44",
-     "jogo": "Itália x Hungria",
-     "odd": 2.07
-    },
-    {
-     "h": "22:47",
-     "jogo": "Sérvia x Geórgia",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "coluna :44",
-   "alvo": {
-    "h": "22:41",
-    "jogo": "França x Geórgia",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1784842377704
-   },
-   "iniciadoEm": 1784842377704
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784837397900,
+   "euro": 1784843039893,
    "super": 1784835798195,
    "premier": 1784842174499,
    "copa": 1784824619697
@@ -528,13 +499,13 @@
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
-   "2026-07-23": -11.4
+   "2026-07-23": -10.4
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "1.86",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
