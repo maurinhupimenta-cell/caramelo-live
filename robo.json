@@ -347,18 +347,24 @@
    "tipo": "time",
    "chave": "Costa do Marfim",
    "n": 21,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -73.9,
-  "ciclos": 294,
-  "greens": 200,
+  "saldo": -72.5,
+  "ciclos": 295,
+  "greens": 201,
   "redsCiclo": 40,
   "aborts": 0,
   "descartes": 54,
   "historico": [
+   {
+    "quando": "2026-07-23T19:43:18.391Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "super · Porto Alegre x Penarol @2.35 (tiro 1) · gatilho: seq GRRGG"
+   },
    {
     "quando": "2026-07-23T19:14:21.493Z",
     "resultado": "DESCARTADO",
@@ -472,51 +478,16 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho placar empate 1-1) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-22T21:08:27.026Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Bélgica x Argélia @2.05 (tiro 1) · gatilho: odd 1.87"
    }
   ],
   "consumidas": {
-   "premier": 1784832461699
+   "premier": 1784832461699,
+   "super": 1784835798195
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:40",
-     "jogo": "Porto Alegre x Penarol",
-     "odd": 2.35
-    },
-    {
-     "h": "20:43",
-     "jogo": "Sao Paulo x Medellin",
-     "odd": 1.95
-    },
-    {
-     "h": "20:46",
-     "jogo": "Bogota x Avellaneda",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "seq GRRGG",
-   "alvo": {
-    "h": "20:40",
-    "jogo": "Porto Alegre x Penarol",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1784835480094
-   },
-   "iniciadoEm": 1784835480094
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784828896206,
-   "super": 1784831878906,
+   "super": 1784835798195,
    "premier": 1784832461699,
    "copa": 1784824619697
   },
@@ -528,7 +499,7 @@
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
-   "2026-07-23": -15.7
+   "2026-07-23": -14.3
   },
   "_gatilhoAtual": {
    "tipo": "seq",
