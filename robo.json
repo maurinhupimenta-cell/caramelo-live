@@ -1,12 +1,18 @@
 {
  "o35": {
   "saldo": -161.1,
-  "ciclos": 166,
+  "ciclos": 167,
   "greens": 58,
   "redsCiclo": 73,
   "aborts": 0,
-  "descartes": 35,
+  "descartes": 36,
   "historico": [
+   {
+    "quando": "2026-07-23T00:48:47.130Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho placar acima de 1-0 (2-0)) — liga REARMADA"
+   },
    {
     "quando": "2026-07-22T07:55:46.629Z",
     "resultado": "RED_CICLO",
@@ -120,12 +126,6 @@
     "resultado": "GREEN",
     "unidades": 5,
     "detalhe": "euro · Inglaterra x Portugal @4 (tiro 2)"
-   },
-   {
-    "quando": "2026-07-21T11:20:37.238Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {},
@@ -150,16 +150,23 @@
    "chave": ":48",
    "n": 8,
    "start": 1
-  }
+  },
+  "_obs": {}
  },
  "o25": {
   "saldo": -52.2,
-  "ciclos": 254,
+  "ciclos": 255,
   "greens": 175,
   "redsCiclo": 46,
   "aborts": 0,
-  "descartes": 33,
+  "descartes": 34,
   "historico": [
+   {
+    "quando": "2026-07-23T00:48:47.132Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho placar acima de 1-0 (2-0)) — liga REARMADA"
+   },
    {
     "quando": "2026-07-22T21:23:14.825Z",
     "resultado": "RED_CICLO",
@@ -273,12 +280,6 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: coluna :48"
-   },
-   {
-    "quando": "2026-07-22T13:16:19.226Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "euro · Escócia x Hungria @2.35 (tiro 1) · gatilho: seq GGGGG"
    }
   ],
   "consumidas": {},
@@ -305,7 +306,12 @@
    "n": 8,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1784767727132,
+    "gatilho": "placar acima de 1-0 (2-0)"
+   }
+  }
  },
  "ambas": {
   "saldo": -60.5,
