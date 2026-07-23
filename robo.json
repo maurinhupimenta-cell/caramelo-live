@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -68.6,
-  "ciclos": 265,
-  "greens": 178,
+  "saldo": -67,
+  "ciclos": 266,
+  "greens": 179,
   "redsCiclo": 49,
   "aborts": 0,
   "descartes": 38,
   "historico": [
+   {
+    "quando": "2026-07-23T16:47:34.697Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "copa · Equador x Colômbia @2.15 (tiro 3) · gatilho: time Argentina"
+   },
    {
     "quando": "2026-07-23T16:34:45.097Z",
     "resultado": "GREEN_OBS",
@@ -283,65 +289,16 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: coluna :07"
-   },
-   {
-    "quando": "2026-07-22T16:36:02.426Z",
-    "resultado": "GREEN",
-    "unidades": 1.9,
-    "detalhe": "premier · Leeds x Islington @2.45 (tiro 2) · gatilho: seq RGGRR"
    }
   ],
   "consumidas": {
    "premier": 1784823645492,
-   "euro": 1784824172404
+   "euro": 1784824172404,
+   "copa": 1784825254498
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "17:37",
-     "jogo": "Jordânia x Egito",
-     "odd": 2.1
-    },
-    {
-     "h": "17:40",
-     "jogo": "Argentina x Iraque",
-     "odd": 2.35
-    },
-    {
-     "h": "17:43",
-     "jogo": "Equador x Colômbia",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "time Argentina",
-   "alvo": {
-    "h": "17:43",
-    "jogo": "Equador x Colômbia",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1784825039599
-   },
-   "iniciadoEm": 1784824173695,
-   "tiros": [
-    {
-     "h": "17:37",
-     "jogo": "Jordânia x Egito",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "17:40",
-     "jogo": "Argentina x Iraque",
-     "odd": 2.35,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784820297592,
+   "copa": 1784825254498,
    "premier": 1784823645492,
    "euro": 1784824172404,
    "super": 1784820870398
@@ -355,7 +312,7 @@
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
-   "2026-07-23": -9.4
+   "2026-07-23": -7.8
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
