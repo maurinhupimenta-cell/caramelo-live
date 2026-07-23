@@ -1,12 +1,18 @@
 {
  "o35": {
   "saldo": -161.1,
-  "ciclos": 167,
+  "ciclos": 168,
   "greens": 58,
   "redsCiclo": 73,
   "aborts": 0,
-  "descartes": 36,
+  "descartes": 37,
   "historico": [
+   {
+    "quando": "2026-07-23T01:03:48.527Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-23T00:48:47.130Z",
     "resultado": "GREEN_OBS",
@@ -120,12 +126,6 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-21T11:53:08.431Z",
-    "resultado": "GREEN",
-    "unidades": 5,
-    "detalhe": "euro · Inglaterra x Portugal @4 (tiro 2)"
    }
   ],
   "consumidas": {},
@@ -146,8 +146,8 @@
    "2026-07-22": -7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":48",
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-0)",
    "n": 8,
    "start": 1
   },
@@ -155,12 +155,18 @@
  },
  "o25": {
   "saldo": -52.2,
-  "ciclos": 255,
+  "ciclos": 256,
   "greens": 175,
   "redsCiclo": 46,
   "aborts": 0,
-  "descartes": 34,
+  "descartes": 35,
   "historico": [
+   {
+    "quando": "2026-07-23T01:03:48.530Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-23T00:48:47.132Z",
     "resultado": "GREEN_OBS",
@@ -274,16 +280,40 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: coluna :07"
-   },
-   {
-    "quando": "2026-07-22T13:53:49.725Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: coluna :48"
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:04",
+     "jogo": "Egito x Arábia Saudita",
+     "odd": 2.07
+    },
+    {
+     "h": "01:49",
+     "jogo": "Colômbia x Irã",
+     "odd": 2.5
+    },
+    {
+     "h": "01:52",
+     "jogo": "Alemanha x Cabo Verde",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-0)",
+   "alvo": {
+    "h": "02:04",
+    "jogo": "Egito x Arábia Saudita",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1784767728227
+   },
+   "iniciadoEm": 1784767728227
+  },
   "cooldown": {
    "copa": 1784755394627,
    "premier": 1784753905522,
@@ -301,17 +331,12 @@
    "2026-07-22": -13.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGGG",
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-0)",
    "n": 8,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1784767727132,
-    "gatilho": "placar acima de 1-0 (2-0)"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -60.5,
