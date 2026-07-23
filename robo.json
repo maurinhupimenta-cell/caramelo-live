@@ -321,12 +321,18 @@
  },
  "ambas": {
   "saldo": -59.2,
-  "ciclos": 278,
+  "ciclos": 279,
   "greens": 193,
   "redsCiclo": 37,
   "aborts": 0,
-  "descartes": 48,
+  "descartes": 49,
   "historico": [
+   {
+    "quando": "2026-07-23T02:11:51.432Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho odd 2) — liga REARMADA"
+   },
    {
     "quando": "2026-07-23T02:03:48.522Z",
     "resultado": "DESCARTADO",
@@ -440,48 +446,12 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-22T17:32:50.125Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "premier · Everton x Burnley @1.86 (tiro 2) · gatilho: coluna :30"
    }
   ],
   "consumidas": {
    "super": 1784769747822
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:03",
-     "jogo": "Islington x United",
-     "odd": 1.93
-    },
-    {
-     "h": "02:48",
-     "jogo": "Aston x Palace",
-     "odd": 2
-    },
-    {
-     "h": "02:51",
-     "jogo": "Burnley x Norwich",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "time Islington",
-   "alvo": {
-    "h": "03:03",
-    "jogo": "Islington x United",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1784771290235
-   },
-   "iniciadoEm": 1784771290235
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784751266125,
    "super": 1784769747822,
@@ -503,6 +473,11 @@
    "n": 8,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1784772711431,
+    "gatilho": "odd 2"
+   }
+  }
  }
 }
