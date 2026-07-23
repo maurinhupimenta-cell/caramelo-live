@@ -322,13 +322,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -69.7,
-  "ciclos": 288,
-  "greens": 197,
+  "saldo": -68.6,
+  "ciclos": 289,
+  "greens": 198,
   "redsCiclo": 39,
   "aborts": 0,
   "descartes": 52,
   "historico": [
+   {
+    "quando": "2026-07-23T17:35:51.602Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Islington x Southampton @2.05 (tiro 2) · gatilho: coluna :30"
+   },
    {
     "quando": "2026-07-23T17:31:59.996Z",
     "resultado": "GREEN_OBS",
@@ -442,61 +448,18 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · Países Baixos x Turquia @1.98 (tiro 2) · gatilho: seq GRGGG"
-   },
-   {
-    "quando": "2026-07-22T20:07:04.122Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho odd 1.9) — liga REARMADA"
    }
   ],
   "consumidas": {
    "copa": 1784824619697,
-   "super": 1784825527493
+   "super": 1784825527493,
+   "premier": 1784828151404
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "18:30",
-     "jogo": "Watford x Burnley",
-     "odd": 1.93
-    },
-    {
-     "h": "18:33",
-     "jogo": "Islington x Southampton",
-     "odd": 2.05
-    },
-    {
-     "h": "18:36",
-     "jogo": "Palace x Everton",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "coluna :30",
-   "alvo": {
-    "h": "18:33",
-    "jogo": "Islington x Southampton",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1784827962796
-   },
-   "iniciadoEm": 1784827612796,
-   "tiros": [
-    {
-     "h": "18:30",
-     "jogo": "Watford x Burnley",
-     "odd": 1.93,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784821805394,
    "super": 1784825527493,
-   "premier": 1784824007292,
+   "premier": 1784828151404,
    "copa": 1784824619697
   },
   "dias": {
@@ -507,13 +470,13 @@
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
-   "2026-07-23": -11.5
+   "2026-07-23": -10.4
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":44",
    "n": 18,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
