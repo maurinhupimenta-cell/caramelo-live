@@ -451,7 +451,37 @@
   "consumidas": {
    "super": 1784769747822
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:21",
+     "jogo": "Wolverhampton x Tottenham",
+     "odd": 1.98
+    },
+    {
+     "h": "03:24",
+     "jogo": "Liverpool x Norwich",
+     "odd": 2
+    },
+    {
+     "h": "03:27",
+     "jogo": "City x United",
+     "odd": 1.86
+    }
+   ],
+   "gatilho": "odd 2",
+   "alvo": {
+    "h": "03:21",
+    "jogo": "Wolverhampton x Tottenham",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1784772727126
+   },
+   "iniciadoEm": 1784772727126
+  },
   "cooldown": {
    "euro": 1784751266125,
    "super": 1784769747822,
@@ -468,16 +498,11 @@
    "2026-07-22": -40.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Islington",
+   "tipo": "odd",
+   "chave": "2",
    "n": 8,
-   "start": 1
+   "start": 3
   },
-  "_obs": {
-   "premier": {
-    "desde": 1784772711431,
-    "gatilho": "odd 2"
-   }
-  }
+  "_obs": {}
  }
 }
