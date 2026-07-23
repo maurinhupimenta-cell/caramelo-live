@@ -453,7 +453,37 @@
    "super": 1784831878906,
    "premier": 1784832461699
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:05",
+     "jogo": "Hungria x Polônia",
+     "odd": 2.15
+    },
+    {
+     "h": "20:08",
+     "jogo": "Alemanha x Espanha",
+     "odd": 1.83
+    },
+    {
+     "h": "20:11",
+     "jogo": "Geórgia x Turquia",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "seq RGGGR",
+   "alvo": {
+    "h": "20:05",
+    "jogo": "Hungria x Polônia",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1784832957004
+   },
+   "iniciadoEm": 1784832957004
+  },
   "cooldown": {
    "euro": 1784828896206,
    "super": 1784831878906,
@@ -471,9 +501,9 @@
    "2026-07-23": -15.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":03",
-   "n": 20,
+   "tipo": "seq",
+   "chave": "RGGGR",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
