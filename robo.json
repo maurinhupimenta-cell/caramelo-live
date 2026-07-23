@@ -322,13 +322,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -70.6,
-  "ciclos": 302,
-  "greens": 203,
+  "saldo": -69.6,
+  "ciclos": 303,
+  "greens": 204,
   "redsCiclo": 40,
   "aborts": 0,
   "descartes": 59,
   "historico": [
+   {
+    "quando": "2026-07-23T21:29:34.696Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Watford x Islington @1.98 (tiro 1) · gatilho: coluna :30"
+   },
    {
     "quando": "2026-07-23T21:05:00.305Z",
     "resultado": "DESCARTADO",
@@ -442,20 +448,16 @@
     "resultado": "GREEN",
     "unidades": 0.4,
     "detalhe": "premier · Liverpool x Wolverhampton @1.86 (tiro 3) · gatilho: odd 1.9"
-   },
-   {
-    "quando": "2026-07-23T16:05:06.597Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "premier": 1784842174499
+  },
   "ciclo": null,
   "cooldown": {
    "euro": 1784837397900,
    "super": 1784835798195,
-   "premier": 1784838246498,
+   "premier": 1784842174499,
    "copa": 1784824619697
   },
   "dias": {
@@ -466,12 +468,12 @@
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
-   "2026-07-23": -12.4
+   "2026-07-23": -11.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGGG",
-   "n": 16,
+   "tipo": "coluna",
+   "chave": ":30",
+   "n": 22,
    "start": 1
   },
   "_obs": {}
