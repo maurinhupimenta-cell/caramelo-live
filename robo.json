@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -67.4,
-  "ciclos": 275,
-  "greens": 184,
+  "saldo": -66.2,
+  "ciclos": 276,
+  "greens": 185,
   "redsCiclo": 50,
   "aborts": 0,
   "descartes": 41,
   "historico": [
+   {
+    "quando": "2026-07-23T20:31:59.596Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Quito x Montevideo @2.2 (tiro 1) · gatilho: placar empate 2-2"
+   },
    {
     "quando": "2026-07-23T19:50:00.796Z",
     "resultado": "GREEN",
@@ -283,53 +289,18 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar acima de 1-0 (2-0)"
-   },
-   {
-    "quando": "2026-07-23T01:03:48.530Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
-   "copa": 1784836200603
+   "copa": 1784836200603,
+   "super": 1784838719396
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:28",
-     "jogo": "Quito x Montevideo",
-     "odd": 2.2
-    },
-    {
-     "h": "21:31",
-     "jogo": "La Boca x Bogota",
-     "odd": 2.7
-    },
-    {
-     "h": "21:34",
-     "jogo": "Quito x Santiago",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "placar empate 2-2",
-   "alvo": {
-    "h": "21:28",
-    "jogo": "Quito x Montevideo",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1784838359492
-   },
-   "iniciadoEm": 1784838359492
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784836200603,
    "premier": 1784829267600,
    "euro": 1784834520103,
-   "super": 1784834598703
+   "super": 1784838719396
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -340,12 +311,12 @@
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
-   "2026-07-23": -8.2
+   "2026-07-23": -7
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 12,
+   "n": 13,
    "start": 1
   },
   "_obs": {}
