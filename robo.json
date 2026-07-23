@@ -164,12 +164,18 @@
  },
  "o25": {
   "saldo": -72.7,
-  "ciclos": 269,
+  "ciclos": 270,
   "greens": 180,
   "redsCiclo": 50,
   "aborts": 0,
-  "descartes": 39,
+  "descartes": 40,
   "historico": [
+   {
+    "quando": "2026-07-23T18:10:58.706Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-23T17:54:27.797Z",
     "resultado": "RED_CICLO",
@@ -283,12 +289,6 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :08) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-22T19:10:26.225Z",
-    "resultado": "GREEN",
-    "unidades": 2.1,
-    "detalhe": "copa · Irã x Turquia @2.55 (tiro 2) · gatilho: coluna :07"
    }
   ],
   "consumidas": {
@@ -343,10 +343,10 @@
    "2026-07-23": -13.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.45",
-   "n": 14,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":17",
+   "n": 19,
+   "start": 2
   },
   "_obs": {}
  },
