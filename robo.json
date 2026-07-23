@@ -324,13 +324,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -62.7,
-  "ciclos": 286,
+  "saldo": -69.7,
+  "ciclos": 287,
   "greens": 197,
-  "redsCiclo": 38,
+  "redsCiclo": 39,
   "aborts": 0,
   "descartes": 51,
   "historico": [
+   {
+    "quando": "2026-07-23T16:52:07.694Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: coluna :46"
+   },
    {
     "quando": "2026-07-23T16:36:59.896Z",
     "resultado": "GREEN",
@@ -444,66 +450,17 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho seq GRGGG) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-22T20:01:26.822Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Portugal"
    }
   ],
   "consumidas": {
    "premier": 1784824007292,
-   "copa": 1784824619697
+   "copa": 1784824619697,
+   "super": 1784825527493
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "17:43",
-     "jogo": "Agua Branca x Rio de Janeiro",
-     "odd": 1.9
-    },
-    {
-     "h": "17:46",
-     "jogo": "Lima x La Boca",
-     "odd": 1.98
-    },
-    {
-     "h": "17:49",
-     "jogo": "Quito x Buenos Aires",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "coluna :46",
-   "alvo": {
-    "h": "17:49",
-    "jogo": "Quito x Buenos Aires",
-    "odd": 1.87,
-    "unidades": 4,
-    "desde": 1784825346394
-   },
-   "iniciadoEm": 1784824621202,
-   "tiros": [
-    {
-     "h": "17:43",
-     "jogo": "Agua Branca x Rio de Janeiro",
-     "odd": 1.9,
-     "unidades": 1
-    },
-    {
-     "h": "17:46",
-     "jogo": "Lima x La Boca",
-     "odd": 1.98,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784821805394,
-   "super": 1784769747822,
+   "super": 1784825527493,
    "premier": 1784824007292,
    "copa": 1784824619697
   },
@@ -515,12 +472,12 @@
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
-   "2026-07-23": -4.5
+   "2026-07-23": -11.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":46",
-   "n": 17,
+   "tipo": "seq",
+   "chave": "RRRR",
+   "n": 24,
    "start": 1
   },
   "_obs": {}
