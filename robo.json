@@ -346,18 +346,24 @@
    "tipo": "coluna",
    "chave": ":17",
    "n": 20,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -73.9,
-  "ciclos": 293,
+  "ciclos": 294,
   "greens": 200,
   "redsCiclo": 40,
   "aborts": 0,
-  "descartes": 53,
+  "descartes": 54,
   "historico": [
+   {
+    "quando": "2026-07-23T19:14:21.493Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-23T18:47:41.801Z",
     "resultado": "RED_CICLO",
@@ -471,12 +477,6 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · Bélgica x Argélia @2.05 (tiro 1) · gatilho: odd 1.87"
-   },
-   {
-    "quando": "2026-07-22T21:02:24.827Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho odd 1.87) — liga REARMADA"
    }
   ],
   "consumidas": {
