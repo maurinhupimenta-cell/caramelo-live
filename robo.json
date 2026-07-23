@@ -320,13 +320,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -59.2,
-  "ciclos": 279,
-  "greens": 193,
+  "saldo": -58.2,
+  "ciclos": 280,
+  "greens": 194,
   "redsCiclo": 37,
   "aborts": 0,
   "descartes": 49,
   "historico": [
+   {
+    "quando": "2026-07-23T02:29:10.026Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Liverpool x Norwich @2 (tiro 2) · gatilho: odd 2"
+   },
    {
     "quando": "2026-07-23T02:11:51.432Z",
     "resultado": "GREEN_OBS",
@@ -440,58 +446,16 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho odd 2.3) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-22T18:04:24.837Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "03:21",
-     "jogo": "Wolverhampton x Tottenham",
-     "odd": 1.98
-    },
-    {
-     "h": "03:24",
-     "jogo": "Liverpool x Norwich",
-     "odd": 2
-    },
-    {
-     "h": "03:27",
-     "jogo": "City x United",
-     "odd": 1.86
-    }
-   ],
-   "gatilho": "odd 2",
-   "alvo": {
-    "h": "03:24",
-    "jogo": "Liverpool x Norwich",
-    "odd": 2,
-    "unidades": 2,
-    "desde": 1784773569626
-   },
-   "iniciadoEm": 1784772727126,
-   "tiros": [
-    {
-     "h": "03:21",
-     "jogo": "Wolverhampton x Tottenham",
-     "odd": 1.98,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "premier": 1784773749833
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784751266125,
    "super": 1784769747822,
-   "premier": 1784753449930,
+   "premier": 1784773749833,
    "copa": 1784754506830
   },
   "dias": {
@@ -501,7 +465,7 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -40.9
+   "2026-07-22": -39.9
   },
   "_gatilhoAtual": {
    "tipo": "odd",
