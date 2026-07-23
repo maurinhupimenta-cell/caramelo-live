@@ -296,8 +296,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "20:14",
@@ -317,13 +317,21 @@
    ],
    "gatilho": "coluna :17",
    "alvo": {
-    "h": "20:14",
-    "jogo": "Hungria x Ucrânia",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1784833498994
+    "h": "20:17",
+    "jogo": "Dinamarca x França",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1784834340598
    },
-   "iniciadoEm": 1784833498994
+   "iniciadoEm": 1784833498994,
+   "tiros": [
+    {
+     "h": "20:14",
+     "jogo": "Hungria x Ucrânia",
+     "odd": 2.4,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784830800798,
@@ -344,9 +352,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":17",
+   "chave": ":20",
    "n": 20,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -483,37 +491,7 @@
    "super": 1784831878906,
    "premier": 1784832461699
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:05",
-     "jogo": "Hungria x Polônia",
-     "odd": 2.15
-    },
-    {
-     "h": "20:08",
-     "jogo": "Alemanha x Espanha",
-     "odd": 1.83
-    },
-    {
-     "h": "20:11",
-     "jogo": "Geórgia x Turquia",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "seq RGGGR",
-   "alvo": {
-    "h": "20:05",
-    "jogo": "Hungria x Polônia",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1784832957004
-   },
-   "iniciadoEm": 1784832957004
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784828896206,
    "super": 1784831878906,
