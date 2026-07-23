@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -57.7,
-  "ciclos": 260,
-  "greens": 176,
+  "saldo": -56.2,
+  "ciclos": 261,
+  "greens": 177,
   "redsCiclo": 47,
   "aborts": 0,
   "descartes": 37,
   "historico": [
+   {
+    "quando": "2026-07-23T15:24:57.699Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "copa · Costa do Marfim x Gana @2.25 (tiro 2) · gatilho: time Costa do Marfim"
+   },
    {
     "quando": "2026-07-23T15:12:42.299Z",
     "resultado": "GREEN",
@@ -283,58 +289,15 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho time Cabo Verde) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-22T15:06:06.122Z",
-    "resultado": "GREEN",
-    "unidades": 2,
-    "detalhe": "premier · Leicester x Norwich @2.25 (tiro 3) · gatilho: coluna :00"
    }
   ],
   "consumidas": {
-   "euro": 1784819562101
+   "euro": 1784819562101,
+   "copa": 1784820297592
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "16:19",
-     "jogo": "Japão x Espanha",
-     "odd": 2.25
-    },
-    {
-     "h": "16:22",
-     "jogo": "Costa do Marfim x Gana",
-     "odd": 2.25
-    },
-    {
-     "h": "16:25",
-     "jogo": "Croácia x Países Baixos",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "time Costa do Marfim",
-   "alvo": {
-    "h": "16:22",
-    "jogo": "Costa do Marfim x Gana",
-    "odd": 2.25,
-    "unidades": 2,
-    "desde": 1784820125198
-   },
-   "iniciadoEm": 1784819564297,
-   "tiros": [
-    {
-     "h": "16:19",
-     "jogo": "Japão x Espanha",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784755394627,
+   "copa": 1784820297592,
    "premier": 1784753905522,
    "euro": 1784819562101,
    "super": 1784737229232
@@ -348,13 +311,13 @@
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
-   "2026-07-23": 1.5
+   "2026-07-23": 3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":30",
-   "n": 16,
-   "start": 2
+   "tipo": "seq",
+   "chave": "RGGRG",
+   "n": 10,
+   "start": 1
   },
   "_obs": {}
  },
