@@ -296,8 +296,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "18:45",
@@ -317,13 +317,21 @@
    ],
    "gatilho": "seq RGGRG",
    "alvo": {
-    "h": "18:45",
-    "jogo": "Wolverhampton x Newcastle",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1784828697803
+    "h": "18:48",
+    "jogo": "Brighton x Leicester",
+    "odd": 2.1,
+    "unidades": 2,
+    "desde": 1784828881498
    },
-   "iniciadoEm": 1784828697803
+   "iniciadoEm": 1784828697803,
+   "tiros": [
+    {
+     "h": "18:45",
+     "jogo": "Wolverhampton x Newcastle",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784825254498,
@@ -343,21 +351,27 @@
    "2026-07-23": -6.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGRG",
-   "n": 11,
+   "tipo": "time",
+   "chave": "Costa do Marfim",
+   "n": 20,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -68.6,
-  "ciclos": 289,
-  "greens": 198,
+  "saldo": -67.7,
+  "ciclos": 290,
+  "greens": 199,
   "redsCiclo": 39,
   "aborts": 0,
   "descartes": 52,
   "historico": [
+   {
+    "quando": "2026-07-23T17:48:16.400Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Romênia x Ucrânia @1.93 (tiro 2) · gatilho: coluna :44"
+   },
    {
     "quando": "2026-07-23T17:35:51.602Z",
     "resultado": "GREEN",
@@ -471,59 +485,16 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros) · gatilho: odd 1.9"
-   },
-   {
-    "quando": "2026-07-22T20:14:26.229Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · Países Baixos x Turquia @1.98 (tiro 2) · gatilho: seq GRGGG"
    }
   ],
   "consumidas": {
    "super": 1784825527493,
-   "premier": 1784828151404
+   "premier": 1784828151404,
+   "euro": 1784828896206
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "18:41",
-     "jogo": "Turquia x Polônia",
-     "odd": 2.25
-    },
-    {
-     "h": "18:44",
-     "jogo": "Romênia x Ucrânia",
-     "odd": 1.93
-    },
-    {
-     "h": "18:47",
-     "jogo": "Espanha x Inglaterra",
-     "odd": 1.8
-    }
-   ],
-   "gatilho": "coluna :44",
-   "alvo": {
-    "h": "18:44",
-    "jogo": "Romênia x Ucrânia",
-    "odd": 1.93,
-    "unidades": 2,
-    "desde": 1784828699600
-   },
-   "iniciadoEm": 1784828159304,
-   "tiros": [
-    {
-     "h": "18:41",
-     "jogo": "Turquia x Polônia",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784821805394,
+   "euro": 1784828896206,
    "super": 1784825527493,
    "premier": 1784828151404,
    "copa": 1784824619697
@@ -536,7 +507,7 @@
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
-   "2026-07-23": -10.4
+   "2026-07-23": -9.5
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
