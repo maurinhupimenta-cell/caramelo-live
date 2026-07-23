@@ -164,12 +164,18 @@
  },
  "o25": {
   "saldo": -59.2,
-  "ciclos": 257,
+  "ciclos": 258,
   "greens": 175,
   "redsCiclo": 47,
   "aborts": 0,
-  "descartes": 35,
+  "descartes": 36,
   "historico": [
+   {
+    "quando": "2026-07-23T15:03:15.408Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho odd 2.45) — liga REARMADA"
+   },
    {
     "quando": "2026-07-23T01:47:48.724Z",
     "resultado": "RED_CICLO",
@@ -283,12 +289,6 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "euro · Espanha x Itália @2.15 (tiro 1) · gatilho: coluna :53"
-   },
-   {
-    "quando": "2026-07-22T14:19:13.827Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "super · Guayaquil x Rio de Janeiro @2.15 (tiro 2) · gatilho: coluna :16"
    }
   ],
   "consumidas": {},
@@ -307,7 +307,8 @@
    "2026-07-19": -12,
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
-   "2026-07-22": -20.6
+   "2026-07-22": -20.6,
+   "2026-07-23": 0
   },
   "_gatilhoAtual": {
    "tipo": "placar",
@@ -315,7 +316,12 @@
    "n": 10,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1784818995407,
+    "gatilho": "odd 2.45"
+   }
+  }
  },
  "ambas": {
   "saldo": -58.2,
