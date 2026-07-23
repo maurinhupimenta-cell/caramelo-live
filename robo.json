@@ -294,7 +294,37 @@
   "consumidas": {
    "copa": 1784830800798
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:14",
+     "jogo": "Hungria x Ucrânia",
+     "odd": 2.4
+    },
+    {
+     "h": "20:17",
+     "jogo": "Dinamarca x França",
+     "odd": 2.2
+    },
+    {
+     "h": "20:20",
+     "jogo": "Turquia x Geórgia",
+     "odd": 2.6
+    }
+   ],
+   "gatilho": "coluna :17",
+   "alvo": {
+    "h": "20:14",
+    "jogo": "Hungria x Ucrânia",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1784833498994
+   },
+   "iniciadoEm": 1784833498994
+  },
   "cooldown": {
    "copa": 1784830800798,
    "premier": 1784829267600,
@@ -314,9 +344,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":20",
-   "n": 19,
-   "start": 1
+   "chave": ":17",
+   "n": 20,
+   "start": 3
   },
   "_obs": {}
  },
