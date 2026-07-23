@@ -323,13 +323,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -72.5,
-  "ciclos": 298,
-  "greens": 201,
+  "saldo": -71.6,
+  "ciclos": 299,
+  "greens": 202,
   "redsCiclo": 40,
   "aborts": 0,
   "descartes": 57,
   "historico": [
+   {
+    "quando": "2026-07-23T20:09:58.093Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Suíça x Bélgica @1.85 (tiro 1) · gatilho: seq GRRGG"
+   },
    {
     "quando": "2026-07-23T20:03:59.103Z",
     "resultado": "DESCARTADO",
@@ -443,50 +449,15 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · Liverpool x Norwich @2 (tiro 2) · gatilho: odd 2"
-   },
-   {
-    "quando": "2026-07-23T02:11:51.432Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho odd 2) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "super": 1784835798195
+   "super": 1784835798195,
+   "euro": 1784837397900
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:03",
-     "jogo": "Brentford x Aston",
-     "odd": 2.05
-    },
-    {
-     "h": "20:48",
-     "jogo": "Wolverhampton x Tottenham",
-     "odd": 1.98
-    },
-    {
-     "h": "20:51",
-     "jogo": "Southampton x Brighton",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "coluna :03",
-   "alvo": {
-    "h": "21:03",
-    "jogo": "Brentford x Aston",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1784836137797
-   },
-   "iniciadoEm": 1784836137797
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784828896206,
+   "euro": 1784837397900,
    "super": 1784835798195,
    "premier": 1784832461699,
    "copa": 1784824619697
@@ -499,7 +470,7 @@
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
-   "2026-07-23": -14.3
+   "2026-07-23": -13.4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
