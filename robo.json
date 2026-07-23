@@ -482,7 +482,37 @@
   "consumidas": {
    "premier": 1784842174499
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:41",
+     "jogo": "França x Geórgia",
+     "odd": 2.05
+    },
+    {
+     "h": "22:44",
+     "jogo": "Itália x Hungria",
+     "odd": 2.07
+    },
+    {
+     "h": "22:47",
+     "jogo": "Sérvia x Geórgia",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "coluna :44",
+   "alvo": {
+    "h": "22:41",
+    "jogo": "França x Geórgia",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1784842377704
+   },
+   "iniciadoEm": 1784842377704
+  },
   "cooldown": {
    "euro": 1784837397900,
    "super": 1784835798195,
@@ -501,9 +531,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":30",
+   "chave": ":44",
    "n": 22,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
