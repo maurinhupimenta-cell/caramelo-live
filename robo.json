@@ -345,10 +345,10 @@
    "2026-07-23": -9.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Argentina",
-   "n": 11,
-   "start": 3
+   "tipo": "seq",
+   "chave": "RGRRR",
+   "n": 16,
+   "start": 1
   },
   "_obs": {}
  },
@@ -487,8 +487,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:31",
@@ -508,13 +508,21 @@
    ],
    "gatilho": "odd 2.05",
    "alvo": {
-    "h": "17:31",
-    "jogo": "Portugal x Croácia",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1784824139792
+    "h": "17:34",
+    "jogo": "Curação x Tunísia",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1784824424792
    },
-   "iniciadoEm": 1784824139792
+   "iniciadoEm": 1784824139792,
+   "tiros": [
+    {
+     "h": "17:31",
+     "jogo": "Portugal x Croácia",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784821805394,
