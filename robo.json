@@ -351,13 +351,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -68.6,
-  "ciclos": 304,
-  "greens": 205,
+  "saldo": -67.2,
+  "ciclos": 305,
+  "greens": 206,
   "redsCiclo": 40,
   "aborts": 0,
   "descartes": 59,
   "historico": [
+   {
+    "quando": "2026-07-23T22:46:11.693Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "euro · República Tcheca x Eslovênia @2.4 (tiro 1) · gatilho: coluna :44"
+   },
    {
     "quando": "2026-07-23T21:44:00.000Z",
     "resultado": "GREEN",
@@ -471,18 +477,14 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "copa · Curação x Tunísia @2.05 (tiro 2) · gatilho: odd 2.05"
-   },
-   {
-    "quando": "2026-07-23T16:34:05.092Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :46) — liga REARMADA"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "euro": 1784846771497
+  },
   "ciclo": null,
   "cooldown": {
-   "euro": 1784843039893,
+   "euro": 1784846771497,
    "super": 1784835798195,
    "premier": 1784842174499,
    "copa": 1784824619697
@@ -495,12 +497,12 @@
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
-   "2026-07-23": -10.4
+   "2026-07-23": -9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.86",
-   "n": 9,
+   "tipo": "coluna",
+   "chave": ":44",
+   "n": 23,
    "start": 1
   },
   "_obs": {}
