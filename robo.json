@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -65.7,
-  "ciclos": 268,
+  "saldo": -72.7,
+  "ciclos": 269,
   "greens": 180,
-  "redsCiclo": 49,
+  "redsCiclo": 50,
   "aborts": 0,
   "descartes": 39,
   "historico": [
+   {
+    "quando": "2026-07-23T17:54:27.797Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq RGGRG"
+   },
    {
     "quando": "2026-07-23T17:44:51.698Z",
     "resultado": "GREEN_OBS",
@@ -283,63 +289,15 @@
     "resultado": "GREEN",
     "unidades": 2.1,
     "detalhe": "copa · Irã x Turquia @2.55 (tiro 2) · gatilho: coluna :07"
-   },
-   {
-    "quando": "2026-07-22T18:55:24.234Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho coluna :07) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "18:45",
-     "jogo": "Wolverhampton x Newcastle",
-     "odd": 1.98
-    },
-    {
-     "h": "18:48",
-     "jogo": "Brighton x Leicester",
-     "odd": 2.1
-    },
-    {
-     "h": "18:51",
-     "jogo": "Wolverhampton x Norwich",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "seq RGGRG",
-   "alvo": {
-    "h": "18:51",
-    "jogo": "Wolverhampton x Norwich",
-    "odd": 2.07,
-    "unidades": 4,
-    "desde": 1784829048597
-   },
-   "iniciadoEm": 1784828697803,
-   "tiros": [
-    {
-     "h": "18:45",
-     "jogo": "Wolverhampton x Newcastle",
-     "odd": 1.98,
-     "unidades": 1
-    },
-    {
-     "h": "18:48",
-     "jogo": "Brighton x Leicester",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1784829267600
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784825254498,
-   "premier": 1784823645492,
+   "premier": 1784829267600,
    "euro": 1784824172404,
    "super": 1784825346103
   },
@@ -352,7 +310,7 @@
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
-   "2026-07-23": -6.5
+   "2026-07-23": -13.5
   },
   "_gatilhoAtual": {
    "tipo": "odd",
