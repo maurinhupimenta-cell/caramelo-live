@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -70,
-  "ciclos": 273,
-  "greens": 182,
+  "saldo": -68.9,
+  "ciclos": 274,
+  "greens": 183,
   "redsCiclo": 50,
   "aborts": 0,
   "descartes": 41,
   "historico": [
+   {
+    "quando": "2026-07-23T19:23:18.897Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Santiago x Asuncion @2.1 (tiro 1) · gatilho: placar empate 2-2"
+   },
    {
     "quando": "2026-07-23T19:22:00.295Z",
     "resultado": "GREEN",
@@ -283,53 +289,18 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho placar acima de 1-0 (2-0)) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-22T21:23:14.825Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: seq RGGGG"
    }
   ],
   "consumidas": {
-   "euro": 1784834520103
+   "euro": 1784834520103,
+   "super": 1784834598703
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:19",
-     "jogo": "Santiago x Asuncion",
-     "odd": 2.1
-    },
-    {
-     "h": "20:22",
-     "jogo": "Penarol x Medellin",
-     "odd": 2.55
-    },
-    {
-     "h": "20:25",
-     "jogo": "Santiago x La Boca",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "placar empate 2-2",
-   "alvo": {
-    "h": "20:19",
-    "jogo": "Santiago x Asuncion",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1784834578004
-   },
-   "iniciadoEm": 1784834578004
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784830800798,
    "premier": 1784829267600,
    "euro": 1784834520103,
-   "super": 1784825346103
+   "super": 1784834598703
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -340,7 +311,7 @@
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
-   "2026-07-23": -10.8
+   "2026-07-23": -9.7
   },
   "_gatilhoAtual": {
    "tipo": "placar",
