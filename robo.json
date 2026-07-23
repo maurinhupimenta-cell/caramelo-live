@@ -164,12 +164,18 @@
  },
  "o25": {
   "saldo": -59.2,
-  "ciclos": 258,
+  "ciclos": 259,
   "greens": 175,
   "redsCiclo": 47,
   "aborts": 0,
-  "descartes": 36,
+  "descartes": 37,
   "historico": [
+   {
+    "quando": "2026-07-23T15:10:18.917Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Costa do Marfim) — liga REARMADA"
+   },
    {
     "quando": "2026-07-23T15:03:15.408Z",
     "resultado": "GREEN_OBS",
@@ -283,12 +289,6 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho coluna :00) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-22T14:53:25.629Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "euro · Espanha x Itália @2.15 (tiro 1) · gatilho: coluna :53"
    }
   ],
   "consumidas": {},
@@ -354,7 +354,12 @@
    "n": 16,
    "start": 2
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1784819418903,
+    "gatilho": "time Costa do Marfim"
+   }
+  }
  },
  "ambas": {
   "saldo": -58.2,
@@ -536,7 +541,7 @@
    "tipo": "odd",
    "chave": "1.9",
    "n": 12,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
