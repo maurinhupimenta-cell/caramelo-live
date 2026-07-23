@@ -297,8 +297,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:12",
@@ -318,13 +318,21 @@
    ],
    "gatilho": "odd 2.35",
    "alvo": {
-    "h": "17:12",
-    "jogo": "Leeds x Southampton",
-    "odd": 2.62,
-    "unidades": 1,
-    "desde": 1784822579102
+    "h": "17:15",
+    "jogo": "Chelsea x Aston",
+    "odd": 2.35,
+    "unidades": 2,
+    "desde": 1784823286294
    },
-   "iniciadoEm": 1784822579102
+   "iniciadoEm": 1784822579102,
+   "tiros": [
+    {
+     "h": "17:12",
+     "jogo": "Leeds x Southampton",
+     "odd": 2.62,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784820297592,
@@ -344,9 +352,9 @@
    "2026-07-23": -4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.35",
-   "n": 10,
+   "tipo": "coluna",
+   "chave": ":17",
+   "n": 17,
    "start": 1
   },
   "_obs": {}
