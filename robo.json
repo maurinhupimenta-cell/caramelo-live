@@ -455,7 +455,37 @@
    "super": 1784835798195,
    "euro": 1784837397900
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:21",
+     "jogo": "Islington x Watford",
+     "odd": 2.05
+    },
+    {
+     "h": "21:24",
+     "jogo": "Burnley x Aston",
+     "odd": 1.95
+    },
+    {
+     "h": "21:27",
+     "jogo": "Everton x West Ham",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "seq GGGRR",
+   "alvo": {
+    "h": "21:21",
+    "jogo": "Islington x Watford",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1784837937998
+   },
+   "iniciadoEm": 1784837937998
+  },
   "cooldown": {
    "euro": 1784837397900,
    "super": 1784835798195,
@@ -474,15 +504,10 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRRGG",
-   "n": 10,
+   "chave": "GGGRR",
+   "n": 9,
    "start": 1
   },
-  "_obs": {
-   "premier": {
-    "desde": 1784837903205,
-    "gatilho": "seq GGGRR"
-   }
-  }
+  "_obs": {}
  }
 }
