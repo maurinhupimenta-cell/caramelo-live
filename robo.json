@@ -294,7 +294,37 @@
   "consumidas": {
    "euro": 1784819562101
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:19",
+     "jogo": "Japão x Espanha",
+     "odd": 2.25
+    },
+    {
+     "h": "16:22",
+     "jogo": "Costa do Marfim x Gana",
+     "odd": 2.25
+    },
+    {
+     "h": "16:25",
+     "jogo": "Croácia x Países Baixos",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "time Costa do Marfim",
+   "alvo": {
+    "h": "16:19",
+    "jogo": "Japão x Espanha",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1784819564297
+   },
+   "iniciadoEm": 1784819564297
+  },
   "cooldown": {
    "copa": 1784755394627,
    "premier": 1784753905522,
@@ -313,21 +343,27 @@
    "2026-07-23": 1.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":17",
-   "n": 16,
-   "start": 1
+   "tipo": "time",
+   "chave": "Costa do Marfim",
+   "n": 18,
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -58.2,
-  "ciclos": 280,
-  "greens": 194,
+  "saldo": -57.2,
+  "ciclos": 281,
+  "greens": 195,
   "redsCiclo": 37,
   "aborts": 0,
   "descartes": 49,
   "historico": [
+   {
+    "quando": "2026-07-23T15:16:08.393Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Palace x Tottenham @2.05 (tiro 1) · gatilho: odd 1.9"
+   },
    {
     "quando": "2026-07-23T02:29:10.026Z",
     "resultado": "GREEN",
@@ -441,50 +477,16 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Senegal"
-   },
-   {
-    "quando": "2026-07-22T18:29:13.422Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho odd 2.3) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:12",
-     "jogo": "Palace x Tottenham",
-     "odd": 2.05
-    },
-    {
-     "h": "16:15",
-     "jogo": "Brentford x Everton",
-     "odd": 1.9
-    },
-    {
-     "h": "16:18",
-     "jogo": "Aston x United",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "odd 1.9",
-   "alvo": {
-    "h": "16:12",
-    "jogo": "Palace x Tottenham",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1784818995697
-   },
-   "iniciadoEm": 1784818995697
+  "consumidas": {
+   "premier": 1784819768198
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784751266125,
    "super": 1784769747822,
-   "premier": 1784773749833,
+   "premier": 1784819768198,
    "copa": 1784754506830
   },
   "dias": {
@@ -494,12 +496,13 @@
    "2026-07-19": -26.6,
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
-   "2026-07-22": -39.9
+   "2026-07-22": -39.9,
+   "2026-07-23": 1
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "1.9",
-   "n": 12,
+   "chave": "2.02",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
