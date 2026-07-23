@@ -360,13 +360,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -64.2,
-  "ciclos": 283,
-  "greens": 195,
+  "saldo": -63.8,
+  "ciclos": 284,
+  "greens": 196,
   "redsCiclo": 38,
   "aborts": 0,
   "descartes": 50,
   "historico": [
+   {
+    "quando": "2026-07-23T16:26:47.499Z",
+    "resultado": "GREEN",
+    "unidades": 0.4,
+    "detalhe": "premier · Liverpool x Wolverhampton @1.86 (tiro 3) · gatilho: odd 1.9"
+   },
    {
     "quando": "2026-07-23T16:05:06.597Z",
     "resultado": "DESCARTADO",
@@ -480,66 +486,17 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho coluna :34) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-22T19:05:32.327Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: seq RRRRG"
    }
   ],
   "consumidas": {
-   "euro": 1784821805394
+   "euro": 1784821805394,
+   "premier": 1784824007292
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "17:18",
-     "jogo": "Tottenham x West Ham",
-     "odd": 2.3
-    },
-    {
-     "h": "17:21",
-     "jogo": "Norwich x City",
-     "odd": 1.9
-    },
-    {
-     "h": "17:24",
-     "jogo": "Liverpool x Wolverhampton",
-     "odd": 1.86
-    }
-   ],
-   "gatilho": "odd 1.9",
-   "alvo": {
-    "h": "17:24",
-    "jogo": "Liverpool x Wolverhampton",
-    "odd": 1.86,
-    "unidades": 4,
-    "desde": 1784823832592
-   },
-   "iniciadoEm": 1784823421725,
-   "tiros": [
-    {
-     "h": "17:18",
-     "jogo": "Tottenham x West Ham",
-     "odd": 2.3,
-     "unidades": 1
-    },
-    {
-     "h": "17:21",
-     "jogo": "Norwich x City",
-     "odd": 1.9,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784821805394,
    "super": 1784769747822,
-   "premier": 1784819768198,
+   "premier": 1784824007292,
    "copa": 1784754506830
   },
   "dias": {
@@ -550,7 +507,7 @@
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
-   "2026-07-23": -6
+   "2026-07-23": -5.6
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
