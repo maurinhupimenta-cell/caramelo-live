@@ -296,8 +296,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "16:19",
@@ -317,13 +317,21 @@
    ],
    "gatilho": "time Costa do Marfim",
    "alvo": {
-    "h": "16:19",
-    "jogo": "Japão x Espanha",
+    "h": "16:22",
+    "jogo": "Costa do Marfim x Gana",
     "odd": 2.25,
-    "unidades": 1,
-    "desde": 1784819564297
+    "unidades": 2,
+    "desde": 1784820125198
    },
-   "iniciadoEm": 1784819564297
+   "iniciadoEm": 1784819564297,
+   "tiros": [
+    {
+     "h": "16:19",
+     "jogo": "Japão x Espanha",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784755394627,
@@ -343,9 +351,9 @@
    "2026-07-23": 1.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Costa do Marfim",
-   "n": 18,
+   "tipo": "coluna",
+   "chave": ":30",
+   "n": 16,
    "start": 2
   },
   "_obs": {}
