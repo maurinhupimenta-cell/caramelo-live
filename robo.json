@@ -164,12 +164,18 @@
  },
  "o25": {
   "saldo": -65.7,
-  "ciclos": 267,
+  "ciclos": 268,
   "greens": 180,
   "redsCiclo": 49,
   "aborts": 0,
-  "descartes": 38,
+  "descartes": 39,
   "historico": [
+   {
+    "quando": "2026-07-23T17:44:51.698Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho seq RGGRG) — liga REARMADA"
+   },
    {
     "quando": "2026-07-23T16:49:06.392Z",
     "resultado": "GREEN",
@@ -283,12 +289,6 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho coluna :07) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-22T18:08:39.723Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Newcastle x Brighton @1.95 (tiro 1) · gatilho: seq RGGRR"
    }
   ],
   "consumidas": {
@@ -319,7 +319,12 @@
    "n": 17,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1784828691697,
+    "gatilho": "seq RGGRG"
+   }
+  }
  },
  "ambas": {
   "saldo": -68.6,
@@ -505,7 +510,7 @@
    "tipo": "coluna",
    "chave": ":44",
    "n": 18,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
