@@ -483,7 +483,37 @@
   "consumidas": {
    "super": 1784835798195
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:03",
+     "jogo": "Brentford x Aston",
+     "odd": 2.05
+    },
+    {
+     "h": "20:48",
+     "jogo": "Wolverhampton x Tottenham",
+     "odd": 1.98
+    },
+    {
+     "h": "20:51",
+     "jogo": "Southampton x Brighton",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "coluna :03",
+   "alvo": {
+    "h": "21:03",
+    "jogo": "Brentford x Aston",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1784836137797
+   },
+   "iniciadoEm": 1784836137797
+  },
   "cooldown": {
    "euro": 1784828896206,
    "super": 1784835798195,
@@ -501,19 +531,15 @@
    "2026-07-23": -14.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRGG",
-   "n": 10,
+   "tipo": "coluna",
+   "chave": ":03",
+   "n": 21,
    "start": 1
   },
   "_obs": {
    "euro": {
     "desde": 1784835225594,
     "gatilho": "coluna :44"
-   },
-   "premier": {
-    "desde": 1784836100501,
-    "gatilho": "coluna :03"
    }
   }
  }
