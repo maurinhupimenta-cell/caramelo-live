@@ -454,7 +454,45 @@
    "premier": 1784828151404,
    "euro": 1784828896206
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "19:31",
+     "jogo": "Medellin x La Plata",
+     "odd": 2.2
+    },
+    {
+     "h": "19:34",
+     "jogo": "Lima x Asuncion",
+     "odd": 1.9
+    },
+    {
+     "h": "19:37",
+     "jogo": "Porto Alegre x Santiago",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "seq GRRGG",
+   "alvo": {
+    "h": "19:34",
+    "jogo": "Lima x Asuncion",
+    "odd": 1.9,
+    "unidades": 2,
+    "desde": 1784831645201
+   },
+   "iniciadoEm": 1784831343400,
+   "tiros": [
+    {
+     "h": "19:31",
+     "jogo": "Medellin x La Plata",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1784828896206,
    "super": 1784825527493,
@@ -472,16 +510,11 @@
    "2026-07-23": -9.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":44",
-   "n": 18,
+   "tipo": "seq",
+   "chave": "RRGGG",
+   "n": 13,
    "start": 1
   },
-  "_obs": {
-   "super": {
-    "desde": 1784831342097,
-    "gatilho": "seq GRRGG"
-   }
-  }
+  "_obs": {}
  }
 }
