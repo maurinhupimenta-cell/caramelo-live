@@ -456,8 +456,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "16:41",
@@ -477,13 +477,21 @@
    ],
    "gatilho": "coluna :44",
    "alvo": {
-    "h": "16:41",
-    "jogo": "Alemanha x Romênia",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1784820841027
+    "h": "16:44",
+    "jogo": "Escócia x Eslováquia",
+    "odd": 1.98,
+    "unidades": 2,
+    "desde": 1784821620792
    },
-   "iniciadoEm": 1784820841027
+   "iniciadoEm": 1784820841027,
+   "tiros": [
+    {
+     "h": "16:41",
+     "jogo": "Alemanha x Romênia",
+     "odd": 1.9,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784751266125,
@@ -503,9 +511,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":44",
+   "chave": ":46",
    "n": 16,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
