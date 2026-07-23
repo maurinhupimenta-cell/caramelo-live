@@ -155,6 +155,10 @@
    "premier": {
     "desde": 1784768934532,
     "gatilho": "seq RRRRR"
+   },
+   "copa": {
+    "desde": 1784769908233,
+    "gatilho": "seq RRRR"
    }
   }
  },
@@ -288,7 +292,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:38",
+     "jogo": "Países Baixos x Sérvia",
+     "odd": 2.3
+    },
+    {
+     "h": "02:41",
+     "jogo": "Suíça x Inglaterra",
+     "odd": 2.02
+    },
+    {
+     "h": "02:44",
+     "jogo": "Áustria x Bélgica",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-0)",
+   "alvo": {
+    "h": "02:38",
+    "jogo": "Países Baixos x Sérvia",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1784770728635
+   },
+   "iniciadoEm": 1784770728635
+  },
   "cooldown": {
    "copa": 1784755394627,
    "premier": 1784753905522,
@@ -308,7 +342,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "acima de 1-0 (2-0)",
-   "n": 8,
+   "n": 9,
    "start": 1
   },
   "_obs": {}
