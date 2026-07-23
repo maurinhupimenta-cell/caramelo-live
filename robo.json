@@ -323,13 +323,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -57.2,
-  "ciclos": 281,
+  "saldo": -64.2,
+  "ciclos": 282,
   "greens": 195,
-  "redsCiclo": 37,
+  "redsCiclo": 38,
   "aborts": 0,
   "descartes": 49,
   "historico": [
+   {
+    "quando": "2026-07-23T15:50:05.591Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: coluna :44"
+   },
    {
     "quando": "2026-07-23T15:16:08.393Z",
     "resultado": "GREEN",
@@ -443,64 +449,45 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: odd 2.3"
-   },
-   {
-    "quando": "2026-07-22T18:30:52.030Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Senegal"
    }
   ],
   "consumidas": {
-   "premier": 1784819768198
+   "premier": 1784819768198,
+   "euro": 1784821805394
   },
   "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "16:41",
-     "jogo": "Alemanha x Romênia",
-     "odd": 1.9
+     "h": "17:04",
+     "jogo": "Avellaneda x Penarol",
+     "odd": 2.1
     },
     {
-     "h": "16:44",
-     "jogo": "Escócia x Eslováquia",
-     "odd": 1.98
+     "h": "16:49",
+     "jogo": "Montevideo x Buenos Aires",
+     "odd": 1.8
     },
     {
-     "h": "16:47",
-     "jogo": "França x Portugal",
-     "odd": 1.86
+     "h": "16:52",
+     "jogo": "Penarol x Agua Branca",
+     "odd": 2
     }
    ],
-   "gatilho": "coluna :44",
+   "gatilho": "seq RRGGG",
    "alvo": {
-    "h": "16:47",
-    "jogo": "França x Portugal",
-    "odd": 1.86,
-    "unidades": 4,
-    "desde": 1784821660400
+    "h": "17:04",
+    "jogo": "Avellaneda x Penarol",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1784821806501
    },
-   "iniciadoEm": 1784820841027,
-   "tiros": [
-    {
-     "h": "16:41",
-     "jogo": "Alemanha x Romênia",
-     "odd": 1.9,
-     "unidades": 1
-    },
-    {
-     "h": "16:44",
-     "jogo": "Escócia x Eslováquia",
-     "odd": 1.98,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1784821806501
   },
   "cooldown": {
-   "euro": 1784751266125,
+   "euro": 1784821805394,
    "super": 1784769747822,
    "premier": 1784819768198,
    "copa": 1784754506830
@@ -513,12 +500,12 @@
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
-   "2026-07-23": 1
+   "2026-07-23": -6
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":46",
-   "n": 16,
+   "tipo": "seq",
+   "chave": "RRGGG",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
