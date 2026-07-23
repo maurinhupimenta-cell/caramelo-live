@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -70.2,
-  "ciclos": 263,
-  "greens": 177,
+  "saldo": -68.6,
+  "ciclos": 264,
+  "greens": 178,
   "redsCiclo": 49,
   "aborts": 0,
   "descartes": 37,
   "historico": [
+   {
+    "quando": "2026-07-23T16:29:32.603Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "euro · Suíça x Croácia @2.15 (tiro 3) · gatilho: coluna :20"
+   },
    {
     "quando": "2026-07-23T16:20:46.111Z",
     "resultado": "RED_CICLO",
@@ -283,67 +289,48 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "super · Buenos Aires x Lima @2.02 (tiro 2) · gatilho: coluna :16"
-   },
-   {
-    "quando": "2026-07-22T16:02:26.822Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: coluna :53"
    }
   ],
   "consumidas": {
    "super": 1784820870398,
-   "premier": 1784823645492
+   "premier": 1784823645492,
+   "euro": 1784824172404
   },
   "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "17:20",
-     "jogo": "Polônia x Albânia",
-     "odd": 2.87
+     "h": "17:37",
+     "jogo": "Jordânia x Egito",
+     "odd": 2.1
     },
     {
-     "h": "17:23",
-     "jogo": "Portugal x Escócia",
-     "odd": 2.2
+     "h": "17:40",
+     "jogo": "Argentina x Iraque",
+     "odd": 2.35
     },
     {
-     "h": "17:26",
-     "jogo": "Suíça x Croácia",
+     "h": "17:43",
+     "jogo": "Equador x Colômbia",
      "odd": 2.15
     }
    ],
-   "gatilho": "coluna :20",
+   "gatilho": "time Argentina",
    "alvo": {
-    "h": "17:26",
-    "jogo": "Suíça x Croácia",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1784824026904
+    "h": "17:37",
+    "jogo": "Jordânia x Egito",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1784824173695
    },
-   "iniciadoEm": 1784823647595,
-   "tiros": [
-    {
-     "h": "17:20",
-     "jogo": "Polônia x Albânia",
-     "odd": 2.87,
-     "unidades": 1
-    },
-    {
-     "h": "17:23",
-     "jogo": "Portugal x Escócia",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1784824173695
   },
   "cooldown": {
    "copa": 1784820297592,
    "premier": 1784823645492,
-   "euro": 1784819562101,
+   "euro": 1784824172404,
    "super": 1784820870398
   },
   "dias": {
@@ -355,7 +342,7 @@
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
-   "2026-07-23": -11
+   "2026-07-23": -9.4
   },
   "_gatilhoAtual": {
    "tipo": "time",
