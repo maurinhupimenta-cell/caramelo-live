@@ -354,13 +354,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -60,
-  "ciclos": 348,
-  "greens": 235,
+  "saldo": -59.3,
+  "ciclos": 349,
+  "greens": 236,
   "redsCiclo": 43,
   "aborts": 0,
   "descartes": 70,
   "historico": [
+   {
+    "quando": "2026-07-24T17:29:40.707Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "premier · Palace x City @1.87 (tiro 2) · gatilho: coluna :24"
+   },
    {
     "quando": "2026-07-24T16:59:31.999Z",
     "resultado": "RED_CICLO",
@@ -474,61 +480,18 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-24T07:36:45.601Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · México x Gana @2.05 (tiro 1) · gatilho: coluna :37"
    }
   ],
   "consumidas": {
    "euro": 1784911112302,
-   "copa": 1784912371802
+   "copa": 1784912371802,
+   "premier": 1784914180599
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "18:24",
-     "jogo": "Southampton x Liverpool",
-     "odd": 2
-    },
-    {
-     "h": "18:27",
-     "jogo": "Palace x City",
-     "odd": 1.87
-    },
-    {
-     "h": "18:30",
-     "jogo": "Newcastle x Tottenham",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "coluna :24",
-   "alvo": {
-    "h": "18:27",
-    "jogo": "Palace x City",
-    "odd": 1.87,
-    "unidades": 2,
-    "desde": 1784914009500
-   },
-   "iniciadoEm": 1784913653809,
-   "tiros": [
-    {
-     "h": "18:24",
-     "jogo": "Southampton x Liverpool",
-     "odd": 2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784911112302,
    "super": 1784909429202,
-   "premier": 1784910044408,
+   "premier": 1784914180599,
    "copa": 1784912371802
   },
   "dias": {
@@ -540,7 +503,7 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 11.5
+   "2026-07-24": 12.2
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
