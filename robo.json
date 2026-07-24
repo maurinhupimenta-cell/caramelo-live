@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -51.1,
-  "ciclos": 313,
+  "saldo": -58.1,
+  "ciclos": 314,
   "greens": 206,
-  "redsCiclo": 53,
+  "redsCiclo": 54,
   "aborts": 0,
   "descartes": 54,
   "historico": [
+   {
+    "quando": "2026-07-24T14:05:57.198Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: coluna :55"
+   },
    {
     "quando": "2026-07-24T13:43:59.304Z",
     "resultado": "GREEN",
@@ -283,69 +289,20 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "premier · Chelsea x City @2.07 (tiro 2) · gatilho: time City"
-   },
-   {
-    "quando": "2026-07-24T04:33:49.105Z",
-    "resultado": "GREEN",
-    "unidades": 1.6,
-    "detalhe": "super · Rio de Janeiro x Porto Alegre @2.6 (tiro 1) · gatilho: time Buenos Aires"
    }
   ],
   "consumidas": {
    "premier": 1784899477111,
    "copa": 1784900037902,
-   "euro": 1784900639198
+   "euro": 1784900639198,
+   "super": 1784901957000
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "14:55",
-     "jogo": "Itaquera x Santiago",
-     "odd": 2.15
-    },
-    {
-     "h": "14:58",
-     "jogo": "Avellaneda x Montevideo",
-     "odd": 2.2
-    },
-    {
-     "h": "15:01",
-     "jogo": "Santos x Guayaquil",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "coluna :55",
-   "alvo": {
-    "h": "15:01",
-    "jogo": "Santos x Guayaquil",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1784901777504
-   },
-   "iniciadoEm": 1784901357511,
-   "tiros": [
-    {
-     "h": "14:55",
-     "jogo": "Itaquera x Santiago",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "14:58",
-     "jogo": "Avellaneda x Montevideo",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784900037902,
    "premier": 1784899477111,
    "euro": 1784900639198,
-   "super": 1784897704505
+   "super": 1784901957000
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -357,12 +314,12 @@
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
-   "2026-07-24": 10.6
+   "2026-07-24": 3.6
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":01",
-   "n": 14,
+   "tipo": "seq",
+   "chave": "RRRR",
+   "n": 27,
    "start": 1
   },
   "_obs": {}
