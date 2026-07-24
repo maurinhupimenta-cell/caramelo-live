@@ -348,7 +348,7 @@
    "tipo": "time",
    "chave": "Eslovênia",
    "n": 8,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
@@ -482,11 +482,39 @@
    }
   ],
   "consumidas": {
-   "euro": 1784868661904,
-   "super": 1784868908501,
    "premier": 1784870620609
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:56",
+     "jogo": "Albânia x Ucrânia",
+     "odd": 2.2
+    },
+    {
+     "h": "06:59",
+     "jogo": "Escócia x Eslovênia",
+     "odd": 2.15
+    },
+    {
+     "h": "07:02",
+     "jogo": "Geórgia x França",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "time Eslovênia",
+   "alvo": {
+    "h": "06:56",
+    "jogo": "Albânia x Ucrânia",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1784872263303
+   },
+   "iniciadoEm": 1784872263303
+  },
   "cooldown": {
    "euro": 1784868661904,
    "super": 1784868908501,
@@ -505,9 +533,9 @@
    "2026-07-24": 5.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGR",
-   "n": 10,
+   "tipo": "time",
+   "chave": "Eslovênia",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
