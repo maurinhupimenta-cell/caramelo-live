@@ -459,8 +459,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "13:18",
@@ -480,13 +480,21 @@
    ],
    "gatilho": "coluna :21",
    "alvo": {
-    "h": "13:18",
-    "jogo": "Southampton x Everton",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1784895346309
+    "h": "13:21",
+    "jogo": "Liverpool x Norwich",
+    "odd": 2,
+    "unidades": 2,
+    "desde": 1784895766411
    },
-   "iniciadoEm": 1784895346309
+   "iniciadoEm": 1784895346309,
+   "tiros": [
+    {
+     "h": "13:18",
+     "jogo": "Southampton x Everton",
+     "odd": 1.95,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784894863507,
@@ -507,7 +515,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":21",
+   "chave": ":24",
    "n": 13,
    "start": 1
   },
