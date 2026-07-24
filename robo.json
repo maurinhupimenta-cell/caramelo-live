@@ -294,7 +294,37 @@
   "consumidas": {
    "euro": 1784854082545
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:03",
+     "jogo": "Leicester x Liverpool",
+     "odd": 2.25
+    },
+    {
+     "h": "02:06",
+     "jogo": "Norwich x Palace",
+     "odd": 2.2
+    },
+    {
+     "h": "02:09",
+     "jogo": "City x Wolverhampton",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-1)",
+   "alvo": {
+    "h": "02:03",
+    "jogo": "Leicester x Liverpool",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1784854599645
+   },
+   "iniciadoEm": 1784854599645
+  },
   "cooldown": {
    "copa": 1784846938792,
    "premier": 1784843252494,
@@ -314,8 +344,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "1-0 / 0-1",
-   "n": 9,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
