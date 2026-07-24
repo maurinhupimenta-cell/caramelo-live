@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -52.1,
-  "ciclos": 312,
-  "greens": 205,
+  "saldo": -51.1,
+  "ciclos": 313,
+  "greens": 206,
   "redsCiclo": 53,
   "aborts": 0,
   "descartes": 54,
   "historico": [
+   {
+    "quando": "2026-07-24T13:43:59.304Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Países Baixos x França @1.98 (tiro 1) · gatilho: odd 2.55"
+   },
    {
     "quando": "2026-07-24T13:33:58.006Z",
     "resultado": "RED_CICLO",
@@ -283,54 +289,19 @@
     "resultado": "GREEN",
     "unidades": 1.6,
     "detalhe": "super · Rio de Janeiro x Porto Alegre @2.6 (tiro 1) · gatilho: time Buenos Aires"
-   },
-   {
-    "quando": "2026-07-24T04:29:54.109Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho time City) — liga REARMADA"
    }
   ],
   "consumidas": {
    "super": 1784897704505,
    "premier": 1784899477111,
-   "copa": 1784900037902
+   "copa": 1784900037902,
+   "euro": 1784900639198
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:41",
-     "jogo": "Países Baixos x França",
-     "odd": 1.98
-    },
-    {
-     "h": "14:44",
-     "jogo": "Albânia x Croácia",
-     "odd": 2.55
-    },
-    {
-     "h": "14:47",
-     "jogo": "Geórgia x Escócia",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "odd 2.55",
-   "alvo": {
-    "h": "14:41",
-    "jogo": "Países Baixos x França",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1784900040302
-   },
-   "iniciadoEm": 1784900040302
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784900037902,
    "premier": 1784899477111,
-   "euro": 1784894523997,
+   "euro": 1784900639198,
    "super": 1784897704505
   },
   "dias": {
@@ -343,12 +314,12 @@
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
-   "2026-07-24": 9.6
+   "2026-07-24": 10.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.55",
-   "n": 9,
+   "tipo": "coluna",
+   "chave": ":56",
+   "n": 14,
    "start": 3
   },
   "_obs": {}
