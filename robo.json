@@ -458,8 +458,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "04:11",
@@ -479,13 +479,21 @@
    ],
    "gatilho": "placar empate 1-1",
    "alvo": {
-    "h": "04:11",
-    "jogo": "Dinamarca x Portugal",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1784862514802
+    "h": "04:14",
+    "jogo": "Escócia x Espanha",
+    "odd": 1.85,
+    "unidades": 2,
+    "desde": 1784862893001
    },
-   "iniciadoEm": 1784862514802
+   "iniciadoEm": 1784862514802,
+   "tiros": [
+    {
+     "h": "04:11",
+     "jogo": "Dinamarca x Portugal",
+     "odd": 2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784857618600,
@@ -506,15 +514,10 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 9,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 11,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1784862794208,
-    "gatilho": "placar acima de 1-0 (2-1)"
-   }
-  }
+  "_obs": {}
  }
 }
