@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -64.1,
-  "ciclos": 297,
-  "greens": 195,
+  "saldo": -62.9,
+  "ciclos": 298,
+  "greens": 196,
   "redsCiclo": 52,
   "aborts": 0,
   "descartes": 50,
   "historico": [
+   {
+    "quando": "2026-07-24T05:50:41.305Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · Wolverhampton x Aston @2.2 (tiro 1) · gatilho: time Watford"
+   },
    {
     "quando": "2026-07-24T05:49:00.713Z",
     "resultado": "GREEN_OBS",
@@ -283,51 +289,16 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho time França) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-23T21:05:02.401Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
-   "super": 1784871608210
+   "super": 1784871608210,
+   "premier": 1784872241111
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:48",
-     "jogo": "Wolverhampton x Aston",
-     "odd": 2.2
-    },
-    {
-     "h": "06:51",
-     "jogo": "Watford x Palace",
-     "odd": 2.25
-    },
-    {
-     "h": "06:54",
-     "jogo": "Everton x Burnley",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "time Watford",
-   "alvo": {
-    "h": "06:48",
-    "jogo": "Wolverhampton x Aston",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1784871889204
-   },
-   "iniciadoEm": 1784871889204
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784846938792,
-   "premier": 1784868288001,
+   "premier": 1784872241111,
    "euro": 1784862710000,
    "super": 1784871608210
   },
@@ -341,20 +312,15 @@
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
-   "2026-07-24": -2.4
+   "2026-07-24": -1.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Watford",
-   "n": 16,
-   "start": 1
+   "chave": "Eslovênia",
+   "n": 8,
+   "start": 3
   },
-  "_obs": {
-   "euro": {
-    "desde": 1784870820607,
-    "gatilho": "seq GRRR"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -66.1,
