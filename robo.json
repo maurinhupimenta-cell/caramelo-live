@@ -483,7 +483,37 @@
   "consumidas": {
    "copa": 1784867941602
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:41",
+     "jogo": "Eslovênia x Dinamarca",
+     "odd": 2.25
+    },
+    {
+     "h": "05:44",
+     "jogo": "Eslováquia x Bélgica",
+     "odd": 1.93
+    },
+    {
+     "h": "05:47",
+     "jogo": "Croácia x Albânia",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time Bélgica",
+   "alvo": {
+    "h": "05:41",
+    "jogo": "Eslovênia x Dinamarca",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1784867999799
+   },
+   "iniciadoEm": 1784867999799
+  },
   "cooldown": {
    "euro": 1784863213104,
    "super": 1784860798007,
