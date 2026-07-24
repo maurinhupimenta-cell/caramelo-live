@@ -296,7 +296,37 @@
    "premier": 1784894913697,
    "copa": 1784895643704
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:52",
+     "jogo": "La Boca x Asuncion",
+     "odd": 2.4
+    },
+    {
+     "h": "13:55",
+     "jogo": "Quito x Itaquera",
+     "odd": 2.3
+    },
+    {
+     "h": "13:58",
+     "jogo": "Santos x Medellin",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "coluna :55",
+   "alvo": {
+    "h": "13:52",
+    "jogo": "La Boca x Asuncion",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1784896984403
+   },
+   "iniciadoEm": 1784896984403
+  },
   "cooldown": {
    "copa": 1784895643704,
    "premier": 1784894913697,
@@ -317,9 +347,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":16",
+   "chave": ":55",
    "n": 13,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
