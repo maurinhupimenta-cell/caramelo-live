@@ -349,18 +349,24 @@
    "tipo": "time",
    "chave": "Brasil",
    "n": 11,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -56.7,
-  "ciclos": 343,
-  "greens": 232,
+  "saldo": -54.9,
+  "ciclos": 344,
+  "greens": 233,
   "redsCiclo": 42,
   "aborts": 0,
   "descartes": 69,
   "historico": [
+   {
+    "quando": "2026-07-24T16:10:29.400Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "super · Santos x La Plata @2.2 (tiro 3) · gatilho: coluna :04"
+   },
    {
     "quando": "2026-07-24T15:44:58.810Z",
     "resultado": "RED_CICLO",
@@ -474,65 +480,46 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "super · Sao Paulo x Medellin @1.95 (tiro 2) · gatilho: placar empate 1-1"
-   },
-   {
-    "quando": "2026-07-24T06:06:00.903Z",
-    "resultado": "GREEN",
-    "unidades": 0.8,
-    "detalhe": "euro · Geórgia x França @1.95 (tiro 3) · gatilho: time Eslovênia"
    }
   ],
   "consumidas": {
-   "copa": 1784907898801
+   "copa": 1784907898801,
+   "super": 1784909429202
   },
   "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "17:01",
-     "jogo": "Rio de Janeiro x La Boca",
-     "odd": 2.02
+     "h": "17:18",
+     "jogo": "Brighton x United",
+     "odd": 1.87
     },
     {
-     "h": "17:04",
-     "jogo": "Lima x Guayaquil",
-     "odd": 1.83
+     "h": "17:21",
+     "jogo": "Norwich x City",
+     "odd": 1.9
     },
     {
-     "h": "17:07",
-     "jogo": "Santos x La Plata",
-     "odd": 2.2
+     "h": "17:24",
+     "jogo": "Brighton x Everton",
+     "odd": 1.8
     }
    ],
-   "gatilho": "coluna :04",
+   "gatilho": "coluna :21",
    "alvo": {
-    "h": "17:07",
-    "jogo": "Santos x La Plata",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1784909200111
+    "h": "17:18",
+    "jogo": "Brighton x United",
+    "odd": 1.87,
+    "unidades": 1,
+    "desde": 1784909431209
    },
-   "iniciadoEm": 1784908685009,
-   "tiros": [
-    {
-     "h": "17:01",
-     "jogo": "Rio de Janeiro x La Boca",
-     "odd": 2.02,
-     "unidades": 1
-    },
-    {
-     "h": "17:04",
-     "jogo": "Lima x Guayaquil",
-     "odd": 1.83,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1784909431209
   },
   "cooldown": {
    "euro": 1784905320800,
-   "super": 1784904900009,
+   "super": 1784909429202,
    "premier": 1784903032205,
    "copa": 1784907898801
   },
@@ -545,13 +532,13 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 14.8
+   "2026-07-24": 16.6
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":08",
+   "chave": ":21",
    "n": 17,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
