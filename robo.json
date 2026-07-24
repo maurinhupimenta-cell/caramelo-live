@@ -347,18 +347,30 @@
    "tipo": "time",
    "chave": "Sérvia",
    "n": 9,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -71.5,
-  "ciclos": 311,
+  "ciclos": 313,
   "greens": 210,
   "redsCiclo": 41,
   "aborts": 0,
-  "descartes": 60,
+  "descartes": 62,
   "historico": [
+   {
+    "quando": "2026-07-24T03:02:18.007Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
+   },
+   {
+    "quando": "2026-07-24T02:57:00.201Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho placar empate 1-1) — liga REARMADA"
+   },
    {
     "quando": "2026-07-24T02:39:58.202Z",
     "resultado": "GREEN",
@@ -466,18 +478,6 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-23T18:47:41.801Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: odd 1.9"
-   },
-   {
-    "quando": "2026-07-23T18:37:59.098Z",
-    "resultado": "GREEN",
-    "unidades": 0.8,
-    "detalhe": "super · Lima x Asuncion @1.9 (tiro 2) · gatilho: seq GRRGG"
    }
   ],
   "consumidas": {
@@ -529,12 +529,13 @@
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
-   "2026-07-23": -13.3
+   "2026-07-23": -13.3,
+   "2026-07-24": 0
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 10,
+   "chave": "empate 1-1",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
