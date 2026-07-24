@@ -297,8 +297,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "15:56",
@@ -318,13 +318,21 @@
    ],
    "gatilho": "seq GRGRR",
    "alvo": {
-    "h": "15:56",
-    "jogo": "Escócia x Áustria",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1784904786206
+    "h": "15:59",
+    "jogo": "França x Croácia",
+    "odd": 2.1,
+    "unidades": 2,
+    "desde": 1784905141202
    },
-   "iniciadoEm": 1784904786206
+   "iniciadoEm": 1784904786206,
+   "tiros": [
+    {
+     "h": "15:56",
+     "jogo": "Escócia x Áustria",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784904783910,
@@ -488,8 +496,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "15:56",
@@ -509,13 +517,21 @@
    ],
    "gatilho": "coluna :59",
    "alvo": {
-    "h": "15:56",
-    "jogo": "Escócia x Áustria",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1784904960304
+    "h": "15:59",
+    "jogo": "França x Croácia",
+    "odd": 1.87,
+    "unidades": 2,
+    "desde": 1784905141402
    },
-   "iniciadoEm": 1784904960304
+   "iniciadoEm": 1784904960304,
+   "tiros": [
+    {
+     "h": "15:56",
+     "jogo": "Escócia x Áustria",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784898838311,
@@ -536,9 +552,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":59",
-   "n": 15,
-   "start": 1
+   "chave": ":08",
+   "n": 16,
+   "start": 2
   },
   "_obs": {}
  }
