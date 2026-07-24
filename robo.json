@@ -296,8 +296,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "23:15",
@@ -317,13 +317,21 @@
    ],
    "gatilho": "seq GRGRG",
    "alvo": {
-    "h": "23:15",
-    "jogo": "Leeds x United",
-    "odd": 2.45,
-    "unidades": 1,
-    "desde": 1784931153401
+    "h": "23:18",
+    "jogo": "Liverpool x Norwich",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1784931478001
    },
-   "iniciadoEm": 1784931153401
+   "iniciadoEm": 1784931153401,
+   "tiros": [
+    {
+     "h": "23:15",
+     "jogo": "Leeds x United",
+     "odd": 2.45,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784930673801,
