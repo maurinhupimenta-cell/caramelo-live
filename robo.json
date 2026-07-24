@@ -324,13 +324,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -71.5,
-  "ciclos": 314,
-  "greens": 210,
+  "saldo": -71.2,
+  "ciclos": 315,
+  "greens": 211,
   "redsCiclo": 41,
   "aborts": 0,
   "descartes": 63,
   "historico": [
+   {
+    "quando": "2026-07-24T03:20:13.300Z",
+    "resultado": "GREEN",
+    "unidades": 0.3,
+    "detalhe": "euro · Países Baixos x Suíça @1.83 (tiro 3) · gatilho: placar empate 1-1"
+   },
    {
     "quando": "2026-07-24T03:13:14.208Z",
     "resultado": "GREEN_OBS",
@@ -444,65 +450,16 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho coluna :03) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-23T19:43:18.391Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "super · Porto Alegre x Penarol @2.35 (tiro 1) · gatilho: seq GRRGG"
    }
   ],
   "consumidas": {
    "premier": 1784860069305,
-   "super": 1784860798007
+   "super": 1784860798007,
+   "euro": 1784863213104
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:11",
-     "jogo": "Dinamarca x Portugal",
-     "odd": 2
-    },
-    {
-     "h": "04:14",
-     "jogo": "Escócia x Espanha",
-     "odd": 1.85
-    },
-    {
-     "h": "04:17",
-     "jogo": "Países Baixos x Suíça",
-     "odd": 1.83
-    }
-   ],
-   "gatilho": "placar empate 1-1",
-   "alvo": {
-    "h": "04:17",
-    "jogo": "Países Baixos x Suíça",
-    "odd": 1.83,
-    "unidades": 4,
-    "desde": 1784863093206
-   },
-   "iniciadoEm": 1784862514802,
-   "tiros": [
-    {
-     "h": "04:11",
-     "jogo": "Dinamarca x Portugal",
-     "odd": 2,
-     "unidades": 1
-    },
-    {
-     "h": "04:14",
-     "jogo": "Escócia x Espanha",
-     "odd": 1.85,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784857618600,
+   "euro": 1784863213104,
    "super": 1784860798007,
    "premier": 1784860069305,
    "copa": 1784824619697
@@ -516,13 +473,13 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 0
+   "2026-07-24": 0.3
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Bélgica",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
