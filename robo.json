@@ -294,7 +294,37 @@
   "consumidas": {
    "super": 1784860074698
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:51",
+     "jogo": "Chelsea x United",
+     "odd": 2.2
+    },
+    {
+     "h": "03:54",
+     "jogo": "Watford x Southampton",
+     "odd": 2.4
+    },
+    {
+     "h": "03:57",
+     "jogo": "Burnley x Leeds",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "time Watford",
+   "alvo": {
+    "h": "03:51",
+    "jogo": "Chelsea x United",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1784861449506
+   },
+   "iniciadoEm": 1784861449506
+  },
   "cooldown": {
    "copa": 1784846938792,
    "premier": 1784855555246,
@@ -314,9 +344,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Buenos Aires",
-   "n": 9,
-   "start": 1
+   "chave": "Watford",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  },
@@ -453,7 +483,37 @@
    "premier": 1784860069305,
    "super": 1784860798007
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:04",
+     "jogo": "Curação x Qatar",
+     "odd": 1.9
+    },
+    {
+     "h": "03:46",
+     "jogo": "Suécia x Bélgica",
+     "odd": 2.15
+    },
+    {
+     "h": "03:49",
+     "jogo": "Nova Zelândia x Qatar",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-1)",
+   "alvo": {
+    "h": "04:04",
+    "jogo": "Curação x Qatar",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1784861219199
+   },
+   "iniciadoEm": 1784861219199
+  },
   "cooldown": {
    "euro": 1784857618600,
    "super": 1784860798007,
@@ -473,7 +533,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "acima de 1-0 (2-1)",
-   "n": 9,
+   "n": 10,
    "start": 1
   },
   "_obs": {}
