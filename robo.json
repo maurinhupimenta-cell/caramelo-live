@@ -349,18 +349,24 @@
    "tipo": "time",
    "chave": "Eslovênia",
    "n": 12,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -61.4,
-  "ciclos": 328,
-  "greens": 220,
+  "saldo": -60.4,
+  "ciclos": 329,
+  "greens": 221,
   "redsCiclo": 41,
   "aborts": 0,
   "descartes": 67,
   "historico": [
+   {
+    "quando": "2026-07-24T07:36:45.601Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · México x Gana @2.05 (tiro 1) · gatilho: coluna :37"
+   },
    {
     "quando": "2026-07-24T07:28:48.002Z",
     "resultado": "GREEN",
@@ -474,54 +480,19 @@
     "resultado": "GREEN",
     "unidades": 0.8,
     "detalhe": "premier · Wolverhampton x Everton @1.83 (tiro 1) · gatilho: time Wolverhampton"
-   },
-   {
-    "quando": "2026-07-24T01:46:58.800Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar acima de 1-0 (2-0)"
    }
   ],
   "consumidas": {
    "premier": 1784877097011,
-   "euro": 1784878127806
+   "euro": 1784878127806,
+   "copa": 1784878605404
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "08:34",
-     "jogo": "México x Gana",
-     "odd": 2.05
-    },
-    {
-     "h": "08:37",
-     "jogo": "Portugal x Bélgica",
-     "odd": 1.93
-    },
-    {
-     "h": "08:40",
-     "jogo": "França x Escócia",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "coluna :37",
-   "alvo": {
-    "h": "08:34",
-    "jogo": "México x Gana",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1784878129308
-   },
-   "iniciadoEm": 1784878129308
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784878127806,
    "super": 1784873579511,
    "premier": 1784877097011,
-   "copa": 1784874307407
+   "copa": 1784878605404
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -532,13 +503,13 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 10.1
+   "2026-07-24": 11.1
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":37",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
