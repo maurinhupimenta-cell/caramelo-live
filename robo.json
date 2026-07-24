@@ -487,7 +487,37 @@
    "copa": 1784912371802,
    "premier": 1784914180599
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:25",
+     "jogo": "Rio de Janeiro x Asuncion",
+     "odd": 2.07
+    },
+    {
+     "h": "18:28",
+     "jogo": "Sao Paulo x Santiago",
+     "odd": 1.83
+    },
+    {
+     "h": "18:31",
+     "jogo": "Agua Branca x Belo Horizonte",
+     "odd": 1.83
+    }
+   ],
+   "gatilho": "coluna :28",
+   "alvo": {
+    "h": "18:25",
+    "jogo": "Rio de Janeiro x Asuncion",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1784914192911
+   },
+   "iniciadoEm": 1784914192911
+  },
   "cooldown": {
    "euro": 1784911112302,
    "super": 1784909429202,
