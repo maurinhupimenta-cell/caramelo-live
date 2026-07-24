@@ -348,7 +348,7 @@
    "tipo": "odd",
    "chave": "2.07",
    "n": 15,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
@@ -485,7 +485,37 @@
    "euro": 1784916661602,
    "copa": 1784916979098
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:18",
+     "jogo": "Leeds x Liverpool",
+     "odd": 2.1
+    },
+    {
+     "h": "20:21",
+     "jogo": "Chelsea x City",
+     "odd": 1.85
+    },
+    {
+     "h": "19:42",
+     "jogo": "Leeds x Burnley",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "coluna :21",
+   "alvo": {
+    "h": "20:18",
+    "jogo": "Leeds x Liverpool",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1784920125808
+   },
+   "iniciadoEm": 1784920125808
+  },
   "cooldown": {
    "euro": 1784916661602,
    "super": 1784914288809,
@@ -504,9 +534,9 @@
    "2026-07-24": 15.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.87",
-   "n": 17,
+   "tipo": "coluna",
+   "chave": ":21",
+   "n": 20,
    "start": 3
   },
   "_obs": {}
