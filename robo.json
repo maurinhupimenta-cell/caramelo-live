@@ -347,18 +347,24 @@
    "tipo": "time",
    "chave": "City",
    "n": 12,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -71.2,
-  "ciclos": 318,
+  "ciclos": 319,
   "greens": 211,
   "redsCiclo": 41,
   "aborts": 0,
-  "descartes": 66,
+  "descartes": 67,
   "historico": [
+   {
+    "quando": "2026-07-24T04:35:51.705Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho seq RRGR) — liga REARMADA"
+   },
    {
     "quando": "2026-07-24T04:23:08.706Z",
     "resultado": "GREEN_OBS",
@@ -472,12 +478,6 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho seq GGGRR) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-23T20:09:58.093Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "euro · Suíça x Bélgica @1.85 (tiro 1) · gatilho: seq GRRGG"
    }
   ],
   "consumidas": {},
@@ -549,6 +549,11 @@
    "n": 9,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1784867751705,
+    "gatilho": "seq RRGR"
+   }
+  }
  }
 }
