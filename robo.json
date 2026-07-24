@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -62.9,
-  "ciclos": 298,
-  "greens": 196,
+  "saldo": -61.1,
+  "ciclos": 299,
+  "greens": 197,
   "redsCiclo": 52,
   "aborts": 0,
   "descartes": 50,
   "historico": [
+   {
+    "quando": "2026-07-24T06:06:00.700Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "euro · Geórgia x França @2.2 (tiro 3) · gatilho: time Eslovênia"
+   },
    {
     "quando": "2026-07-24T05:50:41.305Z",
     "resultado": "GREEN",
@@ -283,67 +289,18 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time França"
-   },
-   {
-    "quando": "2026-07-23T21:05:58.592Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho time França) — liga REARMADA"
    }
   ],
   "consumidas": {
    "super": 1784871608210,
-   "premier": 1784872241111
+   "premier": 1784872241111,
+   "euro": 1784873160504
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "06:56",
-     "jogo": "Albânia x Ucrânia",
-     "odd": 2.62
-    },
-    {
-     "h": "06:59",
-     "jogo": "Escócia x Eslovênia",
-     "odd": 2.6
-    },
-    {
-     "h": "07:02",
-     "jogo": "Geórgia x França",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Eslovênia",
-   "alvo": {
-    "h": "07:02",
-    "jogo": "Geórgia x França",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1784873039408
-   },
-   "iniciadoEm": 1784872251504,
-   "tiros": [
-    {
-     "h": "06:56",
-     "jogo": "Albânia x Ucrânia",
-     "odd": 2.62,
-     "unidades": 1
-    },
-    {
-     "h": "06:59",
-     "jogo": "Escócia x Eslovênia",
-     "odd": 2.6,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784846938792,
    "premier": 1784872241111,
-   "euro": 1784862710000,
+   "euro": 1784873160504,
    "super": 1784871608210
   },
   "dias": {
@@ -356,7 +313,7 @@
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
-   "2026-07-24": -1.2
+   "2026-07-24": 0.6
   },
   "_gatilhoAtual": {
    "tipo": "time",
@@ -367,13 +324,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -66.1,
-  "ciclos": 323,
-  "greens": 215,
+  "saldo": -65.3,
+  "ciclos": 324,
+  "greens": 216,
   "redsCiclo": 41,
   "aborts": 0,
   "descartes": 67,
   "historico": [
+   {
+    "quando": "2026-07-24T06:06:00.903Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "euro · Geórgia x França @1.95 (tiro 3) · gatilho: time Eslovênia"
+   },
    {
     "quando": "2026-07-24T05:23:40.805Z",
     "resultado": "GREEN",
@@ -487,64 +450,15 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "euro · República Tcheca x Eslovênia @2.4 (tiro 1) · gatilho: coluna :44"
-   },
-   {
-    "quando": "2026-07-23T21:44:00.000Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · França x Geórgia @2.05 (tiro 1) · gatilho: coluna :44"
    }
   ],
   "consumidas": {
-   "premier": 1784870620609
+   "premier": 1784870620609,
+   "euro": 1784873160705
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "06:56",
-     "jogo": "Albânia x Ucrânia",
-     "odd": 2.2
-    },
-    {
-     "h": "06:59",
-     "jogo": "Escócia x Eslovênia",
-     "odd": 2.15
-    },
-    {
-     "h": "07:02",
-     "jogo": "Geórgia x França",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "time Eslovênia",
-   "alvo": {
-    "h": "07:02",
-    "jogo": "Geórgia x França",
-    "odd": 1.95,
-    "unidades": 4,
-    "desde": 1784873039699
-   },
-   "iniciadoEm": 1784872263303,
-   "tiros": [
-    {
-     "h": "06:56",
-     "jogo": "Albânia x Ucrânia",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "06:59",
-     "jogo": "Escócia x Eslovênia",
-     "odd": 2.15,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784868661904,
+   "euro": 1784873160705,
    "super": 1784868908501,
    "premier": 1784870620609,
    "copa": 1784867941602
@@ -558,12 +472,12 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 5.4
+   "2026-07-24": 6.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Lima",
-   "n": 13,
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 18,
    "start": 1
   },
   "_obs": {}
