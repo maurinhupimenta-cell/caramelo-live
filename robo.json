@@ -348,18 +348,24 @@
    "tipo": "coluna",
    "chave": ":16",
    "n": 8,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -63.5,
-  "ciclos": 326,
-  "greens": 218,
+  "saldo": -62.7,
+  "ciclos": 327,
+  "greens": 219,
   "redsCiclo": 41,
   "aborts": 0,
   "descartes": 67,
   "historico": [
+   {
+    "quando": "2026-07-24T07:11:37.204Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "premier · Newcastle x Wolverhampton @1.76 (tiro 1) · gatilho: seq RRGR"
+   },
    {
     "quando": "2026-07-24T06:25:07.603Z",
     "resultado": "GREEN",
@@ -473,54 +479,18 @@
     "resultado": "GREEN",
     "unidades": 0.6,
     "detalhe": "super · Lima x Sao Paulo @1.8 (tiro 2) · gatilho: placar 1-0 / 0-1"
-   },
-   {
-    "quando": "2026-07-24T01:19:59.609Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho placar 1-0 / 0-1) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "euro": 1784873160705,
    "super": 1784873579511,
-   "copa": 1784874307407
+   "copa": 1784874307407,
+   "premier": 1784877097011
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "08:09",
-     "jogo": "Newcastle x Wolverhampton",
-     "odd": 1.76
-    },
-    {
-     "h": "08:12",
-     "jogo": "Watford x United",
-     "odd": 1.98
-    },
-    {
-     "h": "08:15",
-     "jogo": "Palace x Leeds",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "seq RRGR",
-   "alvo": {
-    "h": "08:09",
-    "jogo": "Newcastle x Wolverhampton",
-    "odd": 1.76,
-    "unidades": 1,
-    "desde": 1784876745201
-   },
-   "iniciadoEm": 1784876745201
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784873160705,
    "super": 1784873579511,
-   "premier": 1784870620609,
+   "premier": 1784877097011,
    "copa": 1784874307407
   },
   "dias": {
@@ -532,13 +502,13 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 8
+   "2026-07-24": 8.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGR",
-   "n": 12,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":21",
+   "n": 8,
+   "start": 2
   },
   "_obs": {}
  }
