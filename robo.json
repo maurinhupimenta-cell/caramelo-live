@@ -292,7 +292,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:55",
+     "jogo": "Nova Zelândia x Croácia",
+     "odd": 2.3
+    },
+    {
+     "h": "22:58",
+     "jogo": "França x Bélgica",
+     "odd": 2.3
+    },
+    {
+     "h": "23:01",
+     "jogo": "Curação x Iraque",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "time Croácia",
+   "alvo": {
+    "h": "22:55",
+    "jogo": "Nova Zelândia x Croácia",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1784929936401
+   },
+   "iniciadoEm": 1784929936401
+  },
   "cooldown": {
    "copa": 1784922518809,
    "premier": 1784912925401,
@@ -312,21 +342,27 @@
    "2026-07-24": 11.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Coreia do Sul",
-   "n": 13,
+   "tipo": "seq",
+   "chave": "GRGGR",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -60.4,
-  "ciclos": 357,
+  "ciclos": 358,
   "greens": 242,
   "redsCiclo": 44,
   "aborts": 0,
-  "descartes": 71,
+  "descartes": 72,
   "historico": [
+   {
+    "quando": "2026-07-24T21:54:53.211Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho seq GGGG) — liga REARMADA"
+   },
    {
     "quando": "2026-07-24T20:05:55.402Z",
     "resultado": "GREEN",
@@ -440,12 +476,6 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · Aston x Norwich @2.02 (tiro 2) · gatilho: coluna :21"
-   },
-   {
-    "quando": "2026-07-24T13:31:58.302Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "super · Guayaquil x Santos @1.95 (tiro 1) · gatilho: coluna :28"
    }
   ],
   "consumidas": {},
@@ -503,6 +533,11 @@
    "n": 12,
    "start": 2
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1784930093210,
+    "gatilho": "seq GGGG"
+   }
+  }
  }
 }
