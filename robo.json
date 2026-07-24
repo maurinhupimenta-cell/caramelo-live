@@ -297,8 +297,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "14:25",
@@ -318,13 +318,21 @@
    ],
    "gatilho": "seq GRGR",
    "alvo": {
-    "h": "14:25",
-    "jogo": "África do Sul x Brasil",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1784899480508
+    "h": "14:28",
+    "jogo": "Japão x Gana",
+    "odd": 2.5,
+    "unidades": 2,
+    "desde": 1784899978507
    },
-   "iniciadoEm": 1784899480508
+   "iniciadoEm": 1784899480508,
+   "tiros": [
+    {
+     "h": "14:25",
+     "jogo": "África do Sul x Brasil",
+     "odd": 2.4,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784895643704,
@@ -345,10 +353,10 @@
    "2026-07-24": 16.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGRR",
+   "tipo": "odd",
+   "chave": "2.55",
    "n": 9,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
