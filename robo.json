@@ -294,7 +294,37 @@
   "consumidas": {
    "super": 1784867628911
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:39",
+     "jogo": "Liverpool x Palace",
+     "odd": 2.2
+    },
+    {
+     "h": "05:42",
+     "jogo": "Chelsea x City",
+     "odd": 2.07
+    },
+    {
+     "h": "05:45",
+     "jogo": "West Ham x Brentford",
+     "odd": 2.55
+    }
+   ],
+   "gatilho": "time City",
+   "alvo": {
+    "h": "05:39",
+    "jogo": "Liverpool x Palace",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1784867638308
+   },
+   "iniciadoEm": 1784867638308
+  },
   "cooldown": {
    "copa": 1784846938792,
    "premier": 1784861804805,
@@ -508,9 +538,9 @@
    "2026-07-24": 0.3
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 13,
+   "tipo": "time",
+   "chave": "Lima",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
