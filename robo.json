@@ -451,7 +451,45 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "02:22",
+     "jogo": "Porto Alegre x Agua Branca",
+     "odd": 2.1
+    },
+    {
+     "h": "02:25",
+     "jogo": "Lima x Sao Paulo",
+     "odd": 1.8
+    },
+    {
+     "h": "02:28",
+     "jogo": "Santos x Medellin",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "placar 1-0 / 0-1",
+   "alvo": {
+    "h": "02:25",
+    "jogo": "Lima x Sao Paulo",
+    "odd": 1.8,
+    "unidades": 2,
+    "desde": 1784856420205
+   },
+   "iniciadoEm": 1784856000797,
+   "tiros": [
+    {
+     "h": "02:22",
+     "jogo": "Porto Alegre x Agua Branca",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1784846771497,
    "super": 1784835798195,
@@ -469,16 +507,11 @@
    "2026-07-23": -7.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.98",
-   "n": 23,
+   "tipo": "placar",
+   "chave": "1-0 / 0-1",
+   "n": 10,
    "start": 1
   },
-  "_obs": {
-   "super": {
-    "desde": 1784855459248,
-    "gatilho": "placar 1-0 / 0-1"
-   }
-  }
+  "_obs": {}
  }
 }
