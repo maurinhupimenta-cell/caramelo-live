@@ -343,16 +343,11 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Buenos Aires",
-   "n": 11,
-   "start": 1
+   "chave": "City",
+   "n": 12,
+   "start": 3
   },
-  "_obs": {
-   "premier": {
-    "desde": 1784866979006,
-    "gatilho": "time City"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -71.2,
@@ -486,8 +481,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:28",
@@ -507,13 +502,21 @@
    ],
    "gatilho": "time Senegal",
    "alvo": {
-    "h": "05:28",
-    "jogo": "Arábia Saudita x Argélia",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1784866988708
+    "h": "05:31",
+    "jogo": "Senegal x Equador",
+    "odd": 2,
+    "unidades": 2,
+    "desde": 1784867556900
    },
-   "iniciadoEm": 1784866988708
+   "iniciadoEm": 1784866988708,
+   "tiros": [
+    {
+     "h": "05:28",
+     "jogo": "Arábia Saudita x Argélia",
+     "odd": 1.93,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784863213104,
@@ -533,9 +536,9 @@
    "2026-07-24": 0.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Senegal",
-   "n": 9,
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
