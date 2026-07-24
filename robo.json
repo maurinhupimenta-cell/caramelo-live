@@ -295,7 +295,37 @@
    "copa": 1784917859504,
    "euro": 1784919600700
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:13",
+     "jogo": "Santiago x Santos",
+     "odd": 2.2
+    },
+    {
+     "h": "20:16",
+     "jogo": "Agua Branca x Guayaquil",
+     "odd": 2.07
+    },
+    {
+     "h": "20:19",
+     "jogo": "Itaquera x Penarol",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "odd 2.07",
+   "alvo": {
+    "h": "20:13",
+    "jogo": "Santiago x Santos",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1784919860108
+   },
+   "iniciadoEm": 1784919860108
+  },
   "cooldown": {
    "copa": 1784917859504,
    "premier": 1784912925401,
@@ -316,9 +346,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.75",
-   "n": 10,
-   "start": 1
+   "chave": "2.07",
+   "n": 15,
+   "start": 3
   },
   "_obs": {}
  },
