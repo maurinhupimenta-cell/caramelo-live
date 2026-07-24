@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -63.9,
-  "ciclos": 318,
-  "greens": 207,
+  "saldo": -61.9,
+  "ciclos": 319,
+  "greens": 208,
   "redsCiclo": 55,
   "aborts": 0,
   "descartes": 56,
   "historico": [
+   {
+    "quando": "2026-07-24T15:39:57.405Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "super · Montevideo x Porto Alegre @2.5 (tiro 2) · gatilho: odd 2.5"
+   },
    {
     "quando": "2026-07-24T15:22:04.508Z",
     "resultado": "GREEN_OBS",
@@ -283,62 +289,49 @@
     "resultado": "GREEN",
     "unidades": 2.1,
     "detalhe": "premier · Leeds x Leicester @2.55 (tiro 2) · gatilho: time Leeds"
-   },
-   {
-    "quando": "2026-07-24T06:06:00.700Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "euro · Geórgia x França @2.2 (tiro 3) · gatilho: time Eslovênia"
    }
   ],
   "consumidas": {
    "copa": 1784904783910,
-   "euro": 1784905320513
+   "euro": 1784905320513,
+   "super": 1784907597210
   },
   "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "16:31",
-     "jogo": "Guayaquil x Santiago",
+     "h": "16:42",
+     "jogo": "Palace x Aston",
+     "odd": 2.3
+    },
+    {
+     "h": "16:45",
+     "jogo": "Newcastle x Burnley",
      "odd": 2.02
     },
     {
-     "h": "16:34",
-     "jogo": "Montevideo x Porto Alegre",
-     "odd": 2.5
-    },
-    {
-     "h": "15:43",
-     "jogo": "Sao Paulo x Penarol",
-     "odd": 2.25
+     "h": "16:48",
+     "jogo": "United x Liverpool",
+     "odd": 2.2
     }
    ],
-   "gatilho": "odd 2.5",
+   "gatilho": "odd 2.02",
    "alvo": {
-    "h": "16:34",
-    "jogo": "Montevideo x Porto Alegre",
-    "odd": 2.5,
-    "unidades": 2,
-    "desde": 1784907356107
+    "h": "16:42",
+    "jogo": "Palace x Aston",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1784907599505
    },
-   "iniciadoEm": 1784906526401,
-   "tiros": [
-    {
-     "h": "16:31",
-     "jogo": "Guayaquil x Santiago",
-     "odd": 2.02,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1784907599505
   },
   "cooldown": {
    "copa": 1784904783910,
    "premier": 1784899477111,
    "euro": 1784905320513,
-   "super": 1784901957000
+   "super": 1784907597210
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -350,7 +343,7 @@
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
-   "2026-07-24": -2.2
+   "2026-07-24": -0.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
