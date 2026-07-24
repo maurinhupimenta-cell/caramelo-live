@@ -353,13 +353,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -55,
-  "ciclos": 336,
-  "greens": 226,
+  "saldo": -54.1,
+  "ciclos": 337,
+  "greens": 227,
   "redsCiclo": 41,
   "aborts": 0,
   "descartes": 69,
   "historico": [
+   {
+    "quando": "2026-07-24T13:13:58.504Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Eslováquia x Bélgica @1.93 (tiro 1) · gatilho: coluna :08"
+   },
    {
     "quando": "2026-07-24T13:11:02.506Z",
     "resultado": "GREEN",
@@ -473,52 +479,17 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho placar 1-0 / 0-1) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-24T04:22:59.098Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
    "super": 1784895344801,
    "premier": 1784895868203,
-   "copa": 1784898662401
+   "copa": 1784898662401,
+   "euro": 1784898838311
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:08",
-     "jogo": "Eslováquia x Bélgica",
-     "odd": 1.93
-    },
-    {
-     "h": "14:11",
-     "jogo": "Turquia x Países Baixos",
-     "odd": 1.95
-    },
-    {
-     "h": "14:14",
-     "jogo": "Escócia x Bélgica",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "coluna :08",
-   "alvo": {
-    "h": "14:08",
-    "jogo": "Eslováquia x Bélgica",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1784898718010
-   },
-   "iniciadoEm": 1784898718010
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784894863507,
+   "euro": 1784898838311,
    "super": 1784895344801,
    "premier": 1784895868203,
    "copa": 1784898662401
@@ -532,7 +503,7 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 16.5
+   "2026-07-24": 17.4
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
