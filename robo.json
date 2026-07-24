@@ -296,7 +296,37 @@
    "premier": 1784931642504,
    "super": 1784933250210
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:53",
+     "jogo": "Romênia x França",
+     "odd": 2.02
+    },
+    {
+     "h": "23:56",
+     "jogo": "Croácia x Turquia",
+     "odd": 2.4
+    },
+    {
+     "h": "00:02",
+     "jogo": "Países Baixos x França",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "coluna :56",
+   "alvo": {
+    "h": "23:53",
+    "jogo": "Romênia x França",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1784933429110
+   },
+   "iniciadoEm": 1784933429110
+  },
   "cooldown": {
    "copa": 1784930673801,
    "premier": 1784931642504,
@@ -316,9 +346,9 @@
    "2026-07-24": 7.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRGG",
-   "n": 11,
+   "tipo": "coluna",
+   "chave": ":56",
+   "n": 23,
    "start": 1
   },
   "_obs": {}
@@ -505,10 +535,10 @@
    "2026-07-24": 13
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGGR",
-   "n": 9,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.8",
+   "n": 10,
+   "start": 3
   },
   "_obs": {}
  }
