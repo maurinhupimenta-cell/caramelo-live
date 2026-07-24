@@ -357,7 +357,12 @@
    "n": 9,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1784868179914,
+    "gatilho": "seq RRRR"
+   }
+  }
  },
  "ambas": {
   "saldo": -70.1,
@@ -493,8 +498,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:41",
@@ -514,13 +519,21 @@
    ],
    "gatilho": "time Bélgica",
    "alvo": {
-    "h": "05:41",
-    "jogo": "Eslovênia x Dinamarca",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1784867999799
+    "h": "05:44",
+    "jogo": "Eslováquia x Bélgica",
+    "odd": 1.93,
+    "unidades": 2,
+    "desde": 1784868241407
    },
-   "iniciadoEm": 1784867999799
+   "iniciadoEm": 1784867999799,
+   "tiros": [
+    {
+     "h": "05:41",
+     "jogo": "Eslovênia x Dinamarca",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784863213104,
@@ -542,7 +555,7 @@
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Lima",
-   "n": 9,
+   "n": 10,
    "start": 1
   },
   "_obs": {}
