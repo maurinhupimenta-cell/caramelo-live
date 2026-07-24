@@ -297,8 +297,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "15:37",
@@ -318,13 +318,21 @@
    ],
    "gatilho": "time Uruguai",
    "alvo": {
-    "h": "15:37",
-    "jogo": "Colômbia x Bósnia e Herzegovina",
+    "h": "15:40",
+    "jogo": "Uruguai x Curação",
     "odd": 2.15,
-    "unidades": 1,
-    "desde": 1784903697607
+    "unidades": 2,
+    "desde": 1784904024714
    },
-   "iniciadoEm": 1784903697607
+   "iniciadoEm": 1784903697607,
+   "tiros": [
+    {
+     "h": "15:37",
+     "jogo": "Colômbia x Bósnia e Herzegovina",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784900037902,
@@ -537,7 +545,7 @@
    "tipo": "odd",
    "chave": "1.87",
    "n": 9,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
