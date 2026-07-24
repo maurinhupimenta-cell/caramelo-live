@@ -296,7 +296,37 @@
    "euro": 1784909069406,
    "copa": 1784909790707
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:43",
+     "jogo": "Rio de Janeiro x Santos",
+     "odd": 2.35
+    },
+    {
+     "h": "17:46",
+     "jogo": "Penarol x Montevideo",
+     "odd": 2.3
+    },
+    {
+     "h": "17:49",
+     "jogo": "Buenos Aires x Lima",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "odd 2.35",
+   "alvo": {
+    "h": "17:43",
+    "jogo": "Rio de Janeiro x Santos",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1784911229500
+   },
+   "iniciadoEm": 1784911229500
+  },
   "cooldown": {
    "copa": 1784909790707,
    "premier": 1784908250607,
@@ -316,21 +346,27 @@
    "2026-07-24": 5.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":16",
-   "n": 17,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.35",
+   "n": 15,
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -53,
-  "ciclos": 346,
+  "ciclos": 347,
   "greens": 235,
   "redsCiclo": 42,
   "aborts": 0,
-  "descartes": 69,
+  "descartes": 70,
   "historico": [
+   {
+    "quando": "2026-07-24T16:45:29.704Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Uruguai) — liga REARMADA"
+   },
    {
     "quando": "2026-07-24T16:38:32.502Z",
     "resultado": "GREEN",
@@ -444,21 +480,44 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "euro · Croácia x República Tcheca @2.15 (tiro 2) · gatilho: time República Tcheca"
-   },
-   {
-    "quando": "2026-07-24T07:11:37.204Z",
-    "resultado": "GREEN",
-    "unidades": 0.8,
-    "detalhe": "premier · Newcastle x Wolverhampton @1.76 (tiro 1) · gatilho: seq RRGR"
    }
   ],
   "consumidas": {
-   "copa": 1784907898801,
    "super": 1784909429202,
    "premier": 1784910044408,
    "euro": 1784911112302
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:49",
+     "jogo": "Escócia x África do Sul",
+     "odd": 2.3
+    },
+    {
+     "h": "17:52",
+     "jogo": "Bélgica x Uruguai",
+     "odd": 1.98
+    },
+    {
+     "h": "17:55",
+     "jogo": "RD Congo x Espanha",
+     "odd": 1.87
+    }
+   ],
+   "gatilho": "time Uruguai",
+   "alvo": {
+    "h": "17:49",
+    "jogo": "Escócia x África do Sul",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1784911531398
+   },
+   "iniciadoEm": 1784911531398
+  },
   "cooldown": {
    "euro": 1784911112302,
    "super": 1784909429202,
@@ -477,10 +536,10 @@
    "2026-07-24": 18.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGRG",
-   "n": 8,
-   "start": 1
+   "tipo": "time",
+   "chave": "Uruguai",
+   "n": 15,
+   "start": 2
   },
   "_obs": {}
  }
