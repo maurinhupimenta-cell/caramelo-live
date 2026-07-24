@@ -358,13 +358,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -60.4,
-  "ciclos": 358,
-  "greens": 242,
+  "saldo": -59.5,
+  "ciclos": 359,
+  "greens": 243,
   "redsCiclo": 44,
   "aborts": 0,
   "descartes": 72,
   "historico": [
+   {
+    "quando": "2026-07-24T22:00:54.206Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Buenos Aires x Santiago @1.85 (tiro 1) · gatilho: odd 1.87"
+   },
    {
     "quando": "2026-07-24T21:54:53.211Z",
     "resultado": "GREEN_OBS",
@@ -478,49 +484,15 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · Jordânia x Senegal @2.05 (tiro 1) · gatilho: time Senegal"
-   },
-   {
-    "quando": "2026-07-24T14:23:52.319Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Aston x Norwich @2.02 (tiro 2) · gatilho: coluna :21"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:58",
-     "jogo": "Buenos Aires x Santiago",
-     "odd": 1.85
-    },
-    {
-     "h": "23:01",
-     "jogo": "Asuncion x Sao Paulo",
-     "odd": 1.87
-    },
-    {
-     "h": "23:04",
-     "jogo": "Avellaneda x Rio de Janeiro",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "odd 1.87",
-   "alvo": {
-    "h": "22:58",
-    "jogo": "Buenos Aires x Santiago",
-    "odd": 1.85,
-    "unidades": 1,
-    "desde": 1784929934211
-   },
-   "iniciadoEm": 1784929934211
+  "consumidas": {
+   "super": 1784930454098
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784923170109,
-   "super": 1784923555202,
+   "super": 1784930454098,
    "premier": 1784921031001,
    "copa": 1784922001308
   },
@@ -533,12 +505,12 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 11.1
+   "2026-07-24": 12
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGG",
-   "n": 16,
+   "tipo": "coluna",
+   "chave": ":04",
+   "n": 19,
    "start": 1
   },
   "_obs": {}
