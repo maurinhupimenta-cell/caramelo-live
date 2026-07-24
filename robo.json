@@ -485,7 +485,37 @@
    "copa": 1784898662401,
    "euro": 1784898838311
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:28",
+     "jogo": "Guayaquil x Santos",
+     "odd": 1.95
+    },
+    {
+     "h": "14:31",
+     "jogo": "Belo Horizonte x Agua Branca",
+     "odd": 1.83
+    },
+    {
+     "h": "14:34",
+     "jogo": "Montevideo x Avellaneda",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "coluna :28",
+   "alvo": {
+    "h": "14:28",
+    "jogo": "Guayaquil x Santos",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1784899557212
+   },
+   "iniciadoEm": 1784899557212
+  },
   "cooldown": {
    "euro": 1784898838311,
    "super": 1784895344801,
@@ -505,7 +535,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":08",
+   "chave": ":28",
    "n": 14,
    "start": 1
   },
