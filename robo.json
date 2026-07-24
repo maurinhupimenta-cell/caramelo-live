@@ -296,8 +296,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:39",
@@ -317,13 +317,21 @@
    ],
    "gatilho": "time City",
    "alvo": {
-    "h": "05:39",
-    "jogo": "Liverpool x Palace",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1784867638308
+    "h": "05:42",
+    "jogo": "Chelsea x City",
+    "odd": 2.07,
+    "unidades": 2,
+    "desde": 1784868105702
    },
-   "iniciadoEm": 1784867638308
+   "iniciadoEm": 1784867638308,
+   "tiros": [
+    {
+     "h": "05:39",
+     "jogo": "Liverpool x Palace",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784846938792,
@@ -345,8 +353,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "City",
-   "n": 13,
+   "chave": "Leeds",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
