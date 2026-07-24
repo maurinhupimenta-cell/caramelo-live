@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -49.6,
-  "ciclos": 308,
-  "greens": 202,
+  "saldo": -47.8,
+  "ciclos": 309,
+  "greens": 203,
   "redsCiclo": 52,
   "aborts": 0,
   "descartes": 54,
   "historico": [
+   {
+    "quando": "2026-07-24T12:20:43.903Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "copa · Qatar x República Tcheca @2.4 (tiro 2) · gatilho: coluna :16"
+   },
    {
     "quando": "2026-07-24T12:08:33.804Z",
     "resultado": "GREEN",
@@ -283,59 +289,16 @@
     "resultado": "GREEN",
     "unidades": 1.8,
     "detalhe": "premier · Watford x Southampton @2.4 (tiro 2) · gatilho: time Watford"
-   },
-   {
-    "quando": "2026-07-24T02:27:54.710Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "super · Porto Alegre x Buenos Aires @2.4 (tiro 2) · gatilho: time Buenos Aires"
    }
   ],
   "consumidas": {
    "euro": 1784894523997,
-   "premier": 1784894913697
+   "premier": 1784894913697,
+   "copa": 1784895643704
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "13:13",
-     "jogo": "Jordânia x Paraguai",
-     "odd": 2.3
-    },
-    {
-     "h": "13:16",
-     "jogo": "Qatar x República Tcheca",
-     "odd": 2.4
-    },
-    {
-     "h": "13:19",
-     "jogo": "Escócia x França",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "coluna :16",
-   "alvo": {
-    "h": "13:16",
-    "jogo": "Qatar x República Tcheca",
-    "odd": 2.4,
-    "unidades": 2,
-    "desde": 1784895361910
-   },
-   "iniciadoEm": 1784894917507,
-   "tiros": [
-    {
-     "h": "13:13",
-     "jogo": "Jordânia x Paraguai",
-     "odd": 2.3,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784877527698,
+   "copa": 1784895643704,
    "premier": 1784894913697,
    "euro": 1784894523997,
    "super": 1784876448499
@@ -350,7 +313,7 @@
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
-   "2026-07-24": 12.1
+   "2026-07-24": 13.9
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
