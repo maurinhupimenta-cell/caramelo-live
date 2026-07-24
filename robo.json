@@ -297,8 +297,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "20:13",
@@ -318,13 +318,21 @@
    ],
    "gatilho": "odd 2.07",
    "alvo": {
-    "h": "20:13",
-    "jogo": "Santiago x Santos",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1784919860108
+    "h": "20:16",
+    "jogo": "Agua Branca x Guayaquil",
+    "odd": 2.07,
+    "unidades": 2,
+    "desde": 1784920561508
    },
-   "iniciadoEm": 1784919860108
+   "iniciadoEm": 1784919860108,
+   "tiros": [
+    {
+     "h": "20:13",
+     "jogo": "Santiago x Santos",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784917859504,
@@ -348,7 +356,7 @@
    "tipo": "odd",
    "chave": "2.35",
    "n": 19,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
@@ -536,7 +544,7 @@
    "tipo": "coluna",
    "chave": ":21",
    "n": 20,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
