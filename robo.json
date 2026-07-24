@@ -164,12 +164,18 @@
  },
  "o25": {
   "saldo": -65.3,
-  "ciclos": 287,
+  "ciclos": 288,
   "greens": 190,
   "redsCiclo": 51,
   "aborts": 0,
-  "descartes": 46,
+  "descartes": 47,
   "historico": [
+   {
+    "quando": "2026-07-24T02:12:55.105Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho time Buenos Aires) — liga REARMADA"
+   },
    {
     "quando": "2026-07-24T02:06:53.199Z",
     "resultado": "DESCARTADO",
@@ -283,12 +289,6 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq RGGRG"
-   },
-   {
-    "quando": "2026-07-23T17:44:51.698Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho seq RGGRG) — liga REARMADA"
    }
   ],
   "consumidas": {},
@@ -316,7 +316,12 @@
    "n": 8,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1784859175105,
+    "gatilho": "time Buenos Aires"
+   }
+  }
  },
  "ambas": {
   "saldo": -72.5,
