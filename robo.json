@@ -323,13 +323,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -56.1,
-  "ciclos": 335,
-  "greens": 225,
+  "saldo": -55,
+  "ciclos": 336,
+  "greens": 226,
   "redsCiclo": 41,
   "aborts": 0,
   "descartes": 69,
   "historico": [
+   {
+    "quando": "2026-07-24T13:11:02.506Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Uzbequistão x África do Sul @2.1 (tiro 1) · gatilho: coluna :10"
+   },
    {
     "quando": "2026-07-24T12:24:28.399Z",
     "resultado": "GREEN",
@@ -443,54 +449,19 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-24T04:04:59.202Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
    "super": 1784895344801,
-   "premier": 1784895868203
+   "premier": 1784895868203,
+   "copa": 1784898662401
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:07",
-     "jogo": "Uzbequistão x África do Sul",
-     "odd": 2.1
-    },
-    {
-     "h": "14:10",
-     "jogo": "Argentina x Portugal",
-     "odd": 1.85
-    },
-    {
-     "h": "14:13",
-     "jogo": "Canadá x Inglaterra",
-     "odd": 2
-    }
-   ],
-   "gatilho": "coluna :10",
-   "alvo": {
-    "h": "14:07",
-    "jogo": "Uzbequistão x África do Sul",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1784897938300
-   },
-   "iniciadoEm": 1784897938300
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784894863507,
    "super": 1784895344801,
    "premier": 1784895868203,
-   "copa": 1784894302300
+   "copa": 1784898662401
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -501,11 +472,11 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 15.4
+   "2026-07-24": 16.5
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":10",
+   "chave": ":13",
    "n": 14,
    "start": 1
   },
