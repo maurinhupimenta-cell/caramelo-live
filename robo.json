@@ -295,7 +295,37 @@
    "euro": 1784919600700,
    "super": 1784920897509
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:46",
+     "jogo": "Argélia x Espanha",
+     "odd": 2.2
+    },
+    {
+     "h": "20:49",
+     "jogo": "Panamá x Coreia do Sul",
+     "odd": 2.55
+    },
+    {
+     "h": "20:52",
+     "jogo": "Espanha x África do Sul",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "time Coreia do Sul",
+   "alvo": {
+    "h": "20:46",
+    "jogo": "Argélia x Espanha",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1784921842009
+   },
+   "iniciadoEm": 1784921842009
+  },
   "cooldown": {
    "copa": 1784917859504,
    "premier": 1784912925401,
@@ -315,10 +345,10 @@
    "2026-07-24": 10.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRR",
-   "n": 30,
-   "start": 1
+   "tipo": "time",
+   "chave": "Coreia do Sul",
+   "n": 13,
+   "start": 3
   },
   "_obs": {}
  },
