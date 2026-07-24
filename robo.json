@@ -292,11 +292,40 @@
    }
   ],
   "consumidas": {
-   "copa": 1784909790707,
    "super": 1784911889606,
    "premier": 1784912925401
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:13",
+     "jogo": "Uruguai x Turquia",
+     "odd": 2.25
+    },
+    {
+     "h": "18:16",
+     "jogo": "Marrocos x Panamá",
+     "odd": 2.4
+    },
+    {
+     "h": "18:19",
+     "jogo": "Coreia do Sul x Canadá",
+     "odd": 2.55
+    }
+   ],
+   "gatilho": "coluna :16",
+   "alvo": {
+    "h": "18:13",
+    "jogo": "Uruguai x Turquia",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1784913391911
+   },
+   "iniciadoEm": 1784913391911
+  },
   "cooldown": {
    "copa": 1784909790707,
    "premier": 1784912925401,
@@ -316,9 +345,9 @@
    "2026-07-24": 8.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRGR",
-   "n": 8,
+   "tipo": "coluna",
+   "chave": ":16",
+   "n": 18,
    "start": 1
   },
   "_obs": {}
