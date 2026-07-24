@@ -164,12 +164,18 @@
  },
  "o25": {
   "saldo": -49.9,
-  "ciclos": 332,
+  "ciclos": 333,
   "greens": 219,
   "redsCiclo": 56,
   "aborts": 0,
-  "descartes": 57,
+  "descartes": 58,
   "historico": [
+   {
+    "quando": "2026-07-24T21:52:14.197Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho seq RRRRR) — liga REARMADA"
+   },
    {
     "quando": "2026-07-24T19:48:39.005Z",
     "resultado": "GREEN",
@@ -283,12 +289,6 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros) · gatilho: coluna :55"
-   },
-   {
-    "quando": "2026-07-24T13:43:59.304Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · Países Baixos x França @1.98 (tiro 1) · gatilho: odd 2.55"
    }
   ],
   "consumidas": {},
@@ -317,12 +317,7 @@
    "n": 13,
    "start": 1
   },
-  "_obs": {
-   "super": {
-    "desde": 1784927200500,
-    "gatilho": "seq RRRRR"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -60.4,
@@ -454,7 +449,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:58",
+     "jogo": "Buenos Aires x Santiago",
+     "odd": 1.85
+    },
+    {
+     "h": "23:01",
+     "jogo": "Asuncion x Sao Paulo",
+     "odd": 1.87
+    },
+    {
+     "h": "23:04",
+     "jogo": "Avellaneda x Rio de Janeiro",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "odd 1.87",
+   "alvo": {
+    "h": "22:58",
+    "jogo": "Buenos Aires x Santiago",
+    "odd": 1.85,
+    "unidades": 1,
+    "desde": 1784929934211
+   },
+   "iniciadoEm": 1784929934211
+  },
   "cooldown": {
    "euro": 1784923170109,
    "super": 1784923555202,
@@ -473,10 +498,10 @@
    "2026-07-24": 11.1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":04",
-   "n": 19,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.87",
+   "n": 12,
+   "start": 2
   },
   "_obs": {}
  }
