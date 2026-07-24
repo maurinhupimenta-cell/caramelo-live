@@ -297,8 +297,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "23:37",
@@ -318,13 +318,21 @@
    ],
    "gatilho": "odd 1.98",
    "alvo": {
-    "h": "23:37",
-    "jogo": "Asuncion x Medellin",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1784932093611
+    "h": "23:40",
+    "jogo": "Sao Paulo x Buenos Aires",
+    "odd": 1.98,
+    "unidades": 2,
+    "desde": 1784932888105
    },
-   "iniciadoEm": 1784932093611
+   "iniciadoEm": 1784932093611,
+   "tiros": [
+    {
+     "h": "23:37",
+     "jogo": "Asuncion x Medellin",
+     "odd": 2.4,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784930673801,
@@ -346,9 +354,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "1.98",
-   "n": 9,
-   "start": 3
+   "chave": "2.02",
+   "n": 18,
+   "start": 2
   },
   "_obs": {}
  },
