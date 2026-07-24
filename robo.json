@@ -324,13 +324,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -57.1,
-  "ciclos": 352,
-  "greens": 238,
+  "saldo": -56,
+  "ciclos": 353,
+  "greens": 239,
   "redsCiclo": 43,
   "aborts": 0,
   "descartes": 71,
   "historico": [
+   {
+    "quando": "2026-07-24T18:16:19.205Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Coreia do Sul x Bélgica @2.1 (tiro 1) · gatilho: coluna :13"
+   },
    {
     "quando": "2026-07-24T18:11:01.801Z",
     "resultado": "GREEN",
@@ -444,55 +450,20 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "super · Bogota x Itaquera @2.15 (tiro 2) · gatilho: time Itaquera"
-   },
-   {
-    "quando": "2026-07-24T12:07:43.703Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · Turquia x Alemanha @2 (tiro 1) · gatilho: coluna :08"
    }
   ],
   "consumidas": {
    "premier": 1784914180599,
    "super": 1784914288809,
-   "euro": 1784916661602
+   "euro": 1784916661602,
+   "copa": 1784916979098
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "19:13",
-     "jogo": "Coreia do Sul x Bélgica",
-     "odd": 2.1
-    },
-    {
-     "h": "19:16",
-     "jogo": "Bósnia e Herzegovina x Croácia",
-     "odd": 1.98
-    },
-    {
-     "h": "19:19",
-     "jogo": "Japão x Jordânia",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "coluna :13",
-   "alvo": {
-    "h": "19:13",
-    "jogo": "Coreia do Sul x Bélgica",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1784916662512
-   },
-   "iniciadoEm": 1784916662512
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784916661602,
    "super": 1784914288809,
    "premier": 1784914180599,
-   "copa": 1784912371802
+   "copa": 1784916979098
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -503,13 +474,13 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 14.4
+   "2026-07-24": 15.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":13",
-   "n": 19,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.87",
+   "n": 17,
+   "start": 3
   },
   "_obs": {}
  }
