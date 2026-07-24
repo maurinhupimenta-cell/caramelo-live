@@ -457,7 +457,37 @@
    "copa": 1784922001308,
    "euro": 1784923170109
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:01",
+     "jogo": "Montevideo x La Boca",
+     "odd": 1.98
+    },
+    {
+     "h": "21:04",
+     "jogo": "Medellin x Lima",
+     "odd": 1.98
+    },
+    {
+     "h": "21:07",
+     "jogo": "Quito x Guayaquil",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "coluna :04",
+   "alvo": {
+    "h": "21:01",
+    "jogo": "Montevideo x La Boca",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1784923187107
+   },
+   "iniciadoEm": 1784923187107
+  },
   "cooldown": {
    "euro": 1784923170109,
    "super": 1784914288809,
