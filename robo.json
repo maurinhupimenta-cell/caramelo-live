@@ -164,12 +164,24 @@
  },
  "o25": {
   "saldo": -53.9,
-  "ciclos": 302,
+  "ciclos": 304,
   "greens": 200,
   "redsCiclo": 52,
   "aborts": 0,
-  "descartes": 50,
+  "descartes": 52,
   "historico": [
+   {
+    "quando": "2026-07-24T11:44:23.607Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho seq RRRR) — liga REARMADA"
+   },
+   {
+    "quando": "2026-07-24T11:35:22.510Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-24T07:18:47.804Z",
     "resultado": "GREEN",
@@ -277,54 +289,39 @@
     "resultado": "GREEN",
     "unidades": 2.4,
     "detalhe": "euro · Portugal x Geórgia @2.35 (tiro 3) · gatilho: placar 1-0 / 0-1"
-   },
-   {
-    "quando": "2026-07-23T22:48:58.898Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "copa · Brasil x Suécia @2.5 (tiro 1) · gatilho: seq GRGRR"
-   },
-   {
-    "quando": "2026-07-23T22:39:59.594Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho seq RGRRR) — liga REARMADA"
    }
   ],
-  "consumidas": {
-   "premier": 1784876210004,
-   "copa": 1784877527698
-  },
+  "consumidas": {},
   "ciclo": {
-   "liga": "euro",
+   "liga": "premier",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "08:38",
-     "jogo": "Albânia x Itália",
-     "odd": 2.62
+     "h": "08:45",
+     "jogo": "Brentford x Brighton",
+     "odd": 2.1
     },
     {
-     "h": "08:41",
-     "jogo": "Suíça x Eslovênia",
-     "odd": 2.5
+     "h": "08:48",
+     "jogo": "City x Southampton",
+     "odd": 2.2
     },
     {
-     "h": "08:44",
-     "jogo": "Portugal x Bélgica",
-     "odd": 2.15
+     "h": "08:51",
+     "jogo": "Aston x Everton",
+     "odd": 2.25
     }
    ],
-   "gatilho": "time Eslovênia",
+   "gatilho": "time City",
    "alvo": {
-    "h": "08:38",
-    "jogo": "Albânia x Itália",
-    "odd": 2.62,
+    "h": "08:45",
+    "jogo": "Brentford x Brighton",
+    "odd": 2.1,
     "unidades": 1,
-    "desde": 1784878147502
+    "desde": 1784892924701
    },
-   "iniciadoEm": 1784878147502
+   "iniciadoEm": 1784892924701
   },
   "cooldown": {
    "copa": 1784877527698,
@@ -346,11 +343,16 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Eslovênia",
-   "n": 12,
+   "chave": "México",
+   "n": 9,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1784892924698,
+    "gatilho": "seq RRRR"
+   }
+  }
  },
  "ambas": {
   "saldo": -60.4,
@@ -482,7 +484,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:41",
+     "jogo": "Suíça x Eslovênia",
+     "odd": 2.15
+    },
+    {
+     "h": "08:44",
+     "jogo": "Portugal x Bélgica",
+     "odd": 1.9
+    },
+    {
+     "h": "08:47",
+     "jogo": "Geórgia x Sérvia",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time Bélgica",
+   "alvo": {
+    "h": "08:41",
+    "jogo": "Suíça x Eslovênia",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1784892922604
+   },
+   "iniciadoEm": 1784892922604
+  },
   "cooldown": {
    "euro": 1784878127806,
    "super": 1784873579511,
@@ -501,9 +533,9 @@
    "2026-07-24": 11.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Bélgica",
-   "n": 14,
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
