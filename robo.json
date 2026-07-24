@@ -324,13 +324,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -62.3,
-  "ciclos": 355,
-  "greens": 240,
+  "saldo": -61.4,
+  "ciclos": 356,
+  "greens": 241,
   "redsCiclo": 44,
   "aborts": 0,
   "descartes": 71,
   "historico": [
+   {
+    "quando": "2026-07-24T19:59:30.304Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Suíça x Hungria @1.98 (tiro 3) · gatilho: coluna :53"
+   },
    {
     "quando": "2026-07-24T19:40:01.503Z",
     "resultado": "RED_CICLO",
@@ -444,65 +450,16 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "euro · Eslováquia x Bélgica @1.93 (tiro 1) · gatilho: coluna :08"
-   },
-   {
-    "quando": "2026-07-24T13:11:02.506Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "copa · Uzbequistão x África do Sul @2.1 (tiro 1) · gatilho: coluna :10"
    }
   ],
   "consumidas": {
    "premier": 1784921031001,
-   "copa": 1784922001308
+   "copa": 1784922001308,
+   "euro": 1784923170109
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "20:50",
-     "jogo": "Ucrânia x Polônia",
-     "odd": 2.1
-    },
-    {
-     "h": "20:53",
-     "jogo": "Turquia x Eslovênia",
-     "odd": 2.37
-    },
-    {
-     "h": "20:56",
-     "jogo": "Suíça x Hungria",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "coluna :53",
-   "alvo": {
-    "h": "20:56",
-    "jogo": "Suíça x Hungria",
-    "odd": 1.98,
-    "unidades": 4,
-    "desde": 1784923049506
-   },
-   "iniciadoEm": 1784922142199,
-   "tiros": [
-    {
-     "h": "20:50",
-     "jogo": "Ucrânia x Polônia",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "20:53",
-     "jogo": "Turquia x Eslovênia",
-     "odd": 2.37,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784916661602,
+   "euro": 1784923170109,
    "super": 1784914288809,
    "premier": 1784921031001,
    "copa": 1784922001308
@@ -516,13 +473,13 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 9.2
+   "2026-07-24": 10.1
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":04",
    "n": 19,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
