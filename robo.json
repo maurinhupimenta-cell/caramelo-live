@@ -346,20 +346,26 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRGR",
-   "n": 10,
+   "chave": "GRGRR",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -54.1,
-  "ciclos": 337,
-  "greens": 227,
+  "saldo": -53.1,
+  "ciclos": 338,
+  "greens": 228,
   "redsCiclo": 41,
   "aborts": 0,
   "descartes": 69,
   "historico": [
+   {
+    "quando": "2026-07-24T13:31:58.302Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Guayaquil x Santos @1.95 (tiro 1) · gatilho: coluna :28"
+   },
    {
     "quando": "2026-07-24T13:13:58.504Z",
     "resultado": "GREEN",
@@ -473,52 +479,17 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho seq RRGR) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-24T04:23:08.706Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho placar 1-0 / 0-1) — liga REARMADA"
    }
   ],
   "consumidas": {
    "copa": 1784898662401,
-   "euro": 1784898838311
+   "euro": 1784898838311,
+   "super": 1784899918110
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:28",
-     "jogo": "Guayaquil x Santos",
-     "odd": 1.95
-    },
-    {
-     "h": "14:31",
-     "jogo": "Belo Horizonte x Agua Branca",
-     "odd": 1.83
-    },
-    {
-     "h": "14:34",
-     "jogo": "Montevideo x Avellaneda",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "coluna :28",
-   "alvo": {
-    "h": "14:28",
-    "jogo": "Guayaquil x Santos",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1784899557212
-   },
-   "iniciadoEm": 1784899557212
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784898838311,
-   "super": 1784895344801,
+   "super": 1784899918110,
    "premier": 1784895868203,
    "copa": 1784898662401
   },
@@ -531,13 +502,13 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 17.4
+   "2026-07-24": 18.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":28",
-   "n": 14,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.8",
+   "n": 11,
+   "start": 2
   },
   "_obs": {}
  }
