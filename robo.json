@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -47.8,
-  "ciclos": 309,
-  "greens": 203,
+  "saldo": -46.4,
+  "ciclos": 310,
+  "greens": 204,
   "redsCiclo": 52,
   "aborts": 0,
   "descartes": 54,
   "historico": [
+   {
+    "quando": "2026-07-24T12:55:04.700Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "super · La Boca x Asuncion @2.4 (tiro 1) · gatilho: coluna :55"
+   },
    {
     "quando": "2026-07-24T12:20:43.903Z",
     "resultado": "GREEN",
@@ -283,55 +289,20 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: time Sérvia"
-   },
-   {
-    "quando": "2026-07-24T02:56:45.006Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "premier · Watford x Southampton @2.4 (tiro 2) · gatilho: time Watford"
    }
   ],
   "consumidas": {
    "euro": 1784894523997,
    "premier": 1784894913697,
-   "copa": 1784895643704
+   "copa": 1784895643704,
+   "super": 1784897704505
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "13:52",
-     "jogo": "La Boca x Asuncion",
-     "odd": 2.4
-    },
-    {
-     "h": "13:55",
-     "jogo": "Quito x Itaquera",
-     "odd": 2.3
-    },
-    {
-     "h": "13:58",
-     "jogo": "Santos x Medellin",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "coluna :55",
-   "alvo": {
-    "h": "13:52",
-    "jogo": "La Boca x Asuncion",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1784896984403
-   },
-   "iniciadoEm": 1784896984403
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784895643704,
    "premier": 1784894913697,
    "euro": 1784894523997,
-   "super": 1784876448499
+   "super": 1784897704505
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -343,13 +314,13 @@
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
-   "2026-07-24": 13.9
+   "2026-07-24": 15.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":55",
-   "n": 13,
-   "start": 3
+   "tipo": "odd",
+   "chave": "2.5",
+   "n": 11,
+   "start": 1
   },
   "_obs": {}
  },
