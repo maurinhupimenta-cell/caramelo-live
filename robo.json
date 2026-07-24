@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -54.7,
-  "ciclos": 324,
-  "greens": 212,
+  "saldo": -53.3,
+  "ciclos": 325,
+  "greens": 213,
   "redsCiclo": 55,
   "aborts": 0,
   "descartes": 57,
   "historico": [
+   {
+    "quando": "2026-07-24T17:08:45.508Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "premier · United x Palace @2.2 (tiro 2) · gatilho: seq GGRGR"
+   },
    {
     "quando": "2026-07-24T16:51:29.804Z",
     "resultado": "GREEN",
@@ -283,60 +289,17 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho coluna :03) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-24T11:50:24.802Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
    "copa": 1784909790707,
-   "super": 1784911889606
+   "super": 1784911889606,
+   "premier": 1784912925401
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "18:03",
-     "jogo": "Everton x Tottenham",
-     "odd": 2.35
-    },
-    {
-     "h": "18:06",
-     "jogo": "United x Palace",
-     "odd": 2.2
-    },
-    {
-     "h": "18:09",
-     "jogo": "Islington x West Ham",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "seq GGRGR",
-   "alvo": {
-    "h": "18:06",
-    "jogo": "United x Palace",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1784912753499
-   },
-   "iniciadoEm": 1784912430813,
-   "tiros": [
-    {
-     "h": "18:03",
-     "jogo": "Everton x Tottenham",
-     "odd": 2.35,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784909790707,
-   "premier": 1784908250607,
+   "premier": 1784912925401,
    "euro": 1784909069406,
    "super": 1784911889606
   },
@@ -350,7 +313,7 @@
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
-   "2026-07-24": 7
+   "2026-07-24": 8.4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
