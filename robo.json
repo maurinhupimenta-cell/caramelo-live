@@ -323,13 +323,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -61.4,
-  "ciclos": 356,
-  "greens": 241,
+  "saldo": -60.4,
+  "ciclos": 357,
+  "greens": 242,
   "redsCiclo": 44,
   "aborts": 0,
   "descartes": 71,
   "historico": [
+   {
+    "quando": "2026-07-24T20:05:55.402Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Montevideo x La Boca @1.98 (tiro 1) · gatilho: coluna :04"
+   },
    {
     "quando": "2026-07-24T19:59:30.304Z",
     "resultado": "GREEN",
@@ -443,53 +449,18 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "super · Guayaquil x Santos @1.95 (tiro 1) · gatilho: coluna :28"
-   },
-   {
-    "quando": "2026-07-24T13:13:58.504Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "euro · Eslováquia x Bélgica @1.93 (tiro 1) · gatilho: coluna :08"
    }
   ],
   "consumidas": {
    "premier": 1784921031001,
    "copa": 1784922001308,
-   "euro": 1784923170109
+   "euro": 1784923170109,
+   "super": 1784923555202
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:01",
-     "jogo": "Montevideo x La Boca",
-     "odd": 1.98
-    },
-    {
-     "h": "21:04",
-     "jogo": "Medellin x Lima",
-     "odd": 1.98
-    },
-    {
-     "h": "21:07",
-     "jogo": "Quito x Guayaquil",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "coluna :04",
-   "alvo": {
-    "h": "21:01",
-    "jogo": "Montevideo x La Boca",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1784923187107
-   },
-   "iniciadoEm": 1784923187107
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784923170109,
-   "super": 1784914288809,
+   "super": 1784923555202,
    "premier": 1784921031001,
    "copa": 1784922001308
   },
@@ -502,7 +473,7 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 10.1
+   "2026-07-24": 11.1
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
