@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -56.9,
-  "ciclos": 334,
-  "greens": 219,
+  "saldo": -55.5,
+  "ciclos": 335,
+  "greens": 220,
   "redsCiclo": 57,
   "aborts": 0,
   "descartes": 58,
   "historico": [
+   {
+    "quando": "2026-07-24T22:20:42.703Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "premier · Liverpool x Norwich @2.2 (tiro 2) · gatilho: seq GRGRG"
+   },
    {
     "quando": "2026-07-24T22:04:33.999Z",
     "resultado": "RED_CICLO",
@@ -283,59 +289,16 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Uruguai"
-   },
-   {
-    "quando": "2026-07-24T14:33:58.002Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho time Uruguai) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "copa": 1784930673801
+   "copa": 1784930673801,
+   "premier": 1784931642504
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "23:15",
-     "jogo": "Leeds x United",
-     "odd": 2.45
-    },
-    {
-     "h": "23:18",
-     "jogo": "Liverpool x Norwich",
-     "odd": 2.2
-    },
-    {
-     "h": "23:21",
-     "jogo": "Newcastle x Palace",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "seq GRGRG",
-   "alvo": {
-    "h": "23:18",
-    "jogo": "Liverpool x Norwich",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1784931478001
-   },
-   "iniciadoEm": 1784931153401,
-   "tiros": [
-    {
-     "h": "23:15",
-     "jogo": "Leeds x United",
-     "odd": 2.45,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784930673801,
-   "premier": 1784912925401,
+   "premier": 1784931642504,
    "euro": 1784919600700,
    "super": 1784920897509
   },
@@ -349,7 +312,7 @@
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
-   "2026-07-24": 4.8
+   "2026-07-24": 6.2
   },
   "_gatilhoAtual": {
    "tipo": "seq",
