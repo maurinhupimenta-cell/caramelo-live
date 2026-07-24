@@ -324,13 +324,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -65.3,
-  "ciclos": 324,
-  "greens": 216,
+  "saldo": -64.4,
+  "ciclos": 325,
+  "greens": 217,
   "redsCiclo": 41,
   "aborts": 0,
   "descartes": 67,
   "historico": [
+   {
+    "quando": "2026-07-24T06:12:59.703Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Sao Paulo x Medellin @1.95 (tiro 2) · gatilho: placar empate 1-1"
+   },
    {
     "quando": "2026-07-24T06:06:00.903Z",
     "resultado": "GREEN",
@@ -444,60 +450,17 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "premier · Liverpool x Southampton @2.05 (tiro 2) · gatilho: odd 1.98"
-   },
-   {
-    "quando": "2026-07-23T22:46:11.693Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "euro · República Tcheca x Eslovênia @2.4 (tiro 1) · gatilho: coluna :44"
    }
   ],
   "consumidas": {
    "premier": 1784870620609,
-   "euro": 1784873160705
+   "euro": 1784873160705,
+   "super": 1784873579511
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "07:07",
-     "jogo": "Guayaquil x Penarol",
-     "odd": 2
-    },
-    {
-     "h": "07:10",
-     "jogo": "Sao Paulo x Medellin",
-     "odd": 1.95
-    },
-    {
-     "h": "07:13",
-     "jogo": "Belo Horizonte x Santiago",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "placar empate 1-1",
-   "alvo": {
-    "h": "07:10",
-    "jogo": "Sao Paulo x Medellin",
-    "odd": 1.95,
-    "unidades": 2,
-    "desde": 1784873386611
-   },
-   "iniciadoEm": 1784873162210,
-   "tiros": [
-    {
-     "h": "07:07",
-     "jogo": "Guayaquil x Penarol",
-     "odd": 2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784873160705,
-   "super": 1784868908501,
+   "super": 1784873579511,
    "premier": 1784870620609,
    "copa": 1784867941602
   },
@@ -510,7 +473,7 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 6.2
+   "2026-07-24": 7.1
   },
   "_gatilhoAtual": {
    "tipo": "placar",
