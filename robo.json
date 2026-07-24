@@ -458,8 +458,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "20:50",
@@ -479,13 +479,21 @@
    ],
    "gatilho": "coluna :53",
    "alvo": {
-    "h": "20:50",
-    "jogo": "Ucrânia x Polônia",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1784922142199
+    "h": "20:53",
+    "jogo": "Turquia x Eslovênia",
+    "odd": 2.37,
+    "unidades": 2,
+    "desde": 1784922992808
    },
-   "iniciadoEm": 1784922142199
+   "iniciadoEm": 1784922142199,
+   "tiros": [
+    {
+     "h": "20:50",
+     "jogo": "Ucrânia x Polônia",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784916661602,
@@ -506,9 +514,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":53",
-   "n": 20,
-   "start": 1
+   "chave": ":04",
+   "n": 19,
+   "start": 3
   },
   "_obs": {}
  }
