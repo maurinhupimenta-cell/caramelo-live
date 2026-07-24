@@ -361,7 +361,7 @@
    "tipo": "coluna",
    "chave": ":56",
    "n": 15,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
@@ -500,8 +500,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "15:46",
@@ -521,13 +521,21 @@
    ],
    "gatilho": "odd 1.87",
    "alvo": {
-    "h": "15:46",
-    "jogo": "Porto Alegre x La Boca",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1784903815600
+    "h": "15:49",
+    "jogo": "Asuncion x Sao Paulo",
+    "odd": 1.87,
+    "unidades": 2,
+    "desde": 1784904658106
    },
-   "iniciadoEm": 1784903815600
+   "iniciadoEm": 1784903815600,
+   "tiros": [
+    {
+     "h": "15:46",
+     "jogo": "Porto Alegre x La Boca",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784898838311,
@@ -547,9 +555,9 @@
    "2026-07-24": 20.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.87",
-   "n": 9,
+   "tipo": "coluna",
+   "chave": ":53",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
