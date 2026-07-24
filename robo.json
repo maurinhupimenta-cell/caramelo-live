@@ -325,13 +325,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -53.1,
-  "ciclos": 338,
-  "greens": 228,
+  "saldo": -52.1,
+  "ciclos": 339,
+  "greens": 229,
   "redsCiclo": 41,
   "aborts": 0,
   "descartes": 69,
   "historico": [
+   {
+    "quando": "2026-07-24T14:23:52.319Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Aston x Norwich @2.02 (tiro 2) · gatilho: coluna :21"
+   },
    {
     "quando": "2026-07-24T13:31:58.302Z",
     "resultado": "GREEN",
@@ -445,60 +451,17 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "copa · Japão x Uruguai @2.02 (tiro 3) · gatilho: time Senegal"
-   },
-   {
-    "quando": "2026-07-24T04:35:51.705Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho seq RRGR) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "super": 1784899918110
+   "super": 1784899918110,
+   "premier": 1784903032205
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "15:18",
-     "jogo": "Brighton x Brentford",
-     "odd": 1.87
-    },
-    {
-     "h": "15:21",
-     "jogo": "Aston x Norwich",
-     "odd": 2.02
-    },
-    {
-     "h": "14:42",
-     "jogo": "Watford x Aston",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "coluna :21",
-   "alvo": {
-    "h": "15:21",
-    "jogo": "Aston x Norwich",
-    "odd": 2.02,
-    "unidades": 2,
-    "desde": 1784902860101
-   },
-   "iniciadoEm": 1784902126699,
-   "tiros": [
-    {
-     "h": "15:18",
-     "jogo": "Brighton x Brentford",
-     "odd": 1.87,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784898838311,
    "super": 1784899918110,
-   "premier": 1784895868203,
+   "premier": 1784903032205,
    "copa": 1784898662401
   },
   "dias": {
@@ -510,7 +473,7 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 18.4
+   "2026-07-24": 19.4
   },
   "_gatilhoAtual": {
    "tipo": "time",
