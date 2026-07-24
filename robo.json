@@ -296,7 +296,37 @@
    "copa": 1784900037902,
    "euro": 1784900639198
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:55",
+     "jogo": "Itaquera x Santiago",
+     "odd": 2.15
+    },
+    {
+     "h": "14:58",
+     "jogo": "Avellaneda x Montevideo",
+     "odd": 2.2
+    },
+    {
+     "h": "15:01",
+     "jogo": "Santos x Guayaquil",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "coluna :55",
+   "alvo": {
+    "h": "14:55",
+    "jogo": "Itaquera x Santiago",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1784901357511
+   },
+   "iniciadoEm": 1784901357511
+  },
   "cooldown": {
    "copa": 1784900037902,
    "premier": 1784899477111,
@@ -317,9 +347,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":56",
+   "chave": ":55",
    "n": 14,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
