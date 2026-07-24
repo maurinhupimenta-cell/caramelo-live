@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -66,
-  "ciclos": 295,
-  "greens": 194,
+  "saldo": -64.1,
+  "ciclos": 296,
+  "greens": 195,
   "redsCiclo": 52,
   "aborts": 0,
   "descartes": 49,
   "historico": [
+   {
+    "quando": "2026-07-24T05:40:08.404Z",
+    "resultado": "GREEN",
+    "unidades": 1.9,
+    "detalhe": "super · Porto Alegre x Penarol @2.87 (tiro 1) · gatilho: time Buenos Aires"
+   },
    {
     "quando": "2026-07-24T04:44:48.107Z",
     "resultado": "GREEN",
@@ -283,53 +289,18 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho seq GGRGG) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-23T20:31:59.596Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "super · Quito x Montevideo @2.2 (tiro 1) · gatilho: placar empate 2-2"
    }
   ],
   "consumidas": {
-   "premier": 1784868288001
+   "premier": 1784868288001,
+   "super": 1784871608210
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:37",
-     "jogo": "Porto Alegre x Penarol",
-     "odd": 2.87
-    },
-    {
-     "h": "06:40",
-     "jogo": "Buenos Aires x Belo Horizonte",
-     "odd": 1.98
-    },
-    {
-     "h": "06:43",
-     "jogo": "La Boca x Montevideo",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "time Buenos Aires",
-   "alvo": {
-    "h": "06:37",
-    "jogo": "Porto Alegre x Penarol",
-    "odd": 2.87,
-    "unidades": 1,
-    "desde": 1784871238403
-   },
-   "iniciadoEm": 1784871238403
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784846938792,
    "premier": 1784868288001,
    "euro": 1784862710000,
-   "super": 1784867628911
+   "super": 1784871608210
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -341,13 +312,13 @@
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
-   "2026-07-24": -4.3
+   "2026-07-24": -2.4
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Buenos Aires",
    "n": 12,
-   "start": 1
+   "start": 2
   },
   "_obs": {
    "euro": {
