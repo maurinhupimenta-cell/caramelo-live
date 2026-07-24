@@ -348,7 +348,7 @@
    "tipo": "time",
    "chave": "Uruguai",
    "n": 10,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -485,7 +485,37 @@
    "premier": 1784903032205,
    "copa": 1784903341002
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:46",
+     "jogo": "Porto Alegre x La Boca",
+     "odd": 2.25
+    },
+    {
+     "h": "15:49",
+     "jogo": "Asuncion x Sao Paulo",
+     "odd": 1.87
+    },
+    {
+     "h": "15:52",
+     "jogo": "La Boca x Belo Horizonte",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "odd 1.87",
+   "alvo": {
+    "h": "15:46",
+    "jogo": "Porto Alegre x La Boca",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1784903815600
+   },
+   "iniciadoEm": 1784903815600
+  },
   "cooldown": {
    "euro": 1784898838311,
    "super": 1784899918110,
@@ -504,9 +534,9 @@
    "2026-07-24": 20.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Uruguai",
-   "n": 10,
+   "tipo": "odd",
+   "chave": "1.87",
+   "n": 9,
    "start": 3
   },
   "_obs": {}
