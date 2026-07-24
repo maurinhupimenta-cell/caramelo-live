@@ -164,12 +164,18 @@
  },
  "o25": {
   "saldo": -68.7,
-  "ciclos": 291,
+  "ciclos": 292,
   "greens": 192,
   "redsCiclo": 52,
   "aborts": 0,
-  "descartes": 47,
+  "descartes": 48,
   "historico": [
+   {
+    "quando": "2026-07-24T04:20:59.107Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-24T03:11:50.198Z",
     "resultado": "RED_CICLO",
@@ -283,46 +289,10 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "euro · Dinamarca x França @2.2 (tiro 2) · gatilho: coluna :17"
-   },
-   {
-    "quando": "2026-07-23T18:20:00.901Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "copa · Uzbequistão x Uruguai @2.25 (tiro 1) · gatilho: odd 2.15"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:42",
-     "jogo": "Palac x Brent",
-     "odd": 2.25
-    },
-    {
-     "h": "04:45",
-     "jogo": "Evert x City",
-     "odd": 2.02
-    },
-    {
-     "h": "04:48",
-     "jogo": "Unite x West",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "time City",
-   "alvo": {
-    "h": "04:42",
-    "jogo": "Palac x Brent",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1784865898702
-   },
-   "iniciadoEm": 1784865898702
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784846938792,
    "premier": 1784861804805,
@@ -478,9 +448,7 @@
     "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :44) — liga REARMADA"
    }
   ],
-  "consumidas": {
-   "euro": 1784863213104
-  },
+  "consumidas": {},
   "ciclo": {
    "liga": "super",
    "degrau": 0,
@@ -530,10 +498,10 @@
    "2026-07-24": 0.3
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "1-0 / 0-1",
-   "n": 21,
-   "start": 1
+   "tipo": "time",
+   "chave": "Senegal",
+   "n": 9,
+   "start": 3
   },
   "_obs": {}
  }
