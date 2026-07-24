@@ -295,7 +295,45 @@
    "euro": 1784914711201,
    "super": 1784916205010
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "19:22",
+     "jogo": "Uzbequistão x Qatar",
+     "odd": 2.3
+    },
+    {
+     "h": "19:25",
+     "jogo": "Coreia do Sul x França",
+     "odd": 2.4
+    },
+    {
+     "h": "19:28",
+     "jogo": "RD Congo x Jordânia",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time Coreia do Sul",
+   "alvo": {
+    "h": "19:25",
+    "jogo": "Coreia do Sul x França",
+    "odd": 2.4,
+    "unidades": 2,
+    "desde": 1784917519404
+   },
+   "iniciadoEm": 1784917059411,
+   "tiros": [
+    {
+     "h": "19:22",
+     "jogo": "Uzbequistão x Qatar",
+     "odd": 2.3,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1784913451507,
    "premier": 1784912925401,
@@ -315,10 +353,10 @@
    "2026-07-24": 13.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":55",
-   "n": 18,
-   "start": 1
+   "tipo": "time",
+   "chave": "Coreia do Sul",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  },
