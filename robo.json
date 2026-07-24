@@ -458,7 +458,37 @@
    "super": 1784909429202,
    "premier": 1784910044408
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:29",
+     "jogo": "Suíça x Turquia",
+     "odd": 2.02
+    },
+    {
+     "h": "17:32",
+     "jogo": "Hungria x Albânia",
+     "odd": 2.3
+    },
+    {
+     "h": "17:35",
+     "jogo": "França x Bélgica",
+     "odd": 1.83
+    }
+   ],
+   "gatilho": "seq RGGRG",
+   "alvo": {
+    "h": "17:29",
+    "jogo": "Suíça x Turquia",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1784910389303
+   },
+   "iniciadoEm": 1784910389303
+  },
   "cooldown": {
    "euro": 1784905320800,
    "super": 1784909429202,
@@ -477,8 +507,8 @@
    "2026-07-24": 17.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.8",
+   "tipo": "seq",
+   "chave": "RGGRG",
    "n": 8,
    "start": 1
   },
