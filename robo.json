@@ -296,7 +296,37 @@
    "premier": 1784912925401,
    "copa": 1784913451507
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:29",
+     "jogo": "Albânia x Geórgia",
+     "odd": 2.75
+    },
+    {
+     "h": "18:32",
+     "jogo": "Hungria x Romênia",
+     "odd": 2.25
+    },
+    {
+     "h": "18:35",
+     "jogo": "Suíça x Áustria",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "odd 2.75",
+   "alvo": {
+    "h": "18:29",
+    "jogo": "Albânia x Geórgia",
+    "odd": 2.75,
+    "unidades": 1,
+    "desde": 1784914110406
+   },
+   "iniciadoEm": 1784914110406
+  },
   "cooldown": {
    "copa": 1784913451507,
    "premier": 1784912925401,
@@ -316,9 +346,9 @@
    "2026-07-24": 9.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":16",
-   "n": 18,
+   "tipo": "odd",
+   "chave": "2.75",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
