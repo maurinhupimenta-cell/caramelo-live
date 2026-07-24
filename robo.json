@@ -324,13 +324,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -58.6,
-  "ciclos": 351,
-  "greens": 237,
+  "saldo": -57.1,
+  "ciclos": 352,
+  "greens": 238,
   "redsCiclo": 43,
   "aborts": 0,
   "descartes": 71,
   "historico": [
+   {
+    "quando": "2026-07-24T18:11:01.801Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "euro · Portugal x Eslovênia @2.25 (tiro 2) · gatilho: coluna :08"
+   },
    {
     "quando": "2026-07-24T18:03:20.010Z",
     "resultado": "GREEN_OBS",
@@ -444,59 +450,46 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · Turquia x Alemanha @2 (tiro 1) · gatilho: coluna :08"
-   },
-   {
-    "quando": "2026-07-24T11:58:22.502Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Panamá x Curação @1.98 (tiro 1) · gatilho: time Senegal"
    }
   ],
   "consumidas": {
    "premier": 1784914180599,
-   "super": 1784914288809
+   "super": 1784914288809,
+   "euro": 1784916661602
   },
   "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "19:05",
-     "jogo": "Eslováquia x Escócia",
-     "odd": 1.95
+     "h": "19:13",
+     "jogo": "Coreia do Sul x Bélgica",
+     "odd": 2.1
     },
     {
-     "h": "19:08",
-     "jogo": "Portugal x Eslovênia",
-     "odd": 2.25
+     "h": "19:16",
+     "jogo": "Bósnia e Herzegovina x Croácia",
+     "odd": 1.98
     },
     {
-     "h": "19:11",
-     "jogo": "Suíça x Ucrânia",
-     "odd": 1.93
+     "h": "19:19",
+     "jogo": "Japão x Jordânia",
+     "odd": 2.1
     }
    ],
-   "gatilho": "coluna :08",
+   "gatilho": "coluna :13",
    "alvo": {
-    "h": "19:08",
-    "jogo": "Portugal x Eslovênia",
-    "odd": 2.25,
-    "unidades": 2,
-    "desde": 1784916481100
+    "h": "19:13",
+    "jogo": "Coreia do Sul x Bélgica",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1784916662512
    },
-   "iniciadoEm": 1784915790007,
-   "tiros": [
-    {
-     "h": "19:05",
-     "jogo": "Eslováquia x Escócia",
-     "odd": 1.95,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1784916662512
   },
   "cooldown": {
-   "euro": 1784911112302,
+   "euro": 1784916661602,
    "super": 1784914288809,
    "premier": 1784914180599,
    "copa": 1784912371802
@@ -510,11 +503,11 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 12.9
+   "2026-07-24": 14.4
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":10",
+   "chave": ":13",
    "n": 19,
    "start": 1
   },
