@@ -456,7 +456,37 @@
    "premier": 1784895868203,
    "copa": 1784898662401
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:08",
+     "jogo": "Eslováquia x Bélgica",
+     "odd": 1.93
+    },
+    {
+     "h": "14:11",
+     "jogo": "Turquia x Países Baixos",
+     "odd": 1.95
+    },
+    {
+     "h": "14:14",
+     "jogo": "Escócia x Bélgica",
+     "odd": 1.87
+    }
+   ],
+   "gatilho": "coluna :08",
+   "alvo": {
+    "h": "14:08",
+    "jogo": "Eslováquia x Bélgica",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1784898718010
+   },
+   "iniciadoEm": 1784898718010
+  },
   "cooldown": {
    "euro": 1784894863507,
    "super": 1784895344801,
@@ -476,7 +506,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":13",
+   "chave": ":08",
    "n": 14,
    "start": 1
   },
