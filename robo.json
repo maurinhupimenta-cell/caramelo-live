@@ -296,8 +296,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "15:37",
@@ -317,11 +317,11 @@
    ],
    "gatilho": "time Uruguai",
    "alvo": {
-    "h": "15:40",
-    "jogo": "Uruguai x Curação",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1784904024714
+    "h": "15:43",
+    "jogo": "Canadá x Bélgica",
+    "odd": 2.4,
+    "unidades": 4,
+    "desde": 1784904418705
    },
    "iniciadoEm": 1784903697607,
    "tiros": [
@@ -330,6 +330,12 @@
      "jogo": "Colômbia x Bósnia e Herzegovina",
      "odd": 2.15,
      "unidades": 1
+    },
+    {
+     "h": "15:40",
+     "jogo": "Uruguai x Curação",
+     "odd": 2.15,
+     "unidades": 2
     }
    ]
   },
@@ -352,10 +358,10 @@
    "2026-07-24": 3.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Uruguai",
-   "n": 10,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":56",
+   "n": 15,
+   "start": 3
   },
   "_obs": {}
  },
