@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -68.6,
-  "ciclos": 284,
-  "greens": 188,
+  "saldo": -66.2,
+  "ciclos": 285,
+  "greens": 189,
   "redsCiclo": 51,
   "aborts": 0,
   "descartes": 45,
   "historico": [
+   {
+    "quando": "2026-07-24T00:48:02.742Z",
+    "resultado": "GREEN",
+    "unidades": 2.4,
+    "detalhe": "euro · Portugal x Geórgia @2.35 (tiro 3) · gatilho: placar 1-0 / 0-1"
+   },
    {
     "quando": "2026-07-23T22:48:58.898Z",
     "resultado": "GREEN",
@@ -283,64 +289,16 @@
     "resultado": "GREEN",
     "unidades": 1.6,
     "detalhe": "copa · Equador x Colômbia @2.15 (tiro 3) · gatilho: time Argentina"
-   },
-   {
-    "quando": "2026-07-23T16:34:45.097Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :46) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "01:38",
-     "jogo": "Áustria x Albânia",
-     "odd": 2.7
-    },
-    {
-     "h": "01:41",
-     "jogo": "Espanha x Sérvia",
-     "odd": 2.3
-    },
-    {
-     "h": "01:44",
-     "jogo": "Portugal x Geórgia",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "placar 1-0 / 0-1",
-   "alvo": {
-    "h": "01:44",
-    "jogo": "Portugal x Geórgia",
-    "odd": 2.35,
-    "unidades": 4,
-    "desde": 1784853853048
-   },
-   "iniciadoEm": 1784853301141,
-   "tiros": [
-    {
-     "h": "01:38",
-     "jogo": "Áustria x Albânia",
-     "odd": 2.7,
-     "unidades": 1
-    },
-    {
-     "h": "01:41",
-     "jogo": "Espanha x Sérvia",
-     "odd": 2.3,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "euro": 1784854082545
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784846938792,
    "premier": 1784843252494,
-   "euro": 1784842718896,
+   "euro": 1784854082545,
    "super": 1784838719396
   },
   "dias": {
@@ -352,7 +310,7 @@
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
-   "2026-07-23": -9.4
+   "2026-07-23": -7
   },
   "_gatilhoAtual": {
    "tipo": "placar",
