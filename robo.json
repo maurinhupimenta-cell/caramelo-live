@@ -493,7 +493,37 @@
    "super": 1784930454098,
    "copa": 1784931393798
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:50",
+     "jogo": "Eslovênia x Alemanha",
+     "odd": 2.1
+    },
+    {
+     "h": "23:53",
+     "jogo": "Romênia x França",
+     "odd": 1.83
+    },
+    {
+     "h": "23:56",
+     "jogo": "Croácia x Turquia",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "coluna :53",
+   "alvo": {
+    "h": "23:50",
+    "jogo": "Eslovênia x Alemanha",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1784932951399
+   },
+   "iniciadoEm": 1784932951399
+  },
   "cooldown": {
    "euro": 1784923170109,
    "super": 1784930454098,
@@ -512,9 +542,9 @@
    "2026-07-24": 13
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Senegal",
-   "n": 21,
+   "tipo": "coluna",
+   "chave": ":53",
+   "n": 23,
    "start": 3
   },
   "_obs": {}
