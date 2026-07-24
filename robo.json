@@ -297,8 +297,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "20:13",
@@ -318,11 +318,11 @@
    ],
    "gatilho": "odd 2.07",
    "alvo": {
-    "h": "20:16",
-    "jogo": "Agua Branca x Guayaquil",
-    "odd": 2.07,
-    "unidades": 2,
-    "desde": 1784920561508
+    "h": "20:19",
+    "jogo": "Itaquera x Penarol",
+    "odd": 2.5,
+    "unidades": 4,
+    "desde": 1784920747399
    },
    "iniciadoEm": 1784919860108,
    "tiros": [
@@ -331,6 +331,12 @@
      "jogo": "Santiago x Santos",
      "odd": 2.2,
      "unidades": 1
+    },
+    {
+     "h": "20:16",
+     "jogo": "Agua Branca x Guayaquil",
+     "odd": 2.07,
+     "unidades": 2
     }
    ]
   },
@@ -353,9 +359,9 @@
    "2026-07-24": 17.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.35",
-   "n": 19,
+   "tipo": "seq",
+   "chave": "RRRR",
+   "n": 30,
    "start": 1
   },
   "_obs": {}
@@ -539,9 +545,9 @@
    "2026-07-24": 15.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":21",
-   "n": 20,
+   "tipo": "time",
+   "chave": "República Tcheca",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
