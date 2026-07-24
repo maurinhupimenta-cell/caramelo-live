@@ -298,8 +298,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "16:42",
@@ -319,13 +319,21 @@
    ],
    "gatilho": "odd 2.02",
    "alvo": {
-    "h": "16:42",
-    "jogo": "Palace x Aston",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1784907599505
+    "h": "16:45",
+    "jogo": "Newcastle x Burnley",
+    "odd": 2.02,
+    "unidades": 2,
+    "desde": 1784907894607
    },
-   "iniciadoEm": 1784907599505
+   "iniciadoEm": 1784907599505,
+   "tiros": [
+    {
+     "h": "16:42",
+     "jogo": "Palace x Aston",
+     "odd": 2.3,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784904783910,
@@ -346,9 +354,9 @@
    "2026-07-24": -0.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.02",
-   "n": 8,
+   "tipo": "seq",
+   "chave": "RGGRR",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
