@@ -298,8 +298,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "16:42",
@@ -319,11 +319,11 @@
    ],
    "gatilho": "odd 2.02",
    "alvo": {
-    "h": "16:45",
-    "jogo": "Newcastle x Burnley",
-    "odd": 2.02,
-    "unidades": 2,
-    "desde": 1784907894607
+    "h": "16:48",
+    "jogo": "United x Liverpool",
+    "odd": 2.2,
+    "unidades": 4,
+    "desde": 1784908065006
    },
    "iniciadoEm": 1784907599505,
    "tiros": [
@@ -332,6 +332,12 @@
      "jogo": "Palace x Aston",
      "odd": 2.3,
      "unidades": 1
+    },
+    {
+     "h": "16:45",
+     "jogo": "Newcastle x Burnley",
+     "odd": 2.02,
+     "unidades": 2
     }
    ]
   },
@@ -362,13 +368,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -49.7,
-  "ciclos": 342,
+  "saldo": -56.7,
+  "ciclos": 343,
   "greens": 232,
-  "redsCiclo": 41,
+  "redsCiclo": 42,
   "aborts": 0,
   "descartes": 69,
   "historico": [
+   {
+    "quando": "2026-07-24T15:44:58.810Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Panamá"
+   },
    {
     "quando": "2026-07-24T15:02:00.907Z",
     "resultado": "GREEN",
@@ -482,68 +494,19 @@
     "resultado": "GREEN",
     "unidades": 0.8,
     "detalhe": "euro · Geórgia x França @1.95 (tiro 3) · gatilho: time Eslovênia"
-   },
-   {
-    "quando": "2026-07-24T05:23:40.805Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "premier · Southampton x Leicester @2.05 (tiro 3) · gatilho: seq RRGR"
    }
   ],
   "consumidas": {
    "super": 1784904900009,
-   "euro": 1784905320800
+   "euro": 1784905320800,
+   "copa": 1784907898801
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "16:31",
-     "jogo": "Uruguai x Panamá",
-     "odd": 2.07
-    },
-    {
-     "h": "16:34",
-     "jogo": "Arábia Saudita x Equador",
-     "odd": 1.85
-    },
-    {
-     "h": "16:37",
-     "jogo": "Uruguai x Portugal",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "time Panamá",
-   "alvo": {
-    "h": "16:37",
-    "jogo": "Uruguai x Portugal",
-    "odd": 1.9,
-    "unidades": 4,
-    "desde": 1784907541505
-   },
-   "iniciadoEm": 1784906998099,
-   "tiros": [
-    {
-     "h": "16:31",
-     "jogo": "Uruguai x Panamá",
-     "odd": 2.07,
-     "unidades": 1
-    },
-    {
-     "h": "16:34",
-     "jogo": "Arábia Saudita x Equador",
-     "odd": 1.85,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784905320800,
    "super": 1784904900009,
    "premier": 1784903032205,
-   "copa": 1784903341002
+   "copa": 1784907898801
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -554,7 +517,7 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 21.8
+   "2026-07-24": 14.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
