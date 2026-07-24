@@ -295,7 +295,37 @@
    "super": 1784897704505,
    "premier": 1784899477111
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:25",
+     "jogo": "África do Sul x Brasil",
+     "odd": 2.4
+    },
+    {
+     "h": "14:28",
+     "jogo": "Japão x Gana",
+     "odd": 2.5
+    },
+    {
+     "h": "14:31",
+     "jogo": "Colômbia x Equador",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "seq GRGR",
+   "alvo": {
+    "h": "14:25",
+    "jogo": "África do Sul x Brasil",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1784899480508
+   },
+   "iniciadoEm": 1784899480508
+  },
   "cooldown": {
    "copa": 1784895643704,
    "premier": 1784899477111,
@@ -452,7 +482,6 @@
    }
   ],
   "consumidas": {
-   "premier": 1784895868203,
    "copa": 1784898662401,
    "euro": 1784898838311
   },
