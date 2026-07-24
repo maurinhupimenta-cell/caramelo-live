@@ -164,12 +164,18 @@
  },
  "o25": {
   "saldo": -63.9,
-  "ciclos": 317,
+  "ciclos": 318,
   "greens": 207,
   "redsCiclo": 55,
   "aborts": 0,
-  "descartes": 55,
+  "descartes": 56,
   "historico": [
+   {
+    "quando": "2026-07-24T15:22:04.508Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho odd 2.5) — liga REARMADA"
+   },
    {
     "quando": "2026-07-24T15:02:00.702Z",
     "resultado": "GREEN",
@@ -283,19 +289,43 @@
     "resultado": "GREEN",
     "unidades": 1.8,
     "detalhe": "euro · Geórgia x França @2.2 (tiro 3) · gatilho: time Eslovênia"
-   },
-   {
-    "quando": "2026-07-24T05:50:41.305Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "premier · Wolverhampton x Aston @2.2 (tiro 1) · gatilho: time Watford"
    }
   ],
   "consumidas": {
    "copa": 1784904783910,
    "euro": 1784905320513
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:31",
+     "jogo": "Guayaquil x Santiago",
+     "odd": 2.02
+    },
+    {
+     "h": "16:34",
+     "jogo": "Montevideo x Porto Alegre",
+     "odd": 2.5
+    },
+    {
+     "h": "15:43",
+     "jogo": "Sao Paulo x Penarol",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "odd 2.5",
+   "alvo": {
+    "h": "16:31",
+    "jogo": "Guayaquil x Santiago",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1784906526401
+   },
+   "iniciadoEm": 1784906526401
+  },
   "cooldown": {
    "copa": 1784904783910,
    "premier": 1784899477111,
@@ -315,10 +345,10 @@
    "2026-07-24": -2.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGRR",
-   "n": 10,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.5",
+   "n": 13,
+   "start": 3
   },
   "_obs": {}
  },
