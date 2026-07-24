@@ -294,8 +294,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "22:55",
@@ -315,13 +315,21 @@
    ],
    "gatilho": "time Croácia",
    "alvo": {
-    "h": "22:55",
-    "jogo": "Nova Zelândia x Croácia",
+    "h": "22:58",
+    "jogo": "França x Bélgica",
     "odd": 2.3,
-    "unidades": 1,
-    "desde": 1784929936401
+    "unidades": 2,
+    "desde": 1784930294306
    },
-   "iniciadoEm": 1784929936401
+   "iniciadoEm": 1784929936401,
+   "tiros": [
+    {
+     "h": "22:55",
+     "jogo": "Nova Zelândia x Croácia",
+     "odd": 2.3,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784922518809,
@@ -342,10 +350,10 @@
    "2026-07-24": 11.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGGR",
-   "n": 9,
-   "start": 1
+   "tipo": "time",
+   "chave": "Croácia",
+   "n": 12,
+   "start": 2
   },
   "_obs": {}
  },
@@ -528,16 +536,11 @@
    "2026-07-24": 11.1
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.87",
-   "n": 12,
-   "start": 2
+   "tipo": "seq",
+   "chave": "GGGG",
+   "n": 16,
+   "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1784930093210,
-    "gatilho": "seq GGGG"
-   }
-  }
+  "_obs": {}
  }
 }
