@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -66.2,
-  "ciclos": 285,
-  "greens": 189,
+  "saldo": -65.3,
+  "ciclos": 286,
+  "greens": 190,
   "redsCiclo": 51,
   "aborts": 0,
   "descartes": 45,
   "historico": [
+   {
+    "quando": "2026-07-24T01:12:35.441Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · City x Wolverhampton @1.98 (tiro 3) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-07-24T00:48:02.742Z",
     "resultado": "GREEN",
@@ -283,65 +289,16 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "super · Lima x La Boca @2.25 (tiro 1) · gatilho: coluna :46"
-   },
-   {
-    "quando": "2026-07-23T16:47:34.697Z",
-    "resultado": "GREEN",
-    "unidades": 1.6,
-    "detalhe": "copa · Equador x Colômbia @2.15 (tiro 3) · gatilho: time Argentina"
    }
   ],
   "consumidas": {
-   "euro": 1784854082545
+   "euro": 1784854082545,
+   "premier": 1784855555246
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "02:03",
-     "jogo": "Leicester x Liverpool",
-     "odd": 2.25
-    },
-    {
-     "h": "02:06",
-     "jogo": "Norwich x Palace",
-     "odd": 2.2
-    },
-    {
-     "h": "02:09",
-     "jogo": "City x Wolverhampton",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-1)",
-   "alvo": {
-    "h": "02:09",
-    "jogo": "City x Wolverhampton",
-    "odd": 1.98,
-    "unidades": 4,
-    "desde": 1784855383852
-   },
-   "iniciadoEm": 1784854599645,
-   "tiros": [
-    {
-     "h": "02:03",
-     "jogo": "Leicester x Liverpool",
-     "odd": 2.25,
-     "unidades": 1
-    },
-    {
-     "h": "02:06",
-     "jogo": "Norwich x Palace",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784846938792,
-   "premier": 1784843252494,
+   "premier": 1784855555246,
    "euro": 1784854082545,
    "super": 1784838719396
   },
@@ -354,7 +311,7 @@
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
-   "2026-07-23": -7
+   "2026-07-23": -6.1
   },
   "_gatilhoAtual": {
    "tipo": "placar",
@@ -517,6 +474,11 @@
    "n": 23,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1784855459248,
+    "gatilho": "placar 1-0 / 0-1"
+   }
+  }
  }
 }
