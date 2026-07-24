@@ -294,7 +294,37 @@
   "consumidas": {
    "euro": 1784862710000
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:42",
+     "jogo": "Palac x Brent",
+     "odd": 2.25
+    },
+    {
+     "h": "04:45",
+     "jogo": "Evert x City",
+     "odd": 2.02
+    },
+    {
+     "h": "04:48",
+     "jogo": "Unite x West",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "time City",
+   "alvo": {
+    "h": "04:42",
+    "jogo": "Palac x Brent",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1784865898702
+   },
+   "iniciadoEm": 1784865898702
+  },
   "cooldown": {
    "copa": 1784846938792,
    "premier": 1784861804805,
@@ -315,7 +345,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Sérvia",
+   "chave": "City",
    "n": 9,
    "start": 1
   },
@@ -323,12 +353,18 @@
  },
  "ambas": {
   "saldo": -71.2,
-  "ciclos": 315,
+  "ciclos": 316,
   "greens": 211,
   "redsCiclo": 41,
   "aborts": 0,
-  "descartes": 63,
+  "descartes": 64,
   "historico": [
+   {
+    "quando": "2026-07-24T04:04:59.202Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-24T03:20:13.300Z",
     "resultado": "GREEN",
@@ -442,12 +478,6 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :44) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-23T19:48:20.502Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho coluna :03) — liga REARMADA"
    }
   ],
   "consumidas": {
