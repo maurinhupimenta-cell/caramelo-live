@@ -458,7 +458,37 @@
    "euro": 1784898838311,
    "super": 1784899918110
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:18",
+     "jogo": "Brighton x Brentford",
+     "odd": 1.87
+    },
+    {
+     "h": "15:21",
+     "jogo": "Aston x Norwich",
+     "odd": 2.02
+    },
+    {
+     "h": "14:42",
+     "jogo": "Watford x Aston",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "coluna :21",
+   "alvo": {
+    "h": "15:18",
+    "jogo": "Brighton x Brentford",
+    "odd": 1.87,
+    "unidades": 1,
+    "desde": 1784902126699
+   },
+   "iniciadoEm": 1784902126699
+  },
   "cooldown": {
    "euro": 1784898838311,
    "super": 1784899918110,
@@ -477,10 +507,10 @@
    "2026-07-24": 18.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.8",
-   "n": 11,
-   "start": 2
+   "tipo": "coluna",
+   "chave": ":21",
+   "n": 15,
+   "start": 3
   },
   "_obs": {}
  }
