@@ -328,13 +328,19 @@
   }
  },
  "ambas": {
-  "saldo": -68.3,
-  "ciclos": 321,
-  "greens": 213,
+  "saldo": -67.3,
+  "ciclos": 322,
+  "greens": 214,
   "redsCiclo": 41,
   "aborts": 0,
   "descartes": 67,
   "historico": [
+   {
+    "quando": "2026-07-24T04:55:08.704Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Sao Paulo x Bogota @2.02 (tiro 1) · gatilho: placar empate 1-1"
+   },
    {
     "quando": "2026-07-24T04:51:02.100Z",
     "resultado": "GREEN",
@@ -448,22 +454,17 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · Watford x Islington @1.98 (tiro 1) · gatilho: coluna :30"
-   },
-   {
-    "quando": "2026-07-23T21:05:00.305Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
    "copa": 1784867941602,
-   "euro": 1784868661904
+   "euro": 1784868661904,
+   "super": 1784868908501
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1784868661904,
-   "super": 1784860798007,
+   "super": 1784868908501,
    "premier": 1784860069305,
    "copa": 1784867941602
   },
@@ -476,7 +477,7 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 3.2
+   "2026-07-24": 4.2
   },
   "_gatilhoAtual": {
    "tipo": "placar",
