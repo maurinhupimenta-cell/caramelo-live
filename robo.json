@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -44.1,
-  "ciclos": 330,
+  "saldo": -51.1,
+  "ciclos": 331,
   "greens": 218,
-  "redsCiclo": 55,
+  "redsCiclo": 56,
   "aborts": 0,
   "descartes": 57,
   "historico": [
+   {
+    "quando": "2026-07-24T19:21:37.701Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: odd 2.07"
+   },
    {
     "quando": "2026-07-24T19:00:00.803Z",
     "resultado": "GREEN",
@@ -283,68 +289,19 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: seq GRGR"
-   },
-   {
-    "quando": "2026-07-24T13:24:37.303Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "premier · Aston x Burnley @2.25 (tiro 1) · gatilho: coluna :24"
    }
   ],
   "consumidas": {
    "copa": 1784917859504,
-   "euro": 1784919600700
+   "euro": 1784919600700,
+   "super": 1784920897509
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "20:13",
-     "jogo": "Santiago x Santos",
-     "odd": 2.2
-    },
-    {
-     "h": "20:16",
-     "jogo": "Agua Branca x Guayaquil",
-     "odd": 2.07
-    },
-    {
-     "h": "20:19",
-     "jogo": "Itaquera x Penarol",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "odd 2.07",
-   "alvo": {
-    "h": "20:19",
-    "jogo": "Itaquera x Penarol",
-    "odd": 2.5,
-    "unidades": 4,
-    "desde": 1784920747399
-   },
-   "iniciadoEm": 1784919860108,
-   "tiros": [
-    {
-     "h": "20:13",
-     "jogo": "Santiago x Santos",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "20:16",
-     "jogo": "Agua Branca x Guayaquil",
-     "odd": 2.07,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784917859504,
    "premier": 1784912925401,
    "euro": 1784919600700,
-   "super": 1784916205010
+   "super": 1784920897509
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -356,7 +313,7 @@
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
-   "2026-07-24": 17.6
+   "2026-07-24": 10.6
   },
   "_gatilhoAtual": {
    "tipo": "seq",
