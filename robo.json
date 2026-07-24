@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -51.1,
-  "ciclos": 331,
-  "greens": 218,
+  "saldo": -49.9,
+  "ciclos": 332,
+  "greens": 219,
   "redsCiclo": 56,
   "aborts": 0,
   "descartes": 57,
   "historico": [
+   {
+    "quando": "2026-07-24T19:48:39.005Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Argélia x Espanha @2.2 (tiro 1) · gatilho: time Coreia do Sul"
+   },
    {
     "quando": "2026-07-24T19:21:37.701Z",
     "resultado": "RED_CICLO",
@@ -283,51 +289,16 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · Países Baixos x França @1.98 (tiro 1) · gatilho: odd 2.55"
-   },
-   {
-    "quando": "2026-07-24T13:33:58.006Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: seq GRGR"
    }
   ],
   "consumidas": {
    "euro": 1784919600700,
-   "super": 1784920897509
+   "super": 1784920897509,
+   "copa": 1784922518809
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:46",
-     "jogo": "Argélia x Espanha",
-     "odd": 2.2
-    },
-    {
-     "h": "20:49",
-     "jogo": "Panamá x Coreia do Sul",
-     "odd": 2.55
-    },
-    {
-     "h": "20:52",
-     "jogo": "Espanha x África do Sul",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "time Coreia do Sul",
-   "alvo": {
-    "h": "20:46",
-    "jogo": "Argélia x Espanha",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1784921842009
-   },
-   "iniciadoEm": 1784921842009
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784917859504,
+   "copa": 1784922518809,
    "premier": 1784912925401,
    "euro": 1784919600700,
    "super": 1784920897509
@@ -342,13 +313,13 @@
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
-   "2026-07-24": 10.6
+   "2026-07-24": 11.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Coreia do Sul",
    "n": 13,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -537,7 +508,7 @@
    "tipo": "coluna",
    "chave": ":53",
    "n": 20,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
