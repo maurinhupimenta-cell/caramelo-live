@@ -164,12 +164,18 @@
  },
  "o25": {
   "saldo": -58.1,
-  "ciclos": 314,
+  "ciclos": 315,
   "greens": 206,
   "redsCiclo": 54,
   "aborts": 0,
-  "descartes": 54,
+  "descartes": 55,
   "historico": [
+   {
+    "quando": "2026-07-24T14:33:58.002Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Uruguai) — liga REARMADA"
+   },
    {
     "quando": "2026-07-24T14:05:57.198Z",
     "resultado": "RED_CICLO",
@@ -283,19 +289,43 @@
     "resultado": "GREEN",
     "unidades": 1.9,
     "detalhe": "super · Porto Alegre x Penarol @2.87 (tiro 1) · gatilho: time Buenos Aires"
-   },
-   {
-    "quando": "2026-07-24T04:44:48.107Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "premier · Chelsea x City @2.07 (tiro 2) · gatilho: time City"
    }
   ],
   "consumidas": {
    "euro": 1784900639198,
    "super": 1784901957000
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:37",
+     "jogo": "Colômbia x Bósnia e Herzegovina",
+     "odd": 2.15
+    },
+    {
+     "h": "15:40",
+     "jogo": "Uruguai x Curação",
+     "odd": 2.15
+    },
+    {
+     "h": "15:43",
+     "jogo": "Canadá x Bélgica",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "time Uruguai",
+   "alvo": {
+    "h": "15:37",
+    "jogo": "Colômbia x Bósnia e Herzegovina",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1784903697607
+   },
+   "iniciadoEm": 1784903697607
+  },
   "cooldown": {
    "copa": 1784900037902,
    "premier": 1784899477111,
@@ -315,10 +345,10 @@
    "2026-07-24": 3.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRR",
-   "n": 27,
-   "start": 1
+   "tipo": "time",
+   "chave": "Uruguai",
+   "n": 10,
+   "start": 2
   },
   "_obs": {}
  },
