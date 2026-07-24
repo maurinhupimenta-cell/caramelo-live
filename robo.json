@@ -324,13 +324,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -64.4,
-  "ciclos": 325,
-  "greens": 217,
+  "saldo": -63.5,
+  "ciclos": 326,
+  "greens": 218,
   "redsCiclo": 41,
   "aborts": 0,
   "descartes": 67,
   "historico": [
+   {
+    "quando": "2026-07-24T06:25:07.603Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · Haiti x Uzbequistão @1.9 (tiro 1) · gatilho: odd 2.07"
+   },
    {
     "quando": "2026-07-24T06:12:59.703Z",
     "resultado": "GREEN",
@@ -444,54 +450,19 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho placar 1-0 / 0-1) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-23T23:08:35.192Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "premier · Liverpool x Southampton @2.05 (tiro 2) · gatilho: odd 1.98"
    }
   ],
   "consumidas": {
    "euro": 1784873160705,
-   "super": 1784873579511
+   "super": 1784873579511,
+   "copa": 1784874307407
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "07:22",
-     "jogo": "Haiti x Uzbequistão",
-     "odd": 1.9
-    },
-    {
-     "h": "07:25",
-     "jogo": "Marrocos x Paraguai",
-     "odd": 2.07
-    },
-    {
-     "h": "07:28",
-     "jogo": "Cabo Verde x Argentina",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "odd 2.07",
-   "alvo": {
-    "h": "07:22",
-    "jogo": "Haiti x Uzbequistão",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1784873586206
-   },
-   "iniciadoEm": 1784873586206
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784873160705,
    "super": 1784873579511,
    "premier": 1784870620609,
-   "copa": 1784867941602
+   "copa": 1784874307407
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -502,7 +473,7 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 7.1
+   "2026-07-24": 8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
