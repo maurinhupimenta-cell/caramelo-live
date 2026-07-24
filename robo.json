@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -50.2,
-  "ciclos": 327,
-  "greens": 215,
+  "saldo": -48,
+  "ciclos": 328,
+  "greens": 216,
   "redsCiclo": 55,
   "aborts": 0,
   "descartes": 57,
   "historico": [
+   {
+    "quando": "2026-07-24T18:03:25.203Z",
+    "resultado": "GREEN",
+    "unidades": 2.2,
+    "detalhe": "super · Medellin x Rio de Janeiro @2.3 (tiro 3) · gatilho: coluna :55"
+   },
    {
     "quando": "2026-07-24T17:38:31.398Z",
     "resultado": "GREEN",
@@ -283,63 +289,20 @@
     "resultado": "GREEN",
     "unidades": 1.8,
     "detalhe": "copa · Qatar x República Tcheca @2.4 (tiro 2) · gatilho: coluna :16"
-   },
-   {
-    "quando": "2026-07-24T12:08:33.804Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "premier · Everton x Southampton @2.25 (tiro 2) · gatilho: coluna :03"
    }
   ],
   "consumidas": {
    "premier": 1784912925401,
    "copa": 1784913451507,
-   "euro": 1784914711201
+   "euro": 1784914711201,
+   "super": 1784916205010
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "18:52",
-     "jogo": "Quito x Medellin",
-     "odd": 2.4
-    },
-    {
-     "h": "18:55",
-     "jogo": "La Boca x Bogota",
-     "odd": 2.7
-    },
-    {
-     "h": "18:58",
-     "jogo": "Medellin x Rio de Janeiro",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "coluna :55",
-   "alvo": {
-    "h": "18:55",
-    "jogo": "La Boca x Bogota",
-    "odd": 2.7,
-    "unidades": 2,
-    "desde": 1784916201204
-   },
-   "iniciadoEm": 1784915489909,
-   "tiros": [
-    {
-     "h": "18:52",
-     "jogo": "Quito x Medellin",
-     "odd": 2.4,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784913451507,
    "premier": 1784912925401,
    "euro": 1784914711201,
-   "super": 1784911889606
+   "super": 1784916205010
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -351,7 +314,7 @@
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
-   "2026-07-24": 11.5
+   "2026-07-24": 13.7
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
@@ -496,8 +459,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "19:05",
@@ -517,13 +480,21 @@
    ],
    "gatilho": "coluna :08",
    "alvo": {
-    "h": "19:05",
-    "jogo": "Eslováquia x Escócia",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1784915790007
+    "h": "19:08",
+    "jogo": "Portugal x Eslovênia",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1784916481100
    },
-   "iniciadoEm": 1784915790007
+   "iniciadoEm": 1784915790007,
+   "tiros": [
+    {
+     "h": "19:05",
+     "jogo": "Eslováquia x Escócia",
+     "odd": 1.95,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784911112302,
@@ -544,7 +515,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":08",
+   "chave": ":10",
    "n": 19,
    "start": 1
   },
