@@ -324,13 +324,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -57.1,
-  "ciclos": 334,
-  "greens": 224,
+  "saldo": -56.1,
+  "ciclos": 335,
+  "greens": 225,
   "redsCiclo": 41,
   "aborts": 0,
   "descartes": 69,
   "historico": [
+   {
+    "quando": "2026-07-24T12:24:28.399Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Liverpool x Norwich @2 (tiro 2) · gatilho: coluna :21"
+   },
    {
     "quando": "2026-07-24T12:15:44.906Z",
     "resultado": "GREEN",
@@ -444,62 +450,19 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-24T03:20:13.300Z",
-    "resultado": "GREEN",
-    "unidades": 0.3,
-    "detalhe": "euro · Países Baixos x Suíça @1.83 (tiro 3) · gatilho: placar empate 1-1"
    }
   ],
   "consumidas": {
    "copa": 1784894302300,
    "euro": 1784894863507,
-   "super": 1784895344801
+   "super": 1784895344801,
+   "premier": 1784895868203
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "13:18",
-     "jogo": "Southampton x Everton",
-     "odd": 1.95
-    },
-    {
-     "h": "13:21",
-     "jogo": "Liverpool x Norwich",
-     "odd": 2
-    },
-    {
-     "h": "13:24",
-     "jogo": "Brighton x Aston",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "coluna :21",
-   "alvo": {
-    "h": "13:21",
-    "jogo": "Liverpool x Norwich",
-    "odd": 2,
-    "unidades": 2,
-    "desde": 1784895766411
-   },
-   "iniciadoEm": 1784895346309,
-   "tiros": [
-    {
-     "h": "13:18",
-     "jogo": "Southampton x Everton",
-     "odd": 1.95,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784894863507,
    "super": 1784895344801,
-   "premier": 1784877097011,
+   "premier": 1784895868203,
    "copa": 1784894302300
   },
   "dias": {
@@ -511,7 +474,7 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 14.4
+   "2026-07-24": 15.4
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
