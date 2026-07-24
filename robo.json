@@ -292,7 +292,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1784930673801,
    "premier": 1784931642504,
    "super": 1784933250210
   },
@@ -368,13 +367,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -58.5,
-  "ciclos": 362,
-  "greens": 244,
+  "saldo": -57.7,
+  "ciclos": 363,
+  "greens": 245,
   "redsCiclo": 44,
   "aborts": 0,
   "descartes": 74,
   "historico": [
+   {
+    "quando": "2026-07-24T23:03:31.208Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "premier · Burnley x Wolverhampton @1.8 (tiro 1) · gatilho: odd 1.8"
+   },
    {
     "quando": "2026-07-24T22:58:30.207Z",
     "resultado": "GREEN_OBS",
@@ -488,52 +493,47 @@
     "resultado": "GREEN",
     "unidades": 1.8,
     "detalhe": "super · Santos x La Plata @2.2 (tiro 3) · gatilho: coluna :04"
-   },
-   {
-    "quando": "2026-07-24T15:44:58.810Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Panamá"
    }
   ],
   "consumidas": {
-   "copa": 1784931393798
+   "copa": 1784931393798,
+   "premier": 1784934211008
   },
   "ciclo": {
-   "liga": "premier",
+   "liga": "super",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "00:00",
-     "jogo": "Burnley x Wolverhampton",
-     "odd": 1.8
+     "h": "00:04",
+     "jogo": "Bogota x Montevideo",
+     "odd": 2.07
     },
     {
-     "h": "00:03",
-     "jogo": "Tottenham x Newcastle",
-     "odd": 2
+     "h": "00:07",
+     "jogo": "Asuncion x La Plata",
+     "odd": 2.15
     },
     {
-     "h": "00:06",
-     "jogo": "Chelsea x Watford",
-     "odd": 2.05
+     "h": "00:10",
+     "jogo": "Guayaquil x Medellin",
+     "odd": 1.98
     }
    ],
-   "gatilho": "odd 1.8",
+   "gatilho": "odd 2.07",
    "alvo": {
-    "h": "00:00",
-    "jogo": "Burnley x Wolverhampton",
-    "odd": 1.8,
+    "h": "00:04",
+    "jogo": "Bogota x Montevideo",
+    "odd": 2.07,
     "unidades": 1,
-    "desde": 1784933910209
+    "desde": 1784934213204
    },
-   "iniciadoEm": 1784933910209
+   "iniciadoEm": 1784934213204
   },
   "cooldown": {
    "euro": 1784923170109,
    "super": 1784930454098,
-   "premier": 1784921031001,
+   "premier": 1784934211008,
    "copa": 1784931393798
   },
   "dias": {
@@ -545,12 +545,12 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 13
+   "2026-07-24": 13.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGGR",
-   "n": 10,
+   "tipo": "odd",
+   "chave": "2.07",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
