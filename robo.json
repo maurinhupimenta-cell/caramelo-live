@@ -326,12 +326,18 @@
  },
  "ambas": {
   "saldo": -71.2,
-  "ciclos": 317,
+  "ciclos": 318,
   "greens": 211,
   "redsCiclo": 41,
   "aborts": 0,
-  "descartes": 65,
+  "descartes": 66,
   "historico": [
+   {
+    "quando": "2026-07-24T04:23:08.706Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho placar 1-0 / 0-1) — liga REARMADA"
+   },
    {
     "quando": "2026-07-24T04:22:59.098Z",
     "resultado": "DESCARTADO",
@@ -445,45 +451,39 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "euro · Suíça x Bélgica @1.85 (tiro 1) · gatilho: seq GRRGG"
-   },
-   {
-    "quando": "2026-07-23T20:03:59.103Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {},
   "ciclo": {
-   "liga": "super",
+   "liga": "copa",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "04:40",
-     "jogo": "Itaqu x Rio d",
-     "odd": 1.98
+     "h": "05:28",
+     "jogo": "Arábia Saudita x Argélia",
+     "odd": 1.93
     },
     {
-     "h": "04:43",
-     "jogo": "Agua x Lima",
-     "odd": 1.95
+     "h": "05:31",
+     "jogo": "Senegal x Equador",
+     "odd": 2
     },
     {
-     "h": "04:46",
-     "jogo": "Avell x Medel",
-     "odd": 2.07
+     "h": "05:34",
+     "jogo": "Japão x Uruguai",
+     "odd": 2.02
     }
    ],
-   "gatilho": "placar 1-0 / 0-1",
+   "gatilho": "time Senegal",
    "alvo": {
-    "h": "04:40",
-    "jogo": "Itaqu x Rio d",
-    "odd": 1.98,
+    "h": "05:28",
+    "jogo": "Arábia Saudita x Argélia",
+    "odd": 1.93,
     "unidades": 1,
-    "desde": 1784865959202
+    "desde": 1784866988708
    },
-   "iniciadoEm": 1784865959202
+   "iniciadoEm": 1784866988708
   },
   "cooldown": {
    "euro": 1784863213104,
