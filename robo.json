@@ -456,7 +456,45 @@
    "premier": 1784870620609,
    "euro": 1784873160705
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "07:07",
+     "jogo": "Guayaquil x Penarol",
+     "odd": 2
+    },
+    {
+     "h": "07:10",
+     "jogo": "Sao Paulo x Medellin",
+     "odd": 1.95
+    },
+    {
+     "h": "07:13",
+     "jogo": "Belo Horizonte x Santiago",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "placar empate 1-1",
+   "alvo": {
+    "h": "07:10",
+    "jogo": "Sao Paulo x Medellin",
+    "odd": 1.95,
+    "unidades": 2,
+    "desde": 1784873386611
+   },
+   "iniciadoEm": 1784873162210,
+   "tiros": [
+    {
+     "h": "07:07",
+     "jogo": "Guayaquil x Penarol",
+     "odd": 2,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1784873160705,
    "super": 1784868908501,
