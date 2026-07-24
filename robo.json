@@ -455,8 +455,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "03:31",
@@ -476,11 +476,11 @@
    ],
    "gatilho": "time Rio de Janeiro",
    "alvo": {
-    "h": "03:34",
-    "jogo": "Guayaquil x Rio de Janeiro",
-    "odd": 1.9,
-    "unidades": 2,
-    "desde": 1784860499705
+    "h": "03:37",
+    "jogo": "Montevideo x Santiago",
+    "odd": 1.8,
+    "unidades": 4,
+    "desde": 1784860679902
    },
    "iniciadoEm": 1784860070997,
    "tiros": [
@@ -489,6 +489,12 @@
      "jogo": "La Plata x La Boca",
      "odd": 2.2,
      "unidades": 1
+    },
+    {
+     "h": "03:34",
+     "jogo": "Guayaquil x Rio de Janeiro",
+     "odd": 1.9,
+     "unidades": 2
     }
    ]
   },
@@ -510,8 +516,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "1-0 / 0-1",
-   "n": 18,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
