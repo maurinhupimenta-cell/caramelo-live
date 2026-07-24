@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -58.1,
-  "ciclos": 315,
+  "saldo": -65.1,
+  "ciclos": 316,
   "greens": 206,
-  "redsCiclo": 54,
+  "redsCiclo": 55,
   "aborts": 0,
   "descartes": 55,
   "historico": [
+   {
+    "quando": "2026-07-24T14:53:04.119Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Uruguai"
+   },
    {
     "quando": "2026-07-24T14:33:58.002Z",
     "resultado": "GREEN_OBS",
@@ -283,64 +289,45 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho seq GRRR) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-24T05:40:08.404Z",
-    "resultado": "GREEN",
-    "unidades": 1.9,
-    "detalhe": "super · Porto Alegre x Penarol @2.87 (tiro 1) · gatilho: time Buenos Aires"
    }
   ],
   "consumidas": {
-   "super": 1784901957000
+   "super": 1784901957000,
+   "copa": 1784904783910
   },
   "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "15:37",
-     "jogo": "Colômbia x Bósnia e Herzegovina",
-     "odd": 2.15
+     "h": "15:56",
+     "jogo": "Escócia x Áustria",
+     "odd": 2.25
     },
     {
-     "h": "15:40",
-     "jogo": "Uruguai x Curação",
-     "odd": 2.15
+     "h": "15:59",
+     "jogo": "França x Croácia",
+     "odd": 2.1
     },
     {
-     "h": "15:43",
-     "jogo": "Canadá x Bélgica",
-     "odd": 2.4
+     "h": "16:02",
+     "jogo": "Albânia x Polônia",
+     "odd": 2.87
     }
    ],
-   "gatilho": "time Uruguai",
+   "gatilho": "seq GRGRR",
    "alvo": {
-    "h": "15:43",
-    "jogo": "Canadá x Bélgica",
-    "odd": 2.4,
-    "unidades": 4,
-    "desde": 1784904418705
+    "h": "15:56",
+    "jogo": "Escócia x Áustria",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1784904786206
    },
-   "iniciadoEm": 1784903697607,
-   "tiros": [
-    {
-     "h": "15:37",
-     "jogo": "Colômbia x Bósnia e Herzegovina",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "15:40",
-     "jogo": "Uruguai x Curação",
-     "odd": 2.15,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1784904786206
   },
   "cooldown": {
-   "copa": 1784900037902,
+   "copa": 1784904783910,
    "premier": 1784899477111,
    "euro": 1784900639198,
    "super": 1784901957000
@@ -355,24 +342,30 @@
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
-   "2026-07-24": 3.6
+   "2026-07-24": -3.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":56",
-   "n": 15,
+   "tipo": "seq",
+   "chave": "GRGRR",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -51.1,
-  "ciclos": 340,
-  "greens": 230,
+  "saldo": -50.4,
+  "ciclos": 341,
+  "greens": 231,
   "redsCiclo": 41,
   "aborts": 0,
   "descartes": 69,
   "historico": [
+   {
+    "quando": "2026-07-24T14:55:00.205Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "super · La Boca x Belo Horizonte @1.93 (tiro 3) · gatilho: odd 1.87"
+   },
    {
     "quando": "2026-07-24T14:29:01.105Z",
     "resultado": "GREEN",
@@ -486,66 +479,17 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "super · Sao Paulo x Bogota @2.02 (tiro 1) · gatilho: placar empate 1-1"
-   },
-   {
-    "quando": "2026-07-24T04:51:02.100Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "euro · Croácia x Albânia @2.2 (tiro 3) · gatilho: time Bélgica"
    }
   ],
   "consumidas": {
    "premier": 1784903032205,
-   "copa": 1784903341002
+   "copa": 1784903341002,
+   "super": 1784904900009
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "15:46",
-     "jogo": "Porto Alegre x La Boca",
-     "odd": 2.25
-    },
-    {
-     "h": "15:49",
-     "jogo": "Asuncion x Sao Paulo",
-     "odd": 1.87
-    },
-    {
-     "h": "15:52",
-     "jogo": "La Boca x Belo Horizonte",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "odd 1.87",
-   "alvo": {
-    "h": "15:52",
-    "jogo": "La Boca x Belo Horizonte",
-    "odd": 1.93,
-    "unidades": 4,
-    "desde": 1784904780208
-   },
-   "iniciadoEm": 1784903815600,
-   "tiros": [
-    {
-     "h": "15:46",
-     "jogo": "Porto Alegre x La Boca",
-     "odd": 2.25,
-     "unidades": 1
-    },
-    {
-     "h": "15:49",
-     "jogo": "Asuncion x Sao Paulo",
-     "odd": 1.87,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784898838311,
-   "super": 1784899918110,
+   "super": 1784904900009,
    "premier": 1784903032205,
    "copa": 1784903341002
   },
@@ -558,12 +502,12 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 20.4
+   "2026-07-24": 21.1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":04",
-   "n": 16,
+   "tipo": "odd",
+   "chave": "1.87",
+   "n": 9,
    "start": 3
   },
   "_obs": {}
