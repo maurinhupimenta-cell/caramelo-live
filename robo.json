@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -61.7,
-  "ciclos": 290,
+  "saldo": -68.7,
+  "ciclos": 291,
   "greens": 192,
-  "redsCiclo": 51,
+  "redsCiclo": 52,
   "aborts": 0,
   "descartes": 47,
   "historico": [
+   {
+    "quando": "2026-07-24T03:11:50.198Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: time Sérvia"
+   },
    {
     "quando": "2026-07-24T02:56:45.006Z",
     "resultado": "GREEN",
@@ -283,67 +289,18 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "copa · Uzbequistão x Uruguai @2.25 (tiro 1) · gatilho: odd 2.15"
-   },
-   {
-    "quando": "2026-07-23T18:13:58.412Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :17) — liga REARMADA"
    }
   ],
   "consumidas": {
    "super": 1784860074698,
-   "premier": 1784861804805
+   "premier": 1784861804805,
+   "euro": 1784862710000
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:05",
-     "jogo": "Eslováquia x Polônia",
-     "odd": 2.5
-    },
-    {
-     "h": "04:08",
-     "jogo": "Inglaterra x Sérvia",
-     "odd": 2.3
-    },
-    {
-     "h": "03:53",
-     "jogo": "Romênia x Turquia",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "time Sérvia",
-   "alvo": {
-    "h": "03:53",
-    "jogo": "Romênia x Turquia",
-    "odd": 2.35,
-    "unidades": 4,
-    "desde": 1784862708207
-   },
-   "iniciadoEm": 1784861817904,
-   "tiros": [
-    {
-     "h": "04:05",
-     "jogo": "Eslováquia x Polônia",
-     "odd": 2.5,
-     "unidades": 1
-    },
-    {
-     "h": "04:08",
-     "jogo": "Inglaterra x Sérvia",
-     "odd": 2.3,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784846938792,
    "premier": 1784861804805,
-   "euro": 1784854082545,
+   "euro": 1784862710000,
    "super": 1784860074698
   },
   "dias": {
@@ -355,7 +312,8 @@
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
-   "2026-07-23": -2.5
+   "2026-07-23": -2.5,
+   "2026-07-24": -7
   },
   "_gatilhoAtual": {
    "tipo": "time",
@@ -367,12 +325,18 @@
  },
  "ambas": {
   "saldo": -71.5,
-  "ciclos": 313,
+  "ciclos": 314,
   "greens": 210,
   "redsCiclo": 41,
   "aborts": 0,
-  "descartes": 62,
+  "descartes": 63,
   "historico": [
+   {
+    "quando": "2026-07-24T03:13:14.208Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho placar acima de 1-0 (2-1)) — liga REARMADA"
+   },
    {
     "quando": "2026-07-24T03:02:18.007Z",
     "resultado": "DESCARTADO",
@@ -486,12 +450,6 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "super · Porto Alegre x Penarol @2.35 (tiro 1) · gatilho: seq GRRGG"
-   },
-   {
-    "quando": "2026-07-23T19:14:21.493Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
@@ -552,6 +510,11 @@
    "n": 9,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1784862794208,
+    "gatilho": "placar acima de 1-0 (2-1)"
+   }
+  }
  }
 }
