@@ -461,8 +461,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "05:41",
@@ -482,11 +482,11 @@
    ],
    "gatilho": "time Bélgica",
    "alvo": {
-    "h": "05:44",
-    "jogo": "Eslováquia x Bélgica",
-    "odd": 1.93,
-    "unidades": 2,
-    "desde": 1784868241407
+    "h": "05:47",
+    "jogo": "Croácia x Albânia",
+    "odd": 2.2,
+    "unidades": 4,
+    "desde": 1784868541107
    },
    "iniciadoEm": 1784867999799,
    "tiros": [
@@ -495,6 +495,12 @@
      "jogo": "Eslovênia x Dinamarca",
      "odd": 2.25,
      "unidades": 1
+    },
+    {
+     "h": "05:44",
+     "jogo": "Eslováquia x Bélgica",
+     "odd": 1.93,
+     "unidades": 2
     }
    ]
   },
@@ -516,9 +522,9 @@
    "2026-07-24": 1.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Lima",
-   "n": 10,
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
