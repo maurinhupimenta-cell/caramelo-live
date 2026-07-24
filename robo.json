@@ -353,18 +353,24 @@
    "tipo": "coluna",
    "chave": ":03",
    "n": 13,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -60.4,
-  "ciclos": 331,
-  "greens": 221,
+  "saldo": -59.4,
+  "ciclos": 332,
+  "greens": 222,
   "redsCiclo": 41,
   "aborts": 0,
   "descartes": 69,
   "historico": [
+   {
+    "quando": "2026-07-24T11:58:22.502Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Panamá x Curação @1.98 (tiro 1) · gatilho: time Senegal"
+   },
    {
     "quando": "2026-07-24T11:50:24.804Z",
     "resultado": "GREEN_OBS",
@@ -478,51 +484,17 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-24T02:57:00.201Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho placar empate 1-1) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "12:55",
-     "jogo": "Panamá x Curação",
-     "odd": 1.98
-    },
-    {
-     "h": "12:58",
-     "jogo": "Senegal x Colômbia",
-     "odd": 2.05
-    },
-    {
-     "h": "13:01",
-     "jogo": "Arábia Saudita x Nova Zelândia",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "time Senegal",
-   "alvo": {
-    "h": "12:55",
-    "jogo": "Panamá x Curação",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1784893824807
-   },
-   "iniciadoEm": 1784893824807
+  "consumidas": {
+   "copa": 1784894302300
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784878127806,
    "super": 1784873579511,
    "premier": 1784877097011,
-   "copa": 1784878605404
+   "copa": 1784894302300
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -533,12 +505,12 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 11.1
+   "2026-07-24": 12.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Senegal",
-   "n": 14,
+   "tipo": "odd",
+   "chave": "1.87",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
