@@ -292,10 +292,39 @@
    }
   ],
   "consumidas": {
-   "super": 1784867628911,
    "premier": 1784868288001
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:37",
+     "jogo": "Porto Alegre x Penarol",
+     "odd": 2.87
+    },
+    {
+     "h": "06:40",
+     "jogo": "Buenos Aires x Belo Horizonte",
+     "odd": 1.98
+    },
+    {
+     "h": "06:43",
+     "jogo": "La Boca x Montevideo",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "time Buenos Aires",
+   "alvo": {
+    "h": "06:37",
+    "jogo": "Porto Alegre x Penarol",
+    "odd": 2.87,
+    "unidades": 1,
+    "desde": 1784871238403
+   },
+   "iniciadoEm": 1784871238403
+  },
   "cooldown": {
    "copa": 1784846938792,
    "premier": 1784868288001,
@@ -315,15 +344,15 @@
    "2026-07-24": -4.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRG",
-   "n": 8,
-   "start": 1
+   "tipo": "time",
+   "chave": "Buenos Aires",
+   "n": 12,
+   "start": 2
   },
   "_obs": {
    "euro": {
-    "desde": 1784868179914,
-    "gatilho": "seq RRRR"
+    "desde": 1784870820607,
+    "gatilho": "seq GRRR"
    }
   }
  },
