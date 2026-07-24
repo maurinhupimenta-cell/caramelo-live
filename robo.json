@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -63.5,
-  "ciclos": 289,
-  "greens": 191,
+  "saldo": -61.7,
+  "ciclos": 290,
+  "greens": 192,
   "redsCiclo": 51,
   "aborts": 0,
   "descartes": 47,
   "historico": [
+   {
+    "quando": "2026-07-24T02:56:45.006Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "premier · Watford x Southampton @2.4 (tiro 2) · gatilho: time Watford"
+   },
    {
     "quando": "2026-07-24T02:27:54.710Z",
     "resultado": "GREEN",
@@ -283,59 +289,16 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :17) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-23T18:10:58.706Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
-   "super": 1784860074698
+   "super": 1784860074698,
+   "premier": 1784861804805
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "03:51",
-     "jogo": "Chelsea x United",
-     "odd": 2.2
-    },
-    {
-     "h": "03:54",
-     "jogo": "Watford x Southampton",
-     "odd": 2.4
-    },
-    {
-     "h": "03:57",
-     "jogo": "Burnley x Leeds",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "time Watford",
-   "alvo": {
-    "h": "03:54",
-    "jogo": "Watford x Southampton",
-    "odd": 2.4,
-    "unidades": 2,
-    "desde": 1784861629508
-   },
-   "iniciadoEm": 1784861449506,
-   "tiros": [
-    {
-     "h": "03:51",
-     "jogo": "Chelsea x United",
-     "odd": 2.2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784846938792,
-   "premier": 1784855555246,
+   "premier": 1784861804805,
    "euro": 1784854082545,
    "super": 1784860074698
   },
@@ -348,13 +311,13 @@
    "2026-07-20": 36.6,
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
-   "2026-07-23": -4.3
+   "2026-07-23": -2.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Watford",
-   "n": 8,
-   "start": 3
+   "chave": "Sérvia",
+   "n": 9,
+   "start": 1
   },
   "_obs": {}
  },
