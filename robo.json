@@ -457,8 +457,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "08:23",
@@ -478,13 +478,21 @@
    ],
    "gatilho": "time República Tcheca",
    "alvo": {
-    "h": "08:23",
-    "jogo": "Romênia x Hungria",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1784877247200
+    "h": "08:26",
+    "jogo": "Croácia x República Tcheca",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1784877947299
    },
-   "iniciadoEm": 1784877247200
+   "iniciadoEm": 1784877247200,
+   "tiros": [
+    {
+     "h": "08:23",
+     "jogo": "Romênia x Hungria",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784873160705,
@@ -504,10 +512,10 @@
    "2026-07-24": 8.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "República Tcheca",
-   "n": 14,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":37",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  }
