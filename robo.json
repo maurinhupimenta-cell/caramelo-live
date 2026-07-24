@@ -328,13 +328,19 @@
   }
  },
  "ambas": {
-  "saldo": -67.3,
-  "ciclos": 322,
-  "greens": 214,
+  "saldo": -66.1,
+  "ciclos": 323,
+  "greens": 215,
   "redsCiclo": 41,
   "aborts": 0,
   "descartes": 67,
   "historico": [
+   {
+    "quando": "2026-07-24T05:23:40.805Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · Southampton x Leicester @2.05 (tiro 3) · gatilho: seq RRGR"
+   },
    {
     "quando": "2026-07-24T04:55:08.704Z",
     "resultado": "GREEN",
@@ -448,68 +454,19 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · França x Geórgia @2.05 (tiro 1) · gatilho: coluna :44"
-   },
-   {
-    "quando": "2026-07-23T21:29:34.696Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Watford x Islington @1.98 (tiro 1) · gatilho: coluna :30"
    }
   ],
   "consumidas": {
    "copa": 1784867941602,
    "euro": 1784868661904,
-   "super": 1784868908501
+   "super": 1784868908501,
+   "premier": 1784870620609
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "06:15",
-     "jogo": "City x Liverpool",
-     "odd": 1.87
-    },
-    {
-     "h": "06:18",
-     "jogo": "West Ham x Tottenham",
-     "odd": 2.25
-    },
-    {
-     "h": "06:21",
-     "jogo": "Southampton x Leicester",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "seq RRGR",
-   "alvo": {
-    "h": "06:21",
-    "jogo": "Southampton x Leicester",
-    "odd": 2.05,
-    "unidades": 4,
-    "desde": 1784870440999
-   },
-   "iniciadoEm": 1784869899609,
-   "tiros": [
-    {
-     "h": "06:15",
-     "jogo": "City x Liverpool",
-     "odd": 1.87,
-     "unidades": 1
-    },
-    {
-     "h": "06:18",
-     "jogo": "West Ham x Tottenham",
-     "odd": 2.25,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784868661904,
    "super": 1784868908501,
-   "premier": 1784860069305,
+   "premier": 1784870620609,
    "copa": 1784867941602
   },
   "dias": {
@@ -521,7 +478,7 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 4.2
+   "2026-07-24": 5.4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
