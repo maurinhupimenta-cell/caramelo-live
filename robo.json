@@ -294,7 +294,37 @@
   "consumidas": {
    "premier": 1784855555246
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:04",
+     "jogo": "Porto Alegre x Avellaneda",
+     "odd": 2.62
+    },
+    {
+     "h": "03:07",
+     "jogo": "Buenos Aires x Penarol",
+     "odd": 2.3
+    },
+    {
+     "h": "02:52",
+     "jogo": "Lima x Agua Branca",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "time Buenos Aires",
+   "alvo": {
+    "h": "03:04",
+    "jogo": "Porto Alegre x Avellaneda",
+    "odd": 2.62,
+    "unidades": 1,
+    "desde": 1784857912407
+   },
+   "iniciadoEm": 1784857912407
+  },
   "cooldown": {
    "copa": 1784846938792,
    "premier": 1784855555246,
@@ -313,9 +343,9 @@
    "2026-07-23": -6.1
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 9,
+   "tipo": "time",
+   "chave": "Buenos Aires",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
