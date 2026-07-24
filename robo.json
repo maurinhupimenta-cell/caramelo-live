@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -65.1,
-  "ciclos": 316,
-  "greens": 206,
+  "saldo": -63.9,
+  "ciclos": 317,
+  "greens": 207,
   "redsCiclo": 55,
   "aborts": 0,
   "descartes": 55,
   "historico": [
+   {
+    "quando": "2026-07-24T15:02:00.702Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · França x Croácia @2.1 (tiro 2) · gatilho: seq GRGRR"
+   },
    {
     "quando": "2026-07-24T14:53:04.119Z",
     "resultado": "RED_CICLO",
@@ -283,61 +289,18 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "premier · Wolverhampton x Aston @2.2 (tiro 1) · gatilho: time Watford"
-   },
-   {
-    "quando": "2026-07-24T05:49:00.713Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho seq GRRR) — liga REARMADA"
    }
   ],
   "consumidas": {
    "super": 1784901957000,
-   "copa": 1784904783910
+   "copa": 1784904783910,
+   "euro": 1784905320513
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "15:56",
-     "jogo": "Escócia x Áustria",
-     "odd": 2.25
-    },
-    {
-     "h": "15:59",
-     "jogo": "França x Croácia",
-     "odd": 2.1
-    },
-    {
-     "h": "16:02",
-     "jogo": "Albânia x Polônia",
-     "odd": 2.87
-    }
-   ],
-   "gatilho": "seq GRGRR",
-   "alvo": {
-    "h": "15:59",
-    "jogo": "França x Croácia",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1784905141202
-   },
-   "iniciadoEm": 1784904786206,
-   "tiros": [
-    {
-     "h": "15:56",
-     "jogo": "Escócia x Áustria",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784904783910,
    "premier": 1784899477111,
-   "euro": 1784900639198,
+   "euro": 1784905320513,
    "super": 1784901957000
   },
   "dias": {
@@ -350,7 +313,7 @@
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
-   "2026-07-24": -3.4
+   "2026-07-24": -2.2
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -361,13 +324,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -50.4,
-  "ciclos": 341,
-  "greens": 231,
+  "saldo": -49.7,
+  "ciclos": 342,
+  "greens": 232,
   "redsCiclo": 41,
   "aborts": 0,
   "descartes": 69,
   "historico": [
+   {
+    "quando": "2026-07-24T15:02:00.907Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "euro · França x Croácia @1.87 (tiro 2) · gatilho: coluna :59"
+   },
    {
     "quando": "2026-07-24T14:55:00.205Z",
     "resultado": "GREEN",
@@ -481,60 +450,17 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "premier · Southampton x Leicester @2.05 (tiro 3) · gatilho: seq RRGR"
-   },
-   {
-    "quando": "2026-07-24T04:55:08.704Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "super · Sao Paulo x Bogota @2.02 (tiro 1) · gatilho: placar empate 1-1"
    }
   ],
   "consumidas": {
    "premier": 1784903032205,
    "copa": 1784903341002,
-   "super": 1784904900009
+   "super": 1784904900009,
+   "euro": 1784905320800
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "15:56",
-     "jogo": "Escócia x Áustria",
-     "odd": 1.98
-    },
-    {
-     "h": "15:59",
-     "jogo": "França x Croácia",
-     "odd": 1.87
-    },
-    {
-     "h": "16:02",
-     "jogo": "Albânia x Polônia",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "coluna :59",
-   "alvo": {
-    "h": "15:59",
-    "jogo": "França x Croácia",
-    "odd": 1.87,
-    "unidades": 2,
-    "desde": 1784905141402
-   },
-   "iniciadoEm": 1784904960304,
-   "tiros": [
-    {
-     "h": "15:56",
-     "jogo": "Escócia x Áustria",
-     "odd": 1.98,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784898838311,
+   "euro": 1784905320800,
    "super": 1784904900009,
    "premier": 1784903032205,
    "copa": 1784903341002
@@ -548,13 +474,13 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 21.1
+   "2026-07-24": 21.8
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":08",
    "n": 16,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
