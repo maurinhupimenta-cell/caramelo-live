@@ -292,7 +292,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:31",
+     "jogo": "Rio de Janeiro x Porto Alegre",
+     "odd": 2.6
+    },
+    {
+     "h": "05:34",
+     "jogo": "Buenos Aires x Lima",
+     "odd": 2.02
+    },
+    {
+     "h": "05:37",
+     "jogo": "Medellin x Sao Paulo",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time Buenos Aires",
+   "alvo": {
+    "h": "05:31",
+    "jogo": "Rio de Janeiro x Porto Alegre",
+    "odd": 2.6,
+    "unidades": 1,
+    "desde": 1784867368797
+   },
+   "iniciadoEm": 1784867368797
+  },
   "cooldown": {
    "copa": 1784846938792,
    "premier": 1784861804805,
@@ -313,8 +343,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "City",
-   "n": 9,
+   "chave": "Buenos Aires",
+   "n": 11,
    "start": 1
   },
   "_obs": {
@@ -506,7 +536,7 @@
    "tipo": "time",
    "chave": "Senegal",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
