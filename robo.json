@@ -294,8 +294,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "22:55",
@@ -315,11 +315,11 @@
    ],
    "gatilho": "time Croácia",
    "alvo": {
-    "h": "22:58",
-    "jogo": "França x Bélgica",
+    "h": "23:01",
+    "jogo": "Curação x Iraque",
     "odd": 2.3,
-    "unidades": 2,
-    "desde": 1784930294306
+    "unidades": 4,
+    "desde": 1784930476816
    },
    "iniciadoEm": 1784929936401,
    "tiros": [
@@ -328,6 +328,12 @@
      "jogo": "Nova Zelândia x Croácia",
      "odd": 2.3,
      "unidades": 1
+    },
+    {
+     "h": "22:58",
+     "jogo": "França x Bélgica",
+     "odd": 2.3,
+     "unidades": 2
     }
    ]
   },
@@ -353,7 +359,7 @@
    "tipo": "time",
    "chave": "Croácia",
    "n": 12,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -489,7 +495,37 @@
   "consumidas": {
    "super": 1784930454098
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:10",
+     "jogo": "Bélgica x Áustria",
+     "odd": 2
+    },
+    {
+     "h": "23:13",
+     "jogo": "Nova Zelândia x Panamá",
+     "odd": 2
+    },
+    {
+     "h": "23:16",
+     "jogo": "Colômbia x Áustria",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "time Panamá",
+   "alvo": {
+    "h": "23:10",
+    "jogo": "Bélgica x Áustria",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1784930477101
+   },
+   "iniciadoEm": 1784930477101
+  },
   "cooldown": {
    "euro": 1784923170109,
    "super": 1784930454098,
@@ -508,10 +544,10 @@
    "2026-07-24": 12
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":04",
-   "n": 19,
-   "start": 1
+   "tipo": "time",
+   "chave": "Panamá",
+   "n": 20,
+   "start": 3
   },
   "_obs": {}
  }
