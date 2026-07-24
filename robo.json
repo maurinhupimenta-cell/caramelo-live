@@ -342,26 +342,27 @@
    "2026-07-24": 7.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "México",
-   "n": 9,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.35",
+   "n": 10,
+   "start": 3
   },
-  "_obs": {
-   "euro": {
-    "desde": 1784892924698,
-    "gatilho": "seq RRRR"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -60.4,
-  "ciclos": 329,
+  "ciclos": 330,
   "greens": 221,
   "redsCiclo": 41,
   "aborts": 0,
-  "descartes": 67,
+  "descartes": 68,
   "historico": [
+   {
+    "quando": "2026-07-24T11:50:23.609Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-24T07:36:45.601Z",
     "resultado": "GREEN",
@@ -475,12 +476,6 @@
     "resultado": "GREEN",
     "unidades": 0.2,
     "detalhe": "super · Montevideo x Santiago @1.8 (tiro 3) · gatilho: time Rio de Janeiro"
-   },
-   {
-    "quando": "2026-07-24T02:27:49.500Z",
-    "resultado": "GREEN",
-    "unidades": 0.8,
-    "detalhe": "premier · Wolverhampton x Everton @1.83 (tiro 1) · gatilho: time Wolverhampton"
    }
   ],
   "consumidas": {},
@@ -533,10 +528,10 @@
    "2026-07-24": 11.1
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 11,
-   "start": 1
+   "tipo": "time",
+   "chave": "Senegal",
+   "n": 14,
+   "start": 2
   },
   "_obs": {}
  }
