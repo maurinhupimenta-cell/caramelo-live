@@ -296,8 +296,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "02:03",
@@ -317,13 +317,21 @@
    ],
    "gatilho": "placar acima de 1-0 (2-1)",
    "alvo": {
-    "h": "02:03",
-    "jogo": "Leicester x Liverpool",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1784854599645
+    "h": "02:06",
+    "jogo": "Norwich x Palace",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1784855161743
    },
-   "iniciadoEm": 1784854599645
+   "iniciadoEm": 1784854599645,
+   "tiros": [
+    {
+     "h": "02:03",
+     "jogo": "Leicester x Liverpool",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784846938792,
@@ -345,7 +353,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "acima de 1-0 (2-1)",
-   "n": 8,
+   "n": 9,
    "start": 1
   },
   "_obs": {}
