@@ -295,7 +295,37 @@
    "copa": 1784895643704,
    "super": 1784897704505
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:21",
+     "jogo": "Aston x Burnley",
+     "odd": 2.25
+    },
+    {
+     "h": "14:24",
+     "jogo": "United x Leeds",
+     "odd": 2.5
+    },
+    {
+     "h": "14:27",
+     "jogo": "Palace x West Ham",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "coluna :24",
+   "alvo": {
+    "h": "14:21",
+    "jogo": "Aston x Burnley",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1784898741201
+   },
+   "iniciadoEm": 1784898741201
+  },
   "cooldown": {
    "copa": 1784895643704,
    "premier": 1784894913697,
@@ -315,10 +345,10 @@
    "2026-07-24": 15.3
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.5",
-   "n": 11,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":24",
+   "n": 14,
+   "start": 3
   },
   "_obs": {}
  },
