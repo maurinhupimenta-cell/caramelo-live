@@ -292,7 +292,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "01:38",
+     "jogo": "Áustria x Albânia",
+     "odd": 2.7
+    },
+    {
+     "h": "01:41",
+     "jogo": "Espanha x Sérvia",
+     "odd": 2.3
+    },
+    {
+     "h": "01:44",
+     "jogo": "Portugal x Geórgia",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "placar 1-0 / 0-1",
+   "alvo": {
+    "h": "01:38",
+    "jogo": "Áustria x Albânia",
+    "odd": 2.7,
+    "unidades": 1,
+    "desde": 1784853301141
+   },
+   "iniciadoEm": 1784853301141
+  },
   "cooldown": {
    "copa": 1784846938792,
    "premier": 1784843252494,
@@ -311,9 +341,9 @@
    "2026-07-23": -9.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRRR",
-   "n": 26,
+   "tipo": "placar",
+   "chave": "1-0 / 0-1",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
