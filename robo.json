@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -60.1,
-  "ciclos": 321,
-  "greens": 209,
+  "saldo": -57.9,
+  "ciclos": 322,
+  "greens": 210,
   "redsCiclo": 55,
   "aborts": 0,
   "descartes": 57,
   "historico": [
+   {
+    "quando": "2026-07-24T16:04:29.599Z",
+    "resultado": "GREEN",
+    "unidades": 2.2,
+    "detalhe": "euro · Dinamarca x Turquia @2.6 (tiro 2) · gatilho: coluna :56"
+   },
    {
     "quando": "2026-07-24T16:04:14.105Z",
     "resultado": "GREEN_OBS",
@@ -283,53 +289,48 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-24T07:18:47.804Z",
-    "resultado": "GREEN",
-    "unidades": 3.8,
-    "detalhe": "copa · Senegal x Iraque @2.7 (tiro 3) · gatilho: coluna :16"
    }
   ],
   "consumidas": {
    "super": 1784907597210,
-   "premier": 1784908250607
+   "premier": 1784908250607,
+   "euro": 1784909069406
   },
   "ciclo": {
-   "liga": "euro",
+   "liga": "copa",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "16:56",
-     "jogo": "Alemanha x Croácia",
-     "odd": 2.15
+     "h": "17:10",
+     "jogo": "Suécia x Inglaterra",
+     "odd": 2.5
     },
     {
-     "h": "16:59",
-     "jogo": "Dinamarca x Turquia",
-     "odd": 2.6
+     "h": "17:13",
+     "jogo": "Panamá x Brasil",
+     "odd": 2.3
     },
     {
-     "h": "17:02",
-     "jogo": "República Tcheca x Romênia",
-     "odd": 2.4
+     "h": "17:16",
+     "jogo": "Paraguai x Espanha",
+     "odd": 2.25
     }
    ],
-   "gatilho": "coluna :56",
+   "gatilho": "time Brasil",
    "alvo": {
-    "h": "16:56",
-    "jogo": "Alemanha x Croácia",
-    "odd": 2.15,
+    "h": "17:10",
+    "jogo": "Suécia x Inglaterra",
+    "odd": 2.5,
     "unidades": 1,
-    "desde": 1784908967301
+    "desde": 1784909071506
    },
-   "iniciadoEm": 1784908967301
+   "iniciadoEm": 1784909071506
   },
   "cooldown": {
    "copa": 1784904783910,
    "premier": 1784908250607,
-   "euro": 1784905320513,
+   "euro": 1784909069406,
    "super": 1784907597210
   },
   "dias": {
@@ -342,20 +343,15 @@
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
-   "2026-07-24": 1.6
+   "2026-07-24": 3.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":56",
-   "n": 16,
-   "start": 1
+   "tipo": "time",
+   "chave": "Brasil",
+   "n": 11,
+   "start": 2
   },
-  "_obs": {
-   "copa": {
-    "desde": 1784908874803,
-    "gatilho": "time Brasil"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -56.7,
