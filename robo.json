@@ -458,8 +458,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "15:18",
@@ -479,13 +479,21 @@
    ],
    "gatilho": "coluna :21",
    "alvo": {
-    "h": "15:18",
-    "jogo": "Brighton x Brentford",
-    "odd": 1.87,
-    "unidades": 1,
-    "desde": 1784902126699
+    "h": "15:21",
+    "jogo": "Aston x Norwich",
+    "odd": 2.02,
+    "unidades": 2,
+    "desde": 1784902860101
    },
-   "iniciadoEm": 1784902126699
+   "iniciadoEm": 1784902126699,
+   "tiros": [
+    {
+     "h": "15:18",
+     "jogo": "Brighton x Brentford",
+     "odd": 1.87,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784898838311,
@@ -508,7 +516,7 @@
    "tipo": "time",
    "chave": "Senegal",
    "n": 17,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
