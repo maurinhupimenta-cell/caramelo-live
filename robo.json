@@ -294,8 +294,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "12:53",
@@ -315,11 +315,11 @@
    ],
    "gatilho": "coluna :56",
    "alvo": {
-    "h": "12:56",
-    "jogo": "Croácia x Polônia",
-    "odd": 2.4,
-    "unidades": 2,
-    "desde": 1784894163800
+    "h": "12:59",
+    "jogo": "Geórgia x Dinamarca",
+    "odd": 2.45,
+    "unidades": 4,
+    "desde": 1784894325009
    },
    "iniciadoEm": 1784893826505,
    "tiros": [
@@ -328,6 +328,12 @@
      "jogo": "Geórgia x Eslováquia",
      "odd": 2.4,
      "unidades": 1
+    },
+    {
+     "h": "12:56",
+     "jogo": "Croácia x Polônia",
+     "odd": 2.4,
+     "unidades": 2
     }
    ]
   },
@@ -489,7 +495,37 @@
   "consumidas": {
    "copa": 1784894302300
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:05",
+     "jogo": "Turquia x Alemanha",
+     "odd": 2
+    },
+    {
+     "h": "13:08",
+     "jogo": "República Tcheca x Albânia",
+     "odd": 2.4
+    },
+    {
+     "h": "13:11",
+     "jogo": "Áustria x Croácia",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "coluna :08",
+   "alvo": {
+    "h": "13:05",
+    "jogo": "Turquia x Alemanha",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1784894304008
+   },
+   "iniciadoEm": 1784894304008
+  },
   "cooldown": {
    "euro": 1784878127806,
    "super": 1784873579511,
@@ -508,9 +544,9 @@
    "2026-07-24": 12.1
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.87",
-   "n": 10,
+   "tipo": "coluna",
+   "chave": ":04",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
