@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -61.1,
-  "ciclos": 299,
-  "greens": 197,
+  "saldo": -59,
+  "ciclos": 300,
+  "greens": 198,
   "redsCiclo": 52,
   "aborts": 0,
   "descartes": 50,
   "historico": [
+   {
+    "quando": "2026-07-24T06:56:50.199Z",
+    "resultado": "GREEN",
+    "unidades": 2.1,
+    "detalhe": "premier · Leeds x Leicester @2.55 (tiro 2) · gatilho: time Leeds"
+   },
    {
     "quando": "2026-07-24T06:06:00.700Z",
     "resultado": "GREEN",
@@ -283,59 +289,16 @@
     "resultado": "GREEN",
     "unidades": 1.8,
     "detalhe": "euro · Áustria x Dinamarca @2.4 (tiro 2) · gatilho: seq RRGGG"
-   },
-   {
-    "quando": "2026-07-23T21:16:58.497Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time França"
    }
   ],
   "consumidas": {
-   "euro": 1784873160504
+   "euro": 1784873160504,
+   "premier": 1784876210004
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "07:51",
-     "jogo": "Aston x Norwich",
-     "odd": 2.3
-    },
-    {
-     "h": "07:54",
-     "jogo": "Leeds x Leicester",
-     "odd": 2.55
-    },
-    {
-     "h": "07:57",
-     "jogo": "Norwich x Everton",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "time Leeds",
-   "alvo": {
-    "h": "07:54",
-    "jogo": "Leeds x Leicester",
-    "odd": 2.55,
-    "unidades": 2,
-    "desde": 1784876030297
-   },
-   "iniciadoEm": 1784875845610,
-   "tiros": [
-    {
-     "h": "07:51",
-     "jogo": "Aston x Norwich",
-     "odd": 2.3,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784846938792,
-   "premier": 1784872241111,
+   "premier": 1784876210004,
    "euro": 1784873160504,
    "super": 1784871608210
   },
@@ -349,7 +312,7 @@
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
-   "2026-07-24": 0.6
+   "2026-07-24": 2.7
   },
   "_gatilhoAtual": {
    "tipo": "time",
