@@ -297,8 +297,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "13:13",
@@ -318,13 +318,21 @@
    ],
    "gatilho": "coluna :16",
    "alvo": {
-    "h": "13:13",
-    "jogo": "Jordânia x Paraguai",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1784894917507
+    "h": "13:16",
+    "jogo": "Qatar x República Tcheca",
+    "odd": 2.4,
+    "unidades": 2,
+    "desde": 1784895361910
    },
-   "iniciadoEm": 1784894917507
+   "iniciadoEm": 1784894917507,
+   "tiros": [
+    {
+     "h": "13:13",
+     "jogo": "Jordânia x Paraguai",
+     "odd": 2.3,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784877527698,
@@ -486,7 +494,37 @@
    "euro": 1784894863507,
    "super": 1784895344801
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:18",
+     "jogo": "Southampton x Everton",
+     "odd": 1.95
+    },
+    {
+     "h": "13:21",
+     "jogo": "Liverpool x Norwich",
+     "odd": 2
+    },
+    {
+     "h": "13:24",
+     "jogo": "Brighton x Aston",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "coluna :21",
+   "alvo": {
+    "h": "13:18",
+    "jogo": "Southampton x Everton",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1784895346309
+   },
+   "iniciadoEm": 1784895346309
+  },
   "cooldown": {
    "euro": 1784894863507,
    "super": 1784895344801,
