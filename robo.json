@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -45.1,
-  "ciclos": 311,
+  "saldo": -52.1,
+  "ciclos": 312,
   "greens": 205,
-  "redsCiclo": 52,
+  "redsCiclo": 53,
   "aborts": 0,
   "descartes": 54,
   "historico": [
+   {
+    "quando": "2026-07-24T13:33:58.006Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: seq GRGR"
+   },
    {
     "quando": "2026-07-24T13:24:37.303Z",
     "resultado": "GREEN",
@@ -283,59 +289,46 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho time City) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-24T04:20:59.107Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
    "super": 1784897704505,
-   "premier": 1784899477111
+   "premier": 1784899477111,
+   "copa": 1784900037902
   },
   "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "14:25",
-     "jogo": "África do Sul x Brasil",
-     "odd": 2.4
+     "h": "14:41",
+     "jogo": "Países Baixos x França",
+     "odd": 1.98
     },
     {
-     "h": "14:28",
-     "jogo": "Japão x Gana",
-     "odd": 2.5
+     "h": "14:44",
+     "jogo": "Albânia x Croácia",
+     "odd": 2.55
     },
     {
-     "h": "14:31",
-     "jogo": "Colômbia x Equador",
-     "odd": 2.15
+     "h": "14:47",
+     "jogo": "Geórgia x Escócia",
+     "odd": 2.3
     }
    ],
-   "gatilho": "seq GRGR",
+   "gatilho": "odd 2.55",
    "alvo": {
-    "h": "14:28",
-    "jogo": "Japão x Gana",
-    "odd": 2.5,
-    "unidades": 2,
-    "desde": 1784899978507
+    "h": "14:41",
+    "jogo": "Países Baixos x França",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1784900040302
    },
-   "iniciadoEm": 1784899480508,
-   "tiros": [
-    {
-     "h": "14:25",
-     "jogo": "África do Sul x Brasil",
-     "odd": 2.4,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1784900040302
   },
   "cooldown": {
-   "copa": 1784895643704,
+   "copa": 1784900037902,
    "premier": 1784899477111,
    "euro": 1784894523997,
    "super": 1784897704505
@@ -350,7 +343,7 @@
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
-   "2026-07-24": 16.6
+   "2026-07-24": 9.6
   },
   "_gatilhoAtual": {
    "tipo": "odd",
