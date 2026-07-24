@@ -164,12 +164,18 @@
  },
  "o25": {
   "saldo": -64.1,
-  "ciclos": 296,
+  "ciclos": 297,
   "greens": 195,
   "redsCiclo": 52,
   "aborts": 0,
-  "descartes": 49,
+  "descartes": 50,
   "historico": [
+   {
+    "quando": "2026-07-24T05:49:00.713Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho seq GRRR) — liga REARMADA"
+   },
    {
     "quando": "2026-07-24T05:40:08.404Z",
     "resultado": "GREEN",
@@ -283,18 +289,42 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-23T21:00:57.892Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho seq GGRGG) — liga REARMADA"
    }
   ],
   "consumidas": {
    "super": 1784871608210
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:48",
+     "jogo": "Wolverhampton x Aston",
+     "odd": 2.2
+    },
+    {
+     "h": "06:51",
+     "jogo": "Watford x Palace",
+     "odd": 2.25
+    },
+    {
+     "h": "06:54",
+     "jogo": "Everton x Burnley",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "time Watford",
+   "alvo": {
+    "h": "06:48",
+    "jogo": "Wolverhampton x Aston",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1784871889204
+   },
+   "iniciadoEm": 1784871889204
+  },
   "cooldown": {
    "copa": 1784846938792,
    "premier": 1784868288001,
@@ -315,9 +345,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Buenos Aires",
-   "n": 12,
-   "start": 2
+   "chave": "Watford",
+   "n": 16,
+   "start": 1
   },
   "_obs": {
    "euro": {
