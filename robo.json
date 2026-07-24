@@ -461,7 +461,37 @@
    "euro": 1784868661904,
    "super": 1784868908501
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:15",
+     "jogo": "City x Liverpool",
+     "odd": 1.87
+    },
+    {
+     "h": "06:18",
+     "jogo": "West Ham x Tottenham",
+     "odd": 2.25
+    },
+    {
+     "h": "06:21",
+     "jogo": "Southampton x Leicester",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "seq RRGR",
+   "alvo": {
+    "h": "06:15",
+    "jogo": "City x Liverpool",
+    "odd": 1.87,
+    "unidades": 1,
+    "desde": 1784869899609
+   },
+   "iniciadoEm": 1784869899609
+  },
   "cooldown": {
    "euro": 1784868661904,
    "super": 1784868908501,
@@ -480,9 +510,9 @@
    "2026-07-24": 4.2
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 15,
+   "tipo": "seq",
+   "chave": "RRGR",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
