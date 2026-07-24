@@ -297,8 +297,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "06:56",
@@ -318,11 +318,11 @@
    ],
    "gatilho": "time Eslovênia",
    "alvo": {
-    "h": "06:59",
-    "jogo": "Escócia x Eslovênia",
-    "odd": 2.6,
-    "unidades": 2,
-    "desde": 1784872802110
+    "h": "07:02",
+    "jogo": "Geórgia x França",
+    "odd": 2.2,
+    "unidades": 4,
+    "desde": 1784873039408
    },
    "iniciadoEm": 1784872251504,
    "tiros": [
@@ -331,6 +331,12 @@
      "jogo": "Albânia x Ucrânia",
      "odd": 2.62,
      "unidades": 1
+    },
+    {
+     "h": "06:59",
+     "jogo": "Escócia x Eslovênia",
+     "odd": 2.6,
+     "unidades": 2
     }
    ]
   },
@@ -494,8 +500,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "06:56",
@@ -515,13 +521,27 @@
    ],
    "gatilho": "time Eslovênia",
    "alvo": {
-    "h": "06:56",
-    "jogo": "Albânia x Ucrânia",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1784872263303
+    "h": "07:02",
+    "jogo": "Geórgia x França",
+    "odd": 1.95,
+    "unidades": 4,
+    "desde": 1784873039699
    },
-   "iniciadoEm": 1784872263303
+   "iniciadoEm": 1784872263303,
+   "tiros": [
+    {
+     "h": "06:56",
+     "jogo": "Albânia x Ucrânia",
+     "odd": 2.2,
+     "unidades": 1
+    },
+    {
+     "h": "06:59",
+     "jogo": "Escócia x Eslovênia",
+     "odd": 2.15,
+     "unidades": 2
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784868661904,
@@ -542,7 +562,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Itaquera",
+   "chave": "Lima",
    "n": 13,
    "start": 1
   },
