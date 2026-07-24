@@ -457,7 +457,37 @@
    "euro": 1784873160705,
    "super": 1784873579511
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:22",
+     "jogo": "Haiti x Uzbequistão",
+     "odd": 1.9
+    },
+    {
+     "h": "07:25",
+     "jogo": "Marrocos x Paraguai",
+     "odd": 2.07
+    },
+    {
+     "h": "07:28",
+     "jogo": "Cabo Verde x Argentina",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "odd 2.07",
+   "alvo": {
+    "h": "07:22",
+    "jogo": "Haiti x Uzbequistão",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1784873586206
+   },
+   "iniciadoEm": 1784873586206
+  },
   "cooldown": {
    "euro": 1784873160705,
    "super": 1784873579511,
@@ -476,10 +506,10 @@
    "2026-07-24": 7.1
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 18,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.07",
+   "n": 9,
+   "start": 3
   },
   "_obs": {}
  }
