@@ -297,8 +297,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "04:05",
@@ -318,13 +318,21 @@
    ],
    "gatilho": "time Sérvia",
    "alvo": {
-    "h": "04:05",
-    "jogo": "Eslováquia x Polônia",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1784861817904
+    "h": "04:08",
+    "jogo": "Inglaterra x Sérvia",
+    "odd": 2.3,
+    "unidades": 2,
+    "desde": 1784862514599
    },
-   "iniciadoEm": 1784861817904
+   "iniciadoEm": 1784861817904,
+   "tiros": [
+    {
+     "h": "04:05",
+     "jogo": "Eslováquia x Polônia",
+     "odd": 2.5,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784846938792,
@@ -347,7 +355,7 @@
    "tipo": "time",
    "chave": "Sérvia",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -485,35 +493,35 @@
    "super": 1784860798007
   },
   "ciclo": {
-   "liga": "copa",
+   "liga": "euro",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "04:04",
-     "jogo": "Curação x Qatar",
-     "odd": 1.9
+     "h": "04:11",
+     "jogo": "Dinamarca x Portugal",
+     "odd": 2
     },
     {
-     "h": "03:46",
-     "jogo": "Suécia x Bélgica",
-     "odd": 2.15
+     "h": "04:14",
+     "jogo": "Escócia x Espanha",
+     "odd": 1.85
     },
     {
-     "h": "03:49",
-     "jogo": "Nova Zelândia x Qatar",
-     "odd": 1.95
+     "h": "04:17",
+     "jogo": "Países Baixos x Suíça",
+     "odd": 1.83
     }
    ],
-   "gatilho": "placar acima de 1-0 (2-1)",
+   "gatilho": "placar empate 1-1",
    "alvo": {
-    "h": "04:04",
-    "jogo": "Curação x Qatar",
-    "odd": 1.9,
+    "h": "04:11",
+    "jogo": "Dinamarca x Portugal",
+    "odd": 2,
     "unidades": 1,
-    "desde": 1784861219199
+    "desde": 1784862514802
    },
-   "iniciadoEm": 1784861219199
+   "iniciadoEm": 1784862514802
   },
   "cooldown": {
    "euro": 1784857618600,
@@ -535,7 +543,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 1-1",
-   "n": 8,
+   "n": 9,
    "start": 1
   },
   "_obs": {}
