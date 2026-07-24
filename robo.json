@@ -355,18 +355,24 @@
    "tipo": "coluna",
    "chave": ":16",
    "n": 13,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -59.4,
-  "ciclos": 332,
-  "greens": 222,
+  "saldo": -58.4,
+  "ciclos": 333,
+  "greens": 223,
   "redsCiclo": 41,
   "aborts": 0,
   "descartes": 69,
   "historico": [
+   {
+    "quando": "2026-07-24T12:07:43.703Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Turquia x Alemanha @2 (tiro 1) · gatilho: coluna :08"
+   },
    {
     "quando": "2026-07-24T11:58:22.502Z",
     "resultado": "GREEN",
@@ -480,50 +486,15 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho placar acima de 1-0 (2-1)) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-24T03:02:18.007Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
-   "copa": 1784894302300
+   "copa": 1784894302300,
+   "euro": 1784894863507
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "13:05",
-     "jogo": "Turquia x Alemanha",
-     "odd": 2
-    },
-    {
-     "h": "13:08",
-     "jogo": "República Tcheca x Albânia",
-     "odd": 2.4
-    },
-    {
-     "h": "13:11",
-     "jogo": "Áustria x Croácia",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "coluna :08",
-   "alvo": {
-    "h": "13:05",
-    "jogo": "Turquia x Alemanha",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1784894304008
-   },
-   "iniciadoEm": 1784894304008
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784878127806,
+   "euro": 1784894863507,
    "super": 1784873579511,
    "premier": 1784877097011,
    "copa": 1784894302300
@@ -537,13 +508,13 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 12.1
+   "2026-07-24": 13.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Itaquera",
    "n": 20,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
