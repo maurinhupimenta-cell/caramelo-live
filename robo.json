@@ -485,7 +485,37 @@
    "premier": 1784921031001,
    "copa": 1784922001308
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:50",
+     "jogo": "Ucrânia x Polônia",
+     "odd": 2.1
+    },
+    {
+     "h": "20:53",
+     "jogo": "Turquia x Eslovênia",
+     "odd": 2.37
+    },
+    {
+     "h": "20:56",
+     "jogo": "Suíça x Hungria",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "coluna :53",
+   "alvo": {
+    "h": "20:50",
+    "jogo": "Ucrânia x Polônia",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1784922142199
+   },
+   "iniciadoEm": 1784922142199
+  },
   "cooldown": {
    "euro": 1784916661602,
    "super": 1784914288809,
@@ -504,10 +534,10 @@
    "2026-07-24": 9.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Panamá",
-   "n": 18,
-   "start": 2
+   "tipo": "coluna",
+   "chave": ":53",
+   "n": 20,
+   "start": 3
   },
   "_obs": {}
  }
