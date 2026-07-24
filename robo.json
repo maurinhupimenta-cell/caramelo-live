@@ -322,13 +322,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -66.1,
-  "ciclos": 307,
-  "greens": 207,
+  "saldo": -65.5,
+  "ciclos": 308,
+  "greens": 208,
   "redsCiclo": 40,
   "aborts": 0,
   "descartes": 60,
   "historico": [
+   {
+    "quando": "2026-07-24T01:27:40.103Z",
+    "resultado": "GREEN",
+    "unidades": 0.6,
+    "detalhe": "super · Lima x Sao Paulo @1.8 (tiro 2) · gatilho: placar 1-0 / 0-1"
+   },
    {
     "quando": "2026-07-24T01:19:59.609Z",
     "resultado": "GREEN_OBS",
@@ -442,57 +448,15 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "premier · Islington x Southampton @2.05 (tiro 2) · gatilho: coluna :30"
-   },
-   {
-    "quando": "2026-07-23T17:31:59.996Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :44) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "02:22",
-     "jogo": "Porto Alegre x Agua Branca",
-     "odd": 2.1
-    },
-    {
-     "h": "02:25",
-     "jogo": "Lima x Sao Paulo",
-     "odd": 1.8
-    },
-    {
-     "h": "02:28",
-     "jogo": "Santos x Medellin",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "placar 1-0 / 0-1",
-   "alvo": {
-    "h": "02:25",
-    "jogo": "Lima x Sao Paulo",
-    "odd": 1.8,
-    "unidades": 2,
-    "desde": 1784856420205
-   },
-   "iniciadoEm": 1784856000797,
-   "tiros": [
-    {
-     "h": "02:22",
-     "jogo": "Porto Alegre x Agua Branca",
-     "odd": 2.1,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "super": 1784856459907
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784846771497,
-   "super": 1784835798195,
+   "super": 1784856459907,
    "premier": 1784848115000,
    "copa": 1784824619697
   },
@@ -504,12 +468,12 @@
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
-   "2026-07-23": -7.9
+   "2026-07-23": -7.3
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "1-0 / 0-1",
-   "n": 10,
+   "chave": "empate 1-1",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
