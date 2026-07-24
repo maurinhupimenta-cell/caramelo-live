@@ -321,13 +321,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -71.7,
-  "ciclos": 310,
-  "greens": 209,
+  "saldo": -71.5,
+  "ciclos": 311,
+  "greens": 210,
   "redsCiclo": 41,
   "aborts": 0,
   "descartes": 60,
   "historico": [
+   {
+    "quando": "2026-07-24T02:39:58.202Z",
+    "resultado": "GREEN",
+    "unidades": 0.2,
+    "detalhe": "super · Montevideo x Santiago @1.8 (tiro 3) · gatilho: time Rio de Janeiro"
+   },
    {
     "quando": "2026-07-24T02:27:49.500Z",
     "resultado": "GREEN",
@@ -441,66 +447,17 @@
     "resultado": "GREEN",
     "unidades": 0.8,
     "detalhe": "super · Lima x Asuncion @1.9 (tiro 2) · gatilho: seq GRRGG"
-   },
-   {
-    "quando": "2026-07-23T18:29:02.097Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho seq GRRGG) — liga REARMADA"
    }
   ],
   "consumidas": {
    "euro": 1784857618600,
-   "premier": 1784860069305
+   "premier": 1784860069305,
+   "super": 1784860798007
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "03:31",
-     "jogo": "La Plata x La Boca",
-     "odd": 2.2
-    },
-    {
-     "h": "03:34",
-     "jogo": "Guayaquil x Rio de Janeiro",
-     "odd": 1.9
-    },
-    {
-     "h": "03:37",
-     "jogo": "Montevideo x Santiago",
-     "odd": 1.8
-    }
-   ],
-   "gatilho": "time Rio de Janeiro",
-   "alvo": {
-    "h": "03:37",
-    "jogo": "Montevideo x Santiago",
-    "odd": 1.8,
-    "unidades": 4,
-    "desde": 1784860679902
-   },
-   "iniciadoEm": 1784860070997,
-   "tiros": [
-    {
-     "h": "03:31",
-     "jogo": "La Plata x La Boca",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "03:34",
-     "jogo": "Guayaquil x Rio de Janeiro",
-     "odd": 1.9,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784857618600,
-   "super": 1784856459907,
+   "super": 1784860798007,
    "premier": 1784860069305,
    "copa": 1784824619697
   },
@@ -512,7 +469,7 @@
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
-   "2026-07-23": -13.5
+   "2026-07-23": -13.3
   },
   "_gatilhoAtual": {
    "tipo": "placar",
