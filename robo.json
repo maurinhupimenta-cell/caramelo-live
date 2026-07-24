@@ -292,7 +292,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1784894523997,
    "premier": 1784894913697,
    "copa": 1784895643704,
    "super": 1784897704505
@@ -458,7 +457,37 @@
    "super": 1784895344801,
    "premier": 1784895868203
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:07",
+     "jogo": "Uzbequistão x África do Sul",
+     "odd": 2.1
+    },
+    {
+     "h": "14:10",
+     "jogo": "Argentina x Portugal",
+     "odd": 1.85
+    },
+    {
+     "h": "14:13",
+     "jogo": "Canadá x Inglaterra",
+     "odd": 2
+    }
+   ],
+   "gatilho": "coluna :10",
+   "alvo": {
+    "h": "14:07",
+    "jogo": "Uzbequistão x África do Sul",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1784897938300
+   },
+   "iniciadoEm": 1784897938300
+  },
   "cooldown": {
    "euro": 1784894863507,
    "super": 1784895344801,
@@ -478,9 +507,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":24",
-   "n": 13,
-   "start": 1
+   "chave": ":10",
+   "n": 14,
+   "start": 2
   },
   "_obs": {}
  }
