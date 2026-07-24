@@ -296,7 +296,37 @@
    "super": 1784876448499,
    "copa": 1784877527698
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:38",
+     "jogo": "Albânia x Itália",
+     "odd": 2.62
+    },
+    {
+     "h": "08:41",
+     "jogo": "Suíça x Eslovênia",
+     "odd": 2.5
+    },
+    {
+     "h": "08:44",
+     "jogo": "Portugal x Bélgica",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time Eslovênia",
+   "alvo": {
+    "h": "08:38",
+    "jogo": "Albânia x Itália",
+    "odd": 2.62,
+    "unidades": 1,
+    "desde": 1784878147502
+   },
+   "iniciadoEm": 1784878147502
+  },
   "cooldown": {
    "copa": 1784877527698,
    "premier": 1784876210004,
@@ -316,10 +346,10 @@
    "2026-07-24": 7.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":19",
-   "n": 8,
-   "start": 1
+   "tipo": "time",
+   "chave": "Eslovênia",
+   "n": 12,
+   "start": 3
   },
   "_obs": {}
  },
@@ -456,7 +486,37 @@
    "premier": 1784877097011,
    "euro": 1784878127806
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:34",
+     "jogo": "México x Gana",
+     "odd": 2.05
+    },
+    {
+     "h": "08:37",
+     "jogo": "Portugal x Bélgica",
+     "odd": 1.93
+    },
+    {
+     "h": "08:40",
+     "jogo": "França x Escócia",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "coluna :37",
+   "alvo": {
+    "h": "08:34",
+    "jogo": "México x Gana",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1784878129308
+   },
+   "iniciadoEm": 1784878129308
+  },
   "cooldown": {
    "euro": 1784878127806,
    "super": 1784873579511,
