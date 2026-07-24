@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -61.9,
-  "ciclos": 319,
-  "greens": 208,
+  "saldo": -60.1,
+  "ciclos": 320,
+  "greens": 209,
   "redsCiclo": 55,
   "aborts": 0,
   "descartes": 56,
   "historico": [
+   {
+    "quando": "2026-07-24T15:50:50.802Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "premier · United x Liverpool @2.2 (tiro 3) · gatilho: odd 2.02"
+   },
    {
     "quando": "2026-07-24T15:39:57.405Z",
     "resultado": "GREEN",
@@ -283,67 +289,18 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "super · Asuncion x Rio de Janeiro @2.25 (tiro 1) · gatilho: seq GRRG"
-   },
-   {
-    "quando": "2026-07-24T06:56:50.199Z",
-    "resultado": "GREEN",
-    "unidades": 2.1,
-    "detalhe": "premier · Leeds x Leicester @2.55 (tiro 2) · gatilho: time Leeds"
    }
   ],
   "consumidas": {
    "copa": 1784904783910,
    "euro": 1784905320513,
-   "super": 1784907597210
+   "super": 1784907597210,
+   "premier": 1784908250607
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "16:42",
-     "jogo": "Palace x Aston",
-     "odd": 2.3
-    },
-    {
-     "h": "16:45",
-     "jogo": "Newcastle x Burnley",
-     "odd": 2.02
-    },
-    {
-     "h": "16:48",
-     "jogo": "United x Liverpool",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "odd 2.02",
-   "alvo": {
-    "h": "16:48",
-    "jogo": "United x Liverpool",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1784908065006
-   },
-   "iniciadoEm": 1784907599505,
-   "tiros": [
-    {
-     "h": "16:42",
-     "jogo": "Palace x Aston",
-     "odd": 2.3,
-     "unidades": 1
-    },
-    {
-     "h": "16:45",
-     "jogo": "Newcastle x Burnley",
-     "odd": 2.02,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784904783910,
-   "premier": 1784899477111,
+   "premier": 1784908250607,
    "euro": 1784905320513,
    "super": 1784907597210
   },
@@ -357,7 +314,7 @@
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
-   "2026-07-24": -0.2
+   "2026-07-24": 1.6
   },
   "_gatilhoAtual": {
    "tipo": "seq",
