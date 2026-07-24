@@ -328,13 +328,19 @@
   }
  },
  "ambas": {
-  "saldo": -70.1,
-  "ciclos": 320,
-  "greens": 212,
+  "saldo": -68.3,
+  "ciclos": 321,
+  "greens": 213,
   "redsCiclo": 41,
   "aborts": 0,
   "descartes": 67,
   "historico": [
+   {
+    "quando": "2026-07-24T04:51:02.100Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "euro · Croácia x Albânia @2.2 (tiro 3) · gatilho: time Bélgica"
+   },
    {
     "quando": "2026-07-24T04:39:01.798Z",
     "resultado": "GREEN",
@@ -448,64 +454,15 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-23T20:24:06.694Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Islington x Watford @2.05 (tiro 1) · gatilho: seq GGGRR"
    }
   ],
   "consumidas": {
-   "copa": 1784867941602
+   "copa": 1784867941602,
+   "euro": 1784868661904
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "05:41",
-     "jogo": "Eslovênia x Dinamarca",
-     "odd": 2.25
-    },
-    {
-     "h": "05:44",
-     "jogo": "Eslováquia x Bélgica",
-     "odd": 1.93
-    },
-    {
-     "h": "05:47",
-     "jogo": "Croácia x Albânia",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Bélgica",
-   "alvo": {
-    "h": "05:47",
-    "jogo": "Croácia x Albânia",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1784868541107
-   },
-   "iniciadoEm": 1784867999799,
-   "tiros": [
-    {
-     "h": "05:41",
-     "jogo": "Eslovênia x Dinamarca",
-     "odd": 2.25,
-     "unidades": 1
-    },
-    {
-     "h": "05:44",
-     "jogo": "Eslováquia x Bélgica",
-     "odd": 1.93,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784863213104,
+   "euro": 1784868661904,
    "super": 1784860798007,
    "premier": 1784860069305,
    "copa": 1784867941602
@@ -519,12 +476,12 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 1.4
+   "2026-07-24": 3.2
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 1-1",
-   "n": 14,
+   "n": 15,
    "start": 1
   },
   "_obs": {}
