@@ -453,7 +453,37 @@
   "consumidas": {
    "super": 1784856459907
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:35",
+     "jogo": "Espanha x Albânia",
+     "odd": 2.1
+    },
+    {
+     "h": "02:38",
+     "jogo": "Países Baixos x Turquia",
+     "odd": 1.98
+    },
+    {
+     "h": "02:41",
+     "jogo": "República Tcheca x Albânia",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-0)",
+   "alvo": {
+    "h": "02:35",
+    "jogo": "Espanha x Albânia",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1784856779705
+   },
+   "iniciadoEm": 1784856779705
+  },
   "cooldown": {
    "euro": 1784846771497,
    "super": 1784856459907,
@@ -472,8 +502,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 8,
+   "chave": "acima de 1-0 (2-0)",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
