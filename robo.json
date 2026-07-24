@@ -298,8 +298,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:10",
@@ -319,13 +319,21 @@
    ],
    "gatilho": "time Brasil",
    "alvo": {
-    "h": "17:10",
-    "jogo": "Suécia x Inglaterra",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1784909071506
+    "h": "17:13",
+    "jogo": "Panamá x Brasil",
+    "odd": 2.3,
+    "unidades": 2,
+    "desde": 1784909611599
    },
-   "iniciadoEm": 1784909071506
+   "iniciadoEm": 1784909071506,
+   "tiros": [
+    {
+     "h": "17:10",
+     "jogo": "Suécia x Inglaterra",
+     "odd": 2.5,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784904783910,
@@ -346,9 +354,9 @@
    "2026-07-24": 3.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Brasil",
-   "n": 11,
+   "tipo": "coluna",
+   "chave": ":16",
+   "n": 17,
    "start": 1
   },
   "_obs": {}
@@ -535,9 +543,9 @@
    "2026-07-24": 16.6
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":21",
-   "n": 17,
+   "tipo": "odd",
+   "chave": "1.8",
+   "n": 8,
    "start": 3
   },
   "_obs": {}
