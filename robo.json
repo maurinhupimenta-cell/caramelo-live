@@ -298,8 +298,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:43",
@@ -319,13 +319,21 @@
    ],
    "gatilho": "odd 2.35",
    "alvo": {
-    "h": "17:43",
-    "jogo": "Rio de Janeiro x Santos",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1784911229500
+    "h": "17:46",
+    "jogo": "Penarol x Montevideo",
+    "odd": 2.3,
+    "unidades": 2,
+    "desde": 1784911588406
    },
-   "iniciadoEm": 1784911229500
+   "iniciadoEm": 1784911229500,
+   "tiros": [
+    {
+     "h": "17:43",
+     "jogo": "Rio de Janeiro x Santos",
+     "odd": 2.35,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784909790707,
@@ -349,7 +357,7 @@
    "tipo": "odd",
    "chave": "2.35",
    "n": 15,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
