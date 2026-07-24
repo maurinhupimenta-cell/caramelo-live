@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -48,
-  "ciclos": 328,
-  "greens": 216,
+  "saldo": -46.6,
+  "ciclos": 329,
+  "greens": 217,
   "redsCiclo": 55,
   "aborts": 0,
   "descartes": 57,
   "historico": [
+   {
+    "quando": "2026-07-24T18:30:59.608Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "copa · RD Congo x Jordânia @2.1 (tiro 3) · gatilho: time Coreia do Sul"
+   },
    {
     "quando": "2026-07-24T18:03:25.203Z",
     "resultado": "GREEN",
@@ -283,65 +289,16 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "super · La Boca x Asuncion @2.4 (tiro 1) · gatilho: coluna :55"
-   },
-   {
-    "quando": "2026-07-24T12:20:43.903Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "copa · Qatar x República Tcheca @2.4 (tiro 2) · gatilho: coluna :16"
    }
   ],
   "consumidas": {
    "euro": 1784914711201,
-   "super": 1784916205010
+   "super": 1784916205010,
+   "copa": 1784917859504
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "19:22",
-     "jogo": "Uzbequistão x Qatar",
-     "odd": 2.3
-    },
-    {
-     "h": "19:25",
-     "jogo": "Coreia do Sul x França",
-     "odd": 2.4
-    },
-    {
-     "h": "19:28",
-     "jogo": "RD Congo x Jordânia",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "time Coreia do Sul",
-   "alvo": {
-    "h": "19:28",
-    "jogo": "RD Congo x Jordânia",
-    "odd": 2.1,
-    "unidades": 4,
-    "desde": 1784917679203
-   },
-   "iniciadoEm": 1784917059411,
-   "tiros": [
-    {
-     "h": "19:22",
-     "jogo": "Uzbequistão x Qatar",
-     "odd": 2.3,
-     "unidades": 1
-    },
-    {
-     "h": "19:25",
-     "jogo": "Coreia do Sul x França",
-     "odd": 2.4,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784913451507,
+   "copa": 1784917859504,
    "premier": 1784912925401,
    "euro": 1784914711201,
    "super": 1784916205010
@@ -356,13 +313,13 @@
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
-   "2026-07-24": 13.7
+   "2026-07-24": 15.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Coreia do Sul",
-   "n": 11,
-   "start": 2
+   "n": 12,
+   "start": 1
   },
   "_obs": {}
  },
