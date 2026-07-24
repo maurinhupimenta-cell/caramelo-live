@@ -348,7 +348,7 @@
    "tipo": "coluna",
    "chave": ":16",
    "n": 13,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -487,8 +487,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "13:10",
@@ -508,13 +508,21 @@
    ],
    "gatilho": "time Itaquera",
    "alvo": {
-    "h": "13:10",
-    "jogo": "Avellaneda x Penarol",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1784894865706
+    "h": "13:13",
+    "jogo": "Bogota x Itaquera",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1784895181506
    },
-   "iniciadoEm": 1784894865706
+   "iniciadoEm": 1784894865706,
+   "tiros": [
+    {
+     "h": "13:10",
+     "jogo": "Avellaneda x Penarol",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784894863507,
@@ -534,10 +542,10 @@
    "2026-07-24": 13.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Itaquera",
-   "n": 20,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":21",
+   "n": 13,
+   "start": 2
   },
   "_obs": {}
  }
