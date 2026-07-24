@@ -485,7 +485,37 @@
    "super": 1784904900009,
    "euro": 1784905320800
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:31",
+     "jogo": "Uruguai x Panamá",
+     "odd": 2.07
+    },
+    {
+     "h": "16:34",
+     "jogo": "Arábia Saudita x Equador",
+     "odd": 1.85
+    },
+    {
+     "h": "16:37",
+     "jogo": "Uruguai x Portugal",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "time Panamá",
+   "alvo": {
+    "h": "16:31",
+    "jogo": "Uruguai x Panamá",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1784906998099
+   },
+   "iniciadoEm": 1784906998099
+  },
   "cooldown": {
    "euro": 1784905320800,
    "super": 1784904900009,
@@ -504,9 +534,9 @@
    "2026-07-24": 21.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":08",
-   "n": 16,
+   "tipo": "time",
+   "chave": "Panamá",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
