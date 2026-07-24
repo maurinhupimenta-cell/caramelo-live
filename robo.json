@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -54.5,
-  "ciclos": 336,
+  "saldo": -61.5,
+  "ciclos": 337,
   "greens": 221,
-  "redsCiclo": 57,
+  "redsCiclo": 58,
   "aborts": 0,
   "descartes": 58,
   "historico": [
+   {
+    "quando": "2026-07-24T23:05:35.103Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: coluna :56"
+   },
    {
     "quando": "2026-07-24T22:47:30.405Z",
     "resultado": "GREEN",
@@ -283,67 +289,18 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho odd 2.5) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-24T15:02:00.702Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "euro · França x Croácia @2.1 (tiro 2) · gatilho: seq GRGRR"
    }
   ],
   "consumidas": {
    "premier": 1784931642504,
-   "super": 1784933250210
+   "super": 1784933250210,
+   "euro": 1784934334899
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "23:53",
-     "jogo": "Romênia x França",
-     "odd": 2.02
-    },
-    {
-     "h": "23:56",
-     "jogo": "Croácia x Turquia",
-     "odd": 2.4
-    },
-    {
-     "h": "00:02",
-     "jogo": "Países Baixos x França",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "coluna :56",
-   "alvo": {
-    "h": "00:02",
-    "jogo": "Países Baixos x França",
-    "odd": 1.98,
-    "unidades": 4,
-    "desde": 1784934208905
-   },
-   "iniciadoEm": 1784933429110,
-   "tiros": [
-    {
-     "h": "23:53",
-     "jogo": "Romênia x França",
-     "odd": 2.02,
-     "unidades": 1
-    },
-    {
-     "h": "23:56",
-     "jogo": "Croácia x Turquia",
-     "odd": 2.4,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784930673801,
    "premier": 1784931642504,
-   "euro": 1784919600700,
+   "euro": 1784934334899,
    "super": 1784933250210
   },
   "dias": {
@@ -356,7 +313,7 @@
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
-   "2026-07-24": 7.2
+   "2026-07-24": 0.2
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
@@ -367,13 +324,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -57.7,
-  "ciclos": 363,
-  "greens": 245,
+  "saldo": -56.6,
+  "ciclos": 364,
+  "greens": 246,
   "redsCiclo": 44,
   "aborts": 0,
   "descartes": 74,
   "historico": [
+   {
+    "quando": "2026-07-24T23:07:24.803Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Bogota x Montevideo @2.07 (tiro 1) · gatilho: odd 2.07"
+   },
    {
     "quando": "2026-07-24T23:03:31.208Z",
     "resultado": "GREEN",
@@ -487,52 +450,17 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "premier · Brighton x United @1.87 (tiro 1) · gatilho: coluna :21"
-   },
-   {
-    "quando": "2026-07-24T16:10:29.400Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "super · Santos x La Plata @2.2 (tiro 3) · gatilho: coluna :04"
    }
   ],
   "consumidas": {
    "copa": 1784931393798,
-   "premier": 1784934211008
+   "premier": 1784934211008,
+   "super": 1784934444611
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "00:04",
-     "jogo": "Bogota x Montevideo",
-     "odd": 2.07
-    },
-    {
-     "h": "00:07",
-     "jogo": "Asuncion x La Plata",
-     "odd": 2.15
-    },
-    {
-     "h": "00:10",
-     "jogo": "Guayaquil x Medellin",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "odd 2.07",
-   "alvo": {
-    "h": "00:04",
-    "jogo": "Bogota x Montevideo",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1784934213204
-   },
-   "iniciadoEm": 1784934213204
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784923170109,
-   "super": 1784930454098,
+   "super": 1784934444611,
    "premier": 1784934211008,
    "copa": 1784931393798
   },
@@ -545,7 +473,7 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 13.8
+   "2026-07-24": 14.9
   },
   "_gatilhoAtual": {
    "tipo": "odd",
