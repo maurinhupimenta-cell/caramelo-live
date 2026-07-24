@@ -355,12 +355,24 @@
  },
  "ambas": {
   "saldo": -58.5,
-  "ciclos": 360,
+  "ciclos": 362,
   "greens": 244,
   "redsCiclo": 44,
   "aborts": 0,
-  "descartes": 72,
+  "descartes": 74,
   "historico": [
+   {
+    "quando": "2026-07-24T22:58:30.207Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :53) — liga REARMADA"
+   },
+   {
+    "quando": "2026-07-24T22:58:28.304Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-24T22:16:33.998Z",
     "resultado": "GREEN",
@@ -468,18 +480,6 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Panamá"
-   },
-   {
-    "quando": "2026-07-24T15:02:00.907Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "euro · França x Croácia @1.87 (tiro 2) · gatilho: coluna :59"
-   },
-   {
-    "quando": "2026-07-24T14:55:00.205Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "super · La Boca x Belo Horizonte @1.93 (tiro 3) · gatilho: odd 1.87"
    }
   ],
   "consumidas": {
@@ -487,35 +487,35 @@
    "copa": 1784931393798
   },
   "ciclo": {
-   "liga": "euro",
+   "liga": "premier",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "23:50",
-     "jogo": "Eslovênia x Alemanha",
-     "odd": 2.1
+     "h": "00:00",
+     "jogo": "Burnley x Wolverhampton",
+     "odd": 1.8
     },
     {
-     "h": "23:53",
-     "jogo": "Romênia x França",
-     "odd": 1.83
+     "h": "00:03",
+     "jogo": "Tottenham x Newcastle",
+     "odd": 2
     },
     {
-     "h": "23:56",
-     "jogo": "Croácia x Turquia",
-     "odd": 2.07
+     "h": "00:06",
+     "jogo": "Chelsea x Watford",
+     "odd": 2.05
     }
    ],
-   "gatilho": "coluna :53",
+   "gatilho": "odd 1.8",
    "alvo": {
-    "h": "23:50",
-    "jogo": "Eslovênia x Alemanha",
-    "odd": 2.1,
+    "h": "00:00",
+    "jogo": "Burnley x Wolverhampton",
+    "odd": 1.8,
     "unidades": 1,
-    "desde": 1784932951399
+    "desde": 1784933910209
    },
-   "iniciadoEm": 1784932951399
+   "iniciadoEm": 1784933910209
   },
   "cooldown": {
    "euro": 1784923170109,
@@ -538,7 +538,7 @@
    "tipo": "odd",
    "chave": "1.8",
    "n": 10,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
