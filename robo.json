@@ -294,7 +294,45 @@
   "consumidas": {
    "euro": 1784873160504
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "07:51",
+     "jogo": "Aston x Norwich",
+     "odd": 2.3
+    },
+    {
+     "h": "07:54",
+     "jogo": "Leeds x Leicester",
+     "odd": 2.55
+    },
+    {
+     "h": "07:57",
+     "jogo": "Norwich x Everton",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time Leeds",
+   "alvo": {
+    "h": "07:54",
+    "jogo": "Leeds x Leicester",
+    "odd": 2.55,
+    "unidades": 2,
+    "desde": 1784876030297
+   },
+   "iniciadoEm": 1784875845610,
+   "tiros": [
+    {
+     "h": "07:51",
+     "jogo": "Aston x Norwich",
+     "odd": 2.3,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1784846938792,
    "premier": 1784872241111,
@@ -315,8 +353,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Eslovênia",
-   "n": 8,
+   "chave": "Leeds",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
