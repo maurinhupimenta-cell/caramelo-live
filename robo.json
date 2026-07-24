@@ -357,13 +357,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -72.5,
-  "ciclos": 309,
-  "greens": 208,
+  "saldo": -71.7,
+  "ciclos": 310,
+  "greens": 209,
   "redsCiclo": 41,
   "aborts": 0,
   "descartes": 60,
   "historico": [
+   {
+    "quando": "2026-07-24T02:27:49.500Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "premier · Wolverhampton x Everton @1.83 (tiro 1) · gatilho: time Wolverhampton"
+   },
    {
     "quando": "2026-07-24T01:46:58.800Z",
     "resultado": "RED_CICLO",
@@ -477,53 +483,17 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho seq GRRGG) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-23T17:48:16.400Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "euro · Romênia x Ucrânia @1.93 (tiro 2) · gatilho: coluna :44"
    }
   ],
   "consumidas": {
-   "super": 1784856459907,
-   "euro": 1784857618600
+   "euro": 1784857618600,
+   "premier": 1784860069305
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:24",
-     "jogo": "Wolverhampton x Everton",
-     "odd": 1.83
-    },
-    {
-     "h": "03:27",
-     "jogo": "Palace x West Ham",
-     "odd": 2.1
-    },
-    {
-     "h": "03:30",
-     "jogo": "Wolverhampton x Newcastle",
-     "odd": 1.8
-    }
-   ],
-   "gatilho": "time Wolverhampton",
-   "alvo": {
-    "h": "03:24",
-    "jogo": "Wolverhampton x Everton",
-    "odd": 1.83,
-    "unidades": 1,
-    "desde": 1784859674008
-   },
-   "iniciadoEm": 1784859674008
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784857618600,
    "super": 1784856459907,
-   "premier": 1784848115000,
+   "premier": 1784860069305,
    "copa": 1784824619697
   },
   "dias": {
@@ -534,7 +504,7 @@
    "2026-07-20": 3.5,
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
-   "2026-07-23": -14.3
+   "2026-07-23": -13.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
