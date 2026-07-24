@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -68.7,
-  "ciclos": 293,
-  "greens": 192,
+  "saldo": -67.1,
+  "ciclos": 294,
+  "greens": 193,
   "redsCiclo": 52,
   "aborts": 0,
   "descartes": 49,
   "historico": [
+   {
+    "quando": "2026-07-24T04:33:49.105Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "super · Rio de Janeiro x Porto Alegre @2.6 (tiro 1) · gatilho: time Buenos Aires"
+   },
    {
     "quando": "2026-07-24T04:29:54.109Z",
     "resultado": "GREEN_OBS",
@@ -283,51 +289,17 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "copa · México x Escócia @2.5 (tiro 1) · gatilho: time Costa do Marfim"
-   },
-   {
-    "quando": "2026-07-23T19:23:18.897Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "super · Santiago x Asuncion @2.1 (tiro 1) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:31",
-     "jogo": "Rio de Janeiro x Porto Alegre",
-     "odd": 2.6
-    },
-    {
-     "h": "05:34",
-     "jogo": "Buenos Aires x Lima",
-     "odd": 2.02
-    },
-    {
-     "h": "05:37",
-     "jogo": "Medellin x Sao Paulo",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Buenos Aires",
-   "alvo": {
-    "h": "05:31",
-    "jogo": "Rio de Janeiro x Porto Alegre",
-    "odd": 2.6,
-    "unidades": 1,
-    "desde": 1784867368797
-   },
-   "iniciadoEm": 1784867368797
+  "consumidas": {
+   "super": 1784867628911
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784846938792,
    "premier": 1784861804805,
    "euro": 1784862710000,
-   "super": 1784860074698
+   "super": 1784867628911
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -339,13 +311,13 @@
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
-   "2026-07-24": -7
+   "2026-07-24": -5.4
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "City",
    "n": 12,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
