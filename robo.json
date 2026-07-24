@@ -295,7 +295,37 @@
    "copa": 1784930673801,
    "premier": 1784931642504
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:37",
+     "jogo": "Asuncion x Medellin",
+     "odd": 2.4
+    },
+    {
+     "h": "23:40",
+     "jogo": "Sao Paulo x Buenos Aires",
+     "odd": 1.98
+    },
+    {
+     "h": "23:43",
+     "jogo": "Medellin x Asuncion",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "odd 1.98",
+   "alvo": {
+    "h": "23:37",
+    "jogo": "Asuncion x Medellin",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1784932093611
+   },
+   "iniciadoEm": 1784932093611
+  },
   "cooldown": {
    "copa": 1784930673801,
    "premier": 1784931642504,
@@ -315,10 +345,10 @@
    "2026-07-24": 6.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRR",
-   "n": 20,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.98",
+   "n": 9,
+   "start": 3
   },
   "_obs": {}
  },
