@@ -325,13 +325,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -54,
-  "ciclos": 345,
-  "greens": 234,
+  "saldo": -53,
+  "ciclos": 346,
+  "greens": 235,
   "redsCiclo": 42,
   "aborts": 0,
   "descartes": 69,
   "historico": [
+   {
+    "quando": "2026-07-24T16:38:32.502Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Suíça x Turquia @2.02 (tiro 1) · gatilho: seq RGGRG"
+   },
    {
     "quando": "2026-07-24T16:20:44.601Z",
     "resultado": "GREEN",
@@ -445,52 +451,17 @@
     "resultado": "GREEN",
     "unidades": 0.8,
     "detalhe": "premier · Newcastle x Wolverhampton @1.76 (tiro 1) · gatilho: seq RRGR"
-   },
-   {
-    "quando": "2026-07-24T06:25:07.603Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "copa · Haiti x Uzbequistão @1.9 (tiro 1) · gatilho: odd 2.07"
    }
   ],
   "consumidas": {
    "copa": 1784907898801,
    "super": 1784909429202,
-   "premier": 1784910044408
+   "premier": 1784910044408,
+   "euro": 1784911112302
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:29",
-     "jogo": "Suíça x Turquia",
-     "odd": 2.02
-    },
-    {
-     "h": "17:32",
-     "jogo": "Hungria x Albânia",
-     "odd": 2.3
-    },
-    {
-     "h": "17:35",
-     "jogo": "França x Bélgica",
-     "odd": 1.83
-    }
-   ],
-   "gatilho": "seq RGGRG",
-   "alvo": {
-    "h": "17:29",
-    "jogo": "Suíça x Turquia",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1784910389303
-   },
-   "iniciadoEm": 1784910389303
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784905320800,
+   "euro": 1784911112302,
    "super": 1784909429202,
    "premier": 1784910044408,
    "copa": 1784907898801
@@ -504,7 +475,7 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 17.5
+   "2026-07-24": 18.5
   },
   "_gatilhoAtual": {
    "tipo": "seq",
