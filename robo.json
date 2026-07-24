@@ -346,19 +346,25 @@
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "City",
-   "n": 12,
+   "n": 13,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -71.2,
-  "ciclos": 319,
-  "greens": 211,
+  "saldo": -70.1,
+  "ciclos": 320,
+  "greens": 212,
   "redsCiclo": 41,
   "aborts": 0,
   "descartes": 67,
   "historico": [
+   {
+    "quando": "2026-07-24T04:39:01.798Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Japão x Uruguai @2.02 (tiro 3) · gatilho: time Senegal"
+   },
    {
     "quando": "2026-07-24T04:35:51.705Z",
     "resultado": "GREEN_OBS",
@@ -472,65 +478,17 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · Islington x Watford @2.05 (tiro 1) · gatilho: seq GGGRR"
-   },
-   {
-    "quando": "2026-07-23T20:18:23.206Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho seq GGGRR) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "05:28",
-     "jogo": "Arábia Saudita x Argélia",
-     "odd": 1.93
-    },
-    {
-     "h": "05:31",
-     "jogo": "Senegal x Equador",
-     "odd": 2
-    },
-    {
-     "h": "05:34",
-     "jogo": "Japão x Uruguai",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "time Senegal",
-   "alvo": {
-    "h": "05:34",
-    "jogo": "Japão x Uruguai",
-    "odd": 2.02,
-    "unidades": 4,
-    "desde": 1784867688008
-   },
-   "iniciadoEm": 1784866988708,
-   "tiros": [
-    {
-     "h": "05:28",
-     "jogo": "Arábia Saudita x Argélia",
-     "odd": 1.93,
-     "unidades": 1
-    },
-    {
-     "h": "05:31",
-     "jogo": "Senegal x Equador",
-     "odd": 2,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "copa": 1784867941602
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784863213104,
    "super": 1784860798007,
    "premier": 1784860069305,
-   "copa": 1784824619697
+   "copa": 1784867941602
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -541,7 +499,7 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 0.3
+   "2026-07-24": 1.4
   },
   "_gatilhoAtual": {
    "tipo": "time",
@@ -549,11 +507,6 @@
    "n": 9,
    "start": 1
   },
-  "_obs": {
-   "premier": {
-    "desde": 1784867751705,
-    "gatilho": "seq RRGR"
-   }
-  }
+  "_obs": {}
  }
 }
