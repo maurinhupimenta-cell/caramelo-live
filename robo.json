@@ -458,8 +458,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "04:11",
@@ -479,11 +479,11 @@
    ],
    "gatilho": "placar empate 1-1",
    "alvo": {
-    "h": "04:14",
-    "jogo": "Escócia x Espanha",
-    "odd": 1.85,
-    "unidades": 2,
-    "desde": 1784862893001
+    "h": "04:17",
+    "jogo": "Países Baixos x Suíça",
+    "odd": 1.83,
+    "unidades": 4,
+    "desde": 1784863093206
    },
    "iniciadoEm": 1784862514802,
    "tiros": [
@@ -492,6 +492,12 @@
      "jogo": "Dinamarca x Portugal",
      "odd": 2,
      "unidades": 1
+    },
+    {
+     "h": "04:14",
+     "jogo": "Escócia x Espanha",
+     "odd": 1.85,
+     "unidades": 2
     }
    ]
   },
@@ -513,10 +519,10 @@
    "2026-07-24": 0
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 11,
-   "start": 1
+   "tipo": "time",
+   "chave": "Bélgica",
+   "n": 8,
+   "start": 2
   },
   "_obs": {}
  }
