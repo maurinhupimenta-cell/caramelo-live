@@ -317,13 +317,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -39.3,
-  "ciclos": 406,
+  "saldo": -46.3,
+  "ciclos": 407,
   "greens": 283,
-  "redsCiclo": 47,
+  "redsCiclo": 48,
   "aborts": 0,
   "descartes": 76,
   "historico": [
+   {
+    "quando": "2026-07-25T22:40:40.108Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Haiti"
+   },
    {
     "quando": "2026-07-25T22:02:36.304Z",
     "resultado": "RED_CICLO",
@@ -437,68 +443,19 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "copa · Iraque x Panamá @2.15 (tiro 1) · gatilho: time Uzbequistão"
-   },
-   {
-    "quando": "2026-07-25T13:47:47.405Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "premier · Brighton x Tottenham @1.98 (tiro 3) · gatilho: odd 1.98"
    }
   ],
   "consumidas": {
    "super": 1785016502803,
-   "premier": 1785016956100
+   "premier": 1785016956100,
+   "copa": 1785019239911
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "23:31",
-     "jogo": "Haiti x Argentina",
-     "odd": 1.86
-    },
-    {
-     "h": "23:34",
-     "jogo": "Arábia Saudita x Bélgica",
-     "odd": 1.93
-    },
-    {
-     "h": "23:37",
-     "jogo": "França x Escócia",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "time Haiti",
-   "alvo": {
-    "h": "23:37",
-    "jogo": "França x Escócia",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1785019060905
-   },
-   "iniciadoEm": 1785018481007,
-   "tiros": [
-    {
-     "h": "23:31",
-     "jogo": "Haiti x Argentina",
-     "odd": 1.86,
-     "unidades": 1
-    },
-    {
-     "h": "23:34",
-     "jogo": "Arábia Saudita x Bélgica",
-     "odd": 1.93,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785009385398,
    "super": 1785016502803,
    "premier": 1785016956100,
-   "copa": 1785014880303
+   "copa": 1785019239911
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -510,12 +467,12 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 13.1
+   "2026-07-25": 6.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Haiti",
-   "n": 19,
+   "n": 20,
    "start": 1
   },
   "_obs": {}
