@@ -294,7 +294,37 @@
   "consumidas": {
    "euro": 1784945629600
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:51",
+     "jogo": "Brighton x United",
+     "odd": 2.05
+    },
+    {
+     "h": "03:54",
+     "jogo": "Chelsea x West Ham",
+     "odd": 2.5
+    },
+    {
+     "h": "03:57",
+     "jogo": "Southampton x Wolverhampton",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time Chelsea",
+   "alvo": {
+    "h": "03:51",
+    "jogo": "Brighton x United",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1784947330504
+   },
+   "iniciadoEm": 1784947330504
+  },
   "cooldown": {
    "copa": 1784930673801,
    "premier": 1784942293907,
@@ -315,16 +345,11 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "França",
+   "chave": "Chelsea",
    "n": 8,
-   "start": 1
+   "start": 3
   },
-  "_obs": {
-   "premier": {
-    "desde": 1784945908205,
-    "gatilho": "time Watford"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -52.4,
