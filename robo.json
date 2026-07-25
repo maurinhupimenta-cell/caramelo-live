@@ -292,7 +292,37 @@
    "copa": 1784992732306,
    "premier": 1784993922801
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:53",
+     "jogo": "Ucrânia x Itália",
+     "odd": 2.35
+    },
+    {
+     "h": "16:56",
+     "jogo": "Croácia x Inglaterra",
+     "odd": 2.07
+    },
+    {
+     "h": "16:59",
+     "jogo": "República Tcheca x Albânia",
+     "odd": 3
+    }
+   ],
+   "gatilho": "coluna :56",
+   "alvo": {
+    "h": "16:53",
+    "jogo": "Ucrânia x Itália",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1784994241007
+   },
+   "iniciadoEm": 1784994241007
+  },
   "cooldown": {
    "copa": 1784992732306,
    "premier": 1784993922801,
@@ -313,10 +343,10 @@
    "2026-07-25": 6.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.35",
-   "n": 11,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":56",
+   "n": 16,
+   "start": 3
   },
   "_obs": {}
  },
