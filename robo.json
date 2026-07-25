@@ -160,13 +160,19 @@
   }
  },
  "o25": {
-  "saldo": -66.6,
-  "ciclos": 354,
-  "greens": 231,
+  "saldo": -65.2,
+  "ciclos": 355,
+  "greens": 232,
   "redsCiclo": 61,
   "aborts": 0,
   "descartes": 62,
   "historico": [
+   {
+    "quando": "2026-07-25T07:17:05.699Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "euro · Suíça x Turquia @2.35 (tiro 1) · gatilho: coluna :17"
+   },
    {
     "quando": "2026-07-25T07:05:05.304Z",
     "resultado": "GREEN_OBS",
@@ -280,53 +286,48 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "super · Sao Paulo x Buenos Aires @1.98 (tiro 2) · gatilho: odd 1.98"
-   },
-   {
-    "quando": "2026-07-24T22:20:42.703Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "premier · Liverpool x Norwich @2.2 (tiro 2) · gatilho: seq GRGRG"
    }
   ],
   "consumidas": {
    "premier": 1784961929209,
-   "super": 1784962725800
+   "super": 1784962725800,
+   "euro": 1784963825409
   },
   "ciclo": {
-   "liga": "euro",
+   "liga": "copa",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "08:14",
-     "jogo": "Suíça x Turquia",
-     "odd": 2.35
+     "h": "08:19",
+     "jogo": "Gana x Iraque",
+     "odd": 2.55
     },
     {
-     "h": "08:17",
-     "jogo": "Áustria x Espanha",
-     "odd": 2.15
+     "h": "08:22",
+     "jogo": "Japão x Noruega",
+     "odd": 2.25
     },
     {
-     "h": "08:20",
-     "jogo": "Bélgica x Hungria",
-     "odd": 2.3
+     "h": "08:25",
+     "jogo": "Suécia x Países Baixos",
+     "odd": 2.55
     }
    ],
-   "gatilho": "coluna :17",
+   "gatilho": "time Gana",
    "alvo": {
-    "h": "08:14",
-    "jogo": "Suíça x Turquia",
-    "odd": 2.35,
+    "h": "08:19",
+    "jogo": "Gana x Iraque",
+    "odd": 2.55,
     "unidades": 1,
-    "desde": 1784963106201
+    "desde": 1784963826700
    },
-   "iniciadoEm": 1784963106201
+   "iniciadoEm": 1784963826700
   },
   "cooldown": {
    "copa": 1784956027502,
    "premier": 1784961929209,
-   "euro": 1784958785309,
+   "euro": 1784963825409,
    "super": 1784962725800
   },
   "dias": {
@@ -340,24 +341,30 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": -3.2
+   "2026-07-25": -1.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Gana",
    "n": 10,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -46.9,
-  "ciclos": 373,
-  "greens": 255,
+  "saldo": -45.9,
+  "ciclos": 374,
+  "greens": 256,
   "redsCiclo": 44,
   "aborts": 0,
   "descartes": 74,
   "historico": [
+   {
+    "quando": "2026-07-25T07:17:05.903Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Suíça x Turquia @2.02 (tiro 1) · gatilho: time Espanha"
+   },
    {
     "quando": "2026-07-25T07:10:03.607Z",
     "resultado": "GREEN",
@@ -471,20 +478,15 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time República Tcheca"
-   },
-   {
-    "quando": "2026-07-24T19:23:51.198Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "premier · Chelsea x City @1.85 (tiro 2) · gatilho: coluna :21"
    }
   ],
   "consumidas": {
-   "copa": 1784963403500
+   "copa": 1784963403500,
+   "euro": 1784963825703
   },
   "ciclo": null,
   "cooldown": {
-   "euro": 1784958785602,
+   "euro": 1784963825703,
    "super": 1784934444611,
    "premier": 1784946760500,
    "copa": 1784963403500
@@ -499,12 +501,12 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 5.5
+   "2026-07-25": 6.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Iraque",
-   "n": 9,
+   "chave": "Romênia",
+   "n": 13,
    "start": 2
   },
   "_obs": {}
