@@ -160,13 +160,19 @@
   }
  },
  "o25": {
-  "saldo": -59.8,
-  "ciclos": 364,
-  "greens": 239,
+  "saldo": -58.7,
+  "ciclos": 365,
+  "greens": 240,
   "redsCiclo": 62,
   "aborts": 0,
   "descartes": 63,
   "historico": [
+   {
+    "quando": "2026-07-25T10:56:45.300Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Espanha x Escócia @2.1 (tiro 1) · gatilho: coluna :56"
+   },
    {
     "quando": "2026-07-25T10:17:48.300Z",
     "resultado": "GREEN",
@@ -280,53 +286,18 @@
     "resultado": "GREEN",
     "unidades": 1.6,
     "detalhe": "copa · Alemanha x Gana @2.3 (tiro 2) · gatilho: time Gana"
-   },
-   {
-    "quando": "2026-07-25T03:46:06.799Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho seq RRRR) — liga REARMADA"
    }
   ],
   "consumidas": {
    "copa": 1784973843802,
-   "premier": 1784974668100
+   "premier": 1784974668100,
+   "euro": 1784977005099
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "11:53",
-     "jogo": "Espanha x Escócia",
-     "odd": 2.1
-    },
-    {
-     "h": "11:56",
-     "jogo": "Sérvia x Ucrânia",
-     "odd": 2.5
-    },
-    {
-     "h": "11:59",
-     "jogo": "Alemanha x Turquia",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "coluna :56",
-   "alvo": {
-    "h": "11:53",
-    "jogo": "Espanha x Escócia",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1784976765302
-   },
-   "iniciadoEm": 1784976765302
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784973843802,
    "premier": 1784974668100,
-   "euro": 1784973164305,
+   "euro": 1784977005099,
    "super": 1784962725800
   },
   "dias": {
@@ -340,7 +311,7 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 3.6
+   "2026-07-25": 4.7
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
