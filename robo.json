@@ -296,8 +296,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "04:20",
@@ -317,13 +317,21 @@
    ],
    "gatilho": "seq RRRRR",
    "alvo": {
-    "h": "04:20",
-    "jogo": "Suíça x Itália",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1784949450398
+    "h": "04:23",
+    "jogo": "França x Alemanha",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1784949788208
    },
-   "iniciadoEm": 1784949450398
+   "iniciadoEm": 1784949450398,
+   "tiros": [
+    {
+     "h": "04:20",
+     "jogo": "Suíça x Itália",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784930673801,
