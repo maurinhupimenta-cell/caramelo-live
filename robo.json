@@ -294,8 +294,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "18:05",
@@ -315,13 +315,21 @@
    ],
    "gatilho": "seq RRGG",
    "alvo": {
-    "h": "18:05",
-    "jogo": "Albânia x Ucrânia",
-    "odd": 2.62,
-    "unidades": 1,
-    "desde": 1784998953106
+    "h": "18:08",
+    "jogo": "Romênia x Geórgia",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1784999279203
    },
-   "iniciadoEm": 1784998953106
+   "iniciadoEm": 1784998953106,
+   "tiros": [
+    {
+     "h": "18:05",
+     "jogo": "Albânia x Ucrânia",
+     "odd": 2.62,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784996721510,
@@ -344,8 +352,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRGG",
-   "n": 20,
+   "chave": "RRGGR",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
