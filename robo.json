@@ -161,12 +161,18 @@
  },
  "o25": {
   "saldo": -64.9,
-  "ciclos": 375,
+  "ciclos": 376,
   "greens": 244,
   "redsCiclo": 64,
   "aborts": 0,
-  "descartes": 67,
+  "descartes": 68,
   "historico": [
+   {
+    "quando": "2026-07-25T14:11:12.511Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho seq RRGG) — liga REARMADA"
+   },
    {
     "quando": "2026-07-25T14:10:13.204Z",
     "resultado": "GREEN",
@@ -280,12 +286,6 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho odd 2.45) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-25T07:29:44.304Z",
-    "resultado": "GREEN",
-    "unidades": 3.2,
-    "detalhe": "copa · Suécia x Países Baixos @2.55 (tiro 3) · gatilho: time Gana"
    }
   ],
   "consumidas": {
@@ -318,16 +318,27 @@
    "n": 11,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1784988672510,
+    "gatilho": "seq RRGG"
+   }
+  }
  },
  "ambas": {
-  "saldo": -42.1,
-  "ciclos": 387,
-  "greens": 267,
+  "saldo": -40.9,
+  "ciclos": 388,
+  "greens": 268,
   "redsCiclo": 45,
   "aborts": 0,
   "descartes": 75,
   "historico": [
+   {
+    "quando": "2026-07-25T14:10:13.501Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Iraque x Panamá @2.15 (tiro 1) · gatilho: time Uzbequistão"
+   },
    {
     "quando": "2026-07-25T13:47:47.405Z",
     "resultado": "GREEN",
@@ -441,54 +452,19 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "copa · Canadá x África do Sul @2.2 (tiro 1) · gatilho: odd 2.1"
-   },
-   {
-    "quando": "2026-07-25T02:32:40.605Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "premier · Wolverhampton x Burnley @1.85 (tiro 1) · gatilho: placar goleada (3+)"
    }
   ],
   "consumidas": {
    "euro": 1784985609704,
-   "premier": 1784987267204
+   "premier": 1784987267204,
+   "copa": 1784988613298
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:07",
-     "jogo": "Iraque x Panamá",
-     "odd": 2.15
-    },
-    {
-     "h": "15:10",
-     "jogo": "Uzbequistão x Austrália",
-     "odd": 1.95
-    },
-    {
-     "h": "15:13",
-     "jogo": "Senegal x Argélia",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "time Uzbequistão",
-   "alvo": {
-    "h": "15:07",
-    "jogo": "Iraque x Panamá",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1784988271804
-   },
-   "iniciadoEm": 1784988271804
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784985609704,
    "super": 1784934444611,
    "premier": 1784987267204,
-   "copa": 1784984669702
+   "copa": 1784988613298
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -500,7 +476,7 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 10.3
+   "2026-07-25": 11.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
