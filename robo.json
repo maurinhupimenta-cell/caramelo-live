@@ -294,8 +294,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "16:10",
@@ -315,11 +315,11 @@
    ],
    "gatilho": "time Coreia do Sul",
    "alvo": {
-    "h": "16:13",
-    "jogo": "Países Baixos x Equador",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1784992440902
+    "h": "16:16",
+    "jogo": "África do Sul x Japão",
+    "odd": 2.55,
+    "unidades": 4,
+    "desde": 1784992552709
    },
    "iniciadoEm": 1784992244909,
    "tiros": [
@@ -328,6 +328,12 @@
      "jogo": "EUA x Coreia do Sul",
      "odd": 2.4,
      "unidades": 1
+    },
+    {
+     "h": "16:13",
+     "jogo": "Países Baixos x Equador",
+     "odd": 2.2,
+     "unidades": 2
     }
    ]
   },
@@ -490,7 +496,37 @@
   "consumidas": {
    "premier": 1784992491309
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:16",
+     "jogo": "África do Sul x Japão",
+     "odd": 2.15
+    },
+    {
+     "h": "16:19",
+     "jogo": "Brasil x Austrália",
+     "odd": 1.98
+    },
+    {
+     "h": "16:22",
+     "jogo": "Egito x Portugal",
+     "odd": 1.85
+    }
+   ],
+   "gatilho": "time Austrália",
+   "alvo": {
+    "h": "16:16",
+    "jogo": "África do Sul x Japão",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1784992493998
+   },
+   "iniciadoEm": 1784992493998
+  },
   "cooldown": {
    "euro": 1784985609704,
    "super": 1784934444611,
