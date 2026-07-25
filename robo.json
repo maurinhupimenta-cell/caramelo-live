@@ -161,12 +161,18 @@
  },
  "o25": {
   "saldo": -58.7,
-  "ciclos": 366,
+  "ciclos": 367,
   "greens": 240,
   "redsCiclo": 62,
   "aborts": 0,
-  "descartes": 64,
+  "descartes": 65,
   "historico": [
+   {
+    "quando": "2026-07-25T11:19:45.106Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-25T11:04:05.599Z",
     "resultado": "GREEN_OBS",
@@ -280,19 +286,42 @@
     "resultado": "GREEN",
     "unidades": 2.1,
     "detalhe": "euro · Geórgia x Polônia @2.55 (tiro 2) · gatilho: time Geórgia"
-   },
-   {
-    "quando": "2026-07-25T04:14:41.502Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "premier · Everton x Chelsea @2.15 (tiro 2) · gatilho: time Chelsea"
    }
   ],
   "consumidas": {
-   "premier": 1784974668100,
    "euro": 1784977005099
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:13",
+     "jogo": "Qatar x França",
+     "odd": 2.25
+    },
+    {
+     "h": "12:16",
+     "jogo": "Costa do Marfim x México",
+     "odd": 2.15
+    },
+    {
+     "h": "12:19",
+     "jogo": "Coreia do Sul x Inglaterra",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "time México",
+   "alvo": {
+    "h": "12:13",
+    "jogo": "Qatar x França",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1784977446809
+   },
+   "iniciadoEm": 1784977446809
+  },
   "cooldown": {
    "copa": 1784973843802,
    "premier": 1784974668100,
@@ -313,17 +342,12 @@
    "2026-07-25": 4.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":56",
+   "tipo": "time",
+   "chave": "México",
    "n": 11,
-   "start": 1
+   "start": 2
   },
-  "_obs": {
-   "copa": {
-    "desde": 1784977445599,
-    "gatilho": "time México"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -37.9,
