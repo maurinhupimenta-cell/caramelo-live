@@ -345,7 +345,7 @@
    "tipo": "time",
    "chave": "México",
    "n": 16,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
@@ -482,7 +482,37 @@
    "copa": 1785000501312,
    "premier": 1785002205504
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:26",
+     "jogo": "França x Turquia",
+     "odd": 2.02
+    },
+    {
+     "h": "19:29",
+     "jogo": "Suíça x Geórgia",
+     "odd": 2.02
+    },
+    {
+     "h": "19:32",
+     "jogo": "Croácia x Sérvia",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "seq GRRGR",
+   "alvo": {
+    "h": "19:26",
+    "jogo": "França x Turquia",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1785003805610
+   },
+   "iniciadoEm": 1785003805610
+  },
   "cooldown": {
    "euro": 1784997687306,
    "super": 1784934444611,
@@ -502,9 +532,9 @@
    "2026-07-25": 19.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":54",
-   "n": 18,
+   "tipo": "seq",
+   "chave": "GRRGR",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
