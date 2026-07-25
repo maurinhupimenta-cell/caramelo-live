@@ -482,7 +482,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:32",
+     "jogo": "Geórgia x Polônia",
+     "odd": 2.15
+    },
+    {
+     "h": "05:35",
+     "jogo": "Sérvia x Países Baixos",
+     "odd": 1.95
+    },
+    {
+     "h": "05:38",
+     "jogo": "Croácia x Áustria",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-1)",
+   "alvo": {
+    "h": "05:32",
+    "jogo": "Geórgia x Polônia",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1784953891906
+   },
+   "iniciadoEm": 1784953891906
+  },
   "cooldown": {
    "euro": 1784950173009,
    "super": 1784934444611,
@@ -504,7 +534,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "acima de 1-0 (2-1)",
-   "n": 9,
+   "n": 10,
    "start": 1
   },
   "_obs": {}
