@@ -292,7 +292,37 @@
    "copa": 1784973843802,
    "premier": 1784974668100
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:53",
+     "jogo": "Espanha x Escócia",
+     "odd": 2.1
+    },
+    {
+     "h": "11:56",
+     "jogo": "Sérvia x Ucrânia",
+     "odd": 2.5
+    },
+    {
+     "h": "11:59",
+     "jogo": "Alemanha x Turquia",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "coluna :56",
+   "alvo": {
+    "h": "11:53",
+    "jogo": "Espanha x Escócia",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1784976765302
+   },
+   "iniciadoEm": 1784976765302
+  },
   "cooldown": {
    "copa": 1784973843802,
    "premier": 1784974668100,
@@ -313,9 +343,9 @@
    "2026-07-25": 3.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Chelsea",
-   "n": 24,
+   "tipo": "coluna",
+   "chave": ":56",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
@@ -450,7 +480,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1784973305907,
    "euro": 1784976224207
   },
   "ciclo": {
