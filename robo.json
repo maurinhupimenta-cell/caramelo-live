@@ -343,10 +343,10 @@
    "2026-07-25": 7.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGG",
-   "n": 11,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":56",
+   "n": 10,
+   "start": 2
   },
   "_obs": {}
  },
@@ -485,8 +485,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "10:46",
@@ -506,13 +506,21 @@
    ],
    "gatilho": "coluna :49",
    "alvo": {
-    "h": "10:46",
-    "jogo": "Áustria x Haiti",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1784972446311
+    "h": "10:49",
+    "jogo": "Irã x Curação",
+    "odd": 2.1,
+    "unidades": 2,
+    "desde": 1784972943502
    },
-   "iniciadoEm": 1784972446311
+   "iniciadoEm": 1784972446311,
+   "tiros": [
+    {
+     "h": "10:46",
+     "jogo": "Áustria x Haiti",
+     "odd": 1.95,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784972445302,
