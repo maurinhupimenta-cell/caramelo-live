@@ -324,13 +324,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -50.1,
-  "ciclos": 370,
-  "greens": 252,
+  "saldo": -49.2,
+  "ciclos": 371,
+  "greens": 253,
   "redsCiclo": 44,
   "aborts": 0,
   "descartes": 74,
   "historico": [
+   {
+    "quando": "2026-07-25T04:41:34.805Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Croácia x Áustria @1.98 (tiro 3) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-07-25T03:29:33.201Z",
     "resultado": "GREEN",
@@ -444,62 +450,14 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "euro · Portugal x Eslovênia @2.25 (tiro 2) · gatilho: coluna :08"
-   },
-   {
-    "quando": "2026-07-24T18:03:20.010Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho odd 1.87) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "05:32",
-     "jogo": "Geórgia x Polônia",
-     "odd": 2.15
-    },
-    {
-     "h": "05:35",
-     "jogo": "Sérvia x Países Baixos",
-     "odd": 1.95
-    },
-    {
-     "h": "05:38",
-     "jogo": "Croácia x Áustria",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-1)",
-   "alvo": {
-    "h": "05:38",
-    "jogo": "Croácia x Áustria",
-    "odd": 1.98,
-    "unidades": 4,
-    "desde": 1784954288799
-   },
-   "iniciadoEm": 1784953891906,
-   "tiros": [
-    {
-     "h": "05:32",
-     "jogo": "Geórgia x Polônia",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "05:35",
-     "jogo": "Sérvia x Países Baixos",
-     "odd": 1.95,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "euro": 1784954494605
   },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784950173009,
+   "euro": 1784954494605,
    "super": 1784934444611,
    "premier": 1784946760500,
    "copa": 1784949609603
@@ -514,12 +472,12 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 2.3
+   "2026-07-25": 3.2
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 10,
+   "tipo": "seq",
+   "chave": "RRRG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
