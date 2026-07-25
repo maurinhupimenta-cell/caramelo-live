@@ -157,13 +157,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -53.8,
-  "ciclos": 388,
-  "greens": 254,
+  "saldo": -52.4,
+  "ciclos": 389,
+  "greens": 255,
   "redsCiclo": 65,
   "aborts": 0,
   "descartes": 69,
   "historico": [
+   {
+    "quando": "2026-07-25T19:17:52.006Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "premier · West Ham x Burnley @2.4 (tiro 1) · gatilho: coluna :15"
+   },
    {
     "quando": "2026-07-25T19:14:45.904Z",
     "resultado": "GREEN_OBS",
@@ -277,52 +283,16 @@
     "resultado": "GREEN",
     "unidades": 1.7,
     "detalhe": "copa · Egito x Senegal @2.35 (tiro 2) · gatilho: coluna :37"
-   },
-   {
-    "quando": "2026-07-25T11:25:03.201Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho coluna :37) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "copa": 1785003987002,
-   "euro": 1785004525101
+   "euro": 1785004525101,
+   "premier": 1785007071800
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:15",
-     "jogo": "West Ham x Burnley",
-     "odd": 2.4
-    },
-    {
-     "h": "20:18",
-     "jogo": "Tottenham x Newcastle",
-     "odd": 2.25
-    },
-    {
-     "h": "20:21",
-     "jogo": "Islington x City",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "coluna :15",
-   "alvo": {
-    "h": "20:15",
-    "jogo": "West Ham x Burnley",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1785006887804
-   },
-   "iniciadoEm": 1785006887804
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785003987002,
-   "premier": 1785003284102,
+   "premier": 1785007071800,
    "euro": 1785004525101,
    "super": 1784962725800
   },
@@ -337,7 +307,7 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 9.6
+   "2026-07-25": 11
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
