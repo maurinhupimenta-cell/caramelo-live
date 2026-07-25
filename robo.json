@@ -294,7 +294,45 @@
    "premier": 1784966151508,
    "euro": 1784968667709
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "09:40",
+     "jogo": "Marrocos x Jordânia",
+     "odd": 2.25
+    },
+    {
+     "h": "09:43",
+     "jogo": "África do Sul x Bósnia e Herzegovina",
+     "odd": 2.3
+    },
+    {
+     "h": "09:46",
+     "jogo": "Irã x Equador",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "coluna :40",
+   "alvo": {
+    "h": "09:43",
+    "jogo": "África do Sul x Bósnia e Herzegovina",
+    "odd": 2.3,
+    "unidades": 2,
+    "desde": 1784969125198
+   },
+   "iniciadoEm": 1784968669506,
+   "tiros": [
+    {
+     "h": "09:40",
+     "jogo": "Marrocos x Jordânia",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1784964584104,
    "premier": 1784966151508,
@@ -316,7 +354,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":40",
+   "chave": ":43",
    "n": 9,
    "start": 1
   },
