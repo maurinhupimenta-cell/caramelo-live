@@ -292,7 +292,37 @@
    "copa": 1784988612702,
    "euro": 1784989032299
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:30",
+     "jogo": "Norwich x West Ham",
+     "odd": 2.45
+    },
+    {
+     "h": "15:33",
+     "jogo": "Chelsea x Watford",
+     "odd": 2.25
+    },
+    {
+     "h": "15:36",
+     "jogo": "Wolverhampton x Brighton",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "seq GRGRR",
+   "alvo": {
+    "h": "15:30",
+    "jogo": "Norwich x West Ham",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1784989601007
+   },
+   "iniciadoEm": 1784989601007
+  },
   "cooldown": {
    "copa": 1784988612702,
    "premier": 1784985386099,
@@ -314,8 +344,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRGG",
-   "n": 16,
+   "chave": "GRGRR",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
