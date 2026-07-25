@@ -160,13 +160,19 @@
   }
  },
  "o25": {
-  "saldo": -54.2,
-  "ciclos": 362,
+  "saldo": -61.2,
+  "ciclos": 363,
   "greens": 238,
-  "redsCiclo": 61,
+  "redsCiclo": 62,
   "aborts": 0,
   "descartes": 63,
   "historico": [
+   {
+    "quando": "2026-07-25T10:04:04.000Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: odd 2.1"
+   },
    {
     "quando": "2026-07-25T09:52:44.598Z",
     "resultado": "GREEN",
@@ -280,65 +286,16 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "euro · França x Alemanha @2.05 (tiro 2) · gatilho: seq RRRRR"
-   },
-   {
-    "quando": "2026-07-25T02:53:36.803Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Brighton x United @2.05 (tiro 1) · gatilho: time Chelsea"
    }
   ],
   "consumidas": {
    "premier": 1784970698204,
-   "euro": 1784973164305
+   "euro": 1784973164305,
+   "copa": 1784973843802
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "10:55",
-     "jogo": "Espanha x RD Congo",
-     "odd": 2.1
-    },
-    {
-     "h": "10:58",
-     "jogo": "Marrocos x Canadá",
-     "odd": 2.4
-    },
-    {
-     "h": "11:01",
-     "jogo": "Países Baixos x Irã",
-     "odd": 2.6
-    }
-   ],
-   "gatilho": "odd 2.1",
-   "alvo": {
-    "h": "11:01",
-    "jogo": "Países Baixos x Irã",
-    "odd": 2.6,
-    "unidades": 4,
-    "desde": 1784973665304
-   },
-   "iniciadoEm": 1784973166499,
-   "tiros": [
-    {
-     "h": "10:55",
-     "jogo": "Espanha x RD Congo",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "10:58",
-     "jogo": "Marrocos x Canadá",
-     "odd": 2.4,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784969384399,
+   "copa": 1784973843802,
    "premier": 1784970698204,
    "euro": 1784973164305,
    "super": 1784962725800
@@ -354,7 +311,7 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 9.2
+   "2026-07-25": 2.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
