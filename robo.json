@@ -292,7 +292,37 @@
    "premier": 1784970698204,
    "euro": 1784973164305
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:55",
+     "jogo": "Espanha x RD Congo",
+     "odd": 2.1
+    },
+    {
+     "h": "10:58",
+     "jogo": "Marrocos x Canadá",
+     "odd": 2.4
+    },
+    {
+     "h": "11:01",
+     "jogo": "Países Baixos x Irã",
+     "odd": 2.6
+    }
+   ],
+   "gatilho": "odd 2.1",
+   "alvo": {
+    "h": "10:55",
+    "jogo": "Espanha x RD Congo",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1784973166499
+   },
+   "iniciadoEm": 1784973166499
+  },
   "cooldown": {
    "copa": 1784969384399,
    "premier": 1784970698204,
@@ -313,21 +343,27 @@
    "2026-07-25": 9.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.1",
+   "tipo": "time",
+   "chave": "Bósnia e Herzegovina",
    "n": 8,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -41.5,
-  "ciclos": 378,
-  "greens": 260,
+  "saldo": -40.6,
+  "ciclos": 379,
+  "greens": 261,
   "redsCiclo": 44,
   "aborts": 0,
   "descartes": 74,
   "historico": [
+   {
+    "quando": "2026-07-25T09:55:06.111Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · EUA x Suíça @1.98 (tiro 3) · gatilho: coluna :49"
+   },
    {
     "quando": "2026-07-25T09:40:45.504Z",
     "resultado": "GREEN",
@@ -441,68 +477,19 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · Nova Zelândia x Panamá @2 (tiro 2) · gatilho: time Panamá"
-   },
-   {
-    "quando": "2026-07-24T22:00:54.206Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "super · Buenos Aires x Santiago @1.85 (tiro 1) · gatilho: odd 1.87"
    }
   ],
   "consumidas": {
    "premier": 1784971964604,
-   "euro": 1784972445302
+   "euro": 1784972445302,
+   "copa": 1784973305907
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "10:46",
-     "jogo": "Áustria x Haiti",
-     "odd": 1.95
-    },
-    {
-     "h": "10:49",
-     "jogo": "Irã x Curação",
-     "odd": 2.1
-    },
-    {
-     "h": "10:52",
-     "jogo": "EUA x Suíça",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "coluna :49",
-   "alvo": {
-    "h": "10:52",
-    "jogo": "EUA x Suíça",
-    "odd": 1.98,
-    "unidades": 4,
-    "desde": 1784973123809
-   },
-   "iniciadoEm": 1784972446311,
-   "tiros": [
-    {
-     "h": "10:46",
-     "jogo": "Áustria x Haiti",
-     "odd": 1.95,
-     "unidades": 1
-    },
-    {
-     "h": "10:49",
-     "jogo": "Irã x Curação",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784972445302,
    "super": 1784934444611,
    "premier": 1784971964604,
-   "copa": 1784967885000
+   "copa": 1784973305907
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -514,7 +501,7 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 10.9
+   "2026-07-25": 11.8
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
