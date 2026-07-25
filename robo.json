@@ -455,8 +455,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "16:29",
@@ -476,13 +476,21 @@
    ],
    "gatilho": "seq RRRG",
    "alvo": {
-    "h": "16:29",
-    "jogo": "Inglaterra x Países Baixos",
-    "odd": 1.8,
-    "unidades": 1,
-    "desde": 1784993161302
+    "h": "16:32",
+    "jogo": "Alemanha x Polônia",
+    "odd": 2.07,
+    "unidades": 2,
+    "desde": 1784993505103
    },
-   "iniciadoEm": 1784993161302
+   "iniciadoEm": 1784993161302,
+   "tiros": [
+    {
+     "h": "16:29",
+     "jogo": "Inglaterra x Países Baixos",
+     "odd": 1.8,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784985609704,
@@ -504,8 +512,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRG",
-   "n": 22,
+   "chave": "RRRGG",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
