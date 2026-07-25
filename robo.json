@@ -291,8 +291,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "13:46",
@@ -312,13 +312,21 @@
    ],
    "gatilho": "time México",
    "alvo": {
-    "h": "13:46",
-    "jogo": "Alemanha x México",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1784983370508
+    "h": "13:49",
+    "jogo": "Croácia x Brasil",
+    "odd": 2.35,
+    "unidades": 2,
+    "desde": 1784983730211
    },
-   "iniciadoEm": 1784983370508
+   "iniciadoEm": 1784983370508,
+   "tiros": [
+    {
+     "h": "13:46",
+     "jogo": "Alemanha x México",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784979602900,
@@ -340,10 +348,10 @@
    "2026-07-25": 7.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":54",
-   "n": 13,
-   "start": 2
+   "tipo": "seq",
+   "chave": "GRGR",
+   "n": 12,
+   "start": 1
   },
   "_obs": {}
  },
