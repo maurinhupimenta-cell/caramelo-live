@@ -359,13 +359,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -40.9,
-  "ciclos": 388,
-  "greens": 268,
+  "saldo": -40,
+  "ciclos": 389,
+  "greens": 269,
   "redsCiclo": 45,
   "aborts": 0,
   "descartes": 75,
   "historico": [
+   {
+    "quando": "2026-07-25T15:14:51.701Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Brentford x City @1.93 (tiro 1) · gatilho: coluna :15"
+   },
    {
     "quando": "2026-07-25T14:10:13.501Z",
     "resultado": "GREEN",
@@ -479,50 +485,16 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "euro · Eslováquia x Turquia @2.1 (tiro 1) · gatilho: odd 2.1"
-   },
-   {
-    "quando": "2026-07-25T03:20:09.801Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "copa · Canadá x África do Sul @2.2 (tiro 1) · gatilho: odd 2.1"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:12",
-     "jogo": "Brentford x City",
-     "odd": 1.93
-    },
-    {
-     "h": "16:15",
-     "jogo": "Wolverhampton x Everton",
-     "odd": 1.83
-    },
-    {
-     "h": "15:42",
-     "jogo": "Leicester x Burnley",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "coluna :15",
-   "alvo": {
-    "h": "16:12",
-    "jogo": "Brentford x City",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1784991763309
-   },
-   "iniciadoEm": 1784991763309
+  "consumidas": {
+   "premier": 1784992491309
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784985609704,
    "super": 1784934444611,
-   "premier": 1784987267204,
+   "premier": 1784992491310,
    "copa": 1784988613298
   },
   "dias": {
@@ -535,13 +507,13 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 11.5
+   "2026-07-25": 12.4
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Austrália",
    "n": 13,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
