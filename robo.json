@@ -290,8 +290,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "20:37",
@@ -311,13 +311,21 @@
    ],
    "gatilho": "time México",
    "alvo": {
-    "h": "20:37",
-    "jogo": "Panamá x Cabo Verde",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1785007706308
+    "h": "20:40",
+    "jogo": "México x Haiti",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1785008426403
    },
-   "iniciadoEm": 1785007706308
+   "iniciadoEm": 1785007706308,
+   "tiros": [
+    {
+     "h": "20:37",
+     "jogo": "Panamá x Cabo Verde",
+     "odd": 2.3,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785003987002,
@@ -342,7 +350,7 @@
    "tipo": "time",
    "chave": "México",
    "n": 17,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
@@ -476,7 +484,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1785004525304,
    "copa": 1785005365812,
    "premier": 1785006889702
   },
