@@ -131,8 +131,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "04:58",
@@ -152,11 +152,11 @@
    ],
    "gatilho": "seq RRRRG",
    "alvo": {
-    "h": "05:01",
-    "jogo": "Suíça x Brasil",
-    "odd": 4.5,
-    "unidades": 2,
-    "desde": 1784952048903
+    "h": "05:04",
+    "jogo": "Tunísia x Coreia do Sul",
+    "odd": 6,
+    "unidades": 4,
+    "desde": 1784952249102
    },
    "iniciadoEm": 1784951708403,
    "tiros": [
@@ -165,6 +165,12 @@
      "jogo": "Alemanha x Gana",
      "odd": 4.5,
      "unidades": 1
+    },
+    {
+     "h": "05:01",
+     "jogo": "Suíça x Brasil",
+     "odd": 4.5,
+     "unidades": 2
     }
    ]
   },
@@ -198,13 +204,19 @@
   }
  },
  "o25": {
-  "saldo": -62.3,
-  "ciclos": 345,
-  "greens": 225,
+  "saldo": -60.7,
+  "ciclos": 346,
+  "greens": 226,
   "redsCiclo": 59,
   "aborts": 0,
   "descartes": 61,
   "historico": [
+   {
+    "quando": "2026-07-25T04:00:49.302Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "copa · Alemanha x Gana @2.3 (tiro 2) · gatilho: time Gana"
+   },
    {
     "quando": "2026-07-25T03:46:06.799Z",
     "resultado": "GREEN_OBS",
@@ -318,58 +330,45 @@
     "resultado": "GREEN",
     "unidades": 1.8,
     "detalhe": "euro · Suíça x Áustria @2.2 (tiro 3) · gatilho: odd 2.75"
-   },
-   {
-    "quando": "2026-07-24T17:17:31.702Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "copa · Uruguai x Turquia @2.25 (tiro 1) · gatilho: coluna :16"
    }
   ],
   "consumidas": {
-   "euro": 1784949948397
+   "euro": 1784949948397,
+   "copa": 1784952049102
   },
   "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "04:55",
-     "jogo": "Áustria x Uruguai",
-     "odd": 2.2
+     "h": "05:09",
+     "jogo": "West Ham x Leeds",
+     "odd": 2.87
     },
     {
-     "h": "04:58",
-     "jogo": "Alemanha x Gana",
-     "odd": 2.3
+     "h": "05:12",
+     "jogo": "Everton x Chelsea",
+     "odd": 2.15
     },
     {
-     "h": "05:01",
-     "jogo": "Suíça x Brasil",
-     "odd": 2.25
+     "h": "05:15",
+     "jogo": "Watford x Aston",
+     "odd": 2.4
     }
    ],
-   "gatilho": "time Gana",
+   "gatilho": "time Chelsea",
    "alvo": {
-    "h": "04:58",
-    "jogo": "Alemanha x Gana",
-    "odd": 2.3,
-    "unidades": 2,
-    "desde": 1784951911199
+    "h": "05:09",
+    "jogo": "West Ham x Leeds",
+    "odd": 2.87,
+    "unidades": 1,
+    "desde": 1784952050906
    },
-   "iniciadoEm": 1784951168209,
-   "tiros": [
-    {
-     "h": "04:55",
-     "jogo": "Áustria x Uruguai",
-     "odd": 2.2,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1784952050906
   },
   "cooldown": {
-   "copa": 1784930673801,
+   "copa": 1784952049102,
    "premier": 1784948016607,
    "euro": 1784949948397,
    "super": 1784933250210
@@ -385,13 +384,13 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 1.1
+   "2026-07-25": 2.7
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Chelsea",
-   "n": 10,
-   "start": 3
+   "n": 11,
+   "start": 2
   },
   "_obs": {}
  },
