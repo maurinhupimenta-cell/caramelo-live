@@ -294,7 +294,37 @@
    "premier": 1784952881306,
    "euro": 1784954131203
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:04",
+     "jogo": "Uruguai x RD Congo",
+     "odd": 2.15
+    },
+    {
+     "h": "06:07",
+     "jogo": "Irã x Portugal",
+     "odd": 2.4
+    },
+    {
+     "h": "06:10",
+     "jogo": "Colômbia x Marrocos",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "seq RRRR",
+   "alvo": {
+    "h": "06:04",
+    "jogo": "Uruguai x RD Congo",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1784955751607
+   },
+   "iniciadoEm": 1784955751607
+  },
   "cooldown": {
    "copa": 1784952049102,
    "premier": 1784952881306,
@@ -315,8 +345,8 @@
    "2026-07-25": 6.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Geórgia",
+   "tipo": "seq",
+   "chave": "RRRR",
    "n": 12,
    "start": 1
   },
