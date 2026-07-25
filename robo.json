@@ -160,13 +160,19 @@
   }
  },
  "o25": {
-  "saldo": -56,
-  "ciclos": 361,
-  "greens": 237,
+  "saldo": -54.2,
+  "ciclos": 362,
+  "greens": 238,
   "redsCiclo": 61,
   "aborts": 0,
   "descartes": 63,
   "historico": [
+   {
+    "quando": "2026-07-25T09:52:44.598Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "euro · Turquia x Escócia @2.4 (tiro 2) · gatilho: seq RRGG"
+   },
    {
     "quando": "2026-07-25T09:11:38.400Z",
     "resultado": "GREEN",
@@ -280,60 +286,17 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · Brighton x United @2.05 (tiro 1) · gatilho: time Chelsea"
-   },
-   {
-    "quando": "2026-07-25T02:41:52.506Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho time Watford) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "premier": 1784970698204
+   "premier": 1784970698204,
+   "euro": 1784973164305
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "10:47",
-     "jogo": "Romênia x Espanha",
-     "odd": 2.02
-    },
-    {
-     "h": "10:50",
-     "jogo": "Turquia x Escócia",
-     "odd": 2.4
-    },
-    {
-     "h": "10:53",
-     "jogo": "Suíça x Dinamarca",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "seq RRGG",
-   "alvo": {
-    "h": "10:50",
-    "jogo": "Turquia x Escócia",
-    "odd": 2.4,
-    "unidades": 2,
-    "desde": 1784973025107
-   },
-   "iniciadoEm": 1784972625398,
-   "tiros": [
-    {
-     "h": "10:47",
-     "jogo": "Romênia x Espanha",
-     "odd": 2.02,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784969384399,
    "premier": 1784970698204,
-   "euro": 1784968667709,
+   "euro": 1784973164305,
    "super": 1784962725800
   },
   "dias": {
@@ -347,7 +310,7 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 7.4
+   "2026-07-25": 9.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
