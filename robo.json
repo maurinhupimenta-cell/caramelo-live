@@ -294,8 +294,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "06:44",
@@ -315,13 +315,21 @@
    ],
    "gatilho": "odd 2.25",
    "alvo": {
-    "h": "06:44",
-    "jogo": "Eslovênia x Bélgica",
-    "odd": 2.45,
-    "unidades": 1,
-    "desde": 1784957731603
+    "h": "06:47",
+    "jogo": "Dinamarca x Romênia",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1784958405101
    },
-   "iniciadoEm": 1784957731603
+   "iniciadoEm": 1784957731603,
+   "tiros": [
+    {
+     "h": "06:44",
+     "jogo": "Eslovênia x Bélgica",
+     "odd": 2.45,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784956027502,
@@ -480,7 +488,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:44",
+     "jogo": "Eslovênia x Bélgica",
+     "odd": 2.1
+    },
+    {
+     "h": "06:47",
+     "jogo": "Dinamarca x Romênia",
+     "odd": 1.98
+    },
+    {
+     "h": "06:50",
+     "jogo": "Inglaterra x Sérvia",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "time Romênia",
+   "alvo": {
+    "h": "06:44",
+    "jogo": "Eslovênia x Bélgica",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1784958100398
+   },
+   "iniciadoEm": 1784958100398
+  },
   "cooldown": {
    "euro": 1784954494605,
    "super": 1784934444611,
@@ -500,9 +538,9 @@
    "2026-07-25": 3.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRG",
-   "n": 8,
+   "tipo": "time",
+   "chave": "Romênia",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
