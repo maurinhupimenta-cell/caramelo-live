@@ -161,12 +161,18 @@
  },
  "o25": {
   "saldo": -58.7,
-  "ciclos": 365,
+  "ciclos": 366,
   "greens": 240,
   "redsCiclo": 62,
   "aborts": 0,
-  "descartes": 63,
+  "descartes": 64,
   "historico": [
+   {
+    "quando": "2026-07-25T11:04:05.599Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time México) — liga REARMADA"
+   },
    {
     "quando": "2026-07-25T10:56:45.300Z",
     "resultado": "GREEN",
@@ -280,16 +286,9 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "premier · Everton x Chelsea @2.15 (tiro 2) · gatilho: time Chelsea"
-   },
-   {
-    "quando": "2026-07-25T04:00:49.302Z",
-    "resultado": "GREEN",
-    "unidades": 1.6,
-    "detalhe": "copa · Alemanha x Gana @2.3 (tiro 2) · gatilho: time Gana"
    }
   ],
   "consumidas": {
-   "copa": 1784973843802,
    "premier": 1784974668100,
    "euro": 1784977005099
   },
@@ -319,16 +318,27 @@
    "n": 11,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1784977445599,
+    "gatilho": "time México"
+   }
+  }
  },
  "ambas": {
-  "saldo": -38.9,
-  "ciclos": 381,
-  "greens": 263,
+  "saldo": -37.9,
+  "ciclos": 382,
+  "greens": 264,
   "redsCiclo": 44,
   "aborts": 0,
   "descartes": 74,
   "historico": [
+   {
+    "quando": "2026-07-25T11:04:03.903Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Cabo Verde x Panamá @2 (tiro 1) · gatilho: time Uzbequistão"
+   },
    {
     "quando": "2026-07-25T11:00:22.002Z",
     "resultado": "GREEN",
@@ -442,24 +452,19 @@
     "resultado": "GREEN",
     "unidades": 0.8,
     "detalhe": "premier · Burnley x Wolverhampton @1.8 (tiro 1) · gatilho: odd 1.8"
-   },
-   {
-    "quando": "2026-07-24T22:58:30.207Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :53) — liga REARMADA"
    }
   ],
   "consumidas": {
    "euro": 1784976224207,
-   "premier": 1784977221803
+   "premier": 1784977221803,
+   "copa": 1784977443706
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1784976224207,
    "super": 1784934444611,
    "premier": 1784977221803,
-   "copa": 1784973305907
+   "copa": 1784977443706
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -471,13 +476,13 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 13.5
+   "2026-07-25": 14.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Uzbequistão",
-   "n": 12,
-   "start": 2
+   "tipo": "odd",
+   "chave": "2.02",
+   "n": 10,
+   "start": 1
   },
   "_obs": {}
  }
