@@ -455,7 +455,37 @@
   "consumidas": {
    "euro": 1784963825703
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:22",
+     "jogo": "Jordânia x Equador",
+     "odd": 1.87
+    },
+    {
+     "h": "09:25",
+     "jogo": "Bélgica x Japão",
+     "odd": 2.07
+    },
+    {
+     "h": "09:28",
+     "jogo": "Croácia x Portugal",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "odd 2.07",
+   "alvo": {
+    "h": "09:22",
+    "jogo": "Jordânia x Equador",
+    "odd": 1.87,
+    "unidades": 1,
+    "desde": 1784967183502
+   },
+   "iniciadoEm": 1784967183502
+  },
   "cooldown": {
    "euro": 1784963825703,
    "super": 1784934444611,
@@ -475,10 +505,10 @@
    "2026-07-25": 6.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Romênia",
-   "n": 13,
-   "start": 2
+   "tipo": "odd",
+   "chave": "2.07",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  }
