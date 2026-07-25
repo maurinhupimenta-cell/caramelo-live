@@ -160,13 +160,19 @@
   }
  },
  "o25": {
-  "saldo": -58.8,
-  "ciclos": 359,
-  "greens": 235,
+  "saldo": -57.2,
+  "ciclos": 360,
+  "greens": 236,
   "redsCiclo": 61,
   "aborts": 0,
   "descartes": 63,
   "historico": [
+   {
+    "quando": "2026-07-25T08:49:44.600Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "copa · África do Sul x Bósnia e Herzegovina @2.3 (tiro 2) · gatilho: coluna :40"
+   },
    {
     "quando": "2026-07-25T08:37:47.906Z",
     "resultado": "GREEN",
@@ -280,59 +286,16 @@
     "resultado": "GREEN",
     "unidades": 2,
     "detalhe": "euro · República Tcheca x Eslovênia @3 (tiro 1) · gatilho: time França"
-   },
-   {
-    "quando": "2026-07-25T01:18:14.102Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: placar goleada (3+)"
    }
   ],
   "consumidas": {
    "premier": 1784966151508,
-   "euro": 1784968667709
+   "euro": 1784968667709,
+   "copa": 1784969384399
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "09:40",
-     "jogo": "Marrocos x Jordânia",
-     "odd": 2.25
-    },
-    {
-     "h": "09:43",
-     "jogo": "África do Sul x Bósnia e Herzegovina",
-     "odd": 2.3
-    },
-    {
-     "h": "09:46",
-     "jogo": "Irã x Equador",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "coluna :40",
-   "alvo": {
-    "h": "09:43",
-    "jogo": "África do Sul x Bósnia e Herzegovina",
-    "odd": 2.3,
-    "unidades": 2,
-    "desde": 1784969125198
-   },
-   "iniciadoEm": 1784968669506,
-   "tiros": [
-    {
-     "h": "09:40",
-     "jogo": "Marrocos x Jordânia",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784964584104,
+   "copa": 1784969384399,
    "premier": 1784966151508,
    "euro": 1784968667709,
    "super": 1784962725800
@@ -348,7 +311,7 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 4.6
+   "2026-07-25": 6.2
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
