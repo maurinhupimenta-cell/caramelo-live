@@ -160,13 +160,19 @@
   }
  },
  "o25": {
-  "saldo": -51.5,
-  "ciclos": 383,
-  "greens": 251,
+  "saldo": -50.1,
+  "ciclos": 384,
+  "greens": 252,
   "redsCiclo": 64,
   "aborts": 0,
   "descartes": 68,
   "historico": [
+   {
+    "quando": "2026-07-25T17:14:26.804Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "euro · Inglaterra x Croácia @2.1 (tiro 3) · gatilho: seq RRGG"
+   },
    {
     "quando": "2026-07-25T16:59:45.310Z",
     "resultado": "GREEN",
@@ -280,67 +286,18 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "euro · Espanha x Escócia @2.1 (tiro 1) · gatilho: coluna :56"
-   },
-   {
-    "quando": "2026-07-25T10:17:48.300Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "premier · Chelsea x Norwich @2.2 (tiro 2) · gatilho: time Chelsea"
    }
   ],
   "consumidas": {
    "copa": 1784996721510,
-   "premier": 1784998785207
+   "premier": 1784998785207,
+   "euro": 1784999666598
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "18:05",
-     "jogo": "Albânia x Ucrânia",
-     "odd": 2.62
-    },
-    {
-     "h": "18:08",
-     "jogo": "Romênia x Geórgia",
-     "odd": 2.25
-    },
-    {
-     "h": "18:11",
-     "jogo": "Inglaterra x Croácia",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "seq RRGG",
-   "alvo": {
-    "h": "18:11",
-    "jogo": "Inglaterra x Croácia",
-    "odd": 2.1,
-    "unidades": 4,
-    "desde": 1784999453612
-   },
-   "iniciadoEm": 1784998953106,
-   "tiros": [
-    {
-     "h": "18:05",
-     "jogo": "Albânia x Ucrânia",
-     "odd": 2.62,
-     "unidades": 1
-    },
-    {
-     "h": "18:08",
-     "jogo": "Romênia x Geórgia",
-     "odd": 2.25,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784996721510,
    "premier": 1784998785207,
-   "euro": 1784994962497,
+   "euro": 1784999666598,
    "super": 1784962725800
   },
   "dias": {
@@ -354,7 +311,7 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 11.9
+   "2026-07-25": 13.3
   },
   "_gatilhoAtual": {
    "tipo": "seq",
