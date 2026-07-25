@@ -291,7 +291,37 @@
   "consumidas": {
    "copa": 1784992732306
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:36",
+     "jogo": "Tottenham x Burnley",
+     "odd": 2.35
+    },
+    {
+     "h": "16:39",
+     "jogo": "Newcastle x Islington",
+     "odd": 2.07
+    },
+    {
+     "h": "16:42",
+     "jogo": "Leeds x Brighton",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "odd 2.35",
+   "alvo": {
+    "h": "16:36",
+    "jogo": "Tottenham x Burnley",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1784993640205
+   },
+   "iniciadoEm": 1784993640205
+  },
   "cooldown": {
    "copa": 1784992732306,
    "premier": 1784989982602,
@@ -312,21 +342,27 @@
    "2026-07-25": 5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRGG",
-   "n": 12,
+   "tipo": "odd",
+   "chave": "2.35",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -38.8,
-  "ciclos": 390,
-  "greens": 270,
+  "saldo": -37.7,
+  "ciclos": 391,
+  "greens": 271,
   "redsCiclo": 45,
   "aborts": 0,
   "descartes": 75,
   "historico": [
+   {
+    "quando": "2026-07-25T15:36:00.501Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Alemanha x Polônia @2.07 (tiro 2) · gatilho: seq RRRG"
+   },
    {
     "quando": "2026-07-25T15:18:52.707Z",
     "resultado": "GREEN",
@@ -440,59 +476,16 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "euro · Inglaterra x Sérvia @2.02 (tiro 3) · gatilho: time Romênia"
-   },
-   {
-    "quando": "2026-07-25T04:41:34.805Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "euro · Croácia x Áustria @1.98 (tiro 3) · gatilho: placar acima de 1-0 (2-1)"
    }
   ],
   "consumidas": {
    "premier": 1784992491309,
-   "copa": 1784992732600
+   "copa": 1784992732600,
+   "euro": 1784993760305
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "16:29",
-     "jogo": "Inglaterra x Países Baixos",
-     "odd": 1.8
-    },
-    {
-     "h": "16:32",
-     "jogo": "Alemanha x Polônia",
-     "odd": 2.07
-    },
-    {
-     "h": "16:35",
-     "jogo": "Croácia x Ucrânia",
-     "odd": 2
-    }
-   ],
-   "gatilho": "seq RRRG",
-   "alvo": {
-    "h": "16:32",
-    "jogo": "Alemanha x Polônia",
-    "odd": 2.07,
-    "unidades": 2,
-    "desde": 1784993505103
-   },
-   "iniciadoEm": 1784993161302,
-   "tiros": [
-    {
-     "h": "16:29",
-     "jogo": "Inglaterra x Países Baixos",
-     "odd": 1.8,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784985609704,
+   "euro": 1784993760305,
    "super": 1784934444611,
    "premier": 1784992491310,
    "copa": 1784992732600
@@ -507,7 +500,7 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 13.6
+   "2026-07-25": 14.7
   },
   "_gatilhoAtual": {
    "tipo": "seq",
