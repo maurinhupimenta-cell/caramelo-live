@@ -160,13 +160,19 @@
   }
  },
  "o25": {
-  "saldo": -63.1,
-  "ciclos": 377,
-  "greens": 245,
+  "saldo": -61.6,
+  "ciclos": 378,
+  "greens": 246,
   "redsCiclo": 64,
   "aborts": 0,
   "descartes": 68,
   "historico": [
+   {
+    "quando": "2026-07-25T14:33:02.799Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "premier · Norwich x West Ham @2.45 (tiro 1) · gatilho: seq GRGRR"
+   },
    {
     "quando": "2026-07-25T14:17:12.501Z",
     "resultado": "GREEN",
@@ -280,52 +286,17 @@
     "resultado": "GREEN",
     "unidades": 2,
     "detalhe": "euro · Eslováquia x Polônia @2.5 (tiro 2) · gatilho: seq RRGG"
-   },
-   {
-    "quando": "2026-07-25T07:55:51.803Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "premier · Leicester x City @2.15 (tiro 1) · gatilho: odd 2.45"
    }
   ],
   "consumidas": {
    "copa": 1784988612702,
-   "euro": 1784989032299
+   "euro": 1784989032299,
+   "premier": 1784989982602
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:30",
-     "jogo": "Norwich x West Ham",
-     "odd": 2.45
-    },
-    {
-     "h": "15:33",
-     "jogo": "Chelsea x Watford",
-     "odd": 2.25
-    },
-    {
-     "h": "15:36",
-     "jogo": "Wolverhampton x Brighton",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "seq GRGRR",
-   "alvo": {
-    "h": "15:30",
-    "jogo": "Norwich x West Ham",
-    "odd": 2.45,
-    "unidades": 1,
-    "desde": 1784989601007
-   },
-   "iniciadoEm": 1784989601007
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784988612702,
-   "premier": 1784985386099,
+   "premier": 1784989982602,
    "euro": 1784989032299,
    "super": 1784962725800
   },
@@ -340,7 +311,7 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 0.3
+   "2026-07-25": 1.8
   },
   "_gatilhoAtual": {
    "tipo": "seq",
