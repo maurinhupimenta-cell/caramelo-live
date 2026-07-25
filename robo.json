@@ -160,13 +160,19 @@
   }
  },
  "o25": {
-  "saldo": -64.9,
-  "ciclos": 376,
-  "greens": 244,
+  "saldo": -63.1,
+  "ciclos": 377,
+  "greens": 245,
   "redsCiclo": 64,
   "aborts": 0,
   "descartes": 68,
   "historico": [
+   {
+    "quando": "2026-07-25T14:17:12.501Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "euro · Albânia x Dinamarca @2.75 (tiro 1) · gatilho: seq RRGG"
+   },
    {
     "quando": "2026-07-25T14:11:12.511Z",
     "resultado": "GREEN_OBS",
@@ -280,52 +286,17 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "premier · Leicester x City @2.15 (tiro 1) · gatilho: odd 2.45"
-   },
-   {
-    "quando": "2026-07-25T07:45:43.909Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho odd 2.45) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "copa": 1784988612702
+   "copa": 1784988612702,
+   "euro": 1784989032299
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:14",
-     "jogo": "Albânia x Dinamarca",
-     "odd": 2.75
-    },
-    {
-     "h": "15:17",
-     "jogo": "Portugal x Países Baixos",
-     "odd": 2.07
-    },
-    {
-     "h": "15:20",
-     "jogo": "Suíça x Inglaterra",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "seq RRGG",
-   "alvo": {
-    "h": "15:14",
-    "jogo": "Albânia x Dinamarca",
-    "odd": 2.75,
-    "unidades": 1,
-    "desde": 1784988674398
-   },
-   "iniciadoEm": 1784988674398
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784988612702,
    "premier": 1784985386099,
-   "euro": 1784984690809,
+   "euro": 1784989032299,
    "super": 1784962725800
   },
   "dias": {
@@ -339,7 +310,7 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": -1.5
+   "2026-07-25": 0.3
   },
   "_gatilhoAtual": {
    "tipo": "seq",
