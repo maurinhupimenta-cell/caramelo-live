@@ -481,8 +481,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "13:55",
@@ -502,13 +502,21 @@
    ],
    "gatilho": "time Austrália",
    "alvo": {
-    "h": "13:55",
-    "jogo": "Colômbia x Equador",
-    "odd": 1.87,
-    "unidades": 1,
-    "desde": 1784983570004
+    "h": "13:58",
+    "jogo": "Austrália x Panamá",
+    "odd": 2.02,
+    "unidades": 2,
+    "desde": 1784984310311
    },
-   "iniciadoEm": 1784983570004
+   "iniciadoEm": 1784983570004,
+   "tiros": [
+    {
+     "h": "13:55",
+     "jogo": "Colômbia x Equador",
+     "odd": 1.87,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784980163597,
@@ -530,9 +538,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Haiti",
-   "n": 10,
-   "start": 2
+   "chave": "Iraque",
+   "n": 12,
+   "start": 3
   },
   "_obs": {}
  }
