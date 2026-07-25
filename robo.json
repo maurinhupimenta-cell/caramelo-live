@@ -160,13 +160,19 @@
   }
  },
  "o25": {
-  "saldo": -58.4,
-  "ciclos": 379,
-  "greens": 247,
+  "saldo": -57,
+  "ciclos": 380,
+  "greens": 248,
   "redsCiclo": 64,
   "aborts": 0,
   "descartes": 68,
   "historico": [
+   {
+    "quando": "2026-07-25T15:38:43.000Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "premier · Tottenham x Burnley @2.35 (tiro 1) · gatilho: odd 2.35"
+   },
    {
     "quando": "2026-07-25T15:18:52.504Z",
     "resultado": "GREEN",
@@ -280,51 +286,16 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "premier · Burnley x Leicester @2.2 (tiro 1) · gatilho: coluna :12"
-   },
-   {
-    "quando": "2026-07-25T08:49:44.600Z",
-    "resultado": "GREEN",
-    "unidades": 1.6,
-    "detalhe": "copa · África do Sul x Bósnia e Herzegovina @2.3 (tiro 2) · gatilho: coluna :40"
    }
   ],
   "consumidas": {
-   "copa": 1784992732306
+   "copa": 1784992732306,
+   "premier": 1784993922801
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:36",
-     "jogo": "Tottenham x Burnley",
-     "odd": 2.35
-    },
-    {
-     "h": "16:39",
-     "jogo": "Newcastle x Islington",
-     "odd": 2.07
-    },
-    {
-     "h": "16:42",
-     "jogo": "Leeds x Brighton",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "odd 2.35",
-   "alvo": {
-    "h": "16:36",
-    "jogo": "Tottenham x Burnley",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1784993640205
-   },
-   "iniciadoEm": 1784993640205
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784992732306,
-   "premier": 1784989982602,
+   "premier": 1784993922801,
    "euro": 1784989032299,
    "super": 1784962725800
   },
@@ -339,7 +310,7 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 5
+   "2026-07-25": 6.4
   },
   "_gatilhoAtual": {
    "tipo": "odd",
