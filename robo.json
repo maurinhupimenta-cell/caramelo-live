@@ -157,13 +157,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -52.4,
-  "ciclos": 389,
-  "greens": 255,
+  "saldo": -51.1,
+  "ciclos": 390,
+  "greens": 256,
   "redsCiclo": 65,
   "aborts": 0,
   "descartes": 69,
   "historico": [
+   {
+    "quando": "2026-07-25T19:43:24.800Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "copa · México x Haiti @2.15 (tiro 2) · gatilho: time México"
+   },
    {
     "quando": "2026-07-25T19:17:52.006Z",
     "resultado": "GREEN",
@@ -277,58 +283,15 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time México"
-   },
-   {
-    "quando": "2026-07-25T11:40:03.100Z",
-    "resultado": "GREEN",
-    "unidades": 1.7,
-    "detalhe": "copa · Egito x Senegal @2.35 (tiro 2) · gatilho: coluna :37"
    }
   ],
   "consumidas": {
-   "premier": 1785007071800
+   "premier": 1785007071800,
+   "copa": 1785008604602
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "20:37",
-     "jogo": "Panamá x Cabo Verde",
-     "odd": 2.3
-    },
-    {
-     "h": "20:40",
-     "jogo": "México x Haiti",
-     "odd": 2.15
-    },
-    {
-     "h": "20:43",
-     "jogo": "Egito x Cabo Verde",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "time México",
-   "alvo": {
-    "h": "20:40",
-    "jogo": "México x Haiti",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1785008426403
-   },
-   "iniciadoEm": 1785007706308,
-   "tiros": [
-    {
-     "h": "20:37",
-     "jogo": "Panamá x Cabo Verde",
-     "odd": 2.3,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785003987002,
+   "copa": 1785008604602,
    "premier": 1785007071800,
    "euro": 1785004525101,
    "super": 1784962725800
@@ -344,13 +307,13 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 11
+   "2026-07-25": 12.3
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "México",
    "n": 17,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
