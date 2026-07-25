@@ -160,13 +160,19 @@
   }
  },
  "o25": {
-  "saldo": -55.7,
-  "ciclos": 370,
+  "saldo": -62.7,
+  "ciclos": 371,
   "greens": 242,
-  "redsCiclo": 62,
+  "redsCiclo": 63,
   "aborts": 0,
   "descartes": 66,
   "historico": [
+   {
+    "quando": "2026-07-25T12:55:11.403Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time México"
+   },
    {
     "quando": "2026-07-25T11:40:03.100Z",
     "resultado": "GREEN",
@@ -280,62 +286,44 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: time Watford"
-   },
-   {
-    "quando": "2026-07-25T05:53:05.599Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: odd 2.25"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "copa": 1784984111202
+  },
   "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "13:46",
-     "jogo": "Alemanha x México",
-     "odd": 2.15
+     "h": "13:56",
+     "jogo": "Dinamarca x Sérvia",
+     "odd": 2.6
     },
     {
-     "h": "13:49",
-     "jogo": "Croácia x Brasil",
-     "odd": 2.35
+     "h": "13:59",
+     "jogo": "Albânia x Turquia",
+     "odd": 2.87
     },
     {
-     "h": "13:52",
-     "jogo": "Curação x Marrocos",
-     "odd": 2.2
+     "h": "14:02",
+     "jogo": "Sérvia x Geórgia",
+     "odd": 2.6
     }
    ],
-   "gatilho": "time México",
+   "gatilho": "coluna :56",
    "alvo": {
-    "h": "13:52",
-    "jogo": "Curação x Marrocos",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1784983909805
+    "h": "13:56",
+    "jogo": "Dinamarca x Sérvia",
+    "odd": 2.6,
+    "unidades": 1,
+    "desde": 1784984113311
    },
-   "iniciadoEm": 1784983370508,
-   "tiros": [
-    {
-     "h": "13:46",
-     "jogo": "Alemanha x México",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "13:49",
-     "jogo": "Croácia x Brasil",
-     "odd": 2.35,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1784984113311
   },
   "cooldown": {
-   "copa": 1784979602900,
+   "copa": 1784984111202,
    "premier": 1784978390905,
    "euro": 1784977005099,
    "super": 1784962725800
@@ -351,12 +339,12 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 7.7
+   "2026-07-25": 0.7
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRGRR",
-   "n": 9,
+   "chave": "RGRRR",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
@@ -542,8 +530,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Austrália",
-   "n": 9,
+   "chave": "Haiti",
+   "n": 10,
    "start": 2
   },
   "_obs": {}
