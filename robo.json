@@ -289,7 +289,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1784956027502,
    "premier": 1784957569603,
    "euro": 1784958785309
   },
@@ -322,13 +321,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -49.2,
-  "ciclos": 371,
-  "greens": 253,
+  "saldo": -48.1,
+  "ciclos": 372,
+  "greens": 254,
   "redsCiclo": 44,
   "aborts": 0,
   "descartes": 74,
   "historico": [
+   {
+    "quando": "2026-07-25T05:53:05.802Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Inglaterra x Sérvia @2.02 (tiro 3) · gatilho: time Romênia"
+   },
    {
     "quando": "2026-07-25T04:41:34.805Z",
     "resultado": "GREEN",
@@ -442,62 +447,14 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "copa · Coreia do Sul x Bélgica @2.1 (tiro 1) · gatilho: coluna :13"
-   },
-   {
-    "quando": "2026-07-24T18:11:01.801Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "euro · Portugal x Eslovênia @2.25 (tiro 2) · gatilho: coluna :08"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "06:44",
-     "jogo": "Eslovênia x Bélgica",
-     "odd": 2.1
-    },
-    {
-     "h": "06:47",
-     "jogo": "Dinamarca x Romênia",
-     "odd": 1.98
-    },
-    {
-     "h": "06:50",
-     "jogo": "Inglaterra x Sérvia",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "time Romênia",
-   "alvo": {
-    "h": "06:50",
-    "jogo": "Inglaterra x Sérvia",
-    "odd": 2.02,
-    "unidades": 4,
-    "desde": 1784958605204
-   },
-   "iniciadoEm": 1784958100398,
-   "tiros": [
-    {
-     "h": "06:44",
-     "jogo": "Eslovênia x Bélgica",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "06:47",
-     "jogo": "Dinamarca x Romênia",
-     "odd": 1.98,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "euro": 1784958785602
   },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784954494605,
+   "euro": 1784958785602,
    "super": 1784934444611,
    "premier": 1784946760500,
    "copa": 1784949609603
@@ -512,12 +469,12 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 3.2
+   "2026-07-25": 4.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Romênia",
-   "n": 9,
+   "tipo": "seq",
+   "chave": "RRRG",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
