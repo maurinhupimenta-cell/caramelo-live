@@ -289,7 +289,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:46",
+     "jogo": "Alemanha x México",
+     "odd": 2.15
+    },
+    {
+     "h": "13:49",
+     "jogo": "Croácia x Brasil",
+     "odd": 2.35
+    },
+    {
+     "h": "13:52",
+     "jogo": "Curação x Marrocos",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time México",
+   "alvo": {
+    "h": "13:46",
+    "jogo": "Alemanha x México",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1784983370508
+   },
+   "iniciadoEm": 1784983370508
+  },
   "cooldown": {
    "copa": 1784979602900,
    "premier": 1784978390905,
@@ -311,9 +341,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":43",
-   "n": 12,
-   "start": 1
+   "chave": ":54",
+   "n": 13,
+   "start": 2
   },
   "_obs": {}
  },
@@ -449,7 +479,37 @@
   "consumidas": {
    "euro": 1784980163597
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:55",
+     "jogo": "Colômbia x Equador",
+     "odd": 1.87
+    },
+    {
+     "h": "13:58",
+     "jogo": "Austrália x Panamá",
+     "odd": 2.02
+    },
+    {
+     "h": "14:01",
+     "jogo": "Japão x Arábia Saudita",
+     "odd": 2
+    }
+   ],
+   "gatilho": "time Austrália",
+   "alvo": {
+    "h": "13:55",
+    "jogo": "Colômbia x Equador",
+    "odd": 1.87,
+    "unidades": 1,
+    "desde": 1784983570004
+   },
+   "iniciadoEm": 1784983570004
+  },
   "cooldown": {
    "euro": 1784980163597,
    "super": 1784934444611,
@@ -469,10 +529,10 @@
    "2026-07-25": 7.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":23",
-   "n": 12,
-   "start": 1
+   "tipo": "time",
+   "chave": "Austrália",
+   "n": 9,
+   "start": 3
   },
   "_obs": {}
  }
