@@ -346,18 +346,24 @@
    "tipo": "coluna",
    "chave": ":54",
    "n": 17,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -35.6,
-  "ciclos": 393,
-  "greens": 273,
+  "saldo": -34.6,
+  "ciclos": 394,
+  "greens": 274,
   "redsCiclo": 45,
   "aborts": 0,
   "descartes": 75,
   "historico": [
+   {
+    "quando": "2026-07-25T16:46:24.998Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Aston x Islington @2 (tiro 1) · gatilho: coluna :42"
+   },
    {
     "quando": "2026-07-25T16:41:27.507Z",
     "resultado": "GREEN",
@@ -471,53 +477,18 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "copa · Jordânia x Equador @1.87 (tiro 1) · gatilho: odd 2.07"
-   },
-   {
-    "quando": "2026-07-25T07:17:05.903Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · Suíça x Turquia @2.02 (tiro 1) · gatilho: time Espanha"
    }
   ],
   "consumidas": {
    "copa": 1784996721798,
-   "euro": 1784997687306
+   "euro": 1784997687306,
+   "premier": 1784997984801
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:42",
-     "jogo": "Aston x Islington",
-     "odd": 2
-    },
-    {
-     "h": "17:45",
-     "jogo": "Norwich x Southampton",
-     "odd": 2
-    },
-    {
-     "h": "17:48",
-     "jogo": "Wolverhampton x Palace",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "coluna :42",
-   "alvo": {
-    "h": "17:42",
-    "jogo": "Aston x Islington",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1784997689406
-   },
-   "iniciadoEm": 1784997689406
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784997687306,
    "super": 1784934444611,
-   "premier": 1784992491310,
+   "premier": 1784997984801,
    "copa": 1784996721798
   },
   "dias": {
@@ -530,13 +501,13 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 16.8
+   "2026-07-25": 17.8
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":42",
+   "chave": ":54",
    "n": 17,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  }
