@@ -160,13 +160,19 @@
   }
  },
  "o25": {
-  "saldo": -68.8,
-  "ciclos": 352,
-  "greens": 230,
+  "saldo": -66.6,
+  "ciclos": 353,
+  "greens": 231,
   "redsCiclo": 61,
   "aborts": 0,
   "descartes": 61,
   "historico": [
+   {
+    "quando": "2026-07-25T06:58:45.905Z",
+    "resultado": "GREEN",
+    "unidades": 2.2,
+    "detalhe": "super · Avellaneda x Bogota @2.6 (tiro 2) · gatilho: placar 0-0"
+   },
    {
     "quando": "2026-07-25T06:45:29.405Z",
     "resultado": "RED_CICLO",
@@ -280,61 +286,18 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Croácia"
-   },
-   {
-    "quando": "2026-07-24T21:52:14.197Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho seq RRRRR) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "premier": 1784961929209
+   "premier": 1784961929209,
+   "super": 1784962725800
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "07:52",
-     "jogo": "Buenos Aires x Quito",
-     "odd": 2.15
-    },
-    {
-     "h": "07:55",
-     "jogo": "Avellaneda x Bogota",
-     "odd": 2.6
-    },
-    {
-     "h": "07:58",
-     "jogo": "La Boca x Medellin",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "placar 0-0",
-   "alvo": {
-    "h": "07:55",
-    "jogo": "Avellaneda x Bogota",
-    "odd": 2.6,
-    "unidades": 2,
-    "desde": 1784962545910
-   },
-   "iniciadoEm": 1784962185503,
-   "tiros": [
-    {
-     "h": "07:52",
-     "jogo": "Buenos Aires x Quito",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784956027502,
    "premier": 1784961929209,
    "euro": 1784958785309,
-   "super": 1784933250210
+   "super": 1784962725800
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -347,13 +310,13 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": -5.4
+   "2026-07-25": -3.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.45",
    "n": 11,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -537,9 +500,9 @@
    "2026-07-25": 4.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Romênia",
-   "n": 12,
+   "tipo": "odd",
+   "chave": "1.93",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
