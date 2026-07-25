@@ -160,13 +160,19 @@
   }
  },
  "o25": {
-  "saldo": -61.8,
-  "ciclos": 351,
+  "saldo": -68.8,
+  "ciclos": 352,
   "greens": 230,
-  "redsCiclo": 60,
+  "redsCiclo": 61,
   "aborts": 0,
   "descartes": 61,
   "historico": [
+   {
+    "quando": "2026-07-25T06:45:29.405Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: time Watford"
+   },
    {
     "quando": "2026-07-25T05:53:05.599Z",
     "resultado": "RED_CICLO",
@@ -280,65 +286,16 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRRRR) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-24T19:48:39.005Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "copa · Argélia x Espanha @2.2 (tiro 1) · gatilho: time Coreia do Sul"
    }
   ],
   "consumidas": {
-   "euro": 1784958785309
+   "euro": 1784958785309,
+   "premier": 1784961929209
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "07:36",
-     "jogo": "Newcastle x Watford",
-     "odd": 2.15
-    },
-    {
-     "h": "07:39",
-     "jogo": "Islington x Burnley",
-     "odd": 2.15
-    },
-    {
-     "h": "07:42",
-     "jogo": "Southampton x Everton",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "time Watford",
-   "alvo": {
-    "h": "07:42",
-    "jogo": "Southampton x Everton",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1784961715810
-   },
-   "iniciadoEm": 1784961170011,
-   "tiros": [
-    {
-     "h": "07:36",
-     "jogo": "Newcastle x Watford",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "07:39",
-     "jogo": "Islington x Burnley",
-     "odd": 2.15,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784956027502,
-   "premier": 1784957569603,
+   "premier": 1784961929209,
    "euro": 1784958785309,
    "super": 1784933250210
   },
@@ -353,7 +310,7 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 1.6
+   "2026-07-25": -5.4
   },
   "_gatilhoAtual": {
    "tipo": "time",
