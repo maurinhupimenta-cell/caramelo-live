@@ -131,8 +131,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "04:58",
@@ -152,13 +152,21 @@
    ],
    "gatilho": "seq RRRRG",
    "alvo": {
-    "h": "04:58",
-    "jogo": "Alemanha x Gana",
+    "h": "05:01",
+    "jogo": "Suíça x Brasil",
     "odd": 4.5,
-    "unidades": 1,
-    "desde": 1784951708403
+    "unidades": 2,
+    "desde": 1784952048903
    },
-   "iniciadoEm": 1784951708403
+   "iniciadoEm": 1784951708403,
+   "tiros": [
+    {
+     "h": "04:58",
+     "jogo": "Alemanha x Gana",
+     "odd": 4.5,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784670696456,
@@ -381,9 +389,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Watford",
-   "n": 9,
-   "start": 1
+   "chave": "Chelsea",
+   "n": 10,
+   "start": 3
   },
   "_obs": {}
  },
