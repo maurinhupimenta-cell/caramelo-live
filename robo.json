@@ -292,10 +292,39 @@
    }
   ],
   "consumidas": {
-   "euro": 1784941557702,
    "premier": 1784942293907
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:11",
+     "jogo": "República Tcheca x Eslovênia",
+     "odd": 3
+    },
+    {
+     "h": "03:14",
+     "jogo": "França x Itália",
+     "odd": 2.15
+    },
+    {
+     "h": "03:17",
+     "jogo": "Eslovênia x Albânia",
+     "odd": 3.1
+    }
+   ],
+   "gatilho": "time França",
+   "alvo": {
+    "h": "03:11",
+    "jogo": "República Tcheca x Eslovênia",
+    "odd": 3,
+    "unidades": 1,
+    "desde": 1784945167998
+   },
+   "iniciadoEm": 1784945167998
+  },
   "cooldown": {
    "copa": 1784930673801,
    "premier": 1784942293907,
@@ -316,9 +345,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Tottenham",
+   "chave": "França",
    "n": 8,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  },
@@ -452,7 +481,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1784941557901,
    "premier": 1784941906399
   },
   "ciclo": null,
