@@ -451,10 +451,39 @@
    }
   ],
   "consumidas": {
-   "euro": 1784993760305,
    "copa": 1784996721798
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:38",
+     "jogo": "Portugal x Geórgia",
+     "odd": 2.1
+    },
+    {
+     "h": "17:41",
+     "jogo": "Escócia x Suíça",
+     "odd": 1.87
+    },
+    {
+     "h": "17:44",
+     "jogo": "República Tcheca x Itália",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "seq RRRG",
+   "alvo": {
+    "h": "17:38",
+    "jogo": "Portugal x Geórgia",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1784997445202
+   },
+   "iniciadoEm": 1784997445202
+  },
   "cooldown": {
    "euro": 1784993760305,
    "super": 1784934444611,
@@ -474,10 +503,10 @@
    "2026-07-25": 15.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":37",
-   "n": 17,
-   "start": 3
+   "tipo": "seq",
+   "chave": "RRRG",
+   "n": 24,
+   "start": 1
   },
   "_obs": {}
  }
