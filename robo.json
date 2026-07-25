@@ -292,10 +292,39 @@
    }
   ],
   "consumidas": {
-   "premier": 1784948016607,
    "euro": 1784949948397
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:55",
+     "jogo": "Áustria x Uruguai",
+     "odd": 2.2
+    },
+    {
+     "h": "04:58",
+     "jogo": "Alemanha x Gana",
+     "odd": 2.3
+    },
+    {
+     "h": "05:01",
+     "jogo": "Suíça x Brasil",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "time Gana",
+   "alvo": {
+    "h": "04:55",
+    "jogo": "Áustria x Uruguai",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1784951168209
+   },
+   "iniciadoEm": 1784951168209
+  },
   "cooldown": {
    "copa": 1784930673801,
    "premier": 1784948016607,
@@ -316,17 +345,12 @@
    "2026-07-25": 1.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRR",
+   "tipo": "time",
+   "chave": "Gana",
    "n": 8,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1784950089099,
-    "gatilho": "seq RRRR"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -50.1,
