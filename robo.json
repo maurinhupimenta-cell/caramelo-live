@@ -453,8 +453,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "22:49",
@@ -474,13 +474,21 @@
    ],
    "gatilho": "coluna :52",
    "alvo": {
-    "h": "22:49",
-    "jogo": "Porto Alegre x Penarol",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1785016200104
+    "h": "22:52",
+    "jogo": "Montevideo x Santiago",
+    "odd": 1.8,
+    "unidades": 2,
+    "desde": 1785016322305
    },
-   "iniciadoEm": 1785016200104
+   "iniciadoEm": 1785016200104,
+   "tiros": [
+    {
+     "h": "22:49",
+     "jogo": "Porto Alegre x Penarol",
+     "odd": 2.35,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785009385398,
@@ -502,9 +510,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":52",
-   "n": 18,
-   "start": 1
+   "chave": ":04",
+   "n": 19,
+   "start": 3
   },
   "_obs": {}
  }
