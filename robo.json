@@ -451,10 +451,39 @@
    }
   ],
   "consumidas": {
-   "euro": 1784972445302,
    "copa": 1784973305907
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:41",
+     "jogo": "Países Baixos x Romênia",
+     "odd": 1.83
+    },
+    {
+     "h": "11:44",
+     "jogo": "Portugal x Polônia",
+     "odd": 2.1
+    },
+    {
+     "h": "11:47",
+     "jogo": "Dinamarca x Escócia",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "seq GRRG",
+   "alvo": {
+    "h": "11:41",
+    "jogo": "Países Baixos x Romênia",
+    "odd": 1.83,
+    "unidades": 1,
+    "desde": 1784976045801
+   },
+   "iniciadoEm": 1784976045801
+  },
   "cooldown": {
    "euro": 1784972445302,
    "super": 1784934444611,
@@ -474,8 +503,8 @@
    "2026-07-25": 11.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":49",
+   "tipo": "seq",
+   "chave": "GRRG",
    "n": 10,
    "start": 1
   },
