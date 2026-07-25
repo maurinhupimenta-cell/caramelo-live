@@ -289,10 +289,39 @@
    }
   ],
   "consumidas": {
-   "premier": 1784957569603,
    "euro": 1784958785309
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:36",
+     "jogo": "Newcastle x Watford",
+     "odd": 2.15
+    },
+    {
+     "h": "07:39",
+     "jogo": "Islington x Burnley",
+     "odd": 2.15
+    },
+    {
+     "h": "07:42",
+     "jogo": "Southampton x Everton",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "time Watford",
+   "alvo": {
+    "h": "07:36",
+    "jogo": "Newcastle x Watford",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1784961170011
+   },
+   "iniciadoEm": 1784961170011
+  },
   "cooldown": {
    "copa": 1784956027502,
    "premier": 1784957569603,
@@ -313,9 +342,9 @@
    "2026-07-25": 1.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRR",
-   "n": 14,
+   "tipo": "time",
+   "chave": "Watford",
+   "n": 16,
    "start": 1
   },
   "_obs": {}
