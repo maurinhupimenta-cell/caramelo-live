@@ -458,7 +458,37 @@
   "consumidas": {
    "euro": 1784946189202
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:30",
+     "jogo": "Wolverhampton x Burnley",
+     "odd": 1.85
+    },
+    {
+     "h": "03:33",
+     "jogo": "Liverpool x West Ham",
+     "odd": 2.15
+    },
+    {
+     "h": "03:36",
+     "jogo": "Everton x Aston",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "placar goleada (3+)",
+   "alvo": {
+    "h": "03:30",
+    "jogo": "Wolverhampton x Burnley",
+    "odd": 1.85,
+    "unidades": 1,
+    "desde": 1784946400905
+   },
+   "iniciadoEm": 1784946400905
+  },
   "cooldown": {
    "euro": 1784946189202,
    "super": 1784934444611,
@@ -478,8 +508,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 8,
+   "chave": "goleada (3+)",
+   "n": 17,
    "start": 1
   },
   "_obs": {}
