@@ -160,13 +160,19 @@
   }
  },
  "o25": {
-  "saldo": -61.2,
-  "ciclos": 363,
-  "greens": 238,
+  "saldo": -59.8,
+  "ciclos": 364,
+  "greens": 239,
   "redsCiclo": 62,
   "aborts": 0,
   "descartes": 63,
   "historico": [
+   {
+    "quando": "2026-07-25T10:17:48.300Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "premier · Chelsea x Norwich @2.2 (tiro 2) · gatilho: time Chelsea"
+   },
    {
     "quando": "2026-07-25T10:04:04.000Z",
     "resultado": "RED_CICLO",
@@ -280,60 +286,17 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho seq RRRR) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-25T03:25:48.504Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "euro · França x Alemanha @2.05 (tiro 2) · gatilho: seq RRRRR"
    }
   ],
   "consumidas": {
    "euro": 1784973164305,
-   "copa": 1784973843802
+   "copa": 1784973843802,
+   "premier": 1784974668100
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "11:12",
-     "jogo": "Wolverhampton x Watford",
-     "odd": 2.15
-    },
-    {
-     "h": "11:15",
-     "jogo": "Chelsea x Norwich",
-     "odd": 2.2
-    },
-    {
-     "h": "11:18",
-     "jogo": "Tottenham x Wolverhampton",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "time Chelsea",
-   "alvo": {
-    "h": "11:15",
-    "jogo": "Chelsea x Norwich",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1784974488108
-   },
-   "iniciadoEm": 1784974303607,
-   "tiros": [
-    {
-     "h": "11:12",
-     "jogo": "Wolverhampton x Watford",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784973843802,
-   "premier": 1784970698204,
+   "premier": 1784974668100,
    "euro": 1784973164305,
    "super": 1784962725800
   },
@@ -348,7 +311,7 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 2.2
+   "2026-07-25": 3.6
   },
   "_gatilhoAtual": {
    "tipo": "time",
