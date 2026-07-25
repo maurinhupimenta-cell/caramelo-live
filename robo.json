@@ -491,7 +491,37 @@
   "consumidas": {
    "premier": 1785012844605
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:25",
+     "jogo": "EUA x França",
+     "odd": 1.93
+    },
+    {
+     "h": "22:28",
+     "jogo": "Brasil x Equador",
+     "odd": 1.9
+    },
+    {
+     "h": "22:31",
+     "jogo": "Colômbia x Bélgica",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "seq GRRRG",
+   "alvo": {
+    "h": "22:25",
+    "jogo": "EUA x França",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1785014523203
+   },
+   "iniciadoEm": 1785014523203
+  },
   "cooldown": {
    "euro": 1785009385398,
    "super": 1784934444611,
@@ -511,9 +541,9 @@
    "2026-07-25": 18.6
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":54",
-   "n": 21,
+   "tipo": "seq",
+   "chave": "GRRRG",
+   "n": 18,
    "start": 1
   },
   "_obs": {}
