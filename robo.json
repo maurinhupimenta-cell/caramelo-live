@@ -286,7 +286,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1785013381503,
    "super": 1785015863807,
    "premier": 1785016955897
   },
@@ -319,13 +318,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -32.3,
-  "ciclos": 405,
+  "saldo": -39.3,
+  "ciclos": 406,
   "greens": 283,
-  "redsCiclo": 46,
+  "redsCiclo": 47,
   "aborts": 0,
   "descartes": 76,
   "historico": [
+   {
+    "quando": "2026-07-25T22:02:36.304Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: coluna :54"
+   },
    {
     "quando": "2026-07-25T21:55:03.002Z",
     "resultado": "GREEN",
@@ -439,67 +444,18 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "premier · Brighton x Tottenham @1.98 (tiro 3) · gatilho: odd 1.98"
-   },
-   {
-    "quando": "2026-07-25T13:20:09.904Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "euro · Portugal x Romênia @1.93 (tiro 1) · gatilho: seq RRRG"
    }
   ],
   "consumidas": {
    "copa": 1785014880303,
-   "super": 1785016502803
+   "super": 1785016502803,
+   "premier": 1785016956100
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "22:54",
-     "jogo": "Everton x Southampton",
-     "odd": 1.98
-    },
-    {
-     "h": "22:57",
-     "jogo": "Newcastle x Liverpool",
-     "odd": 1.85
-    },
-    {
-     "h": "23:00",
-     "jogo": "Watford x Leicester",
-     "odd": 2
-    }
-   ],
-   "gatilho": "coluna :54",
-   "alvo": {
-    "h": "23:00",
-    "jogo": "Watford x Leicester",
-    "odd": 2,
-    "unidades": 4,
-    "desde": 1785016785400
-   },
-   "iniciadoEm": 1785016504498,
-   "tiros": [
-    {
-     "h": "22:54",
-     "jogo": "Everton x Southampton",
-     "odd": 1.98,
-     "unidades": 1
-    },
-    {
-     "h": "22:57",
-     "jogo": "Newcastle x Liverpool",
-     "odd": 1.85,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785009385398,
    "super": 1785016502803,
-   "premier": 1785012844605,
+   "premier": 1785016956100,
    "copa": 1785014880303
   },
   "dias": {
@@ -512,7 +468,7 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 20.1
+   "2026-07-25": 13.1
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
