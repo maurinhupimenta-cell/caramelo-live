@@ -294,7 +294,45 @@
   "consumidas": {
    "euro": 1784941557702
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "02:09",
+     "jogo": "Leicester x Chelsea",
+     "odd": 2.25
+    },
+    {
+     "h": "02:12",
+     "jogo": "Southampton x United",
+     "odd": 2.3
+    },
+    {
+     "h": "02:15",
+     "jogo": "City x Everton",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "placar goleada (3+)",
+   "alvo": {
+    "h": "02:12",
+    "jogo": "Southampton x United",
+    "odd": 2.3,
+    "unidades": 2,
+    "desde": 1784941906110
+   },
+   "iniciadoEm": 1784941560108,
+   "tiros": [
+    {
+     "h": "02:09",
+     "jogo": "Leicester x Chelsea",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1784930673801,
    "premier": 1784931642504,
@@ -316,19 +354,25 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "goleada (3+)",
-   "n": 9,
+   "n": 10,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -56.6,
-  "ciclos": 364,
-  "greens": 246,
+  "saldo": -55.3,
+  "ciclos": 365,
+  "greens": 247,
   "redsCiclo": 44,
   "aborts": 0,
   "descartes": 74,
   "historico": [
+   {
+    "quando": "2026-07-25T01:05:58.099Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "euro · Eslovênia x Escócia @2.15 (tiro 2) · gatilho: placar 1-0 / 0-1"
+   },
    {
     "quando": "2026-07-24T23:07:24.803Z",
     "resultado": "GREEN",
@@ -442,56 +486,44 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · Suíça x Turquia @2.02 (tiro 1) · gatilho: seq RGGRG"
-   },
-   {
-    "quando": "2026-07-24T16:20:44.601Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "premier · Brighton x United @1.87 (tiro 1) · gatilho: coluna :21"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "euro": 1784941557901
+  },
   "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "01:59",
-     "jogo": "Itália x Romênia",
+     "h": "02:09",
+     "jogo": "Leicester x Chelsea",
      "odd": 1.95
     },
     {
-     "h": "02:02",
-     "jogo": "Eslovênia x Escócia",
-     "odd": 2.15
+     "h": "02:12",
+     "jogo": "Southampton x United",
+     "odd": 2.02
     },
     {
-     "h": "02:05",
-     "jogo": "Geórgia x Dinamarca",
-     "odd": 2.1
+     "h": "02:15",
+     "jogo": "City x Everton",
+     "odd": 1.87
     }
    ],
-   "gatilho": "placar 1-0 / 0-1",
+   "gatilho": "placar goleada (3+)",
    "alvo": {
-    "h": "02:02",
-    "jogo": "Eslovênia x Escócia",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1784941308804
+    "h": "02:09",
+    "jogo": "Leicester x Chelsea",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1784941560303
    },
-   "iniciadoEm": 1784940988610,
-   "tiros": [
-    {
-     "h": "01:59",
-     "jogo": "Itália x Romênia",
-     "odd": 1.95,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1784941560303
   },
   "cooldown": {
-   "euro": 1784923170109,
+   "euro": 1784941557901,
    "super": 1784934444611,
    "premier": 1784934211008,
    "copa": 1784931393798
@@ -505,12 +537,12 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 14.9
+   "2026-07-24": 16.2
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "goleada (3+)",
-   "n": 9,
+   "n": 10,
    "start": 1
   },
   "_obs": {}
