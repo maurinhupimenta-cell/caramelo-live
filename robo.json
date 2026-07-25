@@ -343,21 +343,27 @@
    "2026-07-25": -3.2
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":17",
-   "n": 8,
-   "start": 3
+   "tipo": "time",
+   "chave": "Gana",
+   "n": 10,
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -48.1,
-  "ciclos": 372,
-  "greens": 254,
+  "saldo": -46.9,
+  "ciclos": 373,
+  "greens": 255,
   "redsCiclo": 44,
   "aborts": 0,
   "descartes": 74,
   "historico": [
+   {
+    "quando": "2026-07-25T07:10:03.607Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Países Baixos x Nova Zelândia @2.05 (tiro 3) · gatilho: time Suíça"
+   },
    {
     "quando": "2026-07-25T05:53:05.802Z",
     "resultado": "GREEN",
@@ -471,65 +477,17 @@
     "resultado": "GREEN",
     "unidades": 0.7,
     "detalhe": "premier · Chelsea x City @1.85 (tiro 2) · gatilho: coluna :21"
-   },
-   {
-    "quando": "2026-07-24T18:16:19.205Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "copa · Coreia do Sul x Bélgica @2.1 (tiro 1) · gatilho: coluna :13"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "08:01",
-     "jogo": "RD Congo x Turquia",
-     "odd": 1.93
-    },
-    {
-     "h": "08:04",
-     "jogo": "Colômbia x Suíça",
-     "odd": 1.98
-    },
-    {
-     "h": "08:07",
-     "jogo": "Países Baixos x Nova Zelândia",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "time Suíça",
-   "alvo": {
-    "h": "08:07",
-    "jogo": "Países Baixos x Nova Zelândia",
-    "odd": 2.05,
-    "unidades": 4,
-    "desde": 1784963202999
-   },
-   "iniciadoEm": 1784962363802,
-   "tiros": [
-    {
-     "h": "08:01",
-     "jogo": "RD Congo x Turquia",
-     "odd": 1.93,
-     "unidades": 1
-    },
-    {
-     "h": "08:04",
-     "jogo": "Colômbia x Suíça",
-     "odd": 1.98,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "copa": 1784963403500
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784958785602,
    "super": 1784934444611,
    "premier": 1784946760500,
-   "copa": 1784949609603
+   "copa": 1784963403500
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -541,12 +499,12 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 4.3
+   "2026-07-25": 5.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Portugal",
-   "n": 8,
+   "chave": "Iraque",
+   "n": 9,
    "start": 2
   },
   "_obs": {}
