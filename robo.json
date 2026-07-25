@@ -452,8 +452,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "08:01",
@@ -473,13 +473,21 @@
    ],
    "gatilho": "time Suíça",
    "alvo": {
-    "h": "08:01",
-    "jogo": "RD Congo x Turquia",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1784962363802
+    "h": "08:04",
+    "jogo": "Colômbia x Suíça",
+    "odd": 1.98,
+    "unidades": 2,
+    "desde": 1784963023798
    },
-   "iniciadoEm": 1784962363802
+   "iniciadoEm": 1784962363802,
+   "tiros": [
+    {
+     "h": "08:01",
+     "jogo": "RD Congo x Turquia",
+     "odd": 1.93,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784958785602,
@@ -500,9 +508,9 @@
    "2026-07-25": 4.3
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.93",
-   "n": 11,
+   "tipo": "coluna",
+   "chave": ":08",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
