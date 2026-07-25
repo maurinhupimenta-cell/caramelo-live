@@ -294,7 +294,37 @@
    "copa": 1784964584104,
    "premier": 1784966151508
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:32",
+     "jogo": "Áustria x República Tcheca",
+     "odd": 2.6
+    },
+    {
+     "h": "09:35",
+     "jogo": "Eslováquia x Polônia",
+     "odd": 2.5
+    },
+    {
+     "h": "09:38",
+     "jogo": "Hungria x Ucrânia",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "seq RRGG",
+   "alvo": {
+    "h": "09:32",
+    "jogo": "Áustria x República Tcheca",
+    "odd": 2.6,
+    "unidades": 1,
+    "desde": 1784968124710
+   },
+   "iniciadoEm": 1784968124710
+  },
   "cooldown": {
    "copa": 1784964584104,
    "premier": 1784966151508,
@@ -315,9 +345,9 @@
    "2026-07-25": 2.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.45",
-   "n": 8,
+   "tipo": "seq",
+   "chave": "RRGG",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
@@ -454,7 +484,37 @@
   "consumidas": {
    "copa": 1784967885000
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:26",
+     "jogo": "Inglaterra x Ucrânia",
+     "odd": 1.95
+    },
+    {
+     "h": "09:29",
+     "jogo": "Eslovênia x Croácia",
+     "odd": 2.15
+    },
+    {
+     "h": "09:32",
+     "jogo": "Áustria x República Tcheca",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "seq RRGR",
+   "alvo": {
+    "h": "09:26",
+    "jogo": "Inglaterra x Ucrânia",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1784967886404
+   },
+   "iniciadoEm": 1784967886404
+  },
   "cooldown": {
    "euro": 1784963825703,
    "super": 1784934444611,
