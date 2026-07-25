@@ -445,11 +445,40 @@
    }
   ],
   "consumidas": {
-   "copa": 1785014880303,
    "super": 1785016502803,
    "premier": 1785016956100
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:31",
+     "jogo": "Haiti x Argentina",
+     "odd": 1.86
+    },
+    {
+     "h": "23:34",
+     "jogo": "Arábia Saudita x Bélgica",
+     "odd": 1.93
+    },
+    {
+     "h": "23:37",
+     "jogo": "França x Escócia",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time Haiti",
+   "alvo": {
+    "h": "23:31",
+    "jogo": "Haiti x Argentina",
+    "odd": 1.86,
+    "unidades": 1,
+    "desde": 1785018481007
+   },
+   "iniciadoEm": 1785018481007
+  },
   "cooldown": {
    "euro": 1785009385398,
    "super": 1785016502803,
@@ -469,9 +498,9 @@
    "2026-07-25": 13.1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":54",
-   "n": 22,
+   "tipo": "time",
+   "chave": "Haiti",
+   "n": 19,
    "start": 1
   },
   "_obs": {}
