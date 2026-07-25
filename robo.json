@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -151.1,
-  "ciclos": 173,
-  "greens": 59,
+  "saldo": -147.3,
+  "ciclos": 174,
+  "greens": 60,
   "redsCiclo": 74,
   "aborts": 0,
   "descartes": 40,
   "historico": [
+   {
+    "quando": "2026-07-25T19:17:51.798Z",
+    "resultado": "GREEN",
+    "unidades": 3.8,
+    "detalhe": "premier · West Ham x Burnley @4.75 (tiro 1) · gatilho: seq GRRG"
+   },
    {
     "quando": "2026-07-25T19:12:08.909Z",
     "resultado": "GREEN_OBS",
@@ -120,49 +126,15 @@
     "resultado": "GREEN",
     "unidades": 3.3,
     "detalhe": "premier · Watford x United @4.33 (tiro 1) · gatilho: placar empate 2-2"
-   },
-   {
-    "quando": "2026-07-21T15:16:13.153Z",
-    "resultado": "GREEN",
-    "unidades": 2.8,
-    "detalhe": "super · Sao Paulo x Agua Branca @3.75 (tiro 1) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:15",
-     "jogo": "West Ham x Burnley",
-     "odd": 4.75
-    },
-    {
-     "h": "20:18",
-     "jogo": "Tottenham x Newcastle",
-     "odd": 4.5
-    },
-    {
-     "h": "20:21",
-     "jogo": "Islington x City",
-     "odd": 4
-    }
-   ],
-   "gatilho": "seq GRRG",
-   "alvo": {
-    "h": "20:15",
-    "jogo": "West Ham x Burnley",
-    "odd": 4.75,
-    "unidades": 1,
-    "desde": 1785006730903
-   },
-   "iniciadoEm": 1785006730903
+  "consumidas": {
+   "premier": 1785007071601
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784952406602,
-   "premier": 1784706946337,
+   "premier": 1785007071601,
    "euro": 1784650513155,
    "super": 1784965764803
   },
@@ -174,7 +146,7 @@
    "2026-07-20": 19.6,
    "2026-07-21": -96.4,
    "2026-07-22": -7,
-   "2026-07-25": 10
+   "2026-07-25": 13.8
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -317,7 +289,37 @@
    "copa": 1785003987002,
    "euro": 1785004525101
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:15",
+     "jogo": "West Ham x Burnley",
+     "odd": 2.4
+    },
+    {
+     "h": "20:18",
+     "jogo": "Tottenham x Newcastle",
+     "odd": 2.25
+    },
+    {
+     "h": "20:21",
+     "jogo": "Islington x City",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "coluna :15",
+   "alvo": {
+    "h": "20:15",
+    "jogo": "West Ham x Burnley",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1785006887804
+   },
+   "iniciadoEm": 1785006887804
+  },
   "cooldown": {
    "copa": 1785003987002,
    "premier": 1785003284102,
@@ -338,26 +340,27 @@
    "2026-07-25": 9.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGRG",
-   "n": 10,
+   "tipo": "coluna",
+   "chave": ":15",
+   "n": 20,
    "start": 1
   },
-  "_obs": {
-   "premier": {
-    "desde": 1785006885904,
-    "gatilho": "coluna :15"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
-  "saldo": -30.2,
-  "ciclos": 398,
-  "greens": 278,
+  "saldo": -29.2,
+  "ciclos": 399,
+  "greens": 279,
   "redsCiclo": 45,
   "aborts": 0,
   "descartes": 75,
   "historico": [
+   {
+    "quando": "2026-07-25T19:14:49.903Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Liverpool x Watford @2.05 (tiro 1) · gatilho: coluna :15"
+   },
    {
     "quando": "2026-07-25T18:49:26.099Z",
     "resultado": "GREEN",
@@ -471,53 +474,18 @@
     "resultado": "GREEN",
     "unidades": 0.8,
     "detalhe": "euro · Países Baixos x Romênia @1.83 (tiro 1) · gatilho: seq GRRG"
-   },
-   {
-    "quando": "2026-07-25T09:55:06.111Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "copa · EUA x Suíça @1.98 (tiro 3) · gatilho: coluna :49"
    }
   ],
   "consumidas": {
    "euro": 1785004525304,
-   "copa": 1785005365812
+   "copa": 1785005365812,
+   "premier": 1785006889702
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:12",
-     "jogo": "Liverpool x Watford",
-     "odd": 2.05
-    },
-    {
-     "h": "20:15",
-     "jogo": "West Ham x Burnley",
-     "odd": 2.07
-    },
-    {
-     "h": "19:42",
-     "jogo": "Brentford x West Ham",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "coluna :15",
-   "alvo": {
-    "h": "20:12",
-    "jogo": "Liverpool x Watford",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785006159205
-   },
-   "iniciadoEm": 1785006159205
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785004525304,
    "super": 1784934444611,
-   "premier": 1785002205504,
+   "premier": 1785006889702,
    "copa": 1785005365812
   },
   "dias": {
@@ -530,7 +498,7 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 22.2
+   "2026-07-25": 23.2
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
