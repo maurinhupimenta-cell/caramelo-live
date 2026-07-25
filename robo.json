@@ -321,13 +321,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -36.7,
-  "ciclos": 392,
-  "greens": 272,
+  "saldo": -35.6,
+  "ciclos": 393,
+  "greens": 273,
   "redsCiclo": 45,
   "aborts": 0,
   "descartes": 75,
   "historico": [
+   {
+    "quando": "2026-07-25T16:41:27.507Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Portugal x Geórgia @2.1 (tiro 1) · gatilho: seq RRRG"
+   },
    {
     "quando": "2026-07-25T16:25:22.004Z",
     "resultado": "GREEN",
@@ -441,50 +447,15 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · Suíça x Turquia @2.02 (tiro 1) · gatilho: time Espanha"
-   },
-   {
-    "quando": "2026-07-25T07:10:03.607Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "copa · Países Baixos x Nova Zelândia @2.05 (tiro 3) · gatilho: time Suíça"
    }
   ],
   "consumidas": {
-   "copa": 1784996721798
+   "copa": 1784996721798,
+   "euro": 1784997687306
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:38",
-     "jogo": "Portugal x Geórgia",
-     "odd": 2.1
-    },
-    {
-     "h": "17:41",
-     "jogo": "Escócia x Suíça",
-     "odd": 1.87
-    },
-    {
-     "h": "17:44",
-     "jogo": "República Tcheca x Itália",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "seq RRRG",
-   "alvo": {
-    "h": "17:38",
-    "jogo": "Portugal x Geórgia",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1784997445202
-   },
-   "iniciadoEm": 1784997445202
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784993760305,
+   "euro": 1784997687306,
    "super": 1784934444611,
    "premier": 1784992491310,
    "copa": 1784996721798
@@ -499,12 +470,12 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 15.7
+   "2026-07-25": 16.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRGG",
-   "n": 13,
+   "tipo": "coluna",
+   "chave": ":42",
+   "n": 17,
    "start": 1
   },
   "_obs": {}
