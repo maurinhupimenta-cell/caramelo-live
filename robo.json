@@ -292,7 +292,45 @@
    "copa": 1784984111202,
    "euro": 1784984690809
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "14:09",
+     "jogo": "Burnley x United",
+     "odd": 2.1
+    },
+    {
+     "h": "14:12",
+     "jogo": "Aston x Norwich",
+     "odd": 2.3
+    },
+    {
+     "h": "14:15",
+     "jogo": "Burnley x Chelsea",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "coluna :12",
+   "alvo": {
+    "h": "14:12",
+    "jogo": "Aston x Norwich",
+    "odd": 2.3,
+    "unidades": 2,
+    "desde": 1784985114903
+   },
+   "iniciadoEm": 1784984693609,
+   "tiros": [
+    {
+     "h": "14:09",
+     "jogo": "Burnley x United",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1784984111202,
    "premier": 1784978390905,
@@ -314,9 +352,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":12",
+   "chave": ":15",
    "n": 14,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
