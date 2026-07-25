@@ -287,7 +287,37 @@
    "premier": 1785016955897,
    "euro": 1785019080807
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:49",
+     "jogo": "Bósnia e Herzegovina x Áustria",
+     "odd": 2.1
+    },
+    {
+     "h": "23:52",
+     "jogo": "RD Congo x Senegal",
+     "odd": 2.3
+    },
+    {
+     "h": "23:55",
+     "jogo": "Iraque x Noruega",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "seq RRRGG",
+   "alvo": {
+    "h": "23:49",
+    "jogo": "Bósnia e Herzegovina x Áustria",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785019578713
+   },
+   "iniciadoEm": 1785019578713
+  },
   "cooldown": {
    "copa": 1785008604602,
    "premier": 1785016955897,
@@ -309,8 +339,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GGGRG",
-   "n": 8,
+   "chave": "RRRGG",
+   "n": 16,
    "start": 1
   },
   "_obs": {}
