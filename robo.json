@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -147.3,
-  "ciclos": 174,
+  "saldo": -154.3,
+  "ciclos": 175,
   "greens": 60,
-  "redsCiclo": 74,
+  "redsCiclo": 75,
   "aborts": 0,
   "descartes": 40,
   "historico": [
+   {
+    "quando": "2026-07-25T21:23:46.598Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq GRRG"
+   },
    {
     "quando": "2026-07-25T19:17:51.798Z",
     "resultado": "GREEN",
@@ -120,63 +126,15 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
-   },
-   {
-    "quando": "2026-07-21T15:47:49.854Z",
-    "resultado": "GREEN",
-    "unidades": 3.3,
-    "detalhe": "premier · Watford x United @4.33 (tiro 1) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "22:15",
-     "jogo": "West Ham x Newcastle",
-     "odd": 4.5
-    },
-    {
-     "h": "22:18",
-     "jogo": "Liverpool x United",
-     "odd": 4.33
-    },
-    {
-     "h": "22:21",
-     "jogo": "Norwich x Newcastle",
-     "odd": 3.8
-    }
-   ],
-   "gatilho": "seq GRRG",
-   "alvo": {
-    "h": "22:21",
-    "jogo": "Norwich x Newcastle",
-    "odd": 3.8,
-    "unidades": 4,
-    "desde": 1785014443807
-   },
-   "iniciadoEm": 1785013906509,
-   "tiros": [
-    {
-     "h": "22:15",
-     "jogo": "West Ham x Newcastle",
-     "odd": 4.5,
-     "unidades": 1
-    },
-    {
-     "h": "22:18",
-     "jogo": "Liverpool x United",
-     "odd": 4.33,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1785014626400
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784952406602,
-   "premier": 1785007071601,
+   "premier": 1785014626400,
    "euro": 1784650513155,
    "super": 1784965764803
   },
@@ -188,7 +146,7 @@
    "2026-07-20": 19.6,
    "2026-07-21": -96.4,
    "2026-07-22": -7,
-   "2026-07-25": 13.8
+   "2026-07-25": 6.8
   },
   "_gatilhoAtual": {
    "tipo": "seq",
