@@ -454,7 +454,37 @@
    "copa": 1784967885000,
    "euro": 1784968124999
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:27",
+     "jogo": "Brighton x Palace",
+     "odd": 1.83
+    },
+    {
+     "h": "10:30",
+     "jogo": "Watford x West Ham",
+     "odd": 2.15
+    },
+    {
+     "h": "10:33",
+     "jogo": "Islington x Everton",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "coluna :27",
+   "alvo": {
+    "h": "10:27",
+    "jogo": "Brighton x Palace",
+    "odd": 1.83,
+    "unidades": 1,
+    "desde": 1784971420698
+   },
+   "iniciadoEm": 1784971420698
+  },
   "cooldown": {
    "euro": 1784968124999,
    "super": 1784934444611,
@@ -474,9 +504,9 @@
    "2026-07-25": 8.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRG",
-   "n": 8,
+   "tipo": "coluna",
+   "chave": ":27",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
