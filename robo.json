@@ -490,7 +490,37 @@
   "consumidas": {
    "copa": 1784984669702
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:17",
+     "jogo": "Portugal x Romênia",
+     "odd": 1.93
+    },
+    {
+     "h": "14:20",
+     "jogo": "Suíça x Hungria",
+     "odd": 1.98
+    },
+    {
+     "h": "14:23",
+     "jogo": "Espanha x Polônia",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "seq RRRG",
+   "alvo": {
+    "h": "14:17",
+    "jogo": "Portugal x Romênia",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1784985271106
+   },
+   "iniciadoEm": 1784985271106
+  },
   "cooldown": {
    "euro": 1784980163597,
    "super": 1784934444611,
@@ -510,9 +540,9 @@
    "2026-07-25": 8.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Iraque",
-   "n": 12,
+   "tipo": "seq",
+   "chave": "RRRG",
+   "n": 19,
    "start": 1
   },
   "_obs": {}
