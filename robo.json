@@ -352,13 +352,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -52.4,
-  "ciclos": 368,
-  "greens": 250,
+  "saldo": -51.2,
+  "ciclos": 369,
+  "greens": 251,
   "redsCiclo": 44,
   "aborts": 0,
   "descartes": 74,
   "historico": [
+   {
+    "quando": "2026-07-25T03:20:09.801Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Canadá x África do Sul @2.2 (tiro 1) · gatilho: odd 2.1"
+   },
    {
     "quando": "2026-07-25T02:32:40.605Z",
     "resultado": "GREEN",
@@ -472,54 +478,19 @@
     "resultado": "GREEN",
     "unidades": 0.7,
     "detalhe": "super · Sao Paulo x Santiago @1.83 (tiro 2) · gatilho: coluna :28"
-   },
-   {
-    "quando": "2026-07-24T17:29:40.707Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "premier · Palace x City @1.87 (tiro 2) · gatilho: coluna :24"
    }
   ],
   "consumidas": {
    "euro": 1784946189202,
-   "premier": 1784946760500
+   "premier": 1784946760500,
+   "copa": 1784949609603
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:16",
-     "jogo": "Canadá x África do Sul",
-     "odd": 2.2
-    },
-    {
-     "h": "04:19",
-     "jogo": "Panamá x Japão",
-     "odd": 2.1
-    },
-    {
-     "h": "04:22",
-     "jogo": "Escócia x Iraque",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "odd 2.1",
-   "alvo": {
-    "h": "04:16",
-    "jogo": "Canadá x África do Sul",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1784949527006
-   },
-   "iniciadoEm": 1784949527006
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784946189202,
    "super": 1784934444611,
    "premier": 1784946760500,
-   "copa": 1784931393798
+   "copa": 1784949609603
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -530,7 +501,8 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 19.1
+   "2026-07-24": 19.1,
+   "2026-07-25": 1.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
