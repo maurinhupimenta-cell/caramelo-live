@@ -160,13 +160,19 @@
   }
  },
  "o25": {
-  "saldo": -50.1,
-  "ciclos": 384,
+  "saldo": -57.1,
+  "ciclos": 385,
   "greens": 252,
-  "redsCiclo": 64,
+  "redsCiclo": 65,
   "aborts": 0,
   "descartes": 68,
   "historico": [
+   {
+    "quando": "2026-07-25T18:14:44.208Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: coluna :12"
+   },
    {
     "quando": "2026-07-25T17:14:26.804Z",
     "resultado": "GREEN",
@@ -280,63 +286,45 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho time México) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-25T10:56:45.300Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "euro · Espanha x Escócia @2.1 (tiro 1) · gatilho: coluna :56"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "premier": 1785003284102
+  },
   "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "19:09",
-     "jogo": "Everton x West Ham",
-     "odd": 2.4
+     "h": "19:22",
+     "jogo": "Turquia x África do Sul",
+     "odd": 2.5
     },
     {
-     "h": "19:12",
-     "jogo": "Liverpool x Norwich",
-     "odd": 2.2
+     "h": "19:25",
+     "jogo": "Haiti x México",
+     "odd": 2.1
     },
     {
-     "h": "18:42",
-     "jogo": "Brentford x Leeds",
-     "odd": 2.55
+     "h": "19:28",
+     "jogo": "EUA x Argélia",
+     "odd": 2.25
     }
    ],
-   "gatilho": "coluna :12",
+   "gatilho": "time México",
    "alvo": {
-    "h": "18:42",
-    "jogo": "Brentford x Leeds",
-    "odd": 2.55,
-    "unidades": 4,
-    "desde": 1785003282003
+    "h": "19:22",
+    "jogo": "Turquia x África do Sul",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1785003294604
    },
-   "iniciadoEm": 1785002386511,
-   "tiros": [
-    {
-     "h": "19:09",
-     "jogo": "Everton x West Ham",
-     "odd": 2.4,
-     "unidades": 1
-    },
-    {
-     "h": "19:12",
-     "jogo": "Liverpool x Norwich",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1785003294604
   },
   "cooldown": {
    "copa": 1784996721510,
-   "premier": 1784998785207,
+   "premier": 1785003284102,
    "euro": 1784999666598,
    "super": 1784962725800
   },
@@ -351,7 +339,7 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 13.3
+   "2026-07-25": 6.3
   },
   "_gatilhoAtual": {
    "tipo": "time",
