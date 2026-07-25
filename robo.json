@@ -160,13 +160,19 @@
   }
  },
  "o25": {
-  "saldo": -55.6,
-  "ciclos": 386,
-  "greens": 253,
+  "saldo": -53.8,
+  "ciclos": 387,
+  "greens": 254,
   "redsCiclo": 65,
   "aborts": 0,
   "descartes": 68,
   "historico": [
+   {
+    "quando": "2026-07-25T18:35:25.299Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "euro · Croácia x Sérvia @2.4 (tiro 2) · gatilho: seq RRGRG"
+   },
    {
     "quando": "2026-07-25T18:26:27.202Z",
     "resultado": "GREEN",
@@ -280,61 +286,18 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "premier · Tottenham x Newcastle @2.25 (tiro 1) · gatilho: seq GRGRR"
-   },
-   {
-    "quando": "2026-07-25T11:19:45.106Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
    "premier": 1785003284102,
-   "copa": 1785003987002
+   "copa": 1785003987002,
+   "euro": 1785004525101
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "19:29",
-     "jogo": "Suíça x Geórgia",
-     "odd": 2.25
-    },
-    {
-     "h": "19:32",
-     "jogo": "Croácia x Sérvia",
-     "odd": 2.4
-    },
-    {
-     "h": "19:35",
-     "jogo": "Turquia x Polônia",
-     "odd": 2.7
-    }
-   ],
-   "gatilho": "seq RRGRG",
-   "alvo": {
-    "h": "19:32",
-    "jogo": "Croácia x Sérvia",
-    "odd": 2.4,
-    "unidades": 2,
-    "desde": 1785004347211
-   },
-   "iniciadoEm": 1785003988613,
-   "tiros": [
-    {
-     "h": "19:29",
-     "jogo": "Suíça x Geórgia",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785003987002,
    "premier": 1785003284102,
-   "euro": 1784999666598,
+   "euro": 1785004525101,
    "super": 1784962725800
   },
   "dias": {
@@ -348,7 +311,7 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 7.8
+   "2026-07-25": 9.6
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -492,8 +455,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "19:26",
@@ -513,11 +476,11 @@
    ],
    "gatilho": "seq GRRGR",
    "alvo": {
-    "h": "19:29",
-    "jogo": "Suíça x Geórgia",
-    "odd": 2.02,
-    "unidades": 2,
-    "desde": 1785004347499
+    "h": "19:32",
+    "jogo": "Croácia x Sérvia",
+    "odd": 2.07,
+    "unidades": 4,
+    "desde": 1785004349705
    },
    "iniciadoEm": 1785003805610,
    "tiros": [
@@ -526,6 +489,12 @@
      "jogo": "França x Turquia",
      "odd": 2.02,
      "unidades": 1
+    },
+    {
+     "h": "19:29",
+     "jogo": "Suíça x Geórgia",
+     "odd": 2.02,
+     "unidades": 2
     }
    ]
   },
@@ -548,10 +517,10 @@
    "2026-07-25": 19.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":37",
-   "n": 19,
-   "start": 2
+   "tipo": "time",
+   "chave": "Croácia",
+   "n": 12,
+   "start": 3
   },
   "_obs": {}
  }
