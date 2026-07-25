@@ -322,13 +322,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -43.9,
-  "ciclos": 385,
-  "greens": 265,
+  "saldo": -43,
+  "ciclos": 386,
+  "greens": 266,
   "redsCiclo": 45,
   "aborts": 0,
   "descartes": 75,
   "historico": [
+   {
+    "quando": "2026-07-25T13:20:09.904Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Portugal x Romênia @1.93 (tiro 1) · gatilho: seq RRRG"
+   },
    {
     "quando": "2026-07-25T13:04:29.900Z",
     "resultado": "GREEN",
@@ -442,50 +448,15 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · França x Eslováquia @1.98 (tiro 1) · gatilho: odd 2.1"
-   },
-   {
-    "quando": "2026-07-25T01:11:46.599Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Leicester x Chelsea @1.95 (tiro 1) · gatilho: placar goleada (3+)"
    }
   ],
   "consumidas": {
-   "copa": 1784984669702
+   "copa": 1784984669702,
+   "euro": 1784985609704
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:17",
-     "jogo": "Portugal x Romênia",
-     "odd": 1.93
-    },
-    {
-     "h": "14:20",
-     "jogo": "Suíça x Hungria",
-     "odd": 1.98
-    },
-    {
-     "h": "14:23",
-     "jogo": "Espanha x Polônia",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "seq RRRG",
-   "alvo": {
-    "h": "14:17",
-    "jogo": "Portugal x Romênia",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1784985271106
-   },
-   "iniciadoEm": 1784985271106
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784980163597,
+   "euro": 1784985609704,
    "super": 1784934444611,
    "premier": 1784977221803,
    "copa": 1784984669702
@@ -500,12 +471,12 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 8.5
+   "2026-07-25": 9.4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRG",
-   "n": 19,
+   "chave": "RRGR",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
