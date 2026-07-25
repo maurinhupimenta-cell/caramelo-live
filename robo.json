@@ -292,7 +292,37 @@
    "copa": 1784956027502,
    "premier": 1784957569603
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:44",
+     "jogo": "Eslovênia x Bélgica",
+     "odd": 2.45
+    },
+    {
+     "h": "06:47",
+     "jogo": "Dinamarca x Romênia",
+     "odd": 2.25
+    },
+    {
+     "h": "06:50",
+     "jogo": "Inglaterra x Sérvia",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "odd 2.25",
+   "alvo": {
+    "h": "06:44",
+    "jogo": "Eslovênia x Bélgica",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1784957731603
+   },
+   "iniciadoEm": 1784957731603
+  },
   "cooldown": {
    "copa": 1784956027502,
    "premier": 1784957569603,
@@ -314,8 +344,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.4",
-   "n": 12,
+   "chave": "2.25",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
@@ -449,9 +479,7 @@
     "detalhe": "euro · Portugal x Eslovênia @2.25 (tiro 2) · gatilho: coluna :08"
    }
   ],
-  "consumidas": {
-   "euro": 1784954494605
-  },
+  "consumidas": {},
   "ciclo": null,
   "cooldown": {
    "euro": 1784954494605,
