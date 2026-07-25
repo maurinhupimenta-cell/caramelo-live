@@ -160,13 +160,19 @@
   }
  },
  "o25": {
-  "saldo": -65.2,
-  "ciclos": 355,
-  "greens": 232,
+  "saldo": -62,
+  "ciclos": 356,
+  "greens": 233,
   "redsCiclo": 61,
   "aborts": 0,
   "descartes": 62,
   "historico": [
+   {
+    "quando": "2026-07-25T07:29:44.304Z",
+    "resultado": "GREEN",
+    "unidades": 3.2,
+    "detalhe": "copa · Suécia x Países Baixos @2.55 (tiro 3) · gatilho: time Gana"
+   },
    {
     "quando": "2026-07-25T07:17:05.699Z",
     "resultado": "GREEN",
@@ -280,66 +286,17 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: coluna :56"
-   },
-   {
-    "quando": "2026-07-24T22:47:30.405Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "super · Sao Paulo x Buenos Aires @1.98 (tiro 2) · gatilho: odd 1.98"
    }
   ],
   "consumidas": {
    "premier": 1784961929209,
    "super": 1784962725800,
-   "euro": 1784963825409
+   "euro": 1784963825409,
+   "copa": 1784964584104
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "08:19",
-     "jogo": "Gana x Iraque",
-     "odd": 2.55
-    },
-    {
-     "h": "08:22",
-     "jogo": "Japão x Noruega",
-     "odd": 2.25
-    },
-    {
-     "h": "08:25",
-     "jogo": "Suécia x Países Baixos",
-     "odd": 2.55
-    }
-   ],
-   "gatilho": "time Gana",
-   "alvo": {
-    "h": "08:25",
-    "jogo": "Suécia x Países Baixos",
-    "odd": 2.55,
-    "unidades": 4,
-    "desde": 1784964466399
-   },
-   "iniciadoEm": 1784963826700,
-   "tiros": [
-    {
-     "h": "08:19",
-     "jogo": "Gana x Iraque",
-     "odd": 2.55,
-     "unidades": 1
-    },
-    {
-     "h": "08:22",
-     "jogo": "Japão x Noruega",
-     "odd": 2.25,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784956027502,
+   "copa": 1784964584104,
    "premier": 1784961929209,
    "euro": 1784963825409,
    "super": 1784962725800
@@ -355,13 +312,13 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": -1.8
+   "2026-07-25": 1.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":37",
+   "tipo": "time",
+   "chave": "México",
    "n": 8,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
