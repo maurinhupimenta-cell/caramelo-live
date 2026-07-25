@@ -129,7 +129,45 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "08:40",
+     "jogo": "Avellaneda x Medellin",
+     "odd": 5
+    },
+    {
+     "h": "08:43",
+     "jogo": "Itaquera x Guayaquil",
+     "odd": 4.2
+    },
+    {
+     "h": "08:46",
+     "jogo": "Agua Branca x Buenos Aires",
+     "odd": 3.75
+    }
+   ],
+   "gatilho": "coluna :43",
+   "alvo": {
+    "h": "08:43",
+    "jogo": "Itaquera x Guayaquil",
+    "odd": 4.2,
+    "unidades": 2,
+    "desde": 1784965386403
+   },
+   "iniciadoEm": 1784964768098,
+   "tiros": [
+    {
+     "h": "08:40",
+     "jogo": "Avellaneda x Medellin",
+     "odd": 5,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1784952406602,
    "premier": 1784706946337,
@@ -147,8 +185,8 @@
    "2026-07-25": 17
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRG",
+   "tipo": "coluna",
+   "chave": ":43",
    "n": 8,
    "start": 1
   },
@@ -156,10 +194,6 @@
    "premier": {
     "desde": 1784768934532,
     "gatilho": "seq RRRRR"
-   },
-   "super": {
-    "desde": 1784964766305,
-    "gatilho": "coluna :43"
    }
   }
  },
