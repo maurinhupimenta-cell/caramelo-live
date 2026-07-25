@@ -155,13 +155,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -51.6,
-  "ciclos": 396,
-  "greens": 261,
+  "saldo": -50.5,
+  "ciclos": 397,
+  "greens": 262,
   "redsCiclo": 66,
   "aborts": 0,
   "descartes": 69,
   "historico": [
+   {
+    "quando": "2026-07-25T22:52:21.204Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Bósnia e Herzegovina x Áustria @2.1 (tiro 1) · gatilho: seq RRRGG"
+   },
    {
     "quando": "2026-07-25T22:38:01.004Z",
     "resultado": "GREEN",
@@ -275,51 +281,16 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "premier · Norwich x West Ham @2.45 (tiro 1) · gatilho: seq GRGRR"
-   },
-   {
-    "quando": "2026-07-25T14:17:12.501Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "euro · Albânia x Dinamarca @2.75 (tiro 1) · gatilho: seq RRGG"
    }
   ],
   "consumidas": {
    "premier": 1785016955897,
-   "euro": 1785019080807
+   "euro": 1785019080807,
+   "copa": 1785019941007
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:49",
-     "jogo": "Bósnia e Herzegovina x Áustria",
-     "odd": 2.1
-    },
-    {
-     "h": "23:52",
-     "jogo": "RD Congo x Senegal",
-     "odd": 2.3
-    },
-    {
-     "h": "23:55",
-     "jogo": "Iraque x Noruega",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "seq RRRGG",
-   "alvo": {
-    "h": "23:49",
-    "jogo": "Bósnia e Herzegovina x Áustria",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785019578713
-   },
-   "iniciadoEm": 1785019578713
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785008604602,
+   "copa": 1785019941007,
    "premier": 1785016955897,
    "euro": 1785019080807,
    "super": 1785015863807
@@ -335,7 +306,7 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 11.8
+   "2026-07-25": 12.9
   },
   "_gatilhoAtual": {
    "tipo": "seq",
