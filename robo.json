@@ -289,7 +289,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1784968667709,
    "copa": 1784969384399,
    "premier": 1784970698204
   },
@@ -322,13 +321,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -42.7,
-  "ciclos": 377,
-  "greens": 259,
+  "saldo": -41.5,
+  "ciclos": 378,
+  "greens": 260,
   "redsCiclo": 44,
   "aborts": 0,
   "descartes": 74,
   "historico": [
+   {
+    "quando": "2026-07-25T09:40:45.504Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Polônia x Áustria @2.1 (tiro 2) · gatilho: time Espanha"
+   },
    {
     "quando": "2026-07-25T09:32:44.800Z",
     "resultado": "GREEN",
@@ -442,58 +447,15 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "super · Buenos Aires x Santiago @1.85 (tiro 1) · gatilho: odd 1.87"
-   },
-   {
-    "quando": "2026-07-24T21:54:53.211Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho seq GGGG) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "premier": 1784971964604
+   "premier": 1784971964604,
+   "euro": 1784972445302
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "10:35",
-     "jogo": "Espanha x Sérvia",
-     "odd": 2
-    },
-    {
-     "h": "10:38",
-     "jogo": "Polônia x Áustria",
-     "odd": 2.1
-    },
-    {
-     "h": "10:41",
-     "jogo": "Suíça x Itália",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "time Espanha",
-   "alvo": {
-    "h": "10:38",
-    "jogo": "Polônia x Áustria",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1784972265103
-   },
-   "iniciadoEm": 1784971966700,
-   "tiros": [
-    {
-     "h": "10:35",
-     "jogo": "Espanha x Sérvia",
-     "odd": 2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784968124999,
+   "euro": 1784972445302,
    "super": 1784934444611,
    "premier": 1784971964604,
    "copa": 1784967885000
@@ -508,13 +470,13 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 9.7
+   "2026-07-25": 10.9
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":40",
+   "chave": ":49",
    "n": 10,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  }
