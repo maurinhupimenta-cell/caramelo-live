@@ -155,13 +155,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -52.6,
-  "ciclos": 395,
-  "greens": 260,
+  "saldo": -51.6,
+  "ciclos": 396,
+  "greens": 261,
   "redsCiclo": 66,
   "aborts": 0,
   "descartes": 69,
   "historico": [
+   {
+    "quando": "2026-07-25T22:38:01.004Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Países Baixos x Suíça @2.02 (tiro 1) · gatilho: seq GGGRG"
+   },
    {
     "quando": "2026-07-25T22:02:36.006Z",
     "resultado": "RED_CICLO",
@@ -275,53 +281,18 @@
     "resultado": "GREEN",
     "unidades": 1.8,
     "detalhe": "euro · Albânia x Dinamarca @2.75 (tiro 1) · gatilho: seq RRGG"
-   },
-   {
-    "quando": "2026-07-25T14:11:12.511Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho seq RRGG) — liga REARMADA"
    }
   ],
   "consumidas": {
    "super": 1785015863807,
-   "premier": 1785016955897
+   "premier": 1785016955897,
+   "euro": 1785019080807
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:35",
-     "jogo": "Países Baixos x Suíça",
-     "odd": 2.02
-    },
-    {
-     "h": "23:38",
-     "jogo": "Espanha x Geórgia",
-     "odd": 2.2
-    },
-    {
-     "h": "23:41",
-     "jogo": "Bélgica x Ucrânia",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "seq GGGRG",
-   "alvo": {
-    "h": "23:35",
-    "jogo": "Países Baixos x Suíça",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1785018759008
-   },
-   "iniciadoEm": 1785018759008
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785008604602,
    "premier": 1785016955897,
-   "euro": 1785013381503,
+   "euro": 1785019080807,
    "super": 1785015863807
   },
   "dias": {
@@ -335,7 +306,7 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 10.8
+   "2026-07-25": 11.8
   },
   "_gatilhoAtual": {
    "tipo": "seq",
