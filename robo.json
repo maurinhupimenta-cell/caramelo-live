@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -161.1,
-  "ciclos": 169,
-  "greens": 58,
+  "saldo": -144.1,
+  "ciclos": 170,
+  "greens": 59,
   "redsCiclo": 73,
   "aborts": 0,
   "descartes": 38,
   "historico": [
+   {
+    "quando": "2026-07-25T04:06:46.799Z",
+    "resultado": "GREEN",
+    "unidades": 17,
+    "detalhe": "copa · Tunísia x Coreia do Sul @6 (tiro 3) · gatilho: seq RRRRG"
+   },
    {
     "quando": "2026-07-25T03:55:07.110Z",
     "resultado": "GREEN_OBS",
@@ -120,62 +126,14 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-21T13:23:36.733Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros)"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:58",
-     "jogo": "Alemanha x Gana",
-     "odd": 4.5
-    },
-    {
-     "h": "05:01",
-     "jogo": "Suíça x Brasil",
-     "odd": 4.5
-    },
-    {
-     "h": "05:04",
-     "jogo": "Tunísia x Coreia do Sul",
-     "odd": 6
-    }
-   ],
-   "gatilho": "seq RRRRG",
-   "alvo": {
-    "h": "05:04",
-    "jogo": "Tunísia x Coreia do Sul",
-    "odd": 6,
-    "unidades": 4,
-    "desde": 1784952249102
-   },
-   "iniciadoEm": 1784951708403,
-   "tiros": [
-    {
-     "h": "04:58",
-     "jogo": "Alemanha x Gana",
-     "odd": 4.5,
-     "unidades": 1
-    },
-    {
-     "h": "05:01",
-     "jogo": "Suíça x Brasil",
-     "odd": 4.5,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "copa": 1784952406602
   },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784670696456,
+   "copa": 1784952406602,
    "premier": 1784706946337,
    "euro": 1784650513155,
    "super": 1784670159654
@@ -188,7 +146,7 @@
    "2026-07-20": 19.6,
    "2026-07-21": -96.4,
    "2026-07-22": -7,
-   "2026-07-25": 0
+   "2026-07-25": 17
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -390,7 +348,7 @@
    "tipo": "time",
    "chave": "Chelsea",
    "n": 11,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
