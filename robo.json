@@ -164,12 +164,18 @@
  },
  "o25": {
   "saldo": -61.5,
-  "ciclos": 337,
+  "ciclos": 338,
   "greens": 221,
   "redsCiclo": 58,
   "aborts": 0,
-  "descartes": 58,
+  "descartes": 59,
   "historico": [
+   {
+    "quando": "2026-07-25T00:56:28.606Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho placar 1-0 / 0-1) — liga REARMADA"
+   },
    {
     "quando": "2026-07-24T23:05:35.103Z",
     "resultado": "RED_CICLO",
@@ -283,12 +289,6 @@
     "resultado": "GREEN",
     "unidades": 2,
     "detalhe": "super · Montevideo x Porto Alegre @2.5 (tiro 2) · gatilho: odd 2.5"
-   },
-   {
-    "quando": "2026-07-24T15:22:04.508Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho odd 2.5) — liga REARMADA"
    }
   ],
   "consumidas": {},
@@ -317,7 +317,12 @@
    "n": 23,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1784940988605,
+    "gatilho": "placar 1-0 / 0-1"
+   }
+  }
  },
  "ambas": {
   "saldo": -56.6,
