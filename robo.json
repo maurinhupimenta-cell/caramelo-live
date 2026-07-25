@@ -160,13 +160,19 @@
   }
  },
  "o25": {
-  "saldo": -57.3,
-  "ciclos": 348,
-  "greens": 228,
+  "saldo": -56.1,
+  "ciclos": 349,
+  "greens": 229,
   "redsCiclo": 59,
   "aborts": 0,
   "descartes": 61,
   "historico": [
+   {
+    "quando": "2026-07-25T05:07:07.702Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Uruguai x RD Congo @2.15 (tiro 1) · gatilho: seq RRRR"
+   },
    {
     "quando": "2026-07-25T04:35:31.399Z",
     "resultado": "GREEN",
@@ -280,51 +286,16 @@
     "resultado": "GREEN",
     "unidades": 2.5,
     "detalhe": "euro · República Tcheca x Polônia @2.75 (tiro 2) · gatilho: odd 2.75"
-   },
-   {
-    "quando": "2026-07-24T18:30:59.608Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "copa · RD Congo x Jordânia @2.1 (tiro 3) · gatilho: time Coreia do Sul"
    }
   ],
   "consumidas": {
    "premier": 1784952881306,
-   "euro": 1784954131203
+   "euro": 1784954131203,
+   "copa": 1784956027502
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:04",
-     "jogo": "Uruguai x RD Congo",
-     "odd": 2.15
-    },
-    {
-     "h": "06:07",
-     "jogo": "Irã x Portugal",
-     "odd": 2.4
-    },
-    {
-     "h": "06:10",
-     "jogo": "Colômbia x Marrocos",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "seq RRRR",
-   "alvo": {
-    "h": "06:04",
-    "jogo": "Uruguai x RD Congo",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1784955751607
-   },
-   "iniciadoEm": 1784955751607
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784952049102,
+   "copa": 1784956027502,
    "premier": 1784952881306,
    "euro": 1784954131203,
    "super": 1784933250210
@@ -340,12 +311,12 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 6.1
+   "2026-07-25": 7.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRR",
-   "n": 12,
+   "tipo": "time",
+   "chave": "Gana",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
