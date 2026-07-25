@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -64.4,
-  "ciclos": 342,
-  "greens": 223,
+  "saldo": -63.4,
+  "ciclos": 343,
+  "greens": 224,
   "redsCiclo": 59,
   "aborts": 0,
   "descartes": 60,
   "historico": [
+   {
+    "quando": "2026-07-25T02:53:36.803Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Brighton x United @2.05 (tiro 1) · gatilho: time Chelsea"
+   },
    {
     "quando": "2026-07-25T02:41:52.506Z",
     "resultado": "GREEN_OBS",
@@ -283,51 +289,16 @@
     "resultado": "GREEN",
     "unidades": 1.6,
     "detalhe": "super · Penarol x Montevideo @2.3 (tiro 2) · gatilho: odd 2.35"
-   },
-   {
-    "quando": "2026-07-24T16:16:30.902Z",
-    "resultado": "GREEN",
-    "unidades": 1.6,
-    "detalhe": "copa · Panamá x Brasil @2.3 (tiro 2) · gatilho: time Brasil"
    }
   ],
   "consumidas": {
-   "euro": 1784945629600
+   "euro": 1784945629600,
+   "premier": 1784948016607
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:51",
-     "jogo": "Brighton x United",
-     "odd": 2.05
-    },
-    {
-     "h": "03:54",
-     "jogo": "Chelsea x West Ham",
-     "odd": 2.5
-    },
-    {
-     "h": "03:57",
-     "jogo": "Southampton x Wolverhampton",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Chelsea",
-   "alvo": {
-    "h": "03:51",
-    "jogo": "Brighton x United",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1784947330504
-   },
-   "iniciadoEm": 1784947330504
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784930673801,
-   "premier": 1784942293907,
+   "premier": 1784948016607,
    "euro": 1784945629600,
    "super": 1784933250210
   },
@@ -341,13 +312,13 @@
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
-   "2026-07-24": -2.7
+   "2026-07-24": -1.7
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Chelsea",
    "n": 8,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
