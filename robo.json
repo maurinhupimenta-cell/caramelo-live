@@ -454,7 +454,37 @@
    "euro": 1785004525304,
    "copa": 1785005365812
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:12",
+     "jogo": "Liverpool x Watford",
+     "odd": 2.05
+    },
+    {
+     "h": "20:15",
+     "jogo": "West Ham x Burnley",
+     "odd": 2.07
+    },
+    {
+     "h": "19:42",
+     "jogo": "Brentford x West Ham",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "coluna :15",
+   "alvo": {
+    "h": "20:12",
+    "jogo": "Liverpool x Watford",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785006159205
+   },
+   "iniciadoEm": 1785006159205
+  },
   "cooldown": {
    "euro": 1785004525304,
    "super": 1784934444611,
@@ -474,10 +504,10 @@
    "2026-07-25": 22.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Croácia",
-   "n": 12,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":15",
+   "n": 20,
+   "start": 3
   },
   "_obs": {}
  }
