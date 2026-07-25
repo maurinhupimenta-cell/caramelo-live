@@ -289,7 +289,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1784984690809,
    "premier": 1784985386099
   },
   "ciclo": {
@@ -491,7 +490,37 @@
    "euro": 1784985609704,
    "premier": 1784987267204
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:07",
+     "jogo": "Iraque x Panamá",
+     "odd": 2.15
+    },
+    {
+     "h": "15:10",
+     "jogo": "Uzbequistão x Austrália",
+     "odd": 1.95
+    },
+    {
+     "h": "15:13",
+     "jogo": "Senegal x Argélia",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time Uzbequistão",
+   "alvo": {
+    "h": "15:07",
+    "jogo": "Iraque x Panamá",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1784988271804
+   },
+   "iniciadoEm": 1784988271804
+  },
   "cooldown": {
    "euro": 1784985609704,
    "super": 1784934444611,
@@ -512,8 +541,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "City",
-   "n": 31,
+   "chave": "Uzbequistão",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
