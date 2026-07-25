@@ -454,7 +454,37 @@
    "copa": 1784973305907,
    "euro": 1784976224207
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:54",
+     "jogo": "Leeds x Liverpool",
+     "odd": 2.1
+    },
+    {
+     "h": "11:57",
+     "jogo": "City x Palace",
+     "odd": 1.95
+    },
+    {
+     "h": "12:00",
+     "jogo": "Brentford x Southampton",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "time City",
+   "alvo": {
+    "h": "11:54",
+    "jogo": "Leeds x Liverpool",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1784976296113
+   },
+   "iniciadoEm": 1784976296113
+  },
   "cooldown": {
    "euro": 1784976224207,
    "super": 1784934444611,
@@ -474,10 +504,10 @@
    "2026-07-25": 12.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.87",
-   "n": 10,
-   "start": 2
+   "tipo": "time",
+   "chave": "City",
+   "n": 23,
+   "start": 3
   },
   "_obs": {}
  }
