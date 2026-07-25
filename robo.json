@@ -356,21 +356,27 @@
    "2026-07-25": 0.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRG",
-   "n": 11,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":12",
+   "n": 14,
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -44.9,
-  "ciclos": 384,
-  "greens": 264,
+  "saldo": -43.9,
+  "ciclos": 385,
+  "greens": 265,
   "redsCiclo": 45,
   "aborts": 0,
   "descartes": 75,
   "historico": [
+   {
+    "quando": "2026-07-25T13:04:29.900Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Japão x Arábia Saudita @2 (tiro 3) · gatilho: time Austrália"
+   },
    {
     "quando": "2026-07-25T12:49:30.009Z",
     "resultado": "GREEN_OBS",
@@ -484,65 +490,17 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · Leicester x Chelsea @1.95 (tiro 1) · gatilho: placar goleada (3+)"
-   },
-   {
-    "quando": "2026-07-25T01:05:58.099Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "euro · Eslovênia x Escócia @2.15 (tiro 2) · gatilho: placar 1-0 / 0-1"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "13:55",
-     "jogo": "Colômbia x Equador",
-     "odd": 1.87
-    },
-    {
-     "h": "13:58",
-     "jogo": "Austrália x Panamá",
-     "odd": 2.02
-    },
-    {
-     "h": "14:01",
-     "jogo": "Japão x Arábia Saudita",
-     "odd": 2
-    }
-   ],
-   "gatilho": "time Austrália",
-   "alvo": {
-    "h": "14:01",
-    "jogo": "Japão x Arábia Saudita",
-    "odd": 2,
-    "unidades": 4,
-    "desde": 1784984531813
-   },
-   "iniciadoEm": 1784983570004,
-   "tiros": [
-    {
-     "h": "13:55",
-     "jogo": "Colômbia x Equador",
-     "odd": 1.87,
-     "unidades": 1
-    },
-    {
-     "h": "13:58",
-     "jogo": "Austrália x Panamá",
-     "odd": 2.02,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "copa": 1784984669702
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784980163597,
    "super": 1784934444611,
    "premier": 1784977221803,
-   "copa": 1784977443706
+   "copa": 1784984669702
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -554,13 +512,13 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 7.5
+   "2026-07-25": 8.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Iraque",
    "n": 12,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
