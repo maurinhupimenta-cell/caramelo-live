@@ -162,13 +162,19 @@
   }
  },
  "o25": {
-  "saldo": -62,
-  "ciclos": 357,
-  "greens": 233,
+  "saldo": -60.8,
+  "ciclos": 358,
+  "greens": 234,
   "redsCiclo": 61,
   "aborts": 0,
   "descartes": 63,
   "historico": [
+   {
+    "quando": "2026-07-25T07:55:51.803Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · Leicester x City @2.15 (tiro 1) · gatilho: odd 2.45"
+   },
    {
     "quando": "2026-07-25T07:45:43.909Z",
     "resultado": "GREEN_OBS",
@@ -282,53 +288,18 @@
     "resultado": "GREEN",
     "unidades": 2.1,
     "detalhe": "euro · Eslovênia x Escócia @2.55 (tiro 2) · gatilho: placar 1-0 / 0-1"
-   },
-   {
-    "quando": "2026-07-25T00:56:28.606Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho placar 1-0 / 0-1) — liga REARMADA"
    }
   ],
   "consumidas": {
    "super": 1784962725800,
    "euro": 1784963825409,
-   "copa": 1784964584104
+   "copa": 1784964584104,
+   "premier": 1784966151508
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "08:51",
-     "jogo": "Leicester x City",
-     "odd": 2.15
-    },
-    {
-     "h": "08:54",
-     "jogo": "West Ham x Norwich",
-     "odd": 2.45
-    },
-    {
-     "h": "08:57",
-     "jogo": "Leicester x Brighton",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "odd 2.45",
-   "alvo": {
-    "h": "08:51",
-    "jogo": "Leicester x City",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1784965545503
-   },
-   "iniciadoEm": 1784965545503
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784964584104,
-   "premier": 1784961929209,
+   "premier": 1784966151508,
    "euro": 1784963825409,
    "super": 1784962725800
   },
@@ -343,7 +314,7 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 1.4
+   "2026-07-25": 2.6
   },
   "_gatilhoAtual": {
    "tipo": "odd",
