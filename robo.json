@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -61.5,
-  "ciclos": 338,
-  "greens": 221,
+  "saldo": -59.4,
+  "ciclos": 339,
+  "greens": 222,
   "redsCiclo": 58,
   "aborts": 0,
   "descartes": 59,
   "historico": [
+   {
+    "quando": "2026-07-25T01:05:57.897Z",
+    "resultado": "GREEN",
+    "unidades": 2.1,
+    "detalhe": "euro · Eslovênia x Escócia @2.55 (tiro 2) · gatilho: placar 1-0 / 0-1"
+   },
    {
     "quando": "2026-07-25T00:56:28.606Z",
     "resultado": "GREEN_OBS",
@@ -283,58 +289,16 @@
     "resultado": "GREEN",
     "unidades": 1.8,
     "detalhe": "premier · United x Liverpool @2.2 (tiro 3) · gatilho: odd 2.02"
-   },
-   {
-    "quando": "2026-07-24T15:39:57.405Z",
-    "resultado": "GREEN",
-    "unidades": 2,
-    "detalhe": "super · Montevideo x Porto Alegre @2.5 (tiro 2) · gatilho: odd 2.5"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "01:59",
-     "jogo": "Itália x Romênia",
-     "odd": 2.2
-    },
-    {
-     "h": "02:02",
-     "jogo": "Eslovênia x Escócia",
-     "odd": 2.55
-    },
-    {
-     "h": "02:05",
-     "jogo": "Geórgia x Dinamarca",
-     "odd": 2.45
-    }
-   ],
-   "gatilho": "placar 1-0 / 0-1",
-   "alvo": {
-    "h": "02:02",
-    "jogo": "Eslovênia x Escócia",
-    "odd": 2.55,
-    "unidades": 2,
-    "desde": 1784941308604
-   },
-   "iniciadoEm": 1784940989598,
-   "tiros": [
-    {
-     "h": "01:59",
-     "jogo": "Itália x Romênia",
-     "odd": 2.2,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "euro": 1784941557702
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784930673801,
    "premier": 1784931642504,
-   "euro": 1784934334899,
+   "euro": 1784941557702,
    "super": 1784933250210
   },
   "dias": {
@@ -347,12 +311,12 @@
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
-   "2026-07-24": 0.2
+   "2026-07-24": 2.3
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "goleada (3+)",
-   "n": 8,
+   "n": 9,
    "start": 1
   },
   "_obs": {}
@@ -489,8 +453,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "01:59",
@@ -510,13 +474,21 @@
    ],
    "gatilho": "placar 1-0 / 0-1",
    "alvo": {
-    "h": "01:59",
-    "jogo": "Itália x Romênia",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1784940988610
+    "h": "02:02",
+    "jogo": "Eslovênia x Escócia",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1784941308804
    },
-   "iniciadoEm": 1784940988610
+   "iniciadoEm": 1784940988610,
+   "tiros": [
+    {
+     "h": "01:59",
+     "jogo": "Itália x Romênia",
+     "odd": 1.95,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1784923170109,
@@ -538,7 +510,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "goleada (3+)",
-   "n": 8,
+   "n": 9,
    "start": 1
   },
   "_obs": {}
