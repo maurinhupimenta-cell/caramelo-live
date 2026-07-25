@@ -287,7 +287,37 @@
    "copa": 1785008604602,
    "euro": 1785009385012
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:51",
+     "jogo": "Leeds x Burnley",
+     "odd": 2.4
+    },
+    {
+     "h": "21:54",
+     "jogo": "Palace x City",
+     "odd": 2.05
+    },
+    {
+     "h": "21:57",
+     "jogo": "Wolverhampton x Liverpool",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "coluna :54",
+   "alvo": {
+    "h": "21:51",
+    "jogo": "Leeds x Burnley",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1785012117405
+   },
+   "iniciadoEm": 1785012117405
+  },
   "cooldown": {
    "copa": 1785008604602,
    "premier": 1785007071800,
@@ -309,9 +339,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":56",
-   "n": 20,
-   "start": 1
+   "chave": ":54",
+   "n": 21,
+   "start": 3
   },
   "_obs": {}
  },
@@ -501,7 +531,7 @@
    "tipo": "odd",
    "chave": "1.98",
    "n": 22,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
