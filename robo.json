@@ -292,7 +292,37 @@
    "euro": 1784954131203,
    "copa": 1784956027502
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:30",
+     "jogo": "Norwich x Leicester",
+     "odd": 2.25
+    },
+    {
+     "h": "06:33",
+     "jogo": "Chelsea x Everton",
+     "odd": 2.15
+    },
+    {
+     "h": "06:36",
+     "jogo": "Brighton x Leicester",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time Chelsea",
+   "alvo": {
+    "h": "06:30",
+    "jogo": "Norwich x Leicester",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1784956889599
+   },
+   "iniciadoEm": 1784956889599
+  },
   "cooldown": {
    "copa": 1784956027502,
    "premier": 1784952881306,
@@ -314,9 +344,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Gana",
-   "n": 9,
-   "start": 1
+   "chave": "Chelsea",
+   "n": 15,
+   "start": 3
   },
   "_obs": {}
  },
