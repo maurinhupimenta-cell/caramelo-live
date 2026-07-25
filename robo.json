@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -66.4,
-  "ciclos": 340,
-  "greens": 222,
+  "saldo": -64.4,
+  "ciclos": 341,
+  "greens": 223,
   "redsCiclo": 59,
   "aborts": 0,
   "descartes": 59,
   "historico": [
+   {
+    "quando": "2026-07-25T02:13:49.800Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "euro · República Tcheca x Eslovênia @3 (tiro 1) · gatilho: time França"
+   },
    {
     "quando": "2026-07-25T01:18:14.102Z",
     "resultado": "RED_CICLO",
@@ -283,52 +289,17 @@
     "resultado": "GREEN",
     "unidades": 2.2,
     "detalhe": "euro · Dinamarca x Turquia @2.6 (tiro 2) · gatilho: coluna :56"
-   },
-   {
-    "quando": "2026-07-24T16:04:14.105Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho time Brasil) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "premier": 1784942293907
+   "premier": 1784942293907,
+   "euro": 1784945629600
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:11",
-     "jogo": "República Tcheca x Eslovênia",
-     "odd": 3
-    },
-    {
-     "h": "03:14",
-     "jogo": "França x Itália",
-     "odd": 2.15
-    },
-    {
-     "h": "03:17",
-     "jogo": "Eslovênia x Albânia",
-     "odd": 3.1
-    }
-   ],
-   "gatilho": "time França",
-   "alvo": {
-    "h": "03:11",
-    "jogo": "República Tcheca x Eslovênia",
-    "odd": 3,
-    "unidades": 1,
-    "desde": 1784945167998
-   },
-   "iniciadoEm": 1784945167998
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784930673801,
    "premier": 1784942293907,
-   "euro": 1784941557702,
+   "euro": 1784945629600,
    "super": 1784933250210
   },
   "dias": {
@@ -341,7 +312,7 @@
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
-   "2026-07-24": -4.7
+   "2026-07-24": -2.7
   },
   "_gatilhoAtual": {
    "tipo": "time",
