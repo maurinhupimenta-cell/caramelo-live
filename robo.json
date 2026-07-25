@@ -296,8 +296,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "02:09",
@@ -317,11 +317,11 @@
    ],
    "gatilho": "placar goleada (3+)",
    "alvo": {
-    "h": "02:12",
-    "jogo": "Southampton x United",
-    "odd": 2.3,
-    "unidades": 2,
-    "desde": 1784941906110
+    "h": "02:15",
+    "jogo": "City x Everton",
+    "odd": 2.05,
+    "unidades": 4,
+    "desde": 1784942088106
    },
    "iniciadoEm": 1784941560108,
    "tiros": [
@@ -330,6 +330,12 @@
      "jogo": "Leicester x Chelsea",
      "odd": 2.25,
      "unidades": 1
+    },
+    {
+     "h": "02:12",
+     "jogo": "Southampton x United",
+     "odd": 2.3,
+     "unidades": 2
     }
    ]
   },
@@ -352,21 +358,27 @@
    "2026-07-24": 2.3
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 10,
-   "start": 1
+   "tipo": "time",
+   "chave": "Tottenham",
+   "n": 8,
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -55.3,
-  "ciclos": 365,
-  "greens": 247,
+  "saldo": -54.3,
+  "ciclos": 366,
+  "greens": 248,
   "redsCiclo": 44,
   "aborts": 0,
   "descartes": 74,
   "historico": [
+   {
+    "quando": "2026-07-25T01:11:46.599Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Leicester x Chelsea @1.95 (tiro 1) · gatilho: placar goleada (3+)"
+   },
    {
     "quando": "2026-07-25T01:05:58.099Z",
     "resultado": "GREEN",
@@ -480,52 +492,17 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho time Uruguai) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-24T16:38:32.502Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · Suíça x Turquia @2.02 (tiro 1) · gatilho: seq RGGRG"
    }
   ],
   "consumidas": {
-   "euro": 1784941557901
+   "euro": 1784941557901,
+   "premier": 1784941906399
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "02:09",
-     "jogo": "Leicester x Chelsea",
-     "odd": 1.95
-    },
-    {
-     "h": "02:12",
-     "jogo": "Southampton x United",
-     "odd": 2.02
-    },
-    {
-     "h": "02:15",
-     "jogo": "City x Everton",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "placar goleada (3+)",
-   "alvo": {
-    "h": "02:09",
-    "jogo": "Leicester x Chelsea",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1784941560303
-   },
-   "iniciadoEm": 1784941560303
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784941557901,
    "super": 1784934444611,
-   "premier": 1784934211008,
+   "premier": 1784941906399,
    "copa": 1784931393798
   },
   "dias": {
@@ -537,7 +514,7 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 16.2
+   "2026-07-24": 17.2
   },
   "_gatilhoAtual": {
    "tipo": "placar",
