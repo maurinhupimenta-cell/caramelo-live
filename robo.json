@@ -453,7 +453,37 @@
    "premier": 1784992491309,
    "copa": 1784992732600
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:29",
+     "jogo": "Inglaterra x Países Baixos",
+     "odd": 1.8
+    },
+    {
+     "h": "16:32",
+     "jogo": "Alemanha x Polônia",
+     "odd": 2.07
+    },
+    {
+     "h": "16:35",
+     "jogo": "Croácia x Ucrânia",
+     "odd": 2
+    }
+   ],
+   "gatilho": "seq RRRG",
+   "alvo": {
+    "h": "16:29",
+    "jogo": "Inglaterra x Países Baixos",
+    "odd": 1.8,
+    "unidades": 1,
+    "desde": 1784993161302
+   },
+   "iniciadoEm": 1784993161302
+  },
   "cooldown": {
    "euro": 1784985609704,
    "super": 1784934444611,
@@ -473,9 +503,9 @@
    "2026-07-25": 13.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Haiti",
-   "n": 12,
+   "tipo": "seq",
+   "chave": "RRRG",
+   "n": 22,
    "start": 1
   },
   "_obs": {}
