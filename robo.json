@@ -293,8 +293,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "19:09",
@@ -314,13 +314,21 @@
    ],
    "gatilho": "coluna :12",
    "alvo": {
-    "h": "19:09",
-    "jogo": "Everton x West Ham",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1785002386511
+    "h": "19:12",
+    "jogo": "Liverpool x Norwich",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1785003103198
    },
-   "iniciadoEm": 1785002386511
+   "iniciadoEm": 1785002386511,
+   "tiros": [
+    {
+     "h": "19:09",
+     "jogo": "Everton x West Ham",
+     "odd": 2.4,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784996721510,
@@ -342,10 +350,10 @@
    "2026-07-25": 13.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":12",
-   "n": 19,
-   "start": 3
+   "tipo": "time",
+   "chave": "Coreia do Sul",
+   "n": 10,
+   "start": 1
   },
   "_obs": {}
  },
