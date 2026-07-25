@@ -323,13 +323,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -45.9,
-  "ciclos": 374,
-  "greens": 256,
+  "saldo": -45,
+  "ciclos": 375,
+  "greens": 257,
   "redsCiclo": 44,
   "aborts": 0,
   "descartes": 74,
   "historico": [
+   {
+    "quando": "2026-07-25T08:24:45.104Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · Jordânia x Equador @1.87 (tiro 1) · gatilho: odd 2.07"
+   },
    {
     "quando": "2026-07-25T07:17:05.903Z",
     "resultado": "GREEN",
@@ -443,51 +449,17 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "euro · Suíça x Hungria @1.98 (tiro 3) · gatilho: coluna :53"
-   },
-   {
-    "quando": "2026-07-24T19:40:01.503Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time República Tcheca"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "09:22",
-     "jogo": "Jordânia x Equador",
-     "odd": 1.87
-    },
-    {
-     "h": "09:25",
-     "jogo": "Bélgica x Japão",
-     "odd": 2.07
-    },
-    {
-     "h": "09:28",
-     "jogo": "Croácia x Portugal",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "odd 2.07",
-   "alvo": {
-    "h": "09:22",
-    "jogo": "Jordânia x Equador",
-    "odd": 1.87,
-    "unidades": 1,
-    "desde": 1784967183502
-   },
-   "iniciadoEm": 1784967183502
+  "consumidas": {
+   "copa": 1784967885000
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784963825703,
    "super": 1784934444611,
    "premier": 1784946760500,
-   "copa": 1784963403500
+   "copa": 1784967885000
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -499,13 +471,13 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 6.5
+   "2026-07-25": 7.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.07",
+   "tipo": "seq",
+   "chave": "RRGR",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
