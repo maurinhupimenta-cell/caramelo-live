@@ -157,7 +157,7 @@
     "gatilho": "seq RRRRR"
    },
    "copa": {
-    "desde": 1784769908233,
+    "desde": 1784941069906,
     "gatilho": "seq RRRR"
    }
   }
@@ -292,7 +292,45 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "01:59",
+     "jogo": "Itália x Romênia",
+     "odd": 2.2
+    },
+    {
+     "h": "02:02",
+     "jogo": "Eslovênia x Escócia",
+     "odd": 2.55
+    },
+    {
+     "h": "02:05",
+     "jogo": "Geórgia x Dinamarca",
+     "odd": 2.45
+    }
+   ],
+   "gatilho": "placar 1-0 / 0-1",
+   "alvo": {
+    "h": "02:02",
+    "jogo": "Eslovênia x Escócia",
+    "odd": 2.55,
+    "unidades": 2,
+    "desde": 1784941308604
+   },
+   "iniciadoEm": 1784940989598,
+   "tiros": [
+    {
+     "h": "01:59",
+     "jogo": "Itália x Romênia",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1784930673801,
    "premier": 1784931642504,
@@ -312,17 +350,12 @@
    "2026-07-24": 0.2
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":56",
-   "n": 23,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 8,
    "start": 1
   },
-  "_obs": {
-   "euro": {
-    "desde": 1784940988605,
-    "gatilho": "placar 1-0 / 0-1"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -56.6,
@@ -454,7 +487,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "01:59",
+     "jogo": "Itália x Romênia",
+     "odd": 1.95
+    },
+    {
+     "h": "02:02",
+     "jogo": "Eslovênia x Escócia",
+     "odd": 2.15
+    },
+    {
+     "h": "02:05",
+     "jogo": "Geórgia x Dinamarca",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "placar 1-0 / 0-1",
+   "alvo": {
+    "h": "01:59",
+    "jogo": "Itália x Romênia",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1784940988610
+   },
+   "iniciadoEm": 1784940988610
+  },
   "cooldown": {
    "euro": 1784923170109,
    "super": 1784934444611,
@@ -473,9 +536,9 @@
    "2026-07-24": 14.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.07",
-   "n": 15,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
