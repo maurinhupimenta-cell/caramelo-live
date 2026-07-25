@@ -293,8 +293,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "10:47",
@@ -314,13 +314,21 @@
    ],
    "gatilho": "seq RRGG",
    "alvo": {
-    "h": "10:47",
-    "jogo": "Romênia x Espanha",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1784972625398
+    "h": "10:50",
+    "jogo": "Turquia x Escócia",
+    "odd": 2.4,
+    "unidades": 2,
+    "desde": 1784973025107
    },
-   "iniciadoEm": 1784972625398
+   "iniciadoEm": 1784972625398,
+   "tiros": [
+    {
+     "h": "10:47",
+     "jogo": "Romênia x Espanha",
+     "odd": 2.02,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784969384399,
@@ -342,10 +350,10 @@
    "2026-07-25": 7.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":56",
-   "n": 10,
-   "start": 2
+   "tipo": "odd",
+   "chave": "2.1",
+   "n": 8,
+   "start": 1
   },
   "_obs": {}
  },
