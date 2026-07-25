@@ -157,13 +157,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -45.6,
-  "ciclos": 394,
+  "saldo": -52.6,
+  "ciclos": 395,
   "greens": 260,
-  "redsCiclo": 65,
+  "redsCiclo": 66,
   "aborts": 0,
   "descartes": 69,
   "historico": [
+   {
+    "quando": "2026-07-25T22:02:36.006Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: coluna :54"
+   },
    {
     "quando": "2026-07-25T21:44:24.002Z",
     "resultado": "GREEN",
@@ -277,66 +283,17 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho seq RRGG) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-25T14:10:13.204Z",
-    "resultado": "GREEN",
-    "unidades": 3.2,
-    "detalhe": "copa · Iraque x Panamá @2.55 (tiro 3) · gatilho: seq GRGRR"
    }
   ],
   "consumidas": {
    "euro": 1785013381503,
-   "super": 1785015863807
+   "super": 1785015863807,
+   "premier": 1785016955897
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "22:54",
-     "jogo": "Everton x Southampton",
-     "odd": 2.25
-    },
-    {
-     "h": "22:57",
-     "jogo": "Newcastle x Liverpool",
-     "odd": 2.07
-    },
-    {
-     "h": "23:00",
-     "jogo": "Watford x Leicester",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "coluna :54",
-   "alvo": {
-    "h": "23:00",
-    "jogo": "Watford x Leicester",
-    "odd": 2.3,
-    "unidades": 4,
-    "desde": 1785016785110
-   },
-   "iniciadoEm": 1785016455501,
-   "tiros": [
-    {
-     "h": "22:54",
-     "jogo": "Everton x Southampton",
-     "odd": 2.25,
-     "unidades": 1
-    },
-    {
-     "h": "22:57",
-     "jogo": "Newcastle x Liverpool",
-     "odd": 2.07,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785008604602,
-   "premier": 1785012844403,
+   "premier": 1785016955897,
    "euro": 1785013381503,
    "super": 1785015863807
   },
@@ -351,7 +308,7 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 17.8
+   "2026-07-25": 10.8
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
@@ -496,8 +453,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "22:54",
@@ -517,11 +474,11 @@
    ],
    "gatilho": "coluna :54",
    "alvo": {
-    "h": "22:57",
-    "jogo": "Newcastle x Liverpool",
-    "odd": 1.85,
-    "unidades": 2,
-    "desde": 1785016614399
+    "h": "23:00",
+    "jogo": "Watford x Leicester",
+    "odd": 2,
+    "unidades": 4,
+    "desde": 1785016785400
    },
    "iniciadoEm": 1785016504498,
    "tiros": [
@@ -530,6 +487,12 @@
      "jogo": "Everton x Southampton",
      "odd": 1.98,
      "unidades": 1
+    },
+    {
+     "h": "22:57",
+     "jogo": "Newcastle x Liverpool",
+     "odd": 1.85,
+     "unidades": 2
     }
    ]
   },
