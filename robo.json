@@ -319,13 +319,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -28.2,
-  "ciclos": 400,
-  "greens": 280,
+  "saldo": -26.8,
+  "ciclos": 401,
+  "greens": 281,
   "redsCiclo": 45,
   "aborts": 0,
   "descartes": 75,
   "historico": [
+   {
+    "quando": "2026-07-25T20:10:01.701Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "copa · Alemanha x Suécia @2.1 (tiro 3) · gatilho: time Haiti"
+   },
    {
     "quando": "2026-07-25T19:56:25.598Z",
     "resultado": "GREEN",
@@ -439,68 +445,19 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · Cabo Verde x Panamá @2 (tiro 1) · gatilho: time Uzbequistão"
-   },
-   {
-    "quando": "2026-07-25T11:00:22.002Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "premier · City x Palace @1.95 (tiro 2) · gatilho: time City"
    }
   ],
   "consumidas": {
    "premier": 1785006889702,
-   "euro": 1785009385398
+   "euro": 1785009385398,
+   "copa": 1785010201501
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "21:01",
-     "jogo": "Senegal x Croácia",
-     "odd": 2.15
-    },
-    {
-     "h": "21:04",
-     "jogo": "Haiti x Inglaterra",
-     "odd": 1.93
-    },
-    {
-     "h": "21:07",
-     "jogo": "Alemanha x Suécia",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "time Haiti",
-   "alvo": {
-    "h": "21:07",
-    "jogo": "Alemanha x Suécia",
-    "odd": 2.1,
-    "unidades": 4,
-    "desde": 1785010040909
-   },
-   "iniciadoEm": 1785009387011,
-   "tiros": [
-    {
-     "h": "21:01",
-     "jogo": "Senegal x Croácia",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "21:04",
-     "jogo": "Haiti x Inglaterra",
-     "odd": 1.93,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785009385398,
    "super": 1784934444611,
    "premier": 1785006889702,
-   "copa": 1785005365812
+   "copa": 1785010201501
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -512,13 +469,13 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 24.2
+   "2026-07-25": 25.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Haiti",
+   "tipo": "seq",
+   "chave": "GRRRG",
    "n": 16,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
