@@ -161,12 +161,18 @@
  },
  "o25": {
   "saldo": -68.1,
-  "ciclos": 373,
+  "ciclos": 374,
   "greens": 243,
   "redsCiclo": 64,
   "aborts": 0,
-  "descartes": 66,
+  "descartes": 67,
   "historico": [
+   {
+    "quando": "2026-07-25T13:59:11.008Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho seq GRGRR) — liga REARMADA"
+   },
    {
     "quando": "2026-07-25T13:16:26.207Z",
     "resultado": "GREEN",
@@ -280,16 +286,9 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "euro · Suíça x Turquia @2.35 (tiro 1) · gatilho: coluna :17"
-   },
-   {
-    "quando": "2026-07-25T07:05:05.304Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :17) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "copa": 1784984111202,
    "euro": 1784984690809,
    "premier": 1784985386099
   },
@@ -319,7 +318,12 @@
    "n": 14,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1784987951008,
+    "gatilho": "seq GRGRR"
+   }
+  }
  },
  "ambas": {
   "saldo": -42.1,
