@@ -289,10 +289,39 @@
    }
   ],
   "consumidas": {
-   "premier": 1784985386099,
    "copa": 1784988612702
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:14",
+     "jogo": "Albânia x Dinamarca",
+     "odd": 2.75
+    },
+    {
+     "h": "15:17",
+     "jogo": "Portugal x Países Baixos",
+     "odd": 2.07
+    },
+    {
+     "h": "15:20",
+     "jogo": "Suíça x Inglaterra",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "seq RRGG",
+   "alvo": {
+    "h": "15:14",
+    "jogo": "Albânia x Dinamarca",
+    "odd": 2.75,
+    "unidades": 1,
+    "desde": 1784988674398
+   },
+   "iniciadoEm": 1784988674398
+  },
   "cooldown": {
    "copa": 1784988612702,
    "premier": 1784985386099,
@@ -314,16 +343,11 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRGRR",
-   "n": 11,
+   "chave": "RRGG",
+   "n": 16,
    "start": 1
   },
-  "_obs": {
-   "euro": {
-    "desde": 1784988672510,
-    "gatilho": "seq RRGG"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -40.9,
