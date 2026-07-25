@@ -321,13 +321,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -33.6,
-  "ciclos": 395,
-  "greens": 275,
+  "saldo": -32.5,
+  "ciclos": 396,
+  "greens": 276,
   "redsCiclo": 45,
   "aborts": 0,
   "descartes": 75,
   "historico": [
+   {
+    "quando": "2026-07-25T17:56:45.705Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Leicester x Watford @2.05 (tiro 2) · gatilho: coluna :54"
+   },
    {
     "quando": "2026-07-25T17:28:21.506Z",
     "resultado": "GREEN",
@@ -441,60 +447,17 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "premier · Watford x West Ham @2.15 (tiro 2) · gatilho: coluna :27"
-   },
-   {
-    "quando": "2026-07-25T08:28:45.198Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · Inglaterra x Ucrânia @1.95 (tiro 1) · gatilho: seq RRGR"
    }
   ],
   "consumidas": {
-   "copa": 1785000501312
+   "copa": 1785000501312,
+   "premier": 1785002205504
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "18:51",
-     "jogo": "Wolverhampton x Brentford",
-     "odd": 1.93
-    },
-    {
-     "h": "18:54",
-     "jogo": "Leicester x Watford",
-     "odd": 2.05
-    },
-    {
-     "h": "18:57",
-     "jogo": "Leeds x United",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "coluna :54",
-   "alvo": {
-    "h": "18:54",
-    "jogo": "Leicester x Watford",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1785002064407
-   },
-   "iniciadoEm": 1785001586708,
-   "tiros": [
-    {
-     "h": "18:51",
-     "jogo": "Wolverhampton x Brentford",
-     "odd": 1.93,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784997687306,
    "super": 1784934444611,
-   "premier": 1784997984801,
+   "premier": 1785002205504,
    "copa": 1785000501312
   },
   "dias": {
@@ -507,7 +470,7 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 18.8
+   "2026-07-25": 19.9
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
