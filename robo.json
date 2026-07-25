@@ -291,8 +291,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "20:47",
@@ -312,13 +312,21 @@
    ],
    "gatilho": "seq GRRGG",
    "alvo": {
-    "h": "20:47",
-    "jogo": "Espanha x Áustria",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785008667505
+    "h": "20:50",
+    "jogo": "Croácia x Eslováquia",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1785009021302
    },
-   "iniciadoEm": 1785008667505
+   "iniciadoEm": 1785008667505,
+   "tiros": [
+    {
+     "h": "20:47",
+     "jogo": "Espanha x Áustria",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785008604602,
@@ -343,7 +351,7 @@
    "tipo": "coluna",
    "chave": ":56",
    "n": 20,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -529,10 +537,10 @@
    "2026-07-25": 23.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRG",
-   "n": 14,
-   "start": 1
+   "tipo": "time",
+   "chave": "África do Sul",
+   "n": 16,
+   "start": 2
   },
   "_obs": {}
  }
