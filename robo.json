@@ -289,7 +289,37 @@
    "euro": 1785013381503,
    "super": 1785015863807
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:54",
+     "jogo": "Everton x Southampton",
+     "odd": 2.25
+    },
+    {
+     "h": "22:57",
+     "jogo": "Newcastle x Liverpool",
+     "odd": 2.07
+    },
+    {
+     "h": "23:00",
+     "jogo": "Watford x Leicester",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "coluna :54",
+   "alvo": {
+    "h": "22:54",
+    "jogo": "Everton x Southampton",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785016455501
+   },
+   "iniciadoEm": 1785016455501
+  },
   "cooldown": {
    "copa": 1785008604602,
    "premier": 1785012844403,
@@ -311,8 +341,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":43",
-   "n": 19,
+   "chave": ":54",
+   "n": 22,
    "start": 1
   },
   "_obs": {}
@@ -447,7 +477,6 @@
    }
   ],
   "consumidas": {
-   "premier": 1785012844605,
    "copa": 1785014880303
   },
   "ciclo": {
