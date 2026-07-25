@@ -160,13 +160,25 @@
   }
  },
  "o25": {
-  "saldo": -58.7,
-  "ciclos": 367,
-  "greens": 240,
+  "saldo": -57.4,
+  "ciclos": 369,
+  "greens": 241,
   "redsCiclo": 62,
   "aborts": 0,
-  "descartes": 65,
+  "descartes": 66,
   "historico": [
+   {
+    "quando": "2026-07-25T11:25:03.201Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho coluna :37) — liga REARMADA"
+   },
+   {
+    "quando": "2026-07-25T11:19:51.102Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "premier · Tottenham x Newcastle @2.25 (tiro 1) · gatilho: seq GRGRR"
+   },
    {
     "quando": "2026-07-25T11:19:45.106Z",
     "resultado": "DESCARTADO",
@@ -274,57 +286,16 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "premier · Norwich x Leicester @2.25 (tiro 1) · gatilho: time Chelsea"
-   },
-   {
-    "quando": "2026-07-25T05:07:07.702Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "copa · Uruguai x RD Congo @2.15 (tiro 1) · gatilho: seq RRRR"
-   },
-   {
-    "quando": "2026-07-25T04:35:31.399Z",
-    "resultado": "GREEN",
-    "unidades": 2.1,
-    "detalhe": "euro · Geórgia x Polônia @2.55 (tiro 2) · gatilho: time Geórgia"
    }
   ],
   "consumidas": {
-   "euro": 1784977005099
+   "euro": 1784977005099,
+   "premier": 1784978390905
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "12:13",
-     "jogo": "Qatar x França",
-     "odd": 2.25
-    },
-    {
-     "h": "12:16",
-     "jogo": "Costa do Marfim x México",
-     "odd": 2.15
-    },
-    {
-     "h": "12:19",
-     "jogo": "Coreia do Sul x Inglaterra",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "time México",
-   "alvo": {
-    "h": "12:13",
-    "jogo": "Qatar x França",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1784977446809
-   },
-   "iniciadoEm": 1784977446809
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784973843802,
-   "premier": 1784974668100,
+   "premier": 1784978390905,
    "euro": 1784977005099,
    "super": 1784962725800
   },
@@ -339,15 +310,20 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 4.7
+   "2026-07-25": 6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "México",
-   "n": 11,
-   "start": 2
+   "tipo": "seq",
+   "chave": "GRGRR",
+   "n": 8,
+   "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1784978703201,
+    "gatilho": "coluna :37"
+   }
+  }
  },
  "ambas": {
   "saldo": -37.9,
