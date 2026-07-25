@@ -294,8 +294,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:51",
@@ -315,13 +315,21 @@
    ],
    "gatilho": "coluna :54",
    "alvo": {
-    "h": "17:51",
-    "jogo": "Islington x Liverpool",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1784997717905
+    "h": "17:54",
+    "jogo": "Tottenham x Leicester",
+    "odd": 2.5,
+    "unidades": 2,
+    "desde": 1784998434404
    },
-   "iniciadoEm": 1784997717905
+   "iniciadoEm": 1784997717905,
+   "tiros": [
+    {
+     "h": "17:51",
+     "jogo": "Islington x Liverpool",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784996721510,
@@ -346,7 +354,7 @@
    "tipo": "coluna",
    "chave": ":54",
    "n": 17,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
