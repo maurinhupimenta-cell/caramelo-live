@@ -155,13 +155,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -50.5,
-  "ciclos": 397,
-  "greens": 262,
+  "saldo": -48.8,
+  "ciclos": 398,
+  "greens": 263,
   "redsCiclo": 66,
   "aborts": 0,
   "descartes": 69,
   "historico": [
+   {
+    "quando": "2026-07-25T23:18:40.403Z",
+    "resultado": "GREEN",
+    "unidades": 1.7,
+    "detalhe": "super · Guayaquil x Penarol @2.35 (tiro 2) · gatilho: odd 2.35"
+   },
    {
     "quando": "2026-07-25T22:52:21.204Z",
     "resultado": "GREEN",
@@ -275,62 +281,19 @@
     "resultado": "GREEN",
     "unidades": 3.2,
     "detalhe": "copa · África do Sul x Japão @2.55 (tiro 3) · gatilho: time Coreia do Sul"
-   },
-   {
-    "quando": "2026-07-25T14:33:02.799Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "premier · Norwich x West Ham @2.45 (tiro 1) · gatilho: seq GRGRR"
    }
   ],
   "consumidas": {
    "euro": 1785019080807,
-   "copa": 1785019941007
+   "copa": 1785019941007,
+   "super": 1785021520300
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "00:13",
-     "jogo": "Asuncion x Itaquera",
-     "odd": 2.3
-    },
-    {
-     "h": "00:16",
-     "jogo": "Guayaquil x Penarol",
-     "odd": 2.35
-    },
-    {
-     "h": "00:19",
-     "jogo": "Montevideo x La Boca",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "odd 2.35",
-   "alvo": {
-    "h": "00:16",
-    "jogo": "Guayaquil x Penarol",
-    "odd": 2.35,
-    "unidades": 2,
-    "desde": 1785021362504
-   },
-   "iniciadoEm": 1785020661307,
-   "tiros": [
-    {
-     "h": "00:13",
-     "jogo": "Asuncion x Itaquera",
-     "odd": 2.3,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785019941007,
    "premier": 1785016955897,
    "euro": 1785019080807,
-   "super": 1785015863807
+   "super": 1785021520300
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -343,7 +306,7 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 12.9
+   "2026-07-25": 14.6
   },
   "_gatilhoAtual": {
    "tipo": "odd",
