@@ -294,7 +294,37 @@
   "consumidas": {
    "premier": 1784948016607
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:20",
+     "jogo": "Suíça x Itália",
+     "odd": 2.2
+    },
+    {
+     "h": "04:23",
+     "jogo": "França x Alemanha",
+     "odd": 2.05
+    },
+    {
+     "h": "04:26",
+     "jogo": "Eslováquia x Turquia",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "seq RRRRR",
+   "alvo": {
+    "h": "04:20",
+    "jogo": "Suíça x Itália",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1784949450398
+   },
+   "iniciadoEm": 1784949450398
+  },
   "cooldown": {
    "copa": 1784930673801,
    "premier": 1784948016607,
@@ -314,8 +344,8 @@
    "2026-07-24": -1.7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Chelsea",
+   "tipo": "seq",
+   "chave": "RRRRR",
    "n": 8,
    "start": 1
   },
