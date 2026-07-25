@@ -160,13 +160,19 @@
   }
  },
  "o25": {
-  "saldo": -54.3,
-  "ciclos": 382,
-  "greens": 250,
+  "saldo": -51.5,
+  "ciclos": 383,
+  "greens": 251,
   "redsCiclo": 64,
   "aborts": 0,
   "descartes": 68,
   "historico": [
+   {
+    "quando": "2026-07-25T16:59:45.310Z",
+    "resultado": "GREEN",
+    "unidades": 2.8,
+    "detalhe": "premier · West Ham x United @2.45 (tiro 3) · gatilho: coluna :54"
+   },
    {
     "quando": "2026-07-25T16:25:21.706Z",
     "resultado": "GREEN",
@@ -280,65 +286,16 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "premier · Chelsea x Norwich @2.2 (tiro 2) · gatilho: time Chelsea"
-   },
-   {
-    "quando": "2026-07-25T10:04:04.000Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: odd 2.1"
    }
   ],
   "consumidas": {
-   "copa": 1784996721510
+   "copa": 1784996721510,
+   "premier": 1784998785207
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "17:51",
-     "jogo": "Islington x Liverpool",
-     "odd": 2.2
-    },
-    {
-     "h": "17:54",
-     "jogo": "Tottenham x Leicester",
-     "odd": 2.5
-    },
-    {
-     "h": "17:57",
-     "jogo": "West Ham x United",
-     "odd": 2.45
-    }
-   ],
-   "gatilho": "coluna :54",
-   "alvo": {
-    "h": "17:57",
-    "jogo": "West Ham x United",
-    "odd": 2.45,
-    "unidades": 4,
-    "desde": 1784998604205
-   },
-   "iniciadoEm": 1784997717905,
-   "tiros": [
-    {
-     "h": "17:51",
-     "jogo": "Islington x Liverpool",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "17:54",
-     "jogo": "Tottenham x Leicester",
-     "odd": 2.5,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784996721510,
-   "premier": 1784993922801,
+   "premier": 1784998785207,
    "euro": 1784994962497,
    "super": 1784962725800
   },
@@ -353,7 +310,7 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 9.1
+   "2026-07-25": 11.9
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
