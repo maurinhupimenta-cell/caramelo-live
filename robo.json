@@ -1,12 +1,18 @@
 {
  "o35": {
   "saldo": -151.1,
-  "ciclos": 172,
+  "ciclos": 173,
   "greens": 59,
   "redsCiclo": 74,
   "aborts": 0,
-  "descartes": 39,
+  "descartes": 40,
   "historico": [
+   {
+    "quando": "2026-07-25T19:12:08.909Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho seq GRRG) — liga REARMADA"
+   },
    {
     "quando": "2026-07-25T07:49:25.006Z",
     "resultado": "RED_CICLO",
@@ -120,16 +126,40 @@
     "resultado": "GREEN",
     "unidades": 2.8,
     "detalhe": "super · Sao Paulo x Agua Branca @3.75 (tiro 1) · gatilho: placar empate 2-2"
-   },
-   {
-    "quando": "2026-07-21T14:41:41.749Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:15",
+     "jogo": "West Ham x Burnley",
+     "odd": 4.75
+    },
+    {
+     "h": "20:18",
+     "jogo": "Tottenham x Newcastle",
+     "odd": 4.5
+    },
+    {
+     "h": "20:21",
+     "jogo": "Islington x City",
+     "odd": 4
+    }
+   ],
+   "gatilho": "seq GRRG",
+   "alvo": {
+    "h": "20:15",
+    "jogo": "West Ham x Burnley",
+    "odd": 4.75,
+    "unidades": 1,
+    "desde": 1785006730903
+   },
+   "iniciadoEm": 1785006730903
+  },
   "cooldown": {
    "copa": 1784952406602,
    "premier": 1784706946337,
@@ -147,17 +177,12 @@
    "2026-07-25": 10
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":43",
-   "n": 8,
+   "tipo": "seq",
+   "chave": "GRRG",
+   "n": 9,
    "start": 1
   },
-  "_obs": {
-   "premier": {
-    "desde": 1784768934532,
-    "gatilho": "seq RRRRR"
-   }
-  }
+  "_obs": {}
  },
  "o25": {
   "saldo": -53.8,
@@ -507,7 +532,7 @@
    "tipo": "coluna",
    "chave": ":15",
    "n": 20,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
