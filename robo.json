@@ -452,7 +452,45 @@
   "consumidas": {
    "copa": 1785000501312
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "18:51",
+     "jogo": "Wolverhampton x Brentford",
+     "odd": 1.93
+    },
+    {
+     "h": "18:54",
+     "jogo": "Leicester x Watford",
+     "odd": 2.05
+    },
+    {
+     "h": "18:57",
+     "jogo": "Leeds x United",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "coluna :54",
+   "alvo": {
+    "h": "18:54",
+    "jogo": "Leicester x Watford",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1785002064407
+   },
+   "iniciadoEm": 1785001586708,
+   "tiros": [
+    {
+     "h": "18:51",
+     "jogo": "Wolverhampton x Brentford",
+     "odd": 1.93,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1784997687306,
    "super": 1784934444611,
@@ -472,9 +510,9 @@
    "2026-07-25": 18.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Haiti",
-   "n": 13,
+   "tipo": "coluna",
+   "chave": ":54",
+   "n": 18,
    "start": 1
   },
   "_obs": {}
