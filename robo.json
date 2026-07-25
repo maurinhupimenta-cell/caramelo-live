@@ -327,13 +327,19 @@
   }
  },
  "ambas": {
-  "saldo": -53.3,
-  "ciclos": 367,
-  "greens": 249,
+  "saldo": -52.4,
+  "ciclos": 368,
+  "greens": 250,
   "redsCiclo": 44,
   "aborts": 0,
   "descartes": 74,
   "historico": [
+   {
+    "quando": "2026-07-25T02:32:40.605Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Wolverhampton x Burnley @1.85 (tiro 1) · gatilho: placar goleada (3+)"
+   },
    {
     "quando": "2026-07-25T02:23:09.403Z",
     "resultado": "GREEN",
@@ -447,52 +453,17 @@
     "resultado": "GREEN",
     "unidades": 0.7,
     "detalhe": "premier · Palace x City @1.87 (tiro 2) · gatilho: coluna :24"
-   },
-   {
-    "quando": "2026-07-24T16:59:31.999Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Uruguai"
    }
   ],
   "consumidas": {
-   "euro": 1784946189202
+   "euro": 1784946189202,
+   "premier": 1784946760500
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:30",
-     "jogo": "Wolverhampton x Burnley",
-     "odd": 1.85
-    },
-    {
-     "h": "03:33",
-     "jogo": "Liverpool x West Ham",
-     "odd": 2.15
-    },
-    {
-     "h": "03:36",
-     "jogo": "Everton x Aston",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "placar goleada (3+)",
-   "alvo": {
-    "h": "03:30",
-    "jogo": "Wolverhampton x Burnley",
-    "odd": 1.85,
-    "unidades": 1,
-    "desde": 1784946400905
-   },
-   "iniciadoEm": 1784946400905
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784946189202,
    "super": 1784934444611,
-   "premier": 1784941906399,
+   "premier": 1784946760500,
    "copa": 1784931393798
   },
   "dias": {
@@ -504,7 +475,7 @@
    "2026-07-21": -3.2,
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
-   "2026-07-24": 18.2
+   "2026-07-24": 19.1
   },
   "_gatilhoAtual": {
    "tipo": "placar",
