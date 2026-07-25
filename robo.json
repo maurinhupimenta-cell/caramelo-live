@@ -163,13 +163,19 @@
   }
  },
  "o25": {
-  "saldo": -59.4,
-  "ciclos": 339,
+  "saldo": -66.4,
+  "ciclos": 340,
   "greens": 222,
-  "redsCiclo": 58,
+  "redsCiclo": 59,
   "aborts": 0,
   "descartes": 59,
   "historico": [
+   {
+    "quando": "2026-07-25T01:18:14.102Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: placar goleada (3+)"
+   },
    {
     "quando": "2026-07-25T01:05:57.897Z",
     "resultado": "GREEN",
@@ -283,65 +289,16 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho time Brasil) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-24T15:50:50.802Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "premier · United x Liverpool @2.2 (tiro 3) · gatilho: odd 2.02"
    }
   ],
   "consumidas": {
-   "euro": 1784941557702
+   "euro": 1784941557702,
+   "premier": 1784942293907
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "02:09",
-     "jogo": "Leicester x Chelsea",
-     "odd": 2.25
-    },
-    {
-     "h": "02:12",
-     "jogo": "Southampton x United",
-     "odd": 2.3
-    },
-    {
-     "h": "02:15",
-     "jogo": "City x Everton",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "placar goleada (3+)",
-   "alvo": {
-    "h": "02:15",
-    "jogo": "City x Everton",
-    "odd": 2.05,
-    "unidades": 4,
-    "desde": 1784942088106
-   },
-   "iniciadoEm": 1784941560108,
-   "tiros": [
-    {
-     "h": "02:09",
-     "jogo": "Leicester x Chelsea",
-     "odd": 2.25,
-     "unidades": 1
-    },
-    {
-     "h": "02:12",
-     "jogo": "Southampton x United",
-     "odd": 2.3,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784930673801,
-   "premier": 1784931642504,
+   "premier": 1784942293907,
    "euro": 1784941557702,
    "super": 1784933250210
   },
@@ -355,13 +312,13 @@
    "2026-07-21": -22.3,
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
-   "2026-07-24": 2.3
+   "2026-07-24": -4.7
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Tottenham",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
