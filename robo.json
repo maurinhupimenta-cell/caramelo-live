@@ -155,13 +155,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -48.2,
-  "ciclos": 392,
-  "greens": 258,
+  "saldo": -47,
+  "ciclos": 393,
+  "greens": 259,
   "redsCiclo": 65,
   "aborts": 0,
   "descartes": 69,
   "historico": [
+   {
+    "quando": "2026-07-25T21:03:01.702Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Suíça x Eslováquia @2.2 (tiro 1) · gatilho: seq RRGGR"
+   },
    {
     "quando": "2026-07-25T20:54:04.603Z",
     "resultado": "GREEN",
@@ -275,52 +281,17 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho seq GRGRR) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-25T13:16:26.207Z",
-    "resultado": "GREEN",
-    "unidades": 1.6,
-    "detalhe": "premier · Aston x Norwich @2.3 (tiro 2) · gatilho: coluna :12"
    }
   ],
   "consumidas": {
-   "premier": 1785012844403
+   "premier": 1785012844403,
+   "euro": 1785013381503
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:59",
-     "jogo": "Suíça x Eslováquia",
-     "odd": 2.2
-    },
-    {
-     "h": "22:02",
-     "jogo": "Albânia x Escócia",
-     "odd": 2.55
-    },
-    {
-     "h": "22:05",
-     "jogo": "Portugal x Suíça",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "seq RRGGR",
-   "alvo": {
-    "h": "21:59",
-    "jogo": "Suíça x Eslováquia",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785012999904
-   },
-   "iniciadoEm": 1785012999904
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785008604602,
    "premier": 1785012844403,
-   "euro": 1785009385012,
+   "euro": 1785013381503,
    "super": 1784962725800
   },
   "dias": {
@@ -334,7 +305,7 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 15.2
+   "2026-07-25": 16.4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -474,7 +445,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1785009385398,
    "copa": 1785010201501,
    "premier": 1785012844605
   },
