@@ -453,7 +453,45 @@
   "consumidas": {
    "premier": 1784971964604
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "10:35",
+     "jogo": "Espanha x Sérvia",
+     "odd": 2
+    },
+    {
+     "h": "10:38",
+     "jogo": "Polônia x Áustria",
+     "odd": 2.1
+    },
+    {
+     "h": "10:41",
+     "jogo": "Suíça x Itália",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "time Espanha",
+   "alvo": {
+    "h": "10:38",
+    "jogo": "Polônia x Áustria",
+    "odd": 2.1,
+    "unidades": 2,
+    "desde": 1784972265103
+   },
+   "iniciadoEm": 1784971966700,
+   "tiros": [
+    {
+     "h": "10:35",
+     "jogo": "Espanha x Sérvia",
+     "odd": 2,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1784968124999,
    "super": 1784934444611,
@@ -474,7 +512,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":37",
+   "chave": ":40",
    "n": 10,
    "start": 1
   },
