@@ -161,12 +161,18 @@
  },
  "o25": {
   "saldo": -66.6,
-  "ciclos": 353,
+  "ciclos": 354,
   "greens": 231,
   "redsCiclo": 61,
   "aborts": 0,
-  "descartes": 61,
+  "descartes": 62,
   "historico": [
+   {
+    "quando": "2026-07-25T07:05:05.304Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :17) — liga REARMADA"
+   },
    {
     "quando": "2026-07-25T06:58:45.905Z",
     "resultado": "GREEN",
@@ -280,12 +286,6 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "premier · Liverpool x Norwich @2.2 (tiro 2) · gatilho: seq GRGRG"
-   },
-   {
-    "quando": "2026-07-24T22:04:33.999Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Croácia"
    }
   ],
   "consumidas": {
@@ -318,7 +318,12 @@
    "n": 11,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1784963105304,
+    "gatilho": "coluna :17"
+   }
+  }
  },
  "ambas": {
   "saldo": -48.1,
@@ -508,10 +513,10 @@
    "2026-07-25": 4.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":08",
+   "tipo": "time",
+   "chave": "Portugal",
    "n": 8,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
