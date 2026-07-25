@@ -160,13 +160,19 @@
   }
  },
  "o25": {
-  "saldo": -57.2,
-  "ciclos": 360,
-  "greens": 236,
+  "saldo": -56,
+  "ciclos": 361,
+  "greens": 237,
   "redsCiclo": 61,
   "aborts": 0,
   "descartes": 63,
   "historico": [
+   {
+    "quando": "2026-07-25T09:11:38.400Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · Burnley x Leicester @2.2 (tiro 1) · gatilho: coluna :12"
+   },
    {
     "quando": "2026-07-25T08:49:44.600Z",
     "resultado": "GREEN",
@@ -280,52 +286,17 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho time Watford) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-25T02:13:49.800Z",
-    "resultado": "GREEN",
-    "unidades": 2,
-    "detalhe": "euro · República Tcheca x Eslovênia @3 (tiro 1) · gatilho: time França"
    }
   ],
   "consumidas": {
    "euro": 1784968667709,
-   "copa": 1784969384399
+   "copa": 1784969384399,
+   "premier": 1784970698204
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "10:09",
-     "jogo": "Burnley x Leicester",
-     "odd": 2.2
-    },
-    {
-     "h": "10:12",
-     "jogo": "Norwich x Watford",
-     "odd": 2.25
-    },
-    {
-     "h": "10:15",
-     "jogo": "Brentford x Everton",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "coluna :12",
-   "alvo": {
-    "h": "10:09",
-    "jogo": "Burnley x Leicester",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1784970000201
-   },
-   "iniciadoEm": 1784970000201
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784969384399,
-   "premier": 1784966151508,
+   "premier": 1784970698204,
    "euro": 1784968667709,
    "super": 1784962725800
   },
@@ -340,13 +311,13 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 6.2
+   "2026-07-25": 7.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":12",
-   "n": 10,
-   "start": 3
+   "tipo": "odd",
+   "chave": "2.35",
+   "n": 8,
+   "start": 1
   },
   "_obs": {}
  },
