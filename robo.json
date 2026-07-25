@@ -292,7 +292,45 @@
    "euro": 1784989032299,
    "premier": 1784989982602
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "16:10",
+     "jogo": "EUA x Coreia do Sul",
+     "odd": 2.4
+    },
+    {
+     "h": "16:13",
+     "jogo": "Países Baixos x Equador",
+     "odd": 2.2
+    },
+    {
+     "h": "16:16",
+     "jogo": "África do Sul x Japão",
+     "odd": 2.55
+    }
+   ],
+   "gatilho": "time Coreia do Sul",
+   "alvo": {
+    "h": "16:13",
+    "jogo": "Países Baixos x Equador",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1784992440902
+   },
+   "iniciadoEm": 1784992244909,
+   "tiros": [
+    {
+     "h": "16:10",
+     "jogo": "EUA x Coreia do Sul",
+     "odd": 2.4,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1784988612702,
    "premier": 1784989982602,
@@ -314,8 +352,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRGRR",
-   "n": 10,
+   "chave": "RRRGG",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
@@ -449,9 +487,7 @@
     "detalhe": "copa · Canadá x África do Sul @2.2 (tiro 1) · gatilho: odd 2.1"
    }
   ],
-  "consumidas": {
-   "copa": 1784988613298
-  },
+  "consumidas": {},
   "ciclo": {
    "liga": "premier",
    "degrau": 0,
@@ -502,10 +538,10 @@
    "2026-07-25": 11.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":15",
-   "n": 16,
-   "start": 1
+   "tipo": "time",
+   "chave": "Austrália",
+   "n": 13,
+   "start": 2
   },
   "_obs": {}
  }
