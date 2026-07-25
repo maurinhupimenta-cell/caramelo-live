@@ -292,7 +292,37 @@
    "premier": 1784961929209,
    "super": 1784962725800
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:14",
+     "jogo": "Suíça x Turquia",
+     "odd": 2.35
+    },
+    {
+     "h": "08:17",
+     "jogo": "Áustria x Espanha",
+     "odd": 2.15
+    },
+    {
+     "h": "08:20",
+     "jogo": "Bélgica x Hungria",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "coluna :17",
+   "alvo": {
+    "h": "08:14",
+    "jogo": "Suíça x Turquia",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1784963106201
+   },
+   "iniciadoEm": 1784963106201
+  },
   "cooldown": {
    "copa": 1784956027502,
    "premier": 1784961929209,
@@ -313,17 +343,12 @@
    "2026-07-25": -3.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.45",
-   "n": 11,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":17",
+   "n": 8,
+   "start": 3
   },
-  "_obs": {
-   "euro": {
-    "desde": 1784963105304,
-    "gatilho": "coluna :17"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -48.1,
@@ -457,8 +482,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "08:01",
@@ -478,11 +503,11 @@
    ],
    "gatilho": "time Suíça",
    "alvo": {
-    "h": "08:04",
-    "jogo": "Colômbia x Suíça",
-    "odd": 1.98,
-    "unidades": 2,
-    "desde": 1784963023798
+    "h": "08:07",
+    "jogo": "Países Baixos x Nova Zelândia",
+    "odd": 2.05,
+    "unidades": 4,
+    "desde": 1784963202999
    },
    "iniciadoEm": 1784962363802,
    "tiros": [
@@ -491,6 +516,12 @@
      "jogo": "RD Congo x Turquia",
      "odd": 1.93,
      "unidades": 1
+    },
+    {
+     "h": "08:04",
+     "jogo": "Colômbia x Suíça",
+     "odd": 1.98,
+     "unidades": 2
     }
    ]
   },
@@ -516,7 +547,7 @@
    "tipo": "time",
    "chave": "Portugal",
    "n": 8,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
