@@ -292,7 +292,37 @@
    "copa": 1784996721510,
    "premier": 1784998785207
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:05",
+     "jogo": "Albânia x Ucrânia",
+     "odd": 2.62
+    },
+    {
+     "h": "18:08",
+     "jogo": "Romênia x Geórgia",
+     "odd": 2.25
+    },
+    {
+     "h": "18:11",
+     "jogo": "Inglaterra x Croácia",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "seq RRGG",
+   "alvo": {
+    "h": "18:05",
+    "jogo": "Albânia x Ucrânia",
+    "odd": 2.62,
+    "unidades": 1,
+    "desde": 1784998953106
+   },
+   "iniciadoEm": 1784998953106
+  },
   "cooldown": {
    "copa": 1784996721510,
    "premier": 1784998785207,
@@ -313,9 +343,9 @@
    "2026-07-25": 11.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":56",
-   "n": 17,
+   "tipo": "seq",
+   "chave": "RRGG",
+   "n": 20,
    "start": 1
   },
   "_obs": {}
