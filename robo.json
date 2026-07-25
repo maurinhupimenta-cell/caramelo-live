@@ -289,7 +289,37 @@
    "euro": 1785004525101,
    "premier": 1785007071800
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:37",
+     "jogo": "Panamá x Cabo Verde",
+     "odd": 2.3
+    },
+    {
+     "h": "20:40",
+     "jogo": "México x Haiti",
+     "odd": 2.15
+    },
+    {
+     "h": "20:43",
+     "jogo": "Egito x Cabo Verde",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time México",
+   "alvo": {
+    "h": "20:37",
+    "jogo": "Panamá x Cabo Verde",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1785007706308
+   },
+   "iniciadoEm": 1785007706308
+  },
   "cooldown": {
    "copa": 1785003987002,
    "premier": 1785007071800,
@@ -310,10 +340,10 @@
    "2026-07-25": 11
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":15",
-   "n": 20,
-   "start": 1
+   "tipo": "time",
+   "chave": "México",
+   "n": 17,
+   "start": 3
   },
   "_obs": {}
  },
