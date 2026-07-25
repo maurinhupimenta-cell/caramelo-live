@@ -1,12 +1,18 @@
 {
  "o35": {
   "saldo": -144.1,
-  "ciclos": 170,
+  "ciclos": 171,
   "greens": 59,
   "redsCiclo": 73,
   "aborts": 0,
-  "descartes": 38,
+  "descartes": 39,
   "historico": [
+   {
+    "quando": "2026-07-25T07:32:46.306Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :43) — liga REARMADA"
+   },
    {
     "quando": "2026-07-25T04:06:46.799Z",
     "resultado": "GREEN",
@@ -120,12 +126,6 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
-   },
-   {
-    "quando": "2026-07-21T14:16:13.056Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {},
@@ -156,6 +156,10 @@
    "premier": {
     "desde": 1784768934532,
     "gatilho": "seq RRRRR"
+   },
+   "super": {
+    "desde": 1784964766305,
+    "gatilho": "coluna :43"
    }
   }
  },
