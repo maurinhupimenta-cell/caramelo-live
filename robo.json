@@ -484,7 +484,37 @@
    "euro": 1784946189202,
    "premier": 1784946760500
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:16",
+     "jogo": "Canadá x África do Sul",
+     "odd": 2.2
+    },
+    {
+     "h": "04:19",
+     "jogo": "Panamá x Japão",
+     "odd": 2.1
+    },
+    {
+     "h": "04:22",
+     "jogo": "Escócia x Iraque",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "odd 2.1",
+   "alvo": {
+    "h": "04:16",
+    "jogo": "Canadá x África do Sul",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1784949527006
+   },
+   "iniciadoEm": 1784949527006
+  },
   "cooldown": {
    "euro": 1784946189202,
    "super": 1784934444611,
@@ -503,9 +533,9 @@
    "2026-07-24": 19.1
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 17,
+   "tipo": "odd",
+   "chave": "2.1",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
