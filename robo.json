@@ -291,7 +291,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1784964584104,
    "premier": 1784966151508
   },
   "ciclo": {
@@ -353,13 +352,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -45,
-  "ciclos": 375,
-  "greens": 257,
+  "saldo": -44,
+  "ciclos": 376,
+  "greens": 258,
   "redsCiclo": 44,
   "aborts": 0,
   "descartes": 74,
   "historico": [
+   {
+    "quando": "2026-07-25T08:28:45.198Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Inglaterra x Ucrânia @1.95 (tiro 1) · gatilho: seq RRGR"
+   },
    {
     "quando": "2026-07-25T08:24:45.104Z",
     "resultado": "GREEN",
@@ -473,50 +478,15 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "super · Montevideo x La Boca @1.98 (tiro 1) · gatilho: coluna :04"
-   },
-   {
-    "quando": "2026-07-24T19:59:30.304Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "euro · Suíça x Hungria @1.98 (tiro 3) · gatilho: coluna :53"
    }
   ],
   "consumidas": {
-   "copa": 1784967885000
+   "copa": 1784967885000,
+   "euro": 1784968124999
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "09:26",
-     "jogo": "Inglaterra x Ucrânia",
-     "odd": 1.95
-    },
-    {
-     "h": "09:29",
-     "jogo": "Eslovênia x Croácia",
-     "odd": 2.15
-    },
-    {
-     "h": "09:32",
-     "jogo": "Áustria x República Tcheca",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "seq RRGR",
-   "alvo": {
-    "h": "09:26",
-    "jogo": "Inglaterra x Ucrânia",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1784967886404
-   },
-   "iniciadoEm": 1784967886404
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784963825703,
+   "euro": 1784968124999,
    "super": 1784934444611,
    "premier": 1784946760500,
    "copa": 1784967885000
@@ -531,11 +501,11 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 7.4
+   "2026-07-25": 8.4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRGR",
+   "chave": "GRRG",
    "n": 8,
    "start": 1
   },
