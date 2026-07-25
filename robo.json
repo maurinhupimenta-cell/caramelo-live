@@ -321,13 +321,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -34.6,
-  "ciclos": 394,
-  "greens": 274,
+  "saldo": -33.6,
+  "ciclos": 395,
+  "greens": 275,
   "redsCiclo": 45,
   "aborts": 0,
   "descartes": 75,
   "historico": [
+   {
+    "quando": "2026-07-25T17:28:21.506Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Panamá x Costa do Marfim @1.95 (tiro 1) · gatilho: seq GGGRG"
+   },
    {
     "quando": "2026-07-25T16:46:24.998Z",
     "resultado": "GREEN",
@@ -441,25 +447,19 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · Inglaterra x Ucrânia @1.95 (tiro 1) · gatilho: seq RRGR"
-   },
-   {
-    "quando": "2026-07-25T08:24:45.104Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "copa · Jordânia x Equador @1.87 (tiro 1) · gatilho: odd 2.07"
    }
   ],
   "consumidas": {
-   "copa": 1784996721798,
    "euro": 1784997687306,
-   "premier": 1784997984801
+   "premier": 1784997984801,
+   "copa": 1785000501312
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1784997687306,
    "super": 1784934444611,
    "premier": 1784997984801,
-   "copa": 1784996721798
+   "copa": 1785000501312
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -471,13 +471,13 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 17.8
+   "2026-07-25": 18.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":54",
-   "n": 17,
-   "start": 2
+   "tipo": "time",
+   "chave": "Haiti",
+   "n": 13,
+   "start": 1
   },
   "_obs": {}
  }
