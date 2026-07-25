@@ -1,12 +1,18 @@
 {
  "o35": {
   "saldo": -161.1,
-  "ciclos": 168,
+  "ciclos": 169,
   "greens": 58,
   "redsCiclo": 73,
   "aborts": 0,
-  "descartes": 37,
+  "descartes": 38,
   "historico": [
+   {
+    "quando": "2026-07-25T03:55:07.110Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho seq RRRRG) — liga REARMADA"
+   },
    {
     "quando": "2026-07-23T01:03:48.527Z",
     "resultado": "DESCARTADO",
@@ -120,12 +126,6 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros)"
-   },
-   {
-    "quando": "2026-07-21T12:09:49.835Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros)"
    }
   ],
   "consumidas": {},
@@ -143,7 +143,8 @@
    "2026-07-19": -48.5,
    "2026-07-20": 19.6,
    "2026-07-21": -96.4,
-   "2026-07-22": -7
+   "2026-07-22": -7,
+   "2026-07-25": 0
   },
   "_gatilhoAtual": {
    "tipo": "placar",
@@ -157,8 +158,8 @@
     "gatilho": "seq RRRRR"
    },
    "copa": {
-    "desde": 1784941069906,
-    "gatilho": "seq RRRR"
+    "desde": 1784951707110,
+    "gatilho": "seq RRRRG"
    }
   }
  },
