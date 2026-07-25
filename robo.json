@@ -289,11 +289,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1784970698204,
    "euro": 1784973164305,
    "copa": 1784973843802
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:12",
+     "jogo": "Wolverhampton x Watford",
+     "odd": 2.15
+    },
+    {
+     "h": "11:15",
+     "jogo": "Chelsea x Norwich",
+     "odd": 2.2
+    },
+    {
+     "h": "11:18",
+     "jogo": "Tottenham x Wolverhampton",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "time Chelsea",
+   "alvo": {
+    "h": "11:12",
+    "jogo": "Wolverhampton x Watford",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1784974303607
+   },
+   "iniciadoEm": 1784974303607
+  },
   "cooldown": {
    "copa": 1784973843802,
    "premier": 1784970698204,
@@ -315,8 +344,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Bósnia e Herzegovina",
-   "n": 8,
+   "chave": "Chelsea",
+   "n": 24,
    "start": 1
   },
   "_obs": {}
