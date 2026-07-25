@@ -162,13 +162,19 @@
   }
  },
  "o25": {
-  "saldo": -59.4,
-  "ciclos": 347,
-  "greens": 227,
+  "saldo": -57.3,
+  "ciclos": 348,
+  "greens": 228,
   "redsCiclo": 59,
   "aborts": 0,
   "descartes": 61,
   "historico": [
+   {
+    "quando": "2026-07-25T04:35:31.399Z",
+    "resultado": "GREEN",
+    "unidades": 2.1,
+    "detalhe": "euro · Geórgia x Polônia @2.55 (tiro 2) · gatilho: time Geórgia"
+   },
    {
     "quando": "2026-07-25T04:14:41.502Z",
     "resultado": "GREEN",
@@ -282,61 +288,18 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "copa · RD Congo x Jordânia @2.1 (tiro 3) · gatilho: time Coreia do Sul"
-   },
-   {
-    "quando": "2026-07-24T18:03:25.203Z",
-    "resultado": "GREEN",
-    "unidades": 2.2,
-    "detalhe": "super · Medellin x Rio de Janeiro @2.3 (tiro 3) · gatilho: coluna :55"
    }
   ],
   "consumidas": {
    "copa": 1784952049102,
-   "premier": 1784952881306
+   "premier": 1784952881306,
+   "euro": 1784954131203
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "05:29",
-     "jogo": "Espanha x Inglaterra",
-     "odd": 1.98
-    },
-    {
-     "h": "05:32",
-     "jogo": "Geórgia x Polônia",
-     "odd": 2.55
-    },
-    {
-     "h": "05:35",
-     "jogo": "Sérvia x Países Baixos",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "time Geórgia",
-   "alvo": {
-    "h": "05:32",
-    "jogo": "Geórgia x Polônia",
-    "odd": 2.55,
-    "unidades": 2,
-    "desde": 1784953908305
-   },
-   "iniciadoEm": 1784953549603,
-   "tiros": [
-    {
-     "h": "05:29",
-     "jogo": "Espanha x Inglaterra",
-     "odd": 1.98,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784952049102,
    "premier": 1784952881306,
-   "euro": 1784949948397,
+   "euro": 1784954131203,
    "super": 1784933250210
   },
   "dias": {
@@ -350,7 +313,7 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 4
+   "2026-07-25": 6.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
