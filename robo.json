@@ -348,13 +348,25 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -32.9,
-  "ciclos": 403,
-  "greens": 282,
+  "saldo": -32.3,
+  "ciclos": 405,
+  "greens": 283,
   "redsCiclo": 46,
   "aborts": 0,
-  "descartes": 75,
+  "descartes": 76,
   "historico": [
+   {
+    "quando": "2026-07-25T21:55:03.002Z",
+    "resultado": "GREEN",
+    "unidades": 0.6,
+    "detalhe": "super · Montevideo x Santiago @1.8 (tiro 2) · gatilho: coluna :52"
+   },
+   {
+    "quando": "2026-07-25T21:54:15.803Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho coluna :54) — liga REARMADA"
+   },
    {
     "quando": "2026-07-25T21:28:00.500Z",
     "resultado": "GREEN",
@@ -462,65 +474,46 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "euro · Portugal x Romênia @1.93 (tiro 1) · gatilho: seq RRRG"
-   },
-   {
-    "quando": "2026-07-25T13:04:29.900Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Japão x Arábia Saudita @2 (tiro 3) · gatilho: time Austrália"
-   },
-   {
-    "quando": "2026-07-25T12:49:30.009Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho seq RRRGG) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "copa": 1785014880303
+   "copa": 1785014880303,
+   "super": 1785016502803
   },
   "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "22:49",
-     "jogo": "Porto Alegre x Penarol",
-     "odd": 2.35
+     "h": "22:54",
+     "jogo": "Everton x Southampton",
+     "odd": 1.98
     },
     {
-     "h": "22:52",
-     "jogo": "Montevideo x Santiago",
-     "odd": 1.8
+     "h": "22:57",
+     "jogo": "Newcastle x Liverpool",
+     "odd": 1.85
     },
     {
-     "h": "22:55",
-     "jogo": "Medellin x Sao Paulo",
-     "odd": 1.9
+     "h": "23:00",
+     "jogo": "Watford x Leicester",
+     "odd": 2
     }
    ],
-   "gatilho": "coluna :52",
+   "gatilho": "coluna :54",
    "alvo": {
-    "h": "22:52",
-    "jogo": "Montevideo x Santiago",
-    "odd": 1.8,
-    "unidades": 2,
-    "desde": 1785016322305
+    "h": "22:54",
+    "jogo": "Everton x Southampton",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785016504498
    },
-   "iniciadoEm": 1785016200104,
-   "tiros": [
-    {
-     "h": "22:49",
-     "jogo": "Porto Alegre x Penarol",
-     "odd": 2.35,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1785016504498
   },
   "cooldown": {
    "euro": 1785009385398,
-   "super": 1784934444611,
+   "super": 1785016502803,
    "premier": 1785012844605,
    "copa": 1785014880303
   },
@@ -534,13 +527,13 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 19.5
+   "2026-07-25": 20.1
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":04",
-   "n": 19,
-   "start": 3
+   "chave": ":54",
+   "n": 22,
+   "start": 1
   },
   "_obs": {}
  }
