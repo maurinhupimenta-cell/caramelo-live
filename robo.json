@@ -322,13 +322,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -32.5,
-  "ciclos": 396,
-  "greens": 276,
+  "saldo": -31.2,
+  "ciclos": 397,
+  "greens": 277,
   "redsCiclo": 45,
   "aborts": 0,
   "descartes": 75,
   "historico": [
+   {
+    "quando": "2026-07-25T18:35:25.599Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "euro · Croácia x Sérvia @2.07 (tiro 3) · gatilho: seq GRRGR"
+   },
    {
     "quando": "2026-07-25T17:56:45.705Z",
     "resultado": "GREEN",
@@ -442,64 +448,53 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "euro · Polônia x Áustria @2.1 (tiro 2) · gatilho: time Espanha"
-   },
-   {
-    "quando": "2026-07-25T09:32:44.800Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "premier · Watford x West Ham @2.15 (tiro 2) · gatilho: coluna :27"
    }
   ],
   "consumidas": {
-   "premier": 1785002205504
+   "premier": 1785002205504,
+   "euro": 1785004525304
   },
   "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
-     "h": "19:26",
-     "jogo": "França x Turquia",
+     "h": "19:40",
+     "jogo": "Egito x Coreia do Sul",
      "odd": 2.02
     },
     {
-     "h": "19:29",
-     "jogo": "Suíça x Geórgia",
-     "odd": 2.02
+     "h": "19:43",
+     "jogo": "Espanha x Croácia",
+     "odd": 2
     },
     {
-     "h": "19:32",
-     "jogo": "Croácia x Sérvia",
-     "odd": 2.07
+     "h": "19:46",
+     "jogo": "Coreia do Sul x Argentina",
+     "odd": 2
     }
    ],
-   "gatilho": "seq GRRGR",
+   "gatilho": "time Croácia",
    "alvo": {
-    "h": "19:32",
-    "jogo": "Croácia x Sérvia",
-    "odd": 2.07,
-    "unidades": 4,
-    "desde": 1785004349705
+    "h": "19:43",
+    "jogo": "Espanha x Croácia",
+    "odd": 2,
+    "unidades": 2,
+    "desde": 1785004963198
    },
-   "iniciadoEm": 1785003805610,
+   "iniciadoEm": 1785004527101,
    "tiros": [
     {
-     "h": "19:26",
-     "jogo": "França x Turquia",
+     "h": "19:40",
+     "jogo": "Egito x Coreia do Sul",
      "odd": 2.02,
      "unidades": 1
-    },
-    {
-     "h": "19:29",
-     "jogo": "Suíça x Geórgia",
-     "odd": 2.02,
-     "unidades": 2
     }
    ]
   },
   "cooldown": {
-   "euro": 1784997687306,
+   "euro": 1785004525304,
    "super": 1784934444611,
    "premier": 1785002205504,
    "copa": 1785000501312
@@ -514,13 +509,13 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 19.9
+   "2026-07-25": 21.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Croácia",
    "n": 12,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
