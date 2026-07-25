@@ -295,8 +295,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "08:19",
@@ -316,11 +316,11 @@
    ],
    "gatilho": "time Gana",
    "alvo": {
-    "h": "08:22",
-    "jogo": "Japão x Noruega",
-    "odd": 2.25,
-    "unidades": 2,
-    "desde": 1784964163504
+    "h": "08:25",
+    "jogo": "Suécia x Países Baixos",
+    "odd": 2.55,
+    "unidades": 4,
+    "desde": 1784964466399
    },
    "iniciadoEm": 1784963826700,
    "tiros": [
@@ -329,6 +329,12 @@
      "jogo": "Gana x Iraque",
      "odd": 2.55,
      "unidades": 1
+    },
+    {
+     "h": "08:22",
+     "jogo": "Japão x Noruega",
+     "odd": 2.25,
+     "unidades": 2
     }
    ]
   },
@@ -352,10 +358,10 @@
    "2026-07-25": -1.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Gana",
-   "n": 10,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":37",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  },
