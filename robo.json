@@ -295,8 +295,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "09:32",
@@ -316,13 +316,21 @@
    ],
    "gatilho": "seq RRGG",
    "alvo": {
-    "h": "09:32",
-    "jogo": "Áustria x República Tcheca",
-    "odd": 2.6,
-    "unidades": 1,
-    "desde": 1784968124710
+    "h": "09:35",
+    "jogo": "Eslováquia x Polônia",
+    "odd": 2.5,
+    "unidades": 2,
+    "desde": 1784968485207
    },
-   "iniciadoEm": 1784968124710
+   "iniciadoEm": 1784968124710,
+   "tiros": [
+    {
+     "h": "09:32",
+     "jogo": "Áustria x República Tcheca",
+     "odd": 2.6,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1784964584104,
@@ -344,8 +352,8 @@
    "2026-07-25": 2.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGG",
+   "tipo": "coluna",
+   "chave": ":37",
    "n": 9,
    "start": 1
   },
