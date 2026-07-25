@@ -321,16 +321,27 @@
    "n": 8,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1784950089099,
+    "gatilho": "seq RRRR"
+   }
+  }
  },
  "ambas": {
-  "saldo": -51.2,
-  "ciclos": 369,
-  "greens": 251,
+  "saldo": -50.1,
+  "ciclos": 370,
+  "greens": 252,
   "redsCiclo": 44,
   "aborts": 0,
   "descartes": 74,
   "historico": [
+   {
+    "quando": "2026-07-25T03:29:33.201Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Eslováquia x Turquia @2.1 (tiro 1) · gatilho: odd 2.1"
+   },
    {
     "quando": "2026-07-25T03:20:09.801Z",
     "resultado": "GREEN",
@@ -444,51 +455,16 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho odd 1.87) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-24T17:31:29.004Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "super · Sao Paulo x Santiago @1.83 (tiro 2) · gatilho: coluna :28"
    }
   ],
   "consumidas": {
    "premier": 1784946760500,
-   "copa": 1784949609603
+   "copa": 1784949609603,
+   "euro": 1784950173009
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:26",
-     "jogo": "Eslováquia x Turquia",
-     "odd": 2.1
-    },
-    {
-     "h": "04:29",
-     "jogo": "Polônia x Suíça",
-     "odd": 2
-    },
-    {
-     "h": "04:32",
-     "jogo": "Turquia x Áustria",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "odd 2.1",
-   "alvo": {
-    "h": "04:26",
-    "jogo": "Eslováquia x Turquia",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1784949789598
-   },
-   "iniciadoEm": 1784949789598
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1784946189202,
+   "euro": 1784950173009,
    "super": 1784934444611,
    "premier": 1784946760500,
    "copa": 1784949609603
@@ -503,11 +479,11 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 1.2
+   "2026-07-25": 2.3
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.1",
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
    "n": 9,
    "start": 1
   },
