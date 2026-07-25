@@ -155,13 +155,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -49.6,
-  "ciclos": 391,
-  "greens": 257,
+  "saldo": -48.2,
+  "ciclos": 392,
+  "greens": 258,
   "redsCiclo": 65,
   "aborts": 0,
   "descartes": 69,
   "historico": [
+   {
+    "quando": "2026-07-25T20:54:04.603Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "premier · Leeds x Burnley @2.4 (tiro 1) · gatilho: coluna :54"
+   },
    {
     "quando": "2026-07-25T19:56:25.300Z",
     "resultado": "GREEN",
@@ -275,51 +281,16 @@
     "resultado": "GREEN",
     "unidades": 1.6,
     "detalhe": "premier · Aston x Norwich @2.3 (tiro 2) · gatilho: coluna :12"
-   },
-   {
-    "quando": "2026-07-25T13:04:51.008Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: coluna :56"
    }
   ],
   "consumidas": {
-   "euro": 1785009385012
+   "euro": 1785009385012,
+   "premier": 1785012844403
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:51",
-     "jogo": "Leeds x Burnley",
-     "odd": 2.4
-    },
-    {
-     "h": "21:54",
-     "jogo": "Palace x City",
-     "odd": 2.05
-    },
-    {
-     "h": "21:57",
-     "jogo": "Wolverhampton x Liverpool",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "coluna :54",
-   "alvo": {
-    "h": "21:51",
-    "jogo": "Leeds x Burnley",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1785012117405
-   },
-   "iniciadoEm": 1785012117405
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785008604602,
-   "premier": 1785007071800,
+   "premier": 1785012844403,
    "euro": 1785009385012,
    "super": 1784962725800
   },
@@ -334,7 +305,7 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 13.8
+   "2026-07-25": 15.2
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
