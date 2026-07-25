@@ -289,7 +289,37 @@
    "premier": 1785007071800,
    "copa": 1785008604602
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:47",
+     "jogo": "Espanha x Áustria",
+     "odd": 2.15
+    },
+    {
+     "h": "20:50",
+     "jogo": "Croácia x Eslováquia",
+     "odd": 2.25
+    },
+    {
+     "h": "20:53",
+     "jogo": "Albânia x Geórgia",
+     "odd": 2.75
+    }
+   ],
+   "gatilho": "seq GRRGG",
+   "alvo": {
+    "h": "20:47",
+    "jogo": "Espanha x Áustria",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785008667505
+   },
+   "iniciadoEm": 1785008667505
+  },
   "cooldown": {
    "copa": 1785008604602,
    "premier": 1785007071800,
@@ -310,10 +340,10 @@
    "2026-07-25": 12.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "México",
-   "n": 17,
-   "start": 2
+   "tipo": "seq",
+   "chave": "GRRGG",
+   "n": 8,
+   "start": 1
   },
   "_obs": {}
  },
@@ -450,7 +480,37 @@
    "copa": 1785005365812,
    "premier": 1785006889702
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:47",
+     "jogo": "Espanha x Áustria",
+     "odd": 1.9
+    },
+    {
+     "h": "20:50",
+     "jogo": "Croácia x Eslováquia",
+     "odd": 2.02
+    },
+    {
+     "h": "20:53",
+     "jogo": "Albânia x Geórgia",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "seq RRRRG",
+   "alvo": {
+    "h": "20:47",
+    "jogo": "Espanha x Áustria",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1785008667800
+   },
+   "iniciadoEm": 1785008667800
+  },
   "cooldown": {
    "euro": 1785004525304,
    "super": 1784934444611,
@@ -470,9 +530,9 @@
    "2026-07-25": 23.2
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":15",
-   "n": 20,
+   "tipo": "seq",
+   "chave": "RRRRG",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
