@@ -322,13 +322,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -31.2,
-  "ciclos": 397,
-  "greens": 277,
+  "saldo": -30.2,
+  "ciclos": 398,
+  "greens": 278,
   "redsCiclo": 45,
   "aborts": 0,
   "descartes": 75,
   "historico": [
+   {
+    "quando": "2026-07-25T18:49:26.099Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Coreia do Sul x Argentina @2 (tiro 3) · gatilho: time Croácia"
+   },
    {
     "quando": "2026-07-25T18:35:25.599Z",
     "resultado": "GREEN",
@@ -442,68 +448,19 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "copa · EUA x Suíça @1.98 (tiro 3) · gatilho: coluna :49"
-   },
-   {
-    "quando": "2026-07-25T09:40:45.504Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "euro · Polônia x Áustria @2.1 (tiro 2) · gatilho: time Espanha"
    }
   ],
   "consumidas": {
    "premier": 1785002205504,
-   "euro": 1785004525304
+   "euro": 1785004525304,
+   "copa": 1785005365812
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "19:40",
-     "jogo": "Egito x Coreia do Sul",
-     "odd": 2.02
-    },
-    {
-     "h": "19:43",
-     "jogo": "Espanha x Croácia",
-     "odd": 2
-    },
-    {
-     "h": "19:46",
-     "jogo": "Coreia do Sul x Argentina",
-     "odd": 2
-    }
-   ],
-   "gatilho": "time Croácia",
-   "alvo": {
-    "h": "19:46",
-    "jogo": "Coreia do Sul x Argentina",
-    "odd": 2,
-    "unidades": 4,
-    "desde": 1785005158506
-   },
-   "iniciadoEm": 1785004527101,
-   "tiros": [
-    {
-     "h": "19:40",
-     "jogo": "Egito x Coreia do Sul",
-     "odd": 2.02,
-     "unidades": 1
-    },
-    {
-     "h": "19:43",
-     "jogo": "Espanha x Croácia",
-     "odd": 2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785004525304,
    "super": 1784934444611,
    "premier": 1785002205504,
-   "copa": 1785000501312
+   "copa": 1785005365812
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -515,7 +472,7 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 21.2
+   "2026-07-25": 22.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
