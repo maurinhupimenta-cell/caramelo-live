@@ -322,13 +322,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -39.8,
-  "ciclos": 380,
-  "greens": 262,
+  "saldo": -38.9,
+  "ciclos": 381,
+  "greens": 263,
   "redsCiclo": 44,
   "aborts": 0,
   "descartes": 74,
   "historico": [
+   {
+    "quando": "2026-07-25T11:00:22.002Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · City x Palace @1.95 (tiro 2) · gatilho: time City"
+   },
    {
     "quando": "2026-07-25T10:43:44.407Z",
     "resultado": "GREEN",
@@ -442,60 +448,17 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :53) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-24T22:58:28.304Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
-   "euro": 1784976224207
+   "euro": 1784976224207,
+   "premier": 1784977221803
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "11:54",
-     "jogo": "Leeds x Liverpool",
-     "odd": 2.1
-    },
-    {
-     "h": "11:57",
-     "jogo": "City x Palace",
-     "odd": 1.95
-    },
-    {
-     "h": "12:00",
-     "jogo": "Brentford x Southampton",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "time City",
-   "alvo": {
-    "h": "11:57",
-    "jogo": "City x Palace",
-    "odd": 1.95,
-    "unidades": 2,
-    "desde": 1784976997301
-   },
-   "iniciadoEm": 1784976296113,
-   "tiros": [
-    {
-     "h": "11:54",
-     "jogo": "Leeds x Liverpool",
-     "odd": 2.1,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1784976224207,
    "super": 1784934444611,
-   "premier": 1784971964604,
+   "premier": 1784977221803,
    "copa": 1784973305907
   },
   "dias": {
@@ -508,13 +471,13 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 12.6
+   "2026-07-25": 13.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Uzbequistão",
    "n": 12,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
