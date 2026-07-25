@@ -347,7 +347,7 @@
    "tipo": "time",
    "chave": "França",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -483,7 +483,37 @@
   "consumidas": {
    "premier": 1784941906399
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:20",
+     "jogo": "França x Eslováquia",
+     "odd": 1.98
+    },
+    {
+     "h": "03:23",
+     "jogo": "Polônia x Itália",
+     "odd": 2.1
+    },
+    {
+     "h": "03:26",
+     "jogo": "Inglaterra x Eslováquia",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "odd 2.1",
+   "alvo": {
+    "h": "03:20",
+    "jogo": "França x Eslováquia",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1784945468806
+   },
+   "iniciadoEm": 1784945468806
+  },
   "cooldown": {
    "euro": 1784941557901,
    "super": 1784934444611,
@@ -502,10 +532,10 @@
    "2026-07-24": 17.2
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 10,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.1",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  }
