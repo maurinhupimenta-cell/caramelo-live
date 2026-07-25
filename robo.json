@@ -160,13 +160,19 @@
   }
  },
  "o25": {
-  "saldo": -62.7,
-  "ciclos": 371,
+  "saldo": -69.7,
+  "ciclos": 372,
   "greens": 242,
-  "redsCiclo": 63,
+  "redsCiclo": 64,
   "aborts": 0,
   "descartes": 66,
   "historico": [
+   {
+    "quando": "2026-07-25T13:04:51.008Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: coluna :56"
+   },
    {
     "quando": "2026-07-25T12:55:11.403Z",
     "resultado": "RED_CICLO",
@@ -280,66 +286,17 @@
     "resultado": "GREEN",
     "unidades": 2.2,
     "detalhe": "super · Avellaneda x Bogota @2.6 (tiro 2) · gatilho: placar 0-0"
-   },
-   {
-    "quando": "2026-07-25T06:45:29.405Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: time Watford"
    }
   ],
   "consumidas": {
-   "copa": 1784984111202
+   "copa": 1784984111202,
+   "euro": 1784984690809
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "13:56",
-     "jogo": "Dinamarca x Sérvia",
-     "odd": 2.6
-    },
-    {
-     "h": "13:59",
-     "jogo": "Albânia x Turquia",
-     "odd": 2.87
-    },
-    {
-     "h": "14:02",
-     "jogo": "Sérvia x Geórgia",
-     "odd": 2.6
-    }
-   ],
-   "gatilho": "coluna :56",
-   "alvo": {
-    "h": "14:02",
-    "jogo": "Sérvia x Geórgia",
-    "odd": 2.6,
-    "unidades": 4,
-    "desde": 1784984511303
-   },
-   "iniciadoEm": 1784984113311,
-   "tiros": [
-    {
-     "h": "13:56",
-     "jogo": "Dinamarca x Sérvia",
-     "odd": 2.6,
-     "unidades": 1
-    },
-    {
-     "h": "13:59",
-     "jogo": "Albânia x Turquia",
-     "odd": 2.87,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784984111202,
    "premier": 1784978390905,
-   "euro": 1784977005099,
+   "euro": 1784984690809,
    "super": 1784962725800
   },
   "dias": {
@@ -353,7 +310,7 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 0.7
+   "2026-07-25": -6.3
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
