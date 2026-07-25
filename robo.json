@@ -162,13 +162,19 @@
   }
  },
  "o25": {
-  "saldo": -60.8,
-  "ciclos": 358,
-  "greens": 234,
+  "saldo": -58.8,
+  "ciclos": 359,
+  "greens": 235,
   "redsCiclo": 61,
   "aborts": 0,
   "descartes": 63,
   "historico": [
+   {
+    "quando": "2026-07-25T08:37:47.906Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "euro · Eslováquia x Polônia @2.5 (tiro 2) · gatilho: seq RRGG"
+   },
    {
     "quando": "2026-07-25T07:55:51.803Z",
     "resultado": "GREEN",
@@ -282,60 +288,17 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: placar goleada (3+)"
-   },
-   {
-    "quando": "2026-07-25T01:05:57.897Z",
-    "resultado": "GREEN",
-    "unidades": 2.1,
-    "detalhe": "euro · Eslovênia x Escócia @2.55 (tiro 2) · gatilho: placar 1-0 / 0-1"
    }
   ],
   "consumidas": {
-   "premier": 1784966151508
+   "premier": 1784966151508,
+   "euro": 1784968667709
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "09:32",
-     "jogo": "Áustria x República Tcheca",
-     "odd": 2.6
-    },
-    {
-     "h": "09:35",
-     "jogo": "Eslováquia x Polônia",
-     "odd": 2.5
-    },
-    {
-     "h": "09:38",
-     "jogo": "Hungria x Ucrânia",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "seq RRGG",
-   "alvo": {
-    "h": "09:35",
-    "jogo": "Eslováquia x Polônia",
-    "odd": 2.5,
-    "unidades": 2,
-    "desde": 1784968485207
-   },
-   "iniciadoEm": 1784968124710,
-   "tiros": [
-    {
-     "h": "09:32",
-     "jogo": "Áustria x República Tcheca",
-     "odd": 2.6,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1784964584104,
    "premier": 1784966151508,
-   "euro": 1784963825409,
+   "euro": 1784968667709,
    "super": 1784962725800
   },
   "dias": {
@@ -349,11 +312,11 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 2.6
+   "2026-07-25": 4.6
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":37",
+   "chave": ":40",
    "n": 9,
    "start": 1
   },
