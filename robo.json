@@ -292,7 +292,45 @@
    "euro": 1784977005099,
    "premier": 1784978390905
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "12:34",
+     "jogo": "Tunísia x Panamá",
+     "odd": 2.62
+    },
+    {
+     "h": "12:37",
+     "jogo": "Egito x Senegal",
+     "odd": 2.35
+    },
+    {
+     "h": "12:40",
+     "jogo": "Portugal x Países Baixos",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "coluna :37",
+   "alvo": {
+    "h": "12:37",
+    "jogo": "Egito x Senegal",
+    "odd": 2.35,
+    "unidades": 2,
+    "desde": 1784979403202
+   },
+   "iniciadoEm": 1784978705103,
+   "tiros": [
+    {
+     "h": "12:34",
+     "jogo": "Tunísia x Panamá",
+     "odd": 2.62,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1784973843802,
    "premier": 1784978390905,
@@ -313,17 +351,12 @@
    "2026-07-25": 6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGRR",
-   "n": 8,
+   "tipo": "coluna",
+   "chave": ":40",
+   "n": 12,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1784978703201,
-    "gatilho": "coluna :37"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -37.9,
