@@ -157,12 +157,18 @@
  },
  "o25": {
   "saldo": -36.4,
-  "ciclos": 439,
+  "ciclos": 440,
   "greens": 295,
   "redsCiclo": 71,
   "aborts": 0,
-  "descartes": 73,
+  "descartes": 74,
   "historico": [
+   {
+    "quando": "2026-07-26T15:13:21.602Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :25) — liga REARMADA"
+   },
    {
     "quando": "2026-07-26T15:08:37.902Z",
     "resultado": "GREEN",
@@ -276,12 +282,6 @@
     "resultado": "GREEN",
     "unidades": 2,
     "detalhe": "premier · Leicester x Norwich @2.25 (tiro 3) · gatilho: seq GGGR"
-   },
-   {
-    "quando": "2026-07-26T09:10:37.905Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "super · Belo Horizonte x Santos @2.2 (tiro 2) · gatilho: seq GGRRR"
    }
   ],
   "consumidas": {
@@ -289,7 +289,37 @@
    "copa": 1785078061111,
    "premier": 1785078517704
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:22",
+     "jogo": "Bogota x Itaquera",
+     "odd": 2.55
+    },
+    {
+     "h": "16:25",
+     "jogo": "Guayaquil x Agua Branca",
+     "odd": 2.07
+    },
+    {
+     "h": "16:28",
+     "jogo": "Rio de Janeiro x Santiago",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "coluna :25",
+   "alvo": {
+    "h": "16:22",
+    "jogo": "Bogota x Itaquera",
+    "odd": 2.55,
+    "unidades": 1,
+    "desde": 1785078803703
+   },
+   "iniciadoEm": 1785078803703
+  },
   "cooldown": {
    "copa": 1785078061111,
    "premier": 1785078517704,
@@ -312,9 +342,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":03",
+   "chave": ":25",
    "n": 16,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
