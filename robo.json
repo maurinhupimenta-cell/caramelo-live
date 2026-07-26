@@ -287,8 +287,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "19:43",
@@ -308,13 +308,21 @@
    ],
    "gatilho": "time Áustria",
    "alvo": {
-    "h": "19:43",
-    "jogo": "Japão x Tunísia",
-    "odd": 2.7,
-    "unidades": 1,
-    "desde": 1785090889401
+    "h": "19:46",
+    "jogo": "Áustria x RD Congo",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1785091610108
    },
-   "iniciadoEm": 1785090889401
+   "iniciadoEm": 1785090889401,
+   "tiros": [
+    {
+     "h": "19:43",
+     "jogo": "Japão x Tunísia",
+     "odd": 2.7,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785087041799,
@@ -337,9 +345,9 @@
    "2026-07-26": -1.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGR",
-   "n": 17,
+   "tipo": "time",
+   "chave": "Áustria",
+   "n": 20,
    "start": 1
   },
   "_obs": {}
