@@ -290,8 +290,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "13:44",
@@ -311,13 +311,21 @@
    ],
    "gatilho": "odd 2.6",
    "alvo": {
-    "h": "13:44",
-    "jogo": "Países Baixos x Eslováquia",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785069477307
+    "h": "13:47",
+    "jogo": "Croácia x Albânia",
+    "odd": 2.6,
+    "unidades": 2,
+    "desde": 1785070017006
    },
-   "iniciadoEm": 1785069477307
+   "iniciadoEm": 1785069477307,
+   "tiros": [
+    {
+     "h": "13:44",
+     "jogo": "Países Baixos x Eslováquia",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785069235602,
@@ -481,7 +489,37 @@
    "super": 1785068156906,
    "copa": 1785069951298
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:44",
+     "jogo": "Países Baixos x Eslováquia",
+     "odd": 1.93
+    },
+    {
+     "h": "13:47",
+     "jogo": "Croácia x Albânia",
+     "odd": 2.2
+    },
+    {
+     "h": "13:50",
+     "jogo": "Polônia x Alemanha",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "coluna :44",
+   "alvo": {
+    "h": "13:44",
+    "jogo": "Países Baixos x Eslováquia",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1785069953201
+   },
+   "iniciadoEm": 1785069953201
+  },
   "cooldown": {
    "euro": 1785066236811,
    "super": 1785068156906,
@@ -502,9 +540,9 @@
    "2026-07-26": -3.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Turquia",
-   "n": 16,
+   "tipo": "coluna",
+   "chave": ":44",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
