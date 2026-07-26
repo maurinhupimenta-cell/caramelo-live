@@ -289,7 +289,37 @@
    "super": 1785086040605,
    "premier": 1785086799105
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:25",
+     "jogo": "RD Congo x Colômbia",
+     "odd": 2.1
+    },
+    {
+     "h": "18:28",
+     "jogo": "Gana x Irã",
+     "odd": 2.7
+    },
+    {
+     "h": "18:31",
+     "jogo": "Haiti x Japão",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "seq RRGG",
+   "alvo": {
+    "h": "18:25",
+    "jogo": "RD Congo x Colômbia",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785086804210
+   },
+   "iniciadoEm": 1785086804210
+  },
   "cooldown": {
    "copa": 1785082581510,
    "premier": 1785086799105,
