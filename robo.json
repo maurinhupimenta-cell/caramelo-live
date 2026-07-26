@@ -451,8 +451,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:19",
@@ -472,13 +472,21 @@
    ],
    "gatilho": "time Turquia",
    "alvo": {
-    "h": "17:19",
-    "jogo": "Qatar x Inglaterra",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785082581808
+    "h": "17:22",
+    "jogo": "EUA x Turquia",
+    "odd": 2,
+    "unidades": 2,
+    "desde": 1785082954410
    },
-   "iniciadoEm": 1785082581808
+   "iniciadoEm": 1785082581808,
+   "tiros": [
+    {
+     "h": "17:19",
+     "jogo": "Qatar x Inglaterra",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785079201099,
@@ -500,9 +508,9 @@
    "2026-07-26": -0.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Turquia",
-   "n": 19,
+   "tipo": "odd",
+   "chave": "2.1",
+   "n": 26,
    "start": 1
   },
   "_obs": {}
