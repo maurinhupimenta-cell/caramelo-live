@@ -345,13 +345,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -42.9,
-  "ciclos": 412,
-  "greens": 286,
+  "saldo": -41.9,
+  "ciclos": 413,
+  "greens": 287,
   "redsCiclo": 48,
   "aborts": 0,
   "descartes": 78,
   "historico": [
+   {
+    "quando": "2026-07-26T02:17:40.898Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Wolverhampton x Leeds @2.02 (tiro 1) · gatilho: placar empate 1-1"
+   },
    {
     "quando": "2026-07-26T02:11:43.005Z",
     "resultado": "GREEN_OBS",
@@ -465,53 +471,18 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · Aston x Islington @2 (tiro 1) · gatilho: coluna :42"
-   },
-   {
-    "quando": "2026-07-25T16:41:27.507Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "euro · Portugal x Geórgia @2.1 (tiro 1) · gatilho: seq RRRG"
    }
   ],
   "consumidas": {
    "copa": 1785031073199,
-   "super": 1785031431309
+   "super": 1785031431309,
+   "premier": 1785032260707
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:15",
-     "jogo": "Wolverhampton x Leeds",
-     "odd": 2.02
-    },
-    {
-     "h": "03:18",
-     "jogo": "Norwich x Tottenham",
-     "odd": 2.05
-    },
-    {
-     "h": "03:21",
-     "jogo": "Chelsea x City",
-     "odd": 1.85
-    }
-   ],
-   "gatilho": "placar empate 1-1",
-   "alvo": {
-    "h": "03:15",
-    "jogo": "Wolverhampton x Leeds",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1785031910302
-   },
-   "iniciadoEm": 1785031910302
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785009385398,
    "super": 1785031431309,
-   "premier": 1785016956100,
+   "premier": 1785032260707,
    "copa": 1785031073199
   },
   "dias": {
@@ -524,7 +495,7 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 9.5
+   "2026-07-25": 10.5
   },
   "_gatilhoAtual": {
    "tipo": "placar",
