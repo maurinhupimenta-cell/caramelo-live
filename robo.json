@@ -291,8 +291,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "11:07",
@@ -312,13 +312,21 @@
    ],
    "gatilho": "seq RRRRR",
    "alvo": {
-    "h": "11:07",
-    "jogo": "Tunísia x Portugal",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1785060235408
+    "h": "11:10",
+    "jogo": "Países Baixos x Austrália",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1785060595108
    },
-   "iniciadoEm": 1785060235408
+   "iniciadoEm": 1785060235408,
+   "tiros": [
+    {
+     "h": "11:07",
+     "jogo": "Tunísia x Portugal",
+     "odd": 2.4,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785055694806,
@@ -535,7 +543,7 @@
    "tipo": "coluna",
    "chave": ":13",
    "n": 11,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
