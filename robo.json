@@ -495,7 +495,37 @@
   "consumidas": {
    "copa": 1785095996110
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:19",
+     "jogo": "Penarol x La Plata",
+     "odd": 2.25
+    },
+    {
+     "h": "21:22",
+     "jogo": "Porto Alegre x Avellaneda",
+     "odd": 2.2
+    },
+    {
+     "h": "21:25",
+     "jogo": "Lima x Belo Horizonte",
+     "odd": 1.86
+    }
+   ],
+   "gatilho": "coluna :22",
+   "alvo": {
+    "h": "21:19",
+    "jogo": "Penarol x La Plata",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785096713304
+   },
+   "iniciadoEm": 1785096713304
+  },
   "cooldown": {
    "euro": 1785092521099,
    "super": 1785090590411,
@@ -516,10 +546,10 @@
    "2026-07-26": 8.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRGR",
-   "n": 14,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":22",
+   "n": 19,
+   "start": 3
   },
   "_obs": {}
  }
