@@ -292,8 +292,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:27",
@@ -313,13 +313,21 @@
    ],
    "gatilho": "time City",
    "alvo": {
-    "h": "05:27",
-    "jogo": "Norwich x West Ham",
-    "odd": 2.45,
-    "unidades": 1,
-    "desde": 1785039642301
+    "h": "05:30",
+    "jogo": "Brentford x City",
+    "odd": 2.1,
+    "unidades": 2,
+    "desde": 1785040183508
    },
-   "iniciadoEm": 1785039642301
+   "iniciadoEm": 1785039642301,
+   "tiros": [
+    {
+     "h": "05:27",
+     "jogo": "Norwich x West Ham",
+     "odd": 2.45,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785038273707,
@@ -343,8 +351,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "City",
-   "n": 9,
+   "chave": "Brighton",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
