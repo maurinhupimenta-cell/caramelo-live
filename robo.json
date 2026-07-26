@@ -290,7 +290,37 @@
    "premier": 1785036041702,
    "copa": 1785038273707
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:13",
+     "jogo": "Quito x Montevideo",
+     "odd": 2.2
+    },
+    {
+     "h": "05:16",
+     "jogo": "Porto Alegre x Belo Horizonte",
+     "odd": 2.4
+    },
+    {
+     "h": "05:19",
+     "jogo": "Sao Paulo x Quito",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time Porto Alegre",
+   "alvo": {
+    "h": "05:13",
+    "jogo": "Quito x Montevideo",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785039113703
+   },
+   "iniciadoEm": 1785039113703
+  },
   "cooldown": {
    "copa": 1785038273707,
    "premier": 1785036041702,
@@ -312,10 +342,10 @@
    "2026-07-26": -4.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.2",
-   "n": 15,
-   "start": 2
+   "tipo": "seq",
+   "chave": "RRRG",
+   "n": 8,
+   "start": 1
   },
   "_obs": {}
  },
@@ -449,7 +479,6 @@
    }
   ],
   "consumidas": {
-   "super": 1785035813599,
    "copa": 1785036121601,
    "euro": 1785036541306,
    "premier": 1785037666109
