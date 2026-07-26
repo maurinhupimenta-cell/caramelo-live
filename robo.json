@@ -321,13 +321,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -45.1,
-  "ciclos": 420,
-  "greens": 291,
+  "saldo": -44.1,
+  "ciclos": 421,
+  "greens": 292,
   "redsCiclo": 49,
   "aborts": 0,
   "descartes": 80,
   "historico": [
+   {
+    "quando": "2026-07-26T04:46:03.605Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Buenos Aires x La Plata @2.02 (tiro 2) · gatilho: time La Plata"
+   },
    {
     "quando": "2026-07-26T04:37:50.100Z",
     "resultado": "GREEN",
@@ -441,60 +447,17 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: odd 1.98"
-   },
-   {
-    "quando": "2026-07-25T20:10:01.701Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "copa · Alemanha x Suécia @2.1 (tiro 3) · gatilho: time Haiti"
    }
   ],
   "consumidas": {
    "premier": 1785037666109,
-   "copa": 1785040669899
+   "copa": 1785040669899,
+   "super": 1785041163407
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "05:40",
-     "jogo": "Sao Paulo x Montevideo",
-     "odd": 1.85
-    },
-    {
-     "h": "05:43",
-     "jogo": "Buenos Aires x La Plata",
-     "odd": 2.02
-    },
-    {
-     "h": "05:46",
-     "jogo": "Asuncion x Sao Paulo",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "time La Plata",
-   "alvo": {
-    "h": "05:43",
-    "jogo": "Buenos Aires x La Plata",
-    "odd": 2.02,
-    "unidades": 2,
-    "desde": 1785040982604
-   },
-   "iniciadoEm": 1785040672105,
-   "tiros": [
-    {
-     "h": "05:40",
-     "jogo": "Sao Paulo x Montevideo",
-     "odd": 1.85,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785036541306,
-   "super": 1785035813599,
+   "super": 1785041163407,
    "premier": 1785037666109,
    "copa": 1785040669899
   },
@@ -509,13 +472,13 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": -3.2
+   "2026-07-26": -2.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "La Plata",
    "n": 14,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
