@@ -321,13 +321,25 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -46.1,
-  "ciclos": 418,
-  "greens": 290,
+  "saldo": -45.1,
+  "ciclos": 420,
+  "greens": 291,
   "redsCiclo": 49,
   "aborts": 0,
-  "descartes": 79,
+  "descartes": 80,
   "historico": [
+   {
+    "quando": "2026-07-26T04:37:50.100Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Iraque x Austrália @2.05 (tiro 1) · gatilho: odd 2.05"
+   },
+   {
+    "quando": "2026-07-26T04:34:08.508Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho time La Plata) — liga REARMADA"
+   },
    {
     "quando": "2026-07-26T04:34:06.600Z",
     "resultado": "DESCARTADO",
@@ -435,59 +447,18 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "copa · Alemanha x Suécia @2.1 (tiro 3) · gatilho: time Haiti"
-   },
-   {
-    "quando": "2026-07-25T19:56:25.598Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · Croácia x Eslováquia @2.02 (tiro 2) · gatilho: seq RRRRG"
-   },
-   {
-    "quando": "2026-07-25T19:14:49.903Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Liverpool x Watford @2.05 (tiro 1) · gatilho: coluna :15"
    }
   ],
   "consumidas": {
-   "premier": 1785037666109
+   "premier": 1785037666109,
+   "copa": 1785040669899
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:28",
-     "jogo": "Porto Alegre x Penarol",
-     "odd": 2.35
-    },
-    {
-     "h": "05:31",
-     "jogo": "Quito x Agua Branca",
-     "odd": 1.93
-    },
-    {
-     "h": "05:34",
-     "jogo": "La Boca x La Plata",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "odd 1.93",
-   "alvo": {
-    "h": "05:28",
-    "jogo": "Porto Alegre x Penarol",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1785039546104
-   },
-   "iniciadoEm": 1785039546104
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785036541306,
    "super": 1785035813599,
    "premier": 1785037666109,
-   "copa": 1785036121601
+   "copa": 1785040669899
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -500,13 +471,13 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": -4.2
+   "2026-07-26": -3.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.05",
+   "chave": "2.15",
    "n": 10,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
