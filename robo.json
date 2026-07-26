@@ -285,7 +285,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1785099538502,
    "super": 1785102718498
   },
   "ciclo": {
@@ -488,7 +487,37 @@
    "copa": 1785100615207,
    "euro": 1785102836808
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:06",
+     "jogo": "Islington x Brentford",
+     "odd": 2.05
+    },
+    {
+     "h": "23:09",
+     "jogo": "Palace x Southampton",
+     "odd": 2
+    },
+    {
+     "h": "23:12",
+     "jogo": "Leeds x Brighton",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "seq RGRRG",
+   "alvo": {
+    "h": "23:06",
+    "jogo": "Islington x Brentford",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785103374408
+   },
+   "iniciadoEm": 1785103374408
+  },
   "cooldown": {
    "euro": 1785102836808,
    "super": 1785097697101,
@@ -509,9 +538,9 @@
    "2026-07-26": 5.2
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":50",
-   "n": 22,
+   "tipo": "seq",
+   "chave": "RGRRG",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
