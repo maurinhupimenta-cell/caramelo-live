@@ -284,9 +284,7 @@
     "detalhe": "copa · green OBSERVADO no papel (gatilho seq RGGR) — liga REARMADA"
    }
   ],
-  "consumidas": {
-   "euro": 1785091809105
-  },
+  "consumidas": {},
   "ciclo": null,
   "cooldown": {
    "copa": 1785091742012,
@@ -451,10 +449,39 @@
    }
   ],
   "consumidas": {
-   "copa": 1785091742299,
    "euro": 1785092521099
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:49",
+     "jogo": "Suécia x Suíça",
+     "odd": 2.15
+    },
+    {
+     "h": "20:52",
+     "jogo": "Inglaterra x Paraguai",
+     "odd": 2.05
+    },
+    {
+     "h": "20:55",
+     "jogo": "Qatar x Cabo Verde",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "seq GRRGR",
+   "alvo": {
+    "h": "20:49",
+    "jogo": "Suécia x Suíça",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785095395900
+   },
+   "iniciadoEm": 1785095395900
+  },
   "cooldown": {
    "euro": 1785092521099,
    "super": 1785090590411,
@@ -475,9 +502,9 @@
    "2026-07-26": 7.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.9",
-   "n": 24,
+   "tipo": "seq",
+   "chave": "GRRGR",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
