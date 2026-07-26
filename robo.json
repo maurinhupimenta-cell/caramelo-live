@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -33,
-  "ciclos": 417,
-  "greens": 279,
+  "saldo": -31.6,
+  "ciclos": 418,
+  "greens": 280,
   "redsCiclo": 67,
   "aborts": 0,
   "descartes": 71,
   "historico": [
+   {
+    "quando": "2026-07-26T08:11:43.405Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "premier · Liverpool x Tottenham @2.4 (tiro 1) · gatilho: coluna :12"
+   },
    {
     "quando": "2026-07-26T07:51:57.903Z",
     "resultado": "GREEN",
@@ -276,52 +282,17 @@
     "resultado": "GREEN",
     "unidades": 1.6,
     "detalhe": "copa · Arábia Saudita x Áustria @2.15 (tiro 3) · gatilho: placar goleada (3+)"
-   },
-   {
-    "quando": "2026-07-25T23:18:40.403Z",
-    "resultado": "GREEN",
-    "unidades": 1.7,
-    "detalhe": "super · Guayaquil x Penarol @2.35 (tiro 2) · gatilho: odd 2.35"
    }
   ],
   "consumidas": {
    "copa": 1785051638206,
-   "super": 1785052317700
+   "super": 1785052317700,
+   "premier": 1785053503205
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "09:09",
-     "jogo": "Liverpool x Tottenham",
-     "odd": 2.4
-    },
-    {
-     "h": "09:12",
-     "jogo": "Chelsea x Aston",
-     "odd": 2.35
-    },
-    {
-     "h": "09:15",
-     "jogo": "Norwich x Watford",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "coluna :12",
-   "alvo": {
-    "h": "09:09",
-    "jogo": "Liverpool x Tottenham",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1785053164202
-   },
-   "iniciadoEm": 1785053164202
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785051638206,
-   "premier": 1785049563010,
+   "premier": 1785053503205,
    "euro": 1785032630305,
    "super": 1785052317700
   },
@@ -337,7 +308,7 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": 9.4
+   "2026-07-26": 10.8
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
@@ -481,7 +452,37 @@
    "copa": 1785050715199,
    "premier": 1785053322602
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:13",
+     "jogo": "Bogota x Itaquera",
+     "odd": 2.15
+    },
+    {
+     "h": "09:16",
+     "jogo": "Avellaneda x Asuncion",
+     "odd": 2.05
+    },
+    {
+     "h": "09:19",
+     "jogo": "Quito x Lima",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "coluna :16",
+   "alvo": {
+    "h": "09:13",
+    "jogo": "Bogota x Itaquera",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785053324408
+   },
+   "iniciadoEm": 1785053324408
+  },
   "cooldown": {
    "euro": 1785050037009,
    "super": 1785049458100,
@@ -502,9 +503,9 @@
    "2026-07-26": -1.3
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.07",
-   "n": 8,
+   "tipo": "seq",
+   "chave": "RRRR",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
