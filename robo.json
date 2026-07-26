@@ -348,13 +348,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -48.2,
-  "ciclos": 426,
-  "greens": 295,
+  "saldo": -47.5,
+  "ciclos": 427,
+  "greens": 296,
   "redsCiclo": 50,
   "aborts": 0,
   "descartes": 81,
   "historico": [
+   {
+    "quando": "2026-07-26T05:59:20.806Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "euro · Inglaterra x Itália @1.93 (tiro 3) · gatilho: seq RRGG"
+   },
    {
     "quando": "2026-07-26T05:49:49.603Z",
     "resultado": "GREEN",
@@ -468,66 +474,17 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "super · Asuncion x Bogota @2.15 (tiro 1) · gatilho: placar 1-0 / 0-1"
-   },
-   {
-    "quando": "2026-07-25T22:40:40.108Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Haiti"
    }
   ],
   "consumidas": {
    "premier": 1785042166500,
    "copa": 1785044631703,
-   "super": 1785044989406
+   "super": 1785044989406,
+   "euro": 1785045560700
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "06:50",
-     "jogo": "Croácia x Suíça",
-     "odd": 1.9
-    },
-    {
-     "h": "06:53",
-     "jogo": "República Tcheca x Polônia",
-     "odd": 2.3
-    },
-    {
-     "h": "06:56",
-     "jogo": "Inglaterra x Itália",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "seq RRGG",
-   "alvo": {
-    "h": "06:56",
-    "jogo": "Inglaterra x Itália",
-    "odd": 1.93,
-    "unidades": 4,
-    "desde": 1785045400712
-   },
-   "iniciadoEm": 1785045099407,
-   "tiros": [
-    {
-     "h": "06:50",
-     "jogo": "Croácia x Suíça",
-     "odd": 1.9,
-     "unidades": 1
-    },
-    {
-     "h": "06:53",
-     "jogo": "República Tcheca x Polônia",
-     "odd": 2.3,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785041494006,
+   "euro": 1785045560700,
    "super": 1785044989406,
    "premier": 1785042166500,
    "copa": 1785044631703
@@ -543,13 +500,13 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": -6.3
+   "2026-07-26": -5.6
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Turquia",
    "n": 13,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
