@@ -343,18 +343,24 @@
    "tipo": "coluna",
    "chave": ":25",
    "n": 16,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -44.4,
-  "ciclos": 460,
-  "greens": 320,
+  "saldo": -43.5,
+  "ciclos": 461,
+  "greens": 321,
   "redsCiclo": 53,
   "aborts": 0,
   "descartes": 87,
   "historico": [
+   {
+    "quando": "2026-07-26T15:20:01.299Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Itália x Espanha @1.9 (tiro 1) · gatilho: odd 1.9"
+   },
    {
     "quando": "2026-07-26T15:16:19.399Z",
     "resultado": "GREEN",
@@ -468,52 +474,17 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "copa · Senegal x Áustria @2.05 (tiro 2) · gatilho: time Áustria"
-   },
-   {
-    "quando": "2026-07-26T10:14:39.805Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "premier · Leeds x Burnley @2.07 (tiro 2) · gatilho: odd 2.07"
    }
   ],
   "consumidas": {
    "super": 1785077162512,
    "premier": 1785077623105,
-   "copa": 1785078979201
+   "copa": 1785078979201,
+   "euro": 1785079201099
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:17",
-     "jogo": "Itália x Espanha",
-     "odd": 1.9
-    },
-    {
-     "h": "16:20",
-     "jogo": "França x Escócia",
-     "odd": 1.9
-    },
-    {
-     "h": "16:23",
-     "jogo": "Inglaterra x Espanha",
-     "odd": 1.8
-    }
-   ],
-   "gatilho": "odd 1.9",
-   "alvo": {
-    "h": "16:17",
-    "jogo": "Itália x Espanha",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1785079074299
-   },
-   "iniciadoEm": 1785079074299
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785075472403,
+   "euro": 1785079201099,
    "super": 1785077162512,
    "premier": 1785077623105,
    "copa": 1785078979201
@@ -529,7 +500,7 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": -2.5
+   "2026-07-26": -1.6
   },
   "_gatilhoAtual": {
    "tipo": "odd",
