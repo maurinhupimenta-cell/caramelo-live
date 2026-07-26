@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -36.4,
-  "ciclos": 440,
-  "greens": 295,
+  "saldo": -34.9,
+  "ciclos": 441,
+  "greens": 296,
   "redsCiclo": 71,
   "aborts": 0,
   "descartes": 74,
   "historico": [
+   {
+    "quando": "2026-07-26T15:25:02.999Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "super · Bogota x Itaquera @2.55 (tiro 1) · gatilho: coluna :25"
+   },
    {
     "quando": "2026-07-26T15:13:21.602Z",
     "resultado": "GREEN_OBS",
@@ -276,54 +282,19 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "euro · Romênia x Portugal @2.15 (tiro 1) · gatilho: seq RGGRR"
-   },
-   {
-    "quando": "2026-07-26T09:26:46.300Z",
-    "resultado": "GREEN",
-    "unidades": 2,
-    "detalhe": "premier · Leicester x Norwich @2.25 (tiro 3) · gatilho: seq GGGR"
    }
   ],
   "consumidas": {
    "copa": 1785078061111,
-   "premier": 1785078517704
+   "premier": 1785078517704,
+   "super": 1785079502803
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:22",
-     "jogo": "Bogota x Itaquera",
-     "odd": 2.55
-    },
-    {
-     "h": "16:25",
-     "jogo": "Guayaquil x Agua Branca",
-     "odd": 2.07
-    },
-    {
-     "h": "16:28",
-     "jogo": "Rio de Janeiro x Santiago",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "coluna :25",
-   "alvo": {
-    "h": "16:22",
-    "jogo": "Bogota x Itaquera",
-    "odd": 2.55,
-    "unidades": 1,
-    "desde": 1785078803703
-   },
-   "iniciadoEm": 1785078803703
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785078061111,
    "premier": 1785078517704,
    "euro": 1785075529697,
-   "super": 1785075109606
+   "super": 1785079502803
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -337,12 +308,12 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": 6
+   "2026-07-26": 7.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":25",
-   "n": 16,
+   "tipo": "seq",
+   "chave": "RRRR",
+   "n": 29,
    "start": 1
   },
   "_obs": {}
