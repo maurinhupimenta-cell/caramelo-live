@@ -319,13 +319,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -39,
-  "ciclos": 466,
-  "greens": 326,
+  "saldo": -37.8,
+  "ciclos": 467,
+  "greens": 327,
   "redsCiclo": 53,
   "aborts": 0,
   "descartes": 87,
   "historico": [
+   {
+    "quando": "2026-07-26T17:41:45.804Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · Tottenham x Aston @2.2 (tiro 1) · gatilho: seq RGRRG"
+   },
    {
     "quando": "2026-07-26T17:36:49.607Z",
     "resultado": "GREEN",
@@ -439,23 +445,18 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: odd 2.07"
-   },
-   {
-    "quando": "2026-07-26T11:58:15.699Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho odd 2.2) — liga REARMADA"
    }
   ],
   "consumidas": {
    "super": 1785086909605,
-   "copa": 1785087409408
+   "copa": 1785087409408,
+   "premier": 1785087705607
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1785083585300,
    "super": 1785086909605,
-   "premier": 1785077623105,
+   "premier": 1785087705607,
    "copa": 1785087409408
   },
   "dias": {
@@ -469,13 +470,13 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": 2.9
+   "2026-07-26": 4.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Brasil",
-   "n": 15,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":50",
+   "n": 18,
+   "start": 3
   },
   "_obs": {}
  }
