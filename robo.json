@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -46.1,
-  "ciclos": 455,
-  "greens": 302,
+  "saldo": -45.1,
+  "ciclos": 456,
+  "greens": 303,
   "redsCiclo": 74,
   "aborts": 0,
   "descartes": 79,
   "historico": [
+   {
+    "quando": "2026-07-26T20:54:57.208Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Newcastle x Wolverhampton @1.95 (tiro 1) · gatilho: seq RRGGG"
+   },
    {
     "quando": "2026-07-26T20:42:45.099Z",
     "resultado": "RED_CICLO",
@@ -276,52 +282,17 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: seq GGGGG"
-   },
-   {
-    "quando": "2026-07-26T14:11:52.506Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho seq GGGGG) — liga REARMADA"
    }
   ],
   "consumidas": {
    "copa": 1785096793308,
-   "super": 1785098564808
+   "super": 1785098564808,
+   "premier": 1785099297011
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:51",
-     "jogo": "Newcastle x Wolverhampton",
-     "odd": 1.95
-    },
-    {
-     "h": "21:54",
-     "jogo": "Aston x Liverpool",
-     "odd": 2.3
-    },
-    {
-     "h": "21:57",
-     "jogo": "Palace x Brentford",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "seq RRGGG",
-   "alvo": {
-    "h": "21:51",
-    "jogo": "Newcastle x Wolverhampton",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1785098880109
-   },
-   "iniciadoEm": 1785098880109
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785096793308,
-   "premier": 1785086799105,
+   "premier": 1785099297011,
    "euro": 1785091809105,
    "super": 1785098564808
   },
@@ -337,7 +308,7 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": -3.7
+   "2026-07-26": -2.7
   },
   "_gatilhoAtual": {
    "tipo": "seq",
