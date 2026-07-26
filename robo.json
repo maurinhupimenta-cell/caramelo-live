@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -28.8,
-  "ciclos": 420,
-  "greens": 282,
+  "saldo": -26.8,
+  "ciclos": 421,
+  "greens": 283,
   "redsCiclo": 67,
   "aborts": 0,
   "descartes": 71,
   "historico": [
+   {
+    "quando": "2026-07-26T09:26:46.300Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "premier · Leicester x Norwich @2.25 (tiro 3) · gatilho: seq GGGR"
+   },
    {
     "quando": "2026-07-26T09:10:37.905Z",
     "resultado": "GREEN",
@@ -276,66 +282,17 @@
     "resultado": "GREEN",
     "unidades": 2.6,
     "detalhe": "euro · Albânia x Países Baixos @2.4 (tiro 3) · gatilho: time Geórgia"
-   },
-   {
-    "quando": "2026-07-26T02:08:40.006Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "premier · Islington x Brighton @2.07 (tiro 1) · gatilho: placar 1-0 / 0-1"
    }
   ],
   "consumidas": {
    "copa": 1785055694806,
-   "super": 1785057037700
+   "super": 1785057037700,
+   "premier": 1785058006199
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "10:18",
-     "jogo": "Norwich x Islington",
-     "odd": 2.2
-    },
-    {
-     "h": "10:21",
-     "jogo": "Newcastle x City",
-     "odd": 1.95
-    },
-    {
-     "h": "10:24",
-     "jogo": "Leicester x Norwich",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "seq GGGR",
-   "alvo": {
-    "h": "10:24",
-    "jogo": "Leicester x Norwich",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1785057822700
-   },
-   "iniciadoEm": 1785057287707,
-   "tiros": [
-    {
-     "h": "10:18",
-     "jogo": "Norwich x Islington",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "10:21",
-     "jogo": "Newcastle x City",
-     "odd": 1.95,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785055694806,
-   "premier": 1785053503205,
+   "premier": 1785058006199,
    "euro": 1785032630305,
    "super": 1785057037700
   },
@@ -351,13 +308,13 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": 13.6
+   "2026-07-26": 15.6
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":33",
    "n": 10,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
