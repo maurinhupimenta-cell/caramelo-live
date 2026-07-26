@@ -285,11 +285,40 @@
    }
   ],
   "consumidas": {
-   "copa": 1785051638206,
    "super": 1785052317700,
    "premier": 1785053503205
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:40",
+     "jogo": "Noruega x Suécia",
+     "odd": 2.4
+    },
+    {
+     "h": "09:43",
+     "jogo": "Uruguai x Haiti",
+     "odd": 2.15
+    },
+    {
+     "h": "09:46",
+     "jogo": "Marrocos x Alemanha",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "odd 2.15",
+   "alvo": {
+    "h": "09:40",
+    "jogo": "Noruega x Suécia",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1785055239400
+   },
+   "iniciadoEm": 1785055239400
+  },
   "cooldown": {
    "copa": 1785051638206,
    "premier": 1785053503205,
@@ -311,10 +340,10 @@
    "2026-07-26": 10.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":12",
-   "n": 9,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.15",
+   "n": 13,
+   "start": 3
   },
   "_obs": {}
  },
@@ -503,10 +532,10 @@
    "2026-07-26": 0.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":40",
-   "n": 9,
-   "start": 3
+   "tipo": "time",
+   "chave": "Áustria",
+   "n": 10,
+   "start": 1
   },
   "_obs": {}
  }
