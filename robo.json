@@ -180,7 +180,7 @@
    "tipo": "odd",
    "chave": "4.2",
    "n": 9,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
@@ -314,11 +314,40 @@
    }
   ],
   "consumidas": {
-   "copa": 1785033651812,
    "super": 1785035513509,
    "premier": 1785036041702
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:46",
+     "jogo": "República Tcheca x Senegal",
+     "odd": 2.55
+    },
+    {
+     "h": "04:49",
+     "jogo": "Colômbia x Nova Zelândia",
+     "odd": 2.2
+    },
+    {
+     "h": "04:52",
+     "jogo": "Portugal x Bélgica",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "odd 2.2",
+   "alvo": {
+    "h": "04:46",
+    "jogo": "República Tcheca x Senegal",
+    "odd": 2.55,
+    "unidades": 1,
+    "desde": 1785037259909
+   },
+   "iniciadoEm": 1785037259909
+  },
   "cooldown": {
    "copa": 1785033651812,
    "premier": 1785036041702,
@@ -340,10 +369,10 @@
    "2026-07-26": 2.8
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "1-0 / 0-1",
-   "n": 19,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.2",
+   "n": 15,
+   "start": 2
   },
   "_obs": {}
  },
