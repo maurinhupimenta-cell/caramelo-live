@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -39.3,
-  "ciclos": 437,
-  "greens": 293,
+  "saldo": -38,
+  "ciclos": 438,
+  "greens": 294,
   "redsCiclo": 71,
   "aborts": 0,
   "descartes": 73,
   "historico": [
+   {
+    "quando": "2026-07-26T15:01:01.303Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "copa · Iraque x Curação @2.3 (tiro 1) · gatilho: time Áustria"
+   },
    {
     "quando": "2026-07-26T14:18:50.202Z",
     "resultado": "RED_CICLO",
@@ -276,51 +282,16 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "copa · Noruega x Suécia @2.4 (tiro 1) · gatilho: odd 2.15"
-   },
-   {
-    "quando": "2026-07-26T08:11:43.405Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "premier · Liverpool x Tottenham @2.4 (tiro 1) · gatilho: coluna :12"
    }
   ],
   "consumidas": {
    "super": 1785075109606,
-   "euro": 1785075529697
+   "euro": 1785075529697,
+   "copa": 1785078061111
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:58",
-     "jogo": "Iraque x Curação",
-     "odd": 2.3
-    },
-    {
-     "h": "16:01",
-     "jogo": "EUA x Áustria",
-     "odd": 2.2
-    },
-    {
-     "h": "16:04",
-     "jogo": "Inglaterra x Coreia do Sul",
-     "odd": 2.45
-    }
-   ],
-   "gatilho": "time Áustria",
-   "alvo": {
-    "h": "15:58",
-    "jogo": "Iraque x Curação",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1785077361505
-   },
-   "iniciadoEm": 1785077361505
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785073610107,
+   "copa": 1785078061111,
    "premier": 1785071918305,
    "euro": 1785075529697,
    "super": 1785075109606
@@ -337,13 +308,13 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": 3.1
+   "2026-07-26": 4.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Áustria",
+   "tipo": "coluna",
+   "chave": ":03",
    "n": 16,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
