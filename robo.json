@@ -289,7 +289,37 @@
    "premier": 1785058006199,
    "euro": 1785059577108
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:07",
+     "jogo": "Tunísia x Portugal",
+     "odd": 2.4
+    },
+    {
+     "h": "11:10",
+     "jogo": "Países Baixos x Austrália",
+     "odd": 2.25
+    },
+    {
+     "h": "11:13",
+     "jogo": "Croácia x Alemanha",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "seq RRRRR",
+   "alvo": {
+    "h": "11:07",
+    "jogo": "Tunísia x Portugal",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1785060235408
+   },
+   "iniciadoEm": 1785060235408
+  },
   "cooldown": {
    "copa": 1785055694806,
    "premier": 1785058006199,
@@ -312,7 +342,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGGRR",
+   "chave": "RRRRR",
    "n": 8,
    "start": 1
   },
@@ -502,9 +532,9 @@
    "2026-07-26": 3.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.07",
-   "n": 10,
+   "tipo": "coluna",
+   "chave": ":13",
+   "n": 11,
    "start": 3
   },
   "_obs": {}
