@@ -288,7 +288,37 @@
    "copa": 1785055694806,
    "super": 1785057037700
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:18",
+     "jogo": "Norwich x Islington",
+     "odd": 2.2
+    },
+    {
+     "h": "10:21",
+     "jogo": "Newcastle x City",
+     "odd": 1.95
+    },
+    {
+     "h": "10:24",
+     "jogo": "Leicester x Norwich",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "seq GGGR",
+   "alvo": {
+    "h": "10:18",
+    "jogo": "Norwich x Islington",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785057287707
+   },
+   "iniciadoEm": 1785057287707
+  },
   "cooldown": {
    "copa": 1785055694806,
    "premier": 1785053503205,
@@ -311,8 +341,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GGRRR",
-   "n": 10,
+   "chave": "GGGR",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
