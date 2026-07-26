@@ -319,13 +319,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -40.2,
-  "ciclos": 465,
-  "greens": 325,
+  "saldo": -39,
+  "ciclos": 466,
+  "greens": 326,
   "redsCiclo": 53,
   "aborts": 0,
   "descartes": 87,
   "historico": [
+   {
+    "quando": "2026-07-26T17:36:49.607Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · França x Iraque @2.15 (tiro 1) · gatilho: time Brasil"
+   },
    {
     "quando": "2026-07-26T17:28:29.808Z",
     "resultado": "GREEN",
@@ -439,53 +445,18 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho odd 2.2) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-26T11:43:57.098Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "euro · Eslováquia x República Tcheca @2.15 (tiro 1) · gatilho: coluna :44"
    }
   ],
   "consumidas": {
-   "super": 1785086909605
+   "super": 1785086909605,
+   "copa": 1785087409408
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:34",
-     "jogo": "França x Iraque",
-     "odd": 2.15
-    },
-    {
-     "h": "18:37",
-     "jogo": "Brasil x Jordânia",
-     "odd": 2.05
-    },
-    {
-     "h": "18:40",
-     "jogo": "Curação x Equador",
-     "odd": 1.85
-    }
-   ],
-   "gatilho": "time Brasil",
-   "alvo": {
-    "h": "18:34",
-    "jogo": "França x Iraque",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785086912211
-   },
-   "iniciadoEm": 1785086912211
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785083585300,
    "super": 1785086909605,
    "premier": 1785077623105,
-   "copa": 1785083302407
+   "copa": 1785087409408
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -498,7 +469,7 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": 1.7
+   "2026-07-26": 2.9
   },
   "_gatilhoAtual": {
    "tipo": "time",
