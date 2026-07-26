@@ -286,8 +286,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "02:07",
@@ -307,13 +307,21 @@
    ],
    "gatilho": "placar goleada (3+)",
    "alvo": {
-    "h": "02:07",
-    "jogo": "África do Sul x Iraque",
-    "odd": 2.62,
-    "unidades": 1,
-    "desde": 1785027891699
+    "h": "02:10",
+    "jogo": "Senegal x Tunísia",
+    "odd": 2.8,
+    "unidades": 2,
+    "desde": 1785028253203
    },
-   "iniciadoEm": 1785027891699
+   "iniciadoEm": 1785027891699,
+   "tiros": [
+    {
+     "h": "02:07",
+     "jogo": "África do Sul x Iraque",
+     "odd": 2.62,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785019941007,
