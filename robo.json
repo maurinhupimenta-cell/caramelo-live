@@ -180,7 +180,7 @@
    "tipo": "odd",
    "chave": "4.2",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -372,7 +372,7 @@
    "tipo": "odd",
    "chave": "2.2",
    "n": 15,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -512,8 +512,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "04:39",
@@ -533,11 +533,11 @@
    ],
    "gatilho": "time Southampton",
    "alvo": {
-    "h": "04:42",
-    "jogo": "Islington x Southampton",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1785037300202
+    "h": "04:45",
+    "jogo": "Aston x United",
+    "odd": 2.02,
+    "unidades": 4,
+    "desde": 1785037493607
    },
    "iniciadoEm": 1785036590304,
    "tiros": [
@@ -546,6 +546,12 @@
      "jogo": "Leeds x Tottenham",
      "odd": 2.25,
      "unidades": 1
+    },
+    {
+     "h": "04:42",
+     "jogo": "Islington x Southampton",
+     "odd": 2.05,
+     "unidades": 2
     }
    ]
   },
@@ -572,7 +578,7 @@
    "tipo": "time",
    "chave": "Southampton",
    "n": 8,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
