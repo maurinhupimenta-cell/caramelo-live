@@ -342,7 +342,7 @@
    "tipo": "coluna",
    "chave": ":37",
    "n": 19,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -479,7 +479,37 @@
    "copa": 1785095996110,
    "super": 1785097697101
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:36",
+     "jogo": "Watford x Newcastle",
+     "odd": 1.87
+    },
+    {
+     "h": "21:39",
+     "jogo": "Palace x Chelsea",
+     "odd": 1.93
+    },
+    {
+     "h": "21:42",
+     "jogo": "West Ham x Tottenham",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "seq RGRRG",
+   "alvo": {
+    "h": "21:36",
+    "jogo": "Watford x Newcastle",
+    "odd": 1.87,
+    "unidades": 1,
+    "desde": 1785097965107
+   },
+   "iniciadoEm": 1785097965107
+  },
   "cooldown": {
    "euro": 1785092521099,
    "super": 1785097697101,
@@ -500,9 +530,9 @@
    "2026-07-26": 1.6
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":25",
-   "n": 19,
+   "tipo": "seq",
+   "chave": "RGRRG",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
