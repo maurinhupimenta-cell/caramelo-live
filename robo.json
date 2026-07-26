@@ -288,7 +288,37 @@
    "copa": 1785082581510,
    "euro": 1785083204699
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:01",
+     "jogo": "Belo Horizonte x La Boca",
+     "odd": 2.2
+    },
+    {
+     "h": "18:04",
+     "jogo": "Sao Paulo x La Plata",
+     "odd": 2.35
+    },
+    {
+     "h": "18:07",
+     "jogo": "Quito x Itaquera",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "odd 2.35",
+   "alvo": {
+    "h": "18:01",
+    "jogo": "Belo Horizonte x La Boca",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785084740202
+   },
+   "iniciadoEm": 1785084740202
+  },
   "cooldown": {
    "copa": 1785082581510,
    "premier": 1785078517704,
@@ -310,10 +340,10 @@
    "2026-07-26": 1.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGRR",
-   "n": 12,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.35",
+   "n": 13,
+   "start": 3
   },
   "_obs": {}
  },
