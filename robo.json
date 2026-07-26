@@ -320,12 +320,18 @@
  },
  "ambas": {
   "saldo": -47.5,
-  "ciclos": 427,
+  "ciclos": 428,
   "greens": 296,
   "redsCiclo": 50,
   "aborts": 0,
-  "descartes": 81,
+  "descartes": 82,
   "historico": [
+   {
+    "quando": "2026-07-26T06:02:54.608Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho seq RRGG) — liga REARMADA"
+   },
    {
     "quando": "2026-07-26T05:59:20.806Z",
     "resultado": "GREEN",
@@ -439,16 +445,9 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho placar goleada (3+)) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-26T00:57:51.504Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "super · Asuncion x Bogota @2.15 (tiro 1) · gatilho: placar 1-0 / 0-1"
    }
   ],
   "consumidas": {
-   "premier": 1785042166500,
    "copa": 1785044631703,
    "super": 1785044989406,
    "euro": 1785045560700
@@ -479,6 +478,11 @@
    "n": 13,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1785045774608,
+    "gatilho": "seq RRGG"
+   }
+  }
  }
 }
