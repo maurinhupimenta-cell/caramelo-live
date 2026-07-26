@@ -355,13 +355,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -40.3,
-  "ciclos": 473,
-  "greens": 332,
+  "saldo": -39.4,
+  "ciclos": 474,
+  "greens": 333,
   "redsCiclo": 54,
   "aborts": 0,
   "descartes": 87,
   "historico": [
+   {
+    "quando": "2026-07-26T20:41:53.502Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Palace x Chelsea @1.93 (tiro 2) · gatilho: seq RGRRG"
+   },
    {
     "quando": "2026-07-26T20:28:17.301Z",
     "resultado": "RED_CICLO",
@@ -475,61 +481,18 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time México"
-   },
-   {
-    "quando": "2026-07-26T13:50:38.399Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Palace x Brentford @1.98 (tiro 2) · gatilho: seq GGGGR"
    }
   ],
   "consumidas": {
    "copa": 1785095996110,
-   "super": 1785097697101
+   "super": 1785097697101,
+   "premier": 1785098513308
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "21:36",
-     "jogo": "Watford x Newcastle",
-     "odd": 1.87
-    },
-    {
-     "h": "21:39",
-     "jogo": "Palace x Chelsea",
-     "odd": 1.93
-    },
-    {
-     "h": "21:42",
-     "jogo": "West Ham x Tottenham",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "seq RGRRG",
-   "alvo": {
-    "h": "21:39",
-    "jogo": "Palace x Chelsea",
-    "odd": 1.93,
-    "unidades": 2,
-    "desde": 1785098331711
-   },
-   "iniciadoEm": 1785097965107,
-   "tiros": [
-    {
-     "h": "21:36",
-     "jogo": "Watford x Newcastle",
-     "odd": 1.87,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785092521099,
    "super": 1785097697101,
-   "premier": 1785087705607,
+   "premier": 1785098513308,
    "copa": 1785095996110
   },
   "dias": {
@@ -543,12 +506,12 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": 1.6
+   "2026-07-26": 2.5
   },
   "_gatilhoAtual": {
    "tipo": "seq",
    "chave": "RGRRG",
-   "n": 10,
+   "n": 11,
    "start": 1
   },
   "_obs": {}
