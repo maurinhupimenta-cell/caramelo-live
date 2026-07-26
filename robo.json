@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -34.5,
-  "ciclos": 416,
-  "greens": 278,
+  "saldo": -33,
+  "ciclos": 417,
+  "greens": 279,
   "redsCiclo": 67,
   "aborts": 0,
   "descartes": 71,
   "historico": [
+   {
+    "quando": "2026-07-26T07:51:57.903Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "super · La Boca x Santos @2.5 (tiro 1) · gatilho: seq GGRRR"
+   },
    {
     "quando": "2026-07-26T07:40:38.401Z",
     "resultado": "GREEN",
@@ -276,54 +282,19 @@
     "resultado": "GREEN",
     "unidades": 1.7,
     "detalhe": "super · Guayaquil x Penarol @2.35 (tiro 2) · gatilho: odd 2.35"
-   },
-   {
-    "quando": "2026-07-25T22:52:21.204Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "copa · Bósnia e Herzegovina x Áustria @2.1 (tiro 1) · gatilho: seq RRRGG"
    }
   ],
   "consumidas": {
    "premier": 1785049563010,
-   "copa": 1785051638206
+   "copa": 1785051638206,
+   "super": 1785052317700
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "08:49",
-     "jogo": "La Boca x Santos",
-     "odd": 2.5
-    },
-    {
-     "h": "08:52",
-     "jogo": "La Plata x Porto Alegre",
-     "odd": 3
-    },
-    {
-     "h": "08:55",
-     "jogo": "Montevideo x Asuncion",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "seq GGRRR",
-   "alvo": {
-    "h": "08:49",
-    "jogo": "La Boca x Santos",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1785051978209
-   },
-   "iniciadoEm": 1785051978209
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785051638206,
    "premier": 1785049563010,
    "euro": 1785032630305,
-   "super": 1785047510507
+   "super": 1785052317700
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -337,12 +308,12 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": 7.9
+   "2026-07-26": 9.4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GGRRR",
-   "n": 8,
+   "chave": "RRRG",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
