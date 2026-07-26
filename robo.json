@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -25.3,
-  "ciclos": 434,
+  "saldo": -32.3,
+  "ciclos": 435,
   "greens": 293,
-  "redsCiclo": 69,
+  "redsCiclo": 70,
   "aborts": 0,
   "descartes": 72,
   "historico": [
+   {
+    "quando": "2026-07-26T14:11:49.802Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
+   },
    {
     "quando": "2026-07-26T13:46:50.306Z",
     "resultado": "GREEN",
@@ -276,62 +282,19 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "copa · Turquia x Áustria @2.25 (tiro 2) · gatilho: time Turquia"
-   },
-   {
-    "quando": "2026-07-26T07:06:03.299Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Brighton x United @2.05 (tiro 1) · gatilho: odd 2.05"
    }
   ],
   "consumidas": {
    "premier": 1785071918305,
-   "copa": 1785073610107
+   "copa": 1785073610107,
+   "super": 1785075109606
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "15:01",
-     "jogo": "Sao Paulo x Buenos Aires",
-     "odd": 1.98
-    },
-    {
-     "h": "15:04",
-     "jogo": "Santos x Avellaneda",
-     "odd": 2.4
-    },
-    {
-     "h": "15:07",
-     "jogo": "Rio de Janeiro x La Plata",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "placar empate 2-2",
-   "alvo": {
-    "h": "15:04",
-    "jogo": "Santos x Avellaneda",
-    "odd": 2.4,
-    "unidades": 2,
-    "desde": 1785075050008
-   },
-   "iniciadoEm": 1785074276704,
-   "tiros": [
-    {
-     "h": "15:01",
-     "jogo": "Sao Paulo x Buenos Aires",
-     "odd": 1.98,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785073610107,
    "premier": 1785071918305,
    "euro": 1785070430901,
-   "super": 1785070489410
+   "super": 1785075109606
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -345,7 +308,7 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": 17.1
+   "2026-07-26": 10.1
   },
   "_gatilhoAtual": {
    "tipo": "placar",
@@ -356,13 +319,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -41.7,
-  "ciclos": 454,
+  "saldo": -48.7,
+  "ciclos": 455,
   "greens": 316,
-  "redsCiclo": 52,
+  "redsCiclo": 53,
   "aborts": 0,
   "descartes": 86,
   "historico": [
+   {
+    "quando": "2026-07-26T14:10:52.306Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time México"
+   },
    {
     "quando": "2026-07-26T13:50:38.399Z",
     "resultado": "GREEN",
@@ -476,68 +445,49 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-26T08:25:57.204Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · Dinamarca x Bélgica @1.98 (tiro 1) · gatilho: odd 1.9"
    }
   ],
   "consumidas": {
    "super": 1785072591897,
-   "premier": 1785073838198
+   "premier": 1785073838198,
+   "copa": 1785075052197
   },
   "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "14:58",
-     "jogo": "Coreia do Sul x Nova Zelândia",
-     "odd": 2.07
+     "h": "15:11",
+     "jogo": "República Tcheca x Romênia",
+     "odd": 2.05
     },
     {
-     "h": "15:01",
-     "jogo": "México x Argentina",
-     "odd": 1.9
+     "h": "15:14",
+     "jogo": "Turquia x Países Baixos",
+     "odd": 1.95
     },
     {
-     "h": "15:04",
-     "jogo": "Bósnia e Herzegovina x Croácia",
-     "odd": 1.98
+     "h": "15:17",
+     "jogo": "Suíça x Ucrânia",
+     "odd": 1.93
     }
    ],
-   "gatilho": "time México",
+   "gatilho": "odd 1.95",
    "alvo": {
-    "h": "15:04",
-    "jogo": "Bósnia e Herzegovina x Croácia",
-    "odd": 1.98,
-    "unidades": 4,
-    "desde": 1785074630403
+    "h": "15:11",
+    "jogo": "República Tcheca x Romênia",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785075109898
    },
-   "iniciadoEm": 1785073849401,
-   "tiros": [
-    {
-     "h": "14:58",
-     "jogo": "Coreia do Sul x Nova Zelândia",
-     "odd": 2.07,
-     "unidades": 1
-    },
-    {
-     "h": "15:01",
-     "jogo": "México x Argentina",
-     "odd": 1.9,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1785075109898
   },
   "cooldown": {
    "euro": 1785070314203,
    "super": 1785072591897,
    "premier": 1785073838198,
-   "copa": 1785069951298
+   "copa": 1785075052197
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -550,13 +500,13 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": 0.2
+   "2026-07-26": -6.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "México",
-   "n": 13,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.95",
+   "n": 12,
+   "start": 3
   },
   "_obs": {}
  }
