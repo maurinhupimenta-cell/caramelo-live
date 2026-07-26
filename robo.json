@@ -289,8 +289,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:07",
@@ -310,13 +310,21 @@
    ],
    "gatilho": "seq RRGG",
    "alvo": {
-    "h": "17:07",
-    "jogo": "Cabo Verde x Curação",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785081839804
+    "h": "17:10",
+    "jogo": "Paraguai x Panamá",
+    "odd": 2.5,
+    "unidades": 2,
+    "desde": 1785082179711
    },
-   "iniciadoEm": 1785081839804
+   "iniciadoEm": 1785081839804,
+   "tiros": [
+    {
+     "h": "17:07",
+     "jogo": "Cabo Verde x Curação",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785078061111,
@@ -530,9 +538,9 @@
    "2026-07-26": -1.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGGR",
-   "n": 11,
+   "tipo": "odd",
+   "chave": "2.25",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
