@@ -357,13 +357,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -36.9,
-  "ciclos": 441,
-  "greens": 307,
+  "saldo": -35.8,
+  "ciclos": 442,
+  "greens": 308,
   "redsCiclo": 50,
   "aborts": 0,
   "descartes": 84,
   "historico": [
+   {
+    "quando": "2026-07-26T10:24:59.007Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Senegal x Áustria @2.05 (tiro 2) · gatilho: time Áustria"
+   },
    {
     "quando": "2026-07-26T10:14:39.805Z",
     "resultado": "GREEN",
@@ -477,63 +483,19 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "euro · Croácia x Turquia @2.07 (tiro 2) · gatilho: time Turquia"
-   },
-   {
-    "quando": "2026-07-26T04:47:47.409Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho time Brighton) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "super": 1785057937799,
    "euro": 1785057997101,
-   "premier": 1785060879300
+   "premier": 1785060879300,
+   "copa": 1785061498901
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "11:19",
-     "jogo": "EUA x Irã",
-     "odd": 2.15
-    },
-    {
-     "h": "11:22",
-     "jogo": "Senegal x Áustria",
-     "odd": 2.05
-    },
-    {
-     "h": "11:25",
-     "jogo": "Argélia x Colômbia",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "time Áustria",
-   "alvo": {
-    "h": "11:22",
-    "jogo": "Senegal x Áustria",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1785061334909
-   },
-   "iniciadoEm": 1785060888802,
-   "tiros": [
-    {
-     "h": "11:19",
-     "jogo": "EUA x Irã",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785057997101,
    "super": 1785057937799,
    "premier": 1785060879300,
-   "copa": 1785055695005
+   "copa": 1785061498901
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -546,12 +508,12 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": 5
+   "2026-07-26": 6.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Áustria",
-   "n": 11,
+   "tipo": "seq",
+   "chave": "RRRG",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
