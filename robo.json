@@ -286,7 +286,37 @@
   "consumidas": {
    "copa": 1785028552307
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:06",
+     "jogo": "Islington x Brighton",
+     "odd": 2.07
+    },
+    {
+     "h": "03:09",
+     "jogo": "Aston x Leicester",
+     "odd": 2.4
+    },
+    {
+     "h": "03:12",
+     "jogo": "Southampton x United",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "placar 1-0 / 0-1",
+   "alvo": {
+    "h": "03:06",
+    "jogo": "Islington x Brighton",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1785031370407
+   },
+   "iniciadoEm": 1785031370407
+  },
   "cooldown": {
    "copa": 1785028552307,
    "premier": 1785016955897,
@@ -307,17 +337,12 @@
    "2026-07-25": 16.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.2",
-   "n": 8,
+   "tipo": "placar",
+   "chave": "1-0 / 0-1",
+   "n": 14,
    "start": 1
   },
-  "_obs": {
-   "premier": {
-    "desde": 1785031363902,
-    "gatilho": "placar 1-0 / 0-1"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -43.8,
