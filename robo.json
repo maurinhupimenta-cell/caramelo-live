@@ -287,11 +287,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1785036041702,
    "copa": 1785038273707,
    "super": 1785039471804
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:27",
+     "jogo": "Norwich x West Ham",
+     "odd": 2.45
+    },
+    {
+     "h": "05:30",
+     "jogo": "Brentford x City",
+     "odd": 2.1
+    },
+    {
+     "h": "05:33",
+     "jogo": "Brighton x West Ham",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "time City",
+   "alvo": {
+    "h": "05:27",
+    "jogo": "Norwich x West Ham",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1785039642301
+   },
+   "iniciadoEm": 1785039642301
+  },
   "cooldown": {
    "copa": 1785038273707,
    "premier": 1785036041702,
@@ -314,8 +343,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Porto Alegre",
-   "n": 11,
+   "chave": "City",
+   "n": 9,
    "start": 3
   },
   "_obs": {}
@@ -507,7 +536,7 @@
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "1.93",
-   "n": 12,
+   "n": 13,
    "start": 3
   },
   "_obs": {}
