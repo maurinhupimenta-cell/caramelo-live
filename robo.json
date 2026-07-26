@@ -451,7 +451,37 @@
    "euro": 1785062097107,
    "super": 1785063138400
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:34",
+     "jogo": "México x Colômbia",
+     "odd": 1.93
+    },
+    {
+     "h": "12:37",
+     "jogo": "Turquia x Noruega",
+     "odd": 1.93
+    },
+    {
+     "h": "12:40",
+     "jogo": "Coreia do Sul x Senegal",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time Turquia",
+   "alvo": {
+    "h": "12:34",
+    "jogo": "México x Colômbia",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1785065115010
+   },
+   "iniciadoEm": 1785065115010
+  },
   "cooldown": {
    "euro": 1785062097107,
    "super": 1785063138400,
@@ -472,10 +502,10 @@
    "2026-07-26": 0.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRR",
-   "n": 16,
-   "start": 1
+   "tipo": "time",
+   "chave": "Turquia",
+   "n": 14,
+   "start": 3
   },
   "_obs": {}
  }
