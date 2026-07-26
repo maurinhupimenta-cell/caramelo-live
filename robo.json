@@ -319,13 +319,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -45.2,
-  "ciclos": 431,
-  "greens": 299,
+  "saldo": -44.2,
+  "ciclos": 432,
+  "greens": 300,
   "redsCiclo": 50,
   "aborts": 0,
   "descartes": 82,
   "historico": [
+   {
+    "quando": "2026-07-26T07:25:15.400Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Senegal x Brasil @2.05 (tiro 1) · gatilho: odd 1.9"
+   },
    {
     "quando": "2026-07-26T07:13:57.204Z",
     "resultado": "GREEN",
@@ -439,54 +445,19 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · Wolverhampton x Leeds @2.02 (tiro 1) · gatilho: placar empate 1-1"
-   },
-   {
-    "quando": "2026-07-26T02:11:43.005Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho placar empate 1-1) — liga REARMADA"
    }
   ],
   "consumidas": {
    "super": 1785049458100,
-   "euro": 1785050037009
+   "euro": 1785050037009,
+   "copa": 1785050715199
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "08:22",
-     "jogo": "Senegal x Brasil",
-     "odd": 2.05
-    },
-    {
-     "h": "08:25",
-     "jogo": "Haiti x Qatar",
-     "odd": 1.9
-    },
-    {
-     "h": "08:28",
-     "jogo": "Jordânia x RD Congo",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "odd 1.9",
-   "alvo": {
-    "h": "08:22",
-    "jogo": "Senegal x Brasil",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785050038511
-   },
-   "iniciadoEm": 1785050038511
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785050037009,
    "super": 1785049458100,
    "premier": 1785046488505,
-   "copa": 1785044631703
+   "copa": 1785050715199
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -499,12 +470,12 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": -3.3
+   "2026-07-26": -2.3
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.9",
-   "n": 8,
+   "tipo": "time",
+   "chave": "Turquia",
+   "n": 9,
    "start": 3
   },
   "_obs": {}
