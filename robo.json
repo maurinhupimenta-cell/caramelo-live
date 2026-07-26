@@ -288,7 +288,37 @@
    "premier": 1785053503205,
    "copa": 1785055694806
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:04",
+     "jogo": "Medellin x Guayaquil",
+     "odd": 2.25
+    },
+    {
+     "h": "10:07",
+     "jogo": "Belo Horizonte x Santos",
+     "odd": 2.2
+    },
+    {
+     "h": "10:10",
+     "jogo": "La Plata x La Boca",
+     "odd": 2.7
+    }
+   ],
+   "gatilho": "seq GGRRR",
+   "alvo": {
+    "h": "10:04",
+    "jogo": "Medellin x Guayaquil",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785056557806
+   },
+   "iniciadoEm": 1785056557806
+  },
   "cooldown": {
    "copa": 1785055694806,
    "premier": 1785053503205,
@@ -310,9 +340,9 @@
    "2026-07-26": 12.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.15",
-   "n": 13,
+   "tipo": "seq",
+   "chave": "GGRRR",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
