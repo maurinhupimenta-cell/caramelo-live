@@ -319,13 +319,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -37.8,
-  "ciclos": 467,
-  "greens": 327,
+  "saldo": -36.9,
+  "ciclos": 468,
+  "greens": 328,
   "redsCiclo": 53,
   "aborts": 0,
   "descartes": 87,
   "historico": [
+   {
+    "quando": "2026-07-26T17:55:49.503Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Romênia x Bélgica @1.85 (tiro 1) · gatilho: coluna :50"
+   },
    {
     "quando": "2026-07-26T17:41:45.804Z",
     "resultado": "GREEN",
@@ -439,52 +445,17 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "super · Guayaquil x La Plata @2.05 (tiro 1) · gatilho: coluna :16"
-   },
-   {
-    "quando": "2026-07-26T12:11:36.403Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: odd 2.07"
    }
   ],
   "consumidas": {
    "super": 1785086909605,
    "copa": 1785087409408,
-   "premier": 1785087705607
+   "premier": 1785087705607,
+   "euro": 1785088549302
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:47",
-     "jogo": "Romênia x Bélgica",
-     "odd": 1.85
-    },
-    {
-     "h": "18:50",
-     "jogo": "Suíça x Polônia",
-     "odd": 2.02
-    },
-    {
-     "h": "18:53",
-     "jogo": "Eslováquia x Croácia",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "coluna :50",
-   "alvo": {
-    "h": "18:47",
-    "jogo": "Romênia x Bélgica",
-    "odd": 1.85,
-    "unidades": 1,
-    "desde": 1785087716802
-   },
-   "iniciadoEm": 1785087716802
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785083585300,
+   "euro": 1785088549302,
    "super": 1785086909605,
    "premier": 1785087705607,
    "copa": 1785087409408
@@ -500,13 +471,13 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": 4.1
+   "2026-07-26": 5
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":50",
    "n": 18,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
