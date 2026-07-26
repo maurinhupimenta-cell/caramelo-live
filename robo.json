@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -39.1,
-  "ciclos": 454,
+  "saldo": -46.1,
+  "ciclos": 455,
   "greens": 302,
-  "redsCiclo": 73,
+  "redsCiclo": 74,
   "aborts": 0,
   "descartes": 79,
   "historico": [
+   {
+    "quando": "2026-07-26T20:42:45.099Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: coluna :37"
+   },
    {
     "quando": "2026-07-26T20:26:53.001Z",
     "resultado": "GREEN_OBS",
@@ -276,61 +282,18 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho seq GGGGG) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-26T14:11:49.802Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
   "consumidas": {
-   "copa": 1785096793308
+   "copa": 1785096793308,
+   "super": 1785098564808
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "21:34",
-     "jogo": "Quito x Porto Alegre",
-     "odd": 2.7
-    },
-    {
-     "h": "21:37",
-     "jogo": "Lima x Montevideo",
-     "odd": 2.05
-    },
-    {
-     "h": "21:40",
-     "jogo": "La Plata x Itaquera",
-     "odd": 2.55
-    }
-   ],
-   "gatilho": "coluna :37",
-   "alvo": {
-    "h": "21:37",
-    "jogo": "Lima x Montevideo",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1785098213408
-   },
-   "iniciadoEm": 1785097614710,
-   "tiros": [
-    {
-     "h": "21:34",
-     "jogo": "Quito x Porto Alegre",
-     "odd": 2.7,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785096793308,
    "premier": 1785086799105,
    "euro": 1785091809105,
-   "super": 1785086040605
+   "super": 1785098564808
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -344,12 +307,12 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": 3.3
+   "2026-07-26": -3.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":37",
-   "n": 19,
+   "tipo": "seq",
+   "chave": "GGRRR",
+   "n": 16,
    "start": 1
   },
   "_obs": {}
