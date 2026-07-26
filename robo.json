@@ -290,8 +290,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "22:37",
@@ -311,13 +311,27 @@
    ],
    "gatilho": "coluna :37",
    "alvo": {
-    "h": "22:37",
-    "jogo": "Sao Paulo x Avellaneda",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785102223706
+    "h": "22:43",
+    "jogo": "Guayaquil x Agua Branca",
+    "odd": 2.07,
+    "unidades": 4,
+    "desde": 1785102716102
    },
-   "iniciadoEm": 1785102223706
+   "iniciadoEm": 1785102223706,
+   "tiros": [
+    {
+     "h": "22:37",
+     "jogo": "Sao Paulo x Avellaneda",
+     "odd": 2.15,
+     "unidades": 1
+    },
+    {
+     "h": "22:40",
+     "jogo": "Santos x Bogota",
+     "odd": 2.7,
+     "unidades": 2
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785096793308,
@@ -349,12 +363,24 @@
  },
  "ambas": {
   "saldo": -37.9,
-  "ciclos": 477,
+  "ciclos": 479,
   "greens": 335,
   "redsCiclo": 54,
   "aborts": 0,
-  "descartes": 88,
+  "descartes": 90,
   "historico": [
+   {
+    "quando": "2026-07-26T21:50:58.205Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho time Guayaquil) — liga REARMADA"
+   },
+   {
+    "quando": "2026-07-26T21:50:56.400Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-26T21:35:53.101Z",
     "resultado": "GREEN_OBS",
@@ -462,53 +488,41 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · Bélgica x EUA @1.98 (tiro 1) · gatilho: coluna :13"
-   },
-   {
-    "quando": "2026-07-26T15:10:59.609Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho coluna :13) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-26T14:53:43.304Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "premier · Brighton x Southampton @1.93 (tiro 1) · gatilho: seq GGGGG"
    }
   ],
   "consumidas": {
    "copa": 1785100615207
   },
   "ciclo": {
-   "liga": "super",
+   "liga": "euro",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "22:40",
-     "jogo": "Santos x Bogota",
-     "odd": 2.25
+     "h": "22:50",
+     "jogo": "Hungria x Geórgia",
+     "odd": 2.15
     },
     {
-     "h": "22:43",
-     "jogo": "Guayaquil x Agua Branca",
-     "odd": 1.85
+     "h": "22:53",
+     "jogo": "Países Baixos x Turquia",
+     "odd": 1.98
     },
     {
-     "h": "22:46",
-     "jogo": "Santiago x Avellaneda",
-     "odd": 1.87
+     "h": "22:56",
+     "jogo": "Áustria x Ucrânia",
+     "odd": 2.02
     }
    ],
-   "gatilho": "time Guayaquil",
+   "gatilho": "coluna :50",
    "alvo": {
-    "h": "22:40",
-    "jogo": "Santos x Bogota",
-    "odd": 2.25,
+    "h": "22:50",
+    "jogo": "Hungria x Geórgia",
+    "odd": 2.15,
     "unidades": 1,
-    "desde": 1785101755001
+    "desde": 1785102658206
    },
-   "iniciadoEm": 1785101755001
+   "iniciadoEm": 1785102658206
   },
   "cooldown": {
    "euro": 1785098998211,
@@ -530,10 +544,10 @@
    "2026-07-26": 4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Guayaquil",
-   "n": 30,
-   "start": 2
+   "tipo": "coluna",
+   "chave": ":50",
+   "n": 22,
+   "start": 1
   },
   "_obs": {}
  }
