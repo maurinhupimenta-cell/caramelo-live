@@ -341,8 +341,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GGGR",
-   "n": 8,
+   "chave": "GGRR",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
@@ -477,11 +477,40 @@
    }
   ],
   "consumidas": {
-   "super": 1785053958002,
    "euro": 1785054357006,
    "copa": 1785055695005
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:22",
+     "jogo": "Porto Alegre x Guayaquil",
+     "odd": 2.1
+    },
+    {
+     "h": "10:25",
+     "jogo": "Santiago x Agua Branca",
+     "odd": 1.83
+    },
+    {
+     "h": "10:28",
+     "jogo": "Avellaneda x Santos",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "coluna :22",
+   "alvo": {
+    "h": "10:22",
+    "jogo": "Porto Alegre x Guayaquil",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785057559704
+   },
+   "iniciadoEm": 1785057559704
+  },
   "cooldown": {
    "euro": 1785054357006,
    "super": 1785053958002,
@@ -502,10 +531,10 @@
    "2026-07-26": 1.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Suíça",
-   "n": 9,
-   "start": 2
+   "tipo": "coluna",
+   "chave": ":22",
+   "n": 10,
+   "start": 1
   },
   "_obs": {}
  }
