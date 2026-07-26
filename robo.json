@@ -451,7 +451,37 @@
    "super": 1785057937799,
    "euro": 1785057997101
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:09",
+     "jogo": "Wolverhampton x United",
+     "odd": 1.85
+    },
+    {
+     "h": "11:12",
+     "jogo": "Leeds x Burnley",
+     "odd": 2.07
+    },
+    {
+     "h": "11:15",
+     "jogo": "Wolverhampton x Everton",
+     "odd": 1.83
+    }
+   ],
+   "gatilho": "odd 2.07",
+   "alvo": {
+    "h": "11:09",
+    "jogo": "Wolverhampton x United",
+    "odd": 1.85,
+    "unidades": 1,
+    "desde": 1785060007698
+   },
+   "iniciadoEm": 1785060007698
+  },
   "cooldown": {
    "euro": 1785057997101,
    "super": 1785057937799,
@@ -472,10 +502,10 @@
    "2026-07-26": 3.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Turquia",
-   "n": 18,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.07",
+   "n": 10,
+   "start": 3
   },
   "_obs": {}
  }
