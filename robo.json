@@ -349,13 +349,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -45.4,
-  "ciclos": 459,
-  "greens": 319,
+  "saldo": -44.4,
+  "ciclos": 460,
+  "greens": 320,
   "redsCiclo": 53,
   "aborts": 0,
   "descartes": 87,
   "historico": [
+   {
+    "quando": "2026-07-26T15:16:19.399Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Bélgica x EUA @1.98 (tiro 1) · gatilho: coluna :13"
+   },
    {
     "quando": "2026-07-26T15:10:59.609Z",
     "resultado": "GREEN_OBS",
@@ -469,55 +475,20 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "premier · Leeds x Burnley @2.07 (tiro 2) · gatilho: odd 2.07"
-   },
-   {
-    "quando": "2026-07-26T09:26:37.300Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "euro · Países Baixos x Portugal @1.85 (tiro 1) · gatilho: time Turquia"
    }
   ],
   "consumidas": {
    "euro": 1785075472403,
    "super": 1785077162512,
-   "premier": 1785077623105
+   "premier": 1785077623105,
+   "copa": 1785078979201
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:13",
-     "jogo": "Bélgica x EUA",
-     "odd": 1.98
-    },
-    {
-     "h": "16:16",
-     "jogo": "Argentina x Austrália",
-     "odd": 1.93
-    },
-    {
-     "h": "16:19",
-     "jogo": "Brasil x Uruguai",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "coluna :13",
-   "alvo": {
-    "h": "16:13",
-    "jogo": "Bélgica x EUA",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785078661208
-   },
-   "iniciadoEm": 1785078661208
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785075472403,
    "super": 1785077162512,
    "premier": 1785077623105,
-   "copa": 1785075052197
+   "copa": 1785078979201
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -530,13 +501,13 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": -3.5
+   "2026-07-26": -2.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":13",
-   "n": 16,
-   "start": 1
+   "tipo": "time",
+   "chave": "Áustria",
+   "n": 17,
+   "start": 3
   },
   "_obs": {}
  }
