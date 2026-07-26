@@ -157,12 +157,18 @@
  },
  "o25": {
   "saldo": -26.6,
-  "ciclos": 432,
+  "ciclos": 433,
   "greens": 292,
   "redsCiclo": 69,
   "aborts": 0,
-  "descartes": 71,
+  "descartes": 72,
   "historico": [
+   {
+    "quando": "2026-07-26T13:34:49.700Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho seq RGGR) — liga REARMADA"
+   },
    {
     "quando": "2026-07-26T13:18:38.499Z",
     "resultado": "GREEN",
@@ -276,21 +282,44 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "super · Penarol x Buenos Aires @2.25 (tiro 1) · gatilho: seq RRRR"
-   },
-   {
-    "quando": "2026-07-26T06:25:54.503Z",
-    "resultado": "GREEN",
-    "unidades": 1.6,
-    "detalhe": "copa · Uzbequistão x Suíça @2.3 (tiro 2) · gatilho: odd 2.3"
    }
   ],
   "consumidas": {
-   "copa": 1785069235602,
    "euro": 1785070430901,
    "super": 1785070489410,
    "premier": 1785071918305
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:40",
+     "jogo": "Coreia do Sul x Tunísia",
+     "odd": 2.75
+    },
+    {
+     "h": "14:43",
+     "jogo": "Noruega x Brasil",
+     "odd": 2.15
+    },
+    {
+     "h": "14:46",
+     "jogo": "Suíça x Senegal",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "time Noruega",
+   "alvo": {
+    "h": "14:40",
+    "jogo": "Coreia do Sul x Tunísia",
+    "odd": 2.75,
+    "unidades": 1,
+    "desde": 1785072891697
+   },
+   "iniciadoEm": 1785072891697
+  },
   "cooldown": {
    "copa": 1785069235602,
    "premier": 1785071918305,
@@ -312,10 +341,10 @@
    "2026-07-26": 15.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.05",
-   "n": 11,
-   "start": 1
+   "tipo": "time",
+   "chave": "Noruega",
+   "n": 16,
+   "start": 2
   },
   "_obs": {}
  },
