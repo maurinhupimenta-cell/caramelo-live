@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -23.6,
-  "ciclos": 423,
-  "greens": 285,
+  "saldo": -21.8,
+  "ciclos": 424,
+  "greens": 286,
   "redsCiclo": 67,
   "aborts": 0,
   "descartes": 71,
   "historico": [
+   {
+    "quando": "2026-07-26T10:31:18.504Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "super · Buenos Aires x Santos @2.2 (tiro 3) · gatilho: coluna :25"
+   },
    {
     "quando": "2026-07-26T10:15:37.104Z",
     "resultado": "GREEN",
@@ -276,68 +282,19 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "premier · Leeds x Palace @2.45 (tiro 1) · gatilho: placar 1-0 / 0-1"
-   },
-   {
-    "quando": "2026-07-26T03:11:53.708Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "super · Penarol x Santiago @2.25 (tiro 1) · gatilho: seq RRRR"
    }
   ],
   "consumidas": {
    "euro": 1785059577108,
-   "copa": 1785060936909
+   "copa": 1785060936909,
+   "super": 1785061878311
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "11:22",
-     "jogo": "Belo Horizonte x Bogota",
-     "odd": 2.37
-    },
-    {
-     "h": "11:25",
-     "jogo": "Sao Paulo x Santiago",
-     "odd": 1.98
-    },
-    {
-     "h": "11:28",
-     "jogo": "Buenos Aires x Santos",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "coluna :25",
-   "alvo": {
-    "h": "11:28",
-    "jogo": "Buenos Aires x Santos",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1785061697708
-   },
-   "iniciadoEm": 1785060938610,
-   "tiros": [
-    {
-     "h": "11:22",
-     "jogo": "Belo Horizonte x Bogota",
-     "odd": 2.37,
-     "unidades": 1
-    },
-    {
-     "h": "11:25",
-     "jogo": "Sao Paulo x Santiago",
-     "odd": 1.98,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785060936909,
    "premier": 1785058006199,
    "euro": 1785059577108,
-   "super": 1785057037700
+   "super": 1785061878311
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -351,7 +308,7 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": 18.8
+   "2026-07-26": 20.6
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
@@ -548,7 +505,7 @@
    "tipo": "odd",
    "chave": "2.1",
    "n": 19,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
