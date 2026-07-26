@@ -452,7 +452,37 @@
    "copa": 1785075052197,
    "euro": 1785075472403
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:40",
+     "jogo": "Montevideo x Santos",
+     "odd": 1.95
+    },
+    {
+     "h": "15:43",
+     "jogo": "Bogota x Medellin",
+     "odd": 2.2
+    },
+    {
+     "h": "15:46",
+     "jogo": "Penarol x Buenos Aires",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "odd 2.2",
+   "alvo": {
+    "h": "15:40",
+    "jogo": "Montevideo x Santos",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1785076430507
+   },
+   "iniciadoEm": 1785076430507
+  },
   "cooldown": {
    "euro": 1785075472403,
    "super": 1785072591897,
@@ -473,10 +503,10 @@
    "2026-07-26": -5.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":23",
-   "n": 15,
-   "start": 2
+   "tipo": "odd",
+   "chave": "2.2",
+   "n": 18,
+   "start": 3
   },
   "_obs": {}
  }
