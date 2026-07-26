@@ -288,37 +288,7 @@
    "copa": 1785091742012,
    "euro": 1785091809105
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:13",
-     "jogo": "La Plata x Belo Horizonte",
-     "odd": 2.3
-    },
-    {
-     "h": "20:16",
-     "jogo": "Guayaquil x Santiago",
-     "odd": 2.02
-    },
-    {
-     "h": "20:19",
-     "jogo": "Belo Horizonte x Porto Alegre",
-     "odd": 2.45
-    }
-   ],
-   "gatilho": "odd 2.02",
-   "alvo": {
-    "h": "20:13",
-    "jogo": "La Plata x Belo Horizonte",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1785092661907
-   },
-   "iniciadoEm": 1785092661907
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785091742012,
    "premier": 1785086799105,
@@ -345,7 +315,12 @@
    "n": 16,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1785093587506,
+    "gatilho": "odd 2.02"
+   }
+  }
  },
  "ambas": {
   "saldo": -34.2,
@@ -477,7 +452,6 @@
    }
   ],
   "consumidas": {
-   "super": 1785090590411,
    "copa": 1785091742299,
    "euro": 1785092521099
   },
