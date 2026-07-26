@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -26.8,
-  "ciclos": 421,
-  "greens": 283,
+  "saldo": -25.6,
+  "ciclos": 422,
+  "greens": 284,
   "redsCiclo": 67,
   "aborts": 0,
   "descartes": 71,
   "historico": [
+   {
+    "quando": "2026-07-26T09:52:57.302Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Romênia x Portugal @2.15 (tiro 1) · gatilho: seq RGGRR"
+   },
    {
     "quando": "2026-07-26T09:26:46.300Z",
     "resultado": "GREEN",
@@ -276,53 +282,18 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "copa · Costa do Marfim x Bósnia e Herzegovina @2.07 (tiro 1) · gatilho: placar empate 1-1"
-   },
-   {
-    "quando": "2026-07-26T02:23:50.501Z",
-    "resultado": "GREEN",
-    "unidades": 2.6,
-    "detalhe": "euro · Albânia x Países Baixos @2.4 (tiro 3) · gatilho: time Geórgia"
    }
   ],
   "consumidas": {
    "super": 1785057037700,
-   "premier": 1785058006199
+   "premier": 1785058006199,
+   "euro": 1785059577108
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "10:50",
-     "jogo": "Romênia x Portugal",
-     "odd": 2.15
-    },
-    {
-     "h": "10:53",
-     "jogo": "Eslovênia x Itália",
-     "odd": 2.62
-    },
-    {
-     "h": "10:56",
-     "jogo": "Portugal x Sérvia",
-     "odd": 2.45
-    }
-   ],
-   "gatilho": "seq RGGRR",
-   "alvo": {
-    "h": "10:50",
-    "jogo": "Romênia x Portugal",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785059455303
-   },
-   "iniciadoEm": 1785059455303
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785055694806,
    "premier": 1785058006199,
-   "euro": 1785032630305,
+   "euro": 1785059577108,
    "super": 1785057037700
   },
   "dias": {
@@ -337,7 +308,7 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": 15.6
+   "2026-07-26": 16.8
   },
   "_gatilhoAtual": {
    "tipo": "seq",
