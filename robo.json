@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -43.6,
-  "ciclos": 448,
-  "greens": 299,
+  "saldo": -42.3,
+  "ciclos": 449,
+  "greens": 300,
   "redsCiclo": 73,
   "aborts": 0,
   "descartes": 76,
   "historico": [
+   {
+    "quando": "2026-07-26T18:49:02.208Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "copa · Áustria x RD Congo @2.15 (tiro 2) · gatilho: time Áustria"
+   },
    {
     "quando": "2026-07-26T17:30:42.002Z",
     "resultado": "GREEN",
@@ -276,56 +282,14 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: odd 2.6"
-   },
-   {
-    "quando": "2026-07-26T12:33:55.798Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: odd 2.1"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "19:43",
-     "jogo": "Japão x Tunísia",
-     "odd": 2.7
-    },
-    {
-     "h": "19:46",
-     "jogo": "Áustria x RD Congo",
-     "odd": 2.15
-    },
-    {
-     "h": "19:49",
-     "jogo": "Curação x Japão",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "time Áustria",
-   "alvo": {
-    "h": "19:46",
-    "jogo": "Áustria x RD Congo",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1785091610108
-   },
-   "iniciadoEm": 1785090889401,
-   "tiros": [
-    {
-     "h": "19:43",
-     "jogo": "Japão x Tunísia",
-     "odd": 2.7,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "copa": 1785091742012
   },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785087041799,
+   "copa": 1785091742012,
    "premier": 1785086799105,
    "euro": 1785083204699,
    "super": 1785086040605
@@ -342,12 +306,12 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": -1.2
+   "2026-07-26": 0.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Áustria",
-   "n": 20,
+   "tipo": "seq",
+   "chave": "RGGRR",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
@@ -487,8 +451,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "19:43",
@@ -508,13 +472,21 @@
    ],
    "gatilho": "time Áustria",
    "alvo": {
-    "h": "19:43",
-    "jogo": "Japão x Tunísia",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785091010906
+    "h": "19:46",
+    "jogo": "Áustria x RD Congo",
+    "odd": 1.93,
+    "unidades": 2,
+    "desde": 1785091610400
    },
-   "iniciadoEm": 1785091010906
+   "iniciadoEm": 1785091010906,
+   "tiros": [
+    {
+     "h": "19:43",
+     "jogo": "Japão x Tunísia",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785088549302,
@@ -537,8 +509,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Áustria",
-   "n": 20,
+   "chave": "Suíça",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
