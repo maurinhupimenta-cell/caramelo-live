@@ -318,13 +318,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -36.7,
-  "ciclos": 480,
-  "greens": 336,
+  "saldo": -35.7,
+  "ciclos": 481,
+  "greens": 337,
   "redsCiclo": 54,
   "aborts": 0,
   "descartes": 90,
   "historico": [
+   {
+    "quando": "2026-07-26T22:08:46.302Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Islington x Brentford @2.05 (tiro 1) · gatilho: seq RGRRG"
+   },
    {
     "quando": "2026-07-26T21:53:57.004Z",
     "resultado": "GREEN",
@@ -438,53 +444,18 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "super · Itaquera x Guayaquil @1.95 (tiro 1) · gatilho: odd 2.25"
-   },
-   {
-    "quando": "2026-07-26T15:20:01.299Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "euro · Itália x Espanha @1.9 (tiro 1) · gatilho: odd 1.9"
    }
   ],
   "consumidas": {
    "copa": 1785100615207,
-   "euro": 1785102836808
+   "euro": 1785102836808,
+   "premier": 1785103726108
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:06",
-     "jogo": "Islington x Brentford",
-     "odd": 2.05
-    },
-    {
-     "h": "23:09",
-     "jogo": "Palace x Southampton",
-     "odd": 2
-    },
-    {
-     "h": "23:12",
-     "jogo": "Leeds x Brighton",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "seq RGRRG",
-   "alvo": {
-    "h": "23:06",
-    "jogo": "Islington x Brentford",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785103374408
-   },
-   "iniciadoEm": 1785103374408
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785102836808,
    "super": 1785097697101,
-   "premier": 1785098513308,
+   "premier": 1785103726108,
    "copa": 1785100615207
   },
   "dias": {
@@ -498,12 +469,12 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": 5.2
+   "2026-07-26": 6.2
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGRRG",
-   "n": 12,
+   "chave": "GRRGG",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
