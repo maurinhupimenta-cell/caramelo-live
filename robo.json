@@ -287,7 +287,37 @@
   "consumidas": {
    "copa": 1785096793308
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:34",
+     "jogo": "Quito x Porto Alegre",
+     "odd": 2.7
+    },
+    {
+     "h": "21:37",
+     "jogo": "Lima x Montevideo",
+     "odd": 2.05
+    },
+    {
+     "h": "21:40",
+     "jogo": "La Plata x Itaquera",
+     "odd": 2.55
+    }
+   ],
+   "gatilho": "coluna :37",
+   "alvo": {
+    "h": "21:34",
+    "jogo": "Quito x Porto Alegre",
+    "odd": 2.7,
+    "unidades": 1,
+    "desde": 1785097614710
+   },
+   "iniciadoEm": 1785097614710
+  },
   "cooldown": {
    "copa": 1785096793308,
    "premier": 1785086799105,
@@ -309,26 +339,27 @@
    "2026-07-26": 3.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGG",
-   "n": 24,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":37",
+   "n": 19,
+   "start": 2
   },
-  "_obs": {
-   "super": {
-    "desde": 1785097613001,
-    "gatilho": "coluna :37"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
-  "saldo": -33.3,
-  "ciclos": 472,
+  "saldo": -40.3,
+  "ciclos": 473,
   "greens": 332,
-  "redsCiclo": 53,
+  "redsCiclo": 54,
   "aborts": 0,
   "descartes": 87,
   "historico": [
+   {
+    "quando": "2026-07-26T20:28:17.301Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: coluna :22"
+   },
    {
     "quando": "2026-07-26T19:59:56.400Z",
     "resultado": "GREEN",
@@ -442,59 +473,16 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · Palace x Brentford @1.98 (tiro 2) · gatilho: seq GGGGR"
-   },
-   {
-    "quando": "2026-07-26T13:41:51.517Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho seq GGGGR) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "copa": 1785095996110
+   "copa": 1785095996110,
+   "super": 1785097697101
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "21:19",
-     "jogo": "Penarol x La Plata",
-     "odd": 2.25
-    },
-    {
-     "h": "21:22",
-     "jogo": "Porto Alegre x Avellaneda",
-     "odd": 2.2
-    },
-    {
-     "h": "21:25",
-     "jogo": "Lima x Belo Horizonte",
-     "odd": 1.86
-    }
-   ],
-   "gatilho": "coluna :22",
-   "alvo": {
-    "h": "21:22",
-    "jogo": "Porto Alegre x Avellaneda",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1785097434400
-   },
-   "iniciadoEm": 1785096713304,
-   "tiros": [
-    {
-     "h": "21:19",
-     "jogo": "Penarol x La Plata",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785092521099,
-   "super": 1785090590411,
+   "super": 1785097697101,
    "premier": 1785087705607,
    "copa": 1785095996110
   },
@@ -509,7 +497,7 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": 8.6
+   "2026-07-26": 1.6
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
