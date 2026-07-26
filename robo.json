@@ -482,8 +482,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "14:58",
@@ -503,13 +503,21 @@
    ],
    "gatilho": "time México",
    "alvo": {
-    "h": "14:58",
-    "jogo": "Coreia do Sul x Nova Zelândia",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1785073849401
+    "h": "15:01",
+    "jogo": "México x Argentina",
+    "odd": 1.9,
+    "unidades": 2,
+    "desde": 1785074449900
    },
-   "iniciadoEm": 1785073849401
+   "iniciadoEm": 1785073849401,
+   "tiros": [
+    {
+     "h": "14:58",
+     "jogo": "Coreia do Sul x Nova Zelândia",
+     "odd": 2.07,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785070314203,
@@ -534,7 +542,7 @@
    "tipo": "time",
    "chave": "México",
    "n": 13,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  }
