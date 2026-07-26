@@ -453,8 +453,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "07:06",
@@ -474,13 +474,21 @@
    ],
    "gatilho": "seq RRGG",
    "alvo": {
-    "h": "07:06",
-    "jogo": "Palace x West Ham",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785045782707
+    "h": "07:09",
+    "jogo": "Islington x Wolverhampton",
+    "odd": 1.86,
+    "unidades": 2,
+    "desde": 1785046126400
    },
-   "iniciadoEm": 1785045782707
+   "iniciadoEm": 1785045782707,
+   "tiros": [
+    {
+     "h": "07:06",
+     "jogo": "Palace x West Ham",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785045560700,
