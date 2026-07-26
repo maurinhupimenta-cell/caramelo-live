@@ -157,12 +157,18 @@
  },
  "o25": {
   "saldo": -32.3,
-  "ciclos": 435,
+  "ciclos": 436,
   "greens": 293,
   "redsCiclo": 70,
   "aborts": 0,
-  "descartes": 72,
+  "descartes": 73,
   "historico": [
+   {
+    "quando": "2026-07-26T14:11:52.506Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho seq GGGGG) — liga REARMADA"
+   },
    {
     "quando": "2026-07-26T14:11:49.802Z",
     "resultado": "RED_CICLO",
@@ -276,12 +282,6 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "super · La Boca x Santos @2.5 (tiro 1) · gatilho: seq GGRRR"
-   },
-   {
-    "quando": "2026-07-26T07:40:38.401Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "copa · Turquia x Áustria @2.25 (tiro 2) · gatilho: time Turquia"
    }
   ],
   "consumidas": {
@@ -289,7 +289,45 @@
    "copa": 1785073610107,
    "super": 1785075109606
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "15:08",
+     "jogo": "Sérvia x França",
+     "odd": 2.25
+    },
+    {
+     "h": "15:11",
+     "jogo": "República Tcheca x Romênia",
+     "odd": 2.4
+    },
+    {
+     "h": "15:14",
+     "jogo": "Turquia x Países Baixos",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "seq GGGGG",
+   "alvo": {
+    "h": "15:11",
+    "jogo": "República Tcheca x Romênia",
+    "odd": 2.4,
+    "unidades": 2,
+    "desde": 1785075171502
+   },
+   "iniciadoEm": 1785075114505,
+   "tiros": [
+    {
+     "h": "15:08",
+     "jogo": "Sérvia x França",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1785073610107,
    "premier": 1785071918305,
@@ -311,9 +349,9 @@
    "2026-07-26": 10.1
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 14,
+   "tipo": "seq",
+   "chave": "GGGGG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
@@ -506,7 +544,7 @@
    "tipo": "odd",
    "chave": "1.95",
    "n": 12,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
