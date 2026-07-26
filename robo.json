@@ -345,13 +345,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -43.8,
-  "ciclos": 410,
-  "greens": 285,
+  "saldo": -42.9,
+  "ciclos": 411,
+  "greens": 286,
   "redsCiclo": 48,
   "aborts": 0,
   "descartes": 77,
   "historico": [
+   {
+    "quando": "2026-07-26T02:03:51.504Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Lima x Itaquera @1.93 (tiro 1) · gatilho: placar 1-0 / 0-1"
+   },
    {
     "quando": "2026-07-26T01:57:53.306Z",
     "resultado": "GREEN",
@@ -465,51 +471,16 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · República Tcheca x México @2 (tiro 1) · gatilho: time Austrália"
-   },
-   {
-    "quando": "2026-07-25T15:36:00.501Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "euro · Alemanha x Polônia @2.07 (tiro 2) · gatilho: seq RRRG"
    }
   ],
   "consumidas": {
-   "copa": 1785031073199
+   "copa": 1785031073199,
+   "super": 1785031431309
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "02:58",
-     "jogo": "Lima x Itaquera",
-     "odd": 1.93
-    },
-    {
-     "h": "03:01",
-     "jogo": "Quito x La Plata",
-     "odd": 2.15
-    },
-    {
-     "h": "03:04",
-     "jogo": "Santiago x Penarol",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "placar 1-0 / 0-1",
-   "alvo": {
-    "h": "02:58",
-    "jogo": "Lima x Itaquera",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1785031075012
-   },
-   "iniciadoEm": 1785031075012
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785009385398,
-   "super": 1785027471398,
+   "super": 1785031431309,
    "premier": 1785016956100,
    "copa": 1785031073199
   },
@@ -523,7 +494,7 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 8.6
+   "2026-07-25": 9.5
   },
   "_gatilhoAtual": {
    "tipo": "placar",
