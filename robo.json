@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -51,
-  "ciclos": 459,
-  "greens": 304,
+  "saldo": -48.4,
+  "ciclos": 460,
+  "greens": 305,
   "redsCiclo": 75,
   "aborts": 0,
   "descartes": 80,
   "historico": [
+   {
+    "quando": "2026-07-26T22:03:54.205Z",
+    "resultado": "GREEN",
+    "unidades": 2.6,
+    "detalhe": "copa · Canadá x Turquia @2.4 (tiro 3) · gatilho: time Áustria"
+   },
    {
     "quando": "2026-07-26T21:51:58.698Z",
     "resultado": "RED_CICLO",
@@ -276,58 +282,15 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "super · Bogota x Itaquera @2.55 (tiro 1) · gatilho: coluna :25"
-   },
-   {
-    "quando": "2026-07-26T15:13:21.602Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :25) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "super": 1785102718498
+   "super": 1785102718498,
+   "copa": 1785103434100
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "22:55",
-     "jogo": "Arábia Saudita x Iraque",
-     "odd": 2.35
-    },
-    {
-     "h": "22:58",
-     "jogo": "Áustria x Paraguai",
-     "odd": 2.35
-    },
-    {
-     "h": "23:01",
-     "jogo": "Canadá x Turquia",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "time Áustria",
-   "alvo": {
-    "h": "22:58",
-    "jogo": "Áustria x Paraguai",
-    "odd": 2.35,
-    "unidades": 2,
-    "desde": 1785103135307
-   },
-   "iniciadoEm": 1785102719411,
-   "tiros": [
-    {
-     "h": "22:55",
-     "jogo": "Arábia Saudita x Iraque",
-     "odd": 2.35,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785096793308,
+   "copa": 1785103434100,
    "premier": 1785099297011,
    "euro": 1785099538502,
    "super": 1785102718498
@@ -344,7 +307,7 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": -8.6
+   "2026-07-26": -6
   },
   "_gatilhoAtual": {
    "tipo": "time",
