@@ -288,7 +288,37 @@
    "super": 1785075109606,
    "euro": 1785075529697
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:58",
+     "jogo": "Iraque x Curação",
+     "odd": 2.3
+    },
+    {
+     "h": "16:01",
+     "jogo": "EUA x Áustria",
+     "odd": 2.2
+    },
+    {
+     "h": "16:04",
+     "jogo": "Inglaterra x Coreia do Sul",
+     "odd": 2.45
+    }
+   ],
+   "gatilho": "time Áustria",
+   "alvo": {
+    "h": "15:58",
+    "jogo": "Iraque x Curação",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1785077361505
+   },
+   "iniciadoEm": 1785077361505
+  },
   "cooldown": {
    "copa": 1785073610107,
    "premier": 1785071918305,
@@ -310,10 +340,10 @@
    "2026-07-26": 3.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGGG",
-   "n": 8,
-   "start": 1
+   "tipo": "time",
+   "chave": "Áustria",
+   "n": 16,
+   "start": 3
   },
   "_obs": {}
  },
