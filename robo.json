@@ -348,13 +348,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -41.8,
-  "ciclos": 444,
-  "greens": 309,
+  "saldo": -40.9,
+  "ciclos": 445,
+  "greens": 310,
   "redsCiclo": 51,
   "aborts": 0,
   "descartes": 84,
   "historico": [
+   {
+    "quando": "2026-07-26T11:36:54.802Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · México x Colômbia @1.93 (tiro 1) · gatilho: time Turquia"
+   },
    {
     "quando": "2026-07-26T10:52:18.600Z",
     "resultado": "RED_CICLO",
@@ -468,53 +474,48 @@
     "resultado": "GREEN",
     "unidades": 0.8,
     "detalhe": "super · Guayaquil x Buenos Aires @1.8 (tiro 1) · gatilho: time Santos"
-   },
-   {
-    "quando": "2026-07-26T05:43:51.902Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Nova Zelândia x Bélgica @1.98 (tiro 1) · gatilho: time Bélgica"
    }
   ],
   "consumidas": {
-   "super": 1785063138400
+   "super": 1785063138400,
+   "copa": 1785065814611
   },
   "ciclo": {
-   "liga": "copa",
+   "liga": "euro",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "12:34",
-     "jogo": "México x Colômbia",
-     "odd": 1.93
+     "h": "12:41",
+     "jogo": "Eslováquia x República Tcheca",
+     "odd": 2.15
     },
     {
-     "h": "12:37",
-     "jogo": "Turquia x Noruega",
-     "odd": 1.93
+     "h": "12:44",
+     "jogo": "Polônia x Bélgica",
+     "odd": 2
     },
     {
-     "h": "12:40",
-     "jogo": "Coreia do Sul x Senegal",
-     "odd": 2.2
+     "h": "12:47",
+     "jogo": "Portugal x Inglaterra",
+     "odd": 1.85
     }
    ],
-   "gatilho": "time Turquia",
+   "gatilho": "coluna :44",
    "alvo": {
-    "h": "12:34",
-    "jogo": "México x Colômbia",
-    "odd": 1.93,
+    "h": "12:41",
+    "jogo": "Eslováquia x República Tcheca",
+    "odd": 2.15,
     "unidades": 1,
-    "desde": 1785065115010
+    "desde": 1785065816716
    },
-   "iniciadoEm": 1785065115010
+   "iniciadoEm": 1785065816716
   },
   "cooldown": {
    "euro": 1785062097107,
    "super": 1785063138400,
    "premier": 1785060879300,
-   "copa": 1785061498901
+   "copa": 1785065814611
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -527,13 +528,13 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": 0.1
+   "2026-07-26": 1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Turquia",
-   "n": 14,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":44",
+   "n": 12,
+   "start": 3
   },
   "_obs": {}
  }
