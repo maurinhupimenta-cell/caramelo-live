@@ -318,13 +318,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -35.1,
-  "ciclos": 470,
-  "greens": 330,
+  "saldo": -34.2,
+  "ciclos": 471,
+  "greens": 331,
   "redsCiclo": 53,
   "aborts": 0,
   "descartes": 87,
   "historico": [
+   {
+    "quando": "2026-07-26T19:02:01.300Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Turquia x França @1.98 (tiro 3) · gatilho: odd 1.9"
+   },
    {
     "quando": "2026-07-26T18:49:02.500Z",
     "resultado": "GREEN",
@@ -438,65 +444,16 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "super · Quito x Santiago @1.9 (tiro 1) · gatilho: odd 2.2"
-   },
-   {
-    "quando": "2026-07-26T12:51:54.404Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "euro · Croácia x Albânia @2.2 (tiro 2) · gatilho: coluna :44"
    }
   ],
   "consumidas": {
    "super": 1785090590411,
-   "copa": 1785091742299
+   "copa": 1785091742299,
+   "euro": 1785092521099
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "19:53",
-     "jogo": "Eslováquia x França",
-     "odd": 1.9
-    },
-    {
-     "h": "19:56",
-     "jogo": "Polônia x Ucrânia",
-     "odd": 2.1
-    },
-    {
-     "h": "19:59",
-     "jogo": "Turquia x França",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "odd 1.9",
-   "alvo": {
-    "h": "19:59",
-    "jogo": "Turquia x França",
-    "odd": 1.98,
-    "unidades": 4,
-    "desde": 1785092340911
-   },
-   "iniciadoEm": 1785092160399,
-   "tiros": [
-    {
-     "h": "19:53",
-     "jogo": "Eslováquia x França",
-     "odd": 1.9,
-     "unidades": 1
-    },
-    {
-     "h": "19:56",
-     "jogo": "Polônia x Ucrânia",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785088549302,
+   "euro": 1785092521099,
    "super": 1785090590411,
    "premier": 1785087705607,
    "copa": 1785091742299
@@ -512,7 +469,7 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": 6.8
+   "2026-07-26": 7.7
   },
   "_gatilhoAtual": {
    "tipo": "odd",
