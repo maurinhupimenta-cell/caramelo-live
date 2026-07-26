@@ -288,7 +288,37 @@
    "super": 1785102718498,
    "copa": 1785103434100
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:24",
+     "jogo": "West Ham x Norwich",
+     "odd": 2.45
+    },
+    {
+     "h": "23:27",
+     "jogo": "Leeds x Southampton",
+     "odd": 2.62
+    },
+    {
+     "h": "23:30",
+     "jogo": "Watford x Leicester",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "seq GGRGG",
+   "alvo": {
+    "h": "23:24",
+    "jogo": "West Ham x Norwich",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1785104438712
+   },
+   "iniciadoEm": 1785104438712
+  },
   "cooldown": {
    "copa": 1785103434100,
    "premier": 1785099297011,
@@ -310,9 +340,9 @@
    "2026-07-26": -6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Áustria",
-   "n": 21,
+   "tipo": "seq",
+   "chave": "GGRGG",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
@@ -502,8 +532,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Guayaquil",
-   "n": 30,
+   "chave": "Turquia",
+   "n": 25,
    "start": 3
   },
   "_obs": {}
