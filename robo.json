@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -41.9,
-  "ciclos": 443,
-  "greens": 296,
+  "saldo": -40.8,
+  "ciclos": 444,
+  "greens": 297,
   "redsCiclo": 72,
   "aborts": 0,
   "descartes": 75,
   "historico": [
+   {
+    "quando": "2026-07-26T16:26:44.900Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Países Baixos x Croácia @2.07 (tiro 1) · gatilho: seq RGGRR"
+   },
    {
     "quando": "2026-07-26T16:22:42.600Z",
     "resultado": "GREEN_OBS",
@@ -276,52 +282,17 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "premier · Tottenham x Norwich @2.4 (tiro 1) · gatilho: coluna :57"
-   },
-   {
-    "quando": "2026-07-26T10:31:18.504Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "super · Buenos Aires x Santos @2.2 (tiro 3) · gatilho: coluna :25"
    }
   ],
   "consumidas": {
-   "copa": 1785082581510
+   "copa": 1785082581510,
+   "euro": 1785083204699
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:23",
-     "jogo": "Países Baixos x Croácia",
-     "odd": 2.07
-    },
-    {
-     "h": "17:26",
-     "jogo": "Polônia x Portugal",
-     "odd": 2.4
-    },
-    {
-     "h": "17:29",
-     "jogo": "Croácia x Escócia",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "seq RGGRR",
-   "alvo": {
-    "h": "17:23",
-    "jogo": "Países Baixos x Croácia",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1785082964597
-   },
-   "iniciadoEm": 1785082964597
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785082581510,
    "premier": 1785078517704,
-   "euro": 1785075529697,
+   "euro": 1785083204699,
    "super": 1785079502803
   },
   "dias": {
@@ -336,7 +307,7 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": 0.5
+   "2026-07-26": 1.6
   },
   "_gatilhoAtual": {
    "tipo": "seq",
