@@ -448,11 +448,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1785098513308,
    "euro": 1785098998211,
    "copa": 1785100615207
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:40",
+     "jogo": "Santos x Bogota",
+     "odd": 2.25
+    },
+    {
+     "h": "22:43",
+     "jogo": "Guayaquil x Agua Branca",
+     "odd": 1.85
+    },
+    {
+     "h": "22:46",
+     "jogo": "Santiago x Avellaneda",
+     "odd": 1.87
+    }
+   ],
+   "gatilho": "time Guayaquil",
+   "alvo": {
+    "h": "22:40",
+    "jogo": "Santos x Bogota",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785101755001
+   },
+   "iniciadoEm": 1785101755001
+  },
   "cooldown": {
    "euro": 1785098998211,
    "super": 1785097697101,
@@ -474,15 +503,10 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Costa do Marfim",
-   "n": 10,
-   "start": 1
+   "chave": "Guayaquil",
+   "n": 30,
+   "start": 2
   },
-  "_obs": {
-   "super": {
-    "desde": 1785101753101,
-    "gatilho": "time Guayaquil"
-   }
-  }
+  "_obs": {}
  }
 }
