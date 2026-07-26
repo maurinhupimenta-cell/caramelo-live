@@ -348,13 +348,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -43,
-  "ciclos": 423,
+  "saldo": -50,
+  "ciclos": 424,
   "greens": 293,
-  "redsCiclo": 49,
+  "redsCiclo": 50,
   "aborts": 0,
   "descartes": 81,
   "historico": [
+   {
+    "quando": "2026-07-26T05:02:46.698Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: time Brighton"
+   },
    {
     "quando": "2026-07-26T04:51:34.204Z",
     "resultado": "GREEN",
@@ -468,68 +474,19 @@
     "resultado": "GREEN",
     "unidades": 0.6,
     "detalhe": "super · Montevideo x Santiago @1.8 (tiro 2) · gatilho: coluna :52"
-   },
-   {
-    "quando": "2026-07-25T21:54:15.803Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho coluna :54) — liga REARMADA"
    }
   ],
   "consumidas": {
    "copa": 1785040669899,
    "super": 1785041163407,
-   "euro": 1785041494006
+   "euro": 1785041494006,
+   "premier": 1785042166500
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "05:54",
-     "jogo": "Brighton x Southampton",
-     "odd": 1.93
-    },
-    {
-     "h": "05:57",
-     "jogo": "City x Leicester",
-     "odd": 1.95
-    },
-    {
-     "h": "06:00",
-     "jogo": "United x Liverpool",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "time Brighton",
-   "alvo": {
-    "h": "06:00",
-    "jogo": "United x Liverpool",
-    "odd": 1.95,
-    "unidades": 4,
-    "desde": 1785041983710
-   },
-   "iniciadoEm": 1785041496002,
-   "tiros": [
-    {
-     "h": "05:54",
-     "jogo": "Brighton x Southampton",
-     "odd": 1.93,
-     "unidades": 1
-    },
-    {
-     "h": "05:57",
-     "jogo": "City x Leicester",
-     "odd": 1.95,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785041494006,
    "super": 1785041163407,
-   "premier": 1785037666109,
+   "premier": 1785042166500,
    "copa": 1785040669899
   },
   "dias": {
@@ -543,7 +500,7 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": -1.1
+   "2026-07-26": -8.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
