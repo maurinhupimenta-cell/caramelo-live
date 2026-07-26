@@ -157,12 +157,18 @@
  },
  "o25": {
   "saldo": -44.2,
-  "ciclos": 408,
+  "ciclos": 409,
   "greens": 271,
   "redsCiclo": 67,
   "aborts": 0,
-  "descartes": 70,
+  "descartes": 71,
   "historico": [
+   {
+    "quando": "2026-07-26T04:58:20.802Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho placar empate 1-1) — liga REARMADA"
+   },
    {
     "quando": "2026-07-26T04:32:48.198Z",
     "resultado": "GREEN",
@@ -276,19 +282,43 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "copa · México x Haiti @2.15 (tiro 2) · gatilho: time México"
-   },
-   {
-    "quando": "2026-07-25T19:17:52.006Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "premier · West Ham x Burnley @2.4 (tiro 1) · gatilho: coluna :15"
    }
   ],
   "consumidas": {
    "super": 1785039471804,
    "premier": 1785040368000
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:01",
+     "jogo": "Marrocos x Haiti",
+     "odd": 2.2
+    },
+    {
+     "h": "06:04",
+     "jogo": "Bélgica x Curação",
+     "odd": 2.2
+    },
+    {
+     "h": "06:07",
+     "jogo": "Brasil x Austrália",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "placar empate 1-1",
+   "alvo": {
+    "h": "06:01",
+    "jogo": "Marrocos x Haiti",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785041902806
+   },
+   "iniciadoEm": 1785041902806
+  },
   "cooldown": {
    "copa": 1785038273707,
    "premier": 1785040368000,
@@ -310,10 +340,10 @@
    "2026-07-26": -1.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Newcastle",
-   "n": 9,
-   "start": 2
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 15,
+   "start": 1
   },
   "_obs": {}
  },
