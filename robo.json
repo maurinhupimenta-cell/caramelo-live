@@ -343,18 +343,24 @@
    "tipo": "odd",
    "chave": "2.15",
    "n": 13,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -41.1,
-  "ciclos": 435,
+  "ciclos": 436,
   "greens": 303,
   "redsCiclo": 50,
   "aborts": 0,
-  "descartes": 82,
+  "descartes": 83,
   "historico": [
+   {
+    "quando": "2026-07-26T08:43:15.505Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-26T08:25:57.204Z",
     "resultado": "GREEN",
@@ -468,12 +474,6 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: time Southampton"
-   },
-   {
-    "quando": "2026-07-26T03:29:01.500Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "euro · Romênia x Polônia @2.02 (tiro 3) · gatilho: time Turquia"
    }
   ],
   "consumidas": {
