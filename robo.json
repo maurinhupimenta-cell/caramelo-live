@@ -452,7 +452,37 @@
    "super": 1785044989406,
    "euro": 1785045560700
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:06",
+     "jogo": "Palace x West Ham",
+     "odd": 2.1
+    },
+    {
+     "h": "07:09",
+     "jogo": "Islington x Wolverhampton",
+     "odd": 1.86
+    },
+    {
+     "h": "07:12",
+     "jogo": "Norwich x Newcastle",
+     "odd": 1.83
+    }
+   ],
+   "gatilho": "seq RRGG",
+   "alvo": {
+    "h": "07:06",
+    "jogo": "Palace x West Ham",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785045782707
+   },
+   "iniciadoEm": 1785045782707
+  },
   "cooldown": {
    "euro": 1785045560700,
    "super": 1785044989406,
@@ -473,16 +503,11 @@
    "2026-07-26": -5.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Turquia",
-   "n": 13,
+   "tipo": "seq",
+   "chave": "RRGG",
+   "n": 11,
    "start": 1
   },
-  "_obs": {
-   "premier": {
-    "desde": 1785045774608,
-    "gatilho": "seq RRGG"
-   }
-  }
+  "_obs": {}
  }
 }
