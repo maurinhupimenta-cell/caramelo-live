@@ -319,13 +319,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -39.7,
-  "ciclos": 447,
+  "saldo": -46.7,
+  "ciclos": 448,
   "greens": 311,
-  "redsCiclo": 51,
+  "redsCiclo": 52,
   "aborts": 0,
   "descartes": 85,
   "historico": [
+   {
+    "quando": "2026-07-26T12:11:36.403Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: odd 2.07"
+   },
    {
     "quando": "2026-07-26T11:58:15.699Z",
     "resultado": "GREEN_OBS",
@@ -439,61 +445,18 @@
     "resultado": "GREEN",
     "unidades": 0.3,
     "detalhe": "premier · Norwich x Newcastle @1.83 (tiro 3) · gatilho: seq RRGG"
-   },
-   {
-    "quando": "2026-07-26T06:02:54.608Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho seq RRGG) — liga REARMADA"
    }
   ],
   "consumidas": {
    "copa": 1785065814611,
-   "euro": 1785066236811
+   "euro": 1785066236811,
+   "premier": 1785067896209
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "13:03",
-     "jogo": "Brentford x Norwich",
-     "odd": 1.95
-    },
-    {
-     "h": "13:06",
-     "jogo": "Islington x Aston",
-     "odd": 2.07
-    },
-    {
-     "h": "13:09",
-     "jogo": "West Ham x Wolverhampton",
-     "odd": 2
-    }
-   ],
-   "gatilho": "odd 2.07",
-   "alvo": {
-    "h": "13:06",
-    "jogo": "Islington x Aston",
-    "odd": 2.07,
-    "unidades": 2,
-    "desde": 1785067546603
-   },
-   "iniciadoEm": 1785066842403,
-   "tiros": [
-    {
-     "h": "13:03",
-     "jogo": "Brentford x Norwich",
-     "odd": 1.95,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785066236811,
    "super": 1785063138400,
-   "premier": 1785060879300,
+   "premier": 1785067896209,
    "copa": 1785065814611
   },
   "dias": {
@@ -507,11 +470,11 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": 2.2
+   "2026-07-26": -4.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.2",
+   "tipo": "coluna",
+   "chave": ":16",
    "n": 13,
    "start": 1
   },
