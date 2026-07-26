@@ -451,7 +451,37 @@
    "copa": 1785065814611,
    "euro": 1785066236811
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:03",
+     "jogo": "Brentford x Norwich",
+     "odd": 1.95
+    },
+    {
+     "h": "13:06",
+     "jogo": "Islington x Aston",
+     "odd": 2.07
+    },
+    {
+     "h": "13:09",
+     "jogo": "West Ham x Wolverhampton",
+     "odd": 2
+    }
+   ],
+   "gatilho": "odd 2.07",
+   "alvo": {
+    "h": "13:03",
+    "jogo": "Brentford x Norwich",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1785066842403
+   },
+   "iniciadoEm": 1785066842403
+  },
   "cooldown": {
    "euro": 1785066236811,
    "super": 1785063138400,
@@ -473,9 +503,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "1.95",
-   "n": 10,
-   "start": 2
+   "chave": "2.07",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  }
