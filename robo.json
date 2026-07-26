@@ -490,8 +490,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "18:19",
@@ -511,13 +511,21 @@
    ],
    "gatilho": "coluna :22",
    "alvo": {
-    "h": "18:19",
-    "jogo": "Medellin x Lima",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785086040897
+    "h": "18:22",
+    "jogo": "Asuncion x Agua Branca",
+    "odd": 1.93,
+    "unidades": 2,
+    "desde": 1785086570499
    },
-   "iniciadoEm": 1785086040897
+   "iniciadoEm": 1785086040897,
+   "tiros": [
+    {
+     "h": "18:19",
+     "jogo": "Medellin x Lima",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785083585300,
@@ -539,9 +547,9 @@
    "2026-07-26": 0.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRGG",
-   "n": 10,
+   "tipo": "coluna",
+   "chave": ":25",
+   "n": 18,
    "start": 1
   },
   "_obs": {}
