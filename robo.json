@@ -340,10 +340,10 @@
    "2026-07-26": 20.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.6",
-   "n": 8,
-   "start": 3
+   "tipo": "seq",
+   "chave": "GGRRR",
+   "n": 12,
+   "start": 1
   },
   "_obs": {}
  },
@@ -483,8 +483,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "13:40",
@@ -504,13 +504,21 @@
    ],
    "gatilho": "time Brasil",
    "alvo": {
-    "h": "13:40",
-    "jogo": "Brasil x África do Sul",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785069416404
+    "h": "13:43",
+    "jogo": "Bósnia e Herzegovina x Curação",
+    "odd": 1.85,
+    "unidades": 2,
+    "desde": 1785069831898
    },
-   "iniciadoEm": 1785069416404
+   "iniciadoEm": 1785069416404,
+   "tiros": [
+    {
+     "h": "13:40",
+     "jogo": "Brasil x África do Sul",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785066236811,
@@ -535,7 +543,7 @@
    "tipo": "time",
    "chave": "Turquia",
    "n": 16,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
