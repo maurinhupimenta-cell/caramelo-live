@@ -319,13 +319,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -46.3,
-  "ciclos": 430,
-  "greens": 298,
+  "saldo": -45.2,
+  "ciclos": 431,
+  "greens": 299,
   "redsCiclo": 50,
   "aborts": 0,
   "descartes": 82,
   "historico": [
+   {
+    "quando": "2026-07-26T07:13:57.204Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · República Tcheca x Inglaterra @2.02 (tiro 3) · gatilho: odd 2.1"
+   },
    {
     "quando": "2026-07-26T07:04:18.210Z",
     "resultado": "GREEN",
@@ -439,65 +445,16 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho placar empate 1-1) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-26T02:03:51.504Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "super · Lima x Itaquera @1.93 (tiro 1) · gatilho: placar 1-0 / 0-1"
    }
   ],
   "consumidas": {
    "premier": 1785046488505,
-   "super": 1785049458100
+   "super": 1785049458100,
+   "euro": 1785050037009
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "08:05",
-     "jogo": "Eslováquia x Hungria",
-     "odd": 2.05
-    },
-    {
-     "h": "08:08",
-     "jogo": "Eslovênia x Suíça",
-     "odd": 2.1
-    },
-    {
-     "h": "08:11",
-     "jogo": "República Tcheca x Inglaterra",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "odd 2.1",
-   "alvo": {
-    "h": "08:11",
-    "jogo": "República Tcheca x Inglaterra",
-    "odd": 2.02,
-    "unidades": 4,
-    "desde": 1785049856812
-   },
-   "iniciadoEm": 1785049460310,
-   "tiros": [
-    {
-     "h": "08:05",
-     "jogo": "Eslováquia x Hungria",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "08:08",
-     "jogo": "Eslovênia x Suíça",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785045560700,
+   "euro": 1785050037009,
    "super": 1785049458100,
    "premier": 1785046488505,
    "copa": 1785044631703
@@ -513,13 +470,13 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": -4.4
+   "2026-07-26": -3.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":13",
+   "tipo": "odd",
+   "chave": "1.9",
    "n": 8,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
