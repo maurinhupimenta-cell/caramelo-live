@@ -455,8 +455,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "22:07",
@@ -476,13 +476,21 @@
    ],
    "gatilho": "time Turquia",
    "alvo": {
-    "h": "22:07",
-    "jogo": "Nova Zelândia x Suíça",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1785099596400
+    "h": "22:10",
+    "jogo": "África do Sul x Turquia",
+    "odd": 2.1,
+    "unidades": 2,
+    "desde": 1785100257501
    },
-   "iniciadoEm": 1785099596400
+   "iniciadoEm": 1785099596400,
+   "tiros": [
+    {
+     "h": "22:07",
+     "jogo": "Nova Zelândia x Suíça",
+     "odd": 1.95,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785098998211,
@@ -505,8 +513,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Turquia",
-   "n": 23,
+   "chave": "Costa do Marfim",
+   "n": 10,
    "start": 3
   },
   "_obs": {}
