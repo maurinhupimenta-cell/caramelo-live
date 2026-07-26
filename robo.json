@@ -155,13 +155,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -48.8,
-  "ciclos": 398,
-  "greens": 263,
+  "saldo": -47.2,
+  "ciclos": 399,
+  "greens": 264,
   "redsCiclo": 66,
   "aborts": 0,
   "descartes": 69,
   "historico": [
+   {
+    "quando": "2026-07-26T01:15:52.501Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "copa · Arábia Saudita x Áustria @2.15 (tiro 3) · gatilho: placar goleada (3+)"
+   },
    {
     "quando": "2026-07-25T23:18:40.403Z",
     "resultado": "GREEN",
@@ -275,62 +281,14 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "premier · Tottenham x Burnley @2.35 (tiro 1) · gatilho: odd 2.35"
-   },
-   {
-    "quando": "2026-07-25T15:18:52.504Z",
-    "resultado": "GREEN",
-    "unidades": 3.2,
-    "detalhe": "copa · África do Sul x Japão @2.55 (tiro 3) · gatilho: time Coreia do Sul"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "02:07",
-     "jogo": "África do Sul x Iraque",
-     "odd": 2.62
-    },
-    {
-     "h": "02:10",
-     "jogo": "Senegal x Tunísia",
-     "odd": 2.8
-    },
-    {
-     "h": "02:13",
-     "jogo": "Arábia Saudita x Áustria",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "placar goleada (3+)",
-   "alvo": {
-    "h": "02:13",
-    "jogo": "Arábia Saudita x Áustria",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1785028371507
-   },
-   "iniciadoEm": 1785027891699,
-   "tiros": [
-    {
-     "h": "02:07",
-     "jogo": "África do Sul x Iraque",
-     "odd": 2.62,
-     "unidades": 1
-    },
-    {
-     "h": "02:10",
-     "jogo": "Senegal x Tunísia",
-     "odd": 2.8,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "copa": 1785028552307
   },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785019941007,
+   "copa": 1785028552307,
    "premier": 1785016955897,
    "euro": 1785019080807,
    "super": 1785021520300
@@ -346,13 +304,13 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 14.6
+   "2026-07-25": 16.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.2",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
