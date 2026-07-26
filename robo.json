@@ -290,8 +290,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "10:18",
@@ -311,11 +311,11 @@
    ],
    "gatilho": "seq GGGR",
    "alvo": {
-    "h": "10:21",
-    "jogo": "Newcastle x City",
-    "odd": 1.95,
-    "unidades": 2,
-    "desde": 1785057641500
+    "h": "10:24",
+    "jogo": "Leicester x Norwich",
+    "odd": 2.25,
+    "unidades": 4,
+    "desde": 1785057822700
    },
    "iniciadoEm": 1785057287707,
    "tiros": [
@@ -324,6 +324,12 @@
      "jogo": "Norwich x Islington",
      "odd": 2.2,
      "unidades": 1
+    },
+    {
+     "h": "10:21",
+     "jogo": "Newcastle x City",
+     "odd": 1.95,
+     "unidades": 2
     }
    ]
   },
@@ -348,10 +354,10 @@
    "2026-07-26": 13.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRR",
-   "n": 14,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":33",
+   "n": 10,
+   "start": 2
   },
   "_obs": {}
  },
@@ -540,7 +546,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":22",
+   "chave": ":25",
    "n": 10,
    "start": 1
   },
