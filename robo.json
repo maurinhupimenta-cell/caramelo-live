@@ -448,11 +448,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1785046488505,
    "super": 1785049458100,
    "euro": 1785050037009
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:22",
+     "jogo": "Senegal x Brasil",
+     "odd": 2.05
+    },
+    {
+     "h": "08:25",
+     "jogo": "Haiti x Qatar",
+     "odd": 1.9
+    },
+    {
+     "h": "08:28",
+     "jogo": "Jordânia x RD Congo",
+     "odd": 1.87
+    }
+   ],
+   "gatilho": "odd 1.9",
+   "alvo": {
+    "h": "08:22",
+    "jogo": "Senegal x Brasil",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785050038511
+   },
+   "iniciadoEm": 1785050038511
+  },
   "cooldown": {
    "euro": 1785050037009,
    "super": 1785049458100,
