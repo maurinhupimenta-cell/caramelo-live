@@ -313,13 +313,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -46.3,
-  "ciclos": 407,
-  "greens": 283,
+  "saldo": -45.1,
+  "ciclos": 408,
+  "greens": 284,
   "redsCiclo": 48,
   "aborts": 0,
   "descartes": 76,
   "historico": [
+   {
+    "quando": "2026-07-26T00:57:51.504Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Asuncion x Bogota @2.15 (tiro 1) · gatilho: placar 1-0 / 0-1"
+   },
    {
     "quando": "2026-07-25T22:40:40.108Z",
     "resultado": "RED_CICLO",
@@ -433,49 +439,15 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "premier · Brentford x City @1.93 (tiro 1) · gatilho: coluna :15"
-   },
-   {
-    "quando": "2026-07-25T14:10:13.501Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "copa · Iraque x Panamá @2.15 (tiro 1) · gatilho: time Uzbequistão"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "01:52",
-     "jogo": "Asuncion x Bogota",
-     "odd": 2.15
-    },
-    {
-     "h": "01:55",
-     "jogo": "La Plata x Porto Alegre",
-     "odd": 2.4
-    },
-    {
-     "h": "01:58",
-     "jogo": "Bogota x Buenos Aires",
-     "odd": 2
-    }
-   ],
-   "gatilho": "placar 1-0 / 0-1",
-   "alvo": {
-    "h": "01:52",
-    "jogo": "Asuncion x Bogota",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785026931100
-   },
-   "iniciadoEm": 1785026931100
+  "consumidas": {
+   "super": 1785027471398
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785009385398,
-   "super": 1785016502803,
+   "super": 1785027471398,
    "premier": 1785016956100,
    "copa": 1785019239911
   },
@@ -489,7 +461,7 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 6.1
+   "2026-07-25": 7.3
   },
   "_gatilhoAtual": {
    "tipo": "placar",
