@@ -157,12 +157,18 @@
  },
  "o25": {
   "saldo": -40.9,
-  "ciclos": 451,
+  "ciclos": 452,
   "greens": 301,
   "redsCiclo": 73,
   "aborts": 0,
-  "descartes": 77,
+  "descartes": 78,
   "historico": [
+   {
+    "quando": "2026-07-26T19:19:46.006Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-26T19:04:20.010Z",
     "resultado": "GREEN_OBS",
@@ -276,12 +282,6 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho seq RGGR) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-26T13:18:38.499Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "premier · Norwich x City @2.05 (tiro 2) · gatilho: odd 2.05"
    }
   ],
   "consumidas": {
@@ -343,7 +343,7 @@
    "tipo": "odd",
    "chave": "2.02",
    "n": 16,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
