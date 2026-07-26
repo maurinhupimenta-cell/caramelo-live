@@ -318,13 +318,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -33.8,
-  "ciclos": 485,
-  "greens": 339,
+  "saldo": -32.7,
+  "ciclos": 486,
+  "greens": 340,
   "redsCiclo": 54,
   "aborts": 0,
   "descartes": 92,
   "historico": [
+   {
+    "quando": "2026-07-26T22:57:55.702Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Itália x Eslováquia @2.07 (tiro 1) · gatilho: coluna :50"
+   },
    {
     "quando": "2026-07-26T22:54:56.109Z",
     "resultado": "GREEN",
@@ -438,52 +444,17 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "premier · Tottenham x Aston @2.2 (tiro 1) · gatilho: seq RGRRG"
-   },
-   {
-    "quando": "2026-07-26T17:36:49.607Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "copa · França x Iraque @2.15 (tiro 1) · gatilho: time Brasil"
    }
   ],
   "consumidas": {
    "premier": 1785103726108,
    "super": 1785105713206,
-   "copa": 1785106496005
+   "copa": 1785106496005,
+   "euro": 1785106675507
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:50",
-     "jogo": "Itália x Eslováquia",
-     "odd": 2.07
-    },
-    {
-     "h": "23:53",
-     "jogo": "Países Baixos x Geórgia",
-     "odd": 1.98
-    },
-    {
-     "h": "23:56",
-     "jogo": "República Tcheca x Espanha",
-     "odd": 2
-    }
-   ],
-   "gatilho": "coluna :50",
-   "alvo": {
-    "h": "23:50",
-    "jogo": "Itália x Eslováquia",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1785106554306
-   },
-   "iniciadoEm": 1785106554306
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785102836808,
+   "euro": 1785106675507,
    "super": 1785105713206,
    "premier": 1785103726108,
    "copa": 1785106496005
@@ -499,7 +470,7 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": 8.1
+   "2026-07-26": 9.2
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
