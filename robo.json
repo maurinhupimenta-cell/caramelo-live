@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -25.6,
-  "ciclos": 422,
-  "greens": 284,
+  "saldo": -23.6,
+  "ciclos": 423,
+  "greens": 285,
   "redsCiclo": 67,
   "aborts": 0,
   "descartes": 71,
   "historico": [
+   {
+    "quando": "2026-07-26T10:15:37.104Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "copa · Croácia x Alemanha @2.25 (tiro 3) · gatilho: seq RRRRR"
+   },
    {
     "quando": "2026-07-26T09:52:57.302Z",
     "resultado": "GREEN",
@@ -276,65 +282,16 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "super · Penarol x Santiago @2.25 (tiro 1) · gatilho: seq RRRR"
-   },
-   {
-    "quando": "2026-07-26T02:40:52.006Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "copa · Costa do Marfim x Bósnia e Herzegovina @2.07 (tiro 1) · gatilho: placar empate 1-1"
    }
   ],
   "consumidas": {
    "premier": 1785058006199,
-   "euro": 1785059577108
+   "euro": 1785059577108,
+   "copa": 1785060936909
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "11:07",
-     "jogo": "Tunísia x Portugal",
-     "odd": 2.4
-    },
-    {
-     "h": "11:10",
-     "jogo": "Países Baixos x Austrália",
-     "odd": 2.25
-    },
-    {
-     "h": "11:13",
-     "jogo": "Croácia x Alemanha",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "seq RRRRR",
-   "alvo": {
-    "h": "11:13",
-    "jogo": "Croácia x Alemanha",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1785060776900
-   },
-   "iniciadoEm": 1785060235408,
-   "tiros": [
-    {
-     "h": "11:07",
-     "jogo": "Tunísia x Portugal",
-     "odd": 2.4,
-     "unidades": 1
-    },
-    {
-     "h": "11:10",
-     "jogo": "Países Baixos x Austrália",
-     "odd": 2.25,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785055694806,
+   "copa": 1785060936909,
    "premier": 1785058006199,
    "euro": 1785059577108,
    "super": 1785057037700
@@ -351,13 +308,13 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": 16.8
+   "2026-07-26": 18.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Áustria",
    "n": 11,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
