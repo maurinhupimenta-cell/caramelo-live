@@ -320,12 +320,18 @@
  },
  "ambas": {
   "saldo": -37.9,
-  "ciclos": 476,
+  "ciclos": 477,
   "greens": 335,
   "redsCiclo": 54,
   "aborts": 0,
-  "descartes": 87,
+  "descartes": 88,
   "historico": [
+   {
+    "quando": "2026-07-26T21:35:53.101Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho time Guayaquil) — liga REARMADA"
+   },
    {
     "quando": "2026-07-26T21:16:55.401Z",
     "resultado": "GREEN",
@@ -439,12 +445,6 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "premier · Brighton x Southampton @1.93 (tiro 1) · gatilho: seq GGGGG"
-   },
-   {
-    "quando": "2026-07-26T14:46:02.706Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "super · Bogota x Medellin @2.2 (tiro 2) · gatilho: odd 2.2"
    }
   ],
   "consumidas": {
@@ -478,6 +478,11 @@
    "n": 10,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1785101753101,
+    "gatilho": "time Guayaquil"
+   }
+  }
  }
 }
