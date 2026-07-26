@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -40.8,
-  "ciclos": 444,
+  "saldo": -47.8,
+  "ciclos": 445,
   "greens": 297,
-  "redsCiclo": 72,
+  "redsCiclo": 73,
   "aborts": 0,
   "descartes": 75,
   "historico": [
+   {
+    "quando": "2026-07-26T17:14:00.803Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: odd 2.35"
+   },
    {
     "quando": "2026-07-26T16:26:44.900Z",
     "resultado": "GREEN",
@@ -276,68 +282,19 @@
     "resultado": "GREEN",
     "unidades": 1.6,
     "detalhe": "copa · África do Sul x Curação @2.3 (tiro 2) · gatilho: seq RGGR"
-   },
-   {
-    "quando": "2026-07-26T10:56:43.497Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "premier · Tottenham x Norwich @2.4 (tiro 1) · gatilho: coluna :57"
    }
   ],
   "consumidas": {
    "copa": 1785082581510,
-   "euro": 1785083204699
+   "euro": 1785083204699,
+   "super": 1785086040605
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "18:01",
-     "jogo": "Belo Horizonte x La Boca",
-     "odd": 2.2
-    },
-    {
-     "h": "18:04",
-     "jogo": "Sao Paulo x La Plata",
-     "odd": 2.35
-    },
-    {
-     "h": "18:07",
-     "jogo": "Quito x Itaquera",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "odd 2.35",
-   "alvo": {
-    "h": "18:07",
-    "jogo": "Quito x Itaquera",
-    "odd": 2.3,
-    "unidades": 4,
-    "desde": 1785085645297
-   },
-   "iniciadoEm": 1785084740202,
-   "tiros": [
-    {
-     "h": "18:01",
-     "jogo": "Belo Horizonte x La Boca",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "18:04",
-     "jogo": "Sao Paulo x La Plata",
-     "odd": 2.35,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785082581510,
    "premier": 1785078517704,
    "euro": 1785083204699,
-   "super": 1785079502803
+   "super": 1785086040605
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -351,12 +308,12 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": 1.6
+   "2026-07-26": -5.4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGGRG",
-   "n": 8,
+   "chave": "RRRR",
+   "n": 33,
    "start": 1
   },
   "_obs": {}
@@ -494,7 +451,37 @@
    "copa": 1785083302407,
    "euro": 1785083585300
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:19",
+     "jogo": "Medellin x Lima",
+     "odd": 1.98
+    },
+    {
+     "h": "18:22",
+     "jogo": "Asuncion x Agua Branca",
+     "odd": 1.93
+    },
+    {
+     "h": "18:25",
+     "jogo": "Belo Horizonte x Quito",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "coluna :22",
+   "alvo": {
+    "h": "18:19",
+    "jogo": "Medellin x Lima",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785086040897
+   },
+   "iniciadoEm": 1785086040897
+  },
   "cooldown": {
    "euro": 1785083585300,
    "super": 1785082200105,
@@ -515,10 +502,10 @@
    "2026-07-26": 0.8
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 17,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":22",
+   "n": 18,
+   "start": 2
   },
   "_obs": {}
  }
