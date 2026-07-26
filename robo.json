@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -38,
-  "ciclos": 438,
-  "greens": 294,
+  "saldo": -36.4,
+  "ciclos": 439,
+  "greens": 295,
   "redsCiclo": 71,
   "aborts": 0,
   "descartes": 73,
   "historico": [
+   {
+    "quando": "2026-07-26T15:08:37.902Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "premier · Leeds x City @2.3 (tiro 2) · gatilho: coluna :03"
+   },
    {
     "quando": "2026-07-26T15:01:01.303Z",
     "resultado": "GREEN",
@@ -276,61 +282,18 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "super · Belo Horizonte x Santos @2.2 (tiro 2) · gatilho: seq GGRRR"
-   },
-   {
-    "quando": "2026-07-26T08:48:15.002Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "copa · Noruega x Suécia @2.4 (tiro 1) · gatilho: odd 2.15"
    }
   ],
   "consumidas": {
    "super": 1785075109606,
    "euro": 1785075529697,
-   "copa": 1785078061111
+   "copa": 1785078061111,
+   "premier": 1785078517704
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "16:03",
-     "jogo": "Wolverhampton x Tottenham",
-     "odd": 2.25
-    },
-    {
-     "h": "16:06",
-     "jogo": "Leeds x City",
-     "odd": 2.3
-    },
-    {
-     "h": "16:09",
-     "jogo": "United x Norwich",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "coluna :03",
-   "alvo": {
-    "h": "16:06",
-    "jogo": "Leeds x City",
-    "odd": 2.3,
-    "unidades": 2,
-    "desde": 1785078348206
-   },
-   "iniciadoEm": 1785078062097,
-   "tiros": [
-    {
-     "h": "16:03",
-     "jogo": "Wolverhampton x Tottenham",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785078061111,
-   "premier": 1785071918305,
+   "premier": 1785078517704,
    "euro": 1785075529697,
    "super": 1785075109606
   },
@@ -346,7 +309,7 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": 4.4
+   "2026-07-26": 6
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
