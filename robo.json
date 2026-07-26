@@ -453,8 +453,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "06:50",
@@ -474,13 +474,21 @@
    ],
    "gatilho": "seq RRGG",
    "alvo": {
-    "h": "06:50",
-    "jogo": "Croácia x Suíça",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1785045099407
+    "h": "06:53",
+    "jogo": "República Tcheca x Polônia",
+    "odd": 2.3,
+    "unidades": 2,
+    "desde": 1785045202504
    },
-   "iniciadoEm": 1785045099407
+   "iniciadoEm": 1785045099407,
+   "tiros": [
+    {
+     "h": "06:50",
+     "jogo": "Croácia x Suíça",
+     "odd": 1.9,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785041494006,
@@ -502,10 +510,10 @@
    "2026-07-26": -6.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGG",
-   "n": 8,
-   "start": 1
+   "tipo": "time",
+   "chave": "Turquia",
+   "n": 13,
+   "start": 3
   },
   "_obs": {}
  }
