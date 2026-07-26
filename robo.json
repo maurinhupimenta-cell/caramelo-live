@@ -454,7 +454,45 @@
    "super": 1785041163407,
    "euro": 1785041494006
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "05:54",
+     "jogo": "Brighton x Southampton",
+     "odd": 1.93
+    },
+    {
+     "h": "05:57",
+     "jogo": "City x Leicester",
+     "odd": 1.95
+    },
+    {
+     "h": "06:00",
+     "jogo": "United x Liverpool",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "time Brighton",
+   "alvo": {
+    "h": "05:57",
+    "jogo": "City x Leicester",
+    "odd": 1.95,
+    "unidades": 2,
+    "desde": 1785041798605
+   },
+   "iniciadoEm": 1785041496002,
+   "tiros": [
+    {
+     "h": "05:54",
+     "jogo": "Brighton x Southampton",
+     "odd": 1.93,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1785041494006,
    "super": 1785041163407,
