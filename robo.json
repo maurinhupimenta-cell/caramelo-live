@@ -443,10 +443,38 @@
     "detalhe": "copa · África do Sul x Japão @2.15 (tiro 1) · gatilho: time Austrália"
    }
   ],
-  "consumidas": {
-   "super": 1785027471398
+  "consumidas": {},
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:55",
+     "jogo": "Tunísia x Coreia do Sul",
+     "odd": 2.25
+    },
+    {
+     "h": "02:58",
+     "jogo": "Irã x Turquia",
+     "odd": 2.15
+    },
+    {
+     "h": "03:01",
+     "jogo": "Nova Zelândia x Argélia",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "placar goleada (3+)",
+   "alvo": {
+    "h": "02:55",
+    "jogo": "Tunísia x Coreia do Sul",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785030711909
+   },
+   "iniciadoEm": 1785030711909
   },
-  "ciclo": null,
   "cooldown": {
    "euro": 1785009385398,
    "super": 1785027471398,
@@ -467,15 +495,10 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "1-0 / 0-1",
-   "n": 8,
+   "chave": "goleada (3+)",
+   "n": 11,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785030710005,
-    "gatilho": "placar goleada (3+)"
-   }
-  }
+  "_obs": {}
  }
 }
