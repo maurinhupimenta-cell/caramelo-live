@@ -451,7 +451,37 @@
    "super": 1785105713206,
    "copa": 1785106496005
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:50",
+     "jogo": "Itália x Eslováquia",
+     "odd": 2.07
+    },
+    {
+     "h": "23:53",
+     "jogo": "Países Baixos x Geórgia",
+     "odd": 1.98
+    },
+    {
+     "h": "23:56",
+     "jogo": "República Tcheca x Espanha",
+     "odd": 2
+    }
+   ],
+   "gatilho": "coluna :50",
+   "alvo": {
+    "h": "23:50",
+    "jogo": "Itália x Eslováquia",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1785106554306
+   },
+   "iniciadoEm": 1785106554306
+  },
   "cooldown": {
    "euro": 1785102836808,
    "super": 1785105713206,
