@@ -454,8 +454,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "15:40",
@@ -475,13 +475,21 @@
    ],
    "gatilho": "odd 2.2",
    "alvo": {
-    "h": "15:40",
-    "jogo": "Montevideo x Santos",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1785076430507
+    "h": "15:43",
+    "jogo": "Bogota x Medellin",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1785077102807
    },
-   "iniciadoEm": 1785076430507
+   "iniciadoEm": 1785076430507,
+   "tiros": [
+    {
+     "h": "15:40",
+     "jogo": "Montevideo x Santos",
+     "odd": 1.95,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785075472403,
@@ -506,7 +514,7 @@
    "tipo": "odd",
    "chave": "2.2",
    "n": 18,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
