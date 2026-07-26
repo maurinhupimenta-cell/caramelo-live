@@ -452,7 +452,37 @@
    "premier": 1785103726108,
    "super": 1785105713206
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:52",
+     "jogo": "Uruguai x Bélgica",
+     "odd": 1.98
+    },
+    {
+     "h": "23:55",
+     "jogo": "Alemanha x Costa do Marfim",
+     "odd": 1.87
+    },
+    {
+     "h": "23:58",
+     "jogo": "Marrocos x Gana",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "time Costa do Marfim",
+   "alvo": {
+    "h": "23:52",
+    "jogo": "Uruguai x Bélgica",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785105896306
+   },
+   "iniciadoEm": 1785105896306
+  },
   "cooldown": {
    "euro": 1785102836808,
    "super": 1785105713206,
@@ -474,9 +504,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Guayaquil",
-   "n": 31,
-   "start": 1
+   "chave": "Costa do Marfim",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  }
