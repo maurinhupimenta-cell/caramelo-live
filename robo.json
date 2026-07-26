@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -46,
-  "ciclos": 447,
-  "greens": 298,
+  "saldo": -43.6,
+  "ciclos": 448,
+  "greens": 299,
   "redsCiclo": 73,
   "aborts": 0,
   "descartes": 76,
   "historico": [
+   {
+    "quando": "2026-07-26T17:30:42.002Z",
+    "resultado": "GREEN",
+    "unidades": 2.4,
+    "detalhe": "copa · Gana x Irã @2.7 (tiro 2) · gatilho: seq RRGG"
+   },
    {
     "quando": "2026-07-26T17:26:39.307Z",
     "resultado": "GREEN",
@@ -276,59 +282,16 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: odd 2.1"
-   },
-   {
-    "quando": "2026-07-26T12:08:39.606Z",
-    "resultado": "GREEN",
-    "unidades": 2.4,
-    "detalhe": "premier · Islington x Aston @2.35 (tiro 3) · gatilho: coluna :03"
    }
   ],
   "consumidas": {
    "super": 1785086040605,
-   "premier": 1785086799105
+   "premier": 1785086799105,
+   "copa": 1785087041799
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "18:25",
-     "jogo": "RD Congo x Colômbia",
-     "odd": 2.1
-    },
-    {
-     "h": "18:28",
-     "jogo": "Gana x Irã",
-     "odd": 2.7
-    },
-    {
-     "h": "18:31",
-     "jogo": "Haiti x Japão",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "seq RRGG",
-   "alvo": {
-    "h": "18:28",
-    "jogo": "Gana x Irã",
-    "odd": 2.7,
-    "unidades": 2,
-    "desde": 1785086870604
-   },
-   "iniciadoEm": 1785086804210,
-   "tiros": [
-    {
-     "h": "18:25",
-     "jogo": "RD Congo x Colômbia",
-     "odd": 2.1,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785082581510,
+   "copa": 1785087041799,
    "premier": 1785086799105,
    "euro": 1785083204699,
    "super": 1785086040605
@@ -345,7 +308,7 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": -3.6
+   "2026-07-26": -1.2
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -488,7 +451,37 @@
    "euro": 1785083585300,
    "super": 1785086909605
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:34",
+     "jogo": "França x Iraque",
+     "odd": 2.15
+    },
+    {
+     "h": "18:37",
+     "jogo": "Brasil x Jordânia",
+     "odd": 2.05
+    },
+    {
+     "h": "18:40",
+     "jogo": "Curação x Equador",
+     "odd": 1.85
+    }
+   ],
+   "gatilho": "time Brasil",
+   "alvo": {
+    "h": "18:34",
+    "jogo": "França x Iraque",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785086912211
+   },
+   "iniciadoEm": 1785086912211
+  },
   "cooldown": {
    "euro": 1785083585300,
    "super": 1785086909605,
