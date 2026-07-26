@@ -289,7 +289,37 @@
    "euro": 1785070430901,
    "super": 1785070489410
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:12",
+     "jogo": "Brighton x Aston",
+     "odd": 2.2
+    },
+    {
+     "h": "14:15",
+     "jogo": "Norwich x City",
+     "odd": 2.05
+    },
+    {
+     "h": "14:18",
+     "jogo": "Leeds x United",
+     "odd": 2.45
+    }
+   ],
+   "gatilho": "odd 2.05",
+   "alvo": {
+    "h": "14:12",
+    "jogo": "Brighton x Aston",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785071329198
+   },
+   "iniciadoEm": 1785071329198
+  },
   "cooldown": {
    "copa": 1785069235602,
    "premier": 1785067719499,
@@ -311,9 +341,9 @@
    "2026-07-26": 14.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRRR",
-   "n": 12,
+   "tipo": "odd",
+   "chave": "2.05",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
@@ -448,7 +478,6 @@
    }
   ],
   "consumidas": {
-   "premier": 1785067896209,
    "super": 1785068156906,
    "copa": 1785069951298,
    "euro": 1785070314203
