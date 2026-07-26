@@ -338,8 +338,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRGG",
-   "n": 22,
+   "chave": "RGGR",
+   "n": 17,
    "start": 1
   },
   "_obs": {}
@@ -474,11 +474,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1785087705607,
    "euro": 1785088549302,
    "super": 1785090590411
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:43",
+     "jogo": "Japão x Tunísia",
+     "odd": 2.25
+    },
+    {
+     "h": "19:46",
+     "jogo": "Áustria x RD Congo",
+     "odd": 1.93
+    },
+    {
+     "h": "19:49",
+     "jogo": "Curação x Japão",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "time Áustria",
+   "alvo": {
+    "h": "19:43",
+    "jogo": "Japão x Tunísia",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785091010906
+   },
+   "iniciadoEm": 1785091010906
+  },
   "cooldown": {
    "euro": 1785088549302,
    "super": 1785090590411,
@@ -499,9 +528,9 @@
    "2026-07-26": 5.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":22",
-   "n": 19,
+   "tipo": "time",
+   "chave": "Áustria",
+   "n": 20,
    "start": 1
   },
   "_obs": {}
