@@ -288,7 +288,37 @@
    "euro": 1785032630305,
    "copa": 1785033651812
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:04",
+     "jogo": "Penarol x Santiago",
+     "odd": 2.25
+    },
+    {
+     "h": "04:07",
+     "jogo": "Itaquera x Buenos Aires",
+     "odd": 2.15
+    },
+    {
+     "h": "04:10",
+     "jogo": "Bogota x Asuncion",
+     "odd": 2.55
+    }
+   ],
+   "gatilho": "seq RRRR",
+   "alvo": {
+    "h": "04:04",
+    "jogo": "Penarol x Santiago",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785034851307
+   },
+   "iniciadoEm": 1785034851307
+  },
   "cooldown": {
    "copa": 1785033651812,
    "premier": 1785031719811,
@@ -309,9 +339,9 @@
    "2026-07-25": 21
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 8,
+   "tipo": "seq",
+   "chave": "RRRR",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
