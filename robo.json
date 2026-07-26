@@ -320,12 +320,18 @@
  },
  "ambas": {
   "saldo": -35.7,
-  "ciclos": 482,
+  "ciclos": 483,
   "greens": 337,
   "redsCiclo": 54,
   "aborts": 0,
-  "descartes": 91,
+  "descartes": 92,
   "historico": [
+   {
+    "quando": "2026-07-26T22:29:54.804Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho time Guayaquil) — liga REARMADA"
+   },
    {
     "quando": "2026-07-26T22:27:54.510Z",
     "resultado": "DESCARTADO",
@@ -439,49 +445,13 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "euro · Croácia x Escócia @1.93 (tiro 1) · gatilho: placar empate 2-2"
-   },
-   {
-    "quando": "2026-07-26T16:28:22.698Z",
-    "resultado": "GREEN",
-    "unidades": 0.5,
-    "detalhe": "copa · Austrália x Noruega @1.87 (tiro 3) · gatilho: time Turquia"
    }
   ],
   "consumidas": {
    "euro": 1785102836808,
    "premier": 1785103726108
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:19",
-     "jogo": "Porto Alegre x Bogota",
-     "odd": 2.4
-    },
-    {
-     "h": "23:22",
-     "jogo": "Santiago x Buenos Aires",
-     "odd": 1.8
-    },
-    {
-     "h": "23:25",
-     "jogo": "Guayaquil x Montevideo",
-     "odd": 1.85
-    }
-   ],
-   "gatilho": "odd 1.8",
-   "alvo": {
-    "h": "23:19",
-    "jogo": "Porto Alegre x Bogota",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1785103974204
-   },
-   "iniciadoEm": 1785103974204
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785102836808,
    "super": 1785097697101,
@@ -507,6 +477,11 @@
    "n": 9,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1785104875711,
+    "gatilho": "time Guayaquil"
+   }
+  }
  }
 }
