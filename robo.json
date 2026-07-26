@@ -452,7 +452,37 @@
    "copa": 1785087409408,
    "premier": 1785087705607
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:47",
+     "jogo": "Romênia x Bélgica",
+     "odd": 1.85
+    },
+    {
+     "h": "18:50",
+     "jogo": "Suíça x Polônia",
+     "odd": 2.02
+    },
+    {
+     "h": "18:53",
+     "jogo": "Eslováquia x Croácia",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "coluna :50",
+   "alvo": {
+    "h": "18:47",
+    "jogo": "Romênia x Bélgica",
+    "odd": 1.85,
+    "unidades": 1,
+    "desde": 1785087716802
+   },
+   "iniciadoEm": 1785087716802
+  },
   "cooldown": {
    "euro": 1785083585300,
    "super": 1785086909605,
