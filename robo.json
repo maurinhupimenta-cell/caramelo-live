@@ -158,13 +158,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -45.4,
-  "ciclos": 407,
-  "greens": 270,
+  "saldo": -44.2,
+  "ciclos": 408,
+  "greens": 271,
   "redsCiclo": 67,
   "aborts": 0,
   "descartes": 70,
   "historico": [
+   {
+    "quando": "2026-07-26T04:32:48.198Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · Brentford x City @2.1 (tiro 2) · gatilho: time City"
+   },
    {
     "quando": "2026-07-26T04:17:52.000Z",
     "resultado": "GREEN",
@@ -278,60 +284,17 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "premier · West Ham x Burnley @2.4 (tiro 1) · gatilho: coluna :15"
-   },
-   {
-    "quando": "2026-07-25T19:14:45.904Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho coluna :15) — liga REARMADA"
    }
   ],
   "consumidas": {
    "copa": 1785038273707,
-   "super": 1785039471804
+   "super": 1785039471804,
+   "premier": 1785040368000
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "05:27",
-     "jogo": "Norwich x West Ham",
-     "odd": 2.45
-    },
-    {
-     "h": "05:30",
-     "jogo": "Brentford x City",
-     "odd": 2.1
-    },
-    {
-     "h": "05:33",
-     "jogo": "Brighton x West Ham",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "time City",
-   "alvo": {
-    "h": "05:30",
-    "jogo": "Brentford x City",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1785040183508
-   },
-   "iniciadoEm": 1785039642301,
-   "tiros": [
-    {
-     "h": "05:27",
-     "jogo": "Norwich x West Ham",
-     "odd": 2.45,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785038273707,
-   "premier": 1785036041702,
+   "premier": 1785040368000,
    "euro": 1785032630305,
    "super": 1785039471804
   },
@@ -347,13 +310,13 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": -3
+   "2026-07-26": -1.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Brighton",
-   "n": 8,
-   "start": 1
+   "chave": "Newcastle",
+   "n": 9,
+   "start": 2
   },
   "_obs": {}
  },
