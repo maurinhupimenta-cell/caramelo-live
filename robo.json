@@ -285,11 +285,40 @@
    }
   ],
   "consumidas": {
-   "super": 1785061878311,
    "premier": 1785063403307,
    "copa": 1785064935009
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:34",
+     "jogo": "Sao Paulo x Bogota",
+     "odd": 2.35
+    },
+    {
+     "h": "12:37",
+     "jogo": "Santiago x Porto Alegre",
+     "odd": 2.4
+    },
+    {
+     "h": "12:40",
+     "jogo": "Montevideo x Sao Paulo",
+     "odd": 2
+    }
+   ],
+   "gatilho": "odd 2.35",
+   "alvo": {
+    "h": "12:34",
+    "jogo": "Sao Paulo x Bogota",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1785065479598
+   },
+   "iniciadoEm": 1785065479598
+  },
   "cooldown": {
    "copa": 1785064935009,
    "premier": 1785063403307,
@@ -311,8 +340,8 @@
    "2026-07-26": 23.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGR",
+   "tipo": "odd",
+   "chave": "2.35",
    "n": 8,
    "start": 1
   },
@@ -505,7 +534,7 @@
    "tipo": "time",
    "chave": "Turquia",
    "n": 14,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
