@@ -285,7 +285,6 @@
    }
   ],
   "consumidas": {
-   "super": 1785052317700,
    "premier": 1785053503205,
    "copa": 1785055694806
   },
@@ -319,13 +318,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -41.1,
-  "ciclos": 437,
-  "greens": 303,
+  "saldo": -40,
+  "ciclos": 438,
+  "greens": 304,
   "redsCiclo": 50,
   "aborts": 0,
   "descartes": 84,
   "historico": [
+   {
+    "quando": "2026-07-26T08:48:15.206Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Noruega x Suécia @2.07 (tiro 2) · gatilho: time Áustria"
+   },
    {
     "quando": "2026-07-26T08:43:17.598Z",
     "resultado": "GREEN_OBS",
@@ -439,63 +444,20 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho time La Plata) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-26T04:34:06.600Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
    "premier": 1785053322602,
    "super": 1785053958002,
-   "euro": 1785054357006
+   "euro": 1785054357006,
+   "copa": 1785055695005
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "09:37",
-     "jogo": "Uruguai x Áustria",
-     "odd": 1.93
-    },
-    {
-     "h": "09:40",
-     "jogo": "Noruega x Suécia",
-     "odd": 2.07
-    },
-    {
-     "h": "09:43",
-     "jogo": "Uruguai x Haiti",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "time Áustria",
-   "alvo": {
-    "h": "09:40",
-    "jogo": "Noruega x Suécia",
-    "odd": 2.07,
-    "unidades": 2,
-    "desde": 1785055615200
-   },
-   "iniciadoEm": 1785055398310,
-   "tiros": [
-    {
-     "h": "09:37",
-     "jogo": "Uruguai x Áustria",
-     "odd": 1.93,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785054357006,
    "super": 1785053958002,
    "premier": 1785053322602,
-   "copa": 1785050715199
+   "copa": 1785055695005
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -508,13 +470,13 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": 0.8
+   "2026-07-26": 1.9
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Suíça",
    "n": 9,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
