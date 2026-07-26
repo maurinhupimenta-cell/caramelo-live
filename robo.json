@@ -348,13 +348,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -45.7,
-  "ciclos": 449,
-  "greens": 312,
+  "saldo": -45,
+  "ciclos": 450,
+  "greens": 313,
   "redsCiclo": 52,
   "aborts": 0,
   "descartes": 85,
   "historico": [
+   {
+    "quando": "2026-07-26T12:45:51.497Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "copa · Bósnia e Herzegovina x Curação @1.85 (tiro 2) · gatilho: time Brasil"
+   },
    {
     "quando": "2026-07-26T12:15:57.103Z",
     "resultado": "GREEN",
@@ -468,62 +474,19 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "euro · República Tcheca x Inglaterra @2.02 (tiro 3) · gatilho: odd 2.1"
-   },
-   {
-    "quando": "2026-07-26T07:04:18.210Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "super · Guayaquil x Agua Branca @1.85 (tiro 1) · gatilho: coluna :04"
    }
   ],
   "consumidas": {
    "premier": 1785067896209,
-   "super": 1785068156906
+   "super": 1785068156906,
+   "copa": 1785069951298
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "13:40",
-     "jogo": "Brasil x África do Sul",
-     "odd": 2.15
-    },
-    {
-     "h": "13:43",
-     "jogo": "Bósnia e Herzegovina x Curação",
-     "odd": 1.85
-    },
-    {
-     "h": "13:46",
-     "jogo": "Senegal x Argentina",
-     "odd": 2
-    }
-   ],
-   "gatilho": "time Brasil",
-   "alvo": {
-    "h": "13:43",
-    "jogo": "Bósnia e Herzegovina x Curação",
-    "odd": 1.85,
-    "unidades": 2,
-    "desde": 1785069831898
-   },
-   "iniciadoEm": 1785069416404,
-   "tiros": [
-    {
-     "h": "13:40",
-     "jogo": "Brasil x África do Sul",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785066236811,
    "super": 1785068156906,
    "premier": 1785067896209,
-   "copa": 1785065814611
+   "copa": 1785069951298
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -536,7 +499,7 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": -3.8
+   "2026-07-26": -3.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
