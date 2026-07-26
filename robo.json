@@ -322,12 +322,18 @@
  },
  "ambas": {
   "saldo": -44.1,
-  "ciclos": 421,
+  "ciclos": 422,
   "greens": 292,
   "redsCiclo": 49,
   "aborts": 0,
-  "descartes": 80,
+  "descartes": 81,
   "historico": [
+   {
+    "quando": "2026-07-26T04:47:47.409Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho time Brighton) — liga REARMADA"
+   },
    {
     "quando": "2026-07-26T04:46:03.605Z",
     "resultado": "GREEN",
@@ -441,12 +447,6 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "copa · EUA x França @1.93 (tiro 1) · gatilho: seq GRRRG"
-   },
-   {
-    "quando": "2026-07-25T20:54:04.804Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: odd 1.98"
    }
   ],
   "consumidas": {
@@ -455,8 +455,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:44",
@@ -476,13 +476,21 @@
    ],
    "gatilho": "time Turquia",
    "alvo": {
-    "h": "05:44",
-    "jogo": "Dinamarca x Hungria",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785041165800
+    "h": "05:47",
+    "jogo": "Croácia x Turquia",
+    "odd": 2.07,
+    "unidades": 2,
+    "desde": 1785041279198
    },
-   "iniciadoEm": 1785041165800
+   "iniciadoEm": 1785041165800,
+   "tiros": [
+    {
+     "h": "05:44",
+     "jogo": "Dinamarca x Hungria",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785036541306,
@@ -505,8 +513,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Turquia",
-   "n": 10,
+   "chave": "Brighton",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
