@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -36,
-  "ciclos": 415,
-  "greens": 277,
+  "saldo": -34.5,
+  "ciclos": 416,
+  "greens": 278,
   "redsCiclo": 67,
   "aborts": 0,
   "descartes": 71,
   "historico": [
+   {
+    "quando": "2026-07-26T07:40:38.401Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "copa · Turquia x Áustria @2.25 (tiro 2) · gatilho: time Turquia"
+   },
    {
     "quando": "2026-07-26T07:06:03.299Z",
     "resultado": "GREEN",
@@ -276,58 +282,15 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "copa · Bósnia e Herzegovina x Áustria @2.1 (tiro 1) · gatilho: seq RRRGG"
-   },
-   {
-    "quando": "2026-07-25T22:38:01.004Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · Países Baixos x Suíça @2.02 (tiro 1) · gatilho: seq GGGRG"
    }
   ],
   "consumidas": {
-   "premier": 1785049563010
+   "premier": 1785049563010,
+   "copa": 1785051638206
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "08:34",
-     "jogo": "RD Congo x Arábia Saudita",
-     "odd": 2.05
-    },
-    {
-     "h": "08:37",
-     "jogo": "Turquia x Áustria",
-     "odd": 2.25
-    },
-    {
-     "h": "08:40",
-     "jogo": "Uzbequistão x Brasil",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "time Turquia",
-   "alvo": {
-    "h": "08:37",
-    "jogo": "Turquia x Áustria",
-    "odd": 2.25,
-    "unidades": 2,
-    "desde": 1785051455803
-   },
-   "iniciadoEm": 1785050755098,
-   "tiros": [
-    {
-     "h": "08:34",
-     "jogo": "RD Congo x Arábia Saudita",
-     "odd": 2.05,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785047154305,
+   "copa": 1785051638206,
    "premier": 1785049563010,
    "euro": 1785032630305,
    "super": 1785047510507
@@ -344,13 +307,13 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": 6.4
+   "2026-07-26": 7.9
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Turquia",
    "n": 9,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
