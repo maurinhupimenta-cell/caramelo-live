@@ -448,12 +448,41 @@
    }
   ],
   "consumidas": {
-   "copa": 1785065814611,
    "euro": 1785066236811,
    "premier": 1785067896209,
    "super": 1785068156906
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:40",
+     "jogo": "Brasil x África do Sul",
+     "odd": 2.15
+    },
+    {
+     "h": "13:43",
+     "jogo": "Bósnia e Herzegovina x Curação",
+     "odd": 1.85
+    },
+    {
+     "h": "13:46",
+     "jogo": "Senegal x Argentina",
+     "odd": 2
+    }
+   ],
+   "gatilho": "time Brasil",
+   "alvo": {
+    "h": "13:40",
+    "jogo": "Brasil x África do Sul",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785069416404
+   },
+   "iniciadoEm": 1785069416404
+  },
   "cooldown": {
    "euro": 1785066236811,
    "super": 1785068156906,
@@ -474,9 +503,9 @@
    "2026-07-26": -3.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRRG",
-   "n": 9,
+   "tipo": "time",
+   "chave": "Brasil",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
