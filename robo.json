@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -45.1,
-  "ciclos": 456,
-  "greens": 303,
+  "saldo": -44,
+  "ciclos": 457,
+  "greens": 304,
   "redsCiclo": 74,
   "aborts": 0,
   "descartes": 79,
   "historico": [
+   {
+    "quando": "2026-07-26T20:58:58.702Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Eslováquia x Inglaterra @2.1 (tiro 1) · gatilho: seq RRGRG"
+   },
    {
     "quando": "2026-07-26T20:54:57.208Z",
     "resultado": "GREEN",
@@ -276,54 +282,19 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "copa · Iraque x Curação @2.3 (tiro 1) · gatilho: time Áustria"
-   },
-   {
-    "quando": "2026-07-26T14:18:50.202Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: seq GGGGG"
    }
   ],
   "consumidas": {
    "copa": 1785096793308,
    "super": 1785098564808,
-   "premier": 1785099297011
+   "premier": 1785099297011,
+   "euro": 1785099538502
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:56",
-     "jogo": "Eslováquia x Inglaterra",
-     "odd": 2.1
-    },
-    {
-     "h": "21:59",
-     "jogo": "Geórgia x Albânia",
-     "odd": 2.75
-    },
-    {
-     "h": "22:02",
-     "jogo": "Dinamarca x Bélgica",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "seq RRGRG",
-   "alvo": {
-    "h": "21:56",
-    "jogo": "Eslováquia x Inglaterra",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785099476403
-   },
-   "iniciadoEm": 1785099476403
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785096793308,
    "premier": 1785099297011,
-   "euro": 1785091809105,
+   "euro": 1785099538502,
    "super": 1785098564808
   },
   "dias": {
@@ -338,11 +309,11 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": -2.7
+   "2026-07-26": -1.6
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRGRG",
+   "chave": "RGRGG",
    "n": 8,
    "start": 1
   },
