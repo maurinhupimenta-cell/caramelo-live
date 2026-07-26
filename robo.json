@@ -155,13 +155,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -41.1,
-  "ciclos": 404,
-  "greens": 268,
+  "saldo": -39.6,
+  "ciclos": 405,
+  "greens": 269,
   "redsCiclo": 66,
   "aborts": 0,
   "descartes": 70,
   "historico": [
+   {
+    "quando": "2026-07-26T03:20:41.901Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "premier · Leeds x Palace @2.45 (tiro 1) · gatilho: placar 1-0 / 0-1"
+   },
    {
     "quando": "2026-07-26T03:11:53.708Z",
     "resultado": "GREEN",
@@ -275,53 +281,18 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "copa · Turquia x África do Sul @2.5 (tiro 1) · gatilho: time México"
-   },
-   {
-    "quando": "2026-07-25T18:14:44.208Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: coluna :12"
    }
   ],
   "consumidas": {
    "euro": 1785032630305,
    "copa": 1785033651812,
-   "super": 1785035513509
+   "super": 1785035513509,
+   "premier": 1785036041702
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:18",
-     "jogo": "Leeds x Palace",
-     "odd": 2.45
-    },
-    {
-     "h": "04:21",
-     "jogo": "Burnley x Southampton",
-     "odd": 2.25
-    },
-    {
-     "h": "04:24",
-     "jogo": "Brentford x Islington",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "placar 1-0 / 0-1",
-   "alvo": {
-    "h": "04:18",
-    "jogo": "Leeds x Palace",
-    "odd": 2.45,
-    "unidades": 1,
-    "desde": 1785035677005
-   },
-   "iniciadoEm": 1785035677005
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785033651812,
-   "premier": 1785031719811,
+   "premier": 1785036041702,
    "euro": 1785032630305,
    "super": 1785035513509
   },
@@ -337,7 +308,7 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": 1.3
+   "2026-07-26": 2.8
   },
   "_gatilhoAtual": {
    "tipo": "placar",
@@ -530,10 +501,10 @@
    "2026-07-26": 0.7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Turquia",
+   "tipo": "odd",
+   "chave": "2",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
