@@ -285,7 +285,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1785075529697,
    "copa": 1785078061111,
    "premier": 1785078517704
   },
@@ -482,7 +481,37 @@
    "premier": 1785077623105,
    "copa": 1785078979201
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:17",
+     "jogo": "Itália x Espanha",
+     "odd": 1.9
+    },
+    {
+     "h": "16:20",
+     "jogo": "França x Escócia",
+     "odd": 1.9
+    },
+    {
+     "h": "16:23",
+     "jogo": "Inglaterra x Espanha",
+     "odd": 1.8
+    }
+   ],
+   "gatilho": "odd 1.9",
+   "alvo": {
+    "h": "16:17",
+    "jogo": "Itália x Espanha",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1785079074299
+   },
+   "iniciadoEm": 1785079074299
+  },
   "cooldown": {
    "euro": 1785075472403,
    "super": 1785077162512,
@@ -503,10 +532,10 @@
    "2026-07-26": -2.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Áustria",
-   "n": 17,
-   "start": 3
+   "tipo": "odd",
+   "chave": "1.9",
+   "n": 18,
+   "start": 1
   },
   "_obs": {}
  }
