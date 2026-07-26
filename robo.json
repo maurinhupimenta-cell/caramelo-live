@@ -344,7 +344,7 @@
    "tipo": "coluna",
    "chave": ":57",
    "n": 11,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
@@ -484,8 +484,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "11:43",
@@ -505,11 +505,11 @@
    ],
    "gatilho": "odd 1.85",
    "alvo": {
-    "h": "11:46",
-    "jogo": "Rio de Janeiro x Belo Horizonte",
-    "odd": 1.85,
-    "unidades": 2,
-    "desde": 1785062777603
+    "h": "11:49",
+    "jogo": "Quito x La Plata",
+    "odd": 2.15,
+    "unidades": 4,
+    "desde": 1785062957999
    },
    "iniciadoEm": 1785062098704,
    "tiros": [
@@ -518,6 +518,12 @@
      "jogo": "Bogota x Avellaneda",
      "odd": 2.15,
      "unidades": 1
+    },
+    {
+     "h": "11:46",
+     "jogo": "Rio de Janeiro x Belo Horizonte",
+     "odd": 1.85,
+     "unidades": 2
     }
    ]
   },
@@ -541,9 +547,9 @@
    "2026-07-26": 7.1
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.85",
-   "n": 9,
+   "tipo": "seq",
+   "chave": "RRRR",
+   "n": 16,
    "start": 1
   },
   "_obs": {}
