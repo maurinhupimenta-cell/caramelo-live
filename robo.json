@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -39.9,
-  "ciclos": 412,
-  "greens": 274,
+  "saldo": -38.3,
+  "ciclos": 413,
+  "greens": 275,
   "redsCiclo": 67,
   "aborts": 0,
   "descartes": 71,
   "historico": [
+   {
+    "quando": "2026-07-26T06:25:54.503Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "copa · Uzbequistão x Suíça @2.3 (tiro 2) · gatilho: odd 2.3"
+   },
    {
     "quando": "2026-07-26T06:00:31.500Z",
     "resultado": "GREEN",
@@ -276,58 +282,15 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "super · Avellaneda x Santos @2.4 (tiro 1) · gatilho: coluna :43"
-   },
-   {
-    "quando": "2026-07-25T21:03:01.702Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "euro · Suíça x Eslováquia @2.2 (tiro 1) · gatilho: seq RRGGR"
    }
   ],
   "consumidas": {
-   "premier": 1785045631301
+   "premier": 1785045631301,
+   "copa": 1785047154305
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "07:19",
-     "jogo": "Senegal x Haiti",
-     "odd": 2.35
-    },
-    {
-     "h": "07:22",
-     "jogo": "Uzbequistão x Suíça",
-     "odd": 2.3
-    },
-    {
-     "h": "07:25",
-     "jogo": "Áustria x RD Congo",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "odd 2.3",
-   "alvo": {
-    "h": "07:22",
-    "jogo": "Uzbequistão x Suíça",
-    "odd": 2.3,
-    "unidades": 2,
-    "desde": 1785046969403
-   },
-   "iniciadoEm": 1785046251498,
-   "tiros": [
-    {
-     "h": "07:19",
-     "jogo": "Senegal x Haiti",
-     "odd": 2.35,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785042240506,
+   "copa": 1785047154305,
    "premier": 1785045631301,
    "euro": 1785032630305,
    "super": 1785043173008
@@ -344,13 +307,13 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": 2.5
+   "2026-07-26": 4.1
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.3",
    "n": 11,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
