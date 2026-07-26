@@ -288,7 +288,37 @@
    "premier": 1785071918305,
    "copa": 1785073610107
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:01",
+     "jogo": "Sao Paulo x Buenos Aires",
+     "odd": 1.98
+    },
+    {
+     "h": "15:04",
+     "jogo": "Santos x Avellaneda",
+     "odd": 2.4
+    },
+    {
+     "h": "15:07",
+     "jogo": "Rio de Janeiro x La Plata",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "placar empate 2-2",
+   "alvo": {
+    "h": "15:01",
+    "jogo": "Sao Paulo x Buenos Aires",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785074276704
+   },
+   "iniciadoEm": 1785074276704
+  },
   "cooldown": {
    "copa": 1785073610107,
    "premier": 1785071918305,
@@ -310,9 +340,9 @@
    "2026-07-26": 17.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Noruega",
-   "n": 16,
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
@@ -504,7 +534,7 @@
    "tipo": "time",
    "chave": "México",
    "n": 13,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
