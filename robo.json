@@ -285,7 +285,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:04",
+     "jogo": "Colômbia x França",
+     "odd": 2.2
+    },
+    {
+     "h": "21:07",
+     "jogo": "Iraque x Irã",
+     "odd": 2.75
+    },
+    {
+     "h": "21:10",
+     "jogo": "Uruguai x EUA",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "seq RRGG",
+   "alvo": {
+    "h": "21:04",
+    "jogo": "Colômbia x França",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785096057100
+   },
+   "iniciadoEm": 1785096057100
+  },
   "cooldown": {
    "copa": 1785091742012,
    "premier": 1785086799105,
@@ -307,9 +337,9 @@
    "2026-07-26": 1.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.02",
-   "n": 16,
+   "tipo": "seq",
+   "chave": "RRGG",
+   "n": 24,
    "start": 1
   },
   "_obs": {
