@@ -348,13 +348,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -41.9,
-  "ciclos": 413,
-  "greens": 287,
+  "saldo": -41.2,
+  "ciclos": 414,
+  "greens": 288,
   "redsCiclo": 48,
   "aborts": 0,
   "descartes": 78,
   "historico": [
+   {
+    "quando": "2026-07-26T03:16:53.705Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "super · Lima x Avellaneda @1.93 (tiro 3) · gatilho: time Asuncion"
+   },
    {
     "quando": "2026-07-26T02:17:40.898Z",
     "resultado": "GREEN",
@@ -468,65 +474,16 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · Panamá x Costa do Marfim @1.95 (tiro 1) · gatilho: seq GGGRG"
-   },
-   {
-    "quando": "2026-07-25T16:46:24.998Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Aston x Islington @2 (tiro 1) · gatilho: coluna :42"
    }
   ],
   "consumidas": {
-   "premier": 1785032260707
+   "premier": 1785032260707,
+   "super": 1785035813599
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:07",
-     "jogo": "Itaquera x Buenos Aires",
-     "odd": 1.87
-    },
-    {
-     "h": "04:10",
-     "jogo": "Bogota x Asuncion",
-     "odd": 2.2
-    },
-    {
-     "h": "04:13",
-     "jogo": "Lima x Avellaneda",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "time Asuncion",
-   "alvo": {
-    "h": "04:13",
-    "jogo": "Lima x Avellaneda",
-    "odd": 1.93,
-    "unidades": 4,
-    "desde": 1785035628202
-   },
-   "iniciadoEm": 1785035083501,
-   "tiros": [
-    {
-     "h": "04:07",
-     "jogo": "Itaquera x Buenos Aires",
-     "odd": 1.87,
-     "unidades": 1
-    },
-    {
-     "h": "04:10",
-     "jogo": "Bogota x Asuncion",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785009385398,
-   "super": 1785031431309,
+   "super": 1785035813599,
    "premier": 1785032260707,
    "copa": 1785031073199
   },
@@ -540,13 +497,14 @@
    "2026-07-22": -39.9,
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
-   "2026-07-25": 10.5
+   "2026-07-25": 10.5,
+   "2026-07-26": 0.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2",
-   "n": 8,
-   "start": 2
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 9,
+   "start": 1
   },
   "_obs": {}
  }
