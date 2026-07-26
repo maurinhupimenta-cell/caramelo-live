@@ -452,7 +452,37 @@
    "euro": 1785050037009,
    "copa": 1785050715199
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:06",
+     "jogo": "Southampton x Islington",
+     "odd": 2
+    },
+    {
+     "h": "09:09",
+     "jogo": "Liverpool x Tottenham",
+     "odd": 2.07
+    },
+    {
+     "h": "09:12",
+     "jogo": "Chelsea x Aston",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "odd 2.07",
+   "alvo": {
+    "h": "09:06",
+    "jogo": "Southampton x Islington",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1785052641808
+   },
+   "iniciadoEm": 1785052641808
+  },
   "cooldown": {
    "euro": 1785050037009,
    "super": 1785049458100,
@@ -473,9 +503,9 @@
    "2026-07-26": -2.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Turquia",
-   "n": 9,
+   "tipo": "odd",
+   "chave": "2.07",
+   "n": 8,
    "start": 3
   },
   "_obs": {}
