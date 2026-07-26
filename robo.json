@@ -320,13 +320,19 @@
   }
  },
  "ambas": {
-  "saldo": -34.2,
-  "ciclos": 471,
-  "greens": 331,
+  "saldo": -33.3,
+  "ciclos": 472,
+  "greens": 332,
   "redsCiclo": 53,
   "aborts": 0,
   "descartes": 87,
   "historico": [
+   {
+    "quando": "2026-07-26T19:59:56.400Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · Qatar x Cabo Verde @1.98 (tiro 3) · gatilho: seq GRRGR"
+   },
    {
     "quando": "2026-07-26T19:02:01.300Z",
     "resultado": "GREEN",
@@ -440,67 +446,18 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho seq GGGGR) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-26T13:29:52.011Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "super · Quito x Santiago @1.9 (tiro 1) · gatilho: odd 2.2"
    }
   ],
   "consumidas": {
-   "euro": 1785092521099
+   "euro": 1785092521099,
+   "copa": 1785095996110
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "20:49",
-     "jogo": "Suécia x Suíça",
-     "odd": 2.15
-    },
-    {
-     "h": "20:52",
-     "jogo": "Inglaterra x Paraguai",
-     "odd": 2.05
-    },
-    {
-     "h": "20:55",
-     "jogo": "Qatar x Cabo Verde",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "seq GRRGR",
-   "alvo": {
-    "h": "20:55",
-    "jogo": "Qatar x Cabo Verde",
-    "odd": 1.98,
-    "unidades": 4,
-    "desde": 1785095757009
-   },
-   "iniciadoEm": 1785095395900,
-   "tiros": [
-    {
-     "h": "20:49",
-     "jogo": "Suécia x Suíça",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "20:52",
-     "jogo": "Inglaterra x Paraguai",
-     "odd": 2.05,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785092521099,
    "super": 1785090590411,
    "premier": 1785087705607,
-   "copa": 1785091742299
+   "copa": 1785095996110
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -513,7 +470,7 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": 7.7
+   "2026-07-26": 8.6
   },
   "_gatilhoAtual": {
    "tipo": "seq",
