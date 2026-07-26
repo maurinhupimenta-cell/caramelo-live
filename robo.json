@@ -291,8 +291,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "14:40",
@@ -312,13 +312,21 @@
    ],
    "gatilho": "time Noruega",
    "alvo": {
-    "h": "14:40",
-    "jogo": "Coreia do Sul x Tunísia",
-    "odd": 2.75,
-    "unidades": 1,
-    "desde": 1785072891697
+    "h": "14:43",
+    "jogo": "Noruega x Brasil",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1785073553201
    },
-   "iniciadoEm": 1785072891697
+   "iniciadoEm": 1785072891697,
+   "tiros": [
+    {
+     "h": "14:40",
+     "jogo": "Coreia do Sul x Tunísia",
+     "odd": 2.75,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785069235602,
@@ -478,7 +486,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1785069951298,
    "euro": 1785070314203,
    "super": 1785072591897
   },
@@ -533,9 +540,9 @@
    "2026-07-26": -0.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGGR",
-   "n": 9,
+   "tipo": "coluna",
+   "chave": ":40",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
