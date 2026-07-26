@@ -318,13 +318,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -49,
-  "ciclos": 425,
-  "greens": 294,
+  "saldo": -48.2,
+  "ciclos": 426,
+  "greens": 295,
   "redsCiclo": 50,
   "aborts": 0,
   "descartes": 81,
   "historico": [
+   {
+    "quando": "2026-07-26T05:49:49.603Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "super · Guayaquil x Buenos Aires @1.8 (tiro 1) · gatilho: time Santos"
+   },
    {
     "quando": "2026-07-26T05:43:51.902Z",
     "resultado": "GREEN",
@@ -438,53 +444,18 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Haiti"
-   },
-   {
-    "quando": "2026-07-25T22:02:36.304Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: coluna :54"
    }
   ],
   "consumidas": {
    "euro": 1785041494006,
    "premier": 1785042166500,
-   "copa": 1785044631703
+   "copa": 1785044631703,
+   "super": 1785044989406
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:46",
-     "jogo": "Guayaquil x Buenos Aires",
-     "odd": 1.8
-    },
-    {
-     "h": "06:49",
-     "jogo": "Medellin x Santos",
-     "odd": 2.1
-    },
-    {
-     "h": "06:52",
-     "jogo": "Porto Alegre x Rio de Janeiro",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "time Santos",
-   "alvo": {
-    "h": "06:46",
-    "jogo": "Guayaquil x Buenos Aires",
-    "odd": 1.8,
-    "unidades": 1,
-    "desde": 1785044764701
-   },
-   "iniciadoEm": 1785044764701
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785041494006,
-   "super": 1785041163407,
+   "super": 1785044989406,
    "premier": 1785042166500,
    "copa": 1785044631703
   },
@@ -499,12 +470,12 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": -7.1
+   "2026-07-26": -6.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Santos",
-   "n": 10,
+   "tipo": "odd",
+   "chave": "1.93",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
