@@ -319,13 +319,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -35.8,
-  "ciclos": 442,
-  "greens": 308,
+  "saldo": -34.8,
+  "ciclos": 443,
+  "greens": 309,
   "redsCiclo": 50,
   "aborts": 0,
   "descartes": 84,
   "historico": [
+   {
+    "quando": "2026-07-26T10:34:57.305Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Suíça x Eslováquia @1.95 (tiro 1) · gatilho: odd 2.1"
+   },
    {
     "quando": "2026-07-26T10:24:59.007Z",
     "resultado": "GREEN",
@@ -439,51 +445,46 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: time Brighton"
-   },
-   {
-    "quando": "2026-07-26T04:51:34.204Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "euro · Croácia x Turquia @2.07 (tiro 2) · gatilho: time Turquia"
    }
   ],
   "consumidas": {
    "premier": 1785060879300,
-   "copa": 1785061498901
+   "copa": 1785061498901,
+   "euro": 1785062097107
   },
   "ciclo": {
-   "liga": "euro",
+   "liga": "super",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "11:32",
-     "jogo": "Suíça x Eslováquia",
-     "odd": 1.95
+     "h": "11:43",
+     "jogo": "Bogota x Avellaneda",
+     "odd": 2.15
     },
     {
-     "h": "11:35",
-     "jogo": "Polônia x Itália",
-     "odd": 2.1
+     "h": "11:46",
+     "jogo": "Rio de Janeiro x Belo Horizonte",
+     "odd": 1.85
     },
     {
-     "h": "11:38",
-     "jogo": "Sérvia x Alemanha",
-     "odd": 2
+     "h": "11:49",
+     "jogo": "Quito x La Plata",
+     "odd": 2.15
     }
    ],
-   "gatilho": "odd 2.1",
+   "gatilho": "odd 1.85",
    "alvo": {
-    "h": "11:32",
-    "jogo": "Suíça x Eslováquia",
-    "odd": 1.95,
+    "h": "11:43",
+    "jogo": "Bogota x Avellaneda",
+    "odd": 2.15,
     "unidades": 1,
-    "desde": 1785061597504
+    "desde": 1785062098704
    },
-   "iniciadoEm": 1785061597504
+   "iniciadoEm": 1785062098704
   },
   "cooldown": {
-   "euro": 1785057997101,
+   "euro": 1785062097107,
    "super": 1785057937799,
    "premier": 1785060879300,
    "copa": 1785061498901
@@ -499,13 +500,13 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": 6.1
+   "2026-07-26": 7.1
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.1",
-   "n": 19,
-   "start": 2
+   "chave": "1.85",
+   "n": 9,
+   "start": 3
   },
   "_obs": {}
  }
