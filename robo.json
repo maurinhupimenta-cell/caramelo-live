@@ -290,8 +290,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "18:01",
@@ -311,11 +311,11 @@
    ],
    "gatilho": "odd 2.35",
    "alvo": {
-    "h": "18:04",
-    "jogo": "Sao Paulo x La Plata",
-    "odd": 2.35,
-    "unidades": 2,
-    "desde": 1785085491802
+    "h": "18:07",
+    "jogo": "Quito x Itaquera",
+    "odd": 2.3,
+    "unidades": 4,
+    "desde": 1785085645297
    },
    "iniciadoEm": 1785084740202,
    "tiros": [
@@ -324,6 +324,12 @@
      "jogo": "Belo Horizonte x La Boca",
      "odd": 2.2,
      "unidades": 1
+    },
+    {
+     "h": "18:04",
+     "jogo": "Sao Paulo x La Plata",
+     "odd": 2.35,
+     "unidades": 2
     }
    ]
   },
@@ -348,9 +354,9 @@
    "2026-07-26": 1.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.35",
-   "n": 13,
+   "tipo": "seq",
+   "chave": "RGGRG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
