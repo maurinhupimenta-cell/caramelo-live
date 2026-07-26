@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -42.3,
-  "ciclos": 449,
-  "greens": 300,
+  "saldo": -40.9,
+  "ciclos": 450,
+  "greens": 301,
   "redsCiclo": 73,
   "aborts": 0,
   "descartes": 76,
   "historico": [
+   {
+    "quando": "2026-07-26T18:50:09.299Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "euro · Hungria x Áustria @2.4 (tiro 1) · gatilho: seq RGGRR"
+   },
    {
     "quando": "2026-07-26T18:49:02.208Z",
     "resultado": "GREEN",
@@ -276,22 +282,17 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "super · La Plata x Sao Paulo @2.3 (tiro 1) · gatilho: seq GGRRR"
-   },
-   {
-    "quando": "2026-07-26T12:53:51.005Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: odd 2.6"
    }
   ],
   "consumidas": {
-   "copa": 1785091742012
+   "copa": 1785091742012,
+   "euro": 1785091809105
   },
   "ciclo": null,
   "cooldown": {
    "copa": 1785091742012,
    "premier": 1785086799105,
-   "euro": 1785083204699,
+   "euro": 1785091809105,
    "super": 1785086040605
   },
   "dias": {
@@ -306,7 +307,7 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": 0.1
+   "2026-07-26": 1.5
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -317,13 +318,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -36,
-  "ciclos": 469,
-  "greens": 329,
+  "saldo": -35.1,
+  "ciclos": 470,
+  "greens": 330,
   "redsCiclo": 53,
   "aborts": 0,
   "descartes": 87,
   "historico": [
+   {
+    "quando": "2026-07-26T18:49:02.500Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · Áustria x RD Congo @1.93 (tiro 2) · gatilho: time Áustria"
+   },
    {
     "quando": "2026-07-26T18:29:50.605Z",
     "resultado": "GREEN",
@@ -437,62 +444,19 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "euro · Croácia x Albânia @2.2 (tiro 2) · gatilho: coluna :44"
-   },
-   {
-    "quando": "2026-07-26T12:45:51.497Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "copa · Bósnia e Herzegovina x Curação @1.85 (tiro 2) · gatilho: time Brasil"
    }
   ],
   "consumidas": {
    "euro": 1785088549302,
-   "super": 1785090590411
+   "super": 1785090590411,
+   "copa": 1785091742299
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "19:43",
-     "jogo": "Japão x Tunísia",
-     "odd": 2.25
-    },
-    {
-     "h": "19:46",
-     "jogo": "Áustria x RD Congo",
-     "odd": 1.93
-    },
-    {
-     "h": "19:49",
-     "jogo": "Curação x Japão",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "time Áustria",
-   "alvo": {
-    "h": "19:46",
-    "jogo": "Áustria x RD Congo",
-    "odd": 1.93,
-    "unidades": 2,
-    "desde": 1785091610400
-   },
-   "iniciadoEm": 1785091010906,
-   "tiros": [
-    {
-     "h": "19:43",
-     "jogo": "Japão x Tunísia",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785088549302,
    "super": 1785090590411,
    "premier": 1785087705607,
-   "copa": 1785087409408
+   "copa": 1785091742299
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -505,13 +469,13 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": 5.9
+   "2026-07-26": 6.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Suíça",
-   "n": 14,
-   "start": 1
+   "chave": "Turquia",
+   "n": 21,
+   "start": 3
   },
   "_obs": {}
  }
