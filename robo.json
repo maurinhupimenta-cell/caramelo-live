@@ -318,13 +318,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -50,
-  "ciclos": 424,
-  "greens": 293,
+  "saldo": -49,
+  "ciclos": 425,
+  "greens": 294,
   "redsCiclo": 50,
   "aborts": 0,
   "descartes": 81,
   "historico": [
+   {
+    "quando": "2026-07-26T05:43:51.902Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Nova Zelândia x Bélgica @1.98 (tiro 1) · gatilho: time Bélgica"
+   },
    {
     "quando": "2026-07-26T05:02:46.698Z",
     "resultado": "RED_CICLO",
@@ -438,55 +444,20 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: coluna :54"
-   },
-   {
-    "quando": "2026-07-25T21:55:03.002Z",
-    "resultado": "GREEN",
-    "unidades": 0.6,
-    "detalhe": "super · Montevideo x Santiago @1.8 (tiro 2) · gatilho: coluna :52"
    }
   ],
   "consumidas": {
    "super": 1785041163407,
    "euro": 1785041494006,
-   "premier": 1785042166500
+   "premier": 1785042166500,
+   "copa": 1785044631703
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:40",
-     "jogo": "Nova Zelândia x Bélgica",
-     "odd": 1.98
-    },
-    {
-     "h": "06:43",
-     "jogo": "Qatar x Suécia",
-     "odd": 2.15
-    },
-    {
-     "h": "06:46",
-     "jogo": "Noruega x Curação",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "time Bélgica",
-   "alvo": {
-    "h": "06:40",
-    "jogo": "Nova Zelândia x Bélgica",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785044270603
-   },
-   "iniciadoEm": 1785044270603
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785041494006,
    "super": 1785041163407,
    "premier": 1785042166500,
-   "copa": 1785040669899
+   "copa": 1785044631703
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -499,12 +470,12 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": -8.1
+   "2026-07-26": -7.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Bélgica",
-   "n": 8,
+   "tipo": "odd",
+   "chave": "2.15",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
