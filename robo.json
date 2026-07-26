@@ -318,13 +318,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -42,
-  "ciclos": 463,
-  "greens": 323,
+  "saldo": -41.1,
+  "ciclos": 464,
+  "greens": 324,
   "redsCiclo": 53,
   "aborts": 0,
   "descartes": 87,
   "historico": [
+   {
+    "quando": "2026-07-26T16:33:05.407Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Croácia x Escócia @1.93 (tiro 1) · gatilho: placar empate 2-2"
+   },
    {
     "quando": "2026-07-26T16:28:22.698Z",
     "resultado": "GREEN",
@@ -438,51 +444,16 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "copa · México x Colômbia @1.93 (tiro 1) · gatilho: time Turquia"
-   },
-   {
-    "quando": "2026-07-26T10:52:18.600Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: odd 1.85"
    }
   ],
   "consumidas": {
    "super": 1785082200105,
-   "copa": 1785083302407
+   "copa": 1785083302407,
+   "euro": 1785083585300
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:29",
-     "jogo": "Croácia x Escócia",
-     "odd": 1.93
-    },
-    {
-     "h": "17:32",
-     "jogo": "Eslovênia x Portugal",
-     "odd": 2.15
-    },
-    {
-     "h": "17:35",
-     "jogo": "Albânia x França",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "placar empate 2-2",
-   "alvo": {
-    "h": "17:29",
-    "jogo": "Croácia x Escócia",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1785083358000
-   },
-   "iniciadoEm": 1785083358000
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785079201099,
+   "euro": 1785083585300,
    "super": 1785082200105,
    "premier": 1785077623105,
    "copa": 1785083302407
@@ -498,7 +469,7 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": -0.1
+   "2026-07-26": 0.8
   },
   "_gatilhoAtual": {
    "tipo": "placar",
