@@ -285,10 +285,39 @@
    }
   ],
   "consumidas": {
-   "super": 1785047510507,
    "premier": 1785049563010
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:34",
+     "jogo": "RD Congo x Arábia Saudita",
+     "odd": 2.05
+    },
+    {
+     "h": "08:37",
+     "jogo": "Turquia x Áustria",
+     "odd": 2.25
+    },
+    {
+     "h": "08:40",
+     "jogo": "Uzbequistão x Brasil",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "time Turquia",
+   "alvo": {
+    "h": "08:34",
+    "jogo": "RD Congo x Arábia Saudita",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785050755098
+   },
+   "iniciadoEm": 1785050755098
+  },
   "cooldown": {
    "copa": 1785047154305,
    "premier": 1785049563010,
@@ -310,9 +339,9 @@
    "2026-07-26": 6.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":12",
-   "n": 8,
+   "tipo": "time",
+   "chave": "Turquia",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
