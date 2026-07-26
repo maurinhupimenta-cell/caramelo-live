@@ -290,8 +290,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "13:44",
@@ -311,11 +311,11 @@
    ],
    "gatilho": "odd 2.6",
    "alvo": {
-    "h": "13:47",
-    "jogo": "Croácia x Albânia",
-    "odd": 2.6,
-    "unidades": 2,
-    "desde": 1785070017006
+    "h": "13:50",
+    "jogo": "Polônia x Alemanha",
+    "odd": 2.3,
+    "unidades": 4,
+    "desde": 1785070314007
    },
    "iniciadoEm": 1785069477307,
    "tiros": [
@@ -324,6 +324,12 @@
      "jogo": "Países Baixos x Eslováquia",
      "odd": 2.15,
      "unidades": 1
+    },
+    {
+     "h": "13:47",
+     "jogo": "Croácia x Albânia",
+     "odd": 2.6,
+     "unidades": 2
     }
    ]
   },
@@ -491,8 +497,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "13:44",
@@ -512,13 +518,21 @@
    ],
    "gatilho": "coluna :44",
    "alvo": {
-    "h": "13:44",
-    "jogo": "Países Baixos x Eslováquia",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1785069953201
+    "h": "13:47",
+    "jogo": "Croácia x Albânia",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1785070017206
    },
-   "iniciadoEm": 1785069953201
+   "iniciadoEm": 1785069953201,
+   "tiros": [
+    {
+     "h": "13:44",
+     "jogo": "Países Baixos x Eslováquia",
+     "odd": 1.93,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785066236811,
@@ -541,7 +555,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":44",
+   "chave": ":47",
    "n": 13,
    "start": 1
   },
