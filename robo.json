@@ -451,7 +451,37 @@
    "super": 1785097697101,
    "premier": 1785098513308
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:47",
+     "jogo": "Inglaterra x Itália",
+     "odd": 1.93
+    },
+    {
+     "h": "21:50",
+     "jogo": "Suíça x Hungria",
+     "odd": 1.98
+    },
+    {
+     "h": "21:53",
+     "jogo": "Geórgia x França",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "coluna :50",
+   "alvo": {
+    "h": "21:47",
+    "jogo": "Inglaterra x Itália",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1785098576008
+   },
+   "iniciadoEm": 1785098576008
+  },
   "cooldown": {
    "euro": 1785092521099,
    "super": 1785097697101,
@@ -472,10 +502,10 @@
    "2026-07-26": 2.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRRG",
-   "n": 11,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":50",
+   "n": 21,
+   "start": 3
   },
   "_obs": {}
  }
