@@ -449,12 +449,41 @@
    }
   ],
   "consumidas": {
-   "copa": 1785095996110,
    "super": 1785097697101,
    "premier": 1785098513308,
    "euro": 1785098998211
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:07",
+     "jogo": "Nova Zelândia x Suíça",
+     "odd": 1.95
+    },
+    {
+     "h": "22:10",
+     "jogo": "África do Sul x Turquia",
+     "odd": 2.1
+    },
+    {
+     "h": "22:13",
+     "jogo": "RD Congo x Uruguai",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "time Turquia",
+   "alvo": {
+    "h": "22:07",
+    "jogo": "Nova Zelândia x Suíça",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1785099596400
+   },
+   "iniciadoEm": 1785099596400
+  },
   "cooldown": {
    "euro": 1785098998211,
    "super": 1785097697101,
@@ -475,10 +504,10 @@
    "2026-07-26": 3.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":50",
-   "n": 21,
-   "start": 1
+   "tipo": "time",
+   "chave": "Turquia",
+   "n": 23,
+   "start": 3
   },
   "_obs": {}
  }
