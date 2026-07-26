@@ -451,7 +451,37 @@
    "euro": 1785102836808,
    "premier": 1785103726108
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:34",
+     "jogo": "Santos x Sao Paulo",
+     "odd": 1.93
+    },
+    {
+     "h": "23:37",
+     "jogo": "Asuncion x Guayaquil",
+     "odd": 1.9
+    },
+    {
+     "h": "23:40",
+     "jogo": "Medellin x Quito",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "time Guayaquil",
+   "alvo": {
+    "h": "23:34",
+    "jogo": "Santos x Sao Paulo",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1785105035899
+   },
+   "iniciadoEm": 1785105035899
+  },
   "cooldown": {
    "euro": 1785102836808,
    "super": 1785097697101,
@@ -472,16 +502,11 @@
    "2026-07-26": 6.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGGG",
-   "n": 9,
+   "tipo": "time",
+   "chave": "Guayaquil",
+   "n": 31,
    "start": 1
   },
-  "_obs": {
-   "super": {
-    "desde": 1785104875711,
-    "gatilho": "time Guayaquil"
-   }
-  }
+  "_obs": {}
  }
 }
