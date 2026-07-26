@@ -318,13 +318,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -42.5,
-  "ciclos": 462,
-  "greens": 322,
+  "saldo": -42,
+  "ciclos": 463,
+  "greens": 323,
   "redsCiclo": 53,
   "aborts": 0,
   "descartes": 87,
   "historico": [
+   {
+    "quando": "2026-07-26T16:28:22.698Z",
+    "resultado": "GREEN",
+    "unidades": 0.5,
+    "detalhe": "copa · Austrália x Noruega @1.87 (tiro 3) · gatilho: time Turquia"
+   },
    {
     "quando": "2026-07-26T16:10:00.304Z",
     "resultado": "GREEN",
@@ -438,67 +444,18 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros) · gatilho: odd 1.85"
-   },
-   {
-    "quando": "2026-07-26T10:34:57.305Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · Suíça x Eslováquia @1.95 (tiro 1) · gatilho: odd 2.1"
    }
   ],
   "consumidas": {
-   "super": 1785082200105
+   "super": 1785082200105,
+   "copa": 1785083302407
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "17:19",
-     "jogo": "Qatar x Inglaterra",
-     "odd": 1.98
-    },
-    {
-     "h": "17:22",
-     "jogo": "EUA x Turquia",
-     "odd": 2
-    },
-    {
-     "h": "17:25",
-     "jogo": "Austrália x Noruega",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "time Turquia",
-   "alvo": {
-    "h": "17:25",
-    "jogo": "Austrália x Noruega",
-    "odd": 1.87,
-    "unidades": 4,
-    "desde": 1785083101909
-   },
-   "iniciadoEm": 1785082581808,
-   "tiros": [
-    {
-     "h": "17:19",
-     "jogo": "Qatar x Inglaterra",
-     "odd": 1.98,
-     "unidades": 1
-    },
-    {
-     "h": "17:22",
-     "jogo": "EUA x Turquia",
-     "odd": 2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785079201099,
    "super": 1785082200105,
    "premier": 1785077623105,
-   "copa": 1785078979201
+   "copa": 1785083302407
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -511,13 +468,13 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": -0.6
+   "2026-07-26": -0.1
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":23",
+   "chave": ":40",
    "n": 17,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
