@@ -319,13 +319,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -35.7,
-  "ciclos": 483,
-  "greens": 337,
+  "saldo": -34.8,
+  "ciclos": 484,
+  "greens": 338,
   "redsCiclo": 54,
   "aborts": 0,
   "descartes": 92,
   "historico": [
+   {
+    "quando": "2026-07-26T22:41:53.401Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Santos x Sao Paulo @1.93 (tiro 1) · gatilho: time Guayaquil"
+   },
    {
     "quando": "2026-07-26T22:29:54.804Z",
     "resultado": "GREEN_OBS",
@@ -439,52 +445,17 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "super · Belo Horizonte x Quito @1.98 (tiro 3) · gatilho: coluna :22"
-   },
-   {
-    "quando": "2026-07-26T16:33:05.407Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "euro · Croácia x Escócia @1.93 (tiro 1) · gatilho: placar empate 2-2"
    }
   ],
   "consumidas": {
    "euro": 1785102836808,
-   "premier": 1785103726108
+   "premier": 1785103726108,
+   "super": 1785105713206
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:34",
-     "jogo": "Santos x Sao Paulo",
-     "odd": 1.93
-    },
-    {
-     "h": "23:37",
-     "jogo": "Asuncion x Guayaquil",
-     "odd": 1.9
-    },
-    {
-     "h": "23:40",
-     "jogo": "Medellin x Quito",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "time Guayaquil",
-   "alvo": {
-    "h": "23:34",
-    "jogo": "Santos x Sao Paulo",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1785105035899
-   },
-   "iniciadoEm": 1785105035899
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785102836808,
-   "super": 1785097697101,
+   "super": 1785105713206,
    "premier": 1785103726108,
    "copa": 1785100615207
   },
@@ -499,7 +470,7 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": 6.2
+   "2026-07-26": 7.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
