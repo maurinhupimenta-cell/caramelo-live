@@ -157,12 +157,18 @@
  },
  "o25": {
   "saldo": -41.9,
-  "ciclos": 442,
+  "ciclos": 443,
   "greens": 296,
   "redsCiclo": 72,
   "aborts": 0,
-  "descartes": 74,
+  "descartes": 75,
   "historico": [
+   {
+    "quando": "2026-07-26T16:22:42.600Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho seq RGGRR) — liga REARMADA"
+   },
    {
     "quando": "2026-07-26T16:16:21.800Z",
     "resultado": "RED_CICLO",
@@ -276,12 +282,6 @@
     "resultado": "GREEN",
     "unidades": 1.8,
     "detalhe": "super · Buenos Aires x Santos @2.2 (tiro 3) · gatilho: coluna :25"
-   },
-   {
-    "quando": "2026-07-26T10:15:37.104Z",
-    "resultado": "GREEN",
-    "unidades": 2,
-    "detalhe": "copa · Croácia x Alemanha @2.25 (tiro 3) · gatilho: seq RRRRR"
    }
   ],
   "consumidas": {
@@ -315,7 +315,12 @@
    "n": 18,
    "start": 2
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1785082962600,
+    "gatilho": "seq RGGRR"
+   }
+  }
  },
  "ambas": {
   "saldo": -42.5,
