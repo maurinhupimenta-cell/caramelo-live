@@ -288,7 +288,37 @@
    "copa": 1785096793308,
    "super": 1785098564808
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:51",
+     "jogo": "Newcastle x Wolverhampton",
+     "odd": 1.95
+    },
+    {
+     "h": "21:54",
+     "jogo": "Aston x Liverpool",
+     "odd": 2.3
+    },
+    {
+     "h": "21:57",
+     "jogo": "Palace x Brentford",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "seq RRGGG",
+   "alvo": {
+    "h": "21:51",
+    "jogo": "Newcastle x Wolverhampton",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1785098880109
+   },
+   "iniciadoEm": 1785098880109
+  },
   "cooldown": {
    "copa": 1785096793308,
    "premier": 1785086799105,
@@ -311,8 +341,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GGRRR",
-   "n": 16,
+   "chave": "RRGGG",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
@@ -505,7 +535,7 @@
    "tipo": "coluna",
    "chave": ":50",
    "n": 21,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
