@@ -289,7 +289,37 @@
    "copa": 1785060936909,
    "super": 1785061878311
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:54",
+     "jogo": "Tottenham x Norwich",
+     "odd": 2.4
+    },
+    {
+     "h": "11:57",
+     "jogo": "Islington x Southampton",
+     "odd": 2.35
+    },
+    {
+     "h": "12:00",
+     "jogo": "United x Everton",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "coluna :57",
+   "alvo": {
+    "h": "11:54",
+    "jogo": "Tottenham x Norwich",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1785062689000
+   },
+   "iniciadoEm": 1785062689000
+  },
   "cooldown": {
    "copa": 1785060936909,
    "premier": 1785058006199,
@@ -312,9 +342,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":25",
+   "chave": ":57",
    "n": 11,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
@@ -506,7 +536,7 @@
    "tipo": "odd",
    "chave": "1.85",
    "n": 9,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
