@@ -158,13 +158,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -46.6,
-  "ciclos": 406,
-  "greens": 269,
+  "saldo": -45.4,
+  "ciclos": 407,
+  "greens": 270,
   "redsCiclo": 67,
   "aborts": 0,
   "descartes": 70,
   "historico": [
+   {
+    "quando": "2026-07-26T04:17:52.000Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Quito x Montevideo @2.2 (tiro 1) · gatilho: time Porto Alegre"
+   },
    {
     "quando": "2026-07-26T03:57:53.903Z",
     "resultado": "RED_CICLO",
@@ -278,54 +284,19 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho coluna :15) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-25T18:35:25.299Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "euro · Croácia x Sérvia @2.4 (tiro 2) · gatilho: seq RRGRG"
    }
   ],
   "consumidas": {
    "premier": 1785036041702,
-   "copa": 1785038273707
+   "copa": 1785038273707,
+   "super": 1785039471804
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:13",
-     "jogo": "Quito x Montevideo",
-     "odd": 2.2
-    },
-    {
-     "h": "05:16",
-     "jogo": "Porto Alegre x Belo Horizonte",
-     "odd": 2.4
-    },
-    {
-     "h": "05:19",
-     "jogo": "Sao Paulo x Quito",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "time Porto Alegre",
-   "alvo": {
-    "h": "05:13",
-    "jogo": "Quito x Montevideo",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785039113703
-   },
-   "iniciadoEm": 1785039113703
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785038273707,
    "premier": 1785036041702,
    "euro": 1785032630305,
-   "super": 1785035513509
+   "super": 1785039471804
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -339,13 +310,13 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": -4.2
+   "2026-07-26": -3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRG",
-   "n": 8,
-   "start": 1
+   "tipo": "time",
+   "chave": "Porto Alegre",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  },
@@ -483,7 +454,37 @@
    "euro": 1785036541306,
    "premier": 1785037666109
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:28",
+     "jogo": "Porto Alegre x Penarol",
+     "odd": 2.35
+    },
+    {
+     "h": "05:31",
+     "jogo": "Quito x Agua Branca",
+     "odd": 1.93
+    },
+    {
+     "h": "05:34",
+     "jogo": "La Boca x La Plata",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "odd 1.93",
+   "alvo": {
+    "h": "05:28",
+    "jogo": "Porto Alegre x Penarol",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1785039546104
+   },
+   "iniciadoEm": 1785039546104
+  },
   "cooldown": {
    "euro": 1785036541306,
    "super": 1785035813599,
@@ -504,9 +505,9 @@
    "2026-07-26": -4.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Southampton",
-   "n": 8,
+   "tipo": "odd",
+   "chave": "1.93",
+   "n": 12,
    "start": 3
   },
   "_obs": {}
