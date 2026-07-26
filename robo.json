@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -17.4,
-  "ciclos": 427,
-  "greens": 289,
+  "saldo": -15,
+  "ciclos": 428,
+  "greens": 290,
   "redsCiclo": 67,
   "aborts": 0,
   "descartes": 71,
   "historico": [
+   {
+    "quando": "2026-07-26T12:08:39.606Z",
+    "resultado": "GREEN",
+    "unidades": 2.4,
+    "detalhe": "premier · Islington x Aston @2.35 (tiro 3) · gatilho: coluna :03"
+   },
    {
     "quando": "2026-07-26T11:37:18.303Z",
     "resultado": "GREEN",
@@ -276,66 +282,17 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho placar empate 1-1) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-26T04:32:48.198Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "premier · Brentford x City @2.1 (tiro 2) · gatilho: time City"
    }
   ],
   "consumidas": {
    "copa": 1785064935009,
-   "super": 1785065838104
+   "super": 1785065838104,
+   "premier": 1785067719499
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "13:00",
-     "jogo": "Liverpool x Leicester",
-     "odd": 2.25
-    },
-    {
-     "h": "13:03",
-     "jogo": "Brentford x Norwich",
-     "odd": 2.25
-    },
-    {
-     "h": "13:06",
-     "jogo": "Islington x Aston",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "coluna :03",
-   "alvo": {
-    "h": "13:06",
-    "jogo": "Islington x Aston",
-    "odd": 2.35,
-    "unidades": 4,
-    "desde": 1785067546404
-   },
-   "iniciadoEm": 1785067012008,
-   "tiros": [
-    {
-     "h": "13:00",
-     "jogo": "Liverpool x Leicester",
-     "odd": 2.25,
-     "unidades": 1
-    },
-    {
-     "h": "13:03",
-     "jogo": "Brentford x Norwich",
-     "odd": 2.25,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785064935009,
-   "premier": 1785063403307,
+   "premier": 1785067719499,
    "euro": 1785059577108,
    "super": 1785065838104
   },
@@ -351,7 +308,7 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": 25
+   "2026-07-26": 27.4
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
@@ -496,8 +453,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "13:03",
@@ -517,13 +474,21 @@
    ],
    "gatilho": "odd 2.07",
    "alvo": {
-    "h": "13:03",
-    "jogo": "Brentford x Norwich",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1785066842403
+    "h": "13:06",
+    "jogo": "Islington x Aston",
+    "odd": 2.07,
+    "unidades": 2,
+    "desde": 1785067546603
    },
-   "iniciadoEm": 1785066842403
+   "iniciadoEm": 1785066842403,
+   "tiros": [
+    {
+     "h": "13:03",
+     "jogo": "Brentford x Norwich",
+     "odd": 1.95,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785066236811,
@@ -546,8 +511,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.07",
-   "n": 11,
+   "chave": "2.2",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
