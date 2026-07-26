@@ -290,8 +290,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "18:01",
@@ -311,13 +311,21 @@
    ],
    "gatilho": "odd 2.35",
    "alvo": {
-    "h": "18:01",
-    "jogo": "Belo Horizonte x La Boca",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785084740202
+    "h": "18:04",
+    "jogo": "Sao Paulo x La Plata",
+    "odd": 2.35,
+    "unidades": 2,
+    "desde": 1785085491802
    },
-   "iniciadoEm": 1785084740202
+   "iniciadoEm": 1785084740202,
+   "tiros": [
+    {
+     "h": "18:01",
+     "jogo": "Belo Horizonte x La Boca",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785082581510,
@@ -343,7 +351,7 @@
    "tipo": "odd",
    "chave": "2.35",
    "n": 13,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
