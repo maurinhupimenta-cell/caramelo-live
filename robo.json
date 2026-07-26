@@ -344,18 +344,24 @@
    "tipo": "time",
    "chave": "Noruega",
    "n": 16,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -42.7,
-  "ciclos": 452,
+  "ciclos": 453,
   "greens": 315,
   "redsCiclo": 52,
   "aborts": 0,
-  "descartes": 85,
+  "descartes": 86,
   "historico": [
+   {
+    "quando": "2026-07-26T13:41:51.517Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho seq GGGGR) — liga REARMADA"
+   },
    {
     "quando": "2026-07-26T13:29:52.011Z",
     "resultado": "GREEN",
@@ -469,12 +475,6 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "super · Avellaneda x Asuncion @2.05 (tiro 2) · gatilho: coluna :16"
-   },
-   {
-    "quando": "2026-07-26T08:08:42.798Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Southampton x Islington @2 (tiro 1) · gatilho: odd 2.07"
    }
   ],
   "consumidas": {
@@ -482,7 +482,37 @@
    "euro": 1785070314203,
    "super": 1785072591897
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:45",
+     "jogo": "Chelsea x Islington",
+     "odd": 1.93
+    },
+    {
+     "h": "14:48",
+     "jogo": "Palace x Brentford",
+     "odd": 1.98
+    },
+    {
+     "h": "14:51",
+     "jogo": "Watford x City",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "seq GGGGR",
+   "alvo": {
+    "h": "14:45",
+    "jogo": "Chelsea x Islington",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1785073313101
+   },
+   "iniciadoEm": 1785073313101
+  },
   "cooldown": {
    "euro": 1785070314203,
    "super": 1785072591897,
@@ -503,10 +533,10 @@
    "2026-07-26": -0.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.25",
-   "n": 8,
-   "start": 3
+   "tipo": "seq",
+   "chave": "GGGGR",
+   "n": 9,
+   "start": 1
   },
   "_obs": {}
  }
