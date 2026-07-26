@@ -319,13 +319,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -38.5,
-  "ciclos": 475,
-  "greens": 334,
+  "saldo": -37.9,
+  "ciclos": 476,
+  "greens": 335,
   "redsCiclo": 54,
   "aborts": 0,
   "descartes": 87,
   "historico": [
+   {
+    "quando": "2026-07-26T21:16:55.401Z",
+    "resultado": "GREEN",
+    "unidades": 0.6,
+    "detalhe": "copa · RD Congo x Uruguai @1.9 (tiro 3) · gatilho: time Turquia"
+   },
    {
     "quando": "2026-07-26T20:49:58.404Z",
     "resultado": "GREEN",
@@ -439,69 +445,20 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "super · Bogota x Medellin @2.2 (tiro 2) · gatilho: odd 2.2"
-   },
-   {
-    "quando": "2026-07-26T14:17:52.902Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · República Tcheca x Romênia @2.05 (tiro 1) · gatilho: odd 1.95"
    }
   ],
   "consumidas": {
    "super": 1785097697101,
    "premier": 1785098513308,
-   "euro": 1785098998211
+   "euro": 1785098998211,
+   "copa": 1785100615207
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "22:07",
-     "jogo": "Nova Zelândia x Suíça",
-     "odd": 1.95
-    },
-    {
-     "h": "22:10",
-     "jogo": "África do Sul x Turquia",
-     "odd": 2.1
-    },
-    {
-     "h": "22:13",
-     "jogo": "RD Congo x Uruguai",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "time Turquia",
-   "alvo": {
-    "h": "22:13",
-    "jogo": "RD Congo x Uruguai",
-    "odd": 1.9,
-    "unidades": 4,
-    "desde": 1785100374299
-   },
-   "iniciadoEm": 1785099596400,
-   "tiros": [
-    {
-     "h": "22:07",
-     "jogo": "Nova Zelândia x Suíça",
-     "odd": 1.95,
-     "unidades": 1
-    },
-    {
-     "h": "22:10",
-     "jogo": "África do Sul x Turquia",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785098998211,
    "super": 1785097697101,
    "premier": 1785098513308,
-   "copa": 1785095996110
+   "copa": 1785100615207
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -514,13 +471,13 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": 3.4
+   "2026-07-26": 4
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Costa do Marfim",
    "n": 10,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
