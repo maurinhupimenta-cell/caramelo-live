@@ -289,8 +289,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "08:34",
@@ -310,13 +310,21 @@
    ],
    "gatilho": "time Turquia",
    "alvo": {
-    "h": "08:34",
-    "jogo": "RD Congo x Arábia Saudita",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785050755098
+    "h": "08:37",
+    "jogo": "Turquia x Áustria",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1785051455803
    },
-   "iniciadoEm": 1785050755098
+   "iniciadoEm": 1785050755098,
+   "tiros": [
+    {
+     "h": "08:34",
+     "jogo": "RD Congo x Arábia Saudita",
+     "odd": 2.05,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785047154305,
@@ -342,7 +350,7 @@
    "tipo": "time",
    "chave": "Turquia",
    "n": 9,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
