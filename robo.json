@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -34.9,
-  "ciclos": 441,
+  "saldo": -41.9,
+  "ciclos": 442,
   "greens": 296,
-  "redsCiclo": 71,
+  "redsCiclo": 72,
   "aborts": 0,
   "descartes": 74,
   "historico": [
+   {
+    "quando": "2026-07-26T16:16:21.800Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: seq RRGG"
+   },
    {
     "quando": "2026-07-26T15:25:02.999Z",
     "resultado": "GREEN",
@@ -276,64 +282,15 @@
     "resultado": "GREEN",
     "unidades": 2,
     "detalhe": "copa · Croácia x Alemanha @2.25 (tiro 3) · gatilho: seq RRRRR"
-   },
-   {
-    "quando": "2026-07-26T09:52:57.302Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "euro · Romênia x Portugal @2.15 (tiro 1) · gatilho: seq RGGRR"
    }
   ],
   "consumidas": {
-   "super": 1785079502803
+   "super": 1785079502803,
+   "copa": 1785082581510
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "17:07",
-     "jogo": "Cabo Verde x Curação",
-     "odd": 2.1
-    },
-    {
-     "h": "17:10",
-     "jogo": "Paraguai x Panamá",
-     "odd": 2.5
-    },
-    {
-     "h": "17:13",
-     "jogo": "Gana x Haiti",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "seq RRGG",
-   "alvo": {
-    "h": "17:13",
-    "jogo": "Gana x Haiti",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1785082507709
-   },
-   "iniciadoEm": 1785081839804,
-   "tiros": [
-    {
-     "h": "17:07",
-     "jogo": "Cabo Verde x Curação",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "17:10",
-     "jogo": "Paraguai x Panamá",
-     "odd": 2.5,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785078061111,
+   "copa": 1785082581510,
    "premier": 1785078517704,
    "euro": 1785075529697,
    "super": 1785079502803
@@ -350,13 +307,13 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": 7.5
+   "2026-07-26": 0.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Noruega",
    "n": 18,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
