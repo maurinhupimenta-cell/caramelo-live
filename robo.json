@@ -362,13 +362,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -38.9,
-  "ciclos": 439,
-  "greens": 305,
+  "saldo": -38,
+  "ciclos": 440,
+  "greens": 306,
   "redsCiclo": 50,
   "aborts": 0,
   "descartes": 84,
   "historico": [
+   {
+    "quando": "2026-07-26T09:26:37.300Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Países Baixos x Portugal @1.85 (tiro 1) · gatilho: time Turquia"
+   },
    {
     "quando": "2026-07-26T09:25:37.908Z",
     "resultado": "GREEN",
@@ -482,21 +488,16 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "super · Buenos Aires x La Plata @2.02 (tiro 2) · gatilho: time La Plata"
-   },
-   {
-    "quando": "2026-07-26T04:37:50.100Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Iraque x Austrália @2.05 (tiro 1) · gatilho: odd 2.05"
    }
   ],
   "consumidas": {
    "copa": 1785055695005,
-   "super": 1785057937799
+   "super": 1785057937799,
+   "euro": 1785057997101
   },
   "ciclo": null,
   "cooldown": {
-   "euro": 1785054357006,
+   "euro": 1785057997101,
    "super": 1785057937799,
    "premier": 1785053322602,
    "copa": 1785055695005
@@ -512,12 +513,12 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": 3
+   "2026-07-26": 3.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":25",
-   "n": 10,
+   "tipo": "time",
+   "chave": "Turquia",
+   "n": 18,
    "start": 1
   },
   "_obs": {}
