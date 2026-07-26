@@ -284,7 +284,6 @@
    }
   ],
   "consumidas": {
-   "premier": 1785031719811,
    "euro": 1785032630305,
    "copa": 1785033651812
   },
@@ -478,7 +477,37 @@
   "consumidas": {
    "premier": 1785032260707
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:07",
+     "jogo": "Itaquera x Buenos Aires",
+     "odd": 1.87
+    },
+    {
+     "h": "04:10",
+     "jogo": "Bogota x Asuncion",
+     "odd": 2.2
+    },
+    {
+     "h": "04:13",
+     "jogo": "Lima x Avellaneda",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "time Asuncion",
+   "alvo": {
+    "h": "04:07",
+    "jogo": "Itaquera x Buenos Aires",
+    "odd": 1.87,
+    "unidades": 1,
+    "desde": 1785035083501
+   },
+   "iniciadoEm": 1785035083501
+  },
   "cooldown": {
    "euro": 1785009385398,
    "super": 1785031431309,
@@ -498,10 +527,10 @@
    "2026-07-25": 10.5
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 8,
-   "start": 1
+   "tipo": "time",
+   "chave": "Asuncion",
+   "n": 11,
+   "start": 2
   },
   "_obs": {}
  }
