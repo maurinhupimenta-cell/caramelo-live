@@ -447,12 +447,41 @@
    }
   ],
   "consumidas": {
-   "copa": 1785040669899,
    "super": 1785041163407,
    "euro": 1785041494006,
    "premier": 1785042166500
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:40",
+     "jogo": "Nova Zelândia x Bélgica",
+     "odd": 1.98
+    },
+    {
+     "h": "06:43",
+     "jogo": "Qatar x Suécia",
+     "odd": 2.15
+    },
+    {
+     "h": "06:46",
+     "jogo": "Noruega x Curação",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "time Bélgica",
+   "alvo": {
+    "h": "06:40",
+    "jogo": "Nova Zelândia x Bélgica",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785044270603
+   },
+   "iniciadoEm": 1785044270603
+  },
   "cooldown": {
    "euro": 1785041494006,
    "super": 1785041163407,
@@ -474,8 +503,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Brighton",
-   "n": 9,
+   "chave": "Bélgica",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
