@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -30.2,
-  "ciclos": 419,
-  "greens": 281,
+  "saldo": -28.8,
+  "ciclos": 420,
+  "greens": 282,
   "redsCiclo": 67,
   "aborts": 0,
   "descartes": 71,
   "historico": [
+   {
+    "quando": "2026-07-26T09:10:37.905Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "super · Belo Horizonte x Santos @2.2 (tiro 2) · gatilho: seq GGRRR"
+   },
    {
     "quando": "2026-07-26T08:48:15.002Z",
     "resultado": "GREEN",
@@ -276,62 +282,19 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "premier · Islington x Brighton @2.07 (tiro 1) · gatilho: placar 1-0 / 0-1"
-   },
-   {
-    "quando": "2026-07-26T02:02:43.902Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho placar 1-0 / 0-1) — liga REARMADA"
    }
   ],
   "consumidas": {
    "premier": 1785053503205,
-   "copa": 1785055694806
+   "copa": 1785055694806,
+   "super": 1785057037700
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "10:04",
-     "jogo": "Medellin x Guayaquil",
-     "odd": 2.25
-    },
-    {
-     "h": "10:07",
-     "jogo": "Belo Horizonte x Santos",
-     "odd": 2.2
-    },
-    {
-     "h": "10:10",
-     "jogo": "La Plata x La Boca",
-     "odd": 2.7
-    }
-   ],
-   "gatilho": "seq GGRRR",
-   "alvo": {
-    "h": "10:07",
-    "jogo": "Belo Horizonte x Santos",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1785056818105
-   },
-   "iniciadoEm": 1785056557806,
-   "tiros": [
-    {
-     "h": "10:04",
-     "jogo": "Medellin x Guayaquil",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785055694806,
    "premier": 1785053503205,
    "euro": 1785032630305,
-   "super": 1785052317700
+   "super": 1785057037700
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -345,7 +308,7 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": 12.2
+   "2026-07-26": 13.6
   },
   "_gatilhoAtual": {
    "tipo": "seq",
