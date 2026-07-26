@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -154.3,
-  "ciclos": 175,
+  "saldo": -161.3,
+  "ciclos": 176,
   "greens": 60,
-  "redsCiclo": 75,
+  "redsCiclo": 76,
   "aborts": 0,
   "descartes": 40,
   "historico": [
+   {
+    "quando": "2026-07-26T03:57:53.403Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: odd 4.2"
+   },
    {
     "quando": "2026-07-25T21:23:46.598Z",
     "resultado": "RED_CICLO",
@@ -120,62 +126,14 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
-   },
-   {
-    "quando": "2026-07-21T15:58:12.949Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:46",
-     "jogo": "República Tcheca x Senegal",
-     "odd": 5.5
-    },
-    {
-     "h": "04:49",
-     "jogo": "Colômbia x Nova Zelândia",
-     "odd": 4.2
-    },
-    {
-     "h": "04:52",
-     "jogo": "Portugal x Bélgica",
-     "odd": 4.33
-    }
-   ],
-   "gatilho": "odd 4.2",
-   "alvo": {
-    "h": "04:52",
-    "jogo": "Portugal x Bélgica",
-    "odd": 4.33,
-    "unidades": 4,
-    "desde": 1785037971408
-   },
-   "iniciadoEm": 1785037021606,
-   "tiros": [
-    {
-     "h": "04:46",
-     "jogo": "República Tcheca x Senegal",
-     "odd": 5.5,
-     "unidades": 1
-    },
-    {
-     "h": "04:49",
-     "jogo": "Colômbia x Nova Zelândia",
-     "odd": 4.2,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "copa": 1785038273206
   },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1784952406602,
+   "copa": 1785038273206,
    "premier": 1785014626400,
    "euro": 1784650513155,
    "super": 1784965764803
@@ -188,13 +146,14 @@
    "2026-07-20": 19.6,
    "2026-07-21": -96.4,
    "2026-07-22": -7,
-   "2026-07-25": 6.8
+   "2026-07-25": 6.8,
+   "2026-07-26": -7
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "4.2",
    "n": 9,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
@@ -333,8 +292,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "04:46",
@@ -354,11 +313,11 @@
    ],
    "gatilho": "odd 2.2",
    "alvo": {
-    "h": "04:49",
-    "jogo": "Colômbia x Nova Zelândia",
+    "h": "04:52",
+    "jogo": "Portugal x Bélgica",
     "odd": 2.2,
-    "unidades": 2,
-    "desde": 1785037727301
+    "unidades": 4,
+    "desde": 1785037971607
    },
    "iniciadoEm": 1785037259909,
    "tiros": [
@@ -367,6 +326,12 @@
      "jogo": "República Tcheca x Senegal",
      "odd": 2.55,
      "unidades": 1
+    },
+    {
+     "h": "04:49",
+     "jogo": "Colômbia x Nova Zelândia",
+     "odd": 2.2,
+     "unidades": 2
     }
    ]
   },
@@ -392,8 +357,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGRR",
-   "n": 11,
+   "chave": "GRRR",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
