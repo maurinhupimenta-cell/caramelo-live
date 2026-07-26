@@ -452,7 +452,37 @@
    "super": 1785053958002,
    "euro": 1785054357006
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:37",
+     "jogo": "Uruguai x Áustria",
+     "odd": 1.93
+    },
+    {
+     "h": "09:40",
+     "jogo": "Noruega x Suécia",
+     "odd": 2.07
+    },
+    {
+     "h": "09:43",
+     "jogo": "Uruguai x Haiti",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "coluna :40",
+   "alvo": {
+    "h": "09:37",
+    "jogo": "Uruguai x Áustria",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1785054495100
+   },
+   "iniciadoEm": 1785054495100
+  },
   "cooldown": {
    "euro": 1785054357006,
    "super": 1785053958002,
@@ -473,10 +503,10 @@
    "2026-07-26": 0.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.9",
+   "tipo": "coluna",
+   "chave": ":40",
    "n": 9,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
