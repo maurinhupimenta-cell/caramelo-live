@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -48.4,
-  "ciclos": 460,
-  "greens": 305,
+  "saldo": -46.9,
+  "ciclos": 461,
+  "greens": 306,
   "redsCiclo": 75,
   "aborts": 0,
   "descartes": 80,
   "historico": [
+   {
+    "quando": "2026-07-26T22:26:43.005Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "premier · West Ham x Norwich @2.45 (tiro 1) · gatilho: seq GGRGG"
+   },
    {
     "quando": "2026-07-26T22:03:54.205Z",
     "resultado": "GREEN",
@@ -276,52 +282,17 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: seq RRGG"
-   },
-   {
-    "quando": "2026-07-26T15:25:02.999Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "super · Bogota x Itaquera @2.55 (tiro 1) · gatilho: coluna :25"
    }
   ],
   "consumidas": {
    "super": 1785102718498,
-   "copa": 1785103434100
+   "copa": 1785103434100,
+   "premier": 1785104802808
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:24",
-     "jogo": "West Ham x Norwich",
-     "odd": 2.45
-    },
-    {
-     "h": "23:27",
-     "jogo": "Leeds x Southampton",
-     "odd": 2.62
-    },
-    {
-     "h": "23:30",
-     "jogo": "Watford x Leicester",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "seq GGRGG",
-   "alvo": {
-    "h": "23:24",
-    "jogo": "West Ham x Norwich",
-    "odd": 2.45,
-    "unidades": 1,
-    "desde": 1785104438712
-   },
-   "iniciadoEm": 1785104438712
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785103434100,
-   "premier": 1785099297011,
+   "premier": 1785104802808,
    "euro": 1785099538502,
    "super": 1785102718498
   },
@@ -337,7 +308,7 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": -6
+   "2026-07-26": -4.5
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -531,10 +502,10 @@
    "2026-07-26": 6.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Turquia",
-   "n": 25,
-   "start": 3
+   "tipo": "seq",
+   "chave": "GRGGG",
+   "n": 9,
+   "start": 1
   },
   "_obs": {}
  }
