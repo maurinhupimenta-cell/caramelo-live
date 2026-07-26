@@ -343,18 +343,24 @@
    "tipo": "time",
    "chave": "Áustria",
    "n": 16,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -46.3,
-  "ciclos": 457,
-  "greens": 318,
+  "saldo": -45.4,
+  "ciclos": 458,
+  "greens": 319,
   "redsCiclo": 53,
   "aborts": 0,
   "descartes": 86,
   "historico": [
+   {
+    "quando": "2026-07-26T14:53:43.304Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Brighton x Southampton @1.93 (tiro 1) · gatilho: seq GGGGG"
+   },
    {
     "quando": "2026-07-26T14:46:02.706Z",
     "resultado": "GREEN",
@@ -468,54 +474,19 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "super · Porto Alegre x Guayaquil @2.1 (tiro 1) · gatilho: coluna :22"
-   },
-   {
-    "quando": "2026-07-26T08:48:15.206Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "copa · Noruega x Suécia @2.07 (tiro 2) · gatilho: time Áustria"
    }
   ],
   "consumidas": {
    "copa": 1785075052197,
    "euro": 1785075472403,
-   "super": 1785077162512
+   "super": 1785077162512,
+   "premier": 1785077623105
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:51",
-     "jogo": "Brighton x Southampton",
-     "odd": 1.93
-    },
-    {
-     "h": "15:54",
-     "jogo": "Islington x Tottenham",
-     "odd": 2.07
-    },
-    {
-     "h": "15:57",
-     "jogo": "Wolverhampton x Brentford",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "seq GGGGG",
-   "alvo": {
-    "h": "15:51",
-    "jogo": "Brighton x Southampton",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1785077439708
-   },
-   "iniciadoEm": 1785077439708
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785075472403,
    "super": 1785077162512,
-   "premier": 1785073838198,
+   "premier": 1785077623105,
    "copa": 1785075052197
   },
   "dias": {
@@ -529,7 +500,7 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": -4.4
+   "2026-07-26": -3.5
   },
   "_gatilhoAtual": {
    "tipo": "seq",
