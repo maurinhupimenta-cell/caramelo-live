@@ -290,8 +290,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "13:00",
@@ -311,13 +311,21 @@
    ],
    "gatilho": "coluna :03",
    "alvo": {
-    "h": "13:00",
-    "jogo": "Liverpool x Leicester",
+    "h": "13:03",
+    "jogo": "Brentford x Norwich",
     "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785067012008
+    "unidades": 2,
+    "desde": 1785067363901
    },
-   "iniciadoEm": 1785067012008
+   "iniciadoEm": 1785067012008,
+   "tiros": [
+    {
+     "h": "13:00",
+     "jogo": "Liverpool x Leicester",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785064935009,
@@ -534,13 +542,8 @@
    "tipo": "odd",
    "chave": "2.07",
    "n": 11,
-   "start": 2
+   "start": 1
   },
-  "_obs": {
-   "super": {
-    "desde": 1785067095699,
-    "gatilho": "odd 2.2"
-   }
-  }
+  "_obs": {}
  }
 }
