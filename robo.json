@@ -289,8 +289,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "17:07",
@@ -310,11 +310,11 @@
    ],
    "gatilho": "seq RRGG",
    "alvo": {
-    "h": "17:10",
-    "jogo": "Paraguai x Panamá",
-    "odd": 2.5,
-    "unidades": 2,
-    "desde": 1785082179711
+    "h": "17:13",
+    "jogo": "Gana x Haiti",
+    "odd": 2.25,
+    "unidades": 4,
+    "desde": 1785082507709
    },
    "iniciadoEm": 1785081839804,
    "tiros": [
@@ -323,6 +323,12 @@
      "jogo": "Cabo Verde x Curação",
      "odd": 2.1,
      "unidades": 1
+    },
+    {
+     "h": "17:10",
+     "jogo": "Paraguai x Panamá",
+     "odd": 2.5,
+     "unidades": 2
     }
    ]
   },
@@ -347,10 +353,10 @@
    "2026-07-26": 7.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGG",
-   "n": 19,
-   "start": 1
+   "tipo": "time",
+   "chave": "Noruega",
+   "n": 18,
+   "start": 3
   },
   "_obs": {}
  },
