@@ -343,18 +343,24 @@
    "tipo": "odd",
    "chave": "2.3",
    "n": 11,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -47.5,
-  "ciclos": 428,
-  "greens": 296,
+  "saldo": -47.2,
+  "ciclos": 429,
+  "greens": 297,
   "redsCiclo": 50,
   "aborts": 0,
   "descartes": 82,
   "historico": [
+   {
+    "quando": "2026-07-26T06:14:48.702Z",
+    "resultado": "GREEN",
+    "unidades": 0.3,
+    "detalhe": "premier · Norwich x Newcastle @1.83 (tiro 3) · gatilho: seq RRGG"
+   },
    {
     "quando": "2026-07-26T06:02:54.608Z",
     "resultado": "GREEN_OBS",
@@ -468,68 +474,19 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "copa · Tunísia x Coreia do Sul @2.25 (tiro 1) · gatilho: placar goleada (3+)"
-   },
-   {
-    "quando": "2026-07-26T01:51:50.006Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho placar goleada (3+)) — liga REARMADA"
    }
   ],
   "consumidas": {
    "copa": 1785044631703,
    "super": 1785044989406,
-   "euro": 1785045560700
+   "euro": 1785045560700,
+   "premier": 1785046488505
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "07:06",
-     "jogo": "Palace x West Ham",
-     "odd": 2.1
-    },
-    {
-     "h": "07:09",
-     "jogo": "Islington x Wolverhampton",
-     "odd": 1.86
-    },
-    {
-     "h": "07:12",
-     "jogo": "Norwich x Newcastle",
-     "odd": 1.83
-    }
-   ],
-   "gatilho": "seq RRGG",
-   "alvo": {
-    "h": "07:12",
-    "jogo": "Norwich x Newcastle",
-    "odd": 1.83,
-    "unidades": 4,
-    "desde": 1785046308799
-   },
-   "iniciadoEm": 1785045782707,
-   "tiros": [
-    {
-     "h": "07:06",
-     "jogo": "Palace x West Ham",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "07:09",
-     "jogo": "Islington x Wolverhampton",
-     "odd": 1.86,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785045560700,
    "super": 1785044989406,
-   "premier": 1785042166500,
+   "premier": 1785046488505,
    "copa": 1785044631703
   },
   "dias": {
@@ -543,7 +500,7 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": -5.6
+   "2026-07-26": -5.3
   },
   "_gatilhoAtual": {
    "tipo": "seq",
