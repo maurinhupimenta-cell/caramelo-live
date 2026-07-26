@@ -288,7 +288,37 @@
    "copa": 1785064935009,
    "super": 1785065838104
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:00",
+     "jogo": "Liverpool x Leicester",
+     "odd": 2.25
+    },
+    {
+     "h": "13:03",
+     "jogo": "Brentford x Norwich",
+     "odd": 2.25
+    },
+    {
+     "h": "13:06",
+     "jogo": "Islington x Aston",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "coluna :03",
+   "alvo": {
+    "h": "13:00",
+    "jogo": "Liverpool x Leicester",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785067012008
+   },
+   "iniciadoEm": 1785067012008
+  },
   "cooldown": {
    "copa": 1785064935009,
    "premier": 1785063403307,
@@ -310,21 +340,27 @@
    "2026-07-26": 25
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.35",
-   "n": 8,
+   "tipo": "coluna",
+   "chave": ":03",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -39.7,
-  "ciclos": 446,
+  "ciclos": 447,
   "greens": 311,
   "redsCiclo": 51,
   "aborts": 0,
-  "descartes": 84,
+  "descartes": 85,
   "historico": [
+   {
+    "quando": "2026-07-26T11:58:15.699Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho odd 2.2) — liga REARMADA"
+   },
    {
     "quando": "2026-07-26T11:43:57.098Z",
     "resultado": "GREEN",
@@ -438,12 +474,6 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho seq RRGG) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-26T05:59:20.806Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "euro · Inglaterra x Itália @1.93 (tiro 3) · gatilho: seq RRGG"
    }
   ],
   "consumidas": {
@@ -506,6 +536,11 @@
    "n": 11,
    "start": 2
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1785067095699,
+    "gatilho": "odd 2.2"
+   }
+  }
  }
 }
