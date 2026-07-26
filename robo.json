@@ -451,7 +451,37 @@
    "copa": 1785036121601,
    "euro": 1785036541306
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:39",
+     "jogo": "Leeds x Tottenham",
+     "odd": 2.25
+    },
+    {
+     "h": "04:42",
+     "jogo": "Islington x Southampton",
+     "odd": 2.05
+    },
+    {
+     "h": "04:45",
+     "jogo": "Aston x United",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "time Southampton",
+   "alvo": {
+    "h": "04:39",
+    "jogo": "Leeds x Tottenham",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785036590304
+   },
+   "iniciadoEm": 1785036590304
+  },
   "cooldown": {
    "euro": 1785036541306,
    "super": 1785035813599,
@@ -473,9 +503,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Turquia",
+   "chave": "Southampton",
    "n": 8,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
