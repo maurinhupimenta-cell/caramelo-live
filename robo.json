@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -15,
-  "ciclos": 428,
+  "saldo": -22,
+  "ciclos": 429,
   "greens": 290,
-  "redsCiclo": 67,
+  "redsCiclo": 68,
   "aborts": 0,
   "descartes": 71,
   "historico": [
+   {
+    "quando": "2026-07-26T12:33:55.798Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: odd 2.1"
+   },
    {
     "quando": "2026-07-26T12:08:39.606Z",
     "resultado": "GREEN",
@@ -276,65 +282,16 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "copa · Marrocos x Haiti @2.2 (tiro 1) · gatilho: placar empate 1-1"
-   },
-   {
-    "quando": "2026-07-26T04:58:20.802Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho placar empate 1-1) — liga REARMADA"
    }
   ],
   "consumidas": {
    "super": 1785065838104,
-   "premier": 1785067719499
+   "premier": 1785067719499,
+   "copa": 1785069235602
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "13:25",
-     "jogo": "Iraque x RD Congo",
-     "odd": 2.3
-    },
-    {
-     "h": "13:28",
-     "jogo": "Nova Zelândia x Equador",
-     "odd": 2.1
-    },
-    {
-     "h": "13:31",
-     "jogo": "Paraguai x Suécia",
-     "odd": 2.7
-    }
-   ],
-   "gatilho": "odd 2.1",
-   "alvo": {
-    "h": "13:31",
-    "jogo": "Paraguai x Suécia",
-    "odd": 2.7,
-    "unidades": 4,
-    "desde": 1785069054909
-   },
-   "iniciadoEm": 1785068536907,
-   "tiros": [
-    {
-     "h": "13:25",
-     "jogo": "Iraque x RD Congo",
-     "odd": 2.3,
-     "unidades": 1
-    },
-    {
-     "h": "13:28",
-     "jogo": "Nova Zelândia x Equador",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785064935009,
+   "copa": 1785069235602,
    "premier": 1785067719499,
    "euro": 1785059577108,
    "super": 1785065838104
@@ -351,7 +308,7 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": 27.4
+   "2026-07-26": 20.4
   },
   "_gatilhoAtual": {
    "tipo": "odd",
