@@ -319,13 +319,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -43.2,
-  "ciclos": 433,
-  "greens": 301,
+  "saldo": -42.1,
+  "ciclos": 434,
+  "greens": 302,
   "redsCiclo": 50,
   "aborts": 0,
   "descartes": 82,
   "historico": [
+   {
+    "quando": "2026-07-26T08:19:18.205Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Avellaneda x Asuncion @2.05 (tiro 2) · gatilho: coluna :16"
+   },
    {
     "quando": "2026-07-26T08:08:42.798Z",
     "resultado": "GREEN",
@@ -439,60 +445,17 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · Canadá x Argentina @1.95 (tiro 1) · gatilho: placar empate 1-1"
-   },
-   {
-    "quando": "2026-07-26T03:16:53.705Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "super · Lima x Avellaneda @1.93 (tiro 3) · gatilho: time Asuncion"
    }
   ],
   "consumidas": {
    "copa": 1785050715199,
-   "premier": 1785053322602
+   "premier": 1785053322602,
+   "super": 1785053958002
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "09:13",
-     "jogo": "Bogota x Itaquera",
-     "odd": 2.15
-    },
-    {
-     "h": "09:16",
-     "jogo": "Avellaneda x Asuncion",
-     "odd": 2.05
-    },
-    {
-     "h": "09:19",
-     "jogo": "Quito x Lima",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "coluna :16",
-   "alvo": {
-    "h": "09:16",
-    "jogo": "Avellaneda x Asuncion",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1785053757405
-   },
-   "iniciadoEm": 1785053324408,
-   "tiros": [
-    {
-     "h": "09:13",
-     "jogo": "Bogota x Itaquera",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785050037009,
-   "super": 1785049458100,
+   "super": 1785053958002,
    "premier": 1785053322602,
    "copa": 1785050715199
   },
@@ -507,13 +470,13 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": -1.3
+   "2026-07-26": -0.2
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":19",
+   "tipo": "odd",
+   "chave": "1.9",
    "n": 9,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
