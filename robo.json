@@ -343,18 +343,24 @@
    "tipo": "odd",
    "chave": "2.15",
    "n": 13,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -41.1,
-  "ciclos": 436,
+  "ciclos": 437,
   "greens": 303,
   "redsCiclo": 50,
   "aborts": 0,
-  "descartes": 83,
+  "descartes": 84,
   "historico": [
+   {
+    "quando": "2026-07-26T08:43:17.598Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Áustria) — liga REARMADA"
+   },
    {
     "quando": "2026-07-26T08:43:15.505Z",
     "resultado": "DESCARTADO",
@@ -468,12 +474,6 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-26T03:47:46.305Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: time Southampton"
    }
   ],
   "consumidas": {
@@ -483,8 +483,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "09:37",
@@ -502,15 +502,23 @@
      "odd": 1.98
     }
    ],
-   "gatilho": "coluna :40",
+   "gatilho": "time Áustria",
    "alvo": {
-    "h": "09:37",
-    "jogo": "Uruguai x Áustria",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1785054495100
+    "h": "09:40",
+    "jogo": "Noruega x Suécia",
+    "odd": 2.07,
+    "unidades": 2,
+    "desde": 1785055615200
    },
-   "iniciadoEm": 1785054495100
+   "iniciadoEm": 1785055398310,
+   "tiros": [
+    {
+     "h": "09:37",
+     "jogo": "Uruguai x Áustria",
+     "odd": 1.93,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785054357006,
@@ -533,9 +541,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Áustria",
-   "n": 10,
-   "start": 1
+   "chave": "Suíça",
+   "n": 9,
+   "start": 3
   },
   "_obs": {}
  }
