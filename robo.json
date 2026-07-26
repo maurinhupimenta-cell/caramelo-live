@@ -288,7 +288,37 @@
    "copa": 1785042240506,
    "super": 1785043173008
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:57",
+     "jogo": "Tottenham x West Ham",
+     "odd": 2.8
+    },
+    {
+     "h": "07:00",
+     "jogo": "Liverpool x Chelsea",
+     "odd": 2.2
+    },
+    {
+     "h": "07:03",
+     "jogo": "Newcastle x Islington",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "seq GGRR",
+   "alvo": {
+    "h": "06:57",
+    "jogo": "Tottenham x West Ham",
+    "odd": 2.8,
+    "unidades": 1,
+    "desde": 1785045267906
+   },
+   "iniciadoEm": 1785045267906
+  },
   "cooldown": {
    "copa": 1785042240506,
    "premier": 1785040368000,
@@ -311,7 +341,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRG",
+   "chave": "GGRR",
    "n": 9,
    "start": 1
   },
