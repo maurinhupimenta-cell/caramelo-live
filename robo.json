@@ -319,13 +319,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -42.1,
-  "ciclos": 434,
-  "greens": 302,
+  "saldo": -41.1,
+  "ciclos": 435,
+  "greens": 303,
   "redsCiclo": 50,
   "aborts": 0,
   "descartes": 82,
   "historico": [
+   {
+    "quando": "2026-07-26T08:25:57.204Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Dinamarca x Bélgica @1.98 (tiro 1) · gatilho: odd 1.9"
+   },
    {
     "quando": "2026-07-26T08:19:18.205Z",
     "resultado": "GREEN",
@@ -439,51 +445,16 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "euro · Romênia x Polônia @2.02 (tiro 3) · gatilho: time Turquia"
-   },
-   {
-    "quando": "2026-07-26T03:22:01.799Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Canadá x Argentina @1.95 (tiro 1) · gatilho: placar empate 1-1"
    }
   ],
   "consumidas": {
    "premier": 1785053322602,
-   "super": 1785053958002
+   "super": 1785053958002,
+   "euro": 1785054357006
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "09:23",
-     "jogo": "Dinamarca x Bélgica",
-     "odd": 1.98
-    },
-    {
-     "h": "09:26",
-     "jogo": "Escócia x Romênia",
-     "odd": 1.9
-    },
-    {
-     "h": "09:29",
-     "jogo": "Itália x Eslovênia",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "odd 1.9",
-   "alvo": {
-    "h": "09:23",
-    "jogo": "Dinamarca x Bélgica",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785053960202
-   },
-   "iniciadoEm": 1785053960202
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785050037009,
+   "euro": 1785054357006,
    "super": 1785053958002,
    "premier": 1785053322602,
    "copa": 1785050715199
@@ -499,7 +470,7 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": -0.2
+   "2026-07-26": 0.8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
