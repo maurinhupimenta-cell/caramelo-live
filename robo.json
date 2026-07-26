@@ -355,13 +355,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -43.5,
-  "ciclos": 461,
-  "greens": 321,
+  "saldo": -42.5,
+  "ciclos": 462,
+  "greens": 322,
   "redsCiclo": 53,
   "aborts": 0,
   "descartes": 87,
   "historico": [
+   {
+    "quando": "2026-07-26T16:10:00.304Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Itaquera x Guayaquil @1.95 (tiro 1) · gatilho: odd 2.25"
+   },
    {
     "quando": "2026-07-26T15:20:01.299Z",
     "resultado": "GREEN",
@@ -475,52 +481,17 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · Suíça x Eslováquia @1.95 (tiro 1) · gatilho: odd 2.1"
-   },
-   {
-    "quando": "2026-07-26T10:24:59.007Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "copa · Senegal x Áustria @2.05 (tiro 2) · gatilho: time Áustria"
    }
   ],
   "consumidas": {
    "copa": 1785078979201,
-   "euro": 1785079201099
+   "euro": 1785079201099,
+   "super": 1785082200105
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:07",
-     "jogo": "Itaquera x Guayaquil",
-     "odd": 1.95
-    },
-    {
-     "h": "17:10",
-     "jogo": "Porto Alegre x Asuncion",
-     "odd": 2.25
-    },
-    {
-     "h": "17:13",
-     "jogo": "Avellaneda x Santiago",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "odd 2.25",
-   "alvo": {
-    "h": "17:07",
-    "jogo": "Itaquera x Guayaquil",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1785081480705
-   },
-   "iniciadoEm": 1785081480705
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785079201099,
-   "super": 1785077162512,
+   "super": 1785082200105,
    "premier": 1785077623105,
    "copa": 1785078979201
   },
@@ -535,13 +506,13 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": -1.6
+   "2026-07-26": -0.6
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.25",
    "n": 10,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  }
