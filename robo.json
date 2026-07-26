@@ -447,11 +447,39 @@
    }
   ],
   "consumidas": {
-   "copa": 1785078979201,
-   "euro": 1785079201099,
    "super": 1785082200105
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:19",
+     "jogo": "Qatar x Inglaterra",
+     "odd": 1.98
+    },
+    {
+     "h": "17:22",
+     "jogo": "EUA x Turquia",
+     "odd": 2
+    },
+    {
+     "h": "17:25",
+     "jogo": "Austrália x Noruega",
+     "odd": 1.87
+    }
+   ],
+   "gatilho": "time Turquia",
+   "alvo": {
+    "h": "17:19",
+    "jogo": "Qatar x Inglaterra",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785082581808
+   },
+   "iniciadoEm": 1785082581808
+  },
   "cooldown": {
    "euro": 1785079201099,
    "super": 1785082200105,
@@ -472,10 +500,10 @@
    "2026-07-26": -0.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.25",
-   "n": 10,
-   "start": 2
+   "tipo": "time",
+   "chave": "Turquia",
+   "n": 19,
+   "start": 1
   },
   "_obs": {}
  }
