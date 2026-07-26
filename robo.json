@@ -288,7 +288,37 @@
    "super": 1785057037700,
    "premier": 1785058006199
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:50",
+     "jogo": "Romênia x Portugal",
+     "odd": 2.15
+    },
+    {
+     "h": "10:53",
+     "jogo": "Eslovênia x Itália",
+     "odd": 2.62
+    },
+    {
+     "h": "10:56",
+     "jogo": "Portugal x Sérvia",
+     "odd": 2.45
+    }
+   ],
+   "gatilho": "seq RGGRR",
+   "alvo": {
+    "h": "10:50",
+    "jogo": "Romênia x Portugal",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785059455303
+   },
+   "iniciadoEm": 1785059455303
+  },
   "cooldown": {
    "copa": 1785055694806,
    "premier": 1785058006199,
@@ -310,9 +340,9 @@
    "2026-07-26": 15.6
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":33",
-   "n": 10,
+   "tipo": "seq",
+   "chave": "RGGRR",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
