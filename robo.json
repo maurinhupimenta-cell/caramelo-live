@@ -290,8 +290,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "18:18",
@@ -311,11 +311,11 @@
    ],
    "gatilho": "seq RGGRG",
    "alvo": {
-    "h": "18:21",
-    "jogo": "Watford x United",
-    "odd": 2.25,
-    "unidades": 2,
-    "desde": 1785086447706
+    "h": "18:24",
+    "jogo": "Southampton x Wolverhampton",
+    "odd": 2.2,
+    "unidades": 4,
+    "desde": 1785086629103
    },
    "iniciadoEm": 1785086085003,
    "tiros": [
@@ -324,6 +324,12 @@
      "jogo": "Burnley x Islington",
      "odd": 2.1,
      "unidades": 1
+    },
+    {
+     "h": "18:21",
+     "jogo": "Watford x United",
+     "odd": 2.25,
+     "unidades": 2
     }
    ]
   },
@@ -349,16 +355,11 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGGRG",
-   "n": 9,
+   "chave": "RRGG",
+   "n": 21,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785086591203,
-    "gatilho": "seq RRGG"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -41.1,
