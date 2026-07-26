@@ -289,7 +289,37 @@
    "super": 1785098564808,
    "premier": 1785099297011
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:56",
+     "jogo": "Eslováquia x Inglaterra",
+     "odd": 2.1
+    },
+    {
+     "h": "21:59",
+     "jogo": "Geórgia x Albânia",
+     "odd": 2.75
+    },
+    {
+     "h": "22:02",
+     "jogo": "Dinamarca x Bélgica",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "seq RRGRG",
+   "alvo": {
+    "h": "21:56",
+    "jogo": "Eslováquia x Inglaterra",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785099476403
+   },
+   "iniciadoEm": 1785099476403
+  },
   "cooldown": {
    "copa": 1785096793308,
    "premier": 1785099297011,
@@ -312,8 +342,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRGGG",
-   "n": 9,
+   "chave": "RRGRG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
