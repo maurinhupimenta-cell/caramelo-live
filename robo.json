@@ -155,13 +155,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -43.5,
-  "ciclos": 402,
-  "greens": 266,
+  "saldo": -42.4,
+  "ciclos": 403,
+  "greens": 267,
   "redsCiclo": 66,
   "aborts": 0,
   "descartes": 70,
   "historico": [
+   {
+    "quando": "2026-07-26T02:40:52.006Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Costa do Marfim x Bósnia e Herzegovina @2.07 (tiro 1) · gatilho: placar empate 1-1"
+   },
    {
     "quando": "2026-07-26T02:23:50.501Z",
     "resultado": "GREEN",
@@ -275,51 +281,16 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "euro · Inglaterra x Croácia @2.1 (tiro 3) · gatilho: seq RRGG"
-   },
-   {
-    "quando": "2026-07-25T16:59:45.310Z",
-    "resultado": "GREEN",
-    "unidades": 2.8,
-    "detalhe": "premier · West Ham x United @2.45 (tiro 3) · gatilho: coluna :54"
    }
   ],
   "consumidas": {
    "premier": 1785031719811,
-   "euro": 1785032630305
+   "euro": 1785032630305,
+   "copa": 1785033651812
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:37",
-     "jogo": "Costa do Marfim x Bósnia e Herzegovina",
-     "odd": 2.07
-    },
-    {
-     "h": "03:40",
-     "jogo": "Turquia x Países Baixos",
-     "odd": 2.35
-    },
-    {
-     "h": "03:43",
-     "jogo": "Espanha x Croácia",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "placar empate 1-1",
-   "alvo": {
-    "h": "03:37",
-    "jogo": "Costa do Marfim x Bósnia e Herzegovina",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1785033233909
-   },
-   "iniciadoEm": 1785033233909
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785028552307,
+   "copa": 1785033651812,
    "premier": 1785031719811,
    "euro": 1785032630305,
    "super": 1785021520300
@@ -335,7 +306,7 @@
    "2026-07-22": -20.6,
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
-   "2026-07-25": 19.9
+   "2026-07-25": 21
   },
   "_gatilhoAtual": {
    "tipo": "placar",
