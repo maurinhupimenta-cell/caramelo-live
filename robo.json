@@ -158,13 +158,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -39.6,
-  "ciclos": 405,
+  "saldo": -46.6,
+  "ciclos": 406,
   "greens": 269,
-  "redsCiclo": 66,
+  "redsCiclo": 67,
   "aborts": 0,
   "descartes": 70,
   "historico": [
+   {
+    "quando": "2026-07-26T03:57:53.903Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: odd 2.2"
+   },
    {
     "quando": "2026-07-26T03:20:41.901Z",
     "resultado": "GREEN",
@@ -278,65 +284,15 @@
     "resultado": "GREEN",
     "unidades": 1.8,
     "detalhe": "euro · Croácia x Sérvia @2.4 (tiro 2) · gatilho: seq RRGRG"
-   },
-   {
-    "quando": "2026-07-25T18:26:27.202Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "copa · Turquia x África do Sul @2.5 (tiro 1) · gatilho: time México"
    }
   ],
   "consumidas": {
-   "super": 1785035513509,
-   "premier": 1785036041702
+   "premier": 1785036041702,
+   "copa": 1785038273707
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:46",
-     "jogo": "República Tcheca x Senegal",
-     "odd": 2.55
-    },
-    {
-     "h": "04:49",
-     "jogo": "Colômbia x Nova Zelândia",
-     "odd": 2.2
-    },
-    {
-     "h": "04:52",
-     "jogo": "Portugal x Bélgica",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "odd 2.2",
-   "alvo": {
-    "h": "04:52",
-    "jogo": "Portugal x Bélgica",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1785037971607
-   },
-   "iniciadoEm": 1785037259909,
-   "tiros": [
-    {
-     "h": "04:46",
-     "jogo": "República Tcheca x Senegal",
-     "odd": 2.55,
-     "unidades": 1
-    },
-    {
-     "h": "04:49",
-     "jogo": "Colômbia x Nova Zelândia",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785033651812,
+   "copa": 1785038273707,
    "premier": 1785036041702,
    "euro": 1785032630305,
    "super": 1785035513509
@@ -353,13 +309,13 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": 2.8
+   "2026-07-26": -4.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRR",
-   "n": 9,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.2",
+   "n": 15,
+   "start": 2
   },
   "_obs": {}
  },
