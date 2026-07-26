@@ -369,21 +369,27 @@
    "2026-07-26": 2.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.2",
-   "n": 15,
+   "tipo": "seq",
+   "chave": "RRGR",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -39.1,
-  "ciclos": 416,
+  "saldo": -46.1,
+  "ciclos": 417,
   "greens": 290,
-  "redsCiclo": 48,
+  "redsCiclo": 49,
   "aborts": 0,
   "descartes": 78,
   "historico": [
+   {
+    "quando": "2026-07-26T03:47:46.305Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: time Southampton"
+   },
    {
     "quando": "2026-07-26T03:29:01.500Z",
     "resultado": "GREEN",
@@ -497,68 +503,19 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · Coreia do Sul x Argentina @2 (tiro 3) · gatilho: time Croácia"
-   },
-   {
-    "quando": "2026-07-25T18:35:25.599Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "euro · Croácia x Sérvia @2.07 (tiro 3) · gatilho: seq GRRGR"
    }
   ],
   "consumidas": {
    "super": 1785035813599,
    "copa": 1785036121601,
-   "euro": 1785036541306
+   "euro": 1785036541306,
+   "premier": 1785037666109
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:39",
-     "jogo": "Leeds x Tottenham",
-     "odd": 2.25
-    },
-    {
-     "h": "04:42",
-     "jogo": "Islington x Southampton",
-     "odd": 2.05
-    },
-    {
-     "h": "04:45",
-     "jogo": "Aston x United",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "time Southampton",
-   "alvo": {
-    "h": "04:45",
-    "jogo": "Aston x United",
-    "odd": 2.02,
-    "unidades": 4,
-    "desde": 1785037493607
-   },
-   "iniciadoEm": 1785036590304,
-   "tiros": [
-    {
-     "h": "04:39",
-     "jogo": "Leeds x Tottenham",
-     "odd": 2.25,
-     "unidades": 1
-    },
-    {
-     "h": "04:42",
-     "jogo": "Islington x Southampton",
-     "odd": 2.05,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785036541306,
    "super": 1785035813599,
-   "premier": 1785032260707,
+   "premier": 1785037666109,
    "copa": 1785036121601
   },
   "dias": {
@@ -572,7 +529,7 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": 2.8
+   "2026-07-26": -4.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
