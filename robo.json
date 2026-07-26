@@ -285,7 +285,6 @@
    }
   ],
   "consumidas": {
-   "super": 1785075109606,
    "euro": 1785075529697,
    "copa": 1785078061111,
    "premier": 1785078517704
@@ -321,12 +320,18 @@
  },
  "ambas": {
   "saldo": -45.4,
-  "ciclos": 458,
+  "ciclos": 459,
   "greens": 319,
   "redsCiclo": 53,
   "aborts": 0,
-  "descartes": 86,
+  "descartes": 87,
   "historico": [
+   {
+    "quando": "2026-07-26T15:10:59.609Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho coluna :13) — liga REARMADA"
+   },
    {
     "quando": "2026-07-26T14:53:43.304Z",
     "resultado": "GREEN",
@@ -440,12 +445,6 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "euro · Países Baixos x Portugal @1.85 (tiro 1) · gatilho: time Turquia"
-   },
-   {
-    "quando": "2026-07-26T09:25:37.908Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "super · Porto Alegre x Guayaquil @2.1 (tiro 1) · gatilho: coluna :22"
    }
   ],
   "consumidas": {
@@ -453,7 +452,37 @@
    "super": 1785077162512,
    "premier": 1785077623105
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:13",
+     "jogo": "Bélgica x EUA",
+     "odd": 1.98
+    },
+    {
+     "h": "16:16",
+     "jogo": "Argentina x Austrália",
+     "odd": 1.93
+    },
+    {
+     "h": "16:19",
+     "jogo": "Brasil x Uruguai",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "coluna :13",
+   "alvo": {
+    "h": "16:13",
+    "jogo": "Bélgica x EUA",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785078661208
+   },
+   "iniciadoEm": 1785078661208
+  },
   "cooldown": {
    "euro": 1785075472403,
    "super": 1785077162512,
@@ -474,9 +503,9 @@
    "2026-07-26": -3.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGGG",
-   "n": 15,
+   "tipo": "coluna",
+   "chave": ":13",
+   "n": 16,
    "start": 1
   },
   "_obs": {}
