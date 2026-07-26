@@ -450,7 +450,45 @@
    "super": 1785090590411,
    "copa": 1785091742299
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "19:53",
+     "jogo": "Eslováquia x França",
+     "odd": 1.9
+    },
+    {
+     "h": "19:56",
+     "jogo": "Polônia x Ucrânia",
+     "odd": 2.1
+    },
+    {
+     "h": "19:59",
+     "jogo": "Turquia x França",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "odd 1.9",
+   "alvo": {
+    "h": "19:56",
+    "jogo": "Polônia x Ucrânia",
+    "odd": 2.1,
+    "unidades": 2,
+    "desde": 1785092245808
+   },
+   "iniciadoEm": 1785092160399,
+   "tiros": [
+    {
+     "h": "19:53",
+     "jogo": "Eslováquia x França",
+     "odd": 1.9,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1785088549302,
    "super": 1785090590411,
@@ -471,10 +509,10 @@
    "2026-07-26": 6.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Turquia",
-   "n": 21,
-   "start": 3
+   "tipo": "odd",
+   "chave": "1.9",
+   "n": 24,
+   "start": 1
   },
   "_obs": {}
  }
