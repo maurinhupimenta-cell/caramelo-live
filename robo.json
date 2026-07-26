@@ -288,7 +288,37 @@
    "premier": 1785078517704,
    "super": 1785079502803
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:07",
+     "jogo": "Cabo Verde x Curação",
+     "odd": 2.1
+    },
+    {
+     "h": "17:10",
+     "jogo": "Paraguai x Panamá",
+     "odd": 2.5
+    },
+    {
+     "h": "17:13",
+     "jogo": "Gana x Haiti",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "seq RRGG",
+   "alvo": {
+    "h": "17:07",
+    "jogo": "Cabo Verde x Curação",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785081839804
+   },
+   "iniciadoEm": 1785081839804
+  },
   "cooldown": {
    "copa": 1785078061111,
    "premier": 1785078517704,
@@ -311,8 +341,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRR",
-   "n": 29,
+   "chave": "RRGG",
+   "n": 19,
    "start": 1
   },
   "_obs": {}
@@ -504,7 +534,7 @@
    "tipo": "odd",
    "chave": "2.25",
    "n": 10,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
