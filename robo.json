@@ -348,13 +348,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -39.4,
-  "ciclos": 474,
-  "greens": 333,
+  "saldo": -38.5,
+  "ciclos": 475,
+  "greens": 334,
   "redsCiclo": 54,
   "aborts": 0,
   "descartes": 87,
   "historico": [
+   {
+    "quando": "2026-07-26T20:49:58.404Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Inglaterra x Itália @1.93 (tiro 1) · gatilho: coluna :50"
+   },
    {
     "quando": "2026-07-26T20:41:53.502Z",
     "resultado": "GREEN",
@@ -468,52 +474,17 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · República Tcheca x Romênia @2.05 (tiro 1) · gatilho: odd 1.95"
-   },
-   {
-    "quando": "2026-07-26T14:10:52.306Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time México"
    }
   ],
   "consumidas": {
    "copa": 1785095996110,
    "super": 1785097697101,
-   "premier": 1785098513308
+   "premier": 1785098513308,
+   "euro": 1785098998211
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:47",
-     "jogo": "Inglaterra x Itália",
-     "odd": 1.93
-    },
-    {
-     "h": "21:50",
-     "jogo": "Suíça x Hungria",
-     "odd": 1.98
-    },
-    {
-     "h": "21:53",
-     "jogo": "Geórgia x França",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "coluna :50",
-   "alvo": {
-    "h": "21:47",
-    "jogo": "Inglaterra x Itália",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1785098576008
-   },
-   "iniciadoEm": 1785098576008
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785092521099,
+   "euro": 1785098998211,
    "super": 1785097697101,
    "premier": 1785098513308,
    "copa": 1785095996110
@@ -529,7 +500,7 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": 2.5
+   "2026-07-26": 3.4
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
