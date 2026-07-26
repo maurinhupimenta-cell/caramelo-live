@@ -356,13 +356,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -41.1,
-  "ciclos": 464,
-  "greens": 324,
+  "saldo": -40.2,
+  "ciclos": 465,
+  "greens": 325,
   "redsCiclo": 53,
   "aborts": 0,
   "descartes": 87,
   "historico": [
+   {
+    "quando": "2026-07-26T17:28:29.808Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Belo Horizonte x Quito @1.98 (tiro 3) · gatilho: coluna :22"
+   },
    {
     "quando": "2026-07-26T16:33:05.407Z",
     "resultado": "GREEN",
@@ -476,66 +482,16 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "euro · Eslováquia x República Tcheca @2.15 (tiro 1) · gatilho: coluna :44"
-   },
-   {
-    "quando": "2026-07-26T11:36:54.802Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "copa · México x Colômbia @1.93 (tiro 1) · gatilho: time Turquia"
    }
   ],
   "consumidas": {
-   "copa": 1785083302407,
-   "euro": 1785083585300
+   "euro": 1785083585300,
+   "super": 1785086909605
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "18:19",
-     "jogo": "Medellin x Lima",
-     "odd": 1.98
-    },
-    {
-     "h": "18:22",
-     "jogo": "Asuncion x Agua Branca",
-     "odd": 1.93
-    },
-    {
-     "h": "18:25",
-     "jogo": "Belo Horizonte x Quito",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "coluna :22",
-   "alvo": {
-    "h": "18:25",
-    "jogo": "Belo Horizonte x Quito",
-    "odd": 1.98,
-    "unidades": 4,
-    "desde": 1785086699898
-   },
-   "iniciadoEm": 1785086040897,
-   "tiros": [
-    {
-     "h": "18:19",
-     "jogo": "Medellin x Lima",
-     "odd": 1.98,
-     "unidades": 1
-    },
-    {
-     "h": "18:22",
-     "jogo": "Asuncion x Agua Branca",
-     "odd": 1.93,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785083585300,
-   "super": 1785082200105,
+   "super": 1785086909605,
    "premier": 1785077623105,
    "copa": 1785083302407
   },
@@ -550,13 +506,13 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": 0.8
+   "2026-07-26": 1.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.2",
-   "n": 20,
-   "start": 3
+   "tipo": "time",
+   "chave": "Brasil",
+   "n": 15,
+   "start": 2
   },
   "_obs": {}
  }
