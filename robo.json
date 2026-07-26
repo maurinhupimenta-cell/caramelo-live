@@ -495,7 +495,37 @@
    "euro": 1785057997101,
    "premier": 1785060879300
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:19",
+     "jogo": "EUA x Irã",
+     "odd": 2.15
+    },
+    {
+     "h": "11:22",
+     "jogo": "Senegal x Áustria",
+     "odd": 2.05
+    },
+    {
+     "h": "11:25",
+     "jogo": "Argélia x Colômbia",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "time Áustria",
+   "alvo": {
+    "h": "11:19",
+    "jogo": "EUA x Irã",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785060888802
+   },
+   "iniciadoEm": 1785060888802
+  },
   "cooldown": {
    "euro": 1785057997101,
    "super": 1785057937799,
