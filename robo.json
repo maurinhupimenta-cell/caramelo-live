@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -40.9,
-  "ciclos": 452,
-  "greens": 301,
+  "saldo": -39.1,
+  "ciclos": 453,
+  "greens": 302,
   "redsCiclo": 73,
   "aborts": 0,
   "descartes": 78,
   "historico": [
+   {
+    "quando": "2026-07-26T20:13:13.506Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "copa · Uruguai x EUA @2.2 (tiro 3) · gatilho: seq RRGG"
+   },
    {
     "quando": "2026-07-26T19:19:46.006Z",
     "resultado": "DESCARTADO",
@@ -276,62 +282,14 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "copa · Noruega x Brasil @2.15 (tiro 2) · gatilho: time Noruega"
-   },
-   {
-    "quando": "2026-07-26T13:34:49.700Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho seq RGGR) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "21:04",
-     "jogo": "Colômbia x França",
-     "odd": 2.2
-    },
-    {
-     "h": "21:07",
-     "jogo": "Iraque x Irã",
-     "odd": 2.75
-    },
-    {
-     "h": "21:10",
-     "jogo": "Uruguai x EUA",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "seq RRGG",
-   "alvo": {
-    "h": "21:10",
-    "jogo": "Uruguai x EUA",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1785096657705
-   },
-   "iniciadoEm": 1785096057100,
-   "tiros": [
-    {
-     "h": "21:04",
-     "jogo": "Colômbia x França",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "21:07",
-     "jogo": "Iraque x Irã",
-     "odd": 2.75,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "copa": 1785096793308
   },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785091742012,
+   "copa": 1785096793308,
    "premier": 1785086799105,
    "euro": 1785091809105,
    "super": 1785086040605
@@ -348,7 +306,7 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": 1.5
+   "2026-07-26": 3.3
   },
   "_gatilhoAtual": {
    "tipo": "seq",
