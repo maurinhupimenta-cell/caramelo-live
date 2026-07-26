@@ -316,12 +316,18 @@
  },
  "ambas": {
   "saldo": -45.1,
-  "ciclos": 408,
+  "ciclos": 409,
   "greens": 284,
   "redsCiclo": 48,
   "aborts": 0,
-  "descartes": 76,
+  "descartes": 77,
   "historico": [
+   {
+    "quando": "2026-07-26T01:51:50.006Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho placar goleada (3+)) — liga REARMADA"
+   },
    {
     "quando": "2026-07-26T00:57:51.504Z",
     "resultado": "GREEN",
@@ -435,12 +441,6 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "copa · África do Sul x Japão @2.15 (tiro 1) · gatilho: time Austrália"
-   },
-   {
-    "quando": "2026-07-25T15:14:51.701Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "premier · Brentford x City @1.93 (tiro 1) · gatilho: coluna :15"
    }
   ],
   "consumidas": {
@@ -471,6 +471,11 @@
    "n": 8,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1785030710005,
+    "gatilho": "placar goleada (3+)"
+   }
+  }
  }
 }
