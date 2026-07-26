@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -47.8,
-  "ciclos": 446,
-  "greens": 297,
+  "saldo": -46,
+  "ciclos": 447,
+  "greens": 298,
   "redsCiclo": 73,
   "aborts": 0,
   "descartes": 76,
   "historico": [
+   {
+    "quando": "2026-07-26T17:26:39.307Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "premier · Southampton x Wolverhampton @2.2 (tiro 3) · gatilho: seq RGGRG"
+   },
    {
     "quando": "2026-07-26T17:23:11.204Z",
     "resultado": "GREEN_OBS",
@@ -276,66 +282,17 @@
     "resultado": "GREEN",
     "unidades": 2.4,
     "detalhe": "premier · Islington x Aston @2.35 (tiro 3) · gatilho: coluna :03"
-   },
-   {
-    "quando": "2026-07-26T11:37:18.303Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "super · Sao Paulo x Bogota @2.35 (tiro 1) · gatilho: odd 2.35"
    }
   ],
   "consumidas": {
    "euro": 1785083204699,
-   "super": 1785086040605
+   "super": 1785086040605,
+   "premier": 1785086799105
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "18:18",
-     "jogo": "Burnley x Islington",
-     "odd": 2.1
-    },
-    {
-     "h": "18:21",
-     "jogo": "Watford x United",
-     "odd": 2.25
-    },
-    {
-     "h": "18:24",
-     "jogo": "Southampton x Wolverhampton",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "seq RGGRG",
-   "alvo": {
-    "h": "18:24",
-    "jogo": "Southampton x Wolverhampton",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1785086629103
-   },
-   "iniciadoEm": 1785086085003,
-   "tiros": [
-    {
-     "h": "18:18",
-     "jogo": "Burnley x Islington",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "18:21",
-     "jogo": "Watford x United",
-     "odd": 2.25,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785082581510,
-   "premier": 1785078517704,
+   "premier": 1785086799105,
    "euro": 1785083204699,
    "super": 1785086040605
   },
@@ -351,7 +308,7 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": -5.4
+   "2026-07-26": -3.6
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -559,10 +516,10 @@
    "2026-07-26": 0.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":25",
-   "n": 18,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.2",
+   "n": 20,
+   "start": 3
   },
   "_obs": {}
  }
