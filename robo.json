@@ -358,13 +358,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -25,
-  "ciclos": 503,
-  "greens": 355,
+  "saldo": -24,
+  "ciclos": 504,
+  "greens": 356,
   "redsCiclo": 55,
   "aborts": 0,
   "descartes": 93,
   "historico": [
+   {
+    "quando": "2026-07-27T07:19:44.103Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Suíça x Polônia @2.02 (tiro 2) · gatilho: odd 2.02"
+   },
    {
     "quando": "2026-07-27T06:58:00.605Z",
     "resultado": "GREEN",
@@ -478,59 +484,16 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · Uruguai x Bélgica @1.98 (tiro 1) · gatilho: time Costa do Marfim"
-   },
-   {
-    "quando": "2026-07-26T22:41:53.401Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "super · Santos x Sao Paulo @1.93 (tiro 1) · gatilho: time Guayaquil"
    }
   ],
   "consumidas": {
    "copa": 1785133862107,
-   "premier": 1785135480500
+   "premier": 1785135480500,
+   "euro": 1785136783904
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "08:14",
-     "jogo": "Itália x Países Baixos",
-     "odd": 1.9
-    },
-    {
-     "h": "08:17",
-     "jogo": "Suíça x Polônia",
-     "odd": 2.02
-    },
-    {
-     "h": "08:20",
-     "jogo": "Portugal x Sérvia",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "odd 2.02",
-   "alvo": {
-    "h": "08:17",
-    "jogo": "Suíça x Polônia",
-    "odd": 2.02,
-    "unidades": 2,
-    "desde": 1785136604008
-   },
-   "iniciadoEm": 1785136066511,
-   "tiros": [
-    {
-     "h": "08:14",
-     "jogo": "Itália x Países Baixos",
-     "odd": 1.9,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785129598111,
+   "euro": 1785136783904,
    "super": 1785132784705,
    "premier": 1785135480500,
    "copa": 1785133862107
@@ -547,7 +510,7 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": 2.6
+   "2026-07-27": 3.6
   },
   "_gatilhoAtual": {
    "tipo": "time",
