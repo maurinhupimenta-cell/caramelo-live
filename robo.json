@@ -490,7 +490,37 @@
    "euro": 1785125079002,
    "premier": 1785126248299
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:10",
+     "jogo": "Gana x Japão",
+     "odd": 2.1
+    },
+    {
+     "h": "06:13",
+     "jogo": "Áustria x Jordânia",
+     "odd": 1.98
+    },
+    {
+     "h": "06:16",
+     "jogo": "Senegal x Croácia",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "odd 1.98",
+   "alvo": {
+    "h": "06:10",
+    "jogo": "Gana x Japão",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785128463503
+   },
+   "iniciadoEm": 1785128463503
+  },
   "cooldown": {
    "euro": 1785125079002,
    "super": 1785124341999,
@@ -512,10 +542,10 @@
    "2026-07-27": -3.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Norwich",
-   "n": 12,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.98",
+   "n": 10,
+   "start": 3
   },
   "_obs": {}
  }
