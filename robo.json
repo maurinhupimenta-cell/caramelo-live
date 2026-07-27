@@ -449,11 +449,40 @@
    }
   ],
   "consumidas": {
-   "euro": 1785158383707,
    "super": 1785159644498,
    "copa": 1785161744411
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:21",
+     "jogo": "Burnley x Palace",
+     "odd": 1.87
+    },
+    {
+     "h": "15:24",
+     "jogo": "Chelsea x Aston",
+     "odd": 2.07
+    },
+    {
+     "h": "15:27",
+     "jogo": "Islington x Burnley",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "coluna :24",
+   "alvo": {
+    "h": "15:21",
+    "jogo": "Burnley x Palace",
+    "odd": 1.87,
+    "unidades": 1,
+    "desde": 1785161746802
+   },
+   "iniciadoEm": 1785161746802
+  },
   "cooldown": {
    "euro": 1785158383707,
    "super": 1785159644498,
@@ -478,7 +507,7 @@
    "tipo": "coluna",
    "chave": ":24",
    "n": 15,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
