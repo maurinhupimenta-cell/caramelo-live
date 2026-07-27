@@ -318,13 +318,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -29.3,
-  "ciclos": 544,
-  "greens": 386,
+  "saldo": -28.4,
+  "ciclos": 545,
+  "greens": 387,
   "redsCiclo": 60,
   "aborts": 0,
   "descartes": 98,
   "historico": [
+   {
+    "quando": "2026-07-27T19:07:20.200Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Quito x Sao Paulo @1.87 (tiro 1) · gatilho: odd 2.02"
+   },
    {
     "quando": "2026-07-27T19:03:03.294Z",
     "resultado": "GREEN",
@@ -438,52 +444,17 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "euro · Croácia x Geórgia @2.07 (tiro 1) · gatilho: coluna :20"
-   },
-   {
-    "quando": "2026-07-27T13:08:41.001Z",
-    "resultado": "GREEN",
-    "unidades": 0.3,
-    "detalhe": "premier · Norwich x Brighton @1.83 (tiro 3) · gatilho: odd 1.98"
    }
   ],
   "consumidas": {
    "copa": 1785175795357,
-   "premier": 1785178983101
+   "premier": 1785178983101,
+   "super": 1785179240004
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:04",
-     "jogo": "Quito x Sao Paulo",
-     "odd": 1.87
-    },
-    {
-     "h": "20:07",
-     "jogo": "Itaquera x Avellaneda",
-     "odd": 2.02
-    },
-    {
-     "h": "20:10",
-     "jogo": "Santiago x La Plata",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "odd 2.02",
-   "alvo": {
-    "h": "20:04",
-    "jogo": "Quito x Sao Paulo",
-    "odd": 1.87,
-    "unidades": 1,
-    "desde": 1785178992492
-   },
-   "iniciadoEm": 1785178992492
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785172984399,
-   "super": 1785174565201,
+   "super": 1785179240004,
    "premier": 1785178983101,
    "copa": 1785175795357
   },
@@ -499,7 +470,7 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": -1.7
+   "2026-07-27": -0.8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
