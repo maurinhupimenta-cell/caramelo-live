@@ -1656,6 +1656,117 @@ app.get("/api/backtest/:liga", (req, res) => {
 //    Mede a taxa de pagamento em cada atraso k=1..20 apos o sinal, contra a base.
 // 2) TROLL: o padrao que chega a 100% falha logo depois? Pega todo padrao que atingiu
 //    100% (n>=5) ao vivo e mede o que ele fez DEPOIS (fora da amostra que o consagrou).
+// ===== AUDITORIA DA MAQUINA: o gerador se repete? as odds sao mal precificadas? =====
+// A) AUTOCORRELACAO: o resultado de agora depende do resultado de k jogos atras? (k=1..120)
+// B) REPETICAO EXATA: o roteiro de placares se repete em algum ciclo? (busca blocos identicos)
+// C) CALIBRACAO DAS ODDS: cada valor de odd entrega o que promete? (validado fora da amostra)
+// D) COLUNA DA HORA: o minuto do relogio (:00 :03 :06...) tem viés? (repete ~25x no historico)
+app.get("/api/auditoria-maquina", (req, res) => {
+  try {
+    const MKTS = ["o25", "o35", "ambas"];
+    const saida = { A_autocorrelacao: {}, B_repeticaoExata: {}, C_calibracaoOdds: {}, D_colunaHora: {} };
+
+    for (const liga of LIGAS) {
+      const d = store[liga]; if (!d || !d.games || d.games.length < 300) continue;
+      const games = listaCheia(d);
+      const N = games.length;
+
+      // ===== A) AUTOCORRELACAO =====
+      for (const mkt of MKTS) {
+        const x = games.map(g => (pays(g, mkt) ? 1 : 0));
+        const mu = x.reduce((a, b) => a + b, 0) / N;
+        const varr = x.reduce((a, v) => a + (v - mu) ** 2, 0) / N;
+        if (!varr) continue;
+        const picos = [];
+        for (let k = 1; k <= 120; k++) {
+          let s = 0, c = 0;
+          for (let i = k; i < N; i++) { s += (x[i] - mu) * (x[i - k] - mu); c++; }
+          const r = c ? (s / c) / varr : 0;
+          picos.push({ k, r: Math.round(r * 1000) / 1000 });
+        }
+        const limiar = Math.round(2 / Math.sqrt(N) * 1000) / 1000; // ruido esperado
+        const fortes = picos.filter(p => Math.abs(p.r) > limiar).sort((a, b) => Math.abs(b.r) - Math.abs(a.r)).slice(0, 5);
+        saida.A_autocorrelacao[liga + "|" + mkt] = {
+          limiarRuido: limiar,
+          maiores: fortes.map(f => `lag ${f.k}: r=${f.r}`),
+          acimaDoRuido: fortes.length,
+          esperadoPorAcaso: Math.round(120 * 0.05)
+        };
+      }
+
+      // ===== B) REPETICAO EXATA DO ROTEIRO =====
+      const roteiro = games.map(g => (g.a != null ? g.a + "" + g.b : "??")).join("|");
+      const arr = roteiro.split("|");
+      let maiorRepeticao = 0, ondeA = -1, ondeB = -1;
+      const idxPor = {};
+      for (let i = 0; i < arr.length; i++) (idxPor[arr[i]] = idxPor[arr[i]] || []).push(i);
+      // procura o maior bloco identico em duas posicoes diferentes (busca a partir de placares iguais)
+      for (const lista of Object.values(idxPor)) {
+        if (lista.length < 2 || lista.length > 200) continue;
+        for (let a = 0; a < lista.length - 1; a++) {
+          for (let b = a + 1; b < lista.length; b++) {
+            let L = 0;
+            while (lista[a] + L < arr.length && lista[b] + L < arr.length && arr[lista[a] + L] === arr[lista[b] + L]) L++;
+            if (L > maiorRepeticao) { maiorRepeticao = L; ondeA = lista[a]; ondeB = lista[b]; }
+          }
+        }
+      }
+      // quanto se espera por acaso? ~log(N^2)/log(numPlacaresDistintos)
+      const distintos = Object.keys(idxPor).length;
+      const esperado = Math.round(Math.log(N * N) / Math.log(Math.max(2, distintos)) * 10) / 10;
+      saida.B_repeticaoExata[liga] = {
+        jogos: N, placaresDistintos: distintos,
+        maiorBlocoIdentico: maiorRepeticao,
+        posicoes: maiorRepeticao > 1 ? `${ondeA} e ${ondeB} (distancia ${Math.abs(ondeB - ondeA)})` : "-",
+        esperadoPorAcaso: esperado,
+        veredito: maiorRepeticao > esperado + 3 ? "SUSPEITO - investigar" : "dentro do acaso"
+      };
+
+      // ===== C) CALIBRACAO DAS ODDS (fora da amostra) =====
+      const meio = Math.floor(N / 2);
+      for (const mkt of MKTS) {
+        const k = mkt === "ambas" ? "ambs" : mkt;
+        const porOdd = {};
+        games.forEach((g, i) => {
+          const o = g.odds && g.odds[k]; if (!o || o <= 1.01) return;
+          const key = o.toFixed(2);
+          const s = porOdd[key] || (porOdd[key] = { n1: 0, h1: 0, n2: 0, h2: 0 });
+          if (i < meio) { s.n1++; if (pays(g, mkt)) s.h1++; } else { s.n2++; if (pays(g, mkt)) s.h2++; }
+        });
+        const linhas = [];
+        for (const [odd, s] of Object.entries(porOdd)) {
+          if (s.n1 < 25 || s.n2 < 25) continue;
+          const implicita = 1 / parseFloat(odd) * 100;
+          const t1 = s.h1 / s.n1 * 100, t2 = s.h2 / s.n2 * 100;
+          const ev1 = (t1 / 100 * parseFloat(odd) - 1) * 100, ev2 = (t2 / 100 * parseFloat(odd) - 1) * 100;
+          linhas.push({ odd, implicita: Math.round(implicita * 10) / 10, era1: Math.round(t1 * 10) / 10, era2: Math.round(t2 * 10) / 10, ev1: Math.round(ev1), ev2: Math.round(ev2), n: s.n1 + s.n2, replicou: (ev1 > 5 && ev2 > 5) || (ev1 < -5 && ev2 < -5) });
+        }
+        if (linhas.length) saida.C_calibracaoOdds[liga + "|" + mkt] = linhas.sort((a, b) => b.ev2 - a.ev2).slice(0, 6);
+      }
+
+      // ===== D) COLUNA DA HORA (minuto) =====
+      for (const mkt of MKTS) {
+        const porMin = {};
+        games.forEach((g, i) => {
+          const mm = (g.horario || "").split(":")[1]; if (!mm) return;
+          const s = porMin[mm] || (porMin[mm] = { n1: 0, h1: 0, n2: 0, h2: 0 });
+          if (i < meio) { s.n1++; if (pays(g, mkt)) s.h1++; } else { s.n2++; if (pays(g, mkt)) s.h2++; }
+        });
+        const base = games.filter(g => pays(g, mkt)).length / N * 100;
+        const linhas = [];
+        for (const [mm, s] of Object.entries(porMin)) {
+          if (s.n1 < 8 || s.n2 < 8) continue;
+          const t1 = s.h1 / s.n1 * 100, t2 = s.h2 / s.n2 * 100;
+          const d1 = t1 - base, d2 = t2 - base;
+          if ((d1 > 8 && d2 > 8) || (d1 < -8 && d2 < -8)) linhas.push({ min: ":" + mm, era1: Math.round(t1), era2: Math.round(t2), base: Math.round(base), n: s.n1 + s.n2, replicou: true });
+        }
+        if (linhas.length) saida.D_colunaHora[liga + "|" + mkt] = linhas;
+      }
+    }
+    res.json(saida);
+  } catch (e) { res.status(500).json({ erro: e.message, linha: String(e.stack || "").split("\n")[1] }); }
+});
+
 app.get("/api/auditoria-tempo", (req, res) => {
   try {
     const MKTS = ["o25", "o35", "ambas", "u25"];
