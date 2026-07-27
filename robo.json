@@ -320,13 +320,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -25.9,
-  "ciclos": 493,
-  "greens": 347,
+  "saldo": -24.8,
+  "ciclos": 494,
+  "greens": 348,
   "redsCiclo": 54,
   "aborts": 0,
   "descartes": 92,
   "historico": [
+   {
+    "quando": "2026-07-27T03:52:22.198Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Santos x Asuncion @2.1 (tiro 1) · gatilho: time La Plata"
+   },
    {
     "quando": "2026-07-27T03:47:27.701Z",
     "resultado": "GREEN",
@@ -440,52 +446,55 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "euro · Inglaterra x Itália @1.93 (tiro 1) · gatilho: coluna :50"
-   },
-   {
-    "quando": "2026-07-26T20:41:53.502Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "premier · Palace x Chelsea @1.93 (tiro 2) · gatilho: seq RGRRG"
    }
   ],
   "consumidas": {
    "premier": 1785121916910,
-   "copa": 1785124047502
+   "copa": 1785124047502,
+   "super": 1785124341999
   },
   "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "liga": "euro",
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
-     "h": "04:49",
-     "jogo": "Santos x Asuncion",
-     "odd": 2.1
+     "h": "04:50",
+     "jogo": "Hungria x Itália",
+     "odd": 2.05
     },
     {
-     "h": "04:52",
-     "jogo": "La Plata x Buenos Aires",
-     "odd": 2
+     "h": "04:53",
+     "jogo": "Inglaterra x Geórgia",
+     "odd": 2.05
     },
     {
-     "h": "04:55",
-     "jogo": "Porto Alegre x Penarol",
-     "odd": 2.35
+     "h": "04:59",
+     "jogo": "Polônia x Espanha",
+     "odd": 1.95
     }
    ],
-   "gatilho": "time La Plata",
+   "gatilho": "time Itália",
    "alvo": {
-    "h": "04:49",
-    "jogo": "Santos x Asuncion",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785124049609
+    "h": "04:53",
+    "jogo": "Inglaterra x Geórgia",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1785124391398
    },
-   "iniciadoEm": 1785124049609
+   "iniciadoEm": 1785124344397,
+   "tiros": [
+    {
+     "h": "04:50",
+     "jogo": "Hungria x Itália",
+     "odd": 2.05,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785118794700,
-   "super": 1785120038401,
+   "super": 1785124341999,
    "premier": 1785121916910,
    "copa": 1785124047502
   },
@@ -501,13 +510,13 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": 1.7
+   "2026-07-27": 2.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Lima",
-   "n": 12,
-   "start": 3
+   "chave": "Itália",
+   "n": 8,
+   "start": 1
   },
   "_obs": {}
  }
