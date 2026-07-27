@@ -456,8 +456,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "14:46",
@@ -477,13 +477,21 @@
    ],
    "gatilho": "time Argentina",
    "alvo": {
-    "h": "14:46",
-    "jogo": "Jordânia x República Tcheca",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1785159882305
+    "h": "14:49",
+    "jogo": "Países Baixos x Argentina",
+    "odd": 1.93,
+    "unidades": 2,
+    "desde": 1785160143706
    },
-   "iniciadoEm": 1785159882305
+   "iniciadoEm": 1785159882305,
+   "tiros": [
+    {
+     "h": "14:46",
+     "jogo": "Jordânia x República Tcheca",
+     "odd": 2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785158383707,
@@ -506,9 +514,9 @@
    "2026-07-27": 9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Argentina",
-   "n": 11,
+   "tipo": "seq",
+   "chave": "GRGGR",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
