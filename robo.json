@@ -345,18 +345,24 @@
    "tipo": "time",
    "chave": "Suíça",
    "n": 8,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -24.8,
-  "ciclos": 494,
+  "saldo": -31.8,
+  "ciclos": 495,
   "greens": 348,
-  "redsCiclo": 54,
+  "redsCiclo": 55,
   "aborts": 0,
   "descartes": 92,
   "historico": [
+   {
+    "quando": "2026-07-27T04:04:39.197Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: time Itália"
+   },
    {
     "quando": "2026-07-27T03:52:22.198Z",
     "resultado": "GREEN",
@@ -470,66 +476,17 @@
     "resultado": "GREEN",
     "unidades": 0.6,
     "detalhe": "copa · RD Congo x Uruguai @1.9 (tiro 3) · gatilho: time Turquia"
-   },
-   {
-    "quando": "2026-07-26T20:49:58.404Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "euro · Inglaterra x Itália @1.93 (tiro 1) · gatilho: coluna :50"
    }
   ],
   "consumidas": {
    "premier": 1785121916910,
    "copa": 1785124047502,
-   "super": 1785124341999
+   "super": 1785124341999,
+   "euro": 1785125079002
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:50",
-     "jogo": "Hungria x Itália",
-     "odd": 2.05
-    },
-    {
-     "h": "04:53",
-     "jogo": "Inglaterra x Geórgia",
-     "odd": 2.05
-    },
-    {
-     "h": "04:59",
-     "jogo": "Polônia x Espanha",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "time Itália",
-   "alvo": {
-    "h": "04:59",
-    "jogo": "Polônia x Espanha",
-    "odd": 1.95,
-    "unidades": 4,
-    "desde": 1785124582901
-   },
-   "iniciadoEm": 1785124344397,
-   "tiros": [
-    {
-     "h": "04:50",
-     "jogo": "Hungria x Itália",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "04:53",
-     "jogo": "Inglaterra x Geórgia",
-     "odd": 2.05,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785118794700,
+   "euro": 1785125079002,
    "super": 1785124341999,
    "premier": 1785121916910,
    "copa": 1785124047502
@@ -546,13 +503,13 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": 2.8
+   "2026-07-27": -4.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Romênia",
    "n": 10,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
