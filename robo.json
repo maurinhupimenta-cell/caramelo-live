@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -110.7,
-  "ciclos": 511,
-  "greens": 330,
+  "saldo": -108.8,
+  "ciclos": 512,
+  "greens": 331,
   "redsCiclo": 89,
   "aborts": 0,
   "descartes": 92,
   "historico": [
+   {
+    "quando": "2026-07-27T18:11:54.155Z",
+    "resultado": "GREEN",
+    "unidades": 1.9,
+    "detalhe": "premier · Norwich x West Ham @2.45 (tiro 2) · gatilho: seq RGGRG"
+   },
    {
     "quando": "2026-07-27T17:58:56.104Z",
     "resultado": "RED_CICLO",
@@ -276,59 +282,16 @@
     "resultado": "GREEN",
     "unidades": 2,
     "detalhe": "premier · Brentford x United @2.25 (tiro 3) · gatilho: odd 2.15"
-   },
-   {
-    "quando": "2026-07-27T10:58:04.205Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "copa · Nova Zelândia x Turquia @2.25 (tiro 1) · gatilho: odd 2.45"
    }
   ],
   "consumidas": {
-   "copa": 1785175135897
+   "copa": 1785175135897,
+   "premier": 1785175913954
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "19:06",
-     "jogo": "Leeds x Liverpool",
-     "odd": 2.45
-    },
-    {
-     "h": "19:09",
-     "jogo": "Norwich x West Ham",
-     "odd": 2.45
-    },
-    {
-     "h": "19:12",
-     "jogo": "Tottenham x Aston",
-     "odd": 2.6
-    }
-   ],
-   "gatilho": "seq RGGRG",
-   "alvo": {
-    "h": "19:09",
-    "jogo": "Norwich x West Ham",
-    "odd": 2.45,
-    "unidades": 2,
-    "desde": 1785175735759
-   },
-   "iniciadoEm": 1785175389798,
-   "tiros": [
-    {
-     "h": "19:06",
-     "jogo": "Leeds x Liverpool",
-     "odd": 2.45,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785175135897,
-   "premier": 1785171220502,
+   "premier": 1785175913954,
    "euro": 1785166795008,
    "super": 1785169885012
   },
@@ -345,7 +308,7 @@
    "2026-07-24": -1.7,
    "2026-07-25": 21,
    "2026-07-26": -3.3,
-   "2026-07-27": -65
+   "2026-07-27": -63.1
   },
   "_gatilhoAtual": {
    "tipo": "seq",
