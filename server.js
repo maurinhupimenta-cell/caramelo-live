@@ -1458,10 +1458,10 @@ function acumuladoDia(liga, mkt, qtd) {
     if (!isNaN(h1) && !isNaN(h0) && h1 < h0 - 12) idxDia = i;
   }
   const dia = games.slice(idxDia);
-  if (dia.length < 25) return null;
+  if (dia.length < 8) return null; // logo apos a virada o dia tem poucos jogos: desenha assim mesmo
   // GRAFICO NORMAL, so que usando SO os jogos de hoje: mesma media movel, mesma janela
   // controlada pelo Qtd. Jogos. A unica diferenca e que nada de ontem entra na conta.
-  const JAN = Math.max(2, Math.min(parseInt(qtd) || 20, Math.floor(dia.length / 2)));
+  const JAN = Math.max(2, Math.min(parseInt(qtd) || 20, Math.max(2, Math.floor(dia.length / 2))));
   const serie = chartSeries(dia, mkt, JAN);
   const serieHoras = dia.slice(-serie.length).map(g => g.horario || "");
   const macdHist = serie.length > 3 ? (macdData(serie).hist || []) : [];
