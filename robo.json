@@ -321,13 +321,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -25.7,
-  "ciclos": 519,
-  "greens": 368,
+  "saldo": -24.8,
+  "ciclos": 520,
+  "greens": 369,
   "redsCiclo": 57,
   "aborts": 0,
   "descartes": 94,
   "historico": [
+   {
+    "quando": "2026-07-27T11:29:48.406Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Wolverhampton x Watford @1.93 (tiro 2) · gatilho: coluna :24"
+   },
    {
     "quando": "2026-07-27T11:19:02.006Z",
     "resultado": "GREEN",
@@ -441,61 +447,18 @@
     "resultado": "GREEN",
     "unidades": 0.8,
     "detalhe": "super · Agua Branca x Sao Paulo @1.83 (tiro 1) · gatilho: time Lima"
-   },
-   {
-    "quando": "2026-07-27T05:29:38.805Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "premier · Palace x Leeds @2.1 (tiro 1) · gatilho: time Norwich"
    }
   ],
   "consumidas": {
    "super": 1785149924600,
-   "copa": 1785151141810
+   "copa": 1785151141810,
+   "premier": 1785151788201
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "12:24",
-     "jogo": "Islington x Norwich",
-     "odd": 2
-    },
-    {
-     "h": "12:27",
-     "jogo": "Wolverhampton x Watford",
-     "odd": 1.93
-    },
-    {
-     "h": "12:30",
-     "jogo": "United x Leicester",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "coluna :24",
-   "alvo": {
-    "h": "12:27",
-    "jogo": "Wolverhampton x Watford",
-    "odd": 1.93,
-    "unidades": 2,
-    "desde": 1785151605799
-   },
-   "iniciadoEm": 1785151423806,
-   "tiros": [
-    {
-     "h": "12:24",
-     "jogo": "Islington x Norwich",
-     "odd": 2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785148124304,
    "super": 1785149924600,
-   "premier": 1785147819698,
+   "premier": 1785151788201,
    "copa": 1785151141810
   },
   "dias": {
@@ -510,7 +473,7 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": 1.9
+   "2026-07-27": 2.8
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
