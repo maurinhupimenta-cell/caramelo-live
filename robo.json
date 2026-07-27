@@ -321,13 +321,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -24.7,
-  "ciclos": 511,
-  "greens": 362,
+  "saldo": -23.8,
+  "ciclos": 512,
+  "greens": 363,
   "redsCiclo": 56,
   "aborts": 0,
   "descartes": 93,
   "historico": [
+   {
+    "quando": "2026-07-27T09:23:03.998Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Escócia x Espanha @1.85 (tiro 1) · gatilho: seq RRRRR"
+   },
    {
     "quando": "2026-07-27T09:14:38.406Z",
     "resultado": "GREEN",
@@ -441,52 +447,17 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "copa · Qatar x Noruega @1.93 (tiro 2) · gatilho: odd 1.93"
-   },
-   {
-    "quando": "2026-07-27T03:11:57.201Z",
-    "resultado": "GREEN",
-    "unidades": 0.8,
-    "detalhe": "premier · Burnley x Brighton @1.8 (tiro 1) · gatilho: time Palace"
    }
   ],
   "consumidas": {
    "super": 1785141424509,
    "copa": 1785142864305,
-   "premier": 1785143678298
+   "premier": 1785143678298,
+   "euro": 1785144183709
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "10:20",
-     "jogo": "Escócia x Espanha",
-     "odd": 1.85
-    },
-    {
-     "h": "10:23",
-     "jogo": "Inglaterra x Dinamarca",
-     "odd": 1.98
-    },
-    {
-     "h": "10:26",
-     "jogo": "Romênia x Eslováquia",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "seq RRRRR",
-   "alvo": {
-    "h": "10:20",
-    "jogo": "Escócia x Espanha",
-    "odd": 1.85,
-    "unidades": 1,
-    "desde": 1785144004614
-   },
-   "iniciadoEm": 1785144004614
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785140404005,
+   "euro": 1785144183709,
    "super": 1785141424509,
    "premier": 1785143678298,
    "copa": 1785142864305
@@ -503,12 +474,12 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": 2.9
+   "2026-07-27": 3.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRR",
-   "n": 9,
+   "tipo": "coluna",
+   "chave": ":23",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
