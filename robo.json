@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -114.8,
-  "ciclos": 516,
-  "greens": 332,
+  "saldo": -112.8,
+  "ciclos": 517,
+  "greens": 333,
   "redsCiclo": 90,
   "aborts": 0,
   "descartes": 94,
   "historico": [
+   {
+    "quando": "2026-07-27T21:22:58.594Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "euro · Dinamarca x Suíça @2.25 (tiro 3) · gatilho: seq GRGGR"
+   },
    {
     "quando": "2026-07-27T19:59:39.996Z",
     "resultado": "GREEN",
@@ -276,64 +282,16 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho odd 2.45) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-27T13:08:40.706Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "premier · Norwich x Brighton @2.05 (tiro 3) · gatilho: seq GRGGR"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "22:14",
-     "jogo": "Eslováquia x Ucrânia",
-     "odd": 2.3
-    },
-    {
-     "h": "22:17",
-     "jogo": "República Tcheca x Itália",
-     "odd": 2.55
-    },
-    {
-     "h": "22:20",
-     "jogo": "Dinamarca x Suíça",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "seq GRGGR",
-   "alvo": {
-    "h": "22:20",
-    "jogo": "Dinamarca x Suíça",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1785187279100
-   },
-   "iniciadoEm": 1785186713298,
-   "tiros": [
-    {
-     "h": "22:14",
-     "jogo": "Eslováquia x Ucrânia",
-     "odd": 2.3,
-     "unidades": 1
-    },
-    {
-     "h": "22:17",
-     "jogo": "República Tcheca x Itália",
-     "odd": 2.55,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "euro": 1785187378397
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785180117405,
    "premier": 1785182379795,
-   "euro": 1785166795008,
+   "euro": 1785187378397,
    "super": 1785169885012
   },
   "dias": {
@@ -349,7 +307,7 @@
    "2026-07-24": -1.7,
    "2026-07-25": 21,
    "2026-07-26": -3.3,
-   "2026-07-27": -69.1
+   "2026-07-27": -67.1
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -550,9 +508,9 @@
    "2026-07-27": 6.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRG",
-   "n": 17,
+   "tipo": "coluna",
+   "chave": ":24",
+   "n": 22,
    "start": 1
   },
   "_obs": {}
