@@ -450,12 +450,41 @@
    }
   ],
   "consumidas": {
-   "premier": 1785147819698,
    "euro": 1785148124304,
    "super": 1785149924600,
    "copa": 1785151141810
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:24",
+     "jogo": "Islington x Norwich",
+     "odd": 2
+    },
+    {
+     "h": "12:27",
+     "jogo": "Wolverhampton x Watford",
+     "odd": 1.93
+    },
+    {
+     "h": "12:30",
+     "jogo": "United x Leicester",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "coluna :24",
+   "alvo": {
+    "h": "12:24",
+    "jogo": "Islington x Norwich",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1785151423806
+   },
+   "iniciadoEm": 1785151423806
+  },
   "cooldown": {
    "euro": 1785148124304,
    "super": 1785149924600,
@@ -477,10 +506,10 @@
    "2026-07-27": 1.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Argentina",
-   "n": 9,
-   "start": 2
+   "tipo": "coluna",
+   "chave": ":24",
+   "n": 12,
+   "start": 1
   },
   "_obs": {}
  }
