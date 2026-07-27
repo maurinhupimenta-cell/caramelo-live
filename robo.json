@@ -317,13 +317,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -29.6,
-  "ciclos": 489,
-  "greens": 343,
+  "saldo": -28.6,
+  "ciclos": 490,
+  "greens": 344,
   "redsCiclo": 54,
   "aborts": 0,
   "descartes": 92,
   "historico": [
+   {
+    "quando": "2026-07-27T02:33:54.504Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Canadá x Espanha @1.98 (tiro 1) · gatilho: odd 1.93"
+   },
    {
     "quando": "2026-07-27T02:19:54.804Z",
     "resultado": "GREEN",
@@ -437,54 +443,19 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "euro · Turquia x França @1.98 (tiro 3) · gatilho: odd 1.9"
-   },
-   {
-    "quando": "2026-07-26T18:49:02.500Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "copa · Áustria x RD Congo @1.93 (tiro 2) · gatilho: time Áustria"
    }
   ],
   "consumidas": {
    "premier": 1785117763702,
-   "euro": 1785118794700
+   "euro": 1785118794700,
+   "copa": 1785119634312
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:31",
-     "jogo": "Canadá x Espanha",
-     "odd": 1.98
-    },
-    {
-     "h": "03:34",
-     "jogo": "Jordânia x Uruguai",
-     "odd": 1.93
-    },
-    {
-     "h": "02:43",
-     "jogo": "Noruega x Senegal",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "odd 1.93",
-   "alvo": {
-    "h": "03:31",
-    "jogo": "Canadá x Espanha",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785118913907
-   },
-   "iniciadoEm": 1785118913907
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785118794700,
    "super": 1785115853006,
    "premier": 1785117763702,
-   "copa": 1785106496005
+   "copa": 1785119634312
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -497,7 +468,7 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": 12.3
+   "2026-07-26": 13.3
   },
   "_gatilhoAtual": {
    "tipo": "odd",
