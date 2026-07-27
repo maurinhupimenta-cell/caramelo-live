@@ -1441,6 +1441,42 @@ app.post("/api/curve", (req, res) => {
   }
 });
 
+// ===== ACUMULADO DO DIA (pedido do usuario): a janela rolante esquece o passado e so oscila.
+// Estas duas linhas ZERAM as 00h do relogio do jogo e acumulam o dia inteiro:
+//  - pct   = % de pagamento acumulada desde as 00h (comeca instavel, estabiliza; comparar com a base)
+//  - saldo = batalha OVER x UNDER: +1 quando o mercado paga, -1 quando o oposto paga.
+//            Sobe DE VERDADE quando o mercado esta vencendo o lado contrario no dia.
+function acumuladoDia(liga, mkt) {
+  const d = store[liga]; if (!d) return null;
+  const games = listaCheia(d);
+  if (games.length < 5) return null;
+  let idxDia = 0;
+  for (let i = 1; i < games.length; i++) {
+    const h1 = parseInt((games[i].horario || "").split(":")[0]);
+    const h0 = parseInt((games[i - 1].horario || "").split(":")[0]);
+    if (!isNaN(h1) && !isNaN(h0) && h1 < h0 - 12) idxDia = i;
+  }
+  const dia = games.slice(idxDia);
+  if (dia.length < 3) return null;
+  const pct = [], saldo = [], horas = [];
+  let pagos = 0, sal = 0;
+  dia.forEach((g, i) => {
+    const p = pays(g, mkt);
+    if (p) pagos++;
+    sal += p ? 1 : -1;
+    pct.push(Math.round(pagos / (i + 1) * 1000) / 10);
+    saldo.push(sal);
+    horas.push(g.horario || "");
+  });
+  const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
+  // odd media do dia -> ponto de equilibrio (a % que empata com a casa)
+  const k = mkt === "ambas" ? "ambs" : mkt;
+  const odds = dia.map(g => g.odds && g.odds[k]).filter(o => o > 1.01);
+  const oddMedia = odds.length ? odds.reduce((a, b) => a + b, 0) / odds.length : null;
+  const equilibrio = oddMedia ? Math.round(100 / oddMedia * 10) / 10 : null;
+  return { pct, saldo, horas, base, equilibrio, oddMedia: oddMedia ? Math.round(oddMedia * 100) / 100 : null, jogos: dia.length, desde: horas[0] || "" };
+}
+
 app.get("/api/liga/:liga", (req, res) => {
   const liga = req.params.liga;
   if (!LIGAS.includes(liga)) return res.status(404).json({ erro: "liga invalida" });
@@ -1572,6 +1608,7 @@ app.get("/api/liga/:liga", (req, res) => {
     proximos,
     rankTimes,
     ultimos: d.ultimos,
+    acum: acumuladoDia(liga, mkt),
     curvaReal: ehReal,
     fonte: d.fonte || "json"
   });
