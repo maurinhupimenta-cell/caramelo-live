@@ -1670,26 +1670,37 @@ app.get("/api/auditoria", (req, res) => {
     };
 
     // avalia uma REGRA (funcao que diz se o ciclo comeca no indice i) sobre uma liga|mkt
+    // RIGOR: (1) ciclos NAO SOBREPOSTOS (um ciclo consome 3 jogos; o proximo so depois),
+    // senao 20 "amostras" sao a mesma janela contada 20x. (2) validacao pela LINHA DO TEMPO
+    // (1a metade do historico x 2a metade), nao pela ordem das amostras da propria regra -
+    // uma regra que so acontece num bloco contiguo (ex: "hora 22h" = UMA hora do dia) tinha
+    // as duas metades vindo do MESMO bloco: validacao falsa.
     const avalia = (games, mkt, regra) => {
+      const meioTempo = Math.floor(games.length / 2);
       const res = [];
+      let prox = 0;
       for (let i = 0; i + 4 < games.length; i++) {
+        if (i < prox) continue;                 // sem sobreposicao
         if (!regra(games, i)) continue;
         const u = simulaCiclo(games, i, mkt);
         if (u == null) continue;
         res.push({ i, u });
+        prox = i + 4;
       }
-      if (res.length < 12) return null;
+      const h1 = res.filter(r => r.i < meioTempo).map(r => r.u);
+      const h2 = res.filter(r => r.i >= meioTempo).map(r => r.u);
+      if (res.length < 20 || h1.length < 8 || h2.length < 8) return null; // precisa existir nas DUAS eras
       const soma = a => a.reduce((x, y) => x + y, 0);
-      const meio = Math.floor(res.length / 2);
-      const h1 = res.slice(0, meio).map(r => r.u), h2 = res.slice(meio).map(r => r.u);
       const total = soma(res.map(r => r.u));
       const greens = res.filter(r => r.u > 0).length;
+      const s1 = soma(h1), s2 = soma(h2);
       return {
         n: res.length, greens, taxa: Math.round(greens / res.length * 100),
         unidades: Math.round(total * 10) / 10,
         porCiclo: Math.round(total / res.length * 100) / 100,
-        metade1: Math.round(soma(h1) * 10) / 10, metade2: Math.round(soma(h2) * 10) / 10,
-        robusto: soma(h1) > 0 && soma(h2) > 0
+        metade1: Math.round(s1 * 10) / 10, n1: h1.length,
+        metade2: Math.round(s2 * 10) / 10, n2: h2.length,
+        robusto: s1 > 0 && s2 > 0
       };
     };
 
