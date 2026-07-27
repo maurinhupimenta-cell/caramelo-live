@@ -287,7 +287,37 @@
   "consumidas": {
    "super": 1785140704412
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:26",
+     "jogo": "Croácia x Polônia",
+     "odd": 2.4
+    },
+    {
+     "h": "09:29",
+     "jogo": "Albânia x Alemanha",
+     "odd": 2.45
+    },
+    {
+     "h": "09:32",
+     "jogo": "Países Baixos x Bélgica",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "coluna :26",
+   "alvo": {
+    "h": "09:26",
+    "jogo": "Croácia x Polônia",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1785140744001
+   },
+   "iniciadoEm": 1785140744001
+  },
   "cooldown": {
    "copa": 1785137102404,
    "premier": 1785136478212,
@@ -311,7 +341,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":19",
+   "chave": ":26",
    "n": 9,
    "start": 1
   },
@@ -447,12 +477,41 @@
    }
   ],
   "consumidas": {
-   "super": 1785137264609,
    "copa": 1785138722101,
    "premier": 1785139719599,
    "euro": 1785140404005
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:28",
+     "jogo": "Buenos Aires x Porto Alegre",
+     "odd": 2.1
+    },
+    {
+     "h": "09:31",
+     "jogo": "Sao Paulo x La Plata",
+     "odd": 2.02
+    },
+    {
+     "h": "09:34",
+     "jogo": "Santos x Quito",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "odd 2.02",
+   "alvo": {
+    "h": "09:28",
+    "jogo": "Buenos Aires x Porto Alegre",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785140864808
+   },
+   "iniciadoEm": 1785140864808
+  },
   "cooldown": {
    "euro": 1785140404005,
    "super": 1785137264609,
@@ -474,9 +533,9 @@
    "2026-07-27": 7.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":20",
-   "n": 9,
+   "tipo": "odd",
+   "chave": "2.02",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
