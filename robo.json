@@ -287,7 +287,37 @@
   "consumidas": {
    "copa": 1785144141904
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:48",
+     "jogo": "Aston x Burnley",
+     "odd": 2.25
+    },
+    {
+     "h": "10:51",
+     "jogo": "West Ham x Leicester",
+     "odd": 2.55
+    },
+    {
+     "h": "10:54",
+     "jogo": "Newcastle x United",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "seq RRRGG",
+   "alvo": {
+    "h": "10:48",
+    "jogo": "Aston x Burnley",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785145508698
+   },
+   "iniciadoEm": 1785145508698
+  },
   "cooldown": {
    "copa": 1785144141904,
    "premier": 1785141888309,
@@ -310,9 +340,9 @@
    "2026-07-27": -32.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":19",
-   "n": 10,
+   "tipo": "seq",
+   "chave": "RRRGG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
