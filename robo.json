@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -44.3,
-  "ciclos": 470,
+  "saldo": -51.3,
+  "ciclos": 471,
   "greens": 312,
-  "redsCiclo": 76,
+  "redsCiclo": 77,
   "aborts": 0,
   "descartes": 82,
   "historico": [
+   {
+    "quando": "2026-07-27T05:04:03.306Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: time Agua Branca"
+   },
    {
     "quando": "2026-07-27T04:53:01.305Z",
     "resultado": "GREEN",
@@ -276,63 +282,20 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-26T19:04:20.010Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho odd 2.02) — liga REARMADA"
    }
   ],
   "consumidas": {
    "copa": 1785125520707,
    "premier": 1785126248011,
-   "euro": 1785127981198
+   "euro": 1785127981198,
+   "super": 1785128643104
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "05:55",
-     "jogo": "Belo Horizonte x Itaquera",
-     "odd": 2.15
-    },
-    {
-     "h": "05:58",
-     "jogo": "Agua Branca x Bogota",
-     "odd": 2.45
-    },
-    {
-     "h": "06:01",
-     "jogo": "Asuncion x Santos",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "time Agua Branca",
-   "alvo": {
-    "h": "05:58",
-    "jogo": "Agua Branca x Bogota",
-    "odd": 2.45,
-    "unidades": 2,
-    "desde": 1785128383706
-   },
-   "iniciadoEm": 1785127983405,
-   "tiros": [
-    {
-     "h": "05:55",
-     "jogo": "Belo Horizonte x Itaquera",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785125520707,
    "premier": 1785126248011,
    "euro": 1785127981198,
-   "super": 1785124341703
+   "super": 1785128643104
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -347,13 +310,13 @@
    "2026-07-24": -1.7,
    "2026-07-25": 21,
    "2026-07-26": -3.3,
-   "2026-07-27": 1.4
+   "2026-07-27": -5.6
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.3",
    "n": 12,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -545,7 +508,7 @@
    "tipo": "odd",
    "chave": "1.98",
    "n": 10,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
