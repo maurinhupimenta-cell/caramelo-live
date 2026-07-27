@@ -451,7 +451,37 @@
    "premier": 1785183105906,
    "super": 1785184303396
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:34",
+     "jogo": "Qatar x África do Sul",
+     "odd": 2.1
+    },
+    {
+     "h": "21:37",
+     "jogo": "Iraque x Nova Zelândia",
+     "odd": 2.05
+    },
+    {
+     "h": "21:40",
+     "jogo": "Costa do Marfim x Curação",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "seq RGGRG",
+   "alvo": {
+    "h": "21:34",
+    "jogo": "Qatar x África do Sul",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785184377103
+   },
+   "iniciadoEm": 1785184377103
+  },
   "cooldown": {
    "euro": 1785181257402,
    "super": 1785184303396,
@@ -474,8 +504,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRRG",
-   "n": 14,
+   "chave": "RGGRG",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
