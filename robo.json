@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -93,
-  "ciclos": 504,
-  "greens": 328,
+  "saldo": -91.5,
+  "ciclos": 505,
+  "greens": 329,
   "redsCiclo": 86,
   "aborts": 0,
   "descartes": 90,
   "historico": [
+   {
+    "quando": "2026-07-27T15:22:04.102Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "copa · Suíça x Colômbia @2.25 (tiro 2) · gatilho: time Suíça"
+   },
    {
     "quando": "2026-07-27T15:13:25.301Z",
     "resultado": "RED_CICLO",
@@ -276,59 +282,16 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: coluna :16"
-   },
-   {
-    "quando": "2026-07-27T09:06:42.504Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho coluna :16) — liga REARMADA"
    }
   ],
   "consumidas": {
    "premier": 1785164050405,
-   "super": 1785165205110
+   "super": 1785165205110,
+   "copa": 1785165723909
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "16:16",
-     "jogo": "Espanha x Gana",
-     "odd": 2.3
-    },
-    {
-     "h": "16:19",
-     "jogo": "Suíça x Colômbia",
-     "odd": 2.25
-    },
-    {
-     "h": "16:22",
-     "jogo": "Gana x Qatar",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "time Suíça",
-   "alvo": {
-    "h": "16:19",
-    "jogo": "Suíça x Colômbia",
-    "odd": 2.25,
-    "unidades": 2,
-    "desde": 1785165542610
-   },
-   "iniciadoEm": 1785165207306,
-   "tiros": [
-    {
-     "h": "16:16",
-     "jogo": "Espanha x Gana",
-     "odd": 2.3,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785159261608,
+   "copa": 1785165723909,
    "premier": 1785164050405,
    "euro": 1785159363106,
    "super": 1785165205110
@@ -346,7 +309,7 @@
    "2026-07-24": -1.7,
    "2026-07-25": 21,
    "2026-07-26": -3.3,
-   "2026-07-27": -47.3
+   "2026-07-27": -45.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
@@ -489,7 +452,37 @@
    "premier": 1785162593305,
    "super": 1785165545602
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:20",
+     "jogo": "Áustria x Hungria",
+     "odd": 2.07
+    },
+    {
+     "h": "16:23",
+     "jogo": "Romênia x Sérvia",
+     "odd": 2
+    },
+    {
+     "h": "16:26",
+     "jogo": "Portugal x Eslovênia",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "odd 2",
+   "alvo": {
+    "h": "16:20",
+    "jogo": "Áustria x Hungria",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1785165547303
+   },
+   "iniciadoEm": 1785165547303
+  },
   "cooldown": {
    "euro": 1785158383707,
    "super": 1785165545602,
@@ -512,8 +505,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.02",
-   "n": 20,
+   "chave": "2",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
