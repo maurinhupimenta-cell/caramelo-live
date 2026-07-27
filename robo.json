@@ -320,13 +320,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -29.1,
-  "ciclos": 499,
-  "greens": 351,
+  "saldo": -28,
+  "ciclos": 500,
+  "greens": 352,
   "redsCiclo": 55,
   "aborts": 0,
   "descartes": 93,
   "historico": [
+   {
+    "quando": "2026-07-27T05:29:38.805Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Palace x Leeds @2.1 (tiro 1) · gatilho: time Norwich"
+   },
    {
     "quando": "2026-07-27T05:19:58.303Z",
     "resultado": "GREEN",
@@ -440,53 +446,18 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · Islington x Brentford @2.05 (tiro 1) · gatilho: seq RGRRG"
-   },
-   {
-    "quando": "2026-07-26T21:53:57.004Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "euro · Hungria x Geórgia @2.15 (tiro 1) · gatilho: coluna :50"
    }
   ],
   "consumidas": {
    "copa": 1785129356109,
-   "euro": 1785129598111
+   "euro": 1785129598111,
+   "premier": 1785130178609
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:27",
-     "jogo": "Palace x Leeds",
-     "odd": 2.1
-    },
-    {
-     "h": "06:30",
-     "jogo": "Norwich x Leicester",
-     "odd": 1.95
-    },
-    {
-     "h": "06:33",
-     "jogo": "Islington x Liverpool",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "time Norwich",
-   "alvo": {
-    "h": "06:27",
-    "jogo": "Palace x Leeds",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785129894906
-   },
-   "iniciadoEm": 1785129894906
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785129598111,
    "super": 1785124341999,
-   "premier": 1785126248299,
+   "premier": 1785130178609,
    "copa": 1785129356109
   },
   "dias": {
@@ -501,7 +472,7 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": -1.5
+   "2026-07-27": -0.4
   },
   "_gatilhoAtual": {
    "tipo": "time",
