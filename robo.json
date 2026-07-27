@@ -448,7 +448,37 @@
   "consumidas": {
    "super": 1785115853006
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:00",
+     "jogo": "Southampton x West Ham",
+     "odd": 2.2
+    },
+    {
+     "h": "03:03",
+     "jogo": "Norwich x City",
+     "odd": 1.9
+    },
+    {
+     "h": "03:06",
+     "jogo": "Newcastle x West Ham",
+     "odd": 2
+    }
+   ],
+   "gatilho": "time Norwich",
+   "alvo": {
+    "h": "03:00",
+    "jogo": "Southampton x West Ham",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785117473299
+   },
+   "iniciadoEm": 1785117473299
+  },
   "cooldown": {
    "euro": 1785106675507,
    "super": 1785115853006,
@@ -469,8 +499,8 @@
    "2026-07-26": 10.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGG",
+   "tipo": "time",
+   "chave": "Norwich",
    "n": 9,
    "start": 1
   },
