@@ -454,7 +454,37 @@
    "euro": 1785158383707,
    "super": 1785159644498
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:46",
+     "jogo": "Jordânia x República Tcheca",
+     "odd": 2
+    },
+    {
+     "h": "14:49",
+     "jogo": "Países Baixos x Argentina",
+     "odd": 1.93
+    },
+    {
+     "h": "14:52",
+     "jogo": "Paraguai x Iraque",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time Argentina",
+   "alvo": {
+    "h": "14:46",
+    "jogo": "Jordânia x República Tcheca",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1785159882305
+   },
+   "iniciadoEm": 1785159882305
+  },
   "cooldown": {
    "euro": 1785158383707,
    "super": 1785159644498,
@@ -476,9 +506,9 @@
    "2026-07-27": 9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.83",
-   "n": 17,
+   "tipo": "time",
+   "chave": "Argentina",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
