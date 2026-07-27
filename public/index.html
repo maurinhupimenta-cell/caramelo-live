@@ -738,12 +738,16 @@ function abasGraficoHtml(){
 // Linha 2: ACUMULADO - % de pagamento do dia, com a base historica e o ponto de EQUILIBRIO
 //          (a % que empata com a odd media: acima disso o dia esta pagando mais do que custa).
 function acumChartHtml(ac){
-  if(!ac||!ac.pct||ac.pct.length<3)return '';
-  // A LINHA E A % ACUMULADA desde as 00h: cada jogo novo entra numa media que cresce,
-  // entao um pagamento sozinho quase nao mexe - ela so sobe quando o ACUMULADO sobe
-  // (de 30% para 31%). Escala TRAVADA em 0-100 como num grafico de trader: sem zoom
-  // automatico, movimento pequeno aparece pequeno. Linha amarela = ponto de equilibrio.
-  const p=ac.pct, n=p.length, cur=p[n-1];
+  if(!ac||!ac.pct||ac.pct.length<30)return '<div class="note">acumulado do dia ainda aquecendo (precisa de ~30 jogos desde as 00h)</div>';
+  // 1) DESCARTA O AQUECIMENTO: o 1o jogo do dia da 100% ou 0% e os primeiros valores
+  //    despencam (100, 50, 33, 25...). Isso esmagava o dia inteiro. Comeca no jogo 30.
+  const CORTE=30;
+  const p=ac.pct.slice(CORTE), hs=(ac.horas||[]).slice(CORTE);
+  const n=p.length, cur=p[n-1];
+  // 2) ESCALA FIXA E UTIL: janela de 40 pontos ancorada na base do mercado (nao no dado do dia),
+  //    entao ela NAO reajusta conforme o dia anda - movimento pequeno aparece pequeno.
+  const centro=ac.equilibrio!=null?(ac.base+ac.equilibrio)/2:ac.base;
+  const lo=Math.max(0,Math.round(centro-20)), hi=Math.min(100,Math.round(centro+20));
   const acima=ac.equilibrio!=null&&cur>ac.equilibrio;
   const cor=acima?'var(--greenb)':'var(--red)';
   const dif=ac.equilibrio!=null?Math.round((cur-ac.equilibrio)*10)/10:null;
@@ -752,8 +756,8 @@ function acumChartHtml(ac){
       <b>📐 Acumulado do dia <span class="note" style="font-size:10px">(soma reta desde as 00h · ${ac.jogos} jogos desde ${ac.desde})</span></b>
       <span><b style="color:${cor}">${cur}%</b> <span class="note">· equilíbrio ${ac.equilibrio!=null?ac.equilibrio+'%':'—'}${dif!=null?` (${dif>0?'+':''}${dif})`:''} · base ${ac.base}%</span></span>
     </div>
-    ${lineChart(p, [], null, false, ac.horas, [0,100], ac.equilibrio)}
-    <div class="note" style="font-size:10px;margin-top:4px">Linha = <b>% acumulada do dia inteiro</b> (00h → 23:59). Como a conta soma todos os jogos do dia, um pagamento sozinho quase não mexe: ela <b>só sobe quando o acumulado sobe de verdade</b> (30% → 31%). Escala travada em 0–100%, sem zoom. Acima da linha amarela o dia paga mais do que a odd cobra.</div>
+    ${lineChart(p, [], null, false, hs, [lo,hi], ac.equilibrio)}
+    <div class="note" style="font-size:10px;margin-top:4px">Linha = <b>% acumulada do dia</b> (00h → 23:59), começando no 30º jogo (antes disso a conta ainda oscila demais). Como soma o dia inteiro, um pagamento sozinho quase não mexe: ela <b>só sobe quando o acumulado sobe de verdade</b>. Escala fixa ${lo}–${hi}%, sem zoom automático. Acima da linha amarela o dia paga mais do que a odd cobra.</div>
   </div>`;
 }
 
