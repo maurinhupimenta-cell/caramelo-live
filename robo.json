@@ -319,12 +319,18 @@
  },
  "ambas": {
   "saldo": -32.7,
-  "ciclos": 539,
+  "ciclos": 540,
   "greens": 382,
   "redsCiclo": 60,
   "aborts": 0,
-  "descartes": 97,
+  "descartes": 98,
   "historico": [
+   {
+    "quando": "2026-07-27T17:37:25.109Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho odd 1.83) — liga REARMADA"
+   },
    {
     "quando": "2026-07-27T17:23:04.507Z",
     "resultado": "GREEN",
@@ -438,16 +444,9 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "euro · Eslovênia x Croácia @2.15 (tiro 2) · gatilho: coluna :47"
-   },
-   {
-    "quando": "2026-07-27T11:29:48.406Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "premier · Wolverhampton x Watford @1.93 (tiro 2) · gatilho: coluna :24"
    }
   ],
   "consumidas": {
-   "super": 1785169885299,
    "premier": 1785170864207,
    "copa": 1785171842003,
    "euro": 1785172984399
@@ -479,6 +478,11 @@
    "n": 9,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1785173845108,
+    "gatilho": "odd 1.83"
+   }
+  }
  }
 }
