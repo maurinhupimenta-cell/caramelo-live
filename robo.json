@@ -454,7 +454,37 @@
    "copa": 1785151141810,
    "premier": 1785151788201
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:44",
+     "jogo": "Turquia x Eslováquia",
+     "odd": 2.15
+    },
+    {
+     "h": "12:47",
+     "jogo": "Eslovênia x Croácia",
+     "odd": 2.15
+    },
+    {
+     "h": "12:50",
+     "jogo": "Escócia x Alemanha",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "coluna :47",
+   "alvo": {
+    "h": "12:44",
+    "jogo": "Turquia x Eslováquia",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785152266803
+   },
+   "iniciadoEm": 1785152266803
+  },
   "cooldown": {
    "euro": 1785148124304,
    "super": 1785149924600,
@@ -477,9 +507,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":24",
+   "chave": ":47",
    "n": 12,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
