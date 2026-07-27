@@ -288,7 +288,37 @@
    "premier": 1785164050405,
    "super": 1785165205110
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:16",
+     "jogo": "Espanha x Gana",
+     "odd": 2.3
+    },
+    {
+     "h": "16:19",
+     "jogo": "Suíça x Colômbia",
+     "odd": 2.25
+    },
+    {
+     "h": "16:22",
+     "jogo": "Gana x Qatar",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "time Suíça",
+   "alvo": {
+    "h": "16:16",
+    "jogo": "Espanha x Gana",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1785165207306
+   },
+   "iniciadoEm": 1785165207306
+  },
   "cooldown": {
    "copa": 1785159261608,
    "premier": 1785164050405,
@@ -320,12 +350,18 @@
  },
  "ambas": {
   "saldo": -24.8,
-  "ciclos": 529,
+  "ciclos": 530,
   "greens": 376,
   "redsCiclo": 58,
   "aborts": 0,
-  "descartes": 95,
+  "descartes": 96,
   "historico": [
+   {
+    "quando": "2026-07-27T15:16:03.698Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Suíça) — liga REARMADA"
+   },
    {
     "quando": "2026-07-27T14:29:53.498Z",
     "resultado": "GREEN",
@@ -439,16 +475,9 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "premier · Islington x West Ham @2.15 (tiro 1) · gatilho: odd 2.15"
-   },
-   {
-    "quando": "2026-07-27T09:01:04.502Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: seq RRRGR"
    }
   ],
   "consumidas": {
-   "copa": 1785161744411,
    "premier": 1785162593305
   },
   "ciclo": {
@@ -506,8 +535,13 @@
    "tipo": "odd",
    "chave": "2.02",
    "n": 20,
-   "start": 2
+   "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1785165363698,
+    "gatilho": "time Suíça"
+   }
+  }
  }
 }
