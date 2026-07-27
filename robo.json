@@ -319,12 +319,18 @@
  },
  "ambas": {
   "saldo": -24.7,
-  "ciclos": 548,
+  "ciclos": 549,
   "greens": 390,
   "redsCiclo": 60,
   "aborts": 0,
-  "descartes": 98,
+  "descartes": 99,
   "historico": [
+   {
+    "quando": "2026-07-27T20:26:55.596Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-27T20:11:46.099Z",
     "resultado": "GREEN",
@@ -438,12 +444,6 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho time Suíça) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-27T14:29:53.498Z",
-    "resultado": "GREEN",
-    "unidades": 0.8,
-    "detalhe": "premier · Islington x Burnley @1.95 (tiro 3) · gatilho: coluna :24"
    }
   ],
   "consumidas": {
@@ -502,10 +502,10 @@
    "2026-07-27": 2.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.83",
-   "n": 23,
-   "start": 3
+   "tipo": "time",
+   "chave": "Croácia",
+   "n": 15,
+   "start": 1
   },
   "_obs": {}
  }
