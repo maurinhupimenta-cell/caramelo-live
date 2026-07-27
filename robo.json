@@ -320,13 +320,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -18.9,
-  "ciclos": 509,
+  "saldo": -25.9,
+  "ciclos": 510,
   "greens": 361,
-  "redsCiclo": 55,
+  "redsCiclo": 56,
   "aborts": 0,
   "descartes": 93,
   "historico": [
+   {
+    "quando": "2026-07-27T09:01:04.502Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: seq RRRGR"
+   },
    {
     "quando": "2026-07-27T08:37:04.701Z",
     "resultado": "GREEN",
@@ -440,69 +446,20 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "super · Rio de Janeiro x Avellaneda @2.02 (tiro 1) · gatilho: placar goleada (3+)"
-   },
-   {
-    "quando": "2026-07-27T02:33:54.504Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Canadá x Espanha @1.98 (tiro 1) · gatilho: odd 1.93"
    }
   ],
   "consumidas": {
    "premier": 1785139719599,
    "euro": 1785140404005,
-   "super": 1785141424509
+   "super": 1785141424509,
+   "copa": 1785142864305
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "09:52",
-     "jogo": "Canadá x Brasil",
-     "odd": 2
-    },
-    {
-     "h": "09:55",
-     "jogo": "Alemanha x Coreia do Sul",
-     "odd": 2.05
-    },
-    {
-     "h": "09:58",
-     "jogo": "Argentina x Colômbia",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "seq RRRGR",
-   "alvo": {
-    "h": "09:58",
-    "jogo": "Argentina x Colômbia",
-    "odd": 1.9,
-    "unidades": 4,
-    "desde": 1785142722101
-   },
-   "iniciadoEm": 1785142322799,
-   "tiros": [
-    {
-     "h": "09:52",
-     "jogo": "Canadá x Brasil",
-     "odd": 2,
-     "unidades": 1
-    },
-    {
-     "h": "09:55",
-     "jogo": "Alemanha x Coreia do Sul",
-     "odd": 2.05,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785140404005,
    "super": 1785141424509,
    "premier": 1785139719599,
-   "copa": 1785138722101
+   "copa": 1785142864305
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -516,13 +473,13 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": 8.7
+   "2026-07-27": 1.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":07",
-   "n": 10,
-   "start": 2
+   "tipo": "seq",
+   "chave": "RRRRR",
+   "n": 13,
+   "start": 1
   },
   "_obs": {}
  }
