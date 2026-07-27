@@ -458,8 +458,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "22:21",
@@ -479,13 +479,21 @@
    ],
    "gatilho": "coluna :24",
    "alvo": {
-    "h": "22:21",
-    "jogo": "Southampton x Leicester",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785187059996
+    "h": "22:24",
+    "jogo": "Palace x Brentford",
+    "odd": 1.98,
+    "unidades": 2,
+    "desde": 1785187466498
    },
-   "iniciadoEm": 1785187059996
+   "iniciadoEm": 1785187059996,
+   "tiros": [
+    {
+     "h": "22:21",
+     "jogo": "Southampton x Leicester",
+     "odd": 2.05,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785187058494,
@@ -508,9 +516,9 @@
    "2026-07-27": 6.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":24",
-   "n": 22,
+   "tipo": "seq",
+   "chave": "RGRR",
+   "n": 24,
    "start": 1
   },
   "_obs": {}
