@@ -289,8 +289,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "08:01",
@@ -310,13 +310,21 @@
    ],
    "gatilho": "coluna :04",
    "alvo": {
-    "h": "08:01",
-    "jogo": "Penarol x Santos",
-    "odd": 2.55,
-    "unidades": 1,
-    "desde": 1785135183706
+    "h": "08:04",
+    "jogo": "Bogota x Rio de Janeiro",
+    "odd": 2.45,
+    "unidades": 2,
+    "desde": 1785135861804
    },
-   "iniciadoEm": 1785135183706
+   "iniciadoEm": 1785135183706,
+   "tiros": [
+    {
+     "h": "08:01",
+     "jogo": "Penarol x Santos",
+     "odd": 2.55,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785130080208,
@@ -341,16 +349,11 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":04",
+   "chave": ":10",
    "n": 8,
    "start": 1
   },
-  "_obs": {
-   "premier": {
-    "desde": 1785135599301,
-    "gatilho": "odd 2.15"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -25,
