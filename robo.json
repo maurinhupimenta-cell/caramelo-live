@@ -452,7 +452,37 @@
    "euro": 1785181257402,
    "premier": 1785183105906
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:19",
+     "jogo": "Quito x Avellaneda",
+     "odd": 2
+    },
+    {
+     "h": "21:22",
+     "jogo": "Belo Horizonte x Agua Branca",
+     "odd": 1.83
+    },
+    {
+     "h": "21:25",
+     "jogo": "Rio de Janeiro x La Plata",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "odd 1.83",
+   "alvo": {
+    "h": "21:19",
+    "jogo": "Quito x Avellaneda",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1785183112100
+   },
+   "iniciadoEm": 1785183112100
+  },
   "cooldown": {
    "euro": 1785181257402,
    "super": 1785179240004,
@@ -474,10 +504,10 @@
    "2026-07-27": 2.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGGG",
-   "n": 12,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.83",
+   "n": 23,
+   "start": 3
   },
   "_obs": {}
  }
