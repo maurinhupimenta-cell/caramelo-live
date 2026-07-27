@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -46.8,
-  "ciclos": 468,
-  "greens": 310,
+  "saldo": -45.6,
+  "ciclos": 469,
+  "greens": 311,
   "redsCiclo": 76,
   "aborts": 0,
   "descartes": 82,
   "historico": [
+   {
+    "quando": "2026-07-27T04:24:08.204Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · Wolverhampton x Watford @2.15 (tiro 1) · gatilho: time Brighton"
+   },
    {
     "quando": "2026-07-27T04:12:00.905Z",
     "resultado": "GREEN",
@@ -276,53 +282,18 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "euro · Hungria x Áustria @2.4 (tiro 1) · gatilho: seq RGGRR"
-   },
-   {
-    "quando": "2026-07-26T18:49:02.208Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "copa · Áustria x RD Congo @2.15 (tiro 2) · gatilho: time Áustria"
    }
   ],
   "consumidas": {
    "euro": 1785123614112,
    "super": 1785124341703,
-   "copa": 1785125520707
+   "copa": 1785125520707,
+   "premier": 1785126248011
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:21",
-     "jogo": "Wolverhampton x Watford",
-     "odd": 2.15
-    },
-    {
-     "h": "05:24",
-     "jogo": "Brighton x Burnley",
-     "odd": 2
-    },
-    {
-     "h": "05:27",
-     "jogo": "United x Norwich",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Brighton",
-   "alvo": {
-    "h": "05:21",
-    "jogo": "Wolverhampton x Watford",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785125522404
-   },
-   "iniciadoEm": 1785125522404
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785125520707,
-   "premier": 1785121734507,
+   "premier": 1785126248011,
    "euro": 1785123614112,
    "super": 1785124341703
   },
@@ -339,7 +310,7 @@
    "2026-07-24": -1.7,
    "2026-07-25": 21,
    "2026-07-26": -3.3,
-   "2026-07-27": -1.1
+   "2026-07-27": 0.1
   },
   "_gatilhoAtual": {
    "tipo": "seq",
