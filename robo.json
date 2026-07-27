@@ -497,7 +497,37 @@
    "euro": 1785166143899,
    "premier": 1785166575398
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:46",
+     "jogo": "Croácia x Panamá",
+     "odd": 2.2
+    },
+    {
+     "h": "16:49",
+     "jogo": "Inglaterra x Jordânia",
+     "odd": 2.05
+    },
+    {
+     "h": "16:52",
+     "jogo": "Croácia x Espanha",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "time Inglaterra",
+   "alvo": {
+    "h": "16:46",
+    "jogo": "Croácia x Panamá",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785166622600
+   },
+   "iniciadoEm": 1785166622600
+  },
   "cooldown": {
    "euro": 1785166143899,
    "super": 1785165545602,
@@ -519,10 +549,10 @@
    "2026-07-27": -2.1
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.15",
+   "tipo": "time",
+   "chave": "Inglaterra",
    "n": 12,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
