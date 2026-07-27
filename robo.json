@@ -315,7 +315,12 @@
    "n": 9,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1785185394398,
+    "gatilho": "odd 2.15"
+   }
+  }
  },
  "ambas": {
   "saldo": -23.1,
@@ -450,7 +455,37 @@
    "premier": 1785183105906,
    "super": 1785184303396
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:52",
+     "jogo": "Egito x Brasil",
+     "odd": 1.9
+    },
+    {
+     "h": "21:55",
+     "jogo": "Senegal x Países Baixos",
+     "odd": 2.1
+    },
+    {
+     "h": "21:58",
+     "jogo": "Uzbequistão x Equador",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "coluna :52",
+   "alvo": {
+    "h": "21:52",
+    "jogo": "Egito x Brasil",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1785185394496
+   },
+   "iniciadoEm": 1785185394496
+  },
   "cooldown": {
    "euro": 1785181257402,
    "super": 1785184303396,
@@ -472,16 +507,11 @@
    "2026-07-27": 4.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGRG",
-   "n": 10,
+   "tipo": "coluna",
+   "chave": ":52",
+   "n": 15,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785185335504,
-    "gatilho": "coluna :52"
-   }
-  }
+  "_obs": {}
  }
 }
