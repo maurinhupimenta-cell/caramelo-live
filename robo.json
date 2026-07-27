@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -45.7,
-  "ciclos": 462,
+  "saldo": -52.7,
+  "ciclos": 463,
   "greens": 307,
-  "redsCiclo": 75,
+  "redsCiclo": 76,
   "aborts": 0,
   "descartes": 80,
   "historico": [
+   {
+    "quando": "2026-07-27T03:08:54.699Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: time United"
+   },
    {
     "quando": "2026-07-27T01:41:41.301Z",
     "resultado": "GREEN",
@@ -276,63 +282,15 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "euro · Países Baixos x Croácia @2.07 (tiro 1) · gatilho: seq RGGRR"
-   },
-   {
-    "quando": "2026-07-26T16:22:42.600Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho seq RGGRR) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:00",
-     "jogo": "Leicester x City",
-     "odd": 2.15
-    },
-    {
-     "h": "04:03",
-     "jogo": "Islington x United",
-     "odd": 2.2
-    },
-    {
-     "h": "04:06",
-     "jogo": "City x Aston",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time United",
-   "alvo": {
-    "h": "04:06",
-    "jogo": "City x Aston",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1785121536103
-   },
-   "iniciadoEm": 1785120714499,
-   "tiros": [
-    {
-     "h": "04:00",
-     "jogo": "Leicester x City",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "04:03",
-     "jogo": "Islington x United",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1785121734507
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785103434100,
-   "premier": 1785116501098,
+   "premier": 1785121734507,
    "euro": 1785099538502,
    "super": 1785102718498
   },
@@ -348,11 +306,12 @@
    "2026-07-23": -2.5,
    "2026-07-24": -1.7,
    "2026-07-25": 21,
-   "2026-07-26": -3.3
+   "2026-07-26": -3.3,
+   "2026-07-27": -7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Palace",
+   "tipo": "seq",
+   "chave": "GRRR",
    "n": 8,
    "start": 1
   },
