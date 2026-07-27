@@ -450,7 +450,37 @@
    "premier": 1785117763702,
    "euro": 1785118794700
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:31",
+     "jogo": "Canadá x Espanha",
+     "odd": 1.98
+    },
+    {
+     "h": "03:34",
+     "jogo": "Jordânia x Uruguai",
+     "odd": 1.93
+    },
+    {
+     "h": "02:43",
+     "jogo": "Noruega x Senegal",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "odd 1.93",
+   "alvo": {
+    "h": "03:31",
+    "jogo": "Canadá x Espanha",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785118913907
+   },
+   "iniciadoEm": 1785118913907
+  },
   "cooldown": {
    "euro": 1785118794700,
    "super": 1785115853006,
@@ -472,9 +502,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "1.98",
+   "chave": "1.93",
    "n": 8,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
