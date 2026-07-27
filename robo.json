@@ -454,7 +454,37 @@
   "consumidas": {
    "copa": 1785190860182
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:33",
+     "jogo": "Liverpool x Tottenham",
+     "odd": 2.07
+    },
+    {
+     "h": "23:36",
+     "jogo": "Norwich x Southampton",
+     "odd": 2
+    },
+    {
+     "h": "23:39",
+     "jogo": "United x Burnley",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "seq RGRR",
+   "alvo": {
+    "h": "23:33",
+    "jogo": "Liverpool x Tottenham",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1785191376528
+   },
+   "iniciadoEm": 1785191376528
+  },
   "cooldown": {
    "euro": 1785187058494,
    "super": 1785184303396,
@@ -476,9 +506,9 @@
    "2026-07-27": 9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Arábia Saudita",
-   "n": 8,
+   "tipo": "seq",
+   "chave": "RGRR",
+   "n": 25,
    "start": 1
   },
   "_obs": {}
