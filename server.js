@@ -1693,29 +1693,30 @@ app.get("/api/auditoria-tempo", (req, res) => {
         // ===== TROLL TEST: padroes que atingiram 100% ao vivo =====
         const seq = games.map(g => (pays(g, mkt) ? "G" : "R"));
         const ciclo3Dep = i => seq.slice(i + 1, i + 4).includes("G");
+        // regua DESTE mercado (comparacao justa: cada mercado com a sua)
+        let rn = 0, rh = 0;
+        for (let i = 0; i + 3 < seq.length; i++) { rn++; if (seq.slice(i + 1, i + 4).includes("G")) rh++; }
+        const reguaMkt = rn ? rh / rn : 0;
+        // TESTE SEM VIES: cada CONSAGRACAO gera UMA unica observacao (a proxima aparicao).
+        // (antes: vencedor era contado varias vezes e perdedor uma so -> inflava o resultado)
         for (const L of [4, 5]) {
-          const stat = {}; // chave -> {n, h, consagrado:bool}
+          const stat = {};
           for (let i = 0; i + L + 3 < seq.length; i++) {
             const chave = seq.slice(i, i + L).join("");
             const pagou = ciclo3Dep(i + L - 1);
-            const s = stat[chave] || (stat[chave] = { n: 0, h: 0, consagrado: false });
-            if (s.consagrado) {
-              // JA estava 100% antes deste caso: este e um teste FORA DA AMOSTRA
-              trollAgreg.casos++;
+            const s = stat[chave] || (stat[chave] = { n: 0, h: 0, aguardando: false });
+            if (s.aguardando) {
+              s.aguardando = false;           // consome a observacao (uma por consagracao)
               trollAgreg.depoisN++; if (pagou) trollAgreg.depoisG++;
+              trollAgreg.baseG += reguaMkt; trollAgreg.baseN += 1;   // regua pareada do mesmo mercado
               const fam = "seq" + L;
               const f = trollAgreg.porFamilia[fam] || (trollAgreg.porFamilia[fam] = { n: 0, h: 0 });
               f.n++; if (pagou) f.h++;
             }
             s.n++; if (pagou) s.h++;
-            if (s.n >= 5 && s.h === s.n) s.consagrado = true;      // virou 100%
-            if (s.consagrado && s.h < s.n) s.consagrado = false;   // perdeu o 100%
+            if (s.n >= 5 && s.h === s.n) s.aguardando = true;   // acabou de bater 100%: proxima aparicao sera testada
           }
         }
-        // regua do ciclo pra comparar
-        let rn = 0, rh = 0;
-        for (let i = 0; i + 3 < seq.length; i++) { rn++; if (seq.slice(i + 1, i + 4).includes("G")) rh++; }
-        trollAgreg.baseG += rh; trollAgreg.baseN += rn;
       }
     }
 
@@ -1745,8 +1746,8 @@ app.get("/api/auditoria-tempo", (req, res) => {
         explicacao: "padroes que atingiram 100% ao vivo: o que fizeram DEPOIS (fora da amostra)",
         casosForaDaAmostra: trollAgreg.depoisN,
         pagouDepois: pctA(trollAgreg.depoisG, trollAgreg.depoisN),
-        reguaDoCiclo: pctA(trollAgreg.baseG, trollAgreg.baseN),
-        diferenca: pctA(trollAgreg.depoisG, trollAgreg.depoisN) != null ? Math.round((pctA(trollAgreg.depoisG, trollAgreg.depoisN) - pctA(trollAgreg.baseG, trollAgreg.baseN)) * 10) / 10 : null,
+        reguaDoCiclo: trollAgreg.baseN ? Math.round(trollAgreg.baseG / trollAgreg.baseN * 1000) / 10 : null,
+        diferenca: (trollAgreg.depoisN && trollAgreg.baseN) ? Math.round((trollAgreg.depoisG / trollAgreg.depoisN - trollAgreg.baseG / trollAgreg.baseN) * 1000) / 10 : null,
         porFamilia: Object.fromEntries(Object.entries(trollAgreg.porFamilia).map(([k, v]) => [k, `${pctA(v.h, v.n)}% em ${v.n} casos`]))
       }
     });
