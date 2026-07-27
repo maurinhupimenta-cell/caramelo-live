@@ -450,7 +450,37 @@
    "copa": 1785175795357,
    "premier": 1785178983101
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:04",
+     "jogo": "Quito x Sao Paulo",
+     "odd": 1.87
+    },
+    {
+     "h": "20:07",
+     "jogo": "Itaquera x Avellaneda",
+     "odd": 2.02
+    },
+    {
+     "h": "20:10",
+     "jogo": "Santiago x La Plata",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "odd 2.02",
+   "alvo": {
+    "h": "20:04",
+    "jogo": "Quito x Sao Paulo",
+    "odd": 1.87,
+    "unidades": 1,
+    "desde": 1785178992492
+   },
+   "iniciadoEm": 1785178992492
+  },
   "cooldown": {
    "euro": 1785172984399,
    "super": 1785174565201,
@@ -473,9 +503,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "1.83",
-   "n": 12,
-   "start": 2
+   "chave": "2.02",
+   "n": 21,
+   "start": 1
   },
   "_obs": {}
  }
