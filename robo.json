@@ -288,7 +288,37 @@
    "copa": 1785165723909,
    "euro": 1785166795008
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:22",
+     "jogo": "Asuncion x La Boca",
+     "odd": 2.4
+    },
+    {
+     "h": "17:25",
+     "jogo": "Medellin x Porto Alegre",
+     "odd": 2.75
+    },
+    {
+     "h": "17:28",
+     "jogo": "Lima x Rio de Janeiro",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "odd 2.75",
+   "alvo": {
+    "h": "17:22",
+    "jogo": "Asuncion x La Boca",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1785169004802
+   },
+   "iniciadoEm": 1785169004802
+  },
   "cooldown": {
    "copa": 1785165723909,
    "premier": 1785164050405,
@@ -311,17 +341,12 @@
    "2026-07-27": -52.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.45",
-   "n": 11,
+   "tipo": "seq",
+   "chave": "RGRRG",
+   "n": 9,
    "start": 1
   },
-  "_obs": {
-   "super": {
-    "desde": 1785169002811,
-    "gatilho": "odd 2.75"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -28.6,
@@ -453,12 +478,41 @@
    }
   ],
   "consumidas": {
-   "super": 1785165545602,
    "euro": 1785166143899,
    "premier": 1785166575398,
    "copa": 1785167522805
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:22",
+     "jogo": "Asuncion x La Boca",
+     "odd": 2.05
+    },
+    {
+     "h": "17:25",
+     "jogo": "Medellin x Porto Alegre",
+     "odd": 2.25
+    },
+    {
+     "h": "17:28",
+     "jogo": "Lima x Rio de Janeiro",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "odd 2.25",
+   "alvo": {
+    "h": "17:22",
+    "jogo": "Asuncion x La Boca",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785169146510
+   },
+   "iniciadoEm": 1785169146510
+  },
   "cooldown": {
    "euro": 1785166143899,
    "super": 1785165545602,
@@ -480,9 +534,9 @@
    "2026-07-27": -1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Inglaterra",
-   "n": 11,
+   "tipo": "odd",
+   "chave": "2.25",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
