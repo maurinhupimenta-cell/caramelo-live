@@ -287,8 +287,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "04:00",
@@ -308,13 +308,27 @@
    ],
    "gatilho": "time United",
    "alvo": {
-    "h": "04:00",
-    "jogo": "Leicester x City",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785120714499
+    "h": "04:06",
+    "jogo": "City x Aston",
+    "odd": 2.2,
+    "unidades": 4,
+    "desde": 1785121536103
    },
-   "iniciadoEm": 1785120714499
+   "iniciadoEm": 1785120714499,
+   "tiros": [
+    {
+     "h": "04:00",
+     "jogo": "Leicester x City",
+     "odd": 2.15,
+     "unidades": 1
+    },
+    {
+     "h": "04:03",
+     "jogo": "Islington x United",
+     "odd": 2.2,
+     "unidades": 2
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785103434100,
@@ -338,8 +352,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "United",
-   "n": 10,
+   "chave": "Palace",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
@@ -478,7 +492,37 @@
    "copa": 1785119634312,
    "super": 1785120038401
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:09",
+     "jogo": "Burnley x Brighton",
+     "odd": 1.8
+    },
+    {
+     "h": "04:12",
+     "jogo": "Everton x Palace",
+     "odd": 1.9
+    },
+    {
+     "h": "04:15",
+     "jogo": "Watford x Southampton",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "time Palace",
+   "alvo": {
+    "h": "04:09",
+    "jogo": "Burnley x Brighton",
+    "odd": 1.8,
+    "unidades": 1,
+    "desde": 1785121366102
+   },
+   "iniciadoEm": 1785121366102
+  },
   "cooldown": {
    "euro": 1785118794700,
    "super": 1785120038401,
@@ -500,9 +544,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Lima",
-   "n": 10,
-   "start": 1
+   "chave": "Palace",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  }
