@@ -157,12 +157,18 @@
  },
  "o25": {
   "saldo": -52.7,
-  "ciclos": 463,
+  "ciclos": 464,
   "greens": 307,
   "redsCiclo": 76,
   "aborts": 0,
-  "descartes": 80,
+  "descartes": 81,
   "historico": [
+   {
+    "quando": "2026-07-27T03:29:02.309Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho odd 2.3) — liga REARMADA"
+   },
    {
     "quando": "2026-07-27T03:08:54.699Z",
     "resultado": "RED_CICLO",
@@ -276,12 +282,6 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros) · gatilho: odd 2.35"
-   },
-   {
-    "quando": "2026-07-26T16:26:44.900Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "euro · Países Baixos x Croácia @2.07 (tiro 1) · gatilho: seq RGGRR"
    }
   ],
   "consumidas": {
@@ -343,9 +343,14 @@
    "tipo": "time",
    "chave": "Croácia",
    "n": 8,
-   "start": 3
+   "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1785122942309,
+    "gatilho": "odd 2.3"
+   }
+  }
  },
  "ambas": {
   "saldo": -26.8,
