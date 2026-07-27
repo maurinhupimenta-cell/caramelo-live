@@ -448,11 +448,40 @@
    }
   ],
   "consumidas": {
-   "super": 1785179240004,
    "copa": 1785180297108,
    "euro": 1785181257402
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:06",
+     "jogo": "Tottenham x Watford",
+     "odd": 2.15
+    },
+    {
+     "h": "21:09",
+     "jogo": "Leeds x Chelsea",
+     "odd": 2.1
+    },
+    {
+     "h": "21:12",
+     "jogo": "Brighton x Wolverhampton",
+     "odd": 1.76
+    }
+   ],
+   "gatilho": "odd 2.15",
+   "alvo": {
+    "h": "21:06",
+    "jogo": "Tottenham x Watford",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785182585097
+   },
+   "iniciadoEm": 1785182585097
+  },
   "cooldown": {
    "euro": 1785181257402,
    "super": 1785179240004,
@@ -475,8 +504,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "1.87",
-   "n": 8,
+   "chave": "2.15",
+   "n": 17,
    "start": 1
   },
   "_obs": {}
