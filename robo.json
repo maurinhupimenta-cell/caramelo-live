@@ -320,12 +320,18 @@
  },
  "ambas": {
   "saldo": -33.9,
-  "ciclos": 537,
+  "ciclos": 538,
   "greens": 381,
   "redsCiclo": 60,
   "aborts": 0,
-  "descartes": 96,
+  "descartes": 97,
   "historico": [
+   {
+    "quando": "2026-07-27T17:17:04.207Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho seq RGRGR) — liga REARMADA"
+   },
    {
     "quando": "2026-07-27T17:04:02.203Z",
     "resultado": "GREEN",
@@ -439,12 +445,6 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · Iraque x Costa do Marfim @2 (tiro 1) · gatilho: seq RRRGG"
-   },
-   {
-    "quando": "2026-07-27T10:58:44.802Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: time La Boca"
    }
   ],
   "consumidas": {
@@ -452,7 +452,37 @@
    "premier": 1785170864207,
    "copa": 1785171842003
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:17",
+     "jogo": "Croácia x Dinamarca",
+     "odd": 2.02
+    },
+    {
+     "h": "18:20",
+     "jogo": "Geórgia x Hungria",
+     "odd": 2.1
+    },
+    {
+     "h": "18:23",
+     "jogo": "Sérvia x Croácia",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "seq RGRGR",
+   "alvo": {
+    "h": "18:17",
+    "jogo": "Croácia x Dinamarca",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1785172624806
+   },
+   "iniciadoEm": 1785172624806
+  },
   "cooldown": {
    "euro": 1785166143899,
    "super": 1785169885299,
@@ -474,9 +504,9 @@
    "2026-07-27": -6.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Inglaterra",
-   "n": 11,
+   "tipo": "seq",
+   "chave": "RGRGR",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
