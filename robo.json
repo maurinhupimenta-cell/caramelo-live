@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -49.6,
-  "ciclos": 472,
+  "saldo": -56.6,
+  "ciclos": 473,
   "greens": 313,
-  "redsCiclo": 77,
+  "redsCiclo": 78,
   "aborts": 0,
   "descartes": 82,
   "historico": [
+   {
+    "quando": "2026-07-27T05:48:35.102Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq GGRR"
+   },
    {
     "quando": "2026-07-27T05:28:00.402Z",
     "resultado": "GREEN",
@@ -276,67 +282,18 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho coluna :37) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-26T20:13:13.506Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "copa · Uruguai x EUA @2.2 (tiro 3) · gatilho: seq RRGG"
    }
   ],
   "consumidas": {
    "euro": 1785127981198,
    "super": 1785128643104,
-   "copa": 1785130080208
+   "copa": 1785130080208,
+   "premier": 1785131314906
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "06:39",
-     "jogo": "Burnley x West Ham",
-     "odd": 2.4
-    },
-    {
-     "h": "06:42",
-     "jogo": "Palace x Leicester",
-     "odd": 2.25
-    },
-    {
-     "h": "06:45",
-     "jogo": "Everton x Watford",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "seq GGRR",
-   "alvo": {
-    "h": "06:45",
-    "jogo": "Everton x Watford",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1785131078697
-   },
-   "iniciadoEm": 1785130534500,
-   "tiros": [
-    {
-     "h": "06:39",
-     "jogo": "Burnley x West Ham",
-     "odd": 2.4,
-     "unidades": 1
-    },
-    {
-     "h": "06:42",
-     "jogo": "Palace x Leicester",
-     "odd": 2.25,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785130080208,
-   "premier": 1785126248011,
+   "premier": 1785131314906,
    "euro": 1785127981198,
    "super": 1785128643104
   },
@@ -353,7 +310,7 @@
    "2026-07-24": -1.7,
    "2026-07-25": 21,
    "2026-07-26": -3.3,
-   "2026-07-27": -3.9
+   "2026-07-27": -10.9
   },
   "_gatilhoAtual": {
    "tipo": "seq",
