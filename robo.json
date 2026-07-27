@@ -320,13 +320,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -31.1,
-  "ciclos": 497,
-  "greens": 349,
+  "saldo": -30.1,
+  "ciclos": 498,
+  "greens": 350,
   "redsCiclo": 55,
   "aborts": 0,
   "descartes": 93,
   "historico": [
+   {
+    "quando": "2026-07-27T05:15:56.305Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Áustria x Jordânia @1.98 (tiro 2) · gatilho: odd 1.98"
+   },
    {
     "quando": "2026-07-27T05:09:00.403Z",
     "resultado": "GREEN_OBS",
@@ -440,61 +446,18 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho time Guayaquil) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-26T21:50:56.400Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
-   "premier": 1785126248299
+   "premier": 1785126248299,
+   "copa": 1785129356109
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "06:10",
-     "jogo": "Gana x Japão",
-     "odd": 2.1
-    },
-    {
-     "h": "06:13",
-     "jogo": "Áustria x Jordânia",
-     "odd": 1.98
-    },
-    {
-     "h": "06:16",
-     "jogo": "Senegal x Croácia",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "odd 1.98",
-   "alvo": {
-    "h": "06:13",
-    "jogo": "Áustria x Jordânia",
-    "odd": 1.98,
-    "unidades": 2,
-    "desde": 1785129178910
-   },
-   "iniciadoEm": 1785128463503,
-   "tiros": [
-    {
-     "h": "06:10",
-     "jogo": "Gana x Japão",
-     "odd": 2.1,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785125079002,
    "super": 1785124341999,
    "premier": 1785126248299,
-   "copa": 1785124047502
+   "copa": 1785129356109
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -508,7 +471,7 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": -3.5
+   "2026-07-27": -2.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
