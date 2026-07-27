@@ -289,7 +289,37 @@
    "copa": 1785137102404,
    "euro": 1785137143904
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:16",
+     "jogo": "Avellaneda x Penarol",
+     "odd": 2.5
+    },
+    {
+     "h": "09:19",
+     "jogo": "Rio de Janeiro x Belo Horizonte",
+     "odd": 2.07
+    },
+    {
+     "h": "09:22",
+     "jogo": "Montevideo x Lima",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "coluna :19",
+   "alvo": {
+    "h": "09:16",
+    "jogo": "Avellaneda x Penarol",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1785139802509
+   },
+   "iniciadoEm": 1785139802509
+  },
   "cooldown": {
    "copa": 1785137102404,
    "premier": 1785136478212,
@@ -313,16 +343,11 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":26",
-   "n": 8,
-   "start": 1
+   "chave": ":19",
+   "n": 9,
+   "start": 2
   },
-  "_obs": {
-   "super": {
-    "desde": 1785139785903,
-    "gatilho": "coluna :19"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -21.2,
