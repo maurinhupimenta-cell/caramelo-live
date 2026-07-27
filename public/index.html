@@ -738,21 +738,22 @@ function abasGraficoHtml(){
 // Linha 2: ACUMULADO - % de pagamento do dia, com a base historica e o ponto de EQUILIBRIO
 //          (a % que empata com a odd media: acima disso o dia esta pagando mais do que custa).
 function acumChartHtml(ac){
-  if(!ac||!ac.equity||ac.equity.length<3)return '';
-  // MESMA MOLDURA do grafico principal; MATEMATICA diferente:
-  // linha = SALDO EM UNIDADES desde as 00h (green soma odd-1, red tira 1).
-  // A odd ja esta embutida, entao a linha so sobe quando o mercado paga MAIS do que cobra.
-  // Sem histograma (barras +1/-1 viravam muro de ruido) e sem Fibonacci (nao faz sentido em saldo).
-  const eq=ac.equity, n=eq.length, ult=eq[n-1];
-  const pico=Math.max(...eq), vale=Math.min(...eq);
+  if(!ac||!ac.saldo||ac.saldo.length<3)return '';
+  // MESMO CONFRONTO do grafico normal (over x under, ambas sim x ambas nao),
+  // mas SOMADO RETO das 00h ate 23:59 em vez da janela que esquece:
+  //   +1 a cada green do mercado, -1 a cada green do lado oposto, acumulando o dia inteiro.
+  // Visual identico ao grafico principal (mesmo desenhista, mesmos niveis, mesmo eixo).
+  const s=ac.saldo, n=s.length, ult=s[n-1];
+  const pico=Math.max(...s), vale=Math.min(...s);
   const cor=ult>0?'var(--greenb)':ult<0?'var(--red)':'#8b98a8';
+  const eqU=(ac.equity&&ac.equity.length)?ac.equity[ac.equity.length-1]:null;
   return `<div style="margin-top:2px">
     <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:6px;font-size:12px">
-      <b>📐 Saldo do dia <span class="note" style="font-size:10px">(1u por jogo desde as 00h · ${ac.jogos} jogos desde ${ac.desde})</span></b>
-      <span><b style="color:${cor}">${ult>0?'+':''}${ult}u</b> <span class="note">· melhor ${pico>0?'+':''}${pico}u · pior ${vale}u · pagou ${ac.pct[n-1]}% (equilíbrio ${ac.equilibrio!=null?ac.equilibrio+'%':'—'})</span></span>
+      <b>📐 Acumulado do dia <span class="note" style="font-size:10px">(soma reta desde as 00h · ${ac.jogos} jogos desde ${ac.desde})</span></b>
+      <span><b style="color:${cor}">${ult>0?'+':''}${ult}</b> <span class="note">· topo do dia ${pico>0?'+':''}${pico} · fundo ${vale} · pagou ${ac.pct[n-1]}%${eqU!=null?` · em unidades ${eqU>0?'+':''}${eqU}u`:''}</span></span>
     </div>
-    ${lineChart(eq, [], null, true, ac.horas)}
-    <div class="note" style="font-size:10px;margin-top:4px">Linha = <b>saldo em unidades</b> apostando 1u nesse mercado em todo jogo desde as 00h. Sobe quando o mercado paga <b>mais do que a odd cobra</b>, desce quando não paga. <b>Acima de 0 = o dia está no lucro</b>; abaixo, no prejuízo. Zera na virada do dia.</div>
+    ${lineChart(s, [], null, true, ac.horas)}
+    <div class="note" style="font-size:10px;margin-top:4px">Mesma disputa do gráfico normal (${'{'}mercado{'}'} contra o lado oposto), mas <b>somada do começo do dia</b>: sobe +1 a cada green do mercado, desce −1 a cada green do oposto, sem esquecer nada. <b>Acima de 0</b> = o mercado está ganhando a disputa hoje. Zera às 00h do relógio do jogo.</div>
   </div>`;
 }
 
