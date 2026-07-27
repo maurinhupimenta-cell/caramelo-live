@@ -324,13 +324,19 @@
   }
  },
  "ambas": {
-  "saldo": -20.2,
-  "ciclos": 556,
-  "greens": 394,
+  "saldo": -18.6,
+  "ciclos": 557,
+  "greens": 395,
   "redsCiclo": 60,
   "aborts": 0,
   "descartes": 102,
   "historico": [
+   {
+    "quando": "2026-07-27T22:21:00.781Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "copa · República Tcheca x Iraque @2.15 (tiro 3) · gatilho: time Nova Zelândia"
+   },
    {
     "quando": "2026-07-27T21:26:54.596Z",
     "resultado": "GREEN",
@@ -444,67 +450,18 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho seq RGRGR) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-27T17:04:02.203Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Uruguai x Curação @1.98 (tiro 2) · gatilho: time Uruguai"
    }
   ],
   "consumidas": {
-   "premier": 1785187614396
+   "premier": 1785187614396,
+   "copa": 1785190860182
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "23:10",
-     "jogo": "Coreia do Sul x Cabo Verde",
-     "odd": 2.1
-    },
-    {
-     "h": "23:13",
-     "jogo": "Nova Zelândia x Equador",
-     "odd": 1.87
-    },
-    {
-     "h": "23:16",
-     "jogo": "República Tcheca x Iraque",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "time Nova Zelândia",
-   "alvo": {
-    "h": "23:16",
-    "jogo": "República Tcheca x Iraque",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1785190616385
-   },
-   "iniciadoEm": 1785189714458,
-   "tiros": [
-    {
-     "h": "23:10",
-     "jogo": "Coreia do Sul x Cabo Verde",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "23:13",
-     "jogo": "Nova Zelândia x Equador",
-     "odd": 1.87,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785187058494,
    "super": 1785184303396,
    "premier": 1785187614396,
-   "copa": 1785185753898
+   "copa": 1785190860182
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -518,13 +475,13 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": 7.4
+   "2026-07-27": 9
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Arábia Saudita",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
