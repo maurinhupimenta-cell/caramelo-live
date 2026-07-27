@@ -454,7 +454,37 @@
    "euro": 1785136783904,
    "super": 1785137264609
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:49",
+     "jogo": "Arábia Saudita x Paraguai",
+     "odd": 1.95
+    },
+    {
+     "h": "08:52",
+     "jogo": "México x Jordânia",
+     "odd": 2
+    },
+    {
+     "h": "08:55",
+     "jogo": "Panamá x Austrália",
+     "odd": 2
+    }
+   ],
+   "gatilho": "seq RRRRR",
+   "alvo": {
+    "h": "08:49",
+    "jogo": "Arábia Saudita x Paraguai",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1785138364999
+   },
+   "iniciadoEm": 1785138364999
+  },
   "cooldown": {
    "euro": 1785136783904,
    "super": 1785137264609,
@@ -476,9 +506,9 @@
    "2026-07-27": 4.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "La Boca",
-   "n": 11,
+   "tipo": "seq",
+   "chave": "RRRRR",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
