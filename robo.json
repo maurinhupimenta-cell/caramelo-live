@@ -157,12 +157,18 @@
  },
  "o25": {
   "saldo": -86,
-  "ciclos": 502,
+  "ciclos": 503,
   "greens": 328,
   "redsCiclo": 85,
   "aborts": 0,
-  "descartes": 89,
+  "descartes": 90,
   "historico": [
+   {
+    "quando": "2026-07-27T15:01:24.708Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
+   },
    {
     "quando": "2026-07-27T14:54:10.601Z",
     "resultado": "RED_CICLO",
@@ -276,12 +282,6 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "premier · Liverpool x Everton @2.15 (tiro 2) · gatilho: odd 2.15"
-   },
-   {
-    "quando": "2026-07-27T08:34:44.303Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "euro · Países Baixos x Bélgica @2.02 (tiro 3) · gatilho: coluna :26"
    }
   ],
   "consumidas": {
@@ -315,7 +315,12 @@
    "n": 10,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1785164484707,
+    "gatilho": "seq RRGRG"
+   }
+  }
  },
  "ambas": {
   "saldo": -24.8,
