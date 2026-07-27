@@ -287,8 +287,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "20:13",
@@ -308,11 +308,11 @@
    ],
    "gatilho": "seq GRGRR",
    "alvo": {
-    "h": "20:16",
-    "jogo": "Croácia x Tunísia",
-    "odd": 2.7,
-    "unidades": 2,
-    "desde": 1785179757704
+    "h": "20:19",
+    "jogo": "México x Argentina",
+    "odd": 2.15,
+    "unidades": 4,
+    "desde": 1785179937804
    },
    "iniciadoEm": 1785179398797,
    "tiros": [
@@ -321,6 +321,12 @@
      "jogo": "Egito x Argentina",
      "odd": 2.07,
      "unidades": 1
+    },
+    {
+     "h": "20:16",
+     "jogo": "Croácia x Tunísia",
+     "odd": 2.7,
+     "unidades": 2
     }
    ]
   },
@@ -347,16 +353,11 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRRGR",
-   "n": 9,
+   "chave": "GRGG",
+   "n": 11,
    "start": 1
   },
-  "_obs": {
-   "euro": {
-    "desde": 1785179818903,
-    "gatilho": "seq GRGG"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -28.4,
