@@ -345,18 +345,24 @@
    "tipo": "odd",
    "chave": "2.45",
    "n": 11,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -23.9,
-  "ciclos": 531,
+  "saldo": -30.9,
+  "ciclos": 532,
   "greens": 377,
-  "redsCiclo": 58,
+  "redsCiclo": 59,
   "aborts": 0,
   "descartes": 96,
   "historico": [
+   {
+    "quando": "2026-07-27T15:29:04.005Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: odd 2"
+   },
    {
     "quando": "2026-07-27T15:19:05.706Z",
     "resultado": "GREEN",
@@ -470,65 +476,16 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "super · Itaquera x Bogota @2.2 (tiro 1) · gatilho: odd 1.83"
-   },
-   {
-    "quando": "2026-07-27T09:23:03.998Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "euro · Escócia x Espanha @1.85 (tiro 1) · gatilho: seq RRRRR"
    }
   ],
   "consumidas": {
    "premier": 1785162593305,
-   "super": 1785165545602
+   "super": 1785165545602,
+   "euro": 1785166143899
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "16:20",
-     "jogo": "Áustria x Hungria",
-     "odd": 2.07
-    },
-    {
-     "h": "16:23",
-     "jogo": "Romênia x Sérvia",
-     "odd": 2
-    },
-    {
-     "h": "16:26",
-     "jogo": "Portugal x Eslovênia",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "odd 2",
-   "alvo": {
-    "h": "16:26",
-    "jogo": "Portugal x Eslovênia",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1785165985501
-   },
-   "iniciadoEm": 1785165547303,
-   "tiros": [
-    {
-     "h": "16:20",
-     "jogo": "Áustria x Hungria",
-     "odd": 2.07,
-     "unidades": 1
-    },
-    {
-     "h": "16:23",
-     "jogo": "Romênia x Sérvia",
-     "odd": 2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785158383707,
+   "euro": 1785166143899,
    "super": 1785165545602,
    "premier": 1785162593305,
    "copa": 1785161744411
@@ -545,7 +502,7 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": 3.7
+   "2026-07-27": -3.3
   },
   "_gatilhoAtual": {
    "tipo": "odd",
