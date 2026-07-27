@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -105.5,
-  "ciclos": 509,
-  "greens": 329,
+  "saldo": -103.7,
+  "ciclos": 510,
+  "greens": 330,
   "redsCiclo": 88,
   "aborts": 0,
   "descartes": 92,
   "historico": [
+   {
+    "quando": "2026-07-27T16:53:40.697Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "premier · Tottenham x United @2.4 (tiro 2) · gatilho: seq GRGRR"
+   },
    {
     "quando": "2026-07-27T16:44:53.098Z",
     "resultado": "GREEN_OBS",
@@ -276,59 +282,16 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "euro · Países Baixos x Croácia @2.07 (tiro 1) · gatilho: odd 2.45"
-   },
-   {
-    "quando": "2026-07-27T10:46:01.909Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho odd 2.45) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "super": 1785169885012
+   "super": 1785169885012,
+   "premier": 1785171220502
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:48",
-     "jogo": "Norwich x Islington",
-     "odd": 2.2
-    },
-    {
-     "h": "17:51",
-     "jogo": "Tottenham x United",
-     "odd": 2.4
-    },
-    {
-     "h": "17:54",
-     "jogo": "Liverpool x Wolverhampton",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "seq GRGRR",
-   "alvo": {
-    "h": "17:51",
-    "jogo": "Tottenham x United",
-    "odd": 2.4,
-    "unidades": 2,
-    "desde": 1785171051403
-   },
-   "iniciadoEm": 1785170702298,
-   "tiros": [
-    {
-     "h": "17:48",
-     "jogo": "Norwich x Islington",
-     "odd": 2.2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785165723909,
-   "premier": 1785164050405,
+   "premier": 1785171220502,
    "euro": 1785166795008,
    "super": 1785169885012
   },
@@ -345,7 +308,7 @@
    "2026-07-24": -1.7,
    "2026-07-25": 21,
    "2026-07-26": -3.3,
-   "2026-07-27": -59.8
+   "2026-07-27": -58
   },
   "_gatilhoAtual": {
    "tipo": "seq",
