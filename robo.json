@@ -319,13 +319,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -25.9,
-  "ciclos": 547,
-  "greens": 389,
+  "saldo": -24.7,
+  "ciclos": 548,
+  "greens": 390,
   "redsCiclo": 60,
   "aborts": 0,
   "descartes": 98,
   "historico": [
+   {
+    "quando": "2026-07-27T20:11:46.099Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · Leeds x Chelsea @2.1 (tiro 2) · gatilho: odd 2.15"
+   },
    {
     "quando": "2026-07-27T19:40:57.798Z",
     "resultado": "GREEN",
@@ -439,61 +445,18 @@
     "resultado": "GREEN",
     "unidades": 0.8,
     "detalhe": "premier · Islington x Burnley @1.95 (tiro 3) · gatilho: coluna :24"
-   },
-   {
-    "quando": "2026-07-27T14:15:44.701Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Argentina"
    }
   ],
   "consumidas": {
    "copa": 1785180297108,
-   "euro": 1785181257402
+   "euro": 1785181257402,
+   "premier": 1785183105906
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "21:06",
-     "jogo": "Tottenham x Watford",
-     "odd": 2.15
-    },
-    {
-     "h": "21:09",
-     "jogo": "Leeds x Chelsea",
-     "odd": 2.1
-    },
-    {
-     "h": "21:12",
-     "jogo": "Brighton x Wolverhampton",
-     "odd": 1.76
-    }
-   ],
-   "gatilho": "odd 2.15",
-   "alvo": {
-    "h": "21:09",
-    "jogo": "Leeds x Chelsea",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1785182923797
-   },
-   "iniciadoEm": 1785182585097,
-   "tiros": [
-    {
-     "h": "21:06",
-     "jogo": "Tottenham x Watford",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785181257402,
    "super": 1785179240004,
-   "premier": 1785178983101,
+   "premier": 1785183105906,
    "copa": 1785180297108
   },
   "dias": {
@@ -508,7 +471,7 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": 1.7
+   "2026-07-27": 2.9
   },
   "_gatilhoAtual": {
    "tipo": "seq",
