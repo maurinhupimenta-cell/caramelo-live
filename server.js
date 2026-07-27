@@ -1648,6 +1648,122 @@ app.get("/api/backtest/:liga", (req, res) => {
 });
 
 // ===== ESTUDO: recuperacao pos-red dos indicados (hipotese do usuario: "falhado paga quando volta") =====
+// ===== AUDITORIA COMPLETA: varre todo o historico (over E under), simula o CICLO REAL
+// de 3 tiros com gale 1-2-4 usando as odds verdadeiras, e valida cada achado em DUAS
+// metades independentes (edge real sobrevive nas duas; sorte nao). =====
+app.get("/api/auditoria", (req, res) => {
+  try {
+    const MKTS = ["o25", "o35", "ge5", "ambas", "u05", "u15", "u25"];
+    const oddDe = (g, mkt) => { const k = mkt === "ambas" ? "ambs" : mkt; const o = g.odds && g.odds[k]; return (o && o > 1.01) ? o : null; };
+
+    // simula UM ciclo comecando no jogo idx+1 (3 tiros, 1-2-4). Retorna unidades liquidas ou null se faltar odd.
+    const simulaCiclo = (games, idx, mkt) => {
+      const stakes = [1, 2, 4]; let gasto = 0;
+      for (let k = 0; k < 3; k++) {
+        const g = games[idx + 1 + k]; if (!g) return null;
+        const od = oddDe(g, mkt); if (!od) return null;
+        const st = stakes[k];
+        if (pays(g, mkt)) return Math.round((st * od - gasto - st) * 100) / 100;
+        gasto += st;
+      }
+      return -7;
+    };
+
+    // avalia uma REGRA (funcao que diz se o ciclo comeca no indice i) sobre uma liga|mkt
+    const avalia = (games, mkt, regra) => {
+      const res = [];
+      for (let i = 0; i + 4 < games.length; i++) {
+        if (!regra(games, i)) continue;
+        const u = simulaCiclo(games, i, mkt);
+        if (u == null) continue;
+        res.push({ i, u });
+      }
+      if (res.length < 12) return null;
+      const soma = a => a.reduce((x, y) => x + y, 0);
+      const meio = Math.floor(res.length / 2);
+      const h1 = res.slice(0, meio).map(r => r.u), h2 = res.slice(meio).map(r => r.u);
+      const total = soma(res.map(r => r.u));
+      const greens = res.filter(r => r.u > 0).length;
+      return {
+        n: res.length, greens, taxa: Math.round(greens / res.length * 100),
+        unidades: Math.round(total * 10) / 10,
+        porCiclo: Math.round(total / res.length * 100) / 100,
+        metade1: Math.round(soma(h1) * 10) / 10, metade2: Math.round(soma(h2) * 10) / 10,
+        robusto: soma(h1) > 0 && soma(h2) > 0
+      };
+    };
+
+    // ===== biblioteca de REGRAS testadas =====
+    const secaDe = (games, i, mkt) => { let s = 0; for (let k = i; k >= 0; k--) { if (!pays(games[k], mkt)) s++; else break; } return s; };
+    const catPl = g => { const a = g.a || 0, b = g.b || 0, t = a + b, m = Math.max(a, b); return t === 0 ? "0-0" : t === 1 ? "1gol" : m >= 3 ? "goleada" : a === b ? "empate" : "2-1"; };
+
+    const achados = [];
+    for (const liga of LIGAS) {
+      const d = store[liga]; if (!d || !d.games || d.games.length < 200) continue;
+      const games = listaCheia(d);
+      for (const mkt of MKTS) {
+        // R0: aposta CEGA (todo jogo abre ciclo) - a referencia
+        const cego = avalia(games, mkt, () => true);
+        if (cego) achados.push({ regra: "CEGO (todo jogo)", liga, mkt, ...cego });
+        // R1: apos N reds seguidos
+        for (const N of [1, 2, 3, 4, 5, 6]) {
+          const r = avalia(games, mkt, (gs, i) => secaDe(gs, i, mkt) === N);
+          if (r) achados.push({ regra: "apos " + N + " reds seguidos", liga, mkt, ...r });
+        }
+        // R2: apos green (momentum)
+        const rG = avalia(games, mkt, (gs, i) => pays(gs[i], mkt));
+        if (rG) achados.push({ regra: "apos GREEN", liga, mkt, ...rG });
+        // R3: por categoria de placar do jogo-gatilho
+        for (const cat of ["0-0", "1gol", "2-1", "goleada", "empate"]) {
+          const r = avalia(games, mkt, (gs, i) => catPl(gs[i]) === cat);
+          if (r) achados.push({ regra: "apos placar " + cat, liga, mkt, ...r });
+        }
+        // R4: por hora do relogio do jogo
+        for (let h = 0; h < 24; h += 1) {
+          const r = avalia(games, mkt, (gs, i) => parseInt((gs[i].horario || "").split(":")[0]) === h);
+          if (r) achados.push({ regra: "hora " + String(h).padStart(2, "0") + "h", liga, mkt, ...r });
+        }
+        // R5: por faixa de odd do 1o tiro
+        for (const [lo, hi] of [[1.0, 1.6], [1.6, 2.0], [2.0, 2.6], [2.6, 3.4], [3.4, 4.5], [4.5, 99]]) {
+          const r = avalia(games, mkt, (gs, i) => { const o = oddDe(gs[i + 1], mkt); return o != null && o >= lo && o < hi; });
+          if (r) achados.push({ regra: "1o tiro odd " + lo + "-" + hi, liga, mkt, ...r });
+        }
+        // R6: zona da curva (fundo/meio/topo) no momento do gatilho
+        const serieZ = chartSeries(games, mkt, 20);
+        const zonaNo = i => { const k = i - 19; if (k < 1 || k >= serieZ.length) return null; const jan = serieZ.slice(Math.max(0, k - 60), k + 1); if (jan.length < 20) return null; const mn = Math.min(...jan), mx = Math.max(...jan); if (mx === mn) return "meio"; const p = (serieZ[k] - mn) / (mx - mn) * 100; return p <= 30 ? "fundo" : p >= 70 ? "topo" : "meio"; };
+        for (const z of ["fundo", "meio", "topo"]) {
+          const r = avalia(games, mkt, (gs, i) => zonaNo(i) === z);
+          if (r) achados.push({ regra: "curva no " + z, liga, mkt, ...r });
+        }
+        // R7: combo seca + zona (o classico "fundo descarregado")
+        for (const N of [2, 3, 4]) for (const z of ["fundo", "topo"]) {
+          const r = avalia(games, mkt, (gs, i) => secaDe(gs, i, mkt) >= N && zonaNo(i) === z);
+          if (r) achados.push({ regra: N + "+ reds & curva " + z, liga, mkt, ...r });
+        }
+      }
+    }
+
+    // ranking: so o que e LUCRATIVO e ROBUSTO (positivo nas duas metades)
+    const lucrativos = achados.filter(a => a.unidades > 0).sort((a, b) => b.porCiclo - a.porCiclo);
+    const robustos = lucrativos.filter(a => a.robusto && a.n >= 20).sort((a, b) => b.porCiclo - a.porCiclo);
+    const sangrias = achados.filter(a => a.unidades < 0).sort((a, b) => a.porCiclo - b.porCiclo);
+    const cegos = achados.filter(a => a.regra.startsWith("CEGO")).sort((a, b) => b.porCiclo - a.porCiclo);
+
+    // ledger do robo
+    const ledger = {};
+    for (const m of ROBO_MKTS) { const L = roboState[m]; ledger[m] = { saldo: L.saldo, ciclos: L.ciclos, greens: L.greens, redsCiclo: L.redsCiclo, descartes: L.descartes, dias: L.dias || {} }; }
+
+    res.json({
+      totalRegrasTestadas: achados.length,
+      ROBUSTOS: robustos.slice(0, 25),
+      lucrativosFragilidade: lucrativos.filter(a => !a.robusto).slice(0, 10),
+      cegoPorMercado: cegos.slice(0, 12),
+      pioresSangrias: sangrias.slice(0, 10),
+      ledgerRobo: ledger
+    });
+  } catch (e) { res.status(500).json({ erro: e.message, stack: String(e.stack || "").split("\n")[1] }); }
+});
+
 app.get("/api/estudo-recuperacao", (req, res) => {
   try {
     const agreg = { aposRed: [0, 0], aposGreen: [0, 0], geral: [0, 0], porCombo: {} };
