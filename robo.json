@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -98.5,
-  "ciclos": 507,
+  "saldo": -105.5,
+  "ciclos": 508,
   "greens": 329,
-  "redsCiclo": 87,
+  "redsCiclo": 88,
   "aborts": 0,
   "descartes": 91,
   "historico": [
+   {
+    "quando": "2026-07-27T16:31:25.206Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: odd 2.75"
+   },
    {
     "quando": "2026-07-27T16:16:42.811Z",
     "resultado": "GREEN_OBS",
@@ -276,67 +282,18 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "super · Belo Horizonte x Guayaquil @2.05 (tiro 1) · gatilho: seq RRGRG"
-   },
-   {
-    "quando": "2026-07-27T10:33:44.306Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "euro": 1785166795008
+   "euro": 1785166795008,
+   "super": 1785169885012
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "17:22",
-     "jogo": "Asuncion x La Boca",
-     "odd": 2.4
-    },
-    {
-     "h": "17:25",
-     "jogo": "Medellin x Porto Alegre",
-     "odd": 2.75
-    },
-    {
-     "h": "17:28",
-     "jogo": "Lima x Rio de Janeiro",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "odd 2.75",
-   "alvo": {
-    "h": "17:28",
-    "jogo": "Lima x Rio de Janeiro",
-    "odd": 2.1,
-    "unidades": 4,
-    "desde": 1785169704909
-   },
-   "iniciadoEm": 1785169004802,
-   "tiros": [
-    {
-     "h": "17:22",
-     "jogo": "Asuncion x La Boca",
-     "odd": 2.4,
-     "unidades": 1
-    },
-    {
-     "h": "17:25",
-     "jogo": "Medellin x Porto Alegre",
-     "odd": 2.75,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785165723909,
    "premier": 1785164050405,
    "euro": 1785166795008,
-   "super": 1785165205110
+   "super": 1785169885012
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -351,7 +308,7 @@
    "2026-07-24": -1.7,
    "2026-07-25": 21,
    "2026-07-26": -3.3,
-   "2026-07-27": -52.8
+   "2026-07-27": -59.8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
