@@ -290,8 +290,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "08:16",
@@ -311,11 +311,11 @@
    ],
    "gatilho": "coluna :16",
    "alvo": {
-    "h": "08:19",
-    "jogo": "Equador x Costa do Marfim",
-    "odd": 2.07,
-    "unidades": 2,
-    "desde": 1785136721602
+    "h": "08:22",
+    "jogo": "Haiti x EUA",
+    "odd": 2.1,
+    "unidades": 4,
+    "desde": 1785136902300
    },
    "iniciadoEm": 1785136479810,
    "tiros": [
@@ -324,6 +324,12 @@
      "jogo": "Panamá x África do Sul",
      "odd": 2.55,
      "unidades": 1
+    },
+    {
+     "h": "08:19",
+     "jogo": "Equador x Costa do Marfim",
+     "odd": 2.07,
+     "unidades": 2
     }
    ]
   },
@@ -349,8 +355,8 @@
    "2026-07-27": -15.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGRR",
+   "tipo": "coluna",
+   "chave": ":23",
    "n": 8,
    "start": 1
   },
