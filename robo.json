@@ -343,18 +343,24 @@
    "tipo": "coluna",
    "chave": ":04",
    "n": 8,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -25.8,
-  "ciclos": 502,
-  "greens": 354,
+  "saldo": -25,
+  "ciclos": 503,
+  "greens": 355,
   "redsCiclo": 55,
   "aborts": 0,
   "descartes": 93,
   "historico": [
+   {
+    "quando": "2026-07-27T06:58:00.605Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "premier · Burnley x Aston @1.95 (tiro 3) · gatilho: odd 2"
+   },
    {
     "quando": "2026-07-27T06:31:02.302Z",
     "resultado": "GREEN",
@@ -468,67 +474,18 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "super · Santos x Sao Paulo @1.93 (tiro 1) · gatilho: time Guayaquil"
-   },
-   {
-    "quando": "2026-07-26T22:29:54.804Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho time Guayaquil) — liga REARMADA"
    }
   ],
   "consumidas": {
    "super": 1785132784705,
-   "copa": 1785133862107
+   "copa": 1785133862107,
+   "premier": 1785135480500
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "07:48",
-     "jogo": "Brentford x Aston",
-     "odd": 2.05
-    },
-    {
-     "h": "07:51",
-     "jogo": "Brighton x Leeds",
-     "odd": 2
-    },
-    {
-     "h": "07:54",
-     "jogo": "Burnley x Aston",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "odd 2",
-   "alvo": {
-    "h": "07:54",
-    "jogo": "Burnley x Aston",
-    "odd": 1.95,
-    "unidades": 4,
-    "desde": 1785135281800
-   },
-   "iniciadoEm": 1785134392712,
-   "tiros": [
-    {
-     "h": "07:48",
-     "jogo": "Brentford x Aston",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "07:51",
-     "jogo": "Brighton x Leeds",
-     "odd": 2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785129598111,
    "super": 1785132784705,
-   "premier": 1785130178609,
+   "premier": 1785135480500,
    "copa": 1785133862107
   },
   "dias": {
@@ -543,12 +500,12 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": 1.8
+   "2026-07-27": 2.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.02",
-   "n": 10,
+   "tipo": "seq",
+   "chave": "GRRG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
