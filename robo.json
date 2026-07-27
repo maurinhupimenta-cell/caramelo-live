@@ -319,13 +319,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -27.2,
-  "ciclos": 501,
-  "greens": 353,
+  "saldo": -25.8,
+  "ciclos": 502,
+  "greens": 354,
   "redsCiclo": 55,
   "aborts": 0,
   "descartes": 93,
   "historico": [
+   {
+    "quando": "2026-07-27T06:31:02.302Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "copa · Paraguai x Iraque @2.2 (tiro 2) · gatilho: time Iraque"
+   },
    {
     "quando": "2026-07-27T06:13:04.904Z",
     "resultado": "GREEN",
@@ -439,61 +445,18 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho time Guayaquil) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-26T22:27:54.510Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
-   "super": 1785132784705
+   "super": 1785132784705,
+   "copa": 1785133862107
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "07:25",
-     "jogo": "Noruega x México",
-     "odd": 1.9
-    },
-    {
-     "h": "07:28",
-     "jogo": "Paraguai x Iraque",
-     "odd": 2.2
-    },
-    {
-     "h": "07:31",
-     "jogo": "Suécia x Qatar",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Iraque",
-   "alvo": {
-    "h": "07:28",
-    "jogo": "Paraguai x Iraque",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1785133673903
-   },
-   "iniciadoEm": 1785132972703,
-   "tiros": [
-    {
-     "h": "07:25",
-     "jogo": "Noruega x México",
-     "odd": 1.9,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785129598111,
    "super": 1785132784705,
    "premier": 1785130178609,
-   "copa": 1785129356109
+   "copa": 1785133862107
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -507,7 +470,7 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": 0.4
+   "2026-07-27": 1.8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
