@@ -290,8 +290,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "09:39",
@@ -311,13 +311,21 @@
    ],
    "gatilho": "odd 2.15",
    "alvo": {
-    "h": "09:39",
-    "jogo": "Southampton x Wolverhampton",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785141285010
+    "h": "09:42",
+    "jogo": "Liverpool x Everton",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1785141699507
    },
-   "iniciadoEm": 1785141285010
+   "iniciadoEm": 1785141285010,
+   "tiros": [
+    {
+     "h": "09:39",
+     "jogo": "Southampton x Wolverhampton",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785137102404,
@@ -341,9 +349,9 @@
    "2026-07-27": -27.1
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.15",
-   "n": 13,
+   "tipo": "seq",
+   "chave": "RGGRR",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
