@@ -320,12 +320,18 @@
  },
  "ambas": {
   "saldo": -22.6,
-  "ciclos": 513,
+  "ciclos": 514,
   "greens": 364,
   "redsCiclo": 56,
   "aborts": 0,
-  "descartes": 93,
+  "descartes": 94,
   "historico": [
+   {
+    "quando": "2026-07-27T10:01:04.401Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Suíça) — liga REARMADA"
+   },
    {
     "quando": "2026-07-27T09:45:45.605Z",
     "resultado": "GREEN",
@@ -439,12 +445,6 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: time Itália"
-   },
-   {
-    "quando": "2026-07-27T03:52:22.198Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "super · Santos x Asuncion @2.1 (tiro 1) · gatilho: time La Plata"
    }
   ],
   "consumidas": {
@@ -452,7 +452,45 @@
    "euro": 1785144183709,
    "super": 1785145545409
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "11:04",
+     "jogo": "RD Congo x Suíça",
+     "odd": 1.93
+    },
+    {
+     "h": "11:07",
+     "jogo": "Panamá x Nova Zelândia",
+     "odd": 2
+    },
+    {
+     "h": "11:10",
+     "jogo": "Noruega x Arábia Saudita",
+     "odd": 1.87
+    }
+   ],
+   "gatilho": "time Suíça",
+   "alvo": {
+    "h": "11:07",
+    "jogo": "Panamá x Nova Zelândia",
+    "odd": 2,
+    "unidades": 2,
+    "desde": 1785146861806
+   },
+   "iniciadoEm": 1785146466706,
+   "tiros": [
+    {
+     "h": "11:04",
+     "jogo": "RD Congo x Suíça",
+     "odd": 1.93,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1785144183709,
    "super": 1785145545409,
@@ -474,9 +512,9 @@
    "2026-07-27": 5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRR",
-   "n": 17,
+   "tipo": "coluna",
+   "chave": ":07",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
