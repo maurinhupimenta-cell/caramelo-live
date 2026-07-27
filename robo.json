@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -78.8,
-  "ciclos": 494,
-  "greens": 323,
+  "saldo": -77.5,
+  "ciclos": 495,
+  "greens": 324,
   "redsCiclo": 83,
   "aborts": 0,
   "descartes": 88,
   "historico": [
+   {
+    "quando": "2026-07-27T12:07:05.100Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "super · Guayaquil x La Boca @2.25 (tiro 1) · gatilho: seq RRGRG"
+   },
    {
     "quando": "2026-07-27T12:02:03.899Z",
     "resultado": "RED_CICLO",
@@ -276,54 +282,19 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho odd 2.15) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-27T06:53:01.605Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :04) — liga REARMADA"
    }
   ],
   "consumidas": {
    "premier": 1785150527211,
-   "euro": 1785153723710
+   "euro": 1785153723710,
+   "super": 1785154024901
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "13:04",
-     "jogo": "Guayaquil x La Boca",
-     "odd": 2.25
-    },
-    {
-     "h": "13:07",
-     "jogo": "Bogota x Agua Branca",
-     "odd": 2.4
-    },
-    {
-     "h": "13:10",
-     "jogo": "Quito x Porto Alegre",
-     "odd": 2.7
-    }
-   ],
-   "gatilho": "seq RRGRG",
-   "alvo": {
-    "h": "13:04",
-    "jogo": "Guayaquil x La Boca",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785153725309
-   },
-   "iniciadoEm": 1785153725309
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785149884005,
    "premier": 1785150527211,
    "euro": 1785153723710,
-   "super": 1785148784305
+   "super": 1785154024901
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -338,13 +309,13 @@
    "2026-07-24": -1.7,
    "2026-07-25": 21,
    "2026-07-26": -3.3,
-   "2026-07-27": -33.1
+   "2026-07-27": -31.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGRG",
-   "n": 9,
-   "start": 1
+   "tipo": "time",
+   "chave": "Suíça",
+   "n": 13,
+   "start": 3
   },
   "_obs": {}
  },
