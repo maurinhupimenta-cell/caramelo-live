@@ -287,7 +287,37 @@
   "consumidas": {
    "premier": 1785171220502
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:49",
+     "jogo": "Tunísia x Equador",
+     "odd": 2.4
+    },
+    {
+     "h": "18:52",
+     "jogo": "Coreia do Sul x Escócia",
+     "odd": 2.75
+    },
+    {
+     "h": "18:55",
+     "jogo": "Bósnia e Herzegovina x Países Baixos",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "seq GRRGR",
+   "alvo": {
+    "h": "18:49",
+    "jogo": "Tunísia x Equador",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1785174362911
+   },
+   "iniciadoEm": 1785174362911
+  },
   "cooldown": {
    "copa": 1785165723909,
    "premier": 1785171220502,
@@ -311,8 +341,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRGRR",
-   "n": 10,
+   "chave": "GRRGR",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
@@ -451,7 +481,37 @@
    "copa": 1785171842003,
    "euro": 1785172984399
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:46",
+     "jogo": "La Boca x Sao Paulo",
+     "odd": 1.93
+    },
+    {
+     "h": "18:49",
+     "jogo": "Santiago x Agua Branca",
+     "odd": 1.83
+    },
+    {
+     "h": "18:52",
+     "jogo": "Sao Paulo x Guayaquil",
+     "odd": 1.83
+    }
+   ],
+   "gatilho": "odd 1.83",
+   "alvo": {
+    "h": "18:46",
+    "jogo": "La Boca x Sao Paulo",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1785173847100
+   },
+   "iniciadoEm": 1785173847100
+  },
   "cooldown": {
    "euro": 1785172984399,
    "super": 1785169885299,
@@ -473,16 +533,11 @@
    "2026-07-27": -5.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRGR",
-   "n": 9,
+   "tipo": "odd",
+   "chave": "1.83",
+   "n": 20,
    "start": 1
   },
-  "_obs": {
-   "super": {
-    "desde": 1785173845108,
-    "gatilho": "odd 1.83"
-   }
-  }
+  "_obs": {}
  }
 }
