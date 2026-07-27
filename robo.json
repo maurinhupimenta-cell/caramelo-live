@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -52.7,
-  "ciclos": 464,
-  "greens": 307,
+  "saldo": -49.7,
+  "ciclos": 465,
+  "greens": 308,
   "redsCiclo": 76,
   "aborts": 0,
   "descartes": 81,
   "historico": [
+   {
+    "quando": "2026-07-27T03:40:14.305Z",
+    "resultado": "GREEN",
+    "unidades": 3,
+    "detalhe": "euro · Suíça x Eslovênia @2.5 (tiro 3) · gatilho: time Croácia"
+   },
    {
     "quando": "2026-07-27T03:29:02.309Z",
     "resultado": "GREEN_OBS",
@@ -276,66 +282,17 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho seq RRGG) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-26T17:14:00.803Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: odd 2.35"
    }
   ],
   "consumidas": {
-   "premier": 1785121734507
+   "premier": 1785121734507,
+   "euro": 1785123614112
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:26",
-     "jogo": "Espanha x Turquia",
-     "odd": 2.3
-    },
-    {
-     "h": "04:29",
-     "jogo": "França x Croácia",
-     "odd": 2.1
-    },
-    {
-     "h": "04:32",
-     "jogo": "Suíça x Eslovênia",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "time Croácia",
-   "alvo": {
-    "h": "04:32",
-    "jogo": "Suíça x Eslovênia",
-    "odd": 2.5,
-    "unidades": 4,
-    "desde": 1785123234007
-   },
-   "iniciadoEm": 1785122575900,
-   "tiros": [
-    {
-     "h": "04:26",
-     "jogo": "Espanha x Turquia",
-     "odd": 2.3,
-     "unidades": 1
-    },
-    {
-     "h": "04:29",
-     "jogo": "França x Croácia",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785103434100,
    "premier": 1785121734507,
-   "euro": 1785099538502,
+   "euro": 1785123614112,
    "super": 1785102718498
   },
   "dias": {
@@ -351,7 +308,7 @@
    "2026-07-24": -1.7,
    "2026-07-25": 21,
    "2026-07-26": -3.3,
-   "2026-07-27": -7
+   "2026-07-27": -4
   },
   "_gatilhoAtual": {
    "tipo": "time",
@@ -549,7 +506,7 @@
    "tipo": "odd",
    "chave": "1.93",
    "n": 11,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
