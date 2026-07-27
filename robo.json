@@ -289,7 +289,37 @@
    "super": 1785165205110,
    "copa": 1785165723909
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:29",
+     "jogo": "Turquia x Croácia",
+     "odd": 2.4
+    },
+    {
+     "h": "16:32",
+     "jogo": "Albânia x Alemanha",
+     "odd": 2.45
+    },
+    {
+     "h": "16:35",
+     "jogo": "Itália x Áustria",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "odd 2.45",
+   "alvo": {
+    "h": "16:29",
+    "jogo": "Turquia x Croácia",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1785165782905
+   },
+   "iniciadoEm": 1785165782905
+  },
   "cooldown": {
    "copa": 1785165723909,
    "premier": 1785164050405,
@@ -312,10 +342,10 @@
    "2026-07-27": -45.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Suíça",
-   "n": 15,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.45",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  },
@@ -454,8 +484,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "16:20",
@@ -475,13 +505,21 @@
    ],
    "gatilho": "odd 2",
    "alvo": {
-    "h": "16:20",
-    "jogo": "Áustria x Hungria",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1785165547303
+    "h": "16:23",
+    "jogo": "Romênia x Sérvia",
+    "odd": 2,
+    "unidades": 2,
+    "desde": 1785165783102
    },
-   "iniciadoEm": 1785165547303
+   "iniciadoEm": 1785165547303,
+   "tiros": [
+    {
+     "h": "16:20",
+     "jogo": "Áustria x Hungria",
+     "odd": 2.07,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785158383707,
