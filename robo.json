@@ -456,8 +456,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "16:46",
@@ -477,13 +477,21 @@
    ],
    "gatilho": "time Inglaterra",
    "alvo": {
-    "h": "16:46",
-    "jogo": "Croácia x Panamá",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785166622600
+    "h": "16:49",
+    "jogo": "Inglaterra x Jordânia",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1785167402410
    },
-   "iniciadoEm": 1785166622600
+   "iniciadoEm": 1785166622600,
+   "tiros": [
+    {
+     "h": "16:46",
+     "jogo": "Croácia x Panamá",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785166143899,
@@ -508,8 +516,8 @@
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Inglaterra",
-   "n": 12,
-   "start": 3
+   "n": 11,
+   "start": 1
   },
   "_obs": {}
  }
