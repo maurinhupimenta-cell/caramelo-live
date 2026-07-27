@@ -157,12 +157,18 @@
  },
  "o25": {
   "saldo": -108.8,
-  "ciclos": 513,
+  "ciclos": 514,
   "greens": 331,
   "redsCiclo": 89,
   "aborts": 0,
-  "descartes": 93,
+  "descartes": 94,
   "historico": [
+   {
+    "quando": "2026-07-27T19:16:58.903Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho seq GRGG) — liga REARMADA"
+   },
    {
     "quando": "2026-07-27T19:09:57.200Z",
     "resultado": "GREEN_OBS",
@@ -276,12 +282,6 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "super · Guayaquil x La Boca @2.25 (tiro 1) · gatilho: seq RRGRG"
-   },
-   {
-    "quando": "2026-07-27T12:02:03.899Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: odd 2.55"
    }
   ],
   "consumidas": {},
@@ -351,7 +351,12 @@
    "n": 9,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1785179818903,
+    "gatilho": "seq GRGG"
+   }
+  }
  },
  "ambas": {
   "saldo": -28.4,
