@@ -439,7 +439,10 @@ function render(d){
 
   // GRAFICO DA LINHA (SVG) com numeros nos pontos + histograma MACD + LTA/LTB
   const serie=a.serie||[];
-  const chart=lineChart(serie, a.macdHist||[], a.trend, a.ehTotalGols, a.serieHoras||[])+leitorFaixaHtml()+acumChartHtml(d.acum);
+  window.__ultimoPayload=d;
+  const chart = abasGraficoHtml() + (modoGrafico==='acum'
+    ? (acumChartHtml(d.acum) || '<div class="note">acumulado indisponível (poucos jogos desde as 00h)</div>')
+    : lineChart(serie, a.macdHist||[], a.trend, a.ehTotalGols, a.serieHoras||[])+leitorFaixaHtml());
 
   // AVISO DE ROMPIMENTO (o sinal de ouro: reversao de ciclo)
   let rompHtml='';
@@ -715,6 +718,21 @@ function render(d){
 
 
 
+
+// ===== SELETOR DE GRAFICO: janela movel (media movel) x curva acumulada (equity curve) =====
+let modoGrafico = (localStorage.getItem('cl_modograf')==='acum') ? 'acum' : 'janela';
+function trocaGrafico(m){
+  modoGrafico = m;
+  try{ localStorage.setItem('cl_modograf', m); }catch(e){}
+  if(window.__ultimoPayload) render(window.__ultimoPayload);
+}
+function abasGraficoHtml(){
+  const btn=(id,txt,dica)=>`<button onclick="trocaGrafico('${id}')" title="${dica}" style="cursor:pointer;border:1px solid ${modoGrafico===id?'#58a6ff':'#30363d'};background:${modoGrafico===id?'#132033':'#161b22'};color:${modoGrafico===id?'#58a6ff':'#8b98a8'};border-radius:8px;padding:5px 12px;font-size:12px;font-weight:${modoGrafico===id?'700':'400'}">${txt}</button>`;
+  return `<div style="display:flex;gap:6px;margin-bottom:8px;flex-wrap:wrap">
+    ${btn('janela','📉 Janela móvel','Media movel: mostra o pulso do momento. A Qtd. Jogos define o periodo (MM20, MM100...)')}
+    ${btn('acum','📐 Acumulado 00h','Curva acumulada desde as 00h do jogo: mostra o saldo real do dia contra o ponto de equilibrio')}
+  </div>`;
+}
 // ===== GRAFICO ACUMULADO DO DIA (zera as 00h do relogio do jogo) =====
 // Linha 1: BATALHA - sobe quando o mercado paga, desce quando o oposto paga (saldo linear).
 // Linha 2: ACUMULADO - % de pagamento do dia, com a base historica e o ponto de EQUILIBRIO
