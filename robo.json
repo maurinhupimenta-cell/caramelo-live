@@ -290,8 +290,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "14:00",
@@ -311,13 +311,21 @@
    ],
    "gatilho": "seq GRGGR",
    "alvo": {
-    "h": "14:00",
-    "jogo": "City x Liverpool",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785157009698
+    "h": "14:03",
+    "jogo": "Chelsea x Palace",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1785157366199
    },
-   "iniciadoEm": 1785157009698
+   "iniciadoEm": 1785157009698,
+   "tiros": [
+    {
+     "h": "14:00",
+     "jogo": "City x Liverpool",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785154743405,
@@ -483,8 +491,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "14:00",
@@ -504,13 +512,21 @@
    ],
    "gatilho": "odd 1.98",
    "alvo": {
-    "h": "14:00",
-    "jogo": "City x Liverpool",
-    "odd": 1.87,
-    "unidades": 1,
-    "desde": 1785156664606
+    "h": "14:03",
+    "jogo": "Chelsea x Palace",
+    "odd": 1.98,
+    "unidades": 2,
+    "desde": 1785157366308
    },
-   "iniciadoEm": 1785156664606
+   "iniciadoEm": 1785156664606,
+   "tiros": [
+    {
+     "h": "14:00",
+     "jogo": "City x Liverpool",
+     "odd": 1.87,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785153003707,
@@ -534,8 +550,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "1.98",
-   "n": 18,
+   "chave": "1.83",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
