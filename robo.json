@@ -356,13 +356,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -31,
-  "ciclos": 542,
-  "greens": 384,
+  "saldo": -30,
+  "ciclos": 543,
+  "greens": 385,
   "redsCiclo": 60,
   "aborts": 0,
   "descartes": 98,
   "historico": [
+   {
+    "quando": "2026-07-27T18:09:55.555Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Senegal x Egito @2.02 (tiro 1) · gatilho: odd 2.02"
+   },
    {
     "quando": "2026-07-27T17:53:54.700Z",
     "resultado": "GREEN",
@@ -476,55 +482,20 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "copa · Inglaterra x Suécia @2.15 (tiro 1) · gatilho: time Portugal"
-   },
-   {
-    "quando": "2026-07-27T12:31:04.904Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "super · Santos x Lima @2.02 (tiro 2) · gatilho: odd 2.02"
    }
   ],
   "consumidas": {
    "euro": 1785172984399,
    "super": 1785174565201,
-   "premier": 1785174834506
+   "premier": 1785174834506,
+   "copa": 1785175795357
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "19:07",
-     "jogo": "Senegal x Egito",
-     "odd": 2.02
-    },
-    {
-     "h": "19:10",
-     "jogo": "Países Baixos x Haiti",
-     "odd": 2.05
-    },
-    {
-     "h": "19:13",
-     "jogo": "Suíça x Suécia",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "odd 2.02",
-   "alvo": {
-    "h": "19:07",
-    "jogo": "Senegal x Egito",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1785175554255
-   },
-   "iniciadoEm": 1785175554255
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785172984399,
    "super": 1785174565201,
    "premier": 1785174834506,
-   "copa": 1785171842003
+   "copa": 1785175795357
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -538,7 +509,7 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": -3.4
+   "2026-07-27": -2.4
   },
   "_gatilhoAtual": {
    "tipo": "odd",
