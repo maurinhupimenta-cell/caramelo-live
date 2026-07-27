@@ -453,8 +453,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "06:10",
@@ -474,13 +474,21 @@
    ],
    "gatilho": "odd 1.98",
    "alvo": {
-    "h": "06:10",
-    "jogo": "Gana x Japão",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785128463503
+    "h": "06:13",
+    "jogo": "Áustria x Jordânia",
+    "odd": 1.98,
+    "unidades": 2,
+    "desde": 1785129178910
    },
-   "iniciadoEm": 1785128463503
+   "iniciadoEm": 1785128463503,
+   "tiros": [
+    {
+     "h": "06:10",
+     "jogo": "Gana x Japão",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785125079002,
@@ -506,7 +514,7 @@
    "tipo": "time",
    "chave": "Iraque",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
