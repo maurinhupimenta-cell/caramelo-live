@@ -319,13 +319,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -34.9,
-  "ciclos": 536,
-  "greens": 380,
+  "saldo": -33.9,
+  "ciclos": 537,
+  "greens": 381,
   "redsCiclo": 60,
   "aborts": 0,
   "descartes": 96,
   "historico": [
+   {
+    "quando": "2026-07-27T17:04:02.203Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Uruguai x Curação @1.98 (tiro 2) · gatilho: time Uruguai"
+   },
    {
     "quando": "2026-07-27T16:47:44.400Z",
     "resultado": "GREEN",
@@ -439,62 +445,19 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros) · gatilho: time La Boca"
-   },
-   {
-    "quando": "2026-07-27T10:28:44.498Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "euro · Polônia x Espanha @1.95 (tiro 2) · gatilho: odd 2"
    }
   ],
   "consumidas": {
    "super": 1785169885299,
-   "premier": 1785170864207
+   "premier": 1785170864207,
+   "copa": 1785171842003
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:58",
-     "jogo": "Noruega x Uzbequistão",
-     "odd": 1.98
-    },
-    {
-     "h": "18:01",
-     "jogo": "Uruguai x Curação",
-     "odd": 1.98
-    },
-    {
-     "h": "18:04",
-     "jogo": "EUA x México",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "time Uruguai",
-   "alvo": {
-    "h": "18:01",
-    "jogo": "Uruguai x Curação",
-    "odd": 1.98,
-    "unidades": 2,
-    "desde": 1785171662900
-   },
-   "iniciadoEm": 1785171124203,
-   "tiros": [
-    {
-     "h": "17:58",
-     "jogo": "Noruega x Uzbequistão",
-     "odd": 1.98,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785166143899,
    "super": 1785169885299,
    "premier": 1785170864207,
-   "copa": 1785167522805
+   "copa": 1785171842003
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -508,7 +471,7 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": -7.3
+   "2026-07-27": -6.3
   },
   "_gatilhoAtual": {
    "tipo": "time",
