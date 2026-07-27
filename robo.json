@@ -285,7 +285,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:00",
+     "jogo": "Leicester x City",
+     "odd": 2.15
+    },
+    {
+     "h": "04:03",
+     "jogo": "Islington x United",
+     "odd": 2.2
+    },
+    {
+     "h": "04:06",
+     "jogo": "City x Aston",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time United",
+   "alvo": {
+    "h": "04:00",
+    "jogo": "Leicester x City",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785120714499
+   },
+   "iniciadoEm": 1785120714499
+  },
   "cooldown": {
    "copa": 1785103434100,
    "premier": 1785116501098,
@@ -307,10 +337,10 @@
    "2026-07-26": -3.3
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.3",
-   "n": 8,
-   "start": 1
+   "tipo": "time",
+   "chave": "United",
+   "n": 10,
+   "start": 3
   },
   "_obs": {}
  },
