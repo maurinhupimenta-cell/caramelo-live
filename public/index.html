@@ -739,17 +739,16 @@ function abasGraficoHtml(){
 //          (a % que empata com a odd media: acima disso o dia esta pagando mais do que custa).
 function acumChartHtml(ac){
   if(!ac||!ac.serie||ac.serie.length<5)return '<div class="note">acumulado do dia ainda juntando jogos</div>';
+  // EXATAMENTE a mesma chamada do grafico normal. A UNICA diferenca esta na conta da serie:
+  //   normal    -> % dos ultimos N jogos (janela que anda e esquece)
+  //   acumulado -> % do total desde as 00h (nada e esquecido)
   const s=ac.serie, cur=s[s.length-1];
-  const pico=Math.max(...s), vale=Math.min(...s);
-  const cor=cur>0?'var(--greenb)':cur<0?'var(--red)':'#8b98a8';
-  const nome=(typeof nomeMkt!=='undefined'&&nomeMkt[mktSel.value])?nomeMkt[mktSel.value]:'mercado';
   return `<div style="margin-top:2px">
     <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:6px;font-size:12px">
-      <b>📐 Acumulado do dia <span class="note" style="font-size:10px">(soma reta desde as 00h · ${ac.jogos} jogos desde ${ac.desde})</span></b>
-      <span><b style="color:${cor}">${cur>0?'+':''}${cur}u</b> <span class="note">· topo ${pico>0?'+':''}${pico}u · fundo ${vale}u · pagou ${ac.pct[ac.pct.length-1]}%</span></span>
+      <b>📐 Acumulado do dia <span class="note" style="font-size:10px">(% do total desde as 00h · ${ac.jogos} jogos desde ${ac.desde})</span></b>
+      <span><b>${cur}%</b> <span class="note">· base ${ac.base}%</span></span>
     </div>
-    ${lineChart(s, ac.macdHist||[], null, true, ac.serieHoras||[], null, 0)}
-    <div class="note" style="font-size:10px;margin-top:4px">Mesmo gráfico, outra soma: cada jogo entra pelo <b>valor que ele vale</b> — ${nome} paga soma <b style="color:var(--greenb)">+(odd−1)</b>, não paga tira <b style="color:var(--red)">−1</b> — somando das 00h até 23:59. <b>Acima da linha amarela (0)</b> = o dia está no lucro.</div>
+    ${lineChart(s, ac.macdHist||[], null, false, ac.serieHoras||[])}
   </div>`;
 }
 

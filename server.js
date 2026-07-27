@@ -1482,8 +1482,8 @@ function acumuladoDia(liga, mkt) {
   //   green -> + (odd - 1)   |   red -> - 1
   // Soma reta das 00h. Diferente da media (que converge e vira reta), aqui o passo de cada
   // jogo continua pesando o dia inteiro: a linha ganha relevo, topo, fundo e retracao.
-  const serie = equity.slice();
-  const serieHoras = horas.slice();
+  const serie = pct.slice(19);
+  const serieHoras = horas.slice(19);
   const macdHist = serie.length > 3 ? (macdData(serie).hist || []) : [];
   const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
   // odd media do dia -> ponto de equilibrio (a % que empata com a casa)
@@ -2918,8 +2918,8 @@ app.get("/api/estudopulo/:liga", (req, res) => {
   //   green -> + (odd - 1)   |   red -> - 1
   // Soma reta das 00h. Diferente da media (que converge e vira reta), aqui o passo de cada
   // jogo continua pesando o dia inteiro: a linha ganha relevo, topo, fundo e retracao.
-  const serie = equity.slice();
-  const serieHoras = horas.slice();
+  const serie = pct.slice(19);
+  const serieHoras = horas.slice(19);
   const macdHist = serie.length > 3 ? (macdData(serie).hist || []) : [];
   const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
     // P(pagar | seca atual = k) e histograma dos pulos realizados
@@ -3024,8 +3024,8 @@ app.get("/api/estudohora/:liga", (req, res) => {
   //   green -> + (odd - 1)   |   red -> - 1
   // Soma reta das 00h. Diferente da media (que converge e vira reta), aqui o passo de cada
   // jogo continua pesando o dia inteiro: a linha ganha relevo, topo, fundo e retracao.
-  const serie = equity.slice();
-  const serieHoras = horas.slice();
+  const serie = pct.slice(19);
+  const serieHoras = horas.slice(19);
   const macdHist = serie.length > 3 ? (macdData(serie).hist || []) : [];
   const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
     const faixas = { "00-07": [0, 0], "07-12": [0, 0], "12-18": [0, 0], "18-24": [0, 0] };
@@ -3058,8 +3058,8 @@ app.get("/api/estudoancora/:liga", (req, res) => {
   //   green -> + (odd - 1)   |   red -> - 1
   // Soma reta das 00h. Diferente da media (que converge e vira reta), aqui o passo de cada
   // jogo continua pesando o dia inteiro: a linha ganha relevo, topo, fundo e retracao.
-  const serie = equity.slice();
-  const serieHoras = horas.slice();
+  const serie = pct.slice(19);
+  const serieHoras = horas.slice(19);
   const macdHist = serie.length > 3 ? (macdData(serie).hist || []) : [];
   const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
     let comN = 0, comH = 0, forteN = 0, forteH = 0, semN = 0, semH = 0;
@@ -3096,8 +3096,8 @@ app.get("/api/estudocol/:liga", (req, res) => {
   //   green -> + (odd - 1)   |   red -> - 1
   // Soma reta das 00h. Diferente da media (que converge e vira reta), aqui o passo de cada
   // jogo continua pesando o dia inteiro: a linha ganha relevo, topo, fundo e retracao.
-  const serie = equity.slice();
-  const serieHoras = horas.slice();
+  const serie = pct.slice(19);
+  const serieHoras = horas.slice(19);
   const macdHist = serie.length > 3 ? (macdData(serie).hist || []) : [];
   const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
     // --- taxa da coluna ANTES de cada jogo (12 ocorrencias anteriores do mesmo minuto) ---
@@ -3232,8 +3232,8 @@ app.get("/api/estudo3h/:liga", (req, res) => {
   //   green -> + (odd - 1)   |   red -> - 1
   // Soma reta das 00h. Diferente da media (que converge e vira reta), aqui o passo de cada
   // jogo continua pesando o dia inteiro: a linha ganha relevo, topo, fundo e retracao.
-  const serie = equity.slice();
-  const serieHoras = horas.slice();
+  const serie = pct.slice(19);
+  const serieHoras = horas.slice(19);
   const macdHist = serie.length > 3 ? (macdData(serie).hist || []) : [];
   const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
     // transicoes: bloco ALTO (>= base) -> proximo bloco foi o que?
