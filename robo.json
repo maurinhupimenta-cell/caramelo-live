@@ -285,7 +285,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1785175135897,
    "premier": 1785175913954
   },
   "ciclo": null,
@@ -450,7 +449,37 @@
   "consumidas": {
    "copa": 1785175795357
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:57",
+     "jogo": "Southampton x Palace",
+     "odd": 2.02
+    },
+    {
+     "h": "20:00",
+     "jogo": "Wolverhampton x Brighton",
+     "odd": 1.83
+    },
+    {
+     "h": "20:03",
+     "jogo": "Tottenham x Everton",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "seq RRRRG",
+   "alvo": {
+    "h": "19:57",
+    "jogo": "Southampton x Palace",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1785178437802
+   },
+   "iniciadoEm": 1785178437802
+  },
   "cooldown": {
    "euro": 1785172984399,
    "super": 1785174565201,
@@ -473,8 +502,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.02",
-   "n": 8,
+   "chave": "1.83",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
