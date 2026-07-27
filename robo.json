@@ -321,13 +321,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -23.1,
-  "ciclos": 505,
-  "greens": 357,
+  "saldo": -22.1,
+  "ciclos": 506,
+  "greens": 358,
   "redsCiclo": 55,
   "aborts": 0,
   "descartes": 93,
   "historico": [
+   {
+    "quando": "2026-07-27T07:52:02.300Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Arábia Saudita x Paraguai @1.95 (tiro 1) · gatilho: seq RRRRR"
+   },
    {
     "quando": "2026-07-27T07:27:44.804Z",
     "resultado": "GREEN",
@@ -441,55 +447,20 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "super · Sao Paulo x Rio de Janeiro @1.85 (tiro 1) · gatilho: placar acima de 1-0 (2-1)"
-   },
-   {
-    "quando": "2026-07-26T22:57:55.702Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "euro · Itália x Eslováquia @2.07 (tiro 1) · gatilho: coluna :50"
    }
   ],
   "consumidas": {
    "premier": 1785135480500,
    "euro": 1785136783904,
-   "super": 1785137264609
+   "super": 1785137264609,
+   "copa": 1785138722101
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "08:49",
-     "jogo": "Arábia Saudita x Paraguai",
-     "odd": 1.95
-    },
-    {
-     "h": "08:52",
-     "jogo": "México x Jordânia",
-     "odd": 2
-    },
-    {
-     "h": "08:55",
-     "jogo": "Panamá x Austrália",
-     "odd": 2
-    }
-   ],
-   "gatilho": "seq RRRRR",
-   "alvo": {
-    "h": "08:49",
-    "jogo": "Arábia Saudita x Paraguai",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1785138364999
-   },
-   "iniciadoEm": 1785138364999
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785136783904,
    "super": 1785137264609,
    "premier": 1785135480500,
-   "copa": 1785133862107
+   "copa": 1785138722101
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -503,12 +474,12 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": 4.5
+   "2026-07-27": 5.5
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRRR",
-   "n": 9,
+   "chave": "RRRRG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
