@@ -289,8 +289,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "19:06",
@@ -310,13 +310,21 @@
    ],
    "gatilho": "seq RGGRG",
    "alvo": {
-    "h": "19:06",
-    "jogo": "Leeds x Liverpool",
+    "h": "19:09",
+    "jogo": "Norwich x West Ham",
     "odd": 2.45,
-    "unidades": 1,
-    "desde": 1785175389798
+    "unidades": 2,
+    "desde": 1785175735759
    },
-   "iniciadoEm": 1785175389798
+   "iniciadoEm": 1785175389798,
+   "tiros": [
+    {
+     "h": "19:06",
+     "jogo": "Leeds x Liverpool",
+     "odd": 2.45,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785175135897,
@@ -341,8 +349,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGGRG",
-   "n": 8,
+   "chave": "GRGRR",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
