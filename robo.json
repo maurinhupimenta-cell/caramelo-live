@@ -285,11 +285,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1785150527211,
    "euro": 1785153723710,
    "super": 1785154024901
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:16",
+     "jogo": "Paraguai x Turquia",
+     "odd": 2.4
+    },
+    {
+     "h": "13:19",
+     "jogo": "Suíça x Marrocos",
+     "odd": 2.35
+    },
+    {
+     "h": "13:22",
+     "jogo": "Noruega x Gana",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "time Suíça",
+   "alvo": {
+    "h": "13:16",
+    "jogo": "Paraguai x Turquia",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1785154027110
+   },
+   "iniciadoEm": 1785154027110
+  },
   "cooldown": {
    "copa": 1785149884005,
    "premier": 1785150527211,
