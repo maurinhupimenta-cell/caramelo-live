@@ -289,7 +289,37 @@
    "super": 1785158684409,
    "copa": 1785159261608
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:32",
+     "jogo": "Portugal x Turquia",
+     "odd": 2.45
+    },
+    {
+     "h": "14:35",
+     "jogo": "República Tcheca x Geórgia",
+     "odd": 2.7
+    },
+    {
+     "h": "14:38",
+     "jogo": "Hungria x Alemanha",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "odd 2.45",
+   "alvo": {
+    "h": "14:32",
+    "jogo": "Portugal x Turquia",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1785159263904
+   },
+   "iniciadoEm": 1785159263904
+  },
   "cooldown": {
    "copa": 1785159261608,
    "premier": 1785157720510,
@@ -313,8 +343,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.7",
-   "n": 8,
+   "chave": "2.45",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
@@ -455,8 +485,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "14:31",
@@ -476,13 +506,21 @@
    ],
    "gatilho": "odd 2.02",
    "alvo": {
-    "h": "14:31",
-    "jogo": "Agua Branca x Sao Paulo",
-    "odd": 1.83,
-    "unidades": 1,
-    "desde": 1785159064900
+    "h": "14:34",
+    "jogo": "Rio de Janeiro x Avellaneda",
+    "odd": 2.02,
+    "unidades": 2,
+    "desde": 1785159284399
    },
-   "iniciadoEm": 1785159064900
+   "iniciadoEm": 1785159064900,
+   "tiros": [
+    {
+     "h": "14:31",
+     "jogo": "Agua Branca x Sao Paulo",
+     "odd": 1.83,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785158383707,
@@ -506,9 +544,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.02",
-   "n": 19,
-   "start": 1
+   "chave": "1.83",
+   "n": 16,
+   "start": 2
   },
   "_obs": {}
  }
