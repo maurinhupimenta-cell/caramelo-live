@@ -157,12 +157,18 @@
  },
  "o25": {
   "saldo": -71.5,
-  "ciclos": 484,
+  "ciclos": 485,
   "greens": 318,
   "redsCiclo": 81,
   "aborts": 0,
-  "descartes": 85,
+  "descartes": 86,
   "historico": [
+   {
+    "quando": "2026-07-27T09:06:42.504Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho coluna :16) — liga REARMADA"
+   },
    {
     "quando": "2026-07-27T08:44:48.504Z",
     "resultado": "GREEN",
@@ -276,12 +282,6 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "super · Santos x Asuncion @2.4 (tiro 1) · gatilho: odd 2.3"
-   },
-   {
-    "quando": "2026-07-27T03:40:14.305Z",
-    "resultado": "GREEN",
-    "unidades": 3,
-    "detalhe": "euro · Suíça x Eslovênia @2.5 (tiro 3) · gatilho: time Croácia"
    }
   ],
   "consumidas": {
@@ -317,7 +317,12 @@
    "n": 15,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1785143044398,
+    "gatilho": "coluna :16"
+   }
+  }
  },
  "ambas": {
   "saldo": -25.9,
