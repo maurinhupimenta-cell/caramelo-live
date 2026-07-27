@@ -157,12 +157,18 @@
  },
  "o25": {
   "saldo": -74.9,
-  "ciclos": 497,
+  "ciclos": 498,
   "greens": 326,
   "redsCiclo": 83,
   "aborts": 0,
-  "descartes": 88,
+  "descartes": 89,
   "historico": [
+   {
+    "quando": "2026-07-27T13:23:23.611Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho odd 2.45) — liga REARMADA"
+   },
    {
     "quando": "2026-07-27T13:08:40.706Z",
     "resultado": "GREEN",
@@ -276,12 +282,6 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: coluna :16"
-   },
-   {
-    "quando": "2026-07-27T07:14:38.405Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "premier · Everton x Chelsea @2.15 (tiro 1) · gatilho: odd 2.15"
    }
   ],
   "consumidas": {
@@ -354,12 +354,17 @@
    "2026-07-27": -29.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRGG",
-   "n": 8,
-   "start": 1
+   "tipo": "time",
+   "chave": "Suíça",
+   "n": 14,
+   "start": 3
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1785158603611,
+    "gatilho": "odd 2.45"
+   }
+  }
  },
  "ambas": {
   "saldo": -19.9,
