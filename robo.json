@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -110.8,
-  "ciclos": 520,
-  "greens": 334,
+  "saldo": -109.6,
+  "ciclos": 521,
+  "greens": 335,
   "redsCiclo": 90,
   "aborts": 0,
   "descartes": 96,
   "historico": [
+   {
+    "quando": "2026-07-27T22:36:58.359Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Lima x Quito @2.2 (tiro 1) · gatilho: seq GRGRG"
+   },
    {
     "quando": "2026-07-27T22:32:19.863Z",
     "resultado": "GREEN_OBS",
@@ -276,53 +282,18 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq GRGRR"
-   },
-   {
-    "quando": "2026-07-27T13:36:03.304Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "euro · Portugal x Turquia @2.45 (tiro 1) · gatilho: odd 2.45"
    }
   ],
   "consumidas": {
-   "copa": 1785190018799
+   "copa": 1785190018799,
+   "super": 1785191818161
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:34",
-     "jogo": "Lima x Quito",
-     "odd": 2.2
-    },
-    {
-     "h": "23:37",
-     "jogo": "Belo Horizonte x Medellin",
-     "odd": 2.2
-    },
-    {
-     "h": "23:40",
-     "jogo": "Itaquera x Quito",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "seq GRGRG",
-   "alvo": {
-    "h": "23:34",
-    "jogo": "Lima x Quito",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785191541767
-   },
-   "iniciadoEm": 1785191541767
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785190018799,
    "premier": 1785182379795,
    "euro": 1785187378397,
-   "super": 1785169885012
+   "super": 1785191818161
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -337,7 +308,7 @@
    "2026-07-24": -1.7,
    "2026-07-25": 21,
    "2026-07-26": -3.3,
-   "2026-07-27": -65.1
+   "2026-07-27": -63.9
   },
   "_gatilhoAtual": {
    "tipo": "seq",
