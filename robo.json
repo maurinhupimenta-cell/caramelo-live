@@ -344,18 +344,24 @@
    "tipo": "time",
    "chave": "Croácia",
    "n": 10,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -28,
-  "ciclos": 500,
-  "greens": 352,
+  "saldo": -27.2,
+  "ciclos": 501,
+  "greens": 353,
   "redsCiclo": 55,
   "aborts": 0,
   "descartes": 93,
   "historico": [
+   {
+    "quando": "2026-07-27T06:13:04.904Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "super · Agua Branca x Sao Paulo @1.83 (tiro 1) · gatilho: time Lima"
+   },
    {
     "quando": "2026-07-27T05:29:38.805Z",
     "resultado": "GREEN",
@@ -469,53 +475,18 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-26T22:08:46.302Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Islington x Brentford @2.05 (tiro 1) · gatilho: seq RGRRG"
    }
   ],
   "consumidas": {
    "copa": 1785129356109,
    "euro": 1785129598111,
-   "premier": 1785130178609
+   "premier": 1785130178609,
+   "super": 1785132784705
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "07:10",
-     "jogo": "Agua Branca x Sao Paulo",
-     "odd": 1.83
-    },
-    {
-     "h": "07:13",
-     "jogo": "Lima x Buenos Aires",
-     "odd": 1.83
-    },
-    {
-     "h": "07:16",
-     "jogo": "Montevideo x Porto Alegre",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "time Lima",
-   "alvo": {
-    "h": "07:10",
-    "jogo": "Agua Branca x Sao Paulo",
-    "odd": 1.83,
-    "unidades": 1,
-    "desde": 1785132474008
-   },
-   "iniciadoEm": 1785132474008
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785129598111,
-   "super": 1785124341999,
+   "super": 1785132784705,
    "premier": 1785130178609,
    "copa": 1785129356109
   },
@@ -531,13 +502,13 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": -0.4
+   "2026-07-27": 0.4
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Lima",
-   "n": 17,
-   "start": 2
+   "chave": "La Plata",
+   "n": 13,
+   "start": 1
   },
   "_obs": {}
  }
