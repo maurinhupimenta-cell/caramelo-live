@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -77.5,
-  "ciclos": 495,
-  "greens": 324,
+  "saldo": -76.1,
+  "ciclos": 496,
+  "greens": 325,
   "redsCiclo": 83,
   "aborts": 0,
   "descartes": 88,
   "historico": [
+   {
+    "quando": "2026-07-27T12:19:03.603Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "copa · Paraguai x Turquia @2.4 (tiro 1) · gatilho: time Suíça"
+   },
    {
     "quando": "2026-07-27T12:07:05.100Z",
     "resultado": "GREEN",
@@ -276,51 +282,16 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros) · gatilho: coluna :04"
-   },
-   {
-    "quando": "2026-07-27T06:59:59.302Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho odd 2.15) — liga REARMADA"
    }
   ],
   "consumidas": {
    "euro": 1785153723710,
-   "super": 1785154024901
+   "super": 1785154024901,
+   "copa": 1785154743405
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "13:16",
-     "jogo": "Paraguai x Turquia",
-     "odd": 2.4
-    },
-    {
-     "h": "13:19",
-     "jogo": "Suíça x Marrocos",
-     "odd": 2.35
-    },
-    {
-     "h": "13:22",
-     "jogo": "Noruega x Gana",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "time Suíça",
-   "alvo": {
-    "h": "13:16",
-    "jogo": "Paraguai x Turquia",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1785154027110
-   },
-   "iniciadoEm": 1785154027110
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785149884005,
+   "copa": 1785154743405,
    "premier": 1785150527211,
    "euro": 1785153723710,
    "super": 1785154024901
@@ -338,7 +309,7 @@
    "2026-07-24": -1.7,
    "2026-07-25": 21,
    "2026-07-26": -3.3,
-   "2026-07-27": -31.8
+   "2026-07-27": -30.4
   },
   "_gatilhoAtual": {
    "tipo": "time",
@@ -482,7 +453,37 @@
    "premier": 1785151788201,
    "euro": 1785153003707
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:25",
+     "jogo": "Itaquera x La Boca",
+     "odd": 2.05
+    },
+    {
+     "h": "13:28",
+     "jogo": "Santos x Lima",
+     "odd": 2.02
+    },
+    {
+     "h": "13:31",
+     "jogo": "Montevideo x Porto Alegre",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "odd 2.02",
+   "alvo": {
+    "h": "13:25",
+    "jogo": "Itaquera x La Boca",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785154586302
+   },
+   "iniciadoEm": 1785154586302
+  },
   "cooldown": {
    "euro": 1785153003707,
    "super": 1785149924600,
@@ -504,16 +505,11 @@
    "2026-07-27": 4.1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":47",
-   "n": 12,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.02",
+   "n": 17,
+   "start": 2
   },
-  "_obs": {
-   "super": {
-    "desde": 1785153525311,
-    "gatilho": "seq RRRR"
-   }
-  }
+  "_obs": {}
  }
 }
