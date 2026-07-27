@@ -1446,10 +1446,11 @@ app.post("/api/curve", (req, res) => {
 //  - pct   = % de pagamento acumulada desde as 00h (comeca instavel, estabiliza; comparar com a base)
 //  - saldo = batalha OVER x UNDER: +1 quando o mercado paga, -1 quando o oposto paga.
 //            Sobe DE VERDADE quando o mercado esta vencendo o lado contrario no dia.
-function acumuladoDia(liga, mkt) {
+function acumuladoDia(liga, mkt, qtd) {
   const d = store[liga]; if (!d) return null;
   const games = listaCheia(d);
-  if (games.length < 5) return null;
+  if (games.length < 25) return null;
+  // corte na virada do dia (00h do relogio do jogo)
   let idxDia = 0;
   for (let i = 1; i < games.length; i++) {
     const h1 = parseInt((games[i].horario || "").split(":")[0]);
@@ -1457,59 +1458,15 @@ function acumuladoDia(liga, mkt) {
     if (!isNaN(h1) && !isNaN(h0) && h1 < h0 - 12) idxDia = i;
   }
   const dia = games.slice(idxDia);
-  if (dia.length < 3) return null;
-  const k0 = mkt === "ambas" ? "ambs" : mkt;
-  const pct = [], saldo = [], equity = [], horas = [];
-  let pagos = 0, sal = 0, eq = 0;
-  dia.forEach((g, i) => {
-    const p = pays(g, mkt);
-    if (p) pagos++;
-    sal += p ? 1 : -1;
-    // EQUITY (a matematica que importa): aposta 1u todo jogo. Green soma (odd-1), red tira 1.
-    // A odd ja esta embutida -> a linha so sobe quando o mercado paga MAIS do que cobra.
-    const od = g.odds && g.odds[k0];
-    if (od > 1.01) eq += p ? (od - 1) : -1;
-    pct.push(Math.round(pagos / (i + 1) * 1000) / 10);
-    saldo.push(sal);
-    equity.push(Math.round(eq * 10) / 10);
-    horas.push(g.horario || "");
-  });
-  // SERIE IDENTICA A DO GRAFICO NORMAL, so trocando a conta:
-  // normal  = % dos ultimos 20 jogos (janela que anda e esquece)
-  // acumulado = % do TOTAL desde as 00h (cada pagamento vale o mesmo, soma o dia inteiro)
-  // Comeca no 20o jogo pelo mesmo motivo que o normal comeca: antes disso nao ha janela cheia.
-  // SERIE = VALOR ACUMULADO: cada jogo soma o que ele vale de verdade.
-  //   green -> + (odd - 1)   |   red -> - 1
-  // Soma reta das 00h. Diferente da media (que converge e vira reta), aqui o passo de cada
-  // jogo continua pesando o dia inteiro: a linha ganha relevo, topo, fundo e retracao.
-  // FAIXAS DE TEMPO: a mesma conta (soma reta), mas comecando em pontos diferentes.
-  // Faixa curta (3h) sobe/desce facil; faixa longa (18h) precisa de muito mais pagamentos
-  // para mexer - exatamente como as medias por faixa de horario.
-  const JOGOS_POR_HORA = 20; // 1 jogo a cada 3 min
-  const faixasAcum = {};
-  const montaFaixa = arr => {
-    if (arr.length < 25) return null;
-    const s = [], hs = [];
-    let pg = 0;
-    arr.forEach((g, i) => { if (pays(g, mkt)) pg++; if (i >= 19) { s.push(Math.round(pg / (i + 1) * 1000) / 10); hs.push(g.horario || ""); } });
-    return { serie: s, horas: hs, macd: s.length > 3 ? (macdData(s).hist || []) : [] };
-  };
-  for (const h of [3, 6, 12, 18]) {
-    const n = h * JOGOS_POR_HORA;
-    if (games.length >= n + 25) faixasAcum["h" + h] = montaFaixa(games.slice(-n));
-  }
-  faixasAcum.dia = montaFaixa(dia);
-  const fDia = faixasAcum.dia || { serie: [], horas: [], macd: [] };
-  const serie = fDia.serie;
-  const serieHoras = fDia.horas;
-  const macdHist = fDia.macd;
-  const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
-  // odd media do dia -> ponto de equilibrio (a % que empata com a casa)
-  const k = mkt === "ambas" ? "ambs" : mkt;
-  const odds = dia.map(g => g.odds && g.odds[k]).filter(o => o > 1.01);
-  const oddMedia = odds.length ? odds.reduce((a, b) => a + b, 0) / odds.length : null;
-  const equilibrio = oddMedia ? Math.round(100 / oddMedia * 10) / 10 : null;
-  return { faixas: faixasAcum, serie, serieHoras, macdHist, pct, saldo, equity, horas, base, equilibrio, oddMedia: oddMedia ? Math.round(oddMedia * 100) / 100 : null, jogos: dia.length, desde: horas[0] || "" };
+  if (dia.length < 25) return null;
+  // GRAFICO NORMAL, so que usando SO os jogos de hoje: mesma media movel, mesma janela
+  // controlada pelo Qtd. Jogos. A unica diferenca e que nada de ontem entra na conta.
+  const JAN = Math.max(2, Math.min(parseInt(qtd) || 20, Math.floor(dia.length / 2)));
+  const serie = chartSeries(dia, mkt, JAN);
+  const serieHoras = dia.slice(-serie.length).map(g => g.horario || "");
+  const macdHist = serie.length > 3 ? (macdData(serie).hist || []) : [];
+  const base = Math.round(dia.filter(g => pays(g, mkt)).length / dia.length * 1000) / 10;
+  return { serie, serieHoras, macdHist, janela: JAN, jogos: dia.length, desde: (dia[0] || {}).horario || "", base };
 }
 
 app.get("/api/liga/:liga", (req, res) => {
@@ -1650,7 +1607,7 @@ app.get("/api/liga/:liga", (req, res) => {
     proximos,
     rankTimes,
     ultimos: d.ultimos,
-    acum: acumuladoDia(liga, mkt),
+    acum: acumuladoDia(liga, mkt, qtd),
     curvaReal: ehReal,
     fonte: d.fonte || "json"
   });
