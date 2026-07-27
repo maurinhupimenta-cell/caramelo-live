@@ -288,7 +288,37 @@
    "copa": 1785149884005,
    "premier": 1785150527211
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:53",
+     "jogo": "Polônia x Dinamarca",
+     "odd": 2.55
+    },
+    {
+     "h": "12:56",
+     "jogo": "Áustria x Sérvia",
+     "odd": 2.5
+    },
+    {
+     "h": "12:59",
+     "jogo": "República Tcheca x Hungria",
+     "odd": 2.7
+    }
+   ],
+   "gatilho": "odd 2.55",
+   "alvo": {
+    "h": "12:53",
+    "jogo": "Polônia x Dinamarca",
+    "odd": 2.55,
+    "unidades": 1,
+    "desde": 1785153202199
+   },
+   "iniciadoEm": 1785153202199
+  },
   "cooldown": {
    "copa": 1785149884005,
    "premier": 1785150527211,
@@ -311,9 +341,9 @@
    "2026-07-27": -26.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGRR",
-   "n": 16,
+   "tipo": "odd",
+   "chave": "2.55",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
