@@ -1522,7 +1522,10 @@ app.get("/api/liga/:liga", (req, res) => {
   // se a extensao mandou a curva REAL do caramelo, usa ela (identica)
   const curveKey = liga + "|" + mkt;
   const live = liveCurves[curveKey];
-  const curvaReal = live && (Date.now() - live.ts < 120000) ? live : null;
+  // A curva REAL vem pronta da fonte com o periodo DELA - da para dar zoom, mas nao da para
+  // mudar a janela. Entao ela vale so no padrao (20). Se o usuario escolher outra Qtd. Jogos,
+  // usamos a serie calculada aqui, que tem a media movel de verdade (MM40, MM100...).
+  const curvaReal = (qtd === 20) && live && (Date.now() - live.ts < 120000) ? live : null;
   if (curvaReal) {
     const serie = curvaReal.curva.slice(-qtd);
     const sinal = zoneSignal(serie);
