@@ -157,12 +157,18 @@
  },
  "o25": {
   "saldo": -48.3,
-  "ciclos": 466,
+  "ciclos": 467,
   "greens": 309,
   "redsCiclo": 76,
   "aborts": 0,
-  "descartes": 81,
+  "descartes": 82,
   "historico": [
+   {
+    "quando": "2026-07-27T04:11:46.797Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho seq GRRR) — liga REARMADA"
+   },
    {
     "quando": "2026-07-27T03:52:21.903Z",
     "resultado": "GREEN",
@@ -276,12 +282,6 @@
     "resultado": "GREEN",
     "unidades": 2.4,
     "detalhe": "copa · Gana x Irã @2.7 (tiro 2) · gatilho: seq RRGG"
-   },
-   {
-    "quando": "2026-07-26T17:26:39.307Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "premier · Southampton x Wolverhampton @2.2 (tiro 3) · gatilho: seq RGGRG"
    }
   ],
   "consumidas": {
@@ -346,7 +346,12 @@
    "n": 8,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1785125335106,
+    "gatilho": "seq GRRR"
+   }
+  }
  },
  "ambas": {
   "saldo": -31.8,
