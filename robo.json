@@ -157,12 +157,18 @@
  },
  "o25": {
   "saldo": -105.5,
-  "ciclos": 508,
+  "ciclos": 509,
   "greens": 329,
   "redsCiclo": 88,
   "aborts": 0,
-  "descartes": 91,
+  "descartes": 92,
   "historico": [
+   {
+    "quando": "2026-07-27T16:44:53.098Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho seq GRGRR) — liga REARMADA"
+   },
    {
     "quando": "2026-07-27T16:31:25.206Z",
     "resultado": "RED_CICLO",
@@ -276,12 +282,6 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho odd 2.45) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-27T10:39:44.499Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "super · Belo Horizonte x Guayaquil @2.05 (tiro 1) · gatilho: seq RRGRG"
    }
   ],
   "consumidas": {
@@ -315,7 +315,12 @@
    "n": 8,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1785170693009,
+    "gatilho": "seq GRGRR"
+   }
+  }
  },
  "ambas": {
   "saldo": -35.6,
