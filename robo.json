@@ -289,8 +289,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "22:58",
@@ -310,11 +310,11 @@
    ],
    "gatilho": "odd 2.15",
    "alvo": {
-    "h": "23:01",
-    "jogo": "Curação x Senegal",
-    "odd": 2.3,
-    "unidades": 2,
-    "desde": 1785189714164
+    "h": "23:04",
+    "jogo": "Gana x Portugal",
+    "odd": 2.25,
+    "unidades": 4,
+    "desde": 1785189851155
    },
    "iniciadoEm": 1785189294056,
    "tiros": [
@@ -323,6 +323,12 @@
      "jogo": "Espanha x Jordânia",
      "odd": 2.15,
      "unidades": 1
+    },
+    {
+     "h": "23:01",
+     "jogo": "Curação x Senegal",
+     "odd": 2.3,
+     "unidades": 2
     }
    ]
   },
@@ -349,8 +355,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRGG",
-   "n": 14,
+   "chave": "RGRRR",
+   "n": 12,
    "start": 1
   },
   "_obs": {
@@ -493,7 +499,37 @@
    "euro": 1785187058494,
    "premier": 1785187614396
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:10",
+     "jogo": "Coreia do Sul x Cabo Verde",
+     "odd": 2.1
+    },
+    {
+     "h": "23:13",
+     "jogo": "Nova Zelândia x Equador",
+     "odd": 1.87
+    },
+    {
+     "h": "23:16",
+     "jogo": "República Tcheca x Iraque",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time Nova Zelândia",
+   "alvo": {
+    "h": "23:10",
+    "jogo": "Coreia do Sul x Cabo Verde",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785189714458
+   },
+   "iniciadoEm": 1785189714458
+  },
   "cooldown": {
    "euro": 1785187058494,
    "super": 1785184303396,
@@ -515,10 +551,10 @@
    "2026-07-27": 7.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRR",
-   "n": 24,
-   "start": 1
+   "tipo": "time",
+   "chave": "Nova Zelândia",
+   "n": 16,
+   "start": 3
   },
   "_obs": {}
  }
