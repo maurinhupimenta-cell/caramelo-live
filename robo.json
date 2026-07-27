@@ -289,8 +289,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "16:04",
@@ -310,11 +310,11 @@
    ],
    "gatilho": "seq RRGRG",
    "alvo": {
-    "h": "16:07",
-    "jogo": "Santos x Agua Branca",
-    "odd": 2.25,
-    "unidades": 2,
-    "desde": 1785164845298
+    "h": "16:10",
+    "jogo": "Porto Alegre x La Plata",
+    "odd": 3,
+    "unidades": 4,
+    "desde": 1785165002605
    },
    "iniciadoEm": 1785164486703,
    "tiros": [
@@ -323,6 +323,12 @@
      "jogo": "Itaquera x Montevideo",
      "odd": 2.2,
      "unidades": 1
+    },
+    {
+     "h": "16:07",
+     "jogo": "Santos x Agua Branca",
+     "odd": 2.25,
+     "unidades": 2
     }
    ]
   },
@@ -351,7 +357,7 @@
    "tipo": "time",
    "chave": "Suíça",
    "n": 15,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
@@ -488,7 +494,37 @@
    "copa": 1785161744411,
    "premier": 1785162593305
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:16",
+     "jogo": "Santiago x Itaquera",
+     "odd": 1.9
+    },
+    {
+     "h": "16:19",
+     "jogo": "Rio de Janeiro x La Boca",
+     "odd": 2.02
+    },
+    {
+     "h": "16:22",
+     "jogo": "Sao Paulo x La Plata",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "odd 2.02",
+   "alvo": {
+    "h": "16:16",
+    "jogo": "Santiago x Itaquera",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1785164845499
+   },
+   "iniciadoEm": 1785164845499
+  },
   "cooldown": {
    "euro": 1785158383707,
    "super": 1785159644498,
@@ -510,10 +546,10 @@
    "2026-07-27": 2.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRG",
-   "n": 12,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.02",
+   "n": 20,
+   "start": 3
   },
   "_obs": {}
  }
