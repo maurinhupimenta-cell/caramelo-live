@@ -449,14 +449,13 @@
    }
   ],
   "consumidas": {
-   "euro": 1785129598111,
    "premier": 1785130178609,
    "super": 1785132784705
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "07:25",
@@ -476,13 +475,21 @@
    ],
    "gatilho": "time Iraque",
    "alvo": {
-    "h": "07:25",
-    "jogo": "Noruega x México",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1785132972703
+    "h": "07:28",
+    "jogo": "Paraguai x Iraque",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1785133673903
    },
-   "iniciadoEm": 1785132972703
+   "iniciadoEm": 1785132972703,
+   "tiros": [
+    {
+     "h": "07:25",
+     "jogo": "Noruega x México",
+     "odd": 1.9,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785129598111,
@@ -505,10 +512,10 @@
    "2026-07-27": 0.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Iraque",
-   "n": 11,
-   "start": 2
+   "tipo": "odd",
+   "chave": "2.02",
+   "n": 9,
+   "start": 1
   },
   "_obs": {}
  }
