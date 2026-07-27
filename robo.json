@@ -452,8 +452,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "07:48",
@@ -473,13 +473,21 @@
    ],
    "gatilho": "odd 2",
    "alvo": {
-    "h": "07:48",
-    "jogo": "Brentford x Aston",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785134392712
+    "h": "07:51",
+    "jogo": "Brighton x Leeds",
+    "odd": 2,
+    "unidades": 2,
+    "desde": 1785135048505
    },
-   "iniciadoEm": 1785134392712
+   "iniciadoEm": 1785134392712,
+   "tiros": [
+    {
+     "h": "07:48",
+     "jogo": "Brentford x Aston",
+     "odd": 2.05,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785129598111,
@@ -503,8 +511,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2",
-   "n": 12,
+   "chave": "2.02",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
