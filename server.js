@@ -1458,14 +1458,20 @@ function acumuladoDia(liga, mkt) {
   }
   const dia = games.slice(idxDia);
   if (dia.length < 3) return null;
-  const pct = [], saldo = [], horas = [];
-  let pagos = 0, sal = 0;
+  const k0 = mkt === "ambas" ? "ambs" : mkt;
+  const pct = [], saldo = [], equity = [], horas = [];
+  let pagos = 0, sal = 0, eq = 0;
   dia.forEach((g, i) => {
     const p = pays(g, mkt);
     if (p) pagos++;
     sal += p ? 1 : -1;
+    // EQUITY (a matematica que importa): aposta 1u todo jogo. Green soma (odd-1), red tira 1.
+    // A odd ja esta embutida -> a linha so sobe quando o mercado paga MAIS do que cobra.
+    const od = g.odds && g.odds[k0];
+    if (od > 1.01) eq += p ? (od - 1) : -1;
     pct.push(Math.round(pagos / (i + 1) * 1000) / 10);
     saldo.push(sal);
+    equity.push(Math.round(eq * 10) / 10);
     horas.push(g.horario || "");
   });
   const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
@@ -1474,7 +1480,7 @@ function acumuladoDia(liga, mkt) {
   const odds = dia.map(g => g.odds && g.odds[k]).filter(o => o > 1.01);
   const oddMedia = odds.length ? odds.reduce((a, b) => a + b, 0) / odds.length : null;
   const equilibrio = oddMedia ? Math.round(100 / oddMedia * 10) / 10 : null;
-  return { pct, saldo, horas, base, equilibrio, oddMedia: oddMedia ? Math.round(oddMedia * 100) / 100 : null, jogos: dia.length, desde: horas[0] || "" };
+  return { pct, saldo, equity, horas, base, equilibrio, oddMedia: oddMedia ? Math.round(oddMedia * 100) / 100 : null, jogos: dia.length, desde: horas[0] || "" };
 }
 
 app.get("/api/liga/:liga", (req, res) => {
