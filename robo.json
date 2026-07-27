@@ -453,8 +453,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "11:23",
@@ -474,13 +474,21 @@
    ],
    "gatilho": "odd 2",
    "alvo": {
-    "h": "11:23",
-    "jogo": "Itália x Escócia",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1785147821098
+    "h": "11:26",
+    "jogo": "Polônia x Espanha",
+    "odd": 1.95,
+    "unidades": 2,
+    "desde": 1785147944101
    },
-   "iniciadoEm": 1785147821098
+   "iniciadoEm": 1785147821098,
+   "tiros": [
+    {
+     "h": "11:23",
+     "jogo": "Itália x Escócia",
+     "odd": 2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785144183709,
@@ -503,9 +511,9 @@
    "2026-07-27": 7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2",
-   "n": 11,
+   "tipo": "seq",
+   "chave": "RRRRR",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
