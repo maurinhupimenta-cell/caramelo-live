@@ -318,13 +318,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -21.6,
-  "ciclos": 515,
-  "greens": 365,
+  "saldo": -20.6,
+  "ciclos": 516,
+  "greens": 366,
   "redsCiclo": 56,
   "aborts": 0,
   "descartes": 94,
   "historico": [
+   {
+    "quando": "2026-07-27T10:23:39.803Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Watford x Chelsea @1.98 (tiro 2) · gatilho: odd 1.98"
+   },
    {
     "quando": "2026-07-27T10:10:42.605Z",
     "resultado": "GREEN",
@@ -438,61 +444,48 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho odd 1.98) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-27T04:24:08.499Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "premier · Wolverhampton x Watford @1.93 (tiro 3) · gatilho: time Norwich"
    }
   ],
   "consumidas": {
    "super": 1785145545409,
-   "copa": 1785147042409
+   "copa": 1785147042409,
+   "premier": 1785147819698
   },
   "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "11:18",
-     "jogo": "City x Leicester",
+     "h": "11:23",
+     "jogo": "Itália x Escócia",
+     "odd": 2
+    },
+    {
+     "h": "11:26",
+     "jogo": "Polônia x Espanha",
      "odd": 1.95
     },
     {
-     "h": "11:21",
-     "jogo": "Watford x Chelsea",
-     "odd": 1.98
-    },
-    {
-     "h": "11:24",
-     "jogo": "City x Southampton",
-     "odd": 2.02
+     "h": "11:29",
+     "jogo": "Escócia x Países Baixos",
+     "odd": 1.85
     }
    ],
-   "gatilho": "odd 1.98",
+   "gatilho": "odd 2",
    "alvo": {
-    "h": "11:21",
-    "jogo": "Watford x Chelsea",
-    "odd": 1.98,
-    "unidades": 2,
-    "desde": 1785147640500
+    "h": "11:23",
+    "jogo": "Itália x Escócia",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1785147821098
    },
-   "iniciadoEm": 1785147281704,
-   "tiros": [
-    {
-     "h": "11:18",
-     "jogo": "City x Leicester",
-     "odd": 1.95,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1785147821098
   },
   "cooldown": {
    "euro": 1785144183709,
    "super": 1785145545409,
-   "premier": 1785143678298,
+   "premier": 1785147819698,
    "copa": 1785147042409
   },
   "dias": {
@@ -507,11 +500,11 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": 6
+   "2026-07-27": 7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":24",
+   "tipo": "odd",
+   "chave": "2",
    "n": 11,
    "start": 1
   },
