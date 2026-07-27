@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -71.5,
-  "ciclos": 485,
+  "saldo": -78.5,
+  "ciclos": 486,
   "greens": 318,
-  "redsCiclo": 81,
+  "redsCiclo": 82,
   "aborts": 0,
   "descartes": 86,
   "historico": [
+   {
+    "quando": "2026-07-27T09:22:22.103Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: coluna :16"
+   },
    {
     "quando": "2026-07-27T09:06:42.504Z",
     "resultado": "GREEN_OBS",
@@ -276,66 +282,17 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho seq GRRR) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-27T03:52:21.903Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "super · Santos x Asuncion @2.4 (tiro 1) · gatilho: odd 2.3"
    }
   ],
   "consumidas": {
    "super": 1785140704412,
    "euro": 1785141284104,
-   "premier": 1785141888309
+   "premier": 1785141888309,
+   "copa": 1785144141904
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "10:13",
-     "jogo": "Panamá x Iraque",
-     "odd": 2.55
-    },
-    {
-     "h": "10:16",
-     "jogo": "Argentina x Países Baixos",
-     "odd": 2.2
-    },
-    {
-     "h": "10:19",
-     "jogo": "Colômbia x RD Congo",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "coluna :16",
-   "alvo": {
-    "h": "10:19",
-    "jogo": "Colômbia x RD Congo",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1785143921602
-   },
-   "iniciadoEm": 1785143204604,
-   "tiros": [
-    {
-     "h": "10:13",
-     "jogo": "Panamá x Iraque",
-     "odd": 2.55,
-     "unidades": 1
-    },
-    {
-     "h": "10:16",
-     "jogo": "Argentina x Países Baixos",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785137102404,
+   "copa": 1785144141904,
    "premier": 1785141888309,
    "euro": 1785141284104,
    "super": 1785140704412
@@ -353,7 +310,7 @@
    "2026-07-24": -1.7,
    "2026-07-25": 21,
    "2026-07-26": -3.3,
-   "2026-07-27": -25.8
+   "2026-07-27": -32.8
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
