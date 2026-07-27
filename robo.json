@@ -157,12 +157,18 @@
  },
  "o25": {
   "saldo": -77.2,
-  "ciclos": 487,
+  "ciclos": 488,
   "greens": 319,
   "redsCiclo": 82,
   "aborts": 0,
-  "descartes": 86,
+  "descartes": 87,
   "historico": [
+   {
+    "quando": "2026-07-27T10:33:44.306Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
+   },
    {
     "quando": "2026-07-27T09:50:46.303Z",
     "resultado": "GREEN",
@@ -276,18 +282,42 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "premier · Wolverhampton x Watford @2.15 (tiro 1) · gatilho: time Brighton"
-   },
-   {
-    "quando": "2026-07-27T04:12:00.905Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "copa · Iraque x Países Baixos @2.45 (tiro 1) · gatilho: time Suíça"
    }
   ],
   "consumidas": {
    "premier": 1785145846109
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:37",
+     "jogo": "Belo Horizonte x Guayaquil",
+     "odd": 2.05
+    },
+    {
+     "h": "11:40",
+     "jogo": "Porto Alegre x Avellaneda",
+     "odd": 2.62
+    },
+    {
+     "h": "11:43",
+     "jogo": "Belo Horizonte x Medellin",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "seq RRGRG",
+   "alvo": {
+    "h": "11:37",
+    "jogo": "Belo Horizonte x Guayaquil",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785148426209
+   },
+   "iniciadoEm": 1785148426209
+  },
   "cooldown": {
    "copa": 1785144141904,
    "premier": 1785145846109,
@@ -311,7 +341,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRGG",
+   "chave": "RRGRG",
    "n": 8,
    "start": 1
   },
