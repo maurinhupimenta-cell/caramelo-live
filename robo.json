@@ -449,7 +449,37 @@
    "super": 1785115853006,
    "premier": 1785117763702
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:17",
+     "jogo": "Portugal x Itália",
+     "odd": 1.98
+    },
+    {
+     "h": "03:20",
+     "jogo": "Inglaterra x Turquia",
+     "odd": 2.02
+    },
+    {
+     "h": "03:23",
+     "jogo": "República Tcheca x Polônia",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "odd 1.98",
+   "alvo": {
+    "h": "03:17",
+    "jogo": "Portugal x Itália",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785118735101
+   },
+   "iniciadoEm": 1785118735101
+  },
   "cooldown": {
    "euro": 1785106675507,
    "super": 1785115853006,
@@ -471,8 +501,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2",
-   "n": 9,
+   "chave": "1.98",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
