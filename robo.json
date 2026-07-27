@@ -288,7 +288,37 @@
    "copa": 1785130080208,
    "premier": 1785131314906
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:14",
+     "jogo": "Polônia x Eslovênia",
+     "odd": 2.87
+    },
+    {
+     "h": "07:17",
+     "jogo": "Croácia x Escócia",
+     "odd": 2.2
+    },
+    {
+     "h": "07:20",
+     "jogo": "Portugal x Turquia",
+     "odd": 2.45
+    }
+   ],
+   "gatilho": "time Croácia",
+   "alvo": {
+    "h": "07:14",
+    "jogo": "Polônia x Eslovênia",
+    "odd": 2.87,
+    "unidades": 1,
+    "desde": 1785132478410
+   },
+   "iniciadoEm": 1785132478410
+  },
   "cooldown": {
    "copa": 1785130080208,
    "premier": 1785131314906,
@@ -311,10 +341,10 @@
    "2026-07-27": -10.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRR",
+   "tipo": "time",
+   "chave": "Croácia",
    "n": 10,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
@@ -452,7 +482,37 @@
    "euro": 1785129598111,
    "premier": 1785130178609
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:10",
+     "jogo": "Agua Branca x Sao Paulo",
+     "odd": 1.83
+    },
+    {
+     "h": "07:13",
+     "jogo": "Lima x Buenos Aires",
+     "odd": 1.83
+    },
+    {
+     "h": "07:16",
+     "jogo": "Montevideo x Porto Alegre",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time Lima",
+   "alvo": {
+    "h": "07:10",
+    "jogo": "Agua Branca x Sao Paulo",
+    "odd": 1.83,
+    "unidades": 1,
+    "desde": 1785132474008
+   },
+   "iniciadoEm": 1785132474008
+  },
   "cooldown": {
    "euro": 1785129598111,
    "super": 1785124341999,
@@ -475,9 +535,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Norwich",
-   "n": 14,
-   "start": 1
+   "chave": "Lima",
+   "n": 17,
+   "start": 2
   },
   "_obs": {}
  }
