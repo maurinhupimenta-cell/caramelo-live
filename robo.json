@@ -289,7 +289,37 @@
    "copa": 1785125520707,
    "premier": 1785126248011
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:50",
+     "jogo": "Portugal x Áustria",
+     "odd": 2.3
+    },
+    {
+     "h": "05:53",
+     "jogo": "Polônia x Croácia",
+     "odd": 2.4
+    },
+    {
+     "h": "05:56",
+     "jogo": "Bélgica x Suíça",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "time Croácia",
+   "alvo": {
+    "h": "05:50",
+    "jogo": "Portugal x Áustria",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1785127264805
+   },
+   "iniciadoEm": 1785127264805
+  },
   "cooldown": {
    "copa": 1785125520707,
    "premier": 1785126248011,
@@ -312,10 +342,10 @@
    "2026-07-27": 0.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRR",
-   "n": 11,
-   "start": 1
+   "tipo": "time",
+   "chave": "Croácia",
+   "n": 9,
+   "start": 3
   },
   "_obs": {}
  },
