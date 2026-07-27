@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -80.5,
-  "ciclos": 500,
-  "greens": 327,
+  "saldo": -79,
+  "ciclos": 501,
+  "greens": 328,
   "redsCiclo": 84,
   "aborts": 0,
   "descartes": 89,
   "historico": [
+   {
+    "quando": "2026-07-27T13:36:03.304Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "euro · Portugal x Turquia @2.45 (tiro 1) · gatilho: odd 2.45"
+   },
    {
     "quando": "2026-07-27T13:34:21.805Z",
     "resultado": "GREEN",
@@ -276,54 +282,19 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros) · gatilho: coluna :19"
-   },
-   {
-    "quando": "2026-07-27T08:09:45.903Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :19) — liga REARMADA"
    }
   ],
   "consumidas": {
    "premier": 1785157720510,
    "super": 1785158684409,
-   "copa": 1785159261608
+   "copa": 1785159261608,
+   "euro": 1785159363106
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:32",
-     "jogo": "Portugal x Turquia",
-     "odd": 2.45
-    },
-    {
-     "h": "14:35",
-     "jogo": "República Tcheca x Geórgia",
-     "odd": 2.7
-    },
-    {
-     "h": "14:38",
-     "jogo": "Hungria x Alemanha",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "odd 2.45",
-   "alvo": {
-    "h": "14:32",
-    "jogo": "Portugal x Turquia",
-    "odd": 2.45,
-    "unidades": 1,
-    "desde": 1785159263904
-   },
-   "iniciadoEm": 1785159263904
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785159261608,
    "premier": 1785157720510,
-   "euro": 1785153723710,
+   "euro": 1785159363106,
    "super": 1785158684409
   },
   "dias": {
@@ -339,7 +310,7 @@
    "2026-07-24": -1.7,
    "2026-07-25": 21,
    "2026-07-26": -3.3,
-   "2026-07-27": -34.8
+   "2026-07-27": -33.3
   },
   "_gatilhoAtual": {
    "tipo": "odd",
