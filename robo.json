@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -62.2,
-  "ciclos": 477,
-  "greens": 314,
+  "saldo": -61,
+  "ciclos": 478,
+  "greens": 315,
   "redsCiclo": 79,
   "aborts": 0,
   "descartes": 84,
   "historico": [
+   {
+    "quando": "2026-07-27T07:14:38.405Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · Everton x Chelsea @2.15 (tiro 1) · gatilho: odd 2.15"
+   },
    {
     "quando": "2026-07-27T07:09:44.703Z",
     "resultado": "RED_CICLO",
@@ -276,52 +282,47 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros) · gatilho: coluna :37"
-   },
-   {
-    "quando": "2026-07-26T21:42:54.703Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :37) — liga REARMADA"
    }
   ],
   "consumidas": {
    "euro": 1785133192705,
-   "super": 1785136184508
+   "super": 1785136184508,
+   "premier": 1785136478212
   },
   "ciclo": {
-   "liga": "premier",
+   "liga": "copa",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "08:12",
-     "jogo": "Everton x Chelsea",
-     "odd": 2.15
+     "h": "08:16",
+     "jogo": "Panamá x África do Sul",
+     "odd": 2.55
     },
     {
-     "h": "08:15",
-     "jogo": "Southampton x Leeds",
-     "odd": 2.7
+     "h": "08:19",
+     "jogo": "Equador x Costa do Marfim",
+     "odd": 2.07
     },
     {
-     "h": "08:18",
-     "jogo": "Brighton x Leicester",
+     "h": "08:22",
+     "jogo": "Haiti x EUA",
      "odd": 2.1
     }
    ],
-   "gatilho": "odd 2.15",
+   "gatilho": "coluna :16",
    "alvo": {
-    "h": "08:12",
-    "jogo": "Everton x Chelsea",
-    "odd": 2.15,
+    "h": "08:16",
+    "jogo": "Panamá x África do Sul",
+    "odd": 2.55,
     "unidades": 1,
-    "desde": 1785136186808
+    "desde": 1785136479810
    },
-   "iniciadoEm": 1785136186808
+   "iniciadoEm": 1785136479810
   },
   "cooldown": {
    "copa": 1785130080208,
-   "premier": 1785131314906,
+   "premier": 1785136478212,
    "euro": 1785133192705,
    "super": 1785136184508
   },
@@ -338,7 +339,7 @@
    "2026-07-24": -1.7,
    "2026-07-25": 21,
    "2026-07-26": -3.3,
-   "2026-07-27": -16.5
+   "2026-07-27": -15.3
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
@@ -533,10 +534,10 @@
    "2026-07-27": 2.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.02",
+   "tipo": "time",
+   "chave": "La Boca",
    "n": 11,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
