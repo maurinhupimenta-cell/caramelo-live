@@ -287,7 +287,37 @@
   "consumidas": {
    "super": 1785169885012
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:48",
+     "jogo": "Norwich x Islington",
+     "odd": 2.2
+    },
+    {
+     "h": "17:51",
+     "jogo": "Tottenham x United",
+     "odd": 2.4
+    },
+    {
+     "h": "17:54",
+     "jogo": "Liverpool x Wolverhampton",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "seq GRGRR",
+   "alvo": {
+    "h": "17:48",
+    "jogo": "Norwich x Islington",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785170702298
+   },
+   "iniciadoEm": 1785170702298
+  },
   "cooldown": {
    "copa": 1785165723909,
    "premier": 1785164050405,
@@ -310,17 +340,12 @@
    "2026-07-27": -59.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.75",
-   "n": 8,
+   "tipo": "seq",
+   "chave": "GRGRR",
+   "n": 10,
    "start": 1
   },
-  "_obs": {
-   "premier": {
-    "desde": 1785170693009,
-    "gatilho": "seq GRGRR"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -35.6,
@@ -457,8 +482,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "17:39",
@@ -478,11 +503,11 @@
    ],
    "gatilho": "odd 1.98",
    "alvo": {
-    "h": "17:42",
-    "jogo": "Liverpool x Chelsea",
+    "h": "17:45",
+    "jogo": "United x Newcastle",
     "odd": 1.93,
-    "unidades": 2,
-    "desde": 1785170504506
+    "unidades": 4,
+    "desde": 1785170693102
    },
    "iniciadoEm": 1785170176507,
    "tiros": [
@@ -491,6 +516,12 @@
      "jogo": "Wolverhampton x Tottenham",
      "odd": 1.98,
      "unidades": 1
+    },
+    {
+     "h": "17:42",
+     "jogo": "Liverpool x Chelsea",
+     "odd": 1.93,
+     "unidades": 2
     }
    ]
   },
@@ -515,9 +546,9 @@
    "2026-07-27": -8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.98",
-   "n": 23,
+   "tipo": "seq",
+   "chave": "RGRR",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
