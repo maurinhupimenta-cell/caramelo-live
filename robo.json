@@ -323,13 +323,19 @@
   }
  },
  "ambas": {
-  "saldo": -21.2,
-  "ciclos": 555,
-  "greens": 393,
+  "saldo": -20.2,
+  "ciclos": 556,
+  "greens": 394,
   "redsCiclo": 60,
   "aborts": 0,
   "descartes": 102,
   "historico": [
+   {
+    "quando": "2026-07-27T21:26:54.596Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Palace x Brentford @1.98 (tiro 2) · gatilho: coluna :24"
+   },
    {
     "quando": "2026-07-27T21:17:38.601Z",
     "resultado": "GREEN",
@@ -443,62 +449,19 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · Uruguai x Curação @1.98 (tiro 2) · gatilho: time Uruguai"
-   },
-   {
-    "quando": "2026-07-27T16:47:44.400Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "premier · United x Newcastle @1.93 (tiro 3) · gatilho: odd 1.98"
    }
   ],
   "consumidas": {
    "super": 1785184303396,
    "copa": 1785185753898,
-   "euro": 1785187058494
+   "euro": 1785187058494,
+   "premier": 1785187614396
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "22:21",
-     "jogo": "Southampton x Leicester",
-     "odd": 2.05
-    },
-    {
-     "h": "22:24",
-     "jogo": "Palace x Brentford",
-     "odd": 1.98
-    },
-    {
-     "h": "22:27",
-     "jogo": "Everton x Islington",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "coluna :24",
-   "alvo": {
-    "h": "22:24",
-    "jogo": "Palace x Brentford",
-    "odd": 1.98,
-    "unidades": 2,
-    "desde": 1785187466498
-   },
-   "iniciadoEm": 1785187059996,
-   "tiros": [
-    {
-     "h": "22:21",
-     "jogo": "Southampton x Leicester",
-     "odd": 2.05,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785187058494,
    "super": 1785184303396,
-   "premier": 1785183105906,
+   "premier": 1785187614396,
    "copa": 1785185753898
   },
   "dias": {
@@ -513,7 +476,7 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": 6.4
+   "2026-07-27": 7.4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
