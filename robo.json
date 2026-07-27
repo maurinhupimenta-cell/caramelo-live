@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -68,
-  "ciclos": 479,
-  "greens": 315,
+  "saldo": -66.9,
+  "ciclos": 480,
+  "greens": 316,
   "redsCiclo": 80,
   "aborts": 0,
   "descartes": 84,
   "historico": [
+   {
+    "quando": "2026-07-27T07:25:44.102Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Romênia x Suíça @2.07 (tiro 1) · gatilho: coluna :23"
+   },
    {
     "quando": "2026-07-27T07:25:02.599Z",
     "resultado": "RED_CICLO",
@@ -276,24 +282,19 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "premier · West Ham x Norwich @2.45 (tiro 1) · gatilho: seq GGRGG"
-   },
-   {
-    "quando": "2026-07-26T22:03:54.205Z",
-    "resultado": "GREEN",
-    "unidades": 2.6,
-    "detalhe": "copa · Canadá x Turquia @2.4 (tiro 3) · gatilho: time Áustria"
    }
   ],
   "consumidas": {
    "super": 1785136184508,
    "premier": 1785136478212,
-   "copa": 1785137102404
+   "copa": 1785137102404,
+   "euro": 1785137143904
   },
   "ciclo": null,
   "cooldown": {
    "copa": 1785137102404,
    "premier": 1785136478212,
-   "euro": 1785133192705,
+   "euro": 1785137143904,
    "super": 1785136184508
   },
   "dias": {
@@ -309,11 +310,11 @@
    "2026-07-24": -1.7,
    "2026-07-25": 21,
    "2026-07-26": -3.3,
-   "2026-07-27": -22.3
+   "2026-07-27": -21.2
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":23",
+   "chave": ":26",
    "n": 8,
    "start": 1
   },
