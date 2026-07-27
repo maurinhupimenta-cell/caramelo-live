@@ -319,13 +319,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -33.9,
-  "ciclos": 538,
-  "greens": 381,
+  "saldo": -32.7,
+  "ciclos": 539,
+  "greens": 382,
   "redsCiclo": 60,
   "aborts": 0,
   "descartes": 97,
   "historico": [
+   {
+    "quando": "2026-07-27T17:23:04.507Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Geórgia x Hungria @2.1 (tiro 2) · gatilho: seq RGRGR"
+   },
    {
     "quando": "2026-07-27T17:17:04.207Z",
     "resultado": "GREEN_OBS",
@@ -439,60 +445,17 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "premier · Wolverhampton x Watford @1.93 (tiro 2) · gatilho: coluna :24"
-   },
-   {
-    "quando": "2026-07-27T11:19:02.006Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Iraque x Costa do Marfim @2 (tiro 1) · gatilho: seq RRRGG"
    }
   ],
   "consumidas": {
    "super": 1785169885299,
    "premier": 1785170864207,
-   "copa": 1785171842003
+   "copa": 1785171842003,
+   "euro": 1785172984399
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "18:17",
-     "jogo": "Croácia x Dinamarca",
-     "odd": 2.02
-    },
-    {
-     "h": "18:20",
-     "jogo": "Geórgia x Hungria",
-     "odd": 2.1
-    },
-    {
-     "h": "18:23",
-     "jogo": "Sérvia x Croácia",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "seq RGRGR",
-   "alvo": {
-    "h": "18:20",
-    "jogo": "Geórgia x Hungria",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1785172823904
-   },
-   "iniciadoEm": 1785172624806,
-   "tiros": [
-    {
-     "h": "18:17",
-     "jogo": "Croácia x Dinamarca",
-     "odd": 2.02,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785166143899,
+   "euro": 1785172984399,
    "super": 1785169885299,
    "premier": 1785170864207,
    "copa": 1785171842003
@@ -509,7 +472,7 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": -6.3
+   "2026-07-27": -5.1
   },
   "_gatilhoAtual": {
    "tipo": "seq",
