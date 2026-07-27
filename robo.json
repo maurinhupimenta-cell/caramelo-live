@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -79,
-  "ciclos": 501,
+  "saldo": -86,
+  "ciclos": 502,
   "greens": 328,
-  "redsCiclo": 84,
+  "redsCiclo": 85,
   "aborts": 0,
   "descartes": 89,
   "historico": [
+   {
+    "quando": "2026-07-27T14:54:10.601Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq GRGRR"
+   },
    {
     "quando": "2026-07-27T13:36:03.304Z",
     "resultado": "GREEN",
@@ -276,63 +282,15 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "euro · Países Baixos x Bélgica @2.02 (tiro 3) · gatilho: coluna :26"
-   },
-   {
-    "quando": "2026-07-27T08:25:04.601Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: coluna :19"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "15:45",
-     "jogo": "Brentford x Leicester",
-     "odd": 2.3
-    },
-    {
-     "h": "15:48",
-     "jogo": "Newcastle x Watford",
-     "odd": 2.15
-    },
-    {
-     "h": "15:51",
-     "jogo": "Norwich x Aston",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "seq GRGRR",
-   "alvo": {
-    "h": "15:51",
-    "jogo": "Norwich x Aston",
-    "odd": 2.3,
-    "unidades": 4,
-    "desde": 1785163849101
-   },
-   "iniciadoEm": 1785163306699,
-   "tiros": [
-    {
-     "h": "15:45",
-     "jogo": "Brentford x Leicester",
-     "odd": 2.3,
-     "unidades": 1
-    },
-    {
-     "h": "15:48",
-     "jogo": "Newcastle x Watford",
-     "odd": 2.15,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1785164050405
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785159261608,
-   "premier": 1785157720510,
+   "premier": 1785164050405,
    "euro": 1785159363106,
    "super": 1785158684409
   },
@@ -349,7 +307,7 @@
    "2026-07-24": -1.7,
    "2026-07-25": 21,
    "2026-07-26": -3.3,
-   "2026-07-27": -33.3
+   "2026-07-27": -40.3
   },
   "_gatilhoAtual": {
    "tipo": "seq",
