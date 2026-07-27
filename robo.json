@@ -289,8 +289,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "14:16",
@@ -310,13 +310,21 @@
    ],
    "gatilho": "seq RGRGG",
    "alvo": {
-    "h": "14:16",
-    "jogo": "La Boca x Quito",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1785157984100
+    "h": "14:19",
+    "jogo": "Belo Horizonte x Asuncion",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1785158344600
    },
-   "iniciadoEm": 1785157984100
+   "iniciadoEm": 1785157984100,
+   "tiros": [
+    {
+     "h": "14:16",
+     "jogo": "La Boca x Quito",
+     "odd": 2.4,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785154743405,
@@ -348,13 +356,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -21,
-  "ciclos": 525,
-  "greens": 373,
+  "saldo": -19.9,
+  "ciclos": 526,
+  "greens": 374,
   "redsCiclo": 57,
   "aborts": 0,
   "descartes": 95,
   "historico": [
+   {
+    "quando": "2026-07-27T13:19:43.900Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Croácia x Geórgia @2.07 (tiro 1) · gatilho: coluna :20"
+   },
    {
     "quando": "2026-07-27T13:08:41.001Z",
     "resultado": "GREEN",
@@ -468,52 +482,17 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "premier · Burnley x United @1.9 (tiro 1) · gatilho: coluna :09"
-   },
-   {
-    "quando": "2026-07-27T07:52:02.300Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Arábia Saudita x Paraguai @1.95 (tiro 1) · gatilho: seq RRRRR"
    }
   ],
   "consumidas": {
    "super": 1785155464801,
    "copa": 1785156002001,
-   "premier": 1785157720708
+   "premier": 1785157720708,
+   "euro": 1785158383707
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:17",
-     "jogo": "Croácia x Geórgia",
-     "odd": 2.07
-    },
-    {
-     "h": "14:20",
-     "jogo": "Dinamarca x Sérvia",
-     "odd": 2.15
-    },
-    {
-     "h": "14:23",
-     "jogo": "Albânia x Espanha",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "coluna :20",
-   "alvo": {
-    "h": "14:17",
-    "jogo": "Croácia x Geórgia",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1785157863702
-   },
-   "iniciadoEm": 1785157863702
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785153003707,
+   "euro": 1785158383707,
    "super": 1785155464801,
    "premier": 1785157720708,
    "copa": 1785156002001
@@ -530,7 +509,7 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": 6.6
+   "2026-07-27": 7.7
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
