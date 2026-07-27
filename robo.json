@@ -289,7 +289,37 @@
    "euro": 1785149223903,
    "copa": 1785149884005
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:00",
+     "jogo": "Newcastle x Brentford",
+     "odd": 2.15
+    },
+    {
+     "h": "12:03",
+     "jogo": "West Ham x Brighton",
+     "odd": 2.3
+    },
+    {
+     "h": "12:06",
+     "jogo": "Brentford x United",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "odd 2.15",
+   "alvo": {
+    "h": "12:00",
+    "jogo": "Newcastle x Brentford",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785149885209
+   },
+   "iniciadoEm": 1785149885209
+  },
   "cooldown": {
    "copa": 1785149884005,
    "premier": 1785145846109,
@@ -312,21 +342,27 @@
    "2026-07-27": -28.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Suíça",
-   "n": 11,
-   "start": 2
+   "tipo": "odd",
+   "chave": "2.15",
+   "n": 17,
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -19.7,
-  "ciclos": 517,
+  "saldo": -26.7,
+  "ciclos": 518,
   "greens": 367,
-  "redsCiclo": 56,
+  "redsCiclo": 57,
   "aborts": 0,
   "descartes": 94,
   "historico": [
+   {
+    "quando": "2026-07-27T10:58:44.802Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: time La Boca"
+   },
    {
     "quando": "2026-07-27T10:28:44.498Z",
     "resultado": "GREEN",
@@ -440,67 +476,18 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · Escócia x Geórgia @2.05 (tiro 1) · gatilho: odd 1.98"
-   },
-   {
-    "quando": "2026-07-27T05:15:56.305Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Áustria x Jordânia @1.98 (tiro 2) · gatilho: odd 1.98"
    }
   ],
   "consumidas": {
    "copa": 1785147042409,
    "premier": 1785147819698,
-   "euro": 1785148124304
+   "euro": 1785148124304,
+   "super": 1785149924600
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "11:49",
-     "jogo": "Avellaneda x Medellin",
-     "odd": 2.07
-    },
-    {
-     "h": "11:52",
-     "jogo": "La Boca x Rio de Janeiro",
-     "odd": 2
-    },
-    {
-     "h": "11:55",
-     "jogo": "Montevideo x Santiago",
-     "odd": 1.8
-    }
-   ],
-   "gatilho": "time La Boca",
-   "alvo": {
-    "h": "11:55",
-    "jogo": "Montevideo x Santiago",
-    "odd": 1.8,
-    "unidades": 4,
-    "desde": 1785149684404
-   },
-   "iniciadoEm": 1785149145899,
-   "tiros": [
-    {
-     "h": "11:49",
-     "jogo": "Avellaneda x Medellin",
-     "odd": 2.07,
-     "unidades": 1
-    },
-    {
-     "h": "11:52",
-     "jogo": "La Boca x Rio de Janeiro",
-     "odd": 2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785148124304,
-   "super": 1785145545409,
+   "super": 1785149924600,
    "premier": 1785147819698,
    "copa": 1785147042409
   },
@@ -516,12 +503,12 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": 7.9
+   "2026-07-27": 0.9
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.02",
-   "n": 14,
+   "chave": "1.83",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
