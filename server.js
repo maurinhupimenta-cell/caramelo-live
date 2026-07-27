@@ -1482,16 +1482,34 @@ function acumuladoDia(liga, mkt) {
   //   green -> + (odd - 1)   |   red -> - 1
   // Soma reta das 00h. Diferente da media (que converge e vira reta), aqui o passo de cada
   // jogo continua pesando o dia inteiro: a linha ganha relevo, topo, fundo e retracao.
-  const serie = pct.slice(19);
-  const serieHoras = horas.slice(19);
-  const macdHist = serie.length > 3 ? (macdData(serie).hist || []) : [];
+  // FAIXAS DE TEMPO: a mesma conta (soma reta), mas comecando em pontos diferentes.
+  // Faixa curta (3h) sobe/desce facil; faixa longa (18h) precisa de muito mais pagamentos
+  // para mexer - exatamente como as medias por faixa de horario.
+  const JOGOS_POR_HORA = 20; // 1 jogo a cada 3 min
+  const faixasAcum = {};
+  const montaFaixa = arr => {
+    if (arr.length < 25) return null;
+    const s = [], hs = [];
+    let pg = 0;
+    arr.forEach((g, i) => { if (pays(g, mkt)) pg++; if (i >= 19) { s.push(Math.round(pg / (i + 1) * 1000) / 10); hs.push(g.horario || ""); } });
+    return { serie: s, horas: hs, macd: s.length > 3 ? (macdData(s).hist || []) : [] };
+  };
+  for (const h of [3, 6, 12, 18]) {
+    const n = h * JOGOS_POR_HORA;
+    if (games.length >= n + 25) faixasAcum["h" + h] = montaFaixa(games.slice(-n));
+  }
+  faixasAcum.dia = montaFaixa(dia);
+  const fDia = faixasAcum.dia || { serie: [], horas: [], macd: [] };
+  const serie = fDia.serie;
+  const serieHoras = fDia.horas;
+  const macdHist = fDia.macd;
   const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
   // odd media do dia -> ponto de equilibrio (a % que empata com a casa)
   const k = mkt === "ambas" ? "ambs" : mkt;
   const odds = dia.map(g => g.odds && g.odds[k]).filter(o => o > 1.01);
   const oddMedia = odds.length ? odds.reduce((a, b) => a + b, 0) / odds.length : null;
   const equilibrio = oddMedia ? Math.round(100 / oddMedia * 10) / 10 : null;
-  return { serie, serieHoras, macdHist, pct, saldo, equity, horas, base, equilibrio, oddMedia: oddMedia ? Math.round(oddMedia * 100) / 100 : null, jogos: dia.length, desde: horas[0] || "" };
+  return { faixas: faixasAcum, serie, serieHoras, macdHist, pct, saldo, equity, horas, base, equilibrio, oddMedia: oddMedia ? Math.round(oddMedia * 100) / 100 : null, jogos: dia.length, desde: horas[0] || "" };
 }
 
 app.get("/api/liga/:liga", (req, res) => {
@@ -2921,9 +2939,27 @@ app.get("/api/estudopulo/:liga", (req, res) => {
   //   green -> + (odd - 1)   |   red -> - 1
   // Soma reta das 00h. Diferente da media (que converge e vira reta), aqui o passo de cada
   // jogo continua pesando o dia inteiro: a linha ganha relevo, topo, fundo e retracao.
-  const serie = pct.slice(19);
-  const serieHoras = horas.slice(19);
-  const macdHist = serie.length > 3 ? (macdData(serie).hist || []) : [];
+  // FAIXAS DE TEMPO: a mesma conta (soma reta), mas comecando em pontos diferentes.
+  // Faixa curta (3h) sobe/desce facil; faixa longa (18h) precisa de muito mais pagamentos
+  // para mexer - exatamente como as medias por faixa de horario.
+  const JOGOS_POR_HORA = 20; // 1 jogo a cada 3 min
+  const faixasAcum = {};
+  const montaFaixa = arr => {
+    if (arr.length < 25) return null;
+    const s = [], hs = [];
+    let pg = 0;
+    arr.forEach((g, i) => { if (pays(g, mkt)) pg++; if (i >= 19) { s.push(Math.round(pg / (i + 1) * 1000) / 10); hs.push(g.horario || ""); } });
+    return { serie: s, horas: hs, macd: s.length > 3 ? (macdData(s).hist || []) : [] };
+  };
+  for (const h of [3, 6, 12, 18]) {
+    const n = h * JOGOS_POR_HORA;
+    if (games.length >= n + 25) faixasAcum["h" + h] = montaFaixa(games.slice(-n));
+  }
+  faixasAcum.dia = montaFaixa(dia);
+  const fDia = faixasAcum.dia || { serie: [], horas: [], macd: [] };
+  const serie = fDia.serie;
+  const serieHoras = fDia.horas;
+  const macdHist = fDia.macd;
   const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
     // P(pagar | seca atual = k) e histograma dos pulos realizados
     const porSeca = {}; // k -> [n, pagou]
@@ -3027,9 +3063,27 @@ app.get("/api/estudohora/:liga", (req, res) => {
   //   green -> + (odd - 1)   |   red -> - 1
   // Soma reta das 00h. Diferente da media (que converge e vira reta), aqui o passo de cada
   // jogo continua pesando o dia inteiro: a linha ganha relevo, topo, fundo e retracao.
-  const serie = pct.slice(19);
-  const serieHoras = horas.slice(19);
-  const macdHist = serie.length > 3 ? (macdData(serie).hist || []) : [];
+  // FAIXAS DE TEMPO: a mesma conta (soma reta), mas comecando em pontos diferentes.
+  // Faixa curta (3h) sobe/desce facil; faixa longa (18h) precisa de muito mais pagamentos
+  // para mexer - exatamente como as medias por faixa de horario.
+  const JOGOS_POR_HORA = 20; // 1 jogo a cada 3 min
+  const faixasAcum = {};
+  const montaFaixa = arr => {
+    if (arr.length < 25) return null;
+    const s = [], hs = [];
+    let pg = 0;
+    arr.forEach((g, i) => { if (pays(g, mkt)) pg++; if (i >= 19) { s.push(Math.round(pg / (i + 1) * 1000) / 10); hs.push(g.horario || ""); } });
+    return { serie: s, horas: hs, macd: s.length > 3 ? (macdData(s).hist || []) : [] };
+  };
+  for (const h of [3, 6, 12, 18]) {
+    const n = h * JOGOS_POR_HORA;
+    if (games.length >= n + 25) faixasAcum["h" + h] = montaFaixa(games.slice(-n));
+  }
+  faixasAcum.dia = montaFaixa(dia);
+  const fDia = faixasAcum.dia || { serie: [], horas: [], macd: [] };
+  const serie = fDia.serie;
+  const serieHoras = fDia.horas;
+  const macdHist = fDia.macd;
   const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
     const faixas = { "00-07": [0, 0], "07-12": [0, 0], "12-18": [0, 0], "18-24": [0, 0] };
     const porHora = {};
@@ -3061,9 +3115,27 @@ app.get("/api/estudoancora/:liga", (req, res) => {
   //   green -> + (odd - 1)   |   red -> - 1
   // Soma reta das 00h. Diferente da media (que converge e vira reta), aqui o passo de cada
   // jogo continua pesando o dia inteiro: a linha ganha relevo, topo, fundo e retracao.
-  const serie = pct.slice(19);
-  const serieHoras = horas.slice(19);
-  const macdHist = serie.length > 3 ? (macdData(serie).hist || []) : [];
+  // FAIXAS DE TEMPO: a mesma conta (soma reta), mas comecando em pontos diferentes.
+  // Faixa curta (3h) sobe/desce facil; faixa longa (18h) precisa de muito mais pagamentos
+  // para mexer - exatamente como as medias por faixa de horario.
+  const JOGOS_POR_HORA = 20; // 1 jogo a cada 3 min
+  const faixasAcum = {};
+  const montaFaixa = arr => {
+    if (arr.length < 25) return null;
+    const s = [], hs = [];
+    let pg = 0;
+    arr.forEach((g, i) => { if (pays(g, mkt)) pg++; if (i >= 19) { s.push(Math.round(pg / (i + 1) * 1000) / 10); hs.push(g.horario || ""); } });
+    return { serie: s, horas: hs, macd: s.length > 3 ? (macdData(s).hist || []) : [] };
+  };
+  for (const h of [3, 6, 12, 18]) {
+    const n = h * JOGOS_POR_HORA;
+    if (games.length >= n + 25) faixasAcum["h" + h] = montaFaixa(games.slice(-n));
+  }
+  faixasAcum.dia = montaFaixa(dia);
+  const fDia = faixasAcum.dia || { serie: [], horas: [], macd: [] };
+  const serie = fDia.serie;
+  const serieHoras = fDia.horas;
+  const macdHist = fDia.macd;
   const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
     let comN = 0, comH = 0, forteN = 0, forteH = 0, semN = 0, semH = 0;
     const ini = Math.max(200, games.length - 150);
@@ -3099,9 +3171,27 @@ app.get("/api/estudocol/:liga", (req, res) => {
   //   green -> + (odd - 1)   |   red -> - 1
   // Soma reta das 00h. Diferente da media (que converge e vira reta), aqui o passo de cada
   // jogo continua pesando o dia inteiro: a linha ganha relevo, topo, fundo e retracao.
-  const serie = pct.slice(19);
-  const serieHoras = horas.slice(19);
-  const macdHist = serie.length > 3 ? (macdData(serie).hist || []) : [];
+  // FAIXAS DE TEMPO: a mesma conta (soma reta), mas comecando em pontos diferentes.
+  // Faixa curta (3h) sobe/desce facil; faixa longa (18h) precisa de muito mais pagamentos
+  // para mexer - exatamente como as medias por faixa de horario.
+  const JOGOS_POR_HORA = 20; // 1 jogo a cada 3 min
+  const faixasAcum = {};
+  const montaFaixa = arr => {
+    if (arr.length < 25) return null;
+    const s = [], hs = [];
+    let pg = 0;
+    arr.forEach((g, i) => { if (pays(g, mkt)) pg++; if (i >= 19) { s.push(Math.round(pg / (i + 1) * 1000) / 10); hs.push(g.horario || ""); } });
+    return { serie: s, horas: hs, macd: s.length > 3 ? (macdData(s).hist || []) : [] };
+  };
+  for (const h of [3, 6, 12, 18]) {
+    const n = h * JOGOS_POR_HORA;
+    if (games.length >= n + 25) faixasAcum["h" + h] = montaFaixa(games.slice(-n));
+  }
+  faixasAcum.dia = montaFaixa(dia);
+  const fDia = faixasAcum.dia || { serie: [], horas: [], macd: [] };
+  const serie = fDia.serie;
+  const serieHoras = fDia.horas;
+  const macdHist = fDia.macd;
   const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
     // --- taxa da coluna ANTES de cada jogo (12 ocorrencias anteriores do mesmo minuto) ---
     const porMin = {};
@@ -3235,9 +3325,27 @@ app.get("/api/estudo3h/:liga", (req, res) => {
   //   green -> + (odd - 1)   |   red -> - 1
   // Soma reta das 00h. Diferente da media (que converge e vira reta), aqui o passo de cada
   // jogo continua pesando o dia inteiro: a linha ganha relevo, topo, fundo e retracao.
-  const serie = pct.slice(19);
-  const serieHoras = horas.slice(19);
-  const macdHist = serie.length > 3 ? (macdData(serie).hist || []) : [];
+  // FAIXAS DE TEMPO: a mesma conta (soma reta), mas comecando em pontos diferentes.
+  // Faixa curta (3h) sobe/desce facil; faixa longa (18h) precisa de muito mais pagamentos
+  // para mexer - exatamente como as medias por faixa de horario.
+  const JOGOS_POR_HORA = 20; // 1 jogo a cada 3 min
+  const faixasAcum = {};
+  const montaFaixa = arr => {
+    if (arr.length < 25) return null;
+    const s = [], hs = [];
+    let pg = 0;
+    arr.forEach((g, i) => { if (pays(g, mkt)) pg++; if (i >= 19) { s.push(Math.round(pg / (i + 1) * 1000) / 10); hs.push(g.horario || ""); } });
+    return { serie: s, horas: hs, macd: s.length > 3 ? (macdData(s).hist || []) : [] };
+  };
+  for (const h of [3, 6, 12, 18]) {
+    const n = h * JOGOS_POR_HORA;
+    if (games.length >= n + 25) faixasAcum["h" + h] = montaFaixa(games.slice(-n));
+  }
+  faixasAcum.dia = montaFaixa(dia);
+  const fDia = faixasAcum.dia || { serie: [], horas: [], macd: [] };
+  const serie = fDia.serie;
+  const serieHoras = fDia.horas;
+  const macdHist = fDia.macd;
   const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
     // transicoes: bloco ALTO (>= base) -> proximo bloco foi o que?
     let aa = 0, ab = 0, ba = 0, bb = 0; const prox = { altoDepois: [], baixoDepois: [] };
