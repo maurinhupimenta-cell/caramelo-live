@@ -287,8 +287,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "20:13",
@@ -308,13 +308,21 @@
    ],
    "gatilho": "seq GRGRR",
    "alvo": {
-    "h": "20:13",
-    "jogo": "Egito x Argentina",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1785179398797
+    "h": "20:16",
+    "jogo": "Croácia x Tunísia",
+    "odd": 2.7,
+    "unidades": 2,
+    "desde": 1785179757704
    },
-   "iniciadoEm": 1785179398797
+   "iniciadoEm": 1785179398797,
+   "tiros": [
+    {
+     "h": "20:13",
+     "jogo": "Egito x Argentina",
+     "odd": 2.07,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785175135897,
@@ -339,8 +347,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRGRR",
-   "n": 11,
+   "chave": "GRRGR",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
