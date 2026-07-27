@@ -320,13 +320,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -23.5,
-  "ciclos": 522,
-  "greens": 370,
+  "saldo": -22.5,
+  "ciclos": 523,
+  "greens": 371,
   "redsCiclo": 57,
   "aborts": 0,
   "descartes": 95,
   "historico": [
+   {
+    "quando": "2026-07-27T12:31:04.904Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Santos x Lima @2.02 (tiro 2) · gatilho: odd 2.02"
+   },
    {
     "quando": "2026-07-27T12:16:24.404Z",
     "resultado": "GREEN_OBS",
@@ -440,59 +446,16 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · Suíça x Polônia @2.02 (tiro 2) · gatilho: odd 2.02"
-   },
-   {
-    "quando": "2026-07-27T06:58:00.605Z",
-    "resultado": "GREEN",
-    "unidades": 0.8,
-    "detalhe": "premier · Burnley x Aston @1.95 (tiro 3) · gatilho: odd 2"
    }
   ],
   "consumidas": {
-   "euro": 1785153003707
+   "euro": 1785153003707,
+   "super": 1785155464801
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "13:25",
-     "jogo": "Itaquera x La Boca",
-     "odd": 2.05
-    },
-    {
-     "h": "13:28",
-     "jogo": "Santos x Lima",
-     "odd": 2.02
-    },
-    {
-     "h": "13:31",
-     "jogo": "Montevideo x Porto Alegre",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "odd 2.02",
-   "alvo": {
-    "h": "13:28",
-    "jogo": "Santos x Lima",
-    "odd": 2.02,
-    "unidades": 2,
-    "desde": 1785155303607
-   },
-   "iniciadoEm": 1785154586302,
-   "tiros": [
-    {
-     "h": "13:25",
-     "jogo": "Itaquera x La Boca",
-     "odd": 2.05,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785153003707,
-   "super": 1785149924600,
+   "super": 1785155464801,
    "premier": 1785151788201,
    "copa": 1785151141810
   },
@@ -508,13 +471,13 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": 4.1
+   "2026-07-27": 5.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Portugal",
    "n": 8,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
