@@ -157,12 +157,18 @@
  },
  "o25": {
   "saldo": -55.2,
-  "ciclos": 475,
+  "ciclos": 476,
   "greens": 314,
   "redsCiclo": 78,
   "aborts": 0,
-  "descartes": 83,
+  "descartes": 84,
   "historico": [
+   {
+    "quando": "2026-07-27T06:59:59.302Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho odd 2.15) — liga REARMADA"
+   },
    {
     "quando": "2026-07-27T06:53:01.605Z",
     "resultado": "GREEN_OBS",
@@ -276,12 +282,6 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "euro · Eslováquia x Inglaterra @2.1 (tiro 1) · gatilho: seq RRGRG"
-   },
-   {
-    "quando": "2026-07-26T20:54:57.208Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Newcastle x Wolverhampton @1.95 (tiro 1) · gatilho: seq RRGGG"
    }
   ],
   "consumidas": {
@@ -345,7 +345,12 @@
    "n": 8,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1785135599301,
+    "gatilho": "odd 2.15"
+   }
+  }
  },
  "ambas": {
   "saldo": -25,
