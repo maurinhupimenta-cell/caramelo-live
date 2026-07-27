@@ -157,12 +157,18 @@
  },
  "o25": {
   "saldo": -66.9,
-  "ciclos": 480,
+  "ciclos": 481,
   "greens": 316,
   "redsCiclo": 80,
   "aborts": 0,
-  "descartes": 84,
+  "descartes": 85,
   "historico": [
+   {
+    "quando": "2026-07-27T08:09:45.903Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :19) — liga REARMADA"
+   },
    {
     "quando": "2026-07-27T07:25:44.102Z",
     "resultado": "GREEN",
@@ -276,16 +282,9 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "premier · Liverpool x Burnley @2.15 (tiro 1) · gatilho: odd 2.3"
-   },
-   {
-    "quando": "2026-07-26T22:26:43.005Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "premier · West Ham x Norwich @2.45 (tiro 1) · gatilho: seq GGRGG"
    }
   ],
   "consumidas": {
-   "super": 1785136184508,
    "premier": 1785136478212,
    "copa": 1785137102404,
    "euro": 1785137143904
@@ -318,7 +317,12 @@
    "n": 8,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1785139785903,
+    "gatilho": "coluna :19"
+   }
+  }
  },
  "ambas": {
   "saldo": -21.2,
