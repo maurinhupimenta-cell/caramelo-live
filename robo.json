@@ -287,7 +287,37 @@
   "consumidas": {
    "euro": 1785187378397
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:58",
+     "jogo": "Espanha x Jordânia",
+     "odd": 2.15
+    },
+    {
+     "h": "23:01",
+     "jogo": "Curação x Senegal",
+     "odd": 2.3
+    },
+    {
+     "h": "23:04",
+     "jogo": "Gana x Portugal",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "odd 2.15",
+   "alvo": {
+    "h": "22:58",
+    "jogo": "Espanha x Jordânia",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785189294056
+   },
+   "iniciadoEm": 1785189294056
+  },
   "cooldown": {
    "copa": 1785180117405,
    "premier": 1785182379795,
@@ -310,9 +340,9 @@
    "2026-07-27": -67.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGGR",
-   "n": 8,
+   "tipo": "odd",
+   "chave": "2.15",
+   "n": 9,
    "start": 1
   },
   "_obs": {
