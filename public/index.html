@@ -739,17 +739,17 @@ function abasGraficoHtml(){
 //          (a % que empata com a odd media: acima disso o dia esta pagando mais do que custa).
 function acumChartHtml(ac){
   if(!ac||!ac.serie||ac.serie.length<5)return '<div class="note">acumulado do dia ainda juntando jogos</div>';
-  // MESMA CHAMADA do grafico normal (mesmos niveis, mesmo histograma, mesma escala).
-  // Muda SO a conta da serie: % do total desde as 00h em vez de % dos ultimos 20 jogos.
   const s=ac.serie, cur=s[s.length-1];
-  const cor=ac.equilibrio!=null?(cur>ac.equilibrio?'var(--greenb)':'var(--red)'):'#8b98a8';
+  const pico=Math.max(...s), vale=Math.min(...s);
+  const cor=cur>0?'var(--greenb)':cur<0?'var(--red)':'#8b98a8';
+  const nome=(typeof nomeMkt!=='undefined'&&nomeMkt[mktSel.value])?nomeMkt[mktSel.value]:'mercado';
   return `<div style="margin-top:2px">
     <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:6px;font-size:12px">
-      <b>📐 Acumulado do dia <span class="note" style="font-size:10px">(% do total desde as 00h · ${ac.jogos} jogos desde ${ac.desde})</span></b>
-      <span><b style="color:${cor}">${cur}%</b> <span class="note">· equilíbrio ${ac.equilibrio!=null?ac.equilibrio+'%':'—'} · base ${ac.base}%</span></span>
+      <b>📐 Acumulado do dia <span class="note" style="font-size:10px">(soma reta desde as 00h · ${ac.jogos} jogos desde ${ac.desde})</span></b>
+      <span><b style="color:${cor}">${cur>0?'+':''}${cur}u</b> <span class="note">· topo ${pico>0?'+':''}${pico}u · fundo ${vale}u · pagou ${ac.pct[ac.pct.length-1]}%</span></span>
     </div>
-    ${lineChart(s, ac.macdHist||[], null, false, ac.serieHoras||[])}
-    <div class="note" style="font-size:10px;margin-top:4px">Mesmo gráfico, outra conta: cada ponto é a <b>% do total de jogos desde as 00h</b> (todo pagamento vale o mesmo e nada é esquecido), em vez da janela dos últimos 20 que anda e apaga o passado.</div>
+    ${lineChart(s, ac.macdHist||[], null, true, ac.serieHoras||[], null, 0)}
+    <div class="note" style="font-size:10px;margin-top:4px">Mesmo gráfico, outra soma: cada jogo entra pelo <b>valor que ele vale</b> — ${nome} paga soma <b style="color:var(--greenb)">+(odd−1)</b>, não paga tira <b style="color:var(--red)">−1</b> — somando das 00h até 23:59. <b>Acima da linha amarela (0)</b> = o dia está no lucro.</div>
   </div>`;
 }
 

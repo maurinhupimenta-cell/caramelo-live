@@ -1478,8 +1478,12 @@ function acumuladoDia(liga, mkt) {
   // normal  = % dos ultimos 20 jogos (janela que anda e esquece)
   // acumulado = % do TOTAL desde as 00h (cada pagamento vale o mesmo, soma o dia inteiro)
   // Comeca no 20o jogo pelo mesmo motivo que o normal comeca: antes disso nao ha janela cheia.
-  const serie = pct.slice(19);
-  const serieHoras = horas.slice(19);
+  // SERIE = VALOR ACUMULADO: cada jogo soma o que ele vale de verdade.
+  //   green -> + (odd - 1)   |   red -> - 1
+  // Soma reta das 00h. Diferente da media (que converge e vira reta), aqui o passo de cada
+  // jogo continua pesando o dia inteiro: a linha ganha relevo, topo, fundo e retracao.
+  const serie = equity.slice();
+  const serieHoras = horas.slice();
   const macdHist = serie.length > 3 ? (macdData(serie).hist || []) : [];
   const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
   // odd media do dia -> ponto de equilibrio (a % que empata com a casa)
@@ -2910,8 +2914,12 @@ app.get("/api/estudopulo/:liga", (req, res) => {
   // normal  = % dos ultimos 20 jogos (janela que anda e esquece)
   // acumulado = % do TOTAL desde as 00h (cada pagamento vale o mesmo, soma o dia inteiro)
   // Comeca no 20o jogo pelo mesmo motivo que o normal comeca: antes disso nao ha janela cheia.
-  const serie = pct.slice(19);
-  const serieHoras = horas.slice(19);
+  // SERIE = VALOR ACUMULADO: cada jogo soma o que ele vale de verdade.
+  //   green -> + (odd - 1)   |   red -> - 1
+  // Soma reta das 00h. Diferente da media (que converge e vira reta), aqui o passo de cada
+  // jogo continua pesando o dia inteiro: a linha ganha relevo, topo, fundo e retracao.
+  const serie = equity.slice();
+  const serieHoras = horas.slice();
   const macdHist = serie.length > 3 ? (macdData(serie).hist || []) : [];
   const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
     // P(pagar | seca atual = k) e histograma dos pulos realizados
@@ -3012,8 +3020,12 @@ app.get("/api/estudohora/:liga", (req, res) => {
   // normal  = % dos ultimos 20 jogos (janela que anda e esquece)
   // acumulado = % do TOTAL desde as 00h (cada pagamento vale o mesmo, soma o dia inteiro)
   // Comeca no 20o jogo pelo mesmo motivo que o normal comeca: antes disso nao ha janela cheia.
-  const serie = pct.slice(19);
-  const serieHoras = horas.slice(19);
+  // SERIE = VALOR ACUMULADO: cada jogo soma o que ele vale de verdade.
+  //   green -> + (odd - 1)   |   red -> - 1
+  // Soma reta das 00h. Diferente da media (que converge e vira reta), aqui o passo de cada
+  // jogo continua pesando o dia inteiro: a linha ganha relevo, topo, fundo e retracao.
+  const serie = equity.slice();
+  const serieHoras = horas.slice();
   const macdHist = serie.length > 3 ? (macdData(serie).hist || []) : [];
   const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
     const faixas = { "00-07": [0, 0], "07-12": [0, 0], "12-18": [0, 0], "18-24": [0, 0] };
@@ -3042,8 +3054,12 @@ app.get("/api/estudoancora/:liga", (req, res) => {
   // normal  = % dos ultimos 20 jogos (janela que anda e esquece)
   // acumulado = % do TOTAL desde as 00h (cada pagamento vale o mesmo, soma o dia inteiro)
   // Comeca no 20o jogo pelo mesmo motivo que o normal comeca: antes disso nao ha janela cheia.
-  const serie = pct.slice(19);
-  const serieHoras = horas.slice(19);
+  // SERIE = VALOR ACUMULADO: cada jogo soma o que ele vale de verdade.
+  //   green -> + (odd - 1)   |   red -> - 1
+  // Soma reta das 00h. Diferente da media (que converge e vira reta), aqui o passo de cada
+  // jogo continua pesando o dia inteiro: a linha ganha relevo, topo, fundo e retracao.
+  const serie = equity.slice();
+  const serieHoras = horas.slice();
   const macdHist = serie.length > 3 ? (macdData(serie).hist || []) : [];
   const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
     let comN = 0, comH = 0, forteN = 0, forteH = 0, semN = 0, semH = 0;
@@ -3076,8 +3092,12 @@ app.get("/api/estudocol/:liga", (req, res) => {
   // normal  = % dos ultimos 20 jogos (janela que anda e esquece)
   // acumulado = % do TOTAL desde as 00h (cada pagamento vale o mesmo, soma o dia inteiro)
   // Comeca no 20o jogo pelo mesmo motivo que o normal comeca: antes disso nao ha janela cheia.
-  const serie = pct.slice(19);
-  const serieHoras = horas.slice(19);
+  // SERIE = VALOR ACUMULADO: cada jogo soma o que ele vale de verdade.
+  //   green -> + (odd - 1)   |   red -> - 1
+  // Soma reta das 00h. Diferente da media (que converge e vira reta), aqui o passo de cada
+  // jogo continua pesando o dia inteiro: a linha ganha relevo, topo, fundo e retracao.
+  const serie = equity.slice();
+  const serieHoras = horas.slice();
   const macdHist = serie.length > 3 ? (macdData(serie).hist || []) : [];
   const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
     // --- taxa da coluna ANTES de cada jogo (12 ocorrencias anteriores do mesmo minuto) ---
@@ -3208,8 +3228,12 @@ app.get("/api/estudo3h/:liga", (req, res) => {
   // normal  = % dos ultimos 20 jogos (janela que anda e esquece)
   // acumulado = % do TOTAL desde as 00h (cada pagamento vale o mesmo, soma o dia inteiro)
   // Comeca no 20o jogo pelo mesmo motivo que o normal comeca: antes disso nao ha janela cheia.
-  const serie = pct.slice(19);
-  const serieHoras = horas.slice(19);
+  // SERIE = VALOR ACUMULADO: cada jogo soma o que ele vale de verdade.
+  //   green -> + (odd - 1)   |   red -> - 1
+  // Soma reta das 00h. Diferente da media (que converge e vira reta), aqui o passo de cada
+  // jogo continua pesando o dia inteiro: a linha ganha relevo, topo, fundo e retracao.
+  const serie = equity.slice();
+  const serieHoras = horas.slice();
   const macdHist = serie.length > 3 ? (macdData(serie).hist || []) : [];
   const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
     // transicoes: bloco ALTO (>= base) -> proximo bloco foi o que?
