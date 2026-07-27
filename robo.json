@@ -478,7 +478,37 @@
    "premier": 1785178983101,
    "super": 1785179240004
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:16",
+     "jogo": "Croácia x Tunísia",
+     "odd": 2.25
+    },
+    {
+     "h": "20:19",
+     "jogo": "México x Argentina",
+     "odd": 1.9
+    },
+    {
+     "h": "20:22",
+     "jogo": "Escócia x Equador",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "seq RGGRG",
+   "alvo": {
+    "h": "20:16",
+    "jogo": "Croácia x Tunísia",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785179576992
+   },
+   "iniciadoEm": 1785179576992
+  },
   "cooldown": {
    "euro": 1785172984399,
    "super": 1785179240004,
@@ -500,9 +530,9 @@
    "2026-07-27": -0.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.02",
-   "n": 21,
+   "tipo": "seq",
+   "chave": "RGGRG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
