@@ -289,7 +289,37 @@
    "euro": 1785141284104,
    "premier": 1785141888309
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:13",
+     "jogo": "Panamá x Iraque",
+     "odd": 2.55
+    },
+    {
+     "h": "10:16",
+     "jogo": "Argentina x Países Baixos",
+     "odd": 2.2
+    },
+    {
+     "h": "10:19",
+     "jogo": "Colômbia x RD Congo",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "coluna :16",
+   "alvo": {
+    "h": "10:13",
+    "jogo": "Panamá x Iraque",
+    "odd": 2.55,
+    "unidades": 1,
+    "desde": 1785143204604
+   },
+   "iniciadoEm": 1785143204604
+  },
   "cooldown": {
    "copa": 1785137102404,
    "premier": 1785141888309,
@@ -312,17 +342,12 @@
    "2026-07-27": -25.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGRR",
-   "n": 15,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":16",
+   "n": 10,
+   "start": 2
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785143044398,
-    "gatilho": "coluna :16"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -25.9,
@@ -454,7 +479,6 @@
    }
   ],
   "consumidas": {
-   "premier": 1785139719599,
    "euro": 1785140404005,
    "super": 1785141424509,
    "copa": 1785142864305
