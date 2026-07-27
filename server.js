@@ -1738,7 +1738,22 @@ app.get("/api/auditoria-maquina", (req, res) => {
       const p95 = nulos[Math.floor(nulos.length * 0.95)];
       const mediaNulo = Math.round(nulos.reduce((a, b) => a + b, 0) / nulos.length * 10) / 10;
       const esperado = mediaNulo;
+      // ===== PERIODICIDADE: se o gerador tem CICLO de tamanho p, entao arr[i] == arr[i+p]
+      // acontece muito mais que o acaso em TODO o roteiro (nao so num bloco isolado).
+      const freq = {}; for (const v of arr) freq[v] = (freq[v] || 0) + 1;
+      const pAcaso = Object.values(freq).reduce((a, c) => a + (c / arr.length) ** 2, 0); // chance de 2 sorteios baterem
+      let melhorP = null, melhorTaxa = 0;
+      for (let p = 2; p <= Math.min(300, arr.length - 60); p++) {
+        let ok = 0, tot = 0;
+        for (let i = 0; i + p < arr.length; i++) { tot++; if (arr[i] === arr[i + p]) ok++; }
+        const taxa = tot ? ok / tot : 0;
+        if (taxa > melhorTaxa) { melhorTaxa = taxa; melhorP = p; }
+      }
+      const z = Math.round((melhorTaxa - pAcaso) / Math.sqrt(pAcaso * (1 - pAcaso) / arr.length) * 10) / 10;
       saida.B_repeticaoExata[liga] = {
+        periodicidade: `melhor periodo ${melhorP}: ${Math.round(melhorTaxa * 1000) / 10}% de coincidencia (acaso ${Math.round(pAcaso * 1000) / 10}%, z=${z})`,
+        cicloDetectado: melhorTaxa > pAcaso + 0.15 ? "SIM - gerador com ciclo!" : "nao (coincidencia = acaso)",
+
         jogos: N, placaresDistintos: distintos,
         maiorBlocoIdentico: maiorRepeticao,
         posicoes: maiorRepeticao > 1 ? `${ondeA} e ${ondeB} (distancia ${Math.abs(ondeB - ondeA)})` : "-",
