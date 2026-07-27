@@ -321,13 +321,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -26.7,
-  "ciclos": 518,
-  "greens": 367,
+  "saldo": -25.7,
+  "ciclos": 519,
+  "greens": 368,
   "redsCiclo": 57,
   "aborts": 0,
   "descartes": 94,
   "historico": [
+   {
+    "quando": "2026-07-27T11:19:02.006Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Iraque x Costa do Marfim @2 (tiro 1) · gatilho: seq RRRGG"
+   },
    {
     "quando": "2026-07-27T10:58:44.802Z",
     "resultado": "RED_CICLO",
@@ -441,55 +447,20 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "premier · Palace x Leeds @2.1 (tiro 1) · gatilho: time Norwich"
-   },
-   {
-    "quando": "2026-07-27T05:19:58.303Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · Escócia x Geórgia @2.05 (tiro 1) · gatilho: odd 1.98"
    }
   ],
   "consumidas": {
    "premier": 1785147819698,
    "euro": 1785148124304,
-   "super": 1785149924600
+   "super": 1785149924600,
+   "copa": 1785151141810
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "12:16",
-     "jogo": "Iraque x Costa do Marfim",
-     "odd": 2
-    },
-    {
-     "h": "12:19",
-     "jogo": "Coreia do Sul x Senegal",
-     "odd": 2.2
-    },
-    {
-     "h": "12:22",
-     "jogo": "EUA x República Tcheca",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "seq RRRGG",
-   "alvo": {
-    "h": "12:16",
-    "jogo": "Iraque x Costa do Marfim",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1785150764105
-   },
-   "iniciadoEm": 1785150764105
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785148124304,
    "super": 1785149924600,
    "premier": 1785147819698,
-   "copa": 1785147042409
+   "copa": 1785151141810
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -503,13 +474,13 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": 0.9
+   "2026-07-27": 1.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRGG",
-   "n": 11,
-   "start": 1
+   "tipo": "time",
+   "chave": "Argentina",
+   "n": 9,
+   "start": 2
   },
   "_obs": {}
  }
