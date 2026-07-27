@@ -288,7 +288,37 @@
    "premier": 1785157720510,
    "super": 1785158684409
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:31",
+     "jogo": "Haiti x Suécia",
+     "odd": 2.4
+    },
+    {
+     "h": "14:34",
+     "jogo": "Qatar x Suíça",
+     "odd": 2.3
+    },
+    {
+     "h": "14:37",
+     "jogo": "Tunísia x Paraguai",
+     "odd": 2.62
+    }
+   ],
+   "gatilho": "time Suíça",
+   "alvo": {
+    "h": "14:31",
+    "jogo": "Haiti x Suécia",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1785158686507
+   },
+   "iniciadoEm": 1785158686507
+  },
   "cooldown": {
    "copa": 1785154743405,
    "premier": 1785157720510,
@@ -314,7 +344,7 @@
    "tipo": "time",
    "chave": "Suíça",
    "n": 14,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
@@ -448,12 +478,41 @@
    }
   ],
   "consumidas": {
-   "super": 1785155464801,
    "copa": 1785156002001,
    "premier": 1785157720708,
    "euro": 1785158383707
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:31",
+     "jogo": "Agua Branca x Sao Paulo",
+     "odd": 1.83
+    },
+    {
+     "h": "14:34",
+     "jogo": "Rio de Janeiro x Avellaneda",
+     "odd": 2.02
+    },
+    {
+     "h": "14:37",
+     "jogo": "Itaquera x Asuncion",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "odd 2.02",
+   "alvo": {
+    "h": "14:31",
+    "jogo": "Agua Branca x Sao Paulo",
+    "odd": 1.83,
+    "unidades": 1,
+    "desde": 1785159064900
+   },
+   "iniciadoEm": 1785159064900
+  },
   "cooldown": {
    "euro": 1785158383707,
    "super": 1785155464801,
@@ -475,9 +534,9 @@
    "2026-07-27": 7.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":20",
-   "n": 14,
+   "tipo": "odd",
+   "chave": "2.02",
+   "n": 19,
    "start": 1
   },
   "_obs": {}
