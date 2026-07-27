@@ -287,7 +287,37 @@
   "consumidas": {
    "copa": 1785175135897
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:06",
+     "jogo": "Leeds x Liverpool",
+     "odd": 2.45
+    },
+    {
+     "h": "19:09",
+     "jogo": "Norwich x West Ham",
+     "odd": 2.45
+    },
+    {
+     "h": "19:12",
+     "jogo": "Tottenham x Aston",
+     "odd": 2.6
+    }
+   ],
+   "gatilho": "seq RGGRG",
+   "alvo": {
+    "h": "19:06",
+    "jogo": "Leeds x Liverpool",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1785175389798
+   },
+   "iniciadoEm": 1785175389798
+  },
   "cooldown": {
    "copa": 1785175135897,
    "premier": 1785171220502,
@@ -311,8 +341,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRRGR",
-   "n": 9,
+   "chave": "RGGRG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
