@@ -287,7 +287,37 @@
   "consumidas": {
    "copa": 1785190018799
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:34",
+     "jogo": "Lima x Quito",
+     "odd": 2.2
+    },
+    {
+     "h": "23:37",
+     "jogo": "Belo Horizonte x Medellin",
+     "odd": 2.2
+    },
+    {
+     "h": "23:40",
+     "jogo": "Itaquera x Quito",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "seq GRGRG",
+   "alvo": {
+    "h": "23:34",
+    "jogo": "Lima x Quito",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785191541767
+   },
+   "iniciadoEm": 1785191541767
+  },
   "cooldown": {
    "copa": 1785190018799,
    "premier": 1785182379795,
@@ -311,18 +341,14 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGRRR",
-   "n": 12,
+   "chave": "GRGRG",
+   "n": 8,
    "start": 1
   },
   "_obs": {
    "copa": {
     "desde": 1785188808341,
     "gatilho": "odd 2.15"
-   },
-   "super": {
-    "desde": 1785191539862,
-    "gatilho": "seq GRGRG"
    }
   }
  },
@@ -460,8 +486,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "23:33",
@@ -481,13 +507,21 @@
    ],
    "gatilho": "seq RGRR",
    "alvo": {
-    "h": "23:33",
-    "jogo": "Liverpool x Tottenham",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1785191376528
+    "h": "23:36",
+    "jogo": "Norwich x Southampton",
+    "odd": 2,
+    "unidades": 2,
+    "desde": 1785191751160
    },
-   "iniciadoEm": 1785191376528
+   "iniciadoEm": 1785191376528,
+   "tiros": [
+    {
+     "h": "23:33",
+     "jogo": "Liverpool x Tottenham",
+     "odd": 2.07,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785187058494,
