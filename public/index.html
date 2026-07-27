@@ -738,26 +738,22 @@ function abasGraficoHtml(){
 // Linha 2: ACUMULADO - % de pagamento do dia, com a base historica e o ponto de EQUILIBRIO
 //          (a % que empata com a odd media: acima disso o dia esta pagando mais do que custa).
 function acumChartHtml(ac){
-  if(!ac||!ac.pct||ac.pct.length<30)return '<div class="note">acumulado do dia ainda aquecendo (precisa de ~30 jogos desde as 00h)</div>';
-  // 1) DESCARTA O AQUECIMENTO: o 1o jogo do dia da 100% ou 0% e os primeiros valores
-  //    despencam (100, 50, 33, 25...). Isso esmagava o dia inteiro. Comeca no jogo 30.
-  const CORTE=30;
-  const p=ac.pct.slice(CORTE), hs=(ac.horas||[]).slice(CORTE);
-  const n=p.length, cur=p[n-1];
-  // 2) ESCALA FIXA E UTIL: janela de 40 pontos ancorada na base do mercado (nao no dado do dia),
-  //    entao ela NAO reajusta conforme o dia anda - movimento pequeno aparece pequeno.
-  const centro=ac.equilibrio!=null?(ac.base+ac.equilibrio)/2:ac.base;
-  const lo=Math.max(0,Math.round(centro-20)), hi=Math.min(100,Math.round(centro+20));
-  const acima=ac.equilibrio!=null&&cur>ac.equilibrio;
-  const cor=acima?'var(--greenb)':'var(--red)';
-  const dif=ac.equilibrio!=null?Math.round((cur-ac.equilibrio)*10)/10:null;
+  if(!ac||!ac.saldo||ac.saldo.length<5)return '';
+  // A LINHA E A CONTAGEM ACUMULADA (nao a media): cada jogo mexe SEMPRE o mesmo tanto.
+  //   pagou o mercado -> +1   |   pagou o lado oposto -> -1
+  // Somando das 00h ate 23:59. Diferente da porcentagem, que converge e vira linha riscada
+  // (com 400 jogos um pagamento move 0,2 ponto), aqui o passo e constante o dia inteiro.
+  const s=ac.saldo, n=s.length, ult=s[n-1];
+  const pico=Math.max(...s), vale=Math.min(...s);
+  const cor=ult>0?'var(--greenb)':ult<0?'var(--red)':'#8b98a8';
+  const nome=(typeof nomeMkt!=='undefined'&&nomeMkt[mktSel.value])?nomeMkt[mktSel.value]:'mercado';
   return `<div style="margin-top:2px">
     <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:6px;font-size:12px">
       <b>📐 Acumulado do dia <span class="note" style="font-size:10px">(soma reta desde as 00h · ${ac.jogos} jogos desde ${ac.desde})</span></b>
-      <span><b style="color:${cor}">${cur}%</b> <span class="note">· equilíbrio ${ac.equilibrio!=null?ac.equilibrio+'%':'—'}${dif!=null?` (${dif>0?'+':''}${dif})`:''} · base ${ac.base}%</span></span>
+      <span><b style="color:${cor}">${ult>0?'+':''}${ult}</b> <span class="note">· topo ${pico>0?'+':''}${pico} · fundo ${vale} · pagou ${ac.pct[n-1]}%</span></span>
     </div>
-    ${lineChart(p, [], null, false, hs, [lo,hi], ac.equilibrio)}
-    <div class="note" style="font-size:10px;margin-top:4px">Linha = <b>% acumulada do dia</b> (00h → 23:59), começando no 30º jogo (antes disso a conta ainda oscila demais). Como soma o dia inteiro, um pagamento sozinho quase não mexe: ela <b>só sobe quando o acumulado sobe de verdade</b>. Escala fixa ${lo}–${hi}%, sem zoom automático. Acima da linha amarela o dia paga mais do que a odd cobra.</div>
+    ${lineChart(s, [], null, true, ac.horas, null, 0)}
+    <div class="note" style="font-size:10px;margin-top:4px">Cada jogo mexe a linha <b>sempre o mesmo tanto</b>: <b style="color:var(--greenb)">+1</b> quando ${nome} paga, <b style="color:var(--red)">−1</b> quando o lado oposto paga. Soma reta das 00h até 23:59, sem esquecer nada. <b>Acima da linha amarela (0)</b> = ${nome} está ganhando a disputa do dia.</div>
   </div>`;
 }
 
@@ -878,7 +874,7 @@ function lineChart(serie, macdHist, trend, ehGols, horas, escala, refLinha){cons
     <line x1="${pad}" y1="${pad}" x2="${W-pad}" y2="${pad}" stroke="#2d3543" stroke-dasharray="3 3"/>
     <line x1="${pad}" y1="${H-pad}" x2="${W-pad}" y2="${H-pad}" stroke="#2d3543" stroke-dasharray="3 3"/>
     <polyline points="${pts}" fill="none" stroke="${cor}" stroke-width="${larguraLinha}"/>
-    ${fibSvg}${trendSvg}${refLinha!=null&&refLinha>=min&&refLinha<=max?`<line x1="${pad}" y1="${y(refLinha).toFixed(1)}" x2="${W-pad}" y2="${y(refLinha).toFixed(1)}" stroke="#e3b341" stroke-width="1.3" stroke-dasharray="6 4"/><text x="${pad+4}" y="${(y(refLinha)-5).toFixed(1)}" fill="#e3b341" font-size="11" font-weight="700">equilíbrio ${refLinha}${uni}</text>`:''}
+    ${fibSvg}${trendSvg}${refLinha!=null&&refLinha>=min&&refLinha<=max?`<line x1="${pad}" y1="${y(refLinha).toFixed(1)}" x2="${W-pad}" y2="${y(refLinha).toFixed(1)}" stroke="#e3b341" stroke-width="1.3" stroke-dasharray="6 4"/><text x="${pad+4}" y="${(y(refLinha)-5).toFixed(1)}" fill="#e3b341" font-size="11" font-weight="700">${refLinha===0?"empate (0)":"equilíbrio "+refLinha+uni}</text>`:''}
     ${dots}${labels}
     <text x="${W-pad}" y="${pad-8}" fill="#8b98a8" font-size="11" text-anchor="end">Topo ${max}${uni}</text>
     <text x="${W-pad}" y="${H-pad+16}" fill="#8b98a8" font-size="11" text-anchor="end">Fundo ${min}${uni}</text>
