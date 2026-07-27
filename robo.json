@@ -291,8 +291,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "12:00",
@@ -312,13 +312,21 @@
    ],
    "gatilho": "odd 2.15",
    "alvo": {
-    "h": "12:00",
-    "jogo": "Newcastle x Brentford",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785149885209
+    "h": "12:03",
+    "jogo": "West Ham x Brighton",
+    "odd": 2.3,
+    "unidades": 2,
+    "desde": 1785150165898
    },
-   "iniciadoEm": 1785149885209
+   "iniciadoEm": 1785149885209,
+   "tiros": [
+    {
+     "h": "12:00",
+     "jogo": "Newcastle x Brentford",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785149884005,
@@ -342,9 +350,9 @@
    "2026-07-27": -28.1
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.15",
-   "n": 17,
+   "tipo": "seq",
+   "chave": "RRRGG",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
