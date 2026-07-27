@@ -1474,13 +1474,20 @@ function acumuladoDia(liga, mkt) {
     equity.push(Math.round(eq * 10) / 10);
     horas.push(g.horario || "");
   });
+  // SERIE IDENTICA A DO GRAFICO NORMAL, so trocando a conta:
+  // normal  = % dos ultimos 20 jogos (janela que anda e esquece)
+  // acumulado = % do TOTAL desde as 00h (cada pagamento vale o mesmo, soma o dia inteiro)
+  // Comeca no 20o jogo pelo mesmo motivo que o normal comeca: antes disso nao ha janela cheia.
+  const serie = pct.slice(19);
+  const serieHoras = horas.slice(19);
+  const macdHist = serie.length > 3 ? (macdData(serie).hist || []) : [];
   const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
   // odd media do dia -> ponto de equilibrio (a % que empata com a casa)
   const k = mkt === "ambas" ? "ambs" : mkt;
   const odds = dia.map(g => g.odds && g.odds[k]).filter(o => o > 1.01);
   const oddMedia = odds.length ? odds.reduce((a, b) => a + b, 0) / odds.length : null;
   const equilibrio = oddMedia ? Math.round(100 / oddMedia * 10) / 10 : null;
-  return { pct, saldo, equity, horas, base, equilibrio, oddMedia: oddMedia ? Math.round(oddMedia * 100) / 100 : null, jogos: dia.length, desde: horas[0] || "" };
+  return { serie, serieHoras, macdHist, pct, saldo, equity, horas, base, equilibrio, oddMedia: oddMedia ? Math.round(oddMedia * 100) / 100 : null, jogos: dia.length, desde: horas[0] || "" };
 }
 
 app.get("/api/liga/:liga", (req, res) => {
@@ -2899,7 +2906,14 @@ app.get("/api/estudopulo/:liga", (req, res) => {
     const d = store[liga];
     if (!d || !d.games || d.games.length < 300) return res.json({ erro: "historico insuficiente" });
     const games = listaCheia(d);
-    const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
+    // SERIE IDENTICA A DO GRAFICO NORMAL, so trocando a conta:
+  // normal  = % dos ultimos 20 jogos (janela que anda e esquece)
+  // acumulado = % do TOTAL desde as 00h (cada pagamento vale o mesmo, soma o dia inteiro)
+  // Comeca no 20o jogo pelo mesmo motivo que o normal comeca: antes disso nao ha janela cheia.
+  const serie = pct.slice(19);
+  const serieHoras = horas.slice(19);
+  const macdHist = serie.length > 3 ? (macdData(serie).hist || []) : [];
+  const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
     // P(pagar | seca atual = k) e histograma dos pulos realizados
     const porSeca = {}; // k -> [n, pagou]
     const pulos = {};   // tamanho do salto -> vezes
@@ -2994,7 +3008,14 @@ app.get("/api/estudohora/:liga", (req, res) => {
     const d = store[liga];
     if (!d || !d.games || d.games.length < 200) return res.json({ erro: "historico insuficiente" });
     const games = listaCheia(d);
-    const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
+    // SERIE IDENTICA A DO GRAFICO NORMAL, so trocando a conta:
+  // normal  = % dos ultimos 20 jogos (janela que anda e esquece)
+  // acumulado = % do TOTAL desde as 00h (cada pagamento vale o mesmo, soma o dia inteiro)
+  // Comeca no 20o jogo pelo mesmo motivo que o normal comeca: antes disso nao ha janela cheia.
+  const serie = pct.slice(19);
+  const serieHoras = horas.slice(19);
+  const macdHist = serie.length > 3 ? (macdData(serie).hist || []) : [];
+  const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
     const faixas = { "00-07": [0, 0], "07-12": [0, 0], "12-18": [0, 0], "18-24": [0, 0] };
     const porHora = {};
     for (const g of games) {
@@ -3017,7 +3038,14 @@ app.get("/api/estudoancora/:liga", (req, res) => {
     const d = store[liga];
     if (!d || !d.games || d.games.length < 300) return res.json({ erro: "historico insuficiente" });
     const games = d.games;
-    const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
+    // SERIE IDENTICA A DO GRAFICO NORMAL, so trocando a conta:
+  // normal  = % dos ultimos 20 jogos (janela que anda e esquece)
+  // acumulado = % do TOTAL desde as 00h (cada pagamento vale o mesmo, soma o dia inteiro)
+  // Comeca no 20o jogo pelo mesmo motivo que o normal comeca: antes disso nao ha janela cheia.
+  const serie = pct.slice(19);
+  const serieHoras = horas.slice(19);
+  const macdHist = serie.length > 3 ? (macdData(serie).hist || []) : [];
+  const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
     let comN = 0, comH = 0, forteN = 0, forteH = 0, semN = 0, semH = 0;
     const ini = Math.max(200, games.length - 150);
     for (let i = ini; i < games.length; i++) {
@@ -3044,7 +3072,14 @@ app.get("/api/estudocol/:liga", (req, res) => {
     const d = store[liga];
     if (!d || !d.games || d.games.length < 300) return res.json({ erro: "historico insuficiente" });
     const games = d.games;
-    const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
+    // SERIE IDENTICA A DO GRAFICO NORMAL, so trocando a conta:
+  // normal  = % dos ultimos 20 jogos (janela que anda e esquece)
+  // acumulado = % do TOTAL desde as 00h (cada pagamento vale o mesmo, soma o dia inteiro)
+  // Comeca no 20o jogo pelo mesmo motivo que o normal comeca: antes disso nao ha janela cheia.
+  const serie = pct.slice(19);
+  const serieHoras = horas.slice(19);
+  const macdHist = serie.length > 3 ? (macdData(serie).hist || []) : [];
+  const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
     // --- taxa da coluna ANTES de cada jogo (12 ocorrencias anteriores do mesmo minuto) ---
     const porMin = {};
     const colAntes = new Array(games.length).fill(null);
@@ -3169,7 +3204,14 @@ app.get("/api/estudo3h/:liga", (req, res) => {
       const b = games.slice(i, i + TAM);
       blocos.push(Math.round(b.filter(g => pays(g, mkt)).length / TAM * 1000) / 10);
     }
-    const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
+    // SERIE IDENTICA A DO GRAFICO NORMAL, so trocando a conta:
+  // normal  = % dos ultimos 20 jogos (janela que anda e esquece)
+  // acumulado = % do TOTAL desde as 00h (cada pagamento vale o mesmo, soma o dia inteiro)
+  // Comeca no 20o jogo pelo mesmo motivo que o normal comeca: antes disso nao ha janela cheia.
+  const serie = pct.slice(19);
+  const serieHoras = horas.slice(19);
+  const macdHist = serie.length > 3 ? (macdData(serie).hist || []) : [];
+  const base = Math.round(games.filter(g => pays(g, mkt)).length / games.length * 1000) / 10;
     // transicoes: bloco ALTO (>= base) -> proximo bloco foi o que?
     let aa = 0, ab = 0, ba = 0, bb = 0; const prox = { altoDepois: [], baixoDepois: [] };
     for (let i = 0; i + 1 < blocos.length; i++) {
