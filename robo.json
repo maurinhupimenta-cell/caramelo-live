@@ -449,12 +449,41 @@
    }
   ],
   "consumidas": {
-   "copa": 1785138722101,
    "premier": 1785139719599,
    "euro": 1785140404005,
    "super": 1785141424509
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:52",
+     "jogo": "Canadá x Brasil",
+     "odd": 2
+    },
+    {
+     "h": "09:55",
+     "jogo": "Alemanha x Coreia do Sul",
+     "odd": 2.05
+    },
+    {
+     "h": "09:58",
+     "jogo": "Argentina x Colômbia",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "seq RRRGR",
+   "alvo": {
+    "h": "09:52",
+    "jogo": "Canadá x Brasil",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1785142322799
+   },
+   "iniciadoEm": 1785142322799
+  },
   "cooldown": {
    "euro": 1785140404005,
    "super": 1785141424509,
@@ -477,8 +506,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRR",
-   "n": 15,
+   "chave": "RRRGR",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
