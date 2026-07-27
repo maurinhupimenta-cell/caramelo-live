@@ -348,13 +348,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -35.6,
-  "ciclos": 535,
-  "greens": 379,
+  "saldo": -34.9,
+  "ciclos": 536,
+  "greens": 380,
   "redsCiclo": 60,
   "aborts": 0,
   "descartes": 96,
   "historico": [
+   {
+    "quando": "2026-07-27T16:47:44.400Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "premier · United x Newcastle @1.93 (tiro 3) · gatilho: odd 1.98"
+   },
    {
     "quando": "2026-07-27T16:31:25.407Z",
     "resultado": "RED_CICLO",
@@ -468,67 +474,18 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "euro · Polônia x Espanha @1.95 (tiro 2) · gatilho: odd 2"
-   },
-   {
-    "quando": "2026-07-27T10:23:39.803Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Watford x Chelsea @1.98 (tiro 2) · gatilho: odd 1.98"
    }
   ],
   "consumidas": {
    "copa": 1785167522805,
-   "super": 1785169885299
+   "super": 1785169885299,
+   "premier": 1785170864207
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "17:39",
-     "jogo": "Wolverhampton x Tottenham",
-     "odd": 1.98
-    },
-    {
-     "h": "17:42",
-     "jogo": "Liverpool x Chelsea",
-     "odd": 1.93
-    },
-    {
-     "h": "17:45",
-     "jogo": "United x Newcastle",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "odd 1.98",
-   "alvo": {
-    "h": "17:45",
-    "jogo": "United x Newcastle",
-    "odd": 1.93,
-    "unidades": 4,
-    "desde": 1785170693102
-   },
-   "iniciadoEm": 1785170176507,
-   "tiros": [
-    {
-     "h": "17:39",
-     "jogo": "Wolverhampton x Tottenham",
-     "odd": 1.98,
-     "unidades": 1
-    },
-    {
-     "h": "17:42",
-     "jogo": "Liverpool x Chelsea",
-     "odd": 1.93,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785166143899,
    "super": 1785169885299,
-   "premier": 1785166575398,
+   "premier": 1785170864207,
    "copa": 1785167522805
   },
   "dias": {
@@ -543,7 +500,7 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": -8
+   "2026-07-27": -7.3
   },
   "_gatilhoAtual": {
    "tipo": "seq",
