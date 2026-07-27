@@ -315,13 +315,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -32.7,
-  "ciclos": 486,
-  "greens": 340,
+  "saldo": -31.8,
+  "ciclos": 487,
+  "greens": 341,
   "redsCiclo": 54,
   "aborts": 0,
   "descartes": 92,
   "historico": [
+   {
+    "quando": "2026-07-27T01:30:53.204Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Sao Paulo x Rio de Janeiro @1.85 (tiro 1) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-07-26T22:57:55.702Z",
     "resultado": "GREEN",
@@ -435,49 +441,15 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "euro · Romênia x Bélgica @1.85 (tiro 1) · gatilho: coluna :50"
-   },
-   {
-    "quando": "2026-07-26T17:41:45.804Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "premier · Tottenham x Aston @2.2 (tiro 1) · gatilho: seq RGRRG"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "02:28",
-     "jogo": "Sao Paulo x Rio de Janeiro",
-     "odd": 1.85
-    },
-    {
-     "h": "02:31",
-     "jogo": "Belo Horizonte x Montevideo",
-     "odd": 1.93
-    },
-    {
-     "h": "02:34",
-     "jogo": "Guayaquil x Medellin",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-1)",
-   "alvo": {
-    "h": "02:28",
-    "jogo": "Sao Paulo x Rio de Janeiro",
-    "odd": 1.85,
-    "unidades": 1,
-    "desde": 1785115506803
-   },
-   "iniciadoEm": 1785115506803
+  "consumidas": {
+   "super": 1785115853006
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785106675507,
-   "super": 1785105713206,
+   "super": 1785115853006,
    "premier": 1785103726108,
    "copa": 1785106496005
   },
@@ -492,12 +464,12 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": 9.2
+   "2026-07-26": 10.1
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 8,
+   "tipo": "seq",
+   "chave": "GGGG",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
