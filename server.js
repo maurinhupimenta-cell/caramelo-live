@@ -1489,13 +1489,17 @@ app.get("/api/liga/:liga", (req, res) => {
   let analise = d.computed[mkt] || d.computed.o35;
   // se o usuario pediu outra Qtd. Jogos, recalcula a serie/sinal/macd/alertas pra essa janela
   if (qtd !== 20 && d.games) {
-    const JANELA = Math.max(2, Math.min(20, d.games.length)); // janela fixa = forma da curva
+    // CORRIGIDO (bug apontado pelo usuario): antes a JANELA travava em 20 e o seletor so dava
+    // ZOOM - por isso o grafico de 100 era identico ao de 20 (mesma linha, mais pontos).
+    // Agora "Qtd. Jogos" e o PERIODO REAL da media movel, como MM20 x MM100 no trader:
+    // janela maior = curva mais lenta e suave, com atraso maior. Matematica diferente de verdade.
+    const JANELA = Math.max(2, Math.min(qtd, Math.floor(d.games.length / 2)));
     const serieFull = chartSeries(d.games, mkt, JANELA);
-    const serie = serieFull.slice(-qtd); // exibe os ultimos qtd pontos (zoom), sem quebrar
+    const serie = serieFull.slice(-Math.min(120, serieFull.length)); // janela de exibicao fixa
     const sinal = zoneSignal(serie);
     const { hist } = macdData(serie);
     const alertas = buildAlerts(d.games, serie, sinal, mkt, analise.base);
-    analise = { ...analise, serie, macdHist: hist.slice(-qtd), sinal, alertas, qtdJogos: qtd };
+    analise = { ...analise, serie, macdHist: hist.slice(-serie.length), sinal, alertas, qtdJogos: qtd, janelaMM: JANELA };
   }
 
   // se a extensao mandou a curva REAL do caramelo, usa ela (identica)
