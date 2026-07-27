@@ -319,12 +319,18 @@
  },
  "ambas": {
   "saldo": -23.1,
-  "ciclos": 552,
+  "ciclos": 553,
   "greens": 391,
   "redsCiclo": 60,
   "aborts": 0,
-  "descartes": 101,
+  "descartes": 102,
   "historico": [
+   {
+    "quando": "2026-07-27T20:48:55.505Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho coluna :52) — liga REARMADA"
+   },
    {
     "quando": "2026-07-27T20:48:02.597Z",
     "resultado": "DESCARTADO",
@@ -438,49 +444,13 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "copa · Inglaterra x Jordânia @2.05 (tiro 2) · gatilho: time Inglaterra"
-   },
-   {
-    "quando": "2026-07-27T15:36:15.505Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "premier · Leeds x Norwich @2.15 (tiro 1) · gatilho: odd 2.15"
    }
   ],
   "consumidas": {
    "premier": 1785183105906,
    "super": 1785184303396
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:34",
-     "jogo": "Qatar x África do Sul",
-     "odd": 2.1
-    },
-    {
-     "h": "21:37",
-     "jogo": "Iraque x Nova Zelândia",
-     "odd": 2.05
-    },
-    {
-     "h": "21:40",
-     "jogo": "Costa do Marfim x Curação",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "seq RGGRG",
-   "alvo": {
-    "h": "21:34",
-    "jogo": "Qatar x África do Sul",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785184377103
-   },
-   "iniciadoEm": 1785184377103
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785181257402,
    "super": 1785184303396,
@@ -507,6 +477,11 @@
    "n": 10,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1785185335504,
+    "gatilho": "coluna :52"
+   }
+  }
  }
 }
