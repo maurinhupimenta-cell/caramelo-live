@@ -451,8 +451,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "19:57",
@@ -472,13 +472,21 @@
    ],
    "gatilho": "seq RRRRG",
    "alvo": {
-    "h": "19:57",
-    "jogo": "Southampton x Palace",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1785178437802
+    "h": "20:00",
+    "jogo": "Wolverhampton x Brighton",
+    "odd": 1.83,
+    "unidades": 2,
+    "desde": 1785178787707
    },
-   "iniciadoEm": 1785178437802
+   "iniciadoEm": 1785178437802,
+   "tiros": [
+    {
+     "h": "19:57",
+     "jogo": "Southampton x Palace",
+     "odd": 2.02,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785172984399,
@@ -501,9 +509,9 @@
    "2026-07-27": -2.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.83",
-   "n": 12,
+   "tipo": "seq",
+   "chave": "RGRR",
+   "n": 20,
    "start": 1
   },
   "_obs": {}
