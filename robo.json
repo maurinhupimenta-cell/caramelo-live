@@ -318,13 +318,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -27.2,
-  "ciclos": 546,
-  "greens": 388,
+  "saldo": -25.9,
+  "ciclos": 547,
+  "greens": 389,
   "redsCiclo": 60,
   "aborts": 0,
   "descartes": 98,
   "historico": [
+   {
+    "quando": "2026-07-27T19:40:57.798Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "euro · Albânia x Turquia @2.3 (tiro 1) · gatilho: odd 1.87"
+   },
    {
     "quando": "2026-07-27T19:24:57.300Z",
     "resultado": "GREEN",
@@ -438,52 +444,17 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Argentina"
-   },
-   {
-    "quando": "2026-07-27T13:40:44.605Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "super · Itaquera x Asuncion @2.07 (tiro 3) · gatilho: odd 2.02"
    }
   ],
   "consumidas": {
    "premier": 1785178983101,
    "super": 1785179240004,
-   "copa": 1785180297108
+   "copa": 1785180297108,
+   "euro": 1785181257402
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:38",
-     "jogo": "Albânia x Turquia",
-     "odd": 2.3
-    },
-    {
-     "h": "20:41",
-     "jogo": "Áustria x Espanha",
-     "odd": 1.87
-    },
-    {
-     "h": "20:44",
-     "jogo": "Geórgia x Suíça",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "odd 1.87",
-   "alvo": {
-    "h": "20:38",
-    "jogo": "Albânia x Turquia",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1785180641596
-   },
-   "iniciadoEm": 1785180641596
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785172984399,
+   "euro": 1785181257402,
    "super": 1785179240004,
    "premier": 1785178983101,
    "copa": 1785180297108
@@ -500,13 +471,13 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": 0.4
+   "2026-07-27": 1.7
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "1.87",
    "n": 8,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
