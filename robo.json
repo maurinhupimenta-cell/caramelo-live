@@ -342,9 +342,9 @@
    "2026-07-27": -1.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Brighton",
-   "n": 10,
+   "tipo": "seq",
+   "chave": "GGRR",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
@@ -485,8 +485,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "05:15",
@@ -506,11 +506,11 @@
    ],
    "gatilho": "time Norwich",
    "alvo": {
-    "h": "05:18",
-    "jogo": "Norwich x Leeds",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1785125874400
+    "h": "05:21",
+    "jogo": "Wolverhampton x Watford",
+    "odd": 1.93,
+    "unidades": 4,
+    "desde": 1785126053608
    },
    "iniciadoEm": 1785125518409,
    "tiros": [
@@ -519,6 +519,12 @@
      "jogo": "West Ham x Brentford",
      "odd": 2.2,
      "unidades": 1
+    },
+    {
+     "h": "05:18",
+     "jogo": "Norwich x Leeds",
+     "odd": 2.1,
+     "unidades": 2
     }
    ]
   },
@@ -546,7 +552,7 @@
    "tipo": "time",
    "chave": "Norwich",
    "n": 12,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
