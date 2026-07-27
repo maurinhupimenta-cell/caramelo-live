@@ -1713,13 +1713,38 @@ app.get("/api/auditoria-maquina", (req, res) => {
       }
       // quanto se espera por acaso? ~log(N^2)/log(numPlacaresDistintos)
       const distintos = Object.keys(idxPor).length;
-      const esperado = Math.round(Math.log(N * N) / Math.log(Math.max(2, distintos)) * 10) / 10;
+      // TESTE DE EMBARALHAMENTO (correto): a formula log assume placares uniformes, o que e FALSO
+      // (1-0 e 1-1 dominam). Embaralha o roteiro 300x e mede o maior bloco repetido em cada -
+      // se o valor real cai dentro dessa nuvem, e acaso puro.
+      const maiorBlocoDe = a => {
+        const ix = {}; for (let i = 0; i < a.length; i++) (ix[a[i]] = ix[a[i]] || []).push(i);
+        let mx = 0;
+        for (const lst of Object.values(ix)) {
+          if (lst.length < 2 || lst.length > 200) continue;
+          for (let p = 0; p < lst.length - 1; p++) for (let q = p + 1; q < lst.length; q++) {
+            let L = 0; while (lst[p] + L < a.length && lst[q] + L < a.length && a[lst[p] + L] === a[lst[q] + L]) L++;
+            if (L > mx) mx = L;
+          }
+        }
+        return mx;
+      };
+      const nulos = [];
+      for (let s = 0; s < 300; s++) {
+        const c = arr.slice();
+        for (let i = c.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); const t = c[i]; c[i] = c[j]; c[j] = t; }
+        nulos.push(maiorBlocoDe(c));
+      }
+      nulos.sort((a, b) => a - b);
+      const p95 = nulos[Math.floor(nulos.length * 0.95)];
+      const mediaNulo = Math.round(nulos.reduce((a, b) => a + b, 0) / nulos.length * 10) / 10;
+      const esperado = mediaNulo;
       saida.B_repeticaoExata[liga] = {
         jogos: N, placaresDistintos: distintos,
         maiorBlocoIdentico: maiorRepeticao,
         posicoes: maiorRepeticao > 1 ? `${ondeA} e ${ondeB} (distancia ${Math.abs(ondeB - ondeA)})` : "-",
         esperadoPorAcaso: esperado,
-        veredito: maiorRepeticao > esperado + 3 ? "SUSPEITO - investigar" : "dentro do acaso"
+        p95Embaralhado: p95,
+        veredito: maiorRepeticao > p95 ? "ACIMA DO ACASO (p<0.05) - investigar" : "dentro do acaso (embaralhamento produz o mesmo)"
       };
 
       // ===== C) CALIBRACAO DAS ODDS (fora da amostra) =====
