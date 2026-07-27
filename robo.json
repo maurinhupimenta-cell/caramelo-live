@@ -495,7 +495,37 @@
    "copa": 1785133862107,
    "premier": 1785135480500
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:14",
+     "jogo": "Itália x Países Baixos",
+     "odd": 1.9
+    },
+    {
+     "h": "08:17",
+     "jogo": "Suíça x Polônia",
+     "odd": 2.02
+    },
+    {
+     "h": "08:20",
+     "jogo": "Portugal x Sérvia",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "odd 2.02",
+   "alvo": {
+    "h": "08:14",
+    "jogo": "Itália x Países Baixos",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1785136066511
+   },
+   "iniciadoEm": 1785136066511
+  },
   "cooldown": {
    "euro": 1785129598111,
    "super": 1785132784705,
@@ -517,10 +547,10 @@
    "2026-07-27": 2.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRG",
-   "n": 8,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.02",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  }
