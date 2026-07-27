@@ -289,8 +289,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "04:26",
@@ -310,13 +310,27 @@
    ],
    "gatilho": "time Croácia",
    "alvo": {
-    "h": "04:26",
-    "jogo": "Espanha x Turquia",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1785122575900
+    "h": "04:32",
+    "jogo": "Suíça x Eslovênia",
+    "odd": 2.5,
+    "unidades": 4,
+    "desde": 1785123234007
    },
-   "iniciadoEm": 1785122575900
+   "iniciadoEm": 1785122575900,
+   "tiros": [
+    {
+     "h": "04:26",
+     "jogo": "Espanha x Turquia",
+     "odd": 2.3,
+     "unidades": 1
+    },
+    {
+     "h": "04:29",
+     "jogo": "França x Croácia",
+     "odd": 2.1,
+     "unidades": 2
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785103434100,
@@ -345,12 +359,7 @@
    "n": 8,
    "start": 1
   },
-  "_obs": {
-   "super": {
-    "desde": 1785122942309,
-    "gatilho": "odd 2.3"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -26.8,
@@ -482,11 +491,40 @@
    }
   ],
   "consumidas": {
-   "copa": 1785119634312,
    "super": 1785120038401,
    "premier": 1785121916910
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:40",
+     "jogo": "Bélgica x Iraque",
+     "odd": 2.2
+    },
+    {
+     "h": "04:43",
+     "jogo": "Qatar x Noruega",
+     "odd": 1.93
+    },
+    {
+     "h": "04:46",
+     "jogo": "Bósnia e Herzegovina x Uzbequistão",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "odd 1.93",
+   "alvo": {
+    "h": "04:40",
+    "jogo": "Bélgica x Iraque",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785123234598
+   },
+   "iniciadoEm": 1785123234598
+  },
   "cooldown": {
    "euro": 1785118794700,
    "super": 1785120038401,
@@ -508,9 +546,9 @@
    "2026-07-27": 0.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Palace",
-   "n": 8,
+   "tipo": "odd",
+   "chave": "1.93",
+   "n": 11,
    "start": 3
   },
   "_obs": {}
