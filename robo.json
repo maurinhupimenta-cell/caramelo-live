@@ -479,11 +479,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1785162593305,
    "super": 1785165545602,
    "euro": 1785166143899
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:33",
+     "jogo": "Leeds x Norwich",
+     "odd": 2.15
+    },
+    {
+     "h": "16:36",
+     "jogo": "West Ham x City",
+     "odd": 2.02
+    },
+    {
+     "h": "16:39",
+     "jogo": "Watford x Brighton",
+     "odd": 1.87
+    }
+   ],
+   "gatilho": "odd 2.15",
+   "alvo": {
+    "h": "16:33",
+    "jogo": "Leeds x Norwich",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785166202611
+   },
+   "iniciadoEm": 1785166202611
+  },
   "cooldown": {
    "euro": 1785166143899,
    "super": 1785165545602,
@@ -506,8 +535,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2",
-   "n": 14,
+   "chave": "2.15",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
