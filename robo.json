@@ -157,12 +157,18 @@
  },
  "o25": {
   "saldo": -110.8,
-  "ciclos": 519,
+  "ciclos": 520,
   "greens": 334,
   "redsCiclo": 90,
   "aborts": 0,
-  "descartes": 95,
+  "descartes": 96,
   "historico": [
+   {
+    "quando": "2026-07-27T22:32:19.863Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho seq GRGRG) — liga REARMADA"
+   },
    {
     "quando": "2026-07-27T22:06:59.099Z",
     "resultado": "GREEN",
@@ -276,12 +282,6 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "euro · Portugal x Turquia @2.45 (tiro 1) · gatilho: odd 2.45"
-   },
-   {
-    "quando": "2026-07-27T13:34:21.805Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "copa · Haiti x Suécia @2.4 (tiro 1) · gatilho: time Suíça"
    }
   ],
   "consumidas": {
@@ -319,6 +319,10 @@
    "copa": {
     "desde": 1785188808341,
     "gatilho": "odd 2.15"
+   },
+   "super": {
+    "desde": 1785191539862,
+    "gatilho": "seq GRGRG"
    }
   }
  },
