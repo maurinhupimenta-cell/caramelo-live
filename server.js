@@ -1449,8 +1449,8 @@ app.post("/api/curve", (req, res) => {
 function acumuladoDia(liga, mkt, qtd) {
   const d = store[liga]; if (!d) return null;
   const games = listaCheia(d);
-  if (games.length < 25) return null;
-  // corte na virada do dia (00h do relogio do jogo)
+  if (games.length < 2) return null;
+  // corte na virada do dia pelo RELOGIO DO JOGO (queda de hora), nao pelo nosso horario
   let idxDia = 0;
   for (let i = 1; i < games.length; i++) {
     const h1 = parseInt((games[i].horario || "").split(":")[0]);
@@ -1458,15 +1458,34 @@ function acumuladoDia(liga, mkt, qtd) {
     if (!isNaN(h1) && !isNaN(h0) && h1 < h0 - 12) idxDia = i;
   }
   const dia = games.slice(idxDia);
-  if (dia.length < 8) return null; // logo apos a virada o dia tem poucos jogos: desenha assim mesmo
-  // GRAFICO NORMAL, so que usando SO os jogos de hoje: mesma media movel, mesma janela
-  // controlada pelo Qtd. Jogos. A unica diferenca e que nada de ontem entra na conta.
-  const JAN = Math.max(2, Math.min(parseInt(qtd) || 20, Math.max(2, Math.floor(dia.length / 2))));
-  const serie = chartSeries(dia, mkt, JAN);
-  const serieHoras = dia.slice(-serie.length).map(g => g.horario || "");
-  const macdHist = serie.length > 3 ? (macdData(serie).hist || []) : [];
+  const JAN = Math.max(2, parseInt(qtd) || 20);
+  // media movel NORMAL com aquecimento: no 1o jogo ja existe ponto (janela = o que houver),
+  // e a janela cresce ate JAN. Assim o grafico nasce cedo e ja aponta a direcao dos resultados.
+  const monta = arr => {
+    if (!arr || arr.length < 2) return null;
+    const serie = [], hrs = [];
+    for (let k = 0; k < arr.length; k++) {
+      const ini2 = Math.max(0, k - JAN + 1);
+      const jan = arr.slice(ini2, k + 1);
+      const pg = jan.filter(g => pays(g, mkt)).length;
+      serie.push(Math.round(pg / jan.length * 1000) / 10);
+      hrs.push(arr[k].horario || "");
+    }
+    return { serie, horas: hrs, macd: serie.length > 3 ? (macdData(serie).hist || []) : [] };
+  };
+  const JOGOS_HORA = 20; // 1 jogo a cada 3 min
+  const faixasAcum = {};
+  for (const h of [3, 6, 12, 18, 24]) {
+    const n = h * JOGOS_HORA;
+    const fatia = dia.length > n ? dia.slice(-n) : dia;   // dentro do dia, ultimas h horas
+    const f = monta(fatia);
+    if (f) faixasAcum["h" + h] = f;
+  }
+  const fDia = monta(dia);
+  if (fDia) faixasAcum.dia = fDia;
+  if (!Object.keys(faixasAcum).length) return null;
   const base = Math.round(dia.filter(g => pays(g, mkt)).length / dia.length * 1000) / 10;
-  return { serie, serieHoras, macdHist, janela: JAN, jogos: dia.length, desde: (dia[0] || {}).horario || "", base };
+  return { faixas: faixasAcum, janela: JAN, jogos: dia.length, desde: (dia[0] || {}).horario || "", base };
 }
 
 app.get("/api/liga/:liga", (req, res) => {

@@ -737,15 +737,26 @@ function abasGraficoHtml(){
 // Linha 1: BATALHA - sobe quando o mercado paga, desce quando o oposto paga (saldo linear).
 // Linha 2: ACUMULADO - % de pagamento do dia, com a base historica e o ponto de EQUILIBRIO
 //          (a % que empata com a odd media: acima disso o dia esta pagando mais do que custa).
+let faixaAcum = localStorage.getItem('cl_faixaacum') || 'dia';
+function trocaFaixaAcum(f){
+  faixaAcum=f;
+  try{ localStorage.setItem('cl_faixaacum',f); }catch(e){}
+  if(window.__ultimoPayload) render(window.__ultimoPayload);
+}
 function acumChartHtml(ac){
-  if(!ac||!ac.serie||ac.serie.length<4)return '<div class="note">poucos jogos desde as 00h para montar o gráfico</div>';
-  // Grafico NORMAL (mesma media movel, mesma janela do Qtd. Jogos), usando so os jogos de hoje.
+  if(!ac||!ac.faixas)return '<div class="note">aguardando os primeiros jogos do dia</div>';
+  const fx=ac.faixas;
+  const ops=[['h3','3h'],['h6','6h'],['h12','12h'],['h18','18h'],['h24','24h'],['dia','desde 00h']].filter(([k])=>fx[k]&&fx[k].serie&&fx[k].serie.length>1);
+  if(!ops.length)return '<div class="note">aguardando os primeiros jogos do dia</div>';
+  if(!fx[faixaAcum])faixaAcum=ops[ops.length-1][0];
+  const f=fx[faixaAcum], s=f.serie;
+  const btns=ops.map(([k,t])=>`<button onclick="trocaFaixaAcum('${k}')" style="cursor:pointer;border:1px solid ${faixaAcum===k?'#58a6ff':'#30363d'};background:${faixaAcum===k?'#132033':'#161b22'};color:${faixaAcum===k?'#58a6ff':'#8b98a8'};border-radius:7px;padding:4px 10px;font-size:11px;font-weight:${faixaAcum===k?'700':'400'}">${t}</button>`).join('');
   return `<div style="margin-top:2px">
     <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:6px;font-size:12px">
-      <b>📐 Desde as 00h <span class="note" style="font-size:10px">(só jogos de hoje · ${ac.jogos} desde ${ac.desde} · média de ${ac.janela} jogos)</span></b>
-      <span><b>${ac.serie[ac.serie.length-1]}%</b> <span class="note">· média do dia ${ac.base}%</span></span>
+      <span style="display:flex;gap:5px;align-items:center;flex-wrap:wrap"><b>⏱️ Horas</b> ${btns}</span>
+      <span><b>${s[s.length-1]}%</b> <span class="note">· ${ac.jogos} jogos desde ${ac.desde} (relógio do jogo) · média de ${ac.janela}</span></span>
     </div>
-    ${lineChart(ac.serie, ac.macdHist||[], null, false, ac.serieHoras||[])}
+    ${lineChart(s, f.macd||[], null, false, f.horas||[])}
   </div>`;
 }
 
