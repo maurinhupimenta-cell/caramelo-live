@@ -317,13 +317,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -31.8,
-  "ciclos": 487,
-  "greens": 341,
+  "saldo": -30.6,
+  "ciclos": 488,
+  "greens": 342,
   "redsCiclo": 54,
   "aborts": 0,
   "descartes": 92,
   "historico": [
+   {
+    "quando": "2026-07-27T02:02:43.900Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · Southampton x West Ham @2.2 (tiro 1) · gatilho: time Norwich"
+   },
    {
     "quando": "2026-07-27T01:30:53.204Z",
     "resultado": "GREEN",
@@ -437,52 +443,17 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "super · Asuncion x Belo Horizonte @1.93 (tiro 2) · gatilho: coluna :22"
-   },
-   {
-    "quando": "2026-07-26T17:55:49.503Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "euro · Romênia x Bélgica @1.85 (tiro 1) · gatilho: coluna :50"
    }
   ],
   "consumidas": {
-   "super": 1785115853006
+   "super": 1785115853006,
+   "premier": 1785117763702
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:00",
-     "jogo": "Southampton x West Ham",
-     "odd": 2.2
-    },
-    {
-     "h": "03:03",
-     "jogo": "Norwich x City",
-     "odd": 1.9
-    },
-    {
-     "h": "03:06",
-     "jogo": "Newcastle x West Ham",
-     "odd": 2
-    }
-   ],
-   "gatilho": "time Norwich",
-   "alvo": {
-    "h": "03:00",
-    "jogo": "Southampton x West Ham",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785117473299
-   },
-   "iniciadoEm": 1785117473299
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785106675507,
    "super": 1785115853006,
-   "premier": 1785103726108,
+   "premier": 1785117763702,
    "copa": 1785106496005
   },
   "dias": {
@@ -496,11 +467,11 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": 10.1
+   "2026-07-26": 11.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Norwich",
+   "tipo": "odd",
+   "chave": "2",
    "n": 9,
    "start": 1
   },
