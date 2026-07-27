@@ -342,9 +342,9 @@
    "2026-07-27": -15.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":16",
-   "n": 8,
+   "tipo": "seq",
+   "chave": "RRRGR",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
@@ -484,8 +484,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "08:14",
@@ -505,13 +505,21 @@
    ],
    "gatilho": "odd 2.02",
    "alvo": {
-    "h": "08:14",
-    "jogo": "Itália x Países Baixos",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1785136066511
+    "h": "08:17",
+    "jogo": "Suíça x Polônia",
+    "odd": 2.02,
+    "unidades": 2,
+    "desde": 1785136604008
    },
-   "iniciadoEm": 1785136066511
+   "iniciadoEm": 1785136066511,
+   "tiros": [
+    {
+     "h": "08:14",
+     "jogo": "Itália x Países Baixos",
+     "odd": 1.9,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785129598111,
