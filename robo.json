@@ -287,7 +287,37 @@
   "consumidas": {
    "euro": 1785133192705
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:01",
+     "jogo": "Penarol x Santos",
+     "odd": 2.55
+    },
+    {
+     "h": "08:04",
+     "jogo": "Bogota x Rio de Janeiro",
+     "odd": 2.45
+    },
+    {
+     "h": "08:07",
+     "jogo": "La Plata x Quito",
+     "odd": 2.55
+    }
+   ],
+   "gatilho": "coluna :04",
+   "alvo": {
+    "h": "08:01",
+    "jogo": "Penarol x Santos",
+    "odd": 2.55,
+    "unidades": 1,
+    "desde": 1785135183706
+   },
+   "iniciadoEm": 1785135183706
+  },
   "cooldown": {
    "copa": 1785130080208,
    "premier": 1785131314906,
@@ -310,17 +340,12 @@
    "2026-07-27": -9.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Croácia",
-   "n": 10,
-   "start": 2
+   "tipo": "coluna",
+   "chave": ":04",
+   "n": 8,
+   "start": 3
   },
-  "_obs": {
-   "super": {
-    "desde": 1785135181605,
-    "gatilho": "coluna :04"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -25.8,
@@ -457,8 +482,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "07:48",
@@ -478,11 +503,11 @@
    ],
    "gatilho": "odd 2",
    "alvo": {
-    "h": "07:51",
-    "jogo": "Brighton x Leeds",
-    "odd": 2,
-    "unidades": 2,
-    "desde": 1785135048505
+    "h": "07:54",
+    "jogo": "Burnley x Aston",
+    "odd": 1.95,
+    "unidades": 4,
+    "desde": 1785135281800
    },
    "iniciadoEm": 1785134392712,
    "tiros": [
@@ -491,6 +516,12 @@
      "jogo": "Brentford x Aston",
      "odd": 2.05,
      "unidades": 1
+    },
+    {
+     "h": "07:51",
+     "jogo": "Brighton x Leeds",
+     "odd": 2,
+     "unidades": 2
     }
    ]
   },
