@@ -290,8 +290,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "07:14",
@@ -311,13 +311,21 @@
    ],
    "gatilho": "time Croácia",
    "alvo": {
-    "h": "07:14",
-    "jogo": "Polônia x Eslovênia",
-    "odd": 2.87,
-    "unidades": 1,
-    "desde": 1785132478410
+    "h": "07:17",
+    "jogo": "Croácia x Escócia",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1785133006007
    },
-   "iniciadoEm": 1785132478410
+   "iniciadoEm": 1785132478410,
+   "tiros": [
+    {
+     "h": "07:14",
+     "jogo": "Polônia x Eslovênia",
+     "odd": 2.87,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785130080208,
@@ -341,9 +349,9 @@
    "2026-07-27": -10.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGR",
-   "n": 12,
+   "tipo": "time",
+   "chave": "Croácia",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
