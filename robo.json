@@ -317,13 +317,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -28.6,
-  "ciclos": 490,
-  "greens": 344,
+  "saldo": -27.6,
+  "ciclos": 491,
+  "greens": 345,
   "redsCiclo": 54,
   "aborts": 0,
   "descartes": 92,
   "historico": [
+   {
+    "quando": "2026-07-27T02:40:38.601Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Rio de Janeiro x Avellaneda @2.02 (tiro 1) · gatilho: placar goleada (3+)"
+   },
    {
     "quando": "2026-07-27T02:33:54.504Z",
     "resultado": "GREEN",
@@ -437,23 +443,18 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "copa · Qatar x Cabo Verde @1.98 (tiro 3) · gatilho: seq GRRGR"
-   },
-   {
-    "quando": "2026-07-26T19:02:01.300Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "euro · Turquia x França @1.98 (tiro 3) · gatilho: odd 1.9"
    }
   ],
   "consumidas": {
    "premier": 1785117763702,
    "euro": 1785118794700,
-   "copa": 1785119634312
+   "copa": 1785119634312,
+   "super": 1785120038401
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1785118794700,
-   "super": 1785115853006,
+   "super": 1785120038401,
    "premier": 1785117763702,
    "copa": 1785119634312
   },
@@ -468,12 +469,12 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": 13.3
+   "2026-07-26": 14.3
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.93",
-   "n": 8,
+   "tipo": "time",
+   "chave": "Lima",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
