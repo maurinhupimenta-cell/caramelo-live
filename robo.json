@@ -285,7 +285,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1785133192705,
    "super": 1785136184508,
    "premier": 1785136478212
   },
@@ -491,7 +490,37 @@
    "premier": 1785135480500,
    "euro": 1785136783904
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:22",
+     "jogo": "Montevideo x Asuncion",
+     "odd": 1.93
+    },
+    {
+     "h": "08:25",
+     "jogo": "La Boca x Belo Horizonte",
+     "odd": 1.93
+    },
+    {
+     "h": "08:28",
+     "jogo": "Penarol x Porto Alegre",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "time La Boca",
+   "alvo": {
+    "h": "08:22",
+    "jogo": "Montevideo x Asuncion",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1785136786207
+   },
+   "iniciadoEm": 1785136786207
+  },
   "cooldown": {
    "euro": 1785136783904,
    "super": 1785132784705,
