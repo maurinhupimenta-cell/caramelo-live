@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -115.8,
-  "ciclos": 515,
-  "greens": 331,
+  "saldo": -114.8,
+  "ciclos": 516,
+  "greens": 332,
   "redsCiclo": 90,
   "aborts": 0,
   "descartes": 94,
   "historico": [
+   {
+    "quando": "2026-07-27T19:59:39.996Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Newcastle x Brighton @1.95 (tiro 1) · gatilho: seq RGGRG"
+   },
    {
     "quando": "2026-07-27T19:21:57.597Z",
     "resultado": "RED_CICLO",
@@ -276,51 +282,16 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "premier · Norwich x Brighton @2.05 (tiro 3) · gatilho: seq GRGGR"
-   },
-   {
-    "quando": "2026-07-27T12:19:03.603Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "copa · Paraguai x Turquia @2.4 (tiro 1) · gatilho: time Suíça"
    }
   ],
   "consumidas": {
-   "copa": 1785180117405
+   "copa": 1785180117405,
+   "premier": 1785182379795
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:57",
-     "jogo": "Newcastle x Brighton",
-     "odd": 1.95
-    },
-    {
-     "h": "21:00",
-     "jogo": "Southampton x United",
-     "odd": 2.3
-    },
-    {
-     "h": "21:03",
-     "jogo": "Norwich x Everton",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "seq RGGRG",
-   "alvo": {
-    "h": "20:57",
-    "jogo": "Newcastle x Brighton",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1785182038704
-   },
-   "iniciadoEm": 1785182038704
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785180117405,
-   "premier": 1785175913954,
+   "premier": 1785182379795,
    "euro": 1785166795008,
    "super": 1785169885012
   },
@@ -337,7 +308,7 @@
    "2026-07-24": -1.7,
    "2026-07-25": 21,
    "2026-07-26": -3.3,
-   "2026-07-27": -70.1
+   "2026-07-27": -69.1
   },
   "_gatilhoAtual": {
    "tipo": "seq",
