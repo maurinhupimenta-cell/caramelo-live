@@ -341,10 +341,10 @@
    "2026-07-27": -10.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Croácia",
-   "n": 10,
-   "start": 2
+   "tipo": "seq",
+   "chave": "RGGR",
+   "n": 12,
+   "start": 1
   },
   "_obs": {}
  },
@@ -482,7 +482,37 @@
    "premier": 1785130178609,
    "super": 1785132784705
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:25",
+     "jogo": "Noruega x México",
+     "odd": 1.9
+    },
+    {
+     "h": "07:28",
+     "jogo": "Paraguai x Iraque",
+     "odd": 2.2
+    },
+    {
+     "h": "07:31",
+     "jogo": "Suécia x Qatar",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time Iraque",
+   "alvo": {
+    "h": "07:25",
+    "jogo": "Noruega x México",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1785132972703
+   },
+   "iniciadoEm": 1785132972703
+  },
   "cooldown": {
    "euro": 1785129598111,
    "super": 1785132784705,
@@ -505,9 +535,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "La Plata",
-   "n": 13,
-   "start": 1
+   "chave": "Iraque",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  }
