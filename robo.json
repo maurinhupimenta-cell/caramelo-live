@@ -448,12 +448,41 @@
    }
   ],
   "consumidas": {
-   "super": 1785141424509,
    "copa": 1785142864305,
    "premier": 1785143678298,
    "euro": 1785144183709
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:43",
+     "jogo": "Itaquera x Bogota",
+     "odd": 2.2
+    },
+    {
+     "h": "10:46",
+     "jogo": "Lima x Montevideo",
+     "odd": 1.83
+    },
+    {
+     "h": "10:49",
+     "jogo": "Sao Paulo x Porto Alegre",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "odd 1.83",
+   "alvo": {
+    "h": "10:43",
+    "jogo": "Itaquera x Bogota",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785145024797
+   },
+   "iniciadoEm": 1785145024797
+  },
   "cooldown": {
    "euro": 1785144183709,
    "super": 1785141424509,
@@ -475,10 +504,10 @@
    "2026-07-27": 3.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":23",
+   "tipo": "odd",
+   "chave": "1.83",
    "n": 10,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
