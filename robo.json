@@ -157,12 +157,18 @@
  },
  "o25": {
   "saldo": -98.5,
-  "ciclos": 506,
+  "ciclos": 507,
   "greens": 329,
   "redsCiclo": 87,
   "aborts": 0,
-  "descartes": 90,
+  "descartes": 91,
   "historico": [
+   {
+    "quando": "2026-07-27T16:16:42.811Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho odd 2.75) — liga REARMADA"
+   },
    {
     "quando": "2026-07-27T15:39:55.201Z",
     "resultado": "RED_CICLO",
@@ -276,12 +282,6 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-27T09:50:46.303Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "premier · Aston x Burnley @2.25 (tiro 1) · gatilho: seq RRRGG"
    }
   ],
   "consumidas": {
@@ -316,7 +316,12 @@
    "n": 11,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1785169002811,
+    "gatilho": "odd 2.75"
+   }
+  }
  },
  "ambas": {
   "saldo": -28.6,
