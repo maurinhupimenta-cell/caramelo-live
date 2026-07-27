@@ -288,7 +288,37 @@
    "super": 1785140704412,
    "euro": 1785141284104
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:39",
+     "jogo": "Southampton x Wolverhampton",
+     "odd": 2.2
+    },
+    {
+     "h": "09:42",
+     "jogo": "Liverpool x Everton",
+     "odd": 2.15
+    },
+    {
+     "h": "09:45",
+     "jogo": "Norwich x Aston",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "odd 2.15",
+   "alvo": {
+    "h": "09:39",
+    "jogo": "Southampton x Wolverhampton",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785141285010
+   },
+   "iniciadoEm": 1785141285010
+  },
   "cooldown": {
    "copa": 1785137102404,
    "premier": 1785136478212,
@@ -314,18 +344,24 @@
    "tipo": "odd",
    "chave": "2.15",
    "n": 13,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -20.2,
-  "ciclos": 508,
-  "greens": 360,
+  "saldo": -18.9,
+  "ciclos": 509,
+  "greens": 361,
   "redsCiclo": 55,
   "aborts": 0,
   "descartes": 93,
   "historico": [
+   {
+    "quando": "2026-07-27T08:37:04.701Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "super · Santos x Quito @2.07 (tiro 3) · gatilho: odd 2.02"
+   },
    {
     "quando": "2026-07-27T08:20:04.203Z",
     "resultado": "GREEN",
@@ -439,67 +475,18 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · Canadá x Espanha @1.98 (tiro 1) · gatilho: odd 1.93"
-   },
-   {
-    "quando": "2026-07-27T02:19:54.804Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · Portugal x Itália @1.98 (tiro 1) · gatilho: odd 1.98"
    }
   ],
   "consumidas": {
    "copa": 1785138722101,
    "premier": 1785139719599,
-   "euro": 1785140404005
+   "euro": 1785140404005,
+   "super": 1785141424509
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "09:28",
-     "jogo": "Buenos Aires x Porto Alegre",
-     "odd": 2.1
-    },
-    {
-     "h": "09:31",
-     "jogo": "Sao Paulo x La Plata",
-     "odd": 2.02
-    },
-    {
-     "h": "09:34",
-     "jogo": "Santos x Quito",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "odd 2.02",
-   "alvo": {
-    "h": "09:34",
-    "jogo": "Santos x Quito",
-    "odd": 2.07,
-    "unidades": 4,
-    "desde": 1785141244507
-   },
-   "iniciadoEm": 1785140864808,
-   "tiros": [
-    {
-     "h": "09:28",
-     "jogo": "Buenos Aires x Porto Alegre",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "09:31",
-     "jogo": "Sao Paulo x La Plata",
-     "odd": 2.02,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785140404005,
-   "super": 1785137264609,
+   "super": 1785141424509,
    "premier": 1785139719599,
    "copa": 1785138722101
   },
@@ -515,7 +502,7 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": 7.4
+   "2026-07-27": 8.7
   },
   "_gatilhoAtual": {
    "tipo": "seq",
