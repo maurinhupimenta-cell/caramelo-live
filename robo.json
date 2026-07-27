@@ -285,7 +285,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1785123614112,
    "super": 1785124341703,
    "copa": 1785125520707,
    "premier": 1785126248011
@@ -321,13 +320,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -31.8,
-  "ciclos": 495,
-  "greens": 348,
+  "saldo": -31.1,
+  "ciclos": 496,
+  "greens": 349,
   "redsCiclo": 55,
   "aborts": 0,
   "descartes": 92,
   "historico": [
+   {
+    "quando": "2026-07-27T04:24:08.499Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "premier · Wolverhampton x Watford @1.93 (tiro 3) · gatilho: time Norwich"
+   },
    {
     "quando": "2026-07-27T04:04:39.197Z",
     "resultado": "RED_CICLO",
@@ -441,68 +446,19 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho time Guayaquil) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-26T21:16:55.401Z",
-    "resultado": "GREEN",
-    "unidades": 0.6,
-    "detalhe": "copa · RD Congo x Uruguai @1.9 (tiro 3) · gatilho: time Turquia"
    }
   ],
   "consumidas": {
    "copa": 1785124047502,
    "super": 1785124341999,
-   "euro": 1785125079002
+   "euro": 1785125079002,
+   "premier": 1785126248299
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "05:15",
-     "jogo": "West Ham x Brentford",
-     "odd": 2.2
-    },
-    {
-     "h": "05:18",
-     "jogo": "Norwich x Leeds",
-     "odd": 2.1
-    },
-    {
-     "h": "05:21",
-     "jogo": "Wolverhampton x Watford",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "time Norwich",
-   "alvo": {
-    "h": "05:21",
-    "jogo": "Wolverhampton x Watford",
-    "odd": 1.93,
-    "unidades": 4,
-    "desde": 1785126053608
-   },
-   "iniciadoEm": 1785125518409,
-   "tiros": [
-    {
-     "h": "05:15",
-     "jogo": "West Ham x Brentford",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "05:18",
-     "jogo": "Norwich x Leeds",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785125079002,
    "super": 1785124341999,
-   "premier": 1785121916910,
+   "premier": 1785126248299,
    "copa": 1785124047502
   },
   "dias": {
@@ -517,7 +473,7 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": -4.2
+   "2026-07-27": -3.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
