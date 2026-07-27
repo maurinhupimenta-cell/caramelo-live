@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -49.7,
-  "ciclos": 465,
-  "greens": 308,
+  "saldo": -48.3,
+  "ciclos": 466,
+  "greens": 309,
   "redsCiclo": 76,
   "aborts": 0,
   "descartes": 81,
   "historico": [
+   {
+    "quando": "2026-07-27T03:52:21.903Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "super · Santos x Asuncion @2.4 (tiro 1) · gatilho: odd 2.3"
+   },
    {
     "quando": "2026-07-27T03:40:14.305Z",
     "resultado": "GREEN",
@@ -276,54 +282,19 @@
     "resultado": "GREEN",
     "unidades": 1.8,
     "detalhe": "premier · Southampton x Wolverhampton @2.2 (tiro 3) · gatilho: seq RGGRG"
-   },
-   {
-    "quando": "2026-07-26T17:23:11.204Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho seq RRGG) — liga REARMADA"
    }
   ],
   "consumidas": {
    "premier": 1785121734507,
-   "euro": 1785123614112
+   "euro": 1785123614112,
+   "super": 1785124341703
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:49",
-     "jogo": "Santos x Asuncion",
-     "odd": 2.4
-    },
-    {
-     "h": "04:52",
-     "jogo": "La Plata x Buenos Aires",
-     "odd": 2.3
-    },
-    {
-     "h": "04:55",
-     "jogo": "Porto Alegre x Penarol",
-     "odd": 2.87
-    }
-   ],
-   "gatilho": "odd 2.3",
-   "alvo": {
-    "h": "04:49",
-    "jogo": "Santos x Asuncion",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1785123619108
-   },
-   "iniciadoEm": 1785123619108
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785103434100,
    "premier": 1785121734507,
    "euro": 1785123614112,
-   "super": 1785102718498
+   "super": 1785124341703
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -338,12 +309,12 @@
    "2026-07-24": -1.7,
    "2026-07-25": 21,
    "2026-07-26": -3.3,
-   "2026-07-27": -4
+   "2026-07-27": -2.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGR",
-   "n": 8,
+   "tipo": "odd",
+   "chave": "2.3",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
@@ -534,9 +505,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "La Plata",
-   "n": 9,
-   "start": 2
+   "chave": "Lima",
+   "n": 12,
+   "start": 3
   },
   "_obs": {}
  }
