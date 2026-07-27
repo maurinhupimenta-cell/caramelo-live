@@ -318,13 +318,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -27.6,
-  "ciclos": 491,
-  "greens": 345,
+  "saldo": -26.8,
+  "ciclos": 492,
+  "greens": 346,
   "redsCiclo": 54,
   "aborts": 0,
   "descartes": 92,
   "historico": [
+   {
+    "quando": "2026-07-27T03:11:57.201Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "premier · Burnley x Brighton @1.8 (tiro 1) · gatilho: time Palace"
+   },
    {
     "quando": "2026-07-27T02:40:38.601Z",
     "resultado": "GREEN",
@@ -438,54 +444,19 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros) · gatilho: coluna :22"
-   },
-   {
-    "quando": "2026-07-26T19:59:56.400Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "copa · Qatar x Cabo Verde @1.98 (tiro 3) · gatilho: seq GRRGR"
    }
   ],
   "consumidas": {
    "euro": 1785118794700,
    "copa": 1785119634312,
-   "super": 1785120038401
+   "super": 1785120038401,
+   "premier": 1785121916910
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:09",
-     "jogo": "Burnley x Brighton",
-     "odd": 1.8
-    },
-    {
-     "h": "04:12",
-     "jogo": "Everton x Palace",
-     "odd": 1.9
-    },
-    {
-     "h": "04:15",
-     "jogo": "Watford x Southampton",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "time Palace",
-   "alvo": {
-    "h": "04:09",
-    "jogo": "Burnley x Brighton",
-    "odd": 1.8,
-    "unidades": 1,
-    "desde": 1785121366102
-   },
-   "iniciadoEm": 1785121366102
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785118794700,
    "super": 1785120038401,
-   "premier": 1785117763702,
+   "premier": 1785121916910,
    "copa": 1785119634312
   },
   "dias": {
@@ -499,7 +470,8 @@
    "2026-07-23": -13.3,
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
-   "2026-07-26": 14.3
+   "2026-07-26": 14.3,
+   "2026-07-27": 0.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
