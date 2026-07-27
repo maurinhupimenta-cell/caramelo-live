@@ -452,8 +452,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "21:19",
@@ -473,13 +473,21 @@
    ],
    "gatilho": "odd 1.83",
    "alvo": {
-    "h": "21:19",
-    "jogo": "Quito x Avellaneda",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1785184063396
+    "h": "21:22",
+    "jogo": "Belo Horizonte x Agua Branca",
+    "odd": 1.83,
+    "unidades": 2,
+    "desde": 1785184193499
    },
-   "iniciadoEm": 1785184063396
+   "iniciadoEm": 1785184063396,
+   "tiros": [
+    {
+     "h": "21:19",
+     "jogo": "Quito x Avellaneda",
+     "odd": 2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785181257402,
@@ -502,9 +510,9 @@
    "2026-07-27": 2.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Croácia",
-   "n": 15,
+   "tipo": "seq",
+   "chave": "RRRRG",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
