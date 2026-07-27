@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -51.3,
-  "ciclos": 471,
-  "greens": 312,
+  "saldo": -49.6,
+  "ciclos": 472,
+  "greens": 313,
   "redsCiclo": 77,
   "aborts": 0,
   "descartes": 82,
   "historico": [
+   {
+    "quando": "2026-07-27T05:28:00.402Z",
+    "resultado": "GREEN",
+    "unidades": 1.7,
+    "detalhe": "copa · Paraguai x Jordânia @2.35 (tiro 2) · gatilho: seq RRRGR"
+   },
    {
     "quando": "2026-07-27T05:04:03.306Z",
     "resultado": "RED_CICLO",
@@ -276,59 +282,16 @@
     "resultado": "GREEN",
     "unidades": 1.8,
     "detalhe": "copa · Uruguai x EUA @2.2 (tiro 3) · gatilho: seq RRGG"
-   },
-   {
-    "quando": "2026-07-26T19:19:46.006Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
    "euro": 1785127981198,
-   "super": 1785128643104
+   "super": 1785128643104,
+   "copa": 1785130080208
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "06:22",
-     "jogo": "Noruega x Espanha",
-     "odd": 2.07
-    },
-    {
-     "h": "06:25",
-     "jogo": "Paraguai x Jordânia",
-     "odd": 2.35
-    },
-    {
-     "h": "06:28",
-     "jogo": "Argélia x Gana",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "seq RRRGR",
-   "alvo": {
-    "h": "06:25",
-    "jogo": "Paraguai x Jordânia",
-    "odd": 2.35,
-    "unidades": 2,
-    "desde": 1785129954602
-   },
-   "iniciadoEm": 1785129594206,
-   "tiros": [
-    {
-     "h": "06:22",
-     "jogo": "Noruega x Espanha",
-     "odd": 2.07,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785125520707,
+   "copa": 1785130080208,
    "premier": 1785126248011,
    "euro": 1785127981198,
    "super": 1785128643104
@@ -346,7 +309,7 @@
    "2026-07-24": -1.7,
    "2026-07-25": 21,
    "2026-07-26": -3.3,
-   "2026-07-27": -5.6
+   "2026-07-27": -3.9
   },
   "_gatilhoAtual": {
    "tipo": "seq",
