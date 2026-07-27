@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -61,
-  "ciclos": 478,
+  "saldo": -68,
+  "ciclos": 479,
   "greens": 315,
-  "redsCiclo": 79,
+  "redsCiclo": 80,
   "aborts": 0,
   "descartes": 84,
   "historico": [
+   {
+    "quando": "2026-07-27T07:25:02.599Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: coluna :16"
+   },
    {
     "quando": "2026-07-27T07:14:38.405Z",
     "resultado": "GREEN",
@@ -276,65 +282,16 @@
     "resultado": "GREEN",
     "unidades": 2.6,
     "detalhe": "copa · Canadá x Turquia @2.4 (tiro 3) · gatilho: time Áustria"
-   },
-   {
-    "quando": "2026-07-26T21:51:58.698Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: coluna :37"
    }
   ],
   "consumidas": {
    "super": 1785136184508,
-   "premier": 1785136478212
+   "premier": 1785136478212,
+   "copa": 1785137102404
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "08:16",
-     "jogo": "Panamá x África do Sul",
-     "odd": 2.55
-    },
-    {
-     "h": "08:19",
-     "jogo": "Equador x Costa do Marfim",
-     "odd": 2.07
-    },
-    {
-     "h": "08:22",
-     "jogo": "Haiti x EUA",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "coluna :16",
-   "alvo": {
-    "h": "08:22",
-    "jogo": "Haiti x EUA",
-    "odd": 2.1,
-    "unidades": 4,
-    "desde": 1785136902300
-   },
-   "iniciadoEm": 1785136479810,
-   "tiros": [
-    {
-     "h": "08:16",
-     "jogo": "Panamá x África do Sul",
-     "odd": 2.55,
-     "unidades": 1
-    },
-    {
-     "h": "08:19",
-     "jogo": "Equador x Costa do Marfim",
-     "odd": 2.07,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785130080208,
+   "copa": 1785137102404,
    "premier": 1785136478212,
    "euro": 1785133192705,
    "super": 1785136184508
@@ -352,7 +309,7 @@
    "2026-07-24": -1.7,
    "2026-07-25": 21,
    "2026-07-26": -3.3,
-   "2026-07-27": -15.3
+   "2026-07-27": -22.3
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
