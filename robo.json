@@ -342,20 +342,26 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRG",
-   "n": 9,
+   "chave": "RRGR",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -26.8,
-  "ciclos": 492,
-  "greens": 346,
+  "saldo": -25.9,
+  "ciclos": 493,
+  "greens": 347,
   "redsCiclo": 54,
   "aborts": 0,
   "descartes": 92,
   "historico": [
+   {
+    "quando": "2026-07-27T03:47:27.701Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · Qatar x Noruega @1.93 (tiro 2) · gatilho: odd 1.93"
+   },
    {
     "quando": "2026-07-27T03:11:57.201Z",
     "resultado": "GREEN",
@@ -469,61 +475,48 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "premier · Palace x Chelsea @1.93 (tiro 2) · gatilho: seq RGRRG"
-   },
-   {
-    "quando": "2026-07-26T20:28:17.301Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: coluna :22"
    }
   ],
   "consumidas": {
-   "premier": 1785121916910
+   "premier": 1785121916910,
+   "copa": 1785124047502
   },
   "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "04:40",
-     "jogo": "Bélgica x Iraque",
-     "odd": 2.2
+     "h": "04:49",
+     "jogo": "Santos x Asuncion",
+     "odd": 2.1
     },
     {
-     "h": "04:43",
-     "jogo": "Qatar x Noruega",
-     "odd": 1.93
+     "h": "04:52",
+     "jogo": "La Plata x Buenos Aires",
+     "odd": 2
     },
     {
-     "h": "04:46",
-     "jogo": "Bósnia e Herzegovina x Uzbequistão",
-     "odd": 1.93
+     "h": "04:55",
+     "jogo": "Porto Alegre x Penarol",
+     "odd": 2.35
     }
    ],
-   "gatilho": "odd 1.93",
+   "gatilho": "time La Plata",
    "alvo": {
-    "h": "04:43",
-    "jogo": "Qatar x Noruega",
-    "odd": 1.93,
-    "unidades": 2,
-    "desde": 1785123780601
+    "h": "04:49",
+    "jogo": "Santos x Asuncion",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785124049609
    },
-   "iniciadoEm": 1785123234598,
-   "tiros": [
-    {
-     "h": "04:40",
-     "jogo": "Bélgica x Iraque",
-     "odd": 2.2,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1785124049609
   },
   "cooldown": {
    "euro": 1785118794700,
    "super": 1785120038401,
    "premier": 1785121916910,
-   "copa": 1785119634312
+   "copa": 1785124047502
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -537,13 +530,13 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": 0.8
+   "2026-07-27": 1.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.93",
-   "n": 11,
-   "start": 1
+   "tipo": "time",
+   "chave": "La Plata",
+   "n": 9,
+   "start": 2
   },
   "_obs": {}
  }
