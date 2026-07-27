@@ -284,10 +284,38 @@
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: odd 2.55"
    }
   ],
-  "consumidas": {
-   "premier": 1785175913954
+  "consumidas": {},
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:13",
+     "jogo": "Egito x Argentina",
+     "odd": 2.07
+    },
+    {
+     "h": "20:16",
+     "jogo": "Croácia x Tunísia",
+     "odd": 2.7
+    },
+    {
+     "h": "20:19",
+     "jogo": "México x Argentina",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "seq GRGRR",
+   "alvo": {
+    "h": "20:13",
+    "jogo": "Egito x Argentina",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1785179398797
+   },
+   "iniciadoEm": 1785179398797
   },
-  "ciclo": null,
   "cooldown": {
    "copa": 1785175135897,
    "premier": 1785175913954,
@@ -315,12 +343,7 @@
    "n": 11,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785179397199,
-    "gatilho": "seq GRGRR"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -28.4,
@@ -452,7 +475,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1785175795357,
    "premier": 1785178983101,
    "super": 1785179240004
   },
