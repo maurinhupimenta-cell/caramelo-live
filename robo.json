@@ -157,12 +157,18 @@
  },
  "o25": {
   "saldo": -55.2,
-  "ciclos": 474,
+  "ciclos": 475,
   "greens": 314,
   "redsCiclo": 78,
   "aborts": 0,
-  "descartes": 82,
+  "descartes": 83,
   "historico": [
+   {
+    "quando": "2026-07-27T06:53:01.605Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :04) — liga REARMADA"
+   },
    {
     "quando": "2026-07-27T06:19:52.902Z",
     "resultado": "GREEN",
@@ -276,12 +282,6 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · Newcastle x Wolverhampton @1.95 (tiro 1) · gatilho: seq RRGGG"
-   },
-   {
-    "quando": "2026-07-26T20:42:45.099Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: coluna :37"
    }
   ],
   "consumidas": {
@@ -315,7 +315,12 @@
    "n": 10,
    "start": 2
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1785135181605,
+    "gatilho": "coluna :04"
+   }
+  }
  },
  "ambas": {
   "saldo": -25.8,
