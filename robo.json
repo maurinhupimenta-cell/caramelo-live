@@ -322,12 +322,18 @@
  },
  "ambas": {
   "saldo": -31.1,
-  "ciclos": 496,
+  "ciclos": 497,
   "greens": 349,
   "redsCiclo": 55,
   "aborts": 0,
-  "descartes": 92,
+  "descartes": 93,
   "historico": [
+   {
+    "quando": "2026-07-27T05:09:00.403Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho odd 1.98) — liga REARMADA"
+   },
    {
     "quando": "2026-07-27T04:24:08.499Z",
     "resultado": "GREEN",
@@ -441,12 +447,6 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-26T21:35:53.101Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho time Guayaquil) — liga REARMADA"
    }
   ],
   "consumidas": {
@@ -504,11 +504,16 @@
    "2026-07-27": -3.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.98",
-   "n": 10,
-   "start": 2
+   "tipo": "time",
+   "chave": "Iraque",
+   "n": 9,
+   "start": 3
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1785128681906,
+    "gatilho": "odd 1.98"
+   }
+  }
  }
 }
