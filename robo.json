@@ -448,12 +448,41 @@
    }
   ],
   "consumidas": {
-   "premier": 1785143678298,
    "euro": 1785144183709,
    "super": 1785145545409,
    "copa": 1785147042409
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:18",
+     "jogo": "City x Leicester",
+     "odd": 1.95
+    },
+    {
+     "h": "11:21",
+     "jogo": "Watford x Chelsea",
+     "odd": 1.98
+    },
+    {
+     "h": "11:24",
+     "jogo": "City x Southampton",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "odd 1.98",
+   "alvo": {
+    "h": "11:18",
+    "jogo": "City x Leicester",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1785147281704
+   },
+   "iniciadoEm": 1785147281704
+  },
   "cooldown": {
    "euro": 1785144183709,
    "super": 1785145545409,
@@ -475,10 +504,10 @@
    "2026-07-27": 6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Suíça",
-   "n": 10,
-   "start": 3
+   "tipo": "odd",
+   "chave": "1.98",
+   "n": 13,
+   "start": 2
   },
   "_obs": {}
  }
