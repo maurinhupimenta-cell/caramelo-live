@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -75.1,
-  "ciclos": 491,
-  "greens": 321,
+  "saldo": -73.8,
+  "ciclos": 492,
+  "greens": 322,
   "redsCiclo": 82,
   "aborts": 0,
   "descartes": 88,
   "historico": [
+   {
+    "quando": "2026-07-27T10:58:04.205Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "copa · Nova Zelândia x Turquia @2.25 (tiro 1) · gatilho: odd 2.45"
+   },
    {
     "quando": "2026-07-27T10:47:04.006Z",
     "resultado": "GREEN",
@@ -276,51 +282,16 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq GGRR"
-   },
-   {
-    "quando": "2026-07-27T05:28:00.402Z",
-    "resultado": "GREEN",
-    "unidades": 1.7,
-    "detalhe": "copa · Paraguai x Jordânia @2.35 (tiro 2) · gatilho: seq RRRGR"
    }
   ],
   "consumidas": {
    "super": 1785148784305,
-   "euro": 1785149223903
+   "euro": 1785149223903,
+   "copa": 1785149884005
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "11:55",
-     "jogo": "Nova Zelândia x Turquia",
-     "odd": 2.25
-    },
-    {
-     "h": "11:58",
-     "jogo": "Tunísia x Brasil",
-     "odd": 2.45
-    },
-    {
-     "h": "12:01",
-     "jogo": "Gana x Argélia",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "odd 2.45",
-   "alvo": {
-    "h": "11:55",
-    "jogo": "Nova Zelândia x Turquia",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785149225200
-   },
-   "iniciadoEm": 1785149225200
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785144141904,
+   "copa": 1785149884005,
    "premier": 1785145846109,
    "euro": 1785149223903,
    "super": 1785148784305
@@ -338,13 +309,13 @@
    "2026-07-24": -1.7,
    "2026-07-25": 21,
    "2026-07-26": -3.3,
-   "2026-07-27": -29.4
+   "2026-07-27": -28.1
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.45",
-   "n": 9,
-   "start": 1
+   "tipo": "time",
+   "chave": "Suíça",
+   "n": 11,
+   "start": 2
   },
   "_obs": {}
  },
