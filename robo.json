@@ -341,10 +341,10 @@
    "2026-07-27": -4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.3",
+   "tipo": "seq",
+   "chave": "RRRG",
    "n": 9,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
@@ -482,8 +482,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "04:40",
@@ -503,13 +503,21 @@
    ],
    "gatilho": "odd 1.93",
    "alvo": {
-    "h": "04:40",
-    "jogo": "Bélgica x Iraque",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785123234598
+    "h": "04:43",
+    "jogo": "Qatar x Noruega",
+    "odd": 1.93,
+    "unidades": 2,
+    "desde": 1785123780601
    },
-   "iniciadoEm": 1785123234598
+   "iniciadoEm": 1785123234598,
+   "tiros": [
+    {
+     "h": "04:40",
+     "jogo": "Bélgica x Iraque",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785118794700,
@@ -532,9 +540,9 @@
    "2026-07-27": 0.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Romênia",
-   "n": 8,
+   "tipo": "odd",
+   "chave": "1.93",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
