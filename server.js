@@ -1651,6 +1651,108 @@ app.get("/api/backtest/:liga", (req, res) => {
 // ===== AUDITORIA COMPLETA: varre todo o historico (over E under), simula o CICLO REAL
 // de 3 tiros com gale 1-2-4 usando as odds verdadeiras, e valida cada achado em DUAS
 // metades independentes (edge real sobrevive nas duas; sorte nao). =====
+// ===== AUDITORIA DO TEMPO E DA TROLLAGEM (hipoteses do usuario) =====
+// 1) LAG: quando a curva sobe, o pagamento vem AGORA ou daqui a quantos jogos?
+//    Mede a taxa de pagamento em cada atraso k=1..20 apos o sinal, contra a base.
+// 2) TROLL: o padrao que chega a 100% falha logo depois? Pega todo padrao que atingiu
+//    100% (n>=5) ao vivo e mede o que ele fez DEPOIS (fora da amostra que o consagrou).
+app.get("/api/auditoria-tempo", (req, res) => {
+  try {
+    const MKTS = ["o25", "o35", "ambas", "u25"];
+    const LAGS = 20;
+    const lagAgreg = {};   // por mkt: soma de hits por lag
+    const trollAgreg = { casos: 0, depoisG: 0, depoisN: 0, baseG: 0, baseN: 0, porFamilia: {} };
+
+    for (const liga of LIGAS) {
+      const d = store[liga]; if (!d || !d.games || d.games.length < 300) continue;
+      const games = listaCheia(d);
+      for (const mkt of MKTS) {
+        const base = games.filter(g => pays(g, mkt)).length / games.length;
+        const serie = chartSeries(games, mkt, 20);   // ponto k <-> jogo k+19
+        const { hist } = macdData(serie);
+        lagAgreg[mkt] = lagAgreg[mkt] || { subindo: Array(LAGS + 1).fill(0), subindoN: Array(LAGS + 1).fill(0), fundo: Array(LAGS + 1).fill(0), fundoN: Array(LAGS + 1).fill(0), base: 0, baseN: 0 };
+        const A = lagAgreg[mkt];
+        A.base += games.filter(g => pays(g, mkt)).length; A.baseN += games.length;
+
+        for (let k = 3; k < serie.length; k++) {
+          const idxJogo = k + 19; // jogo correspondente ao ponto k
+          if (idxJogo + LAGS >= games.length) break;
+          const subindoAgora = hist[k] > 0.2 && hist[k] >= hist[k - 3] && serie[k] > serie[k - 1];
+          const jan = serie.slice(Math.max(0, k - 60), k + 1);
+          const mn = Math.min(...jan), mx = Math.max(...jan);
+          const zp = mx > mn ? (serie[k] - mn) / (mx - mn) * 100 : 50;
+          const noFundo = zp <= 25;
+          for (let lag = 1; lag <= LAGS; lag++) {
+            const g = games[idxJogo + lag]; if (!g) break;
+            const p = pays(g, mkt) ? 1 : 0;
+            if (subindoAgora) { A.subindo[lag] += p; A.subindoN[lag]++; }
+            if (noFundo) { A.fundo[lag] += p; A.fundoN[lag]++; }
+          }
+        }
+
+        // ===== TROLL TEST: padroes que atingiram 100% ao vivo =====
+        const seq = games.map(g => (pays(g, mkt) ? "G" : "R"));
+        const ciclo3Dep = i => seq.slice(i + 1, i + 4).includes("G");
+        for (const L of [4, 5]) {
+          const stat = {}; // chave -> {n, h, consagrado:bool}
+          for (let i = 0; i + L + 3 < seq.length; i++) {
+            const chave = seq.slice(i, i + L).join("");
+            const pagou = ciclo3Dep(i + L - 1);
+            const s = stat[chave] || (stat[chave] = { n: 0, h: 0, consagrado: false });
+            if (s.consagrado) {
+              // JA estava 100% antes deste caso: este e um teste FORA DA AMOSTRA
+              trollAgreg.casos++;
+              trollAgreg.depoisN++; if (pagou) trollAgreg.depoisG++;
+              const fam = "seq" + L;
+              const f = trollAgreg.porFamilia[fam] || (trollAgreg.porFamilia[fam] = { n: 0, h: 0 });
+              f.n++; if (pagou) f.h++;
+            }
+            s.n++; if (pagou) s.h++;
+            if (s.n >= 5 && s.h === s.n) s.consagrado = true;      // virou 100%
+            if (s.consagrado && s.h < s.n) s.consagrado = false;   // perdeu o 100%
+          }
+        }
+        // regua do ciclo pra comparar
+        let rn = 0, rh = 0;
+        for (let i = 0; i + 3 < seq.length; i++) { rn++; if (seq.slice(i + 1, i + 4).includes("G")) rh++; }
+        trollAgreg.baseG += rh; trollAgreg.baseN += rn;
+      }
+    }
+
+    const pctA = (h, n) => n ? Math.round(h / n * 1000) / 10 : null;
+    const respostaLag = {};
+    for (const [mkt, A] of Object.entries(lagAgreg)) {
+      const b = pctA(A.base, A.baseN);
+      const linha = [];
+      for (let lag = 1; lag <= LAGS; lag++) {
+        linha.push({ lag, subindo: pctA(A.subindo[lag], A.subindoN[lag]), fundo: pctA(A.fundo[lag], A.fundoN[lag]), n: A.subindoN[lag] });
+      }
+      const melhorSub = linha.filter(l => l.subindo != null).sort((a, b2) => b2.subindo - a.subindo)[0];
+      const melhorFun = linha.filter(l => l.fundo != null).sort((a, b2) => b2.fundo - a.fundo)[0];
+      respostaLag[mkt] = {
+        base: b,
+        curvaSubindo: linha.map(l => l.subindo),
+        curvaFundo: linha.map(l => l.fundo),
+        melhorLagSubindo: melhorSub ? `lag ${melhorSub.lag}: ${melhorSub.subindo}% (base ${b}%, ganho ${Math.round((melhorSub.subindo - b) * 10) / 10})` : null,
+        melhorLagFundo: melhorFun ? `lag ${melhorFun.lag}: ${melhorFun.fundo}% (base ${b}%, ganho ${Math.round((melhorFun.fundo - b) * 10) / 10})` : null,
+        amplitudeSubindo: (() => { const v = linha.map(l => l.subindo).filter(x => x != null); return v.length ? Math.round((Math.max(...v) - Math.min(...v)) * 10) / 10 : null; })()
+      };
+    }
+
+    res.json({
+      TESTE_1_TEMPO: { explicacao: "taxa de pagamento em cada atraso (1..20 jogos) apos o sinal, vs base do mercado", respostaLag },
+      TESTE_2_TROLL: {
+        explicacao: "padroes que atingiram 100% ao vivo: o que fizeram DEPOIS (fora da amostra)",
+        casosForaDaAmostra: trollAgreg.depoisN,
+        pagouDepois: pctA(trollAgreg.depoisG, trollAgreg.depoisN),
+        reguaDoCiclo: pctA(trollAgreg.baseG, trollAgreg.baseN),
+        diferenca: pctA(trollAgreg.depoisG, trollAgreg.depoisN) != null ? Math.round((pctA(trollAgreg.depoisG, trollAgreg.depoisN) - pctA(trollAgreg.baseG, trollAgreg.baseN)) * 10) / 10 : null,
+        porFamilia: Object.fromEntries(Object.entries(trollAgreg.porFamilia).map(([k, v]) => [k, `${pctA(v.h, v.n)}% em ${v.n} casos`]))
+      }
+    });
+  } catch (e) { res.status(500).json({ erro: e.message, linha: String(e.stack || "").split("\n")[1] }); }
+});
+
 app.get("/api/auditoria", (req, res) => {
   try {
     const MKTS = ["o25", "o35", "ge5", "ambas", "u05", "u15", "u25"];
