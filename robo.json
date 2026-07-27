@@ -354,13 +354,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -31.8,
-  "ciclos": 541,
-  "greens": 383,
+  "saldo": -31,
+  "ciclos": 542,
+  "greens": 384,
   "redsCiclo": 60,
   "aborts": 0,
   "descartes": 98,
   "historico": [
+   {
+    "quando": "2026-07-27T17:53:54.700Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "premier · Newcastle x Burnley @1.8 (tiro 1) · gatilho: odd 1.83"
+   },
    {
     "quando": "2026-07-27T17:49:25.399Z",
     "resultado": "GREEN",
@@ -474,54 +480,19 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "super · Santos x Lima @2.02 (tiro 2) · gatilho: odd 2.02"
-   },
-   {
-    "quando": "2026-07-27T12:16:24.404Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho seq RRRR) — liga REARMADA"
    }
   ],
   "consumidas": {
    "copa": 1785171842003,
    "euro": 1785172984399,
-   "super": 1785174565201
+   "super": 1785174565201,
+   "premier": 1785174834506
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:51",
-     "jogo": "Newcastle x Burnley",
-     "odd": 1.8
-    },
-    {
-     "h": "18:54",
-     "jogo": "Brighton x Palace",
-     "odd": 1.83
-    },
-    {
-     "h": "18:57",
-     "jogo": "Aston x Chelsea",
-     "odd": 2
-    }
-   ],
-   "gatilho": "odd 1.83",
-   "alvo": {
-    "h": "18:51",
-    "jogo": "Newcastle x Burnley",
-    "odd": 1.8,
-    "unidades": 1,
-    "desde": 1785174567303
-   },
-   "iniciadoEm": 1785174567303
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785172984399,
    "super": 1785174565201,
-   "premier": 1785170864207,
+   "premier": 1785174834506,
    "copa": 1785171842003
   },
   "dias": {
@@ -536,7 +507,7 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": -4.2
+   "2026-07-27": -3.4
   },
   "_gatilhoAtual": {
    "tipo": "odd",
