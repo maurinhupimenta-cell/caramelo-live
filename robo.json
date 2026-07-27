@@ -357,13 +357,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -21.2,
-  "ciclos": 507,
-  "greens": 359,
+  "saldo": -20.2,
+  "ciclos": 508,
+  "greens": 360,
   "redsCiclo": 55,
   "aborts": 0,
   "descartes": 93,
   "historico": [
+   {
+    "quando": "2026-07-27T08:20:04.203Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Bélgica x Turquia @2.02 (tiro 1) · gatilho: coluna :20"
+   },
    {
     "quando": "2026-07-27T08:08:39.798Z",
     "resultado": "GREEN",
@@ -477,22 +483,17 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · Portugal x Itália @1.98 (tiro 1) · gatilho: odd 1.98"
-   },
-   {
-    "quando": "2026-07-27T02:02:43.900Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "premier · Southampton x West Ham @2.2 (tiro 1) · gatilho: time Norwich"
    }
   ],
   "consumidas": {
    "super": 1785137264609,
    "copa": 1785138722101,
-   "premier": 1785139719599
+   "premier": 1785139719599,
+   "euro": 1785140404005
   },
   "ciclo": null,
   "cooldown": {
-   "euro": 1785136783904,
+   "euro": 1785140404005,
    "super": 1785137264609,
    "premier": 1785139719599,
    "copa": 1785138722101
@@ -509,12 +510,12 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": 6.4
+   "2026-07-27": 7.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2",
-   "n": 14,
+   "tipo": "coluna",
+   "chave": ":20",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
