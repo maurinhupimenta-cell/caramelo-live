@@ -324,13 +324,19 @@
   }
  },
  "ambas": {
-  "saldo": -25.6,
-  "ciclos": 558,
-  "greens": 395,
+  "saldo": -24.4,
+  "ciclos": 559,
+  "greens": 396,
   "redsCiclo": 61,
   "aborts": 0,
   "descartes": 102,
   "historico": [
+   {
+    "quando": "2026-07-27T22:47:41.203Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Eslovênia x Croácia @2.15 (tiro 1) · gatilho: seq GGGG"
+   },
    {
     "quando": "2026-07-27T22:41:55.756Z",
     "resultado": "RED_CICLO",
@@ -444,51 +450,16 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho odd 1.83) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-27T17:23:04.507Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "euro · Geórgia x Hungria @2.1 (tiro 2) · gatilho: seq RGRGR"
    }
   ],
   "consumidas": {
    "copa": 1785190860182,
-   "premier": 1785192115453
+   "premier": 1785192115453,
+   "euro": 1785192461007
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:44",
-     "jogo": "Eslovênia x Croácia",
-     "odd": 2.15
-    },
-    {
-     "h": "23:47",
-     "jogo": "Suíça x França",
-     "odd": 1.83
-    },
-    {
-     "h": "23:50",
-     "jogo": "Bélgica x Sérvia",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "seq GGGG",
-   "alvo": {
-    "h": "23:44",
-    "jogo": "Eslovênia x Croácia",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785192117658
-   },
-   "iniciadoEm": 1785192117658
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785187058494,
+   "euro": 1785192461007,
    "super": 1785184303396,
    "premier": 1785192115453,
    "copa": 1785190860182
@@ -505,7 +476,7 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": 2
+   "2026-07-27": 3.2
   },
   "_gatilhoAtual": {
    "tipo": "seq",
