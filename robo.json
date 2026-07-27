@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -78.5,
-  "ciclos": 486,
-  "greens": 318,
+  "saldo": -77.2,
+  "ciclos": 487,
+  "greens": 319,
   "redsCiclo": 82,
   "aborts": 0,
   "descartes": 86,
   "historico": [
+   {
+    "quando": "2026-07-27T09:50:46.303Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "premier · Aston x Burnley @2.25 (tiro 1) · gatilho: seq RRRGG"
+   },
    {
     "quando": "2026-07-27T09:22:22.103Z",
     "resultado": "RED_CICLO",
@@ -276,51 +282,16 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "copa · Iraque x Países Baixos @2.45 (tiro 1) · gatilho: time Suíça"
-   },
-   {
-    "quando": "2026-07-27T04:11:46.797Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho seq GRRR) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "copa": 1785144141904
+   "copa": 1785144141904,
+   "premier": 1785145846109
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "10:48",
-     "jogo": "Aston x Burnley",
-     "odd": 2.25
-    },
-    {
-     "h": "10:51",
-     "jogo": "West Ham x Leicester",
-     "odd": 2.55
-    },
-    {
-     "h": "10:54",
-     "jogo": "Newcastle x United",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "seq RRRGG",
-   "alvo": {
-    "h": "10:48",
-    "jogo": "Aston x Burnley",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785145508698
-   },
-   "iniciadoEm": 1785145508698
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785144141904,
-   "premier": 1785141888309,
+   "premier": 1785145846109,
    "euro": 1785141284104,
    "super": 1785140704412
   },
@@ -337,7 +308,7 @@
    "2026-07-24": -1.7,
    "2026-07-25": 21,
    "2026-07-26": -3.3,
-   "2026-07-27": -32.8
+   "2026-07-27": -31.5
   },
   "_gatilhoAtual": {
    "tipo": "seq",
