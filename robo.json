@@ -319,13 +319,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -28.6,
-  "ciclos": 534,
+  "saldo": -35.6,
+  "ciclos": 535,
   "greens": 379,
-  "redsCiclo": 59,
+  "redsCiclo": 60,
   "aborts": 0,
   "descartes": 96,
   "historico": [
+   {
+    "quando": "2026-07-27T16:31:25.407Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: odd 2.25"
+   },
    {
     "quando": "2026-07-27T15:52:03.002Z",
     "resultado": "GREEN",
@@ -439,66 +445,46 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · Watford x Chelsea @1.98 (tiro 2) · gatilho: odd 1.98"
-   },
-   {
-    "quando": "2026-07-27T10:10:42.605Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Panamá x Nova Zelândia @2 (tiro 2) · gatilho: time Suíça"
    }
   ],
   "consumidas": {
-   "premier": 1785166575398,
-   "copa": 1785167522805
+   "copa": 1785167522805,
+   "super": 1785169885299
   },
   "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "17:22",
-     "jogo": "Asuncion x La Boca",
-     "odd": 2.05
+     "h": "17:39",
+     "jogo": "Wolverhampton x Tottenham",
+     "odd": 1.98
     },
     {
-     "h": "17:25",
-     "jogo": "Medellin x Porto Alegre",
-     "odd": 2.25
+     "h": "17:42",
+     "jogo": "Liverpool x Chelsea",
+     "odd": 1.93
     },
     {
-     "h": "17:28",
-     "jogo": "Lima x Rio de Janeiro",
+     "h": "17:45",
+     "jogo": "United x Newcastle",
      "odd": 1.93
     }
    ],
-   "gatilho": "odd 2.25",
+   "gatilho": "odd 1.98",
    "alvo": {
-    "h": "17:28",
-    "jogo": "Lima x Rio de Janeiro",
-    "odd": 1.93,
-    "unidades": 4,
-    "desde": 1785169705103
+    "h": "17:39",
+    "jogo": "Wolverhampton x Tottenham",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785170176507
    },
-   "iniciadoEm": 1785169146510,
-   "tiros": [
-    {
-     "h": "17:22",
-     "jogo": "Asuncion x La Boca",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "17:25",
-     "jogo": "Medellin x Porto Alegre",
-     "odd": 2.25,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1785170176507
   },
   "cooldown": {
    "euro": 1785166143899,
-   "super": 1785165545602,
+   "super": 1785169885299,
    "premier": 1785166575398,
    "copa": 1785167522805
   },
@@ -514,12 +500,12 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": -1
+   "2026-07-27": -8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.25",
-   "n": 9,
+   "chave": "1.98",
+   "n": 23,
    "start": 1
   },
   "_obs": {}
