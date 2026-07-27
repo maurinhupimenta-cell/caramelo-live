@@ -345,18 +345,24 @@
    "tipo": "coluna",
    "chave": ":16",
    "n": 10,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -25.9,
-  "ciclos": 510,
-  "greens": 361,
+  "saldo": -24.7,
+  "ciclos": 511,
+  "greens": 362,
   "redsCiclo": 56,
   "aborts": 0,
   "descartes": 93,
   "historico": [
+   {
+    "quando": "2026-07-27T09:14:38.406Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · Islington x West Ham @2.15 (tiro 1) · gatilho: odd 2.15"
+   },
    {
     "quando": "2026-07-27T09:01:04.502Z",
     "resultado": "RED_CICLO",
@@ -470,24 +476,19 @@
     "resultado": "GREEN",
     "unidades": 0.8,
     "detalhe": "premier · Burnley x Brighton @1.8 (tiro 1) · gatilho: time Palace"
-   },
-   {
-    "quando": "2026-07-27T02:40:38.601Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "super · Rio de Janeiro x Avellaneda @2.02 (tiro 1) · gatilho: placar goleada (3+)"
    }
   ],
   "consumidas": {
    "euro": 1785140404005,
    "super": 1785141424509,
-   "copa": 1785142864305
+   "copa": 1785142864305,
+   "premier": 1785143678298
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1785140404005,
    "super": 1785141424509,
-   "premier": 1785139719599,
+   "premier": 1785143678298,
    "copa": 1785142864305
   },
   "dias": {
@@ -502,13 +503,13 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": 1.7
+   "2026-07-27": 2.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRR",
-   "n": 13,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":24",
+   "n": 10,
+   "start": 2
   },
   "_obs": {}
  }
