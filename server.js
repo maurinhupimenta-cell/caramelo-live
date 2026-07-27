@@ -1754,6 +1754,27 @@ app.get("/api/auditoria", (req, res) => {
       }
     }
 
+    // ===== TESTE FOCADO: uma hipotese unica em TODAS as combinacoes (mostra onde falha tambem) =====
+    if (req.query.foco) {
+      const alvo = String(req.query.foco);
+      const linhas = [];
+      for (const liga of LIGAS) {
+        const d = store[liga]; if (!d || !d.games || d.games.length < 200) continue;
+        const games = listaCheia(d);
+        for (const mkt of MKTS) {
+          const base = avalia(games, mkt, () => true);
+          let r = null;
+          if (alvo === "zero") r = avalia(games, mkt, (gs, i) => catPl(gs[i]) === "0-0");
+          else if (alvo === "goleada") r = avalia(games, mkt, (gs, i) => catPl(gs[i]) === "goleada");
+          else if (alvo === "green") r = avalia(games, mkt, (gs, i) => pays(gs[i], mkt));
+          if (!r) continue;
+          linhas.push({ liga, mkt, n: r.n, uCiclo: r.porCiclo, era1: r.metade1, era2: r.metade2, cegoUCiclo: base ? base.porCiclo : null, ganhoVsCego: base ? Math.round((r.porCiclo - base.porCiclo) * 100) / 100 : null });
+        }
+      }
+      const pos = linhas.filter(l => l.uCiclo > 0).length;
+      const somaGanho = Math.round(linhas.reduce((a, l) => a + (l.ganhoVsCego || 0), 0) / (linhas.length || 1) * 100) / 100;
+      return res.json({ hipotese: alvo, combosTestados: linhas.length, positivos: pos, negativos: linhas.length - pos, ganhoMedioVsCego: somaGanho, veredito: pos > linhas.length * 0.7 && somaGanho > 0.15 ? "CONSISTENTE" : "NAO SE SUSTENTA (ruido)", linhas: linhas.sort((a, b) => b.uCiclo - a.uCiclo) });
+    }
     // ranking: so o que e LUCRATIVO e ROBUSTO (positivo nas duas metades)
     const lucrativos = achados.filter(a => a.unidades > 0).sort((a, b) => b.porCiclo - a.porCiclo);
     const robustos = lucrativos.filter(a => a.robusto && a.n >= 20).sort((a, b) => b.porCiclo - a.porCiclo);
