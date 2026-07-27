@@ -739,55 +739,26 @@ function abasGraficoHtml(){
 //          (a % que empata com a odd media: acima disso o dia esta pagando mais do que custa).
 function acumChartHtml(ac){
   if(!ac||!ac.pct||ac.pct.length<3)return '';
-  const W=680,H=110,hB=90,gap=16,pad=30;
+  // USA O MESMO DESENHISTA DO GRAFICO PRINCIPAL (lineChart) -> visual identico ao que voce ja le:
+  // mesma moldura, mesmos niveis, mesmo eixo de tempo. Muda so a MATEMATICA da linha:
+  // aqui a linha e a % ACUMULADA desde as 00h (nao esquece nada), e o histograma de baixo
+  // e a BATALHA (+1 green do mercado, -1 green do oposto) em vez do MACD.
   const n=ac.pct.length;
-  const x=i=>pad+(W-pad-14)*(n<2?0:i/(n-1));
-  // --- BATALHA (saldo +1/-1) ---
-  const sMin=Math.min(0,...ac.saldo), sMax=Math.max(0,...ac.saldo);
-  const sRange=(sMax-sMin)||1;
-  const yB=v=>10+(hB-20)*(1-(v-sMin)/sRange);
-  const ptsB=ac.saldo.map((v,i)=>`${x(i).toFixed(1)},${yB(v).toFixed(1)}`).join(' ');
-  const yZero=yB(0);
-  const ult=ac.saldo[n-1];
-  const corB=ult>0?'#3fb950':ult<0?'#f85149':'#8b98a8';
-  // area sob a linha ate o zero
-  const areaB=`${x(0).toFixed(1)},${yZero.toFixed(1)} ${ptsB} ${x(n-1).toFixed(1)},${yZero.toFixed(1)}`;
-  // --- ACUMULADO (%) ---
-  const todos=ac.pct.concat([ac.base,ac.equilibrio].filter(v=>v!=null));
-  const pMin=Math.max(0,Math.min(...todos)-4), pMax=Math.min(100,Math.max(...todos)+4);
-  const pRange=(pMax-pMin)||1;
-  const yP=v=>10+(H-20)*(1-(v-pMin)/pRange);
-  const ptsP=ac.pct.map((v,i)=>`${x(i).toFixed(1)},${yP(v).toFixed(1)}`).join(' ');
-  const curPct=ac.pct[n-1];
-  const acimaEq=ac.equilibrio!=null&&curPct>ac.equilibrio;
-  const corP=acimaEq?'#3fb950':'#f85149';
-  const linhaBase=`<line x1="${pad}" y1="${yP(ac.base).toFixed(1)}" x2="${W-14}" y2="${yP(ac.base).toFixed(1)}" stroke="#8b98a8" stroke-width="1" stroke-dasharray="4 4"/><text x="${W-12}" y="${(yP(ac.base)+3).toFixed(1)}" fill="#8b98a8" font-size="9">base ${ac.base}%</text>`;
-  const linhaEq=ac.equilibrio!=null?`<line x1="${pad}" y1="${yP(ac.equilibrio).toFixed(1)}" x2="${W-14}" y2="${yP(ac.equilibrio).toFixed(1)}" stroke="#e3b341" stroke-width="1.2"/><text x="${W-12}" y="${(yP(ac.equilibrio)-4).toFixed(1)}" fill="#e3b341" font-size="9">equilíbrio ${ac.equilibrio}%</text>`:'';
-  // marcas de hora
-  const marcas=[];
-  for(let i=0;i<n;i++){const hh=(ac.horas[i]||'').slice(0,5);if(hh.endsWith(':00')||i===0){marcas.push(`<text x="${x(i).toFixed(1)}" y="${H-1}" fill="#6e7681" font-size="8" text-anchor="middle">${hh}</text>`);}}
-  return `<div style="margin-top:10px;background:#0d1117;border:1px solid #30363d;border-radius:10px;padding:10px">
-    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px">
-      <b style="font-size:12px">📐 Acumulado do dia <span class="note" style="font-size:10px">(zera às 00h do jogo · ${ac.jogos} jogos desde ${ac.desde})</span></b>
-      <span style="font-size:11px"><b style="color:${corB}">batalha ${ult>0?'+':''}${ult}</b> · <b style="color:${corP}">${curPct}% acumulado</b>${ac.equilibrio!=null?` <span class="note">(equilíbrio ${ac.equilibrio}% @${ac.oddMedia})</span>`:''}</span>
+  const batalhaBarras=ac.saldo.map((v,i)=> i===0 ? v : (v-ac.saldo[i-1]));
+  const ult=ac.saldo[n-1], cur=ac.pct[n-1];
+  const acima=ac.equilibrio!=null&&cur>ac.equilibrio;
+  const corP=acima?'var(--greenb)':'var(--red)';
+  const corB=ult>0?'var(--greenb)':ult<0?'var(--red)':'#8b98a8';
+  return `<div style="margin-top:2px">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:6px;font-size:12px">
+      <b>📐 Acumulado desde as 00h <span class="note" style="font-size:10px">(${ac.jogos} jogos · começou ${ac.desde})</span></b>
+      <span><b style="color:${corP}">${cur}% acumulado</b> · <span class="note">equilíbrio ${ac.equilibrio!=null?ac.equilibrio+'%':'—'} @${ac.oddMedia||'—'} · base ${ac.base}%</span> · <b style="color:${corB}">batalha ${ult>0?'+':''}${ult}</b></span>
     </div>
-    <svg viewBox="0 0 ${W} ${hB}" style="width:100%;height:auto;display:block">
-      <line x1="${pad}" y1="${yZero.toFixed(1)}" x2="${W-14}" y2="${yZero.toFixed(1)}" stroke="#30363d" stroke-width="1"/>
-      <polygon points="${areaB}" fill="${corB}" opacity="0.13"/>
-      <polyline points="${ptsB}" fill="none" stroke="${corB}" stroke-width="1.8"/>
-      <text x="2" y="12" fill="#8b98a8" font-size="9">over vence</text>
-      <text x="2" y="${(hB-4).toFixed(0)}" fill="#8b98a8" font-size="9">under vence</text>
-      <circle cx="${x(n-1).toFixed(1)}" cy="${yB(ult).toFixed(1)}" r="3" fill="${corB}"/>
-    </svg>
-    <svg viewBox="0 0 ${W} ${H}" style="width:100%;height:auto;display:block;margin-top:${gap/2}px">
-      ${linhaBase}${linhaEq}
-      <polyline points="${ptsP}" fill="none" stroke="${corP}" stroke-width="2"/>
-      <circle cx="${x(n-1).toFixed(1)}" cy="${yP(curPct).toFixed(1)}" r="3.5" fill="${corP}"/>
-      ${marcas.join('')}
-    </svg>
-    <div class="note" style="font-size:10px;margin-top:2px">Linha de cima: <b>batalha</b> — sobe a cada green do mercado, desce a cada green do lado oposto. Linha de baixo: <b>% acumulada do dia</b> — acima da linha amarela o dia está pagando mais do que a odd cobra.</div>
+    ${lineChart(ac.pct, batalhaBarras, null, false, ac.horas)}
+    <div class="note" style="font-size:10px;margin-top:4px">Linha = <b>% acumulada do dia</b> (zera às 00h do jogo e nunca esquece — por isso sobe reto quando o mercado está vencendo). Acima de <b>${ac.equilibrio!=null?ac.equilibrio+'%':'—'}</b> o dia paga mais do que a odd cobra. Barras de baixo = <b>batalha</b>: verde quando o mercado paga, vermelha quando o lado oposto paga.</div>
   </div>`;
 }
+
 function leitorFaixaHtml(){
   const lt=window.__leitor;
   const setas=s=>{s=String(s||'');const m=s.match(/^([FMT])·(.*)$/);const fx=m?m[1]:null;const mv=(m?m[2]:s).replace(/U/g,'↑').replace(/D/g,'↓').replace(/F/g,'→');const rot=fx==='F'?'<span style="color:#58c6ff;font-size:10px;font-weight:700">FUNDO</span> ':fx==='T'?'<span style="color:#e3b341;font-size:10px;font-weight:700">TOPO</span> ':fx==='M'?'<span style="color:#8b98a8;font-size:10px;font-weight:700">MEIO</span> ':'';return rot+mv;};
