@@ -738,22 +738,22 @@ function abasGraficoHtml(){
 // Linha 2: ACUMULADO - % de pagamento do dia, com a base historica e o ponto de EQUILIBRIO
 //          (a % que empata com a odd media: acima disso o dia esta pagando mais do que custa).
 function acumChartHtml(ac){
-  if(!ac||!ac.saldo||ac.saldo.length<3)return '';
-  // MESMO CONFRONTO do grafico normal (over x under, ambas sim x ambas nao),
-  // mas SOMADO RETO das 00h ate 23:59 em vez da janela que esquece:
-  //   +1 a cada green do mercado, -1 a cada green do lado oposto, acumulando o dia inteiro.
-  // Visual identico ao grafico principal (mesmo desenhista, mesmos niveis, mesmo eixo).
-  const s=ac.saldo, n=s.length, ult=s[n-1];
-  const pico=Math.max(...s), vale=Math.min(...s);
-  const cor=ult>0?'var(--greenb)':ult<0?'var(--red)':'#8b98a8';
-  const eqU=(ac.equity&&ac.equity.length)?ac.equity[ac.equity.length-1]:null;
+  if(!ac||!ac.pct||ac.pct.length<3)return '';
+  // A LINHA E A % ACUMULADA desde as 00h: cada jogo novo entra numa media que cresce,
+  // entao um pagamento sozinho quase nao mexe - ela so sobe quando o ACUMULADO sobe
+  // (de 30% para 31%). Escala TRAVADA em 0-100 como num grafico de trader: sem zoom
+  // automatico, movimento pequeno aparece pequeno. Linha amarela = ponto de equilibrio.
+  const p=ac.pct, n=p.length, cur=p[n-1];
+  const acima=ac.equilibrio!=null&&cur>ac.equilibrio;
+  const cor=acima?'var(--greenb)':'var(--red)';
+  const dif=ac.equilibrio!=null?Math.round((cur-ac.equilibrio)*10)/10:null;
   return `<div style="margin-top:2px">
     <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:6px;font-size:12px">
       <b>📐 Acumulado do dia <span class="note" style="font-size:10px">(soma reta desde as 00h · ${ac.jogos} jogos desde ${ac.desde})</span></b>
-      <span><b style="color:${cor}">${ult>0?'+':''}${ult}</b> <span class="note">· topo do dia ${pico>0?'+':''}${pico} · fundo ${vale} · pagou ${ac.pct[n-1]}%${eqU!=null?` · em unidades ${eqU>0?'+':''}${eqU}u`:''}</span></span>
+      <span><b style="color:${cor}">${cur}%</b> <span class="note">· equilíbrio ${ac.equilibrio!=null?ac.equilibrio+'%':'—'}${dif!=null?` (${dif>0?'+':''}${dif})`:''} · base ${ac.base}%</span></span>
     </div>
-    ${lineChart(s, [], null, true, ac.horas)}
-    <div class="note" style="font-size:10px;margin-top:4px">Mesma disputa do gráfico normal (${'{'}mercado{'}'} contra o lado oposto), mas <b>somada do começo do dia</b>: sobe +1 a cada green do mercado, desce −1 a cada green do oposto, sem esquecer nada. <b>Acima de 0</b> = o mercado está ganhando a disputa hoje. Zera às 00h do relógio do jogo.</div>
+    ${lineChart(p, [], null, false, ac.horas, [0,100], ac.equilibrio)}
+    <div class="note" style="font-size:10px;margin-top:4px">Linha = <b>% acumulada do dia inteiro</b> (00h → 23:59). Como a conta soma todos os jogos do dia, um pagamento sozinho quase não mexe: ela <b>só sobe quando o acumulado sobe de verdade</b> (30% → 31%). Escala travada em 0–100%, sem zoom. Acima da linha amarela o dia paga mais do que a odd cobra.</div>
   </div>`;
 }
 
@@ -772,11 +772,13 @@ function leitorFaixaHtml(){
     ${sig?`<b style="color:${corTxt}">${sig.prox==='G'?'ANUNCIA GREEN em até 3':'ANUNCIA MORTE do ciclo'} +${sig.edge} pts (${sig.n}×)</b>`:`<span class="note" style="font-size:10px">sem sinal (desenho neutro ou memória rasa)</span>`}
   </div>`;
 }
-function lineChart(serie, macdHist, trend, ehGols, horas){const uni=ehGols?"":"%";
+function lineChart(serie, macdHist, trend, ehGols, horas, escala, refLinha){const uni=ehGols?"":"%";
   if(!serie.length)return '<div class="note">sem dados para o gráfico</div>';
   const W=680,H=200,pad=28, hH=70, gap=14; // H=linha, hH=histograma
   const totalH=H+gap+hH;
-  const min=Math.min(...serie),max=Math.max(...serie);
+  // ESCALA: por padrao auto-ajusta (grafico de janela). Se vier `escala` [min,max], fica FIXA -
+  // como num grafico de trader: um movimento pequeno parece pequeno, nao vira montanha.
+  const min=escala?escala[0]:Math.min(...serie),max=escala?escala[1]:Math.max(...serie);
   const rng=Math.max(1,max-min);
   const x=i=>pad+i*((W-2*pad)/(serie.length-1||1));
   const y=v=>pad+(1-(v-min)/rng)*(H-2*pad);
@@ -872,7 +874,7 @@ function lineChart(serie, macdHist, trend, ehGols, horas){const uni=ehGols?"":"%
     <line x1="${pad}" y1="${pad}" x2="${W-pad}" y2="${pad}" stroke="#2d3543" stroke-dasharray="3 3"/>
     <line x1="${pad}" y1="${H-pad}" x2="${W-pad}" y2="${H-pad}" stroke="#2d3543" stroke-dasharray="3 3"/>
     <polyline points="${pts}" fill="none" stroke="${cor}" stroke-width="${larguraLinha}"/>
-    ${fibSvg}${trendSvg}
+    ${fibSvg}${trendSvg}${refLinha!=null&&refLinha>=min&&refLinha<=max?`<line x1="${pad}" y1="${y(refLinha).toFixed(1)}" x2="${W-pad}" y2="${y(refLinha).toFixed(1)}" stroke="#e3b341" stroke-width="1.3" stroke-dasharray="6 4"/><text x="${pad+4}" y="${(y(refLinha)-5).toFixed(1)}" fill="#e3b341" font-size="11" font-weight="700">equilíbrio ${refLinha}${uni}</text>`:''}
     ${dots}${labels}
     <text x="${W-pad}" y="${pad-8}" fill="#8b98a8" font-size="11" text-anchor="end">Topo ${max}${uni}</text>
     <text x="${W-pad}" y="${H-pad+16}" fill="#8b98a8" font-size="11" text-anchor="end">Fundo ${min}${uni}</text>
