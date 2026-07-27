@@ -1661,6 +1661,64 @@ app.get("/api/backtest/:liga", (req, res) => {
 // B) REPETICAO EXATA: o roteiro de placares se repete em algum ciclo? (busca blocos identicos)
 // C) CALIBRACAO DAS ODDS: cada valor de odd entrega o que promete? (validado fora da amostra)
 // D) COLUNA DA HORA: o minuto do relogio (:00 :03 :06...) tem viés? (repete ~25x no historico)
+// ===== INVENTARIO DE ODDS: o que a fonte manda que a gente nem olha? =====
+// + MARGEM (overround) por mercado: onde a casa cobra menos, o jogo e mais justo.
+// + CALIBRACAO: o que cada mercado PROMETE (1/odd) contra o que ENTREGOU de verdade.
+app.get("/api/odds-inventario", (req, res) => {
+  try {
+    const inv = {}, porLiga = {};
+    for (const liga of LIGAS) {
+      const d = store[liga]; if (!d || !d.games) continue;
+      porLiga[liga] = { jogos: d.games.length, chaves: {} };
+      for (const g of d.games) {
+        for (const [k, v] of Object.entries(g.odds || {})) {
+          if (typeof v !== "number" || v <= 1.01) continue;
+          const s = inv[k] || (inv[k] = { n: 0, soma: 0, min: 99, max: 0, vals: [] });
+          s.n++; s.soma += v; if (v < s.min) s.min = v; if (v > s.max) s.max = v;
+          if (s.vals.length < 4000) s.vals.push(v);
+          porLiga[liga].chaves[k] = (porLiga[liga].chaves[k] || 0) + 1;
+        }
+      }
+    }
+    const chaves = Object.entries(inv).map(([k, s]) => {
+      s.vals.sort((a, b) => a - b);
+      return { chave: k, aparicoes: s.n, media: Math.round(s.soma / s.n * 100) / 100, min: s.min, max: s.max, mediana: s.vals[Math.floor(s.vals.length / 2)] };
+    }).sort((a, b) => b.aparicoes - a.aparicoes);
+
+    // MARGEM (overround) dos pares complementares + CALIBRACAO empirica
+    const pares = [["o25", "u25"], ["o35", "u35"], ["o15", "u15"], ["ambs", "ambn"]];
+    const margens = [], calib = [];
+    for (const liga of LIGAS) {
+      const d = store[liga]; if (!d || !d.games || d.games.length < 200) continue;
+      const games = d.games;
+      for (const [A, B] of pares) {
+        const comAmbos = games.filter(g => g.odds && g.odds[A] > 1.01 && g.odds[B] > 1.01);
+        if (comAmbos.length < 40) continue;
+        const over = comAmbos.reduce((a, g) => a + (1 / g.odds[A] + 1 / g.odds[B]), 0) / comAmbos.length;
+        margens.push({ liga, par: A + "/" + B, margem: Math.round((over - 1) * 1000) / 10 + "%", n: comAmbos.length });
+      }
+      // calibracao: o que a odd promete x o que saiu
+      for (const mkt of ["o25", "o35", "ge5", "ambas", "u25", "u15"]) {
+        const k = mkt === "ambas" ? "ambs" : mkt;
+        const comOdd = games.filter(g => g.odds && g.odds[k] > 1.01);
+        if (comOdd.length < 100) continue;
+        const prometido = comOdd.reduce((a, g) => a + 1 / g.odds[k], 0) / comOdd.length * 100;
+        const entregue = comOdd.filter(g => pays(g, mkt)).length / comOdd.length * 100;
+        const evMedio = comOdd.reduce((a, g) => a + ((pays(g, mkt) ? g.odds[k] : 0) - 1), 0) / comOdd.length * 100;
+        calib.push({ liga, mkt, n: comOdd.length, prometido: Math.round(prometido * 10) / 10, entregue: Math.round(entregue * 10) / 10, diferenca: Math.round((entregue - prometido) * 10) / 10, evReal: Math.round(evMedio * 10) / 10 });
+      }
+    }
+    calib.sort((a, b) => b.evReal - a.evReal);
+    res.json({
+      LEITURA: "aparicoes = quantos jogos trazem essa odd. Se um mercado que voce ve na tela do jogo NAO esta aqui, a sonda nao esta capturando ele.",
+      chavesCapturadas: chaves,
+      margemDaCasa: margens.sort((a, b) => parseFloat(a.margem) - parseFloat(b.margem)),
+      calibracaoPorMercado: calib,
+      porLiga
+    });
+  } catch (e) { res.status(500).json({ erro: e.message, linha: String(e.stack || "").split("\n")[1] }); }
+});
+
 app.get("/api/auditoria-maquina", (req, res) => {
   try {
     const MKTS = ["o25", "o35", "ambas"];
