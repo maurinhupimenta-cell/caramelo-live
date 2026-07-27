@@ -364,13 +364,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -30.9,
-  "ciclos": 532,
-  "greens": 377,
+  "saldo": -29.7,
+  "ciclos": 533,
+  "greens": 378,
   "redsCiclo": 59,
   "aborts": 0,
   "descartes": 96,
   "historico": [
+   {
+    "quando": "2026-07-27T15:36:15.505Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · Leeds x Norwich @2.15 (tiro 1) · gatilho: odd 2.15"
+   },
    {
     "quando": "2026-07-27T15:29:04.005Z",
     "resultado": "RED_CICLO",
@@ -484,53 +490,18 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho time Suíça) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-27T09:45:45.605Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "super · Itaquera x Bogota @2.2 (tiro 1) · gatilho: odd 1.83"
    }
   ],
   "consumidas": {
    "super": 1785165545602,
-   "euro": 1785166143899
+   "euro": 1785166143899,
+   "premier": 1785166575398
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:33",
-     "jogo": "Leeds x Norwich",
-     "odd": 2.15
-    },
-    {
-     "h": "16:36",
-     "jogo": "West Ham x City",
-     "odd": 2.02
-    },
-    {
-     "h": "16:39",
-     "jogo": "Watford x Brighton",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "odd 2.15",
-   "alvo": {
-    "h": "16:33",
-    "jogo": "Leeds x Norwich",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785166202611
-   },
-   "iniciadoEm": 1785166202611
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785166143899,
    "super": 1785165545602,
-   "premier": 1785162593305,
+   "premier": 1785166575398,
    "copa": 1785161744411
   },
   "dias": {
@@ -545,12 +516,12 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": -3.3
+   "2026-07-27": -2.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRGG",
-   "n": 13,
+   "tipo": "odd",
+   "chave": "2.15",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
