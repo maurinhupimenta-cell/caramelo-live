@@ -485,11 +485,40 @@
    }
   ],
   "consumidas": {
-   "copa": 1785167522805,
    "super": 1785169885299,
    "premier": 1785170864207
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:58",
+     "jogo": "Noruega x Uzbequistão",
+     "odd": 1.98
+    },
+    {
+     "h": "18:01",
+     "jogo": "Uruguai x Curação",
+     "odd": 1.98
+    },
+    {
+     "h": "18:04",
+     "jogo": "EUA x México",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "time Uruguai",
+   "alvo": {
+    "h": "17:58",
+    "jogo": "Noruega x Uzbequistão",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785171124203
+   },
+   "iniciadoEm": 1785171124203
+  },
   "cooldown": {
    "euro": 1785166143899,
    "super": 1785169885299,
@@ -511,10 +540,10 @@
    "2026-07-27": -7.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRR",
-   "n": 15,
-   "start": 1
+   "tipo": "time",
+   "chave": "Uruguai",
+   "n": 10,
+   "start": 2
   },
   "_obs": {}
  }
