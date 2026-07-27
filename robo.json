@@ -451,7 +451,37 @@
    "super": 1785179240004,
    "copa": 1785180297108
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:38",
+     "jogo": "Albânia x Turquia",
+     "odd": 2.3
+    },
+    {
+     "h": "20:41",
+     "jogo": "Áustria x Espanha",
+     "odd": 1.87
+    },
+    {
+     "h": "20:44",
+     "jogo": "Geórgia x Suíça",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "odd 1.87",
+   "alvo": {
+    "h": "20:38",
+    "jogo": "Albânia x Turquia",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1785180641596
+   },
+   "iniciadoEm": 1785180641596
+  },
   "cooldown": {
    "euro": 1785172984399,
    "super": 1785179240004,
@@ -473,10 +503,10 @@
    "2026-07-27": 0.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Inglaterra",
-   "n": 10,
-   "start": 2
+   "tipo": "odd",
+   "chave": "1.87",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  }
