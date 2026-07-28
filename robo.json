@@ -295,8 +295,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "03:33",
@@ -316,11 +316,11 @@
    ],
    "gatilho": "seq RRRR",
    "alvo": {
-    "h": "03:36",
-    "jogo": "Leicester x Wolverhampton",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1785206151826
+    "h": "03:39",
+    "jogo": "Everton x Burnley",
+    "odd": 2.07,
+    "unidades": 4,
+    "desde": 1785206318933
    },
    "iniciadoEm": 1785205854434,
    "tiros": [
@@ -329,6 +329,12 @@
      "jogo": "Burnley x Everton",
      "odd": 2.05,
      "unidades": 1
+    },
+    {
+     "h": "03:36",
+     "jogo": "Leicester x Wolverhampton",
+     "odd": 2.15,
+     "unidades": 2
     }
    ]
   },
@@ -354,9 +360,9 @@
    "2026-07-27": -61.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRR",
-   "n": 9,
+   "tipo": "time",
+   "chave": "Penarol",
+   "n": 8,
    "start": 1
   },
   "_obs": {
