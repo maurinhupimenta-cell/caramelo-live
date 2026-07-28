@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -106.9,
-  "ciclos": 523,
+  "saldo": -113.9,
+  "ciclos": 524,
   "greens": 337,
-  "redsCiclo": 90,
+  "redsCiclo": 91,
   "aborts": 0,
   "descartes": 96,
   "historico": [
+   {
+    "quando": "2026-07-28T02:42:03.224Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq RRRR"
+   },
    {
     "quando": "2026-07-28T02:30:52.725Z",
     "resultado": "GREEN",
@@ -291,56 +297,43 @@
    }
   ],
   "consumidas": {
-   "copa": 1785205852328
+   "copa": 1785205852328,
+   "premier": 1785206523034
   },
   "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "03:33",
-     "jogo": "Burnley x Everton",
-     "odd": 2.05
+     "h": "03:43",
+     "jogo": "Itaquera x Penarol",
+     "odd": 2.5
     },
     {
-     "h": "03:36",
-     "jogo": "Leicester x Wolverhampton",
-     "odd": 2.15
+     "h": "03:46",
+     "jogo": "Montevideo x Avellaneda",
+     "odd": 2.2
     },
     {
-     "h": "03:39",
-     "jogo": "Everton x Burnley",
-     "odd": 2.07
+     "h": "03:49",
+     "jogo": "Santos x La Plata",
+     "odd": 2.7
     }
    ],
-   "gatilho": "seq RRRR",
+   "gatilho": "time Penarol",
    "alvo": {
-    "h": "03:39",
-    "jogo": "Everton x Burnley",
-    "odd": 2.07,
-    "unidades": 4,
-    "desde": 1785206318933
+    "h": "03:43",
+    "jogo": "Itaquera x Penarol",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1785206525234
    },
-   "iniciadoEm": 1785205854434,
-   "tiros": [
-    {
-     "h": "03:33",
-     "jogo": "Burnley x Everton",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "03:36",
-     "jogo": "Leicester x Wolverhampton",
-     "odd": 2.15,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1785206525234
   },
   "cooldown": {
    "copa": 1785205852328,
-   "premier": 1785182379795,
+   "premier": 1785206523034,
    "euro": 1785187378397,
    "super": 1785191818161
   },
@@ -357,7 +350,7 @@
    "2026-07-24": -1.7,
    "2026-07-25": 21,
    "2026-07-26": -3.3,
-   "2026-07-27": -61.2
+   "2026-07-27": -68.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
