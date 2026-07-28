@@ -692,13 +692,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -45.4,
-  "ciclos": 640,
-  "greens": 424,
+  "saldo": -44.4,
+  "ciclos": 641,
+  "greens": 425,
   "redsCiclo": 68,
   "aborts": 0,
   "descartes": 148,
   "historico": [
+   {
+    "quando": "2026-07-28T20:37:10.966Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Nova Zelândia x Coreia do Sul @2.05 (tiro 1) · gatilho: time Suíça"
+   },
    {
     "quando": "2026-07-28T20:13:00.160Z",
     "resultado": "GREEN",
@@ -1301,44 +1307,15 @@
    }
   ],
   "consumidas": {
-   "super": 1785269579960
+   "super": 1785269579960,
+   "copa": 1785271030863
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:34",
-     "jogo": "Nova Zelândia x Coreia do Sul",
-     "odd": 2.05
-    },
-    {
-     "h": "21:37",
-     "jogo": "Suíça x Uruguai",
-     "odd": 1.98
-    },
-    {
-     "h": "21:40",
-     "jogo": "Portugal x Tunísia",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "time Suíça",
-   "alvo": {
-    "h": "21:34",
-    "jogo": "Nova Zelândia x Coreia do Sul",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785270309861
-   },
-   "iniciadoEm": 1785270309861
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785266759231,
    "super": 1785269579960,
    "premier": 1785267170868,
-   "copa": 1785264893833
+   "copa": 1785271030863
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -1353,12 +1330,12 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -23.8
+   "2026-07-28": -22.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Suíça",
-   "n": 18,
+   "tipo": "coluna",
+   "chave": ":39",
+   "n": 21,
    "start": 1
   },
   "_obs": {}
