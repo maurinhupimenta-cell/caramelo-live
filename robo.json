@@ -617,8 +617,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "07:54",
@@ -638,13 +638,27 @@
    ],
    "gatilho": "time Brighton",
    "alvo": {
-    "h": "07:54",
-    "jogo": "West Ham x Everton",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785223974639
+    "h": "08:33",
+    "jogo": "Aston x Liverpool",
+    "odd": 2,
+    "unidades": 4,
+    "desde": 1785224057933
    },
-   "iniciadoEm": 1785223974639
+   "iniciadoEm": 1785223974639,
+   "tiros": [
+    {
+     "h": "07:54",
+     "jogo": "West Ham x Everton",
+     "odd": 2.05,
+     "unidades": 1
+    },
+    {
+     "h": "07:57",
+     "jogo": "Watford x Brighton",
+     "odd": 1.87,
+     "unidades": 2
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785220132126,
@@ -668,10 +682,10 @@
    "2026-07-28": 1.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Brighton",
-   "n": 17,
-   "start": 2
+   "tipo": "coluna",
+   "chave": ":33",
+   "n": 8,
+   "start": 1
   },
   "_obs": {
    "copa": {
