@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -120.3,
-  "ciclos": 533,
-  "greens": 342,
+  "saldo": -118.8,
+  "ciclos": 534,
+  "greens": 343,
   "redsCiclo": 93,
   "aborts": 0,
   "descartes": 98,
   "historico": [
+   {
+    "quando": "2026-07-28T07:34:05.927Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "premier · Southampton x Aston @2.5 (tiro 1) · gatilho: seq RRGGR"
+   },
    {
     "quando": "2026-07-28T05:47:50.324Z",
     "resultado": "GREEN",
@@ -350,41 +356,13 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "07:51",
-     "jogo": "Southampton x Aston",
-     "odd": 2.5
-    },
-    {
-     "h": "07:54",
-     "jogo": "West Ham x Everton",
-     "odd": 2.4
-    },
-    {
-     "h": "07:57",
-     "jogo": "Watford x Brighton",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "seq RRGGR",
-   "alvo": {
-    "h": "07:51",
-    "jogo": "Southampton x Aston",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1785224021525
-   },
-   "iniciadoEm": 1785224021525
+  "consumidas": {
+   "premier": 1785224045730
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785213341427,
-   "premier": 1785217670128,
+   "premier": 1785224045730,
    "euro": 1785214193128,
    "super": 1785217243228
   },
@@ -402,7 +380,7 @@
    "2026-07-25": 21,
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
-   "2026-07-28": 0.6
+   "2026-07-28": 2.1
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -690,10 +668,10 @@
    "2026-07-28": 1.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRR",
-   "n": 13,
-   "start": 1
+   "tipo": "time",
+   "chave": "Brighton",
+   "n": 17,
+   "start": 2
   },
   "_obs": {
    "copa": {
