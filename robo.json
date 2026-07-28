@@ -600,7 +600,37 @@
   "consumidas": {
    "copa": 1785255172126
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:39",
+     "jogo": "Everton x Burnley",
+     "odd": 2.07
+    },
+    {
+     "h": "17:42",
+     "jogo": "Brentford x Brighton",
+     "odd": 2.1
+    },
+    {
+     "h": "17:45",
+     "jogo": "Chelsea x Newcastle",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "seq GGRRG",
+   "alvo": {
+    "h": "17:39",
+    "jogo": "Everton x Burnley",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1785256553731
+   },
+   "iniciadoEm": 1785256553731
+  },
   "cooldown": {
    "copa": 1785255172126,
    "premier": 1785224045730,
@@ -624,9 +654,9 @@
    "2026-07-28": -0.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.45",
-   "n": 13,
+   "tipo": "seq",
+   "chave": "GGRRG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
@@ -1215,7 +1245,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":26",
+   "chave": ":39",
    "n": 17,
    "start": 1
   },
