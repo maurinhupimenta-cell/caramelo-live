@@ -541,35 +541,35 @@
   ],
   "consumidas": {},
   "ciclo": {
-   "liga": "copa",
+   "liga": "super",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "07:52",
-     "jogo": "Portugal x França",
-     "odd": 2.15
+     "h": "09:19",
+     "jogo": "Guayaquil x Sao Paulo",
+     "odd": 2.02
     },
     {
-     "h": "14:10",
-     "jogo": "Suíça x México",
-     "odd": 2.25
+     "h": "14:22",
+     "jogo": "Porto Alegre x Montevideo",
+     "odd": 2.45
     },
     {
-     "h": "14:13",
-     "jogo": "Haiti x França",
-     "odd": 2.1
+     "h": "14:25",
+     "jogo": "Medellin x Belo Horizonte",
+     "odd": 2.2
     }
    ],
-   "gatilho": "time Suíça",
+   "gatilho": "odd 2.45",
    "alvo": {
-    "h": "07:52",
-    "jogo": "Portugal x França",
-    "odd": 2.15,
+    "h": "09:19",
+    "jogo": "Guayaquil x Sao Paulo",
+    "odd": 2.02,
     "unidades": 1,
-    "desde": 1785244268431
+    "desde": 1785245326530
    },
-   "iniciadoEm": 1785244268431
+   "iniciadoEm": 1785245326530
   },
   "cooldown": {
    "copa": 1785213341427,
@@ -594,10 +594,10 @@
    "2026-07-28": 2.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Suíça",
-   "n": 16,
-   "start": 2
+   "tipo": "odd",
+   "chave": "2.45",
+   "n": 13,
+   "start": 3
   },
   "_obs": {
    "euro": {
