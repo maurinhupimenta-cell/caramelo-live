@@ -488,13 +488,19 @@
   }
  },
  "ambas": {
-  "saldo": -19.2,
-  "ciclos": 593,
-  "greens": 409,
+  "saldo": -17.8,
+  "ciclos": 594,
+  "greens": 410,
   "redsCiclo": 62,
   "aborts": 0,
   "descartes": 122,
   "historico": [
+   {
+    "quando": "2026-07-28T10:05:46.827Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "premier · Leeds x Palace @2.1 (tiro 3) · gatilho: coluna :00"
+   },
    {
     "quando": "2026-07-28T09:52:51.934Z",
     "resultado": "GREEN_OBS",
@@ -814,56 +820,14 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "10:57",
-     "jogo": "Norwich x Watford",
-     "odd": 1.95
-    },
-    {
-     "h": "11:00",
-     "jogo": "Leicester x Burnley",
-     "odd": 1.95
-    },
-    {
-     "h": "11:03",
-     "jogo": "Leeds x Palace",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "coluna :00",
-   "alvo": {
-    "h": "11:03",
-    "jogo": "Leeds x Palace",
-    "odd": 2.1,
-    "unidades": 4,
-    "desde": 1785232966332
-   },
-   "iniciadoEm": 1785232310425,
-   "tiros": [
-    {
-     "h": "10:57",
-     "jogo": "Norwich x Watford",
-     "odd": 1.95,
-     "unidades": 1
-    },
-    {
-     "h": "11:00",
-     "jogo": "Leicester x Burnley",
-     "odd": 1.95,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1785233146638
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785220132126,
    "super": 1785217757137,
-   "premier": 1785224539737,
+   "premier": 1785233146638,
    "copa": 1785218212833
   },
   "dias": {
@@ -879,12 +843,12 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": 2.4
+   "2026-07-28": 3.8
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRGG",
-   "n": 9,
+   "chave": "RRGGR",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
