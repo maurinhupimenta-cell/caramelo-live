@@ -157,12 +157,18 @@
  },
  "o25": {
   "saldo": -119.1,
-  "ciclos": 526,
+  "ciclos": 527,
   "greens": 338,
   "redsCiclo": 92,
   "aborts": 0,
-  "descartes": 96,
+  "descartes": 97,
   "historico": [
+   {
+    "quando": "2026-07-28T03:59:42.926Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho time Rio de Janeiro) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T03:34:53.829Z",
     "resultado": "GREEN",
@@ -309,10 +315,39 @@
    }
   ],
   "consumidas": {
-   "super": 1785207236037,
    "euro": 1785209693633
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:01",
+     "jogo": "Buenos Aires x Rio de Janeiro",
+     "odd": 2.07
+    },
+    {
+     "h": "05:04",
+     "jogo": "Itaquera x Guayaquil",
+     "odd": 2.2
+    },
+    {
+     "h": "05:07",
+     "jogo": "Agua Branca x La Boca",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "time Rio de Janeiro",
+   "alvo": {
+    "h": "05:01",
+    "jogo": "Buenos Aires x Rio de Janeiro",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1785211184830
+   },
+   "iniciadoEm": 1785211184830
+  },
   "cooldown": {
    "copa": 1785205852328,
    "premier": 1785206523034,
@@ -336,9 +371,9 @@
    "2026-07-28": 1.8
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 8,
+   "tipo": "time",
+   "chave": "Rio de Janeiro",
+   "n": 11,
    "start": 1
   },
   "_obs": {
