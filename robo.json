@@ -411,7 +411,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:19",
+     "jogo": "Guayaquil x Sao Paulo",
+     "odd": 2.02
+    },
+    {
+     "h": "10:28",
+     "jogo": "Medellin x Agua Branca",
+     "odd": 2.25
+    },
+    {
+     "h": "10:31",
+     "jogo": "Quito x Sao Paulo",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "coluna :28",
+   "alvo": {
+    "h": "09:19",
+    "jogo": "Guayaquil x Sao Paulo",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1785230934628
+   },
+   "iniciadoEm": 1785230934628
+  },
   "cooldown": {
    "copa": 1785213341427,
    "premier": 1785224045730,
@@ -435,30 +465,32 @@
    "2026-07-28": 2.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Albânia",
-   "n": 13,
-   "start": 3
+   "tipo": "seq",
+   "chave": "GRGRR",
+   "n": 8,
+   "start": 1
   },
   "_obs": {
    "copa": {
     "desde": 1785188808341,
     "gatilho": "odd 2.15"
-   },
-   "super": {
-    "desde": 1785230932634,
-    "gatilho": "coluna :28"
    }
   }
  },
  "ambas": {
   "saldo": -19.2,
-  "ciclos": 588,
+  "ciclos": 589,
   "greens": 409,
   "redsCiclo": 62,
   "aborts": 0,
-  "descartes": 117,
+  "descartes": 118,
   "historico": [
+   {
+    "quando": "2026-07-28T09:34:10.125Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Uruguai) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T09:21:31.835Z",
     "resultado": "GREEN_OBS",
@@ -803,10 +835,15 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":30",
+   "chave": ":33",
    "n": 10,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1785231250125,
+    "gatilho": "time Uruguai"
+   }
+  }
  }
 }
