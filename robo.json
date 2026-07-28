@@ -564,12 +564,18 @@
  },
  "ambas": {
   "saldo": -24.8,
-  "ciclos": 609,
+  "ciclos": 610,
   "greens": 410,
   "redsCiclo": 63,
   "aborts": 0,
-  "descartes": 136,
+  "descartes": 137,
   "historico": [
+   {
+    "quando": "2026-07-28T12:38:05.227Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-28T12:22:33.236Z",
     "resultado": "DESCARTADO",
@@ -1042,7 +1048,7 @@
    "tipo": "odd",
    "chave": "1.83",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
