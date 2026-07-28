@@ -365,37 +365,7 @@
   "consumidas": {
    "premier": 1785224045730
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "07:43",
-     "jogo": "Bogota x Buenos Aires",
-     "odd": 2.3
-    },
-    {
-     "h": "07:49",
-     "jogo": "Porto Alegre x Avellaneda",
-     "odd": 2.62
-    },
-    {
-     "h": "08:43",
-     "jogo": "Guayaquil x Santos",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "seq RRRGR",
-   "alvo": {
-    "h": "07:43",
-    "jogo": "Bogota x Buenos Aires",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1785225391836
-   },
-   "iniciadoEm": 1785225391836
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785213341427,
    "premier": 1785224045730,
@@ -433,12 +403,18 @@
  },
  "ambas": {
   "saldo": -19.2,
-  "ciclos": 578,
+  "ciclos": 579,
   "greens": 409,
   "redsCiclo": 62,
   "aborts": 0,
-  "descartes": 107,
+  "descartes": 108,
   "historico": [
+   {
+    "quando": "2026-07-28T08:20:50.132Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-28T08:10:29.728Z",
     "resultado": "GREEN_OBS",
