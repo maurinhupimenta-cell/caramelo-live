@@ -157,12 +157,18 @@
  },
  "o25": {
   "saldo": -118.8,
-  "ciclos": 540,
+  "ciclos": 541,
   "greens": 343,
   "redsCiclo": 93,
   "aborts": 0,
-  "descartes": 104,
+  "descartes": 105,
   "historico": [
+   {
+    "quando": "2026-07-28T09:09:52.235Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :28) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T09:07:12.136Z",
     "resultado": "DESCARTADO",
@@ -399,30 +405,30 @@
    "apostado": 0,
    "plano": [
     {
-     "h": "07:49",
-     "jogo": "Porto Alegre x Avellaneda",
-     "odd": 2.62
+     "h": "09:19",
+     "jogo": "Guayaquil x Sao Paulo",
+     "odd": 2.02
     },
     {
-     "h": "09:04",
-     "jogo": "Asuncion x Penarol",
-     "odd": 2.45
+     "h": "09:28",
+     "jogo": "La Plata x Agua Branca",
+     "odd": 2.4
     },
     {
-     "h": "09:07",
-     "jogo": "Avellaneda x Bogota",
-     "odd": 2.6
+     "h": "09:40",
+     "jogo": "Avellaneda x Quito",
+     "odd": 2.35
     }
    ],
-   "gatilho": "odd 2.45",
+   "gatilho": "coluna :28",
    "alvo": {
-    "h": "07:49",
-    "jogo": "Porto Alegre x Avellaneda",
-    "odd": 2.62,
+    "h": "09:19",
+    "jogo": "Guayaquil x Sao Paulo",
+    "odd": 2.02,
     "unidades": 1,
-    "desde": 1785228731836
+    "desde": 1785229793536
    },
-   "iniciadoEm": 1785228731836
+   "iniciadoEm": 1785229793536
   },
   "cooldown": {
    "copa": 1785213341427,
@@ -447,10 +453,10 @@
    "2026-07-28": 2.1
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 12,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":28",
+   "n": 8,
+   "start": 3
   },
   "_obs": {
    "copa": {
