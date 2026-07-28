@@ -157,12 +157,18 @@
  },
  "o25": {
   "saldo": -122.8,
-  "ciclos": 530,
+  "ciclos": 531,
   "greens": 340,
   "redsCiclo": 93,
   "aborts": 0,
-  "descartes": 97,
+  "descartes": 98,
   "historico": [
+   {
+    "quando": "2026-07-28T05:30:23.529Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho placar empate 2-2) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T04:49:53.232Z",
     "resultado": "RED_CICLO",
@@ -399,6 +405,10 @@
    "copa": {
     "desde": 1785188808341,
     "gatilho": "odd 2.15"
+   },
+   "premier": {
+    "desde": 1785216623528,
+    "gatilho": "placar empate 2-2"
    }
   }
  },
