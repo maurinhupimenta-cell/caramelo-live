@@ -560,8 +560,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "14:47",
@@ -581,13 +581,21 @@
    ],
    "gatilho": "time Albânia",
    "alvo": {
-    "h": "14:47",
-    "jogo": "República Tcheca x Sérvia",
-    "odd": 2.75,
-    "unidades": 1,
-    "desde": 1785246228736
+    "h": "14:50",
+    "jogo": "Espanha x Albânia",
+    "odd": 2.45,
+    "unidades": 2,
+    "desde": 1785246585430
    },
-   "iniciadoEm": 1785246228736
+   "iniciadoEm": 1785246228736,
+   "tiros": [
+    {
+     "h": "14:47",
+     "jogo": "República Tcheca x Sérvia",
+     "odd": 2.75,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785213341427,
@@ -1093,7 +1101,37 @@
   "consumidas": {
    "super": 1785246545624
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:50",
+     "jogo": "Espanha x Albânia",
+     "odd": 2.1
+    },
+    {
+     "h": "14:53",
+     "jogo": "Sérvia x Escócia",
+     "odd": 2.05
+    },
+    {
+     "h": "14:56",
+     "jogo": "Ucrânia x Geórgia",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "coluna :53",
+   "alvo": {
+    "h": "14:50",
+    "jogo": "Espanha x Albânia",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785246547325
+   },
+   "iniciadoEm": 1785246547325
+  },
   "cooldown": {
    "euro": 1785220132126,
    "super": 1785246545624,
