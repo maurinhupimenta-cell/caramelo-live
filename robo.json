@@ -546,26 +546,27 @@
    "2026-07-28": 2.1
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 9,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":31",
+   "n": 11,
+   "start": 3
   },
-  "_obs": {
-   "super": {
-    "desde": 1785238272529,
-    "gatilho": "coluna :31"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -24.8,
-  "ciclos": 602,
+  "ciclos": 603,
   "greens": 410,
   "redsCiclo": 63,
   "aborts": 0,
-  "descartes": 129,
+  "descartes": 130,
   "historico": [
+   {
+    "quando": "2026-07-28T11:34:12.428Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :34) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T11:28:14.129Z",
     "resultado": "DESCARTADO",
@@ -993,11 +994,16 @@
    "2026-07-28": -3.2
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":30",
-   "n": 12,
+   "tipo": "seq",
+   "chave": "RGRG",
+   "n": 13,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1785238452427,
+    "gatilho": "coluna :34"
+   }
+  }
  }
 }
