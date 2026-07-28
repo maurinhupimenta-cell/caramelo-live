@@ -664,12 +664,18 @@
  },
  "ambas": {
   "saldo": -42.9,
-  "ciclos": 633,
+  "ciclos": 634,
   "greens": 420,
   "redsCiclo": 67,
   "aborts": 0,
-  "descartes": 146,
+  "descartes": 147,
   "historico": [
+   {
+    "quando": "2026-07-28T18:48:52.433Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :56) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T18:45:52.130Z",
     "resultado": "GREEN_OBS",
@@ -1230,7 +1236,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1785260874532,
    "premier": 1785261615125
   },
   "ciclo": {
@@ -1288,9 +1293,14 @@
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Suíça",
-   "n": 17,
-   "start": 3
+   "n": 16,
+   "start": 2
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1785264532433,
+    "gatilho": "coluna :56"
+   }
+  }
  }
 }
