@@ -396,13 +396,19 @@
   }
  },
  "ambas": {
-  "saldo": -20.2,
-  "ciclos": 575,
-  "greens": 408,
+  "saldo": -19.2,
+  "ciclos": 576,
+  "greens": 409,
   "redsCiclo": 62,
   "aborts": 0,
   "descartes": 105,
   "historico": [
+   {
+    "quando": "2026-07-28T07:42:19.930Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Aston x Liverpool @2 (tiro 3) · gatilho: time Brighton"
+   },
    {
     "quando": "2026-07-28T07:11:54.626Z",
     "resultado": "DESCARTADO",
@@ -614,56 +620,14 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "07:54",
-     "jogo": "West Ham x Everton",
-     "odd": 2.05
-    },
-    {
-     "h": "07:57",
-     "jogo": "Watford x Brighton",
-     "odd": 1.87
-    },
-    {
-     "h": "08:33",
-     "jogo": "Aston x Liverpool",
-     "odd": 2
-    }
-   ],
-   "gatilho": "time Brighton",
-   "alvo": {
-    "h": "08:33",
-    "jogo": "Aston x Liverpool",
-    "odd": 2,
-    "unidades": 4,
-    "desde": 1785224057933
-   },
-   "iniciadoEm": 1785223974639,
-   "tiros": [
-    {
-     "h": "07:54",
-     "jogo": "West Ham x Everton",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "07:57",
-     "jogo": "Watford x Brighton",
-     "odd": 1.87,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1785224539737
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785220132126,
    "super": 1785217757137,
-   "premier": 1785219457929,
+   "premier": 1785224539737,
    "copa": 1785218212833
   },
   "dias": {
@@ -679,11 +643,11 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": 1.4
+   "2026-07-28": 2.4
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":33",
+   "chave": ":39",
    "n": 8,
    "start": 1
   },
