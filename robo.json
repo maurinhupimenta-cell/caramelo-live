@@ -576,7 +576,37 @@
   "consumidas": {
    "euro": 1785246965627
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:28",
+     "jogo": "La Boca x Penarol",
+     "odd": 2.6
+    },
+    {
+     "h": "15:31",
+     "jogo": "Medellin x Montevideo",
+     "odd": 2.25
+    },
+    {
+     "h": "15:34",
+     "jogo": "Santos x Belo Horizonte",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "coluna :31",
+   "alvo": {
+    "h": "15:28",
+    "jogo": "La Boca x Penarol",
+    "odd": 2.6,
+    "unidades": 1,
+    "desde": 1785249702330
+   },
+   "iniciadoEm": 1785249702330
+  },
   "cooldown": {
    "copa": 1785213341427,
    "premier": 1785224045730,
@@ -605,12 +635,7 @@
    "n": 14,
    "start": 1
   },
-  "_obs": {
-   "super": {
-    "desde": 1785249655972,
-    "gatilho": "coluna :31"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -29.1,
