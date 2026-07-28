@@ -1306,7 +1306,37 @@
    "premier": 1785267170867,
    "super": 1785269579960
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:34",
+     "jogo": "Nova Zelândia x Coreia do Sul",
+     "odd": 2.05
+    },
+    {
+     "h": "21:37",
+     "jogo": "Suíça x Uruguai",
+     "odd": 1.98
+    },
+    {
+     "h": "21:40",
+     "jogo": "Portugal x Tunísia",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time Suíça",
+   "alvo": {
+    "h": "21:34",
+    "jogo": "Nova Zelândia x Coreia do Sul",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785270309861
+   },
+   "iniciadoEm": 1785270309861
+  },
   "cooldown": {
    "euro": 1785266759231,
    "super": 1785269579960,
@@ -1329,9 +1359,9 @@
    "2026-07-28": -23.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":25",
-   "n": 19,
+   "tipo": "time",
+   "chave": "Suíça",
+   "n": 18,
    "start": 3
   },
   "_obs": {}
