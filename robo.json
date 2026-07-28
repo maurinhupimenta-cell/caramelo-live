@@ -157,12 +157,18 @@
  },
  "o25": {
   "saldo": -118.8,
-  "ciclos": 539,
+  "ciclos": 540,
   "greens": 343,
   "redsCiclo": 93,
   "aborts": 0,
-  "descartes": 103,
+  "descartes": 104,
   "historico": [
+   {
+    "quando": "2026-07-28T09:07:12.136Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-28T08:52:10.037Z",
     "resultado": "GREEN_OBS",
@@ -734,35 +740,35 @@
   ],
   "consumidas": {},
   "ciclo": {
-   "liga": "euro",
+   "liga": "super",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "07:44",
-     "jogo": "Hungria x Países Baixos",
-     "odd": 1.93
+     "h": "07:49",
+     "jogo": "Porto Alegre x Avellaneda",
+     "odd": 2.2
     },
     {
-     "h": "08:29",
-     "jogo": "Países Baixos x Escócia",
-     "odd": 1.86
+     "h": "09:19",
+     "jogo": "Guayaquil x Sao Paulo",
+     "odd": 1.8
     },
     {
-     "h": "08:32",
-     "jogo": "Inglaterra x Eslováquia",
-     "odd": 1.98
+     "h": "09:22",
+     "jogo": "Agua Branca x Asuncion",
+     "odd": 2
     }
    ],
-   "gatilho": "seq RRRRR",
+   "gatilho": "time Guayaquil",
    "alvo": {
-    "h": "07:44",
-    "jogo": "Hungria x Países Baixos",
-    "odd": 1.93,
+    "h": "07:49",
+    "jogo": "Porto Alegre x Avellaneda",
+    "odd": 2.2,
     "unidades": 1,
-    "desde": 1785228672327
+    "desde": 1785229574330
    },
-   "iniciadoEm": 1785228672327
+   "iniciadoEm": 1785229574330
   },
   "cooldown": {
    "euro": 1785220132126,
