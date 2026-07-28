@@ -1360,7 +1360,37 @@
    "premier": 1785275796164,
    "super": 1785278084660
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:43",
+     "jogo": "Marrocos x Uruguai",
+     "odd": 1.98
+    },
+    {
+     "h": "23:46",
+     "jogo": "Alemanha x Suíça",
+     "odd": 1.95
+    },
+    {
+     "h": "23:49",
+     "jogo": "Colômbia x Gana",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "time Suíça",
+   "alvo": {
+    "h": "23:43",
+    "jogo": "Marrocos x Uruguai",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785278206360
+   },
+   "iniciadoEm": 1785278206360
+  },
   "cooldown": {
    "euro": 1785273830564,
    "super": 1785278084660,
@@ -1383,10 +1413,10 @@
    "2026-07-28": -17.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.25",
-   "n": 10,
-   "start": 2
+   "tipo": "time",
+   "chave": "Suíça",
+   "n": 18,
+   "start": 3
   },
   "_obs": {}
  }
