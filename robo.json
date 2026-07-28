@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -122.8,
-  "ciclos": 531,
-  "greens": 340,
+  "saldo": -121.6,
+  "ciclos": 532,
+  "greens": 341,
   "redsCiclo": 93,
   "aborts": 0,
   "descartes": 98,
   "historico": [
+   {
+    "quando": "2026-07-28T05:40:43.333Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Buenos Aires x La Boca @2.2 (tiro 1) · gatilho: odd 2.15"
+   },
    {
     "quando": "2026-07-28T05:30:23.529Z",
     "resultado": "GREEN_OBS",
@@ -339,44 +345,15 @@
    }
   ],
   "consumidas": {
-   "euro": 1785214193128
+   "euro": 1785214193128,
+   "super": 1785217243228
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:37",
-     "jogo": "Buenos Aires x La Boca",
-     "odd": 2.2
-    },
-    {
-     "h": "06:40",
-     "jogo": "Rio de Janeiro x Agua Branca",
-     "odd": 2.15
-    },
-    {
-     "h": "05:43",
-     "jogo": "Itaquera x Quito",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "odd 2.15",
-   "alvo": {
-    "h": "06:37",
-    "jogo": "Buenos Aires x La Boca",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785216477230
-   },
-   "iniciadoEm": 1785216477230
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785213341427,
    "premier": 1785206523034,
    "euro": 1785214193128,
-   "super": 1785211553935
+   "super": 1785217243228
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -392,12 +369,12 @@
    "2026-07-25": 21,
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
-   "2026-07-28": -1.9
+   "2026-07-28": -0.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.15",
-   "n": 8,
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 9,
    "start": 1
   },
   "_obs": {
@@ -654,15 +631,10 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Lima",
-   "n": 12,
+   "chave": "Suécia",
+   "n": 9,
    "start": 2
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785216843038,
-    "gatilho": "seq GRRR"
-   }
-  }
+  "_obs": {}
  }
 }
