@@ -598,13 +598,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -30,
-  "ciclos": 618,
-  "greens": 412,
+  "saldo": -29.1,
+  "ciclos": 619,
+  "greens": 413,
   "redsCiclo": 64,
   "aborts": 0,
   "descartes": 142,
   "historico": [
+   {
+    "quando": "2026-07-28T13:59:43.630Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Brighton x Southampton @1.93 (tiro 2) · gatilho: odd 1.8"
+   },
    {
     "quando": "2026-07-28T13:53:04.627Z",
     "resultado": "GREEN",
@@ -1076,51 +1082,14 @@
   ],
   "consumidas": {
    "super": 1785246545624,
-   "euro": 1785246784429
+   "euro": 1785246784429,
+   "premier": 1785247183525
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "14:54",
-     "jogo": "Newcastle x City",
-     "odd": 1.8
-    },
-    {
-     "h": "14:57",
-     "jogo": "Brighton x Southampton",
-     "odd": 1.93
-    },
-    {
-     "h": "15:00",
-     "jogo": "Islington x Everton",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "odd 1.8",
-   "alvo": {
-    "h": "14:57",
-    "jogo": "Brighton x Southampton",
-    "odd": 1.93,
-    "unidades": 2,
-    "desde": 1785247001032
-   },
-   "iniciadoEm": 1785246786527,
-   "tiros": [
-    {
-     "h": "14:54",
-     "jogo": "Newcastle x City",
-     "odd": 1.8,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785246784429,
    "super": 1785246545624,
-   "premier": 1785242686024,
+   "premier": 1785247183525,
    "copa": 1785234490036
   },
   "dias": {
@@ -1136,7 +1105,7 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -8.4
+   "2026-07-28": -7.5
   },
   "_gatilhoAtual": {
    "tipo": "odd",
