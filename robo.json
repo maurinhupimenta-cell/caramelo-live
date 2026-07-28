@@ -626,8 +626,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "19:37",
@@ -647,13 +647,21 @@
    ],
    "gatilho": "odd 2.45",
    "alvo": {
-    "h": "19:37",
-    "jogo": "Irã x Gana",
-    "odd": 2.62,
-    "unidades": 1,
-    "desde": 1785263333127
+    "h": "19:40",
+    "jogo": "Tunísia x México",
+    "odd": 2.45,
+    "unidades": 2,
+    "desde": 1785264171736
    },
-   "iniciadoEm": 1785263333127
+   "iniciadoEm": 1785263333127,
+   "tiros": [
+    {
+     "h": "19:37",
+     "jogo": "Irã x Gana",
+     "odd": 2.62,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785255172126,
@@ -681,7 +689,7 @@
    "tipo": "odd",
    "chave": "2.45",
    "n": 12,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
