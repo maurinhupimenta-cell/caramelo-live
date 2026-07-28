@@ -690,13 +690,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -43.5,
-  "ciclos": 642,
-  "greens": 426,
+  "saldo": -42.7,
+  "ciclos": 643,
+  "greens": 427,
   "redsCiclo": 68,
   "aborts": 0,
   "descartes": 148,
   "historico": [
+   {
+    "quando": "2026-07-28T21:23:50.757Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "euro · França x Espanha @1.8 (tiro 1) · gatilho: coluna :23"
+   },
    {
     "quando": "2026-07-28T20:41:49.564Z",
     "resultado": "GREEN",
@@ -1312,41 +1318,12 @@
   ],
   "consumidas": {
    "copa": 1785271030863,
-   "premier": 1785271309367
+   "premier": 1785271309367,
+   "euro": 1785273830564
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:20",
-     "jogo": "França x Espanha",
-     "odd": 1.8
-    },
-    {
-     "h": "22:23",
-     "jogo": "Hungria x Sérvia",
-     "odd": 2.15
-    },
-    {
-     "h": "22:26",
-     "jogo": "Inglaterra x Áustria",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "coluna :23",
-   "alvo": {
-    "h": "22:20",
-    "jogo": "França x Espanha",
-    "odd": 1.8,
-    "unidades": 1,
-    "desde": 1785273110366
-   },
-   "iniciadoEm": 1785273110366
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785266759231,
+   "euro": 1785273830564,
    "super": 1785269579960,
    "premier": 1785271309367,
    "copa": 1785271030863
@@ -1364,13 +1341,13 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -21.9
+   "2026-07-28": -21.1
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":23",
-   "n": 22,
-   "start": 3
+   "chave": ":25",
+   "n": 19,
+   "start": 1
   },
   "_obs": {}
  }
