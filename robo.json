@@ -604,8 +604,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "07:20",
@@ -625,13 +625,21 @@
    ],
    "gatilho": "seq GRRG",
    "alvo": {
-    "h": "07:20",
-    "jogo": "Geórgia x Países Baixos",
+    "h": "07:23",
+    "jogo": "Hungria x Inglaterra",
     "odd": 1.93,
-    "unidades": 1,
-    "desde": 1785219459736
+    "unidades": 2,
+    "desde": 1785219770627
    },
-   "iniciadoEm": 1785219459736
+   "iniciadoEm": 1785219459736,
+   "tiros": [
+    {
+     "h": "07:20",
+     "jogo": "Geórgia x Países Baixos",
+     "odd": 1.93,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785214376428,
@@ -655,8 +663,8 @@
    "2026-07-28": 0.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRG",
+   "tipo": "odd",
+   "chave": "1.87",
    "n": 9,
    "start": 1
   },
