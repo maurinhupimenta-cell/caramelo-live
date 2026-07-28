@@ -343,13 +343,19 @@
   }
  },
  "ambas": {
-  "saldo": -21.6,
-  "ciclos": 563,
-  "greens": 399,
+  "saldo": -20.4,
+  "ciclos": 564,
+  "greens": 400,
   "redsCiclo": 61,
   "aborts": 0,
   "descartes": 103,
   "historico": [
+   {
+    "quando": "2026-07-28T03:11:51.835Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Penarol x Itaquera @2.1 (tiro 2) · gatilho: time Itaquera"
+   },
    {
     "quando": "2026-07-28T02:17:55.129Z",
     "resultado": "GREEN",
@@ -490,50 +496,13 @@
    }
   ],
   "consumidas": {
-   "premier": 1785205074931
+   "premier": 1785205074931,
+   "super": 1785208311732
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "04:04",
-     "jogo": "Rio de Janeiro x La Boca",
-     "odd": 2.02
-    },
-    {
-     "h": "04:07",
-     "jogo": "Penarol x Itaquera",
-     "odd": 2.1
-    },
-    {
-     "h": "04:10",
-     "jogo": "Medellin x Rio de Janeiro",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "time Itaquera",
-   "alvo": {
-    "h": "04:07",
-    "jogo": "Penarol x Itaquera",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1785208073124
-   },
-   "iniciadoEm": 1785207410931,
-   "tiros": [
-    {
-     "h": "04:04",
-     "jogo": "Rio de Janeiro x La Boca",
-     "odd": 2.02,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785192461007,
-   "super": 1785202731829,
+   "super": 1785208311732,
    "premier": 1785205074931,
    "copa": 1785190860182
   },
@@ -549,13 +518,14 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": 6
+   "2026-07-27": 6,
+   "2026-07-28": 1.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Itaquera",
    "n": 11,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
