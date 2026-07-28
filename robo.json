@@ -544,21 +544,33 @@
    "2026-07-28": 2.1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":31",
-   "n": 11,
-   "start": 3
+   "tipo": "seq",
+   "chave": "GGGR",
+   "n": 9,
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -24.8,
-  "ciclos": 603,
+  "ciclos": 605,
   "greens": 410,
   "redsCiclo": 63,
   "aborts": 0,
-  "descartes": 130,
+  "descartes": 132,
   "historico": [
+   {
+    "quando": "2026-07-28T11:43:31.824Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho odd 1.87) — liga REARMADA"
+   },
+   {
+    "quando": "2026-07-28T11:43:30.326Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-28T11:34:12.428Z",
     "resultado": "GREEN_OBS",
@@ -939,37 +951,7 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "08:32",
-     "jogo": "Inglaterra x Eslováquia",
-     "odd": 1.98
-    },
-    {
-     "h": "12:26",
-     "jogo": "Eslovênia x Suíça",
-     "odd": 2.1
-    },
-    {
-     "h": "12:29",
-     "jogo": "Romênia x Portugal",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "coluna :26",
-   "alvo": {
-    "h": "08:32",
-    "jogo": "Inglaterra x Eslováquia",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785238109433
-   },
-   "iniciadoEm": 1785238109433
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785220132126,
    "super": 1785217757137,
@@ -992,11 +974,16 @@
    "2026-07-28": -3.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRG",
-   "n": 13,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.87",
+   "n": 14,
+   "start": 3
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1785239011824,
+    "gatilho": "odd 1.87"
+   }
+  }
  }
 }
