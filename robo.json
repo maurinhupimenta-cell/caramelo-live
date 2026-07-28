@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -108.4,
-  "ciclos": 522,
-  "greens": 336,
+  "saldo": -106.9,
+  "ciclos": 523,
+  "greens": 337,
   "redsCiclo": 90,
   "aborts": 0,
   "descartes": 96,
   "historico": [
+   {
+    "quando": "2026-07-28T02:30:52.725Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "copa · Iraque x Croácia @2.55 (tiro 1) · gatilho: odd 2.4"
+   },
    {
     "quando": "2026-07-28T00:52:00.782Z",
     "resultado": "GREEN",
@@ -284,40 +290,12 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:28",
-     "jogo": "Iraque x Croácia",
-     "odd": 2.55
-    },
-    {
-     "h": "03:31",
-     "jogo": "Nova Zelândia x Senegal",
-     "odd": 2.4
-    },
-    {
-     "h": "03:34",
-     "jogo": "Marrocos x EUA",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "odd 2.4",
-   "alvo": {
-    "h": "03:28",
-    "jogo": "Iraque x Croácia",
-    "odd": 2.55,
-    "unidades": 1,
-    "desde": 1785205222433
-   },
-   "iniciadoEm": 1785205222433
+  "consumidas": {
+   "copa": 1785205852328
   },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785199920588,
+   "copa": 1785205852328,
    "premier": 1785182379795,
    "euro": 1785187378397,
    "super": 1785191818161
@@ -335,13 +313,13 @@
    "2026-07-24": -1.7,
    "2026-07-25": 21,
    "2026-07-26": -3.3,
-   "2026-07-27": -62.7
+   "2026-07-27": -61.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.4",
    "n": 12,
-   "start": 3
+   "start": 2
   },
   "_obs": {
    "copa": {
