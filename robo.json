@@ -519,12 +519,18 @@
  },
  "ambas": {
   "saldo": -24.8,
-  "ciclos": 601,
+  "ciclos": 602,
   "greens": 410,
   "redsCiclo": 63,
   "aborts": 0,
-  "descartes": 128,
+  "descartes": 129,
   "historico": [
+   {
+    "quando": "2026-07-28T11:28:14.129Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-28T11:13:11.827Z",
     "resultado": "GREEN_OBS",
@@ -894,35 +900,35 @@
   ],
   "consumidas": {},
   "ciclo": {
-   "liga": "super",
+   "liga": "euro",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "07:43",
-     "jogo": "Bogota x Buenos Aires",
-     "odd": 2
+     "h": "08:32",
+     "jogo": "Inglaterra x Eslováquia",
+     "odd": 1.98
     },
     {
-     "h": "07:49",
-     "jogo": "Porto Alegre x Avellaneda",
-     "odd": 2.2
+     "h": "12:26",
+     "jogo": "Eslovênia x Suíça",
+     "odd": 2.1
     },
     {
-     "h": "09:19",
-     "jogo": "Guayaquil x Sao Paulo",
-     "odd": 1.8
+     "h": "12:29",
+     "jogo": "Romênia x Portugal",
+     "odd": 1.9
     }
    ],
-   "gatilho": "seq RRRRG",
+   "gatilho": "coluna :26",
    "alvo": {
-    "h": "07:43",
-    "jogo": "Bogota x Buenos Aires",
-    "odd": 2,
+    "h": "08:32",
+    "jogo": "Inglaterra x Eslováquia",
+    "odd": 1.98,
     "unidades": 1,
-    "desde": 1785237194027
+    "desde": 1785238109433
    },
-   "iniciadoEm": 1785237194027
+   "iniciadoEm": 1785238109433
   },
   "cooldown": {
    "euro": 1785220132126,
