@@ -494,8 +494,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "04:04",
@@ -515,13 +515,21 @@
    ],
    "gatilho": "time Itaquera",
    "alvo": {
-    "h": "04:04",
-    "jogo": "Rio de Janeiro x La Boca",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1785207410931
+    "h": "04:07",
+    "jogo": "Penarol x Itaquera",
+    "odd": 2.1,
+    "unidades": 2,
+    "desde": 1785208073124
    },
-   "iniciadoEm": 1785207410931
+   "iniciadoEm": 1785207410931,
+   "tiros": [
+    {
+     "h": "04:04",
+     "jogo": "Rio de Janeiro x La Boca",
+     "odd": 2.02,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785192461007,
@@ -547,7 +555,7 @@
    "tipo": "time",
    "chave": "Itaquera",
    "n": 11,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
