@@ -176,12 +176,18 @@
  },
  "o25": {
   "saldo": -125.8,
-  "ciclos": 566,
+  "ciclos": 567,
   "greens": 343,
   "redsCiclo": 94,
   "aborts": 0,
-  "descartes": 129,
+  "descartes": 130,
   "historico": [
+   {
+    "quando": "2026-07-28T14:40:55.972Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :31) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T14:40:53.426Z",
     "resultado": "DESCARTADO",
@@ -570,37 +576,7 @@
   "consumidas": {
    "euro": 1785246965627
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:28",
-     "jogo": "La Boca x Penarol",
-     "odd": 2.6
-    },
-    {
-     "h": "15:31",
-     "jogo": "Medellin x Montevideo",
-     "odd": 2.25
-    },
-    {
-     "h": "15:34",
-     "jogo": "Santos x Belo Horizonte",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "coluna :31",
-   "alvo": {
-    "h": "15:28",
-    "jogo": "La Boca x Penarol",
-    "odd": 2.6,
-    "unidades": 1,
-    "desde": 1785248751434
-   },
-   "iniciadoEm": 1785248751434
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785213341427,
    "premier": 1785224045730,
@@ -629,7 +605,12 @@
    "n": 14,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1785249655972,
+    "gatilho": "coluna :31"
+   }
+  }
  },
  "ambas": {
   "saldo": -29.1,
