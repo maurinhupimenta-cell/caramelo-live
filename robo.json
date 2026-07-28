@@ -348,7 +348,45 @@
    "euro": 1785214193128,
    "super": 1785217243228
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "06:42",
+     "jogo": "Burnley x Aston",
+     "odd": 2.25
+    },
+    {
+     "h": "06:45",
+     "jogo": "Everton x Chelsea",
+     "odd": 2.15
+    },
+    {
+     "h": "06:48",
+     "jogo": "Southampton x Norwich",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "placar empate 2-2",
+   "alvo": {
+    "h": "06:45",
+    "jogo": "Everton x Chelsea",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1785217490025
+   },
+   "iniciadoEm": 1785217244727,
+   "tiros": [
+    {
+     "h": "06:42",
+     "jogo": "Burnley x Aston",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1785213341427,
    "premier": 1785206523034,
@@ -633,7 +671,7 @@
    "tipo": "time",
    "chave": "Suécia",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
