@@ -588,7 +588,37 @@
   "consumidas": {
    "super": 1785250073532
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:04",
+     "jogo": "Egito x Haiti",
+     "odd": 2.07
+    },
+    {
+     "h": "16:07",
+     "jogo": "Suíça x África do Sul",
+     "odd": 2.5
+    },
+    {
+     "h": "16:10",
+     "jogo": "Inglaterra x Arábia Saudita",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time Suíça",
+   "alvo": {
+    "h": "16:04",
+    "jogo": "Egito x Haiti",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1785250974831
+   },
+   "iniciadoEm": 1785250974831
+  },
   "cooldown": {
    "copa": 1785213341427,
    "premier": 1785224045730,
@@ -612,26 +642,27 @@
    "2026-07-28": -3.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":31",
-   "n": 14,
+   "tipo": "time",
+   "chave": "Suíça",
+   "n": 17,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785250553732,
-    "gatilho": "time Suíça"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -28.1,
-  "ciclos": 621,
+  "ciclos": 622,
   "greens": 414,
   "redsCiclo": 64,
   "aborts": 0,
-  "descartes": 143,
+  "descartes": 144,
   "historico": [
+   {
+    "quando": "2026-07-28T15:04:55.226Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho seq RRRGG) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T15:00:56.030Z",
     "resultado": "GREEN",
@@ -1180,6 +1211,11 @@
    "n": 8,
    "start": 3
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1785251095225,
+    "gatilho": "seq RRRGG"
+   }
+  }
  }
 }
