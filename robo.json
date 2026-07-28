@@ -175,13 +175,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -121.7,
-  "ciclos": 584,
-  "greens": 354,
+  "saldo": -120.7,
+  "ciclos": 585,
+  "greens": 355,
   "redsCiclo": 96,
   "aborts": 0,
   "descartes": 134,
   "historico": [
+   {
+    "quando": "2026-07-28T22:49:45.875Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Inglaterra x Países Baixos @1.98 (tiro 2) · gatilho: odd 1.98"
+   },
    {
     "quando": "2026-07-28T22:27:48.264Z",
     "resultado": "GREEN",
@@ -677,51 +683,14 @@
   ],
   "consumidas": {
    "super": 1785275385869,
-   "premier": 1785277668066
+   "premier": 1785277668066,
+   "euro": 1785278985762
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "23:44",
-     "jogo": "Eslováquia x Albânia",
-     "odd": 2.7
-    },
-    {
-     "h": "23:47",
-     "jogo": "Inglaterra x Países Baixos",
-     "odd": 1.98
-    },
-    {
-     "h": "23:50",
-     "jogo": "Croácia x Espanha",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "odd 1.98",
-   "alvo": {
-    "h": "23:47",
-    "jogo": "Inglaterra x Países Baixos",
-    "odd": 1.98,
-    "unidades": 2,
-    "desde": 1785278929163
-   },
-   "iniciadoEm": 1785278447962,
-   "tiros": [
-    {
-     "h": "23:44",
-     "jogo": "Eslováquia x Albânia",
-     "odd": 2.7,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785275010762,
    "premier": 1785277668066,
-   "euro": 1785266756833,
+   "euro": 1785278985762,
    "super": 1785275385869
   },
   "dias": {
@@ -738,7 +707,7 @@
    "2026-07-25": 21,
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
-   "2026-07-28": -0.8
+   "2026-07-28": 0.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
