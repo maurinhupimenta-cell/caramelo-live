@@ -2831,6 +2831,86 @@ app.get("/api/leitor/:liga", (req, res) => {
   catch (e) { res.status(500).json({ erro: e.message }); }
 });
 
+// ===== CACADOR DE CRUZAMENTOS (spec do usuario): nada e fixo no virtual, entao ele DESCOBRE
+// sozinho quais combinacoes estao 100% no dia (00h -> 23:59), cruzando odd x time x placar x
+// coluna, e testando ATRASO: o gatilho de agora pode chamar o pagamento em +0/1/2/3/4 horas.
+// Regra dura: minimo 8 casos e 100% cravado. Devolve tambem quantos testes rodaram, porque
+// milhares de combinacoes produzem 100% por acaso - o numero de testes e parte da leitura.
+const cruzaCache = {};
+app.get("/api/cruzamentos/:liga", (req, res) => {
+  try {
+    const liga = req.params.liga, mkt = req.query.mkt || "o35";
+    const ck = liga + "|" + mkt, now = Date.now();
+    if (cruzaCache[ck] && now - cruzaCache[ck].ts < 60000) return res.json(cruzaCache[ck].out);
+    const d = store[liga];
+    if (!d || !d.games || d.games.length < 60) return res.json({ achados: [], testes: 0, erro: "base insuficiente" });
+    const games = listaCheia(d);
+    // dia do jogo: 00h -> 23:59 pelo relogio do jogo
+    let idxDia = 0;
+    for (let i = 1; i < games.length; i++) {
+      const h1 = parseInt((games[i].horario || "").split(":")[0]);
+      const h0 = parseInt((games[i - 1].horario || "").split(":")[0]);
+      if (!isNaN(h1) && !isNaN(h0) && h1 < h0 - 12) idxDia = i;
+    }
+    const dia = games.slice(idxDia);
+    if (dia.length < 60) return res.json({ achados: [], testes: 0, erro: "dia ainda curto" });
+    const k0 = mkt === "ambas" ? "ambs" : mkt;
+    const paga = g => pays(g, mkt);
+    // ciclo de 3 tiros a partir de um ponto
+    const cicloPagou = ini => { for (let k = ini; k < Math.min(ini + 3, dia.length); k++) if (paga(dia[k])) return true; return (ini + 3 <= dia.length) ? false : null; };
+    // atributos de cada jogo
+    const catPl = g => { const a = g.a || 0, b = g.b || 0, t = a + b, m = Math.max(a, b); return t === 0 ? "0-0" : t === 1 ? "1gol" : m >= 3 ? "goleada" : a === b ? ("empate" + a) : ("acima1-0(" + Math.max(a,b) + "-" + Math.min(a,b) + ")"); };
+    const atributos = g => {
+      const L = [];
+      const od = g.odds && g.odds[k0]; if (od > 1.01) L.push("odd@" + od.toFixed(2));
+      if (g.a != null) L.push("placar:" + catPl(g));
+      const mm = (g.horario || "").split(":")[1]; if (mm) L.push("col::" + mm);
+      const nm = (g.nome || ""); const par = nm.split(/\s+x\s+/i);
+      if (par[0]) L.push("time:" + par[0].trim());
+      if (par[1]) L.push("time:" + par[1].trim());
+      return L;
+    };
+    // indices por chave simples e por CRUZAMENTO (par de atributos no mesmo jogo)
+    const ondeAparece = {};
+    dia.forEach((g, i) => {
+      const A = atributos(g);
+      for (let x = 0; x < A.length; x++) {
+        (ondeAparece[A[x]] = ondeAparece[A[x]] || []).push(i);
+        for (let y = x + 1; y < A.length; y++) {
+          if (A[x].split(":")[0] === A[y].split(":")[0]) continue; // nao cruza tipo com ele mesmo
+          const key = A[x] + " + " + A[y];
+          (ondeAparece[key] = ondeAparece[key] || []).push(i);
+        }
+      }
+    });
+    const JOGOS_HORA = 20;
+    const ATRASOS = [{ h: "agora", n: 1 }, { h: "+1h", n: JOGOS_HORA }, { h: "+2h", n: 2 * JOGOS_HORA }, { h: "+3h", n: 3 * JOGOS_HORA }, { h: "+4h", n: 4 * JOGOS_HORA }];
+    let testes = 0;
+    const achados = [];
+    for (const [chave, idxs] of Object.entries(ondeAparece)) {
+      if (idxs.length < 8) continue;
+      for (const at of ATRASOS) {
+        let n = 0, h = 0;
+        for (const i of idxs) {
+          const r = cicloPagou(i + at.n);
+          if (r === null) continue;
+          n++; if (r) h++;
+        }
+        testes++;
+        if (n >= 8 && h === n) achados.push({ chave, quando: at.h, n, cruzado: chave.includes(" + ") });
+      }
+    }
+    // regua do dia para comparacao honesta
+    let rn = 0, rh = 0;
+    for (let i = 0; i + 3 <= dia.length; i++) { rn++; if (cicloPagou(i)) rh++; }
+    const regua = rn ? Math.round(rh / rn * 1000) / 10 : null;
+    achados.sort((a, b) => (b.cruzado - a.cruzado) || (b.n - a.n));
+    const out = { liga, mkt, jogosNoDia: dia.length, desde: (dia[0] || {}).horario || "", regua, testes, achados: achados.slice(0, 25) };
+    cruzaCache[ck] = { ts: now, out };
+    res.json(out);
+  } catch (e) { res.status(500).json({ erro: e.message, linha: String(e.stack || "").split("\n")[1] }); }
+});
+
 app.get("/api/padroes/:liga", (req, res) => {
   try { res.json(calculaPadroes(req.params.liga, req.query.mkt || "o35")); }
   catch (e) { res.status(500).json({ erro: e.message }); }
