@@ -846,8 +846,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "11:19",
@@ -867,11 +867,11 @@
    ],
    "gatilho": "time Uruguai",
    "alvo": {
-    "h": "11:22",
-    "jogo": "Uruguai x Equador",
-    "odd": 1.9,
-    "unidades": 2,
-    "desde": 1785234230330
+    "h": "11:25",
+    "jogo": "Japão x Cabo Verde",
+    "odd": 2.1,
+    "unidades": 4,
+    "desde": 1785234369724
    },
    "iniciadoEm": 1785234052628,
    "tiros": [
@@ -880,6 +880,12 @@
      "jogo": "Turquia x Inglaterra",
      "odd": 1.98,
      "unidades": 1
+    },
+    {
+     "h": "11:22",
+     "jogo": "Uruguai x Equador",
+     "odd": 1.9,
+     "unidades": 2
     }
    ]
   },
@@ -905,10 +911,10 @@
    "2026-07-28": 3.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Uruguai",
-   "n": 9,
-   "start": 2
+   "tipo": "odd",
+   "chave": "2",
+   "n": 12,
+   "start": 1
   },
   "_obs": {}
  }
