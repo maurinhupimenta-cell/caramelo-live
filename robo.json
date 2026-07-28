@@ -391,13 +391,19 @@
   }
  },
  "ambas": {
-  "saldo": -22.7,
-  "ciclos": 571,
-  "greens": 405,
+  "saldo": -21.8,
+  "ciclos": 572,
+  "greens": 406,
   "redsCiclo": 62,
   "aborts": 0,
   "descartes": 104,
   "historico": [
+   {
+    "quando": "2026-07-28T05:56:53.024Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · RD Congo x Inglaterra @1.9 (tiro 1) · gatilho: time RD Congo"
+   },
    {
     "quando": "2026-07-28T05:49:17.329Z",
     "resultado": "GREEN",
@@ -587,44 +593,15 @@
   ],
   "consumidas": {
    "premier": 1785215140928,
-   "super": 1785217757137
+   "super": 1785217757137,
+   "copa": 1785218212833
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:52",
-     "jogo": "RD Congo x Inglaterra",
-     "odd": 1.9
-    },
-    {
-     "h": "06:55",
-     "jogo": "Tunísia x Países Baixos",
-     "odd": 2.15
-    },
-    {
-     "h": "06:58",
-     "jogo": "Gana x Brasil",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "time RD Congo",
-   "alvo": {
-    "h": "06:52",
-    "jogo": "RD Congo x Inglaterra",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1785217759325
-   },
-   "iniciadoEm": 1785217759325
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785214376428,
    "super": 1785217757137,
    "premier": 1785215140928,
-   "copa": 1785212879034
+   "copa": 1785218212833
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -639,13 +616,13 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -1.1
+   "2026-07-28": -0.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Suécia",
    "n": 9,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
