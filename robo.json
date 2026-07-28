@@ -627,13 +627,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -28.1,
-  "ciclos": 622,
-  "greens": 414,
+  "saldo": -26.1,
+  "ciclos": 623,
+  "greens": 415,
   "redsCiclo": 64,
   "aborts": 0,
   "descartes": 144,
   "historico": [
+   {
+    "quando": "2026-07-28T15:19:52.127Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "super · Rio de Janeiro x Porto Alegre @2.25 (tiro 3) · gatilho: odd 2.07"
+   },
    {
     "quando": "2026-07-28T15:04:55.226Z",
     "resultado": "GREEN_OBS",
@@ -1128,56 +1134,43 @@
    }
   ],
   "consumidas": {
-   "euro": 1785250855927
+   "euro": 1785250855927,
+   "super": 1785251991935
   },
   "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "16:07",
-     "jogo": "Montevideo x Belo Horizonte",
-     "odd": 1.85
+     "h": "16:27",
+     "jogo": "Newcastle x United",
+     "odd": 1.86
     },
     {
-     "h": "16:10",
-     "jogo": "Itaquera x Asuncion",
-     "odd": 2.07
+     "h": "16:30",
+     "jogo": "Brighton x Everton",
+     "odd": 1.8
     },
     {
-     "h": "16:13",
-     "jogo": "Rio de Janeiro x Porto Alegre",
-     "odd": 2.25
+     "h": "16:33",
+     "jogo": "Islington x Burnley",
+     "odd": 1.95
     }
    ],
-   "gatilho": "odd 2.07",
+   "gatilho": "odd 1.8",
    "alvo": {
-    "h": "16:13",
-    "jogo": "Rio de Janeiro x Porto Alegre",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1785251584929
+    "h": "16:27",
+    "jogo": "Newcastle x United",
+    "odd": 1.86,
+    "unidades": 1,
+    "desde": 1785251994127
    },
-   "iniciadoEm": 1785250857426,
-   "tiros": [
-    {
-     "h": "16:07",
-     "jogo": "Montevideo x Belo Horizonte",
-     "odd": 1.85,
-     "unidades": 1
-    },
-    {
-     "h": "16:10",
-     "jogo": "Itaquera x Asuncion",
-     "odd": 2.07,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1785251994127
   },
   "cooldown": {
    "euro": 1785250855927,
-   "super": 1785246545624,
+   "super": 1785251991935,
    "premier": 1785247183525,
    "copa": 1785234490036
   },
@@ -1194,13 +1187,13 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -6.5
+   "2026-07-28": -4.5
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.25",
-   "n": 8,
-   "start": 1
+   "chave": "1.8",
+   "n": 10,
+   "start": 3
   },
   "_obs": {}
  }
