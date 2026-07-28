@@ -170,12 +170,18 @@
  },
  "o25": {
   "saldo": -118.8,
-  "ciclos": 554,
+  "ciclos": 555,
   "greens": 343,
   "redsCiclo": 93,
   "aborts": 0,
-  "descartes": 118,
+  "descartes": 119,
   "historico": [
+   {
+    "quando": "2026-07-28T11:43:53.936Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-28T11:31:12.530Z",
     "resultado": "GREEN_OBS",
@@ -951,7 +957,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:32",
+     "jogo": "Inglaterra x Eslováquia",
+     "odd": 1.98
+    },
+    {
+     "h": "12:41",
+     "jogo": "França x Romênia",
+     "odd": 1.87
+    },
+    {
+     "h": "12:44",
+     "jogo": "Escócia x Países Baixos",
+     "odd": 1.85
+    }
+   ],
+   "gatilho": "odd 1.87",
+   "alvo": {
+    "h": "08:32",
+    "jogo": "Inglaterra x Eslováquia",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785239013028
+   },
+   "iniciadoEm": 1785239013028
+  },
   "cooldown": {
    "euro": 1785220132126,
    "super": 1785217757137,
@@ -979,11 +1015,6 @@
    "n": 14,
    "start": 3
   },
-  "_obs": {
-   "euro": {
-    "desde": 1785239011824,
-    "gatilho": "odd 1.87"
-   }
-  }
+  "_obs": {}
  }
 }
