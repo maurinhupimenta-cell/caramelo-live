@@ -157,12 +157,18 @@
  },
  "o25": {
   "saldo": -118.8,
-  "ciclos": 541,
+  "ciclos": 542,
   "greens": 343,
   "redsCiclo": 93,
   "aborts": 0,
-  "descartes": 105,
+  "descartes": 106,
   "historico": [
+   {
+    "quando": "2026-07-28T09:24:54.430Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-28T09:09:52.235Z",
     "resultado": "GREEN_OBS",
@@ -467,12 +473,18 @@
  },
  "ambas": {
   "saldo": -19.2,
-  "ciclos": 587,
+  "ciclos": 588,
   "greens": 409,
   "redsCiclo": 62,
   "aborts": 0,
-  "descartes": 116,
+  "descartes": 117,
   "historico": [
+   {
+    "quando": "2026-07-28T09:21:31.835Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho time Penarol) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T09:21:29.933Z",
     "resultado": "DESCARTADO",
@@ -758,35 +770,35 @@
   ],
   "consumidas": {},
   "ciclo": {
-   "liga": "super",
+   "liga": "euro",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "07:49",
-     "jogo": "Porto Alegre x Avellaneda",
-     "odd": 2.2
+     "h": "08:32",
+     "jogo": "Inglaterra x Eslováquia",
+     "odd": 1.98
     },
     {
-     "h": "09:19",
-     "jogo": "Guayaquil x Sao Paulo",
-     "odd": 1.8
+     "h": "10:20",
+     "jogo": "Escócia x Albânia",
+     "odd": 2.15
     },
     {
-     "h": "09:22",
-     "jogo": "Agua Branca x Asuncion",
-     "odd": 2
+     "h": "10:23",
+     "jogo": "Dinamarca x Ucrânia",
+     "odd": 2.07
     }
    ],
-   "gatilho": "time Guayaquil",
+   "gatilho": "coluna :20",
    "alvo": {
-    "h": "07:49",
-    "jogo": "Porto Alegre x Avellaneda",
-    "odd": 2.2,
+    "h": "08:32",
+    "jogo": "Inglaterra x Eslováquia",
+    "odd": 1.98,
     "unidades": 1,
-    "desde": 1785229574330
+    "desde": 1785230491837
    },
-   "iniciadoEm": 1785229574330
+   "iniciadoEm": 1785230491837
   },
   "cooldown": {
    "euro": 1785220132126,
@@ -813,7 +825,7 @@
    "tipo": "coluna",
    "chave": ":30",
    "n": 10,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
