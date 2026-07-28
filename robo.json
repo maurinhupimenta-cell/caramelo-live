@@ -157,12 +157,18 @@
  },
  "o25": {
   "saldo": -118.8,
-  "ciclos": 543,
+  "ciclos": 544,
   "greens": 343,
   "redsCiclo": 93,
   "aborts": 0,
-  "descartes": 107,
+  "descartes": 108,
   "historico": [
+   {
+    "quando": "2026-07-28T09:44:09.937Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-28T09:28:52.634Z",
     "resultado": "GREEN_OBS",
@@ -788,35 +794,35 @@
   ],
   "consumidas": {},
   "ciclo": {
-   "liga": "euro",
+   "liga": "super",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "08:32",
-     "jogo": "Inglaterra x Eslováquia",
-     "odd": 1.98
+     "h": "09:19",
+     "jogo": "Guayaquil x Sao Paulo",
+     "odd": 1.8
     },
     {
-     "h": "10:20",
-     "jogo": "Escócia x Albânia",
+     "h": "10:34",
+     "jogo": "La Plata x Itaquera",
      "odd": 2.15
     },
     {
-     "h": "10:23",
-     "jogo": "Dinamarca x Ucrânia",
-     "odd": 2.07
+     "h": "10:37",
+     "jogo": "Quito x Avellaneda",
+     "odd": 2
     }
    ],
-   "gatilho": "coluna :20",
+   "gatilho": "time Itaquera",
    "alvo": {
-    "h": "08:32",
-    "jogo": "Inglaterra x Eslováquia",
-    "odd": 1.98,
+    "h": "09:19",
+    "jogo": "Guayaquil x Sao Paulo",
+    "odd": 1.8,
     "unidades": 1,
-    "desde": 1785230491837
+    "desde": 1785231394533
    },
-   "iniciadoEm": 1785230491837
+   "iniciadoEm": 1785231394533
   },
   "cooldown": {
    "euro": 1785220132126,
@@ -840,10 +846,10 @@
    "2026-07-28": 2.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Uruguai",
+   "tipo": "seq",
+   "chave": "GGGGG",
    "n": 8,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
