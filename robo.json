@@ -612,21 +612,27 @@
    "2026-07-28": 2.1
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.45",
-   "n": 14,
+   "tipo": "seq",
+   "chave": "GGRGG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -24.1,
-  "ciclos": 616,
+  "saldo": -31.1,
+  "ciclos": 617,
   "greens": 411,
-  "redsCiclo": 63,
+  "redsCiclo": 64,
   "aborts": 0,
   "descartes": 142,
   "historico": [
+   {
+    "quando": "2026-07-28T13:49:05.730Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: odd 2.15"
+   },
    {
     "quando": "2026-07-28T13:44:25.631Z",
     "resultado": "GREEN_OBS",
@@ -1084,55 +1090,13 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "14:40",
-     "jogo": "Belo Horizonte x Avellaneda",
-     "odd": 1.95
-    },
-    {
-     "h": "14:43",
-     "jogo": "La Plata x Lima",
-     "odd": 2.15
-    },
-    {
-     "h": "14:46",
-     "jogo": "Buenos Aires x Penarol",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "odd 2.15",
-   "alvo": {
-    "h": "14:46",
-    "jogo": "Buenos Aires x Penarol",
-    "odd": 2.02,
-    "unidades": 4,
-    "desde": 1785246386139
-   },
-   "iniciadoEm": 1785245916334,
-   "tiros": [
-    {
-     "h": "14:40",
-     "jogo": "Belo Horizonte x Avellaneda",
-     "odd": 1.95,
-     "unidades": 1
-    },
-    {
-     "h": "14:43",
-     "jogo": "La Plata x Lima",
-     "odd": 2.15,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "super": 1785246545624
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785220132126,
-   "super": 1785217757137,
+   "super": 1785246545624,
    "premier": 1785242686024,
    "copa": 1785234490036
   },
@@ -1149,13 +1113,13 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -2.5
+   "2026-07-28": -9.5
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "1.8",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
