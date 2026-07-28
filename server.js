@@ -2837,6 +2837,74 @@ app.get("/api/leitor/:liga", (req, res) => {
 // Regra dura: minimo 8 casos e 100% cravado. Devolve tambem quantos testes rodaram, porque
 // milhares de combinacoes produzem 100% por acaso - o numero de testes e parte da leitura.
 const cruzaCache = {};
+// ===== TESTE DA FUNDACAO: o padrao 100% do cacador acerta o PROXIMO JOGO acima da base?
+// Caminha a historia em ordem; quando um padrao atinge 100% com n>=8 (a regra do robo),
+// registra o resultado do PROXIMO JOGO (o 1o tiro) - UMA observacao por consagracao.
+// Compara com a base do proprio mercado. Se o ganho for ~0, o gatilho nao prediz nada. =====
+app.get("/api/teste-fundacao", (req, res) => {
+  try {
+    const MKTS = ["o25", "o35", "ambas"];
+    const linhas = [];
+    const agreg = {};
+    for (const liga of LIGAS) {
+      const d = store[liga]; if (!d || !d.games || d.games.length < 300) continue;
+      const games = listaCheia(d);
+      for (const mkt of MKTS) {
+        const k0 = mkt === "ambas" ? "ambs" : mkt;
+        const paga = g => pays(g, mkt);
+        const base = games.filter(paga).length / games.length;
+        const catPl = g => { const a = g.a || 0, b = g.b || 0, t = a + b, m = Math.max(a, b); return t === 0 ? "0-0" : t === 1 ? "1gol" : m >= 3 ? "goleada" : a === b ? "empate" : "acima1-0"; };
+        // chaves-gatilho de cada jogo (as mesmas familias que o robo usa)
+        const chavesDe = (g, i, seq) => {
+          const L = [];
+          const od = g.odds && g.odds[k0]; if (od > 1.01) L.push("odd@" + od.toFixed(2));
+          if (g.a != null) L.push("placar:" + catPl(g));
+          const mm = (g.horario || "").split(":")[1]; if (mm) L.push("col:" + mm);
+          const par = (g.nome || "").split(/\s+x\s+/i);
+          if (par[0]) L.push("time:" + par[0].trim());
+          if (par[1]) L.push("time:" + par[1].trim());
+          if (i >= 4) L.push("seq:" + seq.slice(i - 4, i + 1).join(""));
+          return L;
+        };
+        const seq = games.map(g => (paga(g) ? "G" : "R"));
+        const stat = {};          // chave -> {n,h,aguardando}
+        let testadas = 0, acertos = 0;
+        for (let i = 0; i + 1 < games.length; i++) {
+          const proximoPagou = paga(games[i + 1]);
+          for (const ch of chavesDe(games[i], i, seq)) {
+            const s = stat[ch] || (stat[ch] = { n: 0, h: 0, aguardando: false });
+            if (s.aguardando) {           // JA estava 100%: esta e a prova fora da amostra
+              s.aguardando = false;
+              testadas++; if (proximoPagou) acertos++;
+            }
+            s.n++; if (proximoPagou) s.h++;
+            if (s.n >= 8 && s.h === s.n) s.aguardando = true;   // bateu 100% com 8+: proxima vez sera testada
+          }
+        }
+        if (testadas < 15) continue;
+        const taxa = acertos / testadas;
+        linhas.push({ liga, mkt, casos: testadas, acertouProximo: Math.round(taxa * 1000) / 10, base: Math.round(base * 1000) / 10, ganho: Math.round((taxa - base) * 1000) / 10 });
+        const a = agreg[mkt] || (agreg[mkt] = { n: 0, h: 0, bn: 0, bs: 0 });
+        a.n += testadas; a.h += acertos; a.bn++; a.bs += base;
+      }
+    }
+    const resumo = Object.entries(agreg).map(([mkt, a]) => ({
+      mkt, casos: a.n,
+      acertouProximo: Math.round(a.h / a.n * 1000) / 10,
+      baseMedia: Math.round(a.bs / a.bn * 1000) / 10,
+      ganho: Math.round((a.h / a.n - a.bs / a.bn) * 1000) / 10
+    }));
+    const totN = Object.values(agreg).reduce((s, a) => s + a.n, 0);
+    const totH = Object.values(agreg).reduce((s, a) => s + a.h, 0);
+    const totB = Object.values(agreg).reduce((s, a) => s + a.bs / a.bn * a.n, 0) / (totN || 1);
+    res.json({
+      pergunta: "o padrao 100% acerta o PROXIMO jogo acima da base do mercado?",
+      GERAL: { casos: totN, acertouProximo: Math.round(totH / totN * 1000) / 10, baseEsperada: Math.round(totB * 1000) / 10, ganho: Math.round((totH / totN - totB) * 1000) / 10 },
+      porMercado: resumo, detalhe: linhas.sort((a, b) => b.ganho - a.ganho)
+    });
+  } catch (e) { res.status(500).json({ erro: e.message, linha: String(e.stack || "").split("\n")[1] }); }
+});
+
 app.get("/api/cruzamentos/:liga", (req, res) => {
   try {
     const liga = req.params.liga, mkt = req.query.mkt || "o35";
