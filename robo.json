@@ -172,12 +172,18 @@
  },
  "o25": {
   "saldo": -118.8,
-  "ciclos": 550,
+  "ciclos": 551,
   "greens": 343,
   "redsCiclo": 93,
   "aborts": 0,
-  "descartes": 114,
+  "descartes": 115,
   "historico": [
+   {
+    "quando": "2026-07-28T10:45:52.628Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho seq RRRGR) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T10:43:53.926Z",
     "resultado": "DESCARTADO",
@@ -474,30 +480,30 @@
    "apostado": 0,
    "plano": [
     {
-     "h": "09:19",
-     "jogo": "Guayaquil x Sao Paulo",
-     "odd": 2.02
-    },
-    {
-     "h": "11:28",
-     "jogo": "Quito x Asuncion",
+     "h": "07:43",
+     "jogo": "Bogota x Buenos Aires",
      "odd": 2.3
     },
     {
-     "h": "11:31",
-     "jogo": "Porto Alegre x Lima",
-     "odd": 2.45
+     "h": "07:49",
+     "jogo": "Porto Alegre x Avellaneda",
+     "odd": 2.62
+    },
+    {
+     "h": "09:19",
+     "jogo": "Guayaquil x Sao Paulo",
+     "odd": 2.02
     }
    ],
-   "gatilho": "coluna :28",
+   "gatilho": "seq RRRGR",
    "alvo": {
-    "h": "09:19",
-    "jogo": "Guayaquil x Sao Paulo",
-    "odd": 2.02,
+    "h": "07:43",
+    "jogo": "Bogota x Buenos Aires",
+    "odd": 2.3,
     "unidades": 1,
-    "desde": 1785234532834
+    "desde": 1785235554529
    },
-   "iniciadoEm": 1785234532834
+   "iniciadoEm": 1785235554529
   },
   "cooldown": {
    "copa": 1785213341427,
@@ -523,8 +529,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRRG",
-   "n": 9,
+   "chave": "RRRGR",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
