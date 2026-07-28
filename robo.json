@@ -478,37 +478,7 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "07:49",
-     "jogo": "Croácia x Austrália",
-     "odd": 2.35
-    },
-    {
-     "h": "07:52",
-     "jogo": "Portugal x França",
-     "odd": 2.15
-    },
-    {
-     "h": "11:13",
-     "jogo": "Escócia x Suíça",
-     "odd": 2.55
-    }
-   ],
-   "gatilho": "seq GRGRR",
-   "alvo": {
-    "h": "07:49",
-    "jogo": "Croácia x Austrália",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1785233574431
-   },
-   "iniciadoEm": 1785233574431
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785213341427,
    "premier": 1785224045730,
@@ -540,13 +510,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -17.8,
-  "ciclos": 596,
+  "saldo": -24.8,
+  "ciclos": 597,
   "greens": 410,
-  "redsCiclo": 62,
+  "redsCiclo": 63,
   "aborts": 0,
   "descartes": 124,
   "historico": [
+   {
+    "quando": "2026-07-28T10:28:10.229Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Uruguai"
+   },
    {
     "quando": "2026-07-28T10:20:52.627Z",
     "resultado": "GREEN_OBS",
@@ -885,58 +861,45 @@
    }
   ],
   "consumidas": {
-   "premier": 1785233146638
+   "premier": 1785233146638,
+   "copa": 1785234490036
   },
   "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "11:19",
-     "jogo": "Turquia x Inglaterra",
-     "odd": 1.98
+     "h": "07:43",
+     "jogo": "Bogota x Buenos Aires",
+     "odd": 2
     },
     {
-     "h": "11:22",
-     "jogo": "Uruguai x Equador",
-     "odd": 1.9
+     "h": "07:49",
+     "jogo": "Porto Alegre x Avellaneda",
+     "odd": 2.2
     },
     {
-     "h": "11:25",
-     "jogo": "Japão x Cabo Verde",
-     "odd": 2.1
+     "h": "09:19",
+     "jogo": "Guayaquil x Sao Paulo",
+     "odd": 1.8
     }
    ],
-   "gatilho": "time Uruguai",
+   "gatilho": "odd 2",
    "alvo": {
-    "h": "11:25",
-    "jogo": "Japão x Cabo Verde",
-    "odd": 2.1,
-    "unidades": 4,
-    "desde": 1785234369724
+    "h": "07:43",
+    "jogo": "Bogota x Buenos Aires",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1785234491632
    },
-   "iniciadoEm": 1785234052628,
-   "tiros": [
-    {
-     "h": "11:19",
-     "jogo": "Turquia x Inglaterra",
-     "odd": 1.98,
-     "unidades": 1
-    },
-    {
-     "h": "11:22",
-     "jogo": "Uruguai x Equador",
-     "odd": 1.9,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1785234491632
   },
   "cooldown": {
    "euro": 1785220132126,
    "super": 1785217757137,
    "premier": 1785233146638,
-   "copa": 1785218212833
+   "copa": 1785234490036
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -951,7 +914,7 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": 3.8
+   "2026-07-28": -3.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
