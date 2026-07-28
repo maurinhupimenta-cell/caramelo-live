@@ -175,13 +175,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -127.1,
-  "ciclos": 580,
-  "greens": 350,
+  "saldo": -125.7,
+  "ciclos": 581,
+  "greens": 351,
   "redsCiclo": 96,
   "aborts": 0,
   "descartes": 134,
   "historico": [
+   {
+    "quando": "2026-07-28T20:02:53.661Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "copa · Países Baixos x Uzbequistão @2.35 (tiro 1) · gatilho: odd 2.45"
+   },
    {
     "quando": "2026-07-28T19:25:56.938Z",
     "resultado": "GREEN",
@@ -653,41 +659,12 @@
   ],
   "consumidas": {
    "super": 1785266092427,
-   "euro": 1785266756833
+   "euro": 1785266756833,
+   "copa": 1785268973471
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:58",
-     "jogo": "Países Baixos x Uzbequistão",
-     "odd": 2.35
-    },
-    {
-     "h": "21:01",
-     "jogo": "África do Sul x Qatar",
-     "odd": 2.45
-    },
-    {
-     "h": "21:04",
-     "jogo": "Curação x Costa do Marfim",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "odd 2.45",
-   "alvo": {
-    "h": "20:58",
-    "jogo": "Países Baixos x Uzbequistão",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1785268192564
-   },
-   "iniciadoEm": 1785268192564
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785264411830,
+   "copa": 1785268973471,
    "premier": 1785257271230,
    "euro": 1785266756833,
    "super": 1785266092427
@@ -706,7 +683,7 @@
    "2026-07-25": 21,
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
-   "2026-07-28": -6.2
+   "2026-07-28": -4.8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
