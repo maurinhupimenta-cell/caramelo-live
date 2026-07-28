@@ -561,8 +561,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "05:19",
@@ -582,11 +582,11 @@
    ],
    "gatilho": "time Bélgica",
    "alvo": {
-    "h": "05:22",
-    "jogo": "Bélgica x EUA",
-    "odd": 1.98,
-    "unidades": 2,
-    "desde": 1785212516533
+    "h": "05:25",
+    "jogo": "Curação x Gana",
+    "odd": 1.95,
+    "unidades": 4,
+    "desde": 1785212814531
    },
    "iniciadoEm": 1785211816733,
    "tiros": [
@@ -595,6 +595,12 @@
      "jogo": "África do Sul x Argentina",
      "odd": 2,
      "unidades": 1
+    },
+    {
+     "h": "05:22",
+     "jogo": "Bélgica x EUA",
+     "odd": 1.98,
+     "unidades": 2
     }
    ]
   },
@@ -620,8 +626,8 @@
    "2026-07-28": 2.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Suécia",
+   "tipo": "seq",
+   "chave": "GRRR",
    "n": 8,
    "start": 1
   },
