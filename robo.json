@@ -175,13 +175,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -121.7,
-  "ciclos": 571,
+  "saldo": -128.7,
+  "ciclos": 572,
   "greens": 346,
-  "redsCiclo": 94,
+  "redsCiclo": 95,
   "aborts": 0,
   "descartes": 131,
   "historico": [
+   {
+    "quando": "2026-07-28T16:47:51.425Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq GGRRG"
+   },
    {
     "quando": "2026-07-28T16:12:52.230Z",
     "resultado": "GREEN",
@@ -598,56 +604,13 @@
    }
   ],
   "consumidas": {
-   "copa": 1785255172126
+   "copa": 1785255172126,
+   "premier": 1785257271230
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "17:39",
-     "jogo": "Everton x Burnley",
-     "odd": 2.07
-    },
-    {
-     "h": "17:42",
-     "jogo": "Brentford x Brighton",
-     "odd": 2.1
-    },
-    {
-     "h": "17:45",
-     "jogo": "Chelsea x Newcastle",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "seq GGRRG",
-   "alvo": {
-    "h": "17:45",
-    "jogo": "Chelsea x Newcastle",
-    "odd": 2.07,
-    "unidades": 4,
-    "desde": 1785257088837
-   },
-   "iniciadoEm": 1785256553731,
-   "tiros": [
-    {
-     "h": "17:39",
-     "jogo": "Everton x Burnley",
-     "odd": 2.07,
-     "unidades": 1
-    },
-    {
-     "h": "17:42",
-     "jogo": "Brentford x Brighton",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785255172126,
-   "premier": 1785224045730,
+   "premier": 1785257271230,
    "euro": 1785246965627,
    "super": 1785250073532
   },
@@ -665,13 +628,13 @@
    "2026-07-25": 21,
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
-   "2026-07-28": -0.8
+   "2026-07-28": -7.8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.45",
    "n": 15,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
