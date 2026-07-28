@@ -530,7 +530,37 @@
    "euro": 1785209693925,
    "premier": 1785210825531
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:19",
+     "jogo": "África do Sul x Argentina",
+     "odd": 2
+    },
+    {
+     "h": "05:22",
+     "jogo": "Bélgica x EUA",
+     "odd": 1.98
+    },
+    {
+     "h": "05:25",
+     "jogo": "Curação x Gana",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "time Bélgica",
+   "alvo": {
+    "h": "05:19",
+    "jogo": "África do Sul x Argentina",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1785211816733
+   },
+   "iniciadoEm": 1785211816733
+  },
   "cooldown": {
    "euro": 1785209693925,
    "super": 1785208311732,
@@ -554,9 +584,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Brighton",
-   "n": 9,
-   "start": 1
+   "chave": "Bélgica",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  }
