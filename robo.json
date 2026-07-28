@@ -175,13 +175,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -131.1,
-  "ciclos": 576,
-  "greens": 348,
+  "saldo": -128.3,
+  "ciclos": 577,
+  "greens": 349,
   "redsCiclo": 96,
   "aborts": 0,
   "descartes": 132,
   "historico": [
+   {
+    "quando": "2026-07-28T19:14:52.530Z",
+    "resultado": "GREEN",
+    "unidades": 2.8,
+    "detalhe": "super · Lima x Porto Alegre @2.45 (tiro 3) · gatilho: seq GRRGG"
+   },
    {
     "quando": "2026-07-28T18:46:51.934Z",
     "resultado": "GREEN",
@@ -628,58 +634,15 @@
    }
   ],
   "consumidas": {
-   "copa": 1785264411830
+   "copa": 1785264411830,
+   "super": 1785266092427
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "20:01",
-     "jogo": "Belo Horizonte x Rio de Janeiro",
-     "odd": 2.1
-    },
-    {
-     "h": "20:04",
-     "jogo": "Santiago x Agua Branca",
-     "odd": 2
-    },
-    {
-     "h": "20:07",
-     "jogo": "Lima x Porto Alegre",
-     "odd": 2.45
-    }
-   ],
-   "gatilho": "seq GRRGG",
-   "alvo": {
-    "h": "20:07",
-    "jogo": "Lima x Porto Alegre",
-    "odd": 2.45,
-    "unidades": 4,
-    "desde": 1785265703435
-   },
-   "iniciadoEm": 1785265191629,
-   "tiros": [
-    {
-     "h": "20:01",
-     "jogo": "Belo Horizonte x Rio de Janeiro",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "20:04",
-     "jogo": "Santiago x Agua Branca",
-     "odd": 2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785264411830,
    "premier": 1785257271230,
    "euro": 1785260994830,
-   "super": 1785257884536
+   "super": 1785266092427
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -695,7 +658,7 @@
    "2026-07-25": 21,
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
-   "2026-07-28": -10.2
+   "2026-07-28": -7.4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -706,13 +669,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -41.8,
-  "ciclos": 635,
+  "saldo": -48.8,
+  "ciclos": 636,
   "greens": 421,
-  "redsCiclo": 67,
+  "redsCiclo": 68,
   "aborts": 0,
   "descartes": 147,
   "historico": [
+   {
+    "quando": "2026-07-28T19:08:23.927Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: seq GGRGG"
+   },
    {
     "quando": "2026-07-28T18:54:54.029Z",
     "resultado": "GREEN",
@@ -1285,56 +1254,13 @@
    }
   ],
   "consumidas": {
-   "copa": 1785264893833
+   "copa": 1785264893833,
+   "super": 1785265703730
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "19:58",
-     "jogo": "Santiago x Guayaquil",
-     "odd": 1.8
-    },
-    {
-     "h": "20:01",
-     "jogo": "Belo Horizonte x Rio de Janeiro",
-     "odd": 1.86
-    },
-    {
-     "h": "20:04",
-     "jogo": "Santiago x Agua Branca",
-     "odd": 1.83
-    }
-   ],
-   "gatilho": "seq GGRGG",
-   "alvo": {
-    "h": "20:04",
-    "jogo": "Santiago x Agua Branca",
-    "odd": 1.83,
-    "unidades": 4,
-    "desde": 1785265491429
-   },
-   "iniciadoEm": 1785265072729,
-   "tiros": [
-    {
-     "h": "19:58",
-     "jogo": "Santiago x Guayaquil",
-     "odd": 1.8,
-     "unidades": 1
-    },
-    {
-     "h": "20:01",
-     "jogo": "Belo Horizonte x Rio de Janeiro",
-     "odd": 1.86,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785260874532,
-   "super": 1785259072736,
+   "super": 1785265703730,
    "premier": 1785261615125,
    "copa": 1785264893833
   },
@@ -1351,7 +1277,7 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -20.2
+   "2026-07-28": -27.2
   },
   "_gatilhoAtual": {
    "tipo": "seq",
