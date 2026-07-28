@@ -688,13 +688,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -47.5,
-  "ciclos": 637,
-  "greens": 422,
+  "saldo": -46.6,
+  "ciclos": 638,
+  "greens": 423,
   "redsCiclo": 68,
   "aborts": 0,
   "descartes": 147,
   "historico": [
+   {
+    "quando": "2026-07-28T19:32:51.066Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Newcastle x Liverpool @1.85 (tiro 1) · gatilho: seq GRGRG"
+   },
    {
     "quando": "2026-07-28T19:25:59.332Z",
     "resultado": "GREEN",
@@ -1281,43 +1287,14 @@
   "consumidas": {
    "copa": 1785264893833,
    "super": 1785265703730,
-   "euro": 1785266759231
+   "euro": 1785266759231,
+   "premier": 1785267170867
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:30",
-     "jogo": "Newcastle x Liverpool",
-     "odd": 1.85
-    },
-    {
-     "h": "20:33",
-     "jogo": "Palace x Wolverhampton",
-     "odd": 1.83
-    },
-    {
-     "h": "20:36",
-     "jogo": "City x Aston",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "seq GRGRG",
-   "alvo": {
-    "h": "20:30",
-    "jogo": "Newcastle x Liverpool",
-    "odd": 1.85,
-    "unidades": 1,
-    "desde": 1785266816162
-   },
-   "iniciadoEm": 1785266816162
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785266759231,
    "super": 1785265703730,
-   "premier": 1785261615125,
+   "premier": 1785267170868,
    "copa": 1785264893833
   },
   "dias": {
@@ -1333,7 +1310,7 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -25.9
+   "2026-07-28": -25
   },
   "_gatilhoAtual": {
    "tipo": "seq",
