@@ -175,13 +175,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -120.7,
-  "ciclos": 585,
-  "greens": 355,
+  "saldo": -118.9,
+  "ciclos": 586,
+  "greens": 356,
   "redsCiclo": 96,
   "aborts": 0,
   "descartes": 134,
   "historico": [
+   {
+    "quando": "2026-07-28T23:01:47.160Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "copa · Suíça x Gana @2.4 (tiro 2) · gatilho: time Suíça"
+   },
    {
     "quando": "2026-07-28T22:49:45.875Z",
     "resultado": "GREEN",
@@ -683,49 +689,12 @@
   ],
   "consumidas": {
    "premier": 1785277668066,
-   "euro": 1785278985762
+   "euro": 1785278985762,
+   "copa": 1785279706968
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "23:55",
-     "jogo": "Austrália x Nova Zelândia",
-     "odd": 2.2
-    },
-    {
-     "h": "23:58",
-     "jogo": "Suíça x Gana",
-     "odd": 2.4
-    },
-    {
-     "h": "00:01",
-     "jogo": "Jordânia x Cabo Verde",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Suíça",
-   "alvo": {
-    "h": "23:58",
-    "jogo": "Suíça x Gana",
-    "odd": 2.4,
-    "unidades": 2,
-    "desde": 1785279527870
-   },
-   "iniciadoEm": 1785278987562,
-   "tiros": [
-    {
-     "h": "23:55",
-     "jogo": "Austrália x Nova Zelândia",
-     "odd": 2.2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785275010762,
+   "copa": 1785279706968,
    "premier": 1785277668066,
    "euro": 1785278985762,
    "super": 1785275385869
@@ -744,7 +713,7 @@
    "2026-07-25": 21,
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
-   "2026-07-28": 0.2
+   "2026-07-28": 2
   },
   "_gatilhoAtual": {
    "tipo": "time",
