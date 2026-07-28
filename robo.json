@@ -157,12 +157,18 @@
  },
  "o25": {
   "saldo": -118.8,
-  "ciclos": 537,
+  "ciclos": 538,
   "greens": 343,
   "redsCiclo": 93,
   "aborts": 0,
-  "descartes": 101,
+  "descartes": 102,
   "historico": [
+   {
+    "quando": "2026-07-28T08:51:54.227Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-28T08:43:31.630Z",
     "resultado": "GREEN_OBS",
@@ -432,7 +438,7 @@
    "tipo": "odd",
    "chave": "2.45",
    "n": 8,
-   "start": 1
+   "start": 2
   },
   "_obs": {
    "copa": {
@@ -768,10 +774,10 @@
    "2026-07-28": 2.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRR",
-   "n": 9,
-   "start": 1
+   "tipo": "time",
+   "chave": "Leeds",
+   "n": 17,
+   "start": 3
   },
   "_obs": {}
  }
