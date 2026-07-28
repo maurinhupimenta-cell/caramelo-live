@@ -670,12 +670,18 @@
  },
  "ambas": {
   "saldo": -30.6,
-  "ciclos": 627,
+  "ciclos": 628,
   "greens": 418,
   "redsCiclo": 65,
   "aborts": 0,
-  "descartes": 144,
+  "descartes": 145,
   "historico": [
+   {
+    "quando": "2026-07-28T16:52:52.128Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho seq RRRGG) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T16:47:51.626Z",
     "resultado": "GREEN",
@@ -1203,7 +1209,37 @@
    "euro": 1785256557631,
    "premier": 1785257271430
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:55",
+     "jogo": "Haiti x Senegal",
+     "odd": 2.02
+    },
+    {
+     "h": "17:58",
+     "jogo": "Equador x Suécia",
+     "odd": 2.07
+    },
+    {
+     "h": "18:01",
+     "jogo": "Marrocos x Coreia do Sul",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "seq RRRGG",
+   "alvo": {
+    "h": "17:55",
+    "jogo": "Haiti x Senegal",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1785257573731
+   },
+   "iniciadoEm": 1785257573731
+  },
   "cooldown": {
    "euro": 1785256557631,
    "super": 1785251991935,
@@ -1226,9 +1262,9 @@
    "2026-07-28": -9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":39",
-   "n": 17,
+   "tipo": "seq",
+   "chave": "RRRGG",
+   "n": 19,
    "start": 1
   },
   "_obs": {}
