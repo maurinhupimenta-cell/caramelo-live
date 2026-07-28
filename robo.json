@@ -673,7 +673,37 @@
    "copa": 1785275010762,
    "super": 1785275385869
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:24",
+     "jogo": "Wolverhampton x Liverpool",
+     "odd": 2.07
+    },
+    {
+     "h": "23:27",
+     "jogo": "Burnley x Palace",
+     "odd": 2.1
+    },
+    {
+     "h": "23:30",
+     "jogo": "Brighton x Wolverhampton",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "seq GRGRG",
+   "alvo": {
+    "h": "23:24",
+    "jogo": "Wolverhampton x Liverpool",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1785277240860
+   },
+   "iniciadoEm": 1785277240860
+  },
   "cooldown": {
    "copa": 1785275010762,
    "premier": 1785257271230,
@@ -697,21 +727,27 @@
    "2026-07-28": -1.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.98",
+   "tipo": "seq",
+   "chave": "GRGRG",
    "n": 8,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -41.3,
-  "ciclos": 644,
-  "greens": 428,
+  "saldo": -40.4,
+  "ciclos": 645,
+  "greens": 429,
   "redsCiclo": 68,
   "aborts": 0,
   "descartes": 148,
   "historico": [
+   {
+    "quando": "2026-07-28T21:56:36.361Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Aston x Brighton @1.93 (tiro 1) · gatilho: odd 1.8"
+   },
    {
     "quando": "2026-07-28T21:33:46.167Z",
     "resultado": "GREEN",
@@ -1339,43 +1375,14 @@
   ],
   "consumidas": {
    "euro": 1785273830564,
-   "super": 1785274426064
+   "super": 1785274426064,
+   "premier": 1785275796164
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:54",
-     "jogo": "Aston x Brighton",
-     "odd": 1.93
-    },
-    {
-     "h": "22:57",
-     "jogo": "Wolverhampton x Newcastle",
-     "odd": 1.8
-    },
-    {
-     "h": "23:00",
-     "jogo": "Leicester x Islington",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "odd 1.8",
-   "alvo": {
-    "h": "22:54",
-    "jogo": "Aston x Brighton",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1785275095063
-   },
-   "iniciadoEm": 1785275095063
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785273830564,
    "super": 1785274426064,
-   "premier": 1785271309367,
+   "premier": 1785275796164,
    "copa": 1785271030863
   },
   "dias": {
@@ -1391,13 +1398,13 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -19.7
+   "2026-07-28": -18.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.8",
-   "n": 13,
-   "start": 2
+   "tipo": "seq",
+   "chave": "GGGG",
+   "n": 23,
+   "start": 1
   },
   "_obs": {}
  }
