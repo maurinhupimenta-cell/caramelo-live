@@ -349,13 +349,19 @@
   }
  },
  "ambas": {
-  "saldo": -19.7,
-  "ciclos": 565,
-  "greens": 401,
+  "saldo": -18.8,
+  "ciclos": 566,
+  "greens": 402,
   "redsCiclo": 61,
   "aborts": 0,
   "descartes": 103,
   "historico": [
+   {
+    "quando": "2026-07-28T03:53:45.726Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · United x Wolverhampton @1.87 (tiro 1) · gatilho: time Brighton"
+   },
    {
     "quando": "2026-07-28T03:34:54.028Z",
     "resultado": "GREEN",
@@ -509,43 +515,14 @@
   ],
   "consumidas": {
    "super": 1785208311732,
-   "euro": 1785209693925
+   "euro": 1785209693925,
+   "premier": 1785210825531
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:51",
-     "jogo": "United x Wolverhampton",
-     "odd": 1.87
-    },
-    {
-     "h": "04:54",
-     "jogo": "Leicester x Brighton",
-     "odd": 1.93
-    },
-    {
-     "h": "04:57",
-     "jogo": "Chelsea x Norwich",
-     "odd": 2
-    }
-   ],
-   "gatilho": "time Brighton",
-   "alvo": {
-    "h": "04:51",
-    "jogo": "United x Wolverhampton",
-    "odd": 1.87,
-    "unidades": 1,
-    "desde": 1785210115434
-   },
-   "iniciadoEm": 1785210115434
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785209693925,
    "super": 1785208311732,
-   "premier": 1785205074931,
+   "premier": 1785210825531,
    "copa": 1785190860182
   },
   "dias": {
@@ -561,13 +538,13 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": 1.9
+   "2026-07-28": 2.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Brighton",
    "n": 9,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
