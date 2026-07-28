@@ -1188,8 +1188,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:55",
@@ -1209,13 +1209,21 @@
    ],
    "gatilho": "seq RRRGG",
    "alvo": {
-    "h": "17:55",
-    "jogo": "Haiti x Senegal",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1785257573731
+    "h": "17:58",
+    "jogo": "Equador x Suécia",
+    "odd": 2.07,
+    "unidades": 2,
+    "desde": 1785257993231
    },
-   "iniciadoEm": 1785257573731
+   "iniciadoEm": 1785257573731,
+   "tiros": [
+    {
+     "h": "17:55",
+     "jogo": "Haiti x Senegal",
+     "odd": 2.02,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785256557631,
@@ -1240,8 +1248,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRGG",
-   "n": 19,
+   "chave": "RRRRG",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
