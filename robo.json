@@ -455,7 +455,7 @@
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Albânia",
-   "n": 12,
+   "n": 13,
    "start": 3
   },
   "_obs": {
@@ -467,12 +467,18 @@
  },
  "ambas": {
   "saldo": -19.2,
-  "ciclos": 586,
+  "ciclos": 587,
   "greens": 409,
   "redsCiclo": 62,
   "aborts": 0,
-  "descartes": 115,
+  "descartes": 116,
   "historico": [
+   {
+    "quando": "2026-07-28T09:21:29.933Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-28T09:12:51.628Z",
     "resultado": "GREEN_OBS",
@@ -804,16 +810,11 @@
    "2026-07-28": 2.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Guayaquil",
-   "n": 25,
-   "start": 2
+   "tipo": "coluna",
+   "chave": ":30",
+   "n": 10,
+   "start": 3
   },
-  "_obs": {
-   "euro": {
-    "desde": 1785229971628,
-    "gatilho": "odd 1.87"
-   }
-  }
+  "_obs": {}
  }
 }
