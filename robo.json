@@ -564,12 +564,18 @@
  },
  "ambas": {
   "saldo": -24.8,
-  "ciclos": 610,
+  "ciclos": 611,
   "greens": 410,
   "redsCiclo": 63,
   "aborts": 0,
-  "descartes": 137,
+  "descartes": 138,
   "historico": [
+   {
+    "quando": "2026-07-28T12:38:09.335Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho odd 1.87) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T12:38:05.227Z",
     "resultado": "DESCARTADO",
@@ -993,35 +999,43 @@
   ],
   "consumidas": {},
   "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "liga": "premier",
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
-     "h": "08:32",
-     "jogo": "Inglaterra x Eslováquia",
-     "odd": 1.98
+     "h": "13:36",
+     "jogo": "United x Chelsea",
+     "odd": 1.95
     },
     {
-     "h": "13:20",
-     "jogo": "Albânia x Ucrânia",
-     "odd": 2.2
+     "h": "13:39",
+     "jogo": "Everton x Brighton",
+     "odd": 1.85
     },
     {
-     "h": "13:23",
-     "jogo": "Bélgica x Suíça",
-     "odd": 1.86
+     "h": "13:42",
+     "jogo": "Southampton x City",
+     "odd": 1.93
     }
    ],
-   "gatilho": "coluna :20",
+   "gatilho": "coluna :39",
    "alvo": {
-    "h": "08:32",
-    "jogo": "Inglaterra x Eslováquia",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785241355426
+    "h": "13:39",
+    "jogo": "Everton x Brighton",
+    "odd": 1.85,
+    "unidades": 2,
+    "desde": 1785242348830
    },
-   "iniciadoEm": 1785241355426
+   "iniciadoEm": 1785242287237,
+   "tiros": [
+    {
+     "h": "13:36",
+     "jogo": "United x Chelsea",
+     "odd": 1.95,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785220132126,
@@ -1045,9 +1059,9 @@
    "2026-07-28": -3.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.83",
-   "n": 9,
+   "tipo": "coluna",
+   "chave": ":39",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
