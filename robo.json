@@ -535,35 +535,35 @@
   ],
   "consumidas": {},
   "ciclo": {
-   "liga": "euro",
+   "liga": "copa",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "07:44",
-     "jogo": "Hungria x Países Baixos",
-     "odd": 2.2
-    },
-    {
-     "h": "08:29",
-     "jogo": "Países Baixos x Escócia",
-     "odd": 2.07
-    },
-    {
-     "h": "08:32",
-     "jogo": "Inglaterra x Eslováquia",
+     "h": "07:52",
+     "jogo": "Portugal x França",
      "odd": 2.15
+    },
+    {
+     "h": "14:10",
+     "jogo": "Suíça x México",
+     "odd": 2.25
+    },
+    {
+     "h": "14:13",
+     "jogo": "Haiti x França",
+     "odd": 2.1
     }
    ],
-   "gatilho": "placar empate 2-2",
+   "gatilho": "time Suíça",
    "alvo": {
-    "h": "07:44",
-    "jogo": "Hungria x Países Baixos",
-    "odd": 2.2,
+    "h": "07:52",
+    "jogo": "Portugal x França",
+    "odd": 2.15,
     "unidades": 1,
-    "desde": 1785243366427
+    "desde": 1785244268431
    },
-   "iniciadoEm": 1785243366427
+   "iniciadoEm": 1785244268431
   },
   "cooldown": {
    "copa": 1785213341427,
@@ -593,16 +593,27 @@
    "n": 16,
    "start": 2
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1785244268429,
+    "gatilho": "time Albânia"
+   }
+  }
  },
  "ambas": {
   "saldo": -24.1,
-  "ciclos": 613,
+  "ciclos": 614,
   "greens": 411,
   "redsCiclo": 63,
   "aborts": 0,
-  "descartes": 139,
+  "descartes": 140,
   "historico": [
+   {
+    "quando": "2026-07-28T13:23:25.732Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho seq RGRGG) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T13:08:27.438Z",
     "resultado": "DESCARTADO",
@@ -1045,7 +1056,37 @@
   "consumidas": {
    "premier": 1785242686024
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:49",
+     "jogo": "Croácia x Austrália",
+     "odd": 2.05
+    },
+    {
+     "h": "07:52",
+     "jogo": "Portugal x França",
+     "odd": 1.9
+    },
+    {
+     "h": "14:13",
+     "jogo": "Haiti x França",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "seq RGRGG",
+   "alvo": {
+    "h": "07:49",
+    "jogo": "Croácia x Austrália",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785245007535
+   },
+   "iniciadoEm": 1785245007535
+  },
   "cooldown": {
    "euro": 1785220132126,
    "super": 1785217757137,
@@ -1068,9 +1109,9 @@
    "2026-07-28": -2.5
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 10,
+   "tipo": "seq",
+   "chave": "RGRGG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
