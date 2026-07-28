@@ -152,7 +152,10 @@ function _roboBox(mkt,b){
   const reg=(b&&b.registro)||{};
   const saldoCor=reg.saldo>0?'var(--greenb)':reg.saldo<0?'var(--red)':'#9fb0c3';
   const _cu=v=>`<b style="color:${v>0?'var(--greenb)':v<0?'var(--red)':'#9fb0c3'}">${v>0?'+':''}${v??0}u</b>`;
-  const saldoTxt=reg.ciclos?`💰 hoje ${_cu(reg.hoje)} · 7d ${_cu(reg.semana7)} · mês ${_cu(reg.mes30)} · total ${_cu(reg.saldo)} <span class="note" style="font-size:11px">(${reg.ciclos} ciclos: ${reg.greens}🟢 ${reg.redsCiclo}🔴${reg.aborts?' '+reg.aborts+'⚠️':''}${reg.descartes?' '+reg.descartes+'🗑️':''})</span>`:`💰 <b style="color:#9fb0c3">0u</b> <span class="note" style="font-size:11px">(sem ciclos ainda)</span>`;
+  const saldoBase=reg.ciclos?`💰 hoje ${_cu(reg.hoje)} · 7d ${_cu(reg.semana7)} · mês ${_cu(reg.mes30)} · total ${_cu(reg.saldo)} <span class="note" style="font-size:11px">(${reg.ciclos} ciclos: ${reg.greens}🟢 ${reg.redsCiclo}🔴${reg.aborts?' '+reg.aborts+'⚠️':''}${reg.descartes?' '+reg.descartes+'🗑️':''})</span>`:`💰 <b style="color:#9fb0c3">0u</b> <span class="note" style="font-size:11px">(sem ciclos ainda)</span>`;
+  const emp=(b&&b.empate)||{};
+  const empTxt=(emp.precisa!=null&&emp.esta!=null)?(()=>{const d=Math.round((emp.esta-emp.precisa)*10)/10;const c=d>=0?'var(--greenb)':'var(--red)';return `<div style="font-size:11px;margin-top:2px" class="note">🎯 para empatar precisa <b>${emp.precisa}%</b> · está em <b style="color:${c}">${emp.esta}%</b> · <b style="color:${c}">${d>0?'+':''}${d}</b></div>`;})():'';
+  const saldoTxt=saldoBase+empTxt;
   if(b&&b.cicloView){
     const c=b.cicloView;
     const un=[1,2,4];
@@ -178,13 +181,14 @@ function _roboBox(mkt,b){
 }
 async function carregaRobo(){
   const el=document.getElementById('roboBox');
+  window.__botaoExportar=`<div style="display:flex;justify-content:flex-end;margin-bottom:6px"><button onclick="window.open('/api/robo/exportar?c='+encodeURIComponent(localStorage.getItem('cl_cod')||''),'_blank')" style="cursor:pointer;border:1px solid #30363d;background:#161b22;color:#8b98a8;border-radius:8px;padding:5px 12px;font-size:11px">📄 Exportar caderno (CSV)</button></div>`;
   if(!el)return;
   try{
-    const r=await fetch('/api/robo',{cache:'no-store'});
+    const r=await fetch('/api/robo?c='+encodeURIComponent(localStorage.getItem('cl_cod')||''),{cache:'no-store'});
     if(!r.ok)return;
     const j=await r.json();
     if(!j||(!j.o35&&!j.o25&&!j.ambas))return;
-    el.innerHTML=['o35','o25','ambas'].map(m=>_roboBox(m,j[m]||{})).join('');
+    el.innerHTML=(window.__botaoExportar||'')+['o35','o25','ambas'].map(m=>_roboBox(m,j[m]||{})).join('');
   }catch(e){}
 }
 async function carregaPadroes(liga,mkt){

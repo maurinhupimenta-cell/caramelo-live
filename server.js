@@ -2265,6 +2265,24 @@ async function salvaRoboLedger() {
   } catch (e) {}
 }
 function diaHoje() { try { return new Date().toLocaleDateString("en-CA", { timeZone: "America/Sao_Paulo" }); } catch (e) { return new Date().toISOString().slice(0, 10); } }
+// TAXA QUE EMPATA: com o gale 1-2-4, cada green rende (odd-1)*1u no 1o tiro (e o mesmo
+// liquido nos seguintes) e um ciclo perdido custa 7u. A taxa minima de acerto para empatar
+// depende SO da odd media do mercado. E o numero que diz se o robo tem chance matematica.
+function empateNecessario(mkt) {
+  try {
+    const k = mkt === "ambas" ? "ambs" : mkt;
+    let soma = 0, n = 0;
+    for (const liga of LIGAS) {
+      const d = store[liga]; if (!d || !d.games) continue;
+      for (const g of d.games.slice(-200)) { const o = g.odds && g.odds[k]; if (o > 1.01) { soma += o; n++; } }
+    }
+    if (!n) return null;
+    const odd = soma / n;
+    const ganho = odd - 1;              // lucro liquido de um ciclo vencedor (1u no 1o tiro)
+    return Math.round(7 / (7 + ganho) * 1000) / 10;
+  } catch (e) { return null; }
+}
+
 function registraCiclo(mkt, resultado, unidades, detalhe) {
   const L = roboState[mkt];
   L.ciclos++;
@@ -2276,7 +2294,7 @@ function registraCiclo(mkt, resultado, unidades, detalhe) {
   if (resultado === "GREEN") L.greens++; else if (resultado === "RED_CICLO") L.redsCiclo++; else if (resultado === "ABORT") L.aborts++; else L.descartes++;
   L.saldo = Math.round((L.saldo + unidades) * 10) / 10;
   L.historico.unshift({ quando: new Date().toISOString(), resultado, unidades, detalhe });
-  L.historico = L.historico.slice(0, 20);
+  L.historico = L.historico.slice(0, 600); // guarda o suficiente para auditar acertos e erros
   salvaRoboLedger();
 }
 async function carregaRobo() {
@@ -2564,6 +2582,35 @@ function atualizaRoboMkt(mkt) {
 }
 let roboRuns = 0;
 function atualizaRoboLedger() { roboRuns++; for (const m of ROBO_MKTS) atualizaRoboMkt(m); }
+app.get("/api/robo/exportar", (req, res) => {
+  try {
+    const linhas = [["data", "hora", "mercado", "resultado", "unidades", "liga", "gatilho", "detalhe"].join(";")];
+    const tudo = [];
+    for (const m of ROBO_MKTS) for (const h of (roboState[m].historico || [])) tudo.push({ m, ...h });
+    tudo.sort((a, b) => String(b.quando).localeCompare(String(a.quando)));
+    for (const h of tudo) {
+      const dt = new Date(h.quando);
+      const data = dt.toLocaleDateString("pt-BR", { timeZone: "America/Sao_Paulo" });
+      const hora = dt.toLocaleTimeString("pt-BR", { timeZone: "America/Sao_Paulo" });
+      const det = String(h.detalhe || "");
+      const liga = (det.split(" ")[0] || "").replace(/[^a-z]/gi, "");
+      const g = det.match(/gatilho:\s*([^·]+)/i);
+      linhas.push([data, hora, h.m, h.resultado, h.unidades, liga, g ? g[1].trim() : "", det.replace(/;/g, ",")].join(";"));
+    }
+    // resumo por mercado no fim
+    linhas.push("");
+    linhas.push(["RESUMO", "ciclos", "greens", "reds", "descartes", "saldo", "precisa%", "esta%"].join(";"));
+    for (const m of ROBO_MKTS) {
+      const L = roboState[m], dec = L.greens + L.redsCiclo;
+      const e = empateNecessario(m);
+      linhas.push(["", L.ciclos, L.greens, L.redsCiclo, L.descartes, L.saldo, e != null ? e + "%" : "-", dec ? Math.round(L.greens / dec * 1000) / 10 + "%" : "-"].join(";"));
+    }
+    res.setHeader("Content-Type", "text/csv; charset=utf-8");
+    res.setHeader("Content-Disposition", 'attachment; filename="amd-robo-' + new Date().toISOString().slice(0, 10) + '.csv"');
+    res.send("\uFEFF" + linhas.join("\n"));
+  } catch (e) { res.status(500).json({ erro: e.message }); }
+});
+
 app.get("/api/robo/rodar", (req, res) => {
   let err = null;
   try { atualizaRoboLedger(); } catch (e) { err = e.message + " | " + String(e.stack || "").split("\n")[1]; }
@@ -2601,6 +2648,8 @@ app.get("/api/robo", (req, res) => {
       const somaDias = n => { let s = 0; for (let i = 0; i < n; i++) { const d3 = new Date(Date.now() - i * 86400000).toLocaleDateString("en-CA", { timeZone: "America/Sao_Paulo" }); s += dias[d3] || 0; } return Math.round(s * 10) / 10; };
       if (req.query.debug) melhor.trace = Object.fromEntries(Object.entries(roboTrace).filter(([k]) => k.startsWith(mkt + "|") || k.startsWith("ERRO|" + mkt)));
       melhor.travas = { consumidas: Object.fromEntries(Object.entries(L.consumidas || {}).map(([k, v]) => [k, typeof v === "number" ? Math.round((Date.now() - v) / 60000) + "min" : String(v)])), cooldown: Object.fromEntries(Object.entries(L.cooldown || {}).filter(([k, v]) => Date.now() - v < 30 * 60000).map(([k, v]) => [k, Math.round((30 * 60000 - (Date.now() - v)) / 60000) + "min restantes"])) };
+      const _dec = L.greens + L.redsCiclo;
+      melhor.empate = { precisa: empateNecessario(mkt), esta: _dec ? Math.round(L.greens / _dec * 1000) / 10 : null };
       melhor.registro = { saldo: L.saldo, hoje: Math.round((dias[dh2] || 0) * 10) / 10, semana7: somaDias(7), mes30: somaDias(30), ciclos: L.ciclos, greens: L.greens, redsCiclo: L.redsCiclo, aborts: L.aborts, descartes: L.descartes || 0 };
       if (!melhor.liga && !melhor.cicloView && L.consumidas) {
         for (const liga of Object.keys(L.consumidas)) {
