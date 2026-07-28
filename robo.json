@@ -175,13 +175,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -125.8,
-  "ciclos": 567,
-  "greens": 343,
+  "saldo": -124.3,
+  "ciclos": 568,
+  "greens": 344,
   "redsCiclo": 94,
   "aborts": 0,
   "descartes": 130,
   "historico": [
+   {
+    "quando": "2026-07-28T14:47:53.634Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "super · Medellin x Montevideo @2.25 (tiro 2) · gatilho: coluna :31"
+   },
    {
     "quando": "2026-07-28T14:40:55.972Z",
     "resultado": "GREEN_OBS",
@@ -574,52 +580,15 @@
    }
   ],
   "consumidas": {
-   "euro": 1785246965627
+   "euro": 1785246965627,
+   "super": 1785250073532
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "15:28",
-     "jogo": "La Boca x Penarol",
-     "odd": 2.6
-    },
-    {
-     "h": "15:31",
-     "jogo": "Medellin x Montevideo",
-     "odd": 2.25
-    },
-    {
-     "h": "15:34",
-     "jogo": "Santos x Belo Horizonte",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "coluna :31",
-   "alvo": {
-    "h": "15:31",
-    "jogo": "Medellin x Montevideo",
-    "odd": 2.25,
-    "unidades": 2,
-    "desde": 1785250071734
-   },
-   "iniciadoEm": 1785249702330,
-   "tiros": [
-    {
-     "h": "15:28",
-     "jogo": "La Boca x Penarol",
-     "odd": 2.6,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785213341427,
    "premier": 1785224045730,
    "euro": 1785246965627,
-   "super": 1785217243228
+   "super": 1785250073532
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -635,7 +604,7 @@
    "2026-07-25": 21,
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
-   "2026-07-28": -4.9
+   "2026-07-28": -3.4
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
@@ -1129,7 +1098,6 @@
    }
   ],
   "consumidas": {
-   "super": 1785246545624,
    "euro": 1785246784429,
    "premier": 1785247183525
   },
