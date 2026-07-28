@@ -713,20 +713,26 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.45",
-   "n": 16,
-   "start": 3
+   "chave": "1.98",
+   "n": 8,
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -42.7,
-  "ciclos": 643,
-  "greens": 427,
+  "saldo": -41.3,
+  "ciclos": 644,
+  "greens": 428,
   "redsCiclo": 68,
   "aborts": 0,
   "descartes": 148,
   "historico": [
+   {
+    "quando": "2026-07-28T21:33:46.167Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "super · Bogota x Asuncion @2.2 (tiro 2) · gatilho: coluna :25"
+   },
    {
     "quando": "2026-07-28T21:23:50.757Z",
     "resultado": "GREEN",
@@ -1349,50 +1355,13 @@
   "consumidas": {
    "copa": 1785271030863,
    "premier": 1785271309367,
-   "euro": 1785273830564
+   "euro": 1785273830564,
+   "super": 1785274426064
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "22:22",
-     "jogo": "Montevideo x Itaquera",
-     "odd": 1.93
-    },
-    {
-     "h": "22:25",
-     "jogo": "Bogota x Asuncion",
-     "odd": 2.2
-    },
-    {
-     "h": "22:28",
-     "jogo": "Sao Paulo x Quito",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "coluna :25",
-   "alvo": {
-    "h": "22:25",
-    "jogo": "Bogota x Asuncion",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1785273902858
-   },
-   "iniciadoEm": 1785273832063,
-   "tiros": [
-    {
-     "h": "22:22",
-     "jogo": "Montevideo x Itaquera",
-     "odd": 1.93,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785273830564,
-   "super": 1785269579960,
+   "super": 1785274426064,
    "premier": 1785271309367,
    "copa": 1785271030863
   },
@@ -1409,12 +1378,12 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -21.1
+   "2026-07-28": -19.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":31",
-   "n": 18,
+   "tipo": "seq",
+   "chave": "GGRGR",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
