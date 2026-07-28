@@ -176,12 +176,18 @@
  },
  "o25": {
   "saldo": -128.3,
-  "ciclos": 578,
+  "ciclos": 579,
   "greens": 349,
   "redsCiclo": 96,
   "aborts": 0,
-  "descartes": 133,
+  "descartes": 134,
   "historico": [
+   {
+    "quando": "2026-07-28T19:20:56.427Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho seq RGGRG) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T19:14:57.430Z",
     "resultado": "GREEN_OBS",
@@ -702,7 +708,12 @@
    "n": 13,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1785266456427,
+    "gatilho": "seq RGGRG"
+   }
+  }
  },
  "ambas": {
   "saldo": -48.8,
@@ -1346,9 +1357,9 @@
    "2026-07-28": -27.2
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 13,
+   "tipo": "coluna",
+   "chave": ":23",
+   "n": 20,
    "start": 1
   },
   "_obs": {}
