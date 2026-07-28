@@ -459,12 +459,18 @@
  },
  "ambas": {
   "saldo": -19.2,
-  "ciclos": 592,
+  "ciclos": 593,
   "greens": 409,
   "redsCiclo": 62,
   "aborts": 0,
-  "descartes": 121,
+  "descartes": 122,
   "historico": [
+   {
+    "quando": "2026-07-28T09:52:51.934Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho odd 1.87) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T09:51:50.334Z",
     "resultado": "GREEN_OBS",
@@ -779,7 +785,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:57",
+     "jogo": "Norwich x Watford",
+     "odd": 1.95
+    },
+    {
+     "h": "11:00",
+     "jogo": "Leicester x Burnley",
+     "odd": 1.95
+    },
+    {
+     "h": "11:03",
+     "jogo": "Leeds x Palace",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "coluna :00",
+   "alvo": {
+    "h": "10:57",
+    "jogo": "Norwich x Watford",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1785232310425
+   },
+   "iniciadoEm": 1785232310425
+  },
   "cooldown": {
    "euro": 1785220132126,
    "super": 1785217757137,
@@ -808,9 +844,9 @@
    "start": 3
   },
   "_obs": {
-   "super": {
-    "desde": 1785232310334,
-    "gatilho": "time Buenos Aires"
+   "euro": {
+    "desde": 1785232371933,
+    "gatilho": "odd 1.87"
    }
   }
  }
