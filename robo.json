@@ -369,7 +369,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:28",
+     "jogo": "La Plata x Agua Branca",
+     "odd": 2.4
+    },
+    {
+     "h": "09:31",
+     "jogo": "Medellin x Guayaquil",
+     "odd": 2.25
+    },
+    {
+     "h": "09:34",
+     "jogo": "Bogota x Lima",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "coluna :28",
+   "alvo": {
+    "h": "09:28",
+    "jogo": "La Plata x Agua Branca",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1785227814031
+   },
+   "iniciadoEm": 1785227814031
+  },
   "cooldown": {
    "copa": 1785213341427,
    "premier": 1785224045730,
@@ -393,19 +423,15 @@
    "2026-07-28": 2.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRGR",
+   "tipo": "coluna",
+   "chave": ":52",
    "n": 8,
-   "start": 1
+   "start": 3
   },
   "_obs": {
    "copa": {
     "desde": 1785188808341,
     "gatilho": "odd 2.15"
-   },
-   "super": {
-    "desde": 1785227812134,
-    "gatilho": "coluna :28"
    }
   }
  },
@@ -670,9 +696,7 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {
-   "premier": 1785224539737
-  },
+  "consumidas": {},
   "ciclo": {
    "liga": "super",
    "degrau": 0,
@@ -727,8 +751,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Guayaquil",
-   "n": 21,
+   "chave": "Penarol",
+   "n": 17,
    "start": 2
   },
   "_obs": {}
