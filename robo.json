@@ -175,13 +175,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -128.3,
-  "ciclos": 579,
-  "greens": 349,
+  "saldo": -127.1,
+  "ciclos": 580,
+  "greens": 350,
   "redsCiclo": 96,
   "aborts": 0,
   "descartes": 134,
   "historico": [
+   {
+    "quando": "2026-07-28T19:25:56.938Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Bélgica x Portugal @2.15 (tiro 1) · gatilho: placar empate 2-2"
+   },
    {
     "quando": "2026-07-28T19:20:56.427Z",
     "resultado": "GREEN_OBS",
@@ -647,43 +653,14 @@
   ],
   "consumidas": {
    "copa": 1785264411830,
-   "super": 1785266092427
+   "super": 1785266092427,
+   "euro": 1785266756833
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:17",
-     "jogo": "Bélgica x Portugal",
-     "odd": 2.15
-    },
-    {
-     "h": "20:20",
-     "jogo": "Suíça x Albânia",
-     "odd": 2.5
-    },
-    {
-     "h": "20:23",
-     "jogo": "Áustria x Itália",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "placar empate 2-2",
-   "alvo": {
-    "h": "20:17",
-    "jogo": "Bélgica x Portugal",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785266107637
-   },
-   "iniciadoEm": 1785266107637
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785264411830,
    "premier": 1785257271230,
-   "euro": 1785260994830,
+   "euro": 1785266756833,
    "super": 1785266092427
   },
   "dias": {
@@ -700,29 +677,30 @@
    "2026-07-25": 21,
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
-   "2026-07-28": -7.4
+   "2026-07-28": -6.2
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 2-2",
-   "n": 13,
+   "n": 14,
    "start": 1
   },
-  "_obs": {
-   "premier": {
-    "desde": 1785266456427,
-    "gatilho": "seq RGGRG"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
-  "saldo": -48.8,
-  "ciclos": 636,
-  "greens": 421,
+  "saldo": -47.5,
+  "ciclos": 637,
+  "greens": 422,
   "redsCiclo": 68,
   "aborts": 0,
   "descartes": 147,
   "historico": [
+   {
+    "quando": "2026-07-28T19:25:59.332Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "euro · Suíça x Albânia @2.15 (tiro 2) · gatilho: placar empate 2-2"
+   },
    {
     "quando": "2026-07-28T19:08:23.927Z",
     "resultado": "RED_CICLO",
@@ -1302,41 +1280,12 @@
   ],
   "consumidas": {
    "copa": 1785264893833,
-   "super": 1785265703730
+   "super": 1785265703730,
+   "euro": 1785266759231
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:17",
-     "jogo": "Bélgica x Portugal",
-     "odd": 1.9
-    },
-    {
-     "h": "20:20",
-     "jogo": "Suíça x Albânia",
-     "odd": 2.15
-    },
-    {
-     "h": "20:23",
-     "jogo": "Áustria x Itália",
-     "odd": 2
-    }
-   ],
-   "gatilho": "placar empate 2-2",
-   "alvo": {
-    "h": "20:17",
-    "jogo": "Bélgica x Portugal",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1785266097433
-   },
-   "iniciadoEm": 1785266097433
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785260874532,
+   "euro": 1785266759231,
    "super": 1785265703730,
    "premier": 1785261615125,
    "copa": 1785264893833
@@ -1354,12 +1303,12 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -27.2
+   "2026-07-28": -25.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":23",
-   "n": 20,
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
