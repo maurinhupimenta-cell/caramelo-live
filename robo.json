@@ -823,7 +823,37 @@
   "consumidas": {
    "premier": 1785233146638
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:43",
+     "jogo": "Bogota x Buenos Aires",
+     "odd": 2
+    },
+    {
+     "h": "07:49",
+     "jogo": "Porto Alegre x Avellaneda",
+     "odd": 2.2
+    },
+    {
+     "h": "09:19",
+     "jogo": "Guayaquil x Sao Paulo",
+     "odd": 1.8
+    }
+   ],
+   "gatilho": "seq RRRG",
+   "alvo": {
+    "h": "07:43",
+    "jogo": "Bogota x Buenos Aires",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1785233150131
+   },
+   "iniciadoEm": 1785233150131
+  },
   "cooldown": {
    "euro": 1785220132126,
    "super": 1785217757137,
