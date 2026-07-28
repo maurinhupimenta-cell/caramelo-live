@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -120.9,
-  "ciclos": 525,
-  "greens": 337,
+  "saldo": -119.1,
+  "ciclos": 526,
+  "greens": 338,
   "redsCiclo": 92,
   "aborts": 0,
   "descartes": 96,
   "historico": [
+   {
+    "quando": "2026-07-28T03:34:53.829Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "euro · Romênia x Itália @2.2 (tiro 3) · gatilho: placar empate 1-1"
+   },
    {
     "quando": "2026-07-28T02:53:56.228Z",
     "resultado": "RED_CICLO",
@@ -304,57 +310,14 @@
   ],
   "consumidas": {
    "premier": 1785206523034,
-   "super": 1785207236037
+   "super": 1785207236037,
+   "euro": 1785209693633
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:26",
-     "jogo": "Bélgica x Geórgia",
-     "odd": 2.3
-    },
-    {
-     "h": "04:29",
-     "jogo": "Polônia x República Tcheca",
-     "odd": 2.75
-    },
-    {
-     "h": "04:32",
-     "jogo": "Romênia x Itália",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "placar empate 1-1",
-   "alvo": {
-    "h": "04:32",
-    "jogo": "Romênia x Itália",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1785209521733
-   },
-   "iniciadoEm": 1785208972135,
-   "tiros": [
-    {
-     "h": "04:26",
-     "jogo": "Bélgica x Geórgia",
-     "odd": 2.3,
-     "unidades": 1
-    },
-    {
-     "h": "04:29",
-     "jogo": "Polônia x República Tcheca",
-     "odd": 2.75,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785205852328,
    "premier": 1785206523034,
-   "euro": 1785187378397,
+   "euro": 1785209693633,
    "super": 1785207236037
   },
   "dias": {
@@ -370,7 +333,8 @@
    "2026-07-24": -1.7,
    "2026-07-25": 21,
    "2026-07-26": -3.3,
-   "2026-07-27": -75.2
+   "2026-07-27": -75.2,
+   "2026-07-28": 1.8
   },
   "_gatilhoAtual": {
    "tipo": "placar",
@@ -386,13 +350,19 @@
   }
  },
  "ambas": {
-  "saldo": -20.4,
-  "ciclos": 564,
-  "greens": 400,
+  "saldo": -19.7,
+  "ciclos": 565,
+  "greens": 401,
   "redsCiclo": 61,
   "aborts": 0,
   "descartes": 103,
   "historico": [
+   {
+    "quando": "2026-07-28T03:34:54.028Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "euro · Romênia x Itália @1.93 (tiro 3) · gatilho: placar empate 1-1"
+   },
    {
     "quando": "2026-07-28T03:11:51.835Z",
     "resultado": "GREEN",
@@ -539,55 +509,12 @@
    }
   ],
   "consumidas": {
-   "super": 1785208311732
+   "super": 1785208311732,
+   "euro": 1785209693925
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:26",
-     "jogo": "Bélgica x Geórgia",
-     "odd": 2.05
-    },
-    {
-     "h": "04:29",
-     "jogo": "Polônia x República Tcheca",
-     "odd": 2.25
-    },
-    {
-     "h": "04:32",
-     "jogo": "Romênia x Itália",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "placar empate 1-1",
-   "alvo": {
-    "h": "04:32",
-    "jogo": "Romênia x Itália",
-    "odd": 1.93,
-    "unidades": 4,
-    "desde": 1785209521928
-   },
-   "iniciadoEm": 1785208972428,
-   "tiros": [
-    {
-     "h": "04:26",
-     "jogo": "Bélgica x Geórgia",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "04:29",
-     "jogo": "Polônia x República Tcheca",
-     "odd": 2.25,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785192461007,
+   "euro": 1785209693925,
    "super": 1785208311732,
    "premier": 1785205074931,
    "copa": 1785190860182
@@ -605,7 +532,7 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": 1.2
+   "2026-07-28": 1.9
   },
   "_gatilhoAtual": {
    "tipo": "placar",
