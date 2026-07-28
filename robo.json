@@ -627,13 +627,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -26.1,
-  "ciclos": 623,
-  "greens": 415,
+  "saldo": -25.5,
+  "ciclos": 624,
+  "greens": 416,
   "redsCiclo": 64,
   "aborts": 0,
   "descartes": 144,
   "historico": [
+   {
+    "quando": "2026-07-28T15:33:00.427Z",
+    "resultado": "GREEN",
+    "unidades": 0.6,
+    "detalhe": "premier · Brighton x Everton @1.8 (tiro 2) · gatilho: odd 1.8"
+   },
    {
     "quando": "2026-07-28T15:19:52.127Z",
     "resultado": "GREEN",
@@ -1135,51 +1141,14 @@
   ],
   "consumidas": {
    "euro": 1785250855927,
-   "super": 1785251991935
+   "super": 1785251991935,
+   "premier": 1785252780232
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "16:27",
-     "jogo": "Newcastle x United",
-     "odd": 1.86
-    },
-    {
-     "h": "16:30",
-     "jogo": "Brighton x Everton",
-     "odd": 1.8
-    },
-    {
-     "h": "16:33",
-     "jogo": "Islington x Burnley",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "odd 1.8",
-   "alvo": {
-    "h": "16:30",
-    "jogo": "Brighton x Everton",
-    "odd": 1.8,
-    "unidades": 2,
-    "desde": 1785252590026
-   },
-   "iniciadoEm": 1785251994127,
-   "tiros": [
-    {
-     "h": "16:27",
-     "jogo": "Newcastle x United",
-     "odd": 1.86,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785250855927,
    "super": 1785251991935,
-   "premier": 1785247183525,
+   "premier": 1785252780232,
    "copa": 1785234490036
   },
   "dias": {
@@ -1195,11 +1164,11 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -4.5
+   "2026-07-28": -3.9
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":33",
+   "chave": ":39",
    "n": 16,
    "start": 1
   },
