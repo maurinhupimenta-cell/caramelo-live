@@ -1321,7 +1321,45 @@
    "premier": 1785271309367,
    "euro": 1785273830564
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "22:22",
+     "jogo": "Montevideo x Itaquera",
+     "odd": 1.93
+    },
+    {
+     "h": "22:25",
+     "jogo": "Bogota x Asuncion",
+     "odd": 2.2
+    },
+    {
+     "h": "22:28",
+     "jogo": "Sao Paulo x Quito",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "coluna :25",
+   "alvo": {
+    "h": "22:25",
+    "jogo": "Bogota x Asuncion",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1785273902858
+   },
+   "iniciadoEm": 1785273832063,
+   "tiros": [
+    {
+     "h": "22:22",
+     "jogo": "Montevideo x Itaquera",
+     "odd": 1.93,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1785273830564,
    "super": 1785269579960,
@@ -1345,8 +1383,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":25",
-   "n": 19,
+   "chave": ":31",
+   "n": 18,
    "start": 1
   },
   "_obs": {}
