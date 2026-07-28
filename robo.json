@@ -655,7 +655,37 @@
    "super": 1785266092427,
    "euro": 1785266756833
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:58",
+     "jogo": "Países Baixos x Uzbequistão",
+     "odd": 2.35
+    },
+    {
+     "h": "21:01",
+     "jogo": "África do Sul x Qatar",
+     "odd": 2.45
+    },
+    {
+     "h": "21:04",
+     "jogo": "Curação x Costa do Marfim",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "odd 2.45",
+   "alvo": {
+    "h": "20:58",
+    "jogo": "Países Baixos x Uzbequistão",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1785268192564
+   },
+   "iniciadoEm": 1785268192564
+  },
   "cooldown": {
    "copa": 1785264411830,
    "premier": 1785257271230,
@@ -679,10 +709,10 @@
    "2026-07-28": -6.2
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
+   "tipo": "odd",
+   "chave": "2.45",
    "n": 14,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
