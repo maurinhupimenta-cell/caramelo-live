@@ -502,37 +502,7 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "07:43",
-     "jogo": "Bogota x Buenos Aires",
-     "odd": 2.3
-    },
-    {
-     "h": "07:49",
-     "jogo": "Porto Alegre x Avellaneda",
-     "odd": 2.62
-    },
-    {
-     "h": "09:19",
-     "jogo": "Guayaquil x Sao Paulo",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "seq GGGR",
-   "alvo": {
-    "h": "07:43",
-    "jogo": "Bogota x Buenos Aires",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1785241712532
-   },
-   "iniciadoEm": 1785241712532
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785213341427,
    "premier": 1785224045730,
@@ -569,13 +539,19 @@
   }
  },
  "ambas": {
-  "saldo": -24.8,
-  "ciclos": 611,
-  "greens": 410,
+  "saldo": -24.1,
+  "ciclos": 612,
+  "greens": 411,
   "redsCiclo": 63,
   "aborts": 0,
   "descartes": 138,
   "historico": [
+   {
+    "quando": "2026-07-28T12:44:46.126Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "premier · Southampton x City @1.93 (tiro 3) · gatilho: coluna :39"
+   },
    {
     "quando": "2026-07-28T12:38:09.335Z",
     "resultado": "GREEN_OBS",
@@ -1003,56 +979,14 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "13:36",
-     "jogo": "United x Chelsea",
-     "odd": 1.95
-    },
-    {
-     "h": "13:39",
-     "jogo": "Everton x Brighton",
-     "odd": 1.85
-    },
-    {
-     "h": "13:42",
-     "jogo": "Southampton x City",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "coluna :39",
-   "alvo": {
-    "h": "13:42",
-    "jogo": "Southampton x City",
-    "odd": 1.93,
-    "unidades": 4,
-    "desde": 1785242509831
-   },
-   "iniciadoEm": 1785242287237,
-   "tiros": [
-    {
-     "h": "13:36",
-     "jogo": "United x Chelsea",
-     "odd": 1.95,
-     "unidades": 1
-    },
-    {
-     "h": "13:39",
-     "jogo": "Everton x Brighton",
-     "odd": 1.85,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1785242686024
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785220132126,
    "super": 1785217757137,
-   "premier": 1785233146638,
+   "premier": 1785242686024,
    "copa": 1785234490036
   },
   "dias": {
@@ -1068,7 +1002,7 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -3.2
+   "2026-07-28": -2.5
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
