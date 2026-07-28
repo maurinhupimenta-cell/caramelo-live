@@ -492,7 +492,37 @@
   "consumidas": {
    "premier": 1785205074931
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:04",
+     "jogo": "Rio de Janeiro x La Boca",
+     "odd": 2.02
+    },
+    {
+     "h": "04:07",
+     "jogo": "Penarol x Itaquera",
+     "odd": 2.1
+    },
+    {
+     "h": "04:10",
+     "jogo": "Medellin x Rio de Janeiro",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "time Itaquera",
+   "alvo": {
+    "h": "04:04",
+    "jogo": "Rio de Janeiro x La Boca",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1785207410931
+   },
+   "iniciadoEm": 1785207410931
+  },
   "cooldown": {
    "euro": 1785192461007,
    "super": 1785202731829,
@@ -515,9 +545,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Leeds",
-   "n": 8,
-   "start": 1
+   "chave": "Itaquera",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  }
