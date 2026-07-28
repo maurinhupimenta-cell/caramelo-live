@@ -391,13 +391,19 @@
   }
  },
  "ambas": {
-  "saldo": -21.8,
-  "ciclos": 572,
-  "greens": 406,
+  "saldo": -20.7,
+  "ciclos": 573,
+  "greens": 407,
   "redsCiclo": 62,
   "aborts": 0,
   "descartes": 104,
   "historico": [
+   {
+    "quando": "2026-07-28T06:17:38.127Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · West Ham x Chelsea @2.1 (tiro 1) · gatilho: time Brighton"
+   },
    {
     "quando": "2026-07-28T05:56:53.024Z",
     "resultado": "GREEN",
@@ -593,13 +599,44 @@
   ],
   "consumidas": {
    "super": 1785217757137,
-   "copa": 1785218212833
+   "copa": 1785218212833,
+   "premier": 1785219457929
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:20",
+     "jogo": "Geórgia x Países Baixos",
+     "odd": 1.93
+    },
+    {
+     "h": "07:23",
+     "jogo": "Hungria x Inglaterra",
+     "odd": 1.93
+    },
+    {
+     "h": "07:26",
+     "jogo": "Eslováquia x Países Baixos",
+     "odd": 1.87
+    }
+   ],
+   "gatilho": "seq GRRG",
+   "alvo": {
+    "h": "07:20",
+    "jogo": "Geórgia x Países Baixos",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1785219459736
+   },
+   "iniciadoEm": 1785219459736
+  },
   "cooldown": {
    "euro": 1785214376428,
    "super": 1785217757137,
-   "premier": 1785215140928,
+   "premier": 1785219457929,
    "copa": 1785218212833
   },
   "dias": {
@@ -615,13 +652,13 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -0.2
+   "2026-07-28": 0.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Suécia",
+   "tipo": "seq",
+   "chave": "GRRG",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
