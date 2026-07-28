@@ -401,12 +401,18 @@
  },
  "ambas": {
   "saldo": -19.2,
-  "ciclos": 581,
+  "ciclos": 582,
   "greens": 409,
   "redsCiclo": 62,
   "aborts": 0,
-  "descartes": 110,
+  "descartes": 111,
   "historico": [
+   {
+    "quando": "2026-07-28T08:35:52.229Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-28T08:33:51.736Z",
     "resultado": "GREEN_OBS",
@@ -658,35 +664,35 @@
    "premier": 1785224539737
   },
   "ciclo": {
-   "liga": "copa",
+   "liga": "super",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
      "h": "07:49",
-     "jogo": "Croácia x Austrália",
-     "odd": 2.05
+     "jogo": "Porto Alegre x Avellaneda",
+     "odd": 2.2
     },
     {
-     "h": "07:52",
-     "jogo": "Portugal x França",
-     "odd": 1.9
+     "h": "08:43",
+     "jogo": "Guayaquil x Santos",
+     "odd": 1.95
     },
     {
-     "h": "09:10",
-     "jogo": "Senegal x Coreia do Sul",
-     "odd": 2.25
+     "h": "08:46",
+     "jogo": "Asuncion x Rio de Janeiro",
+     "odd": 1.98
     }
    ],
-   "gatilho": "seq RRRG",
+   "gatilho": "time Guayaquil",
    "alvo": {
     "h": "07:49",
-    "jogo": "Croácia x Austrália",
-    "odd": 2.05,
+    "jogo": "Porto Alegre x Avellaneda",
+    "odd": 2.2,
     "unidades": 1,
-    "desde": 1785226852035
+    "desde": 1785227754437
    },
-   "iniciadoEm": 1785226852035
+   "iniciadoEm": 1785227754437
   },
   "cooldown": {
    "euro": 1785220132126,
