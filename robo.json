@@ -178,12 +178,18 @@
  },
  "o25": {
   "saldo": -118.8,
-  "ciclos": 559,
+  "ciclos": 560,
   "greens": 343,
   "redsCiclo": 93,
   "aborts": 0,
-  "descartes": 123,
+  "descartes": 124,
   "historico": [
+   {
+    "quando": "2026-07-28T13:11:06.534Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-28T13:07:03.728Z",
     "resultado": "GREEN_OBS",
@@ -585,7 +591,7 @@
    "tipo": "time",
    "chave": "Suíça",
    "n": 16,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
@@ -1039,37 +1045,7 @@
   "consumidas": {
    "premier": 1785242686024
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "08:32",
-     "jogo": "Inglaterra x Eslováquia",
-     "odd": 1.98
-    },
-    {
-     "h": "13:53",
-     "jogo": "Alemanha x Inglaterra",
-     "odd": 1.83
-    },
-    {
-     "h": "13:56",
-     "jogo": "Países Baixos x Eslovênia",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "coluna :53",
-   "alvo": {
-    "h": "08:32",
-    "jogo": "Inglaterra x Eslováquia",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785243207326
-   },
-   "iniciadoEm": 1785243207326
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785220132126,
    "super": 1785217757137,
