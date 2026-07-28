@@ -623,7 +623,37 @@
   "consumidas": {
    "premier": 1785224539737
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:44",
+     "jogo": "Hungria x Países Baixos",
+     "odd": 1.93
+    },
+    {
+     "h": "08:29",
+     "jogo": "Países Baixos x Escócia",
+     "odd": 1.86
+    },
+    {
+     "h": "08:32",
+     "jogo": "Inglaterra x Eslováquia",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "seq RGRG",
+   "alvo": {
+    "h": "07:44",
+    "jogo": "Hungria x Países Baixos",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1785224871337
+   },
+   "iniciadoEm": 1785224871337
+  },
   "cooldown": {
    "euro": 1785220132126,
    "super": 1785217757137,
@@ -646,9 +676,9 @@
    "2026-07-28": 2.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":39",
-   "n": 8,
+   "tipo": "seq",
+   "chave": "RGRG",
+   "n": 10,
    "start": 1
   },
   "_obs": {
