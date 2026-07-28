@@ -479,12 +479,18 @@
  },
  "ambas": {
   "saldo": -19.2,
-  "ciclos": 589,
+  "ciclos": 590,
   "greens": 409,
   "redsCiclo": 62,
   "aborts": 0,
-  "descartes": 118,
+  "descartes": 119,
   "historico": [
+   {
+    "quando": "2026-07-28T09:36:32.626Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-28T09:34:10.125Z",
     "resultado": "GREEN_OBS",
@@ -834,16 +840,11 @@
    "2026-07-28": 2.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":33",
-   "n": 10,
-   "start": 1
+   "tipo": "time",
+   "chave": "Uruguai",
+   "n": 8,
+   "start": 3
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785231250125,
-    "gatilho": "time Uruguai"
-   }
-  }
+  "_obs": {}
  }
 }
