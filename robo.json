@@ -656,13 +656,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -43.4,
-  "ciclos": 631,
-  "greens": 419,
+  "saldo": -42.9,
+  "ciclos": 632,
+  "greens": 420,
   "redsCiclo": 67,
   "aborts": 0,
   "descartes": 145,
   "historico": [
+   {
+    "quando": "2026-07-28T18:00:15.230Z",
+    "resultado": "GREEN",
+    "unidades": 0.5,
+    "detalhe": "premier · Burnley x Norwich @1.87 (tiro 3) · gatilho: seq RGGRG"
+   },
    {
     "quando": "2026-07-28T17:47:54.727Z",
     "resultado": "RED_CICLO",
@@ -1213,57 +1219,14 @@
   "consumidas": {
    "copa": 1785258291833,
    "super": 1785259072736,
-   "euro": 1785260874532
+   "euro": 1785260874532,
+   "premier": 1785261615125
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "18:51",
-     "jogo": "Everton x West Ham",
-     "odd": 2.07
-    },
-    {
-     "h": "18:54",
-     "jogo": "Brentford x Islington",
-     "odd": 1.98
-    },
-    {
-     "h": "18:57",
-     "jogo": "Burnley x Norwich",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "seq RGGRG",
-   "alvo": {
-    "h": "18:57",
-    "jogo": "Burnley x Norwich",
-    "odd": 1.87,
-    "unidades": 4,
-    "desde": 1785261445128
-   },
-   "iniciadoEm": 1785260932535,
-   "tiros": [
-    {
-     "h": "18:51",
-     "jogo": "Everton x West Ham",
-     "odd": 2.07,
-     "unidades": 1
-    },
-    {
-     "h": "18:54",
-     "jogo": "Brentford x Islington",
-     "odd": 1.98,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785260874532,
    "super": 1785259072736,
-   "premier": 1785257271430,
+   "premier": 1785261615125,
    "copa": 1785258291833
   },
   "dias": {
@@ -1279,7 +1242,7 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -21.8
+   "2026-07-28": -21.3
   },
   "_gatilhoAtual": {
    "tipo": "seq",
