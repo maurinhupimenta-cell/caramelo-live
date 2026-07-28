@@ -175,13 +175,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -133.7,
-  "ciclos": 575,
-  "greens": 347,
+  "saldo": -131.1,
+  "ciclos": 576,
+  "greens": 348,
   "redsCiclo": 96,
   "aborts": 0,
   "descartes": 132,
   "historico": [
+   {
+    "quando": "2026-07-28T18:46:51.934Z",
+    "resultado": "GREEN",
+    "unidades": 2.6,
+    "detalhe": "copa · Gana x Bélgica @2.4 (tiro 3) · gatilho: odd 2.45"
+   },
    {
     "quando": "2026-07-28T17:49:54.932Z",
     "resultado": "RED_CICLO",
@@ -622,55 +628,12 @@
    }
   ],
   "consumidas": {
-   "euro": 1785260994830
+   "euro": 1785260994830,
+   "copa": 1785264411830
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "19:37",
-     "jogo": "Irã x Gana",
-     "odd": 2.62
-    },
-    {
-     "h": "19:40",
-     "jogo": "Tunísia x México",
-     "odd": 2.45
-    },
-    {
-     "h": "19:43",
-     "jogo": "Gana x Bélgica",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "odd 2.45",
-   "alvo": {
-    "h": "19:43",
-    "jogo": "Gana x Bélgica",
-    "odd": 2.4,
-    "unidades": 4,
-    "desde": 1785264351928
-   },
-   "iniciadoEm": 1785263333127,
-   "tiros": [
-    {
-     "h": "19:37",
-     "jogo": "Irã x Gana",
-     "odd": 2.62,
-     "unidades": 1
-    },
-    {
-     "h": "19:40",
-     "jogo": "Tunísia x México",
-     "odd": 2.45,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785255172126,
+   "copa": 1785264411830,
    "premier": 1785257271230,
    "euro": 1785260994830,
    "super": 1785257884536
@@ -689,13 +652,13 @@
    "2026-07-25": 21,
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
-   "2026-07-28": -12.8
+   "2026-07-28": -10.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Suíça",
-   "n": 17,
-   "start": 3
+   "n": 16,
+   "start": 2
   },
   "_obs": {}
  },
