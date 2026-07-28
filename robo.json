@@ -178,12 +178,18 @@
  },
  "o25": {
   "saldo": -118.8,
-  "ciclos": 558,
+  "ciclos": 559,
   "greens": 343,
   "redsCiclo": 93,
   "aborts": 0,
-  "descartes": 122,
+  "descartes": 123,
   "historico": [
+   {
+    "quando": "2026-07-28T13:07:03.728Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Suíça) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T13:01:07.228Z",
     "resultado": "GREEN_OBS",
@@ -581,7 +587,12 @@
    "n": 12,
    "start": 3
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1785244023727,
+    "gatilho": "time Suíça"
+   }
+  }
  },
  "ambas": {
   "saldo": -24.1,
