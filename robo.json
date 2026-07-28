@@ -1154,7 +1154,37 @@
    "premier": 1785252780232,
    "copa": 1785253913637
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:26",
+     "jogo": "Suíça x Áustria",
+     "odd": 1.93
+    },
+    {
+     "h": "17:29",
+     "jogo": "Geórgia x Itália",
+     "odd": 2.05
+    },
+    {
+     "h": "17:32",
+     "jogo": "Croácia x Sérvia",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "coluna :26",
+   "alvo": {
+    "h": "17:26",
+    "jogo": "Suíça x Áustria",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1785255836328
+   },
+   "iniciadoEm": 1785255836328
+  },
   "cooldown": {
    "euro": 1785250855927,
    "super": 1785251991935,
@@ -1177,9 +1207,9 @@
    "2026-07-28": -10.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGGR",
-   "n": 10,
+   "tipo": "coluna",
+   "chave": ":26",
+   "n": 17,
    "start": 1
   },
   "_obs": {}
