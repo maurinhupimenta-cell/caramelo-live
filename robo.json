@@ -399,16 +399,12 @@
    "tipo": "odd",
    "chave": "2.15",
    "n": 8,
-   "start": 3
+   "start": 1
   },
   "_obs": {
    "copa": {
     "desde": 1785188808341,
     "gatilho": "odd 2.15"
-   },
-   "premier": {
-    "desde": 1785216623528,
-    "gatilho": "placar empate 2-2"
    }
   }
  },
@@ -599,7 +595,37 @@
    "euro": 1785214376428,
    "premier": 1785215140928
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:40",
+     "jogo": "Rio de Janeiro x Agua Branca",
+     "odd": 1.9
+    },
+    {
+     "h": "06:43",
+     "jogo": "Lima x Santos",
+     "odd": 1.98
+    },
+    {
+     "h": "06:46",
+     "jogo": "Buenos Aires x Bogota",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "time Lima",
+   "alvo": {
+    "h": "06:40",
+    "jogo": "Rio de Janeiro x Agua Branca",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1785216881332
+   },
+   "iniciadoEm": 1785216881332
+  },
   "cooldown": {
    "euro": 1785214376428,
    "super": 1785208311732,
@@ -623,10 +649,15 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Leeds",
-   "n": 13,
-   "start": 1
+   "chave": "Lima",
+   "n": 12,
+   "start": 2
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1785216843038,
+    "gatilho": "seq GRRR"
+   }
+  }
  }
 }
