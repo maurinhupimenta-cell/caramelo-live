@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -161.3,
-  "ciclos": 177,
-  "greens": 60,
+  "saldo": -158.3,
+  "ciclos": 178,
+  "greens": 61,
   "redsCiclo": 76,
   "aborts": 0,
   "descartes": 41,
   "historico": [
+   {
+    "quando": "2026-07-28T10:35:42.028Z",
+    "resultado": "GREEN",
+    "unidades": 3,
+    "detalhe": "premier · Wolverhampton x Brentford @4 (tiro 1) · gatilho: odd 3.6"
+   },
    {
     "quando": "2026-07-28T10:27:21.736Z",
     "resultado": "GREEN_OBS",
@@ -134,41 +140,13 @@
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "11:33",
-     "jogo": "Wolverhampton x Brentford",
-     "odd": 4
-    },
-    {
-     "h": "11:36",
-     "jogo": "Brighton x Newcastle",
-     "odd": 3.6
-    },
-    {
-     "h": "11:39",
-     "jogo": "Islington x Wolverhampton",
-     "odd": 4
-    }
-   ],
-   "gatilho": "odd 3.6",
-   "alvo": {
-    "h": "11:33",
-    "jogo": "Wolverhampton x Brentford",
-    "odd": 4,
-    "unidades": 1,
-    "desde": 1785234449733
-   },
-   "iniciadoEm": 1785234449733
+  "consumidas": {
+   "premier": 1785234941832
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785038273206,
-   "premier": 1785014626400,
+   "premier": 1785234941832,
    "euro": 1784650513155,
    "super": 1784965764803
   },
@@ -182,13 +160,13 @@
    "2026-07-22": -7,
    "2026-07-25": 6.8,
    "2026-07-26": -7,
-   "2026-07-28": 0
+   "2026-07-28": 3
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "3.6",
    "n": 8,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
@@ -532,10 +510,10 @@
    "2026-07-28": 2.1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":28",
-   "n": 10,
-   "start": 3
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 8,
+   "start": 1
   },
   "_obs": {}
  },
