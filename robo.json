@@ -175,13 +175,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -124.3,
-  "ciclos": 569,
-  "greens": 344,
+  "saldo": -123.2,
+  "ciclos": 570,
+  "greens": 345,
   "redsCiclo": 94,
   "aborts": 0,
   "descartes": 131,
   "historico": [
+   {
+    "quando": "2026-07-28T15:08:53.135Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Egito x Haiti @2.07 (tiro 1) · gatilho: time Suíça"
+   },
    {
     "quando": "2026-07-28T15:02:53.726Z",
     "resultado": "GREEN_OBS",
@@ -586,41 +592,12 @@
    }
   ],
   "consumidas": {
-   "super": 1785250073532
+   "super": 1785250073532,
+   "copa": 1785251333032
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:04",
-     "jogo": "Egito x Haiti",
-     "odd": 2.07
-    },
-    {
-     "h": "16:07",
-     "jogo": "Suíça x África do Sul",
-     "odd": 2.5
-    },
-    {
-     "h": "16:10",
-     "jogo": "Inglaterra x Arábia Saudita",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "time Suíça",
-   "alvo": {
-    "h": "16:04",
-    "jogo": "Egito x Haiti",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1785250974831
-   },
-   "iniciadoEm": 1785250974831
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785213341427,
+   "copa": 1785251333032,
    "premier": 1785224045730,
    "euro": 1785246965627,
    "super": 1785250073532
@@ -639,7 +616,7 @@
    "2026-07-25": 21,
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
-   "2026-07-28": -3.4
+   "2026-07-28": -2.3
   },
   "_gatilhoAtual": {
    "tipo": "time",
@@ -1206,16 +1183,11 @@
    "2026-07-28": -6.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.25",
-   "n": 8,
-   "start": 3
+   "tipo": "seq",
+   "chave": "RRRGG",
+   "n": 20,
+   "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785251095225,
-    "gatilho": "seq RRRGG"
-   }
-  }
+  "_obs": {}
  }
 }
