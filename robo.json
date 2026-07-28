@@ -176,12 +176,18 @@
  },
  "o25": {
   "saldo": -124.3,
-  "ciclos": 568,
+  "ciclos": 569,
   "greens": 344,
   "redsCiclo": 94,
   "aborts": 0,
-  "descartes": 130,
+  "descartes": 131,
   "historico": [
+   {
+    "quando": "2026-07-28T15:02:53.726Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Suíça) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T14:47:53.634Z",
     "resultado": "GREEN",
@@ -619,13 +625,19 @@
   }
  },
  "ambas": {
-  "saldo": -29.1,
-  "ciclos": 620,
-  "greens": 413,
+  "saldo": -28.1,
+  "ciclos": 621,
+  "greens": 414,
   "redsCiclo": 64,
   "aborts": 0,
   "descartes": 143,
   "historico": [
+   {
+    "quando": "2026-07-28T15:00:56.030Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Geórgia x Áustria @2.05 (tiro 1) · gatilho: odd 1.87"
+   },
    {
     "quando": "2026-07-28T15:00:53.227Z",
     "resultado": "GREEN_OBS",
@@ -1107,40 +1119,42 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "euro": 1785250855927
+  },
   "ciclo": {
-   "liga": "euro",
+   "liga": "super",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "15:50",
-     "jogo": "Geórgia x Áustria",
-     "odd": 2.05
+     "h": "16:07",
+     "jogo": "Montevideo x Belo Horizonte",
+     "odd": 1.85
     },
     {
-     "h": "15:53",
-     "jogo": "Espanha x Escócia",
-     "odd": 1.87
+     "h": "16:10",
+     "jogo": "Itaquera x Asuncion",
+     "odd": 2.07
     },
     {
-     "h": "15:56",
-     "jogo": "Turquia x Itália",
-     "odd": 2.1
+     "h": "16:13",
+     "jogo": "Rio de Janeiro x Porto Alegre",
+     "odd": 2.25
     }
    ],
-   "gatilho": "odd 1.87",
+   "gatilho": "odd 2.07",
    "alvo": {
-    "h": "15:50",
-    "jogo": "Geórgia x Áustria",
-    "odd": 2.05,
+    "h": "16:07",
+    "jogo": "Montevideo x Belo Horizonte",
+    "odd": 1.85,
     "unidades": 1,
-    "desde": 1785250426938
+    "desde": 1785250857426
    },
-   "iniciadoEm": 1785250426938
+   "iniciadoEm": 1785250857426
   },
   "cooldown": {
-   "euro": 1785246784429,
+   "euro": 1785250855927,
    "super": 1785246545624,
    "premier": 1785247183525,
    "copa": 1785234490036
@@ -1158,19 +1172,14 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -7.5
+   "2026-07-28": -6.5
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "1.87",
-   "n": 17,
-   "start": 1
+   "chave": "2.25",
+   "n": 8,
+   "start": 3
   },
-  "_obs": {
-   "super": {
-    "desde": 1785250853227,
-    "gatilho": "odd 2.07"
-   }
-  }
+  "_obs": {}
  }
 }
