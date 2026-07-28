@@ -459,12 +459,18 @@
  },
  "ambas": {
   "saldo": -19.2,
-  "ciclos": 591,
+  "ciclos": 592,
   "greens": 409,
   "redsCiclo": 62,
   "aborts": 0,
-  "descartes": 120,
+  "descartes": 121,
   "historico": [
+   {
+    "quando": "2026-07-28T09:51:50.334Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho time Buenos Aires) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T09:51:34.929Z",
     "resultado": "DESCARTADO",
@@ -773,37 +779,7 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "09:19",
-     "jogo": "Guayaquil x Sao Paulo",
-     "odd": 1.8
-    },
-    {
-     "h": "10:34",
-     "jogo": "La Plata x Itaquera",
-     "odd": 2.15
-    },
-    {
-     "h": "10:37",
-     "jogo": "Quito x Avellaneda",
-     "odd": 2
-    }
-   ],
-   "gatilho": "time Itaquera",
-   "alvo": {
-    "h": "09:19",
-    "jogo": "Guayaquil x Sao Paulo",
-    "odd": 1.8,
-    "unidades": 1,
-    "desde": 1785231394533
-   },
-   "iniciadoEm": 1785231394533
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785220132126,
    "super": 1785217757137,
@@ -831,6 +807,11 @@
    "n": 10,
    "start": 3
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1785232310334,
+    "gatilho": "time Buenos Aires"
+   }
+  }
  }
 }
