@@ -177,13 +177,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -118.8,
-  "ciclos": 564,
+  "saldo": -125.8,
+  "ciclos": 565,
   "greens": 343,
-  "redsCiclo": 93,
+  "redsCiclo": 94,
   "aborts": 0,
   "descartes": 128,
   "historico": [
+   {
+    "quando": "2026-07-28T13:56:05.731Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: time Albânia"
+   },
    {
     "quando": "2026-07-28T13:43:48.734Z",
     "resultado": "GREEN_OBS",
@@ -557,56 +563,14 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "14:47",
-     "jogo": "República Tcheca x Sérvia",
-     "odd": 2.75
-    },
-    {
-     "h": "14:50",
-     "jogo": "Espanha x Albânia",
-     "odd": 2.45
-    },
-    {
-     "h": "14:53",
-     "jogo": "Sérvia x Escócia",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "time Albânia",
-   "alvo": {
-    "h": "14:53",
-    "jogo": "Sérvia x Escócia",
-    "odd": 2.4,
-    "unidades": 4,
-    "desde": 1785246784132
-   },
-   "iniciadoEm": 1785246228736,
-   "tiros": [
-    {
-     "h": "14:47",
-     "jogo": "República Tcheca x Sérvia",
-     "odd": 2.75,
-     "unidades": 1
-    },
-    {
-     "h": "14:50",
-     "jogo": "Espanha x Albânia",
-     "odd": 2.45,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "euro": 1785246965627
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785213341427,
    "premier": 1785224045730,
-   "euro": 1785214193128,
+   "euro": 1785246965627,
    "super": 1785217243228
   },
   "dias": {
@@ -623,7 +587,7 @@
    "2026-07-25": 21,
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
-   "2026-07-28": 2.1
+   "2026-07-28": -4.9
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -634,13 +598,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -31.1,
-  "ciclos": 617,
-  "greens": 411,
+  "saldo": -30,
+  "ciclos": 618,
+  "greens": 412,
   "redsCiclo": 64,
   "aborts": 0,
   "descartes": 142,
   "historico": [
+   {
+    "quando": "2026-07-28T13:53:04.627Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Espanha x Albânia @2.1 (tiro 1) · gatilho: coluna :53"
+   },
    {
     "quando": "2026-07-28T13:49:05.730Z",
     "resultado": "RED_CICLO",
@@ -1105,41 +1075,42 @@
    }
   ],
   "consumidas": {
-   "super": 1785246545624
+   "super": 1785246545624,
+   "euro": 1785246784429
   },
   "ciclo": {
-   "liga": "euro",
+   "liga": "premier",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "14:50",
-     "jogo": "Espanha x Albânia",
-     "odd": 2.1
+     "h": "14:54",
+     "jogo": "Newcastle x City",
+     "odd": 1.8
     },
     {
-     "h": "14:53",
-     "jogo": "Sérvia x Escócia",
-     "odd": 2.05
+     "h": "14:57",
+     "jogo": "Brighton x Southampton",
+     "odd": 1.93
     },
     {
-     "h": "14:56",
-     "jogo": "Ucrânia x Geórgia",
-     "odd": 2.07
+     "h": "15:00",
+     "jogo": "Islington x Everton",
+     "odd": 1.9
     }
    ],
-   "gatilho": "coluna :53",
+   "gatilho": "odd 1.8",
    "alvo": {
-    "h": "14:50",
-    "jogo": "Espanha x Albânia",
-    "odd": 2.1,
+    "h": "14:54",
+    "jogo": "Newcastle x City",
+    "odd": 1.8,
     "unidades": 1,
-    "desde": 1785246547325
+    "desde": 1785246786527
    },
-   "iniciadoEm": 1785246547325
+   "iniciadoEm": 1785246786527
   },
   "cooldown": {
-   "euro": 1785220132126,
+   "euro": 1785246784429,
    "super": 1785246545624,
    "premier": 1785242686024,
    "copa": 1785234490036
@@ -1157,7 +1128,7 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -9.5
+   "2026-07-28": -8.4
   },
   "_gatilhoAtual": {
    "tipo": "odd",
