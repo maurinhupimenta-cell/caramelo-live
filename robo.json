@@ -489,9 +489,9 @@
    "2026-07-28": 2.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Albânia",
-   "n": 14,
+   "tipo": "odd",
+   "chave": "2.45",
+   "n": 10,
    "start": 3
   },
   "_obs": {}
@@ -844,7 +844,45 @@
   "consumidas": {
    "premier": 1785233146638
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "11:19",
+     "jogo": "Turquia x Inglaterra",
+     "odd": 1.98
+    },
+    {
+     "h": "11:22",
+     "jogo": "Uruguai x Equador",
+     "odd": 1.9
+    },
+    {
+     "h": "11:25",
+     "jogo": "Japão x Cabo Verde",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time Uruguai",
+   "alvo": {
+    "h": "11:22",
+    "jogo": "Uruguai x Equador",
+    "odd": 1.9,
+    "unidades": 2,
+    "desde": 1785234230330
+   },
+   "iniciadoEm": 1785234052628,
+   "tiros": [
+    {
+     "h": "11:19",
+     "jogo": "Turquia x Inglaterra",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1785220132126,
    "super": 1785217757137,
@@ -870,13 +908,8 @@
    "tipo": "time",
    "chave": "Uruguai",
    "n": 9,
-   "start": 3
+   "start": 2
   },
-  "_obs": {
-   "super": {
-    "desde": 1785234052626,
-    "gatilho": "odd 2"
-   }
-  }
+  "_obs": {}
  }
 }
