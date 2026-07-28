@@ -486,37 +486,7 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "07:49",
-     "jogo": "Croácia x Austrália",
-     "odd": 2.35
-    },
-    {
-     "h": "07:52",
-     "jogo": "Portugal x França",
-     "odd": 2.15
-    },
-    {
-     "h": "12:01",
-     "jogo": "Suécia x República Tcheca",
-     "odd": 2.7
-    }
-   ],
-   "gatilho": "seq RRRRG",
-   "alvo": {
-    "h": "07:49",
-    "jogo": "Croácia x Austrália",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1785236471936
-   },
-   "iniciadoEm": 1785236471936
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785213341427,
    "premier": 1785224045730,
@@ -922,9 +892,7 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {
-   "copa": 1785234490036
-  },
+  "consumidas": {},
   "ciclo": {
    "liga": "super",
    "degrau": 0,
@@ -978,9 +946,9 @@
    "2026-07-28": -3.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRG",
-   "n": 8,
+   "tipo": "coluna",
+   "chave": ":30",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
