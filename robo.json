@@ -630,7 +630,37 @@
   "consumidas": {
    "copa": 1785264411830
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:01",
+     "jogo": "Belo Horizonte x Rio de Janeiro",
+     "odd": 2.1
+    },
+    {
+     "h": "20:04",
+     "jogo": "Santiago x Agua Branca",
+     "odd": 2
+    },
+    {
+     "h": "20:07",
+     "jogo": "Lima x Porto Alegre",
+     "odd": 2.45
+    }
+   ],
+   "gatilho": "seq GRRGG",
+   "alvo": {
+    "h": "20:01",
+    "jogo": "Belo Horizonte x Rio de Janeiro",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785265191629
+   },
+   "iniciadoEm": 1785265191629
+  },
   "cooldown": {
    "copa": 1785264411830,
    "premier": 1785257271230,
@@ -654,10 +684,10 @@
    "2026-07-28": -10.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Suíça",
-   "n": 16,
-   "start": 2
+   "tipo": "seq",
+   "chave": "GRRGG",
+   "n": 8,
+   "start": 1
   },
   "_obs": {}
  },
