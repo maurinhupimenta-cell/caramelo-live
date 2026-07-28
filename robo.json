@@ -321,13 +321,19 @@
   }
  },
  "ambas": {
-  "saldo": -22.6,
-  "ciclos": 562,
-  "greens": 398,
+  "saldo": -21.6,
+  "ciclos": 563,
+  "greens": 399,
   "redsCiclo": 61,
   "aborts": 0,
   "descartes": 103,
   "historico": [
+   {
+    "quando": "2026-07-28T02:17:55.129Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Chelsea x Watford @2.05 (tiro 1) · gatilho: time Leeds"
+   },
    {
     "quando": "2026-07-28T01:38:52.229Z",
     "resultado": "GREEN",
@@ -462,43 +468,14 @@
    }
   ],
   "consumidas": {
-   "super": 1785202731829
+   "super": 1785202731829,
+   "premier": 1785205074931
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:15",
-     "jogo": "Chelsea x Watford",
-     "odd": 2.05
-    },
-    {
-     "h": "03:18",
-     "jogo": "City x Leeds",
-     "odd": 2.1
-    },
-    {
-     "h": "03:21",
-     "jogo": "Brentford x Islington",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "time Leeds",
-   "alvo": {
-    "h": "03:15",
-    "jogo": "Chelsea x Watford",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785204366934
-   },
-   "iniciadoEm": 1785204366934
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785192461007,
    "super": 1785202731829,
-   "premier": 1785200202930,
+   "premier": 1785205074931,
    "copa": 1785190860182
   },
   "dias": {
@@ -513,13 +490,13 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": 5
+   "2026-07-27": 6
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Leeds",
    "n": 8,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
