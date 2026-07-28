@@ -496,37 +496,7 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "07:44",
-     "jogo": "Hungria x Países Baixos",
-     "odd": 2.2
-    },
-    {
-     "h": "08:29",
-     "jogo": "Países Baixos x Escócia",
-     "odd": 2.07
-    },
-    {
-     "h": "08:32",
-     "jogo": "Inglaterra x Eslováquia",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "placar empate 2-2",
-   "alvo": {
-    "h": "07:44",
-    "jogo": "Hungria x Países Baixos",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785238132837
-   },
-   "iniciadoEm": 1785238132837
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785213341427,
    "premier": 1785224045730,
@@ -559,12 +529,18 @@
  },
  "ambas": {
   "saldo": -24.8,
-  "ciclos": 605,
+  "ciclos": 606,
   "greens": 410,
   "redsCiclo": 63,
   "aborts": 0,
-  "descartes": 132,
+  "descartes": 133,
   "historico": [
+   {
+    "quando": "2026-07-28T11:58:33.227Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-28T11:43:31.824Z",
     "resultado": "GREEN_OBS",
@@ -1010,10 +986,10 @@
    "2026-07-28": -3.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.87",
-   "n": 14,
-   "start": 3
+   "tipo": "seq",
+   "chave": "RRRRG",
+   "n": 9,
+   "start": 1
   },
   "_obs": {}
  }
