@@ -175,13 +175,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -122.8,
-  "ciclos": 583,
-  "greens": 353,
+  "saldo": -121.7,
+  "ciclos": 584,
+  "greens": 354,
   "redsCiclo": 96,
   "aborts": 0,
   "descartes": 134,
   "historico": [
+   {
+    "quando": "2026-07-28T22:27:48.264Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Wolverhampton x Liverpool @2.07 (tiro 1) · gatilho: seq GRGRG"
+   },
    {
     "quando": "2026-07-28T21:49:46.064Z",
     "resultado": "GREEN",
@@ -671,42 +677,13 @@
   ],
   "consumidas": {
    "copa": 1785275010762,
-   "super": 1785275385869
+   "super": 1785275385869,
+   "premier": 1785277668066
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:24",
-     "jogo": "Wolverhampton x Liverpool",
-     "odd": 2.07
-    },
-    {
-     "h": "23:27",
-     "jogo": "Burnley x Palace",
-     "odd": 2.1
-    },
-    {
-     "h": "23:30",
-     "jogo": "Brighton x Wolverhampton",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "seq GRGRG",
-   "alvo": {
-    "h": "23:24",
-    "jogo": "Wolverhampton x Liverpool",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1785277240860
-   },
-   "iniciadoEm": 1785277240860
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785275010762,
-   "premier": 1785257271230,
+   "premier": 1785277668066,
    "euro": 1785266756833,
    "super": 1785275385869
   },
@@ -724,7 +701,7 @@
    "2026-07-25": 21,
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
-   "2026-07-28": -1.9
+   "2026-07-28": -0.8
   },
   "_gatilhoAtual": {
    "tipo": "seq",
