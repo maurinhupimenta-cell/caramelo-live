@@ -135,7 +135,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:33",
+     "jogo": "Wolverhampton x Brentford",
+     "odd": 4
+    },
+    {
+     "h": "11:36",
+     "jogo": "Brighton x Newcastle",
+     "odd": 3.6
+    },
+    {
+     "h": "11:39",
+     "jogo": "Islington x Wolverhampton",
+     "odd": 4
+    }
+   ],
+   "gatilho": "odd 3.6",
+   "alvo": {
+    "h": "11:33",
+    "jogo": "Wolverhampton x Brentford",
+    "odd": 4,
+    "unidades": 1,
+    "desde": 1785234449733
+   },
+   "iniciadoEm": 1785234449733
+  },
   "cooldown": {
    "copa": 1785038273206,
    "premier": 1785014626400,
@@ -156,16 +186,11 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "4.2",
-   "n": 9,
+   "chave": "3.6",
+   "n": 8,
    "start": 3
   },
-  "_obs": {
-   "premier": {
-    "desde": 1785234441736,
-    "gatilho": "odd 3.6"
-   }
-  }
+  "_obs": {}
  },
  "o25": {
   "saldo": -118.8,
