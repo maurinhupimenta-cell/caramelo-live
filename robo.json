@@ -176,12 +176,18 @@
  },
  "o25": {
   "saldo": -128.3,
-  "ciclos": 577,
+  "ciclos": 578,
   "greens": 349,
   "redsCiclo": 96,
   "aborts": 0,
-  "descartes": 132,
+  "descartes": 133,
   "historico": [
+   {
+    "quando": "2026-07-28T19:14:57.430Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho placar empate 2-2) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T19:14:52.530Z",
     "resultado": "GREEN",
@@ -637,7 +643,37 @@
    "copa": 1785264411830,
    "super": 1785266092427
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:17",
+     "jogo": "Bélgica x Portugal",
+     "odd": 2.15
+    },
+    {
+     "h": "20:20",
+     "jogo": "Suíça x Albânia",
+     "odd": 2.5
+    },
+    {
+     "h": "20:23",
+     "jogo": "Áustria x Itália",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "placar empate 2-2",
+   "alvo": {
+    "h": "20:17",
+    "jogo": "Bélgica x Portugal",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785266107637
+   },
+   "iniciadoEm": 1785266107637
+  },
   "cooldown": {
    "copa": 1785264411830,
    "premier": 1785257271230,
@@ -661,9 +697,9 @@
    "2026-07-28": -7.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRGG",
-   "n": 8,
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
@@ -1257,7 +1293,37 @@
    "copa": 1785264893833,
    "super": 1785265703730
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:17",
+     "jogo": "Bélgica x Portugal",
+     "odd": 1.9
+    },
+    {
+     "h": "20:20",
+     "jogo": "Suíça x Albânia",
+     "odd": 2.15
+    },
+    {
+     "h": "20:23",
+     "jogo": "Áustria x Itália",
+     "odd": 2
+    }
+   ],
+   "gatilho": "placar empate 2-2",
+   "alvo": {
+    "h": "20:17",
+    "jogo": "Bélgica x Portugal",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1785266097433
+   },
+   "iniciadoEm": 1785266097433
+  },
   "cooldown": {
    "euro": 1785260874532,
    "super": 1785265703730,
@@ -1280,9 +1346,9 @@
    "2026-07-28": -27.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRGG",
-   "n": 11,
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
