@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -118,
-  "ciclos": 528,
-  "greens": 339,
+  "saldo": -115.8,
+  "ciclos": 529,
+  "greens": 340,
   "redsCiclo": 92,
   "aborts": 0,
   "descartes": 97,
   "historico": [
+   {
+    "quando": "2026-07-28T04:35:41.530Z",
+    "resultado": "GREEN",
+    "unidades": 2.2,
+    "detalhe": "copa · Iraque x Noruega @2.3 (tiro 3) · gatilho: seq GGRR"
+   },
    {
     "quando": "2026-07-28T04:05:54.036Z",
     "resultado": "GREEN",
@@ -321,55 +327,42 @@
    }
   ],
   "consumidas": {
-   "super": 1785211553935
+   "super": 1785211553935,
+   "copa": 1785213341427
   },
   "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "05:25",
-     "jogo": "Curação x Gana",
-     "odd": 2.25
-    },
-    {
-     "h": "05:28",
-     "jogo": "Suécia x Bósnia e Herzegovina",
-     "odd": 2.4
-    },
-    {
-     "h": "05:31",
-     "jogo": "Iraque x Noruega",
+     "h": "05:41",
+     "jogo": "Geórgia x Croácia",
      "odd": 2.3
+    },
+    {
+     "h": "05:44",
+     "jogo": "Sérvia x Ucrânia",
+     "odd": 2.5
+    },
+    {
+     "h": "05:47",
+     "jogo": "Geórgia x Eslováquia",
+     "odd": 2.4
     }
    ],
-   "gatilho": "seq GGRR",
+   "gatilho": "time Croácia",
    "alvo": {
-    "h": "05:31",
-    "jogo": "Iraque x Noruega",
+    "h": "05:41",
+    "jogo": "Geórgia x Croácia",
     "odd": 2.3,
-    "unidades": 4,
-    "desde": 1785213052835
+    "unidades": 1,
+    "desde": 1785213592435
    },
-   "iniciadoEm": 1785212516425,
-   "tiros": [
-    {
-     "h": "05:25",
-     "jogo": "Curação x Gana",
-     "odd": 2.25,
-     "unidades": 1
-    },
-    {
-     "h": "05:28",
-     "jogo": "Suécia x Bósnia e Herzegovina",
-     "odd": 2.4,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1785213592435
   },
   "cooldown": {
-   "copa": 1785205852328,
+   "copa": 1785213341427,
    "premier": 1785206523034,
    "euro": 1785209693633,
    "super": 1785211553935
@@ -388,11 +381,11 @@
    "2026-07-25": 21,
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
-   "2026-07-28": 2.9
+   "2026-07-28": 5.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRR",
+   "tipo": "time",
+   "chave": "Croácia",
    "n": 8,
    "start": 1
   },
