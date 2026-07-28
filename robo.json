@@ -680,7 +680,37 @@
    "super": 1785275385869,
    "premier": 1785277668066
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:44",
+     "jogo": "Eslováquia x Albânia",
+     "odd": 2.7
+    },
+    {
+     "h": "23:47",
+     "jogo": "Inglaterra x Países Baixos",
+     "odd": 1.98
+    },
+    {
+     "h": "23:50",
+     "jogo": "Croácia x Espanha",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "odd 1.98",
+   "alvo": {
+    "h": "23:44",
+    "jogo": "Eslováquia x Albânia",
+    "odd": 2.7,
+    "unidades": 1,
+    "desde": 1785278447962
+   },
+   "iniciadoEm": 1785278447962
+  },
   "cooldown": {
    "copa": 1785275010762,
    "premier": 1785277668066,
@@ -704,10 +734,10 @@
    "2026-07-28": -0.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGRG",
+   "tipo": "odd",
+   "chave": "1.98",
    "n": 8,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  },
@@ -1416,7 +1446,7 @@
    "tipo": "time",
    "chave": "Suíça",
    "n": 18,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
