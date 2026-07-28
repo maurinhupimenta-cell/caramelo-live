@@ -429,30 +429,38 @@
    "2026-07-28": 2.1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":52",
+   "tipo": "odd",
+   "chave": "2.45",
    "n": 8,
-   "start": 3
+   "start": 1
   },
   "_obs": {
    "copa": {
     "desde": 1785188808341,
     "gatilho": "odd 2.15"
-   },
-   "euro": {
-    "desde": 1785228211630,
-    "gatilho": "time Albânia"
    }
   }
  },
  "ambas": {
   "saldo": -19.2,
-  "ciclos": 582,
+  "ciclos": 584,
   "greens": 409,
   "redsCiclo": 62,
   "aborts": 0,
-  "descartes": 111,
+  "descartes": 113,
   "historico": [
+   {
+    "quando": "2026-07-28T08:51:12.325Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho time Buenos Aires) — liga REARMADA"
+   },
+   {
+    "quando": "2026-07-28T08:51:10.329Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-28T08:35:52.229Z",
     "resultado": "DESCARTADO",
@@ -708,35 +716,35 @@
   ],
   "consumidas": {},
   "ciclo": {
-   "liga": "super",
+   "liga": "euro",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "07:49",
-     "jogo": "Porto Alegre x Avellaneda",
-     "odd": 2.2
+     "h": "07:44",
+     "jogo": "Hungria x Países Baixos",
+     "odd": 1.93
     },
     {
-     "h": "08:43",
-     "jogo": "Guayaquil x Santos",
-     "odd": 1.95
+     "h": "08:29",
+     "jogo": "Países Baixos x Escócia",
+     "odd": 1.86
     },
     {
-     "h": "08:46",
-     "jogo": "Asuncion x Rio de Janeiro",
+     "h": "08:32",
+     "jogo": "Inglaterra x Eslováquia",
      "odd": 1.98
     }
    ],
-   "gatilho": "time Guayaquil",
+   "gatilho": "seq RRRRR",
    "alvo": {
-    "h": "07:49",
-    "jogo": "Porto Alegre x Avellaneda",
-    "odd": 2.2,
+    "h": "07:44",
+    "jogo": "Hungria x Países Baixos",
+    "odd": 1.93,
     "unidades": 1,
-    "desde": 1785227754437
+    "desde": 1785228672327
    },
-   "iniciadoEm": 1785227754437
+   "iniciadoEm": 1785228672327
   },
   "cooldown": {
    "euro": 1785220132126,
@@ -761,8 +769,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GGGG",
-   "n": 10,
+   "chave": "RRRRR",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
