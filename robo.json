@@ -626,13 +626,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -25.5,
-  "ciclos": 624,
+  "saldo": -32.5,
+  "ciclos": 625,
   "greens": 416,
-  "redsCiclo": 64,
+  "redsCiclo": 65,
   "aborts": 0,
   "descartes": 144,
   "historico": [
+   {
+    "quando": "2026-07-28T15:51:53.826Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: seq RGRGG"
+   },
    {
     "quando": "2026-07-28T15:33:00.427Z",
     "resultado": "GREEN",
@@ -1141,58 +1147,15 @@
   "consumidas": {
    "euro": 1785250855927,
    "super": 1785251991935,
-   "premier": 1785252780232
+   "premier": 1785252780232,
+   "copa": 1785253913637
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "16:43",
-     "jogo": "Equador x Brasil",
-     "odd": 1.87
-    },
-    {
-     "h": "16:46",
-     "jogo": "Curação x Escócia",
-     "odd": 2.05
-    },
-    {
-     "h": "16:49",
-     "jogo": "Canadá x México",
-     "odd": 2
-    }
-   ],
-   "gatilho": "seq RGRGG",
-   "alvo": {
-    "h": "16:49",
-    "jogo": "Canadá x México",
-    "odd": 2,
-    "unidades": 4,
-    "desde": 1785253794338
-   },
-   "iniciadoEm": 1785253251830,
-   "tiros": [
-    {
-     "h": "16:43",
-     "jogo": "Equador x Brasil",
-     "odd": 1.87,
-     "unidades": 1
-    },
-    {
-     "h": "16:46",
-     "jogo": "Curação x Escócia",
-     "odd": 2.05,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785250855927,
    "super": 1785251991935,
    "premier": 1785252780232,
-   "copa": 1785234490036
+   "copa": 1785253913637
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -1207,7 +1170,7 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -3.9
+   "2026-07-28": -10.9
   },
   "_gatilhoAtual": {
    "tipo": "seq",
