@@ -176,12 +176,18 @@
  },
  "o25": {
   "saldo": -126.7,
-  "ciclos": 573,
+  "ciclos": 574,
   "greens": 347,
   "redsCiclo": 95,
   "aborts": 0,
-  "descartes": 131,
+  "descartes": 132,
   "historico": [
+   {
+    "quando": "2026-07-28T17:40:53.628Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho seq GGGR) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T16:58:04.729Z",
     "resultado": "GREEN",
@@ -613,7 +619,37 @@
    "premier": 1785257271230,
    "super": 1785257884536
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:41",
+     "jogo": "Ucrânia x Espanha",
+     "odd": 2.15
+    },
+    {
+     "h": "18:44",
+     "jogo": "Croácia x Escócia",
+     "odd": 2.2
+    },
+    {
+     "h": "18:47",
+     "jogo": "Eslovênia x Polônia",
+     "odd": 2.87
+    }
+   ],
+   "gatilho": "seq GGGR",
+   "alvo": {
+    "h": "18:41",
+    "jogo": "Ucrânia x Espanha",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785260454836
+   },
+   "iniciadoEm": 1785260454836
+  },
   "cooldown": {
    "copa": 1785255172126,
    "premier": 1785257271230,
@@ -637,9 +673,9 @@
    "2026-07-28": -5.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.45",
-   "n": 15,
+   "tipo": "seq",
+   "chave": "GGGR",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
@@ -1254,7 +1290,7 @@
    "tipo": "odd",
    "chave": "1.87",
    "n": 18,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
