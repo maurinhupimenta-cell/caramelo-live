@@ -694,13 +694,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -36.4,
-  "ciclos": 630,
+  "saldo": -43.4,
+  "ciclos": 631,
   "greens": 419,
-  "redsCiclo": 66,
+  "redsCiclo": 67,
   "aborts": 0,
   "descartes": 145,
   "historico": [
+   {
+    "quando": "2026-07-28T17:47:54.727Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: odd 1.87"
+   },
    {
     "quando": "2026-07-28T17:17:52.929Z",
     "resultado": "GREEN",
@@ -1244,49 +1250,42 @@
   ],
   "consumidas": {
    "copa": 1785258291833,
-   "super": 1785259072736
+   "super": 1785259072736,
+   "euro": 1785260874532
   },
   "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "18:38",
-     "jogo": "Sérvia x Países Baixos",
-     "odd": 1.95
+     "h": "18:51",
+     "jogo": "Everton x West Ham",
+     "odd": 2.07
     },
     {
-     "h": "18:41",
-     "jogo": "Ucrânia x Espanha",
+     "h": "18:54",
+     "jogo": "Brentford x Islington",
+     "odd": 1.98
+    },
+    {
+     "h": "18:57",
+     "jogo": "Burnley x Norwich",
      "odd": 1.87
-    },
-    {
-     "h": "18:44",
-     "jogo": "Croácia x Escócia",
-     "odd": 1.93
     }
    ],
-   "gatilho": "odd 1.87",
+   "gatilho": "seq RGGRG",
    "alvo": {
-    "h": "18:41",
-    "jogo": "Ucrânia x Espanha",
-    "odd": 1.87,
-    "unidades": 2,
-    "desde": 1785260813426
+    "h": "18:51",
+    "jogo": "Everton x West Ham",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1785260932535
    },
-   "iniciadoEm": 1785260158131,
-   "tiros": [
-    {
-     "h": "18:38",
-     "jogo": "Sérvia x Países Baixos",
-     "odd": 1.95,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1785260932535
   },
   "cooldown": {
-   "euro": 1785256557631,
+   "euro": 1785260874532,
    "super": 1785259072736,
    "premier": 1785257271430,
    "copa": 1785258291833
@@ -1304,13 +1303,13 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -14.8
+   "2026-07-28": -21.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":56",
-   "n": 18,
-   "start": 2
+   "tipo": "seq",
+   "chave": "RGGRG",
+   "n": 8,
+   "start": 1
   },
   "_obs": {}
  }
