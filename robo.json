@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -115.8,
-  "ciclos": 529,
+  "saldo": -122.8,
+  "ciclos": 530,
   "greens": 340,
-  "redsCiclo": 92,
+  "redsCiclo": 93,
   "aborts": 0,
   "descartes": 97,
   "historico": [
+   {
+    "quando": "2026-07-28T04:49:53.232Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: time Croácia"
+   },
    {
     "quando": "2026-07-28T04:35:41.530Z",
     "resultado": "GREEN",
@@ -328,57 +334,14 @@
   ],
   "consumidas": {
    "super": 1785211553935,
-   "copa": 1785213341427
+   "copa": 1785213341427,
+   "euro": 1785214193128
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "05:41",
-     "jogo": "Geórgia x Croácia",
-     "odd": 2.3
-    },
-    {
-     "h": "05:44",
-     "jogo": "Sérvia x Ucrânia",
-     "odd": 2.5
-    },
-    {
-     "h": "05:47",
-     "jogo": "Geórgia x Eslováquia",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "time Croácia",
-   "alvo": {
-    "h": "05:47",
-    "jogo": "Geórgia x Eslováquia",
-    "odd": 2.4,
-    "unidades": 4,
-    "desde": 1785214018128
-   },
-   "iniciadoEm": 1785213592435,
-   "tiros": [
-    {
-     "h": "05:41",
-     "jogo": "Geórgia x Croácia",
-     "odd": 2.3,
-     "unidades": 1
-    },
-    {
-     "h": "05:44",
-     "jogo": "Sérvia x Ucrânia",
-     "odd": 2.5,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785213341427,
    "premier": 1785206523034,
-   "euro": 1785209693633,
+   "euro": 1785214193128,
    "super": 1785211553935
   },
   "dias": {
@@ -395,7 +358,7 @@
    "2026-07-25": 21,
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
-   "2026-07-28": 5.1
+   "2026-07-28": -1.9
   },
   "_gatilhoAtual": {
    "tipo": "time",
@@ -585,7 +548,37 @@
    "premier": 1785210825531,
    "copa": 1785212879034
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:50",
+     "jogo": "Itália x Sérvia",
+     "odd": 2.15
+    },
+    {
+     "h": "05:53",
+     "jogo": "Geórgia x Alemanha",
+     "odd": 1.98
+    },
+    {
+     "h": "05:56",
+     "jogo": "Áustria x Dinamarca",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "seq RRRR",
+   "alvo": {
+    "h": "05:50",
+    "jogo": "Itália x Sérvia",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785214018330
+   },
+   "iniciadoEm": 1785214018330
+  },
   "cooldown": {
    "euro": 1785209693925,
    "super": 1785208311732,
@@ -610,7 +603,7 @@
   "_gatilhoAtual": {
    "tipo": "seq",
    "chave": "RRRR",
-   "n": 8,
+   "n": 10,
    "start": 1
   },
   "_obs": {}
