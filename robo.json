@@ -1193,7 +1193,45 @@
    "premier": 1785257271430,
    "copa": 1785258291833
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "18:07",
+     "jogo": "Rio de Janeiro x Agua Branca",
+     "odd": 1.9
+    },
+    {
+     "h": "18:10",
+     "jogo": "Buenos Aires x Porto Alegre",
+     "odd": 2.1
+    },
+    {
+     "h": "18:13",
+     "jogo": "Quito x Santos",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "coluna :10",
+   "alvo": {
+    "h": "18:10",
+    "jogo": "Buenos Aires x Porto Alegre",
+    "odd": 2.1,
+    "unidades": 2,
+    "desde": 1785258651931
+   },
+   "iniciadoEm": 1785258293832,
+   "tiros": [
+    {
+     "h": "18:07",
+     "jogo": "Rio de Janeiro x Agua Branca",
+     "odd": 1.9,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1785256557631,
    "super": 1785251991935,
