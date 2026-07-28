@@ -323,13 +323,19 @@
   }
  },
  "ambas": {
-  "saldo": -23.4,
-  "ciclos": 561,
-  "greens": 397,
+  "saldo": -22.6,
+  "ciclos": 562,
+  "greens": 398,
   "redsCiclo": 61,
   "aborts": 0,
   "descartes": 103,
   "historico": [
+   {
+    "quando": "2026-07-28T01:38:52.229Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "super · Guayaquil x Santiago @1.83 (tiro 1) · gatilho: placar empate 1-1"
+   },
    {
     "quando": "2026-07-28T00:56:43.525Z",
     "resultado": "GREEN",
@@ -458,42 +464,13 @@
    }
   ],
   "consumidas": {
-   "premier": 1785200202930
+   "premier": 1785200202930,
+   "super": 1785202731829
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "02:34",
-     "jogo": "Guayaquil x Santiago",
-     "odd": 1.83
-    },
-    {
-     "h": "02:37",
-     "jogo": "Penarol x Agua Branca",
-     "odd": 2
-    },
-    {
-     "h": "02:40",
-     "jogo": "Guayaquil x Avellaneda",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "placar empate 1-1",
-   "alvo": {
-    "h": "02:34",
-    "jogo": "Guayaquil x Santiago",
-    "odd": 1.83,
-    "unidades": 1,
-    "desde": 1785202410426
-   },
-   "iniciadoEm": 1785202410426
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785192461007,
-   "super": 1785184303396,
+   "super": 1785202731829,
    "premier": 1785200202930,
    "copa": 1785190860182
   },
@@ -509,7 +486,7 @@
    "2026-07-24": 19.1,
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
-   "2026-07-27": 4.2
+   "2026-07-27": 5
   },
   "_gatilhoAtual": {
    "tipo": "placar",
