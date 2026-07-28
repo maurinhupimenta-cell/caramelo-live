@@ -516,26 +516,33 @@
    "2026-07-28": 2.1
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 8,
+   "tipo": "seq",
+   "chave": "RRRRG",
+   "n": 9,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785235211629,
-    "gatilho": "seq RRRRG"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -24.8,
-  "ciclos": 597,
+  "ciclos": 599,
   "greens": 410,
   "redsCiclo": 63,
   "aborts": 0,
-  "descartes": 124,
+  "descartes": 126,
   "historico": [
+   {
+    "quando": "2026-07-28T10:43:12.724Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho odd 2) — liga REARMADA"
+   },
+   {
+    "quando": "2026-07-28T10:43:11.936Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-28T10:28:10.229Z",
     "resultado": "RED_CICLO",
@@ -883,37 +890,7 @@
    "premier": 1785233146638,
    "copa": 1785234490036
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "07:43",
-     "jogo": "Bogota x Buenos Aires",
-     "odd": 2
-    },
-    {
-     "h": "07:49",
-     "jogo": "Porto Alegre x Avellaneda",
-     "odd": 2.2
-    },
-    {
-     "h": "09:19",
-     "jogo": "Guayaquil x Sao Paulo",
-     "odd": 1.8
-    }
-   ],
-   "gatilho": "odd 2",
-   "alvo": {
-    "h": "07:43",
-    "jogo": "Bogota x Buenos Aires",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1785234491632
-   },
-   "iniciadoEm": 1785234491632
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785220132126,
    "super": 1785217757137,
@@ -941,6 +918,11 @@
    "n": 12,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1785235392724,
+    "gatilho": "odd 2"
+   }
+  }
  }
 }
