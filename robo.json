@@ -529,12 +529,18 @@
  },
  "ambas": {
   "saldo": -24.8,
-  "ciclos": 607,
+  "ciclos": 608,
   "greens": 410,
   "redsCiclo": 63,
   "aborts": 0,
-  "descartes": 134,
+  "descartes": 135,
   "historico": [
+   {
+    "quando": "2026-07-28T12:13:51.728Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho seq GRGRR) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T12:07:30.232Z",
     "resultado": "GREEN_OBS",
@@ -939,7 +945,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:49",
+     "jogo": "Croácia x Austrália",
+     "odd": 2.05
+    },
+    {
+     "h": "07:52",
+     "jogo": "Portugal x França",
+     "odd": 1.9
+    },
+    {
+     "h": "13:07",
+     "jogo": "Paraguai x Brasil",
+     "odd": 2
+    }
+   ],
+   "gatilho": "seq RRRGG",
+   "alvo": {
+    "h": "07:49",
+    "jogo": "Croácia x Austrália",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785240452335
+   },
+   "iniciadoEm": 1785240452335
+  },
   "cooldown": {
    "euro": 1785220132126,
    "super": 1785217757137,
@@ -963,14 +999,14 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRRG",
-   "n": 9,
+   "chave": "RRRGG",
+   "n": 21,
    "start": 1
   },
   "_obs": {
-   "copa": {
-    "desde": 1785240450232,
-    "gatilho": "seq RRRGG"
+   "euro": {
+    "desde": 1785240831728,
+    "gatilho": "seq GRGRR"
    }
   }
  }
