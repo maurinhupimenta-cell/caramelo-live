@@ -178,12 +178,18 @@
  },
  "o25": {
   "saldo": -118.8,
-  "ciclos": 563,
+  "ciclos": 564,
   "greens": 343,
   "redsCiclo": 93,
   "aborts": 0,
-  "descartes": 127,
+  "descartes": 128,
   "historico": [
+   {
+    "quando": "2026-07-28T13:43:48.734Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho seq GGGR) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T13:43:46.926Z",
     "resultado": "DESCARTADO",
@@ -553,35 +559,35 @@
   ],
   "consumidas": {},
   "ciclo": {
-   "liga": "super",
+   "liga": "euro",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "09:19",
-     "jogo": "Guayaquil x Sao Paulo",
-     "odd": 2.02
+     "h": "14:47",
+     "jogo": "República Tcheca x Sérvia",
+     "odd": 2.75
     },
     {
-     "h": "14:22",
-     "jogo": "Porto Alegre x Montevideo",
+     "h": "14:50",
+     "jogo": "Espanha x Albânia",
      "odd": 2.45
     },
     {
-     "h": "14:25",
-     "jogo": "Medellin x Belo Horizonte",
-     "odd": 2.2
+     "h": "14:53",
+     "jogo": "Sérvia x Escócia",
+     "odd": 2.4
     }
    ],
-   "gatilho": "odd 2.45",
+   "gatilho": "time Albânia",
    "alvo": {
-    "h": "09:19",
-    "jogo": "Guayaquil x Sao Paulo",
-    "odd": 2.02,
+    "h": "14:47",
+    "jogo": "República Tcheca x Sérvia",
+    "odd": 2.75,
     "unidades": 1,
-    "desde": 1785245326530
+    "desde": 1785246228736
    },
-   "iniciadoEm": 1785245326530
+   "iniciadoEm": 1785246228736
   },
   "cooldown": {
    "copa": 1785213341427,
@@ -615,12 +621,18 @@
  },
  "ambas": {
   "saldo": -24.1,
-  "ciclos": 615,
+  "ciclos": 616,
   "greens": 411,
   "redsCiclo": 63,
   "aborts": 0,
-  "descartes": 141,
+  "descartes": 142,
   "historico": [
+   {
+    "quando": "2026-07-28T13:44:25.631Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :23) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T13:38:28.324Z",
     "resultado": "DESCARTADO",
