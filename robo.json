@@ -157,12 +157,18 @@
  },
  "o25": {
   "saldo": -118.8,
-  "ciclos": 534,
+  "ciclos": 535,
   "greens": 343,
   "redsCiclo": 93,
   "aborts": 0,
-  "descartes": 98,
+  "descartes": 99,
   "historico": [
+   {
+    "quando": "2026-07-28T08:11:31.925Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-28T07:34:05.927Z",
     "resultado": "GREEN",
@@ -718,16 +724,11 @@
    "2026-07-28": 2.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Guayaquil",
-   "n": 21,
-   "start": 2
+   "tipo": "seq",
+   "chave": "RRRG",
+   "n": 12,
+   "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785226229728,
-    "gatilho": "seq RRRG"
-   }
-  }
+  "_obs": {}
  }
 }
