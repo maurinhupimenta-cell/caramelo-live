@@ -1146,8 +1146,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "16:43",
@@ -1167,13 +1167,21 @@
    ],
    "gatilho": "seq RGRGG",
    "alvo": {
-    "h": "16:43",
-    "jogo": "Equador x Brasil",
-    "odd": 1.87,
-    "unidades": 1,
-    "desde": 1785253251830
+    "h": "16:46",
+    "jogo": "Curação x Escócia",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1785253615725
    },
-   "iniciadoEm": 1785253251830
+   "iniciadoEm": 1785253251830,
+   "tiros": [
+    {
+     "h": "16:43",
+     "jogo": "Equador x Brasil",
+     "odd": 1.87,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785250855927,
@@ -1198,7 +1206,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGRGG",
+   "chave": "GRGGR",
    "n": 10,
    "start": 1
   },
