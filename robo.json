@@ -736,18 +736,24 @@
    "tipo": "odd",
    "chave": "1.98",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -39.4,
-  "ciclos": 646,
-  "greens": 430,
+  "saldo": -38.4,
+  "ciclos": 647,
+  "greens": 431,
   "redsCiclo": 68,
   "aborts": 0,
   "descartes": 148,
   "historico": [
+   {
+    "quando": "2026-07-28T22:45:51.366Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Marrocos x Uruguai @1.98 (tiro 1) · gatilho: time Suíça"
+   },
    {
     "quando": "2026-07-28T22:34:44.765Z",
     "resultado": "GREEN",
@@ -1387,44 +1393,15 @@
   ],
   "consumidas": {
    "premier": 1785275796164,
-   "super": 1785278084660
+   "super": 1785278084660,
+   "copa": 1785278751261
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:43",
-     "jogo": "Marrocos x Uruguai",
-     "odd": 1.98
-    },
-    {
-     "h": "23:46",
-     "jogo": "Alemanha x Suíça",
-     "odd": 1.95
-    },
-    {
-     "h": "23:49",
-     "jogo": "Colômbia x Gana",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "time Suíça",
-   "alvo": {
-    "h": "23:43",
-    "jogo": "Marrocos x Uruguai",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785278206360
-   },
-   "iniciadoEm": 1785278206360
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785273830564,
    "super": 1785278084660,
    "premier": 1785275796164,
-   "copa": 1785271030863
+   "copa": 1785278751261
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -1439,7 +1416,7 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -17.8
+   "2026-07-28": -16.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
