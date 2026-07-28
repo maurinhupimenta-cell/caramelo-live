@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -158.3,
-  "ciclos": 178,
+  "saldo": -165.3,
+  "ciclos": 179,
   "greens": 61,
-  "redsCiclo": 76,
+  "redsCiclo": 77,
   "aborts": 0,
   "descartes": 41,
   "historico": [
+   {
+    "quando": "2026-07-28T13:02:48.329Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: odd 3.6"
+   },
    {
     "quando": "2026-07-28T10:35:42.028Z",
     "resultado": "GREEN",
@@ -140,55 +146,13 @@
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "13:54",
-     "jogo": "Newcastle x Chelsea",
-     "odd": 3.8
-    },
-    {
-     "h": "13:57",
-     "jogo": "City x Wolverhampton",
-     "odd": 3.6
-    },
-    {
-     "h": "14:00",
-     "jogo": "Leeds x Burnley",
-     "odd": 4.75
-    }
-   ],
-   "gatilho": "odd 3.6",
-   "alvo": {
-    "h": "14:00",
-    "jogo": "Leeds x Burnley",
-    "odd": 4.75,
-    "unidades": 4,
-    "desde": 1785243590133
-   },
-   "iniciadoEm": 1785242863031,
-   "tiros": [
-    {
-     "h": "13:54",
-     "jogo": "Newcastle x Chelsea",
-     "odd": 3.8,
-     "unidades": 1
-    },
-    {
-     "h": "13:57",
-     "jogo": "City x Wolverhampton",
-     "odd": 3.6,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1785243768225
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785038273206,
-   "premier": 1785234941832,
+   "premier": 1785243768225,
    "euro": 1784650513155,
    "super": 1784965764803
   },
@@ -202,7 +166,7 @@
    "2026-07-22": -7,
    "2026-07-25": 6.8,
    "2026-07-26": -7,
-   "2026-07-28": 3
+   "2026-07-28": -4
   },
   "_gatilhoAtual": {
    "tipo": "odd",
@@ -612,17 +576,12 @@
    "2026-07-28": 2.1
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 10,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.45",
+   "n": 12,
+   "start": 3
   },
-  "_obs": {
-   "super": {
-    "desde": 1785243667227,
-    "gatilho": "odd 2.45"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -24.1,
