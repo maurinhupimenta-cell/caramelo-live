@@ -336,7 +336,37 @@
    "copa": 1785213341427,
    "euro": 1785214193128
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:37",
+     "jogo": "Buenos Aires x La Boca",
+     "odd": 2.2
+    },
+    {
+     "h": "06:40",
+     "jogo": "Rio de Janeiro x Agua Branca",
+     "odd": 2.15
+    },
+    {
+     "h": "05:43",
+     "jogo": "Itaquera x Quito",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "odd 2.15",
+   "alvo": {
+    "h": "06:37",
+    "jogo": "Buenos Aires x La Boca",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785216477230
+   },
+   "iniciadoEm": 1785216477230
+  },
   "cooldown": {
    "copa": 1785213341427,
    "premier": 1785206523034,
@@ -360,10 +390,10 @@
    "2026-07-28": -1.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Croácia",
+   "tipo": "odd",
+   "chave": "2.15",
    "n": 8,
-   "start": 1
+   "start": 3
   },
   "_obs": {
    "copa": {
