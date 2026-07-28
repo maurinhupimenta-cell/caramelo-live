@@ -2867,40 +2867,54 @@ app.get("/api/teste-fundacao", (req, res) => {
           return L;
         };
         const seq = games.map(g => (paga(g) ? "G" : "R"));
-        const stat = {};          // chave -> {n,h,aguardando}
-        let testadas = 0, acertos = 0;
-        for (let i = 0; i + 1 < games.length; i++) {
-          const proximoPagou = paga(games[i + 1]);
+        // MESMA REGRA DO CACADOR: o desfecho e o CICLO (green em ate 3 jogos depois)
+        const cicloPagou = i => { for (let k = i + 1; k <= i + 3 && k < games.length; k++) if (paga(games[k])) return true; return (i + 3 < games.length) ? false : null; };
+        // regua do ciclo (para comparar) e base do jogo unico
+        let rn = 0, rh = 0;
+        for (let i = 0; i + 3 < games.length; i++) { const r = cicloPagou(i); if (r === null) continue; rn++; if (r) rh++; }
+        const reguaCiclo = rn ? rh / rn : 0;
+        const stat = {};
+        let testadas = 0, acertosCiclo = 0, acertosTiro1 = 0;
+        for (let i = 0; i + 4 < games.length; i++) {
+          const desf = cicloPagou(i); if (desf === null) continue;
+          const tiro1 = paga(games[i + 1]);
           for (const ch of chavesDe(games[i], i, seq)) {
             const s = stat[ch] || (stat[ch] = { n: 0, h: 0, aguardando: false });
-            if (s.aguardando) {           // JA estava 100%: esta e a prova fora da amostra
+            if (s.aguardando) {           // JA estava 100%: prova fora da amostra
               s.aguardando = false;
-              testadas++; if (proximoPagou) acertos++;
+              testadas++; if (desf) acertosCiclo++; if (tiro1) acertosTiro1++;
             }
-            s.n++; if (proximoPagou) s.h++;
-            if (s.n >= 8 && s.h === s.n) s.aguardando = true;   // bateu 100% com 8+: proxima vez sera testada
+            s.n++; if (desf) s.h++;
+            if (s.n >= 8 && s.h === s.n) s.aguardando = true;
           }
         }
         if (testadas < 15) continue;
-        const taxa = acertos / testadas;
-        linhas.push({ liga, mkt, casos: testadas, acertouProximo: Math.round(taxa * 1000) / 10, base: Math.round(base * 1000) / 10, ganho: Math.round((taxa - base) * 1000) / 10 });
-        const a = agreg[mkt] || (agreg[mkt] = { n: 0, h: 0, bn: 0, bs: 0 });
-        a.n += testadas; a.h += acertos; a.bn++; a.bs += base;
+        const tC = acertosCiclo / testadas, t1 = acertosTiro1 / testadas;
+        linhas.push({ liga, mkt, casos: testadas,
+          cicloDepois: Math.round(tC * 1000) / 10, reguaCiclo: Math.round(reguaCiclo * 1000) / 10, ganhoCiclo: Math.round((tC - reguaCiclo) * 1000) / 10,
+          tiro1Depois: Math.round(t1 * 1000) / 10, baseTiro1: Math.round(base * 1000) / 10, ganhoTiro1: Math.round((t1 - base) * 1000) / 10 });
+        const a = agreg[mkt] || (agreg[mkt] = { n: 0, hC: 0, h1: 0, rn: 0, rs: 0, bs: 0 });
+        a.n += testadas; a.hC += acertosCiclo; a.h1 += acertosTiro1; a.rn++; a.rs += reguaCiclo; a.bs += base;
       }
     }
     const resumo = Object.entries(agreg).map(([mkt, a]) => ({
       mkt, casos: a.n,
-      acertouProximo: Math.round(a.h / a.n * 1000) / 10,
-      baseMedia: Math.round(a.bs / a.bn * 1000) / 10,
-      ganho: Math.round((a.h / a.n - a.bs / a.bn) * 1000) / 10
+      cicloDepois: Math.round(a.hC / a.n * 1000) / 10, reguaCiclo: Math.round(a.rs / a.rn * 1000) / 10,
+      ganhoCiclo: Math.round((a.hC / a.n - a.rs / a.rn) * 1000) / 10,
+      tiro1Depois: Math.round(a.h1 / a.n * 1000) / 10, baseTiro1: Math.round(a.bs / a.rn * 1000) / 10,
+      ganhoTiro1: Math.round((a.h1 / a.n - a.bs / a.rn) * 1000) / 10
     }));
     const totN = Object.values(agreg).reduce((s, a) => s + a.n, 0);
-    const totH = Object.values(agreg).reduce((s, a) => s + a.h, 0);
-    const totB = Object.values(agreg).reduce((s, a) => s + a.bs / a.bn * a.n, 0) / (totN || 1);
+    const totC = Object.values(agreg).reduce((s, a) => s + a.hC, 0);
+    const tot1 = Object.values(agreg).reduce((s, a) => s + a.h1, 0);
+    const reg = Object.values(agreg).reduce((s, a) => s + (a.rs / a.rn) * a.n, 0) / (totN || 1);
+    const bas = Object.values(agreg).reduce((s, a) => s + (a.bs / a.rn) * a.n, 0) / (totN || 1);
     res.json({
-      pergunta: "o padrao 100% acerta o PROXIMO jogo acima da base do mercado?",
-      GERAL: { casos: totN, acertouProximo: Math.round(totH / totN * 1000) / 10, baseEsperada: Math.round(totB * 1000) / 10, ganho: Math.round((totH / totN - totB) * 1000) / 10 },
-      porMercado: resumo, detalhe: linhas.sort((a, b) => b.ganho - a.ganho)
+      pergunta: "o padrao 100% (regra do robo) prediz o que vem depois?",
+      GERAL: { casos: totN,
+        ciclo: Math.round(totC / totN * 1000) / 10, reguaCiclo: Math.round(reg * 1000) / 10, ganhoCiclo: Math.round((totC / totN - reg) * 1000) / 10,
+        tiro1: Math.round(tot1 / totN * 1000) / 10, baseTiro1: Math.round(bas * 1000) / 10, ganhoTiro1: Math.round((tot1 / totN - bas) * 1000) / 10 },
+      porMercado: resumo, detalhe: linhas.sort((a, b) => b.ganhoCiclo - a.ganhoCiclo)
     });
   } catch (e) { res.status(500).json({ erro: e.message, linha: String(e.stack || "").split("\n")[1] }); }
 });
