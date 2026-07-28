@@ -724,13 +724,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -38.4,
-  "ciclos": 647,
-  "greens": 431,
+  "saldo": -37.8,
+  "ciclos": 648,
+  "greens": 432,
   "redsCiclo": 68,
   "aborts": 0,
   "descartes": 148,
   "historico": [
+   {
+    "quando": "2026-07-28T23:18:55.062Z",
+    "resultado": "GREEN",
+    "unidades": 0.6,
+    "detalhe": "premier · Wolverhampton x City @1.8 (tiro 2) · gatilho: odd 1.8"
+   },
    {
     "quando": "2026-07-28T22:45:51.366Z",
     "resultado": "GREEN",
@@ -1376,51 +1382,14 @@
   ],
   "consumidas": {
    "super": 1785278084660,
-   "copa": 1785278751261
+   "copa": 1785278751261,
+   "premier": 1785280734959
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "00:12",
-     "jogo": "Norwich x Islington",
-     "odd": 1.93
-    },
-    {
-     "h": "00:15",
-     "jogo": "Wolverhampton x City",
-     "odd": 1.8
-    },
-    {
-     "h": "00:18",
-     "jogo": "Brentford x Tottenham",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "odd 1.8",
-   "alvo": {
-    "h": "00:15",
-    "jogo": "Wolverhampton x City",
-    "odd": 1.8,
-    "unidades": 2,
-    "desde": 1785280488961
-   },
-   "iniciadoEm": 1785279830465,
-   "tiros": [
-    {
-     "h": "00:12",
-     "jogo": "Norwich x Islington",
-     "odd": 1.93,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785273830564,
    "super": 1785278084660,
-   "premier": 1785275796164,
+   "premier": 1785280734959,
    "copa": 1785278751261
   },
   "dias": {
@@ -1436,7 +1405,7 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -16.8
+   "2026-07-28": -16.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
