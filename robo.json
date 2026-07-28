@@ -666,7 +666,37 @@
   "consumidas": {
    "copa": 1785275010762
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:43",
+     "jogo": "Quito x La Plata",
+     "odd": 2.55
+    },
+    {
+     "h": "22:46",
+     "jogo": "Sao Paulo x Buenos Aires",
+     "odd": 1.98
+    },
+    {
+     "h": "22:49",
+     "jogo": "La Plata x Rio de Janeiro",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "odd 1.98",
+   "alvo": {
+    "h": "22:43",
+    "jogo": "Quito x La Plata",
+    "odd": 2.55,
+    "unidades": 1,
+    "desde": 1785275013067
+   },
+   "iniciadoEm": 1785275013067
+  },
   "cooldown": {
    "copa": 1785275010762,
    "premier": 1785257271230,
@@ -1334,7 +1364,37 @@
    "euro": 1785273830564,
    "super": 1785274426064
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:54",
+     "jogo": "Aston x Brighton",
+     "odd": 1.93
+    },
+    {
+     "h": "22:57",
+     "jogo": "Wolverhampton x Newcastle",
+     "odd": 1.8
+    },
+    {
+     "h": "23:00",
+     "jogo": "Leicester x Islington",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "odd 1.8",
+   "alvo": {
+    "h": "22:54",
+    "jogo": "Aston x Brighton",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1785275095063
+   },
+   "iniciadoEm": 1785275095063
+  },
   "cooldown": {
    "euro": 1785273830564,
    "super": 1785274426064,
@@ -1357,10 +1417,10 @@
    "2026-07-28": -19.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRGR",
-   "n": 8,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.8",
+   "n": 13,
+   "start": 3
   },
   "_obs": {}
  }
