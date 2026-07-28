@@ -453,9 +453,9 @@
    "2026-07-28": 2.1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":28",
-   "n": 8,
+   "tipo": "time",
+   "chave": "Albânia",
+   "n": 12,
    "start": 3
   },
   "_obs": {
@@ -467,12 +467,18 @@
  },
  "ambas": {
   "saldo": -19.2,
-  "ciclos": 585,
+  "ciclos": 586,
   "greens": 409,
   "redsCiclo": 62,
   "aborts": 0,
-  "descartes": 114,
+  "descartes": 115,
   "historico": [
+   {
+    "quando": "2026-07-28T09:12:51.628Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho odd 1.87) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T09:06:12.431Z",
     "resultado": "DESCARTADO",
@@ -799,10 +805,15 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Leeds",
-   "n": 17,
-   "start": 1
+   "chave": "Guayaquil",
+   "n": 25,
+   "start": 2
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1785229971628,
+    "gatilho": "odd 1.87"
+   }
+  }
  }
 }
