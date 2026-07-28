@@ -512,7 +512,37 @@
    "super": 1785208311732,
    "euro": 1785209693925
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:51",
+     "jogo": "United x Wolverhampton",
+     "odd": 1.87
+    },
+    {
+     "h": "04:54",
+     "jogo": "Leicester x Brighton",
+     "odd": 1.93
+    },
+    {
+     "h": "04:57",
+     "jogo": "Chelsea x Norwich",
+     "odd": 2
+    }
+   ],
+   "gatilho": "time Brighton",
+   "alvo": {
+    "h": "04:51",
+    "jogo": "United x Wolverhampton",
+    "odd": 1.87,
+    "unidades": 1,
+    "desde": 1785210115434
+   },
+   "iniciadoEm": 1785210115434
+  },
   "cooldown": {
    "euro": 1785209693925,
    "super": 1785208311732,
@@ -535,10 +565,10 @@
    "2026-07-28": 1.9
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 8,
-   "start": 1
+   "tipo": "time",
+   "chave": "Brighton",
+   "n": 9,
+   "start": 3
   },
   "_obs": {}
  }
