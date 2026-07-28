@@ -3632,7 +3632,7 @@ function atualizaRadar(liga, s) {
       } catch (e) {}
       if (pull && !prev.pull) {
         radarAtivos[k + "|pull"] = { liga, mkt, tipo: "pull", pagando: cur, topo: topoRec, base: c.base, fita, ts: Date.now() };
-        if (!primeira && podeAvisar(k + "|pull")) avisaRadar(radarAtivos[k + "|pull"]);
+        // pull: fora do radar enxuto
       } else if (!pull) delete radarAtivos[k + "|pull"];
       radarEstado[k] = { fundo, sobe, ltb: quebrouLTB, nivelMin, pull };
     }
@@ -3714,7 +3714,13 @@ app.post("/api/push/sub", (req, res) => {
     res.json({ ok: true, inscritos: pushData.subs.length });
   } catch (e) { res.status(500).json({ erro: e.message }); }
 });
-app.get("/api/radar", (req, res) => res.json(Object.values(radarAtivos).sort((a, b) => b.ts - a.ts)));
+// RADAR ENXUTO (pedido do usuario): so o que ele opera - movimento de SUBIDA,
+// QUEBRA DE LTB e MINIMA do dia. Os avisos de minima de janela curta e de repique
+// (minjan / pull) sao ruido para essa leitura e ficam de fora.
+const RADAR_TIPOS = ["subida", "ltb", "minima"];
+app.get("/api/radar", (req, res) => res.json(
+  Object.values(radarAtivos).filter(r => RADAR_TIPOS.includes(r.tipo)).sort((a, b) => b.ts - a.ts)
+));
 
 // ===== SSE (Server-Sent Events): canal de aviso em tempo real p/ as telas =====
 // NAO altera nenhuma analise/calculo. So avisa "liga X atualizou" pra tela buscar na hora
