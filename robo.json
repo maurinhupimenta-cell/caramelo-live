@@ -626,8 +626,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "19:37",
@@ -647,11 +647,11 @@
    ],
    "gatilho": "odd 2.45",
    "alvo": {
-    "h": "19:40",
-    "jogo": "Tunísia x México",
-    "odd": 2.45,
-    "unidades": 2,
-    "desde": 1785264171736
+    "h": "19:43",
+    "jogo": "Gana x Bélgica",
+    "odd": 2.4,
+    "unidades": 4,
+    "desde": 1785264351928
    },
    "iniciadoEm": 1785263333127,
    "tiros": [
@@ -660,6 +660,12 @@
      "jogo": "Irã x Gana",
      "odd": 2.62,
      "unidades": 1
+    },
+    {
+     "h": "19:40",
+     "jogo": "Tunísia x México",
+     "odd": 2.45,
+     "unidades": 2
     }
    ]
   },
@@ -686,21 +692,27 @@
    "2026-07-28": -12.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.45",
-   "n": 12,
-   "start": 1
+   "tipo": "time",
+   "chave": "Suíça",
+   "n": 17,
+   "start": 3
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -42.9,
-  "ciclos": 632,
+  "ciclos": 633,
   "greens": 420,
   "redsCiclo": 67,
   "aborts": 0,
-  "descartes": 145,
+  "descartes": 146,
   "historico": [
+   {
+    "quando": "2026-07-28T18:45:52.130Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Suíça) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T18:00:15.230Z",
     "resultado": "GREEN",
@@ -1258,7 +1270,37 @@
    "euro": 1785260874532,
    "premier": 1785261615125
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:52",
+     "jogo": "Croácia x Qatar",
+     "odd": 2.1
+    },
+    {
+     "h": "19:55",
+     "jogo": "Suíça x Senegal",
+     "odd": 2.1
+    },
+    {
+     "h": "19:58",
+     "jogo": "Noruega x Turquia",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "time Suíça",
+   "alvo": {
+    "h": "19:52",
+    "jogo": "Croácia x Qatar",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785264354033
+   },
+   "iniciadoEm": 1785264354033
+  },
   "cooldown": {
    "euro": 1785260874532,
    "super": 1785259072736,
@@ -1281,10 +1323,10 @@
    "2026-07-28": -21.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRGG",
-   "n": 8,
-   "start": 1
+   "tipo": "time",
+   "chave": "Suíça",
+   "n": 17,
+   "start": 3
   },
   "_obs": {}
  }
