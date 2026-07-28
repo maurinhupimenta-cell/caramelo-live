@@ -551,11 +551,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1785210825531,
    "copa": 1785212879034,
    "euro": 1785214376428
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:57",
+     "jogo": "Leeds x Norwich",
+     "odd": 2.15
+    },
+    {
+     "h": "06:00",
+     "jogo": "Watford x Liverpool",
+     "odd": 1.98
+    },
+    {
+     "h": "06:03",
+     "jogo": "Palace x United",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "time Leeds",
+   "alvo": {
+    "h": "05:57",
+    "jogo": "Leeds x Norwich",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785214431532
+   },
+   "iniciadoEm": 1785214431532
+  },
   "cooldown": {
    "euro": 1785214376428,
    "super": 1785208311732,
@@ -578,9 +607,9 @@
    "2026-07-28": -3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRR",
-   "n": 10,
+   "tipo": "time",
+   "chave": "Leeds",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
