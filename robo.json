@@ -374,13 +374,19 @@
   }
  },
  "ambas": {
-  "saldo": -25.8,
-  "ciclos": 567,
-  "greens": 402,
+  "saldo": -24.6,
+  "ciclos": 568,
+  "greens": 403,
   "redsCiclo": 62,
   "aborts": 0,
   "descartes": 103,
   "historico": [
+   {
+    "quando": "2026-07-28T04:52:56.533Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Itália x Sérvia @2.15 (tiro 1) · gatilho: seq RRRR"
+   },
    {
     "quando": "2026-07-28T04:27:59.328Z",
     "resultado": "RED_CICLO",
@@ -546,41 +552,12 @@
   ],
   "consumidas": {
    "premier": 1785210825531,
-   "copa": 1785212879034
+   "copa": 1785212879034,
+   "euro": 1785214376428
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:50",
-     "jogo": "Itália x Sérvia",
-     "odd": 2.15
-    },
-    {
-     "h": "05:53",
-     "jogo": "Geórgia x Alemanha",
-     "odd": 1.98
-    },
-    {
-     "h": "05:56",
-     "jogo": "Áustria x Dinamarca",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "seq RRRR",
-   "alvo": {
-    "h": "05:50",
-    "jogo": "Itália x Sérvia",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785214018330
-   },
-   "iniciadoEm": 1785214018330
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785209693925,
+   "euro": 1785214376428,
    "super": 1785208311732,
    "premier": 1785210825531,
    "copa": 1785212879034
@@ -598,7 +575,7 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -4.2
+   "2026-07-28": -3
   },
   "_gatilhoAtual": {
    "tipo": "seq",
