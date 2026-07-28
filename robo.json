@@ -460,7 +460,37 @@
   "consumidas": {
    "premier": 1785200202930
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:34",
+     "jogo": "Guayaquil x Santiago",
+     "odd": 1.83
+    },
+    {
+     "h": "02:37",
+     "jogo": "Penarol x Agua Branca",
+     "odd": 2
+    },
+    {
+     "h": "02:40",
+     "jogo": "Guayaquil x Avellaneda",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "placar empate 1-1",
+   "alvo": {
+    "h": "02:34",
+    "jogo": "Guayaquil x Santiago",
+    "odd": 1.83,
+    "unidades": 1,
+    "desde": 1785202410426
+   },
+   "iniciadoEm": 1785202410426
+  },
   "cooldown": {
    "euro": 1785192461007,
    "super": 1785184303396,
@@ -483,7 +513,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "1-0 / 0-1",
+   "chave": "empate 1-1",
    "n": 8,
    "start": 1
   },
