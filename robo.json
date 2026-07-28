@@ -157,12 +157,18 @@
  },
  "o25": {
   "saldo": -118.8,
-  "ciclos": 544,
+  "ciclos": 545,
   "greens": 343,
   "redsCiclo": 93,
   "aborts": 0,
-  "descartes": 108,
+  "descartes": 109,
   "historico": [
+   {
+    "quando": "2026-07-28T10:07:10.132Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho odd 2.15) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T09:44:09.937Z",
     "resultado": "DESCARTADO",
@@ -877,8 +883,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRGGR",
-   "n": 8,
+   "chave": "RRRG",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
