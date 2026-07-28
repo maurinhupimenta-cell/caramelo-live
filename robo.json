@@ -156,13 +156,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -119.1,
-  "ciclos": 527,
-  "greens": 338,
+  "saldo": -118,
+  "ciclos": 528,
+  "greens": 339,
   "redsCiclo": 92,
   "aborts": 0,
   "descartes": 97,
   "historico": [
+   {
+    "quando": "2026-07-28T04:05:54.036Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Buenos Aires x Rio de Janeiro @2.07 (tiro 1) · gatilho: time Rio de Janeiro"
+   },
    {
     "quando": "2026-07-28T03:59:42.926Z",
     "resultado": "GREEN_OBS",
@@ -315,44 +321,15 @@
    }
   ],
   "consumidas": {
-   "euro": 1785209693633
+   "euro": 1785209693633,
+   "super": 1785211553935
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:01",
-     "jogo": "Buenos Aires x Rio de Janeiro",
-     "odd": 2.07
-    },
-    {
-     "h": "05:04",
-     "jogo": "Itaquera x Guayaquil",
-     "odd": 2.2
-    },
-    {
-     "h": "05:07",
-     "jogo": "Agua Branca x La Boca",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "time Rio de Janeiro",
-   "alvo": {
-    "h": "05:01",
-    "jogo": "Buenos Aires x Rio de Janeiro",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1785211184830
-   },
-   "iniciadoEm": 1785211184830
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785205852328,
    "premier": 1785206523034,
    "euro": 1785209693633,
-   "super": 1785207236037
+   "super": 1785211553935
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -368,13 +345,13 @@
    "2026-07-25": 21,
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
-   "2026-07-28": 1.8
+   "2026-07-28": 2.9
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Rio de Janeiro",
    "n": 11,
-   "start": 1
+   "start": 2
   },
   "_obs": {
    "copa": {
