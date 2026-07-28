@@ -712,13 +712,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -40.4,
-  "ciclos": 645,
-  "greens": 429,
+  "saldo": -39.4,
+  "ciclos": 646,
+  "greens": 430,
   "redsCiclo": 68,
   "aborts": 0,
   "descartes": 148,
   "historico": [
+   {
+    "quando": "2026-07-28T22:34:44.765Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Asuncion x Itaquera @2 (tiro 1) · gatilho: seq RGRRG"
+   },
    {
     "quando": "2026-07-28T21:56:36.361Z",
     "resultado": "GREEN",
@@ -1351,12 +1357,13 @@
    }
   ],
   "consumidas": {
-   "premier": 1785275796164
+   "premier": 1785275796164,
+   "super": 1785278084660
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1785273830564,
-   "super": 1785274426064,
+   "super": 1785278084660,
    "premier": 1785275796164,
    "copa": 1785271030863
   },
@@ -1373,13 +1380,13 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -18.8
+   "2026-07-28": -17.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGG",
-   "n": 23,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.25",
+   "n": 10,
+   "start": 2
   },
   "_obs": {}
  }
