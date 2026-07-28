@@ -175,13 +175,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -123.8,
-  "ciclos": 582,
-  "greens": 352,
+  "saldo": -122.8,
+  "ciclos": 583,
+  "greens": 353,
   "redsCiclo": 96,
   "aborts": 0,
   "descartes": 134,
   "historico": [
+   {
+    "quando": "2026-07-28T21:49:46.064Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Sao Paulo x Buenos Aires @1.98 (tiro 2) · gatilho: odd 1.98"
+   },
    {
     "quando": "2026-07-28T21:43:30.958Z",
     "resultado": "GREEN",
@@ -664,52 +670,15 @@
    }
   ],
   "consumidas": {
-   "copa": 1785275010762
+   "copa": 1785275010762,
+   "super": 1785275385869
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "22:43",
-     "jogo": "Quito x La Plata",
-     "odd": 2.55
-    },
-    {
-     "h": "22:46",
-     "jogo": "Sao Paulo x Buenos Aires",
-     "odd": 1.98
-    },
-    {
-     "h": "22:49",
-     "jogo": "La Plata x Rio de Janeiro",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "odd 1.98",
-   "alvo": {
-    "h": "22:46",
-    "jogo": "Sao Paulo x Buenos Aires",
-    "odd": 1.98,
-    "unidades": 2,
-    "desde": 1785275208667
-   },
-   "iniciadoEm": 1785275013067,
-   "tiros": [
-    {
-     "h": "22:43",
-     "jogo": "Quito x La Plata",
-     "odd": 2.55,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785275010762,
    "premier": 1785257271230,
    "euro": 1785266756833,
-   "super": 1785266092427
+   "super": 1785275385869
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -725,7 +694,7 @@
    "2026-07-25": 21,
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
-   "2026-07-28": -2.9
+   "2026-07-28": -1.9
   },
   "_gatilhoAtual": {
    "tipo": "odd",
@@ -1428,7 +1397,7 @@
    "tipo": "odd",
    "chave": "1.8",
    "n": 13,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
