@@ -392,13 +392,19 @@
   }
  },
  "ambas": {
-  "saldo": -23.9,
-  "ciclos": 570,
-  "greens": 404,
+  "saldo": -22.7,
+  "ciclos": 571,
+  "greens": 405,
   "redsCiclo": 62,
   "aborts": 0,
   "descartes": 104,
   "historico": [
+   {
+    "quando": "2026-07-28T05:49:17.329Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Buenos Aires x Bogota @2.05 (tiro 3) · gatilho: time Lima"
+   },
    {
     "quando": "2026-07-28T05:37:52.131Z",
     "resultado": "GREEN_OBS",
@@ -582,56 +588,43 @@
   ],
   "consumidas": {
    "euro": 1785214376428,
-   "premier": 1785215140928
+   "premier": 1785215140928,
+   "super": 1785217757137
   },
   "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "06:40",
-     "jogo": "Rio de Janeiro x Agua Branca",
+     "h": "06:52",
+     "jogo": "RD Congo x Inglaterra",
      "odd": 1.9
     },
     {
-     "h": "06:43",
-     "jogo": "Lima x Santos",
-     "odd": 1.98
+     "h": "06:55",
+     "jogo": "Tunísia x Países Baixos",
+     "odd": 2.15
     },
     {
-     "h": "06:46",
-     "jogo": "Buenos Aires x Bogota",
-     "odd": 2.05
+     "h": "06:58",
+     "jogo": "Gana x Brasil",
+     "odd": 2.02
     }
    ],
-   "gatilho": "time Lima",
+   "gatilho": "time RD Congo",
    "alvo": {
-    "h": "06:46",
-    "jogo": "Buenos Aires x Bogota",
-    "odd": 2.05,
-    "unidades": 4,
-    "desde": 1785217602128
+    "h": "06:52",
+    "jogo": "RD Congo x Inglaterra",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1785217759325
    },
-   "iniciadoEm": 1785216881332,
-   "tiros": [
-    {
-     "h": "06:40",
-     "jogo": "Rio de Janeiro x Agua Branca",
-     "odd": 1.9,
-     "unidades": 1
-    },
-    {
-     "h": "06:43",
-     "jogo": "Lima x Santos",
-     "odd": 1.98,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1785217759325
   },
   "cooldown": {
    "euro": 1785214376428,
-   "super": 1785208311732,
+   "super": 1785217757137,
    "premier": 1785215140928,
    "copa": 1785212879034
   },
@@ -648,12 +641,12 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -2.3
+   "2026-07-28": -1.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Suécia",
-   "n": 9,
+   "chave": "RD Congo",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
