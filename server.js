@@ -3688,6 +3688,26 @@ function podeAvisar(chave) {
   if (radarUltimoAviso[chave] && ag - radarUltimoAviso[chave] < tregua) return false;
   radarUltimoAviso[chave] = ag; return true;
 }
+// SERIE DO DIA (a mesma do grafico acumulado 00h): corta na virada do relogio do JOGO e
+// monta a media movel com aquecimento - ja existe ponto nos primeiros jogos do dia.
+function serieDoDia(gAll, mkt, JAN) {
+  let idx = 0;
+  for (let i = 1; i < gAll.length; i++) {
+    const h1 = parseInt((gAll[i].horario || "").split(":")[0]);
+    const h0 = parseInt((gAll[i - 1].horario || "").split(":")[0]);
+    if (!isNaN(h1) && !isNaN(h0) && h1 < h0 - 12) idx = i;
+  }
+  const dia = gAll.slice(idx);
+  if (dia.length < 3) return null;
+  const out = [];
+  for (let k = 0; k < dia.length; k++) {
+    const ini = Math.max(0, k - JAN + 1);
+    const jan = dia.slice(ini, k + 1);
+    out.push(Math.round(jan.filter(g => pays(g, mkt)).length / jan.length * 1000) / 10);
+  }
+  return out;
+}
+
 function atualizaRadar(liga, s) {
   try {
     for (const mkt of RADAR_MKTS) {
@@ -3696,7 +3716,9 @@ function atualizaRadar(liga, s) {
       // fechamento real do jogo. Grafico/analises continuam com drop-2 (fieis ao caramelo).
       const gAll = listaCheia(s);
       const JANR = Math.max(2, Math.min(20, gAll.length));
-      const serie = gAll.length ? chartSeries(gAll, mkt, JANR).slice(-20) : (c.serie || []);
+      // RADAR BASEADO NO GRAFICO ACUMULADO 00H (pedido do usuario): so jogos do dia atual
+      const serieDia = gAll.length ? serieDoDia(gAll, mkt, JANR) : null;
+      const serie = (serieDia && serieDia.length >= 3) ? serieDia : (gAll.length ? chartSeries(gAll, mkt, JANR).slice(-20) : (c.serie || []));
       const cur = serie.length ? serie[serie.length - 1] : null; // taxa atual (ultimo ponto, sem drop)
       const fita = gAll.slice(-6).map(g => ({ p: pays(g, mkt) ? 1 : 0, m: (g.horario || "").split(":")[1] || "" })); // jogo a jogo com o MINUTO de cada um (aprender a olho nu)
       const k = liga + "|" + mkt;
@@ -3763,7 +3785,7 @@ function atualizaRadar(liga, s) {
       } catch (e) {}
       if (pull && !prev.pull) {
         radarAtivos[k + "|pull"] = { liga, mkt, tipo: "pull", pagando: cur, topo: topoRec, base: c.base, fita, ts: Date.now() };
-        // pull: fora do radar enxuto
+        if (!primeira && podeAvisar(k + "|pull")) avisaRadar(radarAtivos[k + "|pull"]);
       } else if (!pull) delete radarAtivos[k + "|pull"];
       radarEstado[k] = { fundo, sobe, ltb: quebrouLTB, nivelMin, pull };
     }
@@ -3848,7 +3870,7 @@ app.post("/api/push/sub", (req, res) => {
 // RADAR ENXUTO (pedido do usuario): so o que ele opera - movimento de SUBIDA,
 // QUEBRA DE LTB e MINIMA do dia. Os avisos de minima de janela curta e de repique
 // (minjan / pull) sao ruido para essa leitura e ficam de fora.
-const RADAR_TIPOS = ["subida", "ltb", "minima"];
+const RADAR_TIPOS = ["subida", "ltb", "minima", "pull"]; // pullback, subida, minima e quebra de LTB
 app.get("/api/radar", (req, res) => res.json(
   Object.values(radarAtivos).filter(r => RADAR_TIPOS.includes(r.tipo)).sort((a, b) => b.ts - a.ts)
 ));
