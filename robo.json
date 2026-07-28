@@ -194,18 +194,24 @@
    "tipo": "odd",
    "chave": "3.6",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "o25": {
   "saldo": -118.8,
-  "ciclos": 556,
+  "ciclos": 557,
   "greens": 343,
   "redsCiclo": 93,
   "aborts": 0,
-  "descartes": 120,
+  "descartes": 121,
   "historico": [
+   {
+    "quando": "2026-07-28T12:56:05.730Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho time Albânia) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T12:43:44.535Z",
     "resultado": "DESCARTADO",
@@ -532,7 +538,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:44",
+     "jogo": "Hungria x Países Baixos",
+     "odd": 2.2
+    },
+    {
+     "h": "08:29",
+     "jogo": "Países Baixos x Escócia",
+     "odd": 2.07
+    },
+    {
+     "h": "08:32",
+     "jogo": "Inglaterra x Eslováquia",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "placar empate 2-2",
+   "alvo": {
+    "h": "07:44",
+    "jogo": "Hungria x Países Baixos",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785243366427
+   },
+   "iniciadoEm": 1785243366427
+  },
   "cooldown": {
    "copa": 1785213341427,
    "premier": 1785224045730,
@@ -556,17 +592,12 @@
    "2026-07-28": 2.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGR",
-   "n": 8,
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 10,
    "start": 1
   },
-  "_obs": {
-   "euro": {
-    "desde": 1785241194632,
-    "gatilho": "time Albânia"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -24.1,
@@ -1065,10 +1096,10 @@
    "2026-07-28": -2.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":53",
-   "n": 13,
-   "start": 3
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 10,
+   "start": 1
   },
   "_obs": {}
  }
