@@ -537,12 +537,18 @@
  },
  "ambas": {
   "saldo": -24.8,
-  "ciclos": 599,
+  "ciclos": 600,
   "greens": 410,
   "redsCiclo": 63,
   "aborts": 0,
-  "descartes": 126,
+  "descartes": 127,
   "historico": [
+   {
+    "quando": "2026-07-28T10:58:29.535Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-28T10:43:12.724Z",
     "resultado": "GREEN_OBS",
@@ -955,9 +961,9 @@
    "2026-07-28": -3.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2",
-   "n": 12,
+   "tipo": "seq",
+   "chave": "RRRR",
+   "n": 16,
    "start": 1
   },
   "_obs": {}
