@@ -662,13 +662,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -42.9,
-  "ciclos": 634,
-  "greens": 420,
+  "saldo": -41.8,
+  "ciclos": 635,
+  "greens": 421,
   "redsCiclo": 67,
   "aborts": 0,
   "descartes": 147,
   "historico": [
+   {
+    "quando": "2026-07-28T18:54:54.029Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Croácia x Qatar @2.1 (tiro 1) · gatilho: time Suíça"
+   },
    {
     "quando": "2026-07-28T18:48:52.433Z",
     "resultado": "GREEN_OBS",
@@ -1235,44 +1241,15 @@
    }
   ],
   "consumidas": {
-   "premier": 1785261615125
+   "premier": 1785261615125,
+   "copa": 1785264893833
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "19:52",
-     "jogo": "Croácia x Qatar",
-     "odd": 2.1
-    },
-    {
-     "h": "19:55",
-     "jogo": "Suíça x Senegal",
-     "odd": 2.1
-    },
-    {
-     "h": "19:58",
-     "jogo": "Noruega x Turquia",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "time Suíça",
-   "alvo": {
-    "h": "19:52",
-    "jogo": "Croácia x Qatar",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785264354033
-   },
-   "iniciadoEm": 1785264354033
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785260874532,
    "super": 1785259072736,
    "premier": 1785261615125,
-   "copa": 1785258291833
+   "copa": 1785264893833
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -1287,7 +1264,7 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -21.3
+   "2026-07-28": -20.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
