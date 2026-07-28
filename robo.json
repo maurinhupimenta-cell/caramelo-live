@@ -658,7 +658,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:37",
+     "jogo": "México x Brasil",
+     "odd": 2.2
+    },
+    {
+     "h": "22:40",
+     "jogo": "Iraque x Qatar",
+     "odd": 2.45
+    },
+    {
+     "h": "21:43",
+     "jogo": "Uzbequistão x Haiti",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "odd 2.45",
+   "alvo": {
+    "h": "22:37",
+    "jogo": "México x Brasil",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785274065865
+   },
+   "iniciadoEm": 1785274065865
+  },
   "cooldown": {
    "copa": 1785268973471,
    "premier": 1785257271230,
@@ -684,8 +714,8 @@
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.45",
-   "n": 14,
-   "start": 1
+   "n": 16,
+   "start": 3
   },
   "_obs": {}
  },
