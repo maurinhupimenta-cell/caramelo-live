@@ -646,13 +646,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -30.6,
-  "ciclos": 628,
+  "saldo": -37.6,
+  "ciclos": 629,
   "greens": 418,
-  "redsCiclo": 65,
+  "redsCiclo": 66,
   "aborts": 0,
   "descartes": 145,
   "historico": [
+   {
+    "quando": "2026-07-28T17:04:52.025Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: seq RRRGG"
+   },
    {
     "quando": "2026-07-28T16:52:52.128Z",
     "resultado": "GREEN_OBS",
@@ -1184,58 +1190,15 @@
   ],
   "consumidas": {
    "euro": 1785256557631,
-   "premier": 1785257271430
+   "premier": 1785257271430,
+   "copa": 1785258291833
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "17:55",
-     "jogo": "Haiti x Senegal",
-     "odd": 2.02
-    },
-    {
-     "h": "17:58",
-     "jogo": "Equador x Suécia",
-     "odd": 2.07
-    },
-    {
-     "h": "18:01",
-     "jogo": "Marrocos x Coreia do Sul",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "seq RRRGG",
-   "alvo": {
-    "h": "18:01",
-    "jogo": "Marrocos x Coreia do Sul",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1785258115332
-   },
-   "iniciadoEm": 1785257573731,
-   "tiros": [
-    {
-     "h": "17:55",
-     "jogo": "Haiti x Senegal",
-     "odd": 2.02,
-     "unidades": 1
-    },
-    {
-     "h": "17:58",
-     "jogo": "Equador x Suécia",
-     "odd": 2.07,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785256557631,
    "super": 1785251991935,
    "premier": 1785257271430,
-   "copa": 1785253913637
+   "copa": 1785258291833
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -1250,13 +1213,13 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -9
+   "2026-07-28": -16
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":10",
    "n": 18,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
