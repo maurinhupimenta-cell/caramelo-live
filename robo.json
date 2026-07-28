@@ -175,13 +175,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -128.7,
-  "ciclos": 572,
-  "greens": 346,
+  "saldo": -126.7,
+  "ciclos": 573,
+  "greens": 347,
   "redsCiclo": 95,
   "aborts": 0,
   "descartes": 131,
   "historico": [
+   {
+    "quando": "2026-07-28T16:58:04.729Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "super · Medellin x Agua Branca @2.25 (tiro 3) · gatilho: odd 2.45"
+   },
    {
     "quando": "2026-07-28T16:47:51.425Z",
     "resultado": "RED_CICLO",
@@ -605,52 +611,15 @@
   ],
   "consumidas": {
    "copa": 1785255172126,
-   "premier": 1785257271230
+   "premier": 1785257271230,
+   "super": 1785257884536
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:49",
-     "jogo": "Belo Horizonte x Porto Alegre",
-     "odd": 2.45
-    },
-    {
-     "h": "17:52",
-     "jogo": "Guayaquil x Rio de Janeiro",
-     "odd": 2.15
-    },
-    {
-     "h": "17:55",
-     "jogo": "Medellin x Agua Branca",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "odd 2.45",
-   "alvo": {
-    "h": "17:52",
-    "jogo": "Guayaquil x Rio de Janeiro",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1785257693325
-   },
-   "iniciadoEm": 1785257272928,
-   "tiros": [
-    {
-     "h": "17:49",
-     "jogo": "Belo Horizonte x Porto Alegre",
-     "odd": 2.45,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785255172126,
    "premier": 1785257271230,
    "euro": 1785246965627,
-   "super": 1785250073532
+   "super": 1785257884536
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -666,7 +635,7 @@
    "2026-07-25": 21,
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
-   "2026-07-28": -7.8
+   "2026-07-28": -5.8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
