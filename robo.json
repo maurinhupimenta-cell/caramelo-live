@@ -529,12 +529,18 @@
  },
  "ambas": {
   "saldo": -24.8,
-  "ciclos": 606,
+  "ciclos": 607,
   "greens": 410,
   "redsCiclo": 63,
   "aborts": 0,
-  "descartes": 133,
+  "descartes": 134,
   "historico": [
+   {
+    "quando": "2026-07-28T12:07:30.232Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho seq RRRGG) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T11:58:33.227Z",
     "resultado": "DESCARTADO",
@@ -933,37 +939,7 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "08:32",
-     "jogo": "Inglaterra x Eslováquia",
-     "odd": 1.98
-    },
-    {
-     "h": "12:41",
-     "jogo": "França x Romênia",
-     "odd": 1.87
-    },
-    {
-     "h": "12:44",
-     "jogo": "Escócia x Países Baixos",
-     "odd": 1.85
-    }
-   ],
-   "gatilho": "odd 1.87",
-   "alvo": {
-    "h": "08:32",
-    "jogo": "Inglaterra x Eslováquia",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785239013028
-   },
-   "iniciadoEm": 1785239013028
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785220132126,
    "super": 1785217757137,
@@ -991,6 +967,11 @@
    "n": 9,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1785240450232,
+    "gatilho": "seq RRRGG"
+   }
+  }
  }
 }
