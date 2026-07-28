@@ -464,7 +464,37 @@
   "consumidas": {
    "super": 1785202731829
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:15",
+     "jogo": "Chelsea x Watford",
+     "odd": 2.05
+    },
+    {
+     "h": "03:18",
+     "jogo": "City x Leeds",
+     "odd": 2.1
+    },
+    {
+     "h": "03:21",
+     "jogo": "Brentford x Islington",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "time Leeds",
+   "alvo": {
+    "h": "03:15",
+    "jogo": "Chelsea x Watford",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785204366934
+   },
+   "iniciadoEm": 1785204366934
+  },
   "cooldown": {
    "euro": 1785192461007,
    "super": 1785202731829,
@@ -486,10 +516,10 @@
    "2026-07-27": 5
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
+   "tipo": "time",
+   "chave": "Leeds",
    "n": 8,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
