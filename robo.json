@@ -602,8 +602,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:39",
@@ -623,13 +623,21 @@
    ],
    "gatilho": "seq GGRRG",
    "alvo": {
-    "h": "17:39",
-    "jogo": "Everton x Burnley",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1785256553731
+    "h": "17:42",
+    "jogo": "Brentford x Brighton",
+    "odd": 2.1,
+    "unidades": 2,
+    "desde": 1785256926436
    },
-   "iniciadoEm": 1785256553731
+   "iniciadoEm": 1785256553731,
+   "tiros": [
+    {
+     "h": "17:39",
+     "jogo": "Everton x Burnley",
+     "odd": 2.07,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785255172126,
@@ -654,10 +662,10 @@
    "2026-07-28": -0.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRRG",
-   "n": 8,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.45",
+   "n": 15,
+   "start": 3
   },
   "_obs": {}
  },
@@ -1192,8 +1200,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:39",
@@ -1213,13 +1221,21 @@
    ],
    "gatilho": "coluna :39",
    "alvo": {
-    "h": "17:39",
-    "jogo": "Everton x Burnley",
-    "odd": 1.86,
-    "unidades": 1,
-    "desde": 1785256577235
+    "h": "17:42",
+    "jogo": "Brentford x Brighton",
+    "odd": 1.87,
+    "unidades": 2,
+    "desde": 1785256926628
    },
-   "iniciadoEm": 1785256577235
+   "iniciadoEm": 1785256577235,
+   "tiros": [
+    {
+     "h": "17:39",
+     "jogo": "Everton x Burnley",
+     "odd": 1.86,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785256557631,
