@@ -403,12 +403,24 @@
  },
  "ambas": {
   "saldo": -19.2,
-  "ciclos": 579,
+  "ciclos": 581,
   "greens": 409,
   "redsCiclo": 62,
   "aborts": 0,
-  "descartes": 108,
+  "descartes": 110,
   "historico": [
+   {
+    "quando": "2026-07-28T08:33:51.736Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho odd 1.95) — liga REARMADA"
+   },
+   {
+    "quando": "2026-07-28T08:20:52.033Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho time Guayaquil) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T08:20:50.132Z",
     "resultado": "DESCARTADO",
@@ -648,35 +660,35 @@
    "premier": 1785224539737
   },
   "ciclo": {
-   "liga": "super",
+   "liga": "copa",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
      "h": "07:49",
-     "jogo": "Porto Alegre x Avellaneda",
-     "odd": 2.2
+     "jogo": "Croácia x Austrália",
+     "odd": 2.05
     },
     {
-     "h": "08:43",
-     "jogo": "Guayaquil x Santos",
-     "odd": 1.95
+     "h": "07:52",
+     "jogo": "Portugal x França",
+     "odd": 1.9
     },
     {
-     "h": "08:46",
-     "jogo": "Asuncion x Rio de Janeiro",
-     "odd": 1.98
+     "h": "09:10",
+     "jogo": "Senegal x Coreia do Sul",
+     "odd": 2.25
     }
    ],
-   "gatilho": "time Guayaquil",
+   "gatilho": "seq RRRG",
    "alvo": {
     "h": "07:49",
-    "jogo": "Porto Alegre x Avellaneda",
-    "odd": 2.2,
+    "jogo": "Croácia x Austrália",
+    "odd": 2.05,
     "unidades": 1,
-    "desde": 1785225949934
+    "desde": 1785226852035
    },
-   "iniciadoEm": 1785225949934
+   "iniciadoEm": 1785226852035
   },
   "cooldown": {
    "euro": 1785220132126,
@@ -700,11 +712,16 @@
    "2026-07-28": 2.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRG",
-   "n": 12,
-   "start": 1
+   "tipo": "time",
+   "chave": "Guayaquil",
+   "n": 21,
+   "start": 2
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1785227631736,
+    "gatilho": "odd 1.95"
+   }
+  }
  }
 }
