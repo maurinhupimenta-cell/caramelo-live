@@ -157,12 +157,18 @@
  },
  "o25": {
   "saldo": -118.8,
-  "ciclos": 546,
+  "ciclos": 547,
   "greens": 343,
   "redsCiclo": 93,
   "aborts": 0,
-  "descartes": 110,
+  "descartes": 111,
   "historico": [
+   {
+    "quando": "2026-07-28T10:12:52.525Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho seq GRGRR) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T10:12:51.631Z",
     "resultado": "DESCARTADO",
@@ -445,20 +451,20 @@
      "odd": 2.15
     },
     {
-     "h": "10:58",
-     "jogo": "Brasil x Japão",
-     "odd": 2.35
+     "h": "11:13",
+     "jogo": "Escócia x Suíça",
+     "odd": 2.55
     }
    ],
-   "gatilho": "seq RRRRG",
+   "gatilho": "seq GRGRR",
    "alvo": {
     "h": "07:49",
     "jogo": "Croácia x Austrália",
     "odd": 2.35,
     "unidades": 1,
-    "desde": 1785232670131
+    "desde": 1785233574431
    },
-   "iniciadoEm": 1785232670131
+   "iniciadoEm": 1785233574431
   },
   "cooldown": {
    "copa": 1785213341427,
@@ -483,26 +489,33 @@
    "2026-07-28": 2.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGRR",
-   "n": 9,
-   "start": 1
+   "tipo": "time",
+   "chave": "Albânia",
+   "n": 14,
+   "start": 3
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785188808341,
-    "gatilho": "odd 2.15"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -17.8,
-  "ciclos": 594,
+  "ciclos": 596,
   "greens": 410,
   "redsCiclo": 62,
   "aborts": 0,
-  "descartes": 122,
+  "descartes": 124,
   "historico": [
+   {
+    "quando": "2026-07-28T10:20:52.627Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho odd 2) — liga REARMADA"
+   },
+   {
+    "quando": "2026-07-28T10:20:51.128Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-28T10:05:46.827Z",
     "resultado": "GREEN",
@@ -831,37 +844,7 @@
   "consumidas": {
    "premier": 1785233146638
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "07:43",
-     "jogo": "Bogota x Buenos Aires",
-     "odd": 2
-    },
-    {
-     "h": "07:49",
-     "jogo": "Porto Alegre x Avellaneda",
-     "odd": 2.2
-    },
-    {
-     "h": "09:19",
-     "jogo": "Guayaquil x Sao Paulo",
-     "odd": 1.8
-    }
-   ],
-   "gatilho": "seq RRRG",
-   "alvo": {
-    "h": "07:43",
-    "jogo": "Bogota x Buenos Aires",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1785233150131
-   },
-   "iniciadoEm": 1785233150131
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785220132126,
    "super": 1785217757137,
@@ -884,11 +867,16 @@
    "2026-07-28": 3.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.15",
-   "n": 20,
+   "tipo": "time",
+   "chave": "Uruguai",
+   "n": 9,
    "start": 3
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1785234052626,
+    "gatilho": "odd 2"
+   }
+  }
  }
 }
