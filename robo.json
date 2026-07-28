@@ -1098,10 +1098,39 @@
    }
   ],
   "consumidas": {
-   "euro": 1785246784429,
    "premier": 1785247183525
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:50",
+     "jogo": "Geórgia x Áustria",
+     "odd": 2.05
+    },
+    {
+     "h": "15:53",
+     "jogo": "Espanha x Escócia",
+     "odd": 1.87
+    },
+    {
+     "h": "15:56",
+     "jogo": "Turquia x Itália",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "odd 1.87",
+   "alvo": {
+    "h": "15:50",
+    "jogo": "Geórgia x Áustria",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785250426938
+   },
+   "iniciadoEm": 1785250426938
+  },
   "cooldown": {
    "euro": 1785246784429,
    "super": 1785246545624,
@@ -1125,8 +1154,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "1.8",
-   "n": 9,
+   "chave": "1.87",
+   "n": 17,
    "start": 1
   },
   "_obs": {}
