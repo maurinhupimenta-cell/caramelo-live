@@ -417,37 +417,7 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "09:19",
-     "jogo": "Guayaquil x Sao Paulo",
-     "odd": 2.02
-    },
-    {
-     "h": "10:28",
-     "jogo": "Medellin x Agua Branca",
-     "odd": 2.25
-    },
-    {
-     "h": "10:31",
-     "jogo": "Quito x Sao Paulo",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "coluna :28",
-   "alvo": {
-    "h": "09:19",
-    "jogo": "Guayaquil x Sao Paulo",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1785230934628
-   },
-   "iniciadoEm": 1785230934628
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785213341427,
    "premier": 1785224045730,
@@ -480,17 +450,27 @@
    "copa": {
     "desde": 1785188808341,
     "gatilho": "odd 2.15"
+   },
+   "super": {
+    "desde": 1785232152234,
+    "gatilho": "odd 2.15"
    }
   }
  },
  "ambas": {
   "saldo": -19.2,
-  "ciclos": 590,
+  "ciclos": 591,
   "greens": 409,
   "redsCiclo": 62,
   "aborts": 0,
-  "descartes": 119,
+  "descartes": 120,
   "historico": [
+   {
+    "quando": "2026-07-28T09:51:34.929Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-28T09:36:32.626Z",
     "resultado": "DESCARTADO",
@@ -846,10 +826,10 @@
    "2026-07-28": 2.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGGG",
-   "n": 8,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":00",
+   "n": 10,
+   "start": 3
   },
   "_obs": {}
  }
