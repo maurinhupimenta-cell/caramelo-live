@@ -427,12 +427,18 @@
  },
  "ambas": {
   "saldo": -19.2,
-  "ciclos": 577,
+  "ciclos": 578,
   "greens": 409,
   "redsCiclo": 62,
   "aborts": 0,
-  "descartes": 106,
+  "descartes": 107,
   "historico": [
+   {
+    "quando": "2026-07-28T08:10:29.728Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho seq RRRG) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T08:02:52.225Z",
     "resultado": "DESCARTADO",
@@ -714,13 +720,13 @@
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Guayaquil",
-   "n": 20,
+   "n": 21,
    "start": 2
   },
   "_obs": {
    "copa": {
-    "desde": 1785222729734,
-    "gatilho": "seq RRRR"
+    "desde": 1785226229728,
+    "gatilho": "seq RRRG"
    }
   }
  }
