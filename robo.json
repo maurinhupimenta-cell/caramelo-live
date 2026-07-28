@@ -695,12 +695,18 @@
  },
  "ambas": {
   "saldo": -46.6,
-  "ciclos": 638,
+  "ciclos": 639,
   "greens": 423,
   "redsCiclo": 68,
   "aborts": 0,
-  "descartes": 147,
+  "descartes": 148,
   "historico": [
+   {
+    "quando": "2026-07-28T20:08:48.669Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho seq RGRRG) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T19:32:51.066Z",
     "resultado": "GREEN",
@@ -1294,7 +1300,37 @@
    "euro": 1785266759231,
    "premier": 1785267170867
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:04",
+     "jogo": "Santos x Penarol",
+     "odd": 2.2
+    },
+    {
+     "h": "21:07",
+     "jogo": "Agua Branca x Avellaneda",
+     "odd": 1.95
+    },
+    {
+     "h": "21:10",
+     "jogo": "Quito x Lima",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "seq RGRRG",
+   "alvo": {
+    "h": "21:04",
+    "jogo": "Santos x Penarol",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785269331569
+   },
+   "iniciadoEm": 1785269331569
+  },
   "cooldown": {
    "euro": 1785266759231,
    "super": 1785265703730,
@@ -1318,8 +1354,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRGRG",
-   "n": 9,
+   "chave": "RGRRG",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
