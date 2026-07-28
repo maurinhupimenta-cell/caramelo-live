@@ -817,8 +817,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "10:57",
@@ -838,13 +838,21 @@
    ],
    "gatilho": "coluna :00",
    "alvo": {
-    "h": "10:57",
-    "jogo": "Norwich x Watford",
+    "h": "11:00",
+    "jogo": "Leicester x Burnley",
     "odd": 1.95,
-    "unidades": 1,
-    "desde": 1785232310425
+    "unidades": 2,
+    "desde": 1785232785736
    },
-   "iniciadoEm": 1785232310425
+   "iniciadoEm": 1785232310425,
+   "tiros": [
+    {
+     "h": "10:57",
+     "jogo": "Norwich x Watford",
+     "odd": 1.95,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785220132126,
@@ -868,9 +876,9 @@
    "2026-07-28": 2.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRG",
-   "n": 11,
+   "tipo": "coluna",
+   "chave": ":00",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
