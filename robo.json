@@ -1244,7 +1244,37 @@
    "premier": 1785261615125,
    "copa": 1785264893833
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:58",
+     "jogo": "Santiago x Guayaquil",
+     "odd": 1.8
+    },
+    {
+     "h": "20:01",
+     "jogo": "Belo Horizonte x Rio de Janeiro",
+     "odd": 1.86
+    },
+    {
+     "h": "20:04",
+     "jogo": "Santiago x Agua Branca",
+     "odd": 1.83
+    }
+   ],
+   "gatilho": "seq GGRGG",
+   "alvo": {
+    "h": "19:58",
+    "jogo": "Santiago x Guayaquil",
+    "odd": 1.8,
+    "unidades": 1,
+    "desde": 1785265072729
+   },
+   "iniciadoEm": 1785265072729
+  },
   "cooldown": {
    "euro": 1785260874532,
    "super": 1785259072736,
@@ -1267,9 +1297,9 @@
    "2026-07-28": -20.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Suíça",
-   "n": 16,
+   "tipo": "seq",
+   "chave": "GGRGG",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
