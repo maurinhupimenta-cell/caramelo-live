@@ -596,7 +596,7 @@
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.45",
-   "n": 13,
+   "n": 14,
    "start": 3
   },
   "_obs": {
@@ -608,12 +608,18 @@
  },
  "ambas": {
   "saldo": -24.1,
-  "ciclos": 614,
+  "ciclos": 615,
   "greens": 411,
   "redsCiclo": 63,
   "aborts": 0,
-  "descartes": 140,
+  "descartes": 141,
   "historico": [
+   {
+    "quando": "2026-07-28T13:38:28.324Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-28T13:23:25.732Z",
     "resultado": "GREEN_OBS",
@@ -1115,11 +1121,16 @@
    "2026-07-28": -2.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRGG",
-   "n": 8,
+   "tipo": "odd",
+   "chave": "2.15",
+   "n": 23,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1785245345637,
+    "gatilho": "coluna :23"
+   }
+  }
  }
 }
