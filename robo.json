@@ -694,13 +694,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -46.6,
-  "ciclos": 639,
-  "greens": 423,
+  "saldo": -45.4,
+  "ciclos": 640,
+  "greens": 424,
   "redsCiclo": 68,
   "aborts": 0,
   "descartes": 148,
   "historico": [
+   {
+    "quando": "2026-07-28T20:13:00.160Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Santos x Penarol @2.2 (tiro 1) · gatilho: seq RGRRG"
+   },
    {
     "quando": "2026-07-28T20:08:48.669Z",
     "resultado": "GREEN_OBS",
@@ -1298,42 +1304,13 @@
   ],
   "consumidas": {
    "euro": 1785266759231,
-   "premier": 1785267170867
+   "premier": 1785267170867,
+   "super": 1785269579960
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:04",
-     "jogo": "Santos x Penarol",
-     "odd": 2.2
-    },
-    {
-     "h": "21:07",
-     "jogo": "Agua Branca x Avellaneda",
-     "odd": 1.95
-    },
-    {
-     "h": "21:10",
-     "jogo": "Quito x Lima",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "seq RGRRG",
-   "alvo": {
-    "h": "21:04",
-    "jogo": "Santos x Penarol",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785269331569
-   },
-   "iniciadoEm": 1785269331569
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785266759231,
-   "super": 1785265703730,
+   "super": 1785269579960,
    "premier": 1785267170868,
    "copa": 1785264893833
   },
@@ -1350,13 +1327,13 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -25
+   "2026-07-28": -23.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRRG",
-   "n": 10,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":25",
+   "n": 19,
+   "start": 3
   },
   "_obs": {}
  }
