@@ -1025,12 +1025,18 @@
  },
  "ambas": {
   "saldo": -60.3,
-  "ciclos": 692,
+  "ciclos": 693,
   "greens": 459,
   "redsCiclo": 75,
   "aborts": 0,
-  "descartes": 158,
+  "descartes": 159,
   "historico": [
+   {
+    "quando": "2026-07-29T20:21:05.696Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho seq GGRRG) — liga REARMADA"
+   },
    {
     "quando": "2026-07-29T20:06:44.198Z",
     "resultado": "GREEN",
@@ -1948,7 +1954,37 @@
    "copa": 1785354994399,
    "super": 1785355604091
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:23",
+     "jogo": "Albânia x Alemanha",
+     "odd": 2.1
+    },
+    {
+     "h": "21:26",
+     "jogo": "Ucrânia x Espanha",
+     "odd": 1.87
+    },
+    {
+     "h": "21:29",
+     "jogo": "Albânia x Geórgia",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "seq GGRRG",
+   "alvo": {
+    "h": "21:23",
+    "jogo": "Albânia x Alemanha",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785356467697
+   },
+   "iniciadoEm": 1785356467697
+  },
   "cooldown": {
    "euro": 1785349788391,
    "super": 1785355604091,
@@ -1972,10 +2008,10 @@
    "2026-07-29": -18.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.95",
-   "n": 24,
-   "start": 2
+   "tipo": "seq",
+   "chave": "GGRRG",
+   "n": 11,
+   "start": 1
   },
   "_obs": {}
  }
