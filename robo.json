@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -103.8,
-  "ciclos": 607,
-  "greens": 373,
+  "saldo": -101.9,
+  "ciclos": 608,
+  "greens": 374,
   "redsCiclo": 98,
   "aborts": 0,
   "descartes": 136,
   "historico": [
+   {
+    "quando": "2026-07-29T10:01:47.358Z",
+    "resultado": "GREEN",
+    "unidades": 1.9,
+    "detalhe": "super · Lima x Porto Alegre @2.45 (tiro 2) · gatilho: odd 2.45"
+   },
    {
     "quando": "2026-07-29T09:54:45.159Z",
     "resultado": "GREEN",
@@ -840,52 +846,15 @@
   ],
   "consumidas": {
    "euro": 1785317868169,
-   "copa": 1785318884965
+   "copa": 1785318884965,
+   "super": 1785319307163
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "10:55",
-     "jogo": "Sao Paulo x Quito",
-     "odd": 2.15
-    },
-    {
-     "h": "10:58",
-     "jogo": "Lima x Porto Alegre",
-     "odd": 2.45
-    },
-    {
-     "h": "11:01",
-     "jogo": "Penarol x Medellin",
-     "odd": 2.55
-    }
-   ],
-   "gatilho": "odd 2.45",
-   "alvo": {
-    "h": "10:58",
-    "jogo": "Lima x Porto Alegre",
-    "odd": 2.45,
-    "unidades": 2,
-    "desde": 1785319128571
-   },
-   "iniciadoEm": 1785318887171,
-   "tiros": [
-    {
-     "h": "10:55",
-     "jogo": "Sao Paulo x Quito",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785318884965,
    "premier": 1785277668066,
    "euro": 1785317868169,
-   "super": 1785314445062
+   "super": 1785319307163
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -902,7 +871,7 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 11.6
+   "2026-07-29": 13.5
   },
   "_gatilhoAtual": {
    "tipo": "odd",
@@ -913,13 +882,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -57.8,
-  "ciclos": 672,
-  "greens": 447,
+  "saldo": -56.7,
+  "ciclos": 673,
+  "greens": 448,
   "redsCiclo": 73,
   "aborts": 0,
   "descartes": 152,
   "historico": [
+   {
+    "quando": "2026-07-29T10:01:45.866Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Irã x Bósnia e Herzegovina @2.07 (tiro 1) · gatilho: odd 1.93"
+   },
    {
     "quando": "2026-07-29T09:49:49.973Z",
     "resultado": "GREEN_OBS",
@@ -1715,44 +1690,15 @@
   ],
   "consumidas": {
    "super": 1785315884566,
-   "euro": 1785317445759
+   "euro": 1785317445759,
+   "copa": 1785319305762
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "10:58",
-     "jogo": "Irã x Bósnia e Herzegovina",
-     "odd": 2.07
-    },
-    {
-     "h": "11:01",
-     "jogo": "Austrália x Haiti",
-     "odd": 1.93
-    },
-    {
-     "h": "11:04",
-     "jogo": "México x Uruguai",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "odd 1.93",
-   "alvo": {
-    "h": "10:58",
-    "jogo": "Irã x Bósnia e Herzegovina",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1785318591765
-   },
-   "iniciadoEm": 1785318591765
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785317445759,
    "super": 1785315884566,
    "premier": 1785300650858,
-   "copa": 1785314865371
+   "copa": 1785319305762
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -1768,12 +1714,12 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": -15.7
+   "2026-07-29": -14.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.93",
-   "n": 12,
+   "tipo": "seq",
+   "chave": "RGGG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
