@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -104.6,
-  "ciclos": 601,
+  "saldo": -111.6,
+  "ciclos": 602,
   "greens": 369,
-  "redsCiclo": 97,
+  "redsCiclo": 98,
   "aborts": 0,
   "descartes": 135,
   "historico": [
+   {
+    "quando": "2026-07-29T08:28:45.665Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Argélia"
+   },
    {
     "quando": "2026-07-29T07:26:46.962Z",
     "resultado": "GREEN",
@@ -802,54 +808,12 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "09:19",
-     "jogo": "Curação x Haiti",
-     "odd": 2.05
-    },
-    {
-     "h": "09:22",
-     "jogo": "Argélia x Suíça",
-     "odd": 2.35
-    },
-    {
-     "h": "09:25",
-     "jogo": "Cabo Verde x Egito",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "time Argélia",
-   "alvo": {
-    "h": "09:25",
-    "jogo": "Cabo Verde x Egito",
-    "odd": 2.1,
-    "unidades": 4,
-    "desde": 1785313546566
-   },
-   "iniciadoEm": 1785312885065,
-   "tiros": [
-    {
-     "h": "09:19",
-     "jogo": "Curação x Haiti",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "09:22",
-     "jogo": "Argélia x Suíça",
-     "odd": 2.35,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "copa": 1785313725559
   },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785308865159,
+   "copa": 1785313725559,
    "premier": 1785277668066,
    "euro": 1785310006771,
    "super": 1785307308668
@@ -869,13 +833,13 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 10.8
+   "2026-07-29": 3.8
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":28",
+   "chave": ":37",
    "n": 9,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  },
