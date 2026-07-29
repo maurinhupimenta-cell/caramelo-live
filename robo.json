@@ -1821,8 +1821,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "16:26",
@@ -1842,13 +1842,21 @@
    ],
    "gatilho": "coluna :29",
    "alvo": {
-    "h": "16:26",
-    "jogo": "França x Escócia",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1785338255791
+    "h": "16:29",
+    "jogo": "Bélgica x Eslovênia",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1785338996199
    },
-   "iniciadoEm": 1785338255791
+   "iniciadoEm": 1785338255791,
+   "tiros": [
+    {
+     "h": "16:26",
+     "jogo": "França x Escócia",
+     "odd": 1.9,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785325665663,
@@ -1873,10 +1881,10 @@
    "2026-07-29": -10.2
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":29",
-   "n": 16,
-   "start": 1
+   "tipo": "time",
+   "chave": "Medellin",
+   "n": 28,
+   "start": 2
   },
   "_obs": {}
  }
