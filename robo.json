@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -165.3,
-  "ciclos": 180,
-  "greens": 61,
+  "saldo": -151.3,
+  "ciclos": 181,
+  "greens": 62,
   "redsCiclo": 77,
   "aborts": 0,
   "descartes": 42,
   "historico": [
+   {
+    "quando": "2026-07-29T02:48:30.359Z",
+    "resultado": "GREEN",
+    "unidades": 14,
+    "detalhe": "euro · República Tcheca x Portugal @5.25 (tiro 3) · gatilho: placar 1-0 / 0-1"
+   },
    {
     "quando": "2026-07-29T02:35:10.158Z",
     "resultado": "GREEN_OBS",
@@ -152,56 +158,14 @@
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "03:38",
-     "jogo": "Bélgica x Países Baixos",
-     "odd": 3.75
-    },
-    {
-     "h": "03:41",
-     "jogo": "Sérvia x Ucrânia",
-     "odd": 5.25
-    },
-    {
-     "h": "03:44",
-     "jogo": "República Tcheca x Portugal",
-     "odd": 5.25
-    }
-   ],
-   "gatilho": "placar 1-0 / 0-1",
-   "alvo": {
-    "h": "03:44",
-    "jogo": "República Tcheca x Portugal",
-    "odd": 5.25,
-    "unidades": 4,
-    "desde": 1785293049665
-   },
-   "iniciadoEm": 1785292512558,
-   "tiros": [
-    {
-     "h": "03:38",
-     "jogo": "Bélgica x Países Baixos",
-     "odd": 3.75,
-     "unidades": 1
-    },
-    {
-     "h": "03:41",
-     "jogo": "Sérvia x Ucrânia",
-     "odd": 5.25,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "euro": 1785293310165
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785038273206,
    "premier": 1785243768225,
-   "euro": 1784650513155,
+   "euro": 1785293310165,
    "super": 1784965764803
   },
   "dias": {
@@ -214,7 +178,7 @@
    "2026-07-22": -7,
    "2026-07-25": 6.8,
    "2026-07-26": -7,
-   "2026-07-28": -4
+   "2026-07-28": 10
   },
   "_gatilhoAtual": {
    "tipo": "placar",
@@ -225,13 +189,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -117.4,
-  "ciclos": 587,
-  "greens": 357,
+  "saldo": -115.4,
+  "ciclos": 588,
+  "greens": 358,
   "redsCiclo": 96,
   "aborts": 0,
   "descartes": 134,
   "historico": [
+   {
+    "quando": "2026-07-29T02:44:10.061Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "euro · Sérvia x Ucrânia @2.5 (tiro 2) · gatilho: placar 1-0 / 0-1"
+   },
    {
     "quando": "2026-07-29T01:16:45.967Z",
     "resultado": "GREEN",
@@ -743,50 +713,14 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "03:38",
-     "jogo": "Bélgica x Países Baixos",
-     "odd": 2.02
-    },
-    {
-     "h": "03:41",
-     "jogo": "Sérvia x Ucrânia",
-     "odd": 2.5
-    },
-    {
-     "h": "03:44",
-     "jogo": "República Tcheca x Portugal",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "placar 1-0 / 0-1",
-   "alvo": {
-    "h": "03:41",
-    "jogo": "Sérvia x Ucrânia",
-    "odd": 2.5,
-    "unidades": 2,
-    "desde": 1785292909458
-   },
-   "iniciadoEm": 1785292510166,
-   "tiros": [
-    {
-     "h": "03:38",
-     "jogo": "Bélgica x Países Baixos",
-     "odd": 2.02,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "euro": 1785293049861
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785287805864,
    "premier": 1785277668066,
-   "euro": 1785278985762,
+   "euro": 1785293049861,
    "super": 1785275385869
   },
   "dias": {
@@ -803,7 +737,7 @@
    "2026-07-25": 21,
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
-   "2026-07-28": 3.5
+   "2026-07-28": 5.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
