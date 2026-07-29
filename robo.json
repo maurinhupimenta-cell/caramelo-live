@@ -838,13 +838,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -45.2,
-  "ciclos": 667,
-  "greens": 445,
+  "saldo": -44.3,
+  "ciclos": 668,
+  "greens": 446,
   "redsCiclo": 71,
   "aborts": 0,
   "descartes": 151,
   "historico": [
+   {
+    "quando": "2026-07-29T08:12:47.561Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Escócia x Portugal @1.93 (tiro 2) · gatilho: odd 2"
+   },
    {
     "quando": "2026-07-29T07:49:46.661Z",
     "resultado": "GREEN",
@@ -1610,41 +1616,12 @@
   ],
   "consumidas": {
    "copa": 1785309585668,
-   "super": 1785311386559
+   "super": 1785311386559,
+   "euro": 1785312767367
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "09:05",
-     "jogo": "Sérvia x Suíça",
-     "odd": 2
-    },
-    {
-     "h": "09:08",
-     "jogo": "Escócia x Portugal",
-     "odd": 1.93
-    },
-    {
-     "h": "09:11",
-     "jogo": "Albânia x Países Baixos",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "odd 2",
-   "alvo": {
-    "h": "09:05",
-    "jogo": "Sérvia x Suíça",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1785312168167
-   },
-   "iniciadoEm": 1785312168167
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785308567157,
+   "euro": 1785312767367,
    "super": 1785311386559,
    "premier": 1785300650858,
    "copa": 1785309585668
@@ -1663,7 +1640,7 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": -3.1
+   "2026-07-29": -2.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
