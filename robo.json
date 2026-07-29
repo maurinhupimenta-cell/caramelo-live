@@ -735,8 +735,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:19",
@@ -756,13 +756,21 @@
    ],
    "gatilho": "time Medellin",
    "alvo": {
-    "h": "05:19",
-    "jogo": "Agua Branca x La Boca",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1785298600268
+    "h": "05:22",
+    "jogo": "Quito x Medellin",
+    "odd": 2.4,
+    "unidades": 2,
+    "desde": 1785298940161
    },
-   "iniciadoEm": 1785298600268
+   "iniciadoEm": 1785298600268,
+   "tiros": [
+    {
+     "h": "05:19",
+     "jogo": "Agua Branca x La Boca",
+     "odd": 2.3,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785296049363,
@@ -788,9 +796,9 @@
    "2026-07-29": -3.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Medellin",
-   "n": 8,
+   "tipo": "odd",
+   "chave": "2.4",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
@@ -1491,8 +1499,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:19",
@@ -1512,13 +1520,21 @@
    ],
    "gatilho": "time Agua Branca",
    "alvo": {
-    "h": "05:19",
-    "jogo": "Agua Branca x La Boca",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785298600463
+    "h": "05:22",
+    "jogo": "Quito x Medellin",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1785298940359
    },
-   "iniciadoEm": 1785298600463
+   "iniciadoEm": 1785298600463,
+   "tiros": [
+    {
+     "h": "05:19",
+     "jogo": "Agua Branca x La Boca",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785293811162,
@@ -1544,15 +1560,10 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Islington",
-   "n": 14,
-   "start": 1
+   "chave": "Alemanha",
+   "n": 9,
+   "start": 3
   },
-  "_obs": {
-   "euro": {
-    "desde": 1785298464568,
-    "gatilho": "time França"
-   }
-  }
+  "_obs": {}
  }
 }
