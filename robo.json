@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -96.4,
-  "ciclos": 611,
-  "greens": 377,
+  "saldo": -94.2,
+  "ciclos": 612,
+  "greens": 378,
   "redsCiclo": 98,
   "aborts": 0,
   "descartes": 136,
   "historico": [
+   {
+    "quando": "2026-07-29T11:54:46.964Z",
+    "resultado": "GREEN",
+    "unidades": 2.2,
+    "detalhe": "super · Belo Horizonte x Penarol @2.3 (tiro 3) · gatilho: seq GGRGG"
+   },
    {
     "quando": "2026-07-29T11:29:48.361Z",
     "resultado": "GREEN",
@@ -864,58 +870,15 @@
   ],
   "consumidas": {
    "copa": 1785323207870,
-   "premier": 1785324588169
+   "premier": 1785324588169,
+   "super": 1785326086768
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "12:43",
-     "jogo": "Rio de Janeiro x Asuncion",
-     "odd": 2.3
-    },
-    {
-     "h": "12:46",
-     "jogo": "Penarol x Santos",
-     "odd": 2.4
-    },
-    {
-     "h": "12:49",
-     "jogo": "Belo Horizonte x Penarol",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "seq GGRGG",
-   "alvo": {
-    "h": "12:49",
-    "jogo": "Belo Horizonte x Penarol",
-    "odd": 2.3,
-    "unidades": 4,
-    "desde": 1785325847971
-   },
-   "iniciadoEm": 1785325365061,
-   "tiros": [
-    {
-     "h": "12:43",
-     "jogo": "Rio de Janeiro x Asuncion",
-     "odd": 2.3,
-     "unidades": 1
-    },
-    {
-     "h": "12:46",
-     "jogo": "Penarol x Santos",
-     "odd": 2.4,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785323207870,
    "premier": 1785324588169,
    "euro": 1785322367262,
-   "super": 1785319307163
+   "super": 1785326086768
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -932,7 +895,7 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 19
+   "2026-07-29": 21.2
   },
   "_gatilhoAtual": {
    "tipo": "seq",
