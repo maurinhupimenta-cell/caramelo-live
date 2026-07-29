@@ -931,8 +931,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "18:21",
@@ -952,13 +952,27 @@
    ],
    "gatilho": "coluna :24",
    "alvo": {
-    "h": "18:21",
-    "jogo": "City x Leeds",
-    "odd": 2.37,
-    "unidades": 1,
-    "desde": 1785347660299
+    "h": "18:27",
+    "jogo": "Everton x Burnley",
+    "odd": 2.07,
+    "unidades": 4,
+    "desde": 1785347677698
    },
-   "iniciadoEm": 1785347660299
+   "iniciadoEm": 1785347660299,
+   "tiros": [
+    {
+     "h": "18:21",
+     "jogo": "City x Leeds",
+     "odd": 2.37,
+     "unidades": 1
+    },
+    {
+     "h": "18:24",
+     "jogo": "Liverpool x Norwich",
+     "odd": 2.2,
+     "unidades": 2
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785327347966,
@@ -1866,35 +1880,35 @@
   ],
   "consumidas": {},
   "ciclo": {
-   "liga": "euro",
+   "liga": "super",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "18:20",
-     "jogo": "Albânia x Romênia",
-     "odd": 2.1
+     "h": "18:13",
+     "jogo": "Bogota x Medellin",
+     "odd": 2.2
     },
     {
-     "h": "18:23",
-     "jogo": "Escócia x Suíça",
-     "odd": 1.87
+     "h": "18:16",
+     "jogo": "Agua Branca x Sao Paulo",
+     "odd": 1.83
     },
     {
-     "h": "18:26",
-     "jogo": "Portugal x Hungria",
-     "odd": 2.05
+     "h": "18:19",
+     "jogo": "Medellin x Bogota",
+     "odd": 2.2
     }
    ],
-   "gatilho": "odd 1.87",
+   "gatilho": "time Agua Branca",
    "alvo": {
-    "h": "18:20",
-    "jogo": "Albânia x Romênia",
-    "odd": 2.1,
+    "h": "18:13",
+    "jogo": "Bogota x Medellin",
+    "odd": 2.2,
     "unidades": 1,
-    "desde": 1785345290492
+    "desde": 1785347661997
    },
-   "iniciadoEm": 1785345290492
+   "iniciadoEm": 1785347661997
   },
   "cooldown": {
    "euro": 1785339295204,
