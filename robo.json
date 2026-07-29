@@ -929,7 +929,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:21",
+     "jogo": "City x Leeds",
+     "odd": 2.37
+    },
+    {
+     "h": "18:24",
+     "jogo": "Liverpool x Norwich",
+     "odd": 2.2
+    },
+    {
+     "h": "18:27",
+     "jogo": "Everton x Burnley",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "coluna :24",
+   "alvo": {
+    "h": "18:21",
+    "jogo": "City x Leeds",
+    "odd": 2.37,
+    "unidades": 1,
+    "desde": 1785347660299
+   },
+   "iniciadoEm": 1785347660299
+  },
   "cooldown": {
    "copa": 1785327347966,
    "premier": 1785344024494,
@@ -954,21 +984,27 @@
    "2026-07-29": 15.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.4",
-   "n": 23,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":24",
+   "n": 18,
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -57,
-  "ciclos": 683,
+  "ciclos": 684,
   "greens": 455,
   "redsCiclo": 74,
   "aborts": 0,
-  "descartes": 154,
+  "descartes": 155,
   "historico": [
+   {
+    "quando": "2026-07-29T17:54:20.600Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-29T17:14:46.991Z",
     "resultado": "GREEN_OBS",
@@ -1828,9 +1864,7 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {
-   "super": 1785343574796
-  },
+  "consumidas": {},
   "ciclo": {
    "liga": "euro",
    "degrau": 0,
@@ -1885,10 +1919,10 @@
    "2026-07-29": -14.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.87",
-   "n": 13,
-   "start": 2
+   "tipo": "time",
+   "chave": "Agua Branca",
+   "n": 38,
+   "start": 1
   },
   "_obs": {}
  }
