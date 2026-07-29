@@ -1,12 +1,18 @@
 {
  "o35": {
   "saldo": -151.3,
-  "ciclos": 181,
+  "ciclos": 182,
   "greens": 62,
   "redsCiclo": 77,
   "aborts": 0,
-  "descartes": 42,
+  "descartes": 43,
   "historico": [
+   {
+    "quando": "2026-07-29T05:29:51.468Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho seq RRRRG) — liga REARMADA"
+   },
    {
     "quando": "2026-07-29T02:48:30.359Z",
     "resultado": "GREEN",
@@ -176,7 +182,8 @@
    "2026-07-22": -7,
    "2026-07-25": 6.8,
    "2026-07-26": -7,
-   "2026-07-28": 10
+   "2026-07-28": 10,
+   "2026-07-29": 0
   },
   "_gatilhoAtual": {
    "tipo": "placar",
@@ -184,7 +191,12 @@
    "n": 9,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1785302991468,
+    "gatilho": "seq RRRRG"
+   }
+  }
  },
  "o25": {
   "saldo": -114.1,
@@ -757,7 +769,37 @@
    "copa": 1785299985269,
    "euro": 1785300827765
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:28",
+     "jogo": "Belo Horizonte x Rio de Janeiro",
+     "odd": 2.1
+    },
+    {
+     "h": "06:31",
+     "jogo": "Medellin x Porto Alegre",
+     "odd": 2.75
+    },
+    {
+     "h": "06:34",
+     "jogo": "La Boca x Quito",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "seq RRRG",
+   "alvo": {
+    "h": "06:28",
+    "jogo": "Belo Horizonte x Rio de Janeiro",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785302687369
+   },
+   "iniciadoEm": 1785302687369
+  },
   "cooldown": {
    "copa": 1785299985269,
    "premier": 1785277668066,
@@ -782,21 +824,27 @@
    "2026-07-29": 1.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Países Baixos",
+   "tipo": "seq",
+   "chave": "RRGG",
    "n": 8,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -53,
-  "ciclos": 658,
-  "greens": 438,
+  "saldo": -51.9,
+  "ciclos": 659,
+  "greens": 439,
   "redsCiclo": 71,
   "aborts": 0,
   "descartes": 149,
   "historico": [
+   {
+    "quando": "2026-07-29T05:24:49.863Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Rio de Janeiro x Quito @2.05 (tiro 2) · gatilho: time Agua Branca"
+   },
    {
     "quando": "2026-07-29T05:10:46.361Z",
     "resultado": "RED_CICLO",
@@ -1509,12 +1557,13 @@
   "consumidas": {
    "euro": 1785300067668,
    "premier": 1785300650858,
-   "copa": 1785301846170
+   "copa": 1785301846170,
+   "super": 1785302689758
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1785300067668,
-   "super": 1785299080559,
+   "super": 1785302689758,
    "premier": 1785300650858,
    "copa": 1785301846170
   },
@@ -1532,12 +1581,12 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": -10.9
+   "2026-07-29": -9.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.05",
-   "n": 18,
+   "tipo": "time",
+   "chave": "Belo Horizonte",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
