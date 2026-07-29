@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -91.7,
-  "ciclos": 613,
+  "saldo": -98.7,
+  "ciclos": 614,
   "greens": 379,
-  "redsCiclo": 98,
+  "redsCiclo": 99,
   "aborts": 0,
   "descartes": 136,
   "historico": [
+   {
+    "quando": "2026-07-29T12:35:47.963Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: coluna :29"
+   },
    {
     "quando": "2026-07-29T12:15:48.162Z",
     "resultado": "GREEN",
@@ -876,57 +882,44 @@
   ],
   "consumidas": {
    "super": 1785326086768,
-   "copa": 1785327347966
+   "copa": 1785327347966,
+   "euro": 1785328547859
   },
   "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "13:26",
-     "jogo": "Bélgica x República Tcheca",
-     "odd": 2.45
+     "h": "13:39",
+     "jogo": "Everton x Wolverhampton",
+     "odd": 2.02
     },
     {
-     "h": "13:29",
-     "jogo": "Espanha x Itália",
-     "odd": 2.15
+     "h": "13:42",
+     "jogo": "Aston x Leicester",
+     "odd": 2.4
     },
     {
-     "h": "13:32",
-     "jogo": "Polônia x França",
-     "odd": 2.25
+     "h": "13:45",
+     "jogo": "Burnley x Watford",
+     "odd": 2.2
     }
    ],
-   "gatilho": "coluna :29",
+   "gatilho": "odd 2.4",
    "alvo": {
-    "h": "13:32",
-    "jogo": "Polônia x França",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1785328308460
+    "h": "13:39",
+    "jogo": "Everton x Wolverhampton",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1785328550065
    },
-   "iniciadoEm": 1785327467467,
-   "tiros": [
-    {
-     "h": "13:26",
-     "jogo": "Bélgica x República Tcheca",
-     "odd": 2.45,
-     "unidades": 1
-    },
-    {
-     "h": "13:29",
-     "jogo": "Espanha x Itália",
-     "odd": 2.15,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1785328550065
   },
   "cooldown": {
    "copa": 1785327347966,
    "premier": 1785324588169,
-   "euro": 1785322367262,
+   "euro": 1785328547859,
    "super": 1785326086768
   },
   "dias": {
@@ -944,13 +937,13 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 23.7
+   "2026-07-29": 16.7
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.4",
    "n": 17,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
