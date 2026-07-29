@@ -1896,7 +1896,37 @@
    "euro": 1785349788391,
    "super": 1785351587396
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:31",
+     "jogo": "Inglaterra x Cabo Verde",
+     "odd": 2.05
+    },
+    {
+     "h": "20:34",
+     "jogo": "Argélia x Arábia Saudita",
+     "odd": 1.93
+    },
+    {
+     "h": "20:37",
+     "jogo": "Noruega x Japão",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "time Cabo Verde",
+   "alvo": {
+    "h": "20:31",
+    "jogo": "Inglaterra x Cabo Verde",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785353273100
+   },
+   "iniciadoEm": 1785353273100
+  },
   "cooldown": {
    "euro": 1785349788391,
    "super": 1785351587396,
@@ -1920,9 +1950,9 @@
    "2026-07-29": -20.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":58",
-   "n": 18,
+   "tipo": "time",
+   "chave": "Cabo Verde",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
