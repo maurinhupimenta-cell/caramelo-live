@@ -1650,7 +1650,45 @@
    "copa": 1785314865371,
    "super": 1785315884566
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "10:20",
+     "jogo": "França x Inglaterra",
+     "odd": 1.8
+    },
+    {
+     "h": "10:23",
+     "jogo": "Albânia x Áustria",
+     "odd": 2.2
+    },
+    {
+     "h": "10:26",
+     "jogo": "Países Baixos x Inglaterra",
+     "odd": 1.8
+    }
+   ],
+   "gatilho": "odd 2.2",
+   "alvo": {
+    "h": "10:23",
+    "jogo": "Albânia x Áustria",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1785316968071
+   },
+   "iniciadoEm": 1785316368572,
+   "tiros": [
+    {
+     "h": "10:20",
+     "jogo": "França x Inglaterra",
+     "odd": 1.8,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1785312767367,
    "super": 1785315884566,
@@ -1674,9 +1712,9 @@
    "2026-07-29": -8.7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Agua Branca",
-   "n": 23,
+   "tipo": "odd",
+   "chave": "2",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
