@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -99,
-  "ciclos": 610,
-  "greens": 376,
+  "saldo": -96.4,
+  "ciclos": 611,
+  "greens": 377,
   "redsCiclo": 98,
   "aborts": 0,
   "descartes": 136,
   "historico": [
+   {
+    "quando": "2026-07-29T11:29:48.361Z",
+    "resultado": "GREEN",
+    "unidades": 2.6,
+    "detalhe": "premier · Southampton x Leicester @2.4 (tiro 3) · gatilho: coluna :24"
+   },
    {
     "quando": "2026-07-29T11:06:48.061Z",
     "resultado": "GREEN",
@@ -858,56 +864,13 @@
   ],
   "consumidas": {
    "euro": 1785322367262,
-   "copa": 1785323207870
+   "copa": 1785323207870,
+   "premier": 1785324588169
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "12:21",
-     "jogo": "Southampton x Norwich",
-     "odd": 2.3
-    },
-    {
-     "h": "12:24",
-     "jogo": "Watford x Newcastle",
-     "odd": 2.1
-    },
-    {
-     "h": "12:27",
-     "jogo": "Southampton x Leicester",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "coluna :24",
-   "alvo": {
-    "h": "12:27",
-    "jogo": "Southampton x Leicester",
-    "odd": 2.4,
-    "unidades": 4,
-    "desde": 1785324402468
-   },
-   "iniciadoEm": 1785323682264,
-   "tiros": [
-    {
-     "h": "12:21",
-     "jogo": "Southampton x Norwich",
-     "odd": 2.3,
-     "unidades": 1
-    },
-    {
-     "h": "12:24",
-     "jogo": "Watford x Newcastle",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785323207870,
-   "premier": 1785277668066,
+   "premier": 1785324588169,
    "euro": 1785322367262,
    "super": 1785319307163
   },
@@ -926,7 +889,7 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 16.4
+   "2026-07-29": 19
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
@@ -1822,7 +1785,7 @@
    "tipo": "odd",
    "chave": "2.07",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
