@@ -937,7 +937,37 @@
   "consumidas": {
    "premier": 1785347678695
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:52",
+     "jogo": "Agua Branca x La Plata",
+     "odd": 2.45
+    },
+    {
+     "h": "19:55",
+     "jogo": "Buenos Aires x La Boca",
+     "odd": 2.2
+    },
+    {
+     "h": "19:58",
+     "jogo": "Bogota x Santos",
+     "odd": 2.62
+    }
+   ],
+   "gatilho": "coluna :52",
+   "alvo": {
+    "h": "19:52",
+    "jogo": "Agua Branca x La Plata",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1785351046695
+   },
+   "iniciadoEm": 1785351046695
+  },
   "cooldown": {
    "copa": 1785327347966,
    "premier": 1785347678695,
@@ -963,9 +993,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":24",
+   "chave": ":52",
    "n": 18,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
