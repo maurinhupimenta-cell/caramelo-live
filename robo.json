@@ -807,8 +807,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "09:19",
@@ -828,13 +828,21 @@
    ],
    "gatilho": "time Argélia",
    "alvo": {
-    "h": "09:19",
-    "jogo": "Curação x Haiti",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785312885065
+    "h": "09:22",
+    "jogo": "Argélia x Suíça",
+    "odd": 2.35,
+    "unidades": 2,
+    "desde": 1785313367067
    },
-   "iniciadoEm": 1785312885065
+   "iniciadoEm": 1785312885065,
+   "tiros": [
+    {
+     "h": "09:19",
+     "jogo": "Curação x Haiti",
+     "odd": 2.05,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785308865159,
@@ -860,9 +868,9 @@
    "2026-07-29": 10.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGG",
-   "n": 8,
+   "tipo": "coluna",
+   "chave": ":28",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
