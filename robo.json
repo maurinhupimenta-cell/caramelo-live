@@ -858,13 +858,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -51.3,
-  "ciclos": 669,
-  "greens": 446,
+  "saldo": -50.8,
+  "ciclos": 670,
+  "greens": 447,
   "redsCiclo": 72,
   "aborts": 0,
   "descartes": 151,
   "historico": [
+   {
+    "quando": "2026-07-29T09:04:44.760Z",
+    "resultado": "GREEN",
+    "unidades": 0.5,
+    "detalhe": "super · Asuncion x Buenos Aires @1.87 (tiro 3) · gatilho: time Agua Branca"
+   },
    {
     "quando": "2026-07-29T08:47:45.559Z",
     "resultado": "RED_CICLO",
@@ -1642,56 +1648,13 @@
   ],
   "consumidas": {
    "euro": 1785312767367,
-   "copa": 1785314865371
+   "copa": 1785314865371,
+   "super": 1785315884566
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "09:55",
-     "jogo": "Buenos Aires x Guayaquil",
-     "odd": 1.85
-    },
-    {
-     "h": "09:58",
-     "jogo": "Itaquera x Agua Branca",
-     "odd": 1.93
-    },
-    {
-     "h": "10:01",
-     "jogo": "Asuncion x Buenos Aires",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "time Agua Branca",
-   "alvo": {
-    "h": "10:01",
-    "jogo": "Asuncion x Buenos Aires",
-    "odd": 1.87,
-    "unidades": 4,
-    "desde": 1785315707164
-   },
-   "iniciadoEm": 1785314986868,
-   "tiros": [
-    {
-     "h": "09:55",
-     "jogo": "Buenos Aires x Guayaquil",
-     "odd": 1.85,
-     "unidades": 1
-    },
-    {
-     "h": "09:58",
-     "jogo": "Itaquera x Agua Branca",
-     "odd": 1.93,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785312767367,
-   "super": 1785311386559,
+   "super": 1785315884566,
    "premier": 1785300650858,
    "copa": 1785314865371
   },
@@ -1709,7 +1672,7 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": -9.2
+   "2026-07-29": -8.7
   },
   "_gatilhoAtual": {
    "tipo": "time",
