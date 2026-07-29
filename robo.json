@@ -201,12 +201,24 @@
  },
  "o25": {
   "saldo": -98.7,
-  "ciclos": 614,
+  "ciclos": 616,
   "greens": 379,
   "redsCiclo": 99,
   "aborts": 0,
-  "descartes": 136,
+  "descartes": 138,
   "historico": [
+   {
+    "quando": "2026-07-29T15:13:44.799Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho seq RGRGR) — liga REARMADA"
+   },
+   {
+    "quando": "2026-07-29T15:12:55.700Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-29T12:35:47.963Z",
     "resultado": "RED_CICLO",
@@ -881,40 +893,9 @@
    }
   ],
   "consumidas": {
-   "super": 1785326086768,
-   "euro": 1785328547859
+   "super": 1785326086768
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "13:39",
-     "jogo": "Everton x Wolverhampton",
-     "odd": 2.02
-    },
-    {
-     "h": "13:42",
-     "jogo": "Aston x Leicester",
-     "odd": 2.4
-    },
-    {
-     "h": "13:45",
-     "jogo": "Burnley x Watford",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "odd 2.4",
-   "alvo": {
-    "h": "13:39",
-    "jogo": "Everton x Wolverhampton",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1785328550065
-   },
-   "iniciadoEm": 1785328550065
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785327347966,
    "premier": 1785324588169,
@@ -944,7 +925,12 @@
    "n": 17,
    "start": 2
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1785337977697,
+    "gatilho": "odd 2.4"
+   }
+  }
  },
  "ambas": {
   "saldo": -52.3,
@@ -1790,9 +1776,7 @@
    }
   ],
   "consumidas": {
-   "super": 1785325065969,
-   "euro": 1785325665663,
-   "copa": 1785327585768
+   "super": 1785325065969
   },
   "ciclo": null,
   "cooldown": {
