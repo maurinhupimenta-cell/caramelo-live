@@ -821,10 +821,39 @@
    }
   ],
   "consumidas": {
-   "euro": 1785313790763,
    "super": 1785314445062
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:29",
+     "jogo": "Romênia x Sérvia",
+     "odd": 2.35
+    },
+    {
+     "h": "10:32",
+     "jogo": "Itália x Suíça",
+     "odd": 2.2
+    },
+    {
+     "h": "10:35",
+     "jogo": "Bélgica x Alemanha",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "odd 2.2",
+   "alvo": {
+    "h": "10:29",
+    "jogo": "Romênia x Sérvia",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1785317396067
+   },
+   "iniciadoEm": 1785317396067
+  },
   "cooldown": {
    "copa": 1785313725559,
    "premier": 1785277668066,
@@ -850,9 +879,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.45",
-   "n": 8,
-   "start": 2
+   "chave": "2.2",
+   "n": 25,
+   "start": 1
   },
   "_obs": {}
  },
