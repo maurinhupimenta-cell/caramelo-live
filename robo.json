@@ -976,8 +976,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "22:11",
@@ -997,13 +997,21 @@
    ],
    "gatilho": "odd 2.7",
    "alvo": {
-    "h": "22:11",
-    "jogo": "Bélgica x Polônia",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1785358952492
+    "h": "22:14",
+    "jogo": "República Tcheca x Hungria",
+    "odd": 2.7,
+    "unidades": 2,
+    "desde": 1785359626701
    },
-   "iniciadoEm": 1785358952492
+   "iniciadoEm": 1785358952492,
+   "tiros": [
+    {
+     "h": "22:11",
+     "jogo": "Bélgica x Polônia",
+     "odd": 2.35,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785327347966,
@@ -1038,12 +1046,18 @@
  },
  "ambas": {
   "saldo": -59.6,
-  "ciclos": 695,
+  "ciclos": 696,
   "greens": 460,
   "redsCiclo": 75,
   "aborts": 0,
-  "descartes": 160,
+  "descartes": 161,
   "historico": [
+   {
+    "quando": "2026-07-29T21:11:46.801Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Equador) — liga REARMADA"
+   },
    {
     "quando": "2026-07-29T21:11:45.400Z",
     "resultado": "DESCARTADO",
@@ -1984,30 +1998,30 @@
    "apostado": 0,
    "plano": [
     {
-     "h": "22:04",
-     "jogo": "Noruega x Países Baixos",
-     "odd": 1.93
+     "h": "22:19",
+     "jogo": "Escócia x Egito",
+     "odd": 2.05
     },
     {
-     "h": "22:07",
-     "jogo": "Egito x Jordânia",
-     "odd": 1.93
+     "h": "22:22",
+     "jogo": "Equador x Jordânia",
+     "odd": 1.95
     },
     {
-     "h": "21:52",
-     "jogo": "Suíça x Iraque",
-     "odd": 2.15
+     "h": "22:25",
+     "jogo": "Arábia Saudita x Bélgica",
+     "odd": 1.93
     }
    ],
-   "gatilho": "seq GRGGG",
+   "gatilho": "time Equador",
    "alvo": {
-    "h": "22:04",
-    "jogo": "Noruega x Países Baixos",
-    "odd": 1.93,
+    "h": "22:19",
+    "jogo": "Escócia x Egito",
+    "odd": 2.05,
     "unidades": 1,
-    "desde": 1785358594602
+    "desde": 1785359508799
    },
-   "iniciadoEm": 1785358594602
+   "iniciadoEm": 1785359508799
   },
   "cooldown": {
    "euro": 1785356944597,
