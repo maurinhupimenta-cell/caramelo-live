@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -91.1,
-  "ciclos": 632,
-  "greens": 390,
+  "saldo": -90.1,
+  "ciclos": 633,
+  "greens": 391,
   "redsCiclo": 101,
   "aborts": 0,
   "descartes": 141,
   "historico": [
+   {
+    "quando": "2026-07-29T21:56:43.098Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Norwich x City @2.05 (tiro 1) · gatilho: odd 2.5"
+   },
    {
     "quando": "2026-07-29T21:51:44.294Z",
     "resultado": "GREEN",
@@ -991,42 +997,13 @@
   "consumidas": {
    "euro": 1785359913698,
    "copa": 1785361238498,
-   "super": 1785361904094
+   "super": 1785361904094,
+   "premier": 1785362202904
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:54",
-     "jogo": "Norwich x City",
-     "odd": 2.05
-    },
-    {
-     "h": "22:57",
-     "jogo": "United x West Ham",
-     "odd": 2.5
-    },
-    {
-     "h": "23:00",
-     "jogo": "Southampton x Islington",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "odd 2.5",
-   "alvo": {
-    "h": "22:54",
-    "jogo": "Norwich x City",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785361913391
-   },
-   "iniciadoEm": 1785361913391
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785361238498,
-   "premier": 1785357702600,
+   "premier": 1785362202904,
    "euro": 1785359913698,
    "super": 1785361904094
   },
@@ -1045,7 +1022,7 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 24.3
+   "2026-07-29": 25.3
   },
   "_gatilhoAtual": {
    "tipo": "odd",
