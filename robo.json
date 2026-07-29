@@ -872,7 +872,37 @@
    "premier": 1785324588169,
    "super": 1785326086768
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:10",
+     "jogo": "Suécia x Gana",
+     "odd": 2.7
+    },
+    {
+     "h": "13:13",
+     "jogo": "África do Sul x Tunísia",
+     "odd": 2.75
+    },
+    {
+     "h": "13:16",
+     "jogo": "Jordânia x Portugal",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time África do Sul",
+   "alvo": {
+    "h": "13:10",
+    "jogo": "Suécia x Gana",
+    "odd": 2.7,
+    "unidades": 1,
+    "desde": 1785326808566
+   },
+   "iniciadoEm": 1785326808566
+  },
   "cooldown": {
    "copa": 1785323207870,
    "premier": 1785324588169,
@@ -898,8 +928,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GGRGG",
-   "n": 8,
+   "chave": "RRRR",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
@@ -1742,7 +1772,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1785323387361,
    "super": 1785325065969,
    "euro": 1785325665663
   },
