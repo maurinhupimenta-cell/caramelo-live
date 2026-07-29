@@ -2028,7 +2028,37 @@
    "super": 1785360751602,
    "euro": 1785361476993
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:04",
+     "jogo": "Uzbequistão x Inglaterra",
+     "odd": 1.98
+    },
+    {
+     "h": "23:07",
+     "jogo": "Equador x Bélgica",
+     "odd": 1.93
+    },
+    {
+     "h": "22:52",
+     "jogo": "Qatar x Tunísia",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time Equador",
+   "alvo": {
+    "h": "23:04",
+    "jogo": "Uzbequistão x Inglaterra",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785361956995
+   },
+   "iniciadoEm": 1785361956995
+  },
   "cooldown": {
    "euro": 1785361476993,
    "super": 1785360751602,
@@ -2052,9 +2082,9 @@
    "2026-07-29": -15.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRRG",
-   "n": 12,
+   "tipo": "time",
+   "chave": "Equador",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
