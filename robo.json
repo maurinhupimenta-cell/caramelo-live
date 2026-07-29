@@ -926,7 +926,37 @@
    "super": 1785339601393,
    "euro": 1785341994803
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:48",
+     "jogo": "Norwich x Everton",
+     "odd": 2.1
+    },
+    {
+     "h": "17:51",
+     "jogo": "Leicester x Southampton",
+     "odd": 2.4
+    },
+    {
+     "h": "17:54",
+     "jogo": "West Ham x Palace",
+     "odd": 2.45
+    }
+   ],
+   "gatilho": "odd 2.4",
+   "alvo": {
+    "h": "17:48",
+    "jogo": "Norwich x Everton",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785343181490
+   },
+   "iniciadoEm": 1785343181490
+  },
   "cooldown": {
    "copa": 1785327347966,
    "premier": 1785339018901,
@@ -951,17 +981,12 @@
    "2026-07-29": 13.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRG",
-   "n": 27,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.4",
+   "n": 23,
+   "start": 3
   },
-  "_obs": {
-   "premier": {
-    "desde": 1785342632993,
-    "gatilho": "odd 2.4"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -58.3,
