@@ -733,13 +733,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -37.8,
-  "ciclos": 648,
-  "greens": 432,
+  "saldo": -36.8,
+  "ciclos": 649,
+  "greens": 433,
   "redsCiclo": 68,
   "aborts": 0,
   "descartes": 148,
   "historico": [
+   {
+    "quando": "2026-07-29T02:10:28.565Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Medellin x Lima @1.98 (tiro 1) · gatilho: placar goleada (3+)"
+   },
    {
     "quando": "2026-07-28T23:18:55.062Z",
     "resultado": "GREEN",
@@ -1389,41 +1395,13 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:07",
-     "jogo": "Medellin x Lima",
-     "odd": 1.98
-    },
-    {
-     "h": "03:10",
-     "jogo": "La Plata x Penarol",
-     "odd": 2.3
-    },
-    {
-     "h": "03:13",
-     "jogo": "Guayaquil x La Boca",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "placar goleada (3+)",
-   "alvo": {
-    "h": "03:07",
-    "jogo": "Medellin x Lima",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785290648465
-   },
-   "iniciadoEm": 1785290648465
+  "consumidas": {
+   "super": 1785291028460
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785273830564,
-   "super": 1785278084660,
+   "super": 1785291028460,
    "premier": 1785280734959,
    "copa": 1785278751261
   },
@@ -1440,13 +1418,13 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -16.2
+   "2026-07-28": -15.2
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
+   "tipo": "odd",
+   "chave": "1.93",
    "n": 8,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  }
