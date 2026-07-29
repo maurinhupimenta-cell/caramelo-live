@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -92.1,
-  "ciclos": 631,
-  "greens": 389,
+  "saldo": -91.1,
+  "ciclos": 632,
+  "greens": 390,
   "redsCiclo": 101,
   "aborts": 0,
   "descartes": 141,
   "historico": [
+   {
+    "quando": "2026-07-29T21:51:44.294Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Buenos Aires x Montevideo @2.02 (tiro 1) · gatilho: coluna :52"
+   },
    {
     "quando": "2026-07-29T21:40:38.692Z",
     "resultado": "GREEN",
@@ -984,44 +990,15 @@
   ],
   "consumidas": {
    "euro": 1785359913698,
-   "copa": 1785361238498
+   "copa": 1785361238498,
+   "super": 1785361904094
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:49",
-     "jogo": "Buenos Aires x Montevideo",
-     "odd": 2.02
-    },
-    {
-     "h": "22:52",
-     "jogo": "Medellin x La Plata",
-     "odd": 2.62
-    },
-    {
-     "h": "22:55",
-     "jogo": "Penarol x Avellaneda",
-     "odd": 2.45
-    }
-   ],
-   "gatilho": "coluna :52",
-   "alvo": {
-    "h": "22:49",
-    "jogo": "Buenos Aires x Montevideo",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1785361291498
-   },
-   "iniciadoEm": 1785361291498
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785361238498,
    "premier": 1785357702600,
    "euro": 1785359913698,
-   "super": 1785356876194
+   "super": 1785361904094
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -1038,13 +1015,13 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 23.3
+   "2026-07-29": 24.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":52",
-   "n": 19,
-   "start": 2
+   "tipo": "odd",
+   "chave": "2.5",
+   "n": 21,
+   "start": 1
   },
   "_obs": {}
  },
