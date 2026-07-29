@@ -797,12 +797,18 @@
  },
  "ambas": {
   "saldo": -41,
-  "ciclos": 653,
+  "ciclos": 654,
   "greens": 436,
   "redsCiclo": 69,
   "aborts": 0,
-  "descartes": 148,
+  "descartes": 149,
   "historico": [
+   {
+    "quando": "2026-07-29T04:20:01.161Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho time França) — liga REARMADA"
+   },
    {
     "quando": "2026-07-29T03:16:31.962Z",
     "resultado": "GREEN",
@@ -1483,7 +1489,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:19",
+     "jogo": "Agua Branca x La Boca",
+     "odd": 1.98
+    },
+    {
+     "h": "05:22",
+     "jogo": "Quito x Medellin",
+     "odd": 2.05
+    },
+    {
+     "h": "05:25",
+     "jogo": "Porto Alegre x Buenos Aires",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "time Agua Branca",
+   "alvo": {
+    "h": "05:19",
+    "jogo": "Agua Branca x La Boca",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785298600463
+   },
+   "iniciadoEm": 1785298600463
+  },
   "cooldown": {
    "euro": 1785293811162,
    "super": 1785294991766,
@@ -1508,8 +1544,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Guayaquil",
-   "n": 8,
+   "chave": "Islington",
+   "n": 14,
    "start": 1
   },
   "_obs": {
