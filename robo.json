@@ -942,13 +942,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -53.2,
-  "ciclos": 678,
-  "greens": 452,
+  "saldo": -52.3,
+  "ciclos": 679,
+  "greens": 453,
   "redsCiclo": 73,
   "aborts": 0,
   "descartes": 153,
   "historico": [
+   {
+    "quando": "2026-07-29T12:19:45.962Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · Jordânia x Portugal @1.9 (tiro 1) · gatilho: time Áustria"
+   },
    {
     "quando": "2026-07-29T11:47:45.767Z",
     "resultado": "GREEN",
@@ -1780,44 +1786,15 @@
   ],
   "consumidas": {
    "super": 1785325065969,
-   "euro": 1785325665663
+   "euro": 1785325665663,
+   "copa": 1785327585768
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "13:16",
-     "jogo": "Jordânia x Portugal",
-     "odd": 1.9
-    },
-    {
-     "h": "13:19",
-     "jogo": "Suécia x Áustria",
-     "odd": 2.1
-    },
-    {
-     "h": "13:22",
-     "jogo": "Noruega x Irã",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "time Áustria",
-   "alvo": {
-    "h": "13:16",
-    "jogo": "Jordânia x Portugal",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1785326988571
-   },
-   "iniciadoEm": 1785326988571
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785325665663,
    "super": 1785325065969,
    "premier": 1785300650858,
-   "copa": 1785323387361
+   "copa": 1785327585768
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -1833,12 +1810,12 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": -11.1
+   "2026-07-29": -10.2
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "acima de 1-0 (2-1)",
-   "n": 19,
+   "n": 20,
    "start": 1
   },
   "_obs": {}
