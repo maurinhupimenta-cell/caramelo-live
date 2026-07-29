@@ -805,7 +805,37 @@
   "consumidas": {
    "euro": 1785310006771
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:19",
+     "jogo": "Curação x Haiti",
+     "odd": 2.05
+    },
+    {
+     "h": "09:22",
+     "jogo": "Argélia x Suíça",
+     "odd": 2.35
+    },
+    {
+     "h": "09:25",
+     "jogo": "Cabo Verde x Egito",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time Argélia",
+   "alvo": {
+    "h": "09:19",
+    "jogo": "Curação x Haiti",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785312885065
+   },
+   "iniciadoEm": 1785312885065
+  },
   "cooldown": {
    "copa": 1785308865159,
    "premier": 1785277668066,
@@ -831,9 +861,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Hungria",
-   "n": 11,
-   "start": 1
+   "chave": "Argélia",
+   "n": 13,
+   "start": 3
   },
   "_obs": {}
  },
