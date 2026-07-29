@@ -786,8 +786,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "06:59",
@@ -807,13 +807,21 @@
    ],
    "gatilho": "odd 2.2",
    "alvo": {
-    "h": "06:59",
-    "jogo": "Albânia x Bélgica",
-    "odd": 2.45,
-    "unidades": 1,
-    "desde": 1785304428261
+    "h": "07:02",
+    "jogo": "Alemanha x Ucrânia",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1785304965166
    },
-   "iniciadoEm": 1785304428261
+   "iniciadoEm": 1785304428261,
+   "tiros": [
+    {
+     "h": "06:59",
+     "jogo": "Albânia x Bélgica",
+     "odd": 2.45,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785304189762,
@@ -839,10 +847,10 @@
    "2026-07-29": 3.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.2",
-   "n": 14,
-   "start": 2
+   "tipo": "time",
+   "chave": "Países Baixos",
+   "n": 9,
+   "start": 1
   },
   "_obs": {}
  },
