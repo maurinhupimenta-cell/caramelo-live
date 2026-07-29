@@ -879,7 +879,37 @@
    "super": 1785326086768,
    "copa": 1785327347966
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:26",
+     "jogo": "Bélgica x República Tcheca",
+     "odd": 2.45
+    },
+    {
+     "h": "13:29",
+     "jogo": "Espanha x Itália",
+     "odd": 2.15
+    },
+    {
+     "h": "13:32",
+     "jogo": "Polônia x França",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "coluna :29",
+   "alvo": {
+    "h": "13:26",
+    "jogo": "Bélgica x República Tcheca",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1785327467467
+   },
+   "iniciadoEm": 1785327467467
+  },
   "cooldown": {
    "copa": 1785327347966,
    "premier": 1785324588169,
@@ -904,10 +934,10 @@
    "2026-07-29": 23.7
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 19,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":29",
+   "n": 13,
+   "start": 3
   },
   "_obs": {}
  },
@@ -1806,9 +1836,9 @@
    "2026-07-29": -11.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Áustria",
-   "n": 10,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 19,
    "start": 1
   },
   "_obs": {}
