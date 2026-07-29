@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -94.2,
-  "ciclos": 612,
-  "greens": 378,
+  "saldo": -91.7,
+  "ciclos": 613,
+  "greens": 379,
   "redsCiclo": 98,
   "aborts": 0,
   "descartes": 136,
   "historico": [
+   {
+    "quando": "2026-07-29T12:15:48.162Z",
+    "resultado": "GREEN",
+    "unidades": 2.5,
+    "detalhe": "copa · África do Sul x Tunísia @2.75 (tiro 2) · gatilho: time África do Sul"
+   },
    {
     "quando": "2026-07-29T11:54:46.964Z",
     "resultado": "GREEN",
@@ -870,49 +876,12 @@
   ],
   "consumidas": {
    "premier": 1785324588169,
-   "super": 1785326086768
+   "super": 1785326086768,
+   "copa": 1785327347966
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "13:10",
-     "jogo": "Suécia x Gana",
-     "odd": 2.7
-    },
-    {
-     "h": "13:13",
-     "jogo": "África do Sul x Tunísia",
-     "odd": 2.75
-    },
-    {
-     "h": "13:16",
-     "jogo": "Jordânia x Portugal",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "time África do Sul",
-   "alvo": {
-    "h": "13:13",
-    "jogo": "África do Sul x Tunísia",
-    "odd": 2.75,
-    "unidades": 2,
-    "desde": 1785327225864
-   },
-   "iniciadoEm": 1785326808566,
-   "tiros": [
-    {
-     "h": "13:10",
-     "jogo": "Suécia x Gana",
-     "odd": 2.7,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785323207870,
+   "copa": 1785327347966,
    "premier": 1785324588169,
    "euro": 1785322367262,
    "super": 1785326086768
@@ -932,12 +901,12 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 21.2
+   "2026-07-29": 23.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRR",
-   "n": 11,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 19,
    "start": 1
   },
   "_obs": {}
@@ -1840,7 +1809,7 @@
    "tipo": "time",
    "chave": "Áustria",
    "n": 10,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
