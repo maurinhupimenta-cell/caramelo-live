@@ -914,7 +914,37 @@
    "premier": 1785339018901,
    "super": 1785339601393
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:14",
+     "jogo": "Áustria x Países Baixos",
+     "odd": 2.15
+    },
+    {
+     "h": "17:17",
+     "jogo": "Portugal x Albânia",
+     "odd": 2.6
+    },
+    {
+     "h": "17:20",
+     "jogo": "Inglaterra x Itália",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "seq RGRG",
+   "alvo": {
+    "h": "17:14",
+    "jogo": "Áustria x Países Baixos",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785341505991
+   },
+   "iniciadoEm": 1785341505991
+  },
   "cooldown": {
    "copa": 1785327347966,
    "premier": 1785339018901,
@@ -939,21 +969,27 @@
    "2026-07-29": 11.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.45",
-   "n": 14,
+   "tipo": "seq",
+   "chave": "RGRG",
+   "n": 27,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -59.3,
-  "ciclos": 680,
-  "greens": 453,
+  "saldo": -58.3,
+  "ciclos": 681,
+  "greens": 454,
   "redsCiclo": 74,
   "aborts": 0,
   "descartes": 153,
   "historico": [
+   {
+    "quando": "2026-07-29T15:40:01.896Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Buenos Aires x Medellin @1.98 (tiro 1) · gatilho: time Medellin"
+   },
    {
     "quando": "2026-07-29T15:34:55.493Z",
     "resultado": "RED_CICLO",
@@ -1796,42 +1832,13 @@
    }
   ],
   "consumidas": {
-   "euro": 1785339295204
+   "euro": 1785339295204,
+   "super": 1785339601700
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:37",
-     "jogo": "Buenos Aires x Medellin",
-     "odd": 1.98
-    },
-    {
-     "h": "16:40",
-     "jogo": "Santiago x Itaquera",
-     "odd": 1.9
-    },
-    {
-     "h": "16:43",
-     "jogo": "Sao Paulo x Porto Alegre",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "time Medellin",
-   "alvo": {
-    "h": "16:37",
-    "jogo": "Buenos Aires x Medellin",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785339297297
-   },
-   "iniciadoEm": 1785339297297
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785339295204,
-   "super": 1785325065969,
+   "super": 1785339601700,
    "premier": 1785300650858,
    "copa": 1785327585768
   },
@@ -1849,13 +1856,13 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": -17.2
+   "2026-07-29": -16.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Medellin",
    "n": 28,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
