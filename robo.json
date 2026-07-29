@@ -987,7 +987,37 @@
    "euro": 1785359913698,
    "copa": 1785361238498
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:49",
+     "jogo": "Buenos Aires x Montevideo",
+     "odd": 2.02
+    },
+    {
+     "h": "22:52",
+     "jogo": "Medellin x La Plata",
+     "odd": 2.62
+    },
+    {
+     "h": "22:55",
+     "jogo": "Penarol x Avellaneda",
+     "odd": 2.45
+    }
+   ],
+   "gatilho": "coluna :52",
+   "alvo": {
+    "h": "22:49",
+    "jogo": "Buenos Aires x Montevideo",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1785361291498
+   },
+   "iniciadoEm": 1785361291498
+  },
   "cooldown": {
    "copa": 1785361238498,
    "premier": 1785357702600,
@@ -1012,10 +1042,10 @@
    "2026-07-29": 23.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "África do Sul",
-   "n": 14,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":52",
+   "n": 19,
+   "start": 3
   },
   "_obs": {}
  },
