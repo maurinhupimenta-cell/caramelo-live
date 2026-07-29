@@ -748,13 +748,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -35.1,
-  "ciclos": 651,
+  "saldo": -42.1,
+  "ciclos": 652,
   "greens": 435,
-  "redsCiclo": 68,
+  "redsCiclo": 69,
   "aborts": 0,
   "descartes": 148,
   "historico": [
+   {
+    "quando": "2026-07-29T02:56:51.264Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: time Geórgia"
+   },
    {
     "quando": "2026-07-29T02:38:41.468Z",
     "resultado": "GREEN",
@@ -1425,55 +1431,12 @@
   "consumidas": {
    "super": 1785291028460,
    "copa": 1785292100759,
-   "premier": 1785292721362
+   "premier": 1785292721362,
+   "euro": 1785293811162
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "03:47",
-     "jogo": "Ucrânia x Polônia",
-     "odd": 2.1
-    },
-    {
-     "h": "03:50",
-     "jogo": "Geórgia x Espanha",
-     "odd": 1.93
-    },
-    {
-     "h": "03:53",
-     "jogo": "Albânia x Croácia",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "time Geórgia",
-   "alvo": {
-    "h": "03:53",
-    "jogo": "Albânia x Croácia",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1785293586265
-   },
-   "iniciadoEm": 1785292753571,
-   "tiros": [
-    {
-     "h": "03:47",
-     "jogo": "Ucrânia x Polônia",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "03:50",
-     "jogo": "Geórgia x Espanha",
-     "odd": 1.93,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785273830564,
+   "euro": 1785293811162,
    "super": 1785291028460,
    "premier": 1785292721362,
    "copa": 1785292100759
@@ -1491,7 +1454,7 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -13.5
+   "2026-07-28": -20.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
