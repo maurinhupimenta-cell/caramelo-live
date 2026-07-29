@@ -1615,8 +1615,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "07:56",
@@ -1636,13 +1636,21 @@
    ],
    "gatilho": "seq RRRR",
    "alvo": {
-    "h": "07:56",
-    "jogo": "Países Baixos x Alemanha",
-    "odd": 1.83,
-    "unidades": 1,
-    "desde": 1785308148067
+    "h": "07:59",
+    "jogo": "Itália x República Tcheca",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1785308385168
    },
-   "iniciadoEm": 1785308148067
+   "iniciadoEm": 1785308148067,
+   "tiros": [
+    {
+     "h": "07:56",
+     "jogo": "Países Baixos x Alemanha",
+     "odd": 1.83,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785304547967,
@@ -1667,9 +1675,9 @@
    "2026-07-29": -6.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRR",
-   "n": 11,
+   "tipo": "odd",
+   "chave": "2.2",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
