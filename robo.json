@@ -977,7 +977,6 @@
    }
   ],
   "consumidas": {
-   "super": 1785356876194,
    "premier": 1785357702600,
    "euro": 1785359913698
   },
@@ -1045,12 +1044,18 @@
  },
  "ambas": {
   "saldo": -59.6,
-  "ciclos": 697,
+  "ciclos": 698,
   "greens": 460,
   "redsCiclo": 75,
   "aborts": 0,
-  "descartes": 162,
+  "descartes": 163,
   "historico": [
+   {
+    "quando": "2026-07-29T21:26:54.492Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Áustria) — liga REARMADA"
+   },
    {
     "quando": "2026-07-29T21:26:52.701Z",
     "resultado": "DESCARTADO",
@@ -1998,35 +2003,35 @@
    "euro": 1785356944597
   },
   "ciclo": {
-   "liga": "copa",
+   "liga": "super",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "22:19",
-     "jogo": "Escócia x Egito",
-     "odd": 2.05
-    },
-    {
-     "h": "22:22",
-     "jogo": "Equador x Jordânia",
+     "h": "22:28",
+     "jogo": "Guayaquil x Santos",
      "odd": 1.95
     },
     {
-     "h": "22:25",
-     "jogo": "Arábia Saudita x Bélgica",
-     "odd": 1.93
+     "h": "22:31",
+     "jogo": "Penarol x Medellin",
+     "odd": 2.15
+    },
+    {
+     "h": "22:34",
+     "jogo": "Montevideo x Porto Alegre",
+     "odd": 2.1
     }
    ],
-   "gatilho": "time Equador",
+   "gatilho": "odd 1.95",
    "alvo": {
-    "h": "22:19",
-    "jogo": "Escócia x Egito",
-    "odd": 2.05,
+    "h": "22:28",
+    "jogo": "Guayaquil x Santos",
+    "odd": 1.95,
     "unidades": 1,
-    "desde": 1785359508799
+    "desde": 1785360414493
    },
-   "iniciadoEm": 1785359508799
+   "iniciadoEm": 1785360414493
   },
   "cooldown": {
    "euro": 1785356944597,
