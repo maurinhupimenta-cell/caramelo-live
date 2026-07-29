@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -101.9,
-  "ciclos": 608,
-  "greens": 374,
+  "saldo": -100.5,
+  "ciclos": 609,
+  "greens": 375,
   "redsCiclo": 98,
   "aborts": 0,
   "descartes": 136,
   "historico": [
+   {
+    "quando": "2026-07-29T10:52:47.364Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "euro · Eslováquia x Inglaterra @2.1 (tiro 3) · gatilho: coluna :47"
+   },
    {
     "quando": "2026-07-29T10:01:47.358Z",
     "resultado": "GREEN",
@@ -846,51 +852,14 @@
   ],
   "consumidas": {
    "copa": 1785318884965,
-   "super": 1785319307163
+   "super": 1785319307163,
+   "euro": 1785322367262
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "11:44",
-     "jogo": "Áustria x França",
-     "odd": 2.15
-    },
-    {
-     "h": "11:47",
-     "jogo": "Albânia x Dinamarca",
-     "odd": 2.75
-    },
-    {
-     "h": "11:50",
-     "jogo": "Eslováquia x Inglaterra",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "coluna :47",
-   "alvo": {
-    "h": "11:47",
-    "jogo": "Albânia x Dinamarca",
-    "odd": 2.75,
-    "unidades": 2,
-    "desde": 1785322247968
-   },
-   "iniciadoEm": 1785321468860,
-   "tiros": [
-    {
-     "h": "11:44",
-     "jogo": "Áustria x França",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785318884965,
    "premier": 1785277668066,
-   "euro": 1785317868169,
+   "euro": 1785322367262,
    "super": 1785319307163
   },
   "dias": {
@@ -908,7 +877,7 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 13.5
+   "2026-07-29": 14.9
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
