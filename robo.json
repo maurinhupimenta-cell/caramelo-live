@@ -967,7 +967,37 @@
   "consumidas": {
    "super": 1785356876194
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:39",
+     "jogo": "United x Liverpool",
+     "odd": 2.2
+    },
+    {
+     "h": "21:42",
+     "jogo": "Chelsea x Leeds",
+     "odd": 2.5
+    },
+    {
+     "h": "21:45",
+     "jogo": "Brighton x Liverpool",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "odd 2.5",
+   "alvo": {
+    "h": "21:39",
+    "jogo": "United x Liverpool",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785356989292
+   },
+   "iniciadoEm": 1785356989292
+  },
   "cooldown": {
    "copa": 1785327347966,
    "premier": 1785352924799,
@@ -992,10 +1022,10 @@
    "2026-07-29": 18.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRR",
-   "n": 34,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.5",
+   "n": 18,
+   "start": 3
   },
   "_obs": {}
  },
