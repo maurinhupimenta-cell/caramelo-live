@@ -818,7 +818,37 @@
    "copa": 1785313725559,
    "euro": 1785313790763
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:34",
+     "jogo": "Buenos Aires x Asuncion",
+     "odd": 2.15
+    },
+    {
+     "h": "09:37",
+     "jogo": "Santos x La Plata",
+     "odd": 2.7
+    },
+    {
+     "h": "09:40",
+     "jogo": "Medellin x Santiago",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "coluna :37",
+   "alvo": {
+    "h": "09:34",
+    "jogo": "Buenos Aires x Asuncion",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785313847062
+   },
+   "iniciadoEm": 1785313847062
+  },
   "cooldown": {
    "copa": 1785313725559,
    "premier": 1785277668066,
