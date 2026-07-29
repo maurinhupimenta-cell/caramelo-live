@@ -1940,11 +1940,40 @@
    }
   ],
   "consumidas": {
-   "copa": 1785354994399,
    "super": 1785355604091,
    "euro": 1785356944597
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:04",
+     "jogo": "Noruega x Países Baixos",
+     "odd": 1.93
+    },
+    {
+     "h": "22:07",
+     "jogo": "Egito x Jordânia",
+     "odd": 1.93
+    },
+    {
+     "h": "21:52",
+     "jogo": "Suíça x Iraque",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "seq GRGGG",
+   "alvo": {
+    "h": "22:04",
+    "jogo": "Noruega x Países Baixos",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1785358594602
+   },
+   "iniciadoEm": 1785358594602
+  },
   "cooldown": {
    "euro": 1785356944597,
    "super": 1785355604091,
@@ -1969,7 +1998,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GGRRG",
+   "chave": "GRGGG",
    "n": 11,
    "start": 1
   },
