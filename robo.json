@@ -874,8 +874,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "13:10",
@@ -895,13 +895,21 @@
    ],
    "gatilho": "time África do Sul",
    "alvo": {
-    "h": "13:10",
-    "jogo": "Suécia x Gana",
-    "odd": 2.7,
-    "unidades": 1,
-    "desde": 1785326808566
+    "h": "13:13",
+    "jogo": "África do Sul x Tunísia",
+    "odd": 2.75,
+    "unidades": 2,
+    "desde": 1785327225864
    },
-   "iniciadoEm": 1785326808566
+   "iniciadoEm": 1785326808566,
+   "tiros": [
+    {
+     "h": "13:10",
+     "jogo": "Suécia x Gana",
+     "odd": 2.7,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785323207870,
@@ -1775,7 +1783,37 @@
    "super": 1785325065969,
    "euro": 1785325665663
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:16",
+     "jogo": "Jordânia x Portugal",
+     "odd": 1.9
+    },
+    {
+     "h": "13:19",
+     "jogo": "Suécia x Áustria",
+     "odd": 2.1
+    },
+    {
+     "h": "13:22",
+     "jogo": "Noruega x Irã",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "time Áustria",
+   "alvo": {
+    "h": "13:16",
+    "jogo": "Jordânia x Portugal",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1785326988571
+   },
+   "iniciadoEm": 1785326988571
+  },
   "cooldown": {
    "euro": 1785325665663,
    "super": 1785325065969,
@@ -1799,10 +1837,10 @@
    "2026-07-29": -11.1
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2",
-   "n": 13,
-   "start": 1
+   "tipo": "time",
+   "chave": "Áustria",
+   "n": 10,
+   "start": 2
   },
   "_obs": {}
  }
