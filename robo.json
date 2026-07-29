@@ -811,11 +811,40 @@
    }
   ],
   "consumidas": {
-   "copa": 1785299985269,
    "euro": 1785300827765,
    "super": 1785303105959
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:46",
+     "jogo": "Marrocos x Colômbia",
+     "odd": 2.25
+    },
+    {
+     "h": "06:49",
+     "jogo": "Jordânia x Inglaterra",
+     "odd": 2.2
+    },
+    {
+     "h": "06:52",
+     "jogo": "Brasil x Noruega",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time Inglaterra",
+   "alvo": {
+    "h": "06:46",
+    "jogo": "Marrocos x Colômbia",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785303587359
+   },
+   "iniciadoEm": 1785303587359
+  },
   "cooldown": {
    "copa": 1785299985269,
    "premier": 1785277668066,
@@ -840,10 +869,10 @@
    "2026-07-29": 2.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.4",
-   "n": 15,
-   "start": 1
+   "tipo": "time",
+   "chave": "Inglaterra",
+   "n": 9,
+   "start": 2
   },
   "_obs": {}
  },
