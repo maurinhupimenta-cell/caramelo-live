@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -105.7,
-  "ciclos": 618,
-  "greens": 379,
+  "saldo": -103.9,
+  "ciclos": 619,
+  "greens": 380,
   "redsCiclo": 100,
   "aborts": 0,
   "descartes": 139,
   "historico": [
+   {
+    "quando": "2026-07-29T15:40:01.594Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "super · Buenos Aires x Medellin @2.2 (tiro 3) · gatilho: odd 2.45"
+   },
    {
     "quando": "2026-07-29T15:30:19.194Z",
     "resultado": "RED_CICLO",
@@ -905,58 +911,15 @@
    }
   ],
   "consumidas": {
-   "premier": 1785339018901
+   "premier": 1785339018901,
+   "super": 1785339601393
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "16:31",
-     "jogo": "Lima x Sao Paulo",
-     "odd": 2
-    },
-    {
-     "h": "16:34",
-     "jogo": "Asuncion x Penarol",
-     "odd": 2.45
-    },
-    {
-     "h": "16:37",
-     "jogo": "Buenos Aires x Medellin",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "odd 2.45",
-   "alvo": {
-    "h": "16:37",
-    "jogo": "Buenos Aires x Medellin",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1785339522490
-   },
-   "iniciadoEm": 1785339021093,
-   "tiros": [
-    {
-     "h": "16:31",
-     "jogo": "Lima x Sao Paulo",
-     "odd": 2,
-     "unidades": 1
-    },
-    {
-     "h": "16:34",
-     "jogo": "Asuncion x Penarol",
-     "odd": 2.45,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785327347966,
    "premier": 1785339018901,
    "euro": 1785328547859,
-   "super": 1785326086768
+   "super": 1785339601393
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -973,7 +936,7 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 9.7
+   "2026-07-29": 11.5
   },
   "_gatilhoAtual": {
    "tipo": "odd",
@@ -1892,7 +1855,7 @@
    "tipo": "time",
    "chave": "Medellin",
    "n": 28,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
