@@ -1,12 +1,18 @@
 {
  "o35": {
   "saldo": -165.3,
-  "ciclos": 179,
+  "ciclos": 180,
   "greens": 61,
   "redsCiclo": 77,
   "aborts": 0,
-  "descartes": 41,
+  "descartes": 42,
   "historico": [
+   {
+    "quando": "2026-07-29T02:35:10.158Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho seq RRRR) — liga REARMADA"
+   },
    {
     "quando": "2026-07-28T13:02:48.329Z",
     "resultado": "RED_CICLO",
@@ -172,12 +178,7 @@
    "n": 9,
    "start": 1
   },
-  "_obs": {
-   "euro": {
-    "desde": 1785290508062,
-    "gatilho": "seq RRRR"
-   }
-  }
+  "_obs": {}
  },
  "o25": {
   "saldo": -117.4,
@@ -699,7 +700,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:38",
+     "jogo": "Bélgica x Países Baixos",
+     "odd": 2.02
+    },
+    {
+     "h": "03:41",
+     "jogo": "Sérvia x Ucrânia",
+     "odd": 2.5
+    },
+    {
+     "h": "03:44",
+     "jogo": "República Tcheca x Portugal",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "placar 1-0 / 0-1",
+   "alvo": {
+    "h": "03:38",
+    "jogo": "Bélgica x Países Baixos",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1785292510166
+   },
+   "iniciadoEm": 1785292510166
+  },
   "cooldown": {
    "copa": 1785287805864,
    "premier": 1785277668066,
@@ -723,8 +754,8 @@
    "2026-07-28": 3.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.25",
+   "tipo": "placar",
+   "chave": "1-0 / 0-1",
    "n": 9,
    "start": 1
   },
