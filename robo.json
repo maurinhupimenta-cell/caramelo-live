@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -100.5,
-  "ciclos": 626,
-  "greens": 384,
+  "saldo": -98.6,
+  "ciclos": 627,
+  "greens": 385,
   "redsCiclo": 101,
   "aborts": 0,
   "descartes": 141,
   "historico": [
+   {
+    "quando": "2026-07-29T19:22:04.994Z",
+    "resultado": "GREEN",
+    "unidades": 1.9,
+    "detalhe": "premier · West Ham x Norwich @2.45 (tiro 2) · gatilho: seq RGGGG"
+   },
    {
     "quando": "2026-07-29T19:15:53.796Z",
     "resultado": "GREEN",
@@ -954,50 +960,13 @@
   ],
   "consumidas": {
    "super": 1785351587099,
-   "euro": 1785352553602
+   "euro": 1785352553602,
+   "premier": 1785352924799
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "20:18",
-     "jogo": "Burnley x Southampton",
-     "odd": 2.25
-    },
-    {
-     "h": "20:21",
-     "jogo": "West Ham x Norwich",
-     "odd": 2.45
-    },
-    {
-     "h": "20:24",
-     "jogo": "Brentford x Chelsea",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "seq RGGGG",
-   "alvo": {
-    "h": "20:21",
-    "jogo": "West Ham x Norwich",
-    "odd": 2.45,
-    "unidades": 2,
-    "desde": 1785352850194
-   },
-   "iniciadoEm": 1785352607897,
-   "tiros": [
-    {
-     "h": "20:18",
-     "jogo": "Burnley x Southampton",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785327347966,
-   "premier": 1785347678695,
+   "premier": 1785352924799,
    "euro": 1785352553602,
    "super": 1785351587099
   },
@@ -1016,13 +985,13 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 14.9
+   "2026-07-29": 16.8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.5",
    "n": 17,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
