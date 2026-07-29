@@ -923,7 +923,6 @@
    }
   ],
   "consumidas": {
-   "super": 1785339601393,
    "euro": 1785341994803
   },
   "ciclo": {
@@ -1843,10 +1842,38 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {
-   "super": 1785339601700
+  "consumidas": {},
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:43",
+     "jogo": "Bogota x La Plata",
+     "odd": 2.3
+    },
+    {
+     "h": "17:46",
+     "jogo": "Penarol x Agua Branca",
+     "odd": 2
+    },
+    {
+     "h": "17:49",
+     "jogo": "Lima x Belo Horizonte",
+     "odd": 1.86
+    }
+   ],
+   "gatilho": "time Agua Branca",
+   "alvo": {
+    "h": "17:43",
+    "jogo": "Bogota x La Plata",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1785343207701
+   },
+   "iniciadoEm": 1785343207701
   },
-  "ciclo": null,
   "cooldown": {
    "euro": 1785339295204,
    "super": 1785339601700,
@@ -1871,9 +1898,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Medellin",
-   "n": 28,
-   "start": 2
+   "chave": "Agua Branca",
+   "n": 36,
+   "start": 1
   },
   "_obs": {}
  }
