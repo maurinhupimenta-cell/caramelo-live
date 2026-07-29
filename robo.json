@@ -202,13 +202,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -111.7,
-  "ciclos": 597,
-  "greens": 365,
+  "saldo": -110.3,
+  "ciclos": 598,
+  "greens": 366,
   "redsCiclo": 97,
   "aborts": 0,
   "descartes": 135,
   "historico": [
+   {
+    "quando": "2026-07-29T06:05:31.268Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "euro · Alemanha x Ucrânia @2.2 (tiro 2) · gatilho: odd 2.2"
+   },
    {
     "quando": "2026-07-29T05:49:49.867Z",
     "resultado": "GREEN",
@@ -782,51 +788,14 @@
   ],
   "consumidas": {
    "super": 1785303105959,
-   "copa": 1785304189762
+   "copa": 1785304189762,
+   "euro": 1785305131166
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "06:59",
-     "jogo": "Albânia x Bélgica",
-     "odd": 2.45
-    },
-    {
-     "h": "07:02",
-     "jogo": "Alemanha x Ucrânia",
-     "odd": 2.2
-    },
-    {
-     "h": "07:05",
-     "jogo": "Portugal x Eslovênia",
-     "odd": 2.6
-    }
-   ],
-   "gatilho": "odd 2.2",
-   "alvo": {
-    "h": "07:02",
-    "jogo": "Alemanha x Ucrânia",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1785304965166
-   },
-   "iniciadoEm": 1785304428261,
-   "tiros": [
-    {
-     "h": "06:59",
-     "jogo": "Albânia x Bélgica",
-     "odd": 2.45,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785304189762,
    "premier": 1785277668066,
-   "euro": 1785300827765,
+   "euro": 1785305131166,
    "super": 1785303105959
   },
   "dias": {
@@ -844,7 +813,7 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 3.7
+   "2026-07-29": 5.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
