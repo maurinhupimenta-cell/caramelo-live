@@ -959,7 +959,6 @@
    }
   ],
   "consumidas": {
-   "super": 1785351587099,
    "euro": 1785352553602,
    "premier": 1785352924799
   },
@@ -1911,10 +1910,39 @@
    }
   ],
   "consumidas": {
-   "super": 1785351587396,
    "copa": 1785354994399
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:01",
+     "jogo": "La Plata x Bogota",
+     "odd": 2.35
+    },
+    {
+     "h": "21:04",
+     "jogo": "Montevideo x Santos",
+     "odd": 1.95
+    },
+    {
+     "h": "21:07",
+     "jogo": "Avellaneda x Lima",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "odd 1.95",
+   "alvo": {
+    "h": "21:01",
+    "jogo": "La Plata x Bogota",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1785355233191
+   },
+   "iniciadoEm": 1785355233191
+  },
   "cooldown": {
    "euro": 1785349788391,
    "super": 1785351587396,
@@ -1938,10 +1966,10 @@
    "2026-07-29": -19.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Equador",
-   "n": 12,
-   "start": 2
+   "tipo": "odd",
+   "chave": "1.95",
+   "n": 24,
+   "start": 1
   },
   "_obs": {}
  }
