@@ -1574,7 +1574,37 @@
    "euro": 1785304547967,
    "copa": 1785305805366
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:31",
+     "jogo": "Rio de Janeiro x Santiago",
+     "odd": 1.95
+    },
+    {
+     "h": "07:34",
+     "jogo": "Avellaneda x Agua Branca",
+     "odd": 1.93
+    },
+    {
+     "h": "07:37",
+     "jogo": "Itaquera x Montevideo",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "time Agua Branca",
+   "alvo": {
+    "h": "07:31",
+    "jogo": "Rio de Janeiro x Santiago",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1785306346862
+   },
+   "iniciadoEm": 1785306346862
+  },
   "cooldown": {
    "euro": 1785304547967,
    "super": 1785302689758,
@@ -1598,10 +1628,10 @@
    "2026-07-29": -7.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.93",
-   "n": 10,
-   "start": 1
+   "tipo": "time",
+   "chave": "Agua Branca",
+   "n": 14,
+   "start": 2
   },
   "_obs": {}
  }
