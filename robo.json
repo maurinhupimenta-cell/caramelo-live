@@ -867,7 +867,37 @@
    "copa": 1785323207870,
    "premier": 1785324588169
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:43",
+     "jogo": "Rio de Janeiro x Asuncion",
+     "odd": 2.3
+    },
+    {
+     "h": "12:46",
+     "jogo": "Penarol x Santos",
+     "odd": 2.4
+    },
+    {
+     "h": "12:49",
+     "jogo": "Belo Horizonte x Penarol",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "seq GGRGG",
+   "alvo": {
+    "h": "12:43",
+    "jogo": "Rio de Janeiro x Asuncion",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1785325365061
+   },
+   "iniciadoEm": 1785325365061
+  },
   "cooldown": {
    "copa": 1785323207870,
    "premier": 1785324588169,
@@ -892,9 +922,9 @@
    "2026-07-29": 19
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":33",
-   "n": 12,
+   "tipo": "seq",
+   "chave": "GGRGG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
@@ -1734,7 +1764,37 @@
    "copa": 1785323387361,
    "super": 1785325065969
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:41",
+     "jogo": "Geórgia x Países Baixos",
+     "odd": 1.93
+    },
+    {
+     "h": "12:44",
+     "jogo": "França x Bélgica",
+     "odd": 1.83
+    },
+    {
+     "h": "12:47",
+     "jogo": "Ucrânia x Eslovênia",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "odd 1.83",
+   "alvo": {
+    "h": "12:41",
+    "jogo": "Geórgia x Países Baixos",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1785325068264
+   },
+   "iniciadoEm": 1785325068264
+  },
   "cooldown": {
    "euro": 1785321291761,
    "super": 1785325065969,
@@ -1759,9 +1819,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.07",
-   "n": 9,
-   "start": 1
+   "chave": "2",
+   "n": 13,
+   "start": 3
   },
   "_obs": {}
  }
