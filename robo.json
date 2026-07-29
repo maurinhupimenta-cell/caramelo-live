@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -103.9,
-  "ciclos": 619,
-  "greens": 380,
+  "saldo": -101.7,
+  "ciclos": 620,
+  "greens": 381,
   "redsCiclo": 100,
   "aborts": 0,
   "descartes": 139,
   "historico": [
+   {
+    "quando": "2026-07-29T16:19:54.996Z",
+    "resultado": "GREEN",
+    "unidades": 2.2,
+    "detalhe": "euro · Portugal x Albânia @2.6 (tiro 2) · gatilho: seq RGRG"
+   },
    {
     "quando": "2026-07-29T15:40:01.594Z",
     "resultado": "GREEN",
@@ -912,51 +918,14 @@
   ],
   "consumidas": {
    "premier": 1785339018901,
-   "super": 1785339601393
+   "super": 1785339601393,
+   "euro": 1785341994803
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:14",
-     "jogo": "Áustria x Países Baixos",
-     "odd": 2.15
-    },
-    {
-     "h": "17:17",
-     "jogo": "Portugal x Albânia",
-     "odd": 2.6
-    },
-    {
-     "h": "17:20",
-     "jogo": "Inglaterra x Itália",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "seq RGRG",
-   "alvo": {
-    "h": "17:17",
-    "jogo": "Portugal x Albânia",
-    "odd": 2.6,
-    "unidades": 2,
-    "desde": 1785341815496
-   },
-   "iniciadoEm": 1785341505991,
-   "tiros": [
-    {
-     "h": "17:14",
-     "jogo": "Áustria x Países Baixos",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785327347966,
    "premier": 1785339018901,
-   "euro": 1785328547859,
+   "euro": 1785341994803,
    "super": 1785339601393
   },
   "dias": {
@@ -974,7 +943,7 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 11.5
+   "2026-07-29": 13.7
   },
   "_gatilhoAtual": {
    "tipo": "seq",
