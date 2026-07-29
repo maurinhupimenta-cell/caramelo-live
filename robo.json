@@ -848,7 +848,45 @@
    "copa": 1785318884965,
    "super": 1785319307163
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "11:44",
+     "jogo": "Áustria x França",
+     "odd": 2.15
+    },
+    {
+     "h": "11:47",
+     "jogo": "Albânia x Dinamarca",
+     "odd": 2.75
+    },
+    {
+     "h": "11:50",
+     "jogo": "Eslováquia x Inglaterra",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "coluna :47",
+   "alvo": {
+    "h": "11:47",
+    "jogo": "Albânia x Dinamarca",
+    "odd": 2.75,
+    "unidades": 2,
+    "desde": 1785322247968
+   },
+   "iniciadoEm": 1785321468860,
+   "tiros": [
+    {
+     "h": "11:44",
+     "jogo": "Áustria x França",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1785318884965,
    "premier": 1785277668066,
@@ -873,9 +911,9 @@
    "2026-07-29": 13.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.45",
-   "n": 10,
+   "tipo": "coluna",
+   "chave": ":47",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
