@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -97,
-  "ciclos": 628,
-  "greens": 386,
+  "saldo": -95.8,
+  "ciclos": 629,
+  "greens": 387,
   "redsCiclo": 101,
   "aborts": 0,
   "descartes": 141,
   "historico": [
+   {
+    "quando": "2026-07-29T20:41:42.795Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · United x Liverpool @2.2 (tiro 1) · gatilho: odd 2.5"
+   },
    {
     "quando": "2026-07-29T20:27:56.491Z",
     "resultado": "GREEN",
@@ -965,42 +971,13 @@
    }
   ],
   "consumidas": {
-   "super": 1785356876194
+   "super": 1785356876194,
+   "premier": 1785357702600
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:39",
-     "jogo": "United x Liverpool",
-     "odd": 2.2
-    },
-    {
-     "h": "21:42",
-     "jogo": "Chelsea x Leeds",
-     "odd": 2.5
-    },
-    {
-     "h": "21:45",
-     "jogo": "Brighton x Liverpool",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "odd 2.5",
-   "alvo": {
-    "h": "21:39",
-    "jogo": "United x Liverpool",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785356989292
-   },
-   "iniciadoEm": 1785356989292
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785327347966,
-   "premier": 1785352924799,
+   "premier": 1785357702600,
    "euro": 1785352553602,
    "super": 1785356876194
   },
@@ -1019,13 +996,13 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 18.4
+   "2026-07-29": 19.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.5",
-   "n": 18,
-   "start": 3
+   "tipo": "seq",
+   "chave": "RGGGG",
+   "n": 10,
+   "start": 1
   },
   "_obs": {}
  },
