@@ -836,7 +836,7 @@
    "tipo": "time",
    "chave": "Inglaterra",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -1576,8 +1576,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "06:44",
@@ -1597,13 +1597,21 @@
    ],
    "gatilho": "time Hungria",
    "alvo": {
-    "h": "06:44",
-    "jogo": "Alemanha x Bélgica",
-    "odd": 1.86,
-    "unidades": 1,
-    "desde": 1785303705370
+    "h": "06:47",
+    "jogo": "Hungria x Espanha",
+    "odd": 1.93,
+    "unidades": 2,
+    "desde": 1785304007166
    },
-   "iniciadoEm": 1785303705370
+   "iniciadoEm": 1785303705370,
+   "tiros": [
+    {
+     "h": "06:44",
+     "jogo": "Alemanha x Bélgica",
+     "odd": 1.86,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785300067668,
@@ -1628,8 +1636,8 @@
    "2026-07-29": -9.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Hungria",
+   "tipo": "odd",
+   "chave": "2.2",
    "n": 8,
    "start": 2
   },
