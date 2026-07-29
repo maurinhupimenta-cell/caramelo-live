@@ -785,13 +785,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -39.9,
-  "ciclos": 655,
+  "saldo": -46.9,
+  "ciclos": 656,
   "greens": 437,
-  "redsCiclo": 69,
+  "redsCiclo": 70,
   "aborts": 0,
   "descartes": 149,
   "historico": [
+   {
+    "quando": "2026-07-29T04:41:07.858Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: time Alemanha"
+   },
    {
     "quando": "2026-07-29T04:24:40.664Z",
     "resultado": "GREEN",
@@ -1484,55 +1490,12 @@
    }
   ],
   "consumidas": {
-   "super": 1785299080559
+   "super": 1785299080559,
+   "euro": 1785300067668
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "05:29",
-     "jogo": "Portugal x Eslováquia",
-     "odd": 2.05
-    },
-    {
-     "h": "05:32",
-     "jogo": "Suíça x Alemanha",
-     "odd": 1.85
-    },
-    {
-     "h": "05:35",
-     "jogo": "Eslovênia x Geórgia",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "time Alemanha",
-   "alvo": {
-    "h": "05:35",
-    "jogo": "Eslovênia x Geórgia",
-    "odd": 2.3,
-    "unidades": 4,
-    "desde": 1785299741867
-   },
-   "iniciadoEm": 1785299082765,
-   "tiros": [
-    {
-     "h": "05:29",
-     "jogo": "Portugal x Eslováquia",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "05:32",
-     "jogo": "Suíça x Alemanha",
-     "odd": 1.85,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785293811162,
+   "euro": 1785300067668,
    "super": 1785299080559,
    "premier": 1785292721362,
    "copa": 1785292100759
@@ -1551,7 +1514,7 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": 2.2
+   "2026-07-29": -4.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
