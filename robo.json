@@ -974,7 +974,37 @@
    "super": 1785356876194,
    "premier": 1785357702600
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:11",
+     "jogo": "Bélgica x Polônia",
+     "odd": 2.35
+    },
+    {
+     "h": "22:14",
+     "jogo": "República Tcheca x Hungria",
+     "odd": 2.7
+    },
+    {
+     "h": "22:17",
+     "jogo": "Países Baixos x Itália",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "odd 2.7",
+   "alvo": {
+    "h": "22:11",
+    "jogo": "Bélgica x Polônia",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1785358952492
+   },
+   "iniciadoEm": 1785358952492
+  },
   "cooldown": {
    "copa": 1785327347966,
    "premier": 1785357702600,
@@ -999,10 +1029,10 @@
    "2026-07-29": 19.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGGG",
-   "n": 10,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.7",
+   "n": 13,
+   "start": 3
   },
   "_obs": {}
  },
@@ -1997,10 +2027,10 @@
    "2026-07-29": -17.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGGG",
-   "n": 11,
-   "start": 1
+   "tipo": "time",
+   "chave": "Equador",
+   "n": 13,
+   "start": 3
   },
   "_obs": {}
  }
