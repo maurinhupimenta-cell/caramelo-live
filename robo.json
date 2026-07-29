@@ -966,12 +966,18 @@
  },
  "ambas": {
   "saldo": -57,
-  "ciclos": 682,
+  "ciclos": 683,
   "greens": 455,
   "redsCiclo": 74,
   "aborts": 0,
-  "descartes": 153,
+  "descartes": 154,
   "historico": [
+   {
+    "quando": "2026-07-29T17:14:46.991Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho odd 1.87) — liga REARMADA"
+   },
    {
     "quando": "2026-07-29T16:46:14.993Z",
     "resultado": "GREEN",
@@ -1857,6 +1863,11 @@
    "n": 17,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1785345286991,
+    "gatilho": "odd 1.87"
+   }
+  }
  }
 }
