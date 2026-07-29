@@ -983,7 +983,6 @@
    }
   ],
   "consumidas": {
-   "premier": 1785357702600,
    "euro": 1785359913698,
    "copa": 1785361238498
   },
@@ -2017,8 +2016,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "22:38",
@@ -2038,13 +2037,21 @@
    ],
    "gatilho": "seq RGRGG",
    "alvo": {
-    "h": "22:38",
-    "jogo": "Suíça x Países Baixos",
-    "odd": 1.8,
-    "unidades": 1,
-    "desde": 1785360932599
+    "h": "22:41",
+    "jogo": "Romênia x Sérvia",
+    "odd": 2,
+    "unidades": 2,
+    "desde": 1785361293794
    },
-   "iniciadoEm": 1785360932599
+   "iniciadoEm": 1785360932599,
+   "tiros": [
+    {
+     "h": "22:38",
+     "jogo": "Suíça x Países Baixos",
+     "odd": 1.8,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785356944597,
