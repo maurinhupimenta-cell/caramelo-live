@@ -158,9 +158,7 @@
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {
-   "euro": 1785293310165
-  },
+  "consumidas": {},
   "ciclo": null,
   "cooldown": {
    "copa": 1785038273206,
@@ -729,7 +727,37 @@
    "super": 1785294991658,
    "copa": 1785296049363
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:47",
+     "jogo": "França x Croácia",
+     "odd": 2.1
+    },
+    {
+     "h": "04:50",
+     "jogo": "Ucrânia x Albânia",
+     "odd": 2.7
+    },
+    {
+     "h": "04:53",
+     "jogo": "Eslováquia x Sérvia",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "time Albânia",
+   "alvo": {
+    "h": "04:47",
+    "jogo": "França x Croácia",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785296650463
+   },
+   "iniciadoEm": 1785296650463
+  },
   "cooldown": {
    "copa": 1785296049363,
    "premier": 1785277668066,
@@ -754,9 +782,9 @@
    "2026-07-29": -4.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRR",
-   "n": 8,
+   "tipo": "time",
+   "chave": "Albânia",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
