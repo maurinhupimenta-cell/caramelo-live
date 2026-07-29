@@ -907,7 +907,37 @@
   "consumidas": {
    "premier": 1785339018901
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:31",
+     "jogo": "Lima x Sao Paulo",
+     "odd": 2
+    },
+    {
+     "h": "16:34",
+     "jogo": "Asuncion x Penarol",
+     "odd": 2.45
+    },
+    {
+     "h": "16:37",
+     "jogo": "Buenos Aires x Medellin",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "odd 2.45",
+   "alvo": {
+    "h": "16:31",
+    "jogo": "Lima x Sao Paulo",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1785339021093
+   },
+   "iniciadoEm": 1785339021093
+  },
   "cooldown": {
    "copa": 1785327347966,
    "premier": 1785339018901,
@@ -932,9 +962,9 @@
    "2026-07-29": 9.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":33",
-   "n": 16,
+   "tipo": "odd",
+   "chave": "2.45",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
@@ -1785,8 +1815,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "16:26",
@@ -1806,11 +1836,11 @@
    ],
    "gatilho": "coluna :29",
    "alvo": {
-    "h": "16:29",
-    "jogo": "Bélgica x Eslovênia",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1785338996199
+    "h": "16:32",
+    "jogo": "Hungria x Escócia",
+    "odd": 2,
+    "unidades": 4,
+    "desde": 1785339115698
    },
    "iniciadoEm": 1785338255791,
    "tiros": [
@@ -1819,6 +1849,12 @@
      "jogo": "França x Escócia",
      "odd": 1.9,
      "unidades": 1
+    },
+    {
+     "h": "16:29",
+     "jogo": "Bélgica x Eslovênia",
+     "odd": 2.15,
+     "unidades": 2
     }
    ]
   },
@@ -1848,7 +1884,7 @@
    "tipo": "time",
    "chave": "Medellin",
    "n": 28,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
