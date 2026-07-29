@@ -187,13 +187,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -120,
-  "ciclos": 590,
-  "greens": 359,
+  "saldo": -118.9,
+  "ciclos": 591,
+  "greens": 360,
   "redsCiclo": 97,
   "aborts": 0,
   "descartes": 134,
   "historico": [
+   {
+    "quando": "2026-07-29T03:50:09.863Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · França x Croácia @2.1 (tiro 1) · gatilho: time Albânia"
+   },
    {
     "quando": "2026-07-29T03:34:09.466Z",
     "resultado": "RED_CICLO",
@@ -725,43 +731,14 @@
   ],
   "consumidas": {
    "super": 1785294991658,
-   "copa": 1785296049363
+   "copa": 1785296049363,
+   "euro": 1785297009666
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:47",
-     "jogo": "França x Croácia",
-     "odd": 2.1
-    },
-    {
-     "h": "04:50",
-     "jogo": "Ucrânia x Albânia",
-     "odd": 2.7
-    },
-    {
-     "h": "04:53",
-     "jogo": "Eslováquia x Sérvia",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "time Albânia",
-   "alvo": {
-    "h": "04:47",
-    "jogo": "França x Croácia",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785296650463
-   },
-   "iniciadoEm": 1785296650463
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785296049363,
    "premier": 1785277668066,
-   "euro": 1785293049861,
+   "euro": 1785297009666,
    "super": 1785294991658
   },
   "dias": {
@@ -779,13 +756,13 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": -4.6
+   "2026-07-29": -3.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Albânia",
    "n": 9,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
