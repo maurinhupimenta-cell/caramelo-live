@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -100.5,
-  "ciclos": 609,
-  "greens": 375,
+  "saldo": -99,
+  "ciclos": 610,
+  "greens": 376,
   "redsCiclo": 98,
   "aborts": 0,
   "descartes": 136,
   "historico": [
+   {
+    "quando": "2026-07-29T11:06:48.061Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "copa · Coreia do Sul x Qatar @2.5 (tiro 1) · gatilho: seq RRRR"
+   },
    {
     "quando": "2026-07-29T10:52:47.364Z",
     "resultado": "GREEN",
@@ -851,12 +857,12 @@
    }
   ],
   "consumidas": {
-   "super": 1785319307163,
-   "euro": 1785322367262
+   "euro": 1785322367262,
+   "copa": 1785323207870
   },
   "ciclo": null,
   "cooldown": {
-   "copa": 1785318884965,
+   "copa": 1785323207870,
    "premier": 1785277668066,
    "euro": 1785322367262,
    "super": 1785319307163
@@ -876,13 +882,13 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 14.9
+   "2026-07-29": 16.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":47",
-   "n": 11,
-   "start": 1
+   "tipo": "time",
+   "chave": "Inglaterra",
+   "n": 10,
+   "start": 2
   },
   "_obs": {}
  },
@@ -1708,7 +1714,37 @@
   "consumidas": {
    "euro": 1785321291761
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:07",
+     "jogo": "Gana x Espanha",
+     "odd": 1.98
+    },
+    {
+     "h": "12:10",
+     "jogo": "México x Iraque",
+     "odd": 2.1
+    },
+    {
+     "h": "12:13",
+     "jogo": "Bélgica x Jordânia",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "coluna :10",
+   "alvo": {
+    "h": "12:07",
+    "jogo": "Gana x Espanha",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785322907164
+   },
+   "iniciadoEm": 1785322907164
+  },
   "cooldown": {
    "euro": 1785321291761,
    "super": 1785315884566,
@@ -1732,10 +1768,10 @@
    "2026-07-29": -13.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":29",
-   "n": 11,
-   "start": 1
+   "tipo": "time",
+   "chave": "Áustria",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  }
