@@ -723,7 +723,37 @@
    "euro": 1785293049861,
    "super": 1785294991658
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:25",
+     "jogo": "Tunísia x Suécia",
+     "odd": 2.87
+    },
+    {
+     "h": "04:28",
+     "jogo": "Colômbia x Irã",
+     "odd": 2.5
+    },
+    {
+     "h": "04:31",
+     "jogo": "Japão x Escócia",
+     "odd": 2.7
+    }
+   ],
+   "gatilho": "seq RRRR",
+   "alvo": {
+    "h": "04:25",
+    "jogo": "Tunísia x Suécia",
+    "odd": 2.87,
+    "unidades": 1,
+    "desde": 1785295370758
+   },
+   "iniciadoEm": 1785295370758
+  },
   "cooldown": {
    "copa": 1785287805864,
    "premier": 1785277668066,
@@ -748,9 +778,9 @@
    "2026-07-29": 2.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.4",
-   "n": 9,
+   "tipo": "seq",
+   "chave": "RRRR",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
