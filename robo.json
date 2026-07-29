@@ -837,8 +837,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "10:46",
@@ -858,13 +858,21 @@
    ],
    "gatilho": "coluna :49",
    "alvo": {
-    "h": "10:46",
-    "jogo": "Suécia x Austrália",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1785317870263
+    "h": "10:49",
+    "jogo": "Costa do Marfim x Colômbia",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1785318589862
    },
-   "iniciadoEm": 1785317870263
+   "iniciadoEm": 1785317870263,
+   "tiros": [
+    {
+     "h": "10:46",
+     "jogo": "Suécia x Austrália",
+     "odd": 2.5,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785313725559,
@@ -899,12 +907,18 @@
  },
  "ambas": {
   "saldo": -57.8,
-  "ciclos": 671,
+  "ciclos": 672,
   "greens": 447,
   "redsCiclo": 73,
   "aborts": 0,
-  "descartes": 151,
+  "descartes": 152,
   "historico": [
+   {
+    "quando": "2026-07-29T09:49:49.973Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho odd 1.93) — liga REARMADA"
+   },
    {
     "quando": "2026-07-29T09:30:45.866Z",
     "resultado": "RED_CICLO",
@@ -1725,6 +1739,11 @@
    "n": 10,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1785318589972,
+    "gatilho": "odd 1.93"
+   }
+  }
  }
 }
