@@ -200,13 +200,25 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -107.9,
-  "ciclos": 604,
-  "greens": 371,
+  "saldo": -106.6,
+  "ciclos": 606,
+  "greens": 372,
   "redsCiclo": 98,
   "aborts": 0,
-  "descartes": 135,
+  "descartes": 136,
   "historico": [
+   {
+    "quando": "2026-07-29T09:37:48.357Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "euro · Bélgica x Alemanha @2.07 (tiro 3) · gatilho: odd 2.2"
+   },
+   {
+    "quando": "2026-07-29T09:37:46.072Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho coluna :49) — liga REARMADA"
+   },
    {
     "quando": "2026-07-29T08:40:45.165Z",
     "resultado": "GREEN",
@@ -821,57 +833,44 @@
    }
   ],
   "consumidas": {
-   "super": 1785314445062
+   "super": 1785314445062,
+   "euro": 1785317868169
   },
   "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "10:29",
-     "jogo": "Romênia x Sérvia",
-     "odd": 2.35
+     "h": "10:46",
+     "jogo": "Suécia x Austrália",
+     "odd": 2.5
     },
     {
-     "h": "10:32",
-     "jogo": "Itália x Suíça",
-     "odd": 2.2
+     "h": "10:49",
+     "jogo": "Costa do Marfim x Colômbia",
+     "odd": 2.15
     },
     {
-     "h": "10:35",
-     "jogo": "Bélgica x Alemanha",
-     "odd": 2.07
+     "h": "10:52",
+     "jogo": "França x África do Sul",
+     "odd": 2.45
     }
    ],
-   "gatilho": "odd 2.2",
+   "gatilho": "coluna :49",
    "alvo": {
-    "h": "10:35",
-    "jogo": "Bélgica x Alemanha",
-    "odd": 2.07,
-    "unidades": 4,
-    "desde": 1785317687871
+    "h": "10:46",
+    "jogo": "Suécia x Austrália",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1785317870263
    },
-   "iniciadoEm": 1785317396067,
-   "tiros": [
-    {
-     "h": "10:29",
-     "jogo": "Romênia x Sérvia",
-     "odd": 2.35,
-     "unidades": 1
-    },
-    {
-     "h": "10:32",
-     "jogo": "Itália x Suíça",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1785317870263
   },
   "cooldown": {
    "copa": 1785313725559,
    "premier": 1785277668066,
-   "euro": 1785313790763,
+   "euro": 1785317868169,
    "super": 1785314445062
   },
   "dias": {
@@ -889,13 +888,13 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 7.5
+   "2026-07-29": 8.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRR",
-   "n": 15,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":49",
+   "n": 9,
+   "start": 3
   },
   "_obs": {}
  },
