@@ -794,7 +794,37 @@
    "euro": 1785305131166,
    "super": 1785307308668
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:58",
+     "jogo": "Gana x Áustria",
+     "odd": 2.3
+    },
+    {
+     "h": "08:01",
+     "jogo": "Colômbia x Argélia",
+     "odd": 2.25
+    },
+    {
+     "h": "08:04",
+     "jogo": "Gana x Croácia",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "time Argélia",
+   "alvo": {
+    "h": "07:58",
+    "jogo": "Gana x Áustria",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1785307846562
+   },
+   "iniciadoEm": 1785307846562
+  },
   "cooldown": {
    "copa": 1785304189762,
    "premier": 1785277668066,
@@ -819,9 +849,9 @@
    "2026-07-29": 6.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRG",
-   "n": 10,
+   "tipo": "time",
+   "chave": "Argélia",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
@@ -1580,11 +1610,40 @@
    }
   ],
   "consumidas": {
-   "euro": 1785304547967,
    "copa": 1785305805366,
    "super": 1785307308958
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:56",
+     "jogo": "Países Baixos x Alemanha",
+     "odd": 1.83
+    },
+    {
+     "h": "07:59",
+     "jogo": "Itália x República Tcheca",
+     "odd": 2.2
+    },
+    {
+     "h": "08:02",
+     "jogo": "Romênia x Dinamarca",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "seq RRRR",
+   "alvo": {
+    "h": "07:56",
+    "jogo": "Países Baixos x Alemanha",
+    "odd": 1.83,
+    "unidades": 1,
+    "desde": 1785308148067
+   },
+   "iniciadoEm": 1785308148067
+  },
   "cooldown": {
    "euro": 1785304547967,
    "super": 1785307308958,
@@ -1608,9 +1667,9 @@
    "2026-07-29": -6.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Medellin",
-   "n": 15,
+   "tipo": "seq",
+   "chave": "RRRR",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
