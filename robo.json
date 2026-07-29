@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -98.7,
-  "ciclos": 617,
+  "saldo": -105.7,
+  "ciclos": 618,
   "greens": 379,
-  "redsCiclo": 99,
+  "redsCiclo": 100,
   "aborts": 0,
   "descartes": 139,
   "historico": [
+   {
+    "quando": "2026-07-29T15:30:19.194Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: coluna :24"
+   },
    {
     "quando": "2026-07-29T15:17:44.495Z",
     "resultado": "GREEN_OBS",
@@ -898,55 +904,13 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "16:21",
-     "jogo": "United x Aston",
-     "odd": 2.35
-    },
-    {
-     "h": "16:24",
-     "jogo": "Norwich x Burnley",
-     "odd": 2.1
-    },
-    {
-     "h": "16:27",
-     "jogo": "Islington x Brighton",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "coluna :24",
-   "alvo": {
-    "h": "16:27",
-    "jogo": "Islington x Brighton",
-    "odd": 2.07,
-    "unidades": 4,
-    "desde": 1785338865292
-   },
-   "iniciadoEm": 1785338273895,
-   "tiros": [
-    {
-     "h": "16:21",
-     "jogo": "United x Aston",
-     "odd": 2.35,
-     "unidades": 1
-    },
-    {
-     "h": "16:24",
-     "jogo": "Norwich x Burnley",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1785339018901
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785327347966,
-   "premier": 1785324588169,
+   "premier": 1785339018901,
    "euro": 1785328547859,
    "super": 1785326086768
   },
@@ -965,7 +929,7 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 16.7
+   "2026-07-29": 9.7
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
