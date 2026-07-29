@@ -784,10 +784,10 @@
    "2026-07-28": 3.5
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "1-0 / 0-1",
-   "n": 9,
-   "start": 1
+   "tipo": "time",
+   "chave": "Polônia",
+   "n": 8,
+   "start": 2
   },
   "_obs": {}
  },
@@ -1471,7 +1471,37 @@
    "copa": 1785292100759,
    "premier": 1785292721362
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:47",
+     "jogo": "Ucrânia x Polônia",
+     "odd": 2.1
+    },
+    {
+     "h": "03:50",
+     "jogo": "Geórgia x Espanha",
+     "odd": 1.93
+    },
+    {
+     "h": "03:53",
+     "jogo": "Albânia x Croácia",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time Geórgia",
+   "alvo": {
+    "h": "03:47",
+    "jogo": "Ucrânia x Polônia",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785292753571
+   },
+   "iniciadoEm": 1785292753571
+  },
   "cooldown": {
    "euro": 1785273830564,
    "super": 1785291028460,
@@ -1495,9 +1525,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Islington",
+   "chave": "Geórgia",
    "n": 8,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
