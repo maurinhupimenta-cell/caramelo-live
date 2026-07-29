@@ -893,13 +893,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -56,
-  "ciclos": 675,
-  "greens": 449,
+  "saldo": -55,
+  "ciclos": 676,
+  "greens": 450,
   "redsCiclo": 73,
   "aborts": 0,
   "descartes": 153,
   "historico": [
+   {
+    "quando": "2026-07-29T11:09:47.464Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Gana x Espanha @1.98 (tiro 1) · gatilho: coluna :10"
+   },
    {
     "quando": "2026-07-29T10:34:51.865Z",
     "resultado": "GREEN",
@@ -1712,44 +1718,15 @@
    }
   ],
   "consumidas": {
-   "euro": 1785321291761
+   "euro": 1785321291761,
+   "copa": 1785323387361
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "12:07",
-     "jogo": "Gana x Espanha",
-     "odd": 1.98
-    },
-    {
-     "h": "12:10",
-     "jogo": "México x Iraque",
-     "odd": 2.1
-    },
-    {
-     "h": "12:13",
-     "jogo": "Bélgica x Jordânia",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "coluna :10",
-   "alvo": {
-    "h": "12:07",
-    "jogo": "Gana x Espanha",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785322907164
-   },
-   "iniciadoEm": 1785322907164
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785321291761,
    "super": 1785315884566,
    "premier": 1785300650858,
-   "copa": 1785319305762
+   "copa": 1785323387361
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -1765,13 +1742,13 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": -13.9
+   "2026-07-29": -12.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Áustria",
-   "n": 8,
-   "start": 3
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 19,
+   "start": 1
   },
   "_obs": {}
  }
