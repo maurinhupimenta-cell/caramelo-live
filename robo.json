@@ -995,13 +995,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -61.2,
-  "ciclos": 691,
-  "greens": 458,
+  "saldo": -60.3,
+  "ciclos": 692,
+  "greens": 459,
   "redsCiclo": 75,
   "aborts": 0,
   "descartes": 158,
   "historico": [
+   {
+    "quando": "2026-07-29T20:06:44.198Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Montevideo x Santos @1.95 (tiro 2) · gatilho: odd 1.95"
+   },
    {
     "quando": "2026-07-29T19:56:34.594Z",
     "resultado": "GREEN",
@@ -1910,50 +1916,13 @@
    }
   ],
   "consumidas": {
-   "copa": 1785354994399
+   "copa": 1785354994399,
+   "super": 1785355604091
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "21:01",
-     "jogo": "La Plata x Bogota",
-     "odd": 2.35
-    },
-    {
-     "h": "21:04",
-     "jogo": "Montevideo x Santos",
-     "odd": 1.95
-    },
-    {
-     "h": "21:07",
-     "jogo": "Avellaneda x Lima",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "odd 1.95",
-   "alvo": {
-    "h": "21:04",
-    "jogo": "Montevideo x Santos",
-    "odd": 1.95,
-    "unidades": 2,
-    "desde": 1785355532202
-   },
-   "iniciadoEm": 1785355233191,
-   "tiros": [
-    {
-     "h": "21:01",
-     "jogo": "La Plata x Bogota",
-     "odd": 2.35,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785349788391,
-   "super": 1785351587396,
+   "super": 1785355604091,
    "premier": 1785300650858,
    "copa": 1785354994399
   },
@@ -1971,13 +1940,13 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": -19.1
+   "2026-07-29": -18.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "1.95",
    "n": 24,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
