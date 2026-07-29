@@ -796,8 +796,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "07:58",
@@ -817,11 +817,11 @@
    ],
    "gatilho": "time Argélia",
    "alvo": {
-    "h": "08:01",
-    "jogo": "Colômbia x Argélia",
-    "odd": 2.25,
-    "unidades": 2,
-    "desde": 1785308565367
+    "h": "08:04",
+    "jogo": "Gana x Croácia",
+    "odd": 2.5,
+    "unidades": 4,
+    "desde": 1785308626458
    },
    "iniciadoEm": 1785307846562,
    "tiros": [
@@ -830,6 +830,12 @@
      "jogo": "Gana x Áustria",
      "odd": 2.3,
      "unidades": 1
+    },
+    {
+     "h": "08:01",
+     "jogo": "Colômbia x Argélia",
+     "odd": 2.25,
+     "unidades": 2
     }
    ]
   },
@@ -865,13 +871,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -48.9,
-  "ciclos": 664,
-  "greens": 442,
+  "saldo": -47.5,
+  "ciclos": 665,
+  "greens": 443,
   "redsCiclo": 71,
   "aborts": 0,
   "descartes": 151,
   "historico": [
+   {
+    "quando": "2026-07-29T07:02:47.261Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "euro · Itália x República Tcheca @2.2 (tiro 2) · gatilho: seq RRRR"
+   },
    {
     "quando": "2026-07-29T06:41:49.067Z",
     "resultado": "GREEN",
@@ -1619,49 +1631,12 @@
   ],
   "consumidas": {
    "copa": 1785305805366,
-   "super": 1785307308958
+   "super": 1785307308958,
+   "euro": 1785308567157
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "07:56",
-     "jogo": "Países Baixos x Alemanha",
-     "odd": 1.83
-    },
-    {
-     "h": "07:59",
-     "jogo": "Itália x República Tcheca",
-     "odd": 2.2
-    },
-    {
-     "h": "08:02",
-     "jogo": "Romênia x Dinamarca",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "seq RRRR",
-   "alvo": {
-    "h": "07:59",
-    "jogo": "Itália x República Tcheca",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1785308385168
-   },
-   "iniciadoEm": 1785308148067,
-   "tiros": [
-    {
-     "h": "07:56",
-     "jogo": "Países Baixos x Alemanha",
-     "odd": 1.83,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785304547967,
+   "euro": 1785308567157,
    "super": 1785307308958,
    "premier": 1785300650858,
    "copa": 1785305805366
@@ -1680,7 +1655,7 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": -6.8
+   "2026-07-29": -5.4
   },
   "_gatilhoAtual": {
    "tipo": "odd",
