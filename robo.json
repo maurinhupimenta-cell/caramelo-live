@@ -825,8 +825,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "10:29",
@@ -846,13 +846,21 @@
    ],
    "gatilho": "odd 2.2",
    "alvo": {
-    "h": "10:29",
-    "jogo": "Romênia x Sérvia",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1785317396067
+    "h": "10:32",
+    "jogo": "Itália x Suíça",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1785317568463
    },
-   "iniciadoEm": 1785317396067
+   "iniciadoEm": 1785317396067,
+   "tiros": [
+    {
+     "h": "10:29",
+     "jogo": "Romênia x Sérvia",
+     "odd": 2.35,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785313725559,
@@ -878,9 +886,9 @@
    "2026-07-29": 7.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.2",
-   "n": 25,
+   "tipo": "seq",
+   "chave": "RRRR",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
