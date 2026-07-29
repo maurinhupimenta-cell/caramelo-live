@@ -189,13 +189,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -115.4,
-  "ciclos": 588,
-  "greens": 358,
+  "saldo": -113,
+  "ciclos": 589,
+  "greens": 359,
   "redsCiclo": 96,
   "aborts": 0,
   "descartes": 134,
   "historico": [
+   {
+    "quando": "2026-07-29T03:16:31.763Z",
+    "resultado": "GREEN",
+    "unidades": 2.4,
+    "detalhe": "super · Agua Branca x Penarol @2.35 (tiro 3) · gatilho: odd 2.4"
+   },
    {
     "quando": "2026-07-29T02:44:10.061Z",
     "resultado": "GREEN",
@@ -714,58 +720,15 @@
    }
   ],
   "consumidas": {
-   "euro": 1785293049861
+   "euro": 1785293049861,
+   "super": 1785294991658
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:07",
-     "jogo": "Belo Horizonte x La Plata",
-     "odd": 2.37
-    },
-    {
-     "h": "04:10",
-     "jogo": "Bogota x Lima",
-     "odd": 2.4
-    },
-    {
-     "h": "04:13",
-     "jogo": "Agua Branca x Penarol",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "odd 2.4",
-   "alvo": {
-    "h": "04:13",
-    "jogo": "Agua Branca x Penarol",
-    "odd": 2.35,
-    "unidades": 4,
-    "desde": 1785294788872
-   },
-   "iniciadoEm": 1785293910259,
-   "tiros": [
-    {
-     "h": "04:07",
-     "jogo": "Belo Horizonte x La Plata",
-     "odd": 2.37,
-     "unidades": 1
-    },
-    {
-     "h": "04:10",
-     "jogo": "Bogota x Lima",
-     "odd": 2.4,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785287805864,
    "premier": 1785277668066,
    "euro": 1785293049861,
-   "super": 1785275385869
+   "super": 1785294991658
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -781,7 +744,8 @@
    "2026-07-25": 21,
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
-   "2026-07-28": 5.5
+   "2026-07-28": 5.5,
+   "2026-07-29": 2.4
   },
   "_gatilhoAtual": {
    "tipo": "odd",
@@ -792,13 +756,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -42.1,
-  "ciclos": 652,
-  "greens": 435,
+  "saldo": -41,
+  "ciclos": 653,
+  "greens": 436,
   "redsCiclo": 69,
   "aborts": 0,
   "descartes": 148,
   "historico": [
+   {
+    "quando": "2026-07-29T03:16:31.962Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Agua Branca x Penarol @2.07 (tiro 1) · gatilho: time Agua Branca"
+   },
    {
     "quando": "2026-07-29T02:56:51.264Z",
     "resultado": "RED_CICLO",
@@ -1475,42 +1445,13 @@
   "consumidas": {
    "copa": 1785292100759,
    "premier": 1785292721362,
-   "euro": 1785293811162
+   "euro": 1785293811162,
+   "super": 1785294991766
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:13",
-     "jogo": "Agua Branca x Penarol",
-     "odd": 2.07
-    },
-    {
-     "h": "04:16",
-     "jogo": "Porto Alegre x Santos",
-     "odd": 2.25
-    },
-    {
-     "h": "04:19",
-     "jogo": "Guayaquil x Medellin",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "time Agua Branca",
-   "alvo": {
-    "h": "04:13",
-    "jogo": "Agua Branca x Penarol",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1785294630161
-   },
-   "iniciadoEm": 1785294630161
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785293811162,
-   "super": 1785291028460,
+   "super": 1785294991766,
    "premier": 1785292721362,
    "copa": 1785292100759
   },
@@ -1527,12 +1468,13 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -20.5
+   "2026-07-28": -20.5,
+   "2026-07-29": 1.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Agua Branca",
-   "n": 9,
+   "chave": "Guayaquil",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
