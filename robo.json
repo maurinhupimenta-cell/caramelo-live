@@ -731,13 +731,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -36.8,
-  "ciclos": 649,
-  "greens": 433,
+  "saldo": -35.9,
+  "ciclos": 650,
+  "greens": 434,
   "redsCiclo": 68,
   "aborts": 0,
   "descartes": 148,
   "historico": [
+   {
+    "quando": "2026-07-29T02:28:20.863Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · Alemanha x Países Baixos @1.93 (tiro 1) · gatilho: odd 2.05"
+   },
    {
     "quando": "2026-07-29T02:10:28.565Z",
     "resultado": "GREEN",
@@ -1394,44 +1400,15 @@
    }
   ],
   "consumidas": {
-   "super": 1785291028460
+   "super": 1785291028460,
+   "copa": 1785292100759
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:25",
-     "jogo": "Alemanha x Países Baixos",
-     "odd": 1.93
-    },
-    {
-     "h": "03:28",
-     "jogo": "Iraque x México",
-     "odd": 2.05
-    },
-    {
-     "h": "03:31",
-     "jogo": "Coreia do Sul x França",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "odd 2.05",
-   "alvo": {
-    "h": "03:25",
-    "jogo": "Alemanha x Países Baixos",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1785291390460
-   },
-   "iniciadoEm": 1785291390460
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785273830564,
    "super": 1785291028460,
    "premier": 1785280734959,
-   "copa": 1785278751261
+   "copa": 1785292100759
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -1446,13 +1423,13 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -15.2
+   "2026-07-28": -14.3
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.05",
    "n": 10,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
