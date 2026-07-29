@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -93.4,
-  "ciclos": 630,
-  "greens": 388,
+  "saldo": -92.1,
+  "ciclos": 631,
+  "greens": 389,
   "redsCiclo": 101,
   "aborts": 0,
   "descartes": 141,
   "historico": [
+   {
+    "quando": "2026-07-29T21:40:38.692Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "copa · Bósnia e Herzegovina x Coreia do Sul @2.3 (tiro 1) · gatilho: time África do Sul"
+   },
    {
     "quando": "2026-07-29T21:18:33.896Z",
     "resultado": "GREEN",
@@ -978,41 +984,12 @@
   ],
   "consumidas": {
    "premier": 1785357702600,
-   "euro": 1785359913698
+   "euro": 1785359913698,
+   "copa": 1785361238498
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:34",
-     "jogo": "Bósnia e Herzegovina x Coreia do Sul",
-     "odd": 2.3
-    },
-    {
-     "h": "22:37",
-     "jogo": "África do Sul x Espanha",
-     "odd": 2.3
-    },
-    {
-     "h": "22:40",
-     "jogo": "República Tcheca x EUA",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "time África do Sul",
-   "alvo": {
-    "h": "22:34",
-    "jogo": "Bósnia e Herzegovina x Coreia do Sul",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1785360398592
-   },
-   "iniciadoEm": 1785360398592
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785327347966,
+   "copa": 1785361238498,
    "premier": 1785357702600,
    "euro": 1785359913698,
    "super": 1785356876194
@@ -1032,7 +1009,7 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 22
+   "2026-07-29": 23.3
   },
   "_gatilhoAtual": {
    "tipo": "time",
