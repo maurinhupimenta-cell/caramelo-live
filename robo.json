@@ -961,7 +961,37 @@
   "consumidas": {
    "premier": 1785352924799
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:22",
+     "jogo": "Porto Alegre x Itaquera",
+     "odd": 2.62
+    },
+    {
+     "h": "21:25",
+     "jogo": "Bogota x Santiago",
+     "odd": 2.3
+    },
+    {
+     "h": "21:28",
+     "jogo": "Santos x Buenos Aires",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "seq RRRR",
+   "alvo": {
+    "h": "21:22",
+    "jogo": "Porto Alegre x Itaquera",
+    "odd": 2.62,
+    "unidades": 1,
+    "desde": 1785356343995
+   },
+   "iniciadoEm": 1785356343995
+  },
   "cooldown": {
    "copa": 1785327347966,
    "premier": 1785352924799,
@@ -986,9 +1016,9 @@
    "2026-07-29": 16.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.5",
-   "n": 17,
+   "tipo": "seq",
+   "chave": "RRRR",
+   "n": 34,
    "start": 1
   },
   "_obs": {}
