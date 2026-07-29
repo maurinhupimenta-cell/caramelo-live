@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -106.9,
-  "ciclos": 623,
-  "greens": 382,
+  "saldo": -105.5,
+  "ciclos": 624,
+  "greens": 383,
   "redsCiclo": 101,
   "aborts": 0,
   "descartes": 140,
   "historico": [
+   {
+    "quando": "2026-07-29T18:59:47.295Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "super · Buenos Aires x La Boca @2.2 (tiro 2) · gatilho: coluna :52"
+   },
    {
     "quando": "2026-07-29T17:54:38.893Z",
     "resultado": "RED_CICLO",
@@ -934,43 +940,15 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "19:52",
-     "jogo": "Agua Branca x La Plata",
-     "odd": 2.45
-    },
-    {
-     "h": "19:55",
-     "jogo": "Buenos Aires x La Boca",
-     "odd": 2.2
-    },
-    {
-     "h": "19:58",
-     "jogo": "Bogota x Santos",
-     "odd": 2.62
-    }
-   ],
-   "gatilho": "coluna :52",
-   "alvo": {
-    "h": "19:52",
-    "jogo": "Agua Branca x La Plata",
-    "odd": 2.45,
-    "unidades": 1,
-    "desde": 1785351046695
-   },
-   "iniciadoEm": 1785351046695
+  "consumidas": {
+   "super": 1785351587099
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785327347966,
    "premier": 1785347678695,
    "euro": 1785341994803,
-   "super": 1785339601393
+   "super": 1785351587099
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -987,13 +965,13 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 8.5
+   "2026-07-29": 9.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":58",
-   "n": 18,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.7",
+   "n": 11,
+   "start": 2
   },
   "_obs": {}
  },
@@ -1889,10 +1867,39 @@
    }
   ],
   "consumidas": {
-   "super": 1785347680490,
    "euro": 1785349788391
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:55",
+     "jogo": "Buenos Aires x La Boca",
+     "odd": 1.93
+    },
+    {
+     "h": "19:58",
+     "jogo": "Bogota x Santos",
+     "odd": 2.2
+    },
+    {
+     "h": "20:01",
+     "jogo": "Asuncion x Medellin",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "coluna :58",
+   "alvo": {
+    "h": "19:55",
+    "jogo": "Buenos Aires x La Boca",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1785351288598
+   },
+   "iniciadoEm": 1785351288598
+  },
   "cooldown": {
    "euro": 1785349788391,
    "super": 1785347680490,
@@ -1916,9 +1923,9 @@
    "2026-07-29": -21.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.87",
-   "n": 14,
+   "tipo": "coluna",
+   "chave": ":58",
+   "n": 18,
    "start": 1
   },
   "_obs": {}
