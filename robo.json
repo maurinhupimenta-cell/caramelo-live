@@ -880,8 +880,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "13:26",
@@ -901,13 +901,21 @@
    ],
    "gatilho": "coluna :29",
    "alvo": {
-    "h": "13:26",
-    "jogo": "Bélgica x República Tcheca",
-    "odd": 2.45,
-    "unidades": 1,
-    "desde": 1785327467467
+    "h": "13:29",
+    "jogo": "Espanha x Itália",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1785328246863
    },
-   "iniciadoEm": 1785327467467
+   "iniciadoEm": 1785327467467,
+   "tiros": [
+    {
+     "h": "13:26",
+     "jogo": "Bélgica x República Tcheca",
+     "odd": 2.45,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785327347966,
@@ -933,10 +941,10 @@
    "2026-07-29": 23.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":29",
-   "n": 13,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.4",
+   "n": 17,
+   "start": 3
   },
   "_obs": {}
  },
