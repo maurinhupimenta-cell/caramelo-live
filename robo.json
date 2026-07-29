@@ -882,13 +882,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -56.7,
-  "ciclos": 674,
-  "greens": 448,
+  "saldo": -56,
+  "ciclos": 675,
+  "greens": 449,
   "redsCiclo": 73,
   "aborts": 0,
   "descartes": 153,
   "historico": [
+   {
+    "quando": "2026-07-29T10:34:51.865Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "euro · Espanha x Croácia @1.86 (tiro 2) · gatilho: coluna :29"
+   },
    {
     "quando": "2026-07-29T10:30:46.769Z",
     "resultado": "GREEN_OBS",
@@ -1695,49 +1701,12 @@
    }
   ],
   "consumidas": {
-   "copa": 1785319305762
+   "copa": 1785319305762,
+   "euro": 1785321291761
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "11:29",
-     "jogo": "Eslovênia x Sérvia",
-     "odd": 2.3
-    },
-    {
-     "h": "11:32",
-     "jogo": "Espanha x Croácia",
-     "odd": 1.86
-    },
-    {
-     "h": "11:35",
-     "jogo": "Itália x França",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "coluna :29",
-   "alvo": {
-    "h": "11:32",
-    "jogo": "Espanha x Croácia",
-    "odd": 1.86,
-    "unidades": 2,
-    "desde": 1785321109462
-   },
-   "iniciadoEm": 1785321104362,
-   "tiros": [
-    {
-     "h": "11:29",
-     "jogo": "Eslovênia x Sérvia",
-     "odd": 2.3,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785317445759,
+   "euro": 1785321291761,
    "super": 1785315884566,
    "premier": 1785300650858,
    "copa": 1785319305762
@@ -1756,7 +1725,7 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": -14.6
+   "2026-07-29": -13.9
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
