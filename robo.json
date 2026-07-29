@@ -1034,12 +1034,18 @@
  },
  "ambas": {
   "saldo": -57.6,
-  "ciclos": 701,
+  "ciclos": 702,
   "greens": 462,
   "redsCiclo": 75,
   "aborts": 0,
-  "descartes": 164,
+  "descartes": 165,
   "historico": [
+   {
+    "quando": "2026-07-29T22:08:37.101Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Equador) — liga REARMADA"
+   },
    {
     "quando": "2026-07-29T22:08:34.592Z",
     "resultado": "DESCARTADO",
@@ -2013,34 +2019,42 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
-    {
-     "h": "23:04",
-     "jogo": "Uzbequistão x Inglaterra",
-     "odd": 1.98
-    },
     {
      "h": "23:07",
      "jogo": "Equador x Bélgica",
      "odd": 1.93
     },
     {
-     "h": "22:52",
-     "jogo": "Qatar x Tunísia",
-     "odd": 2.15
+     "h": "23:10",
+     "jogo": "Japão x Tunísia",
+     "odd": 2.25
+    },
+    {
+     "h": "23:13",
+     "jogo": "Suécia x Espanha",
+     "odd": 2.05
     }
    ],
    "gatilho": "time Equador",
    "alvo": {
-    "h": "23:04",
-    "jogo": "Uzbequistão x Inglaterra",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785361956995
+    "h": "23:10",
+    "jogo": "Japão x Tunísia",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1785363038392
    },
-   "iniciadoEm": 1785361956995
+   "iniciadoEm": 1785362919500,
+   "tiros": [
+    {
+     "h": "23:07",
+     "jogo": "Equador x Bélgica",
+     "odd": 1.93,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785361476993,
