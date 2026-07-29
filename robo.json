@@ -839,13 +839,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -46.2,
-  "ciclos": 666,
-  "greens": 444,
+  "saldo": -45.2,
+  "ciclos": 667,
+  "greens": 445,
   "redsCiclo": 71,
   "aborts": 0,
   "descartes": 151,
   "historico": [
+   {
+    "quando": "2026-07-29T07:49:46.661Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Santos x Montevideo @2 (tiro 2) · gatilho: time Medellin"
+   },
    {
     "quando": "2026-07-29T07:19:45.862Z",
     "resultado": "GREEN",
@@ -1605,50 +1611,13 @@
   ],
   "consumidas": {
    "euro": 1785308567157,
-   "copa": 1785309585668
+   "copa": 1785309585668,
+   "super": 1785311386559
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "08:43",
-     "jogo": "La Plata x Medellin",
-     "odd": 2.25
-    },
-    {
-     "h": "08:46",
-     "jogo": "Santos x Montevideo",
-     "odd": 2
-    },
-    {
-     "h": "08:49",
-     "jogo": "Lima x Belo Horizonte",
-     "odd": 1.86
-    }
-   ],
-   "gatilho": "time Medellin",
-   "alvo": {
-    "h": "08:46",
-    "jogo": "Santos x Montevideo",
-    "odd": 2,
-    "unidades": 2,
-    "desde": 1785311205360
-   },
-   "iniciadoEm": 1785310910162,
-   "tiros": [
-    {
-     "h": "08:43",
-     "jogo": "La Plata x Medellin",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785308567157,
-   "super": 1785307308958,
+   "super": 1785311386559,
    "premier": 1785300650858,
    "copa": 1785309585668
   },
@@ -1666,13 +1635,13 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": -4.1
+   "2026-07-29": -3.1
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "1.93",
    "n": 14,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
