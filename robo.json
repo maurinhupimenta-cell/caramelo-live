@@ -1857,7 +1857,45 @@
   "consumidas": {
    "super": 1785347680490
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "19:20",
+     "jogo": "Romênia x Polônia",
+     "odd": 2.02
+    },
+    {
+     "h": "19:23",
+     "jogo": "França x Croácia",
+     "odd": 1.87
+    },
+    {
+     "h": "19:26",
+     "jogo": "Alemanha x Portugal",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "odd 1.87",
+   "alvo": {
+    "h": "19:23",
+    "jogo": "França x Croácia",
+    "odd": 1.87,
+    "unidades": 2,
+    "desde": 1785349731302
+   },
+   "iniciadoEm": 1785349009304,
+   "tiros": [
+    {
+     "h": "19:20",
+     "jogo": "Romênia x Polônia",
+     "odd": 2.02,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1785339295204,
    "super": 1785347680490,
@@ -1881,16 +1919,11 @@
    "2026-07-29": -14.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Agua Branca",
-   "n": 38,
+   "tipo": "odd",
+   "chave": "1.87",
+   "n": 14,
    "start": 1
   },
-  "_obs": {
-   "euro": {
-    "desde": 1785348709299,
-    "gatilho": "odd 1.87"
-   }
-  }
+  "_obs": {}
  }
 }
