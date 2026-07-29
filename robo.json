@@ -1474,7 +1474,45 @@
   "consumidas": {
    "super": 1785299080559
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "05:29",
+     "jogo": "Portugal x Eslováquia",
+     "odd": 2.05
+    },
+    {
+     "h": "05:32",
+     "jogo": "Suíça x Alemanha",
+     "odd": 1.85
+    },
+    {
+     "h": "05:35",
+     "jogo": "Eslovênia x Geórgia",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "time Alemanha",
+   "alvo": {
+    "h": "05:32",
+    "jogo": "Suíça x Alemanha",
+    "odd": 1.85,
+    "unidades": 2,
+    "desde": 1785299607658
+   },
+   "iniciadoEm": 1785299082765,
+   "tiros": [
+    {
+     "h": "05:29",
+     "jogo": "Portugal x Eslováquia",
+     "odd": 2.05,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1785293811162,
    "super": 1785299080559,
@@ -1499,9 +1537,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Medellin",
-   "n": 8,
-   "start": 3
+   "chave": "Islington",
+   "n": 15,
+   "start": 1
   },
   "_obs": {}
  }
