@@ -1044,18 +1044,24 @@
    "tipo": "coluna",
    "chave": ":52",
    "n": 19,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -58.6,
-  "ciclos": 699,
-  "greens": 461,
+  "saldo": -57.6,
+  "ciclos": 700,
+  "greens": 462,
   "redsCiclo": 75,
   "aborts": 0,
   "descartes": 163,
   "historico": [
+   {
+    "quando": "2026-07-29T21:44:37.097Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Romênia x Sérvia @2 (tiro 2) · gatilho: seq RGRGG"
+   },
    {
     "quando": "2026-07-29T21:32:31.794Z",
     "resultado": "GREEN",
@@ -2012,49 +2018,12 @@
    }
   ],
   "consumidas": {
-   "super": 1785360751602
+   "super": 1785360751602,
+   "euro": 1785361476993
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "22:38",
-     "jogo": "Suíça x Países Baixos",
-     "odd": 1.8
-    },
-    {
-     "h": "22:41",
-     "jogo": "Romênia x Sérvia",
-     "odd": 2
-    },
-    {
-     "h": "22:44",
-     "jogo": "Espanha x Inglaterra",
-     "odd": 1.8
-    }
-   ],
-   "gatilho": "seq RGRGG",
-   "alvo": {
-    "h": "22:41",
-    "jogo": "Romênia x Sérvia",
-    "odd": 2,
-    "unidades": 2,
-    "desde": 1785361293794
-   },
-   "iniciadoEm": 1785360932599,
-   "tiros": [
-    {
-     "h": "22:38",
-     "jogo": "Suíça x Países Baixos",
-     "odd": 1.8,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785356944597,
+   "euro": 1785361476993,
    "super": 1785360751602,
    "premier": 1785300650858,
    "copa": 1785354994399
@@ -2073,12 +2042,12 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": -16.5
+   "2026-07-29": -15.5
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGRGG",
-   "n": 9,
+   "chave": "GGRRG",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
