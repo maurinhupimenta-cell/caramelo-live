@@ -860,7 +860,37 @@
    "euro": 1785322367262,
    "copa": 1785323207870
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:21",
+     "jogo": "Southampton x Norwich",
+     "odd": 2.3
+    },
+    {
+     "h": "12:24",
+     "jogo": "Watford x Newcastle",
+     "odd": 2.1
+    },
+    {
+     "h": "12:27",
+     "jogo": "Southampton x Leicester",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "coluna :24",
+   "alvo": {
+    "h": "12:21",
+    "jogo": "Southampton x Norwich",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1785323682264
+   },
+   "iniciadoEm": 1785323682264
+  },
   "cooldown": {
    "copa": 1785323207870,
    "premier": 1785277668066,
@@ -885,9 +915,9 @@
    "2026-07-29": 16.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Inglaterra",
-   "n": 10,
+   "tipo": "coluna",
+   "chave": ":24",
+   "n": 12,
    "start": 2
   },
   "_obs": {}
