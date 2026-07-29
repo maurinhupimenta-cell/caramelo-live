@@ -1773,10 +1773,38 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {
-   "super": 1785325065969
+  "consumidas": {},
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:26",
+     "jogo": "França x Escócia",
+     "odd": 1.9
+    },
+    {
+     "h": "16:29",
+     "jogo": "Bélgica x Eslovênia",
+     "odd": 2.15
+    },
+    {
+     "h": "16:32",
+     "jogo": "Hungria x Escócia",
+     "odd": 2
+    }
+   ],
+   "gatilho": "coluna :29",
+   "alvo": {
+    "h": "16:26",
+    "jogo": "França x Escócia",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1785338255791
+   },
+   "iniciadoEm": 1785338255791
   },
-  "ciclo": null,
   "cooldown": {
    "euro": 1785325665663,
    "super": 1785325065969,
@@ -1800,10 +1828,10 @@
    "2026-07-29": -10.2
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 20,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":29",
+   "n": 16,
+   "start": 3
   },
   "_obs": {}
  }
