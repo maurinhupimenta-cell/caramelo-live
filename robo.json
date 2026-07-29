@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -105.5,
-  "ciclos": 625,
-  "greens": 383,
+  "saldo": -100.5,
+  "ciclos": 626,
+  "greens": 384,
   "redsCiclo": 101,
   "aborts": 0,
   "descartes": 141,
   "historico": [
+   {
+    "quando": "2026-07-29T19:15:53.796Z",
+    "resultado": "GREEN",
+    "unidades": 5,
+    "detalhe": "euro · Albânia x República Tcheca @3 (tiro 3) · gatilho: odd 2.7"
+   },
    {
     "quando": "2026-07-29T19:14:56.499Z",
     "resultado": "GREEN_OBS",
@@ -947,57 +953,44 @@
    }
   ],
   "consumidas": {
-   "super": 1785351587099
+   "super": 1785351587099,
+   "euro": 1785352553602
   },
   "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "20:02",
-     "jogo": "Espanha x Ucrânia",
-     "odd": 2.15
+     "h": "20:18",
+     "jogo": "Burnley x Southampton",
+     "odd": 2.25
     },
     {
-     "h": "20:05",
-     "jogo": "Polônia x Turquia",
-     "odd": 2.7
+     "h": "20:21",
+     "jogo": "West Ham x Norwich",
+     "odd": 2.45
     },
     {
-     "h": "20:08",
-     "jogo": "Albânia x República Tcheca",
-     "odd": 3
+     "h": "20:24",
+     "jogo": "Brentford x Chelsea",
+     "odd": 2.25
     }
    ],
-   "gatilho": "odd 2.7",
+   "gatilho": "seq RGGGG",
    "alvo": {
-    "h": "20:08",
-    "jogo": "Albânia x República Tcheca",
-    "odd": 3,
-    "unidades": 4,
-    "desde": 1785352551894
+    "h": "20:18",
+    "jogo": "Burnley x Southampton",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785352607897
    },
-   "iniciadoEm": 1785351589393,
-   "tiros": [
-    {
-     "h": "20:02",
-     "jogo": "Espanha x Ucrânia",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "20:05",
-     "jogo": "Polônia x Turquia",
-     "odd": 2.7,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1785352607897
   },
   "cooldown": {
    "copa": 1785327347966,
    "premier": 1785347678695,
-   "euro": 1785341994803,
+   "euro": 1785352553602,
    "super": 1785351587099
   },
   "dias": {
@@ -1015,7 +1008,7 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 9.9
+   "2026-07-29": 14.9
   },
   "_gatilhoAtual": {
    "tipo": "seq",
