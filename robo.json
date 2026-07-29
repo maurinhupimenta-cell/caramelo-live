@@ -995,12 +995,41 @@
    }
   ],
   "consumidas": {
-   "euro": 1785359913698,
    "copa": 1785361238498,
    "super": 1785361904094,
    "premier": 1785362202904
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:11",
+     "jogo": "Bélgica x Eslováquia",
+     "odd": 2.2
+    },
+    {
+     "h": "23:14",
+     "jogo": "Eslovênia x Escócia",
+     "odd": 2.55
+    },
+    {
+     "h": "23:17",
+     "jogo": "Polônia x Romênia",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "seq RRGRG",
+   "alvo": {
+    "h": "23:11",
+    "jogo": "Bélgica x Eslováquia",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785363515400
+   },
+   "iniciadoEm": 1785363515400
+  },
   "cooldown": {
    "copa": 1785361238498,
    "premier": 1785362202904,
@@ -1025,9 +1054,9 @@
    "2026-07-29": 25.3
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.5",
-   "n": 21,
+   "tipo": "seq",
+   "chave": "RRGRG",
+   "n": 19,
    "start": 1
   },
   "_obs": {}
