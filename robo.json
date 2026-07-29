@@ -1641,11 +1641,40 @@
    }
   ],
   "consumidas": {
-   "super": 1785311386559,
    "euro": 1785312767367,
    "copa": 1785314865371
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:55",
+     "jogo": "Buenos Aires x Guayaquil",
+     "odd": 1.85
+    },
+    {
+     "h": "09:58",
+     "jogo": "Itaquera x Agua Branca",
+     "odd": 1.93
+    },
+    {
+     "h": "10:01",
+     "jogo": "Asuncion x Buenos Aires",
+     "odd": 1.87
+    }
+   ],
+   "gatilho": "time Agua Branca",
+   "alvo": {
+    "h": "09:55",
+    "jogo": "Buenos Aires x Guayaquil",
+    "odd": 1.85,
+    "unidades": 1,
+    "desde": 1785314986868
+   },
+   "iniciadoEm": 1785314986868
+  },
   "cooldown": {
    "euro": 1785312767367,
    "super": 1785311386559,
@@ -1669,10 +1698,10 @@
    "2026-07-29": -9.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.93",
-   "n": 12,
-   "start": 3
+   "tipo": "time",
+   "chave": "Agua Branca",
+   "n": 22,
+   "start": 2
   },
   "_obs": {}
  }
