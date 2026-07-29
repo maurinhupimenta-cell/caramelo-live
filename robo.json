@@ -858,13 +858,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -44.3,
-  "ciclos": 668,
+  "saldo": -51.3,
+  "ciclos": 669,
   "greens": 446,
-  "redsCiclo": 71,
+  "redsCiclo": 72,
   "aborts": 0,
   "descartes": 151,
   "historico": [
+   {
+    "quando": "2026-07-29T08:47:45.559Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Jordânia"
+   },
    {
     "quando": "2026-07-29T08:12:47.561Z",
     "resultado": "GREEN",
@@ -1636,58 +1642,15 @@
   ],
   "consumidas": {
    "super": 1785311386559,
-   "euro": 1785312767367
+   "euro": 1785312767367,
+   "copa": 1785314865371
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "09:37",
-     "jogo": "Jordânia x África do Sul",
-     "odd": 2.05
-    },
-    {
-     "h": "09:40",
-     "jogo": "Portugal x Escócia",
-     "odd": 2.1
-    },
-    {
-     "h": "09:43",
-     "jogo": "Haiti x Colômbia",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "time Jordânia",
-   "alvo": {
-    "h": "09:43",
-    "jogo": "Haiti x Colômbia",
-    "odd": 1.87,
-    "unidades": 4,
-    "desde": 1785314625964
-   },
-   "iniciadoEm": 1785314025565,
-   "tiros": [
-    {
-     "h": "09:37",
-     "jogo": "Jordânia x África do Sul",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "09:40",
-     "jogo": "Portugal x Escócia",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785312767367,
    "super": 1785311386559,
    "premier": 1785300650858,
-   "copa": 1785309585668
+   "copa": 1785314865371
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -1703,12 +1666,12 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": -2.2
+   "2026-07-29": -9.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Áustria",
-   "n": 8,
+   "tipo": "odd",
+   "chave": "1.93",
+   "n": 12,
    "start": 3
   },
   "_obs": {}
