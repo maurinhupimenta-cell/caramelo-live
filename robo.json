@@ -899,7 +899,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:21",
+     "jogo": "United x Aston",
+     "odd": 2.35
+    },
+    {
+     "h": "16:24",
+     "jogo": "Norwich x Burnley",
+     "odd": 2.1
+    },
+    {
+     "h": "16:27",
+     "jogo": "Islington x Brighton",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "coluna :24",
+   "alvo": {
+    "h": "16:21",
+    "jogo": "United x Aston",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1785338273895
+   },
+   "iniciadoEm": 1785338273895
+  },
   "cooldown": {
    "copa": 1785327347966,
    "premier": 1785324588169,
@@ -924,17 +954,12 @@
    "2026-07-29": 16.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.4",
-   "n": 17,
-   "start": 2
+   "tipo": "coluna",
+   "chave": ":24",
+   "n": 16,
+   "start": 1
   },
-  "_obs": {
-   "premier": {
-    "desde": 1785337977697,
-    "gatilho": "odd 2.4"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -52.3,
