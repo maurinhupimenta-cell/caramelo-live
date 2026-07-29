@@ -718,8 +718,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "04:07",
@@ -739,11 +739,11 @@
    ],
    "gatilho": "odd 2.4",
    "alvo": {
-    "h": "04:10",
-    "jogo": "Bogota x Lima",
-    "odd": 2.4,
-    "unidades": 2,
-    "desde": 1785294629959
+    "h": "04:13",
+    "jogo": "Agua Branca x Penarol",
+    "odd": 2.35,
+    "unidades": 4,
+    "desde": 1785294788872
    },
    "iniciadoEm": 1785293910259,
    "tiros": [
@@ -752,6 +752,12 @@
      "jogo": "Belo Horizonte x La Plata",
      "odd": 2.37,
      "unidades": 1
+    },
+    {
+     "h": "04:10",
+     "jogo": "Bogota x Lima",
+     "odd": 2.4,
+     "unidades": 2
     }
    ]
   },
@@ -1471,7 +1477,37 @@
    "premier": 1785292721362,
    "euro": 1785293811162
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:13",
+     "jogo": "Agua Branca x Penarol",
+     "odd": 2.07
+    },
+    {
+     "h": "04:16",
+     "jogo": "Porto Alegre x Santos",
+     "odd": 2.25
+    },
+    {
+     "h": "04:19",
+     "jogo": "Guayaquil x Medellin",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "time Agua Branca",
+   "alvo": {
+    "h": "04:13",
+    "jogo": "Agua Branca x Penarol",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1785294630161
+   },
+   "iniciadoEm": 1785294630161
+  },
   "cooldown": {
    "euro": 1785293811162,
    "super": 1785291028460,
@@ -1495,9 +1531,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Geórgia",
-   "n": 8,
-   "start": 3
+   "chave": "Agua Branca",
+   "n": 9,
+   "start": 1
   },
   "_obs": {}
  }
