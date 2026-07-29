@@ -858,18 +858,24 @@
    "tipo": "odd",
    "chave": "2.2",
    "n": 19,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -47.5,
-  "ciclos": 665,
-  "greens": 443,
+  "saldo": -46.2,
+  "ciclos": 666,
+  "greens": 444,
   "redsCiclo": 71,
   "aborts": 0,
   "descartes": 151,
   "historico": [
+   {
+    "quando": "2026-07-29T07:19:45.862Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "copa · Suécia x Iraque @2.3 (tiro 1) · gatilho: odd 1.93"
+   },
    {
     "quando": "2026-07-29T07:02:47.261Z",
     "resultado": "GREEN",
@@ -1623,14 +1629,15 @@
   ],
   "consumidas": {
    "super": 1785307308958,
-   "euro": 1785308567157
+   "euro": 1785308567157,
+   "copa": 1785309585668
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1785308567157,
    "super": 1785307308958,
    "premier": 1785300650858,
-   "copa": 1785305805366
+   "copa": 1785309585668
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -1646,12 +1653,12 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": -5.4
+   "2026-07-29": -4.1
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.2",
-   "n": 9,
+   "chave": "1.93",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
