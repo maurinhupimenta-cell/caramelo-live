@@ -2008,7 +2008,37 @@
   "consumidas": {
    "super": 1785360751602
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:38",
+     "jogo": "Suíça x Países Baixos",
+     "odd": 1.8
+    },
+    {
+     "h": "22:41",
+     "jogo": "Romênia x Sérvia",
+     "odd": 2
+    },
+    {
+     "h": "22:44",
+     "jogo": "Espanha x Inglaterra",
+     "odd": 1.8
+    }
+   ],
+   "gatilho": "seq RGRGG",
+   "alvo": {
+    "h": "22:38",
+    "jogo": "Suíça x Países Baixos",
+    "odd": 1.8,
+    "unidades": 1,
+    "desde": 1785360932599
+   },
+   "iniciadoEm": 1785360932599
+  },
   "cooldown": {
    "euro": 1785356944597,
    "super": 1785360751602,
@@ -2032,10 +2062,10 @@
    "2026-07-29": -16.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.95",
-   "n": 26,
-   "start": 2
+   "tipo": "seq",
+   "chave": "RGRGG",
+   "n": 9,
+   "start": 1
   },
   "_obs": {}
  }
