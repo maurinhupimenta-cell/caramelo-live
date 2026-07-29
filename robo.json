@@ -901,8 +901,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "16:21",
@@ -922,13 +922,21 @@
    ],
    "gatilho": "coluna :24",
    "alvo": {
-    "h": "16:21",
-    "jogo": "United x Aston",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1785338273895
+    "h": "16:24",
+    "jogo": "Norwich x Burnley",
+    "odd": 2.1,
+    "unidades": 2,
+    "desde": 1785338618901
    },
-   "iniciadoEm": 1785338273895
+   "iniciadoEm": 1785338273895,
+   "tiros": [
+    {
+     "h": "16:21",
+     "jogo": "United x Aston",
+     "odd": 2.35,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785327347966,
@@ -955,7 +963,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":24",
+   "chave": ":27",
    "n": 16,
    "start": 1
   },
@@ -1862,7 +1870,7 @@
    "tipo": "coluna",
    "chave": ":29",
    "n": 16,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
