@@ -189,13 +189,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -113,
-  "ciclos": 589,
+  "saldo": -120,
+  "ciclos": 590,
   "greens": 359,
-  "redsCiclo": 96,
+  "redsCiclo": 97,
   "aborts": 0,
   "descartes": 134,
   "historico": [
+   {
+    "quando": "2026-07-29T03:34:09.466Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: seq RRRR"
+   },
    {
     "quando": "2026-07-29T03:16:31.763Z",
     "resultado": "GREEN",
@@ -721,55 +727,12 @@
   ],
   "consumidas": {
    "euro": 1785293049861,
-   "super": 1785294991658
+   "super": 1785294991658,
+   "copa": 1785296049363
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:25",
-     "jogo": "Tunísia x Suécia",
-     "odd": 2.87
-    },
-    {
-     "h": "04:28",
-     "jogo": "Colômbia x Irã",
-     "odd": 2.5
-    },
-    {
-     "h": "04:31",
-     "jogo": "Japão x Escócia",
-     "odd": 2.7
-    }
-   ],
-   "gatilho": "seq RRRR",
-   "alvo": {
-    "h": "04:31",
-    "jogo": "Japão x Escócia",
-    "odd": 2.7,
-    "unidades": 4,
-    "desde": 1785295850063
-   },
-   "iniciadoEm": 1785295370758,
-   "tiros": [
-    {
-     "h": "04:25",
-     "jogo": "Tunísia x Suécia",
-     "odd": 2.87,
-     "unidades": 1
-    },
-    {
-     "h": "04:28",
-     "jogo": "Colômbia x Irã",
-     "odd": 2.5,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785287805864,
+   "copa": 1785296049363,
    "premier": 1785277668066,
    "euro": 1785293049861,
    "super": 1785294991658
@@ -789,7 +752,7 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 2.4
+   "2026-07-29": -4.6
   },
   "_gatilhoAtual": {
    "tipo": "seq",
