@@ -996,13 +996,25 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -62.4,
-  "ciclos": 689,
-  "greens": 457,
+  "saldo": -61.2,
+  "ciclos": 691,
+  "greens": 458,
   "redsCiclo": 75,
   "aborts": 0,
-  "descartes": 157,
+  "descartes": 158,
   "historico": [
+   {
+    "quando": "2026-07-29T19:56:34.594Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · República Tcheca x Tunísia @2.2 (tiro 1) · gatilho: time Cabo Verde"
+   },
+   {
+    "quando": "2026-07-29T19:43:28.000Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Cabo Verde) — liga REARMADA"
+   },
    {
     "quando": "2026-07-29T19:43:24.397Z",
     "resultado": "DESCARTADO",
@@ -1899,44 +1911,15 @@
    }
   ],
   "consumidas": {
-   "super": 1785351587396
+   "super": 1785351587396,
+   "copa": 1785354994399
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:31",
-     "jogo": "Inglaterra x Cabo Verde",
-     "odd": 2.05
-    },
-    {
-     "h": "20:34",
-     "jogo": "Argélia x Arábia Saudita",
-     "odd": 1.93
-    },
-    {
-     "h": "20:37",
-     "jogo": "Noruega x Japão",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "time Cabo Verde",
-   "alvo": {
-    "h": "20:31",
-    "jogo": "Inglaterra x Cabo Verde",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785353273100
-   },
-   "iniciadoEm": 1785353273100
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785349788391,
    "super": 1785351587396,
    "premier": 1785300650858,
-   "copa": 1785327585768
+   "copa": 1785354994399
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -1952,13 +1935,13 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": -20.3
+   "2026-07-29": -19.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Cabo Verde",
-   "n": 14,
-   "start": 1
+   "chave": "Equador",
+   "n": 12,
+   "start": 2
   },
   "_obs": {}
  }
