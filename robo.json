@@ -848,7 +848,7 @@
    "tipo": "odd",
    "chave": "2.4",
    "n": 16,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -1605,8 +1605,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "07:31",
@@ -1626,13 +1626,21 @@
    ],
    "gatilho": "time Agua Branca",
    "alvo": {
-    "h": "07:31",
-    "jogo": "Rio de Janeiro x Santiago",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1785306346862
+    "h": "07:34",
+    "jogo": "Avellaneda x Agua Branca",
+    "odd": 1.93,
+    "unidades": 2,
+    "desde": 1785306887365
    },
-   "iniciadoEm": 1785306346862
+   "iniciadoEm": 1785306346862,
+   "tiros": [
+    {
+     "h": "07:31",
+     "jogo": "Rio de Janeiro x Santiago",
+     "odd": 1.95,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785304547967,
@@ -1660,7 +1668,7 @@
    "tipo": "time",
    "chave": "Medellin",
    "n": 15,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
