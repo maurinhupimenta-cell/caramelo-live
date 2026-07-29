@@ -981,7 +981,37 @@
    "premier": 1785357702600,
    "euro": 1785359913698
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:34",
+     "jogo": "Bósnia e Herzegovina x Coreia do Sul",
+     "odd": 2.3
+    },
+    {
+     "h": "22:37",
+     "jogo": "África do Sul x Espanha",
+     "odd": 2.3
+    },
+    {
+     "h": "22:40",
+     "jogo": "República Tcheca x EUA",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "time África do Sul",
+   "alvo": {
+    "h": "22:34",
+    "jogo": "Bósnia e Herzegovina x Coreia do Sul",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1785360398592
+   },
+   "iniciadoEm": 1785360398592
+  },
   "cooldown": {
    "copa": 1785327347966,
    "premier": 1785357702600,
@@ -1006,10 +1036,10 @@
    "2026-07-29": 22
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.7",
-   "n": 13,
-   "start": 1
+   "tipo": "time",
+   "chave": "África do Sul",
+   "n": 14,
+   "start": 3
   },
   "_obs": {}
  },
@@ -2016,9 +2046,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Equador",
-   "n": 14,
-   "start": 3
+   "chave": "Áustria",
+   "n": 16,
+   "start": 2
   },
   "_obs": {}
  }
