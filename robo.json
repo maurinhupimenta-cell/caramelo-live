@@ -983,18 +983,24 @@
    "tipo": "odd",
    "chave": "2.4",
    "n": 23,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -58.3,
-  "ciclos": 681,
-  "greens": 454,
+  "saldo": -57,
+  "ciclos": 682,
+  "greens": 455,
   "redsCiclo": 74,
   "aborts": 0,
   "descartes": 153,
   "historico": [
+   {
+    "quando": "2026-07-29T16:46:14.993Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "super · Bogota x La Plata @2.3 (tiro 1) · gatilho: time Agua Branca"
+   },
    {
     "quando": "2026-07-29T15:40:01.896Z",
     "resultado": "GREEN",
@@ -1842,41 +1848,13 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:43",
-     "jogo": "Bogota x La Plata",
-     "odd": 2.3
-    },
-    {
-     "h": "17:46",
-     "jogo": "Penarol x Agua Branca",
-     "odd": 2
-    },
-    {
-     "h": "17:49",
-     "jogo": "Lima x Belo Horizonte",
-     "odd": 1.86
-    }
-   ],
-   "gatilho": "time Agua Branca",
-   "alvo": {
-    "h": "17:43",
-    "jogo": "Bogota x La Plata",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1785343207701
-   },
-   "iniciadoEm": 1785343207701
+  "consumidas": {
+   "super": 1785343574796
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785339295204,
-   "super": 1785339601700,
+   "super": 1785343574796,
    "premier": 1785300650858,
    "copa": 1785327585768
   },
@@ -1894,12 +1872,12 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": -16.2
+   "2026-07-29": -14.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Agua Branca",
-   "n": 36,
+   "tipo": "coluna",
+   "chave": ":52",
+   "n": 17,
    "start": 1
   },
   "_obs": {}
