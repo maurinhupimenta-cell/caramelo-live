@@ -748,11 +748,40 @@
    }
   ],
   "consumidas": {
-   "euro": 1785297009666,
    "super": 1785299080360,
    "copa": 1785299985269
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:50",
+     "jogo": "Dinamarca x Escócia",
+     "odd": 2.35
+    },
+    {
+     "h": "05:53",
+     "jogo": "Países Baixos x Bélgica",
+     "odd": 2.02
+    },
+    {
+     "h": "05:56",
+     "jogo": "Alemanha x Albânia",
+     "odd": 2.55
+    }
+   ],
+   "gatilho": "time Países Baixos",
+   "alvo": {
+    "h": "05:50",
+    "jogo": "Dinamarca x Escócia",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1785300619762
+   },
+   "iniciadoEm": 1785300619762
+  },
   "cooldown": {
    "copa": 1785299985269,
    "premier": 1785277668066,
@@ -778,7 +807,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Cabo Verde",
+   "chave": "Países Baixos",
    "n": 8,
    "start": 1
   },
@@ -1493,7 +1522,37 @@
    "super": 1785299080559,
    "euro": 1785300067668
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:48",
+     "jogo": "City x Everton",
+     "odd": 1.87
+    },
+    {
+     "h": "05:51",
+     "jogo": "Norwich x Wolverhampton",
+     "odd": 1.83
+    },
+    {
+     "h": "05:54",
+     "jogo": "West Ham x Tottenham",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "time Wolverhampton",
+   "alvo": {
+    "h": "05:48",
+    "jogo": "City x Everton",
+    "odd": 1.87,
+    "unidades": 1,
+    "desde": 1785300069369
+   },
+   "iniciadoEm": 1785300069369
+  },
   "cooldown": {
    "euro": 1785300067668,
    "super": 1785299080559,
@@ -1518,9 +1577,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Wolverhampton",
-   "n": 9,
-   "start": 3
+   "chave": "Argélia",
+   "n": 8,
+   "start": 1
   },
   "_obs": {}
  }
