@@ -781,11 +781,40 @@
    }
   ],
   "consumidas": {
-   "euro": 1785300827765,
    "super": 1785303105959,
    "copa": 1785304189762
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:59",
+     "jogo": "Albânia x Bélgica",
+     "odd": 2.45
+    },
+    {
+     "h": "07:02",
+     "jogo": "Alemanha x Ucrânia",
+     "odd": 2.2
+    },
+    {
+     "h": "07:05",
+     "jogo": "Portugal x Eslovênia",
+     "odd": 2.6
+    }
+   ],
+   "gatilho": "odd 2.2",
+   "alvo": {
+    "h": "06:59",
+    "jogo": "Albânia x Bélgica",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1785304428261
+   },
+   "iniciadoEm": 1785304428261
+  },
   "cooldown": {
    "copa": 1785304189762,
    "premier": 1785277668066,
@@ -810,10 +839,10 @@
    "2026-07-29": 3.7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Inglaterra",
-   "n": 9,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.2",
+   "n": 14,
+   "start": 3
   },
   "_obs": {}
  },
