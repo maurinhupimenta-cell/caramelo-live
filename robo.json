@@ -792,13 +792,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -35.9,
-  "ciclos": 650,
-  "greens": 434,
+  "saldo": -35.1,
+  "ciclos": 651,
+  "greens": 435,
   "redsCiclo": 68,
   "aborts": 0,
   "descartes": 148,
   "historico": [
+   {
+    "quando": "2026-07-29T02:38:41.468Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "premier · Islington x Newcastle @1.9 (tiro 2) · gatilho: time Islington"
+   },
    {
     "quando": "2026-07-29T02:28:20.863Z",
     "resultado": "GREEN",
@@ -1462,51 +1468,14 @@
   ],
   "consumidas": {
    "super": 1785291028460,
-   "copa": 1785292100759
+   "copa": 1785292100759,
+   "premier": 1785292721362
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "03:33",
-     "jogo": "Palace x Everton",
-     "odd": 1.87
-    },
-    {
-     "h": "03:36",
-     "jogo": "Islington x Newcastle",
-     "odd": 1.9
-    },
-    {
-     "h": "03:39",
-     "jogo": "Liverpool x Burnley",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "time Islington",
-   "alvo": {
-    "h": "03:36",
-    "jogo": "Islington x Newcastle",
-    "odd": 1.9,
-    "unidades": 2,
-    "desde": 1785292541459
-   },
-   "iniciadoEm": 1785292202365,
-   "tiros": [
-    {
-     "h": "03:33",
-     "jogo": "Palace x Everton",
-     "odd": 1.87,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785273830564,
    "super": 1785291028460,
-   "premier": 1785280734959,
+   "premier": 1785292721362,
    "copa": 1785292100759
   },
   "dias": {
@@ -1522,7 +1491,7 @@
    "2026-07-25": 10.5,
    "2026-07-26": 14.3,
    "2026-07-27": 6,
-   "2026-07-28": -14.3
+   "2026-07-28": -13.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
