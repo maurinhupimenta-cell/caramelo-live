@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -95.8,
-  "ciclos": 629,
-  "greens": 387,
+  "saldo": -93.4,
+  "ciclos": 630,
+  "greens": 388,
   "redsCiclo": 101,
   "aborts": 0,
   "descartes": 141,
   "historico": [
+   {
+    "quando": "2026-07-29T21:18:33.896Z",
+    "resultado": "GREEN",
+    "unidades": 2.4,
+    "detalhe": "euro · República Tcheca x Hungria @2.7 (tiro 2) · gatilho: odd 2.7"
+   },
    {
     "quando": "2026-07-29T20:41:42.795Z",
     "resultado": "GREEN",
@@ -972,51 +978,14 @@
   ],
   "consumidas": {
    "super": 1785356876194,
-   "premier": 1785357702600
+   "premier": 1785357702600,
+   "euro": 1785359913698
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "22:11",
-     "jogo": "Bélgica x Polônia",
-     "odd": 2.35
-    },
-    {
-     "h": "22:14",
-     "jogo": "República Tcheca x Hungria",
-     "odd": 2.7
-    },
-    {
-     "h": "22:17",
-     "jogo": "Países Baixos x Itália",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "odd 2.7",
-   "alvo": {
-    "h": "22:14",
-    "jogo": "República Tcheca x Hungria",
-    "odd": 2.7,
-    "unidades": 2,
-    "desde": 1785359626701
-   },
-   "iniciadoEm": 1785358952492,
-   "tiros": [
-    {
-     "h": "22:11",
-     "jogo": "Bélgica x Polônia",
-     "odd": 2.35,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785327347966,
    "premier": 1785357702600,
-   "euro": 1785352553602,
+   "euro": 1785359913698,
    "super": 1785356876194
   },
   "dias": {
@@ -1034,7 +1003,7 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 19.6
+   "2026-07-29": 22
   },
   "_gatilhoAtual": {
    "tipo": "odd",
