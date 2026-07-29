@@ -978,13 +978,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -52.3,
-  "ciclos": 679,
+  "saldo": -59.3,
+  "ciclos": 680,
   "greens": 453,
-  "redsCiclo": 73,
+  "redsCiclo": 74,
   "aborts": 0,
   "descartes": 153,
   "historico": [
+   {
+    "quando": "2026-07-29T15:34:55.493Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: coluna :29"
+   },
    {
     "quando": "2026-07-29T12:19:45.962Z",
     "resultado": "GREEN",
@@ -1820,54 +1826,42 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "euro": 1785339295204
+  },
   "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "16:26",
-     "jogo": "França x Escócia",
+     "h": "16:37",
+     "jogo": "Buenos Aires x Medellin",
+     "odd": 1.98
+    },
+    {
+     "h": "16:40",
+     "jogo": "Santiago x Itaquera",
      "odd": 1.9
     },
     {
-     "h": "16:29",
-     "jogo": "Bélgica x Eslovênia",
-     "odd": 2.15
-    },
-    {
-     "h": "16:32",
-     "jogo": "Hungria x Escócia",
-     "odd": 2
+     "h": "16:43",
+     "jogo": "Sao Paulo x Porto Alegre",
+     "odd": 2.07
     }
    ],
-   "gatilho": "coluna :29",
+   "gatilho": "time Medellin",
    "alvo": {
-    "h": "16:32",
-    "jogo": "Hungria x Escócia",
-    "odd": 2,
-    "unidades": 4,
-    "desde": 1785339115698
+    "h": "16:37",
+    "jogo": "Buenos Aires x Medellin",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785339297297
    },
-   "iniciadoEm": 1785338255791,
-   "tiros": [
-    {
-     "h": "16:26",
-     "jogo": "França x Escócia",
-     "odd": 1.9,
-     "unidades": 1
-    },
-    {
-     "h": "16:29",
-     "jogo": "Bélgica x Eslovênia",
-     "odd": 2.15,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1785339297297
   },
   "cooldown": {
-   "euro": 1785325665663,
+   "euro": 1785339295204,
    "super": 1785325065969,
    "premier": 1785300650858,
    "copa": 1785327585768
@@ -1886,7 +1880,7 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": -10.2
+   "2026-07-29": -17.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
