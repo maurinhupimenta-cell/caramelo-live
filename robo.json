@@ -943,7 +943,45 @@
   "consumidas": {
    "super": 1785351587099
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "20:02",
+     "jogo": "Espanha x Ucrânia",
+     "odd": 2.15
+    },
+    {
+     "h": "20:05",
+     "jogo": "Polônia x Turquia",
+     "odd": 2.7
+    },
+    {
+     "h": "20:08",
+     "jogo": "Albânia x República Tcheca",
+     "odd": 3
+    }
+   ],
+   "gatilho": "odd 2.7",
+   "alvo": {
+    "h": "20:05",
+    "jogo": "Polônia x Turquia",
+    "odd": 2.7,
+    "unidades": 2,
+    "desde": 1785351890196
+   },
+   "iniciadoEm": 1785351589393,
+   "tiros": [
+    {
+     "h": "20:02",
+     "jogo": "Espanha x Ucrânia",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1785327347966,
    "premier": 1785347678695,
@@ -971,18 +1009,24 @@
    "tipo": "odd",
    "chave": "2.7",
    "n": 11,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -63.3,
-  "ciclos": 687,
-  "greens": 456,
+  "saldo": -62.4,
+  "ciclos": 688,
+  "greens": 457,
   "redsCiclo": 75,
   "aborts": 0,
   "descartes": 156,
   "historico": [
+   {
+    "quando": "2026-07-29T18:59:47.592Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Buenos Aires x La Boca @1.93 (tiro 1) · gatilho: coluna :58"
+   },
    {
     "quando": "2026-07-29T18:29:48.495Z",
     "resultado": "RED_CICLO",
@@ -1867,42 +1911,13 @@
    }
   ],
   "consumidas": {
-   "euro": 1785349788391
+   "euro": 1785349788391,
+   "super": 1785351587396
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "19:55",
-     "jogo": "Buenos Aires x La Boca",
-     "odd": 1.93
-    },
-    {
-     "h": "19:58",
-     "jogo": "Bogota x Santos",
-     "odd": 2.2
-    },
-    {
-     "h": "20:01",
-     "jogo": "Asuncion x Medellin",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "coluna :58",
-   "alvo": {
-    "h": "19:55",
-    "jogo": "Buenos Aires x La Boca",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1785351288598
-   },
-   "iniciadoEm": 1785351288598
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785349788391,
-   "super": 1785347680490,
+   "super": 1785351587396,
    "premier": 1785300650858,
    "copa": 1785327585768
   },
@@ -1920,7 +1935,7 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": -21.2
+   "2026-07-29": -20.3
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
