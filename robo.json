@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -98.6,
-  "ciclos": 627,
-  "greens": 385,
+  "saldo": -97,
+  "ciclos": 628,
+  "greens": 386,
   "redsCiclo": 101,
   "aborts": 0,
   "descartes": 141,
   "historico": [
+   {
+    "quando": "2026-07-29T20:27:56.491Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "super · Bogota x Santiago @2.3 (tiro 2) · gatilho: seq RRRR"
+   },
    {
     "quando": "2026-07-29T19:22:04.994Z",
     "resultado": "GREEN",
@@ -958,51 +964,15 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "21:22",
-     "jogo": "Porto Alegre x Itaquera",
-     "odd": 2.62
-    },
-    {
-     "h": "21:25",
-     "jogo": "Bogota x Santiago",
-     "odd": 2.3
-    },
-    {
-     "h": "21:28",
-     "jogo": "Santos x Buenos Aires",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "seq RRRR",
-   "alvo": {
-    "h": "21:25",
-    "jogo": "Bogota x Santiago",
-    "odd": 2.3,
-    "unidades": 2,
-    "desde": 1785356790590
-   },
-   "iniciadoEm": 1785356343995,
-   "tiros": [
-    {
-     "h": "21:22",
-     "jogo": "Porto Alegre x Itaquera",
-     "odd": 2.62,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "super": 1785356876194
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785327347966,
    "premier": 1785352924799,
    "euro": 1785352553602,
-   "super": 1785351587099
+   "super": 1785356876194
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -1019,7 +989,7 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 16.8
+   "2026-07-29": 18.4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
