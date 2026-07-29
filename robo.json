@@ -2026,11 +2026,40 @@
    }
   ],
   "consumidas": {
-   "super": 1785360751602,
    "euro": 1785361476993,
    "copa": 1785363704496
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:34",
+     "jogo": "Buenos Aires x Itaquera",
+     "odd": 1.9
+    },
+    {
+     "h": "23:37",
+     "jogo": "Montevideo x Agua Branca",
+     "odd": 1.85
+    },
+    {
+     "h": "23:40",
+     "jogo": "Rio de Janeiro x Belo Horizonte",
+     "odd": 1.85
+    }
+   ],
+   "gatilho": "odd 1.85",
+   "alvo": {
+    "h": "23:34",
+    "jogo": "Buenos Aires x Itaquera",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1785364352292
+   },
+   "iniciadoEm": 1785364352292
+  },
   "cooldown": {
    "euro": 1785361476993,
    "super": 1785360751602,
@@ -2054,9 +2083,9 @@
    "2026-07-29": -14.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Equador",
-   "n": 15,
+   "tipo": "odd",
+   "chave": "1.85",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
