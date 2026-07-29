@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -106.6,
-  "ciclos": 606,
-  "greens": 372,
+  "saldo": -103.8,
+  "ciclos": 607,
+  "greens": 373,
   "redsCiclo": 98,
   "aborts": 0,
   "descartes": 136,
   "historico": [
+   {
+    "quando": "2026-07-29T09:54:45.159Z",
+    "resultado": "GREEN",
+    "unidades": 2.8,
+    "detalhe": "copa · França x África do Sul @2.45 (tiro 3) · gatilho: coluna :49"
+   },
    {
     "quando": "2026-07-29T09:37:48.357Z",
     "resultado": "GREEN",
@@ -833,55 +839,42 @@
    }
   ],
   "consumidas": {
-   "euro": 1785317868169
+   "euro": 1785317868169,
+   "copa": 1785318884965
   },
   "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "10:46",
-     "jogo": "Suécia x Austrália",
-     "odd": 2.5
-    },
-    {
-     "h": "10:49",
-     "jogo": "Costa do Marfim x Colômbia",
+     "h": "10:55",
+     "jogo": "Sao Paulo x Quito",
      "odd": 2.15
     },
     {
-     "h": "10:52",
-     "jogo": "França x África do Sul",
+     "h": "10:58",
+     "jogo": "Lima x Porto Alegre",
      "odd": 2.45
-    }
-   ],
-   "gatilho": "coluna :49",
-   "alvo": {
-    "h": "10:52",
-    "jogo": "França x África do Sul",
-    "odd": 2.45,
-    "unidades": 4,
-    "desde": 1785318768762
-   },
-   "iniciadoEm": 1785317870263,
-   "tiros": [
-    {
-     "h": "10:46",
-     "jogo": "Suécia x Austrália",
-     "odd": 2.5,
-     "unidades": 1
     },
     {
-     "h": "10:49",
-     "jogo": "Costa do Marfim x Colômbia",
-     "odd": 2.15,
-     "unidades": 2
+     "h": "11:01",
+     "jogo": "Penarol x Medellin",
+     "odd": 2.55
     }
-   ]
+   ],
+   "gatilho": "odd 2.45",
+   "alvo": {
+    "h": "10:55",
+    "jogo": "Sao Paulo x Quito",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785318887171
+   },
+   "iniciadoEm": 1785318887171
   },
   "cooldown": {
-   "copa": 1785313725559,
+   "copa": 1785318884965,
    "premier": 1785277668066,
    "euro": 1785317868169,
    "super": 1785314445062
@@ -901,7 +894,7 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 8.8
+   "2026-07-29": 11.6
   },
   "_gatilhoAtual": {
    "tipo": "odd",
@@ -1773,7 +1766,7 @@
    "tipo": "odd",
    "chave": "1.93",
    "n": 12,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
