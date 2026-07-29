@@ -862,8 +862,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "12:21",
@@ -883,11 +883,11 @@
    ],
    "gatilho": "coluna :24",
    "alvo": {
-    "h": "12:24",
-    "jogo": "Watford x Newcastle",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1785324227971
+    "h": "12:27",
+    "jogo": "Southampton x Leicester",
+    "odd": 2.4,
+    "unidades": 4,
+    "desde": 1785324402468
    },
    "iniciadoEm": 1785323682264,
    "tiros": [
@@ -896,6 +896,12 @@
      "jogo": "Southampton x Norwich",
      "odd": 2.3,
      "unidades": 1
+    },
+    {
+     "h": "12:24",
+     "jogo": "Watford x Newcastle",
+     "odd": 2.1,
+     "unidades": 2
     }
    ]
   },
@@ -923,9 +929,9 @@
    "2026-07-29": 16.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.4",
-   "n": 15,
+   "tipo": "coluna",
+   "chave": ":33",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
