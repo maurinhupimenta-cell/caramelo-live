@@ -187,13 +187,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -118.9,
-  "ciclos": 591,
-  "greens": 360,
+  "saldo": -117.1,
+  "ciclos": 592,
+  "greens": 361,
   "redsCiclo": 97,
   "aborts": 0,
   "descartes": 134,
   "historico": [
+   {
+    "quando": "2026-07-29T04:24:40.462Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "super · Quito x Medellin @2.4 (tiro 2) · gatilho: time Medellin"
+   },
    {
     "quando": "2026-07-29T03:50:09.863Z",
     "resultado": "GREEN",
@@ -731,52 +737,15 @@
   ],
   "consumidas": {
    "copa": 1785296049363,
-   "euro": 1785297009666
+   "euro": 1785297009666,
+   "super": 1785299080360
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "05:19",
-     "jogo": "Agua Branca x La Boca",
-     "odd": 2.3
-    },
-    {
-     "h": "05:22",
-     "jogo": "Quito x Medellin",
-     "odd": 2.4
-    },
-    {
-     "h": "05:25",
-     "jogo": "Porto Alegre x Buenos Aires",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "time Medellin",
-   "alvo": {
-    "h": "05:22",
-    "jogo": "Quito x Medellin",
-    "odd": 2.4,
-    "unidades": 2,
-    "desde": 1785298940161
-   },
-   "iniciadoEm": 1785298600268,
-   "tiros": [
-    {
-     "h": "05:19",
-     "jogo": "Agua Branca x La Boca",
-     "odd": 2.3,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785296049363,
    "premier": 1785277668066,
    "euro": 1785297009666,
-   "super": 1785294991658
+   "super": 1785299080360
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -793,24 +762,30 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": -3.5
+   "2026-07-29": -1.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.4",
-   "n": 12,
-   "start": 1
+   "tipo": "time",
+   "chave": "Medellin",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -41,
-  "ciclos": 654,
-  "greens": 436,
+  "saldo": -39.9,
+  "ciclos": 655,
+  "greens": 437,
   "redsCiclo": 69,
   "aborts": 0,
   "descartes": 149,
   "historico": [
+   {
+    "quando": "2026-07-29T04:24:40.664Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Quito x Medellin @2.05 (tiro 2) · gatilho: time Agua Branca"
+   },
    {
     "quando": "2026-07-29T04:20:01.161Z",
     "resultado": "GREEN_OBS",
@@ -1496,49 +1471,13 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "05:19",
-     "jogo": "Agua Branca x La Boca",
-     "odd": 1.98
-    },
-    {
-     "h": "05:22",
-     "jogo": "Quito x Medellin",
-     "odd": 2.05
-    },
-    {
-     "h": "05:25",
-     "jogo": "Porto Alegre x Buenos Aires",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "time Agua Branca",
-   "alvo": {
-    "h": "05:22",
-    "jogo": "Quito x Medellin",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1785298940359
-   },
-   "iniciadoEm": 1785298600463,
-   "tiros": [
-    {
-     "h": "05:19",
-     "jogo": "Agua Branca x La Boca",
-     "odd": 1.98,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "super": 1785299080559
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785293811162,
-   "super": 1785294991766,
+   "super": 1785299080559,
    "premier": 1785292721362,
    "copa": 1785292100759
   },
@@ -1556,12 +1495,12 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": 1.1
+   "2026-07-29": 2.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Alemanha",
-   "n": 9,
+   "chave": "Medellin",
+   "n": 8,
    "start": 3
   },
   "_obs": {}
