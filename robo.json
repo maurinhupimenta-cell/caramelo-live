@@ -1506,7 +1506,37 @@
    "euro": 1785300067668,
    "premier": 1785300650858
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:01",
+     "jogo": "Senegal x Tunísia",
+     "odd": 2.3
+    },
+    {
+     "h": "06:04",
+     "jogo": "Colômbia x Panamá",
+     "odd": 2.05
+    },
+    {
+     "h": "06:07",
+     "jogo": "África do Sul x Noruega",
+     "odd": 2
+    }
+   ],
+   "gatilho": "odd 2.05",
+   "alvo": {
+    "h": "06:01",
+    "jogo": "Senegal x Tunísia",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1785301000368
+   },
+   "iniciadoEm": 1785301000368
+  },
   "cooldown": {
    "euro": 1785300067668,
    "super": 1785299080559,
@@ -1530,10 +1560,10 @@
    "2026-07-29": -3.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Argélia",
-   "n": 8,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.05",
+   "n": 18,
+   "start": 2
   },
   "_obs": {}
  }
