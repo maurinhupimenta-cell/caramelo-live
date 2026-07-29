@@ -1000,13 +1000,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -60.3,
-  "ciclos": 693,
-  "greens": 459,
+  "saldo": -59.6,
+  "ciclos": 694,
+  "greens": 460,
   "redsCiclo": 75,
   "aborts": 0,
   "descartes": 159,
   "historico": [
+   {
+    "quando": "2026-07-29T20:29:04.790Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "euro · Ucrânia x Espanha @1.87 (tiro 2) · gatilho: seq GGRRG"
+   },
    {
     "quando": "2026-07-29T20:21:05.696Z",
     "resultado": "GREEN_OBS",
@@ -1928,49 +1934,12 @@
   ],
   "consumidas": {
    "copa": 1785354994399,
-   "super": 1785355604091
+   "super": 1785355604091,
+   "euro": 1785356944597
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "21:23",
-     "jogo": "Albânia x Alemanha",
-     "odd": 2.1
-    },
-    {
-     "h": "21:26",
-     "jogo": "Ucrânia x Espanha",
-     "odd": 1.87
-    },
-    {
-     "h": "21:29",
-     "jogo": "Albânia x Geórgia",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "seq GGRRG",
-   "alvo": {
-    "h": "21:26",
-    "jogo": "Ucrânia x Espanha",
-    "odd": 1.87,
-    "unidades": 2,
-    "desde": 1785356855597
-   },
-   "iniciadoEm": 1785356467697,
-   "tiros": [
-    {
-     "h": "21:23",
-     "jogo": "Albânia x Alemanha",
-     "odd": 2.1,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785349788391,
+   "euro": 1785356944597,
    "super": 1785355604091,
    "premier": 1785300650858,
    "copa": 1785354994399
@@ -1989,7 +1958,7 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": -18.2
+   "2026-07-29": -17.5
   },
   "_gatilhoAtual": {
    "tipo": "seq",
