@@ -930,13 +930,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -53.9,
-  "ciclos": 677,
-  "greens": 451,
+  "saldo": -53.2,
+  "ciclos": 678,
+  "greens": 452,
   "redsCiclo": 73,
   "aborts": 0,
   "descartes": 153,
   "historico": [
+   {
+    "quando": "2026-07-29T11:47:45.767Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "euro · França x Bélgica @1.83 (tiro 2) · gatilho: odd 1.83"
+   },
    {
     "quando": "2026-07-29T11:37:46.159Z",
     "resultado": "GREEN",
@@ -1762,49 +1768,12 @@
   ],
   "consumidas": {
    "copa": 1785323387361,
-   "super": 1785325065969
+   "super": 1785325065969,
+   "euro": 1785325665663
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "12:41",
-     "jogo": "Geórgia x Países Baixos",
-     "odd": 1.93
-    },
-    {
-     "h": "12:44",
-     "jogo": "França x Bélgica",
-     "odd": 1.83
-    },
-    {
-     "h": "12:47",
-     "jogo": "Ucrânia x Eslovênia",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "odd 1.83",
-   "alvo": {
-    "h": "12:44",
-    "jogo": "França x Bélgica",
-    "odd": 1.83,
-    "unidades": 2,
-    "desde": 1785325607166
-   },
-   "iniciadoEm": 1785325068264,
-   "tiros": [
-    {
-     "h": "12:41",
-     "jogo": "Geórgia x Países Baixos",
-     "odd": 1.93,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785321291761,
+   "euro": 1785325665663,
    "super": 1785325065969,
    "premier": 1785300650858,
    "copa": 1785323387361
@@ -1823,7 +1792,7 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": -11.8
+   "2026-07-29": -11.1
   },
   "_gatilhoAtual": {
    "tipo": "odd",
