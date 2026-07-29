@@ -170,9 +170,7 @@
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {
-   "premier": 1785303702158
-  },
+  "consumidas": {},
   "ciclo": null,
   "cooldown": {
    "copa": 1785038273206,
@@ -202,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -110.3,
-  "ciclos": 598,
-  "greens": 366,
+  "saldo": -109.1,
+  "ciclos": 599,
+  "greens": 367,
   "redsCiclo": 97,
   "aborts": 0,
   "descartes": 135,
   "historico": [
+   {
+    "quando": "2026-07-29T06:41:48.864Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Itaquera x Montevideo @2.2 (tiro 1) · gatilho: odd 2.4"
+   },
    {
     "quando": "2026-07-29T06:05:31.268Z",
     "resultado": "GREEN",
@@ -788,44 +792,15 @@
   ],
   "consumidas": {
    "copa": 1785304189762,
-   "euro": 1785305131166
+   "euro": 1785305131166,
+   "super": 1785307308668
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "07:37",
-     "jogo": "Itaquera x Montevideo",
-     "odd": 2.2
-    },
-    {
-     "h": "07:40",
-     "jogo": "Avellaneda x Medellin",
-     "odd": 2.4
-    },
-    {
-     "h": "07:43",
-     "jogo": "Agua Branca x Lima",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "odd 2.4",
-   "alvo": {
-    "h": "07:37",
-    "jogo": "Itaquera x Montevideo",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785306706464
-   },
-   "iniciadoEm": 1785306706464
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785304189762,
    "premier": 1785277668066,
    "euro": 1785305131166,
-   "super": 1785303105959
+   "super": 1785307308668
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -842,24 +817,30 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 5.1
+   "2026-07-29": 6.3
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.4",
-   "n": 16,
+   "tipo": "seq",
+   "chave": "RRRG",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -49.8,
-  "ciclos": 663,
-  "greens": 441,
+  "saldo": -48.9,
+  "ciclos": 664,
+  "greens": 442,
   "redsCiclo": 71,
   "aborts": 0,
   "descartes": 151,
   "historico": [
+   {
+    "quando": "2026-07-29T06:41:49.067Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Itaquera x Montevideo @1.98 (tiro 3) · gatilho: time Agua Branca"
+   },
    {
     "quando": "2026-07-29T06:16:45.561Z",
     "resultado": "GREEN",
@@ -1601,56 +1582,13 @@
   ],
   "consumidas": {
    "euro": 1785304547967,
-   "copa": 1785305805366
+   "copa": 1785305805366,
+   "super": 1785307308958
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "07:31",
-     "jogo": "Rio de Janeiro x Santiago",
-     "odd": 1.95
-    },
-    {
-     "h": "07:34",
-     "jogo": "Avellaneda x Agua Branca",
-     "odd": 1.93
-    },
-    {
-     "h": "07:37",
-     "jogo": "Itaquera x Montevideo",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "time Agua Branca",
-   "alvo": {
-    "h": "07:37",
-    "jogo": "Itaquera x Montevideo",
-    "odd": 1.98,
-    "unidades": 4,
-    "desde": 1785307025169
-   },
-   "iniciadoEm": 1785306346862,
-   "tiros": [
-    {
-     "h": "07:31",
-     "jogo": "Rio de Janeiro x Santiago",
-     "odd": 1.95,
-     "unidades": 1
-    },
-    {
-     "h": "07:34",
-     "jogo": "Avellaneda x Agua Branca",
-     "odd": 1.93,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785304547967,
-   "super": 1785302689758,
+   "super": 1785307308958,
    "premier": 1785300650858,
    "copa": 1785305805366
   },
@@ -1668,7 +1606,7 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": -7.7
+   "2026-07-29": -6.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
