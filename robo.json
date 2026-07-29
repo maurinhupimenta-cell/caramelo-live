@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -90.1,
-  "ciclos": 633,
-  "greens": 391,
+  "saldo": -88.9,
+  "ciclos": 634,
+  "greens": 392,
   "redsCiclo": 101,
   "aborts": 0,
   "descartes": 141,
   "historico": [
+   {
+    "quando": "2026-07-29T22:18:40.501Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Bélgica x Eslováquia @2.2 (tiro 1) · gatilho: seq RRGRG"
+   },
    {
     "quando": "2026-07-29T21:56:43.098Z",
     "resultado": "GREEN",
@@ -997,43 +1003,14 @@
   "consumidas": {
    "copa": 1785361238498,
    "super": 1785361904094,
-   "premier": 1785362202904
+   "premier": 1785362202904,
+   "euro": 1785363520397
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:11",
-     "jogo": "Bélgica x Eslováquia",
-     "odd": 2.2
-    },
-    {
-     "h": "23:14",
-     "jogo": "Eslovênia x Escócia",
-     "odd": 2.55
-    },
-    {
-     "h": "23:17",
-     "jogo": "Polônia x Romênia",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "seq RRGRG",
-   "alvo": {
-    "h": "23:11",
-    "jogo": "Bélgica x Eslováquia",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785363515400
-   },
-   "iniciadoEm": 1785363515400
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785361238498,
    "premier": 1785362202904,
-   "euro": 1785359913698,
+   "euro": 1785363520397,
    "super": 1785361904094
   },
   "dias": {
@@ -1051,7 +1028,7 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 25.3
+   "2026-07-29": 26.5
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -1062,13 +1039,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -57.6,
-  "ciclos": 702,
-  "greens": 462,
+  "saldo": -56.4,
+  "ciclos": 703,
+  "greens": 463,
   "redsCiclo": 75,
   "aborts": 0,
   "descartes": 165,
   "historico": [
+   {
+    "quando": "2026-07-29T22:21:44.695Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Suécia x Espanha @2.05 (tiro 3) · gatilho: time Equador"
+   },
    {
     "quando": "2026-07-29T22:08:37.101Z",
     "resultado": "GREEN_OBS",
@@ -2044,58 +2027,15 @@
   ],
   "consumidas": {
    "super": 1785360751602,
-   "euro": 1785361476993
+   "euro": 1785361476993,
+   "copa": 1785363704496
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "23:07",
-     "jogo": "Equador x Bélgica",
-     "odd": 1.93
-    },
-    {
-     "h": "23:10",
-     "jogo": "Japão x Tunísia",
-     "odd": 2.25
-    },
-    {
-     "h": "23:13",
-     "jogo": "Suécia x Espanha",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "time Equador",
-   "alvo": {
-    "h": "23:13",
-    "jogo": "Suécia x Espanha",
-    "odd": 2.05,
-    "unidades": 4,
-    "desde": 1785363277793
-   },
-   "iniciadoEm": 1785362919500,
-   "tiros": [
-    {
-     "h": "23:07",
-     "jogo": "Equador x Bélgica",
-     "odd": 1.93,
-     "unidades": 1
-    },
-    {
-     "h": "23:10",
-     "jogo": "Japão x Tunísia",
-     "odd": 2.25,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785361476993,
    "super": 1785360751602,
    "premier": 1785300650858,
-   "copa": 1785354994399
+   "copa": 1785363704496
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -2111,7 +2051,7 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": -15.5
+   "2026-07-29": -14.3
   },
   "_gatilhoAtual": {
    "tipo": "time",
