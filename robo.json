@@ -837,8 +837,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "10:46",
@@ -858,11 +858,11 @@
    ],
    "gatilho": "coluna :49",
    "alvo": {
-    "h": "10:49",
-    "jogo": "Costa do Marfim x Colômbia",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1785318589862
+    "h": "10:52",
+    "jogo": "França x África do Sul",
+    "odd": 2.45,
+    "unidades": 4,
+    "desde": 1785318768762
    },
    "iniciadoEm": 1785317870263,
    "tiros": [
@@ -871,6 +871,12 @@
      "jogo": "Suécia x Austrália",
      "odd": 2.5,
      "unidades": 1
+    },
+    {
+     "h": "10:49",
+     "jogo": "Costa do Marfim x Colômbia",
+     "odd": 2.15,
+     "unidades": 2
     }
    ]
   },
@@ -901,7 +907,7 @@
    "tipo": "odd",
    "chave": "2.45",
    "n": 10,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
@@ -1710,7 +1716,37 @@
    "super": 1785315884566,
    "euro": 1785317445759
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:58",
+     "jogo": "Irã x Bósnia e Herzegovina",
+     "odd": 2.07
+    },
+    {
+     "h": "11:01",
+     "jogo": "Austrália x Haiti",
+     "odd": 1.93
+    },
+    {
+     "h": "11:04",
+     "jogo": "México x Uruguai",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "odd 1.93",
+   "alvo": {
+    "h": "10:58",
+    "jogo": "Irã x Bósnia e Herzegovina",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1785318591765
+   },
+   "iniciadoEm": 1785318591765
+  },
   "cooldown": {
    "euro": 1785317445759,
    "super": 1785315884566,
@@ -1735,15 +1771,10 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2",
-   "n": 10,
-   "start": 1
+   "chave": "1.93",
+   "n": 12,
+   "start": 3
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785318589972,
-    "gatilho": "odd 1.93"
-   }
-  }
+  "_obs": {}
  }
 }
