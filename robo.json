@@ -1730,8 +1730,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "12:31",
@@ -1751,13 +1751,21 @@
    ],
    "gatilho": "odd 2.07",
    "alvo": {
-    "h": "12:31",
-    "jogo": "Penarol x Santos",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785324344259
+    "h": "12:34",
+    "jogo": "Belo Horizonte x La Plata",
+    "odd": 2.07,
+    "unidades": 2,
+    "desde": 1785324824364
    },
-   "iniciadoEm": 1785324344259
+   "iniciadoEm": 1785324344259,
+   "tiros": [
+    {
+     "h": "12:31",
+     "jogo": "Penarol x Santos",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785321291761,
@@ -1785,7 +1793,7 @@
    "tipo": "odd",
    "chave": "2.07",
    "n": 9,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  }
