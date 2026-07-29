@@ -876,7 +876,7 @@
    "tipo": "coluna",
    "chave": ":37",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -1661,7 +1661,37 @@
    "super": 1785311386559,
    "euro": 1785312767367
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:37",
+     "jogo": "Jordânia x África do Sul",
+     "odd": 2.05
+    },
+    {
+     "h": "09:40",
+     "jogo": "Portugal x Escócia",
+     "odd": 2.1
+    },
+    {
+     "h": "09:43",
+     "jogo": "Haiti x Colômbia",
+     "odd": 1.87
+    }
+   ],
+   "gatilho": "time Jordânia",
+   "alvo": {
+    "h": "09:37",
+    "jogo": "Jordânia x África do Sul",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785314025565
+   },
+   "iniciadoEm": 1785314025565
+  },
   "cooldown": {
    "euro": 1785312767367,
    "super": 1785311386559,
@@ -1685,8 +1715,8 @@
    "2026-07-29": -2.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2",
+   "tipo": "time",
+   "chave": "Jordânia",
    "n": 8,
    "start": 1
   },
