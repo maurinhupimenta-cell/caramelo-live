@@ -153,7 +153,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:38",
+     "jogo": "Bélgica x Países Baixos",
+     "odd": 3.75
+    },
+    {
+     "h": "03:41",
+     "jogo": "Sérvia x Ucrânia",
+     "odd": 5.25
+    },
+    {
+     "h": "03:44",
+     "jogo": "República Tcheca x Portugal",
+     "odd": 5.25
+    }
+   ],
+   "gatilho": "placar 1-0 / 0-1",
+   "alvo": {
+    "h": "03:38",
+    "jogo": "Bélgica x Países Baixos",
+    "odd": 3.75,
+    "unidades": 1,
+    "desde": 1785292512558
+   },
+   "iniciadoEm": 1785292512558
+  },
   "cooldown": {
    "copa": 1785038273206,
    "premier": 1785243768225,
@@ -173,8 +203,8 @@
    "2026-07-28": -4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "3.6",
+   "tipo": "placar",
+   "chave": "1-0 / 0-1",
    "n": 9,
    "start": 1
   },
@@ -1436,8 +1466,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "03:33",
@@ -1457,13 +1487,21 @@
    ],
    "gatilho": "time Islington",
    "alvo": {
-    "h": "03:33",
-    "jogo": "Palace x Everton",
-    "odd": 1.87,
-    "unidades": 1,
-    "desde": 1785292202365
+    "h": "03:36",
+    "jogo": "Islington x Newcastle",
+    "odd": 1.9,
+    "unidades": 2,
+    "desde": 1785292541459
    },
-   "iniciadoEm": 1785292202365
+   "iniciadoEm": 1785292202365,
+   "tiros": [
+    {
+     "h": "03:33",
+     "jogo": "Palace x Everton",
+     "odd": 1.87,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785273830564,
