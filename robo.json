@@ -1038,18 +1038,24 @@
    "tipo": "time",
    "chave": "África do Sul",
    "n": 14,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -59.6,
-  "ciclos": 698,
-  "greens": 460,
+  "saldo": -58.6,
+  "ciclos": 699,
+  "greens": 461,
   "redsCiclo": 75,
   "aborts": 0,
   "descartes": 163,
   "historico": [
+   {
+    "quando": "2026-07-29T21:32:31.794Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Guayaquil x Santos @1.95 (tiro 1) · gatilho: odd 1.95"
+   },
    {
     "quando": "2026-07-29T21:26:54.492Z",
     "resultado": "GREEN_OBS",
@@ -1999,41 +2005,13 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:28",
-     "jogo": "Guayaquil x Santos",
-     "odd": 1.95
-    },
-    {
-     "h": "22:31",
-     "jogo": "Penarol x Medellin",
-     "odd": 2.15
-    },
-    {
-     "h": "22:34",
-     "jogo": "Montevideo x Porto Alegre",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "odd 1.95",
-   "alvo": {
-    "h": "22:28",
-    "jogo": "Guayaquil x Santos",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1785360414493
-   },
-   "iniciadoEm": 1785360414493
+  "consumidas": {
+   "super": 1785360751602
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785356944597,
-   "super": 1785355604091,
+   "super": 1785360751602,
    "premier": 1785300650858,
    "copa": 1785354994399
   },
@@ -2051,13 +2029,13 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": -17.5
+   "2026-07-29": -16.5
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "1.95",
    "n": 26,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  }
