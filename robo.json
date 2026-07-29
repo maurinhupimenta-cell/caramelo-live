@@ -900,13 +900,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -55,
-  "ciclos": 676,
-  "greens": 450,
+  "saldo": -53.9,
+  "ciclos": 677,
+  "greens": 451,
   "redsCiclo": 73,
   "aborts": 0,
   "descartes": 153,
   "historico": [
+   {
+    "quando": "2026-07-29T11:37:46.159Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Belo Horizonte x La Plata @2.07 (tiro 2) · gatilho: odd 2.07"
+   },
    {
     "quando": "2026-07-29T11:09:47.464Z",
     "resultado": "GREEN",
@@ -1725,50 +1731,13 @@
    }
   ],
   "consumidas": {
-   "copa": 1785323387361
+   "copa": 1785323387361,
+   "super": 1785325065969
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "12:31",
-     "jogo": "Penarol x Santos",
-     "odd": 2.15
-    },
-    {
-     "h": "12:34",
-     "jogo": "Belo Horizonte x La Plata",
-     "odd": 2.07
-    },
-    {
-     "h": "12:37",
-     "jogo": "Avellaneda x Rio de Janeiro",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "odd 2.07",
-   "alvo": {
-    "h": "12:34",
-    "jogo": "Belo Horizonte x La Plata",
-    "odd": 2.07,
-    "unidades": 2,
-    "desde": 1785324824364
-   },
-   "iniciadoEm": 1785324344259,
-   "tiros": [
-    {
-     "h": "12:31",
-     "jogo": "Penarol x Santos",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785321291761,
-   "super": 1785315884566,
+   "super": 1785325065969,
    "premier": 1785300650858,
    "copa": 1785323387361
   },
@@ -1786,13 +1755,13 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": -12.9
+   "2026-07-29": -11.8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.07",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
