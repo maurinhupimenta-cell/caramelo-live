@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -88.9,
-  "ciclos": 634,
-  "greens": 392,
+  "saldo": -86.9,
+  "ciclos": 635,
+  "greens": 393,
   "redsCiclo": 101,
   "aborts": 0,
   "descartes": 141,
   "historico": [
+   {
+    "quando": "2026-07-29T23:08:30.501Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "super · Itaquera x Penarol @2.5 (tiro 2) · gatilho: seq RRRR"
+   },
    {
     "quando": "2026-07-29T22:18:40.501Z",
     "resultado": "GREEN",
@@ -1001,52 +1007,15 @@
    }
   ],
   "consumidas": {
-   "euro": 1785363520397
+   "euro": 1785363520397,
+   "super": 1785366510301
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "23:55",
-     "jogo": "Medellin x Asuncion",
-     "odd": 2.4
-    },
-    {
-     "h": "00:01",
-     "jogo": "Itaquera x Penarol",
-     "odd": 2.5
-    },
-    {
-     "h": "00:04",
-     "jogo": "Porto Alegre x Guayaquil",
-     "odd": 2.45
-    }
-   ],
-   "gatilho": "seq RRRR",
-   "alvo": {
-    "h": "00:01",
-    "jogo": "Itaquera x Penarol",
-    "odd": 2.5,
-    "unidades": 2,
-    "desde": 1785365914703
-   },
-   "iniciadoEm": 1785365557693,
-   "tiros": [
-    {
-     "h": "23:55",
-     "jogo": "Medellin x Asuncion",
-     "odd": 2.4,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785361238498,
    "premier": 1785362202904,
    "euro": 1785363520397,
-   "super": 1785361904094
+   "super": 1785366510301
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -1063,7 +1032,7 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 26.5
+   "2026-07-29": 28.5
   },
   "_gatilhoAtual": {
    "tipo": "seq",
