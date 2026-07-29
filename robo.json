@@ -1697,7 +1697,45 @@
   "consumidas": {
    "copa": 1785319305762
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "11:29",
+     "jogo": "Eslovênia x Sérvia",
+     "odd": 2.3
+    },
+    {
+     "h": "11:32",
+     "jogo": "Espanha x Croácia",
+     "odd": 1.86
+    },
+    {
+     "h": "11:35",
+     "jogo": "Itália x França",
+     "odd": 1.87
+    }
+   ],
+   "gatilho": "coluna :29",
+   "alvo": {
+    "h": "11:32",
+    "jogo": "Espanha x Croácia",
+    "odd": 1.86,
+    "unidades": 2,
+    "desde": 1785321109462
+   },
+   "iniciadoEm": 1785321104362,
+   "tiros": [
+    {
+     "h": "11:29",
+     "jogo": "Eslovênia x Sérvia",
+     "odd": 2.3,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1785317445759,
    "super": 1785315884566,
@@ -1721,16 +1759,11 @@
    "2026-07-29": -14.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGG",
-   "n": 8,
+   "tipo": "coluna",
+   "chave": ":29",
+   "n": 11,
    "start": 1
   },
-  "_obs": {
-   "euro": {
-    "desde": 1785321046769,
-    "gatilho": "coluna :29"
-   }
-  }
+  "_obs": {}
  }
 }
