@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -151.3,
-  "ciclos": 182,
+  "saldo": -158.3,
+  "ciclos": 183,
   "greens": 62,
-  "redsCiclo": 77,
+  "redsCiclo": 78,
   "aborts": 0,
   "descartes": 43,
   "historico": [
+   {
+    "quando": "2026-07-29T05:41:42.261Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq RRRRG"
+   },
    {
     "quando": "2026-07-29T05:29:51.468Z",
     "resultado": "GREEN_OBS",
@@ -164,55 +170,13 @@
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "06:33",
-     "jogo": "Watford x Chelsea",
-     "odd": 4.33
-    },
-    {
-     "h": "06:36",
-     "jogo": "Islington x West Ham",
-     "odd": 5.25
-    },
-    {
-     "h": "06:39",
-     "jogo": "Everton x Chelsea",
-     "odd": 4
-    }
-   ],
-   "gatilho": "seq RRRRG",
-   "alvo": {
-    "h": "06:39",
-    "jogo": "Everton x Chelsea",
-    "odd": 4,
-    "unidades": 4,
-    "desde": 1785303517370
-   },
-   "iniciadoEm": 1785302995957,
-   "tiros": [
-    {
-     "h": "06:33",
-     "jogo": "Watford x Chelsea",
-     "odd": 4.33,
-     "unidades": 1
-    },
-    {
-     "h": "06:36",
-     "jogo": "Islington x West Ham",
-     "odd": 5.25,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1785303702158
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785038273206,
-   "premier": 1785243768225,
+   "premier": 1785303702158,
    "euro": 1785293310165,
    "super": 1784965764803
   },
@@ -227,7 +191,7 @@
    "2026-07-25": 6.8,
    "2026-07-26": -7,
    "2026-07-28": 10,
-   "2026-07-29": 0
+   "2026-07-29": -7
   },
   "_gatilhoAtual": {
    "tipo": "seq",
