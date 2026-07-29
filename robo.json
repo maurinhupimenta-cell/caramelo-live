@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -110.3,
-  "ciclos": 603,
-  "greens": 370,
+  "saldo": -107.9,
+  "ciclos": 604,
+  "greens": 371,
   "redsCiclo": 98,
   "aborts": 0,
   "descartes": 135,
   "historico": [
+   {
+    "quando": "2026-07-29T08:40:45.165Z",
+    "resultado": "GREEN",
+    "unidades": 2.4,
+    "detalhe": "super · Santos x La Plata @2.7 (tiro 2) · gatilho: coluna :37"
+   },
    {
     "quando": "2026-07-29T08:29:50.866Z",
     "resultado": "GREEN",
@@ -816,52 +822,15 @@
   ],
   "consumidas": {
    "copa": 1785313725559,
-   "euro": 1785313790763
+   "euro": 1785313790763,
+   "super": 1785314445062
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "09:34",
-     "jogo": "Buenos Aires x Asuncion",
-     "odd": 2.15
-    },
-    {
-     "h": "09:37",
-     "jogo": "Santos x La Plata",
-     "odd": 2.7
-    },
-    {
-     "h": "09:40",
-     "jogo": "Medellin x Santiago",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "coluna :37",
-   "alvo": {
-    "h": "09:37",
-    "jogo": "Santos x La Plata",
-    "odd": 2.7,
-    "unidades": 2,
-    "desde": 1785314208159
-   },
-   "iniciadoEm": 1785313847062,
-   "tiros": [
-    {
-     "h": "09:34",
-     "jogo": "Buenos Aires x Asuncion",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785313725559,
    "premier": 1785277668066,
    "euro": 1785313790763,
-   "super": 1785307308668
+   "super": 1785314445062
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -878,13 +847,13 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 5.1
+   "2026-07-29": 7.5
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.45",
    "n": 8,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
