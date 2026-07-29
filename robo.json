@@ -814,13 +814,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -46.9,
-  "ciclos": 656,
-  "greens": 437,
+  "saldo": -46,
+  "ciclos": 657,
+  "greens": 438,
   "redsCiclo": 70,
   "aborts": 0,
   "descartes": 149,
   "historico": [
+   {
+    "quando": "2026-07-29T04:50:50.963Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · City x Everton @1.87 (tiro 1) · gatilho: time Wolverhampton"
+   },
    {
     "quando": "2026-07-29T04:41:07.858Z",
     "resultado": "RED_CICLO",
@@ -1520,43 +1526,14 @@
   ],
   "consumidas": {
    "super": 1785299080559,
-   "euro": 1785300067668
+   "euro": 1785300067668,
+   "premier": 1785300650858
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:48",
-     "jogo": "City x Everton",
-     "odd": 1.87
-    },
-    {
-     "h": "05:51",
-     "jogo": "Norwich x Wolverhampton",
-     "odd": 1.83
-    },
-    {
-     "h": "05:54",
-     "jogo": "West Ham x Tottenham",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "time Wolverhampton",
-   "alvo": {
-    "h": "05:48",
-    "jogo": "City x Everton",
-    "odd": 1.87,
-    "unidades": 1,
-    "desde": 1785300069369
-   },
-   "iniciadoEm": 1785300069369
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785300067668,
    "super": 1785299080559,
-   "premier": 1785292721362,
+   "premier": 1785300650858,
    "copa": 1785292100759
   },
   "dias": {
@@ -1573,7 +1550,7 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": -4.8
+   "2026-07-29": -3.9
   },
   "_gatilhoAtual": {
    "tipo": "time",
