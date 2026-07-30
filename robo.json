@@ -2708,10 +2708,39 @@
    }
   ],
   "consumidas": {
-   "super": 1785443024122,
    "copa": 1785444948126
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:21",
+     "jogo": "Chelsea x Brentford",
+     "odd": 2.05
+    },
+    {
+     "h": "22:24",
+     "jogo": "Tottenham x Burnley",
+     "odd": 2.07
+    },
+    {
+     "h": "22:27",
+     "jogo": "Newcastle x Norwich",
+     "odd": 1.85
+    }
+   ],
+   "gatilho": "odd 2.07",
+   "alvo": {
+    "h": "22:21",
+    "jogo": "Chelsea x Brentford",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785445937924
+   },
+   "iniciadoEm": 1785445937924
+  },
   "cooldown": {
    "euro": 1785439551897,
    "super": 1785443024122,
@@ -2736,9 +2765,9 @@
    "2026-07-30": 18.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Equador",
-   "n": 21,
+   "tipo": "odd",
+   "chave": "2.07",
+   "n": 19,
    "start": 1
   },
   "_obs": {}
