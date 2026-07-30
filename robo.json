@@ -1474,21 +1474,27 @@
    "2026-07-30": -33.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Egito",
+   "tipo": "seq",
+   "chave": "RRRGG",
    "n": 14,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -33.9,
-  "ciclos": 746,
-  "greens": 502,
+  "saldo": -32.9,
+  "ciclos": 747,
+  "greens": 503,
   "redsCiclo": 77,
   "aborts": 0,
   "descartes": 167,
   "historico": [
+   {
+    "quando": "2026-07-30T20:55:48.324Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Jordânia x República Tcheca @2 (tiro 1) · gatilho: time Egito"
+   },
    {
     "quando": "2026-07-30T20:23:44.229Z",
     "resultado": "GREEN",
@@ -2727,44 +2733,15 @@
    }
   ],
   "consumidas": {
-   "super": 1785443024122
+   "super": 1785443024122,
+   "copa": 1785444948126
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:52",
-     "jogo": "Jordânia x República Tcheca",
-     "odd": 2
-    },
-    {
-     "h": "21:55",
-     "jogo": "Cabo Verde x Egito",
-     "odd": 1.87
-    },
-    {
-     "h": "21:58",
-     "jogo": "Equador x Costa do Marfim",
-     "odd": 1.86
-    }
-   ],
-   "gatilho": "time Egito",
-   "alvo": {
-    "h": "21:52",
-    "jogo": "Jordânia x República Tcheca",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1785444231834
-   },
-   "iniciadoEm": 1785444231834
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785439551897,
    "super": 1785443024122,
    "premier": 1785434902603,
-   "copa": 1785440513932
+   "copa": 1785444948126
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -2781,7 +2758,7 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 17.6
+   "2026-07-30": 18.6
   },
   "_gatilhoAtual": {
    "tipo": "time",
