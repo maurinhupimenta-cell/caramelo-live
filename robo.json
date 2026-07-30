@@ -1251,7 +1251,37 @@
    "super": 1785412304892,
    "euro": 1785414908991
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:37",
+     "jogo": "Turquia x Bósnia e Herzegovina",
+     "odd": 2.5
+    },
+    {
+     "h": "13:40",
+     "jogo": "RD Congo x Equador",
+     "odd": 2.5
+    },
+    {
+     "h": "13:43",
+     "jogo": "Escócia x Áustria",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "seq RRGRR",
+   "alvo": {
+    "h": "13:37",
+    "jogo": "Turquia x Bósnia e Herzegovina",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1785414911101
+   },
+   "iniciadoEm": 1785414911101
+  },
   "cooldown": {
    "copa": 1785411243593,
    "premier": 1785411700793,
@@ -1277,9 +1307,9 @@
    "2026-07-30": -7.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGRR",
-   "n": 10,
+   "tipo": "time",
+   "chave": "Equador",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
@@ -2416,7 +2446,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1785411429495,
    "super": 1785412305094,
    "premier": 1785412608200,
    "euro": 1785414909191
