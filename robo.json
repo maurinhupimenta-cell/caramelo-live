@@ -1464,10 +1464,10 @@
    "2026-07-30": -22.1
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.55",
-   "n": 12,
-   "start": 1
+   "tipo": "time",
+   "chave": "Egito",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  },
@@ -2705,11 +2705,47 @@
    }
   ],
   "consumidas": {
-   "copa": 1785436486795,
-   "super": 1785436725895,
    "euro": 1785439551897
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "20:34",
+     "jogo": "Alemanha x Equador",
+     "odd": 1.86
+    },
+    {
+     "h": "20:37",
+     "jogo": "RD Congo x Jordânia",
+     "odd": 1.87
+    },
+    {
+     "h": "20:40",
+     "jogo": "Portugal x México",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "time Equador",
+   "alvo": {
+    "h": "20:37",
+    "jogo": "RD Congo x Jordânia",
+    "odd": 1.87,
+    "unidades": 2,
+    "desde": 1785440325234
+   },
+   "iniciadoEm": 1785440140725,
+   "tiros": [
+    {
+     "h": "20:34",
+     "jogo": "Alemanha x Equador",
+     "odd": 1.86,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1785439551897,
    "super": 1785436725895,
@@ -2734,10 +2770,10 @@
    "2026-07-30": 15.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.07",
-   "n": 17,
-   "start": 1
+   "tipo": "time",
+   "chave": "Egito",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  }
