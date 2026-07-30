@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -113.2,
-  "ciclos": 687,
-  "greens": 425,
+  "saldo": -111.5,
+  "ciclos": 688,
+  "greens": 426,
   "redsCiclo": 112,
   "aborts": 0,
   "descartes": 150,
   "historico": [
+   {
+    "quando": "2026-07-30T16:44:29.993Z",
+    "resultado": "GREEN",
+    "unidades": 1.7,
+    "detalhe": "euro · Eslováquia x Albânia @2.7 (tiro 1) · gatilho: coluna :41"
+   },
    {
     "quando": "2026-07-30T16:31:37.493Z",
     "resultado": "GREEN",
@@ -1332,43 +1338,14 @@
   ],
   "consumidas": {
    "copa": 1785428490696,
-   "premier": 1785429097294
+   "premier": 1785429097294,
+   "euro": 1785429869801
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:38",
-     "jogo": "Eslováquia x Albânia",
-     "odd": 2.7
-    },
-    {
-     "h": "17:41",
-     "jogo": "Polônia x Geórgia",
-     "odd": 2.55
-    },
-    {
-     "h": "17:44",
-     "jogo": "Itália x Alemanha",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "coluna :41",
-   "alvo": {
-    "h": "17:38",
-    "jogo": "Eslováquia x Albânia",
-    "odd": 2.7,
-    "unidades": 1,
-    "desde": 1785429689394
-   },
-   "iniciadoEm": 1785429689394
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785428490696,
    "premier": 1785429097294,
-   "euro": 1785426087995,
+   "euro": 1785429869801,
    "super": 1785425426397
   },
   "dias": {
@@ -1387,7 +1364,7 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -23.2
+   "2026-07-30": -21.5
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
