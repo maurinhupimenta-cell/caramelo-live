@@ -1355,11 +1355,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1785429097294,
    "euro": 1785429869801,
    "copa": 1785432507292
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:31",
+     "jogo": "Asuncion x Santos",
+     "odd": 2.4
+    },
+    {
+     "h": "18:34",
+     "jogo": "La Plata x Sao Paulo",
+     "odd": 2.3
+    },
+    {
+     "h": "18:37",
+     "jogo": "Santos x Asuncion",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "seq RGRGG",
+   "alvo": {
+    "h": "18:31",
+    "jogo": "Asuncion x Santos",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1785432509396
+   },
+   "iniciadoEm": 1785432509396
+  },
   "cooldown": {
    "copa": 1785432507292,
    "premier": 1785429097294,
@@ -1386,8 +1415,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRGRG",
-   "n": 10,
+   "chave": "RGRGG",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
