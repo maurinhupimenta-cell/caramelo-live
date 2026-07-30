@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -107.4,
-  "ciclos": 685,
+  "saldo": -114.4,
+  "ciclos": 686,
   "greens": 424,
-  "redsCiclo": 111,
+  "redsCiclo": 112,
   "aborts": 0,
   "descartes": 150,
   "historico": [
+   {
+    "quando": "2026-07-30T16:21:30.799Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: seq GGGG"
+   },
    {
     "quando": "2026-07-30T16:13:25.594Z",
     "resultado": "GREEN_OBS",
@@ -1320,55 +1326,42 @@
   ],
   "consumidas": {
    "super": 1785425426397,
-   "euro": 1785426087995
+   "euro": 1785426087995,
+   "copa": 1785428490696
   },
   "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "17:10",
-     "jogo": "Croácia x Suécia",
-     "odd": 2.7
-    },
-    {
-     "h": "17:13",
-     "jogo": "Arábia Saudita x Qatar",
+     "h": "17:24",
+     "jogo": "Chelsea x Islington",
      "odd": 2.2
     },
     {
-     "h": "17:16",
-     "jogo": "Brasil x Nova Zelândia",
-     "odd": 2.2
+     "h": "17:27",
+     "jogo": "Burnley x United",
+     "odd": 2.1
+    },
+    {
+     "h": "17:30",
+     "jogo": "City x Watford",
+     "odd": 2.15
     }
    ],
-   "gatilho": "seq GGGG",
+   "gatilho": "seq RRRR",
    "alvo": {
-    "h": "17:16",
-    "jogo": "Brasil x Nova Zelândia",
+    "h": "17:24",
+    "jogo": "Chelsea x Islington",
     "odd": 2.2,
-    "unidades": 4,
-    "desde": 1785428254998
+    "unidades": 1,
+    "desde": 1785428492797
    },
-   "iniciadoEm": 1785427649094,
-   "tiros": [
-    {
-     "h": "17:10",
-     "jogo": "Croácia x Suécia",
-     "odd": 2.7,
-     "unidades": 1
-    },
-    {
-     "h": "17:13",
-     "jogo": "Arábia Saudita x Qatar",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1785428492797
   },
   "cooldown": {
-   "copa": 1785423750303,
+   "copa": 1785428490696,
    "premier": 1785424395700,
    "euro": 1785426087995,
    "super": 1785425426397
@@ -1389,13 +1382,13 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -17.4
+   "2026-07-30": -24.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Equador",
-   "n": 15,
-   "start": 2
+   "tipo": "seq",
+   "chave": "RRRR",
+   "n": 28,
+   "start": 1
   },
   "_obs": {}
  },
