@@ -1052,7 +1052,37 @@
    "super": 1785381988993,
    "premier": 1785382375203
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:32",
+     "jogo": "Croácia x Hungria",
+     "odd": 2.35
+    },
+    {
+     "h": "04:35",
+     "jogo": "Geórgia x Suíça",
+     "odd": 2.25
+    },
+    {
+     "h": "04:38",
+     "jogo": "Dinamarca x Sérvia",
+     "odd": 2.6
+    }
+   ],
+   "gatilho": "placar empate 1-1",
+   "alvo": {
+    "h": "04:32",
+    "jogo": "Croácia x Hungria",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1785382384795
+   },
+   "iniciadoEm": 1785382384795
+  },
   "cooldown": {
    "copa": 1785377976801,
    "premier": 1785382375203,
@@ -1078,10 +1108,10 @@
    "2026-07-30": 2.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "West Ham",
+   "tipo": "placar",
+   "chave": "empate 1-1",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
