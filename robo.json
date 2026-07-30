@@ -1193,10 +1193,39 @@
    }
   ],
   "consumidas": {
-   "copa": 1785403122991,
    "premier": 1785403969295
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:19",
+     "jogo": "Uzbequistão x Brasil",
+     "odd": 2.25
+    },
+    {
+     "h": "11:22",
+     "jogo": "Áustria x Jordânia",
+     "odd": 2.2
+    },
+    {
+     "h": "11:25",
+     "jogo": "Brasil x Bélgica",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "coluna :19",
+   "alvo": {
+    "h": "11:19",
+    "jogo": "Uzbequistão x Brasil",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785406725091
+   },
+   "iniciadoEm": 1785406725091
+  },
   "cooldown": {
    "copa": 1785403122991,
    "premier": 1785403969295,
@@ -1222,9 +1251,9 @@
    "2026-07-30": -0.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Tottenham",
-   "n": 20,
+   "tipo": "coluna",
+   "chave": ":19",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
