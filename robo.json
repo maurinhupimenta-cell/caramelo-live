@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -83.3,
-  "ciclos": 655,
+  "saldo": -90.3,
+  "ciclos": 656,
   "greens": 408,
-  "redsCiclo": 104,
+  "redsCiclo": 105,
   "aborts": 0,
   "descartes": 143,
   "historico": [
+   {
+    "quando": "2026-07-30T07:40:07.994Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: time Agua Branca"
+   },
    {
     "quando": "2026-07-30T07:28:42.894Z",
     "resultado": "RED_CICLO",
@@ -1141,58 +1147,15 @@
   "consumidas": {
    "copa": 1785394885700,
    "premier": 1785395856997,
-   "euro": 1785396522694
+   "euro": 1785396522694,
+   "super": 1785397207797
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "08:31",
-     "jogo": "Agua Branca x Sao Paulo",
-     "odd": 2.02
-    },
-    {
-     "h": "08:34",
-     "jogo": "Montevideo x Rio de Janeiro",
-     "odd": 2.1
-    },
-    {
-     "h": "08:37",
-     "jogo": "Santiago x Avellaneda",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "time Agua Branca",
-   "alvo": {
-    "h": "08:37",
-    "jogo": "Santiago x Avellaneda",
-    "odd": 2.1,
-    "unidades": 4,
-    "desde": 1785397007197
-   },
-   "iniciadoEm": 1785396525091,
-   "tiros": [
-    {
-     "h": "08:31",
-     "jogo": "Agua Branca x Sao Paulo",
-     "odd": 2.02,
-     "unidades": 1
-    },
-    {
-     "h": "08:34",
-     "jogo": "Montevideo x Rio de Janeiro",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785394885700,
    "premier": 1785395856997,
    "euro": 1785396522694,
-   "super": 1785392704703
+   "super": 1785397207797
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -1210,13 +1173,13 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": 6.7
+   "2026-07-30": -0.3
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":49",
    "n": 8,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
