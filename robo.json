@@ -207,13 +207,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -87.9,
-  "ciclos": 648,
-  "greens": 402,
+  "saldo": -85.9,
+  "ciclos": 649,
+  "greens": 403,
   "redsCiclo": 103,
   "aborts": 0,
   "descartes": 143,
   "historico": [
+   {
+    "quando": "2026-07-30T05:52:04.790Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "copa · Colômbia x Irã @2.5 (tiro 2) · gatilho: time Irã"
+   },
    {
     "quando": "2026-07-30T05:37:19.495Z",
     "resultado": "GREEN_OBS",
@@ -1093,49 +1099,12 @@
   ],
   "consumidas": {
    "euro": 1785387209090,
-   "super": 1785388048295
+   "super": 1785388048295,
+   "copa": 1785390724595
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "06:46",
-     "jogo": "Escócia x Croácia",
-     "odd": 2.7
-    },
-    {
-     "h": "06:49",
-     "jogo": "Colômbia x Irã",
-     "odd": 2.5
-    },
-    {
-     "h": "06:52",
-     "jogo": "Senegal x Bósnia e Herzegovina",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "time Irã",
-   "alvo": {
-    "h": "06:49",
-    "jogo": "Colômbia x Irã",
-    "odd": 2.5,
-    "unidades": 2,
-    "desde": 1785390543801
-   },
-   "iniciadoEm": 1785389842602,
-   "tiros": [
-    {
-     "h": "06:46",
-     "jogo": "Escócia x Croácia",
-     "odd": 2.7,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785383513203,
+   "copa": 1785390724595,
    "premier": 1785386681198,
    "euro": 1785387209090,
    "super": 1785388048295
@@ -1156,13 +1125,13 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": 2.1
+   "2026-07-30": 4.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Leicester",
-   "n": 13,
-   "start": 3
+   "n": 14,
+   "start": 2
   },
   "_obs": {}
  },
