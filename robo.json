@@ -2165,8 +2165,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "06:07",
@@ -2186,13 +2186,21 @@
    ],
    "gatilho": "time Buenos Aires",
    "alvo": {
-    "h": "06:07",
-    "jogo": "Asuncion x La Boca",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785387750797
+    "h": "06:10",
+    "jogo": "Buenos Aires x Avellaneda",
+    "odd": 1.9,
+    "unidades": 2,
+    "desde": 1785388226802
    },
-   "iniciadoEm": 1785387750797
+   "iniciadoEm": 1785387750797,
+   "tiros": [
+    {
+     "h": "06:07",
+     "jogo": "Asuncion x La Boca",
+     "odd": 2.05,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785378001192,
@@ -2219,9 +2227,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Buenos Aires",
-   "n": 12,
-   "start": 1
+   "chave": "Medellin",
+   "n": 9,
+   "start": 2
   },
   "_obs": {}
  }
