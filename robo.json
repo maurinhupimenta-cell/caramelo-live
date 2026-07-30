@@ -1366,8 +1366,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "18:51",
@@ -1387,13 +1387,21 @@
    ],
    "gatilho": "coluna :54",
    "alvo": {
-    "h": "18:51",
-    "jogo": "Norwich x Newcastle",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785433353393
+    "h": "18:54",
+    "jogo": "West Ham x Liverpool",
+    "odd": 2.45,
+    "unidades": 2,
+    "desde": 1785434028700
    },
-   "iniciadoEm": 1785433353393
+   "iniciadoEm": 1785433353393,
+   "tiros": [
+    {
+     "h": "18:51",
+     "jogo": "Norwich x Newcastle",
+     "odd": 2.05,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785432507292,
@@ -1421,7 +1429,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":54",
+   "chave": ":57",
    "n": 18,
    "start": 1
   },
@@ -2697,10 +2705,10 @@
    "2026-07-30": 11.9
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 11,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":00",
+   "n": 18,
+   "start": 2
   },
   "_obs": {}
  }
