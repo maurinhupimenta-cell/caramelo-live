@@ -1149,7 +1149,37 @@
    "euro": 1785396522694,
    "super": 1785397207797
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:07",
+     "jogo": "Uzbequistão x Países Baixos",
+     "odd": 2.3
+    },
+    {
+     "h": "09:10",
+     "jogo": "Tunísia x Egito",
+     "odd": 2.4
+    },
+    {
+     "h": "09:13",
+     "jogo": "Bélgica x Equador",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time Tunísia",
+   "alvo": {
+    "h": "09:07",
+    "jogo": "Uzbequistão x Países Baixos",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1785398486205
+   },
+   "iniciadoEm": 1785398486205
+  },
   "cooldown": {
    "copa": 1785394885700,
    "premier": 1785395856997,
@@ -1175,21 +1205,27 @@
    "2026-07-30": -0.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":49",
-   "n": 8,
+   "tipo": "time",
+   "chave": "Tunísia",
+   "n": 11,
    "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -51.7,
-  "ciclos": 718,
-  "greens": 476,
+  "saldo": -50.6,
+  "ciclos": 719,
+  "greens": 477,
   "redsCiclo": 76,
   "aborts": 0,
   "descartes": 166,
   "historico": [
+   {
+    "quando": "2026-07-30T08:02:36.895Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Liverpool x Tottenham @2.07 (tiro 1) · gatilho: coluna :00"
+   },
    {
     "quando": "2026-07-30T07:55:42.396Z",
     "resultado": "GREEN",
@@ -2261,43 +2297,14 @@
   ],
   "consumidas": {
    "super": 1785397768095,
-   "euro": 1785398142292
+   "euro": 1785398142292,
+   "premier": 1785398556701
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "08:57",
-     "jogo": "Liverpool x Tottenham",
-     "odd": 2.07
-    },
-    {
-     "h": "09:00",
-     "jogo": "Southampton x West Ham",
-     "odd": 2.2
-    },
-    {
-     "h": "09:03",
-     "jogo": "Aston x Liverpool",
-     "odd": 2
-    }
-   ],
-   "gatilho": "coluna :00",
-   "alvo": {
-    "h": "08:57",
-    "jogo": "Liverpool x Tottenham",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1785398145497
-   },
-   "iniciadoEm": 1785398145497
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785398142292,
    "super": 1785397768095,
-   "premier": 1785393877895,
+   "premier": 1785398556701,
    "copa": 1785363704496
   },
   "dias": {
@@ -2315,7 +2322,7 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": -0.2
+   "2026-07-30": 0.9
   },
   "_gatilhoAtual": {
    "tipo": "seq",
