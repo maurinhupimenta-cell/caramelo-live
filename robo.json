@@ -2325,10 +2325,39 @@
    }
   ],
   "consumidas": {
-   "super": 1785401707598,
    "premier": 1785403238701
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:01",
+     "jogo": "Buenos Aires x Porto Alegre",
+     "odd": 2.1
+    },
+    {
+     "h": "11:04",
+     "jogo": "Lima x Avellaneda",
+     "odd": 1.93
+    },
+    {
+     "h": "11:07",
+     "jogo": "Medellin x Itaquera",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "coluna :04",
+   "alvo": {
+    "h": "11:01",
+    "jogo": "Buenos Aires x Porto Alegre",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785405307803
+   },
+   "iniciadoEm": 1785405307803
+  },
   "cooldown": {
    "euro": 1785398142292,
    "super": 1785401707598,
@@ -2353,10 +2382,10 @@
    "2026-07-30": 3.1
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.05",
-   "n": 16,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":04",
+   "n": 11,
+   "start": 2
   },
   "_obs": {}
  }
