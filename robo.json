@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -84.4,
-  "ciclos": 643,
+  "saldo": -91.4,
+  "ciclos": 644,
   "greens": 399,
-  "redsCiclo": 102,
+  "redsCiclo": 103,
   "aborts": 0,
   "descartes": 142,
   "historico": [
+   {
+    "quando": "2026-07-30T03:51:53.398Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: placar empate 1-1"
+   },
    {
     "quando": "2026-07-30T03:42:28.893Z",
     "resultado": "GREEN",
@@ -1057,55 +1063,12 @@
   "consumidas": {
    "super": 1785381988993,
    "premier": 1785382375203,
-   "euro": 1785382948699
+   "euro": 1785382948699,
+   "copa": 1785383513203
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:43",
-     "jogo": "Paraguai x Jordânia",
-     "odd": 2.35
-    },
-    {
-     "h": "04:46",
-     "jogo": "República Tcheca x Uruguai",
-     "odd": 2.3
-    },
-    {
-     "h": "04:49",
-     "jogo": "RD Congo x Uzbequistão",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "placar empate 1-1",
-   "alvo": {
-    "h": "04:49",
-    "jogo": "RD Congo x Uzbequistão",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1785383351598
-   },
-   "iniciadoEm": 1785382951998,
-   "tiros": [
-    {
-     "h": "04:43",
-     "jogo": "Paraguai x Jordânia",
-     "odd": 2.35,
-     "unidades": 1
-    },
-    {
-     "h": "04:46",
-     "jogo": "República Tcheca x Uruguai",
-     "odd": 2.3,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785377976801,
+   "copa": 1785383513203,
    "premier": 1785382375203,
    "euro": 1785382948699,
    "super": 1785381988993
@@ -1126,7 +1089,7 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": 5.6
+   "2026-07-30": -1.4
   },
   "_gatilhoAtual": {
    "tipo": "placar",
@@ -2220,7 +2183,7 @@
    "tipo": "time",
    "chave": "Agua Branca",
    "n": 10,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
