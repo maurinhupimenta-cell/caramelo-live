@@ -1263,9 +1263,9 @@
    "2026-07-30": -7.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":41",
-   "n": 11,
+   "tipo": "time",
+   "chave": "Tottenham",
+   "n": 22,
    "start": 2
   },
   "_obs": {}
@@ -2374,7 +2374,37 @@
   "consumidas": {
    "super": 1785405887401
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:42",
+     "jogo": "Burnley x Tottenham",
+     "odd": 2.02
+    },
+    {
+     "h": "11:45",
+     "jogo": "United x Watford",
+     "odd": 2.07
+    },
+    {
+     "h": "11:48",
+     "jogo": "Liverpool x Brighton",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "odd 2.07",
+   "alvo": {
+    "h": "11:42",
+    "jogo": "Burnley x Tottenham",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1785407630395
+   },
+   "iniciadoEm": 1785407630395
+  },
   "cooldown": {
    "euro": 1785398142292,
    "super": 1785405887401,
@@ -2399,10 +2429,10 @@
    "2026-07-30": 4.2
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":04",
-   "n": 11,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.07",
+   "n": 10,
+   "start": 3
   },
   "_obs": {}
  }
