@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -90,
-  "ciclos": 640,
-  "greens": 396,
+  "saldo": -88.9,
+  "ciclos": 641,
+  "greens": 397,
   "redsCiclo": 102,
   "aborts": 0,
   "descartes": 142,
   "historico": [
+   {
+    "quando": "2026-07-30T03:26:29.098Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Belo Horizonte x Montevideo @2.05 (tiro 2) · gatilho: time Agua Branca"
+   },
    {
     "quando": "2026-07-30T03:16:26.093Z",
     "resultado": "GREEN_OBS",
@@ -1037,52 +1043,45 @@
    }
   ],
   "consumidas": {
-   "euro": 1785378580591
+   "euro": 1785378580591,
+   "super": 1785381988993
   },
   "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "04:19",
-     "jogo": "Avellaneda x Agua Branca",
-     "odd": 2.2
+     "h": "04:30",
+     "jogo": "Newcastle x United",
+     "odd": 2.07
     },
     {
-     "h": "04:22",
-     "jogo": "Belo Horizonte x Montevideo",
-     "odd": 2.05
+     "h": "04:33",
+     "jogo": "Brighton x Leeds",
+     "odd": 2.3
     },
     {
-     "h": "04:25",
-     "jogo": "Rio de Janeiro x Asuncion",
+     "h": "04:36",
+     "jogo": "Southampton x Liverpool",
      "odd": 2.3
     }
    ],
-   "gatilho": "time Agua Branca",
+   "gatilho": "time Leeds",
    "alvo": {
-    "h": "04:22",
-    "jogo": "Belo Horizonte x Montevideo",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1785381745192
+    "h": "04:30",
+    "jogo": "Newcastle x United",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1785381989997
    },
-   "iniciadoEm": 1785381388494,
-   "tiros": [
-    {
-     "h": "04:19",
-     "jogo": "Avellaneda x Agua Branca",
-     "odd": 2.2,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1785381989997
   },
   "cooldown": {
    "copa": 1785377976801,
    "premier": 1785374812694,
    "euro": 1785378580591,
-   "super": 1785377760801
+   "super": 1785381988993
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -1100,13 +1099,13 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": 0
+   "2026-07-30": 1.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Agua Branca",
-   "n": 9,
-   "start": 1
+   "chave": "Leeds",
+   "n": 8,
+   "start": 2
   },
   "_obs": {}
  },
