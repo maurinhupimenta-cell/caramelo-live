@@ -1279,13 +1279,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -44.5,
-  "ciclos": 725,
-  "greens": 483,
+  "saldo": -43.5,
+  "ciclos": 726,
+  "greens": 484,
   "redsCiclo": 76,
   "aborts": 0,
   "descartes": 166,
   "historico": [
+   {
+    "quando": "2026-07-30T11:56:48.394Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · West Ham x Everton @2.05 (tiro 1) · gatilho: odd 2.05"
+   },
    {
     "quando": "2026-07-30T11:51:45.200Z",
     "resultado": "GREEN",
@@ -2399,13 +2405,14 @@
   ],
   "consumidas": {
    "copa": 1785411429495,
-   "super": 1785412305094
+   "super": 1785412305094,
+   "premier": 1785412608200
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1785398142292,
    "super": 1785412305094,
-   "premier": 1785408288000,
+   "premier": 1785412608200,
    "copa": 1785411429495
   },
   "dias": {
@@ -2423,12 +2430,12 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 7
+   "2026-07-30": 8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.05",
-   "n": 22,
+   "tipo": "coluna",
+   "chave": ":00",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
