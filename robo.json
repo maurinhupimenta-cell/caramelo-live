@@ -1100,13 +1100,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -49.5,
-  "ciclos": 710,
-  "greens": 470,
+  "saldo": -48.6,
+  "ciclos": 711,
+  "greens": 471,
   "redsCiclo": 75,
   "aborts": 0,
   "descartes": 165,
   "historico": [
+   {
+    "quando": "2026-07-30T04:23:41.494Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Brighton x Islington @1.85 (tiro 1) · gatilho: odd 1.87"
+   },
    {
     "quando": "2026-07-30T04:01:16.694Z",
     "resultado": "GREEN",
@@ -2129,43 +2135,14 @@
    }
   ],
   "consumidas": {
-   "super": 1785384076503
+   "super": 1785384076503,
+   "premier": 1785385421301
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:21",
-     "jogo": "Brighton x Islington",
-     "odd": 1.85
-    },
-    {
-     "h": "05:24",
-     "jogo": "Palace x Burnley",
-     "odd": 1.87
-    },
-    {
-     "h": "05:27",
-     "jogo": "Chelsea x Islington",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "odd 1.87",
-   "alvo": {
-    "h": "05:21",
-    "jogo": "Brighton x Islington",
-    "odd": 1.85,
-    "unidades": 1,
-    "desde": 1785385109092
-   },
-   "iniciadoEm": 1785385109092
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785378001192,
    "super": 1785384076503,
-   "premier": 1785381470995,
+   "premier": 1785385421301,
    "copa": 1785363704496
   },
   "dias": {
@@ -2183,12 +2160,12 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 2
+   "2026-07-30": 2.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.87",
-   "n": 9,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
