@@ -2696,7 +2696,37 @@
    "euro": 1785439551897,
    "copa": 1785440513932
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:16",
+     "jogo": "Lima x Medellin",
+     "odd": 1.95
+    },
+    {
+     "h": "21:19",
+     "jogo": "Santos x Santiago",
+     "odd": 1.98
+    },
+    {
+     "h": "21:22",
+     "jogo": "Penarol x Montevideo",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "seq RRGGR",
+   "alvo": {
+    "h": "21:16",
+    "jogo": "Lima x Medellin",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1785442480732
+   },
+   "iniciadoEm": 1785442480732
+  },
   "cooldown": {
    "euro": 1785439551897,
    "super": 1785436725895,
@@ -2721,10 +2751,10 @@
    "2026-07-30": 16.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Egito",
-   "n": 11,
-   "start": 2
+   "tipo": "seq",
+   "chave": "RRGGR",
+   "n": 13,
+   "start": 1
   },
   "_obs": {}
  }
