@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -93.4,
-  "ciclos": 662,
-  "greens": 411,
+  "saldo": -92.2,
+  "ciclos": 663,
+  "greens": 412,
   "redsCiclo": 106,
   "aborts": 0,
   "descartes": 145,
   "historico": [
+   {
+    "quando": "2026-07-30T09:18:43.094Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Curação x Turquia @2.2 (tiro 1) · gatilho: odd 2.5"
+   },
    {
     "quando": "2026-07-30T08:52:08.297Z",
     "resultado": "GREEN",
@@ -1183,11 +1189,12 @@
   "consumidas": {
    "premier": 1785399998996,
    "euro": 1785401202699,
-   "super": 1785401528104
+   "super": 1785401528104,
+   "copa": 1785403122991
   },
   "ciclo": null,
   "cooldown": {
-   "copa": 1785399065495,
+   "copa": 1785403122991,
    "premier": 1785399998996,
    "euro": 1785401202699,
    "super": 1785401528104
@@ -1208,12 +1215,12 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -3.4
+   "2026-07-30": -2.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "La Boca",
-   "n": 14,
+   "chave": "Tunísia",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
@@ -2368,7 +2375,7 @@
    "tipo": "odd",
    "chave": "2.05",
    "n": 16,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
