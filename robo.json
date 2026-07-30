@@ -1429,7 +1429,37 @@
   "consumidas": {
    "copa": 1785449400132
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:20",
+     "jogo": "Áustria x Países Baixos",
+     "odd": 2.15
+    },
+    {
+     "h": "23:23",
+     "jogo": "Dinamarca x Geórgia",
+     "odd": 2.5
+    },
+    {
+     "h": "23:26",
+     "jogo": "Suíça x Sérvia",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "seq GGGRG",
+   "alvo": {
+    "h": "23:20",
+    "jogo": "Áustria x Países Baixos",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785449841928
+   },
+   "iniciadoEm": 1785449841928
+  },
   "cooldown": {
    "copa": 1785449400132,
    "premier": 1785442317229,
@@ -1455,10 +1485,10 @@
    "2026-07-30": -30.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":19",
-   "n": 23,
-   "start": 2
+   "tipo": "seq",
+   "chave": "GGGRG",
+   "n": 10,
+   "start": 1
   },
   "_obs": {}
  },
