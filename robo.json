@@ -1395,7 +1395,37 @@
    "euro": 1785437036400,
    "premier": 1785438175002
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:28",
+     "jogo": "Belo Horizonte x Guayaquil",
+     "odd": 2.05
+    },
+    {
+     "h": "20:31",
+     "jogo": "Bogota x Quito",
+     "odd": 2.55
+    },
+    {
+     "h": "20:34",
+     "jogo": "Guayaquil x Lima",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "odd 2.55",
+   "alvo": {
+    "h": "20:28",
+    "jogo": "Belo Horizonte x Guayaquil",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785439182896
+   },
+   "iniciadoEm": 1785439182896
+  },
   "cooldown": {
    "copa": 1785436486598,
    "premier": 1785438175002,
@@ -1421,26 +1451,27 @@
    "2026-07-30": -22.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Tottenham",
-   "n": 37,
+   "tipo": "odd",
+   "chave": "2.55",
+   "n": 12,
    "start": 1
   },
-  "_obs": {
-   "super": {
-    "desde": 1785439180399,
-    "gatilho": "odd 2.55"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
-  "saldo": -35.8,
-  "ciclos": 743,
-  "greens": 499,
+  "saldo": -35.6,
+  "ciclos": 744,
+  "greens": 500,
   "redsCiclo": 77,
   "aborts": 0,
   "descartes": 167,
   "historico": [
+   {
+    "quando": "2026-07-30T19:25:52.001Z",
+    "resultado": "GREEN",
+    "unidades": 0.2,
+    "detalhe": "euro · França x Espanha @1.8 (tiro 3) · gatilho: placar empate 2-2"
+   },
    {
     "quando": "2026-07-30T18:38:46.002Z",
     "resultado": "GREEN",
@@ -2662,49 +2693,12 @@
   ],
   "consumidas": {
    "copa": 1785436486795,
-   "super": 1785436725895
+   "super": 1785436725895,
+   "euro": 1785439551897
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "20:08",
-     "jogo": "Bélgica x Escócia",
-     "odd": 1.9
-    },
-    {
-     "h": "20:11",
-     "jogo": "Eslováquia x Ucrânia",
-     "odd": 2
-    },
-    {
-     "h": "20:14",
-     "jogo": "França x Espanha",
-     "odd": 1.8
-    }
-   ],
-   "gatilho": "placar empate 2-2",
-   "alvo": {
-    "h": "20:11",
-    "jogo": "Eslováquia x Ucrânia",
-    "odd": 2,
-    "unidades": 2,
-    "desde": 1785438710597
-   },
-   "iniciadoEm": 1785438340703,
-   "tiros": [
-    {
-     "h": "20:08",
-     "jogo": "Bélgica x Escócia",
-     "odd": 1.9,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785434066193,
+   "euro": 1785439551897,
    "super": 1785436725895,
    "premier": 1785434902603,
    "copa": 1785436486795
@@ -2724,7 +2718,7 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 15.7
+   "2026-07-30": 15.9
   },
   "_gatilhoAtual": {
    "tipo": "odd",
