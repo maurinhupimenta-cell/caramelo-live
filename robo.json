@@ -2311,7 +2311,37 @@
   "consumidas": {
    "super": 1785401707598
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:18",
+     "jogo": "Everton x Islington",
+     "odd": 1.87
+    },
+    {
+     "h": "10:21",
+     "jogo": "Southampton x Norwich",
+     "odd": 2.05
+    },
+    {
+     "h": "10:24",
+     "jogo": "Burnley x Wolverhampton",
+     "odd": 1.8
+    }
+   ],
+   "gatilho": "odd 2.05",
+   "alvo": {
+    "h": "10:18",
+    "jogo": "Everton x Islington",
+    "odd": 1.87,
+    "unidades": 1,
+    "desde": 1785402538601
+   },
+   "iniciadoEm": 1785402538601
+  },
   "cooldown": {
    "euro": 1785398142292,
    "super": 1785401707598,
@@ -2336,10 +2366,10 @@
    "2026-07-30": 2.2
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":04",
-   "n": 10,
-   "start": 2
+   "tipo": "odd",
+   "chave": "2.05",
+   "n": 16,
+   "start": 3
   },
   "_obs": {}
  }
