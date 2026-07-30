@@ -1271,11 +1271,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1785415840702,
    "super": 1785418442797,
    "euro": 1785419222001
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:49",
+     "jogo": "França x Iraque",
+     "odd": 2.45
+    },
+    {
+     "h": "14:52",
+     "jogo": "Croácia x República Tcheca",
+     "odd": 2.5
+    },
+    {
+     "h": "14:55",
+     "jogo": "Curação x Egito",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "seq RRGRR",
+   "alvo": {
+    "h": "14:49",
+    "jogo": "França x Iraque",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1785419225197
+   },
+   "iniciadoEm": 1785419225197
+  },
   "cooldown": {
    "copa": 1785415223503,
    "premier": 1785415840702,
@@ -1301,9 +1330,9 @@
    "2026-07-30": -8.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGRR",
-   "n": 13,
+   "tipo": "time",
+   "chave": "Egito",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
@@ -2520,7 +2549,7 @@
    "tipo": "odd",
    "chave": "2.2",
    "n": 15,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
