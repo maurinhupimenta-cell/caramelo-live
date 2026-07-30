@@ -1179,7 +1179,37 @@
    "premier": 1785399998996,
    "euro": 1785401202699
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:49",
+     "jogo": "Rio de Janeiro x Santiago",
+     "odd": 2.07
+    },
+    {
+     "h": "09:52",
+     "jogo": "Porto Alegre x La Boca",
+     "odd": 2.75
+    },
+    {
+     "h": "09:55",
+     "jogo": "Guayaquil x Rio de Janeiro",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time La Boca",
+   "alvo": {
+    "h": "09:49",
+    "jogo": "Rio de Janeiro x Santiago",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1785401205800
+   },
+   "iniciadoEm": 1785401205800
+  },
   "cooldown": {
    "copa": 1785399065495,
    "premier": 1785399998996,
@@ -2296,7 +2326,6 @@
    }
   ],
   "consumidas": {
-   "super": 1785397768095,
    "euro": 1785398142292,
    "premier": 1785398556701
   },
