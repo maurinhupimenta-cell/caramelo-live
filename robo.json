@@ -1230,13 +1230,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -48.4,
-  "ciclos": 721,
-  "greens": 479,
+  "saldo": -47.3,
+  "ciclos": 722,
+  "greens": 480,
   "redsCiclo": 76,
   "aborts": 0,
   "descartes": 166,
   "historico": [
+   {
+    "quando": "2026-07-30T10:04:47.594Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Buenos Aires x Porto Alegre @2.1 (tiro 1) · gatilho: coluna :04"
+   },
    {
     "quando": "2026-07-30T09:20:38.896Z",
     "resultado": "GREEN",
@@ -2325,42 +2331,13 @@
    }
   ],
   "consumidas": {
-   "premier": 1785403238701
+   "premier": 1785403238701,
+   "super": 1785405887401
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "11:01",
-     "jogo": "Buenos Aires x Porto Alegre",
-     "odd": 2.1
-    },
-    {
-     "h": "11:04",
-     "jogo": "Lima x Avellaneda",
-     "odd": 1.93
-    },
-    {
-     "h": "11:07",
-     "jogo": "Medellin x Itaquera",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "coluna :04",
-   "alvo": {
-    "h": "11:01",
-    "jogo": "Buenos Aires x Porto Alegre",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785405307803
-   },
-   "iniciadoEm": 1785405307803
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785398142292,
-   "super": 1785401707598,
+   "super": 1785405887401,
    "premier": 1785403238701,
    "copa": 1785363704496
   },
@@ -2379,13 +2356,13 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 3.1
+   "2026-07-30": 4.2
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":04",
    "n": 11,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
