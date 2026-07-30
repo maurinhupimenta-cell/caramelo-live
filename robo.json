@@ -2206,8 +2206,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "07:22",
@@ -2227,13 +2227,27 @@
    ],
    "gatilho": "time Buenos Aires",
    "alvo": {
-    "h": "07:22",
-    "jogo": "Medellin x Penarol",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785392257097
+    "h": "07:28",
+    "jogo": "Medellin x Bogota",
+    "odd": 2.2,
+    "unidades": 4,
+    "desde": 1785392887697
    },
-   "iniciadoEm": 1785392257097
+   "iniciadoEm": 1785392257097,
+   "tiros": [
+    {
+     "h": "07:22",
+     "jogo": "Medellin x Penarol",
+     "odd": 2.15,
+     "unidades": 1
+    },
+    {
+     "h": "07:25",
+     "jogo": "La Boca x Buenos Aires",
+     "odd": 1.93,
+     "unidades": 2
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785378001192,
@@ -2262,7 +2276,7 @@
    "tipo": "time",
    "chave": "Buenos Aires",
    "n": 14,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
