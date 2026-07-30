@@ -1375,13 +1375,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -41.4,
-  "ciclos": 736,
-  "greens": 493,
+  "saldo": -40.5,
+  "ciclos": 737,
+  "greens": 494,
   "redsCiclo": 77,
   "aborts": 0,
   "descartes": 166,
   "historico": [
+   {
+    "quando": "2026-07-30T17:18:58.694Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · Egito x Brasil @1.9 (tiro 1) · gatilho: coluna :19"
+   },
    {
     "quando": "2026-07-30T16:51:31.493Z",
     "resultado": "GREEN",
@@ -2560,44 +2566,15 @@
    }
   ],
   "consumidas": {
-   "premier": 1785430291300
+   "premier": 1785430291300,
+   "copa": 1785431938499
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:16",
-     "jogo": "Egito x Brasil",
-     "odd": 1.9
-    },
-    {
-     "h": "18:19",
-     "jogo": "Curação x Uruguai",
-     "odd": 1.9
-    },
-    {
-     "h": "18:22",
-     "jogo": "Qatar x Noruega",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "coluna :19",
-   "alvo": {
-    "h": "18:16",
-    "jogo": "Egito x Brasil",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1785431311291
-   },
-   "iniciadoEm": 1785431311291
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785419921894,
    "super": 1785423393403,
    "premier": 1785430291300,
-   "copa": 1785427168703
+   "copa": 1785431938499
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -2614,13 +2591,13 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 10.1
+   "2026-07-30": 11
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":19",
    "n": 18,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
