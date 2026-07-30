@@ -1361,7 +1361,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1785429869801,
    "copa": 1785432507292,
    "super": 1785433204093
   },
@@ -1424,7 +1423,7 @@
    "tipo": "coluna",
    "chave": ":54",
    "n": 18,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
@@ -2636,7 +2635,45 @@
    "copa": 1785431938499,
    "super": 1785432445491
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "18:47",
+     "jogo": "Suíça x Dinamarca",
+     "odd": 1.98
+    },
+    {
+     "h": "18:50",
+     "jogo": "Albânia x Países Baixos",
+     "odd": 2.05
+    },
+    {
+     "h": "18:53",
+     "jogo": "Hungria x Portugal",
+     "odd": 2
+    }
+   ],
+   "gatilho": "placar empate 2-2",
+   "alvo": {
+    "h": "18:50",
+    "jogo": "Albânia x Países Baixos",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1785433829698
+   },
+   "iniciadoEm": 1785433467204,
+   "tiros": [
+    {
+     "h": "18:47",
+     "jogo": "Suíça x Dinamarca",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1785419921894,
    "super": 1785432445491,
@@ -2661,16 +2698,11 @@
    "2026-07-30": 11.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRGG",
-   "n": 10,
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 11,
    "start": 1
   },
-  "_obs": {
-   "euro": {
-    "desde": 1785433465092,
-    "gatilho": "placar empate 2-2"
-   }
-  }
+  "_obs": {}
  }
 }
