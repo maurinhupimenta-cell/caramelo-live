@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -99.4,
-  "ciclos": 672,
-  "greens": 416,
+  "saldo": -97.9,
+  "ciclos": 673,
+  "greens": 417,
   "redsCiclo": 108,
   "aborts": 0,
   "descartes": 148,
   "historico": [
+   {
+    "quando": "2026-07-30T12:35:09.097Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "euro · Espanha x Geórgia @2.5 (tiro 1) · gatilho: coluna :41"
+   },
    {
     "quando": "2026-07-30T11:51:44.997Z",
     "resultado": "GREEN",
@@ -1242,43 +1248,14 @@
   ],
   "consumidas": {
    "premier": 1785411700793,
-   "super": 1785412304892
+   "super": 1785412304892,
+   "euro": 1785414908991
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "13:32",
-     "jogo": "Espanha x Geórgia",
-     "odd": 2.5
-    },
-    {
-     "h": "13:41",
-     "jogo": "República Tcheca x Inglaterra",
-     "odd": 2.5
-    },
-    {
-     "h": "13:44",
-     "jogo": "Suíça x Itália",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "coluna :41",
-   "alvo": {
-    "h": "13:32",
-    "jogo": "Espanha x Geórgia",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1785414622499
-   },
-   "iniciadoEm": 1785414622499
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785411243593,
    "premier": 1785411700793,
-   "euro": 1785408423497,
+   "euro": 1785414908991,
    "super": 1785412304892
   },
   "dias": {
@@ -1297,24 +1274,30 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -9.4
+   "2026-07-30": -7.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":41",
-   "n": 13,
-   "start": 2
+   "tipo": "seq",
+   "chave": "RRGRR",
+   "n": 10,
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -43.5,
-  "ciclos": 726,
-  "greens": 484,
+  "saldo": -42.5,
+  "ciclos": 727,
+  "greens": 485,
   "redsCiclo": 76,
   "aborts": 0,
   "descartes": 166,
   "historico": [
+   {
+    "quando": "2026-07-30T12:35:09.302Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Espanha x Geórgia @2.02 (tiro 2) · gatilho: odd 2.02"
+   },
    {
     "quando": "2026-07-30T11:56:48.394Z",
     "resultado": "GREEN",
@@ -2435,49 +2418,12 @@
   "consumidas": {
    "copa": 1785411429495,
    "super": 1785412305094,
-   "premier": 1785412608200
+   "premier": 1785412608200,
+   "euro": 1785414909191
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "13:29",
-     "jogo": "Sérvia x Eslovênia",
-     "odd": 2.37
-    },
-    {
-     "h": "13:32",
-     "jogo": "Espanha x Geórgia",
-     "odd": 2.02
-    },
-    {
-     "h": "13:35",
-     "jogo": "Inglaterra x França",
-     "odd": 1.8
-    }
-   ],
-   "gatilho": "odd 2.02",
-   "alvo": {
-    "h": "13:32",
-    "jogo": "Espanha x Geórgia",
-    "odd": 2.02,
-    "unidades": 2,
-    "desde": 1785414705005
-   },
-   "iniciadoEm": 1785414403001,
-   "tiros": [
-    {
-     "h": "13:29",
-     "jogo": "Sérvia x Eslovênia",
-     "odd": 2.37,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785398142292,
+   "euro": 1785414909191,
    "super": 1785412305094,
    "premier": 1785412608200,
    "copa": 1785411429495
@@ -2497,7 +2443,7 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 8
+   "2026-07-30": 9
   },
   "_gatilhoAtual": {
    "tipo": "odd",
