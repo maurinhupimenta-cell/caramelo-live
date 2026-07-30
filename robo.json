@@ -1457,13 +1457,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -32.9,
-  "ciclos": 747,
-  "greens": 503,
+  "saldo": -31.9,
+  "ciclos": 748,
+  "greens": 504,
   "redsCiclo": 77,
   "aborts": 0,
   "descartes": 167,
   "historico": [
+   {
+    "quando": "2026-07-30T21:23:54.128Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Chelsea x Brentford @2.05 (tiro 1) · gatilho: odd 2.07"
+   },
    {
     "quando": "2026-07-30T20:55:48.324Z",
     "resultado": "GREEN",
@@ -2708,43 +2714,14 @@
    }
   ],
   "consumidas": {
-   "copa": 1785444948126
+   "copa": 1785444948126,
+   "premier": 1785446633933
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:21",
-     "jogo": "Chelsea x Brentford",
-     "odd": 2.05
-    },
-    {
-     "h": "22:24",
-     "jogo": "Tottenham x Burnley",
-     "odd": 2.07
-    },
-    {
-     "h": "22:27",
-     "jogo": "Newcastle x Norwich",
-     "odd": 1.85
-    }
-   ],
-   "gatilho": "odd 2.07",
-   "alvo": {
-    "h": "22:21",
-    "jogo": "Chelsea x Brentford",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785445937924
-   },
-   "iniciadoEm": 1785445937924
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785439551897,
    "super": 1785443024122,
-   "premier": 1785434902603,
+   "premier": 1785446633933,
    "copa": 1785444948126
   },
   "dias": {
@@ -2762,7 +2739,7 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 18.6
+   "2026-07-30": 19.6
   },
   "_gatilhoAtual": {
    "tipo": "odd",
