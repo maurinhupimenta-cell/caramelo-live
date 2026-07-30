@@ -1126,13 +1126,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -48.6,
-  "ciclos": 711,
-  "greens": 471,
+  "saldo": -48.3,
+  "ciclos": 712,
+  "greens": 472,
   "redsCiclo": 75,
   "aborts": 0,
   "descartes": 165,
   "historico": [
+   {
+    "quando": "2026-07-30T05:17:35.300Z",
+    "resultado": "GREEN",
+    "unidades": 0.3,
+    "detalhe": "super · Santiago x Belo Horizonte @1.83 (tiro 3) · gatilho: time Buenos Aires"
+   },
    {
     "quando": "2026-07-30T04:23:41.494Z",
     "resultado": "GREEN",
@@ -2161,56 +2167,13 @@
    }
   ],
   "consumidas": {
-   "premier": 1785385421301
+   "premier": 1785385421301,
+   "super": 1785388655105
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "06:07",
-     "jogo": "Asuncion x La Boca",
-     "odd": 2.05
-    },
-    {
-     "h": "06:10",
-     "jogo": "Buenos Aires x Avellaneda",
-     "odd": 1.9
-    },
-    {
-     "h": "06:13",
-     "jogo": "Santiago x Belo Horizonte",
-     "odd": 1.83
-    }
-   ],
-   "gatilho": "time Buenos Aires",
-   "alvo": {
-    "h": "06:13",
-    "jogo": "Santiago x Belo Horizonte",
-    "odd": 1.83,
-    "unidades": 4,
-    "desde": 1785388407499
-   },
-   "iniciadoEm": 1785387750797,
-   "tiros": [
-    {
-     "h": "06:07",
-     "jogo": "Asuncion x La Boca",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "06:10",
-     "jogo": "Buenos Aires x Avellaneda",
-     "odd": 1.9,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785378001192,
-   "super": 1785384076503,
+   "super": 1785388655105,
    "premier": 1785385421301,
    "copa": 1785363704496
   },
@@ -2229,7 +2192,7 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 2.9
+   "2026-07-30": 3.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
