@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -123.4,
-  "ciclos": 701,
-  "greens": 433,
+  "saldo": -122.3,
+  "ciclos": 702,
+  "greens": 434,
   "redsCiclo": 115,
   "aborts": 0,
   "descartes": 153,
   "historico": [
+   {
+    "quando": "2026-07-30T21:02:46.426Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Equador x Costa do Marfim @2.07 (tiro 2) · gatilho: time Egito"
+   },
    {
     "quando": "2026-07-30T20:11:57.427Z",
     "resultado": "RED_CICLO",
@@ -1415,49 +1421,12 @@
    }
   ],
   "consumidas": {
-   "premier": 1785442317229
+   "premier": 1785442317229,
+   "copa": 1785445366231
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "21:55",
-     "jogo": "Cabo Verde x Egito",
-     "odd": 2.1
-    },
-    {
-     "h": "21:58",
-     "jogo": "Equador x Costa do Marfim",
-     "odd": 2.07
-    },
-    {
-     "h": "22:01",
-     "jogo": "Noruega x Nova Zelândia",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "time Egito",
-   "alvo": {
-    "h": "21:58",
-    "jogo": "Equador x Costa do Marfim",
-    "odd": 2.07,
-    "unidades": 2,
-    "desde": 1785445245629
-   },
-   "iniciadoEm": 1785444768331,
-   "tiros": [
-    {
-     "h": "21:55",
-     "jogo": "Cabo Verde x Egito",
-     "odd": 2.1,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785441167028,
+   "copa": 1785445366231,
    "premier": 1785442317229,
    "euro": 1785441529925,
    "super": 1785440742333
@@ -1478,7 +1447,7 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -33.4
+   "2026-07-30": -32.3
   },
   "_gatilhoAtual": {
    "tipo": "seq",
