@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -87.5,
-  "ciclos": 660,
+  "saldo": -94.5,
+  "ciclos": 661,
   "greens": 410,
-  "redsCiclo": 105,
+  "redsCiclo": 106,
   "aborts": 0,
   "descartes": 145,
   "historico": [
+   {
+    "quando": "2026-07-30T08:46:42.895Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: coluna :41"
+   },
    {
     "quando": "2026-07-30T08:40:07.993Z",
     "resultado": "GREEN_OBS",
@@ -1170,57 +1176,14 @@
   ],
   "consumidas": {
    "copa": 1785399065495,
-   "premier": 1785399998996
+   "premier": 1785399998996,
+   "euro": 1785401202699
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "09:38",
-     "jogo": "Polônia x Dinamarca",
-     "odd": 2.55
-    },
-    {
-     "h": "09:41",
-     "jogo": "Turquia x Itália",
-     "odd": 2.5
-    },
-    {
-     "h": "09:44",
-     "jogo": "Albânia x Escócia",
-     "odd": 2.55
-    }
-   ],
-   "gatilho": "coluna :41",
-   "alvo": {
-    "h": "09:44",
-    "jogo": "Albânia x Escócia",
-    "odd": 2.55,
-    "unidades": 4,
-    "desde": 1785401023594
-   },
-   "iniciadoEm": 1785400306900,
-   "tiros": [
-    {
-     "h": "09:38",
-     "jogo": "Polônia x Dinamarca",
-     "odd": 2.55,
-     "unidades": 1
-    },
-    {
-     "h": "09:41",
-     "jogo": "Turquia x Itália",
-     "odd": 2.5,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785399065495,
    "premier": 1785399998996,
-   "euro": 1785396522694,
+   "euro": 1785401202699,
    "super": 1785397207797
   },
   "dias": {
@@ -1239,13 +1202,13 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": 2.5
+   "2026-07-30": -4.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "La Boca",
    "n": 14,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
