@@ -1304,7 +1304,37 @@
    "copa": 1785423750303,
    "premier": 1785424395700
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:13",
+     "jogo": "La Plata x Asuncion",
+     "odd": 2.55
+    },
+    {
+     "h": "16:16",
+     "jogo": "Bogota x Buenos Aires",
+     "odd": 2.3
+    },
+    {
+     "h": "16:19",
+     "jogo": "Lima x Penarol",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "odd 2.55",
+   "alvo": {
+    "h": "16:13",
+    "jogo": "La Plata x Asuncion",
+    "odd": 2.55,
+    "unidades": 1,
+    "desde": 1785424410396
+   },
+   "iniciadoEm": 1785424410396
+  },
   "cooldown": {
    "copa": 1785423750303,
    "premier": 1785424395700,
@@ -1330,10 +1360,10 @@
    "2026-07-30": -11.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Tottenham",
-   "n": 30,
-   "start": 2
+   "tipo": "odd",
+   "chave": "2.55",
+   "n": 9,
+   "start": 1
   },
   "_obs": {}
  },
