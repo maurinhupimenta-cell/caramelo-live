@@ -2654,7 +2654,37 @@
    "copa": 1785436486795,
    "super": 1785436725895
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:08",
+     "jogo": "Bélgica x Escócia",
+     "odd": 1.9
+    },
+    {
+     "h": "20:11",
+     "jogo": "Eslováquia x Ucrânia",
+     "odd": 2
+    },
+    {
+     "h": "20:14",
+     "jogo": "França x Espanha",
+     "odd": 1.8
+    }
+   ],
+   "gatilho": "placar empate 2-2",
+   "alvo": {
+    "h": "20:08",
+    "jogo": "Bélgica x Escócia",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1785438340703
+   },
+   "iniciadoEm": 1785438340703
+  },
   "cooldown": {
    "euro": 1785434066193,
    "super": 1785436725895,
@@ -2679,8 +2709,8 @@
    "2026-07-30": 15.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGGR",
+   "tipo": "placar",
+   "chave": "empate 2-2",
    "n": 12,
    "start": 1
   },
