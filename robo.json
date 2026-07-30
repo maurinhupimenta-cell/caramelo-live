@@ -2131,7 +2131,37 @@
   "consumidas": {
    "super": 1785384076503
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:21",
+     "jogo": "Brighton x Islington",
+     "odd": 1.85
+    },
+    {
+     "h": "05:24",
+     "jogo": "Palace x Burnley",
+     "odd": 1.87
+    },
+    {
+     "h": "05:27",
+     "jogo": "Chelsea x Islington",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "odd 1.87",
+   "alvo": {
+    "h": "05:21",
+    "jogo": "Brighton x Islington",
+    "odd": 1.85,
+    "unidades": 1,
+    "desde": 1785385109092
+   },
+   "iniciadoEm": 1785385109092
+  },
   "cooldown": {
    "euro": 1785378001192,
    "super": 1785384076503,
@@ -2156,9 +2186,9 @@
    "2026-07-30": 2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Agua Branca",
-   "n": 10,
+   "tipo": "odd",
+   "chave": "1.87",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
