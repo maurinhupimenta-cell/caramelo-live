@@ -244,13 +244,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -91.4,
-  "ciclos": 644,
-  "greens": 399,
+  "saldo": -90.4,
+  "ciclos": 645,
+  "greens": 400,
   "redsCiclo": 103,
   "aborts": 0,
   "descartes": 142,
   "historico": [
+   {
+    "quando": "2026-07-30T04:44:41.392Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Burnley x Everton @2.05 (tiro 1) · gatilho: time Tottenham"
+   },
    {
     "quando": "2026-07-30T03:51:53.398Z",
     "resultado": "RED_CICLO",
@@ -1105,42 +1111,13 @@
    }
   ],
   "consumidas": {
-   "copa": 1785383513203
+   "copa": 1785383513203,
+   "premier": 1785386681198
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:42",
-     "jogo": "Burnley x Everton",
-     "odd": 2.05
-    },
-    {
-     "h": "05:45",
-     "jogo": "City x Tottenham",
-     "odd": 2.3
-    },
-    {
-     "h": "05:48",
-     "jogo": "Burnley x United",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "time Tottenham",
-   "alvo": {
-    "h": "05:42",
-    "jogo": "Burnley x Everton",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785386007302
-   },
-   "iniciadoEm": 1785386007302
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785383513203,
-   "premier": 1785382375203,
+   "premier": 1785386681198,
    "euro": 1785382948699,
    "super": 1785381988993
   },
@@ -1160,13 +1137,13 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -1.4
+   "2026-07-30": -0.4
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Leicester",
    "n": 10,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
