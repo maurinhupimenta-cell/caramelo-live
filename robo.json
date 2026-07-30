@@ -2620,12 +2620,41 @@
    }
   ],
   "consumidas": {
-   "copa": 1785431938499,
    "super": 1785432445491,
    "euro": 1785434066193,
    "premier": 1785434902603
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:28",
+     "jogo": "Qatar x Alemanha",
+     "odd": 1.93
+    },
+    {
+     "h": "19:31",
+     "jogo": "Equador x Arábia Saudita",
+     "odd": 1.87
+    },
+    {
+     "h": "19:34",
+     "jogo": "Uruguai x Croácia",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "time Equador",
+   "alvo": {
+    "h": "19:28",
+    "jogo": "Qatar x Alemanha",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1785435582691
+   },
+   "iniciadoEm": 1785435582691
+  },
   "cooldown": {
    "euro": 1785434066193,
    "super": 1785432445491,
@@ -2650,10 +2679,10 @@
    "2026-07-30": 13.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":00",
-   "n": 18,
-   "start": 1
+   "tipo": "time",
+   "chave": "Equador",
+   "n": 17,
+   "start": 3
   },
   "_obs": {}
  }
