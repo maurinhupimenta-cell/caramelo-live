@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -90.3,
-  "ciclos": 656,
-  "greens": 408,
+  "saldo": -89,
+  "ciclos": 657,
+  "greens": 409,
   "redsCiclo": 105,
   "aborts": 0,
   "descartes": 143,
   "historico": [
+   {
+    "quando": "2026-07-30T08:11:05.599Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "copa · Uzbequistão x Países Baixos @2.3 (tiro 1) · gatilho: time Tunísia"
+   },
    {
     "quando": "2026-07-30T07:40:07.994Z",
     "resultado": "RED_CICLO",
@@ -1147,41 +1153,12 @@
   "consumidas": {
    "premier": 1785395856997,
    "euro": 1785396522694,
-   "super": 1785397207797
+   "super": 1785397207797,
+   "copa": 1785399065495
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "09:07",
-     "jogo": "Uzbequistão x Países Baixos",
-     "odd": 2.3
-    },
-    {
-     "h": "09:10",
-     "jogo": "Tunísia x Egito",
-     "odd": 2.4
-    },
-    {
-     "h": "09:13",
-     "jogo": "Bélgica x Equador",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Tunísia",
-   "alvo": {
-    "h": "09:07",
-    "jogo": "Uzbequistão x Países Baixos",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1785398486205
-   },
-   "iniciadoEm": 1785398486205
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785394885700,
+   "copa": 1785399065495,
    "premier": 1785395856997,
    "euro": 1785396522694,
    "super": 1785397207797
@@ -1202,13 +1179,13 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -0.3
+   "2026-07-30": 1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Tunísia",
-   "n": 11,
-   "start": 2
+   "tipo": "coluna",
+   "chave": ":13",
+   "n": 9,
+   "start": 1
   },
   "_obs": {}
  },
