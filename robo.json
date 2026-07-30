@@ -213,12 +213,18 @@
  },
  "o25": {
   "saldo": -87.5,
-  "ciclos": 659,
+  "ciclos": 660,
   "greens": 410,
   "redsCiclo": 105,
   "aborts": 0,
-  "descartes": 144,
+  "descartes": 145,
   "historico": [
+   {
+    "quando": "2026-07-30T08:40:07.993Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho time La Boca) — liga REARMADA"
+   },
    {
     "quando": "2026-07-30T08:31:45.097Z",
     "resultado": "GREEN_OBS",
@@ -1163,11 +1169,40 @@
    }
   ],
   "consumidas": {
-   "super": 1785397207797,
    "copa": 1785399065495,
    "premier": 1785399998996
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:38",
+     "jogo": "Polônia x Dinamarca",
+     "odd": 2.55
+    },
+    {
+     "h": "09:41",
+     "jogo": "Turquia x Itália",
+     "odd": 2.5
+    },
+    {
+     "h": "09:44",
+     "jogo": "Albânia x Escócia",
+     "odd": 2.55
+    }
+   ],
+   "gatilho": "coluna :41",
+   "alvo": {
+    "h": "09:38",
+    "jogo": "Polônia x Dinamarca",
+    "odd": 2.55,
+    "unidades": 1,
+    "desde": 1785400306900
+   },
+   "iniciadoEm": 1785400306900
+  },
   "cooldown": {
    "copa": 1785399065495,
    "premier": 1785399998996,
@@ -1194,14 +1229,14 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":30",
+   "chave": ":41",
    "n": 9,
    "start": 1
   },
   "_obs": {
-   "euro": {
-    "desde": 1785400143100,
-    "gatilho": "coluna :41"
+   "super": {
+    "desde": 1785400807992,
+    "gatilho": "time La Boca"
    }
   }
  },
