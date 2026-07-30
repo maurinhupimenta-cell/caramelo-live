@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -97.4,
-  "ciclos": 679,
-  "greens": 421,
+  "saldo": -96.3,
+  "ciclos": 680,
+  "greens": 422,
   "redsCiclo": 109,
   "aborts": 0,
   "descartes": 149,
   "historico": [
+   {
+    "quando": "2026-07-30T13:56:55.893Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Newcastle x Norwich @2.07 (tiro 1) · gatilho: coluna :54"
+   },
    {
     "quando": "2026-07-30T13:52:28.090Z",
     "resultado": "GREEN",
@@ -1285,42 +1291,13 @@
   "consumidas": {
    "super": 1785418442797,
    "euro": 1785419222001,
-   "copa": 1785419547897
+   "copa": 1785419547897,
+   "premier": 1785419815697
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:54",
-     "jogo": "Newcastle x Norwich",
-     "odd": 2.07
-    },
-    {
-     "h": "14:57",
-     "jogo": "Wolverhampton x Palace",
-     "odd": 2.07
-    },
-    {
-     "h": "15:00",
-     "jogo": "United x Aston",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "coluna :54",
-   "alvo": {
-    "h": "14:54",
-    "jogo": "Newcastle x Norwich",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1785419549502
-   },
-   "iniciadoEm": 1785419549502
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785419547897,
-   "premier": 1785415840702,
+   "premier": 1785419815697,
    "euro": 1785419222001,
    "super": 1785418442797
   },
@@ -1340,7 +1317,7 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -7.4
+   "2026-07-30": -6.3
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
