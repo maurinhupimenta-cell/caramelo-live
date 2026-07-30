@@ -1265,12 +1265,41 @@
    }
   ],
   "consumidas": {
-   "euro": 1785414908991,
    "copa": 1785415223503,
    "premier": 1785415840702,
    "super": 1785418442797
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:38",
+     "jogo": "Croácia x Geórgia",
+     "odd": 2.5
+    },
+    {
+     "h": "14:41",
+     "jogo": "Turquia x Alemanha",
+     "odd": 2.5
+    },
+    {
+     "h": "14:44",
+     "jogo": "Romênia x Suíça",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "coluna :41",
+   "alvo": {
+    "h": "14:38",
+    "jogo": "Croácia x Geórgia",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1785418522300
+   },
+   "iniciadoEm": 1785418522300
+  },
   "cooldown": {
    "copa": 1785415223503,
    "premier": 1785415840702,
@@ -1296,9 +1325,9 @@
    "2026-07-30": -11.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRGR",
-   "n": 8,
+   "tipo": "coluna",
+   "chave": ":41",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
@@ -2453,7 +2482,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1785414909191,
    "premier": 1785416576498,
    "copa": 1785417364998,
    "super": 1785417546592
