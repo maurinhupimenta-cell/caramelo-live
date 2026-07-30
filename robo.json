@@ -1155,7 +1155,45 @@
    "super": 1785397207797,
    "copa": 1785399065495
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "09:21",
+     "jogo": "Everton x Tottenham",
+     "odd": 2.35
+    },
+    {
+     "h": "09:24",
+     "jogo": "Islington x Brentford",
+     "odd": 2.25
+    },
+    {
+     "h": "09:27",
+     "jogo": "Brighton x City",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "time Tottenham",
+   "alvo": {
+    "h": "09:24",
+    "jogo": "Islington x Brentford",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1785399818601
+   },
+   "iniciadoEm": 1785399459597,
+   "tiros": [
+    {
+     "h": "09:21",
+     "jogo": "Everton x Tottenham",
+     "odd": 2.35,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1785399065495,
    "premier": 1785395856997,
@@ -1182,7 +1220,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":13",
+   "chave": ":30",
    "n": 9,
    "start": 1
   },
