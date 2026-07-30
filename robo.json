@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -101.4,
-  "ciclos": 671,
-  "greens": 415,
+  "saldo": -99.4,
+  "ciclos": 672,
+  "greens": 416,
   "redsCiclo": 108,
   "aborts": 0,
   "descartes": 148,
   "historico": [
+   {
+    "quando": "2026-07-30T11:51:44.997Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "super · Guayaquil x Avellaneda @2.5 (tiro 2) · gatilho: coluna :49"
+   },
    {
     "quando": "2026-07-30T11:47:05.499Z",
     "resultado": "GREEN_OBS",
@@ -1236,52 +1242,15 @@
   ],
   "consumidas": {
    "copa": 1785411243593,
-   "premier": 1785411700793
+   "premier": 1785411700793,
+   "super": 1785412304892
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "12:46",
-     "jogo": "Buenos Aires x Santiago",
-     "odd": 2.5
-    },
-    {
-     "h": "12:49",
-     "jogo": "Guayaquil x Avellaneda",
-     "odd": 2.5
-    },
-    {
-     "h": "12:52",
-     "jogo": "Belo Horizonte x Agua Branca",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "coluna :49",
-   "alvo": {
-    "h": "12:49",
-    "jogo": "Guayaquil x Avellaneda",
-    "odd": 2.5,
-    "unidades": 2,
-    "desde": 1785412166496
-   },
-   "iniciadoEm": 1785411702890,
-   "tiros": [
-    {
-     "h": "12:46",
-     "jogo": "Buenos Aires x Santiago",
-     "odd": 2.5,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785411243593,
    "premier": 1785411700793,
    "euro": 1785408423497,
-   "super": 1785401528104
+   "super": 1785412304892
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -1299,7 +1268,7 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -11.4
+   "2026-07-30": -9.4
   },
   "_gatilhoAtual": {
    "tipo": "placar",
@@ -1310,13 +1279,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -45.4,
-  "ciclos": 724,
-  "greens": 482,
+  "saldo": -44.5,
+  "ciclos": 725,
+  "greens": 483,
   "redsCiclo": 76,
   "aborts": 0,
   "descartes": 166,
   "historico": [
+   {
+    "quando": "2026-07-30T11:51:45.200Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Guayaquil x Avellaneda @1.93 (tiro 2) · gatilho: coluna :49"
+   },
    {
     "quando": "2026-07-30T11:37:09.692Z",
     "resultado": "GREEN",
@@ -2423,50 +2398,13 @@
    }
   ],
   "consumidas": {
-   "copa": 1785411429495
+   "copa": 1785411429495,
+   "super": 1785412305094
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "12:46",
-     "jogo": "Buenos Aires x Santiago",
-     "odd": 1.85
-    },
-    {
-     "h": "12:49",
-     "jogo": "Guayaquil x Avellaneda",
-     "odd": 1.93
-    },
-    {
-     "h": "12:52",
-     "jogo": "Belo Horizonte x Agua Branca",
-     "odd": 1.83
-    }
-   ],
-   "gatilho": "coluna :49",
-   "alvo": {
-    "h": "12:49",
-    "jogo": "Guayaquil x Avellaneda",
-    "odd": 1.93,
-    "unidades": 2,
-    "desde": 1785412166696
-   },
-   "iniciadoEm": 1785411467495,
-   "tiros": [
-    {
-     "h": "12:46",
-     "jogo": "Buenos Aires x Santiago",
-     "odd": 1.85,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785398142292,
-   "super": 1785405887401,
+   "super": 1785412305094,
    "premier": 1785408288000,
    "copa": 1785411429495
   },
@@ -2485,7 +2423,7 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 6.1
+   "2026-07-30": 7
   },
   "_gatilhoAtual": {
    "tipo": "odd",
