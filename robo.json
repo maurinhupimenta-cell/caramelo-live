@@ -213,12 +213,18 @@
  },
  "o25": {
   "saldo": -101.4,
-  "ciclos": 670,
+  "ciclos": 671,
   "greens": 415,
   "redsCiclo": 108,
   "aborts": 0,
-  "descartes": 147,
+  "descartes": 148,
   "historico": [
+   {
+    "quando": "2026-07-30T11:47:05.499Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho placar empate 2-2) — liga REARMADA"
+   },
    {
     "quando": "2026-07-30T11:41:40.897Z",
     "resultado": "GREEN",
@@ -1234,8 +1240,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "12:46",
@@ -1255,13 +1261,21 @@
    ],
    "gatilho": "coluna :49",
    "alvo": {
-    "h": "12:46",
-    "jogo": "Buenos Aires x Santiago",
+    "h": "12:49",
+    "jogo": "Guayaquil x Avellaneda",
     "odd": 2.5,
-    "unidades": 1,
-    "desde": 1785411702890
+    "unidades": 2,
+    "desde": 1785412166496
    },
-   "iniciadoEm": 1785411702890
+   "iniciadoEm": 1785411702890,
+   "tiros": [
+    {
+     "h": "12:46",
+     "jogo": "Buenos Aires x Santiago",
+     "odd": 2.5,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785411243593,
@@ -1288,9 +1302,9 @@
    "2026-07-30": -11.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":49",
-   "n": 12,
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
@@ -2413,8 +2427,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "12:46",
@@ -2434,13 +2448,21 @@
    ],
    "gatilho": "coluna :49",
    "alvo": {
-    "h": "12:46",
-    "jogo": "Buenos Aires x Santiago",
-    "odd": 1.85,
-    "unidades": 1,
-    "desde": 1785411467495
+    "h": "12:49",
+    "jogo": "Guayaquil x Avellaneda",
+    "odd": 1.93,
+    "unidades": 2,
+    "desde": 1785412166696
    },
-   "iniciadoEm": 1785411467495
+   "iniciadoEm": 1785411467495,
+   "tiros": [
+    {
+     "h": "12:46",
+     "jogo": "Buenos Aires x Santiago",
+     "odd": 1.85,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785398142292,
@@ -2469,7 +2491,7 @@
    "tipo": "odd",
    "chave": "2.05",
    "n": 22,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
