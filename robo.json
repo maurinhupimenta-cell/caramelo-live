@@ -2049,7 +2049,37 @@
   "consumidas": {
    "euro": 1785373832704
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:36",
+     "jogo": "Liverpool x United",
+     "odd": 1.93
+    },
+    {
+     "h": "02:39",
+     "jogo": "Islington x Palace",
+     "odd": 1.98
+    },
+    {
+     "h": "02:42",
+     "jogo": "City x Norwich",
+     "odd": 2
+    }
+   ],
+   "gatilho": "time Palace",
+   "alvo": {
+    "h": "02:36",
+    "jogo": "Liverpool x United",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1785374826400
+   },
+   "iniciadoEm": 1785374826400
+  },
   "cooldown": {
    "euro": 1785373832704,
    "super": 1785364770801,
@@ -2073,10 +2103,10 @@
    "2026-07-29": -12.4
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "1-0 / 0-1",
+   "tipo": "time",
+   "chave": "Palace",
    "n": 8,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
