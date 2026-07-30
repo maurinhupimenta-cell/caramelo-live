@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -117.3,
-  "ciclos": 692,
-  "greens": 427,
+  "saldo": -115.4,
+  "ciclos": 693,
+  "greens": 428,
   "redsCiclo": 113,
   "aborts": 0,
   "descartes": 152,
   "historico": [
+   {
+    "quando": "2026-07-30T17:57:27.396Z",
+    "resultado": "GREEN",
+    "unidades": 1.9,
+    "detalhe": "premier · West Ham x Liverpool @2.45 (tiro 2) · gatilho: coluna :54"
+   },
    {
     "quando": "2026-07-30T17:40:04.293Z",
     "resultado": "RED_CICLO",
@@ -1362,50 +1368,13 @@
   ],
   "consumidas": {
    "copa": 1785432507292,
-   "super": 1785433204093
+   "super": 1785433204093,
+   "premier": 1785434247203
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "18:51",
-     "jogo": "Norwich x Newcastle",
-     "odd": 2.05
-    },
-    {
-     "h": "18:54",
-     "jogo": "West Ham x Liverpool",
-     "odd": 2.45
-    },
-    {
-     "h": "18:57",
-     "jogo": "Wolverhampton x Islington",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "coluna :54",
-   "alvo": {
-    "h": "18:54",
-    "jogo": "West Ham x Liverpool",
-    "odd": 2.45,
-    "unidades": 2,
-    "desde": 1785434028700
-   },
-   "iniciadoEm": 1785433353393,
-   "tiros": [
-    {
-     "h": "18:51",
-     "jogo": "Norwich x Newcastle",
-     "odd": 2.05,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785432507292,
-   "premier": 1785429097294,
+   "premier": 1785434247203,
    "euro": 1785429869801,
    "super": 1785433204093
   },
@@ -1425,7 +1394,7 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -27.3
+   "2026-07-30": -25.4
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
