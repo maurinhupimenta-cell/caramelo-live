@@ -1328,13 +1328,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -46.8,
-  "ciclos": 731,
-  "greens": 488,
+  "saldo": -46,
+  "ciclos": 732,
+  "greens": 489,
   "redsCiclo": 77,
   "aborts": 0,
   "descartes": 166,
   "historico": [
+   {
+    "quando": "2026-07-30T14:20:49.692Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "premier · Leicester x Newcastle @1.9 (tiro 2) · gatilho: placar empate 2-2"
+   },
    {
     "quando": "2026-07-30T13:58:41.999Z",
     "resultado": "RED_CICLO",
@@ -2483,51 +2489,14 @@
    }
   ],
   "consumidas": {
-   "euro": 1785419921894
+   "euro": 1785419921894,
+   "premier": 1785421249499
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "15:15",
-     "jogo": "Palace x Brentford",
-     "odd": 1.98
-    },
-    {
-     "h": "15:18",
-     "jogo": "Leicester x Newcastle",
-     "odd": 1.9
-    },
-    {
-     "h": "15:21",
-     "jogo": "Aston x Everton",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "placar empate 2-2",
-   "alvo": {
-    "h": "15:18",
-    "jogo": "Leicester x Newcastle",
-    "odd": 1.9,
-    "unidades": 2,
-    "desde": 1785421073903
-   },
-   "iniciadoEm": 1785420713700,
-   "tiros": [
-    {
-     "h": "15:15",
-     "jogo": "Palace x Brentford",
-     "odd": 1.98,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785419921894,
    "super": 1785417546592,
-   "premier": 1785416576498,
+   "premier": 1785421249499,
    "copa": 1785417364998
   },
   "dias": {
@@ -2545,7 +2514,7 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 4.7
+   "2026-07-30": 5.5
   },
   "_gatilhoAtual": {
    "tipo": "odd",
