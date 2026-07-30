@@ -1062,13 +1062,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -53.6,
-  "ciclos": 706,
-  "greens": 466,
+  "saldo": -52.7,
+  "ciclos": 707,
+  "greens": 467,
   "redsCiclo": 75,
   "aborts": 0,
   "descartes": 165,
   "historico": [
+   {
+    "quando": "2026-07-30T02:20:01.296Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Portugal x Alemanha @1.9 (tiro 1) · gatilho: placar 0-0"
+   },
    {
     "quando": "2026-07-30T01:38:42.493Z",
     "resultado": "GREEN",
@@ -2067,41 +2073,12 @@
    }
   ],
   "consumidas": {
-   "premier": 1785375522301
+   "premier": 1785375522301,
+   "euro": 1785378001192
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:17",
-     "jogo": "Portugal x Alemanha",
-     "odd": 1.9
-    },
-    {
-     "h": "03:20",
-     "jogo": "Ucrânia x Suíça",
-     "odd": 1.93
-    },
-    {
-     "h": "03:23",
-     "jogo": "Áustria x Espanha",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "placar 0-0",
-   "alvo": {
-    "h": "03:17",
-    "jogo": "Portugal x Alemanha",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1785377733291
-   },
-   "iniciadoEm": 1785377733291
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785373832704,
+   "euro": 1785378001192,
    "super": 1785364770801,
    "premier": 1785375522301,
    "copa": 1785363704496
@@ -2120,7 +2097,7 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": -11.5
+   "2026-07-29": -10.6
   },
   "_gatilhoAtual": {
    "tipo": "placar",
