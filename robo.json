@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -77.6,
-  "ciclos": 653,
-  "greens": 407,
+  "saldo": -76.3,
+  "ciclos": 654,
+  "greens": 408,
   "redsCiclo": 103,
   "aborts": 0,
   "descartes": 143,
   "historico": [
+   {
+    "quando": "2026-07-30T07:17:37.195Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "premier · Wolverhampton x Leicester @2.15 (tiro 2) · gatilho: time Leicester"
+   },
    {
     "quando": "2026-07-30T07:01:25.896Z",
     "resultado": "GREEN",
@@ -1128,50 +1134,43 @@
   ],
   "consumidas": {
    "super": 1785392704703,
-   "copa": 1785394885700
+   "copa": 1785394885700,
+   "premier": 1785395856997
   },
   "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "08:12",
-     "jogo": "Aston x Brentford",
-     "odd": 2.4
+     "h": "08:20",
+     "jogo": "Portugal x Áustria",
+     "odd": 2.3
     },
     {
-     "h": "08:15",
-     "jogo": "Wolverhampton x Leicester",
-     "odd": 2.15
+     "h": "08:23",
+     "jogo": "Espanha x Alemanha",
+     "odd": 2.02
     },
     {
-     "h": "08:18",
-     "jogo": "Islington x West Ham",
-     "odd": 2.5
+     "h": "08:26",
+     "jogo": "República Tcheca x Eslováquia",
+     "odd": 2.55
     }
    ],
-   "gatilho": "time Leicester",
+   "gatilho": "time Alemanha",
    "alvo": {
-    "h": "08:15",
-    "jogo": "Wolverhampton x Leicester",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1785395691591
+    "h": "08:20",
+    "jogo": "Portugal x Áustria",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1785395859099
    },
-   "iniciadoEm": 1785395142902,
-   "tiros": [
-    {
-     "h": "08:12",
-     "jogo": "Aston x Brentford",
-     "odd": 2.4,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1785395859099
   },
   "cooldown": {
    "copa": 1785394885700,
-   "premier": 1785391537903,
+   "premier": 1785395856997,
    "euro": 1785392205194,
    "super": 1785392704703
   },
@@ -1191,13 +1190,13 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": 12.4
+   "2026-07-30": 13.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":27",
-   "n": 8,
-   "start": 3
+   "tipo": "time",
+   "chave": "Alemanha",
+   "n": 12,
+   "start": 1
   },
   "_obs": {}
  },
