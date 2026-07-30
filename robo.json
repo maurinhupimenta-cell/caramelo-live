@@ -2099,7 +2099,37 @@
   "consumidas": {
    "premier": 1785375522301
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:17",
+     "jogo": "Portugal x Alemanha",
+     "odd": 1.9
+    },
+    {
+     "h": "03:20",
+     "jogo": "Ucrânia x Suíça",
+     "odd": 1.93
+    },
+    {
+     "h": "03:23",
+     "jogo": "Áustria x Espanha",
+     "odd": 1.87
+    }
+   ],
+   "gatilho": "placar 0-0",
+   "alvo": {
+    "h": "03:17",
+    "jogo": "Portugal x Alemanha",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1785377733291
+   },
+   "iniciadoEm": 1785377733291
+  },
   "cooldown": {
    "euro": 1785373832704,
    "super": 1785364770801,
@@ -2123,8 +2153,8 @@
    "2026-07-29": -11.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Palace",
+   "tipo": "placar",
+   "chave": "0-0",
    "n": 8,
    "start": 1
   },
