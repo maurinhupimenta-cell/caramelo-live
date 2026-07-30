@@ -1454,13 +1454,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -34.9,
-  "ciclos": 745,
-  "greens": 501,
+  "saldo": -33.9,
+  "ciclos": 746,
+  "greens": 502,
   "redsCiclo": 77,
   "aborts": 0,
   "descartes": 167,
   "historico": [
+   {
+    "quando": "2026-07-30T20:23:44.229Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Lima x Medellin @1.95 (tiro 1) · gatilho: seq RRGGR"
+   },
    {
     "quando": "2026-07-30T19:41:54.128Z",
     "resultado": "GREEN",
@@ -2694,42 +2700,13 @@
   ],
   "consumidas": {
    "euro": 1785439551897,
-   "copa": 1785440513932
+   "copa": 1785440513932,
+   "super": 1785443024122
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:16",
-     "jogo": "Lima x Medellin",
-     "odd": 1.95
-    },
-    {
-     "h": "21:19",
-     "jogo": "Santos x Santiago",
-     "odd": 1.98
-    },
-    {
-     "h": "21:22",
-     "jogo": "Penarol x Montevideo",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "seq RRGGR",
-   "alvo": {
-    "h": "21:16",
-    "jogo": "Lima x Medellin",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1785442480732
-   },
-   "iniciadoEm": 1785442480732
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785439551897,
-   "super": 1785436725895,
+   "super": 1785443024122,
    "premier": 1785434902603,
    "copa": 1785440513932
   },
@@ -2748,7 +2725,7 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 16.6
+   "2026-07-30": 17.6
   },
   "_gatilhoAtual": {
    "tipo": "seq",
