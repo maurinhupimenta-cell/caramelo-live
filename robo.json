@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -92.7,
-  "ciclos": 637,
-  "greens": 394,
+  "saldo": -91.3,
+  "ciclos": 638,
+  "greens": 395,
   "redsCiclo": 102,
   "aborts": 0,
   "descartes": 141,
   "historico": [
+   {
+    "quando": "2026-07-30T02:19:36.994Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "copa · México x Iraque @2.4 (tiro 1) · gatilho: placar empate 1-1"
+   },
    {
     "quando": "2026-07-30T02:16:00.995Z",
     "resultado": "RED_CICLO",
@@ -1020,41 +1026,12 @@
   ],
   "consumidas": {
    "premier": 1785374812694,
-   "super": 1785377760801
+   "super": 1785377760801,
+   "copa": 1785377976801
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:16",
-     "jogo": "México x Iraque",
-     "odd": 2.4
-    },
-    {
-     "h": "03:19",
-     "jogo": "Áustria x Argélia",
-     "odd": 2.25
-    },
-    {
-     "h": "03:22",
-     "jogo": "Senegal x Jordânia",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "placar empate 1-1",
-   "alvo": {
-    "h": "03:16",
-    "jogo": "México x Iraque",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1785377773191
-   },
-   "iniciadoEm": 1785377773191
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785361238498,
+   "copa": 1785377976801,
    "premier": 1785374812694,
    "euro": 1785363520397,
    "super": 1785377760801
@@ -1074,12 +1051,12 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 22.7
+   "2026-07-29": 24.1
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 1-1",
-   "n": 9,
+   "n": 11,
    "start": 1
   },
   "_obs": {}
