@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -113.2,
-  "ciclos": 695,
-  "greens": 430,
+  "saldo": -112.1,
+  "ciclos": 696,
+  "greens": 431,
   "redsCiclo": 113,
   "aborts": 0,
   "descartes": 152,
   "historico": [
+   {
+    "quando": "2026-07-30T19:02:55.197Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Brentford x Brighton @2.1 (tiro 1) · gatilho: time Tottenham"
+   },
    {
     "quando": "2026-07-30T18:43:56.503Z",
     "resultado": "GREEN",
@@ -1380,12 +1386,13 @@
   ],
   "consumidas": {
    "copa": 1785436486598,
-   "euro": 1785437036400
+   "euro": 1785437036400,
+   "premier": 1785438175002
   },
   "ciclo": null,
   "cooldown": {
    "copa": 1785436486598,
-   "premier": 1785434247203,
+   "premier": 1785438175002,
    "euro": 1785437036400,
    "super": 1785433204093
   },
@@ -1405,12 +1412,12 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -23.2
+   "2026-07-30": -22.1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":41",
-   "n": 19,
+   "tipo": "time",
+   "chave": "Tottenham",
+   "n": 37,
    "start": 1
   },
   "_obs": {}
