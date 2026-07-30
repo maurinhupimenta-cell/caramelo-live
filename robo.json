@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -111.5,
-  "ciclos": 690,
-  "greens": 426,
+  "saldo": -110.3,
+  "ciclos": 691,
+  "greens": 427,
   "redsCiclo": 112,
   "aborts": 0,
   "descartes": 152,
   "historico": [
+   {
+    "quando": "2026-07-30T17:28:27.495Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Qatar x Noruega @2.2 (tiro 1) · gatilho: coluna :22"
+   },
    {
     "quando": "2026-07-30T17:27:25.401Z",
     "resultado": "GREEN_OBS",
@@ -1350,41 +1356,12 @@
   ],
   "consumidas": {
    "premier": 1785429097294,
-   "euro": 1785429869801
+   "euro": 1785429869801,
+   "copa": 1785432507292
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:22",
-     "jogo": "Qatar x Noruega",
-     "odd": 2.2
-    },
-    {
-     "h": "18:25",
-     "jogo": "Países Baixos x Irã",
-     "odd": 2.6
-    },
-    {
-     "h": "18:28",
-     "jogo": "Inglaterra x Uruguai",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "coluna :22",
-   "alvo": {
-    "h": "18:22",
-    "jogo": "Qatar x Noruega",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785432093393
-   },
-   "iniciadoEm": 1785432093393
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785428490696,
+   "copa": 1785432507292,
    "premier": 1785429097294,
    "euro": 1785429869801,
    "super": 1785425426397
@@ -1405,12 +1382,12 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -21.5
+   "2026-07-30": -20.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":22",
-   "n": 18,
+   "tipo": "seq",
+   "chave": "RRGRG",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
