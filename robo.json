@@ -213,12 +213,18 @@
  },
  "o25": {
   "saldo": -107.4,
-  "ciclos": 684,
+  "ciclos": 685,
   "greens": 424,
   "redsCiclo": 111,
   "aborts": 0,
-  "descartes": 149,
+  "descartes": 150,
   "historico": [
+   {
+    "quando": "2026-07-30T16:13:25.594Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho time Tottenham) — liga REARMADA"
+   },
    {
     "quando": "2026-07-30T15:41:28.100Z",
     "resultado": "GREEN",
@@ -1318,8 +1324,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:10",
@@ -1339,13 +1345,21 @@
    ],
    "gatilho": "seq GGGG",
    "alvo": {
-    "h": "17:10",
-    "jogo": "Croácia x Suécia",
-    "odd": 2.7,
-    "unidades": 1,
-    "desde": 1785427649094
+    "h": "17:13",
+    "jogo": "Arábia Saudita x Qatar",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1785428073198
    },
-   "iniciadoEm": 1785427649094
+   "iniciadoEm": 1785427649094,
+   "tiros": [
+    {
+     "h": "17:10",
+     "jogo": "Croácia x Suécia",
+     "odd": 2.7,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785423750303,
@@ -1372,10 +1386,10 @@
    "2026-07-30": -17.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGR",
-   "n": 17,
-   "start": 1
+   "tipo": "time",
+   "chave": "Equador",
+   "n": 15,
+   "start": 3
   },
   "_obs": {}
  },
