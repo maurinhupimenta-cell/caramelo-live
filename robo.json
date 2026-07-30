@@ -2210,7 +2210,45 @@
   "consumidas": {
    "super": 1785393067501
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "07:39",
+     "jogo": "Norwich x Southampton",
+     "odd": 2
+    },
+    {
+     "h": "07:42",
+     "jogo": "Newcastle x Liverpool",
+     "odd": 1.85
+    },
+    {
+     "h": "07:45",
+     "jogo": "Aston x Brighton",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "time Norwich",
+   "alvo": {
+    "h": "07:42",
+    "jogo": "Newcastle x Liverpool",
+    "odd": 1.85,
+    "unidades": 2,
+    "desde": 1785393697397
+   },
+   "iniciadoEm": 1785393337203,
+   "tiros": [
+    {
+     "h": "07:39",
+     "jogo": "Norwich x Southampton",
+     "odd": 2,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1785378001192,
    "super": 1785393067501,
@@ -2236,9 +2274,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Buenos Aires",
-   "n": 14,
-   "start": 2
+   "chave": "Norwich",
+   "n": 13,
+   "start": 1
   },
   "_obs": {}
  }
