@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -85.7,
-  "ciclos": 636,
+  "saldo": -92.7,
+  "ciclos": 637,
   "greens": 394,
-  "redsCiclo": 101,
+  "redsCiclo": 102,
   "aborts": 0,
   "descartes": 141,
   "historico": [
+   {
+    "quando": "2026-07-30T02:16:00.995Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: odd 2.4"
+   },
    {
     "quando": "2026-07-30T01:26:52.798Z",
     "resultado": "GREEN",
@@ -1013,58 +1019,15 @@
    }
   ],
   "consumidas": {
-   "premier": 1785374812694
+   "premier": 1785374812694,
+   "super": 1785377760801
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "03:07",
-     "jogo": "Montevideo x Santiago",
-     "odd": 2
-    },
-    {
-     "h": "03:10",
-     "jogo": "Guayaquil x Bogota",
-     "odd": 2.4
-    },
-    {
-     "h": "03:13",
-     "jogo": "Santiago x Buenos Aires",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "odd 2.4",
-   "alvo": {
-    "h": "03:13",
-    "jogo": "Santiago x Buenos Aires",
-    "odd": 1.95,
-    "unidades": 4,
-    "desde": 1785377611599
-   },
-   "iniciadoEm": 1785376871893,
-   "tiros": [
-    {
-     "h": "03:07",
-     "jogo": "Montevideo x Santiago",
-     "odd": 2,
-     "unidades": 1
-    },
-    {
-     "h": "03:10",
-     "jogo": "Guayaquil x Bogota",
-     "odd": 2.4,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785361238498,
    "premier": 1785374812694,
    "euro": 1785363520397,
-   "super": 1785366510301
+   "super": 1785377760801
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -1081,7 +1044,7 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 29.7
+   "2026-07-29": 22.7
   },
   "_gatilhoAtual": {
    "tipo": "placar",
