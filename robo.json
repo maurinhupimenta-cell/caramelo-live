@@ -1430,12 +1430,18 @@
  },
  "ambas": {
   "saldo": -39.6,
-  "ciclos": 738,
+  "ciclos": 739,
   "greens": 495,
   "redsCiclo": 77,
   "aborts": 0,
-  "descartes": 166,
+  "descartes": 167,
   "historico": [
+   {
+    "quando": "2026-07-30T17:44:25.093Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho placar empate 2-2) — liga REARMADA"
+   },
    {
     "quando": "2026-07-30T17:27:25.596Z",
     "resultado": "GREEN",
@@ -2660,6 +2666,11 @@
    "n": 10,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1785433465092,
+    "gatilho": "placar empate 2-2"
+   }
+  }
  }
 }
