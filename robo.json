@@ -1467,18 +1467,24 @@
    "tipo": "time",
    "chave": "Egito",
    "n": 11,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -35.6,
-  "ciclos": 744,
-  "greens": 500,
+  "saldo": -34.9,
+  "ciclos": 745,
+  "greens": 501,
   "redsCiclo": 77,
   "aborts": 0,
   "descartes": 167,
   "historico": [
+   {
+    "quando": "2026-07-30T19:41:54.128Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "copa · RD Congo x Jordânia @1.87 (tiro 2) · gatilho: time Equador"
+   },
    {
     "quando": "2026-07-30T19:25:52.001Z",
     "resultado": "GREEN",
@@ -2705,52 +2711,15 @@
    }
   ],
   "consumidas": {
-   "euro": 1785439551897
+   "euro": 1785439551897,
+   "copa": 1785440513932
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "20:34",
-     "jogo": "Alemanha x Equador",
-     "odd": 1.86
-    },
-    {
-     "h": "20:37",
-     "jogo": "RD Congo x Jordânia",
-     "odd": 1.87
-    },
-    {
-     "h": "20:40",
-     "jogo": "Portugal x México",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "time Equador",
-   "alvo": {
-    "h": "20:37",
-    "jogo": "RD Congo x Jordânia",
-    "odd": 1.87,
-    "unidades": 2,
-    "desde": 1785440325234
-   },
-   "iniciadoEm": 1785440140725,
-   "tiros": [
-    {
-     "h": "20:34",
-     "jogo": "Alemanha x Equador",
-     "odd": 1.86,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785439551897,
    "super": 1785436725895,
    "premier": 1785434902603,
-   "copa": 1785436486795
+   "copa": 1785440513932
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -2767,13 +2736,13 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 15.9
+   "2026-07-30": 16.6
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Egito",
    "n": 11,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
