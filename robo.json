@@ -1220,13 +1220,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -50.6,
-  "ciclos": 719,
-  "greens": 477,
+  "saldo": -49.3,
+  "ciclos": 720,
+  "greens": 478,
   "redsCiclo": 76,
   "aborts": 0,
   "descartes": 166,
   "historico": [
+   {
+    "quando": "2026-07-30T08:55:07.706Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "super · Porto Alegre x La Boca @2.25 (tiro 1) · gatilho: coluna :52"
+   },
    {
     "quando": "2026-07-30T08:02:36.895Z",
     "resultado": "GREEN",
@@ -2304,42 +2310,13 @@
   ],
   "consumidas": {
    "euro": 1785398142292,
-   "premier": 1785398556701
+   "premier": 1785398556701,
+   "super": 1785401707598
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "09:52",
-     "jogo": "Porto Alegre x La Boca",
-     "odd": 2.25
-    },
-    {
-     "h": "09:55",
-     "jogo": "Guayaquil x Rio de Janeiro",
-     "odd": 1.9
-    },
-    {
-     "h": "09:58",
-     "jogo": "Santiago x Asuncion",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "coluna :52",
-   "alvo": {
-    "h": "09:52",
-    "jogo": "Porto Alegre x La Boca",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785401369600
-   },
-   "iniciadoEm": 1785401369600
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785398142292,
-   "super": 1785397768095,
+   "super": 1785401707598,
    "premier": 1785398556701,
    "copa": 1785363704496
   },
@@ -2358,13 +2335,13 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 0.9
+   "2026-07-30": 2.2
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":52",
-   "n": 9,
-   "start": 1
+   "chave": ":04",
+   "n": 10,
+   "start": 2
   },
   "_obs": {}
  }
