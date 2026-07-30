@@ -1143,7 +1143,37 @@
    "premier": 1785395856997,
    "euro": 1785396522694
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:31",
+     "jogo": "Agua Branca x Sao Paulo",
+     "odd": 2.02
+    },
+    {
+     "h": "08:34",
+     "jogo": "Montevideo x Rio de Janeiro",
+     "odd": 2.1
+    },
+    {
+     "h": "08:37",
+     "jogo": "Santiago x Avellaneda",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time Agua Branca",
+   "alvo": {
+    "h": "08:31",
+    "jogo": "Agua Branca x Sao Paulo",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1785396525091
+   },
+   "iniciadoEm": 1785396525091
+  },
   "cooldown": {
    "copa": 1785394885700,
    "premier": 1785395856997,
@@ -2236,7 +2266,6 @@
    }
   ],
   "consumidas": {
-   "super": 1785393067501,
    "premier": 1785393877895
   },
   "ciclo": null,
