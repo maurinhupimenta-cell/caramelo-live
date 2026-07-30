@@ -1426,10 +1426,10 @@
    "2026-07-30": -25.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.07",
-   "n": 12,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":41",
+   "n": 19,
+   "start": 2
   },
   "_obs": {}
  },
@@ -2654,8 +2654,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "19:28",
@@ -2675,13 +2675,21 @@
    ],
    "gatilho": "time Equador",
    "alvo": {
-    "h": "19:28",
-    "jogo": "Qatar x Alemanha",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1785435582691
+    "h": "19:31",
+    "jogo": "Equador x Arábia Saudita",
+    "odd": 1.87,
+    "unidades": 2,
+    "desde": 1785436368295
    },
-   "iniciadoEm": 1785435582691
+   "iniciadoEm": 1785435582691,
+   "tiros": [
+    {
+     "h": "19:28",
+     "jogo": "Qatar x Alemanha",
+     "odd": 1.93,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785434066193,
@@ -2707,9 +2715,9 @@
    "2026-07-30": 13.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Equador",
-   "n": 17,
+   "tipo": "seq",
+   "chave": "RRGGR",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
