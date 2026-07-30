@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -110.3,
-  "ciclos": 691,
+  "saldo": -117.3,
+  "ciclos": 692,
   "greens": 427,
-  "redsCiclo": 112,
+  "redsCiclo": 113,
   "aborts": 0,
   "descartes": 152,
   "historico": [
+   {
+    "quando": "2026-07-30T17:40:04.293Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: seq RGRGG"
+   },
    {
     "quando": "2026-07-30T17:28:27.495Z",
     "resultado": "GREEN",
@@ -1356,58 +1362,15 @@
   ],
   "consumidas": {
    "euro": 1785429869801,
-   "copa": 1785432507292
+   "copa": 1785432507292,
+   "super": 1785433204093
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "18:31",
-     "jogo": "Asuncion x Santos",
-     "odd": 2.4
-    },
-    {
-     "h": "18:34",
-     "jogo": "La Plata x Sao Paulo",
-     "odd": 2.3
-    },
-    {
-     "h": "18:37",
-     "jogo": "Santos x Asuncion",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "seq RGRGG",
-   "alvo": {
-    "h": "18:37",
-    "jogo": "Santos x Asuncion",
-    "odd": 2.4,
-    "unidades": 4,
-    "desde": 1785433051094
-   },
-   "iniciadoEm": 1785432509396,
-   "tiros": [
-    {
-     "h": "18:31",
-     "jogo": "Asuncion x Santos",
-     "odd": 2.4,
-     "unidades": 1
-    },
-    {
-     "h": "18:34",
-     "jogo": "La Plata x Sao Paulo",
-     "odd": 2.3,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785432507292,
    "premier": 1785429097294,
    "euro": 1785429869801,
-   "super": 1785425426397
+   "super": 1785433204093
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -1425,7 +1388,7 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -20.3
+   "2026-07-30": -27.3
   },
   "_gatilhoAtual": {
    "tipo": "odd",
