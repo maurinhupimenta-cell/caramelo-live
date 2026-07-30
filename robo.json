@@ -2701,7 +2701,37 @@
   "consumidas": {
    "super": 1785443024122
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:52",
+     "jogo": "Jordânia x República Tcheca",
+     "odd": 2
+    },
+    {
+     "h": "21:55",
+     "jogo": "Cabo Verde x Egito",
+     "odd": 1.87
+    },
+    {
+     "h": "21:58",
+     "jogo": "Equador x Costa do Marfim",
+     "odd": 1.86
+    }
+   ],
+   "gatilho": "time Egito",
+   "alvo": {
+    "h": "21:52",
+    "jogo": "Jordânia x República Tcheca",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1785444231834
+   },
+   "iniciadoEm": 1785444231834
+  },
   "cooldown": {
    "euro": 1785439551897,
    "super": 1785443024122,
@@ -2726,10 +2756,10 @@
    "2026-07-30": 17.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGGR",
-   "n": 13,
-   "start": 1
+   "tipo": "time",
+   "chave": "Egito",
+   "n": 14,
+   "start": 3
   },
   "_obs": {}
  }
