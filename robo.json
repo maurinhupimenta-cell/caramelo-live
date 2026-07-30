@@ -1457,13 +1457,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -31.9,
-  "ciclos": 748,
-  "greens": 504,
+  "saldo": -30.7,
+  "ciclos": 749,
+  "greens": 505,
   "redsCiclo": 77,
   "aborts": 0,
   "descartes": 167,
   "historico": [
+   {
+    "quando": "2026-07-30T21:51:56.927Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Porto Alegre x Lima @2.15 (tiro 1) · gatilho: odd 1.83"
+   },
    {
     "quando": "2026-07-30T21:23:54.128Z",
     "resultado": "GREEN",
@@ -2715,42 +2721,13 @@
   ],
   "consumidas": {
    "copa": 1785444948126,
-   "premier": 1785446633933
+   "premier": 1785446633933,
+   "super": 1785448316822
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:46",
-     "jogo": "Porto Alegre x Lima",
-     "odd": 2.15
-    },
-    {
-     "h": "22:49",
-     "jogo": "Sao Paulo x Santiago",
-     "odd": 1.83
-    },
-    {
-     "h": "22:52",
-     "jogo": "Porto Alegre x Buenos Aires",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "odd 1.83",
-   "alvo": {
-    "h": "22:46",
-    "jogo": "Porto Alegre x Lima",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785447942026
-   },
-   "iniciadoEm": 1785447942026
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785439551897,
-   "super": 1785443024122,
+   "super": 1785448316822,
    "premier": 1785446633933,
    "copa": 1785444948126
   },
@@ -2769,12 +2746,12 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 19.6
+   "2026-07-30": 20.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.83",
-   "n": 12,
+   "tipo": "seq",
+   "chave": "RRGGR",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
