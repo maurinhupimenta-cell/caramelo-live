@@ -210,12 +210,18 @@
  },
  "o25": {
   "saldo": -87.9,
-  "ciclos": 647,
+  "ciclos": 648,
   "greens": 402,
   "redsCiclo": 103,
   "aborts": 0,
-  "descartes": 142,
+  "descartes": 143,
   "historico": [
+   {
+    "quando": "2026-07-30T05:37:19.495Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Irã) — liga REARMADA"
+   },
    {
     "quando": "2026-07-30T05:07:28.492Z",
     "resultado": "GREEN",
@@ -1123,16 +1129,27 @@
    "n": 9,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1785389839495,
+    "gatilho": "time Irã"
+   }
+  }
  },
  "ambas": {
-  "saldo": -48.3,
-  "ciclos": 712,
-  "greens": 472,
+  "saldo": -47.4,
+  "ciclos": 713,
+  "greens": 473,
   "redsCiclo": 75,
   "aborts": 0,
   "descartes": 165,
   "historico": [
+   {
+    "quando": "2026-07-30T05:35:36.298Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Watford x City @1.93 (tiro 1) · gatilho: time Leicester"
+   },
    {
     "quando": "2026-07-30T05:17:35.300Z",
     "resultado": "GREEN",
@@ -2167,43 +2184,14 @@
    }
   ],
   "consumidas": {
-   "super": 1785388655105
+   "super": 1785388655105,
+   "premier": 1785389736192
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:33",
-     "jogo": "Watford x City",
-     "odd": 1.93
-    },
-    {
-     "h": "06:36",
-     "jogo": "Norwich x Leicester",
-     "odd": 1.95
-    },
-    {
-     "h": "06:39",
-     "jogo": "Brighton x Everton",
-     "odd": 1.8
-    }
-   ],
-   "gatilho": "time Leicester",
-   "alvo": {
-    "h": "06:33",
-    "jogo": "Watford x City",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1785389066393
-   },
-   "iniciadoEm": 1785389066393
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785378001192,
    "super": 1785388655105,
-   "premier": 1785385421301,
+   "premier": 1785389736192,
    "copa": 1785363704496
   },
   "dias": {
@@ -2221,13 +2209,13 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 3.2
+   "2026-07-30": 4.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Leicester",
-   "n": 11,
-   "start": 3
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 18,
+   "start": 1
   },
   "_obs": {}
  }
