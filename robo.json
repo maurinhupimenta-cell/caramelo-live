@@ -213,12 +213,18 @@
  },
  "o25": {
   "saldo": -111.5,
-  "ciclos": 689,
+  "ciclos": 690,
   "greens": 426,
   "redsCiclo": 112,
   "aborts": 0,
-  "descartes": 151,
+  "descartes": 152,
   "historico": [
+   {
+    "quando": "2026-07-30T17:27:25.401Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
+   },
    {
     "quando": "2026-07-30T17:21:30.993Z",
     "resultado": "GREEN_OBS",
@@ -1346,7 +1352,37 @@
    "premier": 1785429097294,
    "euro": 1785429869801
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:22",
+     "jogo": "Qatar x Noruega",
+     "odd": 2.2
+    },
+    {
+     "h": "18:25",
+     "jogo": "Países Baixos x Irã",
+     "odd": 2.6
+    },
+    {
+     "h": "18:28",
+     "jogo": "Inglaterra x Uruguai",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "coluna :22",
+   "alvo": {
+    "h": "18:22",
+    "jogo": "Qatar x Noruega",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785432093393
+   },
+   "iniciadoEm": 1785432093393
+  },
   "cooldown": {
    "copa": 1785428490696,
    "premier": 1785429097294,
@@ -1373,25 +1409,26 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":41",
-   "n": 17,
+   "chave": ":22",
+   "n": 18,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785432090992,
-    "gatilho": "coluna :22"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
-  "saldo": -40.5,
-  "ciclos": 737,
-  "greens": 494,
+  "saldo": -39.6,
+  "ciclos": 738,
+  "greens": 495,
   "redsCiclo": 77,
   "aborts": 0,
   "descartes": 166,
   "historico": [
+   {
+    "quando": "2026-07-30T17:27:25.596Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Buenos Aires x Rio de Janeiro @1.85 (tiro 1) · gatilho: seq RRRGG"
+   },
    {
     "quando": "2026-07-30T17:18:58.694Z",
     "resultado": "GREEN",
@@ -2577,42 +2614,13 @@
   ],
   "consumidas": {
    "premier": 1785430291300,
-   "copa": 1785431938499
+   "copa": 1785431938499,
+   "super": 1785432445491
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:22",
-     "jogo": "Buenos Aires x Rio de Janeiro",
-     "odd": 1.85
-    },
-    {
-     "h": "18:25",
-     "jogo": "Agua Branca x Asuncion",
-     "odd": 2
-    },
-    {
-     "h": "18:28",
-     "jogo": "Avellaneda x Quito",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "seq RRRGG",
-   "alvo": {
-    "h": "18:22",
-    "jogo": "Buenos Aires x Rio de Janeiro",
-    "odd": 1.85,
-    "unidades": 1,
-    "desde": 1785431950001
-   },
-   "iniciadoEm": 1785431950001
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785419921894,
-   "super": 1785423393403,
+   "super": 1785432445491,
    "premier": 1785430291300,
    "copa": 1785431938499
   },
@@ -2631,7 +2639,7 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 11
+   "2026-07-30": 11.9
   },
   "_gatilhoAtual": {
    "tipo": "seq",
