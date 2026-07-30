@@ -2528,7 +2528,37 @@
    "super": 1785423393403,
    "premier": 1785425569892
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:55",
+     "jogo": "Bósnia e Herzegovina x Brasil",
+     "odd": 1.9
+    },
+    {
+     "h": "16:58",
+     "jogo": "Gana x Espanha",
+     "odd": 1.98
+    },
+    {
+     "h": "17:01",
+     "jogo": "República Tcheca x Canadá",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time Espanha",
+   "alvo": {
+    "h": "16:55",
+    "jogo": "Bósnia e Herzegovina x Brasil",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1785426575894
+   },
+   "iniciadoEm": 1785426575894
+  },
   "cooldown": {
    "euro": 1785419921894,
    "super": 1785423393403,
@@ -2553,9 +2583,9 @@
    "2026-07-30": 7.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.07",
-   "n": 14,
+   "tipo": "time",
+   "chave": "Espanha",
+   "n": 12,
    "start": 2
   },
   "_obs": {}
