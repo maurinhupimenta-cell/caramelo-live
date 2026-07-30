@@ -1098,11 +1098,40 @@
    }
   ],
   "consumidas": {
-   "euro": 1785387209090,
    "super": 1785388048295,
    "copa": 1785390724595
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:57",
+     "jogo": "Watford x Aston",
+     "odd": 2.4
+    },
+    {
+     "h": "07:00",
+     "jogo": "Chelsea x Leicester",
+     "odd": 2.25
+    },
+    {
+     "h": "07:03",
+     "jogo": "Norwich x Burnley",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time Leicester",
+   "alvo": {
+    "h": "06:57",
+    "jogo": "Watford x Aston",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1785390726203
+   },
+   "iniciadoEm": 1785390726203
+  },
   "cooldown": {
    "copa": 1785390724595,
    "premier": 1785386681198,
