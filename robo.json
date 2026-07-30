@@ -1097,8 +1097,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "06:46",
@@ -1118,13 +1118,21 @@
    ],
    "gatilho": "time Irã",
    "alvo": {
-    "h": "06:46",
-    "jogo": "Escócia x Croácia",
-    "odd": 2.7,
-    "unidades": 1,
-    "desde": 1785389842602
+    "h": "06:49",
+    "jogo": "Colômbia x Irã",
+    "odd": 2.5,
+    "unidades": 2,
+    "desde": 1785390543801
    },
-   "iniciadoEm": 1785389842602
+   "iniciadoEm": 1785389842602,
+   "tiros": [
+    {
+     "h": "06:46",
+     "jogo": "Escócia x Croácia",
+     "odd": 2.7,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785383513203,
@@ -1152,9 +1160,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Irã",
-   "n": 8,
-   "start": 1
+   "chave": "Leicester",
+   "n": 13,
+   "start": 3
   },
   "_obs": {}
  },
