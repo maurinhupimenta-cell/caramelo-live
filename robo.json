@@ -1328,13 +1328,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -39.8,
-  "ciclos": 730,
+  "saldo": -46.8,
+  "ciclos": 731,
   "greens": 488,
-  "redsCiclo": 76,
+  "redsCiclo": 77,
   "aborts": 0,
   "descartes": 166,
   "historico": [
+   {
+    "quando": "2026-07-30T13:58:41.999Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: odd 2.2"
+   },
    {
     "quando": "2026-07-30T13:19:06.695Z",
     "resultado": "GREEN",
@@ -2479,55 +2485,12 @@
   "consumidas": {
    "premier": 1785416576498,
    "copa": 1785417364998,
-   "super": 1785417546592
+   "super": 1785417546592,
+   "euro": 1785419921894
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "14:50",
-     "jogo": "Alemanha x Suíça",
-     "odd": 1.87
-    },
-    {
-     "h": "14:53",
-     "jogo": "Turquia x Sérvia",
-     "odd": 2.2
-    },
-    {
-     "h": "14:56",
-     "jogo": "Eslovênia x Itália",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "odd 2.2",
-   "alvo": {
-    "h": "14:56",
-    "jogo": "Eslovênia x Itália",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1785419765193
-   },
-   "iniciadoEm": 1785418902301,
-   "tiros": [
-    {
-     "h": "14:50",
-     "jogo": "Alemanha x Suíça",
-     "odd": 1.87,
-     "unidades": 1
-    },
-    {
-     "h": "14:53",
-     "jogo": "Turquia x Sérvia",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785414909191,
+   "euro": 1785419921894,
    "super": 1785417546592,
    "premier": 1785416576498,
    "copa": 1785417364998
@@ -2547,7 +2510,7 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 11.7
+   "2026-07-30": 4.7
   },
   "_gatilhoAtual": {
    "tipo": "odd",
