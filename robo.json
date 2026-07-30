@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -90.9,
-  "ciclos": 664,
+  "saldo": -97.9,
+  "ciclos": 665,
   "greens": 413,
-  "redsCiclo": 106,
+  "redsCiclo": 107,
   "aborts": 0,
   "descartes": 145,
   "historico": [
+   {
+    "quando": "2026-07-30T10:27:43.796Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: coluna :19"
+   },
    {
     "quando": "2026-07-30T09:32:49.401Z",
     "resultado": "GREEN",
@@ -1193,55 +1199,12 @@
    }
   ],
   "consumidas": {
-   "premier": 1785403969295
+   "premier": 1785403969295,
+   "copa": 1785407263600
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "11:19",
-     "jogo": "Uzbequistão x Brasil",
-     "odd": 2.25
-    },
-    {
-     "h": "11:22",
-     "jogo": "Áustria x Jordânia",
-     "odd": 2.2
-    },
-    {
-     "h": "11:25",
-     "jogo": "Brasil x Bélgica",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "coluna :19",
-   "alvo": {
-    "h": "11:25",
-    "jogo": "Brasil x Bélgica",
-    "odd": 2.3,
-    "unidades": 4,
-    "desde": 1785407083600
-   },
-   "iniciadoEm": 1785406725091,
-   "tiros": [
-    {
-     "h": "11:19",
-     "jogo": "Uzbequistão x Brasil",
-     "odd": 2.25,
-     "unidades": 1
-    },
-    {
-     "h": "11:22",
-     "jogo": "Áustria x Jordânia",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785403122991,
+   "copa": 1785407263600,
    "premier": 1785403969295,
    "euro": 1785401202699,
    "super": 1785401528104
@@ -1262,12 +1225,12 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -0.9
+   "2026-07-30": -7.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":22",
-   "n": 11,
+   "tipo": "seq",
+   "chave": "RRRRR",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
