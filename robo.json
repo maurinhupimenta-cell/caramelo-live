@@ -1289,10 +1289,39 @@
    }
   ],
   "consumidas": {
-   "copa": 1785419547897,
    "premier": 1785419815697
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:55",
+     "jogo": "Canadá x Suécia",
+     "odd": 2.7
+    },
+    {
+     "h": "15:58",
+     "jogo": "Bélgica x Haiti",
+     "odd": 2.2
+    },
+    {
+     "h": "16:01",
+     "jogo": "Irã x Arábia Saudita",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "seq RRRG",
+   "alvo": {
+    "h": "15:55",
+    "jogo": "Canadá x Suécia",
+    "odd": 2.7,
+    "unidades": 1,
+    "desde": 1785423153390
+   },
+   "iniciadoEm": 1785423153390
+  },
   "cooldown": {
    "copa": 1785419547897,
    "premier": 1785419815697,
@@ -1318,9 +1347,9 @@
    "2026-07-30": -6.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":57",
-   "n": 14,
+   "tipo": "seq",
+   "chave": "RRRG",
+   "n": 18,
    "start": 1
   },
   "_obs": {}
