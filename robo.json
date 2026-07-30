@@ -1415,8 +1415,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "21:03",
@@ -1436,13 +1436,21 @@
    ],
    "gatilho": "time Tottenham",
    "alvo": {
-    "h": "21:03",
-    "jogo": "Tottenham x Norwich",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1785441782124
+    "h": "21:06",
+    "jogo": "Liverpool x Burnley",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1785442041323
    },
-   "iniciadoEm": 1785441782124
+   "iniciadoEm": 1785441782124,
+   "tiros": [
+    {
+     "h": "21:03",
+     "jogo": "Tottenham x Norwich",
+     "odd": 2.4,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785441167028,
@@ -1469,9 +1477,9 @@
    "2026-07-30": -26.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Tottenham",
-   "n": 41,
+   "tipo": "seq",
+   "chave": "RRRR",
+   "n": 30,
    "start": 1
   },
   "_obs": {}
