@@ -1470,13 +1470,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -29.7,
-  "ciclos": 750,
-  "greens": 506,
+  "saldo": -28.5,
+  "ciclos": 751,
+  "greens": 507,
   "redsCiclo": 77,
   "aborts": 0,
   "descartes": 167,
   "historico": [
+   {
+    "quando": "2026-07-30T23:08:20.027Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Porto Alegre x Rio de Janeiro @2.15 (tiro 1) · gatilho: odd 1.83"
+   },
    {
     "quando": "2026-07-30T22:08:20.927Z",
     "resultado": "GREEN",
@@ -2739,42 +2745,13 @@
    }
   ],
   "consumidas": {
-   "copa": 1785449300730
+   "copa": 1785449300730,
+   "super": 1785452899830
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "00:04",
-     "jogo": "Porto Alegre x Rio de Janeiro",
-     "odd": 2.15
-    },
-    {
-     "h": "00:07",
-     "jogo": "Belo Horizonte x Agua Branca",
-     "odd": 1.83
-    },
-    {
-     "h": "00:10",
-     "jogo": "Lima x Asuncion",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "odd 1.83",
-   "alvo": {
-    "h": "00:04",
-    "jogo": "Porto Alegre x Rio de Janeiro",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785452151622
-   },
-   "iniciadoEm": 1785452151622
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785439551897,
-   "super": 1785448316822,
+   "super": 1785452899830,
    "premier": 1785446633933,
    "copa": 1785449300730
   },
@@ -2793,13 +2770,13 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 21.8
+   "2026-07-30": 23
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "1.83",
    "n": 13,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
