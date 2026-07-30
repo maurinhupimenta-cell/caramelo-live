@@ -1415,11 +1415,40 @@
    }
   ],
   "consumidas": {
-   "copa": 1785441167028,
    "euro": 1785441529925,
    "premier": 1785442317229
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:55",
+     "jogo": "Cabo Verde x Egito",
+     "odd": 2.1
+    },
+    {
+     "h": "21:58",
+     "jogo": "Equador x Costa do Marfim",
+     "odd": 2.07
+    },
+    {
+     "h": "22:01",
+     "jogo": "Noruega x Nova Zelândia",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time Egito",
+   "alvo": {
+    "h": "21:55",
+    "jogo": "Cabo Verde x Egito",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785444768331
+   },
+   "iniciadoEm": 1785444768331
+  },
   "cooldown": {
    "copa": 1785441167028,
    "premier": 1785442317229,
@@ -1445,9 +1474,9 @@
    "2026-07-30": -33.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRR",
-   "n": 30,
+   "tipo": "time",
+   "chave": "Egito",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
@@ -2756,9 +2785,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Egito",
-   "n": 14,
-   "start": 3
+   "chave": "Equador",
+   "n": 21,
+   "start": 1
   },
   "_obs": {}
  }
