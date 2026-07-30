@@ -2357,7 +2357,37 @@
   "consumidas": {
    "premier": 1785408288000
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:34",
+     "jogo": "Uzbequistão x Costa do Marfim",
+     "odd": 1.9
+    },
+    {
+     "h": "12:37",
+     "jogo": "Iraque x República Tcheca",
+     "odd": 2.15
+    },
+    {
+     "h": "12:40",
+     "jogo": "França x Nova Zelândia",
+     "odd": 2
+    }
+   ],
+   "gatilho": "odd 2.15",
+   "alvo": {
+    "h": "12:34",
+    "jogo": "Uzbequistão x Costa do Marfim",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1785410743692
+   },
+   "iniciadoEm": 1785410743692
+  },
   "cooldown": {
    "euro": 1785398142292,
    "super": 1785405887401,
@@ -2383,9 +2413,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.07",
-   "n": 10,
-   "start": 1
+   "chave": "2.15",
+   "n": 18,
+   "start": 3
   },
   "_obs": {}
  }
