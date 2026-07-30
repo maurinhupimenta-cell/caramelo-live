@@ -1226,13 +1226,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -49.3,
-  "ciclos": 720,
-  "greens": 478,
+  "saldo": -48.4,
+  "ciclos": 721,
+  "greens": 479,
   "redsCiclo": 76,
   "aborts": 0,
   "descartes": 166,
   "historico": [
+   {
+    "quando": "2026-07-30T09:20:38.896Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Everton x Islington @1.87 (tiro 1) · gatilho: odd 2.05"
+   },
    {
     "quando": "2026-07-30T08:55:07.706Z",
     "resultado": "GREEN",
@@ -2315,43 +2321,14 @@
    }
   ],
   "consumidas": {
-   "super": 1785401707598
+   "super": 1785401707598,
+   "premier": 1785403238701
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "10:18",
-     "jogo": "Everton x Islington",
-     "odd": 1.87
-    },
-    {
-     "h": "10:21",
-     "jogo": "Southampton x Norwich",
-     "odd": 2.05
-    },
-    {
-     "h": "10:24",
-     "jogo": "Burnley x Wolverhampton",
-     "odd": 1.8
-    }
-   ],
-   "gatilho": "odd 2.05",
-   "alvo": {
-    "h": "10:18",
-    "jogo": "Everton x Islington",
-    "odd": 1.87,
-    "unidades": 1,
-    "desde": 1785402538601
-   },
-   "iniciadoEm": 1785402538601
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785398142292,
    "super": 1785401707598,
-   "premier": 1785398556701,
+   "premier": 1785403238701,
    "copa": 1785363704496
   },
   "dias": {
@@ -2369,7 +2346,7 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 2.2
+   "2026-07-30": 3.1
   },
   "_gatilhoAtual": {
    "tipo": "odd",
