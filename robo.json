@@ -1094,11 +1094,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1785386681198,
    "euro": 1785387209090,
    "super": 1785388048295
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:46",
+     "jogo": "Escócia x Croácia",
+     "odd": 2.7
+    },
+    {
+     "h": "06:49",
+     "jogo": "Colômbia x Irã",
+     "odd": 2.5
+    },
+    {
+     "h": "06:52",
+     "jogo": "Senegal x Bósnia e Herzegovina",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "time Irã",
+   "alvo": {
+    "h": "06:46",
+    "jogo": "Escócia x Croácia",
+    "odd": 2.7,
+    "unidades": 1,
+    "desde": 1785389842602
+   },
+   "iniciadoEm": 1785389842602
+  },
   "cooldown": {
    "copa": 1785383513203,
    "premier": 1785386681198,
@@ -1124,17 +1153,12 @@
    "2026-07-30": 2.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRG",
-   "n": 9,
+   "tipo": "time",
+   "chave": "Irã",
+   "n": 8,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785389839495,
-    "gatilho": "time Irã"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -47.4,
