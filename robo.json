@@ -1365,7 +1365,37 @@
    "copa": 1785432507292,
    "super": 1785433204093
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:51",
+     "jogo": "Norwich x Newcastle",
+     "odd": 2.05
+    },
+    {
+     "h": "18:54",
+     "jogo": "West Ham x Liverpool",
+     "odd": 2.45
+    },
+    {
+     "h": "18:57",
+     "jogo": "Wolverhampton x Islington",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "coluna :54",
+   "alvo": {
+    "h": "18:51",
+    "jogo": "Norwich x Newcastle",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785433353393
+   },
+   "iniciadoEm": 1785433353393
+  },
   "cooldown": {
    "copa": 1785432507292,
    "premier": 1785429097294,
@@ -1391,10 +1421,10 @@
    "2026-07-30": -27.3
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.55",
-   "n": 11,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":54",
+   "n": 18,
+   "start": 3
   },
   "_obs": {}
  },
