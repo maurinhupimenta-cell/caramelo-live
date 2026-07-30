@@ -1174,8 +1174,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "09:38",
@@ -1195,13 +1195,21 @@
    ],
    "gatilho": "coluna :41",
    "alvo": {
-    "h": "09:38",
-    "jogo": "Polônia x Dinamarca",
-    "odd": 2.55,
-    "unidades": 1,
-    "desde": 1785400306900
+    "h": "09:41",
+    "jogo": "Turquia x Itália",
+    "odd": 2.5,
+    "unidades": 2,
+    "desde": 1785400845695
    },
-   "iniciadoEm": 1785400306900
+   "iniciadoEm": 1785400306900,
+   "tiros": [
+    {
+     "h": "09:38",
+     "jogo": "Polônia x Dinamarca",
+     "odd": 2.55,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785399065495,
@@ -1228,17 +1236,12 @@
    "2026-07-30": 2.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":41",
-   "n": 9,
-   "start": 1
+   "tipo": "time",
+   "chave": "La Boca",
+   "n": 14,
+   "start": 3
   },
-  "_obs": {
-   "super": {
-    "desde": 1785400807992,
-    "gatilho": "time La Boca"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -50.6,
