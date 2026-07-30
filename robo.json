@@ -2167,10 +2167,39 @@
    }
   ],
   "consumidas": {
-   "premier": 1785385421301,
    "super": 1785388655105
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:33",
+     "jogo": "Watford x City",
+     "odd": 1.93
+    },
+    {
+     "h": "06:36",
+     "jogo": "Norwich x Leicester",
+     "odd": 1.95
+    },
+    {
+     "h": "06:39",
+     "jogo": "Brighton x Everton",
+     "odd": 1.8
+    }
+   ],
+   "gatilho": "time Leicester",
+   "alvo": {
+    "h": "06:33",
+    "jogo": "Watford x City",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1785389066393
+   },
+   "iniciadoEm": 1785389066393
+  },
   "cooldown": {
    "euro": 1785378001192,
    "super": 1785388655105,
@@ -2196,9 +2225,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Medellin",
-   "n": 9,
-   "start": 1
+   "chave": "Leicester",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  }
