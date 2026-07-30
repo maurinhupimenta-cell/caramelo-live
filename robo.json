@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -94.5,
-  "ciclos": 661,
-  "greens": 410,
+  "saldo": -93.4,
+  "ciclos": 662,
+  "greens": 411,
   "redsCiclo": 106,
   "aborts": 0,
   "descartes": 145,
   "historico": [
+   {
+    "quando": "2026-07-30T08:52:08.297Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Rio de Janeiro x Santiago @2.07 (tiro 1) · gatilho: time La Boca"
+   },
    {
     "quando": "2026-07-30T08:46:42.895Z",
     "resultado": "RED_CICLO",
@@ -1177,44 +1183,15 @@
   "consumidas": {
    "copa": 1785399065495,
    "premier": 1785399998996,
-   "euro": 1785401202699
+   "euro": 1785401202699,
+   "super": 1785401528104
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "09:49",
-     "jogo": "Rio de Janeiro x Santiago",
-     "odd": 2.07
-    },
-    {
-     "h": "09:52",
-     "jogo": "Porto Alegre x La Boca",
-     "odd": 2.75
-    },
-    {
-     "h": "09:55",
-     "jogo": "Guayaquil x Rio de Janeiro",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "time La Boca",
-   "alvo": {
-    "h": "09:49",
-    "jogo": "Rio de Janeiro x Santiago",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1785401205800
-   },
-   "iniciadoEm": 1785401205800
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785399065495,
    "premier": 1785399998996,
    "euro": 1785401202699,
-   "super": 1785397207797
+   "super": 1785401528104
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -1232,7 +1209,7 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -4.5
+   "2026-07-30": -3.4
   },
   "_gatilhoAtual": {
    "tipo": "time",
@@ -2329,7 +2306,37 @@
    "euro": 1785398142292,
    "premier": 1785398556701
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:52",
+     "jogo": "Porto Alegre x La Boca",
+     "odd": 2.25
+    },
+    {
+     "h": "09:55",
+     "jogo": "Guayaquil x Rio de Janeiro",
+     "odd": 1.9
+    },
+    {
+     "h": "09:58",
+     "jogo": "Santiago x Asuncion",
+     "odd": 1.87
+    }
+   ],
+   "gatilho": "coluna :52",
+   "alvo": {
+    "h": "09:52",
+    "jogo": "Porto Alegre x La Boca",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785401369600
+   },
+   "iniciadoEm": 1785401369600
+  },
   "cooldown": {
    "euro": 1785398142292,
    "super": 1785397768095,
@@ -2354,9 +2361,9 @@
    "2026-07-30": 0.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRG",
-   "n": 10,
+   "tipo": "coluna",
+   "chave": ":52",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
