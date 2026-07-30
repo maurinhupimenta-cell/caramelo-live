@@ -212,13 +212,25 @@
   }
  },
  "o25": {
-  "saldo": -98.9,
-  "ciclos": 677,
-  "greens": 420,
+  "saldo": -97.4,
+  "ciclos": 679,
+  "greens": 421,
   "redsCiclo": 109,
   "aborts": 0,
-  "descartes": 148,
+  "descartes": 149,
   "historico": [
+   {
+    "quando": "2026-07-30T13:52:28.090Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "copa · França x Iraque @2.45 (tiro 1) · gatilho: seq RRGRR"
+   },
+   {
+    "quando": "2026-07-30T13:50:41.691Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho coluna :54) — liga REARMADA"
+   },
    {
     "quando": "2026-07-30T13:47:02.193Z",
     "resultado": "GREEN",
@@ -1272,41 +1284,12 @@
   ],
   "consumidas": {
    "super": 1785418442797,
-   "euro": 1785419222001
+   "euro": 1785419222001,
+   "copa": 1785419547897
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:49",
-     "jogo": "França x Iraque",
-     "odd": 2.45
-    },
-    {
-     "h": "14:52",
-     "jogo": "Croácia x República Tcheca",
-     "odd": 2.5
-    },
-    {
-     "h": "14:55",
-     "jogo": "Curação x Egito",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "seq RRGRR",
-   "alvo": {
-    "h": "14:49",
-    "jogo": "França x Iraque",
-    "odd": 2.45,
-    "unidades": 1,
-    "desde": 1785419225197
-   },
-   "iniciadoEm": 1785419225197
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785415223503,
+   "copa": 1785419547897,
    "premier": 1785415840702,
    "euro": 1785419222001,
    "super": 1785418442797
@@ -1327,12 +1310,12 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -8.9
+   "2026-07-30": -7.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Egito",
-   "n": 8,
+   "tipo": "seq",
+   "chave": "RRRG",
+   "n": 17,
    "start": 1
   },
   "_obs": {}
