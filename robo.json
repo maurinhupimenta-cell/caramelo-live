@@ -1007,7 +1007,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:21",
+     "jogo": "Leeds x West Ham",
+     "odd": 2.87
+    },
+    {
+     "h": "02:24",
+     "jogo": "Brentford x Brighton",
+     "odd": 2.1
+    },
+    {
+     "h": "02:27",
+     "jogo": "Southampton x Burnley",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "placar goleada (3+)",
+   "alvo": {
+    "h": "02:21",
+    "jogo": "Leeds x West Ham",
+    "odd": 2.87,
+    "unidades": 1,
+    "desde": 1785374320997
+   },
+   "iniciadoEm": 1785374320997
+  },
   "cooldown": {
    "copa": 1785361238498,
    "premier": 1785362202904,
@@ -1032,9 +1062,9 @@
    "2026-07-29": 28.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRR",
-   "n": 35,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
