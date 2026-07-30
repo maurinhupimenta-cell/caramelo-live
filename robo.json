@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -114.3,
-  "ciclos": 694,
-  "greens": 429,
+  "saldo": -113.2,
+  "ciclos": 695,
+  "greens": 430,
   "redsCiclo": 113,
   "aborts": 0,
   "descartes": 152,
   "historico": [
+   {
+    "quando": "2026-07-30T18:43:56.503Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Países Baixos x Escócia @2.07 (tiro 2) · gatilho: coluna :41"
+   },
    {
     "quando": "2026-07-30T18:34:46.791Z",
     "resultado": "GREEN",
@@ -1374,51 +1380,14 @@
   ],
   "consumidas": {
    "premier": 1785434247203,
-   "copa": 1785436486598
+   "copa": 1785436486598,
+   "euro": 1785437036400
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "19:38",
-     "jogo": "Dinamarca x Espanha",
-     "odd": 2.2
-    },
-    {
-     "h": "19:41",
-     "jogo": "Países Baixos x Escócia",
-     "odd": 2.07
-    },
-    {
-     "h": "19:44",
-     "jogo": "Ucrânia x Portugal",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "coluna :41",
-   "alvo": {
-    "h": "19:41",
-    "jogo": "Países Baixos x Escócia",
-    "odd": 2.07,
-    "unidades": 2,
-    "desde": 1785437027100
-   },
-   "iniciadoEm": 1785436488493,
-   "tiros": [
-    {
-     "h": "19:38",
-     "jogo": "Dinamarca x Espanha",
-     "odd": 2.2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785436486598,
    "premier": 1785434247203,
-   "euro": 1785429869801,
+   "euro": 1785437036400,
    "super": 1785433204093
   },
   "dias": {
@@ -1437,7 +1406,7 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -24.3
+   "2026-07-30": -23.2
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
@@ -2675,7 +2644,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1785434066193,
    "premier": 1785434902603,
    "copa": 1785436486795,
    "super": 1785436725895
