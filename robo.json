@@ -1420,10 +1420,38 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {
-   "copa": 1785445366231
+  "consumidas": {},
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:04",
+     "jogo": "França x Bélgica",
+     "odd": 2.3
+    },
+    {
+     "h": "23:07",
+     "jogo": "Curação x Argélia",
+     "odd": 2.2
+    },
+    {
+     "h": "23:10",
+     "jogo": "Bélgica x Coreia do Sul",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "seq RRGRR",
+   "alvo": {
+    "h": "23:04",
+    "jogo": "França x Bélgica",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1785448966725
+   },
+   "iniciadoEm": 1785448966725
   },
-  "ciclo": null,
   "cooldown": {
    "copa": 1785445366231,
    "premier": 1785442317229,
@@ -1450,8 +1478,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRGG",
-   "n": 14,
+   "chave": "RRGRR",
+   "n": 18,
    "start": 1
   },
   "_obs": {}
@@ -2723,7 +2751,37 @@
    "premier": 1785446633933,
    "super": 1785448316822
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:04",
+     "jogo": "França x Bélgica",
+     "odd": 1.98
+    },
+    {
+     "h": "23:07",
+     "jogo": "Curação x Argélia",
+     "odd": 1.93
+    },
+    {
+     "h": "23:10",
+     "jogo": "Bélgica x Coreia do Sul",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time Argélia",
+   "alvo": {
+    "h": "23:04",
+    "jogo": "França x Bélgica",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785448608623
+   },
+   "iniciadoEm": 1785448608623
+  },
   "cooldown": {
    "euro": 1785439551897,
    "super": 1785448316822,
@@ -2748,8 +2806,8 @@
    "2026-07-30": 20.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGGR",
+   "tipo": "time",
+   "chave": "Argélia",
    "n": 14,
    "start": 1
   },
