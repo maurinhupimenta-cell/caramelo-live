@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -102.9,
-  "ciclos": 669,
-  "greens": 414,
+  "saldo": -101.4,
+  "ciclos": 670,
+  "greens": 415,
   "redsCiclo": 108,
   "aborts": 0,
   "descartes": 147,
   "historico": [
+   {
+    "quando": "2026-07-30T11:41:40.897Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "premier · Newcastle x Burnley @2.5 (tiro 1) · gatilho: time Tottenham"
+   },
    {
     "quando": "2026-07-30T11:34:03.698Z",
     "resultado": "GREEN",
@@ -1224,42 +1230,43 @@
   ],
   "consumidas": {
    "euro": 1785408423497,
-   "copa": 1785411243593
+   "copa": 1785411243593,
+   "premier": 1785411700793
   },
   "ciclo": {
-   "liga": "premier",
+   "liga": "super",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "12:39",
-     "jogo": "Newcastle x Burnley",
+     "h": "12:46",
+     "jogo": "Buenos Aires x Santiago",
      "odd": 2.5
     },
     {
-     "h": "12:42",
-     "jogo": "Southampton x Tottenham",
+     "h": "12:49",
+     "jogo": "Guayaquil x Avellaneda",
      "odd": 2.5
     },
     {
-     "h": "12:45",
-     "jogo": "Brighton x Wolverhampton",
+     "h": "12:52",
+     "jogo": "Belo Horizonte x Agua Branca",
      "odd": 2.5
     }
    ],
-   "gatilho": "time Tottenham",
+   "gatilho": "coluna :49",
    "alvo": {
-    "h": "12:39",
-    "jogo": "Newcastle x Burnley",
+    "h": "12:46",
+    "jogo": "Buenos Aires x Santiago",
     "odd": 2.5,
     "unidades": 1,
-    "desde": 1785411388792
+    "desde": 1785411702890
    },
-   "iniciadoEm": 1785411388792
+   "iniciadoEm": 1785411702890
   },
   "cooldown": {
    "copa": 1785411243593,
-   "premier": 1785403969295,
+   "premier": 1785411700793,
    "euro": 1785408423497,
    "super": 1785401528104
   },
@@ -1279,13 +1286,13 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -12.9
+   "2026-07-30": -11.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Tottenham",
-   "n": 24,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":49",
+   "n": 12,
+   "start": 2
   },
   "_obs": {}
  },
@@ -2464,7 +2471,7 @@
    "tipo": "coluna",
    "chave": ":49",
    "n": 12,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
