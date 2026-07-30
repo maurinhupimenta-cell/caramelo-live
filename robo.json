@@ -1285,13 +1285,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -47.3,
-  "ciclos": 722,
-  "greens": 480,
+  "saldo": -46.3,
+  "ciclos": 723,
+  "greens": 481,
   "redsCiclo": 76,
   "aborts": 0,
   "descartes": 166,
   "historico": [
+   {
+    "quando": "2026-07-30T10:44:48.194Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Burnley x Tottenham @2.02 (tiro 1) · gatilho: odd 2.07"
+   },
    {
     "quando": "2026-07-30T10:04:47.594Z",
     "resultado": "GREEN",
@@ -2386,43 +2392,14 @@
    }
   ],
   "consumidas": {
-   "super": 1785405887401
+   "super": 1785405887401,
+   "premier": 1785408288000
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "11:42",
-     "jogo": "Burnley x Tottenham",
-     "odd": 2.02
-    },
-    {
-     "h": "11:45",
-     "jogo": "United x Watford",
-     "odd": 2.07
-    },
-    {
-     "h": "11:48",
-     "jogo": "Liverpool x Brighton",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "odd 2.07",
-   "alvo": {
-    "h": "11:42",
-    "jogo": "Burnley x Tottenham",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1785407630395
-   },
-   "iniciadoEm": 1785407630395
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785398142292,
    "super": 1785405887401,
-   "premier": 1785403238701,
+   "premier": 1785408288000,
    "copa": 1785363704496
   },
   "dias": {
@@ -2440,7 +2417,7 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 4.2
+   "2026-07-30": 5.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
