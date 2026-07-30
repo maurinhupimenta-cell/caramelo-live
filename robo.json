@@ -207,13 +207,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -80.5,
-  "ciclos": 651,
-  "greens": 405,
+  "saldo": -79,
+  "ciclos": 652,
+  "greens": 406,
   "redsCiclo": 103,
   "aborts": 0,
   "descartes": 143,
   "historico": [
+   {
+    "quando": "2026-07-30T06:25:04.896Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "super · Medellin x Penarol @2.55 (tiro 1) · gatilho: time La Boca"
+   },
    {
     "quando": "2026-07-30T06:16:45.393Z",
     "resultado": "GREEN",
@@ -1112,44 +1118,15 @@
   "consumidas": {
    "copa": 1785390724595,
    "premier": 1785391537903,
-   "euro": 1785392205194
+   "euro": 1785392205194,
+   "super": 1785392704703
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "07:22",
-     "jogo": "Medellin x Penarol",
-     "odd": 2.55
-    },
-    {
-     "h": "07:25",
-     "jogo": "La Boca x Buenos Aires",
-     "odd": 2.2
-    },
-    {
-     "h": "07:28",
-     "jogo": "Medellin x Bogota",
-     "odd": 2.62
-    }
-   ],
-   "gatilho": "time La Boca",
-   "alvo": {
-    "h": "07:22",
-    "jogo": "Medellin x Penarol",
-    "odd": 2.55,
-    "unidades": 1,
-    "desde": 1785392207599
-   },
-   "iniciadoEm": 1785392207599
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785390724595,
    "premier": 1785391537903,
    "euro": 1785392205194,
-   "super": 1785388048295
+   "super": 1785392704703
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -1167,12 +1144,12 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": 9.5
+   "2026-07-30": 11
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "La Boca",
-   "n": 9,
+   "tipo": "odd",
+   "chave": "2.25",
+   "n": 10,
    "start": 2
   },
   "_obs": {}
@@ -2285,7 +2262,7 @@
    "tipo": "time",
    "chave": "Buenos Aires",
    "n": 14,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
