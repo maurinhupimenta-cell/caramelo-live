@@ -1287,7 +1287,37 @@
    "euro": 1785419222001,
    "copa": 1785419547897
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:54",
+     "jogo": "Newcastle x Norwich",
+     "odd": 2.07
+    },
+    {
+     "h": "14:57",
+     "jogo": "Wolverhampton x Palace",
+     "odd": 2.07
+    },
+    {
+     "h": "15:00",
+     "jogo": "United x Aston",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "coluna :54",
+   "alvo": {
+    "h": "14:54",
+    "jogo": "Newcastle x Norwich",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1785419549502
+   },
+   "iniciadoEm": 1785419549502
+  },
   "cooldown": {
    "copa": 1785419547897,
    "premier": 1785415840702,
@@ -1313,9 +1343,9 @@
    "2026-07-30": -7.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRG",
-   "n": 17,
+   "tipo": "coluna",
+   "chave": ":54",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
@@ -2476,8 +2506,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "14:50",
@@ -2497,13 +2527,21 @@
    ],
    "gatilho": "odd 2.2",
    "alvo": {
-    "h": "14:50",
-    "jogo": "Alemanha x Suíça",
-    "odd": 1.87,
-    "unidades": 1,
-    "desde": 1785418902301
+    "h": "14:53",
+    "jogo": "Turquia x Sérvia",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1785419584990
    },
-   "iniciadoEm": 1785418902301
+   "iniciadoEm": 1785418902301,
+   "tiros": [
+    {
+     "h": "14:50",
+     "jogo": "Alemanha x Suíça",
+     "odd": 1.87,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785414909191,
