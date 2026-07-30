@@ -2439,8 +2439,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "14:10",
@@ -2460,13 +2460,21 @@
    ],
    "gatilho": "time Equador",
    "alvo": {
-    "h": "14:10",
-    "jogo": "República Tcheca x Panamá",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785416843902
+    "h": "14:13",
+    "jogo": "Áustria x Equador",
+    "odd": 1.87,
+    "unidades": 2,
+    "desde": 1785417184503
    },
-   "iniciadoEm": 1785416843902
+   "iniciadoEm": 1785416843902,
+   "tiros": [
+    {
+     "h": "14:10",
+     "jogo": "República Tcheca x Panamá",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785414909191,
@@ -2492,9 +2500,9 @@
    "2026-07-30": 10
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Equador",
-   "n": 11,
+   "tipo": "coluna",
+   "chave": ":19",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
