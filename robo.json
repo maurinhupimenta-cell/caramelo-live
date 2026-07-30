@@ -1048,13 +1048,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -54.5,
-  "ciclos": 705,
-  "greens": 465,
+  "saldo": -53.6,
+  "ciclos": 706,
+  "greens": 466,
   "redsCiclo": 75,
   "aborts": 0,
   "descartes": 165,
   "historico": [
+   {
+    "quando": "2026-07-30T01:38:42.493Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Liverpool x United @1.93 (tiro 1) · gatilho: time Palace"
+   },
    {
     "quando": "2026-07-30T01:10:32.893Z",
     "resultado": "GREEN",
@@ -2047,43 +2053,14 @@
    }
   ],
   "consumidas": {
-   "euro": 1785373832704
+   "euro": 1785373832704,
+   "premier": 1785375522301
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "02:36",
-     "jogo": "Liverpool x United",
-     "odd": 1.93
-    },
-    {
-     "h": "02:39",
-     "jogo": "Islington x Palace",
-     "odd": 1.98
-    },
-    {
-     "h": "02:42",
-     "jogo": "City x Norwich",
-     "odd": 2
-    }
-   ],
-   "gatilho": "time Palace",
-   "alvo": {
-    "h": "02:36",
-    "jogo": "Liverpool x United",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1785374826400
-   },
-   "iniciadoEm": 1785374826400
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785373832704,
    "super": 1785364770801,
-   "premier": 1785300650858,
+   "premier": 1785375522301,
    "copa": 1785363704496
   },
   "dias": {
@@ -2100,13 +2077,13 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": -12.4
+   "2026-07-29": -11.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Palace",
    "n": 8,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
