@@ -1155,13 +1155,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -54.4,
-  "ciclos": 714,
-  "greens": 473,
+  "saldo": -53.7,
+  "ciclos": 715,
+  "greens": 474,
   "redsCiclo": 76,
   "aborts": 0,
   "descartes": 165,
   "historico": [
+   {
+    "quando": "2026-07-30T06:44:38.096Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "premier · Newcastle x Liverpool @1.85 (tiro 2) · gatilho: time Norwich"
+   },
    {
     "quando": "2026-07-30T06:31:07.694Z",
     "resultado": "RED_CICLO",
@@ -2208,51 +2214,14 @@
    }
   ],
   "consumidas": {
-   "super": 1785393067501
+   "super": 1785393067501,
+   "premier": 1785393877895
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "07:39",
-     "jogo": "Norwich x Southampton",
-     "odd": 2
-    },
-    {
-     "h": "07:42",
-     "jogo": "Newcastle x Liverpool",
-     "odd": 1.85
-    },
-    {
-     "h": "07:45",
-     "jogo": "Aston x Brighton",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "time Norwich",
-   "alvo": {
-    "h": "07:42",
-    "jogo": "Newcastle x Liverpool",
-    "odd": 1.85,
-    "unidades": 2,
-    "desde": 1785393697397
-   },
-   "iniciadoEm": 1785393337203,
-   "tiros": [
-    {
-     "h": "07:39",
-     "jogo": "Norwich x Southampton",
-     "odd": 2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785378001192,
    "super": 1785393067501,
-   "premier": 1785389736192,
+   "premier": 1785393877895,
    "copa": 1785363704496
   },
   "dias": {
@@ -2270,12 +2239,12 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": -2.9
+   "2026-07-30": -2.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Norwich",
-   "n": 13,
+   "n": 14,
    "start": 1
   },
   "_obs": {}
