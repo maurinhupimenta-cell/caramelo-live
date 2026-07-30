@@ -1311,7 +1311,37 @@
    "premier": 1785424395700,
    "super": 1785425426397
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:38",
+     "jogo": "Itália x Polônia",
+     "odd": 2.5
+    },
+    {
+     "h": "16:41",
+     "jogo": "Turquia x Croácia",
+     "odd": 2.4
+    },
+    {
+     "h": "16:44",
+     "jogo": "Sérvia x França",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "coluna :41",
+   "alvo": {
+    "h": "16:38",
+    "jogo": "Itália x Polônia",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1785425605996
+   },
+   "iniciadoEm": 1785425605996
+  },
   "cooldown": {
    "copa": 1785423750303,
    "premier": 1785424395700,
@@ -1337,10 +1367,10 @@
    "2026-07-30": -18.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.55",
-   "n": 9,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":41",
+   "n": 16,
+   "start": 2
   },
   "_obs": {}
  },
