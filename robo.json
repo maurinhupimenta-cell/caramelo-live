@@ -1205,10 +1205,39 @@
    }
   ],
   "consumidas": {
-   "premier": 1785403969295,
    "copa": 1785407263600
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:38",
+     "jogo": "Portugal x República Tcheca",
+     "odd": 2.5
+    },
+    {
+     "h": "11:41",
+     "jogo": "Alemanha x Turquia",
+     "odd": 2.35
+    },
+    {
+     "h": "11:44",
+     "jogo": "Áustria x Espanha",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "coluna :41",
+   "alvo": {
+    "h": "11:38",
+    "jogo": "Portugal x República Tcheca",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1785407367691
+   },
+   "iniciadoEm": 1785407367691
+  },
   "cooldown": {
    "copa": 1785407263600,
    "premier": 1785403969295,
@@ -1234,17 +1263,12 @@
    "2026-07-30": -7.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRR",
-   "n": 10,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":41",
+   "n": 11,
+   "start": 2
   },
-  "_obs": {
-   "euro": {
-    "desde": 1785407364194,
-    "gatilho": "coluna :41"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -47.3,
