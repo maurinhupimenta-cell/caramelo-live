@@ -1423,8 +1423,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "23:04",
@@ -1444,13 +1444,21 @@
    ],
    "gatilho": "seq RRGRR",
    "alvo": {
-    "h": "23:04",
-    "jogo": "França x Bélgica",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1785448966725
+    "h": "23:07",
+    "jogo": "Curação x Argélia",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1785449300524
    },
-   "iniciadoEm": 1785448966725
+   "iniciadoEm": 1785448966725,
+   "tiros": [
+    {
+     "h": "23:04",
+     "jogo": "França x Bélgica",
+     "odd": 2.3,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785445366231,
@@ -1477,21 +1485,27 @@
    "2026-07-30": -32.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGRR",
-   "n": 18,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":19",
+   "n": 23,
+   "start": 3
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -30.7,
-  "ciclos": 749,
-  "greens": 505,
+  "saldo": -29.7,
+  "ciclos": 750,
+  "greens": 506,
   "redsCiclo": 77,
   "aborts": 0,
   "descartes": 167,
   "historico": [
+   {
+    "quando": "2026-07-30T22:08:20.927Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · França x Bélgica @1.98 (tiro 1) · gatilho: time Argélia"
+   },
    {
     "quando": "2026-07-30T21:51:56.927Z",
     "resultado": "GREEN",
@@ -2749,44 +2763,15 @@
   ],
   "consumidas": {
    "premier": 1785446633933,
-   "super": 1785448316822
+   "super": 1785448316822,
+   "copa": 1785449300730
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:04",
-     "jogo": "França x Bélgica",
-     "odd": 1.98
-    },
-    {
-     "h": "23:07",
-     "jogo": "Curação x Argélia",
-     "odd": 1.93
-    },
-    {
-     "h": "23:10",
-     "jogo": "Bélgica x Coreia do Sul",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "time Argélia",
-   "alvo": {
-    "h": "23:04",
-    "jogo": "França x Bélgica",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785448608623
-   },
-   "iniciadoEm": 1785448608623
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785439551897,
    "super": 1785448316822,
    "premier": 1785446633933,
-   "copa": 1785444948126
+   "copa": 1785449300730
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -2803,12 +2788,12 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 20.8
+   "2026-07-30": 21.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Argélia",
-   "n": 14,
+   "tipo": "odd",
+   "chave": "2.15",
+   "n": 29,
    "start": 1
   },
   "_obs": {}
