@@ -2408,7 +2408,37 @@
    "super": 1785412305094,
    "premier": 1785412608200
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:29",
+     "jogo": "Sérvia x Eslovênia",
+     "odd": 2.37
+    },
+    {
+     "h": "13:32",
+     "jogo": "Espanha x Geórgia",
+     "odd": 2.02
+    },
+    {
+     "h": "13:35",
+     "jogo": "Inglaterra x França",
+     "odd": 1.8
+    }
+   ],
+   "gatilho": "odd 2.02",
+   "alvo": {
+    "h": "13:29",
+    "jogo": "Sérvia x Eslovênia",
+    "odd": 2.37,
+    "unidades": 1,
+    "desde": 1785414403001
+   },
+   "iniciadoEm": 1785414403001
+  },
   "cooldown": {
    "euro": 1785398142292,
    "super": 1785412305094,
@@ -2433,9 +2463,9 @@
    "2026-07-30": 8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":00",
-   "n": 12,
+   "tipo": "odd",
+   "chave": "2.02",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
