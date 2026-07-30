@@ -1213,21 +1213,27 @@
    "2026-07-30": 6.7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Agua Branca",
-   "n": 14,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":49",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -53.7,
-  "ciclos": 715,
+  "ciclos": 716,
   "greens": 474,
   "redsCiclo": 76,
   "aborts": 0,
-  "descartes": 165,
+  "descartes": 166,
   "historico": [
+   {
+    "quando": "2026-07-30T07:37:09.501Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :49) — liga REARMADA"
+   },
    {
     "quando": "2026-07-30T06:44:38.096Z",
     "resultado": "GREEN",
@@ -2312,6 +2318,11 @@
    "n": 14,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1785397029500,
+    "gatilho": "coluna :49"
+   }
+  }
  }
 }
