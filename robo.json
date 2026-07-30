@@ -1297,13 +1297,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -40.8,
-  "ciclos": 729,
-  "greens": 487,
+  "saldo": -39.8,
+  "ciclos": 730,
+  "greens": 488,
   "redsCiclo": 76,
   "aborts": 0,
   "descartes": 166,
   "historico": [
+   {
+    "quando": "2026-07-30T13:19:06.695Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Medellin x Montevideo @1.95 (tiro 1) · gatilho: seq RRGGR"
+   },
    {
     "quando": "2026-07-30T13:16:05.191Z",
     "resultado": "GREEN",
@@ -2442,42 +2448,13 @@
   "consumidas": {
    "euro": 1785414909191,
    "premier": 1785416576498,
-   "copa": 1785417364998
+   "copa": 1785417364998,
+   "super": 1785417546592
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:16",
-     "jogo": "Medellin x Montevideo",
-     "odd": 1.95
-    },
-    {
-     "h": "14:19",
-     "jogo": "Lima x Santiago",
-     "odd": 1.8
-    },
-    {
-     "h": "14:22",
-     "jogo": "Belo Horizonte x Sao Paulo",
-     "odd": 1.83
-    }
-   ],
-   "gatilho": "seq RRGGR",
-   "alvo": {
-    "h": "14:16",
-    "jogo": "Medellin x Montevideo",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1785417367402
-   },
-   "iniciadoEm": 1785417367402
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785414909191,
-   "super": 1785412305094,
+   "super": 1785417546592,
    "premier": 1785416576498,
    "copa": 1785417364998
   },
@@ -2496,12 +2473,12 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 10.7
+   "2026-07-30": 11.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGGR",
-   "n": 9,
+   "tipo": "odd",
+   "chave": "1.83",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
