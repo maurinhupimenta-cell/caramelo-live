@@ -1263,7 +1263,37 @@
    "copa": 1785415223503,
    "premier": 1785415840702
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:31",
+     "jogo": "Itaquera x Quito",
+     "odd": 2.5
+    },
+    {
+     "h": "14:34",
+     "jogo": "Bogota x Asuncion",
+     "odd": 2.5
+    },
+    {
+     "h": "14:37",
+     "jogo": "Buenos Aires x Avellaneda",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "seq RGRGR",
+   "alvo": {
+    "h": "14:31",
+    "jogo": "Itaquera x Quito",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1785418086802
+   },
+   "iniciadoEm": 1785418086802
+  },
   "cooldown": {
    "copa": 1785415223503,
    "premier": 1785415840702,
@@ -1290,8 +1320,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRR",
-   "n": 23,
+   "chave": "RGRGR",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
