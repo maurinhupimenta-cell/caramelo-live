@@ -1029,7 +1029,37 @@
    "super": 1785377760801,
    "copa": 1785377976801
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:26",
+     "jogo": "Sérvia x França",
+     "odd": 2.25
+    },
+    {
+     "h": "03:29",
+     "jogo": "Dinamarca x Turquia",
+     "odd": 2.6
+    },
+    {
+     "h": "03:32",
+     "jogo": "República Tcheca x Inglaterra",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "placar 0-0",
+   "alvo": {
+    "h": "03:26",
+    "jogo": "Sérvia x França",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785378272197
+   },
+   "iniciadoEm": 1785378272197
+  },
   "cooldown": {
    "copa": 1785377976801,
    "premier": 1785374812694,
@@ -1055,8 +1085,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 11,
+   "chave": "0-0",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
