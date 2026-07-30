@@ -2717,7 +2717,37 @@
    "copa": 1785444948126,
    "premier": 1785446633933
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:46",
+     "jogo": "Porto Alegre x Lima",
+     "odd": 2.15
+    },
+    {
+     "h": "22:49",
+     "jogo": "Sao Paulo x Santiago",
+     "odd": 1.83
+    },
+    {
+     "h": "22:52",
+     "jogo": "Porto Alegre x Buenos Aires",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "odd 1.83",
+   "alvo": {
+    "h": "22:46",
+    "jogo": "Porto Alegre x Lima",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785447942026
+   },
+   "iniciadoEm": 1785447942026
+  },
   "cooldown": {
    "euro": 1785439551897,
    "super": 1785443024122,
@@ -2743,8 +2773,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.07",
-   "n": 19,
+   "chave": "1.83",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
