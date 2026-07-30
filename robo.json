@@ -1104,11 +1104,40 @@
    }
   ],
   "consumidas": {
-   "super": 1785388048295,
    "copa": 1785390724595,
    "premier": 1785391537903
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:08",
+     "jogo": "Países Baixos x Turquia",
+     "odd": 2.3
+    },
+    {
+     "h": "07:11",
+     "jogo": "Inglaterra x Itália",
+     "odd": 2.15
+    },
+    {
+     "h": "07:14",
+     "jogo": "Geórgia x Albânia",
+     "odd": 2.75
+    }
+   ],
+   "gatilho": "seq RRGR",
+   "alvo": {
+    "h": "07:08",
+    "jogo": "Países Baixos x Turquia",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1785391540099
+   },
+   "iniciadoEm": 1785391540099
+  },
   "cooldown": {
    "copa": 1785390724595,
    "premier": 1785391537903,
@@ -1134,9 +1163,9 @@
    "2026-07-30": 5.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.45",
-   "n": 8,
+   "tipo": "seq",
+   "chave": "RRGR",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
