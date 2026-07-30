@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -88.9,
-  "ciclos": 641,
-  "greens": 397,
+  "saldo": -87.8,
+  "ciclos": 642,
+  "greens": 398,
   "redsCiclo": 102,
   "aborts": 0,
   "descartes": 142,
   "historico": [
+   {
+    "quando": "2026-07-30T03:32:55.394Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Newcastle x United @2.07 (tiro 1) · gatilho: time Leeds"
+   },
    {
     "quando": "2026-07-30T03:26:29.098Z",
     "resultado": "GREEN",
@@ -1043,42 +1049,13 @@
    }
   ],
   "consumidas": {
-   "super": 1785381988993
+   "super": 1785381988993,
+   "premier": 1785382375203
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:30",
-     "jogo": "Newcastle x United",
-     "odd": 2.07
-    },
-    {
-     "h": "04:33",
-     "jogo": "Brighton x Leeds",
-     "odd": 2.3
-    },
-    {
-     "h": "04:36",
-     "jogo": "Southampton x Liverpool",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "time Leeds",
-   "alvo": {
-    "h": "04:30",
-    "jogo": "Newcastle x United",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1785381989997
-   },
-   "iniciadoEm": 1785381989997
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785377976801,
-   "premier": 1785374812694,
+   "premier": 1785382375203,
    "euro": 1785378580591,
    "super": 1785381988993
   },
@@ -1098,13 +1075,13 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": 1.1
+   "2026-07-30": 2.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.4",
-   "n": 9,
-   "start": 3
+   "tipo": "time",
+   "chave": "West Ham",
+   "n": 8,
+   "start": 2
   },
   "_obs": {}
  },
