@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -96.4,
-  "ciclos": 674,
+  "saldo": -103.4,
+  "ciclos": 675,
   "greens": 418,
-  "redsCiclo": 108,
+  "redsCiclo": 109,
   "aborts": 0,
   "descartes": 148,
   "historico": [
+   {
+    "quando": "2026-07-30T12:50:40.895Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: time Leicester"
+   },
    {
     "quando": "2026-07-30T12:40:23.694Z",
     "resultado": "GREEN",
@@ -1255,56 +1261,13 @@
   "consumidas": {
    "super": 1785412304892,
    "euro": 1785414908991,
-   "copa": 1785415223503
+   "copa": 1785415223503,
+   "premier": 1785415840702
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "13:42",
-     "jogo": "Islington x Leicester",
-     "odd": 2.5
-    },
-    {
-     "h": "13:45",
-     "jogo": "Chelsea x Wolverhampton",
-     "odd": 2.5
-    },
-    {
-     "h": "13:48",
-     "jogo": "Brentford x Leeds",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "time Leicester",
-   "alvo": {
-    "h": "13:48",
-    "jogo": "Brentford x Leeds",
-    "odd": 2.5,
-    "unidades": 4,
-    "desde": 1785415670497
-   },
-   "iniciadoEm": 1785415302802,
-   "tiros": [
-    {
-     "h": "13:42",
-     "jogo": "Islington x Leicester",
-     "odd": 2.5,
-     "unidades": 1
-    },
-    {
-     "h": "13:45",
-     "jogo": "Chelsea x Wolverhampton",
-     "odd": 2.5,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785415223503,
-   "premier": 1785411700793,
+   "premier": 1785415840702,
    "euro": 1785414908991,
    "super": 1785412304892
   },
@@ -1324,12 +1287,12 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -6.4
+   "2026-07-30": -13.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":54",
-   "n": 13,
+   "tipo": "seq",
+   "chave": "RRRR",
+   "n": 23,
    "start": 1
   },
   "_obs": {}
