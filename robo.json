@@ -2156,7 +2156,37 @@
   "consumidas": {
    "premier": 1785381470995
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:55",
+     "jogo": "Bogota x Santiago",
+     "odd": 2.02
+    },
+    {
+     "h": "04:58",
+     "jogo": "Agua Branca x Porto Alegre",
+     "odd": 2.15
+    },
+    {
+     "h": "05:01",
+     "jogo": "Montevideo x Medellin",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "time Agua Branca",
+   "alvo": {
+    "h": "04:55",
+    "jogo": "Bogota x Santiago",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1785383276395
+   },
+   "iniciadoEm": 1785383276395
+  },
   "cooldown": {
    "euro": 1785378001192,
    "super": 1785379107004,
@@ -2182,9 +2212,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Palace",
-   "n": 13,
-   "start": 1
+   "chave": "Agua Branca",
+   "n": 10,
+   "start": 3
   },
   "_obs": {}
  }
