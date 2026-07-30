@@ -171,7 +171,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:35",
+     "jogo": "Eslovênia x República Tcheca",
+     "odd": 7
+    },
+    {
+     "h": "05:38",
+     "jogo": "Áustria x Escócia",
+     "odd": 4.5
+    },
+    {
+     "h": "05:41",
+     "jogo": "Turquia x Albânia",
+     "odd": 6.5
+    }
+   ],
+   "gatilho": "odd 4.5",
+   "alvo": {
+    "h": "05:35",
+    "jogo": "Eslovênia x República Tcheca",
+    "odd": 7,
+    "unidades": 1,
+    "desde": 1785385589793
+   },
+   "iniciadoEm": 1785385589793
+  },
   "cooldown": {
    "copa": 1785038273206,
    "premier": 1785303702158,
@@ -192,10 +222,10 @@
    "2026-07-29": -7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRG",
+   "tipo": "odd",
+   "chave": "4.5",
    "n": 8,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
@@ -1061,7 +1091,6 @@
    }
   ],
   "consumidas": {
-   "super": 1785381988993,
    "premier": 1785382375203,
    "euro": 1785382948699,
    "copa": 1785383513203
