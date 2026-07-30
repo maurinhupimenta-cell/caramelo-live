@@ -1245,7 +1245,37 @@
    "premier": 1785411700793,
    "super": 1785412304892
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:32",
+     "jogo": "Espanha x Geórgia",
+     "odd": 2.5
+    },
+    {
+     "h": "13:41",
+     "jogo": "República Tcheca x Inglaterra",
+     "odd": 2.5
+    },
+    {
+     "h": "13:44",
+     "jogo": "Suíça x Itália",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "coluna :41",
+   "alvo": {
+    "h": "13:32",
+    "jogo": "Espanha x Geórgia",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1785414622499
+   },
+   "iniciadoEm": 1785414622499
+  },
   "cooldown": {
    "copa": 1785411243593,
    "premier": 1785411700793,
@@ -1271,10 +1301,10 @@
    "2026-07-30": -9.4
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 9,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":41",
+   "n": 13,
+   "start": 3
   },
   "_obs": {}
  },
