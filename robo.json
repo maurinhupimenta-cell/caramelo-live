@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -112.1,
-  "ciclos": 697,
+  "saldo": -119.1,
+  "ciclos": 698,
   "greens": 431,
-  "redsCiclo": 113,
+  "redsCiclo": 114,
   "aborts": 0,
   "descartes": 153,
   "historico": [
+   {
+    "quando": "2026-07-30T19:45:42.526Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: odd 2.55"
+   },
    {
     "quando": "2026-07-30T19:19:40.399Z",
     "resultado": "GREEN_OBS",
@@ -1391,58 +1397,45 @@
    }
   ],
   "consumidas": {
-   "premier": 1785438175002
+   "premier": 1785438175002,
+   "super": 1785440742333
   },
   "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "20:28",
-     "jogo": "Belo Horizonte x Guayaquil",
-     "odd": 2.05
+     "h": "20:46",
+     "jogo": "Uzbequistão x França",
+     "odd": 2.25
     },
     {
-     "h": "20:31",
-     "jogo": "Bogota x Quito",
-     "odd": 2.55
+     "h": "20:49",
+     "jogo": "Qatar x Egito",
+     "odd": 2.2
     },
     {
-     "h": "20:34",
-     "jogo": "Guayaquil x Lima",
-     "odd": 2.07
+     "h": "20:52",
+     "jogo": "Marrocos x Paraguai",
+     "odd": 2.4
     }
    ],
-   "gatilho": "odd 2.55",
+   "gatilho": "seq RRRGR",
    "alvo": {
-    "h": "20:34",
-    "jogo": "Guayaquil x Lima",
-    "odd": 2.07,
-    "unidades": 4,
-    "desde": 1785440081130
+    "h": "20:46",
+    "jogo": "Uzbequistão x França",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785440745922
    },
-   "iniciadoEm": 1785439182896,
-   "tiros": [
-    {
-     "h": "20:28",
-     "jogo": "Belo Horizonte x Guayaquil",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "20:31",
-     "jogo": "Bogota x Quito",
-     "odd": 2.55,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1785440745922
   },
   "cooldown": {
    "copa": 1785436486598,
    "premier": 1785438175002,
    "euro": 1785437036400,
-   "super": 1785433204093
+   "super": 1785440742333
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -1460,12 +1453,12 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -22.1
+   "2026-07-30": -29.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRGR",
-   "n": 14,
+   "tipo": "odd",
+   "chave": "2.75",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
