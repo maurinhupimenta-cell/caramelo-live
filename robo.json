@@ -1405,13 +1405,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -38.5,
-  "ciclos": 740,
-  "greens": 496,
+  "saldo": -37.6,
+  "ciclos": 741,
+  "greens": 497,
   "redsCiclo": 77,
   "aborts": 0,
   "descartes": 167,
   "historico": [
+   {
+    "quando": "2026-07-30T18:08:22.794Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Wolverhampton x Islington @1.85 (tiro 1) · gatilho: coluna :00"
+   },
    {
     "quando": "2026-07-30T17:54:26.300Z",
     "resultado": "GREEN",
@@ -2616,43 +2622,14 @@
   "consumidas": {
    "copa": 1785431938499,
    "super": 1785432445491,
-   "euro": 1785434066193
+   "euro": 1785434066193,
+   "premier": 1785434902603
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:57",
-     "jogo": "Wolverhampton x Islington",
-     "odd": 1.85
-    },
-    {
-     "h": "19:00",
-     "jogo": "Aston x Newcastle",
-     "odd": 1.93
-    },
-    {
-     "h": "19:03",
-     "jogo": "Brighton x Watford",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "coluna :00",
-   "alvo": {
-    "h": "18:57",
-    "jogo": "Wolverhampton x Islington",
-    "odd": 1.85,
-    "unidades": 1,
-    "desde": 1785434067797
-   },
-   "iniciadoEm": 1785434067797
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785434066193,
    "super": 1785432445491,
-   "premier": 1785430291300,
+   "premier": 1785434902603,
    "copa": 1785431938499
   },
   "dias": {
@@ -2670,7 +2647,7 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 13
+   "2026-07-30": 13.9
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
