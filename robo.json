@@ -1375,13 +1375,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -42.8,
-  "ciclos": 735,
-  "greens": 492,
+  "saldo": -41.4,
+  "ciclos": 736,
+  "greens": 493,
   "redsCiclo": 77,
   "aborts": 0,
   "descartes": 166,
   "historico": [
+   {
+    "quando": "2026-07-30T16:51:31.493Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "premier · City x West Ham @2.1 (tiro 3) · gatilho: odd 1.8"
+   },
    {
     "quando": "2026-07-30T15:59:28.896Z",
     "resultado": "GREEN",
@@ -2554,57 +2560,14 @@
    }
   ],
   "consumidas": {
-   "copa": 1785427168703
+   "copa": 1785427168703,
+   "premier": 1785430291300
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "17:42",
-     "jogo": "Leicester x Tottenham",
-     "odd": 2.1
-    },
-    {
-     "h": "17:45",
-     "jogo": "Everton x Wolverhampton",
-     "odd": 1.8
-    },
-    {
-     "h": "17:48",
-     "jogo": "City x West Ham",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "odd 1.8",
-   "alvo": {
-    "h": "17:48",
-    "jogo": "City x West Ham",
-    "odd": 2.1,
-    "unidades": 4,
-    "desde": 1785430064300
-   },
-   "iniciadoEm": 1785429188304,
-   "tiros": [
-    {
-     "h": "17:42",
-     "jogo": "Leicester x Tottenham",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "17:45",
-     "jogo": "Everton x Wolverhampton",
-     "odd": 1.8,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785419921894,
    "super": 1785423393403,
-   "premier": 1785425569892,
+   "premier": 1785430291300,
    "copa": 1785427168703
   },
   "dias": {
@@ -2622,13 +2585,13 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 8.7
+   "2026-07-30": 10.1
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":48",
+   "chave": ":00",
    "n": 17,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  }
