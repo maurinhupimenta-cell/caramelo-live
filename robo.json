@@ -213,12 +213,18 @@
  },
  "o25": {
   "saldo": -111.5,
-  "ciclos": 688,
+  "ciclos": 689,
   "greens": 426,
   "redsCiclo": 112,
   "aborts": 0,
-  "descartes": 150,
+  "descartes": 151,
   "historico": [
+   {
+    "quando": "2026-07-30T17:21:30.993Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho coluna :22) — liga REARMADA"
+   },
    {
     "quando": "2026-07-30T16:44:29.993Z",
     "resultado": "GREEN",
@@ -1337,7 +1343,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1785428490696,
    "premier": 1785429097294,
    "euro": 1785429869801
   },
@@ -1372,7 +1377,12 @@
    "n": 17,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1785432090992,
+    "gatilho": "coluna :22"
+   }
+  }
  },
  "ambas": {
   "saldo": -40.5,
@@ -2569,7 +2579,37 @@
    "premier": 1785430291300,
    "copa": 1785431938499
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:22",
+     "jogo": "Buenos Aires x Rio de Janeiro",
+     "odd": 1.85
+    },
+    {
+     "h": "18:25",
+     "jogo": "Agua Branca x Asuncion",
+     "odd": 2
+    },
+    {
+     "h": "18:28",
+     "jogo": "Avellaneda x Quito",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "seq RRRGG",
+   "alvo": {
+    "h": "18:22",
+    "jogo": "Buenos Aires x Rio de Janeiro",
+    "odd": 1.85,
+    "unidades": 1,
+    "desde": 1785431950001
+   },
+   "iniciadoEm": 1785431950001
+  },
   "cooldown": {
    "euro": 1785419921894,
    "super": 1785423393403,
@@ -2594,9 +2634,9 @@
    "2026-07-30": 11
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":19",
-   "n": 18,
+   "tipo": "seq",
+   "chave": "RRRGG",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
