@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -91.3,
-  "ciclos": 638,
-  "greens": 395,
+  "saldo": -90,
+  "ciclos": 639,
+  "greens": 396,
   "redsCiclo": 102,
   "aborts": 0,
   "descartes": 141,
   "historico": [
+   {
+    "quando": "2026-07-30T02:29:40.695Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "euro · Sérvia x França @2.25 (tiro 1) · gatilho: placar 0-0"
+   },
    {
     "quando": "2026-07-30T02:19:36.994Z",
     "resultado": "GREEN",
@@ -1026,43 +1032,14 @@
   ],
   "consumidas": {
    "super": 1785377760801,
-   "copa": 1785377976801
+   "copa": 1785377976801,
+   "euro": 1785378580591
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:26",
-     "jogo": "Sérvia x França",
-     "odd": 2.25
-    },
-    {
-     "h": "03:29",
-     "jogo": "Dinamarca x Turquia",
-     "odd": 2.6
-    },
-    {
-     "h": "03:32",
-     "jogo": "República Tcheca x Inglaterra",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "placar 0-0",
-   "alvo": {
-    "h": "03:26",
-    "jogo": "Sérvia x França",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785378272197
-   },
-   "iniciadoEm": 1785378272197
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785377976801,
    "premier": 1785374812694,
-   "euro": 1785363520397,
+   "euro": 1785378580591,
    "super": 1785377760801
   },
   "dias": {
@@ -1080,7 +1057,7 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 24.1
+   "2026-07-29": 25.4
   },
   "_gatilhoAtual": {
    "tipo": "placar",
@@ -2162,7 +2139,7 @@
    "tipo": "odd",
    "chave": "2.05",
    "n": 8,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
