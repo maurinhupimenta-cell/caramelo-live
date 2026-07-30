@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -116.4,
-  "ciclos": 700,
+  "saldo": -123.4,
+  "ciclos": 701,
   "greens": 433,
-  "redsCiclo": 114,
+  "redsCiclo": 115,
   "aborts": 0,
   "descartes": 153,
   "historico": [
+   {
+    "quando": "2026-07-30T20:11:57.427Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: time Tottenham"
+   },
    {
     "quando": "2026-07-30T19:58:50.126Z",
     "resultado": "GREEN",
@@ -1411,56 +1417,13 @@
   "consumidas": {
    "super": 1785440742333,
    "copa": 1785441167028,
-   "euro": 1785441529925
+   "euro": 1785441529925,
+   "premier": 1785442317229
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "21:03",
-     "jogo": "Tottenham x Norwich",
-     "odd": 2.4
-    },
-    {
-     "h": "21:06",
-     "jogo": "Liverpool x Burnley",
-     "odd": 2.15
-    },
-    {
-     "h": "21:09",
-     "jogo": "Islington x United",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Tottenham",
-   "alvo": {
-    "h": "21:09",
-    "jogo": "Islington x United",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1785442133631
-   },
-   "iniciadoEm": 1785441782124,
-   "tiros": [
-    {
-     "h": "21:03",
-     "jogo": "Tottenham x Norwich",
-     "odd": 2.4,
-     "unidades": 1
-    },
-    {
-     "h": "21:06",
-     "jogo": "Liverpool x Burnley",
-     "odd": 2.15,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785441167028,
-   "premier": 1785438175002,
+   "premier": 1785442317229,
    "euro": 1785441529925,
    "super": 1785440742333
   },
@@ -1480,7 +1443,7 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -26.4
+   "2026-07-30": -33.4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
