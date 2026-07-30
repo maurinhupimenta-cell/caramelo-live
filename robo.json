@@ -1155,13 +1155,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -47.4,
-  "ciclos": 713,
+  "saldo": -54.4,
+  "ciclos": 714,
   "greens": 473,
-  "redsCiclo": 75,
+  "redsCiclo": 76,
   "aborts": 0,
   "descartes": 165,
   "historico": [
+   {
+    "quando": "2026-07-30T06:31:07.694Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: time Buenos Aires"
+   },
    {
     "quando": "2026-07-30T05:35:36.298Z",
     "resultado": "GREEN",
@@ -2202,56 +2208,13 @@
    }
   ],
   "consumidas": {
-   "premier": 1785389736192
+   "premier": 1785389736192,
+   "super": 1785393067501
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "07:22",
-     "jogo": "Medellin x Penarol",
-     "odd": 2.15
-    },
-    {
-     "h": "07:25",
-     "jogo": "La Boca x Buenos Aires",
-     "odd": 1.93
-    },
-    {
-     "h": "07:28",
-     "jogo": "Medellin x Bogota",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Buenos Aires",
-   "alvo": {
-    "h": "07:28",
-    "jogo": "Medellin x Bogota",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1785392887697
-   },
-   "iniciadoEm": 1785392257097,
-   "tiros": [
-    {
-     "h": "07:22",
-     "jogo": "Medellin x Penarol",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "07:25",
-     "jogo": "La Boca x Buenos Aires",
-     "odd": 1.93,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785378001192,
-   "super": 1785388655105,
+   "super": 1785393067501,
    "premier": 1785389736192,
    "copa": 1785363704496
   },
@@ -2270,13 +2233,13 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 4.1
+   "2026-07-30": -2.9
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Buenos Aires",
    "n": 14,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
