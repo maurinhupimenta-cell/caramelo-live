@@ -204,7 +204,12 @@
    "n": 8,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1785394565303,
+    "gatilho": "coluna :08"
+   }
+  }
  },
  "o25": {
   "saldo": -79,
@@ -1120,7 +1125,45 @@
    "euro": 1785392205194,
    "super": 1785392704703
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "07:55",
+     "jogo": "República Tcheca x Croácia",
+     "odd": 2.5
+    },
+    {
+     "h": "07:58",
+     "jogo": "Alemanha x Argélia",
+     "odd": 2.2
+    },
+    {
+     "h": "08:01",
+     "jogo": "República Tcheca x Austrália",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "seq RRRG",
+   "alvo": {
+    "h": "07:58",
+    "jogo": "Alemanha x Argélia",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1785394665396
+   },
+   "iniciadoEm": 1785394326796,
+   "tiros": [
+    {
+     "h": "07:55",
+     "jogo": "República Tcheca x Croácia",
+     "odd": 2.5,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1785390724595,
    "premier": 1785391537903,
@@ -1146,9 +1189,9 @@
    "2026-07-30": 11
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.25",
-   "n": 10,
+   "tipo": "time",
+   "chave": "Noruega",
+   "n": 9,
    "start": 2
   },
   "_obs": {}
