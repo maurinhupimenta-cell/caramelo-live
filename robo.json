@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -89,
-  "ciclos": 657,
-  "greens": 409,
+  "saldo": -87.5,
+  "ciclos": 658,
+  "greens": 410,
   "redsCiclo": 105,
   "aborts": 0,
   "descartes": 143,
   "historico": [
+   {
+    "quando": "2026-07-30T08:26:39.190Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "premier · Islington x Brentford @2.25 (tiro 2) · gatilho: time Tottenham"
+   },
    {
     "quando": "2026-07-30T08:11:05.599Z",
     "resultado": "GREEN",
@@ -1153,50 +1159,13 @@
   "consumidas": {
    "euro": 1785396522694,
    "super": 1785397207797,
-   "copa": 1785399065495
+   "copa": 1785399065495,
+   "premier": 1785399998996
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "09:21",
-     "jogo": "Everton x Tottenham",
-     "odd": 2.35
-    },
-    {
-     "h": "09:24",
-     "jogo": "Islington x Brentford",
-     "odd": 2.25
-    },
-    {
-     "h": "09:27",
-     "jogo": "Brighton x City",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "time Tottenham",
-   "alvo": {
-    "h": "09:24",
-    "jogo": "Islington x Brentford",
-    "odd": 2.25,
-    "unidades": 2,
-    "desde": 1785399818601
-   },
-   "iniciadoEm": 1785399459597,
-   "tiros": [
-    {
-     "h": "09:21",
-     "jogo": "Everton x Tottenham",
-     "odd": 2.35,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785399065495,
-   "premier": 1785395856997,
+   "premier": 1785399998996,
    "euro": 1785396522694,
    "super": 1785397207797
   },
@@ -1216,7 +1185,7 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": 1
+   "2026-07-30": 2.5
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
