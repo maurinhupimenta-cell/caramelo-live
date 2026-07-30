@@ -2488,8 +2488,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "15:15",
@@ -2509,13 +2509,21 @@
    ],
    "gatilho": "placar empate 2-2",
    "alvo": {
-    "h": "15:15",
-    "jogo": "Palace x Brentford",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785420713700
+    "h": "15:18",
+    "jogo": "Leicester x Newcastle",
+    "odd": 1.9,
+    "unidades": 2,
+    "desde": 1785421073903
    },
-   "iniciadoEm": 1785420713700
+   "iniciadoEm": 1785420713700,
+   "tiros": [
+    {
+     "h": "15:15",
+     "jogo": "Palace x Brentford",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785419921894,
@@ -2544,7 +2552,7 @@
    "tipo": "odd",
    "chave": "2.07",
    "n": 12,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
