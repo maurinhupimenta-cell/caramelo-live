@@ -2491,7 +2491,37 @@
    "euro": 1785419921894,
    "premier": 1785421249499
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:46",
+     "jogo": "Santiago x Lima",
+     "odd": 1.8
+    },
+    {
+     "h": "15:49",
+     "jogo": "Belo Horizonte x Medellin",
+     "odd": 2.05
+    },
+    {
+     "h": "15:52",
+     "jogo": "Penarol x Itaquera",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "seq RRRGG",
+   "alvo": {
+    "h": "15:46",
+    "jogo": "Santiago x Lima",
+    "odd": 1.8,
+    "unidades": 1,
+    "desde": 1785422587591
+   },
+   "iniciadoEm": 1785422587591
+  },
   "cooldown": {
    "euro": 1785419921894,
    "super": 1785417546592,
@@ -2516,9 +2546,9 @@
    "2026-07-30": 5.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.07",
-   "n": 12,
+   "tipo": "seq",
+   "chave": "RRRGG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
