@@ -1347,21 +1347,27 @@
    "2026-07-30": -6.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRG",
-   "n": 18,
-   "start": 1
+   "tipo": "time",
+   "chave": "Equador",
+   "n": 13,
+   "start": 3
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -46,
-  "ciclos": 732,
-  "greens": 489,
+  "saldo": -44.9,
+  "ciclos": 733,
+  "greens": 490,
   "redsCiclo": 77,
   "aborts": 0,
   "descartes": 166,
   "historico": [
+   {
+    "quando": "2026-07-30T14:56:33.597Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Belo Horizonte x Medellin @2.05 (tiro 2) · gatilho: seq RRRGG"
+   },
    {
     "quando": "2026-07-30T14:20:49.692Z",
     "resultado": "GREEN",
@@ -2517,50 +2523,13 @@
   ],
   "consumidas": {
    "euro": 1785419921894,
-   "premier": 1785421249499
+   "premier": 1785421249499,
+   "super": 1785423393403
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "15:46",
-     "jogo": "Santiago x Lima",
-     "odd": 1.8
-    },
-    {
-     "h": "15:49",
-     "jogo": "Belo Horizonte x Medellin",
-     "odd": 2.05
-    },
-    {
-     "h": "15:52",
-     "jogo": "Penarol x Itaquera",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "seq RRRGG",
-   "alvo": {
-    "h": "15:49",
-    "jogo": "Belo Horizonte x Medellin",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1785423029596
-   },
-   "iniciadoEm": 1785422587591,
-   "tiros": [
-    {
-     "h": "15:46",
-     "jogo": "Santiago x Lima",
-     "odd": 1.8,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785419921894,
-   "super": 1785417546592,
+   "super": 1785423393403,
    "premier": 1785421249499,
    "copa": 1785417364998
   },
@@ -2579,7 +2548,7 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 5.5
+   "2026-07-30": 6.6
   },
   "_gatilhoAtual": {
    "tipo": "seq",
