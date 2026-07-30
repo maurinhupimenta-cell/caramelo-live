@@ -1378,8 +1378,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "19:38",
@@ -1399,13 +1399,21 @@
    ],
    "gatilho": "coluna :41",
    "alvo": {
-    "h": "19:38",
-    "jogo": "Dinamarca x Espanha",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785436488493
+    "h": "19:41",
+    "jogo": "Países Baixos x Escócia",
+    "odd": 2.07,
+    "unidades": 2,
+    "desde": 1785437027100
    },
-   "iniciadoEm": 1785436488493
+   "iniciadoEm": 1785436488493,
+   "tiros": [
+    {
+     "h": "19:38",
+     "jogo": "Dinamarca x Espanha",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785436486598,
@@ -1432,9 +1440,9 @@
    "2026-07-30": -24.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRRG",
-   "n": 10,
+   "tipo": "coluna",
+   "chave": ":41",
+   "n": 19,
    "start": 1
   },
   "_obs": {}
