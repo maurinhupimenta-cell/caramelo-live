@@ -1409,12 +1409,41 @@
    }
   ],
   "consumidas": {
-   "premier": 1785438175002,
    "super": 1785440742333,
    "copa": 1785441167028,
    "euro": 1785441529925
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:03",
+     "jogo": "Tottenham x Norwich",
+     "odd": 2.4
+    },
+    {
+     "h": "21:06",
+     "jogo": "Liverpool x Burnley",
+     "odd": 2.15
+    },
+    {
+     "h": "21:09",
+     "jogo": "Islington x United",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time Tottenham",
+   "alvo": {
+    "h": "21:03",
+    "jogo": "Tottenham x Norwich",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1785441782124
+   },
+   "iniciadoEm": 1785441782124
+  },
   "cooldown": {
    "copa": 1785441167028,
    "premier": 1785438175002,
@@ -1440,9 +1469,9 @@
    "2026-07-30": -26.4
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 14,
+   "tipo": "time",
+   "chave": "Tottenham",
+   "n": 41,
    "start": 1
   },
   "_obs": {}
