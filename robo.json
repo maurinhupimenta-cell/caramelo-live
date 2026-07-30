@@ -1297,13 +1297,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -42.5,
-  "ciclos": 727,
-  "greens": 485,
+  "saldo": -41.5,
+  "ciclos": 728,
+  "greens": 486,
   "redsCiclo": 76,
   "aborts": 0,
   "descartes": 166,
   "historico": [
+   {
+    "quando": "2026-07-30T13:02:56.690Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Wolverhampton x West Ham @2.02 (tiro 2) · gatilho: coluna :00"
+   },
    {
     "quando": "2026-07-30T12:35:09.302Z",
     "resultado": "GREEN",
@@ -2428,51 +2434,14 @@
    }
   ],
   "consumidas": {
-   "euro": 1785414909191
+   "euro": 1785414909191,
+   "premier": 1785416576498
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "13:57",
-     "jogo": "Brighton x Leeds",
-     "odd": 2
-    },
-    {
-     "h": "14:00",
-     "jogo": "Wolverhampton x West Ham",
-     "odd": 2.02
-    },
-    {
-     "h": "14:03",
-     "jogo": "Brentford x Watford",
-     "odd": 2
-    }
-   ],
-   "gatilho": "coluna :00",
-   "alvo": {
-    "h": "14:00",
-    "jogo": "Wolverhampton x West Ham",
-    "odd": 2.02,
-    "unidades": 2,
-    "desde": 1785416387499
-   },
-   "iniciadoEm": 1785416209593,
-   "tiros": [
-    {
-     "h": "13:57",
-     "jogo": "Brighton x Leeds",
-     "odd": 2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785414909191,
    "super": 1785412305094,
-   "premier": 1785412608200,
+   "premier": 1785416576498,
    "copa": 1785411429495
   },
   "dias": {
@@ -2490,7 +2459,7 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 9
+   "2026-07-30": 10
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
