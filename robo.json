@@ -1377,7 +1377,37 @@
    "premier": 1785434247203,
    "copa": 1785436486598
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:38",
+     "jogo": "Dinamarca x Espanha",
+     "odd": 2.2
+    },
+    {
+     "h": "19:41",
+     "jogo": "Países Baixos x Escócia",
+     "odd": 2.07
+    },
+    {
+     "h": "19:44",
+     "jogo": "Ucrânia x Portugal",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "coluna :41",
+   "alvo": {
+    "h": "19:38",
+    "jogo": "Dinamarca x Espanha",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785436488493
+   },
+   "iniciadoEm": 1785436488493
+  },
   "cooldown": {
    "copa": 1785436486598,
    "premier": 1785434247203,
@@ -1404,20 +1434,26 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRGRG",
-   "n": 12,
+   "chave": "GGRRG",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -36.9,
-  "ciclos": 742,
-  "greens": 498,
+  "saldo": -35.8,
+  "ciclos": 743,
+  "greens": 499,
   "redsCiclo": 77,
   "aborts": 0,
   "descartes": 167,
   "historico": [
+   {
+    "quando": "2026-07-30T18:38:46.002Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Medellin x Quito @2.05 (tiro 2) · gatilho: seq RRGGR"
+   },
    {
     "quando": "2026-07-30T18:34:46.990Z",
     "resultado": "GREEN",
@@ -2634,12 +2670,13 @@
   "consumidas": {
    "euro": 1785434066193,
    "premier": 1785434902603,
-   "copa": 1785436486795
+   "copa": 1785436486795,
+   "super": 1785436725895
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1785434066193,
-   "super": 1785432445491,
+   "super": 1785436725895,
    "premier": 1785434902603,
    "copa": 1785436486795
   },
@@ -2658,7 +2695,7 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 14.6
+   "2026-07-30": 15.7
   },
   "_gatilhoAtual": {
    "tipo": "seq",
