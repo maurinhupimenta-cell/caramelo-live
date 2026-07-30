@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -79,
-  "ciclos": 652,
-  "greens": 406,
+  "saldo": -77.6,
+  "ciclos": 653,
+  "greens": 407,
   "redsCiclo": 103,
   "aborts": 0,
   "descartes": 143,
   "historico": [
+   {
+    "quando": "2026-07-30T07:01:25.896Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "copa · Alemanha x Argélia @2.2 (tiro 2) · gatilho: seq RRRG"
+   },
    {
     "quando": "2026-07-30T06:25:04.896Z",
     "resultado": "GREEN",
@@ -1121,51 +1127,13 @@
    }
   ],
   "consumidas": {
-   "premier": 1785391537903,
    "euro": 1785392205194,
-   "super": 1785392704703
+   "super": 1785392704703,
+   "copa": 1785394885700
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "07:55",
-     "jogo": "República Tcheca x Croácia",
-     "odd": 2.5
-    },
-    {
-     "h": "07:58",
-     "jogo": "Alemanha x Argélia",
-     "odd": 2.2
-    },
-    {
-     "h": "08:01",
-     "jogo": "República Tcheca x Austrália",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "seq RRRG",
-   "alvo": {
-    "h": "07:58",
-    "jogo": "Alemanha x Argélia",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1785394665396
-   },
-   "iniciadoEm": 1785394326796,
-   "tiros": [
-    {
-     "h": "07:55",
-     "jogo": "República Tcheca x Croácia",
-     "odd": 2.5,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785390724595,
+   "copa": 1785394885700,
    "premier": 1785391537903,
    "euro": 1785392205194,
    "super": 1785392704703
@@ -1186,13 +1154,13 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": 11
+   "2026-07-30": 12.4
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Noruega",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
