@@ -2088,7 +2088,37 @@
    "euro": 1785378001192,
    "super": 1785379107004
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:12",
+     "jogo": "Norwich x Palace",
+     "odd": 1.9
+    },
+    {
+     "h": "04:15",
+     "jogo": "Wolverhampton x Everton",
+     "odd": 1.83
+    },
+    {
+     "h": "04:18",
+     "jogo": "Watford x Chelsea",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "time Palace",
+   "alvo": {
+    "h": "04:12",
+    "jogo": "Norwich x Palace",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1785381028696
+   },
+   "iniciadoEm": 1785381028696
+  },
   "cooldown": {
    "euro": 1785378001192,
    "super": 1785379107004,
@@ -2112,9 +2142,9 @@
    "2026-07-29": -9.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.05",
-   "n": 8,
+   "tipo": "time",
+   "chave": "Palace",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
