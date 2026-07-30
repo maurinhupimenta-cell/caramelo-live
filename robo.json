@@ -2655,8 +2655,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "20:08",
@@ -2676,13 +2676,21 @@
    ],
    "gatilho": "placar empate 2-2",
    "alvo": {
-    "h": "20:08",
-    "jogo": "Bélgica x Escócia",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1785438340703
+    "h": "20:11",
+    "jogo": "Eslováquia x Ucrânia",
+    "odd": 2,
+    "unidades": 2,
+    "desde": 1785438710597
    },
-   "iniciadoEm": 1785438340703
+   "iniciadoEm": 1785438340703,
+   "tiros": [
+    {
+     "h": "20:08",
+     "jogo": "Bélgica x Escócia",
+     "odd": 1.9,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785434066193,
@@ -2708,9 +2716,9 @@
    "2026-07-30": 15.7
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 12,
+   "tipo": "odd",
+   "chave": "2.07",
+   "n": 17,
    "start": 1
   },
   "_obs": {}
