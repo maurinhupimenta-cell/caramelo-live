@@ -1345,13 +1345,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -44.9,
-  "ciclos": 733,
-  "greens": 490,
+  "saldo": -43.7,
+  "ciclos": 734,
+  "greens": 491,
   "redsCiclo": 77,
   "aborts": 0,
   "descartes": 166,
   "historico": [
+   {
+    "quando": "2026-07-30T15:32:49.997Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · Chelsea x West Ham @2.15 (tiro 1) · gatilho: placar empate 2-2"
+   },
    {
     "quando": "2026-07-30T14:56:33.597Z",
     "resultado": "GREEN",
@@ -2512,43 +2518,14 @@
    }
   ],
   "consumidas": {
-   "super": 1785423393403
+   "super": 1785423393403,
+   "premier": 1785425569892
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:30",
-     "jogo": "Chelsea x West Ham",
-     "odd": 2.15
-    },
-    {
-     "h": "16:33",
-     "jogo": "Brighton x Islington",
-     "odd": 1.85
-    },
-    {
-     "h": "16:36",
-     "jogo": "West Ham x Leeds",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "placar empate 2-2",
-   "alvo": {
-    "h": "16:30",
-    "jogo": "Chelsea x West Ham",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785425207796
-   },
-   "iniciadoEm": 1785425207796
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785419921894,
    "super": 1785423393403,
-   "premier": 1785421249499,
+   "premier": 1785425569892,
    "copa": 1785417364998
   },
   "dias": {
@@ -2566,13 +2543,13 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 6.6
+   "2026-07-30": 7.8
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 9,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.07",
+   "n": 14,
+   "start": 2
   },
   "_obs": {}
  }
