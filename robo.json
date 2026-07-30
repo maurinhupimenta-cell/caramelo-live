@@ -1226,7 +1226,37 @@
    "euro": 1785408423497,
    "copa": 1785411243593
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:39",
+     "jogo": "Newcastle x Burnley",
+     "odd": 2.5
+    },
+    {
+     "h": "12:42",
+     "jogo": "Southampton x Tottenham",
+     "odd": 2.5
+    },
+    {
+     "h": "12:45",
+     "jogo": "Brighton x Wolverhampton",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "time Tottenham",
+   "alvo": {
+    "h": "12:39",
+    "jogo": "Newcastle x Burnley",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1785411388792
+   },
+   "iniciadoEm": 1785411388792
+  },
   "cooldown": {
    "copa": 1785411243593,
    "premier": 1785403969295,
@@ -1252,9 +1282,9 @@
    "2026-07-30": -12.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.5",
-   "n": 22,
+   "tipo": "time",
+   "chave": "Tottenham",
+   "n": 24,
    "start": 1
   },
   "_obs": {}
