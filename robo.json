@@ -1081,8 +1081,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:47",
@@ -1102,13 +1102,21 @@
    ],
    "gatilho": "time Itália",
    "alvo": {
-    "h": "05:47",
-    "jogo": "Hungria x Escócia",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1785386690700
+    "h": "05:50",
+    "jogo": "Itália x Espanha",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1785387030993
    },
-   "iniciadoEm": 1785386690700
+   "iniciadoEm": 1785386690700,
+   "tiros": [
+    {
+     "h": "05:47",
+     "jogo": "Hungria x Escócia",
+     "odd": 2.35,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785383513203,
@@ -1135,10 +1143,10 @@
    "2026-07-30": -0.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Itália",
-   "n": 9,
-   "start": 2
+   "tipo": "odd",
+   "chave": "2.15",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  },
