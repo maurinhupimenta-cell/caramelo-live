@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -122.3,
-  "ciclos": 702,
-  "greens": 434,
+  "saldo": -120.9,
+  "ciclos": 703,
+  "greens": 435,
   "redsCiclo": 115,
   "aborts": 0,
   "descartes": 153,
   "historico": [
+   {
+    "quando": "2026-07-30T22:10:00.330Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "copa · Curação x Argélia @2.2 (tiro 2) · gatilho: seq RRGRR"
+   },
    {
     "quando": "2026-07-30T21:02:46.426Z",
     "resultado": "GREEN",
@@ -1420,48 +1426,12 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "23:04",
-     "jogo": "França x Bélgica",
-     "odd": 2.3
-    },
-    {
-     "h": "23:07",
-     "jogo": "Curação x Argélia",
-     "odd": 2.2
-    },
-    {
-     "h": "23:10",
-     "jogo": "Bélgica x Coreia do Sul",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "seq RRGRR",
-   "alvo": {
-    "h": "23:07",
-    "jogo": "Curação x Argélia",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1785449300524
-   },
-   "iniciadoEm": 1785448966725,
-   "tiros": [
-    {
-     "h": "23:04",
-     "jogo": "França x Bélgica",
-     "odd": 2.3,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "copa": 1785449400132
   },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785445366231,
+   "copa": 1785449400132,
    "premier": 1785442317229,
    "euro": 1785441529925,
    "super": 1785440742333
@@ -1482,13 +1452,13 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -32.3
+   "2026-07-30": -30.9
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":19",
    "n": 23,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
