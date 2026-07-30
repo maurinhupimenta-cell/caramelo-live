@@ -1103,8 +1103,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "06:57",
@@ -1124,13 +1124,21 @@
    ],
    "gatilho": "time Leicester",
    "alvo": {
-    "h": "06:57",
-    "jogo": "Watford x Aston",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1785390726203
+    "h": "07:00",
+    "jogo": "Chelsea x Leicester",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1785391187596
    },
-   "iniciadoEm": 1785390726203
+   "iniciadoEm": 1785390726203,
+   "tiros": [
+    {
+     "h": "06:57",
+     "jogo": "Watford x Aston",
+     "odd": 2.4,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785390724595,
@@ -1158,9 +1166,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Leicester",
-   "n": 14,
-   "start": 2
+   "chave": "Norwich",
+   "n": 11,
+   "start": 1
   },
   "_obs": {}
  },
