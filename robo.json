@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -104.9,
-  "ciclos": 668,
-  "greens": 413,
+  "saldo": -102.9,
+  "ciclos": 669,
+  "greens": 414,
   "redsCiclo": 108,
   "aborts": 0,
   "descartes": 147,
   "historico": [
+   {
+    "quando": "2026-07-30T11:34:03.698Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "copa · Austrália x Irã @2.5 (tiro 2) · gatilho: odd 2.5"
+   },
    {
     "quando": "2026-07-30T11:27:45.390Z",
     "resultado": "GREEN_OBS",
@@ -1217,49 +1223,12 @@
    }
   ],
   "consumidas": {
-   "euro": 1785408423497
+   "euro": 1785408423497,
+   "copa": 1785411243593
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "12:28",
-     "jogo": "Tunísia x RD Congo",
-     "odd": 2.5
-    },
-    {
-     "h": "12:31",
-     "jogo": "Austrália x Irã",
-     "odd": 2.5
-    },
-    {
-     "h": "12:34",
-     "jogo": "Uzbequistão x Costa do Marfim",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "odd 2.5",
-   "alvo": {
-    "h": "12:31",
-    "jogo": "Austrália x Irã",
-    "odd": 2.5,
-    "unidades": 2,
-    "desde": 1785411069792
-   },
-   "iniciadoEm": 1785410865696,
-   "tiros": [
-    {
-     "h": "12:28",
-     "jogo": "Tunísia x RD Congo",
-     "odd": 2.5,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785407263600,
+   "copa": 1785411243593,
    "premier": 1785403969295,
    "euro": 1785408423497,
    "super": 1785401528104
@@ -1280,12 +1249,12 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -14.9
+   "2026-07-30": -12.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGR",
-   "n": 10,
+   "tipo": "odd",
+   "chave": "2.5",
+   "n": 22,
    "start": 1
   },
   "_obs": {}
@@ -2458,7 +2427,7 @@
    "tipo": "odd",
    "chave": "2.15",
    "n": 18,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
