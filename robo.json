@@ -1114,7 +1114,37 @@
    "copa": 1785383513203,
    "premier": 1785386681198
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:47",
+     "jogo": "Hungria x Escócia",
+     "odd": 2.35
+    },
+    {
+     "h": "05:50",
+     "jogo": "Itália x Espanha",
+     "odd": 2.15
+    },
+    {
+     "h": "05:53",
+     "jogo": "Eslováquia x Romênia",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time Itália",
+   "alvo": {
+    "h": "05:47",
+    "jogo": "Hungria x Escócia",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1785386690700
+   },
+   "iniciadoEm": 1785386690700
+  },
   "cooldown": {
    "copa": 1785383513203,
    "premier": 1785386681198,
@@ -1141,9 +1171,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Leicester",
-   "n": 10,
-   "start": 1
+   "chave": "Itália",
+   "n": 9,
+   "start": 2
   },
   "_obs": {}
  },
