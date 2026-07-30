@@ -1299,8 +1299,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "16:03",
@@ -1320,11 +1320,11 @@
    ],
    "gatilho": "seq RRRR",
    "alvo": {
-    "h": "16:06",
-    "jogo": "Palace x Aston",
-    "odd": 2.3,
-    "unidades": 2,
-    "desde": 1785424146299
+    "h": "16:09",
+    "jogo": "Watford x Islington",
+    "odd": 2.25,
+    "unidades": 4,
+    "desde": 1785424226394
    },
    "iniciadoEm": 1785423752704,
    "tiros": [
@@ -1333,6 +1333,12 @@
      "jogo": "Leicester x Watford",
      "odd": 2.35,
      "unidades": 1
+    },
+    {
+     "h": "16:06",
+     "jogo": "Palace x Aston",
+     "odd": 2.3,
+     "unidades": 2
     }
    ]
   },
@@ -1361,10 +1367,10 @@
    "2026-07-30": -4.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.55",
-   "n": 9,
-   "start": 2
+   "tipo": "time",
+   "chave": "Tottenham",
+   "n": 30,
+   "start": 3
   },
   "_obs": {}
  },
