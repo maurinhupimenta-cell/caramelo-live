@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -101.9,
-  "ciclos": 682,
+  "saldo": -108.9,
+  "ciclos": 683,
   "greens": 423,
-  "redsCiclo": 110,
+  "redsCiclo": 111,
   "aborts": 0,
   "descartes": 149,
   "historico": [
+   {
+    "quando": "2026-07-30T15:30:26.594Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: odd 2.55"
+   },
    {
     "quando": "2026-07-30T15:13:15.895Z",
     "resultado": "RED_CICLO",
@@ -1302,58 +1308,15 @@
   ],
   "consumidas": {
    "copa": 1785423750303,
-   "premier": 1785424395700
+   "premier": 1785424395700,
+   "super": 1785425426397
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "16:13",
-     "jogo": "La Plata x Asuncion",
-     "odd": 2.55
-    },
-    {
-     "h": "16:16",
-     "jogo": "Bogota x Buenos Aires",
-     "odd": 2.3
-    },
-    {
-     "h": "16:19",
-     "jogo": "Lima x Penarol",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "odd 2.55",
-   "alvo": {
-    "h": "16:19",
-    "jogo": "Lima x Penarol",
-    "odd": 2.3,
-    "unidades": 4,
-    "desde": 1785424885700
-   },
-   "iniciadoEm": 1785424410396,
-   "tiros": [
-    {
-     "h": "16:13",
-     "jogo": "La Plata x Asuncion",
-     "odd": 2.55,
-     "unidades": 1
-    },
-    {
-     "h": "16:16",
-     "jogo": "Bogota x Buenos Aires",
-     "odd": 2.3,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785423750303,
    "premier": 1785424395700,
    "euro": 1785419222001,
-   "super": 1785418442797
+   "super": 1785425426397
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -1371,7 +1334,7 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -11.9
+   "2026-07-30": -18.9
   },
   "_gatilhoAtual": {
    "tipo": "odd",
