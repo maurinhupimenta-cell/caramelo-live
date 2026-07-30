@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -120.9,
-  "ciclos": 703,
-  "greens": 435,
+  "saldo": -119.7,
+  "ciclos": 704,
+  "greens": 436,
   "redsCiclo": 115,
   "aborts": 0,
   "descartes": 153,
   "historico": [
+   {
+    "quando": "2026-07-30T22:23:20.525Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Áustria x Países Baixos @2.15 (tiro 1) · gatilho: seq GGGRG"
+   },
    {
     "quando": "2026-07-30T22:10:00.330Z",
     "resultado": "GREEN",
@@ -1427,43 +1433,14 @@
    }
   ],
   "consumidas": {
-   "copa": 1785449400132
+   "copa": 1785449400132,
+   "euro": 1785450200329
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:20",
-     "jogo": "Áustria x Países Baixos",
-     "odd": 2.15
-    },
-    {
-     "h": "23:23",
-     "jogo": "Dinamarca x Geórgia",
-     "odd": 2.5
-    },
-    {
-     "h": "23:26",
-     "jogo": "Suíça x Sérvia",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "seq GGGRG",
-   "alvo": {
-    "h": "23:20",
-    "jogo": "Áustria x Países Baixos",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785449841928
-   },
-   "iniciadoEm": 1785449841928
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785449400132,
    "premier": 1785442317229,
-   "euro": 1785441529925,
+   "euro": 1785450200329,
    "super": 1785440742333
   },
   "dias": {
@@ -1482,7 +1459,7 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -30.9
+   "2026-07-30": -29.7
   },
   "_gatilhoAtual": {
    "tipo": "seq",
