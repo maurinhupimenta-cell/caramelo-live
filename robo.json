@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -87.8,
-  "ciclos": 642,
-  "greens": 398,
+  "saldo": -84.4,
+  "ciclos": 643,
+  "greens": 399,
   "redsCiclo": 102,
   "aborts": 0,
   "descartes": 142,
   "historico": [
+   {
+    "quando": "2026-07-30T03:42:28.893Z",
+    "resultado": "GREEN",
+    "unidades": 3.4,
+    "detalhe": "euro · Dinamarca x Sérvia @2.6 (tiro 3) · gatilho: placar empate 1-1"
+   },
    {
     "quando": "2026-07-30T03:32:55.394Z",
     "resultado": "GREEN",
@@ -1050,57 +1056,44 @@
   ],
   "consumidas": {
    "super": 1785381988993,
-   "premier": 1785382375203
+   "premier": 1785382375203,
+   "euro": 1785382948699
   },
   "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "04:32",
-     "jogo": "Croácia x Hungria",
+     "h": "04:43",
+     "jogo": "Paraguai x Jordânia",
      "odd": 2.35
     },
     {
-     "h": "04:35",
-     "jogo": "Geórgia x Suíça",
-     "odd": 2.25
+     "h": "04:46",
+     "jogo": "República Tcheca x Uruguai",
+     "odd": 2.3
     },
     {
-     "h": "04:38",
-     "jogo": "Dinamarca x Sérvia",
-     "odd": 2.6
+     "h": "04:49",
+     "jogo": "RD Congo x Uzbequistão",
+     "odd": 2.2
     }
    ],
    "gatilho": "placar empate 1-1",
    "alvo": {
-    "h": "04:38",
-    "jogo": "Dinamarca x Sérvia",
-    "odd": 2.6,
-    "unidades": 4,
-    "desde": 1785382773597
+    "h": "04:43",
+    "jogo": "Paraguai x Jordânia",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1785382951998
    },
-   "iniciadoEm": 1785382384795,
-   "tiros": [
-    {
-     "h": "04:32",
-     "jogo": "Croácia x Hungria",
-     "odd": 2.35,
-     "unidades": 1
-    },
-    {
-     "h": "04:35",
-     "jogo": "Geórgia x Suíça",
-     "odd": 2.25,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1785382951998
   },
   "cooldown": {
    "copa": 1785377976801,
    "premier": 1785382375203,
-   "euro": 1785378580591,
+   "euro": 1785382948699,
    "super": 1785381988993
   },
   "dias": {
@@ -1119,12 +1112,12 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": 2.2
+   "2026-07-30": 5.6
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "empate 1-1",
-   "n": 8,
+   "n": 15,
    "start": 1
   },
   "_obs": {}
