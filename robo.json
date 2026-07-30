@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -103.4,
-  "ciclos": 675,
-  "greens": 418,
+  "saldo": -101.9,
+  "ciclos": 676,
+  "greens": 419,
   "redsCiclo": 109,
   "aborts": 0,
   "descartes": 148,
   "historico": [
+   {
+    "quando": "2026-07-30T13:34:02.990Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "super · Itaquera x Quito @2.5 (tiro 1) · gatilho: seq RGRGR"
+   },
    {
     "quando": "2026-07-30T12:50:40.895Z",
     "resultado": "RED_CICLO",
@@ -1261,44 +1267,15 @@
   "consumidas": {
    "euro": 1785414908991,
    "copa": 1785415223503,
-   "premier": 1785415840702
+   "premier": 1785415840702,
+   "super": 1785418442797
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:31",
-     "jogo": "Itaquera x Quito",
-     "odd": 2.5
-    },
-    {
-     "h": "14:34",
-     "jogo": "Bogota x Asuncion",
-     "odd": 2.5
-    },
-    {
-     "h": "14:37",
-     "jogo": "Buenos Aires x Avellaneda",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "seq RGRGR",
-   "alvo": {
-    "h": "14:31",
-    "jogo": "Itaquera x Quito",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1785418086802
-   },
-   "iniciadoEm": 1785418086802
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785415223503,
    "premier": 1785415840702,
    "euro": 1785414908991,
-   "super": 1785412304892
+   "super": 1785418442797
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -1316,7 +1293,7 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -13.4
+   "2026-07-30": -11.9
   },
   "_gatilhoAtual": {
    "tipo": "seq",
