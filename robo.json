@@ -1184,13 +1184,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -53.7,
-  "ciclos": 716,
-  "greens": 474,
+  "saldo": -52.7,
+  "ciclos": 717,
+  "greens": 475,
   "redsCiclo": 76,
   "aborts": 0,
   "descartes": 166,
   "historico": [
+   {
+    "quando": "2026-07-30T07:49:28.291Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Buenos Aires x Penarol @2.02 (tiro 1) · gatilho: coluna :49"
+   },
    {
     "quando": "2026-07-30T07:37:09.501Z",
     "resultado": "GREEN_OBS",
@@ -2248,41 +2254,13 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "08:46",
-     "jogo": "Buenos Aires x Penarol",
-     "odd": 2.02
-    },
-    {
-     "h": "08:49",
-     "jogo": "Lima x Rio de Janeiro",
-     "odd": 1.93
-    },
-    {
-     "h": "08:52",
-     "jogo": "Montevideo x Belo Horizonte",
-     "odd": 1.85
-    }
-   ],
-   "gatilho": "coluna :49",
-   "alvo": {
-    "h": "08:46",
-    "jogo": "Buenos Aires x Penarol",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1785397044202
-   },
-   "iniciadoEm": 1785397044202
+  "consumidas": {
+   "super": 1785397768095
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785378001192,
-   "super": 1785393067501,
+   "super": 1785397768095,
    "premier": 1785393877895,
    "copa": 1785363704496
   },
@@ -2301,13 +2279,13 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": -2.2
+   "2026-07-30": -1.2
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":49",
+   "chave": ":00",
    "n": 8,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
