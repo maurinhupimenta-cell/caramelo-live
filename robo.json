@@ -200,13 +200,19 @@
   "_obs": {}
  },
  "o25": {
-  "saldo": -86.9,
-  "ciclos": 635,
-  "greens": 393,
+  "saldo": -85.7,
+  "ciclos": 636,
+  "greens": 394,
   "redsCiclo": 101,
   "aborts": 0,
   "descartes": 141,
   "historico": [
+   {
+    "quando": "2026-07-30T01:26:52.798Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · Brentford x Brighton @2.1 (tiro 2) · gatilho: placar goleada (3+)"
+   },
    {
     "quando": "2026-07-29T23:08:30.501Z",
     "resultado": "GREEN",
@@ -1006,49 +1012,13 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "02:21",
-     "jogo": "Leeds x West Ham",
-     "odd": 2.87
-    },
-    {
-     "h": "02:24",
-     "jogo": "Brentford x Brighton",
-     "odd": 2.1
-    },
-    {
-     "h": "02:27",
-     "jogo": "Southampton x Burnley",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "placar goleada (3+)",
-   "alvo": {
-    "h": "02:24",
-    "jogo": "Brentford x Brighton",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1785374625100
-   },
-   "iniciadoEm": 1785374320997,
-   "tiros": [
-    {
-     "h": "02:21",
-     "jogo": "Leeds x West Ham",
-     "odd": 2.87,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "premier": 1785374812694
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785361238498,
-   "premier": 1785362202904,
+   "premier": 1785374812694,
    "euro": 1785363520397,
    "super": 1785366510301
   },
@@ -1067,7 +1037,7 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 28.5
+   "2026-07-29": 29.7
   },
   "_gatilhoAtual": {
    "tipo": "placar",
