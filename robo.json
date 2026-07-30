@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -101.9,
-  "ciclos": 676,
-  "greens": 419,
+  "saldo": -98.9,
+  "ciclos": 677,
+  "greens": 420,
   "redsCiclo": 109,
   "aborts": 0,
   "descartes": 148,
   "historico": [
+   {
+    "quando": "2026-07-30T13:47:02.193Z",
+    "resultado": "GREEN",
+    "unidades": 3,
+    "detalhe": "euro · Romênia x Suíça @2.5 (tiro 3) · gatilho: coluna :41"
+   },
    {
     "quando": "2026-07-30T13:34:02.990Z",
     "resultado": "GREEN",
@@ -1266,57 +1272,14 @@
   ],
   "consumidas": {
    "premier": 1785415840702,
-   "super": 1785418442797
+   "super": 1785418442797,
+   "euro": 1785419222001
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "14:38",
-     "jogo": "Croácia x Geórgia",
-     "odd": 2.5
-    },
-    {
-     "h": "14:41",
-     "jogo": "Turquia x Alemanha",
-     "odd": 2.5
-    },
-    {
-     "h": "14:44",
-     "jogo": "Romênia x Suíça",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "coluna :41",
-   "alvo": {
-    "h": "14:44",
-    "jogo": "Romênia x Suíça",
-    "odd": 2.5,
-    "unidades": 4,
-    "desde": 1785419022900
-   },
-   "iniciadoEm": 1785418522300,
-   "tiros": [
-    {
-     "h": "14:38",
-     "jogo": "Croácia x Geórgia",
-     "odd": 2.5,
-     "unidades": 1
-    },
-    {
-     "h": "14:41",
-     "jogo": "Turquia x Alemanha",
-     "odd": 2.5,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785415223503,
    "premier": 1785415840702,
-   "euro": 1785414908991,
+   "euro": 1785419222001,
    "super": 1785418442797
   },
   "dias": {
@@ -1335,13 +1298,13 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -11.9
+   "2026-07-30": -8.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Egito",
-   "n": 8,
-   "start": 3
+   "tipo": "seq",
+   "chave": "RRGRR",
+   "n": 13,
+   "start": 1
   },
   "_obs": {}
  },
@@ -2557,7 +2520,7 @@
    "tipo": "odd",
    "chave": "2.2",
    "n": 15,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
