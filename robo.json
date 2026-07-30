@@ -1219,7 +1219,45 @@
   "consumidas": {
    "euro": 1785408423497
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "12:28",
+     "jogo": "Tunísia x RD Congo",
+     "odd": 2.5
+    },
+    {
+     "h": "12:31",
+     "jogo": "Austrália x Irã",
+     "odd": 2.5
+    },
+    {
+     "h": "12:34",
+     "jogo": "Uzbequistão x Costa do Marfim",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "odd 2.5",
+   "alvo": {
+    "h": "12:31",
+    "jogo": "Austrália x Irã",
+    "odd": 2.5,
+    "unidades": 2,
+    "desde": 1785411069792
+   },
+   "iniciadoEm": 1785410865696,
+   "tiros": [
+    {
+     "h": "12:28",
+     "jogo": "Tunísia x RD Congo",
+     "odd": 2.5,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1785407263600,
    "premier": 1785403969295,
@@ -1245,17 +1283,12 @@
    "2026-07-30": -14.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Tottenham",
-   "n": 22,
+   "tipo": "seq",
+   "chave": "GGGR",
+   "n": 10,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785410865303,
-    "gatilho": "odd 2.5"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -46.3,
@@ -2425,7 +2458,7 @@
    "tipo": "odd",
    "chave": "2.15",
    "n": 18,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
