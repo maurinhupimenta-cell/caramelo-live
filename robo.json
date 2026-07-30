@@ -201,12 +201,18 @@
  },
  "o25": {
   "saldo": -90,
-  "ciclos": 639,
+  "ciclos": 640,
   "greens": 396,
   "redsCiclo": 102,
   "aborts": 0,
-  "descartes": 141,
+  "descartes": 142,
   "historico": [
+   {
+    "quando": "2026-07-30T03:16:26.093Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho time Agua Branca) — liga REARMADA"
+   },
    {
     "quando": "2026-07-30T02:29:40.695Z",
     "resultado": "GREEN",
@@ -1034,7 +1040,37 @@
    "copa": 1785377976801,
    "euro": 1785378580591
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:19",
+     "jogo": "Avellaneda x Agua Branca",
+     "odd": 2.2
+    },
+    {
+     "h": "04:22",
+     "jogo": "Belo Horizonte x Montevideo",
+     "odd": 2.05
+    },
+    {
+     "h": "04:25",
+     "jogo": "Rio de Janeiro x Asuncion",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "time Agua Branca",
+   "alvo": {
+    "h": "04:19",
+    "jogo": "Avellaneda x Agua Branca",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785381388494
+   },
+   "iniciadoEm": 1785381388494
+  },
   "cooldown": {
    "copa": 1785377976801,
    "premier": 1785374812694,
@@ -1056,24 +1092,31 @@
    "2026-07-26": -3.3,
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
-   "2026-07-29": 25.4
+   "2026-07-29": 25.4,
+   "2026-07-30": 0
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "0-0",
+   "tipo": "time",
+   "chave": "Agua Branca",
    "n": 9,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -51.5,
-  "ciclos": 708,
-  "greens": 468,
+  "saldo": -50.8,
+  "ciclos": 709,
+  "greens": 469,
   "redsCiclo": 75,
   "aborts": 0,
   "descartes": 165,
   "historico": [
+   {
+    "quando": "2026-07-30T03:17:51.191Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "premier · Wolverhampton x Everton @1.83 (tiro 2) · gatilho: time Palace"
+   },
    {
     "quando": "2026-07-30T02:38:27.496Z",
     "resultado": "GREEN",
@@ -2085,51 +2128,14 @@
   ],
   "consumidas": {
    "euro": 1785378001192,
-   "super": 1785379107004
+   "super": 1785379107004,
+   "premier": 1785381470995
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "04:12",
-     "jogo": "Norwich x Palace",
-     "odd": 1.9
-    },
-    {
-     "h": "04:15",
-     "jogo": "Wolverhampton x Everton",
-     "odd": 1.83
-    },
-    {
-     "h": "04:18",
-     "jogo": "Watford x Chelsea",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "time Palace",
-   "alvo": {
-    "h": "04:15",
-    "jogo": "Wolverhampton x Everton",
-    "odd": 1.83,
-    "unidades": 2,
-    "desde": 1785381297698
-   },
-   "iniciadoEm": 1785381028696,
-   "tiros": [
-    {
-     "h": "04:12",
-     "jogo": "Norwich x Palace",
-     "odd": 1.9,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785378001192,
    "super": 1785379107004,
-   "premier": 1785375522301,
+   "premier": 1785381470995,
    "copa": 1785363704496
   },
   "dias": {
@@ -2146,7 +2152,8 @@
    "2026-07-26": 14.3,
    "2026-07-27": 6,
    "2026-07-28": -20.5,
-   "2026-07-29": -9.4
+   "2026-07-29": -9.4,
+   "2026-07-30": 0.7
   },
   "_gatilhoAtual": {
    "tipo": "time",
