@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -114.4,
-  "ciclos": 686,
-  "greens": 424,
+  "saldo": -113.2,
+  "ciclos": 687,
+  "greens": 425,
   "redsCiclo": 112,
   "aborts": 0,
   "descartes": 150,
   "historico": [
+   {
+    "quando": "2026-07-30T16:31:37.493Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · Burnley x United @2.1 (tiro 2) · gatilho: seq RRRR"
+   },
    {
     "quando": "2026-07-30T16:21:30.799Z",
     "resultado": "RED_CICLO",
@@ -1326,50 +1332,13 @@
   ],
   "consumidas": {
    "euro": 1785426087995,
-   "copa": 1785428490696
+   "copa": 1785428490696,
+   "premier": 1785429097294
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:24",
-     "jogo": "Chelsea x Islington",
-     "odd": 2.2
-    },
-    {
-     "h": "17:27",
-     "jogo": "Burnley x United",
-     "odd": 2.1
-    },
-    {
-     "h": "17:30",
-     "jogo": "City x Watford",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "seq RRRR",
-   "alvo": {
-    "h": "17:27",
-    "jogo": "Burnley x United",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1785428910603
-   },
-   "iniciadoEm": 1785428492797,
-   "tiros": [
-    {
-     "h": "17:24",
-     "jogo": "Chelsea x Islington",
-     "odd": 2.2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785428490696,
-   "premier": 1785424395700,
+   "premier": 1785429097294,
    "euro": 1785426087995,
    "super": 1785425426397
   },
@@ -1389,13 +1358,13 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -24.4
+   "2026-07-30": -23.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRR",
-   "n": 28,
-   "start": 1
+   "tipo": "time",
+   "chave": "Tottenham",
+   "n": 34,
+   "start": 3
   },
   "_obs": {}
  },
