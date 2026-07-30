@@ -1331,11 +1331,40 @@
    }
   ],
   "consumidas": {
-   "euro": 1785426087995,
    "copa": 1785428490696,
    "premier": 1785429097294
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:38",
+     "jogo": "Eslováquia x Albânia",
+     "odd": 2.7
+    },
+    {
+     "h": "17:41",
+     "jogo": "Polônia x Geórgia",
+     "odd": 2.55
+    },
+    {
+     "h": "17:44",
+     "jogo": "Itália x Alemanha",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "coluna :41",
+   "alvo": {
+    "h": "17:38",
+    "jogo": "Eslováquia x Albânia",
+    "odd": 2.7,
+    "unidades": 1,
+    "desde": 1785429689394
+   },
+   "iniciadoEm": 1785429689394
+  },
   "cooldown": {
    "copa": 1785428490696,
    "premier": 1785429097294,
@@ -1361,10 +1390,10 @@
    "2026-07-30": -23.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Tottenham",
-   "n": 34,
-   "start": 3
+   "tipo": "coluna",
+   "chave": ":41",
+   "n": 17,
+   "start": 1
   },
   "_obs": {}
  },
@@ -2550,7 +2579,37 @@
   "consumidas": {
    "copa": 1785427168703
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:42",
+     "jogo": "Leicester x Tottenham",
+     "odd": 2.1
+    },
+    {
+     "h": "17:45",
+     "jogo": "Everton x Wolverhampton",
+     "odd": 1.8
+    },
+    {
+     "h": "17:48",
+     "jogo": "City x West Ham",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "odd 1.8",
+   "alvo": {
+    "h": "17:42",
+    "jogo": "Leicester x Tottenham",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785429188304
+   },
+   "iniciadoEm": 1785429188304
+  },
   "cooldown": {
    "euro": 1785419921894,
    "super": 1785423393403,
@@ -2575,10 +2634,10 @@
    "2026-07-30": 8.7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Croácia",
-   "n": 13,
-   "start": 3
+   "tipo": "odd",
+   "chave": "1.8",
+   "n": 8,
+   "start": 1
   },
   "_obs": {}
  }
