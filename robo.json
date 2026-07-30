@@ -2288,7 +2288,37 @@
   "consumidas": {
    "premier": 1785393877895
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:46",
+     "jogo": "Buenos Aires x Penarol",
+     "odd": 2.02
+    },
+    {
+     "h": "08:49",
+     "jogo": "Lima x Rio de Janeiro",
+     "odd": 1.93
+    },
+    {
+     "h": "08:52",
+     "jogo": "Montevideo x Belo Horizonte",
+     "odd": 1.85
+    }
+   ],
+   "gatilho": "coluna :49",
+   "alvo": {
+    "h": "08:46",
+    "jogo": "Buenos Aires x Penarol",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1785397044202
+   },
+   "iniciadoEm": 1785397044202
+  },
   "cooldown": {
    "euro": 1785378001192,
    "super": 1785393067501,
@@ -2313,16 +2343,11 @@
    "2026-07-30": -2.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Norwich",
-   "n": 14,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":49",
+   "n": 8,
+   "start": 3
   },
-  "_obs": {
-   "super": {
-    "desde": 1785397029500,
-    "gatilho": "coluna :49"
-   }
-  }
+  "_obs": {}
  }
 }
