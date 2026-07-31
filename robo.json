@@ -224,13 +224,25 @@
   }
  },
  "o25": {
-  "saldo": -151,
-  "ciclos": 751,
+  "saldo": -158,
+  "ciclos": 753,
   "greens": 462,
-  "redsCiclo": 125,
+  "redsCiclo": 126,
   "aborts": 0,
-  "descartes": 164,
+  "descartes": 165,
   "historico": [
+   {
+    "quando": "2026-07-31T16:05:49.215Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: odd 2.35"
+   },
+   {
+    "quando": "2026-07-31T16:04:27.213Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Canadá) — liga REARMADA"
+   },
    {
     "quando": "2026-07-31T15:04:15.949Z",
     "resultado": "RED_CICLO",
@@ -1726,55 +1738,13 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "16:57",
-     "jogo": "Islington x Burnley",
-     "odd": 2.15
-    },
-    {
-     "h": "17:00",
-     "jogo": "Newcastle x West Ham",
-     "odd": 2.35
-    },
-    {
-     "h": "17:03",
-     "jogo": "Brentford x City",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "odd 2.35",
-   "alvo": {
-    "h": "17:03",
-    "jogo": "Brentford x City",
-    "odd": 2.1,
-    "unidades": 4,
-    "desde": 1785513790814
-   },
-   "iniciadoEm": 1785512895005,
-   "tiros": [
-    {
-     "h": "16:57",
-     "jogo": "Islington x Burnley",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "17:00",
-     "jogo": "Newcastle x West Ham",
-     "odd": 2.35,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1785513949112
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785510255839,
-   "premier": 1785508745538,
+   "premier": 1785513949112,
    "euro": 1785509221247,
    "super": 1785499987742
   },
@@ -1795,20 +1765,15 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": -35.8
+   "2026-07-31": -42.8
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":11",
    "n": 17,
-   "start": 2
+   "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785480929266,
-    "gatilho": "seq RGGG"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -7.2,
