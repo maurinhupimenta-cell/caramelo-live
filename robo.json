@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -146.8,
-  "ciclos": 734,
-  "greens": 451,
+  "saldo": -145.4,
+  "ciclos": 735,
+  "greens": 452,
   "redsCiclo": 122,
   "aborts": 0,
   "descartes": 161,
   "historico": [
+   {
+    "quando": "2026-07-31T09:57:47.237Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "copa · Canadá x México @2.35 (tiro 1) · gatilho: time Canadá"
+   },
    {
     "quando": "2026-07-31T09:55:46.742Z",
     "resultado": "GREEN",
@@ -1626,41 +1632,12 @@
   ],
   "consumidas": {
    "premier": 1785488803342,
-   "euro": 1785491746550
+   "euro": 1785491746550,
+   "copa": 1785491867039
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "10:55",
-     "jogo": "Canadá x México",
-     "odd": 2.35
-    },
-    {
-     "h": "10:58",
-     "jogo": "Noruega x Tunísia",
-     "odd": 2.4
-    },
-    {
-     "h": "11:01",
-     "jogo": "Iraque x Equador",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "time Canadá",
-   "alvo": {
-    "h": "10:55",
-    "jogo": "Canadá x México",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1785491748843
-   },
-   "iniciadoEm": 1785491748843
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785487564842,
+   "copa": 1785491867039,
    "premier": 1785488803342,
    "euro": 1785491746550,
    "super": 1785486287736
@@ -1682,7 +1659,7 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": -31.6
+   "2026-07-31": -30.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
