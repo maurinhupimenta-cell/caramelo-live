@@ -1858,13 +1858,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -11.1,
-  "ciclos": 795,
-  "greens": 544,
+  "saldo": -10.2,
+  "ciclos": 796,
+  "greens": 545,
   "redsCiclo": 80,
   "aborts": 0,
   "descartes": 171,
   "historico": [
+   {
+    "quando": "2026-07-31T22:40:28.075Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Guayaquil x Santos @1.95 (tiro 2) · gatilho: seq GRRRG"
+   },
    {
     "quando": "2026-07-31T22:25:36.110Z",
     "resultado": "DESCARTADO",
@@ -3396,49 +3402,13 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "23:34",
-     "jogo": "Agua Branca x Rio de Janeiro",
-     "odd": 1.9
-    },
-    {
-     "h": "23:37",
-     "jogo": "Guayaquil x Santos",
-     "odd": 1.95
-    },
-    {
-     "h": "23:40",
-     "jogo": "La Boca x Sao Paulo",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "seq GRRRG",
-   "alvo": {
-    "h": "23:37",
-    "jogo": "Guayaquil x Santos",
-    "odd": 1.95,
-    "unidades": 2,
-    "desde": 1785537446503
-   },
-   "iniciadoEm": 1785537088110,
-   "tiros": [
-    {
-     "h": "23:34",
-     "jogo": "Agua Branca x Rio de Janeiro",
-     "odd": 1.9,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "super": 1785537627776
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785530487220,
-   "super": 1785529587106,
+   "super": 1785537627776,
    "premier": 1785530141011,
    "copa": 1785528509908
   },
@@ -3458,7 +3428,7 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 16.4
+   "2026-07-31": 17.3
   },
   "_gatilhoAtual": {
    "tipo": "seq",
