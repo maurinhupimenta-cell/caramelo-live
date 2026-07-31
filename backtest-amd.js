@@ -33,20 +33,23 @@
     vigiaTabela(tb);
   }
 
-  // O dashboard reescreve a tabela por chamada interna. Em vez de observar mutacoes
-  // (que pode virar disputa infinita e TRAVAR a aba), reaplicamos o conteudo do motor
-  // num intervalo fixo. E limitado por natureza: no maximo uma escrita a cada 3s.
-  function vigiaTabela(tb) {
-    if (observando || !tb) return;
+  // ANTI-TREMOR: em vez de repintar por cima (o que faz a tela piscar), a tabela
+  // passa a ACEITAR escrita somente do motor. Trancamos a propriedade innerHTML
+  // do proprio elemento: qualquer escrita de fora e ignorada silenciosamente.
+  // Sem intervalo, sem disputa, sem flicker.
+  var descritor = Object.getOwnPropertyDescriptor(Element.prototype, "innerHTML");
+  function tranca(tb) {
+    if (observando || !tb || !descritor) return;
     observando = true;
-    setInterval(function () {
-      if (!meuHtml || escrevendo) return;
-      if (tb.innerHTML === meuHtml) return;
-      escrevendo = true;
-      tb.innerHTML = meuHtml;
-      escrevendo = false;
-    }, 3000);
+    try {
+      Object.defineProperty(tb, "innerHTML", {
+        configurable: true,
+        get: function () { return descritor.get.call(this); },
+        set: function (v) { if (escrevendo) descritor.set.call(this, v); }
+      });
+    } catch (e) { observando = false; }
   }
+  function vigiaTabela(tb) { tranca(tb); }
 
   function adapta(p) {
     var a = p.gols_a, b = p.gols_b;

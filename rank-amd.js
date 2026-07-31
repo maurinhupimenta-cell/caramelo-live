@@ -122,17 +122,18 @@
   }
 
   // o dashboard pode reescrever o bloco: devolve o conteúdo do motor
-  // Repintura periodica em vez de MutationObserver (nao pode virar disputa infinita).
+  // ANTI-TREMOR: tranca a propriedade innerHTML do bloco - so o motor escreve.
+  var descritor = Object.getOwnPropertyDescriptor(Element.prototype, "innerHTML");
   function vigia(el) {
-    if (observando || !el) return;
+    if (observando || !el || !descritor) return;
     observando = true;
-    setInterval(function () {
-      if (!meuHtml || escrevendo) return;
-      if (el.innerHTML === meuHtml) return;
-      escrevendo = true;
-      el.innerHTML = meuHtml;
-      escrevendo = false;
-    }, 3000);
+    try {
+      Object.defineProperty(el, "innerHTML", {
+        configurable: true,
+        get: function () { return descritor.get.call(this); },
+        set: function (v) { if (escrevendo) descritor.set.call(this, v); }
+      });
+    } catch (e) { observando = false; }
   }
 
   function roda() {
