@@ -225,12 +225,18 @@
  },
  "o25": {
   "saldo": -142.8,
-  "ciclos": 743,
+  "ciclos": 744,
   "greens": 458,
   "redsCiclo": 123,
   "aborts": 0,
-  "descartes": 162,
+  "descartes": 163,
   "historico": [
+   {
+    "quando": "2026-07-31T12:30:24.845Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho seq GGGG) — liga REARMADA"
+   },
    {
     "quando": "2026-07-31T12:21:44.643Z",
     "resultado": "GREEN",
@@ -1679,12 +1685,41 @@
    }
   ],
   "consumidas": {
-   "premier": 1785497423450,
    "super": 1785499987742,
    "euro": 1785500386542,
    "copa": 1785500504452
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:33",
+     "jogo": "City x Palace",
+     "odd": 2.1
+    },
+    {
+     "h": "13:36",
+     "jogo": "Islington x West Ham",
+     "odd": 2.5
+    },
+    {
+     "h": "13:39",
+     "jogo": "Newcastle x Everton",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "seq GGGG",
+   "alvo": {
+    "h": "13:33",
+    "jogo": "City x Palace",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785501027148
+   },
+   "iniciadoEm": 1785501027148
+  },
   "cooldown": {
    "copa": 1785500504452,
    "premier": 1785497423450,
@@ -1712,8 +1747,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGGG",
-   "n": 15,
+   "chave": "GGGG",
+   "n": 12,
    "start": 1
   },
   "_obs": {
@@ -3174,7 +3209,7 @@
    "tipo": "odd",
    "chave": "1.85",
    "n": 9,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
