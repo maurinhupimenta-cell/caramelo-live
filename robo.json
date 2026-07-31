@@ -1753,7 +1753,45 @@
   "consumidas": {
    "copa": 1785515780716
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "18:14",
+     "jogo": "Albânia x França",
+     "odd": 2.4
+    },
+    {
+     "h": "18:17",
+     "jogo": "Turquia x Eslovênia",
+     "odd": 2.9
+    },
+    {
+     "h": "18:20",
+     "jogo": "Croácia x Inglaterra",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "seq RGGRG",
+   "alvo": {
+    "h": "18:17",
+    "jogo": "Turquia x Eslovênia",
+    "odd": 2.9,
+    "unidades": 2,
+    "desde": 1785518426808
+   },
+   "iniciadoEm": 1785518080916,
+   "tiros": [
+    {
+     "h": "18:14",
+     "jogo": "Albânia x França",
+     "odd": 2.4,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1785515780716,
    "premier": 1785513949112,
@@ -1781,8 +1819,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRGGG",
-   "n": 12,
+   "chave": "RGGRG",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
