@@ -1687,13 +1687,19 @@
   }
  },
  "ambas": {
-  "saldo": -21.4,
-  "ciclos": 765,
-  "greens": 519,
+  "saldo": -20.7,
+  "ciclos": 766,
+  "greens": 520,
   "redsCiclo": 78,
   "aborts": 0,
   "descartes": 168,
   "historico": [
+   {
+    "quando": "2026-07-31T10:18:48.540Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "super · Agua Branca x Buenos Aires @1.83 (tiro 2) · gatilho: odd 1.83"
+   },
    {
     "quando": "2026-07-31T09:59:27.044Z",
     "resultado": "GREEN",
@@ -3046,50 +3052,13 @@
    }
   ],
   "consumidas": {
-   "euro": 1785491966937
+   "euro": 1785491966937,
+   "super": 1785493128436
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "11:13",
-     "jogo": "Quito x Avellaneda",
-     "odd": 2
-    },
-    {
-     "h": "11:16",
-     "jogo": "Agua Branca x Buenos Aires",
-     "odd": 1.83
-    },
-    {
-     "h": "11:19",
-     "jogo": "Lima x Guayaquil",
-     "odd": 1.83
-    }
-   ],
-   "gatilho": "odd 1.83",
-   "alvo": {
-    "h": "11:16",
-    "jogo": "Agua Branca x Buenos Aires",
-    "odd": 1.83,
-    "unidades": 2,
-    "desde": 1785492947742
-   },
-   "iniciadoEm": 1785492446868,
-   "tiros": [
-    {
-     "h": "11:13",
-     "jogo": "Quito x Avellaneda",
-     "odd": 2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785491966937,
-   "super": 1785488845850,
+   "super": 1785493128436,
    "premier": 1785446633933,
    "copa": 1785483966539
   },
@@ -3109,7 +3078,7 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 6.1
+   "2026-07-31": 6.8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
