@@ -1729,7 +1729,37 @@
   "consumidas": {
    "copa": 1785510255839
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:57",
+     "jogo": "Islington x Burnley",
+     "odd": 2.15
+    },
+    {
+     "h": "17:00",
+     "jogo": "Newcastle x West Ham",
+     "odd": 2.35
+    },
+    {
+     "h": "17:03",
+     "jogo": "Brentford x City",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "odd 2.35",
+   "alvo": {
+    "h": "16:57",
+    "jogo": "Islington x Burnley",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785512895005
+   },
+   "iniciadoEm": 1785512895005
+  },
   "cooldown": {
    "copa": 1785510255839,
    "premier": 1785508745538,
@@ -1756,10 +1786,10 @@
    "2026-07-31": -35.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Canadá",
-   "n": 18,
-   "start": 2
+   "tipo": "odd",
+   "chave": "2.35",
+   "n": 13,
+   "start": 3
   },
   "_obs": {
    "copa": {
