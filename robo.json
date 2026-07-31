@@ -2960,8 +2960,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "08:52",
@@ -2981,13 +2981,21 @@
    ],
    "gatilho": "time Santiago",
    "alvo": {
-    "h": "08:52",
-    "jogo": "Montevideo x La Boca",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785483968543
+    "h": "08:55",
+    "jogo": "Santiago x Santos",
+    "odd": 1.93,
+    "unidades": 2,
+    "desde": 1785484509346
    },
-   "iniciadoEm": 1785483968543
+   "iniciadoEm": 1785483968543,
+   "tiros": [
+    {
+     "h": "08:52",
+     "jogo": "Montevideo x La Boca",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785483466952,
@@ -3016,8 +3024,8 @@
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Santiago",
-   "n": 15,
-   "start": 2
+   "n": 16,
+   "start": 1
   },
   "_obs": {}
  }
