@@ -3172,7 +3172,37 @@
    "euro": 1785505618638,
    "super": 1785507020437
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:16",
+     "jogo": "Costa do Marfim x Escócia",
+     "odd": 2.05
+    },
+    {
+     "h": "15:19",
+     "jogo": "Cabo Verde x EUA",
+     "odd": 1.93
+    },
+    {
+     "h": "15:22",
+     "jogo": "Argentina x Portugal",
+     "odd": 1.85
+    }
+   ],
+   "gatilho": "seq RGGG",
+   "alvo": {
+    "h": "15:16",
+    "jogo": "Costa do Marfim x Escócia",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785507419737
+   },
+   "iniciadoEm": 1785507419737
+  },
   "cooldown": {
    "euro": 1785505618638,
    "super": 1785507020437,
@@ -3198,9 +3228,9 @@
    "2026-07-31": 15.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":07",
-   "n": 15,
+   "tipo": "seq",
+   "chave": "RGGG",
+   "n": 21,
    "start": 1
   },
   "_obs": {}
