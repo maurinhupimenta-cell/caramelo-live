@@ -17,6 +17,7 @@
   var API = "https://amd-coletor.onrender.com/api/grade?liga=";
   var INTERVALO = 90000;
   var cache = {}, buscando = {};
+  var mapaId = {};
   var meuHtml = null, escrevendo = false, observando = false;
   var chaveAtual = null;   // liga|mercado desenhado por ultimo
 
@@ -144,6 +145,7 @@
     if (a == null || b == null) return null;
     var o = p.odds || {};
     return {
+      id: p.id != null ? String(p.id) : null,     // casa com data-game-id da grade
       horario: String(p.hora == null ? 0 : p.hora).padStart(2, "0") + ":" +
                String(p.minuto == null ? 0 : p.minuto).padStart(2, "0"),
       nome: (p.time_a || "") + " x " + (p.time_b || ""),
@@ -165,6 +167,10 @@
       .then(function (j) {
         var out = [], lista = (j && j.partidas) || [];
         for (var i = 0; i < lista.length; i++) { var g = adapta(lista[i]); if (g) out.push(g); }
+        mapaId = {};
+        for (var k = 0; k < out.length; k++) {
+          if (out[k].id) mapaId[out[k].horario + "|" + out[k].nome] = out[k].id;
+        }
         cache[liga] = out; buscando[liga] = null; return out;
       })
       .catch(function () { buscando[liga] = null; return cache[liga] || []; });
@@ -208,7 +214,9 @@
     var linhas = lista.slice().reverse().map(function (u) {
       var green = u.resultado === "GREEN";
       var evTxt = (u.ev > 0 ? "+" : "") + u.ev + "%";
-      return "<tr>" +
+      var gid = mapaId[u.horario + "|" + u.nome] || "";
+      return '<tr data-gid="' + gid + '" style="cursor:' + (gid ? "pointer" : "default") + '" title="' +
+        (gid ? "clique para localizar na grade" : "") + '">' +
         "<td>" + esc(u.horario) + "</td>" +
         "<td>" + (u.alerta ? "⚠️ " : "") + esc(u.nome) + "</td>" +
         "<td>" + esc(u.placar) + "</td>" +
@@ -232,6 +240,41 @@
         " · régua do mercado " + bt.baseGeral + "%";
     }
   }
+
+  // ---- clique na linha -> localiza o jogo na grade ------------------------
+  // As celulas da grade trazem data-game-id, o mesmo id que a fonte devolve:
+  // casamento exato, sem depender de nome nem de horario.
+  var estiloMarca = null;
+  function marcaNaGrade(gid) {
+    if (!gid) return;
+    var alvo = document.querySelector('#grade [data-game-id="' + gid + '"]');
+    if (!alvo) return aviso2("esse jogo não está na grade visível — amplie a janela da grade");
+    if (!estiloMarca) {
+      estiloMarca = document.createElement("style");
+      estiloMarca.textContent =
+        "@keyframes amdPisca{0%,100%{box-shadow:0 0 0 2px var(--blue,#32a4ff)}50%{box-shadow:0 0 0 6px rgba(50,164,255,.35)}}" +
+        ".amd-achado{animation:amdPisca 1s ease-in-out 3;border-radius:4px;position:relative;z-index:3}";
+      document.head.appendChild(estiloMarca);
+    }
+    var antigos = document.querySelectorAll(".amd-achado");
+    for (var i = 0; i < antigos.length; i++) antigos[i].classList.remove("amd-achado");
+    alvo.classList.add("amd-achado");
+    try { alvo.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" }); } catch (e) { alvo.scrollIntoView(); }
+    setTimeout(function () { alvo.classList.remove("amd-achado"); }, 4000);
+  }
+  function aviso2(txt) {
+    var tit = document.getElementById("btTitle");
+    if (!tit) return;
+    var antes = tit.textContent;
+    poeTitulo(antes + " — " + txt);
+    setTimeout(function () { poeTitulo(antes); }, 3500);
+  }
+  document.addEventListener("click", function (e) {
+    var tr = e.target && e.target.closest ? e.target.closest("#backtest tr[data-gid]") : null;
+    if (!tr) return;
+    var gid = tr.getAttribute("data-gid");
+    if (gid) marcaNaGrade(gid);
+  });
 
   function roda() {
     if (typeof AMD_MOTOR === "undefined" || !AMD_MOTOR.backtest) return;
