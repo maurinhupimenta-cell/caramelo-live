@@ -1743,8 +1743,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:08",
@@ -1764,13 +1764,21 @@
    ],
    "gatilho": "coluna :11",
    "alvo": {
-    "h": "17:08",
-    "jogo": "Turquia x Itália",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1785513973622
+    "h": "17:11",
+    "jogo": "Eslovênia x Escócia",
+    "odd": 2.55,
+    "unidades": 2,
+    "desde": 1785514466513
    },
-   "iniciadoEm": 1785513973622
+   "iniciadoEm": 1785513973622,
+   "tiros": [
+    {
+     "h": "17:08",
+     "jogo": "Turquia x Itália",
+     "odd": 2.5,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785510255839,
@@ -1798,9 +1806,9 @@
    "2026-07-31": -42.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":11",
-   "n": 17,
+   "tipo": "seq",
+   "chave": "RGGRG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
