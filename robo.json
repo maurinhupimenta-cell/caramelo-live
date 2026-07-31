@@ -1705,7 +1705,7 @@
    "tipo": "coluna",
    "chave": ":11",
    "n": 12,
-   "start": 3
+   "start": 1
   },
   "_obs": {
    "copa": {
@@ -1715,13 +1715,19 @@
   }
  },
  "ambas": {
-  "saldo": -19.6,
-  "ciclos": 767,
-  "greens": 521,
+  "saldo": -18.7,
+  "ciclos": 768,
+  "greens": 522,
   "redsCiclo": 78,
   "aborts": 0,
   "descartes": 168,
   "historico": [
+   {
+    "quando": "2026-07-31T11:05:06.446Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Inglaterra x Itália @1.93 (tiro 1) · gatilho: odd 1.93"
+   },
    {
     "quando": "2026-07-31T10:28:05.044Z",
     "resultado": "GREEN",
@@ -3087,11 +3093,12 @@
   ],
   "consumidas": {
    "super": 1785493128436,
-   "copa": 1785493684936
+   "copa": 1785493684936,
+   "euro": 1785495906339
   },
   "ciclo": null,
   "cooldown": {
-   "euro": 1785491966937,
+   "euro": 1785495906339,
    "super": 1785493128436,
    "premier": 1785446633933,
    "copa": 1785493684936
@@ -3112,12 +3119,12 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 7.9
+   "2026-07-31": 8.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":28",
-   "n": 11,
+   "tipo": "seq",
+   "chave": "GRGG",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
