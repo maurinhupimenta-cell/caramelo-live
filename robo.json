@@ -1764,13 +1764,19 @@
   }
  },
  "ambas": {
-  "saldo": -11,
-  "ciclos": 776,
-  "greens": 530,
+  "saldo": -10.3,
+  "ciclos": 777,
+  "greens": 531,
   "redsCiclo": 78,
   "aborts": 0,
   "descartes": 168,
   "historico": [
+   {
+    "quando": "2026-07-31T14:53:01.340Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "euro · Bélgica x Espanha @1.83 (tiro 2) · gatilho: odd 1.83"
+   },
    {
     "quando": "2026-07-31T14:20:59.147Z",
     "resultado": "GREEN",
@@ -3190,49 +3196,12 @@
   ],
   "consumidas": {
    "super": 1785507020437,
-   "copa": 1785507659042
+   "copa": 1785507659042,
+   "euro": 1785509581146
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "15:47",
-     "jogo": "Suíça x Turquia",
-     "odd": 2.02
-    },
-    {
-     "h": "15:50",
-     "jogo": "Bélgica x Espanha",
-     "odd": 1.83
-    },
-    {
-     "h": "15:53",
-     "jogo": "Dinamarca x Albânia",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "odd 1.83",
-   "alvo": {
-    "h": "15:50",
-    "jogo": "Bélgica x Espanha",
-    "odd": 1.83,
-    "unidades": 2,
-    "desde": 1785509400949
-   },
-   "iniciadoEm": 1785509219446,
-   "tiros": [
-    {
-     "h": "15:47",
-     "jogo": "Suíça x Turquia",
-     "odd": 2.02,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785505618638,
+   "euro": 1785509581146,
    "super": 1785507020437,
    "premier": 1785446633933,
    "copa": 1785507659042
@@ -3253,13 +3222,13 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 16.5
+   "2026-07-31": 17.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "1.85",
    "n": 11,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
