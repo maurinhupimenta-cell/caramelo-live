@@ -1511,8 +1511,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:35",
@@ -1532,13 +1532,21 @@
    ],
    "gatilho": "seq RRGG",
    "alvo": {
-    "h": "05:35",
-    "jogo": "Espanha x Geórgia",
+    "h": "05:38",
+    "jogo": "Países Baixos x Hungria",
     "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785472347492
+    "unidades": 2,
+    "desde": 1785472769587
    },
-   "iniciadoEm": 1785472347492
+   "iniciadoEm": 1785472347492,
+   "tiros": [
+    {
+     "h": "05:35",
+     "jogo": "Espanha x Geórgia",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785471446296,
@@ -1566,9 +1574,9 @@
    "2026-07-31": 7.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGG",
-   "n": 8,
+   "tipo": "odd",
+   "chave": "2.15",
+   "n": 9,
    "start": 1
   },
   "_obs": {
