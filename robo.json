@@ -1804,13 +1804,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -16.5,
-  "ciclos": 788,
-  "greens": 539,
+  "saldo": -15.5,
+  "ciclos": 789,
+  "greens": 540,
   "redsCiclo": 80,
   "aborts": 0,
   "descartes": 169,
   "historico": [
+   {
+    "quando": "2026-07-31T19:20:27.205Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Croácia x Dinamarca @2.02 (tiro 1) · gatilho: odd 1.93"
+   },
    {
     "quando": "2026-07-31T19:08:26.513Z",
     "resultado": "GREEN",
@@ -3302,41 +3308,12 @@
   ],
   "consumidas": {
    "copa": 1785524186206,
-   "super": 1785524906408
+   "super": 1785524906408,
+   "euro": 1785525627015
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:17",
-     "jogo": "Croácia x Dinamarca",
-     "odd": 2.02
-    },
-    {
-     "h": "20:20",
-     "jogo": "Ucrânia x Romênia",
-     "odd": 1.93
-    },
-    {
-     "h": "20:23",
-     "jogo": "Geórgia x Hungria",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "odd 1.93",
-   "alvo": {
-    "h": "20:17",
-    "jogo": "Croácia x Dinamarca",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1785525027710
-   },
-   "iniciadoEm": 1785525027710
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785519626806,
+   "euro": 1785525627015,
    "super": 1785524906408,
    "premier": 1785446633933,
    "copa": 1785524186206
@@ -3357,13 +3334,13 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 11
+   "2026-07-31": 12
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "1.93",
    "n": 26,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
