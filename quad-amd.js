@@ -104,12 +104,15 @@
     return AMD_MOTOR.pays(g, mkt);
   }
   function oddDe(g, mkt) {
-    var o = g.odds || {};
-    if (mkt === "o25") return o.o25; if (mkt === "o35") return o.o35;
-    if (mkt === "ambas") return o.ambs;
-    if (mkt === "casa") return o.casa; if (mkt === "fora") return o.fora;
-    if (mkt === "empate") return o.empate;
-    return null;                                        // ge5 e placar: fonte não fornece
+    var o = g.odds || {}, v = null;
+    if (mkt === "o25") v = o.o25; else if (mkt === "o35") v = o.o35;
+    else if (mkt === "ambas") v = o.ambs;
+    else if (mkt === "casa") v = o.casa; else if (mkt === "fora") v = o.fora;
+    else if (mkt === "empate") v = o.empate;
+    else return null;                                   // ge5 e placar: fonte não fornece
+    // a fonte entrega a odd como TEXTO ("1.93") - sem converter, od.toFixed quebra
+    var n = typeof v === "number" ? v : parseFloat(String(v).replace(",", "."));
+    return isFinite(n) && n > 1.01 ? n : null;
   }
 
   function janela(jogos, horas) {
@@ -148,14 +151,14 @@
     var out = [];
     for (var ch in stats) {
       var s = stats[ch];
-      if (s.n < 8) continue;                            // menos que isso é ruído
+      if (s.n < 12) continue;                           // abaixo disso é ruído com cara de sinal
       var taxa = pct(s.h, s.n);
-      out.push({ titulo: ch, sub: "amostra " + s.n + " · régua " + regua + "%",
+      out.push({ titulo: ch, sub: "amostra " + s.n + (s.n < 20 ? " (pequena)" : "") + " · régua " + regua + "%",
                  valor: taxa + "%", extra: (taxa - regua > 0 ? "+" : "") + Math.round((taxa - regua) * 10) / 10 + " pts",
                  ordem: taxa - regua });
     }
     out.sort(function (a, b) { return b.ordem - a.ordem; });
-    return { itens: out.slice(0, 6), vazio: "nenhum padrão com 8+ casos nesta janela" };
+    return { itens: out.slice(0, 6), vazio: "nenhum padrão com 12+ casos nesta janela — amplie a janela" };
   }
 
   // ================= FERRAMENTA 2: ranking de odds =========================
