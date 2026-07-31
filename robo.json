@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -158,
-  "ciclos": 753,
-  "greens": 462,
+  "saldo": -155.9,
+  "ciclos": 754,
+  "greens": 463,
   "redsCiclo": 126,
   "aborts": 0,
   "descartes": 165,
   "historico": [
+   {
+    "quando": "2026-07-31T16:14:28.806Z",
+    "resultado": "GREEN",
+    "unidades": 2.1,
+    "detalhe": "euro · Eslovênia x Escócia @2.55 (tiro 2) · gatilho: coluna :11"
+   },
    {
     "quando": "2026-07-31T16:05:49.215Z",
     "resultado": "RED_CICLO",
@@ -1739,51 +1745,44 @@
    }
   ],
   "consumidas": {
-   "premier": 1785513949112
+   "premier": 1785513949112,
+   "euro": 1785514468611
   },
   "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "17:08",
-     "jogo": "Turquia x Itália",
+     "h": "17:25",
+     "jogo": "EUA x Irã",
      "odd": 2.5
     },
     {
-     "h": "17:11",
-     "jogo": "Eslovênia x Escócia",
-     "odd": 2.55
+     "h": "17:28",
+     "jogo": "Coreia do Sul x Senegal",
+     "odd": 2.7
     },
     {
-     "h": "17:14",
-     "jogo": "Ucrânia x Suíça",
+     "h": "17:31",
+     "jogo": "Arábia Saudita x Bélgica",
      "odd": 2.2
     }
    ],
-   "gatilho": "coluna :11",
+   "gatilho": "seq RRGGG",
    "alvo": {
-    "h": "17:11",
-    "jogo": "Eslovênia x Escócia",
-    "odd": 2.55,
-    "unidades": 2,
-    "desde": 1785514466513
+    "h": "17:25",
+    "jogo": "EUA x Irã",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1785515190508
    },
-   "iniciadoEm": 1785513973622,
-   "tiros": [
-    {
-     "h": "17:08",
-     "jogo": "Turquia x Itália",
-     "odd": 2.5,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1785515190508
   },
   "cooldown": {
    "copa": 1785510255839,
    "premier": 1785513949112,
-   "euro": 1785509221247,
+   "euro": 1785514468611,
    "super": 1785499987742
   },
   "dias": {
@@ -1803,12 +1802,12 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": -42.8
+   "2026-07-31": -40.7
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGGRG",
-   "n": 8,
+   "chave": "RRGGG",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
