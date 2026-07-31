@@ -81,6 +81,19 @@
     vigia: "sem sinal — vigiando"
   };
   var ORDEM = { ltb: 0, subida: 1, minima: 2, pull: 3, vigia: 9 };
+  // COR POR TIPO (pedido do usuario): vigiando branco, subida verde, LTB laranja,
+  // pullback roxo, minima vermelho - cada sinal com identidade propria.
+  function corDo(tipo) {
+    var v = function (n, alt) {
+      var c = getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+      return c || alt;
+    };
+    if (tipo === "subida") return v("--green", "#18e34d");
+    if (tipo === "minima") return v("--red", "#ff343d");
+    if (tipo === "ltb") return "#ff9f1c";
+    if (tipo === "pull") return "#b06cff";
+    return "#ffffff";
+  }
 
   function fitaDe(jogos, mkt) {
     return jogos.slice(-6).map(function (g) {
@@ -109,9 +122,11 @@
     el.innerHTML = sinais.map(function (s) {
       var pct = (s.pagando == null ? "—" : s.pagando + "%");
       var base = (s.base == null ? "" : " · normal " + s.base + "%");
+      var cor = corDo(s.tipo);
       return '<div class="radar-row">' +
-        '<div class="radar-ico ' + (s.tipo === "minima" ? "min" : "") + '">' + (ICONE[s.tipo] || "•") + '</div>' +
-        '<div class="radar-txt"><b>' + s.ligaNome + " · " + s.mktNome + "</b> — " + TITULO[s.tipo] +
+        '<div class="radar-ico ' + (s.tipo === "minima" ? "min" : "") + '" style="color:' + cor + '">' + (ICONE[s.tipo] || "•") + '</div>' +
+        '<div class="radar-txt"><b style="color:' + cor + '">' + s.ligaNome + " · " + s.mktNome + "</b> — " +
+        '<span style="color:' + cor + '">' + TITULO[s.tipo] + "</span>" +
         " · pagando " + pct + base +
         (s.fita && s.fita.length ? '<br><span class="radar-fita">' + fitaHtml(s.fita) + "</span>" : "") +
         "</div></div>";
