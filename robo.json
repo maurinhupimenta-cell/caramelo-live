@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -144.2,
-  "ciclos": 742,
-  "greens": 457,
+  "saldo": -142.8,
+  "ciclos": 743,
+  "greens": 458,
   "redsCiclo": 123,
   "aborts": 0,
   "descartes": 162,
   "historico": [
+   {
+    "quando": "2026-07-31T12:21:44.643Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "copa · Argélia x Países Baixos @2.35 (tiro 1) · gatilho: seq RGGG"
+   },
    {
     "quando": "2026-07-31T12:19:46.738Z",
     "resultado": "GREEN",
@@ -1675,11 +1681,12 @@
   "consumidas": {
    "premier": 1785497423450,
    "super": 1785499987742,
-   "euro": 1785500386542
+   "euro": 1785500386542,
+   "copa": 1785500504452
   },
   "ciclo": null,
   "cooldown": {
-   "copa": 1785496744645,
+   "copa": 1785500504452,
    "premier": 1785497423450,
    "euro": 1785500386542,
    "super": 1785499987742
@@ -1701,7 +1708,7 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": -29
+   "2026-07-31": -27.6
   },
   "_gatilhoAtual": {
    "tipo": "seq",
