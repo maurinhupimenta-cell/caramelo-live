@@ -1516,13 +1516,19 @@
   }
  },
  "ambas": {
-  "saldo": -28.5,
-  "ciclos": 751,
-  "greens": 507,
+  "saldo": -27.5,
+  "ciclos": 752,
+  "greens": 508,
   "redsCiclo": 77,
   "aborts": 0,
   "descartes": 167,
   "historico": [
+   {
+    "quando": "2026-07-31T02:04:03.036Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Argélia x Áustria @1.95 (tiro 1) · gatilho: placar goleada (3+)"
+   },
    {
     "quando": "2026-07-30T23:08:20.027Z",
     "resultado": "GREEN",
@@ -2790,43 +2796,15 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:01",
-     "jogo": "Argélia x Áustria",
-     "odd": 1.95
-    },
-    {
-     "h": "03:04",
-     "jogo": "Egito x Uruguai",
-     "odd": 1.87
-    },
-    {
-     "h": "03:07",
-     "jogo": "Suíça x Costa do Marfim",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "placar goleada (3+)",
-   "alvo": {
-    "h": "03:01",
-    "jogo": "Argélia x Áustria",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1785463109937
-   },
-   "iniciadoEm": 1785463109937
+  "consumidas": {
+   "copa": 1785463442836
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785439551897,
    "super": 1785452899830,
    "premier": 1785446633933,
-   "copa": 1785449300730
+   "copa": 1785463442836
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -2843,12 +2821,12 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 23
+   "2026-07-30": 24
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "goleada (3+)",
-   "n": 12,
+   "n": 14,
    "start": 1
   },
   "_obs": {}
