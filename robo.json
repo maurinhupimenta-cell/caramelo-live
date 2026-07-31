@@ -1660,8 +1660,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "12:21",
@@ -1681,11 +1681,11 @@
    ],
    "gatilho": "seq RRRRR",
    "alvo": {
-    "h": "12:24",
-    "jogo": "Southampton x Leeds",
-    "odd": 2.7,
-    "unidades": 2,
-    "desde": 1785497058350
+    "h": "12:27",
+    "jogo": "Liverpool x Chelsea",
+    "odd": 2.2,
+    "unidades": 4,
+    "desde": 1785497331247
    },
    "iniciadoEm": 1785496746747,
    "tiros": [
@@ -1694,6 +1694,12 @@
      "jogo": "West Ham x Islington",
      "odd": 2.45,
      "unidades": 1
+    },
+    {
+     "h": "12:24",
+     "jogo": "Southampton x Leeds",
+     "odd": 2.7,
+     "unidades": 2
     }
    ]
   },
@@ -1736,13 +1742,19 @@
   }
  },
  "ambas": {
-  "saldo": -18.7,
-  "ciclos": 768,
-  "greens": 522,
+  "saldo": -17.6,
+  "ciclos": 769,
+  "greens": 523,
   "redsCiclo": 78,
   "aborts": 0,
   "descartes": 168,
   "historico": [
+   {
+    "quando": "2026-07-31T11:28:08.842Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Belo Horizonte x Penarol @2.07 (tiro 2) · gatilho: odd 2.07"
+   },
    {
     "quando": "2026-07-31T11:05:06.446Z",
     "resultado": "GREEN",
@@ -3113,50 +3125,13 @@
    }
   ],
   "consumidas": {
-   "euro": 1785495906339
+   "euro": 1785495906339,
+   "super": 1785497288740
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "12:22",
-     "jogo": "Guayaquil x La Boca",
-     "odd": 1.98
-    },
-    {
-     "h": "12:25",
-     "jogo": "Belo Horizonte x Penarol",
-     "odd": 2.07
-    },
-    {
-     "h": "12:28",
-     "jogo": "Quito x Sao Paulo",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "odd 2.07",
-   "alvo": {
-    "h": "12:25",
-    "jogo": "Belo Horizonte x Penarol",
-    "odd": 2.07,
-    "unidades": 2,
-    "desde": 1785497088744
-   },
-   "iniciadoEm": 1785496729348,
-   "tiros": [
-    {
-     "h": "12:22",
-     "jogo": "Guayaquil x La Boca",
-     "odd": 1.98,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785495906339,
-   "super": 1785493128436,
+   "super": 1785497288740,
    "premier": 1785446633933,
    "copa": 1785493684936
   },
@@ -3176,7 +3151,7 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 8.8
+   "2026-07-31": 9.9
   },
   "_gatilhoAtual": {
    "tipo": "odd",
