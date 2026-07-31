@@ -1645,7 +1645,37 @@
   "consumidas": {
    "premier": 1785492899044
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:08",
+     "jogo": "Turquia x Polônia",
+     "odd": 2.7
+    },
+    {
+     "h": "12:11",
+     "jogo": "Romênia x Escócia",
+     "odd": 2.15
+    },
+    {
+     "h": "12:14",
+     "jogo": "Eslováquia x Espanha",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "coluna :11",
+   "alvo": {
+    "h": "12:08",
+    "jogo": "Turquia x Polônia",
+    "odd": 2.7,
+    "unidades": 1,
+    "desde": 1785495546238
+   },
+   "iniciadoEm": 1785495546238
+  },
   "cooldown": {
    "copa": 1785491867039,
    "premier": 1785492899044,
@@ -1672,10 +1702,10 @@
    "2026-07-31": -28.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGG",
+   "tipo": "coluna",
+   "chave": ":11",
    "n": 12,
-   "start": 1
+   "start": 3
   },
   "_obs": {
    "copa": {
