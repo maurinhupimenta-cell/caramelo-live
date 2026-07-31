@@ -1853,7 +1853,7 @@
    "tipo": "time",
    "chave": "Canadá",
    "n": 23,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
@@ -3397,7 +3397,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:34",
+     "jogo": "Agua Branca x Rio de Janeiro",
+     "odd": 1.9
+    },
+    {
+     "h": "23:37",
+     "jogo": "Guayaquil x Santos",
+     "odd": 1.95
+    },
+    {
+     "h": "23:40",
+     "jogo": "La Boca x Sao Paulo",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "seq GRRRG",
+   "alvo": {
+    "h": "23:34",
+    "jogo": "Agua Branca x Rio de Janeiro",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1785537088110
+   },
+   "iniciadoEm": 1785537088110
+  },
   "cooldown": {
    "euro": 1785530487220,
    "super": 1785529587106,
@@ -3423,10 +3453,10 @@
    "2026-07-31": 16.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.1",
-   "n": 15,
-   "start": 2
+   "tipo": "seq",
+   "chave": "GRRRG",
+   "n": 12,
+   "start": 1
   },
   "_obs": {}
  }
