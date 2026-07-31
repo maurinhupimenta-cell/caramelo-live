@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -115,
-  "ciclos": 715,
+  "saldo": -122,
+  "ciclos": 716,
   "greens": 444,
-  "redsCiclo": 116,
+  "redsCiclo": 117,
   "aborts": 0,
   "descartes": 155,
   "historico": [
+   {
+    "quando": "2026-07-31T05:40:29.888Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: time Belo Horizonte"
+   },
    {
     "quando": "2026-07-31T04:47:32.688Z",
     "resultado": "RED_CICLO",
@@ -1511,58 +1517,15 @@
    }
   ],
   "consumidas": {
-   "euro": 1785473252393
+   "euro": 1785473252393,
+   "super": 1785476429693
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "06:31",
-     "jogo": "Rio de Janeiro x Medellin",
-     "odd": 2.35
-    },
-    {
-     "h": "06:34",
-     "jogo": "Itaquera x Belo Horizonte",
-     "odd": 2.15
-    },
-    {
-     "h": "06:37",
-     "jogo": "Bogota x Lima",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "time Belo Horizonte",
-   "alvo": {
-    "h": "06:37",
-    "jogo": "Bogota x Lima",
-    "odd": 2.4,
-    "unidades": 4,
-    "desde": 1785476217089
-   },
-   "iniciadoEm": 1785475767995,
-   "tiros": [
-    {
-     "h": "06:31",
-     "jogo": "Rio de Janeiro x Medellin",
-     "odd": 2.35,
-     "unidades": 1
-    },
-    {
-     "h": "06:34",
-     "jogo": "Itaquera x Belo Horizonte",
-     "odd": 2.15,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785471446296,
    "premier": 1785470019093,
    "euro": 1785473252393,
-   "super": 1785472112293
+   "super": 1785476429693
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -1581,13 +1544,13 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": 0.2
+   "2026-07-31": -6.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.3",
-   "n": 10,
-   "start": 2
+   "tipo": "time",
+   "chave": "Belo Horizonte",
+   "n": 13,
+   "start": 3
   },
   "_obs": {
    "premier": {
