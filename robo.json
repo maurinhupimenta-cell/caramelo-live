@@ -1607,8 +1607,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "09:57",
@@ -1628,13 +1628,21 @@
    ],
    "gatilho": "seq RRGG",
    "alvo": {
-    "h": "09:57",
-    "jogo": "Leeds x Palace",
-    "odd": 2.45,
-    "unidades": 1,
-    "desde": 1785488022541
+    "h": "10:00",
+    "jogo": "Leicester x Burnley",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1785488383542
    },
-   "iniciadoEm": 1785488022541
+   "iniciadoEm": 1785488022541,
+   "tiros": [
+    {
+     "h": "09:57",
+     "jogo": "Leeds x Palace",
+     "odd": 2.45,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785487564842,
@@ -3024,7 +3032,37 @@
   "consumidas": {
    "euro": 1785487804937
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:04",
+     "jogo": "Belo Horizonte x Porto Alegre",
+     "odd": 2.15
+    },
+    {
+     "h": "10:07",
+     "jogo": "Bogota x La Plata",
+     "odd": 2.3
+    },
+    {
+     "h": "10:10",
+     "jogo": "La Boca x Medellin",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "coluna :07",
+   "alvo": {
+    "h": "10:04",
+    "jogo": "Belo Horizonte x Porto Alegre",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785488269648
+   },
+   "iniciadoEm": 1785488269648
+  },
   "cooldown": {
    "euro": 1785487804937,
    "super": 1785484668445,
@@ -3050,10 +3088,10 @@
    "2026-07-31": 3.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "França",
-   "n": 14,
-   "start": 3
+   "tipo": "coluna",
+   "chave": ":07",
+   "n": 10,
+   "start": 2
   },
   "_obs": {}
  }
