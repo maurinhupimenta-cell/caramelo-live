@@ -3055,7 +3055,37 @@
    "euro": 1785491966937,
    "super": 1785493128436
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:25",
+     "jogo": "México x África do Sul",
+     "odd": 2.1
+    },
+    {
+     "h": "11:28",
+     "jogo": "Bósnia e Herzegovina x Brasil",
+     "odd": 1.9
+    },
+    {
+     "h": "11:31",
+     "jogo": "Curação x Egito",
+     "odd": 1.83
+    }
+   ],
+   "gatilho": "coluna :28",
+   "alvo": {
+    "h": "11:25",
+    "jogo": "México x África do Sul",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785493525046
+   },
+   "iniciadoEm": 1785493525046
+  },
   "cooldown": {
    "euro": 1785491966937,
    "super": 1785493128436,
@@ -3081,9 +3111,9 @@
    "2026-07-31": 6.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.83",
-   "n": 9,
+   "tipo": "coluna",
+   "chave": ":28",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
