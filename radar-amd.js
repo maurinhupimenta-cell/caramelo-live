@@ -29,6 +29,7 @@
   var estado = {};
   var cache = {};   // liga -> jogos já adaptados
   var INTERVALO = 60000;
+  var ultimosSinais = [];
 
   // ---- adaptador: formato do coletor -> formato do motor -------------------
   // coletor:  { hora: 2, minuto: 22, time_a, time_b, gols_a, gols_b, odds: {...} }
@@ -142,14 +143,19 @@
     Promise.all(pendentes).then(function (partes) {
       var todos = [];
       partes.forEach(function (p) { todos = todos.concat(p); });
+      ultimosSinais = todos;
       desenha(todos);
     });
   }
 
-  function inicia() {
+  // ASSUME O LUGAR do renderRadar do dashboard: ele continua sendo chamado pelos
+  // timers existentes, mas quem desenha agora e este radar. Nao precisa editar
+  // app.js nem dados-reais.js - so carregar este arquivo DEPOIS deles.
+  function assume() {
+    try { window.renderRadar = function () { desenha(ultimosSinais); }; } catch (e) {}
     roda();
     setInterval(roda, INTERVALO);
   }
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", inicia);
-  else inicia();
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", assume);
+  else assume();
 })();
