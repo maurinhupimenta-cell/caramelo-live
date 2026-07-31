@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -136.4,
-  "ciclos": 728,
+  "saldo": -143.4,
+  "ciclos": 729,
   "greens": 449,
-  "redsCiclo": 120,
+  "redsCiclo": 121,
   "aborts": 0,
   "descartes": 159,
   "historico": [
+   {
+    "quando": "2026-07-31T08:34:45.041Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: time Áustria"
+   },
    {
     "quando": "2026-07-31T08:26:38.939Z",
     "resultado": "GREEN_OBS",
@@ -1589,57 +1595,44 @@
    }
   ],
   "consumidas": {
-   "super": 1785486287736
+   "super": 1785486287736,
+   "euro": 1785486884842
   },
   "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "09:26",
-     "jogo": "Escócia x Bélgica",
-     "odd": 2.15
+     "h": "09:40",
+     "jogo": "Alemanha x Japão",
+     "odd": 2.3
     },
     {
-     "h": "09:29",
-     "jogo": "Áustria x Turquia",
-     "odd": 2.5
-    },
-    {
-     "h": "09:32",
-     "jogo": "Eslováquia x Hungria",
+     "h": "09:43",
+     "jogo": "Qatar x Canadá",
      "odd": 2.4
+    },
+    {
+     "h": "09:46",
+     "jogo": "Marrocos x Brasil",
+     "odd": 2.25
     }
    ],
-   "gatilho": "time Áustria",
+   "gatilho": "time Canadá",
    "alvo": {
-    "h": "09:32",
-    "jogo": "Eslováquia x Hungria",
-    "odd": 2.4,
-    "unidades": 4,
-    "desde": 1785486706350
+    "h": "09:40",
+    "jogo": "Alemanha x Japão",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1785486886945
    },
-   "iniciadoEm": 1785486289948,
-   "tiros": [
-    {
-     "h": "09:26",
-     "jogo": "Escócia x Bélgica",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "09:29",
-     "jogo": "Áustria x Turquia",
-     "odd": 2.5,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1785486886945
   },
   "cooldown": {
    "copa": 1785482885437,
    "premier": 1785482312342,
-   "euro": 1785482564947,
+   "euro": 1785486884842,
    "super": 1785486287736
   },
   "dias": {
@@ -1659,7 +1652,7 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": -21.2
+   "2026-07-31": -28.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
