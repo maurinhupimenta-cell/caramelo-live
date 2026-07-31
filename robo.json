@@ -225,12 +225,18 @@
  },
  "o25": {
   "saldo": -158.3,
-  "ciclos": 758,
+  "ciclos": 759,
   "greens": 465,
   "redsCiclo": 127,
   "aborts": 0,
-  "descartes": 166,
+  "descartes": 167,
   "historico": [
+   {
+    "quando": "2026-07-31T19:34:29.817Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho seq RGGGG) — liga REARMADA"
+   },
    {
     "quando": "2026-07-31T18:00:25.814Z",
     "resultado": "GREEN",
@@ -1801,7 +1807,12 @@
    "n": 15,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1785526469816,
+    "gatilho": "seq RGGGG"
+   }
+  }
  },
  "ambas": {
   "saldo": -15.5,
