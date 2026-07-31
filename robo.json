@@ -1773,13 +1773,19 @@
   }
  },
  "ambas": {
-  "saldo": -16.8,
-  "ciclos": 770,
-  "greens": 524,
+  "saldo": -16.1,
+  "ciclos": 771,
+  "greens": 525,
   "redsCiclo": 78,
   "aborts": 0,
   "descartes": 168,
   "historico": [
+   {
+    "quando": "2026-07-31T12:41:47.140Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "euro · Escócia x Países Baixos @1.85 (tiro 2) · gatilho: odd 1.85"
+   },
    {
     "quando": "2026-07-31T11:39:45.141Z",
     "resultado": "GREEN",
@@ -3161,48 +3167,12 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "13:35",
-     "jogo": "República Tcheca x Alemanha",
-     "odd": 2.05
-    },
-    {
-     "h": "13:38",
-     "jogo": "Escócia x Países Baixos",
-     "odd": 1.85
-    },
-    {
-     "h": "13:41",
-     "jogo": "Espanha x Albânia",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "odd 1.85",
-   "alvo": {
-    "h": "13:38",
-    "jogo": "Escócia x Países Baixos",
-    "odd": 1.85,
-    "unidades": 2,
-    "desde": 1785501484542
-   },
-   "iniciadoEm": 1785500787144,
-   "tiros": [
-    {
-     "h": "13:35",
-     "jogo": "República Tcheca x Alemanha",
-     "odd": 2.05,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "euro": 1785501706947
   },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785495906339,
+   "euro": 1785501706947,
    "super": 1785497288740,
    "premier": 1785446633933,
    "copa": 1785497984943
@@ -3223,13 +3193,13 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 10.7
+   "2026-07-31": 11.4
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "1.93",
    "n": 17,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
