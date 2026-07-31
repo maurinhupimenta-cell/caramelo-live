@@ -1652,13 +1652,19 @@
   }
  },
  "ambas": {
-  "saldo": -23.7,
-  "ciclos": 763,
-  "greens": 517,
+  "saldo": -22.5,
+  "ciclos": 764,
+  "greens": 518,
   "redsCiclo": 78,
   "aborts": 0,
   "descartes": 168,
   "historico": [
+   {
+    "quando": "2026-07-31T09:07:26.137Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Belo Horizonte x Porto Alegre @2.15 (tiro 1) · gatilho: coluna :07"
+   },
    {
     "quando": "2026-07-31T08:50:05.139Z",
     "resultado": "GREEN",
@@ -2999,42 +3005,13 @@
    }
   ],
   "consumidas": {
-   "euro": 1785487804937
+   "euro": 1785487804937,
+   "super": 1785488845850
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "10:04",
-     "jogo": "Belo Horizonte x Porto Alegre",
-     "odd": 2.15
-    },
-    {
-     "h": "10:07",
-     "jogo": "Bogota x La Plata",
-     "odd": 2.3
-    },
-    {
-     "h": "10:10",
-     "jogo": "La Boca x Medellin",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "coluna :07",
-   "alvo": {
-    "h": "10:04",
-    "jogo": "Belo Horizonte x Porto Alegre",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785488269648
-   },
-   "iniciadoEm": 1785488269648
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785487804937,
-   "super": 1785484668445,
+   "super": 1785488845850,
    "premier": 1785446633933,
    "copa": 1785483966539
   },
@@ -3054,11 +3031,11 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 3.8
+   "2026-07-31": 5
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":07",
+   "chave": ":13",
    "n": 10,
    "start": 1
   },
