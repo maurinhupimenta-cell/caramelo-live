@@ -225,12 +225,18 @@
  },
  "o25": {
   "saldo": -160.1,
-  "ciclos": 756,
+  "ciclos": 757,
   "greens": 464,
   "redsCiclo": 127,
   "aborts": 0,
-  "descartes": 165,
+  "descartes": 166,
   "historico": [
+   {
+    "quando": "2026-07-31T17:56:25.616Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho seq RGRG) — liga REARMADA"
+   },
    {
     "quando": "2026-07-31T17:20:28.611Z",
     "resultado": "GREEN",
@@ -1759,7 +1765,37 @@
   "consumidas": {
    "euro": 1785518428505
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:55",
+     "jogo": "Tunísia x Coreia do Sul",
+     "odd": 2.75
+    },
+    {
+     "h": "18:58",
+     "jogo": "Egito x Irã",
+     "odd": 2.4
+    },
+    {
+     "h": "19:01",
+     "jogo": "Inglaterra x Escócia",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "seq RGRG",
+   "alvo": {
+    "h": "18:55",
+    "jogo": "Tunísia x Coreia do Sul",
+    "odd": 2.75,
+    "unidades": 1,
+    "desde": 1785520587717
+   },
+   "iniciadoEm": 1785520587717
+  },
   "cooldown": {
    "copa": 1785515780716,
    "premier": 1785513949112,
@@ -1787,8 +1823,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGGRG",
-   "n": 11,
+   "chave": "RGRG",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
@@ -3276,7 +3312,37 @@
    "euro": 1785519626806,
    "copa": 1785519990309
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:52",
+     "jogo": "Bogota x Lima",
+     "odd": 2.1
+    },
+    {
+     "h": "18:55",
+     "jogo": "Penarol x Santiago",
+     "odd": 1.98
+    },
+    {
+     "h": "18:58",
+     "jogo": "Belo Horizonte x Rio de Janeiro",
+     "odd": 1.86
+    }
+   ],
+   "gatilho": "coluna :55",
+   "alvo": {
+    "h": "18:52",
+    "jogo": "Bogota x Lima",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785519991910
+   },
+   "iniciadoEm": 1785519991910
+  },
   "cooldown": {
    "euro": 1785519626806,
    "super": 1785515550005,
@@ -3305,7 +3371,7 @@
    "tipo": "coluna",
    "chave": ":55",
    "n": 18,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
