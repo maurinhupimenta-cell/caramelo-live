@@ -1499,11 +1499,40 @@
    }
   ],
   "consumidas": {
-   "euro": 1785467850287,
    "premier": 1785470019093,
    "copa": 1785471446296
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:25",
+     "jogo": "La Boca x Lima",
+     "odd": 2.25
+    },
+    {
+     "h": "05:28",
+     "jogo": "Belo Horizonte x Santiago",
+     "odd": 1.98
+    },
+    {
+     "h": "05:31",
+     "jogo": "Penarol x Medellin",
+     "odd": 2.55
+    }
+   ],
+   "gatilho": "time Belo Horizonte",
+   "alvo": {
+    "h": "05:25",
+    "jogo": "La Boca x Lima",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785471448890
+   },
+   "iniciadoEm": 1785471448890
+  },
   "cooldown": {
    "copa": 1785471446296,
    "premier": 1785470019093,
