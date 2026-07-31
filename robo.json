@@ -1790,13 +1790,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -6.2,
-  "ciclos": 781,
+  "saldo": -13.2,
+  "ciclos": 782,
   "greens": 535,
-  "redsCiclo": 78,
+  "redsCiclo": 79,
   "aborts": 0,
   "descartes": 168,
   "historico": [
+   {
+    "quando": "2026-07-31T16:37:09.408Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: odd 2.2"
+   },
    {
     "quando": "2026-07-31T16:32:30.111Z",
     "resultado": "GREEN",
@@ -3246,58 +3252,15 @@
   ],
   "consumidas": {
    "euro": 1785513806107,
-   "super": 1785515550005
+   "super": 1785515550005,
+   "copa": 1785515829216
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "17:28",
-     "jogo": "Coreia do Sul x Senegal",
-     "odd": 2.2
-    },
-    {
-     "h": "17:31",
-     "jogo": "Arábia Saudita x Bélgica",
-     "odd": 1.93
-    },
-    {
-     "h": "17:34",
-     "jogo": "Tunísia x Uzbequistão",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "odd 2.2",
-   "alvo": {
-    "h": "17:34",
-    "jogo": "Tunísia x Uzbequistão",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1785515780914
-   },
-   "iniciadoEm": 1785515551714,
-   "tiros": [
-    {
-     "h": "17:28",
-     "jogo": "Coreia do Sul x Senegal",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "17:31",
-     "jogo": "Arábia Saudita x Bélgica",
-     "odd": 1.93,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785513806107,
    "super": 1785515550005,
    "premier": 1785446633933,
-   "copa": 1785511946816
+   "copa": 1785515829216
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -3315,13 +3278,13 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 21.3
+   "2026-07-31": 14.3
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.2",
-   "n": 9,
-   "start": 1
+   "tipo": "time",
+   "chave": "Equador",
+   "n": 16,
+   "start": 3
   },
   "_obs": {}
  }
