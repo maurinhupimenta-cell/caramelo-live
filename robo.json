@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -160.1,
-  "ciclos": 757,
-  "greens": 464,
+  "saldo": -158.3,
+  "ciclos": 758,
+  "greens": 465,
   "redsCiclo": 127,
   "aborts": 0,
   "descartes": 166,
   "historico": [
+   {
+    "quando": "2026-07-31T18:00:25.814Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "copa · Tunísia x Coreia do Sul @2.75 (tiro 1) · gatilho: seq RGRG"
+   },
    {
     "quando": "2026-07-31T17:56:25.616Z",
     "resultado": "GREEN_OBS",
@@ -1763,41 +1769,12 @@
    }
   ],
   "consumidas": {
-   "euro": 1785518428505
+   "euro": 1785518428505,
+   "copa": 1785520825711
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:55",
-     "jogo": "Tunísia x Coreia do Sul",
-     "odd": 2.75
-    },
-    {
-     "h": "18:58",
-     "jogo": "Egito x Irã",
-     "odd": 2.4
-    },
-    {
-     "h": "19:01",
-     "jogo": "Inglaterra x Escócia",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "seq RGRG",
-   "alvo": {
-    "h": "18:55",
-    "jogo": "Tunísia x Coreia do Sul",
-    "odd": 2.75,
-    "unidades": 1,
-    "desde": 1785520587717
-   },
-   "iniciadoEm": 1785520587717
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785515780716,
+   "copa": 1785520825711,
    "premier": 1785513949112,
    "euro": 1785518428505,
    "super": 1785499987742
@@ -1819,7 +1796,7 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": -44.9
+   "2026-07-31": -43.1
   },
   "_gatilhoAtual": {
    "tipo": "seq",
