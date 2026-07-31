@@ -212,13 +212,19 @@
   }
  },
  "o25": {
-  "saldo": -119.7,
-  "ciclos": 705,
-  "greens": 436,
+  "saldo": -117.7,
+  "ciclos": 706,
+  "greens": 437,
   "redsCiclo": 115,
   "aborts": 0,
   "descartes": 154,
   "historico": [
+   {
+    "quando": "2026-07-31T02:04:12.838Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "euro · Áustria x Polônia @2.5 (tiro 2) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-07-31T01:44:54.485Z",
     "resultado": "GREEN_OBS",
@@ -1438,50 +1444,44 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "euro": 1785463452741
+  },
   "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "02:56",
-     "jogo": "França x Escócia",
-     "odd": 2.1
+     "h": "03:15",
+     "jogo": "Palace x Leicester",
+     "odd": 2.25
     },
     {
-     "h": "02:59",
-     "jogo": "Áustria x Polônia",
-     "odd": 2.5
+     "h": "03:18",
+     "jogo": "Brighton x Islington",
+     "odd": 2.05
     },
     {
-     "h": "03:02",
-     "jogo": "Alemanha x Romênia",
-     "odd": 2.1
+     "h": "03:21",
+     "jogo": "Wolverhampton x Norwich",
+     "odd": 2.07
     }
    ],
-   "gatilho": "placar acima de 1-0 (2-1)",
+   "gatilho": "time Brighton",
    "alvo": {
-    "h": "02:59",
-    "jogo": "Áustria x Polônia",
-    "odd": 2.5,
-    "unidades": 2,
-    "desde": 1785463168436
+    "h": "03:15",
+    "jogo": "Palace x Leicester",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785463554837
    },
-   "iniciadoEm": 1785462763797,
-   "tiros": [
-    {
-     "h": "02:56",
-     "jogo": "França x Escócia",
-     "odd": 2.1,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1785463554837
   },
   "cooldown": {
    "copa": 1785449400132,
    "premier": 1785442317229,
-   "euro": 1785450200329,
+   "euro": 1785463452741,
    "super": 1785440742333
   },
   "dias": {
@@ -1500,13 +1500,13 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -29.7
+   "2026-07-30": -27.7
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "1-0 / 0-1",
-   "n": 12,
-   "start": 1
+   "tipo": "time",
+   "chave": "Brighton",
+   "n": 9,
+   "start": 3
   },
   "_obs": {
    "premier": {
