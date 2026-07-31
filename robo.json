@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -145.2,
-  "ciclos": 749,
-  "greens": 461,
+  "saldo": -144,
+  "ciclos": 750,
+  "greens": 462,
   "redsCiclo": 124,
   "aborts": 0,
   "descartes": 164,
   "historico": [
+   {
+    "quando": "2026-07-31T14:47:01.440Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Inglaterra x Croácia @2.1 (tiro 2) · gatilho: seq RGGGG"
+   },
    {
     "quando": "2026-07-31T14:39:05.648Z",
     "resultado": "GREEN",
@@ -1716,51 +1722,14 @@
   ],
   "consumidas": {
    "copa": 1785505919240,
-   "premier": 1785508745538
+   "premier": 1785508745538,
+   "euro": 1785509221247
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "15:41",
-     "jogo": "Geórgia x Polônia",
-     "odd": 2.55
-    },
-    {
-     "h": "15:44",
-     "jogo": "Inglaterra x Croácia",
-     "odd": 2.1
-    },
-    {
-     "h": "15:47",
-     "jogo": "Suíça x Turquia",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "seq RGGGG",
-   "alvo": {
-    "h": "15:44",
-    "jogo": "Inglaterra x Croácia",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1785509080849
-   },
-   "iniciadoEm": 1785508804843,
-   "tiros": [
-    {
-     "h": "15:41",
-     "jogo": "Geórgia x Polônia",
-     "odd": 2.55,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785505919240,
    "premier": 1785508745538,
-   "euro": 1785505204640,
+   "euro": 1785509221247,
    "super": 1785499987742
   },
   "dias": {
@@ -1780,7 +1749,7 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": -30
+   "2026-07-31": -28.8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
@@ -3224,7 +3193,45 @@
    "super": 1785507020437,
    "copa": 1785507659042
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "15:47",
+     "jogo": "Suíça x Turquia",
+     "odd": 2.02
+    },
+    {
+     "h": "15:50",
+     "jogo": "Bélgica x Espanha",
+     "odd": 1.83
+    },
+    {
+     "h": "15:53",
+     "jogo": "Dinamarca x Albânia",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "odd 1.83",
+   "alvo": {
+    "h": "15:50",
+    "jogo": "Bélgica x Espanha",
+    "odd": 1.83,
+    "unidades": 2,
+    "desde": 1785509400949
+   },
+   "iniciadoEm": 1785509219446,
+   "tiros": [
+    {
+     "h": "15:47",
+     "jogo": "Suíça x Turquia",
+     "odd": 2.02,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1785505618638,
    "super": 1785507020437,
@@ -3250,10 +3257,10 @@
    "2026-07-31": 16.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Brasil",
-   "n": 12,
-   "start": 3
+   "tipo": "odd",
+   "chave": "1.85",
+   "n": 11,
+   "start": 2
   },
   "_obs": {}
  }
