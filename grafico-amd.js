@@ -69,6 +69,23 @@
     var el = raiz.querySelector(".active,[aria-pressed=true],.on");
     return el ? (el.textContent || "").trim() : null;
   }
+  // O grafico tem seletor de METRICA (#metric): % pagamento / Odd / Gols / EV /
+  // Taxa de acerto / AUTO. Antes eu ignorava e desenhava sempre a porcentagem.
+  function metricaAtual() {
+    var t = (ativoEm("#metric") || "").toLowerCase();
+    if (t.indexOf("gol") >= 0) return "gols";
+    if (t.indexOf("odd") >= 0) return "odd";
+    if (t.indexOf("ev") >= 0) return "ev";
+    if (t.indexOf("acerto") >= 0) return "acerto";
+    return "pct";                       // % pagamento e AUTO
+  }
+  function oddDoJogo(g, mkt) {
+    var o = g.odds || {}, v = mkt === "o25" ? o.o25 : mkt === "o35" ? o.o35 :
+            mkt === "ambas" ? o.ambs : mkt === "ge5" ? o.ge5 : null;
+    var n = typeof v === "number" ? v : parseFloat(String(v || "").replace(",", "."));
+    return isFinite(n) && n > 1.01 ? n : null;
+  }
+
   function janelaAtual() {
     var t = ativoEm("#qtd");
     var n = t ? parseInt(t.replace(/\D/g, ""), 10) : NaN;
@@ -167,27 +184,62 @@
     return { serie: s, horas: h, jogos: n, gols: gols };
   }
 
+  // Monta a serie da METRICA escolhida sobre os ultimos `qtd` jogos.
+  // Cada ponto olha uma janela movel de ate 20 jogos terminando naquele jogo.
+  function serieDaMetrica(jogos, mkt, qtd, metrica) {
+    var n = Math.min(qtd, jogos.length);
+    var ini = jogos.length - n;
+    var W = Math.min(20, Math.max(2, n));
+    var s = [], hs = [], golsTotal = 0;
+    for (var i = ini; i < jogos.length; i++) {
+      var a = Math.max(0, i - W + 1);
+      var jan = jogos.slice(a, i + 1);
+      var pagos = 0, gols = 0, somaOdd = 0, comOdd = 0;
+      for (var k = 0; k < jan.length; k++) {
+        if (AMD_MOTOR.pays(jan[k], mkt)) pagos++;
+        gols += (jan[k].total || 0);
+        var od = oddDoJogo(jan[k], mkt);
+        if (od) { somaOdd += od; comOdd++; }
+      }
+      var taxa = jan.length ? pagos / jan.length : 0;
+      var oddMed = comOdd ? somaOdd / comOdd : null;
+      var v;
+      if (metrica === "gols") v = gols;                                   // soma de gols da janela
+      else if (metrica === "odd") v = oddMed == null ? 0 : Math.round(oddMed * 100) / 100;
+      else if (metrica === "ev") v = (oddMed == null) ? 0 : Math.round((taxa * oddMed - 1) * 1000) / 10;
+      else v = Math.round(taxa * 1000) / 10;                              // pct e acerto
+      s.push(v);
+      hs.push(jogos[i].horario || "");
+      golsTotal += (jogos[i].total || 0);
+    }
+    return { serie: s, horas: hs, jogos: n, gols: golsTotal, janela: W };
+  }
+
   // ---- ciclo ---------------------------------------------------------------
   function roda() {
     if (typeof AMD_MOTOR === "undefined") return;
     var liga = ligaAtual(), mkt = mercadoAtual(), jan = janelaAtual();
     buscar(liga).then(function (jogos) {
       if (!jogos || jogos.length < 3) return;
+      var met = metricaAtual();
+      var base = jogos;
       if (modoAcumulado()) {
-        var ac = AMD_MOTOR.acumulado(jogos, mkt, jan);
-        if (!ac || !ac.faixas) return;
-        var f = ac.faixas[faixaAtual()] || ac.faixas.dia;
-        if (!f) return;
-        var c1 = cortaEConta(f.serie, f.horas, jogos, jan);
-        desenha(c1.serie, c1.horas,
-          "acumulado 00h · " + c1.jogos + " jogos · " + c1.gols + " gols no período");
-      } else {
-        var j = AMD_MOTOR.chartJanela(jogos, mkt, jan);
-        if (!j) return;
-        var c2 = cortaEConta(j.serie, j.horas, jogos, jan);
-        desenha(c2.serie, c2.horas,
-          "janela móvel · " + c2.jogos + " jogos · " + c2.gols + " gols no período");
+        // acumulado: so os jogos do dia (corte na virada do relogio do jogo)
+        var idx = 0;
+        for (var q = 1; q < jogos.length; q++) {
+          var h1 = parseInt((jogos[q].horario || "").split(":")[0]);
+          var h0 = parseInt((jogos[q - 1].horario || "").split(":")[0]);
+          if (!isNaN(h1) && !isNaN(h0) && h1 < h0 - 12) idx = q;
+        }
+        base = jogos.slice(idx);
       }
+      var r = serieDaMetrica(base, mkt, jan, met);
+      if (!r || r.serie.length < 2) return;
+      var nomeMet = met === "gols" ? "gols" : met === "odd" ? "odd média" :
+                    met === "ev" ? "EV" : "% pagamento";
+      desenha(r.serie, r.horas,
+        (modoAcumulado() ? "acumulado 00h" : "janela móvel") + " · " + nomeMet +
+        " · " + r.jogos + " jogos · " + r.gols + " gols no período");
     });
   }
 
@@ -195,7 +247,7 @@
     roda();
     setInterval(roda, INTERVALO);
     // redesenha quando o usuário troca modo/faixa/liga/mercado
-    ["#qtd", "#grafmodo", "#acumBar", "#markets", ".tabrow", "#cligaMenu"].forEach(function (sel) {
+    ["#qtd", "#grafmodo", "#acumBar", "#markets", ".tabrow", "#cligaMenu", "#metric"].forEach(function (sel) {
       var el = document.querySelector(sel);
       if (el) el.addEventListener("click", function () { setTimeout(roda, 300); });
     });
