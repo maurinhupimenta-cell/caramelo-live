@@ -1586,13 +1586,19 @@
   }
  },
  "ambas": {
-  "saldo": -23.9,
-  "ciclos": 755,
-  "greens": 511,
+  "saldo": -23,
+  "ciclos": 756,
+  "greens": 512,
   "redsCiclo": 77,
   "aborts": 0,
   "descartes": 167,
   "historico": [
+   {
+    "quando": "2026-07-31T06:20:26.689Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Ucrânia x Alemanha @1.93 (tiro 1) · gatilho: time França"
+   },
    {
     "quando": "2026-07-31T05:06:30.990Z",
     "resultado": "GREEN",
@@ -2884,40 +2890,12 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "07:14",
-     "jogo": "Ucrânia x Alemanha",
-     "odd": 1.93
-    },
-    {
-     "h": "07:17",
-     "jogo": "França x Portugal",
-     "odd": 1.86
-    },
-    {
-     "h": "07:20",
-     "jogo": "Itália x Polônia",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "time França",
-   "alvo": {
-    "h": "07:14",
-    "jogo": "Ucrânia x Alemanha",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1785477992493
-   },
-   "iniciadoEm": 1785477992493
+  "consumidas": {
+   "euro": 1785478826493
   },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785474390790,
+   "euro": 1785478826493,
    "super": 1785452899830,
    "premier": 1785446633933,
    "copa": 1785467307697
@@ -2938,13 +2916,13 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 3.6
+   "2026-07-31": 4.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "França",
    "n": 11,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
