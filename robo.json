@@ -3343,7 +3343,37 @@
    "euro": 1785525627015,
    "copa": 1785528509908
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:19",
+     "jogo": "Sao Paulo x Quito",
+     "odd": 1.9
+    },
+    {
+     "h": "21:22",
+     "jogo": "La Plata x Medellin",
+     "odd": 2.25
+    },
+    {
+     "h": "21:25",
+     "jogo": "Buenos Aires x Asuncion",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "odd 2.25",
+   "alvo": {
+    "h": "21:19",
+    "jogo": "Sao Paulo x Quito",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1785528745805
+   },
+   "iniciadoEm": 1785528745805
+  },
   "cooldown": {
    "euro": 1785525627015,
    "super": 1785524906408,
@@ -3369,9 +3399,9 @@
    "2026-07-31": 13
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Brasil",
-   "n": 15,
+   "tipo": "odd",
+   "chave": "2.25",
+   "n": 10,
    "start": 3
   },
   "_obs": {}
