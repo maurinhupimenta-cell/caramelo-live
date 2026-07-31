@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -143.4,
-  "ciclos": 729,
-  "greens": 449,
+  "saldo": -141.6,
+  "ciclos": 730,
+  "greens": 450,
   "redsCiclo": 121,
   "aborts": 0,
   "descartes": 159,
   "historico": [
+   {
+    "quando": "2026-07-31T08:46:04.947Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "copa · Qatar x Canadá @2.4 (tiro 2) · gatilho: time Canadá"
+   },
    {
     "quando": "2026-07-31T08:34:45.041Z",
     "resultado": "RED_CICLO",
@@ -1596,49 +1602,12 @@
   ],
   "consumidas": {
    "super": 1785486287736,
-   "euro": 1785486884842
+   "euro": 1785486884842,
+   "copa": 1785487564842
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "09:40",
-     "jogo": "Alemanha x Japão",
-     "odd": 2.3
-    },
-    {
-     "h": "09:43",
-     "jogo": "Qatar x Canadá",
-     "odd": 2.4
-    },
-    {
-     "h": "09:46",
-     "jogo": "Marrocos x Brasil",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "time Canadá",
-   "alvo": {
-    "h": "09:43",
-    "jogo": "Qatar x Canadá",
-    "odd": 2.4,
-    "unidades": 2,
-    "desde": 1785487386546
-   },
-   "iniciadoEm": 1785486886945,
-   "tiros": [
-    {
-     "h": "09:40",
-     "jogo": "Alemanha x Japão",
-     "odd": 2.3,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785482885437,
+   "copa": 1785487564842,
    "premier": 1785482312342,
    "euro": 1785486884842,
    "super": 1785486287736
@@ -1660,13 +1629,13 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": -28.2
+   "2026-07-31": -26.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Canadá",
-   "n": 9,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.5",
+   "n": 12,
+   "start": 3
   },
   "_obs": {
    "copa": {
@@ -3017,7 +2986,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1785483966539,
    "super": 1785484668445
   },
   "ciclo": {
@@ -3079,7 +3047,7 @@
    "tipo": "odd",
    "chave": "1.93",
    "n": 10,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
