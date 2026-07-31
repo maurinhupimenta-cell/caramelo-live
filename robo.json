@@ -1804,13 +1804,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -17.5,
-  "ciclos": 787,
-  "greens": 538,
+  "saldo": -16.5,
+  "ciclos": 788,
+  "greens": 539,
   "redsCiclo": 80,
   "aborts": 0,
   "descartes": 169,
   "historico": [
+   {
+    "quando": "2026-07-31T19:08:26.513Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Penarol x Rio de Janeiro @2.05 (tiro 1) · gatilho: coluna :07"
+   },
    {
     "quando": "2026-07-31T18:56:26.312Z",
     "resultado": "RED_CICLO",
@@ -3295,42 +3301,13 @@
    }
   ],
   "consumidas": {
-   "copa": 1785524186206
+   "copa": 1785524186206,
+   "super": 1785524906408
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:04",
-     "jogo": "Penarol x Rio de Janeiro",
-     "odd": 2.05
-    },
-    {
-     "h": "20:07",
-     "jogo": "Sao Paulo x La Plata",
-     "odd": 2.02
-    },
-    {
-     "h": "20:10",
-     "jogo": "Guayaquil x Asuncion",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "coluna :07",
-   "alvo": {
-    "h": "20:04",
-    "jogo": "Penarol x Rio de Janeiro",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785524368015
-   },
-   "iniciadoEm": 1785524368015
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785519626806,
-   "super": 1785520766806,
+   "super": 1785524906408,
    "premier": 1785446633933,
    "copa": 1785524186206
   },
@@ -3350,7 +3327,7 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 10
+   "2026-07-31": 11
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
