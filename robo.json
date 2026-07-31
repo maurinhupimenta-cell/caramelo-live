@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -148.5,
-  "ciclos": 746,
-  "greens": 459,
+  "saldo": -147.4,
+  "ciclos": 747,
+  "greens": 460,
   "redsCiclo": 124,
   "aborts": 0,
   "descartes": 163,
   "historico": [
+   {
+    "quando": "2026-07-31T13:51:59.436Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Espanha x Egito @2.1 (tiro 1) · gatilho: seq RRGR"
+   },
    {
     "quando": "2026-07-31T13:40:04.742Z",
     "resultado": "GREEN",
@@ -1697,41 +1703,12 @@
    }
   ],
   "consumidas": {
-   "euro": 1785505204640
+   "euro": 1785505204640,
+   "copa": 1785505919240
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:49",
-     "jogo": "Espanha x Egito",
-     "odd": 2.1
-    },
-    {
-     "h": "14:52",
-     "jogo": "Gana x França",
-     "odd": 2.3
-    },
-    {
-     "h": "14:55",
-     "jogo": "Nova Zelândia x Suíça",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "seq RRGR",
-   "alvo": {
-    "h": "14:49",
-    "jogo": "Espanha x Egito",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785505739347
-   },
-   "iniciadoEm": 1785505739347
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785500504452,
+   "copa": 1785505919240,
    "premier": 1785501713540,
    "euro": 1785505204640,
    "super": 1785499987742
@@ -1753,12 +1730,12 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": -33.3
+   "2026-07-31": -32.2
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRGR",
-   "n": 12,
+   "chave": "RGRG",
+   "n": 14,
    "start": 1
   },
   "_obs": {
