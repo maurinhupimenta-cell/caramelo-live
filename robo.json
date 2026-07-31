@@ -2893,7 +2893,37 @@
   "consumidas": {
    "euro": 1785478826493
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:28",
+     "jogo": "Colômbia x Costa do Marfim",
+     "odd": 1.9
+    },
+    {
+     "h": "07:31",
+     "jogo": "Bélgica x RD Congo",
+     "odd": 2
+    },
+    {
+     "h": "07:34",
+     "jogo": "Paraguai x Marrocos",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "time RD Congo",
+   "alvo": {
+    "h": "07:28",
+    "jogo": "Colômbia x Costa do Marfim",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1785479367818
+   },
+   "iniciadoEm": 1785479367818
+  },
   "cooldown": {
    "euro": 1785478826493,
    "super": 1785452899830,
@@ -2920,8 +2950,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "França",
-   "n": 11,
+   "chave": "RD Congo",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
