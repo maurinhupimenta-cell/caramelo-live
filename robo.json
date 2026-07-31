@@ -3163,8 +3163,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "15:01",
@@ -3184,13 +3184,21 @@
    ],
    "gatilho": "odd 1.83",
    "alvo": {
-    "h": "15:01",
-    "jogo": "Penarol x Agua Branca",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1785506120044
+    "h": "15:04",
+    "jogo": "Guayaquil x Belo Horizonte",
+    "odd": 1.83,
+    "unidades": 2,
+    "desde": 1785506663346
    },
-   "iniciadoEm": 1785506120044
+   "iniciadoEm": 1785506120044,
+   "tiros": [
+    {
+     "h": "15:01",
+     "jogo": "Penarol x Agua Branca",
+     "odd": 2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785505618638,
@@ -3217,9 +3225,9 @@
    "2026-07-31": 14.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.83",
-   "n": 12,
+   "tipo": "coluna",
+   "chave": ":07",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
