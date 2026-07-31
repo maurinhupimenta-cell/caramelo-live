@@ -1605,7 +1605,37 @@
    "euro": 1785486884842,
    "copa": 1785487564842
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:57",
+     "jogo": "Leeds x Palace",
+     "odd": 2.45
+    },
+    {
+     "h": "10:00",
+     "jogo": "Leicester x Burnley",
+     "odd": 2.2
+    },
+    {
+     "h": "10:03",
+     "jogo": "Brentford x Brighton",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "seq RRGG",
+   "alvo": {
+    "h": "09:57",
+    "jogo": "Leeds x Palace",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1785488022541
+   },
+   "iniciadoEm": 1785488022541
+  },
   "cooldown": {
    "copa": 1785487564842,
    "premier": 1785482312342,
@@ -1632,10 +1662,10 @@
    "2026-07-31": -26.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.5",
-   "n": 12,
-   "start": 3
+   "tipo": "seq",
+   "chave": "RRGG",
+   "n": 10,
+   "start": 1
   },
   "_obs": {
    "copa": {
