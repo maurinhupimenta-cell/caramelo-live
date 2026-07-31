@@ -1775,7 +1775,45 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "20:36",
+     "jogo": "West Ham x United",
+     "odd": 2.45
+    },
+    {
+     "h": "20:39",
+     "jogo": "Tottenham x Leicester",
+     "odd": 2.5
+    },
+    {
+     "h": "20:42",
+     "jogo": "West Ham x Wolverhampton",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "seq RGGGG",
+   "alvo": {
+    "h": "20:39",
+    "jogo": "Tottenham x Leicester",
+    "odd": 2.5,
+    "unidades": 2,
+    "desde": 1785526722509
+   },
+   "iniciadoEm": 1785526472013,
+   "tiros": [
+    {
+     "h": "20:36",
+     "jogo": "West Ham x United",
+     "odd": 2.45,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1785520825711,
    "premier": 1785513949112,
@@ -1803,16 +1841,11 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGRG",
-   "n": 15,
+   "chave": "RGGGG",
+   "n": 12,
    "start": 1
   },
-  "_obs": {
-   "premier": {
-    "desde": 1785526469816,
-    "gatilho": "seq RGGGG"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -15.5,
