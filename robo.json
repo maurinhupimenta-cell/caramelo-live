@@ -2783,7 +2783,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:01",
+     "jogo": "Argélia x Áustria",
+     "odd": 1.95
+    },
+    {
+     "h": "03:04",
+     "jogo": "Egito x Uruguai",
+     "odd": 1.87
+    },
+    {
+     "h": "03:07",
+     "jogo": "Suíça x Costa do Marfim",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "placar goleada (3+)",
+   "alvo": {
+    "h": "03:01",
+    "jogo": "Argélia x Áustria",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1785463109937
+   },
+   "iniciadoEm": 1785463109937
+  },
   "cooldown": {
    "euro": 1785439551897,
    "super": 1785452899830,
@@ -2808,9 +2838,9 @@
    "2026-07-30": 23
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.83",
-   "n": 13,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
