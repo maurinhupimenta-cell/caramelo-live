@@ -40,7 +40,12 @@
       a: a, b: b, total: a + b,
       odds: {
         o25: o["odd_over_2.5"] || null, o35: o["odd_over_3.5"] || null,
-        ambs: o["odd_ambas_sim"] || null, u25: o["odd_under_2.5"] || null,
+        ambs: o["odd_ambas_sim"] || null, ambn: o["odd_ambas_nao"] || null,
+        // "extatos_5" engana no nome: e 5 OU MAIS (implicita 9,5% bate com a
+        // frequencia real de 9,5% em 859 jogos; exatamente-5 daria 5,5%)
+        ge5: o["odd_total_gols_extatos_5"] || null,
+        u05: o["odd_under_0.5"] || null, u15: o["odd_under_1.5"] || null,
+        u25: o["odd_under_2.5"] || null,
         casa: o["odd_resultado_final_casa"] || null,
         empate: o["odd_resultado_final_empate"] || null,
         fora: o["odd_resultado_final_fora"] || null
@@ -109,7 +114,8 @@
     else if (mkt === "ambas") v = o.ambs;
     else if (mkt === "casa") v = o.casa; else if (mkt === "fora") v = o.fora;
     else if (mkt === "empate") v = o.empate;
-    else return null;                                   // ge5 e placar: fonte não fornece
+    else if (mkt === "ge5") v = o.ge5;                  // agora existe (extatos_5 = 5 ou mais)
+    else return null;                                   // placar correto: não é binário
     // a fonte entrega a odd como TEXTO ("1.93") - sem converter, od.toFixed quebra
     var n = typeof v === "number" ? v : parseFloat(String(v).replace(",", "."));
     return isFinite(n) && n > 1.01 ? n : null;
