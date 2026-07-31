@@ -1771,13 +1771,19 @@
   }
  },
  "ambas": {
-  "saldo": -10.3,
-  "ciclos": 777,
-  "greens": 531,
+  "saldo": -9.3,
+  "ciclos": 778,
+  "greens": 532,
   "redsCiclo": 78,
   "aborts": 0,
   "descartes": 168,
   "historico": [
+   {
+    "quando": "2026-07-31T15:26:29.213Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Montevideo x La Plata @2.05 (tiro 1) · gatilho: odd 2.02"
+   },
    {
     "quando": "2026-07-31T14:53:01.340Z",
     "resultado": "GREEN",
@@ -3202,42 +3208,13 @@
    }
   ],
   "consumidas": {
-   "euro": 1785509581146
+   "euro": 1785509581146,
+   "super": 1785511589106
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:22",
-     "jogo": "Montevideo x La Plata",
-     "odd": 2.05
-    },
-    {
-     "h": "16:25",
-     "jogo": "Belo Horizonte x Asuncion",
-     "odd": 2.02
-    },
-    {
-     "h": "16:28",
-     "jogo": "Rio de Janeiro x Quito",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "odd 2.02",
-   "alvo": {
-    "h": "16:22",
-    "jogo": "Montevideo x La Plata",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785510926711
-   },
-   "iniciadoEm": 1785510926711
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785509581146,
-   "super": 1785507020437,
+   "super": 1785511589106,
    "premier": 1785446633933,
    "copa": 1785507659042
   },
@@ -3257,13 +3234,13 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 17.2
+   "2026-07-31": 18.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.02",
-   "n": 13,
-   "start": 2
+   "tipo": "time",
+   "chave": "Equador",
+   "n": 14,
+   "start": 3
   },
   "_obs": {}
  }
