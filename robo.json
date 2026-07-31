@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -162.9,
-  "ciclos": 755,
-  "greens": 463,
+  "saldo": -160.1,
+  "ciclos": 756,
+  "greens": 464,
   "redsCiclo": 127,
   "aborts": 0,
   "descartes": 165,
   "historico": [
+   {
+    "quando": "2026-07-31T17:20:28.611Z",
+    "resultado": "GREEN",
+    "unidades": 2.8,
+    "detalhe": "euro · Turquia x Eslovênia @2.9 (tiro 2) · gatilho: seq RGGRG"
+   },
    {
     "quando": "2026-07-31T16:36:20.909Z",
     "resultado": "RED_CICLO",
@@ -1751,51 +1757,14 @@
    }
   ],
   "consumidas": {
-   "copa": 1785515780716
+   "copa": 1785515780716,
+   "euro": 1785518428505
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "18:14",
-     "jogo": "Albânia x França",
-     "odd": 2.4
-    },
-    {
-     "h": "18:17",
-     "jogo": "Turquia x Eslovênia",
-     "odd": 2.9
-    },
-    {
-     "h": "18:20",
-     "jogo": "Croácia x Inglaterra",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "seq RGGRG",
-   "alvo": {
-    "h": "18:17",
-    "jogo": "Turquia x Eslovênia",
-    "odd": 2.9,
-    "unidades": 2,
-    "desde": 1785518426808
-   },
-   "iniciadoEm": 1785518080916,
-   "tiros": [
-    {
-     "h": "18:14",
-     "jogo": "Albânia x França",
-     "odd": 2.4,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785515780716,
    "premier": 1785513949112,
-   "euro": 1785514468611,
+   "euro": 1785518428505,
    "super": 1785499987742
   },
   "dias": {
@@ -1815,7 +1784,7 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": -47.7
+   "2026-07-31": -44.9
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -3290,7 +3259,37 @@
    "super": 1785515550005,
    "copa": 1785515829216
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:32",
+     "jogo": "Áustria x França",
+     "odd": 1.9
+    },
+    {
+     "h": "18:35",
+     "jogo": "Inglaterra x Alemanha",
+     "odd": 1.83
+    },
+    {
+     "h": "18:38",
+     "jogo": "Países Baixos x Ucrânia",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "odd 1.83",
+   "alvo": {
+    "h": "18:32",
+    "jogo": "Áustria x França",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1785518669808
+   },
+   "iniciadoEm": 1785518669808
+  },
   "cooldown": {
    "euro": 1785513806107,
    "super": 1785515550005,
@@ -3316,9 +3315,9 @@
    "2026-07-31": 14.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Equador",
-   "n": 16,
+   "tipo": "odd",
+   "chave": "1.83",
+   "n": 13,
    "start": 3
   },
   "_obs": {}
