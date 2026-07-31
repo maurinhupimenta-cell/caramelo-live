@@ -1481,7 +1481,37 @@
    "premier": 1785464268693,
    "copa": 1785466406593
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:04",
+     "jogo": "Itaquera x Agua Branca",
+     "odd": 2.2
+    },
+    {
+     "h": "04:07",
+     "jogo": "Belo Horizonte x Avellaneda",
+     "odd": 2.15
+    },
+    {
+     "h": "04:10",
+     "jogo": "Lima x Medellin",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "time Belo Horizonte",
+   "alvo": {
+    "h": "04:04",
+    "jogo": "Itaquera x Agua Branca",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785466767398
+   },
+   "iniciadoEm": 1785466767398
+  },
   "cooldown": {
    "copa": 1785466406593,
    "premier": 1785464268693,
@@ -1507,19 +1537,15 @@
    "2026-07-30": -25.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.2",
-   "n": 8,
+   "tipo": "time",
+   "chave": "Belo Horizonte",
+   "n": 9,
    "start": 1
   },
   "_obs": {
    "premier": {
     "desde": 1785462268692,
     "gatilho": "odd 2.2"
-   },
-   "super": {
-    "desde": 1785466526594,
-    "gatilho": "time Belo Horizonte"
    }
   }
  },
