@@ -226,13 +226,19 @@
   }
  },
  "o25": {
-  "saldo": -113.9,
-  "ciclos": 710,
-  "greens": 440,
+  "saldo": -112.5,
+  "ciclos": 711,
+  "greens": 441,
   "redsCiclo": 115,
   "aborts": 0,
   "descartes": 155,
   "historico": [
+   {
+    "quando": "2026-07-31T03:17:30.694Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "euro · República Tcheca x Romênia @2.4 (tiro 1) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-07-31T03:12:04.988Z",
     "resultado": "GREEN",
@@ -1485,43 +1491,14 @@
   "consumidas": {
    "premier": 1785464268693,
    "copa": 1785466406593,
-   "super": 1785467524797
+   "super": 1785467524797,
+   "euro": 1785467850287
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:11",
-     "jogo": "República Tcheca x Romênia",
-     "odd": 2.4
-    },
-    {
-     "h": "04:14",
-     "jogo": "Escócia x Dinamarca",
-     "odd": 2.35
-    },
-    {
-     "h": "04:17",
-     "jogo": "Áustria x Eslováquia",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-1)",
-   "alvo": {
-    "h": "04:11",
-    "jogo": "República Tcheca x Romênia",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1785467546496
-   },
-   "iniciadoEm": 1785467546496
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785466406593,
    "premier": 1785464268693,
-   "euro": 1785463452741,
+   "euro": 1785467850287,
    "super": 1785467524797
   },
   "dias": {
@@ -1541,12 +1518,12 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": 1.3
+   "2026-07-31": 2.7
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 14,
+   "tipo": "time",
+   "chave": "Áustria",
+   "n": 8,
    "start": 1
   },
   "_obs": {
