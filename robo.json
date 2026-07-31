@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -110.7,
-  "ciclos": 712,
-  "greens": 442,
+  "saldo": -109.3,
+  "ciclos": 713,
+  "greens": 443,
   "redsCiclo": 115,
   "aborts": 0,
   "descartes": 155,
   "historico": [
+   {
+    "quando": "2026-07-31T04:17:26.491Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "copa · África do Sul x Áustria @2.4 (tiro 1) · gatilho: time Marrocos"
+   },
    {
     "quando": "2026-07-31T03:53:39.292Z",
     "resultado": "GREEN",
@@ -1494,41 +1500,12 @@
   ],
   "consumidas": {
    "euro": 1785467850287,
-   "premier": 1785470019093
+   "premier": 1785470019093,
+   "copa": 1785471446296
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:13",
-     "jogo": "África do Sul x Áustria",
-     "odd": 2.4
-    },
-    {
-     "h": "05:16",
-     "jogo": "Marrocos x Tunísia",
-     "odd": 2.6
-    },
-    {
-     "h": "05:19",
-     "jogo": "Iraque x Uruguai",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "time Marrocos",
-   "alvo": {
-    "h": "05:13",
-    "jogo": "África do Sul x Áustria",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1785470908790
-   },
-   "iniciadoEm": 1785470908790
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785466406593,
+   "copa": 1785471446296,
    "premier": 1785470019093,
    "euro": 1785467850287,
    "super": 1785467524797
@@ -1550,12 +1527,12 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": 4.5
+   "2026-07-31": 5.9
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Marrocos",
-   "n": 8,
+   "chave": "Belo Horizonte",
+   "n": 10,
    "start": 3
   },
   "_obs": {
