@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -145.4,
-  "ciclos": 736,
-  "greens": 452,
+  "saldo": -144,
+  "ciclos": 737,
+  "greens": 453,
   "redsCiclo": 122,
   "aborts": 0,
   "descartes": 162,
   "historico": [
+   {
+    "quando": "2026-07-31T10:14:59.241Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "premier · City x Aston @2.2 (tiro 2) · gatilho: seq RRGG"
+   },
    {
     "quando": "2026-07-31T10:06:44.748Z",
     "resultado": "GREEN_OBS",
@@ -1638,50 +1644,13 @@
   ],
   "consumidas": {
    "euro": 1785491746550,
-   "copa": 1785491867039
+   "copa": 1785491867039,
+   "premier": 1785492899044
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "11:09",
-     "jogo": "Palace x Watford",
-     "odd": 2.25
-    },
-    {
-     "h": "11:12",
-     "jogo": "City x Aston",
-     "odd": 2.2
-    },
-    {
-     "h": "11:15",
-     "jogo": "Norwich x Brighton",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "seq RRGG",
-   "alvo": {
-    "h": "11:12",
-    "jogo": "City x Aston",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1785492713148
-   },
-   "iniciadoEm": 1785492407049,
-   "tiros": [
-    {
-     "h": "11:09",
-     "jogo": "Palace x Watford",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785491867039,
-   "premier": 1785488803342,
+   "premier": 1785492899044,
    "euro": 1785491746550,
    "super": 1785486287736
   },
@@ -1702,7 +1671,7 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": -30.2
+   "2026-07-31": -28.8
   },
   "_gatilhoAtual": {
    "tipo": "seq",
