@@ -1785,8 +1785,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "20:52",
@@ -1806,13 +1806,21 @@
    ],
    "gatilho": "seq RGRG",
    "alvo": {
-    "h": "20:52",
-    "jogo": "Jordânia x Marrocos",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785527489108
+    "h": "20:55",
+    "jogo": "Portugal x RD Congo",
+    "odd": 2.07,
+    "unidades": 2,
+    "desde": 1785527786810
    },
-   "iniciadoEm": 1785527489108
+   "iniciadoEm": 1785527489108,
+   "tiros": [
+    {
+     "h": "20:52",
+     "jogo": "Jordânia x Marrocos",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785520825711,
@@ -1840,10 +1848,10 @@
    "2026-07-31": -50.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRG",
-   "n": 16,
-   "start": 1
+   "tipo": "time",
+   "chave": "Canadá",
+   "n": 21,
+   "start": 3
   },
   "_obs": {}
  },
@@ -3351,7 +3359,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1785524186206,
    "super": 1785524906408,
    "euro": 1785525627015
   },
