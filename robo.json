@@ -3159,11 +3159,40 @@
    }
   ],
   "consumidas": {
-   "super": 1785502508138,
    "copa": 1785502844742,
    "euro": 1785505618638
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:01",
+     "jogo": "Penarol x Agua Branca",
+     "odd": 2
+    },
+    {
+     "h": "15:04",
+     "jogo": "Guayaquil x Belo Horizonte",
+     "odd": 1.83
+    },
+    {
+     "h": "15:07",
+     "jogo": "Sao Paulo x Medellin",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "odd 1.83",
+   "alvo": {
+    "h": "15:01",
+    "jogo": "Penarol x Agua Branca",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1785506120044
+   },
+   "iniciadoEm": 1785506120044
+  },
   "cooldown": {
    "euro": 1785505618638,
    "super": 1785502508138,
@@ -3190,9 +3219,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "1.93",
-   "n": 18,
-   "start": 1
+   "chave": "1.83",
+   "n": 12,
+   "start": 3
   },
   "_obs": {}
  }
