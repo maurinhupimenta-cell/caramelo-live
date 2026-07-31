@@ -1795,12 +1795,18 @@
  },
  "ambas": {
   "saldo": -13.2,
-  "ciclos": 782,
+  "ciclos": 783,
   "greens": 535,
   "redsCiclo": 79,
   "aborts": 0,
-  "descartes": 168,
+  "descartes": 169,
   "historico": [
+   {
+    "quando": "2026-07-31T17:37:27.909Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Equador) — liga REARMADA"
+   },
    {
     "quando": "2026-07-31T16:37:09.408Z",
     "resultado": "RED_CICLO",
@@ -3254,13 +3260,11 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {
-   "copa": 1785515829216
-  },
+  "consumidas": {},
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "18:32",
@@ -3280,13 +3284,21 @@
    ],
    "gatilho": "odd 1.83",
    "alvo": {
-    "h": "18:32",
-    "jogo": "Áustria x França",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1785518669808
+    "h": "18:35",
+    "jogo": "Inglaterra x Alemanha",
+    "odd": 1.83,
+    "unidades": 2,
+    "desde": 1785519386114
    },
-   "iniciadoEm": 1785518669808
+   "iniciadoEm": 1785518669808,
+   "tiros": [
+    {
+     "h": "18:32",
+     "jogo": "Áustria x França",
+     "odd": 1.9,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785513806107,
@@ -3318,6 +3330,11 @@
    "n": 13,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1785519447909,
+    "gatilho": "time Equador"
+   }
+  }
  }
 }
