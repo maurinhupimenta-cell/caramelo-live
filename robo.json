@@ -1671,7 +1671,37 @@
    "premier": 1785497423450,
    "super": 1785499987742
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:17",
+     "jogo": "Polônia x Países Baixos",
+     "odd": 2.25
+    },
+    {
+     "h": "13:20",
+     "jogo": "Romênia x Espanha",
+     "odd": 2.02
+    },
+    {
+     "h": "13:23",
+     "jogo": "Hungria x Portugal",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "seq GGRRR",
+   "alvo": {
+    "h": "13:17",
+    "jogo": "Polônia x Países Baixos",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785500044940
+   },
+   "iniciadoEm": 1785500044940
+  },
   "cooldown": {
    "copa": 1785496744645,
    "premier": 1785497423450,
@@ -1699,8 +1729,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGGG",
-   "n": 10,
+   "chave": "GGRRR",
+   "n": 9,
    "start": 1
   },
   "_obs": {
