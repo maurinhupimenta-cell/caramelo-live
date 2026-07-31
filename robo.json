@@ -1750,13 +1750,19 @@
   }
  },
  "ambas": {
-  "saldo": -12,
-  "ciclos": 775,
-  "greens": 529,
+  "saldo": -11,
+  "ciclos": 776,
+  "greens": 530,
   "redsCiclo": 78,
   "aborts": 0,
   "descartes": 168,
   "historico": [
+   {
+    "quando": "2026-07-31T14:20:59.147Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Costa do Marfim x Escócia @2.05 (tiro 1) · gatilho: seq RGGG"
+   },
    {
     "quando": "2026-07-31T14:10:20.546Z",
     "resultado": "GREEN",
@@ -3170,44 +3176,15 @@
   ],
   "consumidas": {
    "euro": 1785505618638,
-   "super": 1785507020437
+   "super": 1785507020437,
+   "copa": 1785507659042
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:16",
-     "jogo": "Costa do Marfim x Escócia",
-     "odd": 2.05
-    },
-    {
-     "h": "15:19",
-     "jogo": "Cabo Verde x EUA",
-     "odd": 1.93
-    },
-    {
-     "h": "15:22",
-     "jogo": "Argentina x Portugal",
-     "odd": 1.85
-    }
-   ],
-   "gatilho": "seq RGGG",
-   "alvo": {
-    "h": "15:16",
-    "jogo": "Costa do Marfim x Escócia",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785507419737
-   },
-   "iniciadoEm": 1785507419737
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785505618638,
    "super": 1785507020437,
    "premier": 1785446633933,
-   "copa": 1785502844742
+   "copa": 1785507659042
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -3225,13 +3202,13 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 15.5
+   "2026-07-31": 16.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGG",
-   "n": 21,
-   "start": 1
+   "tipo": "time",
+   "chave": "Brasil",
+   "n": 12,
+   "start": 3
   },
   "_obs": {}
  }
