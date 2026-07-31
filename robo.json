@@ -1806,13 +1806,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -10.5,
-  "ciclos": 786,
+  "saldo": -17.5,
+  "ciclos": 787,
   "greens": 538,
-  "redsCiclo": 79,
+  "redsCiclo": 80,
   "aborts": 0,
   "descartes": 169,
   "historico": [
+   {
+    "quando": "2026-07-31T18:56:26.312Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Países Baixos"
+   },
    {
     "quando": "2026-07-31T17:59:26.909Z",
     "resultado": "GREEN",
@@ -3291,58 +3297,15 @@
    }
   ],
   "consumidas": {
-   "super": 1785520766806
+   "super": 1785520766806,
+   "copa": 1785524186206
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "19:46",
-     "jogo": "Coreia do Sul x França",
-     "odd": 2.05
-    },
-    {
-     "h": "19:49",
-     "jogo": "Países Baixos x África do Sul",
-     "odd": 2.2
-    },
-    {
-     "h": "19:52",
-     "jogo": "Áustria x Japão",
-     "odd": 2
-    }
-   ],
-   "gatilho": "time Países Baixos",
-   "alvo": {
-    "h": "19:52",
-    "jogo": "Áustria x Japão",
-    "odd": 2,
-    "unidades": 4,
-    "desde": 1785524005616
-   },
-   "iniciadoEm": 1785523592306,
-   "tiros": [
-    {
-     "h": "19:46",
-     "jogo": "Coreia do Sul x França",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "19:49",
-     "jogo": "Países Baixos x África do Sul",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785519626806,
    "super": 1785520766806,
    "premier": 1785446633933,
-   "copa": 1785519990309
+   "copa": 1785524186206
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -3360,7 +3323,7 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 17
+   "2026-07-31": 10
   },
   "_gatilhoAtual": {
    "tipo": "time",
