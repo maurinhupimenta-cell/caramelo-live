@@ -1626,13 +1626,19 @@
   }
  },
  "ambas": {
-  "saldo": -20,
-  "ciclos": 758,
+  "saldo": -27,
+  "ciclos": 759,
   "greens": 514,
-  "redsCiclo": 77,
+  "redsCiclo": 78,
   "aborts": 0,
   "descartes": 167,
   "historico": [
+   {
+    "quando": "2026-07-31T07:37:47.142Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: time Romênia"
+   },
    {
     "quando": "2026-07-31T06:43:29.515Z",
     "resultado": "GREEN",
@@ -2943,55 +2949,42 @@
    }
   ],
   "consumidas": {
-   "super": 1785480209314
+   "super": 1785480209314,
+   "euro": 1785483466952
   },
   "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "08:29",
-     "jogo": "Itália x Escócia",
-     "odd": 2
+     "h": "08:43",
+     "jogo": "EUA x Escócia",
+     "odd": 2.15
     },
     {
-     "h": "08:32",
-     "jogo": "Inglaterra x Romênia",
-     "odd": 1.87
+     "h": "08:46",
+     "jogo": "Suécia x Colômbia",
+     "odd": 2.1
     },
     {
-     "h": "08:35",
-     "jogo": "Sérvia x Alemanha",
-     "odd": 2
+     "h": "08:49",
+     "jogo": "Argentina x Curação",
+     "odd": 1.95
     }
    ],
-   "gatilho": "time Romênia",
+   "gatilho": "odd 2.1",
    "alvo": {
-    "h": "08:35",
-    "jogo": "Sérvia x Alemanha",
-    "odd": 2,
-    "unidades": 4,
-    "desde": 1785483287138
+    "h": "08:43",
+    "jogo": "EUA x Escócia",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785483469342
    },
-   "iniciadoEm": 1785482426839,
-   "tiros": [
-    {
-     "h": "08:29",
-     "jogo": "Itália x Escócia",
-     "odd": 2,
-     "unidades": 1
-    },
-    {
-     "h": "08:32",
-     "jogo": "Inglaterra x Romênia",
-     "odd": 1.87,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1785483469342
   },
   "cooldown": {
-   "euro": 1785478826493,
+   "euro": 1785483466952,
    "super": 1785480209315,
    "premier": 1785446633933,
    "copa": 1785479726510
@@ -3012,13 +3005,13 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 7.5
+   "2026-07-31": 0.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Croácia",
-   "n": 13,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.1",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  }
