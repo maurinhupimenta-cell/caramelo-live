@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -147.4,
-  "ciclos": 748,
-  "greens": 460,
+  "saldo": -145.2,
+  "ciclos": 749,
+  "greens": 461,
   "redsCiclo": 124,
   "aborts": 0,
   "descartes": 164,
   "historico": [
+   {
+    "quando": "2026-07-31T14:39:05.648Z",
+    "resultado": "GREEN",
+    "unidades": 2.2,
+    "detalhe": "premier · Aston x Leeds @2.62 (tiro 2) · gatilho: odd 2.62"
+   },
    {
     "quando": "2026-07-31T14:24:44.845Z",
     "resultado": "GREEN_OBS",
@@ -1710,50 +1716,13 @@
   ],
   "consumidas": {
    "euro": 1785505204640,
-   "copa": 1785505919240
+   "copa": 1785505919240,
+   "premier": 1785508745538
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "15:33",
-     "jogo": "Islington x Liverpool",
-     "odd": 2.2
-    },
-    {
-     "h": "15:36",
-     "jogo": "Aston x Leeds",
-     "odd": 2.62
-    },
-    {
-     "h": "15:39",
-     "jogo": "Liverpool x Wolverhampton",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "odd 2.62",
-   "alvo": {
-    "h": "15:36",
-    "jogo": "Aston x Leeds",
-    "odd": 2.62,
-    "unidades": 2,
-    "desde": 1785508619040
-   },
-   "iniciadoEm": 1785507903943,
-   "tiros": [
-    {
-     "h": "15:33",
-     "jogo": "Islington x Liverpool",
-     "odd": 2.2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785505919240,
-   "premier": 1785501713540,
+   "premier": 1785508745538,
    "euro": 1785505204640,
    "super": 1785499987742
   },
@@ -1774,7 +1743,7 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": -32.2
+   "2026-07-31": -30
   },
   "_gatilhoAtual": {
    "tipo": "odd",
