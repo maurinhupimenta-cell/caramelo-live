@@ -224,13 +224,25 @@
   }
  },
  "o25": {
-  "saldo": -122,
-  "ciclos": 716,
+  "saldo": -129,
+  "ciclos": 718,
   "greens": 444,
-  "redsCiclo": 117,
+  "redsCiclo": 118,
   "aborts": 0,
-  "descartes": 155,
+  "descartes": 156,
   "historico": [
+   {
+    "quando": "2026-07-31T05:50:28.794Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: odd 2.3"
+   },
+   {
+    "quando": "2026-07-31T05:47:41.997Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho time Áustria) — liga REARMADA"
+   },
    {
     "quando": "2026-07-31T05:40:29.888Z",
     "resultado": "RED_CICLO",
@@ -1517,55 +1529,12 @@
    }
   ],
   "consumidas": {
-   "super": 1785476429693
+   "super": 1785476429693,
+   "copa": 1785477028689
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "06:40",
-     "jogo": "Jordânia x Japão",
-     "odd": 2.3
-    },
-    {
-     "h": "06:43",
-     "jogo": "Croácia x Noruega",
-     "odd": 2.25
-    },
-    {
-     "h": "06:46",
-     "jogo": "Paraguai x Uzbequistão",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "odd 2.3",
-   "alvo": {
-    "h": "06:46",
-    "jogo": "Paraguai x Uzbequistão",
-    "odd": 2.4,
-    "unidades": 4,
-    "desde": 1785476742690
-   },
-   "iniciadoEm": 1785476431687,
-   "tiros": [
-    {
-     "h": "06:40",
-     "jogo": "Jordânia x Japão",
-     "odd": 2.3,
-     "unidades": 1
-    },
-    {
-     "h": "06:43",
-     "jogo": "Croácia x Noruega",
-     "odd": 2.25,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785471446296,
+   "copa": 1785477028689,
    "premier": 1785470019093,
    "euro": 1785473252393,
    "super": 1785476429693
@@ -1587,13 +1556,13 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": -6.8
+   "2026-07-31": -13.8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.3",
-   "n": 10,
-   "start": 1
+   "n": 11,
+   "start": 3
   },
   "_obs": {
    "premier": {
