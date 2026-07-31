@@ -1794,13 +1794,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -13.2,
-  "ciclos": 783,
-  "greens": 535,
+  "saldo": -12.5,
+  "ciclos": 784,
+  "greens": 536,
   "redsCiclo": 79,
   "aborts": 0,
   "descartes": 169,
   "historico": [
+   {
+    "quando": "2026-07-31T17:40:26.911Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "euro · Inglaterra x Alemanha @1.83 (tiro 2) · gatilho: odd 1.83"
+   },
    {
     "quando": "2026-07-31T17:37:27.909Z",
     "resultado": "GREEN_OBS",
@@ -3260,48 +3266,42 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "euro": 1785519626806
+  },
   "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "18:32",
-     "jogo": "Áustria x França",
-     "odd": 1.9
+     "h": "18:40",
+     "jogo": "México x Suécia",
+     "odd": 2.15
     },
     {
-     "h": "18:35",
-     "jogo": "Inglaterra x Alemanha",
-     "odd": 1.83
+     "h": "18:43",
+     "jogo": "Equador x Turquia",
+     "odd": 1.93
     },
     {
-     "h": "18:38",
-     "jogo": "Países Baixos x Ucrânia",
-     "odd": 1.9
+     "h": "18:46",
+     "jogo": "Arábia Saudita x Japão",
+     "odd": 1.98
     }
    ],
-   "gatilho": "odd 1.83",
+   "gatilho": "seq RGGGR",
    "alvo": {
-    "h": "18:35",
-    "jogo": "Inglaterra x Alemanha",
-    "odd": 1.83,
-    "unidades": 2,
-    "desde": 1785519386114
+    "h": "18:40",
+    "jogo": "México x Suécia",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785519628415
    },
-   "iniciadoEm": 1785518669808,
-   "tiros": [
-    {
-     "h": "18:32",
-     "jogo": "Áustria x França",
-     "odd": 1.9,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1785519628415
   },
   "cooldown": {
-   "euro": 1785513806107,
+   "euro": 1785519626806,
    "super": 1785515550005,
    "premier": 1785446633933,
    "copa": 1785515829216
@@ -3322,19 +3322,14 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 14.3
+   "2026-07-31": 15
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.83",
-   "n": 13,
+   "tipo": "seq",
+   "chave": "RGGGR",
+   "n": 14,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785519447909,
-    "gatilho": "time Equador"
-   }
-  }
+  "_obs": {}
  }
 }
