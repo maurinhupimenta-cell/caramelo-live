@@ -1532,7 +1532,37 @@
    "super": 1785476429693,
    "copa": 1785477028689
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:50",
+     "jogo": "Escócia x República Tcheca",
+     "odd": 2.5
+    },
+    {
+     "h": "06:53",
+     "jogo": "Croácia x Áustria",
+     "odd": 2.25
+    },
+    {
+     "h": "06:56",
+     "jogo": "Alemanha x Albânia",
+     "odd": 2.55
+    }
+   ],
+   "gatilho": "time Áustria",
+   "alvo": {
+    "h": "06:50",
+    "jogo": "Escócia x República Tcheca",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1785477037997
+   },
+   "iniciadoEm": 1785477037997
+  },
   "cooldown": {
    "copa": 1785477028689,
    "premier": 1785470019093,
@@ -1559,10 +1589,10 @@
    "2026-07-31": -13.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.3",
-   "n": 11,
-   "start": 3
+   "tipo": "seq",
+   "chave": "GGGG",
+   "n": 9,
+   "start": 1
   },
   "_obs": {
    "premier": {
