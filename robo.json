@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -142.8,
-  "ciclos": 744,
+  "saldo": -149.8,
+  "ciclos": 745,
   "greens": 458,
-  "redsCiclo": 123,
+  "redsCiclo": 124,
   "aborts": 0,
   "descartes": 163,
   "historico": [
+   {
+    "quando": "2026-07-31T12:41:53.640Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq GGGG"
+   },
    {
     "quando": "2026-07-31T12:30:24.845Z",
     "resultado": "GREEN_OBS",
@@ -1687,56 +1693,13 @@
   "consumidas": {
    "super": 1785499987742,
    "euro": 1785500386542,
-   "copa": 1785500504452
+   "copa": 1785500504452,
+   "premier": 1785501713540
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "13:33",
-     "jogo": "City x Palace",
-     "odd": 2.1
-    },
-    {
-     "h": "13:36",
-     "jogo": "Islington x West Ham",
-     "odd": 2.5
-    },
-    {
-     "h": "13:39",
-     "jogo": "Newcastle x Everton",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "seq GGGG",
-   "alvo": {
-    "h": "13:39",
-    "jogo": "Newcastle x Everton",
-    "odd": 2.02,
-    "unidades": 4,
-    "desde": 1785501529449
-   },
-   "iniciadoEm": 1785501027148,
-   "tiros": [
-    {
-     "h": "13:33",
-     "jogo": "City x Palace",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "13:36",
-     "jogo": "Islington x West Ham",
-     "odd": 2.5,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785500504452,
-   "premier": 1785497423450,
+   "premier": 1785501713540,
    "euro": 1785500386542,
    "super": 1785499987742
   },
@@ -1757,13 +1720,13 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": -27.6
+   "2026-07-31": -34.6
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.35",
    "n": 10,
-   "start": 2
+   "start": 1
   },
   "_obs": {
    "copa": {
@@ -3170,7 +3133,37 @@
   "consumidas": {
    "euro": 1785501706947
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:52",
+     "jogo": "Belo Horizonte x Guayaquil",
+     "odd": 1.9
+    },
+    {
+     "h": "13:55",
+     "jogo": "Buenos Aires x Santiago",
+     "odd": 1.85
+    },
+    {
+     "h": "13:58",
+     "jogo": "Rio de Janeiro x Penarol",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "coluna :55",
+   "alvo": {
+    "h": "13:52",
+    "jogo": "Belo Horizonte x Guayaquil",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1785501792540
+   },
+   "iniciadoEm": 1785501792540
+  },
   "cooldown": {
    "euro": 1785501706947,
    "super": 1785497288740,
@@ -3196,10 +3189,10 @@
    "2026-07-31": 11.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.93",
-   "n": 17,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":55",
+   "n": 13,
+   "start": 3
   },
   "_obs": {}
  }
