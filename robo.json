@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -129,
-  "ciclos": 718,
-  "greens": 444,
+  "saldo": -127.5,
+  "ciclos": 719,
+  "greens": 445,
   "redsCiclo": 118,
   "aborts": 0,
   "descartes": 156,
   "historico": [
+   {
+    "quando": "2026-07-31T05:53:00.191Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "euro · Escócia x República Tcheca @2.5 (tiro 1) · gatilho: time Áustria"
+   },
    {
     "quando": "2026-07-31T05:50:28.794Z",
     "resultado": "RED_CICLO",
@@ -1530,43 +1536,44 @@
   ],
   "consumidas": {
    "super": 1785476429693,
-   "copa": 1785477028689
+   "copa": 1785477028689,
+   "euro": 1785477179994
   },
   "ciclo": {
-   "liga": "euro",
+   "liga": "premier",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "06:50",
-     "jogo": "Escócia x República Tcheca",
-     "odd": 2.5
+     "h": "06:54",
+     "jogo": "City x Norwich",
+     "odd": 2.1
     },
     {
-     "h": "06:53",
-     "jogo": "Croácia x Áustria",
-     "odd": 2.25
+     "h": "06:57",
+     "jogo": "Aston x Newcastle",
+     "odd": 2.2
     },
     {
-     "h": "06:56",
-     "jogo": "Alemanha x Albânia",
-     "odd": 2.55
+     "h": "07:00",
+     "jogo": "Southampton x Norwich",
+     "odd": 2.3
     }
    ],
-   "gatilho": "time Áustria",
+   "gatilho": "seq GGGG",
    "alvo": {
-    "h": "06:50",
-    "jogo": "Escócia x República Tcheca",
-    "odd": 2.5,
+    "h": "06:54",
+    "jogo": "City x Norwich",
+    "odd": 2.1,
     "unidades": 1,
-    "desde": 1785477037997
+    "desde": 1785477182191
    },
-   "iniciadoEm": 1785477037997
+   "iniciadoEm": 1785477182191
   },
   "cooldown": {
    "copa": 1785477028689,
    "premier": 1785470019093,
-   "euro": 1785473252393,
+   "euro": 1785477179994,
    "super": 1785476429693
   },
   "dias": {
@@ -1586,7 +1593,7 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": -13.8
+   "2026-07-31": -12.3
   },
   "_gatilhoAtual": {
    "tipo": "seq",
