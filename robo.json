@@ -1493,8 +1493,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "04:48",
@@ -1514,13 +1514,21 @@
    ],
    "gatilho": "time Aston",
    "alvo": {
-    "h": "04:48",
-    "jogo": "Leicester x Chelsea",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785469154099
+    "h": "04:51",
+    "jogo": "Watford x Aston",
+    "odd": 2.4,
+    "unidades": 2,
+    "desde": 1785469888991
    },
-   "iniciadoEm": 1785469154099
+   "iniciadoEm": 1785469154099,
+   "tiros": [
+    {
+     "h": "04:48",
+     "jogo": "Leicester x Chelsea",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785466406593,
@@ -1551,7 +1559,7 @@
    "tipo": "time",
    "chave": "Aston",
    "n": 10,
-   "start": 1
+   "start": 2
   },
   "_obs": {
    "premier": {
