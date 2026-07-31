@@ -1716,9 +1716,9 @@
    "2026-07-31": -27.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Canadá",
-   "n": 12,
+   "tipo": "seq",
+   "chave": "RRRRR",
+   "n": 11,
    "start": 1
   },
   "_obs": {
@@ -3106,11 +3106,40 @@
    }
   ],
   "consumidas": {
-   "super": 1785493128436,
    "copa": 1785493684936,
    "euro": 1785495906339
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:22",
+     "jogo": "Guayaquil x La Boca",
+     "odd": 1.98
+    },
+    {
+     "h": "12:25",
+     "jogo": "Belo Horizonte x Penarol",
+     "odd": 2.07
+    },
+    {
+     "h": "12:28",
+     "jogo": "Quito x Sao Paulo",
+     "odd": 1.87
+    }
+   ],
+   "gatilho": "odd 2.07",
+   "alvo": {
+    "h": "12:22",
+    "jogo": "Guayaquil x La Boca",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785496729348
+   },
+   "iniciadoEm": 1785496729348
+  },
   "cooldown": {
    "euro": 1785495906339,
    "super": 1785493128436,
@@ -3136,10 +3165,10 @@
    "2026-07-31": 8.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGG",
-   "n": 13,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.07",
+   "n": 9,
+   "start": 2
   },
   "_obs": {}
  }
