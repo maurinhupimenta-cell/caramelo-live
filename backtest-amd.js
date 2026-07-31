@@ -111,11 +111,18 @@
       var bt;
       try { bt = AMD_MOTOR.backtest(jogos, mkt, 150); } catch (e) { return; }
       if (!bt || bt.erro) return;
+      ultimo = bt; ultimaLiga = liga;
       desenha(bt, liga);
     });
   }
 
+  // ASSUME o renderBacktest do dashboard (ele continua sendo chamado pelos timers
+  // existentes, mas quem escreve a tabela agora e este backtest). Sem editar app.js.
+  var ultimo = null, ultimaLiga = null;
   function inicia() {
+    try {
+      window.renderBacktest = function () { if (ultimo) desenha(ultimo, ultimaLiga); };
+    } catch (e) {}
     roda();
     setInterval(roda, INTERVALO);
     ["#markets", ".tabrow", "#cligaMenu", "#qtd"].forEach(function (sel) {
