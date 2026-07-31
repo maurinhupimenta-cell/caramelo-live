@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -108,
-  "ciclos": 714,
+  "saldo": -115,
+  "ciclos": 715,
   "greens": 444,
-  "redsCiclo": 115,
+  "redsCiclo": 116,
   "aborts": 0,
   "descartes": 155,
   "historico": [
+   {
+    "quando": "2026-07-31T04:47:32.688Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: seq RRGG"
+   },
    {
     "quando": "2026-07-31T04:28:32.491Z",
     "resultado": "GREEN",
@@ -1507,57 +1513,14 @@
   "consumidas": {
    "premier": 1785470019093,
    "copa": 1785471446296,
-   "super": 1785472112293
+   "super": 1785472112293,
+   "euro": 1785473252393
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "05:35",
-     "jogo": "Espanha x Geórgia",
-     "odd": 2.2
-    },
-    {
-     "h": "05:38",
-     "jogo": "Países Baixos x Hungria",
-     "odd": 2.2
-    },
-    {
-     "h": "05:41",
-     "jogo": "Eslováquia x Polônia",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "seq RRGG",
-   "alvo": {
-    "h": "05:41",
-    "jogo": "Eslováquia x Polônia",
-    "odd": 2.5,
-    "unidades": 4,
-    "desde": 1785472891197
-   },
-   "iniciadoEm": 1785472347492,
-   "tiros": [
-    {
-     "h": "05:35",
-     "jogo": "Espanha x Geórgia",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "05:38",
-     "jogo": "Países Baixos x Hungria",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785471446296,
    "premier": 1785470019093,
-   "euro": 1785467850287,
+   "euro": 1785473252393,
    "super": 1785472112293
   },
   "dias": {
@@ -1577,7 +1540,7 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": 7.2
+   "2026-07-31": 0.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
