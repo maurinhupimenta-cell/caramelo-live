@@ -1585,13 +1585,19 @@
   }
  },
  "ambas": {
-  "saldo": -22,
-  "ciclos": 757,
-  "greens": 513,
+  "saldo": -20,
+  "ciclos": 758,
+  "greens": 514,
   "redsCiclo": 77,
   "aborts": 0,
   "descartes": 167,
   "historico": [
+   {
+    "quando": "2026-07-31T06:43:29.515Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "super · Rio de Janeiro x Porto Alegre @2.25 (tiro 3) · gatilho: time Santiago"
+   },
    {
     "quando": "2026-07-31T06:35:26.712Z",
     "resultado": "GREEN",
@@ -2897,56 +2903,13 @@
   ],
   "consumidas": {
    "euro": 1785478826493,
-   "copa": 1785479726510
+   "copa": 1785479726510,
+   "super": 1785480209314
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "07:34",
-     "jogo": "Santos x Belo Horizonte",
-     "odd": 1.93
-    },
-    {
-     "h": "07:37",
-     "jogo": "Santiago x Itaquera",
-     "odd": 1.9
-    },
-    {
-     "h": "07:40",
-     "jogo": "Rio de Janeiro x Porto Alegre",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "time Santiago",
-   "alvo": {
-    "h": "07:40",
-    "jogo": "Rio de Janeiro x Porto Alegre",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1785480026714
-   },
-   "iniciadoEm": 1785479728818,
-   "tiros": [
-    {
-     "h": "07:34",
-     "jogo": "Santos x Belo Horizonte",
-     "odd": 1.93,
-     "unidades": 1
-    },
-    {
-     "h": "07:37",
-     "jogo": "Santiago x Itaquera",
-     "odd": 1.9,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785478826493,
-   "super": 1785452899830,
+   "super": 1785480209315,
    "premier": 1785446633933,
    "copa": 1785479726510
   },
@@ -2966,7 +2929,7 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 5.5
+   "2026-07-31": 7.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
