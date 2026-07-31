@@ -1607,8 +1607,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "09:57",
@@ -1628,11 +1628,11 @@
    ],
    "gatilho": "seq RRGG",
    "alvo": {
-    "h": "10:00",
-    "jogo": "Leicester x Burnley",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1785488383542
+    "h": "10:03",
+    "jogo": "Brentford x Brighton",
+    "odd": 2.1,
+    "unidades": 4,
+    "desde": 1785488562443
    },
    "iniciadoEm": 1785488022541,
    "tiros": [
@@ -1641,6 +1641,12 @@
      "jogo": "Leeds x Palace",
      "odd": 2.45,
      "unidades": 1
+    },
+    {
+     "h": "10:00",
+     "jogo": "Leicester x Burnley",
+     "odd": 2.2,
+     "unidades": 2
     }
    ]
   },
@@ -3091,7 +3097,7 @@
    "tipo": "coluna",
    "chave": ":07",
    "n": 10,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
