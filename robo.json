@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -142.7,
-  "ciclos": 738,
-  "greens": 454,
+  "saldo": -141.2,
+  "ciclos": 739,
+  "greens": 455,
   "redsCiclo": 122,
   "aborts": 0,
   "descartes": 162,
   "historico": [
+   {
+    "quando": "2026-07-31T11:19:04.842Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "copa · Japão x Costa do Marfim @2.25 (tiro 2) · gatilho: time Canadá"
+   },
    {
     "quando": "2026-07-31T11:13:46.938Z",
     "resultado": "GREEN",
@@ -1649,49 +1655,12 @@
    }
   ],
   "consumidas": {
-   "euro": 1785496426744
+   "euro": 1785496426744,
+   "copa": 1785496744645
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "12:13",
-     "jogo": "Canadá x Egito",
-     "odd": 2.25
-    },
-    {
-     "h": "12:16",
-     "jogo": "Japão x Costa do Marfim",
-     "odd": 2.25
-    },
-    {
-     "h": "12:19",
-     "jogo": "Inglaterra x RD Congo",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "time Canadá",
-   "alvo": {
-    "h": "12:16",
-    "jogo": "Japão x Costa do Marfim",
-    "odd": 2.25,
-    "unidades": 2,
-    "desde": 1785496544845
-   },
-   "iniciadoEm": 1785496428748,
-   "tiros": [
-    {
-     "h": "12:13",
-     "jogo": "Canadá x Egito",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785491867039,
+   "copa": 1785496744645,
    "premier": 1785492899044,
    "euro": 1785496426744,
    "super": 1785486287736
@@ -1713,7 +1682,7 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": -27.5
+   "2026-07-31": -26
   },
   "_gatilhoAtual": {
    "tipo": "seq",
