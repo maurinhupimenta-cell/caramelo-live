@@ -66,6 +66,7 @@
     // O "Ver todos" CONTINUA: e por ele que se chega aos jogos mais antigos.
     // O seletor entra ANTES dele, os dois convivem na mesma linha.
     if (link) {
+      link.style.display = "";                 // desfaz o ocultamento da versao anterior
       link.style.marginLeft = "10px";
       link.style.whiteSpace = "nowrap";
       head.insertBefore(cx, link);
