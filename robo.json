@@ -185,8 +185,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "03:17",
@@ -206,13 +206,21 @@
    ],
    "gatilho": "time Eslovênia",
    "alvo": {
-    "h": "03:17",
-    "jogo": "Albânia x Sérvia",
-    "odd": 6.5,
-    "unidades": 1,
-    "desde": 1785464182694
+    "h": "03:20",
+    "jogo": "Eslovênia x Croácia",
+    "odd": 5.5,
+    "unidades": 2,
+    "desde": 1785464909689
    },
-   "iniciadoEm": 1785464182694
+   "iniciadoEm": 1785464182694,
+   "tiros": [
+    {
+     "h": "03:17",
+     "jogo": "Albânia x Sérvia",
+     "odd": 6.5,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785038273206,
@@ -238,7 +246,7 @@
    "tipo": "time",
    "chave": "Eslovênia",
    "n": 8,
-   "start": 1
+   "start": 3
   },
   "_obs": {
    "euro": {
