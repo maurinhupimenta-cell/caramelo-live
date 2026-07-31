@@ -3293,7 +3293,45 @@
   "consumidas": {
    "super": 1785520766806
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "19:46",
+     "jogo": "Coreia do Sul x França",
+     "odd": 2.05
+    },
+    {
+     "h": "19:49",
+     "jogo": "Países Baixos x África do Sul",
+     "odd": 2.2
+    },
+    {
+     "h": "19:52",
+     "jogo": "Áustria x Japão",
+     "odd": 2
+    }
+   ],
+   "gatilho": "time Países Baixos",
+   "alvo": {
+    "h": "19:49",
+    "jogo": "Países Baixos x África do Sul",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1785523769411
+   },
+   "iniciadoEm": 1785523592306,
+   "tiros": [
+    {
+     "h": "19:46",
+     "jogo": "Coreia do Sul x França",
+     "odd": 2.05,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1785519626806,
    "super": 1785520766806,
@@ -3319,10 +3357,10 @@
    "2026-07-31": 17
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.25",
-   "n": 8,
-   "start": 3
+   "tipo": "time",
+   "chave": "Países Baixos",
+   "n": 13,
+   "start": 1
   },
   "_obs": {}
  }
