@@ -1441,8 +1441,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "02:56",
@@ -1462,13 +1462,21 @@
    ],
    "gatilho": "placar acima de 1-0 (2-1)",
    "alvo": {
-    "h": "02:56",
-    "jogo": "França x Escócia",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785462763797
+    "h": "02:59",
+    "jogo": "Áustria x Polônia",
+    "odd": 2.5,
+    "unidades": 2,
+    "desde": 1785463168436
    },
-   "iniciadoEm": 1785462763797
+   "iniciadoEm": 1785462763797,
+   "tiros": [
+    {
+     "h": "02:56",
+     "jogo": "França x Escócia",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785449400132,
@@ -1496,8 +1504,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 11,
+   "chave": "1-0 / 0-1",
+   "n": 12,
    "start": 1
   },
   "_obs": {
