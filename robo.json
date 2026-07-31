@@ -1509,7 +1509,37 @@
    "copa": 1785471446296,
    "super": 1785472112293
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:35",
+     "jogo": "Espanha x Geórgia",
+     "odd": 2.2
+    },
+    {
+     "h": "05:38",
+     "jogo": "Países Baixos x Hungria",
+     "odd": 2.2
+    },
+    {
+     "h": "05:41",
+     "jogo": "Eslováquia x Polônia",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "seq RRGG",
+   "alvo": {
+    "h": "05:35",
+    "jogo": "Espanha x Geórgia",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785472347492
+   },
+   "iniciadoEm": 1785472347492
+  },
   "cooldown": {
    "copa": 1785471446296,
    "premier": 1785470019093,
@@ -1536,9 +1566,9 @@
    "2026-07-31": 7.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Guayaquil",
-   "n": 11,
+   "tipo": "seq",
+   "chave": "RRGG",
+   "n": 8,
    "start": 1
   },
   "_obs": {
