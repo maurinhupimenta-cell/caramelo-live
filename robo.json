@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -141.2,
-  "ciclos": 739,
+  "saldo": -148.2,
+  "ciclos": 740,
   "greens": 455,
-  "redsCiclo": 122,
+  "redsCiclo": 123,
   "aborts": 0,
   "descartes": 162,
   "historico": [
+   {
+    "quando": "2026-07-31T11:30:23.642Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq RRRRR"
+   },
    {
     "quando": "2026-07-31T11:19:04.842Z",
     "resultado": "GREEN",
@@ -1656,56 +1662,13 @@
   ],
   "consumidas": {
    "euro": 1785496426744,
-   "copa": 1785496744645
+   "copa": 1785496744645,
+   "premier": 1785497423450
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "12:21",
-     "jogo": "West Ham x Islington",
-     "odd": 2.45
-    },
-    {
-     "h": "12:24",
-     "jogo": "Southampton x Leeds",
-     "odd": 2.7
-    },
-    {
-     "h": "12:27",
-     "jogo": "Liverpool x Chelsea",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "seq RRRRR",
-   "alvo": {
-    "h": "12:27",
-    "jogo": "Liverpool x Chelsea",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1785497331247
-   },
-   "iniciadoEm": 1785496746747,
-   "tiros": [
-    {
-     "h": "12:21",
-     "jogo": "West Ham x Islington",
-     "odd": 2.45,
-     "unidades": 1
-    },
-    {
-     "h": "12:24",
-     "jogo": "Southampton x Leeds",
-     "odd": 2.7,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785496744645,
-   "premier": 1785492899044,
+   "premier": 1785497423450,
    "euro": 1785496426744,
    "super": 1785486287736
   },
@@ -1726,7 +1689,7 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": -26
+   "2026-07-31": -33
   },
   "_gatilhoAtual": {
    "tipo": "seq",
