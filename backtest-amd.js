@@ -185,7 +185,9 @@
     if (!tb) return;
     var lista = (bt && bt.ultimos10indicados) || [];
     if (!lista.length) {
-      tb.innerHTML = '<tr><td colspan="7">sem indicações nas últimas 6 horas do relógio do jogo</td></tr>';
+      // passa pelo avisa(), que destranca a escrita - sem isso a proteção bloqueia
+      // a mensagem e a tabela fica presa no "calculando" (era exatamente o bug do Under 1.5)
+      avisa("nenhuma indicação neste mercado nas últimas 6 horas — score ≥ 30 com EV positivo não ocorreu");
       return;
     }
     var linhas = lista.slice().reverse().map(function (u) {
