@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -144,
-  "ciclos": 750,
+  "saldo": -151,
+  "ciclos": 751,
   "greens": 462,
-  "redsCiclo": 124,
+  "redsCiclo": 125,
   "aborts": 0,
   "descartes": 164,
   "historico": [
+   {
+    "quando": "2026-07-31T15:04:15.949Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: seq GRRRG"
+   },
    {
     "quando": "2026-07-31T14:47:01.440Z",
     "resultado": "GREEN",
@@ -1722,55 +1728,12 @@
   ],
   "consumidas": {
    "premier": 1785508745538,
-   "euro": 1785509221247
+   "euro": 1785509221247,
+   "copa": 1785510255839
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "15:55",
-     "jogo": "Qatar x Áustria",
-     "odd": 2.25
-    },
-    {
-     "h": "15:58",
-     "jogo": "Colômbia x Turquia",
-     "odd": 2.25
-    },
-    {
-     "h": "16:01",
-     "jogo": "Argentina x Cabo Verde",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "seq GRRRG",
-   "alvo": {
-    "h": "16:01",
-    "jogo": "Argentina x Cabo Verde",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1785510058940
-   },
-   "iniciadoEm": 1785509698741,
-   "tiros": [
-    {
-     "h": "15:55",
-     "jogo": "Qatar x Áustria",
-     "odd": 2.25,
-     "unidades": 1
-    },
-    {
-     "h": "15:58",
-     "jogo": "Colômbia x Turquia",
-     "odd": 2.25,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785505919240,
+   "copa": 1785510255839,
    "premier": 1785508745538,
    "euro": 1785509221247,
    "super": 1785499987742
@@ -1792,13 +1755,13 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": -28.8
+   "2026-07-31": -35.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Canadá",
    "n": 18,
-   "start": 3
+   "start": 2
   },
   "_obs": {
    "copa": {
