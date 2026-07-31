@@ -1801,7 +1801,37 @@
   "consumidas": {
    "copa": 1785537806885
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "00:04",
+     "jogo": "Sao Paulo x Santos",
+     "odd": 2.2
+    },
+    {
+     "h": "00:07",
+     "jogo": "Lima x Montevideo",
+     "odd": 2.05
+    },
+    {
+     "h": "00:10",
+     "jogo": "Itaquera x La Boca",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "odd 2.05",
+   "alvo": {
+    "h": "00:04",
+    "jogo": "Sao Paulo x Santos",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785538711067
+   },
+   "iniciadoEm": 1785538711067
+  },
   "cooldown": {
    "copa": 1785537806885,
    "premier": 1785527120807,
@@ -1828,9 +1858,9 @@
    "2026-07-31": -46
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Canadá",
-   "n": 25,
+   "tipo": "odd",
+   "chave": "2.05",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
@@ -3442,7 +3472,7 @@
    "tipo": "odd",
    "chave": "1.93",
    "n": 28,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
