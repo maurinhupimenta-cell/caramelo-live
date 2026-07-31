@@ -1642,8 +1642,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "11:09",
@@ -1663,13 +1663,21 @@
    ],
    "gatilho": "seq RRGG",
    "alvo": {
-    "h": "11:09",
-    "jogo": "Palace x Watford",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785492407049
+    "h": "11:12",
+    "jogo": "City x Aston",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1785492713148
    },
-   "iniciadoEm": 1785492407049
+   "iniciadoEm": 1785492407049,
+   "tiros": [
+    {
+     "h": "11:09",
+     "jogo": "Palace x Watford",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785491867039,
@@ -3130,7 +3138,7 @@
    "tipo": "odd",
    "chave": "1.83",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
