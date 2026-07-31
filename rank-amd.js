@@ -122,15 +122,22 @@
   }
 
   // o dashboard pode reescrever o bloco: devolve o conteúdo do motor
+  // COM FREIO: no maximo 1 restauracao a cada 2s e 20 seguidas. Sem isso, se o
+  // outro lado redesenhar a cada mutacao, os dois disputam sem fim e a aba TRAVA.
+  var ultimaRest = 0, seguidas = 0, desistiu = false;
   function vigia(el) {
     if (observando || !el) return;
     observando = true;
-    new MutationObserver(function () {
-      if (escrevendo || !meuHtml) return;
-      if (el.innerHTML !== meuHtml) {
-        escrevendo = true; el.innerHTML = meuHtml; escrevendo = false;
-      }
-    }).observe(el, { childList: true, subtree: true });
+    var obs = new MutationObserver(function () {
+      if (escrevendo || !meuHtml || desistiu) return;
+      if (el.innerHTML === meuHtml) { seguidas = 0; return; }
+      var agora = Date.now();
+      if (agora - ultimaRest < 2000) return;
+      if (++seguidas > 20) { desistiu = true; obs.disconnect(); return; }
+      ultimaRest = agora;
+      escrevendo = true; el.innerHTML = meuHtml; escrevendo = false;
+    });
+    obs.observe(el, { childList: true });
   }
 
   function roda() {

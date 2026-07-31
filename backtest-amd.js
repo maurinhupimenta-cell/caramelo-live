@@ -33,20 +33,30 @@
     vigiaTabela(tb);
   }
 
-  // O dashboard reescreve a tabela por chamada interna (nao passa pelo window),
-  // entao um observador devolve o conteudo do motor assim que ela e sobreposta.
+  // O dashboard reescreve a tabela por chamada interna (nao passa pelo window).
+  // O observador devolve o conteudo do motor - mas COM FREIO: no maximo uma
+  // restauracao a cada 2s e no maximo 20 seguidas. Sem isso, se o outro lado
+  // redesenhar a cada mutacao, os dois entram em disputa infinita e a aba TRAVA.
+  var ultimaRestauracao = 0, restauracoesSeguidas = 0, desistiu = false;
   function vigiaTabela(tb) {
     if (observando || !tb) return;
     observando = true;
     var obs = new MutationObserver(function () {
-      if (escrevendo || !meuHtml) return;
-      if (tb.innerHTML !== meuHtml) {
-        escrevendo = true;
-        tb.innerHTML = meuHtml;
-        escrevendo = false;
+      if (escrevendo || !meuHtml || desistiu) return;
+      if (tb.innerHTML === meuHtml) { restauracoesSeguidas = 0; return; }
+      var agora = Date.now();
+      if (agora - ultimaRestauracao < 2000) return;      // freio de tempo
+      if (++restauracoesSeguidas > 20) {                  // freio de repeticao
+        desistiu = true;
+        obs.disconnect();
+        return;
       }
+      ultimaRestauracao = agora;
+      escrevendo = true;
+      tb.innerHTML = meuHtml;
+      escrevendo = false;
     });
-    obs.observe(tb, { childList: true, subtree: true });
+    obs.observe(tb, { childList: true });                 // sem subtree: menos disparos
   }
 
   function adapta(p) {
