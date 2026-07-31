@@ -17,6 +17,23 @@
   var API = "https://amd-coletor.onrender.com/api/grade?liga=";
   var INTERVALO = 90000;
   var cache = {}, buscando = {};
+  var meuHtml = null, escrevendo = false, observando = false;
+
+  // O dashboard reescreve a tabela por chamada interna (nao passa pelo window),
+  // entao um observador devolve o conteudo do motor assim que ela e sobreposta.
+  function vigiaTabela(tb) {
+    if (observando || !tb) return;
+    observando = true;
+    var obs = new MutationObserver(function () {
+      if (escrevendo || !meuHtml) return;
+      if (tb.innerHTML !== meuHtml) {
+        escrevendo = true;
+        tb.innerHTML = meuHtml;
+        escrevendo = false;
+      }
+    });
+    obs.observe(tb, { childList: true, subtree: true });
+  }
 
   function adapta(p) {
     var a = p.gols_a, b = p.gols_b;
@@ -92,7 +109,11 @@
         "<td>" + esc(liga) + "</td>" +
         "</tr>";
     }).join("");
+    escrevendo = true;
     tb.innerHTML = linhas;
+    meuHtml = tb.innerHTML;
+    escrevendo = false;
+    vigiaTabela(tb);
 
     // resumo honesto, se existir algum lugar para ele (não cria elemento novo)
     var alvo = document.getElementById("btResumo");
