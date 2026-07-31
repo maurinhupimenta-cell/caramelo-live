@@ -1439,7 +1439,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:56",
+     "jogo": "França x Escócia",
+     "odd": 2.1
+    },
+    {
+     "h": "02:59",
+     "jogo": "Áustria x Polônia",
+     "odd": 2.5
+    },
+    {
+     "h": "03:02",
+     "jogo": "Alemanha x Romênia",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-1)",
+   "alvo": {
+    "h": "02:56",
+    "jogo": "França x Escócia",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785462763797
+   },
+   "iniciadoEm": 1785462763797
+  },
   "cooldown": {
    "copa": 1785449400132,
    "premier": 1785442317229,
@@ -1465,9 +1495,9 @@
    "2026-07-30": -29.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGRG",
-   "n": 10,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 11,
    "start": 1
   },
   "_obs": {
