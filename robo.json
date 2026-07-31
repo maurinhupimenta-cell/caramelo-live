@@ -3415,8 +3415,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "23:56",
@@ -3436,13 +3436,21 @@
    ],
    "gatilho": "odd 1.93",
    "alvo": {
-    "h": "23:56",
-    "jogo": "Ucrânia x Países Baixos",
-    "odd": 1.87,
-    "unidades": 1,
-    "desde": 1785538227559
+    "h": "00:02",
+    "jogo": "Áustria x Alemanha",
+    "odd": 1.93,
+    "unidades": 2,
+    "desde": 1785538827664
    },
-   "iniciadoEm": 1785538227559
+   "iniciadoEm": 1785538227559,
+   "tiros": [
+    {
+     "h": "23:56",
+     "jogo": "Ucrânia x Países Baixos",
+     "odd": 1.87,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785530487220,
@@ -3470,9 +3478,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "1.93",
-   "n": 28,
-   "start": 1
+   "chave": "1.8",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  }
