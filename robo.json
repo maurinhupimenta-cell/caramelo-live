@@ -227,12 +227,18 @@
  },
  "o25": {
   "saldo": -115.2,
-  "ciclos": 708,
+  "ciclos": 709,
   "greens": 439,
   "redsCiclo": 115,
   "aborts": 0,
-  "descartes": 154,
+  "descartes": 155,
   "historico": [
+   {
+    "quando": "2026-07-31T02:58:28.689Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho time Belo Horizonte) — liga REARMADA"
+   },
    {
     "quando": "2026-07-31T02:53:27.092Z",
     "resultado": "GREEN",
@@ -1510,6 +1516,10 @@
    "premier": {
     "desde": 1785462268692,
     "gatilho": "odd 2.2"
+   },
+   "super": {
+    "desde": 1785466526594,
+    "gatilho": "time Belo Horizonte"
    }
   }
  },
