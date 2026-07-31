@@ -1586,13 +1586,19 @@
   }
  },
  "ambas": {
-  "saldo": -23,
-  "ciclos": 756,
-  "greens": 512,
+  "saldo": -22,
+  "ciclos": 757,
+  "greens": 513,
   "redsCiclo": 77,
   "aborts": 0,
   "descartes": 167,
   "historico": [
+   {
+    "quando": "2026-07-31T06:35:26.712Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Bélgica x RD Congo @2 (tiro 2) · gatilho: time RD Congo"
+   },
    {
     "quando": "2026-07-31T06:20:26.689Z",
     "resultado": "GREEN",
@@ -2891,43 +2897,44 @@
    }
   ],
   "consumidas": {
-   "euro": 1785478826493
+   "euro": 1785478826493,
+   "copa": 1785479726510
   },
   "ciclo": {
-   "liga": "copa",
+   "liga": "super",
    "degrau": 1,
    "apostado": 1,
    "plano": [
     {
-     "h": "07:28",
-     "jogo": "Colômbia x Costa do Marfim",
+     "h": "07:34",
+     "jogo": "Santos x Belo Horizonte",
+     "odd": 1.93
+    },
+    {
+     "h": "07:37",
+     "jogo": "Santiago x Itaquera",
      "odd": 1.9
     },
     {
-     "h": "07:31",
-     "jogo": "Bélgica x RD Congo",
-     "odd": 2
-    },
-    {
-     "h": "07:34",
-     "jogo": "Paraguai x Marrocos",
-     "odd": 2.05
+     "h": "07:40",
+     "jogo": "Rio de Janeiro x Porto Alegre",
+     "odd": 2.25
     }
    ],
-   "gatilho": "time RD Congo",
+   "gatilho": "time Santiago",
    "alvo": {
-    "h": "07:31",
-    "jogo": "Bélgica x RD Congo",
-    "odd": 2,
+    "h": "07:37",
+    "jogo": "Santiago x Itaquera",
+    "odd": 1.9,
     "unidades": 2,
-    "desde": 1785479612113
+    "desde": 1785479911310
    },
-   "iniciadoEm": 1785479367818,
+   "iniciadoEm": 1785479728818,
    "tiros": [
     {
-     "h": "07:28",
-     "jogo": "Colômbia x Costa do Marfim",
-     "odd": 1.9,
+     "h": "07:34",
+     "jogo": "Santos x Belo Horizonte",
+     "odd": 1.93,
      "unidades": 1
     }
    ]
@@ -2936,7 +2943,7 @@
    "euro": 1785478826493,
    "super": 1785452899830,
    "premier": 1785446633933,
-   "copa": 1785467307697
+   "copa": 1785479726510
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -2954,7 +2961,7 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 4.5
+   "2026-07-31": 5.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
