@@ -1658,7 +1658,45 @@
    "euro": 1785496426744,
    "copa": 1785496744645
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "12:21",
+     "jogo": "West Ham x Islington",
+     "odd": 2.45
+    },
+    {
+     "h": "12:24",
+     "jogo": "Southampton x Leeds",
+     "odd": 2.7
+    },
+    {
+     "h": "12:27",
+     "jogo": "Liverpool x Chelsea",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "seq RRRRR",
+   "alvo": {
+    "h": "12:24",
+    "jogo": "Southampton x Leeds",
+    "odd": 2.7,
+    "unidades": 2,
+    "desde": 1785497058350
+   },
+   "iniciadoEm": 1785496746747,
+   "tiros": [
+    {
+     "h": "12:21",
+     "jogo": "West Ham x Islington",
+     "odd": 2.45,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1785496744645,
    "premier": 1785492899044,
@@ -3137,7 +3175,7 @@
    "tipo": "odd",
    "chave": "2.07",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
