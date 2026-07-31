@@ -1825,13 +1825,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -13,
-  "ciclos": 792,
-  "greens": 542,
+  "saldo": -12,
+  "ciclos": 793,
+  "greens": 543,
   "redsCiclo": 80,
   "aborts": 0,
   "descartes": 170,
   "historico": [
+   {
+    "quando": "2026-07-31T20:35:41.207Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Watford x Aston @2.05 (tiro 1) · gatilho: odd 2.02"
+   },
    {
     "quando": "2026-07-31T20:26:27.305Z",
     "resultado": "GREEN",
@@ -3347,13 +3353,14 @@
   ],
   "consumidas": {
    "copa": 1785528509908,
-   "super": 1785529587106
+   "super": 1785529587106,
+   "premier": 1785530141011
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1785525627015,
    "super": 1785529587106,
-   "premier": 1785446633933,
+   "premier": 1785530141011,
    "copa": 1785528509908
   },
   "dias": {
@@ -3372,12 +3379,12 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 14.5
+   "2026-07-31": 15.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRRG",
-   "n": 10,
+   "tipo": "odd",
+   "chave": "1.93",
+   "n": 27,
    "start": 1
   },
   "_obs": {}
