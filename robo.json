@@ -1482,8 +1482,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "04:04",
@@ -1503,13 +1503,21 @@
    ],
    "gatilho": "time Belo Horizonte",
    "alvo": {
-    "h": "04:04",
-    "jogo": "Itaquera x Agua Branca",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785466767398
+    "h": "04:07",
+    "jogo": "Belo Horizonte x Avellaneda",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1785467492398
    },
-   "iniciadoEm": 1785466767398
+   "iniciadoEm": 1785466767398,
+   "tiros": [
+    {
+     "h": "04:04",
+     "jogo": "Itaquera x Agua Branca",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785466406593,
@@ -1536,9 +1544,9 @@
    "2026-07-30": -25.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Belo Horizonte",
-   "n": 9,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 13,
    "start": 1
   },
   "_obs": {
