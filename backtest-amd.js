@@ -21,12 +21,16 @@
   var chaveAtual = null;   // liga|mercado desenhado por ultimo
 
   // mercados que a fonte NAO precifica: sem odd nao ha EV, e sem EV nao ha indicacao.
-  var SEM_ODD = { ge5: "5+ gols" };
+  // 5+ TEM odd sim: a fonte chama de "odd_total_gols_extatos_5", mas o nome engana -
+  // ela e 5 OU MAIS (implicita 9,5% bate com a frequencia real de 9,5% em 859 jogos,
+  // enquanto "exatamente 5" da 5,5%). Por isso o 5+ volta ao backtest.
+  var SEM_ODD = {};
 
   // MERCADOS PROPRIOS DO BACKTEST (independentes da grade), no lugar do "Ver todos"
   var MERCADOS_BT = [
     { id: "o25", nome: "Over 2.5" },
     { id: "o35", nome: "Over 3.5" },
+    { id: "ge5", nome: "5+ Gols" },
     { id: "ambas", nome: "Ambas Sim" },
     { id: "ambasN", nome: "Ambas Não" },
     { id: "u05", nome: "Under 0.5" },
@@ -137,6 +141,7 @@
       odds: {
         o25: o["odd_over_2.5"] || null, o35: o["odd_over_3.5"] || null,
         ambs: o["odd_ambas_sim"] || null, ambn: o["odd_ambas_nao"] || null,
+        ge5: o["odd_total_gols_extatos_5"] || null,   // "extatos_5" = 5 ou mais (verificado)
         u05: o["odd_under_0.5"] || null, u15: o["odd_under_1.5"] || null,
         u25: o["odd_under_2.5"] || null
       }
