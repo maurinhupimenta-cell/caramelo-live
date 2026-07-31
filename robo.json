@@ -1549,13 +1549,19 @@
   }
  },
  "ambas": {
-  "saldo": -27.5,
-  "ciclos": 752,
-  "greens": 508,
+  "saldo": -26.3,
+  "ciclos": 753,
+  "greens": 509,
   "redsCiclo": 77,
   "aborts": 0,
   "descartes": 167,
   "historico": [
+   {
+    "quando": "2026-07-31T03:08:27.892Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Suécia x Suíça @2.15 (tiro 1) · gatilho: placar goleada (3+)"
+   },
    {
     "quando": "2026-07-31T02:04:03.036Z",
     "resultado": "GREEN",
@@ -2830,14 +2836,14 @@
    }
   ],
   "consumidas": {
-   "copa": 1785463442836
+   "copa": 1785467307697
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1785439551897,
    "super": 1785452899830,
    "premier": 1785446633933,
-   "copa": 1785463442836
+   "copa": 1785467307697
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -2854,12 +2860,13 @@
    "2026-07-27": 6,
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
-   "2026-07-30": 24
+   "2026-07-30": 24,
+   "2026-07-31": 1.2
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "goleada (3+)",
-   "n": 14,
+   "n": 19,
    "start": 1
   },
   "_obs": {}
