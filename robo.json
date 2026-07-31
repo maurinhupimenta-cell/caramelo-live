@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -158.3,
-  "ciclos": 759,
+  "saldo": -165.3,
+  "ciclos": 760,
   "greens": 465,
-  "redsCiclo": 127,
+  "redsCiclo": 128,
   "aborts": 0,
   "descartes": 167,
   "historico": [
+   {
+    "quando": "2026-07-31T19:45:20.910Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq RGGGG"
+   },
    {
     "quando": "2026-07-31T19:34:29.817Z",
     "resultado": "GREEN_OBS",
@@ -1774,55 +1780,13 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "20:36",
-     "jogo": "West Ham x United",
-     "odd": 2.45
-    },
-    {
-     "h": "20:39",
-     "jogo": "Tottenham x Leicester",
-     "odd": 2.5
-    },
-    {
-     "h": "20:42",
-     "jogo": "West Ham x Wolverhampton",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "seq RGGGG",
-   "alvo": {
-    "h": "20:42",
-    "jogo": "West Ham x Wolverhampton",
-    "odd": 2.3,
-    "unidades": 4,
-    "desde": 1785527005707
-   },
-   "iniciadoEm": 1785526472013,
-   "tiros": [
-    {
-     "h": "20:36",
-     "jogo": "West Ham x United",
-     "odd": 2.45,
-     "unidades": 1
-    },
-    {
-     "h": "20:39",
-     "jogo": "Tottenham x Leicester",
-     "odd": 2.5,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1785527120807
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785520825711,
-   "premier": 1785513949112,
+   "premier": 1785527120807,
    "euro": 1785518428505,
    "super": 1785499987742
   },
@@ -1843,7 +1807,7 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": -43.1
+   "2026-07-31": -50.1
   },
   "_gatilhoAtual": {
    "tipo": "seq",
