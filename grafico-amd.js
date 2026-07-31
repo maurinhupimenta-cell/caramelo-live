@@ -155,6 +155,18 @@
     svg.innerHTML = g.join("");
   }
 
+  // Corta a serie para exatamente a Qtd. Jogos escolhida e soma os gols DESSES jogos.
+  // Escolheu 20 -> aparecem 20 jogos e a soma de gols dos 20. Escolheu 80 -> 80.
+  function cortaEConta(serie, horas, jogos, qtd) {
+    var n = Math.min(qtd, serie.length);
+    var s = serie.slice(-n);
+    var h = (horas || []).slice(-n);
+    var gols = 0;
+    var usados = jogos.slice(-n);
+    for (var i = 0; i < usados.length; i++) gols += (usados[i].total || 0);
+    return { serie: s, horas: h, jogos: n, gols: gols };
+  }
+
   // ---- ciclo ---------------------------------------------------------------
   function roda() {
     if (typeof AMD_MOTOR === "undefined") return;
@@ -166,11 +178,15 @@
         if (!ac || !ac.faixas) return;
         var f = ac.faixas[faixaAtual()] || ac.faixas.dia;
         if (!f) return;
-        desenha(f.serie, f.horas, "acumulado desde 00h · média de " + ac.janela + " · " + ac.jogos + " jogos");
+        var c1 = cortaEConta(f.serie, f.horas, jogos, jan);
+        desenha(c1.serie, c1.horas,
+          "acumulado 00h · " + c1.jogos + " jogos · " + c1.gols + " gols no período");
       } else {
         var j = AMD_MOTOR.chartJanela(jogos, mkt, jan);
         if (!j) return;
-        desenha(j.serie, j.horas, "janela móvel · MM" + j.janelaMM);
+        var c2 = cortaEConta(j.serie, j.horas, jogos, jan);
+        desenha(c2.serie, c2.horas,
+          "janela móvel · " + c2.jogos + " jogos · " + c2.gols + " gols no período");
       }
     });
   }
