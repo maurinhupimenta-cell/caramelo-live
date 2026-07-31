@@ -1626,13 +1626,19 @@
   }
  },
  "ambas": {
-  "saldo": -27,
-  "ciclos": 759,
-  "greens": 514,
+  "saldo": -25.8,
+  "ciclos": 760,
+  "greens": 515,
   "redsCiclo": 78,
   "aborts": 0,
   "descartes": 167,
   "historico": [
+   {
+    "quando": "2026-07-31T07:46:06.738Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · EUA x Escócia @2.15 (tiro 1) · gatilho: odd 2.1"
+   },
    {
     "quando": "2026-07-31T07:37:47.142Z",
     "resultado": "RED_CICLO",
@@ -2949,44 +2955,45 @@
    }
   ],
   "consumidas": {
-   "euro": 1785483466952
+   "euro": 1785483466952,
+   "copa": 1785483966539
   },
   "ciclo": {
-   "liga": "copa",
+   "liga": "super",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "08:43",
-     "jogo": "EUA x Escócia",
-     "odd": 2.15
+     "h": "08:52",
+     "jogo": "Montevideo x La Boca",
+     "odd": 1.98
     },
     {
-     "h": "08:46",
-     "jogo": "Suécia x Colômbia",
-     "odd": 2.1
+     "h": "08:55",
+     "jogo": "Santiago x Santos",
+     "odd": 1.93
     },
     {
-     "h": "08:49",
-     "jogo": "Argentina x Curação",
-     "odd": 1.95
+     "h": "08:58",
+     "jogo": "Itaquera x Avellaneda",
+     "odd": 2.02
     }
    ],
-   "gatilho": "odd 2.1",
+   "gatilho": "time Santiago",
    "alvo": {
-    "h": "08:43",
-    "jogo": "EUA x Escócia",
-    "odd": 2.15,
+    "h": "08:52",
+    "jogo": "Montevideo x La Boca",
+    "odd": 1.98,
     "unidades": 1,
-    "desde": 1785483469342
+    "desde": 1785483968543
    },
-   "iniciadoEm": 1785483469342
+   "iniciadoEm": 1785483968543
   },
   "cooldown": {
    "euro": 1785483466952,
    "super": 1785480209315,
    "premier": 1785446633933,
-   "copa": 1785479726510
+   "copa": 1785483966539
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -3004,13 +3011,13 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 0.5
+   "2026-07-31": 1.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.1",
-   "n": 11,
-   "start": 1
+   "tipo": "time",
+   "chave": "Santiago",
+   "n": 15,
+   "start": 2
   },
   "_obs": {}
  }
