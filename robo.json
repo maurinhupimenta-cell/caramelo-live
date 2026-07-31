@@ -1750,8 +1750,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:25",
@@ -1771,13 +1771,21 @@
    ],
    "gatilho": "seq RRGGG",
    "alvo": {
-    "h": "17:25",
-    "jogo": "EUA x Irã",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1785515190508
+    "h": "17:28",
+    "jogo": "Coreia do Sul x Senegal",
+    "odd": 2.7,
+    "unidades": 2,
+    "desde": 1785515402105
    },
-   "iniciadoEm": 1785515190508
+   "iniciadoEm": 1785515190508,
+   "tiros": [
+    {
+     "h": "17:25",
+     "jogo": "EUA x Irã",
+     "odd": 2.5,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785510255839,
@@ -3262,11 +3270,40 @@
    }
   ],
   "consumidas": {
-   "super": 1785511589106,
    "copa": 1785511946816,
    "euro": 1785513806107
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:28",
+     "jogo": "Penarol x Buenos Aires",
+     "odd": 1.95
+    },
+    {
+     "h": "17:31",
+     "jogo": "Medellin x Rio de Janeiro",
+     "odd": 2.02
+    },
+    {
+     "h": "17:34",
+     "jogo": "Montevideo x Quito",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "odd 2.02",
+   "alvo": {
+    "h": "17:28",
+    "jogo": "Penarol x Buenos Aires",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1785515190711
+   },
+   "iniciadoEm": 1785515190711
+  },
   "cooldown": {
    "euro": 1785513806107,
    "super": 1785511589106,
@@ -3293,9 +3330,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "1.93",
-   "n": 22,
-   "start": 3
+   "chave": "2.02",
+   "n": 15,
+   "start": 1
   },
   "_obs": {}
  }
