@@ -1693,7 +1693,45 @@
   "consumidas": {
    "premier": 1785501713540
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "14:11",
+     "jogo": "Croácia x França",
+     "odd": 2.07
+    },
+    {
+     "h": "14:14",
+     "jogo": "Escócia x Suíça",
+     "odd": 2.15
+    },
+    {
+     "h": "14:17",
+     "jogo": "Polônia x Espanha",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "coluna :11",
+   "alvo": {
+    "h": "14:14",
+    "jogo": "Escócia x Suíça",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1785505202138
+   },
+   "iniciadoEm": 1785505199649,
+   "tiros": [
+    {
+     "h": "14:11",
+     "jogo": "Croácia x França",
+     "odd": 2.07,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1785500504452,
    "premier": 1785501713540,
