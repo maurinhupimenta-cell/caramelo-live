@@ -1786,10 +1786,10 @@
    "2026-07-31": -35.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGGR",
-   "n": 9,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":11",
+   "n": 17,
+   "start": 3
   },
   "_obs": {
    "copa": {
@@ -3245,7 +3245,45 @@
    "super": 1785511589106,
    "copa": 1785511946816
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "16:56",
+     "jogo": "Inglaterra x Geórgia",
+     "odd": 2.05
+    },
+    {
+     "h": "16:59",
+     "jogo": "Turquia x Escócia",
+     "odd": 2.05
+    },
+    {
+     "h": "17:02",
+     "jogo": "Geórgia x Inglaterra",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "coluna :59",
+   "alvo": {
+    "h": "16:59",
+    "jogo": "Turquia x Escócia",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1785513569405
+   },
+   "iniciadoEm": 1785513206410,
+   "tiros": [
+    {
+     "h": "16:56",
+     "jogo": "Inglaterra x Geórgia",
+     "odd": 2.05,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1785509581146,
    "super": 1785511589106,
@@ -3271,9 +3309,9 @@
    "2026-07-31": 19.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGG",
-   "n": 23,
+   "tipo": "coluna",
+   "chave": ":59",
+   "n": 16,
    "start": 1
   },
   "_obs": {}
