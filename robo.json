@@ -3160,8 +3160,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "13:35",
@@ -3181,13 +3181,21 @@
    ],
    "gatilho": "odd 1.85",
    "alvo": {
-    "h": "13:35",
-    "jogo": "República Tcheca x Alemanha",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785500787144
+    "h": "13:38",
+    "jogo": "Escócia x Países Baixos",
+    "odd": 1.85,
+    "unidades": 2,
+    "desde": 1785501484542
    },
-   "iniciadoEm": 1785500787144
+   "iniciadoEm": 1785500787144,
+   "tiros": [
+    {
+     "h": "13:35",
+     "jogo": "República Tcheca x Alemanha",
+     "odd": 2.05,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785495906339,
@@ -3217,7 +3225,7 @@
    "tipo": "odd",
    "chave": "1.93",
    "n": 17,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
