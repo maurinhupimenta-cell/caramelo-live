@@ -1687,13 +1687,19 @@
   }
  },
  "ambas": {
-  "saldo": -20.7,
-  "ciclos": 766,
-  "greens": 520,
+  "saldo": -19.6,
+  "ciclos": 767,
+  "greens": 521,
   "redsCiclo": 78,
   "aborts": 0,
   "descartes": 168,
   "historico": [
+   {
+    "quando": "2026-07-31T10:28:05.044Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · México x África do Sul @2.1 (tiro 1) · gatilho: coluna :28"
+   },
    {
     "quando": "2026-07-31T10:18:48.540Z",
     "resultado": "GREEN",
@@ -3053,44 +3059,15 @@
   ],
   "consumidas": {
    "euro": 1785491966937,
-   "super": 1785493128436
+   "super": 1785493128436,
+   "copa": 1785493684936
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "11:25",
-     "jogo": "México x África do Sul",
-     "odd": 2.1
-    },
-    {
-     "h": "11:28",
-     "jogo": "Bósnia e Herzegovina x Brasil",
-     "odd": 1.9
-    },
-    {
-     "h": "11:31",
-     "jogo": "Curação x Egito",
-     "odd": 1.83
-    }
-   ],
-   "gatilho": "coluna :28",
-   "alvo": {
-    "h": "11:25",
-    "jogo": "México x África do Sul",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785493525046
-   },
-   "iniciadoEm": 1785493525046
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785491966937,
    "super": 1785493128436,
    "premier": 1785446633933,
-   "copa": 1785483966539
+   "copa": 1785493684936
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -3108,7 +3085,7 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 6.8
+   "2026-07-31": 7.9
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
