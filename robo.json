@@ -1515,8 +1515,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "06:31",
@@ -1536,11 +1536,11 @@
    ],
    "gatilho": "time Belo Horizonte",
    "alvo": {
-    "h": "06:34",
-    "jogo": "Itaquera x Belo Horizonte",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1785476130195
+    "h": "06:37",
+    "jogo": "Bogota x Lima",
+    "odd": 2.4,
+    "unidades": 4,
+    "desde": 1785476217089
    },
    "iniciadoEm": 1785475767995,
    "tiros": [
@@ -1549,6 +1549,12 @@
      "jogo": "Rio de Janeiro x Medellin",
      "odd": 2.35,
      "unidades": 1
+    },
+    {
+     "h": "06:34",
+     "jogo": "Itaquera x Belo Horizonte",
+     "odd": 2.15,
+     "unidades": 2
     }
    ]
   },
@@ -1578,10 +1584,10 @@
    "2026-07-31": 0.2
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "1-0 / 0-1",
-   "n": 23,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.3",
+   "n": 10,
+   "start": 2
   },
   "_obs": {
    "premier": {
