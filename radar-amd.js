@@ -22,8 +22,10 @@
   var MERCADOS = [
     { id: "o25", nome: "Over 2.5" },
     { id: "o35", nome: "Over 3.5" },
-    { id: "ambas", nome: "Ambas Marcam" }
+    { id: "ambas", nome: "Ambas Marcam" },
+    { id: "ge5", nome: "5+ Gols" }
   ];
+  var MIN_LINHAS = 5;   // a caixa nunca fica quase vazia
 
   // estado da histerese por liga|mercado (o sinal acende uma vez, não fica piscando)
   var estado = {};
@@ -70,14 +72,21 @@
   }
 
   // ---- desenho: mesmas classes do dashboard --------------------------------
-  var ICONE = { minima: "↘", subida: "↗", ltb: "⚡", pull: "↩" };
+  var ICONE = { minima: "↘", subida: "↗", ltb: "⚡", pull: "↩", vigia: "·" };
   var TITULO = {
     minima: "MÍNIMA — mercado no fundo",
     subida: "SUBINDO — saiu do fundo",
     ltb: "ROMPEU LTB — virada de ciclo",
-    pull: "PULLBACK — recuo e retomada"
+    pull: "PULLBACK — recuo e retomada",
+    vigia: "sem sinal — vigiando"
   };
-  var ORDEM = { ltb: 0, subida: 1, minima: 2, pull: 3 };
+  var ORDEM = { ltb: 0, subida: 1, minima: 2, pull: 3, vigia: 9 };
+
+  function fitaDe(jogos, mkt) {
+    return jogos.slice(-6).map(function (g) {
+      return { p: AMD_MOTOR.pays(g, mkt) ? 1 : 0, m: (g.horario || "").split(":")[1] || "" };
+    });
+  }
 
   function fitaHtml(fita) {
     if (!fita || !fita.length) return "";
@@ -115,7 +124,7 @@
     var pendentes = LIGAS.map(function (L) {
       return buscaLiga(L.id).then(function (jogos) {
         cache[L.id] = jogos;
-        var achados = [];
+        var achados = [], vigiando = [];
         for (var i = 0; i < MERCADOS.length; i++) {
           var M = MERCADOS[i];
           var chave = L.id + "|" + M.id;
@@ -123,6 +132,14 @@
           try { r = AMD_MOTOR.radar(jogos, M.id, { estado: estado[chave] }); }
           catch (e) { continue; }
           estado[chave] = r.estado;
+          // guarda o estado de TODOS (mesmo sem sinal) para completar a caixa
+          var rel = r.base ? Math.round(r.cur / r.base * 100) : null;
+          vigiando.push({
+            tipo: "vigia", ligaNome: L.nome, mktNome: M.nome,
+            pagando: r.cur, base: r.base, rel: rel,
+            distancia: rel == null ? 999 : Math.abs(rel - 100),
+            fita: fitaDe(jogos, M.id)
+          });
           // mostra o que está ACESO agora (não só o instante em que nasceu)
           var acesos = r.ativos || {};
           Object.keys(acesos).forEach(function (tipo) {
@@ -131,18 +148,26 @@
               tipo: tipo, ligaNome: L.nome, mktNome: M.nome,
               pagando: r.cur, base: r.base,
               rel: r.base ? Math.round(r.cur / r.base * 100) : null,
-              fita: (jogos.slice(-6).map(function (g) {
-                return { p: AMD_MOTOR.pays(g, M.id) ? 1 : 0, m: (g.horario || "").split(":")[1] || "" };
-              }))
+              fita: fitaDe(jogos, M.id)
             });
           });
         }
-        return achados;
+        return { achados: achados, vigiando: vigiando };
       });
     });
     Promise.all(pendentes).then(function (partes) {
-      var todos = [];
-      partes.forEach(function (p) { todos = todos.concat(p); });
+      var todos = [], vig = [];
+      partes.forEach(function (p) { todos = todos.concat(p.achados); vig = vig.concat(p.vigiando); });
+      // completa a caixa com quem esta MAIS PERTO de virar sinal (sem inventar alerta)
+      if (todos.length < MIN_LINHAS) {
+        var jaTem = {};
+        todos.forEach(function (s) { jaTem[s.ligaNome + "|" + s.mktNome] = 1; });
+        vig.sort(function (a, b) { return a.rel - b.rel; });   // mais frio primeiro
+        for (var i = 0; i < vig.length && todos.length < MIN_LINHAS; i++) {
+          if (jaTem[vig[i].ligaNome + "|" + vig[i].mktNome]) continue;
+          todos.push(vig[i]);
+        }
+      }
       ultimosSinais = todos;
       desenha(todos);
     });
