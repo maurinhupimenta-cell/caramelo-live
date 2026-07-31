@@ -1600,8 +1600,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "09:40",
@@ -1621,13 +1621,21 @@
    ],
    "gatilho": "time Canadá",
    "alvo": {
-    "h": "09:40",
-    "jogo": "Alemanha x Japão",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1785486886945
+    "h": "09:43",
+    "jogo": "Qatar x Canadá",
+    "odd": 2.4,
+    "unidades": 2,
+    "desde": 1785487386546
    },
-   "iniciadoEm": 1785486886945
+   "iniciadoEm": 1785486886945,
+   "tiros": [
+    {
+     "h": "09:40",
+     "jogo": "Alemanha x Japão",
+     "odd": 2.3,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785482885437,
@@ -1655,8 +1663,8 @@
    "2026-07-31": -28.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRG",
+   "tipo": "time",
+   "chave": "Canadá",
    "n": 9,
    "start": 1
   },
@@ -3012,7 +3020,37 @@
    "copa": 1785483966539,
    "super": 1785484668445
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:47",
+     "jogo": "República Tcheca x Hungria",
+     "odd": 2.2
+    },
+    {
+     "h": "09:50",
+     "jogo": "Romênia x Áustria",
+     "odd": 1.93
+    },
+    {
+     "h": "09:53",
+     "jogo": "Espanha x Ucrânia",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "odd 1.93",
+   "alvo": {
+    "h": "09:47",
+    "jogo": "República Tcheca x Hungria",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785487089045
+   },
+   "iniciadoEm": 1785487089045
+  },
   "cooldown": {
    "euro": 1785483466952,
    "super": 1785484668445,
@@ -3038,16 +3076,11 @@
    "2026-07-31": 2.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Santiago",
-   "n": 16,
+   "tipo": "odd",
+   "chave": "1.93",
+   "n": 10,
    "start": 2
   },
-  "_obs": {
-   "euro": {
-    "desde": 1785487087342,
-    "gatilho": "odd 1.93"
-   }
-  }
+  "_obs": {}
  }
 }
