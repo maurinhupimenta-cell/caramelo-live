@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -131.8,
-  "ciclos": 724,
-  "greens": 447,
+  "saldo": -130.7,
+  "ciclos": 725,
+  "greens": 448,
   "redsCiclo": 119,
   "aborts": 0,
   "descartes": 158,
   "historico": [
+   {
+    "quando": "2026-07-31T07:22:45.144Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Países Baixos x Escócia @2.07 (tiro 1) · gatilho: seq GRGR"
+   },
    {
     "quando": "2026-07-31T07:18:32.541Z",
     "resultado": "RED_CICLO",
@@ -1566,43 +1572,14 @@
   ],
   "consumidas": {
    "super": 1785481648028,
-   "premier": 1785482312342
+   "premier": 1785482312342,
+   "euro": 1785482564947
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "08:20",
-     "jogo": "Países Baixos x Escócia",
-     "odd": 2.07
-    },
-    {
-     "h": "08:23",
-     "jogo": "Bélgica x Albânia",
-     "odd": 2.5
-    },
-    {
-     "h": "08:26",
-     "jogo": "Sérvia x Inglaterra",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "seq GRGR",
-   "alvo": {
-    "h": "08:20",
-    "jogo": "Países Baixos x Escócia",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1785482315744
-   },
-   "iniciadoEm": 1785482315744
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785477028689,
    "premier": 1785482312342,
-   "euro": 1785477179994,
+   "euro": 1785482564947,
    "super": 1785481648028
   },
   "dias": {
@@ -1622,7 +1599,7 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": -16.6
+   "2026-07-31": -15.5
   },
   "_gatilhoAtual": {
    "tipo": "odd",
