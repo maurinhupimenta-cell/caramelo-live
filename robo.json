@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -109.3,
-  "ciclos": 713,
-  "greens": 443,
+  "saldo": -108,
+  "ciclos": 714,
+  "greens": 444,
   "redsCiclo": 115,
   "aborts": 0,
   "descartes": 155,
   "historico": [
+   {
+    "quando": "2026-07-31T04:28:32.491Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "super · La Boca x Lima @2.25 (tiro 1) · gatilho: time Belo Horizonte"
+   },
    {
     "quando": "2026-07-31T04:17:26.491Z",
     "resultado": "GREEN",
@@ -1500,44 +1506,15 @@
   ],
   "consumidas": {
    "premier": 1785470019093,
-   "copa": 1785471446296
+   "copa": 1785471446296,
+   "super": 1785472112293
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:25",
-     "jogo": "La Boca x Lima",
-     "odd": 2.25
-    },
-    {
-     "h": "05:28",
-     "jogo": "Belo Horizonte x Santiago",
-     "odd": 1.98
-    },
-    {
-     "h": "05:31",
-     "jogo": "Penarol x Medellin",
-     "odd": 2.55
-    }
-   ],
-   "gatilho": "time Belo Horizonte",
-   "alvo": {
-    "h": "05:25",
-    "jogo": "La Boca x Lima",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785471448890
-   },
-   "iniciadoEm": 1785471448890
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785471446296,
    "premier": 1785470019093,
    "euro": 1785467850287,
-   "super": 1785467524797
+   "super": 1785472112293
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -1556,13 +1533,13 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": 5.9
+   "2026-07-31": 7.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Belo Horizonte",
-   "n": 10,
-   "start": 3
+   "chave": "Guayaquil",
+   "n": 11,
+   "start": 1
   },
   "_obs": {
    "premier": {
