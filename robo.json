@@ -1691,8 +1691,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "13:33",
@@ -1712,13 +1712,21 @@
    ],
    "gatilho": "seq GGGG",
    "alvo": {
-    "h": "13:33",
-    "jogo": "City x Palace",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785501027148
+    "h": "13:36",
+    "jogo": "Islington x West Ham",
+    "odd": 2.5,
+    "unidades": 2,
+    "desde": 1785501398042
    },
-   "iniciadoEm": 1785501027148
+   "iniciadoEm": 1785501027148,
+   "tiros": [
+    {
+     "h": "13:33",
+     "jogo": "City x Palace",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785500504452,
@@ -1746,10 +1754,10 @@
    "2026-07-31": -27.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGG",
-   "n": 12,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.35",
+   "n": 10,
+   "start": 3
   },
   "_obs": {
    "copa": {
@@ -3207,9 +3215,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "1.85",
-   "n": 9,
-   "start": 2
+   "chave": "1.93",
+   "n": 17,
+   "start": 3
   },
   "_obs": {}
  }
