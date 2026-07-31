@@ -56,51 +56,51 @@
     return buscando[liga];
   }
 
-  // ---- lê a seleção atual direto da tela (sem depender do código deles) ----
-  function textoAtivo(container, padrao) {
-    var el = document.getElementById(container);
-    if (!el) return padrao;
-    var ativo = el.querySelector(".on,.ativo,.active,[aria-selected=true],.sel");
-    return ativo ? (ativo.textContent || "").trim() : padrao;
+  // ---- lê a seleção atual direto da tela ----------------------------------
+  // O dashboard marca o item ativo com a classe "active" (e aria-pressed="true").
+  //   #qtd      -> 20/40/60/80/120/240/480  = PERÍODO da média (Qtd. Jogos)
+  //   .tabrow   -> copa/euro/super/premier
+  //   #markets  -> Over 2.5 / Over 3.5 / 5+ Gols / Ambas Marcam
+  //   #grafmodo -> Janela móvel / Acumulado 00h
+  //   #acumBar  -> 3h/6h/12h/18h/24h/desde 00h
+  function ativoEm(sel) {
+    var raiz = document.querySelector(sel);
+    if (!raiz) return null;
+    var el = raiz.querySelector(".active,[aria-pressed=true],.on");
+    return el ? (el.textContent || "").trim() : null;
+  }
+  function janelaAtual() {
+    var t = ativoEm("#qtd");
+    var n = t ? parseInt(t.replace(/\D/g, ""), 10) : NaN;
+    return (isFinite(n) && n >= 5) ? n : 20;
   }
   function ligaAtual() {
-    var t = textoAtivo("ligaBtn", "") || textoAtivo("ligas", "");
-    var m = { copa: "copa", euro: "euro", super: "super", premier: "premier" };
-    var chave = (t || "").toLowerCase();
-    for (var k in m) if (chave.indexOf(k) >= 0) return k;
-    var url = (location.hash || "").toLowerCase();
-    for (var k2 in m) if (url.indexOf(k2) >= 0) return k2;
+    var t = (ativoEm(".tabrow") || ativoEm("#cligaMenu") || "").toLowerCase();
+    var nomes = ["copa", "euro", "super", "premier"];
+    for (var i = 0; i < nomes.length; i++) if (t.indexOf(nomes[i]) >= 0) return nomes[i];
     return "copa";
   }
   function mercadoAtual() {
-    var t = (textoAtivo("cmktBtn", "") || textoAtivo("mktBtn", "") || "").toLowerCase();
+    var t = (ativoEm("#markets") || "").toLowerCase();
     if (t.indexOf("3.5") >= 0) return "o35";
-    if (t.indexOf("5+") >= 0 || t.indexOf("5 +") >= 0) return "ge5";
+    if (t.indexOf("5+") >= 0) return "ge5";
     if (t.indexOf("ambas") >= 0) return "ambas";
+    if (t.indexOf("1.5") >= 0) return "o15";
+    if (t.indexOf("0.5") >= 0) return "o05";
     return "o25";
   }
   function modoAcumulado() {
-    var el = document.getElementById("grafmodo");
-    if (!el) return false;
-    var ativo = el.querySelector(".on,.ativo,.active,[aria-selected=true],.sel");
-    return ativo ? /acumulado|00h/i.test(ativo.textContent || "") : false;
+    var t = ativoEm("#grafmodo") || "";
+    return /acumulado|00h/i.test(t);
   }
   function faixaAtual() {
-    var el = document.getElementById("acumBar");
-    if (!el) return "dia";
-    var ativo = el.querySelector(".on,.ativo,.active,[aria-selected=true],.sel");
-    var t = ativo ? (ativo.textContent || "").trim().toLowerCase() : "";
+    var t = (ativoEm("#acumBar") || "").toLowerCase();
     if (/^3h/.test(t)) return "h3";
     if (/^6h/.test(t)) return "h6";
     if (/^12h/.test(t)) return "h12";
     if (/^18h/.test(t)) return "h18";
     if (/^24h/.test(t)) return "h24";
     return "dia";
-  }
-  function janelaAtual() {
-    var el = document.querySelector("#visual .on, #visual .ativo, #visual .active");
-    var n = el ? parseInt((el.textContent || "").replace(/\D/g, ""), 10) : NaN;
-    return isFinite(n) && n >= 5 ? n : 20;
   }
 
   // ---- desenho (estética do dashboard) ------------------------------------
@@ -179,13 +179,9 @@
     roda();
     setInterval(roda, INTERVALO);
     // redesenha quando o usuário troca modo/faixa/liga/mercado
-    ["grafmodo", "acumBar", "cmktBtn", "mktBtn", "visual"].forEach(function (id) {
-      var el = document.getElementById(id);
-      if (el) el.addEventListener("click", function () { setTimeout(roda, 250); });
-    });
-    document.addEventListener("click", function (e) {
-      var t = e.target;
-      if (t && /copa|euro|super|premier/i.test(t.textContent || "")) setTimeout(roda, 400);
+    ["#qtd", "#grafmodo", "#acumBar", "#markets", ".tabrow", "#cligaMenu"].forEach(function (sel) {
+      var el = document.querySelector(sel);
+      if (el) el.addEventListener("click", function () { setTimeout(roda, 300); });
     });
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", inicia);
