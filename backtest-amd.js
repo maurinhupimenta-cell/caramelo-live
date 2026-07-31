@@ -63,8 +63,17 @@
       });
       cx.appendChild(b);
     });
-    if (link) link.style.display = "none";      // o "Ver todos" da lugar ao seletor
-    head.appendChild(cx);
+    // O "Ver todos" CONTINUA: e por ele que se chega aos jogos mais antigos.
+    // O seletor entra ANTES dele, os dois convivem na mesma linha.
+    if (link) {
+      link.style.marginLeft = "10px";
+      link.style.whiteSpace = "nowrap";
+      head.insertBefore(cx, link);
+    } else {
+      head.appendChild(cx);
+    }
+    head.style.flexWrap = "wrap";
+    head.style.rowGap = "6px";
     if (!mktEscolhido) mktEscolhido = "o25";
     pinta();
   }
