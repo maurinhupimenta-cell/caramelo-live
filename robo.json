@@ -1794,13 +1794,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -12.5,
-  "ciclos": 784,
-  "greens": 536,
+  "saldo": -11.6,
+  "ciclos": 785,
+  "greens": 537,
   "redsCiclo": 79,
   "aborts": 0,
   "descartes": 169,
   "historico": [
+   {
+    "quando": "2026-07-31T17:46:30.505Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · Equador x Turquia @1.93 (tiro 2) · gatilho: seq RGGGR"
+   },
    {
     "quando": "2026-07-31T17:40:26.911Z",
     "resultado": "GREEN",
@@ -3267,52 +3273,15 @@
    }
   ],
   "consumidas": {
-   "euro": 1785519626806
+   "euro": 1785519626806,
+   "copa": 1785519990309
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "18:40",
-     "jogo": "México x Suécia",
-     "odd": 2.15
-    },
-    {
-     "h": "18:43",
-     "jogo": "Equador x Turquia",
-     "odd": 1.93
-    },
-    {
-     "h": "18:46",
-     "jogo": "Arábia Saudita x Japão",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "seq RGGGR",
-   "alvo": {
-    "h": "18:43",
-    "jogo": "Equador x Turquia",
-    "odd": 1.93,
-    "unidades": 2,
-    "desde": 1785519806312
-   },
-   "iniciadoEm": 1785519628415,
-   "tiros": [
-    {
-     "h": "18:40",
-     "jogo": "México x Suécia",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785519626806,
    "super": 1785515550005,
    "premier": 1785446633933,
-   "copa": 1785515829216
+   "copa": 1785519990309
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -3330,13 +3299,13 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 15
+   "2026-07-31": 15.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Equador",
-   "n": 17,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":55",
+   "n": 18,
+   "start": 3
   },
   "_obs": {}
  }
