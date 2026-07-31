@@ -226,13 +226,19 @@
   }
  },
  "o25": {
-  "saldo": -116.4,
-  "ciclos": 707,
-  "greens": 438,
+  "saldo": -115.2,
+  "ciclos": 708,
+  "greens": 439,
   "redsCiclo": 115,
   "aborts": 0,
   "descartes": 154,
   "historico": [
+   {
+    "quando": "2026-07-31T02:53:27.092Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · RD Congo x Bélgica @2.2 (tiro 1) · gatilho: odd 2.2"
+   },
    {
     "quando": "2026-07-31T02:17:49.187Z",
     "resultado": "GREEN",
@@ -1466,41 +1472,12 @@
   ],
   "consumidas": {
    "euro": 1785463452741,
-   "premier": 1785464268693
+   "premier": 1785464268693,
+   "copa": 1785466406593
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:49",
-     "jogo": "RD Congo x Bélgica",
-     "odd": 2.2
-    },
-    {
-     "h": "03:52",
-     "jogo": "África do Sul x Paraguai",
-     "odd": 2.55
-    },
-    {
-     "h": "03:55",
-     "jogo": "Argélia x Japão",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "odd 2.2",
-   "alvo": {
-    "h": "03:49",
-    "jogo": "RD Congo x Bélgica",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785466047592
-   },
-   "iniciadoEm": 1785466047592
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785449400132,
+   "copa": 1785466406593,
    "premier": 1785464268693,
    "euro": 1785463452741,
    "super": 1785440742333
@@ -1521,7 +1498,7 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -26.4
+   "2026-07-30": -25.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
