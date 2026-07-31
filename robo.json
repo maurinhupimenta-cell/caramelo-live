@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -155.9,
-  "ciclos": 754,
+  "saldo": -162.9,
+  "ciclos": 755,
   "greens": 463,
-  "redsCiclo": 126,
+  "redsCiclo": 127,
   "aborts": 0,
   "descartes": 165,
   "historico": [
+   {
+    "quando": "2026-07-31T16:36:20.909Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: seq RRGGG"
+   },
    {
     "quando": "2026-07-31T16:14:28.806Z",
     "resultado": "GREEN",
@@ -1746,55 +1752,12 @@
   ],
   "consumidas": {
    "premier": 1785513949112,
-   "euro": 1785514468611
+   "euro": 1785514468611,
+   "copa": 1785515780716
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "17:25",
-     "jogo": "EUA x Irã",
-     "odd": 2.5
-    },
-    {
-     "h": "17:28",
-     "jogo": "Coreia do Sul x Senegal",
-     "odd": 2.7
-    },
-    {
-     "h": "17:31",
-     "jogo": "Arábia Saudita x Bélgica",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "seq RRGGG",
-   "alvo": {
-    "h": "17:31",
-    "jogo": "Arábia Saudita x Bélgica",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1785515607510
-   },
-   "iniciadoEm": 1785515190508,
-   "tiros": [
-    {
-     "h": "17:25",
-     "jogo": "EUA x Irã",
-     "odd": 2.5,
-     "unidades": 1
-    },
-    {
-     "h": "17:28",
-     "jogo": "Coreia do Sul x Senegal",
-     "odd": 2.7,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785510255839,
+   "copa": 1785515780716,
    "premier": 1785513949112,
    "euro": 1785514468611,
    "super": 1785499987742
@@ -1816,7 +1779,7 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": -40.7
+   "2026-07-31": -47.7
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -3287,8 +3250,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "17:28",
@@ -3308,11 +3271,11 @@
    ],
    "gatilho": "odd 2.2",
    "alvo": {
-    "h": "17:31",
-    "jogo": "Arábia Saudita x Bélgica",
-    "odd": 1.93,
-    "unidades": 2,
-    "desde": 1785515607906
+    "h": "17:34",
+    "jogo": "Tunísia x Uzbequistão",
+    "odd": 2.2,
+    "unidades": 4,
+    "desde": 1785515780914
    },
    "iniciadoEm": 1785515551714,
    "tiros": [
@@ -3321,6 +3284,12 @@
      "jogo": "Coreia do Sul x Senegal",
      "odd": 2.2,
      "unidades": 1
+    },
+    {
+     "h": "17:31",
+     "jogo": "Arábia Saudita x Bélgica",
+     "odd": 1.93,
+     "unidades": 2
     }
    ]
   },
