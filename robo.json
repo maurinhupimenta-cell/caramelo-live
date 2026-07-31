@@ -225,12 +225,18 @@
  },
  "o25": {
   "saldo": -148.6,
-  "ciclos": 731,
+  "ciclos": 732,
   "greens": 450,
   "redsCiclo": 122,
   "aborts": 0,
-  "descartes": 159,
+  "descartes": 160,
   "historico": [
+   {
+    "quando": "2026-07-31T09:41:06.539Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :53) — liga REARMADA"
+   },
    {
     "quando": "2026-07-31T09:06:43.539Z",
     "resultado": "RED_CICLO",
@@ -1610,7 +1616,37 @@
    "copa": 1785487564842,
    "premier": 1785488803342
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:50",
+     "jogo": "Países Baixos x Eslovênia",
+     "odd": 2.45
+    },
+    {
+     "h": "10:53",
+     "jogo": "Sérvia x Portugal",
+     "odd": 2.4
+    },
+    {
+     "h": "10:56",
+     "jogo": "Albânia x Suíça",
+     "odd": 2.45
+    }
+   ],
+   "gatilho": "coluna :53",
+   "alvo": {
+    "h": "10:50",
+    "jogo": "Países Baixos x Eslovênia",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1785490868545
+   },
+   "iniciadoEm": 1785490868545
+  },
   "cooldown": {
    "copa": 1785487564842,
    "premier": 1785488803342,
@@ -1637,9 +1673,9 @@
    "2026-07-31": -33.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.5",
-   "n": 8,
+   "tipo": "coluna",
+   "chave": ":53",
+   "n": 10,
    "start": 3
   },
   "_obs": {
