@@ -248,13 +248,19 @@
   }
  },
  "o25": {
-  "saldo": -117.7,
-  "ciclos": 706,
-  "greens": 437,
+  "saldo": -116.4,
+  "ciclos": 707,
+  "greens": 438,
   "redsCiclo": 115,
   "aborts": 0,
   "descartes": 154,
   "historico": [
+   {
+    "quando": "2026-07-31T02:17:49.187Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "premier · Palace x Leicester @2.25 (tiro 1) · gatilho: time Brighton"
+   },
    {
     "quando": "2026-07-31T02:04:12.838Z",
     "resultado": "GREEN",
@@ -1481,42 +1487,13 @@
    }
   ],
   "consumidas": {
-   "euro": 1785463452741
+   "euro": 1785463452741,
+   "premier": 1785464268693
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:15",
-     "jogo": "Palace x Leicester",
-     "odd": 2.25
-    },
-    {
-     "h": "03:18",
-     "jogo": "Brighton x Islington",
-     "odd": 2.05
-    },
-    {
-     "h": "03:21",
-     "jogo": "Wolverhampton x Norwich",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "time Brighton",
-   "alvo": {
-    "h": "03:15",
-    "jogo": "Palace x Leicester",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785463554837
-   },
-   "iniciadoEm": 1785463554837
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785449400132,
-   "premier": 1785442317229,
+   "premier": 1785464268693,
    "euro": 1785463452741,
    "super": 1785440742333
   },
@@ -1536,12 +1513,12 @@
    "2026-07-27": -75.2,
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
-   "2026-07-30": -27.7
+   "2026-07-30": -26.4
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Brighton",
-   "n": 9,
+   "chave": "Aston",
+   "n": 8,
    "start": 1
   },
   "_obs": {
