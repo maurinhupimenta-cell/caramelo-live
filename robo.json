@@ -1645,13 +1645,19 @@
   }
  },
  "ambas": {
-  "saldo": -24.9,
-  "ciclos": 762,
-  "greens": 516,
+  "saldo": -23.7,
+  "ciclos": 763,
+  "greens": 517,
   "redsCiclo": 78,
   "aborts": 0,
   "descartes": 168,
   "historico": [
+   {
+    "quando": "2026-07-31T08:50:05.139Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · República Tcheca x Hungria @2.2 (tiro 1) · gatilho: odd 1.93"
+   },
    {
     "quando": "2026-07-31T08:38:07.343Z",
     "resultado": "GREEN_OBS",
@@ -2986,41 +2992,12 @@
    }
   ],
   "consumidas": {
-   "super": 1785484668445
+   "super": 1785484668445,
+   "euro": 1785487804937
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "09:47",
-     "jogo": "República Tcheca x Hungria",
-     "odd": 2.2
-    },
-    {
-     "h": "09:50",
-     "jogo": "Romênia x Áustria",
-     "odd": 1.93
-    },
-    {
-     "h": "09:53",
-     "jogo": "Espanha x Ucrânia",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "odd 1.93",
-   "alvo": {
-    "h": "09:47",
-    "jogo": "República Tcheca x Hungria",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785487089045
-   },
-   "iniciadoEm": 1785487089045
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785483466952,
+   "euro": 1785487804937,
    "super": 1785484668445,
    "premier": 1785446633933,
    "copa": 1785483966539
@@ -3041,13 +3018,13 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 2.6
+   "2026-07-31": 3.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.93",
-   "n": 10,
-   "start": 1
+   "tipo": "time",
+   "chave": "França",
+   "n": 14,
+   "start": 3
   },
   "_obs": {}
  }
