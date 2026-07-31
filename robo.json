@@ -1675,13 +1675,19 @@
   }
  },
  "ambas": {
-  "saldo": -22.5,
-  "ciclos": 764,
-  "greens": 518,
+  "saldo": -21.4,
+  "ciclos": 765,
+  "greens": 519,
   "redsCiclo": 78,
   "aborts": 0,
   "descartes": 168,
   "historico": [
+   {
+    "quando": "2026-07-31T09:59:27.044Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Albânia x Suíça @2.1 (tiro 1) · gatilho: odd 2"
+   },
    {
     "quando": "2026-07-31T09:07:26.137Z",
     "resultado": "GREEN",
@@ -3028,41 +3034,12 @@
    }
   ],
   "consumidas": {
-   "super": 1785488845850
+   "super": 1785488845850,
+   "euro": 1785491966937
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "10:56",
-     "jogo": "Albânia x Suíça",
-     "odd": 2.1
-    },
-    {
-     "h": "10:59",
-     "jogo": "Eslováquia x Áustria",
-     "odd": 2
-    },
-    {
-     "h": "11:02",
-     "jogo": "Bélgica x Portugal",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "odd 2",
-   "alvo": {
-    "h": "10:56",
-    "jogo": "Albânia x Suíça",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785491406245
-   },
-   "iniciadoEm": 1785491406245
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785487804937,
+   "euro": 1785491966937,
    "super": 1785488845850,
    "premier": 1785446633933,
    "copa": 1785483966539
@@ -3083,13 +3060,13 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 5
+   "2026-07-31": 6.1
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2",
-   "n": 11,
-   "start": 1
+   "tipo": "time",
+   "chave": "Croácia",
+   "n": 16,
+   "start": 3
   },
   "_obs": {}
  }
