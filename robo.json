@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -141.6,
-  "ciclos": 730,
+  "saldo": -148.6,
+  "ciclos": 731,
   "greens": 450,
-  "redsCiclo": 121,
+  "redsCiclo": 122,
   "aborts": 0,
   "descartes": 159,
   "historico": [
+   {
+    "quando": "2026-07-31T09:06:43.539Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq RRGG"
+   },
    {
     "quando": "2026-07-31T08:46:04.947Z",
     "resultado": "GREEN",
@@ -1603,56 +1609,13 @@
   "consumidas": {
    "super": 1785486287736,
    "euro": 1785486884842,
-   "copa": 1785487564842
+   "copa": 1785487564842,
+   "premier": 1785488803342
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "09:57",
-     "jogo": "Leeds x Palace",
-     "odd": 2.45
-    },
-    {
-     "h": "10:00",
-     "jogo": "Leicester x Burnley",
-     "odd": 2.2
-    },
-    {
-     "h": "10:03",
-     "jogo": "Brentford x Brighton",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "seq RRGG",
-   "alvo": {
-    "h": "10:03",
-    "jogo": "Brentford x Brighton",
-    "odd": 2.1,
-    "unidades": 4,
-    "desde": 1785488562443
-   },
-   "iniciadoEm": 1785488022541,
-   "tiros": [
-    {
-     "h": "09:57",
-     "jogo": "Leeds x Palace",
-     "odd": 2.45,
-     "unidades": 1
-    },
-    {
-     "h": "10:00",
-     "jogo": "Leicester x Burnley",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785487564842,
-   "premier": 1785482312342,
+   "premier": 1785488803342,
    "euro": 1785486884842,
    "super": 1785486287736
   },
@@ -1673,13 +1636,13 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": -26.4
+   "2026-07-31": -33.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGG",
-   "n": 10,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.5",
+   "n": 8,
+   "start": 3
   },
   "_obs": {
    "copa": {
