@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -164.2,
-  "ciclos": 761,
-  "greens": 466,
+  "saldo": -163.2,
+  "ciclos": 762,
+  "greens": 467,
   "redsCiclo": 128,
   "aborts": 0,
   "descartes": 167,
   "historico": [
+   {
+    "quando": "2026-07-31T20:53:33.311Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Bélgica x Países Baixos @2.02 (tiro 2) · gatilho: odd 2.02"
+   },
    {
     "quando": "2026-07-31T19:58:27.014Z",
     "resultado": "GREEN",
@@ -1787,51 +1793,14 @@
    }
   ],
   "consumidas": {
-   "copa": 1785527906907
+   "copa": 1785527906907,
+   "euro": 1785531213112
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "21:47",
-     "jogo": "Portugal x Eslovênia",
-     "odd": 2.6
-    },
-    {
-     "h": "21:50",
-     "jogo": "Bélgica x Países Baixos",
-     "odd": 2.02
-    },
-    {
-     "h": "21:53",
-     "jogo": "Ucrânia x Áustria",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "odd 2.02",
-   "alvo": {
-    "h": "21:50",
-    "jogo": "Bélgica x Países Baixos",
-    "odd": 2.02,
-    "unidades": 2,
-    "desde": 1785531151318
-   },
-   "iniciadoEm": 1785530366306,
-   "tiros": [
-    {
-     "h": "21:47",
-     "jogo": "Portugal x Eslovênia",
-     "odd": 2.6,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785527906907,
    "premier": 1785527120807,
-   "euro": 1785518428505,
+   "euro": 1785531213112,
    "super": 1785499987742
   },
   "dias": {
@@ -1851,7 +1820,7 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": -49
+   "2026-07-31": -48
   },
   "_gatilhoAtual": {
    "tipo": "odd",
