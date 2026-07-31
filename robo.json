@@ -1640,7 +1640,37 @@
    "euro": 1785491746550,
    "copa": 1785491867039
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:09",
+     "jogo": "Palace x Watford",
+     "odd": 2.25
+    },
+    {
+     "h": "11:12",
+     "jogo": "City x Aston",
+     "odd": 2.2
+    },
+    {
+     "h": "11:15",
+     "jogo": "Norwich x Brighton",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "seq RRGG",
+   "alvo": {
+    "h": "11:09",
+    "jogo": "Palace x Watford",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785492407049
+   },
+   "iniciadoEm": 1785492407049
+  },
   "cooldown": {
    "copa": 1785491867039,
    "premier": 1785488803342,
@@ -1667,19 +1697,15 @@
    "2026-07-31": -30.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Canadá",
-   "n": 11,
+   "tipo": "seq",
+   "chave": "RRGG",
+   "n": 12,
    "start": 1
   },
   "_obs": {
    "copa": {
     "desde": 1785480929266,
     "gatilho": "seq RGGG"
-   },
-   "premier": {
-    "desde": 1785492404748,
-    "gatilho": "seq RRGG"
    }
   }
  },
@@ -3043,10 +3069,39 @@
    }
   ],
   "consumidas": {
-   "super": 1785488845850,
    "euro": 1785491966937
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:13",
+     "jogo": "Quito x Avellaneda",
+     "odd": 2
+    },
+    {
+     "h": "11:16",
+     "jogo": "Agua Branca x Buenos Aires",
+     "odd": 1.83
+    },
+    {
+     "h": "11:19",
+     "jogo": "Lima x Guayaquil",
+     "odd": 1.83
+    }
+   ],
+   "gatilho": "odd 1.83",
+   "alvo": {
+    "h": "11:13",
+    "jogo": "Quito x Avellaneda",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1785492446868
+   },
+   "iniciadoEm": 1785492446868
+  },
   "cooldown": {
    "euro": 1785491966937,
    "super": 1785488845850,
@@ -3072,10 +3127,10 @@
    "2026-07-31": 6.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Croácia",
-   "n": 16,
-   "start": 3
+   "tipo": "odd",
+   "chave": "1.83",
+   "n": 9,
+   "start": 2
   },
   "_obs": {}
  }
