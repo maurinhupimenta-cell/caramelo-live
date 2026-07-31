@@ -1649,10 +1649,39 @@
    }
   ],
   "consumidas": {
-   "premier": 1785492899044,
    "euro": 1785496426744
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:13",
+     "jogo": "Canadá x Egito",
+     "odd": 2.25
+    },
+    {
+     "h": "12:16",
+     "jogo": "Japão x Costa do Marfim",
+     "odd": 2.25
+    },
+    {
+     "h": "12:19",
+     "jogo": "Inglaterra x RD Congo",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time Canadá",
+   "alvo": {
+    "h": "12:13",
+    "jogo": "Canadá x Egito",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785496428748
+   },
+   "iniciadoEm": 1785496428748
+  },
   "cooldown": {
    "copa": 1785491867039,
    "premier": 1785492899044,
