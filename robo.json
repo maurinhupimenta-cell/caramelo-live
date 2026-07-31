@@ -1726,8 +1726,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "15:55",
@@ -1747,13 +1747,21 @@
    ],
    "gatilho": "seq GRRRG",
    "alvo": {
-    "h": "15:55",
-    "jogo": "Qatar x Áustria",
+    "h": "15:58",
+    "jogo": "Colômbia x Turquia",
     "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785509698741
+    "unidades": 2,
+    "desde": 1785509879136
    },
-   "iniciadoEm": 1785509698741
+   "iniciadoEm": 1785509698741,
+   "tiros": [
+    {
+     "h": "15:55",
+     "jogo": "Qatar x Áustria",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785505919240,
@@ -1782,8 +1790,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRRRG",
-   "n": 8,
+   "chave": "RRGR",
+   "n": 14,
    "start": 1
   },
   "_obs": {
