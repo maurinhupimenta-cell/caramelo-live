@@ -1830,13 +1830,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -11.6,
-  "ciclos": 785,
-  "greens": 537,
+  "saldo": -10.5,
+  "ciclos": 786,
+  "greens": 538,
   "redsCiclo": 79,
   "aborts": 0,
   "descartes": 169,
   "historico": [
+   {
+    "quando": "2026-07-31T17:59:26.909Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Bogota x Lima @2.1 (tiro 1) · gatilho: coluna :55"
+   },
    {
     "quando": "2026-07-31T17:46:30.505Z",
     "resultado": "GREEN",
@@ -3310,42 +3316,13 @@
   ],
   "consumidas": {
    "euro": 1785519626806,
-   "copa": 1785519990309
+   "copa": 1785519990309,
+   "super": 1785520766806
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:52",
-     "jogo": "Bogota x Lima",
-     "odd": 2.1
-    },
-    {
-     "h": "18:55",
-     "jogo": "Penarol x Santiago",
-     "odd": 1.98
-    },
-    {
-     "h": "18:58",
-     "jogo": "Belo Horizonte x Rio de Janeiro",
-     "odd": 1.86
-    }
-   ],
-   "gatilho": "coluna :55",
-   "alvo": {
-    "h": "18:52",
-    "jogo": "Bogota x Lima",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785519991910
-   },
-   "iniciadoEm": 1785519991910
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785519626806,
-   "super": 1785515550005,
+   "super": 1785520766806,
    "premier": 1785446633933,
    "copa": 1785519990309
   },
@@ -3365,13 +3342,13 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 15.9
+   "2026-07-31": 17
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":55",
-   "n": 18,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.25",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  }
