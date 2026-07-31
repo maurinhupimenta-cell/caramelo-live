@@ -1866,13 +1866,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -10.2,
-  "ciclos": 796,
-  "greens": 545,
+  "saldo": -9.3,
+  "ciclos": 797,
+  "greens": 546,
   "redsCiclo": 80,
   "aborts": 0,
   "descartes": 171,
   "historico": [
+   {
+    "quando": "2026-07-31T23:05:26.260Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Áustria x Alemanha @1.93 (tiro 2) · gatilho: odd 1.93"
+   },
    {
     "quando": "2026-07-31T22:40:28.075Z",
     "resultado": "GREEN",
@@ -3411,49 +3417,12 @@
    }
   ],
   "consumidas": {
-   "super": 1785537627776
+   "super": 1785537627776,
+   "euro": 1785539126067
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "23:56",
-     "jogo": "Ucrânia x Países Baixos",
-     "odd": 1.87
-    },
-    {
-     "h": "00:02",
-     "jogo": "Áustria x Alemanha",
-     "odd": 1.93
-    },
-    {
-     "h": "00:05",
-     "jogo": "Romênia x Polônia",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "odd 1.93",
-   "alvo": {
-    "h": "00:02",
-    "jogo": "Áustria x Alemanha",
-    "odd": 1.93,
-    "unidades": 2,
-    "desde": 1785538827664
-   },
-   "iniciadoEm": 1785538227559,
-   "tiros": [
-    {
-     "h": "23:56",
-     "jogo": "Ucrânia x Países Baixos",
-     "odd": 1.87,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785530487220,
+   "euro": 1785539126067,
    "super": 1785537627776,
    "premier": 1785530141011,
    "copa": 1785528509908
@@ -3474,13 +3443,13 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 17.3
+   "2026-07-31": 18.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "1.8",
    "n": 11,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
