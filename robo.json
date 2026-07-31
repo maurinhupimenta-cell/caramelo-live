@@ -1665,7 +1665,37 @@
    "copa": 1785496744645,
    "premier": 1785497423450
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:07",
+     "jogo": "La Plata x Rio de Janeiro",
+     "odd": 2.5
+    },
+    {
+     "h": "13:10",
+     "jogo": "Penarol x Porto Alegre",
+     "odd": 2.87
+    },
+    {
+     "h": "13:13",
+     "jogo": "Asuncion x Medellin",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "seq RGGG",
+   "alvo": {
+    "h": "13:07",
+    "jogo": "La Plata x Rio de Janeiro",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1785499448938
+   },
+   "iniciadoEm": 1785499448938
+  },
   "cooldown": {
    "copa": 1785496744645,
    "premier": 1785497423450,
@@ -1693,8 +1723,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRRR",
-   "n": 11,
+   "chave": "RGGG",
+   "n": 10,
    "start": 1
   },
   "_obs": {
