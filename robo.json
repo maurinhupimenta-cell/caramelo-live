@@ -1750,13 +1750,19 @@
   }
  },
  "ambas": {
-  "saldo": -12.8,
-  "ciclos": 774,
-  "greens": 528,
+  "saldo": -12,
+  "ciclos": 775,
+  "greens": 529,
   "redsCiclo": 78,
   "aborts": 0,
   "descartes": 168,
   "historico": [
+   {
+    "quando": "2026-07-31T14:10:20.546Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "super · Sao Paulo x Medellin @1.95 (tiro 3) · gatilho: odd 1.83"
+   },
    {
     "quando": "2026-07-31T13:46:58.745Z",
     "resultado": "GREEN",
@@ -3163,56 +3169,13 @@
    }
   ],
   "consumidas": {
-   "euro": 1785505618638
+   "euro": 1785505618638,
+   "super": 1785507020437
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "15:01",
-     "jogo": "Penarol x Agua Branca",
-     "odd": 2
-    },
-    {
-     "h": "15:04",
-     "jogo": "Guayaquil x Belo Horizonte",
-     "odd": 1.83
-    },
-    {
-     "h": "15:07",
-     "jogo": "Sao Paulo x Medellin",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "odd 1.83",
-   "alvo": {
-    "h": "15:07",
-    "jogo": "Sao Paulo x Medellin",
-    "odd": 1.95,
-    "unidades": 4,
-    "desde": 1785506843742
-   },
-   "iniciadoEm": 1785506120044,
-   "tiros": [
-    {
-     "h": "15:01",
-     "jogo": "Penarol x Agua Branca",
-     "odd": 2,
-     "unidades": 1
-    },
-    {
-     "h": "15:04",
-     "jogo": "Guayaquil x Belo Horizonte",
-     "odd": 1.83,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785505618638,
-   "super": 1785502508138,
+   "super": 1785507020437,
    "premier": 1785446633933,
    "copa": 1785502844742
   },
@@ -3232,7 +3195,7 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 14.7
+   "2026-07-31": 15.5
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
