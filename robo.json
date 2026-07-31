@@ -183,7 +183,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:17",
+     "jogo": "Albânia x Sérvia",
+     "odd": 6.5
+    },
+    {
+     "h": "03:20",
+     "jogo": "Eslovênia x Croácia",
+     "odd": 5.5
+    },
+    {
+     "h": "03:23",
+     "jogo": "República Tcheca x Turquia",
+     "odd": 6
+    }
+   ],
+   "gatilho": "time Eslovênia",
+   "alvo": {
+    "h": "03:17",
+    "jogo": "Albânia x Sérvia",
+    "odd": 6.5,
+    "unidades": 1,
+    "desde": 1785464182694
+   },
+   "iniciadoEm": 1785464182694
+  },
   "cooldown": {
    "copa": 1785038273206,
    "premier": 1785303702158,
@@ -205,8 +235,8 @@
    "2026-07-30": -7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "4.5",
+   "tipo": "time",
+   "chave": "Eslovênia",
    "n": 8,
    "start": 1
   },
@@ -1512,7 +1542,7 @@
    "tipo": "time",
    "chave": "Brighton",
    "n": 9,
-   "start": 3
+   "start": 1
   },
   "_obs": {
    "premier": {
