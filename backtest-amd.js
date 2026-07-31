@@ -90,6 +90,28 @@
   // do proprio elemento: qualquer escrita de fora e ignorada silenciosamente.
   // Sem intervalo, sem disputa, sem flicker.
   var descritor = Object.getOwnPropertyDescriptor(Element.prototype, "innerHTML");
+  var descTexto = Object.getOwnPropertyDescriptor(Node.prototype, "textContent");
+  var tituloTrancado = false;
+  function trancaTitulo() {
+    var el = document.getElementById("btTitle");
+    if (!el || tituloTrancado || !descTexto) return;
+    tituloTrancado = true;
+    try {
+      Object.defineProperty(el, "textContent", {
+        configurable: true,
+        get: function () { return descTexto.get.call(this); },
+        set: function (v) { if (escrevendo) descTexto.set.call(this, v); }
+      });
+    } catch (e) { tituloTrancado = false; }
+  }
+  function poeTitulo(txt) {
+    var el = document.getElementById("btTitle");
+    if (!el) return;
+    trancaTitulo();
+    escrevendo = true;
+    el.textContent = txt;
+    escrevendo = false;
+  }
   function tranca(tb) {
     if (observando || !tb || !descritor) return;
     observando = true;
@@ -201,7 +223,8 @@
     if (chave !== chaveAtual) {          // trocou de liga/mercado: nunca deixar a tabela velha
       chaveAtual = chave;
       meuHtml = null;
-      avisa("calculando " + mkt.toUpperCase() + " · " + liga + "…");
+      poeTitulo("Backtest · " + liga.charAt(0).toUpperCase() + liga.slice(1) + " — " + nomeDoMercado(mkt));
+      avisa("calculando " + nomeDoMercado(mkt) + " · " + liga + "…");
     }
     if (SEM_ODD[mkt]) {
       avisa("A fonte não fornece odd para " + SEM_ODD[mkt] +
@@ -213,8 +236,7 @@
       var bt;
       try { bt = AMD_MOTOR.backtest(jogos, mkt, 150); } catch (e) { return; }
       if (!bt || bt.erro) { avisa("sem base suficiente para o backtest deste mercado agora"); return; }
-      var tit = document.getElementById("btTitle");
-      if (tit) tit.textContent = "Backtest · " + liga.charAt(0).toUpperCase() + liga.slice(1) + " — " + nomeDoMercado(mkt);
+      poeTitulo("Backtest · " + liga.charAt(0).toUpperCase() + liga.slice(1) + " — " + nomeDoMercado(mkt));
       ultimo = bt; ultimaLiga = liga;
       desenha(bt, liga);
     });
