@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -124.8,
-  "ciclos": 723,
+  "saldo": -131.8,
+  "ciclos": 724,
   "greens": 447,
-  "redsCiclo": 118,
+  "redsCiclo": 119,
   "aborts": 0,
   "descartes": 158,
   "historico": [
+   {
+    "quando": "2026-07-31T07:18:32.541Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: placar acima de 1-0 (2-0)"
+   },
    {
     "quando": "2026-07-31T07:07:28.223Z",
     "resultado": "GREEN",
@@ -1559,56 +1565,13 @@
    }
   ],
   "consumidas": {
-   "super": 1785481648028
+   "super": 1785481648028,
+   "premier": 1785482312342
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "08:06",
-     "jogo": "Brighton x Wolverhampton",
-     "odd": 1.95
-    },
-    {
-     "h": "08:09",
-     "jogo": "Southampton x Islington",
-     "odd": 2.3
-    },
-    {
-     "h": "08:12",
-     "jogo": "Everton x Brentford",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-0)",
-   "alvo": {
-    "h": "08:12",
-    "jogo": "Everton x Brentford",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1785481938744
-   },
-   "iniciadoEm": 1785481650129,
-   "tiros": [
-    {
-     "h": "08:06",
-     "jogo": "Brighton x Wolverhampton",
-     "odd": 1.95,
-     "unidades": 1
-    },
-    {
-     "h": "08:09",
-     "jogo": "Southampton x Islington",
-     "odd": 2.3,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785477028689,
-   "premier": 1785477582993,
+   "premier": 1785482312342,
    "euro": 1785477179994,
    "super": 1785481648028
   },
@@ -1629,7 +1592,7 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": -9.6
+   "2026-07-31": -16.6
   },
   "_gatilhoAtual": {
    "tipo": "seq",
