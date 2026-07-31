@@ -1537,13 +1537,19 @@
   }
  },
  "ambas": {
-  "saldo": -26.3,
-  "ciclos": 753,
-  "greens": 509,
+  "saldo": -24.9,
+  "ciclos": 754,
+  "greens": 510,
   "redsCiclo": 77,
   "aborts": 0,
   "descartes": 167,
   "historico": [
+   {
+    "quando": "2026-07-31T04:02:33.093Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "euro · Croácia x Eslovênia @2.2 (tiro 2) · gatilho: time Croácia"
+   },
    {
     "quando": "2026-07-31T03:08:27.892Z",
     "resultado": "GREEN",
@@ -2824,49 +2830,12 @@
    }
   ],
   "consumidas": {
-   "copa": 1785467307697
+   "copa": 1785467307697,
+   "euro": 1785470552894
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "04:53",
-     "jogo": "Inglaterra x Portugal",
-     "odd": 1.86
-    },
-    {
-     "h": "04:56",
-     "jogo": "Croácia x Eslovênia",
-     "odd": 2.2
-    },
-    {
-     "h": "04:59",
-     "jogo": "Bélgica x Alemanha",
-     "odd": 1.85
-    }
-   ],
-   "gatilho": "time Croácia",
-   "alvo": {
-    "h": "04:56",
-    "jogo": "Croácia x Eslovênia",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1785470308492
-   },
-   "iniciadoEm": 1785469789095,
-   "tiros": [
-    {
-     "h": "04:53",
-     "jogo": "Inglaterra x Portugal",
-     "odd": 1.86,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785439551897,
+   "euro": 1785470552894,
    "super": 1785452899830,
    "premier": 1785446633933,
    "copa": 1785467307697
@@ -2887,13 +2856,13 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 1.2
+   "2026-07-31": 2.6
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Romênia",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
