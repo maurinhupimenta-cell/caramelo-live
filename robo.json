@@ -1790,7 +1790,37 @@
    "premier": 1785527120807,
    "copa": 1785527906907
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:47",
+     "jogo": "Portugal x Eslovênia",
+     "odd": 2.6
+    },
+    {
+     "h": "21:50",
+     "jogo": "Bélgica x Países Baixos",
+     "odd": 2.02
+    },
+    {
+     "h": "21:53",
+     "jogo": "Ucrânia x Áustria",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "odd 2.02",
+   "alvo": {
+    "h": "21:47",
+    "jogo": "Portugal x Eslovênia",
+    "odd": 2.6,
+    "unidades": 1,
+    "desde": 1785530366306
+   },
+   "iniciadoEm": 1785530366306
+  },
   "cooldown": {
    "copa": 1785527906907,
    "premier": 1785527120807,
@@ -1817,10 +1847,10 @@
    "2026-07-31": -49
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Canadá",
-   "n": 21,
-   "start": 2
+   "tipo": "odd",
+   "chave": "2.02",
+   "n": 14,
+   "start": 3
   },
   "_obs": {}
  },
