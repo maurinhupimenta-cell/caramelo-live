@@ -1520,7 +1520,45 @@
    "euro": 1785473252393,
    "super": 1785476429693
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "06:40",
+     "jogo": "Jordânia x Japão",
+     "odd": 2.3
+    },
+    {
+     "h": "06:43",
+     "jogo": "Croácia x Noruega",
+     "odd": 2.25
+    },
+    {
+     "h": "06:46",
+     "jogo": "Paraguai x Uzbequistão",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "odd 2.3",
+   "alvo": {
+    "h": "06:43",
+    "jogo": "Croácia x Noruega",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1785476671794
+   },
+   "iniciadoEm": 1785476431687,
+   "tiros": [
+    {
+     "h": "06:40",
+     "jogo": "Jordânia x Japão",
+     "odd": 2.3,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1785471446296,
    "premier": 1785470019093,
@@ -1547,10 +1585,10 @@
    "2026-07-31": -6.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Belo Horizonte",
-   "n": 13,
-   "start": 3
+   "tipo": "odd",
+   "chave": "2.3",
+   "n": 10,
+   "start": 1
   },
   "_obs": {
    "premier": {
