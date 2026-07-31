@@ -1555,13 +1555,19 @@
   }
  },
  "ambas": {
-  "saldo": -24.9,
-  "ciclos": 754,
-  "greens": 510,
+  "saldo": -23.9,
+  "ciclos": 755,
+  "greens": 511,
   "redsCiclo": 77,
   "aborts": 0,
   "descartes": 167,
   "historico": [
+   {
+    "quando": "2026-07-31T05:06:30.990Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · França x Geórgia @2.05 (tiro 1) · gatilho: time França"
+   },
    {
     "quando": "2026-07-31T04:02:33.093Z",
     "resultado": "GREEN",
@@ -2847,10 +2853,12 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "euro": 1785474390790
+  },
   "ciclo": null,
   "cooldown": {
-   "euro": 1785470552894,
+   "euro": 1785474390790,
    "super": 1785452899830,
    "premier": 1785446633933,
    "copa": 1785467307697
@@ -2871,13 +2879,13 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 2.6
+   "2026-07-31": 3.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Romênia",
-   "n": 8,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.15",
+   "n": 14,
+   "start": 3
   },
   "_obs": {}
  }
