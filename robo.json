@@ -3142,8 +3142,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "13:55",
@@ -3163,13 +3163,21 @@
    ],
    "gatilho": "coluna :55",
    "alvo": {
-    "h": "13:55",
-    "jogo": "Gana x Irã",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785502510049
+    "h": "13:58",
+    "jogo": "Tunísia x Senegal",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1785502688544
    },
-   "iniciadoEm": 1785502510049
+   "iniciadoEm": 1785502510049,
+   "tiros": [
+    {
+     "h": "13:55",
+     "jogo": "Gana x Irã",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785501706947,
@@ -3197,9 +3205,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":55",
-   "n": 13,
-   "start": 1
+   "chave": ":07",
+   "n": 14,
+   "start": 3
   },
   "_obs": {}
  }
