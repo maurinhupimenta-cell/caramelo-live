@@ -1705,13 +1705,19 @@
   }
  },
  "ambas": {
-  "saldo": -17.6,
-  "ciclos": 769,
-  "greens": 523,
+  "saldo": -16.8,
+  "ciclos": 770,
+  "greens": 524,
   "redsCiclo": 78,
   "aborts": 0,
   "descartes": 168,
   "historico": [
+   {
+    "quando": "2026-07-31T11:39:45.141Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "copa · RD Congo x Arábia Saudita @1.83 (tiro 1) · gatilho: coluna :40"
+   },
    {
     "quando": "2026-07-31T11:28:08.842Z",
     "resultado": "GREEN",
@@ -3089,44 +3095,15 @@
   ],
   "consumidas": {
    "euro": 1785495906339,
-   "super": 1785497288740
+   "super": 1785497288740,
+   "copa": 1785497984943
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "12:37",
-     "jogo": "RD Congo x Arábia Saudita",
-     "odd": 1.83
-    },
-    {
-     "h": "12:40",
-     "jogo": "Coreia do Sul x Argentina",
-     "odd": 2
-    },
-    {
-     "h": "12:43",
-     "jogo": "Marrocos x Croácia",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "coluna :40",
-   "alvo": {
-    "h": "12:37",
-    "jogo": "RD Congo x Arábia Saudita",
-    "odd": 1.83,
-    "unidades": 1,
-    "desde": 1785497684844
-   },
-   "iniciadoEm": 1785497684844
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785495906339,
    "super": 1785497288740,
    "premier": 1785446633933,
-   "copa": 1785493684936
+   "copa": 1785497984943
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -3144,13 +3121,13 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 9.9
+   "2026-07-31": 10.7
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":40",
    "n": 12,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
