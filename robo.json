@@ -3367,7 +3367,37 @@
    "premier": 1785530141011,
    "euro": 1785530487220
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:22",
+     "jogo": "Qatar x Suíça",
+     "odd": 2
+    },
+    {
+     "h": "22:25",
+     "jogo": "Iraque x Turquia",
+     "odd": 2.1
+    },
+    {
+     "h": "22:28",
+     "jogo": "Qatar x Uzbequistão",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "odd 2.1",
+   "alvo": {
+    "h": "22:22",
+    "jogo": "Qatar x Suíça",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1785532711568
+   },
+   "iniciadoEm": 1785532711568
+  },
   "cooldown": {
    "euro": 1785530487220,
    "super": 1785529587106,
@@ -3394,8 +3424,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "1.83",
-   "n": 14,
+   "chave": "2.1",
+   "n": 15,
    "start": 2
   },
   "_obs": {}
