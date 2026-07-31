@@ -1741,7 +1741,37 @@
   "consumidas": {
    "premier": 1785513949112
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:08",
+     "jogo": "Turquia x Itália",
+     "odd": 2.5
+    },
+    {
+     "h": "17:11",
+     "jogo": "Eslovênia x Escócia",
+     "odd": 2.55
+    },
+    {
+     "h": "17:14",
+     "jogo": "Ucrânia x Suíça",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "coluna :11",
+   "alvo": {
+    "h": "17:08",
+    "jogo": "Turquia x Itália",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1785513973622
+   },
+   "iniciadoEm": 1785513973622
+  },
   "cooldown": {
    "copa": 1785510255839,
    "premier": 1785513949112,
