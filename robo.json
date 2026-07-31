@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -165.3,
-  "ciclos": 760,
-  "greens": 465,
+  "saldo": -164.2,
+  "ciclos": 761,
+  "greens": 466,
   "redsCiclo": 128,
   "aborts": 0,
   "descartes": 167,
   "historico": [
+   {
+    "quando": "2026-07-31T19:58:27.014Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Portugal x RD Congo @2.07 (tiro 2) · gatilho: seq RGRG"
+   },
    {
     "quando": "2026-07-31T19:45:20.910Z",
     "resultado": "RED_CICLO",
@@ -1781,49 +1787,12 @@
    }
   ],
   "consumidas": {
-   "premier": 1785527120807
+   "premier": 1785527120807,
+   "copa": 1785527906907
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "20:52",
-     "jogo": "Jordânia x Marrocos",
-     "odd": 2.25
-    },
-    {
-     "h": "20:55",
-     "jogo": "Portugal x RD Congo",
-     "odd": 2.07
-    },
-    {
-     "h": "20:58",
-     "jogo": "Espanha x Costa do Marfim",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "seq RGRG",
-   "alvo": {
-    "h": "20:55",
-    "jogo": "Portugal x RD Congo",
-    "odd": 2.07,
-    "unidades": 2,
-    "desde": 1785527786810
-   },
-   "iniciadoEm": 1785527489108,
-   "tiros": [
-    {
-     "h": "20:52",
-     "jogo": "Jordânia x Marrocos",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785520825711,
+   "copa": 1785527906907,
    "premier": 1785527120807,
    "euro": 1785518428505,
    "super": 1785499987742
@@ -1845,24 +1814,30 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": -50.1
+   "2026-07-31": -49
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Canadá",
    "n": 21,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -15.5,
-  "ciclos": 789,
+  "ciclos": 790,
   "greens": 540,
   "redsCiclo": 80,
   "aborts": 0,
-  "descartes": 169,
+  "descartes": 170,
   "historico": [
+   {
+    "quando": "2026-07-31T19:56:27.311Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Brasil) — liga REARMADA"
+   },
    {
     "quando": "2026-07-31T19:20:27.205Z",
     "resultado": "GREEN",
@@ -3362,7 +3337,37 @@
    "super": 1785524906408,
    "euro": 1785525627015
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:01",
+     "jogo": "RD Congo x Noruega",
+     "odd": 1.85
+    },
+    {
+     "h": "21:04",
+     "jogo": "Marrocos x Brasil",
+     "odd": 1.98
+    },
+    {
+     "h": "21:07",
+     "jogo": "Haiti x Canadá",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "time Brasil",
+   "alvo": {
+    "h": "21:01",
+    "jogo": "RD Congo x Noruega",
+    "odd": 1.85,
+    "unidades": 1,
+    "desde": 1785527789316
+   },
+   "iniciadoEm": 1785527789316
+  },
   "cooldown": {
    "euro": 1785525627015,
    "super": 1785524906408,
@@ -3388,10 +3393,10 @@
    "2026-07-31": 12
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.93",
-   "n": 26,
-   "start": 1
+   "tipo": "time",
+   "chave": "Brasil",
+   "n": 15,
+   "start": 2
   },
   "_obs": {}
  }
