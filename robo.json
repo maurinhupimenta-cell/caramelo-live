@@ -1783,7 +1783,37 @@
   "consumidas": {
    "premier": 1785527120807
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:52",
+     "jogo": "Jordânia x Marrocos",
+     "odd": 2.25
+    },
+    {
+     "h": "20:55",
+     "jogo": "Portugal x RD Congo",
+     "odd": 2.07
+    },
+    {
+     "h": "20:58",
+     "jogo": "Espanha x Costa do Marfim",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "seq RGRG",
+   "alvo": {
+    "h": "20:52",
+    "jogo": "Jordânia x Marrocos",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785527489108
+   },
+   "iniciadoEm": 1785527489108
+  },
   "cooldown": {
    "copa": 1785520825711,
    "premier": 1785527120807,
@@ -1811,8 +1841,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGGGG",
-   "n": 12,
+   "chave": "RGRG",
+   "n": 16,
    "start": 1
   },
   "_obs": {}
