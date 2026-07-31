@@ -1718,7 +1718,45 @@
    "copa": 1785505919240,
    "premier": 1785508745538
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "15:41",
+     "jogo": "Geórgia x Polônia",
+     "odd": 2.55
+    },
+    {
+     "h": "15:44",
+     "jogo": "Inglaterra x Croácia",
+     "odd": 2.1
+    },
+    {
+     "h": "15:47",
+     "jogo": "Suíça x Turquia",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "seq RGGGG",
+   "alvo": {
+    "h": "15:44",
+    "jogo": "Inglaterra x Croácia",
+    "odd": 2.1,
+    "unidades": 2,
+    "desde": 1785509080849
+   },
+   "iniciadoEm": 1785508804843,
+   "tiros": [
+    {
+     "h": "15:41",
+     "jogo": "Geórgia x Polônia",
+     "odd": 2.55,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1785505919240,
    "premier": 1785508745538,
@@ -1746,8 +1784,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.62",
-   "n": 8,
+   "chave": "2.02",
+   "n": 10,
    "start": 1
   },
   "_obs": {
