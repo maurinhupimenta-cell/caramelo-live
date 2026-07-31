@@ -23,6 +23,58 @@
   // mercados que a fonte NAO precifica: sem odd nao ha EV, e sem EV nao ha indicacao.
   var SEM_ODD = { ge5: "5+ gols" };
 
+  // MERCADOS PROPRIOS DO BACKTEST (independentes da grade), no lugar do "Ver todos"
+  var MERCADOS_BT = [
+    { id: "o25", nome: "Over 2.5" },
+    { id: "o35", nome: "Over 3.5" },
+    { id: "ambas", nome: "Ambas Sim" },
+    { id: "ambasN", nome: "Ambas Não" },
+    { id: "u05", nome: "Under 0.5" },
+    { id: "u15", nome: "Under 1.5" },
+    { id: "u25", nome: "Under 2.5" }
+  ];
+  var mktEscolhido = null;
+  try { mktEscolhido = localStorage.getItem("amd_bt_mkt"); } catch (e) {}
+
+  function montaSeletor() {
+    var head = document.getElementById("btTitle");
+    head = head ? head.parentNode : null;
+    if (!head || head.querySelector(".amd-bt-mkt")) return;
+    var link = head.querySelector("a.link");
+    var cx = document.createElement("span");
+    cx.className = "amd-bt-mkt";
+    cx.style.cssText = "display:flex;gap:4px;flex-wrap:wrap;align-items:center;margin-left:auto";
+    MERCADOS_BT.forEach(function (M) {
+      var b = document.createElement("button");
+      b.textContent = M.nome;
+      b.dataset.mkt = M.id;
+      b.style.cssText = "cursor:pointer;border-radius:6px;padding:3px 8px;font-size:11px;line-height:1.4;" +
+        "border:1px solid var(--line,#162832);background:transparent;color:var(--muted,#96a5ad)";
+      b.addEventListener("click", function (e) {
+        e.preventDefault();
+        mktEscolhido = M.id;
+        try { localStorage.setItem("amd_bt_mkt", M.id); } catch (err) {}
+        pinta();
+        roda();
+      });
+      cx.appendChild(b);
+    });
+    if (link) link.style.display = "none";      // o "Ver todos" da lugar ao seletor
+    head.appendChild(cx);
+    if (!mktEscolhido) mktEscolhido = "o25";
+    pinta();
+  }
+  function pinta() {
+    var cx = document.querySelector(".amd-bt-mkt");
+    if (!cx) return;
+    [].forEach.call(cx.children, function (b) {
+      var on = b.dataset.mkt === mktEscolhido;
+      b.style.borderColor = on ? "var(--blue,#32a4ff)" : "var(--line,#162832)";
+      b.style.color = on ? "var(--blue,#32a4ff)" : "var(--muted,#96a5ad)";
+      b.style.fontWeight = on ? "700" : "400";
+    });
+  }
+
   function avisa(txt) {
     var tb = document.getElementById("backtest");
     if (!tb) return;
@@ -62,7 +114,9 @@
       a: a, b: b, total: a + b,
       odds: {
         o25: o["odd_over_2.5"] || null, o35: o["odd_over_3.5"] || null,
-        ambs: o["odd_ambas_sim"] || null, u25: o["odd_under_2.5"] || null
+        ambs: o["odd_ambas_sim"] || null, ambn: o["odd_ambas_nao"] || null,
+        u05: o["odd_under_0.5"] || null, u15: o["odd_under_1.5"] || null,
+        u25: o["odd_under_2.5"] || null
       }
     };
   }
@@ -94,11 +148,11 @@
     return "copa";
   }
   function mercadoAtual() {
-    var t = (ativoEm("#markets") || "").toLowerCase();
-    if (t.indexOf("3.5") >= 0) return "o35";
-    if (t.indexOf("5+") >= 0) return "ge5";
-    if (t.indexOf("ambas") >= 0) return "ambas";
-    return "o25";
+    return mktEscolhido || "o25";     // independente da grade
+  }
+  function nomeDoMercado(id) {
+    for (var i = 0; i < MERCADOS_BT.length; i++) if (MERCADOS_BT[i].id === id) return MERCADOS_BT[i].nome;
+    return id;
   }
 
   // ---- desenho: mesmas colunas e classes da tabela existente --------------
@@ -159,6 +213,8 @@
       var bt;
       try { bt = AMD_MOTOR.backtest(jogos, mkt, 150); } catch (e) { return; }
       if (!bt || bt.erro) { avisa("sem base suficiente para o backtest deste mercado agora"); return; }
+      var tit = document.getElementById("btTitle");
+      if (tit) tit.textContent = "Backtest · " + liga.charAt(0).toUpperCase() + liga.slice(1) + " — " + nomeDoMercado(mkt);
       ultimo = bt; ultimaLiga = liga;
       desenha(bt, liga);
     });
@@ -168,6 +224,7 @@
   // existentes, mas quem escreve a tabela agora e este backtest). Sem editar app.js.
   var ultimo = null, ultimaLiga = null;
   function inicia() {
+    montaSeletor();
     try {
       window.renderBacktest = function () { if (ultimo) desenha(ultimo, ultimaLiga); };
     } catch (e) {}
