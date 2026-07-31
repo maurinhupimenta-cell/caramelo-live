@@ -1795,7 +1795,37 @@
   "consumidas": {
    "euro": 1785531213112
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:34",
+     "jogo": "Marrocos x Jordânia",
+     "odd": 2.25
+    },
+    {
+     "h": "23:37",
+     "jogo": "Gana x Canadá",
+     "odd": 2.5
+    },
+    {
+     "h": "23:40",
+     "jogo": "Egito x EUA",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time Canadá",
+   "alvo": {
+    "h": "23:34",
+    "jogo": "Marrocos x Jordânia",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785536735802
+   },
+   "iniciadoEm": 1785536735802
+  },
   "cooldown": {
    "copa": 1785527906907,
    "premier": 1785527120807,
@@ -1822,21 +1852,27 @@
    "2026-07-31": -48
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.02",
-   "n": 14,
-   "start": 1
+   "tipo": "time",
+   "chave": "Canadá",
+   "n": 23,
+   "start": 3
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -11.1,
-  "ciclos": 794,
+  "ciclos": 795,
   "greens": 544,
   "redsCiclo": 80,
   "aborts": 0,
-  "descartes": 170,
+  "descartes": 171,
   "historico": [
+   {
+    "quando": "2026-07-31T22:25:36.110Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-07-31T20:41:27.521Z",
     "resultado": "GREEN",
