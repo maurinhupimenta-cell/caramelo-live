@@ -1699,7 +1699,37 @@
   "consumidas": {
    "euro": 1785505204640
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:49",
+     "jogo": "Espanha x Egito",
+     "odd": 2.1
+    },
+    {
+     "h": "14:52",
+     "jogo": "Gana x França",
+     "odd": 2.3
+    },
+    {
+     "h": "14:55",
+     "jogo": "Nova Zelândia x Suíça",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "seq RRGR",
+   "alvo": {
+    "h": "14:49",
+    "jogo": "Espanha x Egito",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785505739347
+   },
+   "iniciadoEm": 1785505739347
+  },
   "cooldown": {
    "copa": 1785500504452,
    "premier": 1785501713540,
@@ -1726,9 +1756,9 @@
    "2026-07-31": -33.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":11",
-   "n": 14,
+   "tipo": "seq",
+   "chave": "RRGR",
+   "n": 12,
    "start": 1
   },
   "_obs": {
