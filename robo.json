@@ -1850,18 +1850,24 @@
    "tipo": "odd",
    "chave": "2.02",
    "n": 14,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -12,
-  "ciclos": 793,
-  "greens": 543,
+  "saldo": -11.1,
+  "ciclos": 794,
+  "greens": 544,
   "redsCiclo": 80,
   "aborts": 0,
   "descartes": 170,
   "historico": [
+   {
+    "quando": "2026-07-31T20:41:27.521Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Itália x Alemanha @1.93 (tiro 1) · gatilho: odd 1.93"
+   },
    {
     "quando": "2026-07-31T20:35:41.207Z",
     "resultado": "GREEN",
@@ -3384,41 +3390,12 @@
   "consumidas": {
    "copa": 1785528509908,
    "super": 1785529587106,
-   "premier": 1785530141011
+   "premier": 1785530141011,
+   "euro": 1785530487220
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:38",
-     "jogo": "Itália x Alemanha",
-     "odd": 1.93
-    },
-    {
-     "h": "21:41",
-     "jogo": "Dinamarca x Bélgica",
-     "odd": 1.98
-    },
-    {
-     "h": "21:44",
-     "jogo": "Itália x Albânia",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "odd 1.93",
-   "alvo": {
-    "h": "21:38",
-    "jogo": "Itália x Alemanha",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1785530152410
-   },
-   "iniciadoEm": 1785530152410
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785525627015,
+   "euro": 1785530487220,
    "super": 1785529587106,
    "premier": 1785530141011,
    "copa": 1785528509908
@@ -3439,13 +3416,13 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 15.5
+   "2026-07-31": 16.4
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "1.93",
-   "n": 27,
-   "start": 1
+   "chave": "1.83",
+   "n": 14,
+   "start": 2
   },
   "_obs": {}
  }
