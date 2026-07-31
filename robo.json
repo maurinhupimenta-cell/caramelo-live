@@ -1771,13 +1771,19 @@
   }
  },
  "ambas": {
-  "saldo": -9.3,
-  "ciclos": 778,
-  "greens": 532,
+  "saldo": -8.3,
+  "ciclos": 779,
+  "greens": 533,
   "redsCiclo": 78,
   "aborts": 0,
   "descartes": 168,
   "historico": [
+   {
+    "quando": "2026-07-31T15:32:27.009Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Gana x EUA @2 (tiro 1) · gatilho: time Equador"
+   },
    {
     "quando": "2026-07-31T15:26:29.213Z",
     "resultado": "GREEN",
@@ -3209,14 +3215,15 @@
   ],
   "consumidas": {
    "euro": 1785509581146,
-   "super": 1785511589106
+   "super": 1785511589106,
+   "copa": 1785511946816
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1785509581146,
    "super": 1785511589106,
    "premier": 1785446633933,
-   "copa": 1785507659042
+   "copa": 1785511946816
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -3234,13 +3241,13 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 18.2
+   "2026-07-31": 19.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Equador",
-   "n": 14,
-   "start": 3
+   "tipo": "seq",
+   "chave": "RGGG",
+   "n": 23,
+   "start": 1
   },
   "_obs": {}
  }
