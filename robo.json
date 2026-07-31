@@ -1825,13 +1825,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -15.5,
-  "ciclos": 790,
-  "greens": 540,
+  "saldo": -14.5,
+  "ciclos": 791,
+  "greens": 541,
   "redsCiclo": 80,
   "aborts": 0,
   "descartes": 170,
   "historico": [
+   {
+    "quando": "2026-07-31T20:08:30.011Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Marrocos x Brasil @1.98 (tiro 2) · gatilho: time Brasil"
+   },
    {
     "quando": "2026-07-31T19:56:27.311Z",
     "resultado": "GREEN_OBS",
@@ -3334,53 +3340,15 @@
    }
   ],
   "consumidas": {
-   "super": 1785524906408,
-   "euro": 1785525627015
+   "euro": 1785525627015,
+   "copa": 1785528509908
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "21:01",
-     "jogo": "RD Congo x Noruega",
-     "odd": 1.85
-    },
-    {
-     "h": "21:04",
-     "jogo": "Marrocos x Brasil",
-     "odd": 1.98
-    },
-    {
-     "h": "21:07",
-     "jogo": "Haiti x Canadá",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "time Brasil",
-   "alvo": {
-    "h": "21:04",
-    "jogo": "Marrocos x Brasil",
-    "odd": 1.98,
-    "unidades": 2,
-    "desde": 1785528268712
-   },
-   "iniciadoEm": 1785527789316,
-   "tiros": [
-    {
-     "h": "21:01",
-     "jogo": "RD Congo x Noruega",
-     "odd": 1.85,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785525627015,
    "super": 1785524906408,
    "premier": 1785446633933,
-   "copa": 1785524186206
+   "copa": 1785528509908
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -3398,13 +3366,13 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 12
+   "2026-07-31": 13
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Haiti",
-   "n": 13,
-   "start": 1
+   "chave": "Brasil",
+   "n": 15,
+   "start": 3
   },
   "_obs": {}
  }
