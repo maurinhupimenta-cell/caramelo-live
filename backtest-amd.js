@@ -18,6 +18,20 @@
   var INTERVALO = 90000;
   var cache = {}, buscando = {};
   var meuHtml = null, escrevendo = false, observando = false;
+  var chaveAtual = null;   // liga|mercado desenhado por ultimo
+
+  // mercados que a fonte NAO precifica: sem odd nao ha EV, e sem EV nao ha indicacao.
+  var SEM_ODD = { ge5: "5+ gols" };
+
+  function avisa(txt) {
+    var tb = document.getElementById("backtest");
+    if (!tb) return;
+    escrevendo = true;
+    tb.innerHTML = '<tr><td colspan="7">' + txt + "</td></tr>";
+    meuHtml = tb.innerHTML;
+    escrevendo = false;
+    vigiaTabela(tb);
+  }
 
   // O dashboard reescreve a tabela por chamada interna (nao passa pelo window),
   // entao um observador devolve o conteudo do motor assim que ela e sobreposta.
@@ -127,11 +141,22 @@
   function roda() {
     if (typeof AMD_MOTOR === "undefined" || !AMD_MOTOR.backtest) return;
     var liga = ligaAtual(), mkt = mercadoAtual();
+    var chave = liga + "|" + mkt;
+    if (chave !== chaveAtual) {          // trocou de liga/mercado: nunca deixar a tabela velha
+      chaveAtual = chave;
+      meuHtml = null;
+      avisa("calculando " + mkt.toUpperCase() + " · " + liga + "…");
+    }
+    if (SEM_ODD[mkt]) {
+      avisa("A fonte não fornece odd para " + SEM_ODD[mkt] +
+            " — sem odd não há EV, e sem EV não há indicação. Backtest indisponível neste mercado.");
+      return;
+    }
     buscar(liga).then(function (jogos) {
       if (!jogos || jogos.length < 160) return;   // o backtest precisa de base
       var bt;
       try { bt = AMD_MOTOR.backtest(jogos, mkt, 150); } catch (e) { return; }
-      if (!bt || bt.erro) return;
+      if (!bt || bt.erro) { avisa("sem base suficiente para o backtest deste mercado agora"); return; }
       ultimo = bt; ultimaLiga = liga;
       desenha(bt, liga);
     });
@@ -146,10 +171,11 @@
     } catch (e) {}
     roda();
     setInterval(roda, INTERVALO);
-    ["#markets", ".tabrow", "#cligaMenu", "#qtd"].forEach(function (sel) {
-      var el = document.querySelector(sel);
-      if (el) el.addEventListener("click", function () { setTimeout(roda, 350); });
-    });
+    document.addEventListener("click", function (e) {
+      var alvo = e.target;
+      if (!alvo || !alvo.closest) return;
+      if (alvo.closest("#markets, .tabrow, #cligaMenu, #qtd, #ligaOpts")) setTimeout(roda, 300);
+    }, true);
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", inicia);
   else inicia();
