@@ -1575,7 +1575,45 @@
    "premier": 1785482312342,
    "euro": 1785482564947
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "08:22",
+     "jogo": "Qatar x Iraque",
+     "odd": 2.5
+    },
+    {
+     "h": "08:25",
+     "jogo": "EUA x Noruega",
+     "odd": 2.15
+    },
+    {
+     "h": "08:28",
+     "jogo": "Paraguai x Inglaterra",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "odd 2.5",
+   "alvo": {
+    "h": "08:25",
+    "jogo": "EUA x Noruega",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1785482685046
+   },
+   "iniciadoEm": 1785482567137,
+   "tiros": [
+    {
+     "h": "08:22",
+     "jogo": "Qatar x Iraque",
+     "odd": 2.5,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1785477028689,
    "premier": 1785482312342,
@@ -1602,8 +1640,8 @@
    "2026-07-31": -15.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.5",
+   "tipo": "seq",
+   "chave": "RRGR",
    "n": 8,
    "start": 1
   },
@@ -2997,8 +3035,8 @@
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Romênia",
-   "n": 16,
-   "start": 3
+   "n": 17,
+   "start": 2
   },
   "_obs": {}
  }
