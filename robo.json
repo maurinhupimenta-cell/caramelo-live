@@ -1739,13 +1739,19 @@
   }
  },
  "ambas": {
-  "saldo": -13.7,
-  "ciclos": 773,
-  "greens": 527,
+  "saldo": -12.8,
+  "ciclos": 774,
+  "greens": 528,
   "redsCiclo": 78,
   "aborts": 0,
   "descartes": 168,
   "historico": [
+   {
+    "quando": "2026-07-31T13:46:58.745Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Geórgia x Países Baixos @1.93 (tiro 1) · gatilho: odd 1.93"
+   },
    {
     "quando": "2026-07-31T13:00:44.941Z",
     "resultado": "GREEN",
@@ -3147,11 +3153,12 @@
   ],
   "consumidas": {
    "super": 1785502508138,
-   "copa": 1785502844742
+   "copa": 1785502844742,
+   "euro": 1785505618638
   },
   "ciclo": null,
   "cooldown": {
-   "euro": 1785501706947,
+   "euro": 1785505618638,
    "super": 1785502508138,
    "premier": 1785446633933,
    "copa": 1785502844742
@@ -3172,13 +3179,13 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 13.8
+   "2026-07-31": 14.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":07",
-   "n": 14,
-   "start": 2
+   "tipo": "odd",
+   "chave": "1.93",
+   "n": 18,
+   "start": 1
   },
   "_obs": {}
  }
