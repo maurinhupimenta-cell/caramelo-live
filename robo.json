@@ -1926,8 +1926,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "09:45",
@@ -1947,13 +1947,21 @@
    ],
    "gatilho": "coluna :48",
    "alvo": {
-    "h": "09:45",
-    "jogo": "Everton x Tottenham",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1785573711753
+    "h": "09:48",
+    "jogo": "Islington x Newcastle",
+    "odd": 2.07,
+    "unidades": 2,
+    "desde": 1785574064260
    },
-   "iniciadoEm": 1785573711753
+   "iniciadoEm": 1785573711753,
+   "tiros": [
+    {
+     "h": "09:45",
+     "jogo": "Everton x Tottenham",
+     "odd": 2.35,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785537806885,
@@ -1983,9 +1991,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":48",
+   "chave": ":57",
    "n": 9,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  },
@@ -3611,8 +3619,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "09:42",
@@ -3632,11 +3640,11 @@
    ],
    "gatilho": "time Tottenham",
    "alvo": {
-    "h": "09:45",
-    "jogo": "Everton x Tottenham",
-    "odd": 2,
-    "unidades": 2,
-    "desde": 1785573883362
+    "h": "09:48",
+    "jogo": "Islington x Newcastle",
+    "odd": 1.9,
+    "unidades": 4,
+    "desde": 1785574064462
    },
    "iniciadoEm": 1785573179161,
    "tiros": [
@@ -3645,6 +3653,12 @@
      "jogo": "Newcastle x Islington",
      "odd": 1.85,
      "unidades": 1
+    },
+    {
+     "h": "09:45",
+     "jogo": "Everton x Tottenham",
+     "odd": 2,
+     "unidades": 2
     }
    ]
   },
@@ -3674,8 +3688,8 @@
    "2026-08-01": 11.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGR",
+   "tipo": "coluna",
+   "chave": ":51",
    "n": 9,
    "start": 1
   },
