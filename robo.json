@@ -3532,8 +3532,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "07:50",
@@ -3553,11 +3553,11 @@
    ],
    "gatilho": "odd 2.02",
    "alvo": {
-    "h": "07:53",
-    "jogo": "Romênia x Polônia",
-    "odd": 2.02,
-    "unidades": 2,
-    "desde": 1785567173465
+    "h": "07:56",
+    "jogo": "Sérvia x Geórgia",
+    "odd": 2.2,
+    "unidades": 4,
+    "desde": 1785567354156
    },
    "iniciadoEm": 1785566633765,
    "tiros": [
@@ -3566,6 +3566,12 @@
      "jogo": "Suíça x Eslovênia",
      "odd": 2.15,
      "unidades": 1
+    },
+    {
+     "h": "07:53",
+     "jogo": "Romênia x Polônia",
+     "odd": 2.02,
+     "unidades": 2
     }
    ]
   },
@@ -3595,10 +3601,10 @@
    "2026-08-01": 7.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "República Tcheca",
-   "n": 11,
-   "start": 2
+   "tipo": "seq",
+   "chave": "RRRR",
+   "n": 14,
+   "start": 1
   },
   "_obs": {}
  }
