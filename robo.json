@@ -1966,8 +1966,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "13:58",
@@ -1987,13 +1987,21 @@
    ],
    "gatilho": "seq RGGGR",
    "alvo": {
-    "h": "13:58",
-    "jogo": "Bogota x Penarol",
-    "odd": 2.75,
-    "unidades": 1,
-    "desde": 1785589095956
+    "h": "14:01",
+    "jogo": "Quito x Montevideo",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1785589348154
    },
-   "iniciadoEm": 1785589095956
+   "iniciadoEm": 1785589095956,
+   "tiros": [
+    {
+     "h": "13:58",
+     "jogo": "Bogota x Penarol",
+     "odd": 2.75,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785537806885,
@@ -3717,8 +3725,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "13:58",
@@ -3738,11 +3746,11 @@
    ],
    "gatilho": "seq RRRG",
    "alvo": {
-    "h": "14:01",
-    "jogo": "Escócia x Jordânia",
+    "h": "14:04",
+    "jogo": "Colômbia x Irã",
     "odd": 2.15,
-    "unidades": 2,
-    "desde": 1785589346054
+    "unidades": 4,
+    "desde": 1785589466658
    },
    "iniciadoEm": 1785588894056,
    "tiros": [
@@ -3751,6 +3759,12 @@
      "jogo": "Bósnia e Herzegovina x Suécia",
      "odd": 2.05,
      "unidades": 1
+    },
+    {
+     "h": "14:01",
+     "jogo": "Escócia x Jordânia",
+     "odd": 2.15,
+     "unidades": 2
     }
    ]
   },
