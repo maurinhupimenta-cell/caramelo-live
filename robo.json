@@ -1805,7 +1805,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:08",
+     "jogo": "Países Baixos x Ucrânia",
+     "odd": 2.15
+    },
+    {
+     "h": "02:11",
+     "jogo": "Suíça x França",
+     "odd": 2.02
+    },
+    {
+     "h": "02:14",
+     "jogo": "Alemanha x Hungria",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "seq RRRR",
+   "alvo": {
+    "h": "02:08",
+    "jogo": "Países Baixos x Ucrânia",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785546325458
+   },
+   "iniciadoEm": 1785546325458
+  },
   "cooldown": {
    "copa": 1785537806885,
    "premier": 1785527120807,
@@ -1832,8 +1862,8 @@
    "2026-07-31": -44.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.05",
+   "tipo": "seq",
+   "chave": "RRRR",
    "n": 9,
    "start": 1
   },
