@@ -1871,8 +1871,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "06:22",
@@ -1892,13 +1892,21 @@
    ],
    "gatilho": "time Guayaquil",
    "alvo": {
-    "h": "06:22",
-    "jogo": "Lima x Medellin",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785561566059
+    "h": "06:25",
+    "jogo": "Porto Alegre x Guayaquil",
+    "odd": 2.45,
+    "unidades": 2,
+    "desde": 1785562107068
    },
-   "iniciadoEm": 1785561566059
+   "iniciadoEm": 1785561566059,
+   "tiros": [
+    {
+     "h": "06:22",
+     "jogo": "Lima x Medellin",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785537806885,
@@ -1930,7 +1938,7 @@
    "tipo": "time",
    "chave": "Guayaquil",
    "n": 10,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
