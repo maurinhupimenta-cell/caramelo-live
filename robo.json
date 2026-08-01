@@ -2132,13 +2132,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -9.1,
-  "ciclos": 831,
-  "greens": 571,
+  "saldo": -7.9,
+  "ciclos": 832,
+  "greens": 572,
   "redsCiclo": 84,
   "aborts": 0,
   "descartes": 176,
   "historico": [
+   {
+    "quando": "2026-08-01T18:54:25.957Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Inglaterra x Uzbequistão @2.075 (tiro 2) · gatilho: time Uzbequistão"
+   },
    {
     "quando": "2026-08-01T18:53:42.055Z",
     "resultado": "GREEN_OBS",
@@ -3887,52 +3893,15 @@
    }
   ],
   "consumidas": {
-   "euro": 1785607105566
+   "euro": 1785607105566,
+   "copa": 1785610465765
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "19:46",
-     "jogo": "Brasil x Nova Zelândia",
-     "odd": 2
-    },
-    {
-     "h": "19:49",
-     "jogo": "Inglaterra x Uzbequistão",
-     "odd": 2.075
-    },
-    {
-     "h": "19:52",
-     "jogo": "Suíça x Turquia",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "time Uzbequistão",
-   "alvo": {
-    "h": "19:49",
-    "jogo": "Inglaterra x Uzbequistão",
-    "odd": 2.075,
-    "unidades": 2,
-    "desde": 1785610165663
-   },
-   "iniciadoEm": 1785609866254,
-   "tiros": [
-    {
-     "h": "19:46",
-     "jogo": "Brasil x Nova Zelândia",
-     "odd": 2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785607105566,
    "super": 1785537627776,
    "premier": 1785606819763,
-   "copa": 1785606265960
+   "copa": 1785610465765
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -3951,13 +3920,13 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": -2.1
+   "2026-08-01": -0.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Áustria",
-   "n": 11,
-   "start": 2
+   "tipo": "seq",
+   "chave": "GRGGG",
+   "n": 9,
+   "start": 1
   },
   "_obs": {}
  }
