@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -156.1,
-  "ciclos": 795,
-  "greens": 491,
+  "saldo": -155.1,
+  "ciclos": 796,
+  "greens": 492,
   "redsCiclo": 132,
   "aborts": 0,
   "descartes": 172,
   "historico": [
+   {
+    "quando": "2026-08-01T16:36:26.660Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · City x Wolverhampton @1.98 (tiro 1) · gatilho: coluna :36"
+   },
    {
     "quando": "2026-08-01T16:22:24.154Z",
     "resultado": "GREEN",
@@ -2010,42 +2016,13 @@
    }
   ],
   "consumidas": {
-   "super": 1785601343958
+   "super": 1785601343958,
+   "premier": 1785602186358
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:33",
-     "jogo": "City x Wolverhampton",
-     "odd": 1.98
-    },
-    {
-     "h": "17:36",
-     "jogo": "United x Tottenham",
-     "odd": 2.45
-    },
-    {
-     "h": "17:39",
-     "jogo": "Everton x Leicester",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "coluna :36",
-   "alvo": {
-    "h": "17:33",
-    "jogo": "City x Wolverhampton",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785601447366
-   },
-   "iniciadoEm": 1785601447366
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785590550260,
-   "premier": 1785592293468,
+   "premier": 1785602186358,
    "euro": 1785568813460,
    "super": 1785601343958
   },
@@ -2067,11 +2044,11 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": -0.3
+   "2026-08-01": 0.7
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":36",
+   "chave": ":48",
    "n": 17,
    "start": 3
   },
