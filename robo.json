@@ -1921,8 +1921,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "09:13",
@@ -1942,13 +1942,21 @@
    ],
    "gatilho": "seq RGGG",
    "alvo": {
-    "h": "09:13",
-    "jogo": "Avellaneda x Montevideo",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785571995359
+    "h": "09:16",
+    "jogo": "Santiago x Buenos Aires",
+    "odd": 1.95,
+    "unidades": 2,
+    "desde": 1785572175357
    },
-   "iniciadoEm": 1785571995359
+   "iniciadoEm": 1785571995359,
+   "tiros": [
+    {
+     "h": "09:13",
+     "jogo": "Avellaneda x Montevideo",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785537806885,
@@ -1977,10 +1985,10 @@
    "2026-08-01": -1.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGG",
-   "n": 10,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":22",
+   "n": 9,
+   "start": 2
   },
   "_obs": {}
  },
