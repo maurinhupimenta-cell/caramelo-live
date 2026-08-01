@@ -2019,13 +2019,19 @@
   }
  },
  "ambas": {
-  "saldo": -2.1,
-  "ciclos": 819,
-  "greens": 564,
+  "saldo": -1.4,
+  "ciclos": 820,
+  "greens": 565,
   "redsCiclo": 82,
   "aborts": 0,
   "descartes": 173,
   "historico": [
+   {
+    "quando": "2026-08-01T13:24:32.855Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "premier · Watford x Brighton @1.87 (tiro 2) · gatilho: seq GGGRR"
+   },
    {
     "quando": "2026-08-01T13:10:29.963Z",
     "resultado": "RED_CICLO",
@@ -3703,43 +3709,14 @@
   ],
   "consumidas": {
    "euro": 1785587693167,
-   "copa": 1785589829855
+   "copa": 1785589829855,
+   "premier": 1785590672661
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:18",
-     "jogo": "Tottenham x Everton",
-     "odd": 2.02
-    },
-    {
-     "h": "14:21",
-     "jogo": "Watford x Brighton",
-     "odd": 1.87
-    },
-    {
-     "h": "14:24",
-     "jogo": "Aston x Leeds",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "seq GGGRR",
-   "alvo": {
-    "h": "14:18",
-    "jogo": "Tottenham x Everton",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1785590300059
-   },
-   "iniciadoEm": 1785590300059
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785587693167,
    "super": 1785537627776,
-   "premier": 1785586664554,
+   "premier": 1785590672661,
    "copa": 1785589829855
   },
   "dias": {
@@ -3759,12 +3736,12 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": 4.9
+   "2026-08-01": 5.6
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GGGRR",
-   "n": 11,
+   "chave": "RRGRG",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
