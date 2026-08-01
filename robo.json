@@ -2104,7 +2104,37 @@
    "copa": 1785612411066,
    "euro": 1785613527156
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:18",
+     "jogo": "Watford x United",
+     "odd": 2.25
+    },
+    {
+     "h": "21:21",
+     "jogo": "Chelsea x Tottenham",
+     "odd": 2.4
+    },
+    {
+     "h": "21:24",
+     "jogo": "Southampton x Brighton",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "seq GGGRG",
+   "alvo": {
+    "h": "21:18",
+    "jogo": "Watford x United",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785615292555
+   },
+   "iniciadoEm": 1785615292555
+  },
   "cooldown": {
    "copa": 1785612411066,
    "premier": 1785611158458,
@@ -2132,17 +2162,12 @@
    "2026-08-01": -9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.55",
-   "n": 11,
-   "start": 2
+   "tipo": "seq",
+   "chave": "GGGRG",
+   "n": 13,
+   "start": 1
   },
-  "_obs": {
-   "premier": {
-    "desde": 1785615281359,
-    "gatilho": "seq GGGRG"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -14.9,
@@ -3989,10 +4014,10 @@
    "2026-08-01": -7.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGGR",
-   "n": 15,
-   "start": 1
+   "tipo": "time",
+   "chave": "Costa do Marfim",
+   "n": 9,
+   "start": 2
   },
   "_obs": {}
  }
