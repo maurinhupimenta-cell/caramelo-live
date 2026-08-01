@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -154.3,
-  "ciclos": 782,
-  "greens": 483,
+  "saldo": -153.3,
+  "ciclos": 783,
+  "greens": 484,
   "redsCiclo": 130,
   "aborts": 0,
   "descartes": 169,
   "historico": [
+   {
+    "quando": "2026-08-01T09:59:38.461Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · City x Brighton @1.98 (tiro 1) · gatilho: coluna :00"
+   },
    {
     "quando": "2026-08-01T09:22:55.666Z",
     "resultado": "GREEN",
@@ -1932,42 +1938,13 @@
    }
   ],
   "consumidas": {
-   "super": 1785576175561
+   "super": 1785576175561,
+   "premier": 1785578378355
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "10:57",
-     "jogo": "City x Brighton",
-     "odd": 1.98
-    },
-    {
-     "h": "11:00",
-     "jogo": "Burnley x Brentford",
-     "odd": 2.2
-    },
-    {
-     "h": "11:03",
-     "jogo": "Norwich x Tottenham",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "coluna :00",
-   "alvo": {
-    "h": "10:57",
-    "jogo": "City x Brighton",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785577844961
-   },
-   "iniciadoEm": 1785577844961
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785537806885,
-   "premier": 1785574243563,
+   "premier": 1785578378355,
    "euro": 1785568813460,
    "super": 1785576175561
   },
@@ -1989,7 +1966,7 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": 1.5
+   "2026-08-01": 2.5
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
