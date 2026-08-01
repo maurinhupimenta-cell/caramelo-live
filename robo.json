@@ -2111,7 +2111,7 @@
    "tipo": "coluna",
    "chave": ":48",
    "n": 18,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
@@ -3849,8 +3849,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "18:37",
@@ -3870,13 +3870,21 @@
    ],
    "gatilho": "time Áustria",
    "alvo": {
-    "h": "18:37",
-    "jogo": "EUA x Argélia",
+    "h": "18:40",
+    "jogo": "Bélgica x Áustria",
     "odd": 2,
-    "unidades": 1,
-    "desde": 1785605486855
+    "unidades": 2,
+    "desde": 1785606092068
    },
-   "iniciadoEm": 1785605486855
+   "iniciadoEm": 1785605486855,
+   "tiros": [
+    {
+     "h": "18:37",
+     "jogo": "EUA x Argélia",
+     "odd": 2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785593725856,
@@ -3907,7 +3915,7 @@
    "tipo": "coluna",
    "chave": ":48",
    "n": 18,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
