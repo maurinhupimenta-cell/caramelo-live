@@ -245,13 +245,19 @@
   }
  },
  "o25": {
-  "saldo": -156.6,
-  "ciclos": 780,
-  "greens": 481,
+  "saldo": -155.5,
+  "ciclos": 781,
+  "greens": 482,
   "redsCiclo": 130,
   "aborts": 0,
   "descartes": 169,
   "historico": [
+   {
+    "quando": "2026-08-01T08:50:43.758Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Islington x Newcastle @2.07 (tiro 2) · gatilho: coluna :48"
+   },
    {
     "quando": "2026-08-01T08:19:16.061Z",
     "resultado": "GREEN",
@@ -1922,50 +1928,13 @@
    }
   ],
   "consumidas": {
-   "super": 1785572355866
+   "super": 1785572355866,
+   "premier": 1785574243563
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "09:45",
-     "jogo": "Everton x Tottenham",
-     "odd": 2.35
-    },
-    {
-     "h": "09:48",
-     "jogo": "Islington x Newcastle",
-     "odd": 2.07
-    },
-    {
-     "h": "09:51",
-     "jogo": "Norwich x Palace",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "coluna :48",
-   "alvo": {
-    "h": "09:48",
-    "jogo": "Islington x Newcastle",
-    "odd": 2.07,
-    "unidades": 2,
-    "desde": 1785574064260
-   },
-   "iniciadoEm": 1785573711753,
-   "tiros": [
-    {
-     "h": "09:45",
-     "jogo": "Everton x Tottenham",
-     "odd": 2.35,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785537806885,
-   "premier": 1785570105364,
+   "premier": 1785574243563,
    "euro": 1785568813460,
    "super": 1785572355866
   },
@@ -1987,24 +1956,30 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": -0.8
+   "2026-08-01": 0.3
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":57",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": 4.5,
-  "ciclos": 808,
+  "saldo": -2.5,
+  "ciclos": 809,
   "greens": 557,
-  "redsCiclo": 80,
+  "redsCiclo": 81,
   "aborts": 0,
   "descartes": 171,
   "historico": [
+   {
+    "quando": "2026-08-01T08:50:43.966Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: time Tottenham"
+   },
    {
     "quando": "2026-08-01T08:01:53.960Z",
     "resultado": "GREEN",
@@ -3615,57 +3590,14 @@
    }
   ],
   "consumidas": {
-   "euro": 1785571313767
+   "euro": 1785571313767,
+   "premier": 1785574243857
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "09:42",
-     "jogo": "Newcastle x Islington",
-     "odd": 1.85
-    },
-    {
-     "h": "09:45",
-     "jogo": "Everton x Tottenham",
-     "odd": 2
-    },
-    {
-     "h": "09:48",
-     "jogo": "Islington x Newcastle",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "time Tottenham",
-   "alvo": {
-    "h": "09:48",
-    "jogo": "Islington x Newcastle",
-    "odd": 1.9,
-    "unidades": 4,
-    "desde": 1785574064462
-   },
-   "iniciadoEm": 1785573179161,
-   "tiros": [
-    {
-     "h": "09:42",
-     "jogo": "Newcastle x Islington",
-     "odd": 1.85,
-     "unidades": 1
-    },
-    {
-     "h": "09:45",
-     "jogo": "Everton x Tottenham",
-     "odd": 2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785571313767,
    "super": 1785537627776,
-   "premier": 1785569561456,
+   "premier": 1785574243857,
    "copa": 1785528509908
   },
   "dias": {
@@ -3685,11 +3617,11 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": 11.5
+   "2026-08-01": 4.5
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":51",
+   "chave": ":57",
    "n": 9,
    "start": 1
   },
