@@ -2188,13 +2188,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -14.9,
-  "ciclos": 841,
-  "greens": 577,
+  "saldo": -14,
+  "ciclos": 842,
+  "greens": 578,
   "redsCiclo": 86,
   "aborts": 0,
   "descartes": 178,
   "historico": [
+   {
+    "quando": "2026-08-01T23:04:25.760Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · Jordânia x Colômbia @1.93 (tiro 2) · gatilho: odd 2.15"
+   },
    {
     "quando": "2026-08-01T22:53:27.754Z",
     "resultado": "GREEN_OBS",
@@ -4005,52 +4011,15 @@
   "consumidas": {
    "super": 1785622284761,
    "euro": 1785623069357,
-   "premier": 1785624685060
+   "premier": 1785624685060,
+   "copa": 1785625465561
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "23:55",
-     "jogo": "Escócia x Argélia",
-     "odd": 2.15
-    },
-    {
-     "h": "23:58",
-     "jogo": "Jordânia x Colômbia",
-     "odd": 1.93
-    },
-    {
-     "h": "00:01",
-     "jogo": "Cabo Verde x Japão",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "odd 2.15",
-   "alvo": {
-    "h": "23:58",
-    "jogo": "Jordânia x Colômbia",
-    "odd": 1.93,
-    "unidades": 2,
-    "desde": 1785625229066
-   },
-   "iniciadoEm": 1785624809562,
-   "tiros": [
-    {
-     "h": "23:55",
-     "jogo": "Escócia x Argélia",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785623069357,
    "super": 1785622284761,
    "premier": 1785624685060,
-   "copa": 1785621207056
+   "copa": 1785625465561
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -4069,7 +4038,7 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": -7.9
+   "2026-08-01": -7
   },
   "_gatilhoAtual": {
    "tipo": "odd",
