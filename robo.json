@@ -1848,13 +1848,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -9.3,
-  "ciclos": 797,
-  "greens": 546,
+  "saldo": -7.9,
+  "ciclos": 798,
+  "greens": 547,
   "redsCiclo": 80,
   "aborts": 0,
   "descartes": 171,
   "historico": [
+   {
+    "quando": "2026-08-01T01:50:26.857Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "euro · Croácia x Eslovênia @2.2 (tiro 2) · gatilho: time Eslovênia"
+   },
    {
     "quando": "2026-07-31T23:05:26.260Z",
     "resultado": "GREEN",
@@ -3398,48 +3404,12 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "02:44",
-     "jogo": "Ucrânia x República Tcheca",
-     "odd": 2.15
-    },
-    {
-     "h": "02:47",
-     "jogo": "Croácia x Eslovênia",
-     "odd": 2.2
-    },
-    {
-     "h": "02:50",
-     "jogo": "Turquia x Polônia",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "time Eslovênia",
-   "alvo": {
-    "h": "02:47",
-    "jogo": "Croácia x Eslovênia",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1785548905365
-   },
-   "iniciadoEm": 1785548126760,
-   "tiros": [
-    {
-     "h": "02:44",
-     "jogo": "Ucrânia x República Tcheca",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "euro": 1785549026661
   },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785539126067,
+   "euro": 1785549026661,
    "super": 1785537627776,
    "premier": 1785530141011,
    "copa": 1785528509908
@@ -3460,7 +3430,7 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 18.2
+   "2026-07-31": 19.6
   },
   "_gatilhoAtual": {
    "tipo": "odd",
