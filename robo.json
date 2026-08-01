@@ -1908,16 +1908,27 @@
    "n": 10,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1785562721962,
+    "gatilho": "seq RRRR"
+   }
+  }
  },
  "ambas": {
-  "saldo": -2.1,
-  "ciclos": 803,
-  "greens": 552,
+  "saldo": -1.1,
+  "ciclos": 804,
+  "greens": 553,
   "redsCiclo": 80,
   "aborts": 0,
   "descartes": 171,
   "historico": [
+   {
+    "quando": "2026-08-01T05:39:26.956Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Países Baixos x Turquia @1.98 (tiro 1) · gatilho: time República Tcheca"
+   },
    {
     "quando": "2026-08-01T04:36:27.156Z",
     "resultado": "GREEN",
@@ -3497,40 +3508,12 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:35",
-     "jogo": "Países Baixos x Turquia",
-     "odd": 1.98
-    },
-    {
-     "h": "06:38",
-     "jogo": "Alemanha x República Tcheca",
-     "odd": 2.1
-    },
-    {
-     "h": "06:41",
-     "jogo": "Sérvia x Ucrânia",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "time República Tcheca",
-   "alvo": {
-    "h": "06:35",
-    "jogo": "Países Baixos x Turquia",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785562134061
-   },
-   "iniciadoEm": 1785562134061
+  "consumidas": {
+   "euro": 1785562766764
   },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785557850160,
+   "euro": 1785562766764,
    "super": 1785537627776,
    "premier": 1785558986955,
    "copa": 1785528509908
@@ -3552,7 +3535,7 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": 4.9
+   "2026-08-01": 5.9
   },
   "_gatilhoAtual": {
    "tipo": "time",
