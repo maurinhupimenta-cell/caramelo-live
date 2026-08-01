@@ -1995,7 +1995,7 @@
    "tipo": "coluna",
    "chave": ":00",
    "n": 10,
-   "start": 2
+   "start": 1
   },
   "_obs": {
    "euro": {
@@ -3644,8 +3644,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "10:54",
@@ -3665,13 +3665,21 @@
    ],
    "gatilho": "seq RRGG",
    "alvo": {
-    "h": "10:54",
-    "jogo": "Newcastle x Norwich",
-    "odd": 1.85,
-    "unidades": 1,
-    "desde": 1785577852056
+    "h": "10:57",
+    "jogo": "City x Brighton",
+    "odd": 1.9,
+    "unidades": 2,
+    "desde": 1785578207057
    },
-   "iniciadoEm": 1785577852056
+   "iniciadoEm": 1785577852056,
+   "tiros": [
+    {
+     "h": "10:54",
+     "jogo": "Newcastle x Norwich",
+     "odd": 1.85,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785575095062,
@@ -3699,10 +3707,10 @@
    "2026-08-01": 5.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGG",
-   "n": 10,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":06",
+   "n": 11,
+   "start": 2
   },
   "_obs": {}
  }
