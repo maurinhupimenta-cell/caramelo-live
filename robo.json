@@ -231,13 +231,19 @@
   }
  },
  "o25": {
-  "saldo": -151.3,
-  "ciclos": 771,
+  "saldo": -158.3,
+  "ciclos": 772,
   "greens": 475,
-  "redsCiclo": 128,
+  "redsCiclo": 129,
   "aborts": 0,
   "descartes": 168,
   "historico": [
+   {
+    "quando": "2026-08-01T04:32:58.560Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: time Chelsea"
+   },
    {
     "quando": "2026-08-01T04:19:14.557Z",
     "resultado": "GREEN",
@@ -1855,56 +1861,13 @@
   ],
   "consumidas": {
    "euro": 1785556105661,
-   "super": 1785557954355
+   "super": 1785557954355,
+   "premier": 1785558778457
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "05:24",
-     "jogo": "Leicester x Islington",
-     "odd": 2.25
-    },
-    {
-     "h": "05:27",
-     "jogo": "Burnley x Chelsea",
-     "odd": 2.1
-    },
-    {
-     "h": "05:30",
-     "jogo": "Wolverhampton x Leicester",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "time Chelsea",
-   "alvo": {
-    "h": "05:30",
-    "jogo": "Wolverhampton x Leicester",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1785558589556
-   },
-   "iniciadoEm": 1785557956362,
-   "tiros": [
-    {
-     "h": "05:24",
-     "jogo": "Leicester x Islington",
-     "odd": 2.25,
-     "unidades": 1
-    },
-    {
-     "h": "05:27",
-     "jogo": "Burnley x Chelsea",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785537806885,
-   "premier": 1785554267559,
+   "premier": 1785558778457,
    "euro": 1785556105661,
    "super": 1785557954355
   },
@@ -1926,7 +1889,7 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": 4.5
+   "2026-08-01": -2.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
@@ -3522,8 +3485,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:30",
@@ -3543,13 +3506,21 @@
    ],
    "gatilho": "time Wolverhampton",
    "alvo": {
-    "h": "05:30",
-    "jogo": "Wolverhampton x Leicester",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1785558510865
+    "h": "05:33",
+    "jogo": "West Ham x Leeds",
+    "odd": 2.35,
+    "unidades": 2,
+    "desde": 1785558778658
    },
-   "iniciadoEm": 1785558510865
+   "iniciadoEm": 1785558510865,
+   "tiros": [
+    {
+     "h": "05:30",
+     "jogo": "Wolverhampton x Leicester",
+     "odd": 1.9,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785557850160,
