@@ -1982,13 +1982,19 @@
   }
  },
  "ambas": {
-  "saldo": -0.7,
-  "ciclos": 812,
-  "greens": 559,
+  "saldo": 0.2,
+  "ciclos": 813,
+  "greens": 560,
   "redsCiclo": 81,
   "aborts": 0,
   "descartes": 172,
   "historico": [
+   {
+    "quando": "2026-08-01T10:05:53.959Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Alemanha x Bélgica @1.86 (tiro 1) · gatilho: odd 2.05"
+   },
    {
     "quando": "2026-08-01T09:59:38.756Z",
     "resultado": "GREEN",
@@ -3623,41 +3629,12 @@
    }
   ],
   "consumidas": {
-   "premier": 1785578378557
+   "premier": 1785578378557,
+   "euro": 1785578753763
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "11:02",
-     "jogo": "Alemanha x Bélgica",
-     "odd": 1.86
-    },
-    {
-     "h": "11:05",
-     "jogo": "Áustria x Eslováquia",
-     "odd": 2.05
-    },
-    {
-     "h": "11:08",
-     "jogo": "Bélgica x Romênia",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "odd 2.05",
-   "alvo": {
-    "h": "11:02",
-    "jogo": "Alemanha x Bélgica",
-    "odd": 1.86,
-    "unidades": 1,
-    "desde": 1785578696262
-   },
-   "iniciadoEm": 1785578696262
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785575095062,
+   "euro": 1785578753763,
    "super": 1785537627776,
    "premier": 1785578378557,
    "copa": 1785528509908
@@ -3679,7 +3656,7 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": 6.3
+   "2026-08-01": 7.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
