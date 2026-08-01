@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -166.9,
-  "ciclos": 808,
-  "greens": 497,
+  "saldo": -164.8,
+  "ciclos": 809,
+  "greens": 498,
   "redsCiclo": 135,
   "aborts": 0,
   "descartes": 176,
   "historico": [
+   {
+    "quando": "2026-08-01T19:45:27.262Z",
+    "resultado": "GREEN",
+    "unidades": 2.1,
+    "detalhe": "euro · Geórgia x Polônia @2.55 (tiro 2) · gatilho: odd 2.55"
+   },
    {
     "quando": "2026-08-01T19:26:51.259Z",
     "resultado": "GREEN",
@@ -2090,51 +2096,14 @@
   "consumidas": {
    "premier": 1785611158458,
    "super": 1785612328265,
-   "copa": 1785612411066
+   "copa": 1785612411066,
+   "euro": 1785613527156
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "20:38",
-     "jogo": "Hungria x Croácia",
-     "odd": 2.35
-    },
-    {
-     "h": "20:41",
-     "jogo": "Geórgia x Polônia",
-     "odd": 2.55
-    },
-    {
-     "h": "20:44",
-     "jogo": "Croácia x Romênia",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "odd 2.55",
-   "alvo": {
-    "h": "20:41",
-    "jogo": "Geórgia x Polônia",
-    "odd": 2.55,
-    "unidades": 2,
-    "desde": 1785613525258
-   },
-   "iniciadoEm": 1785612925355,
-   "tiros": [
-    {
-     "h": "20:38",
-     "jogo": "Hungria x Croácia",
-     "odd": 2.35,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785612411066,
    "premier": 1785611158458,
-   "euro": 1785608909054,
+   "euro": 1785613527156,
    "super": 1785612328265
   },
   "dias": {
@@ -2155,7 +2124,7 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": -11.1
+   "2026-08-01": -9
   },
   "_gatilhoAtual": {
    "tipo": "odd",
@@ -3933,7 +3902,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1785610465765,
    "premier": 1785611158760
   },
   "ciclo": null,
