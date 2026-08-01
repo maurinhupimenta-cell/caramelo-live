@@ -1886,7 +1886,37 @@
   "consumidas": {
    "premier": 1785566142163
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:40",
+     "jogo": "Buenos Aires x Santos",
+     "odd": 2.2
+    },
+    {
+     "h": "07:43",
+     "jogo": "Asuncion x Avellaneda",
+     "odd": 2.3
+    },
+    {
+     "h": "07:46",
+     "jogo": "Montevideo x Agua Branca",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "seq RGGG",
+   "alvo": {
+    "h": "07:40",
+    "jogo": "Buenos Aires x Santos",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785566415859
+   },
+   "iniciadoEm": 1785566415859
+  },
   "cooldown": {
    "copa": 1785537806885,
    "premier": 1785566142163,
@@ -1915,7 +1945,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRGRR",
+   "chave": "RGGG",
    "n": 8,
    "start": 1
   },
