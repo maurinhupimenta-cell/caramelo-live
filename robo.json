@@ -231,13 +231,19 @@
   }
  },
  "o25": {
-  "saldo": -158.3,
-  "ciclos": 772,
-  "greens": 475,
+  "saldo": -155.7,
+  "ciclos": 773,
+  "greens": 476,
   "redsCiclo": 129,
   "aborts": 0,
   "descartes": 168,
   "historico": [
+   {
+    "quando": "2026-08-01T05:09:30.360Z",
+    "resultado": "GREEN",
+    "unidades": 2.6,
+    "detalhe": "euro · Hungria x Áustria @2.4 (tiro 3) · gatilho: seq RRRR"
+   },
    {
     "quando": "2026-08-01T04:32:58.560Z",
     "resultado": "RED_CICLO",
@@ -1861,57 +1867,14 @@
   ],
   "consumidas": {
    "super": 1785557954355,
-   "premier": 1785558778457
+   "premier": 1785558778457,
+   "euro": 1785560970162
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "05:59",
-     "jogo": "Hungria x Eslovênia",
-     "odd": 2.8
-    },
-    {
-     "h": "06:02",
-     "jogo": "Albânia x Bélgica",
-     "odd": 2.45
-    },
-    {
-     "h": "06:05",
-     "jogo": "Hungria x Áustria",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "seq RRRR",
-   "alvo": {
-    "h": "06:05",
-    "jogo": "Hungria x Áustria",
-    "odd": 2.4,
-    "unidades": 4,
-    "desde": 1785560726759
-   },
-   "iniciadoEm": 1785560480956,
-   "tiros": [
-    {
-     "h": "05:59",
-     "jogo": "Hungria x Eslovênia",
-     "odd": 2.8,
-     "unidades": 1
-    },
-    {
-     "h": "06:02",
-     "jogo": "Albânia x Bélgica",
-     "odd": 2.45,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785537806885,
    "premier": 1785558778457,
-   "euro": 1785556105661,
+   "euro": 1785560970162,
    "super": 1785557954355
   },
   "dias": {
@@ -1932,7 +1895,7 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": -2.5
+   "2026-08-01": 0.1
   },
   "_gatilhoAtual": {
    "tipo": "seq",
