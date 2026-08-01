@@ -2146,7 +2146,37 @@
    "copa": 1785623190461,
    "premier": 1785623926866
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:44",
+     "jogo": "Bélgica x Croácia",
+     "odd": 2.15
+    },
+    {
+     "h": "23:47",
+     "jogo": "Eslovênia x Escócia",
+     "odd": 2.55
+    },
+    {
+     "h": "23:50",
+     "jogo": "Albânia x Alemanha",
+     "odd": 2.45
+    }
+   ],
+   "gatilho": "odd 2.55",
+   "alvo": {
+    "h": "23:44",
+    "jogo": "Bélgica x Croácia",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785623965061
+   },
+   "iniciadoEm": 1785623965061
+  },
   "cooldown": {
    "copa": 1785623190461,
    "premier": 1785623926866,
@@ -2174,10 +2204,10 @@
    "2026-08-01": -7.2
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":36",
-   "n": 23,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.55",
+   "n": 12,
+   "start": 3
   },
   "_obs": {}
  },
@@ -4049,7 +4079,7 @@
    "tipo": "coluna",
    "chave": ":48",
    "n": 23,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
