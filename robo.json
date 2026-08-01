@@ -1936,13 +1936,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": 2.3,
-  "ciclos": 806,
-  "greens": 555,
+  "saldo": 3.3,
+  "ciclos": 807,
+  "greens": 556,
   "redsCiclo": 80,
   "aborts": 0,
   "descartes": 171,
   "historico": [
+   {
+    "quando": "2026-08-01T07:32:41.559Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · United x Palace @2 (tiro 3) · gatilho: seq RGRG"
+   },
    {
     "quando": "2026-08-01T06:58:52.859Z",
     "resultado": "GREEN",
@@ -3541,57 +3547,14 @@
    }
   ],
   "consumidas": {
-   "euro": 1785567532662
+   "euro": 1785567532662,
+   "premier": 1785569561456
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "08:24",
-     "jogo": "Leeds x Brighton",
-     "odd": 2.02
-    },
-    {
-     "h": "08:27",
-     "jogo": "Islington x Everton",
-     "odd": 1.9
-    },
-    {
-     "h": "08:30",
-     "jogo": "United x Palace",
-     "odd": 2
-    }
-   ],
-   "gatilho": "seq RGRG",
-   "alvo": {
-    "h": "08:30",
-    "jogo": "United x Palace",
-    "odd": 2,
-    "unidades": 4,
-    "desde": 1785569379066
-   },
-   "iniciadoEm": 1785568843860,
-   "tiros": [
-    {
-     "h": "08:24",
-     "jogo": "Leeds x Brighton",
-     "odd": 2.02,
-     "unidades": 1
-    },
-    {
-     "h": "08:27",
-     "jogo": "Islington x Everton",
-     "odd": 1.9,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785567532662,
    "super": 1785537627776,
-   "premier": 1785565064860,
+   "premier": 1785569561456,
    "copa": 1785528509908
   },
   "dias": {
@@ -3611,13 +3574,13 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": 9.3
+   "2026-08-01": 10.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRG",
-   "n": 15,
-   "start": 1
+   "tipo": "time",
+   "chave": "Tottenham",
+   "n": 13,
+   "start": 2
   },
   "_obs": {}
  }
