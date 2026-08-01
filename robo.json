@@ -2133,7 +2133,37 @@
    "premier": 1785620188566,
    "super": 1785621687262
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:22",
+     "jogo": "Escócia x Egito",
+     "odd": 2.4
+    },
+    {
+     "h": "23:25",
+     "jogo": "Irã x Costa do Marfim",
+     "odd": 2.4
+    },
+    {
+     "h": "23:28",
+     "jogo": "Gana x Coreia do Sul",
+     "odd": 2.55
+    }
+   ],
+   "gatilho": "time Costa do Marfim",
+   "alvo": {
+    "h": "23:22",
+    "jogo": "Escócia x Egito",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1785622472062
+   },
+   "iniciadoEm": 1785622472062
+  },
   "cooldown": {
    "copa": 1785612411066,
    "premier": 1785620188566,
@@ -2161,21 +2191,27 @@
    "2026-08-01": -10
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGGG",
-   "n": 10,
-   "start": 1
+   "tipo": "time",
+   "chave": "Costa do Marfim",
+   "n": 9,
+   "start": 3
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -20.4,
-  "ciclos": 837,
-  "greens": 574,
+  "saldo": -17.8,
+  "ciclos": 838,
+  "greens": 575,
   "redsCiclo": 86,
   "aborts": 0,
   "descartes": 177,
   "historico": [
+   {
+    "quando": "2026-08-01T22:11:24.957Z",
+    "resultado": "GREEN",
+    "unidades": 2.6,
+    "detalhe": "super · Porto Alegre x Bogota @2.4 (tiro 3) · gatilho: coluna :04"
+   },
    {
     "quando": "2026-08-01T21:53:27.161Z",
     "resultado": "RED_CICLO",
@@ -3960,56 +3996,43 @@
    }
   ],
   "consumidas": {
-   "copa": 1785621207056
+   "copa": 1785621207056,
+   "super": 1785622284761
   },
   "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "23:01",
-     "jogo": "Rio de Janeiro x Belo Horizonte",
-     "odd": 1.85
+     "h": "23:14",
+     "jogo": "Hungria x Polônia",
+     "odd": 2.15
     },
     {
-     "h": "23:04",
-     "jogo": "Penarol x La Plata",
+     "h": "23:17",
+     "jogo": "República Tcheca x Sérvia",
      "odd": 2.25
     },
     {
-     "h": "23:07",
-     "jogo": "Porto Alegre x Bogota",
-     "odd": 2.4
+     "h": "23:20",
+     "jogo": "Turquia x Croácia",
+     "odd": 2.05
     }
    ],
-   "gatilho": "coluna :04",
+   "gatilho": "odd 2.25",
    "alvo": {
-    "h": "23:07",
-    "jogo": "Porto Alegre x Bogota",
-    "odd": 2.4,
-    "unidades": 4,
-    "desde": 1785622111368
+    "h": "23:14",
+    "jogo": "Hungria x Polônia",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785622286462
    },
-   "iniciadoEm": 1785621447456,
-   "tiros": [
-    {
-     "h": "23:01",
-     "jogo": "Rio de Janeiro x Belo Horizonte",
-     "odd": 1.85,
-     "unidades": 1
-    },
-    {
-     "h": "23:04",
-     "jogo": "Penarol x La Plata",
-     "odd": 2.25,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1785622286462
   },
   "cooldown": {
    "euro": 1785607105566,
-   "super": 1785537627776,
+   "super": 1785622284761,
    "premier": 1785617307160,
    "copa": 1785621207056
   },
@@ -4030,13 +4053,13 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": -13.4
+   "2026-08-01": -10.8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.25",
    "n": 12,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
