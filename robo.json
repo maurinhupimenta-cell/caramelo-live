@@ -244,12 +244,18 @@
  },
  "o25": {
   "saldo": -157.4,
-  "ciclos": 793,
+  "ciclos": 794,
   "greens": 490,
   "redsCiclo": 132,
   "aborts": 0,
-  "descartes": 171,
+  "descartes": 172,
   "historico": [
+   {
+    "quando": "2026-08-01T16:15:04.057Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho odd 2.35) — liga REARMADA"
+   },
    {
     "quando": "2026-08-01T16:15:01.454Z",
     "resultado": "DESCARTADO",
@@ -1999,35 +2005,35 @@
   ],
   "consumidas": {},
   "ciclo": {
-   "liga": "premier",
+   "liga": "super",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "16:06",
-     "jogo": "Norwich x United",
+     "h": "17:19",
+     "jogo": "Lima x La Boca",
+     "odd": 2.25
+    },
+    {
+     "h": "17:22",
+     "jogo": "Penarol x Belo Horizonte",
+     "odd": 2.25
+    },
+    {
+     "h": "17:25",
+     "jogo": "Sao Paulo x Santos",
      "odd": 2.2
-    },
-    {
-     "h": "16:09",
-     "jogo": "Liverpool x Aston",
-     "odd": 2.35
-    },
-    {
-     "h": "16:12",
-     "jogo": "Tottenham x Burnley",
-     "odd": 2.35
     }
    ],
-   "gatilho": "odd 2.35",
+   "gatilho": "coluna :22",
    "alvo": {
-    "h": "16:06",
-    "jogo": "Norwich x United",
-    "odd": 2.2,
+    "h": "17:19",
+    "jogo": "Lima x La Boca",
+    "odd": 2.25,
     "unidades": 1,
-    "desde": 1785596231358
+    "desde": 1785600904059
    },
-   "iniciadoEm": 1785596231358
+   "iniciadoEm": 1785600904059
   },
   "cooldown": {
    "copa": 1785590550260,
@@ -2056,10 +2062,10 @@
    "2026-08-01": -1.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.35",
-   "n": 12,
-   "start": 3
+   "tipo": "seq",
+   "chave": "GRGRR",
+   "n": 15,
+   "start": 1
   },
   "_obs": {
    "euro": {
@@ -2073,13 +2079,19 @@
   }
  },
  "ambas": {
-  "saldo": 2,
-  "ciclos": 824,
-  "greens": 568,
+  "saldo": 2.9,
+  "ciclos": 825,
+  "greens": 569,
   "redsCiclo": 82,
   "aborts": 0,
   "descartes": 174,
   "historico": [
+   {
+    "quando": "2026-08-01T16:15:08.360Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · City x Newcastle @1.87 (tiro 1) · gatilho: coluna :06"
+   },
    {
     "quando": "2026-08-01T14:52:25.562Z",
     "resultado": "GREEN",
@@ -3785,12 +3797,52 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": null,
+  "consumidas": {
+   "premier": 1785600908167
+  },
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "17:16",
+     "jogo": "Paraguai x Espanha",
+     "odd": 1.98
+    },
+    {
+     "h": "17:19",
+     "jogo": "Suíça x RD Congo",
+     "odd": 1.98
+    },
+    {
+     "h": "17:22",
+     "jogo": "Turquia x Canadá",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "time Espanha",
+   "alvo": {
+    "h": "17:19",
+    "jogo": "Suíça x RD Congo",
+    "odd": 1.98,
+    "unidades": 2,
+    "desde": 1785601140364
+   },
+   "iniciadoEm": 1785600911261,
+   "tiros": [
+    {
+     "h": "17:16",
+     "jogo": "Paraguai x Espanha",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1785593725856,
    "super": 1785537627776,
-   "premier": 1785594805655,
+   "premier": 1785600908167,
    "copa": 1785595945457
   },
   "dias": {
@@ -3810,13 +3862,13 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": 9
+   "2026-08-01": 9.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":06",
-   "n": 16,
-   "start": 2
+   "tipo": "seq",
+   "chave": "GRGRR",
+   "n": 8,
+   "start": 1
   },
   "_obs": {}
  }
