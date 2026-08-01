@@ -2068,8 +2068,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "19:57",
@@ -2089,11 +2089,11 @@
    ],
    "gatilho": "odd 2.05",
    "alvo": {
-    "h": "20:00",
-    "jogo": "Wolverhampton x Brentford",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1785610781664
+    "h": "20:03",
+    "jogo": "Southampton x Chelsea",
+    "odd": 2.3,
+    "unidades": 4,
+    "desde": 1785610961964
    },
    "iniciadoEm": 1785610434263,
    "tiros": [
@@ -2102,6 +2102,12 @@
      "jogo": "Brighton x Norwich",
      "odd": 2.05,
      "unidades": 1
+    },
+    {
+     "h": "20:00",
+     "jogo": "Wolverhampton x Brentford",
+     "odd": 2.15,
+     "unidades": 2
     }
    ]
   },
@@ -3905,8 +3911,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "19:57",
@@ -3926,11 +3932,11 @@
    ],
    "gatilho": "seq GRGGG",
    "alvo": {
-    "h": "20:00",
-    "jogo": "Wolverhampton x Brentford",
-    "odd": 1.93,
-    "unidades": 2,
-    "desde": 1785610782255
+    "h": "20:03",
+    "jogo": "Southampton x Chelsea",
+    "odd": 2,
+    "unidades": 4,
+    "desde": 1785610962161
    },
    "iniciadoEm": 1785610468056,
    "tiros": [
@@ -3939,6 +3945,12 @@
      "jogo": "Brighton x Norwich",
      "odd": 1.85,
      "unidades": 1
+    },
+    {
+     "h": "20:00",
+     "jogo": "Wolverhampton x Brentford",
+     "odd": 1.93,
+     "unidades": 2
     }
    ]
   },
@@ -3968,9 +3980,9 @@
    "2026-08-01": -0.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGGR",
-   "n": 14,
+   "tipo": "coluna",
+   "chave": ":06",
+   "n": 20,
    "start": 1
   },
   "_obs": {}
