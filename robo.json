@@ -3964,8 +3964,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "23:01",
@@ -3985,11 +3985,11 @@
    ],
    "gatilho": "coluna :04",
    "alvo": {
-    "h": "23:04",
-    "jogo": "Penarol x La Plata",
-    "odd": 2.25,
-    "unidades": 2,
-    "desde": 1785621927567
+    "h": "23:07",
+    "jogo": "Porto Alegre x Bogota",
+    "odd": 2.4,
+    "unidades": 4,
+    "desde": 1785622111368
    },
    "iniciadoEm": 1785621447456,
    "tiros": [
@@ -3998,6 +3998,12 @@
      "jogo": "Rio de Janeiro x Belo Horizonte",
      "odd": 1.85,
      "unidades": 1
+    },
+    {
+     "h": "23:04",
+     "jogo": "Penarol x La Plata",
+     "odd": 2.25,
+     "unidades": 2
     }
    ]
   },
@@ -4027,10 +4033,10 @@
    "2026-08-01": -13.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":04",
-   "n": 23,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.25",
+   "n": 12,
+   "start": 3
   },
   "_obs": {}
  }
