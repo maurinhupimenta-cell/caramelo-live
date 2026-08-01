@@ -3661,7 +3661,37 @@
   "consumidas": {
    "euro": 1785583553655
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:15",
+     "jogo": "Aston x West Ham",
+     "odd": 2.2
+    },
+    {
+     "h": "13:18",
+     "jogo": "Tottenham x Palace",
+     "odd": 2.1
+    },
+    {
+     "h": "13:21",
+     "jogo": "Leicester x Southampton",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "seq GGGR",
+   "alvo": {
+    "h": "13:15",
+    "jogo": "Aston x West Ham",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785586300655
+   },
+   "iniciadoEm": 1785586300655
+  },
   "cooldown": {
    "euro": 1785583553655,
    "super": 1785537627776,
@@ -3688,8 +3718,8 @@
    "2026-08-01": 9.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":26",
+   "tipo": "seq",
+   "chave": "GGGR",
    "n": 12,
    "start": 1
   },
