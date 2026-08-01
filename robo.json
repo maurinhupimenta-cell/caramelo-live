@@ -1857,7 +1857,45 @@
    "euro": 1785556105661,
    "super": 1785557954355
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "05:24",
+     "jogo": "Leicester x Islington",
+     "odd": 2.25
+    },
+    {
+     "h": "05:27",
+     "jogo": "Burnley x Chelsea",
+     "odd": 2.1
+    },
+    {
+     "h": "05:30",
+     "jogo": "Wolverhampton x Leicester",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time Chelsea",
+   "alvo": {
+    "h": "05:27",
+    "jogo": "Burnley x Chelsea",
+    "odd": 2.1,
+    "unidades": 2,
+    "desde": 1785558406062
+   },
+   "iniciadoEm": 1785557956362,
+   "tiros": [
+    {
+     "h": "05:24",
+     "jogo": "Leicester x Islington",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1785537806885,
    "premier": 1785554267559,
@@ -1886,9 +1924,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Chelsea",
+   "chave": "Leicester",
    "n": 12,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
