@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -146.6,
-  "ciclos": 787,
+  "saldo": -153.6,
+  "ciclos": 788,
   "greens": 488,
-  "redsCiclo": 130,
+  "redsCiclo": 131,
   "aborts": 0,
   "descartes": 169,
   "historico": [
+   {
+    "quando": "2026-08-01T13:07:28.359Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: seq RGGGR"
+   },
    {
     "quando": "2026-08-01T12:38:45.562Z",
     "resultado": "GREEN",
@@ -1962,58 +1968,15 @@
    }
   ],
   "consumidas": {
-   "premier": 1785587925456
+   "premier": 1785587925456,
+   "super": 1785589648254
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "13:58",
-     "jogo": "Bogota x Penarol",
-     "odd": 2.75
-    },
-    {
-     "h": "14:01",
-     "jogo": "Quito x Montevideo",
-     "odd": 2.2
-    },
-    {
-     "h": "14:04",
-     "jogo": "Avellaneda x Santiago",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "seq RGGGR",
-   "alvo": {
-    "h": "14:04",
-    "jogo": "Avellaneda x Santiago",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1785589530257
-   },
-   "iniciadoEm": 1785589095956,
-   "tiros": [
-    {
-     "h": "13:58",
-     "jogo": "Bogota x Penarol",
-     "odd": 2.75,
-     "unidades": 1
-    },
-    {
-     "h": "14:01",
-     "jogo": "Quito x Montevideo",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785537806885,
    "premier": 1785587925456,
    "euro": 1785568813460,
-   "super": 1785584774954
+   "super": 1785589648254
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -2033,7 +1996,7 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": 9.2
+   "2026-08-01": 2.2
   },
   "_gatilhoAtual": {
    "tipo": "seq",
