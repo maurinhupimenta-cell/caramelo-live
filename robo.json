@@ -3467,7 +3467,37 @@
   "consumidas": {
    "euro": 1785554130457
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:21",
+     "jogo": "Norwich x Southampton",
+     "odd": 2
+    },
+    {
+     "h": "04:24",
+     "jogo": "Everton x Brentford",
+     "odd": 1.95
+    },
+    {
+     "h": "04:27",
+     "jogo": "Burnley x Newcastle",
+     "odd": 1.8
+    }
+   ],
+   "gatilho": "odd 1.95",
+   "alvo": {
+    "h": "04:21",
+    "jogo": "Norwich x Southampton",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1785554187064
+   },
+   "iniciadoEm": 1785554187064
+  },
   "cooldown": {
    "euro": 1785554130457,
    "super": 1785537627776,
