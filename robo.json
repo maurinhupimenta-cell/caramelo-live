@@ -1994,7 +1994,37 @@
   "consumidas": {
    "super": 1785594270765
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:06",
+     "jogo": "Norwich x United",
+     "odd": 2.2
+    },
+    {
+     "h": "16:09",
+     "jogo": "Liverpool x Aston",
+     "odd": 2.35
+    },
+    {
+     "h": "16:12",
+     "jogo": "Tottenham x Burnley",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "odd 2.35",
+   "alvo": {
+    "h": "16:06",
+    "jogo": "Norwich x United",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785596231358
+   },
+   "iniciadoEm": 1785596231358
+  },
   "cooldown": {
    "copa": 1785590550260,
    "premier": 1785592293468,
@@ -2022,10 +2052,10 @@
    "2026-08-01": -1.6
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":22",
-   "n": 15,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.35",
+   "n": 12,
+   "start": 3
   },
   "_obs": {
    "euro": {
