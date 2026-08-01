@@ -2151,13 +2151,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -14.4,
-  "ciclos": 835,
-  "greens": 573,
+  "saldo": -13.4,
+  "ciclos": 836,
+  "greens": 574,
   "redsCiclo": 85,
   "aborts": 0,
   "descartes": 177,
   "historico": [
+   {
+    "quando": "2026-08-01T20:48:27.356Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Wolverhampton x Aston @1.95 (tiro 1) · gatilho: coluna :48"
+   },
    {
     "quando": "2026-08-01T20:16:27.659Z",
     "resultado": "GREEN",
@@ -3930,43 +3936,14 @@
    }
   ],
   "consumidas": {
-   "copa": 1785615387467
+   "copa": 1785615387467,
+   "premier": 1785617307160
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:45",
-     "jogo": "Wolverhampton x Aston",
-     "odd": 1.95
-    },
-    {
-     "h": "21:48",
-     "jogo": "Tottenham x Leeds",
-     "odd": 2.29
-    },
-    {
-     "h": "21:51",
-     "jogo": "Liverpool x Chelsea",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "coluna :48",
-   "alvo": {
-    "h": "21:45",
-    "jogo": "Wolverhampton x Aston",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1785616663058
-   },
-   "iniciadoEm": 1785616663058
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785607105566,
    "super": 1785537627776,
-   "premier": 1785611158760,
+   "premier": 1785617307160,
    "copa": 1785615387467
   },
   "dias": {
@@ -3986,7 +3963,7 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": -7.4
+   "2026-08-01": -6.4
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
