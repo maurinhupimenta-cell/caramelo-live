@@ -1896,13 +1896,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -7,
-  "ciclos": 799,
-  "greens": 548,
+  "saldo": -5.5,
+  "ciclos": 800,
+  "greens": 549,
   "redsCiclo": 80,
   "aborts": 0,
   "descartes": 171,
   "historico": [
+   {
+    "quando": "2026-08-01T03:15:30.564Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "euro · Áustria x Eslovênia @2.25 (tiro 2) · gatilho: time Eslovênia"
+   },
    {
     "quando": "2026-08-01T01:56:46.260Z",
     "resultado": "GREEN",
@@ -3458,42 +3464,12 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "03:56",
-     "jogo": "Hungria x Inglaterra",
-     "odd": 1.93
-    },
-    {
-     "h": "03:59",
-     "jogo": "Romênia x Eslovênia",
-     "odd": 2.1
-    },
-    {
-     "h": "04:02",
-     "jogo": "Eslováquia x Alemanha",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "time Eslovênia",
-   "alvo": null,
-   "iniciadoEm": 1785552631764,
-   "tiros": [
-    {
-     "h": "03:56",
-     "jogo": "Hungria x Inglaterra",
-     "odd": 1.93,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "euro": 1785554130457
   },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785549026661,
+   "euro": 1785554130457,
    "super": 1785537627776,
    "premier": 1785549406065,
    "copa": 1785528509908
@@ -3514,13 +3490,14 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 20.5
+   "2026-07-31": 20.5,
+   "2026-08-01": 1.5
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "1.95",
    "n": 11,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
