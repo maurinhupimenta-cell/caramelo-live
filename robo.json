@@ -1932,10 +1932,39 @@
    }
   ],
   "consumidas": {
-   "premier": 1785574243563,
    "super": 1785576175561
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:57",
+     "jogo": "City x Brighton",
+     "odd": 1.98
+    },
+    {
+     "h": "11:00",
+     "jogo": "Burnley x Brentford",
+     "odd": 2.2
+    },
+    {
+     "h": "11:03",
+     "jogo": "Norwich x Tottenham",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "coluna :00",
+   "alvo": {
+    "h": "10:57",
+    "jogo": "City x Brighton",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785577844961
+   },
+   "iniciadoEm": 1785577844961
+  },
   "cooldown": {
    "copa": 1785537806885,
    "premier": 1785574243563,
@@ -1964,9 +1993,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":22",
+   "chave": ":00",
    "n": 10,
-   "start": 1
+   "start": 2
   },
   "_obs": {
    "euro": {
@@ -1977,12 +2006,18 @@
  },
  "ambas": {
   "saldo": -1.5,
-  "ciclos": 810,
+  "ciclos": 811,
   "greens": 558,
   "redsCiclo": 81,
   "aborts": 0,
-  "descartes": 171,
+  "descartes": 172,
   "historico": [
+   {
+    "quando": "2026-08-01T09:50:45.259Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho seq RRGG) — liga REARMADA"
+   },
    {
     "quando": "2026-08-01T09:04:55.258Z",
     "resultado": "GREEN",
@@ -3605,7 +3640,6 @@
    }
   ],
   "consumidas": {
-   "premier": 1785574243857,
    "euro": 1785575095062
   },
   "ciclo": null,
@@ -3640,6 +3674,11 @@
    "n": 13,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1785577845258,
+    "gatilho": "seq RRGG"
+   }
+  }
  }
 }
