@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -151.5,
-  "ciclos": 784,
-  "greens": 485,
+  "saldo": -150.1,
+  "ciclos": 785,
+  "greens": 486,
   "redsCiclo": 130,
   "aborts": 0,
   "descartes": 169,
   "historico": [
+   {
+    "quando": "2026-08-01T11:32:46.664Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "premier · Wolverhampton x Southampton @2.2 (tiro 2) · gatilho: seq RRRR"
+   },
    {
     "quando": "2026-08-01T10:28:15.554Z",
     "resultado": "GREEN",
@@ -1943,49 +1949,13 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "12:27",
-     "jogo": "City x Tottenham",
-     "odd": 2.29
-    },
-    {
-     "h": "12:30",
-     "jogo": "Wolverhampton x Southampton",
-     "odd": 2.2
-    },
-    {
-     "h": "12:33",
-     "jogo": "Watford x West Ham",
-     "odd": 2.54
-    }
-   ],
-   "gatilho": "seq RRRR",
-   "alvo": {
-    "h": "12:30",
-    "jogo": "Wolverhampton x Southampton",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1785583781767
-   },
-   "iniciadoEm": 1785583426060,
-   "tiros": [
-    {
-     "h": "12:27",
-     "jogo": "City x Tottenham",
-     "odd": 2.29,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "premier": 1785583966560
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785537806885,
-   "premier": 1785578378355,
+   "premier": 1785583966560,
    "euro": 1785568813460,
    "super": 1785580095361
   },
@@ -2007,12 +1977,12 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": 4.3
+   "2026-08-01": 5.7
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRR",
-   "n": 19,
+   "chave": "RRRRG",
+   "n": 12,
    "start": 1
   },
   "_obs": {
