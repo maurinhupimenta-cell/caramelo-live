@@ -3430,10 +3430,39 @@
    }
   ],
   "consumidas": {
-   "euro": 1785549026661,
    "premier": 1785549406065
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:56",
+     "jogo": "Hungria x Inglaterra",
+     "odd": 1.93
+    },
+    {
+     "h": "03:59",
+     "jogo": "Romênia x Eslovênia",
+     "odd": 2.1
+    },
+    {
+     "h": "04:02",
+     "jogo": "Eslováquia x Alemanha",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "time Eslovênia",
+   "alvo": {
+    "h": "03:56",
+    "jogo": "Hungria x Inglaterra",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1785552631764
+   },
+   "iniciadoEm": 1785552631764
+  },
   "cooldown": {
    "euro": 1785549026661,
    "super": 1785537627776,
@@ -3459,10 +3488,10 @@
    "2026-07-31": 20.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.95",
-   "n": 8,
-   "start": 1
+   "tipo": "time",
+   "chave": "Eslovênia",
+   "n": 9,
+   "start": 2
   },
   "_obs": {}
  }
