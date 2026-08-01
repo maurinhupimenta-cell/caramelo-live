@@ -2060,13 +2060,19 @@
   }
  },
  "ambas": {
-  "saldo": -1.4,
-  "ciclos": 820,
-  "greens": 565,
+  "saldo": -0.3,
+  "ciclos": 821,
+  "greens": 566,
   "redsCiclo": 82,
   "aborts": 0,
   "descartes": 173,
   "historico": [
+   {
+    "quando": "2026-08-01T14:15:25.958Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Escócia x República Tcheca @2.1 (tiro 1) · gatilho: odd 2.05"
+   },
    {
     "quando": "2026-08-01T13:24:32.855Z",
     "resultado": "GREEN",
@@ -3749,41 +3755,12 @@
    }
   ],
   "consumidas": {
-   "premier": 1785590672661
+   "premier": 1785590672661,
+   "euro": 1785593725856
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:11",
-     "jogo": "Escócia x República Tcheca",
-     "odd": 2.1
-    },
-    {
-     "h": "15:14",
-     "jogo": "Áustria x Dinamarca",
-     "odd": 2.05
-    },
-    {
-     "h": "15:17",
-     "jogo": "Bélgica x Inglaterra",
-     "odd": 1.83
-    }
-   ],
-   "gatilho": "odd 2.05",
-   "alvo": {
-    "h": "15:11",
-    "jogo": "Escócia x República Tcheca",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785593486067
-   },
-   "iniciadoEm": 1785593486067
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785587693167,
+   "euro": 1785593725856,
    "super": 1785537627776,
    "premier": 1785590672661,
    "copa": 1785589829855
@@ -3805,7 +3782,7 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": 5.6
+   "2026-08-01": 6.7
   },
   "_gatilhoAtual": {
    "tipo": "odd",
