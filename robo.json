@@ -1878,7 +1878,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:33",
+     "jogo": "Burnley x Norwich",
+     "odd": 2.1
+    },
+    {
+     "h": "07:36",
+     "jogo": "Brentford x West Ham",
+     "odd": 2.55
+    },
+    {
+     "h": "07:39",
+     "jogo": "Brighton x Palace",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "seq GRGRR",
+   "alvo": {
+    "h": "07:33",
+    "jogo": "Burnley x Norwich",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785565791960
+   },
+   "iniciadoEm": 1785565791960
+  },
   "cooldown": {
    "copa": 1785537806885,
    "premier": 1785558778457,
@@ -1906,17 +1936,12 @@
    "2026-08-01": 2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Guayaquil",
-   "n": 10,
+   "tipo": "seq",
+   "chave": "GRGRR",
+   "n": 8,
    "start": 1
   },
-  "_obs": {
-   "premier": {
-    "desde": 1785565788660,
-    "gatilho": "seq GRGRR"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": 0.5,
