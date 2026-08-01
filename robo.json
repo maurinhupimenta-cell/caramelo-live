@@ -3644,8 +3644,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "12:20",
@@ -3665,13 +3665,21 @@
    ],
    "gatilho": "coluna :23",
    "alvo": {
-    "h": "12:20",
-    "jogo": "Inglaterra x Hungria",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785582833659
+    "h": "12:23",
+    "jogo": "Áustria x Bélgica",
+    "odd": 1.93,
+    "unidades": 2,
+    "desde": 1785583373268
    },
-   "iniciadoEm": 1785582833659
+   "iniciadoEm": 1785582833659,
+   "tiros": [
+    {
+     "h": "12:20",
+     "jogo": "Inglaterra x Hungria",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785578753763,
@@ -3702,7 +3710,7 @@
    "tipo": "coluna",
    "chave": ":23",
    "n": 12,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
