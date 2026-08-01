@@ -2199,13 +2199,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -17.8,
-  "ciclos": 838,
-  "greens": 575,
+  "saldo": -16.6,
+  "ciclos": 839,
+  "greens": 576,
   "redsCiclo": 86,
   "aborts": 0,
   "descartes": 177,
   "historico": [
+   {
+    "quando": "2026-08-01T22:24:29.554Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Turquia x Croácia @2.05 (tiro 3) · gatilho: odd 2.25"
+   },
    {
     "quando": "2026-08-01T22:11:24.957Z",
     "resultado": "GREEN",
@@ -3997,55 +4003,12 @@
   ],
   "consumidas": {
    "copa": 1785621207056,
-   "super": 1785622284761
+   "super": 1785622284761,
+   "euro": 1785623069357
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "23:14",
-     "jogo": "Hungria x Polônia",
-     "odd": 2.15
-    },
-    {
-     "h": "23:17",
-     "jogo": "República Tcheca x Sérvia",
-     "odd": 2.25
-    },
-    {
-     "h": "23:20",
-     "jogo": "Turquia x Croácia",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "odd 2.25",
-   "alvo": {
-    "h": "23:20",
-    "jogo": "Turquia x Croácia",
-    "odd": 2.05,
-    "unidades": 4,
-    "desde": 1785622801263
-   },
-   "iniciadoEm": 1785622286462,
-   "tiros": [
-    {
-     "h": "23:14",
-     "jogo": "Hungria x Polônia",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "23:17",
-     "jogo": "República Tcheca x Sérvia",
-     "odd": 2.25,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785607105566,
+   "euro": 1785623069357,
    "super": 1785622284761,
    "premier": 1785617307160,
    "copa": 1785621207056
@@ -4067,7 +4030,7 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": -10.8
+   "2026-08-01": -9.6
   },
   "_gatilhoAtual": {
    "tipo": "odd",
