@@ -2062,9 +2062,9 @@
    "2026-08-01": -1.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGRR",
-   "n": 15,
+   "tipo": "coluna",
+   "chave": ":22",
+   "n": 17,
    "start": 1
   },
   "_obs": {
@@ -3802,8 +3802,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "17:16",
@@ -3823,11 +3823,11 @@
    ],
    "gatilho": "time Espanha",
    "alvo": {
-    "h": "17:19",
-    "jogo": "Suíça x RD Congo",
-    "odd": 1.98,
-    "unidades": 2,
-    "desde": 1785601140364
+    "h": "17:22",
+    "jogo": "Turquia x Canadá",
+    "odd": 2.05,
+    "unidades": 4,
+    "desde": 1785601320466
    },
    "iniciadoEm": 1785600911261,
    "tiros": [
@@ -3836,6 +3836,12 @@
      "jogo": "Paraguai x Espanha",
      "odd": 1.98,
      "unidades": 1
+    },
+    {
+     "h": "17:19",
+     "jogo": "Suíça x RD Congo",
+     "odd": 1.98,
+     "unidades": 2
     }
    ]
   },
@@ -3865,9 +3871,9 @@
    "2026-08-01": 9.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGRR",
-   "n": 8,
+   "tipo": "time",
+   "chave": "Uruguai",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
