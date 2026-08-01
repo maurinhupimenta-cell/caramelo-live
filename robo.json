@@ -244,12 +244,18 @@
  },
  "o25": {
   "saldo": -169.8,
-  "ciclos": 805,
+  "ciclos": 806,
   "greens": 495,
   "redsCiclo": 135,
   "aborts": 0,
-  "descartes": 175,
+  "descartes": 176,
   "historico": [
+   {
+    "quando": "2026-08-01T19:15:27.866Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :22) — liga REARMADA"
+   },
    {
     "quando": "2026-08-01T19:05:58.656Z",
     "resultado": "RED_CICLO",
@@ -2106,7 +2112,12 @@
    "n": 12,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1785611727865,
+    "gatilho": "coluna :22"
+   }
+  }
  },
  "ambas": {
   "saldo": -14.9,
