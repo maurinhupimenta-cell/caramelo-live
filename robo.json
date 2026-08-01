@@ -3849,7 +3849,45 @@
    "premier": 1785606819763,
    "euro": 1785607105566
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "19:46",
+     "jogo": "Brasil x Nova Zelândia",
+     "odd": 2
+    },
+    {
+     "h": "19:49",
+     "jogo": "Inglaterra x Uzbequistão",
+     "odd": 2.075
+    },
+    {
+     "h": "19:52",
+     "jogo": "Suíça x Turquia",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "time Uzbequistão",
+   "alvo": {
+    "h": "19:49",
+    "jogo": "Inglaterra x Uzbequistão",
+    "odd": 2.075,
+    "unidades": 2,
+    "desde": 1785610165663
+   },
+   "iniciadoEm": 1785609866254,
+   "tiros": [
+    {
+     "h": "19:46",
+     "jogo": "Brasil x Nova Zelândia",
+     "odd": 2,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1785607105566,
    "super": 1785537627776,
@@ -3876,10 +3914,10 @@
    "2026-08-01": -2.1
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.25",
+   "tipo": "time",
+   "chave": "Áustria",
    "n": 11,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  }
