@@ -3750,7 +3750,37 @@
    "euro": 1785593725856,
    "premier": 1785594805655
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:49",
+     "jogo": "Argélia x RD Congo",
+     "odd": 1.95
+    },
+    {
+     "h": "15:52",
+     "jogo": "Austrália x Noruega",
+     "odd": 1.87
+    },
+    {
+     "h": "15:55",
+     "jogo": "Japão x Iraque",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time Argélia",
+   "alvo": {
+    "h": "15:49",
+    "jogo": "Argélia x RD Congo",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1785595706166
+   },
+   "iniciadoEm": 1785595706166
+  },
   "cooldown": {
    "euro": 1785593725856,
    "super": 1785537627776,
@@ -3777,16 +3807,11 @@
    "2026-08-01": 8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGRR",
-   "n": 14,
+   "tipo": "time",
+   "chave": "Argélia",
+   "n": 11,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785593430364,
-    "gatilho": "time Uzbequistão"
-   }
-  }
+  "_obs": {}
  }
 }
