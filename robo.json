@@ -3642,7 +3642,37 @@
   "consumidas": {
    "premier": 1785582537057
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:20",
+     "jogo": "Inglaterra x Hungria",
+     "odd": 1.98
+    },
+    {
+     "h": "12:23",
+     "jogo": "Áustria x Bélgica",
+     "odd": 1.93
+    },
+    {
+     "h": "12:26",
+     "jogo": "Inglaterra x Dinamarca",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "coluna :23",
+   "alvo": {
+    "h": "12:20",
+    "jogo": "Inglaterra x Hungria",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785582833659
+   },
+   "iniciadoEm": 1785582833659
+  },
   "cooldown": {
    "euro": 1785578753763,
    "super": 1785537627776,
@@ -3670,9 +3700,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":09",
+   "chave": ":23",
    "n": 12,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
