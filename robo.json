@@ -2044,7 +2044,37 @@
    "euro": 1785603745164,
    "copa": 1785604287261
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:19",
+     "jogo": "Agua Branca x Sao Paulo",
+     "odd": 2.02
+    },
+    {
+     "h": "18:22",
+     "jogo": "Belo Horizonte x Bogota",
+     "odd": 2.37
+    },
+    {
+     "h": "18:25",
+     "jogo": "Avellaneda x Sao Paulo",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "coluna :22",
+   "alvo": {
+    "h": "18:19",
+    "jogo": "Agua Branca x Sao Paulo",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1785604944664
+   },
+   "iniciadoEm": 1785604944664
+  },
   "cooldown": {
    "copa": 1785604287261,
    "premier": 1785602186358,
@@ -2072,9 +2102,9 @@
    "2026-08-01": 5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Costa do Marfim",
-   "n": 8,
+   "tipo": "coluna",
+   "chave": ":22",
+   "n": 18,
    "start": 1
   },
   "_obs": {}
@@ -3804,9 +3834,7 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {
-   "copa": 1785601501757
-  },
+  "consumidas": {},
   "ciclo": null,
   "cooldown": {
    "euro": 1785593725856,
