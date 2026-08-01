@@ -1982,13 +1982,19 @@
   }
  },
  "ambas": {
-  "saldo": -1.5,
-  "ciclos": 811,
-  "greens": 558,
+  "saldo": -0.7,
+  "ciclos": 812,
+  "greens": 559,
   "redsCiclo": 81,
   "aborts": 0,
   "descartes": 172,
   "historico": [
+   {
+    "quando": "2026-08-01T09:59:38.756Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "premier · City x Brighton @1.9 (tiro 2) · gatilho: seq RRGG"
+   },
    {
     "quando": "2026-08-01T09:50:45.259Z",
     "resultado": "GREEN_OBS",
@@ -3617,51 +3623,43 @@
    }
   ],
   "consumidas": {
-   "euro": 1785575095062
+   "premier": 1785578378557
   },
   "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "10:54",
-     "jogo": "Newcastle x Norwich",
-     "odd": 1.85
+     "h": "11:02",
+     "jogo": "Alemanha x Bélgica",
+     "odd": 1.86
     },
     {
-     "h": "10:57",
-     "jogo": "City x Brighton",
-     "odd": 1.9
+     "h": "11:05",
+     "jogo": "Áustria x Eslováquia",
+     "odd": 2.05
     },
     {
-     "h": "11:00",
-     "jogo": "Burnley x Brentford",
-     "odd": 1.93
+     "h": "11:08",
+     "jogo": "Bélgica x Romênia",
+     "odd": 1.87
     }
    ],
-   "gatilho": "seq RRGG",
+   "gatilho": "odd 2.05",
    "alvo": {
-    "h": "10:57",
-    "jogo": "City x Brighton",
-    "odd": 1.9,
-    "unidades": 2,
-    "desde": 1785578207057
+    "h": "11:02",
+    "jogo": "Alemanha x Bélgica",
+    "odd": 1.86,
+    "unidades": 1,
+    "desde": 1785578696262
    },
-   "iniciadoEm": 1785577852056,
-   "tiros": [
-    {
-     "h": "10:54",
-     "jogo": "Newcastle x Norwich",
-     "odd": 1.85,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1785578696262
   },
   "cooldown": {
    "euro": 1785575095062,
    "super": 1785537627776,
-   "premier": 1785574243857,
+   "premier": 1785578378557,
    "copa": 1785528509908
   },
   "dias": {
@@ -3681,13 +3679,13 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": 5.5
+   "2026-08-01": 6.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":06",
-   "n": 11,
-   "start": 2
+   "tipo": "odd",
+   "chave": "2.05",
+   "n": 19,
+   "start": 1
   },
   "_obs": {}
  }
