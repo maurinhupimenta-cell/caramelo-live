@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -154.8,
-  "ciclos": 769,
-  "greens": 473,
+  "saldo": -152.4,
+  "ciclos": 770,
+  "greens": 474,
   "redsCiclo": 128,
   "aborts": 0,
   "descartes": 168,
   "historico": [
+   {
+    "quando": "2026-08-01T03:48:25.857Z",
+    "resultado": "GREEN",
+    "unidades": 2.4,
+    "detalhe": "euro · Itália x Áustria @2.35 (tiro 3) · gatilho: seq RRRR"
+   },
    {
     "quando": "2026-08-01T03:17:47.758Z",
     "resultado": "GREEN",
@@ -1835,57 +1841,14 @@
    }
   ],
   "consumidas": {
-   "premier": 1785554267559
+   "premier": 1785554267559,
+   "euro": 1785556105661
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:38",
-     "jogo": "Croácia x França",
-     "odd": 2.07
-    },
-    {
-     "h": "04:41",
-     "jogo": "Geórgia x Ucrânia",
-     "odd": 2.4
-    },
-    {
-     "h": "04:44",
-     "jogo": "Itália x Áustria",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "seq RRRR",
-   "alvo": {
-    "h": "04:44",
-    "jogo": "Itália x Áustria",
-    "odd": 2.35,
-    "unidades": 4,
-    "desde": 1785555866757
-   },
-   "iniciadoEm": 1785555508360,
-   "tiros": [
-    {
-     "h": "04:38",
-     "jogo": "Croácia x França",
-     "odd": 2.07,
-     "unidades": 1
-    },
-    {
-     "h": "04:41",
-     "jogo": "Geórgia x Ucrânia",
-     "odd": 2.4,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785537806885,
    "premier": 1785554267559,
-   "euro": 1785550948162,
+   "euro": 1785556105661,
    "super": 1785539430655
   },
   "dias": {
@@ -1906,7 +1869,7 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": 1
+   "2026-08-01": 3.4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
