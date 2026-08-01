@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -155.5,
-  "ciclos": 781,
-  "greens": 482,
+  "saldo": -154.3,
+  "ciclos": 782,
+  "greens": 483,
   "redsCiclo": 130,
   "aborts": 0,
   "descartes": 169,
   "historico": [
+   {
+    "quando": "2026-08-01T09:22:55.666Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Santiago x Medellin @2.2 (tiro 1) · gatilho: coluna :22"
+   },
    {
     "quando": "2026-08-01T08:50:43.758Z",
     "resultado": "GREEN",
@@ -1926,14 +1932,15 @@
    }
   ],
   "consumidas": {
-   "premier": 1785574243563
+   "premier": 1785574243563,
+   "super": 1785576175561
   },
   "ciclo": null,
   "cooldown": {
    "copa": 1785537806885,
    "premier": 1785574243563,
    "euro": 1785568813460,
-   "super": 1785572355866
+   "super": 1785576175561
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -1953,15 +1960,20 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": 0.3
+   "2026-08-01": 1.5
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":57",
-   "n": 9,
+   "chave": ":22",
+   "n": 10,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1785575993163,
+    "gatilho": "seq RRRRR"
+   }
+  }
  },
  "ambas": {
   "saldo": -1.5,
