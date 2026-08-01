@@ -1,12 +1,18 @@
 {
  "o35": {
   "saldo": -172.3,
-  "ciclos": 187,
+  "ciclos": 188,
   "greens": 62,
   "redsCiclo": 80,
   "aborts": 0,
-  "descartes": 45,
+  "descartes": 46,
   "historico": [
+   {
+    "quando": "2026-08-01T07:59:45.964Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho odd 5.25) — liga REARMADA"
+   },
    {
     "quando": "2026-08-01T03:57:30.158Z",
     "resultado": "GREEN_OBS",
@@ -3558,7 +3564,37 @@
   "consumidas": {
    "premier": 1785569561456
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:59",
+     "jogo": "Hungria x República Tcheca",
+     "odd": 2.2
+    },
+    {
+     "h": "09:02",
+     "jogo": "Eslovênia x Escócia",
+     "odd": 2.15
+    },
+    {
+     "h": "09:05",
+     "jogo": "Dinamarca x Eslováquia",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time República Tcheca",
+   "alvo": {
+    "h": "08:59",
+    "jogo": "Hungria x República Tcheca",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785571134154
+   },
+   "iniciadoEm": 1785571134154
+  },
   "cooldown": {
    "euro": 1785567532662,
    "super": 1785537627776,
@@ -3586,9 +3622,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Tottenham",
+   "chave": "República Tcheca",
    "n": 13,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
