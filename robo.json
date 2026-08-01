@@ -231,13 +231,19 @@
   }
  },
  "o25": {
-  "saldo": -152.7,
-  "ciclos": 776,
-  "greens": 478,
+  "saldo": -151.5,
+  "ciclos": 777,
+  "greens": 479,
   "redsCiclo": 129,
   "aborts": 0,
   "descartes": 169,
   "historico": [
+   {
+    "quando": "2026-08-01T06:42:55.456Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Buenos Aires x Santos @2.2 (tiro 1) · gatilho: seq RGGG"
+   },
    {
     "quando": "2026-08-01T06:35:42.354Z",
     "resultado": "GREEN",
@@ -1884,44 +1890,15 @@
    }
   ],
   "consumidas": {
-   "premier": 1785566142163
+   "premier": 1785566142163,
+   "super": 1785566575262
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "07:40",
-     "jogo": "Buenos Aires x Santos",
-     "odd": 2.2
-    },
-    {
-     "h": "07:43",
-     "jogo": "Asuncion x Avellaneda",
-     "odd": 2.3
-    },
-    {
-     "h": "07:46",
-     "jogo": "Montevideo x Agua Branca",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "seq RGGG",
-   "alvo": {
-    "h": "07:40",
-    "jogo": "Buenos Aires x Santos",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785566415859
-   },
-   "iniciadoEm": 1785566415859
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785537806885,
    "premier": 1785566142163,
    "euro": 1785560970162,
-   "super": 1785562109269
+   "super": 1785566575262
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -1941,13 +1918,13 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": 3.1
+   "2026-08-01": 4.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGG",
-   "n": 8,
-   "start": 1
+   "tipo": "time",
+   "chave": "Guayaquil",
+   "n": 11,
+   "start": 2
   },
   "_obs": {}
  },
