@@ -2033,8 +2033,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:53",
@@ -2054,13 +2054,21 @@
    ],
    "gatilho": "odd 2.55",
    "alvo": {
-    "h": "17:53",
-    "jogo": "Hungria x Ucrânia",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1785602906457
+    "h": "17:56",
+    "jogo": "Eslovênia x Portugal",
+    "odd": 2.55,
+    "unidades": 2,
+    "desde": 1785603509758
    },
-   "iniciadoEm": 1785602906457
+   "iniciadoEm": 1785602906457,
+   "tiros": [
+    {
+     "h": "17:53",
+     "jogo": "Hungria x Ucrânia",
+     "odd": 2.4,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785590550260,
@@ -2089,17 +2097,12 @@
    "2026-08-01": 0.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.55",
+   "tipo": "time",
+   "chave": "Costa do Marfim",
    "n": 8,
-   "start": 3
+   "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785602969261,
-    "gatilho": "time Costa do Marfim"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -4.1,
