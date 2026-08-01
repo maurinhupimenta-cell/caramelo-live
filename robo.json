@@ -1848,13 +1848,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -7.9,
-  "ciclos": 798,
-  "greens": 547,
+  "saldo": -7,
+  "ciclos": 799,
+  "greens": 548,
   "redsCiclo": 80,
   "aborts": 0,
   "descartes": 171,
   "historico": [
+   {
+    "quando": "2026-08-01T01:56:46.260Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Brighton x Chelsea @1.85 (tiro 1) · gatilho: odd 1.95"
+   },
    {
     "quando": "2026-08-01T01:50:26.857Z",
     "resultado": "GREEN",
@@ -3405,13 +3411,14 @@
    }
   ],
   "consumidas": {
-   "euro": 1785549026661
+   "euro": 1785549026661,
+   "premier": 1785549406065
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1785549026661,
    "super": 1785537627776,
-   "premier": 1785530141011,
+   "premier": 1785549406065,
    "copa": 1785528509908
   },
   "dias": {
@@ -3430,13 +3437,13 @@
    "2026-07-28": -20.5,
    "2026-07-29": -9.4,
    "2026-07-30": 24,
-   "2026-07-31": 19.6
+   "2026-07-31": 20.5
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "1.95",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
