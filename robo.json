@@ -3543,7 +3543,37 @@
   "consumidas": {
    "euro": 1785567532662
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:24",
+     "jogo": "Leeds x Brighton",
+     "odd": 2.02
+    },
+    {
+     "h": "08:27",
+     "jogo": "Islington x Everton",
+     "odd": 1.9
+    },
+    {
+     "h": "08:30",
+     "jogo": "United x Palace",
+     "odd": 2
+    }
+   ],
+   "gatilho": "seq RGRG",
+   "alvo": {
+    "h": "08:24",
+    "jogo": "Leeds x Brighton",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1785568843860
+   },
+   "iniciadoEm": 1785568843860
+  },
   "cooldown": {
    "euro": 1785567532662,
    "super": 1785537627776,
@@ -3570,9 +3600,9 @@
    "2026-08-01": 9.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "República Tcheca",
-   "n": 11,
+   "tipo": "seq",
+   "chave": "RGRG",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
