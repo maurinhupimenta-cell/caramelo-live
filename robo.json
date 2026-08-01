@@ -3530,7 +3530,37 @@
   "consumidas": {
    "premier": 1785565064860
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:50",
+     "jogo": "Suíça x Eslovênia",
+     "odd": 2.15
+    },
+    {
+     "h": "07:53",
+     "jogo": "Romênia x Polônia",
+     "odd": 2.02
+    },
+    {
+     "h": "07:56",
+     "jogo": "Sérvia x Geórgia",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "odd 2.02",
+   "alvo": {
+    "h": "07:50",
+    "jogo": "Suíça x Eslovênia",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785566633765
+   },
+   "iniciadoEm": 1785566633765
+  },
   "cooldown": {
    "euro": 1785562766764,
    "super": 1785537627776,
@@ -3557,10 +3587,10 @@
    "2026-08-01": 7.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRG",
-   "n": 12,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.02",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  }
