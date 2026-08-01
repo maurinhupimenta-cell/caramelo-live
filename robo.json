@@ -231,13 +231,19 @@
   }
  },
  "o25": {
-  "saldo": -151.5,
-  "ciclos": 777,
+  "saldo": -158.5,
+  "ciclos": 778,
   "greens": 479,
-  "redsCiclo": 129,
+  "redsCiclo": 130,
   "aborts": 0,
   "descartes": 169,
   "historico": [
+   {
+    "quando": "2026-08-01T07:20:13.563Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: coluna :14"
+   },
    {
     "quando": "2026-08-01T06:42:55.456Z",
     "resultado": "GREEN",
@@ -1891,57 +1897,14 @@
   ],
   "consumidas": {
    "premier": 1785566142163,
-   "super": 1785566575262
+   "super": 1785566575262,
+   "euro": 1785568813460
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "08:11",
-     "jogo": "Romênia x Itália",
-     "odd": 2.2
-    },
-    {
-     "h": "08:14",
-     "jogo": "Geórgia x França",
-     "odd": 2.2
-    },
-    {
-     "h": "08:17",
-     "jogo": "Eslováquia x Suíça",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "coluna :14",
-   "alvo": {
-    "h": "08:17",
-    "jogo": "Eslováquia x Suíça",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1785568613759
-   },
-   "iniciadoEm": 1785567894056,
-   "tiros": [
-    {
-     "h": "08:11",
-     "jogo": "Romênia x Itália",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "08:14",
-     "jogo": "Geórgia x França",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785537806885,
    "premier": 1785566142163,
-   "euro": 1785560970162,
+   "euro": 1785568813460,
    "super": 1785566575262
   },
   "dias": {
@@ -1962,7 +1925,7 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": 4.3
+   "2026-08-01": -2.7
   },
   "_gatilhoAtual": {
    "tipo": "seq",
