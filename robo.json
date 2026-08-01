@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -164.8,
-  "ciclos": 810,
+  "saldo": -171.8,
+  "ciclos": 811,
   "greens": 498,
-  "redsCiclo": 135,
+  "redsCiclo": 136,
   "aborts": 0,
   "descartes": 177,
   "historico": [
+   {
+    "quando": "2026-08-01T20:26:54.260Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq GGGRG"
+   },
    {
     "quando": "2026-08-01T20:14:41.360Z",
     "resultado": "GREEN_OBS",
@@ -2100,57 +2106,13 @@
    }
   ],
   "consumidas": {
-   "copa": 1785612411066,
-   "euro": 1785613527156
+   "euro": 1785613527156,
+   "premier": 1785616014064
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "21:18",
-     "jogo": "Watford x United",
-     "odd": 2.25
-    },
-    {
-     "h": "21:21",
-     "jogo": "Chelsea x Tottenham",
-     "odd": 2.4
-    },
-    {
-     "h": "21:24",
-     "jogo": "Southampton x Brighton",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "seq GGGRG",
-   "alvo": {
-    "h": "21:24",
-    "jogo": "Southampton x Brighton",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1785615832360
-   },
-   "iniciadoEm": 1785615292555,
-   "tiros": [
-    {
-     "h": "21:18",
-     "jogo": "Watford x United",
-     "odd": 2.25,
-     "unidades": 1
-    },
-    {
-     "h": "21:21",
-     "jogo": "Chelsea x Tottenham",
-     "odd": 2.4,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785612411066,
-   "premier": 1785611158458,
+   "premier": 1785616014064,
    "euro": 1785613527156,
    "super": 1785612328265
   },
@@ -2172,13 +2134,13 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": -9
+   "2026-08-01": -16
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.05",
-   "n": 15,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":36",
+   "n": 21,
+   "start": 2
   },
   "_obs": {}
  },
