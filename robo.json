@@ -2029,13 +2029,19 @@
   }
  },
  "ambas": {
-  "saldo": 3.7,
-  "ciclos": 816,
-  "greens": 563,
+  "saldo": 4.9,
+  "ciclos": 817,
+  "greens": 564,
   "redsCiclo": 81,
   "aborts": 0,
   "descartes": 172,
   "historico": [
+   {
+    "quando": "2026-08-01T12:34:53.360Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Polônia x Croácia @2.05 (tiro 3) · gatilho: odd 2.05"
+   },
    {
     "quando": "2026-08-01T12:17:44.655Z",
     "resultado": "GREEN",
@@ -3694,55 +3700,12 @@
    }
   ],
   "consumidas": {
-   "premier": 1785586664554
+   "premier": 1785586664554,
+   "euro": 1785587693167
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "13:26",
-     "jogo": "Eslovênia x Inglaterra",
-     "odd": 2.05
-    },
-    {
-     "h": "13:29",
-     "jogo": "Itália x Ucrânia",
-     "odd": 2.05
-    },
-    {
-     "h": "13:32",
-     "jogo": "Polônia x Croácia",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "odd 2.05",
-   "alvo": {
-    "h": "13:32",
-    "jogo": "Polônia x Croácia",
-    "odd": 2.05,
-    "unidades": 4,
-    "desde": 1785587532358
-   },
-   "iniciadoEm": 1785587154063,
-   "tiros": [
-    {
-     "h": "13:26",
-     "jogo": "Eslovênia x Inglaterra",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "13:29",
-     "jogo": "Itália x Ucrânia",
-     "odd": 2.05,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785583553655,
+   "euro": 1785587693167,
    "super": 1785537627776,
    "premier": 1785586664554,
    "copa": 1785528509908
@@ -3764,12 +3727,12 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": 10.7
+   "2026-08-01": 11.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.05",
-   "n": 23,
+   "tipo": "seq",
+   "chave": "GRRG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
