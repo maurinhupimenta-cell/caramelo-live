@@ -3731,10 +3731,47 @@
    }
   ],
   "consumidas": {
-   "premier": 1785590672661,
    "euro": 1785593725856
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "15:27",
+     "jogo": "Everton x Leeds",
+     "odd": 2.07
+    },
+    {
+     "h": "15:30",
+     "jogo": "Brentford x West Ham",
+     "odd": 2.15
+    },
+    {
+     "h": "15:33",
+     "jogo": "Newcastle x Watford",
+     "odd": 1.87
+    }
+   ],
+   "gatilho": "seq GGGR",
+   "alvo": {
+    "h": "15:30",
+    "jogo": "Brentford x West Ham",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1785594581553
+   },
+   "iniciadoEm": 1785594272860,
+   "tiros": [
+    {
+     "h": "15:27",
+     "jogo": "Everton x Leeds",
+     "odd": 2.07,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1785593725856,
    "super": 1785537627776,
@@ -3761,9 +3798,9 @@
    "2026-08-01": 6.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.05",
-   "n": 26,
+   "tipo": "seq",
+   "chave": "GGGRR",
+   "n": 14,
    "start": 1
   },
   "_obs": {
