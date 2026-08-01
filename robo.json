@@ -2039,13 +2039,19 @@
   }
  },
  "ambas": {
-  "saldo": 1,
-  "ciclos": 823,
-  "greens": 567,
+  "saldo": 2,
+  "ciclos": 824,
+  "greens": 568,
   "redsCiclo": 82,
   "aborts": 0,
   "descartes": 174,
   "historico": [
+   {
+    "quando": "2026-08-01T14:52:25.562Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Argélia x RD Congo @1.95 (tiro 1) · gatilho: time Argélia"
+   },
    {
     "quando": "2026-08-01T14:47:33.657Z",
     "resultado": "GREEN_OBS",
@@ -3747,44 +3753,15 @@
   ],
   "consumidas": {
    "euro": 1785593725856,
-   "premier": 1785594805655
+   "premier": 1785594805655,
+   "copa": 1785595945457
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:49",
-     "jogo": "Argélia x RD Congo",
-     "odd": 1.95
-    },
-    {
-     "h": "15:52",
-     "jogo": "Austrália x Noruega",
-     "odd": 1.87
-    },
-    {
-     "h": "15:55",
-     "jogo": "Japão x Iraque",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Argélia",
-   "alvo": {
-    "h": "15:49",
-    "jogo": "Argélia x RD Congo",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1785595706166
-   },
-   "iniciadoEm": 1785595706166
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785593725856,
    "super": 1785537627776,
    "premier": 1785594805655,
-   "copa": 1785589829855
+   "copa": 1785595945457
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -3803,13 +3780,13 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": 8
+   "2026-08-01": 9
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Uzbequistão",
-   "n": 9,
-   "start": 2
+   "chave": "Uruguai",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  }
