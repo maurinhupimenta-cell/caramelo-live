@@ -2207,7 +2207,7 @@
    "tipo": "odd",
    "chave": "2.55",
    "n": 12,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
@@ -4021,8 +4021,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "23:45",
@@ -4042,13 +4042,21 @@
    ],
    "gatilho": "coluna :48",
    "alvo": {
-    "h": "23:45",
-    "jogo": "Aston x Wolverhampton",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1785623791359
+    "h": "23:48",
+    "jogo": "West Ham x Leeds",
+    "odd": 2.35,
+    "unidades": 2,
+    "desde": 1785624505066
    },
-   "iniciadoEm": 1785623791359
+   "iniciadoEm": 1785623791359,
+   "tiros": [
+    {
+     "h": "23:45",
+     "jogo": "Aston x Wolverhampton",
+     "odd": 1.9,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785623069357,
@@ -4079,7 +4087,7 @@
    "tipo": "coluna",
    "chave": ":48",
    "n": 23,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
