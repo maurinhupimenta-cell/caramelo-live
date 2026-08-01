@@ -2087,13 +2087,19 @@
   }
  },
  "ambas": {
-  "saldo": 2.9,
-  "ciclos": 825,
+  "saldo": -4.1,
+  "ciclos": 826,
   "greens": 569,
-  "redsCiclo": 82,
+  "redsCiclo": 83,
   "aborts": 0,
   "descartes": 174,
   "historico": [
+   {
+    "quando": "2026-08-01T16:25:01.862Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Espanha"
+   },
    {
     "quando": "2026-08-01T16:15:08.360Z",
     "resultado": "GREEN",
@@ -3806,58 +3812,15 @@
    }
   ],
   "consumidas": {
-   "premier": 1785600908167
+   "premier": 1785600908167,
+   "copa": 1785601501757
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "17:16",
-     "jogo": "Paraguai x Espanha",
-     "odd": 1.98
-    },
-    {
-     "h": "17:19",
-     "jogo": "Suíça x RD Congo",
-     "odd": 1.98
-    },
-    {
-     "h": "17:22",
-     "jogo": "Turquia x Canadá",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "time Espanha",
-   "alvo": {
-    "h": "17:22",
-    "jogo": "Turquia x Canadá",
-    "odd": 2.05,
-    "unidades": 4,
-    "desde": 1785601320466
-   },
-   "iniciadoEm": 1785600911261,
-   "tiros": [
-    {
-     "h": "17:16",
-     "jogo": "Paraguai x Espanha",
-     "odd": 1.98,
-     "unidades": 1
-    },
-    {
-     "h": "17:19",
-     "jogo": "Suíça x RD Congo",
-     "odd": 1.98,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785593725856,
    "super": 1785537627776,
    "premier": 1785600908167,
-   "copa": 1785595945457
+   "copa": 1785601501757
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -3876,7 +3839,7 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": 9.9
+   "2026-08-01": 2.9
   },
   "_gatilhoAtual": {
    "tipo": "time",
