@@ -1987,13 +1987,19 @@
   }
  },
  "ambas": {
-  "saldo": 0.2,
-  "ciclos": 813,
-  "greens": 560,
+  "saldo": 1.6,
+  "ciclos": 814,
+  "greens": 561,
   "redsCiclo": 81,
   "aborts": 0,
   "descartes": 172,
   "historico": [
+   {
+    "quando": "2026-08-01T11:08:57.254Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "premier · Leeds x Southampton @2.2 (tiro 2) · gatilho: coluna :06"
+   },
    {
     "quando": "2026-08-01T10:05:53.959Z",
     "resultado": "GREEN",
@@ -3633,50 +3639,14 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "12:03",
-     "jogo": "Chelsea x Palace",
-     "odd": 1.98
-    },
-    {
-     "h": "12:06",
-     "jogo": "Leeds x Southampton",
-     "odd": 2.2
-    },
-    {
-     "h": "12:09",
-     "jogo": "Watford x Norwich",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "coluna :06",
-   "alvo": {
-    "h": "12:06",
-    "jogo": "Leeds x Southampton",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1785582347163
-   },
-   "iniciadoEm": 1785581983755,
-   "tiros": [
-    {
-     "h": "12:03",
-     "jogo": "Chelsea x Palace",
-     "odd": 1.98,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "premier": 1785582537057
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785578753763,
    "super": 1785537627776,
-   "premier": 1785578378557,
+   "premier": 1785582537057,
    "copa": 1785528509908
   },
   "dias": {
@@ -3696,7 +3666,7 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": 7.2
+   "2026-08-01": 8.6
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
