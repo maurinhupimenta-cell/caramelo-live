@@ -2109,7 +2109,37 @@
    "euro": 1785613527156,
    "premier": 1785616014064
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:28",
+     "jogo": "Santiago x Avellaneda",
+     "odd": 2.1
+    },
+    {
+     "h": "21:31",
+     "jogo": "Lima x Medellin",
+     "odd": 2.25
+    },
+    {
+     "h": "21:34",
+     "jogo": "La Boca x Guayaquil",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "seq RRGGG",
+   "alvo": {
+    "h": "21:28",
+    "jogo": "Santiago x Avellaneda",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785616104367
+   },
+   "iniciadoEm": 1785616104367
+  },
   "cooldown": {
    "copa": 1785612411066,
    "premier": 1785616014064,
@@ -2137,10 +2167,10 @@
    "2026-08-01": -16
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":36",
-   "n": 21,
-   "start": 2
+   "tipo": "seq",
+   "chave": "RRGGG",
+   "n": 9,
+   "start": 1
   },
   "_obs": {}
  },
