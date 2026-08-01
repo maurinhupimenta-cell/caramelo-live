@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -169.8,
-  "ciclos": 806,
-  "greens": 495,
+  "saldo": -168.8,
+  "ciclos": 807,
+  "greens": 496,
   "redsCiclo": 135,
   "aborts": 0,
   "descartes": 176,
   "historico": [
+   {
+    "quando": "2026-08-01T19:25:28.555Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Buenos Aires x Sao Paulo @1.98 (tiro 2) · gatilho: coluna :22"
+   },
    {
     "quando": "2026-08-01T19:15:27.866Z",
     "resultado": "GREEN_OBS",
@@ -2077,52 +2083,15 @@
   ],
   "consumidas": {
    "euro": 1785608909054,
-   "premier": 1785611158458
+   "premier": 1785611158458,
+   "super": 1785612328265
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "20:19",
-     "jogo": "Santiago x La Boca",
-     "odd": 2.2
-    },
-    {
-     "h": "20:22",
-     "jogo": "Buenos Aires x Sao Paulo",
-     "odd": 1.98
-    },
-    {
-     "h": "20:25",
-     "jogo": "Asuncion x Quito",
-     "odd": 2.29
-    }
-   ],
-   "gatilho": "coluna :22",
-   "alvo": {
-    "h": "20:22",
-    "jogo": "Buenos Aires x Sao Paulo",
-    "odd": 1.98,
-    "unidades": 2,
-    "desde": 1785612147363
-   },
-   "iniciadoEm": 1785611729757,
-   "tiros": [
-    {
-     "h": "20:19",
-     "jogo": "Santiago x La Boca",
-     "odd": 2.2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785604287261,
    "premier": 1785611158458,
    "euro": 1785608909054,
-   "super": 1785605304861
+   "super": 1785612328265
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -2142,7 +2111,7 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": -14
+   "2026-08-01": -13
   },
   "_gatilhoAtual": {
    "tipo": "odd",
