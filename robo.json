@@ -3893,10 +3893,39 @@
    }
   ],
   "consumidas": {
-   "euro": 1785607105566,
    "copa": 1785610465765
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:57",
+     "jogo": "Brighton x Norwich",
+     "odd": 1.85
+    },
+    {
+     "h": "20:00",
+     "jogo": "Wolverhampton x Brentford",
+     "odd": 1.93
+    },
+    {
+     "h": "20:03",
+     "jogo": "Southampton x Chelsea",
+     "odd": 2
+    }
+   ],
+   "gatilho": "seq GRGGG",
+   "alvo": {
+    "h": "19:57",
+    "jogo": "Brighton x Norwich",
+    "odd": 1.85,
+    "unidades": 1,
+    "desde": 1785610468056
+   },
+   "iniciadoEm": 1785610468056
+  },
   "cooldown": {
    "euro": 1785607105566,
    "super": 1785537627776,
@@ -3923,10 +3952,10 @@
    "2026-08-01": -0.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGGG",
-   "n": 9,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":06",
+   "n": 20,
+   "start": 2
   },
   "_obs": {}
  }
