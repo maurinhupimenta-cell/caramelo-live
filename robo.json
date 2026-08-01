@@ -3494,7 +3494,37 @@
   "consumidas": {
    "premier": 1785554909756
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:14",
+     "jogo": "Países Baixos x Inglaterra",
+     "odd": 1.8
+    },
+    {
+     "h": "05:17",
+     "jogo": "Polônia x Croácia",
+     "odd": 2.05
+    },
+    {
+     "h": "05:20",
+     "jogo": "Países Baixos x Áustria",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "odd 2.05",
+   "alvo": {
+    "h": "05:14",
+    "jogo": "Países Baixos x Inglaterra",
+    "odd": 1.8,
+    "unidades": 1,
+    "desde": 1785557786267
+   },
+   "iniciadoEm": 1785557786267
+  },
   "cooldown": {
    "euro": 1785554130457,
    "super": 1785537627776,
@@ -3522,9 +3552,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "1.95",
-   "n": 11,
-   "start": 2
+   "chave": "2.05",
+   "n": 9,
+   "start": 1
   },
   "_obs": {}
  }
