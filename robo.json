@@ -3511,7 +3511,37 @@
   "consumidas": {
    "euro": 1785562766764
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:12",
+     "jogo": "Burnley x City",
+     "odd": 1.85
+    },
+    {
+     "h": "07:15",
+     "jogo": "Tottenham x West Ham",
+     "odd": 2.3
+    },
+    {
+     "h": "07:18",
+     "jogo": "Newcastle x Palace",
+     "odd": 1.85
+    }
+   ],
+   "gatilho": "time Tottenham",
+   "alvo": {
+    "h": "07:12",
+    "jogo": "Burnley x City",
+    "odd": 1.85,
+    "unidades": 1,
+    "desde": 1785564180365
+   },
+   "iniciadoEm": 1785564180365
+  },
   "cooldown": {
    "euro": 1785562766764,
    "super": 1785537627776,
@@ -3539,9 +3569,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "República Tcheca",
+   "chave": "Tottenham",
    "n": 9,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
