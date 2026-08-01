@@ -2057,8 +2057,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "19:17",
@@ -2078,13 +2078,21 @@
    ],
    "gatilho": "odd 2.55",
    "alvo": {
-    "h": "19:17",
-    "jogo": "Portugal x Escócia",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785607946966
+    "h": "19:20",
+    "jogo": "Eslovênia x Croácia",
+    "odd": 2.55,
+    "unidades": 2,
+    "desde": 1785608550265
    },
-   "iniciadoEm": 1785607946966
+   "iniciadoEm": 1785607946966,
+   "tiros": [
+    {
+     "h": "19:17",
+     "jogo": "Portugal x Escócia",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785604287261,
@@ -2116,7 +2124,7 @@
    "tipo": "odd",
    "chave": "2.55",
    "n": 10,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
