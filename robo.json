@@ -1964,7 +1964,37 @@
   "consumidas": {
    "premier": 1785587925456
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:58",
+     "jogo": "Bogota x Penarol",
+     "odd": 2.75
+    },
+    {
+     "h": "14:01",
+     "jogo": "Quito x Montevideo",
+     "odd": 2.2
+    },
+    {
+     "h": "14:04",
+     "jogo": "Avellaneda x Santiago",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "seq RGGGR",
+   "alvo": {
+    "h": "13:58",
+    "jogo": "Bogota x Penarol",
+    "odd": 2.75,
+    "unidades": 1,
+    "desde": 1785589095956
+   },
+   "iniciadoEm": 1785589095956
+  },
   "cooldown": {
    "copa": 1785537806885,
    "premier": 1785587925456,
@@ -1992,10 +2022,10 @@
    "2026-08-01": 9.2
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":48",
-   "n": 13,
-   "start": 2
+   "tipo": "seq",
+   "chave": "RGGGR",
+   "n": 8,
+   "start": 1
   },
   "_obs": {
    "euro": {
@@ -3685,7 +3715,37 @@
    "premier": 1785586664554,
    "euro": 1785587693167
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:58",
+     "jogo": "Bósnia e Herzegovina x Suécia",
+     "odd": 2.05
+    },
+    {
+     "h": "14:01",
+     "jogo": "Escócia x Jordânia",
+     "odd": 2.15
+    },
+    {
+     "h": "14:04",
+     "jogo": "Colômbia x Irã",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "seq RRRG",
+   "alvo": {
+    "h": "13:58",
+    "jogo": "Bósnia e Herzegovina x Suécia",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785588894056
+   },
+   "iniciadoEm": 1785588894056
+  },
   "cooldown": {
    "euro": 1785587693167,
    "super": 1785537627776,
@@ -3713,15 +3773,10 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRRG",
+   "chave": "RRRG",
    "n": 8,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785588891865,
-    "gatilho": "seq RRRG"
-   }
-  }
+  "_obs": {}
  }
 }
