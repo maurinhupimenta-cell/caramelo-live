@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -164.4,
-  "ciclos": 816,
-  "greens": 502,
+  "saldo": -163,
+  "ciclos": 817,
+  "greens": 503,
   "redsCiclo": 136,
   "aborts": 0,
   "descartes": 178,
   "historico": [
+   {
+    "quando": "2026-08-01T22:38:47.060Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "premier · Norwich x Tottenham @2.4 (tiro 1) · gatilho: coluna :36"
+   },
    {
     "quando": "2026-08-01T22:26:30.657Z",
     "resultado": "GREEN",
@@ -2137,42 +2143,13 @@
   ],
   "consumidas": {
    "super": 1785621687262,
-   "copa": 1785623190461
+   "copa": 1785623190461,
+   "premier": 1785623926866
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:36",
-     "jogo": "Norwich x Tottenham",
-     "odd": 2.4
-    },
-    {
-     "h": "23:39",
-     "jogo": "Chelsea x Liverpool",
-     "odd": 2.2
-    },
-    {
-     "h": "23:42",
-     "jogo": "City x Brentford",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "coluna :36",
-   "alvo": {
-    "h": "23:36",
-    "jogo": "Norwich x Tottenham",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1785623789757
-   },
-   "iniciadoEm": 1785623789757
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785623190461,
-   "premier": 1785620188566,
+   "premier": 1785623926866,
    "euro": 1785613527156,
    "super": 1785621687262
   },
@@ -2194,7 +2171,7 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": -8.6
+   "2026-08-01": -7.2
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
@@ -4012,7 +3989,37 @@
    "super": 1785622284761,
    "euro": 1785623069357
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:45",
+     "jogo": "Aston x Wolverhampton",
+     "odd": 1.9
+    },
+    {
+     "h": "23:48",
+     "jogo": "West Ham x Leeds",
+     "odd": 2.35
+    },
+    {
+     "h": "23:51",
+     "jogo": "Tottenham x United",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "coluna :48",
+   "alvo": {
+    "h": "23:45",
+    "jogo": "Aston x Wolverhampton",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1785623791359
+   },
+   "iniciadoEm": 1785623791359
+  },
   "cooldown": {
    "euro": 1785623069357,
    "super": 1785622284761,
@@ -4039,10 +4046,10 @@
    "2026-08-01": -9.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.25",
-   "n": 12,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":48",
+   "n": 23,
+   "start": 3
   },
   "_obs": {}
  }
