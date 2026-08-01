@@ -244,12 +244,18 @@
  },
  "o25": {
   "saldo": -162.8,
-  "ciclos": 803,
+  "ciclos": 804,
   "greens": 495,
   "redsCiclo": 134,
   "aborts": 0,
-  "descartes": 174,
+  "descartes": 175,
   "historico": [
+   {
+    "quando": "2026-08-01T18:53:41.959Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho odd 2.05) — liga REARMADA"
+   },
    {
     "quando": "2026-08-01T18:28:29.161Z",
     "resultado": "GREEN",
@@ -2058,7 +2064,6 @@
    }
   ],
   "consumidas": {
-   "premier": 1785606819558,
    "euro": 1785608909054
   },
   "ciclo": null,
@@ -2098,12 +2103,18 @@
  },
  "ambas": {
   "saldo": -9.1,
-  "ciclos": 830,
+  "ciclos": 831,
   "greens": 571,
   "redsCiclo": 84,
   "aborts": 0,
-  "descartes": 175,
+  "descartes": 176,
   "historico": [
+   {
+    "quando": "2026-08-01T18:53:42.055Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho seq GRGGG) — liga REARMADA"
+   },
    {
     "quando": "2026-08-01T17:58:25.759Z",
     "resultado": "GREEN",
@@ -3846,7 +3857,6 @@
    }
   ],
   "consumidas": {
-   "premier": 1785606819763,
    "euro": 1785607105566
   },
   "ciclo": {
@@ -3919,6 +3929,11 @@
    "n": 11,
    "start": 2
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1785610422055,
+    "gatilho": "seq GRGGG"
+   }
+  }
  }
 }
