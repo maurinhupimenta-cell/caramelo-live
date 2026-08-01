@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -153.3,
-  "ciclos": 783,
-  "greens": 484,
+  "saldo": -151.5,
+  "ciclos": 784,
+  "greens": 485,
   "redsCiclo": 130,
   "aborts": 0,
   "descartes": 169,
   "historico": [
+   {
+    "quando": "2026-08-01T10:28:15.554Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "super · Sao Paulo x La Boca @2.2 (tiro 3) · gatilho: coluna :22"
+   },
    {
     "quando": "2026-08-01T09:59:38.461Z",
     "resultado": "GREEN",
@@ -1938,58 +1944,15 @@
    }
   ],
   "consumidas": {
-   "premier": 1785578378355
+   "premier": 1785578378355,
+   "super": 1785580095361
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "11:19",
-     "jogo": "Sao Paulo x Bogota",
-     "odd": 2.35
-    },
-    {
-     "h": "11:22",
-     "jogo": "Penarol x Santos",
-     "odd": 2.55
-    },
-    {
-     "h": "11:25",
-     "jogo": "Sao Paulo x La Boca",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "coluna :22",
-   "alvo": {
-    "h": "11:25",
-    "jogo": "Sao Paulo x La Boca",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1785579914764
-   },
-   "iniciadoEm": 1785579777360,
-   "tiros": [
-    {
-     "h": "11:19",
-     "jogo": "Sao Paulo x Bogota",
-     "odd": 2.35,
-     "unidades": 1
-    },
-    {
-     "h": "11:22",
-     "jogo": "Penarol x Santos",
-     "odd": 2.55,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785537806885,
    "premier": 1785578378355,
    "euro": 1785568813460,
-   "super": 1785576175561
+   "super": 1785580095361
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -2009,7 +1972,7 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": 2.5
+   "2026-08-01": 4.3
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
