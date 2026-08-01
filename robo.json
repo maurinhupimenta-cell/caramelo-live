@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -160.6,
-  "ciclos": 789,
-  "greens": 488,
+  "saldo": -158.6,
+  "ciclos": 790,
+  "greens": 489,
   "redsCiclo": 132,
   "aborts": 0,
   "descartes": 169,
   "historico": [
+   {
+    "quando": "2026-08-01T13:51:33.657Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "premier · Chelsea x Brentford @2.25 (tiro 3) · gatilho: placar empate 2-2"
+   },
    {
     "quando": "2026-08-01T13:22:30.362Z",
     "resultado": "RED_CICLO",
@@ -1975,56 +1981,13 @@
   ],
   "consumidas": {
    "super": 1785589648254,
-   "copa": 1785590550260
+   "copa": 1785590550260,
+   "premier": 1785592293468
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "14:42",
-     "jogo": "Brighton x Brentford",
-     "odd": 2.1
-    },
-    {
-     "h": "14:45",
-     "jogo": "Wolverhampton x Palace",
-     "odd": 2.075
-    },
-    {
-     "h": "14:48",
-     "jogo": "Chelsea x Brentford",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "placar empate 2-2",
-   "alvo": {
-    "h": "14:48",
-    "jogo": "Chelsea x Brentford",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1785592123862
-   },
-   "iniciadoEm": 1785591539363,
-   "tiros": [
-    {
-     "h": "14:42",
-     "jogo": "Brighton x Brentford",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "14:45",
-     "jogo": "Wolverhampton x Palace",
-     "odd": 2.075,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785590550260,
-   "premier": 1785587925456,
+   "premier": 1785592293468,
    "euro": 1785568813460,
    "super": 1785589648254
   },
@@ -2046,13 +2009,13 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": -4.8
+   "2026-08-01": -2.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":48",
-   "n": 14,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.05",
+   "n": 11,
+   "start": 3
   },
   "_obs": {
    "euro": {
