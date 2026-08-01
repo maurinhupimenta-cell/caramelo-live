@@ -2093,13 +2093,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -10.1,
-  "ciclos": 829,
-  "greens": 570,
+  "saldo": -9.1,
+  "ciclos": 830,
+  "greens": 571,
   "redsCiclo": 84,
   "aborts": 0,
   "descartes": 175,
   "historico": [
+   {
+    "quando": "2026-08-01T17:58:25.759Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Portugal x Itália @1.98 (tiro 1) · gatilho: odd 2.25"
+   },
    {
     "quando": "2026-08-01T17:53:39.959Z",
     "resultado": "RED_CICLO",
@@ -3837,41 +3843,12 @@
   ],
   "consumidas": {
    "copa": 1785606265960,
-   "premier": 1785606819763
+   "premier": 1785606819763,
+   "euro": 1785607105566
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:53",
-     "jogo": "Portugal x Itália",
-     "odd": 1.98
-    },
-    {
-     "h": "18:56",
-     "jogo": "Eslovênia x Hungria",
-     "odd": 2.25
-    },
-    {
-     "h": "18:59",
-     "jogo": "Polônia x Suíça",
-     "odd": 2
-    }
-   ],
-   "gatilho": "odd 2.25",
-   "alvo": {
-    "h": "18:53",
-    "jogo": "Portugal x Itália",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785606832759
-   },
-   "iniciadoEm": 1785606832759
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785593725856,
+   "euro": 1785607105566,
    "super": 1785537627776,
    "premier": 1785606819763,
    "copa": 1785606265960
@@ -3893,7 +3870,7 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": -3.1
+   "2026-08-01": -2.1
   },
   "_gatilhoAtual": {
    "tipo": "odd",
