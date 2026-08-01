@@ -2046,12 +2046,41 @@
    }
   ],
   "consumidas": {
-   "premier": 1785602186358,
    "euro": 1785603745164,
    "copa": 1785604287261,
    "super": 1785605304861
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:45",
+     "jogo": "City x Tottenham",
+     "odd": 2.3
+    },
+    {
+     "h": "18:48",
+     "jogo": "Norwich x Southampton",
+     "odd": 2.3
+    },
+    {
+     "h": "18:51",
+     "jogo": "Wolverhampton x Watford",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "coluna :48",
+   "alvo": {
+    "h": "18:45",
+    "jogo": "City x Tottenham",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1785605787256
+   },
+   "iniciadoEm": 1785605787256
+  },
   "cooldown": {
    "copa": 1785604287261,
    "premier": 1785602186358,
@@ -2080,9 +2109,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":22",
+   "chave": ":48",
    "n": 18,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
@@ -3818,7 +3847,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:37",
+     "jogo": "EUA x Argélia",
+     "odd": 2
+    },
+    {
+     "h": "18:40",
+     "jogo": "Bélgica x Áustria",
+     "odd": 2
+    },
+    {
+     "h": "18:43",
+     "jogo": "Suécia x Irã",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "time Áustria",
+   "alvo": {
+    "h": "18:37",
+    "jogo": "EUA x Argélia",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1785605486855
+   },
+   "iniciadoEm": 1785605486855
+  },
   "cooldown": {
    "euro": 1785593725856,
    "super": 1785537627776,
@@ -3845,16 +3904,11 @@
    "2026-08-01": 2.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Uruguai",
-   "n": 13,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":48",
+   "n": 18,
+   "start": 3
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785605307465,
-    "gatilho": "time Áustria"
-   }
-  }
+  "_obs": {}
  }
 }
