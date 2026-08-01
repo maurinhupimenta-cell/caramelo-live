@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -169.3,
-  "ciclos": 814,
-  "greens": 500,
+  "saldo": -165.8,
+  "ciclos": 815,
+  "greens": 501,
   "redsCiclo": 136,
   "aborts": 0,
   "descartes": 178,
   "historico": [
+   {
+    "quando": "2026-08-01T22:01:27.457Z",
+    "resultado": "GREEN",
+    "unidades": 3.5,
+    "detalhe": "super · Porto Alegre x Asuncion @2.62 (tiro 3) · gatilho: seq RRGGG"
+   },
    {
     "quando": "2026-08-01T21:36:28.759Z",
     "resultado": "GREEN",
@@ -2124,58 +2130,15 @@
    }
   ],
   "consumidas": {
-   "premier": 1785620188566
+   "premier": 1785620188566,
+   "super": 1785621687262
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "22:52",
-     "jogo": "Avellaneda x Santiago",
-     "odd": 2.15
-    },
-    {
-     "h": "22:55",
-     "jogo": "Buenos Aires x Quito",
-     "odd": 2.15
-    },
-    {
-     "h": "22:58",
-     "jogo": "Porto Alegre x Asuncion",
-     "odd": 2.62
-    }
-   ],
-   "gatilho": "seq RRGGG",
-   "alvo": {
-    "h": "22:58",
-    "jogo": "Porto Alegre x Asuncion",
-    "odd": 2.62,
-    "unidades": 4,
-    "desde": 1785621568563
-   },
-   "iniciadoEm": 1785621120466,
-   "tiros": [
-    {
-     "h": "22:52",
-     "jogo": "Avellaneda x Santiago",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "22:55",
-     "jogo": "Buenos Aires x Quito",
-     "odd": 2.15,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785612411066,
    "premier": 1785620188566,
    "euro": 1785613527156,
-   "super": 1785616644860
+   "super": 1785621687262
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -2195,7 +2158,7 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": -13.5
+   "2026-08-01": -10
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -4059,7 +4022,7 @@
    "tipo": "coluna",
    "chave": ":04",
    "n": 23,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
