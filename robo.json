@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -172.3,
-  "ciclos": 188,
+  "saldo": -179.3,
+  "ciclos": 189,
   "greens": 62,
-  "redsCiclo": 80,
+  "redsCiclo": 81,
   "aborts": 0,
   "descartes": 46,
   "historico": [
+   {
+    "quando": "2026-08-01T08:14:46.854Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: odd 5.25"
+   },
    {
     "quando": "2026-08-01T07:59:45.964Z",
     "resultado": "GREEN_OBS",
@@ -200,55 +206,13 @@
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "09:06",
-     "jogo": "Tottenham x Norwich",
-     "odd": 5
-    },
-    {
-     "h": "09:09",
-     "jogo": "Palace x Leeds",
-     "odd": 5.25
-    },
-    {
-     "h": "09:12",
-     "jogo": "Brighton x Burnley",
-     "odd": 3.75
-    }
-   ],
-   "gatilho": "odd 5.25",
-   "alvo": {
-    "h": "09:12",
-    "jogo": "Brighton x Burnley",
-    "odd": 3.75,
-    "unidades": 4,
-    "desde": 1785571908254
-   },
-   "iniciadoEm": 1785571192157,
-   "tiros": [
-    {
-     "h": "09:06",
-     "jogo": "Tottenham x Norwich",
-     "odd": 5,
-     "unidades": 1
-    },
-    {
-     "h": "09:09",
-     "jogo": "Palace x Leeds",
-     "odd": 5.25,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1785572086662
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785038273206,
-   "premier": 1785303702158,
+   "premier": 1785572086662,
    "euro": 1785464913993,
    "super": 1784965764803
   },
@@ -265,7 +229,7 @@
    "2026-07-28": 10,
    "2026-07-29": -7,
    "2026-07-30": -14,
-   "2026-08-01": 0
+   "2026-08-01": -7
   },
   "_gatilhoAtual": {
    "tipo": "odd",
