@@ -1977,7 +1977,45 @@
    "super": 1785589648254,
    "copa": 1785590550260
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "14:42",
+     "jogo": "Brighton x Brentford",
+     "odd": 2.1
+    },
+    {
+     "h": "14:45",
+     "jogo": "Wolverhampton x Palace",
+     "odd": 2.075
+    },
+    {
+     "h": "14:48",
+     "jogo": "Chelsea x Brentford",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "placar empate 2-2",
+   "alvo": {
+    "h": "14:45",
+    "jogo": "Wolverhampton x Palace",
+    "odd": 2.075,
+    "unidades": 2,
+    "desde": 1785591990663
+   },
+   "iniciadoEm": 1785591539363,
+   "tiros": [
+    {
+     "h": "14:42",
+     "jogo": "Brighton x Brentford",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1785590550260,
    "premier": 1785587925456,
@@ -2005,9 +2043,9 @@
    "2026-08-01": -4.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Turquia",
-   "n": 13,
+   "tipo": "coluna",
+   "chave": ":48",
+   "n": 14,
    "start": 1
   },
   "_obs": {
