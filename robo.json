@@ -244,12 +244,18 @@
  },
  "o25": {
   "saldo": -157.4,
-  "ciclos": 792,
+  "ciclos": 793,
   "greens": 490,
   "redsCiclo": 132,
   "aborts": 0,
-  "descartes": 170,
+  "descartes": 171,
   "historico": [
+   {
+    "quando": "2026-08-01T16:15:01.454Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-08-01T14:24:30.957Z",
     "resultado": "GREEN",
@@ -1991,9 +1997,7 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {
-   "super": 1785594270765
-  },
+  "consumidas": {},
   "ciclo": {
    "liga": "premier",
    "degrau": 0,
