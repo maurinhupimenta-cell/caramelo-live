@@ -2017,13 +2017,19 @@
   }
  },
  "ambas": {
-  "saldo": 1.6,
-  "ciclos": 814,
-  "greens": 561,
+  "saldo": 2.5,
+  "ciclos": 815,
+  "greens": 562,
   "redsCiclo": 81,
   "aborts": 0,
   "descartes": 172,
   "historico": [
+   {
+    "quando": "2026-08-01T11:25:54.064Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Áustria x Bélgica @1.93 (tiro 2) · gatilho: coluna :23"
+   },
    {
     "quando": "2026-08-01T11:08:57.254Z",
     "resultado": "GREEN",
@@ -3670,49 +3676,12 @@
    }
   ],
   "consumidas": {
-   "premier": 1785582537057
+   "premier": 1785582537057,
+   "euro": 1785583553655
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "12:20",
-     "jogo": "Inglaterra x Hungria",
-     "odd": 1.98
-    },
-    {
-     "h": "12:23",
-     "jogo": "Áustria x Bélgica",
-     "odd": 1.93
-    },
-    {
-     "h": "12:26",
-     "jogo": "Inglaterra x Dinamarca",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "coluna :23",
-   "alvo": {
-    "h": "12:23",
-    "jogo": "Áustria x Bélgica",
-    "odd": 1.93,
-    "unidades": 2,
-    "desde": 1785583373268
-   },
-   "iniciadoEm": 1785582833659,
-   "tiros": [
-    {
-     "h": "12:20",
-     "jogo": "Inglaterra x Hungria",
-     "odd": 1.98,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785578753763,
+   "euro": 1785583553655,
    "super": 1785537627776,
    "premier": 1785582537057,
    "copa": 1785528509908
@@ -3734,11 +3703,11 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": 8.6
+   "2026-08-01": 9.5
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":23",
+   "chave": ":26",
    "n": 12,
    "start": 1
   },
