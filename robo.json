@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -162.8,
-  "ciclos": 804,
+  "saldo": -169.8,
+  "ciclos": 805,
   "greens": 495,
-  "redsCiclo": 134,
+  "redsCiclo": 135,
   "aborts": 0,
   "descartes": 175,
   "historico": [
+   {
+    "quando": "2026-08-01T19:05:58.656Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: odd 2.05"
+   },
    {
     "quando": "2026-08-01T18:53:41.959Z",
     "resultado": "GREEN_OBS",
@@ -2064,56 +2070,13 @@
    }
   ],
   "consumidas": {
-   "euro": 1785608909054
+   "euro": 1785608909054,
+   "premier": 1785611158458
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "19:57",
-     "jogo": "Brighton x Norwich",
-     "odd": 2.05
-    },
-    {
-     "h": "20:00",
-     "jogo": "Wolverhampton x Brentford",
-     "odd": 2.15
-    },
-    {
-     "h": "20:03",
-     "jogo": "Southampton x Chelsea",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "odd 2.05",
-   "alvo": {
-    "h": "20:03",
-    "jogo": "Southampton x Chelsea",
-    "odd": 2.3,
-    "unidades": 4,
-    "desde": 1785610961964
-   },
-   "iniciadoEm": 1785610434263,
-   "tiros": [
-    {
-     "h": "19:57",
-     "jogo": "Brighton x Norwich",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "20:00",
-     "jogo": "Wolverhampton x Brentford",
-     "odd": 2.15,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785604287261,
-   "premier": 1785606819558,
+   "premier": 1785611158458,
    "euro": 1785608909054,
    "super": 1785605304861
   },
@@ -2135,7 +2098,7 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": -7
+   "2026-08-01": -14
   },
   "_gatilhoAtual": {
    "tipo": "odd",
@@ -2146,13 +2109,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -7.9,
-  "ciclos": 832,
+  "saldo": -14.9,
+  "ciclos": 833,
   "greens": 572,
-  "redsCiclo": 84,
+  "redsCiclo": 85,
   "aborts": 0,
   "descartes": 176,
   "historico": [
+   {
+    "quando": "2026-08-01T19:05:58.958Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq GRGGG"
+   },
    {
     "quando": "2026-08-01T18:54:25.957Z",
     "resultado": "GREEN",
@@ -3907,57 +3876,14 @@
    }
   ],
   "consumidas": {
-   "copa": 1785610465765
+   "copa": 1785610465765,
+   "premier": 1785611158760
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "19:57",
-     "jogo": "Brighton x Norwich",
-     "odd": 1.85
-    },
-    {
-     "h": "20:00",
-     "jogo": "Wolverhampton x Brentford",
-     "odd": 1.93
-    },
-    {
-     "h": "20:03",
-     "jogo": "Southampton x Chelsea",
-     "odd": 2
-    }
-   ],
-   "gatilho": "seq GRGGG",
-   "alvo": {
-    "h": "20:03",
-    "jogo": "Southampton x Chelsea",
-    "odd": 2,
-    "unidades": 4,
-    "desde": 1785610962161
-   },
-   "iniciadoEm": 1785610468056,
-   "tiros": [
-    {
-     "h": "19:57",
-     "jogo": "Brighton x Norwich",
-     "odd": 1.85,
-     "unidades": 1
-    },
-    {
-     "h": "20:00",
-     "jogo": "Wolverhampton x Brentford",
-     "odd": 1.93,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785607105566,
    "super": 1785537627776,
-   "premier": 1785606819763,
+   "premier": 1785611158760,
    "copa": 1785610465765
   },
   "dias": {
@@ -3977,7 +3903,7 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": -0.9
+   "2026-08-01": -7.9
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
