@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -165.8,
-  "ciclos": 815,
-  "greens": 501,
+  "saldo": -164.4,
+  "ciclos": 816,
+  "greens": 502,
   "redsCiclo": 136,
   "aborts": 0,
   "descartes": 178,
   "historico": [
+   {
+    "quando": "2026-08-01T22:26:30.657Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "copa · Escócia x Egito @2.4 (tiro 1) · gatilho: time Costa do Marfim"
+   },
    {
     "quando": "2026-08-01T22:01:27.457Z",
     "resultado": "GREEN",
@@ -2131,41 +2137,12 @@
   ],
   "consumidas": {
    "premier": 1785620188566,
-   "super": 1785621687262
+   "super": 1785621687262,
+   "copa": 1785623190461
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:22",
-     "jogo": "Escócia x Egito",
-     "odd": 2.4
-    },
-    {
-     "h": "23:25",
-     "jogo": "Irã x Costa do Marfim",
-     "odd": 2.4
-    },
-    {
-     "h": "23:28",
-     "jogo": "Gana x Coreia do Sul",
-     "odd": 2.55
-    }
-   ],
-   "gatilho": "time Costa do Marfim",
-   "alvo": {
-    "h": "23:22",
-    "jogo": "Escócia x Egito",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1785622472062
-   },
-   "iniciadoEm": 1785622472062
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785612411066,
+   "copa": 1785623190461,
    "premier": 1785620188566,
    "euro": 1785613527156,
    "super": 1785621687262
@@ -2188,7 +2165,7 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": -10
+   "2026-08-01": -8.6
   },
   "_gatilhoAtual": {
    "tipo": "time",
