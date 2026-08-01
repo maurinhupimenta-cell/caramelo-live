@@ -1865,8 +1865,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "05:59",
@@ -1886,11 +1886,11 @@
    ],
    "gatilho": "seq RRRR",
    "alvo": {
-    "h": "06:02",
-    "jogo": "Albânia x Bélgica",
-    "odd": 2.45,
-    "unidades": 2,
-    "desde": 1785560515461
+    "h": "06:05",
+    "jogo": "Hungria x Áustria",
+    "odd": 2.4,
+    "unidades": 4,
+    "desde": 1785560726759
    },
    "iniciadoEm": 1785560480956,
    "tiros": [
@@ -1899,6 +1899,12 @@
      "jogo": "Hungria x Eslovênia",
      "odd": 2.8,
      "unidades": 1
+    },
+    {
+     "h": "06:02",
+     "jogo": "Albânia x Bélgica",
+     "odd": 2.45,
+     "unidades": 2
     }
    ]
   },
@@ -1930,8 +1936,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRR",
-   "n": 17,
+   "chave": "RRRRR",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
