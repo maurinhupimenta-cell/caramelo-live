@@ -2012,7 +2012,37 @@
   "consumidas": {
    "super": 1785601343958
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:33",
+     "jogo": "City x Wolverhampton",
+     "odd": 1.98
+    },
+    {
+     "h": "17:36",
+     "jogo": "United x Tottenham",
+     "odd": 2.45
+    },
+    {
+     "h": "17:39",
+     "jogo": "Everton x Leicester",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "coluna :36",
+   "alvo": {
+    "h": "17:33",
+    "jogo": "City x Wolverhampton",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785601447366
+   },
+   "iniciadoEm": 1785601447366
+  },
   "cooldown": {
    "copa": 1785590550260,
    "premier": 1785592293468,
@@ -2041,9 +2071,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":22",
+   "chave": ":36",
    "n": 17,
-   "start": 1
+   "start": 3
   },
   "_obs": {
    "euro": {
