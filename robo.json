@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -171.8,
-  "ciclos": 811,
-  "greens": 498,
+  "saldo": -170.3,
+  "ciclos": 812,
+  "greens": 499,
   "redsCiclo": 136,
   "aborts": 0,
   "descartes": 177,
   "historico": [
+   {
+    "quando": "2026-08-01T20:37:25.057Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "super · Lima x Medellin @2.25 (tiro 2) · gatilho: seq RRGGG"
+   },
    {
     "quando": "2026-08-01T20:26:54.260Z",
     "resultado": "RED_CICLO",
@@ -2107,52 +2113,15 @@
   ],
   "consumidas": {
    "euro": 1785613527156,
-   "premier": 1785616014064
+   "premier": 1785616014064,
+   "super": 1785616644860
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "21:28",
-     "jogo": "Santiago x Avellaneda",
-     "odd": 2.1
-    },
-    {
-     "h": "21:31",
-     "jogo": "Lima x Medellin",
-     "odd": 2.25
-    },
-    {
-     "h": "21:34",
-     "jogo": "La Boca x Guayaquil",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "seq RRGGG",
-   "alvo": {
-    "h": "21:31",
-    "jogo": "Lima x Medellin",
-    "odd": 2.25,
-    "unidades": 2,
-    "desde": 1785616295666
-   },
-   "iniciadoEm": 1785616104367,
-   "tiros": [
-    {
-     "h": "21:28",
-     "jogo": "Santiago x Avellaneda",
-     "odd": 2.1,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785612411066,
    "premier": 1785616014064,
    "euro": 1785613527156,
-   "super": 1785612328265
+   "super": 1785616644860
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -2172,7 +2141,7 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": -16
+   "2026-08-01": -14.5
   },
   "_gatilhoAtual": {
    "tipo": "seq",
