@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -150.1,
-  "ciclos": 785,
-  "greens": 486,
+  "saldo": -148.2,
+  "ciclos": 786,
+  "greens": 487,
   "redsCiclo": 130,
   "aborts": 0,
   "descartes": 169,
   "historico": [
+   {
+    "quando": "2026-08-01T11:46:15.060Z",
+    "resultado": "GREEN",
+    "unidades": 1.9,
+    "detalhe": "super · Bogota x La Plata @2.87 (tiro 1) · gatilho: seq GRGRR"
+   },
    {
     "quando": "2026-08-01T11:32:46.664Z",
     "resultado": "GREEN",
@@ -1950,44 +1956,15 @@
    }
   ],
   "consumidas": {
-   "premier": 1785583966560
+   "premier": 1785583966560,
+   "super": 1785584774954
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "12:43",
-     "jogo": "Bogota x La Plata",
-     "odd": 2.87
-    },
-    {
-     "h": "12:46",
-     "jogo": "Agua Branca x Belo Horizonte",
-     "odd": 2.02
-    },
-    {
-     "h": "12:49",
-     "jogo": "Santos x Asuncion",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "seq GRGRR",
-   "alvo": {
-    "h": "12:43",
-    "jogo": "Bogota x La Plata",
-    "odd": 2.87,
-    "unidades": 1,
-    "desde": 1785584594963
-   },
-   "iniciadoEm": 1785584594963
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785537806885,
    "premier": 1785583966560,
    "euro": 1785568813460,
-   "super": 1785580095361
+   "super": 1785584774954
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -2007,13 +1984,13 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": 5.7
+   "2026-08-01": 7.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGRR",
-   "n": 10,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.29",
+   "n": 8,
+   "start": 2
   },
   "_obs": {
    "euro": {
