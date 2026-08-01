@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -163,
-  "ciclos": 817,
-  "greens": 503,
+  "saldo": -161.8,
+  "ciclos": 818,
+  "greens": 504,
   "redsCiclo": 136,
   "aborts": 0,
   "descartes": 178,
   "historico": [
+   {
+    "quando": "2026-08-01T22:49:09.159Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Bélgica x Croácia @2.15 (tiro 1) · gatilho: odd 2.55"
+   },
    {
     "quando": "2026-08-01T22:38:47.060Z",
     "resultado": "GREEN",
@@ -2144,43 +2150,14 @@
   "consumidas": {
    "super": 1785621687262,
    "copa": 1785623190461,
-   "premier": 1785623926866
+   "premier": 1785623926866,
+   "euro": 1785624548964
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:44",
-     "jogo": "Bélgica x Croácia",
-     "odd": 2.15
-    },
-    {
-     "h": "23:47",
-     "jogo": "Eslovênia x Escócia",
-     "odd": 2.55
-    },
-    {
-     "h": "23:50",
-     "jogo": "Albânia x Alemanha",
-     "odd": 2.45
-    }
-   ],
-   "gatilho": "odd 2.55",
-   "alvo": {
-    "h": "23:44",
-    "jogo": "Bélgica x Croácia",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785623965061
-   },
-   "iniciadoEm": 1785623965061
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785623190461,
    "premier": 1785623926866,
-   "euro": 1785613527156,
+   "euro": 1785624548964,
    "super": 1785621687262
   },
   "dias": {
@@ -2201,7 +2178,7 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": -7.2
+   "2026-08-01": -6
   },
   "_gatilhoAtual": {
    "tipo": "odd",
