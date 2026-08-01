@@ -2079,7 +2079,45 @@
    "euro": 1785608909054,
    "premier": 1785611158458
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "20:19",
+     "jogo": "Santiago x La Boca",
+     "odd": 2.2
+    },
+    {
+     "h": "20:22",
+     "jogo": "Buenos Aires x Sao Paulo",
+     "odd": 1.98
+    },
+    {
+     "h": "20:25",
+     "jogo": "Asuncion x Quito",
+     "odd": 2.29
+    }
+   ],
+   "gatilho": "coluna :22",
+   "alvo": {
+    "h": "20:22",
+    "jogo": "Buenos Aires x Sao Paulo",
+    "odd": 1.98,
+    "unidades": 2,
+    "desde": 1785612147363
+   },
+   "iniciadoEm": 1785611729757,
+   "tiros": [
+    {
+     "h": "20:19",
+     "jogo": "Santiago x La Boca",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1785604287261,
    "premier": 1785611158458,
@@ -2108,16 +2146,11 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.05",
-   "n": 12,
+   "chave": "2.29",
+   "n": 8,
    "start": 1
   },
-  "_obs": {
-   "super": {
-    "desde": 1785611727865,
-    "gatilho": "coluna :22"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -14.9,
