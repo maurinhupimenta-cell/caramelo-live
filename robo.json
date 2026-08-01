@@ -201,7 +201,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:06",
+     "jogo": "Tottenham x Norwich",
+     "odd": 5
+    },
+    {
+     "h": "09:09",
+     "jogo": "Palace x Leeds",
+     "odd": 5.25
+    },
+    {
+     "h": "09:12",
+     "jogo": "Brighton x Burnley",
+     "odd": 3.75
+    }
+   ],
+   "gatilho": "odd 5.25",
+   "alvo": {
+    "h": "09:06",
+    "jogo": "Tottenham x Norwich",
+    "odd": 5,
+    "unidades": 1,
+    "desde": 1785571192157
+   },
+   "iniciadoEm": 1785571192157
+  },
   "cooldown": {
    "copa": 1785038273206,
    "premier": 1785303702158,
@@ -224,19 +254,15 @@
    "2026-08-01": 0
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Eslovênia",
+   "tipo": "odd",
+   "chave": "5.25",
    "n": 8,
-   "start": 3
+   "start": 2
   },
   "_obs": {
    "euro": {
     "desde": 1785463711484,
     "gatilho": "time Eslovênia"
-   },
-   "premier": {
-    "desde": 1785571018754,
-    "gatilho": "odd 5.25"
    }
   }
  },
