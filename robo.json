@@ -1895,8 +1895,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "08:11",
@@ -1916,11 +1916,11 @@
    ],
    "gatilho": "coluna :14",
    "alvo": {
-    "h": "08:14",
-    "jogo": "Geórgia x França",
+    "h": "08:17",
+    "jogo": "Eslováquia x Suíça",
     "odd": 2.2,
-    "unidades": 2,
-    "desde": 1785568433862
+    "unidades": 4,
+    "desde": 1785568613759
    },
    "iniciadoEm": 1785567894056,
    "tiros": [
@@ -1929,6 +1929,12 @@
      "jogo": "Romênia x Itália",
      "odd": 2.2,
      "unidades": 1
+    },
+    {
+     "h": "08:14",
+     "jogo": "Geórgia x França",
+     "odd": 2.2,
+     "unidades": 2
     }
    ]
   },
@@ -1959,8 +1965,8 @@
    "2026-08-01": 4.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":14",
+   "tipo": "seq",
+   "chave": "GGRRR",
    "n": 8,
    "start": 1
   },
