@@ -2032,17 +2032,27 @@
    "euro": {
     "desde": 1785575993163,
     "gatilho": "seq RRRRR"
+   },
+   "copa": {
+    "desde": 1785595653655,
+    "gatilho": "time Suécia"
    }
   }
  },
  "ambas": {
   "saldo": 1,
-  "ciclos": 822,
+  "ciclos": 823,
   "greens": 567,
   "redsCiclo": 82,
   "aborts": 0,
-  "descartes": 173,
+  "descartes": 174,
   "historico": [
+   {
+    "quando": "2026-08-01T14:47:33.657Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Uzbequistão) — liga REARMADA"
+   },
    {
     "quando": "2026-08-01T14:33:25.854Z",
     "resultado": "GREEN",
