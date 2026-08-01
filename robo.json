@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -157.3,
-  "ciclos": 767,
-  "greens": 471,
+  "saldo": -155.8,
+  "ciclos": 768,
+  "greens": 472,
   "redsCiclo": 128,
   "aborts": 0,
   "descartes": 168,
   "historico": [
+   {
+    "quando": "2026-08-01T02:22:28.358Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "euro · Croácia x República Tcheca @2.5 (tiro 1) · gatilho: seq RRRR"
+   },
    {
     "quando": "2026-08-01T02:11:43.559Z",
     "resultado": "GREEN",
@@ -1823,43 +1829,14 @@
    }
   ],
   "consumidas": {
-   "premier": 1785550303363
+   "premier": 1785550303363,
+   "euro": 1785550948162
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:17",
-     "jogo": "Croácia x República Tcheca",
-     "odd": 2.5
-    },
-    {
-     "h": "03:20",
-     "jogo": "Escócia x Geórgia",
-     "odd": 2.35
-    },
-    {
-     "h": "03:23",
-     "jogo": "Bélgica x Suíça",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "seq RRRR",
-   "alvo": {
-    "h": "03:17",
-    "jogo": "Croácia x República Tcheca",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1785550465963
-   },
-   "iniciadoEm": 1785550465963
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785537806885,
    "premier": 1785550303363,
-   "euro": 1785546685862,
+   "euro": 1785550948162,
    "super": 1785539430655
   },
   "dias": {
@@ -1879,7 +1856,7 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": -42.1
+   "2026-07-31": -40.6
   },
   "_gatilhoAtual": {
    "tipo": "seq",
