@@ -2120,7 +2120,37 @@
   "consumidas": {
    "super": 1785616644860
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:33",
+     "jogo": "City x Newcastle",
+     "odd": 1.98
+    },
+    {
+     "h": "22:36",
+     "jogo": "Burnley x United",
+     "odd": 2.1
+    },
+    {
+     "h": "22:39",
+     "jogo": "Palace x Southampton",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "coluna :36",
+   "alvo": {
+    "h": "22:33",
+    "jogo": "City x Newcastle",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785619636156
+   },
+   "iniciadoEm": 1785619636156
+  },
   "cooldown": {
    "copa": 1785612411066,
    "premier": 1785616014064,
@@ -2148,17 +2178,12 @@
    "2026-08-01": -14.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGGG",
-   "n": 9,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":36",
+   "n": 22,
+   "start": 2
   },
-  "_obs": {
-   "premier": {
-    "desde": 1785619623863,
-    "gatilho": "coluna :36"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -13.4,
