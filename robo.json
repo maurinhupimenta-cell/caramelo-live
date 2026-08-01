@@ -1863,7 +1863,37 @@
    "super": 1785557954355,
    "premier": 1785558778457
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:59",
+     "jogo": "Hungria x Eslovênia",
+     "odd": 2.8
+    },
+    {
+     "h": "06:02",
+     "jogo": "Albânia x Bélgica",
+     "odd": 2.45
+    },
+    {
+     "h": "06:05",
+     "jogo": "Hungria x Áustria",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "seq RRRR",
+   "alvo": {
+    "h": "05:59",
+    "jogo": "Hungria x Eslovênia",
+    "odd": 2.8,
+    "unidades": 1,
+    "desde": 1785560480956
+   },
+   "iniciadoEm": 1785560480956
+  },
   "cooldown": {
    "copa": 1785537806885,
    "premier": 1785558778457,
@@ -1891,9 +1921,9 @@
    "2026-08-01": -2.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Leicester",
-   "n": 12,
+   "tipo": "seq",
+   "chave": "RRRR",
+   "n": 17,
    "start": 1
   },
   "_obs": {}
