@@ -1977,13 +1977,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": 3.3,
-  "ciclos": 807,
-  "greens": 556,
+  "saldo": 4.5,
+  "ciclos": 808,
+  "greens": 557,
   "redsCiclo": 80,
   "aborts": 0,
   "descartes": 171,
   "historico": [
+   {
+    "quando": "2026-08-01T08:01:53.960Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Hungria x República Tcheca @2.2 (tiro 1) · gatilho: time República Tcheca"
+   },
    {
     "quando": "2026-08-01T07:32:41.559Z",
     "resultado": "GREEN",
@@ -3588,41 +3594,12 @@
    }
   ],
   "consumidas": {
-   "premier": 1785569561456
+   "premier": 1785569561456,
+   "euro": 1785571313767
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "08:59",
-     "jogo": "Hungria x República Tcheca",
-     "odd": 2.2
-    },
-    {
-     "h": "09:02",
-     "jogo": "Eslovênia x Escócia",
-     "odd": 2.15
-    },
-    {
-     "h": "09:05",
-     "jogo": "Dinamarca x Eslováquia",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "time República Tcheca",
-   "alvo": {
-    "h": "08:59",
-    "jogo": "Hungria x República Tcheca",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785571134154
-   },
-   "iniciadoEm": 1785571134154
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785567532662,
+   "euro": 1785571313767,
    "super": 1785537627776,
    "premier": 1785569561456,
    "copa": 1785528509908
@@ -3644,7 +3621,7 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": 10.3
+   "2026-08-01": 11.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
