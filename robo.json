@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -155.1,
-  "ciclos": 798,
-  "greens": 492,
+  "saldo": -151.9,
+  "ciclos": 799,
+  "greens": 493,
   "redsCiclo": 132,
   "aborts": 0,
   "descartes": 174,
   "historico": [
+   {
+    "quando": "2026-08-01T17:02:25.361Z",
+    "resultado": "GREEN",
+    "unidades": 3.2,
+    "detalhe": "euro · Alemanha x Albânia @2.55 (tiro 3) · gatilho: odd 2.55"
+   },
    {
     "quando": "2026-08-01T16:49:29.261Z",
     "resultado": "GREEN_OBS",
@@ -2029,57 +2035,14 @@
   ],
   "consumidas": {
    "super": 1785601343958,
-   "premier": 1785602186358
+   "premier": 1785602186358,
+   "euro": 1785603745164
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "17:53",
-     "jogo": "Hungria x Ucrânia",
-     "odd": 2.4
-    },
-    {
-     "h": "17:56",
-     "jogo": "Eslovênia x Portugal",
-     "odd": 2.55
-    },
-    {
-     "h": "17:59",
-     "jogo": "Alemanha x Albânia",
-     "odd": 2.55
-    }
-   ],
-   "gatilho": "odd 2.55",
-   "alvo": {
-    "h": "17:59",
-    "jogo": "Alemanha x Albânia",
-    "odd": 2.55,
-    "unidades": 4,
-    "desde": 1785603624864
-   },
-   "iniciadoEm": 1785602906457,
-   "tiros": [
-    {
-     "h": "17:53",
-     "jogo": "Hungria x Ucrânia",
-     "odd": 2.4,
-     "unidades": 1
-    },
-    {
-     "h": "17:56",
-     "jogo": "Eslovênia x Portugal",
-     "odd": 2.55,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785590550260,
    "premier": 1785602186358,
-   "euro": 1785568813460,
+   "euro": 1785603745164,
    "super": 1785601343958
   },
   "dias": {
@@ -2100,13 +2063,13 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": 0.7
+   "2026-08-01": 3.9
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Costa do Marfim",
    "n": 8,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  },
