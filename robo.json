@@ -2052,8 +2052,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "18:45",
@@ -2073,11 +2073,11 @@
    ],
    "gatilho": "coluna :48",
    "alvo": {
-    "h": "18:48",
-    "jogo": "Norwich x Southampton",
-    "odd": 2.3,
-    "unidades": 2,
-    "desde": 1785606463464
+    "h": "18:51",
+    "jogo": "Wolverhampton x Watford",
+    "odd": 2.15,
+    "unidades": 4,
+    "desde": 1785606646065
    },
    "iniciadoEm": 1785605787256,
    "tiros": [
@@ -2086,6 +2086,12 @@
      "jogo": "City x Tottenham",
      "odd": 2.3,
      "unidades": 1
+    },
+    {
+     "h": "18:48",
+     "jogo": "Norwich x Southampton",
+     "odd": 2.3,
+     "unidades": 2
     }
    ]
   },
@@ -3865,8 +3871,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "18:45",
@@ -3886,13 +3892,27 @@
    ],
    "gatilho": "coluna :48",
    "alvo": {
-    "h": "18:45",
-    "jogo": "City x Tottenham",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1785606268258
+    "h": "18:51",
+    "jogo": "Wolverhampton x Watford",
+    "odd": 1.93,
+    "unidades": 4,
+    "desde": 1785606646262
    },
-   "iniciadoEm": 1785606268258
+   "iniciadoEm": 1785606268258,
+   "tiros": [
+    {
+     "h": "18:45",
+     "jogo": "City x Tottenham",
+     "odd": 2.02,
+     "unidades": 1
+    },
+    {
+     "h": "18:48",
+     "jogo": "Norwich x Southampton",
+     "odd": 2,
+     "unidades": 2
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785593725856,
@@ -3920,10 +3940,10 @@
    "2026-08-01": 3.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":48",
-   "n": 18,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.25",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  }
