@@ -231,13 +231,19 @@
   }
  },
  "o25": {
-  "saldo": -158.5,
-  "ciclos": 778,
-  "greens": 479,
+  "saldo": -157.5,
+  "ciclos": 779,
+  "greens": 480,
   "redsCiclo": 130,
   "aborts": 0,
   "descartes": 169,
   "historico": [
+   {
+    "quando": "2026-08-01T07:41:45.560Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Palace x Brighton @2.05 (tiro 1) · gatilho: odd 2.05"
+   },
    {
     "quando": "2026-08-01T07:20:13.563Z",
     "resultado": "RED_CICLO",
@@ -1897,12 +1903,13 @@
   ],
   "consumidas": {
    "super": 1785566575262,
-   "euro": 1785568813460
+   "euro": 1785568813460,
+   "premier": 1785570105364
   },
   "ciclo": null,
   "cooldown": {
    "copa": 1785537806885,
-   "premier": 1785566142163,
+   "premier": 1785570105364,
    "euro": 1785568813460,
    "super": 1785566575262
   },
@@ -1924,11 +1931,11 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": -2.7
+   "2026-08-01": -1.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRRR",
+   "tipo": "coluna",
+   "chave": ":45",
    "n": 8,
    "start": 1
   },
