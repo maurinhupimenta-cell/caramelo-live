@@ -1893,7 +1893,37 @@
    "premier": 1785566142163,
    "super": 1785566575262
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:11",
+     "jogo": "Romênia x Itália",
+     "odd": 2.2
+    },
+    {
+     "h": "08:14",
+     "jogo": "Geórgia x França",
+     "odd": 2.2
+    },
+    {
+     "h": "08:17",
+     "jogo": "Eslováquia x Suíça",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "coluna :14",
+   "alvo": {
+    "h": "08:11",
+    "jogo": "Romênia x Itália",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785567894056
+   },
+   "iniciadoEm": 1785567894056
+  },
   "cooldown": {
    "copa": 1785537806885,
    "premier": 1785566142163,
@@ -1921,10 +1951,10 @@
    "2026-08-01": 4.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Guayaquil",
-   "n": 11,
-   "start": 2
+   "tipo": "coluna",
+   "chave": ":14",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  },
