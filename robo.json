@@ -1853,8 +1853,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:13",
@@ -1874,13 +1874,21 @@
    ],
    "gatilho": "time Guayaquil",
    "alvo": {
-    "h": "05:13",
-    "jogo": "Porto Alegre x Belo Horizonte",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1785557245058
+    "h": "05:16",
+    "jogo": "Guayaquil x Montevideo",
+    "odd": 2.07,
+    "unidades": 2,
+    "desde": 1785557789959
    },
-   "iniciadoEm": 1785557245058
+   "iniciadoEm": 1785557245058,
+   "tiros": [
+    {
+     "h": "05:13",
+     "jogo": "Porto Alegre x Belo Horizonte",
+     "odd": 2.4,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785537806885,
@@ -1917,13 +1925,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -4.6,
-  "ciclos": 801,
-  "greens": 550,
+  "saldo": -3.8,
+  "ciclos": 802,
+  "greens": 551,
   "redsCiclo": 80,
   "aborts": 0,
   "descartes": 171,
   "historico": [
+   {
+    "quando": "2026-08-01T04:17:30.356Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "euro · Países Baixos x Inglaterra @1.8 (tiro 1) · gatilho: odd 2.05"
+   },
    {
     "quando": "2026-08-01T03:28:29.956Z",
     "resultado": "GREEN",
@@ -3492,41 +3506,12 @@
    }
   ],
   "consumidas": {
-   "premier": 1785554909756
+   "premier": 1785554909756,
+   "euro": 1785557850160
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:14",
-     "jogo": "Países Baixos x Inglaterra",
-     "odd": 1.8
-    },
-    {
-     "h": "05:17",
-     "jogo": "Polônia x Croácia",
-     "odd": 2.05
-    },
-    {
-     "h": "05:20",
-     "jogo": "Países Baixos x Áustria",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "odd 2.05",
-   "alvo": {
-    "h": "05:14",
-    "jogo": "Países Baixos x Inglaterra",
-    "odd": 1.8,
-    "unidades": 1,
-    "desde": 1785557786267
-   },
-   "iniciadoEm": 1785557786267
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785554130457,
+   "euro": 1785557850160,
    "super": 1785537627776,
    "premier": 1785554909756,
    "copa": 1785528509908
@@ -3548,7 +3533,7 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": 2.4
+   "2026-08-01": 3.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
