@@ -1837,7 +1837,37 @@
   "consumidas": {
    "premier": 1785554267559
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:38",
+     "jogo": "Croácia x França",
+     "odd": 2.07
+    },
+    {
+     "h": "04:41",
+     "jogo": "Geórgia x Ucrânia",
+     "odd": 2.4
+    },
+    {
+     "h": "04:44",
+     "jogo": "Itália x Áustria",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "seq RRRR",
+   "alvo": {
+    "h": "04:38",
+    "jogo": "Croácia x França",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1785555508360
+   },
+   "iniciadoEm": 1785555508360
+  },
   "cooldown": {
    "copa": 1785537806885,
    "premier": 1785554267559,
@@ -1865,9 +1895,9 @@
    "2026-08-01": 1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Palace",
-   "n": 8,
+   "tipo": "seq",
+   "chave": "RRRR",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
