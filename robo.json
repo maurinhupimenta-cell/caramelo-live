@@ -3642,7 +3642,37 @@
   "consumidas": {
    "euro": 1785575095062
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:54",
+     "jogo": "Newcastle x Norwich",
+     "odd": 1.85
+    },
+    {
+     "h": "10:57",
+     "jogo": "City x Brighton",
+     "odd": 1.9
+    },
+    {
+     "h": "11:00",
+     "jogo": "Burnley x Brentford",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "seq RRGG",
+   "alvo": {
+    "h": "10:54",
+    "jogo": "Newcastle x Norwich",
+    "odd": 1.85,
+    "unidades": 1,
+    "desde": 1785577852056
+   },
+   "iniciadoEm": 1785577852056
+  },
   "cooldown": {
    "euro": 1785575095062,
    "super": 1785537627776,
@@ -3669,16 +3699,11 @@
    "2026-08-01": 5.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Ucrânia",
-   "n": 13,
+   "tipo": "seq",
+   "chave": "RRGG",
+   "n": 10,
    "start": 1
   },
-  "_obs": {
-   "premier": {
-    "desde": 1785577845258,
-    "gatilho": "seq RRGG"
-   }
-  }
+  "_obs": {}
  }
 }
