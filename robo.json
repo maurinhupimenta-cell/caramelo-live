@@ -231,13 +231,19 @@
   }
  },
  "o25": {
-  "saldo": -155.7,
-  "ciclos": 773,
-  "greens": 476,
+  "saldo": -153.8,
+  "ciclos": 774,
+  "greens": 477,
   "redsCiclo": 129,
   "aborts": 0,
   "descartes": 168,
   "historico": [
+   {
+    "quando": "2026-08-01T05:28:29.461Z",
+    "resultado": "GREEN",
+    "unidades": 1.9,
+    "detalhe": "super · Porto Alegre x Guayaquil @2.45 (tiro 2) · gatilho: time Guayaquil"
+   },
    {
     "quando": "2026-08-01T05:09:30.360Z",
     "resultado": "GREEN",
@@ -1867,52 +1873,15 @@
   ],
   "consumidas": {
    "premier": 1785558778457,
-   "euro": 1785560970162
+   "euro": 1785560970162,
+   "super": 1785562109269
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "06:22",
-     "jogo": "Lima x Medellin",
-     "odd": 2.25
-    },
-    {
-     "h": "06:25",
-     "jogo": "Porto Alegre x Guayaquil",
-     "odd": 2.45
-    },
-    {
-     "h": "06:28",
-     "jogo": "Itaquera x Bogota",
-     "odd": 2.6
-    }
-   ],
-   "gatilho": "time Guayaquil",
-   "alvo": {
-    "h": "06:25",
-    "jogo": "Porto Alegre x Guayaquil",
-    "odd": 2.45,
-    "unidades": 2,
-    "desde": 1785562107068
-   },
-   "iniciadoEm": 1785561566059,
-   "tiros": [
-    {
-     "h": "06:22",
-     "jogo": "Lima x Medellin",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785537806885,
    "premier": 1785558778457,
    "euro": 1785560970162,
-   "super": 1785557954355
+   "super": 1785562109269
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -1932,7 +1901,7 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": 0.1
+   "2026-08-01": 2
   },
   "_gatilhoAtual": {
    "tipo": "time",
@@ -3532,7 +3501,37 @@
   "consumidas": {
    "premier": 1785558986955
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:35",
+     "jogo": "Países Baixos x Turquia",
+     "odd": 1.98
+    },
+    {
+     "h": "06:38",
+     "jogo": "Alemanha x República Tcheca",
+     "odd": 2.1
+    },
+    {
+     "h": "06:41",
+     "jogo": "Sérvia x Ucrânia",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time República Tcheca",
+   "alvo": {
+    "h": "06:35",
+    "jogo": "Países Baixos x Turquia",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785562134061
+   },
+   "iniciadoEm": 1785562134061
+  },
   "cooldown": {
    "euro": 1785557850160,
    "super": 1785537627776,
@@ -3560,9 +3559,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Wolverhampton",
+   "chave": "República Tcheca",
    "n": 9,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
