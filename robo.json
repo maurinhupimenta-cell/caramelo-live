@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -170.3,
-  "ciclos": 813,
-  "greens": 499,
+  "saldo": -169.3,
+  "ciclos": 814,
+  "greens": 500,
   "redsCiclo": 136,
   "aborts": 0,
   "descartes": 178,
   "historico": [
+   {
+    "quando": "2026-08-01T21:36:28.759Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · City x Newcastle @1.98 (tiro 1) · gatilho: coluna :36"
+   },
    {
     "quando": "2026-08-01T21:27:03.863Z",
     "resultado": "GREEN_OBS",
@@ -2118,42 +2124,13 @@
    }
   ],
   "consumidas": {
-   "super": 1785616644860
+   "super": 1785616644860,
+   "premier": 1785620188566
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:33",
-     "jogo": "City x Newcastle",
-     "odd": 1.98
-    },
-    {
-     "h": "22:36",
-     "jogo": "Burnley x United",
-     "odd": 2.1
-    },
-    {
-     "h": "22:39",
-     "jogo": "Palace x Southampton",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "coluna :36",
-   "alvo": {
-    "h": "22:33",
-    "jogo": "City x Newcastle",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785619636156
-   },
-   "iniciadoEm": 1785619636156
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785612411066,
-   "premier": 1785616014064,
+   "premier": 1785620188566,
    "euro": 1785613527156,
    "super": 1785616644860
   },
@@ -2175,13 +2152,13 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": -14.5
+   "2026-08-01": -13.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":36",
-   "n": 22,
-   "start": 2
+   "tipo": "odd",
+   "chave": "2.05",
+   "n": 16,
+   "start": 1
   },
   "_obs": {}
  },
