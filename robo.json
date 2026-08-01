@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -168.8,
-  "ciclos": 807,
-  "greens": 496,
+  "saldo": -166.9,
+  "ciclos": 808,
+  "greens": 497,
   "redsCiclo": 135,
   "aborts": 0,
   "descartes": 176,
   "historico": [
+   {
+    "quando": "2026-08-01T19:26:51.259Z",
+    "resultado": "GREEN",
+    "unidades": 1.9,
+    "detalhe": "copa · Tunísia x Áustria @2.45 (tiro 2) · gatilho: seq GGRGR"
+   },
    {
     "quando": "2026-08-01T19:25:28.555Z",
     "resultado": "GREEN",
@@ -2084,49 +2090,12 @@
   "consumidas": {
    "euro": 1785608909054,
    "premier": 1785611158458,
-   "super": 1785612328265
+   "super": 1785612328265,
+   "copa": 1785612411066
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "20:19",
-     "jogo": "Colômbia x Escócia",
-     "odd": 2.5
-    },
-    {
-     "h": "20:22",
-     "jogo": "Tunísia x Áustria",
-     "odd": 2.45
-    },
-    {
-     "h": "20:25",
-     "jogo": "Cabo Verde x Escócia",
-     "odd": 2.45
-    }
-   ],
-   "gatilho": "seq GGRGR",
-   "alvo": {
-    "h": "20:22",
-    "jogo": "Tunísia x Áustria",
-    "odd": 2.45,
-    "unidades": 2,
-    "desde": 1785612391067
-   },
-   "iniciadoEm": 1785612330464,
-   "tiros": [
-    {
-     "h": "20:19",
-     "jogo": "Colômbia x Escócia",
-     "odd": 2.5,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785604287261,
+   "copa": 1785612411066,
    "premier": 1785611158458,
    "euro": 1785608909054,
    "super": 1785612328265
@@ -2149,7 +2118,7 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": -13
+   "2026-08-01": -11.1
   },
   "_gatilhoAtual": {
    "tipo": "seq",
