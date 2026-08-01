@@ -1915,13 +1915,19 @@
   }
  },
  "ambas": {
-  "saldo": -1.1,
-  "ciclos": 804,
-  "greens": 553,
+  "saldo": 0.5,
+  "ciclos": 805,
+  "greens": 554,
   "redsCiclo": 80,
   "aborts": 0,
   "descartes": 171,
   "historico": [
+   {
+    "quando": "2026-08-01T06:17:45.056Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "premier · Tottenham x West Ham @2.3 (tiro 2) · gatilho: time Tottenham"
+   },
    {
     "quando": "2026-08-01T05:39:26.956Z",
     "resultado": "GREEN",
@@ -3508,51 +3514,14 @@
    }
   ],
   "consumidas": {
-   "euro": 1785562766764
+   "euro": 1785562766764,
+   "premier": 1785565064860
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "07:12",
-     "jogo": "Burnley x City",
-     "odd": 1.85
-    },
-    {
-     "h": "07:15",
-     "jogo": "Tottenham x West Ham",
-     "odd": 2.3
-    },
-    {
-     "h": "07:18",
-     "jogo": "Newcastle x Palace",
-     "odd": 1.85
-    }
-   ],
-   "gatilho": "time Tottenham",
-   "alvo": {
-    "h": "07:15",
-    "jogo": "Tottenham x West Ham",
-    "odd": 2.3,
-    "unidades": 2,
-    "desde": 1785564882664
-   },
-   "iniciadoEm": 1785564180365,
-   "tiros": [
-    {
-     "h": "07:12",
-     "jogo": "Burnley x City",
-     "odd": 1.85,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785562766764,
    "super": 1785537627776,
-   "premier": 1785558986955,
+   "premier": 1785565064860,
    "copa": 1785528509908
   },
   "dias": {
@@ -3572,12 +3541,12 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": 5.9
+   "2026-08-01": 7.5
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRGR",
-   "n": 8,
+   "chave": "RGRG",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
