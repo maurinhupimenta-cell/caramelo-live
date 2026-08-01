@@ -2088,12 +2088,18 @@
  },
  "ambas": {
   "saldo": -4.1,
-  "ciclos": 826,
+  "ciclos": 827,
   "greens": 569,
   "redsCiclo": 83,
   "aborts": 0,
-  "descartes": 174,
+  "descartes": 175,
   "historico": [
+   {
+    "quando": "2026-08-01T17:31:25.456Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Áustria) — liga REARMADA"
+   },
    {
     "quando": "2026-08-01T16:25:01.862Z",
     "resultado": "RED_CICLO",
@@ -3844,6 +3850,11 @@
    "n": 13,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1785605307465,
+    "gatilho": "time Áustria"
+   }
+  }
  }
 }
