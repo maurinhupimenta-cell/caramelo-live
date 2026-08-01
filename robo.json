@@ -2136,11 +2136,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1785620188566,
    "super": 1785621687262,
    "copa": 1785623190461
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:36",
+     "jogo": "Norwich x Tottenham",
+     "odd": 2.4
+    },
+    {
+     "h": "23:39",
+     "jogo": "Chelsea x Liverpool",
+     "odd": 2.2
+    },
+    {
+     "h": "23:42",
+     "jogo": "City x Brentford",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "coluna :36",
+   "alvo": {
+    "h": "23:36",
+    "jogo": "Norwich x Tottenham",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1785623789757
+   },
+   "iniciadoEm": 1785623789757
+  },
   "cooldown": {
    "copa": 1785623190461,
    "premier": 1785620188566,
@@ -2168,9 +2197,9 @@
    "2026-08-01": -8.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Costa do Marfim",
-   "n": 9,
+   "tipo": "coluna",
+   "chave": ":36",
+   "n": 23,
    "start": 1
   },
   "_obs": {}
