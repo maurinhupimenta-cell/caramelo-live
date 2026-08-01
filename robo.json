@@ -2192,13 +2192,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -13.4,
-  "ciclos": 836,
+  "saldo": -20.4,
+  "ciclos": 837,
   "greens": 574,
-  "redsCiclo": 85,
+  "redsCiclo": 86,
   "aborts": 0,
   "descartes": 177,
   "historico": [
+   {
+    "quando": "2026-08-01T21:53:27.161Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Áustria"
+   },
    {
     "quando": "2026-08-01T20:48:27.356Z",
     "resultado": "GREEN",
@@ -3976,57 +3982,15 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "22:43",
-     "jogo": "Qatar x Haiti",
-     "odd": 1.95
-    },
-    {
-     "h": "22:46",
-     "jogo": "Áustria x Escócia",
-     "odd": 2.1
-    },
-    {
-     "h": "22:49",
-     "jogo": "Coreia do Sul x Egito",
-     "odd": 2
-    }
-   ],
-   "gatilho": "time Áustria",
-   "alvo": {
-    "h": "22:49",
-    "jogo": "Coreia do Sul x Egito",
-    "odd": 2,
-    "unidades": 4,
-    "desde": 1785620945454
-   },
-   "iniciadoEm": 1785620216668,
-   "tiros": [
-    {
-     "h": "22:43",
-     "jogo": "Qatar x Haiti",
-     "odd": 1.95,
-     "unidades": 1
-    },
-    {
-     "h": "22:46",
-     "jogo": "Áustria x Escócia",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "copa": 1785621207056
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785607105566,
    "super": 1785537627776,
    "premier": 1785617307160,
-   "copa": 1785615387467
+   "copa": 1785621207056
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -4045,7 +4009,7 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": -6.4
+   "2026-08-01": -13.4
   },
   "_gatilhoAtual": {
    "tipo": "time",
