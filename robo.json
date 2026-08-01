@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -153.6,
-  "ciclos": 788,
+  "saldo": -160.6,
+  "ciclos": 789,
   "greens": 488,
-  "redsCiclo": 131,
+  "redsCiclo": 132,
   "aborts": 0,
   "descartes": 169,
   "historico": [
+   {
+    "quando": "2026-08-01T13:22:30.362Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Turquia"
+   },
    {
     "quando": "2026-08-01T13:07:28.359Z",
     "resultado": "RED_CICLO",
@@ -1969,55 +1975,12 @@
   ],
   "consumidas": {
    "premier": 1785587925456,
-   "super": 1785589648254
+   "super": 1785589648254,
+   "copa": 1785590550260
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "14:10",
-     "jogo": "RD Congo x Coreia do Sul",
-     "odd": 2.3
-    },
-    {
-     "h": "14:13",
-     "jogo": "Argentina x Turquia",
-     "odd": 2.2
-    },
-    {
-     "h": "14:16",
-     "jogo": "Escócia x Coreia do Sul",
-     "odd": 2.75
-    }
-   ],
-   "gatilho": "time Turquia",
-   "alvo": {
-    "h": "14:16",
-    "jogo": "Escócia x Coreia do Sul",
-    "odd": 2.75,
-    "unidades": 4,
-    "desde": 1785590245261
-   },
-   "iniciadoEm": 1785589829561,
-   "tiros": [
-    {
-     "h": "14:10",
-     "jogo": "RD Congo x Coreia do Sul",
-     "odd": 2.3,
-     "unidades": 1
-    },
-    {
-     "h": "14:13",
-     "jogo": "Argentina x Turquia",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785537806885,
+   "copa": 1785590550260,
    "premier": 1785587925456,
    "euro": 1785568813460,
    "super": 1785589648254
@@ -2040,7 +2003,7 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": 2.2
+   "2026-08-01": -4.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
@@ -3742,7 +3705,37 @@
    "euro": 1785587693167,
    "copa": 1785589829855
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:18",
+     "jogo": "Tottenham x Everton",
+     "odd": 2.02
+    },
+    {
+     "h": "14:21",
+     "jogo": "Watford x Brighton",
+     "odd": 1.87
+    },
+    {
+     "h": "14:24",
+     "jogo": "Aston x Leeds",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "seq GGGRR",
+   "alvo": {
+    "h": "14:18",
+    "jogo": "Tottenham x Everton",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1785590300059
+   },
+   "iniciadoEm": 1785590300059
+  },
   "cooldown": {
    "euro": 1785587693167,
    "super": 1785537627776,
@@ -3770,8 +3763,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRG",
-   "n": 8,
+   "chave": "GGGRR",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
