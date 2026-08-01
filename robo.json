@@ -2126,7 +2126,37 @@
   "consumidas": {
    "premier": 1785620188566
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:52",
+     "jogo": "Avellaneda x Santiago",
+     "odd": 2.15
+    },
+    {
+     "h": "22:55",
+     "jogo": "Buenos Aires x Quito",
+     "odd": 2.15
+    },
+    {
+     "h": "22:58",
+     "jogo": "Porto Alegre x Asuncion",
+     "odd": 2.62
+    }
+   ],
+   "gatilho": "seq RRGGG",
+   "alvo": {
+    "h": "22:52",
+    "jogo": "Avellaneda x Santiago",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785621120466
+   },
+   "iniciadoEm": 1785621120466
+  },
   "cooldown": {
    "copa": 1785612411066,
    "premier": 1785620188566,
@@ -2154,9 +2184,9 @@
    "2026-08-01": -13.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.05",
-   "n": 16,
+   "tipo": "seq",
+   "chave": "RRGGG",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
