@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -150.8,
-  "ciclos": 800,
+  "saldo": -157.8,
+  "ciclos": 801,
   "greens": 494,
-  "redsCiclo": 132,
+  "redsCiclo": 133,
   "aborts": 0,
   "descartes": 174,
   "historico": [
+   {
+    "quando": "2026-08-01T17:28:25.058Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: coluna :22"
+   },
    {
     "quando": "2026-08-01T17:11:27.456Z",
     "resultado": "GREEN",
@@ -2042,58 +2048,15 @@
   "consumidas": {
    "premier": 1785602186358,
    "euro": 1785603745164,
-   "copa": 1785604287261
+   "copa": 1785604287261,
+   "super": 1785605304861
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "18:19",
-     "jogo": "Agua Branca x Sao Paulo",
-     "odd": 2.02
-    },
-    {
-     "h": "18:22",
-     "jogo": "Belo Horizonte x Bogota",
-     "odd": 2.37
-    },
-    {
-     "h": "18:25",
-     "jogo": "Avellaneda x Sao Paulo",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "coluna :22",
-   "alvo": {
-    "h": "18:25",
-    "jogo": "Avellaneda x Sao Paulo",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1785605185456
-   },
-   "iniciadoEm": 1785604944664,
-   "tiros": [
-    {
-     "h": "18:19",
-     "jogo": "Agua Branca x Sao Paulo",
-     "odd": 2.02,
-     "unidades": 1
-    },
-    {
-     "h": "18:22",
-     "jogo": "Belo Horizonte x Bogota",
-     "odd": 2.37,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785604287261,
    "premier": 1785602186358,
    "euro": 1785603745164,
-   "super": 1785601343958
+   "super": 1785605304861
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -2113,7 +2076,7 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": 5
+   "2026-08-01": -2
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
