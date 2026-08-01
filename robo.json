@@ -1967,13 +1967,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -2.5,
-  "ciclos": 809,
-  "greens": 557,
+  "saldo": -1.5,
+  "ciclos": 810,
+  "greens": 558,
   "redsCiclo": 81,
   "aborts": 0,
   "descartes": 171,
   "historico": [
+   {
+    "quando": "2026-08-01T09:04:55.258Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Croácia x Eslováquia @2.02 (tiro 1) · gatilho: seq RRRR"
+   },
    {
     "quando": "2026-08-01T08:50:43.966Z",
     "resultado": "RED_CICLO",
@@ -3590,11 +3596,12 @@
    }
   ],
   "consumidas": {
-   "premier": 1785574243857
+   "premier": 1785574243857,
+   "euro": 1785575095062
   },
   "ciclo": null,
   "cooldown": {
-   "euro": 1785571313767,
+   "euro": 1785575095062,
    "super": 1785537627776,
    "premier": 1785574243857,
    "copa": 1785528509908
@@ -3616,12 +3623,12 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": 4.5
+   "2026-08-01": 5.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":57",
-   "n": 9,
+   "tipo": "time",
+   "chave": "Ucrânia",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
