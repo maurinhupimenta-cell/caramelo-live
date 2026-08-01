@@ -2111,18 +2111,24 @@
    "tipo": "coluna",
    "chave": ":48",
    "n": 18,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -4.1,
-  "ciclos": 827,
-  "greens": 569,
+  "saldo": -3.1,
+  "ciclos": 828,
+  "greens": 570,
   "redsCiclo": 83,
   "aborts": 0,
   "descartes": 175,
   "historico": [
+   {
+    "quando": "2026-08-01T17:44:26.158Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Bélgica x Áustria @2 (tiro 2) · gatilho: time Áustria"
+   },
    {
     "quando": "2026-08-01T17:31:25.456Z",
     "resultado": "GREEN_OBS",
@@ -3846,51 +3852,45 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "copa": 1785606265960
+  },
   "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "18:37",
-     "jogo": "EUA x Argélia",
+     "h": "18:45",
+     "jogo": "City x Tottenham",
+     "odd": 2.02
+    },
+    {
+     "h": "18:48",
+     "jogo": "Norwich x Southampton",
      "odd": 2
     },
     {
-     "h": "18:40",
-     "jogo": "Bélgica x Áustria",
-     "odd": 2
-    },
-    {
-     "h": "18:43",
-     "jogo": "Suécia x Irã",
-     "odd": 2.35
+     "h": "18:51",
+     "jogo": "Wolverhampton x Watford",
+     "odd": 1.93
     }
    ],
-   "gatilho": "time Áustria",
+   "gatilho": "coluna :48",
    "alvo": {
-    "h": "18:40",
-    "jogo": "Bélgica x Áustria",
-    "odd": 2,
-    "unidades": 2,
-    "desde": 1785606092068
+    "h": "18:45",
+    "jogo": "City x Tottenham",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1785606268258
    },
-   "iniciadoEm": 1785605486855,
-   "tiros": [
-    {
-     "h": "18:37",
-     "jogo": "EUA x Argélia",
-     "odd": 2,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1785606268258
   },
   "cooldown": {
    "euro": 1785593725856,
    "super": 1785537627776,
    "premier": 1785600908167,
-   "copa": 1785601501757
+   "copa": 1785606265960
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -3909,13 +3909,13 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": 2.9
+   "2026-08-01": 3.9
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":48",
    "n": 18,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
