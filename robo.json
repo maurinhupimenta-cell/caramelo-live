@@ -3903,8 +3903,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "21:07",
@@ -3924,13 +3924,21 @@
    ],
    "gatilho": "time Áustria",
    "alvo": {
-    "h": "21:07",
-    "jogo": "Egito x Iraque",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1785614490855
+    "h": "21:10",
+    "jogo": "Equador x Áustria",
+    "odd": 1.9,
+    "unidades": 2,
+    "desde": 1785615028257
    },
-   "iniciadoEm": 1785614490855
+   "iniciadoEm": 1785614490855,
+   "tiros": [
+    {
+     "h": "21:07",
+     "jogo": "Egito x Iraque",
+     "odd": 2.02,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785607105566,
@@ -3959,9 +3967,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Áustria",
-   "n": 13,
-   "start": 1
+   "chave": "Costa do Marfim",
+   "n": 9,
+   "start": 3
   },
   "_obs": {}
  }
