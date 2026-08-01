@@ -1900,13 +1900,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -3.8,
-  "ciclos": 802,
-  "greens": 551,
+  "saldo": -2.1,
+  "ciclos": 803,
+  "greens": 552,
   "redsCiclo": 80,
   "aborts": 0,
   "descartes": 171,
   "historico": [
+   {
+    "quando": "2026-08-01T04:36:27.156Z",
+    "resultado": "GREEN",
+    "unidades": 1.7,
+    "detalhe": "premier · West Ham x Leeds @2.35 (tiro 2) · gatilho: time Wolverhampton"
+   },
    {
     "quando": "2026-08-01T04:17:30.356Z",
     "resultado": "GREEN",
@@ -3481,51 +3487,14 @@
    }
   ],
   "consumidas": {
-   "euro": 1785557850160
+   "euro": 1785557850160,
+   "premier": 1785558986955
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "05:30",
-     "jogo": "Wolverhampton x Leicester",
-     "odd": 1.9
-    },
-    {
-     "h": "05:33",
-     "jogo": "West Ham x Leeds",
-     "odd": 2.35
-    },
-    {
-     "h": "05:36",
-     "jogo": "Watford x Brighton",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "time Wolverhampton",
-   "alvo": {
-    "h": "05:33",
-    "jogo": "West Ham x Leeds",
-    "odd": 2.35,
-    "unidades": 2,
-    "desde": 1785558778658
-   },
-   "iniciadoEm": 1785558510865,
-   "tiros": [
-    {
-     "h": "05:30",
-     "jogo": "Wolverhampton x Leicester",
-     "odd": 1.9,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785557850160,
    "super": 1785537627776,
-   "premier": 1785554909756,
+   "premier": 1785558986955,
    "copa": 1785528509908
   },
   "dias": {
@@ -3545,7 +3514,7 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": 3.2
+   "2026-08-01": 4.9
   },
   "_gatilhoAtual": {
    "tipo": "time",
