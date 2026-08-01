@@ -3904,7 +3904,37 @@
   "consumidas": {
    "premier": 1785611158760
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:07",
+     "jogo": "Egito x Iraque",
+     "odd": 2.02
+    },
+    {
+     "h": "21:10",
+     "jogo": "Equador x Áustria",
+     "odd": 1.9
+    },
+    {
+     "h": "21:13",
+     "jogo": "Curação x Austrália",
+     "odd": 1.87
+    }
+   ],
+   "gatilho": "time Áustria",
+   "alvo": {
+    "h": "21:07",
+    "jogo": "Egito x Iraque",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1785614490855
+   },
+   "iniciadoEm": 1785614490855
+  },
   "cooldown": {
    "euro": 1785607105566,
    "super": 1785537627776,
@@ -3931,10 +3961,10 @@
    "2026-08-01": -7.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":06",
-   "n": 20,
-   "start": 1
+   "tipo": "time",
+   "chave": "Áustria",
+   "n": 13,
+   "start": 2
   },
   "_obs": {}
  }
