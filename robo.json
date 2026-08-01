@@ -3950,7 +3950,37 @@
   "consumidas": {
    "premier": 1785617307160
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:43",
+     "jogo": "Qatar x Haiti",
+     "odd": 1.95
+    },
+    {
+     "h": "22:46",
+     "jogo": "Áustria x Escócia",
+     "odd": 2.1
+    },
+    {
+     "h": "22:49",
+     "jogo": "Coreia do Sul x Egito",
+     "odd": 2
+    }
+   ],
+   "gatilho": "time Áustria",
+   "alvo": {
+    "h": "22:43",
+    "jogo": "Qatar x Haiti",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1785620216668
+   },
+   "iniciadoEm": 1785620216668
+  },
   "cooldown": {
    "euro": 1785607105566,
    "super": 1785537627776,
@@ -3977,10 +4007,10 @@
    "2026-08-01": -6.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":48",
-   "n": 21,
-   "start": 1
+   "tipo": "time",
+   "chave": "Áustria",
+   "n": 15,
+   "start": 3
   },
   "_obs": {}
  }
