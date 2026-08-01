@@ -2092,7 +2092,37 @@
    "super": 1785612328265,
    "copa": 1785612411066
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:38",
+     "jogo": "Hungria x Croácia",
+     "odd": 2.35
+    },
+    {
+     "h": "20:41",
+     "jogo": "Geórgia x Polônia",
+     "odd": 2.55
+    },
+    {
+     "h": "20:44",
+     "jogo": "Croácia x Romênia",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "odd 2.55",
+   "alvo": {
+    "h": "20:38",
+    "jogo": "Hungria x Croácia",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1785612925355
+   },
+   "iniciadoEm": 1785612925355
+  },
   "cooldown": {
    "copa": 1785612411066,
    "premier": 1785611158458,
@@ -2120,10 +2150,10 @@
    "2026-08-01": -11.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRGR",
-   "n": 8,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.55",
+   "n": 11,
+   "start": 2
   },
   "_obs": {}
  },
