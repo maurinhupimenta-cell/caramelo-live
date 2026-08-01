@@ -3512,8 +3512,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "07:12",
@@ -3533,13 +3533,21 @@
    ],
    "gatilho": "time Tottenham",
    "alvo": {
-    "h": "07:12",
-    "jogo": "Burnley x City",
-    "odd": 1.85,
-    "unidades": 1,
-    "desde": 1785564180365
+    "h": "07:15",
+    "jogo": "Tottenham x West Ham",
+    "odd": 2.3,
+    "unidades": 2,
+    "desde": 1785564882664
    },
-   "iniciadoEm": 1785564180365
+   "iniciadoEm": 1785564180365,
+   "tiros": [
+    {
+     "h": "07:12",
+     "jogo": "Burnley x City",
+     "odd": 1.85,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785562766764,
@@ -3567,9 +3575,9 @@
    "2026-08-01": 5.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Tottenham",
-   "n": 9,
+   "tipo": "seq",
+   "chave": "GRGR",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
