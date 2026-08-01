@@ -2170,13 +2170,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -14.9,
-  "ciclos": 834,
-  "greens": 572,
+  "saldo": -14.4,
+  "ciclos": 835,
+  "greens": 573,
   "redsCiclo": 85,
   "aborts": 0,
   "descartes": 177,
   "historico": [
+   {
+    "quando": "2026-08-01T20:16:27.659Z",
+    "resultado": "GREEN",
+    "unidades": 0.5,
+    "detalhe": "copa · Curação x Austrália @1.87 (tiro 3) · gatilho: time Áustria"
+   },
    {
     "quando": "2026-08-01T20:12:30.165Z",
     "resultado": "GREEN_OBS",
@@ -3942,57 +3948,15 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "21:07",
-     "jogo": "Egito x Iraque",
-     "odd": 2.02
-    },
-    {
-     "h": "21:10",
-     "jogo": "Equador x Áustria",
-     "odd": 1.9
-    },
-    {
-     "h": "21:13",
-     "jogo": "Curação x Austrália",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "time Áustria",
-   "alvo": {
-    "h": "21:13",
-    "jogo": "Curação x Austrália",
-    "odd": 1.87,
-    "unidades": 4,
-    "desde": 1785615207969
-   },
-   "iniciadoEm": 1785614490855,
-   "tiros": [
-    {
-     "h": "21:07",
-     "jogo": "Egito x Iraque",
-     "odd": 2.02,
-     "unidades": 1
-    },
-    {
-     "h": "21:10",
-     "jogo": "Equador x Áustria",
-     "odd": 1.9,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "copa": 1785615387467
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785607105566,
    "super": 1785537627776,
    "premier": 1785611158760,
-   "copa": 1785610465765
+   "copa": 1785615387467
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -4011,13 +3975,13 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": -7.9
+   "2026-08-01": -7.4
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Costa do Marfim",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
