@@ -1929,13 +1929,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": 0.5,
-  "ciclos": 805,
-  "greens": 554,
+  "saldo": 2.3,
+  "ciclos": 806,
+  "greens": 555,
   "redsCiclo": 80,
   "aborts": 0,
   "descartes": 171,
   "historico": [
+   {
+    "quando": "2026-08-01T06:58:52.859Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "euro · Sérvia x Geórgia @2.2 (tiro 3) · gatilho: odd 2.02"
+   },
    {
     "quando": "2026-08-01T06:17:45.056Z",
     "resultado": "GREEN",
@@ -3528,55 +3534,12 @@
    }
   ],
   "consumidas": {
-   "premier": 1785565064860
+   "premier": 1785565064860,
+   "euro": 1785567532662
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "07:50",
-     "jogo": "Suíça x Eslovênia",
-     "odd": 2.15
-    },
-    {
-     "h": "07:53",
-     "jogo": "Romênia x Polônia",
-     "odd": 2.02
-    },
-    {
-     "h": "07:56",
-     "jogo": "Sérvia x Geórgia",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "odd 2.02",
-   "alvo": {
-    "h": "07:56",
-    "jogo": "Sérvia x Geórgia",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1785567354156
-   },
-   "iniciadoEm": 1785566633765,
-   "tiros": [
-    {
-     "h": "07:50",
-     "jogo": "Suíça x Eslovênia",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "07:53",
-     "jogo": "Romênia x Polônia",
-     "odd": 2.02,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785562766764,
+   "euro": 1785567532662,
    "super": 1785537627776,
    "premier": 1785565064860,
    "copa": 1785528509908
@@ -3598,12 +3561,12 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": 7.5
+   "2026-08-01": 9.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRR",
-   "n": 14,
+   "tipo": "time",
+   "chave": "República Tcheca",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
