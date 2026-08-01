@@ -224,13 +224,19 @@
   }
  },
  "o25": {
-  "saldo": -155.8,
-  "ciclos": 768,
-  "greens": 472,
+  "saldo": -154.8,
+  "ciclos": 769,
+  "greens": 473,
   "redsCiclo": 128,
   "aborts": 0,
   "descartes": 168,
   "historico": [
+   {
+    "quando": "2026-08-01T03:17:47.758Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Everton x Wolverhampton @2.02 (tiro 1) · gatilho: time Palace"
+   },
    {
     "quando": "2026-08-01T02:22:28.358Z",
     "resultado": "GREEN",
@@ -1829,42 +1835,13 @@
    }
   ],
   "consumidas": {
-   "euro": 1785550948162
+   "euro": 1785550948162,
+   "premier": 1785554267559
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:15",
-     "jogo": "Everton x Wolverhampton",
-     "odd": 2.02
-    },
-    {
-     "h": "04:18",
-     "jogo": "Palace x Brentford",
-     "odd": 2.25
-    },
-    {
-     "h": "04:21",
-     "jogo": "Norwich x Southampton",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "time Palace",
-   "alvo": {
-    "h": "04:15",
-    "jogo": "Everton x Wolverhampton",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1785553905060
-   },
-   "iniciadoEm": 1785553905060
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785537806885,
-   "premier": 1785550303363,
+   "premier": 1785554267559,
    "euro": 1785550948162,
    "super": 1785539430655
   },
@@ -1885,7 +1862,8 @@
    "2026-07-28": 5.5,
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
-   "2026-07-31": -40.6
+   "2026-07-31": -40.6,
+   "2026-08-01": 1
   },
   "_gatilhoAtual": {
    "tipo": "time",
