@@ -2055,7 +2055,37 @@
    "super": 1785605304861,
    "premier": 1785606819558
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:17",
+     "jogo": "Portugal x Escócia",
+     "odd": 2.2
+    },
+    {
+     "h": "19:20",
+     "jogo": "Eslovênia x Croácia",
+     "odd": 2.55
+    },
+    {
+     "h": "19:23",
+     "jogo": "Polônia x França",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "odd 2.55",
+   "alvo": {
+    "h": "19:17",
+    "jogo": "Portugal x Escócia",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785607946966
+   },
+   "iniciadoEm": 1785607946966
+  },
   "cooldown": {
    "copa": 1785604287261,
    "premier": 1785606819558,
@@ -2083,10 +2113,10 @@
    "2026-08-01": -9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":48",
-   "n": 18,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.55",
+   "n": 10,
+   "start": 3
   },
   "_obs": {}
  },
