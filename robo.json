@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -148.2,
-  "ciclos": 786,
-  "greens": 487,
+  "saldo": -146.6,
+  "ciclos": 787,
+  "greens": 488,
   "redsCiclo": 130,
   "aborts": 0,
   "descartes": 169,
   "historico": [
+   {
+    "quando": "2026-08-01T12:38:45.562Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "premier · Tottenham x Southampton @2.6 (tiro 1) · gatilho: coluna :36"
+   },
    {
     "quando": "2026-08-01T11:46:15.060Z",
     "resultado": "GREEN",
@@ -1956,42 +1962,13 @@
    }
   ],
   "consumidas": {
-   "super": 1785584774954
+   "super": 1785584774954,
+   "premier": 1785587925456
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "13:36",
-     "jogo": "Tottenham x Southampton",
-     "odd": 2.6
-    },
-    {
-     "h": "13:39",
-     "jogo": "Aston x Everton",
-     "odd": 2.25
-    },
-    {
-     "h": "13:42",
-     "jogo": "Leeds x Norwich",
-     "odd": 2.45
-    }
-   ],
-   "gatilho": "coluna :36",
-   "alvo": {
-    "h": "13:36",
-    "jogo": "Tottenham x Southampton",
-    "odd": 2.6,
-    "unidades": 1,
-    "desde": 1785587571167
-   },
-   "iniciadoEm": 1785587571167
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785537806885,
-   "premier": 1785583966560,
+   "premier": 1785587925456,
    "euro": 1785568813460,
    "super": 1785584774954
   },
@@ -2013,13 +1990,13 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": 7.6
+   "2026-08-01": 9.2
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":36",
+   "chave": ":48",
    "n": 13,
-   "start": 1
+   "start": 2
   },
   "_obs": {
    "euro": {
