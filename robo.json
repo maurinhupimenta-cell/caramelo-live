@@ -1819,7 +1819,37 @@
   "consumidas": {
    "euro": 1785546685862
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:09",
+     "jogo": "Leicester x Leeds",
+     "odd": 2.6
+    },
+    {
+     "h": "03:12",
+     "jogo": "Brentford x United",
+     "odd": 2.25
+    },
+    {
+     "h": "03:15",
+     "jogo": "City x Southampton",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "odd 2.25",
+   "alvo": {
+    "h": "03:09",
+    "jogo": "Leicester x Leeds",
+    "odd": 2.6,
+    "unidades": 1,
+    "desde": 1785549806256
+   },
+   "iniciadoEm": 1785549806256
+  },
   "cooldown": {
    "copa": 1785537806885,
    "premier": 1785527120807,
@@ -1846,17 +1876,12 @@
    "2026-07-31": -43.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRR",
-   "n": 9,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.25",
+   "n": 8,
+   "start": 2
   },
-  "_obs": {
-   "premier": {
-    "desde": 1785549779165,
-    "gatilho": "odd 2.25"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -7,
