@@ -3933,7 +3933,37 @@
   "consumidas": {
    "copa": 1785615387467
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:45",
+     "jogo": "Wolverhampton x Aston",
+     "odd": 1.95
+    },
+    {
+     "h": "21:48",
+     "jogo": "Tottenham x Leeds",
+     "odd": 2.29
+    },
+    {
+     "h": "21:51",
+     "jogo": "Liverpool x Chelsea",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "coluna :48",
+   "alvo": {
+    "h": "21:45",
+    "jogo": "Wolverhampton x Aston",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1785616663058
+   },
+   "iniciadoEm": 1785616663058
+  },
   "cooldown": {
    "euro": 1785607105566,
    "super": 1785537627776,
@@ -3960,10 +3990,10 @@
    "2026-08-01": -7.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Costa do Marfim",
-   "n": 9,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":48",
+   "n": 21,
+   "start": 3
   },
   "_obs": {}
  }
