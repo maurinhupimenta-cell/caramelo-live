@@ -3446,8 +3446,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "04:21",
@@ -3467,13 +3467,21 @@
    ],
    "gatilho": "odd 1.95",
    "alvo": {
-    "h": "04:21",
-    "jogo": "Norwich x Southampton",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1785554187064
+    "h": "04:24",
+    "jogo": "Everton x Brentford",
+    "odd": 1.95,
+    "unidades": 2,
+    "desde": 1785554813066
    },
-   "iniciadoEm": 1785554187064
+   "iniciadoEm": 1785554187064,
+   "tiros": [
+    {
+     "h": "04:21",
+     "jogo": "Norwich x Southampton",
+     "odd": 2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785554130457,
@@ -3504,7 +3512,7 @@
    "tipo": "odd",
    "chave": "1.95",
    "n": 11,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
