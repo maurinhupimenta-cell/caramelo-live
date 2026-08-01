@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -164.8,
-  "ciclos": 802,
-  "greens": 494,
+  "saldo": -162.8,
+  "ciclos": 803,
+  "greens": 495,
   "redsCiclo": 134,
   "aborts": 0,
   "descartes": 174,
   "historico": [
+   {
+    "quando": "2026-08-01T18:28:29.161Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "euro · Polônia x França @2.25 (tiro 3) · gatilho: odd 2.55"
+   },
    {
     "quando": "2026-08-01T17:53:39.758Z",
     "resultado": "RED_CICLO",
@@ -2052,58 +2058,14 @@
    }
   ],
   "consumidas": {
-   "super": 1785605304861,
-   "premier": 1785606819558
+   "premier": 1785606819558,
+   "euro": 1785608909054
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "19:17",
-     "jogo": "Portugal x Escócia",
-     "odd": 2.2
-    },
-    {
-     "h": "19:20",
-     "jogo": "Eslovênia x Croácia",
-     "odd": 2.55
-    },
-    {
-     "h": "19:23",
-     "jogo": "Polônia x França",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "odd 2.55",
-   "alvo": {
-    "h": "19:23",
-    "jogo": "Polônia x França",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1785608607066
-   },
-   "iniciadoEm": 1785607946966,
-   "tiros": [
-    {
-     "h": "19:17",
-     "jogo": "Portugal x Escócia",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "19:20",
-     "jogo": "Eslovênia x Croácia",
-     "odd": 2.55,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785604287261,
    "premier": 1785606819558,
-   "euro": 1785603745164,
+   "euro": 1785608909054,
    "super": 1785605304861
   },
   "dias": {
@@ -2124,7 +2086,7 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": -9
+   "2026-08-01": -7
   },
   "_gatilhoAtual": {
    "tipo": "odd",
