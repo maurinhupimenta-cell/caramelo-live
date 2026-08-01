@@ -231,13 +231,19 @@
   }
  },
  "o25": {
-  "saldo": -153.8,
-  "ciclos": 775,
-  "greens": 477,
+  "saldo": -152.7,
+  "ciclos": 776,
+  "greens": 478,
   "redsCiclo": 129,
   "aborts": 0,
   "descartes": 169,
   "historico": [
+   {
+    "quando": "2026-08-01T06:35:42.354Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Burnley x Norwich @2.1 (tiro 1) · gatilho: seq GRGRR"
+   },
    {
     "quando": "2026-08-01T06:29:48.660Z",
     "resultado": "GREEN_OBS",
@@ -1877,41 +1883,13 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "07:33",
-     "jogo": "Burnley x Norwich",
-     "odd": 2.1
-    },
-    {
-     "h": "07:36",
-     "jogo": "Brentford x West Ham",
-     "odd": 2.55
-    },
-    {
-     "h": "07:39",
-     "jogo": "Brighton x Palace",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "seq GRGRR",
-   "alvo": {
-    "h": "07:33",
-    "jogo": "Burnley x Norwich",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785565791960
-   },
-   "iniciadoEm": 1785565791960
+  "consumidas": {
+   "premier": 1785566142163
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785537806885,
-   "premier": 1785558778457,
+   "premier": 1785566142163,
    "euro": 1785560970162,
    "super": 1785562109269
   },
@@ -1933,7 +1911,7 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": 2
+   "2026-08-01": 3.1
   },
   "_gatilhoAtual": {
    "tipo": "seq",
