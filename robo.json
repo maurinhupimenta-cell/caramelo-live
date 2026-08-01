@@ -3715,7 +3715,37 @@
   "consumidas": {
    "premier": 1785590672661
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:11",
+     "jogo": "Escócia x República Tcheca",
+     "odd": 2.1
+    },
+    {
+     "h": "15:14",
+     "jogo": "Áustria x Dinamarca",
+     "odd": 2.05
+    },
+    {
+     "h": "15:17",
+     "jogo": "Bélgica x Inglaterra",
+     "odd": 1.83
+    }
+   ],
+   "gatilho": "odd 2.05",
+   "alvo": {
+    "h": "15:11",
+    "jogo": "Escócia x República Tcheca",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785593486067
+   },
+   "iniciadoEm": 1785593486067
+  },
   "cooldown": {
    "euro": 1785587693167,
    "super": 1785537627776,
@@ -3742,11 +3772,16 @@
    "2026-08-01": 5.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGRG",
-   "n": 12,
+   "tipo": "odd",
+   "chave": "2.05",
+   "n": 26,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1785593430364,
+    "gatilho": "time Uzbequistão"
+   }
+  }
  }
 }
