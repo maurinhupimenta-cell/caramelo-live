@@ -3580,7 +3580,37 @@
   "consumidas": {
    "euro": 1785571313767
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:42",
+     "jogo": "Newcastle x Islington",
+     "odd": 1.85
+    },
+    {
+     "h": "09:45",
+     "jogo": "Everton x Tottenham",
+     "odd": 2
+    },
+    {
+     "h": "09:48",
+     "jogo": "Islington x Newcastle",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "time Tottenham",
+   "alvo": {
+    "h": "09:42",
+    "jogo": "Newcastle x Islington",
+    "odd": 1.85,
+    "unidades": 1,
+    "desde": 1785573179161
+   },
+   "iniciadoEm": 1785573179161
+  },
   "cooldown": {
    "euro": 1785571313767,
    "super": 1785537627776,
@@ -3608,9 +3638,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "República Tcheca",
-   "n": 13,
-   "start": 1
+   "chave": "Tottenham",
+   "n": 15,
+   "start": 3
   },
   "_obs": {}
  }
