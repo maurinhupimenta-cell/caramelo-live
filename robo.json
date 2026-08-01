@@ -3634,10 +3634,47 @@
    }
   ],
   "consumidas": {
-   "premier": 1785578378557,
    "euro": 1785578753763
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "12:03",
+     "jogo": "Chelsea x Palace",
+     "odd": 1.98
+    },
+    {
+     "h": "12:06",
+     "jogo": "Leeds x Southampton",
+     "odd": 2.2
+    },
+    {
+     "h": "12:09",
+     "jogo": "Watford x Norwich",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "coluna :06",
+   "alvo": {
+    "h": "12:06",
+    "jogo": "Leeds x Southampton",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1785582347163
+   },
+   "iniciadoEm": 1785581983755,
+   "tiros": [
+    {
+     "h": "12:03",
+     "jogo": "Chelsea x Palace",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1785578753763,
    "super": 1785537627776,
@@ -3664,9 +3701,9 @@
    "2026-08-01": 7.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.05",
-   "n": 19,
+   "tipo": "coluna",
+   "chave": ":09",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
