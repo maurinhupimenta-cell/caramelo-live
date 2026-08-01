@@ -3964,8 +3964,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "23:01",
@@ -3985,13 +3985,21 @@
    ],
    "gatilho": "coluna :04",
    "alvo": {
-    "h": "23:01",
-    "jogo": "Rio de Janeiro x Belo Horizonte",
-    "odd": 1.85,
-    "unidades": 1,
-    "desde": 1785621447456
+    "h": "23:04",
+    "jogo": "Penarol x La Plata",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1785621927567
    },
-   "iniciadoEm": 1785621447456
+   "iniciadoEm": 1785621447456,
+   "tiros": [
+    {
+     "h": "23:01",
+     "jogo": "Rio de Janeiro x Belo Horizonte",
+     "odd": 1.85,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785607105566,
@@ -4022,7 +4030,7 @@
    "tipo": "coluna",
    "chave": ":04",
    "n": 23,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
