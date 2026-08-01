@@ -1873,13 +1873,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -5.5,
-  "ciclos": 800,
-  "greens": 549,
+  "saldo": -4.6,
+  "ciclos": 801,
+  "greens": 550,
   "redsCiclo": 80,
   "aborts": 0,
   "descartes": 171,
   "historico": [
+   {
+    "quando": "2026-08-01T03:28:29.956Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Everton x Brentford @1.95 (tiro 2) · gatilho: odd 1.95"
+   },
    {
     "quando": "2026-08-01T03:15:30.564Z",
     "resultado": "GREEN",
@@ -3442,51 +3448,14 @@
    }
   ],
   "consumidas": {
-   "euro": 1785554130457
+   "euro": 1785554130457,
+   "premier": 1785554909756
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "04:21",
-     "jogo": "Norwich x Southampton",
-     "odd": 2
-    },
-    {
-     "h": "04:24",
-     "jogo": "Everton x Brentford",
-     "odd": 1.95
-    },
-    {
-     "h": "04:27",
-     "jogo": "Burnley x Newcastle",
-     "odd": 1.8
-    }
-   ],
-   "gatilho": "odd 1.95",
-   "alvo": {
-    "h": "04:24",
-    "jogo": "Everton x Brentford",
-    "odd": 1.95,
-    "unidades": 2,
-    "desde": 1785554813066
-   },
-   "iniciadoEm": 1785554187064,
-   "tiros": [
-    {
-     "h": "04:21",
-     "jogo": "Norwich x Southampton",
-     "odd": 2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785554130457,
    "super": 1785537627776,
-   "premier": 1785549406065,
+   "premier": 1785554909756,
    "copa": 1785528509908
   },
   "dias": {
@@ -3506,13 +3475,13 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": 1.5
+   "2026-08-01": 2.4
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "1.95",
    "n": 11,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
