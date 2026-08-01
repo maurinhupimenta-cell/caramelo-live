@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -151.9,
-  "ciclos": 799,
-  "greens": 493,
+  "saldo": -150.8,
+  "ciclos": 800,
+  "greens": 494,
   "redsCiclo": 132,
   "aborts": 0,
   "descartes": 174,
   "historico": [
+   {
+    "quando": "2026-08-01T17:11:27.456Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Alemanha x RD Congo @2.07 (tiro 1) · gatilho: time Costa do Marfim"
+   },
    {
     "quando": "2026-08-01T17:02:25.361Z",
     "resultado": "GREEN",
@@ -2036,11 +2042,12 @@
   "consumidas": {
    "super": 1785601343958,
    "premier": 1785602186358,
-   "euro": 1785603745164
+   "euro": 1785603745164,
+   "copa": 1785604287261
   },
   "ciclo": null,
   "cooldown": {
-   "copa": 1785590550260,
+   "copa": 1785604287261,
    "premier": 1785602186358,
    "euro": 1785603745164,
    "super": 1785601343958
@@ -2063,13 +2070,13 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": 3.9
+   "2026-08-01": 5
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Costa do Marfim",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
