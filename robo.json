@@ -2228,18 +2228,24 @@
    "tipo": "time",
    "chave": "West Ham",
    "n": 11,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -25.1,
-  "ciclos": 847,
+  "ciclos": 848,
   "greens": 581,
   "redsCiclo": 88,
   "aborts": 0,
-  "descartes": 178,
+  "descartes": 179,
   "historico": [
+   {
+    "quando": "2026-08-02T04:06:24.673Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho time Eslovênia) — liga REARMADA"
+   },
    {
     "quando": "2026-08-02T03:59:24.955Z",
     "resultado": "GREEN",
@@ -4086,7 +4092,37 @@
   "consumidas": {
    "super": 1785643164761
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:11",
+     "jogo": "Eslováquia x Albânia",
+     "odd": 2.2
+    },
+    {
+     "h": "05:14",
+     "jogo": "Polônia x Eslovênia",
+     "odd": 2.35
+    },
+    {
+     "h": "05:17",
+     "jogo": "Portugal x Sérvia",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time Eslovênia",
+   "alvo": {
+    "h": "05:11",
+    "jogo": "Eslováquia x Albânia",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785643586555
+   },
+   "iniciadoEm": 1785643586555
+  },
   "cooldown": {
    "euro": 1785637213360,
    "super": 1785643164761,
@@ -4114,10 +4150,10 @@
    "2026-08-02": 1.3
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.15",
+   "tipo": "time",
+   "chave": "Eslovênia",
    "n": 8,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
