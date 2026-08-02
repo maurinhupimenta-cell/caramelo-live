@@ -2267,13 +2267,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -31.6,
-  "ciclos": 860,
+  "saldo": -38.6,
+  "ciclos": 861,
   "greens": 588,
-  "redsCiclo": 90,
+  "redsCiclo": 91,
   "aborts": 0,
   "descartes": 182,
   "historico": [
+   {
+    "quando": "2026-08-02T08:09:28.257Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: coluna :59"
+   },
    {
     "quando": "2026-08-02T07:34:29.160Z",
     "resultado": "GREEN",
@@ -4197,55 +4203,12 @@
   ],
   "consumidas": {
    "copa": 1785655704862,
-   "super": 1785656068962
+   "super": 1785656068962,
+   "euro": 1785658168065
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "08:59",
-     "jogo": "República Tcheca x Eslovênia",
-     "odd": 2.4
-    },
-    {
-     "h": "09:02",
-     "jogo": "Áustria x Turquia",
-     "odd": 2.1
-    },
-    {
-     "h": "09:05",
-     "jogo": "Inglaterra x França",
-     "odd": 1.8
-    }
-   ],
-   "gatilho": "coluna :59",
-   "alvo": {
-    "h": "09:05",
-    "jogo": "Inglaterra x França",
-    "odd": 1.8,
-    "unidades": 4,
-    "desde": 1785658045862
-   },
-   "iniciadoEm": 1785657746760,
-   "tiros": [
-    {
-     "h": "08:59",
-     "jogo": "República Tcheca x Eslovênia",
-     "odd": 2.4,
-     "unidades": 1
-    },
-    {
-     "h": "09:02",
-     "jogo": "Áustria x Turquia",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785654144165,
+   "euro": 1785658168065,
    "super": 1785656068962,
    "premier": 1785624685060,
    "copa": 1785655704862
@@ -4268,13 +4231,13 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -5.2
+   "2026-08-02": -12.2
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":11",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
