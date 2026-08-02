@@ -2218,13 +2218,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -31.2,
-  "ciclos": 851,
-  "greens": 582,
+  "saldo": -30.2,
+  "ciclos": 852,
+  "greens": 583,
   "redsCiclo": 89,
   "aborts": 0,
   "descartes": 180,
   "historico": [
+   {
+    "quando": "2026-08-02T05:08:30.061Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Medellin x Asuncion @2.05 (tiro 1) · gatilho: time Santos"
+   },
    {
     "quando": "2026-08-02T05:06:30.059Z",
     "resultado": "GREEN",
@@ -4094,42 +4100,13 @@
   ],
   "consumidas": {
    "euro": 1785644428854,
-   "copa": 1785647189861
+   "copa": 1785647189861,
+   "super": 1785647309956
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:04",
-     "jogo": "Medellin x Asuncion",
-     "odd": 2.05
-    },
-    {
-     "h": "06:07",
-     "jogo": "Santos x Buenos Aires",
-     "odd": 1.93
-    },
-    {
-     "h": "06:10",
-     "jogo": "Lima x La Boca",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "time Santos",
-   "alvo": {
-    "h": "06:04",
-    "jogo": "Medellin x Asuncion",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785647191954
-   },
-   "iniciadoEm": 1785647191954
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785644428854,
-   "super": 1785643164761,
+   "super": 1785647309956,
    "premier": 1785624685060,
    "copa": 1785647189861
   },
@@ -4151,13 +4128,13 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -4.8
+   "2026-08-02": -3.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Santos",
    "n": 12,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
