@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -158.7,
-  "ciclos": 826,
-  "greens": 511,
+  "saldo": -155.9,
+  "ciclos": 827,
+  "greens": 512,
   "redsCiclo": 137,
   "aborts": 0,
   "descartes": 178,
   "historico": [
+   {
+    "quando": "2026-08-02T06:53:56.255Z",
+    "resultado": "GREEN",
+    "unidades": 2.8,
+    "detalhe": "premier · Brentford x Tottenham @2.45 (tiro 3) · gatilho: odd 2.07"
+   },
    {
     "quando": "2026-08-02T06:19:29.361Z",
     "resultado": "RED_CICLO",
@@ -2197,56 +2203,13 @@
   ],
   "consumidas": {
    "copa": 1785651088458,
-   "super": 1785651569156
+   "super": 1785651569156,
+   "premier": 1785653636059
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "07:45",
-     "jogo": "Leeds x Aston",
-     "odd": 2.62
-    },
-    {
-     "h": "07:48",
-     "jogo": "Islington x Wolverhampton",
-     "odd": 2.07
-    },
-    {
-     "h": "07:51",
-     "jogo": "Brentford x Tottenham",
-     "odd": 2.45
-    }
-   ],
-   "gatilho": "odd 2.07",
-   "alvo": {
-    "h": "07:51",
-    "jogo": "Brentford x Tottenham",
-    "odd": 2.45,
-    "unidades": 4,
-    "desde": 1785653442261
-   },
-   "iniciadoEm": 1785652568662,
-   "tiros": [
-    {
-     "h": "07:45",
-     "jogo": "Leeds x Aston",
-     "odd": 2.62,
-     "unidades": 1
-    },
-    {
-     "h": "07:48",
-     "jogo": "Islington x Wolverhampton",
-     "odd": 2.07,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785651088458,
-   "premier": 1785648226863,
+   "premier": 1785653636059,
    "euro": 1785624548964,
    "super": 1785651569156
   },
@@ -2269,13 +2232,13 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": 0
+   "2026-08-02": 2.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.07",
-   "n": 9,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":03",
+   "n": 8,
+   "start": 2
   },
   "_obs": {}
  },
