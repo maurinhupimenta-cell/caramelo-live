@@ -261,12 +261,18 @@
  },
  "o25": {
   "saldo": -185.3,
-  "ciclos": 876,
+  "ciclos": 877,
   "greens": 535,
   "redsCiclo": 146,
   "aborts": 0,
-  "descartes": 195,
+  "descartes": 196,
   "historico": [
+   {
+    "quando": "2026-08-02T22:24:09.161Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho seq GGGRG) — liga REARMADA"
+   },
    {
     "quando": "2026-08-02T22:02:28.059Z",
     "resultado": "GREEN",
@@ -2515,7 +2521,37 @@
   "consumidas": {
    "copa": 1785708147859
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:27",
+     "jogo": "Islington x Watford",
+     "odd": 2.25
+    },
+    {
+     "h": "23:30",
+     "jogo": "Palace x Everton",
+     "odd": 2.1
+    },
+    {
+     "h": "23:33",
+     "jogo": "Watford x Brentford",
+     "odd": 2.29
+    }
+   ],
+   "gatilho": "seq GGGRG",
+   "alvo": {
+    "h": "23:27",
+    "jogo": "Islington x Watford",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785709450563
+   },
+   "iniciadoEm": 1785709450563
+  },
   "cooldown": {
    "copa": 1785708147859,
    "premier": 1785698502357,
@@ -2544,9 +2580,9 @@
    "2026-08-02": -26.6
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":58",
-   "n": 21,
+   "tipo": "seq",
+   "chave": "GGGRG",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
