@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -173.8,
-  "ciclos": 843,
-  "greens": 519,
+  "saldo": -172.5,
+  "ciclos": 844,
+  "greens": 520,
   "redsCiclo": 141,
   "aborts": 0,
   "descartes": 183,
   "historico": [
+   {
+    "quando": "2026-08-02T11:16:24.361Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "copa · Países Baixos x Nova Zelândia @2.25 (tiro 1) · gatilho: time Brasil"
+   },
    {
     "quando": "2026-08-02T11:02:31.160Z",
     "resultado": "GREEN",
@@ -2299,41 +2305,12 @@
   ],
   "consumidas": {
    "premier": 1785666446257,
-   "euro": 1785668551057
+   "euro": 1785668551057,
+   "copa": 1785669384164
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "12:13",
-     "jogo": "Países Baixos x Nova Zelândia",
-     "odd": 2.25
-    },
-    {
-     "h": "12:16",
-     "jogo": "Japão x Brasil",
-     "odd": 2.35
-    },
-    {
-     "h": "12:19",
-     "jogo": "Países Baixos x Uzbequistão",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "time Brasil",
-   "alvo": {
-    "h": "12:13",
-    "jogo": "Países Baixos x Nova Zelândia",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785668691261
-   },
-   "iniciadoEm": 1785668691261
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785665069862,
+   "copa": 1785669384164,
    "premier": 1785666446257,
    "euro": 1785668551057,
    "super": 1785663987764
@@ -2357,13 +2334,13 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -15.1
+   "2026-08-02": -13.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Brasil",
-   "n": 9,
-   "start": 3
+   "chave": "Curação",
+   "n": 12,
+   "start": 2
   },
   "_obs": {}
  },
