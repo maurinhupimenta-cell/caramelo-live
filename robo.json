@@ -2374,13 +2374,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -50.8,
-  "ciclos": 876,
-  "greens": 596,
+  "saldo": -49.9,
+  "ciclos": 877,
+  "greens": 597,
   "redsCiclo": 94,
   "aborts": 0,
   "descartes": 186,
   "historico": [
+   {
+    "quando": "2026-08-02T13:31:04.055Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · Jordânia x Uzbequistão @1.95 (tiro 2) · gatilho: time Jordânia"
+   },
    {
     "quando": "2026-08-02T13:05:05.860Z",
     "resultado": "GREEN",
@@ -4399,52 +4405,45 @@
    }
   ],
   "consumidas": {
-   "euro": 1785675905663
+   "euro": 1785675905663,
+   "copa": 1785677463854
   },
   "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "14:25",
-     "jogo": "Croácia x Espanha",
-     "odd": 1.98
+     "h": "14:55",
+     "jogo": "Bogota x Montevideo",
+     "odd": 2.075
     },
     {
-     "h": "14:28",
-     "jogo": "Jordânia x Uzbequistão",
-     "odd": 1.95
+     "h": "14:58",
+     "jogo": "Belo Horizonte x Itaquera",
+     "odd": 1.93
     },
     {
-     "h": "14:31",
-     "jogo": "Colômbia x Tunísia",
-     "odd": 2.15
+     "h": "15:01",
+     "jogo": "Bogota x La Boca",
+     "odd": 2.2
     }
    ],
-   "gatilho": "time Jordânia",
+   "gatilho": "coluna :58",
    "alvo": {
-    "h": "14:28",
-    "jogo": "Jordânia x Uzbequistão",
-    "odd": 1.95,
-    "unidades": 2,
-    "desde": 1785677281059
+    "h": "14:55",
+    "jogo": "Bogota x Montevideo",
+    "odd": 2.075,
+    "unidades": 1,
+    "desde": 1785678545062
    },
-   "iniciadoEm": 1785676561056,
-   "tiros": [
-    {
-     "h": "14:25",
-     "jogo": "Croácia x Espanha",
-     "odd": 1.98,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1785678545062
   },
   "cooldown": {
    "euro": 1785675905663,
    "super": 1785673406056,
    "premier": 1785624685060,
-   "copa": 1785672864263
+   "copa": 1785677463854
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -4464,13 +4463,13 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -24.4
+   "2026-08-02": -23.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Jordânia",
-   "n": 11,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":58",
+   "n": 14,
+   "start": 3
   },
   "_obs": {}
  }
