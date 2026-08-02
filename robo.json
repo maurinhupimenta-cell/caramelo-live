@@ -244,12 +244,18 @@
  },
  "o25": {
   "saldo": -176.6,
-  "ciclos": 840,
+  "ciclos": 841,
   "greens": 517,
   "redsCiclo": 141,
   "aborts": 0,
-  "descartes": 182,
+  "descartes": 183,
   "historico": [
+   {
+    "quando": "2026-08-02T10:20:44.654Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho seq RRRG) — liga REARMADA"
+   },
    {
     "quando": "2026-08-02T10:04:30.055Z",
     "resultado": "GREEN",
@@ -2284,7 +2290,37 @@
    "super": 1785663987764,
    "copa": 1785665069862
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:24",
+     "jogo": "Liverpool x Palace",
+     "odd": 2.2
+    },
+    {
+     "h": "11:27",
+     "jogo": "Islington x Brentford",
+     "odd": 2.25
+    },
+    {
+     "h": "11:30",
+     "jogo": "Everton x Leeds",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "seq RRRG",
+   "alvo": {
+    "h": "11:24",
+    "jogo": "Liverpool x Palace",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785666046367
+   },
+   "iniciadoEm": 1785666046367
+  },
   "cooldown": {
    "copa": 1785665069862,
    "premier": 1785662252559,
@@ -2313,21 +2349,27 @@
    "2026-08-02": -17.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":58",
-   "n": 9,
+   "tipo": "seq",
+   "chave": "RRRG",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -50.1,
-  "ciclos": 866,
+  "ciclos": 867,
   "greens": 590,
   "redsCiclo": 93,
   "aborts": 0,
-  "descartes": 183,
+  "descartes": 184,
   "historico": [
+   {
+    "quando": "2026-08-02T10:17:44.064Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho odd 2) — liga REARMADA"
+   },
    {
     "quando": "2026-08-02T09:49:29.161Z",
     "resultado": "RED_CICLO",
@@ -4288,7 +4330,37 @@
   "consumidas": {
    "copa": 1785664168965
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:20",
+     "jogo": "Países Baixos x República Tcheca",
+     "odd": 2.02
+    },
+    {
+     "h": "11:23",
+     "jogo": "Portugal x Áustria",
+     "odd": 2
+    },
+    {
+     "h": "11:26",
+     "jogo": "Turquia x Bélgica",
+     "odd": 2
+    }
+   ],
+   "gatilho": "odd 2",
+   "alvo": {
+    "h": "11:20",
+    "jogo": "Países Baixos x República Tcheca",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1785665865855
+   },
+   "iniciadoEm": 1785665865855
+  },
   "cooldown": {
    "euro": 1785662250459,
    "super": 1785660028957,
@@ -4316,9 +4388,9 @@
    "2026-08-02": -23.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":55",
-   "n": 9,
+   "tipo": "odd",
+   "chave": "2",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
