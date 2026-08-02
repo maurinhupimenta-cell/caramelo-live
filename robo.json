@@ -2243,13 +2243,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -35,
-  "ciclos": 856,
-  "greens": 585,
+  "saldo": -33.7,
+  "ciclos": 857,
+  "greens": 586,
   "redsCiclo": 90,
   "aborts": 0,
   "descartes": 181,
   "historico": [
+   {
+    "quando": "2026-08-02T07:02:24.362Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "euro · Sérvia x Hungria @2.15 (tiro 2) · gatilho: time Áustria"
+   },
    {
     "quando": "2026-08-02T06:19:29.568Z",
     "resultado": "GREEN",
@@ -4149,49 +4155,12 @@
   ],
   "consumidas": {
    "copa": 1785651506963,
-   "super": 1785651569366
+   "super": 1785651569366,
+   "euro": 1785654144165
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "07:56",
-     "jogo": "Croácia x Áustria",
-     "odd": 1.98
-    },
-    {
-     "h": "07:59",
-     "jogo": "Sérvia x Hungria",
-     "odd": 2.15
-    },
-    {
-     "h": "08:02",
-     "jogo": "França x Turquia",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "time Áustria",
-   "alvo": {
-    "h": "07:59",
-    "jogo": "Sérvia x Hungria",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1785654024166
-   },
-   "iniciadoEm": 1785653787358,
-   "tiros": [
-    {
-     "h": "07:56",
-     "jogo": "Croácia x Áustria",
-     "odd": 1.98,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785650186062,
+   "euro": 1785654144165,
    "super": 1785651569366,
    "premier": 1785624685060,
    "copa": 1785651506963
@@ -4214,13 +4183,13 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -8.6
+   "2026-08-02": -7.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Áustria",
-   "n": 9,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":11",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  }
