@@ -2201,8 +2201,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "07:45",
@@ -2222,13 +2222,21 @@
    ],
    "gatilho": "odd 2.07",
    "alvo": {
-    "h": "07:45",
-    "jogo": "Leeds x Aston",
-    "odd": 2.62,
-    "unidades": 1,
-    "desde": 1785652568662
+    "h": "07:48",
+    "jogo": "Islington x Wolverhampton",
+    "odd": 2.07,
+    "unidades": 2,
+    "desde": 1785653274659
    },
-   "iniciadoEm": 1785652568662
+   "iniciadoEm": 1785652568662,
+   "tiros": [
+    {
+     "h": "07:45",
+     "jogo": "Leeds x Aston",
+     "odd": 2.62,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785651088458,
@@ -2261,7 +2269,7 @@
    "tipo": "odd",
    "chave": "2.07",
    "n": 9,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
