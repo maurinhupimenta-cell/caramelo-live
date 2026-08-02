@@ -4695,7 +4695,37 @@
    "euro": 1785702270661,
    "copa": 1785703947862
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:03",
+     "jogo": "Palace x Liverpool",
+     "odd": 1.93
+    },
+    {
+     "h": "22:06",
+     "jogo": "Tottenham x City",
+     "odd": 1.98
+    },
+    {
+     "h": "22:09",
+     "jogo": "Norwich x Brentford",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "coluna :06",
+   "alvo": {
+    "h": "22:03",
+    "jogo": "Palace x Liverpool",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1785704123466
+   },
+   "iniciadoEm": 1785704123466
+  },
   "cooldown": {
    "euro": 1785702270661,
    "super": 1785693324361,
@@ -4723,16 +4753,11 @@
    "2026-08-02": -37.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Jordânia",
-   "n": 16,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":06",
+   "n": 22,
+   "start": 3
   },
-  "_obs": {
-   "premier": {
-    "desde": 1785704069366,
-    "gatilho": "coluna :06"
-   }
-  }
+  "_obs": {}
  }
 }
