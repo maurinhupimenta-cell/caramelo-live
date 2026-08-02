@@ -4114,7 +4114,45 @@
    "copa": 1785647189861,
    "super": 1785647309956
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "06:50",
+     "jogo": "Países Baixos x Inglaterra",
+     "odd": 1.8
+    },
+    {
+     "h": "06:53",
+     "jogo": "Espanha x Sérvia",
+     "odd": 2
+    },
+    {
+     "h": "06:56",
+     "jogo": "Eslovênia x Ucrânia",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "odd 2",
+   "alvo": {
+    "h": "06:53",
+    "jogo": "Espanha x Sérvia",
+    "odd": 2,
+    "unidades": 2,
+    "desde": 1785650006254
+   },
+   "iniciadoEm": 1785649588459,
+   "tiros": [
+    {
+     "h": "06:50",
+     "jogo": "Países Baixos x Inglaterra",
+     "odd": 1.8,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1785644428854,
    "super": 1785647309956,
@@ -4142,16 +4180,11 @@
    "2026-08-02": -3.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Santos",
-   "n": 12,
+   "tipo": "odd",
+   "chave": "2",
+   "n": 8,
    "start": 1
   },
-  "_obs": {
-   "euro": {
-    "desde": 1785649586460,
-    "gatilho": "odd 2"
-   }
-  }
+  "_obs": {}
  }
 }
