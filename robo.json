@@ -2198,13 +2198,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -27.1,
-  "ciclos": 845,
-  "greens": 579,
+  "saldo": -26.4,
+  "ciclos": 846,
+  "greens": 580,
   "redsCiclo": 88,
   "aborts": 0,
   "descartes": 178,
   "historico": [
+   {
+    "quando": "2026-08-02T02:49:24.754Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "super · Itaquera x Agua Branca @1.93 (tiro 3) · gatilho: time Santos"
+   },
    {
     "quando": "2026-08-02T02:20:13.554Z",
     "resultado": "RED_CICLO",
@@ -4038,56 +4044,13 @@
   ],
   "consumidas": {
    "copa": 1785636565262,
-   "euro": 1785637213360
+   "euro": 1785637213360,
+   "super": 1785638964561
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "03:40",
-     "jogo": "Sao Paulo x Avellaneda",
-     "odd": 1.9
-    },
-    {
-     "h": "03:43",
-     "jogo": "Santos x Medellin",
-     "odd": 2.15
-    },
-    {
-     "h": "03:46",
-     "jogo": "Itaquera x Agua Branca",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "time Santos",
-   "alvo": {
-    "h": "03:46",
-    "jogo": "Itaquera x Agua Branca",
-    "odd": 1.93,
-    "unidades": 4,
-    "desde": 1785638756655
-   },
-   "iniciadoEm": 1785638068358,
-   "tiros": [
-    {
-     "h": "03:40",
-     "jogo": "Sao Paulo x Avellaneda",
-     "odd": 1.9,
-     "unidades": 1
-    },
-    {
-     "h": "03:43",
-     "jogo": "Santos x Medellin",
-     "odd": 2.15,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785637213360,
-   "super": 1785622284761,
+   "super": 1785638964561,
    "premier": 1785624685060,
    "copa": 1785636565262
   },
@@ -4108,13 +4071,13 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": -20.1
+   "2026-08-01": -19.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGR",
-   "n": 8,
-   "start": 1
+   "tipo": "time",
+   "chave": "Santos",
+   "n": 9,
+   "start": 3
   },
   "_obs": {}
  }
