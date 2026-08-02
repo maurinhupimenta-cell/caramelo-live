@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -179.6,
-  "ciclos": 859,
-  "greens": 530,
+  "saldo": -178,
+  "ciclos": 860,
+  "greens": 531,
   "redsCiclo": 144,
   "aborts": 0,
   "descartes": 185,
   "historico": [
+   {
+    "quando": "2026-08-02T18:25:28.556Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "copa · Noruega x Uruguai @2.15 (tiro 3) · gatilho: odd 2.4"
+   },
    {
     "quando": "2026-08-02T17:13:29.754Z",
     "resultado": "GREEN",
@@ -2410,54 +2416,12 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "19:16",
-     "jogo": "Argélia x Austrália",
-     "odd": 2.25
-    },
-    {
-     "h": "19:19",
-     "jogo": "Escócia x Espanha",
-     "odd": 2.4
-    },
-    {
-     "h": "19:22",
-     "jogo": "Noruega x Uruguai",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "odd 2.4",
-   "alvo": {
-    "h": "19:22",
-    "jogo": "Noruega x Uruguai",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1785695125954
-   },
-   "iniciadoEm": 1785694410164,
-   "tiros": [
-    {
-     "h": "19:16",
-     "jogo": "Argélia x Austrália",
-     "odd": 2.25,
-     "unidades": 1
-    },
-    {
-     "h": "19:19",
-     "jogo": "Escócia x Espanha",
-     "odd": 2.4,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "copa": 1785695128363
   },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785690809555,
+   "copa": 1785695128363,
    "premier": 1785690520059,
    "euro": 1785668551057,
    "super": 1785689963662
@@ -2481,7 +2445,7 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -20.9
+   "2026-08-02": -19.3
   },
   "_gatilhoAtual": {
    "tipo": "time",
@@ -4605,7 +4569,37 @@
    "premier": 1785694345955,
    "copa": 1785694825063
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:35",
+     "jogo": "Suíça x Geórgia",
+     "odd": 2.02
+    },
+    {
+     "h": "19:38",
+     "jogo": "Sérvia x Escócia",
+     "odd": 2.05
+    },
+    {
+     "h": "19:41",
+     "jogo": "França x Bélgica",
+     "odd": 1.83
+    }
+   ],
+   "gatilho": "seq RRGG",
+   "alvo": {
+    "h": "19:35",
+    "jogo": "Suíça x Geórgia",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1785695673564
+   },
+   "iniciadoEm": 1785695673564
+  },
   "cooldown": {
    "euro": 1785691289058,
    "super": 1785693324361,
@@ -4633,10 +4627,10 @@
    "2026-08-02": -18.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Jordânia",
-   "n": 13,
-   "start": 3
+   "tipo": "seq",
+   "chave": "RRGG",
+   "n": 24,
+   "start": 1
   },
   "_obs": {}
  }
