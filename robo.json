@@ -2278,7 +2278,37 @@
    "euro": 1785662726858,
    "super": 1785663987764
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:52",
+     "jogo": "Inglaterra x RD Congo",
+     "odd": 2.15
+    },
+    {
+     "h": "10:55",
+     "jogo": "México x Tunísia",
+     "odd": 2.5
+    },
+    {
+     "h": "10:58",
+     "jogo": "Suíça x Argentina",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time México",
+   "alvo": {
+    "h": "10:52",
+    "jogo": "Inglaterra x RD Congo",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785663990257
+   },
+   "iniciadoEm": 1785663990257
+  },
   "cooldown": {
    "copa": 1785659904660,
    "premier": 1785662252559,
@@ -2307,21 +2337,27 @@
    "2026-08-02": -19.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGG",
-   "n": 12,
+   "tipo": "time",
+   "chave": "México",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -43.1,
-  "ciclos": 865,
+  "saldo": -50.1,
+  "ciclos": 866,
   "greens": 590,
-  "redsCiclo": 92,
+  "redsCiclo": 93,
   "aborts": 0,
   "descartes": 183,
   "historico": [
+   {
+    "quando": "2026-08-02T09:49:29.161Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: seq RRRG"
+   },
    {
     "quando": "2026-08-02T09:17:30.562Z",
     "resultado": "RED_CICLO",
@@ -4274,52 +4310,15 @@
    }
   ],
   "consumidas": {
-   "euro": 1785662250459
+   "euro": 1785662250459,
+   "copa": 1785664168965
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "10:40",
-     "jogo": "Haiti x Suíça",
-     "odd": 1.93
-    },
-    {
-     "h": "10:43",
-     "jogo": "Iraque x Paraguai",
-     "odd": 2.15
-    },
-    {
-     "h": "10:46",
-     "jogo": "África do Sul x República Tcheca",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "seq RRRG",
-   "alvo": {
-    "h": "10:43",
-    "jogo": "Iraque x Paraguai",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1785663809658
-   },
-   "iniciadoEm": 1785663505554,
-   "tiros": [
-    {
-     "h": "10:40",
-     "jogo": "Haiti x Suíça",
-     "odd": 1.93,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785662250459,
    "super": 1785660028957,
    "premier": 1785624685060,
-   "copa": 1785659904957
+   "copa": 1785664168965
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -4339,12 +4338,12 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -16.7
+   "2026-08-02": -23.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.07",
-   "n": 10,
+   "tipo": "coluna",
+   "chave": ":55",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
