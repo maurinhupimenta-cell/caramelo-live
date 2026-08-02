@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -176.6,
-  "ciclos": 841,
-  "greens": 517,
+  "saldo": -175.4,
+  "ciclos": 842,
+  "greens": 518,
   "redsCiclo": 141,
   "aborts": 0,
   "descartes": 183,
   "historico": [
+   {
+    "quando": "2026-08-02T10:27:26.455Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · Liverpool x Palace @2.2 (tiro 1) · gatilho: seq RRRG"
+   },
    {
     "quando": "2026-08-02T10:20:44.654Z",
     "resultado": "GREEN_OBS",
@@ -2287,42 +2293,13 @@
   ],
   "consumidas": {
    "super": 1785663987764,
-   "copa": 1785665069862
+   "copa": 1785665069862,
+   "premier": 1785666446257
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "11:24",
-     "jogo": "Liverpool x Palace",
-     "odd": 2.2
-    },
-    {
-     "h": "11:27",
-     "jogo": "Islington x Brentford",
-     "odd": 2.25
-    },
-    {
-     "h": "11:30",
-     "jogo": "Everton x Leeds",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "seq RRRG",
-   "alvo": {
-    "h": "11:24",
-    "jogo": "Liverpool x Palace",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785666046367
-   },
-   "iniciadoEm": 1785666046367
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785665069862,
-   "premier": 1785662252559,
+   "premier": 1785666446257,
    "euro": 1785662726858,
    "super": 1785663987764
   },
@@ -2345,12 +2322,12 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -17.9
+   "2026-08-02": -16.7
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRG",
-   "n": 12,
+   "chave": "RGRG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
