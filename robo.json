@@ -4361,8 +4361,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "13:07",
@@ -4382,13 +4382,21 @@
    ],
    "gatilho": "coluna :10",
    "alvo": {
-    "h": "13:07",
-    "jogo": "Gana x Austrália",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1785672204058
+    "h": "13:10",
+    "jogo": "EUA x Croácia",
+    "odd": 2.02,
+    "unidades": 2,
+    "desde": 1785672744257
    },
-   "iniciadoEm": 1785672204058
+   "iniciadoEm": 1785672204058,
+   "tiros": [
+    {
+     "h": "13:07",
+     "jogo": "Gana x Austrália",
+     "odd": 2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785670348154,
@@ -4417,10 +4425,10 @@
    "2026-08-02": -27.2
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":10",
-   "n": 12,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.05",
+   "n": 10,
+   "start": 3
   },
   "_obs": {}
  }
