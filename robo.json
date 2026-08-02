@@ -2199,7 +2199,37 @@
    "copa": 1785651088458,
    "super": 1785651569156
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:45",
+     "jogo": "Leeds x Aston",
+     "odd": 2.62
+    },
+    {
+     "h": "07:48",
+     "jogo": "Islington x Wolverhampton",
+     "odd": 2.07
+    },
+    {
+     "h": "07:51",
+     "jogo": "Brentford x Tottenham",
+     "odd": 2.45
+    }
+   ],
+   "gatilho": "odd 2.07",
+   "alvo": {
+    "h": "07:45",
+    "jogo": "Leeds x Aston",
+    "odd": 2.62,
+    "unidades": 1,
+    "desde": 1785652568662
+   },
+   "iniciadoEm": 1785652568662
+  },
   "cooldown": {
    "copa": 1785651088458,
    "premier": 1785648226863,
@@ -2228,10 +2258,10 @@
    "2026-08-02": 0
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "La Plata",
-   "n": 16,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.07",
+   "n": 9,
+   "start": 3
   },
   "_obs": {}
  },
