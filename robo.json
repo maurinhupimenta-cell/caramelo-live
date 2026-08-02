@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -185.3,
-  "ciclos": 877,
-  "greens": 535,
+  "saldo": -184,
+  "ciclos": 878,
+  "greens": 536,
   "redsCiclo": 146,
   "aborts": 0,
   "descartes": 196,
   "historico": [
+   {
+    "quando": "2026-08-02T22:29:42.258Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "premier · Islington x Watford @2.25 (tiro 1) · gatilho: seq GGGRG"
+   },
    {
     "quando": "2026-08-02T22:24:09.161Z",
     "resultado": "GREEN_OBS",
@@ -2519,42 +2525,13 @@
    }
   ],
   "consumidas": {
-   "copa": 1785708147859
+   "copa": 1785708147859,
+   "premier": 1785709782065
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:27",
-     "jogo": "Islington x Watford",
-     "odd": 2.25
-    },
-    {
-     "h": "23:30",
-     "jogo": "Palace x Everton",
-     "odd": 2.1
-    },
-    {
-     "h": "23:33",
-     "jogo": "Watford x Brentford",
-     "odd": 2.29
-    }
-   ],
-   "gatilho": "seq GGGRG",
-   "alvo": {
-    "h": "23:27",
-    "jogo": "Islington x Watford",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785709450563
-   },
-   "iniciadoEm": 1785709450563
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785708147859,
-   "premier": 1785698502357,
+   "premier": 1785709782065,
    "euro": 1785697826355,
    "super": 1785702275661
   },
@@ -2577,7 +2554,7 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -26.6
+   "2026-08-02": -25.3
   },
   "_gatilhoAtual": {
    "tipo": "seq",
