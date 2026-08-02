@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -162.5,
-  "ciclos": 851,
+  "saldo": -169.5,
+  "ciclos": 852,
   "greens": 527,
-  "redsCiclo": 141,
+  "redsCiclo": 142,
   "aborts": 0,
   "descartes": 183,
   "historico": [
+   {
+    "quando": "2026-08-02T14:43:00.958Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Panamá"
+   },
    {
     "quando": "2026-08-02T14:10:04.856Z",
     "resultado": "GREEN",
@@ -2347,55 +2353,12 @@
   ],
   "consumidas": {
    "premier": 1785679371061,
-   "super": 1785679804456
+   "super": 1785679804456,
+   "copa": 1785681780763
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "15:34",
-     "jogo": "Equador x Paraguai",
-     "odd": 2.25
-    },
-    {
-     "h": "15:37",
-     "jogo": "Colômbia x Panamá",
-     "odd": 2.35
-    },
-    {
-     "h": "15:40",
-     "jogo": "Egito x Haiti",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "time Panamá",
-   "alvo": {
-    "h": "15:40",
-    "jogo": "Egito x Haiti",
-    "odd": 2.07,
-    "unidades": 4,
-    "desde": 1785681601061
-   },
-   "iniciadoEm": 1785681064256,
-   "tiros": [
-    {
-     "h": "15:34",
-     "jogo": "Equador x Paraguai",
-     "odd": 2.25,
-     "unidades": 1
-    },
-    {
-     "h": "15:37",
-     "jogo": "Colômbia x Panamá",
-     "odd": 2.35,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785677463563,
+   "copa": 1785681780763,
    "premier": 1785679371061,
    "euro": 1785668551057,
    "super": 1785679804456
@@ -2419,7 +2382,7 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -3.8
+   "2026-08-02": -10.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
