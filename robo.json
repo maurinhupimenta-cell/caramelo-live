@@ -4052,8 +4052,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "04:52",
@@ -4073,13 +4073,21 @@
    ],
    "gatilho": "odd 2.15",
    "alvo": {
-    "h": "04:52",
-    "jogo": "Buenos Aires x Bogota",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785642566056
+    "h": "04:55",
+    "jogo": "La Plata x Avellaneda",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1785642906457
    },
-   "iniciadoEm": 1785642566056
+   "iniciadoEm": 1785642566056,
+   "tiros": [
+    {
+     "h": "04:52",
+     "jogo": "Buenos Aires x Bogota",
+     "odd": 2.05,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785637213360,
@@ -4110,7 +4118,7 @@
    "tipo": "odd",
    "chave": "2.15",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
