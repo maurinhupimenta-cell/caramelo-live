@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -171.4,
-  "ciclos": 845,
-  "greens": 521,
+  "saldo": -168.8,
+  "ciclos": 846,
+  "greens": 522,
   "redsCiclo": 141,
   "aborts": 0,
   "descartes": 183,
   "historico": [
+   {
+    "quando": "2026-08-02T12:26:24.462Z",
+    "resultado": "GREEN",
+    "unidades": 2.6,
+    "detalhe": "copa · República Tcheca x Turquia @2.4 (tiro 3) · gatilho: time Senegal"
+   },
    {
     "quando": "2026-08-02T11:44:27.460Z",
     "resultado": "GREEN",
@@ -2310,49 +2316,12 @@
    }
   ],
   "consumidas": {
-   "premier": 1785671067357
+   "premier": 1785671067357,
+   "copa": 1785673584262
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "13:16",
-     "jogo": "Argélia x Egito",
-     "odd": 2.2
-    },
-    {
-     "h": "13:19",
-     "jogo": "Senegal x Curação",
-     "odd": 2.35
-    },
-    {
-     "h": "13:22",
-     "jogo": "República Tcheca x Turquia",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "time Senegal",
-   "alvo": {
-    "h": "13:19",
-    "jogo": "Senegal x Curação",
-    "odd": 2.35,
-    "unidades": 2,
-    "desde": 1785673164465
-   },
-   "iniciadoEm": 1785672985364,
-   "tiros": [
-    {
-     "h": "13:16",
-     "jogo": "Argélia x Egito",
-     "odd": 2.2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785669384164,
+   "copa": 1785673584262,
    "premier": 1785671067357,
    "euro": 1785668551057,
    "super": 1785663987764
@@ -2376,7 +2345,7 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -12.7
+   "2026-08-02": -10.1
   },
   "_gatilhoAtual": {
    "tipo": "placar",
