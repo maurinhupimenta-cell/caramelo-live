@@ -244,12 +244,18 @@
  },
  "o25": {
   "saldo": -176.5,
-  "ciclos": 853,
+  "ciclos": 854,
   "greens": 527,
   "redsCiclo": 143,
   "aborts": 0,
-  "descartes": 183,
+  "descartes": 184,
   "historico": [
+   {
+    "quando": "2026-08-02T15:51:24.254Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho odd 2.15) — liga REARMADA"
+   },
    {
     "quando": "2026-08-02T15:29:53.963Z",
     "resultado": "RED_CICLO",
@@ -2360,7 +2366,37 @@
   "consumidas": {
    "premier": 1785684593857
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:55",
+     "jogo": "Cabo Verde x Haiti",
+     "odd": 2.1
+    },
+    {
+     "h": "16:58",
+     "jogo": "Egito x Colômbia",
+     "odd": 2.15
+    },
+    {
+     "h": "17:01",
+     "jogo": "Qatar x Suécia",
+     "odd": 2.54
+    }
+   ],
+   "gatilho": "odd 2.15",
+   "alvo": {
+    "h": "16:55",
+    "jogo": "Cabo Verde x Haiti",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785685885664
+   },
+   "iniciadoEm": 1785685885664
+  },
   "cooldown": {
    "copa": 1785681780763,
    "premier": 1785684593857,
@@ -2389,10 +2425,10 @@
    "2026-08-02": -17.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRG",
-   "n": 17,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.15",
+   "n": 8,
+   "start": 2
   },
   "_obs": {}
  },
