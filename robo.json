@@ -2487,8 +2487,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "21:43",
@@ -2508,11 +2508,11 @@
    ],
    "gatilho": "odd 2.4",
    "alvo": {
-    "h": "21:46",
-    "jogo": "Panamá x Gana",
-    "odd": 2.45,
-    "unidades": 2,
-    "desde": 1785703584556
+    "h": "21:49",
+    "jogo": "Haiti x Uzbequistão",
+    "odd": 2.2,
+    "unidades": 4,
+    "desde": 1785703829655
    },
    "iniciadoEm": 1785703463859,
    "tiros": [
@@ -2521,6 +2521,12 @@
      "jogo": "Senegal x EUA",
      "odd": 2.4,
      "unidades": 1
+    },
+    {
+     "h": "21:46",
+     "jogo": "Panamá x Gana",
+     "odd": 2.45,
+     "unidades": 2
     }
    ]
   },
@@ -2555,7 +2561,7 @@
    "tipo": "coluna",
    "chave": ":58",
    "n": 20,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
@@ -4715,8 +4721,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "21:43",
@@ -4736,13 +4742,27 @@
    ],
    "gatilho": "odd 2.1",
    "alvo": {
-    "h": "21:43",
-    "jogo": "Senegal x EUA",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785703464163
+    "h": "21:49",
+    "jogo": "Haiti x Uzbequistão",
+    "odd": 1.9,
+    "unidades": 4,
+    "desde": 1785703830156
    },
-   "iniciadoEm": 1785703464163
+   "iniciadoEm": 1785703464163,
+   "tiros": [
+    {
+     "h": "21:43",
+     "jogo": "Senegal x EUA",
+     "odd": 2.05,
+     "unidades": 1
+    },
+    {
+     "h": "21:46",
+     "jogo": "Panamá x Gana",
+     "odd": 2.1,
+     "unidades": 2
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785702270661,
@@ -4771,10 +4791,10 @@
    "2026-08-02": -30.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.1",
-   "n": 10,
-   "start": 1
+   "tipo": "time",
+   "chave": "Jordânia",
+   "n": 16,
+   "start": 2
   },
   "_obs": {}
  }
