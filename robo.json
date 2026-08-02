@@ -2236,7 +2236,7 @@
    "tipo": "time",
    "chave": "Curação",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -4113,7 +4113,45 @@
    "super": 1785643164761,
    "euro": 1785644428854
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "05:52",
+     "jogo": "África do Sul x Áustria",
+     "odd": 2.05
+    },
+    {
+     "h": "05:55",
+     "jogo": "Coreia do Sul x Suíça",
+     "odd": 2.1
+    },
+    {
+     "h": "05:58",
+     "jogo": "EUA x Curação",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "odd 2.05",
+   "alvo": {
+    "h": "05:55",
+    "jogo": "Coreia do Sul x Suíça",
+    "odd": 2.1,
+    "unidades": 2,
+    "desde": 1785646526355
+   },
+   "iniciadoEm": 1785646167167,
+   "tiros": [
+    {
+     "h": "05:52",
+     "jogo": "África do Sul x Áustria",
+     "odd": 2.05,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1785644428854,
    "super": 1785643164761,
@@ -4141,16 +4179,11 @@
    "2026-08-02": -5.7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Eslovênia",
+   "tipo": "odd",
+   "chave": "2.05",
    "n": 8,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785646166065,
-    "gatilho": "odd 2.05"
-   }
-  }
+  "_obs": {}
  }
 }
