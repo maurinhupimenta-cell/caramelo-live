@@ -2174,7 +2174,37 @@
   "consumidas": {
    "premier": 1785644129257
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:55",
+     "jogo": "Coreia do Sul x Suíça",
+     "odd": 2.5
+    },
+    {
+     "h": "05:58",
+     "jogo": "EUA x Curação",
+     "odd": 2.15
+    },
+    {
+     "h": "06:01",
+     "jogo": "Nova Zelândia x Jordânia",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time Curação",
+   "alvo": {
+    "h": "05:55",
+    "jogo": "Coreia do Sul x Suíça",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1785645985064
+   },
+   "iniciadoEm": 1785645985064
+  },
   "cooldown": {
    "copa": 1785637706554,
    "premier": 1785644129257,
@@ -2204,9 +2234,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Islington",
-   "n": 9,
-   "start": 2
+   "chave": "Curação",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  },
