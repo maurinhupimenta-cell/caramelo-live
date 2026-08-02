@@ -2428,8 +2428,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "20:12",
@@ -2449,11 +2449,11 @@
    ],
    "gatilho": "odd 2.62",
    "alvo": {
-    "h": "20:15",
-    "jogo": "Leeds x Aston",
-    "odd": 2.62,
-    "unidades": 2,
-    "desde": 1785698099355
+    "h": "20:18",
+    "jogo": "Watford x Norwich",
+    "odd": 2.25,
+    "unidades": 4,
+    "desde": 1785698310365
    },
    "iniciadoEm": 1785697827959,
    "tiros": [
@@ -2462,6 +2462,12 @@
      "jogo": "Islington x Newcastle",
      "odd": 2.07,
      "unidades": 1
+    },
+    {
+     "h": "20:15",
+     "jogo": "Leeds x Aston",
+     "odd": 2.62,
+     "unidades": 2
     }
    ]
   },
@@ -2502,12 +2508,18 @@
  },
  "ambas": {
   "saldo": -43.8,
-  "ciclos": 891,
+  "ciclos": 892,
   "greens": 610,
   "redsCiclo": 95,
   "aborts": 0,
-  "descartes": 186,
+  "descartes": 187,
   "historico": [
+   {
+    "quando": "2026-08-02T19:18:30.654Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho coluna :30) — liga REARMADA"
+   },
    {
     "quando": "2026-08-02T18:40:25.956Z",
     "resultado": "GREEN",
@@ -4652,6 +4664,11 @@
    "n": 17,
    "start": 3
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1785698310561,
+    "gatilho": "coluna :30"
+   }
+  }
  }
 }
