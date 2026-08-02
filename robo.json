@@ -4357,11 +4357,39 @@
    }
   ],
   "consumidas": {
-   "copa": 1785668548859,
-   "super": 1785668847964,
    "euro": 1785670348154
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:07",
+     "jogo": "Gana x Austrália",
+     "odd": 2
+    },
+    {
+     "h": "13:10",
+     "jogo": "EUA x Croácia",
+     "odd": 2.02
+    },
+    {
+     "h": "13:13",
+     "jogo": "Portugal x Equador",
+     "odd": 1.86
+    }
+   ],
+   "gatilho": "coluna :10",
+   "alvo": {
+    "h": "13:07",
+    "jogo": "Gana x Austrália",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1785672204058
+   },
+   "iniciadoEm": 1785672204058
+  },
   "cooldown": {
    "euro": 1785670348154,
    "super": 1785668847964,
@@ -4389,9 +4417,9 @@
    "2026-08-02": -27.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGG",
-   "n": 14,
+   "tipo": "coluna",
+   "chave": ":10",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
