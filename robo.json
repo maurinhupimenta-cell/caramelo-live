@@ -4040,7 +4040,37 @@
    "copa": 1785636565262,
    "euro": 1785637213360
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:40",
+     "jogo": "Sao Paulo x Avellaneda",
+     "odd": 1.9
+    },
+    {
+     "h": "03:43",
+     "jogo": "Santos x Medellin",
+     "odd": 2.15
+    },
+    {
+     "h": "03:46",
+     "jogo": "Itaquera x Agua Branca",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "time Santos",
+   "alvo": {
+    "h": "03:40",
+    "jogo": "Sao Paulo x Avellaneda",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1785638068358
+   },
+   "iniciadoEm": 1785638068358
+  },
   "cooldown": {
    "euro": 1785637213360,
    "super": 1785622284761,
@@ -4068,9 +4098,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Itália",
+   "chave": "Santos",
    "n": 8,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
