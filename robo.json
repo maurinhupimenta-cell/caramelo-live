@@ -2369,13 +2369,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -51.7,
-  "ciclos": 875,
-  "greens": 595,
+  "saldo": -50.8,
+  "ciclos": 876,
+  "greens": 596,
   "redsCiclo": 94,
   "aborts": 0,
   "descartes": 186,
   "historico": [
+   {
+    "quando": "2026-08-02T13:05:05.860Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Bélgica x Suíça @1.86 (tiro 1) · gatilho: seq RRGG"
+   },
    {
     "quando": "2026-08-02T12:23:26.164Z",
     "resultado": "GREEN",
@@ -4389,41 +4395,12 @@
   ],
   "consumidas": {
    "copa": 1785672864263,
-   "super": 1785673406056
+   "super": 1785673406056,
+   "euro": 1785675905663
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:02",
-     "jogo": "Bélgica x Suíça",
-     "odd": 1.86
-    },
-    {
-     "h": "14:05",
-     "jogo": "Espanha x Portugal",
-     "odd": 1.85
-    },
-    {
-     "h": "14:08",
-     "jogo": "Suíça x Eslovênia",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "seq RRGG",
-   "alvo": {
-    "h": "14:02",
-    "jogo": "Bélgica x Suíça",
-    "odd": 1.86,
-    "unidades": 1,
-    "desde": 1785675722958
-   },
-   "iniciadoEm": 1785675722958
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785670348154,
+   "euro": 1785675905663,
    "super": 1785673406056,
    "premier": 1785624685060,
    "copa": 1785672864263
@@ -4446,7 +4423,7 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -25.3
+   "2026-08-02": -24.4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
