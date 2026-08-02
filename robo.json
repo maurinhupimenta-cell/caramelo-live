@@ -2295,7 +2295,37 @@
    "copa": 1785665069862,
    "premier": 1785666446257
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:56",
+     "jogo": "Geórgia x Hungria",
+     "odd": 2.45
+    },
+    {
+     "h": "11:59",
+     "jogo": "Inglaterra x Polônia",
+     "odd": 2.3
+    },
+    {
+     "h": "12:02",
+     "jogo": "Escócia x Sérvia",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "seq GGGR",
+   "alvo": {
+    "h": "11:56",
+    "jogo": "Geórgia x Hungria",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1785668245654
+   },
+   "iniciadoEm": 1785668245654
+  },
   "cooldown": {
    "copa": 1785665069862,
    "premier": 1785666446257,
@@ -2325,8 +2355,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGRG",
-   "n": 8,
+   "chave": "GGGR",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
@@ -4376,8 +4406,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Jordânia",
-   "n": 10,
+   "chave": "Santos",
+   "n": 23,
    "start": 1
   },
   "_obs": {}
