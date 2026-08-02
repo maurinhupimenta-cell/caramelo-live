@@ -260,13 +260,25 @@
   }
  },
  "o25": {
-  "saldo": -183.2,
-  "ciclos": 864,
-  "greens": 532,
+  "saldo": -181.4,
+  "ciclos": 866,
+  "greens": 533,
   "redsCiclo": 145,
   "aborts": 0,
-  "descartes": 187,
+  "descartes": 188,
   "historico": [
+   {
+    "quando": "2026-08-02T19:43:58.368Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "copa · Curação x Tunísia @2.4 (tiro 2) · gatilho: odd 2.4"
+   },
+   {
+    "quando": "2026-08-02T19:43:53.360Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho seq GRRGG) — liga REARMADA"
+   },
    {
     "quando": "2026-08-02T19:41:56.660Z",
     "resultado": "GREEN_OBS",
@@ -2442,11 +2454,42 @@
   ],
   "consumidas": {
    "euro": 1785697826355,
-   "premier": 1785698502357
+   "premier": 1785698502357,
+   "copa": 1785699838265
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:46",
+     "jogo": "Avellaneda x Penarol",
+     "odd": 2.5
+    },
+    {
+     "h": "20:49",
+     "jogo": "Itaquera x La Boca",
+     "odd": 2.4
+    },
+    {
+     "h": "20:52",
+     "jogo": "Lima x Buenos Aires",
+     "odd": 2
+    }
+   ],
+   "gatilho": "seq GRRGG",
+   "alvo": {
+    "h": "20:46",
+    "jogo": "Avellaneda x Penarol",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1785699840560
+   },
+   "iniciadoEm": 1785699840560
+  },
   "cooldown": {
-   "copa": 1785695128363,
+   "copa": 1785699838265,
    "premier": 1785698502357,
    "euro": 1785697826355,
    "super": 1785689963662
@@ -2470,29 +2513,30 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -24.5
+   "2026-08-02": -22.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.4",
-   "n": 14,
-   "start": 3
+   "tipo": "seq",
+   "chave": "GRRGG",
+   "n": 9,
+   "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785699716660,
-    "gatilho": "odd 2.4"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
-  "saldo": -50.8,
-  "ciclos": 893,
-  "greens": 610,
+  "saldo": -49.8,
+  "ciclos": 894,
+  "greens": 611,
   "redsCiclo": 96,
   "aborts": 0,
   "descartes": 187,
   "historico": [
+   {
+    "quando": "2026-08-02T19:43:56.455Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Bélgica x Argélia @2.05 (tiro 1) · gatilho: odd 2.05"
+   },
    {
     "quando": "2026-08-02T19:35:43.458Z",
     "resultado": "RED_CICLO",
@@ -4613,44 +4657,15 @@
    }
   ],
   "consumidas": {
-   "premier": 1785699343265
+   "premier": 1785699343265,
+   "copa": 1785699836254
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:16",
-     "jogo": "Bélgica x Argélia",
-     "odd": 2.05
-    },
-    {
-     "h": "20:19",
-     "jogo": "Austrália x Arábia Saudita",
-     "odd": 1.87
-    },
-    {
-     "h": "20:22",
-     "jogo": "EUA x Croácia",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "odd 2.05",
-   "alvo": {
-    "h": "20:16",
-    "jogo": "Bélgica x Argélia",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785699368364
-   },
-   "iniciadoEm": 1785699368364
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785696025763,
    "super": 1785693324361,
    "premier": 1785699343265,
-   "copa": 1785694825063
+   "copa": 1785699836254
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -4670,12 +4685,12 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -24.4
+   "2026-08-02": -23.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.05",
-   "n": 12,
+   "tipo": "time",
+   "chave": "Jordânia",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
