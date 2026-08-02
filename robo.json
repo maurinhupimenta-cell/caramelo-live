@@ -2307,7 +2307,37 @@
    "euro": 1785668551057,
    "copa": 1785669384164
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:36",
+     "jogo": "Southampton x City",
+     "odd": 2.2
+    },
+    {
+     "h": "12:39",
+     "jogo": "Burnley x Everton",
+     "odd": 2.05
+    },
+    {
+     "h": "12:42",
+     "jogo": "Brighton x Watford",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "seq RRRG",
+   "alvo": {
+    "h": "12:36",
+    "jogo": "Southampton x City",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785670408363
+   },
+   "iniciadoEm": 1785670408363
+  },
   "cooldown": {
    "copa": 1785669384164,
    "premier": 1785666446257,
@@ -2336,10 +2366,10 @@
    "2026-08-02": -13.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Curação",
-   "n": 12,
-   "start": 2
+   "tipo": "seq",
+   "chave": "RRRG",
+   "n": 13,
+   "start": 1
   },
   "_obs": {}
  },
