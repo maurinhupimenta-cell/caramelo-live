@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -154.3,
-  "ciclos": 823,
-  "greens": 509,
+  "saldo": -152.8,
+  "ciclos": 824,
+  "greens": 510,
   "redsCiclo": 136,
   "aborts": 0,
   "descartes": 178,
   "historico": [
+   {
+    "quando": "2026-08-02T05:23:47.058Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "premier · Aston x Tottenham @2.55 (tiro 1) · gatilho: seq RRGR"
+   },
    {
     "quando": "2026-08-02T05:06:29.855Z",
     "resultado": "GREEN",
@@ -2178,42 +2184,13 @@
    }
   ],
   "consumidas": {
-   "copa": 1785647189658
+   "copa": 1785647189658,
+   "premier": 1785648226863
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:21",
-     "jogo": "Aston x Tottenham",
-     "odd": 2.55
-    },
-    {
-     "h": "06:24",
-     "jogo": "Leicester x Chelsea",
-     "odd": 2.25
-    },
-    {
-     "h": "06:27",
-     "jogo": "Burnley x City",
-     "odd": 2
-    }
-   ],
-   "gatilho": "seq RRGR",
-   "alvo": {
-    "h": "06:21",
-    "jogo": "Aston x Tottenham",
-    "odd": 2.55,
-    "unidades": 1,
-    "desde": 1785647865560
-   },
-   "iniciadoEm": 1785647865560
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785647189658,
-   "premier": 1785644129257,
+   "premier": 1785648226863,
    "euro": 1785624548964,
    "super": 1785639629355
   },
@@ -2236,11 +2213,11 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": 4.4
+   "2026-08-02": 5.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGR",
+   "tipo": "odd",
+   "chave": "2.4",
    "n": 9,
    "start": 1
   },
