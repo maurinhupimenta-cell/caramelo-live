@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -157.3,
-  "ciclos": 821,
-  "greens": 507,
+  "saldo": -155.6,
+  "ciclos": 822,
+  "greens": 508,
   "redsCiclo": 136,
   "aborts": 0,
   "descartes": 178,
   "historico": [
+   {
+    "quando": "2026-08-02T04:15:29.455Z",
+    "resultado": "GREEN",
+    "unidades": 1.7,
+    "detalhe": "premier · City x West Ham @2.37 (tiro 2) · gatilho: time West Ham"
+   },
    {
     "quando": "2026-08-02T03:00:29.556Z",
     "resultado": "GREEN",
@@ -2165,49 +2171,13 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "05:09",
-     "jogo": "Southampton x Chelsea",
-     "odd": 2.3
-    },
-    {
-     "h": "05:12",
-     "jogo": "City x West Ham",
-     "odd": 2.37
-    },
-    {
-     "h": "05:15",
-     "jogo": "Newcastle x Southampton",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time West Ham",
-   "alvo": {
-    "h": "05:12",
-    "jogo": "City x West Ham",
-    "odd": 2.37,
-    "unidades": 2,
-    "desde": 1785643901160
-   },
-   "iniciadoEm": 1785643196261,
-   "tiros": [
-    {
-     "h": "05:09",
-     "jogo": "Southampton x Chelsea",
-     "odd": 2.3,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "premier": 1785644129257
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785637706554,
-   "premier": 1785623926866,
+   "premier": 1785644129257,
    "euro": 1785624548964,
    "super": 1785639629355
   },
@@ -2230,13 +2200,13 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": 1.4
+   "2026-08-02": 3.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Islington",
    "n": 9,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
