@@ -2328,10 +2328,39 @@
    }
   ],
   "consumidas": {
-   "super": 1785673643567,
    "premier": 1785675047656
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:28",
+     "jogo": "Jordânia x Uzbequistão",
+     "odd": 2.25
+    },
+    {
+     "h": "14:31",
+     "jogo": "Colômbia x Tunísia",
+     "odd": 2.5
+    },
+    {
+     "h": "14:34",
+     "jogo": "Austrália x Jordânia",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time Jordânia",
+   "alvo": {
+    "h": "14:28",
+    "jogo": "Jordânia x Uzbequistão",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785677184858
+   },
+   "iniciadoEm": 1785677184858
+  },
   "cooldown": {
    "copa": 1785673584262,
    "premier": 1785675047656,
@@ -2360,9 +2389,9 @@
    "2026-08-02": -7.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRG",
-   "n": 14,
+   "tipo": "time",
+   "chave": "Jordânia",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
