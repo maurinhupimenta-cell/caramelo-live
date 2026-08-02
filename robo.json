@@ -2350,13 +2350,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -53.6,
-  "ciclos": 873,
-  "greens": 593,
+  "saldo": -52.6,
+  "ciclos": 874,
+  "greens": 594,
   "redsCiclo": 94,
   "aborts": 0,
   "descartes": 186,
   "historico": [
+   {
+    "quando": "2026-08-02T12:14:24.556Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · EUA x Croácia @2.02 (tiro 2) · gatilho: coluna :10"
+   },
    {
     "quando": "2026-08-02T11:32:28.359Z",
     "resultado": "GREEN",
@@ -4357,52 +4363,15 @@
    }
   ],
   "consumidas": {
-   "euro": 1785670348154
+   "euro": 1785670348154,
+   "copa": 1785672864263
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "13:07",
-     "jogo": "Gana x Austrália",
-     "odd": 2
-    },
-    {
-     "h": "13:10",
-     "jogo": "EUA x Croácia",
-     "odd": 2.02
-    },
-    {
-     "h": "13:13",
-     "jogo": "Portugal x Equador",
-     "odd": 1.86
-    }
-   ],
-   "gatilho": "coluna :10",
-   "alvo": {
-    "h": "13:10",
-    "jogo": "EUA x Croácia",
-    "odd": 2.02,
-    "unidades": 2,
-    "desde": 1785672744257
-   },
-   "iniciadoEm": 1785672204058,
-   "tiros": [
-    {
-     "h": "13:07",
-     "jogo": "Gana x Austrália",
-     "odd": 2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785670348154,
    "super": 1785668847964,
    "premier": 1785624685060,
-   "copa": 1785668548859
+   "copa": 1785672864263
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -4422,13 +4391,13 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -27.2
+   "2026-08-02": -26.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.05",
    "n": 10,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
