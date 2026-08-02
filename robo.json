@@ -2236,18 +2236,24 @@
    "tipo": "time",
    "chave": "Curação",
    "n": 8,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -32.1,
-  "ciclos": 849,
+  "ciclos": 850,
   "greens": 581,
   "redsCiclo": 89,
   "aborts": 0,
-  "descartes": 179,
+  "descartes": 180,
   "historico": [
+   {
+    "quando": "2026-08-02T04:49:26.065Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho odd 2.05) — liga REARMADA"
+   },
    {
     "quando": "2026-08-02T04:20:28.958Z",
     "resultado": "RED_CICLO",
@@ -4140,6 +4146,11 @@
    "n": 8,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1785646166065,
+    "gatilho": "odd 2.05"
+   }
+  }
  }
 }
