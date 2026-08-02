@@ -2481,8 +2481,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "20:46",
@@ -2502,13 +2502,21 @@
    ],
    "gatilho": "seq GRRGG",
    "alvo": {
-    "h": "20:46",
-    "jogo": "Avellaneda x Penarol",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1785701867060
+    "h": "20:49",
+    "jogo": "Itaquera x La Boca",
+    "odd": 2.4,
+    "unidades": 2,
+    "desde": 1785702267866
    },
-   "iniciadoEm": 1785701867060
+   "iniciadoEm": 1785701867060,
+   "tiros": [
+    {
+     "h": "20:46",
+     "jogo": "Avellaneda x Penarol",
+     "odd": 2.5,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785699838265,
@@ -2538,10 +2546,10 @@
    "2026-08-02": -22.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRGG",
-   "n": 9,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2",
+   "n": 11,
+   "start": 2
   },
   "_obs": {}
  },
@@ -4696,8 +4704,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "20:56",
@@ -4717,13 +4725,27 @@
    ],
    "gatilho": "seq RRGGR",
    "alvo": {
-    "h": "20:56",
-    "jogo": "Dinamarca x Ucrânia",
+    "h": "21:02",
+    "jogo": "França x República Tcheca",
     "odd": 2.07,
-    "unidades": 1,
-    "desde": 1785701369562
+    "unidades": 4,
+    "desde": 1785702268154
    },
-   "iniciadoEm": 1785701369562
+   "iniciadoEm": 1785701369562,
+   "tiros": [
+    {
+     "h": "20:56",
+     "jogo": "Dinamarca x Ucrânia",
+     "odd": 2.07,
+     "unidades": 1
+    },
+    {
+     "h": "20:59",
+     "jogo": "Eslovênia x Suíça",
+     "odd": 2.1,
+     "unidades": 2
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785696025763,
