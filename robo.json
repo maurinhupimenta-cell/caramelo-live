@@ -2403,13 +2403,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -49.9,
-  "ciclos": 877,
-  "greens": 597,
+  "saldo": -48.8,
+  "ciclos": 878,
+  "greens": 598,
   "redsCiclo": 94,
   "aborts": 0,
   "descartes": 186,
   "historico": [
+   {
+    "quando": "2026-08-02T13:58:06.658Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Bogota x Montevideo @2.075 (tiro 1) · gatilho: coluna :58"
+   },
    {
     "quando": "2026-08-02T13:31:04.055Z",
     "resultado": "GREEN",
@@ -4435,42 +4441,13 @@
   ],
   "consumidas": {
    "euro": 1785675905663,
-   "copa": 1785677463854
+   "copa": 1785677463854,
+   "super": 1785679086466
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:55",
-     "jogo": "Bogota x Montevideo",
-     "odd": 2.075
-    },
-    {
-     "h": "14:58",
-     "jogo": "Belo Horizonte x Itaquera",
-     "odd": 1.93
-    },
-    {
-     "h": "15:01",
-     "jogo": "Bogota x La Boca",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "coluna :58",
-   "alvo": {
-    "h": "14:55",
-    "jogo": "Bogota x Montevideo",
-    "odd": 2.075,
-    "unidades": 1,
-    "desde": 1785678545062
-   },
-   "iniciadoEm": 1785678545062
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785675905663,
-   "super": 1785673406056,
+   "super": 1785679086466,
    "premier": 1785624685060,
    "copa": 1785677463854
   },
@@ -4492,13 +4469,13 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -23.5
+   "2026-08-02": -22.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":58",
-   "n": 14,
-   "start": 2
+   "tipo": "odd",
+   "chave": "1.9",
+   "n": 15,
+   "start": 3
   },
   "_obs": {}
  }
