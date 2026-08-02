@@ -261,12 +261,24 @@
  },
  "o25": {
   "saldo": -181.4,
-  "ciclos": 868,
+  "ciclos": 870,
   "greens": 533,
   "redsCiclo": 145,
   "aborts": 0,
-  "descartes": 190,
+  "descartes": 192,
   "historico": [
+   {
+    "quando": "2026-08-02T20:16:34.859Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho seq GRRGG) — liga REARMADA"
+   },
+   {
+    "quando": "2026-08-02T20:16:32.564Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-08-02T20:00:12.454Z",
     "resultado": "GREEN_OBS",
@@ -2468,37 +2480,7 @@
    "premier": 1785698502357,
    "copa": 1785699838265
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:46",
-     "jogo": "Avellaneda x Penarol",
-     "odd": 2.5
-    },
-    {
-     "h": "20:49",
-     "jogo": "Itaquera x La Boca",
-     "odd": 2.4
-    },
-    {
-     "h": "20:52",
-     "jogo": "Lima x Buenos Aires",
-     "odd": 2
-    }
-   ],
-   "gatilho": "seq GRRGG",
-   "alvo": {
-    "h": "20:46",
-    "jogo": "Avellaneda x Penarol",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1785700836659
-   },
-   "iniciadoEm": 1785700836659
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785699838265,
    "premier": 1785698502357,
@@ -2532,7 +2514,12 @@
    "n": 9,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1785701794859,
+    "gatilho": "seq GRRGG"
+   }
+  }
  },
  "ambas": {
   "saldo": -49.8,
