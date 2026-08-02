@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -151.7,
-  "ciclos": 825,
+  "saldo": -158.7,
+  "ciclos": 826,
   "greens": 511,
-  "redsCiclo": 136,
+  "redsCiclo": 137,
   "aborts": 0,
   "descartes": 178,
   "historico": [
+   {
+    "quando": "2026-08-02T06:19:29.361Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: time La Plata"
+   },
    {
     "quando": "2026-08-02T06:11:28.658Z",
     "resultado": "GREEN",
@@ -2191,58 +2197,15 @@
   ],
   "consumidas": {
    "premier": 1785648226863,
-   "copa": 1785651088458
+   "copa": 1785651088458,
+   "super": 1785651569156
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "07:10",
-     "jogo": "Asuncion x Buenos Aires",
-     "odd": 2.1
-    },
-    {
-     "h": "07:13",
-     "jogo": "La Boca x La Plata",
-     "odd": 2.7
-    },
-    {
-     "h": "07:16",
-     "jogo": "Medellin x Penarol",
-     "odd": 2.55
-    }
-   ],
-   "gatilho": "time La Plata",
-   "alvo": {
-    "h": "07:16",
-    "jogo": "Medellin x Penarol",
-    "odd": 2.55,
-    "unidades": 4,
-    "desde": 1785651364954
-   },
-   "iniciadoEm": 1785651091061,
-   "tiros": [
-    {
-     "h": "07:10",
-     "jogo": "Asuncion x Buenos Aires",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "07:13",
-     "jogo": "La Boca x La Plata",
-     "odd": 2.7,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785651088458,
    "premier": 1785648226863,
    "euro": 1785624548964,
-   "super": 1785639629355
+   "super": 1785651569156
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -2263,24 +2226,30 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": 7
+   "2026-08-02": 0
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "La Plata",
    "n": 16,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -36.2,
-  "ciclos": 855,
-  "greens": 584,
+  "saldo": -35,
+  "ciclos": 856,
+  "greens": 585,
   "redsCiclo": 90,
   "aborts": 0,
   "descartes": 181,
   "historico": [
+   {
+    "quando": "2026-08-02T06:19:29.568Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Medellin x Penarol @2.15 (tiro 1) · gatilho: placar 0-0"
+   },
    {
     "quando": "2026-08-02T06:18:27.159Z",
     "resultado": "RED_CICLO",
@@ -4174,42 +4143,13 @@
   ],
   "consumidas": {
    "euro": 1785650186062,
-   "copa": 1785651506963
+   "copa": 1785651506963,
+   "super": 1785651569366
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "07:16",
-     "jogo": "Medellin x Penarol",
-     "odd": 2.15
-    },
-    {
-     "h": "07:19",
-     "jogo": "Belo Horizonte x Montevideo",
-     "odd": 1.93
-    },
-    {
-     "h": "07:22",
-     "jogo": "La Plata x Porto Alegre",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "placar 0-0",
-   "alvo": {
-    "h": "07:16",
-    "jogo": "Medellin x Penarol",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785651509365
-   },
-   "iniciadoEm": 1785651509365
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785650186062,
-   "super": 1785647309956,
+   "super": 1785651569366,
    "premier": 1785624685060,
    "copa": 1785651506963
   },
@@ -4231,13 +4171,13 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -9.8
+   "2026-08-02": -8.6
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "0-0",
-   "n": 11,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.1",
+   "n": 10,
+   "start": 2
   },
   "_obs": {}
  }
