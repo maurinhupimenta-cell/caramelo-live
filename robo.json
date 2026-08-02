@@ -2294,10 +2294,10 @@
    "2026-08-02": -9.6
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":31",
-   "n": 9,
-   "start": 1
+   "tipo": "time",
+   "chave": "Panamá",
+   "n": 10,
+   "start": 3
   },
   "_obs": {}
  },
@@ -4240,7 +4240,37 @@
    "super": 1785656068962,
    "euro": 1785658168065
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:31",
+     "jogo": "Suíça x Iraque",
+     "odd": 2.15
+    },
+    {
+     "h": "09:34",
+     "jogo": "EUA x Irã",
+     "odd": 2.15
+    },
+    {
+     "h": "09:37",
+     "jogo": "Áustria x Canadá",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "seq RGGR",
+   "alvo": {
+    "h": "09:31",
+    "jogo": "Suíça x Iraque",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785659372656
+   },
+   "iniciadoEm": 1785659372656
+  },
   "cooldown": {
    "euro": 1785658168065,
    "super": 1785656068962,
@@ -4268,8 +4298,8 @@
    "2026-08-02": -12.2
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":11",
+   "tipo": "seq",
+   "chave": "RGGR",
    "n": 9,
    "start": 1
   },
