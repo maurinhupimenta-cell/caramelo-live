@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -169.9,
-  "ciclos": 830,
-  "greens": 512,
+  "saldo": -168.3,
+  "ciclos": 831,
+  "greens": 513,
   "redsCiclo": 139,
   "aborts": 0,
   "descartes": 179,
   "historico": [
+   {
+    "quando": "2026-08-02T08:03:31.962Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "premier · Leeds x Southampton @2.62 (tiro 1) · gatilho: coluna :03"
+   },
    {
     "quando": "2026-08-02T07:38:29.163Z",
     "resultado": "RED_CICLO",
@@ -2221,42 +2227,13 @@
   ],
   "consumidas": {
    "copa": 1785655523967,
-   "super": 1785656309056
+   "super": 1785656309056,
+   "premier": 1785657811856
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "09:00",
-     "jogo": "Leeds x Southampton",
-     "odd": 2.62
-    },
-    {
-     "h": "09:03",
-     "jogo": "City x Brentford",
-     "odd": 2.15
-    },
-    {
-     "h": "09:06",
-     "jogo": "Burnley x Islington",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "coluna :03",
-   "alvo": {
-    "h": "09:00",
-    "jogo": "Leeds x Southampton",
-    "odd": 2.62,
-    "unidades": 1,
-    "desde": 1785657259761
-   },
-   "iniciadoEm": 1785657259761
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785655523967,
-   "premier": 1785653636059,
+   "premier": 1785657811856,
    "euro": 1785624548964,
    "super": 1785656309056
   },
@@ -2279,11 +2256,11 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -11.2
+   "2026-08-02": -9.6
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":03",
+   "chave": ":06",
    "n": 9,
    "start": 1
   },
@@ -4224,8 +4201,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "08:59",
@@ -4245,11 +4222,11 @@
    ],
    "gatilho": "coluna :59",
    "alvo": {
-    "h": "09:02",
-    "jogo": "Áustria x Turquia",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1785657808266
+    "h": "09:05",
+    "jogo": "Inglaterra x França",
+    "odd": 1.8,
+    "unidades": 4,
+    "desde": 1785658045862
    },
    "iniciadoEm": 1785657746760,
    "tiros": [
@@ -4258,6 +4235,12 @@
      "jogo": "República Tcheca x Eslovênia",
      "odd": 2.4,
      "unidades": 1
+    },
+    {
+     "h": "09:02",
+     "jogo": "Áustria x Turquia",
+     "odd": 2.1,
+     "unidades": 2
     }
    ]
   },
@@ -4291,7 +4274,7 @@
    "tipo": "coluna",
    "chave": ":11",
    "n": 9,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
