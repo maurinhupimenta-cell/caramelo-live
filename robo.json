@@ -4697,8 +4697,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "22:03",
@@ -4718,13 +4718,21 @@
    ],
    "gatilho": "coluna :06",
    "alvo": {
-    "h": "22:03",
-    "jogo": "Palace x Liverpool",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1785704123466
+    "h": "22:06",
+    "jogo": "Tottenham x City",
+    "odd": 1.98,
+    "unidades": 2,
+    "desde": 1785704786458
    },
-   "iniciadoEm": 1785704123466
+   "iniciadoEm": 1785704123466,
+   "tiros": [
+    {
+     "h": "22:03",
+     "jogo": "Palace x Liverpool",
+     "odd": 1.93,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785702270661,
@@ -4756,7 +4764,7 @@
    "tipo": "coluna",
    "chave": ":06",
    "n": 22,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
