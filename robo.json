@@ -244,12 +244,18 @@
  },
  "o25": {
   "saldo": -168.3,
-  "ciclos": 831,
+  "ciclos": 832,
   "greens": 513,
   "redsCiclo": 139,
   "aborts": 0,
-  "descartes": 179,
+  "descartes": 180,
   "historico": [
+   {
+    "quando": "2026-08-02T08:25:24.665Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho coluna :31) — liga REARMADA"
+   },
    {
     "quando": "2026-08-02T08:03:31.962Z",
     "resultado": "GREEN",
@@ -2229,7 +2235,37 @@
    "super": 1785656309056,
    "premier": 1785657811856
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:28",
+     "jogo": "Cabo Verde x Inglaterra",
+     "odd": 2.2
+    },
+    {
+     "h": "09:31",
+     "jogo": "Suíça x Iraque",
+     "odd": 2.5
+    },
+    {
+     "h": "09:34",
+     "jogo": "EUA x Irã",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "coluna :31",
+   "alvo": {
+    "h": "09:28",
+    "jogo": "Cabo Verde x Inglaterra",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785659126655
+   },
+   "iniciadoEm": 1785659126655
+  },
   "cooldown": {
    "copa": 1785655523967,
    "premier": 1785657811856,
@@ -2259,7 +2295,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":06",
+   "chave": ":31",
    "n": 9,
    "start": 1
   },
@@ -4201,7 +4237,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1785655704862,
    "super": 1785656068962,
    "euro": 1785658168065
   },
