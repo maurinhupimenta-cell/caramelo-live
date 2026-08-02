@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -178.4,
-  "ciclos": 839,
-  "greens": 516,
+  "saldo": -176.6,
+  "ciclos": 840,
+  "greens": 517,
   "redsCiclo": 141,
   "aborts": 0,
   "descartes": 182,
   "historico": [
+   {
+    "quando": "2026-08-02T10:04:30.055Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "copa · Suíça x Argentina @2.2 (tiro 3) · gatilho: time México"
+   },
    {
     "quando": "2026-08-02T09:46:27.961Z",
     "resultado": "GREEN",
@@ -2276,55 +2282,12 @@
   "consumidas": {
    "premier": 1785662252559,
    "euro": 1785662726858,
-   "super": 1785663987764
+   "super": 1785663987764,
+   "copa": 1785665069862
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "10:52",
-     "jogo": "Inglaterra x RD Congo",
-     "odd": 2.15
-    },
-    {
-     "h": "10:55",
-     "jogo": "México x Tunísia",
-     "odd": 2.5
-    },
-    {
-     "h": "10:58",
-     "jogo": "Suíça x Argentina",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time México",
-   "alvo": {
-    "h": "10:58",
-    "jogo": "Suíça x Argentina",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1785664766359
-   },
-   "iniciadoEm": 1785663990257,
-   "tiros": [
-    {
-     "h": "10:52",
-     "jogo": "Inglaterra x RD Congo",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "10:55",
-     "jogo": "México x Tunísia",
-     "odd": 2.5,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785659904660,
+   "copa": 1785665069862,
    "premier": 1785662252559,
    "euro": 1785662726858,
    "super": 1785663987764
@@ -2348,7 +2311,7 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -19.7
+   "2026-08-02": -17.9
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
