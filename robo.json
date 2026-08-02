@@ -2405,7 +2405,7 @@
    "tipo": "odd",
    "chave": "2",
    "n": 10,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
@@ -4447,11 +4447,40 @@
    }
   ],
   "consumidas": {
-   "euro": 1785675905663,
    "copa": 1785677463854,
    "super": 1785679086466
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:05",
+     "jogo": "Bélgica x Portugal",
+     "odd": 1.9
+    },
+    {
+     "h": "15:08",
+     "jogo": "Romênia x Sérvia",
+     "odd": 2
+    },
+    {
+     "h": "15:11",
+     "jogo": "Itália x Suíça",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "odd 1.9",
+   "alvo": {
+    "h": "15:05",
+    "jogo": "Bélgica x Portugal",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1785679505765
+   },
+   "iniciadoEm": 1785679505765
+  },
   "cooldown": {
    "euro": 1785675905663,
    "super": 1785679086466,
@@ -4481,8 +4510,8 @@
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "1.9",
-   "n": 15,
-   "start": 3
+   "n": 10,
+   "start": 1
   },
   "_obs": {}
  }
