@@ -4348,7 +4348,37 @@
    "copa": 1785668548859,
    "super": 1785668847964
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:29",
+     "jogo": "Ucrânia x Países Baixos",
+     "odd": 1.87
+    },
+    {
+     "h": "12:32",
+     "jogo": "Romênia x Eslováquia",
+     "odd": 1.93
+    },
+    {
+     "h": "12:35",
+     "jogo": "Itália x Polônia",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "seq RRGG",
+   "alvo": {
+    "h": "12:29",
+    "jogo": "Ucrânia x Países Baixos",
+    "odd": 1.87,
+    "unidades": 1,
+    "desde": 1785670284968
+   },
+   "iniciadoEm": 1785670284968
+  },
   "cooldown": {
    "euro": 1785666567264,
    "super": 1785668847964,
@@ -4376,16 +4406,11 @@
    "2026-08-02": -28.1
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.9",
-   "n": 12,
-   "start": 3
+   "tipo": "seq",
+   "chave": "RRGG",
+   "n": 14,
+   "start": 1
   },
-  "_obs": {
-   "euro": {
-    "desde": 1785670229464,
-    "gatilho": "seq RRGG"
-   }
-  }
+  "_obs": {}
  }
 }
