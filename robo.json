@@ -2393,13 +2393,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -47.9,
-  "ciclos": 879,
-  "greens": 599,
+  "saldo": -46.7,
+  "ciclos": 880,
+  "greens": 600,
   "redsCiclo": 94,
   "aborts": 0,
   "descartes": 186,
   "historico": [
+   {
+    "quando": "2026-08-02T14:58:01.264Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Turquia x Irã @2.15 (tiro 1) · gatilho: coluna :58"
+   },
    {
     "quando": "2026-08-02T14:08:03.362Z",
     "resultado": "GREEN",
@@ -4437,44 +4443,15 @@
   ],
   "consumidas": {
    "super": 1785679086466,
-   "euro": 1785679683254
+   "euro": 1785679683254,
+   "copa": 1785682680857
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:55",
-     "jogo": "Turquia x Irã",
-     "odd": 2.15
-    },
-    {
-     "h": "15:58",
-     "jogo": "Espanha x Gana",
-     "odd": 2.05
-    },
-    {
-     "h": "16:01",
-     "jogo": "Alemanha x Japão",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "coluna :58",
-   "alvo": {
-    "h": "15:55",
-    "jogo": "Turquia x Irã",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785681980955
-   },
-   "iniciadoEm": 1785681980955
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785679683254,
    "super": 1785679086466,
    "premier": 1785624685060,
-   "copa": 1785677463854
+   "copa": 1785682680857
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -4494,13 +4471,13 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -21.5
+   "2026-08-02": -20.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":58",
-   "n": 15,
-   "start": 3
+   "tipo": "odd",
+   "chave": "1.98",
+   "n": 8,
+   "start": 1
   },
   "_obs": {}
  }
