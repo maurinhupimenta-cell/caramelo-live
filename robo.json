@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -176.2,
-  "ciclos": 861,
+  "saldo": -183.2,
+  "ciclos": 862,
   "greens": 532,
-  "redsCiclo": 144,
+  "redsCiclo": 145,
   "aborts": 0,
   "descartes": 185,
   "historico": [
+   {
+    "quando": "2026-08-02T19:21:42.463Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: odd 2.62"
+   },
    {
     "quando": "2026-08-02T19:10:26.459Z",
     "resultado": "GREEN",
@@ -2424,56 +2430,13 @@
   ],
   "consumidas": {
    "copa": 1785695128363,
-   "euro": 1785697826355
+   "euro": 1785697826355,
+   "premier": 1785698502357
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "20:12",
-     "jogo": "Islington x Newcastle",
-     "odd": 2.07
-    },
-    {
-     "h": "20:15",
-     "jogo": "Leeds x Aston",
-     "odd": 2.62
-    },
-    {
-     "h": "20:18",
-     "jogo": "Watford x Norwich",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "odd 2.62",
-   "alvo": {
-    "h": "20:18",
-    "jogo": "Watford x Norwich",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1785698310365
-   },
-   "iniciadoEm": 1785697827959,
-   "tiros": [
-    {
-     "h": "20:12",
-     "jogo": "Islington x Newcastle",
-     "odd": 2.07,
-     "unidades": 1
-    },
-    {
-     "h": "20:15",
-     "jogo": "Leeds x Aston",
-     "odd": 2.62,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785695128363,
-   "premier": 1785690520059,
+   "premier": 1785698502357,
    "euro": 1785697826355,
    "super": 1785689963662
   },
@@ -2496,7 +2459,7 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -17.5
+   "2026-08-02": -24.5
   },
   "_gatilhoAtual": {
    "tipo": "odd",
