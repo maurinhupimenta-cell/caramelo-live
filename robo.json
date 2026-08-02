@@ -2223,7 +2223,37 @@
    "copa": 1785655523967,
    "super": 1785656309056
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:00",
+     "jogo": "Leeds x Southampton",
+     "odd": 2.62
+    },
+    {
+     "h": "09:03",
+     "jogo": "City x Brentford",
+     "odd": 2.15
+    },
+    {
+     "h": "09:06",
+     "jogo": "Burnley x Islington",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "coluna :03",
+   "alvo": {
+    "h": "09:00",
+    "jogo": "Leeds x Southampton",
+    "odd": 2.62,
+    "unidades": 1,
+    "desde": 1785657259761
+   },
+   "iniciadoEm": 1785657259761
+  },
   "cooldown": {
    "copa": 1785655523967,
    "premier": 1785653636059,
@@ -2253,9 +2283,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":46",
-   "n": 8,
-   "start": 3
+   "chave": ":03",
+   "n": 9,
+   "start": 1
   },
   "_obs": {}
  },
@@ -4189,7 +4219,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1785654144165,
    "copa": 1785655704862,
    "super": 1785656068962
   },
