@@ -243,13 +243,25 @@
   }
  },
  "o25": {
-  "saldo": -175.3,
-  "ciclos": 833,
-  "greens": 513,
+  "saldo": -173.8,
+  "ciclos": 835,
+  "greens": 514,
   "redsCiclo": 140,
   "aborts": 0,
-  "descartes": 180,
+  "descartes": 181,
   "historico": [
+   {
+    "quando": "2026-08-02T08:40:28.861Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "super · Belo Horizonte x Porto Alegre @2.45 (tiro 1) · gatilho: seq GRGG"
+   },
+   {
+    "quando": "2026-08-02T08:38:32.658Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho seq GRGG) — liga REARMADA"
+   },
    {
     "quando": "2026-08-02T08:38:24.856Z",
     "resultado": "RED_CICLO",
@@ -2239,14 +2251,15 @@
   ],
   "consumidas": {
    "premier": 1785657811856,
-   "copa": 1785659904660
+   "copa": 1785659904660,
+   "super": 1785660028665
   },
   "ciclo": null,
   "cooldown": {
    "copa": 1785659904660,
    "premier": 1785657811856,
    "euro": 1785624548964,
-   "super": 1785656309056
+   "super": 1785660028665
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -2267,24 +2280,30 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -16.6
+   "2026-08-02": -15.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Panamá",
-   "n": 10,
+   "tipo": "seq",
+   "chave": "GRGG",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -37.3,
-  "ciclos": 862,
-  "greens": 589,
+  "saldo": -36.1,
+  "ciclos": 863,
+  "greens": 590,
   "redsCiclo": 91,
   "aborts": 0,
   "descartes": 182,
   "historico": [
+   {
+    "quando": "2026-08-02T08:40:29.154Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Belo Horizonte x Porto Alegre @2.15 (tiro 1) · gatilho: time Santos"
+   },
    {
     "quando": "2026-08-02T08:38:25.154Z",
     "resultado": "GREEN",
@@ -4220,42 +4239,13 @@
   ],
   "consumidas": {
    "euro": 1785658168065,
-   "copa": 1785659904957
+   "copa": 1785659904957,
+   "super": 1785660028957
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "09:37",
-     "jogo": "Belo Horizonte x Porto Alegre",
-     "odd": 2.15
-    },
-    {
-     "h": "09:40",
-     "jogo": "Santos x Avellaneda",
-     "odd": 2.05
-    },
-    {
-     "h": "09:43",
-     "jogo": "Lima x Asuncion",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "time Santos",
-   "alvo": {
-    "h": "09:37",
-    "jogo": "Belo Horizonte x Porto Alegre",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785659907165
-   },
-   "iniciadoEm": 1785659907165
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785658168065,
-   "super": 1785656068962,
+   "super": 1785660028957,
    "premier": 1785624685060,
    "copa": 1785659904957
   },
@@ -4277,7 +4267,7 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -10.9
+   "2026-08-02": -9.7
   },
   "_gatilhoAtual": {
    "tipo": "time",
