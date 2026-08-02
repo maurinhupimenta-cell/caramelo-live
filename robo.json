@@ -258,13 +258,19 @@
   }
  },
  "o25": {
-  "saldo": -180.8,
-  "ciclos": 858,
-  "greens": 529,
+  "saldo": -179.6,
+  "ciclos": 859,
+  "greens": 530,
   "redsCiclo": 144,
   "aborts": 0,
   "descartes": 185,
   "historico": [
+   {
+    "quando": "2026-08-02T17:13:29.754Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · México x Bósnia e Herzegovina @2.15 (tiro 1) · gatilho: time Brasil"
+   },
    {
     "quando": "2026-08-02T17:08:40.164Z",
     "resultado": "GREEN",
@@ -2404,41 +2410,12 @@
   ],
   "consumidas": {
    "super": 1785689963662,
-   "premier": 1785690520059
+   "premier": 1785690520059,
+   "copa": 1785690809555
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:10",
-     "jogo": "México x Bósnia e Herzegovina",
-     "odd": 2.15
-    },
-    {
-     "h": "18:13",
-     "jogo": "Espanha x Brasil",
-     "odd": 2.15
-    },
-    {
-     "h": "18:16",
-     "jogo": "Equador x Inglaterra",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "time Brasil",
-   "alvo": {
-    "h": "18:10",
-    "jogo": "México x Bósnia e Herzegovina",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785690533764
-   },
-   "iniciadoEm": 1785690533764
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785686367766,
+   "copa": 1785690809555,
    "premier": 1785690520059,
    "euro": 1785668551057,
    "super": 1785689963662
@@ -2462,13 +2439,13 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -22.1
+   "2026-08-02": -20.9
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Brasil",
-   "n": 15,
-   "start": 1
+   "chave": "Bósnia e Herzegovina",
+   "n": 13,
+   "start": 2
   },
   "_obs": {}
  },
@@ -4558,12 +4535,41 @@
    }
   ],
   "consumidas": {
-   "euro": 1785687147258,
    "super": 1785688436468,
    "premier": 1785689450856,
    "copa": 1785690744658
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:17",
+     "jogo": "Portugal x Croácia",
+     "odd": 1.95
+    },
+    {
+     "h": "18:20",
+     "jogo": "Eslováquia x França",
+     "odd": 1.9
+    },
+    {
+     "h": "18:23",
+     "jogo": "República Tcheca x Albânia",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "odd 1.9",
+   "alvo": {
+    "h": "18:17",
+    "jogo": "Portugal x Croácia",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1785690748259
+   },
+   "iniciadoEm": 1785690748259
+  },
   "cooldown": {
    "euro": 1785687147258,
    "super": 1785688436468,
@@ -4591,9 +4597,9 @@
    "2026-08-02": -14.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Bósnia e Herzegovina",
-   "n": 13,
+   "tipo": "odd",
+   "chave": "1.9",
+   "n": 15,
    "start": 3
   },
   "_obs": {}
