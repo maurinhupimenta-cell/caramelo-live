@@ -2238,7 +2238,6 @@
    }
   ],
   "consumidas": {
-   "super": 1785656309056,
    "premier": 1785657811856,
    "copa": 1785659904660
   },
@@ -4223,7 +4222,37 @@
    "euro": 1785658168065,
    "copa": 1785659904957
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:37",
+     "jogo": "Belo Horizonte x Porto Alegre",
+     "odd": 2.15
+    },
+    {
+     "h": "09:40",
+     "jogo": "Santos x Avellaneda",
+     "odd": 2.05
+    },
+    {
+     "h": "09:43",
+     "jogo": "Lima x Asuncion",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "time Santos",
+   "alvo": {
+    "h": "09:37",
+    "jogo": "Belo Horizonte x Porto Alegre",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785659907165
+   },
+   "iniciadoEm": 1785659907165
+  },
   "cooldown": {
    "euro": 1785658168065,
    "super": 1785656068962,
