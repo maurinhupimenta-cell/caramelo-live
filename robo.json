@@ -2260,7 +2260,37 @@
    "super": 1785660028665,
    "premier": 1785662252559
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:17",
+     "jogo": "Alemanha x Sérvia",
+     "odd": 2.35
+    },
+    {
+     "h": "10:20",
+     "jogo": "Espanha x França",
+     "odd": 1.98
+    },
+    {
+     "h": "10:23",
+     "jogo": "Alemanha x Albânia",
+     "odd": 2.54
+    }
+   ],
+   "gatilho": "seq GGGR",
+   "alvo": {
+    "h": "10:17",
+    "jogo": "Alemanha x Sérvia",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1785662305164
+   },
+   "iniciadoEm": 1785662305164
+  },
   "cooldown": {
    "copa": 1785659904660,
    "premier": 1785662252559,
@@ -2289,9 +2319,9 @@
    "2026-08-02": -22.1
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.07",
-   "n": 13,
+   "tipo": "seq",
+   "chave": "GGGR",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
