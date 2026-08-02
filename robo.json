@@ -2537,12 +2537,24 @@
  },
  "ambas": {
   "saldo": -49.8,
-  "ciclos": 894,
+  "ciclos": 896,
   "greens": 611,
   "redsCiclo": 96,
   "aborts": 0,
-  "descartes": 187,
+  "descartes": 189,
   "historico": [
+   {
+    "quando": "2026-08-02T20:09:18.463Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho seq RRGGR) — liga REARMADA"
+   },
+   {
+    "quando": "2026-08-02T20:09:16.656Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-08-02T19:43:56.455Z",
     "resultado": "GREEN",
@@ -4672,37 +4684,7 @@
    "premier": 1785699343265,
    "copa": 1785699836254
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:56",
-     "jogo": "Dinamarca x Ucrânia",
-     "odd": 2.07
-    },
-    {
-     "h": "20:59",
-     "jogo": "Eslovênia x Suíça",
-     "odd": 2.1
-    },
-    {
-     "h": "21:02",
-     "jogo": "França x República Tcheca",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "seq RRGGR",
-   "alvo": {
-    "h": "20:56",
-    "jogo": "Dinamarca x Ucrânia",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1785700409259
-   },
-   "iniciadoEm": 1785700409259
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785696025763,
    "super": 1785693324361,
@@ -4735,6 +4717,11 @@
    "n": 12,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1785701358463,
+    "gatilho": "seq RRGGR"
+   }
+  }
  }
 }
