@@ -258,13 +258,19 @@
   }
  },
  "o25": {
-  "saldo": -175.4,
-  "ciclos": 856,
+  "saldo": -182.4,
+  "ciclos": 857,
   "greens": 528,
-  "redsCiclo": 143,
+  "redsCiclo": 144,
   "aborts": 0,
   "descartes": 185,
   "historico": [
+   {
+    "quando": "2026-08-02T16:59:23.859Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: seq GGRGG"
+   },
    {
     "quando": "2026-08-02T16:56:45.967Z",
     "resultado": "GREEN_OBS",
@@ -2391,58 +2397,45 @@
    }
   ],
   "consumidas": {
-   "copa": 1785686367766
+   "copa": 1785686367766,
+   "super": 1785689963662
   },
   "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "17:49",
-     "jogo": "Montevideo x La Plata",
-     "odd": 2.4
+     "h": "18:00",
+     "jogo": "Palace x Leicester",
+     "odd": 2.25
     },
     {
-     "h": "17:52",
-     "jogo": "Asuncion x Itaquera",
+     "h": "18:03",
+     "jogo": "Leeds x City",
      "odd": 2.3
     },
     {
-     "h": "17:55",
-     "jogo": "Sao Paulo x Porto Alegre",
-     "odd": 2.4
+     "h": "18:06",
+     "jogo": "Wolverhampton x Watford",
+     "odd": 2.15
     }
    ],
-   "gatilho": "seq GGRGG",
+   "gatilho": "seq RRGRG",
    "alvo": {
-    "h": "17:55",
-    "jogo": "Sao Paulo x Porto Alegre",
-    "odd": 2.4,
-    "unidades": 4,
-    "desde": 1785689785355
+    "h": "18:00",
+    "jogo": "Palace x Leicester",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785689966359
    },
-   "iniciadoEm": 1785689342159,
-   "tiros": [
-    {
-     "h": "17:49",
-     "jogo": "Montevideo x La Plata",
-     "odd": 2.4,
-     "unidades": 1
-    },
-    {
-     "h": "17:52",
-     "jogo": "Asuncion x Itaquera",
-     "odd": 2.3,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1785689966359
   },
   "cooldown": {
    "copa": 1785686367766,
    "premier": 1785684593857,
    "euro": 1785668551057,
-   "super": 1785679804456
+   "super": 1785689963662
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -2463,20 +2456,15 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -16.7
+   "2026-08-02": -23.7
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GGRGG",
-   "n": 9,
+   "chave": "RRGRG",
+   "n": 10,
    "start": 1
   },
-  "_obs": {
-   "premier": {
-    "desde": 1785689805967,
-    "gatilho": "seq RRGRG"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -41.6,
