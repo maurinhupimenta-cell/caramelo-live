@@ -229,13 +229,19 @@
      "odd": 5
     },
     {
-     "h": "17:16",
-     "jogo": "Turquia x Panamá",
-     "odd": 5
+     "h": "17:19",
+     "jogo": "Irã x Suíça",
+     "odd": 5.5
     }
    ],
    "gatilho": "odd 5",
-   "alvo": null,
+   "alvo": {
+    "h": "17:19",
+    "jogo": "Irã x Suíça",
+    "odd": 5.5,
+    "unidades": 4,
+    "desde": 1785688287462
+   },
    "iniciadoEm": 1785686669565,
    "tiros": [
     {
@@ -250,7 +256,8 @@
      "odd": 5,
      "unidades": 2
     }
-   ]
+   ],
+   "semAlvoDesde": null
   },
   "cooldown": {
    "copa": 1785038273206,
@@ -2454,13 +2461,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -43.6,
-  "ciclos": 883,
-  "greens": 603,
+  "saldo": -42.6,
+  "ciclos": 884,
+  "greens": 604,
   "redsCiclo": 94,
   "aborts": 0,
   "descartes": 186,
   "historico": [
+   {
+    "quando": "2026-08-02T16:33:56.755Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Medellin x Itaquera @2.05 (tiro 1) · gatilho: odd 1.9"
+   },
    {
     "quando": "2026-08-02T16:12:27.454Z",
     "resultado": "GREEN",
@@ -4522,42 +4535,13 @@
   ],
   "consumidas": {
    "copa": 1785686909765,
-   "euro": 1785687147258
+   "euro": 1785687147258,
+   "super": 1785688436468
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:31",
-     "jogo": "Medellin x Itaquera",
-     "odd": 2.05
-    },
-    {
-     "h": "17:34",
-     "jogo": "Montevideo x Rio de Janeiro",
-     "odd": 1.9
-    },
-    {
-     "h": "17:37",
-     "jogo": "Buenos Aires x Bogota",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "odd 1.9",
-   "alvo": {
-    "h": "17:31",
-    "jogo": "Medellin x Itaquera",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785687906956
-   },
-   "iniciadoEm": 1785687906956
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785687147258,
-   "super": 1785683584760,
+   "super": 1785688436468,
    "premier": 1785624685060,
    "copa": 1785686909765
   },
@@ -4579,7 +4563,7 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -17.2
+   "2026-08-02": -16.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
