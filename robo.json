@@ -2301,7 +2301,37 @@
    "premier": 1785666446257,
    "euro": 1785668551057
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:13",
+     "jogo": "Países Baixos x Nova Zelândia",
+     "odd": 2.25
+    },
+    {
+     "h": "12:16",
+     "jogo": "Japão x Brasil",
+     "odd": 2.35
+    },
+    {
+     "h": "12:19",
+     "jogo": "Países Baixos x Uzbequistão",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "time Brasil",
+   "alvo": {
+    "h": "12:13",
+    "jogo": "Países Baixos x Nova Zelândia",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785668691261
+   },
+   "iniciadoEm": 1785668691261
+  },
   "cooldown": {
    "copa": 1785665069862,
    "premier": 1785666446257,
@@ -2330,21 +2360,27 @@
    "2026-08-02": -15.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGR",
+   "tipo": "time",
+   "chave": "Brasil",
    "n": 9,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -56.1,
-  "ciclos": 870,
-  "greens": 591,
+  "saldo": -54.5,
+  "ciclos": 871,
+  "greens": 592,
   "redsCiclo": 94,
   "aborts": 0,
   "descartes": 185,
   "historico": [
+   {
+    "quando": "2026-08-02T11:07:28.158Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "super · Porto Alegre x Medellin @2.3 (tiro 2) · gatilho: time Lima"
+   },
    {
     "quando": "2026-08-02T11:02:28.963Z",
     "resultado": "GREEN",
@@ -4328,50 +4364,13 @@
   ],
   "consumidas": {
    "euro": 1785666567264,
-   "copa": 1785668548859
+   "copa": 1785668548859,
+   "super": 1785668847964
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "12:01",
-     "jogo": "Lima x La Plata",
-     "odd": 2.05
-    },
-    {
-     "h": "12:04",
-     "jogo": "Porto Alegre x Medellin",
-     "odd": 2.3
-    },
-    {
-     "h": "12:07",
-     "jogo": "Belo Horizonte x Agua Branca",
-     "odd": 1.83
-    }
-   ],
-   "gatilho": "time Lima",
-   "alvo": {
-    "h": "12:04",
-    "jogo": "Porto Alegre x Medellin",
-    "odd": 2.3,
-    "unidades": 2,
-    "desde": 1785668627754
-   },
-   "iniciadoEm": 1785668551257,
-   "tiros": [
-    {
-     "h": "12:01",
-     "jogo": "Lima x La Plata",
-     "odd": 2.05,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785666567264,
-   "super": 1785660028957,
+   "super": 1785668847964,
    "premier": 1785624685060,
    "copa": 1785668548859
   },
@@ -4393,12 +4392,12 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -29.7
+   "2026-08-02": -28.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Santos",
-   "n": 25,
+   "tipo": "odd",
+   "chave": "1.9",
+   "n": 12,
    "start": 3
   },
   "_obs": {}
