@@ -2454,13 +2454,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -42.6,
-  "ciclos": 884,
-  "greens": 604,
+  "saldo": -41.6,
+  "ciclos": 885,
+  "greens": 605,
   "redsCiclo": 94,
   "aborts": 0,
   "descartes": 186,
   "historico": [
+   {
+    "quando": "2026-08-02T16:50:50.961Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Southampton x Liverpool @2 (tiro 2) · gatilho: coluna :48"
+   },
    {
     "quando": "2026-08-02T16:33:56.755Z",
     "resultado": "GREEN",
@@ -4529,51 +4535,14 @@
   "consumidas": {
    "copa": 1785686909765,
    "euro": 1785687147258,
-   "super": 1785688436468
+   "super": 1785688436468,
+   "premier": 1785689450856
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:45",
-     "jogo": "Aston x Palace",
-     "odd": 2
-    },
-    {
-     "h": "17:48",
-     "jogo": "Southampton x Liverpool",
-     "odd": 2
-    },
-    {
-     "h": "17:51",
-     "jogo": "Watford x Palace",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "coluna :48",
-   "alvo": {
-    "h": "17:48",
-    "jogo": "Southampton x Liverpool",
-    "odd": 2,
-    "unidades": 2,
-    "desde": 1785689270560
-   },
-   "iniciadoEm": 1785688735758,
-   "tiros": [
-    {
-     "h": "17:45",
-     "jogo": "Aston x Palace",
-     "odd": 2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785687147258,
    "super": 1785688436468,
-   "premier": 1785624685060,
+   "premier": 1785689450856,
    "copa": 1785686909765
   },
   "dias": {
@@ -4594,7 +4563,7 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -16.2
+   "2026-08-02": -15.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
