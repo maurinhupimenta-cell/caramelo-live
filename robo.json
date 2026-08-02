@@ -2336,7 +2336,37 @@
   "consumidas": {
    "copa": 1785677463563
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:57",
+     "jogo": "Islington x Leeds",
+     "odd": 2.5
+    },
+    {
+     "h": "15:00",
+     "jogo": "Palace x Brighton",
+     "odd": 2.05
+    },
+    {
+     "h": "15:03",
+     "jogo": "Chelsea x Newcastle",
+     "odd": 2.075
+    }
+   ],
+   "gatilho": "seq GGGRG",
+   "alvo": {
+    "h": "14:57",
+    "jogo": "Islington x Leeds",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1785678828466
+   },
+   "iniciadoEm": 1785678828466
+  },
   "cooldown": {
    "copa": 1785677463563,
    "premier": 1785675047656,
@@ -2365,9 +2395,9 @@
    "2026-08-02": -6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Jordânia",
-   "n": 11,
+   "tipo": "seq",
+   "chave": "GGGRG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
@@ -4468,7 +4498,7 @@
    "tipo": "coluna",
    "chave": ":58",
    "n": 14,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
