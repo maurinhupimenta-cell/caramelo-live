@@ -2184,13 +2184,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -14,
-  "ciclos": 842,
-  "greens": 578,
+  "saldo": -13.1,
+  "ciclos": 843,
+  "greens": 579,
   "redsCiclo": 86,
   "aborts": 0,
   "descartes": 178,
   "historico": [
+   {
+    "quando": "2026-08-02T00:39:25.454Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Eslováquia x Espanha @1.9 (tiro 1) · gatilho: placar 1-0 / 0-1"
+   },
    {
     "quando": "2026-08-01T23:04:25.760Z",
     "resultado": "GREEN",
@@ -4004,40 +4010,12 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "01:35",
-     "jogo": "Eslováquia x Espanha",
-     "odd": 1.9
-    },
-    {
-     "h": "01:38",
-     "jogo": "Itália x Hungria",
-     "odd": 2.075
-    },
-    {
-     "h": "01:41",
-     "jogo": "Eslováquia x Polônia",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "placar 1-0 / 0-1",
-   "alvo": {
-    "h": "01:35",
-    "jogo": "Eslováquia x Espanha",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1785630925265
-   },
-   "iniciadoEm": 1785630925265
+  "consumidas": {
+   "euro": 1785631165260
   },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785623069357,
+   "euro": 1785631165260,
    "super": 1785622284761,
    "premier": 1785624685060,
    "copa": 1785625465561
@@ -4059,7 +4037,7 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": -7
+   "2026-08-01": -6.1
   },
   "_gatilhoAtual": {
    "tipo": "placar",
