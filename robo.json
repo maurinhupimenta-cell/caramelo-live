@@ -1,12 +1,18 @@
 {
  "o35": {
   "saldo": -179.3,
-  "ciclos": 189,
+  "ciclos": 190,
   "greens": 62,
   "redsCiclo": 81,
   "aborts": 0,
-  "descartes": 46,
+  "descartes": 47,
   "historico": [
+   {
+    "quando": "2026-08-02T16:04:27.364Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho odd 5) — liga REARMADA"
+   },
    {
     "quando": "2026-08-01T08:14:46.854Z",
     "resultado": "RED_CICLO",
@@ -227,7 +233,8 @@
    "2026-07-28": 10,
    "2026-07-29": -7,
    "2026-07-30": -14,
-   "2026-08-01": -7
+   "2026-08-01": -7,
+   "2026-08-02": 0
   },
   "_gatilhoAtual": {
    "tipo": "odd",
@@ -239,6 +246,10 @@
    "euro": {
     "desde": 1785463711484,
     "gatilho": "time Eslovênia"
+   },
+   "copa": {
+    "desde": 1785686667364,
+    "gatilho": "odd 5"
    }
   }
  },
@@ -4528,7 +4539,7 @@
    "tipo": "time",
    "chave": "Bósnia e Herzegovina",
    "n": 11,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
