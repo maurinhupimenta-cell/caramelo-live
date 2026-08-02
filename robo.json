@@ -2405,18 +2405,24 @@
    "tipo": "odd",
    "chave": "2",
    "n": 10,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -48.8,
-  "ciclos": 878,
-  "greens": 598,
+  "saldo": -47.9,
+  "ciclos": 879,
+  "greens": 599,
   "redsCiclo": 94,
   "aborts": 0,
   "descartes": 186,
   "historico": [
+   {
+    "quando": "2026-08-02T14:08:03.362Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Bélgica x Portugal @1.9 (tiro 1) · gatilho: odd 1.9"
+   },
    {
     "quando": "2026-08-02T13:58:06.658Z",
     "resultado": "GREEN",
@@ -4448,41 +4454,12 @@
   ],
   "consumidas": {
    "copa": 1785677463854,
-   "super": 1785679086466
+   "super": 1785679086466,
+   "euro": 1785679683254
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:05",
-     "jogo": "Bélgica x Portugal",
-     "odd": 1.9
-    },
-    {
-     "h": "15:08",
-     "jogo": "Romênia x Sérvia",
-     "odd": 2
-    },
-    {
-     "h": "15:11",
-     "jogo": "Itália x Suíça",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "odd 1.9",
-   "alvo": {
-    "h": "15:05",
-    "jogo": "Bélgica x Portugal",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1785679505765
-   },
-   "iniciadoEm": 1785679505765
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785675905663,
+   "euro": 1785679683254,
    "super": 1785679086466,
    "premier": 1785624685060,
    "copa": 1785677463854
@@ -4505,13 +4482,13 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -22.4
+   "2026-08-02": -21.5
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "1.9",
    "n": 10,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  }
