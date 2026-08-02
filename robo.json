@@ -2419,7 +2419,37 @@
   "consumidas": {
    "copa": 1785695128363
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:02",
+     "jogo": "Países Baixos x Escócia",
+     "odd": 2.07
+    },
+    {
+     "h": "20:05",
+     "jogo": "Croácia x Polônia",
+     "odd": 2.4
+    },
+    {
+     "h": "20:08",
+     "jogo": "Ucrânia x Romênia",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "seq GRRRG",
+   "alvo": {
+    "h": "20:02",
+    "jogo": "Países Baixos x Escócia",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1785697164755
+   },
+   "iniciadoEm": 1785697164755
+  },
   "cooldown": {
    "copa": 1785695128363,
    "premier": 1785690520059,
@@ -2448,9 +2478,9 @@
    "2026-08-02": -19.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Jordânia",
-   "n": 13,
+   "tipo": "seq",
+   "chave": "GRRRG",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
