@@ -2192,13 +2192,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -13.1,
-  "ciclos": 843,
+  "saldo": -20.1,
+  "ciclos": 844,
   "greens": 579,
-  "redsCiclo": 86,
+  "redsCiclo": 87,
   "aborts": 0,
   "descartes": 178,
   "historico": [
+   {
+    "quando": "2026-08-02T02:09:25.456Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: placar 0-0"
+   },
    {
     "quando": "2026-08-02T00:39:25.454Z",
     "resultado": "GREEN",
@@ -4018,57 +4024,15 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "02:55",
-     "jogo": "Marrocos x Equador",
-     "odd": 1.93
-    },
-    {
-     "h": "02:58",
-     "jogo": "Argélia x Costa do Marfim",
-     "odd": 1.93
-    },
-    {
-     "h": "03:01",
-     "jogo": "Tunísia x Países Baixos",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "placar 0-0",
-   "alvo": {
-    "h": "03:01",
-    "jogo": "Tunísia x Países Baixos",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1785636088668
-   },
-   "iniciadoEm": 1785635544658,
-   "tiros": [
-    {
-     "h": "02:55",
-     "jogo": "Marrocos x Equador",
-     "odd": 1.93,
-     "unidades": 1
-    },
-    {
-     "h": "02:58",
-     "jogo": "Argélia x Costa do Marfim",
-     "odd": 1.93,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "copa": 1785636565262
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785631165260,
    "super": 1785622284761,
    "premier": 1785624685060,
-   "copa": 1785625465561
+   "copa": 1785636565262
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -4087,13 +4051,13 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": -6.1
+   "2026-08-01": -13.1
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "0-0",
-   "n": 9,
-   "start": 1
+   "tipo": "time",
+   "chave": "Itália",
+   "n": 8,
+   "start": 2
   },
   "_obs": {}
  }
