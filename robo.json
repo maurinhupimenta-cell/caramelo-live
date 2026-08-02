@@ -2237,8 +2237,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "09:28",
@@ -2258,13 +2258,21 @@
    ],
    "gatilho": "coluna :31",
    "alvo": {
-    "h": "09:28",
-    "jogo": "Cabo Verde x Inglaterra",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785659126655
+    "h": "09:31",
+    "jogo": "Suíça x Iraque",
+    "odd": 2.5,
+    "unidades": 2,
+    "desde": 1785659492061
    },
-   "iniciadoEm": 1785659126655
+   "iniciadoEm": 1785659126655,
+   "tiros": [
+    {
+     "h": "09:28",
+     "jogo": "Cabo Verde x Inglaterra",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785655523967,
@@ -2297,7 +2305,7 @@
    "tipo": "time",
    "chave": "Panamá",
    "n": 10,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
