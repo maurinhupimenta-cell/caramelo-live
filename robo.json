@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -155.6,
-  "ciclos": 822,
-  "greens": 508,
+  "saldo": -154.3,
+  "ciclos": 823,
+  "greens": 509,
   "redsCiclo": 136,
   "aborts": 0,
   "descartes": 178,
   "historico": [
+   {
+    "quando": "2026-08-02T05:06:29.855Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "copa · EUA x Curação @2.15 (tiro 2) · gatilho: time Curação"
+   },
    {
     "quando": "2026-08-02T04:15:29.455Z",
     "resultado": "GREEN",
@@ -2172,49 +2178,12 @@
    }
   ],
   "consumidas": {
-   "premier": 1785644129257
+   "premier": 1785644129257,
+   "copa": 1785647189658
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "05:55",
-     "jogo": "Coreia do Sul x Suíça",
-     "odd": 2.5
-    },
-    {
-     "h": "05:58",
-     "jogo": "EUA x Curação",
-     "odd": 2.15
-    },
-    {
-     "h": "06:01",
-     "jogo": "Nova Zelândia x Jordânia",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Curação",
-   "alvo": {
-    "h": "05:58",
-    "jogo": "EUA x Curação",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1785646764762
-   },
-   "iniciadoEm": 1785645985064,
-   "tiros": [
-    {
-     "h": "05:55",
-     "jogo": "Coreia do Sul x Suíça",
-     "odd": 2.5,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785637706554,
+   "copa": 1785647189658,
    "premier": 1785644129257,
    "euro": 1785624548964,
    "super": 1785639629355
@@ -2238,24 +2207,30 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": 3.1
+   "2026-08-02": 4.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Curação",
+   "tipo": "odd",
+   "chave": "2.25",
    "n": 8,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -32.1,
-  "ciclos": 850,
-  "greens": 581,
+  "saldo": -31.2,
+  "ciclos": 851,
+  "greens": 582,
   "redsCiclo": 89,
   "aborts": 0,
   "descartes": 180,
   "historico": [
+   {
+    "quando": "2026-08-02T05:06:30.059Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · EUA x Curação @1.98 (tiro 3) · gatilho: odd 2.05"
+   },
    {
     "quando": "2026-08-02T04:49:26.065Z",
     "resultado": "GREEN_OBS",
@@ -4118,52 +4093,45 @@
    }
   ],
   "consumidas": {
-   "euro": 1785644428854
+   "euro": 1785644428854,
+   "copa": 1785647189861
   },
   "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "05:52",
-     "jogo": "África do Sul x Áustria",
+     "h": "06:04",
+     "jogo": "Medellin x Asuncion",
      "odd": 2.05
     },
     {
-     "h": "05:55",
-     "jogo": "Coreia do Sul x Suíça",
-     "odd": 2.1
+     "h": "06:07",
+     "jogo": "Santos x Buenos Aires",
+     "odd": 1.93
     },
     {
-     "h": "05:58",
-     "jogo": "EUA x Curação",
+     "h": "06:10",
+     "jogo": "Lima x La Boca",
      "odd": 1.98
     }
    ],
-   "gatilho": "odd 2.05",
+   "gatilho": "time Santos",
    "alvo": {
-    "h": "05:55",
-    "jogo": "Coreia do Sul x Suíça",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1785646526355
+    "h": "06:04",
+    "jogo": "Medellin x Asuncion",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785647191954
    },
-   "iniciadoEm": 1785646167167,
-   "tiros": [
-    {
-     "h": "05:52",
-     "jogo": "África do Sul x Áustria",
-     "odd": 2.05,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1785647191954
   },
   "cooldown": {
    "euro": 1785644428854,
    "super": 1785643164761,
    "premier": 1785624685060,
-   "copa": 1785636565262
+   "copa": 1785647189861
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -4183,13 +4151,13 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -5.7
+   "2026-08-02": -4.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.05",
-   "n": 8,
-   "start": 1
+   "tipo": "time",
+   "chave": "Santos",
+   "n": 12,
+   "start": 2
   },
   "_obs": {}
  }
