@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -163.6,
-  "ciclos": 850,
-  "greens": 526,
+  "saldo": -162.5,
+  "ciclos": 851,
+  "greens": 527,
   "redsCiclo": 141,
   "aborts": 0,
   "descartes": 183,
   "historico": [
+   {
+    "quando": "2026-08-02T14:10:04.856Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Guayaquil x Lima @2.07 (tiro 1) · gatilho: odd 2"
+   },
    {
     "quando": "2026-08-02T14:02:51.259Z",
     "resultado": "GREEN",
@@ -2341,44 +2347,15 @@
   ],
   "consumidas": {
    "copa": 1785677463563,
-   "premier": 1785679371061
+   "premier": 1785679371061,
+   "super": 1785679804456
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:07",
-     "jogo": "Guayaquil x Lima",
-     "odd": 2.07
-    },
-    {
-     "h": "15:10",
-     "jogo": "Montevideo x Sao Paulo",
-     "odd": 2
-    },
-    {
-     "h": "15:13",
-     "jogo": "Lima x La Boca",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "odd 2",
-   "alvo": {
-    "h": "15:07",
-    "jogo": "Guayaquil x Lima",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1785679381458
-   },
-   "iniciadoEm": 1785679381458
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785677463563,
    "premier": 1785679371061,
    "euro": 1785668551057,
-   "super": 1785673643567
+   "super": 1785679804456
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -2399,7 +2376,7 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -4.9
+   "2026-08-02": -3.8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
