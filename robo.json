@@ -4148,11 +4148,40 @@
    }
   ],
   "consumidas": {
-   "euro": 1785650186062,
    "copa": 1785651506963,
    "super": 1785651569366
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:56",
+     "jogo": "Croácia x Áustria",
+     "odd": 1.98
+    },
+    {
+     "h": "07:59",
+     "jogo": "Sérvia x Hungria",
+     "odd": 2.15
+    },
+    {
+     "h": "08:02",
+     "jogo": "França x Turquia",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "time Áustria",
+   "alvo": {
+    "h": "07:56",
+    "jogo": "Croácia x Áustria",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785653787358
+   },
+   "iniciadoEm": 1785653787358
+  },
   "cooldown": {
    "euro": 1785650186062,
    "super": 1785651569366,
@@ -4180,10 +4209,10 @@
    "2026-08-02": -8.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.1",
-   "n": 10,
-   "start": 2
+   "tipo": "time",
+   "chave": "Áustria",
+   "n": 9,
+   "start": 1
   },
   "_obs": {}
  }
