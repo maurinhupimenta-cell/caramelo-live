@@ -2219,8 +2219,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "08:28",
@@ -2240,11 +2240,11 @@
    ],
    "gatilho": "time Guayaquil",
    "alvo": {
-    "h": "08:31",
-    "jogo": "Guayaquil x Sao Paulo",
-    "odd": 2.02,
-    "unidades": 2,
-    "desde": 1785655885258
+    "h": "08:34",
+    "jogo": "Belo Horizonte x Penarol",
+    "odd": 2.3,
+    "unidades": 4,
+    "desde": 1785656068854
    },
    "iniciadoEm": 1785655526166,
    "tiros": [
@@ -2253,6 +2253,12 @@
      "jogo": "La Plata x Agua Branca",
      "odd": 2.4,
      "unidades": 1
+    },
+    {
+     "h": "08:31",
+     "jogo": "Guayaquil x Sao Paulo",
+     "odd": 2.02,
+     "unidades": 2
     }
    ]
   },
@@ -2292,13 +2298,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -32.4,
-  "ciclos": 859,
-  "greens": 587,
+  "saldo": -31.6,
+  "ciclos": 860,
+  "greens": 588,
   "redsCiclo": 90,
   "aborts": 0,
   "descartes": 182,
   "historico": [
+   {
+    "quando": "2026-08-02T07:34:29.160Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "super · Guayaquil x Sao Paulo @1.8 (tiro 1) · gatilho: coluna :34"
+   },
    {
     "quando": "2026-08-02T07:28:25.058Z",
     "resultado": "GREEN",
@@ -4216,42 +4228,13 @@
   ],
   "consumidas": {
    "euro": 1785654144165,
-   "copa": 1785655704862
+   "copa": 1785655704862,
+   "super": 1785656068962
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "08:31",
-     "jogo": "Guayaquil x Sao Paulo",
-     "odd": 1.8
-    },
-    {
-     "h": "08:34",
-     "jogo": "Belo Horizonte x Penarol",
-     "odd": 2.07
-    },
-    {
-     "h": "08:37",
-     "jogo": "Quito x Agua Branca",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "coluna :34",
-   "alvo": {
-    "h": "08:31",
-    "jogo": "Guayaquil x Sao Paulo",
-    "odd": 1.8,
-    "unidades": 1,
-    "desde": 1785655885456
-   },
-   "iniciadoEm": 1785655885456
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785654144165,
-   "super": 1785651569366,
+   "super": 1785656068962,
    "premier": 1785624685060,
    "copa": 1785655704862
   },
@@ -4273,7 +4256,7 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -6
+   "2026-08-02": -5.2
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
