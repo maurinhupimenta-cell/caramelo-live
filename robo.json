@@ -2379,21 +2379,27 @@
    "2026-08-02": -12.7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Senegal",
-   "n": 8,
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -52.6,
-  "ciclos": 874,
-  "greens": 594,
+  "saldo": -51.7,
+  "ciclos": 875,
+  "greens": 595,
   "redsCiclo": 94,
   "aborts": 0,
   "descartes": 186,
   "historico": [
+   {
+    "quando": "2026-08-02T12:23:26.164Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Lima x Rio de Janeiro @1.93 (tiro 2) · gatilho: time Lima"
+   },
    {
     "quando": "2026-08-02T12:14:24.556Z",
     "resultado": "GREEN",
@@ -4401,50 +4407,13 @@
   ],
   "consumidas": {
    "euro": 1785670348154,
-   "copa": 1785672864263
+   "copa": 1785672864263,
+   "super": 1785673406056
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "13:16",
-     "jogo": "Belo Horizonte x Quito",
-     "odd": 1.98
-    },
-    {
-     "h": "13:19",
-     "jogo": "Lima x Rio de Janeiro",
-     "odd": 1.93
-    },
-    {
-     "h": "13:22",
-     "jogo": "Montevideo x Medellin",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "time Lima",
-   "alvo": {
-    "h": "13:19",
-    "jogo": "Lima x Rio de Janeiro",
-    "odd": 1.93,
-    "unidades": 2,
-    "desde": 1785673289266
-   },
-   "iniciadoEm": 1785672923665,
-   "tiros": [
-    {
-     "h": "13:16",
-     "jogo": "Belo Horizonte x Quito",
-     "odd": 1.98,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785670348154,
-   "super": 1785668847964,
+   "super": 1785673406056,
    "premier": 1785624685060,
    "copa": 1785672864263
   },
@@ -4466,7 +4435,7 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -26.2
+   "2026-08-02": -25.3
   },
   "_gatilhoAtual": {
    "tipo": "time",
