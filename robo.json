@@ -4757,8 +4757,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "23:52",
@@ -4778,13 +4778,21 @@
    ],
    "gatilho": "odd 1.87",
    "alvo": {
-    "h": "23:52",
-    "jogo": "Montevideo x Lima",
-    "odd": 1.85,
-    "unidades": 1,
-    "desde": 1785710783459
+    "h": "23:55",
+    "jogo": "Avellaneda x Buenos Aires",
+    "odd": 1.87,
+    "unidades": 2,
+    "desde": 1785711387664
    },
-   "iniciadoEm": 1785710783459
+   "iniciadoEm": 1785710783459,
+   "tiros": [
+    {
+     "h": "23:52",
+     "jogo": "Montevideo x Lima",
+     "odd": 1.85,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785702270661,
@@ -4816,7 +4824,7 @@
    "tipo": "odd",
    "chave": "1.87",
    "n": 15,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
