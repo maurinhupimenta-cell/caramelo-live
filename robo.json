@@ -2450,13 +2450,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -38.8,
-  "ciclos": 888,
+  "saldo": -45.8,
+  "ciclos": 889,
   "greens": 608,
-  "redsCiclo": 94,
+  "redsCiclo": 95,
   "aborts": 0,
   "descartes": 186,
   "historico": [
+   {
+    "quando": "2026-08-02T18:12:26.059Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: coluna :06"
+   },
    {
     "quando": "2026-08-02T17:55:24.555Z",
     "resultado": "GREEN",
@@ -4547,53 +4553,45 @@
    }
   ],
   "consumidas": {
-   "copa": 1785690744658,
    "euro": 1785691289058,
-   "super": 1785693324361
+   "super": 1785693324361,
+   "premier": 1785694345955
   },
   "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "19:03",
-     "jogo": "Newcastle x Liverpool",
-     "odd": 1.85
+     "h": "19:16",
+     "jogo": "Argélia x Austrália",
+     "odd": 1.98
     },
     {
-     "h": "19:06",
-     "jogo": "Southampton x Everton",
-     "odd": 1.95
+     "h": "19:19",
+     "jogo": "Escócia x Espanha",
+     "odd": 2.05
     },
     {
-     "h": "19:09",
-     "jogo": "Leeds x Palace",
-     "odd": 2.1
+     "h": "19:22",
+     "jogo": "Noruega x Uruguai",
+     "odd": 1.9
     }
    ],
-   "gatilho": "coluna :06",
+   "gatilho": "odd 2.05",
    "alvo": {
-    "h": "19:06",
-    "jogo": "Southampton x Everton",
-    "odd": 1.95,
-    "unidades": 2,
-    "desde": 1785693943166
+    "h": "19:16",
+    "jogo": "Argélia x Austrália",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785694348055
    },
-   "iniciadoEm": 1785693326354,
-   "tiros": [
-    {
-     "h": "19:03",
-     "jogo": "Newcastle x Liverpool",
-     "odd": 1.85,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1785694348055
   },
   "cooldown": {
    "euro": 1785691289058,
    "super": 1785693324361,
-   "premier": 1785689450856,
+   "premier": 1785694345955,
    "copa": 1785690744658
   },
   "dias": {
@@ -4614,13 +4612,13 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -12.4
+   "2026-08-02": -19.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":06",
-   "n": 19,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.05",
+   "n": 15,
+   "start": 2
   },
   "_obs": {}
  }
