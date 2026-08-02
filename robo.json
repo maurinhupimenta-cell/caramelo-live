@@ -258,13 +258,19 @@
   }
  },
  "o25": {
-  "saldo": -182.4,
-  "ciclos": 857,
-  "greens": 528,
+  "saldo": -180.8,
+  "ciclos": 858,
+  "greens": 529,
   "redsCiclo": 144,
   "aborts": 0,
   "descartes": 185,
   "historico": [
+   {
+    "quando": "2026-08-02T17:08:40.164Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "premier · Wolverhampton x Watford @2.15 (tiro 3) · gatilho: seq RRGRG"
+   },
    {
     "quando": "2026-08-02T16:59:23.859Z",
     "resultado": "RED_CICLO",
@@ -2397,56 +2403,13 @@
    }
   ],
   "consumidas": {
-   "super": 1785689963662
+   "super": 1785689963662,
+   "premier": 1785690520059
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "18:00",
-     "jogo": "Palace x Leicester",
-     "odd": 2.25
-    },
-    {
-     "h": "18:03",
-     "jogo": "Leeds x City",
-     "odd": 2.3
-    },
-    {
-     "h": "18:06",
-     "jogo": "Wolverhampton x Watford",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "seq RRGRG",
-   "alvo": {
-    "h": "18:06",
-    "jogo": "Wolverhampton x Watford",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1785690383657
-   },
-   "iniciadoEm": 1785689966359,
-   "tiros": [
-    {
-     "h": "18:00",
-     "jogo": "Palace x Leicester",
-     "odd": 2.25,
-     "unidades": 1
-    },
-    {
-     "h": "18:03",
-     "jogo": "Leeds x City",
-     "odd": 2.3,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785686367766,
-   "premier": 1785684593857,
+   "premier": 1785690520059,
    "euro": 1785668551057,
    "super": 1785689963662
   },
@@ -2469,7 +2432,7 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -23.7
+   "2026-08-02": -22.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
