@@ -2280,8 +2280,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "10:52",
@@ -2301,13 +2301,21 @@
    ],
    "gatilho": "time México",
    "alvo": {
-    "h": "10:52",
-    "jogo": "Inglaterra x RD Congo",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785663990257
+    "h": "10:55",
+    "jogo": "México x Tunísia",
+    "odd": 2.5,
+    "unidades": 2,
+    "desde": 1785664584364
    },
-   "iniciadoEm": 1785663990257
+   "iniciadoEm": 1785663990257,
+   "tiros": [
+    {
+     "h": "10:52",
+     "jogo": "Inglaterra x RD Congo",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785659904660,
@@ -2337,9 +2345,9 @@
    "2026-08-02": -19.7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "México",
-   "n": 8,
+   "tipo": "coluna",
+   "chave": ":58",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
