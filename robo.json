@@ -2552,13 +2552,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -62.8,
-  "ciclos": 901,
+  "saldo": -69.8,
+  "ciclos": 902,
   "greens": 612,
-  "redsCiclo": 98,
+  "redsCiclo": 99,
   "aborts": 0,
   "descartes": 191,
   "historico": [
+   {
+    "quando": "2026-08-02T22:04:25.756Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: coluna :58"
+   },
    {
     "quando": "2026-08-02T21:52:28.956Z",
     "resultado": "GREEN_OBS",
@@ -4727,58 +4733,15 @@
    }
   ],
   "consumidas": {
-   "premier": 1785704969359
+   "premier": 1785704969359,
+   "copa": 1785708265562
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "22:55",
-     "jogo": "Costa do Marfim x Turquia",
-     "odd": 1.93
-    },
-    {
-     "h": "22:58",
-     "jogo": "Haiti x Coreia do Sul",
-     "odd": 2
-    },
-    {
-     "h": "23:01",
-     "jogo": "Uruguai x Curação",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "coluna :58",
-   "alvo": {
-    "h": "23:01",
-    "jogo": "Uruguai x Curação",
-    "odd": 1.98,
-    "unidades": 4,
-    "desde": 1785708148156
-   },
-   "iniciadoEm": 1785707604754,
-   "tiros": [
-    {
-     "h": "22:55",
-     "jogo": "Costa do Marfim x Turquia",
-     "odd": 1.93,
-     "unidades": 1
-    },
-    {
-     "h": "22:58",
-     "jogo": "Haiti x Coreia do Sul",
-     "odd": 2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785702270661,
    "super": 1785693324361,
    "premier": 1785704969359,
-   "copa": 1785703947862
+   "copa": 1785708265562
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -4798,13 +4761,13 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -36.4
+   "2026-08-02": -43.4
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.15",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
