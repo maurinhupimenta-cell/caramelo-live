@@ -2499,13 +2499,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -43.8,
-  "ciclos": 892,
+  "saldo": -50.8,
+  "ciclos": 893,
   "greens": 610,
-  "redsCiclo": 95,
+  "redsCiclo": 96,
   "aborts": 0,
   "descartes": 187,
   "historico": [
+   {
+    "quando": "2026-08-02T19:35:43.458Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: coluna :30"
+   },
    {
     "quando": "2026-08-02T19:18:30.654Z",
     "resultado": "GREEN_OBS",
@@ -4620,57 +4626,14 @@
    }
   ],
   "consumidas": {
-   "euro": 1785696025763
+   "euro": 1785696025763,
+   "premier": 1785699343265
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "20:27",
-     "jogo": "Brentford x Aston",
-     "odd": 2.05
-    },
-    {
-     "h": "20:30",
-     "jogo": "Palace x Wolverhampton",
-     "odd": 1.83
-    },
-    {
-     "h": "20:33",
-     "jogo": "Islington x West Ham",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "coluna :30",
-   "alvo": {
-    "h": "20:33",
-    "jogo": "Islington x West Ham",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1785699163563
-   },
-   "iniciadoEm": 1785698376060,
-   "tiros": [
-    {
-     "h": "20:27",
-     "jogo": "Brentford x Aston",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "20:30",
-     "jogo": "Palace x Wolverhampton",
-     "odd": 1.83,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785696025763,
    "super": 1785693324361,
-   "premier": 1785694345955,
+   "premier": 1785699343265,
    "copa": 1785694825063
   },
   "dias": {
@@ -4691,13 +4654,13 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -17.4
+   "2026-08-02": -24.4
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.05",
-   "n": 12,
-   "start": 1
+   "chave": "2.07",
+   "n": 18,
+   "start": 2
   },
   "_obs": {}
  }
