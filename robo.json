@@ -2274,13 +2274,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -29.2,
-  "ciclos": 854,
+  "saldo": -36.2,
+  "ciclos": 855,
   "greens": 584,
-  "redsCiclo": 89,
+  "redsCiclo": 90,
   "aborts": 0,
   "descartes": 181,
   "historico": [
+   {
+    "quando": "2026-08-02T06:18:27.159Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: odd 1.93"
+   },
    {
     "quando": "2026-08-02T05:56:26.259Z",
     "resultado": "GREEN",
@@ -4167,52 +4173,45 @@
    }
   ],
   "consumidas": {
-   "euro": 1785650186062
+   "euro": 1785650186062,
+   "copa": 1785651506963
   },
   "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "07:07",
-     "jogo": "Alemanha x RD Congo",
+     "h": "07:16",
+     "jogo": "Medellin x Penarol",
+     "odd": 2.15
+    },
+    {
+     "h": "07:19",
+     "jogo": "Belo Horizonte x Montevideo",
      "odd": 1.93
     },
     {
-     "h": "07:10",
-     "jogo": "Turquia x Panamá",
-     "odd": 2.07
-    },
-    {
-     "h": "07:13",
-     "jogo": "República Tcheca x Inglaterra",
-     "odd": 2.02
+     "h": "07:22",
+     "jogo": "La Plata x Porto Alegre",
+     "odd": 2.4
     }
    ],
-   "gatilho": "odd 1.93",
+   "gatilho": "placar 0-0",
    "alvo": {
-    "h": "07:10",
-    "jogo": "Turquia x Panamá",
-    "odd": 2.07,
-    "unidades": 2,
-    "desde": 1785651088664
+    "h": "07:16",
+    "jogo": "Medellin x Penarol",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785651509365
    },
-   "iniciadoEm": 1785650790757,
-   "tiros": [
-    {
-     "h": "07:07",
-     "jogo": "Alemanha x RD Congo",
-     "odd": 1.93,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1785651509365
   },
   "cooldown": {
    "euro": 1785650186062,
    "super": 1785647309956,
    "premier": 1785624685060,
-   "copa": 1785647189861
+   "copa": 1785651506963
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -4232,12 +4231,12 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -2.8
+   "2026-08-02": -9.8
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "0-0",
-   "n": 10,
+   "n": 11,
    "start": 1
   },
   "_obs": {}
