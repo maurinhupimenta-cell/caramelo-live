@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -169.5,
-  "ciclos": 852,
+  "saldo": -176.5,
+  "ciclos": 853,
   "greens": 527,
-  "redsCiclo": 142,
+  "redsCiclo": 143,
   "aborts": 0,
   "descartes": 183,
   "historico": [
+   {
+    "quando": "2026-08-02T15:29:53.963Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq RGRG"
+   },
    {
     "quando": "2026-08-02T14:43:00.958Z",
     "resultado": "RED_CICLO",
@@ -2352,56 +2358,13 @@
    }
   ],
   "consumidas": {
-   "copa": 1785681780763
+   "copa": 1785681780763,
+   "premier": 1785684593857
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "16:21",
-     "jogo": "United x Liverpool",
-     "odd": 2.2
-    },
-    {
-     "h": "16:24",
-     "jogo": "West Ham x Norwich",
-     "odd": 2.45
-    },
-    {
-     "h": "16:27",
-     "jogo": "Everton x Aston",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "seq RGRG",
-   "alvo": {
-    "h": "16:27",
-    "jogo": "Everton x Aston",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1785684408160
-   },
-   "iniciadoEm": 1785683867657,
-   "tiros": [
-    {
-     "h": "16:21",
-     "jogo": "United x Liverpool",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "16:24",
-     "jogo": "West Ham x Norwich",
-     "odd": 2.45,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785681780763,
-   "premier": 1785679371061,
+   "premier": 1785684593857,
    "euro": 1785668551057,
    "super": 1785679804456
   },
@@ -2424,7 +2387,7 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -10.8
+   "2026-08-02": -17.8
   },
   "_gatilhoAtual": {
    "tipo": "seq",
