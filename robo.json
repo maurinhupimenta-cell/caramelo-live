@@ -2333,12 +2333,18 @@
  },
  "ambas": {
   "saldo": -57.1,
-  "ciclos": 868,
+  "ciclos": 869,
   "greens": 590,
   "redsCiclo": 94,
   "aborts": 0,
-  "descartes": 184,
+  "descartes": 185,
   "historico": [
+   {
+    "quando": "2026-08-02T10:55:28.264Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time República Tcheca) — liga REARMADA"
+   },
    {
     "quando": "2026-08-02T10:29:27.559Z",
     "resultado": "RED_CICLO",
@@ -4344,6 +4350,11 @@
    "n": 15,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1785667769964,
+    "gatilho": "time República Tcheca"
+   }
+  }
  }
 }
