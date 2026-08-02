@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -188.4,
-  "ciclos": 871,
-  "greens": 533,
+  "saldo": -186.6,
+  "ciclos": 872,
+  "greens": 534,
   "redsCiclo": 146,
   "aborts": 0,
   "descartes": 192,
   "historico": [
+   {
+    "quando": "2026-08-02T20:52:27.857Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "copa · Haiti x Uzbequistão @2.2 (tiro 3) · gatilho: odd 2.4"
+   },
    {
     "quando": "2026-08-02T20:24:35.759Z",
     "resultado": "RED_CICLO",
@@ -2483,55 +2489,12 @@
    }
   ],
   "consumidas": {
-   "super": 1785702275661
+   "super": 1785702275661,
+   "copa": 1785703947660
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "21:43",
-     "jogo": "Senegal x EUA",
-     "odd": 2.4
-    },
-    {
-     "h": "21:46",
-     "jogo": "Panamá x Gana",
-     "odd": 2.45
-    },
-    {
-     "h": "21:49",
-     "jogo": "Haiti x Uzbequistão",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "odd 2.4",
-   "alvo": {
-    "h": "21:49",
-    "jogo": "Haiti x Uzbequistão",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1785703829655
-   },
-   "iniciadoEm": 1785703463859,
-   "tiros": [
-    {
-     "h": "21:43",
-     "jogo": "Senegal x EUA",
-     "odd": 2.4,
-     "unidades": 1
-    },
-    {
-     "h": "21:46",
-     "jogo": "Panamá x Gana",
-     "odd": 2.45,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785699838265,
+   "copa": 1785703947660,
    "premier": 1785698502357,
    "euro": 1785697826355,
    "super": 1785702275661
@@ -2555,24 +2518,30 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -29.7
+   "2026-08-02": -27.9
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":58",
    "n": 20,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -56.8,
-  "ciclos": 897,
+  "saldo": -63.8,
+  "ciclos": 898,
   "greens": 611,
-  "redsCiclo": 97,
+  "redsCiclo": 98,
   "aborts": 0,
   "descartes": 189,
   "historico": [
+   {
+    "quando": "2026-08-02T20:52:28.060Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: odd 2.1"
+   },
    {
     "quando": "2026-08-02T20:24:30.859Z",
     "resultado": "RED_CICLO",
@@ -4717,58 +4686,15 @@
    }
   ],
   "consumidas": {
-   "euro": 1785702270661
+   "euro": 1785702270661,
+   "copa": 1785703947862
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "21:43",
-     "jogo": "Senegal x EUA",
-     "odd": 2.05
-    },
-    {
-     "h": "21:46",
-     "jogo": "Panamá x Gana",
-     "odd": 2.1
-    },
-    {
-     "h": "21:49",
-     "jogo": "Haiti x Uzbequistão",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "odd 2.1",
-   "alvo": {
-    "h": "21:49",
-    "jogo": "Haiti x Uzbequistão",
-    "odd": 1.9,
-    "unidades": 4,
-    "desde": 1785703830156
-   },
-   "iniciadoEm": 1785703464163,
-   "tiros": [
-    {
-     "h": "21:43",
-     "jogo": "Senegal x EUA",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "21:46",
-     "jogo": "Panamá x Gana",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785702270661,
    "super": 1785693324361,
    "premier": 1785699343265,
-   "copa": 1785699836254
+   "copa": 1785703947862
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -4788,13 +4714,13 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -30.4
+   "2026-08-02": -37.4
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Jordânia",
    "n": 16,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
