@@ -261,12 +261,24 @@
  },
  "o25": {
   "saldo": -186.6,
-  "ciclos": 873,
+  "ciclos": 875,
   "greens": 534,
   "redsCiclo": 146,
   "aborts": 0,
-  "descartes": 193,
+  "descartes": 195,
   "historico": [
+   {
+    "quando": "2026-08-02T21:55:25.756Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho odd 2) — liga REARMADA"
+   },
+   {
+    "quando": "2026-08-02T21:55:23.860Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-08-02T21:40:15.364Z",
     "resultado": "GREEN_OBS",
@@ -2495,37 +2507,7 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:49",
-     "jogo": "Lima x Bogota",
-     "odd": 2.4
-    },
-    {
-     "h": "22:52",
-     "jogo": "Montevideo x Buenos Aires",
-     "odd": 2
-    },
-    {
-     "h": "22:55",
-     "jogo": "Agua Branca x Belo Horizonte",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "odd 2",
-   "alvo": {
-    "h": "22:49",
-    "jogo": "Lima x Bogota",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1785706823061
-   },
-   "iniciadoEm": 1785706823061
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785703947660,
    "premier": 1785698502357,
@@ -2554,12 +2536,17 @@
    "2026-08-02": -27.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2",
-   "n": 13,
+   "tipo": "coluna",
+   "chave": ":58",
+   "n": 21,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1785707725756,
+    "gatilho": "odd 2"
+   }
+  }
  },
  "ambas": {
   "saldo": -62.8,
