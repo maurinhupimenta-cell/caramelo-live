@@ -4027,7 +4027,51 @@
   "consumidas": {
    "copa": 1785636565262
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 2,
+   "apostado": 3,
+   "plano": [
+    {
+     "h": "03:11",
+     "jogo": "Turquia x França",
+     "odd": 1.98
+    },
+    {
+     "h": "03:14",
+     "jogo": "Croácia x Itália",
+     "odd": 1.98
+    },
+    {
+     "h": "03:17",
+     "jogo": "Países Baixos x Espanha",
+     "odd": 1.76
+    }
+   ],
+   "gatilho": "time Itália",
+   "alvo": {
+    "h": "03:17",
+    "jogo": "Países Baixos x Espanha",
+    "odd": 1.76,
+    "unidades": 4,
+    "desde": 1785637050364
+   },
+   "iniciadoEm": 1785636567155,
+   "tiros": [
+    {
+     "h": "03:11",
+     "jogo": "Turquia x França",
+     "odd": 1.98,
+     "unidades": 1
+    },
+    {
+     "h": "03:14",
+     "jogo": "Croácia x Itália",
+     "odd": 1.98,
+     "unidades": 2
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1785631165260,
    "super": 1785622284761,
@@ -4057,7 +4101,7 @@
    "tipo": "time",
    "chave": "Itália",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
