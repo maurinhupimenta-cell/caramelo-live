@@ -4631,7 +4631,37 @@
    "copa": 1785694825063,
    "euro": 1785696025763
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:27",
+     "jogo": "Brentford x Aston",
+     "odd": 2.05
+    },
+    {
+     "h": "20:30",
+     "jogo": "Palace x Wolverhampton",
+     "odd": 1.83
+    },
+    {
+     "h": "20:33",
+     "jogo": "Islington x West Ham",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "coluna :30",
+   "alvo": {
+    "h": "20:27",
+    "jogo": "Brentford x Aston",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785698376060
+   },
+   "iniciadoEm": 1785698376060
+  },
   "cooldown": {
    "euro": 1785696025763,
    "super": 1785693324361,
@@ -4659,16 +4689,11 @@
    "2026-08-02": -17.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.9",
-   "n": 17,
+   "tipo": "coluna",
+   "chave": ":30",
+   "n": 20,
    "start": 3
   },
-  "_obs": {
-   "premier": {
-    "desde": 1785698310561,
-    "gatilho": "coluna :30"
-   }
-  }
+  "_obs": {}
  }
 }
