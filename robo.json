@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -176.5,
-  "ciclos": 854,
-  "greens": 527,
+  "saldo": -175.4,
+  "ciclos": 855,
+  "greens": 528,
   "redsCiclo": 143,
   "aborts": 0,
   "descartes": 184,
   "historico": [
+   {
+    "quando": "2026-08-02T15:59:27.959Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Cabo Verde x Haiti @2.1 (tiro 1) · gatilho: odd 2.15"
+   },
    {
     "quando": "2026-08-02T15:51:24.254Z",
     "resultado": "GREEN_OBS",
@@ -2364,41 +2370,12 @@
    }
   ],
   "consumidas": {
-   "premier": 1785684593857
+   "premier": 1785684593857,
+   "copa": 1785686367766
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:55",
-     "jogo": "Cabo Verde x Haiti",
-     "odd": 2.1
-    },
-    {
-     "h": "16:58",
-     "jogo": "Egito x Colômbia",
-     "odd": 2.15
-    },
-    {
-     "h": "17:01",
-     "jogo": "Qatar x Suécia",
-     "odd": 2.54
-    }
-   ],
-   "gatilho": "odd 2.15",
-   "alvo": {
-    "h": "16:55",
-    "jogo": "Cabo Verde x Haiti",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785685885664
-   },
-   "iniciadoEm": 1785685885664
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785681780763,
+   "copa": 1785686367766,
    "premier": 1785684593857,
    "euro": 1785668551057,
    "super": 1785679804456
@@ -2422,13 +2399,13 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -17.8
+   "2026-08-02": -16.7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Bósnia e Herzegovina",
-   "n": 11,
-   "start": 2
+   "tipo": "seq",
+   "chave": "GRRRG",
+   "n": 9,
+   "start": 1
   },
   "_obs": {}
  },
@@ -4490,7 +4467,37 @@
   "consumidas": {
    "super": 1785683584760
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:01",
+     "jogo": "Qatar x Suécia",
+     "odd": 2.15
+    },
+    {
+     "h": "17:04",
+     "jogo": "Bósnia e Herzegovina x Argélia",
+     "odd": 1.93
+    },
+    {
+     "h": "17:07",
+     "jogo": "Paraguai x Curação",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "time Bósnia e Herzegovina",
+   "alvo": {
+    "h": "17:01",
+    "jogo": "Qatar x Suécia",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785686304166
+   },
+   "iniciadoEm": 1785686304166
+  },
   "cooldown": {
    "euro": 1785679683254,
    "super": 1785683584760,
@@ -4518,10 +4525,10 @@
    "2026-08-02": -19.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":13",
-   "n": 16,
-   "start": 1
+   "tipo": "time",
+   "chave": "Bósnia e Herzegovina",
+   "n": 11,
+   "start": 2
   },
   "_obs": {}
  }
