@@ -4755,7 +4755,37 @@
    "copa": 1785708265562,
    "premier": 1785708883761
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:52",
+     "jogo": "Montevideo x Lima",
+     "odd": 1.85
+    },
+    {
+     "h": "23:55",
+     "jogo": "Avellaneda x Buenos Aires",
+     "odd": 1.87
+    },
+    {
+     "h": "00:01",
+     "jogo": "Santos x La Plata",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "odd 1.87",
+   "alvo": {
+    "h": "23:52",
+    "jogo": "Montevideo x Lima",
+    "odd": 1.85,
+    "unidades": 1,
+    "desde": 1785710783459
+   },
+   "iniciadoEm": 1785710783459
+  },
   "cooldown": {
    "euro": 1785702270661,
    "super": 1785693324361,
@@ -4784,9 +4814,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.07",
-   "n": 20,
-   "start": 1
+   "chave": "1.87",
+   "n": 15,
+   "start": 2
   },
   "_obs": {}
  }
