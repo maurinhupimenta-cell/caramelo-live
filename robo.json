@@ -2297,8 +2297,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "11:56",
@@ -2318,13 +2318,21 @@
    ],
    "gatilho": "seq GGGR",
    "alvo": {
-    "h": "11:56",
-    "jogo": "Geórgia x Hungria",
-    "odd": 2.45,
-    "unidades": 1,
-    "desde": 1785668245654
+    "h": "11:59",
+    "jogo": "Inglaterra x Polônia",
+    "odd": 2.3,
+    "unidades": 2,
+    "desde": 1785668423662
    },
-   "iniciadoEm": 1785668245654
+   "iniciadoEm": 1785668245654,
+   "tiros": [
+    {
+     "h": "11:56",
+     "jogo": "Geórgia x Hungria",
+     "odd": 2.45,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785665069862,
@@ -4407,7 +4415,7 @@
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Santos",
-   "n": 23,
+   "n": 24,
    "start": 1
   },
   "_obs": {}
