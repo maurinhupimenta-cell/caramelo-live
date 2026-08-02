@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -181.4,
-  "ciclos": 870,
+  "saldo": -188.4,
+  "ciclos": 871,
   "greens": 533,
-  "redsCiclo": 145,
+  "redsCiclo": 146,
   "aborts": 0,
   "descartes": 192,
   "historico": [
+   {
+    "quando": "2026-08-02T20:24:35.759Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: seq GRRGG"
+   },
    {
     "quando": "2026-08-02T20:16:34.859Z",
     "resultado": "GREEN_OBS",
@@ -2477,52 +2483,15 @@
    }
   ],
   "consumidas": {
-   "copa": 1785699838265
+   "copa": 1785699838265,
+   "super": 1785702275661
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "20:46",
-     "jogo": "Avellaneda x Penarol",
-     "odd": 2.5
-    },
-    {
-     "h": "20:49",
-     "jogo": "Itaquera x La Boca",
-     "odd": 2.4
-    },
-    {
-     "h": "20:52",
-     "jogo": "Lima x Buenos Aires",
-     "odd": 2
-    }
-   ],
-   "gatilho": "seq GRRGG",
-   "alvo": {
-    "h": "20:49",
-    "jogo": "Itaquera x La Boca",
-    "odd": 2.4,
-    "unidades": 2,
-    "desde": 1785702267866
-   },
-   "iniciadoEm": 1785701867060,
-   "tiros": [
-    {
-     "h": "20:46",
-     "jogo": "Avellaneda x Penarol",
-     "odd": 2.5,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785699838265,
    "premier": 1785698502357,
    "euro": 1785697826355,
-   "super": 1785689963662
+   "super": 1785702275661
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -2543,7 +2512,7 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -22.7
+   "2026-08-02": -29.7
   },
   "_gatilhoAtual": {
    "tipo": "odd",
@@ -2554,13 +2523,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -49.8,
-  "ciclos": 896,
+  "saldo": -56.8,
+  "ciclos": 897,
   "greens": 611,
-  "redsCiclo": 96,
+  "redsCiclo": 97,
   "aborts": 0,
   "descartes": 189,
   "historico": [
+   {
+    "quando": "2026-08-02T20:24:30.859Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: seq RRGGR"
+   },
    {
     "quando": "2026-08-02T20:09:18.463Z",
     "resultado": "GREEN_OBS",
@@ -4699,56 +4674,12 @@
    }
   ],
   "consumidas": {
-   "premier": 1785699343265,
-   "copa": 1785699836254
+   "copa": 1785699836254,
+   "euro": 1785702270661
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "20:56",
-     "jogo": "Dinamarca x Ucrânia",
-     "odd": 2.07
-    },
-    {
-     "h": "20:59",
-     "jogo": "Eslovênia x Suíça",
-     "odd": 2.1
-    },
-    {
-     "h": "21:02",
-     "jogo": "França x República Tcheca",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "seq RRGGR",
-   "alvo": {
-    "h": "21:02",
-    "jogo": "França x República Tcheca",
-    "odd": 2.07,
-    "unidades": 4,
-    "desde": 1785702268154
-   },
-   "iniciadoEm": 1785701369562,
-   "tiros": [
-    {
-     "h": "20:56",
-     "jogo": "Dinamarca x Ucrânia",
-     "odd": 2.07,
-     "unidades": 1
-    },
-    {
-     "h": "20:59",
-     "jogo": "Eslovênia x Suíça",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785696025763,
+   "euro": 1785702270661,
    "super": 1785693324361,
    "premier": 1785699343265,
    "copa": 1785699836254
@@ -4771,7 +4702,7 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -23.4
+   "2026-08-02": -30.4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
