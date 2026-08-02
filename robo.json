@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -168.3,
-  "ciclos": 832,
+  "saldo": -175.3,
+  "ciclos": 833,
   "greens": 513,
-  "redsCiclo": 139,
+  "redsCiclo": 140,
   "aborts": 0,
   "descartes": 180,
   "historico": [
+   {
+    "quando": "2026-08-02T08:38:24.856Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: coluna :31"
+   },
    {
     "quando": "2026-08-02T08:25:24.665Z",
     "resultado": "GREEN_OBS",
@@ -2233,55 +2239,12 @@
   ],
   "consumidas": {
    "super": 1785656309056,
-   "premier": 1785657811856
+   "premier": 1785657811856,
+   "copa": 1785659904660
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "09:28",
-     "jogo": "Cabo Verde x Inglaterra",
-     "odd": 2.2
-    },
-    {
-     "h": "09:31",
-     "jogo": "Suíça x Iraque",
-     "odd": 2.5
-    },
-    {
-     "h": "09:34",
-     "jogo": "EUA x Irã",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "coluna :31",
-   "alvo": {
-    "h": "09:34",
-    "jogo": "EUA x Irã",
-    "odd": 2.5,
-    "unidades": 4,
-    "desde": 1785659670960
-   },
-   "iniciadoEm": 1785659126655,
-   "tiros": [
-    {
-     "h": "09:28",
-     "jogo": "Cabo Verde x Inglaterra",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "09:31",
-     "jogo": "Suíça x Iraque",
-     "odd": 2.5,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785655523967,
+   "copa": 1785659904660,
    "premier": 1785657811856,
    "euro": 1785624548964,
    "super": 1785656309056
@@ -2305,7 +2268,7 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -9.6
+   "2026-08-02": -16.6
   },
   "_gatilhoAtual": {
    "tipo": "time",
@@ -2316,13 +2279,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -38.6,
-  "ciclos": 861,
-  "greens": 588,
+  "saldo": -37.3,
+  "ciclos": 862,
+  "greens": 589,
   "redsCiclo": 91,
   "aborts": 0,
   "descartes": 182,
   "historico": [
+   {
+    "quando": "2026-08-02T08:38:25.154Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "copa · EUA x Irã @2.15 (tiro 2) · gatilho: seq RGGR"
+   },
    {
     "quando": "2026-08-02T08:09:28.257Z",
     "resultado": "RED_CICLO",
@@ -4251,52 +4220,15 @@
    }
   ],
   "consumidas": {
-   "euro": 1785658168065
+   "euro": 1785658168065,
+   "copa": 1785659904957
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "09:31",
-     "jogo": "Suíça x Iraque",
-     "odd": 2.15
-    },
-    {
-     "h": "09:34",
-     "jogo": "EUA x Irã",
-     "odd": 2.15
-    },
-    {
-     "h": "09:37",
-     "jogo": "Áustria x Canadá",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "seq RGGR",
-   "alvo": {
-    "h": "09:34",
-    "jogo": "EUA x Irã",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1785659671256
-   },
-   "iniciadoEm": 1785659372656,
-   "tiros": [
-    {
-     "h": "09:31",
-     "jogo": "Suíça x Iraque",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785658168065,
    "super": 1785656068962,
    "premier": 1785624685060,
-   "copa": 1785655704862
+   "copa": 1785659904957
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -4316,13 +4248,13 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -12.2
+   "2026-08-02": -10.9
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Santos",
    "n": 17,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
