@@ -4554,8 +4554,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "19:03",
@@ -4575,13 +4575,21 @@
    ],
    "gatilho": "coluna :06",
    "alvo": {
-    "h": "19:03",
-    "jogo": "Newcastle x Liverpool",
-    "odd": 1.85,
-    "unidades": 1,
-    "desde": 1785693326354
+    "h": "19:06",
+    "jogo": "Southampton x Everton",
+    "odd": 1.95,
+    "unidades": 2,
+    "desde": 1785693943166
    },
-   "iniciadoEm": 1785693326354
+   "iniciadoEm": 1785693326354,
+   "tiros": [
+    {
+     "h": "19:03",
+     "jogo": "Newcastle x Liverpool",
+     "odd": 1.85,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785691289058,
@@ -4613,7 +4621,7 @@
    "tipo": "coluna",
    "chave": ":06",
    "n": 19,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
