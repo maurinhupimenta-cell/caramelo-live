@@ -2262,7 +2262,6 @@
    }
   ],
   "consumidas": {
-   "super": 1785660028665,
    "premier": 1785662252559,
    "euro": 1785662726858
   },
@@ -4262,11 +4261,39 @@
    }
   ],
   "consumidas": {
-   "copa": 1785659904957,
-   "super": 1785660028957,
    "euro": 1785662250459
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:40",
+     "jogo": "Haiti x Suíça",
+     "odd": 1.93
+    },
+    {
+     "h": "10:43",
+     "jogo": "Iraque x Paraguai",
+     "odd": 2.15
+    },
+    {
+     "h": "10:46",
+     "jogo": "África do Sul x República Tcheca",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "seq RRRG",
+   "alvo": {
+    "h": "10:40",
+    "jogo": "Haiti x Suíça",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1785663505554
+   },
+   "iniciadoEm": 1785663505554
+  },
   "cooldown": {
    "euro": 1785662250459,
    "super": 1785660028957,
@@ -4295,8 +4322,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRGRR",
-   "n": 8,
+   "chave": "RRRG",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
