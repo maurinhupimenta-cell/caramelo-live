@@ -2450,13 +2450,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -40.6,
-  "ciclos": 886,
-  "greens": 606,
+  "saldo": -39.6,
+  "ciclos": 887,
+  "greens": 607,
   "redsCiclo": 94,
   "aborts": 0,
   "descartes": 186,
   "historico": [
+   {
+    "quando": "2026-08-02T17:21:29.162Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Portugal x Croácia @1.95 (tiro 1) · gatilho: odd 1.9"
+   },
    {
     "quando": "2026-08-02T17:12:24.855Z",
     "resultado": "GREEN",
@@ -4537,41 +4543,12 @@
   "consumidas": {
    "super": 1785688436468,
    "premier": 1785689450856,
-   "copa": 1785690744658
+   "copa": 1785690744658,
+   "euro": 1785691289058
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:17",
-     "jogo": "Portugal x Croácia",
-     "odd": 1.95
-    },
-    {
-     "h": "18:20",
-     "jogo": "Eslováquia x França",
-     "odd": 1.9
-    },
-    {
-     "h": "18:23",
-     "jogo": "República Tcheca x Albânia",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "odd 1.9",
-   "alvo": {
-    "h": "18:17",
-    "jogo": "Portugal x Croácia",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1785690748259
-   },
-   "iniciadoEm": 1785690748259
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785687147258,
+   "euro": 1785691289058,
    "super": 1785688436468,
    "premier": 1785689450856,
    "copa": 1785690744658
@@ -4594,13 +4571,13 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -14.2
+   "2026-08-02": -13.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "1.9",
    "n": 15,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
