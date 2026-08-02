@@ -2389,9 +2389,9 @@
    "2026-08-02": -7.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Jordânia",
-   "n": 11,
+   "tipo": "odd",
+   "chave": "2",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
@@ -4426,8 +4426,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "14:25",
@@ -4447,13 +4447,21 @@
    ],
    "gatilho": "time Jordânia",
    "alvo": {
-    "h": "14:25",
-    "jogo": "Croácia x Espanha",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785676561056
+    "h": "14:28",
+    "jogo": "Jordânia x Uzbequistão",
+    "odd": 1.95,
+    "unidades": 2,
+    "desde": 1785677281059
    },
-   "iniciadoEm": 1785676561056
+   "iniciadoEm": 1785676561056,
+   "tiros": [
+    {
+     "h": "14:25",
+     "jogo": "Croácia x Espanha",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785675905663,
@@ -4482,9 +4490,9 @@
    "2026-08-02": -24.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGGG",
-   "n": 9,
+   "tipo": "time",
+   "chave": "Jordânia",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
