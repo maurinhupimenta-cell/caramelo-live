@@ -2237,8 +2237,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "09:28",
@@ -2258,11 +2258,11 @@
    ],
    "gatilho": "coluna :31",
    "alvo": {
-    "h": "09:31",
-    "jogo": "Suíça x Iraque",
+    "h": "09:34",
+    "jogo": "EUA x Irã",
     "odd": 2.5,
-    "unidades": 2,
-    "desde": 1785659492061
+    "unidades": 4,
+    "desde": 1785659670960
    },
    "iniciadoEm": 1785659126655,
    "tiros": [
@@ -2271,6 +2271,12 @@
      "jogo": "Cabo Verde x Inglaterra",
      "odd": 2.2,
      "unidades": 1
+    },
+    {
+     "h": "09:31",
+     "jogo": "Suíça x Iraque",
+     "odd": 2.5,
+     "unidades": 2
     }
    ]
   },
@@ -2305,7 +2311,7 @@
    "tipo": "time",
    "chave": "Panamá",
    "n": 10,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -4245,13 +4251,12 @@
    }
   ],
   "consumidas": {
-   "super": 1785656068962,
    "euro": 1785658168065
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "09:31",
@@ -4271,13 +4276,21 @@
    ],
    "gatilho": "seq RGGR",
    "alvo": {
-    "h": "09:31",
-    "jogo": "Suíça x Iraque",
+    "h": "09:34",
+    "jogo": "EUA x Irã",
     "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785659372656
+    "unidades": 2,
+    "desde": 1785659671256
    },
-   "iniciadoEm": 1785659372656
+   "iniciadoEm": 1785659372656,
+   "tiros": [
+    {
+     "h": "09:31",
+     "jogo": "Suíça x Iraque",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785658168065,
@@ -4306,10 +4319,10 @@
    "2026-08-02": -12.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGR",
-   "n": 9,
-   "start": 1
+   "tipo": "time",
+   "chave": "Santos",
+   "n": 17,
+   "start": 2
   },
   "_obs": {}
  }
