@@ -2162,7 +2162,37 @@
   "consumidas": {
    "copa": 1785637706554
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:55",
+     "jogo": "Sao Paulo x La Plata",
+     "odd": 2.35
+    },
+    {
+     "h": "03:58",
+     "jogo": "Belo Horizonte x Santos",
+     "odd": 2.2
+    },
+    {
+     "h": "04:01",
+     "jogo": "Medellin x Rio de Janeiro",
+     "odd": 2.29
+    }
+   ],
+   "gatilho": "time La Plata",
+   "alvo": {
+    "h": "03:55",
+    "jogo": "Sao Paulo x La Plata",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1785639384563
+   },
+   "iniciadoEm": 1785639384563
+  },
   "cooldown": {
    "copa": 1785637706554,
    "premier": 1785623926866,
@@ -2190,9 +2220,9 @@
    "2026-08-01": -2.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGR",
-   "n": 8,
+   "tipo": "time",
+   "chave": "La Plata",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
