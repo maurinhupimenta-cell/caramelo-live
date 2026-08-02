@@ -2529,13 +2529,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -63.8,
-  "ciclos": 899,
-  "greens": 611,
+  "saldo": -62.8,
+  "ciclos": 900,
+  "greens": 612,
   "redsCiclo": 98,
   "aborts": 0,
   "descartes": 190,
   "historico": [
+   {
+    "quando": "2026-08-02T21:09:29.556Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Tottenham x City @1.98 (tiro 2) · gatilho: coluna :06"
+   },
    {
     "quando": "2026-08-02T20:54:29.366Z",
     "resultado": "GREEN_OBS",
@@ -4693,51 +4699,14 @@
   ],
   "consumidas": {
    "euro": 1785702270661,
-   "copa": 1785703947862
+   "copa": 1785703947862,
+   "premier": 1785704969359
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "22:03",
-     "jogo": "Palace x Liverpool",
-     "odd": 1.93
-    },
-    {
-     "h": "22:06",
-     "jogo": "Tottenham x City",
-     "odd": 1.98
-    },
-    {
-     "h": "22:09",
-     "jogo": "Norwich x Brentford",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "coluna :06",
-   "alvo": {
-    "h": "22:06",
-    "jogo": "Tottenham x City",
-    "odd": 1.98,
-    "unidades": 2,
-    "desde": 1785704786458
-   },
-   "iniciadoEm": 1785704123466,
-   "tiros": [
-    {
-     "h": "22:03",
-     "jogo": "Palace x Liverpool",
-     "odd": 1.93,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785702270661,
    "super": 1785693324361,
-   "premier": 1785699343265,
+   "premier": 1785704969359,
    "copa": 1785703947862
   },
   "dias": {
@@ -4758,7 +4727,7 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -37.4
+   "2026-08-02": -36.4
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
