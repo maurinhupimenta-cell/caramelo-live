@@ -2224,13 +2224,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -30.2,
-  "ciclos": 853,
-  "greens": 583,
+  "saldo": -29.2,
+  "ciclos": 854,
+  "greens": 584,
   "redsCiclo": 89,
   "aborts": 0,
   "descartes": 181,
   "historico": [
+   {
+    "quando": "2026-08-02T05:56:26.259Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Espanha x Sérvia @2 (tiro 2) · gatilho: odd 2"
+   },
    {
     "quando": "2026-08-02T05:46:26.461Z",
     "resultado": "GREEN_OBS",
@@ -4112,49 +4118,12 @@
   ],
   "consumidas": {
    "copa": 1785647189861,
-   "super": 1785647309956
+   "super": 1785647309956,
+   "euro": 1785650186062
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "06:50",
-     "jogo": "Países Baixos x Inglaterra",
-     "odd": 1.8
-    },
-    {
-     "h": "06:53",
-     "jogo": "Espanha x Sérvia",
-     "odd": 2
-    },
-    {
-     "h": "06:56",
-     "jogo": "Eslovênia x Ucrânia",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "odd 2",
-   "alvo": {
-    "h": "06:53",
-    "jogo": "Espanha x Sérvia",
-    "odd": 2,
-    "unidades": 2,
-    "desde": 1785650006254
-   },
-   "iniciadoEm": 1785649588459,
-   "tiros": [
-    {
-     "h": "06:50",
-     "jogo": "Países Baixos x Inglaterra",
-     "odd": 1.8,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785644428854,
+   "euro": 1785650186062,
    "super": 1785647309956,
    "premier": 1785624685060,
    "copa": 1785647189861
@@ -4177,13 +4146,13 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -3.8
+   "2026-08-02": -2.8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2",
    "n": 8,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
