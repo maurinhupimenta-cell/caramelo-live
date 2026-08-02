@@ -2354,7 +2354,37 @@
   "consumidas": {
    "copa": 1785681780763
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:21",
+     "jogo": "United x Liverpool",
+     "odd": 2.2
+    },
+    {
+     "h": "16:24",
+     "jogo": "West Ham x Norwich",
+     "odd": 2.45
+    },
+    {
+     "h": "16:27",
+     "jogo": "Everton x Aston",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "seq RGRG",
+   "alvo": {
+    "h": "16:21",
+    "jogo": "United x Liverpool",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785683867657
+   },
+   "iniciadoEm": 1785683867657
+  },
   "cooldown": {
    "copa": 1785681780763,
    "premier": 1785679371061,
@@ -2383,9 +2413,9 @@
    "2026-08-02": -10.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Panamá",
-   "n": 13,
+   "tipo": "seq",
+   "chave": "RGRG",
+   "n": 17,
    "start": 1
   },
   "_obs": {}
