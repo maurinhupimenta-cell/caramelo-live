@@ -2447,13 +2447,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -44.8,
-  "ciclos": 882,
-  "greens": 602,
+  "saldo": -43.6,
+  "ciclos": 883,
+  "greens": 603,
   "redsCiclo": 94,
   "aborts": 0,
   "descartes": 186,
   "historico": [
+   {
+    "quando": "2026-08-02T16:12:27.454Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Ucrânia x República Tcheca @2.15 (tiro 1) · gatilho: odd 1.9"
+   },
    {
     "quando": "2026-08-02T16:08:29.960Z",
     "resultado": "GREEN",
@@ -4509,11 +4515,12 @@
   ],
   "consumidas": {
    "super": 1785683584760,
-   "copa": 1785686909765
+   "copa": 1785686909765,
+   "euro": 1785687147258
   },
   "ciclo": null,
   "cooldown": {
-   "euro": 1785679683254,
+   "euro": 1785687147258,
    "super": 1785683584760,
    "premier": 1785624685060,
    "copa": 1785686909765
@@ -4536,12 +4543,12 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -18.4
+   "2026-08-02": -17.2
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":10",
-   "n": 16,
+   "tipo": "odd",
+   "chave": "1.9",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
