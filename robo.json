@@ -2219,8 +2219,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "08:28",
@@ -2240,13 +2240,21 @@
    ],
    "gatilho": "time Guayaquil",
    "alvo": {
-    "h": "08:28",
-    "jogo": "La Plata x Agua Branca",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1785655526166
+    "h": "08:31",
+    "jogo": "Guayaquil x Sao Paulo",
+    "odd": 2.02,
+    "unidades": 2,
+    "desde": 1785655885258
    },
-   "iniciadoEm": 1785655526166
+   "iniciadoEm": 1785655526166,
+   "tiros": [
+    {
+     "h": "08:28",
+     "jogo": "La Plata x Agua Branca",
+     "odd": 2.4,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785655523967,
@@ -2279,7 +2287,7 @@
    "tipo": "time",
    "chave": "Guayaquil",
    "n": 15,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -4210,7 +4218,37 @@
    "euro": 1785654144165,
    "copa": 1785655704862
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:31",
+     "jogo": "Guayaquil x Sao Paulo",
+     "odd": 1.8
+    },
+    {
+     "h": "08:34",
+     "jogo": "Belo Horizonte x Penarol",
+     "odd": 2.07
+    },
+    {
+     "h": "08:37",
+     "jogo": "Quito x Agua Branca",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "coluna :34",
+   "alvo": {
+    "h": "08:31",
+    "jogo": "Guayaquil x Sao Paulo",
+    "odd": 1.8,
+    "unidades": 1,
+    "desde": 1785655885456
+   },
+   "iniciadoEm": 1785655885456
+  },
   "cooldown": {
    "euro": 1785654144165,
    "super": 1785651569366,
@@ -4238,10 +4276,10 @@
    "2026-08-02": -6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Escócia",
+   "tipo": "coluna",
+   "chave": ":34",
    "n": 8,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
