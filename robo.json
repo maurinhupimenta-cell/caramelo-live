@@ -2310,10 +2310,39 @@
    }
   ],
   "consumidas": {
-   "copa": 1785669384164,
    "premier": 1785671067357
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:16",
+     "jogo": "Argélia x Egito",
+     "odd": 2.2
+    },
+    {
+     "h": "13:19",
+     "jogo": "Senegal x Curação",
+     "odd": 2.35
+    },
+    {
+     "h": "13:22",
+     "jogo": "República Tcheca x Turquia",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "time Senegal",
+   "alvo": {
+    "h": "13:16",
+    "jogo": "Argélia x Egito",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785672985364
+   },
+   "iniciadoEm": 1785672985364
+  },
   "cooldown": {
    "copa": 1785669384164,
    "premier": 1785671067357,
@@ -2342,9 +2371,9 @@
    "2026-08-02": -12.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.07",
-   "n": 14,
+   "tipo": "time",
+   "chave": "Senegal",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
