@@ -2413,8 +2413,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "19:16",
@@ -2434,13 +2434,21 @@
    ],
    "gatilho": "odd 2.4",
    "alvo": {
-    "h": "19:16",
-    "jogo": "Argélia x Austrália",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785694410164
+    "h": "19:19",
+    "jogo": "Escócia x Espanha",
+    "odd": 2.4,
+    "unidades": 2,
+    "desde": 1785694824955
    },
-   "iniciadoEm": 1785694410164
+   "iniciadoEm": 1785694410164,
+   "tiros": [
+    {
+     "h": "19:16",
+     "jogo": "Argélia x Austrália",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785690809555,
@@ -2470,21 +2478,27 @@
    "2026-08-02": -20.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.4",
-   "n": 15,
-   "start": 1
+   "tipo": "time",
+   "chave": "Jordânia",
+   "n": 13,
+   "start": 3
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -45.8,
-  "ciclos": 889,
-  "greens": 608,
+  "saldo": -44.8,
+  "ciclos": 890,
+  "greens": 609,
   "redsCiclo": 95,
   "aborts": 0,
   "descartes": 186,
   "historico": [
+   {
+    "quando": "2026-08-02T18:20:25.259Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Argélia x Austrália @1.98 (tiro 1) · gatilho: odd 2.05"
+   },
    {
     "quando": "2026-08-02T18:12:26.059Z",
     "resultado": "RED_CICLO",
@@ -4583,44 +4597,15 @@
   "consumidas": {
    "euro": 1785691289058,
    "super": 1785693324361,
-   "premier": 1785694345955
+   "premier": 1785694345955,
+   "copa": 1785694825063
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "19:16",
-     "jogo": "Argélia x Austrália",
-     "odd": 1.98
-    },
-    {
-     "h": "19:19",
-     "jogo": "Escócia x Espanha",
-     "odd": 2.05
-    },
-    {
-     "h": "19:22",
-     "jogo": "Noruega x Uruguai",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "odd 2.05",
-   "alvo": {
-    "h": "19:16",
-    "jogo": "Argélia x Austrália",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785694348055
-   },
-   "iniciadoEm": 1785694348055
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785691289058,
    "super": 1785693324361,
    "premier": 1785694345955,
-   "copa": 1785690744658
+   "copa": 1785694825063
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -4640,13 +4625,13 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -19.4
+   "2026-08-02": -18.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.05",
-   "n": 15,
-   "start": 1
+   "tipo": "time",
+   "chave": "Jordânia",
+   "n": 13,
+   "start": 3
   },
   "_obs": {}
  }
