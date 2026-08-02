@@ -2349,7 +2349,45 @@
    "premier": 1785679371061,
    "super": 1785679804456
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "15:34",
+     "jogo": "Equador x Paraguai",
+     "odd": 2.25
+    },
+    {
+     "h": "15:37",
+     "jogo": "Colômbia x Panamá",
+     "odd": 2.35
+    },
+    {
+     "h": "15:40",
+     "jogo": "Egito x Haiti",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "time Panamá",
+   "alvo": {
+    "h": "15:37",
+    "jogo": "Colômbia x Panamá",
+    "odd": 2.35,
+    "unidades": 2,
+    "desde": 1785681421661
+   },
+   "iniciadoEm": 1785681064256,
+   "tiros": [
+    {
+     "h": "15:34",
+     "jogo": "Equador x Paraguai",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1785677463563,
    "premier": 1785679371061,
@@ -2378,9 +2416,9 @@
    "2026-08-02": -3.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2",
-   "n": 10,
+   "tipo": "time",
+   "chave": "Panamá",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
@@ -4429,7 +4467,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1785677463854,
    "super": 1785679086466,
    "euro": 1785679683254
   },
