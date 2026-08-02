@@ -2333,13 +2333,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -50.1,
-  "ciclos": 867,
+  "saldo": -57.1,
+  "ciclos": 868,
   "greens": 590,
-  "redsCiclo": 93,
+  "redsCiclo": 94,
   "aborts": 0,
   "descartes": 184,
   "historico": [
+   {
+    "quando": "2026-08-02T10:29:27.559Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: odd 2"
+   },
    {
     "quando": "2026-08-02T10:17:44.064Z",
     "resultado": "GREEN_OBS",
@@ -4304,55 +4310,12 @@
    }
   ],
   "consumidas": {
-   "copa": 1785664168965
+   "copa": 1785664168965,
+   "euro": 1785666567264
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "11:20",
-     "jogo": "Países Baixos x República Tcheca",
-     "odd": 2.02
-    },
-    {
-     "h": "11:23",
-     "jogo": "Portugal x Áustria",
-     "odd": 2
-    },
-    {
-     "h": "11:26",
-     "jogo": "Turquia x Bélgica",
-     "odd": 2
-    }
-   ],
-   "gatilho": "odd 2",
-   "alvo": {
-    "h": "11:26",
-    "jogo": "Turquia x Bélgica",
-    "odd": 2,
-    "unidades": 4,
-    "desde": 1785666384861
-   },
-   "iniciadoEm": 1785665865855,
-   "tiros": [
-    {
-     "h": "11:20",
-     "jogo": "Países Baixos x República Tcheca",
-     "odd": 2.02,
-     "unidades": 1
-    },
-    {
-     "h": "11:23",
-     "jogo": "Portugal x Áustria",
-     "odd": 2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785662250459,
+   "euro": 1785666567264,
    "super": 1785660028957,
    "premier": 1785624685060,
    "copa": 1785664168965
@@ -4375,7 +4338,7 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -23.7
+   "2026-08-02": -30.7
   },
   "_gatilhoAtual": {
    "tipo": "odd",
