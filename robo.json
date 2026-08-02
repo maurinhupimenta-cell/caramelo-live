@@ -244,12 +244,18 @@
  },
  "o25": {
   "saldo": -179.8,
-  "ciclos": 837,
+  "ciclos": 838,
   "greens": 515,
   "redsCiclo": 141,
   "aborts": 0,
-  "descartes": 181,
+  "descartes": 182,
   "historico": [
+   {
+    "quando": "2026-08-02T09:43:29.554Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time México) — liga REARMADA"
+   },
    {
     "quando": "2026-08-02T09:25:27.056Z",
     "resultado": "GREEN",
@@ -2329,7 +2335,12 @@
    "n": 8,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1785663809453,
+    "gatilho": "time México"
+   }
+  }
  },
  "ambas": {
   "saldo": -43.1,
