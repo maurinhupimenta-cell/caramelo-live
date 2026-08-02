@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -186.6,
-  "ciclos": 875,
-  "greens": 534,
+  "saldo": -185.3,
+  "ciclos": 876,
+  "greens": 535,
   "redsCiclo": 146,
   "aborts": 0,
   "descartes": 195,
   "historico": [
+   {
+    "quando": "2026-08-02T22:02:28.059Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "copa · Haiti x Coreia do Sul @2.3 (tiro 1) · gatilho: coluna :58"
+   },
    {
     "quando": "2026-08-02T21:55:25.756Z",
     "resultado": "GREEN_OBS",
@@ -2506,40 +2512,12 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:58",
-     "jogo": "Haiti x Coreia do Sul",
-     "odd": 2.3
-    },
-    {
-     "h": "23:01",
-     "jogo": "Uruguai x Curação",
-     "odd": 2.15
-    },
-    {
-     "h": "23:04",
-     "jogo": "Inglaterra x Irã",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "coluna :58",
-   "alvo": {
-    "h": "22:58",
-    "jogo": "Haiti x Coreia do Sul",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1785707725758
-   },
-   "iniciadoEm": 1785707725758
+  "consumidas": {
+   "copa": 1785708147859
   },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785703947660,
+   "copa": 1785708147859,
    "premier": 1785698502357,
    "euro": 1785697826355,
    "super": 1785702275661
@@ -2563,7 +2541,7 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -27.9
+   "2026-08-02": -26.6
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
@@ -4753,8 +4731,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "22:55",
@@ -4774,11 +4752,11 @@
    ],
    "gatilho": "coluna :58",
    "alvo": {
-    "h": "22:58",
-    "jogo": "Haiti x Coreia do Sul",
-    "odd": 2,
-    "unidades": 2,
-    "desde": 1785707912866
+    "h": "23:01",
+    "jogo": "Uruguai x Curação",
+    "odd": 1.98,
+    "unidades": 4,
+    "desde": 1785708148156
    },
    "iniciadoEm": 1785707604754,
    "tiros": [
@@ -4787,6 +4765,12 @@
      "jogo": "Costa do Marfim x Turquia",
      "odd": 1.93,
      "unidades": 1
+    },
+    {
+     "h": "22:58",
+     "jogo": "Haiti x Coreia do Sul",
+     "odd": 2,
+     "unidades": 2
     }
    ]
   },
@@ -4820,7 +4804,7 @@
    "tipo": "odd",
    "chave": "2.15",
    "n": 8,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
