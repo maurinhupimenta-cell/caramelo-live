@@ -4439,7 +4439,37 @@
    "super": 1785679086466,
    "euro": 1785679683254
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:55",
+     "jogo": "Turquia x Irã",
+     "odd": 2.15
+    },
+    {
+     "h": "15:58",
+     "jogo": "Espanha x Gana",
+     "odd": 2.05
+    },
+    {
+     "h": "16:01",
+     "jogo": "Alemanha x Japão",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "coluna :58",
+   "alvo": {
+    "h": "15:55",
+    "jogo": "Turquia x Irã",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785681980955
+   },
+   "iniciadoEm": 1785681980955
+  },
   "cooldown": {
    "euro": 1785679683254,
    "super": 1785679086466,
@@ -4467,10 +4497,10 @@
    "2026-08-02": -21.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.9",
-   "n": 10,
-   "start": 2
+   "tipo": "coluna",
+   "chave": ":58",
+   "n": 15,
+   "start": 3
   },
   "_obs": {}
  }
