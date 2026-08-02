@@ -252,6 +252,10 @@
    "euro": {
     "desde": 1785463711484,
     "gatilho": "time Eslovênia"
+   },
+   "copa": {
+    "desde": 1785692695865,
+    "gatilho": "odd 4"
    }
   }
  },
@@ -4539,11 +4543,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1785689450856,
    "copa": 1785690744658,
    "euro": 1785691289058
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:52",
+     "jogo": "Agua Branca x Buenos Aires",
+     "odd": 1.83
+    },
+    {
+     "h": "18:55",
+     "jogo": "Santiago x Quito",
+     "odd": 1.87
+    },
+    {
+     "h": "18:58",
+     "jogo": "Guayaquil x Avellaneda",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "odd 1.87",
+   "alvo": {
+    "h": "18:52",
+    "jogo": "Agua Branca x Buenos Aires",
+    "odd": 1.83,
+    "unidades": 1,
+    "desde": 1785692783965
+   },
+   "iniciadoEm": 1785692783965
+  },
   "cooldown": {
    "euro": 1785691289058,
    "super": 1785688436468,
@@ -4572,8 +4605,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "1.9",
-   "n": 15,
+   "chave": "1.87",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
