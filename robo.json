@@ -2456,13 +2456,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -44.8,
-  "ciclos": 890,
-  "greens": 609,
+  "saldo": -43.8,
+  "ciclos": 891,
+  "greens": 610,
   "redsCiclo": 95,
   "aborts": 0,
   "descartes": 186,
   "historico": [
+   {
+    "quando": "2026-08-02T18:40:25.956Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Suíça x Geórgia @2.02 (tiro 1) · gatilho: seq RRGG"
+   },
    {
     "quando": "2026-08-02T18:20:25.259Z",
     "resultado": "GREEN",
@@ -4567,41 +4573,12 @@
   "consumidas": {
    "super": 1785693324361,
    "premier": 1785694345955,
-   "copa": 1785694825063
+   "copa": 1785694825063,
+   "euro": 1785696025763
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "19:35",
-     "jogo": "Suíça x Geórgia",
-     "odd": 2.02
-    },
-    {
-     "h": "19:38",
-     "jogo": "Sérvia x Escócia",
-     "odd": 2.05
-    },
-    {
-     "h": "19:41",
-     "jogo": "França x Bélgica",
-     "odd": 1.83
-    }
-   ],
-   "gatilho": "seq RRGG",
-   "alvo": {
-    "h": "19:35",
-    "jogo": "Suíça x Geórgia",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1785695673564
-   },
-   "iniciadoEm": 1785695673564
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785691289058,
+   "euro": 1785696025763,
    "super": 1785693324361,
    "premier": 1785694345955,
    "copa": 1785694825063
@@ -4624,13 +4601,13 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -18.4
+   "2026-08-02": -17.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGG",
-   "n": 24,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.9",
+   "n": 17,
+   "start": 3
   },
   "_obs": {}
  }
