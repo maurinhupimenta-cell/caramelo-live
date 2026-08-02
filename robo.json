@@ -2192,13 +2192,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -20.1,
-  "ciclos": 844,
+  "saldo": -27.1,
+  "ciclos": 845,
   "greens": 579,
-  "redsCiclo": 87,
+  "redsCiclo": 88,
   "aborts": 0,
   "descartes": 178,
   "historico": [
+   {
+    "quando": "2026-08-02T02:20:13.554Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: time Itália"
+   },
    {
     "quando": "2026-08-02T02:09:25.456Z",
     "resultado": "RED_CICLO",
@@ -4025,55 +4031,12 @@
    }
   ],
   "consumidas": {
-   "copa": 1785636565262
+   "copa": 1785636565262,
+   "euro": 1785637213360
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "03:11",
-     "jogo": "Turquia x França",
-     "odd": 1.98
-    },
-    {
-     "h": "03:14",
-     "jogo": "Croácia x Itália",
-     "odd": 1.98
-    },
-    {
-     "h": "03:17",
-     "jogo": "Países Baixos x Espanha",
-     "odd": 1.76
-    }
-   ],
-   "gatilho": "time Itália",
-   "alvo": {
-    "h": "03:17",
-    "jogo": "Países Baixos x Espanha",
-    "odd": 1.76,
-    "unidades": 4,
-    "desde": 1785637050364
-   },
-   "iniciadoEm": 1785636567155,
-   "tiros": [
-    {
-     "h": "03:11",
-     "jogo": "Turquia x França",
-     "odd": 1.98,
-     "unidades": 1
-    },
-    {
-     "h": "03:14",
-     "jogo": "Croácia x Itália",
-     "odd": 1.98,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785631165260,
+   "euro": 1785637213360,
    "super": 1785622284761,
    "premier": 1785624685060,
    "copa": 1785636565262
@@ -4095,7 +4058,7 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": -13.1
+   "2026-08-01": -20.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
