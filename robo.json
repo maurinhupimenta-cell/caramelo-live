@@ -4391,7 +4391,37 @@
    "copa": 1785672864263,
    "super": 1785673406056
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:02",
+     "jogo": "Bélgica x Suíça",
+     "odd": 1.86
+    },
+    {
+     "h": "14:05",
+     "jogo": "Espanha x Portugal",
+     "odd": 1.85
+    },
+    {
+     "h": "14:08",
+     "jogo": "Suíça x Eslovênia",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "seq RRGG",
+   "alvo": {
+    "h": "14:02",
+    "jogo": "Bélgica x Suíça",
+    "odd": 1.86,
+    "unidades": 1,
+    "desde": 1785675722958
+   },
+   "iniciadoEm": 1785675722958
+  },
   "cooldown": {
    "euro": 1785670348154,
    "super": 1785673406056,
@@ -4419,9 +4449,9 @@
    "2026-08-02": -25.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Lima",
-   "n": 20,
+   "tipo": "seq",
+   "chave": "RRGG",
+   "n": 17,
    "start": 1
   },
   "_obs": {}
