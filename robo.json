@@ -2564,13 +2564,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -68.8,
-  "ciclos": 903,
-  "greens": 613,
+  "saldo": -68.1,
+  "ciclos": 904,
+  "greens": 614,
   "redsCiclo": 99,
   "aborts": 0,
   "descartes": 191,
   "historico": [
+   {
+    "quando": "2026-08-02T23:06:10.554Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "super · Avellaneda x Buenos Aires @1.87 (tiro 2) · gatilho: odd 1.87"
+   },
    {
     "quando": "2026-08-02T22:14:43.955Z",
     "resultado": "GREEN",
@@ -4751,51 +4757,12 @@
    }
   ],
   "consumidas": {
-   "copa": 1785708265562,
-   "premier": 1785708883761
+   "super": 1785711970359
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "23:52",
-     "jogo": "Montevideo x Lima",
-     "odd": 1.85
-    },
-    {
-     "h": "23:55",
-     "jogo": "Avellaneda x Buenos Aires",
-     "odd": 1.87
-    },
-    {
-     "h": "00:01",
-     "jogo": "Santos x La Plata",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "odd 1.87",
-   "alvo": {
-    "h": "23:55",
-    "jogo": "Avellaneda x Buenos Aires",
-    "odd": 1.87,
-    "unidades": 2,
-    "desde": 1785711387664
-   },
-   "iniciadoEm": 1785710783459,
-   "tiros": [
-    {
-     "h": "23:52",
-     "jogo": "Montevideo x Lima",
-     "odd": 1.85,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785702270661,
-   "super": 1785693324361,
+   "super": 1785711970359,
    "premier": 1785708883761,
    "copa": 1785708265562
   },
@@ -4817,7 +4784,7 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -42.4
+   "2026-08-02": -41.7
   },
   "_gatilhoAtual": {
    "tipo": "odd",
