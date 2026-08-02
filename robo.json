@@ -4559,12 +4559,41 @@
    }
   ],
   "consumidas": {
-   "copa": 1785686909765,
    "euro": 1785687147258,
    "super": 1785688436468,
    "premier": 1785689450856
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:07",
+     "jogo": "Escócia x Argentina",
+     "odd": 2.05
+    },
+    {
+     "h": "18:10",
+     "jogo": "México x Bósnia e Herzegovina",
+     "odd": 1.95
+    },
+    {
+     "h": "18:13",
+     "jogo": "Espanha x Brasil",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "time Bósnia e Herzegovina",
+   "alvo": {
+    "h": "18:07",
+    "jogo": "Escócia x Argentina",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785690510163
+   },
+   "iniciadoEm": 1785690510163
+  },
   "cooldown": {
    "euro": 1785687147258,
    "super": 1785688436468,
@@ -4592,10 +4621,10 @@
    "2026-08-02": -15.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.07",
-   "n": 15,
-   "start": 1
+   "tipo": "time",
+   "chave": "Bósnia e Herzegovina",
+   "n": 13,
+   "start": 2
   },
   "_obs": {}
  }
