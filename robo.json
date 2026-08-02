@@ -2205,7 +2205,37 @@
    "super": 1785651569156,
    "premier": 1785653636059
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:16",
+     "jogo": "Alemanha x Países Baixos",
+     "odd": 2.2
+    },
+    {
+     "h": "08:19",
+     "jogo": "Argélia x Canadá",
+     "odd": 2.4
+    },
+    {
+     "h": "08:22",
+     "jogo": "Austrália x Escócia",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "odd 2.4",
+   "alvo": {
+    "h": "08:16",
+    "jogo": "Alemanha x Países Baixos",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785654688756
+   },
+   "iniciadoEm": 1785654688756
+  },
   "cooldown": {
    "copa": 1785651088458,
    "premier": 1785653636059,
@@ -2234,21 +2264,27 @@
    "2026-08-02": 2.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":03",
-   "n": 8,
-   "start": 2
+   "tipo": "odd",
+   "chave": "2.4",
+   "n": 14,
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -33.7,
-  "ciclos": 857,
+  "ciclos": 858,
   "greens": 586,
   "redsCiclo": 90,
   "aborts": 0,
-  "descartes": 181,
+  "descartes": 182,
   "historico": [
+   {
+    "quando": "2026-08-02T07:18:27.156Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho odd 2.05) — liga REARMADA"
+   },
    {
     "quando": "2026-08-02T07:02:24.362Z",
     "resultado": "GREEN",
@@ -4153,7 +4189,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1785651506963,
    "super": 1785651569366,
    "euro": 1785654144165
   },
@@ -4190,6 +4225,11 @@
    "n": 8,
    "start": 3
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1785655107156,
+    "gatilho": "odd 2.05"
+   }
+  }
  }
 }
