@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -180.8,
-  "ciclos": 836,
-  "greens": 514,
+  "saldo": -179.8,
+  "ciclos": 837,
+  "greens": 515,
   "redsCiclo": 141,
   "aborts": 0,
   "descartes": 181,
   "historico": [
+   {
+    "quando": "2026-08-02T09:25:27.056Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Espanha x França @1.98 (tiro 2) · gatilho: seq GGGR"
+   },
    {
     "quando": "2026-08-02T09:17:32.664Z",
     "resultado": "RED_CICLO",
@@ -2256,53 +2262,15 @@
    }
   ],
   "consumidas": {
-   "copa": 1785659904660,
    "super": 1785660028665,
-   "premier": 1785662252559
+   "premier": 1785662252559,
+   "euro": 1785662726858
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "10:17",
-     "jogo": "Alemanha x Sérvia",
-     "odd": 2.35
-    },
-    {
-     "h": "10:20",
-     "jogo": "Espanha x França",
-     "odd": 1.98
-    },
-    {
-     "h": "10:23",
-     "jogo": "Alemanha x Albânia",
-     "odd": 2.54
-    }
-   ],
-   "gatilho": "seq GGGR",
-   "alvo": {
-    "h": "10:20",
-    "jogo": "Espanha x França",
-    "odd": 1.98,
-    "unidades": 2,
-    "desde": 1785662724268
-   },
-   "iniciadoEm": 1785662305164,
-   "tiros": [
-    {
-     "h": "10:17",
-     "jogo": "Alemanha x Sérvia",
-     "odd": 2.35,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785659904660,
    "premier": 1785662252559,
-   "euro": 1785624548964,
+   "euro": 1785662726858,
    "super": 1785660028665
   },
   "dias": {
@@ -2324,7 +2292,7 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -22.1
+   "2026-08-02": -21.1
   },
   "_gatilhoAtual": {
    "tipo": "seq",
