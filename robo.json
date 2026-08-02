@@ -4444,7 +4444,37 @@
    "euro": 1785679683254,
    "copa": 1785682680857
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:10",
+     "jogo": "Asuncion x Rio de Janeiro",
+     "odd": 1.98
+    },
+    {
+     "h": "16:13",
+     "jogo": "Quito x Agua Branca",
+     "odd": 1.93
+    },
+    {
+     "h": "16:16",
+     "jogo": "Penarol x Guayaquil",
+     "odd": 2
+    }
+   ],
+   "gatilho": "coluna :13",
+   "alvo": {
+    "h": "16:10",
+    "jogo": "Asuncion x Rio de Janeiro",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785683174954
+   },
+   "iniciadoEm": 1785683174954
+  },
   "cooldown": {
    "euro": 1785679683254,
    "super": 1785679086466,
@@ -4472,10 +4502,10 @@
    "2026-08-02": -20.3
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.98",
-   "n": 8,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":13",
+   "n": 16,
+   "start": 3
   },
   "_obs": {}
  }
