@@ -4146,11 +4146,39 @@
    }
   ],
   "consumidas": {
-   "copa": 1785647189861,
-   "super": 1785647309956,
    "euro": 1785650186062
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:07",
+     "jogo": "Alemanha x RD Congo",
+     "odd": 1.93
+    },
+    {
+     "h": "07:10",
+     "jogo": "Turquia x Panamá",
+     "odd": 2.07
+    },
+    {
+     "h": "07:13",
+     "jogo": "República Tcheca x Inglaterra",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "odd 1.93",
+   "alvo": {
+    "h": "07:07",
+    "jogo": "Alemanha x RD Congo",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1785650790757
+   },
+   "iniciadoEm": 1785650790757
+  },
   "cooldown": {
    "euro": 1785650186062,
    "super": 1785647309956,
@@ -4179,9 +4207,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2",
-   "n": 8,
-   "start": 3
+   "chave": "1.93",
+   "n": 9,
+   "start": 1
   },
   "_obs": {}
  }
