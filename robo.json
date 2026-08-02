@@ -4292,8 +4292,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "10:08",
@@ -4313,11 +4313,11 @@
    ],
    "gatilho": "coluna :11",
    "alvo": {
-    "h": "10:11",
-    "jogo": "Sérvia x Países Baixos",
-    "odd": 1.95,
-    "unidades": 2,
-    "desde": 1785661943760
+    "h": "10:14",
+    "jogo": "Geórgia x Eslováquia",
+    "odd": 2.05,
+    "unidades": 4,
+    "desde": 1785662123455
    },
    "iniciadoEm": 1785661824160,
    "tiros": [
@@ -4326,6 +4326,12 @@
      "jogo": "Áustria x Ucrânia",
      "odd": 2.02,
      "unidades": 1
+    },
+    {
+     "h": "10:11",
+     "jogo": "Sérvia x Países Baixos",
+     "odd": 1.95,
+     "unidades": 2
     }
    ]
   },
@@ -4356,9 +4362,9 @@
    "2026-08-02": -9.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":11",
-   "n": 10,
+   "tipo": "seq",
+   "chave": "RRGRR",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
