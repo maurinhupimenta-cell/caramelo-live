@@ -2485,7 +2485,45 @@
   "consumidas": {
    "super": 1785702275661
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "21:43",
+     "jogo": "Senegal x EUA",
+     "odd": 2.4
+    },
+    {
+     "h": "21:46",
+     "jogo": "Panamá x Gana",
+     "odd": 2.45
+    },
+    {
+     "h": "21:49",
+     "jogo": "Haiti x Uzbequistão",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "odd 2.4",
+   "alvo": {
+    "h": "21:46",
+    "jogo": "Panamá x Gana",
+    "odd": 2.45,
+    "unidades": 2,
+    "desde": 1785703584556
+   },
+   "iniciadoEm": 1785703463859,
+   "tiros": [
+    {
+     "h": "21:43",
+     "jogo": "Senegal x EUA",
+     "odd": 2.4,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1785699838265,
    "premier": 1785698502357,
@@ -2514,10 +2552,10 @@
    "2026-08-02": -29.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2",
-   "n": 11,
-   "start": 2
+   "tipo": "coluna",
+   "chave": ":58",
+   "n": 20,
+   "start": 3
   },
   "_obs": {}
  },
@@ -4673,10 +4711,39 @@
    }
   ],
   "consumidas": {
-   "copa": 1785699836254,
    "euro": 1785702270661
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:43",
+     "jogo": "Senegal x EUA",
+     "odd": 2.05
+    },
+    {
+     "h": "21:46",
+     "jogo": "Panamá x Gana",
+     "odd": 2.1
+    },
+    {
+     "h": "21:49",
+     "jogo": "Haiti x Uzbequistão",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "odd 2.1",
+   "alvo": {
+    "h": "21:43",
+    "jogo": "Senegal x EUA",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785703464163
+   },
+   "iniciadoEm": 1785703464163
+  },
   "cooldown": {
    "euro": 1785702270661,
    "super": 1785693324361,
@@ -4704,9 +4771,9 @@
    "2026-08-02": -30.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGGR",
-   "n": 12,
+   "tipo": "odd",
+   "chave": "2.1",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
