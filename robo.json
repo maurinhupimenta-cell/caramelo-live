@@ -4405,8 +4405,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "13:16",
@@ -4426,13 +4426,21 @@
    ],
    "gatilho": "time Lima",
    "alvo": {
-    "h": "13:16",
-    "jogo": "Belo Horizonte x Quito",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785672923665
+    "h": "13:19",
+    "jogo": "Lima x Rio de Janeiro",
+    "odd": 1.93,
+    "unidades": 2,
+    "desde": 1785673289266
    },
-   "iniciadoEm": 1785672923665
+   "iniciadoEm": 1785672923665,
+   "tiros": [
+    {
+     "h": "13:16",
+     "jogo": "Belo Horizonte x Quito",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785670348154,
@@ -4464,7 +4472,7 @@
    "tipo": "time",
    "chave": "Lima",
    "n": 20,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
