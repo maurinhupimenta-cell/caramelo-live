@@ -2309,8 +2309,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "12:36",
@@ -2330,13 +2330,21 @@
    ],
    "gatilho": "seq RRRG",
    "alvo": {
-    "h": "12:36",
-    "jogo": "Southampton x City",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785670408363
+    "h": "12:39",
+    "jogo": "Burnley x Everton",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1785670723461
    },
-   "iniciadoEm": 1785670408363
+   "iniciadoEm": 1785670408363,
+   "tiros": [
+    {
+     "h": "12:36",
+     "jogo": "Southampton x City",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785669384164,
@@ -2367,8 +2375,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRG",
-   "n": 13,
+   "chave": "RRGRR",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
