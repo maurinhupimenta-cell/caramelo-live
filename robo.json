@@ -2468,18 +2468,24 @@
    "tipo": "time",
    "chave": "Brasil",
    "n": 15,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -41.6,
-  "ciclos": 885,
-  "greens": 605,
+  "saldo": -40.6,
+  "ciclos": 886,
+  "greens": 606,
   "redsCiclo": 94,
   "aborts": 0,
   "descartes": 186,
   "historico": [
+   {
+    "quando": "2026-08-02T17:12:24.855Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Escócia x Argentina @2.05 (tiro 1) · gatilho: time Bósnia e Herzegovina"
+   },
    {
     "quando": "2026-08-02T16:50:50.961Z",
     "resultado": "GREEN",
@@ -4554,44 +4560,15 @@
   "consumidas": {
    "euro": 1785687147258,
    "super": 1785688436468,
-   "premier": 1785689450856
+   "premier": 1785689450856,
+   "copa": 1785690744658
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:07",
-     "jogo": "Escócia x Argentina",
-     "odd": 2.05
-    },
-    {
-     "h": "18:10",
-     "jogo": "México x Bósnia e Herzegovina",
-     "odd": 1.95
-    },
-    {
-     "h": "18:13",
-     "jogo": "Espanha x Brasil",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "time Bósnia e Herzegovina",
-   "alvo": {
-    "h": "18:07",
-    "jogo": "Escócia x Argentina",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785690510163
-   },
-   "iniciadoEm": 1785690510163
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785687147258,
    "super": 1785688436468,
    "premier": 1785689450856,
-   "copa": 1785686909765
+   "copa": 1785690744658
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -4611,13 +4588,13 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -15.2
+   "2026-08-02": -14.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Bósnia e Herzegovina",
    "n": 13,
-   "start": 2
+   "start": 3
   },
   "_obs": {}
  }
