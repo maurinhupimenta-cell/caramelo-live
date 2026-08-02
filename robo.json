@@ -2265,7 +2265,37 @@
    "premier": 1785662252559,
    "euro": 1785662726858
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:43",
+     "jogo": "Itaquera x Santos",
+     "odd": 2.4
+    },
+    {
+     "h": "10:46",
+     "jogo": "Buenos Aires x Montevideo",
+     "odd": 2.02
+    },
+    {
+     "h": "10:49",
+     "jogo": "La Boca x Itaquera",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "placar empate 2-2",
+   "alvo": {
+    "h": "10:43",
+    "jogo": "Itaquera x Santos",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1785663783758
+   },
+   "iniciadoEm": 1785663783758
+  },
   "cooldown": {
    "copa": 1785659904660,
    "premier": 1785662252559,
@@ -2294,8 +2324,8 @@
    "2026-08-02": -21.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGR",
+   "tipo": "placar",
+   "chave": "empate 2-2",
    "n": 8,
    "start": 1
   },
@@ -4322,8 +4352,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRG",
-   "n": 13,
+   "chave": "RRRGR",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
