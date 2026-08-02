@@ -2552,13 +2552,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -69.8,
-  "ciclos": 902,
-  "greens": 612,
+  "saldo": -68.8,
+  "ciclos": 903,
+  "greens": 613,
   "redsCiclo": 99,
   "aborts": 0,
   "descartes": 191,
   "historico": [
+   {
+    "quando": "2026-08-02T22:14:43.955Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Leicester x United @1.98 (tiro 1) · gatilho: odd 2.07"
+   },
    {
     "quando": "2026-08-02T22:04:25.756Z",
     "resultado": "RED_CICLO",
@@ -4733,13 +4739,14 @@
    }
   ],
   "consumidas": {
-   "copa": 1785708265562
+   "copa": 1785708265562,
+   "premier": 1785708883761
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1785702270661,
    "super": 1785693324361,
-   "premier": 1785704969359,
+   "premier": 1785708883761,
    "copa": 1785708265562
   },
   "dias": {
@@ -4760,12 +4767,12 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -43.4
+   "2026-08-02": -42.4
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.15",
-   "n": 8,
+   "chave": "2.07",
+   "n": 20,
    "start": 1
   },
   "_obs": {}
