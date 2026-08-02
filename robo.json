@@ -2205,13 +2205,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -26.4,
-  "ciclos": 846,
-  "greens": 580,
+  "saldo": -25.1,
+  "ciclos": 847,
+  "greens": 581,
   "redsCiclo": 88,
   "aborts": 0,
   "descartes": 178,
   "historico": [
+   {
+    "quando": "2026-08-02T03:59:24.955Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "super · La Plata x Avellaneda @2.15 (tiro 2) · gatilho: odd 2.15"
+   },
    {
     "quando": "2026-08-02T02:49:24.754Z",
     "resultado": "GREEN",
@@ -4049,49 +4055,13 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "04:52",
-     "jogo": "Buenos Aires x Bogota",
-     "odd": 2.05
-    },
-    {
-     "h": "04:55",
-     "jogo": "La Plata x Avellaneda",
-     "odd": 2.15
-    },
-    {
-     "h": "04:58",
-     "jogo": "Quito x Itaquera",
-     "odd": 2
-    }
-   ],
-   "gatilho": "odd 2.15",
-   "alvo": {
-    "h": "04:55",
-    "jogo": "La Plata x Avellaneda",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1785642906457
-   },
-   "iniciadoEm": 1785642566056,
-   "tiros": [
-    {
-     "h": "04:52",
-     "jogo": "Buenos Aires x Bogota",
-     "odd": 2.05,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "super": 1785643164761
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785637213360,
-   "super": 1785638964561,
+   "super": 1785643164761,
    "premier": 1785624685060,
    "copa": 1785636565262
   },
@@ -4112,7 +4082,8 @@
    "2026-07-29": -9.4,
    "2026-07-30": 24,
    "2026-07-31": 20.5,
-   "2026-08-01": -19.4
+   "2026-08-01": -19.4,
+   "2026-08-02": 1.3
   },
   "_gatilhoAtual": {
    "tipo": "odd",
