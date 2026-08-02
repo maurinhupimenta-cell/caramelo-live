@@ -2180,7 +2180,37 @@
   "consumidas": {
    "copa": 1785647189658
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:21",
+     "jogo": "Aston x Tottenham",
+     "odd": 2.55
+    },
+    {
+     "h": "06:24",
+     "jogo": "Leicester x Chelsea",
+     "odd": 2.25
+    },
+    {
+     "h": "06:27",
+     "jogo": "Burnley x City",
+     "odd": 2
+    }
+   ],
+   "gatilho": "seq RRGR",
+   "alvo": {
+    "h": "06:21",
+    "jogo": "Aston x Tottenham",
+    "odd": 2.55,
+    "unidades": 1,
+    "desde": 1785647865560
+   },
+   "iniciadoEm": 1785647865560
+  },
   "cooldown": {
    "copa": 1785647189658,
    "premier": 1785644129257,
@@ -2209,10 +2239,10 @@
    "2026-08-02": 4.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.25",
-   "n": 8,
-   "start": 2
+   "tipo": "seq",
+   "chave": "RRGR",
+   "n": 9,
+   "start": 1
   },
   "_obs": {}
  },
