@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -175.4,
-  "ciclos": 842,
-  "greens": 518,
+  "saldo": -173.8,
+  "ciclos": 843,
+  "greens": 519,
   "redsCiclo": 141,
   "aborts": 0,
   "descartes": 183,
   "historico": [
+   {
+    "quando": "2026-08-02T11:02:31.160Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "euro · Inglaterra x Polônia @2.3 (tiro 2) · gatilho: seq GGGR"
+   },
    {
     "quando": "2026-08-02T10:27:26.455Z",
     "resultado": "GREEN",
@@ -2293,51 +2299,14 @@
   ],
   "consumidas": {
    "copa": 1785665069862,
-   "premier": 1785666446257
+   "premier": 1785666446257,
+   "euro": 1785668551057
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "11:56",
-     "jogo": "Geórgia x Hungria",
-     "odd": 2.45
-    },
-    {
-     "h": "11:59",
-     "jogo": "Inglaterra x Polônia",
-     "odd": 2.3
-    },
-    {
-     "h": "12:02",
-     "jogo": "Escócia x Sérvia",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "seq GGGR",
-   "alvo": {
-    "h": "11:59",
-    "jogo": "Inglaterra x Polônia",
-    "odd": 2.3,
-    "unidades": 2,
-    "desde": 1785668423662
-   },
-   "iniciadoEm": 1785668245654,
-   "tiros": [
-    {
-     "h": "11:56",
-     "jogo": "Geórgia x Hungria",
-     "odd": 2.45,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785665069862,
    "premier": 1785666446257,
-   "euro": 1785662726858,
+   "euro": 1785668551057,
    "super": 1785663987764
   },
   "dias": {
@@ -2359,7 +2328,7 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -16.7
+   "2026-08-02": -15.1
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -4362,7 +4331,45 @@
    "euro": 1785666567264,
    "copa": 1785668548859
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "12:01",
+     "jogo": "Lima x La Plata",
+     "odd": 2.05
+    },
+    {
+     "h": "12:04",
+     "jogo": "Porto Alegre x Medellin",
+     "odd": 2.3
+    },
+    {
+     "h": "12:07",
+     "jogo": "Belo Horizonte x Agua Branca",
+     "odd": 1.83
+    }
+   ],
+   "gatilho": "time Lima",
+   "alvo": {
+    "h": "12:04",
+    "jogo": "Porto Alegre x Medellin",
+    "odd": 2.3,
+    "unidades": 2,
+    "desde": 1785668627754
+   },
+   "iniciadoEm": 1785668551257,
+   "tiros": [
+    {
+     "h": "12:01",
+     "jogo": "Lima x La Plata",
+     "odd": 2.05,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1785666567264,
    "super": 1785660028957,
@@ -4391,9 +4398,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Lima",
-   "n": 16,
-   "start": 1
+   "chave": "Santos",
+   "n": 24,
+   "start": 3
   },
   "_obs": {}
  }
