@@ -2497,7 +2497,37 @@
   "consumidas": {
    "copa": 1785703947660
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:49",
+     "jogo": "Lima x Bogota",
+     "odd": 2.4
+    },
+    {
+     "h": "22:52",
+     "jogo": "Montevideo x Buenos Aires",
+     "odd": 2
+    },
+    {
+     "h": "22:55",
+     "jogo": "Agua Branca x Belo Horizonte",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "odd 2",
+   "alvo": {
+    "h": "22:49",
+    "jogo": "Lima x Bogota",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1785706823061
+   },
+   "iniciadoEm": 1785706823061
+  },
   "cooldown": {
    "copa": 1785703947660,
    "premier": 1785698502357,
@@ -2526,17 +2556,12 @@
    "2026-08-02": -27.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":58",
-   "n": 20,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2",
+   "n": 13,
+   "start": 3
   },
-  "_obs": {
-   "super": {
-    "desde": 1785706815363,
-    "gatilho": "odd 2"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -62.8,
