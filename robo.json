@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -172.5,
-  "ciclos": 844,
-  "greens": 520,
+  "saldo": -171.4,
+  "ciclos": 845,
+  "greens": 521,
   "redsCiclo": 141,
   "aborts": 0,
   "descartes": 183,
   "historico": [
+   {
+    "quando": "2026-08-02T11:44:27.460Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Burnley x Everton @2.05 (tiro 2) · gatilho: seq RRRG"
+   },
    {
     "quando": "2026-08-02T11:16:24.361Z",
     "resultado": "GREEN",
@@ -2305,50 +2311,13 @@
   ],
   "consumidas": {
    "euro": 1785668551057,
-   "copa": 1785669384164
+   "copa": 1785669384164,
+   "premier": 1785671067357
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "12:36",
-     "jogo": "Southampton x City",
-     "odd": 2.2
-    },
-    {
-     "h": "12:39",
-     "jogo": "Burnley x Everton",
-     "odd": 2.05
-    },
-    {
-     "h": "12:42",
-     "jogo": "Brighton x Watford",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "seq RRRG",
-   "alvo": {
-    "h": "12:39",
-    "jogo": "Burnley x Everton",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1785670723461
-   },
-   "iniciadoEm": 1785670408363,
-   "tiros": [
-    {
-     "h": "12:36",
-     "jogo": "Southampton x City",
-     "odd": 2.2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785669384164,
-   "premier": 1785666446257,
+   "premier": 1785671067357,
    "euro": 1785668551057,
    "super": 1785663987764
   },
@@ -2371,12 +2340,12 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -13.8
+   "2026-08-02": -12.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGRR",
-   "n": 8,
+   "tipo": "odd",
+   "chave": "2.07",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
