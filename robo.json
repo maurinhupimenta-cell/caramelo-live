@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -161.8,
-  "ciclos": 818,
-  "greens": 504,
+  "saldo": -160,
+  "ciclos": 819,
+  "greens": 505,
   "redsCiclo": 136,
   "aborts": 0,
   "descartes": 178,
   "historico": [
+   {
+    "quando": "2026-08-02T01:22:32.058Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "copa · Jordânia x África do Sul @2.4 (tiro 2) · gatilho: placar 0-0"
+   },
    {
     "quando": "2026-08-01T22:49:09.159Z",
     "resultado": "GREEN",
@@ -2147,48 +2153,12 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "02:16",
-     "jogo": "Tunísia x Nova Zelândia",
-     "odd": 2.45
-    },
-    {
-     "h": "02:19",
-     "jogo": "Jordânia x África do Sul",
-     "odd": 2.4
-    },
-    {
-     "h": "02:22",
-     "jogo": "Uzbequistão x Noruega",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "placar 0-0",
-   "alvo": {
-    "h": "02:19",
-    "jogo": "Jordânia x África do Sul",
-    "odd": 2.4,
-    "unidades": 2,
-    "desde": 1785633553255
-   },
-   "iniciadoEm": 1785633206557,
-   "tiros": [
-    {
-     "h": "02:16",
-     "jogo": "Tunísia x Nova Zelândia",
-     "odd": 2.45,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "copa": 1785633751862
   },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785623190461,
+   "copa": 1785633751862,
    "premier": 1785623926866,
    "euro": 1785624548964,
    "super": 1785621687262
@@ -2211,7 +2181,7 @@
    "2026-07-29": 25.4,
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
-   "2026-08-01": -6
+   "2026-08-01": -4.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
