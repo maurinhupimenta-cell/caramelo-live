@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -166,
-  "ciclos": 848,
-  "greens": 524,
+  "saldo": -164.7,
+  "ciclos": 849,
+  "greens": 525,
   "redsCiclo": 141,
   "aborts": 0,
   "descartes": 183,
   "historico": [
+   {
+    "quando": "2026-08-02T13:31:03.759Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "copa · Jordânia x Uzbequistão @2.25 (tiro 1) · gatilho: time Jordânia"
+   },
    {
     "quando": "2026-08-02T12:50:47.854Z",
     "resultado": "GREEN",
@@ -2328,41 +2334,12 @@
    }
   ],
   "consumidas": {
-   "premier": 1785675047656
+   "premier": 1785675047656,
+   "copa": 1785677463563
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:28",
-     "jogo": "Jordânia x Uzbequistão",
-     "odd": 2.25
-    },
-    {
-     "h": "14:31",
-     "jogo": "Colômbia x Tunísia",
-     "odd": 2.5
-    },
-    {
-     "h": "14:34",
-     "jogo": "Austrália x Jordânia",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Jordânia",
-   "alvo": {
-    "h": "14:28",
-    "jogo": "Jordânia x Uzbequistão",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785677184858
-   },
-   "iniciadoEm": 1785677184858
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785673584262,
+   "copa": 1785677463563,
    "premier": 1785675047656,
    "euro": 1785668551057,
    "super": 1785673643567
@@ -2386,12 +2363,12 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -7.3
+   "2026-08-02": -6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2",
-   "n": 9,
+   "tipo": "time",
+   "chave": "Jordânia",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
