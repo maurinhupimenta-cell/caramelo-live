@@ -4531,7 +4531,37 @@
    "copa": 1785686909765,
    "euro": 1785687147258
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:31",
+     "jogo": "Medellin x Itaquera",
+     "odd": 2.05
+    },
+    {
+     "h": "17:34",
+     "jogo": "Montevideo x Rio de Janeiro",
+     "odd": 1.9
+    },
+    {
+     "h": "17:37",
+     "jogo": "Buenos Aires x Bogota",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "odd 1.9",
+   "alvo": {
+    "h": "17:31",
+    "jogo": "Medellin x Itaquera",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785687906956
+   },
+   "iniciadoEm": 1785687906956
+  },
   "cooldown": {
    "euro": 1785687147258,
    "super": 1785683584760,
@@ -4561,8 +4591,8 @@
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "1.9",
-   "n": 12,
-   "start": 1
+   "n": 20,
+   "start": 3
   },
   "_obs": {}
  }
