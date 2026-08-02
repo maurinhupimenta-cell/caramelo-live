@@ -4397,7 +4397,37 @@
    "super": 1785673406056,
    "euro": 1785675905663
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:25",
+     "jogo": "Croácia x Espanha",
+     "odd": 1.98
+    },
+    {
+     "h": "14:28",
+     "jogo": "Jordânia x Uzbequistão",
+     "odd": 1.95
+    },
+    {
+     "h": "14:31",
+     "jogo": "Colômbia x Tunísia",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time Jordânia",
+   "alvo": {
+    "h": "14:25",
+    "jogo": "Croácia x Espanha",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785676561056
+   },
+   "iniciadoEm": 1785676561056
+  },
   "cooldown": {
    "euro": 1785675905663,
    "super": 1785673406056,
@@ -4425,10 +4455,10 @@
    "2026-08-02": -24.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGG",
-   "n": 17,
-   "start": 1
+   "tipo": "time",
+   "chave": "Jordânia",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  }
