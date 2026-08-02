@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -173.8,
-  "ciclos": 835,
+  "saldo": -180.8,
+  "ciclos": 836,
   "greens": 514,
-  "redsCiclo": 140,
+  "redsCiclo": 141,
   "aborts": 0,
   "descartes": 181,
   "historico": [
+   {
+    "quando": "2026-08-02T09:17:32.664Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: coluna :06"
+   },
    {
     "quando": "2026-08-02T08:40:28.861Z",
     "resultado": "GREEN",
@@ -2251,56 +2257,13 @@
   ],
   "consumidas": {
    "copa": 1785659904660,
-   "super": 1785660028665
+   "super": 1785660028665,
+   "premier": 1785662252559
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "10:06",
-     "jogo": "Wolverhampton x Everton",
-     "odd": 2.02
-    },
-    {
-     "h": "10:09",
-     "jogo": "West Ham x City",
-     "odd": 2.3
-    },
-    {
-     "h": "10:12",
-     "jogo": "Brighton x Tottenham",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "coluna :06",
-   "alvo": {
-    "h": "10:12",
-    "jogo": "Brighton x Tottenham",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1785662012266
-   },
-   "iniciadoEm": 1785661464258,
-   "tiros": [
-    {
-     "h": "10:06",
-     "jogo": "Wolverhampton x Everton",
-     "odd": 2.02,
-     "unidades": 1
-    },
-    {
-     "h": "10:09",
-     "jogo": "West Ham x City",
-     "odd": 2.3,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785659904660,
-   "premier": 1785657811856,
+   "premier": 1785662252559,
    "euro": 1785624548964,
    "super": 1785660028665
   },
@@ -2323,24 +2286,30 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -15.1
+   "2026-08-02": -22.1
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.07",
    "n": 13,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -36.1,
-  "ciclos": 864,
+  "saldo": -43.1,
+  "ciclos": 865,
   "greens": 590,
-  "redsCiclo": 91,
+  "redsCiclo": 92,
   "aborts": 0,
   "descartes": 183,
   "historico": [
+   {
+    "quando": "2026-08-02T09:17:30.562Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: coluna :11"
+   },
    {
     "quando": "2026-08-02T09:09:29.354Z",
     "resultado": "GREEN_OBS",
@@ -4288,55 +4257,12 @@
   ],
   "consumidas": {
    "copa": 1785659904957,
-   "super": 1785660028957
+   "super": 1785660028957,
+   "euro": 1785662250459
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "10:08",
-     "jogo": "Áustria x Ucrânia",
-     "odd": 2.02
-    },
-    {
-     "h": "10:11",
-     "jogo": "Sérvia x Países Baixos",
-     "odd": 1.95
-    },
-    {
-     "h": "10:14",
-     "jogo": "Geórgia x Eslováquia",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "coluna :11",
-   "alvo": {
-    "h": "10:14",
-    "jogo": "Geórgia x Eslováquia",
-    "odd": 2.05,
-    "unidades": 4,
-    "desde": 1785662123455
-   },
-   "iniciadoEm": 1785661824160,
-   "tiros": [
-    {
-     "h": "10:08",
-     "jogo": "Áustria x Ucrânia",
-     "odd": 2.02,
-     "unidades": 1
-    },
-    {
-     "h": "10:11",
-     "jogo": "Sérvia x Países Baixos",
-     "odd": 1.95,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785658168065,
+   "euro": 1785662250459,
    "super": 1785660028957,
    "premier": 1785624685060,
    "copa": 1785659904957
@@ -4359,7 +4285,7 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -9.7
+   "2026-08-02": -16.7
   },
   "_gatilhoAtual": {
    "tipo": "seq",
