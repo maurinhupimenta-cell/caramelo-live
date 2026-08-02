@@ -4629,7 +4629,37 @@
    "euro": 1785696025763,
    "premier": 1785699343265
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:16",
+     "jogo": "Bélgica x Argélia",
+     "odd": 2.05
+    },
+    {
+     "h": "20:19",
+     "jogo": "Austrália x Arábia Saudita",
+     "odd": 1.87
+    },
+    {
+     "h": "20:22",
+     "jogo": "EUA x Croácia",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "odd 2.05",
+   "alvo": {
+    "h": "20:16",
+    "jogo": "Bélgica x Argélia",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785699368364
+   },
+   "iniciadoEm": 1785699368364
+  },
   "cooldown": {
    "euro": 1785696025763,
    "super": 1785693324361,
@@ -4658,9 +4688,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.07",
-   "n": 18,
-   "start": 2
+   "chave": "2.05",
+   "n": 12,
+   "start": 1
   },
   "_obs": {}
  }
