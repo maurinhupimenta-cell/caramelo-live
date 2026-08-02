@@ -243,13 +243,19 @@
   }
  },
  "o25": {
-  "saldo": -167.5,
-  "ciclos": 847,
-  "greens": 523,
+  "saldo": -166,
+  "ciclos": 848,
+  "greens": 524,
   "redsCiclo": 141,
   "aborts": 0,
   "descartes": 183,
   "historico": [
+   {
+    "quando": "2026-08-02T12:50:47.854Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "premier · Palace x Watford @2.25 (tiro 2) · gatilho: seq RRGRR"
+   },
    {
     "quando": "2026-08-02T12:27:23.776Z",
     "resultado": "GREEN",
@@ -2323,50 +2329,13 @@
   ],
   "consumidas": {
    "copa": 1785673584262,
-   "super": 1785673643567
+   "super": 1785673643567,
+   "premier": 1785675047656
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "13:45",
-     "jogo": "Newcastle x Brentford",
-     "odd": 2.15
-    },
-    {
-     "h": "13:48",
-     "jogo": "Palace x Watford",
-     "odd": 2.25
-    },
-    {
-     "h": "13:51",
-     "jogo": "Aston x Newcastle",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "seq RRGRR",
-   "alvo": {
-    "h": "13:48",
-    "jogo": "Palace x Watford",
-    "odd": 2.25,
-    "unidades": 2,
-    "desde": 1785674865560
-   },
-   "iniciadoEm": 1785674680857,
-   "tiros": [
-    {
-     "h": "13:45",
-     "jogo": "Newcastle x Brentford",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785673584262,
-   "premier": 1785671067357,
+   "premier": 1785675047656,
    "euro": 1785668551057,
    "super": 1785673643567
   },
@@ -2389,12 +2358,12 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -8.8
+   "2026-08-02": -7.3
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRGRR",
-   "n": 15,
+   "chave": "RRRG",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
