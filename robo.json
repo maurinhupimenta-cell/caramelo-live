@@ -2507,7 +2507,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:58",
+     "jogo": "Haiti x Coreia do Sul",
+     "odd": 2.3
+    },
+    {
+     "h": "23:01",
+     "jogo": "Uruguai x Curação",
+     "odd": 2.15
+    },
+    {
+     "h": "23:04",
+     "jogo": "Inglaterra x Irã",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "coluna :58",
+   "alvo": {
+    "h": "22:58",
+    "jogo": "Haiti x Coreia do Sul",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1785707725758
+   },
+   "iniciadoEm": 1785707725758
+  },
   "cooldown": {
    "copa": 1785703947660,
    "premier": 1785698502357,
@@ -2541,12 +2571,7 @@
    "n": 21,
    "start": 1
   },
-  "_obs": {
-   "super": {
-    "desde": 1785707725756,
-    "gatilho": "odd 2"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -62.8,
@@ -4728,8 +4753,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "22:55",
@@ -4749,13 +4774,21 @@
    ],
    "gatilho": "coluna :58",
    "alvo": {
-    "h": "22:55",
-    "jogo": "Costa do Marfim x Turquia",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1785707604754
+    "h": "22:58",
+    "jogo": "Haiti x Coreia do Sul",
+    "odd": 2,
+    "unidades": 2,
+    "desde": 1785707912866
    },
-   "iniciadoEm": 1785707604754
+   "iniciadoEm": 1785707604754,
+   "tiros": [
+    {
+     "h": "22:55",
+     "jogo": "Costa do Marfim x Turquia",
+     "odd": 1.93,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785702270661,
@@ -4784,10 +4817,10 @@
    "2026-08-02": -36.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":58",
-   "n": 21,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.15",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  }
