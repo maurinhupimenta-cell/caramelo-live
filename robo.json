@@ -4317,7 +4317,37 @@
   "consumidas": {
    "euro": 1785666567264
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:58",
+     "jogo": "França x Jordânia",
+     "odd": 2.05
+    },
+    {
+     "h": "12:01",
+     "jogo": "Irã x Costa do Marfim",
+     "odd": 2.05
+    },
+    {
+     "h": "12:04",
+     "jogo": "Equador x Bósnia e Herzegovina",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "time Jordânia",
+   "alvo": {
+    "h": "11:58",
+    "jogo": "França x Jordânia",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785668184954
+   },
+   "iniciadoEm": 1785668184954
+  },
   "cooldown": {
    "euro": 1785666567264,
    "super": 1785660028957,
@@ -4345,16 +4375,11 @@
    "2026-08-02": -30.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2",
-   "n": 15,
+   "tipo": "time",
+   "chave": "Jordânia",
+   "n": 10,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785667769964,
-    "gatilho": "time República Tcheca"
-   }
-  }
+  "_obs": {}
  }
 }
