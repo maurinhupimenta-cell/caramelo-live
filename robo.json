@@ -2211,13 +2211,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -25.1,
-  "ciclos": 848,
+  "saldo": -32.1,
+  "ciclos": 849,
   "greens": 581,
-  "redsCiclo": 88,
+  "redsCiclo": 89,
   "aborts": 0,
   "descartes": 179,
   "historico": [
+   {
+    "quando": "2026-08-02T04:20:28.958Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: time Eslovênia"
+   },
    {
     "quando": "2026-08-02T04:06:24.673Z",
     "resultado": "GREEN_OBS",
@@ -4068,55 +4074,12 @@
    }
   ],
   "consumidas": {
-   "super": 1785643164761
+   "super": 1785643164761,
+   "euro": 1785644428854
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "05:11",
-     "jogo": "Eslováquia x Albânia",
-     "odd": 2.2
-    },
-    {
-     "h": "05:14",
-     "jogo": "Polônia x Eslovênia",
-     "odd": 2.35
-    },
-    {
-     "h": "05:17",
-     "jogo": "Portugal x Sérvia",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "time Eslovênia",
-   "alvo": {
-    "h": "05:17",
-    "jogo": "Portugal x Sérvia",
-    "odd": 2.1,
-    "unidades": 4,
-    "desde": 1785644280857
-   },
-   "iniciadoEm": 1785643586555,
-   "tiros": [
-    {
-     "h": "05:11",
-     "jogo": "Eslováquia x Albânia",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "05:14",
-     "jogo": "Polônia x Eslovênia",
-     "odd": 2.35,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785637213360,
+   "euro": 1785644428854,
    "super": 1785643164761,
    "premier": 1785624685060,
    "copa": 1785636565262
@@ -4139,13 +4102,13 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": 1.3
+   "2026-08-02": -5.7
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Eslovênia",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
