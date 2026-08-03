@@ -2909,13 +2909,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -70.9,
-  "ciclos": 950,
-  "greens": 646,
+  "saldo": -70.1,
+  "ciclos": 951,
+  "greens": 647,
   "redsCiclo": 104,
   "aborts": 0,
   "descartes": 200,
   "historico": [
+   {
+    "quando": "2026-08-03T22:24:11.154Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "premier · Newcastle x Wolverhampton @1.76 (tiro 1) · gatilho: seq RRRGG"
+   },
    {
     "quando": "2026-08-03T21:20:02.862Z",
     "resultado": "GREEN",
@@ -5377,42 +5383,14 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:21",
-     "jogo": "Newcastle x Wolverhampton",
-     "odd": 1.76
-    },
-    {
-     "h": "23:24",
-     "jogo": "Tottenham x Chelsea",
-     "odd": 2.05
-    },
-    {
-     "h": "23:27",
-     "jogo": "Brentford x Aston",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "seq RRRGG",
-   "alvo": {
-    "h": "23:21",
-    "jogo": "Newcastle x Wolverhampton",
-    "odd": 1.76,
-    "unidades": 1,
-    "desde": 1785795476560
-   },
-   "iniciadoEm": 1785795476560
+  "consumidas": {
+   "premier": 1785795850863
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785790499468,
    "super": 1785792002667,
-   "premier": 1785791164656,
+   "premier": 1785795850863,
    "copa": 1785737246559
   },
   "dias": {
@@ -5434,12 +5412,12 @@
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
-   "2026-08-03": -1.2
+   "2026-08-03": -0.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRGG",
-   "n": 13,
+   "tipo": "time",
+   "chave": "Agua Branca",
+   "n": 45,
    "start": 1
   },
   "_obs": {}
