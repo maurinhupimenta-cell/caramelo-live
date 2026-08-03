@@ -5153,7 +5153,37 @@
    "super": 1785756469262,
    "premier": 1785757300964
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:26",
+     "jogo": "Geórgia x França",
+     "odd": 1.95
+    },
+    {
+     "h": "13:29",
+     "jogo": "Hungria x Eslováquia",
+     "odd": 2.07
+    },
+    {
+     "h": "13:32",
+     "jogo": "Países Baixos x Geórgia",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "time Eslováquia",
+   "alvo": {
+    "h": "13:26",
+    "jogo": "Geórgia x França",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1785759428054
+   },
+   "iniciadoEm": 1785759428054
+  },
   "cooldown": {
    "euro": 1785755127964,
    "super": 1785756469262,
@@ -5182,10 +5212,10 @@
    "2026-08-03": -6.4
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 8,
-   "start": 1
+   "tipo": "time",
+   "chave": "Eslováquia",
+   "n": 20,
+   "start": 3
   },
   "_obs": {}
  }
