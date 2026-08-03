@@ -2695,7 +2695,37 @@
   "consumidas": {
    "super": 1785749811155
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:37",
+     "jogo": "Equador x Irã",
+     "odd": 2.4
+    },
+    {
+     "h": "11:40",
+     "jogo": "Jordânia x Bélgica",
+     "odd": 2.25
+    },
+    {
+     "h": "11:43",
+     "jogo": "Coreia do Sul x Escócia",
+     "odd": 2.75
+    }
+   ],
+   "gatilho": "coluna :40",
+   "alvo": {
+    "h": "11:37",
+    "jogo": "Equador x Irã",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1785752885965
+   },
+   "iniciadoEm": 1785752885965
+  },
   "cooldown": {
    "copa": 1785746585661,
    "premier": 1785747578967,
@@ -2726,9 +2756,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":43",
-   "n": 10,
-   "start": 1
+   "chave": ":40",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  },
