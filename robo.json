@@ -4771,8 +4771,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "01:55",
@@ -4792,13 +4792,21 @@
    ],
    "gatilho": "placar goleada (3+)",
    "alvo": {
-    "h": "01:55",
-    "jogo": "RD Congo x Curação",
-    "odd": 1.85,
-    "unidades": 1,
-    "desde": 1785718404955
+    "h": "01:58",
+    "jogo": "Brasil x Gana",
+    "odd": 2.075,
+    "unidades": 2,
+    "desde": 1785718763460
    },
-   "iniciadoEm": 1785718404955
+   "iniciadoEm": 1785718404955,
+   "tiros": [
+    {
+     "h": "01:55",
+     "jogo": "RD Congo x Curação",
+     "odd": 1.85,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785702270661,
@@ -4829,7 +4837,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "goleada (3+)",
-   "n": 9,
+   "n": 10,
    "start": 1
   },
   "_obs": {}
