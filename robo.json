@@ -2685,7 +2685,37 @@
    "copa": 1785746585661,
    "premier": 1785747578967
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:14",
+     "jogo": "Espanha x Geórgia",
+     "odd": 2.2
+    },
+    {
+     "h": "10:17",
+     "jogo": "França x Dinamarca",
+     "odd": 2.2
+    },
+    {
+     "h": "10:20",
+     "jogo": "Geórgia x Portugal",
+     "odd": 2.29
+    }
+   ],
+   "gatilho": "time França",
+   "alvo": {
+    "h": "10:14",
+    "jogo": "Espanha x Geórgia",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785747908257
+   },
+   "iniciadoEm": 1785747908257
+  },
   "cooldown": {
    "copa": 1785746585661,
    "premier": 1785747578967,
@@ -2715,10 +2745,10 @@
    "2026-08-03": 9.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":00",
-   "n": 9,
-   "start": 1
+   "tipo": "time",
+   "chave": "França",
+   "n": 19,
+   "start": 3
   },
   "_obs": {}
  },
@@ -5124,7 +5154,7 @@
    "tipo": "odd",
    "chave": "2.2",
    "n": 9,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
