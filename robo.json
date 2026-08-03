@@ -2606,13 +2606,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -73.7,
-  "ciclos": 909,
-  "greens": 616,
+  "saldo": -72.4,
+  "ciclos": 910,
+  "greens": 617,
   "redsCiclo": 100,
   "aborts": 0,
   "descartes": 193,
   "historico": [
+   {
+    "quando": "2026-08-03T02:11:26.253Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "euro · Eslovênia x Dinamarca @2.25 (tiro 1) · gatilho: time Eslovênia"
+   },
    {
     "quando": "2026-08-03T02:05:41.557Z",
     "resultado": "GREEN",
@@ -4830,41 +4836,12 @@
   ],
   "consumidas": {
    "super": 1785719767560,
-   "premier": 1785722741362
+   "premier": 1785722741362,
+   "euro": 1785723085963
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:08",
-     "jogo": "Eslovênia x Dinamarca",
-     "odd": 2.25
-    },
-    {
-     "h": "03:11",
-     "jogo": "Hungria x Países Baixos",
-     "odd": 1.93
-    },
-    {
-     "h": "03:14",
-     "jogo": "Itália x Alemanha",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "time Eslovênia",
-   "alvo": {
-    "h": "03:08",
-    "jogo": "Eslovênia x Dinamarca",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785722747359
-   },
-   "iniciadoEm": 1785722747359
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785702270661,
+   "euro": 1785723085963,
    "super": 1785719767560,
    "premier": 1785722741362,
    "copa": 1785719129662
@@ -4887,7 +4864,7 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -47.3
+   "2026-08-02": -46
   },
   "_gatilhoAtual": {
    "tipo": "time",
