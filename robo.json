@@ -261,12 +261,18 @@
  },
  "o25": {
   "saldo": -189.6,
-  "ciclos": 886,
+  "ciclos": 887,
   "greens": 542,
   "redsCiclo": 148,
   "aborts": 0,
-  "descartes": 196,
+  "descartes": 197,
   "historico": [
+   {
+    "quando": "2026-08-03T04:15:24.154Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho time Burnley) — liga REARMADA"
+   },
    {
     "quando": "2026-08-03T03:59:23.557Z",
     "resultado": "GREEN",
@@ -2573,11 +2579,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1785726885060,
    "super": 1785727523565,
    "euro": 1785729563357
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:18",
+     "jogo": "Burnley x Chelsea",
+     "odd": 2.1
+    },
+    {
+     "h": "05:21",
+     "jogo": "Norwich x City",
+     "odd": 2.05
+    },
+    {
+     "h": "05:24",
+     "jogo": "Watford x Leeds",
+     "odd": 2.55
+    }
+   ],
+   "gatilho": "time Burnley",
+   "alvo": {
+    "h": "05:18",
+    "jogo": "Burnley x Chelsea",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785730525967
+   },
+   "iniciadoEm": 1785730525967
+  },
   "cooldown": {
    "copa": 1785724344156,
    "premier": 1785726885060,
@@ -2607,21 +2642,27 @@
    "2026-08-03": -3.4
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 11,
+   "tipo": "time",
+   "chave": "Burnley",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -90.7,
-  "ciclos": 916,
+  "ciclos": 917,
   "greens": 619,
   "redsCiclo": 103,
   "aborts": 0,
-  "descartes": 194,
+  "descartes": 195,
   "historico": [
+   {
+    "quando": "2026-08-03T04:15:24.161Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho time Burnley) — liga REARMADA"
+   },
    {
     "quando": "2026-08-03T04:08:29.160Z",
     "resultado": "RED_CICLO",
@@ -4880,11 +4921,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1785726885262,
    "euro": 1785727527462,
    "super": 1785730108963
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:18",
+     "jogo": "Burnley x Chelsea",
+     "odd": 1.9
+    },
+    {
+     "h": "05:21",
+     "jogo": "Norwich x City",
+     "odd": 1.9
+    },
+    {
+     "h": "05:24",
+     "jogo": "Watford x Leeds",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time Burnley",
+   "alvo": {
+    "h": "05:18",
+    "jogo": "Burnley x Chelsea",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1785730526254
+   },
+   "iniciadoEm": 1785730526254
+  },
   "cooldown": {
    "euro": 1785727527463,
    "super": 1785730108963,
@@ -4914,8 +4984,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Sao Paulo",
-   "n": 11,
+   "chave": "Burnley",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
