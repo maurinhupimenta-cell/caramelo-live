@@ -2732,7 +2732,37 @@
    "super": 1785756469060,
    "copa": 1785758685961
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:05",
+     "jogo": "Ucrânia x Alemanha",
+     "odd": 2.2
+    },
+    {
+     "h": "13:08",
+     "jogo": "Bélgica x Sérvia",
+     "odd": 2.35
+    },
+    {
+     "h": "13:11",
+     "jogo": "Turquia x Espanha",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "seq RRGG",
+   "alvo": {
+    "h": "13:05",
+    "jogo": "Ucrânia x Alemanha",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785758688265
+   },
+   "iniciadoEm": 1785758688265
+  },
   "cooldown": {
    "copa": 1785758685961,
    "premier": 1785754793759,
@@ -5143,7 +5173,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1785755127964,
    "super": 1785756469262,
    "premier": 1785757300964
   },
