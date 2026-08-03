@@ -5083,10 +5083,39 @@
    }
   ],
   "consumidas": {
-   "super": 1785748029665,
    "euro": 1785750067659
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:10",
+     "jogo": "Lima x Belo Horizonte",
+     "odd": 1.86
+    },
+    {
+     "h": "11:13",
+     "jogo": "La Boca x Agua Branca",
+     "odd": 1.98
+    },
+    {
+     "h": "11:16",
+     "jogo": "Asuncion x Santiago",
+     "odd": 1.87
+    }
+   ],
+   "gatilho": "time Agua Branca",
+   "alvo": {
+    "h": "11:10",
+    "jogo": "Lima x Belo Horizonte",
+    "odd": 1.86,
+    "unidades": 1,
+    "desde": 1785751630362
+   },
+   "iniciadoEm": 1785751630362
+  },
   "cooldown": {
    "euro": 1785750067659,
    "super": 1785748029665,
@@ -5116,8 +5145,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Eslováquia",
-   "n": 16,
+   "chave": "Agua Branca",
+   "n": 22,
    "start": 1
   },
   "_obs": {}
