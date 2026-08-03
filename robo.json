@@ -2597,13 +2597,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -71.2,
-  "ciclos": 912,
-  "greens": 618,
+  "saldo": -69.7,
+  "ciclos": 913,
+  "greens": 619,
   "redsCiclo": 100,
   "aborts": 0,
   "descartes": 194,
   "historico": [
+   {
+    "quando": "2026-08-03T02:52:25.660Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "super · Itaquera x Porto Alegre @2.25 (tiro 2) · gatilho: time Itaquera"
+   },
    {
     "quando": "2026-08-03T02:37:27.964Z",
     "resultado": "GREEN_OBS",
@@ -4840,50 +4846,13 @@
   "consumidas": {
    "premier": 1785722741362,
    "euro": 1785723085963,
-   "copa": 1785723385956
+   "copa": 1785723385956,
+   "super": 1785725545553
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "03:46",
-     "jogo": "Buenos Aires x Belo Horizonte",
-     "odd": 1.8
-    },
-    {
-     "h": "03:49",
-     "jogo": "Itaquera x Porto Alegre",
-     "odd": 2.25
-    },
-    {
-     "h": "03:52",
-     "jogo": "Agua Branca x Avellaneda",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "time Itaquera",
-   "alvo": {
-    "h": "03:49",
-    "jogo": "Itaquera x Porto Alegre",
-    "odd": 2.25,
-    "unidades": 2,
-    "desde": 1785725344264
-   },
-   "iniciadoEm": 1785724649463,
-   "tiros": [
-    {
-     "h": "03:46",
-     "jogo": "Buenos Aires x Belo Horizonte",
-     "odd": 1.8,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785723085963,
-   "super": 1785719767560,
+   "super": 1785725545553,
    "premier": 1785722741362,
    "copa": 1785723385956
   },
@@ -4905,11 +4874,11 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -44.8
+   "2026-08-02": -43.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRR",
+   "tipo": "time",
+   "chave": "Sao Paulo",
    "n": 8,
    "start": 1
   },
