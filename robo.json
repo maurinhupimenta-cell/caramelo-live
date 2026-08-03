@@ -260,13 +260,25 @@
   }
  },
  "o25": {
-  "saldo": -179.9,
-  "ciclos": 901,
-  "greens": 554,
+  "saldo": -178.5,
+  "ciclos": 903,
+  "greens": 555,
   "redsCiclo": 149,
   "aborts": 0,
-  "descartes": 198,
+  "descartes": 199,
   "historico": [
+   {
+    "quando": "2026-08-03T08:43:05.864Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "copa · Bélgica x Uzbequistão @2.35 (tiro 1) · gatilho: coluna :40"
+   },
+   {
+    "quando": "2026-08-03T08:37:07.959Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho coluna :40) — liga REARMADA"
+   },
    {
     "quando": "2026-08-03T08:25:09.956Z",
     "resultado": "GREEN",
@@ -2664,11 +2676,12 @@
   ],
   "consumidas": {
    "euro": 1785743750354,
-   "super": 1785745509759
+   "super": 1785745509759,
+   "copa": 1785746585661
   },
   "ciclo": null,
   "cooldown": {
-   "copa": 1785742626356,
+   "copa": 1785746585661,
    "premier": 1785740930955,
    "euro": 1785743750354,
    "super": 1785745509759
@@ -2693,12 +2706,12 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 6.3
+   "2026-08-03": 7.7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Bogota",
-   "n": 20,
+   "tipo": "coluna",
+   "chave": ":40",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
