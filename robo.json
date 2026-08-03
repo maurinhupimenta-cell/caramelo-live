@@ -2651,12 +2651,41 @@
    }
   ],
   "consumidas": {
-   "euro": 1785739786268,
    "premier": 1785740930955,
    "super": 1785741370161,
    "copa": 1785742626356
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:53",
+     "jogo": "Espanha x Áustria",
+     "odd": 2.15
+    },
+    {
+     "h": "08:56",
+     "jogo": "França x Escócia",
+     "odd": 2.1
+    },
+    {
+     "h": "08:59",
+     "jogo": "Croácia x Hungria",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "time França",
+   "alvo": {
+    "h": "08:53",
+    "jogo": "Espanha x Áustria",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785743386364
+   },
+   "iniciadoEm": 1785743386364
+  },
   "cooldown": {
    "copa": 1785742626356,
    "premier": 1785740930955,
@@ -2686,10 +2715,10 @@
    "2026-08-03": 3.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":40",
-   "n": 8,
-   "start": 1
+   "tipo": "time",
+   "chave": "França",
+   "n": 16,
+   "start": 2
   },
   "_obs": {}
  },
