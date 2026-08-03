@@ -5317,7 +5317,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:29",
+     "jogo": "Eslováquia x Polônia",
+     "odd": 2.1
+    },
+    {
+     "h": "21:32",
+     "jogo": "Espanha x Países Baixos",
+     "odd": 1.8
+    },
+    {
+     "h": "20:44",
+     "jogo": "Romênia x Turquia",
+     "odd": 2
+    }
+   ],
+   "gatilho": "coluna :32",
+   "alvo": {
+    "h": "21:29",
+    "jogo": "Eslováquia x Polônia",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785788398463
+   },
+   "iniciadoEm": 1785788398463
+  },
   "cooldown": {
    "euro": 1785782397555,
    "super": 1785761869262,
@@ -5346,10 +5376,10 @@
    "2026-08-03": -3.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGGG",
-   "n": 9,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":32",
+   "n": 21,
+   "start": 3
   },
   "_obs": {}
  }
