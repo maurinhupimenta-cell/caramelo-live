@@ -2657,12 +2657,18 @@
  },
  "ambas": {
   "saldo": -90.7,
-  "ciclos": 917,
+  "ciclos": 918,
   "greens": 619,
   "redsCiclo": 103,
   "aborts": 0,
-  "descartes": 195,
+  "descartes": 196,
   "historico": [
+   {
+    "quando": "2026-08-03T04:26:29.156Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho time França) — liga REARMADA"
+   },
    {
     "quando": "2026-08-03T04:15:24.161Z",
     "resultado": "GREEN_OBS",
@@ -5007,6 +5013,11 @@
    "n": 8,
    "start": 3
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1785731131959,
+    "gatilho": "time França"
+   }
+  }
  }
 }
