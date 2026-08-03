@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -181,
-  "ciclos": 894,
-  "greens": 548,
+  "saldo": -179.4,
+  "ciclos": 895,
+  "greens": 549,
   "redsCiclo": 148,
   "aborts": 0,
   "descartes": 198,
   "historico": [
+   {
+    "quando": "2026-08-03T06:24:47.760Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "copa · Costa do Marfim x Colômbia @2.15 (tiro 3) · gatilho: time Escócia"
+   },
    {
     "quando": "2026-08-03T05:58:10.056Z",
     "resultado": "GREEN",
@@ -2622,55 +2628,12 @@
   ],
   "consumidas": {
    "premier": 1785735993766,
-   "super": 1785736689860
+   "super": 1785736689860,
+   "copa": 1785738287654
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "07:16",
-     "jogo": "Uzbequistão x Iraque",
-     "odd": 2.45
-    },
-    {
-     "h": "07:19",
-     "jogo": "Escócia x México",
-     "odd": 2.5
-    },
-    {
-     "h": "07:22",
-     "jogo": "Costa do Marfim x Colômbia",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "time Escócia",
-   "alvo": {
-    "h": "07:22",
-    "jogo": "Costa do Marfim x Colômbia",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1785738106160
-   },
-   "iniciadoEm": 1785737246363,
-   "tiros": [
-    {
-     "h": "07:16",
-     "jogo": "Uzbequistão x Iraque",
-     "odd": 2.45,
-     "unidades": 1
-    },
-    {
-     "h": "07:19",
-     "jogo": "Escócia x México",
-     "odd": 2.5,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785732488161,
+   "copa": 1785738287654,
    "premier": 1785735993766,
    "euro": 1785734046263,
    "super": 1785736689860
@@ -2695,7 +2658,7 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 5.2
+   "2026-08-03": 6.8
   },
   "_gatilhoAtual": {
    "tipo": "placar",
