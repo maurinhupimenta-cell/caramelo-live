@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -160.6,
-  "ciclos": 925,
-  "greens": 573,
+  "saldo": -159.6,
+  "ciclos": 926,
+  "greens": 574,
   "redsCiclo": 150,
   "aborts": 0,
   "descartes": 202,
   "historico": [
+   {
+    "quando": "2026-08-03T17:25:58.958Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Suíça x França @2.02 (tiro 1) · gatilho: seq GRRGR"
+   },
    {
     "quando": "2026-08-03T17:08:00.159Z",
     "resultado": "GREEN",
@@ -2807,43 +2813,14 @@
    }
   ],
   "consumidas": {
-   "copa": 1785776879963
+   "copa": 1785776879963,
+   "euro": 1785777958766
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:23",
-     "jogo": "Suíça x França",
-     "odd": 2.02
-    },
-    {
-     "h": "18:26",
-     "jogo": "Ucrânia x Países Baixos",
-     "odd": 2.15
-    },
-    {
-     "h": "18:29",
-     "jogo": "Turquia x Sérvia",
-     "odd": 2.7
-    }
-   ],
-   "gatilho": "seq GRRGR",
-   "alvo": {
-    "h": "18:23",
-    "jogo": "Suíça x França",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1785777600661
-   },
-   "iniciadoEm": 1785777600661
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785776879963,
    "premier": 1785772966558,
-   "euro": 1785773817954,
+   "euro": 1785777958766,
    "super": 1785773605262
   },
   "dias": {
@@ -2866,12 +2843,12 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 25.6
+   "2026-08-03": 26.6
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRRGR",
-   "n": 11,
+   "chave": "RRGRR",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
@@ -5356,7 +5333,7 @@
    "tipo": "coluna",
    "chave": ":32",
    "n": 18,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
