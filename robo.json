@@ -2691,7 +2691,45 @@
    "premier": 1785747578967,
    "euro": 1785748988066
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "10:28",
+     "jogo": "Santiago x Medellin",
+     "odd": 2.2
+    },
+    {
+     "h": "10:31",
+     "jogo": "Quito x Sao Paulo",
+     "odd": 2.1
+    },
+    {
+     "h": "10:34",
+     "jogo": "Rio de Janeiro x Belo Horizonte",
+     "odd": 2.075
+    }
+   ],
+   "gatilho": "seq RRRRR",
+   "alvo": {
+    "h": "10:31",
+    "jogo": "Quito x Sao Paulo",
+    "odd": 2.1,
+    "unidades": 2,
+    "desde": 1785749449955
+   },
+   "iniciadoEm": 1785749111161,
+   "tiros": [
+    {
+     "h": "10:28",
+     "jogo": "Santiago x Medellin",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1785746585661,
    "premier": 1785747578967,
@@ -2721,9 +2759,9 @@
    "2026-08-03": 2.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "França",
-   "n": 19,
+   "tipo": "seq",
+   "chave": "RRRRR",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
