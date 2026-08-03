@@ -2565,7 +2565,37 @@
    "euro": 1785725065362,
    "premier": 1785726885060
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:19",
+     "jogo": "Belo Horizonte x Bogota",
+     "odd": 2.37
+    },
+    {
+     "h": "04:22",
+     "jogo": "Penarol x Agua Branca",
+     "odd": 2.29
+    },
+    {
+     "h": "04:25",
+     "jogo": "Buenos Aires x Itaquera",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "seq GRRR",
+   "alvo": {
+    "h": "04:19",
+    "jogo": "Belo Horizonte x Bogota",
+    "odd": 2.37,
+    "unidades": 1,
+    "desde": 1785726978856
+   },
+   "iniciadoEm": 1785726978856
+  },
   "cooldown": {
    "copa": 1785724344156,
    "premier": 1785726885060,
@@ -2595,9 +2625,9 @@
    "2026-08-03": -7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Liverpool",
-   "n": 10,
+   "tipo": "seq",
+   "chave": "GRRR",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
@@ -4856,7 +4886,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1785723385956,
    "super": 1785725545553,
    "premier": 1785726885262
   },
