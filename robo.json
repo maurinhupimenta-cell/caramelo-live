@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -176.3,
-  "ciclos": 911,
-  "greens": 561,
+  "saldo": -175,
+  "ciclos": 912,
+  "greens": 562,
   "redsCiclo": 150,
   "aborts": 0,
   "descartes": 200,
   "historico": [
+   {
+    "quando": "2026-08-03T12:04:46.158Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "copa · Croácia x Curação @2.25 (tiro 1) · gatilho: seq RRRGR"
+   },
    {
     "quando": "2026-08-03T11:27:49.258Z",
     "resultado": "GREEN",
@@ -2723,41 +2729,12 @@
    }
   ],
   "consumidas": {
-   "super": 1785756469060
+   "super": 1785756469060,
+   "copa": 1785758685961
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "13:01",
-     "jogo": "Croácia x Curação",
-     "odd": 2.25
-    },
-    {
-     "h": "13:04",
-     "jogo": "Iraque x Argélia",
-     "odd": 2.45
-    },
-    {
-     "h": "13:07",
-     "jogo": "Panamá x Suécia",
-     "odd": 2.62
-    }
-   ],
-   "gatilho": "seq RRRGR",
-   "alvo": {
-    "h": "13:01",
-    "jogo": "Croácia x Curação",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785758326254
-   },
-   "iniciadoEm": 1785758326254
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785753806060,
+   "copa": 1785758685961,
    "premier": 1785754793759,
    "euro": 1785754205860,
    "super": 1785756469060
@@ -2782,12 +2759,12 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 9.9
+   "2026-08-03": 11.2
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRGR",
-   "n": 8,
+   "chave": "RRGG",
+   "n": 16,
    "start": 1
   },
   "_obs": {}
