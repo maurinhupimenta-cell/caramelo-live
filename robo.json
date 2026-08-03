@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -188.5,
-  "ciclos": 889,
-  "greens": 543,
+  "saldo": -187.5,
+  "ciclos": 890,
+  "greens": 544,
   "redsCiclo": 148,
   "aborts": 0,
   "descartes": 198,
   "historico": [
+   {
+    "quando": "2026-08-03T04:30:58.257Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Agua Branca x Belo Horizonte @2.02 (tiro 2) · gatilho: seq GRRR"
+   },
    {
     "quando": "2026-08-03T04:28:26.259Z",
     "resultado": "GREEN_OBS",
@@ -2592,52 +2598,15 @@
   ],
   "consumidas": {
    "euro": 1785729563357,
-   "premier": 1785730946156
+   "premier": 1785730946156,
+   "super": 1785731458059
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "05:25",
-     "jogo": "Sao Paulo x Buenos Aires",
-     "odd": 1.98
-    },
-    {
-     "h": "05:28",
-     "jogo": "Agua Branca x Belo Horizonte",
-     "odd": 2.02
-    },
-    {
-     "h": "05:31",
-     "jogo": "Penarol x Quito",
-     "odd": 2.45
-    }
-   ],
-   "gatilho": "seq GRRR",
-   "alvo": {
-    "h": "05:28",
-    "jogo": "Agua Branca x Belo Horizonte",
-    "odd": 2.02,
-    "unidades": 2,
-    "desde": 1785731426867
-   },
-   "iniciadoEm": 1785731125367,
-   "tiros": [
-    {
-     "h": "05:25",
-     "jogo": "Sao Paulo x Buenos Aires",
-     "odd": 1.98,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785724344156,
    "premier": 1785730946156,
    "euro": 1785729563357,
-   "super": 1785727523565
+   "super": 1785731458059
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -2659,13 +2628,13 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": -2.3
+   "2026-08-03": -1.3
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Rio de Janeiro",
    "n": 9,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
