@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -186.2,
-  "ciclos": 883,
+  "saldo": -193.2,
+  "ciclos": 884,
   "greens": 540,
-  "redsCiclo": 147,
+  "redsCiclo": 148,
   "aborts": 0,
   "descartes": 196,
   "historico": [
+   {
+    "quando": "2026-08-03T03:14:45.257Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: time Liverpool"
+   },
    {
     "quando": "2026-08-03T02:44:25.554Z",
     "resultado": "GREEN",
@@ -2556,56 +2562,13 @@
   ],
   "consumidas": {
    "copa": 1785724344156,
-   "euro": 1785725065362
+   "euro": 1785725065362,
+   "premier": 1785726885060
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:06",
-     "jogo": "Palace x West Ham",
-     "odd": 2.5
-    },
-    {
-     "h": "04:09",
-     "jogo": "Watford x Liverpool",
-     "odd": 2.25
-    },
-    {
-     "h": "04:12",
-     "jogo": "City x West Ham",
-     "odd": 2.37
-    }
-   ],
-   "gatilho": "time Liverpool",
-   "alvo": {
-    "h": "04:12",
-    "jogo": "City x West Ham",
-    "odd": 2.37,
-    "unidades": 4,
-    "desde": 1785726783966
-   },
-   "iniciadoEm": 1785726205358,
-   "tiros": [
-    {
-     "h": "04:06",
-     "jogo": "Palace x West Ham",
-     "odd": 2.5,
-     "unidades": 1
-    },
-    {
-     "h": "04:09",
-     "jogo": "Watford x Liverpool",
-     "odd": 2.25,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785724344156,
-   "premier": 1785722604060,
+   "premier": 1785726885060,
    "euro": 1785725065362,
    "super": 1785723205060
   },
@@ -2628,7 +2591,8 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -27.5
+   "2026-08-02": -27.5,
+   "2026-08-03": -7
   },
   "_gatilhoAtual": {
    "tipo": "time",
@@ -2639,13 +2603,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -69.7,
-  "ciclos": 913,
+  "saldo": -76.7,
+  "ciclos": 914,
   "greens": 619,
-  "redsCiclo": 100,
+  "redsCiclo": 101,
   "aborts": 0,
   "descartes": 194,
   "historico": [
+   {
+    "quando": "2026-08-03T03:14:45.459Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: time Liverpool"
+   },
    {
     "quando": "2026-08-03T02:52:25.660Z",
     "resultado": "GREEN",
@@ -4887,57 +4857,14 @@
   ],
   "consumidas": {
    "copa": 1785723385956,
-   "super": 1785725545553
+   "super": 1785725545553,
+   "premier": 1785726885262
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:06",
-     "jogo": "Palace x West Ham",
-     "odd": 2.1
-    },
-    {
-     "h": "04:09",
-     "jogo": "Watford x Liverpool",
-     "odd": 1.98
-    },
-    {
-     "h": "04:12",
-     "jogo": "City x West Ham",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "time Liverpool",
-   "alvo": {
-    "h": "04:12",
-    "jogo": "City x West Ham",
-    "odd": 2.1,
-    "unidades": 4,
-    "desde": 1785726784255
-   },
-   "iniciadoEm": 1785726366556,
-   "tiros": [
-    {
-     "h": "04:06",
-     "jogo": "Palace x West Ham",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "04:09",
-     "jogo": "Watford x Liverpool",
-     "odd": 1.98,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785723085963,
    "super": 1785725545553,
-   "premier": 1785722741362,
+   "premier": 1785726885262,
    "copa": 1785723385956
   },
   "dias": {
@@ -4958,7 +4885,8 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -43.3
+   "2026-08-02": -43.3,
+   "2026-08-03": -7
   },
   "_gatilhoAtual": {
    "tipo": "time",
