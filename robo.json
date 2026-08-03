@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -187.5,
-  "ciclos": 882,
-  "greens": 539,
+  "saldo": -186.2,
+  "ciclos": 883,
+  "greens": 540,
   "redsCiclo": 147,
   "aborts": 0,
   "descartes": 196,
   "historico": [
+   {
+    "quando": "2026-08-03T02:44:25.554Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "euro · Ucrânia x Espanha @2.15 (tiro 2) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-08-03T02:32:24.358Z",
     "resultado": "RED_CICLO",
@@ -2551,51 +2557,14 @@
   "consumidas": {
    "premier": 1785722604060,
    "super": 1785723205060,
-   "copa": 1785724344156
+   "copa": 1785724344156,
+   "euro": 1785725065362
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "03:38",
-     "jogo": "Romênia x Eslovênia",
-     "odd": 2.5
-    },
-    {
-     "h": "03:41",
-     "jogo": "Ucrânia x Espanha",
-     "odd": 2.15
-    },
-    {
-     "h": "03:44",
-     "jogo": "Dinamarca x Alemanha",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-1)",
-   "alvo": {
-    "h": "03:41",
-    "jogo": "Ucrânia x Espanha",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1785724886454
-   },
-   "iniciadoEm": 1785724527758,
-   "tiros": [
-    {
-     "h": "03:38",
-     "jogo": "Romênia x Eslovênia",
-     "odd": 2.5,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785724344156,
    "premier": 1785722604060,
-   "euro": 1785697826355,
+   "euro": 1785725065362,
    "super": 1785723205060
   },
   "dias": {
@@ -2617,7 +2586,7 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -28.8
+   "2026-08-02": -27.5
   },
   "_gatilhoAtual": {
    "tipo": "placar",
@@ -4934,7 +4903,7 @@
    "tipo": "time",
    "chave": "Itaquera",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
