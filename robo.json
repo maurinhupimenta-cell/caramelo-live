@@ -2777,7 +2777,45 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "16:57",
+     "jogo": "Chelsea x Palace",
+     "odd": 2.2
+    },
+    {
+     "h": "17:00",
+     "jogo": "City x United",
+     "odd": 2.1
+    },
+    {
+     "h": "17:03",
+     "jogo": "Southampton x Brentford",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "coluna :57",
+   "alvo": {
+    "h": "17:00",
+    "jogo": "City x United",
+    "odd": 2.1,
+    "unidades": 2,
+    "desde": 1785772792863
+   },
+   "iniciadoEm": 1785772454259,
+   "tiros": [
+    {
+     "h": "16:57",
+     "jogo": "Chelsea x Palace",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1785767126165,
    "premier": 1785765583155,
@@ -2807,21 +2845,27 @@
    "2026-08-03": 20.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRGR",
-   "n": 13,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.07",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -71.8,
-  "ciclos": 938,
-  "greens": 638,
+  "saldo": -70.9,
+  "ciclos": 939,
+  "greens": 639,
   "redsCiclo": 103,
   "aborts": 0,
   "descartes": 197,
   "historico": [
+   {
+    "quando": "2026-08-03T15:54:14.657Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Brentford x Norwich @1.95 (tiro 2) · gatilho: seq GGGG"
+   },
    {
     "quando": "2026-08-03T14:39:58.555Z",
     "resultado": "GREEN",
@@ -5211,50 +5255,14 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "16:21",
-     "jogo": "Aston x Islington",
-     "odd": 2
-    },
-    {
-     "h": "16:24",
-     "jogo": "Burnley x Brighton",
-     "odd": 1.8
-    },
-    {
-     "h": "16:27",
-     "jogo": "Brentford x Norwich",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "seq GGGG",
-   "alvo": {
-    "h": "16:24",
-    "jogo": "Burnley x Brighton",
-    "odd": 1.8,
-    "unidades": 2,
-    "desde": 1785770624860
-   },
-   "iniciadoEm": 1785770267262,
-   "tiros": [
-    {
-     "h": "16:21",
-     "jogo": "Aston x Islington",
-     "odd": 2,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "premier": 1785772454461
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785767998260,
    "super": 1785761869262,
-   "premier": 1785757300964,
+   "premier": 1785772454461,
    "copa": 1785737246559
   },
   "dias": {
@@ -5276,12 +5284,12 @@
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
-   "2026-08-03": -2.1
+   "2026-08-03": -1.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGG",
-   "n": 9,
+   "tipo": "coluna",
+   "chave": ":32",
+   "n": 16,
    "start": 1
   },
   "_obs": {}
