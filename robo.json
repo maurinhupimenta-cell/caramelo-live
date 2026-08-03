@@ -2833,7 +2833,37 @@
   "consumidas": {
    "copa": 1785785102757
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:59",
+     "jogo": "Ucrânia x Romênia",
+     "odd": 2.2
+    },
+    {
+     "h": "21:02",
+     "jogo": "França x Suíça",
+     "odd": 2.05
+    },
+    {
+     "h": "21:05",
+     "jogo": "Hungria x Romênia",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "seq RRGRR",
+   "alvo": {
+    "h": "20:59",
+    "jogo": "Ucrânia x Romênia",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785787138164
+   },
+   "iniciadoEm": 1785787138164
+  },
   "cooldown": {
    "copa": 1785785102757,
    "premier": 1785772966558,
@@ -2864,8 +2894,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRGGG",
-   "n": 10,
+   "chave": "RRGRR",
+   "n": 16,
    "start": 1
   },
   "_obs": {}
