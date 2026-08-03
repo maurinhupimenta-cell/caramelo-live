@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -160,
-  "ciclos": 932,
-  "greens": 579,
+  "saldo": -158.7,
+  "ciclos": 933,
+  "greens": 580,
   "redsCiclo": 151,
   "aborts": 0,
   "descartes": 202,
   "historico": [
+   {
+    "quando": "2026-08-03T21:39:03.754Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "super · Montevideo x Santos @2.25 (tiro 1) · gatilho: odd 2.07"
+   },
    {
     "quando": "2026-08-03T20:56:02.361Z",
     "resultado": "GREEN",
@@ -2849,44 +2855,45 @@
    }
   ],
   "consumidas": {
-   "copa": 1785790562165
+   "copa": 1785790562165,
+   "super": 1785793143558
   },
   "ciclo": {
-   "liga": "super",
+   "liga": "euro",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "22:34",
-     "jogo": "Montevideo x Santos",
-     "odd": 2.25
+     "h": "22:53",
+     "jogo": "Países Baixos x Dinamarca",
+     "odd": 2.2
     },
     {
-     "h": "22:37",
-     "jogo": "Agua Branca x Guayaquil",
-     "odd": 2.07
+     "h": "22:56",
+     "jogo": "França x Espanha",
+     "odd": 1.98
     },
     {
-     "h": "22:40",
-     "jogo": "Avellaneda x La Plata",
-     "odd": 2.6
+     "h": "22:59",
+     "jogo": "Romênia x Áustria",
+     "odd": 2.2
     }
    ],
-   "gatilho": "odd 2.07",
+   "gatilho": "seq RRGRR",
    "alvo": {
-    "h": "22:34",
-    "jogo": "Montevideo x Santos",
-    "odd": 2.25,
+    "h": "22:53",
+    "jogo": "Países Baixos x Dinamarca",
+    "odd": 2.2,
     "unidades": 1,
-    "desde": 1785792358157
+    "desde": 1785793863960
    },
-   "iniciadoEm": 1785792358157
+   "iniciadoEm": 1785793863960
   },
   "cooldown": {
    "copa": 1785790562165,
    "premier": 1785789527666,
    "euro": 1785787379962,
-   "super": 1785773605262
+   "super": 1785793143558
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -2908,12 +2915,12 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 26.2
+   "2026-08-03": 27.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.07",
-   "n": 8,
+   "tipo": "seq",
+   "chave": "RRGRR",
+   "n": 18,
    "start": 1
   },
   "_obs": {}
