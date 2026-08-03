@@ -5157,7 +5157,37 @@
   "consumidas": {
    "euro": 1785760148164
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:52",
+     "jogo": "Bogota x Santiago",
+     "odd": 2.02
+    },
+    {
+     "h": "13:55",
+     "jogo": "Agua Branca x Penarol",
+     "odd": 2.07
+    },
+    {
+     "h": "13:58",
+     "jogo": "Montevideo x Santos",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "time Agua Branca",
+   "alvo": {
+    "h": "13:52",
+    "jogo": "Bogota x Santiago",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1785760989565
+   },
+   "iniciadoEm": 1785760989565
+  },
   "cooldown": {
    "euro": 1785760148164,
    "super": 1785756469262,
@@ -5186,10 +5216,10 @@
    "2026-08-03": -5.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRRG",
-   "n": 10,
-   "start": 1
+   "tipo": "time",
+   "chave": "Agua Branca",
+   "n": 27,
+   "start": 3
   },
   "_obs": {}
  }
