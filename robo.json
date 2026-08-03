@@ -261,12 +261,18 @@
  },
  "o25": {
   "saldo": -165.8,
-  "ciclos": 919,
+  "ciclos": 920,
   "greens": 569,
   "redsCiclo": 150,
   "aborts": 0,
-  "descartes": 200,
+  "descartes": 201,
   "historico": [
+   {
+    "quando": "2026-08-03T15:54:09.758Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-08-03T14:44:59.562Z",
     "resultado": "GREEN",
@@ -2770,40 +2776,8 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {
-   "euro": 1785768299368
-  },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:25",
-     "jogo": "Bélgica x Inglaterra",
-     "odd": 2.25
-    },
-    {
-     "h": "16:28",
-     "jogo": "Espanha x Escócia",
-     "odd": 2.45
-    },
-    {
-     "h": "16:31",
-     "jogo": "Iraque x Curação",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "seq RRRGR",
-   "alvo": {
-    "h": "16:25",
-    "jogo": "Bélgica x Inglaterra",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785770757864
-   },
-   "iniciadoEm": 1785770757864
-  },
+  "consumidas": {},
+  "ciclo": null,
   "cooldown": {
    "copa": 1785767126165,
    "premier": 1785765583155,
@@ -5237,9 +5211,7 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {
-   "euro": 1785767998260
-  },
+  "consumidas": {},
   "ciclo": {
    "liga": "premier",
    "degrau": 1,
