@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -161.5,
-  "ciclos": 931,
-  "greens": 578,
+  "saldo": -160,
+  "ciclos": 932,
+  "greens": 579,
   "redsCiclo": 151,
   "aborts": 0,
   "descartes": 202,
   "historico": [
+   {
+    "quando": "2026-08-03T20:56:02.361Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "copa · África do Sul x Uzbequistão @2.45 (tiro 1) · gatilho: seq RRGGG"
+   },
    {
     "quando": "2026-08-03T20:38:47.861Z",
     "resultado": "RED_CICLO",
@@ -2844,41 +2850,12 @@
   ],
   "consumidas": {
    "euro": 1785787379962,
-   "premier": 1785789527666
+   "premier": 1785789527666,
+   "copa": 1785790562165
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:52",
-     "jogo": "África do Sul x Uzbequistão",
-     "odd": 2.45
-    },
-    {
-     "h": "21:55",
-     "jogo": "Turquia x Canadá",
-     "odd": 2.4
-    },
-    {
-     "h": "21:58",
-     "jogo": "Noruega x Arábia Saudita",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "seq RRGGG",
-   "alvo": {
-    "h": "21:52",
-    "jogo": "África do Sul x Uzbequistão",
-    "odd": 2.45,
-    "unidades": 1,
-    "desde": 1785790203557
-   },
-   "iniciadoEm": 1785790203557
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785785102757,
+   "copa": 1785790562165,
    "premier": 1785789527666,
    "euro": 1785787379962,
    "super": 1785773605262
@@ -2903,7 +2880,7 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 24.7
+   "2026-08-03": 26.2
   },
   "_gatilhoAtual": {
    "tipo": "seq",
