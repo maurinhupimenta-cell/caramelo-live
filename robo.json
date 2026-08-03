@@ -2699,7 +2699,7 @@
    "tipo": "odd",
    "chave": "2.15",
    "n": 10,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
@@ -5028,8 +5028,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "07:59",
@@ -5049,13 +5049,21 @@
    ],
    "gatilho": "time França",
    "alvo": {
-    "h": "07:59",
-    "jogo": "Portugal x Albânia",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785740028165
+    "h": "08:02",
+    "jogo": "França x Eslovênia",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1785740508158
    },
-   "iniciadoEm": 1785740028165
+   "iniciadoEm": 1785740028165,
+   "tiros": [
+    {
+     "h": "07:59",
+     "jogo": "Portugal x Albânia",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785736427256,
@@ -5087,7 +5095,7 @@
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "França",
-   "n": 14,
+   "n": 15,
    "start": 1
   },
   "_obs": {}
