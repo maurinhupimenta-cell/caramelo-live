@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -184,
-  "ciclos": 878,
-  "greens": 536,
+  "saldo": -183,
+  "ciclos": 879,
+  "greens": 537,
   "redsCiclo": 146,
   "aborts": 0,
   "descartes": 196,
   "historico": [
+   {
+    "quando": "2026-08-03T00:45:26.355Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Burnley x Newcastle @2 (tiro 2) · gatilho: placar goleada (3+)"
+   },
    {
     "quando": "2026-08-02T22:29:42.258Z",
     "resultado": "GREEN",
@@ -2524,49 +2530,13 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "01:39",
-     "jogo": "Brentford x Chelsea",
-     "odd": 2.25
-    },
-    {
-     "h": "01:42",
-     "jogo": "Burnley x Newcastle",
-     "odd": 2
-    },
-    {
-     "h": "01:45",
-     "jogo": "United x West Ham",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "placar goleada (3+)",
-   "alvo": {
-    "h": "01:42",
-    "jogo": "Burnley x Newcastle",
-    "odd": 2,
-    "unidades": 2,
-    "desde": 1785717703064
-   },
-   "iniciadoEm": 1785717443959,
-   "tiros": [
-    {
-     "h": "01:39",
-     "jogo": "Brentford x Chelsea",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "premier": 1785717926159
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785708147859,
-   "premier": 1785709782065,
+   "premier": 1785717926159,
    "euro": 1785697826355,
    "super": 1785702275661
   },
@@ -2589,7 +2559,7 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -25.3
+   "2026-08-02": -24.3
   },
   "_gatilhoAtual": {
    "tipo": "placar",
