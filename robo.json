@@ -2637,7 +2637,37 @@
    "copa": 1785738287654,
    "euro": 1785739786268
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:06",
+     "jogo": "Tottenham x Brentford",
+     "odd": 2.5
+    },
+    {
+     "h": "08:09",
+     "jogo": "Chelsea x Burnley",
+     "odd": 2.15
+    },
+    {
+     "h": "08:12",
+     "jogo": "United x Islington",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "odd 2.15",
+   "alvo": {
+    "h": "08:06",
+    "jogo": "Tottenham x Brentford",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1785740213366
+   },
+   "iniciadoEm": 1785740213366
+  },
   "cooldown": {
    "copa": 1785738287654,
    "premier": 1785735993766,
@@ -2667,10 +2697,10 @@
    "2026-08-03": 8.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRG",
+   "tipo": "odd",
+   "chave": "2.15",
    "n": 10,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
@@ -4997,7 +5027,37 @@
    "copa": 1785737246559,
    "super": 1785738309563
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:59",
+     "jogo": "Portugal x Albânia",
+     "odd": 2.25
+    },
+    {
+     "h": "08:02",
+     "jogo": "França x Eslovênia",
+     "odd": 2.15
+    },
+    {
+     "h": "08:05",
+     "jogo": "Romênia x Ucrânia",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "time França",
+   "alvo": {
+    "h": "07:59",
+    "jogo": "Portugal x Albânia",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785740028165
+   },
+   "iniciadoEm": 1785740028165
+  },
   "cooldown": {
    "euro": 1785736427256,
    "super": 1785738309563,
@@ -5027,7 +5087,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Agua Branca",
+   "chave": "França",
    "n": 14,
    "start": 1
   },
