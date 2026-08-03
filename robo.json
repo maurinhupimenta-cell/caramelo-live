@@ -2570,13 +2570,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -68.1,
-  "ciclos": 905,
-  "greens": 614,
+  "saldo": -67.4,
+  "ciclos": 906,
+  "greens": 615,
   "redsCiclo": 99,
   "aborts": 0,
   "descartes": 192,
   "historico": [
+   {
+    "quando": "2026-08-03T01:05:29.856Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "copa · Equador x Bélgica @1.93 (tiro 3) · gatilho: placar goleada (3+)"
+   },
    {
     "quando": "2026-08-03T00:52:28.864Z",
     "resultado": "GREEN_OBS",
@@ -4768,51 +4774,15 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "01:55",
-     "jogo": "RD Congo x Curação",
-     "odd": 1.85
-    },
-    {
-     "h": "01:58",
-     "jogo": "Brasil x Gana",
-     "odd": 2.075
-    },
-    {
-     "h": "02:01",
-     "jogo": "Equador x Bélgica",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "placar goleada (3+)",
-   "alvo": {
-    "h": "01:58",
-    "jogo": "Brasil x Gana",
-    "odd": 2.075,
-    "unidades": 2,
-    "desde": 1785718763460
-   },
-   "iniciadoEm": 1785718404955,
-   "tiros": [
-    {
-     "h": "01:55",
-     "jogo": "RD Congo x Curação",
-     "odd": 1.85,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "copa": 1785719129662
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785702270661,
    "super": 1785711970359,
    "premier": 1785708883761,
-   "copa": 1785708265562
+   "copa": 1785719129662
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -4832,7 +4802,7 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -41.7
+   "2026-08-02": -41
   },
   "_gatilhoAtual": {
    "tipo": "placar",
