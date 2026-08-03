@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -191.6,
-  "ciclos": 885,
-  "greens": 541,
+  "saldo": -189.6,
+  "ciclos": 886,
+  "greens": 542,
   "redsCiclo": 148,
   "aborts": 0,
   "descartes": 196,
   "historico": [
+   {
+    "quando": "2026-08-03T03:59:23.557Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "euro · Dinamarca x Suíça @2.25 (tiro 3) · gatilho: seq RRGR"
+   },
    {
     "quando": "2026-08-03T03:25:23.757Z",
     "resultado": "GREEN",
@@ -2568,57 +2574,14 @@
   ],
   "consumidas": {
    "premier": 1785726885060,
-   "super": 1785727523565
+   "super": 1785727523565,
+   "euro": 1785729563357
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:50",
-     "jogo": "Portugal x Hungria",
-     "odd": 2.35
-    },
-    {
-     "h": "04:53",
-     "jogo": "Inglaterra x Países Baixos",
-     "odd": 1.98
-    },
-    {
-     "h": "04:56",
-     "jogo": "Dinamarca x Suíça",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "seq RRGR",
-   "alvo": {
-    "h": "04:56",
-    "jogo": "Dinamarca x Suíça",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1785729443864
-   },
-   "iniciadoEm": 1785728843060,
-   "tiros": [
-    {
-     "h": "04:50",
-     "jogo": "Portugal x Hungria",
-     "odd": 2.35,
-     "unidades": 1
-    },
-    {
-     "h": "04:53",
-     "jogo": "Inglaterra x Países Baixos",
-     "odd": 1.98,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785724344156,
    "premier": 1785726885060,
-   "euro": 1785725065362,
+   "euro": 1785729563357,
    "super": 1785727523565
   },
   "dias": {
@@ -2641,12 +2604,12 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": -5.4
+   "2026-08-03": -3.4
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "acima de 1-0 (2-1)",
-   "n": 10,
+   "n": 11,
    "start": 1
   },
   "_obs": {}
