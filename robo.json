@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -189.6,
-  "ciclos": 887,
-  "greens": 542,
+  "saldo": -188.5,
+  "ciclos": 888,
+  "greens": 543,
   "redsCiclo": 148,
   "aborts": 0,
   "descartes": 197,
   "historico": [
+   {
+    "quando": "2026-08-03T04:22:26.263Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Burnley x Chelsea @2.1 (tiro 1) · gatilho: time Burnley"
+   },
    {
     "quando": "2026-08-03T04:15:24.154Z",
     "resultado": "GREEN_OBS",
@@ -2580,42 +2586,13 @@
   ],
   "consumidas": {
    "super": 1785727523565,
-   "euro": 1785729563357
+   "euro": 1785729563357,
+   "premier": 1785730946156
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:18",
-     "jogo": "Burnley x Chelsea",
-     "odd": 2.1
-    },
-    {
-     "h": "05:21",
-     "jogo": "Norwich x City",
-     "odd": 2.05
-    },
-    {
-     "h": "05:24",
-     "jogo": "Watford x Leeds",
-     "odd": 2.55
-    }
-   ],
-   "gatilho": "time Burnley",
-   "alvo": {
-    "h": "05:18",
-    "jogo": "Burnley x Chelsea",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785730525967
-   },
-   "iniciadoEm": 1785730525967
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785724344156,
-   "premier": 1785726885060,
+   "premier": 1785730946156,
    "euro": 1785729563357,
    "super": 1785727523565
   },
@@ -2639,7 +2616,7 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": -3.4
+   "2026-08-03": -2.3
   },
   "_gatilhoAtual": {
    "tipo": "time",
