@@ -2593,18 +2593,24 @@
    "tipo": "time",
    "chave": "Liverpool",
    "n": 8,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -74.4,
-  "ciclos": 907,
+  "ciclos": 908,
   "greens": 615,
   "redsCiclo": 100,
   "aborts": 0,
-  "descartes": 192,
+  "descartes": 193,
   "historico": [
+   {
+    "quando": "2026-08-03T01:57:25.870Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho time Eslovênia) — liga REARMADA"
+   },
    {
     "quando": "2026-08-03T01:16:07.758Z",
     "resultado": "RED_CICLO",
@@ -4812,7 +4818,37 @@
    "copa": 1785719129662,
    "super": 1785719767560
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:57",
+     "jogo": "West Ham x Everton",
+     "odd": 2.05
+    },
+    {
+     "h": "03:00",
+     "jogo": "Burnley x Liverpool",
+     "odd": 1.9
+    },
+    {
+     "h": "03:03",
+     "jogo": "Wolverhampton x Watford",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "time Liverpool",
+   "alvo": {
+    "h": "02:57",
+    "jogo": "West Ham x Everton",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785721706957
+   },
+   "iniciadoEm": 1785721706957
+  },
   "cooldown": {
    "euro": 1785702270661,
    "super": 1785719767560,
@@ -4840,11 +4876,16 @@
    "2026-08-02": -48
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
+   "tipo": "time",
+   "chave": "Liverpool",
    "n": 8,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1785722245869,
+    "gatilho": "time Eslovênia"
+   }
+  }
  }
 }
