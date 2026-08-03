@@ -2776,13 +2776,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -76.1,
-  "ciclos": 934,
-  "greens": 634,
+  "saldo": -75.1,
+  "ciclos": 935,
+  "greens": 635,
   "redsCiclo": 103,
   "aborts": 0,
   "descartes": 197,
   "historico": [
+   {
+    "quando": "2026-08-03T12:29:08.358Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Geórgia x França @1.95 (tiro 1) · gatilho: time Eslováquia"
+   },
    {
     "quando": "2026-08-03T11:41:41.161Z",
     "resultado": "GREEN",
@@ -5149,41 +5155,12 @@
    }
   ],
   "consumidas": {
-   "premier": 1785757300964
+   "premier": 1785757300964,
+   "euro": 1785760148164
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "13:26",
-     "jogo": "Geórgia x França",
-     "odd": 1.95
-    },
-    {
-     "h": "13:29",
-     "jogo": "Hungria x Eslováquia",
-     "odd": 2.07
-    },
-    {
-     "h": "13:32",
-     "jogo": "Países Baixos x Geórgia",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "time Eslováquia",
-   "alvo": {
-    "h": "13:26",
-    "jogo": "Geórgia x França",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1785759428054
-   },
-   "iniciadoEm": 1785759428054
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785755127964,
+   "euro": 1785760148164,
    "super": 1785756469262,
    "premier": 1785757300964,
    "copa": 1785737246559
@@ -5207,12 +5184,12 @@
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
-   "2026-08-03": -6.4
+   "2026-08-03": -5.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Eslováquia",
-   "n": 20,
+   "tipo": "seq",
+   "chave": "RGRRG",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
