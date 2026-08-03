@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -155.7,
-  "ciclos": 929,
-  "greens": 577,
+  "saldo": -154.5,
+  "ciclos": 930,
+  "greens": 578,
   "redsCiclo": 150,
   "aborts": 0,
   "descartes": 202,
   "historico": [
+   {
+    "quando": "2026-08-03T20:03:00.159Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Ucrânia x Romênia @2.2 (tiro 1) · gatilho: seq RRGRR"
+   },
    {
     "quando": "2026-08-03T19:25:02.954Z",
     "resultado": "GREEN",
@@ -2831,43 +2837,14 @@
    }
   ],
   "consumidas": {
-   "copa": 1785785102757
+   "copa": 1785785102757,
+   "euro": 1785787379962
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:59",
-     "jogo": "Ucrânia x Romênia",
-     "odd": 2.2
-    },
-    {
-     "h": "21:02",
-     "jogo": "França x Suíça",
-     "odd": 2.05
-    },
-    {
-     "h": "21:05",
-     "jogo": "Hungria x Romênia",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "seq RRGRR",
-   "alvo": {
-    "h": "20:59",
-    "jogo": "Ucrânia x Romênia",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785787138164
-   },
-   "iniciadoEm": 1785787138164
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785785102757,
    "premier": 1785772966558,
-   "euro": 1785783357255,
+   "euro": 1785787379962,
    "super": 1785773605262
   },
   "dias": {
@@ -2890,12 +2867,12 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 30.5
+   "2026-08-03": 31.7
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRGRR",
-   "n": 16,
+   "chave": "GRRGG",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
