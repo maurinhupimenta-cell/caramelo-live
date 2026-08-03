@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -173.8,
-  "ciclos": 913,
-  "greens": 563,
+  "saldo": -172.6,
+  "ciclos": 914,
+  "greens": 564,
   "redsCiclo": 150,
   "aborts": 0,
   "descartes": 200,
   "historico": [
+   {
+    "quando": "2026-08-03T12:56:40.262Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · Liverpool x Everton @2.15 (tiro 1) · gatilho: coluna :57"
+   },
    {
     "quando": "2026-08-03T12:08:08.358Z",
     "resultado": "GREEN",
@@ -2736,42 +2742,13 @@
   ],
   "consumidas": {
    "copa": 1785758685961,
-   "euro": 1785758888163
+   "euro": 1785758888163,
+   "premier": 1785761800155
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "13:54",
-     "jogo": "Liverpool x Everton",
-     "odd": 2.15
-    },
-    {
-     "h": "13:57",
-     "jogo": "City x Wolverhampton",
-     "odd": 1.98
-    },
-    {
-     "h": "14:00",
-     "jogo": "Everton x Islington",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "coluna :57",
-   "alvo": {
-    "h": "13:54",
-    "jogo": "Liverpool x Everton",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785761092662
-   },
-   "iniciadoEm": 1785761092662
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785758685961,
-   "premier": 1785754793759,
+   "premier": 1785761800155,
    "euro": 1785758888163,
    "super": 1785756469060
   },
@@ -2795,12 +2772,12 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 12.4
+   "2026-08-03": 13.6
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":57",
-   "n": 13,
+   "tipo": "odd",
+   "chave": "2.55",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
