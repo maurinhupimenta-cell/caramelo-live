@@ -2859,13 +2859,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -75.5,
-  "ciclos": 942,
-  "greens": 641,
+  "saldo": -74.3,
+  "ciclos": 943,
+  "greens": 642,
   "redsCiclo": 104,
   "aborts": 0,
   "descartes": 197,
   "historico": [
+   {
+    "quando": "2026-08-03T18:39:57.759Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Croácia x Albânia @2.2 (tiro 1) · gatilho: coluna :32"
+   },
    {
     "quando": "2026-08-03T17:31:53.757Z",
     "resultado": "GREEN",
@@ -5279,10 +5285,12 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "euro": 1785782397555
+  },
   "ciclo": null,
   "cooldown": {
-   "euro": 1785778313560,
+   "euro": 1785782397555,
    "super": 1785761869262,
    "premier": 1785777111855,
    "copa": 1785737246559
@@ -5306,12 +5314,12 @@
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
-   "2026-08-03": -5.8
+   "2026-08-03": -4.6
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":35",
-   "n": 18,
+   "n": 19,
    "start": 1
   },
   "_obs": {}
