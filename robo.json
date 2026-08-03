@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -154.5,
-  "ciclos": 930,
+  "saldo": -161.5,
+  "ciclos": 931,
   "greens": 578,
-  "redsCiclo": 150,
+  "redsCiclo": 151,
   "aborts": 0,
   "descartes": 202,
   "historico": [
+   {
+    "quando": "2026-08-03T20:38:47.861Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: odd 2.55"
+   },
    {
     "quando": "2026-08-03T20:03:00.159Z",
     "resultado": "GREEN",
@@ -2837,56 +2843,13 @@
    }
   ],
   "consumidas": {
-   "euro": 1785787379962
+   "euro": 1785787379962,
+   "premier": 1785789527666
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "21:30",
-     "jogo": "Liverpool x City",
-     "odd": 2.07
-    },
-    {
-     "h": "21:33",
-     "jogo": "Leeds x Leicester",
-     "odd": 2.55
-    },
-    {
-     "h": "21:36",
-     "jogo": "Tottenham x Brentford",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "odd 2.55",
-   "alvo": {
-    "h": "21:36",
-    "jogo": "Tottenham x Brentford",
-    "odd": 2.5,
-    "unidades": 4,
-    "desde": 1785789342561
-   },
-   "iniciadoEm": 1785788522665,
-   "tiros": [
-    {
-     "h": "21:30",
-     "jogo": "Liverpool x City",
-     "odd": 2.07,
-     "unidades": 1
-    },
-    {
-     "h": "21:33",
-     "jogo": "Leeds x Leicester",
-     "odd": 2.55,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785785102757,
-   "premier": 1785772966558,
+   "premier": 1785789527666,
    "euro": 1785787379962,
    "super": 1785773605262
   },
@@ -2910,7 +2873,7 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 31.7
+   "2026-08-03": 24.7
   },
   "_gatilhoAtual": {
    "tipo": "odd",
