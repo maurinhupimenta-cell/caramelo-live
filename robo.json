@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -179.5,
-  "ciclos": 909,
-  "greens": 559,
+  "saldo": -177.5,
+  "ciclos": 910,
+  "greens": 560,
   "redsCiclo": 150,
   "aborts": 0,
   "descartes": 200,
   "historico": [
+   {
+    "quando": "2026-08-03T10:59:53.964Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "premier · Tottenham x Watford @2.5 (tiro 2) · gatilho: coluna :57"
+   },
    {
     "quando": "2026-08-03T10:50:05.962Z",
     "resultado": "GREEN",
@@ -2712,50 +2718,13 @@
   ],
   "consumidas": {
    "copa": 1785753806060,
-   "euro": 1785754205860
+   "euro": 1785754205860,
+   "premier": 1785754793759
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "11:54",
-     "jogo": "Liverpool x Brighton",
-     "odd": 2.07
-    },
-    {
-     "h": "11:57",
-     "jogo": "Tottenham x Watford",
-     "odd": 2.5
-    },
-    {
-     "h": "12:00",
-     "jogo": "Burnley x Leicester",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "coluna :57",
-   "alvo": {
-    "h": "11:57",
-    "jogo": "Tottenham x Watford",
-    "odd": 2.5,
-    "unidades": 2,
-    "desde": 1785754603162
-   },
-   "iniciadoEm": 1785754208656,
-   "tiros": [
-    {
-     "h": "11:54",
-     "jogo": "Liverpool x Brighton",
-     "odd": 2.07,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785753806060,
-   "premier": 1785747578967,
+   "premier": 1785754793759,
    "euro": 1785754205860,
    "super": 1785749811155
   },
@@ -2779,7 +2748,7 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 6.7
+   "2026-08-03": 8.7
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
