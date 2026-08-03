@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -172.6,
-  "ciclos": 914,
-  "greens": 564,
+  "saldo": -171.4,
+  "ciclos": 915,
+  "greens": 565,
   "redsCiclo": 150,
   "aborts": 0,
   "descartes": 200,
   "historico": [
+   {
+    "quando": "2026-08-03T13:12:45.756Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Equador x Nova Zelândia @2.15 (tiro 1) · gatilho: seq GRRRG"
+   },
    {
     "quando": "2026-08-03T12:56:40.262Z",
     "resultado": "GREEN",
@@ -2741,41 +2747,42 @@
    }
   ],
   "consumidas": {
-   "premier": 1785761800155
+   "premier": 1785761800155,
+   "copa": 1785762765558
   },
   "ciclo": {
-   "liga": "copa",
+   "liga": "euro",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "14:10",
-     "jogo": "Equador x Nova Zelândia",
-     "odd": 2.15
+     "h": "14:14",
+     "jogo": "Portugal x Espanha",
+     "odd": 2.07
     },
     {
-     "h": "14:13",
-     "jogo": "Argélia x Portugal",
+     "h": "14:17",
+     "jogo": "Suíça x Eslováquia",
      "odd": 2.2
     },
     {
-     "h": "14:16",
-     "jogo": "Egito x Inglaterra",
-     "odd": 2.15
+     "h": "14:20",
+     "jogo": "Portugal x Áustria",
+     "odd": 2.3
     }
    ],
-   "gatilho": "seq GRRRG",
+   "gatilho": "seq RRGG",
    "alvo": {
-    "h": "14:10",
-    "jogo": "Equador x Nova Zelândia",
-    "odd": 2.15,
+    "h": "14:14",
+    "jogo": "Portugal x Espanha",
+    "odd": 2.07,
     "unidades": 1,
-    "desde": 1785762427856
+    "desde": 1785762767356
    },
-   "iniciadoEm": 1785762427856
+   "iniciadoEm": 1785762767356
   },
   "cooldown": {
-   "copa": 1785758685961,
+   "copa": 1785762765558,
    "premier": 1785761800155,
    "euro": 1785758888163,
    "super": 1785756469060
@@ -2800,12 +2807,12 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 13.6
+   "2026-08-03": 14.8
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRRRG",
-   "n": 9,
+   "chave": "RRGG",
+   "n": 17,
    "start": 1
   },
   "_obs": {}
