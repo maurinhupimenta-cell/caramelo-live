@@ -2783,13 +2783,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -75.1,
-  "ciclos": 935,
-  "greens": 635,
+  "saldo": -74,
+  "ciclos": 936,
+  "greens": 636,
   "redsCiclo": 103,
   "aborts": 0,
   "descartes": 197,
   "historico": [
+   {
+    "quando": "2026-08-03T12:57:49.460Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Agua Branca x Penarol @2.07 (tiro 2) · gatilho: time Agua Branca"
+   },
    {
     "quando": "2026-08-03T12:29:08.358Z",
     "resultado": "GREEN",
@@ -5162,50 +5168,13 @@
    }
   ],
   "consumidas": {
-   "euro": 1785760148164
+   "euro": 1785760148164,
+   "super": 1785761869262
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "13:52",
-     "jogo": "Bogota x Santiago",
-     "odd": 2.02
-    },
-    {
-     "h": "13:55",
-     "jogo": "Agua Branca x Penarol",
-     "odd": 2.07
-    },
-    {
-     "h": "13:58",
-     "jogo": "Montevideo x Santos",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "time Agua Branca",
-   "alvo": {
-    "h": "13:55",
-    "jogo": "Agua Branca x Penarol",
-    "odd": 2.07,
-    "unidades": 2,
-    "desde": 1785761730565
-   },
-   "iniciadoEm": 1785760989565,
-   "tiros": [
-    {
-     "h": "13:52",
-     "jogo": "Bogota x Santiago",
-     "odd": 2.02,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785760148164,
-   "super": 1785756469262,
+   "super": 1785761869262,
    "premier": 1785757300964,
    "copa": 1785737246559
   },
@@ -5228,13 +5197,13 @@
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
-   "2026-08-03": -5.4
+   "2026-08-03": -4.3
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":07",
    "n": 14,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
