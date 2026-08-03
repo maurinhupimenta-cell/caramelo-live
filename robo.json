@@ -2854,13 +2854,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -76.7,
-  "ciclos": 941,
-  "greens": 640,
+  "saldo": -75.5,
+  "ciclos": 942,
+  "greens": 641,
   "redsCiclo": 104,
   "aborts": 0,
   "descartes": 197,
   "historico": [
+   {
+    "quando": "2026-08-03T17:31:53.757Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Turquia x Sérvia @2.2 (tiro 1) · gatilho: coluna :32"
+   },
    {
     "quando": "2026-08-03T17:11:51.962Z",
     "resultado": "RED_CICLO",
@@ -5269,41 +5275,12 @@
    }
   ],
   "consumidas": {
-   "premier": 1785777111855
+   "premier": 1785777111855,
+   "euro": 1785778313560
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:29",
-     "jogo": "Turquia x Sérvia",
-     "odd": 2.2
-    },
-    {
-     "h": "18:32",
-     "jogo": "Suíça x Albânia",
-     "odd": 2.15
-    },
-    {
-     "h": "18:35",
-     "jogo": "Espanha x Inglaterra",
-     "odd": 1.8
-    }
-   ],
-   "gatilho": "coluna :32",
-   "alvo": {
-    "h": "18:29",
-    "jogo": "Turquia x Sérvia",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785777600858
-   },
-   "iniciadoEm": 1785777600858
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785773818161,
+   "euro": 1785778313560,
    "super": 1785761869262,
    "premier": 1785777111855,
    "copa": 1785737246559
@@ -5327,13 +5304,13 @@
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
-   "2026-08-03": -7
+   "2026-08-03": -5.8
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":32",
+   "chave": ":35",
    "n": 18,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
