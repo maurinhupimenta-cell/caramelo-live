@@ -2795,13 +2795,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -74,
-  "ciclos": 936,
-  "greens": 636,
+  "saldo": -72.7,
+  "ciclos": 937,
+  "greens": 637,
   "redsCiclo": 103,
   "aborts": 0,
   "descartes": 197,
   "historico": [
+   {
+    "quando": "2026-08-03T13:35:07.757Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "euro · Portugal x Albânia @2.25 (tiro 1) · gatilho: coluna :32"
+   },
    {
     "quando": "2026-08-03T12:57:49.460Z",
     "resultado": "GREEN",
@@ -5180,11 +5186,12 @@
    }
   ],
   "consumidas": {
-   "super": 1785761869262
+   "super": 1785761869262,
+   "euro": 1785764107559
   },
   "ciclo": null,
   "cooldown": {
-   "euro": 1785760148164,
+   "euro": 1785764107559,
    "super": 1785761869262,
    "premier": 1785757300964,
    "copa": 1785737246559
@@ -5208,13 +5215,13 @@
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
-   "2026-08-03": -4.3
+   "2026-08-03": -3
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":07",
+   "chave": ":35",
    "n": 14,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
