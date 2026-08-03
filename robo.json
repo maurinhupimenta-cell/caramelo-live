@@ -2576,13 +2576,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -74.4,
-  "ciclos": 908,
-  "greens": 615,
+  "saldo": -73.7,
+  "ciclos": 909,
+  "greens": 616,
   "redsCiclo": 100,
   "aborts": 0,
   "descartes": 193,
   "historico": [
+   {
+    "quando": "2026-08-03T02:05:41.557Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "premier · Wolverhampton x Watford @1.93 (tiro 3) · gatilho: time Liverpool"
+   },
    {
     "quando": "2026-08-03T01:57:25.870Z",
     "resultado": "GREEN_OBS",
@@ -4793,57 +4799,14 @@
    }
   ],
   "consumidas": {
-   "super": 1785719767560
+   "super": 1785719767560,
+   "premier": 1785722741362
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "02:57",
-     "jogo": "West Ham x Everton",
-     "odd": 2.05
-    },
-    {
-     "h": "03:00",
-     "jogo": "Burnley x Liverpool",
-     "odd": 1.9
-    },
-    {
-     "h": "03:03",
-     "jogo": "Wolverhampton x Watford",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "time Liverpool",
-   "alvo": {
-    "h": "03:03",
-    "jogo": "Wolverhampton x Watford",
-    "odd": 1.93,
-    "unidades": 4,
-    "desde": 1785722604358
-   },
-   "iniciadoEm": 1785721706957,
-   "tiros": [
-    {
-     "h": "02:57",
-     "jogo": "West Ham x Everton",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "03:00",
-     "jogo": "Burnley x Liverpool",
-     "odd": 1.9,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785702270661,
    "super": 1785719767560,
-   "premier": 1785708883761,
+   "premier": 1785722741362,
    "copa": 1785719129662
   },
   "dias": {
@@ -4864,7 +4827,7 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -48
+   "2026-08-02": -47.3
   },
   "_gatilhoAtual": {
    "tipo": "time",
