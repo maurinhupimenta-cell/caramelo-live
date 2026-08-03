@@ -2714,7 +2714,45 @@
    "copa": 1785753806060,
    "euro": 1785754205860
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "11:54",
+     "jogo": "Liverpool x Brighton",
+     "odd": 2.07
+    },
+    {
+     "h": "11:57",
+     "jogo": "Tottenham x Watford",
+     "odd": 2.5
+    },
+    {
+     "h": "12:00",
+     "jogo": "Burnley x Leicester",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "coluna :57",
+   "alvo": {
+    "h": "11:57",
+    "jogo": "Tottenham x Watford",
+    "odd": 2.5,
+    "unidades": 2,
+    "desde": 1785754603162
+   },
+   "iniciadoEm": 1785754208656,
+   "tiros": [
+    {
+     "h": "11:54",
+     "jogo": "Liverpool x Brighton",
+     "odd": 2.07,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1785753806060,
    "premier": 1785747578967,
@@ -2747,7 +2785,7 @@
    "tipo": "coluna",
    "chave": ":57",
    "n": 11,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -5109,7 +5147,37 @@
   "consumidas": {
    "super": 1785751969861
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "11:59",
+     "jogo": "Suíça x Itália",
+     "odd": 1.93
+    },
+    {
+     "h": "12:02",
+     "jogo": "Inglaterra x França",
+     "odd": 1.8
+    },
+    {
+     "h": "12:05",
+     "jogo": "Croácia x Romênia",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "time França",
+   "alvo": {
+    "h": "11:59",
+    "jogo": "Suíça x Itália",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1785754206057
+   },
+   "iniciadoEm": 1785754206057
+  },
   "cooldown": {
    "euro": 1785750067659,
    "super": 1785751969861,
@@ -5138,9 +5206,9 @@
    "2026-08-03": -8.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":19",
-   "n": 11,
+   "tipo": "time",
+   "chave": "França",
+   "n": 21,
    "start": 1
   },
   "_obs": {}
