@@ -2762,7 +2762,37 @@
    "euro": 1785763189759,
    "premier": 1785765583155
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:22",
+     "jogo": "Coreia do Sul x Senegal",
+     "odd": 2.7
+    },
+    {
+     "h": "15:25",
+     "jogo": "Suíça x Países Baixos",
+     "odd": 2.35
+    },
+    {
+     "h": "15:28",
+     "jogo": "Japão x Argélia",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "seq RRGGR",
+   "alvo": {
+    "h": "15:22",
+    "jogo": "Coreia do Sul x Senegal",
+    "odd": 2.7,
+    "unidades": 1,
+    "desde": 1785766725759
+   },
+   "iniciadoEm": 1785766725759
+  },
   "cooldown": {
    "copa": 1785762765558,
    "premier": 1785765583155,
@@ -2792,9 +2822,9 @@
    "2026-08-03": 17.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":57",
-   "n": 14,
+   "tipo": "seq",
+   "chave": "RRGGR",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
