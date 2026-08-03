@@ -2859,8 +2859,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "22:53",
@@ -2880,13 +2880,21 @@
    ],
    "gatilho": "seq RRGRR",
    "alvo": {
-    "h": "22:53",
-    "jogo": "Países Baixos x Dinamarca",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785793863960
+    "h": "22:56",
+    "jogo": "França x Espanha",
+    "odd": 1.98,
+    "unidades": 2,
+    "desde": 1785794285766
    },
-   "iniciadoEm": 1785793863960
+   "iniciadoEm": 1785793863960,
+   "tiros": [
+    {
+     "h": "22:53",
+     "jogo": "Países Baixos x Dinamarca",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785790562165,
@@ -2918,8 +2926,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRGRR",
-   "n": 18,
+   "chave": "GRRGR",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
