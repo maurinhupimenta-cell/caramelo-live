@@ -5380,7 +5380,37 @@
   "consumidas": {
    "super": 1785792002667
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:21",
+     "jogo": "Newcastle x Wolverhampton",
+     "odd": 1.76
+    },
+    {
+     "h": "23:24",
+     "jogo": "Tottenham x Chelsea",
+     "odd": 2.05
+    },
+    {
+     "h": "23:27",
+     "jogo": "Brentford x Aston",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "seq RRRGG",
+   "alvo": {
+    "h": "23:21",
+    "jogo": "Newcastle x Wolverhampton",
+    "odd": 1.76,
+    "unidades": 1,
+    "desde": 1785795476560
+   },
+   "iniciadoEm": 1785795476560
+  },
   "cooldown": {
    "euro": 1785790499468,
    "super": 1785792002667,
@@ -5409,9 +5439,9 @@
    "2026-08-03": -1.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Agua Branca",
-   "n": 42,
+   "tipo": "seq",
+   "chave": "RRRGG",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
