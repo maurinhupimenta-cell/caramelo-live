@@ -2652,13 +2652,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -88.2,
-  "ciclos": 921,
-  "greens": 621,
+  "saldo": -87.2,
+  "ciclos": 922,
+  "greens": 622,
   "redsCiclo": 103,
   "aborts": 0,
   "descartes": 197,
   "historico": [
+   {
+    "quando": "2026-08-03T05:15:49.459Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Bogota x Belo Horizonte @2.02 (tiro 2) · gatilho: time Agua Branca"
+   },
    {
     "quando": "2026-08-03T05:08:30.166Z",
     "resultado": "GREEN_OBS",
@@ -4948,50 +4954,13 @@
   ],
   "consumidas": {
    "premier": 1785731245565,
-   "euro": 1785731662865
+   "euro": 1785731662865,
+   "super": 1785734149263
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "06:10",
-     "jogo": "Asuncion x Agua Branca",
-     "odd": 1.93
-    },
-    {
-     "h": "06:13",
-     "jogo": "Bogota x Belo Horizonte",
-     "odd": 2.02
-    },
-    {
-     "h": "06:16",
-     "jogo": "La Plata x Medellin",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "time Agua Branca",
-   "alvo": {
-    "h": "06:13",
-    "jogo": "Bogota x Belo Horizonte",
-    "odd": 2.02,
-    "unidades": 2,
-    "desde": 1785733990458
-   },
-   "iniciadoEm": 1785733711965,
-   "tiros": [
-    {
-     "h": "06:10",
-     "jogo": "Asuncion x Agua Branca",
-     "odd": 1.93,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785731662865,
-   "super": 1785730108963,
+   "super": 1785734149263,
    "premier": 1785731245565,
    "copa": 1785723385956
   },
@@ -5014,7 +4983,7 @@
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
-   "2026-08-03": -18.5
+   "2026-08-03": -17.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
