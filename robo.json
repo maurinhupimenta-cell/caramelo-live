@@ -2721,7 +2721,37 @@
    "euro": 1785754205860,
    "premier": 1785754793759
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:25",
+     "jogo": "Itaquera x Agua Branca",
+     "odd": 2.2
+    },
+    {
+     "h": "12:28",
+     "jogo": "Montevideo x La Plata",
+     "odd": 2.4
+    },
+    {
+     "h": "12:31",
+     "jogo": "Belo Horizonte x Medellin",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "seq GGGR",
+   "alvo": {
+    "h": "12:25",
+    "jogo": "Itaquera x Agua Branca",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785756109962
+   },
+   "iniciadoEm": 1785756109962
+  },
   "cooldown": {
    "copa": 1785753806060,
    "premier": 1785754793759,
@@ -2751,9 +2781,9 @@
    "2026-08-03": 8.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":57",
-   "n": 11,
+   "tipo": "seq",
+   "chave": "GGGR",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
@@ -5184,7 +5214,7 @@
    "tipo": "time",
    "chave": "Agua Branca",
    "n": 24,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
