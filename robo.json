@@ -4975,8 +4975,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "07:01",
@@ -4996,13 +4996,21 @@
    ],
    "gatilho": "odd 2",
    "alvo": {
-    "h": "07:01",
-    "jogo": "Curação x Alemanha",
-    "odd": 1.86,
-    "unidades": 1,
-    "desde": 1785736766656
+    "h": "07:04",
+    "jogo": "Paraguai x Colômbia",
+    "odd": 2,
+    "unidades": 2,
+    "desde": 1785737050060
    },
-   "iniciadoEm": 1785736766656
+   "iniciadoEm": 1785736766656,
+   "tiros": [
+    {
+     "h": "07:01",
+     "jogo": "Curação x Alemanha",
+     "odd": 1.86,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785736427256,
@@ -5032,9 +5040,9 @@
    "2026-08-03": -16.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2",
-   "n": 12,
+   "tipo": "placar",
+   "chave": "0-0",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
