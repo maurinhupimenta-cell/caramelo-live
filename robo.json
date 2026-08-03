@@ -2792,7 +2792,37 @@
    "premier": 1785772966558,
    "super": 1785773605262
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:14",
+     "jogo": "Portugal x Geórgia",
+     "odd": 2.35
+    },
+    {
+     "h": "17:17",
+     "jogo": "Suíça x Ucrânia",
+     "odd": 2.2
+    },
+    {
+     "h": "17:20",
+     "jogo": "Países Baixos x Eslovênia",
+     "odd": 2.45
+    }
+   ],
+   "gatilho": "seq RRGRR",
+   "alvo": {
+    "h": "17:14",
+    "jogo": "Portugal x Geórgia",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1785773637462
+   },
+   "iniciadoEm": 1785773637462
+  },
   "cooldown": {
    "copa": 1785767126165,
    "premier": 1785772966558,
