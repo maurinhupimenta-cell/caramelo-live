@@ -5110,10 +5110,39 @@
    }
   ],
   "consumidas": {
-   "euro": 1785745928155,
    "super": 1785748029665
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:38",
+     "jogo": "Alemanha x Romênia",
+     "odd": 1.9
+    },
+    {
+     "h": "10:41",
+     "jogo": "Espanha x Eslováquia",
+     "odd": 1.95
+    },
+    {
+     "h": "10:44",
+     "jogo": "Áustria x Geórgia",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time Eslováquia",
+   "alvo": {
+    "h": "10:38",
+    "jogo": "Alemanha x Romênia",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1785749529157
+   },
+   "iniciadoEm": 1785749529157
+  },
   "cooldown": {
    "euro": 1785745928155,
    "super": 1785748029665,
@@ -5142,10 +5171,10 @@
    "2026-08-03": -10.1
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.2",
-   "n": 9,
-   "start": 1
+   "tipo": "time",
+   "chave": "Eslováquia",
+   "n": 16,
+   "start": 2
   },
   "_obs": {}
  }
