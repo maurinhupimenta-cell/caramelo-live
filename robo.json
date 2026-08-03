@@ -2555,8 +2555,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "03:38",
@@ -2576,13 +2576,21 @@
    ],
    "gatilho": "placar acima de 1-0 (2-1)",
    "alvo": {
-    "h": "03:38",
-    "jogo": "Romênia x Eslovênia",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1785724527758
+    "h": "03:41",
+    "jogo": "Ucrânia x Espanha",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1785724886454
    },
-   "iniciadoEm": 1785724527758
+   "iniciadoEm": 1785724527758,
+   "tiros": [
+    {
+     "h": "03:38",
+     "jogo": "Romênia x Eslovênia",
+     "odd": 2.5,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785724344156,
@@ -4926,7 +4934,7 @@
    "tipo": "time",
    "chave": "Itaquera",
    "n": 8,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
