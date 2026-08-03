@@ -2809,7 +2809,37 @@
   "consumidas": {
    "copa": 1785776879963
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:23",
+     "jogo": "Suíça x França",
+     "odd": 2.02
+    },
+    {
+     "h": "18:26",
+     "jogo": "Ucrânia x Países Baixos",
+     "odd": 2.15
+    },
+    {
+     "h": "18:29",
+     "jogo": "Turquia x Sérvia",
+     "odd": 2.7
+    }
+   ],
+   "gatilho": "seq GRRGR",
+   "alvo": {
+    "h": "18:23",
+    "jogo": "Suíça x França",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1785777600661
+   },
+   "iniciadoEm": 1785777600661
+  },
   "cooldown": {
    "copa": 1785776879963,
    "premier": 1785772966558,
@@ -2840,8 +2870,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRGR",
-   "n": 15,
+   "chave": "GRRGR",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
@@ -5264,7 +5294,37 @@
   "consumidas": {
    "premier": 1785777111855
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:29",
+     "jogo": "Turquia x Sérvia",
+     "odd": 2.2
+    },
+    {
+     "h": "18:32",
+     "jogo": "Suíça x Albânia",
+     "odd": 2.15
+    },
+    {
+     "h": "18:35",
+     "jogo": "Espanha x Inglaterra",
+     "odd": 1.8
+    }
+   ],
+   "gatilho": "coluna :32",
+   "alvo": {
+    "h": "18:29",
+    "jogo": "Turquia x Sérvia",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785777600858
+   },
+   "iniciadoEm": 1785777600858
+  },
   "cooldown": {
    "euro": 1785773818161,
    "super": 1785761869262,
@@ -5293,10 +5353,10 @@
    "2026-08-03": -7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGGR",
-   "n": 9,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":32",
+   "n": 18,
+   "start": 3
   },
   "_obs": {}
  }
