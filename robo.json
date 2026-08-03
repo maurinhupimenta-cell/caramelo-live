@@ -2701,8 +2701,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "11:37",
@@ -2722,13 +2722,21 @@
    ],
    "gatilho": "coluna :40",
    "alvo": {
-    "h": "11:37",
-    "jogo": "Equador x Irã",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1785752885965
+    "h": "11:40",
+    "jogo": "Jordânia x Bélgica",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1785753645861
    },
-   "iniciadoEm": 1785752885965
+   "iniciadoEm": 1785752885965,
+   "tiros": [
+    {
+     "h": "11:37",
+     "jogo": "Equador x Irã",
+     "odd": 2.4,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785746585661,
@@ -2759,17 +2767,12 @@
    "2026-08-03": 3.6
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":40",
-   "n": 11,
+   "tipo": "seq",
+   "chave": "GRRG",
+   "n": 13,
    "start": 1
   },
-  "_obs": {
-   "euro": {
-    "desde": 1785753467762,
-    "gatilho": "seq GRRG"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -78,
