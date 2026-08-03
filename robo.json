@@ -2845,10 +2845,10 @@
    "2026-08-03": 21.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.07",
-   "n": 8,
-   "start": 3
+   "tipo": "seq",
+   "chave": "GRRG",
+   "n": 22,
+   "start": 1
   },
   "_obs": {}
  },
@@ -5258,7 +5258,37 @@
   "consumidas": {
    "premier": 1785772454461
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:11",
+     "jogo": "Países Baixos x Ucrânia",
+     "odd": 1.9
+    },
+    {
+     "h": "17:14",
+     "jogo": "Portugal x Geórgia",
+     "odd": 2.1
+    },
+    {
+     "h": "17:17",
+     "jogo": "Suíça x Ucrânia",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "seq RRRGG",
+   "alvo": {
+    "h": "17:11",
+    "jogo": "Países Baixos x Ucrânia",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1785773277656
+   },
+   "iniciadoEm": 1785773277656
+  },
   "cooldown": {
    "euro": 1785767998260,
    "super": 1785761869262,
@@ -5287,9 +5317,9 @@
    "2026-08-03": -1.2
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":32",
-   "n": 16,
+   "tipo": "seq",
+   "chave": "RRRGG",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
