@@ -2801,7 +2801,7 @@
    "tipo": "coluna",
    "chave": ":57",
    "n": 13,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
@@ -5189,8 +5189,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "13:52",
@@ -5210,13 +5210,21 @@
    ],
    "gatilho": "time Agua Branca",
    "alvo": {
-    "h": "13:52",
-    "jogo": "Bogota x Santiago",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1785760989565
+    "h": "13:55",
+    "jogo": "Agua Branca x Penarol",
+    "odd": 2.07,
+    "unidades": 2,
+    "desde": 1785761730565
    },
-   "iniciadoEm": 1785760989565
+   "iniciadoEm": 1785760989565,
+   "tiros": [
+    {
+     "h": "13:52",
+     "jogo": "Bogota x Santiago",
+     "odd": 2.02,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785760148164,
@@ -5246,9 +5254,9 @@
    "2026-08-03": -5.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Agua Branca",
-   "n": 27,
+   "tipo": "coluna",
+   "chave": ":07",
+   "n": 14,
    "start": 3
   },
   "_obs": {}
