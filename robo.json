@@ -2596,8 +2596,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:25",
@@ -2617,13 +2617,21 @@
    ],
    "gatilho": "seq GRRR",
    "alvo": {
-    "h": "05:25",
-    "jogo": "Sao Paulo x Buenos Aires",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785731125367
+    "h": "05:28",
+    "jogo": "Agua Branca x Belo Horizonte",
+    "odd": 2.02,
+    "unidades": 2,
+    "desde": 1785731426867
    },
-   "iniciadoEm": 1785731125367
+   "iniciadoEm": 1785731125367,
+   "tiros": [
+    {
+     "h": "05:25",
+     "jogo": "Sao Paulo x Buenos Aires",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785724344156,
@@ -2654,17 +2662,12 @@
    "2026-08-03": -2.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRR",
-   "n": 13,
-   "start": 1
+   "tipo": "time",
+   "chave": "Rio de Janeiro",
+   "n": 9,
+   "start": 3
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785731306258,
-    "gatilho": "placar acima de 1-0 (2-0)"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -89.1,
@@ -5014,7 +5017,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "acima de 1-0 (2-1)",
-   "n": 14,
+   "n": 15,
    "start": 1
   },
   "_obs": {}
