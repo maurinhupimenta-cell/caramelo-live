@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -181.1,
-  "ciclos": 908,
-  "greens": 558,
+  "saldo": -179.5,
+  "ciclos": 909,
+  "greens": 559,
   "redsCiclo": 150,
   "aborts": 0,
   "descartes": 200,
   "historico": [
+   {
+    "quando": "2026-08-03T10:50:05.962Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "euro · República Tcheca x Espanha @2.3 (tiro 2) · gatilho: seq RRGG"
+   },
    {
     "quando": "2026-08-03T10:43:26.258Z",
     "resultado": "GREEN",
@@ -2705,51 +2711,14 @@
    }
   ],
   "consumidas": {
-   "copa": 1785753806060
+   "copa": 1785753806060,
+   "euro": 1785754205860
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "11:44",
-     "jogo": "Alemanha x Dinamarca",
-     "odd": 2.3
-    },
-    {
-     "h": "11:47",
-     "jogo": "República Tcheca x Espanha",
-     "odd": 2.3
-    },
-    {
-     "h": "11:50",
-     "jogo": "Alemanha x Portugal",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "seq RRGG",
-   "alvo": {
-    "h": "11:47",
-    "jogo": "República Tcheca x Espanha",
-    "odd": 2.3,
-    "unidades": 2,
-    "desde": 1785754009161
-   },
-   "iniciadoEm": 1785753808160,
-   "tiros": [
-    {
-     "h": "11:44",
-     "jogo": "Alemanha x Dinamarca",
-     "odd": 2.3,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785753806060,
    "premier": 1785747578967,
-   "euro": 1785748988066,
+   "euro": 1785754205860,
    "super": 1785749811155
   },
   "dias": {
@@ -2772,13 +2741,13 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 5.1
+   "2026-08-03": 6.7
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":57",
    "n": 11,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
