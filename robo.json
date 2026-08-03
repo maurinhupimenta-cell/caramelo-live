@@ -2736,13 +2736,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -79.8,
-  "ciclos": 929,
-  "greens": 629,
+  "saldo": -78.9,
+  "ciclos": 930,
+  "greens": 630,
   "redsCiclo": 103,
   "aborts": 0,
   "descartes": 197,
   "historico": [
+   {
+    "quando": "2026-08-03T09:41:07.856Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Alemanha x Romênia @1.9 (tiro 1) · gatilho: time Eslováquia"
+   },
    {
     "quando": "2026-08-03T09:07:09.857Z",
     "resultado": "GREEN",
@@ -5079,41 +5085,12 @@
    }
   ],
   "consumidas": {
-   "super": 1785748029665
+   "super": 1785748029665,
+   "euro": 1785750067659
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "10:38",
-     "jogo": "Alemanha x Romênia",
-     "odd": 1.9
-    },
-    {
-     "h": "10:41",
-     "jogo": "Espanha x Eslováquia",
-     "odd": 1.95
-    },
-    {
-     "h": "10:44",
-     "jogo": "Áustria x Geórgia",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "time Eslováquia",
-   "alvo": {
-    "h": "10:38",
-    "jogo": "Alemanha x Romênia",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1785749529157
-   },
-   "iniciadoEm": 1785749529157
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785745928155,
+   "euro": 1785750067659,
    "super": 1785748029665,
    "premier": 1785731245565,
    "copa": 1785737246559
@@ -5137,7 +5114,7 @@
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
-   "2026-08-03": -10.1
+   "2026-08-03": -9.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
