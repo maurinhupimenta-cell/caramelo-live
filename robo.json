@@ -5386,7 +5386,37 @@
   "consumidas": {
    "premier": 1785795850863
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:25",
+     "jogo": "Belo Horizonte x Quito",
+     "odd": 1.98
+    },
+    {
+     "h": "23:28",
+     "jogo": "Agua Branca x Santiago",
+     "odd": 1.9
+    },
+    {
+     "h": "23:31",
+     "jogo": "Lima x Avellaneda",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "time Agua Branca",
+   "alvo": {
+    "h": "23:25",
+    "jogo": "Belo Horizonte x Quito",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785795897964
+   },
+   "iniciadoEm": 1785795897964
+  },
   "cooldown": {
    "euro": 1785790499468,
    "super": 1785792002667,
