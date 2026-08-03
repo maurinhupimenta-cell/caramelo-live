@@ -4777,7 +4777,37 @@
   "consumidas": {
    "copa": 1785719129662
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:07",
+     "jogo": "Guayaquil x Porto Alegre",
+     "odd": 2.1
+    },
+    {
+     "h": "02:10",
+     "jogo": "Santos x Avellaneda",
+     "odd": 2.05
+    },
+    {
+     "h": "02:13",
+     "jogo": "Agua Branca x Buenos Aires",
+     "odd": 1.83
+    }
+   ],
+   "gatilho": "placar empate 1-1",
+   "alvo": {
+    "h": "02:07",
+    "jogo": "Guayaquil x Porto Alegre",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785719189954
+   },
+   "iniciadoEm": 1785719189954
+  },
   "cooldown": {
    "euro": 1785702270661,
    "super": 1785711970359,
@@ -4806,8 +4836,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 10,
+   "chave": "empate 1-1",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
