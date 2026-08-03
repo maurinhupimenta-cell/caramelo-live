@@ -2916,12 +2916,18 @@
  },
  "ambas": {
   "saldo": -73.2,
-  "ciclos": 945,
+  "ciclos": 946,
   "greens": 643,
   "redsCiclo": 104,
   "aborts": 0,
-  "descartes": 198,
+  "descartes": 199,
   "historico": [
+   {
+    "quando": "2026-08-03T20:34:58.964Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-08-03T18:53:52.758Z",
     "resultado": "GREEN",
@@ -5413,10 +5419,10 @@
    "2026-08-03": -3.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":32",
-   "n": 21,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.3",
+   "n": 8,
+   "start": 2
   },
   "_obs": {}
  }
