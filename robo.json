@@ -2849,13 +2849,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -69.7,
-  "ciclos": 940,
+  "saldo": -76.7,
+  "ciclos": 941,
   "greens": 640,
-  "redsCiclo": 103,
+  "redsCiclo": 104,
   "aborts": 0,
   "descartes": 197,
   "historico": [
+   {
+    "quando": "2026-08-03T17:11:51.962Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq RRGGG"
+   },
    {
     "quando": "2026-08-03T16:16:58.358Z",
     "resultado": "GREEN",
@@ -5258,57 +5264,14 @@
    }
   ],
   "consumidas": {
-   "euro": 1785773818161
+   "euro": 1785773818161,
+   "premier": 1785777111855
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "18:03",
-     "jogo": "Chelsea x Southampton",
-     "odd": 2.05
-    },
-    {
-     "h": "18:06",
-     "jogo": "Islington x Burnley",
-     "odd": 1.95
-    },
-    {
-     "h": "18:09",
-     "jogo": "United x Leeds",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "seq RRGGG",
-   "alvo": {
-    "h": "18:09",
-    "jogo": "United x Leeds",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1785776927262
-   },
-   "iniciadoEm": 1785776387665,
-   "tiros": [
-    {
-     "h": "18:03",
-     "jogo": "Chelsea x Southampton",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "18:06",
-     "jogo": "Islington x Burnley",
-     "odd": 1.95,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785773818161,
    "super": 1785761869262,
-   "premier": 1785772454461,
+   "premier": 1785777111855,
    "copa": 1785737246559
   },
   "dias": {
@@ -5330,7 +5293,7 @@
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
-   "2026-08-03": 0
+   "2026-08-03": -7
   },
   "_gatilhoAtual": {
    "tipo": "seq",
