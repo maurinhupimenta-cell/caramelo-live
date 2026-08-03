@@ -2841,8 +2841,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "21:30",
@@ -2862,13 +2862,21 @@
    ],
    "gatilho": "odd 2.55",
    "alvo": {
-    "h": "21:30",
-    "jogo": "Liverpool x City",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1785788522665
+    "h": "21:33",
+    "jogo": "Leeds x Leicester",
+    "odd": 2.55,
+    "unidades": 2,
+    "desde": 1785789166560
    },
-   "iniciadoEm": 1785788522665
+   "iniciadoEm": 1785788522665,
+   "tiros": [
+    {
+     "h": "21:30",
+     "jogo": "Liverpool x City",
+     "odd": 2.07,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785785102757,
@@ -2902,7 +2910,7 @@
    "tipo": "odd",
    "chave": "2.55",
    "n": 10,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -5408,7 +5416,7 @@
    "tipo": "coluna",
    "chave": ":32",
    "n": 21,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
