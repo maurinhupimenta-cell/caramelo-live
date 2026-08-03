@@ -2726,7 +2726,37 @@
    "premier": 1785754793759,
    "super": 1785756469060
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:01",
+     "jogo": "Croácia x Curação",
+     "odd": 2.25
+    },
+    {
+     "h": "13:04",
+     "jogo": "Iraque x Argélia",
+     "odd": 2.45
+    },
+    {
+     "h": "13:07",
+     "jogo": "Panamá x Suécia",
+     "odd": 2.62
+    }
+   ],
+   "gatilho": "seq RRRGR",
+   "alvo": {
+    "h": "13:01",
+    "jogo": "Croácia x Curação",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785758326254
+   },
+   "iniciadoEm": 1785758326254
+  },
   "cooldown": {
    "copa": 1785753806060,
    "premier": 1785754793759,
@@ -2756,9 +2786,9 @@
    "2026-08-03": 9.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Bogota",
-   "n": 23,
+   "tipo": "seq",
+   "chave": "RRRGR",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
