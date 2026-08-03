@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -163.5,
-  "ciclos": 922,
-  "greens": 571,
+  "saldo": -162.1,
+  "ciclos": 923,
+  "greens": 572,
   "redsCiclo": 150,
   "aborts": 0,
   "descartes": 201,
   "historico": [
+   {
+    "quando": "2026-08-03T16:16:58.061Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "euro · Portugal x Geórgia @2.35 (tiro 1) · gatilho: seq RRGRR"
+   },
    {
     "quando": "2026-08-03T16:13:25.457Z",
     "resultado": "GREEN",
@@ -2790,43 +2796,14 @@
   ],
   "consumidas": {
    "premier": 1785772966558,
-   "super": 1785773605262
+   "super": 1785773605262,
+   "euro": 1785773817954
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:14",
-     "jogo": "Portugal x Geórgia",
-     "odd": 2.35
-    },
-    {
-     "h": "17:17",
-     "jogo": "Suíça x Ucrânia",
-     "odd": 2.2
-    },
-    {
-     "h": "17:20",
-     "jogo": "Países Baixos x Eslovênia",
-     "odd": 2.45
-    }
-   ],
-   "gatilho": "seq RRGRR",
-   "alvo": {
-    "h": "17:14",
-    "jogo": "Portugal x Geórgia",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1785773637462
-   },
-   "iniciadoEm": 1785773637462
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785767126165,
    "premier": 1785772966558,
-   "euro": 1785768299368,
+   "euro": 1785773817954,
    "super": 1785773605262
   },
   "dias": {
@@ -2849,7 +2826,7 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 22.7
+   "2026-08-03": 24.1
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -2860,13 +2837,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -70.9,
-  "ciclos": 939,
-  "greens": 639,
+  "saldo": -69.7,
+  "ciclos": 940,
+  "greens": 640,
   "redsCiclo": 103,
   "aborts": 0,
   "descartes": 197,
   "historico": [
+   {
+    "quando": "2026-08-03T16:16:58.358Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Portugal x Geórgia @2.1 (tiro 2) · gatilho: seq RRRGG"
+   },
    {
     "quando": "2026-08-03T15:54:14.657Z",
     "resultado": "GREEN",
@@ -5263,49 +5246,12 @@
    }
   ],
   "consumidas": {
-   "premier": 1785772454461
+   "premier": 1785772454461,
+   "euro": 1785773818161
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:11",
-     "jogo": "Países Baixos x Ucrânia",
-     "odd": 1.9
-    },
-    {
-     "h": "17:14",
-     "jogo": "Portugal x Geórgia",
-     "odd": 2.1
-    },
-    {
-     "h": "17:17",
-     "jogo": "Suíça x Ucrânia",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "seq RRRGG",
-   "alvo": {
-    "h": "17:14",
-    "jogo": "Portugal x Geórgia",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1785773696859
-   },
-   "iniciadoEm": 1785773277656,
-   "tiros": [
-    {
-     "h": "17:11",
-     "jogo": "Países Baixos x Ucrânia",
-     "odd": 1.9,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785767998260,
+   "euro": 1785773818161,
    "super": 1785761869262,
    "premier": 1785772454461,
    "copa": 1785737246559
@@ -5329,7 +5275,7 @@
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
-   "2026-08-03": -1.2
+   "2026-08-03": 0
   },
   "_gatilhoAtual": {
    "tipo": "seq",
