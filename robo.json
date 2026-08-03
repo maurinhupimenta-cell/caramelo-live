@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -155.6,
-  "ciclos": 935,
-  "greens": 582,
+  "saldo": -154.4,
+  "ciclos": 936,
+  "greens": 583,
   "redsCiclo": 151,
   "aborts": 0,
   "descartes": 202,
   "historico": [
+   {
+    "quando": "2026-08-03T22:50:01.358Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Lima x Quito @2.2 (tiro 1) · gatilho: odd 2.07"
+   },
    {
     "quando": "2026-08-03T22:14:07.457Z",
     "resultado": "GREEN",
@@ -2868,44 +2874,15 @@
   ],
   "consumidas": {
    "euro": 1785794589259,
-   "copa": 1785795247263
+   "copa": 1785795247263,
+   "super": 1785797401159
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:46",
-     "jogo": "Lima x Quito",
-     "odd": 2.2
-    },
-    {
-     "h": "23:49",
-     "jogo": "Rio de Janeiro x Sao Paulo",
-     "odd": 2.07
-    },
-    {
-     "h": "23:52",
-     "jogo": "Lima x Santiago",
-     "odd": 2
-    }
-   ],
-   "gatilho": "odd 2.07",
-   "alvo": {
-    "h": "23:46",
-    "jogo": "Lima x Quito",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785796748858
-   },
-   "iniciadoEm": 1785796748858
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785795247263,
    "premier": 1785789527666,
    "euro": 1785794589259,
-   "super": 1785793143558
+   "super": 1785797401159
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -2927,13 +2904,13 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 30.6
+   "2026-08-03": 31.8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.07",
    "n": 9,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
