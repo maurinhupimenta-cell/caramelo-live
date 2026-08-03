@@ -2766,13 +2766,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -76.5,
-  "ciclos": 933,
-  "greens": 633,
+  "saldo": -76.1,
+  "ciclos": 934,
+  "greens": 634,
   "redsCiclo": 103,
   "aborts": 0,
   "descartes": 197,
   "historico": [
+   {
+    "quando": "2026-08-03T11:41:41.161Z",
+    "resultado": "GREEN",
+    "unidades": 0.4,
+    "detalhe": "premier · Islington x Wolverhampton @1.86 (tiro 3) · gatilho: placar empate 2-2"
+   },
    {
     "quando": "2026-08-03T11:27:49.462Z",
     "resultado": "GREEN",
@@ -5134,57 +5140,14 @@
   ],
   "consumidas": {
    "euro": 1785755127964,
-   "super": 1785756469262
+   "super": 1785756469262,
+   "premier": 1785757300964
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "12:33",
-     "jogo": "Wolverhampton x Leeds",
-     "odd": 2.02
-    },
-    {
-     "h": "12:36",
-     "jogo": "Norwich x Leicester",
-     "odd": 1.95
-    },
-    {
-     "h": "12:39",
-     "jogo": "Islington x Wolverhampton",
-     "odd": 1.86
-    }
-   ],
-   "gatilho": "placar empate 2-2",
-   "alvo": {
-    "h": "12:39",
-    "jogo": "Islington x Wolverhampton",
-    "odd": 1.86,
-    "unidades": 4,
-    "desde": 1785757119665
-   },
-   "iniciadoEm": 1785756590665,
-   "tiros": [
-    {
-     "h": "12:33",
-     "jogo": "Wolverhampton x Leeds",
-     "odd": 2.02,
-     "unidades": 1
-    },
-    {
-     "h": "12:36",
-     "jogo": "Norwich x Leicester",
-     "odd": 1.95,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785755127964,
    "super": 1785756469262,
-   "premier": 1785731245565,
+   "premier": 1785757300964,
    "copa": 1785737246559
   },
   "dias": {
@@ -5206,7 +5169,7 @@
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
-   "2026-08-03": -6.8
+   "2026-08-03": -6.4
   },
   "_gatilhoAtual": {
    "tipo": "placar",
