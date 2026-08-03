@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -180.5,
-  "ciclos": 881,
+  "saldo": -187.5,
+  "ciclos": 882,
   "greens": 539,
-  "redsCiclo": 146,
+  "redsCiclo": 147,
   "aborts": 0,
   "descartes": 196,
   "historico": [
+   {
+    "quando": "2026-08-03T02:32:24.358Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-08-03T02:13:25.257Z",
     "resultado": "GREEN",
@@ -2544,55 +2550,12 @@
   ],
   "consumidas": {
    "premier": 1785722604060,
-   "super": 1785723205060
+   "super": 1785723205060,
+   "copa": 1785724344156
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "03:19",
-     "jogo": "Colômbia x Turquia",
-     "odd": 2.25
-    },
-    {
-     "h": "03:22",
-     "jogo": "México x Coreia do Sul",
-     "odd": 2.4
-    },
-    {
-     "h": "03:25",
-     "jogo": "Japão x Nova Zelândia",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-1)",
-   "alvo": {
-    "h": "03:25",
-    "jogo": "Japão x Nova Zelândia",
-    "odd": 2.35,
-    "unidades": 4,
-    "desde": 1785723928657
-   },
-   "iniciadoEm": 1785723385757,
-   "tiros": [
-    {
-     "h": "03:19",
-     "jogo": "Colômbia x Turquia",
-     "odd": 2.25,
-     "unidades": 1
-    },
-    {
-     "h": "03:22",
-     "jogo": "México x Coreia do Sul",
-     "odd": 2.4,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785708147859,
+   "copa": 1785724344156,
    "premier": 1785722604060,
    "euro": 1785697826355,
    "super": 1785723205060
@@ -2616,7 +2579,7 @@
    "2026-07-30": -25.2,
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
-   "2026-08-02": -21.8
+   "2026-08-02": -28.8
   },
   "_gatilhoAtual": {
    "tipo": "placar",
