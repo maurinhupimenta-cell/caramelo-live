@@ -2813,10 +2813,39 @@
    }
   ],
   "consumidas": {
-   "copa": 1785776879963,
    "euro": 1785777958766
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:10",
+     "jogo": "RD Congo x Áustria",
+     "odd": 2.1
+    },
+    {
+     "h": "19:13",
+     "jogo": "Argélia x Brasil",
+     "odd": 2.25
+    },
+    {
+     "h": "19:16",
+     "jogo": "Egito x México",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "seq GGRGR",
+   "alvo": {
+    "h": "19:10",
+    "jogo": "RD Congo x Áustria",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785780481755
+   },
+   "iniciadoEm": 1785780481755
+  },
   "cooldown": {
    "copa": 1785776879963,
    "premier": 1785772966558,
@@ -2847,8 +2876,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRGRR",
-   "n": 14,
+   "chave": "GGRGR",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
