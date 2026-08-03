@@ -2607,7 +2607,37 @@
    "super": 1785731458059,
    "copa": 1785732488161
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:11",
+     "jogo": "Geórgia x Suíça",
+     "odd": 2.25
+    },
+    {
+     "h": "06:14",
+     "jogo": "Ucrânia x Alemanha",
+     "odd": 2.2
+    },
+    {
+     "h": "06:17",
+     "jogo": "Dinamarca x Países Baixos",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-1)",
+   "alvo": {
+    "h": "06:11",
+    "jogo": "Geórgia x Suíça",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785733667861
+   },
+   "iniciadoEm": 1785733667861
+  },
   "cooldown": {
    "copa": 1785732488161,
    "premier": 1785730946156,
@@ -2638,8 +2668,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-0)",
-   "n": 8,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 17,
    "start": 1
   },
   "_obs": {}
