@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -178,
-  "ciclos": 896,
-  "greens": 550,
+  "saldo": -176.5,
+  "ciclos": 897,
+  "greens": 551,
   "redsCiclo": 148,
   "aborts": 0,
   "descartes": 198,
   "historico": [
+   {
+    "quando": "2026-08-03T07:08:51.159Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "premier · Tottenham x Brentford @2.5 (tiro 1) · gatilho: odd 2.15"
+   },
    {
     "quando": "2026-08-03T06:49:46.463Z",
     "resultado": "GREEN",
@@ -2634,42 +2640,43 @@
   ],
   "consumidas": {
    "copa": 1785738287654,
-   "euro": 1785739786268
+   "euro": 1785739786268,
+   "premier": 1785740930955
   },
   "ciclo": {
-   "liga": "premier",
+   "liga": "super",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "08:06",
-     "jogo": "Tottenham x Brentford",
-     "odd": 2.5
-    },
-    {
-     "h": "08:09",
-     "jogo": "Chelsea x Burnley",
+     "h": "08:13",
+     "jogo": "Rio de Janeiro x Agua Branca",
      "odd": 2.15
     },
     {
-     "h": "08:12",
-     "jogo": "United x Islington",
-     "odd": 2.2
+     "h": "08:16",
+     "jogo": "Bogota x Lima",
+     "odd": 2.4
+    },
+    {
+     "h": "08:19",
+     "jogo": "Santiago x Agua Branca",
+     "odd": 2
     }
    ],
-   "gatilho": "odd 2.15",
+   "gatilho": "time Bogota",
    "alvo": {
-    "h": "08:06",
-    "jogo": "Tottenham x Brentford",
-    "odd": 2.5,
+    "h": "08:13",
+    "jogo": "Rio de Janeiro x Agua Branca",
+    "odd": 2.15,
     "unidades": 1,
-    "desde": 1785740213366
+    "desde": 1785740933061
    },
-   "iniciadoEm": 1785740213366
+   "iniciadoEm": 1785740933061
   },
   "cooldown": {
    "copa": 1785738287654,
-   "premier": 1785735993766,
+   "premier": 1785740930955,
    "euro": 1785739786268,
    "super": 1785736689860
   },
@@ -2693,13 +2700,13 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 8.2
+   "2026-08-03": 9.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.15",
-   "n": 10,
-   "start": 1
+   "tipo": "time",
+   "chave": "Bogota",
+   "n": 17,
+   "start": 2
   },
   "_obs": {}
  },
