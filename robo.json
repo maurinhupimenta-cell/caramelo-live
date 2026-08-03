@@ -2527,8 +2527,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "01:39",
@@ -2548,13 +2548,21 @@
    ],
    "gatilho": "placar goleada (3+)",
    "alvo": {
-    "h": "01:39",
-    "jogo": "Brentford x Chelsea",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785717443959
+    "h": "01:42",
+    "jogo": "Burnley x Newcastle",
+    "odd": 2,
+    "unidades": 2,
+    "desde": 1785717703064
    },
-   "iniciadoEm": 1785717443959
+   "iniciadoEm": 1785717443959,
+   "tiros": [
+    {
+     "h": "01:39",
+     "jogo": "Brentford x Chelsea",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785708147859,
@@ -2586,7 +2594,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "goleada (3+)",
-   "n": 8,
+   "n": 9,
    "start": 1
   },
   "_obs": {}
