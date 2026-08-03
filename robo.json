@@ -261,12 +261,18 @@
  },
  "o25": {
   "saldo": -188.5,
-  "ciclos": 888,
+  "ciclos": 889,
   "greens": 543,
   "redsCiclo": 148,
   "aborts": 0,
-  "descartes": 197,
+  "descartes": 198,
   "historico": [
+   {
+    "quando": "2026-08-03T04:28:26.259Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho placar acima de 1-0 (2-0)) — liga REARMADA"
+   },
    {
     "quando": "2026-08-03T04:22:26.263Z",
     "resultado": "GREEN",
@@ -2653,7 +2659,12 @@
    "n": 13,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1785731306258,
+    "gatilho": "placar acima de 1-0 (2-0)"
+   }
+  }
  },
  "ambas": {
   "saldo": -89.1,
