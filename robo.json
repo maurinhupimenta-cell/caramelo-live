@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -182.3,
-  "ciclos": 899,
-  "greens": 552,
+  "saldo": -181.1,
+  "ciclos": 900,
+  "greens": 553,
   "redsCiclo": 149,
   "aborts": 0,
   "descartes": 198,
   "historico": [
+   {
+    "quando": "2026-08-03T07:55:50.462Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Espanha x Áustria @2.15 (tiro 1) · gatilho: time França"
+   },
    {
     "quando": "2026-08-03T07:37:06.856Z",
     "resultado": "RED_CICLO",
@@ -2653,43 +2659,14 @@
   "consumidas": {
    "premier": 1785740930955,
    "super": 1785741370161,
-   "copa": 1785742626356
+   "copa": 1785742626356,
+   "euro": 1785743750354
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "08:53",
-     "jogo": "Espanha x Áustria",
-     "odd": 2.15
-    },
-    {
-     "h": "08:56",
-     "jogo": "França x Escócia",
-     "odd": 2.1
-    },
-    {
-     "h": "08:59",
-     "jogo": "Croácia x Hungria",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "time França",
-   "alvo": {
-    "h": "08:53",
-    "jogo": "Espanha x Áustria",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785743386364
-   },
-   "iniciadoEm": 1785743386364
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785742626356,
    "premier": 1785740930955,
-   "euro": 1785739786268,
+   "euro": 1785743750354,
    "super": 1785741370161
   },
   "dias": {
@@ -2712,13 +2689,13 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 3.9
+   "2026-08-03": 5.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "França",
-   "n": 16,
-   "start": 2
+   "tipo": "seq",
+   "chave": "GRRG",
+   "n": 11,
+   "start": 1
   },
   "_obs": {}
  },
