@@ -2681,18 +2681,24 @@
    "tipo": "time",
    "chave": "Bogota",
    "n": 11,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -87.2,
-  "ciclos": 922,
-  "greens": 622,
+  "saldo": -86.4,
+  "ciclos": 923,
+  "greens": 623,
   "redsCiclo": 103,
   "aborts": 0,
   "descartes": 197,
   "historico": [
+   {
+    "quando": "2026-08-03T05:53:47.361Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "euro · Inglaterra x Bélgica @1.83 (tiro 1) · gatilho: time Eslováquia"
+   },
    {
     "quando": "2026-08-03T05:15:49.459Z",
     "resultado": "GREEN",
@@ -4987,41 +4993,12 @@
    }
   ],
   "consumidas": {
-   "super": 1785734149263
+   "super": 1785734149263,
+   "euro": 1785736427256
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:50",
-     "jogo": "Inglaterra x Bélgica",
-     "odd": 1.83
-    },
-    {
-     "h": "06:53",
-     "jogo": "Eslováquia x Romênia",
-     "odd": 1.9
-    },
-    {
-     "h": "06:56",
-     "jogo": "Polônia x Países Baixos",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "time Eslováquia",
-   "alvo": {
-    "h": "06:50",
-    "jogo": "Inglaterra x Bélgica",
-    "odd": 1.83,
-    "unidades": 1,
-    "desde": 1785735667857
-   },
-   "iniciadoEm": 1785735667857
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785731662865,
+   "euro": 1785736427256,
    "super": 1785734149263,
    "premier": 1785731245565,
    "copa": 1785723385956
@@ -5045,13 +5022,13 @@
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
-   "2026-08-03": -17.5
+   "2026-08-03": -16.7
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "França",
    "n": 10,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
