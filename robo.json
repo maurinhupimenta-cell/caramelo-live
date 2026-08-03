@@ -2561,8 +2561,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "04:06",
@@ -2582,13 +2582,21 @@
    ],
    "gatilho": "time Liverpool",
    "alvo": {
-    "h": "04:06",
-    "jogo": "Palace x West Ham",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1785726205358
+    "h": "04:09",
+    "jogo": "Watford x Liverpool",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1785726546762
    },
-   "iniciadoEm": 1785726205358
+   "iniciadoEm": 1785726205358,
+   "tiros": [
+    {
+     "h": "04:06",
+     "jogo": "Palace x West Ham",
+     "odd": 2.5,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785724344156,
@@ -4877,7 +4885,37 @@
    "copa": 1785723385956,
    "super": 1785725545553
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:06",
+     "jogo": "Palace x West Ham",
+     "odd": 2.1
+    },
+    {
+     "h": "04:09",
+     "jogo": "Watford x Liverpool",
+     "odd": 1.98
+    },
+    {
+     "h": "04:12",
+     "jogo": "City x West Ham",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time Liverpool",
+   "alvo": {
+    "h": "04:06",
+    "jogo": "Palace x West Ham",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785726366556
+   },
+   "iniciadoEm": 1785726366556
+  },
   "cooldown": {
    "euro": 1785723085963,
    "super": 1785725545553,
@@ -4906,8 +4944,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Sao Paulo",
-   "n": 8,
+   "chave": "Liverpool",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
