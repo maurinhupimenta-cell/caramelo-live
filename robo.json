@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -171.4,
-  "ciclos": 915,
-  "greens": 565,
+  "saldo": -170,
+  "ciclos": 916,
+  "greens": 566,
   "redsCiclo": 150,
   "aborts": 0,
   "descartes": 200,
   "historico": [
+   {
+    "quando": "2026-08-03T13:19:49.862Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "euro · Suíça x Eslováquia @2.2 (tiro 2) · gatilho: seq RRGG"
+   },
    {
     "quando": "2026-08-03T13:12:45.756Z",
     "resultado": "GREEN",
@@ -2748,51 +2754,14 @@
   ],
   "consumidas": {
    "premier": 1785761800155,
-   "copa": 1785762765558
+   "copa": 1785762765558,
+   "euro": 1785763189759
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "14:14",
-     "jogo": "Portugal x Espanha",
-     "odd": 2.07
-    },
-    {
-     "h": "14:17",
-     "jogo": "Suíça x Eslováquia",
-     "odd": 2.2
-    },
-    {
-     "h": "14:20",
-     "jogo": "Portugal x Áustria",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "seq RRGG",
-   "alvo": {
-    "h": "14:17",
-    "jogo": "Suíça x Eslováquia",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1785763027754
-   },
-   "iniciadoEm": 1785762767356,
-   "tiros": [
-    {
-     "h": "14:14",
-     "jogo": "Portugal x Espanha",
-     "odd": 2.07,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785762765558,
    "premier": 1785761800155,
-   "euro": 1785758888163,
+   "euro": 1785763189759,
    "super": 1785756469060
   },
   "dias": {
@@ -2815,7 +2784,7 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 14.8
+   "2026-08-03": 16.2
   },
   "_gatilhoAtual": {
    "tipo": "seq",
