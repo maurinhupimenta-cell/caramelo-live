@@ -2738,7 +2738,37 @@
    "copa": 1785758685961,
    "euro": 1785758888163
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:54",
+     "jogo": "Liverpool x Everton",
+     "odd": 2.15
+    },
+    {
+     "h": "13:57",
+     "jogo": "City x Wolverhampton",
+     "odd": 1.98
+    },
+    {
+     "h": "14:00",
+     "jogo": "Everton x Islington",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "coluna :57",
+   "alvo": {
+    "h": "13:54",
+    "jogo": "Liverpool x Everton",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785761092662
+   },
+   "iniciadoEm": 1785761092662
+  },
   "cooldown": {
    "copa": 1785758685961,
    "premier": 1785754793759,
@@ -2768,10 +2798,10 @@
    "2026-08-03": 12.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGG",
-   "n": 16,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":57",
+   "n": 13,
+   "start": 3
   },
   "_obs": {}
  },
