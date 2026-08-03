@@ -2841,8 +2841,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "21:30",
@@ -2862,11 +2862,11 @@
    ],
    "gatilho": "odd 2.55",
    "alvo": {
-    "h": "21:33",
-    "jogo": "Leeds x Leicester",
-    "odd": 2.55,
-    "unidades": 2,
-    "desde": 1785789166560
+    "h": "21:36",
+    "jogo": "Tottenham x Brentford",
+    "odd": 2.5,
+    "unidades": 4,
+    "desde": 1785789342561
    },
    "iniciadoEm": 1785788522665,
    "tiros": [
@@ -2875,6 +2875,12 @@
      "jogo": "Liverpool x City",
      "odd": 2.07,
      "unidades": 1
+    },
+    {
+     "h": "21:33",
+     "jogo": "Leeds x Leicester",
+     "odd": 2.55,
+     "unidades": 2
     }
    ]
   },
@@ -5360,37 +5366,7 @@
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:29",
-     "jogo": "Eslováquia x Polônia",
-     "odd": 2.1
-    },
-    {
-     "h": "21:32",
-     "jogo": "Espanha x Países Baixos",
-     "odd": 1.8
-    },
-    {
-     "h": "20:44",
-     "jogo": "Romênia x Turquia",
-     "odd": 2
-    }
-   ],
-   "gatilho": "coluna :32",
-   "alvo": {
-    "h": "21:29",
-    "jogo": "Eslováquia x Polônia",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785788398463
-   },
-   "iniciadoEm": 1785788398463
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785782397555,
    "super": 1785761869262,
@@ -5424,6 +5400,11 @@
    "n": 8,
    "start": 2
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1785789300563,
+    "gatilho": "odd 2.3"
+   }
+  }
  }
 }
