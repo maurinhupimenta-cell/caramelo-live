@@ -2669,13 +2669,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -89.1,
-  "ciclos": 919,
-  "greens": 620,
+  "saldo": -88.2,
+  "ciclos": 920,
+  "greens": 621,
   "redsCiclo": 103,
   "aborts": 0,
   "descartes": 196,
   "historico": [
+   {
+    "quando": "2026-08-03T04:34:23.056Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Croácia x Escócia @1.93 (tiro 1) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-08-03T04:27:25.761Z",
     "resultado": "GREEN",
@@ -4953,41 +4959,12 @@
   ],
   "consumidas": {
    "super": 1785730108963,
-   "premier": 1785731245565
+   "premier": 1785731245565,
+   "euro": 1785731662865
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:29",
-     "jogo": "Croácia x Escócia",
-     "odd": 1.93
-    },
-    {
-     "h": "05:32",
-     "jogo": "Eslováquia x França",
-     "odd": 1.9
-    },
-    {
-     "h": "05:35",
-     "jogo": "Portugal x Dinamarca",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-1)",
-   "alvo": {
-    "h": "05:29",
-    "jogo": "Croácia x Escócia",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1785731248367
-   },
-   "iniciadoEm": 1785731248367
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785727527463,
+   "euro": 1785731662865,
    "super": 1785730108963,
    "premier": 1785731245565,
    "copa": 1785723385956
@@ -5011,7 +4988,7 @@
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
-   "2026-08-03": -19.4
+   "2026-08-03": -18.5
   },
   "_gatilhoAtual": {
    "tipo": "placar",
