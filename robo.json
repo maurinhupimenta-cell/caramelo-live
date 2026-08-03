@@ -2801,11 +2801,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1785772966558,
    "super": 1785773605262,
    "euro": 1785773817954
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:04",
+     "jogo": "Qatar x Senegal",
+     "odd": 2.5
+    },
+    {
+     "h": "18:07",
+     "jogo": "Suíça x Tunísia",
+     "odd": 2.6
+    },
+    {
+     "h": "18:10",
+     "jogo": "Gana x Áustria",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "seq RRRGR",
+   "alvo": {
+    "h": "18:04",
+    "jogo": "Qatar x Senegal",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1785776462959
+   },
+   "iniciadoEm": 1785776462959
+  },
   "cooldown": {
    "copa": 1785767126165,
    "premier": 1785772966558,
@@ -2836,16 +2865,11 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRGRR",
-   "n": 13,
+   "chave": "RRRGR",
+   "n": 15,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785776460955,
-    "gatilho": "seq RRRGR"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -69.7,
