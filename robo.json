@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -159.6,
-  "ciclos": 926,
-  "greens": 574,
+  "saldo": -158.5,
+  "ciclos": 927,
+  "greens": 575,
   "redsCiclo": 150,
   "aborts": 0,
   "descartes": 202,
   "historico": [
+   {
+    "quando": "2026-08-03T18:14:05.860Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · RD Congo x Áustria @2.1 (tiro 1) · gatilho: seq GGRGR"
+   },
    {
     "quando": "2026-08-03T17:25:58.958Z",
     "resultado": "GREEN",
@@ -2813,41 +2819,12 @@
    }
   ],
   "consumidas": {
-   "euro": 1785777958766
+   "euro": 1785777958766,
+   "copa": 1785780845662
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "19:10",
-     "jogo": "RD Congo x Áustria",
-     "odd": 2.1
-    },
-    {
-     "h": "19:13",
-     "jogo": "Argélia x Brasil",
-     "odd": 2.25
-    },
-    {
-     "h": "19:16",
-     "jogo": "Egito x México",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "seq GGRGR",
-   "alvo": {
-    "h": "19:10",
-    "jogo": "RD Congo x Áustria",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785780481755
-   },
-   "iniciadoEm": 1785780481755
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785776879963,
+   "copa": 1785780845662,
    "premier": 1785772966558,
    "euro": 1785777958766,
    "super": 1785773605262
@@ -2872,7 +2849,7 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 26.6
+   "2026-08-03": 27.7
   },
   "_gatilhoAtual": {
    "tipo": "seq",
