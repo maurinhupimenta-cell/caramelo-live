@@ -2572,8 +2572,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "04:50",
@@ -2593,13 +2593,21 @@
    ],
    "gatilho": "seq RRGR",
    "alvo": {
-    "h": "04:50",
-    "jogo": "Portugal x Hungria",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1785728843060
+    "h": "04:53",
+    "jogo": "Inglaterra x Países Baixos",
+    "odd": 1.98,
+    "unidades": 2,
+    "desde": 1785729187866
    },
-   "iniciadoEm": 1785728843060
+   "iniciadoEm": 1785728843060,
+   "tiros": [
+    {
+     "h": "04:50",
+     "jogo": "Portugal x Hungria",
+     "odd": 2.35,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785724344156,
@@ -4900,7 +4908,37 @@
    "premier": 1785726885262,
    "euro": 1785727527462
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:58",
+     "jogo": "Rio de Janeiro x Buenos Aires",
+     "odd": 1.86
+    },
+    {
+     "h": "05:01",
+     "jogo": "Lima x La Plata",
+     "odd": 2.05
+    },
+    {
+     "h": "05:04",
+     "jogo": "Porto Alegre x Guayaquil",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time Lima",
+   "alvo": {
+    "h": "04:58",
+    "jogo": "Rio de Janeiro x Buenos Aires",
+    "odd": 1.86,
+    "unidades": 1,
+    "desde": 1785729146659
+   },
+   "iniciadoEm": 1785729146659
+  },
   "cooldown": {
    "euro": 1785727527463,
    "super": 1785725545553,
@@ -4930,9 +4968,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "França",
-   "n": 8,
-   "start": 3
+   "chave": "Lima",
+   "n": 10,
+   "start": 2
   },
   "_obs": {}
  }
