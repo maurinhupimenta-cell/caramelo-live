@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -158.7,
-  "ciclos": 933,
-  "greens": 580,
+  "saldo": -156.9,
+  "ciclos": 934,
+  "greens": 581,
   "redsCiclo": 151,
   "aborts": 0,
   "descartes": 202,
   "historico": [
+   {
+    "quando": "2026-08-03T22:03:09.459Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "euro · Romênia x Áustria @2.2 (tiro 3) · gatilho: seq RRGRR"
+   },
    {
     "quando": "2026-08-03T21:39:03.754Z",
     "resultado": "GREEN",
@@ -2855,57 +2861,14 @@
    }
   ],
   "consumidas": {
-   "super": 1785793143558
+   "super": 1785793143558,
+   "euro": 1785794589259
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "22:53",
-     "jogo": "Países Baixos x Dinamarca",
-     "odd": 2.2
-    },
-    {
-     "h": "22:56",
-     "jogo": "França x Espanha",
-     "odd": 1.98
-    },
-    {
-     "h": "22:59",
-     "jogo": "Romênia x Áustria",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "seq RRGRR",
-   "alvo": {
-    "h": "22:59",
-    "jogo": "Romênia x Áustria",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1785794409955
-   },
-   "iniciadoEm": 1785793863960,
-   "tiros": [
-    {
-     "h": "22:53",
-     "jogo": "Países Baixos x Dinamarca",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "22:56",
-     "jogo": "França x Espanha",
-     "odd": 1.98,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785790562165,
    "premier": 1785789527666,
-   "euro": 1785787379962,
+   "euro": 1785794589259,
    "super": 1785793143558
   },
   "dias": {
@@ -2928,7 +2891,7 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 27.5
+   "2026-08-03": 29.3
   },
   "_gatilhoAtual": {
    "tipo": "seq",
