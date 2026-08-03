@@ -2742,7 +2742,7 @@
    "tipo": "coluna",
    "chave": ":57",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -5086,7 +5086,37 @@
   "consumidas": {
    "euro": 1785745928155
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "10:04",
+     "jogo": "Avellaneda x Santos",
+     "odd": 2.05
+    },
+    {
+     "h": "10:07",
+     "jogo": "Lima x Penarol",
+     "odd": 2
+    },
+    {
+     "h": "10:10",
+     "jogo": "Asuncion x Porto Alegre",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "coluna :07",
+   "alvo": {
+    "h": "10:04",
+    "jogo": "Avellaneda x Santos",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785747329866
+   },
+   "iniciadoEm": 1785747329866
+  },
   "cooldown": {
    "euro": 1785745928155,
    "super": 1785743349958,
@@ -5115,10 +5145,10 @@
    "2026-08-03": -11.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRG",
-   "n": 9,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":07",
+   "n": 10,
+   "start": 3
   },
   "_obs": {}
  }
