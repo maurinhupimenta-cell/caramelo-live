@@ -2890,13 +2890,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -72.5,
-  "ciclos": 948,
-  "greens": 644,
+  "saldo": -71.8,
+  "ciclos": 949,
+  "greens": 645,
   "redsCiclo": 104,
   "aborts": 0,
   "descartes": 200,
   "historico": [
+   {
+    "quando": "2026-08-03T21:06:04.761Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "premier · Islington x Wolverhampton @1.86 (tiro 2) · gatilho: seq RRRGG"
+   },
    {
     "quando": "2026-08-03T20:54:59.661Z",
     "resultado": "GREEN",
@@ -5347,43 +5353,14 @@
    }
   ],
   "consumidas": {
-   "euro": 1785790499468
+   "euro": 1785790499468,
+   "premier": 1785791164656
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:00",
-     "jogo": "United x Southampton",
-     "odd": 2.07
-    },
-    {
-     "h": "22:03",
-     "jogo": "Islington x Wolverhampton",
-     "odd": 1.86
-    },
-    {
-     "h": "22:06",
-     "jogo": "Palace x United",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "seq RRRGG",
-   "alvo": {
-    "h": "22:00",
-    "jogo": "United x Southampton",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1785790616159
-   },
-   "iniciadoEm": 1785790616159
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785790499468,
    "super": 1785761869262,
-   "premier": 1785783232561,
+   "premier": 1785791164656,
    "copa": 1785737246559
   },
   "dias": {
@@ -5405,7 +5382,7 @@
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
-   "2026-08-03": -2.8
+   "2026-08-03": -2.1
   },
   "_gatilhoAtual": {
    "tipo": "seq",
