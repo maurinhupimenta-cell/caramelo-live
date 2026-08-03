@@ -2909,13 +2909,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -69.1,
-  "ciclos": 952,
-  "greens": 648,
+  "saldo": -68.4,
+  "ciclos": 953,
+  "greens": 649,
   "redsCiclo": 104,
   "aborts": 0,
   "descartes": 200,
   "historico": [
+   {
+    "quando": "2026-08-03T22:37:58.360Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "euro · França x Croácia @1.87 (tiro 2) · gatilho: coluna :32"
+   },
    {
     "quando": "2026-08-03T22:29:58.161Z",
     "resultado": "GREEN",
@@ -5391,49 +5397,12 @@
   ],
   "consumidas": {
    "premier": 1785795850863,
-   "super": 1785796197968
+   "super": 1785796197968,
+   "euro": 1785796678162
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "23:29",
-     "jogo": "Polônia x Áustria",
-     "odd": 2.1
-    },
-    {
-     "h": "23:32",
-     "jogo": "França x Croácia",
-     "odd": 1.87
-    },
-    {
-     "h": "23:35",
-     "jogo": "Suíça x Ucrânia",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "coluna :32",
-   "alvo": {
-    "h": "23:32",
-    "jogo": "França x Croácia",
-    "odd": 1.87,
-    "unidades": 2,
-    "desde": 1785796497958
-   },
-   "iniciadoEm": 1785796199655,
-   "tiros": [
-    {
-     "h": "23:29",
-     "jogo": "Polônia x Áustria",
-     "odd": 2.1,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785790499468,
+   "euro": 1785796678162,
    "super": 1785796197968,
    "premier": 1785795850863,
    "copa": 1785737246559
@@ -5457,7 +5426,7 @@
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
-   "2026-08-03": 0.6
+   "2026-08-03": 1.3
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
