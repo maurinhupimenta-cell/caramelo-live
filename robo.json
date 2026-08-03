@@ -4844,8 +4844,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "03:46",
@@ -4865,13 +4865,21 @@
    ],
    "gatilho": "time Itaquera",
    "alvo": {
-    "h": "03:46",
-    "jogo": "Buenos Aires x Belo Horizonte",
-    "odd": 1.8,
-    "unidades": 1,
-    "desde": 1785724649463
+    "h": "03:49",
+    "jogo": "Itaquera x Porto Alegre",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1785725344264
    },
-   "iniciadoEm": 1785724649463
+   "iniciadoEm": 1785724649463,
+   "tiros": [
+    {
+     "h": "03:46",
+     "jogo": "Buenos Aires x Belo Horizonte",
+     "odd": 1.8,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785723085963,
@@ -4900,8 +4908,8 @@
    "2026-08-02": -44.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Itaquera",
+   "tipo": "seq",
+   "chave": "RGRR",
    "n": 8,
    "start": 1
   },
