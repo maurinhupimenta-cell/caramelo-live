@@ -2909,13 +2909,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -70.1,
-  "ciclos": 951,
-  "greens": 647,
+  "saldo": -69.1,
+  "ciclos": 952,
+  "greens": 648,
   "redsCiclo": 104,
   "aborts": 0,
   "descartes": 200,
   "historico": [
+   {
+    "quando": "2026-08-03T22:29:58.161Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Belo Horizonte x Quito @1.98 (tiro 1) · gatilho: time Agua Branca"
+   },
    {
     "quando": "2026-08-03T22:24:11.154Z",
     "resultado": "GREEN",
@@ -5384,42 +5390,13 @@
    }
   ],
   "consumidas": {
-   "premier": 1785795850863
+   "premier": 1785795850863,
+   "super": 1785796197968
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:25",
-     "jogo": "Belo Horizonte x Quito",
-     "odd": 1.98
-    },
-    {
-     "h": "23:28",
-     "jogo": "Agua Branca x Santiago",
-     "odd": 1.9
-    },
-    {
-     "h": "23:31",
-     "jogo": "Lima x Avellaneda",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "time Agua Branca",
-   "alvo": {
-    "h": "23:25",
-    "jogo": "Belo Horizonte x Quito",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785795897964
-   },
-   "iniciadoEm": 1785795897964
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785790499468,
-   "super": 1785792002667,
+   "super": 1785796197968,
    "premier": 1785795850863,
    "copa": 1785737246559
   },
@@ -5442,12 +5419,12 @@
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
-   "2026-08-03": -0.4
+   "2026-08-03": 0.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Agua Branca",
-   "n": 45,
+   "tipo": "coluna",
+   "chave": ":32",
+   "n": 23,
    "start": 1
   },
   "_obs": {}
