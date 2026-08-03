@@ -5285,8 +5285,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "18:03",
@@ -5306,13 +5306,21 @@
    ],
    "gatilho": "seq RRGGG",
    "alvo": {
-    "h": "18:03",
-    "jogo": "Chelsea x Southampton",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785776387665
+    "h": "18:06",
+    "jogo": "Islington x Burnley",
+    "odd": 1.95,
+    "unidades": 2,
+    "desde": 1785776746261
    },
-   "iniciadoEm": 1785776387665
+   "iniciadoEm": 1785776387665,
+   "tiros": [
+    {
+     "h": "18:03",
+     "jogo": "Chelsea x Southampton",
+     "odd": 2.05,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785773818161,
@@ -5343,8 +5351,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRGGG",
-   "n": 8,
+   "chave": "GGGGR",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
