@@ -2570,7 +2570,37 @@
    "premier": 1785726885060,
    "super": 1785727523565
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:50",
+     "jogo": "Portugal x Hungria",
+     "odd": 2.35
+    },
+    {
+     "h": "04:53",
+     "jogo": "Inglaterra x Países Baixos",
+     "odd": 1.98
+    },
+    {
+     "h": "04:56",
+     "jogo": "Dinamarca x Suíça",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "seq RRGR",
+   "alvo": {
+    "h": "04:50",
+    "jogo": "Portugal x Hungria",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1785728843060
+   },
+   "iniciadoEm": 1785728843060
+  },
   "cooldown": {
    "copa": 1785724344156,
    "premier": 1785726885060,
@@ -2601,8 +2631,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRRR",
-   "n": 11,
+   "chave": "RRGR",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
