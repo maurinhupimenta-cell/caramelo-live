@@ -2781,10 +2781,10 @@
    "2026-08-03": 8.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGR",
-   "n": 9,
-   "start": 1
+   "tipo": "time",
+   "chave": "Bogota",
+   "n": 23,
+   "start": 2
   },
   "_obs": {}
  },
@@ -5154,8 +5154,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "12:22",
@@ -5175,13 +5175,21 @@
    ],
    "gatilho": "time Agua Branca",
    "alvo": {
-    "h": "12:22",
-    "jogo": "Santiago x La Plata",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1785755570162
+    "h": "12:25",
+    "jogo": "Itaquera x Agua Branca",
+    "odd": 1.93,
+    "unidades": 2,
+    "desde": 1785756309757
    },
-   "iniciadoEm": 1785755570162
+   "iniciadoEm": 1785755570162,
+   "tiros": [
+    {
+     "h": "12:22",
+     "jogo": "Santiago x La Plata",
+     "odd": 2.02,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785755127964,
@@ -5211,10 +5219,10 @@
    "2026-08-03": -7.7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Agua Branca",
-   "n": 24,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.2",
+   "n": 10,
+   "start": 2
   },
   "_obs": {}
  }
