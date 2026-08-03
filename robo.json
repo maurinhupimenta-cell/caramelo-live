@@ -4973,7 +4973,45 @@
    "premier": 1785731245565,
    "euro": 1785731662865
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "06:10",
+     "jogo": "Asuncion x Agua Branca",
+     "odd": 1.93
+    },
+    {
+     "h": "06:13",
+     "jogo": "Bogota x Belo Horizonte",
+     "odd": 2.02
+    },
+    {
+     "h": "06:16",
+     "jogo": "La Plata x Medellin",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "time Agua Branca",
+   "alvo": {
+    "h": "06:13",
+    "jogo": "Bogota x Belo Horizonte",
+    "odd": 2.02,
+    "unidades": 2,
+    "desde": 1785733990458
+   },
+   "iniciadoEm": 1785733711965,
+   "tiros": [
+    {
+     "h": "06:10",
+     "jogo": "Asuncion x Agua Branca",
+     "odd": 1.93,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1785731662865,
    "super": 1785730108963,
@@ -5002,16 +5040,11 @@
    "2026-08-03": -18.5
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 15,
+   "tipo": "time",
+   "chave": "Agua Branca",
+   "n": 13,
    "start": 1
   },
-  "_obs": {
-   "super": {
-    "desde": 1785733710165,
-    "gatilho": "time Agua Branca"
-   }
-  }
+  "_obs": {}
  }
 }
