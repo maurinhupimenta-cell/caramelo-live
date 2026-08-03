@@ -2867,11 +2867,40 @@
    }
   ],
   "consumidas": {
-   "super": 1785793143558,
    "euro": 1785794589259,
    "copa": 1785795247263
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:46",
+     "jogo": "Lima x Quito",
+     "odd": 2.2
+    },
+    {
+     "h": "23:49",
+     "jogo": "Rio de Janeiro x Sao Paulo",
+     "odd": 2.07
+    },
+    {
+     "h": "23:52",
+     "jogo": "Lima x Santiago",
+     "odd": 2
+    }
+   ],
+   "gatilho": "odd 2.07",
+   "alvo": {
+    "h": "23:46",
+    "jogo": "Lima x Quito",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785796748858
+   },
+   "iniciadoEm": 1785796748858
+  },
   "cooldown": {
    "copa": 1785795247263,
    "premier": 1785789527666,
@@ -2901,10 +2930,10 @@
    "2026-08-03": 30.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGGG",
-   "n": 13,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.07",
+   "n": 9,
+   "start": 3
   },
   "_obs": {}
  },
