@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -158.5,
-  "ciclos": 927,
-  "greens": 575,
+  "saldo": -157,
+  "ciclos": 928,
+  "greens": 576,
   "redsCiclo": 150,
   "aborts": 0,
   "descartes": 202,
   "historico": [
+   {
+    "quando": "2026-08-03T18:55:57.456Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "euro · Turquia x Inglaterra @2.25 (tiro 2) · gatilho: seq GRRGR"
+   },
    {
     "quando": "2026-08-03T18:14:05.860Z",
     "resultado": "GREEN",
@@ -2819,51 +2825,14 @@
    }
   ],
   "consumidas": {
-   "copa": 1785780845662
+   "copa": 1785780845662,
+   "euro": 1785783357255
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "19:50",
-     "jogo": "Albânia x Bélgica",
-     "odd": 2.45
-    },
-    {
-     "h": "19:53",
-     "jogo": "Turquia x Inglaterra",
-     "odd": 2.25
-    },
-    {
-     "h": "19:56",
-     "jogo": "Portugal x França",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "seq GRRGR",
-   "alvo": {
-    "h": "19:53",
-    "jogo": "Turquia x Inglaterra",
-    "odd": 2.25,
-    "unidades": 2,
-    "desde": 1785783239260
-   },
-   "iniciadoEm": 1785782823761,
-   "tiros": [
-    {
-     "h": "19:50",
-     "jogo": "Albânia x Bélgica",
-     "odd": 2.45,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785780845662,
    "premier": 1785772966558,
-   "euro": 1785777958766,
+   "euro": 1785783357255,
    "super": 1785773605262
   },
   "dias": {
@@ -2886,7 +2855,7 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 27.7
+   "2026-08-03": 29.2
   },
   "_gatilhoAtual": {
    "tipo": "seq",
