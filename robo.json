@@ -2709,8 +2709,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "11:44",
@@ -2730,13 +2730,21 @@
    ],
    "gatilho": "seq RRGG",
    "alvo": {
-    "h": "11:44",
-    "jogo": "Alemanha x Dinamarca",
+    "h": "11:47",
+    "jogo": "República Tcheca x Espanha",
     "odd": 2.3,
-    "unidades": 1,
-    "desde": 1785753808160
+    "unidades": 2,
+    "desde": 1785754009161
    },
-   "iniciadoEm": 1785753808160
+   "iniciadoEm": 1785753808160,
+   "tiros": [
+    {
+     "h": "11:44",
+     "jogo": "Alemanha x Dinamarca",
+     "odd": 2.3,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785753806060,
@@ -2767,10 +2775,10 @@
    "2026-08-03": 5.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGG",
-   "n": 14,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":57",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  },
