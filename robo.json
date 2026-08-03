@@ -2567,7 +2567,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1785724344156,
    "euro": 1785725065362,
    "premier": 1785726885060,
    "super": 1785727523565
@@ -2610,13 +2609,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -76.7,
-  "ciclos": 914,
+  "saldo": -83.7,
+  "ciclos": 915,
   "greens": 619,
-  "redsCiclo": 101,
+  "redsCiclo": 102,
   "aborts": 0,
   "descartes": 194,
   "historico": [
+   {
+    "quando": "2026-08-03T03:25:27.655Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: time Eslovênia"
+   },
    {
     "quando": "2026-08-03T03:14:45.459Z",
     "resultado": "RED_CICLO",
@@ -4864,55 +4869,12 @@
   ],
   "consumidas": {
    "super": 1785725545553,
-   "premier": 1785726885262
+   "premier": 1785726885262,
+   "euro": 1785727527462
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:14",
-     "jogo": "Áustria x Eslovênia",
-     "odd": 2.25
-    },
-    {
-     "h": "04:17",
-     "jogo": "Geórgia x Portugal",
-     "odd": 2.02
-    },
-    {
-     "h": "04:20",
-     "jogo": "Áustria x Suíça",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "time Eslovênia",
-   "alvo": {
-    "h": "04:20",
-    "jogo": "Áustria x Suíça",
-    "odd": 1.93,
-    "unidades": 4,
-    "desde": 1785727206660
-   },
-   "iniciadoEm": 1785726895564,
-   "tiros": [
-    {
-     "h": "04:14",
-     "jogo": "Áustria x Eslovênia",
-     "odd": 2.25,
-     "unidades": 1
-    },
-    {
-     "h": "04:17",
-     "jogo": "Geórgia x Portugal",
-     "odd": 2.02,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785723085963,
+   "euro": 1785727527463,
    "super": 1785725545553,
    "premier": 1785726885262,
    "copa": 1785723385956
@@ -4936,13 +4898,13 @@
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
-   "2026-08-03": -7
+   "2026-08-03": -14
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Eslovênia",
-   "n": 10,
-   "start": 1
+   "chave": "França",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  }
