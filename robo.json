@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -186,
-  "ciclos": 891,
-  "greens": 545,
+  "saldo": -184.7,
+  "ciclos": 892,
+  "greens": 546,
   "redsCiclo": 148,
   "aborts": 0,
   "descartes": 198,
   "historico": [
+   {
+    "quando": "2026-08-03T05:14:06.455Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "euro · Geórgia x Suíça @2.25 (tiro 1) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-08-03T04:48:08.661Z",
     "resultado": "GREEN",
@@ -2605,43 +2611,14 @@
   "consumidas": {
    "premier": 1785730946156,
    "super": 1785731458059,
-   "copa": 1785732488161
+   "copa": 1785732488161,
+   "euro": 1785734046263
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:11",
-     "jogo": "Geórgia x Suíça",
-     "odd": 2.25
-    },
-    {
-     "h": "06:14",
-     "jogo": "Ucrânia x Alemanha",
-     "odd": 2.2
-    },
-    {
-     "h": "06:17",
-     "jogo": "Dinamarca x Países Baixos",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-1)",
-   "alvo": {
-    "h": "06:11",
-    "jogo": "Geórgia x Suíça",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785733667861
-   },
-   "iniciadoEm": 1785733667861
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785732488161,
    "premier": 1785730946156,
-   "euro": 1785729563357,
+   "euro": 1785734046263,
    "super": 1785731458059
   },
   "dias": {
@@ -2664,7 +2641,7 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 0.2
+   "2026-08-03": 1.5
   },
   "_gatilhoAtual": {
    "tipo": "placar",
