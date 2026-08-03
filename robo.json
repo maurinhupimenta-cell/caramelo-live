@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -179.4,
-  "ciclos": 895,
-  "greens": 549,
+  "saldo": -178,
+  "ciclos": 896,
+  "greens": 550,
   "redsCiclo": 148,
   "aborts": 0,
   "descartes": 198,
   "historico": [
+   {
+    "quando": "2026-08-03T06:49:46.463Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "euro · Dinamarca x França @2.2 (tiro 2) · gatilho: time França"
+   },
    {
     "quando": "2026-08-03T06:24:47.760Z",
     "resultado": "GREEN",
@@ -2628,51 +2634,14 @@
   ],
   "consumidas": {
    "super": 1785736689860,
-   "copa": 1785738287654
+   "copa": 1785738287654,
+   "euro": 1785739786268
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "07:44",
-     "jogo": "Alemanha x Turquia",
-     "odd": 2.35
-    },
-    {
-     "h": "07:47",
-     "jogo": "Dinamarca x França",
-     "odd": 2.2
-    },
-    {
-     "h": "07:50",
-     "jogo": "Espanha x Portugal",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "time França",
-   "alvo": {
-    "h": "07:47",
-    "jogo": "Dinamarca x França",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1785739627864
-   },
-   "iniciadoEm": 1785738909462,
-   "tiros": [
-    {
-     "h": "07:44",
-     "jogo": "Alemanha x Turquia",
-     "odd": 2.35,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785738287654,
    "premier": 1785735993766,
-   "euro": 1785734046263,
+   "euro": 1785739786268,
    "super": 1785736689860
   },
   "dias": {
@@ -2695,11 +2664,11 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 6.8
+   "2026-08-03": 8.2
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGRR",
+   "chave": "GRRG",
    "n": 10,
    "start": 1
   },
