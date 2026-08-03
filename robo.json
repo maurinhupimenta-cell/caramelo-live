@@ -4983,7 +4983,37 @@
   "consumidas": {
    "super": 1785734149263
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:50",
+     "jogo": "Inglaterra x Bélgica",
+     "odd": 1.83
+    },
+    {
+     "h": "06:53",
+     "jogo": "Eslováquia x Romênia",
+     "odd": 1.9
+    },
+    {
+     "h": "06:56",
+     "jogo": "Polônia x Países Baixos",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "time Eslováquia",
+   "alvo": {
+    "h": "06:50",
+    "jogo": "Inglaterra x Bélgica",
+    "odd": 1.83,
+    "unidades": 1,
+    "desde": 1785735667857
+   },
+   "iniciadoEm": 1785735667857
+  },
   "cooldown": {
    "euro": 1785731662865,
    "super": 1785734149263,
@@ -5013,9 +5043,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Agua Branca",
-   "n": 13,
-   "start": 1
+   "chave": "Eslováquia",
+   "n": 10,
+   "start": 3
   },
   "_obs": {}
  }
