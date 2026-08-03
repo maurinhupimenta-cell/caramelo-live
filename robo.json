@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -175,
-  "ciclos": 912,
-  "greens": 562,
+  "saldo": -173.8,
+  "ciclos": 913,
+  "greens": 563,
   "redsCiclo": 150,
   "aborts": 0,
   "descartes": 200,
   "historico": [
+   {
+    "quando": "2026-08-03T12:08:08.358Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Ucrânia x Alemanha @2.2 (tiro 1) · gatilho: seq RRGG"
+   },
    {
     "quando": "2026-08-03T12:04:46.158Z",
     "resultado": "GREEN",
@@ -2730,43 +2736,14 @@
   ],
   "consumidas": {
    "super": 1785756469060,
-   "copa": 1785758685961
+   "copa": 1785758685961,
+   "euro": 1785758888163
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "13:05",
-     "jogo": "Ucrânia x Alemanha",
-     "odd": 2.2
-    },
-    {
-     "h": "13:08",
-     "jogo": "Bélgica x Sérvia",
-     "odd": 2.35
-    },
-    {
-     "h": "13:11",
-     "jogo": "Turquia x Espanha",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "seq RRGG",
-   "alvo": {
-    "h": "13:05",
-    "jogo": "Ucrânia x Alemanha",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785758688265
-   },
-   "iniciadoEm": 1785758688265
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785758685961,
    "premier": 1785754793759,
-   "euro": 1785754205860,
+   "euro": 1785758888163,
    "super": 1785756469060
   },
   "dias": {
@@ -2789,7 +2766,7 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 11.2
+   "2026-08-03": 12.4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
