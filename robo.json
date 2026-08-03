@@ -2632,8 +2632,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "07:44",
@@ -2653,13 +2653,21 @@
    ],
    "gatilho": "time França",
    "alvo": {
-    "h": "07:44",
-    "jogo": "Alemanha x Turquia",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1785738909462
+    "h": "07:47",
+    "jogo": "Dinamarca x França",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1785739627864
    },
-   "iniciadoEm": 1785738909462
+   "iniciadoEm": 1785738909462,
+   "tiros": [
+    {
+     "h": "07:44",
+     "jogo": "Alemanha x Turquia",
+     "odd": 2.35,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785738287654,
@@ -2690,9 +2698,9 @@
    "2026-08-03": 6.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "França",
-   "n": 13,
+   "tipo": "seq",
+   "chave": "RGRR",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
