@@ -2570,13 +2570,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -67.4,
-  "ciclos": 906,
+  "saldo": -74.4,
+  "ciclos": 907,
   "greens": 615,
-  "redsCiclo": 99,
+  "redsCiclo": 100,
   "aborts": 0,
   "descartes": 192,
   "historico": [
+   {
+    "quando": "2026-08-03T01:16:07.758Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: placar empate 1-1"
+   },
    {
     "quando": "2026-08-03T01:05:29.856Z",
     "resultado": "GREEN",
@@ -4775,56 +4781,13 @@
    }
   ],
   "consumidas": {
-   "copa": 1785719129662
+   "copa": 1785719129662,
+   "super": 1785719767560
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "02:07",
-     "jogo": "Guayaquil x Porto Alegre",
-     "odd": 2.1
-    },
-    {
-     "h": "02:10",
-     "jogo": "Santos x Avellaneda",
-     "odd": 2.05
-    },
-    {
-     "h": "02:13",
-     "jogo": "Agua Branca x Buenos Aires",
-     "odd": 1.83
-    }
-   ],
-   "gatilho": "placar empate 1-1",
-   "alvo": {
-    "h": "02:13",
-    "jogo": "Agua Branca x Buenos Aires",
-    "odd": 1.83,
-    "unidades": 4,
-    "desde": 1785719664457
-   },
-   "iniciadoEm": 1785719189954,
-   "tiros": [
-    {
-     "h": "02:07",
-     "jogo": "Guayaquil x Porto Alegre",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "02:10",
-     "jogo": "Santos x Avellaneda",
-     "odd": 2.05,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785702270661,
-   "super": 1785711970359,
+   "super": 1785719767560,
    "premier": 1785708883761,
    "copa": 1785719129662
   },
@@ -4846,7 +4809,7 @@
    "2026-07-30": 24,
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
-   "2026-08-02": -41
+   "2026-08-02": -48
   },
   "_gatilhoAtual": {
    "tipo": "placar",
