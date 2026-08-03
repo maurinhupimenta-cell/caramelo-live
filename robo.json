@@ -2687,8 +2687,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "10:14",
@@ -2708,13 +2708,21 @@
    ],
    "gatilho": "time França",
    "alvo": {
-    "h": "10:14",
-    "jogo": "Espanha x Geórgia",
+    "h": "10:17",
+    "jogo": "França x Dinamarca",
     "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785747908257
+    "unidades": 2,
+    "desde": 1785748628062
    },
-   "iniciadoEm": 1785747908257
+   "iniciadoEm": 1785747908257,
+   "tiros": [
+    {
+     "h": "10:14",
+     "jogo": "Espanha x Geórgia",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785746585661,
@@ -2748,7 +2756,7 @@
    "tipo": "time",
    "chave": "França",
    "n": 19,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
