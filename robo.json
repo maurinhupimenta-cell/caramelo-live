@@ -2553,7 +2553,37 @@
    "super": 1785723205060,
    "copa": 1785724344156
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:38",
+     "jogo": "Romênia x Eslovênia",
+     "odd": 2.5
+    },
+    {
+     "h": "03:41",
+     "jogo": "Ucrânia x Espanha",
+     "odd": 2.15
+    },
+    {
+     "h": "03:44",
+     "jogo": "Dinamarca x Alemanha",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-1)",
+   "alvo": {
+    "h": "03:38",
+    "jogo": "Romênia x Eslovênia",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1785724527758
+   },
+   "iniciadoEm": 1785724527758
+  },
   "cooldown": {
    "copa": 1785724344156,
    "premier": 1785722604060,
@@ -2584,7 +2614,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "acima de 1-0 (2-1)",
-   "n": 8,
+   "n": 9,
    "start": 1
   },
   "_obs": {}
