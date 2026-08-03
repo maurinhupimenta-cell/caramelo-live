@@ -2649,7 +2649,37 @@
    "premier": 1785740930955,
    "super": 1785741370161
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "08:28",
+     "jogo": "México x Escócia",
+     "odd": 2.5
+    },
+    {
+     "h": "08:31",
+     "jogo": "Bósnia e Herzegovina x Áustria",
+     "odd": 2.1
+    },
+    {
+     "h": "08:34",
+     "jogo": "Países Baixos x Tunísia",
+     "odd": 2.6
+    }
+   ],
+   "gatilho": "time Escócia",
+   "alvo": {
+    "h": "08:28",
+    "jogo": "México x Escócia",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1785741888554
+   },
+   "iniciadoEm": 1785741888554
+  },
   "cooldown": {
    "copa": 1785738287654,
    "premier": 1785740930955,
@@ -2679,9 +2709,9 @@
    "2026-08-03": 10.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":19",
-   "n": 8,
+   "tipo": "time",
+   "chave": "Escócia",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
@@ -5012,7 +5042,6 @@
    }
   ],
   "consumidas": {
-   "super": 1785738309563,
    "euro": 1785740687666
   },
   "ciclo": null,
