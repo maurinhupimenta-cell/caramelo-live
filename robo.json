@@ -5120,10 +5120,39 @@
    }
   ],
   "consumidas": {
-   "super": 1785751969861,
    "euro": 1785755127964
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "12:22",
+     "jogo": "Santiago x La Plata",
+     "odd": 2.02
+    },
+    {
+     "h": "12:25",
+     "jogo": "Itaquera x Agua Branca",
+     "odd": 1.93
+    },
+    {
+     "h": "11:43",
+     "jogo": "Penarol x La Plata",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "time Agua Branca",
+   "alvo": {
+    "h": "12:22",
+    "jogo": "Santiago x La Plata",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1785755570162
+   },
+   "iniciadoEm": 1785755570162
+  },
   "cooldown": {
    "euro": 1785755127964,
    "super": 1785751969861,
@@ -5153,8 +5182,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "França",
-   "n": 21,
+   "chave": "Agua Branca",
+   "n": 24,
    "start": 3
   },
   "_obs": {}
