@@ -2631,7 +2631,37 @@
    "super": 1785736689860,
    "copa": 1785738287654
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:44",
+     "jogo": "Alemanha x Turquia",
+     "odd": 2.35
+    },
+    {
+     "h": "07:47",
+     "jogo": "Dinamarca x França",
+     "odd": 2.2
+    },
+    {
+     "h": "07:50",
+     "jogo": "Espanha x Portugal",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time França",
+   "alvo": {
+    "h": "07:44",
+    "jogo": "Alemanha x Turquia",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1785738909462
+   },
+   "iniciadoEm": 1785738909462
+  },
   "cooldown": {
    "copa": 1785738287654,
    "premier": 1785735993766,
@@ -2661,10 +2691,10 @@
    "2026-08-03": 6.8
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 21,
-   "start": 1
+   "tipo": "time",
+   "chave": "França",
+   "n": 13,
+   "start": 3
   },
   "_obs": {}
  },
