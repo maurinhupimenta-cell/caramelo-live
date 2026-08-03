@@ -2890,13 +2890,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -71.8,
-  "ciclos": 949,
-  "greens": 645,
+  "saldo": -70.9,
+  "ciclos": 950,
+  "greens": 646,
   "redsCiclo": 104,
   "aborts": 0,
   "descartes": 200,
   "historico": [
+   {
+    "quando": "2026-08-03T21:20:02.862Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Quito x Guayaquil @1.93 (tiro 1) · gatilho: time Agua Branca"
+   },
    {
     "quando": "2026-08-03T21:06:04.761Z",
     "resultado": "GREEN",
@@ -5354,42 +5360,13 @@
   ],
   "consumidas": {
    "euro": 1785790499468,
-   "premier": 1785791164656
+   "premier": 1785791164656,
+   "super": 1785792002667
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:16",
-     "jogo": "Quito x Guayaquil",
-     "odd": 1.93
-    },
-    {
-     "h": "22:19",
-     "jogo": "Belo Horizonte x Agua Branca",
-     "odd": 1.83
-    },
-    {
-     "h": "22:22",
-     "jogo": "Medellin x Sao Paulo",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "time Agua Branca",
-   "alvo": {
-    "h": "22:16",
-    "jogo": "Quito x Guayaquil",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1785791517957
-   },
-   "iniciadoEm": 1785791517957
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785790499468,
-   "super": 1785761869262,
+   "super": 1785792002667,
    "premier": 1785791164656,
    "copa": 1785737246559
   },
@@ -5412,13 +5389,13 @@
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
-   "2026-08-03": -2.1
+   "2026-08-03": -1.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Agua Branca",
    "n": 42,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
