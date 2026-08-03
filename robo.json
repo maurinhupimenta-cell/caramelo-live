@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -165.8,
-  "ciclos": 920,
-  "greens": 569,
+  "saldo": -164.6,
+  "ciclos": 921,
+  "greens": 570,
   "redsCiclo": 150,
   "aborts": 0,
   "descartes": 201,
   "historico": [
+   {
+    "quando": "2026-08-03T16:02:46.757Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · City x United @2.1 (tiro 2) · gatilho: coluna :57"
+   },
    {
     "quando": "2026-08-03T15:54:09.758Z",
     "resultado": "DESCARTADO",
@@ -2776,49 +2782,13 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "16:57",
-     "jogo": "Chelsea x Palace",
-     "odd": 2.2
-    },
-    {
-     "h": "17:00",
-     "jogo": "City x United",
-     "odd": 2.1
-    },
-    {
-     "h": "17:03",
-     "jogo": "Southampton x Brentford",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "coluna :57",
-   "alvo": {
-    "h": "17:00",
-    "jogo": "City x United",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1785772792863
-   },
-   "iniciadoEm": 1785772454259,
-   "tiros": [
-    {
-     "h": "16:57",
-     "jogo": "Chelsea x Palace",
-     "odd": 2.2,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "premier": 1785772966558
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785767126165,
-   "premier": 1785765583155,
+   "premier": 1785772966558,
    "euro": 1785768299368,
    "super": 1785756469060
   },
@@ -2842,7 +2812,7 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 20.4
+   "2026-08-03": 21.6
   },
   "_gatilhoAtual": {
    "tipo": "odd",
