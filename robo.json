@@ -2864,7 +2864,37 @@
    "super": 1785793143558,
    "euro": 1785794589259
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:07",
+     "jogo": "Argélia x Uzbequistão",
+     "odd": 2.35
+    },
+    {
+     "h": "23:10",
+     "jogo": "Noruega x Brasil",
+     "odd": 2.15
+    },
+    {
+     "h": "23:13",
+     "jogo": "Senegal x Marrocos",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "seq RRGGG",
+   "alvo": {
+    "h": "23:07",
+    "jogo": "Argélia x Uzbequistão",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1785794708367
+   },
+   "iniciadoEm": 1785794708367
+  },
   "cooldown": {
    "copa": 1785790562165,
    "premier": 1785789527666,
@@ -2895,8 +2925,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRGRR",
-   "n": 19,
+   "chave": "RRGGG",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
