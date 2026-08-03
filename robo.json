@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -176.9,
-  "ciclos": 904,
+  "saldo": -183.9,
+  "ciclos": 905,
   "greens": 556,
-  "redsCiclo": 149,
+  "redsCiclo": 150,
   "aborts": 0,
   "descartes": 199,
   "historico": [
+   {
+    "quando": "2026-08-03T09:23:08.261Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: time França"
+   },
    {
     "quando": "2026-08-03T08:59:39.161Z",
     "resultado": "GREEN",
@@ -2683,57 +2689,14 @@
   "consumidas": {
    "super": 1785745509759,
    "copa": 1785746585661,
-   "premier": 1785747578967
+   "premier": 1785747578967,
+   "euro": 1785748988066
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "10:14",
-     "jogo": "Espanha x Geórgia",
-     "odd": 2.2
-    },
-    {
-     "h": "10:17",
-     "jogo": "França x Dinamarca",
-     "odd": 2.2
-    },
-    {
-     "h": "10:20",
-     "jogo": "Geórgia x Portugal",
-     "odd": 2.29
-    }
-   ],
-   "gatilho": "time França",
-   "alvo": {
-    "h": "10:20",
-    "jogo": "Geórgia x Portugal",
-    "odd": 2.29,
-    "unidades": 4,
-    "desde": 1785748807965
-   },
-   "iniciadoEm": 1785747908257,
-   "tiros": [
-    {
-     "h": "10:14",
-     "jogo": "Espanha x Geórgia",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "10:17",
-     "jogo": "França x Dinamarca",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785746585661,
    "premier": 1785747578967,
-   "euro": 1785743750354,
+   "euro": 1785748988066,
    "super": 1785745509759
   },
   "dias": {
@@ -2756,7 +2719,7 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 9.3
+   "2026-08-03": 2.3
   },
   "_gatilhoAtual": {
    "tipo": "time",
