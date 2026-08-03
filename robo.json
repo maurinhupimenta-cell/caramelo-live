@@ -2846,7 +2846,37 @@
    "euro": 1785787379962,
    "premier": 1785789527666
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:52",
+     "jogo": "África do Sul x Uzbequistão",
+     "odd": 2.45
+    },
+    {
+     "h": "21:55",
+     "jogo": "Turquia x Canadá",
+     "odd": 2.4
+    },
+    {
+     "h": "21:58",
+     "jogo": "Noruega x Arábia Saudita",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "seq RRGGG",
+   "alvo": {
+    "h": "21:52",
+    "jogo": "África do Sul x Uzbequistão",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1785790203557
+   },
+   "iniciadoEm": 1785790203557
+  },
   "cooldown": {
    "copa": 1785785102757,
    "premier": 1785789527666,
@@ -2876,9 +2906,9 @@
    "2026-08-03": 24.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.55",
-   "n": 10,
+   "tipo": "seq",
+   "chave": "RRGGG",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
