@@ -5350,7 +5350,37 @@
   "consumidas": {
    "euro": 1785790499468
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:00",
+     "jogo": "United x Southampton",
+     "odd": 2.07
+    },
+    {
+     "h": "22:03",
+     "jogo": "Islington x Wolverhampton",
+     "odd": 1.86
+    },
+    {
+     "h": "22:06",
+     "jogo": "Palace x United",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "seq RRRGG",
+   "alvo": {
+    "h": "22:00",
+    "jogo": "United x Southampton",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1785790616159
+   },
+   "iniciadoEm": 1785790616159
+  },
   "cooldown": {
    "euro": 1785790499468,
    "super": 1785761869262,
@@ -5379,9 +5409,9 @@
    "2026-08-03": -2.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.3",
-   "n": 8,
+   "tipo": "seq",
+   "chave": "RRRGG",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
