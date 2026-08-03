@@ -2694,13 +2694,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -82.9,
-  "ciclos": 926,
-  "greens": 626,
+  "saldo": -82,
+  "ciclos": 927,
+  "greens": 627,
   "redsCiclo": 103,
   "aborts": 0,
   "descartes": 197,
   "historico": [
+   {
+    "quando": "2026-08-03T07:49:10.154Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Avellaneda x Agua Branca @1.93 (tiro 2) · gatilho: time Agua Branca"
+   },
    {
     "quando": "2026-08-03T07:04:47.861Z",
     "resultado": "GREEN",
@@ -5019,50 +5025,13 @@
    }
   ],
   "consumidas": {
-   "euro": 1785740687666
+   "euro": 1785740687666,
+   "super": 1785743349958
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "08:43",
-     "jogo": "Medellin x Porto Alegre",
-     "odd": 2.25
-    },
-    {
-     "h": "08:46",
-     "jogo": "Avellaneda x Agua Branca",
-     "odd": 1.93
-    },
-    {
-     "h": "08:49",
-     "jogo": "Guayaquil x Belo Horizonte",
-     "odd": 1.83
-    }
-   ],
-   "gatilho": "time Agua Branca",
-   "alvo": {
-    "h": "08:46",
-    "jogo": "Avellaneda x Agua Branca",
-    "odd": 1.93,
-    "unidades": 2,
-    "desde": 1785743169559
-   },
-   "iniciadoEm": 1785742665462,
-   "tiros": [
-    {
-     "h": "08:43",
-     "jogo": "Medellin x Porto Alegre",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785740687666,
-   "super": 1785738309563,
+   "super": 1785743349958,
    "premier": 1785731245565,
    "copa": 1785737246559
   },
@@ -5085,7 +5054,7 @@
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
-   "2026-08-03": -13.2
+   "2026-08-03": -12.3
   },
   "_gatilhoAtual": {
    "tipo": "odd",
