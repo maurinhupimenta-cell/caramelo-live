@@ -2759,13 +2759,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -78,
-  "ciclos": 931,
-  "greens": 631,
+  "saldo": -77.4,
+  "ciclos": 932,
+  "greens": 632,
   "redsCiclo": 103,
   "aborts": 0,
   "descartes": 197,
   "historico": [
+   {
+    "quando": "2026-08-03T11:05:28.158Z",
+    "resultado": "GREEN",
+    "unidades": 0.6,
+    "detalhe": "euro · Inglaterra x França @1.8 (tiro 2) · gatilho: time França"
+   },
    {
     "quando": "2026-08-03T10:12:50.055Z",
     "resultado": "GREEN",
@@ -5114,49 +5120,12 @@
    }
   ],
   "consumidas": {
-   "super": 1785751969861
+   "super": 1785751969861,
+   "euro": 1785755127964
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "11:59",
-     "jogo": "Suíça x Itália",
-     "odd": 1.93
-    },
-    {
-     "h": "12:02",
-     "jogo": "Inglaterra x França",
-     "odd": 1.8
-    },
-    {
-     "h": "12:05",
-     "jogo": "Croácia x Romênia",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "time França",
-   "alvo": {
-    "h": "12:02",
-    "jogo": "Inglaterra x França",
-    "odd": 1.8,
-    "unidades": 2,
-    "desde": 1785754945962
-   },
-   "iniciadoEm": 1785754206057,
-   "tiros": [
-    {
-     "h": "11:59",
-     "jogo": "Suíça x Itália",
-     "odd": 1.93,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785750067659,
+   "euro": 1785755127964,
    "super": 1785751969861,
    "premier": 1785731245565,
    "copa": 1785737246559
@@ -5180,13 +5149,13 @@
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
-   "2026-08-03": -8.3
+   "2026-08-03": -7.7
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "França",
    "n": 21,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
