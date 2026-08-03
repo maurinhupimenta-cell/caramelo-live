@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -178.5,
-  "ciclos": 903,
-  "greens": 555,
+  "saldo": -176.9,
+  "ciclos": 904,
+  "greens": 556,
   "redsCiclo": 149,
   "aborts": 0,
   "descartes": 199,
   "historico": [
+   {
+    "quando": "2026-08-03T08:59:39.161Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "premier · West Ham x Wolverhampton @2.29 (tiro 2) · gatilho: coluna :57"
+   },
    {
     "quando": "2026-08-03T08:43:05.864Z",
     "resultado": "GREEN",
@@ -2676,50 +2682,13 @@
   ],
   "consumidas": {
    "super": 1785745509759,
-   "copa": 1785746585661
+   "copa": 1785746585661,
+   "premier": 1785747578967
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "09:54",
-     "jogo": "Chelsea x Southampton",
-     "odd": 2.35
-    },
-    {
-     "h": "09:57",
-     "jogo": "West Ham x Wolverhampton",
-     "odd": 2.29
-    },
-    {
-     "h": "10:00",
-     "jogo": "Leeds x Palace",
-     "odd": 2.45
-    }
-   ],
-   "gatilho": "coluna :57",
-   "alvo": {
-    "h": "09:57",
-    "jogo": "West Ham x Wolverhampton",
-    "odd": 2.29,
-    "unidades": 2,
-    "desde": 1785747412365
-   },
-   "iniciadoEm": 1785746679059,
-   "tiros": [
-    {
-     "h": "09:54",
-     "jogo": "Chelsea x Southampton",
-     "odd": 2.35,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785746585661,
-   "premier": 1785740930955,
+   "premier": 1785747578967,
    "euro": 1785743750354,
    "super": 1785745509759
   },
@@ -2743,7 +2712,7 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 7.7
+   "2026-08-03": 9.3
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
@@ -5152,9 +5121,9 @@
    "2026-08-03": -11.1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":07",
-   "n": 10,
+   "tipo": "odd",
+   "chave": "2.2",
+   "n": 9,
    "start": 3
   },
   "_obs": {}
