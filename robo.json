@@ -5023,8 +5023,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "08:43",
@@ -5044,13 +5044,21 @@
    ],
    "gatilho": "time Agua Branca",
    "alvo": {
-    "h": "08:43",
-    "jogo": "Medellin x Porto Alegre",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785742665462
+    "h": "08:46",
+    "jogo": "Avellaneda x Agua Branca",
+    "odd": 1.93,
+    "unidades": 2,
+    "desde": 1785743169559
    },
-   "iniciadoEm": 1785742665462
+   "iniciadoEm": 1785742665462,
+   "tiros": [
+    {
+     "h": "08:43",
+     "jogo": "Medellin x Porto Alegre",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785740687666,
@@ -5080,10 +5088,10 @@
    "2026-08-03": -13.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Agua Branca",
-   "n": 18,
-   "start": 2
+   "tipo": "odd",
+   "chave": "1.83",
+   "n": 9,
+   "start": 1
   },
   "_obs": {}
  }
