@@ -2660,7 +2660,37 @@
    "copa": 1785742626356,
    "euro": 1785743750354
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:22",
+     "jogo": "La Boca x Sao Paulo",
+     "odd": 2.2
+    },
+    {
+     "h": "09:25",
+     "jogo": "Belo Horizonte x Porto Alegre",
+     "odd": 2.45
+    },
+    {
+     "h": "09:28",
+     "jogo": "Rio de Janeiro x Avellaneda",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "odd 2.45",
+   "alvo": {
+    "h": "09:22",
+    "jogo": "La Boca x Sao Paulo",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785744971563
+   },
+   "iniciadoEm": 1785744971563
+  },
   "cooldown": {
    "copa": 1785742626356,
    "premier": 1785740930955,
@@ -2690,10 +2720,10 @@
    "2026-08-03": 5.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRG",
-   "n": 11,
-   "start": 1
+   "tipo": "time",
+   "chave": "Bogota",
+   "n": 20,
+   "start": 3
   },
   "_obs": {}
  },
@@ -5031,7 +5061,37 @@
   "consumidas": {
    "super": 1785743349958
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:29",
+     "jogo": "Dinamarca x Hungria",
+     "odd": 2.15
+    },
+    {
+     "h": "09:32",
+     "jogo": "Portugal x Turquia",
+     "odd": 2.1
+    },
+    {
+     "h": "09:35",
+     "jogo": "Países Baixos x Itália",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "coluna :32",
+   "alvo": {
+    "h": "09:29",
+    "jogo": "Dinamarca x Hungria",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785745205958
+   },
+   "iniciadoEm": 1785745205958
+  },
   "cooldown": {
    "euro": 1785740687666,
    "super": 1785743349958,
@@ -5060,10 +5120,10 @@
    "2026-08-03": -12.3
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.83",
+   "tipo": "coluna",
+   "chave": ":32",
    "n": 9,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
