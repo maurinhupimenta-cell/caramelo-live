@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -162.1,
-  "ciclos": 924,
-  "greens": 572,
+  "saldo": -160.6,
+  "ciclos": 925,
+  "greens": 573,
   "redsCiclo": 150,
   "aborts": 0,
   "descartes": 202,
   "historico": [
+   {
+    "quando": "2026-08-03T17:08:00.159Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "copa · Qatar x Senegal @2.5 (tiro 1) · gatilho: seq RRRGR"
+   },
    {
     "quando": "2026-08-03T17:01:00.956Z",
     "resultado": "GREEN_OBS",
@@ -2802,41 +2808,12 @@
   ],
   "consumidas": {
    "super": 1785773605262,
-   "euro": 1785773817954
+   "euro": 1785773817954,
+   "copa": 1785776879963
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:04",
-     "jogo": "Qatar x Senegal",
-     "odd": 2.5
-    },
-    {
-     "h": "18:07",
-     "jogo": "Suíça x Tunísia",
-     "odd": 2.6
-    },
-    {
-     "h": "18:10",
-     "jogo": "Gana x Áustria",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "seq RRRGR",
-   "alvo": {
-    "h": "18:04",
-    "jogo": "Qatar x Senegal",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1785776462959
-   },
-   "iniciadoEm": 1785776462959
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785767126165,
+   "copa": 1785776879963,
    "premier": 1785772966558,
    "euro": 1785773817954,
    "super": 1785773605262
@@ -2861,7 +2838,7 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 24.1
+   "2026-08-03": 25.6
   },
   "_gatilhoAtual": {
    "tipo": "seq",
