@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -193.2,
-  "ciclos": 884,
-  "greens": 540,
+  "saldo": -191.6,
+  "ciclos": 885,
+  "greens": 541,
   "redsCiclo": 148,
   "aborts": 0,
   "descartes": 196,
   "historico": [
+   {
+    "quando": "2026-08-03T03:25:23.757Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "super · Penarol x Agua Branca @2.29 (tiro 2) · gatilho: seq GRRR"
+   },
    {
     "quando": "2026-08-03T03:14:45.257Z",
     "resultado": "RED_CICLO",
@@ -2563,52 +2569,15 @@
   "consumidas": {
    "copa": 1785724344156,
    "euro": 1785725065362,
-   "premier": 1785726885060
+   "premier": 1785726885060,
+   "super": 1785727523565
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "04:19",
-     "jogo": "Belo Horizonte x Bogota",
-     "odd": 2.37
-    },
-    {
-     "h": "04:22",
-     "jogo": "Penarol x Agua Branca",
-     "odd": 2.29
-    },
-    {
-     "h": "04:25",
-     "jogo": "Buenos Aires x Itaquera",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "seq GRRR",
-   "alvo": {
-    "h": "04:22",
-    "jogo": "Penarol x Agua Branca",
-    "odd": 2.29,
-    "unidades": 2,
-    "desde": 1785727327562
-   },
-   "iniciadoEm": 1785726978856,
-   "tiros": [
-    {
-     "h": "04:19",
-     "jogo": "Belo Horizonte x Bogota",
-     "odd": 2.37,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785724344156,
    "premier": 1785726885060,
    "euro": 1785725065362,
-   "super": 1785723205060
+   "super": 1785727523565
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -2630,7 +2599,7 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": -7
+   "2026-08-03": -5.4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
