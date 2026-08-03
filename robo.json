@@ -4769,7 +4769,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "01:55",
+     "jogo": "RD Congo x Curação",
+     "odd": 1.85
+    },
+    {
+     "h": "01:58",
+     "jogo": "Brasil x Gana",
+     "odd": 2.075
+    },
+    {
+     "h": "02:01",
+     "jogo": "Equador x Bélgica",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "placar goleada (3+)",
+   "alvo": {
+    "h": "01:55",
+    "jogo": "RD Congo x Curação",
+    "odd": 1.85,
+    "unidades": 1,
+    "desde": 1785718404955
+   },
+   "iniciadoEm": 1785718404955
+  },
   "cooldown": {
    "euro": 1785702270661,
    "super": 1785711970359,
@@ -4797,16 +4827,11 @@
    "2026-08-02": -41.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.87",
-   "n": 15,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 9,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785718348863,
-    "gatilho": "placar goleada (3+)"
-   }
-  }
+  "_obs": {}
  }
 }
