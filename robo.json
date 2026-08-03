@@ -2588,7 +2588,37 @@
    "euro": 1785729563357,
    "premier": 1785730946156
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:25",
+     "jogo": "Sao Paulo x Buenos Aires",
+     "odd": 1.98
+    },
+    {
+     "h": "05:28",
+     "jogo": "Agua Branca x Belo Horizonte",
+     "odd": 2.02
+    },
+    {
+     "h": "05:31",
+     "jogo": "Penarol x Quito",
+     "odd": 2.45
+    }
+   ],
+   "gatilho": "seq GRRR",
+   "alvo": {
+    "h": "05:25",
+    "jogo": "Sao Paulo x Buenos Aires",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785731125367
+   },
+   "iniciadoEm": 1785731125367
+  },
   "cooldown": {
    "copa": 1785724344156,
    "premier": 1785730946156,
@@ -2618,9 +2648,9 @@
    "2026-08-03": -2.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Burnley",
-   "n": 12,
+   "tipo": "seq",
+   "chave": "GRRR",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
@@ -4897,7 +4927,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1785727527462,
    "super": 1785730108963
   },
   "ciclo": {
