@@ -2753,13 +2753,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -80.8,
-  "ciclos": 928,
-  "greens": 628,
+  "saldo": -79.8,
+  "ciclos": 929,
+  "greens": 629,
   "redsCiclo": 103,
   "aborts": 0,
   "descartes": 197,
   "historico": [
+   {
+    "quando": "2026-08-03T09:07:09.857Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Avellaneda x Santos @2.05 (tiro 1) · gatilho: coluna :07"
+   },
    {
     "quando": "2026-08-03T08:32:08.261Z",
     "resultado": "GREEN",
@@ -5090,42 +5096,13 @@
    }
   ],
   "consumidas": {
-   "euro": 1785745928155
+   "euro": 1785745928155,
+   "super": 1785748029665
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "10:04",
-     "jogo": "Avellaneda x Santos",
-     "odd": 2.05
-    },
-    {
-     "h": "10:07",
-     "jogo": "Lima x Penarol",
-     "odd": 2
-    },
-    {
-     "h": "10:10",
-     "jogo": "Asuncion x Porto Alegre",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "coluna :07",
-   "alvo": {
-    "h": "10:04",
-    "jogo": "Avellaneda x Santos",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785747329866
-   },
-   "iniciadoEm": 1785747329866
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785745928155,
-   "super": 1785743349958,
+   "super": 1785748029665,
    "premier": 1785731245565,
    "copa": 1785737246559
   },
@@ -5148,7 +5125,7 @@
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
-   "2026-08-03": -11.1
+   "2026-08-03": -10.1
   },
   "_gatilhoAtual": {
    "tipo": "odd",
