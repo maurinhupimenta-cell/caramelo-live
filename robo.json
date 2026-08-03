@@ -2823,8 +2823,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "19:50",
@@ -2844,13 +2844,21 @@
    ],
    "gatilho": "seq GRRGR",
    "alvo": {
-    "h": "19:50",
-    "jogo": "Albânia x Bélgica",
-    "odd": 2.45,
-    "unidades": 1,
-    "desde": 1785782823761
+    "h": "19:53",
+    "jogo": "Turquia x Inglaterra",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1785783239260
    },
-   "iniciadoEm": 1785782823761
+   "iniciadoEm": 1785782823761,
+   "tiros": [
+    {
+     "h": "19:50",
+     "jogo": "Albânia x Bélgica",
+     "odd": 2.45,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785780845662,
@@ -2882,8 +2890,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRRGR",
-   "n": 13,
+   "chave": "RGRGR",
+   "n": 19,
    "start": 1
   },
   "_obs": {}
