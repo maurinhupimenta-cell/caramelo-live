@@ -5211,7 +5211,37 @@
   "consumidas": {
    "euro": 1785767998260
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:21",
+     "jogo": "Aston x Islington",
+     "odd": 2
+    },
+    {
+     "h": "16:24",
+     "jogo": "Burnley x Brighton",
+     "odd": 1.8
+    },
+    {
+     "h": "16:27",
+     "jogo": "Brentford x Norwich",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "seq GGGG",
+   "alvo": {
+    "h": "16:21",
+    "jogo": "Aston x Islington",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1785770267262
+   },
+   "iniciadoEm": 1785770267262
+  },
   "cooldown": {
    "euro": 1785767998260,
    "super": 1785761869262,
@@ -5241,8 +5271,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGRRG",
-   "n": 12,
+   "chave": "GGGG",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
