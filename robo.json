@@ -2889,13 +2889,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -74.3,
-  "ciclos": 944,
-  "greens": 642,
+  "saldo": -73.2,
+  "ciclos": 945,
+  "greens": 643,
   "redsCiclo": 104,
   "aborts": 0,
   "descartes": 198,
   "historico": [
+   {
+    "quando": "2026-08-03T18:53:52.758Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · West Ham x Islington @2.1 (tiro 1) · gatilho: seq RRRGG"
+   },
    {
     "quando": "2026-08-03T18:47:46.955Z",
     "resultado": "GREEN_OBS",
@@ -5322,43 +5328,14 @@
    }
   ],
   "consumidas": {
-   "euro": 1785782397555
+   "euro": 1785782397555,
+   "premier": 1785783232561
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "19:51",
-     "jogo": "West Ham x Islington",
-     "odd": 2.1
-    },
-    {
-     "h": "19:54",
-     "jogo": "United x Burnley",
-     "odd": 1.98
-    },
-    {
-     "h": "19:57",
-     "jogo": "Brighton x Southampton",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "seq RRRGG",
-   "alvo": {
-    "h": "19:51",
-    "jogo": "West Ham x Islington",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785782878858
-   },
-   "iniciadoEm": 1785782878858
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785782397555,
    "super": 1785761869262,
-   "premier": 1785777111855,
+   "premier": 1785783232561,
    "copa": 1785737246559
   },
   "dias": {
@@ -5380,12 +5357,12 @@
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
-   "2026-08-03": -4.6
+   "2026-08-03": -3.5
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRGG",
-   "n": 10,
+   "chave": "RRGGG",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
