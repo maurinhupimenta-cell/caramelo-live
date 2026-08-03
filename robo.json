@@ -2827,7 +2827,37 @@
   "consumidas": {
    "euro": 1785783357255
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:22",
+     "jogo": "Coreia do Sul x Costa do Marfim",
+     "odd": 2.3
+    },
+    {
+     "h": "20:25",
+     "jogo": "Bélgica x Irã",
+     "odd": 2.6
+    },
+    {
+     "h": "20:28",
+     "jogo": "Escócia x Noruega",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "seq RRGGG",
+   "alvo": {
+    "h": "20:22",
+    "jogo": "Coreia do Sul x Costa do Marfim",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1785784741560
+   },
+   "iniciadoEm": 1785784741560
+  },
   "cooldown": {
    "copa": 1785780845662,
    "premier": 1785772966558,
@@ -2858,8 +2888,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGRGR",
-   "n": 19,
+   "chave": "RRGGG",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
