@@ -2656,13 +2656,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -90.7,
-  "ciclos": 918,
-  "greens": 619,
+  "saldo": -89.1,
+  "ciclos": 919,
+  "greens": 620,
   "redsCiclo": 103,
   "aborts": 0,
   "descartes": 196,
   "historico": [
+   {
+    "quando": "2026-08-03T04:27:25.761Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "premier · Watford x Leeds @2.15 (tiro 3) · gatilho: time Burnley"
+   },
    {
     "quando": "2026-08-03T04:26:29.156Z",
     "resultado": "GREEN_OBS",
@@ -4933,57 +4939,44 @@
    }
   ],
   "consumidas": {
-   "super": 1785730108963
+   "super": 1785730108963,
+   "premier": 1785731245565
   },
   "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "05:18",
-     "jogo": "Burnley x Chelsea",
+     "h": "05:29",
+     "jogo": "Croácia x Escócia",
+     "odd": 1.93
+    },
+    {
+     "h": "05:32",
+     "jogo": "Eslováquia x França",
      "odd": 1.9
     },
     {
-     "h": "05:21",
-     "jogo": "Norwich x City",
-     "odd": 1.9
-    },
-    {
-     "h": "05:24",
-     "jogo": "Watford x Leeds",
-     "odd": 2.15
+     "h": "05:35",
+     "jogo": "Portugal x Dinamarca",
+     "odd": 2.02
     }
    ],
-   "gatilho": "time Burnley",
+   "gatilho": "placar acima de 1-0 (2-1)",
    "alvo": {
-    "h": "05:24",
-    "jogo": "Watford x Leeds",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1785731032762
+    "h": "05:29",
+    "jogo": "Croácia x Escócia",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1785731248367
    },
-   "iniciadoEm": 1785730526254,
-   "tiros": [
-    {
-     "h": "05:18",
-     "jogo": "Burnley x Chelsea",
-     "odd": 1.9,
-     "unidades": 1
-    },
-    {
-     "h": "05:21",
-     "jogo": "Norwich x City",
-     "odd": 1.9,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1785731248367
   },
   "cooldown": {
    "euro": 1785727527463,
    "super": 1785730108963,
-   "premier": 1785726885262,
+   "premier": 1785731245565,
    "copa": 1785723385956
   },
   "dias": {
@@ -5005,19 +4998,14 @@
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
-   "2026-08-03": -21
+   "2026-08-03": -19.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.95",
-   "n": 8,
-   "start": 3
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 14,
+   "start": 1
   },
-  "_obs": {
-   "euro": {
-    "desde": 1785731131959,
-    "gatilho": "time França"
-   }
-  }
+  "_obs": {}
  }
 }
