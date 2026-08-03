@@ -2555,12 +2555,41 @@
    }
   ],
   "consumidas": {
-   "premier": 1785722604060,
    "super": 1785723205060,
    "copa": 1785724344156,
    "euro": 1785725065362
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:06",
+     "jogo": "Palace x West Ham",
+     "odd": 2.5
+    },
+    {
+     "h": "04:09",
+     "jogo": "Watford x Liverpool",
+     "odd": 2.25
+    },
+    {
+     "h": "04:12",
+     "jogo": "City x West Ham",
+     "odd": 2.37
+    }
+   ],
+   "gatilho": "time Liverpool",
+   "alvo": {
+    "h": "04:06",
+    "jogo": "Palace x West Ham",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1785726205358
+   },
+   "iniciadoEm": 1785726205358
+  },
   "cooldown": {
    "copa": 1785724344156,
    "premier": 1785722604060,
@@ -2589,9 +2618,9 @@
    "2026-08-02": -27.5
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 9,
+   "tipo": "time",
+   "chave": "Liverpool",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
