@@ -2768,7 +2768,37 @@
    "premier": 1785765583155,
    "copa": 1785767126165
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:41",
+     "jogo": "Bélgica x Itália",
+     "odd": 2.2
+    },
+    {
+     "h": "15:44",
+     "jogo": "Hungria x República Tcheca",
+     "odd": 2.7
+    },
+    {
+     "h": "15:47",
+     "jogo": "Geórgia x Áustria",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "seq GRRG",
+   "alvo": {
+    "h": "15:41",
+    "jogo": "Bélgica x Itália",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785767997966
+   },
+   "iniciadoEm": 1785767997966
+  },
   "cooldown": {
    "copa": 1785767126165,
    "premier": 1785765583155,
@@ -2799,20 +2829,26 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRGGR",
-   "n": 9,
+   "chave": "GRRG",
+   "n": 21,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -72.7,
-  "ciclos": 937,
-  "greens": 637,
+  "saldo": -71.8,
+  "ciclos": 938,
+  "greens": 638,
   "redsCiclo": 103,
   "aborts": 0,
   "descartes": 197,
   "historico": [
+   {
+    "quando": "2026-08-03T14:39:58.555Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Hungria x Inglaterra @1.93 (tiro 1) · gatilho: coluna :35"
+   },
    {
     "quando": "2026-08-03T13:35:07.757Z",
     "resultado": "GREEN",
@@ -5196,10 +5232,12 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "euro": 1785767998260
+  },
   "ciclo": null,
   "cooldown": {
-   "euro": 1785764107559,
+   "euro": 1785767998260,
    "super": 1785761869262,
    "premier": 1785757300964,
    "copa": 1785737246559
@@ -5223,12 +5261,12 @@
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
-   "2026-08-03": -3
+   "2026-08-03": -2.1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":35",
-   "n": 14,
+   "tipo": "seq",
+   "chave": "RGRRG",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
