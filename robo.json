@@ -2533,8 +2533,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "02:57",
@@ -2554,13 +2554,21 @@
    ],
    "gatilho": "time Liverpool",
    "alvo": {
-    "h": "02:57",
-    "jogo": "West Ham x Everton",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1785721706668
+    "h": "03:00",
+    "jogo": "Burnley x Liverpool",
+    "odd": 2.1,
+    "unidades": 2,
+    "desde": 1785722397059
    },
-   "iniciadoEm": 1785721706668
+   "iniciadoEm": 1785721706668,
+   "tiros": [
+    {
+     "h": "02:57",
+     "jogo": "West Ham x Everton",
+     "odd": 2.4,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785708147859,
@@ -4881,11 +4889,6 @@
    "n": 8,
    "start": 1
   },
-  "_obs": {
-   "euro": {
-    "desde": 1785722245869,
-    "gatilho": "time Eslovênia"
-   }
-  }
+  "_obs": {}
  }
 }
