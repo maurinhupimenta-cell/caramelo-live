@@ -2679,7 +2679,37 @@
    "super": 1785745509759,
    "copa": 1785746585661
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "09:54",
+     "jogo": "Chelsea x Southampton",
+     "odd": 2.35
+    },
+    {
+     "h": "09:57",
+     "jogo": "West Ham x Wolverhampton",
+     "odd": 2.29
+    },
+    {
+     "h": "10:00",
+     "jogo": "Leeds x Palace",
+     "odd": 2.45
+    }
+   ],
+   "gatilho": "coluna :57",
+   "alvo": {
+    "h": "09:54",
+    "jogo": "Chelsea x Southampton",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1785746679059
+   },
+   "iniciadoEm": 1785746679059
+  },
   "cooldown": {
    "copa": 1785746585661,
    "premier": 1785740930955,
@@ -2710,9 +2740,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":40",
+   "chave": ":57",
    "n": 9,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
