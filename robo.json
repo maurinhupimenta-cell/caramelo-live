@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -167,
-  "ciclos": 918,
-  "greens": 568,
+  "saldo": -165.8,
+  "ciclos": 919,
+  "greens": 569,
   "redsCiclo": 150,
   "aborts": 0,
   "descartes": 200,
   "historico": [
+   {
+    "quando": "2026-08-03T14:44:59.562Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Bélgica x Itália @2.2 (tiro 1) · gatilho: seq GRRG"
+   },
    {
     "quando": "2026-08-03T14:25:26.361Z",
     "resultado": "GREEN",
@@ -2766,43 +2772,14 @@
   ],
   "consumidas": {
    "premier": 1785765583155,
-   "copa": 1785767126165
+   "copa": 1785767126165,
+   "euro": 1785768299368
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:41",
-     "jogo": "Bélgica x Itália",
-     "odd": 2.2
-    },
-    {
-     "h": "15:44",
-     "jogo": "Hungria x República Tcheca",
-     "odd": 2.7
-    },
-    {
-     "h": "15:47",
-     "jogo": "Geórgia x Áustria",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "seq GRRG",
-   "alvo": {
-    "h": "15:41",
-    "jogo": "Bélgica x Itália",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785767997966
-   },
-   "iniciadoEm": 1785767997966
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785767126165,
    "premier": 1785765583155,
-   "euro": 1785763189759,
+   "euro": 1785768299368,
    "super": 1785756469060
   },
   "dias": {
@@ -2825,7 +2802,7 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 19.2
+   "2026-08-03": 20.4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
