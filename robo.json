@@ -2676,12 +2676,18 @@
  },
  "ambas": {
   "saldo": -88.2,
-  "ciclos": 920,
+  "ciclos": 921,
   "greens": 621,
   "redsCiclo": 103,
   "aborts": 0,
-  "descartes": 196,
+  "descartes": 197,
   "historico": [
+   {
+    "quando": "2026-08-03T05:08:30.166Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho time Agua Branca) — liga REARMADA"
+   },
    {
     "quando": "2026-08-03T04:34:23.056Z",
     "resultado": "GREEN",
@@ -4964,7 +4970,6 @@
    }
   ],
   "consumidas": {
-   "super": 1785730108963,
    "premier": 1785731245565,
    "euro": 1785731662865
   },
@@ -5002,6 +5007,11 @@
    "n": 15,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1785733710165,
+    "gatilho": "time Agua Branca"
+   }
+  }
  }
 }
