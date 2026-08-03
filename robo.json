@@ -5356,7 +5356,37 @@
    "euro": 1785790499468,
    "premier": 1785791164656
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:16",
+     "jogo": "Quito x Guayaquil",
+     "odd": 1.93
+    },
+    {
+     "h": "22:19",
+     "jogo": "Belo Horizonte x Agua Branca",
+     "odd": 1.83
+    },
+    {
+     "h": "22:22",
+     "jogo": "Medellin x Sao Paulo",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "time Agua Branca",
+   "alvo": {
+    "h": "22:16",
+    "jogo": "Quito x Guayaquil",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1785791517957
+   },
+   "iniciadoEm": 1785791517957
+  },
   "cooldown": {
    "euro": 1785790499468,
    "super": 1785761869262,
@@ -5385,10 +5415,10 @@
    "2026-08-03": -2.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGGG",
-   "n": 11,
-   "start": 1
+   "tipo": "time",
+   "chave": "Agua Branca",
+   "n": 42,
+   "start": 2
   },
   "_obs": {}
  }
