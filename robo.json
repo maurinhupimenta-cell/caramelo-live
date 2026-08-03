@@ -2625,7 +2625,37 @@
    "premier": 1785735993766,
    "super": 1785736689860
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:16",
+     "jogo": "Uzbequistão x Iraque",
+     "odd": 2.45
+    },
+    {
+     "h": "07:19",
+     "jogo": "Escócia x México",
+     "odd": 2.5
+    },
+    {
+     "h": "07:22",
+     "jogo": "Costa do Marfim x Colômbia",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time Escócia",
+   "alvo": {
+    "h": "07:16",
+    "jogo": "Uzbequistão x Iraque",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1785737246363
+   },
+   "iniciadoEm": 1785737246363
+  },
   "cooldown": {
    "copa": 1785732488161,
    "premier": 1785735993766,
@@ -2656,20 +2686,26 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Bogota",
-   "n": 11,
+   "chave": "Escócia",
+   "n": 8,
    "start": 3
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -86.4,
-  "ciclos": 923,
-  "greens": 623,
+  "saldo": -85.4,
+  "ciclos": 924,
+  "greens": 624,
   "redsCiclo": 103,
   "aborts": 0,
   "descartes": 197,
   "historico": [
+   {
+    "quando": "2026-08-03T06:07:26.761Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Paraguai x Colômbia @2 (tiro 2) · gatilho: odd 2"
+   },
    {
     "quando": "2026-08-03T05:53:47.361Z",
     "resultado": "GREEN",
@@ -4971,52 +5007,15 @@
   ],
   "consumidas": {
    "super": 1785734149263,
-   "euro": 1785736427256
+   "euro": 1785736427256,
+   "copa": 1785737246559
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "07:01",
-     "jogo": "Curação x Alemanha",
-     "odd": 1.86
-    },
-    {
-     "h": "07:04",
-     "jogo": "Paraguai x Colômbia",
-     "odd": 2
-    },
-    {
-     "h": "07:07",
-     "jogo": "Jordânia x Austrália",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "odd 2",
-   "alvo": {
-    "h": "07:04",
-    "jogo": "Paraguai x Colômbia",
-    "odd": 2,
-    "unidades": 2,
-    "desde": 1785737050060
-   },
-   "iniciadoEm": 1785736766656,
-   "tiros": [
-    {
-     "h": "07:01",
-     "jogo": "Curação x Alemanha",
-     "odd": 1.86,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785736427256,
    "super": 1785734149263,
    "premier": 1785731245565,
-   "copa": 1785723385956
+   "copa": 1785737246559
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -5037,7 +5036,7 @@
    "2026-07-31": 20.5,
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
-   "2026-08-03": -16.7
+   "2026-08-03": -15.7
   },
   "_gatilhoAtual": {
    "tipo": "placar",
