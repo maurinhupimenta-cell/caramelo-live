@@ -3065,8 +3065,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:43",
@@ -3086,13 +3086,21 @@
    ],
    "gatilho": "seq RGGG",
    "alvo": {
-    "h": "17:43",
-    "jogo": "Escócia x Curação",
+    "h": "17:46",
+    "jogo": "Coreia do Sul x Uruguai",
     "odd": 2.4,
-    "unidades": 1,
-    "desde": 1785861839797
+    "unidades": 2,
+    "desde": 1785862024091
    },
-   "iniciadoEm": 1785861839797
+   "iniciadoEm": 1785861839797,
+   "tiros": [
+    {
+     "h": "17:43",
+     "jogo": "Escócia x Curação",
+     "odd": 2.4,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785858238891,
@@ -3124,9 +3132,9 @@
    "2026-08-04": 1.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGG",
-   "n": 11,
+   "tipo": "time",
+   "chave": "Escócia",
+   "n": 16,
    "start": 1
   },
   "_obs": {}
@@ -5737,7 +5745,37 @@
    "premier": 1785861035193,
    "euro": 1785861478297
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:52",
+     "jogo": "Escócia x Tunísia",
+     "odd": 2.35
+    },
+    {
+     "h": "17:55",
+     "jogo": "RD Congo x Equador",
+     "odd": 1.85
+    },
+    {
+     "h": "17:58",
+     "jogo": "Arábia Saudita x Haiti",
+     "odd": 1.86
+    }
+   ],
+   "gatilho": "odd 1.85",
+   "alvo": {
+    "h": "17:52",
+    "jogo": "Escócia x Tunísia",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1785862024297
+   },
+   "iniciadoEm": 1785862024297
+  },
   "cooldown": {
    "euro": 1785861478297,
    "super": 1785859077702,
@@ -5767,10 +5805,10 @@
    "2026-08-04": -10.2
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":41",
-   "n": 17,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.85",
+   "n": 9,
+   "start": 2
   },
   "_obs": {}
  }
