@@ -2997,7 +2997,37 @@
    "euro": 1785850320995,
    "copa": 1785850738993
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:40",
+     "jogo": "Medellin x Buenos Aires",
+     "odd": 2.2
+    },
+    {
+     "h": "14:43",
+     "jogo": "Guayaquil x Penarol",
+     "odd": 2.35
+    },
+    {
+     "h": "14:46",
+     "jogo": "Montevideo x Medellin",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "odd 2.35",
+   "alvo": {
+    "h": "14:40",
+    "jogo": "Medellin x Buenos Aires",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785850741190
+   },
+   "iniciadoEm": 1785850741190
+  },
   "cooldown": {
    "copa": 1785850738993,
    "premier": 1785820377165,
@@ -3028,9 +3058,9 @@
    "2026-08-04": 13.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Marrocos",
-   "n": 14,
+   "tipo": "odd",
+   "chave": "2.35",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
@@ -5570,8 +5600,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "14:36",
@@ -5591,13 +5621,21 @@
    ],
    "gatilho": "seq RRRRG",
    "alvo": {
-    "h": "14:36",
-    "jogo": "Newcastle x Chelsea",
-    "odd": 1.85,
-    "unidades": 1,
-    "desde": 1785850365490
+    "h": "14:39",
+    "jogo": "Wolverhampton x Norwich",
+    "odd": 1.9,
+    "unidades": 2,
+    "desde": 1785850774303
    },
-   "iniciadoEm": 1785850365490
+   "iniciadoEm": 1785850365490,
+   "tiros": [
+    {
+     "h": "14:36",
+     "jogo": "Newcastle x Chelsea",
+     "odd": 1.85,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785817986170,
@@ -5628,10 +5666,10 @@
    "2026-08-04": -3.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRG",
-   "n": 10,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.8",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  }
