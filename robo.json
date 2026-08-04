@@ -275,13 +275,19 @@
   }
  },
  "o25": {
-  "saldo": -144.8,
-  "ciclos": 944,
-  "greens": 590,
+  "saldo": -143.6,
+  "ciclos": 945,
+  "greens": 591,
   "redsCiclo": 151,
   "aborts": 0,
   "descartes": 203,
   "historico": [
+   {
+    "quando": "2026-08-04T03:47:39.957Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Equador x Brasil @2.15 (tiro 1) · gatilho: seq GRRR"
+   },
    {
     "quando": "2026-08-04T03:33:56.361Z",
     "resultado": "GREEN",
@@ -2936,42 +2942,42 @@
    }
   ],
   "consumidas": {
-   "premier": 1785812025156,
-   "super": 1785814436160
+   "super": 1785814436160,
+   "copa": 1785815259762
   },
   "ciclo": {
-   "liga": "copa",
+   "liga": "premier",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "04:43",
-     "jogo": "Equador x Brasil",
-     "odd": 2.15
+     "h": "04:54",
+     "jogo": "Burnley x Everton",
+     "odd": 2.05
     },
     {
-     "h": "04:46",
-     "jogo": "África do Sul x Escócia",
-     "odd": 2.75
+     "h": "04:57",
+     "jogo": "Brighton x Brentford",
+     "odd": 2.1
     },
     {
-     "h": "04:49",
-     "jogo": "Suécia x Japão",
-     "odd": 2.7
+     "h": "05:00",
+     "jogo": "Tottenham x Leeds",
+     "odd": 2.8
     }
    ],
-   "gatilho": "seq GRRR",
+   "gatilho": "time Brighton",
    "alvo": {
-    "h": "04:43",
-    "jogo": "Equador x Brasil",
-    "odd": 2.15,
+    "h": "04:54",
+    "jogo": "Burnley x Everton",
+    "odd": 2.05,
     "unidades": 1,
-    "desde": 1785815257156
+    "desde": 1785815636654
    },
-   "iniciadoEm": 1785815257156
+   "iniciadoEm": 1785815636654
   },
   "cooldown": {
-   "copa": 1785811617659,
+   "copa": 1785815259762,
    "premier": 1785812025156,
    "euro": 1785811196757,
    "super": 1785814436160
@@ -2997,24 +3003,30 @@
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
-   "2026-08-04": 1.3
+   "2026-08-04": 2.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRR",
+   "tipo": "time",
+   "chave": "Brighton",
    "n": 8,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -66,
-  "ciclos": 955,
-  "greens": 651,
+  "saldo": -65.1,
+  "ciclos": 956,
+  "greens": 652,
   "redsCiclo": 104,
   "aborts": 0,
   "descartes": 200,
   "historico": [
+   {
+    "quando": "2026-08-04T03:47:40.162Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · Equador x Brasil @1.87 (tiro 1) · gatilho: placar acima de 1-0 (2-0)"
+   },
    {
     "quando": "2026-08-04T03:04:56.660Z",
     "resultado": "GREEN",
@@ -5507,44 +5519,15 @@
    }
   ],
   "consumidas": {
-   "euro": 1785812696354
+   "euro": 1785812696354,
+   "copa": 1785815259964
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:43",
-     "jogo": "Equador x Brasil",
-     "odd": 1.87
-    },
-    {
-     "h": "04:46",
-     "jogo": "África do Sul x Escócia",
-     "odd": 2.25
-    },
-    {
-     "h": "04:49",
-     "jogo": "Suécia x Japão",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-0)",
-   "alvo": {
-    "h": "04:43",
-    "jogo": "Equador x Brasil",
-    "odd": 1.87,
-    "unidades": 1,
-    "desde": 1785814802159
-   },
-   "iniciadoEm": 1785814802159
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785812696354,
    "super": 1785796197968,
    "premier": 1785795850863,
-   "copa": 1785809819555
+   "copa": 1785815259964
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -5566,7 +5549,7 @@
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
-   "2026-08-04": 1.3
+   "2026-08-04": 2.2
   },
   "_gatilhoAtual": {
    "tipo": "placar",
