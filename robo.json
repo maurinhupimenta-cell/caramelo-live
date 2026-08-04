@@ -5780,7 +5780,37 @@
    "copa": 1785867059498,
    "premier": 1785867459293
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:25",
+     "jogo": "Medellin x Quito",
+     "odd": 2.05
+    },
+    {
+     "h": "19:28",
+     "jogo": "Montevideo x Belo Horizonte",
+     "odd": 1.85
+    },
+    {
+     "h": "19:31",
+     "jogo": "La Boca x Santos",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "seq RRGGR",
+   "alvo": {
+    "h": "19:25",
+    "jogo": "Medellin x Quito",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785867782290
+   },
+   "iniciadoEm": 1785867782290
+  },
   "cooldown": {
    "euro": 1785865804791,
    "super": 1785863586601,
@@ -5810,10 +5840,10 @@
    "2026-08-04": -4.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":27",
-   "n": 19,
-   "start": 2
+   "tipo": "seq",
+   "chave": "RRGGR",
+   "n": 10,
+   "start": 1
   },
   "_obs": {}
  }
