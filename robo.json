@@ -281,13 +281,19 @@
   }
  },
  "o25": {
-  "saldo": -138.2,
-  "ciclos": 947,
-  "greens": 593,
+  "saldo": -136,
+  "ciclos": 948,
+  "greens": 594,
   "redsCiclo": 151,
   "aborts": 0,
   "descartes": 203,
   "historico": [
+   {
+    "quando": "2026-08-04T04:56:16.963Z",
+    "resultado": "GREEN",
+    "unidades": 2.2,
+    "detalhe": "copa · Coreia do Sul x Espanha @2.29 (tiro 3) · gatilho: time Escócia"
+   },
    {
     "quando": "2026-08-04T04:38:03.161Z",
     "resultado": "GREEN",
@@ -2961,55 +2967,12 @@
   ],
   "consumidas": {
    "premier": 1785816167758,
-   "super": 1785818282958
+   "super": 1785818282958,
+   "copa": 1785819376766
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "05:46",
-     "jogo": "Países Baixos x Escócia",
-     "odd": 2.6
-    },
-    {
-     "h": "05:49",
-     "jogo": "EUA x Argentina",
-     "odd": 2.15
-    },
-    {
-     "h": "05:52",
-     "jogo": "Coreia do Sul x Espanha",
-     "odd": 2.29
-    }
-   ],
-   "gatilho": "time Escócia",
-   "alvo": {
-    "h": "05:52",
-    "jogo": "Coreia do Sul x Espanha",
-    "odd": 2.29,
-    "unidades": 4,
-    "desde": 1785819241463
-   },
-   "iniciadoEm": 1785818867170,
-   "tiros": [
-    {
-     "h": "05:46",
-     "jogo": "Países Baixos x Escócia",
-     "odd": 2.6,
-     "unidades": 1
-    },
-    {
-     "h": "05:49",
-     "jogo": "EUA x Argentina",
-     "odd": 2.15,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785815259762,
+   "copa": 1785819376766,
    "premier": 1785816167758,
    "euro": 1785811196757,
    "super": 1785818282958
@@ -3035,7 +2998,7 @@
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
-   "2026-08-04": 7.9
+   "2026-08-04": 10.1
   },
   "_gatilhoAtual": {
    "tipo": "placar",
