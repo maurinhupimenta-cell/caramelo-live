@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -147.3,
-  "ciclos": 942,
-  "greens": 588,
+  "saldo": -146.1,
+  "ciclos": 943,
+  "greens": 589,
   "redsCiclo": 151,
   "aborts": 0,
   "descartes": 203,
   "historico": [
+   {
+    "quando": "2026-08-04T02:53:45.357Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · City x Islington @2.1 (tiro 2) · gatilho: time Islington"
+   },
    {
     "quando": "2026-08-04T02:46:57.857Z",
     "resultado": "GREEN",
@@ -2911,50 +2917,13 @@
   "consumidas": {
    "super": 1785810477956,
    "euro": 1785811196757,
-   "copa": 1785811617659
+   "copa": 1785811617659,
+   "premier": 1785812025156
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "03:48",
-     "jogo": "Leeds x Leicester",
-     "odd": 2.55
-    },
-    {
-     "h": "03:51",
-     "jogo": "City x Islington",
-     "odd": 2.1
-    },
-    {
-     "h": "03:54",
-     "jogo": "Burnley x Palace",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "time Islington",
-   "alvo": {
-    "h": "03:51",
-    "jogo": "City x Islington",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1785811862968
-   },
-   "iniciadoEm": 1785811620062,
-   "tiros": [
-    {
-     "h": "03:48",
-     "jogo": "Leeds x Leicester",
-     "odd": 2.55,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785811617659,
-   "premier": 1785789527666,
+   "premier": 1785812025156,
    "euro": 1785811196757,
    "super": 1785810477956
   },
@@ -2978,7 +2947,7 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 38.9
+   "2026-08-03": 40.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
