@@ -5787,7 +5787,37 @@
    "copa": 1785862499799,
    "super": 1785863586601
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:44",
+     "jogo": "Sérvia x Portugal",
+     "odd": 2.05
+    },
+    {
+     "h": "18:47",
+     "jogo": "Turquia x Eslovênia",
+     "odd": 2.37
+    },
+    {
+     "h": "18:50",
+     "jogo": "Itália x Suíça",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "time Eslovênia",
+   "alvo": {
+    "h": "18:44",
+    "jogo": "Sérvia x Portugal",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785865257199
+   },
+   "iniciadoEm": 1785865257199
+  },
   "cooldown": {
    "euro": 1785861478297,
    "super": 1785863586601,
@@ -5817,10 +5847,10 @@
    "2026-08-04": -8.2
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":10",
-   "n": 18,
-   "start": 1
+   "tipo": "time",
+   "chave": "Eslovênia",
+   "n": 26,
+   "start": 2
   },
   "_obs": {}
  }
