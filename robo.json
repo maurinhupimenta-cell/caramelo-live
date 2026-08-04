@@ -5864,8 +5864,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "22:31",
@@ -5885,13 +5885,21 @@
    ],
    "gatilho": "time França",
    "alvo": {
-    "h": "22:31",
-    "jogo": "Canadá x Portugal",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1785878632401
+    "h": "22:34",
+    "jogo": "Coreia do Sul x França",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1785879418093
    },
-   "iniciadoEm": 1785878632401
+   "iniciadoEm": 1785878632401,
+   "tiros": [
+    {
+     "h": "22:31",
+     "jogo": "Canadá x Portugal",
+     "odd": 1.95,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785872222902,
@@ -5923,9 +5931,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "França",
+   "chave": "Jordânia",
    "n": 21,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
