@@ -261,12 +261,18 @@
  },
  "o25": {
   "saldo": -148.9,
-  "ciclos": 940,
+  "ciclos": 941,
   "greens": 587,
   "redsCiclo": 151,
   "aborts": 0,
-  "descartes": 202,
+  "descartes": 203,
   "historico": [
+   {
+    "quando": "2026-08-04T02:41:59.854Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho time Islington) — liga REARMADA"
+   },
    {
     "quando": "2026-08-04T02:39:56.957Z",
     "resultado": "GREEN",
@@ -2965,7 +2971,12 @@
    "n": 10,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1785811319854,
+    "gatilho": "time Islington"
+   }
+  }
  },
  "ambas": {
   "saldo": -67.3,
