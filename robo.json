@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -154.4,
-  "ciclos": 936,
-  "greens": 583,
+  "saldo": -153.4,
+  "ciclos": 937,
+  "greens": 584,
   "redsCiclo": 151,
   "aborts": 0,
   "descartes": 202,
   "historico": [
+   {
+    "quando": "2026-08-04T01:18:57.355Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Agua Branca x Sao Paulo @2.02 (tiro 1) · gatilho: placar 1-0 / 0-1"
+   },
    {
     "quando": "2026-08-03T22:50:01.358Z",
     "resultado": "GREEN",
@@ -2872,43 +2878,15 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "02:13",
-     "jogo": "Agua Branca x Sao Paulo",
-     "odd": 2.02
-    },
-    {
-     "h": "02:16",
-     "jogo": "Penarol x La Boca",
-     "odd": 2.55
-    },
-    {
-     "h": "02:19",
-     "jogo": "Agua Branca x Medellin",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "placar 1-0 / 0-1",
-   "alvo": {
-    "h": "02:13",
-    "jogo": "Agua Branca x Sao Paulo",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1785805871855
-   },
-   "iniciadoEm": 1785805871855
+  "consumidas": {
+   "super": 1785806337065
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785795247263,
    "premier": 1785789527666,
    "euro": 1785794589259,
-   "super": 1785797401159
+   "super": 1785806337065
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -2930,7 +2908,7 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 31.8
+   "2026-08-03": 32.8
   },
   "_gatilhoAtual": {
    "tipo": "placar",
