@@ -279,13 +279,19 @@
   }
  },
  "o25": {
-  "saldo": -138,
-  "ciclos": 969,
+  "saldo": -145,
+  "ciclos": 970,
   "greens": 605,
-  "redsCiclo": 154,
+  "redsCiclo": 155,
   "aborts": 0,
   "descartes": 210,
   "historico": [
+   {
+    "quando": "2026-08-04T18:04:00.595Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Escócia"
+   },
    {
     "quando": "2026-08-04T17:40:59.800Z",
     "resultado": "GREEN",
@@ -3091,49 +3097,12 @@
   ],
   "consumidas": {
    "super": 1785863380598,
-   "euro": 1785865259601
+   "euro": 1785865259601,
+   "copa": 1785866640398
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "18:55",
-     "jogo": "Qatar x Iraque",
-     "odd": 2.5
-    },
-    {
-     "h": "18:58",
-     "jogo": "Senegal x Escócia",
-     "odd": 2.8
-    },
-    {
-     "h": "19:01",
-     "jogo": "Qatar x Panamá",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "time Escócia",
-   "alvo": {
-    "h": "18:58",
-    "jogo": "Senegal x Escócia",
-    "odd": 2.8,
-    "unidades": 2,
-    "desde": 1785866576901
-   },
-   "iniciadoEm": 1785865741798,
-   "tiros": [
-    {
-     "h": "18:55",
-     "jogo": "Qatar x Iraque",
-     "odd": 2.5,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785862141491,
+   "copa": 1785866640398,
    "premier": 1785862778601,
    "euro": 1785865259601,
    "super": 1785863380598
@@ -3159,7 +3128,7 @@
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
-   "2026-08-04": 8.1
+   "2026-08-04": 1.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
@@ -5792,7 +5761,37 @@
    "super": 1785863586601,
    "euro": 1785865804791
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:04",
+     "jogo": "EUA x Senegal",
+     "odd": 2.075
+    },
+    {
+     "h": "19:07",
+     "jogo": "Suécia x Espanha",
+     "odd": 2.05
+    },
+    {
+     "h": "19:10",
+     "jogo": "África do Sul x Brasil",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "odd 2.075",
+   "alvo": {
+    "h": "19:04",
+    "jogo": "EUA x Senegal",
+    "odd": 2.075,
+    "unidades": 1,
+    "desde": 1785866577192
+   },
+   "iniciadoEm": 1785866577192
+  },
   "cooldown": {
    "euro": 1785865804791,
    "super": 1785863586601,
@@ -5822,9 +5821,9 @@
    "2026-08-04": -6.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Eslovênia",
-   "n": 26,
+   "tipo": "odd",
+   "chave": "2.075",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
