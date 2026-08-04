@@ -3206,13 +3206,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -68.4,
-  "ciclos": 980,
-  "greens": 670,
+  "saldo": -67.5,
+  "ciclos": 981,
+  "greens": 671,
   "redsCiclo": 107,
   "aborts": 0,
   "descartes": 203,
   "historico": [
+   {
+    "quando": "2026-08-04T19:55:58.896Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · Egito x República Tcheca @1.98 (tiro 3) · gatilho: odd 1.85"
+   },
    {
     "quando": "2026-08-04T19:37:03.098Z",
     "resultado": "GREEN",
@@ -5856,58 +5862,15 @@
   ],
   "consumidas": {
    "premier": 1785871615199,
-   "euro": 1785872222902
+   "euro": 1785872222902,
+   "copa": 1785873358701
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "20:46",
-     "jogo": "Espanha x África do Sul",
-     "odd": 2.1
-    },
-    {
-     "h": "20:49",
-     "jogo": "Bósnia e Herzegovina x RD Congo",
-     "odd": 1.85
-    },
-    {
-     "h": "20:52",
-     "jogo": "Egito x República Tcheca",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "odd 1.85",
-   "alvo": {
-    "h": "20:52",
-    "jogo": "Egito x República Tcheca",
-    "odd": 1.98,
-    "unidades": 4,
-    "desde": 1785873178394
-   },
-   "iniciadoEm": 1785872277292,
-   "tiros": [
-    {
-     "h": "20:46",
-     "jogo": "Espanha x África do Sul",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "20:49",
-     "jogo": "Bósnia e Herzegovina x RD Congo",
-     "odd": 1.85,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785872222902,
    "super": 1785868080298,
    "premier": 1785871615199,
-   "copa": 1785867059498
+   "copa": 1785873358701
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -5929,7 +5892,7 @@
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
-   "2026-08-04": -1.1
+   "2026-08-04": -0.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
