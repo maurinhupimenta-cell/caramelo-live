@@ -5582,7 +5582,37 @@
    "super": 1785850080699,
    "premier": 1785851109397
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:08",
+     "jogo": "Turquia x Hungria",
+     "odd": 2.15
+    },
+    {
+     "h": "15:11",
+     "jogo": "Polônia x República Tcheca",
+     "odd": 2.25
+    },
+    {
+     "h": "15:14",
+     "jogo": "Geórgia x Inglaterra",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "odd 2.25",
+   "alvo": {
+    "h": "15:08",
+    "jogo": "Turquia x Hungria",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785852296104
+   },
+   "iniciadoEm": 1785852296104
+  },
   "cooldown": {
    "euro": 1785817986170,
    "super": 1785850080699,
@@ -5613,8 +5643,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "1.8",
-   "n": 8,
+   "chave": "2.25",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
