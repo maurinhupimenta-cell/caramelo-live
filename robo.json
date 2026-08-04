@@ -3116,7 +3116,37 @@
   "consumidas": {
    "euro": 1785869936097
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:31",
+     "jogo": "Áustria x Nova Zelândia",
+     "odd": 2.2
+    },
+    {
+     "h": "20:34",
+     "jogo": "Portugal x França",
+     "odd": 2.15
+    },
+    {
+     "h": "20:37",
+     "jogo": "Croácia x Áustria",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "time Portugal",
+   "alvo": {
+    "h": "20:31",
+    "jogo": "Áustria x Nova Zelândia",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785871378995
+   },
+   "iniciadoEm": 1785871378995
+  },
   "cooldown": {
    "copa": 1785866640398,
    "premier": 1785867641592,
@@ -3148,25 +3178,26 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GGGRG",
-   "n": 11,
+   "chave": "GRGG",
+   "n": 18,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785871377094,
-    "gatilho": "time Portugal"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
-  "saldo": -70.6,
-  "ciclos": 978,
-  "greens": 668,
+  "saldo": -69.6,
+  "ciclos": 979,
+  "greens": 669,
   "redsCiclo": 107,
   "aborts": 0,
   "descartes": 203,
   "historico": [
+   {
+    "quando": "2026-08-04T19:26:55.393Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Leeds x Wolverhampton @2 (tiro 1) · gatilho: coluna :27"
+   },
    {
     "quando": "2026-08-04T18:28:00.495Z",
     "resultado": "GREEN",
@@ -5797,43 +5828,14 @@
    }
   ],
   "consumidas": {
-   "super": 1785868080298
+   "super": 1785868080298,
+   "premier": 1785871615199
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:24",
-     "jogo": "Leeds x Wolverhampton",
-     "odd": 2
-    },
-    {
-     "h": "20:27",
-     "jogo": "Brentford x Liverpool",
-     "odd": 1.98
-    },
-    {
-     "h": "20:30",
-     "jogo": "Palace x Chelsea",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "coluna :27",
-   "alvo": {
-    "h": "20:24",
-    "jogo": "Leeds x Wolverhampton",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1785871066693
-   },
-   "iniciadoEm": 1785871066693
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785865804791,
    "super": 1785868080298,
-   "premier": 1785867459293,
+   "premier": 1785871615199,
    "copa": 1785867059498
   },
   "dias": {
@@ -5856,13 +5858,13 @@
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
-   "2026-08-04": -3.3
+   "2026-08-04": -2.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":27",
-   "n": 20,
-   "start": 1
+   "tipo": "time",
+   "chave": "França",
+   "n": 18,
+   "start": 2
   },
   "_obs": {}
  }
