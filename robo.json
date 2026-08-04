@@ -3129,7 +3129,37 @@
    "copa": 1785872277091,
    "premier": 1785873409600
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:22",
+     "jogo": "Quito x Rio de Janeiro",
+     "odd": 2.25
+    },
+    {
+     "h": "21:25",
+     "jogo": "Medellin x Guayaquil",
+     "odd": 2.25
+    },
+    {
+     "h": "21:28",
+     "jogo": "Porto Alegre x Quito",
+     "odd": 2.62
+    }
+   ],
+   "gatilho": "seq GGRGR",
+   "alvo": {
+    "h": "21:22",
+    "jogo": "Quito x Rio de Janeiro",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785874800891
+   },
+   "iniciadoEm": 1785874800891
+  },
   "cooldown": {
    "copa": 1785872277091,
    "premier": 1785873409600,
@@ -3161,8 +3191,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRGG",
-   "n": 13,
+   "chave": "GGRGR",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
