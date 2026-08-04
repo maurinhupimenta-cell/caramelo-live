@@ -279,13 +279,19 @@
   }
  },
  "o25": {
-  "saldo": -145.5,
-  "ciclos": 976,
-  "greens": 609,
+  "saldo": -144.3,
+  "ciclos": 977,
+  "greens": 610,
   "redsCiclo": 156,
   "aborts": 0,
   "descartes": 211,
   "historico": [
+   {
+    "quando": "2026-08-04T20:46:57.890Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Portugal x Espanha @2.075 (tiro 2) · gatilho: time Portugal"
+   },
    {
     "quando": "2026-08-04T20:37:57.394Z",
     "resultado": "RED_CICLO",
@@ -3133,49 +3139,12 @@
   ],
   "consumidas": {
    "premier": 1785873409600,
-   "super": 1785875877195
+   "super": 1785875877195,
+   "copa": 1785876417597
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "21:37",
-     "jogo": "EUA x Egito",
-     "odd": 2.15
-    },
-    {
-     "h": "21:40",
-     "jogo": "Portugal x Espanha",
-     "odd": 2.075
-    },
-    {
-     "h": "21:43",
-     "jogo": "EUA x França",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Portugal",
-   "alvo": {
-    "h": "21:40",
-    "jogo": "Portugal x Espanha",
-    "odd": 2.075,
-    "unidades": 2,
-    "desde": 1785876062794
-   },
-   "iniciadoEm": 1785875879898,
-   "tiros": [
-    {
-     "h": "21:37",
-     "jogo": "EUA x Egito",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785872277091,
+   "copa": 1785876417597,
    "premier": 1785873409600,
    "euro": 1785869936097,
    "super": 1785875877195
@@ -3201,7 +3170,7 @@
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
-   "2026-08-04": 0.6
+   "2026-08-04": 1.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
