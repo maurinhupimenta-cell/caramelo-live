@@ -279,13 +279,19 @@
   }
  },
  "o25": {
-  "saldo": -151.7,
-  "ciclos": 961,
-  "greens": 598,
+  "saldo": -149.3,
+  "ciclos": 962,
+  "greens": 599,
   "redsCiclo": 154,
   "aborts": 0,
   "descartes": 209,
   "historico": [
+   {
+    "quando": "2026-08-04T15:43:59.091Z",
+    "resultado": "GREEN",
+    "unidades": 2.4,
+    "detalhe": "copa · Canadá x Escócia @2.7 (tiro 2) · gatilho: time Escócia"
+   },
    {
     "quando": "2026-08-04T15:32:47.401Z",
     "resultado": "GREEN_OBS",
@@ -3042,49 +3048,12 @@
    }
   ],
   "consumidas": {
-   "super": 1785857486097
+   "super": 1785857486097,
+   "copa": 1785858238891
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "16:37",
-     "jogo": "Uruguai x Turquia",
-     "odd": 2.25
-    },
-    {
-     "h": "16:40",
-     "jogo": "Canadá x Escócia",
-     "odd": 2.7
-    },
-    {
-     "h": "16:43",
-     "jogo": "Nova Zelândia x Cabo Verde",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Escócia",
-   "alvo": {
-    "h": "16:40",
-    "jogo": "Canadá x Escócia",
-    "odd": 2.7,
-    "unidades": 2,
-    "desde": 1785858001097
-   },
-   "iniciadoEm": 1785857488096,
-   "tiros": [
-    {
-     "h": "16:37",
-     "jogo": "Uruguai x Turquia",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785850738993,
+   "copa": 1785858238891,
    "premier": 1785853294999,
    "euro": 1785854218690,
    "super": 1785857486097
@@ -3110,12 +3079,12 @@
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
-   "2026-08-04": -5.6
+   "2026-08-04": -3.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Escócia",
-   "n": 15,
+   "tipo": "seq",
+   "chave": "GRGG",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
