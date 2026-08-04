@@ -280,12 +280,18 @@
  },
  "o25": {
   "saldo": -135,
-  "ciclos": 949,
+  "ciclos": 950,
   "greens": 595,
   "redsCiclo": 151,
   "aborts": 0,
-  "descartes": 203,
+  "descartes": 204,
   "historico": [
+   {
+    "quando": "2026-08-04T13:20:42.994Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-08-04T05:12:57.454Z",
     "resultado": "GREEN",
@@ -3031,9 +3037,9 @@
    "2026-08-04": 11.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGG",
-   "n": 8,
+   "tipo": "odd",
+   "chave": "2.15",
+   "n": 18,
    "start": 1
   },
   "_obs": {}
@@ -5564,7 +5570,37 @@
   "consumidas": {
    "copa": 1785849179590
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:10",
+     "jogo": "Belo Horizonte x Quito",
+     "odd": 1.98
+    },
+    {
+     "h": "14:13",
+     "jogo": "Buenos Aires x Rio de Janeiro",
+     "odd": 1.85
+    },
+    {
+     "h": "14:16",
+     "jogo": "Lima x Porto Alegre",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time Belo Horizonte",
+   "alvo": {
+    "h": "14:10",
+    "jogo": "Belo Horizonte x Quito",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785849181995
+   },
+   "iniciadoEm": 1785849181995
+  },
   "cooldown": {
    "euro": 1785817986170,
    "super": 1785796197968,
@@ -5595,7 +5631,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":18",
+   "chave": ":24",
    "n": 14,
    "start": 1
   },
