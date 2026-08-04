@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -153.4,
-  "ciclos": 937,
-  "greens": 584,
+  "saldo": -152,
+  "ciclos": 938,
+  "greens": 585,
   "redsCiclo": 151,
   "aborts": 0,
   "descartes": 202,
   "historico": [
+   {
+    "quando": "2026-08-04T01:40:02.856Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "copa · Portugal x Países Baixos @2.2 (tiro 2) · gatilho: odd 2.2"
+   },
    {
     "quando": "2026-08-04T01:18:57.355Z",
     "resultado": "GREEN",
@@ -2879,49 +2885,12 @@
    }
   ],
   "consumidas": {
-   "super": 1785806337065
+   "super": 1785806337065,
+   "copa": 1785807602658
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "02:34",
-     "jogo": "Senegal x Jordânia",
-     "odd": 2.4
-    },
-    {
-     "h": "02:37",
-     "jogo": "Portugal x Países Baixos",
-     "odd": 2.2
-    },
-    {
-     "h": "02:40",
-     "jogo": "México x Egito",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "odd 2.2",
-   "alvo": {
-    "h": "02:37",
-    "jogo": "Portugal x Países Baixos",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1785807540960
-   },
-   "iniciadoEm": 1785806812165,
-   "tiros": [
-    {
-     "h": "02:34",
-     "jogo": "Senegal x Jordânia",
-     "odd": 2.4,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785795247263,
+   "copa": 1785807602658,
    "premier": 1785789527666,
    "euro": 1785794589259,
    "super": 1785806337065
@@ -2946,13 +2915,13 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 32.8
+   "2026-08-03": 34.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.2",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
