@@ -2972,7 +2972,37 @@
   "consumidas": {
    "premier": 1785820377165
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:07",
+     "jogo": "Sao Paulo x Agua Branca",
+     "odd": 2.02
+    },
+    {
+     "h": "14:10",
+     "jogo": "Belo Horizonte x Quito",
+     "odd": 2.15
+    },
+    {
+     "h": "14:13",
+     "jogo": "Buenos Aires x Rio de Janeiro",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "odd 2.15",
+   "alvo": {
+    "h": "14:07",
+    "jogo": "Sao Paulo x Agua Branca",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1785848706291
+   },
+   "iniciadoEm": 1785848706291
+  },
   "cooldown": {
    "copa": 1785819376766,
    "premier": 1785820377165,
@@ -3003,9 +3033,9 @@
    "2026-08-04": 11.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Liverpool",
-   "n": 11,
+   "tipo": "odd",
+   "chave": "2.15",
+   "n": 18,
    "start": 1
   },
   "_obs": {}
@@ -5528,7 +5558,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:07",
+     "jogo": "Paraguai x Argélia",
+     "odd": 2.05
+    },
+    {
+     "h": "14:10",
+     "jogo": "Iraque x Costa do Marfim",
+     "odd": 2
+    },
+    {
+     "h": "14:13",
+     "jogo": "Uzbequistão x Turquia",
+     "odd": 2
+    }
+   ],
+   "gatilho": "coluna :10",
+   "alvo": {
+    "h": "14:07",
+    "jogo": "Paraguai x Argélia",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785848703897
+   },
+   "iniciadoEm": 1785848703897
+  },
   "cooldown": {
    "euro": 1785817986170,
    "super": 1785796197968,
@@ -5558,9 +5618,9 @@
    "2026-08-04": -4.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Geórgia",
-   "n": 8,
+   "tipo": "coluna",
+   "chave": ":10",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
