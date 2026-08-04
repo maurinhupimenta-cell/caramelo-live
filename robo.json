@@ -233,8 +233,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:36",
@@ -254,13 +254,21 @@
    ],
    "gatilho": "time Aston",
    "alvo": {
-    "h": "05:36",
-    "jogo": "Brighton x Aston",
-    "odd": 4.2,
-    "unidades": 1,
-    "desde": 1785818157857
+    "h": "05:39",
+    "jogo": "Brentford x Southampton",
+    "odd": 4.75,
+    "unidades": 2,
+    "desde": 1785818348255
    },
-   "iniciadoEm": 1785818157857
+   "iniciadoEm": 1785818157857,
+   "tiros": [
+    {
+     "h": "05:36",
+     "jogo": "Brighton x Aston",
+     "odd": 4.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785688526966,
@@ -289,7 +297,7 @@
    "tipo": "time",
    "chave": "Aston",
    "n": 9,
-   "start": 3
+   "start": 2
   },
   "_obs": {
    "euro": {
