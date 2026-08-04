@@ -5614,8 +5614,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "15:08",
@@ -5635,13 +5635,21 @@
    ],
    "gatilho": "odd 2.25",
    "alvo": {
-    "h": "15:08",
-    "jogo": "Turquia x Hungria",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785852296104
+    "h": "15:11",
+    "jogo": "Polônia x República Tcheca",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1785852655894
    },
-   "iniciadoEm": 1785852296104
+   "iniciadoEm": 1785852296104,
+   "tiros": [
+    {
+     "h": "15:08",
+     "jogo": "Turquia x Hungria",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785817986170,
@@ -5673,8 +5681,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.25",
-   "n": 13,
+   "chave": "2.05",
+   "n": 25,
    "start": 1
   },
   "_obs": {}
