@@ -3084,13 +3084,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -82.5,
-  "ciclos": 964,
-  "greens": 656,
+  "saldo": -81.8,
+  "ciclos": 965,
+  "greens": 657,
   "redsCiclo": 107,
   "aborts": 0,
   "descartes": 201,
   "historico": [
+   {
+    "quando": "2026-08-04T15:14:48.897Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "premier · Newcastle x Southampton @1.93 (tiro 3) · gatilho: seq GRGGR"
+   },
    {
     "quando": "2026-08-04T14:44:59.897Z",
     "resultado": "RED_CICLO",
@@ -5639,57 +5645,14 @@
   "consumidas": {
    "euro": 1785853018501,
    "copa": 1785853498601,
-   "super": 1785854699700
+   "super": 1785854699700,
+   "premier": 1785856488699
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "16:06",
-     "jogo": "Wolverhampton x Chelsea",
-     "odd": 1.85
-    },
-    {
-     "h": "16:09",
-     "jogo": "Burnley x City",
-     "odd": 1.85
-    },
-    {
-     "h": "16:12",
-     "jogo": "Newcastle x Southampton",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "seq GRGGR",
-   "alvo": {
-    "h": "16:12",
-    "jogo": "Newcastle x Southampton",
-    "odd": 1.93,
-    "unidades": 4,
-    "desde": 1785856309690
-   },
-   "iniciadoEm": 1785855778601,
-   "tiros": [
-    {
-     "h": "16:06",
-     "jogo": "Wolverhampton x Chelsea",
-     "odd": 1.85,
-     "unidades": 1
-    },
-    {
-     "h": "16:09",
-     "jogo": "Burnley x City",
-     "odd": 1.85,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785853018501,
    "super": 1785854699700,
-   "premier": 1785851109397,
+   "premier": 1785856488699,
    "copa": 1785853498601
   },
   "dias": {
@@ -5712,12 +5675,12 @@
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
-   "2026-08-04": -15.2
+   "2026-08-04": -14.5
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRGGR",
-   "n": 8,
+   "chave": "RGRRG",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
