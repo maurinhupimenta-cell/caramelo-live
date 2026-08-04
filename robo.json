@@ -3006,8 +3006,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "15:12",
@@ -3027,13 +3027,21 @@
    ],
    "gatilho": "seq RRRGG",
    "alvo": {
-    "h": "15:12",
-    "jogo": "Liverpool x City",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1785852533690
+    "h": "15:15",
+    "jogo": "Newcastle x Tottenham",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1785852886495
    },
-   "iniciadoEm": 1785852533690
+   "iniciadoEm": 1785852533690,
+   "tiros": [
+    {
+     "h": "15:12",
+     "jogo": "Liverpool x City",
+     "odd": 2.07,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785850738993,
@@ -5679,9 +5687,9 @@
    "2026-08-04": -2.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.05",
-   "n": 25,
+   "tipo": "time",
+   "chave": "França",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
