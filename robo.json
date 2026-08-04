@@ -279,13 +279,19 @@
   }
  },
  "o25": {
-  "saldo": -147.9,
-  "ciclos": 963,
-  "greens": 600,
+  "saldo": -144.9,
+  "ciclos": 964,
+  "greens": 601,
   "redsCiclo": 154,
   "aborts": 0,
   "descartes": 209,
   "historico": [
+   {
+    "quando": "2026-08-04T16:19:57.996Z",
+    "resultado": "GREEN",
+    "unidades": 3,
+    "detalhe": "euro · Escócia x República Tcheca @2.5 (tiro 3) · gatilho: seq GGGRG"
+   },
    {
     "quando": "2026-08-04T15:50:44.695Z",
     "resultado": "GREEN",
@@ -3056,51 +3062,14 @@
   "consumidas": {
    "super": 1785857486097,
    "copa": 1785858238891,
-   "premier": 1785858644495
+   "premier": 1785858644495,
+   "euro": 1785860397800
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:11",
-     "jogo": "Polônia x Áustria",
-     "odd": 2.5
-    },
-    {
-     "h": "17:14",
-     "jogo": "Albânia x Espanha",
-     "odd": 2.4
-    },
-    {
-     "h": "17:17",
-     "jogo": "Escócia x República Tcheca",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "seq GGGRG",
-   "alvo": {
-    "h": "17:14",
-    "jogo": "Albânia x Espanha",
-    "odd": 2.4,
-    "unidades": 2,
-    "desde": 1785860219993
-   },
-   "iniciadoEm": 1785859676198,
-   "tiros": [
-    {
-     "h": "17:11",
-     "jogo": "Polônia x Áustria",
-     "odd": 2.5,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785858238891,
    "premier": 1785858644495,
-   "euro": 1785854218690,
+   "euro": 1785860397800,
    "super": 1785857486097
   },
   "dias": {
@@ -3124,13 +3093,13 @@
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
-   "2026-08-04": -1.8
+   "2026-08-04": 1.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGRG",
-   "n": 10,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":29",
+   "n": 17,
+   "start": 2
   },
   "_obs": {}
  },
@@ -5788,10 +5757,10 @@
    "2026-08-04": -12.1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":24",
-   "n": 17,
-   "start": 2
+   "tipo": "seq",
+   "chave": "GRGGR",
+   "n": 10,
+   "start": 1
   },
   "_obs": {}
  }
