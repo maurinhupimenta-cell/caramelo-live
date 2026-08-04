@@ -2969,9 +2969,7 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {
-   "premier": 1785820377165
-  },
+  "consumidas": {},
   "ciclo": {
    "liga": "super",
    "degrau": 0,
@@ -3033,21 +3031,27 @@
    "2026-08-04": 11.1
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.15",
-   "n": 18,
+   "tipo": "seq",
+   "chave": "RGGG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -72.1,
-  "ciclos": 958,
-  "greens": 652,
+  "saldo": -71.1,
+  "ciclos": 959,
+  "greens": 653,
   "redsCiclo": 105,
   "aborts": 0,
   "descartes": 201,
   "historico": [
+   {
+    "quando": "2026-08-04T13:12:59.793Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Paraguai x Argélia @2.05 (tiro 1) · gatilho: coluna :10"
+   },
    {
     "quando": "2026-08-04T05:40:45.967Z",
     "resultado": "GREEN_OBS",
@@ -5557,43 +5561,15 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:07",
-     "jogo": "Paraguai x Argélia",
-     "odd": 2.05
-    },
-    {
-     "h": "14:10",
-     "jogo": "Iraque x Costa do Marfim",
-     "odd": 2
-    },
-    {
-     "h": "14:13",
-     "jogo": "Uzbequistão x Turquia",
-     "odd": 2
-    }
-   ],
-   "gatilho": "coluna :10",
-   "alvo": {
-    "h": "14:07",
-    "jogo": "Paraguai x Argélia",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785848703897
-   },
-   "iniciadoEm": 1785848703897
+  "consumidas": {
+   "copa": 1785849179590
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785817986170,
    "super": 1785796197968,
    "premier": 1785795850863,
-   "copa": 1785815259964
+   "copa": 1785849179590
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -5615,11 +5591,11 @@
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
-   "2026-08-04": -4.8
+   "2026-08-04": -3.8
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":10",
+   "chave": ":18",
    "n": 14,
    "start": 1
   },
