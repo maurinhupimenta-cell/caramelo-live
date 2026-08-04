@@ -5881,8 +5881,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "23:32",
@@ -5902,13 +5902,21 @@
    ],
    "gatilho": "coluna :35",
    "alvo": {
-    "h": "23:32",
-    "jogo": "Inglaterra x Turquia",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1785882478801
+    "h": "23:35",
+    "jogo": "Países Baixos x Suíça",
+    "odd": 1.83,
+    "unidades": 2,
+    "desde": 1785882895895
    },
-   "iniciadoEm": 1785882478801
+   "iniciadoEm": 1785882478801,
+   "tiros": [
+    {
+     "h": "23:32",
+     "jogo": "Inglaterra x Turquia",
+     "odd": 2.02,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785872222902,
@@ -5940,9 +5948,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":35",
+   "chave": ":38",
    "n": 23,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
