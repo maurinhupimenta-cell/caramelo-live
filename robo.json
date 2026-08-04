@@ -3053,8 +3053,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "16:45",
@@ -3074,13 +3074,21 @@
    ],
    "gatilho": "seq GRGG",
    "alvo": {
-    "h": "16:45",
-    "jogo": "Chelsea x Brentford",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785858241392
+    "h": "16:48",
+    "jogo": "Wolverhampton x Aston",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1785858457790
    },
-   "iniciadoEm": 1785858241392
+   "iniciadoEm": 1785858241392,
+   "tiros": [
+    {
+     "h": "16:45",
+     "jogo": "Chelsea x Brentford",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785858238891,
@@ -5707,7 +5715,37 @@
    "euro": 1785857457995,
    "copa": 1785857542891
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:49",
+     "jogo": "Bogota x Penarol",
+     "odd": 2.3
+    },
+    {
+     "h": "16:52",
+     "jogo": "Lima x Santos",
+     "odd": 1.98
+    },
+    {
+     "h": "16:55",
+     "jogo": "Sao Paulo x Quito",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "seq RRRRG",
+   "alvo": {
+    "h": "16:49",
+    "jogo": "Bogota x Penarol",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1785858419596
+   },
+   "iniciadoEm": 1785858419596
+  },
   "cooldown": {
    "euro": 1785857457995,
    "super": 1785854699700,
@@ -5737,16 +5775,11 @@
    "2026-08-04": -12.7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Croácia",
-   "n": 8,
+   "tipo": "seq",
+   "chave": "RRRRG",
+   "n": 12,
    "start": 1
   },
-  "_obs": {
-   "super": {
-    "desde": 1785858417502,
-    "gatilho": "seq RRRRG"
-   }
-  }
+  "_obs": {}
  }
 }
