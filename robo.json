@@ -5500,8 +5500,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:20",
@@ -5521,13 +5521,21 @@
    ],
    "gatilho": "time Dinamarca",
    "alvo": {
-    "h": "05:20",
-    "jogo": "Alemanha x Sérvia",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785817036663
+    "h": "05:23",
+    "jogo": "Portugal x Dinamarca",
+    "odd": 2.02,
+    "unidades": 2,
+    "desde": 1785817381059
    },
-   "iniciadoEm": 1785817036663
+   "iniciadoEm": 1785817036663,
+   "tiros": [
+    {
+     "h": "05:20",
+     "jogo": "Alemanha x Sérvia",
+     "odd": 2.05,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785812696354,
@@ -5559,7 +5567,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Dinamarca",
+   "chave": "República Tcheca",
    "n": 8,
    "start": 1
   },
