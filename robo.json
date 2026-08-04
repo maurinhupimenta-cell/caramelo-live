@@ -3066,11 +3066,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1785858644495,
    "euro": 1785860397800,
    "copa": 1785862141491
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:54",
+     "jogo": "Chelsea x Leeds",
+     "odd": 2.5
+    },
+    {
+     "h": "17:57",
+     "jogo": "City x Watford",
+     "odd": 2.15
+    },
+    {
+     "h": "18:00",
+     "jogo": "Islington x United",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "seq GRGG",
+   "alvo": {
+    "h": "17:54",
+    "jogo": "Chelsea x Leeds",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1785862249900
+   },
+   "iniciadoEm": 1785862249900
+  },
   "cooldown": {
    "copa": 1785862141491,
    "premier": 1785858644495,
@@ -3101,9 +3130,9 @@
    "2026-08-04": 3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Escócia",
-   "n": 16,
+   "tipo": "seq",
+   "chave": "GRGG",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
@@ -5777,7 +5806,7 @@
    "tipo": "odd",
    "chave": "1.85",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
