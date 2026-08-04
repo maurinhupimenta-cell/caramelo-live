@@ -3082,7 +3082,37 @@
    "copa": 1785862141491,
    "premier": 1785862778601
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:07",
+     "jogo": "Belo Horizonte x La Plata",
+     "odd": 2.37
+    },
+    {
+     "h": "18:10",
+     "jogo": "Montevideo x Sao Paulo",
+     "odd": 2
+    },
+    {
+     "h": "18:13",
+     "jogo": "Avellaneda x Penarol",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "seq RRGRG",
+   "alvo": {
+    "h": "18:07",
+    "jogo": "Belo Horizonte x La Plata",
+    "odd": 2.37,
+    "unidades": 1,
+    "desde": 1785863130400
+   },
+   "iniciadoEm": 1785863130400
+  },
   "cooldown": {
    "copa": 1785862141491,
    "premier": 1785862778601,
@@ -3114,16 +3144,11 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRGGR",
+   "chave": "RRGRG",
    "n": 9,
    "start": 1
   },
-  "_obs": {
-   "super": {
-    "desde": 1785863100600,
-    "gatilho": "seq RRGRG"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -76.1,
@@ -5797,10 +5822,10 @@
    "2026-08-04": -8.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":10",
-   "n": 18,
-   "start": 2
+   "tipo": "seq",
+   "chave": "RRGGG",
+   "n": 8,
+   "start": 1
   },
   "_obs": {}
  }
