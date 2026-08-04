@@ -3090,12 +3090,41 @@
    }
   ],
   "consumidas": {
-   "copa": 1785862141491,
    "premier": 1785862778601,
    "super": 1785863380598,
    "euro": 1785865259601
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:55",
+     "jogo": "Qatar x Iraque",
+     "odd": 2.5
+    },
+    {
+     "h": "18:58",
+     "jogo": "Senegal x Escócia",
+     "odd": 2.8
+    },
+    {
+     "h": "19:01",
+     "jogo": "Qatar x Panamá",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "time Escócia",
+   "alvo": {
+    "h": "18:55",
+    "jogo": "Qatar x Iraque",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1785865741798
+   },
+   "iniciadoEm": 1785865741798
+  },
   "cooldown": {
    "copa": 1785862141491,
    "premier": 1785862778601,
@@ -3126,10 +3155,10 @@
    "2026-08-04": 8.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGRG",
-   "n": 9,
-   "start": 1
+   "tipo": "time",
+   "chave": "Escócia",
+   "n": 19,
+   "start": 3
   },
   "_obs": {}
  },
