@@ -3024,10 +3024,39 @@
    }
   ],
   "consumidas": {
-   "premier": 1785853294999,
    "euro": 1785854218690
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:19",
+     "jogo": "Lima x Guayaquil",
+     "odd": 2.05
+    },
+    {
+     "h": "16:22",
+     "jogo": "Itaquera x Bogota",
+     "odd": 2.6
+    },
+    {
+     "h": "16:25",
+     "jogo": "Buenos Aires x Quito",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "seq RRGRG",
+   "alvo": {
+    "h": "16:19",
+    "jogo": "Lima x Guayaquil",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785856681091
+   },
+   "iniciadoEm": 1785856681091
+  },
   "cooldown": {
    "copa": 1785850738993,
    "premier": 1785853294999,
@@ -3058,17 +3087,12 @@
    "2026-08-04": 1.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Escócia",
-   "n": 14,
+   "tipo": "odd",
+   "chave": "2.15",
+   "n": 21,
    "start": 1
   },
-  "_obs": {
-   "super": {
-    "desde": 1785856678892,
-    "gatilho": "seq RRGRG"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -81.8,
@@ -5703,7 +5727,7 @@
    "tipo": "time",
    "chave": "Eslovênia",
    "n": 22,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
