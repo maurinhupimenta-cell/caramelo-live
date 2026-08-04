@@ -279,13 +279,19 @@
   }
  },
  "o25": {
-  "saldo": -144.3,
-  "ciclos": 977,
-  "greens": 610,
+  "saldo": -143.3,
+  "ciclos": 978,
+  "greens": 611,
   "redsCiclo": 156,
   "aborts": 0,
   "descartes": 211,
   "historico": [
+   {
+    "quando": "2026-08-04T21:21:59.598Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Romênia x França @2.02 (tiro 1) · gatilho: seq GGGRG"
+   },
    {
     "quando": "2026-08-04T20:46:57.890Z",
     "resultado": "GREEN",
@@ -3139,43 +3145,14 @@
   ],
   "consumidas": {
    "super": 1785875877195,
-   "copa": 1785876417597
+   "copa": 1785876417597,
+   "euro": 1785878519398
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:17",
-     "jogo": "Romênia x França",
-     "odd": 2.02
-    },
-    {
-     "h": "22:20",
-     "jogo": "Eslováquia x Escócia",
-     "odd": 2.25
-    },
-    {
-     "h": "22:23",
-     "jogo": "Espanha x Dinamarca",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "seq GGGRG",
-   "alvo": {
-    "h": "22:17",
-    "jogo": "Romênia x França",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1785878098798
-   },
-   "iniciadoEm": 1785878098798
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785876417597,
    "premier": 1785873409600,
-   "euro": 1785869936097,
+   "euro": 1785878519398,
    "super": 1785875877195
   },
   "dias": {
@@ -3199,7 +3176,7 @@
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
-   "2026-08-04": 1.8
+   "2026-08-04": 2.8
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -5886,7 +5863,37 @@
    "premier": 1785875425993,
    "super": 1785878517201
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:31",
+     "jogo": "Canadá x Portugal",
+     "odd": 1.95
+    },
+    {
+     "h": "22:34",
+     "jogo": "Coreia do Sul x França",
+     "odd": 2.05
+    },
+    {
+     "h": "22:37",
+     "jogo": "Jordânia x México",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "time França",
+   "alvo": {
+    "h": "22:31",
+    "jogo": "Canadá x Portugal",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1785878632401
+   },
+   "iniciadoEm": 1785878632401
+  },
   "cooldown": {
    "euro": 1785872222902,
    "super": 1785878517201,
@@ -5916,10 +5923,10 @@
    "2026-08-04": -5.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRR",
-   "n": 16,
-   "start": 1
+   "tipo": "time",
+   "chave": "França",
+   "n": 21,
+   "start": 3
   },
   "_obs": {}
  }
