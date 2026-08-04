@@ -279,13 +279,19 @@
   }
  },
  "o25": {
-  "saldo": -140.9,
-  "ciclos": 974,
-  "greens": 608,
+  "saldo": -138.5,
+  "ciclos": 975,
+  "greens": 609,
   "redsCiclo": 155,
   "aborts": 0,
   "descartes": 211,
   "historico": [
+   {
+    "quando": "2026-08-04T19:56:49.797Z",
+    "resultado": "GREEN",
+    "unidades": 2.4,
+    "detalhe": "premier · Chelsea x Aston @2.35 (tiro 3) · gatilho: seq RRRGG"
+   },
    {
     "quando": "2026-08-04T19:37:57.196Z",
     "resultado": "GREEN",
@@ -3121,56 +3127,13 @@
   ],
   "consumidas": {
    "euro": 1785869936097,
-   "copa": 1785872277091
+   "copa": 1785872277091,
+   "premier": 1785873409600
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "20:48",
-     "jogo": "Southampton x Tottenham",
-     "odd": 2.55
-    },
-    {
-     "h": "20:51",
-     "jogo": "Burnley x Brighton",
-     "odd": 2
-    },
-    {
-     "h": "20:54",
-     "jogo": "Chelsea x Aston",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "seq RRRGG",
-   "alvo": {
-    "h": "20:54",
-    "jogo": "Chelsea x Aston",
-    "odd": 2.35,
-    "unidades": 4,
-    "desde": 1785873217200
-   },
-   "iniciadoEm": 1785872683190,
-   "tiros": [
-    {
-     "h": "20:48",
-     "jogo": "Southampton x Tottenham",
-     "odd": 2.55,
-     "unidades": 1
-    },
-    {
-     "h": "20:51",
-     "jogo": "Burnley x Brighton",
-     "odd": 2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785872277091,
-   "premier": 1785867641592,
+   "premier": 1785873409600,
    "euro": 1785869936097,
    "super": 1785863380598
   },
@@ -3195,7 +3158,7 @@
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
-   "2026-08-04": 5.2
+   "2026-08-04": 7.6
   },
   "_gatilhoAtual": {
    "tipo": "seq",
