@@ -3058,7 +3058,37 @@
    "copa": 1785858238891,
    "premier": 1785858644495
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:11",
+     "jogo": "Polônia x Áustria",
+     "odd": 2.5
+    },
+    {
+     "h": "17:14",
+     "jogo": "Albânia x Espanha",
+     "odd": 2.4
+    },
+    {
+     "h": "17:17",
+     "jogo": "Escócia x República Tcheca",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "seq GGGRG",
+   "alvo": {
+    "h": "17:11",
+    "jogo": "Polônia x Áustria",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1785859676198
+   },
+   "iniciadoEm": 1785859676198
+  },
   "cooldown": {
    "copa": 1785858238891,
    "premier": 1785858644495,
@@ -3090,7 +3120,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRGG",
+   "chave": "GGGRG",
    "n": 10,
    "start": 1
   },
