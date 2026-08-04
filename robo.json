@@ -2982,7 +2982,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:26",
+     "jogo": "Portugal x Áustria",
+     "odd": 2.3
+    },
+    {
+     "h": "14:29",
+     "jogo": "Turquia x Escócia",
+     "odd": 2.4
+    },
+    {
+     "h": "14:32",
+     "jogo": "República Tcheca x Dinamarca",
+     "odd": 2.7
+    }
+   ],
+   "gatilho": "coluna :29",
+   "alvo": {
+    "h": "14:26",
+    "jogo": "Portugal x Áustria",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1785849656391
+   },
+   "iniciadoEm": 1785849656391
+  },
   "cooldown": {
    "copa": 1785819376766,
    "premier": 1785820377165,
@@ -3016,23 +3046,24 @@
    "tipo": "coluna",
    "chave": ":29",
    "n": 14,
-   "start": 3
+   "start": 1
   },
-  "_obs": {
-   "super": {
-    "desde": 1785849656297,
-    "gatilho": "odd 2.15"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
-  "saldo": -71.1,
-  "ciclos": 959,
-  "greens": 653,
+  "saldo": -70.4,
+  "ciclos": 960,
+  "greens": 654,
   "redsCiclo": 105,
   "aborts": 0,
   "descartes": 201,
   "historico": [
+   {
+    "quando": "2026-08-04T13:28:00.990Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "super · Buenos Aires x Rio de Janeiro @1.85 (tiro 2) · gatilho: time Belo Horizonte"
+   },
    {
     "quando": "2026-08-04T13:12:59.793Z",
     "resultado": "GREEN",
@@ -5549,42 +5580,13 @@
    }
   ],
   "consumidas": {
-   "copa": 1785849179590
+   "copa": 1785849179590,
+   "super": 1785850080699
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:10",
-     "jogo": "Belo Horizonte x Quito",
-     "odd": 1.98
-    },
-    {
-     "h": "14:13",
-     "jogo": "Buenos Aires x Rio de Janeiro",
-     "odd": 1.85
-    },
-    {
-     "h": "14:16",
-     "jogo": "Lima x Porto Alegre",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "time Belo Horizonte",
-   "alvo": {
-    "h": "14:10",
-    "jogo": "Belo Horizonte x Quito",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785849181995
-   },
-   "iniciadoEm": 1785849181995
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785817986170,
-   "super": 1785796197968,
+   "super": 1785850080699,
    "premier": 1785795850863,
    "copa": 1785849179590
   },
@@ -5608,12 +5610,12 @@
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
-   "2026-08-04": -3.8
+   "2026-08-04": -3.1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":24",
-   "n": 14,
+   "tipo": "time",
+   "chave": "Belo Horizonte",
+   "n": 24,
    "start": 1
   },
   "_obs": {}
