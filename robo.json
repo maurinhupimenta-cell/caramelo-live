@@ -3198,12 +3198,18 @@
  },
  "ambas": {
   "saldo": -69.4,
-  "ciclos": 988,
+  "ciclos": 989,
   "greens": 677,
   "redsCiclo": 108,
   "aborts": 0,
-  "descartes": 203,
+  "descartes": 204,
   "historico": [
+   {
+    "quando": "2026-08-04T23:00:01.294Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :10) — liga REARMADA"
+   },
    {
     "quando": "2026-08-04T22:58:57.994Z",
     "resultado": "GREEN",
@@ -5894,11 +5900,48 @@
    }
   ],
   "consumidas": {
-   "premier": 1785880794894,
    "euro": 1785883200300,
    "copa": 1785884337802
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "00:07",
+     "jogo": "Quito x Sao Paulo",
+     "odd": 1.87
+    },
+    {
+     "h": "00:10",
+     "jogo": "Santos x La Plata",
+     "odd": 2.2
+    },
+    {
+     "h": "00:13",
+     "jogo": "Guayaquil x Rio de Janeiro",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "coluna :10",
+   "alvo": {
+    "h": "00:10",
+    "jogo": "Santos x La Plata",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1785885180890
+   },
+   "iniciadoEm": 1785884402799,
+   "tiros": [
+    {
+     "h": "00:07",
+     "jogo": "Quito x Sao Paulo",
+     "odd": 1.87,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1785883200300,
    "super": 1785878517201,
@@ -5928,9 +5971,9 @@
    "2026-08-04": -2.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "França",
-   "n": 23,
+   "tipo": "coluna",
+   "chave": ":10",
+   "n": 24,
    "start": 1
   },
   "_obs": {}
