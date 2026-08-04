@@ -5453,7 +5453,37 @@
   "consumidas": {
    "copa": 1785809819555
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:02",
+     "jogo": "Turquia x República Tcheca",
+     "odd": 2.29
+    },
+    {
+     "h": "04:05",
+     "jogo": "Eslovênia x Escócia",
+     "odd": 2.15
+    },
+    {
+     "h": "04:08",
+     "jogo": "Inglaterra x Países Baixos",
+     "odd": 1.8
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-0)",
+   "alvo": {
+    "h": "04:02",
+    "jogo": "Turquia x República Tcheca",
+    "odd": 2.29,
+    "unidades": 1,
+    "desde": 1785812396667
+   },
+   "iniciadoEm": 1785812396667
+  },
   "cooldown": {
    "euro": 1785796678162,
    "super": 1785796197968,
