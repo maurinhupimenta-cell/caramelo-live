@@ -3212,13 +3212,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -66.7,
-  "ciclos": 982,
-  "greens": 672,
+  "saldo": -65.9,
+  "ciclos": 983,
+  "greens": 673,
   "redsCiclo": 107,
   "aborts": 0,
   "descartes": 203,
   "historico": [
+   {
+    "quando": "2026-08-04T20:30:26.193Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "premier · Wolverhampton x City @1.8 (tiro 1) · gatilho: odd 1.8"
+   },
    {
     "quando": "2026-08-04T20:10:59.792Z",
     "resultado": "GREEN",
@@ -5875,43 +5881,14 @@
   "consumidas": {
    "euro": 1785872222902,
    "copa": 1785873358701,
-   "super": 1785874259595
+   "super": 1785874259595,
+   "premier": 1785875425993
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:27",
-     "jogo": "Wolverhampton x City",
-     "odd": 1.8
-    },
-    {
-     "h": "21:30",
-     "jogo": "West Ham x Leicester",
-     "odd": 2.15
-    },
-    {
-     "h": "21:33",
-     "jogo": "Norwich x Newcastle",
-     "odd": 1.83
-    }
-   ],
-   "gatilho": "odd 1.8",
-   "alvo": {
-    "h": "21:27",
-    "jogo": "Wolverhampton x City",
-    "odd": 1.8,
-    "unidades": 1,
-    "desde": 1785875216394
-   },
-   "iniciadoEm": 1785875216394
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785872222902,
    "super": 1785874259595,
-   "premier": 1785871615199,
+   "premier": 1785875425993,
    "copa": 1785873358701
   },
   "dias": {
@@ -5934,7 +5911,7 @@
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
-   "2026-08-04": 0.6
+   "2026-08-04": 1.4
   },
   "_gatilhoAtual": {
    "tipo": "odd",
