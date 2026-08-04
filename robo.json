@@ -279,13 +279,19 @@
   }
  },
  "o25": {
-  "saldo": -141.8,
-  "ciclos": 979,
-  "greens": 612,
+  "saldo": -140.6,
+  "ciclos": 980,
+  "greens": 613,
   "redsCiclo": 156,
   "aborts": 0,
   "descartes": 211,
   "historico": [
+   {
+    "quando": "2026-08-04T22:47:58.493Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Inglaterra x Ucrânia @2.15 (tiro 1) · gatilho: seq GGGRG"
+   },
    {
     "quando": "2026-08-04T21:59:54.796Z",
     "resultado": "GREEN",
@@ -3150,43 +3156,14 @@
    }
   ],
   "consumidas": {
-   "premier": 1785880794595
+   "premier": 1785880794595,
+   "euro": 1785883678192
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:41",
-     "jogo": "Inglaterra x Ucrânia",
-     "odd": 2.15
-    },
-    {
-     "h": "23:44",
-     "jogo": "Polônia x Portugal",
-     "odd": 2.4
-    },
-    {
-     "h": "23:47",
-     "jogo": "Dinamarca x Suíça",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "seq GGGRG",
-   "alvo": {
-    "h": "23:41",
-    "jogo": "Inglaterra x Ucrânia",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785883200097
-   },
-   "iniciadoEm": 1785883200097
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785876417597,
    "premier": 1785880794595,
-   "euro": 1785878519398,
+   "euro": 1785883678192,
    "super": 1785875877195
   },
   "dias": {
@@ -3210,13 +3187,13 @@
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
-   "2026-08-04": 4.3
+   "2026-08-04": 5.5
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.05",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
