@@ -279,13 +279,19 @@
   }
  },
  "o25": {
-  "saldo": -143.6,
-  "ciclos": 971,
-  "greens": 606,
+  "saldo": -142.2,
+  "ciclos": 972,
+  "greens": 607,
   "redsCiclo": 155,
   "aborts": 0,
   "descartes": 210,
   "historico": [
+   {
+    "quando": "2026-08-04T18:58:56.294Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "euro · Ucrânia x Dinamarca @2.4 (tiro 1) · gatilho: seq GGGRG"
+   },
    {
     "quando": "2026-08-04T18:20:41.699Z",
     "resultado": "GREEN",
@@ -3103,43 +3109,14 @@
   ],
   "consumidas": {
    "copa": 1785866640398,
-   "premier": 1785867641592
+   "premier": 1785867641592,
+   "euro": 1785869936097
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "19:56",
-     "jogo": "Ucrânia x Dinamarca",
-     "odd": 2.4
-    },
-    {
-     "h": "19:59",
-     "jogo": "Países Baixos x Hungria",
-     "odd": 2.2
-    },
-    {
-     "h": "20:02",
-     "jogo": "Polônia x Albânia",
-     "odd": 2.87
-    }
-   ],
-   "gatilho": "seq GGGRG",
-   "alvo": {
-    "h": "19:56",
-    "jogo": "Ucrânia x Dinamarca",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1785869635797
-   },
-   "iniciadoEm": 1785869635797
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785866640398,
    "premier": 1785867641592,
-   "euro": 1785865259601,
+   "euro": 1785869936097,
    "super": 1785863380598
   },
   "dias": {
@@ -3163,7 +3140,7 @@
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
-   "2026-08-04": 2.5
+   "2026-08-04": 3.9
   },
   "_gatilhoAtual": {
    "tipo": "seq",
