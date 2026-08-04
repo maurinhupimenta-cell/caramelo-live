@@ -2939,7 +2939,37 @@
    "premier": 1785812025156,
    "super": 1785814436160
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:43",
+     "jogo": "Equador x Brasil",
+     "odd": 2.15
+    },
+    {
+     "h": "04:46",
+     "jogo": "África do Sul x Escócia",
+     "odd": 2.75
+    },
+    {
+     "h": "04:49",
+     "jogo": "Suécia x Japão",
+     "odd": 2.7
+    }
+   ],
+   "gatilho": "seq GRRR",
+   "alvo": {
+    "h": "04:43",
+    "jogo": "Equador x Brasil",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785815257156
+   },
+   "iniciadoEm": 1785815257156
+  },
   "cooldown": {
    "copa": 1785811617659,
    "premier": 1785812025156,
@@ -2970,9 +3000,9 @@
    "2026-08-04": 1.3
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "1-0 / 0-1",
-   "n": 17,
+   "tipo": "seq",
+   "chave": "GRRR",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
