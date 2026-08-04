@@ -3168,13 +3168,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -67.5,
-  "ciclos": 981,
-  "greens": 671,
+  "saldo": -66.7,
+  "ciclos": 982,
+  "greens": 672,
   "redsCiclo": 107,
   "aborts": 0,
   "descartes": 203,
   "historico": [
+   {
+    "quando": "2026-08-04T20:10:59.792Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "super · Agua Branca x Buenos Aires @1.83 (tiro 1) · gatilho: coluna :10"
+   },
    {
     "quando": "2026-08-04T19:55:58.896Z",
     "resultado": "GREEN",
@@ -5825,42 +5831,13 @@
   "consumidas": {
    "premier": 1785871615199,
    "euro": 1785872222902,
-   "copa": 1785873358701
+   "copa": 1785873358701,
+   "super": 1785874259595
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:07",
-     "jogo": "Agua Branca x Buenos Aires",
-     "odd": 1.83
-    },
-    {
-     "h": "21:10",
-     "jogo": "Montevideo x Lima",
-     "odd": 1.85
-    },
-    {
-     "h": "21:13",
-     "jogo": "Belo Horizonte x Sao Paulo",
-     "odd": 1.83
-    }
-   ],
-   "gatilho": "coluna :10",
-   "alvo": {
-    "h": "21:07",
-    "jogo": "Agua Branca x Buenos Aires",
-    "odd": 1.83,
-    "unidades": 1,
-    "desde": 1785873598093
-   },
-   "iniciadoEm": 1785873598093
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785872222902,
-   "super": 1785868080298,
+   "super": 1785874259595,
    "premier": 1785871615199,
    "copa": 1785873358701
   },
@@ -5884,13 +5861,13 @@
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
-   "2026-08-04": -0.2
+   "2026-08-04": 0.6
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":10",
    "n": 21,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
