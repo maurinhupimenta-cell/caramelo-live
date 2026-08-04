@@ -279,13 +279,19 @@
   }
  },
  "o25": {
-  "saldo": -138.5,
-  "ciclos": 975,
+  "saldo": -145.5,
+  "ciclos": 976,
   "greens": 609,
-  "redsCiclo": 155,
+  "redsCiclo": 156,
   "aborts": 0,
   "descartes": 211,
   "historico": [
+   {
+    "quando": "2026-08-04T20:37:57.394Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: seq GGRGR"
+   },
    {
     "quando": "2026-08-04T19:56:49.797Z",
     "resultado": "GREEN",
@@ -3126,59 +3132,15 @@
    }
   ],
   "consumidas": {
-   "copa": 1785872277091,
-   "premier": 1785873409600
+   "premier": 1785873409600,
+   "super": 1785875877195
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "21:22",
-     "jogo": "Quito x Rio de Janeiro",
-     "odd": 2.25
-    },
-    {
-     "h": "21:25",
-     "jogo": "Medellin x Guayaquil",
-     "odd": 2.25
-    },
-    {
-     "h": "21:28",
-     "jogo": "Porto Alegre x Quito",
-     "odd": 2.62
-    }
-   ],
-   "gatilho": "seq GGRGR",
-   "alvo": {
-    "h": "21:28",
-    "jogo": "Porto Alegre x Quito",
-    "odd": 2.62,
-    "unidades": 4,
-    "desde": 1785875282300
-   },
-   "iniciadoEm": 1785874800891,
-   "tiros": [
-    {
-     "h": "21:22",
-     "jogo": "Quito x Rio de Janeiro",
-     "odd": 2.25,
-     "unidades": 1
-    },
-    {
-     "h": "21:25",
-     "jogo": "Medellin x Guayaquil",
-     "odd": 2.25,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785872277091,
    "premier": 1785873409600,
    "euro": 1785869936097,
-   "super": 1785863380598
+   "super": 1785875877195
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -3201,12 +3163,12 @@
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
-   "2026-08-04": 7.6
+   "2026-08-04": 0.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRGR",
-   "n": 11,
+   "tipo": "time",
+   "chave": "Portugal",
+   "n": 16,
    "start": 1
   },
   "_obs": {}
