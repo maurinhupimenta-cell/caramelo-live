@@ -2885,10 +2885,39 @@
    }
   ],
   "consumidas": {
-   "super": 1785806337065,
    "copa": 1785807602658
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:19",
+     "jogo": "Belo Horizonte x Porto Alegre",
+     "odd": 2.45
+    },
+    {
+     "h": "03:22",
+     "jogo": "Lima x Agua Branca",
+     "odd": 2.05
+    },
+    {
+     "h": "03:25",
+     "jogo": "Asuncion x Santiago",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "placar 1-0 / 0-1",
+   "alvo": {
+    "h": "03:19",
+    "jogo": "Belo Horizonte x Porto Alegre",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1785809938265
+   },
+   "iniciadoEm": 1785809938265
+  },
   "cooldown": {
    "copa": 1785807602658,
    "premier": 1785789527666,
@@ -2918,9 +2947,9 @@
    "2026-08-03": 34.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.2",
-   "n": 8,
+   "tipo": "placar",
+   "chave": "1-0 / 0-1",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
