@@ -3046,8 +3046,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "16:37",
@@ -3067,13 +3067,21 @@
    ],
    "gatilho": "time Escócia",
    "alvo": {
-    "h": "16:37",
-    "jogo": "Uruguai x Turquia",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785857488096
+    "h": "16:40",
+    "jogo": "Canadá x Escócia",
+    "odd": 2.7,
+    "unidades": 2,
+    "desde": 1785858001097
    },
-   "iniciadoEm": 1785857488096
+   "iniciadoEm": 1785857488096,
+   "tiros": [
+    {
+     "h": "16:37",
+     "jogo": "Uruguai x Turquia",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785850738993,
@@ -3108,7 +3116,7 @@
    "tipo": "time",
    "chave": "Escócia",
    "n": 15,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
