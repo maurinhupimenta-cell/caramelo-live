@@ -3079,7 +3079,7 @@
    "tipo": "time",
    "chave": "Escócia",
    "n": 14,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
@@ -5643,8 +5643,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "16:06",
@@ -5664,13 +5664,21 @@
    ],
    "gatilho": "seq GRGGR",
    "alvo": {
-    "h": "16:06",
-    "jogo": "Wolverhampton x Chelsea",
+    "h": "16:09",
+    "jogo": "Burnley x City",
     "odd": 1.85,
-    "unidades": 1,
-    "desde": 1785855778601
+    "unidades": 2,
+    "desde": 1785856125399
    },
-   "iniciadoEm": 1785855778601
+   "iniciadoEm": 1785855778601,
+   "tiros": [
+    {
+     "h": "16:06",
+     "jogo": "Wolverhampton x Chelsea",
+     "odd": 1.85,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785853018501,
