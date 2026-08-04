@@ -3050,13 +3050,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -76.5,
-  "ciclos": 962,
-  "greens": 655,
+  "saldo": -75.5,
+  "ciclos": 963,
+  "greens": 656,
   "redsCiclo": 106,
   "aborts": 0,
   "descartes": 201,
   "historico": [
+   {
+    "quando": "2026-08-04T14:24:58.798Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Portugal x Curação @1.95 (tiro 1) · gatilho: time França"
+   },
    {
     "quando": "2026-08-04T14:16:58.790Z",
     "resultado": "RED_CICLO",
@@ -5593,44 +5599,15 @@
   "consumidas": {
    "super": 1785850080699,
    "premier": 1785851109397,
-   "euro": 1785853018501
+   "euro": 1785853018501,
+   "copa": 1785853498601
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:16",
-     "jogo": "Portugal x Curação",
-     "odd": 1.95
-    },
-    {
-     "h": "15:19",
-     "jogo": "França x Tunísia",
-     "odd": 2.2
-    },
-    {
-     "h": "15:22",
-     "jogo": "Uzbequistão x Marrocos",
-     "odd": 2
-    }
-   ],
-   "gatilho": "time França",
-   "alvo": {
-    "h": "15:16",
-    "jogo": "Portugal x Curação",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1785853020593
-   },
-   "iniciadoEm": 1785853020593
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785853018501,
    "super": 1785850080699,
    "premier": 1785851109397,
-   "copa": 1785849179590
+   "copa": 1785853498601
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -5652,13 +5629,13 @@
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
-   "2026-08-04": -9.2
+   "2026-08-04": -8.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Jordânia",
    "n": 17,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
