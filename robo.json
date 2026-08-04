@@ -3099,7 +3099,37 @@
    "euro": 1785865259601,
    "copa": 1785866640398
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:18",
+     "jogo": "Everton x Tottenham",
+     "odd": 2.35
+    },
+    {
+     "h": "19:21",
+     "jogo": "Islington x Wolverhampton",
+     "odd": 2.07
+    },
+    {
+     "h": "19:24",
+     "jogo": "Brentford x United",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "seq GRGG",
+   "alvo": {
+    "h": "19:18",
+    "jogo": "Everton x Tottenham",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1785867290700
+   },
+   "iniciadoEm": 1785867290700
+  },
   "cooldown": {
    "copa": 1785866640398,
    "premier": 1785862778601,
@@ -3130,10 +3160,10 @@
    "2026-08-04": 1.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Escócia",
-   "n": 19,
-   "start": 2
+   "tipo": "seq",
+   "chave": "GRGG",
+   "n": 16,
+   "start": 1
   },
   "_obs": {}
  },
