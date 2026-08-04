@@ -3118,8 +3118,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "20:31",
@@ -3139,13 +3139,21 @@
    ],
    "gatilho": "time Portugal",
    "alvo": {
-    "h": "20:31",
-    "jogo": "Áustria x Nova Zelândia",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785871378995
+    "h": "20:34",
+    "jogo": "Portugal x França",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1785872036591
    },
-   "iniciadoEm": 1785871378995
+   "iniciadoEm": 1785871378995,
+   "tiros": [
+    {
+     "h": "20:31",
+     "jogo": "Áustria x Nova Zelândia",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785866640398,
@@ -3177,9 +3185,9 @@
    "2026-08-04": 3.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGG",
-   "n": 18,
+   "tipo": "time",
+   "chave": "Portugal",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
@@ -5890,10 +5898,10 @@
    "2026-08-04": -2.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":35",
-   "n": 20,
-   "start": 2
+   "tipo": "time",
+   "chave": "França",
+   "n": 18,
+   "start": 1
   },
   "_obs": {}
  }
