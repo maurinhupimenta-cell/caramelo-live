@@ -279,13 +279,19 @@
   }
  },
  "o25": {
-  "saldo": -139.5,
-  "ciclos": 954,
+  "saldo": -146.5,
+  "ciclos": 955,
   "greens": 597,
-  "redsCiclo": 152,
+  "redsCiclo": 153,
   "aborts": 0,
   "descartes": 205,
   "historico": [
+   {
+    "quando": "2026-08-04T14:21:35.196Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq RRRGG"
+   },
    {
     "quando": "2026-08-04T13:49:30.397Z",
     "resultado": "RED_CICLO",
@@ -3002,56 +3008,13 @@
   "consumidas": {
    "euro": 1785850320995,
    "copa": 1785850738993,
-   "super": 1785851370201
+   "super": 1785851370201,
+   "premier": 1785853294999
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "15:12",
-     "jogo": "Liverpool x City",
-     "odd": 2.07
-    },
-    {
-     "h": "15:15",
-     "jogo": "Newcastle x Tottenham",
-     "odd": 2.25
-    },
-    {
-     "h": "15:18",
-     "jogo": "Brighton x Islington",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "seq RRRGG",
-   "alvo": {
-    "h": "15:18",
-    "jogo": "Brighton x Islington",
-    "odd": 2.05,
-    "unidades": 4,
-    "desde": 1785853219496
-   },
-   "iniciadoEm": 1785852533690,
-   "tiros": [
-    {
-     "h": "15:12",
-     "jogo": "Liverpool x City",
-     "odd": 2.07,
-     "unidades": 1
-    },
-    {
-     "h": "15:15",
-     "jogo": "Newcastle x Tottenham",
-     "odd": 2.25,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785850738993,
-   "premier": 1785820377165,
+   "premier": 1785853294999,
    "euro": 1785850320995,
    "super": 1785851370201
   },
@@ -3076,7 +3039,7 @@
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
-   "2026-08-04": 6.6
+   "2026-08-04": -0.4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
