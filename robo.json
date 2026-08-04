@@ -3060,8 +3060,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:11",
@@ -3081,13 +3081,21 @@
    ],
    "gatilho": "seq GGGRG",
    "alvo": {
-    "h": "17:11",
-    "jogo": "Polônia x Áustria",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1785859676198
+    "h": "17:14",
+    "jogo": "Albânia x Espanha",
+    "odd": 2.4,
+    "unidades": 2,
+    "desde": 1785860219993
    },
-   "iniciadoEm": 1785859676198
+   "iniciadoEm": 1785859676198,
+   "tiros": [
+    {
+     "h": "17:11",
+     "jogo": "Polônia x Áustria",
+     "odd": 2.5,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785858238891,
@@ -5720,7 +5728,37 @@
    "copa": 1785857542891,
    "super": 1785859077702
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:21",
+     "jogo": "United x Chelsea",
+     "odd": 1.95
+    },
+    {
+     "h": "17:24",
+     "jogo": "Everton x Leeds",
+     "odd": 2.07
+    },
+    {
+     "h": "17:27",
+     "jogo": "City x Tottenham",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "coluna :24",
+   "alvo": {
+    "h": "17:21",
+    "jogo": "United x Chelsea",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1785860090598
+   },
+   "iniciadoEm": 1785860090598
+  },
   "cooldown": {
    "euro": 1785857457995,
    "super": 1785859077702,
@@ -5751,9 +5789,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":10",
+   "chave": ":24",
    "n": 17,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
