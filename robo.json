@@ -3109,13 +3109,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -81.8,
-  "ciclos": 966,
-  "greens": 657,
+  "saldo": -81,
+  "ciclos": 967,
+  "greens": 658,
   "redsCiclo": 107,
   "aborts": 0,
   "descartes": 202,
   "historico": [
+   {
+    "quando": "2026-08-04T15:30:58.490Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "euro · Suíça x Espanha @1.8 (tiro 1) · gatilho: time Eslovênia"
+   },
    {
     "quando": "2026-08-04T15:17:00.292Z",
     "resultado": "GREEN_OBS",
@@ -5675,41 +5681,42 @@
   ],
   "consumidas": {
    "super": 1785854699700,
-   "premier": 1785856488699
+   "premier": 1785856488699,
+   "euro": 1785857457995
   },
   "ciclo": {
-   "liga": "euro",
+   "liga": "copa",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "16:23",
-     "jogo": "Suíça x Espanha",
-     "odd": 1.8
+     "h": "16:28",
+     "jogo": "Qatar x República Tcheca",
+     "odd": 2.05
     },
     {
-     "h": "16:26",
-     "jogo": "República Tcheca x Eslovênia",
-     "odd": 2.4
+     "h": "16:31",
+     "jogo": "Argentina x EUA",
+     "odd": 1.9
     },
     {
-     "h": "16:29",
-     "jogo": "Suíça x Áustria",
-     "odd": 1.93
+     "h": "16:34",
+     "jogo": "Croácia x Paraguai",
+     "odd": 2.15
     }
    ],
-   "gatilho": "time Eslovênia",
+   "gatilho": "time Argentina",
    "alvo": {
-    "h": "16:23",
-    "jogo": "Suíça x Espanha",
-    "odd": 1.8,
+    "h": "16:28",
+    "jogo": "Qatar x República Tcheca",
+    "odd": 2.05,
     "unidades": 1,
-    "desde": 1785856622099
+    "desde": 1785857460795
    },
-   "iniciadoEm": 1785856622099
+   "iniciadoEm": 1785857460795
   },
   "cooldown": {
-   "euro": 1785853018501,
+   "euro": 1785857457995,
    "super": 1785854699700,
    "premier": 1785856488699,
    "copa": 1785853498601
@@ -5734,13 +5741,13 @@
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
-   "2026-08-04": -14.5
+   "2026-08-04": -13.7
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Argentina",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
