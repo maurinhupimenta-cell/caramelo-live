@@ -279,13 +279,19 @@
   }
  },
  "o25": {
-  "saldo": -145,
-  "ciclos": 970,
-  "greens": 605,
+  "saldo": -143.6,
+  "ciclos": 971,
+  "greens": 606,
   "redsCiclo": 155,
   "aborts": 0,
   "descartes": 210,
   "historico": [
+   {
+    "quando": "2026-08-04T18:20:41.699Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "premier · Everton x Tottenham @2.35 (tiro 1) · gatilho: seq GRGG"
+   },
    {
     "quando": "2026-08-04T18:04:00.595Z",
     "resultado": "RED_CICLO",
@@ -3097,42 +3103,13 @@
   ],
   "consumidas": {
    "euro": 1785865259601,
-   "copa": 1785866640398
+   "copa": 1785866640398,
+   "premier": 1785867641592
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "19:18",
-     "jogo": "Everton x Tottenham",
-     "odd": 2.35
-    },
-    {
-     "h": "19:21",
-     "jogo": "Islington x Wolverhampton",
-     "odd": 2.07
-    },
-    {
-     "h": "19:24",
-     "jogo": "Brentford x United",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "seq GRGG",
-   "alvo": {
-    "h": "19:18",
-    "jogo": "Everton x Tottenham",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1785867290700
-   },
-   "iniciadoEm": 1785867290700
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785866640398,
-   "premier": 1785862778601,
+   "premier": 1785867641592,
    "euro": 1785865259601,
    "super": 1785863380598
   },
@@ -3157,7 +3134,7 @@
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
-   "2026-08-04": 1.1
+   "2026-08-04": 2.5
   },
   "_gatilhoAtual": {
    "tipo": "seq",
