@@ -5699,8 +5699,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:21",
@@ -5720,13 +5720,21 @@
    ],
    "gatilho": "coluna :24",
    "alvo": {
-    "h": "17:21",
-    "jogo": "United x Chelsea",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1785860090598
+    "h": "17:24",
+    "jogo": "Everton x Leeds",
+    "odd": 2.07,
+    "unidades": 2,
+    "desde": 1785860627600
    },
-   "iniciadoEm": 1785860090598
+   "iniciadoEm": 1785860090598,
+   "tiros": [
+    {
+     "h": "17:21",
+     "jogo": "United x Chelsea",
+     "odd": 1.95,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785857457995,
@@ -5757,9 +5765,9 @@
    "2026-08-04": -12.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGGR",
-   "n": 10,
+   "tipo": "coluna",
+   "chave": ":27",
+   "n": 17,
    "start": 1
   },
   "_obs": {}
