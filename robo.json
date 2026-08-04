@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -186.3,
-  "ciclos": 192,
-  "greens": 62,
+  "saldo": -180.3,
+  "ciclos": 193,
+  "greens": 63,
   "redsCiclo": 82,
   "aborts": 0,
   "descartes": 48,
   "historico": [
+   {
+    "quando": "2026-08-04T03:35:47.359Z",
+    "resultado": "GREEN",
+    "unidades": 6,
+    "detalhe": "premier · Aston x United @4.5 (tiro 2) · gatilho: time Aston"
+   },
    {
     "quando": "2026-08-04T03:20:51.868Z",
     "resultado": "GREEN_OBS",
@@ -224,49 +230,13 @@
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "04:30",
-     "jogo": "West Ham x Burnley",
-     "odd": 4.75
-    },
-    {
-     "h": "04:33",
-     "jogo": "Aston x United",
-     "odd": 4.5
-    },
-    {
-     "h": "04:36",
-     "jogo": "Burnley x West Ham",
-     "odd": 5
-    }
-   ],
-   "gatilho": "time Aston",
-   "alvo": {
-    "h": "04:33",
-    "jogo": "Aston x United",
-    "odd": 4.5,
-    "unidades": 2,
-    "desde": 1785814362061
-   },
-   "iniciadoEm": 1785813657154,
-   "tiros": [
-    {
-     "h": "04:30",
-     "jogo": "West Ham x Burnley",
-     "odd": 4.75,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "premier": 1785814547158
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785688526966,
-   "premier": 1785572086662,
+   "premier": 1785814547158,
    "euro": 1785464913993,
    "super": 1784965764803
   },
@@ -285,7 +255,7 @@
    "2026-07-30": -14,
    "2026-08-01": -7,
    "2026-08-02": -7,
-   "2026-08-04": 0
+   "2026-08-04": 6
   },
   "_gatilhoAtual": {
    "tipo": "time",
