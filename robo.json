@@ -3123,7 +3123,37 @@
    "euro": 1785869936097,
    "copa": 1785872277091
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:48",
+     "jogo": "Southampton x Tottenham",
+     "odd": 2.55
+    },
+    {
+     "h": "20:51",
+     "jogo": "Burnley x Brighton",
+     "odd": 2
+    },
+    {
+     "h": "20:54",
+     "jogo": "Chelsea x Aston",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "seq RRRGG",
+   "alvo": {
+    "h": "20:48",
+    "jogo": "Southampton x Tottenham",
+    "odd": 2.55,
+    "unidades": 1,
+    "desde": 1785872683190
+   },
+   "iniciadoEm": 1785872683190
+  },
   "cooldown": {
    "copa": 1785872277091,
    "premier": 1785867641592,
@@ -3154,9 +3184,9 @@
    "2026-08-04": 5.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Portugal",
-   "n": 15,
+   "tipo": "seq",
+   "chave": "RRRGG",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
@@ -5814,7 +5844,37 @@
    "premier": 1785871615199,
    "euro": 1785872222902
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:46",
+     "jogo": "Espanha x África do Sul",
+     "odd": 2.1
+    },
+    {
+     "h": "20:49",
+     "jogo": "Bósnia e Herzegovina x RD Congo",
+     "odd": 1.85
+    },
+    {
+     "h": "20:52",
+     "jogo": "Egito x República Tcheca",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "odd 1.85",
+   "alvo": {
+    "h": "20:46",
+    "jogo": "Espanha x África do Sul",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785872277292
+   },
+   "iniciadoEm": 1785872277292
+  },
   "cooldown": {
    "euro": 1785872222902,
    "super": 1785868080298,
@@ -5844,9 +5904,9 @@
    "2026-08-04": -1.1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":38",
-   "n": 20,
+   "tipo": "odd",
+   "chave": "1.85",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
