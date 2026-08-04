@@ -279,13 +279,19 @@
   }
  },
  "o25": {
-  "saldo": -143.1,
-  "ciclos": 965,
-  "greens": 602,
+  "saldo": -141.8,
+  "ciclos": 966,
+  "greens": 603,
   "redsCiclo": 154,
   "aborts": 0,
   "descartes": 209,
   "historico": [
+   {
+    "quando": "2026-08-04T16:59:38.796Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "premier · City x Watford @2.15 (tiro 2) · gatilho: seq GRGG"
+   },
    {
     "quando": "2026-08-04T16:49:01.695Z",
     "resultado": "GREEN",
@@ -3067,50 +3073,13 @@
   ],
   "consumidas": {
    "euro": 1785860397800,
-   "copa": 1785862141491
+   "copa": 1785862141491,
+   "premier": 1785862778601
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:54",
-     "jogo": "Chelsea x Leeds",
-     "odd": 2.5
-    },
-    {
-     "h": "17:57",
-     "jogo": "City x Watford",
-     "odd": 2.15
-    },
-    {
-     "h": "18:00",
-     "jogo": "Islington x United",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "seq GRGG",
-   "alvo": {
-    "h": "17:57",
-    "jogo": "City x Watford",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1785862607601
-   },
-   "iniciadoEm": 1785862249900,
-   "tiros": [
-    {
-     "h": "17:54",
-     "jogo": "Chelsea x Leeds",
-     "odd": 2.5,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785862141491,
-   "premier": 1785858644495,
+   "premier": 1785862778601,
    "euro": 1785860397800,
    "super": 1785857486097
   },
@@ -3135,7 +3104,7 @@
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
-   "2026-08-04": 3
+   "2026-08-04": 4.3
   },
   "_gatilhoAtual": {
    "tipo": "seq",
