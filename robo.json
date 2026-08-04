@@ -279,13 +279,19 @@
   }
  },
  "o25": {
-  "saldo": -141.8,
-  "ciclos": 967,
-  "greens": 603,
+  "saldo": -140.4,
+  "ciclos": 968,
+  "greens": 604,
   "redsCiclo": 154,
   "aborts": 0,
   "descartes": 210,
   "historico": [
+   {
+    "quando": "2026-08-04T17:09:40.701Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "super · Belo Horizonte x La Plata @2.37 (tiro 1) · gatilho: seq RRGRG"
+   },
    {
     "quando": "2026-08-04T17:05:00.601Z",
     "resultado": "GREEN_OBS",
@@ -3080,44 +3086,15 @@
   "consumidas": {
    "euro": 1785860397800,
    "copa": 1785862141491,
-   "premier": 1785862778601
+   "premier": 1785862778601,
+   "super": 1785863380598
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:07",
-     "jogo": "Belo Horizonte x La Plata",
-     "odd": 2.37
-    },
-    {
-     "h": "18:10",
-     "jogo": "Montevideo x Sao Paulo",
-     "odd": 2
-    },
-    {
-     "h": "18:13",
-     "jogo": "Avellaneda x Penarol",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "seq RRGRG",
-   "alvo": {
-    "h": "18:07",
-    "jogo": "Belo Horizonte x La Plata",
-    "odd": 2.37,
-    "unidades": 1,
-    "desde": 1785863130400
-   },
-   "iniciadoEm": 1785863130400
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785862141491,
    "premier": 1785862778601,
    "euro": 1785860397800,
-   "super": 1785857486097
+   "super": 1785863380598
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -3140,7 +3117,7 @@
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
-   "2026-08-04": 4.3
+   "2026-08-04": 5.7
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -5822,9 +5799,9 @@
    "2026-08-04": -8.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGGG",
-   "n": 8,
+   "tipo": "coluna",
+   "chave": ":10",
+   "n": 18,
    "start": 1
   },
   "_obs": {}
