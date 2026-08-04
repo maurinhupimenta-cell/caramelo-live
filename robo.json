@@ -3145,13 +3145,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -71.6,
-  "ciclos": 977,
-  "greens": 667,
+  "saldo": -70.6,
+  "ciclos": 978,
+  "greens": 668,
   "redsCiclo": 107,
   "aborts": 0,
   "descartes": 203,
   "historico": [
+   {
+    "quando": "2026-08-04T18:28:00.495Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Medellin x Quito @2.05 (tiro 1) · gatilho: seq RRGGR"
+   },
    {
     "quando": "2026-08-04T18:17:39.498Z",
     "resultado": "GREEN",
@@ -5778,42 +5784,13 @@
   "consumidas": {
    "euro": 1785865804791,
    "copa": 1785867059498,
-   "premier": 1785867459293
+   "premier": 1785867459293,
+   "super": 1785868080298
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "19:25",
-     "jogo": "Medellin x Quito",
-     "odd": 2.05
-    },
-    {
-     "h": "19:28",
-     "jogo": "Montevideo x Belo Horizonte",
-     "odd": 1.85
-    },
-    {
-     "h": "19:31",
-     "jogo": "La Boca x Santos",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "seq RRGGR",
-   "alvo": {
-    "h": "19:25",
-    "jogo": "Medellin x Quito",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785867782290
-   },
-   "iniciadoEm": 1785867782290
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785865804791,
-   "super": 1785863586601,
+   "super": 1785868080298,
    "premier": 1785867459293,
    "copa": 1785867059498
   },
@@ -5837,7 +5814,7 @@
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
-   "2026-08-04": -4.3
+   "2026-08-04": -3.3
   },
   "_gatilhoAtual": {
    "tipo": "seq",
