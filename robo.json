@@ -280,12 +280,18 @@
  },
  "o25": {
   "saldo": -144.7,
-  "ciclos": 958,
+  "ciclos": 959,
   "greens": 598,
   "redsCiclo": 153,
   "aborts": 0,
-  "descartes": 207,
+  "descartes": 208,
   "historico": [
+   {
+    "quando": "2026-08-04T15:31:24.097Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Escócia) — liga REARMADA"
+   },
    {
     "quando": "2026-08-04T15:17:58.892Z",
     "resultado": "GREEN_OBS",
@@ -3106,7 +3112,12 @@
    "n": 21,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1785857484097,
+    "gatilho": "time Escócia"
+   }
+  }
  },
  "ambas": {
   "saldo": -81,
