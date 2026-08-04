@@ -2936,7 +2936,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1785811617659,
    "premier": 1785812025156,
    "super": 1785814436160
   },
@@ -5480,7 +5479,37 @@
   "consumidas": {
    "euro": 1785812696354
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:43",
+     "jogo": "Equador x Brasil",
+     "odd": 1.87
+    },
+    {
+     "h": "04:46",
+     "jogo": "África do Sul x Escócia",
+     "odd": 2.25
+    },
+    {
+     "h": "04:49",
+     "jogo": "Suécia x Japão",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-0)",
+   "alvo": {
+    "h": "04:43",
+    "jogo": "Equador x Brasil",
+    "odd": 1.87,
+    "unidades": 1,
+    "desde": 1785814802159
+   },
+   "iniciadoEm": 1785814802159
+  },
   "cooldown": {
    "euro": 1785812696354,
    "super": 1785796197968,
@@ -5512,7 +5541,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "acima de 1-0 (2-0)",
-   "n": 8,
+   "n": 12,
    "start": 1
   },
   "_obs": {}
