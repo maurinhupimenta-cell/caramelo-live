@@ -3131,20 +3131,26 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRGG",
-   "n": 15,
+   "chave": "GRGGR",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -77.5,
-  "ciclos": 972,
-  "greens": 662,
+  "saldo": -76.1,
+  "ciclos": 973,
+  "greens": 663,
   "redsCiclo": 107,
   "aborts": 0,
   "descartes": 203,
   "historico": [
+   {
+    "quando": "2026-08-04T16:54:59.996Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "copa · Escócia x Tunísia @2.35 (tiro 1) · gatilho: odd 1.85"
+   },
    {
     "quando": "2026-08-04T16:37:58.495Z",
     "resultado": "GREEN",
@@ -5741,44 +5747,15 @@
   "consumidas": {
    "super": 1785859077702,
    "premier": 1785861035193,
-   "euro": 1785861478297
+   "euro": 1785861478297,
+   "copa": 1785862499799
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:52",
-     "jogo": "Escócia x Tunísia",
-     "odd": 2.35
-    },
-    {
-     "h": "17:55",
-     "jogo": "RD Congo x Equador",
-     "odd": 1.85
-    },
-    {
-     "h": "17:58",
-     "jogo": "Arábia Saudita x Haiti",
-     "odd": 1.86
-    }
-   ],
-   "gatilho": "odd 1.85",
-   "alvo": {
-    "h": "17:52",
-    "jogo": "Escócia x Tunísia",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1785862024297
-   },
-   "iniciadoEm": 1785862024297
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785861478297,
    "super": 1785859077702,
    "premier": 1785861035193,
-   "copa": 1785857542891
+   "copa": 1785862499799
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -5800,7 +5777,7 @@
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
-   "2026-08-04": -10.2
+   "2026-08-04": -8.8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
