@@ -225,7 +225,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:30",
+     "jogo": "West Ham x Burnley",
+     "odd": 4.75
+    },
+    {
+     "h": "04:33",
+     "jogo": "Aston x United",
+     "odd": 4.5
+    },
+    {
+     "h": "04:36",
+     "jogo": "Burnley x West Ham",
+     "odd": 5
+    }
+   ],
+   "gatilho": "time Aston",
+   "alvo": {
+    "h": "04:30",
+    "jogo": "West Ham x Burnley",
+    "odd": 4.75,
+    "unidades": 1,
+    "desde": 1785813657154
+   },
+   "iniciadoEm": 1785813657154
+  },
   "cooldown": {
    "copa": 1785688526966,
    "premier": 1785572086662,
@@ -250,10 +280,10 @@
    "2026-08-04": 0
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "5",
+   "tipo": "time",
+   "chave": "Aston",
    "n": 8,
-   "start": 2
+   "start": 3
   },
   "_obs": {
    "euro": {
@@ -263,10 +293,6 @@
    "copa": {
     "desde": 1785692695865,
     "gatilho": "odd 4"
-   },
-   "premier": {
-    "desde": 1785813651867,
-    "gatilho": "time Aston"
    }
   }
  },
