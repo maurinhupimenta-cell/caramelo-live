@@ -5787,10 +5787,39 @@
    }
   ],
   "consumidas": {
-   "premier": 1785867459293,
    "super": 1785868080298
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:24",
+     "jogo": "Leeds x Wolverhampton",
+     "odd": 2
+    },
+    {
+     "h": "20:27",
+     "jogo": "Brentford x Liverpool",
+     "odd": 1.98
+    },
+    {
+     "h": "20:30",
+     "jogo": "Palace x Chelsea",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "coluna :27",
+   "alvo": {
+    "h": "20:24",
+    "jogo": "Leeds x Wolverhampton",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1785871066693
+   },
+   "iniciadoEm": 1785871066693
+  },
   "cooldown": {
    "euro": 1785865804791,
    "super": 1785868080298,
@@ -5820,10 +5849,10 @@
    "2026-08-04": -3.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGGR",
-   "n": 10,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":27",
+   "n": 20,
+   "start": 2
   },
   "_obs": {}
  }
