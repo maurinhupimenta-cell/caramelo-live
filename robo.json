@@ -3210,13 +3210,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -65.9,
-  "ciclos": 983,
+  "saldo": -72.9,
+  "ciclos": 984,
   "greens": 673,
-  "redsCiclo": 107,
+  "redsCiclo": 108,
   "aborts": 0,
   "descartes": 203,
   "historico": [
+   {
+    "quando": "2026-08-04T21:21:57.398Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: coluna :10"
+   },
    {
     "quando": "2026-08-04T20:30:26.193Z",
     "resultado": "GREEN",
@@ -5877,56 +5883,13 @@
    }
   ],
   "consumidas": {
-   "premier": 1785875425993
+   "premier": 1785875425993,
+   "super": 1785878517201
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "22:10",
-     "jogo": "Agua Branca x Sao Paulo",
-     "odd": 1.83
-    },
-    {
-     "h": "22:13",
-     "jogo": "Santos x Asuncion",
-     "odd": 2.1
-    },
-    {
-     "h": "22:16",
-     "jogo": "Belo Horizonte x Avellaneda",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "coluna :10",
-   "alvo": {
-    "h": "22:16",
-    "jogo": "Belo Horizonte x Avellaneda",
-    "odd": 1.95,
-    "unidades": 4,
-    "desde": 1785878219595
-   },
-   "iniciadoEm": 1785877859792,
-   "tiros": [
-    {
-     "h": "22:10",
-     "jogo": "Agua Branca x Sao Paulo",
-     "odd": 1.83,
-     "unidades": 1
-    },
-    {
-     "h": "22:13",
-     "jogo": "Santos x Asuncion",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785872222902,
-   "super": 1785874259595,
+   "super": 1785878517201,
    "premier": 1785875425993,
    "copa": 1785873358701
   },
@@ -5950,7 +5913,7 @@
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
-   "2026-08-04": 1.4
+   "2026-08-04": -5.6
   },
   "_gatilhoAtual": {
    "tipo": "seq",
