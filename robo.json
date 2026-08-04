@@ -3152,7 +3152,37 @@
   "consumidas": {
    "premier": 1785880794595
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:41",
+     "jogo": "Inglaterra x Ucrânia",
+     "odd": 2.15
+    },
+    {
+     "h": "23:44",
+     "jogo": "Polônia x Portugal",
+     "odd": 2.4
+    },
+    {
+     "h": "23:47",
+     "jogo": "Dinamarca x Suíça",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "seq GGGRG",
+   "alvo": {
+    "h": "23:41",
+    "jogo": "Inglaterra x Ucrânia",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785883200097
+   },
+   "iniciadoEm": 1785883200097
+  },
   "cooldown": {
    "copa": 1785876417597,
    "premier": 1785880794595,
@@ -3183,21 +3213,27 @@
    "2026-08-04": 4.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRGG",
-   "n": 15,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.05",
+   "n": 9,
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -71,
-  "ciclos": 986,
-  "greens": 675,
+  "saldo": -70.3,
+  "ciclos": 987,
+  "greens": 676,
   "redsCiclo": 108,
   "aborts": 0,
   "descartes": 203,
   "historico": [
+   {
+    "quando": "2026-08-04T22:40:00.498Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "euro · Países Baixos x Suíça @1.83 (tiro 2) · gatilho: coluna :35"
+   },
    {
     "quando": "2026-08-04T21:59:55.092Z",
     "resultado": "GREEN",
@@ -5876,49 +5912,42 @@
    }
   ],
   "consumidas": {
-   "premier": 1785880794894
+   "premier": 1785880794894,
+   "euro": 1785883200300
   },
   "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "23:32",
-     "jogo": "Inglaterra x Turquia",
-     "odd": 2.02
+     "h": "23:52",
+     "jogo": "RD Congo x Argélia",
+     "odd": 1.93
     },
     {
-     "h": "23:35",
-     "jogo": "Países Baixos x Suíça",
-     "odd": 1.83
+     "h": "23:55",
+     "jogo": "França x Noruega",
+     "odd": 1.9
     },
     {
-     "h": "23:38",
-     "jogo": "Sérvia x Hungria",
-     "odd": 2.15
+     "h": "23:58",
+     "jogo": "Gana x Egito",
+     "odd": 1.95
     }
    ],
-   "gatilho": "coluna :35",
+   "gatilho": "time França",
    "alvo": {
-    "h": "23:35",
-    "jogo": "Países Baixos x Suíça",
-    "odd": 1.83,
-    "unidades": 2,
-    "desde": 1785882895895
+    "h": "23:52",
+    "jogo": "RD Congo x Argélia",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1785883619798
    },
-   "iniciadoEm": 1785882478801,
-   "tiros": [
-    {
-     "h": "23:32",
-     "jogo": "Inglaterra x Turquia",
-     "odd": 2.02,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1785883619798
   },
   "cooldown": {
-   "euro": 1785872222902,
+   "euro": 1785883200300,
    "super": 1785878517201,
    "premier": 1785880794894,
    "copa": 1785879598002
@@ -5943,13 +5972,13 @@
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
-   "2026-08-04": -3.7
+   "2026-08-04": -3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":38",
+   "tipo": "time",
+   "chave": "França",
    "n": 23,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  }
