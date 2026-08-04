@@ -3051,7 +3051,37 @@
    "super": 1785857486097,
    "copa": 1785858238891
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:45",
+     "jogo": "Chelsea x Brentford",
+     "odd": 2.25
+    },
+    {
+     "h": "16:48",
+     "jogo": "Wolverhampton x Aston",
+     "odd": 2.2
+    },
+    {
+     "h": "16:51",
+     "jogo": "Southampton x Palace",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "seq GRGG",
+   "alvo": {
+    "h": "16:45",
+    "jogo": "Chelsea x Brentford",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785858241392
+   },
+   "iniciadoEm": 1785858241392
+  },
   "cooldown": {
    "copa": 1785858238891,
    "premier": 1785853294999,
@@ -5667,7 +5697,6 @@
    }
   ],
   "consumidas": {
-   "super": 1785854699700,
    "premier": 1785856488699,
    "euro": 1785857457995,
    "copa": 1785857542891
