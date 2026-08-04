@@ -275,13 +275,19 @@
   }
  },
  "o25": {
-  "saldo": -143.6,
-  "ciclos": 945,
-  "greens": 591,
+  "saldo": -139.4,
+  "ciclos": 946,
+  "greens": 592,
   "redsCiclo": 151,
   "aborts": 0,
   "descartes": 203,
   "historico": [
+   {
+    "quando": "2026-08-04T04:02:47.959Z",
+    "resultado": "GREEN",
+    "unidades": 4.2,
+    "detalhe": "premier · Tottenham x Leeds @2.8 (tiro 3) · gatilho: time Brighton"
+   },
    {
     "quando": "2026-08-04T03:47:39.957Z",
     "resultado": "GREEN",
@@ -2943,56 +2949,13 @@
   ],
   "consumidas": {
    "super": 1785814436160,
-   "copa": 1785815259762
+   "copa": 1785815259762,
+   "premier": 1785816167758
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:54",
-     "jogo": "Burnley x Everton",
-     "odd": 2.05
-    },
-    {
-     "h": "04:57",
-     "jogo": "Brighton x Brentford",
-     "odd": 2.1
-    },
-    {
-     "h": "05:00",
-     "jogo": "Tottenham x Leeds",
-     "odd": 2.8
-    }
-   ],
-   "gatilho": "time Brighton",
-   "alvo": {
-    "h": "05:00",
-    "jogo": "Tottenham x Leeds",
-    "odd": 2.8,
-    "unidades": 4,
-    "desde": 1785815983461
-   },
-   "iniciadoEm": 1785815636654,
-   "tiros": [
-    {
-     "h": "04:54",
-     "jogo": "Burnley x Everton",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "04:57",
-     "jogo": "Brighton x Brentford",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785815259762,
-   "premier": 1785812025156,
+   "premier": 1785816167758,
    "euro": 1785811196757,
    "super": 1785814436160
   },
@@ -3017,7 +2980,7 @@
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
-   "2026-08-04": 2.5
+   "2026-08-04": 6.7
   },
   "_gatilhoAtual": {
    "tipo": "time",
