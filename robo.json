@@ -3004,7 +3004,37 @@
    "copa": 1785850738993,
    "super": 1785851370201
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:12",
+     "jogo": "Liverpool x City",
+     "odd": 2.07
+    },
+    {
+     "h": "15:15",
+     "jogo": "Newcastle x Tottenham",
+     "odd": 2.25
+    },
+    {
+     "h": "15:18",
+     "jogo": "Brighton x Islington",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "seq RRRGG",
+   "alvo": {
+    "h": "15:12",
+    "jogo": "Liverpool x City",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1785852533690
+   },
+   "iniciadoEm": 1785852533690
+  },
   "cooldown": {
    "copa": 1785850738993,
    "premier": 1785820377165,
@@ -3035,10 +3065,10 @@
    "2026-08-04": 6.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.1",
-   "n": 10,
-   "start": 3
+   "tipo": "seq",
+   "chave": "RRRGG",
+   "n": 9,
+   "start": 1
   },
   "_obs": {}
  },
