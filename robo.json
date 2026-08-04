@@ -280,12 +280,24 @@
  },
  "o25": {
   "saldo": -144.7,
-  "ciclos": 956,
+  "ciclos": 958,
   "greens": 598,
   "redsCiclo": 153,
   "aborts": 0,
-  "descartes": 205,
+  "descartes": 207,
   "historico": [
+   {
+    "quando": "2026-08-04T15:17:58.892Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
+   },
+   {
+    "quando": "2026-08-04T15:17:56.995Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-08-04T14:36:58.893Z",
     "resultado": "GREEN",
@@ -3015,37 +3027,7 @@
    "premier": 1785853294999,
    "euro": 1785854218690
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:10",
-     "jogo": "Uruguai x Austrália",
-     "odd": 2.2
-    },
-    {
-     "h": "16:13",
-     "jogo": "Equador x Escócia",
-     "odd": 2.4
-    },
-    {
-     "h": "15:43",
-     "jogo": "Países Baixos x Panamá",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "time Escócia",
-   "alvo": {
-    "h": "16:10",
-    "jogo": "Uruguai x Austrália",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785855776591
-   },
-   "iniciadoEm": 1785855776591
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785850738993,
    "premier": 1785853294999,
@@ -3081,16 +3063,27 @@
    "n": 14,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1785856678892,
+    "gatilho": "seq RRGRG"
+   }
+  }
  },
  "ambas": {
   "saldo": -81.8,
-  "ciclos": 965,
+  "ciclos": 966,
   "greens": 657,
   "redsCiclo": 107,
   "aborts": 0,
-  "descartes": 201,
+  "descartes": 202,
   "historico": [
+   {
+    "quando": "2026-08-04T15:17:00.292Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho time Eslovênia) — liga REARMADA"
+   },
    {
     "quando": "2026-08-04T15:14:48.897Z",
     "resultado": "GREEN",
@@ -5647,7 +5640,37 @@
    "super": 1785854699700,
    "premier": 1785856488699
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:23",
+     "jogo": "Suíça x Espanha",
+     "odd": 1.8
+    },
+    {
+     "h": "16:26",
+     "jogo": "República Tcheca x Eslovênia",
+     "odd": 2.4
+    },
+    {
+     "h": "16:29",
+     "jogo": "Suíça x Áustria",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "time Eslovênia",
+   "alvo": {
+    "h": "16:23",
+    "jogo": "Suíça x Espanha",
+    "odd": 1.8,
+    "unidades": 1,
+    "desde": 1785856622099
+   },
+   "iniciadoEm": 1785856622099
+  },
   "cooldown": {
    "euro": 1785853018501,
    "super": 1785854699700,
@@ -5677,10 +5700,10 @@
    "2026-08-04": -14.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRRG",
-   "n": 13,
-   "start": 1
+   "tipo": "time",
+   "chave": "Eslovênia",
+   "n": 22,
+   "start": 2
   },
   "_obs": {}
  }
