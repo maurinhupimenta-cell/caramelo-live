@@ -3006,7 +3006,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1785850320995,
    "copa": 1785850738993,
    "super": 1785851370201,
    "premier": 1785853294999
@@ -5603,8 +5602,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "15:28",
@@ -5624,13 +5623,21 @@
    ],
    "gatilho": "odd 2.25",
    "alvo": {
-    "h": "15:28",
-    "jogo": "Santos x Bogota",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785853681696
+    "h": "15:31",
+    "jogo": "Guayaquil x Agua Branca",
+    "odd": 1.85,
+    "unidades": 2,
+    "desde": 1785853918500
    },
-   "iniciadoEm": 1785853681696
+   "iniciadoEm": 1785853681696,
+   "tiros": [
+    {
+     "h": "15:28",
+     "jogo": "Santos x Bogota",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785853018501,
@@ -5662,7 +5669,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.25",
+   "chave": "1.85",
    "n": 9,
    "start": 1
   },
