@@ -283,7 +283,7 @@
    "tipo": "time",
    "chave": "Aston",
    "n": 8,
-   "start": 3
+   "start": 1
   },
   "_obs": {
    "euro": {
@@ -2952,12 +2952,41 @@
    }
   ],
   "consumidas": {
-   "super": 1785810477956,
    "euro": 1785811196757,
    "copa": 1785811617659,
    "premier": 1785812025156
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:31",
+     "jogo": "Avellaneda x Rio de Janeiro",
+     "odd": 2.25
+    },
+    {
+     "h": "04:34",
+     "jogo": "Sao Paulo x Penarol",
+     "odd": 2.25
+    },
+    {
+     "h": "04:37",
+     "jogo": "Lima x Buenos Aires",
+     "odd": 2
+    }
+   ],
+   "gatilho": "placar 1-0 / 0-1",
+   "alvo": {
+    "h": "04:31",
+    "jogo": "Avellaneda x Rio de Janeiro",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785814078757
+   },
+   "iniciadoEm": 1785814078757
+  },
   "cooldown": {
    "copa": 1785811617659,
    "premier": 1785812025156,
@@ -2987,9 +3016,9 @@
    "2026-08-03": 40.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Islington",
-   "n": 8,
+   "tipo": "placar",
+   "chave": "1-0 / 0-1",
+   "n": 17,
    "start": 1
   },
   "_obs": {}
