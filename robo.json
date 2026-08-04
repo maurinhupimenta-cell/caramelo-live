@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -152,
-  "ciclos": 938,
-  "greens": 585,
+  "saldo": -150.9,
+  "ciclos": 939,
+  "greens": 586,
   "redsCiclo": 151,
   "aborts": 0,
   "descartes": 202,
   "historico": [
+   {
+    "quando": "2026-08-04T02:27:58.156Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Lima x Agua Branca @2.05 (tiro 2) · gatilho: placar 1-0 / 0-1"
+   },
    {
     "quando": "2026-08-04T01:40:02.856Z",
     "resultado": "GREEN",
@@ -2885,52 +2891,15 @@
    }
   ],
   "consumidas": {
-   "copa": 1785807602658
+   "copa": 1785807602658,
+   "super": 1785810477956
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "03:19",
-     "jogo": "Belo Horizonte x Porto Alegre",
-     "odd": 2.45
-    },
-    {
-     "h": "03:22",
-     "jogo": "Lima x Agua Branca",
-     "odd": 2.05
-    },
-    {
-     "h": "03:25",
-     "jogo": "Asuncion x Santiago",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "placar 1-0 / 0-1",
-   "alvo": {
-    "h": "03:22",
-    "jogo": "Lima x Agua Branca",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1785810128767
-   },
-   "iniciadoEm": 1785809938265,
-   "tiros": [
-    {
-     "h": "03:19",
-     "jogo": "Belo Horizonte x Porto Alegre",
-     "odd": 2.45,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785807602658,
    "premier": 1785789527666,
    "euro": 1785794589259,
-   "super": 1785806337065
+   "super": 1785810477956
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -2952,12 +2921,12 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 34.2
+   "2026-08-03": 35.3
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "1-0 / 0-1",
-   "n": 13,
+   "tipo": "seq",
+   "chave": "GRRR",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
