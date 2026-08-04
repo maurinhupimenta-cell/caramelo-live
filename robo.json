@@ -3015,7 +3015,37 @@
    "premier": 1785853294999,
    "euro": 1785854218690
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:10",
+     "jogo": "Uruguai x Austrália",
+     "odd": 2.2
+    },
+    {
+     "h": "16:13",
+     "jogo": "Equador x Escócia",
+     "odd": 2.4
+    },
+    {
+     "h": "15:43",
+     "jogo": "Países Baixos x Panamá",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "time Escócia",
+   "alvo": {
+    "h": "16:10",
+    "jogo": "Uruguai x Austrália",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785855776591
+   },
+   "iniciadoEm": 1785855776591
+  },
   "cooldown": {
    "copa": 1785850738993,
    "premier": 1785853294999,
@@ -3046,9 +3076,9 @@
    "2026-08-04": 1.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.05",
-   "n": 8,
+   "tipo": "time",
+   "chave": "Escócia",
+   "n": 14,
    "start": 3
   },
   "_obs": {}
@@ -5611,7 +5641,37 @@
    "copa": 1785853498601,
    "super": 1785854699700
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:06",
+     "jogo": "Wolverhampton x Chelsea",
+     "odd": 1.85
+    },
+    {
+     "h": "16:09",
+     "jogo": "Burnley x City",
+     "odd": 1.85
+    },
+    {
+     "h": "16:12",
+     "jogo": "Newcastle x Southampton",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "seq GRGGR",
+   "alvo": {
+    "h": "16:06",
+    "jogo": "Wolverhampton x Chelsea",
+    "odd": 1.85,
+    "unidades": 1,
+    "desde": 1785855778601
+   },
+   "iniciadoEm": 1785855778601
+  },
   "cooldown": {
    "euro": 1785853018501,
    "super": 1785854699700,
@@ -5641,9 +5701,9 @@
    "2026-08-04": -15.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.85",
-   "n": 9,
+   "tipo": "seq",
+   "chave": "GRGGR",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
