@@ -2900,7 +2900,37 @@
    "super": 1785810477956,
    "euro": 1785811196757
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:43",
+     "jogo": "Senegal x Croácia",
+     "odd": 2.6
+    },
+    {
+     "h": "03:46",
+     "jogo": "Escócia x Equador",
+     "odd": 2.4
+    },
+    {
+     "h": "03:49",
+     "jogo": "Países Baixos x Inglaterra",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-0)",
+   "alvo": {
+    "h": "03:43",
+    "jogo": "Senegal x Croácia",
+    "odd": 2.6,
+    "unidades": 1,
+    "desde": 1785811263059
+   },
+   "iniciadoEm": 1785811263059
+  },
   "cooldown": {
    "copa": 1785807602658,
    "premier": 1785789527666,
@@ -2930,9 +2960,9 @@
    "2026-08-03": 37.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRR",
-   "n": 8,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-0)",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
