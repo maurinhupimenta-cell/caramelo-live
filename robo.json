@@ -3186,13 +3186,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -72.9,
-  "ciclos": 984,
-  "greens": 673,
+  "saldo": -72.2,
+  "ciclos": 985,
+  "greens": 674,
   "redsCiclo": 108,
   "aborts": 0,
   "descartes": 203,
   "historico": [
+   {
+    "quando": "2026-08-04T21:39:58.292Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "copa · Jordânia x México @1.93 (tiro 3) · gatilho: time França"
+   },
    {
     "quando": "2026-08-04T21:21:57.398Z",
     "resultado": "RED_CICLO",
@@ -5859,52 +5865,15 @@
    }
   ],
   "consumidas": {
-   "super": 1785878517201
+   "super": 1785878517201,
+   "copa": 1785879598002
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "22:31",
-     "jogo": "Canadá x Portugal",
-     "odd": 1.95
-    },
-    {
-     "h": "22:34",
-     "jogo": "Coreia do Sul x França",
-     "odd": 2.05
-    },
-    {
-     "h": "22:37",
-     "jogo": "Jordânia x México",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "time França",
-   "alvo": {
-    "h": "22:34",
-    "jogo": "Coreia do Sul x França",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1785879418093
-   },
-   "iniciadoEm": 1785878632401,
-   "tiros": [
-    {
-     "h": "22:31",
-     "jogo": "Canadá x Portugal",
-     "odd": 1.95,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785872222902,
    "super": 1785878517201,
    "premier": 1785875425993,
-   "copa": 1785873358701
+   "copa": 1785879598002
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -5926,13 +5895,13 @@
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
-   "2026-08-04": -5.6
+   "2026-08-04": -4.9
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Jordânia",
    "n": 21,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  }
