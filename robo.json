@@ -3060,11 +3060,40 @@
    }
   ],
   "consumidas": {
-   "copa": 1785858238891,
    "premier": 1785858644495,
    "euro": 1785860397800
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:43",
+     "jogo": "Escócia x Curação",
+     "odd": 2.4
+    },
+    {
+     "h": "17:46",
+     "jogo": "Coreia do Sul x Uruguai",
+     "odd": 2.4
+    },
+    {
+     "h": "17:49",
+     "jogo": "Turquia x Senegal",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "seq RGGG",
+   "alvo": {
+    "h": "17:43",
+    "jogo": "Escócia x Curação",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1785861839797
+   },
+   "iniciadoEm": 1785861839797
+  },
   "cooldown": {
    "copa": 1785858238891,
    "premier": 1785858644495,
@@ -3095,10 +3124,10 @@
    "2026-08-04": 1.2
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":29",
-   "n": 17,
-   "start": 2
+   "tipo": "seq",
+   "chave": "RGGG",
+   "n": 11,
+   "start": 1
   },
   "_obs": {}
  },
