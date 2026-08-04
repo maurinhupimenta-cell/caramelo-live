@@ -279,13 +279,19 @@
   }
  },
  "o25": {
-  "saldo": -143.3,
-  "ciclos": 978,
-  "greens": 611,
+  "saldo": -141.8,
+  "ciclos": 979,
+  "greens": 612,
   "redsCiclo": 156,
   "aborts": 0,
   "descartes": 211,
   "historico": [
+   {
+    "quando": "2026-08-04T21:59:54.796Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "premier · Leeds x Watford @2.55 (tiro 1) · gatilho: seq RRRGG"
+   },
    {
     "quando": "2026-08-04T21:21:59.598Z",
     "resultado": "GREEN",
@@ -3144,42 +3150,13 @@
    }
   ],
   "consumidas": {
-   "euro": 1785878519398
+   "euro": 1785878519398,
+   "premier": 1785880794595
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:57",
-     "jogo": "Leeds x Watford",
-     "odd": 2.55
-    },
-    {
-     "h": "23:00",
-     "jogo": "Southampton x Palace",
-     "odd": 2.3
-    },
-    {
-     "h": "23:03",
-     "jogo": "Brighton x West Ham",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "seq RRRGG",
-   "alvo": {
-    "h": "22:57",
-    "jogo": "Leeds x Watford",
-    "odd": 2.55,
-    "unidades": 1,
-    "desde": 1785880431198
-   },
-   "iniciadoEm": 1785880431198
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785876417597,
-   "premier": 1785873409600,
+   "premier": 1785880794595,
    "euro": 1785878519398,
    "super": 1785875877195
   },
@@ -3204,7 +3181,7 @@
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
-   "2026-08-04": 2.8
+   "2026-08-04": 4.3
   },
   "_gatilhoAtual": {
    "tipo": "seq",
