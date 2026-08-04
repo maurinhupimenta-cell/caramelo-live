@@ -3128,13 +3128,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -76.1,
-  "ciclos": 973,
-  "greens": 663,
+  "saldo": -75.5,
+  "ciclos": 974,
+  "greens": 664,
   "redsCiclo": 107,
   "aborts": 0,
   "descartes": 203,
   "historico": [
+   {
+    "quando": "2026-08-04T17:13:06.797Z",
+    "resultado": "GREEN",
+    "unidades": 0.6,
+    "detalhe": "super · Montevideo x Sao Paulo @1.8 (tiro 2) · gatilho: coluna :10"
+   },
    {
     "quando": "2026-08-04T16:54:59.996Z",
     "resultado": "GREEN",
@@ -5737,42 +5743,13 @@
   "consumidas": {
    "premier": 1785861035193,
    "euro": 1785861478297,
-   "copa": 1785862499799
+   "copa": 1785862499799,
+   "super": 1785863586601
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:07",
-     "jogo": "Belo Horizonte x La Plata",
-     "odd": 2.07
-    },
-    {
-     "h": "18:10",
-     "jogo": "Montevideo x Sao Paulo",
-     "odd": 1.8
-    },
-    {
-     "h": "18:13",
-     "jogo": "Avellaneda x Penarol",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "coluna :10",
-   "alvo": {
-    "h": "18:07",
-    "jogo": "Belo Horizonte x La Plata",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1785862696695
-   },
-   "iniciadoEm": 1785862696695
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785861478297,
-   "super": 1785859077702,
+   "super": 1785863586601,
    "premier": 1785861035193,
    "copa": 1785862499799
   },
@@ -5796,7 +5773,7 @@
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
-   "2026-08-04": -8.8
+   "2026-08-04": -8.2
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
