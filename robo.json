@@ -5498,7 +5498,37 @@
   "consumidas": {
    "copa": 1785815259964
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:20",
+     "jogo": "Alemanha x Sérvia",
+     "odd": 2.05
+    },
+    {
+     "h": "05:23",
+     "jogo": "Portugal x Dinamarca",
+     "odd": 2.02
+    },
+    {
+     "h": "05:26",
+     "jogo": "Eslováquia x Polônia",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time Dinamarca",
+   "alvo": {
+    "h": "05:20",
+    "jogo": "Alemanha x Sérvia",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785817036663
+   },
+   "iniciadoEm": 1785817036663
+  },
   "cooldown": {
    "euro": 1785812696354,
    "super": 1785796197968,
@@ -5528,9 +5558,9 @@
    "2026-08-04": 2.2
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-0)",
-   "n": 12,
+   "tipo": "time",
+   "chave": "Dinamarca",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
