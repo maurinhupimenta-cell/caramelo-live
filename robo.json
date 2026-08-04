@@ -1,12 +1,18 @@
 {
  "o35": {
   "saldo": -186.3,
-  "ciclos": 191,
+  "ciclos": 192,
   "greens": 62,
   "redsCiclo": 82,
   "aborts": 0,
-  "descartes": 47,
+  "descartes": 48,
   "historico": [
+   {
+    "quando": "2026-08-04T03:20:51.868Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho time Aston) — liga REARMADA"
+   },
    {
     "quando": "2026-08-02T16:35:27.160Z",
     "resultado": "RED_CICLO",
@@ -240,7 +246,8 @@
    "2026-07-29": -7,
    "2026-07-30": -14,
    "2026-08-01": -7,
-   "2026-08-02": -7
+   "2026-08-02": -7,
+   "2026-08-04": 0
   },
   "_gatilhoAtual": {
    "tipo": "odd",
@@ -256,6 +263,10 @@
    "copa": {
     "desde": 1785692695865,
     "gatilho": "odd 4"
+   },
+   "premier": {
+    "desde": 1785813651867,
+    "gatilho": "time Aston"
    }
   }
  },
