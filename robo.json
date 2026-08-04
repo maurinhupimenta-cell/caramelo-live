@@ -3055,13 +3055,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -75.5,
-  "ciclos": 963,
+  "saldo": -82.5,
+  "ciclos": 964,
   "greens": 656,
-  "redsCiclo": 106,
+  "redsCiclo": 107,
   "aborts": 0,
   "descartes": 201,
   "historico": [
+   {
+    "quando": "2026-08-04T14:44:59.897Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: odd 2.25"
+   },
    {
     "quando": "2026-08-04T14:24:58.798Z",
     "resultado": "GREEN",
@@ -5604,50 +5610,13 @@
   "consumidas": {
    "premier": 1785851109397,
    "euro": 1785853018501,
-   "copa": 1785853498601
+   "copa": 1785853498601,
+   "super": 1785854699700
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "15:28",
-     "jogo": "Santos x Bogota",
-     "odd": 2.25
-    },
-    {
-     "h": "15:31",
-     "jogo": "Guayaquil x Agua Branca",
-     "odd": 1.85
-    },
-    {
-     "h": "15:34",
-     "jogo": "Asuncion x Avellaneda",
-     "odd": 2
-    }
-   ],
-   "gatilho": "odd 2.25",
-   "alvo": {
-    "h": "15:31",
-    "jogo": "Guayaquil x Agua Branca",
-    "odd": 1.85,
-    "unidades": 2,
-    "desde": 1785853918500
-   },
-   "iniciadoEm": 1785853681696,
-   "tiros": [
-    {
-     "h": "15:28",
-     "jogo": "Santos x Bogota",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785853018501,
-   "super": 1785850080699,
+   "super": 1785854699700,
    "premier": 1785851109397,
    "copa": 1785853498601
   },
@@ -5671,7 +5640,7 @@
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
-   "2026-08-04": -8.2
+   "2026-08-04": -15.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
