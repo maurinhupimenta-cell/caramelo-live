@@ -279,13 +279,19 @@
   }
  },
  "o25": {
-  "saldo": -149.3,
-  "ciclos": 962,
-  "greens": 599,
+  "saldo": -147.9,
+  "ciclos": 963,
+  "greens": 600,
   "redsCiclo": 154,
   "aborts": 0,
   "descartes": 209,
   "historico": [
+   {
+    "quando": "2026-08-04T15:50:44.695Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "premier · Wolverhampton x Aston @2.2 (tiro 2) · gatilho: seq GRGG"
+   },
    {
     "quando": "2026-08-04T15:43:59.091Z",
     "resultado": "GREEN",
@@ -3049,50 +3055,13 @@
   ],
   "consumidas": {
    "super": 1785857486097,
-   "copa": 1785858238891
+   "copa": 1785858238891,
+   "premier": 1785858644495
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "16:45",
-     "jogo": "Chelsea x Brentford",
-     "odd": 2.25
-    },
-    {
-     "h": "16:48",
-     "jogo": "Wolverhampton x Aston",
-     "odd": 2.2
-    },
-    {
-     "h": "16:51",
-     "jogo": "Southampton x Palace",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "seq GRGG",
-   "alvo": {
-    "h": "16:48",
-    "jogo": "Wolverhampton x Aston",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1785858457790
-   },
-   "iniciadoEm": 1785858241392,
-   "tiros": [
-    {
-     "h": "16:45",
-     "jogo": "Chelsea x Brentford",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785858238891,
-   "premier": 1785853294999,
+   "premier": 1785858644495,
    "euro": 1785854218690,
    "super": 1785857486097
   },
@@ -3117,7 +3086,7 @@
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
-   "2026-08-04": -3.2
+   "2026-08-04": -1.8
   },
   "_gatilhoAtual": {
    "tipo": "seq",
