@@ -3135,7 +3135,45 @@
    "premier": 1785873409600,
    "super": 1785875877195
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "21:37",
+     "jogo": "EUA x Egito",
+     "odd": 2.15
+    },
+    {
+     "h": "21:40",
+     "jogo": "Portugal x Espanha",
+     "odd": 2.075
+    },
+    {
+     "h": "21:43",
+     "jogo": "EUA x França",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time Portugal",
+   "alvo": {
+    "h": "21:40",
+    "jogo": "Portugal x Espanha",
+    "odd": 2.075,
+    "unidades": 2,
+    "desde": 1785876062794
+   },
+   "iniciadoEm": 1785875879898,
+   "tiros": [
+    {
+     "h": "21:37",
+     "jogo": "EUA x Egito",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1785872277091,
    "premier": 1785873409600,
@@ -5841,7 +5879,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1785872222902,
    "copa": 1785873358701,
    "super": 1785874259595,
    "premier": 1785875425993
