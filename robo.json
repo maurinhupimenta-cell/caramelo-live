@@ -227,8 +227,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "04:30",
@@ -248,13 +248,21 @@
    ],
    "gatilho": "time Aston",
    "alvo": {
-    "h": "04:30",
-    "jogo": "West Ham x Burnley",
-    "odd": 4.75,
-    "unidades": 1,
-    "desde": 1785813657154
+    "h": "04:33",
+    "jogo": "Aston x United",
+    "odd": 4.5,
+    "unidades": 2,
+    "desde": 1785814362061
    },
-   "iniciadoEm": 1785813657154
+   "iniciadoEm": 1785813657154,
+   "tiros": [
+    {
+     "h": "04:30",
+     "jogo": "West Ham x Burnley",
+     "odd": 4.75,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785688526966,
