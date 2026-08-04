@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -150.9,
-  "ciclos": 939,
-  "greens": 586,
+  "saldo": -148.9,
+  "ciclos": 940,
+  "greens": 587,
   "redsCiclo": 151,
   "aborts": 0,
   "descartes": 202,
   "historico": [
+   {
+    "quando": "2026-08-04T02:39:56.957Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "euro · Geórgia x Romênia @2.25 (tiro 3) · gatilho: seq GRRR"
+   },
    {
     "quando": "2026-08-04T02:27:58.156Z",
     "resultado": "GREEN",
@@ -2892,57 +2898,14 @@
   ],
   "consumidas": {
    "copa": 1785807602658,
-   "super": 1785810477956
+   "super": 1785810477956,
+   "euro": 1785811196757
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "03:29",
-     "jogo": "Áustria x Dinamarca",
-     "odd": 2.4
-    },
-    {
-     "h": "03:32",
-     "jogo": "Países Baixos x Croácia",
-     "odd": 2.07
-    },
-    {
-     "h": "03:35",
-     "jogo": "Geórgia x Romênia",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "seq GRRR",
-   "alvo": {
-    "h": "03:35",
-    "jogo": "Geórgia x Romênia",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1785810901154
-   },
-   "iniciadoEm": 1785810480160,
-   "tiros": [
-    {
-     "h": "03:29",
-     "jogo": "Áustria x Dinamarca",
-     "odd": 2.4,
-     "unidades": 1
-    },
-    {
-     "h": "03:32",
-     "jogo": "Países Baixos x Croácia",
-     "odd": 2.07,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785807602658,
    "premier": 1785789527666,
-   "euro": 1785794589259,
+   "euro": 1785811196757,
    "super": 1785810477956
   },
   "dias": {
@@ -2965,7 +2928,7 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 35.3
+   "2026-08-03": 37.3
   },
   "_gatilhoAtual": {
    "tipo": "seq",
