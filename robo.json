@@ -5827,7 +5827,37 @@
    "euro": 1785872222902,
    "copa": 1785873358701
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:07",
+     "jogo": "Agua Branca x Buenos Aires",
+     "odd": 1.83
+    },
+    {
+     "h": "21:10",
+     "jogo": "Montevideo x Lima",
+     "odd": 1.85
+    },
+    {
+     "h": "21:13",
+     "jogo": "Belo Horizonte x Sao Paulo",
+     "odd": 1.83
+    }
+   ],
+   "gatilho": "coluna :10",
+   "alvo": {
+    "h": "21:07",
+    "jogo": "Agua Branca x Buenos Aires",
+    "odd": 1.83,
+    "unidades": 1,
+    "desde": 1785873598093
+   },
+   "iniciadoEm": 1785873598093
+  },
   "cooldown": {
    "euro": 1785872222902,
    "super": 1785868080298,
@@ -5857,10 +5887,10 @@
    "2026-08-04": -0.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.85",
-   "n": 10,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":10",
+   "n": 21,
+   "start": 3
   },
   "_obs": {}
  }
