@@ -2963,7 +2963,45 @@
    "premier": 1785816167758,
    "super": 1785818282958
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "05:46",
+     "jogo": "Países Baixos x Escócia",
+     "odd": 2.6
+    },
+    {
+     "h": "05:49",
+     "jogo": "EUA x Argentina",
+     "odd": 2.15
+    },
+    {
+     "h": "05:52",
+     "jogo": "Coreia do Sul x Espanha",
+     "odd": 2.29
+    }
+   ],
+   "gatilho": "time Escócia",
+   "alvo": {
+    "h": "05:49",
+    "jogo": "EUA x Argentina",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1785818997671
+   },
+   "iniciadoEm": 1785818867170,
+   "tiros": [
+    {
+     "h": "05:46",
+     "jogo": "Países Baixos x Escócia",
+     "odd": 2.6,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1785815259762,
    "premier": 1785816167758,
@@ -2995,8 +3033,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Belo Horizonte",
-   "n": 9,
+   "chave": "Escócia",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
@@ -5513,7 +5551,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1785815259964,
    "euro": 1785817986170
   },
   "ciclo": null,
