@@ -5597,12 +5597,41 @@
    }
   ],
   "consumidas": {
-   "super": 1785850080699,
    "premier": 1785851109397,
    "euro": 1785853018501,
    "copa": 1785853498601
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:28",
+     "jogo": "Santos x Bogota",
+     "odd": 2.25
+    },
+    {
+     "h": "15:31",
+     "jogo": "Guayaquil x Agua Branca",
+     "odd": 1.85
+    },
+    {
+     "h": "15:34",
+     "jogo": "Asuncion x Avellaneda",
+     "odd": 2
+    }
+   ],
+   "gatilho": "odd 2.25",
+   "alvo": {
+    "h": "15:28",
+    "jogo": "Santos x Bogota",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785853681696
+   },
+   "iniciadoEm": 1785853681696
+  },
   "cooldown": {
    "euro": 1785853018501,
    "super": 1785850080699,
@@ -5632,9 +5661,9 @@
    "2026-08-04": -8.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Jordânia",
-   "n": 17,
+   "tipo": "odd",
+   "chave": "2.25",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
