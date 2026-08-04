@@ -2948,11 +2948,40 @@
    }
   ],
   "consumidas": {
-   "super": 1785814436160,
    "copa": 1785815259762,
    "premier": 1785816167758
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:34",
+     "jogo": "La Boca x Sao Paulo",
+     "odd": 2.2
+    },
+    {
+     "h": "05:37",
+     "jogo": "Belo Horizonte x Bogota",
+     "odd": 2.37
+    },
+    {
+     "h": "05:40",
+     "jogo": "Santos x Porto Alegre",
+     "odd": 2.8
+    }
+   ],
+   "gatilho": "time Belo Horizonte",
+   "alvo": {
+    "h": "05:34",
+    "jogo": "La Boca x Sao Paulo",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785818036859
+   },
+   "iniciadoEm": 1785818036859
+  },
   "cooldown": {
    "copa": 1785815259762,
    "premier": 1785816167758,
@@ -2984,20 +3013,26 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Brighton",
+   "chave": "Belo Horizonte",
    "n": 8,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -65.1,
-  "ciclos": 956,
+  "saldo": -72.1,
+  "ciclos": 957,
   "greens": 652,
-  "redsCiclo": 104,
+  "redsCiclo": 105,
   "aborts": 0,
   "descartes": 200,
   "historico": [
+   {
+    "quando": "2026-08-04T04:33:06.360Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: time Dinamarca"
+   },
    {
     "quando": "2026-08-04T03:47:40.162Z",
     "resultado": "GREEN",
@@ -5496,55 +5531,12 @@
    }
   ],
   "consumidas": {
-   "copa": 1785815259964
+   "copa": 1785815259964,
+   "euro": 1785817986170
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "05:20",
-     "jogo": "Alemanha x Sérvia",
-     "odd": 2.05
-    },
-    {
-     "h": "05:23",
-     "jogo": "Portugal x Dinamarca",
-     "odd": 2.02
-    },
-    {
-     "h": "05:26",
-     "jogo": "Eslováquia x Polônia",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "time Dinamarca",
-   "alvo": {
-    "h": "05:26",
-    "jogo": "Eslováquia x Polônia",
-    "odd": 2.1,
-    "unidades": 4,
-    "desde": 1785817983763
-   },
-   "iniciadoEm": 1785817036663,
-   "tiros": [
-    {
-     "h": "05:20",
-     "jogo": "Alemanha x Sérvia",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "05:23",
-     "jogo": "Portugal x Dinamarca",
-     "odd": 2.02,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785812696354,
+   "euro": 1785817986170,
    "super": 1785796197968,
    "premier": 1785795850863,
    "copa": 1785815259964
@@ -5569,7 +5561,7 @@
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
-   "2026-08-04": 2.2
+   "2026-08-04": -4.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
