@@ -3104,13 +3104,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -79.4,
-  "ciclos": 970,
-  "greens": 660,
+  "saldo": -78.3,
+  "ciclos": 971,
+  "greens": 661,
   "redsCiclo": 107,
   "aborts": 0,
   "descartes": 203,
   "historico": [
+   {
+    "quando": "2026-08-04T16:30:35.397Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · City x Tottenham @2.02 (tiro 3) · gatilho: coluna :24"
+   },
    {
     "quando": "2026-08-04T15:57:57.896Z",
     "resultado": "GREEN",
@@ -5695,57 +5701,14 @@
   "consumidas": {
    "euro": 1785857457995,
    "copa": 1785857542891,
-   "super": 1785859077702
+   "super": 1785859077702,
+   "premier": 1785861035193
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "17:21",
-     "jogo": "United x Chelsea",
-     "odd": 1.95
-    },
-    {
-     "h": "17:24",
-     "jogo": "Everton x Leeds",
-     "odd": 2.07
-    },
-    {
-     "h": "17:27",
-     "jogo": "City x Tottenham",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "coluna :24",
-   "alvo": {
-    "h": "17:27",
-    "jogo": "City x Tottenham",
-    "odd": 2.02,
-    "unidades": 4,
-    "desde": 1785860850999
-   },
-   "iniciadoEm": 1785860090598,
-   "tiros": [
-    {
-     "h": "17:21",
-     "jogo": "United x Chelsea",
-     "odd": 1.95,
-     "unidades": 1
-    },
-    {
-     "h": "17:24",
-     "jogo": "Everton x Leeds",
-     "odd": 2.07,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785857457995,
    "super": 1785859077702,
-   "premier": 1785856488699,
+   "premier": 1785861035193,
    "copa": 1785857542891
   },
   "dias": {
@@ -5768,12 +5731,12 @@
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
-   "2026-08-04": -12.1
+   "2026-08-04": -11
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":27",
-   "n": 17,
+   "tipo": "seq",
+   "chave": "RGRRG",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
