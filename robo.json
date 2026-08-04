@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -180.3,
-  "ciclos": 193,
-  "greens": 63,
+  "saldo": -167.3,
+  "ciclos": 194,
+  "greens": 64,
   "redsCiclo": 82,
   "aborts": 0,
   "descartes": 48,
   "historico": [
+   {
+    "quando": "2026-08-04T04:44:55.754Z",
+    "resultado": "GREEN",
+    "unidades": 13,
+    "detalhe": "premier · West Ham x Palace @5 (tiro 3) · gatilho: time Aston"
+   },
    {
     "quando": "2026-08-04T03:35:47.359Z",
     "resultado": "GREEN",
@@ -230,55 +236,13 @@
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "05:36",
-     "jogo": "Brighton x Aston",
-     "odd": 4.2
-    },
-    {
-     "h": "05:39",
-     "jogo": "Brentford x Southampton",
-     "odd": 4.75
-    },
-    {
-     "h": "05:42",
-     "jogo": "West Ham x Palace",
-     "odd": 5
-    }
-   ],
-   "gatilho": "time Aston",
-   "alvo": {
-    "h": "05:42",
-    "jogo": "West Ham x Palace",
-    "odd": 5,
-    "unidades": 4,
-    "desde": 1785818521864
-   },
-   "iniciadoEm": 1785818157857,
-   "tiros": [
-    {
-     "h": "05:36",
-     "jogo": "Brighton x Aston",
-     "odd": 4.2,
-     "unidades": 1
-    },
-    {
-     "h": "05:39",
-     "jogo": "Brentford x Southampton",
-     "odd": 4.75,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1785818695460
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785688526966,
-   "premier": 1785814547158,
+   "premier": 1785818695460,
    "euro": 1785464913993,
    "super": 1784965764803
   },
@@ -297,7 +261,7 @@
    "2026-07-30": -14,
    "2026-08-01": -7,
    "2026-08-02": -7,
-   "2026-08-04": 6
+   "2026-08-04": 19
   },
   "_gatilhoAtual": {
    "tipo": "time",
@@ -2996,7 +2960,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1785815259762,
    "premier": 1785816167758,
    "super": 1785818282958
   },
