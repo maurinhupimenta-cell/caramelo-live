@@ -3006,8 +3006,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "15:12",
@@ -3027,11 +3027,11 @@
    ],
    "gatilho": "seq RRRGG",
    "alvo": {
-    "h": "15:15",
-    "jogo": "Newcastle x Tottenham",
-    "odd": 2.25,
-    "unidades": 2,
-    "desde": 1785852886495
+    "h": "15:18",
+    "jogo": "Brighton x Islington",
+    "odd": 2.05,
+    "unidades": 4,
+    "desde": 1785853219496
    },
    "iniciadoEm": 1785852533690,
    "tiros": [
@@ -3040,6 +3040,12 @@
      "jogo": "Liverpool x City",
      "odd": 2.07,
      "unidades": 1
+    },
+    {
+     "h": "15:15",
+     "jogo": "Newcastle x Tottenham",
+     "odd": 2.25,
+     "unidades": 2
     }
    ]
   },
@@ -5626,7 +5632,37 @@
    "premier": 1785851109397,
    "euro": 1785853018501
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:16",
+     "jogo": "Portugal x Curação",
+     "odd": 1.95
+    },
+    {
+     "h": "15:19",
+     "jogo": "França x Tunísia",
+     "odd": 2.2
+    },
+    {
+     "h": "15:22",
+     "jogo": "Uzbequistão x Marrocos",
+     "odd": 2
+    }
+   ],
+   "gatilho": "time França",
+   "alvo": {
+    "h": "15:16",
+    "jogo": "Portugal x Curação",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1785853020593
+   },
+   "iniciadoEm": 1785853020593
+  },
   "cooldown": {
    "euro": 1785853018501,
    "super": 1785850080699,
@@ -5657,9 +5693,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "França",
-   "n": 13,
-   "start": 1
+   "chave": "Jordânia",
+   "n": 17,
+   "start": 3
   },
   "_obs": {}
  }
