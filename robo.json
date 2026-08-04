@@ -281,13 +281,19 @@
   }
  },
  "o25": {
-  "saldo": -136,
-  "ciclos": 948,
-  "greens": 594,
+  "saldo": -135,
+  "ciclos": 949,
+  "greens": 595,
   "redsCiclo": 151,
   "aborts": 0,
   "descartes": 203,
   "historico": [
+   {
+    "quando": "2026-08-04T05:12:57.454Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Wolverhampton x Newcastle @1.98 (tiro 2) · gatilho: time Liverpool"
+   },
    {
     "quando": "2026-08-04T04:56:16.963Z",
     "resultado": "GREEN",
@@ -2967,50 +2973,13 @@
   ],
   "consumidas": {
    "super": 1785818282958,
-   "copa": 1785819376766
+   "copa": 1785819376766,
+   "premier": 1785820377165
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "06:06",
-     "jogo": "Liverpool x Leicester",
-     "odd": 2.25
-    },
-    {
-     "h": "06:09",
-     "jogo": "Wolverhampton x Newcastle",
-     "odd": 1.98
-    },
-    {
-     "h": "06:12",
-     "jogo": "Norwich x Leicester",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "time Liverpool",
-   "alvo": {
-    "h": "06:09",
-    "jogo": "Wolverhampton x Newcastle",
-    "odd": 1.98,
-    "unidades": 2,
-    "desde": 1785820125166
-   },
-   "iniciadoEm": 1785819775258,
-   "tiros": [
-    {
-     "h": "06:06",
-     "jogo": "Liverpool x Leicester",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785819376766,
-   "premier": 1785816167758,
+   "premier": 1785820377165,
    "euro": 1785811196757,
    "super": 1785818282958
   },
@@ -3035,7 +3004,7 @@
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
-   "2026-08-04": 10.1
+   "2026-08-04": 11.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
