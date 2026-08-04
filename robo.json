@@ -3198,13 +3198,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -70.3,
-  "ciclos": 987,
-  "greens": 676,
+  "saldo": -69.4,
+  "ciclos": 988,
+  "greens": 677,
   "redsCiclo": 108,
   "aborts": 0,
   "descartes": 203,
   "historico": [
+   {
+    "quando": "2026-08-04T22:58:57.994Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · RD Congo x Argélia @1.93 (tiro 1) · gatilho: time França"
+   },
    {
     "quando": "2026-08-04T22:40:00.498Z",
     "resultado": "GREEN",
@@ -5890,44 +5896,15 @@
   ],
   "consumidas": {
    "premier": 1785880794894,
-   "euro": 1785883200300
+   "euro": 1785883200300,
+   "copa": 1785884337802
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:52",
-     "jogo": "RD Congo x Argélia",
-     "odd": 1.93
-    },
-    {
-     "h": "23:55",
-     "jogo": "França x Noruega",
-     "odd": 1.9
-    },
-    {
-     "h": "23:58",
-     "jogo": "Gana x Egito",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "time França",
-   "alvo": {
-    "h": "23:52",
-    "jogo": "RD Congo x Argélia",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1785883619798
-   },
-   "iniciadoEm": 1785883619798
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785883200300,
    "super": 1785878517201,
    "premier": 1785880794894,
-   "copa": 1785879598002
+   "copa": 1785884337802
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -5949,13 +5926,13 @@
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
-   "2026-08-04": -3
+   "2026-08-04": -2.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "França",
    "n": 23,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
