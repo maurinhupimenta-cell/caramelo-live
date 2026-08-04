@@ -3081,13 +3081,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -69.5,
-  "ciclos": 961,
+  "saldo": -76.5,
+  "ciclos": 962,
   "greens": 655,
-  "redsCiclo": 105,
+  "redsCiclo": 106,
   "aborts": 0,
   "descartes": 201,
   "historico": [
+   {
+    "quando": "2026-08-04T14:16:58.790Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: odd 2.25"
+   },
    {
     "quando": "2026-08-04T13:45:09.692Z",
     "resultado": "GREEN",
@@ -5617,49 +5623,12 @@
   ],
   "consumidas": {
    "super": 1785850080699,
-   "premier": 1785851109397
+   "premier": 1785851109397,
+   "euro": 1785853018501
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "15:08",
-     "jogo": "Turquia x Hungria",
-     "odd": 2.15
-    },
-    {
-     "h": "15:11",
-     "jogo": "Polônia x República Tcheca",
-     "odd": 2.25
-    },
-    {
-     "h": "15:14",
-     "jogo": "Geórgia x Inglaterra",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "odd 2.25",
-   "alvo": {
-    "h": "15:11",
-    "jogo": "Polônia x República Tcheca",
-    "odd": 2.25,
-    "unidades": 2,
-    "desde": 1785852655894
-   },
-   "iniciadoEm": 1785852296104,
-   "tiros": [
-    {
-     "h": "15:08",
-     "jogo": "Turquia x Hungria",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785817986170,
+   "euro": 1785853018501,
    "super": 1785850080699,
    "premier": 1785851109397,
    "copa": 1785849179590
@@ -5684,7 +5653,7 @@
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
-   "2026-08-04": -2.2
+   "2026-08-04": -9.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
