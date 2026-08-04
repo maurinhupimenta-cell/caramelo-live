@@ -305,13 +305,19 @@
   }
  },
  "o25": {
-  "saldo": -146.1,
-  "ciclos": 943,
-  "greens": 589,
+  "saldo": -144.8,
+  "ciclos": 944,
+  "greens": 590,
   "redsCiclo": 151,
   "aborts": 0,
   "descartes": 203,
   "historico": [
+   {
+    "quando": "2026-08-04T03:33:56.361Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "super · Avellaneda x Rio de Janeiro @2.25 (tiro 1) · gatilho: placar 1-0 / 0-1"
+   },
    {
     "quando": "2026-08-04T02:53:45.357Z",
     "resultado": "GREEN",
@@ -2962,44 +2968,15 @@
   "consumidas": {
    "euro": 1785811196757,
    "copa": 1785811617659,
-   "premier": 1785812025156
+   "premier": 1785812025156,
+   "super": 1785814436160
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:31",
-     "jogo": "Avellaneda x Rio de Janeiro",
-     "odd": 2.25
-    },
-    {
-     "h": "04:34",
-     "jogo": "Sao Paulo x Penarol",
-     "odd": 2.25
-    },
-    {
-     "h": "04:37",
-     "jogo": "Lima x Buenos Aires",
-     "odd": 2
-    }
-   ],
-   "gatilho": "placar 1-0 / 0-1",
-   "alvo": {
-    "h": "04:31",
-    "jogo": "Avellaneda x Rio de Janeiro",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785814078757
-   },
-   "iniciadoEm": 1785814078757
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785811617659,
    "premier": 1785812025156,
    "euro": 1785811196757,
-   "super": 1785810477956
+   "super": 1785814436160
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -3021,7 +2998,8 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 40.1
+   "2026-08-03": 40.1,
+   "2026-08-04": 1.3
   },
   "_gatilhoAtual": {
    "tipo": "placar",
