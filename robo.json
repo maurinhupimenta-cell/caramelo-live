@@ -3193,13 +3193,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -69.6,
-  "ciclos": 979,
-  "greens": 669,
+  "saldo": -68.4,
+  "ciclos": 980,
+  "greens": 670,
   "redsCiclo": 107,
   "aborts": 0,
   "descartes": 203,
   "historico": [
+   {
+    "quando": "2026-08-04T19:37:03.098Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Dinamarca x Geórgia @2.2 (tiro 1) · gatilho: coluna :35"
+   },
    {
     "quando": "2026-08-04T19:26:55.393Z",
     "resultado": "GREEN",
@@ -5836,41 +5842,12 @@
    }
   ],
   "consumidas": {
-   "premier": 1785871615199
+   "premier": 1785871615199,
+   "euro": 1785872222902
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:32",
-     "jogo": "Dinamarca x Geórgia",
-     "odd": 2.2
-    },
-    {
-     "h": "20:35",
-     "jogo": "Turquia x Bélgica",
-     "odd": 2
-    },
-    {
-     "h": "20:38",
-     "jogo": "Áustria x Portugal",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "coluna :35",
-   "alvo": {
-    "h": "20:32",
-    "jogo": "Dinamarca x Geórgia",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785871617597
-   },
-   "iniciadoEm": 1785871617597
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785865804791,
+   "euro": 1785872222902,
    "super": 1785868080298,
    "premier": 1785871615199,
    "copa": 1785867059498
@@ -5895,12 +5872,12 @@
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
-   "2026-08-04": -2.3
+   "2026-08-04": -1.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "França",
-   "n": 18,
+   "tipo": "coluna",
+   "chave": ":38",
+   "n": 20,
    "start": 1
   },
   "_obs": {}
