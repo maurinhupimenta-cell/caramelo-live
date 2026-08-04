@@ -260,13 +260,19 @@
   }
  },
  "o25": {
-  "saldo": -148.9,
-  "ciclos": 941,
-  "greens": 587,
+  "saldo": -147.3,
+  "ciclos": 942,
+  "greens": 588,
   "redsCiclo": 151,
   "aborts": 0,
   "descartes": 203,
   "historico": [
+   {
+    "quando": "2026-08-04T02:46:57.857Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "copa · Senegal x Croácia @2.6 (tiro 1) · gatilho: placar acima de 1-0 (2-0)"
+   },
    {
     "quando": "2026-08-04T02:41:59.854Z",
     "resultado": "GREEN_OBS",
@@ -2904,41 +2910,42 @@
   ],
   "consumidas": {
    "super": 1785810477956,
-   "euro": 1785811196757
+   "euro": 1785811196757,
+   "copa": 1785811617659
   },
   "ciclo": {
-   "liga": "copa",
+   "liga": "premier",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "03:43",
-     "jogo": "Senegal x Croácia",
-     "odd": 2.6
+     "h": "03:48",
+     "jogo": "Leeds x Leicester",
+     "odd": 2.55
     },
     {
-     "h": "03:46",
-     "jogo": "Escócia x Equador",
-     "odd": 2.4
+     "h": "03:51",
+     "jogo": "City x Islington",
+     "odd": 2.1
     },
     {
-     "h": "03:49",
-     "jogo": "Países Baixos x Inglaterra",
-     "odd": 2.25
+     "h": "03:54",
+     "jogo": "Burnley x Palace",
+     "odd": 2.1
     }
    ],
-   "gatilho": "placar acima de 1-0 (2-0)",
+   "gatilho": "time Islington",
    "alvo": {
-    "h": "03:43",
-    "jogo": "Senegal x Croácia",
-    "odd": 2.6,
+    "h": "03:48",
+    "jogo": "Leeds x Leicester",
+    "odd": 2.55,
     "unidades": 1,
-    "desde": 1785811263059
+    "desde": 1785811620062
    },
-   "iniciadoEm": 1785811263059
+   "iniciadoEm": 1785811620062
   },
   "cooldown": {
-   "copa": 1785807602658,
+   "copa": 1785811617659,
    "premier": 1785789527666,
    "euro": 1785811196757,
    "super": 1785810477956
@@ -2963,20 +2970,15 @@
    "2026-07-31": -40.6,
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
-   "2026-08-03": 37.3
+   "2026-08-03": 38.9
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-0)",
-   "n": 10,
+   "tipo": "time",
+   "chave": "Islington",
+   "n": 8,
    "start": 1
   },
-  "_obs": {
-   "premier": {
-    "desde": 1785811319854,
-    "gatilho": "time Islington"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -67.3,
