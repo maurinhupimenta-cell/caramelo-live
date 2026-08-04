@@ -5767,7 +5767,37 @@
    "euro": 1785865804791,
    "copa": 1785867059498
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:15",
+     "jogo": "City x West Ham",
+     "odd": 2.1
+    },
+    {
+     "h": "19:18",
+     "jogo": "Everton x Tottenham",
+     "odd": 2
+    },
+    {
+     "h": "19:21",
+     "jogo": "Islington x Wolverhampton",
+     "odd": 1.86
+    }
+   ],
+   "gatilho": "seq RRRGG",
+   "alvo": {
+    "h": "19:15",
+    "jogo": "City x West Ham",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785867109495
+   },
+   "iniciadoEm": 1785867109495
+  },
   "cooldown": {
    "euro": 1785865804791,
    "super": 1785863586601,
@@ -5797,9 +5827,9 @@
    "2026-08-04": -5.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Jordânia",
-   "n": 20,
+   "tipo": "seq",
+   "chave": "RRRGG",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
