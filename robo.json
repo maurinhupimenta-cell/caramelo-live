@@ -3066,21 +3066,27 @@
    "2026-08-04": 13.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.35",
-   "n": 15,
+   "tipo": "seq",
+   "chave": "RRRGG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -70.4,
-  "ciclos": 960,
-  "greens": 654,
+  "saldo": -69.5,
+  "ciclos": 961,
+  "greens": 655,
   "redsCiclo": 105,
   "aborts": 0,
   "descartes": 201,
   "historico": [
+   {
+    "quando": "2026-08-04T13:45:09.692Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Watford x United @1.98 (tiro 3) · gatilho: seq RRRRG"
+   },
    {
     "quando": "2026-08-04T13:28:00.990Z",
     "resultado": "GREEN",
@@ -5604,57 +5610,14 @@
   ],
   "consumidas": {
    "copa": 1785849179590,
-   "super": 1785850080699
+   "super": 1785850080699,
+   "premier": 1785851109397
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "14:36",
-     "jogo": "Newcastle x Chelsea",
-     "odd": 1.85
-    },
-    {
-     "h": "14:39",
-     "jogo": "Wolverhampton x Norwich",
-     "odd": 1.9
-    },
-    {
-     "h": "14:42",
-     "jogo": "Watford x United",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "seq RRRRG",
-   "alvo": {
-    "h": "14:42",
-    "jogo": "Watford x United",
-    "odd": 1.98,
-    "unidades": 4,
-    "desde": 1785850916990
-   },
-   "iniciadoEm": 1785850365490,
-   "tiros": [
-    {
-     "h": "14:36",
-     "jogo": "Newcastle x Chelsea",
-     "odd": 1.85,
-     "unidades": 1
-    },
-    {
-     "h": "14:39",
-     "jogo": "Wolverhampton x Norwich",
-     "odd": 1.9,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785817986170,
    "super": 1785850080699,
-   "premier": 1785795850863,
+   "premier": 1785851109397,
    "copa": 1785849179590
   },
   "dias": {
@@ -5677,13 +5640,13 @@
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
-   "2026-08-04": -3.1
+   "2026-08-04": -2.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "1.8",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
