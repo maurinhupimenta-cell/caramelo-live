@@ -279,13 +279,19 @@
   }
  },
  "o25": {
-  "saldo": -142.2,
-  "ciclos": 973,
-  "greens": 607,
+  "saldo": -140.9,
+  "ciclos": 974,
+  "greens": 608,
   "redsCiclo": 155,
   "aborts": 0,
   "descartes": 211,
   "historico": [
+   {
+    "quando": "2026-08-04T19:37:57.196Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "copa · Portugal x França @2.15 (tiro 2) · gatilho: time Portugal"
+   },
    {
     "quando": "2026-08-04T19:22:57.095Z",
     "resultado": "GREEN_OBS",
@@ -3114,49 +3120,12 @@
    }
   ],
   "consumidas": {
-   "euro": 1785869936097
+   "euro": 1785869936097,
+   "copa": 1785872277091
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "20:31",
-     "jogo": "Áustria x Nova Zelândia",
-     "odd": 2.2
-    },
-    {
-     "h": "20:34",
-     "jogo": "Portugal x França",
-     "odd": 2.15
-    },
-    {
-     "h": "20:37",
-     "jogo": "Croácia x Áustria",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "time Portugal",
-   "alvo": {
-    "h": "20:34",
-    "jogo": "Portugal x França",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1785872036591
-   },
-   "iniciadoEm": 1785871378995,
-   "tiros": [
-    {
-     "h": "20:31",
-     "jogo": "Áustria x Nova Zelândia",
-     "odd": 2.2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785866640398,
+   "copa": 1785872277091,
    "premier": 1785867641592,
    "euro": 1785869936097,
    "super": 1785863380598
@@ -3182,7 +3151,7 @@
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
-   "2026-08-04": 3.9
+   "2026-08-04": 5.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
