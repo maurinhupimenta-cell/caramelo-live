@@ -3161,20 +3161,26 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRGG",
-   "n": 16,
+   "chave": "GRGGR",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -72.7,
-  "ciclos": 976,
-  "greens": 666,
+  "saldo": -71.6,
+  "ciclos": 977,
+  "greens": 667,
   "redsCiclo": 107,
   "aborts": 0,
   "descartes": 203,
   "historico": [
+   {
+    "quando": "2026-08-04T18:17:39.498Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · City x West Ham @2.1 (tiro 1) · gatilho: seq RRRGG"
+   },
    {
     "quando": "2026-08-04T18:10:59.695Z",
     "resultado": "GREEN",
@@ -5794,43 +5800,14 @@
   ],
   "consumidas": {
    "euro": 1785865804791,
-   "copa": 1785867059498
+   "copa": 1785867059498,
+   "premier": 1785867459293
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "19:15",
-     "jogo": "City x West Ham",
-     "odd": 2.1
-    },
-    {
-     "h": "19:18",
-     "jogo": "Everton x Tottenham",
-     "odd": 2
-    },
-    {
-     "h": "19:21",
-     "jogo": "Islington x Wolverhampton",
-     "odd": 1.86
-    }
-   ],
-   "gatilho": "seq RRRGG",
-   "alvo": {
-    "h": "19:15",
-    "jogo": "City x West Ham",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785867109495
-   },
-   "iniciadoEm": 1785867109495
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785865804791,
    "super": 1785863586601,
-   "premier": 1785861035193,
+   "premier": 1785867459293,
    "copa": 1785867059498
   },
   "dias": {
@@ -5853,13 +5830,13 @@
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
-   "2026-08-04": -5.4
+   "2026-08-04": -4.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRGG",
-   "n": 11,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":27",
+   "n": 19,
+   "start": 2
   },
   "_obs": {}
  }
