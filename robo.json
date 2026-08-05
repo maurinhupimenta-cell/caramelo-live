@@ -298,13 +298,19 @@
   }
  },
  "o25": {
-  "saldo": -135.7,
-  "ciclos": 1013,
-  "greens": 637,
+  "saldo": -134.1,
+  "ciclos": 1014,
+  "greens": 638,
   "redsCiclo": 160,
   "aborts": 0,
   "descartes": 216,
   "historico": [
+   {
+    "quando": "2026-08-05T17:50:50.272Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "euro · Croácia x Albânia @2.6 (tiro 1) · gatilho: coluna :50"
+   },
    {
     "quando": "2026-08-05T17:14:50.366Z",
     "resultado": "GREEN",
@@ -3374,43 +3380,44 @@
   ],
   "consumidas": {
    "super": 1785949730674,
-   "premier": 1785950090170
+   "premier": 1785950090170,
+   "euro": 1785952250166
   },
   "ciclo": {
-   "liga": "euro",
+   "liga": "copa",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "18:47",
-     "jogo": "Croácia x Albânia",
-     "odd": 2.6
+     "h": "18:43",
+     "jogo": "EUA x RD Congo",
+     "odd": 2.15
     },
     {
-     "h": "18:50",
-     "jogo": "Geórgia x Espanha",
-     "odd": 2.2
+     "h": "18:46",
+     "jogo": "Argélia x México",
+     "odd": 2.25
     },
     {
-     "h": "18:53",
-     "jogo": "Itália x Hungria",
-     "odd": 2.4
+     "h": "18:49",
+     "jogo": "Irã x Senegal",
+     "odd": 2.75
     }
    ],
-   "gatilho": "coluna :50",
+   "gatilho": "time México",
    "alvo": {
-    "h": "18:47",
-    "jogo": "Croácia x Albânia",
-    "odd": 2.6,
+    "h": "18:43",
+    "jogo": "EUA x RD Congo",
+    "odd": 2.15,
     "unidades": 1,
-    "desde": 1785951774874
+    "desde": 1785952251870
    },
-   "iniciadoEm": 1785951774874
+   "iniciadoEm": 1785952251870
   },
   "cooldown": {
    "copa": 1785948471477,
    "premier": 1785950090170,
-   "euro": 1785947930071,
+   "euro": 1785952250166,
    "super": 1785949730674
   },
   "dias": {
@@ -3435,12 +3442,12 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": 2.5
+   "2026-08-05": 4.1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":50",
-   "n": 18,
+   "tipo": "time",
+   "chave": "México",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
