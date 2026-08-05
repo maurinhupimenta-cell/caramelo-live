@@ -3340,13 +3340,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -56.4,
-  "ciclos": 1003,
-  "greens": 689,
+  "saldo": -55.3,
+  "ciclos": 1004,
+  "greens": 690,
   "redsCiclo": 108,
   "aborts": 0,
   "descartes": 206,
   "historico": [
+   {
+    "quando": "2026-08-05T13:50:59.369Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · West Ham x Palace @2.1 (tiro 1) · gatilho: odd 2.05"
+   },
    {
     "quando": "2026-08-05T13:28:50.970Z",
     "resultado": "GREEN",
@@ -6127,43 +6133,14 @@
    }
   ],
   "consumidas": {
-   "copa": 1785936530774
+   "copa": 1785936530774,
+   "premier": 1785937859172
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:48",
-     "jogo": "West Ham x Palace",
-     "odd": 2.1
-    },
-    {
-     "h": "14:51",
-     "jogo": "Islington x Brentford",
-     "odd": 2.05
-    },
-    {
-     "h": "14:54",
-     "jogo": "Palace x Leicester",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "odd 2.05",
-   "alvo": {
-    "h": "14:48",
-    "jogo": "West Ham x Palace",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785937319971
-   },
-   "iniciadoEm": 1785937319971
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785883200300,
    "super": 1785899401696,
-   "premier": 1785933718172,
+   "premier": 1785937859172,
    "copa": 1785936530774
   },
   "dias": {
@@ -6187,13 +6164,13 @@
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
-   "2026-08-05": 8.2
+   "2026-08-05": 9.3
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.05",
    "n": 20,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
