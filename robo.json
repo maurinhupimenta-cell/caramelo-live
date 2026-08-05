@@ -298,13 +298,19 @@
   }
  },
  "o25": {
-  "saldo": -134.8,
-  "ciclos": 1006,
-  "greens": 632,
+  "saldo": -133.4,
+  "ciclos": 1007,
+  "greens": 633,
   "redsCiclo": 159,
   "aborts": 0,
   "descartes": 215,
   "historico": [
+   {
+    "quando": "2026-08-05T15:44:40.770Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "premier · Islington x Palace @2.2 (tiro 2) · gatilho: seq RGRG"
+   },
    {
     "quando": "2026-08-05T15:30:54.265Z",
     "resultado": "GREEN",
@@ -3332,50 +3338,13 @@
   ],
   "consumidas": {
    "euro": 1785941427370,
-   "copa": 1785943853977
+   "copa": 1785943853977,
+   "premier": 1785944680574
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "16:39",
-     "jogo": "Norwich x United",
-     "odd": 2.2
-    },
-    {
-     "h": "16:42",
-     "jogo": "Islington x Palace",
-     "odd": 2.2
-    },
-    {
-     "h": "16:45",
-     "jogo": "City x Norwich",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "seq RGRG",
-   "alvo": {
-    "h": "16:42",
-    "jogo": "Islington x Palace",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1785944517578
-   },
-   "iniciadoEm": 1785944210365,
-   "tiros": [
-    {
-     "h": "16:39",
-     "jogo": "Norwich x United",
-     "odd": 2.2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785943853977,
-   "premier": 1785939465374,
+   "premier": 1785944680574,
    "euro": 1785941427370,
    "super": 1785940633972
   },
@@ -3401,7 +3370,7 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": 3.4
+   "2026-08-05": 4.8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
