@@ -3457,13 +3457,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -44.9,
-  "ciclos": 1013,
+  "saldo": -51.9,
+  "ciclos": 1014,
   "greens": 699,
-  "redsCiclo": 108,
+  "redsCiclo": 109,
   "aborts": 0,
   "descartes": 206,
   "historico": [
+   {
+    "quando": "2026-08-05T20:34:51.069Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Argélia"
+   },
    {
     "quando": "2026-08-05T20:20:45.671Z",
     "resultado": "GREEN",
@@ -6304,58 +6310,15 @@
    }
   ],
   "consumidas": {
-   "premier": 1785961245474
+   "premier": 1785961245474,
+   "copa": 1785962090871
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "21:25",
-     "jogo": "Colômbia x Inglaterra",
-     "odd": 1.93
-    },
-    {
-     "h": "21:28",
-     "jogo": "Coreia do Sul x Argélia",
-     "odd": 2.1
-    },
-    {
-     "h": "21:31",
-     "jogo": "Brasil x Gana",
-     "odd": 2.075
-    }
-   ],
-   "gatilho": "time Argélia",
-   "alvo": {
-    "h": "21:31",
-    "jogo": "Brasil x Gana",
-    "odd": 2.075,
-    "unidades": 4,
-    "desde": 1785961912277
-   },
-   "iniciadoEm": 1785961249668,
-   "tiros": [
-    {
-     "h": "21:25",
-     "jogo": "Colômbia x Inglaterra",
-     "odd": 1.93,
-     "unidades": 1
-    },
-    {
-     "h": "21:28",
-     "jogo": "Coreia do Sul x Argélia",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785956149774,
    "super": 1785899401696,
    "premier": 1785961245474,
-   "copa": 1785957473380
+   "copa": 1785962090871
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -6378,12 +6341,12 @@
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
-   "2026-08-05": 19.7
+   "2026-08-05": 12.7
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Argélia",
-   "n": 23,
+   "chave": "Canadá",
+   "n": 16,
    "start": 1
   },
   "_obs": {}
