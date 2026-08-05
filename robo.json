@@ -298,13 +298,19 @@
   }
  },
  "o25": {
-  "saldo": -139.3,
-  "ciclos": 995,
+  "saldo": -146.3,
+  "ciclos": 996,
   "greens": 624,
-  "redsCiclo": 158,
+  "redsCiclo": 159,
   "aborts": 0,
   "descartes": 213,
   "historico": [
+   {
+    "quando": "2026-08-05T12:52:08.975Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Áustria"
+   },
    {
     "quando": "2026-08-05T12:32:13.171Z",
     "resultado": "GREEN",
@@ -3266,55 +3272,12 @@
   ],
   "consumidas": {
    "super": 1785932730766,
-   "euro": 1785933132971
+   "euro": 1785933132971,
+   "copa": 1785934328865
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "13:43",
-     "jogo": "Escócia x Turquia",
-     "odd": 2.54
-    },
-    {
-     "h": "13:46",
-     "jogo": "Áustria x EUA",
-     "odd": 2.2
-    },
-    {
-     "h": "13:49",
-     "jogo": "Países Baixos x Argentina",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Áustria",
-   "alvo": {
-    "h": "13:49",
-    "jogo": "Países Baixos x Argentina",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1785934149576
-   },
-   "iniciadoEm": 1785933248069,
-   "tiros": [
-    {
-     "h": "13:43",
-     "jogo": "Escócia x Turquia",
-     "odd": 2.54,
-     "unidades": 1
-    },
-    {
-     "h": "13:46",
-     "jogo": "Áustria x EUA",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785907205801,
+   "copa": 1785934328865,
    "premier": 1785903712499,
    "euro": 1785933132971,
    "super": 1785932730766
@@ -3341,12 +3304,12 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": -1.1
+   "2026-08-05": -8.1
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GGRR",
-   "n": 14,
+   "chave": "GGRRR",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
