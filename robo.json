@@ -3270,8 +3270,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "13:43",
@@ -3291,11 +3291,11 @@
    ],
    "gatilho": "time Áustria",
    "alvo": {
-    "h": "13:46",
-    "jogo": "Áustria x EUA",
+    "h": "13:49",
+    "jogo": "Países Baixos x Argentina",
     "odd": 2.2,
-    "unidades": 2,
-    "desde": 1785933968674
+    "unidades": 4,
+    "desde": 1785934149576
    },
    "iniciadoEm": 1785933248069,
    "tiros": [
@@ -3304,6 +3304,12 @@
      "jogo": "Escócia x Turquia",
      "odd": 2.54,
      "unidades": 1
+    },
+    {
+     "h": "13:46",
+     "jogo": "Áustria x EUA",
+     "odd": 2.2,
+     "unidades": 2
     }
    ]
   },
@@ -3338,10 +3344,10 @@
    "2026-08-05": -1.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "México",
-   "n": 9,
-   "start": 2
+   "tipo": "seq",
+   "chave": "GGRR",
+   "n": 14,
+   "start": 1
   },
   "_obs": {}
  },
