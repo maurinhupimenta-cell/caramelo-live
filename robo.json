@@ -3436,7 +3436,37 @@
    "copa": 1785962630370,
    "euro": 1785963413569
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:15",
+     "jogo": "Tottenham x Norwich",
+     "odd": 2.4
+    },
+    {
+     "h": "22:18",
+     "jogo": "Everton x Watford",
+     "odd": 2.2
+    },
+    {
+     "h": "22:21",
+     "jogo": "Burnley x Leicester",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "seq GRGRR",
+   "alvo": {
+    "h": "22:15",
+    "jogo": "Tottenham x Norwich",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1785964312781
+   },
+   "iniciadoEm": 1785964312781
+  },
   "cooldown": {
    "copa": 1785962630370,
    "premier": 1785955663167,
@@ -3469,8 +3499,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGRRR",
-   "n": 19,
+   "chave": "GRGRR",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
