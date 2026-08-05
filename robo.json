@@ -239,8 +239,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "03:49",
@@ -260,13 +260,21 @@
    ],
    "gatilho": "seq RRRRR",
    "alvo": {
-    "h": "03:49",
-    "jogo": "Bogota x Quito",
-    "odd": 5.5,
-    "unidades": 1,
-    "desde": 1785900170795
+    "h": "03:52",
+    "jogo": "Rio de Janeiro x La Boca",
+    "odd": 4.75,
+    "unidades": 2,
+    "desde": 1785900175489
    },
-   "iniciadoEm": 1785900170795
+   "iniciadoEm": 1785900170795,
+   "tiros": [
+    {
+     "h": "03:49",
+     "jogo": "Bogota x Quito",
+     "odd": 5.5,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785688526966,
