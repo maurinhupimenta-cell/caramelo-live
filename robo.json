@@ -298,13 +298,19 @@
   }
  },
  "o25": {
-  "saldo": -140.4,
-  "ciclos": 994,
-  "greens": 623,
+  "saldo": -139.3,
+  "ciclos": 995,
+  "greens": 624,
   "redsCiclo": 158,
   "aborts": 0,
   "descartes": 213,
   "historico": [
+   {
+    "quando": "2026-08-05T12:32:13.171Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Alemanha x Suíça @2.1 (tiro 1) · gatilho: coluna :32"
+   },
    {
     "quando": "2026-08-05T12:25:30.970Z",
     "resultado": "RED_CICLO",
@@ -3259,43 +3265,14 @@
    }
   ],
   "consumidas": {
-   "super": 1785932730766
+   "super": 1785932730766,
+   "euro": 1785933132971
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "13:29",
-     "jogo": "Alemanha x Suíça",
-     "odd": 2.1
-    },
-    {
-     "h": "13:32",
-     "jogo": "Escócia x Bélgica",
-     "odd": 2.15
-    },
-    {
-     "h": "13:35",
-     "jogo": "Romênia x Dinamarca",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "coluna :32",
-   "alvo": {
-    "h": "13:29",
-    "jogo": "Alemanha x Suíça",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785932732872
-   },
-   "iniciadoEm": 1785932732872
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785907205801,
    "premier": 1785903712499,
-   "euro": 1785908571892,
+   "euro": 1785933132971,
    "super": 1785932730766
   },
   "dias": {
@@ -3320,7 +3297,7 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": -2.2
+   "2026-08-05": -1.1
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
