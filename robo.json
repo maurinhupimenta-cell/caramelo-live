@@ -3364,7 +3364,37 @@
    "euro": 1785947930071,
    "copa": 1785948471477
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:01",
+     "jogo": "Lima x Guayaquil",
+     "odd": 2.05
+    },
+    {
+     "h": "18:04",
+     "jogo": "Buenos Aires x Santiago",
+     "odd": 1.98
+    },
+    {
+     "h": "18:07",
+     "jogo": "Itaquera x Lima",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "odd 1.98",
+   "alvo": {
+    "h": "18:01",
+    "jogo": "Lima x Guayaquil",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785948895566
+   },
+   "iniciadoEm": 1785948895566
+  },
   "cooldown": {
    "copa": 1785948471477,
    "premier": 1785944680574,
@@ -3396,26 +3426,27 @@
    "2026-08-05": 0.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "República Tcheca",
-   "n": 9,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.98",
+   "n": 12,
+   "start": 2
   },
-  "_obs": {
-   "super": {
-    "desde": 1785948893474,
-    "gatilho": "odd 1.98"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
-  "saldo": -52,
-  "ciclos": 1007,
-  "greens": 693,
+  "saldo": -51,
+  "ciclos": 1008,
+  "greens": 694,
   "redsCiclo": 108,
   "aborts": 0,
   "descartes": 206,
   "historico": [
+   {
+    "quando": "2026-08-05T16:56:51.868Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Haiti x Canadá @1.98 (tiro 2) · gatilho: time Canadá"
+   },
    {
     "quando": "2026-08-05T16:44:44.973Z",
     "resultado": "GREEN",
@@ -6220,52 +6251,15 @@
    }
   ],
   "consumidas": {
-   "premier": 1785948284773
+   "premier": 1785948284773,
+   "copa": 1785949011668
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:49",
-     "jogo": "Nova Zelândia x Bélgica",
-     "odd": 1.98
-    },
-    {
-     "h": "17:52",
-     "jogo": "Haiti x Canadá",
-     "odd": 1.98
-    },
-    {
-     "h": "17:55",
-     "jogo": "Uzbequistão x Bélgica",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "time Canadá",
-   "alvo": {
-    "h": "17:52",
-    "jogo": "Haiti x Canadá",
-    "odd": 1.98,
-    "unidades": 2,
-    "desde": 1785948710070
-   },
-   "iniciadoEm": 1785948473769,
-   "tiros": [
-    {
-     "h": "17:49",
-     "jogo": "Nova Zelândia x Bélgica",
-     "odd": 1.98,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785883200300,
    "super": 1785899401696,
    "premier": 1785948284773,
-   "copa": 1785944871969
+   "copa": 1785949011668
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -6288,13 +6282,13 @@
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
-   "2026-08-05": 12.6
+   "2026-08-05": 13.6
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Nova Zelândia",
    "n": 12,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
