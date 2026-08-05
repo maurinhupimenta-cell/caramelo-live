@@ -6223,7 +6223,37 @@
   "consumidas": {
    "copa": 1785944871969
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:42",
+     "jogo": "Watford x Southampton",
+     "odd": 2.05
+    },
+    {
+     "h": "17:45",
+     "jogo": "Brighton x Everton",
+     "odd": 1.8
+    },
+    {
+     "h": "17:48",
+     "jogo": "Southampton x Norwich",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "odd 1.8",
+   "alvo": {
+    "h": "17:42",
+    "jogo": "Watford x Southampton",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785947607376
+   },
+   "iniciadoEm": 1785947607376
+  },
   "cooldown": {
    "euro": 1785883200300,
    "super": 1785899401696,
@@ -6254,10 +6284,10 @@
    "2026-08-05": 11.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Nova Zelândia",
-   "n": 10,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.8",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  }
