@@ -298,13 +298,19 @@
   }
  },
  "o25": {
-  "saldo": -137.7,
-  "ciclos": 1011,
-  "greens": 635,
+  "saldo": -136.7,
+  "ciclos": 1012,
+  "greens": 636,
   "redsCiclo": 160,
   "aborts": 0,
   "descartes": 216,
   "historico": [
+   {
+    "quando": "2026-08-05T17:08:50.967Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Buenos Aires x Santiago @1.98 (tiro 2) · gatilho: odd 1.98"
+   },
    {
     "quando": "2026-08-05T16:54:53.474Z",
     "resultado": "GREEN_OBS",
@@ -3362,52 +3368,15 @@
   ],
   "consumidas": {
    "euro": 1785947930071,
-   "copa": 1785948471477
+   "copa": 1785948471477,
+   "super": 1785949730674
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "18:01",
-     "jogo": "Lima x Guayaquil",
-     "odd": 2.05
-    },
-    {
-     "h": "18:04",
-     "jogo": "Buenos Aires x Santiago",
-     "odd": 1.98
-    },
-    {
-     "h": "18:07",
-     "jogo": "Itaquera x Lima",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "odd 1.98",
-   "alvo": {
-    "h": "18:04",
-    "jogo": "Buenos Aires x Santiago",
-    "odd": 1.98,
-    "unidades": 2,
-    "desde": 1785949434271
-   },
-   "iniciadoEm": 1785948895566,
-   "tiros": [
-    {
-     "h": "18:01",
-     "jogo": "Lima x Guayaquil",
-     "odd": 2.05,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785948471477,
    "premier": 1785944680574,
    "euro": 1785947930071,
-   "super": 1785945171969
+   "super": 1785949730674
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -3431,12 +3400,12 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": 0.5
+   "2026-08-05": 1.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.98",
-   "n": 12,
+   "tipo": "seq",
+   "chave": "RGRG",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
