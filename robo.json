@@ -298,13 +298,19 @@
   }
  },
  "o25": {
-  "saldo": -136.4,
-  "ciclos": 1018,
-  "greens": 641,
+  "saldo": -135.2,
+  "ciclos": 1019,
+  "greens": 642,
   "redsCiclo": 161,
   "aborts": 0,
   "descartes": 216,
   "historico": [
+   {
+    "quando": "2026-08-05T19:07:49.672Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Dinamarca x Inglaterra @2.2 (tiro 1) · gatilho: seq GRRRR"
+   },
    {
     "quando": "2026-08-05T18:58:53.167Z",
     "resultado": "RED_CICLO",
@@ -3405,43 +3411,14 @@
   "consumidas": {
    "premier": 1785955663167,
    "super": 1785955970568,
-   "copa": 1785956332877
+   "copa": 1785956332877,
+   "euro": 1785956869469
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:05",
-     "jogo": "Dinamarca x Inglaterra",
-     "odd": 2.2
-    },
-    {
-     "h": "20:08",
-     "jogo": "Alemanha x Escócia",
-     "odd": 2.15
-    },
-    {
-     "h": "20:11",
-     "jogo": "Geórgia x Inglaterra",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "seq GRRRR",
-   "alvo": {
-    "h": "20:05",
-    "jogo": "Dinamarca x Inglaterra",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785956603778
-   },
-   "iniciadoEm": 1785956603778
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785956332877,
    "premier": 1785955663167,
-   "euro": 1785952250166,
+   "euro": 1785956869469,
    "super": 1785955970568
   },
   "dias": {
@@ -3466,7 +3443,7 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": 1.8
+   "2026-08-05": 3
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -6312,7 +6289,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1785953271173,
    "premier": 1785954229975,
    "euro": 1785956149774
   },
