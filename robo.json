@@ -298,13 +298,19 @@
   }
  },
  "o25": {
-  "saldo": -130.2,
-  "ciclos": 1023,
-  "greens": 645,
+  "saldo": -128.8,
+  "ciclos": 1024,
+  "greens": 646,
   "redsCiclo": 161,
   "aborts": 0,
   "descartes": 217,
   "historico": [
+   {
+    "quando": "2026-08-05T21:18:50.567Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "premier · Tottenham x Norwich @2.4 (tiro 1) · gatilho: seq GRGRR"
+   },
    {
     "quando": "2026-08-05T20:56:53.769Z",
     "resultado": "GREEN",
@@ -3434,42 +3440,13 @@
   ],
   "consumidas": {
    "copa": 1785962630370,
-   "euro": 1785963413569
+   "euro": 1785963413569,
+   "premier": 1785964730369
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:15",
-     "jogo": "Tottenham x Norwich",
-     "odd": 2.4
-    },
-    {
-     "h": "22:18",
-     "jogo": "Everton x Watford",
-     "odd": 2.2
-    },
-    {
-     "h": "22:21",
-     "jogo": "Burnley x Leicester",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "seq GRGRR",
-   "alvo": {
-    "h": "22:15",
-    "jogo": "Tottenham x Norwich",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1785964312781
-   },
-   "iniciadoEm": 1785964312781
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785962630370,
-   "premier": 1785955663167,
+   "premier": 1785964730369,
    "euro": 1785963413569,
    "super": 1785960472976
   },
@@ -3495,7 +3472,7 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": 8
+   "2026-08-05": 9.4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
