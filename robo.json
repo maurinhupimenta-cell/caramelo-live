@@ -3448,7 +3448,45 @@
    "premier": 1785964730369,
    "super": 1785965991772
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "23:02",
+     "jogo": "Romênia x Eslovênia",
+     "odd": 2.5
+    },
+    {
+     "h": "23:05",
+     "jogo": "Inglaterra x Bélgica",
+     "odd": 2.05
+    },
+    {
+     "h": "23:08",
+     "jogo": "Itália x Albânia",
+     "odd": 2.7
+    }
+   ],
+   "gatilho": "odd 2.05",
+   "alvo": {
+    "h": "23:05",
+    "jogo": "Inglaterra x Bélgica",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1785967615169
+   },
+   "iniciadoEm": 1785967014366,
+   "tiros": [
+    {
+     "h": "23:02",
+     "jogo": "Romênia x Eslovênia",
+     "odd": 2.5,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1785962630370,
    "premier": 1785964730369,
@@ -3480,9 +3518,9 @@
    "2026-08-05": 10.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRRG",
-   "n": 17,
+   "tipo": "odd",
+   "chave": "2.05",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
