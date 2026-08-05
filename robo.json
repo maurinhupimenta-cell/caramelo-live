@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -142.3,
-  "ciclos": 196,
+  "saldo": -149.3,
+  "ciclos": 197,
   "greens": 66,
-  "redsCiclo": 82,
+  "redsCiclo": 83,
   "aborts": 0,
   "descartes": 48,
   "historico": [
+   {
+    "quando": "2026-08-05T04:32:56.189Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: seq RRRRR"
+   },
    {
     "quando": "2026-08-05T04:21:52.492Z",
     "resultado": "GREEN",
@@ -249,58 +255,15 @@
    }
   ],
   "consumidas": {
-   "premier": 1785903712201
+   "premier": 1785903712201,
+   "super": 1785904375898
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "05:22",
-     "jogo": "Belo Horizonte x Agua Branca",
-     "odd": 3.8
-    },
-    {
-     "h": "05:25",
-     "jogo": "Santiago x Quito",
-     "odd": 4
-    },
-    {
-     "h": "05:28",
-     "jogo": "Belo Horizonte x Bogota",
-     "odd": 4.75
-    }
-   ],
-   "gatilho": "seq RRRRR",
-   "alvo": {
-    "h": "05:28",
-    "jogo": "Belo Horizonte x Bogota",
-    "odd": 4.75,
-    "unidades": 4,
-    "desde": 1785904106698
-   },
-   "iniciadoEm": 1785903780399,
-   "tiros": [
-    {
-     "h": "05:22",
-     "jogo": "Belo Horizonte x Agua Branca",
-     "odd": 3.8,
-     "unidades": 1
-    },
-    {
-     "h": "05:25",
-     "jogo": "Santiago x Quito",
-     "odd": 4,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785688526966,
    "premier": 1785903712201,
    "euro": 1785464913993,
-   "super": 1785900179597
+   "super": 1785904375898
   },
   "dias": {
    "2026-07-15": -35,
@@ -318,7 +281,7 @@
    "2026-08-01": -7,
    "2026-08-02": -7,
    "2026-08-04": 19,
-   "2026-08-05": 25
+   "2026-08-05": 18
   },
   "_gatilhoAtual": {
    "tipo": "seq",
