@@ -3239,13 +3239,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -62.4,
-  "ciclos": 995,
-  "greens": 683,
+  "saldo": -61.4,
+  "ciclos": 996,
+  "greens": 684,
   "redsCiclo": 108,
   "aborts": 0,
   "descartes": 204,
   "historico": [
+   {
+    "quando": "2026-08-05T03:41:57.497Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Burnley x Tottenham @2.02 (tiro 1) · gatilho: time Chelsea"
+   },
    {
     "quando": "2026-08-05T03:10:01.891Z",
     "resultado": "GREEN",
@@ -5979,13 +5985,14 @@
   ],
   "consumidas": {
    "copa": 1785898856999,
-   "super": 1785899401696
+   "super": 1785899401696,
+   "premier": 1785901317302
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1785883200300,
    "super": 1785899401696,
-   "premier": 1785897526300,
+   "premier": 1785901317302,
    "copa": 1785898856999
   },
   "dias": {
@@ -6009,12 +6016,12 @@
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
-   "2026-08-05": 2.2
+   "2026-08-05": 3.2
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "0-0",
-   "n": 8,
+   "tipo": "time",
+   "chave": "Chelsea",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
