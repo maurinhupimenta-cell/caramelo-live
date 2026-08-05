@@ -3395,7 +3395,37 @@
    "copa": 1785952313066,
    "premier": 1785955663167
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:49",
+     "jogo": "Guayaquil x Medellin",
+     "odd": 2.25
+    },
+    {
+     "h": "19:52",
+     "jogo": "Bogota x Rio de Janeiro",
+     "odd": 2.45
+    },
+    {
+     "h": "19:55",
+     "jogo": "Montevideo x Porto Alegre",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "odd 2.45",
+   "alvo": {
+    "h": "19:49",
+    "jogo": "Guayaquil x Medellin",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785955669676
+   },
+   "iniciadoEm": 1785955669676
+  },
   "cooldown": {
    "copa": 1785952313066,
    "premier": 1785955663167,
