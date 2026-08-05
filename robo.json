@@ -3277,7 +3277,6 @@
    }
   ],
   "consumidas": {
-   "super": 1785932730766,
    "euro": 1785933132971,
    "copa": 1785934328865,
    "premier": 1785935680273
@@ -6107,8 +6106,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "14:22",
@@ -6128,13 +6127,21 @@
    ],
    "gatilho": "seq RRRR",
    "alvo": {
-    "h": "14:22",
-    "jogo": "Japão x Qatar",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785936109766
+    "h": "14:25",
+    "jogo": "Nova Zelândia x México",
+    "odd": 1.93,
+    "unidades": 2,
+    "desde": 1785936327569
    },
-   "iniciadoEm": 1785936109766
+   "iniciadoEm": 1785936109766,
+   "tiros": [
+    {
+     "h": "14:22",
+     "jogo": "Japão x Qatar",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785883200300,
@@ -6166,10 +6173,10 @@
    "2026-08-05": 7.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRR",
-   "n": 20,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":37",
+   "n": 14,
+   "start": 3
   },
   "_obs": {}
  }
