@@ -298,13 +298,19 @@
   }
  },
  "o25": {
-  "saldo": -140.4,
-  "ciclos": 1008,
-  "greens": 633,
+  "saldo": -139.2,
+  "ciclos": 1009,
+  "greens": 634,
   "redsCiclo": 160,
   "aborts": 0,
   "descartes": 215,
   "historico": [
+   {
+    "quando": "2026-08-05T16:38:50.267Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Suíça x Itália @2.2 (tiro 1) · gatilho: coluna :32"
+   },
    {
     "quando": "2026-08-05T15:52:52.165Z",
     "resultado": "RED_CICLO",
@@ -3344,43 +3350,14 @@
   ],
   "consumidas": {
    "premier": 1785944680574,
-   "super": 1785945171969
+   "super": 1785945171969,
+   "euro": 1785947930071
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:29",
-     "jogo": "Suíça x Itália",
-     "odd": 2.2
-    },
-    {
-     "h": "17:32",
-     "jogo": "Dinamarca x Bélgica",
-     "odd": 2.25
-    },
-    {
-     "h": "17:35",
-     "jogo": "Suíça x Alemanha",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "coluna :32",
-   "alvo": {
-    "h": "17:29",
-    "jogo": "Suíça x Itália",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785947033873
-   },
-   "iniciadoEm": 1785947033873
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785943853977,
    "premier": 1785944680574,
-   "euro": 1785941427370,
+   "euro": 1785947930071,
    "super": 1785945171969
   },
   "dias": {
@@ -3405,13 +3382,13 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": -2.2
+   "2026-08-05": -1
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":32",
+   "chave": ":50",
    "n": 17,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
@@ -6287,7 +6264,7 @@
    "tipo": "odd",
    "chave": "1.8",
    "n": 8,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
