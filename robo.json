@@ -298,13 +298,19 @@
   }
  },
  "o25": {
-  "saldo": -127.3,
-  "ciclos": 1025,
-  "greens": 647,
+  "saldo": -126.2,
+  "ciclos": 1026,
+  "greens": 648,
   "redsCiclo": 161,
   "aborts": 0,
   "descartes": 217,
   "historico": [
+   {
+    "quando": "2026-08-05T22:08:53.570Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Inglaterra x Bélgica @2.05 (tiro 2) · gatilho: odd 2.05"
+   },
    {
     "quando": "2026-08-05T21:39:51.970Z",
     "resultado": "GREEN",
@@ -3446,51 +3452,14 @@
   ],
   "consumidas": {
    "premier": 1785964730369,
-   "super": 1785965991772
+   "super": 1785965991772,
+   "euro": 1785967733373
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "23:02",
-     "jogo": "Romênia x Eslovênia",
-     "odd": 2.5
-    },
-    {
-     "h": "23:05",
-     "jogo": "Inglaterra x Bélgica",
-     "odd": 2.05
-    },
-    {
-     "h": "23:08",
-     "jogo": "Itália x Albânia",
-     "odd": 2.7
-    }
-   ],
-   "gatilho": "odd 2.05",
-   "alvo": {
-    "h": "23:05",
-    "jogo": "Inglaterra x Bélgica",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1785967615169
-   },
-   "iniciadoEm": 1785967014366,
-   "tiros": [
-    {
-     "h": "23:02",
-     "jogo": "Romênia x Eslovênia",
-     "odd": 2.5,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785962630370,
    "premier": 1785964730369,
-   "euro": 1785963413569,
+   "euro": 1785967733373,
    "super": 1785965991772
   },
   "dias": {
@@ -3515,7 +3484,7 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": 10.9
+   "2026-08-05": 12
   },
   "_gatilhoAtual": {
    "tipo": "odd",
