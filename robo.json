@@ -298,13 +298,19 @@
   }
  },
  "o25": {
-  "saldo": -129.4,
-  "ciclos": 1017,
+  "saldo": -136.4,
+  "ciclos": 1018,
   "greens": 641,
-  "redsCiclo": 160,
+  "redsCiclo": 161,
   "aborts": 0,
   "descartes": 216,
   "historico": [
+   {
+    "quando": "2026-08-05T18:58:53.167Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Austrália"
+   },
    {
     "quando": "2026-08-05T18:52:50.675Z",
     "resultado": "GREEN",
@@ -3398,55 +3404,42 @@
   ],
   "consumidas": {
    "premier": 1785955663167,
-   "super": 1785955970568
+   "super": 1785955970568,
+   "copa": 1785956332877
   },
   "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "19:49",
-     "jogo": "Colômbia x Coreia do Sul",
-     "odd": 2.4
+     "h": "20:05",
+     "jogo": "Dinamarca x Inglaterra",
+     "odd": 2.2
     },
     {
-     "h": "19:52",
-     "jogo": "Austrália x Curação",
+     "h": "20:08",
+     "jogo": "Alemanha x Escócia",
      "odd": 2.15
     },
     {
-     "h": "19:55",
-     "jogo": "Nova Zelândia x Japão",
-     "odd": 2.3
+     "h": "20:11",
+     "jogo": "Geórgia x Inglaterra",
+     "odd": 2.2
     }
    ],
-   "gatilho": "time Austrália",
+   "gatilho": "seq GRRRR",
    "alvo": {
-    "h": "19:55",
-    "jogo": "Nova Zelândia x Japão",
-    "odd": 2.3,
-    "unidades": 4,
-    "desde": 1785956330273
+    "h": "20:05",
+    "jogo": "Dinamarca x Inglaterra",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785956603778
    },
-   "iniciadoEm": 1785955972676,
-   "tiros": [
-    {
-     "h": "19:49",
-     "jogo": "Colômbia x Coreia do Sul",
-     "odd": 2.4,
-     "unidades": 1
-    },
-    {
-     "h": "19:52",
-     "jogo": "Austrália x Curação",
-     "odd": 2.15,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1785956603778
   },
   "cooldown": {
-   "copa": 1785952313066,
+   "copa": 1785956332877,
    "premier": 1785955663167,
    "euro": 1785952250166,
    "super": 1785955970568
@@ -3473,12 +3466,12 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": 8.8
+   "2026-08-05": 1.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Austrália",
-   "n": 18,
+   "tipo": "seq",
+   "chave": "GRRRR",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
