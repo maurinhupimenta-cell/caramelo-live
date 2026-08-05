@@ -6108,7 +6108,37 @@
   "consumidas": {
    "copa": 1785932508779
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:39",
+     "jogo": "Aston x Chelsea",
+     "odd": 2
+    },
+    {
+     "h": "13:42",
+     "jogo": "Liverpool x Brentford",
+     "odd": 2.05
+    },
+    {
+     "h": "13:45",
+     "jogo": "Wolverhampton x United",
+     "odd": 1.85
+    }
+   ],
+   "gatilho": "odd 2.05",
+   "alvo": {
+    "h": "13:39",
+    "jogo": "Aston x Chelsea",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1785933070665
+   },
+   "iniciadoEm": 1785933070665
+  },
   "cooldown": {
    "euro": 1785883200300,
    "super": 1785899401696,
@@ -6139,16 +6169,11 @@
    "2026-08-05": 6.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":25",
-   "n": 13,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.05",
+   "n": 16,
+   "start": 3
   },
-  "_obs": {
-   "premier": {
-    "desde": 1785933056675,
-    "gatilho": "odd 2.05"
-   }
-  }
+  "_obs": {}
  }
 }
