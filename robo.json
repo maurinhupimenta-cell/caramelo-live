@@ -3268,7 +3268,37 @@
    "super": 1785932730766,
    "euro": 1785933132971
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:43",
+     "jogo": "Escócia x Turquia",
+     "odd": 2.54
+    },
+    {
+     "h": "13:46",
+     "jogo": "Áustria x EUA",
+     "odd": 2.2
+    },
+    {
+     "h": "13:49",
+     "jogo": "Países Baixos x Argentina",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time Áustria",
+   "alvo": {
+    "h": "13:43",
+    "jogo": "Escócia x Turquia",
+    "odd": 2.54,
+    "unidades": 1,
+    "desde": 1785933248069
+   },
+   "iniciadoEm": 1785933248069
+  },
   "cooldown": {
    "copa": 1785907205801,
    "premier": 1785903712499,
@@ -3300,10 +3330,10 @@
    "2026-08-05": -1.1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":32",
-   "n": 13,
-   "start": 1
+   "tipo": "time",
+   "chave": "Áustria",
+   "n": 10,
+   "start": 3
   },
   "_obs": {}
  },
@@ -6149,7 +6179,7 @@
    "tipo": "odd",
    "chave": "2.05",
    "n": 16,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
