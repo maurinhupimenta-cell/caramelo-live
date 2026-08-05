@@ -279,13 +279,19 @@
   }
  },
  "o25": {
-  "saldo": -140.6,
-  "ciclos": 980,
-  "greens": 613,
+  "saldo": -139.6,
+  "ciclos": 981,
+  "greens": 614,
   "redsCiclo": 156,
   "aborts": 0,
   "descartes": 211,
   "historico": [
+   {
+    "quando": "2026-08-05T01:31:55.395Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Alemanha x Inglaterra @2.02 (tiro 1) · gatilho: placar goleada (3+)"
+   },
    {
     "quando": "2026-08-04T22:47:58.493Z",
     "resultado": "GREEN",
@@ -3155,42 +3161,14 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "02:29",
-     "jogo": "Alemanha x Inglaterra",
-     "odd": 2.02
-    },
-    {
-     "h": "02:32",
-     "jogo": "Sérvia x França",
-     "odd": 2.25
-    },
-    {
-     "h": "02:35",
-     "jogo": "Eslovênia x Alemanha",
-     "odd": 2.45
-    }
-   ],
-   "gatilho": "placar goleada (3+)",
-   "alvo": {
-    "h": "02:29",
-    "jogo": "Alemanha x Inglaterra",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1785893160798
-   },
-   "iniciadoEm": 1785893160798
+  "consumidas": {
+   "euro": 1785893515105
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785876417597,
    "premier": 1785880794595,
-   "euro": 1785883678192,
+   "euro": 1785893515105,
    "super": 1785875877195
   },
   "dias": {
@@ -3214,7 +3192,7 @@
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
-   "2026-08-04": 5.5
+   "2026-08-04": 6.5
   },
   "_gatilhoAtual": {
    "tipo": "placar",
