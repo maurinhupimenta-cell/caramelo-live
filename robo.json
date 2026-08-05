@@ -3233,10 +3233,10 @@
    "2026-08-04": 6.5
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
+   "tipo": "time",
+   "chave": "Liverpool",
    "n": 8,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
@@ -5964,7 +5964,37 @@
   "consumidas": {
    "copa": 1785894956495
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:36",
+     "jogo": "West Ham x Tottenham",
+     "odd": 2.25
+    },
+    {
+     "h": "03:39",
+     "jogo": "Liverpool x Palace",
+     "odd": 1.98
+    },
+    {
+     "h": "03:42",
+     "jogo": "Islington x West Ham",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time Liverpool",
+   "alvo": {
+    "h": "03:36",
+    "jogo": "West Ham x Tottenham",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785896877891
+   },
+   "iniciadoEm": 1785896877891
+  },
   "cooldown": {
    "euro": 1785883200300,
    "super": 1785885238097,
@@ -5994,10 +6024,10 @@
    "2026-08-04": 1.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.05",
+   "tipo": "time",
+   "chave": "Liverpool",
    "n": 8,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
