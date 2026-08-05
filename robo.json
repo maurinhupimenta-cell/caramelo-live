@@ -3454,13 +3454,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -47.2,
-  "ciclos": 1011,
-  "greens": 697,
+  "saldo": -45.9,
+  "ciclos": 1012,
+  "greens": 698,
   "redsCiclo": 108,
   "aborts": 0,
   "descartes": 206,
   "historico": [
+   {
+    "quando": "2026-08-05T19:17:53.667Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "copa · Coreia do Sul x Canadá @2.15 (tiro 2) · gatilho: time Canadá"
+   },
    {
     "quando": "2026-08-05T18:55:49.971Z",
     "resultado": "GREEN",
@@ -6290,14 +6296,15 @@
   ],
   "consumidas": {
    "premier": 1785954229975,
-   "euro": 1785956149774
+   "euro": 1785956149774,
+   "copa": 1785957473380
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1785956149774,
    "super": 1785899401696,
    "premier": 1785954229975,
-   "copa": 1785953271173
+   "copa": 1785957473380
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -6320,12 +6327,12 @@
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
-   "2026-08-05": 17.4
+   "2026-08-05": 18.7
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":50",
-   "n": 19,
+   "chave": ":22",
+   "n": 20,
    "start": 1
   },
   "_obs": {}
