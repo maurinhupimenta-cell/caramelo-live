@@ -298,13 +298,19 @@
   }
  },
  "o25": {
-  "saldo": -132,
-  "ciclos": 1022,
-  "greens": 644,
+  "saldo": -130.2,
+  "ciclos": 1023,
+  "greens": 645,
   "redsCiclo": 161,
   "aborts": 0,
   "descartes": 217,
   "historico": [
+   {
+    "quando": "2026-08-05T20:56:53.769Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "euro · Eslovênia x Espanha @2.4 (tiro 2) · gatilho: seq RGRRR"
+   },
    {
     "quando": "2026-08-05T20:43:50.567Z",
     "resultado": "GREEN",
@@ -3428,51 +3434,14 @@
   ],
   "consumidas": {
    "super": 1785960472976,
-   "copa": 1785962630370
+   "copa": 1785962630370,
+   "euro": 1785963413569
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "21:50",
-     "jogo": "Hungria x República Tcheca",
-     "odd": 2.7
-    },
-    {
-     "h": "21:53",
-     "jogo": "Eslovênia x Espanha",
-     "odd": 2.4
-    },
-    {
-     "h": "21:56",
-     "jogo": "Polônia x Geórgia",
-     "odd": 2.54
-    }
-   ],
-   "gatilho": "seq RGRRR",
-   "alvo": {
-    "h": "21:53",
-    "jogo": "Eslovênia x Espanha",
-    "odd": 2.4,
-    "unidades": 2,
-    "desde": 1785963230468
-   },
-   "iniciadoEm": 1785962871476,
-   "tiros": [
-    {
-     "h": "21:50",
-     "jogo": "Hungria x República Tcheca",
-     "odd": 2.7,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785962630370,
    "premier": 1785955663167,
-   "euro": 1785956869469,
+   "euro": 1785963413569,
    "super": 1785960472976
   },
   "dias": {
@@ -3497,7 +3466,7 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": 6.2
+   "2026-08-05": 8
   },
   "_gatilhoAtual": {
    "tipo": "seq",
