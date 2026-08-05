@@ -3336,8 +3336,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "16:39",
@@ -3357,13 +3357,21 @@
    ],
    "gatilho": "seq RGRG",
    "alvo": {
-    "h": "16:39",
-    "jogo": "Norwich x United",
+    "h": "16:42",
+    "jogo": "Islington x Palace",
     "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785944210365
+    "unidades": 2,
+    "desde": 1785944517578
    },
-   "iniciadoEm": 1785944210365
+   "iniciadoEm": 1785944210365,
+   "tiros": [
+    {
+     "h": "16:39",
+     "jogo": "Norwich x United",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785943853977,
@@ -3396,8 +3404,8 @@
    "2026-08-05": 3.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRG",
+   "tipo": "odd",
+   "chave": "2.62",
    "n": 8,
    "start": 1
   },
@@ -6202,10 +6210,38 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {
-   "copa": 1785940627572
+  "consumidas": {},
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:40",
+     "jogo": "Brasil x Turquia",
+     "odd": 2.02
+    },
+    {
+     "h": "16:43",
+     "jogo": "Senegal x Canadá",
+     "odd": 2.15
+    },
+    {
+     "h": "16:46",
+     "jogo": "Irã x RD Congo",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "time Canadá",
+   "alvo": {
+    "h": "16:40",
+    "jogo": "Brasil x Turquia",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1785944270271
+   },
+   "iniciadoEm": 1785944270271
   },
-  "ciclo": null,
   "cooldown": {
    "euro": 1785883200300,
    "super": 1785899401696,
@@ -6236,9 +6272,9 @@
    "2026-08-05": 10.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRGG",
-   "n": 8,
+   "tipo": "time",
+   "chave": "Canadá",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
