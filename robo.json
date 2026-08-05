@@ -298,13 +298,19 @@
   }
  },
  "o25": {
-  "saldo": -132.9,
-  "ciclos": 1015,
-  "greens": 639,
+  "saldo": -130.7,
+  "ciclos": 1016,
+  "greens": 640,
   "redsCiclo": 160,
   "aborts": 0,
   "descartes": 216,
   "historico": [
+   {
+    "quando": "2026-08-05T18:47:43.367Z",
+    "resultado": "GREEN",
+    "unidades": 2.2,
+    "detalhe": "premier · Brighton x Leeds @2.3 (tiro 3) · gatilho: seq GRRGG"
+   },
    {
     "quando": "2026-08-05T17:51:53.268Z",
     "resultado": "GREEN",
@@ -3386,56 +3392,13 @@
   ],
   "consumidas": {
    "euro": 1785952250166,
-   "copa": 1785952313066
+   "copa": 1785952313066,
+   "premier": 1785955663167
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "19:39",
-     "jogo": "West Ham x Islington",
-     "odd": 2.45
-    },
-    {
-     "h": "19:42",
-     "jogo": "Leicester x Chelsea",
-     "odd": 2.25
-    },
-    {
-     "h": "19:45",
-     "jogo": "Brighton x Leeds",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "seq GRRGG",
-   "alvo": {
-    "h": "19:45",
-    "jogo": "Brighton x Leeds",
-    "odd": 2.3,
-    "unidades": 4,
-    "desde": 1785955479865
-   },
-   "iniciadoEm": 1785954953666,
-   "tiros": [
-    {
-     "h": "19:39",
-     "jogo": "West Ham x Islington",
-     "odd": 2.45,
-     "unidades": 1
-    },
-    {
-     "h": "19:42",
-     "jogo": "Leicester x Chelsea",
-     "odd": 2.25,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785952313066,
-   "premier": 1785950090170,
+   "premier": 1785955663167,
    "euro": 1785952250166,
    "super": 1785949730674
   },
@@ -3461,13 +3424,13 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": 5.3
+   "2026-08-05": 7.5
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.45",
    "n": 18,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
