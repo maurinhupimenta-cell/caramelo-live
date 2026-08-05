@@ -298,13 +298,19 @@
   }
  },
  "o25": {
-  "saldo": -128.8,
-  "ciclos": 1024,
-  "greens": 646,
+  "saldo": -127.3,
+  "ciclos": 1025,
+  "greens": 647,
   "redsCiclo": 161,
   "aborts": 0,
   "descartes": 217,
   "historico": [
+   {
+    "quando": "2026-08-05T21:39:51.970Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "super · Asuncion x Rio de Janeiro @2.25 (tiro 2) · gatilho: seq GRRRG"
+   },
    {
     "quando": "2026-08-05T21:18:50.567Z",
     "resultado": "GREEN",
@@ -3441,52 +3447,15 @@
   "consumidas": {
    "copa": 1785962630370,
    "euro": 1785963413569,
-   "premier": 1785964730369
+   "premier": 1785964730369,
+   "super": 1785965991772
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "22:31",
-     "jogo": "Itaquera x Belo Horizonte",
-     "odd": 2.15
-    },
-    {
-     "h": "22:34",
-     "jogo": "Asuncion x Rio de Janeiro",
-     "odd": 2.25
-    },
-    {
-     "h": "22:37",
-     "jogo": "Buenos Aires x Bogota",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "seq GRRRG",
-   "alvo": {
-    "h": "22:34",
-    "jogo": "Asuncion x Rio de Janeiro",
-    "odd": 2.25,
-    "unidades": 2,
-    "desde": 1785965642177
-   },
-   "iniciadoEm": 1785965278872,
-   "tiros": [
-    {
-     "h": "22:31",
-     "jogo": "Itaquera x Belo Horizonte",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785962630370,
    "premier": 1785964730369,
    "euro": 1785963413569,
-   "super": 1785960472976
+   "super": 1785965991772
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -3510,7 +3479,7 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": 9.4
+   "2026-08-05": 10.9
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -3522,12 +3491,18 @@
  },
  "ambas": {
   "saldo": -51.9,
-  "ciclos": 1014,
+  "ciclos": 1015,
   "greens": 699,
   "redsCiclo": 109,
   "aborts": 0,
-  "descartes": 206,
+  "descartes": 207,
   "historico": [
+   {
+    "quando": "2026-08-05T21:34:51.476Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time República Tcheca) — liga REARMADA"
+   },
    {
     "quando": "2026-08-05T20:34:51.069Z",
     "resultado": "RED_CICLO",
@@ -6374,7 +6349,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:37",
+     "jogo": "Argentina x Tunísia",
+     "odd": 2.1
+    },
+    {
+     "h": "22:40",
+     "jogo": "Países Baixos x República Tcheca",
+     "odd": 2.1
+    },
+    {
+     "h": "22:43",
+     "jogo": "Bélgica x Turquia",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "time República Tcheca",
+   "alvo": {
+    "h": "22:37",
+    "jogo": "Argentina x Tunísia",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785965693476
+   },
+   "iniciadoEm": 1785965693476
+  },
   "cooldown": {
    "euro": 1785956149774,
    "super": 1785899401696,
@@ -6406,8 +6411,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Canadá",
-   "n": 16,
+   "chave": "República Tcheca",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
