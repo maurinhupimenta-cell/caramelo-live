@@ -5906,8 +5906,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "02:12",
@@ -5927,13 +5927,21 @@
    ],
    "gatilho": "time Everton",
    "alvo": {
-    "h": "02:12",
-    "jogo": "Burnley x Everton",
-    "odd": 1.83,
-    "unidades": 1,
-    "desde": 1785892198000
+    "h": "02:15",
+    "jogo": "Palace x Southampton",
+    "odd": 2,
+    "unidades": 2,
+    "desde": 1785892489698
    },
-   "iniciadoEm": 1785892198000
+   "iniciadoEm": 1785892198000,
+   "tiros": [
+    {
+     "h": "02:12",
+     "jogo": "Burnley x Everton",
+     "odd": 1.83,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785883200300,
