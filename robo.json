@@ -3333,18 +3333,24 @@
    "tipo": "time",
    "chave": "Áustria",
    "n": 10,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -58.3,
-  "ciclos": 1001,
-  "greens": 687,
+  "saldo": -57.3,
+  "ciclos": 1002,
+  "greens": 688,
   "redsCiclo": 108,
   "aborts": 0,
   "descartes": 206,
   "historico": [
+   {
+    "quando": "2026-08-05T12:41:58.372Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Aston x Chelsea @2 (tiro 1) · gatilho: odd 2.05"
+   },
    {
     "quando": "2026-08-05T12:30:56.675Z",
     "resultado": "GREEN_OBS",
@@ -6113,43 +6119,14 @@
    }
   ],
   "consumidas": {
-   "copa": 1785932508779
+   "copa": 1785932508779,
+   "premier": 1785933718172
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "13:39",
-     "jogo": "Aston x Chelsea",
-     "odd": 2
-    },
-    {
-     "h": "13:42",
-     "jogo": "Liverpool x Brentford",
-     "odd": 2.05
-    },
-    {
-     "h": "13:45",
-     "jogo": "Wolverhampton x United",
-     "odd": 1.85
-    }
-   ],
-   "gatilho": "odd 2.05",
-   "alvo": {
-    "h": "13:39",
-    "jogo": "Aston x Chelsea",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1785933070665
-   },
-   "iniciadoEm": 1785933070665
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785883200300,
    "super": 1785899401696,
-   "premier": 1785905254300,
+   "premier": 1785933718172,
    "copa": 1785932508779
   },
   "dias": {
@@ -6173,13 +6150,13 @@
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
-   "2026-08-05": 6.3
+   "2026-08-05": 7.3
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.05",
    "n": 16,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
