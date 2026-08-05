@@ -3237,21 +3237,27 @@
    "2026-08-04": 6.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Liverpool",
-   "n": 8,
-   "start": 2
+   "tipo": "seq",
+   "chave": "RGRR",
+   "n": 10,
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -65.9,
-  "ciclos": 992,
-  "greens": 680,
+  "saldo": -64.6,
+  "ciclos": 993,
+  "greens": 681,
   "redsCiclo": 108,
   "aborts": 0,
   "descartes": 204,
   "historico": [
+   {
+    "quando": "2026-08-05T02:38:46.590Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "premier · West Ham x Tottenham @2.25 (tiro 1) · gatilho: time Liverpool"
+   },
    {
     "quando": "2026-08-05T01:55:56.693Z",
     "resultado": "GREEN",
@@ -5966,43 +5972,14 @@
    }
   ],
   "consumidas": {
-   "copa": 1785894956495
+   "copa": 1785894956495,
+   "premier": 1785897526300
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:36",
-     "jogo": "West Ham x Tottenham",
-     "odd": 2.25
-    },
-    {
-     "h": "03:39",
-     "jogo": "Liverpool x Palace",
-     "odd": 1.98
-    },
-    {
-     "h": "03:42",
-     "jogo": "Islington x West Ham",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "time Liverpool",
-   "alvo": {
-    "h": "03:36",
-    "jogo": "West Ham x Tottenham",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785896877891
-   },
-   "iniciadoEm": 1785896877891
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785883200300,
    "super": 1785885238097,
-   "premier": 1785892735902,
+   "premier": 1785897526300,
    "copa": 1785894956495
   },
   "dias": {
@@ -6025,13 +6002,13 @@
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
-   "2026-08-04": 1.4
+   "2026-08-04": 2.7
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Liverpool",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
