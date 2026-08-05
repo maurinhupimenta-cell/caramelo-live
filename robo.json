@@ -3428,13 +3428,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -49.8,
-  "ciclos": 1009,
-  "greens": 695,
+  "saldo": -48.2,
+  "ciclos": 1010,
+  "greens": 696,
   "redsCiclo": 108,
   "aborts": 0,
   "descartes": 206,
   "historico": [
+   {
+    "quando": "2026-08-05T18:23:50.170Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "premier · Leeds x Norwich @2.15 (tiro 3) · gatilho: odd 1.8"
+   },
    {
     "quando": "2026-08-05T18:07:51.372Z",
     "resultado": "GREEN",
@@ -6251,57 +6257,14 @@
    }
   ],
   "consumidas": {
-   "copa": 1785953271173
+   "copa": 1785953271173,
+   "premier": 1785954229975
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "19:15",
-     "jogo": "United x Southampton",
-     "odd": 2.07
-    },
-    {
-     "h": "19:18",
-     "jogo": "Wolverhampton x Newcastle",
-     "odd": 1.8
-    },
-    {
-     "h": "19:21",
-     "jogo": "Leeds x Norwich",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "odd 1.8",
-   "alvo": {
-    "h": "19:21",
-    "jogo": "Leeds x Norwich",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1785954057165
-   },
-   "iniciadoEm": 1785953273075,
-   "tiros": [
-    {
-     "h": "19:15",
-     "jogo": "United x Southampton",
-     "odd": 2.07,
-     "unidades": 1
-    },
-    {
-     "h": "19:18",
-     "jogo": "Wolverhampton x Newcastle",
-     "odd": 1.8,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785883200300,
    "super": 1785899401696,
-   "premier": 1785948284773,
+   "premier": 1785954229975,
    "copa": 1785953271173
   },
   "dias": {
@@ -6325,7 +6288,7 @@
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
-   "2026-08-05": 14.8
+   "2026-08-05": 16.4
   },
   "_gatilhoAtual": {
    "tipo": "odd",
