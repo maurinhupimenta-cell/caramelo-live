@@ -3390,8 +3390,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "19:39",
@@ -3411,13 +3411,21 @@
    ],
    "gatilho": "seq GRRGG",
    "alvo": {
-    "h": "19:39",
-    "jogo": "West Ham x Islington",
-    "odd": 2.45,
-    "unidades": 1,
-    "desde": 1785954953666
+    "h": "19:42",
+    "jogo": "Leicester x Chelsea",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1785955300067
    },
-   "iniciadoEm": 1785954953666
+   "iniciadoEm": 1785954953666,
+   "tiros": [
+    {
+     "h": "19:39",
+     "jogo": "West Ham x Islington",
+     "odd": 2.45,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785952313066,
@@ -3450,10 +3458,10 @@
    "2026-08-05": 5.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRGG",
-   "n": 10,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.45",
+   "n": 18,
+   "start": 3
   },
   "_obs": {}
  },
