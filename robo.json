@@ -3412,7 +3412,37 @@
    "copa": 1785956332877,
    "euro": 1785956869469
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:58",
+     "jogo": "Belo Horizonte x Quito",
+     "odd": 2.15
+    },
+    {
+     "h": "21:01",
+     "jogo": "Penarol x Itaquera",
+     "odd": 2.45
+    },
+    {
+     "h": "21:04",
+     "jogo": "Santos x Bogota",
+     "odd": 2.7
+    }
+   ],
+   "gatilho": "odd 2.45",
+   "alvo": {
+    "h": "20:58",
+    "jogo": "Belo Horizonte x Quito",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785959570773
+   },
+   "iniciadoEm": 1785959570773
+  },
   "cooldown": {
    "copa": 1785956332877,
    "premier": 1785955663167,
@@ -3444,9 +3474,9 @@
    "2026-08-05": 3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRRR",
-   "n": 14,
+   "tipo": "odd",
+   "chave": "2.45",
+   "n": 20,
    "start": 1
   },
   "_obs": {}
@@ -6293,7 +6323,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1785956149774,
    "copa": 1785957473380
   },
   "ciclo": null,
