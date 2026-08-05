@@ -298,13 +298,25 @@
   }
  },
  "o25": {
-  "saldo": -135.6,
-  "ciclos": 990,
-  "greens": 621,
+  "saldo": -134.6,
+  "ciclos": 992,
+  "greens": 622,
   "redsCiclo": 157,
   "aborts": 0,
-  "descartes": 212,
+  "descartes": 213,
   "historico": [
+   {
+    "quando": "2026-08-05T05:37:53.093Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Buenos Aires x Guayaquil @2.02 (tiro 1) · gatilho: time Itaquera"
+   },
+   {
+    "quando": "2026-08-05T05:32:57.492Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho time Itaquera) — liga REARMADA"
+   },
    {
     "quando": "2026-08-05T05:20:05.996Z",
     "resultado": "GREEN",
@@ -3235,16 +3247,16 @@
    }
   ],
   "consumidas": {
-   "super": 1785904376198,
    "euro": 1785904678496,
-   "copa": 1785907205801
+   "copa": 1785907205801,
+   "super": 1785908272900
   },
   "ciclo": null,
   "cooldown": {
    "copa": 1785907205801,
    "premier": 1785903712499,
    "euro": 1785904678496,
-   "super": 1785904376198
+   "super": 1785908272900
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -3268,12 +3280,12 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": 2.6
+   "2026-08-05": 3.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.1",
-   "n": 8,
+   "tipo": "time",
+   "chave": "Itaquera",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
