@@ -288,13 +288,19 @@
   }
  },
  "o25": {
-  "saldo": -135.2,
-  "ciclos": 985,
-  "greens": 617,
+  "saldo": -133.4,
+  "ciclos": 986,
+  "greens": 618,
   "redsCiclo": 156,
   "aborts": 0,
   "descartes": 212,
   "historico": [
+   {
+    "quando": "2026-08-05T04:09:05.093Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "copa · Paraguai x Marrocos @2.4 (tiro 2) · gatilho: seq RRRG"
+   },
    {
     "quando": "2026-08-05T03:13:57.796Z",
     "resultado": "GREEN",
@@ -3196,49 +3202,12 @@
   ],
   "consumidas": {
    "premier": 1785899580495,
-   "euro": 1785899637692
+   "euro": 1785899637692,
+   "copa": 1785902944899
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "05:01",
-     "jogo": "RD Congo x Colômbia",
-     "odd": 2.1
-    },
-    {
-     "h": "05:04",
-     "jogo": "Paraguai x Marrocos",
-     "odd": 2.4
-    },
-    {
-     "h": "05:07",
-     "jogo": "Argentina x Gana",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "seq RRRG",
-   "alvo": {
-    "h": "05:04",
-    "jogo": "Paraguai x Marrocos",
-    "odd": 2.4,
-    "unidades": 2,
-    "desde": 1785902762299
-   },
-   "iniciadoEm": 1785902516800,
-   "tiros": [
-    {
-     "h": "05:01",
-     "jogo": "RD Congo x Colômbia",
-     "odd": 2.1,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785897836700,
+   "copa": 1785902944899,
    "premier": 1785899580495,
    "euro": 1785899637692,
    "super": 1785875877195
@@ -3265,7 +3234,7 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": 3
+   "2026-08-05": 4.8
   },
   "_gatilhoAtual": {
    "tipo": "seq",
