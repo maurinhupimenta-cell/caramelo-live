@@ -3443,7 +3443,37 @@
    "euro": 1785963413569,
    "premier": 1785964730369
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:31",
+     "jogo": "Itaquera x Belo Horizonte",
+     "odd": 2.15
+    },
+    {
+     "h": "22:34",
+     "jogo": "Asuncion x Rio de Janeiro",
+     "odd": 2.25
+    },
+    {
+     "h": "22:37",
+     "jogo": "Buenos Aires x Bogota",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "seq GRRRG",
+   "alvo": {
+    "h": "22:31",
+    "jogo": "Itaquera x Belo Horizonte",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785965278872
+   },
+   "iniciadoEm": 1785965278872
+  },
   "cooldown": {
    "copa": 1785962630370,
    "premier": 1785964730369,
@@ -3476,8 +3506,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRGRR",
-   "n": 9,
+   "chave": "GRRRG",
+   "n": 17,
    "start": 1
   },
   "_obs": {}
