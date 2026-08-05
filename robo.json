@@ -298,13 +298,19 @@
   }
  },
  "o25": {
-  "saldo": -134.6,
-  "ciclos": 992,
-  "greens": 622,
+  "saldo": -133.4,
+  "ciclos": 993,
+  "greens": 623,
   "redsCiclo": 157,
   "aborts": 0,
   "descartes": 213,
   "historico": [
+   {
+    "quando": "2026-08-05T05:42:52.093Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Inglaterra x Eslováquia @2.15 (tiro 1) · gatilho: time Inglaterra"
+   },
    {
     "quando": "2026-08-05T05:37:53.093Z",
     "resultado": "GREEN",
@@ -3247,15 +3253,15 @@
    }
   ],
   "consumidas": {
-   "euro": 1785904678496,
    "copa": 1785907205801,
-   "super": 1785908272900
+   "super": 1785908272900,
+   "euro": 1785908571892
   },
   "ciclo": null,
   "cooldown": {
    "copa": 1785907205801,
    "premier": 1785903712499,
-   "euro": 1785904678496,
+   "euro": 1785908571892,
    "super": 1785908272900
   },
   "dias": {
@@ -3280,13 +3286,13 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": 3.6
+   "2026-08-05": 4.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Itaquera",
-   "n": 10,
-   "start": 1
+   "chave": "Inglaterra",
+   "n": 12,
+   "start": 2
   },
   "_obs": {}
  },
