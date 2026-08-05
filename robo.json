@@ -3445,7 +3445,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1785962630370,
    "euro": 1785963413569,
    "premier": 1785964730369,
    "super": 1785965991772
@@ -3490,13 +3489,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -51.9,
-  "ciclos": 1015,
-  "greens": 699,
+  "saldo": -50.7,
+  "ciclos": 1016,
+  "greens": 700,
   "redsCiclo": 109,
   "aborts": 0,
   "descartes": 207,
   "historico": [
+   {
+    "quando": "2026-08-05T21:43:49.675Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Países Baixos x República Tcheca @2.1 (tiro 2) · gatilho: time República Tcheca"
+   },
    {
     "quando": "2026-08-05T21:34:51.476Z",
     "resultado": "GREEN_OBS",
@@ -6348,51 +6353,15 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "22:37",
-     "jogo": "Argentina x Tunísia",
-     "odd": 2.1
-    },
-    {
-     "h": "22:40",
-     "jogo": "Países Baixos x República Tcheca",
-     "odd": 2.1
-    },
-    {
-     "h": "22:43",
-     "jogo": "Bélgica x Turquia",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "time República Tcheca",
-   "alvo": {
-    "h": "22:40",
-    "jogo": "Países Baixos x República Tcheca",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1785966056678
-   },
-   "iniciadoEm": 1785965693476,
-   "tiros": [
-    {
-     "h": "22:37",
-     "jogo": "Argentina x Tunísia",
-     "odd": 2.1,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "copa": 1785966229570
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785956149774,
    "super": 1785899401696,
    "premier": 1785961245474,
-   "copa": 1785962090871
+   "copa": 1785966229570
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -6415,7 +6384,7 @@
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
-   "2026-08-05": 12.7
+   "2026-08-05": 13.9
   },
   "_gatilhoAtual": {
    "tipo": "time",
