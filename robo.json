@@ -298,13 +298,19 @@
   }
  },
  "o25": {
-  "saldo": -140.8,
-  "ciclos": 1002,
-  "greens": 628,
+  "saldo": -139.6,
+  "ciclos": 1003,
+  "greens": 629,
   "redsCiclo": 159,
   "aborts": 0,
   "descartes": 215,
   "historico": [
+   {
+    "quando": "2026-08-05T14:17:45.569Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · Palace x Liverpool @2.2 (tiro 1) · gatilho: seq RRRRR"
+   },
    {
     "quando": "2026-08-05T13:58:08.167Z",
     "resultado": "GREEN",
@@ -3307,15 +3313,15 @@
    }
   ],
   "consumidas": {
-   "premier": 1785935680273,
    "super": 1785936674967,
    "euro": 1785937433570,
-   "copa": 1785938287966
+   "copa": 1785938287966,
+   "premier": 1785939465374
   },
   "ciclo": null,
   "cooldown": {
    "copa": 1785938287966,
-   "premier": 1785935680273,
+   "premier": 1785939465374,
    "euro": 1785937433570,
    "super": 1785936674967
   },
@@ -3341,12 +3347,12 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": -2.6
+   "2026-08-05": -1.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "México",
-   "n": 11,
+   "tipo": "seq",
+   "chave": "RRRRR",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
