@@ -3277,8 +3277,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "14:06",
@@ -3298,13 +3298,21 @@
    ],
    "gatilho": "coluna :09",
    "alvo": {
-    "h": "14:06",
-    "jogo": "Leicester x City",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785934623070
+    "h": "14:09",
+    "jogo": "Tottenham x Liverpool",
+    "odd": 2.4,
+    "unidades": 2,
+    "desde": 1785935342367
    },
-   "iniciadoEm": 1785934623070
+   "iniciadoEm": 1785934623070,
+   "tiros": [
+    {
+     "h": "14:06",
+     "jogo": "Leicester x City",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785934328865,
@@ -3340,7 +3348,7 @@
    "tipo": "coluna",
    "chave": ":09",
    "n": 14,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
