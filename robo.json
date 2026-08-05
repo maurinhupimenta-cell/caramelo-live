@@ -6308,8 +6308,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "21:25",
@@ -6329,13 +6329,21 @@
    ],
    "gatilho": "time Argélia",
    "alvo": {
-    "h": "21:25",
-    "jogo": "Colômbia x Inglaterra",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1785961249668
+    "h": "21:28",
+    "jogo": "Coreia do Sul x Argélia",
+    "odd": 2.1,
+    "unidades": 2,
+    "desde": 1785961793071
    },
-   "iniciadoEm": 1785961249668
+   "iniciadoEm": 1785961249668,
+   "tiros": [
+    {
+     "h": "21:25",
+     "jogo": "Colômbia x Inglaterra",
+     "odd": 1.93,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785956149774,
@@ -6370,7 +6378,7 @@
    "tipo": "time",
    "chave": "Argélia",
    "n": 23,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
