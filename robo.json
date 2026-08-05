@@ -298,13 +298,19 @@
   }
  },
  "o25": {
-  "saldo": -134.1,
-  "ciclos": 1014,
-  "greens": 638,
+  "saldo": -132.9,
+  "ciclos": 1015,
+  "greens": 639,
   "redsCiclo": 160,
   "aborts": 0,
   "descartes": 216,
   "historico": [
+   {
+    "quando": "2026-08-05T17:51:53.268Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · EUA x RD Congo @2.15 (tiro 1) · gatilho: time México"
+   },
    {
     "quando": "2026-08-05T17:50:50.272Z",
     "resultado": "GREEN",
@@ -3381,41 +3387,12 @@
   "consumidas": {
    "super": 1785949730674,
    "premier": 1785950090170,
-   "euro": 1785952250166
+   "euro": 1785952250166,
+   "copa": 1785952313066
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:43",
-     "jogo": "EUA x RD Congo",
-     "odd": 2.15
-    },
-    {
-     "h": "18:46",
-     "jogo": "Argélia x México",
-     "odd": 2.25
-    },
-    {
-     "h": "18:49",
-     "jogo": "Irã x Senegal",
-     "odd": 2.75
-    }
-   ],
-   "gatilho": "time México",
-   "alvo": {
-    "h": "18:43",
-    "jogo": "EUA x RD Congo",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785952251870
-   },
-   "iniciadoEm": 1785952251870
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785948471477,
+   "copa": 1785952313066,
    "premier": 1785950090170,
    "euro": 1785952250166,
    "super": 1785949730674
@@ -3442,12 +3419,12 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": 4.1
+   "2026-08-05": 5.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "México",
-   "n": 13,
+   "tipo": "odd",
+   "chave": "2.05",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
