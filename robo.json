@@ -3195,13 +3195,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -68,
-  "ciclos": 990,
-  "greens": 678,
+  "saldo": -67,
+  "ciclos": 991,
+  "greens": 679,
   "redsCiclo": 108,
   "aborts": 0,
   "descartes": 204,
   "historico": [
+   {
+    "quando": "2026-08-05T01:18:56.095Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Palace x Southampton @2 (tiro 2) · gatilho: time Everton"
+   },
    {
     "quando": "2026-08-04T23:13:58.395Z",
     "resultado": "GREEN",
@@ -5903,50 +5909,14 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "02:12",
-     "jogo": "Burnley x Everton",
-     "odd": 1.83
-    },
-    {
-     "h": "02:15",
-     "jogo": "Palace x Southampton",
-     "odd": 2
-    },
-    {
-     "h": "02:18",
-     "jogo": "Watford x Chelsea",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "time Everton",
-   "alvo": {
-    "h": "02:15",
-    "jogo": "Palace x Southampton",
-    "odd": 2,
-    "unidades": 2,
-    "desde": 1785892489698
-   },
-   "iniciadoEm": 1785892198000,
-   "tiros": [
-    {
-     "h": "02:12",
-     "jogo": "Burnley x Everton",
-     "odd": 1.83,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "premier": 1785892735902
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785883200300,
    "super": 1785885238097,
-   "premier": 1785880794894,
+   "premier": 1785892735902,
    "copa": 1785884337802
   },
   "dias": {
@@ -5969,7 +5939,7 @@
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
-   "2026-08-04": -0.7
+   "2026-08-04": 0.3
   },
   "_gatilhoAtual": {
    "tipo": "time",
