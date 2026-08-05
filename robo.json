@@ -3200,8 +3200,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:01",
@@ -3221,13 +3221,21 @@
    ],
    "gatilho": "seq RRRG",
    "alvo": {
-    "h": "05:01",
-    "jogo": "RD Congo x Colômbia",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785902516800
+    "h": "05:04",
+    "jogo": "Paraguai x Marrocos",
+    "odd": 2.4,
+    "unidades": 2,
+    "desde": 1785902762299
    },
-   "iniciadoEm": 1785902516800
+   "iniciadoEm": 1785902516800,
+   "tiros": [
+    {
+     "h": "05:01",
+     "jogo": "RD Congo x Colômbia",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785897836700,
