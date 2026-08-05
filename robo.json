@@ -3239,13 +3239,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -64.6,
-  "ciclos": 993,
-  "greens": 681,
+  "saldo": -63.6,
+  "ciclos": 994,
+  "greens": 682,
   "redsCiclo": 108,
   "aborts": 0,
   "descartes": 204,
   "historico": [
+   {
+    "quando": "2026-08-05T03:00:57.194Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · RD Congo x Tunísia @2.05 (tiro 1) · gatilho: odd 2.05"
+   },
    {
     "quando": "2026-08-05T02:38:46.590Z",
     "resultado": "GREEN",
@@ -5966,44 +5972,15 @@
    }
   ],
   "consumidas": {
-   "premier": 1785897526300
+   "premier": 1785897526300,
+   "copa": 1785898856999
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:58",
-     "jogo": "RD Congo x Tunísia",
-     "odd": 2.05
-    },
-    {
-     "h": "04:01",
-     "jogo": "Escócia x Croácia",
-     "odd": 2.2
-    },
-    {
-     "h": "04:04",
-     "jogo": "Brasil x Argélia",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "odd 2.05",
-   "alvo": {
-    "h": "03:58",
-    "jogo": "RD Congo x Tunísia",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785898557489
-   },
-   "iniciadoEm": 1785898557489
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785883200300,
    "super": 1785885238097,
    "premier": 1785897526300,
-   "copa": 1785894956495
+   "copa": 1785898856999
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -6025,7 +6002,8 @@
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
-   "2026-08-04": 2.7
+   "2026-08-04": 2.7,
+   "2026-08-05": 1
   },
   "_gatilhoAtual": {
    "tipo": "odd",
