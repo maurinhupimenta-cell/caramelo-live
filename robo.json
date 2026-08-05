@@ -298,13 +298,19 @@
   }
  },
  "o25": {
-  "saldo": -133.4,
-  "ciclos": 1007,
+  "saldo": -140.4,
+  "ciclos": 1008,
   "greens": 633,
-  "redsCiclo": 159,
+  "redsCiclo": 160,
   "aborts": 0,
   "descartes": 215,
   "historico": [
+   {
+    "quando": "2026-08-05T15:52:52.165Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: odd 2.62"
+   },
    {
     "quando": "2026-08-05T15:44:40.770Z",
     "resultado": "GREEN",
@@ -3338,58 +3344,15 @@
   ],
   "consumidas": {
    "copa": 1785943853977,
-   "premier": 1785944680574
+   "premier": 1785944680574,
+   "super": 1785945171969
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "16:43",
-     "jogo": "Medellin x Bogota",
-     "odd": 2.62
-    },
-    {
-     "h": "16:46",
-     "jogo": "La Boca x Belo Horizonte",
-     "odd": 2.2
-    },
-    {
-     "h": "16:49",
-     "jogo": "Medellin x Quito",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "odd 2.62",
-   "alvo": {
-    "h": "16:49",
-    "jogo": "Medellin x Quito",
-    "odd": 2.4,
-    "unidades": 4,
-    "desde": 1785944994575
-   },
-   "iniciadoEm": 1785944689669,
-   "tiros": [
-    {
-     "h": "16:43",
-     "jogo": "Medellin x Bogota",
-     "odd": 2.62,
-     "unidades": 1
-    },
-    {
-     "h": "16:46",
-     "jogo": "La Boca x Belo Horizonte",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785943853977,
    "premier": 1785944680574,
    "euro": 1785941427370,
-   "super": 1785940633972
+   "super": 1785945171969
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -3413,13 +3376,13 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": 4.8
+   "2026-08-05": -2.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "1.98",
    "n": 10,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
