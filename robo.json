@@ -279,13 +279,19 @@
   }
  },
  "o25": {
-  "saldo": -139.6,
-  "ciclos": 981,
-  "greens": 614,
+  "saldo": -138.2,
+  "ciclos": 982,
+  "greens": 615,
   "redsCiclo": 156,
   "aborts": 0,
   "descartes": 211,
   "historico": [
+   {
+    "quando": "2026-08-05T02:43:56.896Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "copa · Bósnia e Herzegovina x México @2.1 (tiro 3) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-08-05T01:31:55.395Z",
     "resultado": "GREEN",
@@ -3161,54 +3167,12 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "03:22",
-     "jogo": "Nova Zelândia x Austrália",
-     "odd": 2.2
-    },
-    {
-     "h": "03:25",
-     "jogo": "Brasil x Senegal",
-     "odd": 2.45
-    },
-    {
-     "h": "03:28",
-     "jogo": "Bósnia e Herzegovina x México",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-1)",
-   "alvo": {
-    "h": "03:28",
-    "jogo": "Bósnia e Herzegovina x México",
-    "odd": 2.1,
-    "unidades": 4,
-    "desde": 1785896939699
-   },
-   "iniciadoEm": 1785896338192,
-   "tiros": [
-    {
-     "h": "03:22",
-     "jogo": "Nova Zelândia x Austrália",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "03:25",
-     "jogo": "Brasil x Senegal",
-     "odd": 2.45,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "copa": 1785897836700
   },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785876417597,
+   "copa": 1785897836700,
    "premier": 1785880794595,
    "euro": 1785893515105,
    "super": 1785875877195
@@ -3234,7 +3198,7 @@
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
-   "2026-08-04": 6.5
+   "2026-08-04": 7.9
   },
   "_gatilhoAtual": {
    "tipo": "seq",
