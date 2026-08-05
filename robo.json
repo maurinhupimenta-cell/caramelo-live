@@ -3198,7 +3198,37 @@
    "premier": 1785899580495,
    "euro": 1785899637692
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:01",
+     "jogo": "RD Congo x Colômbia",
+     "odd": 2.1
+    },
+    {
+     "h": "05:04",
+     "jogo": "Paraguai x Marrocos",
+     "odd": 2.4
+    },
+    {
+     "h": "05:07",
+     "jogo": "Argentina x Gana",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "seq RRRG",
+   "alvo": {
+    "h": "05:01",
+    "jogo": "RD Congo x Colômbia",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785902516800
+   },
+   "iniciadoEm": 1785902516800
+  },
   "cooldown": {
    "copa": 1785897836700,
    "premier": 1785899580495,
@@ -3230,9 +3260,9 @@
    "2026-08-05": 3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Polônia",
-   "n": 8,
+   "tipo": "seq",
+   "chave": "RRRG",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
