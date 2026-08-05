@@ -249,7 +249,6 @@
    }
   ],
   "consumidas": {
-   "super": 1785900179597,
    "premier": 1785903712201
   },
   "ciclo": null,
@@ -295,13 +294,19 @@
   }
  },
  "o25": {
-  "saldo": -133.4,
-  "ciclos": 986,
-  "greens": 618,
+  "saldo": -131,
+  "ciclos": 987,
+  "greens": 619,
   "redsCiclo": 156,
   "aborts": 0,
   "descartes": 212,
   "historico": [
+   {
+    "quando": "2026-08-05T04:21:52.696Z",
+    "resultado": "GREEN",
+    "unidades": 2.4,
+    "detalhe": "premier · Everton x Tottenham @2.35 (tiro 3) · gatilho: time Liverpool"
+   },
    {
     "quando": "2026-08-05T04:09:05.093Z",
     "resultado": "GREEN",
@@ -3208,56 +3213,43 @@
    }
   ],
   "consumidas": {
-   "copa": 1785902944899
+   "copa": 1785902944899,
+   "premier": 1785903712499
   },
   "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "05:12",
-     "jogo": "West Ham x Liverpool",
-     "odd": 2.45
+     "h": "05:22",
+     "jogo": "Belo Horizonte x Agua Branca",
+     "odd": 2.05
     },
     {
-     "h": "05:15",
-     "jogo": "Palace x Norwich",
-     "odd": 2.2
+     "h": "05:25",
+     "jogo": "Santiago x Quito",
+     "odd": 2.1
     },
     {
-     "h": "05:18",
-     "jogo": "Everton x Tottenham",
-     "odd": 2.35
+     "h": "05:28",
+     "jogo": "Belo Horizonte x Bogota",
+     "odd": 2.37
     }
    ],
-   "gatilho": "time Liverpool",
+   "gatilho": "time Santiago",
    "alvo": {
-    "h": "05:18",
-    "jogo": "Everton x Tottenham",
-    "odd": 2.35,
-    "unidades": 4,
-    "desde": 1785903469892
+    "h": "05:22",
+    "jogo": "Belo Horizonte x Agua Branca",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785903716190
    },
-   "iniciadoEm": 1785903180990,
-   "tiros": [
-    {
-     "h": "05:12",
-     "jogo": "West Ham x Liverpool",
-     "odd": 2.45,
-     "unidades": 1
-    },
-    {
-     "h": "05:15",
-     "jogo": "Palace x Norwich",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1785903716190
   },
   "cooldown": {
    "copa": 1785902944899,
-   "premier": 1785899580495,
+   "premier": 1785903712499,
    "euro": 1785899637692,
    "super": 1785875877195
   },
@@ -3283,7 +3275,7 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": 4.8
+   "2026-08-05": 7.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
