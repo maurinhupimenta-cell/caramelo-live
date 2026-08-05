@@ -6054,10 +6054,39 @@
    }
   ],
   "consumidas": {
-   "premier": 1785905254300,
    "copa": 1785907206093
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:54",
+     "jogo": "Aston x Burnley",
+     "odd": 1.95
+    },
+    {
+     "h": "06:57",
+     "jogo": "Southampton x Liverpool",
+     "odd": 2
+    },
+    {
+     "h": "07:00",
+     "jogo": "Tottenham x Brentford",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time Liverpool",
+   "alvo": {
+    "h": "06:54",
+    "jogo": "Aston x Burnley",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1785908860804
+   },
+   "iniciadoEm": 1785908860804
+  },
   "cooldown": {
    "euro": 1785883200300,
    "super": 1785899401696,
@@ -6089,8 +6118,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Alemanha",
-   "n": 8,
+   "chave": "Liverpool",
+   "n": 14,
    "start": 2
   },
   "_obs": {}
