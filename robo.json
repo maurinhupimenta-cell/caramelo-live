@@ -3277,13 +3277,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -61.4,
-  "ciclos": 996,
-  "greens": 684,
+  "saldo": -60.4,
+  "ciclos": 997,
+  "greens": 685,
   "redsCiclo": 108,
   "aborts": 0,
   "descartes": 204,
   "historico": [
+   {
+    "quando": "2026-08-05T04:47:34.495Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Liverpool x Brentford @2.05 (tiro 1) · gatilho: seq RRRG"
+   },
    {
     "quando": "2026-08-05T03:41:57.497Z",
     "resultado": "GREEN",
@@ -6021,12 +6027,14 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "premier": 1785905254300
+  },
   "ciclo": null,
   "cooldown": {
    "euro": 1785883200300,
    "super": 1785899401696,
-   "premier": 1785901317302,
+   "premier": 1785905254300,
    "copa": 1785898856999
   },
   "dias": {
@@ -6050,12 +6058,12 @@
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
-   "2026-08-05": 3.2
+   "2026-08-05": 4.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Chelsea",
-   "n": 10,
+   "chave": "Islington",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
