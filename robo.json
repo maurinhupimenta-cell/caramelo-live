@@ -3252,14 +3252,11 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {
-   "copa": 1785907205801,
-   "euro": 1785908571892
-  },
+  "consumidas": {},
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "13:16",
@@ -3279,13 +3276,21 @@
    ],
    "gatilho": "time Itaquera",
    "alvo": {
-    "h": "13:16",
-    "jogo": "Itaquera x Belo Horizonte",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785932127567
+    "h": "13:19",
+    "jogo": "Santos x Buenos Aires",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1785932347968
    },
-   "iniciadoEm": 1785932127567
+   "iniciadoEm": 1785932127567,
+   "tiros": [
+    {
+     "h": "13:16",
+     "jogo": "Itaquera x Belo Horizonte",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785907205801,
@@ -3319,8 +3324,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Itaquera",
-   "n": 24,
+   "chave": "Austrália",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
@@ -6088,39 +6093,45 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {
-   "copa": 1785907206093
-  },
+  "consumidas": {},
   "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
-     "h": "06:54",
-     "jogo": "Aston x Burnley",
-     "odd": 1.95
-    },
-    {
-     "h": "06:57",
-     "jogo": "Southampton x Liverpool",
+     "h": "13:16",
+     "jogo": "Japão x França",
      "odd": 2
     },
     {
-     "h": "07:00",
-     "jogo": "Tottenham x Brentford",
-     "odd": 2.15
+     "h": "13:19",
+     "jogo": "Turquia x Canadá",
+     "odd": 2.05
+    },
+    {
+     "h": "13:22",
+     "jogo": "Áustria x Bélgica",
+     "odd": 1.98
     }
    ],
-   "gatilho": "time Liverpool",
+   "gatilho": "time Canadá",
    "alvo": {
-    "h": "06:54",
-    "jogo": "Aston x Burnley",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1785908860804
+    "h": "13:19",
+    "jogo": "Turquia x Canadá",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1785932329473
    },
-   "iniciadoEm": 1785908860804
+   "iniciadoEm": 1785932131164,
+   "tiros": [
+    {
+     "h": "13:16",
+     "jogo": "Japão x França",
+     "odd": 2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1785883200300,
@@ -6152,10 +6163,10 @@
    "2026-08-05": 5.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Liverpool",
-   "n": 14,
-   "start": 2
+   "tipo": "coluna",
+   "chave": ":22",
+   "n": 13,
+   "start": 1
   },
   "_obs": {}
  }
