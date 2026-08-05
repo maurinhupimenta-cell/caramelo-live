@@ -279,13 +279,19 @@
   }
  },
  "o25": {
-  "saldo": -136.7,
-  "ciclos": 984,
-  "greens": 616,
+  "saldo": -135.2,
+  "ciclos": 985,
+  "greens": 617,
   "redsCiclo": 156,
   "aborts": 0,
   "descartes": 212,
   "historico": [
+   {
+    "quando": "2026-08-05T03:13:57.796Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "euro · Polônia x Geórgia @2.55 (tiro 1) · gatilho: time Polônia"
+   },
    {
     "quando": "2026-08-05T03:13:00.693Z",
     "resultado": "GREEN",
@@ -3181,13 +3187,14 @@
   ],
   "consumidas": {
    "copa": 1785897836700,
-   "premier": 1785899580495
+   "premier": 1785899580495,
+   "euro": 1785899637692
   },
   "ciclo": null,
   "cooldown": {
    "copa": 1785897836700,
    "premier": 1785899580495,
-   "euro": 1785893515105,
+   "euro": 1785899637692,
    "super": 1785875877195
   },
   "dias": {
@@ -3212,12 +3219,12 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": 1.5
+   "2026-08-05": 3
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Liverpool",
-   "n": 9,
+   "chave": "Polônia",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
