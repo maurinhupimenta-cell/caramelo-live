@@ -3331,13 +3331,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -59.4,
-  "ciclos": 999,
-  "greens": 686,
+  "saldo": -58.3,
+  "ciclos": 1000,
+  "greens": 687,
   "redsCiclo": 108,
   "aborts": 0,
   "descartes": 205,
   "historico": [
+   {
+    "quando": "2026-08-05T12:21:49.071Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Turquia x Canadá @2.05 (tiro 2) · gatilho: time Canadá"
+   },
    {
     "quando": "2026-08-05T12:15:27.966Z",
     "resultado": "DESCARTADO",
@@ -6093,51 +6099,15 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "13:16",
-     "jogo": "Japão x França",
-     "odd": 2
-    },
-    {
-     "h": "13:19",
-     "jogo": "Turquia x Canadá",
-     "odd": 2.05
-    },
-    {
-     "h": "13:22",
-     "jogo": "Áustria x Bélgica",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "time Canadá",
-   "alvo": {
-    "h": "13:19",
-    "jogo": "Turquia x Canadá",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1785932329473
-   },
-   "iniciadoEm": 1785932131164,
-   "tiros": [
-    {
-     "h": "13:16",
-     "jogo": "Japão x França",
-     "odd": 2,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "copa": 1785932508779
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785883200300,
    "super": 1785899401696,
    "premier": 1785905254300,
-   "copa": 1785907206093
+   "copa": 1785932508779
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -6160,11 +6130,11 @@
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
-   "2026-08-05": 5.2
+   "2026-08-05": 6.3
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":22",
+   "chave": ":25",
    "n": 13,
    "start": 1
   },
