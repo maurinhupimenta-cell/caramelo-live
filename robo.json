@@ -3430,7 +3430,37 @@
    "super": 1785960472976,
    "copa": 1785962630370
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:50",
+     "jogo": "Hungria x República Tcheca",
+     "odd": 2.7
+    },
+    {
+     "h": "21:53",
+     "jogo": "Eslovênia x Espanha",
+     "odd": 2.4
+    },
+    {
+     "h": "21:56",
+     "jogo": "Polônia x Geórgia",
+     "odd": 2.54
+    }
+   ],
+   "gatilho": "seq RGRRR",
+   "alvo": {
+    "h": "21:50",
+    "jogo": "Hungria x República Tcheca",
+    "odd": 2.7,
+    "unidades": 1,
+    "desde": 1785962871476
+   },
+   "iniciadoEm": 1785962871476
+  },
   "cooldown": {
    "copa": 1785962630370,
    "premier": 1785955663167,
@@ -3463,8 +3493,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRRRG",
-   "n": 13,
+   "chave": "RGRRR",
+   "n": 19,
    "start": 1
   },
   "_obs": {}
