@@ -3335,7 +3335,37 @@
    "euro": 1785941427370,
    "copa": 1785943853977
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:39",
+     "jogo": "Norwich x United",
+     "odd": 2.2
+    },
+    {
+     "h": "16:42",
+     "jogo": "Islington x Palace",
+     "odd": 2.2
+    },
+    {
+     "h": "16:45",
+     "jogo": "City x Norwich",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "seq RGRG",
+   "alvo": {
+    "h": "16:39",
+    "jogo": "Norwich x United",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785944210365
+   },
+   "iniciadoEm": 1785944210365
+  },
   "cooldown": {
    "copa": 1785943853977,
    "premier": 1785939465374,
@@ -3368,8 +3398,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRRR",
-   "n": 18,
+   "chave": "RGRG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
