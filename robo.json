@@ -245,7 +245,37 @@
   "consumidas": {
    "super": 1785900179597
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:12",
+     "jogo": "West Ham x Liverpool",
+     "odd": 5
+    },
+    {
+     "h": "05:15",
+     "jogo": "Palace x Norwich",
+     "odd": 4.2
+    },
+    {
+     "h": "05:18",
+     "jogo": "Everton x Tottenham",
+     "odd": 4.75
+    }
+   ],
+   "gatilho": "seq RRRRG",
+   "alvo": {
+    "h": "05:12",
+    "jogo": "West Ham x Liverpool",
+    "odd": 5,
+    "unidades": 1,
+    "desde": 1785903021893
+   },
+   "iniciadoEm": 1785903021893
+  },
   "cooldown": {
    "copa": 1785688526966,
    "premier": 1785818695460,
@@ -272,8 +302,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRRR",
-   "n": 9,
+   "chave": "RRRRG",
+   "n": 8,
    "start": 1
   },
   "_obs": {
