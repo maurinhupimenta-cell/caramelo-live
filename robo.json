@@ -298,13 +298,19 @@
   }
  },
  "o25": {
-  "saldo": -146.3,
-  "ciclos": 996,
-  "greens": 624,
+  "saldo": -145,
+  "ciclos": 997,
+  "greens": 625,
   "redsCiclo": 159,
   "aborts": 0,
   "descartes": 213,
   "historico": [
+   {
+    "quando": "2026-08-05T13:14:40.470Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "premier · United x City @2.075 (tiro 3) · gatilho: coluna :09"
+   },
    {
     "quando": "2026-08-05T12:52:08.975Z",
     "resultado": "RED_CICLO",
@@ -3273,56 +3279,13 @@
   "consumidas": {
    "super": 1785932730766,
    "euro": 1785933132971,
-   "copa": 1785934328865
+   "copa": 1785934328865,
+   "premier": 1785935680273
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "14:06",
-     "jogo": "Leicester x City",
-     "odd": 2.15
-    },
-    {
-     "h": "14:09",
-     "jogo": "Tottenham x Liverpool",
-     "odd": 2.4
-    },
-    {
-     "h": "14:12",
-     "jogo": "United x City",
-     "odd": 2.075
-    }
-   ],
-   "gatilho": "coluna :09",
-   "alvo": {
-    "h": "14:12",
-    "jogo": "United x City",
-    "odd": 2.075,
-    "unidades": 4,
-    "desde": 1785935518476
-   },
-   "iniciadoEm": 1785934623070,
-   "tiros": [
-    {
-     "h": "14:06",
-     "jogo": "Leicester x City",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "14:09",
-     "jogo": "Tottenham x Liverpool",
-     "odd": 2.4,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785934328865,
-   "premier": 1785903712499,
+   "premier": 1785935680273,
    "euro": 1785933132971,
    "super": 1785932730766
   },
@@ -3348,7 +3311,7 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": -8.1
+   "2026-08-05": -6.8
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
