@@ -298,13 +298,19 @@
   }
  },
  "o25": {
-  "saldo": -137.9,
-  "ciclos": 1004,
-  "greens": 630,
+  "saldo": -136.4,
+  "ciclos": 1005,
+  "greens": 631,
   "redsCiclo": 159,
   "aborts": 0,
   "descartes": 215,
   "historico": [
+   {
+    "quando": "2026-08-05T14:50:27.567Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "euro · República Tcheca x Eslováquia @2.55 (tiro 1) · gatilho: coluna :50"
+   },
    {
     "quando": "2026-08-05T14:37:14.173Z",
     "resultado": "GREEN",
@@ -3321,43 +3327,14 @@
   "consumidas": {
    "copa": 1785938287966,
    "premier": 1785939465374,
-   "super": 1785940633972
+   "super": 1785940633972,
+   "euro": 1785941427370
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:47",
-     "jogo": "República Tcheca x Eslováquia",
-     "odd": 2.55
-    },
-    {
-     "h": "15:50",
-     "jogo": "Croácia x Hungria",
-     "odd": 2.35
-    },
-    {
-     "h": "15:53",
-     "jogo": "Eslováquia x República Tcheca",
-     "odd": 2.55
-    }
-   ],
-   "gatilho": "coluna :50",
-   "alvo": {
-    "h": "15:47",
-    "jogo": "República Tcheca x Eslováquia",
-    "odd": 2.55,
-    "unidades": 1,
-    "desde": 1785941033967
-   },
-   "iniciadoEm": 1785941033967
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785938287966,
    "premier": 1785939465374,
-   "euro": 1785937433570,
+   "euro": 1785941427370,
    "super": 1785940633972
   },
   "dias": {
@@ -3382,12 +3359,12 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": 0.3
+   "2026-08-05": 1.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":50",
-   "n": 15,
+   "tipo": "odd",
+   "chave": "2.45",
+   "n": 16,
    "start": 2
   },
   "_obs": {}
