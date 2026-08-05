@@ -3395,13 +3395,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -55.3,
-  "ciclos": 1004,
-  "greens": 690,
+  "saldo": -54.3,
+  "ciclos": 1005,
+  "greens": 691,
   "redsCiclo": 108,
   "aborts": 0,
   "descartes": 206,
   "historico": [
+   {
+    "quando": "2026-08-05T14:37:07.864Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · EUA x Marrocos @1.98 (tiro 1) · gatilho: coluna :37"
+   },
    {
     "quando": "2026-08-05T13:50:59.369Z",
     "resultado": "GREEN",
@@ -6188,44 +6194,15 @@
    }
   ],
   "consumidas": {
-   "premier": 1785937859172
+   "premier": 1785937859172,
+   "copa": 1785940627572
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:34",
-     "jogo": "EUA x Marrocos",
-     "odd": 1.98
-    },
-    {
-     "h": "15:37",
-     "jogo": "Inglaterra x Egito",
-     "odd": 1.93
-    },
-    {
-     "h": "15:40",
-     "jogo": "Austrália x Paraguai",
-     "odd": 2
-    }
-   ],
-   "gatilho": "coluna :37",
-   "alvo": {
-    "h": "15:34",
-    "jogo": "EUA x Marrocos",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1785940133573
-   },
-   "iniciadoEm": 1785940133573
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785883200300,
    "super": 1785899401696,
    "premier": 1785937859172,
-   "copa": 1785936530774
+   "copa": 1785940627572
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -6248,12 +6225,12 @@
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
-   "2026-08-05": 9.3
+   "2026-08-05": 10.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":37",
-   "n": 15,
+   "tipo": "seq",
+   "chave": "GGRGG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
