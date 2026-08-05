@@ -3293,7 +3293,45 @@
    "premier": 1785935680273,
    "super": 1785936674967
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "14:38",
+     "jogo": "Ucrânia x Escócia",
+     "odd": 2.25
+    },
+    {
+     "h": "14:41",
+     "jogo": "Alemanha x República Tcheca",
+     "odd": 2.45
+    },
+    {
+     "h": "14:44",
+     "jogo": "Hungria x Portugal",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "odd 2.45",
+   "alvo": {
+    "h": "14:41",
+    "jogo": "Alemanha x República Tcheca",
+    "odd": 2.45,
+    "unidades": 2,
+    "desde": 1785937275270
+   },
+   "iniciadoEm": 1785936734572,
+   "tiros": [
+    {
+     "h": "14:38",
+     "jogo": "Ucrânia x Escócia",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1785934328865,
    "premier": 1785935680273,
@@ -3326,9 +3364,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":34",
+   "chave": ":50",
    "n": 14,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  },
