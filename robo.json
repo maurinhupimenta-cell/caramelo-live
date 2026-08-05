@@ -3156,7 +3156,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:29",
+     "jogo": "Alemanha x Inglaterra",
+     "odd": 2.02
+    },
+    {
+     "h": "02:32",
+     "jogo": "Sérvia x França",
+     "odd": 2.25
+    },
+    {
+     "h": "02:35",
+     "jogo": "Eslovênia x Alemanha",
+     "odd": 2.45
+    }
+   ],
+   "gatilho": "placar goleada (3+)",
+   "alvo": {
+    "h": "02:29",
+    "jogo": "Alemanha x Inglaterra",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1785893160798
+   },
+   "iniciadoEm": 1785893160798
+  },
   "cooldown": {
    "copa": 1785876417597,
    "premier": 1785880794595,
@@ -3187,8 +3217,8 @@
    "2026-08-04": 5.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.05",
+   "tipo": "placar",
+   "chave": "goleada (3+)",
    "n": 9,
    "start": 1
   },
