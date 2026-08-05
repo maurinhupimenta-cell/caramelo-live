@@ -3457,13 +3457,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -45.9,
-  "ciclos": 1012,
-  "greens": 698,
+  "saldo": -44.9,
+  "ciclos": 1013,
+  "greens": 699,
   "redsCiclo": 108,
   "aborts": 0,
   "descartes": 206,
   "historico": [
+   {
+    "quando": "2026-08-05T20:20:45.671Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Southampton x Brighton @1.95 (tiro 1) · gatilho: odd 1.8"
+   },
    {
     "quando": "2026-08-05T19:17:53.667Z",
     "resultado": "GREEN",
@@ -6297,42 +6303,14 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:18",
-     "jogo": "Southampton x Brighton",
-     "odd": 1.95
-    },
-    {
-     "h": "21:21",
-     "jogo": "Newcastle x Burnley",
-     "odd": 1.8
-    },
-    {
-     "h": "21:24",
-     "jogo": "Southampton x Brentford",
-     "odd": 2.075
-    }
-   ],
-   "gatilho": "odd 1.8",
-   "alvo": {
-    "h": "21:18",
-    "jogo": "Southampton x Brighton",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1785960543678
-   },
-   "iniciadoEm": 1785960543678
+  "consumidas": {
+   "premier": 1785961245474
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785956149774,
    "super": 1785899401696,
-   "premier": 1785954229975,
+   "premier": 1785961245474,
    "copa": 1785957473380
   },
   "dias": {
@@ -6356,13 +6334,13 @@
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
-   "2026-08-05": 18.7
+   "2026-08-05": 19.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.8",
-   "n": 13,
-   "start": 1
+   "tipo": "time",
+   "chave": "Argélia",
+   "n": 23,
+   "start": 2
   },
   "_obs": {}
  }
