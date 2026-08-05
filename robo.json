@@ -279,13 +279,19 @@
   }
  },
  "o25": {
-  "saldo": -138.2,
-  "ciclos": 983,
-  "greens": 615,
+  "saldo": -136.7,
+  "ciclos": 984,
+  "greens": 616,
   "redsCiclo": 156,
   "aborts": 0,
   "descartes": 212,
   "historico": [
+   {
+    "quando": "2026-08-05T03:13:00.693Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "premier · Norwich x Leeds @2.45 (tiro 1) · gatilho: time Liverpool"
+   },
    {
     "quando": "2026-08-05T03:09:54.994Z",
     "resultado": "GREEN_OBS",
@@ -3174,42 +3180,13 @@
    }
   ],
   "consumidas": {
-   "copa": 1785897836700
+   "copa": 1785897836700,
+   "premier": 1785899580495
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:09",
-     "jogo": "Norwich x Leeds",
-     "odd": 2.45
-    },
-    {
-     "h": "04:12",
-     "jogo": "Watford x Liverpool",
-     "odd": 2.25
-    },
-    {
-     "h": "04:15",
-     "jogo": "Burnley x West Ham",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "time Liverpool",
-   "alvo": {
-    "h": "04:09",
-    "jogo": "Norwich x Leeds",
-    "odd": 2.45,
-    "unidades": 1,
-    "desde": 1785898790701
-   },
-   "iniciadoEm": 1785898790701
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785897836700,
-   "premier": 1785880794595,
+   "premier": 1785899580495,
    "euro": 1785893515105,
    "super": 1785875877195
   },
@@ -3235,29 +3212,30 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": 0
+   "2026-08-05": 1.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Polônia",
-   "n": 8,
+   "chave": "Liverpool",
+   "n": 9,
    "start": 1
   },
-  "_obs": {
-   "super": {
-    "desde": 1785899394993,
-    "gatilho": "placar 0-0"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
-  "saldo": -63.6,
-  "ciclos": 994,
-  "greens": 682,
+  "saldo": -62.4,
+  "ciclos": 995,
+  "greens": 683,
   "redsCiclo": 108,
   "aborts": 0,
   "descartes": 204,
   "historico": [
+   {
+    "quando": "2026-08-05T03:10:01.891Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Quito x Medellin @2.05 (tiro 3) · gatilho: placar 0-0"
+   },
    {
     "quando": "2026-08-05T03:00:57.194Z",
     "resultado": "GREEN",
@@ -5985,12 +5963,13 @@
   ],
   "consumidas": {
    "premier": 1785897526300,
-   "copa": 1785898856999
+   "copa": 1785898856999,
+   "super": 1785899401696
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1785883200300,
-   "super": 1785885238097,
+   "super": 1785899401696,
    "premier": 1785897526300,
    "copa": 1785898856999
   },
@@ -6015,12 +5994,12 @@
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
-   "2026-08-05": 1
+   "2026-08-05": 2.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.05",
-   "n": 9,
+   "tipo": "placar",
+   "chave": "0-0",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
