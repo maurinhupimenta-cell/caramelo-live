@@ -6297,7 +6297,37 @@
    "copa": 1785953271173,
    "premier": 1785954229975
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:50",
+     "jogo": "Escócia x Ucrânia",
+     "odd": 1.98
+    },
+    {
+     "h": "19:53",
+     "jogo": "Dinamarca x Hungria",
+     "odd": 2.15
+    },
+    {
+     "h": "19:56",
+     "jogo": "Eslovênia x Polônia",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "coluna :50",
+   "alvo": {
+    "h": "19:50",
+    "jogo": "Escócia x Ucrânia",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1785955792265
+   },
+   "iniciadoEm": 1785955792265
+  },
   "cooldown": {
    "euro": 1785883200300,
    "super": 1785899401696,
@@ -6328,9 +6358,9 @@
    "2026-08-05": 16.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.8",
-   "n": 12,
+   "tipo": "coluna",
+   "chave": ":50",
+   "n": 19,
    "start": 1
   },
   "_obs": {}
