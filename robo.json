@@ -298,13 +298,19 @@
   }
  },
  "o25": {
-  "saldo": -143.7,
-  "ciclos": 999,
-  "greens": 626,
+  "saldo": -141.8,
+  "ciclos": 1000,
+  "greens": 627,
   "redsCiclo": 159,
   "aborts": 0,
   "descartes": 214,
   "historico": [
+   {
+    "quando": "2026-08-05T13:43:53.770Z",
+    "resultado": "GREEN",
+    "unidades": 1.9,
+    "detalhe": "euro · Alemanha x República Tcheca @2.45 (tiro 2) · gatilho: odd 2.45"
+   },
    {
     "quando": "2026-08-05T13:31:15.168Z",
     "resultado": "GREEN",
@@ -3291,51 +3297,14 @@
   "consumidas": {
    "copa": 1785934328865,
    "premier": 1785935680273,
-   "super": 1785936674967
+   "super": 1785936674967,
+   "euro": 1785937433570
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "14:38",
-     "jogo": "Ucrânia x Escócia",
-     "odd": 2.25
-    },
-    {
-     "h": "14:41",
-     "jogo": "Alemanha x República Tcheca",
-     "odd": 2.45
-    },
-    {
-     "h": "14:44",
-     "jogo": "Hungria x Portugal",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "odd 2.45",
-   "alvo": {
-    "h": "14:41",
-    "jogo": "Alemanha x República Tcheca",
-    "odd": 2.45,
-    "unidades": 2,
-    "desde": 1785937275270
-   },
-   "iniciadoEm": 1785936734572,
-   "tiros": [
-    {
-     "h": "14:38",
-     "jogo": "Ucrânia x Escócia",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785934328865,
    "premier": 1785935680273,
-   "euro": 1785933132971,
+   "euro": 1785937433570,
    "super": 1785936674967
   },
   "dias": {
@@ -3360,13 +3329,13 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": -5.5
+   "2026-08-05": -3.6
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":50",
    "n": 14,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -6160,7 +6129,37 @@
   "consumidas": {
    "copa": 1785936530774
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:48",
+     "jogo": "West Ham x Palace",
+     "odd": 2.1
+    },
+    {
+     "h": "14:51",
+     "jogo": "Islington x Brentford",
+     "odd": 2.05
+    },
+    {
+     "h": "14:54",
+     "jogo": "Palace x Leicester",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "odd 2.05",
+   "alvo": {
+    "h": "14:48",
+    "jogo": "West Ham x Palace",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785937319971
+   },
+   "iniciadoEm": 1785937319971
+  },
   "cooldown": {
    "euro": 1785883200300,
    "super": 1785899401696,
@@ -6191,9 +6190,9 @@
    "2026-08-05": 8.2
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":37",
-   "n": 14,
+   "tipo": "odd",
+   "chave": "2.05",
+   "n": 20,
    "start": 2
   },
   "_obs": {}
