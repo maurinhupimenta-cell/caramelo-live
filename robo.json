@@ -3313,12 +3313,41 @@
    }
   ],
   "consumidas": {
-   "super": 1785936674967,
    "euro": 1785937433570,
    "copa": 1785938287966,
    "premier": 1785939465374
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:31",
+     "jogo": "Itaquera x Buenos Aires",
+     "odd": 2.15
+    },
+    {
+     "h": "15:34",
+     "jogo": "Guayaquil x Penarol",
+     "odd": 2.35
+    },
+    {
+     "h": "15:37",
+     "jogo": "Quito x Belo Horizonte",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "coluna :34",
+   "alvo": {
+    "h": "15:31",
+    "jogo": "Itaquera x Buenos Aires",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785940276367
+   },
+   "iniciadoEm": 1785940276367
+  },
   "cooldown": {
    "copa": 1785938287966,
    "premier": 1785939465374,
@@ -3350,9 +3379,9 @@
    "2026-08-05": -1.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRR",
-   "n": 14,
+   "tipo": "coluna",
+   "chave": ":34",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
@@ -6217,7 +6246,7 @@
    "tipo": "coluna",
    "chave": ":37",
    "n": 15,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
