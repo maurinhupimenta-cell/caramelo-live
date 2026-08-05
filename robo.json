@@ -298,13 +298,19 @@
   }
  },
  "o25": {
-  "saldo": -133.4,
-  "ciclos": 993,
+  "saldo": -140.4,
+  "ciclos": 994,
   "greens": 623,
-  "redsCiclo": 157,
+  "redsCiclo": 158,
   "aborts": 0,
   "descartes": 213,
   "historico": [
+   {
+    "quando": "2026-08-05T12:25:30.970Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: time Itaquera"
+   },
    {
     "quando": "2026-08-05T05:42:52.093Z",
     "resultado": "GREEN",
@@ -3252,57 +3258,15 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "13:16",
-     "jogo": "Itaquera x Belo Horizonte",
-     "odd": 2.15
-    },
-    {
-     "h": "13:19",
-     "jogo": "Santos x Buenos Aires",
-     "odd": 2.2
-    },
-    {
-     "h": "13:22",
-     "jogo": "Asuncion x Santiago",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "time Itaquera",
-   "alvo": {
-    "h": "13:22",
-    "jogo": "Asuncion x Santiago",
-    "odd": 2.1,
-    "unidades": 4,
-    "desde": 1785932530167
-   },
-   "iniciadoEm": 1785932127567,
-   "tiros": [
-    {
-     "h": "13:16",
-     "jogo": "Itaquera x Belo Horizonte",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "13:19",
-     "jogo": "Santos x Buenos Aires",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "super": 1785932730766
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785907205801,
    "premier": 1785903712499,
    "euro": 1785908571892,
-   "super": 1785908272900
+   "super": 1785932730766
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -3326,13 +3290,13 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": 4.8
+   "2026-08-05": -2.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Austrália",
+   "tipo": "coluna",
+   "chave": ":32",
    "n": 13,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  },
