@@ -3371,7 +3371,45 @@
    "copa": 1785948471477,
    "super": 1785949730674
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "18:09",
+     "jogo": "Islington x United",
+     "odd": 2.2
+    },
+    {
+     "h": "18:12",
+     "jogo": "Everton x Wolverhampton",
+     "odd": 2.02
+    },
+    {
+     "h": "18:15",
+     "jogo": "Chelsea x United",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "seq RGRG",
+   "alvo": {
+    "h": "18:12",
+    "jogo": "Everton x Wolverhampton",
+    "odd": 2.02,
+    "unidades": 2,
+    "desde": 1785949903565
+   },
+   "iniciadoEm": 1785949732872,
+   "tiros": [
+    {
+     "h": "18:09",
+     "jogo": "Islington x United",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1785948471477,
    "premier": 1785944680574,
@@ -3404,8 +3442,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGRG",
-   "n": 10,
+   "chave": "GRGRR",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
