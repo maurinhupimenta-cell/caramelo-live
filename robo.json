@@ -280,12 +280,18 @@
  },
  "o25": {
   "saldo": -138.2,
-  "ciclos": 982,
+  "ciclos": 983,
   "greens": 615,
   "redsCiclo": 156,
   "aborts": 0,
-  "descartes": 211,
+  "descartes": 212,
   "historico": [
+   {
+    "quando": "2026-08-05T03:09:54.994Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho placar 0-0) — liga REARMADA"
+   },
    {
     "quando": "2026-08-05T02:43:56.896Z",
     "resultado": "GREEN",
@@ -3228,15 +3234,21 @@
    "2026-08-01": -2.9,
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
-   "2026-08-04": 7.9
+   "2026-08-04": 7.9,
+   "2026-08-05": 0
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Liverpool",
-   "n": 9,
-   "start": 3
+   "chave": "Polônia",
+   "n": 8,
+   "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1785899394993,
+    "gatilho": "placar 0-0"
+   }
+  }
  },
  "ambas": {
   "saldo": -63.6,
