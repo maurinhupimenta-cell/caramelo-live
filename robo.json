@@ -3261,7 +3261,37 @@
   "consumidas": {
    "super": 1785932730766
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:29",
+     "jogo": "Alemanha x Suíça",
+     "odd": 2.1
+    },
+    {
+     "h": "13:32",
+     "jogo": "Escócia x Bélgica",
+     "odd": 2.15
+    },
+    {
+     "h": "13:35",
+     "jogo": "Romênia x Dinamarca",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "coluna :32",
+   "alvo": {
+    "h": "13:29",
+    "jogo": "Alemanha x Suíça",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785932732872
+   },
+   "iniciadoEm": 1785932732872
+  },
   "cooldown": {
    "copa": 1785907205801,
    "premier": 1785903712499,
@@ -3296,18 +3326,24 @@
    "tipo": "coluna",
    "chave": ":32",
    "n": 13,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -58.3,
-  "ciclos": 1000,
+  "ciclos": 1001,
   "greens": 687,
   "redsCiclo": 108,
   "aborts": 0,
-  "descartes": 205,
+  "descartes": 206,
   "historico": [
+   {
+    "quando": "2026-08-05T12:30:56.675Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho odd 2.05) — liga REARMADA"
+   },
    {
     "quando": "2026-08-05T12:21:49.071Z",
     "resultado": "GREEN",
@@ -6108,6 +6144,11 @@
    "n": 13,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1785933056675,
+    "gatilho": "odd 2.05"
+   }
+  }
  }
 }
