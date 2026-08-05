@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -154.3,
-  "ciclos": 195,
-  "greens": 65,
+  "saldo": -142.3,
+  "ciclos": 196,
+  "greens": 66,
   "redsCiclo": 82,
   "aborts": 0,
   "descartes": 48,
   "historico": [
+   {
+    "quando": "2026-08-05T04:21:52.492Z",
+    "resultado": "GREEN",
+    "unidades": 12,
+    "detalhe": "premier · Everton x Tottenham @4.75 (tiro 3) · gatilho: seq RRRRG"
+   },
    {
     "quando": "2026-08-05T03:22:59.790Z",
     "resultado": "GREEN",
@@ -243,56 +249,13 @@
    }
   ],
   "consumidas": {
-   "super": 1785900179597
+   "super": 1785900179597,
+   "premier": 1785903712201
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "05:12",
-     "jogo": "West Ham x Liverpool",
-     "odd": 5
-    },
-    {
-     "h": "05:15",
-     "jogo": "Palace x Norwich",
-     "odd": 4.2
-    },
-    {
-     "h": "05:18",
-     "jogo": "Everton x Tottenham",
-     "odd": 4.75
-    }
-   ],
-   "gatilho": "seq RRRRG",
-   "alvo": {
-    "h": "05:18",
-    "jogo": "Everton x Tottenham",
-    "odd": 4.75,
-    "unidades": 4,
-    "desde": 1785903469597
-   },
-   "iniciadoEm": 1785903021893,
-   "tiros": [
-    {
-     "h": "05:12",
-     "jogo": "West Ham x Liverpool",
-     "odd": 5,
-     "unidades": 1
-    },
-    {
-     "h": "05:15",
-     "jogo": "Palace x Norwich",
-     "odd": 4.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785688526966,
-   "premier": 1785818695460,
+   "premier": 1785903712201,
    "euro": 1785464913993,
    "super": 1785900179597
   },
@@ -312,7 +275,7 @@
    "2026-08-01": -7,
    "2026-08-02": -7,
    "2026-08-04": 19,
-   "2026-08-05": 13
+   "2026-08-05": 25
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -3324,8 +3287,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Polônia",
-   "n": 9,
+   "chave": "Santiago",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
