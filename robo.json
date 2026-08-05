@@ -3203,13 +3203,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -67,
-  "ciclos": 991,
-  "greens": 679,
+  "saldo": -65.9,
+  "ciclos": 992,
+  "greens": 680,
   "redsCiclo": 108,
   "aborts": 0,
   "descartes": 204,
   "historico": [
+   {
+    "quando": "2026-08-05T01:55:56.693Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Escócia x Inglaterra @2.1 (tiro 1) · gatilho: odd 2.05"
+   },
    {
     "quando": "2026-08-05T01:18:56.095Z",
     "resultado": "GREEN",
@@ -5918,44 +5924,15 @@
    }
   ],
   "consumidas": {
-   "premier": 1785892735902
+   "premier": 1785892735902,
+   "copa": 1785894956495
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "02:46",
-     "jogo": "Escócia x Inglaterra",
-     "odd": 2.1
-    },
-    {
-     "h": "02:49",
-     "jogo": "Senegal x Arábia Saudita",
-     "odd": 2.05
-    },
-    {
-     "h": "02:52",
-     "jogo": "Inglaterra x Noruega",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "odd 2.05",
-   "alvo": {
-    "h": "02:46",
-    "jogo": "Escócia x Inglaterra",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785894178693
-   },
-   "iniciadoEm": 1785894178693
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785883200300,
    "super": 1785885238097,
    "premier": 1785892735902,
-   "copa": 1785884337802
+   "copa": 1785894956495
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -5977,13 +5954,13 @@
    "2026-08-01": -19.4,
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
-   "2026-08-04": 0.3
+   "2026-08-04": 1.4
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.05",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
