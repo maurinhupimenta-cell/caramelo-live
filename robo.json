@@ -3270,8 +3270,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "13:43",
@@ -3291,13 +3291,21 @@
    ],
    "gatilho": "time Áustria",
    "alvo": {
-    "h": "13:43",
-    "jogo": "Escócia x Turquia",
-    "odd": 2.54,
-    "unidades": 1,
-    "desde": 1785933248069
+    "h": "13:46",
+    "jogo": "Áustria x EUA",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1785933968674
    },
-   "iniciadoEm": 1785933248069
+   "iniciadoEm": 1785933248069,
+   "tiros": [
+    {
+     "h": "13:43",
+     "jogo": "Escócia x Turquia",
+     "odd": 2.54,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785907205801,
@@ -3331,9 +3339,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Áustria",
-   "n": 10,
-   "start": 1
+   "chave": "México",
+   "n": 9,
+   "start": 2
   },
   "_obs": {}
  },
