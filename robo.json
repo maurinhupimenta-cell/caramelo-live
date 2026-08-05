@@ -237,7 +237,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:49",
+     "jogo": "Bogota x Quito",
+     "odd": 5.5
+    },
+    {
+     "h": "03:52",
+     "jogo": "Rio de Janeiro x La Boca",
+     "odd": 4.75
+    },
+    {
+     "h": "03:55",
+     "jogo": "Quito x Medellin",
+     "odd": 5
+    }
+   ],
+   "gatilho": "seq RRRRR",
+   "alvo": {
+    "h": "03:49",
+    "jogo": "Bogota x Quito",
+    "odd": 5.5,
+    "unidades": 1,
+    "desde": 1785900170795
+   },
+   "iniciadoEm": 1785900170795
+  },
   "cooldown": {
    "copa": 1785688526966,
    "premier": 1785818695460,
@@ -262,8 +292,8 @@
    "2026-08-04": 19
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Aston",
+   "tipo": "seq",
+   "chave": "RRRRR",
    "n": 9,
    "start": 1
   },
