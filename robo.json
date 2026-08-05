@@ -247,8 +247,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:12",
@@ -268,13 +268,21 @@
    ],
    "gatilho": "seq RRRRG",
    "alvo": {
-    "h": "05:12",
-    "jogo": "West Ham x Liverpool",
-    "odd": 5,
-    "unidades": 1,
-    "desde": 1785903021893
+    "h": "05:15",
+    "jogo": "Palace x Norwich",
+    "odd": 4.2,
+    "unidades": 2,
+    "desde": 1785903419299
    },
-   "iniciadoEm": 1785903021893
+   "iniciadoEm": 1785903021893,
+   "tiros": [
+    {
+     "h": "05:12",
+     "jogo": "West Ham x Liverpool",
+     "odd": 5,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785688526966,
@@ -3235,8 +3243,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:12",
@@ -3256,13 +3264,21 @@
    ],
    "gatilho": "time Liverpool",
    "alvo": {
-    "h": "05:12",
-    "jogo": "West Ham x Liverpool",
-    "odd": 2.45,
-    "unidades": 1,
-    "desde": 1785903180990
+    "h": "05:15",
+    "jogo": "Palace x Norwich",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1785903419591
    },
-   "iniciadoEm": 1785903180990
+   "iniciadoEm": 1785903180990,
+   "tiros": [
+    {
+     "h": "05:12",
+     "jogo": "West Ham x Liverpool",
+     "odd": 2.45,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785902944899,
@@ -3296,8 +3312,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Liverpool",
-   "n": 11,
+   "chave": "Polônia",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
