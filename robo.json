@@ -6210,10 +6210,47 @@
    }
   ],
   "consumidas": {
-   "copa": 1785944871969,
    "premier": 1785948284773
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "17:49",
+     "jogo": "Nova Zelândia x Bélgica",
+     "odd": 1.98
+    },
+    {
+     "h": "17:52",
+     "jogo": "Haiti x Canadá",
+     "odd": 1.98
+    },
+    {
+     "h": "17:55",
+     "jogo": "Uzbequistão x Bélgica",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "time Canadá",
+   "alvo": {
+    "h": "17:52",
+    "jogo": "Haiti x Canadá",
+    "odd": 1.98,
+    "unidades": 2,
+    "desde": 1785948710070
+   },
+   "iniciadoEm": 1785948473769,
+   "tiros": [
+    {
+     "h": "17:49",
+     "jogo": "Nova Zelândia x Bélgica",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1785883200300,
    "super": 1785899401696,
@@ -6244,10 +6281,10 @@
    "2026-08-05": 12.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.8",
-   "n": 8,
-   "start": 1
+   "tipo": "time",
+   "chave": "Nova Zelândia",
+   "n": 12,
+   "start": 2
   },
   "_obs": {}
  }
