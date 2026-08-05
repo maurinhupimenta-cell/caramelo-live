@@ -3275,7 +3275,37 @@
    "euro": 1785933132971,
    "copa": 1785934328865
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:06",
+     "jogo": "Leicester x City",
+     "odd": 2.15
+    },
+    {
+     "h": "14:09",
+     "jogo": "Tottenham x Liverpool",
+     "odd": 2.4
+    },
+    {
+     "h": "14:12",
+     "jogo": "United x City",
+     "odd": 2.075
+    }
+   ],
+   "gatilho": "coluna :09",
+   "alvo": {
+    "h": "14:06",
+    "jogo": "Leicester x City",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785934623070
+   },
+   "iniciadoEm": 1785934623070
+  },
   "cooldown": {
    "copa": 1785934328865,
    "premier": 1785903712499,
@@ -3307,10 +3337,10 @@
    "2026-08-05": -8.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRRR",
-   "n": 8,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":09",
+   "n": 14,
+   "start": 3
   },
   "_obs": {}
  },
