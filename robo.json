@@ -3353,7 +3353,37 @@
    "super": 1785945171969,
    "euro": 1785947930071
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:43",
+     "jogo": "Japão x República Tcheca",
+     "odd": 2.5
+    },
+    {
+     "h": "17:46",
+     "jogo": "Bósnia e Herzegovina x Croácia",
+     "odd": 2.25
+    },
+    {
+     "h": "17:49",
+     "jogo": "Nova Zelândia x Bélgica",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "time República Tcheca",
+   "alvo": {
+    "h": "17:43",
+    "jogo": "Japão x República Tcheca",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1785948054571
+   },
+   "iniciadoEm": 1785948054571
+  },
   "cooldown": {
    "copa": 1785943853977,
    "premier": 1785944680574,
@@ -3385,10 +3415,10 @@
    "2026-08-05": -1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":50",
-   "n": 17,
-   "start": 3
+   "tipo": "time",
+   "chave": "República Tcheca",
+   "n": 9,
+   "start": 1
   },
   "_obs": {}
  },
