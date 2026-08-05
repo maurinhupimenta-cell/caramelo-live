@@ -3254,10 +3254,39 @@
   ],
   "consumidas": {
    "copa": 1785907205801,
-   "super": 1785908272900,
    "euro": 1785908571892
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "13:16",
+     "jogo": "Itaquera x Belo Horizonte",
+     "odd": 2.15
+    },
+    {
+     "h": "13:19",
+     "jogo": "Santos x Buenos Aires",
+     "odd": 2.2
+    },
+    {
+     "h": "13:22",
+     "jogo": "Asuncion x Santiago",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time Itaquera",
+   "alvo": {
+    "h": "13:16",
+    "jogo": "Itaquera x Belo Horizonte",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785932127567
+   },
+   "iniciadoEm": 1785932127567
+  },
   "cooldown": {
    "copa": 1785907205801,
    "premier": 1785903712499,
@@ -3290,20 +3319,26 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Inglaterra",
-   "n": 12,
-   "start": 2
+   "chave": "Itaquera",
+   "n": 24,
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -59.4,
-  "ciclos": 998,
+  "ciclos": 999,
   "greens": 686,
   "redsCiclo": 108,
   "aborts": 0,
-  "descartes": 204,
+  "descartes": 205,
   "historico": [
+   {
+    "quando": "2026-08-05T12:15:27.966Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-08-05T05:20:06.293Z",
     "resultado": "GREEN",
