@@ -298,13 +298,19 @@
   }
  },
  "o25": {
-  "saldo": -139.2,
-  "ciclos": 1009,
-  "greens": 634,
+  "saldo": -137.7,
+  "ciclos": 1010,
+  "greens": 635,
   "redsCiclo": 160,
   "aborts": 0,
   "descartes": 215,
   "historico": [
+   {
+    "quando": "2026-08-05T16:47:51.674Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "copa · Japão x República Tcheca @2.5 (tiro 1) · gatilho: time República Tcheca"
+   },
    {
     "quando": "2026-08-05T16:38:50.267Z",
     "resultado": "GREEN",
@@ -3350,41 +3356,12 @@
   ],
   "consumidas": {
    "super": 1785945171969,
-   "euro": 1785947930071
+   "euro": 1785947930071,
+   "copa": 1785948471477
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:43",
-     "jogo": "Japão x República Tcheca",
-     "odd": 2.5
-    },
-    {
-     "h": "17:46",
-     "jogo": "Bósnia e Herzegovina x Croácia",
-     "odd": 2.25
-    },
-    {
-     "h": "17:49",
-     "jogo": "Nova Zelândia x Bélgica",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "time República Tcheca",
-   "alvo": {
-    "h": "17:43",
-    "jogo": "Japão x República Tcheca",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1785948054571
-   },
-   "iniciadoEm": 1785948054571
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785943853977,
+   "copa": 1785948471477,
    "premier": 1785944680574,
    "euro": 1785947930071,
    "super": 1785945171969
@@ -3411,7 +3388,7 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": -1
+   "2026-08-05": 0.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
