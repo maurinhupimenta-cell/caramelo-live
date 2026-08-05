@@ -3347,7 +3347,37 @@
    "premier": 1785944680574,
    "super": 1785945171969
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:29",
+     "jogo": "Suíça x Itália",
+     "odd": 2.2
+    },
+    {
+     "h": "17:32",
+     "jogo": "Dinamarca x Bélgica",
+     "odd": 2.25
+    },
+    {
+     "h": "17:35",
+     "jogo": "Suíça x Alemanha",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "coluna :32",
+   "alvo": {
+    "h": "17:29",
+    "jogo": "Suíça x Itália",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785947033873
+   },
+   "iniciadoEm": 1785947033873
+  },
   "cooldown": {
    "copa": 1785943853977,
    "premier": 1785944680574,
@@ -3379,10 +3409,10 @@
    "2026-08-05": -2.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.98",
-   "n": 10,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":32",
+   "n": 17,
+   "start": 2
   },
   "_obs": {}
  },
