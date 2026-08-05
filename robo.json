@@ -3349,7 +3349,6 @@
    }
   ],
   "consumidas": {
-   "premier": 1785944680574,
    "super": 1785945171969,
    "euro": 1785947930071
   },
@@ -3423,13 +3422,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -53,
-  "ciclos": 1006,
-  "greens": 692,
+  "saldo": -52,
+  "ciclos": 1007,
+  "greens": 693,
   "redsCiclo": 108,
   "aborts": 0,
   "descartes": 206,
   "historico": [
+   {
+    "quando": "2026-08-05T16:44:44.973Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Watford x Southampton @2.05 (tiro 1) · gatilho: odd 1.8"
+   },
    {
     "quando": "2026-08-05T15:47:52.169Z",
     "resultado": "GREEN",
@@ -6228,43 +6233,14 @@
    }
   ],
   "consumidas": {
-   "copa": 1785944871969
+   "copa": 1785944871969,
+   "premier": 1785948284773
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:42",
-     "jogo": "Watford x Southampton",
-     "odd": 2.05
-    },
-    {
-     "h": "17:45",
-     "jogo": "Brighton x Everton",
-     "odd": 1.8
-    },
-    {
-     "h": "17:48",
-     "jogo": "Southampton x Norwich",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "odd 1.8",
-   "alvo": {
-    "h": "17:42",
-    "jogo": "Watford x Southampton",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785947607376
-   },
-   "iniciadoEm": 1785947607376
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785883200300,
    "super": 1785899401696,
-   "premier": 1785937859172,
+   "premier": 1785948284773,
    "copa": 1785944871969
   },
   "dias": {
@@ -6288,7 +6264,7 @@
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
-   "2026-08-05": 11.6
+   "2026-08-05": 12.6
   },
   "_gatilhoAtual": {
    "tipo": "odd",
