@@ -299,12 +299,18 @@
  },
  "o25": {
   "saldo": -145,
-  "ciclos": 997,
+  "ciclos": 998,
   "greens": 625,
   "redsCiclo": 159,
   "aborts": 0,
-  "descartes": 213,
+  "descartes": 214,
   "historico": [
+   {
+    "quando": "2026-08-05T13:25:31.578Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho odd 1.98) — liga REARMADA"
+   },
    {
     "quando": "2026-08-05T13:14:40.470Z",
     "resultado": "GREEN",
@@ -3281,7 +3287,37 @@
    "copa": 1785934328865,
    "premier": 1785935680273
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:28",
+     "jogo": "Montevideo x Medellin",
+     "odd": 2.25
+    },
+    {
+     "h": "14:31",
+     "jogo": "Sao Paulo x Buenos Aires",
+     "odd": 1.98
+    },
+    {
+     "h": "14:34",
+     "jogo": "Medellin x Avellaneda",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "odd 1.98",
+   "alvo": {
+    "h": "14:28",
+    "jogo": "Montevideo x Medellin",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785936335167
+   },
+   "iniciadoEm": 1785936335167
+  },
   "cooldown": {
    "copa": 1785934328865,
    "premier": 1785935680273,
@@ -3313,21 +3349,27 @@
    "2026-08-05": -6.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":09",
-   "n": 14,
+   "tipo": "odd",
+   "chave": "1.98",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -57.3,
-  "ciclos": 1002,
-  "greens": 688,
+  "saldo": -56.4,
+  "ciclos": 1003,
+  "greens": 689,
   "redsCiclo": 108,
   "aborts": 0,
   "descartes": 206,
   "historico": [
+   {
+    "quando": "2026-08-05T13:28:50.970Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · Nova Zelândia x México @1.93 (tiro 2) · gatilho: seq RRRR"
+   },
    {
     "quando": "2026-08-05T12:41:58.372Z",
     "resultado": "GREEN",
@@ -6102,52 +6144,15 @@
    }
   ],
   "consumidas": {
-   "premier": 1785933718172
+   "premier": 1785933718172,
+   "copa": 1785936530774
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "14:22",
-     "jogo": "Japão x Qatar",
-     "odd": 2.1
-    },
-    {
-     "h": "14:25",
-     "jogo": "Nova Zelândia x México",
-     "odd": 1.93
-    },
-    {
-     "h": "14:28",
-     "jogo": "Suíça x Austrália",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "seq RRRR",
-   "alvo": {
-    "h": "14:25",
-    "jogo": "Nova Zelândia x México",
-    "odd": 1.93,
-    "unidades": 2,
-    "desde": 1785936327569
-   },
-   "iniciadoEm": 1785936109766,
-   "tiros": [
-    {
-     "h": "14:22",
-     "jogo": "Japão x Qatar",
-     "odd": 2.1,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785883200300,
    "super": 1785899401696,
    "premier": 1785933718172,
-   "copa": 1785932508779
+   "copa": 1785936530774
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -6170,13 +6175,13 @@
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
-   "2026-08-05": 7.3
+   "2026-08-05": 8.2
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":37",
    "n": 14,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
