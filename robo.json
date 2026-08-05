@@ -298,13 +298,19 @@
   }
  },
  "o25": {
-  "saldo": -136.4,
-  "ciclos": 1005,
-  "greens": 631,
+  "saldo": -134.8,
+  "ciclos": 1006,
+  "greens": 632,
   "redsCiclo": 159,
   "aborts": 0,
   "descartes": 215,
   "historico": [
+   {
+    "quando": "2026-08-05T15:30:54.265Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "copa · França x Suíça @2.3 (tiro 2) · gatilho: seq GGRRR"
+   },
    {
     "quando": "2026-08-05T14:50:27.567Z",
     "resultado": "GREEN",
@@ -3326,49 +3332,12 @@
   ],
   "consumidas": {
    "super": 1785940633972,
-   "euro": 1785941427370
+   "euro": 1785941427370,
+   "copa": 1785943853977
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "16:25",
-     "jogo": "Bélgica x Cabo Verde",
-     "odd": 2.25
-    },
-    {
-     "h": "16:28",
-     "jogo": "França x Suíça",
-     "odd": 2.3
-    },
-    {
-     "h": "16:31",
-     "jogo": "Irã x Marrocos",
-     "odd": 2.55
-    }
-   ],
-   "gatilho": "seq GGRRR",
-   "alvo": {
-    "h": "16:28",
-    "jogo": "França x Suíça",
-    "odd": 2.3,
-    "unidades": 2,
-    "desde": 1785943789968
-   },
-   "iniciadoEm": 1785943370765,
-   "tiros": [
-    {
-     "h": "16:25",
-     "jogo": "Bélgica x Cabo Verde",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785938287966,
+   "copa": 1785943853977,
    "premier": 1785939465374,
    "euro": 1785941427370,
    "super": 1785940633972
@@ -3395,7 +3364,7 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": 1.8
+   "2026-08-05": 3.4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
