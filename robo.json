@@ -3231,11 +3231,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1785899580495,
    "euro": 1785899637692,
    "copa": 1785902944899
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:12",
+     "jogo": "West Ham x Liverpool",
+     "odd": 2.45
+    },
+    {
+     "h": "05:15",
+     "jogo": "Palace x Norwich",
+     "odd": 2.2
+    },
+    {
+     "h": "05:18",
+     "jogo": "Everton x Tottenham",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "time Liverpool",
+   "alvo": {
+    "h": "05:12",
+    "jogo": "West Ham x Liverpool",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1785903180990
+   },
+   "iniciadoEm": 1785903180990
+  },
   "cooldown": {
    "copa": 1785902944899,
    "premier": 1785899580495,
@@ -3267,9 +3296,9 @@
    "2026-08-05": 4.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRG",
-   "n": 9,
+   "tipo": "time",
+   "chave": "Liverpool",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
