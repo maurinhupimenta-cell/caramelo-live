@@ -298,13 +298,19 @@
   }
  },
  "o25": {
-  "saldo": -139.6,
-  "ciclos": 1003,
-  "greens": 629,
+  "saldo": -137.9,
+  "ciclos": 1004,
+  "greens": 630,
   "redsCiclo": 159,
   "aborts": 0,
   "descartes": 215,
   "historico": [
+   {
+    "quando": "2026-08-05T14:37:14.173Z",
+    "resultado": "GREEN",
+    "unidades": 1.7,
+    "detalhe": "super · Guayaquil x Penarol @2.35 (tiro 2) · gatilho: coluna :34"
+   },
    {
     "quando": "2026-08-05T14:17:45.569Z",
     "resultado": "GREEN",
@@ -3313,54 +3319,46 @@
    }
   ],
   "consumidas": {
-   "euro": 1785937433570,
    "copa": 1785938287966,
-   "premier": 1785939465374
+   "premier": 1785939465374,
+   "super": 1785940633972
   },
   "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "15:31",
-     "jogo": "Itaquera x Buenos Aires",
-     "odd": 2.15
+     "h": "15:47",
+     "jogo": "República Tcheca x Eslováquia",
+     "odd": 2.55
     },
     {
-     "h": "15:34",
-     "jogo": "Guayaquil x Penarol",
+     "h": "15:50",
+     "jogo": "Croácia x Hungria",
      "odd": 2.35
     },
     {
-     "h": "15:37",
-     "jogo": "Quito x Belo Horizonte",
-     "odd": 2.1
+     "h": "15:53",
+     "jogo": "Eslováquia x República Tcheca",
+     "odd": 2.55
     }
    ],
-   "gatilho": "coluna :34",
+   "gatilho": "coluna :50",
    "alvo": {
-    "h": "15:34",
-    "jogo": "Guayaquil x Penarol",
-    "odd": 2.35,
-    "unidades": 2,
-    "desde": 1785940455576
+    "h": "15:47",
+    "jogo": "República Tcheca x Eslováquia",
+    "odd": 2.55,
+    "unidades": 1,
+    "desde": 1785941033967
    },
-   "iniciadoEm": 1785940276367,
-   "tiros": [
-    {
-     "h": "15:31",
-     "jogo": "Itaquera x Buenos Aires",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1785941033967
   },
   "cooldown": {
    "copa": 1785938287966,
    "premier": 1785939465374,
    "euro": 1785937433570,
-   "super": 1785936674967
+   "super": 1785940633972
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -3384,12 +3382,12 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": -1.4
+   "2026-08-05": 0.3
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.45",
-   "n": 13,
+   "tipo": "coluna",
+   "chave": ":50",
+   "n": 15,
    "start": 2
   },
   "_obs": {}
