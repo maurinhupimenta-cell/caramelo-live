@@ -298,13 +298,19 @@
   }
  },
  "o25": {
-  "saldo": -135.2,
-  "ciclos": 1019,
-  "greens": 642,
+  "saldo": -133.3,
+  "ciclos": 1020,
+  "greens": 643,
   "redsCiclo": 161,
   "aborts": 0,
   "descartes": 216,
   "historico": [
+   {
+    "quando": "2026-08-05T20:07:53.171Z",
+    "resultado": "GREEN",
+    "unidades": 1.9,
+    "detalhe": "super · Penarol x Itaquera @2.45 (tiro 2) · gatilho: odd 2.45"
+   },
    {
     "quando": "2026-08-05T19:07:49.672Z",
     "resultado": "GREEN",
@@ -3408,51 +3414,15 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "20:58",
-     "jogo": "Belo Horizonte x Quito",
-     "odd": 2.15
-    },
-    {
-     "h": "21:01",
-     "jogo": "Penarol x Itaquera",
-     "odd": 2.45
-    },
-    {
-     "h": "21:04",
-     "jogo": "Santos x Bogota",
-     "odd": 2.7
-    }
-   ],
-   "gatilho": "odd 2.45",
-   "alvo": {
-    "h": "21:01",
-    "jogo": "Penarol x Itaquera",
-    "odd": 2.45,
-    "unidades": 2,
-    "desde": 1785960055474
-   },
-   "iniciadoEm": 1785959570773,
-   "tiros": [
-    {
-     "h": "20:58",
-     "jogo": "Belo Horizonte x Quito",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "super": 1785960472976
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785956332877,
    "premier": 1785955663167,
    "euro": 1785956869469,
-   "super": 1785955970568
+   "super": 1785960472976
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -3476,7 +3446,7 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": 3
+   "2026-08-05": 4.9
   },
   "_gatilhoAtual": {
    "tipo": "odd",
@@ -6330,7 +6300,37 @@
   "consumidas": {
    "copa": 1785957473380
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:18",
+     "jogo": "Southampton x Brighton",
+     "odd": 1.95
+    },
+    {
+     "h": "21:21",
+     "jogo": "Newcastle x Burnley",
+     "odd": 1.8
+    },
+    {
+     "h": "21:24",
+     "jogo": "Southampton x Brentford",
+     "odd": 2.075
+    }
+   ],
+   "gatilho": "odd 1.8",
+   "alvo": {
+    "h": "21:18",
+    "jogo": "Southampton x Brighton",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1785960543678
+   },
+   "iniciadoEm": 1785960543678
+  },
   "cooldown": {
    "euro": 1785956149774,
    "super": 1785899401696,
@@ -6361,10 +6361,10 @@
    "2026-08-05": 18.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":22",
-   "n": 20,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.8",
+   "n": 13,
+   "start": 3
   },
   "_obs": {}
  }
