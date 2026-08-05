@@ -251,7 +251,45 @@
   "consumidas": {
    "premier": 1785903712201
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "05:22",
+     "jogo": "Belo Horizonte x Agua Branca",
+     "odd": 3.8
+    },
+    {
+     "h": "05:25",
+     "jogo": "Santiago x Quito",
+     "odd": 4
+    },
+    {
+     "h": "05:28",
+     "jogo": "Belo Horizonte x Bogota",
+     "odd": 4.75
+    }
+   ],
+   "gatilho": "seq RRRRR",
+   "alvo": {
+    "h": "05:25",
+    "jogo": "Santiago x Quito",
+    "odd": 4,
+    "unidades": 2,
+    "desde": 1785903917001
+   },
+   "iniciadoEm": 1785903780399,
+   "tiros": [
+    {
+     "h": "05:22",
+     "jogo": "Belo Horizonte x Agua Branca",
+     "odd": 3.8,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1785688526966,
    "premier": 1785903712201,
@@ -278,8 +316,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRRG",
-   "n": 8,
+   "chave": "RRRRR",
+   "n": 9,
    "start": 1
   },
   "_obs": {
@@ -3218,8 +3256,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:22",
@@ -3239,13 +3277,21 @@
    ],
    "gatilho": "time Santiago",
    "alvo": {
-    "h": "05:22",
-    "jogo": "Belo Horizonte x Agua Branca",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785903716190
+    "h": "05:25",
+    "jogo": "Santiago x Quito",
+    "odd": 2.1,
+    "unidades": 2,
+    "desde": 1785903917293
    },
-   "iniciadoEm": 1785903716190
+   "iniciadoEm": 1785903716190,
+   "tiros": [
+    {
+     "h": "05:22",
+     "jogo": "Belo Horizonte x Agua Branca",
+     "odd": 2.05,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785902944899,
@@ -3278,10 +3324,10 @@
    "2026-08-05": 7.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Santiago",
-   "n": 10,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.2",
+   "n": 9,
+   "start": 2
   },
   "_obs": {}
  },
