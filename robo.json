@@ -299,12 +299,18 @@
  },
  "o25": {
   "saldo": -133.3,
-  "ciclos": 1020,
+  "ciclos": 1021,
   "greens": 643,
   "redsCiclo": 161,
   "aborts": 0,
-  "descartes": 216,
+  "descartes": 217,
   "historico": [
+   {
+    "quando": "2026-08-05T20:36:49.477Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho seq GRRRG) — liga REARMADA"
+   },
    {
     "quando": "2026-08-05T20:07:53.171Z",
     "resultado": "GREEN",
@@ -3417,7 +3423,37 @@
   "consumidas": {
    "super": 1785960472976
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:40",
+     "jogo": "Canadá x Curação",
+     "odd": 2.25
+    },
+    {
+     "h": "21:43",
+     "jogo": "Brasil x Argentina",
+     "odd": 2.15
+    },
+    {
+     "h": "21:46",
+     "jogo": "Costa do Marfim x Países Baixos",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "seq GRRRG",
+   "alvo": {
+    "h": "21:40",
+    "jogo": "Canadá x Curação",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785962211471
+   },
+   "iniciadoEm": 1785962211471
+  },
   "cooldown": {
    "copa": 1785956332877,
    "premier": 1785955663167,
@@ -3449,9 +3485,9 @@
    "2026-08-05": 4.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.7",
-   "n": 8,
+   "tipo": "seq",
+   "chave": "GRRRG",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
