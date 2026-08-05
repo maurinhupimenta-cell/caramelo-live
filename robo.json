@@ -298,13 +298,19 @@
   }
  },
  "o25": {
-  "saldo": -126.2,
-  "ciclos": 1027,
+  "saldo": -133.2,
+  "ciclos": 1028,
   "greens": 648,
-  "redsCiclo": 161,
+  "redsCiclo": 162,
   "aborts": 0,
   "descartes": 218,
   "historico": [
+   {
+    "quando": "2026-08-05T23:52:52.271Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: seq RGRRR"
+   },
    {
     "quando": "2026-08-05T23:40:57.076Z",
     "resultado": "DESCARTADO",
@@ -3456,56 +3462,14 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "00:44",
-     "jogo": "Croácia x França",
-     "odd": 2.07
-    },
-    {
-     "h": "00:47",
-     "jogo": "Portugal x Áustria",
-     "odd": 2.3
-    },
-    {
-     "h": "00:50",
-     "jogo": "República Tcheca x Hungria",
-     "odd": 2.7
-    }
-   ],
-   "gatilho": "seq RGRRR",
-   "alvo": {
-    "h": "00:50",
-    "jogo": "República Tcheca x Hungria",
-    "odd": 2.7,
-    "unidades": 4,
-    "desde": 1785973795266
-   },
-   "iniciadoEm": 1785973258973,
-   "tiros": [
-    {
-     "h": "00:44",
-     "jogo": "Croácia x França",
-     "odd": 2.07,
-     "unidades": 1
-    },
-    {
-     "h": "00:47",
-     "jogo": "Portugal x Áustria",
-     "odd": 2.3,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "euro": 1785973972067
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785962630370,
    "premier": 1785964730369,
-   "euro": 1785967733373,
+   "euro": 1785973972067,
    "super": 1785965991772
   },
   "dias": {
@@ -3530,7 +3494,7 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": 12
+   "2026-08-05": 5
   },
   "_gatilhoAtual": {
    "tipo": "seq",
