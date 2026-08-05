@@ -3164,7 +3164,37 @@
   "consumidas": {
    "euro": 1785893515105
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:22",
+     "jogo": "Nova Zelândia x Austrália",
+     "odd": 2.2
+    },
+    {
+     "h": "03:25",
+     "jogo": "Brasil x Senegal",
+     "odd": 2.45
+    },
+    {
+     "h": "03:28",
+     "jogo": "Bósnia e Herzegovina x México",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-1)",
+   "alvo": {
+    "h": "03:22",
+    "jogo": "Nova Zelândia x Austrália",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785896338192
+   },
+   "iniciadoEm": 1785896338192
+  },
   "cooldown": {
    "copa": 1785876417597,
    "premier": 1785880794595,
@@ -3196,8 +3226,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 9,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
@@ -5924,7 +5954,6 @@
    }
   ],
   "consumidas": {
-   "premier": 1785892735902,
    "copa": 1785894956495
   },
   "ciclo": null,
