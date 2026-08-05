@@ -298,13 +298,19 @@
   }
  },
  "o25": {
-  "saldo": -136.7,
-  "ciclos": 1012,
-  "greens": 636,
+  "saldo": -135.7,
+  "ciclos": 1013,
+  "greens": 637,
   "redsCiclo": 160,
   "aborts": 0,
   "descartes": 216,
   "historico": [
+   {
+    "quando": "2026-08-05T17:14:50.366Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Everton x Wolverhampton @2.02 (tiro 2) · gatilho: seq RGRG"
+   },
    {
     "quando": "2026-08-05T17:08:50.967Z",
     "resultado": "GREEN",
@@ -3369,50 +3375,13 @@
   "consumidas": {
    "euro": 1785947930071,
    "copa": 1785948471477,
-   "super": 1785949730674
+   "super": 1785949730674,
+   "premier": 1785950090170
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "18:09",
-     "jogo": "Islington x United",
-     "odd": 2.2
-    },
-    {
-     "h": "18:12",
-     "jogo": "Everton x Wolverhampton",
-     "odd": 2.02
-    },
-    {
-     "h": "18:15",
-     "jogo": "Chelsea x United",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "seq RGRG",
-   "alvo": {
-    "h": "18:12",
-    "jogo": "Everton x Wolverhampton",
-    "odd": 2.02,
-    "unidades": 2,
-    "desde": 1785949903565
-   },
-   "iniciadoEm": 1785949732872,
-   "tiros": [
-    {
-     "h": "18:09",
-     "jogo": "Islington x United",
-     "odd": 2.2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785948471477,
-   "premier": 1785944680574,
+   "premier": 1785950090170,
    "euro": 1785947930071,
    "super": 1785949730674
   },
@@ -3438,7 +3407,7 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": 1.5
+   "2026-08-05": 2.5
   },
   "_gatilhoAtual": {
    "tipo": "seq",
