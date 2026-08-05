@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -167.3,
-  "ciclos": 194,
-  "greens": 64,
+  "saldo": -154.3,
+  "ciclos": 195,
+  "greens": 65,
   "redsCiclo": 82,
   "aborts": 0,
   "descartes": 48,
   "historico": [
+   {
+    "quando": "2026-08-05T03:22:59.790Z",
+    "resultado": "GREEN",
+    "unidades": 13,
+    "detalhe": "super · Quito x Medellin @5 (tiro 3) · gatilho: seq RRRRR"
+   },
    {
     "quando": "2026-08-04T04:44:55.754Z",
     "resultado": "GREEN",
@@ -236,51 +242,15 @@
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "03:49",
-     "jogo": "Bogota x Quito",
-     "odd": 5.5
-    },
-    {
-     "h": "03:52",
-     "jogo": "Rio de Janeiro x La Boca",
-     "odd": 4.75
-    },
-    {
-     "h": "03:55",
-     "jogo": "Quito x Medellin",
-     "odd": 5
-    }
-   ],
-   "gatilho": "seq RRRRR",
-   "alvo": {
-    "h": "03:52",
-    "jogo": "Rio de Janeiro x La Boca",
-    "odd": 4.75,
-    "unidades": 2,
-    "desde": 1785900175489
-   },
-   "iniciadoEm": 1785900170795,
-   "tiros": [
-    {
-     "h": "03:49",
-     "jogo": "Bogota x Quito",
-     "odd": 5.5,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "super": 1785900179597
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785688526966,
    "premier": 1785818695460,
    "euro": 1785464913993,
-   "super": 1784965764803
+   "super": 1785900179597
   },
   "dias": {
    "2026-07-15": -35,
@@ -297,7 +267,8 @@
    "2026-07-30": -14,
    "2026-08-01": -7,
    "2026-08-02": -7,
-   "2026-08-04": 19
+   "2026-08-04": 19,
+   "2026-08-05": 13
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -6007,7 +5978,6 @@
    }
   ],
   "consumidas": {
-   "premier": 1785897526300,
    "copa": 1785898856999,
    "super": 1785899401696
   },
