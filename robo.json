@@ -298,13 +298,25 @@
   }
  },
  "o25": {
-  "saldo": -141.8,
-  "ciclos": 1000,
-  "greens": 627,
+  "saldo": -140.8,
+  "ciclos": 1002,
+  "greens": 628,
   "redsCiclo": 159,
   "aborts": 0,
-  "descartes": 214,
+  "descartes": 215,
   "historico": [
+   {
+    "quando": "2026-08-05T13:58:08.167Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Haiti x Costa do Marfim @2.05 (tiro 1) · gatilho: time México"
+   },
+   {
+    "quando": "2026-08-05T13:52:10.272Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time México) — liga REARMADA"
+   },
    {
     "quando": "2026-08-05T13:43:53.770Z",
     "resultado": "GREEN",
@@ -3297,11 +3309,12 @@
   "consumidas": {
    "premier": 1785935680273,
    "super": 1785936674967,
-   "euro": 1785937433570
+   "euro": 1785937433570,
+   "copa": 1785938287966
   },
   "ciclo": null,
   "cooldown": {
-   "copa": 1785934328865,
+   "copa": 1785938287966,
    "premier": 1785935680273,
    "euro": 1785937433570,
    "super": 1785936674967
@@ -3328,12 +3341,12 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": -3.6
+   "2026-08-05": -2.6
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":50",
-   "n": 14,
+   "tipo": "time",
+   "chave": "México",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
