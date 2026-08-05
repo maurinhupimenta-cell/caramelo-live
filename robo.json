@@ -3430,13 +3430,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -51,
-  "ciclos": 1008,
-  "greens": 694,
+  "saldo": -49.8,
+  "ciclos": 1009,
+  "greens": 695,
   "redsCiclo": 108,
   "aborts": 0,
   "descartes": 206,
   "historico": [
+   {
+    "quando": "2026-08-05T18:07:51.372Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Espanha x Uzbequistão @2.05 (tiro 3) · gatilho: time Argélia"
+   },
    {
     "quando": "2026-08-05T16:56:51.868Z",
     "resultado": "GREEN",
@@ -6246,57 +6252,15 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "18:58",
-     "jogo": "Equador x Turquia",
-     "odd": 1.93
-    },
-    {
-     "h": "19:01",
-     "jogo": "Argélia x África do Sul",
-     "odd": 2.1
-    },
-    {
-     "h": "19:04",
-     "jogo": "Espanha x Uzbequistão",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "time Argélia",
-   "alvo": {
-    "h": "19:04",
-    "jogo": "Espanha x Uzbequistão",
-    "odd": 2.05,
-    "unidades": 4,
-    "desde": 1785953151378
-   },
-   "iniciadoEm": 1785952613770,
-   "tiros": [
-    {
-     "h": "18:58",
-     "jogo": "Equador x Turquia",
-     "odd": 1.93,
-     "unidades": 1
-    },
-    {
-     "h": "19:01",
-     "jogo": "Argélia x África do Sul",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "copa": 1785953271173
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785883200300,
    "super": 1785899401696,
    "premier": 1785948284773,
-   "copa": 1785949011668
+   "copa": 1785953271173
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -6319,13 +6283,13 @@
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
-   "2026-08-05": 13.6
+   "2026-08-05": 14.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Argélia",
-   "n": 20,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.8",
+   "n": 12,
+   "start": 3
   },
   "_obs": {}
  }
