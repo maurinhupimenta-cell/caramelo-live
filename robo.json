@@ -3328,7 +3328,37 @@
    "super": 1785940633972,
    "euro": 1785941427370
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:25",
+     "jogo": "Bélgica x Cabo Verde",
+     "odd": 2.25
+    },
+    {
+     "h": "16:28",
+     "jogo": "França x Suíça",
+     "odd": 2.3
+    },
+    {
+     "h": "16:31",
+     "jogo": "Irã x Marrocos",
+     "odd": 2.55
+    }
+   ],
+   "gatilho": "seq GGRRR",
+   "alvo": {
+    "h": "16:25",
+    "jogo": "Bélgica x Cabo Verde",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1785943370765
+   },
+   "iniciadoEm": 1785943370765
+  },
   "cooldown": {
    "copa": 1785938287966,
    "premier": 1785939465374,
@@ -3360,10 +3390,10 @@
    "2026-08-05": 1.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.45",
-   "n": 16,
-   "start": 2
+   "tipo": "seq",
+   "chave": "GGRRR",
+   "n": 10,
+   "start": 1
   },
   "_obs": {}
  },
