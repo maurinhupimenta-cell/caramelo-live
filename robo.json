@@ -298,13 +298,19 @@
   }
  },
  "o25": {
-  "saldo": -133.3,
-  "ciclos": 1021,
-  "greens": 643,
+  "saldo": -132,
+  "ciclos": 1022,
+  "greens": 644,
   "redsCiclo": 161,
   "aborts": 0,
   "descartes": 217,
   "historico": [
+   {
+    "quando": "2026-08-05T20:43:50.567Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "copa · Canadá x Curação @2.25 (tiro 1) · gatilho: seq GRRRG"
+   },
    {
     "quando": "2026-08-05T20:36:49.477Z",
     "resultado": "GREEN_OBS",
@@ -3421,41 +3427,12 @@
    }
   ],
   "consumidas": {
-   "super": 1785960472976
+   "super": 1785960472976,
+   "copa": 1785962630370
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:40",
-     "jogo": "Canadá x Curação",
-     "odd": 2.25
-    },
-    {
-     "h": "21:43",
-     "jogo": "Brasil x Argentina",
-     "odd": 2.15
-    },
-    {
-     "h": "21:46",
-     "jogo": "Costa do Marfim x Países Baixos",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "seq GRRRG",
-   "alvo": {
-    "h": "21:40",
-    "jogo": "Canadá x Curação",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1785962211471
-   },
-   "iniciadoEm": 1785962211471
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785956332877,
+   "copa": 1785962630370,
    "premier": 1785955663167,
    "euro": 1785956869469,
    "super": 1785960472976
@@ -3482,7 +3459,7 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": 4.9
+   "2026-08-05": 6.2
   },
   "_gatilhoAtual": {
    "tipo": "seq",
