@@ -3671,13 +3671,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -67.9,
-  "ciclos": 1036,
+  "saldo": -74.9,
+  "ciclos": 1037,
   "greens": 711,
-  "redsCiclo": 113,
+  "redsCiclo": 114,
   "aborts": 0,
   "descartes": 212,
   "historico": [
+   {
+    "quando": "2026-08-06T16:10:01.413Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: odd 1.85"
+   },
    {
     "quando": "2026-08-06T15:51:52.612Z",
     "resultado": "RED_CICLO",
@@ -6657,58 +6663,15 @@
   ],
   "consumidas": {
    "premier": 1786030741221,
-   "super": 1786031512322
+   "super": 1786031512322,
+   "copa": 1786032601120
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "17:01",
-     "jogo": "Uzbequistão x Egito",
-     "odd": 1.9
-    },
-    {
-     "h": "17:04",
-     "jogo": "Alemanha x Espanha",
-     "odd": 1.85
-    },
-    {
-     "h": "17:07",
-     "jogo": "Austrália x Jordânia",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "odd 1.85",
-   "alvo": {
-    "h": "17:07",
-    "jogo": "Austrália x Jordânia",
-    "odd": 1.95,
-    "unidades": 4,
-    "desde": 1786032401715
-   },
-   "iniciadoEm": 1786031696212,
-   "tiros": [
-    {
-     "h": "17:01",
-     "jogo": "Uzbequistão x Egito",
-     "odd": 1.9,
-     "unidades": 1
-    },
-    {
-     "h": "17:04",
-     "jogo": "Alemanha x Espanha",
-     "odd": 1.85,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786028450915,
    "super": 1786031512322,
    "premier": 1786030741221,
-   "copa": 1786028094917
+   "copa": 1786032601120
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -6732,7 +6695,7 @@
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
-   "2026-08-06": -20.5
+   "2026-08-06": -27.5
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
