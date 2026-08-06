@@ -6607,7 +6607,45 @@
    "copa": 1786028094917,
    "euro": 1786028450915
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "16:33",
+     "jogo": "Leicester x Newcastle",
+     "odd": 1.9
+    },
+    {
+     "h": "16:36",
+     "jogo": "Burnley x Liverpool",
+     "odd": 1.9
+    },
+    {
+     "h": "16:39",
+     "jogo": "Watford x Everton",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "coluna :33",
+   "alvo": {
+    "h": "16:36",
+    "jogo": "Burnley x Liverpool",
+    "odd": 1.9,
+    "unidades": 2,
+    "desde": 1786030619410
+   },
+   "iniciadoEm": 1786030370615,
+   "tiros": [
+    {
+     "h": "16:33",
+     "jogo": "Leicester x Newcastle",
+     "odd": 1.9,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1786028450915,
    "super": 1786027253414,
@@ -6640,8 +6678,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":56",
-   "n": 15,
+   "chave": ":33",
+   "n": 16,
    "start": 1
   },
   "_obs": {}
