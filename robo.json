@@ -318,13 +318,19 @@
   }
  },
  "o25": {
-  "saldo": -110.8,
-  "ciclos": 1046,
+  "saldo": -117.8,
+  "ciclos": 1047,
   "greens": 664,
-  "redsCiclo": 162,
+  "redsCiclo": 163,
   "aborts": 0,
   "descartes": 220,
   "historico": [
+   {
+    "quando": "2026-08-06T16:04:01.517Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: coluna :58"
+   },
    {
     "quando": "2026-08-06T15:44:08.710Z",
     "resultado": "GREEN",
@@ -3592,55 +3598,12 @@
   ],
   "consumidas": {
    "premier": 1786028927416,
-   "euro": 1786031048416
+   "euro": 1786031048416,
+   "copa": 1786032241315
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "16:55",
-     "jogo": "Uruguai x Iraque",
-     "odd": 2.4
-    },
-    {
-     "h": "16:58",
-     "jogo": "Argélia x Japão",
-     "odd": 2.4
-    },
-    {
-     "h": "17:01",
-     "jogo": "Uzbequistão x Egito",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "coluna :58",
-   "alvo": {
-    "h": "17:01",
-    "jogo": "Uzbequistão x Egito",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1786032060815
-   },
-   "iniciadoEm": 1786031334317,
-   "tiros": [
-    {
-     "h": "16:55",
-     "jogo": "Uruguai x Iraque",
-     "odd": 2.4,
-     "unidades": 1
-    },
-    {
-     "h": "16:58",
-     "jogo": "Argélia x Japão",
-     "odd": 2.4,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1786027733321,
+   "copa": 1786032241315,
    "premier": 1786028927416,
    "euro": 1786031048416,
    "super": 1786026475916
@@ -3668,13 +3631,13 @@
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
-   "2026-08-06": 19.5
+   "2026-08-06": 12.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Espanha",
    "n": 18,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  },
@@ -6664,14 +6627,13 @@
    }
   ],
   "consumidas": {
-   "euro": 1786028450915,
    "premier": 1786030741221,
    "super": 1786031512322
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:01",
@@ -6691,13 +6653,21 @@
    ],
    "gatilho": "odd 1.85",
    "alvo": {
-    "h": "17:01",
-    "jogo": "Uzbequistão x Egito",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1786031696212
+    "h": "17:04",
+    "jogo": "Alemanha x Espanha",
+    "odd": 1.85,
+    "unidades": 2,
+    "desde": 1786032241614
    },
-   "iniciadoEm": 1786031696212
+   "iniciadoEm": 1786031696212,
+   "tiros": [
+    {
+     "h": "17:01",
+     "jogo": "Uzbequistão x Egito",
+     "odd": 1.9,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786028450915,
@@ -6730,9 +6700,9 @@
    "2026-08-06": -20.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Nova Zelândia",
-   "n": 15,
+   "tipo": "coluna",
+   "chave": ":14",
+   "n": 17,
    "start": 3
   },
   "_obs": {}
