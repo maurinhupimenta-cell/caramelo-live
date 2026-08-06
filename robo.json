@@ -3541,7 +3541,37 @@
    "copa": 1785989754773,
    "super": 1785989934967
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:41",
+     "jogo": "Croácia x Geórgia",
+     "odd": 2.35
+    },
+    {
+     "h": "05:44",
+     "jogo": "Albânia x Eslovênia",
+     "odd": 3.1
+    },
+    {
+     "h": "05:47",
+     "jogo": "Itália x Suíça",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time Eslovênia",
+   "alvo": {
+    "h": "05:41",
+    "jogo": "Croácia x Geórgia",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1785990774973
+   },
+   "iniciadoEm": 1785990774973
+  },
   "cooldown": {
    "copa": 1785989754773,
    "premier": 1785988551872,
@@ -3574,10 +3604,10 @@
    "2026-08-06": 6.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGR",
-   "n": 10,
-   "start": 1
+   "tipo": "time",
+   "chave": "Eslovênia",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  },
