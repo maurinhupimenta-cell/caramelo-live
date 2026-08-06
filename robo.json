@@ -318,13 +318,19 @@
   }
  },
  "o25": {
-  "saldo": -114.8,
-  "ciclos": 1043,
-  "greens": 661,
+  "saldo": -113.3,
+  "ciclos": 1044,
+  "greens": 662,
   "redsCiclo": 162,
   "aborts": 0,
   "descartes": 220,
   "historico": [
+   {
+    "quando": "2026-08-06T14:48:53.618Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "copa · Coreia do Sul x Japão @2.55 (tiro 1) · gatilho: seq GRGG"
+   },
    {
     "quando": "2026-08-06T14:41:54.818Z",
     "resultado": "GREEN",
@@ -3574,41 +3580,12 @@
   ],
   "consumidas": {
    "super": 1786026475916,
-   "euro": 1786027314619
+   "euro": 1786027314619,
+   "copa": 1786027733321
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:46",
-     "jogo": "Coreia do Sul x Japão",
-     "odd": 2.55
-    },
-    {
-     "h": "15:49",
-     "jogo": "Iraque x Jordânia",
-     "odd": 2.4
-    },
-    {
-     "h": "15:52",
-     "jogo": "Arábia Saudita x Nova Zelândia",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "seq GRGG",
-   "alvo": {
-    "h": "15:46",
-    "jogo": "Coreia do Sul x Japão",
-    "odd": 2.55,
-    "unidades": 1,
-    "desde": 1786027372720
-   },
-   "iniciadoEm": 1786027372720
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785993895566,
+   "copa": 1786027733321,
    "premier": 1785992561770,
    "euro": 1786027314619,
    "super": 1786026475916
@@ -3636,7 +3613,7 @@
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
-   "2026-08-06": 15.5
+   "2026-08-06": 17
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -6676,7 +6653,7 @@
    "tipo": "coluna",
    "chave": ":53",
    "n": 15,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
