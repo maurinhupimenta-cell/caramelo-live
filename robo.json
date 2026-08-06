@@ -318,13 +318,19 @@
   }
  },
  "o25": {
-  "saldo": -127.8,
-  "ciclos": 1033,
-  "greens": 652,
+  "saldo": -126.3,
+  "ciclos": 1034,
+  "greens": 653,
   "redsCiclo": 162,
   "aborts": 0,
   "descartes": 219,
   "historico": [
+   {
+    "quando": "2026-08-06T03:55:52.068Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "premier · West Ham x Palace @2.45 (tiro 1) · gatilho: time Palace"
+   },
    {
     "quando": "2026-08-06T03:13:58.266Z",
     "resultado": "GREEN",
@@ -3514,42 +3520,13 @@
   ],
   "consumidas": {
    "euro": 1785985371671,
-   "super": 1785986038067
+   "super": 1785986038067,
+   "premier": 1785988551872
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:51",
-     "jogo": "West Ham x Palace",
-     "odd": 2.45
-    },
-    {
-     "h": "04:54",
-     "jogo": "Liverpool x United",
-     "odd": 2.2
-    },
-    {
-     "h": "04:57",
-     "jogo": "Leicester x Burnley",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Palace",
-   "alvo": {
-    "h": "04:51",
-    "jogo": "West Ham x Palace",
-    "odd": 2.45,
-    "unidades": 1,
-    "desde": 1785988076677
-   },
-   "iniciadoEm": 1785988076677
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785962630370,
-   "premier": 1785984475578,
+   "premier": 1785988551872,
    "euro": 1785985371671,
    "super": 1785986038067
   },
@@ -3576,7 +3553,7 @@
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
-   "2026-08-06": 2.5
+   "2026-08-06": 4
   },
   "_gatilhoAtual": {
    "tipo": "time",
