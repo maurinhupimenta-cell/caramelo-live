@@ -318,13 +318,19 @@
   }
  },
  "o25": {
-  "saldo": -113.7,
-  "ciclos": 1057,
+  "saldo": -120.7,
+  "ciclos": 1058,
   "greens": 671,
-  "redsCiclo": 164,
+  "redsCiclo": 165,
   "aborts": 0,
   "descartes": 222,
   "historico": [
+   {
+    "quando": "2026-08-06T22:33:12.111Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: odd 2.55"
+   },
    {
     "quando": "2026-08-06T22:22:37.013Z",
     "resultado": "GREEN",
@@ -3657,56 +3663,13 @@
    }
   ],
   "consumidas": {
-   "copa": 1786054956821
+   "copa": 1786054956821,
+   "premier": 1786055591913
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "23:24",
-     "jogo": "Everton x Southampton",
-     "odd": 2.25
-    },
-    {
-     "h": "23:27",
-     "jogo": "Aston x Tottenham",
-     "odd": 2.55
-    },
-    {
-     "h": "23:30",
-     "jogo": "Everton x Leeds",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "odd 2.55",
-   "alvo": {
-    "h": "23:30",
-    "jogo": "Everton x Leeds",
-    "odd": 2.4,
-    "unidades": 4,
-    "desde": 1786055409120
-   },
-   "iniciadoEm": 1786054959523,
-   "tiros": [
-    {
-     "h": "23:24",
-     "jogo": "Everton x Southampton",
-     "odd": 2.25,
-     "unidades": 1
-    },
-    {
-     "h": "23:27",
-     "jogo": "Aston x Tottenham",
-     "odd": 2.55,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786054956821,
-   "premier": 1786047290519,
+   "premier": 1786055591913,
    "euro": 1786048836913,
    "super": 1786026475916
   },
@@ -3733,7 +3696,7 @@
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
-   "2026-08-06": 16.6
+   "2026-08-06": 9.6
   },
   "_gatilhoAtual": {
    "tipo": "odd",
