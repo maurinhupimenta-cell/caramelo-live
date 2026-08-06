@@ -318,13 +318,25 @@
   }
  },
  "o25": {
-  "saldo": -115.4,
-  "ciclos": 1050,
-  "greens": 666,
+  "saldo": -110.5,
+  "ciclos": 1052,
+  "greens": 668,
   "redsCiclo": 163,
   "aborts": 0,
   "descartes": 221,
   "historico": [
+   {
+    "quando": "2026-08-06T19:08:56.820Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "premier · City x Leeds @2.37 (tiro 1) · gatilho: coluna :09"
+   },
+   {
+    "quando": "2026-08-06T19:05:12.317Z",
+    "resultado": "GREEN",
+    "unidades": 3.5,
+    "detalhe": "euro · Eslovênia x Eslováquia @2.62 (tiro 3) · gatilho: seq RRRGG"
+   },
    {
     "quando": "2026-08-06T18:57:37.711Z",
     "resultado": "GREEN_OBS",
@@ -3614,56 +3626,15 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "19:56",
-     "jogo": "Inglaterra x Croácia",
-     "odd": 2.1
-    },
-    {
-     "h": "19:59",
-     "jogo": "Romênia x Escócia",
-     "odd": 2.15
-    },
-    {
-     "h": "20:02",
-     "jogo": "Eslovênia x Eslováquia",
-     "odd": 2.62
-    }
-   ],
-   "gatilho": "seq RRRGG",
-   "alvo": {
-    "h": "20:02",
-    "jogo": "Eslovênia x Eslováquia",
-    "odd": 2.62,
-    "unidades": 4,
-    "desde": 1786043110109
-   },
-   "iniciadoEm": 1786042476424,
-   "tiros": [
-    {
-     "h": "19:56",
-     "jogo": "Inglaterra x Croácia",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "19:59",
-     "jogo": "Romênia x Escócia",
-     "odd": 2.15,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "euro": 1786043112119,
+   "premier": 1786043336615
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786032241315,
-   "premier": 1786037585810,
-   "euro": 1786031048416,
+   "premier": 1786043336615,
+   "euro": 1786043112119,
    "super": 1786026475916
   },
   "dias": {
@@ -3689,12 +3660,12 @@
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
-   "2026-08-06": 14.9
+   "2026-08-06": 19.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":09",
-   "n": 20,
+   "tipo": "seq",
+   "chave": "RRGG",
+   "n": 29,
    "start": 1
   },
   "_obs": {}
