@@ -318,13 +318,19 @@
   }
  },
  "o25": {
-  "saldo": -112,
-  "ciclos": 1045,
-  "greens": 663,
+  "saldo": -110.8,
+  "ciclos": 1046,
+  "greens": 664,
   "redsCiclo": 162,
   "aborts": 0,
   "descartes": 220,
   "historico": [
+   {
+    "quando": "2026-08-06T15:44:08.710Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Espanha x Geórgia @2.2 (tiro 1) · gatilho: coluna :44"
+   },
    {
     "quando": "2026-08-06T15:08:47.615Z",
     "resultado": "GREEN",
@@ -3586,43 +3592,14 @@
   ],
   "consumidas": {
    "copa": 1786027733321,
-   "premier": 1786028927416
+   "premier": 1786028927416,
+   "euro": 1786031048416
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:41",
-     "jogo": "Espanha x Geórgia",
-     "odd": 2.2
-    },
-    {
-     "h": "16:44",
-     "jogo": "Croácia x Itália",
-     "odd": 2.25
-    },
-    {
-     "h": "16:47",
-     "jogo": "Sérvia x Polônia",
-     "odd": 2.7
-    }
-   ],
-   "gatilho": "coluna :44",
-   "alvo": {
-    "h": "16:41",
-    "jogo": "Espanha x Geórgia",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1786030916209
-   },
-   "iniciadoEm": 1786030916209
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786027733321,
    "premier": 1786028927416,
-   "euro": 1786027314619,
+   "euro": 1786031048416,
    "super": 1786026475916
   },
   "dias": {
@@ -3648,7 +3625,7 @@
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
-   "2026-08-06": 18.3
+   "2026-08-06": 19.5
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
