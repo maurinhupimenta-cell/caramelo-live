@@ -6743,7 +6743,37 @@
   "consumidas": {
    "premier": 1786044761916
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:58",
+     "jogo": "Avellaneda x Quito",
+     "odd": 2.02
+    },
+    {
+     "h": "21:01",
+     "jogo": "Lima x Belo Horizonte",
+     "odd": 1.86
+    },
+    {
+     "h": "21:04",
+     "jogo": "Medellin x Avellaneda",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "odd 1.86",
+   "alvo": {
+    "h": "20:58",
+    "jogo": "Avellaneda x Quito",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1786046022017
+   },
+   "iniciadoEm": 1786046022017
+  },
   "cooldown": {
    "euro": 1786040257418,
    "super": 1786041641722,
@@ -6776,9 +6806,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.15",
-   "n": 17,
-   "start": 1
+   "chave": "1.86",
+   "n": 10,
+   "start": 2
   },
   "_obs": {}
  }
