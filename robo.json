@@ -6447,7 +6447,37 @@
   "consumidas": {
    "premier": 1785982491770
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:46",
+     "jogo": "Espanha x Equador",
+     "odd": 1.87
+    },
+    {
+     "h": "03:49",
+     "jogo": "Alemanha x Nova Zelândia",
+     "odd": 1.95
+    },
+    {
+     "h": "03:52",
+     "jogo": "Coreia do Sul x Áustria",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "odd 1.95",
+   "alvo": {
+    "h": "03:46",
+    "jogo": "Espanha x Equador",
+    "odd": 1.87,
+    "unidades": 1,
+    "desde": 1785984230367
+   },
+   "iniciadoEm": 1785984230367
+  },
   "cooldown": {
    "euro": 1785956149774,
    "super": 1785899401696,
@@ -6478,8 +6508,8 @@
    "2026-08-05": 16
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Brighton",
+   "tipo": "odd",
+   "chave": "1.95",
    "n": 8,
    "start": 1
   },
