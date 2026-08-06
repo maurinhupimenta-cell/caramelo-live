@@ -3647,12 +3647,18 @@
  },
  "ambas": {
   "saldo": -81.2,
-  "ciclos": 1040,
+  "ciclos": 1041,
   "greens": 712,
   "redsCiclo": 115,
   "aborts": 0,
-  "descartes": 213,
+  "descartes": 214,
   "historico": [
+   {
+    "quando": "2026-08-06T17:10:49.213Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho seq RGGRG) — liga REARMADA"
+   },
    {
     "quando": "2026-08-06T16:58:51.212Z",
     "resultado": "GREEN_OBS",
@@ -6655,7 +6661,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1786032601120,
    "euro": 1786033201215,
    "premier": 1786035052721
   },
@@ -6724,8 +6729,13 @@
    "tipo": "odd",
    "chave": "1.8",
    "n": 18,
-   "start": 2
+   "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1786036249212,
+    "gatilho": "seq RGGRG"
+   }
+  }
  }
 }
