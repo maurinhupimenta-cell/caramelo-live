@@ -3650,13 +3650,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -78.1,
-  "ciclos": 1046,
-  "greens": 716,
+  "saldo": -76.9,
+  "ciclos": 1047,
+  "greens": 717,
   "redsCiclo": 115,
   "aborts": 0,
   "descartes": 215,
   "historico": [
+   {
+    "quando": "2026-08-06T18:40:42.009Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Penarol x Medellin @2.15 (tiro 1) · gatilho: odd 2.25"
+   },
    {
     "quando": "2026-08-06T18:26:54.109Z",
     "resultado": "GREEN",
@@ -6696,42 +6702,13 @@
   ],
   "consumidas": {
    "euro": 1786040257418,
-   "premier": 1786040813914
+   "premier": 1786040813914,
+   "super": 1786041641722
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "19:37",
-     "jogo": "Penarol x Medellin",
-     "odd": 2.15
-    },
-    {
-     "h": "19:40",
-     "jogo": "Porto Alegre x La Boca",
-     "odd": 2.25
-    },
-    {
-     "h": "19:43",
-     "jogo": "Santiago x Lima",
-     "odd": 1.8
-    }
-   ],
-   "gatilho": "odd 2.25",
-   "alvo": {
-    "h": "19:37",
-    "jogo": "Penarol x Medellin",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1786040976018
-   },
-   "iniciadoEm": 1786040976018
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786040257418,
-   "super": 1786036254224,
+   "super": 1786041641722,
    "premier": 1786040813914,
    "copa": 1786037154210
   },
@@ -6757,13 +6734,13 @@
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
-   "2026-08-06": -30.7
+   "2026-08-06": -29.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Noruega",
    "n": 9,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
