@@ -3534,7 +3534,37 @@
    "premier": 1785988551872,
    "copa": 1785989754773
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:16",
+     "jogo": "Montevideo x Avellaneda",
+     "odd": 2.2
+    },
+    {
+     "h": "05:19",
+     "jogo": "Quito x Santiago",
+     "odd": 2.1
+    },
+    {
+     "h": "05:22",
+     "jogo": "Itaquera x Santos",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "odd 2.2",
+   "alvo": {
+    "h": "05:16",
+    "jogo": "Montevideo x Avellaneda",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785989813570
+   },
+   "iniciadoEm": 1785989813570
+  },
   "cooldown": {
    "copa": 1785989754773,
    "premier": 1785988551872,
