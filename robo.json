@@ -6443,10 +6443,39 @@
    }
   ],
   "consumidas": {
-   "premier": 1785982491770,
    "copa": 1785984414566
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:21",
+     "jogo": "Wolverhampton x United",
+     "odd": 1.85
+    },
+    {
+     "h": "04:24",
+     "jogo": "Brentford x Brighton",
+     "odd": 1.87
+    },
+    {
+     "h": "04:27",
+     "jogo": "Aston x City",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "time Brighton",
+   "alvo": {
+    "h": "04:21",
+    "jogo": "Wolverhampton x United",
+    "odd": 1.85,
+    "unidades": 1,
+    "desde": 1785986095669
+   },
+   "iniciadoEm": 1785986095669
+  },
   "cooldown": {
    "euro": 1785956149774,
    "super": 1785899401696,
@@ -6477,9 +6506,9 @@
    "2026-08-05": 17.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.05",
-   "n": 11,
+   "tipo": "time",
+   "chave": "Brighton",
+   "n": 10,
    "start": 2
   },
   "_obs": {}
