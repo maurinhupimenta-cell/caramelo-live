@@ -3603,7 +3603,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:30",
+     "jogo": "Newcastle x Islington",
+     "odd": 2.07
+    },
+    {
+     "h": "18:33",
+     "jogo": "Brentford x Watford",
+     "odd": 2.29
+    },
+    {
+     "h": "18:36",
+     "jogo": "Leeds x Wolverhampton",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "seq RRGG",
+   "alvo": {
+    "h": "18:30",
+    "jogo": "Newcastle x Islington",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1786037396214
+   },
+   "iniciadoEm": 1786037396214
+  },
   "cooldown": {
    "copa": 1786032241315,
    "premier": 1786033252413,
@@ -3636,9 +3666,9 @@
    "2026-08-06": 13.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":21",
-   "n": 17,
+   "tipo": "seq",
+   "chave": "RRGG",
+   "n": 26,
    "start": 1
   },
   "_obs": {}
