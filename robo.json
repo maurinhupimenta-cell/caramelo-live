@@ -3552,7 +3552,37 @@
    "euro": 1785991786373,
    "premier": 1785992561770
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:22",
+     "jogo": "Noruega x Espanha",
+     "odd": 2.07
+    },
+    {
+     "h": "06:25",
+     "jogo": "Jordânia x Paraguai",
+     "odd": 2.3
+    },
+    {
+     "h": "06:28",
+     "jogo": "Suécia x Brasil",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "placar empate 1-1",
+   "alvo": {
+    "h": "06:22",
+    "jogo": "Noruega x Espanha",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1785993831672
+   },
+   "iniciadoEm": 1785993831672
+  },
   "cooldown": {
    "copa": 1785989754773,
    "premier": 1785992561770,
@@ -3585,9 +3615,9 @@
    "2026-08-06": 9.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Palace",
-   "n": 14,
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
@@ -6508,7 +6538,37 @@
   "consumidas": {
    "premier": 1785991264673
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:26",
+     "jogo": "Eslovênia x Escócia",
+     "odd": 2.15
+    },
+    {
+     "h": "06:29",
+     "jogo": "Países Baixos x Alemanha",
+     "odd": 1.83
+    },
+    {
+     "h": "06:32",
+     "jogo": "Ucrânia x Dinamarca",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "odd 2.15",
+   "alvo": {
+    "h": "06:26",
+    "jogo": "Eslovênia x Escócia",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1785993771977
+   },
+   "iniciadoEm": 1785993771977
+  },
   "cooldown": {
    "euro": 1785988613467,
    "super": 1785899401696,
@@ -6540,16 +6600,11 @@
    "2026-08-06": -12.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Leeds",
-   "n": 11,
+   "tipo": "odd",
+   "chave": "2.15",
+   "n": 9,
    "start": 1
   },
-  "_obs": {
-   "euro": {
-    "desde": 1785993293173,
-    "gatilho": "odd 2.15"
-   }
-  }
+  "_obs": {}
  }
 }
