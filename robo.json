@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -149.3,
-  "ciclos": 198,
+  "saldo": -156.3,
+  "ciclos": 199,
   "greens": 66,
-  "redsCiclo": 83,
+  "redsCiclo": 84,
   "aborts": 0,
   "descartes": 49,
   "historico": [
+   {
+    "quando": "2026-08-06T01:01:50.574Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: odd 4.2"
+   },
    {
     "quando": "2026-08-06T00:50:47.068Z",
     "resultado": "GREEN_OBS",
@@ -260,54 +266,12 @@
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "01:52",
-     "jogo": "Paraguai x Argélia",
-     "odd": 5
-    },
-    {
-     "h": "01:55",
-     "jogo": "Arábia Saudita x Países Baixos",
-     "odd": 4.2
-    },
-    {
-     "h": "01:58",
-     "jogo": "Turquia x Qatar",
-     "odd": 4.75
-    }
-   ],
-   "gatilho": "odd 4.2",
-   "alvo": {
-    "h": "01:58",
-    "jogo": "Turquia x Qatar",
-    "odd": 4.75,
-    "unidades": 4,
-    "desde": 1785977875366
-   },
-   "iniciadoEm": 1785977449970,
-   "tiros": [
-    {
-     "h": "01:52",
-     "jogo": "Paraguai x Argélia",
-     "odd": 5,
-     "unidades": 1
-    },
-    {
-     "h": "01:55",
-     "jogo": "Arábia Saudita x Países Baixos",
-     "odd": 4.2,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "copa": 1785978110378
   },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785688526966,
+   "copa": 1785978110378,
    "premier": 1785903712201,
    "euro": 1785464913993,
    "super": 1785904375898
@@ -328,7 +292,7 @@
    "2026-08-01": -7,
    "2026-08-02": -7,
    "2026-08-04": 19,
-   "2026-08-05": 18
+   "2026-08-05": 11
   },
   "_gatilhoAtual": {
    "tipo": "odd",
