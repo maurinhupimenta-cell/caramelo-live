@@ -3591,11 +3591,40 @@
    }
   ],
   "consumidas": {
-   "copa": 1786027733321,
    "premier": 1786028927416,
    "euro": 1786031048416
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:55",
+     "jogo": "Uruguai x Iraque",
+     "odd": 2.4
+    },
+    {
+     "h": "16:58",
+     "jogo": "Argélia x Japão",
+     "odd": 2.4
+    },
+    {
+     "h": "17:01",
+     "jogo": "Uzbequistão x Egito",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "coluna :58",
+   "alvo": {
+    "h": "16:55",
+    "jogo": "Uruguai x Iraque",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1786031334317
+   },
+   "iniciadoEm": 1786031334317
+  },
   "cooldown": {
    "copa": 1786027733321,
    "premier": 1786028927416,
@@ -3629,9 +3658,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":44",
-   "n": 16,
-   "start": 1
+   "chave": ":58",
+   "n": 14,
+   "start": 3
   },
   "_obs": {}
  },
