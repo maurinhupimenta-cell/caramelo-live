@@ -273,7 +273,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:22",
+     "jogo": "Porto Alegre x Medellin",
+     "odd": 6
+    },
+    {
+     "h": "03:25",
+     "jogo": "Asuncion x Montevideo",
+     "odd": 4.2
+    },
+    {
+     "h": "03:28",
+     "jogo": "Santiago x Santos",
+     "odd": 4.2
+    }
+   ],
+   "gatilho": "odd 4.2",
+   "alvo": {
+    "h": "03:22",
+    "jogo": "Porto Alegre x Medellin",
+    "odd": 6,
+    "unidades": 1,
+    "desde": 1785982435367
+   },
+   "iniciadoEm": 1785982435367
+  },
   "cooldown": {
    "copa": 1785978110378,
    "premier": 1785903712201,
@@ -302,16 +332,12 @@
    "tipo": "odd",
    "chave": "4.2",
    "n": 8,
-   "start": 1
+   "start": 3
   },
   "_obs": {
    "euro": {
     "desde": 1785463711484,
     "gatilho": "time Eslovênia"
-   },
-   "super": {
-    "desde": 1785982432977,
-    "gatilho": "odd 4.2"
    }
   }
  },
@@ -3529,13 +3555,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -49.7,
-  "ciclos": 1017,
-  "greens": 701,
+  "saldo": -48.6,
+  "ciclos": 1018,
+  "greens": 702,
   "redsCiclo": 109,
   "aborts": 0,
   "descartes": 207,
   "historico": [
+   {
+    "quando": "2026-08-06T02:14:51.966Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Tottenham x Palace @2.1 (tiro 1) · gatilho: time Brighton"
+   },
    {
     "quando": "2026-08-06T01:38:51.071Z",
     "resultado": "GREEN",
@@ -6400,43 +6432,14 @@
    }
   ],
   "consumidas": {
-   "copa": 1785980330877
+   "copa": 1785980330877,
+   "premier": 1785982491770
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:12",
-     "jogo": "Tottenham x Palace",
-     "odd": 2.1
-    },
-    {
-     "h": "03:15",
-     "jogo": "Brighton x West Ham",
-     "odd": 2
-    },
-    {
-     "h": "03:18",
-     "jogo": "Palace x City",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "time Brighton",
-   "alvo": {
-    "h": "03:12",
-    "jogo": "Tottenham x Palace",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1785981769977
-   },
-   "iniciadoEm": 1785981769977
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785956149774,
    "super": 1785899401696,
-   "premier": 1785961245474,
+   "premier": 1785982491770,
    "copa": 1785980330877
   },
   "dias": {
@@ -6460,7 +6463,7 @@
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
-   "2026-08-05": 14.9
+   "2026-08-05": 16
   },
   "_gatilhoAtual": {
    "tipo": "time",
