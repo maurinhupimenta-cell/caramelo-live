@@ -3565,13 +3565,19 @@
   }
  },
  "ambas": {
-  "saldo": -47.4,
-  "ciclos": 1019,
-  "greens": 703,
+  "saldo": -46.7,
+  "ciclos": 1020,
+  "greens": 704,
   "redsCiclo": 109,
   "aborts": 0,
   "descartes": 207,
   "historico": [
+   {
+    "quando": "2026-08-06T03:26:39.169Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "premier · Brentford x Brighton @1.87 (tiro 2) · gatilho: time Brighton"
+   },
    {
     "quando": "2026-08-06T02:46:54.672Z",
     "resultado": "GREEN",
@@ -6448,51 +6454,14 @@
    }
   ],
   "consumidas": {
-   "copa": 1785984414566
+   "copa": 1785984414566,
+   "premier": 1785986798968
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "04:21",
-     "jogo": "Wolverhampton x United",
-     "odd": 1.85
-    },
-    {
-     "h": "04:24",
-     "jogo": "Brentford x Brighton",
-     "odd": 1.87
-    },
-    {
-     "h": "04:27",
-     "jogo": "Aston x City",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "time Brighton",
-   "alvo": {
-    "h": "04:24",
-    "jogo": "Brentford x Brighton",
-    "odd": 1.87,
-    "unidades": 2,
-    "desde": 1785986632366
-   },
-   "iniciadoEm": 1785986095669,
-   "tiros": [
-    {
-     "h": "04:21",
-     "jogo": "Wolverhampton x United",
-     "odd": 1.85,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785956149774,
    "super": 1785899401696,
-   "premier": 1785982491770,
+   "premier": 1785986798968,
    "copa": 1785984414566
   },
   "dias": {
@@ -6516,7 +6485,8 @@
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
-   "2026-08-05": 17.2
+   "2026-08-05": 17.2,
+   "2026-08-06": 0.7
   },
   "_gatilhoAtual": {
    "tipo": "time",
