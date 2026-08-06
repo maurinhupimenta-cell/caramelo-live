@@ -6776,12 +6776,41 @@
    }
   ],
   "consumidas": {
-   "super": 1786046855517,
    "euro": 1786047688513,
    "copa": 1786047950616,
    "premier": 1786048724722
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:13",
+     "jogo": "Medellin x Rio de Janeiro",
+     "odd": 2.02
+    },
+    {
+     "h": "22:16",
+     "jogo": "Santiago x Montevideo",
+     "odd": 1.8
+    },
+    {
+     "h": "21:43",
+     "jogo": "Santiago x Asuncion",
+     "odd": 1.87
+    }
+   ],
+   "gatilho": "odd 1.8",
+   "alvo": {
+    "h": "22:13",
+    "jogo": "Medellin x Rio de Janeiro",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1786050456816
+   },
+   "iniciadoEm": 1786050456816
+  },
   "cooldown": {
    "euro": 1786047688513,
    "super": 1786046855517,
@@ -6813,10 +6842,10 @@
    "2026-08-06": -31.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":33",
-   "n": 21,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.8",
+   "n": 23,
+   "start": 3
   },
   "_obs": {}
  }
