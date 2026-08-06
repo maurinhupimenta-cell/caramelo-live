@@ -3663,10 +3663,10 @@
    "2026-08-06": 12.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":21",
-   "n": 17,
-   "start": 3
+   "tipo": "seq",
+   "chave": "RRGG",
+   "n": 24,
+   "start": 1
   },
   "_obs": {}
  },
@@ -6666,7 +6666,45 @@
    "super": 1786031512322,
    "copa": 1786032601120
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "17:11",
+     "jogo": "Ucrânia x Suíça",
+     "odd": 1.93
+    },
+    {
+     "h": "17:14",
+     "jogo": "Hungria x Escócia",
+     "odd": 2
+    },
+    {
+     "h": "17:17",
+     "jogo": "Romênia x Turquia",
+     "odd": 2
+    }
+   ],
+   "gatilho": "coluna :14",
+   "alvo": {
+    "h": "17:14",
+    "jogo": "Hungria x Escócia",
+    "odd": 2,
+    "unidades": 2,
+    "desde": 1786032839822
+   },
+   "iniciadoEm": 1786032603411,
+   "tiros": [
+    {
+     "h": "17:11",
+     "jogo": "Ucrânia x Suíça",
+     "odd": 1.93,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1786028450915,
    "super": 1786031512322,
