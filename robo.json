@@ -306,13 +306,19 @@
   }
  },
  "o25": {
-  "saldo": -133.2,
-  "ciclos": 1028,
-  "greens": 648,
+  "saldo": -131.5,
+  "ciclos": 1029,
+  "greens": 649,
   "redsCiclo": 162,
   "aborts": 0,
   "descartes": 218,
   "historico": [
+   {
+    "quando": "2026-08-06T02:07:54.971Z",
+    "resultado": "GREEN",
+    "unidades": 1.7,
+    "detalhe": "super · Rio de Janeiro x Medellin @2.35 (tiro 2) · gatilho: seq RRGR"
+   },
    {
     "quando": "2026-08-05T23:52:52.271Z",
     "resultado": "RED_CICLO",
@@ -3470,51 +3476,15 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "03:01",
-     "jogo": "Avellaneda x Sao Paulo",
-     "odd": 2.15
-    },
-    {
-     "h": "03:04",
-     "jogo": "Rio de Janeiro x Medellin",
-     "odd": 2.35
-    },
-    {
-     "h": "03:07",
-     "jogo": "Guayaquil x Avellaneda",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "seq RRGR",
-   "alvo": {
-    "h": "03:04",
-    "jogo": "Rio de Janeiro x Medellin",
-    "odd": 2.35,
-    "unidades": 2,
-    "desde": 1785981894371
-   },
-   "iniciadoEm": 1785981536769,
-   "tiros": [
-    {
-     "h": "03:01",
-     "jogo": "Avellaneda x Sao Paulo",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "super": 1785982074774
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785962630370,
    "premier": 1785964730369,
    "euro": 1785973972067,
-   "super": 1785965991772
+   "super": 1785982074774
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -3538,7 +3508,7 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": 5
+   "2026-08-05": 6.7
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -6486,7 +6456,7 @@
    "tipo": "time",
    "chave": "Brighton",
    "n": 8,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
