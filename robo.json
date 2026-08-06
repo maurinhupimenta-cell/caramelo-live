@@ -318,13 +318,19 @@
   }
  },
  "o25": {
-  "saldo": -126.3,
-  "ciclos": 1035,
-  "greens": 653,
+  "saldo": -124.9,
+  "ciclos": 1036,
+  "greens": 654,
   "redsCiclo": 162,
   "aborts": 0,
   "descartes": 220,
   "historico": [
+   {
+    "quando": "2026-08-06T04:15:54.967Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "copa · Iraque x França @2.4 (tiro 1) · gatilho: placar empate 1-1"
+   },
    {
     "quando": "2026-08-06T04:12:53.576Z",
     "resultado": "GREEN_OBS",
@@ -3525,41 +3531,12 @@
    }
   ],
   "consumidas": {
-   "premier": 1785988551872
+   "premier": 1785988551872,
+   "copa": 1785989754773
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:13",
-     "jogo": "Iraque x França",
-     "odd": 2.4
-    },
-    {
-     "h": "05:16",
-     "jogo": "RD Congo x Uzbequistão",
-     "odd": 2.2
-    },
-    {
-     "h": "05:19",
-     "jogo": "Argélia x Noruega",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "placar empate 1-1",
-   "alvo": {
-    "h": "05:13",
-    "jogo": "Iraque x França",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1785989575668
-   },
-   "iniciadoEm": 1785989575668
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785962630370,
+   "copa": 1785989754773,
    "premier": 1785988551872,
    "euro": 1785985371671,
    "super": 1785986038067
@@ -3587,24 +3564,30 @@
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
-   "2026-08-06": 4
+   "2026-08-06": 5.4
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 10,
+   "tipo": "odd",
+   "chave": "2.2",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -53.7,
-  "ciclos": 1021,
-  "greens": 704,
+  "saldo": -52.7,
+  "ciclos": 1022,
+  "greens": 705,
   "redsCiclo": 110,
   "aborts": 0,
   "descartes": 207,
   "historico": [
+   {
+    "quando": "2026-08-06T04:15:55.471Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Iraque x França @2.05 (tiro 1) · gatilho: placar empate 1-1"
+   },
    {
     "quando": "2026-08-06T03:56:53.671Z",
     "resultado": "RED_CICLO",
@@ -6494,44 +6477,15 @@
   ],
   "consumidas": {
    "premier": 1785986798968,
-   "euro": 1785988613467
+   "euro": 1785988613467,
+   "copa": 1785989755069
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:13",
-     "jogo": "Iraque x França",
-     "odd": 2.05
-    },
-    {
-     "h": "05:16",
-     "jogo": "RD Congo x Uzbequistão",
-     "odd": 1.93
-    },
-    {
-     "h": "05:19",
-     "jogo": "Argélia x Noruega",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "placar empate 1-1",
-   "alvo": {
-    "h": "05:13",
-    "jogo": "Iraque x França",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785989573666
-   },
-   "iniciadoEm": 1785989573666
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785988613467,
    "super": 1785899401696,
    "premier": 1785986798968,
-   "copa": 1785984414566
+   "copa": 1785989755069
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -6555,13 +6509,13 @@
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
-   "2026-08-06": -6.3
+   "2026-08-06": -5.3
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 10,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.95",
+   "n": 11,
+   "start": 2
   },
   "_obs": {}
  }
