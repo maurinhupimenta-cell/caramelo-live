@@ -3603,7 +3603,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1786032241315,
    "premier": 1786033252413
   },
   "ciclo": null,
@@ -6660,7 +6659,37 @@
    "euro": 1786033201215,
    "premier": 1786035052721
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:07",
+     "jogo": "Avellaneda x Asuncion",
+     "odd": 2.05
+    },
+    {
+     "h": "18:10",
+     "jogo": "Buenos Aires x Belo Horizonte",
+     "odd": 1.8
+    },
+    {
+     "h": "18:13",
+     "jogo": "Asuncion x Itaquera",
+     "odd": 2
+    }
+   ],
+   "gatilho": "odd 1.8",
+   "alvo": {
+    "h": "18:07",
+    "jogo": "Avellaneda x Asuncion",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1786035532617
+   },
+   "iniciadoEm": 1786035532617
+  },
   "cooldown": {
    "euro": 1786033201215,
    "super": 1786031512322,
@@ -6693,15 +6722,10 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.1",
-   "n": 20,
-   "start": 1
+   "chave": "1.8",
+   "n": 18,
+   "start": 2
   },
-  "_obs": {
-   "super": {
-    "desde": 1786035531212,
-    "gatilho": "odd 1.8"
-   }
-  }
+  "_obs": {}
  }
 }
