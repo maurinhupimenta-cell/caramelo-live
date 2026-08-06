@@ -3633,10 +3633,39 @@
    }
   ],
   "consumidas": {
-   "premier": 1786043336615,
    "copa": 1786045236116
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:09",
+     "jogo": "City x Palace",
+     "odd": 2.1
+    },
+    {
+     "h": "21:12",
+     "jogo": "Newcastle x United",
+     "odd": 2.07
+    },
+    {
+     "h": "21:15",
+     "jogo": "Burnley x Chelsea",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "seq RRGG",
+   "alvo": {
+    "h": "21:09",
+    "jogo": "City x Palace",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1786046958211
+   },
+   "iniciadoEm": 1786046958211
+  },
   "cooldown": {
    "copa": 1786045236116,
    "premier": 1786043336615,
@@ -3670,8 +3699,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRGG",
-   "n": 15,
+   "chave": "RRGG",
+   "n": 30,
    "start": 1
   },
   "_obs": {}
@@ -6749,7 +6778,37 @@
    "premier": 1786044761916,
    "super": 1786046855517
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:11",
+     "jogo": "República Tcheca x Eslováquia",
+     "odd": 2.2
+    },
+    {
+     "h": "21:14",
+     "jogo": "Suíça x Ucrânia",
+     "odd": 1.93
+    },
+    {
+     "h": "21:17",
+     "jogo": "Alemanha x Geórgia",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "coluna :14",
+   "alvo": {
+    "h": "21:11",
+    "jogo": "República Tcheca x Eslováquia",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1786046858112
+   },
+   "iniciadoEm": 1786046858112
+  },
   "cooldown": {
    "euro": 1786040257418,
    "super": 1786046855517,
