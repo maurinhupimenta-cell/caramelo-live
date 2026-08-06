@@ -319,12 +319,18 @@
  },
  "o25": {
   "saldo": -115,
-  "ciclos": 1055,
+  "ciclos": 1056,
   "greens": 670,
   "redsCiclo": 164,
   "aborts": 0,
-  "descartes": 221,
+  "descartes": 222,
   "historico": [
+   {
+    "quando": "2026-08-06T22:16:06.610Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho odd 2.4) — liga REARMADA"
+   },
    {
     "quando": "2026-08-06T20:40:37.111Z",
     "resultado": "GREEN",
@@ -3687,12 +3693,24 @@
  },
  "ambas": {
   "saldo": -79.3,
-  "ciclos": 1053,
+  "ciclos": 1055,
   "greens": 722,
   "redsCiclo": 116,
   "aborts": 0,
-  "descartes": 215,
+  "descartes": 217,
   "historico": [
+   {
+    "quando": "2026-08-06T22:16:06.723Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
+   {
+    "quando": "2026-08-06T22:16:06.721Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :14) — liga REARMADA"
+   },
    {
     "quando": "2026-08-06T20:38:45.216Z",
     "resultado": "GREEN",
@@ -6772,11 +6790,7 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {
-   "euro": 1786047688513,
-   "copa": 1786047950616,
-   "premier": 1786048724722
-  },
+  "consumidas": {},
   "ciclo": {
    "liga": "super",
    "degrau": 0,
