@@ -3560,11 +3560,46 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {
-   "copa": 1785993895566,
-   "super": 1785994793367
+  "consumidas": {},
+  "ciclo": {
+   "liga": "super",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "15:22",
+     "jogo": "Itaquera x Buenos Aires",
+     "odd": 2.15
+    },
+    {
+     "h": "15:25",
+     "jogo": "Bogota x Belo Horizonte",
+     "odd": 2.3
+    },
+    {
+     "h": "15:28",
+     "jogo": "Santiago x Penarol",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "seq RRGRR",
+   "alvo": {
+    "h": "15:25",
+    "jogo": "Bogota x Belo Horizonte",
+    "odd": 2.3,
+    "unidades": 2,
+    "desde": 1786026262510
+   },
+   "iniciadoEm": 1786026209510,
+   "tiros": [
+    {
+     "h": "15:22",
+     "jogo": "Itaquera x Buenos Aires",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
-  "ciclo": null,
   "cooldown": {
    "copa": 1785993895566,
    "premier": 1785992561770,
@@ -3598,20 +3633,32 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRGR",
-   "n": 13,
+   "chave": "RRGRR",
+   "n": 22,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -65.5,
-  "ciclos": 1027,
+  "ciclos": 1029,
   "greens": 706,
   "redsCiclo": 112,
   "aborts": 0,
-  "descartes": 209,
+  "descartes": 211,
   "historico": [
+   {
+    "quando": "2026-08-06T14:23:29.811Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho odd 1.87) — liga REARMADA"
+   },
+   {
+    "quando": "2026-08-06T14:23:21.914Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-08-06T05:45:09.372Z",
     "resultado": "GREEN_OBS",
@@ -6535,40 +6582,37 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {
-   "euro": 1785994193673,
-   "copa": 1785994671474
-  },
+  "consumidas": {},
   "ciclo": {
-   "liga": "super",
+   "liga": "premier",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "06:46",
-     "jogo": "Montevideo x Guayaquil",
-     "odd": 1.83
+     "h": "15:30",
+     "jogo": "Wolverhampton x Chelsea",
+     "odd": 1.85
     },
     {
-     "h": "06:49",
-     "jogo": "Quito x Sao Paulo",
-     "odd": 1.87
+     "h": "15:33",
+     "jogo": "Southampton x Aston",
+     "odd": 2.1
     },
     {
-     "h": "06:52",
-     "jogo": "La Boca x Buenos Aires",
-     "odd": 1.93
+     "h": "15:36",
+     "jogo": "Islington x West Ham",
+     "odd": 2.15
     }
    ],
-   "gatilho": "time Quito",
+   "gatilho": "odd 2.1",
    "alvo": {
-    "h": "06:46",
-    "jogo": "Montevideo x Guayaquil",
-    "odd": 1.83,
+    "h": "15:30",
+    "jogo": "Wolverhampton x Chelsea",
+    "odd": 1.85,
     "unidades": 1,
-    "desde": 1785994673776
+    "desde": 1786026202609
    },
-   "iniciadoEm": 1785994673776
+   "iniciadoEm": 1786026202609
   },
   "cooldown": {
    "euro": 1785994193673,
@@ -6601,10 +6645,10 @@
    "2026-08-06": -18.1
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "0-0",
-   "n": 10,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.1",
+   "n": 18,
+   "start": 2
   },
   "_obs": {}
  }
