@@ -6414,7 +6414,37 @@
   "consumidas": {
    "copa": 1785980330877
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:12",
+     "jogo": "Tottenham x Palace",
+     "odd": 2.1
+    },
+    {
+     "h": "03:15",
+     "jogo": "Brighton x West Ham",
+     "odd": 2
+    },
+    {
+     "h": "03:18",
+     "jogo": "Palace x City",
+     "odd": 1.87
+    }
+   ],
+   "gatilho": "time Brighton",
+   "alvo": {
+    "h": "03:12",
+    "jogo": "Tottenham x Palace",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1785981769977
+   },
+   "iniciadoEm": 1785981769977
+  },
   "cooldown": {
    "euro": 1785956149774,
    "super": 1785899401696,
@@ -6445,10 +6475,10 @@
    "2026-08-05": 14.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.1",
+   "tipo": "time",
+   "chave": "Brighton",
    "n": 8,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
