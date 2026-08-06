@@ -318,13 +318,19 @@
   }
  },
  "o25": {
-  "saldo": -116.5,
-  "ciclos": 1048,
-  "greens": 665,
+  "saldo": -115.4,
+  "ciclos": 1049,
+  "greens": 666,
   "redsCiclo": 163,
   "aborts": 0,
   "descartes": 220,
   "historico": [
+   {
+    "quando": "2026-08-06T17:33:06.009Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Newcastle x Islington @2.07 (tiro 1) · gatilho: seq RRGG"
+   },
    {
     "quando": "2026-08-06T16:20:52.611Z",
     "resultado": "GREEN",
@@ -3602,41 +3608,13 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:30",
-     "jogo": "Newcastle x Islington",
-     "odd": 2.07
-    },
-    {
-     "h": "18:33",
-     "jogo": "Brentford x Watford",
-     "odd": 2.29
-    },
-    {
-     "h": "18:36",
-     "jogo": "Leeds x Wolverhampton",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "seq RRGG",
-   "alvo": {
-    "h": "18:30",
-    "jogo": "Newcastle x Islington",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1786037396214
-   },
-   "iniciadoEm": 1786037396214
+  "consumidas": {
+   "premier": 1786037585810
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786032241315,
-   "premier": 1786033252413,
+   "premier": 1786037585810,
    "euro": 1786031048416,
    "super": 1786026475916
   },
@@ -3663,12 +3641,12 @@
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
-   "2026-08-06": 13.8
+   "2026-08-06": 14.9
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRGG",
-   "n": 26,
+   "chave": "RGGR",
+   "n": 22,
    "start": 1
   },
   "_obs": {}
