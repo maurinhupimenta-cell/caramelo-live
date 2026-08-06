@@ -3630,7 +3630,37 @@
    "euro": 1786043112119,
    "premier": 1786043336615
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:31",
+     "jogo": "Argentina x África do Sul",
+     "odd": 2.35
+    },
+    {
+     "h": "20:34",
+     "jogo": "Cabo Verde x República Tcheca",
+     "odd": 2.3
+    },
+    {
+     "h": "20:37",
+     "jogo": "Espanha x Paraguai",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "seq GRGG",
+   "alvo": {
+    "h": "20:31",
+    "jogo": "Argentina x África do Sul",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1786044591227
+   },
+   "iniciadoEm": 1786044591227
+  },
   "cooldown": {
    "copa": 1786032241315,
    "premier": 1786043336615,
@@ -3664,8 +3694,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRGG",
-   "n": 29,
+   "chave": "GRGG",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
@@ -6793,9 +6823,9 @@
    "2026-08-06": -28.6
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":33",
-   "n": 20,
+   "tipo": "odd",
+   "chave": "2.15",
+   "n": 17,
    "start": 2
   },
   "_obs": {}
