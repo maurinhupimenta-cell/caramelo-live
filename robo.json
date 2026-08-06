@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -156.3,
-  "ciclos": 200,
-  "greens": 66,
+  "saldo": -146.5,
+  "ciclos": 201,
+  "greens": 67,
   "redsCiclo": 84,
   "aborts": 0,
   "descartes": 50,
   "historico": [
+   {
+    "quando": "2026-08-06T02:30:52.371Z",
+    "resultado": "GREEN",
+    "unidades": 9.8,
+    "detalhe": "super · Santiago x Santos @4.2 (tiro 3) · gatilho: odd 4.2"
+   },
    {
     "quando": "2026-08-06T02:13:52.978Z",
     "resultado": "GREEN_OBS",
@@ -272,57 +278,15 @@
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "03:22",
-     "jogo": "Porto Alegre x Medellin",
-     "odd": 6
-    },
-    {
-     "h": "03:25",
-     "jogo": "Asuncion x Montevideo",
-     "odd": 4.2
-    },
-    {
-     "h": "03:28",
-     "jogo": "Santiago x Santos",
-     "odd": 4.2
-    }
-   ],
-   "gatilho": "odd 4.2",
-   "alvo": {
-    "h": "03:28",
-    "jogo": "Santiago x Santos",
-    "odd": 4.2,
-    "unidades": 4,
-    "desde": 1785983392877
-   },
-   "iniciadoEm": 1785982435367,
-   "tiros": [
-    {
-     "h": "03:22",
-     "jogo": "Porto Alegre x Medellin",
-     "odd": 6,
-     "unidades": 1
-    },
-    {
-     "h": "03:25",
-     "jogo": "Asuncion x Montevideo",
-     "odd": 4.2,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "super": 1785983452169
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785978110378,
    "premier": 1785903712201,
    "euro": 1785464913993,
-   "super": 1785904375898
+   "super": 1785983452169
   },
   "dias": {
    "2026-07-15": -35,
@@ -340,13 +304,13 @@
    "2026-08-01": -7,
    "2026-08-02": -7,
    "2026-08-04": 19,
-   "2026-08-05": 11
+   "2026-08-05": 20.8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "4.2",
-   "n": 9,
-   "start": 1
+   "n": 10,
+   "start": 2
   },
   "_obs": {
    "euro": {
