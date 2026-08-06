@@ -3646,13 +3646,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -81.2,
-  "ciclos": 1041,
-  "greens": 712,
+  "saldo": -80.2,
+  "ciclos": 1042,
+  "greens": 713,
   "redsCiclo": 115,
   "aborts": 0,
   "descartes": 214,
   "historico": [
+   {
+    "quando": "2026-08-06T17:10:54.418Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Avellaneda x Asuncion @2.05 (tiro 1) · gatilho: odd 1.8"
+   },
    {
     "quando": "2026-08-06T17:10:49.213Z",
     "resultado": "GREEN_OBS",
@@ -6662,42 +6668,51 @@
   ],
   "consumidas": {
    "euro": 1786033201215,
-   "premier": 1786035052721
+   "premier": 1786035052721,
+   "super": 1786036254224
   },
   "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
-     "h": "18:07",
-     "jogo": "Avellaneda x Asuncion",
-     "odd": 2.05
-    },
-    {
-     "h": "18:10",
-     "jogo": "Buenos Aires x Belo Horizonte",
-     "odd": 1.8
-    },
-    {
      "h": "18:13",
-     "jogo": "Asuncion x Itaquera",
-     "odd": 2
+     "jogo": "Costa do Marfim x Equador",
+     "odd": 1.85
+    },
+    {
+     "h": "18:16",
+     "jogo": "Turquia x Coreia do Sul",
+     "odd": 2.1
+    },
+    {
+     "h": "18:19",
+     "jogo": "Cabo Verde x Áustria",
+     "odd": 1.93
     }
    ],
-   "gatilho": "odd 1.8",
+   "gatilho": "seq RGGRG",
    "alvo": {
-    "h": "18:07",
-    "jogo": "Avellaneda x Asuncion",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1786035532617
+    "h": "18:16",
+    "jogo": "Turquia x Coreia do Sul",
+    "odd": 2.1,
+    "unidades": 2,
+    "desde": 1786036553118
    },
-   "iniciadoEm": 1786035532617
+   "iniciadoEm": 1786036256411,
+   "tiros": [
+    {
+     "h": "18:13",
+     "jogo": "Costa do Marfim x Equador",
+     "odd": 1.85,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786033201215,
-   "super": 1786031512322,
+   "super": 1786036254224,
    "premier": 1786035052721,
    "copa": 1786032601120
   },
@@ -6723,19 +6738,14 @@
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
-   "2026-08-06": -33.8
+   "2026-08-06": -32.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.8",
-   "n": 18,
-   "start": 1
+   "tipo": "time",
+   "chave": "Nova Zelândia",
+   "n": 17,
+   "start": 2
   },
-  "_obs": {
-   "copa": {
-    "desde": 1786036249212,
-    "gatilho": "seq RGGRG"
-   }
-  }
+  "_obs": {}
  }
 }
