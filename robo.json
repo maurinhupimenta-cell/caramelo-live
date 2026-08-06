@@ -3602,9 +3602,7 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {
-   "premier": 1786033252413
-  },
+  "consumidas": {},
   "ciclo": null,
   "cooldown": {
    "copa": 1786032241315,
@@ -3646,13 +3644,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -80.2,
-  "ciclos": 1042,
-  "greens": 713,
+  "saldo": -79.5,
+  "ciclos": 1043,
+  "greens": 714,
   "redsCiclo": 115,
   "aborts": 0,
   "descartes": 214,
   "historico": [
+   {
+    "quando": "2026-08-06T17:25:54.410Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "copa · Cabo Verde x Áustria @1.93 (tiro 3) · gatilho: seq RGGRG"
+   },
    {
     "quando": "2026-08-06T17:10:54.418Z",
     "resultado": "GREEN",
@@ -6668,58 +6672,15 @@
   ],
   "consumidas": {
    "premier": 1786035052721,
-   "super": 1786036254224
+   "super": 1786036254224,
+   "copa": 1786037154210
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "18:13",
-     "jogo": "Costa do Marfim x Equador",
-     "odd": 1.85
-    },
-    {
-     "h": "18:16",
-     "jogo": "Turquia x Coreia do Sul",
-     "odd": 2.1
-    },
-    {
-     "h": "18:19",
-     "jogo": "Cabo Verde x Áustria",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "seq RGGRG",
-   "alvo": {
-    "h": "18:19",
-    "jogo": "Cabo Verde x Áustria",
-    "odd": 1.93,
-    "unidades": 4,
-    "desde": 1786036791611
-   },
-   "iniciadoEm": 1786036256411,
-   "tiros": [
-    {
-     "h": "18:13",
-     "jogo": "Costa do Marfim x Equador",
-     "odd": 1.85,
-     "unidades": 1
-    },
-    {
-     "h": "18:16",
-     "jogo": "Turquia x Coreia do Sul",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786033201215,
    "super": 1786036254224,
    "premier": 1786035052721,
-   "copa": 1786032601120
+   "copa": 1786037154210
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -6743,12 +6704,12 @@
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
-   "2026-08-06": -32.8
+   "2026-08-06": -32.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Nova Zelândia",
-   "n": 17,
+   "tipo": "seq",
+   "chave": "RRRGG",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
