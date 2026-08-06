@@ -3571,8 +3571,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "15:32",
@@ -3592,13 +3592,21 @@
    ],
    "gatilho": "seq GRGRR",
    "alvo": {
-    "h": "15:32",
-    "jogo": "Sérvia x Croácia",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1786026594014
+    "h": "15:35",
+    "jogo": "Ucrânia x Espanha",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1786026920509
    },
-   "iniciadoEm": 1786026594014
+   "iniciadoEm": 1786026594014,
+   "tiros": [
+    {
+     "h": "15:32",
+     "jogo": "Sérvia x Croácia",
+     "odd": 2.4,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785993895566,
@@ -3633,8 +3641,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRGRR",
-   "n": 10,
+   "chave": "RRRR",
+   "n": 19,
    "start": 1
   },
   "_obs": {}
@@ -6591,7 +6599,37 @@
   "consumidas": {
    "premier": 1786026762124
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:34",
+     "jogo": "Itaquera x La Boca",
+     "odd": 2.05
+    },
+    {
+     "h": "15:37",
+     "jogo": "Lima x Avellaneda",
+     "odd": 1.93
+    },
+    {
+     "h": "15:40",
+     "jogo": "Bogota x Buenos Aires",
+     "odd": 2
+    }
+   ],
+   "gatilho": "coluna :37",
+   "alvo": {
+    "h": "15:34",
+    "jogo": "Itaquera x La Boca",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1786026763713
+   },
+   "iniciadoEm": 1786026763713
+  },
   "cooldown": {
    "euro": 1785994193673,
    "super": 1785899401696,
@@ -6623,9 +6661,9 @@
    "2026-08-06": -17.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.15",
-   "n": 13,
+   "tipo": "coluna",
+   "chave": ":37",
+   "n": 15,
    "start": 1
   },
   "_obs": {
