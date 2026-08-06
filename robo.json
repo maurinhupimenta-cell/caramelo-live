@@ -3609,7 +3609,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:56",
+     "jogo": "Inglaterra x Croácia",
+     "odd": 2.1
+    },
+    {
+     "h": "19:59",
+     "jogo": "Romênia x Escócia",
+     "odd": 2.15
+    },
+    {
+     "h": "20:02",
+     "jogo": "Eslovênia x Eslováquia",
+     "odd": 2.62
+    }
+   ],
+   "gatilho": "seq RRRGG",
+   "alvo": {
+    "h": "19:56",
+    "jogo": "Inglaterra x Croácia",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1786042476424
+   },
+   "iniciadoEm": 1786042476424
+  },
   "cooldown": {
    "copa": 1786032241315,
    "premier": 1786037585810,
@@ -3643,8 +3673,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGGR",
-   "n": 22,
+   "chave": "RRRGG",
+   "n": 18,
    "start": 1
   },
   "_obs": {}
