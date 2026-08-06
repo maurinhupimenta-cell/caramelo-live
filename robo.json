@@ -3652,13 +3652,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -78.8,
-  "ciclos": 1045,
-  "greens": 715,
+  "saldo": -78.1,
+  "ciclos": 1046,
+  "greens": 716,
   "redsCiclo": 115,
   "aborts": 0,
   "descartes": 215,
   "historico": [
+   {
+    "quando": "2026-08-06T18:26:54.109Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "premier · Brighton x Brentford @1.87 (tiro 2) · gatilho: time Brighton"
+   },
    {
     "quando": "2026-08-06T18:17:37.612Z",
     "resultado": "GREEN",
@@ -6691,51 +6697,14 @@
    }
   ],
   "consumidas": {
-   "euro": 1786040257418
+   "euro": 1786040257418,
+   "premier": 1786040813914
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "19:21",
-     "jogo": "Burnley x Everton",
-     "odd": 1.83
-    },
-    {
-     "h": "19:24",
-     "jogo": "Brighton x Brentford",
-     "odd": 1.87
-    },
-    {
-     "h": "19:27",
-     "jogo": "Palace x Burnley",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "time Brighton",
-   "alvo": {
-    "h": "19:24",
-    "jogo": "Brighton x Brentford",
-    "odd": 1.87,
-    "unidades": 2,
-    "desde": 1786040741011
-   },
-   "iniciadoEm": 1786040259518,
-   "tiros": [
-    {
-     "h": "19:21",
-     "jogo": "Burnley x Everton",
-     "odd": 1.83,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786040257418,
    "super": 1786036254224,
-   "premier": 1786035052721,
+   "premier": 1786040813914,
    "copa": 1786037154210
   },
   "dias": {
@@ -6760,13 +6729,13 @@
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
-   "2026-08-06": -31.4
+   "2026-08-06": -30.7
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":33",
    "n": 19,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
