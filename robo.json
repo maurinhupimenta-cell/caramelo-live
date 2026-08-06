@@ -6689,8 +6689,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "19:11",
@@ -6710,13 +6710,21 @@
    ],
    "gatilho": "coluna :14",
    "alvo": {
-    "h": "19:11",
-    "jogo": "Portugal x Dinamarca",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1786039418714
+    "h": "19:14",
+    "jogo": "Inglaterra x Alemanha",
+    "odd": 1.83,
+    "unidades": 2,
+    "desde": 1786040136720
    },
-   "iniciadoEm": 1786039418714
+   "iniciadoEm": 1786039418714,
+   "tiros": [
+    {
+     "h": "19:11",
+     "jogo": "Portugal x Dinamarca",
+     "odd": 2.02,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786033201215,
@@ -6749,10 +6757,10 @@
    "2026-08-06": -32.1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":14",
-   "n": 19,
-   "start": 1
+   "tipo": "time",
+   "chave": "Brighton",
+   "n": 40,
+   "start": 2
   },
   "_obs": {}
  }
