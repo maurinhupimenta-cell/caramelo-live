@@ -318,13 +318,19 @@
   }
  },
  "o25": {
-  "saldo": -117.5,
-  "ciclos": 1053,
-  "greens": 668,
+  "saldo": -116.4,
+  "ciclos": 1054,
+  "greens": 669,
   "redsCiclo": 164,
   "aborts": 0,
   "descartes": 221,
   "historico": [
+   {
+    "quando": "2026-08-06T20:14:50.714Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Newcastle x United @2.07 (tiro 2) · gatilho: seq RRGG"
+   },
    {
     "quando": "2026-08-06T19:40:36.220Z",
     "resultado": "RED_CICLO",
@@ -3633,50 +3639,13 @@
    }
   ],
   "consumidas": {
-   "copa": 1786045236116
+   "copa": 1786045236116,
+   "premier": 1786047290519
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "21:09",
-     "jogo": "City x Palace",
-     "odd": 2.1
-    },
-    {
-     "h": "21:12",
-     "jogo": "Newcastle x United",
-     "odd": 2.07
-    },
-    {
-     "h": "21:15",
-     "jogo": "Burnley x Chelsea",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "seq RRGG",
-   "alvo": {
-    "h": "21:12",
-    "jogo": "Newcastle x United",
-    "odd": 2.07,
-    "unidades": 2,
-    "desde": 1786047149712
-   },
-   "iniciadoEm": 1786046958211,
-   "tiros": [
-    {
-     "h": "21:09",
-     "jogo": "City x Palace",
-     "odd": 2.1,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786045236116,
-   "premier": 1786043336615,
+   "premier": 1786047290519,
    "euro": 1786043112119,
    "super": 1786026475916
   },
@@ -3703,7 +3672,7 @@
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
-   "2026-08-06": 12.8
+   "2026-08-06": 13.9
   },
   "_gatilhoAtual": {
    "tipo": "seq",
