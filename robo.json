@@ -3683,13 +3683,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -73.9,
-  "ciclos": 1050,
+  "saldo": -80.9,
+  "ciclos": 1051,
   "greens": 720,
-  "redsCiclo": 115,
+  "redsCiclo": 116,
   "aborts": 0,
   "descartes": 215,
   "historico": [
+   {
+    "quando": "2026-08-06T20:21:28.710Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: coluna :14"
+   },
    {
     "quando": "2026-08-06T20:07:35.809Z",
     "resultado": "GREEN",
@@ -6753,55 +6759,12 @@
   ],
   "consumidas": {
    "premier": 1786044761916,
-   "super": 1786046855517
+   "super": 1786046855517,
+   "euro": 1786047688513
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "21:11",
-     "jogo": "República Tcheca x Eslováquia",
-     "odd": 2.2
-    },
-    {
-     "h": "21:14",
-     "jogo": "Suíça x Ucrânia",
-     "odd": 1.93
-    },
-    {
-     "h": "21:17",
-     "jogo": "Alemanha x Geórgia",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "coluna :14",
-   "alvo": {
-    "h": "21:17",
-    "jogo": "Alemanha x Geórgia",
-    "odd": 2.07,
-    "unidades": 4,
-    "desde": 1786047400912
-   },
-   "iniciadoEm": 1786046858112,
-   "tiros": [
-    {
-     "h": "21:11",
-     "jogo": "República Tcheca x Eslováquia",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "21:14",
-     "jogo": "Suíça x Ucrânia",
-     "odd": 1.93,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1786040257418,
+   "euro": 1786047688513,
    "super": 1786046855517,
    "premier": 1786044761916,
    "copa": 1786042236023
@@ -6828,13 +6791,13 @@
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
-   "2026-08-06": -26.5
+   "2026-08-06": -33.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Noruega",
    "n": 12,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
