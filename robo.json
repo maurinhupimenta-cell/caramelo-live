@@ -261,7 +261,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "01:52",
+     "jogo": "Paraguai x Argélia",
+     "odd": 5
+    },
+    {
+     "h": "01:55",
+     "jogo": "Arábia Saudita x Países Baixos",
+     "odd": 4.2
+    },
+    {
+     "h": "01:58",
+     "jogo": "Turquia x Qatar",
+     "odd": 4.75
+    }
+   ],
+   "gatilho": "odd 4.2",
+   "alvo": {
+    "h": "01:52",
+    "jogo": "Paraguai x Argélia",
+    "odd": 5,
+    "unidades": 1,
+    "desde": 1785977449970
+   },
+   "iniciadoEm": 1785977449970
+  },
   "cooldown": {
    "copa": 1785688526966,
    "premier": 1785903712201,
@@ -287,19 +317,15 @@
    "2026-08-05": 18
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRR",
-   "n": 9,
+   "tipo": "odd",
+   "chave": "4.2",
+   "n": 8,
    "start": 1
   },
   "_obs": {
    "euro": {
     "desde": 1785463711484,
     "gatilho": "time Eslovênia"
-   },
-   "copa": {
-    "desde": 1785977447068,
-    "gatilho": "odd 4.2"
    }
   }
  },
