@@ -6728,11 +6728,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1786040813914,
    "super": 1786041641722,
    "copa": 1786042236023
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:30",
+     "jogo": "Wolverhampton x Leicester",
+     "odd": 1.9
+    },
+    {
+     "h": "20:33",
+     "jogo": "Liverpool x Watford",
+     "odd": 2.05
+    },
+    {
+     "h": "20:36",
+     "jogo": "Leicester x Burnley",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "coluna :33",
+   "alvo": {
+    "h": "20:30",
+    "jogo": "Wolverhampton x Leicester",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1786044414520
+   },
+   "iniciadoEm": 1786044414520
+  },
   "cooldown": {
    "euro": 1786040257418,
    "super": 1786041641722,
@@ -6764,9 +6793,9 @@
    "2026-08-06": -28.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Noruega",
-   "n": 10,
+   "tipo": "coluna",
+   "chave": ":33",
+   "n": 20,
    "start": 2
   },
   "_obs": {}
