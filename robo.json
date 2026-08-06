@@ -320,13 +320,19 @@
   }
  },
  "o25": {
-  "saldo": -131.5,
-  "ciclos": 1030,
-  "greens": 649,
+  "saldo": -130.3,
+  "ciclos": 1031,
+  "greens": 650,
   "redsCiclo": 162,
   "aborts": 0,
   "descartes": 219,
   "historico": [
+   {
+    "quando": "2026-08-06T02:47:55.774Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · Chelsea x Liverpool @2.2 (tiro 1) · gatilho: time Newcastle"
+   },
    {
     "quando": "2026-08-06T02:43:53.865Z",
     "resultado": "GREEN_OBS",
@@ -3497,42 +3503,13 @@
    }
   ],
   "consumidas": {
-   "super": 1785982074774
+   "super": 1785982074774,
+   "premier": 1785984475578
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:45",
-     "jogo": "Chelsea x Liverpool",
-     "odd": 2.2
-    },
-    {
-     "h": "03:48",
-     "jogo": "Newcastle x Burnley",
-     "odd": 2.02
-    },
-    {
-     "h": "03:51",
-     "jogo": "Everton x Palace",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "time Newcastle",
-   "alvo": {
-    "h": "03:45",
-    "jogo": "Chelsea x Liverpool",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785984101871
-   },
-   "iniciadoEm": 1785984101871
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785962630370,
-   "premier": 1785964730369,
+   "premier": 1785984475578,
    "euro": 1785973972067,
    "super": 1785982074774
   },
@@ -3558,24 +3535,30 @@
    "2026-08-02": -27.5,
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
-   "2026-08-05": 6.7
+   "2026-08-05": 7.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.25",
+   "tipo": "time",
+   "chave": "Newcastle",
    "n": 8,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -48.6,
-  "ciclos": 1018,
-  "greens": 702,
+  "saldo": -47.4,
+  "ciclos": 1019,
+  "greens": 703,
   "redsCiclo": 109,
   "aborts": 0,
   "descartes": 207,
   "historico": [
+   {
+    "quando": "2026-08-06T02:46:54.672Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Coreia do Sul x Áustria @2.05 (tiro 3) · gatilho: odd 1.95"
+   },
    {
     "quando": "2026-08-06T02:14:51.966Z",
     "resultado": "GREEN",
@@ -6446,58 +6429,15 @@
    }
   ],
   "consumidas": {
-   "premier": 1785982491770
+   "premier": 1785982491770,
+   "copa": 1785984414566
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "03:46",
-     "jogo": "Espanha x Equador",
-     "odd": 1.87
-    },
-    {
-     "h": "03:49",
-     "jogo": "Alemanha x Nova Zelândia",
-     "odd": 1.95
-    },
-    {
-     "h": "03:52",
-     "jogo": "Coreia do Sul x Áustria",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "odd 1.95",
-   "alvo": {
-    "h": "03:52",
-    "jogo": "Coreia do Sul x Áustria",
-    "odd": 2.05,
-    "unidades": 4,
-    "desde": 1785984412071
-   },
-   "iniciadoEm": 1785984230367,
-   "tiros": [
-    {
-     "h": "03:46",
-     "jogo": "Espanha x Equador",
-     "odd": 1.87,
-     "unidades": 1
-    },
-    {
-     "h": "03:49",
-     "jogo": "Alemanha x Nova Zelândia",
-     "odd": 1.95,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785956149774,
    "super": 1785899401696,
    "premier": 1785982491770,
-   "copa": 1785980330877
+   "copa": 1785984414566
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -6520,7 +6460,7 @@
    "2026-08-02": -43.3,
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
-   "2026-08-05": 16
+   "2026-08-05": 17.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
