@@ -3585,11 +3585,40 @@
    }
   ],
   "consumidas": {
-   "euro": 1786027314619,
    "copa": 1786027733321,
    "premier": 1786028927416
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:41",
+     "jogo": "Espanha x Geórgia",
+     "odd": 2.2
+    },
+    {
+     "h": "16:44",
+     "jogo": "Croácia x Itália",
+     "odd": 2.25
+    },
+    {
+     "h": "16:47",
+     "jogo": "Sérvia x Polônia",
+     "odd": 2.7
+    }
+   ],
+   "gatilho": "coluna :44",
+   "alvo": {
+    "h": "16:41",
+    "jogo": "Espanha x Geórgia",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1786030916209
+   },
+   "iniciadoEm": 1786030916209
+  },
   "cooldown": {
    "copa": 1786027733321,
    "premier": 1786028927416,
@@ -3622,9 +3651,9 @@
    "2026-08-06": 18.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGG",
-   "n": 22,
+   "tipo": "coluna",
+   "chave": ":44",
+   "n": 16,
    "start": 1
   },
   "_obs": {}
@@ -6613,7 +6642,37 @@
    "euro": 1786028450915,
    "premier": 1786030741221
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:40",
+     "jogo": "Montevideo x Guayaquil",
+     "odd": 1.83
+    },
+    {
+     "h": "16:43",
+     "jogo": "Porto Alegre x Lima",
+     "odd": 2.15
+    },
+    {
+     "h": "16:46",
+     "jogo": "Asuncion x Avellaneda",
+     "odd": 2
+    }
+   ],
+   "gatilho": "coluna :43",
+   "alvo": {
+    "h": "16:40",
+    "jogo": "Montevideo x Guayaquil",
+    "odd": 1.83,
+    "unidades": 1,
+    "desde": 1786030853520
+   },
+   "iniciadoEm": 1786030853520
+  },
   "cooldown": {
    "euro": 1786028450915,
    "super": 1786027253414,
@@ -6646,7 +6705,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":33",
+   "chave": ":43",
    "n": 16,
    "start": 1
   },
