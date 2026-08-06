@@ -3624,13 +3624,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -63.6,
-  "ciclos": 1032,
-  "greens": 708,
+  "saldo": -62.9,
+  "ciclos": 1033,
+  "greens": 709,
   "redsCiclo": 112,
   "aborts": 0,
   "descartes": 212,
   "historico": [
+   {
+    "quando": "2026-08-06T14:54:55.118Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "copa · Arábia Saudita x Nova Zelândia @1.87 (tiro 2) · gatilho: time Nova Zelândia"
+   },
    {
     "quando": "2026-08-06T14:40:53.613Z",
     "resultado": "GREEN",
@@ -6586,52 +6592,45 @@
   ],
   "consumidas": {
    "premier": 1786026762124,
-   "super": 1786027253414
+   "super": 1786027253414,
+   "copa": 1786028094917
   },
   "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "15:49",
-     "jogo": "Iraque x Jordânia",
-     "odd": 2.07
+     "h": "15:56",
+     "jogo": "República Tcheca x Dinamarca",
+     "odd": 2.2
     },
     {
-     "h": "15:52",
-     "jogo": "Arábia Saudita x Nova Zelândia",
-     "odd": 1.87
+     "h": "15:59",
+     "jogo": "Países Baixos x Hungria",
+     "odd": 1.95
     },
     {
-     "h": "15:55",
-     "jogo": "Equador x Bósnia e Herzegovina",
-     "odd": 1.9
+     "h": "16:02",
+     "jogo": "Sérvia x Albânia",
+     "odd": 2.37
     }
    ],
-   "gatilho": "time Nova Zelândia",
+   "gatilho": "coluna :56",
    "alvo": {
-    "h": "15:52",
-    "jogo": "Arábia Saudita x Nova Zelândia",
-    "odd": 1.87,
-    "unidades": 2,
-    "desde": 1786027913513
+    "h": "15:56",
+    "jogo": "República Tcheca x Dinamarca",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1786028097217
    },
-   "iniciadoEm": 1786027256114,
-   "tiros": [
-    {
-     "h": "15:49",
-     "jogo": "Iraque x Jordânia",
-     "odd": 2.07,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1786028097217
   },
   "cooldown": {
    "euro": 1785994193673,
    "super": 1786027253414,
    "premier": 1786026762124,
-   "copa": 1785994671474
+   "copa": 1786028094917
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -6655,11 +6654,11 @@
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
-   "2026-08-06": -16.2
+   "2026-08-06": -15.5
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":53",
+   "chave": ":56",
    "n": 15,
    "start": 1
   },
