@@ -3608,12 +3608,18 @@
  },
  "ambas": {
   "saldo": -65.5,
-  "ciclos": 1026,
+  "ciclos": 1027,
   "greens": 706,
   "redsCiclo": 112,
   "aborts": 0,
-  "descartes": 208,
+  "descartes": 209,
   "historico": [
+   {
+    "quando": "2026-08-06T05:45:09.372Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho time Liverpool) — liga REARMADA"
+   },
    {
     "quando": "2026-08-06T05:37:51.673Z",
     "resultado": "RED_CICLO",
@@ -6600,8 +6606,13 @@
    "tipo": "time",
    "chave": "Quito",
    "n": 20,
-   "start": 2
+   "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1785995109372,
+    "gatilho": "time Liverpool"
+   }
+  }
  }
 }
