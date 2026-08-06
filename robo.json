@@ -318,13 +318,19 @@
   }
  },
  "o25": {
-  "saldo": -115,
-  "ciclos": 1056,
-  "greens": 670,
+  "saldo": -113.7,
+  "ciclos": 1057,
+  "greens": 671,
   "redsCiclo": 164,
   "aborts": 0,
   "descartes": 222,
   "historico": [
+   {
+    "quando": "2026-08-06T22:22:37.013Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "copa · EUA x Países Baixos @2.25 (tiro 1) · gatilho: odd 2.4"
+   },
    {
     "quando": "2026-08-06T22:16:06.610Z",
     "resultado": "GREEN_OBS",
@@ -3650,40 +3656,50 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "copa": 1786054956821
+  },
   "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "liga": "premier",
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
-     "h": "23:19",
-     "jogo": "EUA x Países Baixos",
+     "h": "23:24",
+     "jogo": "Everton x Southampton",
      "odd": 2.25
     },
     {
-     "h": "23:22",
-     "jogo": "Noruega x Irã",
-     "odd": 2.4
+     "h": "23:27",
+     "jogo": "Aston x Tottenham",
+     "odd": 2.55
     },
     {
-     "h": "23:25",
-     "jogo": "Turquia x RD Congo",
-     "odd": 2.2
+     "h": "23:30",
+     "jogo": "Everton x Leeds",
+     "odd": 2.4
     }
    ],
-   "gatilho": "odd 2.4",
+   "gatilho": "odd 2.55",
    "alvo": {
-    "h": "23:19",
-    "jogo": "EUA x Países Baixos",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1786054569118
+    "h": "23:27",
+    "jogo": "Aston x Tottenham",
+    "odd": 2.55,
+    "unidades": 2,
+    "desde": 1786055228620
    },
-   "iniciadoEm": 1786054569118
+   "iniciadoEm": 1786054959523,
+   "tiros": [
+    {
+     "h": "23:24",
+     "jogo": "Everton x Southampton",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
-   "copa": 1786045236116,
+   "copa": 1786054956821,
    "premier": 1786047290519,
    "euro": 1786048836913,
    "super": 1786026475916
@@ -3711,24 +3727,30 @@
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
-   "2026-08-06": 15.3
+   "2026-08-06": 16.6
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.55",
    "n": 13,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -78.3,
-  "ciclos": 1057,
-  "greens": 723,
+  "saldo": -77.3,
+  "ciclos": 1058,
+  "greens": 724,
   "redsCiclo": 116,
   "aborts": 0,
   "descartes": 218,
   "historico": [
+   {
+    "quando": "2026-08-06T22:22:37.312Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · EUA x Países Baixos @1.98 (tiro 1) · gatilho: seq RRRGG"
+   },
    {
     "quando": "2026-08-06T22:17:09.019Z",
     "resultado": "GREEN",
@@ -6833,44 +6855,45 @@
    }
   ],
   "consumidas": {
-   "euro": 1786054628823
+   "euro": 1786054628823,
+   "copa": 1786054957116
   },
   "ciclo": {
-   "liga": "copa",
+   "liga": "premier",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "23:19",
-     "jogo": "EUA x Países Baixos",
-     "odd": 1.98
+     "h": "23:30",
+     "jogo": "Everton x Leeds",
+     "odd": 2.07
     },
     {
-     "h": "23:22",
-     "jogo": "Noruega x Irã",
-     "odd": 2.075
+     "h": "23:33",
+     "jogo": "City x West Ham",
+     "odd": 2.1
     },
     {
-     "h": "23:25",
-     "jogo": "Turquia x RD Congo",
-     "odd": 1.95
+     "h": "23:36",
+     "jogo": "Tottenham x Everton",
+     "odd": 2.02
     }
    ],
-   "gatilho": "seq RRRGG",
+   "gatilho": "coluna :33",
    "alvo": {
-    "h": "23:19",
-    "jogo": "EUA x Países Baixos",
-    "odd": 1.98,
+    "h": "23:30",
+    "jogo": "Everton x Leeds",
+    "odd": 2.07,
     "unidades": 1,
-    "desde": 1786054631321
+    "desde": 1786054959816
    },
-   "iniciadoEm": 1786054631321
+   "iniciadoEm": 1786054959816
   },
   "cooldown": {
    "euro": 1786054628823,
    "super": 1786046855517,
    "premier": 1786048724722,
-   "copa": 1786047950616
+   "copa": 1786054957116
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -6894,13 +6917,13 @@
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
-   "2026-08-06": -30.9
+   "2026-08-06": -29.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRGG",
-   "n": 14,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":33",
+   "n": 23,
+   "start": 2
   },
   "_obs": {}
  }
