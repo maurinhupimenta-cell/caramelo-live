@@ -3600,13 +3600,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -59.7,
-  "ciclos": 1024,
-  "greens": 705,
+  "saldo": -58.5,
+  "ciclos": 1025,
+  "greens": 706,
   "redsCiclo": 111,
   "aborts": 0,
   "descartes": 208,
   "historico": [
+   {
+    "quando": "2026-08-06T05:29:53.869Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Eslovênia x Escócia @2.15 (tiro 1) · gatilho: odd 2.15"
+   },
    {
     "quando": "2026-08-06T05:22:50.474Z",
     "resultado": "GREEN_OBS",
@@ -6513,41 +6519,42 @@
    }
   ],
   "consumidas": {
-   "premier": 1785991264673
+   "premier": 1785991264673,
+   "euro": 1785994193673
   },
   "ciclo": {
-   "liga": "euro",
+   "liga": "copa",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "06:26",
-     "jogo": "Eslovênia x Escócia",
-     "odd": 2.15
+     "h": "06:28",
+     "jogo": "Suécia x Brasil",
+     "odd": 2.1
     },
     {
-     "h": "06:29",
-     "jogo": "Países Baixos x Alemanha",
-     "odd": 1.83
+     "h": "06:31",
+     "jogo": "RD Congo x EUA",
+     "odd": 1.9
     },
     {
-     "h": "06:32",
-     "jogo": "Ucrânia x Dinamarca",
-     "odd": 2.05
+     "h": "06:34",
+     "jogo": "Noruega x França",
+     "odd": 1.87
     }
    ],
-   "gatilho": "odd 2.15",
+   "gatilho": "time RD Congo",
    "alvo": {
-    "h": "06:26",
-    "jogo": "Eslovênia x Escócia",
-    "odd": 2.15,
+    "h": "06:28",
+    "jogo": "Suécia x Brasil",
+    "odd": 2.1,
     "unidades": 1,
-    "desde": 1785993771977
+    "desde": 1785994194966
    },
-   "iniciadoEm": 1785993771977
+   "iniciadoEm": 1785994194966
   },
   "cooldown": {
-   "euro": 1785988613467,
+   "euro": 1785994193673,
    "super": 1785899401696,
    "premier": 1785991264673,
    "copa": 1785989755069
@@ -6574,13 +6581,13 @@
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
-   "2026-08-06": -12.3
+   "2026-08-06": -11.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "RD Congo",
    "n": 8,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
