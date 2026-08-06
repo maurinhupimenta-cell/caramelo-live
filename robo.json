@@ -318,13 +318,19 @@
   }
  },
  "o25": {
-  "saldo": -119.4,
-  "ciclos": 1040,
-  "greens": 658,
+  "saldo": -118.4,
+  "ciclos": 1041,
+  "greens": 659,
   "redsCiclo": 162,
   "aborts": 0,
   "descartes": 220,
   "historico": [
+   {
+    "quando": "2026-08-06T05:39:53.471Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Lima x Montevideo @2.05 (tiro 1) · gatilho: seq RRGR"
+   },
    {
     "quando": "2026-08-06T05:24:55.673Z",
     "resultado": "GREEN",
@@ -3557,44 +3563,15 @@
   "consumidas": {
    "euro": 1785991786373,
    "premier": 1785992561770,
-   "copa": 1785993895566
+   "copa": 1785993895566,
+   "super": 1785994793367
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:37",
-     "jogo": "Lima x Montevideo",
-     "odd": 2.05
-    },
-    {
-     "h": "06:40",
-     "jogo": "Buenos Aires x La Boca",
-     "odd": 2.2
-    },
-    {
-     "h": "06:43",
-     "jogo": "Itaquera x Medellin",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "seq RRGR",
-   "alvo": {
-    "h": "06:37",
-    "jogo": "Lima x Montevideo",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1785994431871
-   },
-   "iniciadoEm": 1785994431871
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785993895566,
    "premier": 1785992561770,
    "euro": 1785991786373,
-   "super": 1785989934967
+   "super": 1785994793367
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -3619,7 +3596,7 @@
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
-   "2026-08-06": 10.9
+   "2026-08-06": 11.9
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -6559,7 +6536,37 @@
    "euro": 1785994193673,
    "copa": 1785994671474
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:46",
+     "jogo": "Montevideo x Guayaquil",
+     "odd": 1.83
+    },
+    {
+     "h": "06:49",
+     "jogo": "Quito x Sao Paulo",
+     "odd": 1.87
+    },
+    {
+     "h": "06:52",
+     "jogo": "La Boca x Buenos Aires",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "time Quito",
+   "alvo": {
+    "h": "06:46",
+    "jogo": "Montevideo x Guayaquil",
+    "odd": 1.83,
+    "unidades": 1,
+    "desde": 1785994673776
+   },
+   "iniciadoEm": 1785994673776
+  },
   "cooldown": {
    "euro": 1785994193673,
    "super": 1785899401696,
@@ -6591,10 +6598,10 @@
    "2026-08-06": -18.1
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.1",
-   "n": 9,
-   "start": 2
+   "tipo": "time",
+   "chave": "Quito",
+   "n": 20,
+   "start": 3
   },
   "_obs": {}
  }
