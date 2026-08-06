@@ -318,13 +318,19 @@
   }
  },
  "o25": {
-  "saldo": -120.5,
-  "ciclos": 1039,
-  "greens": 657,
+  "saldo": -119.4,
+  "ciclos": 1040,
+  "greens": 658,
   "redsCiclo": 162,
   "aborts": 0,
   "descartes": 220,
   "historico": [
+   {
+    "quando": "2026-08-06T05:24:55.673Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Noruega x Espanha @2.07 (tiro 1) · gatilho: placar empate 1-1"
+   },
    {
     "quando": "2026-08-06T05:02:41.969Z",
     "resultado": "GREEN",
@@ -3550,41 +3556,12 @@
   ],
   "consumidas": {
    "euro": 1785991786373,
-   "premier": 1785992561770
+   "premier": 1785992561770,
+   "copa": 1785993895566
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:22",
-     "jogo": "Noruega x Espanha",
-     "odd": 2.07
-    },
-    {
-     "h": "06:25",
-     "jogo": "Jordânia x Paraguai",
-     "odd": 2.3
-    },
-    {
-     "h": "06:28",
-     "jogo": "Suécia x Brasil",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "placar empate 1-1",
-   "alvo": {
-    "h": "06:22",
-    "jogo": "Noruega x Espanha",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1785993831672
-   },
-   "iniciadoEm": 1785993831672
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785989754773,
+   "copa": 1785993895566,
    "premier": 1785992561770,
    "euro": 1785991786373,
    "super": 1785989934967
@@ -3612,7 +3589,7 @@
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
-   "2026-08-06": 9.8
+   "2026-08-06": 10.9
   },
   "_gatilhoAtual": {
    "tipo": "placar",
@@ -6600,10 +6577,10 @@
    "2026-08-06": -12.3
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.15",
-   "n": 9,
-   "start": 1
+   "tipo": "time",
+   "chave": "RD Congo",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  }
