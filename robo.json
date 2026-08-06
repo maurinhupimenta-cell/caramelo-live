@@ -6685,10 +6685,39 @@
    }
   ],
   "consumidas": {
-   "super": 1786036254224,
    "copa": 1786037154210
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:11",
+     "jogo": "Portugal x Dinamarca",
+     "odd": 2.02
+    },
+    {
+     "h": "19:14",
+     "jogo": "Inglaterra x Alemanha",
+     "odd": 1.83
+    },
+    {
+     "h": "19:17",
+     "jogo": "Eslováquia x Portugal",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "coluna :14",
+   "alvo": {
+    "h": "19:11",
+    "jogo": "Portugal x Dinamarca",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1786039418714
+   },
+   "iniciadoEm": 1786039418714
+  },
   "cooldown": {
    "euro": 1786033201215,
    "super": 1786036254224,
@@ -6720,16 +6749,11 @@
    "2026-08-06": -32.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRGG",
-   "n": 11,
+   "tipo": "coluna",
+   "chave": ":14",
+   "n": 19,
    "start": 1
   },
-  "_obs": {
-   "euro": {
-    "desde": 1786039416911,
-    "gatilho": "coluna :14"
-   }
-  }
+  "_obs": {}
  }
 }
