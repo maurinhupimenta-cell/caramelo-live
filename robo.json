@@ -318,13 +318,19 @@
   }
  },
  "o25": {
-  "saldo": -124.9,
-  "ciclos": 1036,
-  "greens": 654,
+  "saldo": -123.7,
+  "ciclos": 1037,
+  "greens": 655,
   "redsCiclo": 162,
   "aborts": 0,
   "descartes": 220,
   "historico": [
+   {
+    "quando": "2026-08-06T04:18:55.074Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Montevideo x Avellaneda @2.2 (tiro 1) · gatilho: odd 2.2"
+   },
    {
     "quando": "2026-08-06T04:15:54.967Z",
     "resultado": "GREEN",
@@ -3532,44 +3538,15 @@
   ],
   "consumidas": {
    "premier": 1785988551872,
-   "copa": 1785989754773
+   "copa": 1785989754773,
+   "super": 1785989934967
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:16",
-     "jogo": "Montevideo x Avellaneda",
-     "odd": 2.2
-    },
-    {
-     "h": "05:19",
-     "jogo": "Quito x Santiago",
-     "odd": 2.1
-    },
-    {
-     "h": "05:22",
-     "jogo": "Itaquera x Santos",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "odd 2.2",
-   "alvo": {
-    "h": "05:16",
-    "jogo": "Montevideo x Avellaneda",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1785989813570
-   },
-   "iniciadoEm": 1785989813570
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785989754773,
    "premier": 1785988551872,
    "euro": 1785985371671,
-   "super": 1785986038067
+   "super": 1785989934967
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -3594,12 +3571,12 @@
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
-   "2026-08-06": 5.4
+   "2026-08-06": 6.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.2",
-   "n": 15,
+   "tipo": "seq",
+   "chave": "RRGR",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
