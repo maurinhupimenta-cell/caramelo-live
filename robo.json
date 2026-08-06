@@ -3650,13 +3650,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -76.9,
-  "ciclos": 1047,
-  "greens": 717,
+  "saldo": -76,
+  "ciclos": 1048,
+  "greens": 718,
   "redsCiclo": 115,
   "aborts": 0,
   "descartes": 215,
   "historico": [
+   {
+    "quando": "2026-08-06T18:50:36.311Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · Noruega x Turquia @1.93 (tiro 1) · gatilho: time Noruega"
+   },
    {
     "quando": "2026-08-06T18:40:42.009Z",
     "resultado": "GREEN",
@@ -6703,44 +6709,15 @@
   "consumidas": {
    "euro": 1786040257418,
    "premier": 1786040813914,
-   "super": 1786041641722
+   "super": 1786041641722,
+   "copa": 1786042236023
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "19:43",
-     "jogo": "Noruega x Turquia",
-     "odd": 1.93
-    },
-    {
-     "h": "19:46",
-     "jogo": "Equador x Irã",
-     "odd": 2.07
-    },
-    {
-     "h": "19:49",
-     "jogo": "Tunísia x Jordânia",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "time Noruega",
-   "alvo": {
-    "h": "19:43",
-    "jogo": "Noruega x Turquia",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1786041696309
-   },
-   "iniciadoEm": 1786041696309
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786040257418,
    "super": 1786041641722,
    "premier": 1786040813914,
-   "copa": 1786037154210
+   "copa": 1786042236023
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -6764,13 +6741,13 @@
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
-   "2026-08-06": -29.5
+   "2026-08-06": -28.6
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Noruega",
-   "n": 9,
-   "start": 1
+   "n": 10,
+   "start": 2
   },
   "_obs": {}
  }
