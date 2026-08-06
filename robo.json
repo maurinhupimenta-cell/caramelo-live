@@ -318,13 +318,19 @@
   }
  },
  "o25": {
-  "saldo": -121.9,
-  "ciclos": 1038,
-  "greens": 656,
+  "saldo": -120.5,
+  "ciclos": 1039,
+  "greens": 657,
   "redsCiclo": 162,
   "aborts": 0,
   "descartes": 220,
   "historico": [
+   {
+    "quando": "2026-08-06T05:02:41.969Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "premier · Wolverhampton x Southampton @2.2 (tiro 2) · gatilho: time Newcastle"
+   },
    {
     "quando": "2026-08-06T04:49:46.572Z",
     "resultado": "GREEN",
@@ -3545,50 +3551,13 @@
   "consumidas": {
    "copa": 1785989754773,
    "super": 1785989934967,
-   "euro": 1785991786373
+   "euro": 1785991786373,
+   "premier": 1785992561770
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "05:57",
-     "jogo": "Aston x Newcastle",
-     "odd": 2.2
-    },
-    {
-     "h": "06:00",
-     "jogo": "Wolverhampton x Southampton",
-     "odd": 2.2
-    },
-    {
-     "h": "06:03",
-     "jogo": "Burnley x Liverpool",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "time Newcastle",
-   "alvo": {
-    "h": "06:00",
-    "jogo": "Wolverhampton x Southampton",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1785992379775
-   },
-   "iniciadoEm": 1785992153177,
-   "tiros": [
-    {
-     "h": "05:57",
-     "jogo": "Aston x Newcastle",
-     "odd": 2.2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785989754773,
-   "premier": 1785988551872,
+   "premier": 1785992561770,
    "euro": 1785991786373,
    "super": 1785989934967
   },
@@ -3615,12 +3584,12 @@
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
-   "2026-08-06": 8.4
+   "2026-08-06": 9.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Newcastle",
-   "n": 11,
+   "chave": "Palace",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
