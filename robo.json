@@ -3547,7 +3547,37 @@
    "super": 1785989934967,
    "euro": 1785991786373
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:57",
+     "jogo": "Aston x Newcastle",
+     "odd": 2.2
+    },
+    {
+     "h": "06:00",
+     "jogo": "Wolverhampton x Southampton",
+     "odd": 2.2
+    },
+    {
+     "h": "06:03",
+     "jogo": "Burnley x Liverpool",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time Newcastle",
+   "alvo": {
+    "h": "05:57",
+    "jogo": "Aston x Newcastle",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785992153177
+   },
+   "iniciadoEm": 1785992153177
+  },
   "cooldown": {
    "copa": 1785989754773,
    "premier": 1785988551872,
@@ -3580,9 +3610,9 @@
    "2026-08-06": 8.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRR",
-   "n": 8,
+   "tipo": "time",
+   "chave": "Newcastle",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
@@ -6495,7 +6525,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1785988613467,
    "copa": 1785989755069,
    "premier": 1785991264673
   },
