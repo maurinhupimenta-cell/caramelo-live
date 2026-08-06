@@ -6696,8 +6696,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "19:21",
@@ -6717,13 +6717,21 @@
    ],
    "gatilho": "time Brighton",
    "alvo": {
-    "h": "19:21",
-    "jogo": "Burnley x Everton",
-    "odd": 1.83,
-    "unidades": 1,
-    "desde": 1786040259518
+    "h": "19:24",
+    "jogo": "Brighton x Brentford",
+    "odd": 1.87,
+    "unidades": 2,
+    "desde": 1786040741011
    },
-   "iniciadoEm": 1786040259518
+   "iniciadoEm": 1786040259518,
+   "tiros": [
+    {
+     "h": "19:21",
+     "jogo": "Burnley x Everton",
+     "odd": 1.83,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786040257418,
@@ -6756,9 +6764,9 @@
    "2026-08-06": -31.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Brighton",
-   "n": 40,
+   "tipo": "coluna",
+   "chave": ":33",
+   "n": 19,
    "start": 2
   },
   "_obs": {}
