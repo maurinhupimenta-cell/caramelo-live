@@ -3660,18 +3660,24 @@
    "tipo": "coluna",
    "chave": ":58",
    "n": 14,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -60.9,
-  "ciclos": 1035,
+  "saldo": -67.9,
+  "ciclos": 1036,
   "greens": 711,
-  "redsCiclo": 112,
+  "redsCiclo": 113,
   "aborts": 0,
   "descartes": 212,
   "historico": [
+   {
+    "quando": "2026-08-06T15:51:52.612Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: coluna :43"
+   },
    {
     "quando": "2026-08-06T15:39:01.512Z",
     "resultado": "GREEN",
@@ -6646,56 +6652,13 @@
   "consumidas": {
    "copa": 1786028094917,
    "euro": 1786028450915,
-   "premier": 1786030741221
+   "premier": 1786030741221,
+   "super": 1786031512322
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "16:40",
-     "jogo": "Montevideo x Guayaquil",
-     "odd": 1.83
-    },
-    {
-     "h": "16:43",
-     "jogo": "Porto Alegre x Lima",
-     "odd": 2.15
-    },
-    {
-     "h": "16:46",
-     "jogo": "Asuncion x Avellaneda",
-     "odd": 2
-    }
-   ],
-   "gatilho": "coluna :43",
-   "alvo": {
-    "h": "16:46",
-    "jogo": "Asuncion x Avellaneda",
-    "odd": 2,
-    "unidades": 4,
-    "desde": 1786031216710
-   },
-   "iniciadoEm": 1786030853520,
-   "tiros": [
-    {
-     "h": "16:40",
-     "jogo": "Montevideo x Guayaquil",
-     "odd": 1.83,
-     "unidades": 1
-    },
-    {
-     "h": "16:43",
-     "jogo": "Porto Alegre x Lima",
-     "odd": 2.15,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786028450915,
-   "super": 1786027253414,
+   "super": 1786031512322,
    "premier": 1786030741221,
    "copa": 1786028094917
   },
@@ -6721,7 +6684,7 @@
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
-   "2026-08-06": -13.5
+   "2026-08-06": -20.5
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
