@@ -318,13 +318,19 @@
   }
  },
  "o25": {
-  "saldo": -117.8,
-  "ciclos": 1047,
-  "greens": 664,
+  "saldo": -116.5,
+  "ciclos": 1048,
+  "greens": 665,
   "redsCiclo": 163,
   "aborts": 0,
   "descartes": 220,
   "historico": [
+   {
+    "quando": "2026-08-06T16:20:52.611Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "premier · Brentford x Palace @2.25 (tiro 1) · gatilho: coluna :21"
+   },
    {
     "quando": "2026-08-06T16:04:01.517Z",
     "resultado": "RED_CICLO",
@@ -3598,42 +3604,13 @@
   ],
   "consumidas": {
    "euro": 1786031048416,
-   "copa": 1786032241315
+   "copa": 1786032241315,
+   "premier": 1786033252413
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:18",
-     "jogo": "Brentford x Palace",
-     "odd": 2.25
-    },
-    {
-     "h": "17:21",
-     "jogo": "United x Southampton",
-     "odd": 2.35
-    },
-    {
-     "h": "17:24",
-     "jogo": "Brighton x Tottenham",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "coluna :21",
-   "alvo": {
-    "h": "17:18",
-    "jogo": "Brentford x Palace",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1786032552113
-   },
-   "iniciadoEm": 1786032552113
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786032241315,
-   "premier": 1786028927416,
+   "premier": 1786033252413,
    "euro": 1786031048416,
    "super": 1786026475916
   },
@@ -3660,7 +3637,7 @@
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
-   "2026-08-06": 12.5
+   "2026-08-06": 13.8
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
