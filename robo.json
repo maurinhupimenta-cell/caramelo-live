@@ -318,13 +318,19 @@
   }
  },
  "o25": {
-  "saldo": -123.7,
-  "ciclos": 1037,
-  "greens": 655,
+  "saldo": -121.9,
+  "ciclos": 1038,
+  "greens": 656,
   "redsCiclo": 162,
   "aborts": 0,
   "descartes": 220,
   "historico": [
+   {
+    "quando": "2026-08-06T04:49:46.572Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "euro · Itália x Suíça @2.2 (tiro 3) · gatilho: time Eslovênia"
+   },
    {
     "quando": "2026-08-06T04:18:55.074Z",
     "resultado": "GREEN",
@@ -3539,57 +3545,14 @@
   "consumidas": {
    "premier": 1785988551872,
    "copa": 1785989754773,
-   "super": 1785989934967
+   "super": 1785989934967,
+   "euro": 1785991786373
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "05:41",
-     "jogo": "Croácia x Geórgia",
-     "odd": 2.35
-    },
-    {
-     "h": "05:44",
-     "jogo": "Albânia x Eslovênia",
-     "odd": 3.1
-    },
-    {
-     "h": "05:47",
-     "jogo": "Itália x Suíça",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Eslovênia",
-   "alvo": {
-    "h": "05:47",
-    "jogo": "Itália x Suíça",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1785991671173
-   },
-   "iniciadoEm": 1785990774973,
-   "tiros": [
-    {
-     "h": "05:41",
-     "jogo": "Croácia x Geórgia",
-     "odd": 2.35,
-     "unidades": 1
-    },
-    {
-     "h": "05:44",
-     "jogo": "Albânia x Eslovênia",
-     "odd": 3.1,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785989754773,
    "premier": 1785988551872,
-   "euro": 1785985371671,
+   "euro": 1785991786373,
    "super": 1785989934967
   },
   "dias": {
@@ -3615,7 +3578,7 @@
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
-   "2026-08-06": 6.6
+   "2026-08-06": 8.4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
