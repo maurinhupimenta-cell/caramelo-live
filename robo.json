@@ -3630,13 +3630,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -58.5,
-  "ciclos": 1025,
+  "saldo": -65.5,
+  "ciclos": 1026,
   "greens": 706,
-  "redsCiclo": 111,
+  "redsCiclo": 112,
   "aborts": 0,
   "descartes": 208,
   "historico": [
+   {
+    "quando": "2026-08-06T05:37:51.673Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time RD Congo"
+   },
    {
     "quando": "2026-08-06T05:29:53.869Z",
     "resultado": "GREEN",
@@ -6550,58 +6556,15 @@
   ],
   "consumidas": {
    "premier": 1785991264673,
-   "euro": 1785994193673
+   "euro": 1785994193673,
+   "copa": 1785994671474
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "06:28",
-     "jogo": "Suécia x Brasil",
-     "odd": 2.1
-    },
-    {
-     "h": "06:31",
-     "jogo": "RD Congo x EUA",
-     "odd": 1.9
-    },
-    {
-     "h": "06:34",
-     "jogo": "Noruega x França",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "time RD Congo",
-   "alvo": {
-    "h": "06:34",
-    "jogo": "Noruega x França",
-    "odd": 1.87,
-    "unidades": 4,
-    "desde": 1785994491064
-   },
-   "iniciadoEm": 1785994194966,
-   "tiros": [
-    {
-     "h": "06:28",
-     "jogo": "Suécia x Brasil",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "06:31",
-     "jogo": "RD Congo x EUA",
-     "odd": 1.9,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785994193673,
    "super": 1785899401696,
    "premier": 1785991264673,
-   "copa": 1785989755069
+   "copa": 1785994671474
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -6625,13 +6588,13 @@
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
-   "2026-08-06": -11.1
+   "2026-08-06": -18.1
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "1.9",
+   "chave": "2.1",
    "n": 9,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
