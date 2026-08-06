@@ -6645,12 +6645,41 @@
    }
   ],
   "consumidas": {
-   "premier": 1786030741221,
    "super": 1786031512322,
    "copa": 1786032601120,
    "euro": 1786033201215
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:42",
+     "jogo": "Southampton x Leeds",
+     "odd": 2.2
+    },
+    {
+     "h": "17:45",
+     "jogo": "Brighton x Islington",
+     "odd": 1.85
+    },
+    {
+     "h": "17:48",
+     "jogo": "West Ham x Palace",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time Brighton",
+   "alvo": {
+    "h": "17:42",
+    "jogo": "Southampton x Leeds",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1786034350615
+   },
+   "iniciadoEm": 1786034350615
+  },
   "cooldown": {
    "euro": 1786033201215,
    "super": 1786031512322,
@@ -6682,9 +6711,9 @@
    "2026-08-06": -34.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":14",
-   "n": 17,
+   "tipo": "time",
+   "chave": "Brighton",
+   "n": 36,
    "start": 1
   },
   "_obs": {}
