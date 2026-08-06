@@ -6829,8 +6829,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "23:30",
@@ -6850,13 +6850,27 @@
    ],
    "gatilho": "coluna :33",
    "alvo": {
-    "h": "23:30",
-    "jogo": "Everton x Leeds",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1786054959816
+    "h": "23:36",
+    "jogo": "Tottenham x Everton",
+    "odd": 2.02,
+    "unidades": 4,
+    "desde": 1786055708912
    },
-   "iniciadoEm": 1786054959816
+   "iniciadoEm": 1786054959816,
+   "tiros": [
+    {
+     "h": "23:30",
+     "jogo": "Everton x Leeds",
+     "odd": 2.07,
+     "unidades": 1
+    },
+    {
+     "h": "23:33",
+     "jogo": "City x West Ham",
+     "odd": 2.1,
+     "unidades": 2
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786054628823,
@@ -6890,9 +6904,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":33",
+   "chave": ":43",
    "n": 23,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  }
