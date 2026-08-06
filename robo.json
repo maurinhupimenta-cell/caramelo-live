@@ -3617,8 +3617,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "19:56",
@@ -3638,11 +3638,11 @@
    ],
    "gatilho": "seq RRRGG",
    "alvo": {
-    "h": "19:59",
-    "jogo": "Romênia x Escócia",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1786042835813
+    "h": "20:02",
+    "jogo": "Eslovênia x Eslováquia",
+    "odd": 2.62,
+    "unidades": 4,
+    "desde": 1786043110109
    },
    "iniciadoEm": 1786042476424,
    "tiros": [
@@ -3651,6 +3651,12 @@
      "jogo": "Inglaterra x Croácia",
      "odd": 2.1,
      "unidades": 1
+    },
+    {
+     "h": "19:59",
+     "jogo": "Romênia x Escócia",
+     "odd": 2.15,
+     "unidades": 2
     }
    ]
   },
@@ -3686,9 +3692,9 @@
    "2026-08-06": 14.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGR",
-   "n": 23,
+   "tipo": "coluna",
+   "chave": ":09",
+   "n": 20,
    "start": 1
   },
   "_obs": {}
