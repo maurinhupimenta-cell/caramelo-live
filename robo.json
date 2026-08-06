@@ -6486,7 +6486,45 @@
    "euro": 1785988613467,
    "copa": 1785989755069
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "05:30",
+     "jogo": "Chelsea x Norwich",
+     "odd": 2
+    },
+    {
+     "h": "05:33",
+     "jogo": "Tottenham x Burnley",
+     "odd": 2.07
+    },
+    {
+     "h": "05:36",
+     "jogo": "West Ham x City",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "time Norwich",
+   "alvo": {
+    "h": "05:33",
+    "jogo": "Tottenham x Burnley",
+    "odd": 2.07,
+    "unidades": 2,
+    "desde": 1785990761265
+   },
+   "iniciadoEm": 1785990401666,
+   "tiros": [
+    {
+     "h": "05:30",
+     "jogo": "Chelsea x Norwich",
+     "odd": 2,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1785988613467,
    "super": 1785899401696,
@@ -6518,10 +6556,10 @@
    "2026-08-06": -5.3
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.95",
-   "n": 11,
-   "start": 2
+   "tipo": "time",
+   "chave": "Liverpool",
+   "n": 14,
+   "start": 1
   },
   "_obs": {}
  }
