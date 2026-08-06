@@ -6757,8 +6757,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "21:11",
@@ -6778,13 +6778,27 @@
    ],
    "gatilho": "coluna :14",
    "alvo": {
-    "h": "21:11",
-    "jogo": "República Tcheca x Eslováquia",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1786046858112
+    "h": "21:17",
+    "jogo": "Alemanha x Geórgia",
+    "odd": 2.07,
+    "unidades": 4,
+    "desde": 1786047400912
    },
-   "iniciadoEm": 1786046858112
+   "iniciadoEm": 1786046858112,
+   "tiros": [
+    {
+     "h": "21:11",
+     "jogo": "República Tcheca x Eslováquia",
+     "odd": 2.2,
+     "unidades": 1
+    },
+    {
+     "h": "21:14",
+     "jogo": "Suíça x Ucrânia",
+     "odd": 1.93,
+     "unidades": 2
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786040257418,
@@ -6817,10 +6831,10 @@
    "2026-08-06": -26.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":14",
-   "n": 21,
-   "start": 1
+   "tipo": "time",
+   "chave": "Noruega",
+   "n": 12,
+   "start": 2
   },
   "_obs": {}
  }
