@@ -3513,11 +3513,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1785984475578,
    "euro": 1785985371671,
    "super": 1785986038067
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:51",
+     "jogo": "West Ham x Palace",
+     "odd": 2.45
+    },
+    {
+     "h": "04:54",
+     "jogo": "Liverpool x United",
+     "odd": 2.2
+    },
+    {
+     "h": "04:57",
+     "jogo": "Leicester x Burnley",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time Palace",
+   "alvo": {
+    "h": "04:51",
+    "jogo": "West Ham x Palace",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1785988076677
+   },
+   "iniciadoEm": 1785988076677
+  },
   "cooldown": {
    "copa": 1785962630370,
    "premier": 1785984475578,
@@ -3551,8 +3580,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Avellaneda",
-   "n": 10,
+   "chave": "Palace",
+   "n": 11,
    "start": 1
   },
   "_obs": {
