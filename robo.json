@@ -3630,13 +3630,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -61.7,
-  "ciclos": 1034,
-  "greens": 710,
+  "saldo": -60.9,
+  "ciclos": 1035,
+  "greens": 711,
   "redsCiclo": 112,
   "aborts": 0,
   "descartes": 212,
   "historico": [
+   {
+    "quando": "2026-08-06T15:39:01.512Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "premier · Burnley x Liverpool @1.9 (tiro 2) · gatilho: coluna :33"
+   },
    {
     "quando": "2026-08-06T15:00:51.116Z",
     "resultado": "GREEN",
@@ -6605,51 +6611,14 @@
   "consumidas": {
    "super": 1786027253414,
    "copa": 1786028094917,
-   "euro": 1786028450915
+   "euro": 1786028450915,
+   "premier": 1786030741221
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "16:33",
-     "jogo": "Leicester x Newcastle",
-     "odd": 1.9
-    },
-    {
-     "h": "16:36",
-     "jogo": "Burnley x Liverpool",
-     "odd": 1.9
-    },
-    {
-     "h": "16:39",
-     "jogo": "Watford x Everton",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "coluna :33",
-   "alvo": {
-    "h": "16:36",
-    "jogo": "Burnley x Liverpool",
-    "odd": 1.9,
-    "unidades": 2,
-    "desde": 1786030619410
-   },
-   "iniciadoEm": 1786030370615,
-   "tiros": [
-    {
-     "h": "16:33",
-     "jogo": "Leicester x Newcastle",
-     "odd": 1.9,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786028450915,
    "super": 1786027253414,
-   "premier": 1786026762124,
+   "premier": 1786030741221,
    "copa": 1786028094917
   },
   "dias": {
@@ -6674,7 +6643,7 @@
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
-   "2026-08-06": -14.3
+   "2026-08-06": -13.5
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
