@@ -1,12 +1,18 @@
 {
  "o35": {
   "saldo": -156.3,
-  "ciclos": 199,
+  "ciclos": 200,
   "greens": 66,
   "redsCiclo": 84,
   "aborts": 0,
-  "descartes": 49,
+  "descartes": 50,
   "historico": [
+   {
+    "quando": "2026-08-06T02:13:52.978Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho odd 4.2) — liga REARMADA"
+   },
    {
     "quando": "2026-08-06T01:01:50.574Z",
     "resultado": "RED_CICLO",
@@ -302,6 +308,10 @@
    "euro": {
     "desde": 1785463711484,
     "gatilho": "time Eslovênia"
+   },
+   "super": {
+    "desde": 1785982432977,
+    "gatilho": "odd 4.2"
    }
   }
  },
@@ -6456,7 +6466,7 @@
    "tipo": "time",
    "chave": "Brighton",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
