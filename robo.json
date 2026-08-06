@@ -3649,18 +3649,24 @@
    "tipo": "coluna",
    "chave": ":09",
    "n": 16,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -62.9,
-  "ciclos": 1033,
-  "greens": 709,
+  "saldo": -61.7,
+  "ciclos": 1034,
+  "greens": 710,
   "redsCiclo": 112,
   "aborts": 0,
   "descartes": 212,
   "historico": [
+   {
+    "quando": "2026-08-06T15:00:51.116Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · República Tcheca x Dinamarca @2.2 (tiro 1) · gatilho: coluna :56"
+   },
    {
     "quando": "2026-08-06T14:54:55.118Z",
     "resultado": "GREEN",
@@ -6623,41 +6629,12 @@
   "consumidas": {
    "premier": 1786026762124,
    "super": 1786027253414,
-   "copa": 1786028094917
+   "copa": 1786028094917,
+   "euro": 1786028450915
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:56",
-     "jogo": "República Tcheca x Dinamarca",
-     "odd": 2.2
-    },
-    {
-     "h": "15:59",
-     "jogo": "Países Baixos x Hungria",
-     "odd": 1.95
-    },
-    {
-     "h": "16:02",
-     "jogo": "Sérvia x Albânia",
-     "odd": 2.37
-    }
-   ],
-   "gatilho": "coluna :56",
-   "alvo": {
-    "h": "15:56",
-    "jogo": "República Tcheca x Dinamarca",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1786028097217
-   },
-   "iniciadoEm": 1786028097217
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785994193673,
+   "euro": 1786028450915,
    "super": 1786027253414,
    "premier": 1786026762124,
    "copa": 1786028094917
@@ -6684,7 +6661,7 @@
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
-   "2026-08-06": -15.5
+   "2026-08-06": -14.3
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
