@@ -6700,7 +6700,37 @@
    "euro": 1786040257418,
    "premier": 1786040813914
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:37",
+     "jogo": "Penarol x Medellin",
+     "odd": 2.15
+    },
+    {
+     "h": "19:40",
+     "jogo": "Porto Alegre x La Boca",
+     "odd": 2.25
+    },
+    {
+     "h": "19:43",
+     "jogo": "Santiago x Lima",
+     "odd": 1.8
+    }
+   ],
+   "gatilho": "odd 2.25",
+   "alvo": {
+    "h": "19:37",
+    "jogo": "Penarol x Medellin",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1786040976018
+   },
+   "iniciadoEm": 1786040976018
+  },
   "cooldown": {
    "euro": 1786040257418,
    "super": 1786036254224,
@@ -6732,10 +6762,10 @@
    "2026-08-06": -30.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":33",
-   "n": 19,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.25",
+   "n": 9,
+   "start": 3
   },
   "_obs": {}
  }
