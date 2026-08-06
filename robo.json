@@ -318,13 +318,19 @@
   }
  },
  "o25": {
-  "saldo": -110.5,
-  "ciclos": 1052,
+  "saldo": -117.5,
+  "ciclos": 1053,
   "greens": 668,
-  "redsCiclo": 163,
+  "redsCiclo": 164,
   "aborts": 0,
   "descartes": 221,
   "historico": [
+   {
+    "quando": "2026-08-06T19:40:36.220Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: seq GRGG"
+   },
    {
     "quando": "2026-08-06T19:08:56.820Z",
     "resultado": "GREEN",
@@ -3628,55 +3634,12 @@
   ],
   "consumidas": {
    "euro": 1786043112119,
-   "premier": 1786043336615
+   "premier": 1786043336615,
+   "copa": 1786045236116
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "20:31",
-     "jogo": "Argentina x África do Sul",
-     "odd": 2.35
-    },
-    {
-     "h": "20:34",
-     "jogo": "Cabo Verde x República Tcheca",
-     "odd": 2.3
-    },
-    {
-     "h": "20:37",
-     "jogo": "Espanha x Paraguai",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "seq GRGG",
-   "alvo": {
-    "h": "20:37",
-    "jogo": "Espanha x Paraguai",
-    "odd": 2.3,
-    "unidades": 4,
-    "desde": 1786045058213
-   },
-   "iniciadoEm": 1786044591227,
-   "tiros": [
-    {
-     "h": "20:31",
-     "jogo": "Argentina x África do Sul",
-     "odd": 2.35,
-     "unidades": 1
-    },
-    {
-     "h": "20:34",
-     "jogo": "Cabo Verde x República Tcheca",
-     "odd": 2.3,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1786032241315,
+   "copa": 1786045236116,
    "premier": 1786043336615,
    "euro": 1786043112119,
    "super": 1786026475916
@@ -3704,7 +3667,7 @@
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
-   "2026-08-06": 19.8
+   "2026-08-06": 12.8
   },
   "_gatilhoAtual": {
    "tipo": "seq",
