@@ -3569,13 +3569,19 @@
   }
  },
  "ambas": {
-  "saldo": -46.7,
-  "ciclos": 1020,
+  "saldo": -53.7,
+  "ciclos": 1021,
   "greens": 704,
-  "redsCiclo": 109,
+  "redsCiclo": 110,
   "aborts": 0,
   "descartes": 207,
   "historico": [
+   {
+    "quando": "2026-08-06T03:56:53.671Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: time Geórgia"
+   },
    {
     "quando": "2026-08-06T03:26:39.169Z",
     "resultado": "GREEN",
@@ -6458,55 +6464,12 @@
    }
   ],
   "consumidas": {
-   "premier": 1785986798968
+   "premier": 1785986798968,
+   "euro": 1785988613467
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:47",
-     "jogo": "Áustria x Portugal",
-     "odd": 1.98
-    },
-    {
-     "h": "04:50",
-     "jogo": "Inglaterra x Geórgia",
-     "odd": 2.05
-    },
-    {
-     "h": "04:53",
-     "jogo": "Romênia x Itália",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "time Geórgia",
-   "alvo": {
-    "h": "04:53",
-    "jogo": "Romênia x Itália",
-    "odd": 1.93,
-    "unidades": 4,
-    "desde": 1785988442369
-   },
-   "iniciadoEm": 1785987590273,
-   "tiros": [
-    {
-     "h": "04:47",
-     "jogo": "Áustria x Portugal",
-     "odd": 1.98,
-     "unidades": 1
-    },
-    {
-     "h": "04:50",
-     "jogo": "Inglaterra x Geórgia",
-     "odd": 2.05,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1785956149774,
+   "euro": 1785988613467,
    "super": 1785899401696,
    "premier": 1785986798968,
    "copa": 1785984414566
@@ -6533,13 +6496,13 @@
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
-   "2026-08-06": 0.7
+   "2026-08-06": -6.3
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Geórgia",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
