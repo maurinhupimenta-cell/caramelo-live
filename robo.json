@@ -320,13 +320,19 @@
   }
  },
  "o25": {
-  "saldo": -128.8,
-  "ciclos": 1032,
-  "greens": 651,
+  "saldo": -127.8,
+  "ciclos": 1033,
+  "greens": 652,
   "redsCiclo": 162,
   "aborts": 0,
   "descartes": 219,
   "historico": [
+   {
+    "quando": "2026-08-06T03:13:58.266Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Buenos Aires x Belo Horizonte @1.98 (tiro 1) · gatilho: seq RRGR"
+   },
    {
     "quando": "2026-08-06T03:02:51.868Z",
     "resultado": "GREEN",
@@ -3510,14 +3516,15 @@
   ],
   "consumidas": {
    "premier": 1785984475578,
-   "euro": 1785985371671
+   "euro": 1785985371671,
+   "super": 1785986038067
   },
   "ciclo": null,
   "cooldown": {
    "copa": 1785962630370,
    "premier": 1785984475578,
    "euro": 1785985371671,
-   "super": 1785982074774
+   "super": 1785986038067
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -3542,13 +3549,13 @@
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
-   "2026-08-06": 1.5
+   "2026-08-06": 2.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Suíça",
-   "n": 8,
-   "start": 3
+   "chave": "Avellaneda",
+   "n": 10,
+   "start": 1
   },
   "_obs": {}
  },
