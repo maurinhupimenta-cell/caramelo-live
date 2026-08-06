@@ -3701,13 +3701,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -76,
-  "ciclos": 1048,
-  "greens": 718,
+  "saldo": -75.1,
+  "ciclos": 1049,
+  "greens": 719,
   "redsCiclo": 115,
   "aborts": 0,
   "descartes": 215,
   "historico": [
+   {
+    "quando": "2026-08-06T19:32:42.113Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Wolverhampton x Leicester @1.9 (tiro 1) · gatilho: coluna :33"
+   },
    {
     "quando": "2026-08-06T18:50:36.311Z",
     "resultado": "GREEN",
@@ -6759,43 +6765,14 @@
   ],
   "consumidas": {
    "super": 1786041641722,
-   "copa": 1786042236023
+   "copa": 1786042236023,
+   "premier": 1786044761916
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:30",
-     "jogo": "Wolverhampton x Leicester",
-     "odd": 1.9
-    },
-    {
-     "h": "20:33",
-     "jogo": "Liverpool x Watford",
-     "odd": 2.05
-    },
-    {
-     "h": "20:36",
-     "jogo": "Leicester x Burnley",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "coluna :33",
-   "alvo": {
-    "h": "20:30",
-    "jogo": "Wolverhampton x Leicester",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1786044414520
-   },
-   "iniciadoEm": 1786044414520
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786040257418,
    "super": 1786041641722,
-   "premier": 1786040813914,
+   "premier": 1786044761916,
    "copa": 1786042236023
   },
   "dias": {
@@ -6820,13 +6797,13 @@
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
-   "2026-08-06": -28.6
+   "2026-08-06": -27.7
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.15",
    "n": 17,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
