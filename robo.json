@@ -3493,7 +3493,37 @@
   "consumidas": {
    "super": 1785982074774
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:45",
+     "jogo": "Chelsea x Liverpool",
+     "odd": 2.2
+    },
+    {
+     "h": "03:48",
+     "jogo": "Newcastle x Burnley",
+     "odd": 2.02
+    },
+    {
+     "h": "03:51",
+     "jogo": "Everton x Palace",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time Newcastle",
+   "alvo": {
+    "h": "03:45",
+    "jogo": "Chelsea x Liverpool",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1785984101871
+   },
+   "iniciadoEm": 1785984101871
+  },
   "cooldown": {
    "copa": 1785962630370,
    "premier": 1785964730369,
@@ -3525,8 +3555,8 @@
    "2026-08-05": 6.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRR",
+   "tipo": "time",
+   "chave": "Newcastle",
    "n": 8,
    "start": 1
   },
