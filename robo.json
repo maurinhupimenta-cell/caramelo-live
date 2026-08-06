@@ -3525,10 +3525,39 @@
    }
   ],
   "consumidas": {
-   "super": 1785986038067,
    "premier": 1785988551872
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:13",
+     "jogo": "Iraque x França",
+     "odd": 2.4
+    },
+    {
+     "h": "05:16",
+     "jogo": "RD Congo x Uzbequistão",
+     "odd": 2.2
+    },
+    {
+     "h": "05:19",
+     "jogo": "Argélia x Noruega",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "placar empate 1-1",
+   "alvo": {
+    "h": "05:13",
+    "jogo": "Iraque x França",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1785989575668
+   },
+   "iniciadoEm": 1785989575668
+  },
   "cooldown": {
    "copa": 1785962630370,
    "premier": 1785988551872,
@@ -3561,17 +3590,12 @@
    "2026-08-06": 4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Palace",
-   "n": 11,
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 10,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1785989573576,
-    "gatilho": "placar empate 1-1"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -53.7,
@@ -6472,7 +6496,37 @@
    "premier": 1785986798968,
    "euro": 1785988613467
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:13",
+     "jogo": "Iraque x França",
+     "odd": 2.05
+    },
+    {
+     "h": "05:16",
+     "jogo": "RD Congo x Uzbequistão",
+     "odd": 1.93
+    },
+    {
+     "h": "05:19",
+     "jogo": "Argélia x Noruega",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "placar empate 1-1",
+   "alvo": {
+    "h": "05:13",
+    "jogo": "Iraque x França",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1785989573666
+   },
+   "iniciadoEm": 1785989573666
+  },
   "cooldown": {
    "euro": 1785988613467,
    "super": 1785899401696,
@@ -6504,9 +6558,9 @@
    "2026-08-06": -6.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Geórgia",
-   "n": 9,
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
