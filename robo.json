@@ -3607,18 +3607,24 @@
    "tipo": "time",
    "chave": "Eslovênia",
    "n": 8,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -52.7,
-  "ciclos": 1022,
+  "saldo": -59.7,
+  "ciclos": 1023,
   "greens": 705,
-  "redsCiclo": 110,
+  "redsCiclo": 111,
   "aborts": 0,
   "descartes": 207,
   "historico": [
+   {
+    "quando": "2026-08-06T04:41:04.865Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: time Norwich"
+   },
    {
     "quando": "2026-08-06T04:15:55.471Z",
     "resultado": "GREEN",
@@ -6514,57 +6520,14 @@
   ],
   "consumidas": {
    "euro": 1785988613467,
-   "copa": 1785989755069
+   "copa": 1785989755069,
+   "premier": 1785991264673
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "05:30",
-     "jogo": "Chelsea x Norwich",
-     "odd": 2
-    },
-    {
-     "h": "05:33",
-     "jogo": "Tottenham x Burnley",
-     "odd": 2.07
-    },
-    {
-     "h": "05:36",
-     "jogo": "West Ham x City",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "time Norwich",
-   "alvo": {
-    "h": "05:36",
-    "jogo": "West Ham x City",
-    "odd": 2.02,
-    "unidades": 4,
-    "desde": 1785990949071
-   },
-   "iniciadoEm": 1785990401666,
-   "tiros": [
-    {
-     "h": "05:30",
-     "jogo": "Chelsea x Norwich",
-     "odd": 2,
-     "unidades": 1
-    },
-    {
-     "h": "05:33",
-     "jogo": "Tottenham x Burnley",
-     "odd": 2.07,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785988613467,
    "super": 1785899401696,
-   "premier": 1785986798968,
+   "premier": 1785991264673,
    "copa": 1785989755069
   },
   "dias": {
@@ -6589,12 +6552,12 @@
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
-   "2026-08-06": -5.3
+   "2026-08-06": -12.3
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Liverpool",
-   "n": 14,
+   "chave": "Leeds",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
