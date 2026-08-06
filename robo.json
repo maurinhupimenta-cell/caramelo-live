@@ -275,8 +275,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "03:22",
@@ -296,13 +296,21 @@
    ],
    "gatilho": "odd 4.2",
    "alvo": {
-    "h": "03:22",
-    "jogo": "Porto Alegre x Medellin",
-    "odd": 6,
-    "unidades": 1,
-    "desde": 1785982435367
+    "h": "03:25",
+    "jogo": "Asuncion x Montevideo",
+    "odd": 4.2,
+    "unidades": 2,
+    "desde": 1785983100074
    },
-   "iniciadoEm": 1785982435367
+   "iniciadoEm": 1785982435367,
+   "tiros": [
+    {
+     "h": "03:22",
+     "jogo": "Porto Alegre x Medellin",
+     "odd": 6,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785978110378,
@@ -331,8 +339,8 @@
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "4.2",
-   "n": 8,
-   "start": 3
+   "n": 9,
+   "start": 1
   },
   "_obs": {
    "euro": {
