@@ -3640,13 +3640,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -65.5,
-  "ciclos": 1029,
-  "greens": 706,
+  "saldo": -64.6,
+  "ciclos": 1030,
+  "greens": 707,
   "redsCiclo": 112,
   "aborts": 0,
   "descartes": 211,
   "historico": [
+   {
+    "quando": "2026-08-06T14:32:42.318Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Wolverhampton x Chelsea @1.85 (tiro 1) · gatilho: odd 2.1"
+   },
    {
     "quando": "2026-08-06T14:23:29.811Z",
     "resultado": "GREEN_OBS",
@@ -6582,42 +6588,14 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:30",
-     "jogo": "Wolverhampton x Chelsea",
-     "odd": 1.85
-    },
-    {
-     "h": "15:33",
-     "jogo": "Southampton x Aston",
-     "odd": 2.1
-    },
-    {
-     "h": "15:36",
-     "jogo": "Islington x West Ham",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "odd 2.1",
-   "alvo": {
-    "h": "15:30",
-    "jogo": "Wolverhampton x Chelsea",
-    "odd": 1.85,
-    "unidades": 1,
-    "desde": 1786026202609
-   },
-   "iniciadoEm": 1786026202609
+  "consumidas": {
+   "premier": 1786026762124
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1785994193673,
    "super": 1785899401696,
-   "premier": 1785991264673,
+   "premier": 1786026762124,
    "copa": 1785994671474
   },
   "dias": {
@@ -6642,12 +6620,12 @@
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
-   "2026-08-06": -18.1
+   "2026-08-06": -17.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.1",
-   "n": 18,
+   "chave": "2.15",
+   "n": 13,
    "start": 1
   },
   "_obs": {
