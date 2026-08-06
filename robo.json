@@ -318,13 +318,19 @@
   }
  },
  "o25": {
-  "saldo": -116.4,
-  "ciclos": 1054,
-  "greens": 669,
+  "saldo": -115,
+  "ciclos": 1055,
+  "greens": 670,
   "redsCiclo": 164,
   "aborts": 0,
   "descartes": 221,
   "historico": [
+   {
+    "quando": "2026-08-06T20:40:37.111Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "euro · Itália x Geórgia @2.4 (tiro 1) · gatilho: odd 2.05"
+   },
    {
     "quando": "2026-08-06T20:14:50.714Z",
     "resultado": "GREEN",
@@ -3639,44 +3645,14 @@
    }
   ],
   "consumidas": {
-   "copa": 1786045236116,
-   "premier": 1786047290519
+   "premier": 1786047290519,
+   "euro": 1786048836913
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:35",
-     "jogo": "Itália x Geórgia",
-     "odd": 2.4
-    },
-    {
-     "h": "21:38",
-     "jogo": "França x Romênia",
-     "odd": 2.05
-    },
-    {
-     "h": "21:41",
-     "jogo": "Eslovênia x Geórgia",
-     "odd": 2.75
-    }
-   ],
-   "gatilho": "odd 2.05",
-   "alvo": {
-    "h": "21:35",
-    "jogo": "Itália x Geórgia",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1786048012609
-   },
-   "iniciadoEm": 1786048012609
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786045236116,
    "premier": 1786047290519,
-   "euro": 1786043112119,
+   "euro": 1786048836913,
    "super": 1786026475916
   },
   "dias": {
@@ -3702,7 +3678,7 @@
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
-   "2026-08-06": 13.9
+   "2026-08-06": 15.3
   },
   "_gatilhoAtual": {
    "tipo": "odd",
