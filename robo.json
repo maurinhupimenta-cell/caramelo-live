@@ -3648,13 +3648,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -64.6,
-  "ciclos": 1031,
-  "greens": 707,
+  "saldo": -63.6,
+  "ciclos": 1032,
+  "greens": 708,
   "redsCiclo": 112,
   "aborts": 0,
   "descartes": 212,
   "historico": [
+   {
+    "quando": "2026-08-06T14:40:53.613Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Itaquera x La Boca @2.05 (tiro 1) · gatilho: coluna :37"
+   },
    {
     "quando": "2026-08-06T14:39:52.216Z",
     "resultado": "GREEN_OBS",
@@ -6603,42 +6609,43 @@
    }
   ],
   "consumidas": {
-   "premier": 1786026762124
+   "premier": 1786026762124,
+   "super": 1786027253414
   },
   "ciclo": {
-   "liga": "super",
+   "liga": "copa",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "15:34",
-     "jogo": "Itaquera x La Boca",
-     "odd": 2.05
+     "h": "15:49",
+     "jogo": "Iraque x Jordânia",
+     "odd": 2.07
     },
     {
-     "h": "15:37",
-     "jogo": "Lima x Avellaneda",
-     "odd": 1.93
+     "h": "15:52",
+     "jogo": "Arábia Saudita x Nova Zelândia",
+     "odd": 1.87
     },
     {
-     "h": "15:40",
-     "jogo": "Bogota x Buenos Aires",
-     "odd": 2
+     "h": "15:55",
+     "jogo": "Equador x Bósnia e Herzegovina",
+     "odd": 1.9
     }
    ],
-   "gatilho": "coluna :37",
+   "gatilho": "time Nova Zelândia",
    "alvo": {
-    "h": "15:34",
-    "jogo": "Itaquera x La Boca",
-    "odd": 2.05,
+    "h": "15:49",
+    "jogo": "Iraque x Jordânia",
+    "odd": 2.07,
     "unidades": 1,
-    "desde": 1786026763713
+    "desde": 1786027256114
    },
-   "iniciadoEm": 1786026763713
+   "iniciadoEm": 1786027256114
   },
   "cooldown": {
    "euro": 1785994193673,
-   "super": 1785899401696,
+   "super": 1786027253414,
    "premier": 1786026762124,
    "copa": 1785994671474
   },
@@ -6664,19 +6671,14 @@
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
-   "2026-08-06": -17.2
+   "2026-08-06": -16.2
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":37",
-   "n": 15,
-   "start": 1
+   "tipo": "time",
+   "chave": "Nova Zelândia",
+   "n": 13,
+   "start": 3
   },
-  "_obs": {
-   "copa": {
-    "desde": 1786026413116,
-    "gatilho": "coluna :28"
-   }
-  }
+  "_obs": {}
  }
 }
