@@ -3569,7 +3569,37 @@
   "consumidas": {
    "super": 1786026475916
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:32",
+     "jogo": "Sérvia x Croácia",
+     "odd": 2.4
+    },
+    {
+     "h": "15:35",
+     "jogo": "Ucrânia x Espanha",
+     "odd": 2.15
+    },
+    {
+     "h": "15:38",
+     "jogo": "Dinamarca x Romênia",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "seq GRGRR",
+   "alvo": {
+    "h": "15:32",
+    "jogo": "Sérvia x Croácia",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1786026594014
+   },
+   "iniciadoEm": 1786026594014
+  },
   "cooldown": {
    "copa": 1785993895566,
    "premier": 1785992561770,
@@ -3603,8 +3633,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRGRR",
-   "n": 22,
+   "chave": "GRGRR",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
@@ -6618,7 +6648,7 @@
    "tipo": "odd",
    "chave": "2.1",
    "n": 18,
-   "start": 2
+   "start": 1
   },
   "_obs": {
    "copa": {
