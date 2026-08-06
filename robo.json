@@ -6834,7 +6834,37 @@
    "copa": 1786054957116,
    "premier": 1786055929710
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:40",
+     "jogo": "Avellaneda x Sao Paulo",
+     "odd": 1.87
+    },
+    {
+     "h": "23:43",
+     "jogo": "Porto Alegre x Belo Horizonte",
+     "odd": 2.05
+    },
+    {
+     "h": "23:46",
+     "jogo": "La Plata x Quito",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "coluna :43",
+   "alvo": {
+    "h": "23:40",
+    "jogo": "Avellaneda x Sao Paulo",
+    "odd": 1.87,
+    "unidades": 1,
+    "desde": 1786055942210
+   },
+   "iniciadoEm": 1786055942210
+  },
   "cooldown": {
    "euro": 1786054628823,
    "super": 1786046855517,
