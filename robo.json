@@ -3473,8 +3473,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "03:01",
@@ -3494,13 +3494,21 @@
    ],
    "gatilho": "seq RRGR",
    "alvo": {
-    "h": "03:01",
-    "jogo": "Avellaneda x Sao Paulo",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1785981536769
+    "h": "03:04",
+    "jogo": "Rio de Janeiro x Medellin",
+    "odd": 2.35,
+    "unidades": 2,
+    "desde": 1785981894371
    },
-   "iniciadoEm": 1785981536769
+   "iniciadoEm": 1785981536769,
+   "tiros": [
+    {
+     "h": "03:01",
+     "jogo": "Avellaneda x Sao Paulo",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785962630370,
@@ -3534,7 +3542,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRGR",
+   "chave": "RGRR",
    "n": 8,
    "start": 1
   },
