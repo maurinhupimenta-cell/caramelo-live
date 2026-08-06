@@ -3707,13 +3707,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -77.3,
-  "ciclos": 1058,
-  "greens": 724,
+  "saldo": -76.2,
+  "ciclos": 1059,
+  "greens": 725,
   "redsCiclo": 116,
   "aborts": 0,
   "descartes": 218,
   "historico": [
+   {
+    "quando": "2026-08-06T22:38:49.910Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Tottenham x Everton @2.02 (tiro 3) · gatilho: coluna :33"
+   },
    {
     "quando": "2026-08-06T22:22:37.312Z",
     "resultado": "GREEN",
@@ -6825,57 +6831,14 @@
   ],
   "consumidas": {
    "euro": 1786054628823,
-   "copa": 1786054957116
+   "copa": 1786054957116,
+   "premier": 1786055929710
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "23:30",
-     "jogo": "Everton x Leeds",
-     "odd": 2.07
-    },
-    {
-     "h": "23:33",
-     "jogo": "City x West Ham",
-     "odd": 2.1
-    },
-    {
-     "h": "23:36",
-     "jogo": "Tottenham x Everton",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "coluna :33",
-   "alvo": {
-    "h": "23:36",
-    "jogo": "Tottenham x Everton",
-    "odd": 2.02,
-    "unidades": 4,
-    "desde": 1786055708912
-   },
-   "iniciadoEm": 1786054959816,
-   "tiros": [
-    {
-     "h": "23:30",
-     "jogo": "Everton x Leeds",
-     "odd": 2.07,
-     "unidades": 1
-    },
-    {
-     "h": "23:33",
-     "jogo": "City x West Ham",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786054628823,
    "super": 1786046855517,
-   "premier": 1786048724722,
+   "premier": 1786055929710,
    "copa": 1786054957116
   },
   "dias": {
@@ -6900,13 +6863,13 @@
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
-   "2026-08-06": -29.9
+   "2026-08-06": -28.8
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":43",
    "n": 23,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
