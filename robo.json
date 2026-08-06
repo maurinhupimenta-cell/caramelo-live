@@ -3713,13 +3713,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -80,
-  "ciclos": 1052,
-  "greens": 721,
+  "saldo": -79.3,
+  "ciclos": 1053,
+  "greens": 722,
   "redsCiclo": 116,
   "aborts": 0,
   "descartes": 215,
   "historico": [
+   {
+    "quando": "2026-08-06T20:38:45.216Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "premier · City x United @1.86 (tiro 2) · gatilho: coluna :33"
+   },
    {
     "quando": "2026-08-06T20:25:50.815Z",
     "resultado": "GREEN",
@@ -6796,51 +6802,14 @@
   "consumidas": {
    "super": 1786046855517,
    "euro": 1786047688513,
-   "copa": 1786047950616
+   "copa": 1786047950616,
+   "premier": 1786048724722
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "21:33",
-     "jogo": "Tottenham x Burnley",
-     "odd": 2.075
-    },
-    {
-     "h": "21:36",
-     "jogo": "City x United",
-     "odd": 1.86
-    },
-    {
-     "h": "21:39",
-     "jogo": "Islington x Tottenham",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "coluna :33",
-   "alvo": {
-    "h": "21:36",
-    "jogo": "City x United",
-    "odd": 1.86,
-    "unidades": 2,
-    "desde": 1786048534310
-   },
-   "iniciadoEm": 1786048476909,
-   "tiros": [
-    {
-     "h": "21:33",
-     "jogo": "Tottenham x Burnley",
-     "odd": 2.075,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786047688513,
    "super": 1786046855517,
-   "premier": 1786044761916,
+   "premier": 1786048724722,
    "copa": 1786047950616
   },
   "dias": {
@@ -6865,7 +6834,7 @@
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
-   "2026-08-06": -32.6
+   "2026-08-06": -31.9
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
