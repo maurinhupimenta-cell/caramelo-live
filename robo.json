@@ -3707,13 +3707,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -76.2,
-  "ciclos": 1059,
-  "greens": 725,
+  "saldo": -75.1,
+  "ciclos": 1060,
+  "greens": 726,
   "redsCiclo": 116,
   "aborts": 0,
   "descartes": 218,
   "historico": [
+   {
+    "quando": "2026-08-06T22:46:13.110Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Porto Alegre x Belo Horizonte @2.05 (tiro 2) · gatilho: coluna :43"
+   },
    {
     "quando": "2026-08-06T22:38:49.910Z",
     "resultado": "GREEN",
@@ -6832,50 +6838,13 @@
   "consumidas": {
    "euro": 1786054628823,
    "copa": 1786054957116,
-   "premier": 1786055929710
+   "premier": 1786055929710,
+   "super": 1786056372912
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "23:40",
-     "jogo": "Avellaneda x Sao Paulo",
-     "odd": 1.87
-    },
-    {
-     "h": "23:43",
-     "jogo": "Porto Alegre x Belo Horizonte",
-     "odd": 2.05
-    },
-    {
-     "h": "23:46",
-     "jogo": "La Plata x Quito",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "coluna :43",
-   "alvo": {
-    "h": "23:43",
-    "jogo": "Porto Alegre x Belo Horizonte",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1786056143915
-   },
-   "iniciadoEm": 1786055942210,
-   "tiros": [
-    {
-     "h": "23:40",
-     "jogo": "Avellaneda x Sao Paulo",
-     "odd": 1.87,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786054628823,
-   "super": 1786046855517,
+   "super": 1786056372912,
    "premier": 1786055929710,
    "copa": 1786054957116
   },
@@ -6901,7 +6870,7 @@
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
-   "2026-08-06": -28.8
+   "2026-08-06": -27.7
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
