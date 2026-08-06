@@ -3677,13 +3677,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -75.1,
-  "ciclos": 1049,
-  "greens": 719,
+  "saldo": -73.9,
+  "ciclos": 1050,
+  "greens": 720,
   "redsCiclo": 115,
   "aborts": 0,
   "descartes": 215,
   "historico": [
+   {
+    "quando": "2026-08-06T20:07:35.809Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Medellin x Avellaneda @2.05 (tiro 3) · gatilho: odd 1.86"
+   },
    {
     "quando": "2026-08-06T19:32:42.113Z",
     "resultado": "GREEN",
@@ -6740,56 +6746,13 @@
    }
   ],
   "consumidas": {
-   "premier": 1786044761916
+   "premier": 1786044761916,
+   "super": 1786046855517
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "20:58",
-     "jogo": "Avellaneda x Quito",
-     "odd": 2.02
-    },
-    {
-     "h": "21:01",
-     "jogo": "Lima x Belo Horizonte",
-     "odd": 1.86
-    },
-    {
-     "h": "21:04",
-     "jogo": "Medellin x Avellaneda",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "odd 1.86",
-   "alvo": {
-    "h": "21:04",
-    "jogo": "Medellin x Avellaneda",
-    "odd": 2.05,
-    "unidades": 4,
-    "desde": 1786046679117
-   },
-   "iniciadoEm": 1786046022017,
-   "tiros": [
-    {
-     "h": "20:58",
-     "jogo": "Avellaneda x Quito",
-     "odd": 2.02,
-     "unidades": 1
-    },
-    {
-     "h": "21:01",
-     "jogo": "Lima x Belo Horizonte",
-     "odd": 1.86,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786040257418,
-   "super": 1786041641722,
+   "super": 1786046855517,
    "premier": 1786044761916,
    "copa": 1786042236023
   },
@@ -6815,7 +6778,7 @@
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
-   "2026-08-06": -27.7
+   "2026-08-06": -26.5
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
