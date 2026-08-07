@@ -3844,7 +3844,45 @@
    "copa": 1786122062390,
    "euro": 1786122300591
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "18:06",
+     "jogo": "Chelsea x Islington",
+     "odd": 2.2
+    },
+    {
+     "h": "18:09",
+     "jogo": "Newcastle x West Ham",
+     "odd": 2.35
+    },
+    {
+     "h": "18:12",
+     "jogo": "Tottenham x Chelsea",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "odd 2.35",
+   "alvo": {
+    "h": "18:09",
+    "jogo": "Newcastle x West Ham",
+    "odd": 2.35,
+    "unidades": 2,
+    "desde": 1786122527877
+   },
+   "iniciadoEm": 1786122302782,
+   "tiros": [
+    {
+     "h": "18:06",
+     "jogo": "Chelsea x Islington",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1786122062390,
    "premier": 1786118584186,
