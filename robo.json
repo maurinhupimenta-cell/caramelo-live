@@ -325,13 +325,19 @@
   }
  },
  "o25": {
-  "saldo": -130.7,
-  "ciclos": 1072,
+  "saldo": -137.7,
+  "ciclos": 1073,
   "greens": 677,
-  "redsCiclo": 168,
+  "redsCiclo": 169,
   "aborts": 0,
   "descartes": 227,
   "historico": [
+   {
+    "quando": "2026-08-07T14:40:58.586Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: seq RRGGR"
+   },
    {
     "quando": "2026-08-07T13:37:58.183Z",
     "resultado": "GREEN",
@@ -3753,50 +3759,14 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "15:32",
-     "jogo": "República Tcheca x Bélgica",
-     "odd": 2.4
-    },
-    {
-     "h": "15:35",
-     "jogo": "Suíça x Polônia",
-     "odd": 2.35
-    },
-    {
-     "h": "15:38",
-     "jogo": "Países Baixos x Turquia",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "seq RRGGR",
-   "alvo": {
-    "h": "15:35",
-    "jogo": "Suíça x Polônia",
-    "odd": 2.35,
-    "unidades": 2,
-    "desde": 1786113600279
-   },
-   "iniciadoEm": 1786113058179,
-   "tiros": [
-    {
-     "h": "15:32",
-     "jogo": "República Tcheca x Bélgica",
-     "odd": 2.4,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "euro": 1786113658478
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786109877986,
    "premier": 1786077188215,
-   "euro": 1786109457080,
+   "euro": 1786113658478,
    "super": 1786071506316
   },
   "dias": {
@@ -3823,7 +3793,7 @@
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
-   "2026-08-07": 4
+   "2026-08-07": -3
   },
   "_gatilhoAtual": {
    "tipo": "odd",
