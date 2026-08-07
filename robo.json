@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -132.5,
-  "ciclos": 205,
-  "greens": 69,
+  "saldo": -119.5,
+  "ciclos": 206,
+  "greens": 70,
   "redsCiclo": 85,
   "aborts": 0,
   "descartes": 51,
   "historico": [
+   {
+    "quando": "2026-08-07T20:57:31.286Z",
+    "resultado": "GREEN",
+    "unidades": 13,
+    "detalhe": "premier · Tottenham x Palace @5 (tiro 3) · gatilho: odd 5.25"
+   },
    {
     "quando": "2026-08-07T18:44:47.282Z",
     "resultado": "GREEN",
@@ -302,55 +308,13 @@
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "21:48",
-     "jogo": "Newcastle x Brentford",
-     "odd": 4
-    },
-    {
-     "h": "21:51",
-     "jogo": "Islington x Leeds",
-     "odd": 5.25
-    },
-    {
-     "h": "21:54",
-     "jogo": "Tottenham x Palace",
-     "odd": 5
-    }
-   ],
-   "gatilho": "odd 5.25",
-   "alvo": {
-    "h": "21:54",
-    "jogo": "Tottenham x Palace",
-    "odd": 5,
-    "unidades": 4,
-    "desde": 1786136023984
-   },
-   "iniciadoEm": 1786135151083,
-   "tiros": [
-    {
-     "h": "21:48",
-     "jogo": "Newcastle x Brentford",
-     "odd": 4,
-     "unidades": 1
-    },
-    {
-     "h": "21:51",
-     "jogo": "Islington x Leeds",
-     "odd": 5.25,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1786136251177
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785978110378,
-   "premier": 1786128287086,
+   "premier": 1786136251177,
    "euro": 1785464913993,
    "super": 1785983452169
   },
@@ -371,7 +335,7 @@
    "2026-08-02": -7,
    "2026-08-04": 19,
    "2026-08-05": 20.8,
-   "2026-08-07": 14
+   "2026-08-07": 27
   },
   "_gatilhoAtual": {
    "tipo": "odd",
