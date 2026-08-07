@@ -339,13 +339,19 @@
   }
  },
  "o25": {
-  "saldo": -136.6,
-  "ciclos": 1083,
-  "greens": 683,
+  "saldo": -135.2,
+  "ciclos": 1084,
+  "greens": 684,
   "redsCiclo": 170,
   "aborts": 0,
   "descartes": 230,
   "historico": [
+   {
+    "quando": "2026-08-07T17:05:01.177Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "euro · Eslovênia x Inglaterra @2.4 (tiro 1) · gatilho: seq RRRGG"
+   },
    {
     "quando": "2026-08-07T17:01:02.586Z",
     "resultado": "GREEN",
@@ -3835,43 +3841,14 @@
   ],
   "consumidas": {
    "super": 1786119481378,
-   "copa": 1786122062390
+   "copa": 1786122062390,
+   "euro": 1786122300591
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:02",
-     "jogo": "Eslovênia x Inglaterra",
-     "odd": 2.4
-    },
-    {
-     "h": "18:05",
-     "jogo": "Romênia x Áustria",
-     "odd": 2.2
-    },
-    {
-     "h": "18:08",
-     "jogo": "Suíça x Eslovênia",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "seq RRRGG",
-   "alvo": {
-    "h": "18:02",
-    "jogo": "Eslovênia x Inglaterra",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1786122064686
-   },
-   "iniciadoEm": 1786122064686
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786122062390,
    "premier": 1786118584186,
-   "euro": 1786117977883,
+   "euro": 1786122300591,
    "super": 1786119481378
   },
   "dias": {
@@ -3898,11 +3875,11 @@
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
-   "2026-08-07": -1.9
+   "2026-08-07": -0.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGGR",
+   "tipo": "odd",
+   "chave": "2.35",
    "n": 13,
    "start": 1
   },
