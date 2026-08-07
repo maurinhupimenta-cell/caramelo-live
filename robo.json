@@ -3950,8 +3950,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "23:27",
@@ -3971,13 +3971,21 @@
    ],
    "gatilho": "odd 2.35",
    "alvo": {
-    "h": "23:27",
-    "jogo": "Chelsea x Newcastle",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1786141257688
+    "h": "23:30",
+    "jogo": "Tottenham x Everton",
+    "odd": 2.35,
+    "unidades": 2,
+    "desde": 1786141807581
    },
-   "iniciadoEm": 1786141257688
+   "iniciadoEm": 1786141257688,
+   "tiros": [
+    {
+     "h": "23:27",
+     "jogo": "Chelsea x Newcastle",
+     "odd": 2.07,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786136696786,
@@ -7422,7 +7430,7 @@
    "tipo": "odd",
    "chave": "1.83",
    "n": 16,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
