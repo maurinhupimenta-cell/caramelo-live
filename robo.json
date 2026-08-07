@@ -303,7 +303,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:48",
+     "jogo": "Newcastle x Brentford",
+     "odd": 4
+    },
+    {
+     "h": "21:51",
+     "jogo": "Islington x Leeds",
+     "odd": 5.25
+    },
+    {
+     "h": "21:54",
+     "jogo": "Tottenham x Palace",
+     "odd": 5
+    }
+   ],
+   "gatilho": "odd 5.25",
+   "alvo": {
+    "h": "21:48",
+    "jogo": "Newcastle x Brentford",
+    "odd": 4,
+    "unidades": 1,
+    "desde": 1786135151083
+   },
+   "iniciadoEm": 1786135151083
+  },
   "cooldown": {
    "copa": 1785978110378,
    "premier": 1786128287086,
@@ -332,8 +362,8 @@
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "5.25",
-   "n": 16,
-   "start": 1
+   "n": 18,
+   "start": 3
   },
   "_obs": {
    "euro": {
@@ -7313,6 +7343,11 @@
    "n": 18,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1786135078482,
+    "gatilho": "odd 1.83"
+   }
+  }
  }
 }
