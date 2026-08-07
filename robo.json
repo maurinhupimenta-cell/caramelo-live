@@ -337,13 +337,19 @@
   }
  },
  "o25": {
-  "saldo": -140.5,
-  "ciclos": 1087,
-  "greens": 685,
+  "saldo": -138.5,
+  "ciclos": 1088,
+  "greens": 686,
   "redsCiclo": 171,
   "aborts": 0,
   "descartes": 231,
   "historico": [
+   {
+    "quando": "2026-08-07T18:19:49.682Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "euro · Polônia x Espanha @2.25 (tiro 3) · gatilho: odd 2.55"
+   },
    {
     "quando": "2026-08-07T18:16:57.081Z",
     "resultado": "DESCARTADO",
@@ -3856,57 +3862,14 @@
    }
   ],
   "consumidas": {
-   "super": 1786124818785
+   "super": 1786124818785,
+   "euro": 1786126789487
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "19:11",
-     "jogo": "Suíça x Inglaterra",
-     "odd": 2.02
-    },
-    {
-     "h": "19:14",
-     "jogo": "República Tcheca x Eslováquia",
-     "odd": 2.55
-    },
-    {
-     "h": "19:17",
-     "jogo": "Polônia x Espanha",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "odd 2.55",
-   "alvo": {
-    "h": "19:17",
-    "jogo": "Polônia x Espanha",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1786126739084
-   },
-   "iniciadoEm": 1786126619086,
-   "tiros": [
-    {
-     "h": "19:11",
-     "jogo": "Suíça x Inglaterra",
-     "odd": 2.02,
-     "unidades": 1
-    },
-    {
-     "h": "19:14",
-     "jogo": "República Tcheca x Eslováquia",
-     "odd": 2.55,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786122062390,
    "premier": 1786122712082,
-   "euro": 1786122300591,
+   "euro": 1786126789487,
    "super": 1786124818785
   },
   "dias": {
@@ -3933,7 +3896,7 @@
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
-   "2026-08-07": -5.8
+   "2026-08-07": -3.8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
