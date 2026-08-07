@@ -363,7 +363,7 @@
    "tipo": "odd",
    "chave": "5.25",
    "n": 18,
-   "start": 3
+   "start": 1
   },
   "_obs": {
    "euro": {
@@ -3999,13 +3999,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -99.1,
-  "ciclos": 1090,
-  "greens": 745,
+  "saldo": -98.2,
+  "ciclos": 1091,
+  "greens": 746,
   "redsCiclo": 122,
   "aborts": 0,
   "descartes": 223,
   "historico": [
+   {
+    "quando": "2026-08-07T20:49:51.078Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Quito x Buenos Aires @1.87 (tiro 1) · gatilho: odd 1.83"
+   },
    {
     "quando": "2026-08-07T20:40:55.582Z",
     "resultado": "GREEN_OBS",
@@ -7309,12 +7315,13 @@
   ],
   "consumidas": {
    "premier": 1786132625684,
-   "copa": 1786134478589
+   "copa": 1786134478589,
+   "super": 1786135790877
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1786129903384,
-   "super": 1786125182579,
+   "super": 1786135790877,
    "premier": 1786132625684,
    "copa": 1786134478589
   },
@@ -7341,19 +7348,14 @@
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
-   "2026-08-07": -17.9
+   "2026-08-07": -17
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Áustria",
-   "n": 18,
+   "tipo": "odd",
+   "chave": "1.83",
+   "n": 13,
    "start": 1
   },
-  "_obs": {
-   "super": {
-    "desde": 1786135078482,
-    "gatilho": "odd 1.83"
-   }
-  }
+  "_obs": {}
  }
 }
