@@ -309,7 +309,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:42",
+     "jogo": "Brentford x Southampton",
+     "odd": 4.75
+    },
+    {
+     "h": "23:45",
+     "jogo": "Palace x Leeds",
+     "odd": 5.25
+    },
+    {
+     "h": "23:48",
+     "jogo": "Southampton x Wolverhampton",
+     "odd": 4.2
+    }
+   ],
+   "gatilho": "odd 5.25",
+   "alvo": {
+    "h": "23:42",
+    "jogo": "Brentford x Southampton",
+    "odd": 4.75,
+    "unidades": 1,
+    "desde": 1786141991285
+   },
+   "iniciadoEm": 1786141991285
+  },
   "cooldown": {
    "copa": 1785978110378,
    "premier": 1786136251177,
@@ -338,8 +368,8 @@
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "5.25",
-   "n": 18,
-   "start": 1
+   "n": 19,
+   "start": 3
   },
   "_obs": {
    "euro": {
@@ -349,13 +379,19 @@
   }
  },
  "o25": {
-  "saldo": -133.5,
-  "ciclos": 1100,
-  "greens": 695,
+  "saldo": -131.8,
+  "ciclos": 1101,
+  "greens": 696,
   "redsCiclo": 172,
   "aborts": 0,
   "descartes": 233,
   "historico": [
+   {
+    "quando": "2026-08-07T22:33:11.779Z",
+    "resultado": "GREEN",
+    "unidades": 1.7,
+    "detalhe": "premier · Tottenham x Everton @2.35 (tiro 2) · gatilho: odd 2.35"
+   },
    {
     "quando": "2026-08-07T21:44:56.284Z",
     "resultado": "GREEN",
@@ -3946,50 +3982,13 @@
    }
   ],
   "consumidas": {
-   "euro": 1786139096086
+   "euro": 1786139096086,
+   "premier": 1786141991486
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "23:27",
-     "jogo": "Chelsea x Newcastle",
-     "odd": 2.07
-    },
-    {
-     "h": "23:30",
-     "jogo": "Tottenham x Everton",
-     "odd": 2.35
-    },
-    {
-     "h": "23:33",
-     "jogo": "Palace x United",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "odd 2.35",
-   "alvo": {
-    "h": "23:30",
-    "jogo": "Tottenham x Everton",
-    "odd": 2.35,
-    "unidades": 2,
-    "desde": 1786141807581
-   },
-   "iniciadoEm": 1786141257688,
-   "tiros": [
-    {
-     "h": "23:27",
-     "jogo": "Chelsea x Newcastle",
-     "odd": 2.07,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786136696786,
-   "premier": 1786137646277,
+   "premier": 1786141991486,
    "euro": 1786139096086,
    "super": 1786133098587
   },
@@ -4017,13 +4016,13 @@
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
-   "2026-08-07": 1.2
+   "2026-08-07": 2.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.35",
-   "n": 17,
-   "start": 2
+   "tipo": "seq",
+   "chave": "GGGRG",
+   "n": 9,
+   "start": 1
   },
   "_obs": {}
  },
