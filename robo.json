@@ -343,13 +343,25 @@
   }
  },
  "o25": {
-  "saldo": -134.2,
-  "ciclos": 1092,
-  "greens": 689,
+  "saldo": -132.9,
+  "ciclos": 1094,
+  "greens": 690,
   "redsCiclo": 171,
   "aborts": 0,
-  "descartes": 232,
+  "descartes": 233,
   "historico": [
+   {
+    "quando": "2026-08-07T19:52:59.182Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "copa · Alemanha x Curação @2.07 (tiro 3) · gatilho: time Países Baixos"
+   },
+   {
+    "quando": "2026-08-07T19:51:00.182Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho odd 2.07) — liga REARMADA"
+   },
    {
     "quando": "2026-08-07T19:25:02.483Z",
     "resultado": "GREEN",
@@ -3892,55 +3904,12 @@
    }
   ],
   "consumidas": {
-   "euro": 1786130702377
+   "euro": 1786130702377,
+   "copa": 1786132378988
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "20:43",
-     "jogo": "Equador x África do Sul",
-     "odd": 2.35
-    },
-    {
-     "h": "20:46",
-     "jogo": "Croácia x Países Baixos",
-     "odd": 2.4
-    },
-    {
-     "h": "20:49",
-     "jogo": "Alemanha x Curação",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "time Países Baixos",
-   "alvo": {
-    "h": "20:49",
-    "jogo": "Alemanha x Curação",
-    "odd": 2.07,
-    "unidades": 4,
-    "desde": 1786132255880
-   },
-   "iniciadoEm": 1786132016489,
-   "tiros": [
-    {
-     "h": "20:43",
-     "jogo": "Equador x África do Sul",
-     "odd": 2.35,
-     "unidades": 1
-    },
-    {
-     "h": "20:46",
-     "jogo": "Croácia x Países Baixos",
-     "odd": 2.4,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1786128358287,
+   "copa": 1786132378988,
    "premier": 1786127933680,
    "euro": 1786130702377,
    "super": 1786124818785
@@ -3969,13 +3938,13 @@
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
-   "2026-08-07": 0.5
+   "2026-08-07": 1.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Países Baixos",
-   "n": 17,
-   "start": 3
+   "tipo": "odd",
+   "chave": "2.07",
+   "n": 10,
+   "start": 2
   },
   "_obs": {}
  },
