@@ -357,13 +357,19 @@
   }
  },
  "o25": {
-  "saldo": -131.8,
-  "ciclos": 1102,
-  "greens": 696,
+  "saldo": -130.7,
+  "ciclos": 1103,
+  "greens": 697,
   "redsCiclo": 172,
   "aborts": 0,
   "descartes": 234,
   "historico": [
+   {
+    "quando": "2026-08-07T22:56:56.489Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Noruega x Arábia Saudita @2.075 (tiro 1) · gatilho: seq RRRRG"
+   },
    {
     "quando": "2026-08-07T22:46:55.791Z",
     "resultado": "GREEN_OBS",
@@ -3957,50 +3963,15 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros) · gatilho: seq RRGRG"
-   },
-   {
-    "quando": "2026-07-27T15:01:24.708Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "premier": 1786141991486
+   "premier": 1786141991486,
+   "copa": 1786143416380
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:49",
-     "jogo": "Noruega x Arábia Saudita",
-     "odd": 2.075
-    },
-    {
-     "h": "23:52",
-     "jogo": "França x Costa do Marfim",
-     "odd": 2.15
-    },
-    {
-     "h": "23:55",
-     "jogo": "Bélgica x Japão",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "seq RRRRG",
-   "alvo": {
-    "h": "23:49",
-    "jogo": "Noruega x Arábia Saudita",
-    "odd": 2.075,
-    "unidades": 1,
-    "desde": 1786142817784
-   },
-   "iniciadoEm": 1786142817784
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1786136696786,
+   "copa": 1786143416380,
    "premier": 1786141991486,
    "euro": 1786139096086,
    "super": 1786133098587
@@ -4029,7 +4000,7 @@
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
-   "2026-08-07": 2.9
+   "2026-08-07": 4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
