@@ -3892,10 +3892,39 @@
    }
   ],
   "consumidas": {
-   "copa": 1786128358287,
    "euro": 1786130702377
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:43",
+     "jogo": "Equador x África do Sul",
+     "odd": 2.35
+    },
+    {
+     "h": "20:46",
+     "jogo": "Croácia x Países Baixos",
+     "odd": 2.4
+    },
+    {
+     "h": "20:49",
+     "jogo": "Alemanha x Curação",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "time Países Baixos",
+   "alvo": {
+    "h": "20:43",
+    "jogo": "Equador x África do Sul",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1786132016489
+   },
+   "iniciadoEm": 1786132016489
+  },
   "cooldown": {
    "copa": 1786128358287,
    "premier": 1786127933680,
@@ -3929,9 +3958,9 @@
    "2026-08-07": 0.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.55",
-   "n": 14,
+   "tipo": "time",
+   "chave": "Países Baixos",
+   "n": 17,
    "start": 1
   },
   "_obs": {}
