@@ -3850,8 +3850,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "18:37",
@@ -3871,11 +3871,11 @@
    ],
    "gatilho": "seq RGGG",
    "alvo": {
-    "h": "18:40",
-    "jogo": "Asuncion x Penarol",
-    "odd": 2.45,
-    "unidades": 2,
-    "desde": 1786124460085
+    "h": "18:43",
+    "jogo": "Sao Paulo x Santos",
+    "odd": 2.2,
+    "unidades": 4,
+    "desde": 1786124638590
    },
    "iniciadoEm": 1786124156886,
    "tiros": [
@@ -3884,6 +3884,12 @@
      "jogo": "Medellin x Santos",
      "odd": 2.45,
      "unidades": 1
+    },
+    {
+     "h": "18:40",
+     "jogo": "Asuncion x Penarol",
+     "odd": 2.45,
+     "unidades": 2
     }
    ]
   },
@@ -7189,12 +7195,41 @@
    }
   ],
   "consumidas": {
-   "super": 1786120858489,
    "euro": 1786121398992,
    "copa": 1786122062777,
    "premier": 1786123619679
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:43",
+     "jogo": "Sao Paulo x Santos",
+     "odd": 1.93
+    },
+    {
+     "h": "18:46",
+     "jogo": "Santiago x Medellin",
+     "odd": 1.9
+    },
+    {
+     "h": "18:49",
+     "jogo": "Porto Alegre x Rio de Janeiro",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "coluna :46",
+   "alvo": {
+    "h": "18:43",
+    "jogo": "Sao Paulo x Santos",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1786124460683
+   },
+   "iniciadoEm": 1786124460683
+  },
   "cooldown": {
    "euro": 1786121398992,
    "super": 1786120858489,
@@ -7227,9 +7262,9 @@
    "2026-08-07": -7.5
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "0-0",
-   "n": 27,
+   "tipo": "coluna",
+   "chave": ":46",
+   "n": 18,
    "start": 1
   },
   "_obs": {}
