@@ -3991,13 +3991,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -96.2,
-  "ciclos": 1093,
-  "greens": 748,
+  "saldo": -95.2,
+  "ciclos": 1094,
+  "greens": 749,
   "redsCiclo": 122,
   "aborts": 0,
   "descartes": 223,
   "historico": [
+   {
+    "quando": "2026-08-07T22:09:56.679Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Dinamarca x Bélgica @1.98 (tiro 1) · gatilho: coluna :05"
+   },
    {
     "quando": "2026-08-07T22:02:43.785Z",
     "resultado": "GREEN",
@@ -7318,41 +7324,12 @@
    }
   ],
   "consumidas": {
-   "premier": 1786140163584
+   "premier": 1786140163584,
+   "euro": 1786140596480
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:05",
-     "jogo": "Dinamarca x Bélgica",
-     "odd": 1.98
-    },
-    {
-     "h": "23:08",
-     "jogo": "República Tcheca x Romênia",
-     "odd": 2.05
-    },
-    {
-     "h": "23:11",
-     "jogo": "Turquia x França",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "coluna :05",
-   "alvo": {
-    "h": "23:05",
-    "jogo": "Dinamarca x Bélgica",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1786140539987
-   },
-   "iniciadoEm": 1786140539987
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1786136938579,
+   "euro": 1786140596480,
    "super": 1786135790877,
    "premier": 1786140163584,
    "copa": 1786134478589
@@ -7380,7 +7357,7 @@
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
-   "2026-08-07": -15
+   "2026-08-07": -14
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
