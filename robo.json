@@ -3914,7 +3914,45 @@
    "copa": 1786132378988,
    "super": 1786133098587
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "21:06",
+     "jogo": "Leicester x Watford",
+     "odd": 2.35
+    },
+    {
+     "h": "21:09",
+     "jogo": "Aston x Tottenham",
+     "odd": 2.54
+    },
+    {
+     "h": "21:12",
+     "jogo": "Palace x Burnley",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "odd 2.35",
+   "alvo": {
+    "h": "21:09",
+    "jogo": "Aston x Tottenham",
+    "odd": 2.54,
+    "unidades": 2,
+    "desde": 1786133334079
+   },
+   "iniciadoEm": 1786133100681,
+   "tiros": [
+    {
+     "h": "21:06",
+     "jogo": "Leicester x Watford",
+     "odd": 2.35,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1786132378988,
    "premier": 1786127933680,
