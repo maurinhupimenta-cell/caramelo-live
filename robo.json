@@ -6984,7 +6984,37 @@
   "consumidas": {
    "copa": 1786109516680
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:59",
+     "jogo": "Geórgia x Eslováquia",
+     "odd": 2.05
+    },
+    {
+     "h": "15:02",
+     "jogo": "Escócia x Dinamarca",
+     "odd": 2
+    },
+    {
+     "h": "15:05",
+     "jogo": "Itália x Albânia",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "coluna :02",
+   "alvo": {
+    "h": "14:59",
+    "jogo": "Geórgia x Eslováquia",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1786110719881
+   },
+   "iniciadoEm": 1786110719881
+  },
   "cooldown": {
    "euro": 1786078928322,
    "super": 1786067480413,
@@ -7017,10 +7047,10 @@
    "2026-08-07": 6.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Haiti",
-   "n": 8,
-   "start": 2
+   "tipo": "coluna",
+   "chave": ":02",
+   "n": 14,
+   "start": 3
   },
   "_obs": {}
  }
