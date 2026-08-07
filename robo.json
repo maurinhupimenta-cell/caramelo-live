@@ -362,12 +362,18 @@
  },
  "o25": {
   "saldo": -139.5,
-  "ciclos": 1080,
+  "ciclos": 1081,
   "greens": 681,
   "redsCiclo": 170,
   "aborts": 0,
-  "descartes": 229,
+  "descartes": 230,
   "historico": [
+   {
+    "quando": "2026-08-07T16:10:00.084Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho seq RGGG) — liga REARMADA"
+   },
    {
     "quando": "2026-08-07T16:03:04.383Z",
     "resultado": "GREEN",
@@ -3842,7 +3848,37 @@
    "euro": 1786117977883,
    "premier": 1786118584186
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:10",
+     "jogo": "Belo Horizonte x Rio de Janeiro",
+     "odd": 2.1
+    },
+    {
+     "h": "17:13",
+     "jogo": "Penarol x Agua Branca",
+     "odd": 2.29
+    },
+    {
+     "h": "17:16",
+     "jogo": "Medellin x Montevideo",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "seq RGGG",
+   "alvo": {
+    "h": "17:10",
+    "jogo": "Belo Horizonte x Rio de Janeiro",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1786119048986
+   },
+   "iniciadoEm": 1786119048986
+  },
   "cooldown": {
    "copa": 1786117740090,
    "premier": 1786118584186,
@@ -3876,9 +3912,9 @@
    "2026-08-07": -4.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.5",
-   "n": 12,
+   "tipo": "seq",
+   "chave": "RGGG",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
