@@ -3818,13 +3818,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -78.9,
-  "ciclos": 1074,
+  "saldo": -85.9,
+  "ciclos": 1075,
   "greens": 737,
-  "redsCiclo": 118,
+  "redsCiclo": 119,
   "aborts": 0,
   "descartes": 219,
   "historico": [
+   {
+    "quando": "2026-08-07T15:33:57.781Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: coluna :26"
+   },
    {
     "quando": "2026-08-07T15:17:42.884Z",
     "resultado": "RED_CICLO",
@@ -7033,55 +7039,12 @@
   "consumidas": {
    "copa": 1786113476888,
    "super": 1786115038277,
-   "premier": 1786115862687
+   "premier": 1786115862687,
+   "euro": 1786116837584
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "16:23",
-     "jogo": "Espanha x Escócia",
-     "odd": 1.87
-    },
-    {
-     "h": "16:26",
-     "jogo": "República Tcheca x Turquia",
-     "odd": 2.25
-    },
-    {
-     "h": "16:29",
-     "jogo": "Hungria x Bélgica",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "coluna :26",
-   "alvo": {
-    "h": "16:29",
-    "jogo": "Hungria x Bélgica",
-    "odd": 1.95,
-    "unidades": 4,
-    "desde": 1786116708781
-   },
-   "iniciadoEm": 1786115875883,
-   "tiros": [
-    {
-     "h": "16:23",
-     "jogo": "Espanha x Escócia",
-     "odd": 1.87,
-     "unidades": 1
-    },
-    {
-     "h": "16:26",
-     "jogo": "República Tcheca x Turquia",
-     "odd": 2.25,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1786111497981,
+   "euro": 1786116837584,
    "super": 1786115038277,
    "premier": 1786115862687,
    "copa": 1786113476888
@@ -7109,7 +7072,7 @@
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
-   "2026-08-07": 2.3
+   "2026-08-07": -4.7
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
