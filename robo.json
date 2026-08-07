@@ -3712,13 +3712,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -75.1,
-  "ciclos": 1060,
+  "saldo": -82.1,
+  "ciclos": 1061,
   "greens": 726,
-  "redsCiclo": 116,
+  "redsCiclo": 117,
   "aborts": 0,
   "descartes": 218,
   "historico": [
+   {
+    "quando": "2026-08-07T01:51:20.611Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: placar 1-0 / 0-1"
+   },
    {
     "quando": "2026-08-06T22:46:13.110Z",
     "resultado": "GREEN",
@@ -6840,55 +6846,43 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "super": 1786067480413
+  },
   "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "02:40",
-     "jogo": "Agua Branca x Penarol",
-     "odd": 2.07
+     "h": "03:41",
+     "jogo": "Inglaterra x Ucrânia",
+     "odd": 1.95
     },
     {
-     "h": "02:43",
-     "jogo": "La Plata x Guayaquil",
-     "odd": 2.07
+     "h": "03:44",
+     "jogo": "Portugal x Escócia",
+     "odd": 1.95
     },
     {
-     "h": "02:46",
-     "jogo": "Medellin x Buenos Aires",
-     "odd": 1.93
+     "h": "03:47",
+     "jogo": "Itália x Croácia",
+     "odd": 1.98
     }
    ],
-   "gatilho": "placar 1-0 / 0-1",
+   "gatilho": "placar acima de 1-0 (2-0)",
    "alvo": {
-    "h": "02:46",
-    "jogo": "Medellin x Buenos Aires",
-    "odd": 1.93,
-    "unidades": 4,
-    "desde": 1786067237109
+    "h": "03:41",
+    "jogo": "Inglaterra x Ucrânia",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1786070291610
    },
-   "iniciadoEm": 1786066755309,
-   "tiros": [
-    {
-     "h": "02:40",
-     "jogo": "Agua Branca x Penarol",
-     "odd": 2.07,
-     "unidades": 1
-    },
-    {
-     "h": "02:43",
-     "jogo": "La Plata x Guayaquil",
-     "odd": 2.07,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1786070291610
   },
   "cooldown": {
    "euro": 1786054628823,
-   "super": 1786056372912,
+   "super": 1786067480413,
    "premier": 1786055929710,
    "copa": 1786054957116
   },
@@ -6914,12 +6908,12 @@
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
-   "2026-08-06": -27.7
+   "2026-08-06": -34.7
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "1-0 / 0-1",
-   "n": 12,
+   "chave": "acima de 1-0 (2-0)",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
