@@ -348,13 +348,19 @@
   }
  },
  "o25": {
-  "saldo": -129.7,
-  "ciclos": 1064,
+  "saldo": -136.7,
+  "ciclos": 1065,
   "greens": 673,
-  "redsCiclo": 167,
+  "redsCiclo": 168,
   "aborts": 0,
   "descartes": 224,
   "historico": [
+   {
+    "quando": "2026-08-07T04:29:45.912Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: time Polônia"
+   },
    {
     "quando": "2026-08-07T04:20:57.815Z",
     "resultado": "GREEN_OBS",
@@ -3729,57 +3735,44 @@
    }
   ],
   "consumidas": {
-   "copa": 1786074908412
+   "copa": 1786074908412,
+   "euro": 1786076985418
   },
   "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "05:20",
-     "jogo": "Espanha x Croácia",
-     "odd": 2.1
+     "h": "05:30",
+     "jogo": "West Ham x City",
+     "odd": 2.3
     },
     {
-     "h": "05:23",
-     "jogo": "Polônia x Áustria",
-     "odd": 2.5
+     "h": "05:33",
+     "jogo": "Newcastle x Palace",
+     "odd": 2.07
     },
     {
-     "h": "05:26",
-     "jogo": "Hungria x Suíça",
-     "odd": 2.25
+     "h": "05:36",
+     "jogo": "Wolverhampton x Watford",
+     "odd": 2.15
     }
    ],
-   "gatilho": "time Polônia",
+   "gatilho": "time Palace",
    "alvo": {
-    "h": "05:26",
-    "jogo": "Hungria x Suíça",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1786076785019
+    "h": "05:30",
+    "jogo": "West Ham x City",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1786076987618
    },
-   "iniciadoEm": 1786075982916,
-   "tiros": [
-    {
-     "h": "05:20",
-     "jogo": "Espanha x Croácia",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "05:23",
-     "jogo": "Polônia x Áustria",
-     "odd": 2.5,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1786076987618
   },
   "cooldown": {
    "copa": 1786074908412,
    "premier": 1786055591913,
-   "euro": 1786072263615,
+   "euro": 1786076985418,
    "super": 1786071506316
   },
   "dias": {
@@ -3806,12 +3799,12 @@
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
-   "2026-08-07": 5
+   "2026-08-07": -2
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Albânia",
-   "n": 11,
+   "chave": "Palace",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
