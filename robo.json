@@ -351,13 +351,19 @@
   }
  },
  "o25": {
-  "saldo": -136,
-  "ciclos": 1098,
-  "greens": 693,
+  "saldo": -134.7,
+  "ciclos": 1099,
+  "greens": 694,
   "redsCiclo": 172,
   "aborts": 0,
   "descartes": 233,
   "historico": [
+   {
+    "quando": "2026-08-07T21:20:46.385Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "premier · Southampton x Norwich @2.3 (tiro 1) · gatilho: seq GGRRR"
+   },
    {
     "quando": "2026-08-07T21:04:56.987Z",
     "resultado": "RED_CICLO",
@@ -3937,42 +3943,13 @@
   ],
   "consumidas": {
    "euro": 1786134776186,
-   "copa": 1786136696786
+   "copa": 1786136696786,
+   "premier": 1786137646277
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:18",
-     "jogo": "Southampton x Norwich",
-     "odd": 2.3
-    },
-    {
-     "h": "22:21",
-     "jogo": "Leicester x Wolverhampton",
-     "odd": 2.15
-    },
-    {
-     "h": "22:24",
-     "jogo": "Brighton x United",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "seq GGRRR",
-   "alvo": {
-    "h": "22:18",
-    "jogo": "Southampton x Norwich",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1786137308277
-   },
-   "iniciadoEm": 1786137308277
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786136696786,
-   "premier": 1786133705582,
+   "premier": 1786137646277,
    "euro": 1786134776186,
    "super": 1786133098587
   },
@@ -4000,7 +3977,7 @@
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
-   "2026-08-07": -1.3
+   "2026-08-07": 0
   },
   "_gatilhoAtual": {
    "tipo": "seq",
