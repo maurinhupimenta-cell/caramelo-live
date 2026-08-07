@@ -7206,9 +7206,9 @@
      "odd": 1.93
     },
     {
-     "h": "19:10",
-     "jogo": "Suíça x RD Congo",
-     "odd": 1.98
+     "h": "19:13",
+     "jogo": "Haiti x Senegal",
+     "odd": 2.02
     },
     {
      "h": "19:13",
@@ -7217,7 +7217,13 @@
     }
    ],
    "gatilho": "time RD Congo",
-   "alvo": null,
+   "alvo": {
+    "h": "19:13",
+    "jogo": "Haiti x Senegal",
+    "odd": 2.02,
+    "unidades": 2,
+    "desde": 1786127156187
+   },
    "iniciadoEm": 1786125778783,
    "tiros": [
     {
@@ -7226,7 +7232,8 @@
      "odd": 1.93,
      "unidades": 1
     }
-   ]
+   ],
+   "semAlvoDesde": null
   },
   "cooldown": {
    "euro": 1786125776478,
