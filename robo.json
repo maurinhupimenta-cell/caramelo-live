@@ -388,12 +388,18 @@
  },
  "o25": {
   "saldo": -131.8,
-  "ciclos": 1101,
+  "ciclos": 1102,
   "greens": 696,
   "redsCiclo": 172,
   "aborts": 0,
-  "descartes": 233,
+  "descartes": 234,
   "historico": [
+   {
+    "quando": "2026-08-07T22:46:55.791Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho seq RRRRG) — liga REARMADA"
+   },
    {
     "quando": "2026-08-07T22:33:11.779Z",
     "resultado": "GREEN",
@@ -3990,10 +3996,39 @@
    }
   ],
   "consumidas": {
-   "euro": 1786139096086,
    "premier": 1786141991486
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:49",
+     "jogo": "Noruega x Arábia Saudita",
+     "odd": 2.075
+    },
+    {
+     "h": "23:52",
+     "jogo": "França x Costa do Marfim",
+     "odd": 2.15
+    },
+    {
+     "h": "23:55",
+     "jogo": "Bélgica x Japão",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "seq RRRRG",
+   "alvo": {
+    "h": "23:49",
+    "jogo": "Noruega x Arábia Saudita",
+    "odd": 2.075,
+    "unidades": 1,
+    "desde": 1786142817784
+   },
+   "iniciadoEm": 1786142817784
+  },
   "cooldown": {
    "copa": 1786136696786,
    "premier": 1786141991486,
@@ -4028,8 +4063,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GGGRG",
-   "n": 9,
+   "chave": "RRRRG",
+   "n": 19,
    "start": 1
   },
   "_obs": {}
