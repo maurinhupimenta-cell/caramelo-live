@@ -291,7 +291,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:18",
+     "jogo": "West Ham x Palace",
+     "odd": 5
+    },
+    {
+     "h": "17:21",
+     "jogo": "Tottenham x Brentford",
+     "odd": 5.25
+    },
+    {
+     "h": "17:24",
+     "jogo": "City x Leeds",
+     "odd": 4.75
+    }
+   ],
+   "gatilho": "odd 5.25",
+   "alvo": {
+    "h": "17:18",
+    "jogo": "West Ham x Palace",
+    "odd": 5,
+    "unidades": 1,
+    "desde": 1786118997484
+   },
+   "iniciadoEm": 1786118997484
+  },
   "cooldown": {
    "copa": 1785978110378,
    "premier": 1786077549016,
@@ -318,19 +348,15 @@
    "2026-08-07": -7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Palace",
-   "n": 8,
-   "start": 1
+   "tipo": "odd",
+   "chave": "5.25",
+   "n": 13,
+   "start": 3
   },
   "_obs": {
    "euro": {
     "desde": 1785463711484,
     "gatilho": "time Eslovênia"
-   },
-   "premier": {
-    "desde": 1786117922581,
-    "gatilho": "odd 5.25"
    }
   }
  },
