@@ -3799,13 +3799,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -74.6,
-  "ciclos": 1069,
-  "greens": 734,
+  "saldo": -73.6,
+  "ciclos": 1070,
+  "greens": 735,
   "redsCiclo": 117,
   "aborts": 0,
   "descartes": 218,
   "historico": [
+   {
+    "quando": "2026-08-07T14:04:58.180Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Geórgia x Eslováquia @2.05 (tiro 1) · gatilho: coluna :02"
+   },
    {
     "quando": "2026-08-07T13:31:57.179Z",
     "resultado": "GREEN",
@@ -6982,41 +6988,12 @@
    }
   ],
   "consumidas": {
-   "copa": 1786109516680
+   "copa": 1786109516680,
+   "euro": 1786111497981
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:59",
-     "jogo": "Geórgia x Eslováquia",
-     "odd": 2.05
-    },
-    {
-     "h": "15:02",
-     "jogo": "Escócia x Dinamarca",
-     "odd": 2
-    },
-    {
-     "h": "15:05",
-     "jogo": "Itália x Albânia",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "coluna :02",
-   "alvo": {
-    "h": "14:59",
-    "jogo": "Geórgia x Eslováquia",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1786110719881
-   },
-   "iniciadoEm": 1786110719881
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1786078928322,
+   "euro": 1786111497981,
    "super": 1786067480413,
    "premier": 1786077892211,
    "copa": 1786109516680
@@ -7044,13 +7021,13 @@
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
-   "2026-08-07": 6.6
+   "2026-08-07": 7.6
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":02",
-   "n": 14,
-   "start": 3
+   "tipo": "odd",
+   "chave": "1.85",
+   "n": 13,
+   "start": 2
   },
   "_obs": {}
  }
