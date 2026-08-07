@@ -6930,11 +6930,40 @@
    }
   ],
   "consumidas": {
-   "euro": 1786075140315,
    "copa": 1786076749213,
    "premier": 1786077892211
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:59",
+     "jogo": "Sérvia x Dinamarca",
+     "odd": 2.15
+    },
+    {
+     "h": "06:02",
+     "jogo": "Escócia x Geórgia",
+     "odd": 2.05
+    },
+    {
+     "h": "06:05",
+     "jogo": "Espanha x Albânia",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "odd 2.15",
+   "alvo": {
+    "h": "05:59",
+    "jogo": "Sérvia x Dinamarca",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1786078744811
+   },
+   "iniciadoEm": 1786078744811
+  },
   "cooldown": {
    "euro": 1786075140315,
    "super": 1786067480413,
@@ -6967,10 +6996,10 @@
    "2026-08-07": 3.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Chelsea",
-   "n": 12,
-   "start": 2
+   "tipo": "odd",
+   "chave": "2.15",
+   "n": 11,
+   "start": 1
   },
   "_obs": {}
  }
