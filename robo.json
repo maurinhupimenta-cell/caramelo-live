@@ -3888,11 +3888,40 @@
    }
   ],
   "consumidas": {
-   "euro": 1786126789487,
    "premier": 1786127933680,
    "copa": 1786128358287
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:17",
+     "jogo": "Geórgia x Turquia",
+     "odd": 2.55
+    },
+    {
+     "h": "20:20",
+     "jogo": "Croácia x Itália",
+     "odd": 2.25
+    },
+    {
+     "h": "20:23",
+     "jogo": "Portugal x Hungria",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "odd 2.55",
+   "alvo": {
+    "h": "20:17",
+    "jogo": "Geórgia x Turquia",
+    "odd": 2.55,
+    "unidades": 1,
+    "desde": 1786130396489
+   },
+   "iniciadoEm": 1786130396489
+  },
   "cooldown": {
    "copa": 1786128358287,
    "premier": 1786127933680,
@@ -3926,9 +3955,9 @@
    "2026-08-07": -1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Haiti",
-   "n": 13,
+   "tipo": "odd",
+   "chave": "2.55",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
