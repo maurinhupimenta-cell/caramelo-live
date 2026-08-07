@@ -279,7 +279,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:30",
+     "jogo": "West Ham x City",
+     "odd": 4.5
+    },
+    {
+     "h": "05:33",
+     "jogo": "Newcastle x Palace",
+     "odd": 3.8
+    },
+    {
+     "h": "05:36",
+     "jogo": "Wolverhampton x Watford",
+     "odd": 4
+    }
+   ],
+   "gatilho": "time Palace",
+   "alvo": {
+    "h": "05:30",
+    "jogo": "West Ham x City",
+    "odd": 4.5,
+    "unidades": 1,
+    "desde": 1786076457619
+   },
+   "iniciadoEm": 1786076457619
+  },
   "cooldown": {
    "copa": 1785978110378,
    "premier": 1785903712201,
@@ -305,10 +335,10 @@
    "2026-08-05": 20.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "4.2",
-   "n": 10,
-   "start": 2
+   "tipo": "time",
+   "chave": "Palace",
+   "n": 8,
+   "start": 3
   },
   "_obs": {
    "euro": {
@@ -319,12 +349,18 @@
  },
  "o25": {
   "saldo": -129.7,
-  "ciclos": 1063,
+  "ciclos": 1064,
   "greens": 673,
   "redsCiclo": 167,
   "aborts": 0,
-  "descartes": 223,
+  "descartes": 224,
   "historico": [
+   {
+    "quando": "2026-08-07T04:20:57.815Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho time Palace) — liga REARMADA"
+   },
    {
     "quando": "2026-08-07T03:55:08.612Z",
     "resultado": "GREEN",
@@ -3764,7 +3800,12 @@
    "n": 9,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1786076457815,
+    "gatilho": "time Palace"
+   }
+  }
  },
  "ambas": {
   "saldo": -79.2,
