@@ -7103,7 +7103,37 @@
    "euro": 1786116837584,
    "copa": 1786117740284
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:31",
+     "jogo": "Porto Alegre x Agua Branca",
+     "odd": 2.1
+    },
+    {
+     "h": "17:34",
+     "jogo": "Itaquera x La Boca",
+     "odd": 2.05
+    },
+    {
+     "h": "17:37",
+     "jogo": "Asuncion x Bogota",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "seq GGRGR",
+   "alvo": {
+    "h": "17:31",
+    "jogo": "Porto Alegre x Agua Branca",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1786120136286
+   },
+   "iniciadoEm": 1786120136286
+  },
   "cooldown": {
    "euro": 1786116837584,
    "super": 1786115038277,
@@ -7136,10 +7166,10 @@
    "2026-08-07": -4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":58",
-   "n": 16,
-   "start": 2
+   "tipo": "seq",
+   "chave": "GGRGR",
+   "n": 8,
+   "start": 1
   },
   "_obs": {}
  }
