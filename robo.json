@@ -3690,7 +3690,37 @@
    "super": 1786071506316,
    "euro": 1786072263615
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:46",
+     "jogo": "Bósnia e Herzegovina x Argélia",
+     "odd": 2.2
+    },
+    {
+     "h": "04:49",
+     "jogo": "EUA x Irã",
+     "odd": 2.5
+    },
+    {
+     "h": "04:52",
+     "jogo": "Qatar x Bósnia e Herzegovina",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "odd 2.2",
+   "alvo": {
+    "h": "04:46",
+    "jogo": "Bósnia e Herzegovina x Argélia",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1786074424913
+   },
+   "iniciadoEm": 1786074424913
+  },
   "cooldown": {
    "copa": 1786054956821,
    "premier": 1786055591913,
@@ -3724,10 +3754,10 @@
    "2026-08-07": 3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Albânia",
-   "n": 8,
-   "start": 2
+   "tipo": "odd",
+   "chave": "2.2",
+   "n": 11,
+   "start": 1
   },
   "_obs": {}
  },
