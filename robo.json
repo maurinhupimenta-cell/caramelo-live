@@ -3934,13 +3934,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -93.6,
-  "ciclos": 1086,
-  "greens": 743,
+  "saldo": -93,
+  "ciclos": 1087,
+  "greens": 744,
   "redsCiclo": 121,
   "aborts": 0,
   "descartes": 222,
   "historico": [
+   {
+    "quando": "2026-08-07T19:11:43.580Z",
+    "resultado": "GREEN",
+    "unidades": 0.6,
+    "detalhe": "euro · Itália x Países Baixos @1.9 (tiro 3) · gatilho: coluna :05"
+   },
    {
     "quando": "2026-08-07T18:29:56.578Z",
     "resultado": "GREEN",
@@ -7219,55 +7225,12 @@
    }
   ],
   "consumidas": {
-   "copa": 1786127396383
+   "copa": 1786127396383,
+   "euro": 1786129903384
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "20:02",
-     "jogo": "Eslováquia x Polônia",
-     "odd": 2.1
-    },
-    {
-     "h": "20:05",
-     "jogo": "França x Escócia",
-     "odd": 1.9
-    },
-    {
-     "h": "20:08",
-     "jogo": "Itália x Países Baixos",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "coluna :05",
-   "alvo": {
-    "h": "20:08",
-    "jogo": "Itália x Países Baixos",
-    "odd": 1.9,
-    "unidades": 4,
-    "desde": 1786129862085
-   },
-   "iniciadoEm": 1786129376681,
-   "tiros": [
-    {
-     "h": "20:02",
-     "jogo": "Eslováquia x Polônia",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "20:05",
-     "jogo": "França x Escócia",
-     "odd": 1.9,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1786125776478,
+   "euro": 1786129903384,
    "super": 1786125182579,
    "premier": 1786123619679,
    "copa": 1786127396383
@@ -7295,7 +7258,7 @@
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
-   "2026-08-07": -12.4
+   "2026-08-07": -11.8
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
