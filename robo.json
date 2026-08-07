@@ -7349,10 +7349,38 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {
-   "super": 1786142082880
+  "consumidas": {},
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:58",
+     "jogo": "Porto Alegre x Bogota",
+     "odd": 2.4
+    },
+    {
+     "h": "23:01",
+     "jogo": "Guayaquil x Belo Horizonte",
+     "odd": 1.83
+    },
+    {
+     "h": "23:04",
+     "jogo": "La Plata x Lima",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "odd 1.83",
+   "alvo": {
+    "h": "22:58",
+    "jogo": "Porto Alegre x Bogota",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1786145687684
+   },
+   "iniciadoEm": 1786145687684
   },
-  "ciclo": null,
   "cooldown": {
    "euro": 1786140596480,
    "super": 1786142082880,
@@ -7387,8 +7415,8 @@
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "1.83",
-   "n": 16,
-   "start": 2
+   "n": 15,
+   "start": 1
   },
   "_obs": {}
  }
