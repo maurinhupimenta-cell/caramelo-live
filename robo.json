@@ -351,13 +351,19 @@
   }
  },
  "o25": {
-  "saldo": -134.7,
-  "ciclos": 1099,
-  "greens": 694,
+  "saldo": -133.5,
+  "ciclos": 1100,
+  "greens": 695,
   "redsCiclo": 172,
   "aborts": 0,
   "descartes": 233,
   "historico": [
+   {
+    "quando": "2026-08-07T21:44:56.284Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · França x Geórgia @2.2 (tiro 1) · gatilho: odd 2.55"
+   },
    {
     "quando": "2026-08-07T21:20:46.385Z",
     "resultado": "GREEN",
@@ -3943,43 +3949,14 @@
   ],
   "consumidas": {
    "copa": 1786136696786,
-   "premier": 1786137646277
+   "premier": 1786137646277,
+   "euro": 1786139096086
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:38",
-     "jogo": "França x Geórgia",
-     "odd": 2.2
-    },
-    {
-     "h": "22:41",
-     "jogo": "Polônia x Dinamarca",
-     "odd": 2.55
-    },
-    {
-     "h": "22:44",
-     "jogo": "Itália x Eslováquia",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "odd 2.55",
-   "alvo": {
-    "h": "22:38",
-    "jogo": "França x Geórgia",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1786138376984
-   },
-   "iniciadoEm": 1786138376984
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786136696786,
    "premier": 1786137646277,
-   "euro": 1786134776186,
+   "euro": 1786139096086,
    "super": 1786133098587
   },
   "dias": {
@@ -4006,13 +3983,13 @@
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
-   "2026-08-07": 0
+   "2026-08-07": 1.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.55",
    "n": 17,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
