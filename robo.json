@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -119.5,
-  "ciclos": 206,
-  "greens": 70,
+  "saldo": -112,
+  "ciclos": 207,
+  "greens": 71,
   "redsCiclo": 85,
   "aborts": 0,
   "descartes": 51,
   "historico": [
+   {
+    "quando": "2026-08-07T22:47:40.280Z",
+    "resultado": "GREEN",
+    "unidades": 7.5,
+    "detalhe": "premier · Palace x Leeds @5.25 (tiro 2) · gatilho: odd 5.25"
+   },
    {
     "quando": "2026-08-07T20:57:31.286Z",
     "resultado": "GREEN",
@@ -308,49 +314,13 @@
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "23:42",
-     "jogo": "Brentford x Southampton",
-     "odd": 4.75
-    },
-    {
-     "h": "23:45",
-     "jogo": "Palace x Leeds",
-     "odd": 5.25
-    },
-    {
-     "h": "23:48",
-     "jogo": "Southampton x Wolverhampton",
-     "odd": 4.2
-    }
-   ],
-   "gatilho": "odd 5.25",
-   "alvo": {
-    "h": "23:45",
-    "jogo": "Palace x Leeds",
-    "odd": 5.25,
-    "unidades": 2,
-    "desde": 1786142693383
-   },
-   "iniciadoEm": 1786141991285,
-   "tiros": [
-    {
-     "h": "23:42",
-     "jogo": "Brentford x Southampton",
-     "odd": 4.75,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "premier": 1786142860082
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785978110378,
-   "premier": 1786136251177,
+   "premier": 1786142860082,
    "euro": 1785464913993,
    "super": 1785983452169
   },
@@ -371,7 +341,7 @@
    "2026-08-02": -7,
    "2026-08-04": 19,
    "2026-08-05": 20.8,
-   "2026-08-07": 27
+   "2026-08-07": 34.5
   },
   "_gatilhoAtual": {
    "tipo": "odd",
