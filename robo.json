@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -146.5,
-  "ciclos": 201,
+  "saldo": -153.5,
+  "ciclos": 202,
   "greens": 67,
-  "redsCiclo": 84,
+  "redsCiclo": 85,
   "aborts": 0,
   "descartes": 50,
   "historico": [
+   {
+    "quando": "2026-08-07T04:39:09.212Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: time Palace"
+   },
    {
     "quando": "2026-08-06T02:30:52.371Z",
     "resultado": "GREEN",
@@ -278,55 +284,13 @@
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "05:30",
-     "jogo": "West Ham x City",
-     "odd": 4.5
-    },
-    {
-     "h": "05:33",
-     "jogo": "Newcastle x Palace",
-     "odd": 3.8
-    },
-    {
-     "h": "05:36",
-     "jogo": "Wolverhampton x Watford",
-     "odd": 4
-    }
-   ],
-   "gatilho": "time Palace",
-   "alvo": {
-    "h": "05:36",
-    "jogo": "Wolverhampton x Watford",
-    "odd": 4,
-    "unidades": 4,
-    "desde": 1786077346512
-   },
-   "iniciadoEm": 1786076457619,
-   "tiros": [
-    {
-     "h": "05:30",
-     "jogo": "West Ham x City",
-     "odd": 4.5,
-     "unidades": 1
-    },
-    {
-     "h": "05:33",
-     "jogo": "Newcastle x Palace",
-     "odd": 3.8,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1786077549016
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785978110378,
-   "premier": 1785903712201,
+   "premier": 1786077549016,
    "euro": 1785464913993,
    "super": 1785983452169
   },
@@ -346,7 +310,8 @@
    "2026-08-01": -7,
    "2026-08-02": -7,
    "2026-08-04": 19,
-   "2026-08-05": 20.8
+   "2026-08-05": 20.8,
+   "2026-08-07": -7
   },
   "_gatilhoAtual": {
    "tipo": "time",
