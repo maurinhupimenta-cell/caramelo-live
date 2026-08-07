@@ -3818,13 +3818,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -71.9,
-  "ciclos": 1073,
+  "saldo": -78.9,
+  "ciclos": 1074,
   "greens": 737,
-  "redsCiclo": 117,
+  "redsCiclo": 118,
   "aborts": 0,
   "descartes": 219,
   "historico": [
+   {
+    "quando": "2026-08-07T15:17:42.884Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: coluna :09"
+   },
    {
     "quando": "2026-08-07T15:03:58.479Z",
     "resultado": "GREEN",
@@ -7026,57 +7032,14 @@
   ],
   "consumidas": {
    "copa": 1786113476888,
-   "super": 1786115038277
+   "super": 1786115038277,
+   "premier": 1786115862687
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "16:09",
-     "jogo": "Leicester x Brighton",
-     "odd": 1.93
-    },
-    {
-     "h": "16:12",
-     "jogo": "City x Norwich",
-     "odd": 2
-    },
-    {
-     "h": "16:15",
-     "jogo": "Leeds x United",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "coluna :09",
-   "alvo": {
-    "h": "16:15",
-    "jogo": "Leeds x United",
-    "odd": 2.1,
-    "unidades": 4,
-    "desde": 1786115693388
-   },
-   "iniciadoEm": 1786115138188,
-   "tiros": [
-    {
-     "h": "16:09",
-     "jogo": "Leicester x Brighton",
-     "odd": 1.93,
-     "unidades": 1
-    },
-    {
-     "h": "16:12",
-     "jogo": "City x Norwich",
-     "odd": 2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786111497981,
    "super": 1786115038277,
-   "premier": 1786077892211,
+   "premier": 1786115862687,
    "copa": 1786113476888
   },
   "dias": {
@@ -7102,13 +7065,13 @@
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
-   "2026-08-07": 9.3
+   "2026-08-07": 2.3
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":12",
+   "chave": ":26",
    "n": 16,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  }
