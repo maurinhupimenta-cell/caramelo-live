@@ -6928,7 +6928,37 @@
    "euro": 1786075140315,
    "copa": 1786076749213
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:42",
+     "jogo": "Norwich x Everton",
+     "odd": 1.87
+    },
+    {
+     "h": "05:45",
+     "jogo": "Aston x Tottenham",
+     "odd": 2.15
+    },
+    {
+     "h": "05:48",
+     "jogo": "Wolverhampton x Everton",
+     "odd": 1.83
+    }
+   ],
+   "gatilho": "time Everton",
+   "alvo": {
+    "h": "05:42",
+    "jogo": "Norwich x Everton",
+    "odd": 1.87,
+    "unidades": 1,
+    "desde": 1786077606909
+   },
+   "iniciadoEm": 1786077606909
+  },
   "cooldown": {
    "euro": 1786075140315,
    "super": 1786067480413,
@@ -6961,9 +6991,9 @@
    "2026-08-07": 2.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.98",
-   "n": 8,
+   "tipo": "time",
+   "chave": "Everton",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
