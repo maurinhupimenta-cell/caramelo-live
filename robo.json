@@ -3819,12 +3819,18 @@
  },
  "ambas": {
   "saldo": -72.7,
-  "ciclos": 1071,
+  "ciclos": 1072,
   "greens": 736,
   "redsCiclo": 117,
   "aborts": 0,
-  "descartes": 218,
+  "descartes": 219,
   "historico": [
+   {
+    "quando": "2026-08-07T14:56:57.382Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho odd 1.83) — liga REARMADA"
+   },
    {
     "quando": "2026-08-07T14:37:57.083Z",
     "resultado": "GREEN",
@@ -7016,7 +7022,37 @@
    "euro": 1786111497981,
    "copa": 1786113476888
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:01",
+     "jogo": "Lima x Santiago",
+     "odd": 1.8
+    },
+    {
+     "h": "16:04",
+     "jogo": "Guayaquil x Belo Horizonte",
+     "odd": 1.83
+    },
+    {
+     "h": "16:07",
+     "jogo": "Santiago x La Boca",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "odd 1.83",
+   "alvo": {
+    "h": "16:01",
+    "jogo": "Lima x Santiago",
+    "odd": 1.8,
+    "unidades": 1,
+    "desde": 1786114618678
+   },
+   "iniciadoEm": 1786114618678
+  },
   "cooldown": {
    "euro": 1786111497981,
    "super": 1786067480413,
@@ -7049,10 +7085,10 @@
    "2026-08-07": 8.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Coreia do Sul",
-   "n": 13,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.83",
+   "n": 10,
+   "start": 2
   },
   "_obs": {}
  }
