@@ -3756,7 +3756,37 @@
   "consumidas": {
    "copa": 1786109877986
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:32",
+     "jogo": "República Tcheca x Bélgica",
+     "odd": 2.4
+    },
+    {
+     "h": "15:35",
+     "jogo": "Suíça x Polônia",
+     "odd": 2.35
+    },
+    {
+     "h": "15:38",
+     "jogo": "Países Baixos x Turquia",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "seq RRGGR",
+   "alvo": {
+    "h": "15:32",
+    "jogo": "República Tcheca x Bélgica",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1786113058179
+   },
+   "iniciadoEm": 1786113058179
+  },
   "cooldown": {
    "copa": 1786109877986,
    "premier": 1786077188215,
@@ -3790,9 +3820,9 @@
    "2026-08-07": 4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Haiti",
-   "n": 8,
+   "tipo": "seq",
+   "chave": "RRGGR",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
@@ -6987,7 +7017,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1786109516680,
    "euro": 1786111497981
   },
   "ciclo": null,
