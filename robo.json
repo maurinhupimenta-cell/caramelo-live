@@ -3769,7 +3769,45 @@
    "euro": 1786113658478,
    "copa": 1786113777180
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "15:45",
+     "jogo": "Islington x Southampton",
+     "odd": 2.35
+    },
+    {
+     "h": "15:48",
+     "jogo": "Everton x Leicester",
+     "odd": 2.2
+    },
+    {
+     "h": "15:51",
+     "jogo": "Brentford x Islington",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "seq GGRRR",
+   "alvo": {
+    "h": "15:48",
+    "jogo": "Everton x Leicester",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1786114065884
+   },
+   "iniciadoEm": 1786113779680,
+   "tiros": [
+    {
+     "h": "15:45",
+     "jogo": "Islington x Southampton",
+     "odd": 2.35,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1786113777180,
    "premier": 1786077188215,
@@ -3804,8 +3842,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GGRRR",
-   "n": 12,
+   "chave": "GRRRG",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
