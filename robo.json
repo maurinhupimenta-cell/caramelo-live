@@ -3665,8 +3665,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "02:40",
@@ -3686,13 +3686,21 @@
    ],
    "gatilho": "placar 1-0 / 0-1",
    "alvo": {
-    "h": "02:40",
-    "jogo": "Agua Branca x Penarol",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1786066755012
+    "h": "02:43",
+    "jogo": "La Plata x Guayaquil",
+    "odd": 2.4,
+    "unidades": 2,
+    "desde": 1786067233211
    },
-   "iniciadoEm": 1786066755012
+   "iniciadoEm": 1786066755012,
+   "tiros": [
+    {
+     "h": "02:40",
+     "jogo": "Agua Branca x Penarol",
+     "odd": 2.35,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786054956821,
@@ -3726,10 +3734,10 @@
    "2026-08-06": 9.6
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "1-0 / 0-1",
-   "n": 11,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.2",
+   "n": 9,
+   "start": 3
   },
   "_obs": {}
  },
@@ -6863,7 +6871,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:40",
+     "jogo": "Agua Branca x Penarol",
+     "odd": 2.07
+    },
+    {
+     "h": "02:43",
+     "jogo": "La Plata x Guayaquil",
+     "odd": 2.07
+    },
+    {
+     "h": "02:46",
+     "jogo": "Medellin x Buenos Aires",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "placar 1-0 / 0-1",
+   "alvo": {
+    "h": "02:40",
+    "jogo": "Agua Branca x Penarol",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1786066755309
+   },
+   "iniciadoEm": 1786066755309
+  },
   "cooldown": {
    "euro": 1786054628823,
    "super": 1786056372912,
@@ -6895,9 +6933,9 @@
    "2026-08-06": -27.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":43",
-   "n": 23,
+   "tipo": "placar",
+   "chave": "1-0 / 0-1",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
