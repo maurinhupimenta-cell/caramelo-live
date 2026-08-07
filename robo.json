@@ -319,12 +319,18 @@
  },
  "o25": {
   "saldo": -127.7,
-  "ciclos": 1059,
+  "ciclos": 1060,
   "greens": 671,
   "redsCiclo": 166,
   "aborts": 0,
-  "descartes": 222,
+  "descartes": 223,
   "historico": [
+   {
+    "quando": "2026-08-07T02:58:11.613Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho placar acima de 1-0 (2-1)) — liga REARMADA"
+   },
    {
     "quando": "2026-08-07T01:51:20.318Z",
     "resultado": "RED_CICLO",
@@ -3669,7 +3675,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:46",
+     "jogo": "Buenos Aires x La Plata",
+     "odd": 2.35
+    },
+    {
+     "h": "03:49",
+     "jogo": "Quito x Santiago",
+     "odd": 2.1
+    },
+    {
+     "h": "03:52",
+     "jogo": "Itaquera x Asuncion",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-1)",
+   "alvo": {
+    "h": "03:46",
+    "jogo": "Buenos Aires x La Plata",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1786071494618
+   },
+   "iniciadoEm": 1786071494618
+  },
   "cooldown": {
    "copa": 1786054956821,
    "premier": 1786055591913,
@@ -3702,10 +3738,10 @@
    "2026-08-06": 2.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.2",
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
