@@ -318,13 +318,19 @@
   }
  },
  "o25": {
-  "saldo": -127.7,
-  "ciclos": 1060,
+  "saldo": -134.7,
+  "ciclos": 1061,
   "greens": 671,
-  "redsCiclo": 166,
+  "redsCiclo": 167,
   "aborts": 0,
   "descartes": 223,
   "historico": [
+   {
+    "quando": "2026-08-07T02:58:26.511Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-08-07T02:58:11.613Z",
     "resultado": "GREEN_OBS",
@@ -3674,51 +3680,45 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "super": 1786071506316
+  },
   "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "03:46",
-     "jogo": "Buenos Aires x La Plata",
-     "odd": 2.35
+     "h": "04:02",
+     "jogo": "Escócia x Bélgica",
+     "odd": 2.15
     },
     {
-     "h": "03:49",
-     "jogo": "Quito x Santiago",
-     "odd": 2.1
+     "h": "04:05",
+     "jogo": "Polônia x Albânia",
+     "odd": 2.87
     },
     {
-     "h": "03:52",
-     "jogo": "Itaquera x Asuncion",
-     "odd": 2.35
+     "h": "04:08",
+     "jogo": "Suíça x Eslovênia",
+     "odd": 2.5
     }
    ],
-   "gatilho": "placar acima de 1-0 (2-1)",
+   "gatilho": "placar empate 1-1",
    "alvo": {
-    "h": "03:49",
-    "jogo": "Quito x Santiago",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1786071500214
+    "h": "04:02",
+    "jogo": "Escócia x Bélgica",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1786071826321
    },
-   "iniciadoEm": 1786071494618,
-   "tiros": [
-    {
-     "h": "03:46",
-     "jogo": "Buenos Aires x La Plata",
-     "odd": 2.35,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1786071826321
   },
   "cooldown": {
    "copa": 1786054956821,
    "premier": 1786055591913,
    "euro": 1786048836913,
-   "super": 1786067480119
+   "super": 1786071506316
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -3743,11 +3743,11 @@
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
-   "2026-08-06": 2.6
+   "2026-08-06": -4.4
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
+   "chave": "empate 1-1",
    "n": 9,
    "start": 1
   },
