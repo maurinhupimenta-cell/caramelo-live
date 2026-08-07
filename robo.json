@@ -325,13 +325,19 @@
   }
  },
  "o25": {
-  "saldo": -137.7,
-  "ciclos": 1073,
-  "greens": 677,
+  "saldo": -136.2,
+  "ciclos": 1074,
+  "greens": 678,
   "redsCiclo": 169,
   "aborts": 0,
   "descartes": 227,
   "historico": [
+   {
+    "quando": "2026-08-07T14:42:57.380Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "copa · Brasil x Coreia do Sul @2.45 (tiro 1) · gatilho: seq RRRRG"
+   },
    {
     "quando": "2026-08-07T14:40:58.586Z",
     "resultado": "RED_CICLO",
@@ -3760,11 +3766,12 @@
    }
   ],
   "consumidas": {
-   "euro": 1786113658478
+   "euro": 1786113658478,
+   "copa": 1786113777180
   },
   "ciclo": null,
   "cooldown": {
-   "copa": 1786109877986,
+   "copa": 1786113777180,
    "premier": 1786077188215,
    "euro": 1786113658478,
    "super": 1786071506316
@@ -3793,12 +3800,12 @@
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
-   "2026-08-07": -3
+   "2026-08-07": -1.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.35",
-   "n": 11,
+   "tipo": "seq",
+   "chave": "GGRRR",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
