@@ -3695,7 +3695,37 @@
   "consumidas": {
    "copa": 1786074908412
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:20",
+     "jogo": "Espanha x Croácia",
+     "odd": 2.1
+    },
+    {
+     "h": "05:23",
+     "jogo": "Polônia x Áustria",
+     "odd": 2.5
+    },
+    {
+     "h": "05:26",
+     "jogo": "Hungria x Suíça",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "time Polônia",
+   "alvo": {
+    "h": "05:20",
+    "jogo": "Espanha x Croácia",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1786075982916
+   },
+   "iniciadoEm": 1786075982916
+  },
   "cooldown": {
    "copa": 1786074908412,
    "premier": 1786055591913,
@@ -3729,10 +3759,10 @@
    "2026-08-07": 5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.2",
-   "n": 12,
-   "start": 2
+   "tipo": "time",
+   "chave": "Polônia",
+   "n": 9,
+   "start": 3
   },
   "_obs": {}
  },
