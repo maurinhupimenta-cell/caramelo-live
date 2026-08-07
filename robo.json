@@ -3693,7 +3693,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1786072263615,
    "copa": 1786074908412
   },
   "ciclo": null,
@@ -3738,13 +3737,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -80.2,
-  "ciclos": 1063,
-  "greens": 728,
+  "saldo": -79.2,
+  "ciclos": 1064,
+  "greens": 729,
   "redsCiclo": 117,
   "aborts": 0,
   "descartes": 218,
   "historico": [
+   {
+    "quando": "2026-08-07T03:59:00.516Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Geórgia x Áustria @2.05 (tiro 1) · gatilho: odd 2.1"
+   },
    {
     "quando": "2026-08-07T03:26:52.611Z",
     "resultado": "GREEN",
@@ -6885,41 +6890,12 @@
    }
   ],
   "consumidas": {
-   "premier": 1786073212412
+   "premier": 1786073212412,
+   "euro": 1786075140315
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:56",
-     "jogo": "Geórgia x Áustria",
-     "odd": 2.05
-    },
-    {
-     "h": "04:59",
-     "jogo": "República Tcheca x Portugal",
-     "odd": 2.1
-    },
-    {
-     "h": "05:02",
-     "jogo": "Alemanha x Eslovênia",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "odd 2.1",
-   "alvo": {
-    "h": "04:56",
-    "jogo": "Geórgia x Áustria",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1786074609116
-   },
-   "iniciadoEm": 1786074609116
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1786071007012,
+   "euro": 1786075140315,
    "super": 1786067480413,
    "premier": 1786073212412,
    "copa": 1786054957116
@@ -6947,7 +6923,7 @@
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
-   "2026-08-07": 1
+   "2026-08-07": 2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
