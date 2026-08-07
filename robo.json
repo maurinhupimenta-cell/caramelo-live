@@ -7152,7 +7152,37 @@
    "euro": 1786121398992,
    "copa": 1786122062777
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:21",
+     "jogo": "Leeds x Watford",
+     "odd": 2.2
+    },
+    {
+     "h": "18:24",
+     "jogo": "United x Tottenham",
+     "odd": 2.1
+    },
+    {
+     "h": "18:27",
+     "jogo": "Chelsea x Liverpool",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "placar 0-0",
+   "alvo": {
+    "h": "18:21",
+    "jogo": "Leeds x Watford",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1786123060290
+   },
+   "iniciadoEm": 1786123060290
+  },
   "cooldown": {
    "euro": 1786121398992,
    "super": 1786120858489,
@@ -7185,9 +7215,9 @@
    "2026-08-07": -8.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":01",
-   "n": 17,
+   "tipo": "placar",
+   "chave": "0-0",
+   "n": 27,
    "start": 1
   },
   "_obs": {}
