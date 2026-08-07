@@ -6909,10 +6909,39 @@
    }
   ],
   "consumidas": {
-   "euro": 1786071007012,
    "premier": 1786073212412
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:56",
+     "jogo": "Geórgia x Áustria",
+     "odd": 2.05
+    },
+    {
+     "h": "04:59",
+     "jogo": "República Tcheca x Portugal",
+     "odd": 2.1
+    },
+    {
+     "h": "05:02",
+     "jogo": "Alemanha x Eslovênia",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "odd 2.1",
+   "alvo": {
+    "h": "04:56",
+    "jogo": "Geórgia x Áustria",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1786074609116
+   },
+   "iniciadoEm": 1786074609116
+  },
   "cooldown": {
    "euro": 1786071007012,
    "super": 1786067480413,
@@ -6945,10 +6974,10 @@
    "2026-08-07": 1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Watford",
-   "n": 10,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.1",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  }
