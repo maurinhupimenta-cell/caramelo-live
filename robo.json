@@ -3828,12 +3828,41 @@
    }
   ],
   "consumidas": {
-   "copa": 1786117740090,
    "euro": 1786117977883,
    "premier": 1786118584186,
    "super": 1786119481378
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:55",
+     "jogo": "Canadá x Argélia",
+     "odd": 2.4
+    },
+    {
+     "h": "17:58",
+     "jogo": "Arábia Saudita x Austrália",
+     "odd": 2.15
+    },
+    {
+     "h": "18:01",
+     "jogo": "Colômbia x Uzbequistão",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "coluna :58",
+   "alvo": {
+    "h": "17:55",
+    "jogo": "Canadá x Argélia",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1786121340684
+   },
+   "iniciadoEm": 1786121340684
+  },
   "cooldown": {
    "copa": 1786117740090,
    "premier": 1786118584186,
@@ -3867,10 +3896,10 @@
    "2026-08-07": -3.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGG",
-   "n": 9,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":58",
+   "n": 17,
+   "start": 2
   },
   "_obs": {}
  },
@@ -7118,7 +7147,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1786117740284,
    "super": 1786120858489
   },
   "ciclo": {
@@ -7197,11 +7225,6 @@
    "n": 16,
    "start": 3
   },
-  "_obs": {
-   "premier": {
-    "desde": 1786121099784,
-    "gatilho": "placar 0-0"
-   }
-  }
+  "_obs": {}
  }
 }
