@@ -3994,8 +3994,8 @@
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.35",
-   "n": 14,
-   "start": 1
+   "n": 15,
+   "start": 3
   },
   "_obs": {}
  },
@@ -7297,10 +7297,39 @@
    }
   ],
   "consumidas": {
-   "euro": 1786129903384,
    "premier": 1786132625684
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:19",
+     "jogo": "Irã x Inglaterra",
+     "odd": 2.1
+    },
+    {
+     "h": "21:22",
+     "jogo": "Austrália x Haiti",
+     "odd": 1.93
+    },
+    {
+     "h": "21:25",
+     "jogo": "Turquia x Cabo Verde",
+     "odd": 2
+    }
+   ],
+   "gatilho": "time Haiti",
+   "alvo": {
+    "h": "21:19",
+    "jogo": "Irã x Inglaterra",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1786133700388
+   },
+   "iniciadoEm": 1786133700388
+  },
   "cooldown": {
    "euro": 1786129903384,
    "super": 1786125182579,
@@ -7333,10 +7362,10 @@
    "2026-08-07": -10.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.83",
-   "n": 11,
-   "start": 1
+   "tipo": "time",
+   "chave": "Haiti",
+   "n": 15,
+   "start": 2
   },
   "_obs": {}
  }
