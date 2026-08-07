@@ -7110,8 +7110,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:31",
@@ -7131,13 +7131,21 @@
    ],
    "gatilho": "seq GGRGR",
    "alvo": {
-    "h": "17:31",
-    "jogo": "Porto Alegre x Agua Branca",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1786120136286
+    "h": "17:34",
+    "jogo": "Itaquera x La Boca",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1786120503587
    },
-   "iniciadoEm": 1786120136286
+   "iniciadoEm": 1786120136286,
+   "tiros": [
+    {
+     "h": "17:31",
+     "jogo": "Porto Alegre x Agua Branca",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786116837584,
@@ -7171,16 +7179,11 @@
    "2026-08-07": -4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRGR",
-   "n": 8,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":46",
+   "n": 17,
+   "start": 3
   },
-  "_obs": {
-   "euro": {
-    "desde": 1786120439486,
-    "gatilho": "odd 1.85"
-   }
-  }
+  "_obs": {}
  }
 }
