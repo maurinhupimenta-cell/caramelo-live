@@ -3936,11 +3936,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1786133705582,
    "euro": 1786134776186,
    "copa": 1786136696786
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:18",
+     "jogo": "Southampton x Norwich",
+     "odd": 2.3
+    },
+    {
+     "h": "22:21",
+     "jogo": "Leicester x Wolverhampton",
+     "odd": 2.15
+    },
+    {
+     "h": "22:24",
+     "jogo": "Brighton x United",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "seq GGRRR",
+   "alvo": {
+    "h": "22:18",
+    "jogo": "Southampton x Norwich",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1786137308277
+   },
+   "iniciadoEm": 1786137308277
+  },
   "cooldown": {
    "copa": 1786136696786,
    "premier": 1786133705582,
@@ -3975,20 +4004,26 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRRG",
-   "n": 18,
+   "chave": "GGRRR",
+   "n": 19,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -98.2,
-  "ciclos": 1091,
-  "greens": 746,
+  "saldo": -96.9,
+  "ciclos": 1092,
+  "greens": 747,
   "redsCiclo": 122,
   "aborts": 0,
   "descartes": 223,
   "historico": [
+   {
+    "quando": "2026-08-07T21:08:58.985Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "euro · Eslovênia x Escócia @2.15 (tiro 2) · gatilho: coluna :05"
+   },
    {
     "quando": "2026-08-07T20:49:51.078Z",
     "resultado": "GREEN",
@@ -7298,49 +7333,12 @@
   ],
   "consumidas": {
    "copa": 1786134478589,
-   "super": 1786135790877
+   "super": 1786135790877,
+   "euro": 1786136938579
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "22:02",
-     "jogo": "Alemanha x Dinamarca",
-     "odd": 2
-    },
-    {
-     "h": "22:05",
-     "jogo": "Eslovênia x Escócia",
-     "odd": 2.15
-    },
-    {
-     "h": "22:08",
-     "jogo": "Bélgica x Sérvia",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "coluna :05",
-   "alvo": {
-    "h": "22:05",
-    "jogo": "Eslovênia x Escócia",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1786136936889
-   },
-   "iniciadoEm": 1786136218485,
-   "tiros": [
-    {
-     "h": "22:02",
-     "jogo": "Alemanha x Dinamarca",
-     "odd": 2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1786129903384,
+   "euro": 1786136938579,
    "super": 1786135790877,
    "premier": 1786132625684,
    "copa": 1786134478589
@@ -7368,7 +7366,7 @@
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
-   "2026-08-07": -17
+   "2026-08-07": -15.7
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
