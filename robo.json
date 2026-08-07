@@ -343,13 +343,19 @@
   }
  },
  "o25": {
-  "saldo": -132.9,
-  "ciclos": 1094,
-  "greens": 690,
+  "saldo": -131.8,
+  "ciclos": 1095,
+  "greens": 691,
   "redsCiclo": 171,
   "aborts": 0,
   "descartes": 233,
   "historico": [
+   {
+    "quando": "2026-08-07T20:04:58.783Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Guayaquil x Montevideo @2.07 (tiro 2) · gatilho: odd 2.07"
+   },
    {
     "quando": "2026-08-07T19:52:59.182Z",
     "resultado": "GREEN",
@@ -3905,52 +3911,15 @@
   ],
   "consumidas": {
    "euro": 1786130702377,
-   "copa": 1786132378988
+   "copa": 1786132378988,
+   "super": 1786133098587
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "20:58",
-     "jogo": "Porto Alegre x Itaquera",
-     "odd": 2.62
-    },
-    {
-     "h": "21:01",
-     "jogo": "Guayaquil x Montevideo",
-     "odd": 2.07
-    },
-    {
-     "h": "21:04",
-     "jogo": "Avellaneda x Penarol",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "odd 2.07",
-   "alvo": {
-    "h": "21:01",
-    "jogo": "Guayaquil x Montevideo",
-    "odd": 2.07,
-    "unidades": 2,
-    "desde": 1786132977577
-   },
-   "iniciadoEm": 1786132381185,
-   "tiros": [
-    {
-     "h": "20:58",
-     "jogo": "Porto Alegre x Itaquera",
-     "odd": 2.62,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786132378988,
    "premier": 1786127933680,
    "euro": 1786130702377,
-   "super": 1786124818785
+   "super": 1786133098587
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -3976,7 +3945,7 @@
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
-   "2026-08-07": 1.8
+   "2026-08-07": 2.9
   },
   "_gatilhoAtual": {
    "tipo": "odd",
