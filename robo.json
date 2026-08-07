@@ -3807,8 +3807,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRGGR",
-   "n": 9,
+   "chave": "RRRRG",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
@@ -6993,8 +6993,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "14:25",
@@ -7014,13 +7014,21 @@
    ],
    "gatilho": "coluna :28",
    "alvo": {
-    "h": "14:25",
-    "jogo": "Nova Zelândia x França",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1786108881081
+    "h": "14:28",
+    "jogo": "Bósnia e Herzegovina x Curação",
+    "odd": 1.85,
+    "unidades": 2,
+    "desde": 1786109400084
    },
-   "iniciadoEm": 1786108881081
+   "iniciadoEm": 1786108881081,
+   "tiros": [
+    {
+     "h": "14:25",
+     "jogo": "Nova Zelândia x França",
+     "odd": 1.93,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786078928322,
@@ -7054,10 +7062,10 @@
    "2026-08-07": 5.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":28",
-   "n": 14,
-   "start": 2
+   "tipo": "time",
+   "chave": "Haiti",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  }
