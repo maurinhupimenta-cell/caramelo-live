@@ -318,13 +318,19 @@
   }
  },
  "o25": {
-  "saldo": -120.7,
-  "ciclos": 1058,
+  "saldo": -127.7,
+  "ciclos": 1059,
   "greens": 671,
-  "redsCiclo": 165,
+  "redsCiclo": 166,
   "aborts": 0,
   "descartes": 222,
   "historico": [
+   {
+    "quando": "2026-08-07T01:51:20.318Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: placar 1-0 / 0-1"
+   },
    {
     "quando": "2026-08-06T22:33:12.111Z",
     "resultado": "RED_CICLO",
@@ -3662,51 +3668,15 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "02:40",
-     "jogo": "Agua Branca x Penarol",
-     "odd": 2.35
-    },
-    {
-     "h": "02:43",
-     "jogo": "La Plata x Guayaquil",
-     "odd": 2.4
-    },
-    {
-     "h": "02:46",
-     "jogo": "Medellin x Buenos Aires",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "placar 1-0 / 0-1",
-   "alvo": {
-    "h": "02:43",
-    "jogo": "La Plata x Guayaquil",
-    "odd": 2.4,
-    "unidades": 2,
-    "desde": 1786067233211
-   },
-   "iniciadoEm": 1786066755012,
-   "tiros": [
-    {
-     "h": "02:40",
-     "jogo": "Agua Branca x Penarol",
-     "odd": 2.35,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "super": 1786067480119
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786054956821,
    "premier": 1786055591913,
    "euro": 1786048836913,
-   "super": 1786026475916
+   "super": 1786067480119
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -3731,13 +3701,13 @@
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
-   "2026-08-06": 9.6
+   "2026-08-06": 2.6
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.2",
    "n": 9,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
@@ -6873,8 +6843,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "02:40",
@@ -6894,13 +6864,27 @@
    ],
    "gatilho": "placar 1-0 / 0-1",
    "alvo": {
-    "h": "02:40",
-    "jogo": "Agua Branca x Penarol",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1786066755309
+    "h": "02:46",
+    "jogo": "Medellin x Buenos Aires",
+    "odd": 1.93,
+    "unidades": 4,
+    "desde": 1786067237109
    },
-   "iniciadoEm": 1786066755309
+   "iniciadoEm": 1786066755309,
+   "tiros": [
+    {
+     "h": "02:40",
+     "jogo": "Agua Branca x Penarol",
+     "odd": 2.07,
+     "unidades": 1
+    },
+    {
+     "h": "02:43",
+     "jogo": "La Plata x Guayaquil",
+     "odd": 2.07,
+     "unidades": 2
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786054628823,
@@ -6935,7 +6919,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "1-0 / 0-1",
-   "n": 11,
+   "n": 12,
    "start": 1
   },
   "_obs": {}
