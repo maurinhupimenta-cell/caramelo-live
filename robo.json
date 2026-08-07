@@ -7365,8 +7365,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "23:28",
@@ -7386,13 +7386,21 @@
    ],
    "gatilho": "odd 1.83",
    "alvo": {
-    "h": "23:28",
-    "jogo": "La Boca x Rio de Janeiro",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1786141317082
+    "h": "23:31",
+    "jogo": "Lima x Buenos Aires",
+    "odd": 1.83,
+    "unidades": 2,
+    "desde": 1786142039880
    },
-   "iniciadoEm": 1786141317082
+   "iniciadoEm": 1786141317082,
+   "tiros": [
+    {
+     "h": "23:28",
+     "jogo": "La Boca x Rio de Janeiro",
+     "odd": 2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786140596480,
@@ -7429,7 +7437,7 @@
    "tipo": "odd",
    "chave": "1.83",
    "n": 16,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
