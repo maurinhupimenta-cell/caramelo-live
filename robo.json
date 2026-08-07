@@ -321,17 +321,27 @@
    "euro": {
     "desde": 1785463711484,
     "gatilho": "time Eslovênia"
+   },
+   "premier": {
+    "desde": 1786117922581,
+    "gatilho": "odd 5.25"
    }
   }
  },
  "o25": {
-  "saldo": -142,
-  "ciclos": 1077,
-  "greens": 679,
+  "saldo": -140.8,
+  "ciclos": 1078,
+  "greens": 680,
   "redsCiclo": 170,
   "aborts": 0,
   "descartes": 228,
   "historico": [
+   {
+    "quando": "2026-08-07T15:52:58.080Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Portugal x Alemanha @2.15 (tiro 1) · gatilho: seq RRRGG"
+   },
    {
     "quando": "2026-08-07T15:49:00.188Z",
     "resultado": "GREEN",
@@ -3785,43 +3795,14 @@
   ],
   "consumidas": {
    "premier": 1786114439584,
-   "copa": 1786117740090
+   "copa": 1786117740090,
+   "euro": 1786117977883
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:50",
-     "jogo": "Portugal x Alemanha",
-     "odd": 2.15
-    },
-    {
-     "h": "16:53",
-     "jogo": "Países Baixos x Hungria",
-     "odd": 2.2
-    },
-    {
-     "h": "16:56",
-     "jogo": "Polônia x Turquia",
-     "odd": 2.7
-    }
-   ],
-   "gatilho": "seq RRRGG",
-   "alvo": {
-    "h": "16:50",
-    "jogo": "Portugal x Alemanha",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1786117742679
-   },
-   "iniciadoEm": 1786117742679
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786117740090,
    "premier": 1786114439584,
-   "euro": 1786113658478,
+   "euro": 1786117977883,
    "super": 1786071506316
   },
   "dias": {
@@ -3848,7 +3829,7 @@
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
-   "2026-08-07": -7.3
+   "2026-08-07": -6.1
   },
   "_gatilhoAtual": {
    "tipo": "seq",
