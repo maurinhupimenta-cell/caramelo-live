@@ -7028,7 +7028,37 @@
    "copa": 1786113476888,
    "super": 1786115038277
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:09",
+     "jogo": "Leicester x Brighton",
+     "odd": 1.93
+    },
+    {
+     "h": "16:12",
+     "jogo": "City x Norwich",
+     "odd": 2
+    },
+    {
+     "h": "16:15",
+     "jogo": "Leeds x United",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "coluna :09",
+   "alvo": {
+    "h": "16:09",
+    "jogo": "Leicester x Brighton",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1786115138188
+   },
+   "iniciadoEm": 1786115138188
+  },
   "cooldown": {
    "euro": 1786111497981,
    "super": 1786115038277,
@@ -7061,9 +7091,9 @@
    "2026-08-07": 9.3
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.83",
-   "n": 10,
+   "tipo": "coluna",
+   "chave": ":09",
+   "n": 16,
    "start": 1
   },
   "_obs": {}
