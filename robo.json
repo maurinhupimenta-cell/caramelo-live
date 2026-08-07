@@ -3712,13 +3712,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -82.1,
-  "ciclos": 1061,
-  "greens": 726,
+  "saldo": -81.2,
+  "ciclos": 1062,
+  "greens": 727,
   "redsCiclo": 117,
   "aborts": 0,
   "descartes": 218,
   "historico": [
+   {
+    "quando": "2026-08-07T02:50:07.215Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Itália x Croácia @1.98 (tiro 3) · gatilho: placar acima de 1-0 (2-0)"
+   },
    {
     "quando": "2026-08-07T01:51:20.611Z",
     "resultado": "RED_CICLO",
@@ -6847,55 +6853,12 @@
    }
   ],
   "consumidas": {
-   "super": 1786067480413
+   "super": 1786067480413,
+   "euro": 1786071007012
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "03:41",
-     "jogo": "Inglaterra x Ucrânia",
-     "odd": 1.95
-    },
-    {
-     "h": "03:44",
-     "jogo": "Portugal x Escócia",
-     "odd": 1.95
-    },
-    {
-     "h": "03:47",
-     "jogo": "Itália x Croácia",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-0)",
-   "alvo": {
-    "h": "03:47",
-    "jogo": "Itália x Croácia",
-    "odd": 1.98,
-    "unidades": 4,
-    "desde": 1786070900413
-   },
-   "iniciadoEm": 1786070291610,
-   "tiros": [
-    {
-     "h": "03:41",
-     "jogo": "Inglaterra x Ucrânia",
-     "odd": 1.95,
-     "unidades": 1
-    },
-    {
-     "h": "03:44",
-     "jogo": "Portugal x Escócia",
-     "odd": 1.95,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1786054628823,
+   "euro": 1786071007012,
    "super": 1786067480413,
    "premier": 1786055929710,
    "copa": 1786054957116
@@ -6922,7 +6885,7 @@
    "2026-08-03": 2.4,
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
-   "2026-08-06": -34.7
+   "2026-08-06": -33.8
   },
   "_gatilhoAtual": {
    "tipo": "placar",
