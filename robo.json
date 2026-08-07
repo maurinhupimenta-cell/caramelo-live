@@ -3772,7 +3772,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1786113658478,
    "copa": 1786113777180,
    "premier": 1786114439584
   },
@@ -7041,7 +7040,37 @@
    "premier": 1786115862687,
    "euro": 1786116837584
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:43",
+     "jogo": "Países Baixos x Paraguai",
+     "odd": 2.07
+    },
+    {
+     "h": "16:46",
+     "jogo": "Egito x Áustria",
+     "odd": 1.87
+    },
+    {
+     "h": "16:49",
+     "jogo": "Paraguai x Suíça",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "time Áustria",
+   "alvo": {
+    "h": "16:43",
+    "jogo": "Países Baixos x Paraguai",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1786117079678
+   },
+   "iniciadoEm": 1786117079678
+  },
   "cooldown": {
    "euro": 1786116837584,
    "super": 1786115038277,
@@ -7074,9 +7103,9 @@
    "2026-08-07": -4.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":26",
-   "n": 16,
+   "tipo": "time",
+   "chave": "Áustria",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
