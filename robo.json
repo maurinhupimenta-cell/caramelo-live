@@ -7219,10 +7219,39 @@
    }
   ],
   "consumidas": {
-   "euro": 1786125776478,
    "copa": 1786127396383
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:02",
+     "jogo": "Eslováquia x Polônia",
+     "odd": 2.1
+    },
+    {
+     "h": "20:05",
+     "jogo": "França x Escócia",
+     "odd": 1.9
+    },
+    {
+     "h": "20:08",
+     "jogo": "Itália x Países Baixos",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "coluna :05",
+   "alvo": {
+    "h": "20:02",
+    "jogo": "Eslováquia x Polônia",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1786129376681
+   },
+   "iniciadoEm": 1786129376681
+  },
   "cooldown": {
    "euro": 1786125776478,
    "super": 1786125182579,
@@ -7255,10 +7284,10 @@
    "2026-08-07": -12.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Coreia do Sul",
-   "n": 16,
-   "start": 3
+   "tipo": "coluna",
+   "chave": ":05",
+   "n": 20,
+   "start": 1
   },
   "_obs": {}
  }
