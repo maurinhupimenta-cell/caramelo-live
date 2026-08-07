@@ -3854,7 +3854,37 @@
    "premier": 1786122712082,
    "super": 1786124818785
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:10",
+     "jogo": "Suíça x RD Congo",
+     "odd": 2.2
+    },
+    {
+     "h": "19:13",
+     "jogo": "Haiti x Senegal",
+     "odd": 2.3
+    },
+    {
+     "h": "19:16",
+     "jogo": "RD Congo x Marrocos",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time Haiti",
+   "alvo": {
+    "h": "19:10",
+    "jogo": "Suíça x RD Congo",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1786125716387
+   },
+   "iniciadoEm": 1786125716387
+  },
   "cooldown": {
    "copa": 1786122062390,
    "premier": 1786122712082,
@@ -3888,21 +3918,27 @@
    "2026-08-07": -5.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGG",
+   "tipo": "time",
+   "chave": "Haiti",
    "n": 12,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -95.7,
-  "ciclos": 1084,
-  "greens": 741,
+  "saldo": -94.6,
+  "ciclos": 1085,
+  "greens": 742,
   "redsCiclo": 121,
   "aborts": 0,
   "descartes": 222,
   "historico": [
+   {
+    "quando": "2026-08-07T18:02:56.584Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Geórgia x Ucrânia @2.05 (tiro 2) · gatilho: odd 1.8"
+   },
    {
     "quando": "2026-08-07T17:53:02.778Z",
     "resultado": "RED_CICLO",
@@ -7169,43 +7205,43 @@
    }
   ],
   "consumidas": {
-   "copa": 1786122062777,
    "premier": 1786123619679,
-   "super": 1786125182579
+   "super": 1786125182579,
+   "euro": 1786125776478
   },
   "ciclo": {
-   "liga": "euro",
+   "liga": "copa",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "18:56",
-     "jogo": "França x Países Baixos",
-     "odd": 1.8
+     "h": "19:07",
+     "jogo": "Inglaterra x Brasil",
+     "odd": 1.93
     },
     {
-     "h": "18:59",
-     "jogo": "Geórgia x Ucrânia",
-     "odd": 2.05
+     "h": "19:10",
+     "jogo": "Suíça x RD Congo",
+     "odd": 1.98
     },
     {
-     "h": "19:02",
-     "jogo": "Eslovênia x Portugal",
-     "odd": 2.15
+     "h": "19:13",
+     "jogo": "Haiti x Senegal",
+     "odd": 2.02
     }
    ],
-   "gatilho": "odd 1.8",
+   "gatilho": "time RD Congo",
    "alvo": {
-    "h": "18:56",
-    "jogo": "França x Países Baixos",
-    "odd": 1.8,
+    "h": "19:07",
+    "jogo": "Inglaterra x Brasil",
+    "odd": 1.93,
     "unidades": 1,
-    "desde": 1786125224781
+    "desde": 1786125778783
    },
-   "iniciadoEm": 1786125224781
+   "iniciadoEm": 1786125778783
   },
   "cooldown": {
-   "euro": 1786121398992,
+   "euro": 1786125776478,
    "super": 1786125182579,
    "premier": 1786123619679,
    "copa": 1786122062777
@@ -7233,12 +7269,12 @@
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
-   "2026-08-07": -14.5
+   "2026-08-07": -13.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":05",
-   "n": 19,
+   "tipo": "time",
+   "chave": "RD Congo",
+   "n": 13,
    "start": 2
   },
   "_obs": {}
