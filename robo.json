@@ -297,7 +297,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:36",
+     "jogo": "Southampton x Watford",
+     "odd": 5
+    },
+    {
+     "h": "19:39",
+     "jogo": "United x West Ham",
+     "odd": 5.25
+    },
+    {
+     "h": "19:42",
+     "jogo": "Wolverhampton x Palace",
+     "odd": 4
+    }
+   ],
+   "gatilho": "odd 5.25",
+   "alvo": {
+    "h": "19:36",
+    "jogo": "Southampton x Watford",
+    "odd": 5,
+    "unidades": 1,
+    "desde": 1786127222986
+   },
+   "iniciadoEm": 1786127222986
+  },
   "cooldown": {
    "copa": 1785978110378,
    "premier": 1786120051878,
@@ -326,8 +356,8 @@
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "5.25",
-   "n": 13,
-   "start": 1
+   "n": 16,
+   "start": 3
   },
   "_obs": {
    "euro": {
@@ -338,12 +368,18 @@
  },
  "o25": {
   "saldo": -138.5,
-  "ciclos": 1088,
+  "ciclos": 1089,
   "greens": 686,
   "redsCiclo": 171,
   "aborts": 0,
-  "descartes": 231,
+  "descartes": 232,
   "historico": [
+   {
+    "quando": "2026-08-07T18:29:56.285Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Haiti) — liga REARMADA"
+   },
    {
     "quando": "2026-08-07T18:19:49.682Z",
     "resultado": "GREEN",
@@ -3865,7 +3901,37 @@
    "super": 1786124818785,
    "euro": 1786126789487
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:36",
+     "jogo": "Southampton x Watford",
+     "odd": 2.4
+    },
+    {
+     "h": "19:39",
+     "jogo": "United x West Ham",
+     "odd": 2.5
+    },
+    {
+     "h": "19:42",
+     "jogo": "Wolverhampton x Palace",
+     "odd": 2.075
+    }
+   ],
+   "gatilho": "odd 2.5",
+   "alvo": {
+    "h": "19:36",
+    "jogo": "Southampton x Watford",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1786127223183
+   },
+   "iniciadoEm": 1786127223183
+  },
   "cooldown": {
    "copa": 1786122062390,
    "premier": 1786122712082,
@@ -3900,9 +3966,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.55",
-   "n": 13,
-   "start": 1
+   "chave": "2.5",
+   "n": 16,
+   "start": 3
   },
   "_obs": {
    "copa": {
