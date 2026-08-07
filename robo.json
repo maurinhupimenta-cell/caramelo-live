@@ -325,13 +325,19 @@
   }
  },
  "o25": {
-  "saldo": -136.2,
-  "ciclos": 1074,
+  "saldo": -143.2,
+  "ciclos": 1075,
   "greens": 678,
-  "redsCiclo": 169,
+  "redsCiclo": 170,
   "aborts": 0,
   "descartes": 227,
   "historico": [
+   {
+    "quando": "2026-08-07T14:53:59.785Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq GGRRR"
+   },
    {
     "quando": "2026-08-07T14:42:57.380Z",
     "resultado": "GREEN",
@@ -3767,56 +3773,13 @@
   ],
   "consumidas": {
    "euro": 1786113658478,
-   "copa": 1786113777180
+   "copa": 1786113777180,
+   "premier": 1786114439584
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "15:45",
-     "jogo": "Islington x Southampton",
-     "odd": 2.35
-    },
-    {
-     "h": "15:48",
-     "jogo": "Everton x Leicester",
-     "odd": 2.2
-    },
-    {
-     "h": "15:51",
-     "jogo": "Brentford x Islington",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "seq GGRRR",
-   "alvo": {
-    "h": "15:51",
-    "jogo": "Brentford x Islington",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1786114244484
-   },
-   "iniciadoEm": 1786113779680,
-   "tiros": [
-    {
-     "h": "15:45",
-     "jogo": "Islington x Southampton",
-     "odd": 2.35,
-     "unidades": 1
-    },
-    {
-     "h": "15:48",
-     "jogo": "Everton x Leicester",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786113777180,
-   "premier": 1786077188215,
+   "premier": 1786114439584,
    "euro": 1786113658478,
    "super": 1786071506316
   },
@@ -3844,7 +3807,7 @@
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
-   "2026-08-07": -1.5
+   "2026-08-07": -8.5
   },
   "_gatilhoAtual": {
    "tipo": "seq",
