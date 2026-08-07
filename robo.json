@@ -3907,7 +3907,37 @@
    "euro": 1786130702377,
    "copa": 1786132378988
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:58",
+     "jogo": "Porto Alegre x Itaquera",
+     "odd": 2.62
+    },
+    {
+     "h": "21:01",
+     "jogo": "Guayaquil x Montevideo",
+     "odd": 2.07
+    },
+    {
+     "h": "21:04",
+     "jogo": "Avellaneda x Penarol",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "odd 2.07",
+   "alvo": {
+    "h": "20:58",
+    "jogo": "Porto Alegre x Itaquera",
+    "odd": 2.62,
+    "unidades": 1,
+    "desde": 1786132381185
+   },
+   "iniciadoEm": 1786132381185
+  },
   "cooldown": {
    "copa": 1786132378988,
    "premier": 1786127933680,
@@ -3942,20 +3972,26 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.07",
-   "n": 10,
+   "chave": "2.35",
+   "n": 14,
    "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -93,
-  "ciclos": 1087,
-  "greens": 744,
+  "saldo": -92.1,
+  "ciclos": 1088,
+  "greens": 745,
   "redsCiclo": 121,
   "aborts": 0,
   "descartes": 222,
   "historico": [
+   {
+    "quando": "2026-08-07T19:57:05.878Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Aston x Wolverhampton @1.9 (tiro 1) · gatilho: odd 1.83"
+   },
    {
     "quando": "2026-08-07T19:11:43.580Z",
     "resultado": "GREEN",
@@ -7240,43 +7276,14 @@
    }
   ],
   "consumidas": {
-   "euro": 1786129903384
+   "euro": 1786129903384,
+   "premier": 1786132625684
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:54",
-     "jogo": "Aston x Wolverhampton",
-     "odd": 1.9
-    },
-    {
-     "h": "20:57",
-     "jogo": "Norwich x Newcastle",
-     "odd": 1.83
-    },
-    {
-     "h": "21:00",
-     "jogo": "Southampton x Liverpool",
-     "odd": 2
-    }
-   ],
-   "gatilho": "odd 1.83",
-   "alvo": {
-    "h": "20:54",
-    "jogo": "Aston x Wolverhampton",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1786131903387
-   },
-   "iniciadoEm": 1786131903387
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786129903384,
    "super": 1786125182579,
-   "premier": 1786123619679,
+   "premier": 1786132625684,
    "copa": 1786127396383
   },
   "dias": {
@@ -7302,13 +7309,13 @@
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
-   "2026-08-07": -11.8
+   "2026-08-07": -10.9
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "1.83",
    "n": 11,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
