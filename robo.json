@@ -3750,7 +3750,45 @@
   "consumidas": {
    "euro": 1786109457080
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "14:28",
+     "jogo": "Bósnia e Herzegovina x Curação",
+     "odd": 2.05
+    },
+    {
+     "h": "14:31",
+     "jogo": "Portugal x Austrália",
+     "odd": 2.15
+    },
+    {
+     "h": "14:34",
+     "jogo": "Equador x Uruguai",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "seq RRRRG",
+   "alvo": {
+    "h": "14:31",
+    "jogo": "Portugal x Austrália",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1786109516478
+   },
+   "iniciadoEm": 1786109459580,
+   "tiros": [
+    {
+     "h": "14:28",
+     "jogo": "Bósnia e Herzegovina x Curação",
+     "odd": 2.05,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1786079466919,
    "premier": 1786077188215,
@@ -3784,10 +3822,10 @@
    "2026-08-07": 2.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRG",
-   "n": 11,
-   "start": 1
+   "tipo": "time",
+   "chave": "Haiti",
+   "n": 8,
+   "start": 2
   },
   "_obs": {}
  },
