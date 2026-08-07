@@ -339,13 +339,19 @@
   }
  },
  "o25": {
-  "saldo": -135.2,
-  "ciclos": 1084,
-  "greens": 684,
+  "saldo": -133.5,
+  "ciclos": 1085,
+  "greens": 685,
   "redsCiclo": 170,
   "aborts": 0,
   "descartes": 230,
   "historico": [
+   {
+    "quando": "2026-08-07T17:11:52.281Z",
+    "resultado": "GREEN",
+    "unidades": 1.7,
+    "detalhe": "premier · Newcastle x West Ham @2.35 (tiro 2) · gatilho: odd 2.35"
+   },
    {
     "quando": "2026-08-07T17:05:01.177Z",
     "resultado": "GREEN",
@@ -3842,50 +3848,13 @@
   "consumidas": {
    "super": 1786119481378,
    "copa": 1786122062390,
-   "euro": 1786122300591
+   "euro": 1786122300591,
+   "premier": 1786122712082
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "18:06",
-     "jogo": "Chelsea x Islington",
-     "odd": 2.2
-    },
-    {
-     "h": "18:09",
-     "jogo": "Newcastle x West Ham",
-     "odd": 2.35
-    },
-    {
-     "h": "18:12",
-     "jogo": "Tottenham x Chelsea",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "odd 2.35",
-   "alvo": {
-    "h": "18:09",
-    "jogo": "Newcastle x West Ham",
-    "odd": 2.35,
-    "unidades": 2,
-    "desde": 1786122527877
-   },
-   "iniciadoEm": 1786122302782,
-   "tiros": [
-    {
-     "h": "18:06",
-     "jogo": "Chelsea x Islington",
-     "odd": 2.2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786122062390,
-   "premier": 1786118584186,
+   "premier": 1786122712082,
    "euro": 1786122300591,
    "super": 1786119481378
   },
@@ -3913,7 +3882,7 @@
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
-   "2026-08-07": -0.5
+   "2026-08-07": 1.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
