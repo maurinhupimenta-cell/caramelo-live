@@ -337,13 +337,19 @@
   }
  },
  "o25": {
-  "saldo": -133.5,
-  "ciclos": 1085,
+  "saldo": -140.5,
+  "ciclos": 1086,
   "greens": 685,
-  "redsCiclo": 170,
+  "redsCiclo": 171,
   "aborts": 0,
   "descartes": 230,
   "historico": [
+   {
+    "quando": "2026-08-07T17:46:58.980Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: seq RGGG"
+   },
    {
     "quando": "2026-08-07T17:11:52.281Z",
     "resultado": "GREEN",
@@ -3846,58 +3852,15 @@
   "consumidas": {
    "copa": 1786122062390,
    "euro": 1786122300591,
-   "premier": 1786122712082
+   "premier": 1786122712082,
+   "super": 1786124818785
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "18:37",
-     "jogo": "Medellin x Santos",
-     "odd": 2.45
-    },
-    {
-     "h": "18:40",
-     "jogo": "Asuncion x Penarol",
-     "odd": 2.45
-    },
-    {
-     "h": "18:43",
-     "jogo": "Sao Paulo x Santos",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "seq RGGG",
-   "alvo": {
-    "h": "18:43",
-    "jogo": "Sao Paulo x Santos",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1786124638590
-   },
-   "iniciadoEm": 1786124156886,
-   "tiros": [
-    {
-     "h": "18:37",
-     "jogo": "Medellin x Santos",
-     "odd": 2.45,
-     "unidades": 1
-    },
-    {
-     "h": "18:40",
-     "jogo": "Asuncion x Penarol",
-     "odd": 2.45,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786122062390,
    "premier": 1786122712082,
    "euro": 1786122300591,
-   "super": 1786119481378
+   "super": 1786124818785
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -3923,7 +3886,7 @@
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
-   "2026-08-07": 1.2
+   "2026-08-07": -5.8
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -7201,8 +7164,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "18:43",
@@ -7222,13 +7185,21 @@
    ],
    "gatilho": "coluna :46",
    "alvo": {
-    "h": "18:43",
-    "jogo": "Sao Paulo x Santos",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1786124460683
+    "h": "18:46",
+    "jogo": "Santiago x Medellin",
+    "odd": 1.9,
+    "unidades": 2,
+    "desde": 1786124819077
    },
-   "iniciadoEm": 1786124460683
+   "iniciadoEm": 1786124460683,
+   "tiros": [
+    {
+     "h": "18:43",
+     "jogo": "Sao Paulo x Santos",
+     "odd": 1.93,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786121398992,
@@ -7263,7 +7234,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":46",
+   "chave": ":49",
    "n": 18,
    "start": 1
   },
