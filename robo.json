@@ -3942,11 +3942,40 @@
    }
   ],
   "consumidas": {
-   "euro": 1786134776186,
    "copa": 1786136696786,
    "premier": 1786137646277
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:38",
+     "jogo": "França x Geórgia",
+     "odd": 2.2
+    },
+    {
+     "h": "22:41",
+     "jogo": "Polônia x Dinamarca",
+     "odd": 2.55
+    },
+    {
+     "h": "22:44",
+     "jogo": "Itália x Eslováquia",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "odd 2.55",
+   "alvo": {
+    "h": "22:38",
+    "jogo": "França x Geórgia",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1786138376984
+   },
+   "iniciadoEm": 1786138376984
+  },
   "cooldown": {
    "copa": 1786136696786,
    "premier": 1786137646277,
@@ -3980,10 +4009,10 @@
    "2026-08-07": 0
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRRR",
-   "n": 19,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.55",
+   "n": 17,
+   "start": 2
   },
   "_obs": {}
  },
