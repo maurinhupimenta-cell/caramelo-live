@@ -3969,7 +3969,37 @@
    "premier": 1786141991486,
    "copa": 1786143416380
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "00:05",
+     "jogo": "Alemanha x Ucrânia",
+     "odd": 2.2
+    },
+    {
+     "h": "00:08",
+     "jogo": "Romênia x França",
+     "odd": 2.02
+    },
+    {
+     "h": "00:11",
+     "jogo": "Ucrânia x Dinamarca",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "odd 2.02",
+   "alvo": {
+    "h": "00:05",
+    "jogo": "Alemanha x Ucrânia",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1786143478480
+   },
+   "iniciadoEm": 1786143478480
+  },
   "cooldown": {
    "copa": 1786143416380,
    "premier": 1786141991486,
@@ -4003,10 +4033,10 @@
    "2026-08-07": 4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRG",
-   "n": 19,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.02",
+   "n": 14,
+   "start": 2
   },
   "_obs": {}
  },
