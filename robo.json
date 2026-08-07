@@ -318,13 +318,19 @@
   }
  },
  "o25": {
-  "saldo": -134.7,
-  "ciclos": 1061,
-  "greens": 671,
+  "saldo": -131.7,
+  "ciclos": 1062,
+  "greens": 672,
   "redsCiclo": 167,
   "aborts": 0,
   "descartes": 223,
   "historico": [
+   {
+    "quando": "2026-08-07T03:11:03.813Z",
+    "resultado": "GREEN",
+    "unidades": 3,
+    "detalhe": "euro · Suíça x Eslovênia @2.5 (tiro 3) · gatilho: placar empate 1-1"
+   },
    {
     "quando": "2026-08-07T02:58:26.511Z",
     "resultado": "RED_CICLO",
@@ -3681,57 +3687,14 @@
    }
   ],
   "consumidas": {
-   "super": 1786071506316
+   "super": 1786071506316,
+   "euro": 1786072263615
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:02",
-     "jogo": "Escócia x Bélgica",
-     "odd": 2.15
-    },
-    {
-     "h": "04:05",
-     "jogo": "Polônia x Albânia",
-     "odd": 2.87
-    },
-    {
-     "h": "04:08",
-     "jogo": "Suíça x Eslovênia",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "placar empate 1-1",
-   "alvo": {
-    "h": "04:08",
-    "jogo": "Suíça x Eslovênia",
-    "odd": 2.5,
-    "unidades": 4,
-    "desde": 1786072070313
-   },
-   "iniciadoEm": 1786071826321,
-   "tiros": [
-    {
-     "h": "04:02",
-     "jogo": "Escócia x Bélgica",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "04:05",
-     "jogo": "Polônia x Albânia",
-     "odd": 2.87,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786054956821,
    "premier": 1786055591913,
-   "euro": 1786048836913,
+   "euro": 1786072263615,
    "super": 1786071506316
   },
   "dias": {
@@ -3757,13 +3720,14 @@
    "2026-08-03": 40.1,
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
-   "2026-08-06": -4.4
+   "2026-08-06": -4.4,
+   "2026-08-07": 3
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 9,
-   "start": 1
+   "tipo": "time",
+   "chave": "Albânia",
+   "n": 8,
+   "start": 2
   },
   "_obs": {}
  },
