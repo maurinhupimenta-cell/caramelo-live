@@ -4015,7 +4015,7 @@
    "tipo": "odd",
    "chave": "2.35",
    "n": 17,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
@@ -7356,7 +7356,37 @@
    "premier": 1786140163584,
    "euro": 1786140596480
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:28",
+     "jogo": "La Boca x Rio de Janeiro",
+     "odd": 2
+    },
+    {
+     "h": "23:31",
+     "jogo": "Lima x Buenos Aires",
+     "odd": 1.83
+    },
+    {
+     "h": "23:34",
+     "jogo": "Montevideo x Santiago",
+     "odd": 1.8
+    }
+   ],
+   "gatilho": "odd 1.83",
+   "alvo": {
+    "h": "23:28",
+    "jogo": "La Boca x Rio de Janeiro",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1786141317082
+   },
+   "iniciadoEm": 1786141317082
+  },
   "cooldown": {
    "euro": 1786140596480,
    "super": 1786135790877,
@@ -7389,10 +7419,10 @@
    "2026-08-07": -14
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":05",
-   "n": 23,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.83",
+   "n": 16,
+   "start": 3
   },
   "_obs": {}
  }
