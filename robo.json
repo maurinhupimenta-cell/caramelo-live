@@ -3723,7 +3723,37 @@
    "euro": 1786076985418,
    "premier": 1786077188215
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:04",
+     "jogo": "Escócia x Panamá",
+     "odd": 2.7
+    },
+    {
+     "h": "06:07",
+     "jogo": "Suécia x Portugal",
+     "odd": 2.4
+    },
+    {
+     "h": "06:10",
+     "jogo": "Noruega x Irã",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "odd 2.4",
+   "alvo": {
+    "h": "06:04",
+    "jogo": "Escócia x Panamá",
+    "odd": 2.7,
+    "unidades": 1,
+    "desde": 1786078965313
+   },
+   "iniciadoEm": 1786078965313
+  },
   "cooldown": {
    "copa": 1786074908412,
    "premier": 1786077188215,
@@ -3757,10 +3787,10 @@
    "2026-08-07": -0.7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Palace",
-   "n": 8,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.4",
+   "n": 11,
+   "start": 2
   },
   "_obs": {}
  },
