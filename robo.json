@@ -311,8 +311,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "23:42",
@@ -332,13 +332,21 @@
    ],
    "gatilho": "odd 5.25",
    "alvo": {
-    "h": "23:42",
-    "jogo": "Brentford x Southampton",
-    "odd": 4.75,
-    "unidades": 1,
-    "desde": 1786141991285
+    "h": "23:45",
+    "jogo": "Palace x Leeds",
+    "odd": 5.25,
+    "unidades": 2,
+    "desde": 1786142693383
    },
-   "iniciadoEm": 1786141991285
+   "iniciadoEm": 1786141991285,
+   "tiros": [
+    {
+     "h": "23:42",
+     "jogo": "Brentford x Southampton",
+     "odd": 4.75,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785978110378,
@@ -369,7 +377,7 @@
    "tipo": "odd",
    "chave": "5.25",
    "n": 19,
-   "start": 3
+   "start": 1
   },
   "_obs": {
    "euro": {
