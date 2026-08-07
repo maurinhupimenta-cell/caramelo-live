@@ -318,13 +318,19 @@
   }
  },
  "o25": {
-  "saldo": -131.7,
-  "ciclos": 1062,
-  "greens": 672,
+  "saldo": -129.7,
+  "ciclos": 1063,
+  "greens": 673,
   "redsCiclo": 167,
   "aborts": 0,
   "descartes": 223,
   "historico": [
+   {
+    "quando": "2026-08-07T03:55:08.612Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "copa · EUA x Irã @2.5 (tiro 2) · gatilho: odd 2.2"
+   },
    {
     "quando": "2026-08-07T03:11:03.813Z",
     "resultado": "GREEN",
@@ -3688,41 +3694,12 @@
   ],
   "consumidas": {
    "super": 1786071506316,
-   "euro": 1786072263615
+   "euro": 1786072263615,
+   "copa": 1786074908412
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:46",
-     "jogo": "Bósnia e Herzegovina x Argélia",
-     "odd": 2.2
-    },
-    {
-     "h": "04:49",
-     "jogo": "EUA x Irã",
-     "odd": 2.5
-    },
-    {
-     "h": "04:52",
-     "jogo": "Qatar x Bósnia e Herzegovina",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "odd 2.2",
-   "alvo": {
-    "h": "04:46",
-    "jogo": "Bósnia e Herzegovina x Argélia",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1786074424913
-   },
-   "iniciadoEm": 1786074424913
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1786054956821,
+   "copa": 1786074908412,
    "premier": 1786055591913,
    "euro": 1786072263615,
    "super": 1786071506316
@@ -3751,13 +3728,13 @@
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
-   "2026-08-07": 3
+   "2026-08-07": 5
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.2",
-   "n": 11,
-   "start": 1
+   "n": 12,
+   "start": 2
   },
   "_obs": {}
  },
@@ -6976,8 +6953,8 @@
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.1",
-   "n": 8,
-   "start": 3
+   "n": 9,
+   "start": 1
   },
   "_obs": {}
  }
