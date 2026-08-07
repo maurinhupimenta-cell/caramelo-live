@@ -325,13 +325,19 @@
   }
  },
  "o25": {
-  "saldo": -133.6,
-  "ciclos": 1070,
-  "greens": 675,
+  "saldo": -132.3,
+  "ciclos": 1071,
+  "greens": 676,
   "redsCiclo": 168,
   "aborts": 0,
   "descartes": 227,
   "historico": [
+   {
+    "quando": "2026-08-07T13:30:57.280Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "euro · Países Baixos x Polônia @2.3 (tiro 1) · gatilho: seq RRGGR"
+   },
    {
     "quando": "2026-08-07T13:22:57.578Z",
     "resultado": "GREEN_OBS",
@@ -3741,42 +3747,14 @@
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:26",
-     "jogo": "Países Baixos x Polônia",
-     "odd": 2.3
-    },
-    {
-     "h": "14:29",
-     "jogo": "Albânia x Eslováquia",
-     "odd": 2.62
-    },
-    {
-     "h": "14:32",
-     "jogo": "Croácia x Hungria",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "seq RRGGR",
-   "alvo": {
-    "h": "14:26",
-    "jogo": "Países Baixos x Polônia",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1786108979788
-   },
-   "iniciadoEm": 1786108979788
+  "consumidas": {
+   "euro": 1786109457080
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786079466919,
    "premier": 1786077188215,
-   "euro": 1786076985418,
+   "euro": 1786109457080,
    "super": 1786071506316
   },
   "dias": {
@@ -3803,7 +3781,7 @@
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
-   "2026-08-07": 1.1
+   "2026-08-07": 2.4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
