@@ -7037,8 +7037,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "16:23",
@@ -7058,13 +7058,21 @@
    ],
    "gatilho": "coluna :26",
    "alvo": {
-    "h": "16:23",
-    "jogo": "Espanha x Escócia",
-    "odd": 1.87,
-    "unidades": 1,
-    "desde": 1786115875883
+    "h": "16:26",
+    "jogo": "República Tcheca x Turquia",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1786116661384
    },
-   "iniciadoEm": 1786115875883
+   "iniciadoEm": 1786115875883,
+   "tiros": [
+    {
+     "h": "16:23",
+     "jogo": "Espanha x Escócia",
+     "odd": 1.87,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786111497981,
@@ -7101,7 +7109,7 @@
    "tipo": "coluna",
    "chave": ":26",
    "n": 16,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
