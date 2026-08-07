@@ -375,13 +375,19 @@
   }
  },
  "o25": {
-  "saldo": -138.5,
-  "ciclos": 1089,
-  "greens": 686,
+  "saldo": -137.1,
+  "ciclos": 1090,
+  "greens": 687,
   "redsCiclo": 171,
   "aborts": 0,
   "descartes": 232,
   "historico": [
+   {
+    "quando": "2026-08-07T18:38:53.878Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "premier · Southampton x Watford @2.4 (tiro 1) · gatilho: odd 2.5"
+   },
    {
     "quando": "2026-08-07T18:29:56.285Z",
     "resultado": "GREEN_OBS",
@@ -3907,42 +3913,43 @@
   ],
   "consumidas": {
    "super": 1786124818785,
-   "euro": 1786126789487
+   "euro": 1786126789487,
+   "premier": 1786127933680
   },
   "ciclo": {
-   "liga": "premier",
+   "liga": "copa",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "19:36",
-     "jogo": "Southampton x Watford",
+     "h": "19:43",
+     "jogo": "Gana x Qatar",
      "odd": 2.4
     },
     {
-     "h": "19:39",
-     "jogo": "United x West Ham",
-     "odd": 2.5
+     "h": "19:46",
+     "jogo": "Haiti x Suécia",
+     "odd": 2.4
     },
     {
-     "h": "19:42",
-     "jogo": "Wolverhampton x Palace",
-     "odd": 2.075
+     "h": "19:49",
+     "jogo": "Turquia x Inglaterra",
+     "odd": 2.25
     }
    ],
-   "gatilho": "odd 2.5",
+   "gatilho": "time Haiti",
    "alvo": {
-    "h": "19:36",
-    "jogo": "Southampton x Watford",
+    "h": "19:43",
+    "jogo": "Gana x Qatar",
     "odd": 2.4,
     "unidades": 1,
-    "desde": 1786127223183
+    "desde": 1786127936677
    },
-   "iniciadoEm": 1786127223183
+   "iniciadoEm": 1786127936677
   },
   "cooldown": {
    "copa": 1786122062390,
-   "premier": 1786122712082,
+   "premier": 1786127933680,
    "euro": 1786126789487,
    "super": 1786124818785
   },
@@ -3970,13 +3977,13 @@
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
-   "2026-08-07": -3.8
+   "2026-08-07": -2.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.5",
-   "n": 16,
-   "start": 1
+   "tipo": "time",
+   "chave": "Haiti",
+   "n": 13,
+   "start": 2
   },
   "_obs": {}
  },
