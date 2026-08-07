@@ -3833,8 +3833,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:55",
@@ -3854,13 +3854,21 @@
    ],
    "gatilho": "coluna :58",
    "alvo": {
-    "h": "17:55",
-    "jogo": "Canadá x Argélia",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1786121340684
+    "h": "17:58",
+    "jogo": "Arábia Saudita x Austrália",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1786121879489
    },
-   "iniciadoEm": 1786121340684
+   "iniciadoEm": 1786121340684,
+   "tiros": [
+    {
+     "h": "17:55",
+     "jogo": "Canadá x Argélia",
+     "odd": 2.4,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786117740090,
@@ -3898,7 +3906,7 @@
    "tipo": "coluna",
    "chave": ":58",
    "n": 17,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -7221,7 +7229,7 @@
    "tipo": "coluna",
    "chave": ":58",
    "n": 17,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
