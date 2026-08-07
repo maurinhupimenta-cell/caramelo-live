@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -141.5,
-  "ciclos": 204,
-  "greens": 68,
+  "saldo": -132.5,
+  "ciclos": 205,
+  "greens": 69,
   "redsCiclo": 85,
   "aborts": 0,
   "descartes": 51,
   "historico": [
+   {
+    "quando": "2026-08-07T18:44:47.282Z",
+    "resultado": "GREEN",
+    "unidades": 9,
+    "detalhe": "premier · Wolverhampton x Palace @4 (tiro 3) · gatilho: odd 5.25"
+   },
    {
     "quando": "2026-08-07T16:27:31.986Z",
     "resultado": "GREEN",
@@ -296,55 +302,13 @@
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "19:36",
-     "jogo": "Southampton x Watford",
-     "odd": 5
-    },
-    {
-     "h": "19:39",
-     "jogo": "United x West Ham",
-     "odd": 5.25
-    },
-    {
-     "h": "19:42",
-     "jogo": "Wolverhampton x Palace",
-     "odd": 4
-    }
-   ],
-   "gatilho": "odd 5.25",
-   "alvo": {
-    "h": "19:42",
-    "jogo": "Wolverhampton x Palace",
-    "odd": 4,
-    "unidades": 4,
-    "desde": 1786128098790
-   },
-   "iniciadoEm": 1786127222986,
-   "tiros": [
-    {
-     "h": "19:36",
-     "jogo": "Southampton x Watford",
-     "odd": 5,
-     "unidades": 1
-    },
-    {
-     "h": "19:39",
-     "jogo": "United x West Ham",
-     "odd": 5.25,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1786128287086
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1785978110378,
-   "premier": 1786120051878,
+   "premier": 1786128287086,
    "euro": 1785464913993,
    "super": 1785983452169
   },
@@ -365,7 +329,7 @@
    "2026-08-02": -7,
    "2026-08-04": 19,
    "2026-08-05": 20.8,
-   "2026-08-07": 5
+   "2026-08-07": 14
   },
   "_gatilhoAtual": {
    "tipo": "odd",
