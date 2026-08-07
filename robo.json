@@ -338,12 +338,18 @@
  },
  "o25": {
   "saldo": -140.5,
-  "ciclos": 1086,
+  "ciclos": 1087,
   "greens": 685,
   "redsCiclo": 171,
   "aborts": 0,
-  "descartes": 230,
+  "descartes": 231,
   "historico": [
+   {
+    "quando": "2026-08-07T18:16:57.081Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-08-07T17:46:58.980Z",
     "resultado": "RED_CICLO",
@@ -3853,35 +3859,35 @@
    "super": 1786124818785
   },
   "ciclo": {
-   "liga": "copa",
+   "liga": "euro",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "19:10",
-     "jogo": "Suíça x RD Congo",
-     "odd": 2.2
+     "h": "19:11",
+     "jogo": "Suíça x Inglaterra",
+     "odd": 2.02
     },
     {
-     "h": "19:13",
-     "jogo": "Haiti x Senegal",
-     "odd": 2.3
+     "h": "19:14",
+     "jogo": "República Tcheca x Eslováquia",
+     "odd": 2.55
     },
     {
-     "h": "19:16",
-     "jogo": "RD Congo x Marrocos",
-     "odd": 2.2
+     "h": "19:17",
+     "jogo": "Polônia x Espanha",
+     "odd": 2.25
     }
    ],
-   "gatilho": "time Haiti",
+   "gatilho": "odd 2.55",
    "alvo": {
-    "h": "19:10",
-    "jogo": "Suíça x RD Congo",
-    "odd": 2.2,
+    "h": "19:11",
+    "jogo": "Suíça x Inglaterra",
+    "odd": 2.02,
     "unidades": 1,
-    "desde": 1786125716387
+    "desde": 1786126619086
    },
-   "iniciadoEm": 1786125716387
+   "iniciadoEm": 1786126619086
   },
   "cooldown": {
    "copa": 1786122062390,
@@ -3916,12 +3922,17 @@
    "2026-08-07": -5.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Haiti",
-   "n": 12,
+   "tipo": "odd",
+   "chave": "2.55",
+   "n": 13,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1786126619085,
+    "gatilho": "time Haiti"
+   }
+  }
  },
  "ambas": {
   "saldo": -94.6,
