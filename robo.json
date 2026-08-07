@@ -3766,13 +3766,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -78.3,
-  "ciclos": 1065,
-  "greens": 730,
+  "saldo": -77.4,
+  "ciclos": 1066,
+  "greens": 731,
   "redsCiclo": 117,
   "aborts": 0,
   "descartes": 218,
   "historico": [
+   {
+    "quando": "2026-08-07T04:44:52.317Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Norwich x Everton @1.87 (tiro 1) · gatilho: time Everton"
+   },
    {
     "quando": "2026-08-07T04:25:49.410Z",
     "resultado": "GREEN",
@@ -6926,43 +6932,14 @@
   ],
   "consumidas": {
    "euro": 1786075140315,
-   "copa": 1786076749213
+   "copa": 1786076749213,
+   "premier": 1786077892211
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:42",
-     "jogo": "Norwich x Everton",
-     "odd": 1.87
-    },
-    {
-     "h": "05:45",
-     "jogo": "Aston x Tottenham",
-     "odd": 2.15
-    },
-    {
-     "h": "05:48",
-     "jogo": "Wolverhampton x Everton",
-     "odd": 1.83
-    }
-   ],
-   "gatilho": "time Everton",
-   "alvo": {
-    "h": "05:42",
-    "jogo": "Norwich x Everton",
-    "odd": 1.87,
-    "unidades": 1,
-    "desde": 1786077606909
-   },
-   "iniciadoEm": 1786077606909
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786075140315,
    "super": 1786067480413,
-   "premier": 1786073212412,
+   "premier": 1786077892211,
    "copa": 1786076749213
   },
   "dias": {
@@ -6988,13 +6965,13 @@
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
-   "2026-08-07": 2.9
+   "2026-08-07": 3.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Everton",
-   "n": 9,
-   "start": 1
+   "chave": "Chelsea",
+   "n": 12,
+   "start": 2
   },
   "_obs": {}
  }
