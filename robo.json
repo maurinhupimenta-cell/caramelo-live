@@ -305,8 +305,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "21:48",
@@ -326,11 +326,11 @@
    ],
    "gatilho": "odd 5.25",
    "alvo": {
-    "h": "21:51",
-    "jogo": "Islington x Leeds",
-    "odd": 5.25,
-    "unidades": 2,
-    "desde": 1786135851590
+    "h": "21:54",
+    "jogo": "Tottenham x Palace",
+    "odd": 5,
+    "unidades": 4,
+    "desde": 1786136023984
    },
    "iniciadoEm": 1786135151083,
    "tiros": [
@@ -339,6 +339,12 @@
      "jogo": "Newcastle x Brentford",
      "odd": 4,
      "unidades": 1
+    },
+    {
+     "h": "21:51",
+     "jogo": "Islington x Leeds",
+     "odd": 5.25,
+     "unidades": 2
     }
    ]
   },
@@ -3964,7 +3970,37 @@
    "premier": 1786133705582,
    "euro": 1786134776186
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:52",
+     "jogo": "Brasil x Paraguai",
+     "odd": 2.35
+    },
+    {
+     "h": "21:55",
+     "jogo": "Croácia x Haiti",
+     "odd": 2.25
+    },
+    {
+     "h": "21:58",
+     "jogo": "Uruguai x Irã",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "time Haiti",
+   "alvo": {
+    "h": "21:52",
+    "jogo": "Brasil x Paraguai",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1786135980381
+   },
+   "iniciadoEm": 1786135980381
+  },
   "cooldown": {
    "copa": 1786132378988,
    "premier": 1786133705582,
@@ -3998,9 +4034,9 @@
    "2026-08-07": 5.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.55",
-   "n": 15,
+   "tipo": "time",
+   "chave": "Haiti",
+   "n": 16,
    "start": 1
   },
   "_obs": {}
