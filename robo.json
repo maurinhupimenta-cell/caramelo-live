@@ -3848,7 +3848,37 @@
    "euro": 1786122300591,
    "premier": 1786122712082
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:37",
+     "jogo": "Medellin x Santos",
+     "odd": 2.45
+    },
+    {
+     "h": "18:40",
+     "jogo": "Asuncion x Penarol",
+     "odd": 2.45
+    },
+    {
+     "h": "18:43",
+     "jogo": "Sao Paulo x Santos",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "seq RGGG",
+   "alvo": {
+    "h": "18:37",
+    "jogo": "Medellin x Santos",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1786124156886
+   },
+   "iniciadoEm": 1786124156886
+  },
   "cooldown": {
    "copa": 1786122062390,
    "premier": 1786122712082,
@@ -3882,9 +3912,9 @@
    "2026-08-07": 1.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.35",
-   "n": 13,
+   "tipo": "seq",
+   "chave": "RGGG",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
