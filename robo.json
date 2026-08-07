@@ -293,8 +293,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:18",
@@ -314,13 +314,21 @@
    ],
    "gatilho": "odd 5.25",
    "alvo": {
-    "h": "17:18",
-    "jogo": "West Ham x Palace",
-    "odd": 5,
-    "unidades": 1,
-    "desde": 1786118997484
+    "h": "17:21",
+    "jogo": "Tottenham x Brentford",
+    "odd": 5.25,
+    "unidades": 2,
+    "desde": 1786119670179
    },
-   "iniciadoEm": 1786118997484
+   "iniciadoEm": 1786118997484,
+   "tiros": [
+    {
+     "h": "17:18",
+     "jogo": "West Ham x Palace",
+     "odd": 5,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1785978110378,
@@ -351,7 +359,7 @@
    "tipo": "odd",
    "chave": "5.25",
    "n": 13,
-   "start": 1
+   "start": 2
   },
   "_obs": {
    "euro": {
@@ -361,13 +369,19 @@
   }
  },
  "o25": {
-  "saldo": -139.5,
-  "ciclos": 1081,
-  "greens": 681,
+  "saldo": -137.9,
+  "ciclos": 1082,
+  "greens": 682,
   "redsCiclo": 170,
   "aborts": 0,
   "descartes": 230,
   "historico": [
+   {
+    "quando": "2026-08-07T16:18:01.580Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "super · Penarol x Agua Branca @2.29 (tiro 2) · gatilho: seq RGGG"
+   },
    {
     "quando": "2026-08-07T16:10:00.084Z",
     "resultado": "GREEN_OBS",
@@ -3846,52 +3860,15 @@
   "consumidas": {
    "copa": 1786117740090,
    "euro": 1786117977883,
-   "premier": 1786118584186
+   "premier": 1786118584186,
+   "super": 1786119481378
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:10",
-     "jogo": "Belo Horizonte x Rio de Janeiro",
-     "odd": 2.1
-    },
-    {
-     "h": "17:13",
-     "jogo": "Penarol x Agua Branca",
-     "odd": 2.29
-    },
-    {
-     "h": "17:16",
-     "jogo": "Medellin x Montevideo",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "seq RGGG",
-   "alvo": {
-    "h": "17:13",
-    "jogo": "Penarol x Agua Branca",
-    "odd": 2.29,
-    "unidades": 2,
-    "desde": 1786119299088
-   },
-   "iniciadoEm": 1786119048986,
-   "tiros": [
-    {
-     "h": "17:10",
-     "jogo": "Belo Horizonte x Rio de Janeiro",
-     "odd": 2.1,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786117740090,
    "premier": 1786118584186,
    "euro": 1786117977883,
-   "super": 1786071506316
+   "super": 1786119481378
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -3917,7 +3894,7 @@
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
-   "2026-08-07": -4.8
+   "2026-08-07": -3.2
   },
   "_gatilhoAtual": {
    "tipo": "seq",
