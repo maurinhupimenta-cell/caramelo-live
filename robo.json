@@ -7030,8 +7030,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "16:09",
@@ -7051,13 +7051,21 @@
    ],
    "gatilho": "coluna :09",
    "alvo": {
-    "h": "16:09",
-    "jogo": "Leicester x Brighton",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1786115138188
+    "h": "16:12",
+    "jogo": "City x Norwich",
+    "odd": 2,
+    "unidades": 2,
+    "desde": 1786115506589
    },
-   "iniciadoEm": 1786115138188
+   "iniciadoEm": 1786115138188,
+   "tiros": [
+    {
+     "h": "16:09",
+     "jogo": "Leicester x Brighton",
+     "odd": 1.93,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786111497981,
@@ -7092,7 +7100,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":09",
+   "chave": ":12",
    "n": 16,
    "start": 1
   },
