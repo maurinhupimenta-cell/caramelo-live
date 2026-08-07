@@ -3772,13 +3772,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -76.2,
-  "ciclos": 1067,
-  "greens": 732,
+  "saldo": -75.3,
+  "ciclos": 1068,
+  "greens": 733,
   "redsCiclo": 117,
   "aborts": 0,
   "descartes": 218,
   "historico": [
+   {
+    "quando": "2026-08-07T05:26:11.535Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · Costa do Marfim x México @1.87 (tiro 1) · gatilho: odd 1.98"
+   },
    {
     "quando": "2026-08-07T05:02:08.519Z",
     "resultado": "GREEN",
@@ -6944,14 +6950,15 @@
   ],
   "consumidas": {
    "premier": 1786077892211,
-   "euro": 1786078928322
+   "euro": 1786078928322,
+   "copa": 1786080371511
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1786078928322,
    "super": 1786067480413,
    "premier": 1786077892211,
-   "copa": 1786076749213
+   "copa": 1786080371511
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -6976,12 +6983,12 @@
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
-   "2026-08-07": 5
+   "2026-08-07": 5.9
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.15",
-   "n": 11,
+   "chave": "1.98",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
