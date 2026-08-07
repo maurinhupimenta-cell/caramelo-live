@@ -343,13 +343,19 @@
   }
  },
  "o25": {
-  "saldo": -131.8,
-  "ciclos": 1095,
-  "greens": 691,
+  "saldo": -130.4,
+  "ciclos": 1096,
+  "greens": 692,
   "redsCiclo": 171,
   "aborts": 0,
   "descartes": 233,
   "historico": [
+   {
+    "quando": "2026-08-07T20:15:05.778Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "premier · Palace x Burnley @2.1 (tiro 3) · gatilho: odd 2.35"
+   },
    {
     "quando": "2026-08-07T20:04:58.783Z",
     "resultado": "GREEN",
@@ -3910,58 +3916,44 @@
    }
   ],
   "consumidas": {
-   "euro": 1786130702377,
    "copa": 1786132378988,
-   "super": 1786133098587
+   "super": 1786133098587,
+   "premier": 1786133705582
   },
   "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "21:06",
-     "jogo": "Leicester x Watford",
-     "odd": 2.35
+     "h": "21:26",
+     "jogo": "Eslovênia x Croácia",
+     "odd": 2.55
     },
     {
-     "h": "21:09",
-     "jogo": "Aston x Tottenham",
-     "odd": 2.54
+     "h": "21:29",
+     "jogo": "Hungria x Inglaterra",
+     "odd": 2.2
     },
     {
-     "h": "21:12",
-     "jogo": "Palace x Burnley",
-     "odd": 2.1
+     "h": "21:32",
+     "jogo": "Sérvia x França",
+     "odd": 2.25
     }
    ],
-   "gatilho": "odd 2.35",
+   "gatilho": "odd 2.55",
    "alvo": {
-    "h": "21:12",
-    "jogo": "Palace x Burnley",
-    "odd": 2.1,
-    "unidades": 4,
-    "desde": 1786133504281
+    "h": "21:26",
+    "jogo": "Eslovênia x Croácia",
+    "odd": 2.55,
+    "unidades": 1,
+    "desde": 1786134356978
    },
-   "iniciadoEm": 1786133100681,
-   "tiros": [
-    {
-     "h": "21:06",
-     "jogo": "Leicester x Watford",
-     "odd": 2.35,
-     "unidades": 1
-    },
-    {
-     "h": "21:09",
-     "jogo": "Aston x Tottenham",
-     "odd": 2.54,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1786134356978
   },
   "cooldown": {
    "copa": 1786132378988,
-   "premier": 1786127933680,
+   "premier": 1786133705582,
    "euro": 1786130702377,
    "super": 1786133098587
   },
@@ -3989,13 +3981,13 @@
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
-   "2026-08-07": 2.9
+   "2026-08-07": 4.3
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.35",
+   "chave": "2.55",
    "n": 15,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
@@ -7301,8 +7293,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "21:19",
@@ -7322,13 +7314,21 @@
    ],
    "gatilho": "time Haiti",
    "alvo": {
-    "h": "21:19",
-    "jogo": "Irã x Inglaterra",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1786133700388
+    "h": "21:22",
+    "jogo": "Austrália x Haiti",
+    "odd": 1.93,
+    "unidades": 2,
+    "desde": 1786134360882
    },
-   "iniciadoEm": 1786133700388
+   "iniciadoEm": 1786133700388,
+   "tiros": [
+    {
+     "h": "21:19",
+     "jogo": "Irã x Inglaterra",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786129903384,
@@ -7363,8 +7363,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Haiti",
-   "n": 15,
+   "chave": "Áustria",
+   "n": 18,
    "start": 2
   },
   "_obs": {}
