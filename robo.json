@@ -343,13 +343,19 @@
   }
  },
  "o25": {
-  "saldo": -130.4,
-  "ciclos": 1096,
-  "greens": 692,
+  "saldo": -129,
+  "ciclos": 1097,
+  "greens": 693,
   "redsCiclo": 171,
   "aborts": 0,
   "descartes": 233,
   "historico": [
+   {
+    "quando": "2026-08-07T20:32:56.383Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "euro · Hungria x Inglaterra @2.2 (tiro 2) · gatilho: odd 2.55"
+   },
    {
     "quando": "2026-08-07T20:15:05.778Z",
     "resultado": "GREEN",
@@ -3918,51 +3924,14 @@
   "consumidas": {
    "copa": 1786132378988,
    "super": 1786133098587,
-   "premier": 1786133705582
+   "premier": 1786133705582,
+   "euro": 1786134776186
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "21:26",
-     "jogo": "Eslovênia x Croácia",
-     "odd": 2.55
-    },
-    {
-     "h": "21:29",
-     "jogo": "Hungria x Inglaterra",
-     "odd": 2.2
-    },
-    {
-     "h": "21:32",
-     "jogo": "Sérvia x França",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "odd 2.55",
-   "alvo": {
-    "h": "21:29",
-    "jogo": "Hungria x Inglaterra",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1786134538385
-   },
-   "iniciadoEm": 1786134356978,
-   "tiros": [
-    {
-     "h": "21:26",
-     "jogo": "Eslovênia x Croácia",
-     "odd": 2.55,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786132378988,
    "premier": 1786133705582,
-   "euro": 1786130702377,
+   "euro": 1786134776186,
    "super": 1786133098587
   },
   "dias": {
@@ -3989,7 +3958,7 @@
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
-   "2026-08-07": 4.3
+   "2026-08-07": 5.7
   },
   "_gatilhoAtual": {
    "tipo": "odd",
