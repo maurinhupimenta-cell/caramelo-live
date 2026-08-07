@@ -7169,8 +7169,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "18:43",
@@ -7190,11 +7190,11 @@
    ],
    "gatilho": "coluna :46",
    "alvo": {
-    "h": "18:46",
-    "jogo": "Santiago x Medellin",
-    "odd": 1.9,
-    "unidades": 2,
-    "desde": 1786124819077
+    "h": "18:49",
+    "jogo": "Porto Alegre x Rio de Janeiro",
+    "odd": 2.15,
+    "unidades": 4,
+    "desde": 1786125180280
    },
    "iniciadoEm": 1786124460683,
    "tiros": [
@@ -7203,6 +7203,12 @@
      "jogo": "Sao Paulo x Santos",
      "odd": 1.93,
      "unidades": 1
+    },
+    {
+     "h": "18:46",
+     "jogo": "Santiago x Medellin",
+     "odd": 1.9,
+     "unidades": 2
     }
    ]
   },
@@ -7238,16 +7244,11 @@
    "2026-08-07": -7.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":49",
-   "n": 18,
+   "tipo": "odd",
+   "chave": "1.8",
+   "n": 11,
    "start": 1
   },
-  "_obs": {
-   "euro": {
-    "desde": 1786124999678,
-    "gatilho": "odd 1.8"
-   }
-  }
+  "_obs": {}
  }
 }
