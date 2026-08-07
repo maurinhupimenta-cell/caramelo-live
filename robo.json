@@ -351,7 +351,7 @@
    "tipo": "odd",
    "chave": "5.25",
    "n": 13,
-   "start": 3
+   "start": 2
   },
   "_obs": {
    "euro": {
@@ -3850,8 +3850,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:10",
@@ -3871,13 +3871,21 @@
    ],
    "gatilho": "seq RGGG",
    "alvo": {
-    "h": "17:10",
-    "jogo": "Belo Horizonte x Rio de Janeiro",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1786119048986
+    "h": "17:13",
+    "jogo": "Penarol x Agua Branca",
+    "odd": 2.29,
+    "unidades": 2,
+    "desde": 1786119299088
    },
-   "iniciadoEm": 1786119048986
+   "iniciadoEm": 1786119048986,
+   "tiros": [
+    {
+     "h": "17:10",
+     "jogo": "Belo Horizonte x Rio de Janeiro",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786117740090,
