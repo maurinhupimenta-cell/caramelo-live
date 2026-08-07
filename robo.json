@@ -3834,11 +3834,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1786118584186,
    "super": 1786119481378,
    "copa": 1786122062390
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:02",
+     "jogo": "Eslovênia x Inglaterra",
+     "odd": 2.4
+    },
+    {
+     "h": "18:05",
+     "jogo": "Romênia x Áustria",
+     "odd": 2.2
+    },
+    {
+     "h": "18:08",
+     "jogo": "Suíça x Eslovênia",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "seq RRRGG",
+   "alvo": {
+    "h": "18:02",
+    "jogo": "Eslovênia x Inglaterra",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1786122064686
+   },
+   "iniciadoEm": 1786122064686
+  },
   "cooldown": {
    "copa": 1786122062390,
    "premier": 1786118584186,
@@ -3873,8 +3902,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRRG",
-   "n": 14,
+   "chave": "RRGGR",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
