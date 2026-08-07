@@ -328,12 +328,18 @@
  },
  "o25": {
   "saldo": -133.6,
-  "ciclos": 1067,
+  "ciclos": 1068,
   "greens": 675,
   "redsCiclo": 168,
   "aborts": 0,
-  "descartes": 224,
+  "descartes": 225,
   "historico": [
+   {
+    "quando": "2026-08-07T05:33:10.512Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho seq GRRG) — liga REARMADA"
+   },
    {
     "quando": "2026-08-07T05:11:07.115Z",
     "resultado": "GREEN",
@@ -3726,10 +3732,39 @@
    }
   ],
   "consumidas": {
-   "premier": 1786077188215,
    "copa": 1786079466919
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:35",
+     "jogo": "Romênia x Sérvia",
+     "odd": 2.35
+    },
+    {
+     "h": "06:38",
+     "jogo": "Suíça x Países Baixos",
+     "odd": 2.02
+    },
+    {
+     "h": "06:41",
+     "jogo": "Ucrânia x Eslováquia",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "seq GRRG",
+   "alvo": {
+    "h": "06:35",
+    "jogo": "Romênia x Sérvia",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1786080792316
+   },
+   "iniciadoEm": 1786080792316
+  },
   "cooldown": {
    "copa": 1786079466919,
    "premier": 1786077188215,
@@ -3763,10 +3798,10 @@
    "2026-08-07": 1.1
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.15",
-   "n": 10,
-   "start": 2
+   "tipo": "seq",
+   "chave": "GRRG",
+   "n": 8,
+   "start": 1
   },
   "_obs": {}
  },
