@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -128.6,
-  "ciclos": 1140,
-  "greens": 723,
+  "saldo": -126.6,
+  "ciclos": 1141,
+  "greens": 724,
   "redsCiclo": 177,
   "aborts": 0,
   "descartes": 240,
   "historico": [
+   {
+    "quando": "2026-08-08T22:54:36.452Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "euro · Romênia x Dinamarca @2.25 (tiro 3) · gatilho: seq RGGGG"
+   },
    {
     "quando": "2026-08-08T22:44:50.650Z",
     "resultado": "RED_CICLO",
@@ -3955,67 +3961,18 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-28T09:09:52.235Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :28) — liga REARMADA"
    }
   ],
   "consumidas": {
    "copa": 1786227214754,
-   "premier": 1786229090455
+   "premier": 1786229090455,
+   "euro": 1786229676254
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "23:44",
-     "jogo": "Áustria x Itália",
-     "odd": 2.35
-    },
-    {
-     "h": "23:47",
-     "jogo": "Turquia x Polônia",
-     "odd": 2.7
-    },
-    {
-     "h": "23:50",
-     "jogo": "Romênia x Dinamarca",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "seq RGGGG",
-   "alvo": {
-    "h": "23:50",
-    "jogo": "Romênia x Dinamarca",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1786229492456
-   },
-   "iniciadoEm": 1786229194451,
-   "tiros": [
-    {
-     "h": "23:44",
-     "jogo": "Áustria x Itália",
-     "odd": 2.35,
-     "unidades": 1
-    },
-    {
-     "h": "23:47",
-     "jogo": "Turquia x Polônia",
-     "odd": 2.7,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786227214754,
    "premier": 1786229090455,
-   "euro": 1786223556770,
+   "euro": 1786229676254,
    "super": 1786225225962
   },
   "dias": {
@@ -4043,7 +4000,7 @@
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
-   "2026-08-08": -3.8
+   "2026-08-08": -1.8
   },
   "_gatilhoAtual": {
    "tipo": "seq",
