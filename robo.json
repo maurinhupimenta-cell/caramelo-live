@@ -4013,12 +4013,18 @@
  },
  "ambas": {
   "saldo": -97.7,
-  "ciclos": 1111,
+  "ciclos": 1112,
   "greens": 762,
   "redsCiclo": 124,
   "aborts": 0,
-  "descartes": 225,
+  "descartes": 226,
   "historico": [
+   {
+    "quando": "2026-08-08T06:24:34.687Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho time Palace) — liga REARMADA"
+   },
    {
     "quando": "2026-08-08T06:00:42.589Z",
     "resultado": "GREEN",
@@ -7447,11 +7453,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1786166618477,
    "euro": 1786166798188,
    "super": 1786168842580
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:30",
+     "jogo": "Leeds x Brentford",
+     "odd": 2.2
+    },
+    {
+     "h": "07:33",
+     "jogo": "Palace x Watford",
+     "odd": 1.98
+    },
+    {
+     "h": "07:36",
+     "jogo": "Southampton x Leeds",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time Palace",
+   "alvo": {
+    "h": "07:30",
+    "jogo": "Leeds x Brentford",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1786170276290
+   },
+   "iniciadoEm": 1786170276290
+  },
   "cooldown": {
    "euro": 1786166798188,
    "super": 1786168842580,
@@ -7486,9 +7521,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Guayaquil",
-   "n": 14,
-   "start": 2
+   "chave": "Palace",
+   "n": 16,
+   "start": 3
   },
   "_obs": {}
  }
