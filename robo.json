@@ -4040,12 +4040,18 @@
  },
  "ambas": {
   "saldo": -98.1,
-  "ciclos": 1119,
+  "ciclos": 1120,
   "greens": 768,
   "redsCiclo": 125,
   "aborts": 0,
-  "descartes": 226,
+  "descartes": 227,
   "historico": [
+   {
+    "quando": "2026-08-08T16:23:38.251Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho seq RRRGR) — liga REARMADA"
+   },
    {
     "quando": "2026-08-08T16:14:34.151Z",
     "resultado": "GREEN",
@@ -7525,7 +7531,37 @@
    "super": 1786204385657,
    "copa": 1786205673952
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:23",
+     "jogo": "Inglaterra x Dinamarca",
+     "odd": 1.98
+    },
+    {
+     "h": "17:26",
+     "jogo": "Bélgica x Sérvia",
+     "odd": 2.02
+    },
+    {
+     "h": "17:29",
+     "jogo": "França x Escócia",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "seq RRRGR",
+   "alvo": {
+    "h": "17:23",
+    "jogo": "Inglaterra x Dinamarca",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1786206220260
+   },
+   "iniciadoEm": 1786206220260
+  },
   "cooldown": {
    "euro": 1786202253551,
    "super": 1786204385657,
@@ -7560,8 +7596,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRRG",
-   "n": 11,
+   "chave": "RRRGR",
+   "n": 16,
    "start": 1
   },
   "_obs": {}
