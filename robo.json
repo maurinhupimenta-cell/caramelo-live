@@ -4036,16 +4036,33 @@
    "n": 15,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1786166618388,
+    "gatilho": "seq RRRR"
+   }
+  }
  },
  "ambas": {
-  "saldo": -91.6,
-  "ciclos": 1108,
-  "greens": 760,
-  "redsCiclo": 123,
+  "saldo": -97.9,
+  "ciclos": 1110,
+  "greens": 761,
+  "redsCiclo": 124,
   "aborts": 0,
   "descartes": 225,
   "historico": [
+   {
+    "quando": "2026-08-08T05:26:38.382Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "euro · França x Bélgica @1.83 (tiro 2) · gatilho: time Croácia"
+   },
+   {
+    "quando": "2026-08-08T05:23:38.585Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: odd 1.95"
+   },
    {
     "quando": "2026-08-08T04:53:36.382Z",
     "resultado": "GREEN",
@@ -7456,57 +7473,15 @@
    }
   ],
   "consumidas": {
-   "super": 1786164816182
-  },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "06:15",
-     "jogo": "Islington x City",
-     "odd": 1.85
-    },
-    {
-     "h": "06:18",
-     "jogo": "Norwich x Brentford",
-     "odd": 1.95
-    },
-    {
-     "h": "06:21",
-     "jogo": "Watford x West Ham",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "odd 1.95",
-   "alvo": {
-    "h": "06:21",
-    "jogo": "Watford x West Ham",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1786166443089
-   },
-   "iniciadoEm": 1786165554586,
-   "tiros": [
-    {
-     "h": "06:15",
-     "jogo": "Islington x City",
-     "odd": 1.85,
-     "unidades": 1
-    },
-    {
-     "h": "06:18",
-     "jogo": "Norwich x Brentford",
-     "odd": 1.95,
-     "unidades": 2
-    }
-   ]
-  },
-  "cooldown": {
-   "euro": 1786162037887,
    "super": 1786164816182,
-   "premier": 1786161943086,
+   "premier": 1786166618477,
+   "euro": 1786166798188
+  },
+  "ciclo": null,
+  "cooldown": {
+   "euro": 1786166798188,
+   "super": 1786164816182,
+   "premier": 1786166618477,
    "copa": 1786162877083
   },
   "dias": {
@@ -7533,13 +7508,13 @@
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
    "2026-08-07": -8,
-   "2026-08-08": -2.4
+   "2026-08-08": -8.7
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Palace",
-   "n": 14,
-   "start": 2
+   "chave": "Croácia",
+   "n": 10,
+   "start": 1
   },
   "_obs": {}
  }
