@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -126.4,
-  "ciclos": 1111,
-  "greens": 704,
+  "saldo": -124.8,
+  "ciclos": 1112,
+  "greens": 705,
   "redsCiclo": 173,
   "aborts": 0,
   "descartes": 234,
   "historico": [
+   {
+    "quando": "2026-08-08T04:59:34.184Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "super · Bogota x Santos @2.62 (tiro 1) · gatilho: time Quito"
+   },
    {
     "quando": "2026-08-08T04:23:21.681Z",
     "resultado": "RED_CICLO",
@@ -3955,54 +3961,19 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho seq GRGRR) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-27T18:11:54.155Z",
-    "resultado": "GREEN",
-    "unidades": 1.9,
-    "detalhe": "premier · Norwich x West Ham @2.45 (tiro 2) · gatilho: seq RGGRG"
    }
   ],
   "consumidas": {
    "copa": 1786161797882,
-   "premier": 1786163001384
+   "premier": 1786163001384,
+   "super": 1786165173987
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:55",
-     "jogo": "Bogota x Santos",
-     "odd": 2.62
-    },
-    {
-     "h": "05:58",
-     "jogo": "Penarol x Quito",
-     "odd": 2.45
-    },
-    {
-     "h": "06:01",
-     "jogo": "Medellin x Santos",
-     "odd": 2.45
-    }
-   ],
-   "gatilho": "time Quito",
-   "alvo": {
-    "h": "05:55",
-    "jogo": "Bogota x Santos",
-    "odd": 2.62,
-    "unidades": 1,
-    "desde": 1786164686277
-   },
-   "iniciadoEm": 1786164686277
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786161797882,
    "premier": 1786163001384,
    "euro": 1786158420881,
-   "super": 1786161075982
+   "super": 1786165173987
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4029,12 +4000,12 @@
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
-   "2026-08-08": -1.6
+   "2026-08-08": 0
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Quito",
-   "n": 9,
+   "tipo": "odd",
+   "chave": "2.45",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
