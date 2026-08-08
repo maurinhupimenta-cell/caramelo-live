@@ -4011,13 +4011,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -95.3,
-  "ciclos": 1103,
-  "greens": 756,
+  "saldo": -94.6,
+  "ciclos": 1104,
+  "greens": 757,
   "redsCiclo": 123,
   "aborts": 0,
   "descartes": 224,
   "historico": [
+   {
+    "quando": "2026-08-08T04:05:43.279Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "premier · Newcastle x Liverpool @1.85 (tiro 2) · gatilho: time Palace"
+   },
    {
     "quando": "2026-08-08T03:46:38.178Z",
     "resultado": "GREEN",
@@ -7399,51 +7405,14 @@
   ],
   "consumidas": {
    "copa": 1786158905581,
-   "super": 1786160797979
+   "super": 1786160797979,
+   "premier": 1786161943086
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "05:00",
-     "jogo": "City x Palace",
-     "odd": 1.95
-    },
-    {
-     "h": "05:03",
-     "jogo": "Newcastle x Liverpool",
-     "odd": 1.85
-    },
-    {
-     "h": "05:06",
-     "jogo": "Watford x City",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "time Palace",
-   "alvo": {
-    "h": "05:03",
-    "jogo": "Newcastle x Liverpool",
-    "odd": 1.85,
-    "unidades": 2,
-    "desde": 1786161749389
-   },
-   "iniciadoEm": 1786161414979,
-   "tiros": [
-    {
-     "h": "05:00",
-     "jogo": "City x Palace",
-     "odd": 1.95,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786157818286,
    "super": 1786160797979,
-   "premier": 1786157814679,
+   "premier": 1786161943086,
    "copa": 1786158905581
   },
   "dias": {
@@ -7470,7 +7439,7 @@
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
    "2026-08-07": -8,
-   "2026-08-08": -6.1
+   "2026-08-08": -5.4
   },
   "_gatilhoAtual": {
    "tipo": "time",
