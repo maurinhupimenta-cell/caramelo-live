@@ -3966,7 +3966,37 @@
   "consumidas": {
    "super": 1786201628154
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:15",
+     "jogo": "Burnley x United",
+     "odd": 2.1
+    },
+    {
+     "h": "16:18",
+     "jogo": "Brighton x Liverpool",
+     "odd": 2.05
+    },
+    {
+     "h": "16:21",
+     "jogo": "Watford x West Ham",
+     "odd": 2.55
+    }
+   ],
+   "gatilho": "odd 2.05",
+   "alvo": {
+    "h": "16:15",
+    "jogo": "Burnley x United",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1786201640251
+   },
+   "iniciadoEm": 1786201640251
+  },
   "cooldown": {
    "copa": 1786167093779,
    "premier": 1786167574189,
