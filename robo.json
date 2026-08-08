@@ -3964,11 +3964,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1786210931058,
    "super": 1786212397358,
    "copa": 1786213175553
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:45",
+     "jogo": "Wolverhampton x Newcastle",
+     "odd": 1.98
+    },
+    {
+     "h": "19:48",
+     "jogo": "Liverpool x United",
+     "odd": 2.2
+    },
+    {
+     "h": "19:51",
+     "jogo": "Tottenham x Brighton",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "seq GGGRG",
+   "alvo": {
+    "h": "19:45",
+    "jogo": "Wolverhampton x Newcastle",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1786214554264
+   },
+   "iniciadoEm": 1786214554264
+  },
   "cooldown": {
    "copa": 1786213175553,
    "premier": 1786210931058,
@@ -4003,9 +4032,9 @@
    "2026-08-08": 1.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Portugal",
-   "n": 11,
+   "tipo": "seq",
+   "chave": "GGGRG",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
@@ -7608,10 +7637,10 @@
    "2026-08-08": -10.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRGG",
-   "n": 13,
-   "start": 1
+   "tipo": "time",
+   "chave": "México",
+   "n": 16,
+   "start": 2
   },
   "_obs": {}
  }
