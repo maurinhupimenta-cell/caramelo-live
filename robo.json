@@ -3968,7 +3968,37 @@
    "euro": 1786167578882,
    "super": 1786169795978
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "07:37",
+     "jogo": "Inglaterra x Iraque",
+     "odd": 2.45
+    },
+    {
+     "h": "07:40",
+     "jogo": "Irã x Curação",
+     "odd": 2.4
+    },
+    {
+     "h": "07:43",
+     "jogo": "Portugal x Coreia do Sul",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "time Curação",
+   "alvo": {
+    "h": "07:37",
+    "jogo": "Inglaterra x Iraque",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1786170694580
+   },
+   "iniciadoEm": 1786170694580
+  },
   "cooldown": {
    "copa": 1786167093779,
    "premier": 1786167574189,
@@ -4003,10 +4033,10 @@
    "2026-08-08": 5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.45",
-   "n": 10,
-   "start": 3
+   "tipo": "time",
+   "chave": "Curação",
+   "n": 9,
+   "start": 2
   },
   "_obs": {}
  },
@@ -7456,8 +7486,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "07:30",
@@ -7477,13 +7507,21 @@
    ],
    "gatilho": "time Palace",
    "alvo": {
-    "h": "07:30",
-    "jogo": "Leeds x Brentford",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1786170276290
+    "h": "07:33",
+    "jogo": "Palace x Watford",
+    "odd": 1.98,
+    "unidades": 2,
+    "desde": 1786170771586
    },
-   "iniciadoEm": 1786170276290
+   "iniciadoEm": 1786170276290,
+   "tiros": [
+    {
+     "h": "07:30",
+     "jogo": "Leeds x Brentford",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786166798188,
@@ -7519,8 +7557,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Palace",
-   "n": 17,
+   "chave": "Leeds",
+   "n": 16,
    "start": 1
   },
   "_obs": {}
