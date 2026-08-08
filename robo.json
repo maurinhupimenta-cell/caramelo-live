@@ -3968,7 +3968,37 @@
    "premier": 1786229090455,
    "euro": 1786229676254
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "00:01",
+     "jogo": "Medellin x La Boca",
+     "odd": 2.45
+    },
+    {
+     "h": "00:04",
+     "jogo": "Santos x Rio de Janeiro",
+     "odd": 2.35
+    },
+    {
+     "h": "00:07",
+     "jogo": "Penarol x Quito",
+     "odd": 2.45
+    }
+   ],
+   "gatilho": "seq GGRGG",
+   "alvo": {
+    "h": "00:01",
+    "jogo": "Medellin x La Boca",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1786229734053
+   },
+   "iniciadoEm": 1786229734053
+  },
   "cooldown": {
    "copa": 1786227214754,
    "premier": 1786229090455,
@@ -4004,8 +4034,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGGGG",
-   "n": 9,
+   "chave": "GGRGG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
