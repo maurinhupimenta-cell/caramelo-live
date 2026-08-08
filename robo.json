@@ -7432,8 +7432,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:00",
@@ -7453,13 +7453,21 @@
    ],
    "gatilho": "time Palace",
    "alvo": {
-    "h": "05:00",
-    "jogo": "City x Palace",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1786161414979
+    "h": "05:03",
+    "jogo": "Newcastle x Liverpool",
+    "odd": 1.85,
+    "unidades": 2,
+    "desde": 1786161749389
    },
-   "iniciadoEm": 1786161414979
+   "iniciadoEm": 1786161414979,
+   "tiros": [
+    {
+     "h": "05:00",
+     "jogo": "City x Palace",
+     "odd": 1.95,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786157818286,
@@ -7497,7 +7505,7 @@
    "tipo": "time",
    "chave": "Palace",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
