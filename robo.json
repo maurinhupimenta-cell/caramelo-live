@@ -3964,7 +3964,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1786157458484,
    "super": 1786157463083,
    "premier": 1786158116084,
    "euro": 1786158420881
@@ -4012,13 +4011,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -96.2,
-  "ciclos": 1102,
-  "greens": 755,
+  "saldo": -95.3,
+  "ciclos": 1103,
+  "greens": 756,
   "redsCiclo": 123,
   "aborts": 0,
   "descartes": 224,
   "historico": [
+   {
+    "quando": "2026-08-08T03:46:38.178Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Montevideo x Lima @1.85 (tiro 1) · gatilho: time Quito"
+   },
    {
     "quando": "2026-08-08T03:15:05.687Z",
     "resultado": "RED_CICLO",
@@ -7395,42 +7400,13 @@
   "consumidas": {
    "premier": 1786157814679,
    "euro": 1786157818286,
-   "copa": 1786158905581
+   "copa": 1786158905581,
+   "super": 1786160797979
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:49",
-     "jogo": "Montevideo x Lima",
-     "odd": 1.85
-    },
-    {
-     "h": "04:52",
-     "jogo": "Belo Horizonte x Quito",
-     "odd": 1.98
-    },
-    {
-     "h": "04:55",
-     "jogo": "La Plata x Bogota",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "time Quito",
-   "alvo": {
-    "h": "04:49",
-    "jogo": "Montevideo x Lima",
-    "odd": 1.85,
-    "unidades": 1,
-    "desde": 1786160795585
-   },
-   "iniciadoEm": 1786160795585
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786157818286,
-   "super": 1786156977784,
+   "super": 1786160797979,
    "premier": 1786157814679,
    "copa": 1786158905581
   },
@@ -7458,7 +7434,7 @@
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
    "2026-08-07": -8,
-   "2026-08-08": -7
+   "2026-08-08": -6.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
