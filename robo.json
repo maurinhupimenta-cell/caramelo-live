@@ -4033,19 +4033,25 @@
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.05",
-   "n": 12,
-   "start": 3
+   "n": 13,
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -98.1,
-  "ciclos": 1120,
-  "greens": 768,
+  "saldo": -97.1,
+  "ciclos": 1121,
+  "greens": 769,
   "redsCiclo": 125,
   "aborts": 0,
   "descartes": 227,
   "historico": [
+   {
+    "quando": "2026-08-08T16:26:37.053Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Inglaterra x Dinamarca @1.98 (tiro 1) · gatilho: seq RRRGR"
+   },
    {
     "quando": "2026-08-08T16:23:38.251Z",
     "resultado": "GREEN_OBS",
@@ -7529,41 +7535,12 @@
   ],
   "consumidas": {
    "super": 1786204385657,
-   "copa": 1786205673952
+   "copa": 1786205673952,
+   "euro": 1786206396855
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:23",
-     "jogo": "Inglaterra x Dinamarca",
-     "odd": 1.98
-    },
-    {
-     "h": "17:26",
-     "jogo": "Bélgica x Sérvia",
-     "odd": 2.02
-    },
-    {
-     "h": "17:29",
-     "jogo": "França x Escócia",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "seq RRRGR",
-   "alvo": {
-    "h": "17:23",
-    "jogo": "Inglaterra x Dinamarca",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1786206220260
-   },
-   "iniciadoEm": 1786206220260
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1786202253551,
+   "euro": 1786206396855,
    "super": 1786204385657,
    "premier": 1786202500855,
    "copa": 1786205673952
@@ -7592,13 +7569,13 @@
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
    "2026-08-07": -8,
-   "2026-08-08": -8.9
+   "2026-08-08": -7.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRGR",
-   "n": 16,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":35",
+   "n": 17,
+   "start": 3
   },
   "_obs": {}
  }
