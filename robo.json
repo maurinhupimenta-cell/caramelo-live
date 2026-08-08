@@ -3968,8 +3968,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:30",
@@ -3989,13 +3989,21 @@
    ],
    "gatilho": "odd 2.05",
    "alvo": {
-    "h": "17:30",
-    "jogo": "Tottenham x Burnley",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1786206154257
+    "h": "17:33",
+    "jogo": "Palace x Wolverhampton",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1786206814063
    },
-   "iniciadoEm": 1786206154257
+   "iniciadoEm": 1786206154257,
+   "tiros": [
+    {
+     "h": "17:30",
+     "jogo": "Tottenham x Burnley",
+     "odd": 2.35,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786203513758,
@@ -7605,7 +7613,7 @@
    "tipo": "time",
    "chave": "Brighton",
    "n": 24,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
