@@ -3969,8 +3969,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "05:15",
@@ -3990,11 +3990,11 @@
    ],
    "gatilho": "time United",
    "alvo": {
-    "h": "05:18",
-    "jogo": "Islington x United",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1786162623284
+    "h": "05:21",
+    "jogo": "Brentford x Watford",
+    "odd": 2.29,
+    "unidades": 4,
+    "desde": 1786162807088
    },
    "iniciadoEm": 1786161951982,
    "tiros": [
@@ -4003,6 +4003,12 @@
      "jogo": "Tottenham x Leicester",
      "odd": 2.5,
      "unidades": 1
+    },
+    {
+     "h": "05:18",
+     "jogo": "Islington x United",
+     "odd": 2.2,
+     "unidades": 2
     }
    ]
   },
@@ -4040,10 +4046,10 @@
    "2026-08-08": 5.4
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "0-0",
+   "tipo": "time",
+   "chave": "Brighton",
    "n": 9,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  },
