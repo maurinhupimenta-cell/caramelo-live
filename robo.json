@@ -4010,13 +4010,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -120.1,
-  "ciclos": 1132,
-  "greens": 774,
+  "saldo": -118.7,
+  "ciclos": 1133,
+  "greens": 775,
   "redsCiclo": 129,
   "aborts": 0,
   "descartes": 229,
   "historico": [
+   {
+    "quando": "2026-08-08T20:11:36.451Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "euro · Sérvia x Geórgia @2.2 (tiro 2) · gatilho: coluna :08"
+   },
    {
     "quando": "2026-08-08T20:08:47.561Z",
     "resultado": "GREEN_OBS",
@@ -7572,49 +7578,12 @@
   ],
   "consumidas": {
    "premier": 1786216671361,
-   "copa": 1786219479455
+   "copa": 1786219479455,
+   "euro": 1786219896262
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "21:05",
-     "jogo": "Eslovênia x Hungria",
-     "odd": 2.25
-    },
-    {
-     "h": "21:08",
-     "jogo": "Sérvia x Geórgia",
-     "odd": 2.2
-    },
-    {
-     "h": "21:11",
-     "jogo": "Alemanha x Suíça",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "coluna :08",
-   "alvo": {
-    "h": "21:08",
-    "jogo": "Sérvia x Geórgia",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1786219774556
-   },
-   "iniciadoEm": 1786219729258,
-   "tiros": [
-    {
-     "h": "21:05",
-     "jogo": "Eslovênia x Hungria",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1786216118656,
+   "euro": 1786219896262,
    "super": 1786214407551,
    "premier": 1786216671361,
    "copa": 1786219479455
@@ -7643,7 +7612,7 @@
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
    "2026-08-07": -8,
-   "2026-08-08": -30.9
+   "2026-08-08": -29.5
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
