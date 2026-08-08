@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -119.8,
-  "ciclos": 1118,
-  "greens": 709,
+  "saldo": -118.4,
+  "ciclos": 1119,
+  "greens": 710,
   "redsCiclo": 173,
   "aborts": 0,
   "descartes": 236,
   "historico": [
+   {
+    "quando": "2026-08-08T15:07:08.354Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "super · Lima x Itaquera @2.2 (tiro 2) · gatilho: coluna :01"
+   },
    {
     "quando": "2026-08-08T14:59:57.660Z",
     "resultado": "DESCARTADO",
@@ -3955,59 +3961,17 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho seq GRGRG) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-27T22:06:59.099Z",
-    "resultado": "GREEN",
-    "unidades": 2,
-    "detalhe": "copa · Gana x Portugal @2.25 (tiro 3) · gatilho: odd 2.15"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "16:01",
-     "jogo": "Belo Horizonte x La Plata",
-     "odd": 2.37
-    },
-    {
-     "h": "16:04",
-     "jogo": "Lima x Itaquera",
-     "odd": 2.2
-    },
-    {
-     "h": "16:07",
-     "jogo": "Santos x Belo Horizonte",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "coluna :01",
-   "alvo": {
-    "h": "16:04",
-    "jogo": "Lima x Itaquera",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1786201597660
-   },
-   "iniciadoEm": 1786201202258,
-   "tiros": [
-    {
-     "h": "16:01",
-     "jogo": "Belo Horizonte x La Plata",
-     "odd": 2.37,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "super": 1786201628154
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786167093779,
    "premier": 1786167574189,
    "euro": 1786167578882,
-   "super": 1786169795978
+   "super": 1786201628154
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4034,7 +3998,7 @@
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
-   "2026-08-08": 5
+   "2026-08-08": 6.4
   },
   "_gatilhoAtual": {
    "tipo": "odd",
