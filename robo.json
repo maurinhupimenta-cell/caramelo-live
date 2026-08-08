@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -119.4,
-  "ciclos": 1110,
+  "saldo": -126.4,
+  "ciclos": 1111,
   "greens": 704,
-  "redsCiclo": 172,
+  "redsCiclo": 173,
   "aborts": 0,
   "descartes": 234,
   "historico": [
+   {
+    "quando": "2026-08-08T04:23:21.681Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: time United"
+   },
    {
     "quando": "2026-08-08T04:03:18.081Z",
     "resultado": "GREEN",
@@ -3955,66 +3961,17 @@
     "resultado": "GREEN",
     "unidades": 1.9,
     "detalhe": "premier · Norwich x West Ham @2.45 (tiro 2) · gatilho: seq RGGRG"
-   },
-   {
-    "quando": "2026-07-27T17:58:56.104Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: seq GRRGR"
    }
   ],
   "consumidas": {
    "super": 1786161075982,
-   "copa": 1786161797882
+   "copa": 1786161797882,
+   "premier": 1786163001384
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "05:15",
-     "jogo": "Tottenham x Leicester",
-     "odd": 2.5
-    },
-    {
-     "h": "05:18",
-     "jogo": "Islington x United",
-     "odd": 2.2
-    },
-    {
-     "h": "05:21",
-     "jogo": "Brentford x Watford",
-     "odd": 2.29
-    }
-   ],
-   "gatilho": "time United",
-   "alvo": {
-    "h": "05:21",
-    "jogo": "Brentford x Watford",
-    "odd": 2.29,
-    "unidades": 4,
-    "desde": 1786162807088
-   },
-   "iniciadoEm": 1786161951982,
-   "tiros": [
-    {
-     "h": "05:15",
-     "jogo": "Tottenham x Leicester",
-     "odd": 2.5,
-     "unidades": 1
-    },
-    {
-     "h": "05:18",
-     "jogo": "Islington x United",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786161797882,
-   "premier": 1786158116084,
+   "premier": 1786163001384,
    "euro": 1786158420881,
    "super": 1786161075982
   },
@@ -4043,13 +4000,13 @@
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
-   "2026-08-08": 5.4
+   "2026-08-08": -1.6
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Brighton",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
