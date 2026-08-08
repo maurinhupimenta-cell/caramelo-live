@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -119.7,
-  "ciclos": 1125,
-  "greens": 714,
+  "saldo": -118.6,
+  "ciclos": 1126,
+  "greens": 715,
   "redsCiclo": 174,
   "aborts": 0,
   "descartes": 237,
   "historico": [
+   {
+    "quando": "2026-08-08T17:42:11.255Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Newcastle x Islington @2.07 (tiro 1) · gatilho: seq GGRGR"
+   },
    {
     "quando": "2026-08-08T17:01:37.154Z",
     "resultado": "GREEN",
@@ -3955,52 +3961,17 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho time Rio de Janeiro) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-28T03:34:53.829Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "euro · Romênia x Itália @2.2 (tiro 3) · gatilho: placar empate 1-1"
    }
   ],
   "consumidas": {
    "super": 1786207555058,
-   "copa": 1786208496959
+   "copa": 1786208496959,
+   "premier": 1786210931058
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:39",
-     "jogo": "Newcastle x Islington",
-     "odd": 2.07
-    },
-    {
-     "h": "18:42",
-     "jogo": "Leeds x Liverpool",
-     "odd": 2.45
-    },
-    {
-     "h": "18:45",
-     "jogo": "Newcastle x Chelsea",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "seq GGRGR",
-   "alvo": {
-    "h": "18:39",
-    "jogo": "Newcastle x Islington",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1786210566154
-   },
-   "iniciadoEm": 1786210566154
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786208496959,
-   "premier": 1786206945758,
+   "premier": 1786210931058,
    "euro": 1786167578882,
    "super": 1786207555058
   },
@@ -4029,7 +4000,7 @@
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
-   "2026-08-08": 5.1
+   "2026-08-08": 6.2
   },
   "_gatilhoAtual": {
    "tipo": "seq",
