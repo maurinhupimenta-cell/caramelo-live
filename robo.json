@@ -3967,7 +3967,37 @@
    "copa": 1786227214754,
    "premier": 1786229090455
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:44",
+     "jogo": "Áustria x Itália",
+     "odd": 2.35
+    },
+    {
+     "h": "23:47",
+     "jogo": "Turquia x Polônia",
+     "odd": 2.7
+    },
+    {
+     "h": "23:50",
+     "jogo": "Romênia x Dinamarca",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "seq RGGGG",
+   "alvo": {
+    "h": "23:44",
+    "jogo": "Áustria x Itália",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1786229194451
+   },
+   "iniciadoEm": 1786229194451
+  },
   "cooldown": {
    "copa": 1786227214754,
    "premier": 1786229090455,
@@ -4002,9 +4032,9 @@
    "2026-08-08": -3.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.05",
-   "n": 19,
+   "tipo": "seq",
+   "chave": "RGGGG",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
