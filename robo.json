@@ -356,12 +356,18 @@
  },
  "o25": {
   "saldo": -119.8,
-  "ciclos": 1117,
+  "ciclos": 1118,
   "greens": 709,
   "redsCiclo": 173,
   "aborts": 0,
-  "descartes": 235,
+  "descartes": 236,
   "historico": [
+   {
+    "quando": "2026-08-08T14:59:57.660Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-08-08T06:16:36.085Z",
     "resultado": "GREEN",
@@ -3955,48 +3961,10 @@
     "resultado": "GREEN",
     "unidades": 2,
     "detalhe": "copa · Gana x Portugal @2.25 (tiro 3) · gatilho: odd 2.15"
-   },
-   {
-    "quando": "2026-07-27T21:46:48.341Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho odd 2.15) — liga REARMADA"
    }
   ],
-  "consumidas": {
-   "super": 1786169795978
-  },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "07:37",
-     "jogo": "Inglaterra x Iraque",
-     "odd": 2.45
-    },
-    {
-     "h": "07:40",
-     "jogo": "Irã x Curação",
-     "odd": 2.4
-    },
-    {
-     "h": "07:43",
-     "jogo": "Portugal x Coreia do Sul",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "time Curação",
-   "alvo": {
-    "h": "07:37",
-    "jogo": "Inglaterra x Iraque",
-    "odd": 2.45,
-    "unidades": 1,
-    "desde": 1786170694580
-   },
-   "iniciadoEm": 1786170694580
-  },
+  "consumidas": {},
+  "ciclo": null,
   "cooldown": {
    "copa": 1786167093779,
    "premier": 1786167574189,
@@ -7493,10 +7461,39 @@
   ],
   "consumidas": {
    "super": 1786168842580,
-   "premier": 1786171174979,
-   "euro": 1786171234488
+   "premier": 1786171174979
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:04",
+     "jogo": "Alemanha x Marrocos",
+     "odd": 1.95
+    },
+    {
+     "h": "16:07",
+     "jogo": "Croácia x Haiti",
+     "odd": 2.075
+    },
+    {
+     "h": "16:10",
+     "jogo": "Panamá x Paraguai",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "coluna :07",
+   "alvo": {
+    "h": "16:04",
+    "jogo": "Alemanha x Marrocos",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1786201197751
+   },
+   "iniciadoEm": 1786201197751
+  },
   "cooldown": {
    "euro": 1786171234488,
    "super": 1786168842580,
@@ -7530,10 +7527,10 @@
    "2026-08-08": -5.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGG",
-   "n": 12,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":05",
+   "n": 16,
+   "start": 2
   },
   "_obs": {}
  }
