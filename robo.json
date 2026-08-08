@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -129,
-  "ciclos": 1133,
-  "greens": 717,
+  "saldo": -127.9,
+  "ciclos": 1134,
+  "greens": 718,
   "redsCiclo": 176,
   "aborts": 0,
   "descartes": 240,
   "historico": [
+   {
+    "quando": "2026-08-08T20:02:40.055Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Brighton x Palace @2.05 (tiro 2) · gatilho: odd 2.05"
+   },
    {
     "quando": "2026-08-08T19:53:55.159Z",
     "resultado": "GREEN_OBS",
@@ -3955,59 +3961,16 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-28T07:34:05.927Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "premier · Southampton x Aston @2.5 (tiro 1) · gatilho: seq RRGGR"
    }
   ],
   "consumidas": {
-   "copa": 1786217972764
+   "copa": 1786217972764,
+   "premier": 1786219359858
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "20:57",
-     "jogo": "Chelsea x Watford",
-     "odd": 2.25
-    },
-    {
-     "h": "21:00",
-     "jogo": "Brighton x Palace",
-     "odd": 2.05
-    },
-    {
-     "h": "21:03",
-     "jogo": "Tottenham x Watford",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "odd 2.05",
-   "alvo": {
-    "h": "21:00",
-    "jogo": "Brighton x Palace",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1786219184059
-   },
-   "iniciadoEm": 1786218837058,
-   "tiros": [
-    {
-     "h": "20:57",
-     "jogo": "Chelsea x Watford",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786217972764,
-   "premier": 1786215232062,
+   "premier": 1786219359858,
    "euro": 1786167578882,
    "super": 1786212397358
   },
@@ -4036,7 +3999,7 @@
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
-   "2026-08-08": -4.2
+   "2026-08-08": -3.1
   },
   "_gatilhoAtual": {
    "tipo": "odd",
