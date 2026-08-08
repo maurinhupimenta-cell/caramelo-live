@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -126.6,
-  "ciclos": 1141,
-  "greens": 724,
+  "saldo": -124.9,
+  "ciclos": 1142,
+  "greens": 725,
   "redsCiclo": 177,
   "aborts": 0,
   "descartes": 240,
   "historico": [
+   {
+    "quando": "2026-08-08T23:08:38.951Z",
+    "resultado": "GREEN",
+    "unidades": 1.7,
+    "detalhe": "super · Santos x Rio de Janeiro @2.35 (tiro 2) · gatilho: seq GGRGG"
+   },
    {
     "quando": "2026-08-08T22:54:36.452Z",
     "resultado": "GREEN",
@@ -3955,63 +3961,20 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho coluna :28) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-28T09:24:54.430Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
    "copa": 1786227214754,
    "premier": 1786229090455,
-   "euro": 1786229676254
+   "euro": 1786229676254,
+   "super": 1786230518755
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "00:01",
-     "jogo": "Medellin x La Boca",
-     "odd": 2.45
-    },
-    {
-     "h": "00:04",
-     "jogo": "Santos x Rio de Janeiro",
-     "odd": 2.35
-    },
-    {
-     "h": "00:07",
-     "jogo": "Penarol x Quito",
-     "odd": 2.45
-    }
-   ],
-   "gatilho": "seq GGRGG",
-   "alvo": {
-    "h": "00:04",
-    "jogo": "Santos x Rio de Janeiro",
-    "odd": 2.35,
-    "unidades": 2,
-    "desde": 1786230516851
-   },
-   "iniciadoEm": 1786229734053,
-   "tiros": [
-    {
-     "h": "00:01",
-     "jogo": "Medellin x La Boca",
-     "odd": 2.45,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786227214754,
    "premier": 1786229090455,
    "euro": 1786229676254,
-   "super": 1786225225962
+   "super": 1786230518755
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4038,7 +4001,7 @@
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
-   "2026-08-08": -1.8
+   "2026-08-08": -0.1
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -4049,13 +4012,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -123.2,
-  "ciclos": 1141,
-  "greens": 778,
+  "saldo": -122.5,
+  "ciclos": 1142,
+  "greens": 779,
   "redsCiclo": 130,
   "aborts": 0,
   "descartes": 233,
   "historico": [
+   {
+    "quando": "2026-08-08T23:12:30.755Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "copa · Egito x Espanha @1.85 (tiro 2) · gatilho: coluna :07"
+   },
    {
     "quando": "2026-08-08T22:55:39.351Z",
     "resultado": "GREEN_OBS",
@@ -7649,59 +7618,17 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · Senegal x Egito @2.02 (tiro 1) · gatilho: odd 2.02"
-   },
-   {
-    "quando": "2026-07-27T17:53:54.700Z",
-    "resultado": "GREEN",
-    "unidades": 0.8,
-    "detalhe": "premier · Newcastle x Burnley @1.8 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "00:04",
-     "jogo": "Nova Zelândia x Argélia",
-     "odd": 1.95
-    },
-    {
-     "h": "00:07",
-     "jogo": "Egito x Espanha",
-     "odd": 1.85
-    },
-    {
-     "h": "00:10",
-     "jogo": "Cabo Verde x Escócia",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "coluna :07",
-   "alvo": {
-    "h": "00:07",
-    "jogo": "Egito x Espanha",
-    "odd": 1.85,
-    "unidades": 2,
-    "desde": 1786230457351
-   },
-   "iniciadoEm": 1786229793151,
-   "tiros": [
-    {
-     "h": "00:04",
-     "jogo": "Nova Zelândia x Argélia",
-     "odd": 1.95,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "copa": 1786230750562
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786219896262,
    "super": 1786226253156,
    "premier": 1786222243552,
-   "copa": 1786223854863
+   "copa": 1786230750562
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7727,7 +7654,7 @@
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
    "2026-08-07": -8,
-   "2026-08-08": -34
+   "2026-08-08": -33.3
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
