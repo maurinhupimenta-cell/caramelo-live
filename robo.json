@@ -3966,7 +3966,37 @@
   "consumidas": {
    "copa": 1786223074856
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:06",
+     "jogo": "United x Palace",
+     "odd": 2.2
+    },
+    {
+     "h": "22:09",
+     "jogo": "Burnley x Everton",
+     "odd": 2.05
+    },
+    {
+     "h": "22:12",
+     "jogo": "Norwich x Tottenham",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "odd 2.05",
+   "alvo": {
+    "h": "22:06",
+    "jogo": "United x Palace",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1786223076959
+   },
+   "iniciadoEm": 1786223076959
+  },
   "cooldown": {
    "copa": 1786223074856,
    "premier": 1786219359858,
@@ -4010,12 +4040,18 @@
  },
  "ambas": {
   "saldo": -124.9,
-  "ciclos": 1136,
+  "ciclos": 1137,
   "greens": 776,
   "redsCiclo": 130,
   "aborts": 0,
-  "descartes": 230,
+  "descartes": 231,
   "historico": [
+   {
+    "quando": "2026-08-08T21:04:40.557Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho coluna :07) — liga REARMADA"
+   },
    {
     "quando": "2026-08-08T20:50:43.658Z",
     "resultado": "RED_CICLO",
@@ -7594,12 +7630,41 @@
    }
   ],
   "consumidas": {
-   "copa": 1786219479455,
    "euro": 1786219896262,
    "super": 1786221455162,
    "premier": 1786222243552
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:07",
+     "jogo": "Cabo Verde x Argentina",
+     "odd": 1.9
+    },
+    {
+     "h": "22:10",
+     "jogo": "Panamá x Uruguai",
+     "odd": 2
+    },
+    {
+     "h": "22:13",
+     "jogo": "Costa do Marfim x Argélia",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "coluna :07",
+   "alvo": {
+    "h": "22:07",
+    "jogo": "Cabo Verde x Argentina",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1786223133053
+   },
+   "iniciadoEm": 1786223133053
+  },
   "cooldown": {
    "euro": 1786219896262,
    "super": 1786221455162,
@@ -7633,9 +7698,9 @@
    "2026-08-08": -35.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGGG",
-   "n": 11,
+   "tipo": "coluna",
+   "chave": ":07",
+   "n": 22,
    "start": 1
   },
   "_obs": {}
