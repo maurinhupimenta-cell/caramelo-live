@@ -4040,13 +4040,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -94.6,
-  "ciclos": 1104,
-  "greens": 757,
+  "saldo": -93.4,
+  "ciclos": 1105,
+  "greens": 758,
   "redsCiclo": 123,
   "aborts": 0,
   "descartes": 224,
   "historico": [
+   {
+    "quando": "2026-08-08T04:07:18.083Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Itália x Polônia @2.15 (tiro 1) · gatilho: seq RRGG"
+   },
    {
     "quando": "2026-08-08T04:05:43.279Z",
     "resultado": "GREEN",
@@ -7435,41 +7441,12 @@
   "consumidas": {
    "copa": 1786158905581,
    "super": 1786160797979,
-   "premier": 1786161943086
+   "premier": 1786161943086,
+   "euro": 1786162037887
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:05",
-     "jogo": "Itália x Polônia",
-     "odd": 2.15
-    },
-    {
-     "h": "05:08",
-     "jogo": "Países Baixos x Eslovênia",
-     "odd": 2.1
-    },
-    {
-     "h": "05:11",
-     "jogo": "Albânia x Alemanha",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "seq RRGG",
-   "alvo": {
-    "h": "05:05",
-    "jogo": "Itália x Polônia",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1786161952182
-   },
-   "iniciadoEm": 1786161952182
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1786157818286,
+   "euro": 1786162037887,
    "super": 1786160797979,
    "premier": 1786161943086,
    "copa": 1786158905581
@@ -7498,7 +7475,7 @@
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
    "2026-08-07": -8,
-   "2026-08-08": -5.4
+   "2026-08-08": -4.2
   },
   "_gatilhoAtual": {
    "tipo": "seq",
