@@ -7530,10 +7530,39 @@
    }
   ],
   "consumidas": {
-   "copa": 1786210298255,
    "euro": 1786210777556
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:34",
+     "jogo": "Avellaneda x Guayaquil",
+     "odd": 1.93
+    },
+    {
+     "h": "19:37",
+     "jogo": "Asuncion x Quito",
+     "odd": 2
+    },
+    {
+     "h": "19:40",
+     "jogo": "Porto Alegre x Bogota",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "seq RRRGG",
+   "alvo": {
+    "h": "19:34",
+    "jogo": "Avellaneda x Guayaquil",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1786213896957
+   },
+   "iniciadoEm": 1786213896957
+  },
   "cooldown": {
    "euro": 1786210777556,
    "super": 1786208559151,
@@ -7567,9 +7596,9 @@
    "2026-08-08": -11.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":35",
-   "n": 18,
+   "tipo": "seq",
+   "chave": "RRRGG",
+   "n": 8,
    "start": 1
   },
   "_obs": {
