@@ -356,12 +356,18 @@
  },
  "o25": {
   "saldo": -130.5,
-  "ciclos": 1130,
+  "ciclos": 1131,
   "greens": 716,
   "redsCiclo": 176,
   "aborts": 0,
-  "descartes": 238,
+  "descartes": 239,
   "historico": [
+   {
+    "quando": "2026-08-08T19:25:37.660Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Qatar) — liga REARMADA"
+   },
    {
     "quando": "2026-08-08T18:53:52.256Z",
     "resultado": "RED_CICLO",
@@ -3955,12 +3961,6 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "super · Buenos Aires x La Boca @2.2 (tiro 1) · gatilho: odd 2.15"
-   },
-   {
-    "quando": "2026-07-28T05:30:23.529Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho placar empate 2-2) — liga REARMADA"
    }
   ],
   "consumidas": {
@@ -4006,7 +4006,12 @@
    "n": 9,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1786216958858,
+    "gatilho": "time Qatar"
+   }
+  }
  },
  "ambas": {
   "saldo": -113.1,
