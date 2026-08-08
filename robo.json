@@ -4011,13 +4011,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -124.9,
-  "ciclos": 1137,
-  "greens": 776,
+  "saldo": -124.2,
+  "ciclos": 1138,
+  "greens": 777,
   "redsCiclo": 130,
   "aborts": 0,
   "descartes": 231,
   "historico": [
+   {
+    "quando": "2026-08-08T21:17:35.056Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "copa · Costa do Marfim x Argélia @1.93 (tiro 3) · gatilho: coluna :07"
+   },
    {
     "quando": "2026-08-08T21:04:40.557Z",
     "resultado": "GREEN_OBS",
@@ -7603,58 +7609,15 @@
   ],
   "consumidas": {
    "super": 1786221455162,
-   "premier": 1786222243552
+   "premier": 1786222243552,
+   "copa": 1786223854863
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "22:07",
-     "jogo": "Cabo Verde x Argentina",
-     "odd": 1.9
-    },
-    {
-     "h": "22:10",
-     "jogo": "Panamá x Uruguai",
-     "odd": 2
-    },
-    {
-     "h": "22:13",
-     "jogo": "Costa do Marfim x Argélia",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "coluna :07",
-   "alvo": {
-    "h": "22:13",
-    "jogo": "Costa do Marfim x Argélia",
-    "odd": 1.93,
-    "unidades": 4,
-    "desde": 1786223614856
-   },
-   "iniciadoEm": 1786223133053,
-   "tiros": [
-    {
-     "h": "22:07",
-     "jogo": "Cabo Verde x Argentina",
-     "odd": 1.9,
-     "unidades": 1
-    },
-    {
-     "h": "22:10",
-     "jogo": "Panamá x Uruguai",
-     "odd": 2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786219896262,
    "super": 1786221455162,
    "premier": 1786222243552,
-   "copa": 1786219479455
+   "copa": 1786223854863
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7680,7 +7643,7 @@
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
    "2026-08-07": -8,
-   "2026-08-08": -35.7
+   "2026-08-08": -35
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
