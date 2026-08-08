@@ -4037,9 +4037,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "La Plata",
+   "chave": "Liverpool",
    "n": 8,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
@@ -7404,7 +7404,37 @@
    "euro": 1786153980891,
    "super": 1786156977784
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:54",
+     "jogo": "Everton x United",
+     "odd": 1.9
+    },
+    {
+     "h": "03:57",
+     "jogo": "Liverpool x Aston",
+     "odd": 2.075
+    },
+    {
+     "h": "04:00",
+     "jogo": "Newcastle x Everton",
+     "odd": 1.8
+    }
+   ],
+   "gatilho": "time Liverpool",
+   "alvo": {
+    "h": "03:54",
+    "jogo": "Everton x United",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1786157093582
+   },
+   "iniciadoEm": 1786157093582
+  },
   "cooldown": {
    "euro": 1786153980891,
    "super": 1786156977784,
@@ -7438,9 +7468,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Guayaquil",
+   "chave": "Liverpool",
    "n": 8,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
