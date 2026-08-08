@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -120.5,
-  "ciclos": 1109,
-  "greens": 703,
+  "saldo": -119.4,
+  "ciclos": 1110,
+  "greens": 704,
   "redsCiclo": 172,
   "aborts": 0,
   "descartes": 234,
   "historico": [
+   {
+    "quando": "2026-08-08T04:03:18.081Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Curação x Uruguai @2.1 (tiro 1) · gatilho: odd 2.2"
+   },
    {
     "quando": "2026-08-08T03:51:16.079Z",
     "resultado": "GREEN",
@@ -3955,51 +3961,16 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: seq GRRGR"
-   },
-   {
-    "quando": "2026-07-27T16:53:40.697Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "premier · Tottenham x United @2.4 (tiro 2) · gatilho: seq GRGRR"
    }
   ],
   "consumidas": {
    "euro": 1786158420881,
-   "super": 1786161075982
+   "super": 1786161075982,
+   "copa": 1786161797882
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:01",
-     "jogo": "Curação x Uruguai",
-     "odd": 2.1
-    },
-    {
-     "h": "05:04",
-     "jogo": "Qatar x Argentina",
-     "odd": 2.2
-    },
-    {
-     "h": "05:07",
-     "jogo": "Uzbequistão x Argélia",
-     "odd": 2.29
-    }
-   ],
-   "gatilho": "odd 2.2",
-   "alvo": {
-    "h": "05:01",
-    "jogo": "Curação x Uruguai",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1786161116686
-   },
-   "iniciadoEm": 1786161116686
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1786157458484,
+   "copa": 1786161797882,
    "premier": 1786158116084,
    "euro": 1786158420881,
    "super": 1786161075982
@@ -4029,7 +4000,7 @@
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
-   "2026-08-08": 4.3
+   "2026-08-08": 5.4
   },
   "_gatilhoAtual": {
    "tipo": "odd",
