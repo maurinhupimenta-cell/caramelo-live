@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -121.7,
-  "ciclos": 1108,
-  "greens": 702,
+  "saldo": -120.5,
+  "ciclos": 1109,
+  "greens": 703,
   "redsCiclo": 172,
   "aborts": 0,
   "descartes": 234,
   "historico": [
+   {
+    "quando": "2026-08-08T03:51:16.079Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Belo Horizonte x Quito @2.15 (tiro 1) · gatilho: time La Plata"
+   },
    {
     "quando": "2026-08-08T03:07:00.987Z",
     "resultado": "GREEN",
@@ -3955,54 +3961,49 @@
     "resultado": "GREEN",
     "unidades": 1.8,
     "detalhe": "premier · Tottenham x United @2.4 (tiro 2) · gatilho: seq GRGRR"
-   },
-   {
-    "quando": "2026-07-27T16:44:53.098Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho seq GRGRR) — liga REARMADA"
    }
   ],
   "consumidas": {
    "premier": 1786158116084,
-   "euro": 1786158420881
+   "euro": 1786158420881,
+   "super": 1786161075982
   },
   "ciclo": {
-   "liga": "super",
+   "liga": "copa",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "04:52",
-     "jogo": "Belo Horizonte x Quito",
-     "odd": 2.15
+     "h": "05:01",
+     "jogo": "Curação x Uruguai",
+     "odd": 2.1
     },
     {
-     "h": "04:55",
-     "jogo": "La Plata x Bogota",
-     "odd": 2.87
-    },
-    {
-     "h": "04:58",
-     "jogo": "Medellin x Buenos Aires",
+     "h": "05:04",
+     "jogo": "Qatar x Argentina",
      "odd": 2.2
+    },
+    {
+     "h": "05:07",
+     "jogo": "Uzbequistão x Argélia",
+     "odd": 2.29
     }
    ],
-   "gatilho": "time La Plata",
+   "gatilho": "odd 2.2",
    "alvo": {
-    "h": "04:52",
-    "jogo": "Belo Horizonte x Quito",
-    "odd": 2.15,
+    "h": "05:01",
+    "jogo": "Curação x Uruguai",
+    "odd": 2.1,
     "unidades": 1,
-    "desde": 1786161072987
+    "desde": 1786161116686
    },
-   "iniciadoEm": 1786161072987
+   "iniciadoEm": 1786161116686
   },
   "cooldown": {
    "copa": 1786157458484,
    "premier": 1786158116084,
    "euro": 1786158420881,
-   "super": 1786157463083
+   "super": 1786161075982
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4029,13 +4030,13 @@
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
-   "2026-08-08": 3.1
+   "2026-08-08": 4.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "La Plata",
-   "n": 12,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.2",
+   "n": 14,
+   "start": 3
   },
   "_obs": {}
  },
