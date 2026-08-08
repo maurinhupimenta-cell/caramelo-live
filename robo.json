@@ -4012,13 +4012,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -89.2,
-  "ciclos": 1101,
+  "saldo": -96.2,
+  "ciclos": 1102,
   "greens": 755,
-  "redsCiclo": 122,
+  "redsCiclo": 123,
   "aborts": 0,
   "descartes": 224,
   "historico": [
+   {
+    "quando": "2026-08-08T03:15:05.687Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: odd 1.98"
+   },
    {
     "quando": "2026-08-08T03:14:58.286Z",
     "resultado": "GREEN_OBS",
@@ -7387,16 +7393,16 @@
    }
   ],
   "consumidas": {
-   "super": 1786156977784,
    "premier": 1786157814679,
-   "euro": 1786157818286
+   "euro": 1786157818286,
+   "copa": 1786158905581
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1786157818286,
    "super": 1786156977784,
    "premier": 1786157814679,
-   "copa": 1786134478589
+   "copa": 1786158905581
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7422,19 +7428,14 @@
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
    "2026-08-07": -8,
-   "2026-08-08": 0
+   "2026-08-08": -7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Escócia",
-   "n": 9,
+   "tipo": "odd",
+   "chave": "1.98",
+   "n": 8,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1786158236487,
-    "gatilho": "odd 1.98"
-   }
-  }
+  "_obs": {}
  }
 }
