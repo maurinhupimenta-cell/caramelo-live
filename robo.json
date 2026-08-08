@@ -3964,11 +3964,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1786223437761,
    "euro": 1786223556770,
    "super": 1786225225962
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:07",
+     "jogo": "Inglaterra x Uzbequistão",
+     "odd": 2.3
+    },
+    {
+     "h": "23:10",
+     "jogo": "Qatar x Portugal",
+     "odd": 2.2
+    },
+    {
+     "h": "23:13",
+     "jogo": "Bélgica x Arábia Saudita",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time Portugal",
+   "alvo": {
+    "h": "23:07",
+    "jogo": "Inglaterra x Uzbequistão",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1786226676158
+   },
+   "iniciadoEm": 1786226676158
+  },
   "cooldown": {
    "copa": 1786223074856,
    "premier": 1786223437761,
@@ -4003,9 +4032,9 @@
    "2026-08-08": 1.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.75",
-   "n": 9,
+   "tipo": "time",
+   "chave": "Portugal",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
