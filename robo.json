@@ -3964,7 +3964,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1786217972764,
    "premier": 1786219359858
   },
   "ciclo": null,
@@ -7593,7 +7592,37 @@
    "euro": 1786219896262,
    "super": 1786221455162
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:42",
+     "jogo": "Wolverhampton x Watford",
+     "odd": 1.93
+    },
+    {
+     "h": "21:45",
+     "jogo": "Aston x West Ham",
+     "odd": 2.2
+    },
+    {
+     "h": "21:48",
+     "jogo": "Liverpool x Newcastle",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "seq RGGGG",
+   "alvo": {
+    "h": "21:42",
+    "jogo": "Wolverhampton x Watford",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1786221521163
+   },
+   "iniciadoEm": 1786221521163
+  },
   "cooldown": {
    "euro": 1786219896262,
    "super": 1786221455162,
@@ -7627,16 +7656,11 @@
    "2026-08-08": -28.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.07",
-   "n": 15,
+   "tipo": "seq",
+   "chave": "RGGGG",
+   "n": 11,
    "start": 1
   },
-  "_obs": {
-   "premier": {
-    "desde": 1786221519951,
-    "gatilho": "seq RGGGG"
-   }
-  }
+  "_obs": {}
  }
 }
