@@ -3966,7 +3966,37 @@
   "consumidas": {
    "premier": 1786219359858
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:58",
+     "jogo": "Senegal x Marrocos",
+     "odd": 2.5
+    },
+    {
+     "h": "22:01",
+     "jogo": "Argentina x Suécia",
+     "odd": 2.45
+    },
+    {
+     "h": "22:04",
+     "jogo": "Nova Zelândia x Suíça",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "seq GRRGG",
+   "alvo": {
+    "h": "21:58",
+    "jogo": "Senegal x Marrocos",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1786222535057
+   },
+   "iniciadoEm": 1786222535057
+  },
   "cooldown": {
    "copa": 1786217972764,
    "premier": 1786219359858,
@@ -4001,9 +4031,9 @@
    "2026-08-08": -3.1
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.05",
-   "n": 17,
+   "tipo": "seq",
+   "chave": "GRRGG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
