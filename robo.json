@@ -4011,12 +4011,18 @@
  },
  "ambas": {
   "saldo": -120.1,
-  "ciclos": 1131,
+  "ciclos": 1132,
   "greens": 774,
   "redsCiclo": 129,
   "aborts": 0,
-  "descartes": 228,
+  "descartes": 229,
   "historico": [
+   {
+    "quando": "2026-08-08T20:08:47.561Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :08) — liga REARMADA"
+   },
    {
     "quando": "2026-08-08T20:04:39.558Z",
     "resultado": "RED_CICLO",
@@ -7565,11 +7571,40 @@
    }
   ],
   "consumidas": {
-   "euro": 1786216118656,
    "premier": 1786216671361,
    "copa": 1786219479455
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:05",
+     "jogo": "Eslovênia x Hungria",
+     "odd": 2.25
+    },
+    {
+     "h": "21:08",
+     "jogo": "Sérvia x Geórgia",
+     "odd": 2.2
+    },
+    {
+     "h": "21:11",
+     "jogo": "Alemanha x Suíça",
+     "odd": 1.87
+    }
+   ],
+   "gatilho": "coluna :08",
+   "alvo": {
+    "h": "21:05",
+    "jogo": "Eslovênia x Hungria",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1786219729258
+   },
+   "iniciadoEm": 1786219729258
+  },
   "cooldown": {
    "euro": 1786216118656,
    "super": 1786214407551,
@@ -7603,9 +7638,9 @@
    "2026-08-08": -30.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "México",
-   "n": 18,
+   "tipo": "coluna",
+   "chave": ":08",
+   "n": 21,
    "start": 1
   },
   "_obs": {}
