@@ -3968,8 +3968,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "16:15",
@@ -3989,13 +3989,21 @@
    ],
    "gatilho": "odd 2.05",
    "alvo": {
-    "h": "16:15",
-    "jogo": "Burnley x United",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1786201640251
+    "h": "16:18",
+    "jogo": "Brighton x Liverpool",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1786202276056
    },
-   "iniciadoEm": 1786201640251
+   "iniciadoEm": 1786201640251,
+   "tiros": [
+    {
+     "h": "16:15",
+     "jogo": "Burnley x United",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786167093779,
@@ -7507,7 +7515,37 @@
    "copa": 1786201659457,
    "euro": 1786202253551
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:18",
+     "jogo": "Brighton x Liverpool",
+     "odd": 1.85
+    },
+    {
+     "h": "16:21",
+     "jogo": "Watford x West Ham",
+     "odd": 2.15
+    },
+    {
+     "h": "16:24",
+     "jogo": "Southampton x Brentford",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "time Brighton",
+   "alvo": {
+    "h": "16:18",
+    "jogo": "Brighton x Liverpool",
+    "odd": 1.85,
+    "unidades": 1,
+    "desde": 1786202255960
+   },
+   "iniciadoEm": 1786202255960
+  },
   "cooldown": {
    "euro": 1786202253551,
    "super": 1786168842580,
