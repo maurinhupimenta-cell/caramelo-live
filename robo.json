@@ -3964,11 +3964,40 @@
    }
   ],
   "consumidas": {
-   "super": 1786161075982,
    "copa": 1786161797882,
    "premier": 1786163001384
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:55",
+     "jogo": "Bogota x Santos",
+     "odd": 2.62
+    },
+    {
+     "h": "05:58",
+     "jogo": "Penarol x Quito",
+     "odd": 2.45
+    },
+    {
+     "h": "06:01",
+     "jogo": "Medellin x Santos",
+     "odd": 2.45
+    }
+   ],
+   "gatilho": "time Quito",
+   "alvo": {
+    "h": "05:55",
+    "jogo": "Bogota x Santos",
+    "odd": 2.62,
+    "unidades": 1,
+    "desde": 1786164686277
+   },
+   "iniciadoEm": 1786164686277
+  },
   "cooldown": {
    "copa": 1786161797882,
    "premier": 1786163001384,
@@ -4004,9 +4033,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Brighton",
+   "chave": "Quito",
    "n": 9,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
@@ -7492,7 +7521,7 @@
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Sao Paulo",
-   "n": 9,
+   "n": 10,
    "start": 1
   },
   "_obs": {}
