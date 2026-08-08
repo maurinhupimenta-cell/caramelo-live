@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -123,
-  "ciclos": 1138,
-  "greens": 722,
+  "saldo": -121.6,
+  "ciclos": 1139,
+  "greens": 723,
   "redsCiclo": 176,
   "aborts": 0,
   "descartes": 240,
   "historico": [
+   {
+    "quando": "2026-08-08T22:13:34.860Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "copa · Qatar x Portugal @2.2 (tiro 2) · gatilho: time Portugal"
+   },
    {
     "quando": "2026-08-08T21:40:26.156Z",
     "resultado": "GREEN",
@@ -3955,58 +3961,15 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-28T08:52:10.037Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho odd 2.45) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "super": 1786225225962
+   "super": 1786225225962,
+   "copa": 1786227214754
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "23:07",
-     "jogo": "Inglaterra x Uzbequistão",
-     "odd": 2.3
-    },
-    {
-     "h": "23:10",
-     "jogo": "Qatar x Portugal",
-     "odd": 2.2
-    },
-    {
-     "h": "23:13",
-     "jogo": "Bélgica x Arábia Saudita",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Portugal",
-   "alvo": {
-    "h": "23:10",
-    "jogo": "Qatar x Portugal",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1786227093151
-   },
-   "iniciadoEm": 1786226676158,
-   "tiros": [
-    {
-     "h": "23:07",
-     "jogo": "Inglaterra x Uzbequistão",
-     "odd": 2.3,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1786223074856,
+   "copa": 1786227214754,
    "premier": 1786223437761,
    "euro": 1786223556770,
    "super": 1786225225962
@@ -4036,7 +3999,7 @@
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
-   "2026-08-08": 1.8
+   "2026-08-08": 3.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
