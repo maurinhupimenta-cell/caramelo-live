@@ -7445,8 +7445,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "06:52",
@@ -7466,11 +7466,11 @@
    ],
    "gatilho": "placar empate 2-2",
    "alvo": {
-    "h": "06:55",
-    "jogo": "Porto Alegre x Belo Horizonte",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1786168505485
+    "h": "06:58",
+    "jogo": "Lima x Sao Paulo",
+    "odd": 1.8,
+    "unidades": 4,
+    "desde": 1786168835683
    },
    "iniciadoEm": 1786168417384,
    "tiros": [
@@ -7479,6 +7479,12 @@
      "jogo": "Bogota x Avellaneda",
      "odd": 2.15,
      "unidades": 1
+    },
+    {
+     "h": "06:55",
+     "jogo": "Porto Alegre x Belo Horizonte",
+     "odd": 2.05,
+     "unidades": 2
     }
    ]
   },
@@ -7515,9 +7521,9 @@
    "2026-08-08": -8.7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Sao Paulo",
-   "n": 12,
+   "tipo": "seq",
+   "chave": "GGRR",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
