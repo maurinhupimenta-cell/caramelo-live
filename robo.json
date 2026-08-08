@@ -3968,7 +3968,37 @@
    "super": 1786161075982,
    "copa": 1786161797882
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:15",
+     "jogo": "Tottenham x Leicester",
+     "odd": 2.5
+    },
+    {
+     "h": "05:18",
+     "jogo": "Islington x United",
+     "odd": 2.2
+    },
+    {
+     "h": "05:21",
+     "jogo": "Brentford x Watford",
+     "odd": 2.29
+    }
+   ],
+   "gatilho": "time United",
+   "alvo": {
+    "h": "05:15",
+    "jogo": "Tottenham x Leicester",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1786161951982
+   },
+   "iniciadoEm": 1786161951982
+  },
   "cooldown": {
    "copa": 1786161797882,
    "premier": 1786158116084,
@@ -4003,10 +4033,10 @@
    "2026-08-08": 5.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.2",
-   "n": 14,
-   "start": 1
+   "tipo": "time",
+   "chave": "United",
+   "n": 9,
+   "start": 3
   },
   "_obs": {}
  },
