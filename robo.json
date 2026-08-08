@@ -3968,7 +3968,37 @@
    "premier": 1786223437761,
    "euro": 1786223556770
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:37",
+     "jogo": "Santiago x Itaquera",
+     "odd": 2.1
+    },
+    {
+     "h": "22:40",
+     "jogo": "Porto Alegre x Medellin",
+     "odd": 2.75
+    },
+    {
+     "h": "22:43",
+     "jogo": "Avellaneda x Santiago",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "odd 2.75",
+   "alvo": {
+    "h": "22:37",
+    "jogo": "Santiago x Itaquera",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1786224573354
+   },
+   "iniciadoEm": 1786224573354
+  },
   "cooldown": {
    "copa": 1786223074856,
    "premier": 1786223437761,
@@ -4003,10 +4033,10 @@
    "2026-08-08": 0.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGGG",
-   "n": 8,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.75",
+   "n": 9,
+   "start": 3
   },
   "_obs": {}
  },
