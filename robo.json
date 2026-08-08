@@ -3967,7 +3967,37 @@
    "super": 1786225225962,
    "copa": 1786227214754
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:36",
+     "jogo": "Leeds x Palace",
+     "odd": 2.45
+    },
+    {
+     "h": "23:39",
+     "jogo": "Brighton x Islington",
+     "odd": 2.05
+    },
+    {
+     "h": "23:42",
+     "jogo": "Brentford x Chelsea",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "odd 2.05",
+   "alvo": {
+    "h": "23:36",
+    "jogo": "Leeds x Palace",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1786228029552
+   },
+   "iniciadoEm": 1786228029552
+  },
   "cooldown": {
    "copa": 1786227214754,
    "premier": 1786223437761,
@@ -4002,10 +4032,10 @@
    "2026-08-08": 3.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Portugal",
-   "n": 15,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.05",
+   "n": 19,
+   "start": 3
   },
   "_obs": {}
  },
