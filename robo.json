@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -121.6,
-  "ciclos": 1139,
+  "saldo": -128.6,
+  "ciclos": 1140,
   "greens": 723,
-  "redsCiclo": 176,
+  "redsCiclo": 177,
   "aborts": 0,
   "descartes": 240,
   "historico": [
+   {
+    "quando": "2026-08-08T22:44:50.650Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: odd 2.05"
+   },
    {
     "quando": "2026-08-08T22:13:34.860Z",
     "resultado": "GREEN",
@@ -3955,65 +3961,16 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho coluna :28) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-28T09:07:12.136Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
-   "copa": 1786227214754
+   "copa": 1786227214754,
+   "premier": 1786229090455
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "23:36",
-     "jogo": "Leeds x Palace",
-     "odd": 2.45
-    },
-    {
-     "h": "23:39",
-     "jogo": "Brighton x Islington",
-     "odd": 2.05
-    },
-    {
-     "h": "23:42",
-     "jogo": "Brentford x Chelsea",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "odd 2.05",
-   "alvo": {
-    "h": "23:42",
-    "jogo": "Brentford x Chelsea",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1786228909152
-   },
-   "iniciadoEm": 1786228029552,
-   "tiros": [
-    {
-     "h": "23:36",
-     "jogo": "Leeds x Palace",
-     "odd": 2.45,
-     "unidades": 1
-    },
-    {
-     "h": "23:39",
-     "jogo": "Brighton x Islington",
-     "odd": 2.05,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786227214754,
-   "premier": 1786223437761,
+   "premier": 1786229090455,
    "euro": 1786223556770,
    "super": 1786225225962
   },
@@ -4042,7 +3999,7 @@
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
-   "2026-08-08": 3.2
+   "2026-08-08": -3.8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
