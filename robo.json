@@ -3967,7 +3967,45 @@
    "premier": 1786210931058,
    "super": 1786212397358
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "19:10",
+     "jogo": "Noruega x Paraguai",
+     "odd": 2.25
+    },
+    {
+     "h": "19:13",
+     "jogo": "Japão x Argentina",
+     "odd": 2.25
+    },
+    {
+     "h": "19:16",
+     "jogo": "Iraque x Países Baixos",
+     "odd": 2.45
+    }
+   ],
+   "gatilho": "time Argentina",
+   "alvo": {
+    "h": "19:13",
+    "jogo": "Japão x Argentina",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1786212815556
+   },
+   "iniciadoEm": 1786212399551,
+   "tiros": [
+    {
+     "h": "19:10",
+     "jogo": "Noruega x Paraguai",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1786208496959,
    "premier": 1786210931058,
@@ -4003,9 +4041,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Argentina",
-   "n": 17,
-   "start": 2
+   "chave": "Portugal",
+   "n": 11,
+   "start": 1
   },
   "_obs": {}
  },
