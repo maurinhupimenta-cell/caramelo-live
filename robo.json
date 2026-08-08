@@ -3966,7 +3966,45 @@
   "consumidas": {
    "premier": 1786215232062
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "20:31",
+     "jogo": "Japão x Equador",
+     "odd": 2.25
+    },
+    {
+     "h": "20:34",
+     "jogo": "Qatar x EUA",
+     "odd": 2.25
+    },
+    {
+     "h": "20:37",
+     "jogo": "Egito x Paraguai",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "time Qatar",
+   "alvo": {
+    "h": "20:34",
+    "jogo": "Qatar x EUA",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1786217675159
+   },
+   "iniciadoEm": 1786217139354,
+   "tiros": [
+    {
+     "h": "20:31",
+     "jogo": "Japão x Equador",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1786213175553,
    "premier": 1786215232062,
@@ -4001,17 +4039,12 @@
    "2026-08-08": -5.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGRG",
-   "n": 9,
+   "tipo": "time",
+   "chave": "Qatar",
+   "n": 13,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1786216958858,
-    "gatilho": "time Qatar"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -113.1,
