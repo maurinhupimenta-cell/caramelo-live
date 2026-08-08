@@ -4054,13 +4054,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -93.4,
-  "ciclos": 1106,
-  "greens": 758,
+  "saldo": -92.5,
+  "ciclos": 1107,
+  "greens": 759,
   "redsCiclo": 123,
   "aborts": 0,
   "descartes": 225,
   "historico": [
+   {
+    "quando": "2026-08-08T04:21:17.284Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · Jordânia x Portugal @1.9 (tiro 1) · gatilho: odd 1.9"
+   },
    {
     "quando": "2026-08-08T04:15:10.389Z",
     "resultado": "GREEN_OBS",
@@ -7461,44 +7467,15 @@
   "consumidas": {
    "super": 1786160797979,
    "premier": 1786161943086,
-   "euro": 1786162037887
+   "euro": 1786162037887,
+   "copa": 1786162877083
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:19",
-     "jogo": "Jordânia x Portugal",
-     "odd": 1.9
-    },
-    {
-     "h": "05:22",
-     "jogo": "Gana x Iraque",
-     "odd": 2.15
-    },
-    {
-     "h": "05:25",
-     "jogo": "Países Baixos x Costa do Marfim",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "odd 1.9",
-   "alvo": {
-    "h": "05:19",
-    "jogo": "Jordânia x Portugal",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1786162515689
-   },
-   "iniciadoEm": 1786162515689
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786162037887,
    "super": 1786160797979,
    "premier": 1786161943086,
-   "copa": 1786158905581
+   "copa": 1786162877083
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7524,7 +7501,7 @@
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
    "2026-08-07": -8,
-   "2026-08-08": -4.2
+   "2026-08-08": -3.3
   },
   "_gatilhoAtual": {
    "tipo": "odd",
