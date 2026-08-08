@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -123.1,
-  "ciclos": 1107,
-  "greens": 701,
+  "saldo": -121.7,
+  "ciclos": 1108,
+  "greens": 702,
   "redsCiclo": 172,
   "aborts": 0,
   "descartes": 234,
   "historico": [
+   {
+    "quando": "2026-08-08T03:07:00.987Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "euro · Turquia x Escócia @2.4 (tiro 1) · gatilho: placar empate 1-1"
+   },
    {
     "quando": "2026-08-08T03:01:56.280Z",
     "resultado": "GREEN",
@@ -3955,54 +3961,19 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho seq GRGRR) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-27T16:31:25.206Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: odd 2.75"
    }
   ],
   "consumidas": {
    "copa": 1786157458484,
    "super": 1786157463083,
-   "premier": 1786158116084
+   "premier": 1786158116084,
+   "euro": 1786158420881
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:50",
-     "jogo": "Turquia x Escócia",
-     "odd": 2.4
-    },
-    {
-     "h": "03:53",
-     "jogo": "Ucrânia x Bélgica",
-     "odd": 2.2
-    },
-    {
-     "h": "03:56",
-     "jogo": "Eslováquia x Suíça",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "placar empate 1-1",
-   "alvo": {
-    "h": "03:50",
-    "jogo": "Turquia x Escócia",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1786158418682
-   },
-   "iniciadoEm": 1786158418682
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786157458484,
    "premier": 1786158116084,
-   "euro": 1786144495883,
+   "euro": 1786158420881,
    "super": 1786157463083
   },
   "dias": {
@@ -4030,7 +4001,7 @@
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
-   "2026-08-08": 1.7
+   "2026-08-08": 3.1
   },
   "_gatilhoAtual": {
    "tipo": "placar",
@@ -4042,12 +4013,18 @@
  },
  "ambas": {
   "saldo": -89.2,
-  "ciclos": 1100,
+  "ciclos": 1101,
   "greens": 755,
   "redsCiclo": 122,
   "aborts": 0,
-  "descartes": 223,
+  "descartes": 224,
   "historico": [
+   {
+    "quando": "2026-08-08T03:14:58.286Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho odd 1.98) — liga REARMADA"
+   },
    {
     "quando": "2026-08-08T02:56:58.481Z",
     "resultado": "GREEN",
@@ -7444,7 +7421,8 @@
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
-   "2026-08-07": -8
+   "2026-08-07": -8,
+   "2026-08-08": 0
   },
   "_gatilhoAtual": {
    "tipo": "time",
