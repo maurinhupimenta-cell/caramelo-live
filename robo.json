@@ -3968,7 +3968,37 @@
    "super": 1786157463083,
    "premier": 1786158116084
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:50",
+     "jogo": "Turquia x Escócia",
+     "odd": 2.4
+    },
+    {
+     "h": "03:53",
+     "jogo": "Ucrânia x Bélgica",
+     "odd": 2.2
+    },
+    {
+     "h": "03:56",
+     "jogo": "Eslováquia x Suíça",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "placar empate 1-1",
+   "alvo": {
+    "h": "03:50",
+    "jogo": "Turquia x Escócia",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1786158418682
+   },
+   "iniciadoEm": 1786158418682
+  },
   "cooldown": {
    "copa": 1786157458484,
    "premier": 1786158116084,
@@ -4003,8 +4033,8 @@
    "2026-08-08": 1.7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Islington",
+   "tipo": "placar",
+   "chave": "empate 1-1",
    "n": 10,
    "start": 1
   },
@@ -7422,6 +7452,11 @@
    "n": 9,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1786158236487,
+    "gatilho": "odd 1.98"
+   }
+  }
  }
 }
