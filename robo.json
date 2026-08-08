@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -124.8,
-  "ciclos": 1113,
-  "greens": 705,
+  "saldo": -123.4,
+  "ciclos": 1114,
+  "greens": 706,
   "redsCiclo": 173,
   "aborts": 0,
   "descartes": 235,
   "historico": [
+   {
+    "quando": "2026-08-08T05:31:33.886Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "copa · EUA x Nova Zelândia @2.2 (tiro 2) · gatilho: odd 2.2"
+   },
    {
     "quando": "2026-08-08T05:29:47.883Z",
     "resultado": "GREEN_OBS",
@@ -3955,58 +3961,15 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: seq GRGRR"
-   },
-   {
-    "quando": "2026-07-27T19:16:58.903Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho seq GRGG) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "super": 1786165173987
+   "super": 1786165173987,
+   "copa": 1786167093779
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "06:25",
-     "jogo": "Gana x Irã",
-     "odd": 2.7
-    },
-    {
-     "h": "06:28",
-     "jogo": "EUA x Nova Zelândia",
-     "odd": 2.2
-    },
-    {
-     "h": "06:31",
-     "jogo": "Uzbequistão x Senegal",
-     "odd": 2.45
-    }
-   ],
-   "gatilho": "odd 2.2",
-   "alvo": {
-    "h": "06:28",
-    "jogo": "EUA x Nova Zelândia",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1786166913780
-   },
-   "iniciadoEm": 1786166194280,
-   "tiros": [
-    {
-     "h": "06:25",
-     "jogo": "Gana x Irã",
-     "odd": 2.7,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1786161797882,
+   "copa": 1786167093779,
    "premier": 1786163001384,
    "euro": 1786158420881,
    "super": 1786165173987
@@ -4036,20 +3999,15 @@
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
-   "2026-08-08": 0
+   "2026-08-08": 1.4
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Alemanha",
-   "n": 8,
+   "chave": "Southampton",
+   "n": 11,
    "start": 2
   },
-  "_obs": {
-   "premier": {
-    "desde": 1786166618388,
-    "gatilho": "seq RRRR"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -97.9,
