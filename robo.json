@@ -3964,7 +3964,6 @@
    }
   ],
   "consumidas": {
-   "super": 1786212397358,
    "copa": 1786213175553,
    "premier": 1786215232062
   },
@@ -4011,13 +4010,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -99.1,
-  "ciclos": 1128,
+  "saldo": -106.1,
+  "ciclos": 1129,
   "greens": 774,
-  "redsCiclo": 126,
+  "redsCiclo": 127,
   "aborts": 0,
   "descartes": 228,
   "historico": [
+   {
+    "quando": "2026-08-08T19:08:38.852Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: odd 2.07"
+   },
    {
     "quando": "2026-08-08T18:44:37.456Z",
     "resultado": "GREEN",
@@ -7549,55 +7554,12 @@
   ],
   "consumidas": {
    "super": 1786214407551,
-   "copa": 1786214677259
+   "copa": 1786214677259,
+   "euro": 1786216118656
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "19:59",
-     "jogo": "Eslovênia x Suíça",
-     "odd": 2.1
-    },
-    {
-     "h": "20:02",
-     "jogo": "Croácia x Polônia",
-     "odd": 2.07
-    },
-    {
-     "h": "20:05",
-     "jogo": "Inglaterra x Portugal",
-     "odd": 1.86
-    }
-   ],
-   "gatilho": "odd 2.07",
-   "alvo": {
-    "h": "20:05",
-    "jogo": "Inglaterra x Portugal",
-    "odd": 1.86,
-    "unidades": 4,
-    "desde": 1786215994853
-   },
-   "iniciadoEm": 1786215335462,
-   "tiros": [
-    {
-     "h": "19:59",
-     "jogo": "Eslovênia x Suíça",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "20:02",
-     "jogo": "Croácia x Polônia",
-     "odd": 2.07,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1786210777556,
+   "euro": 1786216118656,
    "super": 1786214407551,
    "premier": 1786207486657,
    "copa": 1786214677259
@@ -7626,7 +7588,7 @@
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
    "2026-08-07": -8,
-   "2026-08-08": -9.9
+   "2026-08-08": -16.9
   },
   "_gatilhoAtual": {
    "tipo": "seq",
