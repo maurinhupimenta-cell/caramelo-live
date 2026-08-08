@@ -7577,11 +7577,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1786216671361,
    "copa": 1786219479455,
    "euro": 1786219896262
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:34",
+     "jogo": "Lima x Buenos Aires",
+     "odd": 1.83
+    },
+    {
+     "h": "21:37",
+     "jogo": "La Boca x Avellaneda",
+     "odd": 2.07
+    },
+    {
+     "h": "21:40",
+     "jogo": "Guayaquil x Asuncion",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "odd 2.07",
+   "alvo": {
+    "h": "21:34",
+    "jogo": "Lima x Buenos Aires",
+    "odd": 1.83,
+    "unidades": 1,
+    "desde": 1786220733261
+   },
+   "iniciadoEm": 1786220733261
+  },
   "cooldown": {
    "euro": 1786219896262,
    "super": 1786214407551,
@@ -7615,10 +7644,10 @@
    "2026-08-08": -29.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":08",
-   "n": 21,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.07",
+   "n": 15,
+   "start": 3
   },
   "_obs": {}
  }
