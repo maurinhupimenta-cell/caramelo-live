@@ -3969,8 +3969,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "16:31",
@@ -3990,13 +3990,21 @@
    ],
    "gatilho": "coluna :34",
    "alvo": {
-    "h": "16:31",
-    "jogo": "Áustria x Suíça",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1786202555954
+    "h": "16:34",
+    "jogo": "RD Congo x Haiti",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1786203395353
    },
-   "iniciadoEm": 1786202555954
+   "iniciadoEm": 1786202555954,
+   "tiros": [
+    {
+     "h": "16:31",
+     "jogo": "Áustria x Suíça",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786167093779,
@@ -4035,7 +4043,7 @@
    "tipo": "coluna",
    "chave": ":34",
    "n": 16,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
