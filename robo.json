@@ -7462,8 +7462,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "06:15",
@@ -7483,13 +7483,21 @@
    ],
    "gatilho": "odd 1.95",
    "alvo": {
-    "h": "06:15",
-    "jogo": "Islington x City",
-    "odd": 1.85,
-    "unidades": 1,
-    "desde": 1786165554586
+    "h": "06:18",
+    "jogo": "Norwich x Brentford",
+    "odd": 1.95,
+    "unidades": 2,
+    "desde": 1786166266089
    },
-   "iniciadoEm": 1786165554586
+   "iniciadoEm": 1786165554586,
+   "tiros": [
+    {
+     "h": "06:15",
+     "jogo": "Islington x City",
+     "odd": 1.85,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786162037887,
@@ -7524,9 +7532,9 @@
    "2026-08-08": -2.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRG",
-   "n": 9,
+   "tipo": "time",
+   "chave": "Croácia",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
