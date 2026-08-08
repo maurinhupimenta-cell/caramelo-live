@@ -3967,7 +3967,37 @@
    "super": 1786201628154,
    "premier": 1786202500651
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:31",
+     "jogo": "Áustria x Suíça",
+     "odd": 2.25
+    },
+    {
+     "h": "16:34",
+     "jogo": "RD Congo x Haiti",
+     "odd": 2.05
+    },
+    {
+     "h": "16:37",
+     "jogo": "Japão x Costa do Marfim",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "coluna :34",
+   "alvo": {
+    "h": "16:31",
+    "jogo": "Áustria x Suíça",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1786202555954
+   },
+   "iniciadoEm": 1786202555954
+  },
   "cooldown": {
    "copa": 1786167093779,
    "premier": 1786202500651,
@@ -4002,9 +4032,9 @@
    "2026-08-08": 7.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.05",
-   "n": 10,
+   "tipo": "coluna",
+   "chave": ":34",
+   "n": 16,
    "start": 3
   },
   "_obs": {}
