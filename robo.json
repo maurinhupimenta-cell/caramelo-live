@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -122.1,
-  "ciclos": 1115,
-  "greens": 707,
+  "saldo": -121.1,
+  "ciclos": 1116,
+  "greens": 708,
   "redsCiclo": 173,
   "aborts": 0,
   "descartes": 235,
   "historico": [
+   {
+    "quando": "2026-08-08T05:39:38.987Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Inglaterra x Alemanha @2.05 (tiro 1) · gatilho: time Alemanha"
+   },
    {
     "quando": "2026-08-08T05:39:34.479Z",
     "resultado": "GREEN",
@@ -3955,24 +3961,19 @@
     "resultado": "GREEN",
     "unidades": 2,
     "detalhe": "euro · Dinamarca x Suíça @2.25 (tiro 3) · gatilho: seq GRGGR"
-   },
-   {
-    "quando": "2026-07-27T19:59:39.996Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Newcastle x Brighton @1.95 (tiro 1) · gatilho: seq RGGRG"
    }
   ],
   "consumidas": {
    "super": 1786165173987,
    "copa": 1786167093779,
-   "premier": 1786167574189
+   "premier": 1786167574189,
+   "euro": 1786167578882
   },
   "ciclo": null,
   "cooldown": {
    "copa": 1786167093779,
    "premier": 1786167574189,
-   "euro": 1786158420881,
+   "euro": 1786167578882,
    "super": 1786165173987
   },
   "dias": {
@@ -4000,7 +4001,7 @@
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
-   "2026-08-08": 2.7
+   "2026-08-08": 3.7
   },
   "_gatilhoAtual": {
    "tipo": "time",
@@ -7440,11 +7441,40 @@
    }
   ],
   "consumidas": {
-   "super": 1786164816182,
    "premier": 1786166618477,
    "euro": 1786166798188
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:52",
+     "jogo": "Bogota x Avellaneda",
+     "odd": 2.15
+    },
+    {
+     "h": "06:55",
+     "jogo": "Porto Alegre x Belo Horizonte",
+     "odd": 2.05
+    },
+    {
+     "h": "06:58",
+     "jogo": "Lima x Sao Paulo",
+     "odd": 1.8
+    }
+   ],
+   "gatilho": "placar empate 2-2",
+   "alvo": {
+    "h": "06:52",
+    "jogo": "Bogota x Avellaneda",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1786168417384
+   },
+   "iniciadoEm": 1786168417384
+  },
   "cooldown": {
    "euro": 1786166798188,
    "super": 1786164816182,
@@ -7478,9 +7508,9 @@
    "2026-08-08": -8.7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Croácia",
-   "n": 10,
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
