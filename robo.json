@@ -4010,13 +4010,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -106.1,
-  "ciclos": 1129,
+  "saldo": -113.1,
+  "ciclos": 1130,
   "greens": 774,
-  "redsCiclo": 127,
+  "redsCiclo": 128,
   "aborts": 0,
   "descartes": 228,
   "historico": [
+   {
+    "quando": "2026-08-08T19:17:51.556Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq RGGGG"
+   },
    {
     "quando": "2026-08-08T19:08:38.852Z",
     "resultado": "RED_CICLO",
@@ -7555,57 +7561,14 @@
   "consumidas": {
    "super": 1786214407551,
    "copa": 1786214677259,
-   "euro": 1786216118656
+   "euro": 1786216118656,
+   "premier": 1786216671361
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "20:09",
-     "jogo": "Burnley x Norwich",
-     "odd": 1.87
-    },
-    {
-     "h": "20:12",
-     "jogo": "Chelsea x Wolverhampton",
-     "odd": 1.86
-    },
-    {
-     "h": "20:15",
-     "jogo": "Southampton x Palace",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "seq RGGGG",
-   "alvo": {
-    "h": "20:15",
-    "jogo": "Southampton x Palace",
-    "odd": 2.02,
-    "unidades": 4,
-    "desde": 1786216481563
-   },
-   "iniciadoEm": 1786216126660,
-   "tiros": [
-    {
-     "h": "20:09",
-     "jogo": "Burnley x Norwich",
-     "odd": 1.87,
-     "unidades": 1
-    },
-    {
-     "h": "20:12",
-     "jogo": "Chelsea x Wolverhampton",
-     "odd": 1.86,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786216118656,
    "super": 1786214407551,
-   "premier": 1786207486657,
+   "premier": 1786216671361,
    "copa": 1786214677259
   },
   "dias": {
@@ -7632,7 +7595,7 @@
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
    "2026-08-07": -8,
-   "2026-08-08": -16.9
+   "2026-08-08": -23.9
   },
   "_gatilhoAtual": {
    "tipo": "seq",
