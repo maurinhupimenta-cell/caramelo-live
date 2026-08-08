@@ -3966,8 +3966,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "03:31",
@@ -3987,13 +3987,21 @@
    ],
    "gatilho": "placar acima de 1-0 (2-0)",
    "alvo": {
-    "h": "03:31",
-    "jogo": "Marrocos x França",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1786156076086
+    "h": "03:34",
+    "jogo": "Colômbia x Coreia do Sul",
+    "odd": 2.4,
+    "unidades": 2,
+    "desde": 1786156496285
    },
-   "iniciadoEm": 1786156076086
+   "iniciadoEm": 1786156076086,
+   "tiros": [
+    {
+     "h": "03:31",
+     "jogo": "Marrocos x França",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786143416380,
@@ -4028,9 +4036,9 @@
    "2026-08-07": 6.6
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "0-0",
-   "n": 8,
+   "tipo": "time",
+   "chave": "Islington",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
@@ -7453,9 +7461,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Guayaquil",
-   "n": 8,
-   "start": 3
+   "chave": "Islington",
+   "n": 9,
+   "start": 1
   },
   "_obs": {}
  }
