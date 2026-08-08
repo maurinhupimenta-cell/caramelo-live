@@ -4011,13 +4011,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -97.9,
-  "ciclos": 1110,
-  "greens": 761,
+  "saldo": -97.7,
+  "ciclos": 1111,
+  "greens": 762,
   "redsCiclo": 124,
   "aborts": 0,
   "descartes": 225,
   "historico": [
+   {
+    "quando": "2026-08-08T06:00:42.589Z",
+    "resultado": "GREEN",
+    "unidades": 0.2,
+    "detalhe": "super · Lima x Sao Paulo @1.8 (tiro 3) · gatilho: placar empate 2-2"
+   },
    {
     "quando": "2026-08-08T05:26:38.382Z",
     "resultado": "GREEN",
@@ -7441,56 +7447,13 @@
   ],
   "consumidas": {
    "premier": 1786166618477,
-   "euro": 1786166798188
+   "euro": 1786166798188,
+   "super": 1786168842580
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "06:52",
-     "jogo": "Bogota x Avellaneda",
-     "odd": 2.15
-    },
-    {
-     "h": "06:55",
-     "jogo": "Porto Alegre x Belo Horizonte",
-     "odd": 2.05
-    },
-    {
-     "h": "06:58",
-     "jogo": "Lima x Sao Paulo",
-     "odd": 1.8
-    }
-   ],
-   "gatilho": "placar empate 2-2",
-   "alvo": {
-    "h": "06:58",
-    "jogo": "Lima x Sao Paulo",
-    "odd": 1.8,
-    "unidades": 4,
-    "desde": 1786168835683
-   },
-   "iniciadoEm": 1786168417384,
-   "tiros": [
-    {
-     "h": "06:52",
-     "jogo": "Bogota x Avellaneda",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "06:55",
-     "jogo": "Porto Alegre x Belo Horizonte",
-     "odd": 2.05,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786166798188,
-   "super": 1786164816182,
+   "super": 1786168842580,
    "premier": 1786166618477,
    "copa": 1786162877083
   },
@@ -7518,13 +7481,13 @@
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
    "2026-08-07": -8,
-   "2026-08-08": -8.7
+   "2026-08-08": -8.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRR",
-   "n": 9,
-   "start": 1
+   "tipo": "time",
+   "chave": "Guayaquil",
+   "n": 14,
+   "start": 2
   },
   "_obs": {}
  }
