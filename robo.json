@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -124.1,
-  "ciclos": 1137,
-  "greens": 721,
+  "saldo": -123,
+  "ciclos": 1138,
+  "greens": 722,
   "redsCiclo": 176,
   "aborts": 0,
   "descartes": 240,
   "historico": [
+   {
+    "quando": "2026-08-08T21:40:26.156Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Santiago x Itaquera @2.1 (tiro 1) · gatilho: odd 2.75"
+   },
    {
     "quando": "2026-08-08T21:12:36.954Z",
     "resultado": "GREEN",
@@ -3955,55 +3961,20 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho odd 2.45) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-28T08:51:54.227Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
    "copa": 1786223074856,
    "premier": 1786223437761,
-   "euro": 1786223556770
+   "euro": 1786223556770,
+   "super": 1786225225962
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:37",
-     "jogo": "Santiago x Itaquera",
-     "odd": 2.1
-    },
-    {
-     "h": "22:40",
-     "jogo": "Porto Alegre x Medellin",
-     "odd": 2.75
-    },
-    {
-     "h": "22:43",
-     "jogo": "Avellaneda x Santiago",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "odd 2.75",
-   "alvo": {
-    "h": "22:37",
-    "jogo": "Santiago x Itaquera",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1786224573354
-   },
-   "iniciadoEm": 1786224573354
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786223074856,
    "premier": 1786223437761,
    "euro": 1786223556770,
-   "super": 1786212397358
+   "super": 1786225225962
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4030,7 +4001,7 @@
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
-   "2026-08-08": 0.7
+   "2026-08-08": 1.8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
