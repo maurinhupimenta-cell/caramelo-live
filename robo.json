@@ -7652,8 +7652,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "00:04",
@@ -7673,13 +7673,21 @@
    ],
    "gatilho": "coluna :07",
    "alvo": {
-    "h": "00:04",
-    "jogo": "Nova Zelândia x Argélia",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1786229793151
+    "h": "00:07",
+    "jogo": "Egito x Espanha",
+    "odd": 1.85,
+    "unidades": 2,
+    "desde": 1786230457351
    },
-   "iniciadoEm": 1786229793151
+   "iniciadoEm": 1786229793151,
+   "tiros": [
+    {
+     "h": "00:04",
+     "jogo": "Nova Zelândia x Argélia",
+     "odd": 1.95,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786219896262,
@@ -7717,7 +7725,7 @@
    "tipo": "coluna",
    "chave": ":07",
    "n": 24,
-   "start": 3
+   "start": 1
   },
   "_obs": {
    "premier": {
