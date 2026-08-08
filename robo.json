@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -116.2,
-  "ciclos": 1122,
-  "greens": 712,
+  "saldo": -115.1,
+  "ciclos": 1123,
+  "greens": 713,
   "redsCiclo": 173,
   "aborts": 0,
   "descartes": 237,
   "historico": [
+   {
+    "quando": "2026-08-08T16:35:45.953Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Palace x Wolverhampton @2.05 (tiro 2) · gatilho: odd 2.05"
+   },
    {
     "quando": "2026-08-08T15:38:33.955Z",
     "resultado": "GREEN",
@@ -3955,59 +3961,16 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq RRRR"
-   },
-   {
-    "quando": "2026-07-28T02:30:52.725Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "copa · Iraque x Croácia @2.55 (tiro 1) · gatilho: odd 2.4"
    }
   ],
   "consumidas": {
-   "copa": 1786203513758
+   "copa": 1786203513758,
+   "premier": 1786206945758
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:30",
-     "jogo": "Tottenham x Burnley",
-     "odd": 2.35
-    },
-    {
-     "h": "17:33",
-     "jogo": "Palace x Wolverhampton",
-     "odd": 2.05
-    },
-    {
-     "h": "17:36",
-     "jogo": "Watford x Islington",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "odd 2.05",
-   "alvo": {
-    "h": "17:33",
-    "jogo": "Palace x Wolverhampton",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1786206814063
-   },
-   "iniciadoEm": 1786206154257,
-   "tiros": [
-    {
-     "h": "17:30",
-     "jogo": "Tottenham x Burnley",
-     "odd": 2.35,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786203513758,
-   "premier": 1786202500651,
+   "premier": 1786206945758,
    "euro": 1786167578882,
    "super": 1786201628154
   },
@@ -4036,7 +3999,7 @@
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
-   "2026-08-08": 8.6
+   "2026-08-08": 9.7
   },
   "_gatilhoAtual": {
    "tipo": "odd",
@@ -7613,7 +7576,7 @@
    "tipo": "time",
    "chave": "Brighton",
    "n": 24,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
