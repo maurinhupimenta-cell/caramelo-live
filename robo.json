@@ -3964,7 +3964,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1786158420881,
    "super": 1786161075982,
    "copa": 1786161797882
   },
@@ -7438,7 +7437,37 @@
    "super": 1786160797979,
    "premier": 1786161943086
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:05",
+     "jogo": "Itália x Polônia",
+     "odd": 2.15
+    },
+    {
+     "h": "05:08",
+     "jogo": "Países Baixos x Eslovênia",
+     "odd": 2.1
+    },
+    {
+     "h": "05:11",
+     "jogo": "Albânia x Alemanha",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "seq RRGG",
+   "alvo": {
+    "h": "05:05",
+    "jogo": "Itália x Polônia",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1786161952182
+   },
+   "iniciadoEm": 1786161952182
+  },
   "cooldown": {
    "euro": 1786157818286,
    "super": 1786160797979,
@@ -7472,8 +7501,8 @@
    "2026-08-08": -5.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Palace",
+   "tipo": "seq",
+   "chave": "RRGG",
    "n": 9,
    "start": 1
   },
