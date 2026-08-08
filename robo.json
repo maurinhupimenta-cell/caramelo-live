@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -128.1,
-  "ciclos": 1104,
-  "greens": 698,
+  "saldo": -126.3,
+  "ciclos": 1105,
+  "greens": 699,
   "redsCiclo": 172,
   "aborts": 0,
   "descartes": 234,
   "historico": [
+   {
+    "quando": "2026-08-08T02:50:58.684Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "copa · Argentina x Bélgica @2.2 (tiro 3) · gatilho: placar acima de 1-0 (2-0)"
+   },
    {
     "quando": "2026-08-07T23:14:56.080Z",
     "resultado": "GREEN",
@@ -3955,50 +3961,14 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: odd 2.45"
-   },
-   {
-    "quando": "2026-07-27T15:22:04.102Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "copa · Suíça x Colômbia @2.25 (tiro 2) · gatilho: time Suíça"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "03:31",
-     "jogo": "Marrocos x França",
-     "odd": 2.25
-    },
-    {
-     "h": "03:34",
-     "jogo": "Colômbia x Coreia do Sul",
-     "odd": 2.4
-    },
-    {
-     "h": "03:37",
-     "jogo": "Argentina x Bélgica",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-0)",
-   "alvo": null,
-   "iniciadoEm": 1786156076086,
-   "tiros": [
-    {
-     "h": "03:31",
-     "jogo": "Marrocos x França",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "copa": 1786157458484
   },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1786143416380,
+   "copa": 1786157458484,
    "premier": 1786141991486,
    "euro": 1786144495883,
    "super": 1786133098587
@@ -4027,7 +3997,7 @@
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
-   "2026-08-07": 6.6
+   "2026-08-07": 8.4
   },
   "_gatilhoAtual": {
    "tipo": "time",
