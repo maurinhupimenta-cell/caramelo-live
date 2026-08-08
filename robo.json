@@ -4011,13 +4011,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -104.1,
-  "ciclos": 1122,
-  "greens": 769,
+  "saldo": -102.9,
+  "ciclos": 1123,
+  "greens": 770,
   "redsCiclo": 126,
   "aborts": 0,
   "descartes": 227,
   "historico": [
+   {
+    "quando": "2026-08-08T17:02:39.260Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Agua Branca x Porto Alegre @2.15 (tiro 1) · gatilho: coluna :01"
+   },
    {
     "quando": "2026-08-08T16:44:46.853Z",
     "resultado": "RED_CICLO",
@@ -7514,42 +7520,13 @@
   "consumidas": {
    "copa": 1786205673952,
    "euro": 1786206396855,
-   "premier": 1786207486657
+   "premier": 1786207486657,
+   "super": 1786208559151
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:58",
-     "jogo": "Agua Branca x Porto Alegre",
-     "odd": 2.15
-    },
-    {
-     "h": "18:01",
-     "jogo": "Rio de Janeiro x Medellin",
-     "odd": 2.1
-    },
-    {
-     "h": "18:04",
-     "jogo": "Guayaquil x Porto Alegre",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "coluna :01",
-   "alvo": {
-    "h": "17:58",
-    "jogo": "Agua Branca x Porto Alegre",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1786208014655
-   },
-   "iniciadoEm": 1786208014655
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786206396855,
-   "super": 1786204385657,
+   "super": 1786208559151,
    "premier": 1786207486657,
    "copa": 1786205673952
   },
@@ -7577,13 +7554,13 @@
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
    "2026-08-07": -8,
-   "2026-08-08": -14.9
+   "2026-08-08": -13.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":01",
-   "n": 17,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.8",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  }
