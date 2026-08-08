@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -127.9,
-  "ciclos": 1134,
-  "greens": 718,
+  "saldo": -126.4,
+  "ciclos": 1135,
+  "greens": 719,
   "redsCiclo": 176,
   "aborts": 0,
   "descartes": 240,
   "historico": [
+   {
+    "quando": "2026-08-08T21:04:35.050Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "copa · Senegal x Marrocos @2.5 (tiro 1) · gatilho: seq GRRGG"
+   },
    {
     "quando": "2026-08-08T20:02:40.055Z",
     "resultado": "GREEN",
@@ -3955,48 +3961,14 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho coluna :28) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-28T08:11:31.925Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:58",
-     "jogo": "Senegal x Marrocos",
-     "odd": 2.5
-    },
-    {
-     "h": "22:01",
-     "jogo": "Argentina x Suécia",
-     "odd": 2.45
-    },
-    {
-     "h": "22:04",
-     "jogo": "Nova Zelândia x Suíça",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "seq GRRGG",
-   "alvo": {
-    "h": "21:58",
-    "jogo": "Senegal x Marrocos",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1786222535057
-   },
-   "iniciadoEm": 1786222535057
+  "consumidas": {
+   "copa": 1786223074856
   },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1786217972764,
+   "copa": 1786223074856,
    "premier": 1786219359858,
    "euro": 1786167578882,
    "super": 1786212397358
@@ -4026,12 +3998,12 @@
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
-   "2026-08-08": -3.1
+   "2026-08-08": -1.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRGG",
-   "n": 8,
+   "tipo": "odd",
+   "chave": "2.05",
+   "n": 18,
    "start": 1
   },
   "_obs": {}
