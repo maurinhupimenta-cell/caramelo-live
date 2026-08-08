@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -126.3,
-  "ciclos": 1105,
-  "greens": 699,
+  "saldo": -124.8,
+  "ciclos": 1106,
+  "greens": 700,
   "redsCiclo": 172,
   "aborts": 0,
   "descartes": 234,
   "historico": [
+   {
+    "quando": "2026-08-08T02:51:03.281Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "super · La Boca x Santos @2.5 (tiro 1) · gatilho: time Buenos Aires"
+   },
    {
     "quando": "2026-08-08T02:50:58.684Z",
     "resultado": "GREEN",
@@ -3955,23 +3961,48 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho odd 2.75) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-27T15:39:55.201Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: odd 2.45"
    }
   ],
   "consumidas": {
-   "copa": 1786157458484
+   "copa": 1786157458484,
+   "super": 1786157463083
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:54",
+     "jogo": "Everton x United",
+     "odd": 2.15
+    },
+    {
+     "h": "03:57",
+     "jogo": "Liverpool x Aston",
+     "odd": 2.35
+    },
+    {
+     "h": "04:00",
+     "jogo": "Newcastle x Everton",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "time Liverpool",
+   "alvo": {
+    "h": "03:54",
+    "jogo": "Everton x United",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1786157518487
+   },
+   "iniciadoEm": 1786157518487
+  },
   "cooldown": {
    "copa": 1786157458484,
    "premier": 1786141991486,
    "euro": 1786144495883,
-   "super": 1786133098587
+   "super": 1786157463083
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -3997,13 +4028,13 @@
    "2026-08-04": 7.9,
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
-   "2026-08-07": 8.4
+   "2026-08-07": 9.9
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Liverpool",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
