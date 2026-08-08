@@ -7557,7 +7557,37 @@
    "copa": 1786214677259,
    "euro": 1786216118656
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:09",
+     "jogo": "Burnley x Norwich",
+     "odd": 1.87
+    },
+    {
+     "h": "20:12",
+     "jogo": "Chelsea x Wolverhampton",
+     "odd": 1.86
+    },
+    {
+     "h": "20:15",
+     "jogo": "Southampton x Palace",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "seq RGGGG",
+   "alvo": {
+    "h": "20:09",
+    "jogo": "Burnley x Norwich",
+    "odd": 1.87,
+    "unidades": 1,
+    "desde": 1786216126660
+   },
+   "iniciadoEm": 1786216126660
+  },
   "cooldown": {
    "euro": 1786216118656,
    "super": 1786214407551,
