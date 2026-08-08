@@ -4040,13 +4040,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -102,
-  "ciclos": 1124,
-  "greens": 771,
+  "saldo": -101.1,
+  "ciclos": 1125,
+  "greens": 772,
   "redsCiclo": 126,
   "aborts": 0,
   "descartes": 227,
   "historico": [
+   {
+    "quando": "2026-08-08T17:39:37.753Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Bélgica x Ucrânia @1.95 (tiro 2) · gatilho: coluna :35"
+   },
    {
     "quando": "2026-08-08T17:31:38.450Z",
     "resultado": "GREEN",
@@ -7555,49 +7561,12 @@
   "consumidas": {
    "premier": 1786207486657,
    "super": 1786208559151,
-   "copa": 1786210298255
+   "copa": 1786210298255,
+   "euro": 1786210777556
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "18:32",
-     "jogo": "Espanha x Geórgia",
-     "odd": 2.02
-    },
-    {
-     "h": "18:35",
-     "jogo": "Bélgica x Ucrânia",
-     "odd": 1.95
-    },
-    {
-     "h": "18:38",
-     "jogo": "Suíça x Espanha",
-     "odd": 1.8
-    }
-   ],
-   "gatilho": "coluna :35",
-   "alvo": {
-    "h": "18:35",
-    "jogo": "Bélgica x Ucrânia",
-    "odd": 1.95,
-    "unidades": 2,
-    "desde": 1786210595861
-   },
-   "iniciadoEm": 1786210300359,
-   "tiros": [
-    {
-     "h": "18:32",
-     "jogo": "Espanha x Geórgia",
-     "odd": 2.02,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1786206396855,
+   "euro": 1786210777556,
    "super": 1786208559151,
    "premier": 1786207486657,
    "copa": 1786210298255
@@ -7626,7 +7595,7 @@
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
    "2026-08-07": -8,
-   "2026-08-08": -12.8
+   "2026-08-08": -11.9
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
