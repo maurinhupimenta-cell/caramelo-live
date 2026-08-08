@@ -3967,7 +3967,37 @@
    "premier": 1786206945758,
    "super": 1786207555058
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:52",
+     "jogo": "México x Uzbequistão",
+     "odd": 2.25
+    },
+    {
+     "h": "17:55",
+     "jogo": "Escócia x Noruega",
+     "odd": 2.4
+    },
+    {
+     "h": "17:58",
+     "jogo": "Croácia x Brasil",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "time Noruega",
+   "alvo": {
+    "h": "17:52",
+    "jogo": "México x Uzbequistão",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1786207776253
+   },
+   "iniciadoEm": 1786207776253
+  },
   "cooldown": {
    "copa": 1786203513758,
    "premier": 1786206945758,
@@ -4002,9 +4032,9 @@
    "2026-08-08": 2.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRR",
-   "n": 18,
+   "tipo": "time",
+   "chave": "Noruega",
+   "n": 17,
    "start": 1
   },
   "_obs": {}
