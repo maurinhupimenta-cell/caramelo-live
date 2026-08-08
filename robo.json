@@ -4035,18 +4035,24 @@
    "tipo": "time",
    "chave": "United",
    "n": 9,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -93.4,
-  "ciclos": 1105,
+  "ciclos": 1106,
   "greens": 758,
   "redsCiclo": 123,
   "aborts": 0,
-  "descartes": 224,
+  "descartes": 225,
   "historico": [
+   {
+    "quando": "2026-08-08T04:15:10.389Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho odd 1.9) — liga REARMADA"
+   },
    {
     "quando": "2026-08-08T04:07:18.083Z",
     "resultado": "GREEN",
@@ -7439,7 +7445,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1786158905581,
    "super": 1786160797979,
    "premier": 1786161943086,
    "euro": 1786162037887
@@ -7483,6 +7488,11 @@
    "n": 9,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1786162510389,
+    "gatilho": "odd 1.9"
+   }
+  }
  }
 }
