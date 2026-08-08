@@ -356,12 +356,18 @@
  },
  "o25": {
   "saldo": -118.4,
-  "ciclos": 1119,
+  "ciclos": 1120,
   "greens": 710,
   "redsCiclo": 173,
   "aborts": 0,
-  "descartes": 236,
+  "descartes": 237,
   "historico": [
+   {
+    "quando": "2026-08-08T15:07:39.360Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho seq GRRRG) — liga REARMADA"
+   },
    {
     "quando": "2026-08-08T15:07:08.354Z",
     "resultado": "GREEN",
@@ -3955,12 +3961,6 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "super · Lima x Quito @2.2 (tiro 1) · gatilho: seq GRGRG"
-   },
-   {
-    "quando": "2026-07-27T22:32:19.863Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho seq GRGRG) — liga REARMADA"
    }
   ],
   "consumidas": {
@@ -4036,7 +4036,12 @@
    "n": 10,
    "start": 3
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1786201659360,
+    "gatilho": "seq GRRRG"
+   }
+  }
  },
  "ambas": {
   "saldo": -94.7,
