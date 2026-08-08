@@ -3964,7 +3964,45 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "16:01",
+     "jogo": "Belo Horizonte x La Plata",
+     "odd": 2.37
+    },
+    {
+     "h": "16:04",
+     "jogo": "Lima x Itaquera",
+     "odd": 2.2
+    },
+    {
+     "h": "16:07",
+     "jogo": "Santos x Belo Horizonte",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "coluna :01",
+   "alvo": {
+    "h": "16:04",
+    "jogo": "Lima x Itaquera",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1786201597660
+   },
+   "iniciadoEm": 1786201202258,
+   "tiros": [
+    {
+     "h": "16:01",
+     "jogo": "Belo Horizonte x La Plata",
+     "odd": 2.37,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1786167093779,
    "premier": 1786167574189,
@@ -3999,10 +4037,10 @@
    "2026-08-08": 5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Southampton",
-   "n": 13,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.05",
+   "n": 10,
+   "start": 3
   },
   "_obs": {}
  },
@@ -7459,10 +7497,7 @@
     "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
-  "consumidas": {
-   "super": 1786168842580,
-   "premier": 1786171174979
-  },
+  "consumidas": {},
   "ciclo": {
    "liga": "copa",
    "degrau": 0,
@@ -7527,10 +7562,10 @@
    "2026-08-08": -5.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":05",
-   "n": 16,
-   "start": 2
+   "tipo": "time",
+   "chave": "Brighton",
+   "n": 22,
+   "start": 1
   },
   "_obs": {}
  }
