@@ -7553,8 +7553,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "19:59",
@@ -7574,13 +7574,21 @@
    ],
    "gatilho": "odd 2.07",
    "alvo": {
-    "h": "19:59",
-    "jogo": "Eslovênia x Suíça",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1786215335462
+    "h": "20:02",
+    "jogo": "Croácia x Polônia",
+    "odd": 2.07,
+    "unidades": 2,
+    "desde": 1786215753461
    },
-   "iniciadoEm": 1786215335462
+   "iniciadoEm": 1786215335462,
+   "tiros": [
+    {
+     "h": "19:59",
+     "jogo": "Eslovênia x Suíça",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786210777556,
@@ -7618,7 +7626,7 @@
    "tipo": "odd",
    "chave": "2.07",
    "n": 10,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
