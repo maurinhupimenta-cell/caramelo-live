@@ -4042,12 +4042,18 @@
  },
  "ambas": {
   "saldo": -123.2,
-  "ciclos": 1140,
+  "ciclos": 1141,
   "greens": 778,
   "redsCiclo": 130,
   "aborts": 0,
-  "descartes": 232,
+  "descartes": 233,
   "historico": [
+   {
+    "quando": "2026-08-08T22:55:39.351Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time México) — liga REARMADA"
+   },
    {
     "quando": "2026-08-08T22:37:38.156Z",
     "resultado": "DESCARTADO",
@@ -7641,18 +7647,42 @@
     "resultado": "GREEN",
     "unidades": 0.8,
     "detalhe": "premier · Newcastle x Burnley @1.8 (tiro 1) · gatilho: odd 1.83"
-   },
-   {
-    "quando": "2026-07-27T17:49:25.399Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "super · La Boca x Sao Paulo @1.93 (tiro 1) · gatilho: odd 1.83"
    }
   ],
   "consumidas": {
    "super": 1786226253156
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "00:04",
+     "jogo": "Nova Zelândia x Argélia",
+     "odd": 1.95
+    },
+    {
+     "h": "00:07",
+     "jogo": "Egito x Espanha",
+     "odd": 1.85
+    },
+    {
+     "h": "00:10",
+     "jogo": "Cabo Verde x Escócia",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "coluna :07",
+   "alvo": {
+    "h": "00:04",
+    "jogo": "Nova Zelândia x Argélia",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1786229793151
+   },
+   "iniciadoEm": 1786229793151
+  },
   "cooldown": {
    "euro": 1786219896262,
    "super": 1786226253156,
@@ -7686,16 +7716,12 @@
    "2026-08-08": -34
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "México",
-   "n": 21,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":07",
+   "n": 24,
+   "start": 3
   },
   "_obs": {
-   "copa": {
-    "desde": 1786228667353,
-    "gatilho": "time México"
-   },
    "premier": {
     "desde": 1786228773358,
     "gatilho": "seq RGRRR"
