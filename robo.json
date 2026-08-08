@@ -3969,8 +3969,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:52",
@@ -3990,13 +3990,21 @@
    ],
    "gatilho": "time Noruega",
    "alvo": {
-    "h": "17:52",
-    "jogo": "México x Uzbequistão",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1786207776253
+    "h": "17:55",
+    "jogo": "Escócia x Noruega",
+    "odd": 2.4,
+    "unidades": 2,
+    "desde": 1786208195662
    },
-   "iniciadoEm": 1786207776253
+   "iniciadoEm": 1786207776253,
+   "tiros": [
+    {
+     "h": "17:52",
+     "jogo": "México x Uzbequistão",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786203513758,
@@ -4035,7 +4043,7 @@
    "tipo": "time",
    "chave": "Argentina",
    "n": 16,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
