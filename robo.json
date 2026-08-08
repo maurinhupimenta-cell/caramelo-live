@@ -7615,7 +7615,37 @@
   "consumidas": {
    "super": 1786226253156
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:31",
+     "jogo": "Senegal x Argélia",
+     "odd": 2.1
+    },
+    {
+     "h": "23:34",
+     "jogo": "Qatar x México",
+     "odd": 1.95
+    },
+    {
+     "h": "23:37",
+     "jogo": "Uzbequistão x Gana",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "time México",
+   "alvo": {
+    "h": "23:31",
+    "jogo": "Senegal x Argélia",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1786227757565
+   },
+   "iniciadoEm": 1786227757565
+  },
   "cooldown": {
    "euro": 1786219896262,
    "super": 1786226253156,
@@ -7649,10 +7679,10 @@
    "2026-08-08": -34
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.8",
-   "n": 15,
-   "start": 1
+   "tipo": "time",
+   "chave": "México",
+   "n": 21,
+   "start": 3
   },
   "_obs": {}
  }
