@@ -7449,7 +7449,37 @@
    "premier": 1786161943086,
    "euro": 1786162037887
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:19",
+     "jogo": "Jordânia x Portugal",
+     "odd": 1.9
+    },
+    {
+     "h": "05:22",
+     "jogo": "Gana x Iraque",
+     "odd": 2.15
+    },
+    {
+     "h": "05:25",
+     "jogo": "Países Baixos x Costa do Marfim",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "odd 1.9",
+   "alvo": {
+    "h": "05:19",
+    "jogo": "Jordânia x Portugal",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1786162515689
+   },
+   "iniciadoEm": 1786162515689
+  },
   "cooldown": {
    "euro": 1786162037887,
    "super": 1786160797979,
@@ -7483,16 +7513,11 @@
    "2026-08-08": -4.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGG",
+   "tipo": "odd",
+   "chave": "1.9",
    "n": 9,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1786162510389,
-    "gatilho": "odd 1.9"
-   }
-  }
+  "_obs": {}
  }
 }
