@@ -4033,9 +4033,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Noruega",
-   "n": 17,
-   "start": 1
+   "chave": "Argentina",
+   "n": 16,
+   "start": 3
   },
   "_obs": {}
  },
@@ -7541,12 +7541,41 @@
    }
   ],
   "consumidas": {
-   "super": 1786204385657,
    "copa": 1786205673952,
    "euro": 1786206396855,
    "premier": 1786207486657
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:58",
+     "jogo": "Agua Branca x Porto Alegre",
+     "odd": 2.15
+    },
+    {
+     "h": "18:01",
+     "jogo": "Rio de Janeiro x Medellin",
+     "odd": 2.1
+    },
+    {
+     "h": "18:04",
+     "jogo": "Guayaquil x Porto Alegre",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "coluna :01",
+   "alvo": {
+    "h": "17:58",
+    "jogo": "Agua Branca x Porto Alegre",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1786208014655
+   },
+   "iniciadoEm": 1786208014655
+  },
   "cooldown": {
    "euro": 1786206396855,
    "super": 1786204385657,
@@ -7580,10 +7609,10 @@
    "2026-08-08": -14.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Brighton",
-   "n": 24,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":01",
+   "n": 17,
+   "start": 2
   },
   "_obs": {}
  }
