@@ -4010,13 +4010,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -113.1,
-  "ciclos": 1130,
+  "saldo": -120.1,
+  "ciclos": 1131,
   "greens": 774,
-  "redsCiclo": 128,
+  "redsCiclo": 129,
   "aborts": 0,
   "descartes": 228,
   "historico": [
+   {
+    "quando": "2026-08-08T20:04:39.558Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: odd 2.075"
+   },
    {
     "quando": "2026-08-08T19:17:51.556Z",
     "resultado": "RED_CICLO",
@@ -7560,58 +7566,15 @@
   ],
   "consumidas": {
    "euro": 1786216118656,
-   "premier": 1786216671361
+   "premier": 1786216671361,
+   "copa": 1786219479455
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "20:55",
-     "jogo": "Irã x Haiti",
-     "odd": 2.1
-    },
-    {
-     "h": "20:58",
-     "jogo": "Equador x Suécia",
-     "odd": 2.075
-    },
-    {
-     "h": "21:01",
-     "jogo": "Nova Zelândia x Cabo Verde",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "odd 2.075",
-   "alvo": {
-    "h": "21:01",
-    "jogo": "Nova Zelândia x Cabo Verde",
-    "odd": 1.93,
-    "unidades": 4,
-    "desde": 1786219298665
-   },
-   "iniciadoEm": 1786218393152,
-   "tiros": [
-    {
-     "h": "20:55",
-     "jogo": "Irã x Haiti",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "20:58",
-     "jogo": "Equador x Suécia",
-     "odd": 2.075,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786216118656,
    "super": 1786214407551,
    "premier": 1786216671361,
-   "copa": 1786214677259
+   "copa": 1786219479455
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7637,13 +7600,13 @@
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
    "2026-08-07": -8,
-   "2026-08-08": -23.9
+   "2026-08-08": -30.9
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "México",
    "n": 18,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
