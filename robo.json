@@ -7488,8 +7488,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "16:46",
@@ -7509,13 +7509,21 @@
    ],
    "gatilho": "seq GRRRG",
    "alvo": {
-    "h": "16:46",
-    "jogo": "Lima x Penarol",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1786203770556
+    "h": "16:49",
+    "jogo": "Agua Branca x Santiago",
+    "odd": 1.9,
+    "unidades": 2,
+    "desde": 1786204175552
    },
-   "iniciadoEm": 1786203770556
+   "iniciadoEm": 1786203770556,
+   "tiros": [
+    {
+     "h": "16:46",
+     "jogo": "Lima x Penarol",
+     "odd": 2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786202253551,
@@ -7550,10 +7558,10 @@
    "2026-08-08": -10.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRRG",
-   "n": 9,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":01",
+   "n": 16,
+   "start": 3
   },
   "_obs": {}
  }
