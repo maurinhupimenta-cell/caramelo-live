@@ -4010,13 +4010,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -99,
-  "ciclos": 1118,
-  "greens": 767,
+  "saldo": -98.1,
+  "ciclos": 1119,
+  "greens": 768,
   "redsCiclo": 125,
   "aborts": 0,
   "descartes": 226,
   "historico": [
+   {
+    "quando": "2026-08-08T16:14:34.151Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · Jordânia x RD Congo @1.87 (tiro 1) · gatilho: time Turquia"
+   },
    {
     "quando": "2026-08-08T15:53:05.854Z",
     "resultado": "GREEN",
@@ -7489,44 +7495,15 @@
   "consumidas": {
    "euro": 1786202253551,
    "premier": 1786202500855,
-   "super": 1786204385657
+   "super": 1786204385657,
+   "copa": 1786205673952
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:10",
-     "jogo": "Jordânia x RD Congo",
-     "odd": 1.87
-    },
-    {
-     "h": "17:13",
-     "jogo": "Croácia x Turquia",
-     "odd": 2.075
-    },
-    {
-     "h": "17:16",
-     "jogo": "Irã x Bósnia e Herzegovina",
-     "odd": 2.075
-    }
-   ],
-   "gatilho": "time Turquia",
-   "alvo": {
-    "h": "17:10",
-    "jogo": "Jordânia x RD Congo",
-    "odd": 1.87,
-    "unidades": 1,
-    "desde": 1786205260255
-   },
-   "iniciadoEm": 1786205260255
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786202253551,
    "super": 1786204385657,
    "premier": 1786202500855,
-   "copa": 1786201659457
+   "copa": 1786205673952
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7552,12 +7529,12 @@
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
    "2026-08-07": -8,
-   "2026-08-08": -9.8
+   "2026-08-08": -8.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Turquia",
-   "n": 14,
+   "tipo": "seq",
+   "chave": "RRRRG",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
