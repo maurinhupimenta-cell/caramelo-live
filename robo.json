@@ -3967,7 +3967,37 @@
    "copa": 1786223074856,
    "premier": 1786223437761
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:08",
+     "jogo": "Romênia x Alemanha",
+     "odd": 2.07
+    },
+    {
+     "h": "22:11",
+     "jogo": "Dinamarca x Espanha",
+     "odd": 2.2
+    },
+    {
+     "h": "22:14",
+     "jogo": "Itália x Geórgia",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "seq RGGGG",
+   "alvo": {
+    "h": "22:08",
+    "jogo": "Romênia x Alemanha",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1786223439554
+   },
+   "iniciadoEm": 1786223439554
+  },
   "cooldown": {
    "copa": 1786223074856,
    "premier": 1786223437761,
@@ -7601,14 +7631,13 @@
    }
   ],
   "consumidas": {
-   "euro": 1786219896262,
    "super": 1786221455162,
    "premier": 1786222243552
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "22:07",
@@ -7628,13 +7657,21 @@
    ],
    "gatilho": "coluna :07",
    "alvo": {
-    "h": "22:07",
-    "jogo": "Cabo Verde x Argentina",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1786223133053
+    "h": "22:10",
+    "jogo": "Panamá x Uruguai",
+    "odd": 2,
+    "unidades": 2,
+    "desde": 1786223493956
    },
-   "iniciadoEm": 1786223133053
+   "iniciadoEm": 1786223133053,
+   "tiros": [
+    {
+     "h": "22:07",
+     "jogo": "Cabo Verde x Argentina",
+     "odd": 1.9,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786219896262,
