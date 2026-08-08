@@ -3964,11 +3964,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1786206945758,
    "super": 1786207555058,
    "copa": 1786208496959
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:39",
+     "jogo": "Newcastle x Islington",
+     "odd": 2.07
+    },
+    {
+     "h": "18:42",
+     "jogo": "Leeds x Liverpool",
+     "odd": 2.45
+    },
+    {
+     "h": "18:45",
+     "jogo": "Newcastle x Chelsea",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "seq GGRGR",
+   "alvo": {
+    "h": "18:39",
+    "jogo": "Newcastle x Islington",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1786210566154
+   },
+   "iniciadoEm": 1786210566154
+  },
   "cooldown": {
    "copa": 1786208496959,
    "premier": 1786206945758,
@@ -4003,9 +4032,9 @@
    "2026-08-08": 5.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Argentina",
-   "n": 16,
+   "tipo": "seq",
+   "chave": "GGRGR",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
@@ -7528,7 +7557,37 @@
    "super": 1786208559151,
    "copa": 1786210298255
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:32",
+     "jogo": "Espanha x Geórgia",
+     "odd": 2.02
+    },
+    {
+     "h": "18:35",
+     "jogo": "Bélgica x Ucrânia",
+     "odd": 1.95
+    },
+    {
+     "h": "18:38",
+     "jogo": "Suíça x Espanha",
+     "odd": 1.8
+    }
+   ],
+   "gatilho": "coluna :35",
+   "alvo": {
+    "h": "18:32",
+    "jogo": "Espanha x Geórgia",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1786210300359
+   },
+   "iniciadoEm": 1786210300359
+  },
   "cooldown": {
    "euro": 1786206396855,
    "super": 1786208559151,
@@ -7565,7 +7624,7 @@
    "tipo": "coluna",
    "chave": ":35",
    "n": 18,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
