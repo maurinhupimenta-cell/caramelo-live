@@ -7486,7 +7486,37 @@
    "euro": 1786202253551,
    "premier": 1786202500855
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:46",
+     "jogo": "Lima x Penarol",
+     "odd": 2
+    },
+    {
+     "h": "16:49",
+     "jogo": "Agua Branca x Santiago",
+     "odd": 1.9
+    },
+    {
+     "h": "16:52",
+     "jogo": "Santos x Bogota",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "seq GRRRG",
+   "alvo": {
+    "h": "16:46",
+    "jogo": "Lima x Penarol",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1786203770556
+   },
+   "iniciadoEm": 1786203770556
+  },
   "cooldown": {
    "euro": 1786202253551,
    "super": 1786168842580,
@@ -7520,9 +7550,9 @@
    "2026-08-08": -10.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Brighton",
-   "n": 23,
+   "tipo": "seq",
+   "chave": "GRRRG",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
