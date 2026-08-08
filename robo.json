@@ -3969,8 +3969,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "03:54",
@@ -3990,13 +3990,21 @@
    ],
    "gatilho": "time Liverpool",
    "alvo": {
-    "h": "03:54",
-    "jogo": "Everton x United",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1786157518487
+    "h": "03:57",
+    "jogo": "Liverpool x Aston",
+    "odd": 2.35,
+    "unidades": 2,
+    "desde": 1786157814387
    },
-   "iniciadoEm": 1786157518487
+   "iniciadoEm": 1786157518487,
+   "tiros": [
+    {
+     "h": "03:54",
+     "jogo": "Everton x United",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786157458484,
@@ -4032,20 +4040,26 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Liverpool",
-   "n": 8,
-   "start": 1
+   "chave": "Islington",
+   "n": 10,
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -91.1,
-  "ciclos": 1098,
-  "greens": 753,
+  "saldo": -90.2,
+  "ciclos": 1099,
+  "greens": 754,
   "redsCiclo": 122,
   "aborts": 0,
   "descartes": 223,
   "historico": [
+   {
+    "quando": "2026-08-08T02:56:54.786Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Everton x United @1.9 (tiro 1) · gatilho: time Liverpool"
+   },
    {
     "quando": "2026-08-08T02:42:57.980Z",
     "resultado": "GREEN",
@@ -7396,43 +7410,14 @@
    }
   ],
   "consumidas": {
-   "super": 1786156977784
+   "super": 1786156977784,
+   "premier": 1786157814679
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:54",
-     "jogo": "Everton x United",
-     "odd": 1.9
-    },
-    {
-     "h": "03:57",
-     "jogo": "Liverpool x Aston",
-     "odd": 2.075
-    },
-    {
-     "h": "04:00",
-     "jogo": "Newcastle x Everton",
-     "odd": 1.8
-    }
-   ],
-   "gatilho": "time Liverpool",
-   "alvo": {
-    "h": "03:54",
-    "jogo": "Everton x United",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1786157093582
-   },
-   "iniciadoEm": 1786157093582
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786153980891,
    "super": 1786156977784,
-   "premier": 1786140163584,
+   "premier": 1786157814679,
    "copa": 1786134478589
   },
   "dias": {
@@ -7458,13 +7443,13 @@
    "2026-08-04": 2.7,
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
-   "2026-08-07": -9.9
+   "2026-08-07": -9
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Liverpool",
-   "n": 8,
-   "start": 1
+   "chave": "Islington",
+   "n": 10,
+   "start": 2
   },
   "_obs": {}
  }
