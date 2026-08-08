@@ -356,12 +356,18 @@
  },
  "o25": {
   "saldo": -118.6,
-  "ciclos": 1126,
+  "ciclos": 1127,
   "greens": 715,
   "redsCiclo": 174,
   "aborts": 0,
-  "descartes": 237,
+  "descartes": 238,
   "historico": [
+   {
+    "quando": "2026-08-08T17:52:14.361Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :01) — liga REARMADA"
+   },
    {
     "quando": "2026-08-08T17:42:11.255Z",
     "resultado": "GREEN",
@@ -3955,12 +3961,6 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "super · Buenos Aires x Rio de Janeiro @2.07 (tiro 1) · gatilho: time Rio de Janeiro"
-   },
-   {
-    "quando": "2026-07-28T03:59:42.926Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho time Rio de Janeiro) — liga REARMADA"
    }
   ],
   "consumidas": {
@@ -4007,7 +4007,12 @@
    "n": 9,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1786211343856,
+    "gatilho": "coluna :01"
+   }
+  }
  },
  "ambas": {
   "saldo": -101.1,
@@ -7572,6 +7577,11 @@
    "n": 18,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1786211456656,
+    "gatilho": "seq RGRRR"
+   }
+  }
  }
 }
