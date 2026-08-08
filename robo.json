@@ -7487,12 +7487,41 @@
    }
   ],
   "consumidas": {
-   "copa": 1786201659457,
    "euro": 1786202253551,
    "premier": 1786202500855,
    "super": 1786204385657
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:10",
+     "jogo": "Jordânia x RD Congo",
+     "odd": 1.87
+    },
+    {
+     "h": "17:13",
+     "jogo": "Croácia x Turquia",
+     "odd": 2.075
+    },
+    {
+     "h": "17:16",
+     "jogo": "Irã x Bósnia e Herzegovina",
+     "odd": 2.075
+    }
+   ],
+   "gatilho": "time Turquia",
+   "alvo": {
+    "h": "17:10",
+    "jogo": "Jordânia x RD Congo",
+    "odd": 1.87,
+    "unidades": 1,
+    "desde": 1786205260255
+   },
+   "iniciadoEm": 1786205260255
+  },
   "cooldown": {
    "euro": 1786202253551,
    "super": 1786204385657,
@@ -7526,10 +7555,10 @@
    "2026-08-08": -9.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":04",
-   "n": 17,
-   "start": 3
+   "tipo": "time",
+   "chave": "Turquia",
+   "n": 14,
+   "start": 1
   },
   "_obs": {}
  }
