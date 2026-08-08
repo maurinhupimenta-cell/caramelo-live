@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -117.3,
-  "ciclos": 1121,
-  "greens": 711,
+  "saldo": -116.2,
+  "ciclos": 1122,
+  "greens": 712,
   "redsCiclo": 173,
   "aborts": 0,
   "descartes": 237,
   "historico": [
+   {
+    "quando": "2026-08-08T15:38:33.955Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · RD Congo x Haiti @2.05 (tiro 2) · gatilho: coluna :34"
+   },
    {
     "quando": "2026-08-08T15:21:40.759Z",
     "resultado": "GREEN",
@@ -3955,59 +3961,16 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "copa · Iraque x Croácia @2.55 (tiro 1) · gatilho: odd 2.4"
-   },
-   {
-    "quando": "2026-07-28T00:52:00.782Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "copa · Suíça x Espanha @2.2 (tiro 1) · gatilho: odd 2.4"
    }
   ],
   "consumidas": {
    "super": 1786201628154,
-   "premier": 1786202500651
+   "premier": 1786202500651,
+   "copa": 1786203513758
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "16:31",
-     "jogo": "Áustria x Suíça",
-     "odd": 2.25
-    },
-    {
-     "h": "16:34",
-     "jogo": "RD Congo x Haiti",
-     "odd": 2.05
-    },
-    {
-     "h": "16:37",
-     "jogo": "Japão x Costa do Marfim",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "coluna :34",
-   "alvo": {
-    "h": "16:34",
-    "jogo": "RD Congo x Haiti",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1786203395353
-   },
-   "iniciadoEm": 1786202555954,
-   "tiros": [
-    {
-     "h": "16:31",
-     "jogo": "Áustria x Suíça",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1786167093779,
+   "copa": 1786203513758,
    "premier": 1786202500651,
    "euro": 1786167578882,
    "super": 1786201628154
@@ -4037,12 +4000,12 @@
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
-   "2026-08-08": 7.5
+   "2026-08-08": 8.6
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":34",
-   "n": 16,
+   "tipo": "seq",
+   "chave": "GRRRG",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
