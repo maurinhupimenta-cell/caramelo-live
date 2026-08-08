@@ -7612,7 +7612,37 @@
    "premier": 1786222243552,
    "copa": 1786223854863
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:52",
+     "jogo": "Lima x Medellin",
+     "odd": 1.95
+    },
+    {
+     "h": "22:55",
+     "jogo": "Santiago x Buenos Aires",
+     "odd": 1.8
+    },
+    {
+     "h": "22:58",
+     "jogo": "Sao Paulo x Montevideo",
+     "odd": 1.85
+    }
+   ],
+   "gatilho": "odd 1.8",
+   "alvo": {
+    "h": "22:52",
+    "jogo": "Lima x Medellin",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1786225476562
+   },
+   "iniciadoEm": 1786225476562
+  },
   "cooldown": {
    "euro": 1786219896262,
    "super": 1786221455162,
@@ -7646,10 +7676,10 @@
    "2026-08-08": -35
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":07",
-   "n": 22,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.8",
+   "n": 15,
+   "start": 3
   },
   "_obs": {}
  }
