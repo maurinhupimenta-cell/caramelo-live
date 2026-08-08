@@ -7431,7 +7431,37 @@
    "copa": 1786162877083,
    "super": 1786164816182
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:15",
+     "jogo": "Islington x City",
+     "odd": 1.85
+    },
+    {
+     "h": "06:18",
+     "jogo": "Norwich x Brentford",
+     "odd": 1.95
+    },
+    {
+     "h": "06:21",
+     "jogo": "Watford x West Ham",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "odd 1.95",
+   "alvo": {
+    "h": "06:15",
+    "jogo": "Islington x City",
+    "odd": 1.85,
+    "unidades": 1,
+    "desde": 1786165554586
+   },
+   "iniciadoEm": 1786165554586
+  },
   "cooldown": {
    "euro": 1786162037887,
    "super": 1786164816182,
@@ -7465,10 +7495,10 @@
    "2026-08-08": -2.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Quito",
-   "n": 9,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.95",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  }
