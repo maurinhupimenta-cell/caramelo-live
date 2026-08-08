@@ -3969,8 +3969,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "23:36",
@@ -3990,13 +3990,21 @@
    ],
    "gatilho": "odd 2.05",
    "alvo": {
-    "h": "23:36",
-    "jogo": "Leeds x Palace",
-    "odd": 2.45,
-    "unidades": 1,
-    "desde": 1786228029552
+    "h": "23:39",
+    "jogo": "Brighton x Islington",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1786228773065
    },
-   "iniciadoEm": 1786228029552
+   "iniciadoEm": 1786228029552,
+   "tiros": [
+    {
+     "h": "23:36",
+     "jogo": "Leeds x Palace",
+     "odd": 2.45,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786227214754,
@@ -7651,37 +7659,7 @@
   "consumidas": {
    "super": 1786226253156
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:31",
-     "jogo": "Senegal x Argélia",
-     "odd": 2.1
-    },
-    {
-     "h": "23:34",
-     "jogo": "Qatar x México",
-     "odd": 1.95
-    },
-    {
-     "h": "23:37",
-     "jogo": "Uzbequistão x Gana",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "time México",
-   "alvo": {
-    "h": "23:31",
-    "jogo": "Senegal x Argélia",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1786227757565
-   },
-   "iniciadoEm": 1786227757565
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786219896262,
    "super": 1786226253156,
@@ -7720,6 +7698,11 @@
    "n": 21,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1786228667353,
+    "gatilho": "time México"
+   }
+  }
  }
 }
