@@ -7551,7 +7551,37 @@
    "super": 1786214407551,
    "copa": 1786214677259
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:59",
+     "jogo": "Eslovênia x Suíça",
+     "odd": 2.1
+    },
+    {
+     "h": "20:02",
+     "jogo": "Croácia x Polônia",
+     "odd": 2.07
+    },
+    {
+     "h": "20:05",
+     "jogo": "Inglaterra x Portugal",
+     "odd": 1.86
+    }
+   ],
+   "gatilho": "odd 2.07",
+   "alvo": {
+    "h": "19:59",
+    "jogo": "Eslovênia x Suíça",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1786215335462
+   },
+   "iniciadoEm": 1786215335462
+  },
   "cooldown": {
    "euro": 1786210777556,
    "super": 1786214407551,
@@ -7585,10 +7615,10 @@
    "2026-08-08": -9.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "México",
-   "n": 16,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.07",
+   "n": 10,
+   "start": 3
   },
   "_obs": {}
  }
