@@ -4036,7 +4036,7 @@
    "tipo": "odd",
    "chave": "2.2",
    "n": 14,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
@@ -7428,12 +7428,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1786157814679,
-   "euro": 1786157818286,
    "copa": 1786158905581,
    "super": 1786160797979
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:00",
+     "jogo": "City x Palace",
+     "odd": 1.95
+    },
+    {
+     "h": "05:03",
+     "jogo": "Newcastle x Liverpool",
+     "odd": 1.85
+    },
+    {
+     "h": "05:06",
+     "jogo": "Watford x City",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "time Palace",
+   "alvo": {
+    "h": "05:00",
+    "jogo": "City x Palace",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1786161414979
+   },
+   "iniciadoEm": 1786161414979
+  },
   "cooldown": {
    "euro": 1786157818286,
    "super": 1786160797979,
@@ -7468,8 +7496,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Quito",
-   "n": 8,
+   "chave": "Palace",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
