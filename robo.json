@@ -3964,7 +3964,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1786167578882,
    "super": 1786169795978
   },
   "ciclo": {
@@ -4033,20 +4032,32 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Curação",
-   "n": 9,
+   "chave": "Southampton",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -97.7,
-  "ciclos": 1112,
-  "greens": 762,
+  "saldo": -94.7,
+  "ciclos": 1114,
+  "greens": 764,
   "redsCiclo": 124,
   "aborts": 0,
   "descartes": 226,
   "historico": [
+   {
+    "quando": "2026-08-08T06:40:34.683Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Escócia x Albânia @2.15 (tiro 1) · gatilho: time Croácia"
+   },
+   {
+    "quando": "2026-08-08T06:39:35.184Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "premier · Southampton x Leeds @2.2 (tiro 3) · gatilho: time Palace"
+   },
    {
     "quando": "2026-08-08T06:24:34.687Z",
     "resultado": "GREEN_OBS",
@@ -7481,57 +7492,15 @@
    }
   ],
   "consumidas": {
-   "super": 1786168842580
-  },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "07:30",
-     "jogo": "Leeds x Brentford",
-     "odd": 2.2
-    },
-    {
-     "h": "07:33",
-     "jogo": "Palace x Watford",
-     "odd": 1.98
-    },
-    {
-     "h": "07:36",
-     "jogo": "Southampton x Leeds",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Palace",
-   "alvo": {
-    "h": "07:36",
-    "jogo": "Southampton x Leeds",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1786170942779
-   },
-   "iniciadoEm": 1786170276290,
-   "tiros": [
-    {
-     "h": "07:30",
-     "jogo": "Leeds x Brentford",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "07:33",
-     "jogo": "Palace x Watford",
-     "odd": 1.98,
-     "unidades": 2
-    }
-   ]
-  },
-  "cooldown": {
-   "euro": 1786166798188,
    "super": 1786168842580,
-   "premier": 1786166618477,
+   "premier": 1786171174979,
+   "euro": 1786171234488
+  },
+  "ciclo": null,
+  "cooldown": {
+   "euro": 1786171234488,
+   "super": 1786168842580,
+   "premier": 1786171174979,
    "copa": 1786162877083
   },
   "dias": {
@@ -7558,12 +7527,12 @@
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
    "2026-08-07": -8,
-   "2026-08-08": -8.5
+   "2026-08-08": -5.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Leeds",
-   "n": 17,
+   "tipo": "seq",
+   "chave": "RRGG",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
