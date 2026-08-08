@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -118.6,
-  "ciclos": 1127,
-  "greens": 715,
+  "saldo": -116.5,
+  "ciclos": 1128,
+  "greens": 716,
   "redsCiclo": 174,
   "aborts": 0,
   "descartes": 238,
   "historico": [
+   {
+    "quando": "2026-08-08T18:06:37.555Z",
+    "resultado": "GREEN",
+    "unidades": 2.1,
+    "detalhe": "super · Bogota x Itaquera @2.55 (tiro 2) · gatilho: coluna :01"
+   },
    {
     "quando": "2026-08-08T17:52:14.361Z",
     "resultado": "GREEN_OBS",
@@ -3955,61 +3961,18 @@
     "resultado": "GREEN",
     "unidades": 2.2,
     "detalhe": "copa · Iraque x Noruega @2.3 (tiro 3) · gatilho: seq GGRR"
-   },
-   {
-    "quando": "2026-07-28T04:05:54.036Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "super · Buenos Aires x Rio de Janeiro @2.07 (tiro 1) · gatilho: time Rio de Janeiro"
    }
   ],
   "consumidas": {
-   "premier": 1786210931058
+   "premier": 1786210931058,
+   "super": 1786212397358
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "18:58",
-     "jogo": "Santos x La Plata",
-     "odd": 2.7
-    },
-    {
-     "h": "19:01",
-     "jogo": "Bogota x Itaquera",
-     "odd": 2.55
-    },
-    {
-     "h": "19:04",
-     "jogo": "Santiago x Rio de Janeiro",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "coluna :01",
-   "alvo": {
-    "h": "19:01",
-    "jogo": "Bogota x Itaquera",
-    "odd": 2.55,
-    "unidades": 2,
-    "desde": 1786212079862
-   },
-   "iniciadoEm": 1786211554163,
-   "tiros": [
-    {
-     "h": "18:58",
-     "jogo": "Santos x La Plata",
-     "odd": 2.7,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786208496959,
    "premier": 1786210931058,
    "euro": 1786167578882,
-   "super": 1786207555058
+   "super": 1786212397358
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4036,13 +3999,13 @@
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
-   "2026-08-08": 6.2
+   "2026-08-08": 8.3
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Argentina",
    "n": 17,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  },
