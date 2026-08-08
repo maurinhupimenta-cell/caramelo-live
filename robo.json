@@ -3964,11 +3964,40 @@
    }
   ],
   "consumidas": {
-   "super": 1786157463083,
    "premier": 1786158116084,
    "euro": 1786158420881
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:52",
+     "jogo": "Belo Horizonte x Quito",
+     "odd": 2.15
+    },
+    {
+     "h": "04:55",
+     "jogo": "La Plata x Bogota",
+     "odd": 2.87
+    },
+    {
+     "h": "04:58",
+     "jogo": "Medellin x Buenos Aires",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time La Plata",
+   "alvo": {
+    "h": "04:52",
+    "jogo": "Belo Horizonte x Quito",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1786161072987
+   },
+   "iniciadoEm": 1786161072987
+  },
   "cooldown": {
    "copa": 1786157458484,
    "premier": 1786158116084,
@@ -4003,9 +4032,9 @@
    "2026-08-08": 3.1
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 10,
+   "tipo": "time",
+   "chave": "La Plata",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
