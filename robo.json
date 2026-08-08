@@ -4040,13 +4040,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -100.1,
-  "ciclos": 1127,
-  "greens": 773,
+  "saldo": -99.1,
+  "ciclos": 1128,
+  "greens": 774,
   "redsCiclo": 126,
   "aborts": 0,
   "descartes": 228,
   "historico": [
+   {
+    "quando": "2026-08-08T18:44:37.456Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · África do Sul x México @2.05 (tiro 1) · gatilho: seq GGRGG"
+   },
    {
     "quando": "2026-08-08T18:40:07.752Z",
     "resultado": "GREEN",
@@ -7571,44 +7577,15 @@
    }
   ],
   "consumidas": {
-   "super": 1786214407551
+   "super": 1786214407551,
+   "copa": 1786214677259
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "19:40",
-     "jogo": "África do Sul x México",
-     "odd": 2.05
-    },
-    {
-     "h": "19:43",
-     "jogo": "Coreia do Sul x Japão",
-     "odd": 2.15
-    },
-    {
-     "h": "19:46",
-     "jogo": "Irã x RD Congo",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "seq GGRGG",
-   "alvo": {
-    "h": "19:40",
-    "jogo": "África do Sul x México",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1786214417962
-   },
-   "iniciadoEm": 1786214417962
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786210777556,
    "super": 1786214407551,
    "premier": 1786207486657,
-   "copa": 1786210298255
+   "copa": 1786214677259
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7634,13 +7611,13 @@
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
    "2026-08-07": -8,
-   "2026-08-08": -10.9
+   "2026-08-08": -9.9
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "México",
    "n": 16,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
