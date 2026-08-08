@@ -3967,7 +3967,37 @@
    "copa": 1786208496959,
    "premier": 1786210931058
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:58",
+     "jogo": "Santos x La Plata",
+     "odd": 2.7
+    },
+    {
+     "h": "19:01",
+     "jogo": "Bogota x Itaquera",
+     "odd": 2.55
+    },
+    {
+     "h": "19:04",
+     "jogo": "Santiago x Rio de Janeiro",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "coluna :01",
+   "alvo": {
+    "h": "18:58",
+    "jogo": "Santos x La Plata",
+    "odd": 2.7,
+    "unidades": 1,
+    "desde": 1786211554163
+   },
+   "iniciadoEm": 1786211554163
+  },
   "cooldown": {
    "copa": 1786208496959,
    "premier": 1786210931058,
@@ -4002,17 +4032,12 @@
    "2026-08-08": 6.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRGR",
-   "n": 9,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":01",
+   "n": 18,
+   "start": 2
   },
-  "_obs": {
-   "super": {
-    "desde": 1786211343856,
-    "gatilho": "coluna :01"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -101.1,
