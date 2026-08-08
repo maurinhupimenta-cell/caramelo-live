@@ -4029,7 +4029,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-0)",
+   "chave": "0-0",
    "n": 8,
    "start": 1
   },
@@ -7389,7 +7389,37 @@
   "consumidas": {
    "euro": 1786153980891
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:40",
+     "jogo": "Rio de Janeiro x Medellin",
+     "odd": 2.1
+    },
+    {
+     "h": "03:43",
+     "jogo": "Guayaquil x Itaquera",
+     "odd": 1.93
+    },
+    {
+     "h": "03:46",
+     "jogo": "Bogota x La Plata",
+     "odd": 2.29
+    }
+   ],
+   "gatilho": "time Guayaquil",
+   "alvo": {
+    "h": "03:40",
+    "jogo": "Rio de Janeiro x Medellin",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1786156264180
+   },
+   "iniciadoEm": 1786156264180
+  },
   "cooldown": {
    "euro": 1786153980891,
    "super": 1786146004686,
@@ -7423,7 +7453,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Ucrânia",
+   "chave": "Guayaquil",
    "n": 8,
    "start": 3
   },
