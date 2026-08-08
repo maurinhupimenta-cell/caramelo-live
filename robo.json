@@ -3969,8 +3969,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:15",
@@ -3990,13 +3990,21 @@
    ],
    "gatilho": "time United",
    "alvo": {
-    "h": "05:15",
-    "jogo": "Tottenham x Leicester",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1786161951982
+    "h": "05:18",
+    "jogo": "Islington x United",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1786162623284
    },
-   "iniciadoEm": 1786161951982
+   "iniciadoEm": 1786161951982,
+   "tiros": [
+    {
+     "h": "05:15",
+     "jogo": "Tottenham x Leicester",
+     "odd": 2.5,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786161797882,
@@ -4032,8 +4040,8 @@
    "2026-08-08": 5.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "United",
+   "tipo": "placar",
+   "chave": "0-0",
    "n": 9,
    "start": 1
   },
