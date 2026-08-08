@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -125.2,
-  "ciclos": 1136,
-  "greens": 720,
+  "saldo": -124.1,
+  "ciclos": 1137,
+  "greens": 721,
   "redsCiclo": 176,
   "aborts": 0,
   "descartes": 240,
   "historico": [
+   {
+    "quando": "2026-08-08T21:12:36.954Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Romênia x Alemanha @2.07 (tiro 1) · gatilho: seq RGGGG"
+   },
    {
     "quando": "2026-08-08T21:10:37.953Z",
     "resultado": "GREEN",
@@ -3955,53 +3961,18 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-28T08:43:31.630Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho time Albânia) — liga REARMADA"
    }
   ],
   "consumidas": {
    "copa": 1786223074856,
-   "premier": 1786223437761
+   "premier": 1786223437761,
+   "euro": 1786223556770
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:08",
-     "jogo": "Romênia x Alemanha",
-     "odd": 2.07
-    },
-    {
-     "h": "22:11",
-     "jogo": "Dinamarca x Espanha",
-     "odd": 2.2
-    },
-    {
-     "h": "22:14",
-     "jogo": "Itália x Geórgia",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "seq RGGGG",
-   "alvo": {
-    "h": "22:08",
-    "jogo": "Romênia x Alemanha",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1786223439554
-   },
-   "iniciadoEm": 1786223439554
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786223074856,
    "premier": 1786223437761,
-   "euro": 1786167578882,
+   "euro": 1786223556770,
    "super": 1786212397358
   },
   "dias": {
@@ -4029,7 +4000,7 @@
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
-   "2026-08-08": -0.4
+   "2026-08-08": 0.7
   },
   "_gatilhoAtual": {
    "tipo": "seq",
