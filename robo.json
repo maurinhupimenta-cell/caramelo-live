@@ -3964,7 +3964,6 @@
    }
   ],
   "consumidas": {
-   "premier": 1786309182440,
    "euro": 1786310399728,
    "copa": 1786311782131
   },
@@ -7624,7 +7623,37 @@
    "copa": 1786310407140,
    "super": 1786312441430
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:59",
+     "jogo": "Albânia x Dinamarca",
+     "odd": 2.25
+    },
+    {
+     "h": "23:02",
+     "jogo": "Alemanha x França",
+     "odd": 1.83
+    },
+    {
+     "h": "23:05",
+     "jogo": "Portugal x Croácia",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "odd 2.25",
+   "alvo": {
+    "h": "22:59",
+    "jogo": "Albânia x Dinamarca",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1786312563535
+   },
+   "iniciadoEm": 1786312563535
+  },
   "cooldown": {
    "euro": 1786306559637,
    "super": 1786312441430,
@@ -7659,16 +7688,11 @@
    "2026-08-09": 9.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Belo Horizonte",
-   "n": 42,
-   "start": 2
+   "tipo": "odd",
+   "chave": "2.02",
+   "n": 20,
+   "start": 3
   },
-  "_obs": {
-   "euro": {
-    "desde": 1786312138731,
-    "gatilho": "odd 2.25"
-   }
-  }
+  "_obs": {}
  }
 }
