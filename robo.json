@@ -3967,7 +3967,37 @@
    "premier": 1786309182440,
    "euro": 1786310399728
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:34",
+     "jogo": "Tunísia x Noruega",
+     "odd": 2.4
+    },
+    {
+     "h": "22:37",
+     "jogo": "Haiti x Alemanha",
+     "odd": 2.05
+    },
+    {
+     "h": "22:40",
+     "jogo": "Portugal x Argentina",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "odd 2.05",
+   "alvo": {
+    "h": "22:34",
+    "jogo": "Tunísia x Noruega",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1786311450228
+   },
+   "iniciadoEm": 1786311450228
+  },
   "cooldown": {
    "copa": 1786299061530,
    "premier": 1786309182440,
@@ -4004,16 +4034,11 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.1",
-   "n": 8,
+   "chave": "2.05",
+   "n": 9,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1786311425832,
-    "gatilho": "odd 2.05"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -124.3,
