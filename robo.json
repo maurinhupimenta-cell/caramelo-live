@@ -3966,7 +3966,37 @@
   "consumidas": {
    "copa": 1786299061530
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:05",
+     "jogo": "Hungria x República Tcheca",
+     "odd": 2.7
+    },
+    {
+     "h": "20:08",
+     "jogo": "Geórgia x Polônia",
+     "odd": 2.55
+    },
+    {
+     "h": "20:11",
+     "jogo": "Croácia x Hungria",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "odd 2.55",
+   "alvo": {
+    "h": "20:05",
+    "jogo": "Hungria x República Tcheca",
+    "odd": 2.7,
+    "unidades": 1,
+    "desde": 1786301759339
+   },
+   "iniciadoEm": 1786301759339
+  },
   "cooldown": {
    "copa": 1786299061530,
    "premier": 1786296224242,
@@ -4003,9 +4033,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.45",
-   "n": 11,
-   "start": 1
+   "chave": "2.55",
+   "n": 10,
+   "start": 3
   },
   "_obs": {}
  },
@@ -7690,7 +7720,7 @@
    "tipo": "coluna",
    "chave": ":05",
    "n": 31,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
