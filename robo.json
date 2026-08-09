@@ -3966,7 +3966,37 @@
   "consumidas": {
    "premier": 1786313346336
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "00:07",
+     "jogo": "Escócia x Senegal",
+     "odd": 2.75
+    },
+    {
+     "h": "00:10",
+     "jogo": "Curação x Alemanha",
+     "odd": 2.05
+    },
+    {
+     "h": "00:13",
+     "jogo": "Áustria x Colômbia",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "odd 2.05",
+   "alvo": {
+    "h": "00:07",
+    "jogo": "Escócia x Senegal",
+    "odd": 2.75,
+    "unidades": 1,
+    "desde": 1786316519831
+   },
+   "iniciadoEm": 1786316519831
+  },
   "cooldown": {
    "copa": 1786311782131,
    "premier": 1786313346336,
@@ -4002,10 +4032,10 @@
    "2026-08-09": -20.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRR",
-   "n": 13,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.05",
+   "n": 10,
+   "start": 3
   },
   "_obs": {}
  },
