@@ -7617,7 +7617,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:20",
+     "jogo": "Croácia x Eslováquia",
+     "odd": 2.02
+    },
+    {
+     "h": "15:23",
+     "jogo": "Inglaterra x Países Baixos",
+     "odd": 1.8
+    },
+    {
+     "h": "15:26",
+     "jogo": "Romênia x Ucrânia",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "odd 2.02",
+   "alvo": {
+    "h": "15:20",
+    "jogo": "Croácia x Eslováquia",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1786285207135
+   },
+   "iniciadoEm": 1786285207135
+  },
   "cooldown": {
    "euro": 1786244372256,
    "super": 1786242395459,
@@ -7651,9 +7681,9 @@
    "2026-08-08": -44.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "França",
-   "n": 8,
+   "tipo": "odd",
+   "chave": "2.02",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
