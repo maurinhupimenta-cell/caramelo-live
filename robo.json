@@ -7623,7 +7623,37 @@
    "super": 1786290574334,
    "premier": 1786291542531
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:43",
+     "jogo": "Nova Zelândia x Turquia",
+     "odd": 1.95
+    },
+    {
+     "h": "17:46",
+     "jogo": "Haiti x Argélia",
+     "odd": 1.93
+    },
+    {
+     "h": "17:49",
+     "jogo": "Japão x EUA",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "seq RGRRG",
+   "alvo": {
+    "h": "17:43",
+    "jogo": "Nova Zelândia x Turquia",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1786293794327
+   },
+   "iniciadoEm": 1786293794327
+  },
   "cooldown": {
    "euro": 1786289677831,
    "super": 1786290574334,
@@ -7659,8 +7689,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRRRG",
-   "n": 13,
+   "chave": "RGRRG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
