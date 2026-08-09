@@ -3966,8 +3966,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "21:51",
@@ -3987,13 +3987,21 @@
    ],
    "gatilho": "odd 2.02",
    "alvo": {
-    "h": "21:51",
-    "jogo": "Brighton x Norwich",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1786308244128
+    "h": "21:54",
+    "jogo": "Wolverhampton x Everton",
+    "odd": 2.02,
+    "unidades": 2,
+    "desde": 1786308840737
    },
-   "iniciadoEm": 1786308244128
+   "iniciadoEm": 1786308244128,
+   "tiros": [
+    {
+     "h": "21:51",
+     "jogo": "Brighton x Norwich",
+     "odd": 2.05,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786299061530,
@@ -4033,7 +4041,7 @@
    "tipo": "odd",
    "chave": "2.02",
    "n": 10,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
