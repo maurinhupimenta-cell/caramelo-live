@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -139,
-  "ciclos": 1153,
-  "greens": 730,
+  "saldo": -136.9,
+  "ciclos": 1154,
+  "greens": 731,
   "redsCiclo": 180,
   "aborts": 0,
   "descartes": 243,
   "historico": [
+   {
+    "quando": "2026-08-09T15:11:35.828Z",
+    "resultado": "GREEN",
+    "unidades": 2.1,
+    "detalhe": "euro · Polônia x Hungria @2.55 (tiro 2) · gatilho: odd 2.55"
+   },
    {
     "quando": "2026-08-09T14:41:42.129Z",
     "resultado": "GREEN",
@@ -3955,61 +3961,18 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-28T11:31:12.530Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :31) — liga REARMADA"
    }
   ],
   "consumidas": {
    "super": 1786286138037,
-   "premier": 1786286501838
+   "premier": 1786286501838,
+   "euro": 1786288295538
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "16:05",
-     "jogo": "Turquia x Escócia",
-     "odd": 2.4
-    },
-    {
-     "h": "16:08",
-     "jogo": "Polônia x Hungria",
-     "odd": 2.55
-    },
-    {
-     "h": "16:11",
-     "jogo": "Ucrânia x Dinamarca",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "odd 2.55",
-   "alvo": {
-    "h": "16:08",
-    "jogo": "Polônia x Hungria",
-    "odd": 2.55,
-    "unidades": 2,
-    "desde": 1786288175833
-   },
-   "iniciadoEm": 1786287753228,
-   "tiros": [
-    {
-     "h": "16:05",
-     "jogo": "Turquia x Escócia",
-     "odd": 2.4,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786241316661,
    "premier": 1786286501838,
-   "euro": 1786242032762,
+   "euro": 1786288295538,
    "super": 1786286138037
   },
   "dias": {
@@ -4038,12 +4001,12 @@
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
    "2026-08-08": -1.2,
-   "2026-08-09": -13
+   "2026-08-09": -10.9
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.55",
-   "n": 9,
+   "chave": "2.45",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
