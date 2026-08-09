@@ -356,12 +356,18 @@
  },
  "o25": {
   "saldo": -149.1,
-  "ciclos": 1164,
+  "ciclos": 1165,
   "greens": 737,
   "redsCiclo": 183,
   "aborts": 0,
-  "descartes": 244,
+  "descartes": 245,
   "historico": [
+   {
+    "quando": "2026-08-09T21:37:05.833Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho odd 2.05) — liga REARMADA"
+   },
    {
     "quando": "2026-08-09T21:19:59.837Z",
     "resultado": "RED_CICLO",
@@ -3955,12 +3961,6 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-28T13:56:05.731Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: time Albânia"
    }
   ],
   "consumidas": {
@@ -4008,16 +4008,27 @@
    "n": 8,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1786311425832,
+    "gatilho": "odd 2.05"
+   }
+  }
  },
  "ambas": {
-  "saldo": -125.3,
-  "ciclos": 1167,
-  "greens": 798,
+  "saldo": -124.3,
+  "ciclos": 1168,
+  "greens": 799,
   "redsCiclo": 133,
   "aborts": 0,
   "descartes": 236,
   "historico": [
+   {
+    "quando": "2026-08-09T21:20:07.335Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Iraque x Equador @2 (tiro 1) · gatilho: time México"
+   },
    {
     "quando": "2026-08-09T20:42:01.334Z",
     "resultado": "GREEN",
@@ -7611,53 +7622,18 @@
     "resultado": "GREEN",
     "unidades": 0.7,
     "detalhe": "premier · Palace x United @1.93 (tiro 3) · gatilho: time Leeds"
-   },
-   {
-    "quando": "2026-07-28T04:52:56.533Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "euro · Itália x Sérvia @2.15 (tiro 1) · gatilho: seq RRRR"
    }
   ],
   "consumidas": {
-   "super": 1786308121135
+   "super": 1786308121135,
+   "copa": 1786310407140
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:13",
-     "jogo": "Iraque x Equador",
-     "odd": 2
-    },
-    {
-     "h": "22:16",
-     "jogo": "Áustria x México",
-     "odd": 1.93
-    },
-    {
-     "h": "22:19",
-     "jogo": "Espanha x Qatar",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "time México",
-   "alvo": {
-    "h": "22:13",
-    "jogo": "Iraque x Equador",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1786310342730
-   },
-   "iniciadoEm": 1786310342730
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786306559637,
    "super": 1786308121135,
    "premier": 1786301490738,
-   "copa": 1786306741937
+   "copa": 1786310407140
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7684,7 +7660,7 @@
    "2026-08-06": -33.8,
    "2026-08-07": -8,
    "2026-08-08": -44.3,
-   "2026-08-09": 8.2
+   "2026-08-09": 9.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
