@@ -4041,13 +4041,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -123.6,
-  "ciclos": 1170,
+  "saldo": -130.6,
+  "ciclos": 1171,
   "greens": 800,
-  "redsCiclo": 133,
+  "redsCiclo": 134,
   "aborts": 0,
   "descartes": 237,
   "historico": [
+   {
+    "quando": "2026-08-09T22:08:02.230Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: odd 2.25"
+   },
    {
     "quando": "2026-08-09T21:56:01.139Z",
     "resultado": "GREEN_OBS",
@@ -7641,65 +7647,16 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "copa · RD Congo x Inglaterra @1.9 (tiro 1) · gatilho: time RD Congo"
-   },
-   {
-    "quando": "2026-07-28T05:49:17.329Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "super · Buenos Aires x Bogota @2.05 (tiro 3) · gatilho: time Lima"
    }
   ],
   "consumidas": {
    "copa": 1786310407140,
-   "super": 1786312441430
+   "super": 1786312441430,
+   "euro": 1786313282032
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "22:59",
-     "jogo": "Albânia x Dinamarca",
-     "odd": 2.25
-    },
-    {
-     "h": "23:02",
-     "jogo": "Alemanha x França",
-     "odd": 1.83
-    },
-    {
-     "h": "23:05",
-     "jogo": "Portugal x Croácia",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "odd 2.25",
-   "alvo": {
-    "h": "23:05",
-    "jogo": "Portugal x Croácia",
-    "odd": 1.95,
-    "unidades": 4,
-    "desde": 1786313099236
-   },
-   "iniciadoEm": 1786312563535,
-   "tiros": [
-    {
-     "h": "22:59",
-     "jogo": "Albânia x Dinamarca",
-     "odd": 2.25,
-     "unidades": 1
-    },
-    {
-     "h": "23:02",
-     "jogo": "Alemanha x França",
-     "odd": 1.83,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1786306559637,
+   "euro": 1786313282032,
    "super": 1786312441430,
    "premier": 1786301490738,
    "copa": 1786310407140
@@ -7729,7 +7686,7 @@
    "2026-08-06": -33.8,
    "2026-08-07": -8,
    "2026-08-08": -44.3,
-   "2026-08-09": 9.9
+   "2026-08-09": 2.9
   },
   "_gatilhoAtual": {
    "tipo": "odd",
