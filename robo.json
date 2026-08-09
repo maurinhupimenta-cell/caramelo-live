@@ -3968,8 +3968,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "22:11",
@@ -3989,11 +3989,11 @@
    ],
    "gatilho": "odd 2.1",
    "alvo": {
-    "h": "22:14",
-    "jogo": "Inglaterra x Escócia",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1786310223832
+    "h": "22:17",
+    "jogo": "Portugal x Itália",
+    "odd": 2.3,
+    "unidades": 4,
+    "desde": 1786310225634
    },
    "iniciadoEm": 1786309425835,
    "tiros": [
@@ -4002,6 +4002,12 @@
      "jogo": "Países Baixos x Hungria",
      "odd": 2.2,
      "unidades": 1
+    },
+    {
+     "h": "22:14",
+     "jogo": "Inglaterra x Escócia",
+     "odd": 2.1,
+     "unidades": 2
     }
    ]
   },
@@ -7657,10 +7663,39 @@
    }
   ],
   "consumidas": {
-   "copa": 1786306741937,
    "super": 1786308121135
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:13",
+     "jogo": "Iraque x Equador",
+     "odd": 2
+    },
+    {
+     "h": "22:16",
+     "jogo": "Áustria x México",
+     "odd": 1.93
+    },
+    {
+     "h": "22:19",
+     "jogo": "Espanha x Qatar",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "time México",
+   "alvo": {
+    "h": "22:13",
+    "jogo": "Iraque x Equador",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1786310342730
+   },
+   "iniciadoEm": 1786310342730
+  },
   "cooldown": {
    "euro": 1786306559637,
    "super": 1786308121135,
@@ -7696,8 +7731,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Belo Horizonte",
-   "n": 38,
+   "chave": "México",
+   "n": 21,
    "start": 1
   },
   "_obs": {}
