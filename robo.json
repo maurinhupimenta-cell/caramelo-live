@@ -4012,13 +4012,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -129.5,
-  "ciclos": 1144,
+  "saldo": -136.5,
+  "ciclos": 1145,
   "greens": 779,
-  "redsCiclo": 131,
+  "redsCiclo": 132,
   "aborts": 0,
   "descartes": 234,
   "historico": [
+   {
+    "quando": "2026-08-09T02:26:35.656Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: time Avellaneda"
+   },
    {
     "quando": "2026-08-09T02:18:35.856Z",
     "resultado": "GREEN_OBS",
@@ -7612,63 +7618,15 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "copa · Escócia x Equador @2.05 (tiro 3) · gatilho: seq RGGRG"
-   },
-   {
-    "quando": "2026-07-27T19:07:20.200Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "super · Quito x Sao Paulo @1.87 (tiro 1) · gatilho: odd 2.02"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "03:16",
-     "jogo": "Quito x Santos",
-     "odd": 2.05
-    },
-    {
-     "h": "03:19",
-     "jogo": "Avellaneda x La Boca",
-     "odd": 2.05
-    },
-    {
-     "h": "03:22",
-     "jogo": "Quito x La Plata",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "time Avellaneda",
-   "alvo": {
-    "h": "03:22",
-    "jogo": "Quito x La Plata",
-    "odd": 2.15,
-    "unidades": 4,
-    "desde": 1786242142654
-   },
-   "iniciadoEm": 1786241227962,
-   "tiros": [
-    {
-     "h": "03:16",
-     "jogo": "Quito x Santos",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "03:19",
-     "jogo": "Avellaneda x La Boca",
-     "odd": 2.05,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "super": 1786242395459
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786238072759,
-   "super": 1786226253156,
+   "super": 1786242395459,
    "premier": 1786222243552,
    "copa": 1786230750562
   },
@@ -7696,12 +7654,12 @@
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
    "2026-08-07": -8,
-   "2026-08-08": -40.3
+   "2026-08-08": -47.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Avellaneda",
-   "n": 8,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
