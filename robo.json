@@ -4012,13 +4012,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -124.3,
-  "ciclos": 1168,
-  "greens": 799,
+  "saldo": -123.6,
+  "ciclos": 1169,
+  "greens": 800,
   "redsCiclo": 133,
   "aborts": 0,
   "descartes": 236,
   "historico": [
+   {
+    "quando": "2026-08-09T21:54:01.630Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "super · Santiago x Belo Horizonte @1.83 (tiro 2) · gatilho: time Belo Horizonte"
+   },
    {
     "quando": "2026-08-09T21:20:07.335Z",
     "resultado": "GREEN",
@@ -7612,51 +7618,16 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho seq GRRR) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-28T05:05:41.029Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "premier · Palace x United @1.93 (tiro 3) · gatilho: time Leeds"
    }
   ],
   "consumidas": {
-   "copa": 1786310407140
+   "copa": 1786310407140,
+   "super": 1786312441430
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:46",
-     "jogo": "Penarol x Santos",
-     "odd": 2.15
-    },
-    {
-     "h": "22:49",
-     "jogo": "Santiago x Belo Horizonte",
-     "odd": 1.83
-    },
-    {
-     "h": "22:52",
-     "jogo": "Agua Branca x Sao Paulo",
-     "odd": 1.83
-    }
-   ],
-   "gatilho": "time Belo Horizonte",
-   "alvo": {
-    "h": "22:46",
-    "jogo": "Penarol x Santos",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1786311721732
-   },
-   "iniciadoEm": 1786311721732
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786306559637,
-   "super": 1786308121135,
+   "super": 1786312441430,
    "premier": 1786301490738,
    "copa": 1786310407140
   },
@@ -7685,14 +7656,19 @@
    "2026-08-06": -33.8,
    "2026-08-07": -8,
    "2026-08-08": -44.3,
-   "2026-08-09": 9.2
+   "2026-08-09": 9.9
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Belo Horizonte",
    "n": 42,
-   "start": 1
+   "start": 2
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1786312138731,
+    "gatilho": "odd 2.25"
+   }
+  }
  }
 }
