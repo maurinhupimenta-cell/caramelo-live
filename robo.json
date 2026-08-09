@@ -7622,7 +7622,37 @@
    "super": 1786294935538,
    "euro": 1786295747231
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:52",
+     "jogo": "Iraque x Jordânia",
+     "odd": 2.07
+    },
+    {
+     "h": "18:55",
+     "jogo": "Marrocos x Croácia",
+     "odd": 2.05
+    },
+    {
+     "h": "18:58",
+     "jogo": "Colômbia x Suíça",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "seq GRRGR",
+   "alvo": {
+    "h": "18:52",
+    "jogo": "Iraque x Jordânia",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1786297984237
+   },
+   "iniciadoEm": 1786297984237
+  },
   "cooldown": {
    "euro": 1786295747231,
    "super": 1786294935538,
@@ -7657,9 +7687,9 @@
    "2026-08-09": 9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":05",
-   "n": 32,
+   "tipo": "seq",
+   "chave": "GRRGR",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
