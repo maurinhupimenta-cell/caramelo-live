@@ -7625,8 +7625,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:43",
@@ -7646,13 +7646,21 @@
    ],
    "gatilho": "seq RGRRG",
    "alvo": {
-    "h": "17:43",
-    "jogo": "Nova Zelândia x Turquia",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1786293794327
+    "h": "17:46",
+    "jogo": "Haiti x Argélia",
+    "odd": 1.93,
+    "unidades": 2,
+    "desde": 1786294038130
    },
-   "iniciadoEm": 1786293794327
+   "iniciadoEm": 1786293794327,
+   "tiros": [
+    {
+     "h": "17:43",
+     "jogo": "Nova Zelândia x Turquia",
+     "odd": 1.95,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786289677831,
@@ -7688,10 +7696,10 @@
    "2026-08-09": 6.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRRG",
-   "n": 8,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.02",
+   "n": 17,
+   "start": 2
   },
   "_obs": {}
  }
