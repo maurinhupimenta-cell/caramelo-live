@@ -4010,13 +4010,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -120.3,
-  "ciclos": 1164,
+  "saldo": -127.3,
+  "ciclos": 1165,
   "greens": 796,
-  "redsCiclo": 132,
+  "redsCiclo": 133,
   "aborts": 0,
   "descartes": 236,
   "historico": [
+   {
+    "quando": "2026-08-09T20:15:59.837Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: coluna :05"
+   },
    {
     "quando": "2026-08-09T19:08:00.131Z",
     "resultado": "GREEN",
@@ -7610,56 +7616,14 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "premier · United x Wolverhampton @1.87 (tiro 1) · gatilho: time Brighton"
-   },
-   {
-    "quando": "2026-07-28T03:34:54.028Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "euro · Romênia x Itália @1.93 (tiro 3) · gatilho: placar empate 1-1"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "21:05",
-     "jogo": "Eslovênia x Geórgia",
-     "odd": 2.3
-    },
-    {
-     "h": "21:08",
-     "jogo": "Romênia x Portugal",
-     "odd": 1.9
-    },
-    {
-     "h": "21:11",
-     "jogo": "Alemanha x Áustria",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "coluna :05",
-   "alvo": {
-    "h": "21:08",
-    "jogo": "Romênia x Portugal",
-    "odd": 1.9,
-    "unidades": 2,
-    "desde": 1786306145836
-   },
-   "iniciadoEm": 1786305959637,
-   "tiros": [
-    {
-     "h": "21:05",
-     "jogo": "Eslovênia x Geórgia",
-     "odd": 2.3,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "euro": 1786306559637
   },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1786302358737,
+   "euro": 1786306559637,
    "super": 1786294935538,
    "premier": 1786301490738,
    "copa": 1786302479840
@@ -7689,13 +7653,13 @@
    "2026-08-06": -33.8,
    "2026-08-07": -8,
    "2026-08-08": -44.3,
-   "2026-08-09": 13.2
+   "2026-08-09": 6.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Egito",
    "n": 22,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
