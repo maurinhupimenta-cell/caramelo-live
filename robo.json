@@ -7620,7 +7620,37 @@
    "euro": 1786306559637,
    "copa": 1786306741937
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:34",
+     "jogo": "Quito x Lima",
+     "odd": 1.95
+    },
+    {
+     "h": "21:37",
+     "jogo": "Rio de Janeiro x Belo Horizonte",
+     "odd": 1.85
+    },
+    {
+     "h": "21:40",
+     "jogo": "Santos x Avellaneda",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "time Belo Horizonte",
+   "alvo": {
+    "h": "21:34",
+    "jogo": "Quito x Lima",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1786307519333
+   },
+   "iniciadoEm": 1786307519333
+  },
   "cooldown": {
    "euro": 1786306559637,
    "super": 1786294935538,
@@ -7656,8 +7686,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Egito",
-   "n": 22,
+   "chave": "Belo Horizonte",
+   "n": 38,
    "start": 1
   },
   "_obs": {}
