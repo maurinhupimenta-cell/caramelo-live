@@ -356,12 +356,18 @@
  },
  "o25": {
   "saldo": -123.6,
-  "ciclos": 1143,
+  "ciclos": 1144,
   "greens": 726,
   "redsCiclo": 177,
   "aborts": 0,
-  "descartes": 240,
+  "descartes": 241,
   "historico": [
+   {
+    "quando": "2026-08-09T01:30:05.956Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho time Brighton) — liga REARMADA"
+   },
    {
     "quando": "2026-08-09T01:03:32.456Z",
     "resultado": "GREEN",
@@ -3955,12 +3961,6 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho odd 2.15) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-28T09:44:09.937Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
@@ -4006,7 +4006,12 @@
    "n": 8,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1786238832956,
+    "gatilho": "time Brighton"
+   }
+  }
  },
  "ambas": {
   "saldo": -129.5,
