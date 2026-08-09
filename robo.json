@@ -7625,7 +7625,37 @@
    "copa": 1786289914438,
    "super": 1786290574334
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:03",
+     "jogo": "Norwich x Brighton",
+     "odd": 1.83
+    },
+    {
+     "h": "17:06",
+     "jogo": "Palace x Tottenham",
+     "odd": 2.05
+    },
+    {
+     "h": "17:09",
+     "jogo": "Everton x United",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "seq GRRRG",
+   "alvo": {
+    "h": "17:03",
+    "jogo": "Norwich x Brighton",
+    "odd": 1.83,
+    "unidades": 1,
+    "desde": 1786291193738
+   },
+   "iniciadoEm": 1786291193738
+  },
   "cooldown": {
    "euro": 1786289677831,
    "super": 1786290574334,
@@ -7660,9 +7690,9 @@
    "2026-08-09": 5.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Belo Horizonte",
-   "n": 29,
+   "tipo": "seq",
+   "chave": "GRRRG",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
