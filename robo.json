@@ -4045,10 +4045,10 @@
    "2026-08-08": -5.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.15",
+   "tipo": "time",
+   "chave": "Avellaneda",
    "n": 8,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
@@ -7664,7 +7664,37 @@
   "consumidas": {
    "euro": 1786238072759
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:16",
+     "jogo": "Quito x Santos",
+     "odd": 2.05
+    },
+    {
+     "h": "03:19",
+     "jogo": "Avellaneda x La Boca",
+     "odd": 2.05
+    },
+    {
+     "h": "03:22",
+     "jogo": "Quito x La Plata",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time Avellaneda",
+   "alvo": {
+    "h": "03:16",
+    "jogo": "Quito x Santos",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1786241227962
+   },
+   "iniciadoEm": 1786241227962
+  },
   "cooldown": {
    "euro": 1786238072759,
    "super": 1786226253156,
@@ -7698,10 +7728,10 @@
    "2026-08-08": -40.3
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
+   "tipo": "time",
+   "chave": "Avellaneda",
    "n": 8,
-   "start": 1
+   "start": 3
   },
   "_obs": {
    "premier": {
