@@ -4052,13 +4052,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -132.5,
-  "ciclos": 1150,
-  "greens": 783,
+  "saldo": -131.5,
+  "ciclos": 1151,
+  "greens": 784,
   "redsCiclo": 132,
   "aborts": 0,
   "descartes": 235,
   "historico": [
+   {
+    "quando": "2026-08-09T14:31:33.931Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Bósnia e Herzegovina x Irã @2.05 (tiro 1) · gatilho: odd 1.85"
+   },
    {
     "quando": "2026-08-09T14:24:33.137Z",
     "resultado": "GREEN",
@@ -7652,53 +7658,18 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-27T20:31:43.500Z",
-    "resultado": "GREEN",
-    "unidades": 1.6,
-    "detalhe": "super · Rio de Janeiro x La Plata @2.15 (tiro 3) · gatilho: odd 1.83"
    }
   ],
   "consumidas": {
-   "euro": 1786285472937
+   "euro": 1786285472937,
+   "copa": 1786285893728
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:28",
-     "jogo": "Bósnia e Herzegovina x Irã",
-     "odd": 2.05
-    },
-    {
-     "h": "15:31",
-     "jogo": "Arábia Saudita x Noruega",
-     "odd": 1.85
-    },
-    {
-     "h": "15:34",
-     "jogo": "Paraguai x Países Baixos",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "odd 1.85",
-   "alvo": {
-    "h": "15:28",
-    "jogo": "Bósnia e Herzegovina x Irã",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1786285480932
-   },
-   "iniciadoEm": 1786285480932
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786285472937,
    "super": 1786242395459,
    "premier": 1786242594761,
-   "copa": 1786242996559
+   "copa": 1786285893728
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7725,13 +7696,13 @@
    "2026-08-06": -33.8,
    "2026-08-07": -8,
    "2026-08-08": -44.3,
-   "2026-08-09": 1
+   "2026-08-09": 2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.85",
-   "n": 10,
-   "start": 1
+   "tipo": "time",
+   "chave": "Egito",
+   "n": 16,
+   "start": 3
   },
   "_obs": {}
  }
