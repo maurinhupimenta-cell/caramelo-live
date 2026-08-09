@@ -4012,13 +4012,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -135.6,
-  "ciclos": 1146,
-  "greens": 780,
+  "saldo": -134.6,
+  "ciclos": 1147,
+  "greens": 781,
   "redsCiclo": 132,
   "aborts": 0,
   "descartes": 234,
   "historico": [
+   {
+    "quando": "2026-08-09T02:36:36.662Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Bélgica x Turquia @2.05 (tiro 1) · gatilho: odd 1.95"
+   },
    {
     "quando": "2026-08-09T02:29:54.955Z",
     "resultado": "GREEN",
@@ -7612,54 +7618,19 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "premier · Leeds x Chelsea @2.1 (tiro 2) · gatilho: odd 2.15"
-   },
-   {
-    "quando": "2026-07-27T19:40:57.798Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "euro · Albânia x Turquia @2.3 (tiro 1) · gatilho: odd 1.87"
    }
   ],
   "consumidas": {
    "super": 1786242395459,
-   "premier": 1786242594761
+   "premier": 1786242594761,
+   "copa": 1786242996559
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:31",
-     "jogo": "Bélgica x Turquia",
-     "odd": 2.05
-    },
-    {
-     "h": "03:34",
-     "jogo": "Áustria x Nova Zelândia",
-     "odd": 1.95
-    },
-    {
-     "h": "03:37",
-     "jogo": "Coreia do Sul x Japão",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "odd 1.95",
-   "alvo": {
-    "h": "03:31",
-    "jogo": "Bélgica x Turquia",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1786242607761
-   },
-   "iniciadoEm": 1786242607761
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786238072759,
    "super": 1786242395459,
    "premier": 1786242594761,
-   "copa": 1786230750562
+   "copa": 1786242996559
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7685,7 +7656,7 @@
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
    "2026-08-07": -8,
-   "2026-08-08": -46.4
+   "2026-08-08": -45.4
   },
   "_gatilhoAtual": {
    "tipo": "odd",
