@@ -7627,8 +7627,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "16:23",
@@ -7648,13 +7648,21 @@
    ],
    "gatilho": "odd 2.02",
    "alvo": {
-    "h": "16:23",
-    "jogo": "Inglaterra x Bélgica",
-    "odd": 1.83,
-    "unidades": 1,
-    "desde": 1786289075931
+    "h": "16:26",
+    "jogo": "Suíça x Geórgia",
+    "odd": 2.02,
+    "unidades": 2,
+    "desde": 1786289252933
    },
-   "iniciadoEm": 1786289075931
+   "iniciadoEm": 1786289075931,
+   "tiros": [
+    {
+     "h": "16:23",
+     "jogo": "Inglaterra x Bélgica",
+     "odd": 1.83,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786285472937,
@@ -7690,16 +7698,11 @@
    "2026-08-09": 2.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.02",
-   "n": 16,
+   "tipo": "coluna",
+   "chave": ":31",
+   "n": 15,
    "start": 1
   },
-  "_obs": {
-   "super": {
-    "desde": 1786288998038,
-    "gatilho": "coluna :25"
-   }
-  }
+  "_obs": {}
  }
 }
