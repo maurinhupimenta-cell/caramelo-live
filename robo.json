@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -139.9,
-  "ciclos": 1159,
+  "saldo": -146.9,
+  "ciclos": 1160,
   "greens": 734,
-  "redsCiclo": 181,
+  "redsCiclo": 182,
   "aborts": 0,
   "descartes": 244,
   "historico": [
+   {
+    "quando": "2026-08-09T18:11:01.728Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: odd 2.45"
+   },
    {
     "quando": "2026-08-09T17:23:44.831Z",
     "resultado": "GREEN",
@@ -3955,58 +3961,15 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-28T13:11:06.534Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
-   "premier": 1786296224242
+   "premier": 1786296224242,
+   "copa": 1786299061530
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "19:01",
-     "jogo": "Uzbequistão x Brasil",
-     "odd": 2.25
-    },
-    {
-     "h": "19:04",
-     "jogo": "Inglaterra x Senegal",
-     "odd": 2.45
-    },
-    {
-     "h": "19:07",
-     "jogo": "Bósnia e Herzegovina x Nova Zelândia",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "odd 2.45",
-   "alvo": {
-    "h": "19:04",
-    "jogo": "Inglaterra x Senegal",
-    "odd": 2.45,
-    "unidades": 2,
-    "desde": 1786298704028
-   },
-   "iniciadoEm": 1786298105736,
-   "tiros": [
-    {
-     "h": "19:01",
-     "jogo": "Uzbequistão x Brasil",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1786288413733,
+   "copa": 1786299061530,
    "premier": 1786296224242,
    "euro": 1786292662234,
    "super": 1786286138037
@@ -4037,7 +4000,7 @@
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
    "2026-08-08": -1.2,
-   "2026-08-09": -13.9
+   "2026-08-09": -20.9
   },
   "_gatilhoAtual": {
    "tipo": "odd",
