@@ -3967,7 +3967,37 @@
    "euro": 1786237412264,
    "premier": 1786239953661
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:49",
+     "jogo": "Uruguai x Canadá",
+     "odd": 2.35
+    },
+    {
+     "h": "02:52",
+     "jogo": "Portugal x Jordânia",
+     "odd": 2.15
+    },
+    {
+     "h": "02:55",
+     "jogo": "França x Brasil",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "odd 2.15",
+   "alvo": {
+    "h": "02:49",
+    "jogo": "Uruguai x Canadá",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1786239993959
+   },
+   "iniciadoEm": 1786239993959
+  },
   "cooldown": {
    "copa": 1786227214754,
    "premier": 1786239953661,
@@ -4002,10 +4032,10 @@
    "2026-08-08": -5.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Brighton",
+   "tipo": "odd",
+   "chave": "2.15",
    "n": 8,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
