@@ -3967,7 +3967,37 @@
    "euro": 1786310399728,
    "copa": 1786311782131
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:06",
+     "jogo": "City x Aston",
+     "odd": 2.2
+    },
+    {
+     "h": "23:09",
+     "jogo": "Watford x West Ham",
+     "odd": 2.55
+    },
+    {
+     "h": "23:12",
+     "jogo": "Norwich x Newcastle",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "seq RRRRR",
+   "alvo": {
+    "h": "23:06",
+    "jogo": "City x Aston",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1786312972031
+   },
+   "iniciadoEm": 1786312972031
+  },
   "cooldown": {
    "copa": 1786311782131,
    "premier": 1786309182440,
@@ -4003,9 +4033,9 @@
    "2026-08-09": -21.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.05",
-   "n": 9,
+   "tipo": "seq",
+   "chave": "RRRRR",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
