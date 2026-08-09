@@ -4035,18 +4035,24 @@
    "tipo": "odd",
    "chave": "2.45",
    "n": 11,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -124.5,
-  "ciclos": 1160,
-  "greens": 792,
+  "saldo": -123.4,
+  "ciclos": 1161,
+  "greens": 793,
   "redsCiclo": 132,
   "aborts": 0,
   "descartes": 236,
   "historico": [
+   {
+    "quando": "2026-08-09T17:59:00.938Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Marrocos x Croácia @2.05 (tiro 2) · gatilho: seq GRRGR"
+   },
    {
     "quando": "2026-08-09T17:15:47.433Z",
     "resultado": "GREEN",
@@ -7640,62 +7646,19 @@
     "resultado": "GREEN",
     "unidades": 0.8,
     "detalhe": "super · Guayaquil x Santiago @1.83 (tiro 1) · gatilho: placar empate 1-1"
-   },
-   {
-    "quando": "2026-07-28T00:56:43.525Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Brentford x United @1.98 (tiro 2) · gatilho: placar 1-0 / 0-1"
    }
   ],
   "consumidas": {
    "super": 1786294935538,
-   "euro": 1786295747231
+   "euro": 1786295747231,
+   "copa": 1786298340833
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "18:52",
-     "jogo": "Iraque x Jordânia",
-     "odd": 2.07
-    },
-    {
-     "h": "18:55",
-     "jogo": "Marrocos x Croácia",
-     "odd": 2.05
-    },
-    {
-     "h": "18:58",
-     "jogo": "Colômbia x Suíça",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "seq GRRGR",
-   "alvo": {
-    "h": "18:55",
-    "jogo": "Marrocos x Croácia",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1786298106329
-   },
-   "iniciadoEm": 1786297984237,
-   "tiros": [
-    {
-     "h": "18:52",
-     "jogo": "Iraque x Jordânia",
-     "odd": 2.07,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786295747231,
    "super": 1786294935538,
    "premier": 1786291542531,
-   "copa": 1786294216831
+   "copa": 1786298340833
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7722,12 +7685,12 @@
    "2026-08-06": -33.8,
    "2026-08-07": -8,
    "2026-08-08": -44.3,
-   "2026-08-09": 9
+   "2026-08-09": 10.1
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRRGR",
-   "n": 8,
+   "chave": "RGRRG",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
