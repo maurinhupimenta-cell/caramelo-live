@@ -7623,7 +7623,45 @@
    "super": 1786312441430,
    "euro": 1786313282032
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "23:25",
+     "jogo": "Iraque x Alemanha",
+     "odd": 2
+    },
+    {
+     "h": "23:28",
+     "jogo": "Irã x Senegal",
+     "odd": 2.25
+    },
+    {
+     "h": "23:31",
+     "jogo": "Noruega x RD Congo",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "odd 2.25",
+   "alvo": {
+    "h": "23:28",
+    "jogo": "Irã x Senegal",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1786314485231
+   },
+   "iniciadoEm": 1786314059028,
+   "tiros": [
+    {
+     "h": "23:25",
+     "jogo": "Iraque x Alemanha",
+     "odd": 2,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1786313282032,
    "super": 1786312441430,
@@ -7658,10 +7696,10 @@
    "2026-08-09": 2.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.02",
-   "n": 20,
-   "start": 1
+   "tipo": "time",
+   "chave": "EUA",
+   "n": 17,
+   "start": 3
   },
   "_obs": {}
  }
