@@ -3968,8 +3968,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "18:18",
@@ -3989,13 +3989,21 @@
    ],
    "gatilho": "coluna :21",
    "alvo": {
-    "h": "18:18",
-    "jogo": "Norwich x Watford",
+    "h": "18:21",
+    "jogo": "Leicester x Palace",
     "odd": 2.25,
-    "unidades": 1,
-    "desde": 1786295705935
+    "unidades": 2,
+    "desde": 1786296044431
    },
-   "iniciadoEm": 1786295705935
+   "iniciadoEm": 1786295705935,
+   "tiros": [
+    {
+     "h": "18:18",
+     "jogo": "Norwich x Watford",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786288413733,
@@ -4032,9 +4040,9 @@
    "2026-08-09": -15.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":21",
-   "n": 18,
+   "tipo": "seq",
+   "chave": "GRGR",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
