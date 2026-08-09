@@ -3967,7 +3967,37 @@
    "euro": 1786288295538,
    "copa": 1786288413733
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:45",
+     "jogo": "Burnley x Chelsea",
+     "odd": 2.1
+    },
+    {
+     "h": "16:48",
+     "jogo": "Watford x Leicester",
+     "odd": 2.3
+    },
+    {
+     "h": "16:51",
+     "jogo": "Burnley x Southampton",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "time Leicester",
+   "alvo": {
+    "h": "16:45",
+    "jogo": "Burnley x Chelsea",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1786290120338
+   },
+   "iniciadoEm": 1786290120338
+  },
   "cooldown": {
    "copa": 1786288413733,
    "premier": 1786286501838,
@@ -4003,9 +4033,9 @@
    "2026-08-09": -9.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.45",
-   "n": 10,
+   "tipo": "time",
+   "chave": "Leicester",
+   "n": 32,
    "start": 1
   },
   "_obs": {}
@@ -7626,8 +7656,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "16:43",
@@ -7647,13 +7677,21 @@
    ],
    "gatilho": "time Belo Horizonte",
    "alvo": {
-    "h": "16:43",
-    "jogo": "Asuncion x Porto Alegre",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1786289917233
+    "h": "16:46",
+    "jogo": "Belo Horizonte x Avellaneda",
+    "odd": 1.95,
+    "unidades": 2,
+    "desde": 1786290356328
    },
-   "iniciadoEm": 1786289917233
+   "iniciadoEm": 1786289917233,
+   "tiros": [
+    {
+     "h": "16:43",
+     "jogo": "Asuncion x Porto Alegre",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786289677831,
