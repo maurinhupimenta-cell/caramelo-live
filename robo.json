@@ -7619,11 +7619,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1786291542531,
    "copa": 1786294216831,
    "super": 1786294935538
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:05",
+     "jogo": "Dinamarca x Eslováquia",
+     "odd": 2.1
+    },
+    {
+     "h": "18:08",
+     "jogo": "Espanha x Alemanha",
+     "odd": 1.83
+    },
+    {
+     "h": "18:11",
+     "jogo": "Bélgica x Polônia",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "coluna :05",
+   "alvo": {
+    "h": "18:05",
+    "jogo": "Dinamarca x Eslováquia",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1786294938029
+   },
+   "iniciadoEm": 1786294938029
+  },
   "cooldown": {
    "euro": 1786289677831,
    "super": 1786294935538,
@@ -7658,8 +7687,8 @@
    "2026-08-09": 7.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Belo Horizonte",
+   "tipo": "coluna",
+   "chave": ":05",
    "n": 32,
    "start": 1
   },
