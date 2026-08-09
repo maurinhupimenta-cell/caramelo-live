@@ -3968,8 +3968,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "20:18",
@@ -3989,13 +3989,21 @@
    ],
    "gatilho": "coluna :21",
    "alvo": {
-    "h": "20:18",
-    "jogo": "Wolverhampton x Brighton",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1786302659331
+    "h": "20:21",
+    "jogo": "Leeds x Liverpool",
+    "odd": 2.45,
+    "unidades": 2,
+    "desde": 1786303243341
    },
-   "iniciadoEm": 1786302659331
+   "iniciadoEm": 1786302659331,
+   "tiros": [
+    {
+     "h": "20:18",
+     "jogo": "Wolverhampton x Brighton",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786299061530,
@@ -4035,7 +4043,7 @@
    "tipo": "coluna",
    "chave": ":21",
    "n": 20,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
