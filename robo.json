@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -130.6,
-  "ciclos": 1145,
-  "greens": 726,
+  "saldo": -128.8,
+  "ciclos": 1146,
+  "greens": 727,
   "redsCiclo": 178,
   "aborts": 0,
   "descartes": 241,
   "historico": [
+   {
+    "quando": "2026-08-09T02:08:36.854Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "copa · França x Brasil @2.2 (tiro 3) · gatilho: odd 2.15"
+   },
    {
     "quando": "2026-08-09T01:45:53.853Z",
     "resultado": "RED_CICLO",
@@ -3955,64 +3961,15 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho seq GRGRR) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-28T10:12:51.631Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
-   "premier": 1786239953661
+   "premier": 1786239953661,
+   "copa": 1786241316661
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "02:49",
-     "jogo": "Uruguai x Canadá",
-     "odd": 2.35
-    },
-    {
-     "h": "02:52",
-     "jogo": "Portugal x Jordânia",
-     "odd": 2.15
-    },
-    {
-     "h": "02:55",
-     "jogo": "França x Brasil",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "odd 2.15",
-   "alvo": {
-    "h": "02:55",
-    "jogo": "França x Brasil",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1786240658963
-   },
-   "iniciadoEm": 1786239993959,
-   "tiros": [
-    {
-     "h": "02:49",
-     "jogo": "Uruguai x Canadá",
-     "odd": 2.35,
-     "unidades": 1
-    },
-    {
-     "h": "02:52",
-     "jogo": "Portugal x Jordânia",
-     "odd": 2.15,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1786227214754,
+   "copa": 1786241316661,
    "premier": 1786239953661,
    "euro": 1786237412264,
    "super": 1786230518755
@@ -4042,12 +3999,12 @@
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
-   "2026-08-08": -5.8
+   "2026-08-08": -4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Avellaneda",
-   "n": 8,
+   "tipo": "odd",
+   "chave": "2.2",
+   "n": 10,
    "start": 3
   },
   "_obs": {}
