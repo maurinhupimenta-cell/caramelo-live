@@ -4014,12 +4014,18 @@
  },
  "ambas": {
   "saldo": -130.7,
-  "ciclos": 1152,
+  "ciclos": 1153,
   "greens": 785,
   "redsCiclo": 132,
   "aborts": 0,
-  "descartes": 235,
+  "descartes": 236,
   "historico": [
+   {
+    "quando": "2026-08-09T15:25:33.533Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :25) — liga REARMADA"
+   },
    {
     "quando": "2026-08-09T14:47:43.532Z",
     "resultado": "GREEN",
@@ -7613,19 +7619,43 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "copa · Egito x Brasil @1.9 (tiro 1) · gatilho: coluna :52"
-   },
-   {
-    "quando": "2026-07-27T20:48:55.505Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho coluna :52) — liga REARMADA"
    }
   ],
   "consumidas": {
    "copa": 1786285893728,
    "premier": 1786286863337
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:23",
+     "jogo": "Inglaterra x Bélgica",
+     "odd": 1.83
+    },
+    {
+     "h": "16:26",
+     "jogo": "Suíça x Geórgia",
+     "odd": 2.02
+    },
+    {
+     "h": "16:29",
+     "jogo": "Polônia x Espanha",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "odd 2.02",
+   "alvo": {
+    "h": "16:23",
+    "jogo": "Inglaterra x Bélgica",
+    "odd": 1.83,
+    "unidades": 1,
+    "desde": 1786289075931
+   },
+   "iniciadoEm": 1786289075931
+  },
   "cooldown": {
    "euro": 1786285472937,
    "super": 1786242395459,
@@ -7660,9 +7690,9 @@
    "2026-08-09": 2.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRRG",
-   "n": 8,
+   "tipo": "odd",
+   "chave": "2.02",
+   "n": 16,
    "start": 1
   },
   "_obs": {
