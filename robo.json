@@ -3968,8 +3968,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "15:36",
@@ -3989,13 +3989,21 @@
    ],
    "gatilho": "time Leicester",
    "alvo": {
-    "h": "15:36",
-    "jogo": "Leicester x United",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1786286140628
+    "h": "15:39",
+    "jogo": "Everton x Newcastle",
+    "odd": 2.02,
+    "unidades": 2,
+    "desde": 1786286331132
    },
-   "iniciadoEm": 1786286140628
+   "iniciadoEm": 1786286140628,
+   "tiros": [
+    {
+     "h": "15:36",
+     "jogo": "Leicester x United",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786241316661,
@@ -7720,7 +7728,7 @@
    "tipo": "coluna",
    "chave": ":45",
    "n": 15,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
