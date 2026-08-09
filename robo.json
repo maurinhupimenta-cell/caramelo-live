@@ -7621,7 +7621,45 @@
   "consumidas": {
    "euro": 1786306559637
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "21:13",
+     "jogo": "Qatar x Brasil",
+     "odd": 1.98
+    },
+    {
+     "h": "21:16",
+     "jogo": "Egito x Canadá",
+     "odd": 1.98
+    },
+    {
+     "h": "21:19",
+     "jogo": "Espanha x Iraque",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time Egito",
+   "alvo": {
+    "h": "21:16",
+    "jogo": "Egito x Canadá",
+    "odd": 1.98,
+    "unidades": 2,
+    "desde": 1786306621840
+   },
+   "iniciadoEm": 1786306561735,
+   "tiros": [
+    {
+     "h": "21:13",
+     "jogo": "Qatar x Brasil",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1786306559637,
    "super": 1786294935538,
