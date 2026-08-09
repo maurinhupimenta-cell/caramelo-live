@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -127.4,
-  "ciclos": 1147,
-  "greens": 728,
+  "saldo": -126,
+  "ciclos": 1148,
+  "greens": 729,
   "redsCiclo": 178,
   "aborts": 0,
   "descartes": 241,
   "historico": [
+   {
+    "quando": "2026-08-09T02:22:22.554Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "super · Avellaneda x La Boca @2.4 (tiro 1) · gatilho: time Avellaneda"
+   },
    {
     "quando": "2026-08-09T02:20:32.955Z",
     "resultado": "GREEN",
@@ -3955,55 +3961,20 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho seq RRRRG) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-28T10:27:55.132Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
    "premier": 1786239953661,
    "copa": 1786241316661,
-   "euro": 1786242032762
+   "euro": 1786242032762,
+   "super": 1786242142363
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:19",
-     "jogo": "Avellaneda x La Boca",
-     "odd": 2.4
-    },
-    {
-     "h": "03:22",
-     "jogo": "Quito x La Plata",
-     "odd": 2.54
-    },
-    {
-     "h": "03:25",
-     "jogo": "Belo Horizonte x Rio de Janeiro",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "time Avellaneda",
-   "alvo": {
-    "h": "03:19",
-    "jogo": "Avellaneda x La Boca",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1786242035152
-   },
-   "iniciadoEm": 1786242035152
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786241316661,
    "premier": 1786239953661,
    "euro": 1786242032762,
-   "super": 1786230518755
+   "super": 1786242142363
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4030,7 +4001,7 @@
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
-   "2026-08-08": -2.6
+   "2026-08-08": -1.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
@@ -7652,8 +7623,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "03:16",
@@ -7673,13 +7644,27 @@
    ],
    "gatilho": "time Avellaneda",
    "alvo": {
-    "h": "03:16",
-    "jogo": "Quito x Santos",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1786241227962
+    "h": "03:22",
+    "jogo": "Quito x La Plata",
+    "odd": 2.15,
+    "unidades": 4,
+    "desde": 1786242142654
    },
-   "iniciadoEm": 1786241227962
+   "iniciadoEm": 1786241227962,
+   "tiros": [
+    {
+     "h": "03:16",
+     "jogo": "Quito x Santos",
+     "odd": 2.05,
+     "unidades": 1
+    },
+    {
+     "h": "03:19",
+     "jogo": "Avellaneda x La Boca",
+     "odd": 2.05,
+     "unidades": 2
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786238072759,
