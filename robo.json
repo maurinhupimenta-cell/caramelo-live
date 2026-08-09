@@ -3966,7 +3966,37 @@
   "consumidas": {
    "premier": 1786296224242
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:01",
+     "jogo": "Uzbequistão x Brasil",
+     "odd": 2.25
+    },
+    {
+     "h": "19:04",
+     "jogo": "Inglaterra x Senegal",
+     "odd": 2.45
+    },
+    {
+     "h": "19:07",
+     "jogo": "Bósnia e Herzegovina x Nova Zelândia",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "odd 2.45",
+   "alvo": {
+    "h": "19:01",
+    "jogo": "Uzbequistão x Brasil",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1786298105736
+   },
+   "iniciadoEm": 1786298105736
+  },
   "cooldown": {
    "copa": 1786288413733,
    "premier": 1786296224242,
@@ -4002,10 +4032,10 @@
    "2026-08-09": -13.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGR",
-   "n": 15,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.45",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  },
@@ -7624,8 +7654,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "18:52",
@@ -7645,13 +7675,21 @@
    ],
    "gatilho": "seq GRRGR",
    "alvo": {
-    "h": "18:52",
-    "jogo": "Iraque x Jordânia",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1786297984237
+    "h": "18:55",
+    "jogo": "Marrocos x Croácia",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1786298106329
    },
-   "iniciadoEm": 1786297984237
+   "iniciadoEm": 1786297984237,
+   "tiros": [
+    {
+     "h": "18:52",
+     "jogo": "Iraque x Jordânia",
+     "odd": 2.07,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786295747231,
