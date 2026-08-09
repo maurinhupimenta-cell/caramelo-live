@@ -7624,7 +7624,37 @@
    "super": 1786242395459,
    "premier": 1786242594761
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:31",
+     "jogo": "Bélgica x Turquia",
+     "odd": 2.05
+    },
+    {
+     "h": "03:34",
+     "jogo": "Áustria x Nova Zelândia",
+     "odd": 1.95
+    },
+    {
+     "h": "03:37",
+     "jogo": "Coreia do Sul x Japão",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "odd 1.95",
+   "alvo": {
+    "h": "03:31",
+    "jogo": "Bélgica x Turquia",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1786242607761
+   },
+   "iniciadoEm": 1786242607761
+  },
   "cooldown": {
    "euro": 1786238072759,
    "super": 1786242395459,
