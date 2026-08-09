@@ -4049,12 +4049,18 @@
  },
  "ambas": {
   "saldo": -129.5,
-  "ciclos": 1143,
+  "ciclos": 1144,
   "greens": 779,
   "redsCiclo": 131,
   "aborts": 0,
-  "descartes": 233,
+  "descartes": 234,
   "historico": [
+   {
+    "quando": "2026-08-09T02:18:35.856Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho placar acima de 1-0 (2-1)) — liga REARMADA"
+   },
    {
     "quando": "2026-08-09T01:14:32.953Z",
     "resultado": "RED_CICLO",
@@ -7648,12 +7654,6 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "super · Quito x Sao Paulo @1.87 (tiro 1) · gatilho: odd 2.02"
-   },
-   {
-    "quando": "2026-07-27T19:03:03.294Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "premier · Wolverhampton x Brighton @1.83 (tiro 2) · gatilho: seq RRRRG"
    }
   ],
   "consumidas": {},
@@ -7728,8 +7728,8 @@
   },
   "_obs": {
    "premier": {
-    "desde": 1786228773358,
-    "gatilho": "seq RGRRR"
+    "desde": 1786241915856,
+    "gatilho": "placar acima de 1-0 (2-1)"
    }
   }
  }
