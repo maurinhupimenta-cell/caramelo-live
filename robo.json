@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -126,
-  "ciclos": 1149,
+  "saldo": -133,
+  "ciclos": 1150,
   "greens": 729,
-  "redsCiclo": 178,
+  "redsCiclo": 179,
   "aborts": 0,
   "descartes": 242,
   "historico": [
+   {
+    "quando": "2026-08-09T03:02:35.258Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-08-09T02:48:46.663Z",
     "resultado": "GREEN_OBS",
@@ -3955,67 +3961,18 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRRGR) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-28T10:43:53.926Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
    "copa": 1786241316661,
    "euro": 1786242032762,
-   "super": 1786242142363
+   "super": 1786242142363,
+   "premier": 1786244555153
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "03:51",
-     "jogo": "Aston x Everton",
-     "odd": 2.25
-    },
-    {
-     "h": "03:54",
-     "jogo": "Southampton x Newcastle",
-     "odd": 2.2
-    },
-    {
-     "h": "03:57",
-     "jogo": "West Ham x Burnley",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-1)",
-   "alvo": {
-    "h": "03:57",
-    "jogo": "West Ham x Burnley",
-    "odd": 2.4,
-    "unidades": 4,
-    "desde": 1786244206361
-   },
-   "iniciadoEm": 1786243775058,
-   "tiros": [
-    {
-     "h": "03:51",
-     "jogo": "Aston x Everton",
-     "odd": 2.25,
-     "unidades": 1
-    },
-    {
-     "h": "03:54",
-     "jogo": "Southampton x Newcastle",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786241316661,
-   "premier": 1786239953661,
+   "premier": 1786244555153,
    "euro": 1786242032762,
    "super": 1786242142363
   },
@@ -4044,12 +4001,13 @@
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
-   "2026-08-08": -1.2
+   "2026-08-08": -1.2,
+   "2026-08-09": -7
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 12,
+   "tipo": "seq",
+   "chave": "RRRR",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
