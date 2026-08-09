@@ -7625,7 +7625,37 @@
    "premier": 1786242594761,
    "copa": 1786242996559
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:41",
+     "jogo": "França x Albânia",
+     "odd": 2.15
+    },
+    {
+     "h": "03:44",
+     "jogo": "Eslovênia x Inglaterra",
+     "odd": 2.05
+    },
+    {
+     "h": "03:47",
+     "jogo": "Escócia x Polônia",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "time França",
+   "alvo": {
+    "h": "03:41",
+    "jogo": "França x Albânia",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1786243532263
+   },
+   "iniciadoEm": 1786243532263
+  },
   "cooldown": {
    "euro": 1786238072759,
    "super": 1786242395459,
@@ -7659,16 +7689,11 @@
    "2026-08-08": -45.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.95",
+   "tipo": "time",
+   "chave": "França",
    "n": 8,
    "start": 1
   },
-  "_obs": {
-   "euro": {
-    "desde": 1786243510062,
-    "gatilho": "time França"
-   }
-  }
+  "_obs": {}
  }
 }
