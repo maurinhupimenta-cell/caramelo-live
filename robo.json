@@ -3966,8 +3966,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "15:25",
@@ -3987,13 +3987,21 @@
    ],
    "gatilho": "odd 2.75",
    "alvo": {
-    "h": "15:25",
-    "jogo": "Santiago x Quito",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1786285212736
+    "h": "15:28",
+    "jogo": "Medellin x Porto Alegre",
+    "odd": 2.75,
+    "unidades": 2,
+    "desde": 1786285713630
    },
-   "iniciadoEm": 1786285212736
+   "iniciadoEm": 1786285212736,
+   "tiros": [
+    {
+     "h": "15:25",
+     "jogo": "Santiago x Quito",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786241316661,
@@ -4030,10 +4038,10 @@
    "2026-08-09": -7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.75",
-   "n": 8,
-   "start": 1
+   "tipo": "time",
+   "chave": "Leicester",
+   "n": 26,
+   "start": 2
   },
   "_obs": {}
  },
@@ -7649,7 +7657,37 @@
   "consumidas": {
    "euro": 1786285472937
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:28",
+     "jogo": "Bósnia e Herzegovina x Irã",
+     "odd": 2.05
+    },
+    {
+     "h": "15:31",
+     "jogo": "Arábia Saudita x Noruega",
+     "odd": 1.85
+    },
+    {
+     "h": "15:34",
+     "jogo": "Paraguai x Países Baixos",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "odd 1.85",
+   "alvo": {
+    "h": "15:28",
+    "jogo": "Bósnia e Herzegovina x Irã",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1786285480932
+   },
+   "iniciadoEm": 1786285480932
+  },
   "cooldown": {
    "euro": 1786285472937,
    "super": 1786242395459,
@@ -7685,9 +7723,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.02",
-   "n": 14,
-   "start": 1
+   "chave": "1.85",
+   "n": 10,
+   "start": 3
   },
   "_obs": {}
  }
