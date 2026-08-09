@@ -7621,7 +7621,37 @@
   "consumidas": {
    "copa": 1786298340833
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:48",
+     "jogo": "West Ham x Southampton",
+     "odd": 2.2
+    },
+    {
+     "h": "19:51",
+     "jogo": "Tottenham x Aston",
+     "odd": 2.2
+    },
+    {
+     "h": "19:54",
+     "jogo": "City x Liverpool",
+     "odd": 1.87
+    }
+   ],
+   "gatilho": "seq GRRRG",
+   "alvo": {
+    "h": "19:48",
+    "jogo": "West Ham x Southampton",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1786301090239
+   },
+   "iniciadoEm": 1786301090239
+  },
   "cooldown": {
    "euro": 1786295747231,
    "super": 1786294935538,
@@ -7657,8 +7687,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGRRG",
-   "n": 9,
+   "chave": "GRRRG",
+   "n": 16,
    "start": 1
   },
   "_obs": {}
