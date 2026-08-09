@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -123.6,
-  "ciclos": 1144,
+  "saldo": -130.6,
+  "ciclos": 1145,
   "greens": 726,
-  "redsCiclo": 177,
+  "redsCiclo": 178,
   "aborts": 0,
   "descartes": 241,
   "historico": [
+   {
+    "quando": "2026-08-09T01:45:53.853Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: time Brighton"
+   },
    {
     "quando": "2026-08-09T01:30:05.956Z",
     "resultado": "GREEN_OBS",
@@ -3955,65 +3961,16 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-28T10:07:10.132Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho odd 2.15) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "euro": 1786237412264
+   "euro": 1786237412264,
+   "premier": 1786239953661
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "02:36",
-     "jogo": "United x Tottenham",
-     "odd": 2.45
-    },
-    {
-     "h": "02:39",
-     "jogo": "Brighton x Aston",
-     "odd": 2.2
-    },
-    {
-     "h": "02:42",
-     "jogo": "Everton x Southampton",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "time Brighton",
-   "alvo": {
-    "h": "02:42",
-    "jogo": "Everton x Southampton",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1786239708854
-   },
-   "iniciadoEm": 1786239020461,
-   "tiros": [
-    {
-     "h": "02:36",
-     "jogo": "United x Tottenham",
-     "odd": 2.45,
-     "unidades": 1
-    },
-    {
-     "h": "02:39",
-     "jogo": "Brighton x Aston",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786227214754,
-   "premier": 1786229090455,
+   "premier": 1786239953661,
    "euro": 1786237412264,
    "super": 1786230518755
   },
@@ -4042,13 +3999,13 @@
    "2026-08-05": 7.9,
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
-   "2026-08-08": 1.2
+   "2026-08-08": -5.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Brighton",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
