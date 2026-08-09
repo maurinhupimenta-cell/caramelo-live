@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -142.6,
-  "ciclos": 1156,
-  "greens": 732,
+  "saldo": -141.4,
+  "ciclos": 1157,
+  "greens": 733,
   "redsCiclo": 181,
   "aborts": 0,
   "descartes": 243,
   "historico": [
+   {
+    "quando": "2026-08-09T16:24:22.438Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Inglaterra x Itália @2.15 (tiro 1) · gatilho: odd 2.3"
+   },
    {
     "quando": "2026-08-09T15:53:55.128Z",
     "resultado": "RED_CICLO",
@@ -3955,52 +3961,17 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho odd 2.45) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-28T12:56:05.730Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho time Albânia) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "premier": 1786290834839
+   "premier": 1786290834839,
+   "euro": 1786292662234
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:17",
-     "jogo": "Inglaterra x Itália",
-     "odd": 2.15
-    },
-    {
-     "h": "17:20",
-     "jogo": "Países Baixos x Turquia",
-     "odd": 2.3
-    },
-    {
-     "h": "17:23",
-     "jogo": "Sérvia x Escócia",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "odd 2.3",
-   "alvo": {
-    "h": "17:17",
-    "jogo": "Inglaterra x Itália",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1786291896637
-   },
-   "iniciadoEm": 1786291896637
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786288413733,
    "premier": 1786290834839,
-   "euro": 1786288295538,
+   "euro": 1786292662234,
    "super": 1786286138037
   },
   "dias": {
@@ -4029,13 +4000,13 @@
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
    "2026-08-08": -1.2,
-   "2026-08-09": -16.6
+   "2026-08-09": -15.4
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.3",
    "n": 11,
-   "start": 2
+   "start": 3
   },
   "_obs": {}
  },
