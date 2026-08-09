@@ -4055,13 +4055,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -134.6,
-  "ciclos": 1148,
-  "greens": 781,
+  "saldo": -133.5,
+  "ciclos": 1149,
+  "greens": 782,
   "redsCiclo": 132,
   "aborts": 0,
   "descartes": 235,
   "historico": [
+   {
+    "quando": "2026-08-09T02:59:32.452Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Eslovênia x Inglaterra @2.05 (tiro 2) · gatilho: time França"
+   },
    {
     "quando": "2026-08-09T02:45:10.062Z",
     "resultado": "GREEN_OBS",
@@ -7655,60 +7661,17 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho odd 1.83) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-27T20:26:55.596Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
    "super": 1786242395459,
    "premier": 1786242594761,
-   "copa": 1786242996559
+   "copa": 1786242996559,
+   "euro": 1786244372256
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "03:41",
-     "jogo": "França x Albânia",
-     "odd": 2.15
-    },
-    {
-     "h": "03:44",
-     "jogo": "Eslovênia x Inglaterra",
-     "odd": 2.05
-    },
-    {
-     "h": "03:47",
-     "jogo": "Escócia x Polônia",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "time França",
-   "alvo": {
-    "h": "03:44",
-    "jogo": "Eslovênia x Inglaterra",
-    "odd": 2.05,
-    "unidades": 2,
-    "desde": 1786243592854
-   },
-   "iniciadoEm": 1786243532263,
-   "tiros": [
-    {
-     "h": "03:41",
-     "jogo": "França x Albânia",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1786238072759,
+   "euro": 1786244372256,
    "super": 1786242395459,
    "premier": 1786242594761,
    "copa": 1786242996559
@@ -7737,7 +7700,7 @@
    "2026-08-05": 17.2,
    "2026-08-06": -33.8,
    "2026-08-07": -8,
-   "2026-08-08": -45.4
+   "2026-08-08": -44.3
   },
   "_gatilhoAtual": {
    "tipo": "time",
