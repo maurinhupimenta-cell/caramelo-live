@@ -3966,7 +3966,37 @@
   "consumidas": {
    "euro": 1786292662234
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:18",
+     "jogo": "Norwich x Watford",
+     "odd": 2.25
+    },
+    {
+     "h": "18:21",
+     "jogo": "Leicester x Palace",
+     "odd": 2.25
+    },
+    {
+     "h": "18:24",
+     "jogo": "Burnley x Watford",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "coluna :21",
+   "alvo": {
+    "h": "18:18",
+    "jogo": "Norwich x Watford",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1786295705935
+   },
+   "iniciadoEm": 1786295705935
+  },
   "cooldown": {
    "copa": 1786288413733,
    "premier": 1786290834839,
@@ -4002,17 +4032,12 @@
    "2026-08-09": -15.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.3",
-   "n": 11,
-   "start": 3
+   "tipo": "coluna",
+   "chave": ":21",
+   "n": 18,
+   "start": 1
   },
-  "_obs": {
-   "premier": {
-    "desde": 1786295354639,
-    "gatilho": "coluna :21"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -125.6,
