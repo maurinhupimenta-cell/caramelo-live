@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -133,
-  "ciclos": 1151,
+  "saldo": -140,
+  "ciclos": 1152,
   "greens": 729,
-  "redsCiclo": 179,
+  "redsCiclo": 180,
   "aborts": 0,
   "descartes": 243,
   "historico": [
+   {
+    "quando": "2026-08-09T14:35:38.628Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: odd 2.75"
+   },
    {
     "quando": "2026-08-09T14:20:16.136Z",
     "resultado": "GREEN_OBS",
@@ -3955,65 +3961,47 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-28T11:01:10.026Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "super": 1786286138037
+  },
   "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "15:25",
-     "jogo": "Santiago x Quito",
-     "odd": 2.1
+     "h": "15:36",
+     "jogo": "Leicester x United",
+     "odd": 2.25
     },
     {
-     "h": "15:28",
-     "jogo": "Medellin x Porto Alegre",
-     "odd": 2.75
+     "h": "15:39",
+     "jogo": "Everton x Newcastle",
+     "odd": 2.02
     },
     {
-     "h": "15:31",
-     "jogo": "Buenos Aires x La Plata",
-     "odd": 2.35
+     "h": "15:42",
+     "jogo": "Liverpool x Palace",
+     "odd": 2.2
     }
    ],
-   "gatilho": "odd 2.75",
+   "gatilho": "time Leicester",
    "alvo": {
-    "h": "15:31",
-    "jogo": "Buenos Aires x La Plata",
-    "odd": 2.35,
-    "unidades": 4,
-    "desde": 1786285866830
+    "h": "15:36",
+    "jogo": "Leicester x United",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1786286140628
    },
-   "iniciadoEm": 1786285212736,
-   "tiros": [
-    {
-     "h": "15:25",
-     "jogo": "Santiago x Quito",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "15:28",
-     "jogo": "Medellin x Porto Alegre",
-     "odd": 2.75,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1786286140628
   },
   "cooldown": {
    "copa": 1786241316661,
    "premier": 1786244555153,
    "euro": 1786242032762,
-   "super": 1786242142363
+   "super": 1786286138037
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4041,7 +4029,7 @@
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
    "2026-08-08": -1.2,
-   "2026-08-09": -7
+   "2026-08-09": -14
   },
   "_gatilhoAtual": {
    "tipo": "time",
