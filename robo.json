@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -141.4,
-  "ciclos": 1158,
-  "greens": 733,
+  "saldo": -139.9,
+  "ciclos": 1159,
+  "greens": 734,
   "redsCiclo": 181,
   "aborts": 0,
   "descartes": 244,
   "historico": [
+   {
+    "quando": "2026-08-09T17:23:44.831Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "premier · Leicester x Palace @2.25 (tiro 2) · gatilho: coluna :21"
+   },
    {
     "quando": "2026-08-09T17:14:56.639Z",
     "resultado": "GREEN_OBS",
@@ -3955,59 +3961,16 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-28T13:07:03.728Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho time Suíça) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "euro": 1786292662234
+   "euro": 1786292662234,
+   "premier": 1786296224242
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "18:18",
-     "jogo": "Norwich x Watford",
-     "odd": 2.25
-    },
-    {
-     "h": "18:21",
-     "jogo": "Leicester x Palace",
-     "odd": 2.25
-    },
-    {
-     "h": "18:24",
-     "jogo": "Burnley x Watford",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "coluna :21",
-   "alvo": {
-    "h": "18:21",
-    "jogo": "Leicester x Palace",
-    "odd": 2.25,
-    "unidades": 2,
-    "desde": 1786296044431
-   },
-   "iniciadoEm": 1786295705935,
-   "tiros": [
-    {
-     "h": "18:18",
-     "jogo": "Norwich x Watford",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786288413733,
-   "premier": 1786290834839,
+   "premier": 1786296224242,
    "euro": 1786292662234,
    "super": 1786286138037
   },
@@ -4037,7 +4000,7 @@
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
    "2026-08-08": -1.2,
-   "2026-08-09": -15.4
+   "2026-08-09": -13.9
   },
   "_gatilhoAtual": {
    "tipo": "seq",
