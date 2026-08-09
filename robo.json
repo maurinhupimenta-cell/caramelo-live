@@ -356,12 +356,18 @@
  },
  "o25": {
   "saldo": -141.4,
-  "ciclos": 1157,
+  "ciclos": 1158,
   "greens": 733,
   "redsCiclo": 181,
   "aborts": 0,
-  "descartes": 243,
+  "descartes": 244,
   "historico": [
+   {
+    "quando": "2026-08-09T17:14:56.639Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho coluna :21) — liga REARMADA"
+   },
    {
     "quando": "2026-08-09T16:24:22.438Z",
     "resultado": "GREEN",
@@ -3955,12 +3961,6 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho time Suíça) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-28T13:01:07.228Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho odd 2.45) — liga REARMADA"
    }
   ],
   "consumidas": {
@@ -4007,7 +4007,12 @@
    "n": 11,
    "start": 3
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1786295354639,
+    "gatilho": "coluna :21"
+   }
+  }
  },
  "ambas": {
   "saldo": -125.6,
