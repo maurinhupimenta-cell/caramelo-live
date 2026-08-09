@@ -4035,18 +4035,24 @@
    "tipo": "odd",
    "chave": "2.55",
    "n": 10,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -122.2,
-  "ciclos": 1162,
-  "greens": 794,
+  "saldo": -121.2,
+  "ciclos": 1163,
+  "greens": 795,
   "redsCiclo": 132,
   "aborts": 0,
   "descartes": 236,
   "historico": [
+   {
+    "quando": "2026-08-09T19:05:58.934Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Espanha x Dinamarca @1.95 (tiro 1) · gatilho: coluna :05"
+   },
    {
     "quando": "2026-08-09T18:51:31.028Z",
     "resultado": "GREEN",
@@ -7640,50 +7646,15 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "super · Penarol x Itaquera @2.1 (tiro 2) · gatilho: time Itaquera"
-   },
-   {
-    "quando": "2026-07-28T02:17:55.129Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Chelsea x Watford @2.05 (tiro 1) · gatilho: time Leeds"
    }
   ],
   "consumidas": {
-   "premier": 1786301490738
+   "premier": 1786301490738,
+   "euro": 1786302358737
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:02",
-     "jogo": "Espanha x Dinamarca",
-     "odd": 1.95
-    },
-    {
-     "h": "20:05",
-     "jogo": "Hungria x República Tcheca",
-     "odd": 2.2
-    },
-    {
-     "h": "20:08",
-     "jogo": "Geórgia x Polônia",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "coluna :05",
-   "alvo": {
-    "h": "20:02",
-    "jogo": "Espanha x Dinamarca",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1786301699729
-   },
-   "iniciadoEm": 1786301699729
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1786295747231,
+   "euro": 1786302358737,
    "super": 1786294935538,
    "premier": 1786301490738,
    "copa": 1786298340833
@@ -7713,13 +7684,13 @@
    "2026-08-06": -33.8,
    "2026-08-07": -8,
    "2026-08-08": -44.3,
-   "2026-08-09": 11.3
+   "2026-08-09": 12.3
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.02",
    "n": 17,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
