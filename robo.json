@@ -3964,10 +3964,39 @@
    }
   ],
   "consumidas": {
-   "copa": 1786299061530,
    "euro": 1786302601737
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:18",
+     "jogo": "Wolverhampton x Brighton",
+     "odd": 1.98
+    },
+    {
+     "h": "20:21",
+     "jogo": "Leeds x Liverpool",
+     "odd": 2.45
+    },
+    {
+     "h": "20:24",
+     "jogo": "Tottenham x Palace",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "coluna :21",
+   "alvo": {
+    "h": "20:18",
+    "jogo": "Wolverhampton x Brighton",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1786302659331
+   },
+   "iniciadoEm": 1786302659331
+  },
   "cooldown": {
    "copa": 1786299061530,
    "premier": 1786296224242,
