@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -140,
-  "ciclos": 1152,
-  "greens": 729,
+  "saldo": -139,
+  "ciclos": 1153,
+  "greens": 730,
   "redsCiclo": 180,
   "aborts": 0,
   "descartes": 243,
   "historico": [
+   {
+    "quando": "2026-08-09T14:41:42.129Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Everton x Newcastle @2.02 (tiro 2) · gatilho: time Leicester"
+   },
    {
     "quando": "2026-08-09T14:35:38.628Z",
     "resultado": "RED_CICLO",
@@ -3955,59 +3961,16 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho coluna :31) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-28T11:16:12.027Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
-   "super": 1786286138037
+   "super": 1786286138037,
+   "premier": 1786286501838
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "15:36",
-     "jogo": "Leicester x United",
-     "odd": 2.25
-    },
-    {
-     "h": "15:39",
-     "jogo": "Everton x Newcastle",
-     "odd": 2.02
-    },
-    {
-     "h": "15:42",
-     "jogo": "Liverpool x Palace",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Leicester",
-   "alvo": {
-    "h": "15:39",
-    "jogo": "Everton x Newcastle",
-    "odd": 2.02,
-    "unidades": 2,
-    "desde": 1786286331132
-   },
-   "iniciadoEm": 1786286140628,
-   "tiros": [
-    {
-     "h": "15:36",
-     "jogo": "Leicester x United",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786241316661,
-   "premier": 1786244555153,
+   "premier": 1786286501838,
    "euro": 1786242032762,
    "super": 1786286138037
   },
@@ -4037,7 +4000,7 @@
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
    "2026-08-08": -1.2,
-   "2026-08-09": -14
+   "2026-08-09": -13
   },
   "_gatilhoAtual": {
    "tipo": "time",
@@ -7728,7 +7691,7 @@
    "tipo": "coluna",
    "chave": ":45",
    "n": 15,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
