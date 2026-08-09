@@ -3967,7 +3967,37 @@
    "super": 1786286138037,
    "premier": 1786286501838
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:05",
+     "jogo": "Turquia x Escócia",
+     "odd": 2.4
+    },
+    {
+     "h": "16:08",
+     "jogo": "Polônia x Hungria",
+     "odd": 2.55
+    },
+    {
+     "h": "16:11",
+     "jogo": "Ucrânia x Dinamarca",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "odd 2.55",
+   "alvo": {
+    "h": "16:05",
+    "jogo": "Turquia x Escócia",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1786287753228
+   },
+   "iniciadoEm": 1786287753228
+  },
   "cooldown": {
    "copa": 1786241316661,
    "premier": 1786286501838,
@@ -4003,10 +4033,10 @@
    "2026-08-09": -13
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Leicester",
-   "n": 27,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.55",
+   "n": 9,
+   "start": 2
   },
   "_obs": {}
  },
