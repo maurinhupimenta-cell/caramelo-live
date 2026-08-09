@@ -4041,13 +4041,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -128.9,
-  "ciclos": 1155,
-  "greens": 787,
+  "saldo": -128,
+  "ciclos": 1156,
+  "greens": 788,
   "redsCiclo": 132,
   "aborts": 0,
   "descartes": 236,
   "historico": [
+   {
+    "quando": "2026-08-09T15:49:34.627Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Belo Horizonte x Avellaneda @1.95 (tiro 2) · gatilho: time Belo Horizonte"
+   },
    {
     "quando": "2026-08-09T15:38:34.730Z",
     "resultado": "GREEN",
@@ -7641,60 +7647,17 @@
     "resultado": "GREEN",
     "unidades": 1.6,
     "detalhe": "copa · República Tcheca x Iraque @2.15 (tiro 3) · gatilho: time Nova Zelândia"
-   },
-   {
-    "quando": "2026-07-27T21:26:54.596Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Palace x Brentford @1.98 (tiro 2) · gatilho: coluna :24"
    }
   ],
   "consumidas": {
    "euro": 1786289677831,
-   "copa": 1786289914438
+   "copa": 1786289914438,
+   "super": 1786290574334
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "16:43",
-     "jogo": "Asuncion x Porto Alegre",
-     "odd": 2.2
-    },
-    {
-     "h": "16:46",
-     "jogo": "Belo Horizonte x Avellaneda",
-     "odd": 1.95
-    },
-    {
-     "h": "16:49",
-     "jogo": "Medellin x Asuncion",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "time Belo Horizonte",
-   "alvo": {
-    "h": "16:46",
-    "jogo": "Belo Horizonte x Avellaneda",
-    "odd": 1.95,
-    "unidades": 2,
-    "desde": 1786290356328
-   },
-   "iniciadoEm": 1786289917233,
-   "tiros": [
-    {
-     "h": "16:43",
-     "jogo": "Asuncion x Porto Alegre",
-     "odd": 2.2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786289677831,
-   "super": 1786242395459,
+   "super": 1786290574334,
    "premier": 1786286863337,
    "copa": 1786289914438
   },
@@ -7723,7 +7686,7 @@
    "2026-08-06": -33.8,
    "2026-08-07": -8,
    "2026-08-08": -44.3,
-   "2026-08-09": 4.6
+   "2026-08-09": 5.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
