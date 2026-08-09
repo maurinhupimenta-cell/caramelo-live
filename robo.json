@@ -3964,7 +3964,6 @@
    }
   ],
   "consumidas": {
-   "super": 1786286138037,
    "premier": 1786286501838,
    "euro": 1786288295538,
    "copa": 1786288413733
@@ -4013,13 +4012,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -130.7,
-  "ciclos": 1153,
-  "greens": 785,
+  "saldo": -129.9,
+  "ciclos": 1154,
+  "greens": 786,
   "redsCiclo": 132,
   "aborts": 0,
   "descartes": 236,
   "historico": [
+   {
+    "quando": "2026-08-09T15:34:38.030Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "euro · Polônia x Espanha @1.95 (tiro 3) · gatilho: odd 2.02"
+   },
    {
     "quando": "2026-08-09T15:25:33.533Z",
     "resultado": "GREEN_OBS",
@@ -7613,64 +7618,45 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · Eslováquia x Ucrânia @2 (tiro 1) · gatilho: seq GGGG"
-   },
-   {
-    "quando": "2026-07-27T20:55:54.093Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "copa · Egito x Brasil @1.9 (tiro 1) · gatilho: coluna :52"
    }
   ],
   "consumidas": {
-   "premier": 1786286863337
+   "premier": 1786286863337,
+   "euro": 1786289677831
   },
   "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "16:23",
-     "jogo": "Inglaterra x Bélgica",
-     "odd": 1.83
+     "h": "16:34",
+     "jogo": "Argentina x Panamá",
+     "odd": 2.05
     },
     {
-     "h": "16:26",
-     "jogo": "Suíça x Geórgia",
+     "h": "16:37",
+     "jogo": "Egito x Alemanha",
+     "odd": 1.85
+    },
+    {
+     "h": "16:40",
+     "jogo": "Qatar x Bélgica",
      "odd": 2.02
-    },
-    {
-     "h": "16:29",
-     "jogo": "Polônia x Espanha",
-     "odd": 1.95
     }
    ],
-   "gatilho": "odd 2.02",
+   "gatilho": "time Egito",
    "alvo": {
-    "h": "16:29",
-    "jogo": "Polônia x Espanha",
-    "odd": 1.95,
-    "unidades": 4,
-    "desde": 1786289676032
+    "h": "16:34",
+    "jogo": "Argentina x Panamá",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1786289680738
    },
-   "iniciadoEm": 1786289075931,
-   "tiros": [
-    {
-     "h": "16:23",
-     "jogo": "Inglaterra x Bélgica",
-     "odd": 1.83,
-     "unidades": 1
-    },
-    {
-     "h": "16:26",
-     "jogo": "Suíça x Geórgia",
-     "odd": 2.02,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1786289680738
   },
   "cooldown": {
-   "euro": 1786285472937,
+   "euro": 1786289677831,
    "super": 1786242395459,
    "premier": 1786286863337,
    "copa": 1786285893728
@@ -7700,7 +7686,7 @@
    "2026-08-06": -33.8,
    "2026-08-07": -8,
    "2026-08-08": -44.3,
-   "2026-08-09": 2.8
+   "2026-08-09": 3.6
   },
   "_gatilhoAtual": {
    "tipo": "time",
