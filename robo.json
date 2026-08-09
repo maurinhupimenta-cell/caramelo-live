@@ -356,12 +356,18 @@
  },
  "o25": {
   "saldo": -126,
-  "ciclos": 1148,
+  "ciclos": 1149,
   "greens": 729,
   "redsCiclo": 178,
   "aborts": 0,
-  "descartes": 241,
+  "descartes": 242,
   "historico": [
+   {
+    "quando": "2026-08-09T02:48:46.663Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho placar acima de 1-0 (2-1)) — liga REARMADA"
+   },
    {
     "quando": "2026-08-09T02:22:22.554Z",
     "resultado": "GREEN",
@@ -3955,12 +3961,6 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-28T10:40:11.630Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho seq RRRRG) — liga REARMADA"
    }
   ],
   "consumidas": {
@@ -4008,7 +4008,12 @@
    "n": 8,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1786243726663,
+    "gatilho": "placar acima de 1-0 (2-1)"
+   }
+  }
  },
  "ambas": {
   "saldo": -134.6,
@@ -7626,8 +7631,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "03:41",
@@ -7647,13 +7652,21 @@
    ],
    "gatilho": "time França",
    "alvo": {
-    "h": "03:41",
-    "jogo": "França x Albânia",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1786243532263
+    "h": "03:44",
+    "jogo": "Eslovênia x Inglaterra",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1786243592854
    },
-   "iniciadoEm": 1786243532263
+   "iniciadoEm": 1786243532263,
+   "tiros": [
+    {
+     "h": "03:41",
+     "jogo": "França x Albânia",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786238072759,
