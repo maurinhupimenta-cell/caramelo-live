@@ -4013,12 +4013,18 @@
  },
  "ambas": {
   "saldo": -134.6,
-  "ciclos": 1147,
+  "ciclos": 1148,
   "greens": 781,
   "redsCiclo": 132,
   "aborts": 0,
-  "descartes": 234,
+  "descartes": 235,
   "historico": [
+   {
+    "quando": "2026-08-09T02:45:10.062Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho time França) — liga REARMADA"
+   },
    {
     "quando": "2026-08-09T02:36:36.662Z",
     "resultado": "GREEN",
@@ -7612,12 +7618,6 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-27T20:11:46.099Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "premier · Leeds x Chelsea @2.1 (tiro 2) · gatilho: odd 2.15"
    }
   ],
   "consumidas": {
@@ -7664,6 +7664,11 @@
    "n": 8,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1786243510062,
+    "gatilho": "time França"
+   }
+  }
  }
 }
