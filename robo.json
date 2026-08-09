@@ -7624,8 +7624,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:55",
@@ -7645,13 +7645,21 @@
    ],
    "gatilho": "coluna :58",
    "alvo": {
-    "h": "17:55",
-    "jogo": "Lima x Penarol",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1786294219438
+    "h": "17:58",
+    "jogo": "Rio de Janeiro x Buenos Aires",
+    "odd": 1.86,
+    "unidades": 2,
+    "desde": 1786294702927
    },
-   "iniciadoEm": 1786294219438
+   "iniciadoEm": 1786294219438,
+   "tiros": [
+    {
+     "h": "17:55",
+     "jogo": "Lima x Penarol",
+     "odd": 2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786289677831,
@@ -7687,10 +7695,10 @@
    "2026-08-09": 7.2
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":58",
-   "n": 17,
-   "start": 2
+   "tipo": "time",
+   "chave": "Belo Horizonte",
+   "n": 32,
+   "start": 1
   },
   "_obs": {}
  }
