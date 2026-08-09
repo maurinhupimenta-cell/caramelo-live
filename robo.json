@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -136.9,
-  "ciclos": 1154,
-  "greens": 731,
+  "saldo": -135.6,
+  "ciclos": 1155,
+  "greens": 732,
   "redsCiclo": 180,
   "aborts": 0,
   "descartes": 243,
   "historico": [
+   {
+    "quando": "2026-08-09T15:13:34.032Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "copa · Croácia x Espanha @2.25 (tiro 1) · gatilho: odd 2.45"
+   },
    {
     "quando": "2026-08-09T15:11:35.828Z",
     "resultado": "GREEN",
@@ -3955,22 +3961,17 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-28T11:43:53.936Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
    "super": 1786286138037,
    "premier": 1786286501838,
-   "euro": 1786288295538
+   "euro": 1786288295538,
+   "copa": 1786288413733
   },
   "ciclo": null,
   "cooldown": {
-   "copa": 1786241316661,
+   "copa": 1786288413733,
    "premier": 1786286501838,
    "euro": 1786288295538,
    "super": 1786286138037
@@ -4001,7 +4002,7 @@
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
    "2026-08-08": -1.2,
-   "2026-08-09": -10.9
+   "2026-08-09": -9.6
   },
   "_gatilhoAtual": {
    "tipo": "odd",
