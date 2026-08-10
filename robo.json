@@ -1,12 +1,18 @@
 {
  "o35": {
   "saldo": -112,
-  "ciclos": 207,
+  "ciclos": 208,
   "greens": 71,
   "redsCiclo": 85,
   "aborts": 0,
-  "descartes": 51,
+  "descartes": 52,
   "historico": [
+   {
+    "quando": "2026-08-10T13:48:54.640Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time África do Sul) — liga REARMADA"
+   },
    {
     "quando": "2026-08-07T22:47:40.280Z",
     "resultado": "GREEN",
@@ -339,7 +345,8 @@
    "2026-08-02": -7,
    "2026-08-04": 19,
    "2026-08-05": 20.8,
-   "2026-08-07": 34.5
+   "2026-08-07": 34.5,
+   "2026-08-10": 0
   },
   "_gatilhoAtual": {
    "tipo": "odd",
@@ -351,6 +358,10 @@
    "euro": {
     "desde": 1785463711484,
     "gatilho": "time Eslovênia"
+   },
+   "copa": {
+    "desde": 1786369734640,
+    "gatilho": "time África do Sul"
    }
   }
  },
