@@ -4027,13 +4027,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -132.4,
-  "ciclos": 1190,
-  "greens": 815,
+  "saldo": -130.6,
+  "ciclos": 1191,
+  "greens": 816,
   "redsCiclo": 136,
   "aborts": 0,
   "descartes": 239,
   "historico": [
+   {
+    "quando": "2026-08-10T17:29:52.742Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "euro · Eslovênia x Eslováquia @2.2 (tiro 3) · gatilho: seq RGGRR"
+   },
    {
     "quando": "2026-08-10T16:49:54.643Z",
     "resultado": "GREEN",
@@ -7627,64 +7633,45 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho time Buenos Aires) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-28T09:51:34.929Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
-   "super": 1786380594448
+   "super": 1786380594448,
+   "euro": 1786382992543
   },
   "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "18:20",
-     "jogo": "Turquia x Áustria",
-     "odd": 2.1
+     "h": "18:33",
+     "jogo": "Liverpool x Islington",
+     "odd": 1.93
     },
     {
-     "h": "18:23",
-     "jogo": "Romênia x Hungria",
-     "odd": 1.98
-    },
-    {
-     "h": "18:26",
-     "jogo": "Eslovênia x Eslováquia",
+     "h": "18:36",
+     "jogo": "Leeds x Southampton",
      "odd": 2.2
+    },
+    {
+     "h": "18:39",
+     "jogo": "Everton x West Ham",
+     "odd": 2.07
     }
    ],
-   "gatilho": "seq RGGRR",
+   "gatilho": "coluna :33",
    "alvo": {
-    "h": "18:26",
-    "jogo": "Eslovênia x Eslováquia",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1786382811848
+    "h": "18:33",
+    "jogo": "Liverpool x Islington",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1786382995140
    },
-   "iniciadoEm": 1786382373048,
-   "tiros": [
-    {
-     "h": "18:20",
-     "jogo": "Turquia x Áustria",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "18:23",
-     "jogo": "Romênia x Hungria",
-     "odd": 1.98,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1786382995140
   },
   "cooldown": {
-   "euro": 1786374895944,
+   "euro": 1786382992543,
    "super": 1786380594448,
    "premier": 1786378686344,
    "copa": 1786325279734
@@ -7715,7 +7702,7 @@
    "2026-08-07": -8,
    "2026-08-08": -44.3,
    "2026-08-09": 0.4,
-   "2026-08-10": 0.7
+   "2026-08-10": 2.5
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
