@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -135.8,
-  "ciclos": 1188,
-  "greens": 752,
+  "saldo": -134.3,
+  "ciclos": 1189,
+  "greens": 753,
   "redsCiclo": 184,
   "aborts": 0,
   "descartes": 252,
   "historico": [
+   {
+    "quando": "2026-08-10T16:32:59.742Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "premier · United x Leeds @2.5 (tiro 1) · gatilho: coluna :33"
+   },
    {
     "quando": "2026-08-10T16:31:58.444Z",
     "resultado": "GREEN_OBS",
@@ -3968,51 +3974,16 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: seq RRRR"
-   },
-   {
-    "quando": "2026-07-29T03:16:31.763Z",
-    "resultado": "GREEN",
-    "unidades": 2.4,
-    "detalhe": "super · Agua Branca x Penarol @2.35 (tiro 3) · gatilho: odd 2.4"
    }
   ],
   "consumidas": {
-   "super": 1786376941844
+   "super": 1786376941844,
+   "premier": 1786379579544
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:30",
-     "jogo": "United x Leeds",
-     "odd": 2.5
-    },
-    {
-     "h": "17:33",
-     "jogo": "Watford x City",
-     "odd": 2.1
-    },
-    {
-     "h": "17:36",
-     "jogo": "Aston x Leicester",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "coluna :33",
-   "alvo": {
-    "h": "17:30",
-    "jogo": "United x Leeds",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1786379342141
-   },
-   "iniciadoEm": 1786379342141
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786374835339,
-   "premier": 1786372733847,
+   "premier": 1786379579544,
    "euro": 1786370574744,
    "super": 1786376941844
   },
@@ -4043,20 +4014,15 @@
    "2026-08-07": 9.9,
    "2026-08-08": -1.2,
    "2026-08-09": -16.4,
-   "2026-08-10": 6.6
+   "2026-08-10": 8.1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":33",
-   "n": 17,
-   "start": 1
+   "tipo": "time",
+   "chave": "Arábia Saudita",
+   "n": 15,
+   "start": 2
   },
-  "_obs": {
-   "copa": {
-    "desde": 1786379342049,
-    "gatilho": "time Arábia Saudita"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -132.7,
