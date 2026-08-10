@@ -7637,7 +7637,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:00",
+     "jogo": "United x Burnley",
+     "odd": 1.98
+    },
+    {
+     "h": "16:03",
+     "jogo": "Brighton x Chelsea",
+     "odd": 1.85
+    },
+    {
+     "h": "16:06",
+     "jogo": "Islington x Wolverhampton",
+     "odd": 1.86
+    }
+   ],
+   "gatilho": "coluna :03",
+   "alvo": {
+    "h": "16:00",
+    "jogo": "United x Burnley",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1786373515540
+   },
+   "iniciadoEm": 1786373515540
+  },
   "cooldown": {
    "euro": 1786335953634,
    "super": 1786368832752,
@@ -7674,9 +7704,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":54",
-   "n": 14,
-   "start": 2
+   "chave": ":03",
+   "n": 16,
+   "start": 3
   },
   "_obs": {}
  }
