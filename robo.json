@@ -3977,11 +3977,48 @@
    }
   ],
   "consumidas": {
-   "super": 1786386842550,
    "premier": 1786389824144,
    "copa": 1786390313249
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "20:29",
+     "jogo": "Polônia x Itália",
+     "odd": 2.5
+    },
+    {
+     "h": "20:32",
+     "jogo": "Alemanha x Albânia",
+     "odd": 2.55
+    },
+    {
+     "h": "20:35",
+     "jogo": "Polônia x Inglaterra",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "seq RGRRG",
+   "alvo": {
+    "h": "20:32",
+    "jogo": "Alemanha x Albânia",
+    "odd": 2.55,
+    "unidades": 2,
+    "desde": 1786390321750
+   },
+   "iniciadoEm": 1786390316151,
+   "tiros": [
+    {
+     "h": "20:29",
+     "jogo": "Polônia x Itália",
+     "odd": 2.5,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1786390313249,
    "premier": 1786389824144,
@@ -7707,7 +7744,7 @@
    "tipo": "time",
    "chave": "Paraguai",
    "n": 18,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
