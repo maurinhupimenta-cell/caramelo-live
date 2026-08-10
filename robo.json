@@ -3968,8 +3968,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "03:48",
@@ -3989,13 +3989,21 @@
    ],
    "gatilho": "time Norwich",
    "alvo": {
-    "h": "03:48",
-    "jogo": "United x Watford",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1786329662133
+    "h": "03:51",
+    "jogo": "Chelsea x Norwich",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1786330240136
    },
-   "iniciadoEm": 1786329662133
+   "iniciadoEm": 1786329662133,
+   "tiros": [
+    {
+     "h": "03:48",
+     "jogo": "United x Watford",
+     "odd": 2.3,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786317425942,
@@ -4035,7 +4043,7 @@
    "tipo": "time",
    "chave": "Norwich",
    "n": 8,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
@@ -7651,7 +7659,37 @@
   "consumidas": {
    "euro": 1786327499832
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:48",
+     "jogo": "United x Watford",
+     "odd": 2.07
+    },
+    {
+     "h": "03:51",
+     "jogo": "Chelsea x Norwich",
+     "odd": 2
+    },
+    {
+     "h": "03:54",
+     "jogo": "Burnley x Brighton",
+     "odd": 1.8
+    }
+   ],
+   "gatilho": "time Norwich",
+   "alvo": {
+    "h": "03:48",
+    "jogo": "United x Watford",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1786329662429
+   },
+   "iniciadoEm": 1786329662429
+  },
   "cooldown": {
    "euro": 1786327499832,
    "super": 1786326002339,
@@ -7686,9 +7724,9 @@
    "2026-08-09": -0.6
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "1-0 / 0-1",
-   "n": 12,
+   "tipo": "time",
+   "chave": "Norwich",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
