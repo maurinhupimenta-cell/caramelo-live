@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -137.1,
-  "ciclos": 1185,
-  "greens": 751,
+  "saldo": -135.8,
+  "ciclos": 1186,
+  "greens": 752,
   "redsCiclo": 184,
   "aborts": 0,
   "descartes": 250,
   "historico": [
+   {
+    "quando": "2026-08-10T15:49:02.044Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "super · Medellin x Agua Branca @2.25 (tiro 1) · gatilho: coluna :46"
+   },
    {
     "quando": "2026-08-10T15:13:55.541Z",
     "resultado": "GREEN",
@@ -3968,53 +3974,18 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "copa · Uzbequistão x Colômbia @2.25 (tiro 2) · gatilho: odd 2.25"
-   },
-   {
-    "quando": "2026-07-28T23:01:47.160Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "copa · Suíça x Gana @2.4 (tiro 2) · gatilho: time Suíça"
    }
   ],
   "consumidas": {
-   "copa": 1786374835339
+   "copa": 1786374835339,
+   "super": 1786376941844
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:46",
-     "jogo": "Medellin x Agua Branca",
-     "odd": 2.25
-    },
-    {
-     "h": "16:49",
-     "jogo": "Montevideo x Itaquera",
-     "odd": 2.2
-    },
-    {
-     "h": "16:52",
-     "jogo": "Buenos Aires x Porto Alegre",
-     "odd": 2.45
-    }
-   ],
-   "gatilho": "coluna :46",
-   "alvo": {
-    "h": "16:46",
-    "jogo": "Medellin x Agua Branca",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1786376814545
-   },
-   "iniciadoEm": 1786376814545
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786374835339,
    "premier": 1786372733847,
    "euro": 1786370574744,
-   "super": 1786373213341
+   "super": 1786376941844
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4043,7 +4014,7 @@
    "2026-08-07": 9.9,
    "2026-08-08": -1.2,
    "2026-08-09": -16.4,
-   "2026-08-10": 5.3
+   "2026-08-10": 6.6
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
