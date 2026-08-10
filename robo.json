@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -140.2,
-  "ciclos": 1199,
-  "greens": 758,
+  "saldo": -138.6,
+  "ciclos": 1200,
+  "greens": 759,
   "redsCiclo": 186,
   "aborts": 0,
   "descartes": 255,
   "historico": [
+   {
+    "quando": "2026-08-10T19:31:53.443Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "copa · Países Baixos x Escócia @2.6 (tiro 1) · gatilho: time Jordânia"
+   },
    {
     "quando": "2026-08-10T19:23:44.341Z",
     "resultado": "GREEN",
@@ -3968,51 +3974,16 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "euro · Eslováquia x República Tcheca @2.55 (tiro 1) · gatilho: odd 2.2"
-   },
-   {
-    "quando": "2026-07-29T07:07:45.260Z",
-    "resultado": "GREEN",
-    "unidades": 3,
-    "detalhe": "copa · Gana x Croácia @2.5 (tiro 3) · gatilho: time Argélia"
    }
   ],
   "consumidas": {
    "super": 1786386842550,
-   "premier": 1786389824144
+   "premier": 1786389824144,
+   "copa": 1786390313249
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:28",
-     "jogo": "Países Baixos x Escócia",
-     "odd": 2.6
-    },
-    {
-     "h": "20:31",
-     "jogo": "Jordânia x Argentina",
-     "odd": 2.1
-    },
-    {
-     "h": "20:34",
-     "jogo": "Japão x RD Congo",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "time Jordânia",
-   "alvo": {
-    "h": "20:28",
-    "jogo": "Países Baixos x Escócia",
-    "odd": 2.6,
-    "unidades": 1,
-    "desde": 1786389832042
-   },
-   "iniciadoEm": 1786389832042
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1786385754139,
+   "copa": 1786390313249,
    "premier": 1786389824144,
    "euro": 1786380717647,
    "super": 1786386842550
@@ -4044,13 +4015,13 @@
    "2026-08-07": 9.9,
    "2026-08-08": -1.2,
    "2026-08-09": -16.4,
-   "2026-08-10": 2.2
+   "2026-08-10": 3.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Jordânia",
-   "n": 16,
-   "start": 3
+   "tipo": "seq",
+   "chave": "RGRRG",
+   "n": 11,
+   "start": 1
   },
   "_obs": {}
  },
@@ -7667,7 +7638,37 @@
    "premier": 1786388024444,
    "euro": 1786389416944
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:37",
+     "jogo": "Suécia x Curação",
+     "odd": 2.15
+    },
+    {
+     "h": "20:40",
+     "jogo": "Tunísia x Paraguai",
+     "odd": 2.2
+    },
+    {
+     "h": "20:43",
+     "jogo": "EUA x França",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "time Paraguai",
+   "alvo": {
+    "h": "20:37",
+    "jogo": "Suécia x Curação",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1786390313545
+   },
+   "iniciadoEm": 1786390313545
+  },
   "cooldown": {
    "euro": 1786389416944,
    "super": 1786385997561,
@@ -7703,10 +7704,10 @@
    "2026-08-10": 7.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGRR",
-   "n": 12,
-   "start": 1
+   "tipo": "time",
+   "chave": "Paraguai",
+   "n": 18,
+   "start": 3
   },
   "_obs": {}
  }
