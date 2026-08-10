@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -141.3,
-  "ciclos": 1173,
-  "greens": 743,
+  "saldo": -138.9,
+  "ciclos": 1174,
+  "greens": 744,
   "redsCiclo": 183,
   "aborts": 0,
   "descartes": 247,
   "historico": [
+   {
+    "quando": "2026-08-10T04:06:04.337Z",
+    "resultado": "GREEN",
+    "unidades": 2.4,
+    "detalhe": "premier · Islington x Aston @2.35 (tiro 3) · gatilho: odd 2.07"
+   },
    {
     "quando": "2026-08-10T03:57:05.134Z",
     "resultado": "GREEN_OBS",
@@ -3955,65 +3961,16 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: seq GGGR"
-   },
-   {
-    "quando": "2026-07-28T17:40:53.628Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho seq GGGR) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "super": 1786331782937
+   "super": 1786331782937,
+   "premier": 1786334764138
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:57",
-     "jogo": "Aston x West Ham",
-     "odd": 2.62
-    },
-    {
-     "h": "05:00",
-     "jogo": "Liverpool x Brighton",
-     "odd": 2.07
-    },
-    {
-     "h": "05:03",
-     "jogo": "Islington x Aston",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "odd 2.07",
-   "alvo": {
-    "h": "05:03",
-    "jogo": "Islington x Aston",
-    "odd": 2.35,
-    "unidades": 4,
-    "desde": 1786334564138
-   },
-   "iniciadoEm": 1786334028730,
-   "tiros": [
-    {
-     "h": "04:57",
-     "jogo": "Aston x West Ham",
-     "odd": 2.62,
-     "unidades": 1
-    },
-    {
-     "h": "05:00",
-     "jogo": "Liverpool x Brighton",
-     "odd": 2.07,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786317425942,
-   "premier": 1786330416633,
+   "premier": 1786334764138,
    "euro": 1786310399728,
    "super": 1786331782937
   },
@@ -4044,13 +4001,13 @@
    "2026-08-07": 9.9,
    "2026-08-08": -1.2,
    "2026-08-09": -16.4,
-   "2026-08-10": 1.1
+   "2026-08-10": 3.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Palace",
-   "n": 10,
-   "start": 1
+   "chave": "Norwich",
+   "n": 12,
+   "start": 3
   },
   "_obs": {}
  },
@@ -7667,7 +7624,37 @@
    "euro": 1786331880736,
    "super": 1786334584836
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:06",
+     "jogo": "Palace x Newcastle",
+     "odd": 1.85
+    },
+    {
+     "h": "05:09",
+     "jogo": "Leicester x Everton",
+     "odd": 1.93
+    },
+    {
+     "h": "05:12",
+     "jogo": "City x Newcastle",
+     "odd": 1.87
+    }
+   ],
+   "gatilho": "time Everton",
+   "alvo": {
+    "h": "05:06",
+    "jogo": "Palace x Newcastle",
+    "odd": 1.85,
+    "unidades": 1,
+    "desde": 1786334587640
+   },
+   "iniciadoEm": 1786334587640
+  },
   "cooldown": {
    "euro": 1786331880736,
    "super": 1786334584836,
