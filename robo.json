@@ -3980,7 +3980,37 @@
    "super": 1786386842550,
    "premier": 1786389824144
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:28",
+     "jogo": "Países Baixos x Escócia",
+     "odd": 2.6
+    },
+    {
+     "h": "20:31",
+     "jogo": "Jordânia x Argentina",
+     "odd": 2.1
+    },
+    {
+     "h": "20:34",
+     "jogo": "Japão x RD Congo",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "time Jordânia",
+   "alvo": {
+    "h": "20:28",
+    "jogo": "Países Baixos x Escócia",
+    "odd": 2.6,
+    "unidades": 1,
+    "desde": 1786389832042
+   },
+   "iniciadoEm": 1786389832042
+  },
   "cooldown": {
    "copa": 1786385754139,
    "premier": 1786389824144,
@@ -4020,7 +4050,7 @@
    "tipo": "time",
    "chave": "Jordânia",
    "n": 16,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
