@@ -3980,7 +3980,37 @@
    "euro": 1786397907548,
    "super": 1786398476052
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:55",
+     "jogo": "Senegal x Costa do Marfim",
+     "odd": 2.35
+    },
+    {
+     "h": "22:58",
+     "jogo": "Croácia x Uruguai",
+     "odd": 2.35
+    },
+    {
+     "h": "23:01",
+     "jogo": "Alemanha x Inglaterra",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "seq GRGGR",
+   "alvo": {
+    "h": "22:55",
+    "jogo": "Senegal x Costa do Marfim",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1786398953945
+   },
+   "iniciadoEm": 1786398953945
+  },
   "cooldown": {
    "copa": 1786390313249,
    "premier": 1786389824144,
@@ -4018,7 +4048,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GGRGR",
+   "chave": "GRGGR",
    "n": 9,
    "start": 1
   },
