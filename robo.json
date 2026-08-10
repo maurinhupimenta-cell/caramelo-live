@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -137.7,
-  "ciclos": 1177,
-  "greens": 745,
+  "saldo": -136.7,
+  "ciclos": 1178,
+  "greens": 746,
   "redsCiclo": 183,
   "aborts": 0,
   "descartes": 249,
   "historico": [
+   {
+    "quando": "2026-08-10T13:32:35.744Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Newcastle x Everton @2.02 (tiro 1) · gatilho: coluna :33"
+   },
    {
     "quando": "2026-08-10T04:25:53.629Z",
     "resultado": "GREEN",
@@ -3955,49 +3961,15 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho seq RGGRG) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-28T19:14:57.430Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho placar empate 2-2) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:30",
-     "jogo": "Newcastle x Everton",
-     "odd": 2.02
-    },
-    {
-     "h": "14:33",
-     "jogo": "Brighton x West Ham",
-     "odd": 2.3
-    },
-    {
-     "h": "14:36",
-     "jogo": "Aston x Southampton",
-     "odd": 2.45
-    }
-   ],
-   "gatilho": "coluna :33",
-   "alvo": {
-    "h": "14:30",
-    "jogo": "Newcastle x Everton",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1786368065939
-   },
-   "iniciadoEm": 1786368065939
+  "consumidas": {
+   "premier": 1786368755541
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786317425942,
-   "premier": 1786334764138,
+   "premier": 1786368755541,
    "euro": 1786310399728,
    "super": 1786335953429
   },
@@ -4028,13 +4000,13 @@
    "2026-08-07": 9.9,
    "2026-08-08": -1.2,
    "2026-08-09": -16.4,
-   "2026-08-10": 4.7
+   "2026-08-10": 5.7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":33",
-   "n": 14,
-   "start": 3
+   "tipo": "odd",
+   "chave": "2.55",
+   "n": 12,
+   "start": 2
   },
   "_obs": {}
  },
@@ -7714,9 +7686,9 @@
    "2026-08-10": -4.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGG",
-   "n": 13,
+   "tipo": "coluna",
+   "chave": ":33",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
