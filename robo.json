@@ -7638,7 +7638,37 @@
    "super": 1786397632039,
    "copa": 1786400332650
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:24",
+     "jogo": "Palace x Brighton",
+     "odd": 1.85
+    },
+    {
+     "h": "23:27",
+     "jogo": "Leicester x City",
+     "odd": 1.9
+    },
+    {
+     "h": "23:30",
+     "jogo": "Palace x Newcastle",
+     "odd": 1.85
+    }
+   ],
+   "gatilho": "seq GRRGG",
+   "alvo": {
+    "h": "23:24",
+    "jogo": "Palace x Brighton",
+    "odd": 1.85,
+    "unidades": 1,
+    "desde": 1786400460152
+   },
+   "iniciadoEm": 1786400460152
+  },
   "cooldown": {
    "euro": 1786389416944,
    "super": 1786397632039,
@@ -7674,9 +7704,9 @@
    "2026-08-10": 9.7
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 19,
+   "tipo": "seq",
+   "chave": "GRRGG",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
