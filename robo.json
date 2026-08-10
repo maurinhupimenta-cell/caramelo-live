@@ -3964,10 +3964,39 @@
    }
   ],
   "consumidas": {
-   "super": 1786327505437,
    "premier": 1786330416633
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:10",
+     "jogo": "La Plata x Porto Alegre",
+     "odd": 3
+    },
+    {
+     "h": "04:13",
+     "jogo": "Montevideo x Lima",
+     "odd": 2.05
+    },
+    {
+     "h": "04:16",
+     "jogo": "Belo Horizonte x Buenos Aires",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-0)",
+   "alvo": {
+    "h": "04:10",
+    "jogo": "La Plata x Porto Alegre",
+    "odd": 3,
+    "unidades": 1,
+    "desde": 1786331341135
+   },
+   "iniciadoEm": 1786331341135
+  },
   "cooldown": {
    "copa": 1786317425942,
    "premier": 1786330416633,
@@ -4003,10 +4032,10 @@
    "2026-08-09": -16.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Newcastle",
-   "n": 9,
-   "start": 2
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-0)",
+   "n": 11,
+   "start": 1
   },
   "_obs": {}
  },
