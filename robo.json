@@ -370,13 +370,19 @@
   }
  },
  "o25": {
-  "saldo": -139.6,
-  "ciclos": 1183,
-  "greens": 749,
+  "saldo": -138.2,
+  "ciclos": 1184,
+  "greens": 750,
   "redsCiclo": 184,
   "aborts": 0,
   "descartes": 250,
   "historico": [
+   {
+    "quando": "2026-08-10T14:46:53.642Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "super · Medellin x Itaquera @2.4 (tiro 1) · gatilho: coluna :46"
+   },
    {
     "quando": "2026-08-10T14:40:55.140Z",
     "resultado": "GREEN_OBS",
@@ -3970,55 +3976,19 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · Inglaterra x Países Baixos @1.98 (tiro 2) · gatilho: odd 1.98"
-   },
-   {
-    "quando": "2026-07-28T22:27:48.264Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "premier · Wolverhampton x Liverpool @2.07 (tiro 1) · gatilho: seq GRGRG"
    }
   ],
   "consumidas": {
-   "copa": 1786369612945,
    "euro": 1786370574744,
-   "premier": 1786372733847
+   "premier": 1786372733847,
+   "super": 1786373213341
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "15:43",
-     "jogo": "Medellin x Itaquera",
-     "odd": 2.4
-    },
-    {
-     "h": "15:46",
-     "jogo": "Buenos Aires x La Boca",
-     "odd": 2.2
-    },
-    {
-     "h": "15:49",
-     "jogo": "Agua Branca x Quito",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "coluna :46",
-   "alvo": {
-    "h": "15:43",
-    "jogo": "Medellin x Itaquera",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1786372857344
-   },
-   "iniciadoEm": 1786372857344
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786369612945,
    "premier": 1786372733847,
    "euro": 1786370574744,
-   "super": 1786369200948
+   "super": 1786373213341
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4047,12 +4017,12 @@
    "2026-08-07": 9.9,
    "2026-08-08": -1.2,
    "2026-08-09": -16.4,
-   "2026-08-10": 2.8
+   "2026-08-10": 4.2
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":46",
-   "n": 15,
+   "tipo": "seq",
+   "chave": "RGRG",
+   "n": 19,
    "start": 1
   },
   "_obs": {}
