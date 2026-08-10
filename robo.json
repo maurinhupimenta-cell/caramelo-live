@@ -7640,8 +7640,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "16:28",
@@ -7661,13 +7661,21 @@
    ],
    "gatilho": "coluna :31",
    "alvo": {
-    "h": "16:28",
-    "jogo": "Asuncion x Montevideo",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1786375151850
+    "h": "16:31",
+    "jogo": "Penarol x La Plata",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1786376032752
    },
-   "iniciadoEm": 1786375151850
+   "iniciadoEm": 1786375151850,
+   "tiros": [
+    {
+     "h": "16:28",
+     "jogo": "Asuncion x Montevideo",
+     "odd": 1.93,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786374895944,
@@ -7707,7 +7715,7 @@
    "tipo": "coluna",
    "chave": ":31",
    "n": 16,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
