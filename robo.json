@@ -7678,10 +7678,39 @@
    }
   ],
   "consumidas": {
-   "super": 1786376338952,
    "premier": 1786378686344
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:40",
+     "jogo": "Santos x La Plata",
+     "odd": 2.2
+    },
+    {
+     "h": "17:43",
+     "jogo": "Santiago x Quito",
+     "odd": 1.87
+    },
+    {
+     "h": "17:46",
+     "jogo": "Buenos Aires x Agua Branca",
+     "odd": 1.83
+    }
+   ],
+   "gatilho": "odd 1.87",
+   "alvo": {
+    "h": "17:40",
+    "jogo": "Santos x La Plata",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1786379940841
+   },
+   "iniciadoEm": 1786379940841
+  },
   "cooldown": {
    "euro": 1786374895944,
    "super": 1786376338952,
@@ -7717,9 +7746,9 @@
    "2026-08-10": 0.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRGG",
-   "n": 8,
+   "tipo": "odd",
+   "chave": "1.87",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
