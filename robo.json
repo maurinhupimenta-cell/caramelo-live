@@ -3983,7 +3983,37 @@
    "copa": 1786369612945,
    "euro": 1786370574744
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:33",
+     "jogo": "Islington x Southampton",
+     "odd": 2.35
+    },
+    {
+     "h": "15:36",
+     "jogo": "Leicester x Newcastle",
+     "odd": 2.15
+    },
+    {
+     "h": "15:39",
+     "jogo": "West Ham x Aston",
+     "odd": 2.62
+    }
+   ],
+   "gatilho": "coluna :33",
+   "alvo": {
+    "h": "15:33",
+    "jogo": "Islington x Southampton",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1786372358542
+   },
+   "iniciadoEm": 1786372358542
+  },
   "cooldown": {
    "copa": 1786369612945,
    "premier": 1786368755541,
@@ -4020,9 +4050,9 @@
    "2026-08-10": 1.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRG",
-   "n": 11,
+   "tipo": "coluna",
+   "chave": ":33",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
@@ -7637,7 +7667,6 @@
    }
   ],
   "consumidas": {
-   "super": 1786368832752,
    "premier": 1786369489150
   },
   "ciclo": null,
