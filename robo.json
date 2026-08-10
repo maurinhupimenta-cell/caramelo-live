@@ -369,12 +369,18 @@
  },
  "o25": {
   "saldo": -138,
-  "ciclos": 1192,
+  "ciclos": 1193,
   "greens": 755,
   "redsCiclo": 185,
   "aborts": 0,
-  "descartes": 252,
+  "descartes": 253,
   "historico": [
+   {
+    "quando": "2026-08-10T17:42:53.447Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Coreia do Sul) — liga REARMADA"
+   },
    {
     "quando": "2026-08-10T17:14:57.045Z",
     "resultado": "GREEN",
@@ -3968,20 +3974,43 @@
     "resultado": "GREEN",
     "unidades": 1.6,
     "detalhe": "copa · Tunísia x República Tcheca @2.62 (tiro 1) · gatilho: time Cabo Verde"
-   },
-   {
-    "quando": "2026-07-29T04:34:20.263Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho time Cabo Verde) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "copa": 1786380157946,
    "euro": 1786380717647,
    "super": 1786382096846
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:58",
+     "jogo": "Bélgica x Qatar",
+     "odd": 2.35
+    },
+    {
+     "h": "18:40",
+     "jogo": "Coreia do Sul x México",
+     "odd": 2.4
+    },
+    {
+     "h": "18:43",
+     "jogo": "Tunísia x Inglaterra",
+     "odd": 2.45
+    }
+   ],
+   "gatilho": "time Coreia do Sul",
+   "alvo": {
+    "h": "03:58",
+    "jogo": "Bélgica x Qatar",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1786383775440
+   },
+   "iniciadoEm": 1786383775440
+  },
   "cooldown": {
    "copa": 1786380157946,
    "premier": 1786379579544,
@@ -4018,9 +4047,9 @@
    "2026-08-10": 4.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRG",
-   "n": 23,
+   "tipo": "time",
+   "chave": "Coreia do Sul",
+   "n": 16,
    "start": 1
   },
   "_obs": {}
