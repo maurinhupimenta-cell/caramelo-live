@@ -4054,13 +4054,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -126.7,
-  "ciclos": 1196,
-  "greens": 820,
+  "saldo": -125.5,
+  "ciclos": 1197,
+  "greens": 821,
   "redsCiclo": 136,
   "aborts": 0,
   "descartes": 240,
   "historico": [
+   {
+    "quando": "2026-08-10T19:16:57.144Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Albânia x Ucrânia @2.2 (tiro 1) · gatilho: seq RGGRR"
+   },
    {
     "quando": "2026-08-10T18:53:44.640Z",
     "resultado": "GREEN",
@@ -7654,52 +7660,17 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-28T10:28:10.229Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Uruguai"
    }
   ],
   "consumidas": {
    "super": 1786385997561,
    "copa": 1786386352446,
-   "premier": 1786388024444
+   "premier": 1786388024444,
+   "euro": 1786389416944
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:14",
-     "jogo": "Albânia x Ucrânia",
-     "odd": 2.2
-    },
-    {
-     "h": "20:17",
-     "jogo": "Escócia x Dinamarca",
-     "odd": 2
-    },
-    {
-     "h": "20:20",
-     "jogo": "Ucrânia x Albânia",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "seq RGGRR",
-   "alvo": {
-    "h": "20:14",
-    "jogo": "Albânia x Ucrânia",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1786389058742
-   },
-   "iniciadoEm": 1786389058742
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1786382992543,
+   "euro": 1786389416944,
    "super": 1786385997561,
    "premier": 1786388024444,
    "copa": 1786386352446
@@ -7730,7 +7701,7 @@
    "2026-08-07": -8,
    "2026-08-08": -44.3,
    "2026-08-09": 0.4,
-   "2026-08-10": 6.4
+   "2026-08-10": 7.6
   },
   "_gatilhoAtual": {
    "tipo": "seq",
