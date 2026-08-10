@@ -371,12 +371,18 @@
  },
  "o25": {
   "saldo": -139.6,
-  "ciclos": 1182,
+  "ciclos": 1183,
   "greens": 749,
   "redsCiclo": 184,
   "aborts": 0,
-  "descartes": 249,
+  "descartes": 250,
   "historico": [
+   {
+    "quando": "2026-08-10T14:40:55.140Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :46) — liga REARMADA"
+   },
    {
     "quando": "2026-08-10T14:38:54.042Z",
     "resultado": "GREEN",
@@ -3970,21 +3976,44 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "premier · Wolverhampton x Liverpool @2.07 (tiro 1) · gatilho: seq GRGRG"
-   },
-   {
-    "quando": "2026-07-28T21:49:46.064Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "super · Sao Paulo x Buenos Aires @1.98 (tiro 2) · gatilho: odd 1.98"
    }
   ],
   "consumidas": {
-   "super": 1786369200948,
    "copa": 1786369612945,
    "euro": 1786370574744,
    "premier": 1786372733847
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:43",
+     "jogo": "Medellin x Itaquera",
+     "odd": 2.4
+    },
+    {
+     "h": "15:46",
+     "jogo": "Buenos Aires x La Boca",
+     "odd": 2.2
+    },
+    {
+     "h": "15:49",
+     "jogo": "Agua Branca x Quito",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "coluna :46",
+   "alvo": {
+    "h": "15:43",
+    "jogo": "Medellin x Itaquera",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1786372857344
+   },
+   "iniciadoEm": 1786372857344
+  },
   "cooldown": {
    "copa": 1786369612945,
    "premier": 1786372733847,
@@ -4022,9 +4051,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":33",
+   "chave": ":46",
    "n": 15,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  },
