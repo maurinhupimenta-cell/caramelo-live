@@ -4025,13 +4025,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -129.7,
-  "ciclos": 1192,
-  "greens": 817,
+  "saldo": -128.7,
+  "ciclos": 1193,
+  "greens": 818,
   "redsCiclo": 136,
   "aborts": 0,
   "descartes": 239,
   "historico": [
+   {
+    "quando": "2026-08-10T18:19:57.743Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Santos x Lima @2.02 (tiro 1) · gatilho: odd 1.87"
+   },
    {
     "quando": "2026-08-10T17:39:57.442Z",
     "resultado": "GREEN",
@@ -7625,52 +7631,17 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "premier · Leeds x Palace @2.1 (tiro 3) · gatilho: coluna :00"
-   },
-   {
-    "quando": "2026-07-28T09:52:51.934Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho odd 1.87) — liga REARMADA"
    }
   ],
   "consumidas": {
    "euro": 1786382992543,
-   "premier": 1786383597244
+   "premier": 1786383597244,
+   "super": 1786385997561
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "19:16",
-     "jogo": "Santos x Lima",
-     "odd": 2.02
-    },
-    {
-     "h": "19:19",
-     "jogo": "Asuncion x Buenos Aires",
-     "odd": 1.87
-    },
-    {
-     "h": "19:22",
-     "jogo": "Avellaneda x Porto Alegre",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "odd 1.87",
-   "alvo": {
-    "h": "19:16",
-    "jogo": "Santos x Lima",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1786385513939
-   },
-   "iniciadoEm": 1786385513939
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786382992543,
-   "super": 1786380594448,
+   "super": 1786385997561,
    "premier": 1786383597244,
    "copa": 1786325279734
   },
@@ -7700,7 +7671,7 @@
    "2026-08-07": -8,
    "2026-08-08": -44.3,
    "2026-08-09": 0.4,
-   "2026-08-10": 3.4
+   "2026-08-10": 4.4
   },
   "_gatilhoAtual": {
    "tipo": "odd",
