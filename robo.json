@@ -3968,8 +3968,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "04:10",
@@ -3989,13 +3989,21 @@
    ],
    "gatilho": "placar acima de 1-0 (2-0)",
    "alvo": {
-    "h": "04:10",
-    "jogo": "La Plata x Porto Alegre",
-    "odd": 3,
-    "unidades": 1,
-    "desde": 1786331341135
+    "h": "04:13",
+    "jogo": "Montevideo x Lima",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1786331585634
    },
-   "iniciadoEm": 1786331341135
+   "iniciadoEm": 1786331341135,
+   "tiros": [
+    {
+     "h": "04:10",
+     "jogo": "La Plata x Porto Alegre",
+     "odd": 3,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786317425942,
@@ -4032,9 +4040,9 @@
    "2026-08-09": -16.4
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-0)",
-   "n": 11,
+   "tipo": "time",
+   "chave": "Belo Horizonte",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
