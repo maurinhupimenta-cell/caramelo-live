@@ -7638,7 +7638,37 @@
    "super": 1786385997561,
    "copa": 1786386352446
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:51",
+     "jogo": "Southampton x Wolverhampton",
+     "odd": 1.9
+    },
+    {
+     "h": "19:54",
+     "jogo": "Norwich x United",
+     "odd": 1.95
+    },
+    {
+     "h": "19:57",
+     "jogo": "Brighton x Brentford",
+     "odd": 1.87
+    }
+   ],
+   "gatilho": "seq GRGRG",
+   "alvo": {
+    "h": "19:51",
+    "jogo": "Southampton x Wolverhampton",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1786387696641
+   },
+   "iniciadoEm": 1786387696641
+  },
   "cooldown": {
    "euro": 1786382992543,
    "super": 1786385997561,
@@ -7674,10 +7704,10 @@
    "2026-08-10": 5.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Curação",
-   "n": 12,
-   "start": 2
+   "tipo": "seq",
+   "chave": "GRGRG",
+   "n": 10,
+   "start": 1
   },
   "_obs": {}
  }
