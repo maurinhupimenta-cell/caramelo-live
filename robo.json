@@ -7666,7 +7666,37 @@
   "consumidas": {
    "premier": 1786374360944
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:11",
+     "jogo": "França x Ucrânia",
+     "odd": 1.95
+    },
+    {
+     "h": "16:14",
+     "jogo": "Eslovênia x Escócia",
+     "odd": 2.15
+    },
+    {
+     "h": "16:17",
+     "jogo": "Ucrânia x República Tcheca",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "seq RGGRR",
+   "alvo": {
+    "h": "16:11",
+    "jogo": "França x Ucrânia",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1786374537045
+   },
+   "iniciadoEm": 1786374537045
+  },
   "cooldown": {
    "euro": 1786335953634,
    "super": 1786368832752,
@@ -7702,9 +7732,9 @@
    "2026-08-10": -2.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":03",
-   "n": 16,
+   "tipo": "seq",
+   "chave": "RGGRR",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
