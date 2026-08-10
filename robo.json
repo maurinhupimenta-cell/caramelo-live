@@ -369,12 +369,18 @@
  },
  "o25": {
   "saldo": -138,
-  "ciclos": 1194,
+  "ciclos": 1195,
   "greens": 755,
   "redsCiclo": 185,
   "aborts": 0,
-  "descartes": 254,
+  "descartes": 255,
   "historico": [
+   {
+    "quando": "2026-08-10T18:06:56.148Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time EUA) — liga REARMADA"
+   },
    {
     "quando": "2026-08-10T17:57:57.351Z",
     "resultado": "DESCARTADO",
@@ -3968,12 +3974,6 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "super · Belo Horizonte x Rio de Janeiro @2.1 (tiro 1) · gatilho: seq RRRG"
-   },
-   {
-    "quando": "2026-07-29T04:53:47.957Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "euro · Dinamarca x Escócia @2.35 (tiro 1) · gatilho: time Países Baixos"
    }
   ],
   "consumidas": {
@@ -4049,9 +4049,14 @@
    "tipo": "odd",
    "chave": "2.02",
    "n": 8,
-   "start": 3
+   "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1786385216147,
+    "gatilho": "time EUA"
+   }
+  }
  },
  "ambas": {
   "saldo": -129.7,
