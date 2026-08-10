@@ -3979,7 +3979,37 @@
   "consumidas": {
    "super": 1786376941844
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:58",
+     "jogo": "Bélgica x Qatar",
+     "odd": 2.35
+    },
+    {
+     "h": "17:13",
+     "jogo": "Panamá x RD Congo",
+     "odd": 2.25
+    },
+    {
+     "h": "17:16",
+     "jogo": "Suécia x Bélgica",
+     "odd": 2.54
+    }
+   ],
+   "gatilho": "seq RGRRG",
+   "alvo": {
+    "h": "03:58",
+    "jogo": "Bélgica x Qatar",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1786378437146
+   },
+   "iniciadoEm": 1786378437146
+  },
   "cooldown": {
    "copa": 1786374835339,
    "premier": 1786372733847,
@@ -4016,9 +4046,9 @@
    "2026-08-10": 6.6
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":46",
-   "n": 16,
+   "tipo": "seq",
+   "chave": "RGRRG",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
@@ -7638,8 +7668,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:12",
@@ -7659,13 +7689,21 @@
    ],
    "gatilho": "seq GRRGG",
    "alvo": {
-    "h": "17:12",
-    "jogo": "Palace x West Ham",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1786378186742
+    "h": "17:15",
+    "jogo": "Watford x Leicester",
+    "odd": 2,
+    "unidades": 2,
+    "desde": 1786378485352
    },
-   "iniciadoEm": 1786378186742
+   "iniciadoEm": 1786378186742,
+   "tiros": [
+    {
+     "h": "17:12",
+     "jogo": "Palace x West Ham",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786374895944,
