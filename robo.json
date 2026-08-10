@@ -7640,8 +7640,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "18:20",
@@ -7661,13 +7661,21 @@
    ],
    "gatilho": "seq RGGRR",
    "alvo": {
-    "h": "18:20",
-    "jogo": "Turquia x Áustria",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1786382373048
+    "h": "18:23",
+    "jogo": "Romênia x Hungria",
+    "odd": 1.98,
+    "unidades": 2,
+    "desde": 1786382582046
    },
-   "iniciadoEm": 1786382373048
+   "iniciadoEm": 1786382373048,
+   "tiros": [
+    {
+     "h": "18:20",
+     "jogo": "Turquia x Áustria",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786374895944,
@@ -7704,10 +7712,10 @@
    "2026-08-10": 0.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGRR",
-   "n": 11,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":33",
+   "n": 18,
+   "start": 3
   },
   "_obs": {}
  }
