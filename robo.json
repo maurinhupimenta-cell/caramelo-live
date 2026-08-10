@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -138.6,
-  "ciclos": 1201,
+  "saldo": -145.6,
+  "ciclos": 1202,
   "greens": 759,
-  "redsCiclo": 186,
+  "redsCiclo": 187,
   "aborts": 0,
   "descartes": 256,
   "historico": [
+   {
+    "quando": "2026-08-10T21:38:27.746Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: seq RGRRG"
+   },
    {
     "quando": "2026-08-10T19:34:12.245Z",
     "resultado": "GREEN_OBS",
@@ -3968,64 +3974,16 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "euro · Áustria x Croácia @2.25 (tiro 1) · gatilho: seq RRRR"
-   },
-   {
-    "quando": "2026-07-29T08:28:45.665Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Argélia"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "20:29",
-     "jogo": "Polônia x Itália",
-     "odd": 2.5
-    },
-    {
-     "h": "20:32",
-     "jogo": "Alemanha x Albânia",
-     "odd": 2.55
-    },
-    {
-     "h": "20:35",
-     "jogo": "Polônia x Inglaterra",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "seq RGRRG",
-   "alvo": {
-    "h": "20:35",
-    "jogo": "Polônia x Inglaterra",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1786390552344
-   },
-   "iniciadoEm": 1786390316151,
-   "tiros": [
-    {
-     "h": "20:29",
-     "jogo": "Polônia x Itália",
-     "odd": 2.5,
-     "unidades": 1
-    },
-    {
-     "h": "20:32",
-     "jogo": "Alemanha x Albânia",
-     "odd": 2.55,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "euro": 1786397907548
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786390313249,
    "premier": 1786389824144,
-   "euro": 1786380717647,
+   "euro": 1786397907548,
    "super": 1786386842550
   },
   "dias": {
@@ -4055,24 +4013,36 @@
    "2026-08-07": 9.9,
    "2026-08-08": -1.2,
    "2026-08-09": -16.4,
-   "2026-08-10": 3.8
+   "2026-08-10": -3.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.55",
-   "n": 11,
+   "tipo": "seq",
+   "chave": "GRGGR",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -125.5,
-  "ciclos": 1197,
-  "greens": 821,
+  "saldo": -124.8,
+  "ciclos": 1199,
+  "greens": 822,
   "redsCiclo": 136,
   "aborts": 0,
-  "descartes": 240,
+  "descartes": 241,
   "historico": [
+   {
+    "quando": "2026-08-10T21:33:52.545Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "super · Rio de Janeiro x Sao Paulo @1.87 (tiro 2) · gatilho: odd 1.87"
+   },
+   {
+    "quando": "2026-08-10T21:33:44.042Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-08-10T19:16:57.144Z",
     "resultado": "GREEN",
@@ -7660,58 +7630,15 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-28T10:43:12.724Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho odd 2) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-28T10:43:11.936Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
-   "premier": 1786388024444,
-   "euro": 1786389416944
+   "super": 1786397632039
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:37",
-     "jogo": "Suécia x Curação",
-     "odd": 2.15
-    },
-    {
-     "h": "20:40",
-     "jogo": "Tunísia x Paraguai",
-     "odd": 2.2
-    },
-    {
-     "h": "20:43",
-     "jogo": "EUA x França",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "time Paraguai",
-   "alvo": {
-    "h": "20:37",
-    "jogo": "Suécia x Curação",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1786390313545
-   },
-   "iniciadoEm": 1786390313545
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786389416944,
-   "super": 1786385997561,
+   "super": 1786397632039,
    "premier": 1786388024444,
    "copa": 1786386352446
   },
@@ -7741,13 +7668,13 @@
    "2026-08-07": -8,
    "2026-08-08": -44.3,
    "2026-08-09": 0.4,
-   "2026-08-10": 7.6
+   "2026-08-10": 8.3
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.87",
-   "n": 11,
-   "start": 3
+   "tipo": "seq",
+   "chave": "GRRRG",
+   "n": 9,
+   "start": 1
   },
   "_obs": {}
  }
