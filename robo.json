@@ -7638,7 +7638,37 @@
    "premier": 1786374360944,
    "euro": 1786374895944
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:28",
+     "jogo": "Asuncion x Montevideo",
+     "odd": 1.93
+    },
+    {
+     "h": "16:31",
+     "jogo": "Penarol x La Plata",
+     "odd": 2.25
+    },
+    {
+     "h": "16:34",
+     "jogo": "Santos x Belo Horizonte",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "coluna :31",
+   "alvo": {
+    "h": "16:28",
+    "jogo": "Asuncion x Montevideo",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1786375151850
+   },
+   "iniciadoEm": 1786375151850
+  },
   "cooldown": {
    "euro": 1786374895944,
    "super": 1786368832752,
@@ -7674,10 +7704,10 @@
    "2026-08-10": -1.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGRR",
-   "n": 8,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":31",
+   "n": 16,
+   "start": 3
   },
   "_obs": {}
  }
