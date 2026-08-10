@@ -4012,13 +4012,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -133.1,
-  "ciclos": 1178,
-  "greens": 805,
+  "saldo": -132.1,
+  "ciclos": 1179,
+  "greens": 806,
   "redsCiclo": 135,
   "aborts": 0,
   "descartes": 238,
   "historico": [
+   {
+    "quando": "2026-08-10T03:18:00.935Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Hungria x Suíça @1.95 (tiro 1) · gatilho: placar 1-0 / 0-1"
+   },
    {
     "quando": "2026-08-10T02:53:37.133Z",
     "resultado": "GREEN",
@@ -7612,50 +7618,15 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho time Guayaquil) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-28T08:20:50.132Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
-   "premier": 1786330416932
+   "premier": 1786330416932,
+   "euro": 1786331880736
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:11",
-     "jogo": "Hungria x Suíça",
-     "odd": 1.95
-    },
-    {
-     "h": "04:14",
-     "jogo": "Espanha x Sérvia",
-     "odd": 2
-    },
-    {
-     "h": "04:17",
-     "jogo": "Romênia x Ucrânia",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "placar 1-0 / 0-1",
-   "alvo": {
-    "h": "04:11",
-    "jogo": "Hungria x Suíça",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1786331407031
-   },
-   "iniciadoEm": 1786331407031
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1786327499832,
+   "euro": 1786331880736,
    "super": 1786326002339,
    "premier": 1786330416932,
    "copa": 1786325279734
@@ -7685,7 +7656,8 @@
    "2026-08-06": -33.8,
    "2026-08-07": -8,
    "2026-08-08": -44.3,
-   "2026-08-09": 0.4
+   "2026-08-09": 0.4,
+   "2026-08-10": 1
   },
   "_gatilhoAtual": {
    "tipo": "placar",
