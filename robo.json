@@ -4048,20 +4048,26 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRGR",
-   "n": 23,
+   "chave": "RGRG",
+   "n": 28,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -128.7,
-  "ciclos": 1194,
-  "greens": 818,
+  "saldo": -127.6,
+  "ciclos": 1195,
+  "greens": 819,
   "redsCiclo": 136,
   "aborts": 0,
   "descartes": 240,
   "historico": [
+   {
+    "quando": "2026-08-10T18:25:52.646Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Irã x Nova Zelândia @2.1 (tiro 1) · gatilho: placar empate 2-2"
+   },
    {
     "quando": "2026-08-10T18:23:54.741Z",
     "resultado": "GREEN_OBS",
@@ -7655,55 +7661,20 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho odd 2) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-28T10:20:51.128Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
    "euro": 1786382992543,
    "premier": 1786383597244,
-   "super": 1786385997561
+   "super": 1786385997561,
+   "copa": 1786386352446
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "19:22",
-     "jogo": "Irã x Nova Zelândia",
-     "odd": 2.1
-    },
-    {
-     "h": "19:25",
-     "jogo": "Bélgica x Argentina",
-     "odd": 1.93
-    },
-    {
-     "h": "19:28",
-     "jogo": "Irã x Inglaterra",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "placar empate 2-2",
-   "alvo": {
-    "h": "19:22",
-    "jogo": "Irã x Nova Zelândia",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1786386236448
-   },
-   "iniciadoEm": 1786386236448
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786382992543,
    "super": 1786385997561,
    "premier": 1786383597244,
-   "copa": 1786325279734
+   "copa": 1786386352446
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7731,13 +7702,13 @@
    "2026-08-07": -8,
    "2026-08-08": -44.3,
    "2026-08-09": 0.4,
-   "2026-08-10": 4.4
+   "2026-08-10": 5.5
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 2-2",
-   "n": 15,
-   "start": 1
+   "tipo": "time",
+   "chave": "Curação",
+   "n": 12,
+   "start": 2
   },
   "_obs": {}
  }
