@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -138.9,
-  "ciclos": 1176,
-  "greens": 744,
+  "saldo": -137.7,
+  "ciclos": 1177,
+  "greens": 745,
   "redsCiclo": 183,
   "aborts": 0,
   "descartes": 249,
   "historico": [
+   {
+    "quando": "2026-08-10T04:25:53.629Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Asuncion x Belo Horizonte @2.1 (tiro 2) · gatilho: time Belo Horizonte"
+   },
    {
     "quando": "2026-08-10T04:25:47.937Z",
     "resultado": "GREEN_OBS",
@@ -3955,53 +3961,17 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho placar empate 2-2) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-28T19:14:52.530Z",
-    "resultado": "GREEN",
-    "unidades": 2.8,
-    "detalhe": "super · Lima x Porto Alegre @2.45 (tiro 3) · gatilho: seq GRRGG"
    }
   ],
   "consumidas": {
-   "premier": 1786334764138
+   "super": 1786335953429
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:19",
-     "jogo": "Bogota x Rio de Janeiro",
-     "odd": 2.45
-    },
-    {
-     "h": "05:22",
-     "jogo": "Asuncion x Belo Horizonte",
-     "odd": 2.1
-    },
-    {
-     "h": "05:25",
-     "jogo": "Santos x Itaquera",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "time Belo Horizonte",
-   "alvo": {
-    "h": "05:19",
-    "jogo": "Bogota x Rio de Janeiro",
-    "odd": 2.45,
-    "unidades": 1,
-    "desde": 1786335948030
-   },
-   "iniciadoEm": 1786335948030
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786317425942,
    "premier": 1786334764138,
    "euro": 1786310399728,
-   "super": 1786331782937
+   "super": 1786335953429
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4030,24 +4000,30 @@
    "2026-08-07": 9.9,
    "2026-08-08": -1.2,
    "2026-08-09": -16.4,
-   "2026-08-10": 3.5
+   "2026-08-10": 4.7
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Belo Horizonte",
    "n": 12,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -138.2,
-  "ciclos": 1181,
-  "greens": 807,
+  "saldo": -137.3,
+  "ciclos": 1182,
+  "greens": 808,
   "redsCiclo": 136,
   "aborts": 0,
   "descartes": 238,
   "historico": [
+   {
+    "quando": "2026-08-10T04:25:53.833Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Inglaterra x Itália @1.93 (tiro 1) · gatilho: time Geórgia"
+   },
    {
     "quando": "2026-08-10T04:12:02.332Z",
     "resultado": "GREEN",
@@ -7641,51 +7617,14 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-28T08:35:52.229Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
-   "super": 1786334584836,
-   "premier": 1786335122138
+   "euro": 1786335953634
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:11",
-     "jogo": "Inglaterra x Itália",
-     "odd": 1.93
-    },
-    {
-     "h": "05:14",
-     "jogo": "Geórgia x Espanha",
-     "odd": 1.93
-    },
-    {
-     "h": "05:17",
-     "jogo": "Albânia x Turquia",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "time Geórgia",
-   "alvo": {
-    "h": "05:11",
-    "jogo": "Inglaterra x Itália",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1786335944628
-   },
-   "iniciadoEm": 1786335944628
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1786331880736,
+   "euro": 1786335953634,
    "super": 1786334584836,
    "premier": 1786335122138,
    "copa": 1786325279734
@@ -7716,12 +7655,12 @@
    "2026-08-07": -8,
    "2026-08-08": -44.3,
    "2026-08-09": 0.4,
-   "2026-08-10": -5.1
+   "2026-08-10": -4.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Geórgia",
-   "n": 8,
+   "chave": "Everton",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
