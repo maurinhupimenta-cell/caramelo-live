@@ -3980,7 +3980,37 @@
    "copa": 1786385754139,
    "super": 1786386842550
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:18",
+     "jogo": "Leeds x Wolverhampton",
+     "odd": 2.3
+    },
+    {
+     "h": "20:21",
+     "jogo": "West Ham x Brentford",
+     "odd": 2.55
+    },
+    {
+     "h": "20:24",
+     "jogo": "Aston x Leeds",
+     "odd": 2.62
+    }
+   ],
+   "gatilho": "seq RRRRR",
+   "alvo": {
+    "h": "20:18",
+    "jogo": "Leeds x Wolverhampton",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1786389281743
+   },
+   "iniciadoEm": 1786389281743
+  },
   "cooldown": {
    "copa": 1786385754139,
    "premier": 1786385518448,
@@ -4018,8 +4048,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGRG",
-   "n": 28,
+   "chave": "RRRRR",
+   "n": 17,
    "start": 1
   },
   "_obs": {}
