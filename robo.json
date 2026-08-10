@@ -3979,7 +3979,37 @@
   "consumidas": {
    "euro": 1786397907548
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:43",
+     "jogo": "Rio de Janeiro x Santos",
+     "odd": 2.35
+    },
+    {
+     "h": "22:46",
+     "jogo": "Agua Branca x Porto Alegre",
+     "odd": 2.5
+    },
+    {
+     "h": "22:49",
+     "jogo": "La Plata x Lima",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "seq GGRGR",
+   "alvo": {
+    "h": "22:43",
+    "jogo": "Rio de Janeiro x Santos",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1786398176054
+   },
+   "iniciadoEm": 1786398176054
+  },
   "cooldown": {
    "copa": 1786390313249,
    "premier": 1786389824144,
@@ -4017,8 +4047,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRGGR",
-   "n": 8,
+   "chave": "GGRGR",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
