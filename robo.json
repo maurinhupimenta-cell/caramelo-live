@@ -3966,7 +3966,37 @@
   "consumidas": {
    "super": 1786327505437
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:48",
+     "jogo": "United x Watford",
+     "odd": 2.3
+    },
+    {
+     "h": "03:51",
+     "jogo": "Chelsea x Norwich",
+     "odd": 2.2
+    },
+    {
+     "h": "03:54",
+     "jogo": "Burnley x Brighton",
+     "odd": 2
+    }
+   ],
+   "gatilho": "time Norwich",
+   "alvo": {
+    "h": "03:48",
+    "jogo": "United x Watford",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1786329662133
+   },
+   "iniciadoEm": 1786329662133
+  },
   "cooldown": {
    "copa": 1786317425942,
    "premier": 1786313346336,
@@ -4002,10 +4032,10 @@
    "2026-08-09": -17.8
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-0)",
+   "tipo": "time",
+   "chave": "Norwich",
    "n": 8,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
