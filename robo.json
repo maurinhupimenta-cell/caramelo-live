@@ -356,12 +356,24 @@
  },
  "o25": {
   "saldo": -138.9,
-  "ciclos": 1174,
+  "ciclos": 1176,
   "greens": 744,
   "redsCiclo": 183,
   "aborts": 0,
-  "descartes": 247,
+  "descartes": 249,
   "historico": [
+   {
+    "quando": "2026-08-10T04:25:47.937Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho time Geórgia) — liga REARMADA"
+   },
+   {
+    "quando": "2026-08-10T04:25:44.537Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-08-10T04:06:04.337Z",
     "resultado": "GREEN",
@@ -3949,54 +3961,41 @@
     "resultado": "GREEN",
     "unidades": 2.8,
     "detalhe": "super · Lima x Porto Alegre @2.45 (tiro 3) · gatilho: seq GRRGG"
-   },
-   {
-    "quando": "2026-07-28T18:46:51.934Z",
-    "resultado": "GREEN",
-    "unidades": 2.6,
-    "detalhe": "copa · Gana x Bélgica @2.4 (tiro 3) · gatilho: odd 2.45"
-   },
-   {
-    "quando": "2026-07-28T17:49:54.932Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: seq GGGR"
    }
   ],
   "consumidas": {
-   "super": 1786331782937,
    "premier": 1786334764138
   },
   "ciclo": {
-   "liga": "euro",
+   "liga": "super",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "05:11",
-     "jogo": "Inglaterra x Itália",
-     "odd": 2.15
+     "h": "05:19",
+     "jogo": "Bogota x Rio de Janeiro",
+     "odd": 2.45
     },
     {
-     "h": "05:14",
-     "jogo": "Geórgia x Espanha",
-     "odd": 2.2
+     "h": "05:22",
+     "jogo": "Asuncion x Belo Horizonte",
+     "odd": 2.1
     },
     {
-     "h": "05:17",
-     "jogo": "Albânia x Turquia",
-     "odd": 2.87
+     "h": "05:25",
+     "jogo": "Santos x Itaquera",
+     "odd": 2.4
     }
    ],
-   "gatilho": "time Geórgia",
+   "gatilho": "time Belo Horizonte",
    "alvo": {
-    "h": "05:11",
-    "jogo": "Inglaterra x Itália",
-    "odd": 2.15,
+    "h": "05:19",
+    "jogo": "Bogota x Rio de Janeiro",
+    "odd": 2.45,
     "unidades": 1,
-    "desde": 1786334819539
+    "desde": 1786335948030
    },
-   "iniciadoEm": 1786334819539
+   "iniciadoEm": 1786335948030
   },
   "cooldown": {
    "copa": 1786317425942,
@@ -4035,9 +4034,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Geórgia",
-   "n": 8,
-   "start": 1
+   "chave": "Belo Horizonte",
+   "n": 12,
+   "start": 2
   },
   "_obs": {}
  },
@@ -7654,7 +7653,37 @@
    "super": 1786334584836,
    "premier": 1786335122138
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:11",
+     "jogo": "Inglaterra x Itália",
+     "odd": 1.93
+    },
+    {
+     "h": "05:14",
+     "jogo": "Geórgia x Espanha",
+     "odd": 1.93
+    },
+    {
+     "h": "05:17",
+     "jogo": "Albânia x Turquia",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "time Geórgia",
+   "alvo": {
+    "h": "05:11",
+    "jogo": "Inglaterra x Itália",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1786335944628
+   },
+   "iniciadoEm": 1786335944628
+  },
   "cooldown": {
    "euro": 1786331880736,
    "super": 1786334584836,
@@ -7691,8 +7720,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Norwich",
-   "n": 12,
+   "chave": "Geórgia",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
