@@ -369,12 +369,18 @@
  },
  "o25": {
   "saldo": -138.6,
-  "ciclos": 1200,
+  "ciclos": 1201,
   "greens": 759,
   "redsCiclo": 186,
   "aborts": 0,
-  "descartes": 255,
+  "descartes": 256,
   "historico": [
+   {
+    "quando": "2026-08-10T19:34:12.245Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho odd 2.55) — liga REARMADA"
+   },
    {
     "quando": "2026-08-10T19:31:53.443Z",
     "resultado": "GREEN",
@@ -3968,12 +3974,6 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Argélia"
-   },
-   {
-    "quando": "2026-07-29T07:26:46.962Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "euro · Eslováquia x República Tcheca @2.55 (tiro 1) · gatilho: odd 2.2"
    }
   ],
   "consumidas": {
@@ -3982,8 +3982,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "20:29",
@@ -4003,11 +4003,11 @@
    ],
    "gatilho": "seq RGRRG",
    "alvo": {
-    "h": "20:32",
-    "jogo": "Alemanha x Albânia",
-    "odd": 2.55,
-    "unidades": 2,
-    "desde": 1786390321750
+    "h": "20:35",
+    "jogo": "Polônia x Inglaterra",
+    "odd": 2.25,
+    "unidades": 4,
+    "desde": 1786390552344
    },
    "iniciadoEm": 1786390316151,
    "tiros": [
@@ -4016,6 +4016,12 @@
      "jogo": "Polônia x Itália",
      "odd": 2.5,
      "unidades": 1
+    },
+    {
+     "h": "20:32",
+     "jogo": "Alemanha x Albânia",
+     "odd": 2.55,
+     "unidades": 2
     }
    ]
   },
@@ -4055,8 +4061,8 @@
    "2026-08-10": 3.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRRG",
+   "tipo": "odd",
+   "chave": "2.55",
    "n": 11,
    "start": 1
   },
@@ -7741,10 +7747,10 @@
    "2026-08-10": 7.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Paraguai",
-   "n": 18,
-   "start": 2
+   "tipo": "odd",
+   "chave": "1.87",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  }
