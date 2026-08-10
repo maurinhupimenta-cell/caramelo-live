@@ -321,7 +321,45 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "14:52",
+     "jogo": "Austrália x Bélgica",
+     "odd": 4.5
+    },
+    {
+     "h": "14:55",
+     "jogo": "Colômbia x África do Sul",
+     "odd": 5
+    },
+    {
+     "h": "14:58",
+     "jogo": "Turquia x Cabo Verde",
+     "odd": 4.5
+    }
+   ],
+   "gatilho": "time África do Sul",
+   "alvo": {
+    "h": "14:55",
+    "jogo": "Colômbia x África do Sul",
+    "odd": 5,
+    "unidades": 2,
+    "desde": 1786370160142
+   },
+   "iniciadoEm": 1786369736846,
+   "tiros": [
+    {
+     "h": "14:52",
+     "jogo": "Austrália x Bélgica",
+     "odd": 4.5,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1785978110378,
    "premier": 1786142860082,
@@ -349,19 +387,15 @@
    "2026-08-10": 0
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "5.25",
-   "n": 19,
+   "tipo": "time",
+   "chave": "África do Sul",
+   "n": 11,
    "start": 1
   },
   "_obs": {
    "euro": {
     "desde": 1785463711484,
     "gatilho": "time Eslovênia"
-   },
-   "copa": {
-    "desde": 1786369734640,
-    "gatilho": "time África do Sul"
    }
   }
  },
@@ -3979,7 +4013,37 @@
    "super": 1786369200948,
    "copa": 1786369612945
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:56",
+     "jogo": "Escócia x Turquia",
+     "odd": 2.4
+    },
+    {
+     "h": "14:59",
+     "jogo": "Suíça x Inglaterra",
+     "odd": 2.02
+    },
+    {
+     "h": "15:02",
+     "jogo": "Hungria x Ucrânia",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "seq GRGR",
+   "alvo": {
+    "h": "14:56",
+    "jogo": "Escócia x Turquia",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1786370153150
+   },
+   "iniciadoEm": 1786370153150
+  },
   "cooldown": {
    "copa": 1786369612945,
    "premier": 1786368755541,
@@ -4016,9 +4080,9 @@
    "2026-08-10": 0.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Jordânia",
-   "n": 11,
+   "tipo": "seq",
+   "chave": "GRGR",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
