@@ -4026,13 +4026,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -127.6,
-  "ciclos": 1195,
-  "greens": 819,
+  "saldo": -126.7,
+  "ciclos": 1196,
+  "greens": 820,
   "redsCiclo": 136,
   "aborts": 0,
   "descartes": 240,
   "historico": [
+   {
+    "quando": "2026-08-10T18:53:44.640Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Southampton x Wolverhampton @1.9 (tiro 1) · gatilho: seq GRGRG"
+   },
    {
     "quando": "2026-08-10T18:25:52.646Z",
     "resultado": "GREEN",
@@ -7626,53 +7632,18 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Uruguai"
-   },
-   {
-    "quando": "2026-07-28T10:20:52.627Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho odd 2) — liga REARMADA"
    }
   ],
   "consumidas": {
    "super": 1786385997561,
-   "copa": 1786386352446
+   "copa": 1786386352446,
+   "premier": 1786388024444
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "19:51",
-     "jogo": "Southampton x Wolverhampton",
-     "odd": 1.9
-    },
-    {
-     "h": "19:54",
-     "jogo": "Norwich x United",
-     "odd": 1.95
-    },
-    {
-     "h": "19:57",
-     "jogo": "Brighton x Brentford",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "seq GRGRG",
-   "alvo": {
-    "h": "19:51",
-    "jogo": "Southampton x Wolverhampton",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1786387696641
-   },
-   "iniciadoEm": 1786387696641
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786382992543,
    "super": 1786385997561,
-   "premier": 1786383597244,
+   "premier": 1786388024444,
    "copa": 1786386352446
   },
   "dias": {
@@ -7701,7 +7672,7 @@
    "2026-08-07": -8,
    "2026-08-08": -44.3,
    "2026-08-09": 0.4,
-   "2026-08-10": 5.5
+   "2026-08-10": 6.4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
