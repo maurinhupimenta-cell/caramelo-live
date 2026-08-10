@@ -369,12 +369,18 @@
  },
  "o25": {
   "saldo": -135.8,
-  "ciclos": 1187,
+  "ciclos": 1188,
   "greens": 752,
   "redsCiclo": 184,
   "aborts": 0,
-  "descartes": 251,
+  "descartes": 252,
   "historico": [
+   {
+    "quando": "2026-08-10T16:31:58.444Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Arábia Saudita) — liga REARMADA"
+   },
    {
     "quando": "2026-08-10T16:28:59.240Z",
     "resultado": "DESCARTADO",
@@ -3968,47 +3974,41 @@
     "resultado": "GREEN",
     "unidades": 2.4,
     "detalhe": "super · Agua Branca x Penarol @2.35 (tiro 3) · gatilho: odd 2.4"
-   },
-   {
-    "quando": "2026-07-29T02:44:10.061Z",
-    "resultado": "GREEN",
-    "unidades": 2,
-    "detalhe": "euro · Sérvia x Ucrânia @2.5 (tiro 2) · gatilho: placar 1-0 / 0-1"
    }
   ],
   "consumidas": {
    "super": 1786376941844
   },
   "ciclo": {
-   "liga": "copa",
+   "liga": "premier",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "03:58",
-     "jogo": "Bélgica x Qatar",
-     "odd": 2.35
+     "h": "17:30",
+     "jogo": "United x Leeds",
+     "odd": 2.5
     },
     {
-     "h": "17:13",
-     "jogo": "Panamá x RD Congo",
-     "odd": 2.25
+     "h": "17:33",
+     "jogo": "Watford x City",
+     "odd": 2.1
     },
     {
-     "h": "17:16",
-     "jogo": "Suécia x Bélgica",
-     "odd": 2.54
+     "h": "17:36",
+     "jogo": "Aston x Leicester",
+     "odd": 2.4
     }
    ],
-   "gatilho": "seq RGRRG",
+   "gatilho": "coluna :33",
    "alvo": {
-    "h": "03:58",
-    "jogo": "Bélgica x Qatar",
-    "odd": 2.35,
+    "h": "17:30",
+    "jogo": "United x Leeds",
+    "odd": 2.5,
     "unidades": 1,
-    "desde": 1786378437146
+    "desde": 1786379342141
    },
-   "iniciadoEm": 1786378437146
+   "iniciadoEm": 1786379342141
   },
   "cooldown": {
    "copa": 1786374835339,
@@ -4051,7 +4051,12 @@
    "n": 17,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1786379342049,
+    "gatilho": "time Arábia Saudita"
+   }
+  }
  },
  "ambas": {
   "saldo": -132.7,
