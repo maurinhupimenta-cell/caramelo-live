@@ -7624,7 +7624,37 @@
    "premier": 1786330416932,
    "euro": 1786331880736
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:52",
+     "jogo": "Medellin x Belo Horizonte",
+     "odd": 1.95
+    },
+    {
+     "h": "04:55",
+     "jogo": "La Boca x Santos",
+     "odd": 2.15
+    },
+    {
+     "h": "04:58",
+     "jogo": "Bogota x Medellin",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time Santos",
+   "alvo": {
+    "h": "04:52",
+    "jogo": "Medellin x Belo Horizonte",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1786333443433
+   },
+   "iniciadoEm": 1786333443433
+  },
   "cooldown": {
    "euro": 1786331880736,
    "super": 1786326002339,
@@ -7660,10 +7690,10 @@
    "2026-08-10": 1
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "1-0 / 0-1",
-   "n": 18,
-   "start": 1
+   "tipo": "time",
+   "chave": "Santos",
+   "n": 9,
+   "start": 3
   },
   "_obs": {}
  }
