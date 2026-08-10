@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -141.3,
-  "ciclos": 1190,
-  "greens": 753,
+  "saldo": -139.9,
+  "ciclos": 1191,
+  "greens": 754,
   "redsCiclo": 185,
   "aborts": 0,
   "descartes": 252,
   "historico": [
+   {
+    "quando": "2026-08-10T16:51:57.847Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "euro · Alemanha x Ucrânia @2.2 (tiro 2) · gatilho: seq RGRRG"
+   },
    {
     "quando": "2026-08-10T16:42:38.146Z",
     "resultado": "RED_CICLO",
@@ -3968,61 +3974,18 @@
     "resultado": "GREEN",
     "unidades": 1.8,
     "detalhe": "super · Quito x Medellin @2.4 (tiro 2) · gatilho: time Medellin"
-   },
-   {
-    "quando": "2026-07-29T03:50:09.863Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "euro · França x Croácia @2.1 (tiro 1) · gatilho: time Albânia"
    }
   ],
   "consumidas": {
    "premier": 1786379579544,
-   "copa": 1786380157946
+   "copa": 1786380157946,
+   "euro": 1786380717647
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:44",
-     "jogo": "Hungria x Sérvia",
-     "odd": 2.6
-    },
-    {
-     "h": "17:47",
-     "jogo": "Alemanha x Ucrânia",
-     "odd": 2.2
-    },
-    {
-     "h": "17:50",
-     "jogo": "Albânia x Áustria",
-     "odd": 2.62
-    }
-   ],
-   "gatilho": "seq RGRRG",
-   "alvo": {
-    "h": "17:47",
-    "jogo": "Alemanha x Ucrânia",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1786380472446
-   },
-   "iniciadoEm": 1786380160740,
-   "tiros": [
-    {
-     "h": "17:44",
-     "jogo": "Hungria x Sérvia",
-     "odd": 2.6,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786380157946,
    "premier": 1786379579544,
-   "euro": 1786370574744,
+   "euro": 1786380717647,
    "super": 1786376941844
   },
   "dias": {
@@ -4052,7 +4015,7 @@
    "2026-08-07": 9.9,
    "2026-08-08": -1.2,
    "2026-08-09": -16.4,
-   "2026-08-10": 1.1
+   "2026-08-10": 2.5
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -4063,13 +4026,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -132.7,
-  "ciclos": 1189,
-  "greens": 814,
+  "saldo": -132.4,
+  "ciclos": 1190,
+  "greens": 815,
   "redsCiclo": 136,
   "aborts": 0,
   "descartes": 239,
   "historico": [
+   {
+    "quando": "2026-08-10T16:49:54.643Z",
+    "resultado": "GREEN",
+    "unidades": 0.3,
+    "detalhe": "super · Buenos Aires x Agua Branca @1.83 (tiro 3) · gatilho: odd 1.87"
+   },
    {
     "quando": "2026-08-10T16:18:06.545Z",
     "resultado": "GREEN",
@@ -7663,65 +7632,16 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-28T09:36:32.626Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
-   "premier": 1786378686344
+   "premier": 1786378686344,
+   "super": 1786380594448
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "17:40",
-     "jogo": "Santos x La Plata",
-     "odd": 2.2
-    },
-    {
-     "h": "17:43",
-     "jogo": "Santiago x Quito",
-     "odd": 1.87
-    },
-    {
-     "h": "17:46",
-     "jogo": "Buenos Aires x Agua Branca",
-     "odd": 1.83
-    }
-   ],
-   "gatilho": "odd 1.87",
-   "alvo": {
-    "h": "17:46",
-    "jogo": "Buenos Aires x Agua Branca",
-    "odd": 1.83,
-    "unidades": 4,
-    "desde": 1786380592350
-   },
-   "iniciadoEm": 1786379940841,
-   "tiros": [
-    {
-     "h": "17:40",
-     "jogo": "Santos x La Plata",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "17:43",
-     "jogo": "Santiago x Quito",
-     "odd": 1.87,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786374895944,
-   "super": 1786376338952,
+   "super": 1786380594448,
    "premier": 1786378686344,
    "copa": 1786325279734
   },
@@ -7751,7 +7671,7 @@
    "2026-08-07": -8,
    "2026-08-08": -44.3,
    "2026-08-09": 0.4,
-   "2026-08-10": 0.4
+   "2026-08-10": 0.7
   },
   "_gatilhoAtual": {
    "tipo": "odd",
