@@ -4051,12 +4051,7 @@
    "n": 8,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1786385216147,
-    "gatilho": "time EUA"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -129.7,
@@ -7671,7 +7666,37 @@
    "euro": 1786382992543,
    "premier": 1786383597244
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:16",
+     "jogo": "Santos x Lima",
+     "odd": 2.02
+    },
+    {
+     "h": "19:19",
+     "jogo": "Asuncion x Buenos Aires",
+     "odd": 1.87
+    },
+    {
+     "h": "19:22",
+     "jogo": "Avellaneda x Porto Alegre",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "odd 1.87",
+   "alvo": {
+    "h": "19:16",
+    "jogo": "Santos x Lima",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1786385513939
+   },
+   "iniciadoEm": 1786385513939
+  },
   "cooldown": {
    "euro": 1786382992543,
    "super": 1786380594448,
@@ -7707,10 +7732,10 @@
    "2026-08-10": 3.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":33",
-   "n": 18,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.87",
+   "n": 10,
+   "start": 2
   },
   "_obs": {}
  }
