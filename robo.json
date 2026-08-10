@@ -3967,7 +3967,37 @@
    "super": 1786331782937,
    "premier": 1786334764138
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:11",
+     "jogo": "Inglaterra x Itália",
+     "odd": 2.15
+    },
+    {
+     "h": "05:14",
+     "jogo": "Geórgia x Espanha",
+     "odd": 2.2
+    },
+    {
+     "h": "05:17",
+     "jogo": "Albânia x Turquia",
+     "odd": 2.87
+    }
+   ],
+   "gatilho": "time Geórgia",
+   "alvo": {
+    "h": "05:11",
+    "jogo": "Inglaterra x Itália",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1786334819539
+   },
+   "iniciadoEm": 1786334819539
+  },
   "cooldown": {
    "copa": 1786317425942,
    "premier": 1786334764138,
@@ -4005,9 +4035,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Norwich",
-   "n": 12,
-   "start": 3
+   "chave": "Geórgia",
+   "n": 8,
+   "start": 2
   },
   "_obs": {}
  },
@@ -7691,9 +7721,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Everton",
-   "n": 10,
-   "start": 1
+   "chave": "Norwich",
+   "n": 12,
+   "start": 3
   },
   "_obs": {}
  }
