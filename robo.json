@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -138.2,
-  "ciclos": 1184,
-  "greens": 750,
+  "saldo": -137.1,
+  "ciclos": 1185,
+  "greens": 751,
   "redsCiclo": 184,
   "aborts": 0,
   "descartes": 250,
   "historico": [
+   {
+    "quando": "2026-08-10T15:13:55.541Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Equador x Bósnia e Herzegovina @2.07 (tiro 1) · gatilho: time Jordânia"
+   },
    {
     "quando": "2026-08-10T14:46:53.642Z",
     "resultado": "GREEN",
@@ -3968,51 +3974,16 @@
     "resultado": "GREEN",
     "unidades": 1.8,
     "detalhe": "copa · Suíça x Gana @2.4 (tiro 2) · gatilho: time Suíça"
-   },
-   {
-    "quando": "2026-07-28T22:49:45.875Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · Inglaterra x Países Baixos @1.98 (tiro 2) · gatilho: odd 1.98"
    }
   ],
   "consumidas": {
    "premier": 1786372733847,
-   "super": 1786373213341
+   "super": 1786373213341,
+   "copa": 1786374835339
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:10",
-     "jogo": "Equador x Bósnia e Herzegovina",
-     "odd": 2.07
-    },
-    {
-     "h": "16:13",
-     "jogo": "Argentina x Jordânia",
-     "odd": 2.15
-    },
-    {
-     "h": "16:16",
-     "jogo": "Canadá x Iraque",
-     "odd": 2.6
-    }
-   ],
-   "gatilho": "time Jordânia",
-   "alvo": {
-    "h": "16:10",
-    "jogo": "Equador x Bósnia e Herzegovina",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1786374476252
-   },
-   "iniciadoEm": 1786374476252
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1786369612945,
+   "copa": 1786374835339,
    "premier": 1786372733847,
    "euro": 1786370574744,
    "super": 1786373213341
@@ -4044,11 +4015,11 @@
    "2026-08-07": 9.9,
    "2026-08-08": -1.2,
    "2026-08-09": -16.4,
-   "2026-08-10": 4.2
+   "2026-08-10": 5.3
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Jordânia",
+   "chave": "África do Sul",
    "n": 12,
    "start": 3
   },
