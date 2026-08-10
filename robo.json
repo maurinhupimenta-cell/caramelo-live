@@ -3964,7 +3964,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:30",
+     "jogo": "Newcastle x Everton",
+     "odd": 2.02
+    },
+    {
+     "h": "14:33",
+     "jogo": "Brighton x West Ham",
+     "odd": 2.3
+    },
+    {
+     "h": "14:36",
+     "jogo": "Aston x Southampton",
+     "odd": 2.45
+    }
+   ],
+   "gatilho": "coluna :33",
+   "alvo": {
+    "h": "14:30",
+    "jogo": "Newcastle x Everton",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1786368065939
+   },
+   "iniciadoEm": 1786368065939
+  },
   "cooldown": {
    "copa": 1786317425942,
    "premier": 1786334764138,
@@ -4001,10 +4031,10 @@
    "2026-08-10": 4.7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Belo Horizonte",
-   "n": 12,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":33",
+   "n": 14,
+   "start": 3
   },
   "_obs": {}
  },
@@ -7618,7 +7648,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:28",
+     "jogo": "La Plata x Santiago",
+     "odd": 2.05
+    },
+    {
+     "h": "14:31",
+     "jogo": "Montevideo x La Boca",
+     "odd": 1.98
+    },
+    {
+     "h": "14:34",
+     "jogo": "Rio de Janeiro x Medellin",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "coluna :31",
+   "alvo": {
+    "h": "14:28",
+    "jogo": "La Plata x Santiago",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1786367982639
+   },
+   "iniciadoEm": 1786367982639
+  },
   "cooldown": {
    "euro": 1786335953634,
    "super": 1786334584836,
@@ -7654,16 +7714,11 @@
    "2026-08-10": -4.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Everton",
-   "n": 12,
+   "tipo": "seq",
+   "chave": "GGGG",
+   "n": 13,
    "start": 1
   },
-  "_obs": {
-   "super": {
-    "desde": 1786367979941,
-    "gatilho": "coluna :31"
-   }
-  }
+  "_obs": {}
  }
 }
