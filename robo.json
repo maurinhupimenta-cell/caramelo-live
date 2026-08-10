@@ -355,13 +355,19 @@
   }
  },
  "o25": {
-  "saldo": -144.8,
-  "ciclos": 1169,
-  "greens": 740,
+  "saldo": -143.8,
+  "ciclos": 1170,
+  "greens": 741,
   "redsCiclo": 183,
   "aborts": 0,
   "descartes": 246,
   "historico": [
+   {
+    "quando": "2026-08-10T02:05:05.635Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Santiago x Agua Branca @2 (tiro 2) · gatilho: placar acima de 1-0 (2-0)"
+   },
    {
     "quando": "2026-08-10T01:54:56.637Z",
     "resultado": "GREEN_OBS",
@@ -3955,51 +3961,17 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "copa · Tunísia x Brasil @2.45 (tiro 1) · gatilho: odd 2.45"
-   },
-   {
-    "quando": "2026-07-28T15:08:53.135Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "copa · Egito x Haiti @2.07 (tiro 1) · gatilho: time Suíça"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "02:58",
-     "jogo": "Rio de Janeiro x Penarol",
-     "odd": 2.45
-    },
-    {
-     "h": "03:01",
-     "jogo": "Santiago x Agua Branca",
-     "odd": 2
-    },
-    {
-     "h": "03:04",
-     "jogo": "Montevideo x Penarol",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-0)",
-   "alvo": {
-    "h": "02:58",
-    "jogo": "Rio de Janeiro x Penarol",
-    "odd": 2.45,
-    "unidades": 1,
-    "desde": 1786326899639
-   },
-   "iniciadoEm": 1786326899639
+  "consumidas": {
+   "super": 1786327505437
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786317425942,
    "premier": 1786313346336,
    "euro": 1786310399728,
-   "super": 1786286138037
+   "super": 1786327505437
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4027,7 +3999,7 @@
    "2026-08-06": -4.4,
    "2026-08-07": 9.9,
    "2026-08-08": -1.2,
-   "2026-08-09": -18.8
+   "2026-08-09": -17.8
   },
   "_gatilhoAtual": {
    "tipo": "placar",
@@ -7647,7 +7619,6 @@
    }
   ],
   "consumidas": {
-   "copa": 1786325279734,
    "super": 1786326002339,
    "euro": 1786327499832
   },
