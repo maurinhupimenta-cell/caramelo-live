@@ -356,12 +356,18 @@
  },
  "o25": {
   "saldo": -144.8,
-  "ciclos": 1168,
+  "ciclos": 1169,
   "greens": 740,
   "redsCiclo": 183,
   "aborts": 0,
-  "descartes": 245,
+  "descartes": 246,
   "historico": [
+   {
+    "quando": "2026-08-10T01:54:56.637Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho placar acima de 1-0 (2-0)) — liga REARMADA"
+   },
    {
     "quando": "2026-08-09T23:17:06.137Z",
     "resultado": "GREEN",
@@ -3955,12 +3961,6 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "copa · Egito x Haiti @2.07 (tiro 1) · gatilho: time Suíça"
-   },
-   {
-    "quando": "2026-07-28T15:02:53.726Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho time Suíça) — liga REARMADA"
    }
   ],
   "consumidas": {},
@@ -4005,7 +4005,12 @@
    "n": 10,
    "start": 3
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1786326896636,
+    "gatilho": "placar acima de 1-0 (2-0)"
+   }
+  }
  },
  "ambas": {
   "saldo": -134.8,
