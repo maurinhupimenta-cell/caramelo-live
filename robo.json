@@ -370,13 +370,19 @@
   }
  },
  "o25": {
-  "saldo": -141.9,
-  "ciclos": 1180,
-  "greens": 747,
+  "saldo": -140.9,
+  "ciclos": 1181,
+  "greens": 748,
   "redsCiclo": 184,
   "aborts": 0,
   "descartes": 249,
   "historico": [
+   {
+    "quando": "2026-08-10T14:02:54.945Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Suíça x Inglaterra @2.02 (tiro 2) · gatilho: seq GRGR"
+   },
    {
     "quando": "2026-08-10T13:46:53.241Z",
     "resultado": "GREEN",
@@ -3970,62 +3976,19 @@
     "resultado": "GREEN",
     "unidades": 1.9,
     "detalhe": "copa · Iraque x Qatar @2.45 (tiro 2) · gatilho: odd 2.45"
-   },
-   {
-    "quando": "2026-07-28T20:02:53.661Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "copa · Países Baixos x Uzbequistão @2.35 (tiro 1) · gatilho: odd 2.45"
    }
   ],
   "consumidas": {
    "premier": 1786368755541,
    "super": 1786369200948,
-   "copa": 1786369612945
+   "copa": 1786369612945,
+   "euro": 1786370574744
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "14:56",
-     "jogo": "Escócia x Turquia",
-     "odd": 2.4
-    },
-    {
-     "h": "14:59",
-     "jogo": "Suíça x Inglaterra",
-     "odd": 2.02
-    },
-    {
-     "h": "15:02",
-     "jogo": "Hungria x Ucrânia",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "seq GRGR",
-   "alvo": {
-    "h": "14:59",
-    "jogo": "Suíça x Inglaterra",
-    "odd": 2.02,
-    "unidades": 2,
-    "desde": 1786370452744
-   },
-   "iniciadoEm": 1786370153150,
-   "tiros": [
-    {
-     "h": "14:56",
-     "jogo": "Escócia x Turquia",
-     "odd": 2.4,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786369612945,
    "premier": 1786368755541,
-   "euro": 1786310399728,
+   "euro": 1786370574744,
    "super": 1786369200948
   },
   "dias": {
@@ -4055,12 +4018,12 @@
    "2026-08-07": 9.9,
    "2026-08-08": -1.2,
    "2026-08-09": -16.4,
-   "2026-08-10": 0.5
+   "2026-08-10": 1.5
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRGR",
-   "n": 9,
+   "chave": "RGRG",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
