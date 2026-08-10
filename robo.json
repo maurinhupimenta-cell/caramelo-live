@@ -4021,8 +4021,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "14:56",
@@ -4042,13 +4042,21 @@
    ],
    "gatilho": "seq GRGR",
    "alvo": {
-    "h": "14:56",
-    "jogo": "Escócia x Turquia",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1786370153150
+    "h": "14:59",
+    "jogo": "Suíça x Inglaterra",
+    "odd": 2.02,
+    "unidades": 2,
+    "desde": 1786370452744
    },
-   "iniciadoEm": 1786370153150
+   "iniciadoEm": 1786370153150,
+   "tiros": [
+    {
+     "h": "14:56",
+     "jogo": "Escócia x Turquia",
+     "odd": 2.4,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786369612945,
@@ -4087,8 +4095,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGRG",
-   "n": 10,
+   "chave": "GRGR",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
