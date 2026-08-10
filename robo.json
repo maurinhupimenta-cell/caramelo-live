@@ -3968,8 +3968,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "04:57",
@@ -3989,13 +3989,21 @@
    ],
    "gatilho": "odd 2.07",
    "alvo": {
-    "h": "04:57",
-    "jogo": "Aston x West Ham",
-    "odd": 2.62,
-    "unidades": 1,
-    "desde": 1786334028730
+    "h": "05:00",
+    "jogo": "Liverpool x Brighton",
+    "odd": 2.07,
+    "unidades": 2,
+    "desde": 1786334401932
    },
-   "iniciadoEm": 1786334028730
+   "iniciadoEm": 1786334028730,
+   "tiros": [
+    {
+     "h": "04:57",
+     "jogo": "Aston x West Ham",
+     "odd": 2.62,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786317425942,
@@ -4036,7 +4044,7 @@
    "tipo": "time",
    "chave": "Newcastle",
    "n": 11,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
