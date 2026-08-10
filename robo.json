@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -142.3,
-  "ciclos": 1198,
-  "greens": 757,
+  "saldo": -140.2,
+  "ciclos": 1199,
+  "greens": 758,
   "redsCiclo": 186,
   "aborts": 0,
   "descartes": 255,
   "historico": [
+   {
+    "quando": "2026-08-10T19:23:44.341Z",
+    "resultado": "GREEN",
+    "unidades": 2.1,
+    "detalhe": "premier · West Ham x Brentford @2.55 (tiro 2) · gatilho: seq RRRRR"
+   },
    {
     "quando": "2026-08-10T18:34:02.743Z",
     "resultado": "RED_CICLO",
@@ -3968,59 +3974,16 @@
     "resultado": "GREEN",
     "unidades": 3,
     "detalhe": "copa · Gana x Croácia @2.5 (tiro 3) · gatilho: time Argélia"
-   },
-   {
-    "quando": "2026-07-29T06:41:48.864Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "super · Itaquera x Montevideo @2.2 (tiro 1) · gatilho: odd 2.4"
    }
   ],
   "consumidas": {
-   "super": 1786386842550
+   "super": 1786386842550,
+   "premier": 1786389824144
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "20:18",
-     "jogo": "Leeds x Wolverhampton",
-     "odd": 2.3
-    },
-    {
-     "h": "20:21",
-     "jogo": "West Ham x Brentford",
-     "odd": 2.55
-    },
-    {
-     "h": "20:24",
-     "jogo": "Aston x Leeds",
-     "odd": 2.62
-    }
-   ],
-   "gatilho": "seq RRRRR",
-   "alvo": {
-    "h": "20:21",
-    "jogo": "West Ham x Brentford",
-    "odd": 2.55,
-    "unidades": 2,
-    "desde": 1786389652243
-   },
-   "iniciadoEm": 1786389281743,
-   "tiros": [
-    {
-     "h": "20:18",
-     "jogo": "Leeds x Wolverhampton",
-     "odd": 2.3,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786385754139,
-   "premier": 1786385518448,
+   "premier": 1786389824144,
    "euro": 1786380717647,
    "super": 1786386842550
   },
@@ -4051,7 +4014,7 @@
    "2026-08-07": 9.9,
    "2026-08-08": -1.2,
    "2026-08-09": -16.4,
-   "2026-08-10": 0.1
+   "2026-08-10": 2.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
