@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -112,
-  "ciclos": 208,
+  "saldo": -119,
+  "ciclos": 209,
   "greens": 71,
-  "redsCiclo": 85,
+  "redsCiclo": 86,
   "aborts": 0,
   "descartes": 52,
   "historico": [
+   {
+    "quando": "2026-08-10T14:01:58.144Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time África do Sul"
+   },
    {
     "quando": "2026-08-10T13:48:54.640Z",
     "resultado": "GREEN_OBS",
@@ -320,54 +326,12 @@
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "14:52",
-     "jogo": "Austrália x Bélgica",
-     "odd": 4.5
-    },
-    {
-     "h": "14:55",
-     "jogo": "Colômbia x África do Sul",
-     "odd": 5
-    },
-    {
-     "h": "14:58",
-     "jogo": "Turquia x Cabo Verde",
-     "odd": 4.5
-    }
-   ],
-   "gatilho": "time África do Sul",
-   "alvo": {
-    "h": "14:58",
-    "jogo": "Turquia x Cabo Verde",
-    "odd": 4.5,
-    "unidades": 4,
-    "desde": 1786370335840
-   },
-   "iniciadoEm": 1786369736846,
-   "tiros": [
-    {
-     "h": "14:52",
-     "jogo": "Austrália x Bélgica",
-     "odd": 4.5,
-     "unidades": 1
-    },
-    {
-     "h": "14:55",
-     "jogo": "Colômbia x África do Sul",
-     "odd": 5,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "copa": 1786370517941
   },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1785978110378,
+   "copa": 1786370517941,
    "premier": 1786142860082,
    "euro": 1785464913993,
    "super": 1785983452169
@@ -390,7 +354,7 @@
    "2026-08-04": 19,
    "2026-08-05": 20.8,
    "2026-08-07": 34.5,
-   "2026-08-10": 0
+   "2026-08-10": -7
   },
   "_gatilhoAtual": {
    "tipo": "time",
