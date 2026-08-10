@@ -3982,8 +3982,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:31",
@@ -4003,13 +4003,21 @@
    ],
    "gatilho": "time Arábia Saudita",
    "alvo": {
-    "h": "17:31",
-    "jogo": "Áustria x França",
+    "h": "17:34",
+    "jogo": "Arábia Saudita x Argélia",
     "odd": 2.2,
-    "unidades": 1,
-    "desde": 1786379590545
+    "unidades": 2,
+    "desde": 1786379694141
    },
-   "iniciadoEm": 1786379590545
+   "iniciadoEm": 1786379590545,
+   "tiros": [
+    {
+     "h": "17:31",
+     "jogo": "Áustria x França",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786374835339,
@@ -4050,7 +4058,7 @@
    "tipo": "time",
    "chave": "Arábia Saudita",
    "n": 15,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
