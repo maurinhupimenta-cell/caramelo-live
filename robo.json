@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -134.3,
-  "ciclos": 1189,
+  "saldo": -141.3,
+  "ciclos": 1190,
   "greens": 753,
-  "redsCiclo": 184,
+  "redsCiclo": 185,
   "aborts": 0,
   "descartes": 252,
   "historico": [
+   {
+    "quando": "2026-08-10T16:42:38.146Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Arábia Saudita"
+   },
    {
     "quando": "2026-08-10T16:32:59.742Z",
     "resultado": "GREEN",
@@ -3968,65 +3974,46 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "euro · França x Croácia @2.1 (tiro 1) · gatilho: time Albânia"
-   },
-   {
-    "quando": "2026-07-29T03:34:09.466Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: seq RRRR"
    }
   ],
   "consumidas": {
    "super": 1786376941844,
-   "premier": 1786379579544
+   "premier": 1786379579544,
+   "copa": 1786380157946
   },
   "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "17:31",
-     "jogo": "Áustria x França",
-     "odd": 2.2
-    },
-    {
-     "h": "17:34",
-     "jogo": "Arábia Saudita x Argélia",
-     "odd": 2.2
-    },
-    {
-     "h": "17:37",
-     "jogo": "Japão x África do Sul",
+     "h": "17:44",
+     "jogo": "Hungria x Sérvia",
      "odd": 2.6
+    },
+    {
+     "h": "17:47",
+     "jogo": "Alemanha x Ucrânia",
+     "odd": 2.2
+    },
+    {
+     "h": "17:50",
+     "jogo": "Albânia x Áustria",
+     "odd": 2.62
     }
    ],
-   "gatilho": "time Arábia Saudita",
+   "gatilho": "seq RGRRG",
    "alvo": {
-    "h": "17:37",
-    "jogo": "Japão x África do Sul",
+    "h": "17:44",
+    "jogo": "Hungria x Sérvia",
     "odd": 2.6,
-    "unidades": 4,
-    "desde": 1786379879646
+    "unidades": 1,
+    "desde": 1786380160740
    },
-   "iniciadoEm": 1786379590545,
-   "tiros": [
-    {
-     "h": "17:31",
-     "jogo": "Áustria x França",
-     "odd": 2.2,
-     "unidades": 1
-    },
-    {
-     "h": "17:34",
-     "jogo": "Arábia Saudita x Argélia",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1786380160740
   },
   "cooldown": {
-   "copa": 1786374835339,
+   "copa": 1786380157946,
    "premier": 1786379579544,
    "euro": 1786370574744,
    "super": 1786376941844
@@ -4058,13 +4045,13 @@
    "2026-08-07": 9.9,
    "2026-08-08": -1.2,
    "2026-08-09": -16.4,
-   "2026-08-10": 8.1
+   "2026-08-10": 1.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Arábia Saudita",
-   "n": 15,
-   "start": 2
+   "tipo": "seq",
+   "chave": "RGRRG",
+   "n": 8,
+   "start": 1
   },
   "_obs": {}
  },
