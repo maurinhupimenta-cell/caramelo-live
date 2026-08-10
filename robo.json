@@ -7637,7 +7637,45 @@
   "consumidas": {
    "super": 1786397632039
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "23:07",
+     "jogo": "Cabo Verde x Bósnia e Herzegovina",
+     "odd": 1.87
+    },
+    {
+     "h": "23:10",
+     "jogo": "Gana x Escócia",
+     "odd": 2.2
+    },
+    {
+     "h": "23:13",
+     "jogo": "EUA x Canadá",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "placar empate 2-2",
+   "alvo": {
+    "h": "23:10",
+    "jogo": "Gana x Escócia",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1786399794050
+   },
+   "iniciadoEm": 1786399675645,
+   "tiros": [
+    {
+     "h": "23:07",
+     "jogo": "Cabo Verde x Bósnia e Herzegovina",
+     "odd": 1.87,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1786389416944,
    "super": 1786397632039,
@@ -7673,16 +7711,11 @@
    "2026-08-10": 8.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRRG",
-   "n": 9,
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 19,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1786399673944,
-    "gatilho": "placar empate 2-2"
-   }
-  }
+  "_obs": {}
  }
 }
