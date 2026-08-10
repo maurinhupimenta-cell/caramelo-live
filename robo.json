@@ -7656,8 +7656,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:06",
@@ -7677,13 +7677,21 @@
    ],
    "gatilho": "time Everton",
    "alvo": {
-    "h": "05:06",
-    "jogo": "Palace x Newcastle",
-    "odd": 1.85,
-    "unidades": 1,
-    "desde": 1786334587640
+    "h": "05:09",
+    "jogo": "Leicester x Everton",
+    "odd": 1.93,
+    "unidades": 2,
+    "desde": 1786334940235
    },
-   "iniciadoEm": 1786334587640
+   "iniciadoEm": 1786334587640,
+   "tiros": [
+    {
+     "h": "05:06",
+     "jogo": "Palace x Newcastle",
+     "odd": 1.85,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786331880736,
@@ -7723,7 +7731,7 @@
    "tipo": "time",
    "chave": "Norwich",
    "n": 12,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
