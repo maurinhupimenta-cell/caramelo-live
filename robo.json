@@ -3966,7 +3966,37 @@
   "consumidas": {
    "premier": 1786368755541
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:31",
+     "jogo": "Montevideo x La Boca",
+     "odd": 2.25
+    },
+    {
+     "h": "14:34",
+     "jogo": "Rio de Janeiro x Medellin",
+     "odd": 2.35
+    },
+    {
+     "h": "14:37",
+     "jogo": "Agua Branca x Guayaquil",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "seq RGRG",
+   "alvo": {
+    "h": "14:31",
+    "jogo": "Montevideo x La Boca",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1786368773044
+   },
+   "iniciadoEm": 1786368773044
+  },
   "cooldown": {
    "copa": 1786317425942,
    "premier": 1786368755541,
@@ -4006,7 +4036,7 @@
    "tipo": "odd",
    "chave": "2.55",
    "n": 12,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -7687,7 +7717,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":33",
+   "chave": ":36",
    "n": 14,
    "start": 1
   },
