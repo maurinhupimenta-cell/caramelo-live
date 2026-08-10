@@ -3980,7 +3980,37 @@
    "premier": 1786385518448,
    "copa": 1786385754139
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:25",
+     "jogo": "Buenos Aires x Bogota",
+     "odd": 2.35
+    },
+    {
+     "h": "19:28",
+     "jogo": "Penarol x Montevideo",
+     "odd": 2.29
+    },
+    {
+     "h": "19:31",
+     "jogo": "Agua Branca x La Plata",
+     "odd": 2.45
+    }
+   ],
+   "gatilho": "seq GRGR",
+   "alvo": {
+    "h": "19:25",
+    "jogo": "Buenos Aires x Bogota",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1786386122244
+   },
+   "iniciadoEm": 1786386122244
+  },
   "cooldown": {
    "copa": 1786385754139,
    "premier": 1786385518448,
@@ -4017,9 +4047,9 @@
    "2026-08-10": 7.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "EUA",
-   "n": 10,
+   "tipo": "seq",
+   "chave": "GRGR",
+   "n": 23,
    "start": 1
   },
   "_obs": {}
