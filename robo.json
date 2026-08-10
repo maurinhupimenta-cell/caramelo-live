@@ -3981,7 +3981,37 @@
    "copa": 1786380157946,
    "euro": 1786380717647
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:07",
+     "jogo": "Lima x Santiago",
+     "odd": 2
+    },
+    {
+     "h": "18:10",
+     "jogo": "Rio de Janeiro x Penarol",
+     "odd": 2.45
+    },
+    {
+     "h": "18:13",
+     "jogo": "Montevideo x Asuncion",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "seq RRRRR",
+   "alvo": {
+    "h": "18:07",
+    "jogo": "Lima x Santiago",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1786381496441
+   },
+   "iniciadoEm": 1786381496441
+  },
   "cooldown": {
    "copa": 1786380157946,
    "premier": 1786379579544,
@@ -4019,8 +4049,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGRRG",
-   "n": 8,
+   "chave": "RRRRR",
+   "n": 17,
    "start": 1
   },
   "_obs": {}
