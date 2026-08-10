@@ -4009,12 +4009,18 @@
  },
  "ambas": {
   "saldo": -129.1,
-  "ciclos": 1172,
+  "ciclos": 1173,
   "greens": 801,
   "redsCiclo": 134,
   "aborts": 0,
-  "descartes": 237,
+  "descartes": 238,
   "historico": [
+   {
+    "quando": "2026-08-10T00:45:00.241Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho placar goleada (3+)) — liga REARMADA"
+   },
    {
     "quando": "2026-08-09T22:34:00.532Z",
     "resultado": "GREEN",
@@ -7608,16 +7614,40 @@
     "resultado": "GREEN",
     "unidades": 0.5,
     "detalhe": "euro · Eslováquia x Países Baixos @1.87 (tiro 3) · gatilho: seq GRRG"
-   },
-   {
-    "quando": "2026-07-28T06:17:38.127Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "premier · West Ham x Chelsea @2.1 (tiro 1) · gatilho: time Brighton"
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "01:47",
+     "jogo": "Eslovênia x República Tcheca",
+     "odd": 2.4
+    },
+    {
+     "h": "01:50",
+     "jogo": "Ucrânia x Itália",
+     "odd": 2
+    },
+    {
+     "h": "01:53",
+     "jogo": "Albânia x Hungria",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "placar goleada (3+)",
+   "alvo": {
+    "h": "01:47",
+    "jogo": "Eslovênia x República Tcheca",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1786322702829
+   },
+   "iniciadoEm": 1786322702829
+  },
   "cooldown": {
    "euro": 1786313282032,
    "super": 1786312441430,
@@ -7652,10 +7682,10 @@
    "2026-08-09": 4.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "EUA",
-   "n": 17,
-   "start": 2
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 8,
+   "start": 1
   },
   "_obs": {}
  }
