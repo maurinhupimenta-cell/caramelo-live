@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -139.9,
-  "ciclos": 1191,
-  "greens": 754,
+  "saldo": -138,
+  "ciclos": 1192,
+  "greens": 755,
   "redsCiclo": 185,
   "aborts": 0,
   "descartes": 252,
   "historico": [
+   {
+    "quando": "2026-08-10T17:14:57.045Z",
+    "resultado": "GREEN",
+    "unidades": 1.9,
+    "detalhe": "super · Rio de Janeiro x Penarol @2.45 (tiro 2) · gatilho: seq RRRRR"
+   },
    {
     "quando": "2026-08-10T16:51:57.847Z",
     "resultado": "GREEN",
@@ -3968,63 +3974,20 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho time Cabo Verde) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-29T04:24:40.462Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "super · Quito x Medellin @2.4 (tiro 2) · gatilho: time Medellin"
    }
   ],
   "consumidas": {
    "premier": 1786379579544,
    "copa": 1786380157946,
-   "euro": 1786380717647
+   "euro": 1786380717647,
+   "super": 1786382096846
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "18:07",
-     "jogo": "Lima x Santiago",
-     "odd": 2
-    },
-    {
-     "h": "18:10",
-     "jogo": "Rio de Janeiro x Penarol",
-     "odd": 2.45
-    },
-    {
-     "h": "18:13",
-     "jogo": "Montevideo x Asuncion",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "seq RRRRR",
-   "alvo": {
-    "h": "18:10",
-    "jogo": "Rio de Janeiro x Penarol",
-    "odd": 2.45,
-    "unidades": 2,
-    "desde": 1786381798142
-   },
-   "iniciadoEm": 1786381496441,
-   "tiros": [
-    {
-     "h": "18:07",
-     "jogo": "Lima x Santiago",
-     "odd": 2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786380157946,
    "premier": 1786379579544,
    "euro": 1786380717647,
-   "super": 1786376941844
+   "super": 1786382096846
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4053,12 +4016,12 @@
    "2026-08-07": 9.9,
    "2026-08-08": -1.2,
    "2026-08-09": -16.4,
-   "2026-08-10": 2.5
+   "2026-08-10": 4.4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRRR",
-   "n": 17,
+   "chave": "RGRG",
+   "n": 23,
    "start": 1
   },
   "_obs": {}
