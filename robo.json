@@ -7639,7 +7639,37 @@
    "copa": 1786386352446,
    "premier": 1786388024444
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:14",
+     "jogo": "Albânia x Ucrânia",
+     "odd": 2.2
+    },
+    {
+     "h": "20:17",
+     "jogo": "Escócia x Dinamarca",
+     "odd": 2
+    },
+    {
+     "h": "20:20",
+     "jogo": "Ucrânia x Albânia",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "seq RGGRR",
+   "alvo": {
+    "h": "20:14",
+    "jogo": "Albânia x Ucrânia",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1786389058742
+   },
+   "iniciadoEm": 1786389058742
+  },
   "cooldown": {
    "euro": 1786382992543,
    "super": 1786385997561,
@@ -7676,8 +7706,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRGRG",
-   "n": 10,
+   "chave": "RGGRR",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
