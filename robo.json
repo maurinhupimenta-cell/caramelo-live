@@ -369,12 +369,18 @@
  },
  "o25": {
   "saldo": -135.8,
-  "ciclos": 1186,
+  "ciclos": 1187,
   "greens": 752,
   "redsCiclo": 184,
   "aborts": 0,
-  "descartes": 250,
+  "descartes": 251,
   "historico": [
+   {
+    "quando": "2026-08-10T16:28:59.240Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-08-10T15:49:02.044Z",
     "resultado": "GREEN",
@@ -3968,12 +3974,6 @@
     "resultado": "GREEN",
     "unidades": 2,
     "detalhe": "euro · Sérvia x Ucrânia @2.5 (tiro 2) · gatilho: placar 1-0 / 0-1"
-   },
-   {
-    "quando": "2026-07-29T01:16:45.967Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "copa · Uzbequistão x Colômbia @2.25 (tiro 2) · gatilho: odd 2.25"
    }
   ],
   "consumidas": {
@@ -4046,9 +4046,9 @@
    "2026-08-10": 6.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRRG",
-   "n": 15,
+   "tipo": "coluna",
+   "chave": ":33",
+   "n": 17,
    "start": 1
   },
   "_obs": {}
