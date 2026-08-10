@@ -7637,7 +7637,37 @@
    "euro": 1786374895944,
    "super": 1786376338952
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:12",
+     "jogo": "Palace x West Ham",
+     "odd": 2.1
+    },
+    {
+     "h": "17:15",
+     "jogo": "Watford x Leicester",
+     "odd": 2
+    },
+    {
+     "h": "17:18",
+     "jogo": "Brentford x United",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "seq GRRGG",
+   "alvo": {
+    "h": "17:12",
+    "jogo": "Palace x West Ham",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1786378186742
+   },
+   "iniciadoEm": 1786378186742
+  },
   "cooldown": {
    "euro": 1786374895944,
    "super": 1786376338952,
@@ -7673,10 +7703,10 @@
    "2026-08-10": -0.6
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":31",
-   "n": 16,
-   "start": 2
+   "tipo": "seq",
+   "chave": "GRRGG",
+   "n": 8,
+   "start": 1
   },
   "_obs": {}
  }
