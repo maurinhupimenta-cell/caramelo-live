@@ -4027,12 +4027,18 @@
  },
  "ambas": {
   "saldo": -124.8,
-  "ciclos": 1199,
+  "ciclos": 1200,
   "greens": 822,
   "redsCiclo": 136,
   "aborts": 0,
-  "descartes": 241,
+  "descartes": 242,
   "historico": [
+   {
+    "quando": "2026-08-10T22:07:53.945Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho placar empate 2-2) — liga REARMADA"
+   },
    {
     "quando": "2026-08-10T21:33:52.545Z",
     "resultado": "GREEN",
@@ -7626,12 +7632,6 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRRR) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-28T10:58:29.535Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
@@ -7678,6 +7678,11 @@
    "n": 9,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1786399673944,
+    "gatilho": "placar empate 2-2"
+   }
+  }
  }
 }
