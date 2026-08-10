@@ -356,12 +356,18 @@
  },
  "o25": {
   "saldo": -141.3,
-  "ciclos": 1172,
+  "ciclos": 1173,
   "greens": 743,
   "redsCiclo": 183,
   "aborts": 0,
-  "descartes": 246,
+  "descartes": 247,
   "historico": [
+   {
+    "quando": "2026-08-10T03:57:05.134Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho time Áustria) — liga REARMADA"
+   },
    {
     "quando": "2026-08-10T03:16:23.228Z",
     "resultado": "GREEN",
@@ -3955,12 +3961,6 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho seq GGGR) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-28T16:58:04.729Z",
-    "resultado": "GREEN",
-    "unidades": 2,
-    "detalhe": "super · Medellin x Agua Branca @2.25 (tiro 3) · gatilho: odd 2.45"
    }
   ],
   "consumidas": {
@@ -4038,12 +4038,7 @@
    "n": 11,
    "start": 2
   },
-  "_obs": {
-   "euro": {
-    "desde": 1786333984235,
-    "gatilho": "time Áustria"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -132.1,
@@ -7659,8 +7654,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "04:52",
@@ -7680,11 +7675,11 @@
    ],
    "gatilho": "time Santos",
    "alvo": {
-    "h": "04:55",
-    "jogo": "La Boca x Santos",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1786334222640
+    "h": "04:58",
+    "jogo": "Bogota x Medellin",
+    "odd": 2.2,
+    "unidades": 4,
+    "desde": 1786334282132
    },
    "iniciadoEm": 1786333443433,
    "tiros": [
@@ -7693,6 +7688,12 @@
      "jogo": "Medellin x Belo Horizonte",
      "odd": 1.95,
      "unidades": 1
+    },
+    {
+     "h": "04:55",
+     "jogo": "La Boca x Santos",
+     "odd": 2.15,
+     "unidades": 2
     }
    ]
   },
