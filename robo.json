@@ -4054,13 +4054,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -133.7,
-  "ciclos": 1188,
-  "greens": 813,
+  "saldo": -132.7,
+  "ciclos": 1189,
+  "greens": 814,
   "redsCiclo": 136,
   "aborts": 0,
   "descartes": 239,
   "historico": [
+   {
+    "quando": "2026-08-10T16:18:06.545Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Watford x Leicester @2 (tiro 2) · gatilho: seq GRRGG"
+   },
    {
     "quando": "2026-08-10T15:38:59.148Z",
     "resultado": "GREEN",
@@ -7654,60 +7660,17 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-28T09:34:10.125Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho time Uruguai) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "super": 1786376338952
+   "super": 1786376338952,
+   "premier": 1786378686344
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:12",
-     "jogo": "Palace x West Ham",
-     "odd": 2.1
-    },
-    {
-     "h": "17:15",
-     "jogo": "Watford x Leicester",
-     "odd": 2
-    },
-    {
-     "h": "17:18",
-     "jogo": "Brentford x United",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "seq GRRGG",
-   "alvo": {
-    "h": "17:15",
-    "jogo": "Watford x Leicester",
-    "odd": 2,
-    "unidades": 2,
-    "desde": 1786378485352
-   },
-   "iniciadoEm": 1786378186742,
-   "tiros": [
-    {
-     "h": "17:12",
-     "jogo": "Palace x West Ham",
-     "odd": 2.1,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786374895944,
    "super": 1786376338952,
-   "premier": 1786374360944,
+   "premier": 1786378686344,
    "copa": 1786325279734
   },
   "dias": {
@@ -7736,7 +7699,7 @@
    "2026-08-07": -8,
    "2026-08-08": -44.3,
    "2026-08-09": 0.4,
-   "2026-08-10": -0.6
+   "2026-08-10": 0.4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
