@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -144.2,
-  "ciclos": 1203,
-  "greens": 760,
+  "saldo": -142.5,
+  "ciclos": 1204,
+  "greens": 761,
   "redsCiclo": 187,
   "aborts": 0,
   "descartes": 256,
   "historico": [
+   {
+    "quando": "2026-08-10T22:02:53.644Z",
+    "resultado": "GREEN",
+    "unidades": 1.7,
+    "detalhe": "copa · Croácia x Uruguai @2.35 (tiro 2) · gatilho: seq GRGGR"
+   },
    {
     "quando": "2026-08-10T21:47:56.247Z",
     "resultado": "GREEN",
@@ -3968,59 +3974,16 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho coluna :49) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-29T08:40:45.165Z",
-    "resultado": "GREEN",
-    "unidades": 2.4,
-    "detalhe": "super · Santos x La Plata @2.7 (tiro 2) · gatilho: coluna :37"
    }
   ],
   "consumidas": {
    "euro": 1786397907548,
-   "super": 1786398476052
+   "super": 1786398476052,
+   "copa": 1786399373451
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "22:55",
-     "jogo": "Senegal x Costa do Marfim",
-     "odd": 2.35
-    },
-    {
-     "h": "22:58",
-     "jogo": "Croácia x Uruguai",
-     "odd": 2.35
-    },
-    {
-     "h": "23:01",
-     "jogo": "Alemanha x Inglaterra",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "seq GRGGR",
-   "alvo": {
-    "h": "22:58",
-    "jogo": "Croácia x Uruguai",
-    "odd": 2.35,
-    "unidades": 2,
-    "desde": 1786399135943
-   },
-   "iniciadoEm": 1786398953945,
-   "tiros": [
-    {
-     "h": "22:55",
-     "jogo": "Senegal x Costa do Marfim",
-     "odd": 2.35,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1786390313249,
+   "copa": 1786399373451,
    "premier": 1786389824144,
    "euro": 1786397907548,
    "super": 1786398476052
@@ -4052,7 +4015,7 @@
    "2026-08-07": 9.9,
    "2026-08-08": -1.2,
    "2026-08-09": -16.4,
-   "2026-08-10": -1.8
+   "2026-08-10": -0.1
   },
   "_gatilhoAtual": {
    "tipo": "seq",
