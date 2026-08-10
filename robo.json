@@ -4056,12 +4056,18 @@
  },
  "ambas": {
   "saldo": -128.7,
-  "ciclos": 1193,
+  "ciclos": 1194,
   "greens": 818,
   "redsCiclo": 136,
   "aborts": 0,
-  "descartes": 239,
+  "descartes": 240,
   "historico": [
+   {
+    "quando": "2026-08-10T18:23:54.741Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho placar empate 2-2) — liga REARMADA"
+   },
    {
     "quando": "2026-08-10T18:19:57.743Z",
     "resultado": "GREEN",
@@ -7655,12 +7661,6 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-28T10:05:46.827Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "premier · Leeds x Palace @2.1 (tiro 3) · gatilho: coluna :00"
    }
   ],
   "consumidas": {
@@ -7668,7 +7668,37 @@
    "premier": 1786383597244,
    "super": 1786385997561
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:22",
+     "jogo": "Irã x Nova Zelândia",
+     "odd": 2.1
+    },
+    {
+     "h": "19:25",
+     "jogo": "Bélgica x Argentina",
+     "odd": 1.93
+    },
+    {
+     "h": "19:28",
+     "jogo": "Irã x Inglaterra",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "placar empate 2-2",
+   "alvo": {
+    "h": "19:22",
+    "jogo": "Irã x Nova Zelândia",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1786386236448
+   },
+   "iniciadoEm": 1786386236448
+  },
   "cooldown": {
    "euro": 1786382992543,
    "super": 1786385997561,
@@ -7704,9 +7734,9 @@
    "2026-08-10": 4.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.87",
-   "n": 10,
+   "tipo": "placar",
+   "chave": "empate 2-2",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
