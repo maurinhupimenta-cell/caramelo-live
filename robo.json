@@ -4037,18 +4037,24 @@
    "tipo": "time",
    "chave": "Geórgia",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -139.1,
-  "ciclos": 1180,
-  "greens": 806,
+  "saldo": -138.2,
+  "ciclos": 1181,
+  "greens": 807,
   "redsCiclo": 136,
   "aborts": 0,
   "descartes": 238,
   "historico": [
+   {
+    "quando": "2026-08-10T04:12:02.332Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Leicester x Everton @1.93 (tiro 2) · gatilho: time Everton"
+   },
    {
     "quando": "2026-08-10T04:03:05.034Z",
     "resultado": "RED_CICLO",
@@ -7642,61 +7648,18 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-28T08:33:51.736Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho odd 1.95) — liga REARMADA"
    }
   ],
   "consumidas": {
    "euro": 1786331880736,
-   "super": 1786334584836
+   "super": 1786334584836,
+   "premier": 1786335122138
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "05:06",
-     "jogo": "Palace x Newcastle",
-     "odd": 1.85
-    },
-    {
-     "h": "05:09",
-     "jogo": "Leicester x Everton",
-     "odd": 1.93
-    },
-    {
-     "h": "05:12",
-     "jogo": "City x Newcastle",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "time Everton",
-   "alvo": {
-    "h": "05:09",
-    "jogo": "Leicester x Everton",
-    "odd": 1.93,
-    "unidades": 2,
-    "desde": 1786334940235
-   },
-   "iniciadoEm": 1786334587640,
-   "tiros": [
-    {
-     "h": "05:06",
-     "jogo": "Palace x Newcastle",
-     "odd": 1.85,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786331880736,
    "super": 1786334584836,
-   "premier": 1786330416932,
+   "premier": 1786335122138,
    "copa": 1786325279734
   },
   "dias": {
@@ -7725,13 +7688,13 @@
    "2026-08-07": -8,
    "2026-08-08": -44.3,
    "2026-08-09": 0.4,
-   "2026-08-10": -6
+   "2026-08-10": -5.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Norwich",
    "n": 12,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
