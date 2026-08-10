@@ -3963,9 +3963,7 @@
     "detalhe": "euro · green OBSERVADO no papel (gatilho placar empate 2-2) — liga REARMADA"
    }
   ],
-  "consumidas": {
-   "super": 1786335953429
-  },
+  "consumidas": {},
   "ciclo": null,
   "cooldown": {
    "copa": 1786317425942,
@@ -4012,12 +4010,18 @@
  },
  "ambas": {
   "saldo": -137.3,
-  "ciclos": 1182,
+  "ciclos": 1183,
   "greens": 808,
   "redsCiclo": 136,
   "aborts": 0,
-  "descartes": 238,
+  "descartes": 239,
   "historico": [
+   {
+    "quando": "2026-08-10T13:19:39.942Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :31) — liga REARMADA"
+   },
    {
     "quando": "2026-08-10T04:25:53.833Z",
     "resultado": "GREEN",
@@ -7611,12 +7615,6 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho time Buenos Aires) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-28T08:51:10.329Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {},
@@ -7661,6 +7659,11 @@
    "n": 12,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1786367979941,
+    "gatilho": "coluna :31"
+   }
+  }
  }
 }
