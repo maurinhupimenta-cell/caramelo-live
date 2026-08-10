@@ -4055,13 +4055,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -132.1,
-  "ciclos": 1179,
+  "saldo": -139.1,
+  "ciclos": 1180,
   "greens": 806,
-  "redsCiclo": 135,
+  "redsCiclo": 136,
   "aborts": 0,
   "descartes": 238,
   "historico": [
+   {
+    "quando": "2026-08-10T04:03:05.034Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: time Santos"
+   },
    {
     "quando": "2026-08-10T03:18:00.935Z",
     "resultado": "GREEN",
@@ -7655,65 +7661,16 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho odd 1.95) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-28T08:20:52.033Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho time Guayaquil) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "euro": 1786331880736
+   "euro": 1786331880736,
+   "super": 1786334584836
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:52",
-     "jogo": "Medellin x Belo Horizonte",
-     "odd": 1.95
-    },
-    {
-     "h": "04:55",
-     "jogo": "La Boca x Santos",
-     "odd": 2.15
-    },
-    {
-     "h": "04:58",
-     "jogo": "Bogota x Medellin",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Santos",
-   "alvo": {
-    "h": "04:58",
-    "jogo": "Bogota x Medellin",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1786334282132
-   },
-   "iniciadoEm": 1786333443433,
-   "tiros": [
-    {
-     "h": "04:52",
-     "jogo": "Medellin x Belo Horizonte",
-     "odd": 1.95,
-     "unidades": 1
-    },
-    {
-     "h": "04:55",
-     "jogo": "La Boca x Santos",
-     "odd": 2.15,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786331880736,
-   "super": 1786326002339,
+   "super": 1786334584836,
    "premier": 1786330416932,
    "copa": 1786325279734
   },
@@ -7743,13 +7700,13 @@
    "2026-08-07": -8,
    "2026-08-08": -44.3,
    "2026-08-09": 0.4,
-   "2026-08-10": 1
+   "2026-08-10": -6
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Everton",
    "n": 10,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
