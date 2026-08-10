@@ -7619,7 +7619,37 @@
   "consumidas": {
    "euro": 1786323182637
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:19",
+     "jogo": "Bósnia e Herzegovina x Haiti",
+     "odd": 1.85
+    },
+    {
+     "h": "02:22",
+     "jogo": "RD Congo x Portugal",
+     "odd": 1.85
+    },
+    {
+     "h": "02:25",
+     "jogo": "Países Baixos x Paraguai",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "placar 1-0 / 0-1",
+   "alvo": {
+    "h": "02:19",
+    "jogo": "Bósnia e Herzegovina x Haiti",
+    "odd": 1.85,
+    "unidades": 1,
+    "desde": 1786324806736
+   },
+   "iniciadoEm": 1786324806736
+  },
   "cooldown": {
    "euro": 1786323182637,
    "super": 1786312441430,
@@ -7655,8 +7685,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 8,
+   "chave": "1-0 / 0-1",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
