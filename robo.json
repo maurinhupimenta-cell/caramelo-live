@@ -4025,13 +4025,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -136.1,
-  "ciclos": 1185,
-  "greens": 810,
+  "saldo": -135.4,
+  "ciclos": 1186,
+  "greens": 811,
   "redsCiclo": 136,
   "aborts": 0,
   "descartes": 239,
   "historico": [
+   {
+    "quando": "2026-08-10T15:06:01.145Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "premier · Brighton x Chelsea @1.85 (tiro 2) · gatilho: coluna :03"
+   },
    {
     "quando": "2026-08-10T13:44:49.442Z",
     "resultado": "GREEN",
@@ -7625,58 +7631,16 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-28T09:12:51.628Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho odd 1.87) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "16:00",
-     "jogo": "United x Burnley",
-     "odd": 1.98
-    },
-    {
-     "h": "16:03",
-     "jogo": "Brighton x Chelsea",
-     "odd": 1.85
-    },
-    {
-     "h": "16:06",
-     "jogo": "Islington x Wolverhampton",
-     "odd": 1.86
-    }
-   ],
-   "gatilho": "coluna :03",
-   "alvo": {
-    "h": "16:03",
-    "jogo": "Brighton x Chelsea",
-    "odd": 1.85,
-    "unidades": 2,
-    "desde": 1786374236751
-   },
-   "iniciadoEm": 1786373515540,
-   "tiros": [
-    {
-     "h": "16:00",
-     "jogo": "United x Burnley",
-     "odd": 1.98,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "premier": 1786374360944
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786335953634,
    "super": 1786368832752,
-   "premier": 1786369489150,
+   "premier": 1786374360944,
    "copa": 1786325279734
   },
   "dias": {
@@ -7705,7 +7669,7 @@
    "2026-08-07": -8,
    "2026-08-08": -44.3,
    "2026-08-09": 0.4,
-   "2026-08-10": -3
+   "2026-08-10": -2.3
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
