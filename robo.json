@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -136.9,
-  "ciclos": 1207,
-  "greens": 764,
+  "saldo": -135.7,
+  "ciclos": 1208,
+  "greens": 765,
   "redsCiclo": 187,
   "aborts": 0,
   "descartes": 256,
   "historico": [
+   {
+    "quando": "2026-08-11T03:01:01.642Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Itaquera x Buenos Aires @2.15 (tiro 1) · gatilho: time Porto Alegre"
+   },
    {
     "quando": "2026-08-11T02:18:29.045Z",
     "resultado": "GREEN",
@@ -3968,53 +3974,18 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "euro · Eslováquia x Inglaterra @2.1 (tiro 3) · gatilho: coluna :47"
-   },
-   {
-    "quando": "2026-07-29T10:01:47.358Z",
-    "resultado": "GREEN",
-    "unidades": 1.9,
-    "detalhe": "super · Lima x Porto Alegre @2.45 (tiro 2) · gatilho: odd 2.45"
    }
   ],
   "consumidas": {
-   "premier": 1786414708853
+   "premier": 1786414708853,
+   "super": 1786417261442
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:55",
-     "jogo": "Itaquera x Buenos Aires",
-     "odd": 2.15
-    },
-    {
-     "h": "03:58",
-     "jogo": "Porto Alegre x Bogota",
-     "odd": 3
-    },
-    {
-     "h": "04:01",
-     "jogo": "Lima x Rio de Janeiro",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "time Porto Alegre",
-   "alvo": {
-    "h": "03:55",
-    "jogo": "Itaquera x Buenos Aires",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1786416593948
-   },
-   "iniciadoEm": 1786416593948
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786399373451,
    "premier": 1786414708853,
    "euro": 1786397907548,
-   "super": 1786412993639
+   "super": 1786417261442
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4043,7 +4014,8 @@
    "2026-08-07": 9.9,
    "2026-08-08": -1.2,
    "2026-08-09": -16.4,
-   "2026-08-10": 5.5
+   "2026-08-10": 5.5,
+   "2026-08-11": 1.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
