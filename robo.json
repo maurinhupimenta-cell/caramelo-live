@@ -4050,18 +4050,24 @@
    "tipo": "time",
    "chave": "Ucrânia",
    "n": 8,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -140.5,
-  "ciclos": 1210,
-  "greens": 827,
+  "saldo": -139.3,
+  "ciclos": 1211,
+  "greens": 828,
   "redsCiclo": 139,
   "aborts": 0,
   "descartes": 244,
   "historico": [
+   {
+    "quando": "2026-08-11T04:12:08.842Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Senegal x Canadá @2.15 (tiro 1) · gatilho: placar empate 1-1"
+   },
    {
     "quando": "2026-08-11T03:54:51.141Z",
     "resultado": "RED_CICLO",
@@ -7655,53 +7661,18 @@
     "resultado": "GREEN",
     "unidades": 0.7,
     "detalhe": "premier · Southampton x City @1.93 (tiro 3) · gatilho: coluna :39"
-   },
-   {
-    "quando": "2026-07-28T12:38:09.335Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho odd 1.87) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "super": 1786420490944
+   "super": 1786420490944,
+   "copa": 1786421528644
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:58",
-     "jogo": "Senegal x Canadá",
-     "odd": 2.15
-    },
-    {
-     "h": "05:07",
-     "jogo": "Espanha x Haiti",
-     "odd": 2
-    },
-    {
-     "h": "05:10",
-     "jogo": "EUA x Cabo Verde",
-     "odd": 2
-    }
-   ],
-   "gatilho": "placar empate 1-1",
-   "alvo": {
-    "h": "03:58",
-    "jogo": "Senegal x Canadá",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1786421333939
-   },
-   "iniciadoEm": 1786421333939
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786417016547,
    "super": 1786420490944,
    "premier": 1786401129247,
-   "copa": 1786417732042
+   "copa": 1786421528644
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7730,7 +7701,7 @@
    "2026-08-08": -44.3,
    "2026-08-09": 0.4,
    "2026-08-10": -1.6,
-   "2026-08-11": -5.8
+   "2026-08-11": -4.6
   },
   "_gatilhoAtual": {
    "tipo": "placar",
