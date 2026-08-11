@@ -7638,7 +7638,37 @@
    "premier": 1786470300922,
    "super": 1786472272327
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:28",
+     "jogo": "Brasil x Haiti",
+     "odd": 2.02
+    },
+    {
+     "h": "19:31",
+     "jogo": "Argentina x Turquia",
+     "odd": 1.95
+    },
+    {
+     "h": "19:34",
+     "jogo": "França x Costa do Marfim",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "seq RGGRR",
+   "alvo": {
+    "h": "19:28",
+    "jogo": "Brasil x Haiti",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1786473073124
+   },
+   "iniciadoEm": 1786473073124
+  },
   "cooldown": {
    "euro": 1786469877827,
    "super": 1786472272327,
@@ -7676,15 +7706,10 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRRG",
+   "chave": "RGGRR",
    "n": 11,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1786473059827,
-    "gatilho": "seq RGGRR"
-   }
-  }
+  "_obs": {}
  }
 }
