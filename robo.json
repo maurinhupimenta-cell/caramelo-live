@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -129.3,
-  "ciclos": 1218,
-  "greens": 769,
+  "saldo": -127.7,
+  "ciclos": 1219,
+  "greens": 770,
   "redsCiclo": 187,
   "aborts": 0,
   "descartes": 262,
   "historico": [
+   {
+    "quando": "2026-08-11T15:02:47.024Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "premier · Aston x West Ham @2.62 (tiro 1) · gatilho: odd 2.55"
+   },
    {
     "quando": "2026-08-11T13:18:04.029Z",
     "resultado": "GREEN",
@@ -3968,49 +3974,45 @@
     "resultado": "GREEN",
     "unidades": 2.2,
     "detalhe": "euro · Portugal x Albânia @2.6 (tiro 2) · gatilho: seq RGRG"
-   },
-   {
-    "quando": "2026-07-29T15:40:01.594Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "super · Buenos Aires x Medellin @2.2 (tiro 3) · gatilho: odd 2.45"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "premier": 1786460566833
+  },
   "ciclo": {
-   "liga": "premier",
+   "liga": "euro",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "14:30",
-     "jogo": "Aston x West Ham",
-     "odd": 2.62
+     "h": "16:05",
+     "jogo": "Suíça x Croácia",
+     "odd": 2.15
     },
     {
-     "h": "14:33",
-     "jogo": "Brentford x Leeds",
-     "odd": 2.55
+     "h": "16:08",
+     "jogo": "Países Baixos x Espanha",
+     "odd": 1.98
     },
     {
-     "h": "14:36",
-     "jogo": "Everton x City",
-     "odd": 2.02
+     "h": "16:11",
+     "jogo": "França x Bélgica",
+     "odd": 2.05
     }
    ],
-   "gatilho": "odd 2.55",
+   "gatilho": "odd 1.98",
    "alvo": {
-    "h": "14:30",
-    "jogo": "Aston x West Ham",
-    "odd": 2.62,
+    "h": "16:05",
+    "jogo": "Suíça x Croácia",
+    "odd": 2.15,
     "unidades": 1,
-    "desde": 1786460555627
+    "desde": 1786460595528
    },
-   "iniciadoEm": 1786460555627
+   "iniciadoEm": 1786460595528
   },
   "cooldown": {
    "copa": 1786399373451,
-   "premier": 1786454283832,
+   "premier": 1786460566833,
    "euro": 1786422034943,
    "super": 1786422293752
   },
@@ -4042,13 +4044,13 @@
    "2026-08-08": -1.2,
    "2026-08-09": -16.4,
    "2026-08-10": 5.5,
-   "2026-08-11": 7.6
+   "2026-08-11": 9.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.55",
+   "chave": "1.98",
    "n": 8,
-   "start": 1
+   "start": 2
   },
   "_obs": {
    "copa": {
@@ -4058,13 +4060,19 @@
   }
  },
  "ambas": {
-  "saldo": -134.3,
-  "ciclos": 1217,
-  "greens": 833,
+  "saldo": -133.3,
+  "ciclos": 1218,
+  "greens": 834,
   "redsCiclo": 139,
   "aborts": 0,
   "descartes": 245,
   "historico": [
+   {
+    "quando": "2026-08-11T15:02:44.329Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Polônia x Suíça @2 (tiro 1) · gatilho: coluna :32"
+   },
    {
     "quando": "2026-08-11T13:08:51.929Z",
     "resultado": "GREEN",
@@ -7658,18 +7666,44 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "premier · Brighton x Southampton @1.93 (tiro 2) · gatilho: odd 1.8"
-   },
-   {
-    "quando": "2026-07-28T13:53:04.627Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "euro · Espanha x Albânia @2.1 (tiro 1) · gatilho: coluna :53"
    }
   ],
-  "consumidas": {},
-  "ciclo": null,
+  "consumidas": {
+   "euro": 1786460564132
+  },
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:09",
+     "jogo": "Liverpool x Leeds",
+     "odd": 2.15
+    },
+    {
+     "h": "16:12",
+     "jogo": "Tottenham x Watford",
+     "odd": 2.15
+    },
+    {
+     "h": "16:15",
+     "jogo": "Wolverhampton x Leeds",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "coluna :12",
+   "alvo": {
+    "h": "16:09",
+    "jogo": "Liverpool x Leeds",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1786460567126
+   },
+   "iniciadoEm": 1786460567126
+  },
   "cooldown": {
-   "euro": 1786453731724,
+   "euro": 1786460564132,
    "super": 1786452056133,
    "premier": 1786452827429,
    "copa": 1786452536823
@@ -7701,13 +7735,13 @@
    "2026-08-08": -44.3,
    "2026-08-09": 0.4,
    "2026-08-10": -1.6,
-   "2026-08-11": 0.4
+   "2026-08-11": 1.4
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":32",
-   "n": 14,
-   "start": 1
+   "chave": ":12",
+   "n": 15,
+   "start": 2
   },
   "_obs": {}
  }
