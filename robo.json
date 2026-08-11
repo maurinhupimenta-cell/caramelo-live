@@ -7643,7 +7643,37 @@
    "euro": 1786460564132,
    "premier": 1786461125230
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:01",
+     "jogo": "Santos x La Boca",
+     "odd": 2.1
+    },
+    {
+     "h": "16:10",
+     "jogo": "Belo Horizonte x Medellin",
+     "odd": 2.05
+    },
+    {
+     "h": "16:13",
+     "jogo": "Avellaneda x La Boca",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "odd 2.05",
+   "alvo": {
+    "h": "06:01",
+    "jogo": "Santos x La Boca",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1786461131026
+   },
+   "iniciadoEm": 1786461131026
+  },
   "cooldown": {
    "euro": 1786460564132,
    "super": 1786452056133,
