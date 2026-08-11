@@ -4046,20 +4046,26 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Suíça",
-   "n": 9,
-   "start": 3
+   "chave": "Canadá",
+   "n": 10,
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -137.4,
-  "ciclos": 1214,
-  "greens": 830,
+  "saldo": -136.3,
+  "ciclos": 1215,
+  "greens": 831,
   "redsCiclo": 139,
   "aborts": 0,
   "descartes": 245,
   "historico": [
+   {
+    "quando": "2026-08-11T12:48:57.024Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · México x Senegal @2.07 (tiro 1) · gatilho: time Suíça"
+   },
    {
     "quando": "2026-08-11T12:40:56.425Z",
     "resultado": "GREEN",
@@ -7653,53 +7659,18 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :23) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-28T13:38:28.324Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
-   "super": 1786452056133
+   "super": 1786452056133,
+   "copa": 1786452536823
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "13:43",
-     "jogo": "México x Senegal",
-     "odd": 2.07
-    },
-    {
-     "h": "13:46",
-     "jogo": "Costa do Marfim x Suíça",
-     "odd": 1.93
-    },
-    {
-     "h": "13:49",
-     "jogo": "Espanha x França",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "time Suíça",
-   "alvo": {
-    "h": "13:43",
-    "jogo": "México x Senegal",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1786452058733
-   },
-   "iniciadoEm": 1786452058733
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786422891941,
    "super": 1786452056133,
    "premier": 1786401129247,
-   "copa": 1786421528644
+   "copa": 1786452536823
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7728,13 +7699,13 @@
    "2026-08-08": -44.3,
    "2026-08-09": 0.4,
    "2026-08-10": -1.6,
-   "2026-08-11": -2.7
+   "2026-08-11": -1.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Suíça",
-   "n": 9,
-   "start": 3
+   "tipo": "odd",
+   "chave": "1.87",
+   "n": 22,
+   "start": 1
   },
   "_obs": {}
  }
