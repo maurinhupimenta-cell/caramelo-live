@@ -4050,8 +4050,8 @@
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Porto Alegre",
-   "n": 12,
-   "start": 1
+   "n": 11,
+   "start": 2
   },
   "_obs": {}
  },
@@ -7668,7 +7668,37 @@
    "super": 1786420490944,
    "copa": 1786421528644
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:29",
+     "jogo": "França x Espanha",
+     "odd": 1.8
+    },
+    {
+     "h": "05:32",
+     "jogo": "Hungria x Portugal",
+     "odd": 2
+    },
+    {
+     "h": "05:35",
+     "jogo": "Romênia x República Tcheca",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "time Portugal",
+   "alvo": {
+    "h": "05:29",
+    "jogo": "França x Espanha",
+    "odd": 1.8,
+    "unidades": 1,
+    "desde": 1786422058740
+   },
+   "iniciadoEm": 1786422058740
+  },
   "cooldown": {
    "euro": 1786417016547,
    "super": 1786420490944,
@@ -7705,10 +7735,10 @@
    "2026-08-11": -4.6
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 13,
-   "start": 1
+   "tipo": "time",
+   "chave": "Portugal",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  }
