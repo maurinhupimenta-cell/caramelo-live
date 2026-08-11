@@ -3979,7 +3979,37 @@
   "consumidas": {
    "premier": 1786464529726
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:01",
+     "jogo": "Santos x La Boca",
+     "odd": 2.5
+    },
+    {
+     "h": "17:43",
+     "jogo": "Porto Alegre x Santiago",
+     "odd": 2.4
+    },
+    {
+     "h": "17:46",
+     "jogo": "Bogota x Quito",
+     "odd": 2.55
+    }
+   ],
+   "gatilho": "seq GGRGG",
+   "alvo": {
+    "h": "06:01",
+    "jogo": "Santos x La Boca",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1786466640339
+   },
+   "iniciadoEm": 1786466640339
+  },
   "cooldown": {
    "copa": 1786399373451,
    "premier": 1786464529726,
@@ -4017,9 +4047,9 @@
    "2026-08-11": 11.6
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":12",
-   "n": 17,
+   "tipo": "seq",
+   "chave": "GGRGG",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
