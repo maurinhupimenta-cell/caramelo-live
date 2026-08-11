@@ -369,12 +369,18 @@
  },
  "o25": {
   "saldo": -131.1,
-  "ciclos": 1216,
+  "ciclos": 1217,
   "greens": 768,
   "redsCiclo": 187,
   "aborts": 0,
-  "descartes": 261,
+  "descartes": 262,
   "historico": [
+   {
+    "quando": "2026-08-11T13:10:54.929Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-08-11T13:00:13.228Z",
     "resultado": "GREEN_OBS",
@@ -3968,12 +3974,6 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: coluna :24"
-   },
-   {
-    "quando": "2026-07-29T15:17:44.495Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho odd 2.4) — liga REARMADA"
    }
   ],
   "consumidas": {},
@@ -4048,7 +4048,7 @@
    "tipo": "odd",
    "chave": "2.3",
    "n": 13,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
