@@ -7670,8 +7670,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "16:40",
@@ -7691,13 +7691,21 @@
    ],
    "gatilho": "time Inglaterra",
    "alvo": {
-    "h": "16:40",
-    "jogo": "Alemanha x México",
+    "h": "16:43",
+    "jogo": "Inglaterra x Argentina",
     "odd": 1.9,
-    "unidades": 1,
-    "desde": 1786462941528
+    "unidades": 2,
+    "desde": 1786462980529
    },
-   "iniciadoEm": 1786462941528
+   "iniciadoEm": 1786462941528,
+   "tiros": [
+    {
+     "h": "16:40",
+     "jogo": "Alemanha x México",
+     "odd": 1.9,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786460564132,
@@ -7738,7 +7746,7 @@
    "tipo": "time",
    "chave": "Inglaterra",
    "n": 14,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
