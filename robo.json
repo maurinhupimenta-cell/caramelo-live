@@ -4049,18 +4049,24 @@
    "tipo": "time",
    "chave": "Porto Alegre",
    "n": 11,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -135.6,
-  "ciclos": 1205,
-  "greens": 825,
+  "saldo": -134.7,
+  "ciclos": 1206,
+  "greens": 826,
   "redsCiclo": 138,
   "aborts": 0,
   "descartes": 242,
   "historico": [
+   {
+    "quando": "2026-08-11T02:56:56.743Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Portugal x Inglaterra @1.85 (tiro 1) · gatilho: placar 1-0 / 0-1"
+   },
    {
     "quando": "2026-08-11T02:20:54.545Z",
     "resultado": "RED_CICLO",
@@ -7654,51 +7660,16 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho seq RRRGG) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-28T11:58:33.227Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
    "copa": 1786413711944,
-   "super": 1786414854352
+   "super": 1786414854352,
+   "euro": 1786417016547
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:53",
-     "jogo": "Portugal x Inglaterra",
-     "odd": 1.85
-    },
-    {
-     "h": "03:56",
-     "jogo": "Eslovênia x Áustria",
-     "odd": 2.2
-    },
-    {
-     "h": "03:59",
-     "jogo": "Ucrânia x Polônia",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "placar 1-0 / 0-1",
-   "alvo": {
-    "h": "03:53",
-    "jogo": "Portugal x Inglaterra",
-    "odd": 1.85,
-    "unidades": 1,
-    "desde": 1786416655850
-   },
-   "iniciadoEm": 1786416655850
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1786412872250,
+   "euro": 1786417016547,
    "super": 1786414854352,
    "premier": 1786401129247,
    "copa": 1786413711944
@@ -7729,12 +7700,12 @@
    "2026-08-07": -8,
    "2026-08-08": -44.3,
    "2026-08-09": 0.4,
-   "2026-08-10": -2.5
+   "2026-08-10": -1.6
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "1-0 / 0-1",
-   "n": 16,
+   "tipo": "odd",
+   "chave": "1.98",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
