@@ -3977,11 +3977,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1786418805950,
    "euro": 1786422034943,
    "super": 1786422293752
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:33",
+     "jogo": "Watford x Southampton",
+     "odd": 2.4
+    },
+    {
+     "h": "05:36",
+     "jogo": "Liverpool x Leeds",
+     "odd": 2.5
+    },
+    {
+     "h": "05:39",
+     "jogo": "United x City",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "time Leeds",
+   "alvo": {
+    "h": "05:33",
+    "jogo": "Watford x Southampton",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1786422412041
+   },
+   "iniciadoEm": 1786422412041
+  },
   "cooldown": {
    "copa": 1786399373451,
    "premier": 1786418805950,
@@ -4020,9 +4049,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Porto Alegre",
-   "n": 11,
-   "start": 1
+   "chave": "Leeds",
+   "n": 8,
+   "start": 2
   },
   "_obs": {}
  },
@@ -7709,7 +7738,7 @@
    "tipo": "time",
    "chave": "Portugal",
    "n": 8,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
