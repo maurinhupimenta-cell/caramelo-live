@@ -4027,12 +4027,18 @@
  },
  "ambas": {
   "saldo": -137,
-  "ciclos": 1226,
+  "ciclos": 1227,
   "greens": 837,
   "redsCiclo": 140,
   "aborts": 0,
-  "descartes": 249,
+  "descartes": 250,
   "historico": [
+   {
+    "quando": "2026-08-11T16:51:52.432Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho seq RGGRR) — liga REARMADA"
+   },
    {
     "quando": "2026-08-11T16:30:52.731Z",
     "resultado": "GREEN",
@@ -7626,16 +7632,9 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho seq RRRGG) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-28T16:47:51.626Z",
-    "resultado": "GREEN",
-    "unidades": 0.6,
-    "detalhe": "premier · Chelsea x Newcastle @1.9 (tiro 3) · gatilho: coluna :39"
    }
   ],
   "consumidas": {
-   "copa": 1786463336323,
    "super": 1786464713335,
    "euro": 1786465852529
   },
@@ -7681,6 +7680,11 @@
    "n": 23,
    "start": 3
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1786467112431,
+    "gatilho": "seq RGGRR"
+   }
+  }
  }
 }
