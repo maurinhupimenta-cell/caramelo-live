@@ -4027,13 +4027,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -141.8,
-  "ciclos": 1232,
-  "greens": 839,
+  "saldo": -140.9,
+  "ciclos": 1233,
+  "greens": 840,
   "redsCiclo": 141,
   "aborts": 0,
   "descartes": 252,
   "historico": [
+   {
+    "quando": "2026-08-11T17:45:01.030Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Wolverhampton x Islington @1.85 (tiro 1) · gatilho: odd 1.9"
+   },
    {
     "quando": "2026-08-11T17:37:58.025Z",
     "resultado": "GREEN",
@@ -7627,54 +7633,19 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :56) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-28T18:45:52.130Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho time Suíça) — liga REARMADA"
    }
   ],
   "consumidas": {
    "super": 1786468567831,
    "copa": 1786469151431,
-   "euro": 1786469877827
+   "euro": 1786469877827,
+   "premier": 1786470300922
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:42",
-     "jogo": "Wolverhampton x Islington",
-     "odd": 1.85
-    },
-    {
-     "h": "18:45",
-     "jogo": "Brentford x Everton",
-     "odd": 1.9
-    },
-    {
-     "h": "18:48",
-     "jogo": "Aston x Chelsea",
-     "odd": 2
-    }
-   ],
-   "gatilho": "odd 1.9",
-   "alvo": {
-    "h": "18:42",
-    "jogo": "Wolverhampton x Islington",
-    "odd": 1.85,
-    "unidades": 1,
-    "desde": 1786469921027
-   },
-   "iniciadoEm": 1786469921027
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786469877827,
    "super": 1786468567831,
-   "premier": 1786461125230,
+   "premier": 1786470300922,
    "copa": 1786469151431
   },
   "dias": {
@@ -7704,13 +7675,13 @@
    "2026-08-08": -44.3,
    "2026-08-09": 0.4,
    "2026-08-10": -1.6,
-   "2026-08-11": -7.1
+   "2026-08-11": -6.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "1.9",
    "n": 20,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
