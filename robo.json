@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -131.1,
-  "ciclos": 1217,
-  "greens": 768,
+  "saldo": -129.3,
+  "ciclos": 1218,
+  "greens": 769,
   "redsCiclo": 187,
   "aborts": 0,
   "descartes": 262,
   "historico": [
+   {
+    "quando": "2026-08-11T13:18:04.029Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "premier · Tottenham x United @2.4 (tiro 2) · gatilho: coluna :12"
+   },
    {
     "quando": "2026-08-11T13:10:54.929Z",
     "resultado": "DESCARTADO",
@@ -3968,57 +3974,15 @@
     "resultado": "GREEN",
     "unidades": 1.8,
     "detalhe": "super · Buenos Aires x Medellin @2.2 (tiro 3) · gatilho: odd 2.45"
-   },
-   {
-    "quando": "2026-07-29T15:30:19.194Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: coluna :24"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "14:12",
-     "jogo": "Burnley x Chelsea",
-     "odd": 2.1
-    },
-    {
-     "h": "14:15",
-     "jogo": "Tottenham x United",
-     "odd": 2.4
-    },
-    {
-     "h": "14:18",
-     "jogo": "Watford x Newcastle",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "coluna :12",
-   "alvo": {
-    "h": "14:15",
-    "jogo": "Tottenham x United",
-    "odd": 2.4,
-    "unidades": 2,
-    "desde": 1786454092123
-   },
-   "iniciadoEm": 1786453856932,
-   "tiros": [
-    {
-     "h": "14:12",
-     "jogo": "Burnley x Chelsea",
-     "odd": 2.1,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "premier": 1786454283832
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786399373451,
-   "premier": 1786418805950,
+   "premier": 1786454283832,
    "euro": 1786422034943,
    "super": 1786422293752
   },
@@ -4050,7 +4014,7 @@
    "2026-08-08": -1.2,
    "2026-08-09": -16.4,
    "2026-08-10": 5.5,
-   "2026-08-11": 5.8
+   "2026-08-11": 7.6
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -7676,8 +7640,6 @@
   ],
   "consumidas": {
    "super": 1786452056133,
-   "copa": 1786452536823,
-   "premier": 1786452827429,
    "euro": 1786453731724
   },
   "ciclo": null,
