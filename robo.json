@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -134.1,
-  "ciclos": 1210,
-  "greens": 766,
+  "saldo": -132.3,
+  "ciclos": 1211,
+  "greens": 767,
   "redsCiclo": 187,
   "aborts": 0,
   "descartes": 257,
   "historico": [
+   {
+    "quando": "2026-08-11T04:20:35.143Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "euro · República Tcheca x Turquia @2.75 (tiro 1) · gatilho: time Ucrânia"
+   },
    {
     "quando": "2026-08-11T04:08:53.841Z",
     "resultado": "GREEN_OBS",
@@ -3968,52 +3974,47 @@
     "resultado": "GREEN",
     "unidades": 2.2,
     "detalhe": "super · Belo Horizonte x Penarol @2.3 (tiro 3) · gatilho: seq GGRGG"
-   },
-   {
-    "quando": "2026-07-29T11:29:48.361Z",
-    "resultado": "GREEN",
-    "unidades": 2.6,
-    "detalhe": "premier · Southampton x Leicester @2.4 (tiro 3) · gatilho: coluna :24"
    }
   ],
   "consumidas": {
-   "premier": 1786418805950
+   "premier": 1786418805950,
+   "euro": 1786422034943
   },
   "ciclo": {
-   "liga": "euro",
+   "liga": "super",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "05:17",
-     "jogo": "República Tcheca x Turquia",
-     "odd": 2.75
+     "h": "05:22",
+     "jogo": "Medellin x Sao Paulo",
+     "odd": 2.2
     },
     {
-     "h": "05:20",
-     "jogo": "Hungria x Ucrânia",
-     "odd": 2.4
+     "h": "05:25",
+     "jogo": "Lima x Porto Alegre",
+     "odd": 2.45
     },
     {
-     "h": "05:23",
-     "jogo": "Turquia x Países Baixos",
-     "odd": 2.25
+     "h": "05:28",
+     "jogo": "Santiago x Agua Branca",
+     "odd": 2
     }
    ],
-   "gatilho": "time Ucrânia",
+   "gatilho": "time Porto Alegre",
    "alvo": {
-    "h": "05:17",
-    "jogo": "República Tcheca x Turquia",
-    "odd": 2.75,
+    "h": "05:22",
+    "jogo": "Medellin x Sao Paulo",
+    "odd": 2.2,
     "unidades": 1,
-    "desde": 1786421336152
+    "desde": 1786422037345
    },
-   "iniciadoEm": 1786421336152
+   "iniciadoEm": 1786422037345
   },
   "cooldown": {
    "copa": 1786399373451,
    "premier": 1786418805950,
-   "euro": 1786397907548,
+   "euro": 1786422034943,
    "super": 1786417261442
   },
   "dias": {
@@ -4044,13 +4045,13 @@
    "2026-08-08": -1.2,
    "2026-08-09": -16.4,
    "2026-08-10": 5.5,
-   "2026-08-11": 2.8
+   "2026-08-11": 4.6
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Ucrânia",
-   "n": 8,
-   "start": 2
+   "chave": "Porto Alegre",
+   "n": 12,
+   "start": 1
   },
   "_obs": {}
  },
