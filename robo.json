@@ -7641,8 +7641,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "18:16",
@@ -7662,13 +7662,21 @@
    ],
    "gatilho": "time Noruega",
    "alvo": {
-    "h": "18:16",
-    "jogo": "Colômbia x Irã",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1786468578622
+    "h": "18:19",
+    "jogo": "Austrália x Noruega",
+    "odd": 1.87,
+    "unidades": 2,
+    "desde": 1786468855732
    },
-   "iniciadoEm": 1786468578622
+   "iniciadoEm": 1786468578622,
+   "tiros": [
+    {
+     "h": "18:16",
+     "jogo": "Colômbia x Irã",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786465852529,
@@ -7708,8 +7716,8 @@
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Noruega",
-   "n": 13,
-   "start": 3
+   "n": 14,
+   "start": 1
   },
   "_obs": {}
  }
