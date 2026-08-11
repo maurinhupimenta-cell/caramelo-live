@@ -7666,7 +7666,37 @@
    "copa": 1786452536823,
    "premier": 1786452827429
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "14:05",
+     "jogo": "Sérvia x Espanha",
+     "odd": 1.95
+    },
+    {
+     "h": "14:08",
+     "jogo": "Albânia x Romênia",
+     "odd": 2.1
+    },
+    {
+     "h": "14:11",
+     "jogo": "Dinamarca x Portugal",
+     "odd": 2
+    }
+   ],
+   "gatilho": "odd 2.1",
+   "alvo": {
+    "h": "14:05",
+    "jogo": "Sérvia x Espanha",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1786453017622
+   },
+   "iniciadoEm": 1786453017622
+  },
   "cooldown": {
    "euro": 1786422891941,
    "super": 1786452056133,
@@ -7704,9 +7734,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "1.87",
-   "n": 22,
-   "start": 2
+   "chave": "2.1",
+   "n": 24,
+   "start": 3
   },
   "_obs": {}
  }
