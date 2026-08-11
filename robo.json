@@ -7640,8 +7640,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "06:01",
@@ -7661,11 +7661,11 @@
    ],
    "gatilho": "coluna :10",
    "alvo": {
-    "h": "18:10",
-    "jogo": "Sao Paulo x Santos",
-    "odd": 1.93,
-    "unidades": 2,
-    "desde": 1786468316426
+    "h": "18:13",
+    "jogo": "Bogota x Buenos Aires",
+    "odd": 2,
+    "unidades": 4,
+    "desde": 1786468555929
    },
    "iniciadoEm": 1786468314025,
    "tiros": [
@@ -7674,6 +7674,12 @@
      "jogo": "Santos x La Boca",
      "odd": 2.1,
      "unidades": 1
+    },
+    {
+     "h": "18:10",
+     "jogo": "Sao Paulo x Santos",
+     "odd": 1.93,
+     "unidades": 2
     }
    ]
   },
@@ -7713,10 +7719,10 @@
    "2026-08-11": -2.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":10",
-   "n": 18,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.8",
+   "n": 13,
+   "start": 3
   },
   "_obs": {}
  }
