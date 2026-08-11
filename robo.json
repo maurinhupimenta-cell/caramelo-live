@@ -4053,13 +4053,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -138.3,
-  "ciclos": 1213,
-  "greens": 829,
+  "saldo": -137.4,
+  "ciclos": 1214,
+  "greens": 830,
   "redsCiclo": 139,
   "aborts": 0,
   "descartes": 245,
   "historico": [
+   {
+    "quando": "2026-08-11T12:40:56.425Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Asuncion x Buenos Aires @1.87 (tiro 1) · gatilho: odd 2.05"
+   },
    {
     "quando": "2026-08-11T12:39:08.022Z",
     "resultado": "GREEN_OBS",
@@ -7653,49 +7659,45 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-28T13:23:25.732Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho seq RGRGG) — liga REARMADA"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "super": 1786452056133
+  },
   "ciclo": {
-   "liga": "super",
+   "liga": "copa",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "13:37",
-     "jogo": "Asuncion x Buenos Aires",
-     "odd": 1.87
-    },
-    {
-     "h": "13:40",
-     "jogo": "Montevideo x Bogota",
-     "odd": 2.05
-    },
-    {
      "h": "13:43",
-     "jogo": "Santos x Quito",
+     "jogo": "México x Senegal",
      "odd": 2.07
+    },
+    {
+     "h": "13:46",
+     "jogo": "Costa do Marfim x Suíça",
+     "odd": 1.93
+    },
+    {
+     "h": "13:49",
+     "jogo": "Espanha x França",
+     "odd": 1.9
     }
    ],
-   "gatilho": "odd 2.05",
+   "gatilho": "time Suíça",
    "alvo": {
-    "h": "13:37",
-    "jogo": "Asuncion x Buenos Aires",
-    "odd": 1.87,
+    "h": "13:43",
+    "jogo": "México x Senegal",
+    "odd": 2.07,
     "unidades": 1,
-    "desde": 1786451950826
+    "desde": 1786452058733
    },
-   "iniciadoEm": 1786451950826
+   "iniciadoEm": 1786452058733
   },
   "cooldown": {
    "euro": 1786422891941,
-   "super": 1786420490944,
+   "super": 1786452056133,
    "premier": 1786401129247,
    "copa": 1786421528644
   },
@@ -7726,7 +7728,7 @@
    "2026-08-08": -44.3,
    "2026-08-09": 0.4,
    "2026-08-10": -1.6,
-   "2026-08-11": -3.6
+   "2026-08-11": -2.7
   },
   "_gatilhoAtual": {
    "tipo": "time",
