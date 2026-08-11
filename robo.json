@@ -7636,7 +7636,37 @@
    "euro": 1786412872250,
    "copa": 1786413711944
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:10",
+     "jogo": "Quito x Lima",
+     "odd": 1.95
+    },
+    {
+     "h": "03:13",
+     "jogo": "Bogota x La Boca",
+     "odd": 2.2
+    },
+    {
+     "h": "03:16",
+     "jogo": "Guayaquil x La Plata",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "time La Boca",
+   "alvo": {
+    "h": "03:10",
+    "jogo": "Quito x Lima",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1786413837948
+   },
+   "iniciadoEm": 1786413837948
+  },
   "cooldown": {
    "euro": 1786412872250,
    "super": 1786397632039,
@@ -7672,10 +7702,10 @@
    "2026-08-10": 4.5
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-0)",
+   "tipo": "time",
+   "chave": "La Boca",
    "n": 8,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  }
