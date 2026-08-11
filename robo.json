@@ -4051,7 +4051,7 @@
    "tipo": "time",
    "chave": "Leeds",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
@@ -7670,8 +7670,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:29",
@@ -7691,13 +7691,21 @@
    ],
    "gatilho": "time Portugal",
    "alvo": {
-    "h": "05:29",
-    "jogo": "França x Espanha",
-    "odd": 1.8,
-    "unidades": 1,
-    "desde": 1786422058740
+    "h": "05:32",
+    "jogo": "Hungria x Portugal",
+    "odd": 2,
+    "unidades": 2,
+    "desde": 1786422716944
    },
-   "iniciadoEm": 1786422058740
+   "iniciadoEm": 1786422058740,
+   "tiros": [
+    {
+     "h": "05:29",
+     "jogo": "França x Espanha",
+     "odd": 1.8,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786417016547,
