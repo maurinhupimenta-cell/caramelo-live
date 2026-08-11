@@ -4060,13 +4060,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -122.6,
-  "ciclos": 1202,
-  "greens": 824,
+  "saldo": -121.6,
+  "ciclos": 1203,
+  "greens": 825,
   "redsCiclo": 136,
   "aborts": 0,
   "descartes": 242,
   "historico": [
+   {
+    "quando": "2026-08-11T01:47:52.445Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Países Baixos x Geórgia @1.98 (tiro 2) · gatilho: placar 1-0 / 0-1"
+   },
    {
     "quando": "2026-08-10T22:32:09.443Z",
     "resultado": "GREEN",
@@ -7660,56 +7666,14 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-28T11:34:12.428Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :34) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "02:38",
-     "jogo": "Portugal x Albânia",
-     "odd": 2.25
-    },
-    {
-     "h": "02:41",
-     "jogo": "Países Baixos x Geórgia",
-     "odd": 1.98
-    },
-    {
-     "h": "02:44",
-     "jogo": "Bélgica x Áustria",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "placar 1-0 / 0-1",
-   "alvo": {
-    "h": "02:41",
-    "jogo": "Países Baixos x Geórgia",
-    "odd": 1.98,
-    "unidades": 2,
-    "desde": 1786412818242
-   },
-   "iniciadoEm": 1786412153346,
-   "tiros": [
-    {
-     "h": "02:38",
-     "jogo": "Portugal x Albânia",
-     "odd": 2.25,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "euro": 1786412872250
   },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1786389416944,
+   "euro": 1786412872250,
    "super": 1786397632039,
    "premier": 1786401129247,
    "copa": 1786400332650
@@ -7740,7 +7704,7 @@
    "2026-08-07": -8,
    "2026-08-08": -44.3,
    "2026-08-09": 0.4,
-   "2026-08-10": 10.5
+   "2026-08-10": 11.5
   },
   "_gatilhoAtual": {
    "tipo": "placar",
