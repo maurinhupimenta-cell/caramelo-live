@@ -4026,13 +4026,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -133.5,
-  "ciclos": 1209,
+  "saldo": -140.5,
+  "ciclos": 1210,
   "greens": 827,
-  "redsCiclo": 138,
+  "redsCiclo": 139,
   "aborts": 0,
   "descartes": 244,
   "historico": [
+   {
+    "quando": "2026-08-11T03:54:51.141Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: time Santiago"
+   },
    {
     "quando": "2026-08-11T03:37:58.240Z",
     "resultado": "GREEN_OBS",
@@ -7626,66 +7632,17 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho odd 1.87) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-28T12:38:05.227Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
    "euro": 1786417016547,
-   "copa": 1786417732042
+   "copa": 1786417732042,
+   "super": 1786420490944
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:46",
-     "jogo": "Agua Branca x Quito",
-     "odd": 1.98
-    },
-    {
-     "h": "04:49",
-     "jogo": "Rio de Janeiro x Santiago",
-     "odd": 1.95
-    },
-    {
-     "h": "04:52",
-     "jogo": "Belo Horizonte x Itaquera",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "time Santiago",
-   "alvo": {
-    "h": "04:52",
-    "jogo": "Belo Horizonte x Itaquera",
-    "odd": 1.93,
-    "unidades": 4,
-    "desde": 1786420435944
-   },
-   "iniciadoEm": 1786419524449,
-   "tiros": [
-    {
-     "h": "04:46",
-     "jogo": "Agua Branca x Quito",
-     "odd": 1.98,
-     "unidades": 1
-    },
-    {
-     "h": "04:49",
-     "jogo": "Rio de Janeiro x Santiago",
-     "odd": 1.95,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786417016547,
-   "super": 1786414854352,
+   "super": 1786420490944,
    "premier": 1786401129247,
    "copa": 1786417732042
   },
@@ -7716,11 +7673,11 @@
    "2026-08-08": -44.3,
    "2026-08-09": 0.4,
    "2026-08-10": -1.6,
-   "2026-08-11": 1.2
+   "2026-08-11": -5.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Santiago",
+   "chave": "Lima",
    "n": 8,
    "start": 2
   },
