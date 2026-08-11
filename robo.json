@@ -4056,13 +4056,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -139.3,
-  "ciclos": 1211,
-  "greens": 828,
+  "saldo": -138.3,
+  "ciclos": 1212,
+  "greens": 829,
   "redsCiclo": 139,
   "aborts": 0,
   "descartes": 244,
   "historico": [
+   {
+    "quando": "2026-08-11T04:34:52.142Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Hungria x Portugal @2 (tiro 2) · gatilho: time Portugal"
+   },
    {
     "quando": "2026-08-11T04:12:08.842Z",
     "resultado": "GREEN",
@@ -7656,59 +7662,16 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-28T12:44:46.126Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "premier · Southampton x City @1.93 (tiro 3) · gatilho: coluna :39"
    }
   ],
   "consumidas": {
    "super": 1786420490944,
-   "copa": 1786421528644
+   "copa": 1786421528644,
+   "euro": 1786422891941
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "05:29",
-     "jogo": "França x Espanha",
-     "odd": 1.8
-    },
-    {
-     "h": "05:32",
-     "jogo": "Hungria x Portugal",
-     "odd": 2
-    },
-    {
-     "h": "05:35",
-     "jogo": "Romênia x República Tcheca",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "time Portugal",
-   "alvo": {
-    "h": "05:32",
-    "jogo": "Hungria x Portugal",
-    "odd": 2,
-    "unidades": 2,
-    "desde": 1786422716944
-   },
-   "iniciadoEm": 1786422058740,
-   "tiros": [
-    {
-     "h": "05:29",
-     "jogo": "França x Espanha",
-     "odd": 1.8,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1786417016547,
+   "euro": 1786422891941,
    "super": 1786420490944,
    "premier": 1786401129247,
    "copa": 1786421528644
@@ -7740,7 +7703,7 @@
    "2026-08-08": -44.3,
    "2026-08-09": 0.4,
    "2026-08-10": -1.6,
-   "2026-08-11": -4.6
+   "2026-08-11": -3.6
   },
   "_gatilhoAtual": {
    "tipo": "time",
