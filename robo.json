@@ -3980,7 +3980,37 @@
    "premier": 1786464529726,
    "super": 1786466930827
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:59",
+     "jogo": "Polônia x Escócia",
+     "odd": 2.4
+    },
+    {
+     "h": "18:02",
+     "jogo": "Eslovênia x Inglaterra",
+     "odd": 2.4
+    },
+    {
+     "h": "18:05",
+     "jogo": "Escócia x Geórgia",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "seq RGRRG",
+   "alvo": {
+    "h": "17:59",
+    "jogo": "Polônia x Escócia",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1786467472026
+   },
+   "iniciadoEm": 1786467472026
+  },
   "cooldown": {
    "copa": 1786399373451,
    "premier": 1786464529726,
@@ -4019,8 +4049,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GGRGG",
-   "n": 10,
+   "chave": "RGRRG",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
@@ -7638,7 +7668,37 @@
    "super": 1786464713335,
    "euro": 1786465852529
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:58",
+     "jogo": "Senegal x Canadá",
+     "odd": 2.15
+    },
+    {
+     "h": "17:49",
+     "jogo": "Uruguai x Colômbia",
+     "odd": 1.93
+    },
+    {
+     "h": "17:52",
+     "jogo": "Países Baixos x Tunísia",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "seq RGGRR",
+   "alvo": {
+    "h": "03:58",
+    "jogo": "Senegal x Canadá",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1786467114327
+   },
+   "iniciadoEm": 1786467114327
+  },
   "cooldown": {
    "euro": 1786465852529,
    "super": 1786464713335,
@@ -7675,16 +7735,11 @@
    "2026-08-11": -2.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Alemanha",
-   "n": 23,
-   "start": 3
+   "tipo": "seq",
+   "chave": "GRRRG",
+   "n": 11,
+   "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1786467112431,
-    "gatilho": "seq RGGRR"
-   }
-  }
+  "_obs": {}
  }
 }
