@@ -3979,7 +3979,37 @@
   "consumidas": {
    "euro": 1786460916231
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:06",
+     "jogo": "Leicester x Everton",
+     "odd": 2.2
+    },
+    {
+     "h": "17:09",
+     "jogo": "United x Aston",
+     "odd": 2.35
+    },
+    {
+     "h": "17:12",
+     "jogo": "Southampton x Palace",
+     "odd": 2.29
+    }
+   ],
+   "gatilho": "odd 2.35",
+   "alvo": {
+    "h": "17:06",
+    "jogo": "Leicester x Everton",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1786464170921
+   },
+   "iniciadoEm": 1786464170921
+  },
   "cooldown": {
    "copa": 1786399373451,
    "premier": 1786460566833,
@@ -4017,8 +4047,8 @@
    "2026-08-11": 10.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Argélia",
+   "tipo": "odd",
+   "chave": "2.35",
    "n": 10,
    "start": 1
   },
@@ -7634,14 +7664,13 @@
    }
   ],
   "consumidas": {
-   "euro": 1786460564132,
    "premier": 1786461125230,
    "copa": 1786463336323
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "16:58",
@@ -7661,11 +7690,11 @@
    ],
    "gatilho": "odd 1.8",
    "alvo": {
-    "h": "17:01",
-    "jogo": "Montevideo x Santiago",
-    "odd": 1.8,
-    "unidades": 2,
-    "desde": 1786464114032
+    "h": "17:04",
+    "jogo": "Rio de Janeiro x Medellin",
+    "odd": 2.1,
+    "unidades": 4,
+    "desde": 1786464245824
    },
    "iniciadoEm": 1786463817635,
    "tiros": [
@@ -7674,6 +7703,12 @@
      "jogo": "Avellaneda x Guayaquil",
      "odd": 1.93,
      "unidades": 1
+    },
+    {
+     "h": "17:01",
+     "jogo": "Montevideo x Santiago",
+     "odd": 1.8,
+     "unidades": 2
     }
    ]
   },
@@ -7714,8 +7749,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRGGR",
-   "n": 13,
+   "chave": "GGRR",
+   "n": 25,
    "start": 1
   },
   "_obs": {}
