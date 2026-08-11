@@ -3977,11 +3977,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1786464529726,
    "super": 1786466930827,
    "euro": 1786467773233
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:12",
+     "jogo": "Aston x Burnley",
+     "odd": 2.25
+    },
+    {
+     "h": "18:15",
+     "jogo": "Leicester x Chelsea",
+     "odd": 2.25
+    },
+    {
+     "h": "18:18",
+     "jogo": "Wolverhampton x Norwich",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "coluna :12",
+   "alvo": {
+    "h": "18:12",
+    "jogo": "Aston x Burnley",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1786468131324
+   },
+   "iniciadoEm": 1786468131324
+  },
   "cooldown": {
    "copa": 1786399373451,
    "premier": 1786464529726,
@@ -4019,9 +4048,9 @@
    "2026-08-11": 16.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRGR",
-   "n": 11,
+   "tipo": "coluna",
+   "chave": ":12",
+   "n": 18,
    "start": 1
   },
   "_obs": {}
@@ -7639,37 +7668,7 @@
    "super": 1786464713335,
    "euro": 1786465852529
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:58",
-     "jogo": "Senegal x Canadá",
-     "odd": 2.15
-    },
-    {
-     "h": "17:49",
-     "jogo": "Uruguai x Colômbia",
-     "odd": 1.93
-    },
-    {
-     "h": "17:52",
-     "jogo": "Países Baixos x Tunísia",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "seq RGGRR",
-   "alvo": {
-    "h": "03:58",
-    "jogo": "Senegal x Canadá",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1786467114327
-   },
-   "iniciadoEm": 1786467114327
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786465852529,
    "super": 1786464713335,
@@ -7711,6 +7710,11 @@
    "n": 13,
    "start": 3
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1786468016126,
+    "gatilho": "time Noruega"
+   }
+  }
  }
 }
