@@ -7640,7 +7640,37 @@
    "copa": 1786469151431,
    "euro": 1786469877827
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:42",
+     "jogo": "Wolverhampton x Islington",
+     "odd": 1.85
+    },
+    {
+     "h": "18:45",
+     "jogo": "Brentford x Everton",
+     "odd": 1.9
+    },
+    {
+     "h": "18:48",
+     "jogo": "Aston x Chelsea",
+     "odd": 2
+    }
+   ],
+   "gatilho": "odd 1.9",
+   "alvo": {
+    "h": "18:42",
+    "jogo": "Wolverhampton x Islington",
+    "odd": 1.85,
+    "unidades": 1,
+    "desde": 1786469921027
+   },
+   "iniciadoEm": 1786469921027
+  },
   "cooldown": {
    "euro": 1786469877827,
    "super": 1786468567831,
