@@ -7634,12 +7634,41 @@
    }
   ],
   "consumidas": {
-   "super": 1786468567831,
    "copa": 1786469151431,
    "euro": 1786469877827,
    "premier": 1786470300922
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:01",
+     "jogo": "Santos x La Boca",
+     "odd": 2.1
+    },
+    {
+     "h": "19:13",
+     "jogo": "Itaquera x Santos",
+     "odd": 2.07
+    },
+    {
+     "h": "19:16",
+     "jogo": "Lima x Guayaquil",
+     "odd": 1.83
+    }
+   ],
+   "gatilho": "coluna :13",
+   "alvo": {
+    "h": "06:01",
+    "jogo": "Santos x La Boca",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1786472195127
+   },
+   "iniciadoEm": 1786472195127
+  },
   "cooldown": {
    "euro": 1786469877827,
    "super": 1786468567831,
@@ -7676,9 +7705,9 @@
    "2026-08-11": -6.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.9",
-   "n": 20,
+   "tipo": "coluna",
+   "chave": ":13",
+   "n": 19,
    "start": 1
   },
   "_obs": {}
