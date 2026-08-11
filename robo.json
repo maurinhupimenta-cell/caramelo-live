@@ -3979,7 +3979,37 @@
   "consumidas": {
    "premier": 1786414708853
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:55",
+     "jogo": "Itaquera x Buenos Aires",
+     "odd": 2.15
+    },
+    {
+     "h": "03:58",
+     "jogo": "Porto Alegre x Bogota",
+     "odd": 3
+    },
+    {
+     "h": "04:01",
+     "jogo": "Lima x Rio de Janeiro",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time Porto Alegre",
+   "alvo": {
+    "h": "03:55",
+    "jogo": "Itaquera x Buenos Aires",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1786416593948
+   },
+   "iniciadoEm": 1786416593948
+  },
   "cooldown": {
    "copa": 1786399373451,
    "premier": 1786414708853,
@@ -4016,10 +4046,10 @@
    "2026-08-10": 5.5
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 9,
-   "start": 1
+   "tipo": "time",
+   "chave": "Porto Alegre",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  },
@@ -7636,7 +7666,37 @@
    "copa": 1786413711944,
    "super": 1786414854352
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:53",
+     "jogo": "Portugal x Inglaterra",
+     "odd": 1.85
+    },
+    {
+     "h": "03:56",
+     "jogo": "Eslovênia x Áustria",
+     "odd": 2.2
+    },
+    {
+     "h": "03:59",
+     "jogo": "Ucrânia x Polônia",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "placar 1-0 / 0-1",
+   "alvo": {
+    "h": "03:53",
+    "jogo": "Portugal x Inglaterra",
+    "odd": 1.85,
+    "unidades": 1,
+    "desde": 1786416655850
+   },
+   "iniciadoEm": 1786416655850
+  },
   "cooldown": {
    "euro": 1786412872250,
    "super": 1786414854352,
@@ -7672,9 +7732,9 @@
    "2026-08-10": -2.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "La Boca",
-   "n": 8,
+   "tipo": "placar",
+   "chave": "1-0 / 0-1",
+   "n": 16,
    "start": 1
   },
   "_obs": {}
