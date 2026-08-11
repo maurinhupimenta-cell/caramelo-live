@@ -3977,7 +3977,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:43",
+     "jogo": "La Plata x Asuncion",
+     "odd": 2.55
+    },
+    {
+     "h": "02:46",
+     "jogo": "Avellaneda x Porto Alegre",
+     "odd": 2.7
+    },
+    {
+     "h": "02:49",
+     "jogo": "Rio de Janeiro x Agua Branca",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time Porto Alegre",
+   "alvo": {
+    "h": "02:43",
+    "jogo": "La Plata x Asuncion",
+    "odd": 2.55,
+    "unidades": 1,
+    "desde": 1786412574747
+   },
+   "iniciadoEm": 1786412574747
+  },
   "cooldown": {
    "copa": 1786399373451,
    "premier": 1786402800840,
@@ -4014,10 +4044,10 @@
    "2026-08-10": 1.3
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.02",
-   "n": 10,
-   "start": 2
+   "tipo": "time",
+   "chave": "Porto Alegre",
+   "n": 8,
+   "start": 1
   },
   "_obs": {}
  },
