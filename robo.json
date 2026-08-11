@@ -3980,7 +3980,37 @@
    "premier": 1786460566833,
    "euro": 1786460916231
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:58",
+     "jogo": "Senegal x Canadá",
+     "odd": 2.6
+    },
+    {
+     "h": "16:13",
+     "jogo": "Austrália x Equador",
+     "odd": 2.15
+    },
+    {
+     "h": "16:16",
+     "jogo": "Bósnia e Herzegovina x Croácia",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "seq GRRRG",
+   "alvo": {
+    "h": "03:58",
+    "jogo": "Senegal x Canadá",
+    "odd": 2.6,
+    "unidades": 1,
+    "desde": 1786461240629
+   },
+   "iniciadoEm": 1786461240629
+  },
   "cooldown": {
    "copa": 1786399373451,
    "premier": 1786460566833,
@@ -4018,26 +4048,27 @@
    "2026-08-11": 10.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.98",
-   "n": 8,
+   "tipo": "seq",
+   "chave": "GRRRG",
+   "n": 9,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1786461238124,
-    "gatilho": "seq GRRRG"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -132.1,
-  "ciclos": 1219,
+  "ciclos": 1220,
   "greens": 835,
   "redsCiclo": 139,
   "aborts": 0,
-  "descartes": 245,
+  "descartes": 246,
   "historico": [
+   {
+    "quando": "2026-08-11T15:27:13.223Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-08-11T15:12:05.428Z",
     "resultado": "GREEN",
@@ -7631,12 +7662,6 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · Geórgia x Áustria @2.05 (tiro 1) · gatilho: odd 1.87"
-   },
-   {
-    "quando": "2026-07-28T15:00:53.227Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho odd 2.07) — liga REARMADA"
    }
   ],
   "consumidas": {
@@ -7710,10 +7735,10 @@
    "2026-08-11": 2.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.05",
-   "n": 27,
-   "start": 1
+   "tipo": "time",
+   "chave": "Suíça",
+   "n": 11,
+   "start": 2
   },
   "_obs": {}
  }
