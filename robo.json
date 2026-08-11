@@ -4031,13 +4031,19 @@
   }
  },
  "ambas": {
-  "saldo": -133.3,
-  "ciclos": 1218,
-  "greens": 834,
+  "saldo": -132.1,
+  "ciclos": 1219,
+  "greens": 835,
   "redsCiclo": 139,
   "aborts": 0,
   "descartes": 245,
   "historico": [
+   {
+    "quando": "2026-08-11T15:12:05.428Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · Liverpool x Leeds @2.15 (tiro 1) · gatilho: coluna :12"
+   },
    {
     "quando": "2026-08-11T15:02:44.329Z",
     "resultado": "GREEN",
@@ -7631,52 +7637,17 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho odd 2.07) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-28T13:59:43.630Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "premier · Brighton x Southampton @1.93 (tiro 2) · gatilho: odd 1.8"
    }
   ],
   "consumidas": {
-   "euro": 1786460564132
+   "euro": 1786460564132,
+   "premier": 1786461125230
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:09",
-     "jogo": "Liverpool x Leeds",
-     "odd": 2.15
-    },
-    {
-     "h": "16:12",
-     "jogo": "Tottenham x Watford",
-     "odd": 2.15
-    },
-    {
-     "h": "16:15",
-     "jogo": "Wolverhampton x Leeds",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "coluna :12",
-   "alvo": {
-    "h": "16:09",
-    "jogo": "Liverpool x Leeds",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1786460567126
-   },
-   "iniciadoEm": 1786460567126
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786460564132,
    "super": 1786452056133,
-   "premier": 1786452827429,
+   "premier": 1786461125230,
    "copa": 1786452536823
   },
   "dias": {
@@ -7706,13 +7677,13 @@
    "2026-08-08": -44.3,
    "2026-08-09": 0.4,
    "2026-08-10": -1.6,
-   "2026-08-11": 1.4
+   "2026-08-11": 2.6
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.05",
    "n": 27,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
