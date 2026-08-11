@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -120.7,
-  "ciclos": 1227,
-  "greens": 774,
+  "saldo": -119.4,
+  "ciclos": 1228,
+  "greens": 775,
   "redsCiclo": 187,
   "aborts": 0,
   "descartes": 266,
   "historico": [
+   {
+    "quando": "2026-08-11T17:14:48.829Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "premier · Aston x Burnley @2.25 (tiro 1) · gatilho: coluna :12"
+   },
    {
     "quando": "2026-08-11T17:02:53.427Z",
     "resultado": "GREEN",
@@ -3968,52 +3974,17 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "premier · United x Liverpool @2.2 (tiro 1) · gatilho: odd 2.5"
-   },
-   {
-    "quando": "2026-07-29T20:27:56.491Z",
-    "resultado": "GREEN",
-    "unidades": 1.6,
-    "detalhe": "super · Bogota x Santiago @2.3 (tiro 2) · gatilho: seq RRRR"
    }
   ],
   "consumidas": {
    "super": 1786466930827,
-   "euro": 1786467773233
+   "euro": 1786467773233,
+   "premier": 1786468488721
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:12",
-     "jogo": "Aston x Burnley",
-     "odd": 2.25
-    },
-    {
-     "h": "18:15",
-     "jogo": "Leicester x Chelsea",
-     "odd": 2.25
-    },
-    {
-     "h": "18:18",
-     "jogo": "Wolverhampton x Norwich",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "coluna :12",
-   "alvo": {
-    "h": "18:12",
-    "jogo": "Aston x Burnley",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1786468131324
-   },
-   "iniciadoEm": 1786468131324
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786399373451,
-   "premier": 1786464529726,
+   "premier": 1786468488721,
    "euro": 1786467773233,
    "super": 1786466930827
   },
@@ -4045,7 +4016,7 @@
    "2026-08-08": -1.2,
    "2026-08-09": -16.4,
    "2026-08-10": 5.5,
-   "2026-08-11": 16.2
+   "2026-08-11": 17.5
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
@@ -7747,11 +7718,6 @@
    "n": 18,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1786468016126,
-    "gatilho": "time Noruega"
-   }
-  }
+  "_obs": {}
  }
 }
