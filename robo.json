@@ -4049,7 +4049,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":12",
+   "chave": ":15",
    "n": 18,
    "start": 1
   },
@@ -4057,12 +4057,18 @@
  },
  "ambas": {
   "saldo": -137,
-  "ciclos": 1228,
+  "ciclos": 1229,
   "greens": 837,
   "redsCiclo": 140,
   "aborts": 0,
-  "descartes": 251,
+  "descartes": 252,
   "historico": [
+   {
+    "quando": "2026-08-11T17:12:56.323Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Noruega) — liga REARMADA"
+   },
    {
     "quando": "2026-08-11T17:06:54.429Z",
     "resultado": "DESCARTADO",
@@ -7656,12 +7662,6 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "super · Quito x Santos @2.05 (tiro 3) · gatilho: coluna :10"
-   },
-   {
-    "quando": "2026-07-28T17:04:52.025Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: seq RRRGG"
    }
   ],
   "consumidas": {
