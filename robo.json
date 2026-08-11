@@ -7668,8 +7668,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "03:10",
@@ -7689,13 +7689,21 @@
    ],
    "gatilho": "time La Boca",
    "alvo": {
-    "h": "03:10",
-    "jogo": "Quito x Lima",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1786413837948
+    "h": "03:13",
+    "jogo": "Bogota x La Boca",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1786414434845
    },
-   "iniciadoEm": 1786413837948
+   "iniciadoEm": 1786413837948,
+   "tiros": [
+    {
+     "h": "03:10",
+     "jogo": "Quito x Lima",
+     "odd": 1.95,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786412872250,
@@ -7735,7 +7743,7 @@
    "tipo": "time",
    "chave": "La Boca",
    "n": 8,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
