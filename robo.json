@@ -369,12 +369,18 @@
  },
  "o25": {
   "saldo": -126.5,
-  "ciclos": 1220,
+  "ciclos": 1221,
   "greens": 771,
   "redsCiclo": 187,
   "aborts": 0,
-  "descartes": 262,
+  "descartes": 263,
   "historico": [
+   {
+    "quando": "2026-08-11T15:13:58.125Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho seq GRRRG) — liga REARMADA"
+   },
    {
     "quando": "2026-08-11T15:08:36.522Z",
     "resultado": "GREEN",
@@ -3968,12 +3974,6 @@
     "resultado": "GREEN",
     "unidades": 1.8,
     "detalhe": "premier · Leicester x Southampton @2.4 (tiro 2) · gatilho: odd 2.4"
-   },
-   {
-    "quando": "2026-07-29T16:39:00.492Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho odd 2.4) — liga REARMADA"
    }
   ],
   "consumidas": {
@@ -4025,8 +4025,8 @@
   },
   "_obs": {
    "copa": {
-    "desde": 1786453856928,
-    "gatilho": "time Canadá"
+    "desde": 1786461238124,
+    "gatilho": "seq GRRRG"
    }
   }
  },
