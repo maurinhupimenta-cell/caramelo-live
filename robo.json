@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -141.1,
-  "ciclos": 1205,
-  "greens": 762,
+  "saldo": -138.7,
+  "ciclos": 1206,
+  "greens": 763,
   "redsCiclo": 187,
   "aborts": 0,
   "descartes": 256,
   "historico": [
+   {
+    "quando": "2026-08-11T01:49:53.745Z",
+    "resultado": "GREEN",
+    "unidades": 2.4,
+    "detalhe": "super · Avellaneda x Porto Alegre @2.7 (tiro 2) · gatilho: time Porto Alegre"
+   },
    {
     "quando": "2026-08-10T23:00:00.947Z",
     "resultado": "GREEN",
@@ -3968,59 +3974,17 @@
     "resultado": "GREEN",
     "unidades": 2.8,
     "detalhe": "copa · França x África do Sul @2.45 (tiro 3) · gatilho: coluna :49"
-   },
-   {
-    "quando": "2026-07-29T09:37:48.357Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "euro · Bélgica x Alemanha @2.07 (tiro 3) · gatilho: odd 2.2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "02:43",
-     "jogo": "La Plata x Asuncion",
-     "odd": 2.55
-    },
-    {
-     "h": "02:46",
-     "jogo": "Avellaneda x Porto Alegre",
-     "odd": 2.7
-    },
-    {
-     "h": "02:49",
-     "jogo": "Rio de Janeiro x Agua Branca",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "time Porto Alegre",
-   "alvo": {
-    "h": "02:46",
-    "jogo": "Avellaneda x Porto Alegre",
-    "odd": 2.7,
-    "unidades": 2,
-    "desde": 1786412802241
-   },
-   "iniciadoEm": 1786412574747,
-   "tiros": [
-    {
-     "h": "02:43",
-     "jogo": "La Plata x Asuncion",
-     "odd": 2.55,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "super": 1786412993639
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786399373451,
    "premier": 1786402800840,
    "euro": 1786397907548,
-   "super": 1786398476052
+   "super": 1786412993639
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4049,7 +4013,7 @@
    "2026-08-07": 9.9,
    "2026-08-08": -1.2,
    "2026-08-09": -16.4,
-   "2026-08-10": 1.3
+   "2026-08-10": 3.7
   },
   "_gatilhoAtual": {
    "tipo": "time",
