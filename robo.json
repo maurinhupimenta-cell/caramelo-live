@@ -7665,10 +7665,47 @@
    }
   ],
   "consumidas": {
-   "super": 1786464713335,
    "euro": 1786465852529
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "06:01",
+     "jogo": "Santos x La Boca",
+     "odd": 2.1
+    },
+    {
+     "h": "18:10",
+     "jogo": "Sao Paulo x Santos",
+     "odd": 1.93
+    },
+    {
+     "h": "18:13",
+     "jogo": "Bogota x Buenos Aires",
+     "odd": 2
+    }
+   ],
+   "gatilho": "coluna :10",
+   "alvo": {
+    "h": "18:10",
+    "jogo": "Sao Paulo x Santos",
+    "odd": 1.93,
+    "unidades": 2,
+    "desde": 1786468316426
+   },
+   "iniciadoEm": 1786468314025,
+   "tiros": [
+    {
+     "h": "06:01",
+     "jogo": "Santos x La Boca",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1786465852529,
    "super": 1786464713335,
@@ -7705,10 +7742,10 @@
    "2026-08-11": -2.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Noruega",
-   "n": 13,
-   "start": 3
+   "tipo": "coluna",
+   "chave": ":10",
+   "n": 18,
+   "start": 1
   },
   "_obs": {
    "copa": {
