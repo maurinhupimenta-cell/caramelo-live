@@ -7635,7 +7635,37 @@
   "consumidas": {
    "euro": 1786412872250
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:52",
+     "jogo": "Equador x Senegal",
+     "odd": 2.02
+    },
+    {
+     "h": "02:55",
+     "jogo": "EUA x Paraguai",
+     "odd": 2.02
+    },
+    {
+     "h": "02:58",
+     "jogo": "Áustria x Croácia",
+     "odd": 2
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-0)",
+   "alvo": {
+    "h": "02:52",
+    "jogo": "Equador x Senegal",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1786413173542
+   },
+   "iniciadoEm": 1786413173542
+  },
   "cooldown": {
    "euro": 1786412872250,
    "super": 1786397632039,
@@ -7672,7 +7702,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "0-0",
+   "chave": "acima de 1-0 (2-0)",
    "n": 8,
    "start": 1
   },
