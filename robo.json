@@ -7640,8 +7640,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "04:46",
@@ -7661,13 +7661,21 @@
    ],
    "gatilho": "time Santiago",
    "alvo": {
-    "h": "04:46",
-    "jogo": "Agua Branca x Quito",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1786419524449
+    "h": "04:49",
+    "jogo": "Rio de Janeiro x Santiago",
+    "odd": 1.95,
+    "unidades": 2,
+    "desde": 1786420193744
    },
-   "iniciadoEm": 1786419524449
+   "iniciadoEm": 1786419524449,
+   "tiros": [
+    {
+     "h": "04:46",
+     "jogo": "Agua Branca x Quito",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786417016547,
@@ -7708,7 +7716,7 @@
    "tipo": "time",
    "chave": "Santiago",
    "n": 8,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
