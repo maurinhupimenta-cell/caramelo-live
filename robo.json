@@ -369,12 +369,18 @@
  },
  "o25": {
   "saldo": -131.1,
-  "ciclos": 1214,
+  "ciclos": 1215,
   "greens": 768,
   "redsCiclo": 187,
   "aborts": 0,
-  "descartes": 259,
+  "descartes": 260,
   "historico": [
+   {
+    "quando": "2026-08-11T12:54:55.636Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Canadá) — liga REARMADA"
+   },
    {
     "quando": "2026-08-11T12:54:53.229Z",
     "resultado": "DESCARTADO",
@@ -3968,12 +3974,6 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho seq RGRGR) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-29T15:12:55.700Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {},
@@ -3988,25 +3988,25 @@
      "odd": 2.6
     },
     {
-     "h": "13:37",
-     "jogo": "Canadá x Haiti",
-     "odd": 2.25
+     "h": "13:55",
+     "jogo": "Austrália x Paraguai",
+     "odd": 2.35
     },
     {
-     "h": "13:40",
-     "jogo": "Marrocos x Uzbequistão",
-     "odd": 2.35
+     "h": "13:58",
+     "jogo": "Irã x República Tcheca",
+     "odd": 2.62
     }
    ],
-   "gatilho": "seq GRGRR",
+   "gatilho": "time Canadá",
    "alvo": {
     "h": "03:58",
     "jogo": "Senegal x Canadá",
     "odd": 2.6,
     "unidades": 1,
-    "desde": 1786451953831
+    "desde": 1786452954730
    },
-   "iniciadoEm": 1786451953831
+   "iniciadoEm": 1786452954730
   },
   "cooldown": {
    "copa": 1786399373451,
