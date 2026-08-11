@@ -369,12 +369,18 @@
  },
  "o25": {
   "saldo": -119.4,
-  "ciclos": 1228,
+  "ciclos": 1229,
   "greens": 775,
   "redsCiclo": 187,
   "aborts": 0,
-  "descartes": 266,
+  "descartes": 267,
   "historico": [
+   {
+    "quando": "2026-08-11T17:58:54.530Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho seq RGRGR) — liga REARMADA"
+   },
    {
     "quando": "2026-08-11T17:14:48.829Z",
     "resultado": "GREEN",
@@ -3968,12 +3974,6 @@
     "resultado": "GREEN",
     "unidades": 2.4,
     "detalhe": "euro · República Tcheca x Hungria @2.7 (tiro 2) · gatilho: odd 2.7"
-   },
-   {
-    "quando": "2026-07-29T20:41:42.795Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "premier · United x Liverpool @2.2 (tiro 1) · gatilho: odd 2.5"
    }
   ],
   "consumidas": {
@@ -4023,7 +4023,12 @@
    "n": 18,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1786471134529,
+    "gatilho": "seq RGRGR"
+   }
+  }
  },
  "ambas": {
   "saldo": -140.9,
