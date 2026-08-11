@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -135.7,
-  "ciclos": 1208,
-  "greens": 765,
+  "saldo": -134.1,
+  "ciclos": 1209,
+  "greens": 766,
   "redsCiclo": 187,
   "aborts": 0,
   "descartes": 256,
   "historico": [
+   {
+    "quando": "2026-08-11T03:26:46.146Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "premier · Aston x Islington @2.29 (tiro 2) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-08-11T03:01:01.642Z",
     "resultado": "GREEN",
@@ -3968,59 +3974,16 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "copa · Coreia do Sul x Qatar @2.5 (tiro 1) · gatilho: seq RRRR"
-   },
-   {
-    "quando": "2026-07-29T10:52:47.364Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "euro · Eslováquia x Inglaterra @2.1 (tiro 3) · gatilho: coluna :47"
    }
   ],
   "consumidas": {
-   "super": 1786417261442
+   "super": 1786417261442,
+   "premier": 1786418805950
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "04:21",
-     "jogo": "Brighton x Burnley",
-     "odd": 2
-    },
-    {
-     "h": "04:24",
-     "jogo": "Aston x Islington",
-     "odd": 2.29
-    },
-    {
-     "h": "04:27",
-     "jogo": "United x Norwich",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-1)",
-   "alvo": {
-    "h": "04:24",
-    "jogo": "Aston x Islington",
-    "odd": 2.29,
-    "unidades": 2,
-    "desde": 1786418584342
-   },
-   "iniciadoEm": 1786418331650,
-   "tiros": [
-    {
-     "h": "04:21",
-     "jogo": "Brighton x Burnley",
-     "odd": 2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786399373451,
-   "premier": 1786414708853,
+   "premier": 1786418805950,
    "euro": 1786397907548,
    "super": 1786417261442
   },
@@ -4052,7 +4015,7 @@
    "2026-08-08": -1.2,
    "2026-08-09": -16.4,
    "2026-08-10": 5.5,
-   "2026-08-11": 1.2
+   "2026-08-11": 2.8
   },
   "_gatilhoAtual": {
    "tipo": "placar",
