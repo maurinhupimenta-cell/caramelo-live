@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -132.3,
-  "ciclos": 1211,
-  "greens": 767,
+  "saldo": -131.1,
+  "ciclos": 1212,
+  "greens": 768,
   "redsCiclo": 187,
   "aborts": 0,
   "descartes": 257,
   "historico": [
+   {
+    "quando": "2026-08-11T04:24:53.943Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Medellin x Sao Paulo @2.2 (tiro 1) · gatilho: time Porto Alegre"
+   },
    {
     "quando": "2026-08-11T04:20:35.143Z",
     "resultado": "GREEN",
@@ -3968,54 +3974,19 @@
     "resultado": "GREEN",
     "unidades": 2.5,
     "detalhe": "copa · África do Sul x Tunísia @2.75 (tiro 2) · gatilho: time África do Sul"
-   },
-   {
-    "quando": "2026-07-29T11:54:46.964Z",
-    "resultado": "GREEN",
-    "unidades": 2.2,
-    "detalhe": "super · Belo Horizonte x Penarol @2.3 (tiro 3) · gatilho: seq GGRGG"
    }
   ],
   "consumidas": {
    "premier": 1786418805950,
-   "euro": 1786422034943
+   "euro": 1786422034943,
+   "super": 1786422293752
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:22",
-     "jogo": "Medellin x Sao Paulo",
-     "odd": 2.2
-    },
-    {
-     "h": "05:25",
-     "jogo": "Lima x Porto Alegre",
-     "odd": 2.45
-    },
-    {
-     "h": "05:28",
-     "jogo": "Santiago x Agua Branca",
-     "odd": 2
-    }
-   ],
-   "gatilho": "time Porto Alegre",
-   "alvo": {
-    "h": "05:22",
-    "jogo": "Medellin x Sao Paulo",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1786422037345
-   },
-   "iniciadoEm": 1786422037345
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786399373451,
    "premier": 1786418805950,
    "euro": 1786422034943,
-   "super": 1786417261442
+   "super": 1786422293752
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4045,13 +4016,13 @@
    "2026-08-08": -1.2,
    "2026-08-09": -16.4,
    "2026-08-10": 5.5,
-   "2026-08-11": 4.6
+   "2026-08-11": 5.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Porto Alegre",
    "n": 11,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
