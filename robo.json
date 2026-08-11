@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -138.7,
-  "ciclos": 1206,
-  "greens": 763,
+  "saldo": -136.9,
+  "ciclos": 1207,
+  "greens": 764,
   "redsCiclo": 187,
   "aborts": 0,
   "descartes": 256,
   "historico": [
+   {
+    "quando": "2026-08-11T02:18:29.045Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "premier · West Ham x Tottenham @2.75 (tiro 1) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-08-11T01:49:53.745Z",
     "resultado": "GREEN",
@@ -3968,51 +3974,16 @@
     "resultado": "GREEN",
     "unidades": 1.9,
     "detalhe": "super · Lima x Porto Alegre @2.45 (tiro 2) · gatilho: odd 2.45"
-   },
-   {
-    "quando": "2026-07-29T09:54:45.159Z",
-    "resultado": "GREEN",
-    "unidades": 2.8,
-    "detalhe": "copa · França x África do Sul @2.45 (tiro 3) · gatilho: coluna :49"
    }
   ],
   "consumidas": {
-   "super": 1786412993639
+   "super": 1786412993639,
+   "premier": 1786414708853
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:15",
-     "jogo": "West Ham x Tottenham",
-     "odd": 2.75
-    },
-    {
-     "h": "03:18",
-     "jogo": "Southampton x Aston",
-     "odd": 2.5
-    },
-    {
-     "h": "03:21",
-     "jogo": "Palace x Leeds",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-1)",
-   "alvo": {
-    "h": "03:15",
-    "jogo": "West Ham x Tottenham",
-    "odd": 2.75,
-    "unidades": 1,
-    "desde": 1786414320750
-   },
-   "iniciadoEm": 1786414320750
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786399373451,
-   "premier": 1786402800840,
+   "premier": 1786414708853,
    "euro": 1786397907548,
    "super": 1786412993639
   },
@@ -4043,7 +4014,7 @@
    "2026-08-07": 9.9,
    "2026-08-08": -1.2,
    "2026-08-09": -16.4,
-   "2026-08-10": 3.7
+   "2026-08-10": 5.5
   },
   "_gatilhoAtual": {
    "tipo": "placar",
