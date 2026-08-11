@@ -3979,8 +3979,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "02:43",
@@ -4000,13 +4000,21 @@
    ],
    "gatilho": "time Porto Alegre",
    "alvo": {
-    "h": "02:43",
-    "jogo": "La Plata x Asuncion",
-    "odd": 2.55,
-    "unidades": 1,
-    "desde": 1786412574747
+    "h": "02:46",
+    "jogo": "Avellaneda x Porto Alegre",
+    "odd": 2.7,
+    "unidades": 2,
+    "desde": 1786412802241
    },
-   "iniciadoEm": 1786412574747
+   "iniciadoEm": 1786412574747,
+   "tiros": [
+    {
+     "h": "02:43",
+     "jogo": "La Plata x Asuncion",
+     "odd": 2.55,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786399373451,
@@ -7728,7 +7736,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "1-0 / 0-1",
+   "chave": "0-0",
    "n": 8,
    "start": 1
   },
