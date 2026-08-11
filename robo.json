@@ -369,12 +369,18 @@
  },
  "o25": {
   "saldo": -134.1,
-  "ciclos": 1209,
+  "ciclos": 1210,
   "greens": 766,
   "redsCiclo": 187,
   "aborts": 0,
-  "descartes": 256,
+  "descartes": 257,
   "historico": [
+   {
+    "quando": "2026-08-11T04:08:53.841Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho time Ucrânia) — liga REARMADA"
+   },
    {
     "quando": "2026-08-11T03:26:46.146Z",
     "resultado": "GREEN",
@@ -3968,18 +3974,42 @@
     "resultado": "GREEN",
     "unidades": 2.6,
     "detalhe": "premier · Southampton x Leicester @2.4 (tiro 3) · gatilho: coluna :24"
-   },
-   {
-    "quando": "2026-07-29T11:06:48.061Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "copa · Coreia do Sul x Qatar @2.5 (tiro 1) · gatilho: seq RRRR"
    }
   ],
   "consumidas": {
    "premier": 1786418805950
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:17",
+     "jogo": "República Tcheca x Turquia",
+     "odd": 2.75
+    },
+    {
+     "h": "05:20",
+     "jogo": "Hungria x Ucrânia",
+     "odd": 2.4
+    },
+    {
+     "h": "05:23",
+     "jogo": "Turquia x Países Baixos",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "time Ucrânia",
+   "alvo": {
+    "h": "05:17",
+    "jogo": "República Tcheca x Turquia",
+    "odd": 2.75,
+    "unidades": 1,
+    "desde": 1786421336152
+   },
+   "iniciadoEm": 1786421336152
+  },
   "cooldown": {
    "copa": 1786399373451,
    "premier": 1786418805950,
@@ -4017,10 +4047,10 @@
    "2026-08-11": 2.8
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 13,
-   "start": 1
+   "tipo": "time",
+   "chave": "Ucrânia",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  },
@@ -7634,10 +7664,39 @@
    }
   ],
   "consumidas": {
-   "copa": 1786417732042,
    "super": 1786420490944
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:58",
+     "jogo": "Senegal x Canadá",
+     "odd": 2.15
+    },
+    {
+     "h": "05:07",
+     "jogo": "Espanha x Haiti",
+     "odd": 2
+    },
+    {
+     "h": "05:10",
+     "jogo": "EUA x Cabo Verde",
+     "odd": 2
+    }
+   ],
+   "gatilho": "placar empate 1-1",
+   "alvo": {
+    "h": "03:58",
+    "jogo": "Senegal x Canadá",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1786421333939
+   },
+   "iniciadoEm": 1786421333939
+  },
   "cooldown": {
    "euro": 1786417016547,
    "super": 1786420490944,
@@ -7674,10 +7733,10 @@
    "2026-08-11": -5.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Lima",
-   "n": 8,
-   "start": 2
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 13,
+   "start": 1
   },
   "_obs": {}
  }
