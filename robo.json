@@ -7631,7 +7631,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:38",
+     "jogo": "Portugal x Albânia",
+     "odd": 2.25
+    },
+    {
+     "h": "02:41",
+     "jogo": "Países Baixos x Geórgia",
+     "odd": 1.98
+    },
+    {
+     "h": "02:44",
+     "jogo": "Bélgica x Áustria",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "placar 1-0 / 0-1",
+   "alvo": {
+    "h": "02:38",
+    "jogo": "Portugal x Albânia",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1786412153346
+   },
+   "iniciadoEm": 1786412153346
+  },
   "cooldown": {
    "euro": 1786389416944,
    "super": 1786397632039,
@@ -7667,9 +7697,9 @@
    "2026-08-10": 10.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRGG",
-   "n": 11,
+   "tipo": "placar",
+   "chave": "1-0 / 0-1",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
