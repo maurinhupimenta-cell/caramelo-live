@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -126.5,
-  "ciclos": 1224,
-  "greens": 771,
+  "saldo": -125.3,
+  "ciclos": 1225,
+  "greens": 772,
   "redsCiclo": 187,
   "aborts": 0,
   "descartes": 266,
   "historico": [
+   {
+    "quando": "2026-08-11T16:08:50.332Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · Leicester x Everton @2.2 (tiro 1) · gatilho: odd 2.35"
+   },
    {
     "quando": "2026-08-11T15:44:55.132Z",
     "resultado": "DESCARTADO",
@@ -3968,51 +3974,15 @@
     "resultado": "GREEN",
     "unidades": 5,
     "detalhe": "euro · Albânia x República Tcheca @3 (tiro 3) · gatilho: odd 2.7"
-   },
-   {
-    "quando": "2026-07-29T19:14:56.499Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho seq RGGGG) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "euro": 1786460916231
+   "premier": 1786464529726
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:06",
-     "jogo": "Leicester x Everton",
-     "odd": 2.2
-    },
-    {
-     "h": "17:09",
-     "jogo": "United x Aston",
-     "odd": 2.35
-    },
-    {
-     "h": "17:12",
-     "jogo": "Southampton x Palace",
-     "odd": 2.29
-    }
-   ],
-   "gatilho": "odd 2.35",
-   "alvo": {
-    "h": "17:06",
-    "jogo": "Leicester x Everton",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1786464170921
-   },
-   "iniciadoEm": 1786464170921
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786399373451,
-   "premier": 1786460566833,
+   "premier": 1786464529726,
    "euro": 1786460916231,
    "super": 1786422293752
   },
@@ -4044,12 +4014,12 @@
    "2026-08-08": -1.2,
    "2026-08-09": -16.4,
    "2026-08-10": 5.5,
-   "2026-08-11": 10.4
+   "2026-08-11": 11.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.35",
-   "n": 10,
+   "tipo": "coluna",
+   "chave": ":12",
+   "n": 17,
    "start": 1
   },
   "_obs": {}
