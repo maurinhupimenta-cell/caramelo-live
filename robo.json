@@ -4045,26 +4045,27 @@
    "2026-08-11": 5.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Canadá",
-   "n": 10,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.3",
+   "n": 13,
+   "start": 3
   },
-  "_obs": {
-   "premier": {
-    "desde": 1786453213228,
-    "gatilho": "coluna :12"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
-  "saldo": -135.3,
-  "ciclos": 1216,
-  "greens": 832,
+  "saldo": -134.3,
+  "ciclos": 1217,
+  "greens": 833,
   "redsCiclo": 139,
   "aborts": 0,
   "descartes": 245,
   "historico": [
+   {
+    "quando": "2026-08-11T13:08:51.929Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Sérvia x Espanha @1.95 (tiro 1) · gatilho: odd 2.1"
+   },
    {
     "quando": "2026-08-11T12:53:47.628Z",
     "resultado": "GREEN",
@@ -7658,52 +7659,17 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "euro · Espanha x Albânia @2.1 (tiro 1) · gatilho: coluna :53"
-   },
-   {
-    "quando": "2026-07-28T13:49:05.730Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: odd 2.15"
    }
   ],
   "consumidas": {
    "super": 1786452056133,
    "copa": 1786452536823,
-   "premier": 1786452827429
+   "premier": 1786452827429,
+   "euro": 1786453731724
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "14:05",
-     "jogo": "Sérvia x Espanha",
-     "odd": 1.95
-    },
-    {
-     "h": "14:08",
-     "jogo": "Albânia x Romênia",
-     "odd": 2.1
-    },
-    {
-     "h": "14:11",
-     "jogo": "Dinamarca x Portugal",
-     "odd": 2
-    }
-   ],
-   "gatilho": "odd 2.1",
-   "alvo": {
-    "h": "14:05",
-    "jogo": "Sérvia x Espanha",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1786453017622
-   },
-   "iniciadoEm": 1786453017622
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1786422891941,
+   "euro": 1786453731724,
    "super": 1786452056133,
    "premier": 1786452827429,
    "copa": 1786452536823
@@ -7735,13 +7701,13 @@
    "2026-08-08": -44.3,
    "2026-08-09": 0.4,
    "2026-08-10": -1.6,
-   "2026-08-11": -0.6
+   "2026-08-11": 0.4
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.1",
    "n": 24,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
