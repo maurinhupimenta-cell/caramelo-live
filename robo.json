@@ -3979,7 +3979,37 @@
   "consumidas": {
    "super": 1786417261442
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:21",
+     "jogo": "Brighton x Burnley",
+     "odd": 2
+    },
+    {
+     "h": "04:24",
+     "jogo": "Aston x Islington",
+     "odd": 2.29
+    },
+    {
+     "h": "04:27",
+     "jogo": "United x Norwich",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-1)",
+   "alvo": {
+    "h": "04:21",
+    "jogo": "Brighton x Burnley",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1786418331650
+   },
+   "iniciadoEm": 1786418331650
+  },
   "cooldown": {
    "copa": 1786399373451,
    "premier": 1786414708853,
@@ -4017,9 +4047,9 @@
    "2026-08-11": 1.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Porto Alegre",
-   "n": 11,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
@@ -7634,7 +7664,6 @@
    }
   ],
   "consumidas": {
-   "super": 1786414854352,
    "euro": 1786417016547,
    "copa": 1786417732042
   },
