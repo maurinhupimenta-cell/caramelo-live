@@ -4026,13 +4026,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -134.7,
-  "ciclos": 1207,
-  "greens": 826,
+  "saldo": -133.5,
+  "ciclos": 1208,
+  "greens": 827,
   "redsCiclo": 138,
   "aborts": 0,
   "descartes": 243,
   "historico": [
+   {
+    "quando": "2026-08-11T03:08:52.242Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Senegal x Canadá @2.15 (tiro 1) · gatilho: placar empate 1-1"
+   },
    {
     "quando": "2026-08-11T03:07:51.539Z",
     "resultado": "GREEN_OBS",
@@ -7626,24 +7632,19 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-28T12:13:51.728Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho seq GRGRR) — liga REARMADA"
    }
   ],
   "consumidas": {
    "super": 1786414854352,
-   "euro": 1786417016547
+   "euro": 1786417016547,
+   "copa": 1786417732042
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1786417016547,
    "super": 1786414854352,
    "premier": 1786401129247,
-   "copa": 1786413711944
+   "copa": 1786417732042
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7672,19 +7673,14 @@
    "2026-08-08": -44.3,
    "2026-08-09": 0.4,
    "2026-08-10": -1.6,
-   "2026-08-11": 0
+   "2026-08-11": 1.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.98",
-   "n": 8,
+   "tipo": "placar",
+   "chave": "empate 1-1",
+   "n": 9,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1786417671450,
-    "gatilho": "placar empate 1-1"
-   }
-  }
+  "_obs": {}
  }
 }
