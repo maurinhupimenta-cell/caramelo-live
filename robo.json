@@ -7641,8 +7641,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "04:20",
@@ -7662,13 +7662,21 @@
    ],
    "gatilho": "placar 0-0",
    "alvo": {
-    "h": "04:20",
-    "jogo": "Suíça x Albânia",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1786504671593
+    "h": "04:23",
+    "jogo": "Portugal x Eslovênia",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1786504977093
    },
-   "iniciadoEm": 1786504671593
+   "iniciadoEm": 1786504671593,
+   "tiros": [
+    {
+     "h": "04:20",
+     "jogo": "Suíça x Albânia",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786469877827,
@@ -7707,8 +7715,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "0-0",
-   "n": 9,
+   "chave": "goleada (3+)",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
