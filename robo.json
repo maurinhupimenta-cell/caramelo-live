@@ -369,12 +369,18 @@
  },
  "o25": {
   "saldo": -135.4,
-  "ciclos": 1236,
+  "ciclos": 1237,
   "greens": 778,
   "redsCiclo": 190,
   "aborts": 0,
-  "descartes": 268,
+  "descartes": 269,
   "historico": [
+   {
+    "quando": "2026-08-12T04:09:17.991Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho time Montevideo) — liga REARMADA"
+   },
    {
     "quando": "2026-08-12T03:34:53.794Z",
     "resultado": "GREEN",
@@ -3968,12 +3974,6 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "copa · México x Iraque @2.4 (tiro 1) · gatilho: placar empate 1-1"
-   },
-   {
-    "quando": "2026-07-30T02:16:00.995Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: odd 2.4"
    }
   ],
   "consumidas": {
@@ -4024,7 +4024,12 @@
    "n": 10,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1786507757909,
+    "gatilho": "time Montevideo"
+   }
+  }
  },
  "ambas": {
   "saldo": -152.1,
@@ -7709,8 +7714,8 @@
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Porto Alegre",
-   "n": 11,
-   "start": 3
+   "n": 12,
+   "start": 2
   },
   "_obs": {}
  }
