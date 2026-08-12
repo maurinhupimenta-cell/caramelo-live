@@ -369,12 +369,18 @@
  },
  "o25": {
   "saldo": -135.4,
-  "ciclos": 1238,
+  "ciclos": 1239,
   "greens": 778,
   "redsCiclo": 190,
   "aborts": 0,
-  "descartes": 270,
+  "descartes": 271,
   "historico": [
+   {
+    "quando": "2026-08-12T04:24:53.405Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-08-12T04:17:52.701Z",
     "resultado": "GREEN_OBS",
@@ -3968,12 +3974,6 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho time Agua Branca) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-30T02:29:40.695Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "euro · Sérvia x França @2.25 (tiro 1) · gatilho: placar 0-0"
    }
   ],
   "consumidas": {
@@ -4048,17 +4048,12 @@
    "2026-08-12": -5.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Montevideo",
-   "n": 8,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.15",
+   "n": 12,
+   "start": 3
   },
-  "_obs": {
-   "euro": {
-    "desde": 1786508272701,
-    "gatilho": "time Eslováquia"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -150.9,
