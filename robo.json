@@ -4028,12 +4028,18 @@
  },
  "ambas": {
   "saldo": -152.1,
-  "ciclos": 1241,
+  "ciclos": 1242,
   "greens": 843,
   "redsCiclo": 143,
   "aborts": 0,
-  "descartes": 255,
+  "descartes": 256,
   "historico": [
+   {
+    "quando": "2026-08-12T04:05:51.203Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho time Porto Alegre) — liga REARMADA"
+   },
    {
     "quando": "2026-08-12T03:59:52.100Z",
     "resultado": "DESCARTADO",
@@ -7627,12 +7633,6 @@
     "resultado": "GREEN",
     "unidades": 0.8,
     "detalhe": "euro · França x Espanha @1.8 (tiro 1) · gatilho: coluna :23"
-   },
-   {
-    "quando": "2026-07-28T20:41:49.564Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "premier · Palace x Brighton @1.85 (tiro 1) · gatilho: coluna :39"
    }
   ],
   "consumidas": {
@@ -7645,30 +7645,30 @@
    "apostado": 0,
    "plano": [
     {
-     "h": "06:01",
-     "jogo": "Santos x La Boca",
+     "h": "05:07",
+     "jogo": "Montevideo x Medellin",
+     "odd": 1.95
+    },
+    {
+     "h": "05:10",
+     "jogo": "Lima x Porto Alegre",
      "odd": 2.1
     },
     {
-     "h": "04:43",
-     "jogo": "Medellin x Itaquera",
-     "odd": 2.05
-    },
-    {
-     "h": "04:46",
-     "jogo": "Buenos Aires x La Boca",
-     "odd": 1.93
+     "h": "05:13",
+     "jogo": "Rio de Janeiro x La Boca",
+     "odd": 2.02
     }
    ],
-   "gatilho": "odd 2.05",
+   "gatilho": "time Porto Alegre",
    "alvo": {
-    "h": "06:01",
-    "jogo": "Santos x La Boca",
-    "odd": 2.1,
+    "h": "05:07",
+    "jogo": "Montevideo x Medellin",
+    "odd": 1.95,
     "unidades": 1,
-    "desde": 1786506230596
+    "desde": 1786507553399
    },
-   "iniciadoEm": 1786506230596
+   "iniciadoEm": 1786507553399
   },
   "cooldown": {
    "euro": 1786505396692,
@@ -7710,7 +7710,7 @@
    "tipo": "time",
    "chave": "Porto Alegre",
    "n": 11,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
