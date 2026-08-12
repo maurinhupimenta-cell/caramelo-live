@@ -3979,8 +3979,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "02:35",
@@ -4000,13 +4000,21 @@
    ],
    "gatilho": "time Suíça",
    "alvo": {
-    "h": "02:35",
-    "jogo": "Países Baixos x Dinamarca",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1786498011202
+    "h": "02:38",
+    "jogo": "Suíça x Croácia",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1786498739403
    },
-   "iniciadoEm": 1786498011202
+   "iniciadoEm": 1786498011202,
+   "tiros": [
+    {
+     "h": "02:35",
+     "jogo": "Países Baixos x Dinamarca",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786471316928,
@@ -4048,7 +4056,7 @@
    "tipo": "time",
    "chave": "Suíça",
    "n": 8,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
