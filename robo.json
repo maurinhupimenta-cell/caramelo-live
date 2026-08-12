@@ -369,12 +369,18 @@
  },
  "o25": {
   "saldo": -139.8,
-  "ciclos": 1243,
+  "ciclos": 1244,
   "greens": 780,
   "redsCiclo": 191,
   "aborts": 0,
-  "descartes": 272,
+  "descartes": 273,
   "historico": [
+   {
+    "quando": "2026-08-12T05:53:51.693Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho seq RRGR) — liga REARMADA"
+   },
    {
     "quando": "2026-08-12T04:44:51.599Z",
     "resultado": "GREEN",
@@ -3968,12 +3974,6 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · Burnley x Everton @2.05 (tiro 1) · gatilho: time Tottenham"
-   },
-   {
-    "quando": "2026-07-30T03:51:53.398Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: placar empate 1-1"
    }
   ],
   "consumidas": {},
@@ -4059,7 +4059,12 @@
    "n": 8,
    "start": 3
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1786514031693,
+    "gatilho": "seq RRGR"
+   }
+  }
  },
  "ambas": {
   "saldo": -149.2,
