@@ -3979,7 +3979,37 @@
   "consumidas": {
    "euro": 1786499070600
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:22",
+     "jogo": "Alemanha x Tunísia",
+     "odd": 2.45
+    },
+    {
+     "h": "03:25",
+     "jogo": "Qatar x Curação",
+     "odd": 2.2
+    },
+    {
+     "h": "03:28",
+     "jogo": "Suécia x Irã",
+     "odd": 2.87
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-0)",
+   "alvo": {
+    "h": "03:22",
+    "jogo": "Alemanha x Tunísia",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1786501317098
+   },
+   "iniciadoEm": 1786501317098
+  },
   "cooldown": {
    "copa": 1786471316928,
    "premier": 1786468488721,
@@ -4017,8 +4047,8 @@
    "2026-08-11": 20.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Suíça",
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-0)",
    "n": 8,
    "start": 1
   },
@@ -7634,7 +7664,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:19",
+     "jogo": "Jordânia x Senegal",
+     "odd": 2.05
+    },
+    {
+     "h": "03:22",
+     "jogo": "Alemanha x Tunísia",
+     "odd": 2.1
+    },
+    {
+     "h": "03:25",
+     "jogo": "Qatar x Curação",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "odd 2.1",
+   "alvo": {
+    "h": "03:19",
+    "jogo": "Jordânia x Senegal",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1786501241998
+   },
+   "iniciadoEm": 1786501241998
+  },
   "cooldown": {
    "euro": 1786469877827,
    "super": 1786472272327,
@@ -7671,9 +7731,9 @@
    "2026-08-11": -4.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGG",
-   "n": 11,
+   "tipo": "odd",
+   "chave": "2.1",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
