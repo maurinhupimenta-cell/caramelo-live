@@ -4028,13 +4028,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -150,
-  "ciclos": 1245,
-  "greens": 845,
+  "saldo": -149.2,
+  "ciclos": 1246,
+  "greens": 846,
   "redsCiclo": 143,
   "aborts": 0,
   "descartes": 257,
   "historico": [
+   {
+    "quando": "2026-08-12T05:21:52.294Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "super · Agua Branca x Buenos Aires @1.83 (tiro 1) · gatilho: odd 2.15"
+   },
    {
     "quando": "2026-08-12T04:38:00.492Z",
     "resultado": "GREEN",
@@ -7628,51 +7634,16 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · Marrocos x Uruguai @1.98 (tiro 1) · gatilho: time Suíça"
-   },
-   {
-    "quando": "2026-07-28T22:34:44.765Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "super · Asuncion x Itaquera @2 (tiro 1) · gatilho: seq RGRRG"
    }
   ],
   "consumidas": {
-   "euro": 1786509480294
+   "euro": 1786509480294,
+   "super": 1786512112099
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:19",
-     "jogo": "Agua Branca x Buenos Aires",
-     "odd": 1.83
-    },
-    {
-     "h": "06:22",
-     "jogo": "La Plata x Lima",
-     "odd": 2.15
-    },
-    {
-     "h": "06:25",
-     "jogo": "Santiago x Belo Horizonte",
-     "odd": 1.83
-    }
-   ],
-   "gatilho": "odd 2.15",
-   "alvo": {
-    "h": "06:19",
-    "jogo": "Agua Branca x Buenos Aires",
-    "odd": 1.83,
-    "unidades": 1,
-    "desde": 1786511803594
-   },
-   "iniciadoEm": 1786511803594
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786509480294,
-   "super": 1786507975702,
+   "super": 1786512112099,
    "premier": 1786470300922,
    "copa": 1786505811400
   },
@@ -7704,13 +7675,13 @@
    "2026-08-09": 0.4,
    "2026-08-10": -1.6,
    "2026-08-11": -11.1,
-   "2026-08-12": -4.2
+   "2026-08-12": -3.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.15",
-   "n": 12,
-   "start": 3
+   "tipo": "time",
+   "chave": "Belo Horizonte",
+   "n": 13,
+   "start": 2
   },
   "_obs": {}
  }
