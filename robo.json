@@ -3980,7 +3980,45 @@
    "euro": 1786499070600,
    "copa": 1786502032098
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "03:34",
+     "jogo": "Santiago x Bogota",
+     "odd": 2.29
+    },
+    {
+     "h": "03:37",
+     "jogo": "Penarol x Quito",
+     "odd": 2.45
+    },
+    {
+     "h": "03:40",
+     "jogo": "La Boca x La Plata",
+     "odd": 2.7
+    }
+   ],
+   "gatilho": "time Penarol",
+   "alvo": {
+    "h": "03:37",
+    "jogo": "Penarol x Quito",
+    "odd": 2.45,
+    "unidades": 2,
+    "desde": 1786502273294
+   },
+   "iniciadoEm": 1786502035198,
+   "tiros": [
+    {
+     "h": "03:34",
+     "jogo": "Santiago x Bogota",
+     "odd": 2.29,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1786502032098,
    "premier": 1786468488721,
@@ -4021,7 +4059,7 @@
    "tipo": "time",
    "chave": "Penarol",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
