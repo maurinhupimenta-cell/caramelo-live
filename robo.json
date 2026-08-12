@@ -3980,7 +3980,37 @@
    "euro": 1786509715104,
    "copa": 1786509777799
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:40",
+     "jogo": "Sao Paulo x Avellaneda",
+     "odd": 2.15
+    },
+    {
+     "h": "05:43",
+     "jogo": "Rio de Janeiro x Montevideo",
+     "odd": 2.15
+    },
+    {
+     "h": "05:46",
+     "jogo": "Penarol x Belo Horizonte",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "time Montevideo",
+   "alvo": {
+    "h": "05:40",
+    "jogo": "Sao Paulo x Avellaneda",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1786509831297
+   },
+   "iniciadoEm": 1786509831297
+  },
   "cooldown": {
    "copa": 1786509777799,
    "premier": 1786468488721,
