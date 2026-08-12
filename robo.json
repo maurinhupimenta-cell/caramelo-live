@@ -3977,7 +3977,6 @@
    }
   ],
   "consumidas": {
-   "super": 1786502588794,
    "euro": 1786504671293,
    "copa": 1786505693597
   },
@@ -7640,7 +7639,37 @@
    "euro": 1786505396692,
    "copa": 1786505811400
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:01",
+     "jogo": "Santos x La Boca",
+     "odd": 2.1
+    },
+    {
+     "h": "04:43",
+     "jogo": "Medellin x Itaquera",
+     "odd": 2.05
+    },
+    {
+     "h": "04:46",
+     "jogo": "Buenos Aires x La Boca",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "odd 2.05",
+   "alvo": {
+    "h": "06:01",
+    "jogo": "Santos x La Boca",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1786506230596
+   },
+   "iniciadoEm": 1786506230596
+  },
   "cooldown": {
    "euro": 1786505396692,
    "super": 1786472272327,
@@ -7678,9 +7707,9 @@
    "2026-08-12": -6.3
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 10,
+   "tipo": "odd",
+   "chave": "2.05",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
