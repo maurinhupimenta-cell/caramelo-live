@@ -7671,8 +7671,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:07",
@@ -7692,13 +7692,21 @@
    ],
    "gatilho": "time Porto Alegre",
    "alvo": {
-    "h": "05:07",
-    "jogo": "Montevideo x Medellin",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1786507553399
+    "h": "05:10",
+    "jogo": "Lima x Porto Alegre",
+    "odd": 2.1,
+    "unidades": 2,
+    "desde": 1786507973298
    },
-   "iniciadoEm": 1786507553399
+   "iniciadoEm": 1786507553399,
+   "tiros": [
+    {
+     "h": "05:07",
+     "jogo": "Montevideo x Medellin",
+     "odd": 1.95,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786505396692,
@@ -7738,9 +7746,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Porto Alegre",
-   "n": 12,
-   "start": 2
+   "chave": "Agua Branca",
+   "n": 9,
+   "start": 3
   },
   "_obs": {}
  }
