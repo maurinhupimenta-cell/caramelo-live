@@ -369,12 +369,18 @@
  },
  "o25": {
   "saldo": -137,
-  "ciclos": 1234,
+  "ciclos": 1235,
   "greens": 777,
   "redsCiclo": 190,
   "aborts": 0,
-  "descartes": 267,
+  "descartes": 268,
   "historico": [
+   {
+    "quando": "2026-08-12T03:33:53.204Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho placar acima de 1-0 (2-1)) — liga REARMADA"
+   },
    {
     "quando": "2026-08-12T03:17:51.494Z",
     "resultado": "RED_CICLO",
@@ -3968,16 +3974,9 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "premier · Brentford x Brighton @2.1 (tiro 2) · gatilho: placar goleada (3+)"
-   },
-   {
-    "quando": "2026-07-29T23:08:30.501Z",
-    "resultado": "GREEN",
-    "unidades": 2,
-    "detalhe": "super · Itaquera x Penarol @2.5 (tiro 2) · gatilho: seq RRRR"
    }
   ],
   "consumidas": {
-   "copa": 1786502032098,
    "super": 1786502588794,
    "euro": 1786504671293
   },
@@ -4025,7 +4024,12 @@
    "n": 10,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1786505633204,
+    "gatilho": "placar acima de 1-0 (2-1)"
+   }
+  }
  },
  "ambas": {
   "saldo": -152.8,
@@ -7639,7 +7643,37 @@
   "consumidas": {
    "euro": 1786505396692
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:28",
+     "jogo": "Senegal x República Tcheca",
+     "odd": 2.2
+    },
+    {
+     "h": "04:31",
+     "jogo": "Egito x Bósnia e Herzegovina",
+     "odd": 1.86
+    },
+    {
+     "h": "04:34",
+     "jogo": "Austrália x Colômbia",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-1)",
+   "alvo": {
+    "h": "04:28",
+    "jogo": "Senegal x República Tcheca",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1786505399693
+   },
+   "iniciadoEm": 1786505399693
+  },
   "cooldown": {
    "euro": 1786505396692,
    "super": 1786472272327,
@@ -7677,9 +7711,9 @@
    "2026-08-12": -7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.05",
-   "n": 9,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
