@@ -3979,8 +3979,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:32",
@@ -4000,13 +4000,21 @@
    ],
    "gatilho": "odd 2.15",
    "alvo": {
-    "h": "05:32",
-    "jogo": "Sérvia x Escócia",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1786508695698
+    "h": "05:35",
+    "jogo": "Inglaterra x Ucrânia",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1786509477096
    },
-   "iniciadoEm": 1786508695698
+   "iniciadoEm": 1786508695698,
+   "tiros": [
+    {
+     "h": "05:32",
+     "jogo": "Sérvia x Escócia",
+     "odd": 2.4,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786505693597,
@@ -4046,10 +4054,10 @@
    "2026-08-12": -5.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.15",
-   "n": 12,
-   "start": 1
+   "tipo": "time",
+   "chave": "Suíça",
+   "n": 15,
+   "start": 2
   },
   "_obs": {}
  },
