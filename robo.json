@@ -4028,12 +4028,18 @@
  },
  "ambas": {
   "saldo": -152.1,
-  "ciclos": 1240,
+  "ciclos": 1241,
   "greens": 843,
   "redsCiclo": 143,
   "aborts": 0,
-  "descartes": 254,
+  "descartes": 255,
   "historico": [
+   {
+    "quando": "2026-08-12T03:59:52.100Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-08-12T03:36:51.596Z",
     "resultado": "GREEN",
@@ -7627,12 +7633,6 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "premier · Palace x Brighton @1.85 (tiro 1) · gatilho: coluna :39"
-   },
-   {
-    "quando": "2026-07-28T20:37:10.966Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Nova Zelândia x Coreia do Sul @2.05 (tiro 1) · gatilho: time Suíça"
    }
   ],
   "consumidas": {
@@ -7707,9 +7707,9 @@
    "2026-08-12": -6.3
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.05",
-   "n": 9,
+   "tipo": "time",
+   "chave": "Porto Alegre",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
