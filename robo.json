@@ -3976,9 +3976,7 @@
     "detalhe": "super · Belo Horizonte x Montevideo @2.05 (tiro 2) · gatilho: time Agua Branca"
    }
   ],
-  "consumidas": {
-   "copa": 1786505693597
-  },
+  "consumidas": {},
   "ciclo": {
    "liga": "euro",
    "degrau": 0,
@@ -4057,12 +4055,18 @@
  },
  "ambas": {
   "saldo": -150.9,
-  "ciclos": 1243,
+  "ciclos": 1244,
   "greens": 844,
   "redsCiclo": 143,
   "aborts": 0,
-  "descartes": 256,
+  "descartes": 257,
   "historico": [
+   {
+    "quando": "2026-08-12T04:29:56.816Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho odd 2.05) — liga REARMADA"
+   },
    {
     "quando": "2026-08-12T04:12:55.896Z",
     "resultado": "GREEN",
@@ -7656,19 +7660,43 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "premier · Aston x Brighton @1.93 (tiro 1) · gatilho: odd 1.8"
-   },
-   {
-    "quando": "2026-07-28T21:33:46.167Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "super · Bogota x Asuncion @2.2 (tiro 2) · gatilho: coluna :25"
    }
   ],
   "consumidas": {
    "copa": 1786505811400,
    "super": 1786507975702
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:32",
+     "jogo": "Sérvia x Escócia",
+     "odd": 2.05
+    },
+    {
+     "h": "05:35",
+     "jogo": "Inglaterra x Ucrânia",
+     "odd": 1.95
+    },
+    {
+     "h": "05:38",
+     "jogo": "Albânia x Romênia",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "odd 2.05",
+   "alvo": {
+    "h": "05:32",
+    "jogo": "Sérvia x Escócia",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1786508998997
+   },
+   "iniciadoEm": 1786508998997
+  },
   "cooldown": {
    "euro": 1786505396692,
    "super": 1786507975702,
@@ -7706,10 +7734,10 @@
    "2026-08-12": -5.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Agua Branca",
-   "n": 9,
-   "start": 3
+   "tipo": "odd",
+   "chave": "2.05",
+   "n": 12,
+   "start": 1
   },
   "_obs": {}
  }
