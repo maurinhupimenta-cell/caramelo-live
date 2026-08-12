@@ -369,12 +369,18 @@
  },
  "o25": {
   "saldo": -135.4,
-  "ciclos": 1239,
+  "ciclos": 1240,
   "greens": 778,
   "redsCiclo": 190,
   "aborts": 0,
-  "descartes": 271,
+  "descartes": 272,
   "historico": [
+   {
+    "quando": "2026-08-12T04:28:53.599Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho time Buenos Aires) — liga REARMADA"
+   },
    {
     "quando": "2026-08-12T04:24:53.405Z",
     "resultado": "DESCARTADO",
@@ -3968,47 +3974,41 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "super · Belo Horizonte x Montevideo @2.05 (tiro 2) · gatilho: time Agua Branca"
-   },
-   {
-    "quando": "2026-07-30T03:16:26.093Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho time Agua Branca) — liga REARMADA"
    }
   ],
   "consumidas": {
    "copa": 1786505693597
   },
   "ciclo": {
-   "liga": "super",
+   "liga": "euro",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "06:01",
-     "jogo": "Santos x La Boca",
-     "odd": 2.5
+     "h": "05:32",
+     "jogo": "Sérvia x Escócia",
+     "odd": 2.4
     },
     {
-     "h": "05:07",
-     "jogo": "Montevideo x Medellin",
-     "odd": 2.25
+     "h": "05:35",
+     "jogo": "Inglaterra x Ucrânia",
+     "odd": 2.15
     },
     {
-     "h": "05:10",
-     "jogo": "Lima x Porto Alegre",
+     "h": "05:38",
+     "jogo": "Albânia x Romênia",
      "odd": 2.45
     }
    ],
-   "gatilho": "time Montevideo",
+   "gatilho": "odd 2.15",
    "alvo": {
-    "h": "06:01",
-    "jogo": "Santos x La Boca",
-    "odd": 2.5,
+    "h": "05:32",
+    "jogo": "Sérvia x Escócia",
+    "odd": 2.4,
     "unidades": 1,
-    "desde": 1786507791093
+    "desde": 1786508695698
    },
-   "iniciadoEm": 1786507791093
+   "iniciadoEm": 1786508695698
   },
   "cooldown": {
    "copa": 1786505693597,
@@ -4051,9 +4051,14 @@
    "tipo": "odd",
    "chave": "2.15",
    "n": 12,
-   "start": 3
+   "start": 2
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1786508933599,
+    "gatilho": "time Buenos Aires"
+   }
+  }
  },
  "ambas": {
   "saldo": -150.9,
