@@ -3982,8 +3982,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "04:08",
@@ -4003,13 +4003,21 @@
    ],
    "gatilho": "time Escócia",
    "alvo": {
-    "h": "04:08",
-    "jogo": "Dinamarca x Eslovênia",
-    "odd": 2.8,
-    "unidades": 1,
-    "desde": 1786503593394
+    "h": "04:11",
+    "jogo": "Hungria x Escócia",
+    "odd": 2.35,
+    "unidades": 2,
+    "desde": 1786504310703
    },
-   "iniciadoEm": 1786503593394
+   "iniciadoEm": 1786503593394,
+   "tiros": [
+    {
+     "h": "04:08",
+     "jogo": "Dinamarca x Eslovênia",
+     "odd": 2.8,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786502032098,
@@ -4048,10 +4056,10 @@
    "2026-08-11": 6.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Escócia",
-   "n": 9,
-   "start": 3
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-0)",
+   "n": 11,
+   "start": 1
   },
   "_obs": {}
  },
