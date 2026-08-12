@@ -3979,8 +3979,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "06:49",
@@ -4000,13 +4000,21 @@
    ],
    "gatilho": "odd 2.3",
    "alvo": {
-    "h": "06:49",
-    "jogo": "RD Congo x Suécia",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1786513378695
+    "h": "06:52",
+    "jogo": "Alemanha x Gana",
+    "odd": 2.3,
+    "unidades": 2,
+    "desde": 1786513912096
    },
-   "iniciadoEm": 1786513378695
+   "iniciadoEm": 1786513378695,
+   "tiros": [
+    {
+     "h": "06:49",
+     "jogo": "RD Congo x Suécia",
+     "odd": 2.4,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786509777799,
@@ -4046,8 +4054,8 @@
    "2026-08-12": -9.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.3",
+   "tipo": "time",
+   "chave": "Bósnia e Herzegovina",
    "n": 8,
    "start": 3
   },
