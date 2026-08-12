@@ -3980,7 +3980,37 @@
    "euro": 1786504671293,
    "copa": 1786505693597
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:01",
+     "jogo": "Santos x La Boca",
+     "odd": 2.5
+    },
+    {
+     "h": "05:07",
+     "jogo": "Montevideo x Medellin",
+     "odd": 2.25
+    },
+    {
+     "h": "05:10",
+     "jogo": "Lima x Porto Alegre",
+     "odd": 2.45
+    }
+   ],
+   "gatilho": "time Montevideo",
+   "alvo": {
+    "h": "06:01",
+    "jogo": "Santos x La Boca",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1786507791093
+   },
+   "iniciadoEm": 1786507791093
+  },
   "cooldown": {
    "copa": 1786505693597,
    "premier": 1786468488721,
@@ -4019,17 +4049,12 @@
    "2026-08-12": -5.4
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 10,
+   "tipo": "time",
+   "chave": "Montevideo",
+   "n": 8,
    "start": 1
   },
-  "_obs": {
-   "super": {
-    "desde": 1786507757909,
-    "gatilho": "time Montevideo"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -152.1,
