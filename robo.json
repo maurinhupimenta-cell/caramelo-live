@@ -7641,8 +7641,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "04:20",
@@ -7662,11 +7662,11 @@
    ],
    "gatilho": "placar 0-0",
    "alvo": {
-    "h": "04:23",
-    "jogo": "Portugal x Eslovênia",
-    "odd": 2.25,
-    "unidades": 2,
-    "desde": 1786504977093
+    "h": "04:26",
+    "jogo": "Geórgia x Escócia",
+    "odd": 2,
+    "unidades": 4,
+    "desde": 1786505154903
    },
    "iniciadoEm": 1786504671593,
    "tiros": [
@@ -7675,6 +7675,12 @@
      "jogo": "Suíça x Albânia",
      "odd": 2.15,
      "unidades": 1
+    },
+    {
+     "h": "04:23",
+     "jogo": "Portugal x Eslovênia",
+     "odd": 2.25,
+     "unidades": 2
     }
    ]
   },
@@ -7714,10 +7720,10 @@
    "2026-08-11": -11.1
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 13,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.05",
+   "n": 9,
+   "start": 2
   },
   "_obs": {}
  }
