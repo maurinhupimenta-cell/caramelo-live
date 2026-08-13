@@ -3980,7 +3980,37 @@
    "copa": 1786647974389,
    "premier": 1786648695385
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:04",
+     "jogo": "Avellaneda x Itaquera",
+     "odd": 2.35
+    },
+    {
+     "h": "21:07",
+     "jogo": "Sao Paulo x La Plata",
+     "odd": 2.35
+    },
+    {
+     "h": "21:10",
+     "jogo": "Buenos Aires x Santos",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "seq RGRGG",
+   "alvo": {
+    "h": "21:04",
+    "jogo": "Avellaneda x Itaquera",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1786651451094
+   },
+   "iniciadoEm": 1786651451094
+  },
   "cooldown": {
    "copa": 1786647974389,
    "premier": 1786648695385,
@@ -4020,9 +4050,9 @@
    "2026-08-13": 0.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.35",
-   "n": 14,
+   "tipo": "seq",
+   "chave": "RGRGG",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
@@ -7712,7 +7742,7 @@
    "tipo": "time",
    "chave": "Tunísia",
    "n": 13,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
