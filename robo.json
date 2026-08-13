@@ -7675,8 +7675,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "18:10",
@@ -7696,13 +7696,21 @@
    ],
    "gatilho": "time Haiti",
    "alvo": {
-    "h": "18:10",
-    "jogo": "Senegal x Jordânia",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1786641019984
+    "h": "18:13",
+    "jogo": "Uruguai x Haiti",
+    "odd": 1.98,
+    "unidades": 2,
+    "desde": 1786641256389
    },
-   "iniciadoEm": 1786641019984
+   "iniciadoEm": 1786641019984,
+   "tiros": [
+    {
+     "h": "18:10",
+     "jogo": "Senegal x Jordânia",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786509480294,
@@ -7745,7 +7753,7 @@
    "tipo": "time",
    "chave": "Haiti",
    "n": 10,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
