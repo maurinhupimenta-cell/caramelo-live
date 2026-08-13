@@ -3976,10 +3976,38 @@
     "detalhe": "euro · Itália x Espanha @2.15 (tiro 2) · gatilho: time Itália"
    }
   ],
-  "consumidas": {
-   "copa": 1786514151091
+  "consumidas": {},
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:09",
+     "jogo": "Palace x Brighton",
+     "odd": 2.05
+    },
+    {
+     "h": "18:12",
+     "jogo": "Everton x Liverpool",
+     "odd": 2.15
+    },
+    {
+     "h": "18:15",
+     "jogo": "Palace x Chelsea",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "coluna :09",
+   "alvo": {
+    "h": "18:09",
+    "jogo": "Palace x Brighton",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1786640925685
+   },
+   "iniciadoEm": 1786640925685
   },
-  "ciclo": null,
   "cooldown": {
    "copa": 1786514151091,
    "premier": 1786468488721,
@@ -4019,20 +4047,26 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRGR",
-   "n": 13,
+   "chave": "RRRGG",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -149.2,
-  "ciclos": 1246,
-  "greens": 846,
+  "saldo": -148.4,
+  "ciclos": 1247,
+  "greens": 847,
   "redsCiclo": 143,
   "aborts": 0,
   "descartes": 257,
   "historico": [
+   {
+    "quando": "2026-08-13T17:10:17.482Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "super · Santiago x Agua Branca @1.83 (tiro 1) · gatilho: odd 1.83"
+   },
    {
     "quando": "2026-08-12T05:21:52.294Z",
     "resultado": "GREEN",
@@ -7626,19 +7660,45 @@
     "resultado": "GREEN",
     "unidades": 0.6,
     "detalhe": "premier · Wolverhampton x City @1.8 (tiro 2) · gatilho: odd 1.8"
-   },
-   {
-    "quando": "2026-07-28T22:45:51.366Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Marrocos x Uruguai @1.98 (tiro 1) · gatilho: time Suíça"
    }
   ],
-  "consumidas": {},
-  "ciclo": null,
+  "consumidas": {
+   "super": 1786641017287
+  },
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:10",
+     "jogo": "Senegal x Jordânia",
+     "odd": 2.15
+    },
+    {
+     "h": "18:13",
+     "jogo": "Uruguai x Haiti",
+     "odd": 1.98
+    },
+    {
+     "h": "18:16",
+     "jogo": "Alemanha x Cabo Verde",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "time Haiti",
+   "alvo": {
+    "h": "18:10",
+    "jogo": "Senegal x Jordânia",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1786641019984
+   },
+   "iniciadoEm": 1786641019984
+  },
   "cooldown": {
    "euro": 1786509480294,
-   "super": 1786512112099,
+   "super": 1786641017287,
    "premier": 1786470300922,
    "copa": 1786505811400
   },
@@ -7670,12 +7730,13 @@
    "2026-08-09": 0.4,
    "2026-08-10": -1.6,
    "2026-08-11": -11.1,
-   "2026-08-12": -3.4
+   "2026-08-12": -3.4,
+   "2026-08-13": 0.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Belo Horizonte",
-   "n": 13,
+   "chave": "Haiti",
+   "n": 10,
    "start": 2
   },
   "_obs": {}
