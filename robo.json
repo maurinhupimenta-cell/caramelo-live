@@ -3981,8 +3981,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "21:04",
@@ -4002,13 +4002,21 @@
    ],
    "gatilho": "seq RGRGG",
    "alvo": {
-    "h": "21:04",
-    "jogo": "Avellaneda x Itaquera",
+    "h": "21:07",
+    "jogo": "Sao Paulo x La Plata",
     "odd": 2.35,
-    "unidades": 1,
-    "desde": 1786651451094
+    "unidades": 2,
+    "desde": 1786651693291
    },
-   "iniciadoEm": 1786651451094
+   "iniciadoEm": 1786651451094,
+   "tiros": [
+    {
+     "h": "21:04",
+     "jogo": "Avellaneda x Itaquera",
+     "odd": 2.35,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786647974389,
@@ -4057,13 +4065,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -141.7,
-  "ciclos": 1253,
-  "greens": 853,
+  "saldo": -140.6,
+  "ciclos": 1254,
+  "greens": 854,
   "redsCiclo": 143,
   "aborts": 0,
   "descartes": 257,
   "historico": [
+   {
+    "quando": "2026-08-13T20:08:10.889Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Canadá x Croácia @2.1 (tiro 1) · gatilho: time Tunísia"
+   },
    {
     "quando": "2026-08-13T19:59:15.485Z",
     "resultado": "GREEN",
@@ -7657,54 +7671,19 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "super · Quito x Medellin @2.05 (tiro 2) · gatilho: time Agua Branca"
-   },
-   {
-    "quando": "2026-07-29T04:20:01.161Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho time França) — liga REARMADA"
    }
   ],
   "consumidas": {
    "super": 1786649173782,
-   "euro": 1786651155196
+   "euro": 1786651155196,
+   "copa": 1786651690785
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:04",
-     "jogo": "Canadá x Croácia",
-     "odd": 2.1
-    },
-    {
-     "h": "21:07",
-     "jogo": "Tunísia x Costa do Marfim",
-     "odd": 2.05
-    },
-    {
-     "h": "21:10",
-     "jogo": "Espanha x Canadá",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "time Tunísia",
-   "alvo": {
-    "h": "21:04",
-    "jogo": "Canadá x Croácia",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1786651211385
-   },
-   "iniciadoEm": 1786651211385
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786651155196,
    "super": 1786649173782,
    "premier": 1786643084585,
-   "copa": 1786645931590
+   "copa": 1786651690785
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7735,13 +7714,13 @@
    "2026-08-10": -1.6,
    "2026-08-11": -11.1,
    "2026-08-12": -3.4,
-   "2026-08-13": 7.5
+   "2026-08-13": 8.6
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Tunísia",
-   "n": 13,
-   "start": 1
+   "chave": "França",
+   "n": 14,
+   "start": 3
   },
   "_obs": {}
  }
