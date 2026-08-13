@@ -369,12 +369,18 @@
  },
  "o25": {
   "saldo": -140.8,
-  "ciclos": 1248,
+  "ciclos": 1249,
   "greens": 783,
   "redsCiclo": 192,
   "aborts": 0,
-  "descartes": 273,
+  "descartes": 274,
   "historico": [
+   {
+    "quando": "2026-08-13T18:53:13.389Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho coluna :58) — liga REARMADA"
+   },
    {
     "quando": "2026-08-13T18:14:11.888Z",
     "resultado": "GREEN",
@@ -3968,18 +3974,42 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "premier · Norwich x Burnley @2.1 (tiro 3) · gatilho: time Leicester"
-   },
-   {
-    "quando": "2026-07-30T05:52:04.790Z",
-    "resultado": "GREEN",
-    "unidades": 2,
-    "detalhe": "copa · Colômbia x Irã @2.5 (tiro 2) · gatilho: time Irã"
    }
   ],
   "consumidas": {
    "euro": 1786644851682
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:55",
+     "jogo": "Alemanha x Suécia",
+     "odd": 2.45
+    },
+    {
+     "h": "19:58",
+     "jogo": "Curação x Colômbia",
+     "odd": 2.1
+    },
+    {
+     "h": "20:01",
+     "jogo": "Paraguai x Argentina",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "coluna :58",
+   "alvo": {
+    "h": "19:55",
+    "jogo": "Alemanha x Suécia",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1786647195596
+   },
+   "iniciadoEm": 1786647195596
+  },
   "cooldown": {
    "copa": 1786642529692,
    "premier": 1786641496888,
@@ -4019,10 +4049,10 @@
    "2026-08-13": -2.6
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGG",
-   "n": 17,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":58",
+   "n": 18,
+   "start": 3
   },
   "_obs": {}
  },
