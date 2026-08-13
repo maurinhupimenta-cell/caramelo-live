@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -140.8,
-  "ciclos": 1249,
-  "greens": 783,
+  "saldo": -138.8,
+  "ciclos": 1250,
+  "greens": 784,
   "redsCiclo": 192,
   "aborts": 0,
   "descartes": 274,
   "historico": [
+   {
+    "quando": "2026-08-13T19:06:14.696Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "copa · Paraguai x Argentina @2.25 (tiro 3) · gatilho: coluna :58"
+   },
    {
     "quando": "2026-08-13T18:53:13.389Z",
     "resultado": "GREEN_OBS",
@@ -3968,64 +3974,53 @@
     "resultado": "GREEN",
     "unidades": 4,
     "detalhe": "euro · Geórgia x Albânia @2.75 (tiro 3) · gatilho: seq RRGR"
-   },
-   {
-    "quando": "2026-07-30T06:05:38.098Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "premier · Norwich x Burnley @2.1 (tiro 3) · gatilho: time Leicester"
    }
   ],
   "consumidas": {
-   "euro": 1786644851682
+   "euro": 1786644851682,
+   "copa": 1786647974389
   },
   "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "premier",
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
-     "h": "19:55",
-     "jogo": "Alemanha x Suécia",
-     "odd": 2.45
-    },
-    {
-     "h": "19:58",
-     "jogo": "Curação x Colômbia",
-     "odd": 2.1
-    },
-    {
-     "h": "20:01",
-     "jogo": "Paraguai x Argentina",
+     "h": "20:09",
+     "jogo": "Leicester x United",
      "odd": 2.25
+    },
+    {
+     "h": "20:12",
+     "jogo": "Liverpool x Southampton",
+     "odd": 2.35
+    },
+    {
+     "h": "20:15",
+     "jogo": "Brentford x Wolverhampton",
+     "odd": 2.1
     }
    ],
-   "gatilho": "coluna :58",
+   "gatilho": "odd 2.35",
    "alvo": {
-    "h": "20:01",
-    "jogo": "Paraguai x Argentina",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1786647971386
+    "h": "20:12",
+    "jogo": "Liverpool x Southampton",
+    "odd": 2.35,
+    "unidades": 2,
+    "desde": 1786648309483
    },
-   "iniciadoEm": 1786647195596,
+   "iniciadoEm": 1786647977288,
    "tiros": [
     {
-     "h": "19:55",
-     "jogo": "Alemanha x Suécia",
-     "odd": 2.45,
+     "h": "20:09",
+     "jogo": "Leicester x United",
+     "odd": 2.25,
      "unidades": 1
-    },
-    {
-     "h": "19:58",
-     "jogo": "Curação x Colômbia",
-     "odd": 2.1,
-     "unidades": 2
     }
    ]
   },
   "cooldown": {
-   "copa": 1786642529692,
+   "copa": 1786647974389,
    "premier": 1786641496888,
    "euro": 1786644851682,
    "super": 1786509891403
@@ -4060,13 +4055,13 @@
    "2026-08-10": 5.5,
    "2026-08-11": 6.9,
    "2026-08-12": -8.2,
-   "2026-08-13": -2.6
+   "2026-08-13": -0.6
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.35",
    "n": 14,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
