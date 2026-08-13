@@ -4028,13 +4028,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -146.4,
-  "ciclos": 1249,
-  "greens": 849,
+  "saldo": -144.6,
+  "ciclos": 1250,
+  "greens": 850,
   "redsCiclo": 143,
   "aborts": 0,
   "descartes": 257,
   "historico": [
+   {
+    "quando": "2026-08-13T18:20:15.283Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "super · La Plata x Porto Alegre @2.4 (tiro 2) · gatilho: seq RGRRR"
+   },
    {
     "quando": "2026-08-13T17:44:44.888Z",
     "resultado": "GREEN",
@@ -7628,59 +7634,16 @@
     "resultado": "GREEN",
     "unidades": 0.8,
     "detalhe": "premier · Islington x Newcastle @1.9 (tiro 2) · gatilho: time Islington"
-   },
-   {
-    "quando": "2026-07-29T02:28:20.863Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "copa · Alemanha x Países Baixos @1.93 (tiro 1) · gatilho: odd 2.05"
    }
   ],
   "consumidas": {
-   "premier": 1786643084585
+   "premier": 1786643084585,
+   "super": 1786645215085
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "19:13",
-     "jogo": "Belo Horizonte x Quito",
-     "odd": 1.98
-    },
-    {
-     "h": "19:16",
-     "jogo": "La Plata x Porto Alegre",
-     "odd": 2.4
-    },
-    {
-     "h": "19:19",
-     "jogo": "Santos x Rio de Janeiro",
-     "odd": 2
-    }
-   ],
-   "gatilho": "seq RGRRR",
-   "alvo": {
-    "h": "19:16",
-    "jogo": "La Plata x Porto Alegre",
-    "odd": 2.4,
-    "unidades": 2,
-    "desde": 1786644957589
-   },
-   "iniciadoEm": 1786644856394,
-   "tiros": [
-    {
-     "h": "19:13",
-     "jogo": "Belo Horizonte x Quito",
-     "odd": 1.98,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786509480294,
-   "super": 1786641017287,
+   "super": 1786645215085,
    "premier": 1786643084585,
    "copa": 1786641491096
   },
@@ -7713,12 +7676,12 @@
    "2026-08-10": -1.6,
    "2026-08-11": -11.1,
    "2026-08-12": -3.4,
-   "2026-08-13": 2.8
+   "2026-08-13": 4.6
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Tunísia",
-   "n": 10,
+   "n": 11,
    "start": 1
   },
   "_obs": {}
