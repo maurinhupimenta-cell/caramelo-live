@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -138.2,
-  "ciclos": 1245,
-  "greens": 781,
+  "saldo": -136.4,
+  "ciclos": 1246,
+  "greens": 782,
   "redsCiclo": 191,
   "aborts": 0,
   "descartes": 273,
   "historico": [
+   {
+    "quando": "2026-08-13T17:18:17.085Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "premier · Palace x Chelsea @2.2 (tiro 3) · gatilho: coluna :09"
+   },
    {
     "quando": "2026-08-12T05:55:51.199Z",
     "resultado": "GREEN",
@@ -3968,63 +3974,45 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "super · Itaquera x Guayaquil @2.2 (tiro 1) · gatilho: seq RRRG"
-   },
-   {
-    "quando": "2026-07-30T04:53:29.200Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "euro · Itália x Espanha @2.15 (tiro 2) · gatilho: time Itália"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "premier": 1786641496888
+  },
   "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "18:09",
-     "jogo": "Palace x Brighton",
-     "odd": 2.05
+     "h": "18:25",
+     "jogo": "Japão x França",
+     "odd": 2.35
     },
     {
-     "h": "18:12",
-     "jogo": "Everton x Liverpool",
-     "odd": 2.15
+     "h": "18:28",
+     "jogo": "Gana x Inglaterra",
+     "odd": 2.3
     },
     {
-     "h": "18:15",
-     "jogo": "Palace x Chelsea",
-     "odd": 2.2
+     "h": "18:31",
+     "jogo": "Suécia x Tunísia",
+     "odd": 2.87
     }
    ],
-   "gatilho": "coluna :09",
+   "gatilho": "seq RGRGG",
    "alvo": {
-    "h": "18:15",
-    "jogo": "Palace x Chelsea",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1786641286787
+    "h": "18:25",
+    "jogo": "Japão x França",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1786641911889
    },
-   "iniciadoEm": 1786640925685,
-   "tiros": [
-    {
-     "h": "18:09",
-     "jogo": "Palace x Brighton",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "18:12",
-     "jogo": "Everton x Liverpool",
-     "odd": 2.15,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1786641911889
   },
   "cooldown": {
    "copa": 1786514151091,
-   "premier": 1786468488721,
+   "premier": 1786641496888,
    "euro": 1786509715104,
    "super": 1786509891403
   },
@@ -4057,12 +4045,13 @@
    "2026-08-09": -16.4,
    "2026-08-10": 5.5,
    "2026-08-11": 6.9,
-   "2026-08-12": -8.2
+   "2026-08-12": -8.2,
+   "2026-08-13": 1.8
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRGG",
-   "n": 10,
+   "chave": "RGRGG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
