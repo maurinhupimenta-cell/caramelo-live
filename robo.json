@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -136.4,
-  "ciclos": 1246,
+  "saldo": -143.4,
+  "ciclos": 1247,
   "greens": 782,
-  "redsCiclo": 191,
+  "redsCiclo": 192,
   "aborts": 0,
   "descartes": 273,
   "historico": [
+   {
+    "quando": "2026-08-13T17:35:29.890Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: seq RGRGG"
+   },
    {
     "quando": "2026-08-13T17:18:17.085Z",
     "resultado": "GREEN",
@@ -3968,64 +3974,15 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho time Irã) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-30T05:07:28.492Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "super · Itaquera x Guayaquil @2.2 (tiro 1) · gatilho: seq RRRG"
    }
   ],
   "consumidas": {
-   "premier": 1786641496888
+   "premier": 1786641496888,
+   "copa": 1786642529692
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "18:25",
-     "jogo": "Japão x França",
-     "odd": 2.35
-    },
-    {
-     "h": "18:28",
-     "jogo": "Gana x Inglaterra",
-     "odd": 2.3
-    },
-    {
-     "h": "18:31",
-     "jogo": "Suécia x Tunísia",
-     "odd": 2.87
-    }
-   ],
-   "gatilho": "seq RGRGG",
-   "alvo": {
-    "h": "18:31",
-    "jogo": "Suécia x Tunísia",
-    "odd": 2.87,
-    "unidades": 4,
-    "desde": 1786642336484
-   },
-   "iniciadoEm": 1786641911889,
-   "tiros": [
-    {
-     "h": "18:25",
-     "jogo": "Japão x França",
-     "odd": 2.35,
-     "unidades": 1
-    },
-    {
-     "h": "18:28",
-     "jogo": "Gana x Inglaterra",
-     "odd": 2.3,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1786514151091,
+   "copa": 1786642529692,
    "premier": 1786641496888,
    "euro": 1786509715104,
    "super": 1786509891403
@@ -4060,7 +4017,7 @@
    "2026-08-10": 5.5,
    "2026-08-11": 6.9,
    "2026-08-12": -8.2,
-   "2026-08-13": 1.8
+   "2026-08-13": -5.2
   },
   "_gatilhoAtual": {
    "tipo": "seq",
