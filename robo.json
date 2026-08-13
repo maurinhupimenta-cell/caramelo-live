@@ -7640,7 +7640,45 @@
    "premier": 1786643084585,
    "super": 1786645215085
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "19:19",
+     "jogo": "Jordânia x Tunísia",
+     "odd": 2.1
+    },
+    {
+     "h": "19:22",
+     "jogo": "Argentina x Croácia",
+     "odd": 1.98
+    },
+    {
+     "h": "19:25",
+     "jogo": "Senegal x Espanha",
+     "odd": 2
+    }
+   ],
+   "gatilho": "time Tunísia",
+   "alvo": {
+    "h": "19:22",
+    "jogo": "Argentina x Croácia",
+    "odd": 1.98,
+    "unidades": 2,
+    "desde": 1786645394590
+   },
+   "iniciadoEm": 1786645218201,
+   "tiros": [
+    {
+     "h": "19:19",
+     "jogo": "Jordânia x Tunísia",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1786509480294,
    "super": 1786645215085,
@@ -7680,9 +7718,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Tunísia",
-   "n": 11,
-   "start": 1
+   "chave": "Noruega",
+   "n": 17,
+   "start": 3
   },
   "_obs": {}
  }
