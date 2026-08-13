@@ -4028,13 +4028,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -143.6,
-  "ciclos": 1251,
-  "greens": 851,
+  "saldo": -142.6,
+  "ciclos": 1252,
+  "greens": 852,
   "redsCiclo": 143,
   "aborts": 0,
   "descartes": 257,
   "historico": [
+   {
+    "quando": "2026-08-13T19:26:14.084Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Itaquera x Quito @2.05 (tiro 1) · gatilho: seq GGRRG"
+   },
    {
     "quando": "2026-08-13T18:32:11.788Z",
     "resultado": "GREEN",
@@ -7628,51 +7634,16 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "super · Agua Branca x Penarol @2.07 (tiro 1) · gatilho: time Agua Branca"
-   },
-   {
-    "quando": "2026-07-29T02:56:51.264Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: time Geórgia"
    }
   ],
   "consumidas": {
-   "copa": 1786645931590
+   "copa": 1786645931590,
+   "super": 1786649173782
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:22",
-     "jogo": "Itaquera x Quito",
-     "odd": 2.05
-    },
-    {
-     "h": "20:25",
-     "jogo": "Medellin x Porto Alegre",
-     "odd": 2.25
-    },
-    {
-     "h": "20:28",
-     "jogo": "La Boca x Sao Paulo",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "seq GGRRG",
-   "alvo": {
-    "h": "20:22",
-    "jogo": "Itaquera x Quito",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1786648998086
-   },
-   "iniciadoEm": 1786648998086
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786509480294,
-   "super": 1786645215085,
+   "super": 1786649173782,
    "premier": 1786643084585,
    "copa": 1786645931590
   },
@@ -7705,7 +7676,7 @@
    "2026-08-10": -1.6,
    "2026-08-11": -11.1,
    "2026-08-12": -3.4,
-   "2026-08-13": 5.6
+   "2026-08-13": 6.6
   },
   "_gatilhoAtual": {
    "tipo": "seq",
