@@ -4028,13 +4028,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -144.6,
-  "ciclos": 1250,
-  "greens": 850,
+  "saldo": -143.6,
+  "ciclos": 1251,
+  "greens": 851,
   "redsCiclo": 143,
   "aborts": 0,
   "descartes": 257,
   "historico": [
+   {
+    "quando": "2026-08-13T18:32:11.788Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Senegal x Espanha @2 (tiro 3) · gatilho: time Tunísia"
+   },
    {
     "quando": "2026-08-13T18:20:15.283Z",
     "resultado": "GREEN",
@@ -7628,68 +7634,19 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: time Geórgia"
-   },
-   {
-    "quando": "2026-07-29T02:38:41.468Z",
-    "resultado": "GREEN",
-    "unidades": 0.8,
-    "detalhe": "premier · Islington x Newcastle @1.9 (tiro 2) · gatilho: time Islington"
    }
   ],
   "consumidas": {
    "premier": 1786643084585,
-   "super": 1786645215085
+   "super": 1786645215085,
+   "copa": 1786645931590
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "19:19",
-     "jogo": "Jordânia x Tunísia",
-     "odd": 2.1
-    },
-    {
-     "h": "19:22",
-     "jogo": "Argentina x Croácia",
-     "odd": 1.98
-    },
-    {
-     "h": "19:25",
-     "jogo": "Senegal x Espanha",
-     "odd": 2
-    }
-   ],
-   "gatilho": "time Tunísia",
-   "alvo": {
-    "h": "19:25",
-    "jogo": "Senegal x Espanha",
-    "odd": 2,
-    "unidades": 4,
-    "desde": 1786645571089
-   },
-   "iniciadoEm": 1786645218201,
-   "tiros": [
-    {
-     "h": "19:19",
-     "jogo": "Jordânia x Tunísia",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "19:22",
-     "jogo": "Argentina x Croácia",
-     "odd": 1.98,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786509480294,
    "super": 1786645215085,
    "premier": 1786643084585,
-   "copa": 1786641491096
+   "copa": 1786645931590
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7720,13 +7677,13 @@
    "2026-08-10": -1.6,
    "2026-08-11": -11.1,
    "2026-08-12": -3.4,
-   "2026-08-13": 4.6
+   "2026-08-13": 5.6
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Noruega",
    "n": 17,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
