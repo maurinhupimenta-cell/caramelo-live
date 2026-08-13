@@ -7683,7 +7683,37 @@
    "super": 1786641017287,
    "copa": 1786641491096
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:36",
+     "jogo": "Brighton x Watford",
+     "odd": 1.87
+    },
+    {
+     "h": "18:39",
+     "jogo": "Southampton x West Ham",
+     "odd": 2.2
+    },
+    {
+     "h": "18:42",
+     "jogo": "Islington x Norwich",
+     "odd": 2
+    }
+   ],
+   "gatilho": "seq RRGGG",
+   "alvo": {
+    "h": "18:36",
+    "jogo": "Brighton x Watford",
+    "odd": 1.87,
+    "unidades": 1,
+    "desde": 1786642397982
+   },
+   "iniciadoEm": 1786642397982
+  },
   "cooldown": {
    "euro": 1786509480294,
    "super": 1786641017287,
@@ -7722,10 +7752,10 @@
    "2026-08-13": 1.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "França",
-   "n": 13,
-   "start": 3
+   "tipo": "seq",
+   "chave": "RRGGG",
+   "n": 10,
+   "start": 1
   },
   "_obs": {}
  }
