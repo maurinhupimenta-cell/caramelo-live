@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -138.8,
-  "ciclos": 1250,
-  "greens": 784,
+  "saldo": -137.4,
+  "ciclos": 1251,
+  "greens": 785,
   "redsCiclo": 192,
   "aborts": 0,
   "descartes": 274,
   "historico": [
+   {
+    "quando": "2026-08-13T19:18:15.586Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "premier · Brentford x Wolverhampton @2.1 (tiro 3) · gatilho: odd 2.35"
+   },
    {
     "quando": "2026-08-13T19:06:14.696Z",
     "resultado": "GREEN",
@@ -3968,65 +3974,16 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "super · Medellin x Penarol @2.55 (tiro 1) · gatilho: time La Boca"
-   },
-   {
-    "quando": "2026-07-30T06:16:45.393Z",
-    "resultado": "GREEN",
-    "unidades": 4,
-    "detalhe": "euro · Geórgia x Albânia @2.75 (tiro 3) · gatilho: seq RRGR"
    }
   ],
   "consumidas": {
-   "copa": 1786647974389
+   "copa": 1786647974389,
+   "premier": 1786648695385
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "20:09",
-     "jogo": "Leicester x United",
-     "odd": 2.25
-    },
-    {
-     "h": "20:12",
-     "jogo": "Liverpool x Southampton",
-     "odd": 2.35
-    },
-    {
-     "h": "20:15",
-     "jogo": "Brentford x Wolverhampton",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "odd 2.35",
-   "alvo": {
-    "h": "20:15",
-    "jogo": "Brentford x Wolverhampton",
-    "odd": 2.1,
-    "unidades": 4,
-    "desde": 1786648481092
-   },
-   "iniciadoEm": 1786647977288,
-   "tiros": [
-    {
-     "h": "20:09",
-     "jogo": "Leicester x United",
-     "odd": 2.25,
-     "unidades": 1
-    },
-    {
-     "h": "20:12",
-     "jogo": "Liverpool x Southampton",
-     "odd": 2.35,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786647974389,
-   "premier": 1786641496888,
+   "premier": 1786648695385,
    "euro": 1786644851682,
    "super": 1786509891403
   },
@@ -4060,7 +4017,7 @@
    "2026-08-10": 5.5,
    "2026-08-11": 6.9,
    "2026-08-12": -8.2,
-   "2026-08-13": -0.6
+   "2026-08-13": 0.8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
