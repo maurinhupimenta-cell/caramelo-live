@@ -7639,7 +7639,37 @@
   "consumidas": {
    "copa": 1786645931590
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:22",
+     "jogo": "Itaquera x Quito",
+     "odd": 2.05
+    },
+    {
+     "h": "20:25",
+     "jogo": "Medellin x Porto Alegre",
+     "odd": 2.25
+    },
+    {
+     "h": "20:28",
+     "jogo": "La Boca x Sao Paulo",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "seq GGRRG",
+   "alvo": {
+    "h": "20:22",
+    "jogo": "Itaquera x Quito",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1786648998086
+   },
+   "iniciadoEm": 1786648998086
+  },
   "cooldown": {
    "euro": 1786509480294,
    "super": 1786645215085,
@@ -7678,9 +7708,9 @@
    "2026-08-13": 5.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Noruega",
-   "n": 17,
+   "tipo": "seq",
+   "chave": "GGRRG",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
