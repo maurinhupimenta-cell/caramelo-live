@@ -3982,8 +3982,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "19:05",
@@ -4003,13 +4003,21 @@
    ],
    "gatilho": "odd 2.55",
    "alvo": {
-    "h": "19:05",
-    "jogo": "Países Baixos x Suíça",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1786643830784
+    "h": "19:08",
+    "jogo": "Geórgia x Turquia",
+    "odd": 2.55,
+    "unidades": 2,
+    "desde": 1786644498190
    },
-   "iniciadoEm": 1786643830784
+   "iniciadoEm": 1786643830784,
+   "tiros": [
+    {
+     "h": "19:05",
+     "jogo": "Países Baixos x Suíça",
+     "odd": 2.02,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786642529692,
@@ -4050,10 +4058,10 @@
    "2026-08-13": -5.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.55",
-   "n": 11,
-   "start": 3
+   "tipo": "seq",
+   "chave": "RGGG",
+   "n": 17,
+   "start": 1
   },
   "_obs": {}
  },
