@@ -4030,13 +4030,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -140.4,
-  "ciclos": 1263,
-  "greens": 861,
+  "saldo": -139.5,
+  "ciclos": 1264,
+  "greens": 862,
   "redsCiclo": 144,
   "aborts": 0,
   "descartes": 258,
   "historico": [
+   {
+    "quando": "2026-08-14T18:14:47.027Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Islington x Palace @1.98 (tiro 3) · gatilho: odd 1.83"
+   },
    {
     "quando": "2026-08-14T17:50:13.531Z",
     "resultado": "GREEN",
@@ -7630,66 +7636,17 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "euro · Itália x República Tcheca @2.2 (tiro 2) · gatilho: seq RRRR"
-   },
-   {
-    "quando": "2026-07-29T06:41:49.067Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "super · Itaquera x Montevideo @1.98 (tiro 3) · gatilho: time Agua Branca"
    }
   ],
   "consumidas": {
-   "copa": 1786729813027
+   "copa": 1786729813027,
+   "premier": 1786731286829
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "19:06",
-     "jogo": "Liverpool x Southampton",
-     "odd": 2.05
-    },
-    {
-     "h": "19:09",
-     "jogo": "Burnley x Everton",
-     "odd": 1.83
-    },
-    {
-     "h": "19:12",
-     "jogo": "Islington x Palace",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "odd 1.83",
-   "alvo": {
-    "h": "19:12",
-    "jogo": "Islington x Palace",
-    "odd": 1.98,
-    "unidades": 4,
-    "desde": 1786731105830
-   },
-   "iniciadoEm": 1786730239725,
-   "tiros": [
-    {
-     "h": "19:06",
-     "jogo": "Liverpool x Southampton",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "19:09",
-     "jogo": "Burnley x Everton",
-     "odd": 1.83,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786726993120,
    "super": 1786724355033,
-   "premier": 1786643084585,
+   "premier": 1786731286829,
    "copa": 1786729813027
   },
   "dias": {
@@ -7722,7 +7679,7 @@
    "2026-08-11": -11.1,
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
-   "2026-08-14": 0.2
+   "2026-08-14": 1.1
   },
   "_gatilhoAtual": {
    "tipo": "odd",
