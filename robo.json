@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -154.1,
-  "ciclos": 1268,
-  "greens": 793,
+  "saldo": -152.7,
+  "ciclos": 1269,
+  "greens": 794,
   "redsCiclo": 196,
   "aborts": 0,
   "descartes": 279,
   "historico": [
+   {
+    "quando": "2026-08-14T21:47:24.824Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "copa · Bósnia e Herzegovina x Irã @2.4 (tiro 1) · gatilho: time França"
+   },
    {
     "quando": "2026-08-14T20:46:26.221Z",
     "resultado": "GREEN",
@@ -3968,18 +3974,14 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "premier · Newcastle x Burnley @2.5 (tiro 1) · gatilho: time Tottenham"
-   },
-   {
-    "quando": "2026-07-30T11:34:03.698Z",
-    "resultado": "GREEN",
-    "unidades": 2,
-    "detalhe": "copa · Austrália x Irã @2.5 (tiro 2) · gatilho: odd 2.5"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "copa": 1786744044632
+  },
   "ciclo": null,
   "cooldown": {
-   "copa": 1786740385933,
+   "copa": 1786744044632,
    "premier": 1786728219129,
    "euro": 1786734986029,
    "super": 1786737385831
@@ -4015,12 +4017,12 @@
    "2026-08-11": 6.9,
    "2026-08-12": -8.2,
    "2026-08-13": 2.5,
-   "2026-08-14": -18.4
+   "2026-08-14": -17
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":43",
-   "n": 21,
+   "tipo": "time",
+   "chave": "França",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
