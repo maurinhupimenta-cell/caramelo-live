@@ -3977,7 +3977,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1786729273827,
    "copa": 1786729812821
   },
   "ciclo": null,
@@ -7642,7 +7641,37 @@
    "premier": 1786731286829,
    "euro": 1786732645924
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:46",
+     "jogo": "Guayaquil x Santos",
+     "odd": 1.95
+    },
+    {
+     "h": "19:49",
+     "jogo": "Rio de Janeiro x Belo Horizonte",
+     "odd": 1.85
+    },
+    {
+     "h": "19:52",
+     "jogo": "Buenos Aires x Quito",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "odd 1.85",
+   "alvo": {
+    "h": "19:46",
+    "jogo": "Guayaquil x Santos",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1786732650832
+   },
+   "iniciadoEm": 1786732650832
+  },
   "cooldown": {
    "euro": 1786732645924,
    "super": 1786724355033,
@@ -7683,8 +7712,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "1.87",
-   "n": 15,
+   "chave": "1.85",
+   "n": 8,
    "start": 2
   },
   "_obs": {}
