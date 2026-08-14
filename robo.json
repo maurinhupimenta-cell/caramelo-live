@@ -4023,7 +4023,12 @@
    "n": 19,
    "start": 3
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1786718515921,
+    "gatilho": "coluna :43"
+   }
+  }
  },
  "ambas": {
   "saldo": -140.6,
@@ -7634,11 +7639,46 @@
     "detalhe": "super · Quito x Medellin @2.05 (tiro 2) · gatilho: time Agua Branca"
    }
   ],
-  "consumidas": {
-   "euro": 1786651155196,
-   "copa": 1786651690785
+  "consumidas": {},
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "15:44",
+     "jogo": "Inglaterra x Romênia",
+     "odd": 1.87
+    },
+    {
+     "h": "15:47",
+     "jogo": "Eslovênia x Áustria",
+     "odd": 2.2
+    },
+    {
+     "h": "15:50",
+     "jogo": "Bélgica x França",
+     "odd": 1.83
+    }
+   ],
+   "gatilho": "odd 1.87",
+   "alvo": {
+    "h": "15:47",
+    "jogo": "Eslovênia x Áustria",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1786718953321
+   },
+   "iniciadoEm": 1786718512626,
+   "tiros": [
+    {
+     "h": "15:44",
+     "jogo": "Inglaterra x Romênia",
+     "odd": 1.87,
+     "unidades": 1
+    }
+   ]
   },
-  "ciclo": null,
   "cooldown": {
    "euro": 1786651155196,
    "super": 1786649173782,
@@ -7677,10 +7717,10 @@
    "2026-08-13": 8.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "França",
-   "n": 14,
-   "start": 3
+   "tipo": "coluna",
+   "chave": ":49",
+   "n": 15,
+   "start": 1
   },
   "_obs": {}
  }
