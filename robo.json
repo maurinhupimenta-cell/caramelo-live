@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -151.5,
-  "ciclos": 1270,
-  "greens": 795,
+  "saldo": -149.8,
+  "ciclos": 1271,
+  "greens": 796,
   "redsCiclo": 196,
   "aborts": 0,
   "descartes": 279,
   "historico": [
+   {
+    "quando": "2026-08-14T22:52:40.026Z",
+    "resultado": "GREEN",
+    "unidades": 1.7,
+    "detalhe": "copa · Países Baixos x Bélgica @2.35 (tiro 2) · gatilho: seq GGGG"
+   },
    {
     "quando": "2026-08-14T21:56:27.832Z",
     "resultado": "GREEN",
@@ -3968,58 +3974,15 @@
     "resultado": "GREEN",
     "unidades": 2,
     "detalhe": "super · Guayaquil x Avellaneda @2.5 (tiro 2) · gatilho: coluna :49"
-   },
-   {
-    "quando": "2026-07-30T11:47:05.499Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho placar empate 2-2) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "euro": 1786744587629
+   "euro": 1786744587629,
+   "copa": 1786747959832
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "23:46",
-     "jogo": "Suíça x Canadá",
-     "odd": 2.4
-    },
-    {
-     "h": "23:49",
-     "jogo": "Países Baixos x Bélgica",
-     "odd": 2.35
-    },
-    {
-     "h": "23:52",
-     "jogo": "Portugal x México",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "seq GGGG",
-   "alvo": {
-    "h": "23:49",
-    "jogo": "Países Baixos x Bélgica",
-    "odd": 2.35,
-    "unidades": 2,
-    "desde": 1786747762829
-   },
-   "iniciadoEm": 1786747646134,
-   "tiros": [
-    {
-     "h": "23:46",
-     "jogo": "Suíça x Canadá",
-     "odd": 2.4,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1786744044632,
+   "copa": 1786747959832,
    "premier": 1786728219129,
    "euro": 1786744587629,
    "super": 1786737385831
@@ -4055,7 +4018,7 @@
    "2026-08-11": 6.9,
    "2026-08-12": -8.2,
    "2026-08-13": 2.5,
-   "2026-08-14": -15.8
+   "2026-08-14": -14.1
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -7677,7 +7640,37 @@
   "consumidas": {
    "euro": 1786747705922
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:55",
+     "jogo": "Bélgica x Iraque",
+     "odd": 2.2
+    },
+    {
+     "h": "23:58",
+     "jogo": "RD Congo x Turquia",
+     "odd": 1.93
+    },
+    {
+     "h": "00:01",
+     "jogo": "Suécia x Paraguai",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "seq GGGRG",
+   "alvo": {
+    "h": "23:55",
+    "jogo": "Bélgica x Iraque",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1786747960122
+   },
+   "iniciadoEm": 1786747960122
+  },
   "cooldown": {
    "euro": 1786747705922,
    "super": 1786741549825,
@@ -7717,10 +7710,10 @@
    "2026-08-14": 9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.8",
+   "tipo": "seq",
+   "chave": "GGGRG",
    "n": 10,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
