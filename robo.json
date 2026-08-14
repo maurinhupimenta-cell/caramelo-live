@@ -3979,8 +3979,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "19:52",
@@ -4000,13 +4000,21 @@
    ],
    "gatilho": "time França",
    "alvo": {
-    "h": "19:52",
-    "jogo": "Croácia x França",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1786733414820
+    "h": "19:55",
+    "jogo": "Uruguai x Tunísia",
+    "odd": 2.5,
+    "unidades": 2,
+    "desde": 1786734090023
    },
-   "iniciadoEm": 1786733414820
+   "iniciadoEm": 1786733414820,
+   "tiros": [
+    {
+     "h": "19:52",
+     "jogo": "Croácia x França",
+     "odd": 2.35,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786729812821,
@@ -4048,17 +4056,12 @@
    "2026-08-14": -16.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "França",
-   "n": 9,
+   "tipo": "seq",
+   "chave": "GGRRR",
+   "n": 11,
    "start": 1
   },
-  "_obs": {
-   "euro": {
-    "desde": 1786733590130,
-    "gatilho": "odd 1.98"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -137.8,
