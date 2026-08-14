@@ -369,12 +369,18 @@
  },
  "o25": {
   "saldo": -156.1,
-  "ciclos": 1266,
+  "ciclos": 1267,
   "greens": 792,
   "redsCiclo": 196,
   "aborts": 0,
-  "descartes": 278,
+  "descartes": 279,
   "historico": [
+   {
+    "quando": "2026-08-14T20:33:51.923Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho coluna :43) — liga REARMADA"
+   },
    {
     "quando": "2026-08-14T19:56:26.026Z",
     "resultado": "GREEN",
@@ -3968,18 +3974,42 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho odd 2.5) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-30T10:47:03.691Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: coluna :41"
    }
   ],
   "consumidas": {
    "super": 1786737385831
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:40",
+     "jogo": "República Tcheca x Senegal",
+     "odd": 2.55
+    },
+    {
+     "h": "21:43",
+     "jogo": "Suécia x Áustria",
+     "odd": 2.5
+    },
+    {
+     "h": "21:46",
+     "jogo": "Costa do Marfim x Escócia",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "coluna :43",
+   "alvo": {
+    "h": "21:40",
+    "jogo": "República Tcheca x Senegal",
+    "odd": 2.55,
+    "unidades": 1,
+    "desde": 1786739634221
+   },
+   "iniciadoEm": 1786739634221
+  },
   "cooldown": {
    "copa": 1786734095720,
    "premier": 1786728219129,
@@ -4020,17 +4050,12 @@
    "2026-08-14": -20.4
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.98",
-   "n": 8,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":43",
+   "n": 21,
+   "start": 2
   },
-  "_obs": {
-   "copa": {
-    "desde": 1786739603723,
-    "gatilho": "coluna :43"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -136.2,
@@ -7646,8 +7671,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "21:28",
@@ -7667,11 +7692,11 @@
    ],
    "gatilho": "coluna :31",
    "alvo": {
-    "h": "21:31",
-    "jogo": "Japão x Colômbia",
-    "odd": 2.02,
-    "unidades": 2,
-    "desde": 1786739603727
+    "h": "21:34",
+    "jogo": "Inglaterra x Equador",
+    "odd": 1.9,
+    "unidades": 4,
+    "desde": 1786739632020
    },
    "iniciadoEm": 1786738950127,
    "tiros": [
@@ -7680,6 +7705,12 @@
      "jogo": "Nova Zelândia x Argélia",
      "odd": 1.95,
      "unidades": 1
+    },
+    {
+     "h": "21:31",
+     "jogo": "Japão x Colômbia",
+     "odd": 2.02,
+     "unidades": 2
     }
    ]
   },
