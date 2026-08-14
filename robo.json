@@ -4030,13 +4030,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -141,
-  "ciclos": 1262,
-  "greens": 860,
+  "saldo": -140.4,
+  "ciclos": 1263,
+  "greens": 861,
   "redsCiclo": 144,
   "aborts": 0,
   "descartes": 258,
   "historico": [
+   {
+    "quando": "2026-08-14T17:50:13.531Z",
+    "resultado": "GREEN",
+    "unidades": 0.6,
+    "detalhe": "copa · Equador x México @1.9 (tiro 3) · gatilho: time Uzbequistão"
+   },
    {
     "quando": "2026-08-14T17:03:13.230Z",
     "resultado": "GREEN",
@@ -7630,67 +7636,48 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "super · Itaquera x Montevideo @1.98 (tiro 3) · gatilho: time Agua Branca"
-   },
-   {
-    "quando": "2026-07-29T06:16:45.561Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "copa · Haiti x Turquia @1.93 (tiro 1) · gatilho: odd 1.93"
    }
   ],
   "consumidas": {
-   "euro": 1786726993120
+   "euro": 1786726993120,
+   "copa": 1786729813027
   },
   "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "18:34",
-     "jogo": "Nova Zelândia x Áustria",
-     "odd": 1.93
+     "h": "19:06",
+     "jogo": "Liverpool x Southampton",
+     "odd": 2.05
     },
     {
-     "h": "18:37",
-     "jogo": "Uzbequistão x África do Sul",
-     "odd": 2.1
+     "h": "19:09",
+     "jogo": "Burnley x Everton",
+     "odd": 1.83
     },
     {
-     "h": "18:40",
-     "jogo": "Equador x México",
-     "odd": 1.9
+     "h": "19:12",
+     "jogo": "Islington x Palace",
+     "odd": 1.98
     }
    ],
-   "gatilho": "time Uzbequistão",
+   "gatilho": "odd 1.83",
    "alvo": {
-    "h": "18:40",
-    "jogo": "Equador x México",
-    "odd": 1.9,
-    "unidades": 4,
-    "desde": 1786729220431
+    "h": "19:06",
+    "jogo": "Liverpool x Southampton",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1786730239725
    },
-   "iniciadoEm": 1786728731825,
-   "tiros": [
-    {
-     "h": "18:34",
-     "jogo": "Nova Zelândia x Áustria",
-     "odd": 1.93,
-     "unidades": 1
-    },
-    {
-     "h": "18:37",
-     "jogo": "Uzbequistão x África do Sul",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1786730239725
   },
   "cooldown": {
    "euro": 1786726993120,
    "super": 1786724355033,
    "premier": 1786643084585,
-   "copa": 1786725131230
+   "copa": 1786729813027
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7722,12 +7709,12 @@
    "2026-08-11": -11.1,
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
-   "2026-08-14": -0.4
+   "2026-08-14": 0.2
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":49",
-   "n": 18,
+   "tipo": "odd",
+   "chave": "1.83",
+   "n": 11,
    "start": 3
   },
   "_obs": {}
