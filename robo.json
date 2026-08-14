@@ -3980,7 +3980,37 @@
    "euro": 1786724177129,
    "copa": 1786725434424
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:15",
+     "jogo": "Brentford x Brighton",
+     "odd": 2.1
+    },
+    {
+     "h": "18:18",
+     "jogo": "Watford x Chelsea",
+     "odd": 2.25
+    },
+    {
+     "h": "18:21",
+     "jogo": "City x Islington",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "coluna :18",
+   "alvo": {
+    "h": "18:15",
+    "jogo": "Brentford x Brighton",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1786727206523
+   },
+   "iniciadoEm": 1786727206523
+  },
   "cooldown": {
    "copa": 1786725434424,
    "premier": 1786720851822,
@@ -4021,10 +4051,10 @@
    "2026-08-14": -3.4
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Curação",
-   "n": 10,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":18",
+   "n": 18,
+   "start": 3
   },
   "_obs": {}
  },
