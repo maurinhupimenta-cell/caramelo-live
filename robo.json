@@ -7641,8 +7641,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "21:55",
@@ -7662,11 +7662,11 @@
    ],
    "gatilho": "odd 1.85",
    "alvo": {
-    "h": "21:58",
-    "jogo": "Buenos Aires x Rio de Janeiro",
-    "odd": 1.85,
-    "unidades": 2,
-    "desde": 1786741103723
+    "h": "22:01",
+    "jogo": "La Plata x Itaquera",
+    "odd": 2.15,
+    "unidades": 4,
+    "desde": 1786741525821
    },
    "iniciadoEm": 1786740375831,
    "tiros": [
@@ -7675,6 +7675,12 @@
      "jogo": "Bogota x Agua Branca",
      "odd": 2.05,
      "unidades": 1
+    },
+    {
+     "h": "21:58",
+     "jogo": "Buenos Aires x Rio de Janeiro",
+     "odd": 1.85,
+     "unidades": 2
     }
    ]
   },
@@ -7717,9 +7723,9 @@
    "2026-08-14": 5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.85",
-   "n": 11,
+   "tipo": "seq",
+   "chave": "RRRRR",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
