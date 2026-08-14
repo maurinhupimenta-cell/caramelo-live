@@ -3980,7 +3980,37 @@
    "copa": 1786725434424,
    "premier": 1786728219129
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:32",
+     "jogo": "República Tcheca x Eslováquia",
+     "odd": 2.55
+    },
+    {
+     "h": "18:35",
+     "jogo": "Áustria x Romênia",
+     "odd": 2.2
+    },
+    {
+     "h": "18:38",
+     "jogo": "Espanha x Portugal",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "seq RRRRG",
+   "alvo": {
+    "h": "18:32",
+    "jogo": "República Tcheca x Eslováquia",
+    "odd": 2.55,
+    "unidades": 1,
+    "desde": 1786728534925
+   },
+   "iniciadoEm": 1786728534925
+  },
   "cooldown": {
    "copa": 1786725434424,
    "premier": 1786728219129,
@@ -4021,9 +4051,9 @@
    "2026-08-14": -10.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":18",
-   "n": 18,
+   "tipo": "seq",
+   "chave": "RRRRG",
+   "n": 16,
    "start": 1
   },
   "_obs": {}
