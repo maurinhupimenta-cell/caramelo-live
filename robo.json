@@ -4030,12 +4030,18 @@
  },
  "ambas": {
   "saldo": -145.4,
-  "ciclos": 1257,
+  "ciclos": 1258,
   "greens": 856,
   "redsCiclo": 144,
   "aborts": 0,
-  "descartes": 257,
+  "descartes": 258,
   "historico": [
+   {
+    "quando": "2026-08-14T15:53:12.933Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :56) — liga REARMADA"
+   },
    {
     "quando": "2026-08-14T15:11:53.729Z",
     "resultado": "GREEN",
@@ -7629,16 +7635,9 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "super · Rio de Janeiro x Quito @2.05 (tiro 2) · gatilho: time Agua Branca"
-   },
-   {
-    "quando": "2026-07-29T05:10:46.361Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: odd 2.05"
    }
   ],
   "consumidas": {
-   "euro": 1786719191621,
    "copa": 1786720035925,
    "super": 1786720313533
   },
@@ -7687,6 +7686,11 @@
    "n": 19,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1786722792931,
+    "gatilho": "coluna :56"
+   }
+  }
  }
 }
