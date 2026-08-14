@@ -4031,13 +4031,19 @@
   }
  },
  "ambas": {
-  "saldo": -140.6,
-  "ciclos": 1254,
+  "saldo": -147.6,
+  "ciclos": 1255,
   "greens": 854,
-  "redsCiclo": 143,
+  "redsCiclo": 144,
   "aborts": 0,
   "descartes": 257,
   "historico": [
+   {
+    "quando": "2026-08-14T14:53:11.823Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: odd 1.87"
+   },
    {
     "quando": "2026-08-13T20:08:10.889Z",
     "resultado": "GREEN",
@@ -7631,62 +7637,14 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: time Alemanha"
-   },
-   {
-    "quando": "2026-07-29T04:24:40.664Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "super · Quito x Medellin @2.05 (tiro 2) · gatilho: time Agua Branca"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "15:44",
-     "jogo": "Inglaterra x Romênia",
-     "odd": 1.87
-    },
-    {
-     "h": "15:47",
-     "jogo": "Eslovênia x Áustria",
-     "odd": 2.2
-    },
-    {
-     "h": "15:50",
-     "jogo": "Bélgica x França",
-     "odd": 1.83
-    }
-   ],
-   "gatilho": "odd 1.87",
-   "alvo": {
-    "h": "15:50",
-    "jogo": "Bélgica x França",
-    "odd": 1.83,
-    "unidades": 4,
-    "desde": 1786719011725
-   },
-   "iniciadoEm": 1786718512626,
-   "tiros": [
-    {
-     "h": "15:44",
-     "jogo": "Inglaterra x Romênia",
-     "odd": 1.87,
-     "unidades": 1
-    },
-    {
-     "h": "15:47",
-     "jogo": "Eslovênia x Áustria",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "euro": 1786719191621
   },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1786651155196,
+   "euro": 1786719191621,
    "super": 1786649173782,
    "premier": 1786643084585,
    "copa": 1786651690785
@@ -7720,13 +7678,14 @@
    "2026-08-10": -1.6,
    "2026-08-11": -11.1,
    "2026-08-12": -3.4,
-   "2026-08-13": 8.6
+   "2026-08-13": 8.6,
+   "2026-08-14": -7
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":49",
-   "n": 15,
-   "start": 1
+   "tipo": "time",
+   "chave": "Uzbequistão",
+   "n": 10,
+   "start": 3
   },
   "_obs": {}
  }
