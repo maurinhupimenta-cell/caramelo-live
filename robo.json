@@ -3979,7 +3979,37 @@
   "consumidas": {
    "copa": 1786744044632
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:53",
+     "jogo": "Escócia x Portugal",
+     "odd": 2.2
+    },
+    {
+     "h": "22:56",
+     "jogo": "Polônia x Romênia",
+     "odd": 2.3
+    },
+    {
+     "h": "22:59",
+     "jogo": "Hungria x Espanha",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "seq GGGRR",
+   "alvo": {
+    "h": "22:53",
+    "jogo": "Escócia x Portugal",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1786744285530
+   },
+   "iniciadoEm": 1786744285530
+  },
   "cooldown": {
    "copa": 1786744044632,
    "premier": 1786728219129,
@@ -4020,9 +4050,9 @@
    "2026-08-14": -17
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "França",
-   "n": 11,
+   "tipo": "seq",
+   "chave": "GGGRR",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
