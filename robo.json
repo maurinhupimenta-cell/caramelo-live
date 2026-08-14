@@ -4048,10 +4048,10 @@
    "2026-08-14": 0
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":18",
-   "n": 16,
-   "start": 3
+   "tipo": "seq",
+   "chave": "RRRRR",
+   "n": 15,
+   "start": 1
   },
   "_obs": {
    "copa": {
@@ -4061,13 +4061,19 @@
   }
  },
  "ambas": {
-  "saldo": -146.6,
-  "ciclos": 1256,
-  "greens": 855,
+  "saldo": -145.4,
+  "ciclos": 1257,
+  "greens": 856,
   "redsCiclo": 144,
   "aborts": 0,
   "descartes": 257,
   "historico": [
+   {
+    "quando": "2026-08-14T15:11:53.729Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Avellaneda x Bogota @2.15 (tiro 1) · gatilho: seq GGRR"
+   },
    {
     "quando": "2026-08-14T15:07:16.123Z",
     "resultado": "GREEN",
@@ -7661,52 +7667,17 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: odd 2.05"
-   },
-   {
-    "quando": "2026-07-29T04:50:50.963Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "premier · City x Everton @1.87 (tiro 1) · gatilho: time Wolverhampton"
    }
   ],
   "consumidas": {
    "euro": 1786719191621,
-   "copa": 1786720035925
+   "copa": 1786720035925,
+   "super": 1786720313533
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:07",
-     "jogo": "Avellaneda x Bogota",
-     "odd": 2.15
-    },
-    {
-     "h": "16:10",
-     "jogo": "Belo Horizonte x Montevideo",
-     "odd": 1.93
-    },
-    {
-     "h": "16:13",
-     "jogo": "Buenos Aires x La Plata",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "seq GGRR",
-   "alvo": {
-    "h": "16:07",
-    "jogo": "Avellaneda x Bogota",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1786720095722
-   },
-   "iniciadoEm": 1786720095722
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786719191621,
-   "super": 1786649173782,
+   "super": 1786720313533,
    "premier": 1786643084585,
    "copa": 1786720035925
   },
@@ -7740,7 +7711,7 @@
    "2026-08-11": -11.1,
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
-   "2026-08-14": -6
+   "2026-08-14": -4.8
   },
   "_gatilhoAtual": {
    "tipo": "seq",
