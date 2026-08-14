@@ -4053,18 +4053,24 @@
    "tipo": "coluna",
    "chave": ":43",
    "n": 21,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -136.2,
-  "ciclos": 1270,
-  "greens": 866,
+  "saldo": -135.6,
+  "ciclos": 1271,
+  "greens": 867,
   "redsCiclo": 144,
   "aborts": 0,
   "descartes": 260,
   "historico": [
+   {
+    "quando": "2026-08-14T20:37:27.622Z",
+    "resultado": "GREEN",
+    "unidades": 0.6,
+    "detalhe": "copa · Inglaterra x Equador @1.9 (tiro 3) · gatilho: coluna :31"
+   },
    {
     "quando": "2026-08-14T20:04:23.326Z",
     "resultado": "GREEN",
@@ -7658,67 +7664,18 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho odd 1.93) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-29T09:30:45.866Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: odd 2.2"
    }
   ],
   "consumidas": {
-   "euro": 1786737863221
+   "euro": 1786737863221,
+   "copa": 1786739847424
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "21:28",
-     "jogo": "Nova Zelândia x Argélia",
-     "odd": 1.95
-    },
-    {
-     "h": "21:31",
-     "jogo": "Japão x Colômbia",
-     "odd": 2.02
-    },
-    {
-     "h": "21:34",
-     "jogo": "Inglaterra x Equador",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "coluna :31",
-   "alvo": {
-    "h": "21:34",
-    "jogo": "Inglaterra x Equador",
-    "odd": 1.9,
-    "unidades": 4,
-    "desde": 1786739632020
-   },
-   "iniciadoEm": 1786738950127,
-   "tiros": [
-    {
-     "h": "21:28",
-     "jogo": "Nova Zelândia x Argélia",
-     "odd": 1.95,
-     "unidades": 1
-    },
-    {
-     "h": "21:31",
-     "jogo": "Japão x Colômbia",
-     "odd": 2.02,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786737863221,
    "super": 1786733530224,
    "premier": 1786731286829,
-   "copa": 1786734812329
+   "copa": 1786739847424
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7750,13 +7707,13 @@
    "2026-08-11": -11.1,
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
-   "2026-08-14": 4.4
+   "2026-08-14": 5
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":31",
+   "chave": ":49",
    "n": 21,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
