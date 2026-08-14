@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -135.7,
-  "ciclos": 1254,
-  "greens": 786,
+  "saldo": -134.7,
+  "ciclos": 1255,
+  "greens": 787,
   "redsCiclo": 192,
   "aborts": 0,
   "descartes": 276,
   "historico": [
+   {
+    "quando": "2026-08-14T15:20:52.022Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Everton x Wolverhampton @2.02 (tiro 2) · gatilho: coluna :18"
+   },
    {
     "quando": "2026-08-14T15:12:02.829Z",
     "resultado": "GREEN_OBS",
@@ -3968,57 +3974,15 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros) · gatilho: time Agua Branca"
-   },
-   {
-    "quando": "2026-07-30T07:28:42.894Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: time Alemanha"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "16:15",
-     "jogo": "Aston x Watford",
-     "odd": 2.4
-    },
-    {
-     "h": "16:18",
-     "jogo": "Everton x Wolverhampton",
-     "odd": 2.02
-    },
-    {
-     "h": "16:21",
-     "jogo": "Leicester x Tottenham",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "coluna :18",
-   "alvo": {
-    "h": "16:18",
-    "jogo": "Everton x Wolverhampton",
-    "odd": 2.02,
-    "unidades": 2,
-    "desde": 1786720669332
-   },
-   "iniciadoEm": 1786719969926,
-   "tiros": [
-    {
-     "h": "16:15",
-     "jogo": "Aston x Watford",
-     "odd": 2.4,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "premier": 1786720851822
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786647974389,
-   "premier": 1786648695385,
+   "premier": 1786720851822,
    "euro": 1786644851682,
    "super": 1786651869987
   },
@@ -4053,7 +4017,7 @@
    "2026-08-11": 6.9,
    "2026-08-12": -8.2,
    "2026-08-13": 2.5,
-   "2026-08-14": 0
+   "2026-08-14": 1
   },
   "_gatilhoAtual": {
    "tipo": "time",
