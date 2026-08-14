@@ -7674,8 +7674,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "15:58",
@@ -7695,13 +7695,27 @@
    ],
    "gatilho": "time Uzbequistão",
    "alvo": {
-    "h": "15:58",
-    "jogo": "Portugal x Tunísia",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1786719194233
+    "h": "16:04",
+    "jogo": "África do Sul x Noruega",
+    "odd": 2,
+    "unidades": 4,
+    "desde": 1786720033535
    },
-   "iniciadoEm": 1786719194233
+   "iniciadoEm": 1786719194233,
+   "tiros": [
+    {
+     "h": "15:58",
+     "jogo": "Portugal x Tunísia",
+     "odd": 2.1,
+     "unidades": 1
+    },
+    {
+     "h": "16:01",
+     "jogo": "Uzbequistão x Paraguai",
+     "odd": 2.05,
+     "unidades": 2
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786719191621,
@@ -7744,7 +7758,7 @@
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Uzbequistão",
-   "n": 10,
+   "n": 11,
    "start": 1
   },
   "_obs": {}
