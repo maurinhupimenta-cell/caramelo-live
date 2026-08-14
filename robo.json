@@ -7640,7 +7640,37 @@
    "super": 1786741549825,
    "euro": 1786741703728
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:46",
+     "jogo": "Bélgica x Equador",
+     "odd": 1.93
+    },
+    {
+     "h": "22:49",
+     "jogo": "Egito x Coreia do Sul",
+     "odd": 2.02
+    },
+    {
+     "h": "22:52",
+     "jogo": "Jordânia x Argentina",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "coluna :49",
+   "alvo": {
+    "h": "22:46",
+    "jogo": "Bélgica x Equador",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1786743564532
+   },
+   "iniciadoEm": 1786743564532
+  },
   "cooldown": {
    "euro": 1786741703728,
    "super": 1786741549825,
@@ -7680,10 +7710,10 @@
    "2026-08-14": 7.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRR",
-   "n": 13,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":49",
+   "n": 22,
+   "start": 3
   },
   "_obs": {}
  }
