@@ -4056,13 +4056,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -138.5,
-  "ciclos": 1265,
-  "greens": 863,
+  "saldo": -137.8,
+  "ciclos": 1266,
+  "greens": 864,
   "redsCiclo": 144,
   "aborts": 0,
   "descartes": 258,
   "historico": [
+   {
+    "quando": "2026-08-14T18:52:10.420Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "super · Rio de Janeiro x Belo Horizonte @1.85 (tiro 2) · gatilho: odd 1.85"
+   },
    {
     "quando": "2026-08-14T18:37:26.123Z",
     "resultado": "GREEN",
@@ -7656,61 +7662,17 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "super · Santos x Montevideo @2 (tiro 2) · gatilho: time Medellin"
-   },
-   {
-    "quando": "2026-07-29T07:19:45.862Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "copa · Suécia x Iraque @2.3 (tiro 1) · gatilho: odd 1.93"
    }
   ],
   "consumidas": {
-   "copa": 1786729813027,
    "premier": 1786731286829,
-   "euro": 1786732645924
+   "euro": 1786732645924,
+   "super": 1786733530224
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "19:46",
-     "jogo": "Guayaquil x Santos",
-     "odd": 1.95
-    },
-    {
-     "h": "19:49",
-     "jogo": "Rio de Janeiro x Belo Horizonte",
-     "odd": 1.85
-    },
-    {
-     "h": "19:52",
-     "jogo": "Buenos Aires x Quito",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "odd 1.85",
-   "alvo": {
-    "h": "19:49",
-    "jogo": "Rio de Janeiro x Belo Horizonte",
-    "odd": 1.85,
-    "unidades": 2,
-    "desde": 1786733357826
-   },
-   "iniciadoEm": 1786732650832,
-   "tiros": [
-    {
-     "h": "19:46",
-     "jogo": "Guayaquil x Santos",
-     "odd": 1.95,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786732645924,
-   "super": 1786724355033,
+   "super": 1786733530224,
    "premier": 1786731286829,
    "copa": 1786729813027
   },
@@ -7744,7 +7706,7 @@
    "2026-08-11": -11.1,
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
-   "2026-08-14": 2.1
+   "2026-08-14": 2.8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
