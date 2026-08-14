@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -158.8,
-  "ciclos": 1264,
-  "greens": 790,
+  "saldo": -157.8,
+  "ciclos": 1265,
+  "greens": 791,
   "redsCiclo": 196,
   "aborts": 0,
   "descartes": 278,
   "historico": [
+   {
+    "quando": "2026-08-14T19:16:26.223Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · França x Países Baixos @1.98 (tiro 2) · gatilho: odd 1.98"
+   },
    {
     "quando": "2026-08-14T19:01:35.826Z",
     "resultado": "RED_CICLO",
@@ -3968,52 +3974,17 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :41) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-30T10:27:43.796Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: coluna :19"
    }
   ],
   "consumidas": {
-   "copa": 1786734095720
+   "copa": 1786734095720,
+   "euro": 1786734986029
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:02",
-     "jogo": "Romênia x Hungria",
-     "odd": 2.25
-    },
-    {
-     "h": "20:05",
-     "jogo": "França x Países Baixos",
-     "odd": 1.98
-    },
-    {
-     "h": "20:08",
-     "jogo": "Áustria x Itália",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "odd 1.98",
-   "alvo": {
-    "h": "20:02",
-    "jogo": "Romênia x Hungria",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1786734097926
-   },
-   "iniciadoEm": 1786734097926
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786734095720,
    "premier": 1786728219129,
-   "euro": 1786729273827,
+   "euro": 1786734986029,
    "super": 1786651869987
   },
   "dias": {
@@ -4047,7 +4018,7 @@
    "2026-08-11": 6.9,
    "2026-08-12": -8.2,
    "2026-08-13": 2.5,
-   "2026-08-14": -23.1
+   "2026-08-14": -22.1
   },
   "_gatilhoAtual": {
    "tipo": "seq",
