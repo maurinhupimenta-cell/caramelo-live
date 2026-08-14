@@ -7639,7 +7639,37 @@
   "consumidas": {
    "euro": 1786737863221
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:28",
+     "jogo": "Nova Zelândia x Argélia",
+     "odd": 1.95
+    },
+    {
+     "h": "21:31",
+     "jogo": "Japão x Colômbia",
+     "odd": 2.02
+    },
+    {
+     "h": "21:34",
+     "jogo": "Inglaterra x Equador",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "coluna :31",
+   "alvo": {
+    "h": "21:28",
+    "jogo": "Nova Zelândia x Argélia",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1786738950127
+   },
+   "iniciadoEm": 1786738950127
+  },
   "cooldown": {
    "euro": 1786737863221,
    "super": 1786733530224,
@@ -7680,7 +7710,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":09",
+   "chave": ":31",
    "n": 21,
    "start": 2
   },
