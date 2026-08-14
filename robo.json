@@ -7642,8 +7642,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "23:41",
@@ -7663,13 +7663,21 @@
    ],
    "gatilho": "odd 1.8",
    "alvo": {
-    "h": "23:41",
-    "jogo": "Itália x Sérvia",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1786746748327
+    "h": "23:44",
+    "jogo": "Suíça x Espanha",
+    "odd": 1.8,
+    "unidades": 2,
+    "desde": 1786747463427
    },
-   "iniciadoEm": 1786746748327
+   "iniciadoEm": 1786746748327,
+   "tiros": [
+    {
+     "h": "23:41",
+     "jogo": "Itália x Sérvia",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786741703728,
@@ -7713,7 +7721,7 @@
    "tipo": "odd",
    "chave": "1.8",
    "n": 10,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
