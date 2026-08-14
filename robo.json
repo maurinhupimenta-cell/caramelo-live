@@ -7640,7 +7640,37 @@
    "copa": 1786739847424,
    "super": 1786741549825
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:05",
+     "jogo": "Países Baixos x Eslováquia",
+     "odd": 1.93
+    },
+    {
+     "h": "22:08",
+     "jogo": "Alemanha x Itália",
+     "odd": 1.95
+    },
+    {
+     "h": "22:11",
+     "jogo": "Geórgia x Inglaterra",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "seq RRRRR",
+   "alvo": {
+    "h": "22:05",
+    "jogo": "Países Baixos x Eslováquia",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1786741574728
+   },
+   "iniciadoEm": 1786741574728
+  },
   "cooldown": {
    "euro": 1786737863221,
    "super": 1786741549825,
