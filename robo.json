@@ -3981,8 +3981,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "16:19",
@@ -4002,13 +4002,21 @@
    ],
    "gatilho": "time Países Baixos",
    "alvo": {
-    "h": "16:19",
-    "jogo": "Países Baixos x Costa do Marfim",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1786720870230
+    "h": "16:22",
+    "jogo": "Austrália x Egito",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1786721173530
    },
-   "iniciadoEm": 1786720870230
+   "iniciadoEm": 1786720870230,
+   "tiros": [
+    {
+     "h": "16:19",
+     "jogo": "Países Baixos x Costa do Marfim",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786647974389,
@@ -4050,9 +4058,9 @@
    "2026-08-14": 1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Países Baixos",
-   "n": 14,
+   "tipo": "odd",
+   "chave": "2.1",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
