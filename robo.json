@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -156.1,
-  "ciclos": 1267,
-  "greens": 792,
+  "saldo": -154.1,
+  "ciclos": 1268,
+  "greens": 793,
   "redsCiclo": 196,
   "aborts": 0,
   "descartes": 279,
   "historico": [
+   {
+    "quando": "2026-08-14T20:46:26.221Z",
+    "resultado": "GREEN",
+    "unidades": 2,
+    "detalhe": "copa · Suécia x Áustria @2.5 (tiro 2) · gatilho: coluna :43"
+   },
    {
     "quando": "2026-08-14T20:33:51.923Z",
     "resultado": "GREEN_OBS",
@@ -3968,58 +3974,14 @@
     "resultado": "GREEN",
     "unidades": 2,
     "detalhe": "copa · Austrália x Irã @2.5 (tiro 2) · gatilho: odd 2.5"
-   },
-   {
-    "quando": "2026-07-30T11:27:45.390Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho odd 2.5) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "super": 1786737385831
+   "copa": 1786740385933
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "21:40",
-     "jogo": "República Tcheca x Senegal",
-     "odd": 2.55
-    },
-    {
-     "h": "21:43",
-     "jogo": "Suécia x Áustria",
-     "odd": 2.5
-    },
-    {
-     "h": "21:46",
-     "jogo": "Costa do Marfim x Escócia",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "coluna :43",
-   "alvo": {
-    "h": "21:43",
-    "jogo": "Suécia x Áustria",
-    "odd": 2.5,
-    "unidades": 2,
-    "desde": 1786740383931
-   },
-   "iniciadoEm": 1786739634221,
-   "tiros": [
-    {
-     "h": "21:40",
-     "jogo": "República Tcheca x Senegal",
-     "odd": 2.55,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1786734095720,
+   "copa": 1786740385933,
    "premier": 1786728219129,
    "euro": 1786734986029,
    "super": 1786737385831
@@ -4055,7 +4017,7 @@
    "2026-08-11": 6.9,
    "2026-08-12": -8.2,
    "2026-08-13": 2.5,
-   "2026-08-14": -20.4
+   "2026-08-14": -18.4
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
@@ -7751,7 +7713,7 @@
    "tipo": "odd",
    "chave": "1.85",
    "n": 11,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
