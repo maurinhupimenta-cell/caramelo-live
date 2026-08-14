@@ -3977,7 +3977,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:15",
+     "jogo": "Aston x Watford",
+     "odd": 2.4
+    },
+    {
+     "h": "16:18",
+     "jogo": "Everton x Wolverhampton",
+     "odd": 2.02
+    },
+    {
+     "h": "16:21",
+     "jogo": "Leicester x Tottenham",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "coluna :18",
+   "alvo": {
+    "h": "16:15",
+    "jogo": "Aston x Watford",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1786719969926
+   },
+   "iniciadoEm": 1786719969926
+  },
   "cooldown": {
    "copa": 1786647974389,
    "premier": 1786648695385,
@@ -4018,9 +4048,9 @@
    "2026-08-14": 0
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Turquia",
-   "n": 19,
+   "tipo": "coluna",
+   "chave": ":18",
+   "n": 16,
    "start": 3
   },
   "_obs": {
@@ -7642,7 +7672,37 @@
   "consumidas": {
    "euro": 1786719191621
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "15:58",
+     "jogo": "Portugal x Tunísia",
+     "odd": 2.1
+    },
+    {
+     "h": "16:01",
+     "jogo": "Uzbequistão x Paraguai",
+     "odd": 2.05
+    },
+    {
+     "h": "16:04",
+     "jogo": "África do Sul x Noruega",
+     "odd": 2
+    }
+   ],
+   "gatilho": "time Uzbequistão",
+   "alvo": {
+    "h": "15:58",
+    "jogo": "Portugal x Tunísia",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1786719194233
+   },
+   "iniciadoEm": 1786719194233
+  },
   "cooldown": {
    "euro": 1786719191621,
    "super": 1786649173782,
@@ -7685,7 +7745,7 @@
    "tipo": "time",
    "chave": "Uzbequistão",
    "n": 10,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
