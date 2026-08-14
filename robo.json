@@ -4028,13 +4028,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -133.1,
-  "ciclos": 1273,
-  "greens": 869,
+  "saldo": -132.2,
+  "ciclos": 1274,
+  "greens": 870,
   "redsCiclo": 144,
   "aborts": 0,
   "descartes": 260,
   "historico": [
+   {
+    "quando": "2026-08-14T21:50:23.625Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · Bélgica x Equador @1.93 (tiro 1) · gatilho: coluna :49"
+   },
    {
     "quando": "2026-08-14T21:08:23.925Z",
     "resultado": "GREEN",
@@ -7628,54 +7634,19 @@
     "resultado": "GREEN",
     "unidades": 0.7,
     "detalhe": "euro · Espanha x Croácia @1.86 (tiro 2) · gatilho: coluna :29"
-   },
-   {
-    "quando": "2026-07-29T10:30:46.769Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :29) — liga REARMADA"
    }
   ],
   "consumidas": {
    "super": 1786741549825,
-   "euro": 1786741703728
+   "euro": 1786741703728,
+   "copa": 1786744223432
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:46",
-     "jogo": "Bélgica x Equador",
-     "odd": 1.93
-    },
-    {
-     "h": "22:49",
-     "jogo": "Egito x Coreia do Sul",
-     "odd": 2.02
-    },
-    {
-     "h": "22:52",
-     "jogo": "Jordânia x Argentina",
-     "odd": 1.9
-    }
-   ],
-   "gatilho": "coluna :49",
-   "alvo": {
-    "h": "22:46",
-    "jogo": "Bélgica x Equador",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1786743564532
-   },
-   "iniciadoEm": 1786743564532
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786741703728,
    "super": 1786741549825,
    "premier": 1786731286829,
-   "copa": 1786739847424
+   "copa": 1786744223432
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7707,13 +7678,13 @@
    "2026-08-11": -11.1,
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
-   "2026-08-14": 7.5
+   "2026-08-14": 8.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":49",
-   "n": 22,
-   "start": 3
+   "tipo": "seq",
+   "chave": "RRGRG",
+   "n": 9,
+   "start": 1
   },
   "_obs": {}
  }
