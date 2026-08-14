@@ -4029,13 +4029,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -145.4,
-  "ciclos": 1258,
-  "greens": 856,
+  "saldo": -144.4,
+  "ciclos": 1259,
+  "greens": 857,
   "redsCiclo": 144,
   "aborts": 0,
   "descartes": 258,
   "historico": [
+   {
+    "quando": "2026-08-14T16:00:13.223Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Dinamarca x Romênia @1.98 (tiro 1) · gatilho: coluna :56"
+   },
    {
     "quando": "2026-08-14T15:53:12.933Z",
     "resultado": "GREEN_OBS",
@@ -7629,21 +7635,16 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho time Hungria) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-29T05:24:49.863Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "super · Rio de Janeiro x Quito @2.05 (tiro 2) · gatilho: time Agua Branca"
    }
   ],
   "consumidas": {
    "copa": 1786720035925,
-   "super": 1786720313533
+   "super": 1786720313533,
+   "euro": 1786723213027
   },
   "ciclo": null,
   "cooldown": {
-   "euro": 1786719191621,
+   "euro": 1786723213027,
    "super": 1786720313533,
    "premier": 1786643084585,
    "copa": 1786720035925
@@ -7678,19 +7679,14 @@
    "2026-08-11": -11.1,
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
-   "2026-08-14": -4.8
+   "2026-08-14": -3.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRR",
-   "n": 19,
+   "tipo": "coluna",
+   "chave": ":56",
+   "n": 16,
    "start": 1
   },
-  "_obs": {
-   "euro": {
-    "desde": 1786722792931,
-    "gatilho": "coluna :56"
-   }
-  }
+  "_obs": {}
  }
 }
