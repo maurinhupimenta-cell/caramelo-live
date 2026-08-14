@@ -3980,7 +3980,37 @@
    "copa": 1786734095720,
    "euro": 1786734986029
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:52",
+     "jogo": "La Plata x Santos",
+     "odd": 2.7
+    },
+    {
+     "h": "20:55",
+     "jogo": "Belo Horizonte x Buenos Aires",
+     "odd": 1.98
+    },
+    {
+     "h": "20:58",
+     "jogo": "La Plata x Penarol",
+     "odd": 2.75
+    }
+   ],
+   "gatilho": "odd 1.98",
+   "alvo": {
+    "h": "20:52",
+    "jogo": "La Plata x Santos",
+    "odd": 2.7,
+    "unidades": 1,
+    "desde": 1786737143423
+   },
+   "iniciadoEm": 1786737143423
+  },
   "cooldown": {
    "copa": 1786734095720,
    "premier": 1786728219129,
@@ -4021,9 +4051,9 @@
    "2026-08-14": -22.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGRR",
-   "n": 9,
+   "tipo": "odd",
+   "chave": "1.98",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
@@ -7711,10 +7741,10 @@
    "2026-08-14": 3.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":50",
-   "n": 20,
-   "start": 3
+   "tipo": "odd",
+   "chave": "1.95",
+   "n": 19,
+   "start": 2
   },
   "_obs": {}
  }
