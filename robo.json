@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -140.2,
-  "ciclos": 1258,
-  "greens": 788,
+  "saldo": -139.1,
+  "ciclos": 1259,
+  "greens": 789,
   "redsCiclo": 193,
   "aborts": 0,
   "descartes": 277,
   "historico": [
+   {
+    "quando": "2026-08-14T16:37:14.624Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Arábia Saudita x Portugal @2.07 (tiro 1) · gatilho: time Curação"
+   },
    {
     "quando": "2026-08-14T16:32:11.220Z",
     "resultado": "GREEN_OBS",
@@ -3968,50 +3974,15 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho time La Boca) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-30T08:31:45.097Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :41) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "euro": 1786724177129
+   "euro": 1786724177129,
+   "copa": 1786725434424
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:34",
-     "jogo": "Arábia Saudita x Portugal",
-     "odd": 2.07
-    },
-    {
-     "h": "17:37",
-     "jogo": "Canadá x Curação",
-     "odd": 2.25
-    },
-    {
-     "h": "17:40",
-     "jogo": "Suíça x Bósnia e Herzegovina",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Curação",
-   "alvo": {
-    "h": "17:34",
-    "jogo": "Arábia Saudita x Portugal",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1786725133821
-   },
-   "iniciadoEm": 1786725133821
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1786721352326,
+   "copa": 1786725434424,
    "premier": 1786720851822,
    "euro": 1786724177129,
    "super": 1786651869987
@@ -4047,13 +4018,13 @@
    "2026-08-11": 6.9,
    "2026-08-12": -8.2,
    "2026-08-13": 2.5,
-   "2026-08-14": -4.5
+   "2026-08-14": -3.4
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Curação",
    "n": 10,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
