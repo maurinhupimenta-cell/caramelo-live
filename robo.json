@@ -7638,11 +7638,40 @@
    }
   ],
   "consumidas": {
-   "euro": 1786723213027,
    "super": 1786724355033,
    "copa": 1786725131230
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:59",
+     "jogo": "Itália x Áustria",
+     "odd": 2.02
+    },
+    {
+     "h": "18:02",
+     "jogo": "Croácia x Portugal",
+     "odd": 1.93
+    },
+    {
+     "h": "18:05",
+     "jogo": "Alemanha x França",
+     "odd": 1.83
+    }
+   ],
+   "gatilho": "seq GRGGR",
+   "alvo": {
+    "h": "17:59",
+    "jogo": "Itália x Áustria",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1786726815331
+   },
+   "iniciadoEm": 1786726815331
+  },
   "cooldown": {
    "euro": 1786723213027,
    "super": 1786724355033,
@@ -7682,9 +7711,9 @@
    "2026-08-14": -1.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":31",
-   "n": 17,
+   "tipo": "seq",
+   "chave": "GRGGR",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
