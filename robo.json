@@ -4060,12 +4060,18 @@
  },
  "ambas": {
   "saldo": -137.1,
-  "ciclos": 1268,
+  "ciclos": 1269,
   "greens": 865,
   "redsCiclo": 144,
   "aborts": 0,
-  "descartes": 259,
+  "descartes": 260,
   "historico": [
+   {
+    "quando": "2026-08-14T19:54:26.030Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho odd 1.95) — liga REARMADA"
+   },
    {
     "quando": "2026-08-14T19:54:23.926Z",
     "resultado": "DESCARTADO",
@@ -7659,12 +7665,6 @@
     "resultado": "GREEN",
     "unidades": 0.5,
     "detalhe": "super · Asuncion x Buenos Aires @1.87 (tiro 3) · gatilho: time Agua Branca"
-   },
-   {
-    "quando": "2026-07-29T08:47:45.559Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Jordânia"
    }
   ],
   "consumidas": {
@@ -7676,30 +7676,30 @@
    "apostado": 0,
    "plano": [
     {
-     "h": "20:47",
-     "jogo": "Inglaterra x Alemanha",
-     "odd": 1.83
-    },
-    {
-     "h": "20:50",
-     "jogo": "Países Baixos x Romênia",
-     "odd": 1.83
-    },
-    {
      "h": "20:53",
      "jogo": "Geórgia x Turquia",
      "odd": 2.15
+    },
+    {
+     "h": "20:56",
+     "jogo": "Suíça x Eslováquia",
+     "odd": 1.95
+    },
+    {
+     "h": "20:59",
+     "jogo": "Albânia x Sérvia",
+     "odd": 2.29
     }
    ],
-   "gatilho": "coluna :50",
+   "gatilho": "odd 1.95",
    "alvo": {
-    "h": "20:47",
-    "jogo": "Inglaterra x Alemanha",
-    "odd": 1.83,
+    "h": "20:53",
+    "jogo": "Geórgia x Turquia",
+    "odd": 2.15,
     "unidades": 1,
-    "desde": 1786736330533
+    "desde": 1786737272720
    },
-   "iniciadoEm": 1786736330533
+   "iniciadoEm": 1786737272720
   },
   "cooldown": {
    "euro": 1786732645924,
