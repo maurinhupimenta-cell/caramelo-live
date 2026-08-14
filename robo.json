@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -139.1,
-  "ciclos": 1259,
+  "saldo": -146.1,
+  "ciclos": 1260,
   "greens": 789,
-  "redsCiclo": 193,
+  "redsCiclo": 194,
   "aborts": 0,
   "descartes": 277,
   "historico": [
+   {
+    "quando": "2026-08-14T17:23:39.330Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: coluna :18"
+   },
    {
     "quando": "2026-08-14T16:37:14.624Z",
     "resultado": "GREEN",
@@ -3968,65 +3974,16 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: coluna :41"
-   },
-   {
-    "quando": "2026-07-30T08:40:07.993Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho time La Boca) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "copa": 1786725434424
+   "copa": 1786725434424,
+   "premier": 1786728219129
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "18:15",
-     "jogo": "Brentford x Brighton",
-     "odd": 2.1
-    },
-    {
-     "h": "18:18",
-     "jogo": "Watford x Chelsea",
-     "odd": 2.25
-    },
-    {
-     "h": "18:21",
-     "jogo": "City x Islington",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "coluna :18",
-   "alvo": {
-    "h": "18:21",
-    "jogo": "City x Islington",
-    "odd": 2.1,
-    "unidades": 4,
-    "desde": 1786728057525
-   },
-   "iniciadoEm": 1786727206523,
-   "tiros": [
-    {
-     "h": "18:15",
-     "jogo": "Brentford x Brighton",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "18:18",
-     "jogo": "Watford x Chelsea",
-     "odd": 2.25,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786725434424,
-   "premier": 1786720851822,
+   "premier": 1786728219129,
    "euro": 1786724177129,
    "super": 1786651869987
   },
@@ -4061,7 +4018,7 @@
    "2026-08-11": 6.9,
    "2026-08-12": -8.2,
    "2026-08-13": 2.5,
-   "2026-08-14": -3.4
+   "2026-08-14": -10.4
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
