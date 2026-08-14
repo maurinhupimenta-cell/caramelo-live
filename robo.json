@@ -369,12 +369,18 @@
  },
  "o25": {
   "saldo": -140.2,
-  "ciclos": 1257,
+  "ciclos": 1258,
   "greens": 788,
   "redsCiclo": 193,
   "aborts": 0,
-  "descartes": 276,
+  "descartes": 277,
   "historico": [
+   {
+    "quando": "2026-08-14T16:32:11.220Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Curação) — liga REARMADA"
+   },
    {
     "quando": "2026-08-14T16:16:17.324Z",
     "resultado": "GREEN",
@@ -3968,18 +3974,42 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :41) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-30T08:26:39.190Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "premier · Islington x Brentford @2.25 (tiro 2) · gatilho: time Tottenham"
    }
   ],
   "consumidas": {
    "euro": 1786724177129
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:34",
+     "jogo": "Arábia Saudita x Portugal",
+     "odd": 2.07
+    },
+    {
+     "h": "17:37",
+     "jogo": "Canadá x Curação",
+     "odd": 2.25
+    },
+    {
+     "h": "17:40",
+     "jogo": "Suíça x Bósnia e Herzegovina",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time Curação",
+   "alvo": {
+    "h": "17:34",
+    "jogo": "Arábia Saudita x Portugal",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1786725133821
+   },
+   "iniciadoEm": 1786725133821
+  },
   "cooldown": {
    "copa": 1786721352326,
    "premier": 1786720851822,
@@ -4020,21 +4050,27 @@
    "2026-08-14": -4.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRRG",
+   "tipo": "time",
+   "chave": "Curação",
    "n": 10,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -143.1,
-  "ciclos": 1260,
-  "greens": 858,
+  "saldo": -142,
+  "ciclos": 1261,
+  "greens": 859,
   "redsCiclo": 144,
   "aborts": 0,
   "descartes": 258,
   "historico": [
+   {
+    "quando": "2026-08-14T16:32:11.427Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Cabo Verde x Escócia @2.1 (tiro 1) · gatilho: coluna :31"
+   },
    {
     "quando": "2026-08-14T16:19:15.225Z",
     "resultado": "GREEN",
@@ -7628,54 +7664,19 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho odd 1.93) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-29T05:55:48.157Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "euro · Ucrânia x Dinamarca @2.05 (tiro 3) · gatilho: time Hungria"
    }
   ],
   "consumidas": {
    "euro": 1786723213027,
-   "super": 1786724355033
+   "super": 1786724355033,
+   "copa": 1786725131230
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:28",
-     "jogo": "Cabo Verde x Escócia",
-     "odd": 2.1
-    },
-    {
-     "h": "17:31",
-     "jogo": "Equador x Canadá",
-     "odd": 1.98
-    },
-    {
-     "h": "17:34",
-     "jogo": "Arábia Saudita x Portugal",
-     "odd": 1.85
-    }
-   ],
-   "gatilho": "coluna :31",
-   "alvo": {
-    "h": "17:28",
-    "jogo": "Cabo Verde x Escócia",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1786724530631
-   },
-   "iniciadoEm": 1786724530631
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786723213027,
    "super": 1786724355033,
    "premier": 1786643084585,
-   "copa": 1786720035925
+   "copa": 1786725131230
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7707,13 +7708,13 @@
    "2026-08-11": -11.1,
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
-   "2026-08-14": -2.5
+   "2026-08-14": -1.4
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":31",
    "n": 17,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
