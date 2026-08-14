@@ -4028,13 +4028,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -134,
-  "ciclos": 1272,
-  "greens": 868,
+  "saldo": -133.1,
+  "ciclos": 1273,
+  "greens": 869,
   "redsCiclo": 144,
   "aborts": 0,
   "descartes": 260,
   "historico": [
+   {
+    "quando": "2026-08-14T21:08:23.925Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Países Baixos x Eslováquia @1.93 (tiro 1) · gatilho: seq RRRRR"
+   },
    {
     "quando": "2026-08-14T21:05:50.022Z",
     "resultado": "GREEN",
@@ -7628,51 +7634,16 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :29) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-29T10:01:45.866Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "copa · Irã x Bósnia e Herzegovina @2.07 (tiro 1) · gatilho: odd 1.93"
    }
   ],
   "consumidas": {
    "copa": 1786739847424,
-   "super": 1786741549825
+   "super": 1786741549825,
+   "euro": 1786741703728
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:05",
-     "jogo": "Países Baixos x Eslováquia",
-     "odd": 1.93
-    },
-    {
-     "h": "22:08",
-     "jogo": "Alemanha x Itália",
-     "odd": 1.95
-    },
-    {
-     "h": "22:11",
-     "jogo": "Geórgia x Inglaterra",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "seq RRRRR",
-   "alvo": {
-    "h": "22:05",
-    "jogo": "Países Baixos x Eslováquia",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1786741574728
-   },
-   "iniciadoEm": 1786741574728
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1786737863221,
+   "euro": 1786741703728,
    "super": 1786741549825,
    "premier": 1786731286829,
    "copa": 1786739847424
@@ -7707,7 +7678,7 @@
    "2026-08-11": -11.1,
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
-   "2026-08-14": 6.6
+   "2026-08-14": 7.5
   },
   "_gatilhoAtual": {
    "tipo": "seq",
