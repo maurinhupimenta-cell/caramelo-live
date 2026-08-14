@@ -7640,7 +7640,37 @@
   "consumidas": {
    "copa": 1786744223432
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:41",
+     "jogo": "Itália x Sérvia",
+     "odd": 2.15
+    },
+    {
+     "h": "23:44",
+     "jogo": "Suíça x Espanha",
+     "odd": 1.8
+    },
+    {
+     "h": "23:47",
+     "jogo": "Bélgica x Eslováquia",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "odd 1.8",
+   "alvo": {
+    "h": "23:41",
+    "jogo": "Itália x Sérvia",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1786746748327
+   },
+   "iniciadoEm": 1786746748327
+  },
   "cooldown": {
    "euro": 1786741703728,
    "super": 1786741549825,
@@ -7680,10 +7710,10 @@
    "2026-08-14": 8.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGRG",
-   "n": 9,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.8",
+   "n": 10,
+   "start": 3
   },
   "_obs": {}
  }
