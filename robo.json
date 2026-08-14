@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -157.8,
-  "ciclos": 1265,
-  "greens": 791,
+  "saldo": -156.1,
+  "ciclos": 1266,
+  "greens": 792,
   "redsCiclo": 196,
   "aborts": 0,
   "descartes": 278,
   "historico": [
+   {
+    "quando": "2026-08-14T19:56:26.026Z",
+    "resultado": "GREEN",
+    "unidades": 1.7,
+    "detalhe": "super · La Plata x Santos @2.7 (tiro 1) · gatilho: odd 1.98"
+   },
    {
     "quando": "2026-08-14T19:16:26.223Z",
     "resultado": "GREEN",
@@ -3968,54 +3974,19 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: coluna :41"
-   },
-   {
-    "quando": "2026-07-30T10:29:24.194Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :41) — liga REARMADA"
    }
   ],
   "consumidas": {
    "copa": 1786734095720,
-   "euro": 1786734986029
+   "euro": 1786734986029,
+   "super": 1786737385831
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "20:52",
-     "jogo": "La Plata x Santos",
-     "odd": 2.7
-    },
-    {
-     "h": "20:55",
-     "jogo": "Belo Horizonte x Buenos Aires",
-     "odd": 1.98
-    },
-    {
-     "h": "20:58",
-     "jogo": "La Plata x Penarol",
-     "odd": 2.75
-    }
-   ],
-   "gatilho": "odd 1.98",
-   "alvo": {
-    "h": "20:52",
-    "jogo": "La Plata x Santos",
-    "odd": 2.7,
-    "unidades": 1,
-    "desde": 1786737143423
-   },
-   "iniciadoEm": 1786737143423
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786734095720,
    "premier": 1786728219129,
    "euro": 1786734986029,
-   "super": 1786651869987
+   "super": 1786737385831
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4048,7 +4019,7 @@
    "2026-08-11": 6.9,
    "2026-08-12": -8.2,
    "2026-08-13": 2.5,
-   "2026-08-14": -22.1
+   "2026-08-14": -20.4
   },
   "_gatilhoAtual": {
    "tipo": "odd",
