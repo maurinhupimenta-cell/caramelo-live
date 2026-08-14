@@ -3982,8 +3982,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "18:32",
@@ -4003,13 +4003,21 @@
    ],
    "gatilho": "seq RRRRG",
    "alvo": {
-    "h": "18:32",
-    "jogo": "República Tcheca x Eslováquia",
-    "odd": 2.55,
-    "unidades": 1,
-    "desde": 1786728534925
+    "h": "18:35",
+    "jogo": "Áustria x Romênia",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1786728912430
    },
-   "iniciadoEm": 1786728534925
+   "iniciadoEm": 1786728534925,
+   "tiros": [
+    {
+     "h": "18:32",
+     "jogo": "República Tcheca x Eslováquia",
+     "odd": 2.55,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786725434424,
@@ -7670,7 +7678,37 @@
   "consumidas": {
    "euro": 1786726993120
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:34",
+     "jogo": "Nova Zelândia x Áustria",
+     "odd": 1.93
+    },
+    {
+     "h": "18:37",
+     "jogo": "Uzbequistão x África do Sul",
+     "odd": 2.1
+    },
+    {
+     "h": "18:40",
+     "jogo": "Equador x México",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "time Uzbequistão",
+   "alvo": {
+    "h": "18:34",
+    "jogo": "Nova Zelândia x Áustria",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1786728731825
+   },
+   "iniciadoEm": 1786728731825
+  },
   "cooldown": {
    "euro": 1786726993120,
    "super": 1786724355033,
@@ -7710,8 +7748,8 @@
    "2026-08-14": -0.4
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGGR",
+   "tipo": "time",
+   "chave": "Uzbequistão",
    "n": 12,
    "start": 1
   },
