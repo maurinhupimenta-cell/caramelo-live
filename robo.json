@@ -3980,7 +3980,37 @@
    "premier": 1786720851822,
    "copa": 1786721352326
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:11",
+     "jogo": "Ucrânia x Turquia",
+     "odd": 2.5
+    },
+    {
+     "h": "17:14",
+     "jogo": "Itália x Polônia",
+     "odd": 2.5
+    },
+    {
+     "h": "17:17",
+     "jogo": "Eslovênia x República Tcheca",
+     "odd": 3
+    }
+   ],
+   "gatilho": "seq RGRRG",
+   "alvo": {
+    "h": "17:11",
+    "jogo": "Ucrânia x Turquia",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1786723697123
+   },
+   "iniciadoEm": 1786723697123
+  },
   "cooldown": {
    "copa": 1786721352326,
    "premier": 1786720851822,
@@ -4021,9 +4051,9 @@
    "2026-08-14": -6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.1",
-   "n": 11,
+   "tipo": "seq",
+   "chave": "RGRRG",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
