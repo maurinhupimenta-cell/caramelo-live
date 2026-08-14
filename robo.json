@@ -7670,7 +7670,37 @@
    "euro": 1786737863221,
    "copa": 1786739847424
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:55",
+     "jogo": "Bogota x Agua Branca",
+     "odd": 2.05
+    },
+    {
+     "h": "21:58",
+     "jogo": "Buenos Aires x Rio de Janeiro",
+     "odd": 1.85
+    },
+    {
+     "h": "22:01",
+     "jogo": "La Plata x Itaquera",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "odd 1.85",
+   "alvo": {
+    "h": "21:55",
+    "jogo": "Bogota x Agua Branca",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1786740375831
+   },
+   "iniciadoEm": 1786740375831
+  },
   "cooldown": {
    "euro": 1786737863221,
    "super": 1786733530224,
@@ -7710,9 +7740,9 @@
    "2026-08-14": 5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":49",
-   "n": 21,
+   "tipo": "odd",
+   "chave": "1.85",
+   "n": 11,
    "start": 3
   },
   "_obs": {}
