@@ -369,12 +369,18 @@
  },
  "o25": {
   "saldo": -151.8,
-  "ciclos": 1262,
+  "ciclos": 1263,
   "greens": 790,
   "redsCiclo": 195,
   "aborts": 0,
-  "descartes": 277,
+  "descartes": 278,
   "historico": [
+   {
+    "quando": "2026-08-14T18:53:10.130Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho odd 1.98) — liga REARMADA"
+   },
    {
     "quando": "2026-08-14T17:50:12.932Z",
     "resultado": "GREEN",
@@ -3968,12 +3974,6 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "premier · Liverpool x Leicester @2.25 (tiro 1) · gatilho: time Leicester"
-   },
-   {
-    "quando": "2026-07-30T09:18:43.094Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "copa · Curação x Turquia @2.2 (tiro 1) · gatilho: odd 2.5"
    }
   ],
   "consumidas": {},
@@ -4053,7 +4053,12 @@
    "n": 9,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1786733590130,
+    "gatilho": "odd 1.98"
+   }
+  }
  },
  "ambas": {
   "saldo": -137.8,
