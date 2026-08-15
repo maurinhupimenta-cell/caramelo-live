@@ -369,12 +369,18 @@
  },
  "o25": {
   "saldo": -149.8,
-  "ciclos": 1271,
+  "ciclos": 1272,
   "greens": 796,
   "redsCiclo": 196,
   "aborts": 0,
-  "descartes": 279,
+  "descartes": 280,
   "historico": [
+   {
+    "quando": "2026-08-15T01:05:58.322Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho placar 1-0 / 0-1) — liga REARMADA"
+   },
    {
     "quando": "2026-08-14T22:52:40.026Z",
     "resultado": "GREEN",
@@ -3968,12 +3974,6 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "euro · Espanha x Geórgia @2.5 (tiro 1) · gatilho: coluna :41"
-   },
-   {
-    "quando": "2026-07-30T11:51:44.997Z",
-    "resultado": "GREEN",
-    "unidades": 2,
-    "detalhe": "super · Guayaquil x Avellaneda @2.5 (tiro 2) · gatilho: coluna :49"
    }
   ],
   "consumidas": {},
@@ -4023,7 +4023,12 @@
    "n": 18,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1786755958322,
+    "gatilho": "placar 1-0 / 0-1"
+   }
+  }
  },
  "ambas": {
   "saldo": -129.7,
