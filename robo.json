@@ -385,13 +385,19 @@
   }
  },
  "o25": {
-  "saldo": -142.2,
-  "ciclos": 1276,
-  "greens": 800,
+  "saldo": -141.1,
+  "ciclos": 1277,
+  "greens": 801,
   "redsCiclo": 196,
   "aborts": 0,
   "descartes": 280,
   "historico": [
+   {
+    "quando": "2026-08-15T03:35:52.221Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "premier · Chelsea x Wolverhampton @2.07 (tiro 1) · gatilho: time Leicester"
+   },
    {
     "quando": "2026-08-15T02:36:47.225Z",
     "resultado": "GREEN",
@@ -3985,51 +3991,16 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho coluna :54) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-30T13:47:02.193Z",
-    "resultado": "GREEN",
-    "unidades": 3,
-    "detalhe": "euro · Romênia x Suíça @2.5 (tiro 3) · gatilho: coluna :41"
    }
   ],
   "consumidas": {
-   "super": 1786761407031
+   "super": 1786761407031,
+   "premier": 1786764952020
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:33",
-     "jogo": "Chelsea x Wolverhampton",
-     "odd": 2.07
-    },
-    {
-     "h": "04:36",
-     "jogo": "Burnley x Leicester",
-     "odd": 2.2
-    },
-    {
-     "h": "04:39",
-     "jogo": "Southampton x Aston",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "time Leicester",
-   "alvo": {
-    "h": "04:33",
-    "jogo": "Chelsea x Wolverhampton",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1786764446922
-   },
-   "iniciadoEm": 1786764446922
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786760483832,
-   "premier": 1786760845324,
+   "premier": 1786764952020,
    "euro": 1786744587629,
    "super": 1786761407031
   },
@@ -4064,13 +4035,14 @@
    "2026-08-11": 6.9,
    "2026-08-12": -8.2,
    "2026-08-13": 2.5,
-   "2026-08-14": -6.5
+   "2026-08-14": -6.5,
+   "2026-08-15": 1.1
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.15",
    "n": 9,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
