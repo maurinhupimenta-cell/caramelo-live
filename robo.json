@@ -7658,8 +7658,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "21:19",
@@ -7679,13 +7679,21 @@
    ],
    "gatilho": "seq RGRGG",
    "alvo": {
-    "h": "21:19",
-    "jogo": "Buenos Aires x Itaquera",
+    "h": "21:22",
+    "jogo": "Agua Branca x Santiago",
     "odd": 1.9,
-    "unidades": 1,
-    "desde": 1786825229053
+    "unidades": 2,
+    "desde": 1786825407158
    },
-   "iniciadoEm": 1786825229053
+   "iniciadoEm": 1786825229053,
+   "tiros": [
+    {
+     "h": "21:19",
+     "jogo": "Buenos Aires x Itaquera",
+     "odd": 1.9,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786824629060,
@@ -7728,8 +7736,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGRGG",
-   "n": 8,
+   "chave": "GRGGR",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
