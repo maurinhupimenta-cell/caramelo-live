@@ -7687,7 +7687,37 @@
    "copa": 1786765829422,
    "euro": 1786766369329
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:07",
+     "jogo": "Avellaneda x Montevideo",
+     "odd": 1.95
+    },
+    {
+     "h": "05:10",
+     "jogo": "La Boca x Lima",
+     "odd": 2.07
+    },
+    {
+     "h": "05:13",
+     "jogo": "Agua Branca x Belo Horizonte",
+     "odd": 1.83
+    }
+   ],
+   "gatilho": "time Avellaneda",
+   "alvo": {
+    "h": "05:07",
+    "jogo": "Avellaneda x Montevideo",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1786766783026
+   },
+   "iniciadoEm": 1786766783026
+  },
   "cooldown": {
    "euro": 1786766369329,
    "super": 1786760183128,
@@ -7729,8 +7759,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Itália",
-   "n": 9,
+   "chave": "Avellaneda",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
