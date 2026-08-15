@@ -7656,7 +7656,37 @@
    "super": 1786825586257,
    "premier": 1786826874055
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:49",
+     "jogo": "RD Congo x Uruguai",
+     "odd": 1.9
+    },
+    {
+     "h": "21:52",
+     "jogo": "Curação x Senegal",
+     "odd": 2.02
+    },
+    {
+     "h": "21:55",
+     "jogo": "Haiti x Espanha",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "time Senegal",
+   "alvo": {
+    "h": "21:49",
+    "jogo": "RD Congo x Uruguai",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1786826890656
+   },
+   "iniciadoEm": 1786826890656
+  },
   "cooldown": {
    "euro": 1786824629060,
    "super": 1786825586257,
@@ -7697,9 +7727,9 @@
    "2026-08-15": -24.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":57",
-   "n": 21,
+   "tipo": "time",
+   "chave": "Senegal",
+   "n": 23,
    "start": 2
   },
   "_obs": {}
