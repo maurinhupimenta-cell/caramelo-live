@@ -4066,18 +4066,24 @@
    "tipo": "odd",
    "chave": "2.29",
    "n": 9,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -158.3,
-  "ciclos": 1310,
-  "greens": 888,
+  "saldo": -157.2,
+  "ciclos": 1311,
+  "greens": 889,
   "redsCiclo": 150,
   "aborts": 0,
   "descartes": 272,
   "historico": [
+   {
+    "quando": "2026-08-15T21:28:31.473Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Penarol x Avellaneda @2.1 (tiro 1) · gatilho: coluna :25"
+   },
    {
     "quando": "2026-08-15T20:55:25.658Z",
     "resultado": "GREEN",
@@ -7671,52 +7677,17 @@
     "resultado": "GREEN",
     "unidades": 0.3,
     "detalhe": "super · Santiago x Belo Horizonte @1.83 (tiro 3) · gatilho: time Buenos Aires"
-   },
-   {
-    "quando": "2026-07-30T04:23:41.494Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "premier · Brighton x Islington @1.85 (tiro 1) · gatilho: odd 1.87"
    }
   ],
   "consumidas": {
    "premier": 1786826874055,
-   "copa": 1786827325553
+   "copa": 1786827325553,
+   "super": 1786829311354
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:25",
-     "jogo": "Penarol x Avellaneda",
-     "odd": 2.1
-    },
-    {
-     "h": "22:28",
-     "jogo": "Porto Alegre x Rio de Janeiro",
-     "odd": 2.15
-    },
-    {
-     "h": "22:31",
-     "jogo": "La Plata x Sao Paulo",
-     "odd": 2
-    }
-   ],
-   "gatilho": "coluna :25",
-   "alvo": {
-    "h": "22:25",
-    "jogo": "Penarol x Avellaneda",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1786829188656
-   },
-   "iniciadoEm": 1786829188656
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786824629060,
-   "super": 1786825586257,
+   "super": 1786829311354,
    "premier": 1786826874055,
    "copa": 1786827325553
   },
@@ -7751,7 +7722,7 @@
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
    "2026-08-14": 5.8,
-   "2026-08-15": -23.5
+   "2026-08-15": -22.4
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
