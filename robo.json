@@ -7653,11 +7653,40 @@
    }
   ],
   "consumidas": {
-   "copa": 1786817788958,
    "super": 1786819945465,
    "premier": 1786820389866
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:16",
+     "jogo": "Equador x Curação",
+     "odd": 1.93
+    },
+    {
+     "h": "20:19",
+     "jogo": "Marrocos x Senegal",
+     "odd": 2.1
+    },
+    {
+     "h": "20:22",
+     "jogo": "Tunísia x Espanha",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "time Senegal",
+   "alvo": {
+    "h": "20:16",
+    "jogo": "Equador x Curação",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1786821391353
+   },
+   "iniciadoEm": 1786821391353
+  },
   "cooldown": {
    "euro": 1786816765155,
    "super": 1786819945465,
@@ -7698,10 +7727,10 @@
    "2026-08-15": -12.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":57",
-   "n": 19,
-   "start": 1
+   "tipo": "time",
+   "chave": "Senegal",
+   "n": 22,
+   "start": 2
   },
   "_obs": {}
  }
