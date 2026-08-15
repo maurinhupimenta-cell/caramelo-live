@@ -4041,13 +4041,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -144.4,
-  "ciclos": 1295,
-  "greens": 880,
+  "saldo": -143.7,
+  "ciclos": 1296,
+  "greens": 881,
   "redsCiclo": 147,
   "aborts": 0,
   "descartes": 268,
   "historico": [
+   {
+    "quando": "2026-08-15T17:08:26.861Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "copa · Costa do Marfim x RD Congo @1.86 (tiro 2) · gatilho: seq RGGG"
+   },
    {
     "quando": "2026-08-15T06:17:23.320Z",
     "resultado": "GREEN",
@@ -7641,59 +7647,47 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-29T21:11:46.801Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho time Equador) — liga REARMADA"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "copa": 1786813706661
+  },
   "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "18:01",
-     "jogo": "Nova Zelândia x Uzbequistão",
-     "odd": 1.98
-    },
-    {
-     "h": "18:04",
-     "jogo": "Costa do Marfim x RD Congo",
+     "h": "18:14",
+     "jogo": "Países Baixos x Escócia",
      "odd": 1.86
     },
     {
-     "h": "18:07",
-     "jogo": "Panamá x Marrocos",
-     "odd": 2.05
+     "h": "18:17",
+     "jogo": "Alemanha x Polônia",
+     "odd": 2.07
+    },
+    {
+     "h": "18:20",
+     "jogo": "Áustria x Romênia",
+     "odd": 1.93
     }
    ],
-   "gatilho": "seq RGGG",
+   "gatilho": "coluna :17",
    "alvo": {
-    "h": "18:04",
-    "jogo": "Costa do Marfim x RD Congo",
+    "h": "18:14",
+    "jogo": "Países Baixos x Escócia",
     "odd": 1.86,
-    "unidades": 2,
-    "desde": 1786813586564
+    "unidades": 1,
+    "desde": 1786813710855
    },
-   "iniciadoEm": 1786813313161,
-   "tiros": [
-    {
-     "h": "18:01",
-     "jogo": "Nova Zelândia x Uzbequistão",
-     "odd": 1.98,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1786813710855
   },
   "cooldown": {
    "euro": 1786774643025,
    "super": 1786772758424,
    "premier": 1786774043926,
-   "copa": 1786773386028
+   "copa": 1786813706661
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7726,13 +7720,13 @@
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
    "2026-08-14": 5.8,
-   "2026-08-15": -9.6
+   "2026-08-15": -8.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGGR",
-   "n": 10,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":17",
+   "n": 18,
+   "start": 3
   },
   "_obs": {}
  }
