@@ -7637,7 +7637,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:07",
+     "jogo": "Montevideo x Quito",
+     "odd": 1.9
+    },
+    {
+     "h": "03:10",
+     "jogo": "Buenos Aires x Penarol",
+     "odd": 2.02
+    },
+    {
+     "h": "03:13",
+     "jogo": "Lima x Santiago",
+     "odd": 1.8
+    }
+   ],
+   "gatilho": "time Buenos Aires",
+   "alvo": {
+    "h": "03:07",
+    "jogo": "Montevideo x Quito",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1786759168030
+   },
+   "iniciadoEm": 1786759168030
+  },
   "cooldown": {
    "euro": 1786747705922,
    "super": 1786755147734,
@@ -7677,10 +7707,10 @@
    "2026-08-14": 10.9
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 8,
-   "start": 1
+   "tipo": "time",
+   "chave": "Buenos Aires",
+   "n": 9,
+   "start": 3
   },
   "_obs": {}
  }
