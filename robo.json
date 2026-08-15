@@ -3994,10 +3994,39 @@
    }
   ],
   "consumidas": {
-   "premier": 1786760845324,
    "super": 1786761407031
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:33",
+     "jogo": "Chelsea x Wolverhampton",
+     "odd": 2.07
+    },
+    {
+     "h": "04:36",
+     "jogo": "Burnley x Leicester",
+     "odd": 2.2
+    },
+    {
+     "h": "04:39",
+     "jogo": "Southampton x Aston",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "time Leicester",
+   "alvo": {
+    "h": "04:33",
+    "jogo": "Chelsea x Wolverhampton",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1786764446922
+   },
+   "iniciadoEm": 1786764446922
+  },
   "cooldown": {
    "copa": 1786760483832,
    "premier": 1786760845324,
@@ -4039,8 +4068,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Sao Paulo",
-   "n": 8,
+   "chave": "Leicester",
+   "n": 10,
    "start": 2
   },
   "_obs": {}
