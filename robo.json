@@ -7658,8 +7658,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "21:49",
@@ -7679,13 +7679,21 @@
    ],
    "gatilho": "time Senegal",
    "alvo": {
-    "h": "21:49",
-    "jogo": "RD Congo x Uruguai",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1786826890656
+    "h": "21:52",
+    "jogo": "Curação x Senegal",
+    "odd": 2.02,
+    "unidades": 2,
+    "desde": 1786827269863
    },
-   "iniciadoEm": 1786826890656
+   "iniciadoEm": 1786826890656,
+   "tiros": [
+    {
+     "h": "21:49",
+     "jogo": "RD Congo x Uruguai",
+     "odd": 1.9,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786824629060,
@@ -7729,8 +7737,8 @@
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Senegal",
-   "n": 23,
-   "start": 2
+   "n": 24,
+   "start": 1
   },
   "_obs": {}
  }
