@@ -4058,13 +4058,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -128.7,
-  "ciclos": 1280,
-  "greens": 874,
+  "saldo": -127.8,
+  "ciclos": 1281,
+  "greens": 875,
   "redsCiclo": 144,
   "aborts": 0,
   "descartes": 262,
   "historico": [
+   {
+    "quando": "2026-08-15T02:25:25.126Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · RD Congo x Colômbia @1.87 (tiro 1) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-08-15T02:16:23.323Z",
     "resultado": "GREEN",
@@ -7658,53 +7664,18 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "super · Bogota x La Plata @2.3 (tiro 1) · gatilho: time Agua Branca"
-   },
-   {
-    "quando": "2026-07-29T15:40:01.896Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "super · Buenos Aires x Medellin @1.98 (tiro 1) · gatilho: time Medellin"
    }
   ],
   "consumidas": {
-   "super": 1786760183128
+   "super": 1786760183128,
+   "copa": 1786760724934
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:22",
-     "jogo": "RD Congo x Colômbia",
-     "odd": 1.87
-    },
-    {
-     "h": "03:25",
-     "jogo": "EUA x Gana",
-     "odd": 2.05
-    },
-    {
-     "h": "03:28",
-     "jogo": "África do Sul x Equador",
-     "odd": 2
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-1)",
-   "alvo": {
-    "h": "03:22",
-    "jogo": "RD Congo x Colômbia",
-    "odd": 1.87,
-    "unidades": 1,
-    "desde": 1786760484223
-   },
-   "iniciadoEm": 1786760484223
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786747705922,
    "super": 1786760183128,
    "premier": 1786731286829,
-   "copa": 1786748365730
+   "copa": 1786760724934
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7736,12 +7707,12 @@
    "2026-08-11": -11.1,
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
-   "2026-08-14": 11.9
+   "2026-08-14": 12.8
   },
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "acima de 1-0 (2-1)",
-   "n": 9,
+   "n": 11,
    "start": 1
   },
   "_obs": {}
