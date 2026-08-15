@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -143.7,
-  "ciclos": 1275,
-  "greens": 799,
+  "saldo": -142.2,
+  "ciclos": 1276,
+  "greens": 800,
   "redsCiclo": 196,
   "aborts": 0,
   "descartes": 280,
   "historico": [
+   {
+    "quando": "2026-08-15T02:36:47.225Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "super · La Plata x Avellaneda @2.55 (tiro 1) · gatilho: time Sao Paulo"
+   },
    {
     "quando": "2026-08-15T02:27:25.521Z",
     "resultado": "GREEN",
@@ -3968,54 +3974,19 @@
     "resultado": "GREEN",
     "unidades": 3,
     "detalhe": "euro · Romênia x Suíça @2.5 (tiro 3) · gatilho: coluna :41"
-   },
-   {
-    "quando": "2026-07-30T13:34:02.990Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "super · Itaquera x Quito @2.5 (tiro 1) · gatilho: seq RGRGR"
    }
   ],
   "consumidas": {
    "copa": 1786760483832,
-   "premier": 1786760845324
+   "premier": 1786760845324,
+   "super": 1786761407031
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:34",
-     "jogo": "La Plata x Avellaneda",
-     "odd": 2.55
-    },
-    {
-     "h": "03:37",
-     "jogo": "Lima x Sao Paulo",
-     "odd": 2
-    },
-    {
-     "h": "03:40",
-     "jogo": "Medellin x Rio de Janeiro",
-     "odd": 2.29
-    }
-   ],
-   "gatilho": "time Sao Paulo",
-   "alvo": {
-    "h": "03:34",
-    "jogo": "La Plata x Avellaneda",
-    "odd": 2.55,
-    "unidades": 1,
-    "desde": 1786760847625
-   },
-   "iniciadoEm": 1786760847625
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786760483832,
    "premier": 1786760845324,
    "euro": 1786744587629,
-   "super": 1786737385831
+   "super": 1786761407031
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4048,13 +4019,13 @@
    "2026-08-11": 6.9,
    "2026-08-12": -8.2,
    "2026-08-13": 2.5,
-   "2026-08-14": -8
+   "2026-08-14": -6.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Sao Paulo",
    "n": 8,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  },
@@ -7744,7 +7715,7 @@
    "tipo": "time",
    "chave": "Palace",
    "n": 8,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
