@@ -4043,13 +4043,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -152.3,
-  "ciclos": 1308,
+  "saldo": -159.3,
+  "ciclos": 1309,
   "greens": 887,
-  "redsCiclo": 149,
+  "redsCiclo": 150,
   "aborts": 0,
   "descartes": 272,
   "historico": [
+   {
+    "quando": "2026-08-15T20:47:54.159Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq RGRGG"
+   },
    {
     "quando": "2026-08-15T20:26:26.456Z",
     "resultado": "GREEN",
@@ -7643,67 +7649,18 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "super · Agua Branca x Porto Alegre @2.15 (tiro 2) · gatilho: time Agua Branca"
-   },
-   {
-    "quando": "2026-07-30T03:17:51.191Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "premier · Wolverhampton x Everton @1.83 (tiro 2) · gatilho: time Palace"
    }
   ],
   "consumidas": {
    "euro": 1786824629060,
-   "super": 1786825586257
+   "super": 1786825586257,
+   "premier": 1786826874055
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "21:39",
-     "jogo": "Everton x Brighton",
-     "odd": 1.85
-    },
-    {
-     "h": "21:42",
-     "jogo": "Leeds x United",
-     "odd": 2.1
-    },
-    {
-     "h": "21:45",
-     "jogo": "Brentford x Liverpool",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "seq RGRGG",
-   "alvo": {
-    "h": "21:45",
-    "jogo": "Brentford x Liverpool",
-    "odd": 1.98,
-    "unidades": 4,
-    "desde": 1786826691554
-   },
-   "iniciadoEm": 1786826140853,
-   "tiros": [
-    {
-     "h": "21:39",
-     "jogo": "Everton x Brighton",
-     "odd": 1.85,
-     "unidades": 1
-    },
-    {
-     "h": "21:42",
-     "jogo": "Leeds x United",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786824629060,
    "super": 1786825586257,
-   "premier": 1786820389866,
+   "premier": 1786826874055,
    "copa": 1786822889864
   },
   "dias": {
@@ -7737,13 +7694,13 @@
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
    "2026-08-14": 5.8,
-   "2026-08-15": -17.5
+   "2026-08-15": -24.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Senegal",
-   "n": 23,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":57",
+   "n": 21,
+   "start": 2
   },
   "_obs": {}
  }
