@@ -3993,7 +3993,37 @@
   "consumidas": {
    "super": 1786772422729
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:57",
+     "jogo": "Newcastle x Liverpool",
+     "odd": 2.07
+    },
+    {
+     "h": "07:00",
+     "jogo": "Everton x Brighton",
+     "odd": 2.02
+    },
+    {
+     "h": "07:03",
+     "jogo": "Palace x Leeds",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "time Everton",
+   "alvo": {
+    "h": "06:57",
+    "jogo": "Newcastle x Liverpool",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1786772955327
+   },
+   "iniciadoEm": 1786772955327
+  },
   "cooldown": {
    "copa": 1786760483832,
    "premier": 1786764952020,
@@ -4037,8 +4067,8 @@
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Everton",
-   "n": 11,
-   "start": 1
+   "n": 13,
+   "start": 3
   },
   "_obs": {}
  },
@@ -7725,9 +7755,9 @@
    "2026-08-15": -4.7
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 20,
+   "tipo": "seq",
+   "chave": "RRGG",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
