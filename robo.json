@@ -7653,7 +7653,37 @@
    "euro": 1786816765155,
    "copa": 1786817788958
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:43",
+     "jogo": "Penarol x Guayaquil",
+     "odd": 2
+    },
+    {
+     "h": "19:46",
+     "jogo": "Santiago x Montevideo",
+     "odd": 1.8
+    },
+    {
+     "h": "19:49",
+     "jogo": "Lima x Sao Paulo",
+     "odd": 1.8
+    }
+   ],
+   "gatilho": "odd 1.8",
+   "alvo": {
+    "h": "19:43",
+    "jogo": "Penarol x Guayaquil",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1786819049260
+   },
+   "iniciadoEm": 1786819049260
+  },
   "cooldown": {
    "euro": 1786816765155,
    "super": 1786815235757,
@@ -7694,10 +7724,10 @@
    "2026-08-15": -6.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Senegal",
-   "n": 20,
-   "start": 1
+   "tipo": "odd",
+   "chave": "1.8",
+   "n": 14,
+   "start": 3
   },
   "_obs": {}
  }
