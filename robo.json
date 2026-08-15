@@ -7657,8 +7657,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "21:39",
@@ -7678,11 +7678,11 @@
    ],
    "gatilho": "seq RGRGG",
    "alvo": {
-    "h": "21:42",
-    "jogo": "Leeds x United",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1786826463058
+    "h": "21:45",
+    "jogo": "Brentford x Liverpool",
+    "odd": 1.98,
+    "unidades": 4,
+    "desde": 1786826691554
    },
    "iniciadoEm": 1786826140853,
    "tiros": [
@@ -7691,6 +7691,12 @@
      "jogo": "Everton x Brighton",
      "odd": 1.85,
      "unidades": 1
+    },
+    {
+     "h": "21:42",
+     "jogo": "Leeds x United",
+     "odd": 2.1,
+     "unidades": 2
     }
    ]
   },
@@ -7734,9 +7740,9 @@
    "2026-08-15": -17.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRGG",
-   "n": 9,
+   "tipo": "time",
+   "chave": "Senegal",
+   "n": 23,
    "start": 1
   },
   "_obs": {}
