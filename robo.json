@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -145.4,
-  "ciclos": 1274,
-  "greens": 798,
+  "saldo": -143.7,
+  "ciclos": 1275,
+  "greens": 799,
   "redsCiclo": 196,
   "aborts": 0,
   "descartes": 280,
   "historico": [
+   {
+    "quando": "2026-08-15T02:27:25.521Z",
+    "resultado": "GREEN",
+    "unidades": 1.7,
+    "detalhe": "premier · Southampton x Leeds @2.7 (tiro 1) · gatilho: placar 1-0 / 0-1"
+   },
    {
     "quando": "2026-08-15T02:21:24.028Z",
     "resultado": "GREEN",
@@ -3968,51 +3974,16 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "super · Itaquera x Quito @2.5 (tiro 1) · gatilho: seq RGRGR"
-   },
-   {
-    "quando": "2026-07-30T12:50:40.895Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: time Leicester"
    }
   ],
   "consumidas": {
-   "copa": 1786760483832
+   "copa": 1786760483832,
+   "premier": 1786760845324
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:24",
-     "jogo": "Southampton x Leeds",
-     "odd": 2.7
-    },
-    {
-     "h": "03:27",
-     "jogo": "City x Chelsea",
-     "odd": 2.1
-    },
-    {
-     "h": "03:30",
-     "jogo": "Leeds x United",
-     "odd": 2.45
-    }
-   ],
-   "gatilho": "placar 1-0 / 0-1",
-   "alvo": {
-    "h": "03:24",
-    "jogo": "Southampton x Leeds",
-    "odd": 2.7,
-    "unidades": 1,
-    "desde": 1786760486829
-   },
-   "iniciadoEm": 1786760486829
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786760483832,
-   "premier": 1786756321329,
+   "premier": 1786760845324,
    "euro": 1786744587629,
    "super": 1786737385831
   },
@@ -4047,13 +4018,13 @@
    "2026-08-11": 6.9,
    "2026-08-12": -8.2,
    "2026-08-13": 2.5,
-   "2026-08-14": -9.7
+   "2026-08-14": -8
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "1-0 / 0-1",
-   "n": 13,
-   "start": 1
+   "tipo": "time",
+   "chave": "Sao Paulo",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  },
