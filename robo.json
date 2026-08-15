@@ -4066,18 +4066,30 @@
    "tipo": "coluna",
    "chave": ":30",
    "n": 18,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -143.7,
-  "ciclos": 1296,
+  "ciclos": 1298,
   "greens": 881,
   "redsCiclo": 147,
   "aborts": 0,
-  "descartes": 268,
+  "descartes": 270,
   "historico": [
+   {
+    "quando": "2026-08-15T17:23:33.362Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :17) — liga REARMADA"
+   },
+   {
+    "quando": "2026-08-15T17:23:30.864Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-08-15T17:08:26.861Z",
     "resultado": "GREEN",
@@ -7665,54 +7677,12 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "super · Guayaquil x Santos @1.95 (tiro 1) · gatilho: odd 1.95"
-   },
-   {
-    "quando": "2026-07-29T21:26:54.492Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho time Áustria) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-29T21:26:52.701Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
    "copa": 1786813706661
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:14",
-     "jogo": "Países Baixos x Escócia",
-     "odd": 1.86
-    },
-    {
-     "h": "18:17",
-     "jogo": "Alemanha x Polônia",
-     "odd": 2.07
-    },
-    {
-     "h": "18:20",
-     "jogo": "Áustria x Romênia",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "coluna :17",
-   "alvo": {
-    "h": "18:14",
-    "jogo": "Países Baixos x Escócia",
-    "odd": 1.86,
-    "unidades": 1,
-    "desde": 1786813710855
-   },
-   "iniciadoEm": 1786813710855
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786774643025,
    "super": 1786772758424,
@@ -7753,11 +7723,16 @@
    "2026-08-15": -8.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":22",
-   "n": 18,
+   "tipo": "odd",
+   "chave": "1.8",
+   "n": 12,
    "start": 2
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1786814613362,
+    "gatilho": "coluna :17"
+   }
+  }
  }
 }
