@@ -383,12 +383,18 @@
  },
  "o25": {
   "saldo": -165.2,
-  "ciclos": 1287,
+  "ciclos": 1288,
   "greens": 804,
   "redsCiclo": 200,
   "aborts": 0,
-  "descartes": 283,
+  "descartes": 284,
   "historico": [
+   {
+    "quando": "2026-08-15T21:25:28.455Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho odd 2.29) — liga REARMADA"
+   },
    {
     "quando": "2026-08-15T20:18:23.453Z",
     "resultado": "GREEN",
@@ -3982,12 +3988,6 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho coluna :22) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-30T16:44:29.993Z",
-    "resultado": "GREEN",
-    "unidades": 1.7,
-    "detalhe": "euro · Eslováquia x Albânia @2.7 (tiro 1) · gatilho: coluna :41"
    }
   ],
   "consumidas": {},
@@ -4066,9 +4066,14 @@
    "tipo": "coluna",
    "chave": ":30",
    "n": 22,
-   "start": 3
+   "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1786829128455,
+    "gatilho": "odd 2.29"
+   }
+  }
  },
  "ambas": {
   "saldo": -158.3,
