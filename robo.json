@@ -368,13 +368,19 @@
   }
  },
  "o25": {
-  "saldo": -148.6,
-  "ciclos": 1273,
-  "greens": 797,
+  "saldo": -145.4,
+  "ciclos": 1274,
+  "greens": 798,
   "redsCiclo": 196,
   "aborts": 0,
   "descartes": 280,
   "historico": [
+   {
+    "quando": "2026-08-15T02:21:24.028Z",
+    "resultado": "GREEN",
+    "unidades": 3.2,
+    "detalhe": "copa · Coreia do Sul x República Tcheca @2.55 (tiro 3) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-08-15T01:12:01.528Z",
     "resultado": "GREEN",
@@ -3968,62 +3974,44 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: time Leicester"
-   },
-   {
-    "quando": "2026-07-30T12:40:23.694Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "copa · Turquia x Bósnia e Herzegovina @2.5 (tiro 1) · gatilho: seq RRGRR"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "copa": 1786760483832
+  },
   "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "03:07",
-     "jogo": "Noruega x EUA",
-     "odd": 2.15
+     "h": "03:24",
+     "jogo": "Southampton x Leeds",
+     "odd": 2.7
     },
     {
-     "h": "03:10",
-     "jogo": "Jordânia x México",
-     "odd": 2.2
+     "h": "03:27",
+     "jogo": "City x Chelsea",
+     "odd": 2.1
     },
     {
-     "h": "03:13",
-     "jogo": "Coreia do Sul x República Tcheca",
-     "odd": 2.55
+     "h": "03:30",
+     "jogo": "Leeds x United",
+     "odd": 2.45
     }
    ],
-   "gatilho": "placar acima de 1-0 (2-1)",
+   "gatilho": "placar 1-0 / 0-1",
    "alvo": {
-    "h": "03:13",
-    "jogo": "Coreia do Sul x República Tcheca",
-    "odd": 2.55,
-    "unidades": 4,
-    "desde": 1786760005834
+    "h": "03:24",
+    "jogo": "Southampton x Leeds",
+    "odd": 2.7,
+    "unidades": 1,
+    "desde": 1786760486829
    },
-   "iniciadoEm": 1786759466227,
-   "tiros": [
-    {
-     "h": "03:07",
-     "jogo": "Noruega x EUA",
-     "odd": 2.15,
-     "unidades": 1
-    },
-    {
-     "h": "03:10",
-     "jogo": "Jordânia x México",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1786760486829
   },
   "cooldown": {
-   "copa": 1786747959832,
+   "copa": 1786760483832,
    "premier": 1786756321329,
    "euro": 1786744587629,
    "super": 1786737385831
@@ -4059,12 +4047,12 @@
    "2026-08-11": 6.9,
    "2026-08-12": -8.2,
    "2026-08-13": 2.5,
-   "2026-08-14": -12.9
+   "2026-08-14": -9.7
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 8,
+   "chave": "1-0 / 0-1",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
@@ -7681,7 +7669,37 @@
   "consumidas": {
    "super": 1786760183128
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:22",
+     "jogo": "RD Congo x Colômbia",
+     "odd": 1.87
+    },
+    {
+     "h": "03:25",
+     "jogo": "EUA x Gana",
+     "odd": 2.05
+    },
+    {
+     "h": "03:28",
+     "jogo": "África do Sul x Equador",
+     "odd": 2
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-1)",
+   "alvo": {
+    "h": "03:22",
+    "jogo": "RD Congo x Colômbia",
+    "odd": 1.87,
+    "unidades": 1,
+    "desde": 1786760484223
+   },
+   "iniciadoEm": 1786760484223
+  },
   "cooldown": {
    "euro": 1786747705922,
    "super": 1786760183128,
@@ -7721,9 +7739,9 @@
    "2026-08-14": 11.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Avellaneda",
-   "n": 8,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
