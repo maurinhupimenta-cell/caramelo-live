@@ -4043,13 +4043,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -142.7,
-  "ciclos": 1301,
-  "greens": 883,
+  "saldo": -141.7,
+  "ciclos": 1302,
+  "greens": 884,
   "redsCiclo": 147,
   "aborts": 0,
   "descartes": 271,
   "historico": [
+   {
+    "quando": "2026-08-15T18:16:29.157Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Qatar x Cabo Verde @1.98 (tiro 2) · gatilho: coluna :13"
+   },
    {
     "quando": "2026-08-15T17:59:25.353Z",
     "resultado": "GREEN",
@@ -7643,62 +7649,19 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "copa · Suécia x Espanha @2.05 (tiro 3) · gatilho: time Equador"
-   },
-   {
-    "quando": "2026-07-29T22:08:37.101Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho time Equador) — liga REARMADA"
    }
   ],
   "consumidas": {
    "super": 1786815235757,
-   "euro": 1786816765155
+   "euro": 1786816765155,
+   "copa": 1786817788958
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "19:10",
-     "jogo": "Uruguai x México",
-     "odd": 1.93
-    },
-    {
-     "h": "19:13",
-     "jogo": "Qatar x Cabo Verde",
-     "odd": 1.98
-    },
-    {
-     "h": "19:16",
-     "jogo": "Uruguai x Austrália",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "coluna :13",
-   "alvo": {
-    "h": "19:13",
-    "jogo": "Qatar x Cabo Verde",
-    "odd": 1.98,
-    "unidades": 2,
-    "desde": 1786817607265
-   },
-   "iniciadoEm": 1786817309561,
-   "tiros": [
-    {
-     "h": "19:10",
-     "jogo": "Uruguai x México",
-     "odd": 1.93,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786816765155,
    "super": 1786815235757,
    "premier": 1786774043926,
-   "copa": 1786813706661
+   "copa": 1786817788958
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7731,12 +7694,12 @@
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
    "2026-08-14": 5.8,
-   "2026-08-15": -7.9
+   "2026-08-15": -6.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGGR",
-   "n": 15,
+   "tipo": "time",
+   "chave": "Senegal",
+   "n": 20,
    "start": 1
   },
   "_obs": {}
