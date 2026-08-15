@@ -4044,13 +4044,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -153.1,
-  "ciclos": 1307,
-  "greens": 886,
+  "saldo": -152.3,
+  "ciclos": 1308,
+  "greens": 887,
   "redsCiclo": 149,
   "aborts": 0,
   "descartes": 272,
   "historico": [
+   {
+    "quando": "2026-08-15T20:26:26.456Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "super · Agua Branca x Santiago @1.9 (tiro 2) · gatilho: seq RGRGG"
+   },
    {
     "quando": "2026-08-15T20:20:26.256Z",
     "resultado": "GREEN_OBS",
@@ -7644,60 +7650,17 @@
     "resultado": "GREEN",
     "unidades": 0.7,
     "detalhe": "premier · Wolverhampton x Everton @1.83 (tiro 2) · gatilho: time Palace"
-   },
-   {
-    "quando": "2026-07-30T02:38:27.496Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "super · Rio de Janeiro x Bogota @2.2 (tiro 1) · gatilho: odd 2.05"
    }
   ],
   "consumidas": {
    "copa": 1786822889864,
-   "euro": 1786824629060
+   "euro": 1786824629060,
+   "super": 1786825586257
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "21:19",
-     "jogo": "Buenos Aires x Itaquera",
-     "odd": 1.9
-    },
-    {
-     "h": "21:22",
-     "jogo": "Agua Branca x Santiago",
-     "odd": 1.9
-    },
-    {
-     "h": "21:25",
-     "jogo": "Porto Alegre x Montevideo",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "seq RGRGG",
-   "alvo": {
-    "h": "21:22",
-    "jogo": "Agua Branca x Santiago",
-    "odd": 1.9,
-    "unidades": 2,
-    "desde": 1786825407158
-   },
-   "iniciadoEm": 1786825229053,
-   "tiros": [
-    {
-     "h": "21:19",
-     "jogo": "Buenos Aires x Itaquera",
-     "odd": 1.9,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786824629060,
-   "super": 1786819945465,
+   "super": 1786825586257,
    "premier": 1786820389866,
    "copa": 1786822889864
   },
@@ -7732,12 +7695,12 @@
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
    "2026-08-14": 5.8,
-   "2026-08-15": -18.3
+   "2026-08-15": -17.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGGR",
-   "n": 9,
+   "tipo": "coluna",
+   "chave": ":25",
+   "n": 21,
    "start": 1
   },
   "_obs": {}
