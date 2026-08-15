@@ -3993,7 +3993,37 @@
   "consumidas": {
    "super": 1786819745057
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:52",
+     "jogo": "Coreia do Sul x Argentina",
+     "odd": 2.29
+    },
+    {
+     "h": "19:55",
+     "jogo": "Bélgica x Equador",
+     "odd": 2.2
+    },
+    {
+     "h": "19:58",
+     "jogo": "Costa do Marfim x Inglaterra",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time Equador",
+   "alvo": {
+    "h": "19:52",
+    "jogo": "Coreia do Sul x Argentina",
+    "odd": 2.29,
+    "unidades": 1,
+    "desde": 1786819749463
+   },
+   "iniciadoEm": 1786819749463
+  },
   "cooldown": {
    "copa": 1786760483832,
    "premier": 1786815306856,
@@ -4035,21 +4065,27 @@
    "2026-08-15": -26.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Equador",
-   "n": 12,
-   "start": 3
+   "tipo": "seq",
+   "chave": "GRRRG",
+   "n": 8,
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -141.7,
-  "ciclos": 1302,
+  "saldo": -148.7,
+  "ciclos": 1303,
   "greens": 884,
-  "redsCiclo": 147,
+  "redsCiclo": 148,
   "aborts": 0,
   "descartes": 271,
   "historico": [
+   {
+    "quando": "2026-08-15T18:52:25.661Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: odd 1.8"
+   },
    {
     "quando": "2026-08-15T18:16:29.157Z",
     "resultado": "GREEN",
@@ -7643,66 +7679,17 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "super · Buenos Aires x Itaquera @1.9 (tiro 1) · gatilho: odd 1.85"
-   },
-   {
-    "quando": "2026-07-29T22:21:44.695Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "copa · Suécia x Espanha @2.05 (tiro 3) · gatilho: time Equador"
    }
   ],
   "consumidas": {
    "euro": 1786816765155,
-   "copa": 1786817788958
+   "copa": 1786817788958,
+   "super": 1786819945465
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "19:43",
-     "jogo": "Penarol x Guayaquil",
-     "odd": 2
-    },
-    {
-     "h": "19:46",
-     "jogo": "Santiago x Montevideo",
-     "odd": 1.8
-    },
-    {
-     "h": "19:49",
-     "jogo": "Lima x Sao Paulo",
-     "odd": 1.8
-    }
-   ],
-   "gatilho": "odd 1.8",
-   "alvo": {
-    "h": "19:49",
-    "jogo": "Lima x Sao Paulo",
-    "odd": 1.8,
-    "unidades": 4,
-    "desde": 1786819745355
-   },
-   "iniciadoEm": 1786819049260,
-   "tiros": [
-    {
-     "h": "19:43",
-     "jogo": "Penarol x Guayaquil",
-     "odd": 2,
-     "unidades": 1
-    },
-    {
-     "h": "19:46",
-     "jogo": "Santiago x Montevideo",
-     "odd": 1.8,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786816765155,
-   "super": 1786815235757,
+   "super": 1786819945465,
    "premier": 1786774043926,
    "copa": 1786817788958
   },
@@ -7737,12 +7724,12 @@
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
    "2026-08-14": 5.8,
-   "2026-08-15": -6.9
+   "2026-08-15": -13.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRRR",
-   "n": 10,
+   "tipo": "coluna",
+   "chave": ":57",
+   "n": 19,
    "start": 1
   },
   "_obs": {}
