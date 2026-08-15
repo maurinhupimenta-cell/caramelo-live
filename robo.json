@@ -7635,7 +7635,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "01:40",
+     "jogo": "Penarol x Lima",
+     "odd": 2.02
+    },
+    {
+     "h": "01:43",
+     "jogo": "Quito x Medellin",
+     "odd": 2.05
+    },
+    {
+     "h": "01:46",
+     "jogo": "Guayaquil x Avellaneda",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "placar goleada (3+)",
+   "alvo": {
+    "h": "01:40",
+    "jogo": "Penarol x Lima",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1786754245233
+   },
+   "iniciadoEm": 1786754245233
+  },
   "cooldown": {
    "euro": 1786747705922,
    "super": 1786741549825,
@@ -7675,9 +7705,9 @@
    "2026-08-14": 10.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGRG",
-   "n": 10,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
