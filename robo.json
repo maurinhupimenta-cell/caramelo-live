@@ -7652,8 +7652,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "18:01",
@@ -7673,13 +7673,21 @@
    ],
    "gatilho": "seq RGGG",
    "alvo": {
-    "h": "18:01",
-    "jogo": "Nova Zelândia x Uzbequistão",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1786813313161
+    "h": "18:04",
+    "jogo": "Costa do Marfim x RD Congo",
+    "odd": 1.86,
+    "unidades": 2,
+    "desde": 1786813586564
    },
-   "iniciadoEm": 1786813313161
+   "iniciadoEm": 1786813313161,
+   "tiros": [
+    {
+     "h": "18:01",
+     "jogo": "Nova Zelândia x Uzbequistão",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786774643025,
@@ -7722,8 +7730,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGGG",
-   "n": 19,
+   "chave": "RGGGR",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
