@@ -4045,12 +4045,18 @@
  },
  "ambas": {
   "saldo": -153.1,
-  "ciclos": 1306,
+  "ciclos": 1307,
   "greens": 886,
   "redsCiclo": 149,
   "aborts": 0,
-  "descartes": 271,
+  "descartes": 272,
   "historico": [
+   {
+    "quando": "2026-08-15T20:20:26.256Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho seq RGRGG) — liga REARMADA"
+   },
    {
     "quando": "2026-08-15T20:10:29.253Z",
     "resultado": "RED_CICLO",
@@ -7644,19 +7650,43 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "super · Rio de Janeiro x Bogota @2.2 (tiro 1) · gatilho: odd 2.05"
-   },
-   {
-    "quando": "2026-07-30T02:20:01.296Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "euro · Portugal x Alemanha @1.9 (tiro 1) · gatilho: placar 0-0"
    }
   ],
   "consumidas": {
    "copa": 1786822889864,
    "euro": 1786824629060
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:19",
+     "jogo": "Buenos Aires x Itaquera",
+     "odd": 1.9
+    },
+    {
+     "h": "21:22",
+     "jogo": "Agua Branca x Santiago",
+     "odd": 1.9
+    },
+    {
+     "h": "21:25",
+     "jogo": "Porto Alegre x Montevideo",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "seq RGRGG",
+   "alvo": {
+    "h": "21:19",
+    "jogo": "Buenos Aires x Itaquera",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1786825229053
+   },
+   "iniciadoEm": 1786825229053
+  },
   "cooldown": {
    "euro": 1786824629060,
    "super": 1786819945465,
@@ -7697,9 +7727,9 @@
    "2026-08-15": -18.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":53",
-   "n": 20,
+   "tipo": "seq",
+   "chave": "RGRGG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
