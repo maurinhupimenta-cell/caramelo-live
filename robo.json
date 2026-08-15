@@ -4063,17 +4063,12 @@
    "2026-08-15": -23
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":30",
-   "n": 22,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.29",
+   "n": 9,
+   "start": 3
   },
-  "_obs": {
-   "super": {
-    "desde": 1786829128455,
-    "gatilho": "odd 2.29"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -158.3,
@@ -7685,11 +7680,40 @@
    }
   ],
   "consumidas": {
-   "super": 1786825586257,
    "premier": 1786826874055,
    "copa": 1786827325553
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:25",
+     "jogo": "Penarol x Avellaneda",
+     "odd": 2.1
+    },
+    {
+     "h": "22:28",
+     "jogo": "Porto Alegre x Rio de Janeiro",
+     "odd": 2.15
+    },
+    {
+     "h": "22:31",
+     "jogo": "La Plata x Sao Paulo",
+     "odd": 2
+    }
+   ],
+   "gatilho": "coluna :25",
+   "alvo": {
+    "h": "22:25",
+    "jogo": "Penarol x Avellaneda",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1786829188656
+   },
+   "iniciadoEm": 1786829188656
+  },
   "cooldown": {
    "euro": 1786824629060,
    "super": 1786825586257,
@@ -7730,9 +7754,9 @@
    "2026-08-15": -23.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Senegal",
-   "n": 24,
+   "tipo": "coluna",
+   "chave": ":25",
+   "n": 22,
    "start": 1
   },
   "_obs": {}
