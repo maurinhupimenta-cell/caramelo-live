@@ -382,13 +382,19 @@
   }
  },
  "o25": {
-  "saldo": -165.2,
-  "ciclos": 1288,
-  "greens": 804,
+  "saldo": -163.8,
+  "ciclos": 1289,
+  "greens": 805,
   "redsCiclo": 200,
   "aborts": 0,
   "descartes": 284,
   "historico": [
+   {
+    "quando": "2026-08-15T21:32:45.955Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "premier · Norwich x Palace @2.2 (tiro 2) · gatilho: coluna :30"
+   },
    {
     "quando": "2026-08-15T21:25:28.455Z",
     "resultado": "GREEN_OBS",
@@ -3982,57 +3988,15 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RRGRG) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-30T17:21:30.993Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho coluna :22) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "22:27",
-     "jogo": "West Ham x Newcastle",
-     "odd": 2.3
-    },
-    {
-     "h": "22:30",
-     "jogo": "Norwich x Palace",
-     "odd": 2.2
-    },
-    {
-     "h": "22:33",
-     "jogo": "Tottenham x Liverpool",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "coluna :30",
-   "alvo": {
-    "h": "22:30",
-    "jogo": "Norwich x Palace",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1786829385756
-   },
-   "iniciadoEm": 1786828697263,
-   "tiros": [
-    {
-     "h": "22:27",
-     "jogo": "West Ham x Newcastle",
-     "odd": 2.3,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "premier": 1786829565762
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786825103258,
-   "premier": 1786822336259,
+   "premier": 1786829565762,
    "euro": 1786744587629,
    "super": 1786819745057
   },
@@ -4068,13 +4032,13 @@
    "2026-08-12": -8.2,
    "2026-08-13": 2.5,
    "2026-08-14": -6.5,
-   "2026-08-15": -23
+   "2026-08-15": -21.6
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.29",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
