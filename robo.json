@@ -382,13 +382,19 @@
   }
  },
  "o25": {
-  "saldo": -162.2,
-  "ciclos": 1290,
-  "greens": 806,
+  "saldo": -161.1,
+  "ciclos": 1291,
+  "greens": 807,
   "redsCiclo": 200,
   "aborts": 0,
   "descartes": 284,
   "historico": [
+   {
+    "quando": "2026-08-15T21:47:26.954Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Alemanha x Romênia @2.1 (tiro 1) · gatilho: seq RGGGG"
+   },
    {
     "quando": "2026-08-15T21:37:29.860Z",
     "resultado": "GREEN",
@@ -3982,53 +3988,18 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros) · gatilho: seq RGRGG"
-   },
-   {
-    "quando": "2026-07-30T17:28:27.495Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "copa · Qatar x Noruega @2.2 (tiro 1) · gatilho: coluna :22"
    }
   ],
   "consumidas": {
    "premier": 1786829565762,
-   "super": 1786829849756
+   "super": 1786829849756,
+   "euro": 1786830446763
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:38",
-     "jogo": "Alemanha x Romênia",
-     "odd": 2.1
-    },
-    {
-     "h": "22:41",
-     "jogo": "Eslovênia x Polônia",
-     "odd": 2.87
-    },
-    {
-     "h": "22:44",
-     "jogo": "Inglaterra x Dinamarca",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "seq RGGGG",
-   "alvo": {
-    "h": "22:38",
-    "jogo": "Alemanha x Romênia",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1786829852764
-   },
-   "iniciadoEm": 1786829852764
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786825103258,
    "premier": 1786829565762,
-   "euro": 1786744587629,
+   "euro": 1786830446763,
    "super": 1786829849756
   },
   "dias": {
@@ -4063,12 +4034,12 @@
    "2026-08-12": -8.2,
    "2026-08-13": 2.5,
    "2026-08-14": -6.5,
-   "2026-08-15": -20
+   "2026-08-15": -18.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGGG",
-   "n": 8,
+   "tipo": "odd",
+   "chave": "2.55",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
