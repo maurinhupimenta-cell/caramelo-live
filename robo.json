@@ -339,7 +339,6 @@
    }
   ],
   "consumidas": {
-   "premier": 1786762303323,
    "super": 1786764145328
   },
   "ciclo": null,
@@ -7658,7 +7657,37 @@
    "premier": 1786762776634,
    "copa": 1786765829422
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:56",
+     "jogo": "Inglaterra x Geórgia",
+     "odd": 2.05
+    },
+    {
+     "h": "04:59",
+     "jogo": "Itália x Polônia",
+     "odd": 2.15
+    },
+    {
+     "h": "05:02",
+     "jogo": "Áustria x Eslováquia",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "time Itália",
+   "alvo": {
+    "h": "04:56",
+    "jogo": "Inglaterra x Geórgia",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1786765831821
+   },
+   "iniciadoEm": 1786765831821
+  },
   "cooldown": {
    "euro": 1786747705922,
    "super": 1786760183128,
