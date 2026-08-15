@@ -4026,13 +4026,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -130.4,
-  "ciclos": 1276,
-  "greens": 872,
+  "saldo": -129.7,
+  "ciclos": 1277,
+  "greens": 873,
   "redsCiclo": 144,
   "aborts": 0,
   "descartes": 260,
   "historico": [
+   {
+    "quando": "2026-08-15T00:52:27.926Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "super · Guayaquil x Avellaneda @1.93 (tiro 3) · gatilho: placar goleada (3+)"
+   },
    {
     "quando": "2026-08-14T22:59:26.021Z",
     "resultado": "GREEN",
@@ -7626,63 +7632,15 @@
     "resultado": "GREEN",
     "unidades": 0.7,
     "detalhe": "euro · França x Bélgica @1.83 (tiro 2) · gatilho: odd 1.83"
-   },
-   {
-    "quando": "2026-07-29T11:37:46.159Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "super · Belo Horizonte x La Plata @2.07 (tiro 2) · gatilho: odd 2.07"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "01:40",
-     "jogo": "Penarol x Lima",
-     "odd": 2.02
-    },
-    {
-     "h": "01:43",
-     "jogo": "Quito x Medellin",
-     "odd": 2.05
-    },
-    {
-     "h": "01:46",
-     "jogo": "Guayaquil x Avellaneda",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "placar goleada (3+)",
-   "alvo": {
-    "h": "01:46",
-    "jogo": "Guayaquil x Avellaneda",
-    "odd": 1.93,
-    "unidades": 4,
-    "desde": 1786754863524
-   },
-   "iniciadoEm": 1786754245233,
-   "tiros": [
-    {
-     "h": "01:40",
-     "jogo": "Penarol x Lima",
-     "odd": 2.02,
-     "unidades": 1
-    },
-    {
-     "h": "01:43",
-     "jogo": "Quito x Medellin",
-     "odd": 2.05,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "super": 1786755147734
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786747705922,
-   "super": 1786741549825,
+   "super": 1786755147734,
    "premier": 1786731286829,
    "copa": 1786748365730
   },
@@ -7716,7 +7674,7 @@
    "2026-08-11": -11.1,
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
-   "2026-08-14": 10.2
+   "2026-08-14": 10.9
   },
   "_gatilhoAtual": {
    "tipo": "placar",
