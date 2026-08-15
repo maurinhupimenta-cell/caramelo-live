@@ -3980,7 +3980,37 @@
    "copa": 1786760483832,
    "premier": 1786760845324
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:34",
+     "jogo": "La Plata x Avellaneda",
+     "odd": 2.55
+    },
+    {
+     "h": "03:37",
+     "jogo": "Lima x Sao Paulo",
+     "odd": 2
+    },
+    {
+     "h": "03:40",
+     "jogo": "Medellin x Rio de Janeiro",
+     "odd": 2.29
+    }
+   ],
+   "gatilho": "time Sao Paulo",
+   "alvo": {
+    "h": "03:34",
+    "jogo": "La Plata x Avellaneda",
+    "odd": 2.55,
+    "unidades": 1,
+    "desde": 1786760847625
+   },
+   "iniciadoEm": 1786760847625
+  },
   "cooldown": {
    "copa": 1786760483832,
    "premier": 1786760845324,
@@ -4024,7 +4054,7 @@
    "tipo": "time",
    "chave": "Sao Paulo",
    "n": 8,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
@@ -7641,7 +7671,37 @@
    "super": 1786760183128,
    "copa": 1786760724934
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:42",
+     "jogo": "Wolverhampton x Leicester",
+     "odd": 1.9
+    },
+    {
+     "h": "03:45",
+     "jogo": "Chelsea x Palace",
+     "odd": 1.98
+    },
+    {
+     "h": "03:48",
+     "jogo": "Burnley x City",
+     "odd": 1.85
+    }
+   ],
+   "gatilho": "time Palace",
+   "alvo": {
+    "h": "03:42",
+    "jogo": "Wolverhampton x Leicester",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1786761191630
+   },
+   "iniciadoEm": 1786761191630
+  },
   "cooldown": {
    "euro": 1786747705922,
    "super": 1786760183128,
@@ -7681,10 +7741,10 @@
    "2026-08-14": 12.8
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 11,
-   "start": 1
+   "tipo": "time",
+   "chave": "Palace",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  }
