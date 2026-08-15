@@ -3995,8 +3995,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "06:57",
@@ -4016,13 +4016,21 @@
    ],
    "gatilho": "time Everton",
    "alvo": {
-    "h": "06:57",
-    "jogo": "Newcastle x Liverpool",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1786772955327
+    "h": "07:00",
+    "jogo": "Everton x Brighton",
+    "odd": 2.02,
+    "unidades": 2,
+    "desde": 1786773626129
    },
-   "iniciadoEm": 1786772955327
+   "iniciadoEm": 1786772955327,
+   "tiros": [
+    {
+     "h": "06:57",
+     "jogo": "Newcastle x Liverpool",
+     "odd": 2.07,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786760483832,
@@ -4065,9 +4073,9 @@
    "2026-08-15": -5.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Everton",
-   "n": 13,
+   "tipo": "placar",
+   "chave": "0-0",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
@@ -7757,8 +7765,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Espanha",
-   "n": 8,
+   "chave": "Alemanha",
+   "n": 11,
    "start": 3
   },
   "_obs": {}
