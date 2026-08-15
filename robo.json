@@ -7658,7 +7658,37 @@
    "premier": 1786820389866,
    "copa": 1786822889864
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:50",
+     "jogo": "Espanha x Albânia",
+     "odd": 2.1
+    },
+    {
+     "h": "20:53",
+     "jogo": "Eslováquia x Eslovênia",
+     "odd": 2.2
+    },
+    {
+     "h": "20:56",
+     "jogo": "Áustria x Ucrânia",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "coluna :53",
+   "alvo": {
+    "h": "20:50",
+    "jogo": "Espanha x Albânia",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1786822910262
+   },
+   "iniciadoEm": 1786822910262
+  },
   "cooldown": {
    "euro": 1786816765155,
    "super": 1786819945465,
