@@ -3995,8 +3995,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "19:52",
@@ -4016,13 +4016,21 @@
    ],
    "gatilho": "time Equador",
    "alvo": {
-    "h": "19:52",
-    "jogo": "Coreia do Sul x Argentina",
-    "odd": 2.29,
-    "unidades": 1,
-    "desde": 1786819749463
+    "h": "19:55",
+    "jogo": "Bélgica x Equador",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1786820186864
    },
-   "iniciadoEm": 1786819749463
+   "iniciadoEm": 1786819749463,
+   "tiros": [
+    {
+     "h": "19:52",
+     "jogo": "Coreia do Sul x Argentina",
+     "odd": 2.29,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786760483832,
@@ -4065,9 +4073,9 @@
    "2026-08-15": -26.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRRG",
-   "n": 8,
+   "tipo": "time",
+   "chave": "Equador",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
@@ -7686,7 +7694,37 @@
    "copa": 1786817788958,
    "super": 1786819945465
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:54",
+     "jogo": "Everton x Leeds",
+     "odd": 2.07
+    },
+    {
+     "h": "19:57",
+     "jogo": "West Ham x Brentford",
+     "odd": 2.2
+    },
+    {
+     "h": "20:00",
+     "jogo": "Watford x Everton",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "coluna :57",
+   "alvo": {
+    "h": "19:54",
+    "jogo": "Everton x Leeds",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1786819949066
+   },
+   "iniciadoEm": 1786819949066
+  },
   "cooldown": {
    "euro": 1786816765155,
    "super": 1786819945465,
