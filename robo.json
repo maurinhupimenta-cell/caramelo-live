@@ -4070,18 +4070,24 @@
    "tipo": "time",
    "chave": "Porto Alegre",
    "n": 8,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -140.8,
-  "ciclos": 1286,
-  "greens": 876,
+  "saldo": -139.8,
+  "ciclos": 1287,
+  "greens": 877,
   "redsCiclo": 146,
   "aborts": 0,
   "descartes": 264,
   "historico": [
+   {
+    "quando": "2026-08-15T04:10:28.323Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Avellaneda x Montevideo @1.95 (tiro 1) · gatilho: time Avellaneda"
+   },
    {
     "quando": "2026-08-15T03:59:29.525Z",
     "resultado": "GREEN",
@@ -7675,52 +7681,17 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "super · Buenos Aires x La Boca @1.93 (tiro 1) · gatilho: coluna :58"
-   },
-   {
-    "quando": "2026-07-29T18:29:48.495Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: odd 1.87"
    }
   ],
   "consumidas": {
    "copa": 1786765829422,
-   "euro": 1786766369329
+   "euro": 1786766369329,
+   "super": 1786767028130
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:07",
-     "jogo": "Avellaneda x Montevideo",
-     "odd": 1.95
-    },
-    {
-     "h": "05:10",
-     "jogo": "La Boca x Lima",
-     "odd": 2.07
-    },
-    {
-     "h": "05:13",
-     "jogo": "Agua Branca x Belo Horizonte",
-     "odd": 1.83
-    }
-   ],
-   "gatilho": "time Avellaneda",
-   "alvo": {
-    "h": "05:07",
-    "jogo": "Avellaneda x Montevideo",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1786766783026
-   },
-   "iniciadoEm": 1786766783026
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786766369329,
-   "super": 1786760183128,
+   "super": 1786767028130,
    "premier": 1786762776634,
    "copa": 1786765829422
   },
@@ -7755,13 +7726,13 @@
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
    "2026-08-14": 5.8,
-   "2026-08-15": -6
+   "2026-08-15": -5
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Avellaneda",
-   "n": 11,
-   "start": 1
+   "chave": "Quito",
+   "n": 10,
+   "start": 3
   },
   "_obs": {}
  }
