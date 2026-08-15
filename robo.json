@@ -4043,13 +4043,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -139.8,
-  "ciclos": 1291,
-  "greens": 877,
+  "saldo": -139.5,
+  "ciclos": 1292,
+  "greens": 878,
   "redsCiclo": 146,
   "aborts": 0,
   "descartes": 268,
   "historico": [
+   {
+    "quando": "2026-08-15T05:45:58.624Z",
+    "resultado": "GREEN",
+    "unidades": 0.3,
+    "detalhe": "super · Agua Branca x Sao Paulo @1.83 (tiro 3) · gatilho: time Buenos Aires"
+   },
    {
     "quando": "2026-08-15T05:43:22.330Z",
     "resultado": "GREEN_OBS",
@@ -7643,63 +7649,15 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho seq GGRRG) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-29T20:06:44.198Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "super · Montevideo x Santos @1.95 (tiro 2) · gatilho: odd 1.95"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "06:37",
-     "jogo": "Belo Horizonte x Medellin",
-     "odd": 2.05
-    },
-    {
-     "h": "06:40",
-     "jogo": "Buenos Aires x Santiago",
-     "odd": 1.85
-    },
-    {
-     "h": "06:43",
-     "jogo": "Agua Branca x Sao Paulo",
-     "odd": 1.83
-    }
-   ],
-   "gatilho": "time Buenos Aires",
-   "alvo": {
-    "h": "06:43",
-    "jogo": "Agua Branca x Sao Paulo",
-    "odd": 1.83,
-    "unidades": 4,
-    "desde": 1786772574634
-   },
-   "iniciadoEm": 1786772175626,
-   "tiros": [
-    {
-     "h": "06:37",
-     "jogo": "Belo Horizonte x Medellin",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "06:40",
-     "jogo": "Buenos Aires x Santiago",
-     "odd": 1.85,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "super": 1786772758424
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786766369329,
-   "super": 1786767028130,
+   "super": 1786772758424,
    "premier": 1786762776634,
    "copa": 1786765829422
   },
@@ -7734,19 +7692,14 @@
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
    "2026-08-14": 5.8,
-   "2026-08-15": -5
+   "2026-08-15": -4.7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Brighton",
-   "n": 11,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 20,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1786772175626,
-    "gatilho": "time Haiti"
-   }
-  }
+  "_obs": {}
  }
 }
