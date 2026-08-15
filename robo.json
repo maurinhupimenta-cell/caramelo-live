@@ -4067,10 +4067,10 @@
    "2026-08-14": -6.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Leicester",
-   "n": 10,
-   "start": 2
+   "tipo": "odd",
+   "chave": "2.15",
+   "n": 9,
+   "start": 3
   },
   "_obs": {}
  },
@@ -7686,7 +7686,37 @@
   "consumidas": {
    "premier": 1786762776634
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:37",
+     "jogo": "EUA x Argélia",
+     "odd": 2
+    },
+    {
+     "h": "04:40",
+     "jogo": "Croácia x Iraque",
+     "odd": 2.2
+    },
+    {
+     "h": "04:43",
+     "jogo": "RD Congo x Nova Zelândia",
+     "odd": 1.87
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-1)",
+   "alvo": {
+    "h": "04:37",
+    "jogo": "EUA x Argélia",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1786764864525
+   },
+   "iniciadoEm": 1786764864525
+  },
   "cooldown": {
    "euro": 1786747705922,
    "super": 1786760183128,
@@ -7726,9 +7756,9 @@
    "2026-08-14": 5.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Palace",
-   "n": 9,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
