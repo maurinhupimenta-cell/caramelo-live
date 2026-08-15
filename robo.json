@@ -335,7 +335,37 @@
   "consumidas": {
    "premier": 1786762303323
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:13",
+     "jogo": "Asuncion x Penarol",
+     "odd": 5
+    },
+    {
+     "h": "04:16",
+     "jogo": "Montevideo x La Plata",
+     "odd": 5
+    },
+    {
+     "h": "04:19",
+     "jogo": "La Boca x Rio de Janeiro",
+     "odd": 4.75
+    }
+   ],
+   "gatilho": "time Montevideo",
+   "alvo": {
+    "h": "04:13",
+    "jogo": "Asuncion x Penarol",
+    "odd": 5,
+    "unidades": 1,
+    "desde": 1786763543629
+   },
+   "iniciadoEm": 1786763543629
+  },
   "cooldown": {
    "copa": 1786370517941,
    "premier": 1786762303323,
@@ -364,8 +394,8 @@
    "2026-08-14": -7
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
+   "tipo": "time",
+   "chave": "Montevideo",
    "n": 8,
    "start": 1
   },
