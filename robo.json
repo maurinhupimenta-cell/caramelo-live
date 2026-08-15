@@ -7663,8 +7663,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "20:16",
@@ -7684,11 +7684,11 @@
    ],
    "gatilho": "time Senegal",
    "alvo": {
-    "h": "20:19",
-    "jogo": "Marrocos x Senegal",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1786821508459
+    "h": "20:22",
+    "jogo": "Tunísia x Espanha",
+    "odd": 2.05,
+    "unidades": 4,
+    "desde": 1786821744262
    },
    "iniciadoEm": 1786821391353,
    "tiros": [
@@ -7697,6 +7697,12 @@
      "jogo": "Equador x Curação",
      "odd": 1.93,
      "unidades": 1
+    },
+    {
+     "h": "20:19",
+     "jogo": "Marrocos x Senegal",
+     "odd": 2.1,
+     "unidades": 2
     }
    ]
   },
@@ -7740,9 +7746,9 @@
    "2026-08-15": -12.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Senegal",
-   "n": 22,
+   "tipo": "seq",
+   "chave": "RGGRR",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
