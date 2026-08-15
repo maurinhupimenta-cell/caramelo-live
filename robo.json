@@ -3993,7 +3993,37 @@
   "consumidas": {
    "premier": 1786822336259
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:10",
+     "jogo": "Escócia x México",
+     "odd": 2.5
+    },
+    {
+     "h": "21:13",
+     "jogo": "Suíça x Noruega",
+     "odd": 2.2
+    },
+    {
+     "h": "21:16",
+     "jogo": "Panamá x Brasil",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "seq GRRRG",
+   "alvo": {
+    "h": "21:10",
+    "jogo": "Escócia x México",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1786824625858
+   },
+   "iniciadoEm": 1786824625858
+  },
   "cooldown": {
    "copa": 1786820426760,
    "premier": 1786822336259,
@@ -4035,21 +4065,27 @@
    "2026-08-15": -24.5
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":30",
-   "n": 20,
+   "tipo": "seq",
+   "chave": "GRRRG",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -146.1,
-  "ciclos": 1305,
+  "saldo": -153.1,
+  "ciclos": 1306,
   "greens": 886,
-  "redsCiclo": 148,
+  "redsCiclo": 149,
   "aborts": 0,
   "descartes": 271,
   "historico": [
+   {
+    "quando": "2026-08-15T20:10:29.253Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: coluna :53"
+   },
    {
     "quando": "2026-08-15T19:41:30.059Z",
     "resultado": "GREEN",
@@ -7643,64 +7679,15 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "euro · Portugal x Alemanha @1.9 (tiro 1) · gatilho: placar 0-0"
-   },
-   {
-    "quando": "2026-07-30T01:38:42.493Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "premier · Liverpool x United @1.93 (tiro 1) · gatilho: time Palace"
    }
   ],
   "consumidas": {
-   "copa": 1786822889864
+   "copa": 1786822889864,
+   "euro": 1786824629060
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "20:50",
-     "jogo": "Espanha x Albânia",
-     "odd": 2.1
-    },
-    {
-     "h": "20:53",
-     "jogo": "Eslováquia x Eslovênia",
-     "odd": 2.2
-    },
-    {
-     "h": "20:56",
-     "jogo": "Áustria x Ucrânia",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "coluna :53",
-   "alvo": {
-    "h": "20:56",
-    "jogo": "Áustria x Ucrânia",
-    "odd": 2.02,
-    "unidades": 4,
-    "desde": 1786823791364
-   },
-   "iniciadoEm": 1786822910262,
-   "tiros": [
-    {
-     "h": "20:50",
-     "jogo": "Espanha x Albânia",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "20:53",
-     "jogo": "Eslováquia x Eslovênia",
-     "odd": 2.2,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1786816765155,
+   "euro": 1786824629060,
    "super": 1786819945465,
    "premier": 1786820389866,
    "copa": 1786822889864
@@ -7736,7 +7723,7 @@
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
    "2026-08-14": 5.8,
-   "2026-08-15": -11.3
+   "2026-08-15": -18.3
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
