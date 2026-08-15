@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -119,
-  "ciclos": 209,
+  "saldo": -126,
+  "ciclos": 210,
   "greens": 71,
-  "redsCiclo": 86,
+  "redsCiclo": 87,
   "aborts": 0,
   "descartes": 52,
   "historico": [
+   {
+    "quando": "2026-08-15T02:51:43.428Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-08-10T14:01:58.144Z",
     "resultado": "RED_CICLO",
@@ -326,55 +332,13 @@
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "03:42",
-     "jogo": "Wolverhampton x Leicester",
-     "odd": 4
-    },
-    {
-     "h": "03:45",
-     "jogo": "Chelsea x Palace",
-     "odd": 4.33
-    },
-    {
-     "h": "03:48",
-     "jogo": "Burnley x City",
-     "odd": 3.75
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-1)",
-   "alvo": {
-    "h": "03:48",
-    "jogo": "Burnley x City",
-    "odd": 3.75,
-    "unidades": 4,
-    "desde": 1786762146528
-   },
-   "iniciadoEm": 1786761524431,
-   "tiros": [
-    {
-     "h": "03:42",
-     "jogo": "Wolverhampton x Leicester",
-     "odd": 4,
-     "unidades": 1
-    },
-    {
-     "h": "03:45",
-     "jogo": "Chelsea x Palace",
-     "odd": 4.33,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1786762303323
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786370517941,
-   "premier": 1786142860082,
+   "premier": 1786762303323,
    "euro": 1785464913993,
    "super": 1785983452169
   },
@@ -396,7 +360,8 @@
    "2026-08-04": 19,
    "2026-08-05": 20.8,
    "2026-08-07": 34.5,
-   "2026-08-10": -7
+   "2026-08-10": -7,
+   "2026-08-14": -7
   },
   "_gatilhoAtual": {
    "tipo": "placar",
