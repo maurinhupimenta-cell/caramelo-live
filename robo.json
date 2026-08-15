@@ -3994,7 +3994,37 @@
    "super": 1786819745057,
    "copa": 1786820426760
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:27",
+     "jogo": "Leeds x West Ham",
+     "odd": 2.87
+    },
+    {
+     "h": "20:30",
+     "jogo": "Wolverhampton x Everton",
+     "odd": 2.02
+    },
+    {
+     "h": "20:33",
+     "jogo": "Brighton x Watford",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "coluna :30",
+   "alvo": {
+    "h": "20:27",
+    "jogo": "Leeds x West Ham",
+    "odd": 2.87,
+    "unidades": 1,
+    "desde": 1786821803359
+   },
+   "iniciadoEm": 1786821803359
+  },
   "cooldown": {
    "copa": 1786820426760,
    "premier": 1786815306856,
@@ -4036,17 +4066,12 @@
    "2026-08-15": -25.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Equador",
-   "n": 12,
+   "tipo": "coluna",
+   "chave": ":30",
+   "n": 20,
    "start": 1
   },
-  "_obs": {
-   "premier": {
-    "desde": 1786821505557,
-    "gatilho": "coluna :30"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -147.3,
