@@ -3997,8 +3997,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:13",
@@ -4018,13 +4018,21 @@
    ],
    "gatilho": "time Porto Alegre",
    "alvo": {
-    "h": "05:13",
-    "jogo": "Agua Branca x Belo Horizonte",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1786766725732
+    "h": "05:16",
+    "jogo": "Porto Alegre x Guayaquil",
+    "odd": 2.45,
+    "unidades": 2,
+    "desde": 1786767384930
    },
-   "iniciadoEm": 1786766725732
+   "iniciadoEm": 1786766725732,
+   "tiros": [
+    {
+     "h": "05:13",
+     "jogo": "Agua Branca x Belo Horizonte",
+     "odd": 2.02,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786760483832,
@@ -7734,6 +7742,11 @@
    "n": 10,
    "start": 3
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1786767287223,
+    "gatilho": "seq RRRR"
+   }
+  }
  }
 }
