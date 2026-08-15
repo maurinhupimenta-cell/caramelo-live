@@ -7657,8 +7657,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "18:50",
@@ -7678,13 +7678,21 @@
    ],
    "gatilho": "coluna :53",
    "alvo": {
-    "h": "18:50",
-    "jogo": "Países Baixos x Albânia",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1786815686754
+    "h": "18:53",
+    "jogo": "Sérvia x Turquia",
+    "odd": 2.2,
+    "unidades": 2,
+    "desde": 1786816464857
    },
-   "iniciadoEm": 1786815686754
+   "iniciadoEm": 1786815686754,
+   "tiros": [
+    {
+     "h": "18:50",
+     "jogo": "Países Baixos x Albânia",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786774643025,
@@ -7727,15 +7735,10 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":53",
+   "chave": ":57",
    "n": 18,
-   "start": 3
+   "start": 1
   },
-  "_obs": {
-   "premier": {
-    "desde": 1786815211163,
-    "gatilho": "odd 1.8"
-   }
-  }
+  "_obs": {}
  }
 }
