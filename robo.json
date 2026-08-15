@@ -7655,7 +7655,37 @@
    "copa": 1786813706661,
    "super": 1786815235757
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:50",
+     "jogo": "Países Baixos x Albânia",
+     "odd": 2.1
+    },
+    {
+     "h": "18:53",
+     "jogo": "Sérvia x Turquia",
+     "odd": 2.2
+    },
+    {
+     "h": "18:56",
+     "jogo": "Escócia x Romênia",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "coluna :53",
+   "alvo": {
+    "h": "18:50",
+    "jogo": "Países Baixos x Albânia",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1786815686754
+   },
+   "iniciadoEm": 1786815686754
+  },
   "cooldown": {
    "euro": 1786774643025,
    "super": 1786815235757,
@@ -7696,10 +7726,10 @@
    "2026-08-15": -8.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.8",
-   "n": 12,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":53",
+   "n": 18,
+   "start": 3
   },
   "_obs": {
    "premier": {
