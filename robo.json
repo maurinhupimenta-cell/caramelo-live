@@ -383,12 +383,18 @@
  },
  "o25": {
   "saldo": -162.1,
-  "ciclos": 1281,
+  "ciclos": 1282,
   "greens": 801,
   "redsCiclo": 199,
   "aborts": 0,
-  "descartes": 281,
+  "descartes": 282,
   "historico": [
+   {
+    "quando": "2026-08-15T18:41:31.664Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho seq GGGG) — liga REARMADA"
+   },
    {
     "quando": "2026-08-15T17:35:07.058Z",
     "resultado": "RED_CICLO",
@@ -3982,16 +3988,40 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros) · gatilho: odd 2.55"
-   },
-   {
-    "quando": "2026-07-30T15:13:15.895Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq RRRR"
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:40",
+     "jogo": "Bogota x Rio de Janeiro",
+     "odd": 2.45
+    },
+    {
+     "h": "19:43",
+     "jogo": "Penarol x Guayaquil",
+     "odd": 2.3
+    },
+    {
+     "h": "19:46",
+     "jogo": "Santiago x Montevideo",
+     "odd": 2
+    }
+   ],
+   "gatilho": "seq GGGG",
+   "alvo": {
+    "h": "19:40",
+    "jogo": "Bogota x Rio de Janeiro",
+    "odd": 2.45,
+    "unidades": 1,
+    "desde": 1786819294457
+   },
+   "iniciadoEm": 1786819294457
+  },
   "cooldown": {
    "copa": 1786760483832,
    "premier": 1786815306856,
@@ -4033,9 +4063,9 @@
    "2026-08-15": -19.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":30",
-   "n": 18,
+   "tipo": "seq",
+   "chave": "GGGG",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
@@ -7724,10 +7754,10 @@
    "2026-08-15": -6.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.8",
-   "n": 14,
-   "start": 3
+   "tipo": "seq",
+   "chave": "RGGGG",
+   "n": 12,
+   "start": 1
   },
   "_obs": {}
  }
