@@ -7654,7 +7654,37 @@
   "consumidas": {
    "super": 1786772758424
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:46",
+     "jogo": "Austrália x Haiti",
+     "odd": 1.93
+    },
+    {
+     "h": "06:49",
+     "jogo": "RD Congo x Brasil",
+     "odd": 1.9
+    },
+    {
+     "h": "06:52",
+     "jogo": "África do Sul x Austrália",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-1)",
+   "alvo": {
+    "h": "06:46",
+    "jogo": "Austrália x Haiti",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1786772770722
+   },
+   "iniciadoEm": 1786772770722
+  },
   "cooldown": {
    "euro": 1786766369329,
    "super": 1786772758424,
