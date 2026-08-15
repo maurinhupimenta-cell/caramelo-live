@@ -4045,13 +4045,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -141.8,
-  "ciclos": 1285,
-  "greens": 875,
+  "saldo": -140.8,
+  "ciclos": 1286,
+  "greens": 876,
   "redsCiclo": 146,
   "aborts": 0,
   "descartes": 264,
   "historico": [
+   {
+    "quando": "2026-08-15T03:59:29.525Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Inglaterra x Geórgia @2.05 (tiro 1) · gatilho: time Itália"
+   },
    {
     "quando": "2026-08-15T03:50:29.529Z",
     "resultado": "RED_CICLO",
@@ -7645,51 +7651,16 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: odd 1.87"
-   },
-   {
-    "quando": "2026-07-29T18:16:47.898Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho odd 1.87) — liga REARMADA"
    }
   ],
   "consumidas": {
    "premier": 1786762776634,
-   "copa": 1786765829422
+   "copa": 1786765829422,
+   "euro": 1786766369329
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:56",
-     "jogo": "Inglaterra x Geórgia",
-     "odd": 2.05
-    },
-    {
-     "h": "04:59",
-     "jogo": "Itália x Polônia",
-     "odd": 2.15
-    },
-    {
-     "h": "05:02",
-     "jogo": "Áustria x Eslováquia",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "time Itália",
-   "alvo": {
-    "h": "04:56",
-    "jogo": "Inglaterra x Geórgia",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1786765831821
-   },
-   "iniciadoEm": 1786765831821
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1786747705922,
+   "euro": 1786766369329,
    "super": 1786760183128,
    "premier": 1786762776634,
    "copa": 1786765829422
@@ -7725,13 +7696,13 @@
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
    "2026-08-14": 5.8,
-   "2026-08-15": -7
+   "2026-08-15": -6
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Itália",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
