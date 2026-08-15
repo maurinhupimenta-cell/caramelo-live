@@ -3979,8 +3979,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "03:07",
@@ -4000,11 +4000,11 @@
    ],
    "gatilho": "placar acima de 1-0 (2-1)",
    "alvo": {
-    "h": "03:10",
-    "jogo": "Jordânia x México",
-    "odd": 2.2,
-    "unidades": 2,
-    "desde": 1786760003322
+    "h": "03:13",
+    "jogo": "Coreia do Sul x República Tcheca",
+    "odd": 2.55,
+    "unidades": 4,
+    "desde": 1786760005834
    },
    "iniciadoEm": 1786759466227,
    "tiros": [
@@ -4013,6 +4013,12 @@
      "jogo": "Noruega x EUA",
      "odd": 2.15,
      "unidades": 1
+    },
+    {
+     "h": "03:10",
+     "jogo": "Jordânia x México",
+     "odd": 2.2,
+     "unidades": 2
     }
    ]
   },
@@ -4065,12 +4071,24 @@
  },
  "ambas": {
   "saldo": -129.7,
-  "ciclos": 1277,
+  "ciclos": 1279,
   "greens": 873,
   "redsCiclo": 144,
   "aborts": 0,
-  "descartes": 260,
+  "descartes": 262,
   "historico": [
+   {
+    "quando": "2026-08-15T02:14:30.625Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho time Buenos Aires) — liga REARMADA"
+   },
+   {
+    "quando": "2026-08-15T02:14:28.529Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "super · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-08-15T00:52:27.926Z",
     "resultado": "GREEN",
@@ -7658,52 +7676,10 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: coluna :29"
-   },
-   {
-    "quando": "2026-07-29T12:19:45.962Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "copa · Jordânia x Portugal @1.9 (tiro 1) · gatilho: time Áustria"
-   },
-   {
-    "quando": "2026-07-29T11:47:45.767Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "euro · França x Bélgica @1.83 (tiro 2) · gatilho: odd 1.83"
    }
   ],
   "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:07",
-     "jogo": "Montevideo x Quito",
-     "odd": 1.9
-    },
-    {
-     "h": "03:10",
-     "jogo": "Buenos Aires x Penarol",
-     "odd": 2.02
-    },
-    {
-     "h": "03:13",
-     "jogo": "Lima x Santiago",
-     "odd": 1.8
-    }
-   ],
-   "gatilho": "time Buenos Aires",
-   "alvo": {
-    "h": "03:07",
-    "jogo": "Montevideo x Quito",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1786759168030
-   },
-   "iniciadoEm": 1786759168030
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786747705922,
    "super": 1786755147734,
@@ -7743,11 +7719,16 @@
    "2026-08-14": 10.9
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 8,
+   "tipo": "time",
+   "chave": "Buenos Aires",
+   "n": 9,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1786760070625,
+    "gatilho": "time Buenos Aires"
+   }
+  }
  }
 }
