@@ -7653,8 +7653,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "03:48",
@@ -7674,13 +7674,27 @@
    ],
    "gatilho": "time Palace",
    "alvo": {
-    "h": "03:48",
-    "jogo": "Burnley x City",
-    "odd": 1.85,
-    "unidades": 1,
-    "desde": 1786762110321
+    "h": "03:54",
+    "jogo": "Brentford x Leicester",
+    "odd": 2,
+    "unidades": 4,
+    "desde": 1786762705333
    },
-   "iniciadoEm": 1786762110321
+   "iniciadoEm": 1786762110321,
+   "tiros": [
+    {
+     "h": "03:48",
+     "jogo": "Burnley x City",
+     "odd": 1.85,
+     "unidades": 1
+    },
+    {
+     "h": "03:51",
+     "jogo": "Southampton x Palace",
+     "odd": 2.02,
+     "unidades": 2
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786747705922,
@@ -7723,8 +7737,8 @@
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Palace",
-   "n": 8,
-   "start": 1
+   "n": 9,
+   "start": 2
   },
   "_obs": {}
  }
