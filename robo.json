@@ -4045,13 +4045,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -157.2,
-  "ciclos": 1312,
-  "greens": 889,
+  "saldo": -156,
+  "ciclos": 1313,
+  "greens": 890,
   "redsCiclo": 150,
   "aborts": 0,
   "descartes": 273,
   "historico": [
+   {
+    "quando": "2026-08-15T21:58:33.756Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · Aston x West Ham @2.2 (tiro 1) · gatilho: coluna :57"
+   },
    {
     "quando": "2026-08-15T21:48:14.162Z",
     "resultado": "GREEN_OBS",
@@ -7645,52 +7651,17 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros) · gatilho: time Buenos Aires"
-   },
-   {
-    "quando": "2026-07-30T05:35:36.298Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "premier · Watford x City @1.93 (tiro 1) · gatilho: time Leicester"
    }
   ],
   "consumidas": {
-   "super": 1786829311354
+   "super": 1786829311354,
+   "premier": 1786831113566
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:54",
-     "jogo": "Aston x West Ham",
-     "odd": 2.2
-    },
-    {
-     "h": "22:57",
-     "jogo": "Chelsea x Leicester",
-     "odd": 2
-    },
-    {
-     "h": "23:00",
-     "jogo": "Islington x Watford",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "coluna :57",
-   "alvo": {
-    "h": "22:54",
-    "jogo": "Aston x West Ham",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1786830503654
-   },
-   "iniciadoEm": 1786830503654
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786824629060,
    "super": 1786829311354,
-   "premier": 1786826874055,
+   "premier": 1786831113566,
    "copa": 1786827325553
   },
   "dias": {
@@ -7724,12 +7695,12 @@
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
    "2026-08-14": 5.8,
-   "2026-08-15": -22.4
+   "2026-08-15": -21.2
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRRGG",
-   "n": 9,
+   "chave": "RGGGR",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
