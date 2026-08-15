@@ -4068,18 +4068,24 @@
    "tipo": "time",
    "chave": "Everton",
    "n": 13,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -139.5,
-  "ciclos": 1292,
-  "greens": 878,
+  "saldo": -138.3,
+  "ciclos": 1293,
+  "greens": 879,
   "redsCiclo": 146,
   "aborts": 0,
   "descartes": 268,
   "historico": [
+   {
+    "quando": "2026-08-15T05:56:26.223Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · África do Sul x Austrália @2.05 (tiro 3) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-08-15T05:45:58.624Z",
     "resultado": "GREEN",
@@ -7673,67 +7679,48 @@
     "resultado": "GREEN",
     "unidades": 0.7,
     "detalhe": "euro · Ucrânia x Espanha @1.87 (tiro 2) · gatilho: seq GGRRG"
-   },
-   {
-    "quando": "2026-07-29T20:21:05.696Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho seq GGRRG) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "super": 1786772758424
+   "super": 1786772758424,
+   "copa": 1786773386028
   },
   "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "06:46",
-     "jogo": "Austrália x Haiti",
-     "odd": 1.93
+     "h": "06:57",
+     "jogo": "Newcastle x Liverpool",
+     "odd": 1.85
     },
     {
-     "h": "06:49",
-     "jogo": "RD Congo x Brasil",
-     "odd": 1.9
+     "h": "07:00",
+     "jogo": "Everton x Brighton",
+     "odd": 1.85
     },
     {
-     "h": "06:52",
-     "jogo": "África do Sul x Austrália",
-     "odd": 2.05
+     "h": "07:03",
+     "jogo": "Palace x Leeds",
+     "odd": 2.1
     }
    ],
-   "gatilho": "placar acima de 1-0 (2-1)",
+   "gatilho": "time Everton",
    "alvo": {
-    "h": "06:52",
-    "jogo": "África do Sul x Austrália",
-    "odd": 2.05,
-    "unidades": 4,
-    "desde": 1786773181624
+    "h": "06:57",
+    "jogo": "Newcastle x Liverpool",
+    "odd": 1.85,
+    "unidades": 1,
+    "desde": 1786773388527
    },
-   "iniciadoEm": 1786772770722,
-   "tiros": [
-    {
-     "h": "06:46",
-     "jogo": "Austrália x Haiti",
-     "odd": 1.93,
-     "unidades": 1
-    },
-    {
-     "h": "06:49",
-     "jogo": "RD Congo x Brasil",
-     "odd": 1.9,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1786773388527
   },
   "cooldown": {
    "euro": 1786766369329,
    "super": 1786772758424,
    "premier": 1786762776634,
-   "copa": 1786765829422
+   "copa": 1786773386028
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7766,7 +7753,7 @@
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
    "2026-08-14": 5.8,
-   "2026-08-15": -4.7
+   "2026-08-15": -3.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
