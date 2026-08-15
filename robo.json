@@ -7649,10 +7649,38 @@
     "detalhe": "copa · green OBSERVADO no papel (gatilho time Equador) — liga REARMADA"
    }
   ],
-  "consumidas": {
-   "premier": 1786774043926
+  "consumidas": {},
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:01",
+     "jogo": "Nova Zelândia x Uzbequistão",
+     "odd": 1.98
+    },
+    {
+     "h": "18:04",
+     "jogo": "Costa do Marfim x RD Congo",
+     "odd": 1.86
+    },
+    {
+     "h": "18:07",
+     "jogo": "Panamá x Marrocos",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "seq RGGG",
+   "alvo": {
+    "h": "18:01",
+    "jogo": "Nova Zelândia x Uzbequistão",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1786813313161
+   },
+   "iniciadoEm": 1786813313161
   },
-  "ciclo": null,
   "cooldown": {
    "euro": 1786774643025,
    "super": 1786772758424,
@@ -7693,9 +7721,9 @@
    "2026-08-15": -9.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Alemanha",
-   "n": 12,
+   "tipo": "seq",
+   "chave": "RGGG",
+   "n": 19,
    "start": 1
   },
   "_obs": {}
