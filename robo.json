@@ -4044,13 +4044,25 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -138.3,
-  "ciclos": 1293,
-  "greens": 879,
-  "redsCiclo": 146,
+  "saldo": -144.4,
+  "ciclos": 1295,
+  "greens": 880,
+  "redsCiclo": 147,
   "aborts": 0,
   "descartes": 268,
   "historico": [
+   {
+    "quando": "2026-08-15T06:17:23.320Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Espanha x Ucrânia @1.93 (tiro 1) · gatilho: time Sérvia"
+   },
+   {
+    "quando": "2026-08-15T06:07:24.320Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: time Everton"
+   },
    {
     "quando": "2026-08-15T05:56:26.223Z",
     "resultado": "GREEN",
@@ -7638,73 +7650,19 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho time Equador) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-29T21:11:45.400Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-29T20:29:04.790Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "euro · Ucrânia x Espanha @1.87 (tiro 2) · gatilho: seq GGRRG"
    }
   ],
   "consumidas": {
    "super": 1786772758424,
-   "copa": 1786773386028
+   "copa": 1786773386028,
+   "premier": 1786774043926,
+   "euro": 1786774643025
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "06:57",
-     "jogo": "Newcastle x Liverpool",
-     "odd": 1.85
-    },
-    {
-     "h": "07:00",
-     "jogo": "Everton x Brighton",
-     "odd": 1.85
-    },
-    {
-     "h": "07:03",
-     "jogo": "Palace x Leeds",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "time Everton",
-   "alvo": {
-    "h": "07:03",
-    "jogo": "Palace x Leeds",
-    "odd": 2.1,
-    "unidades": 4,
-    "desde": 1786773777831
-   },
-   "iniciadoEm": 1786773388527,
-   "tiros": [
-    {
-     "h": "06:57",
-     "jogo": "Newcastle x Liverpool",
-     "odd": 1.85,
-     "unidades": 1
-    },
-    {
-     "h": "07:00",
-     "jogo": "Everton x Brighton",
-     "odd": 1.85,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1786766369329,
+   "euro": 1786774643025,
    "super": 1786772758424,
-   "premier": 1786762776634,
+   "premier": 1786774043926,
    "copa": 1786773386028
   },
   "dias": {
@@ -7738,13 +7696,13 @@
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
    "2026-08-14": 5.8,
-   "2026-08-15": -3.5
+   "2026-08-15": -9.6
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Sérvia",
-   "n": 14,
-   "start": 3
+   "chave": "Alemanha",
+   "n": 12,
+   "start": 1
   },
   "_obs": {}
  }
