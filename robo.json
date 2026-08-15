@@ -3993,8 +3993,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "19:40",
@@ -4014,11 +4014,11 @@
    ],
    "gatilho": "seq GGGG",
    "alvo": {
-    "h": "19:43",
-    "jogo": "Penarol x Guayaquil",
-    "odd": 2.3,
-    "unidades": 2,
-    "desde": 1786819471965
+    "h": "19:46",
+    "jogo": "Santiago x Montevideo",
+    "odd": 2,
+    "unidades": 4,
+    "desde": 1786819652454
    },
    "iniciadoEm": 1786819294457,
    "tiros": [
@@ -4027,6 +4027,12 @@
      "jogo": "Bogota x Rio de Janeiro",
      "odd": 2.45,
      "unidades": 1
+    },
+    {
+     "h": "19:43",
+     "jogo": "Penarol x Guayaquil",
+     "odd": 2.3,
+     "unidades": 2
     }
    ]
   },
@@ -7693,8 +7699,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "19:43",
@@ -7714,13 +7720,21 @@
    ],
    "gatilho": "odd 1.8",
    "alvo": {
-    "h": "19:43",
-    "jogo": "Penarol x Guayaquil",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1786819049260
+    "h": "19:46",
+    "jogo": "Santiago x Montevideo",
+    "odd": 1.8,
+    "unidades": 2,
+    "desde": 1786819652660
    },
-   "iniciadoEm": 1786819049260
+   "iniciadoEm": 1786819049260,
+   "tiros": [
+    {
+     "h": "19:43",
+     "jogo": "Penarol x Guayaquil",
+     "odd": 2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786816765155,
@@ -7762,9 +7776,9 @@
    "2026-08-15": -6.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGGG",
-   "n": 12,
+   "tipo": "odd",
+   "chave": "1.8",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
