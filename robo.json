@@ -4041,7 +4041,12 @@
    "n": 12,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1786821505557,
+    "gatilho": "coluna :30"
+   }
+  }
  },
  "ambas": {
   "saldo": -147.3,
@@ -7658,8 +7663,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "20:16",
@@ -7679,13 +7684,21 @@
    ],
    "gatilho": "time Senegal",
    "alvo": {
-    "h": "20:16",
-    "jogo": "Equador x Curação",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1786821391353
+    "h": "20:19",
+    "jogo": "Marrocos x Senegal",
+    "odd": 2.1,
+    "unidades": 2,
+    "desde": 1786821508459
    },
-   "iniciadoEm": 1786821391353
+   "iniciadoEm": 1786821391353,
+   "tiros": [
+    {
+     "h": "20:16",
+     "jogo": "Equador x Curação",
+     "odd": 1.93,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786816765155,
@@ -7730,7 +7743,7 @@
    "tipo": "time",
    "chave": "Senegal",
    "n": 22,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
