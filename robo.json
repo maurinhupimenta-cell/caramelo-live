@@ -4070,13 +4070,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -129.7,
-  "ciclos": 1279,
-  "greens": 873,
+  "saldo": -128.7,
+  "ciclos": 1280,
+  "greens": 874,
   "redsCiclo": 144,
   "aborts": 0,
   "descartes": 262,
   "historico": [
+   {
+    "quando": "2026-08-15T02:16:23.323Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Buenos Aires x Penarol @2.02 (tiro 1) · gatilho: time Buenos Aires"
+   },
    {
     "quando": "2026-08-15T02:14:30.625Z",
     "resultado": "GREEN_OBS",
@@ -7670,49 +7676,15 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "super · Buenos Aires x Medellin @1.98 (tiro 1) · gatilho: time Medellin"
-   },
-   {
-    "quando": "2026-07-29T15:34:55.493Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: coluna :29"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:10",
-     "jogo": "Buenos Aires x Penarol",
-     "odd": 2.02
-    },
-    {
-     "h": "03:13",
-     "jogo": "Lima x Santiago",
-     "odd": 1.8
-    },
-    {
-     "h": "03:16",
-     "jogo": "La Boca x Montevideo",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "time Buenos Aires",
-   "alvo": {
-    "h": "03:10",
-    "jogo": "Buenos Aires x Penarol",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1786760091927
-   },
-   "iniciadoEm": 1786760091927
+  "consumidas": {
+   "super": 1786760183128
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786747705922,
-   "super": 1786755147734,
+   "super": 1786760183128,
    "premier": 1786731286829,
    "copa": 1786748365730
   },
@@ -7746,12 +7718,12 @@
    "2026-08-11": -11.1,
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
-   "2026-08-14": 10.9
+   "2026-08-14": 11.9
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Buenos Aires",
-   "n": 9,
+   "chave": "Avellaneda",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
