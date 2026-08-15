@@ -382,13 +382,19 @@
   }
  },
  "o25": {
-  "saldo": -155.1,
-  "ciclos": 1280,
+  "saldo": -162.1,
+  "ciclos": 1281,
   "greens": 801,
-  "redsCiclo": 198,
+  "redsCiclo": 199,
   "aborts": 0,
   "descartes": 281,
   "historico": [
+   {
+    "quando": "2026-08-15T17:35:07.058Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: coluna :30"
+   },
    {
     "quando": "2026-08-15T17:18:30.958Z",
     "resultado": "GREEN_OBS",
@@ -3982,63 +3988,15 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq RRRR"
-   },
-   {
-    "quando": "2026-07-30T15:02:30.494Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "copa · Bélgica x Haiti @2.2 (tiro 2) · gatilho: seq RRRG"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "18:27",
-     "jogo": "Watford x Southampton",
-     "odd": 2.4
-    },
-    {
-     "h": "18:30",
-     "jogo": "West Ham x Tottenham",
-     "odd": 2.75
-    },
-    {
-     "h": "18:33",
-     "jogo": "Burnley x Southampton",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "coluna :30",
-   "alvo": {
-    "h": "18:33",
-    "jogo": "Burnley x Southampton",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1786815131757
-   },
-   "iniciadoEm": 1786814345562,
-   "tiros": [
-    {
-     "h": "18:27",
-     "jogo": "Watford x Southampton",
-     "odd": 2.4,
-     "unidades": 1
-    },
-    {
-     "h": "18:30",
-     "jogo": "West Ham x Tottenham",
-     "odd": 2.75,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1786815306856
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786760483832,
-   "premier": 1786774043631,
+   "premier": 1786815306856,
    "euro": 1786744587629,
    "super": 1786772422729
   },
@@ -4074,7 +4032,7 @@
    "2026-08-12": -8.2,
    "2026-08-13": 2.5,
    "2026-08-14": -6.5,
-   "2026-08-15": -12.9
+   "2026-08-15": -19.9
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
