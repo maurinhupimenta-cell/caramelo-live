@@ -382,13 +382,19 @@
   }
  },
  "o25": {
-  "saldo": -166.7,
-  "ciclos": 1286,
-  "greens": 803,
+  "saldo": -165.2,
+  "ciclos": 1287,
+  "greens": 804,
   "redsCiclo": 200,
   "aborts": 0,
   "descartes": 283,
   "historico": [
+   {
+    "quando": "2026-08-15T20:18:23.453Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "copa · Escócia x México @2.5 (tiro 1) · gatilho: seq GRRRG"
+   },
    {
     "quando": "2026-08-15T19:32:16.459Z",
     "resultado": "GREEN",
@@ -3982,50 +3988,15 @@
     "resultado": "GREEN",
     "unidades": 1.7,
     "detalhe": "euro · Eslováquia x Albânia @2.7 (tiro 1) · gatilho: coluna :41"
-   },
-   {
-    "quando": "2026-07-30T16:31:37.493Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "premier · Burnley x United @2.1 (tiro 2) · gatilho: seq RRRR"
    }
   ],
   "consumidas": {
-   "premier": 1786822336259
+   "premier": 1786822336259,
+   "copa": 1786825103258
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:10",
-     "jogo": "Escócia x México",
-     "odd": 2.5
-    },
-    {
-     "h": "21:13",
-     "jogo": "Suíça x Noruega",
-     "odd": 2.2
-    },
-    {
-     "h": "21:16",
-     "jogo": "Panamá x Brasil",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "seq GRRRG",
-   "alvo": {
-    "h": "21:10",
-    "jogo": "Escócia x México",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1786824625858
-   },
-   "iniciadoEm": 1786824625858
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1786820426760,
+   "copa": 1786825103258,
    "premier": 1786822336259,
    "euro": 1786744587629,
    "super": 1786819745057
@@ -4062,13 +4033,13 @@
    "2026-08-12": -8.2,
    "2026-08-13": 2.5,
    "2026-08-14": -6.5,
-   "2026-08-15": -24.5
+   "2026-08-15": -23
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRRG",
-   "n": 9,
-   "start": 1
+   "tipo": "time",
+   "chave": "Curação",
+   "n": 21,
+   "start": 2
   },
   "_obs": {}
  },
