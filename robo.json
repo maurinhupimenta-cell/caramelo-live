@@ -4045,13 +4045,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -147.3,
-  "ciclos": 1304,
-  "greens": 885,
+  "saldo": -146.1,
+  "ciclos": 1305,
+  "greens": 886,
   "redsCiclo": 148,
   "aborts": 0,
   "descartes": 271,
   "historico": [
+   {
+    "quando": "2026-08-15T19:41:30.059Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Tunísia x Espanha @2.05 (tiro 3) · gatilho: time Senegal"
+   },
    {
     "quando": "2026-08-15T18:59:50.068Z",
     "resultado": "GREEN",
@@ -7645,62 +7651,19 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "premier · Liverpool x United @1.93 (tiro 1) · gatilho: time Palace"
-   },
-   {
-    "quando": "2026-07-30T01:10:32.893Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · Eslováquia x Croácia @1.95 (tiro 1) · gatilho: placar 1-0 / 0-1"
    }
   ],
   "consumidas": {
    "super": 1786819945465,
-   "premier": 1786820389866
+   "premier": 1786820389866,
+   "copa": 1786822889864
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "20:16",
-     "jogo": "Equador x Curação",
-     "odd": 1.93
-    },
-    {
-     "h": "20:19",
-     "jogo": "Marrocos x Senegal",
-     "odd": 2.1
-    },
-    {
-     "h": "20:22",
-     "jogo": "Tunísia x Espanha",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "time Senegal",
-   "alvo": null,
-   "iniciadoEm": 1786821391353,
-   "tiros": [
-    {
-     "h": "20:16",
-     "jogo": "Equador x Curação",
-     "odd": 1.93,
-     "unidades": 1
-    },
-    {
-     "h": "20:19",
-     "jogo": "Marrocos x Senegal",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786816765155,
    "super": 1786819945465,
    "premier": 1786820389866,
-   "copa": 1786817788958
+   "copa": 1786822889864
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7733,13 +7696,13 @@
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
    "2026-08-14": 5.8,
-   "2026-08-15": -12.5
+   "2026-08-15": -11.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGGRR",
-   "n": 13,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":53",
+   "n": 20,
+   "start": 3
   },
   "_obs": {}
  }
