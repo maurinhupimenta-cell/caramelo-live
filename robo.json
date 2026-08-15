@@ -4090,12 +4090,18 @@
  },
  "ambas": {
   "saldo": -139.8,
-  "ciclos": 1287,
+  "ciclos": 1288,
   "greens": 877,
   "redsCiclo": 146,
   "aborts": 0,
-  "descartes": 264,
+  "descartes": 265,
   "historico": [
+   {
+    "quando": "2026-08-15T04:21:22.923Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho seq RRRR) — liga REARMADA"
+   },
    {
     "quando": "2026-08-15T04:10:28.323Z",
     "resultado": "GREEN",
@@ -7689,12 +7695,6 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-29T18:59:47.592Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "super · Buenos Aires x La Boca @1.93 (tiro 1) · gatilho: coluna :58"
    }
   ],
   "consumidas": {
@@ -7702,7 +7702,37 @@
    "euro": 1786766369329,
    "super": 1786767028130
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:27",
+     "jogo": "Burnley x Brentford",
+     "odd": 1.93
+    },
+    {
+     "h": "05:30",
+     "jogo": "City x Everton",
+     "odd": 1.87
+    },
+    {
+     "h": "05:33",
+     "jogo": "Burnley x United",
+     "odd": 1.9
+    }
+   ],
+   "gatilho": "time Everton",
+   "alvo": {
+    "h": "05:27",
+    "jogo": "Burnley x Brentford",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1786767685128
+   },
+   "iniciadoEm": 1786767685128
+  },
   "cooldown": {
    "euro": 1786766369329,
    "super": 1786767028130,
@@ -7744,15 +7774,10 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Quito",
-   "n": 10,
-   "start": 3
+   "chave": "Everton",
+   "n": 9,
+   "start": 2
   },
-  "_obs": {
-   "premier": {
-    "desde": 1786767287223,
-    "gatilho": "seq RRRR"
-   }
-  }
+  "_obs": {}
  }
 }
