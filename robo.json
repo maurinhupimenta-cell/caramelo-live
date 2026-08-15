@@ -329,8 +329,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "03:42",
@@ -350,13 +350,27 @@
    ],
    "gatilho": "placar acima de 1-0 (2-1)",
    "alvo": {
-    "h": "03:42",
-    "jogo": "Wolverhampton x Leicester",
-    "odd": 4,
-    "unidades": 1,
-    "desde": 1786761524431
+    "h": "03:48",
+    "jogo": "Burnley x City",
+    "odd": 3.75,
+    "unidades": 4,
+    "desde": 1786762146528
    },
-   "iniciadoEm": 1786761524431
+   "iniciadoEm": 1786761524431,
+   "tiros": [
+    {
+     "h": "03:42",
+     "jogo": "Wolverhampton x Leicester",
+     "odd": 4,
+     "unidades": 1
+    },
+    {
+     "h": "03:45",
+     "jogo": "Chelsea x Palace",
+     "odd": 4.33,
+     "unidades": 2
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786370517941,
@@ -4061,12 +4075,18 @@
  },
  "ambas": {
   "saldo": -127.8,
-  "ciclos": 1282,
+  "ciclos": 1283,
   "greens": 875,
   "redsCiclo": 144,
   "aborts": 0,
-  "descartes": 263,
+  "descartes": 264,
   "historico": [
+   {
+    "quando": "2026-08-15T02:48:27.530Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho time Palace) — liga REARMADA"
+   },
    {
     "quando": "2026-08-15T02:48:25.927Z",
     "resultado": "DESCARTADO",
@@ -7660,12 +7680,6 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-29T17:14:46.991Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho odd 1.87) — liga REARMADA"
    }
   ],
   "consumidas": {
@@ -7678,30 +7692,30 @@
    "apostado": 0,
    "plano": [
     {
-     "h": "03:42",
-     "jogo": "Wolverhampton x Leicester",
-     "odd": 1.9
-    },
-    {
-     "h": "03:45",
-     "jogo": "Chelsea x Palace",
-     "odd": 1.98
-    },
-    {
      "h": "03:48",
      "jogo": "Burnley x City",
      "odd": 1.85
+    },
+    {
+     "h": "03:51",
+     "jogo": "Southampton x Palace",
+     "odd": 2.02
+    },
+    {
+     "h": "03:54",
+     "jogo": "Brentford x Leicester",
+     "odd": 2
     }
    ],
    "gatilho": "time Palace",
    "alvo": {
-    "h": "03:42",
-    "jogo": "Wolverhampton x Leicester",
-    "odd": 1.9,
+    "h": "03:48",
+    "jogo": "Burnley x City",
+    "odd": 1.85,
     "unidades": 1,
-    "desde": 1786761191630
+    "desde": 1786762110321
    },
-   "iniciadoEm": 1786761191630
+   "iniciadoEm": 1786762110321
   },
   "cooldown": {
    "euro": 1786747705922,
