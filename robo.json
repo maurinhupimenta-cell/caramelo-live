@@ -4043,13 +4043,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -153.7,
-  "ciclos": 1315,
-  "greens": 892,
+  "saldo": -152.7,
+  "ciclos": 1316,
+  "greens": 893,
   "redsCiclo": 150,
   "aborts": 0,
   "descartes": 273,
   "historico": [
+   {
+    "quando": "2026-08-15T23:09:26.956Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · United x Chelsea @1.95 (tiro 1) · gatilho: odd 1.8"
+   },
    {
     "quando": "2026-08-15T22:29:30.458Z",
     "resultado": "GREEN",
@@ -7643,23 +7649,18 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "super · Buenos Aires x Penarol @2.02 (tiro 1) · gatilho: coluna :49"
-   },
-   {
-    "quando": "2026-07-30T07:37:09.501Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :49) — liga REARMADA"
    }
   ],
   "consumidas": {
    "copa": 1786832249763,
-   "super": 1786832970261
+   "super": 1786832970261,
+   "premier": 1786835366758
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1786824629060,
    "super": 1786832970261,
-   "premier": 1786831113566,
+   "premier": 1786835366758,
    "copa": 1786832249763
   },
   "dias": {
@@ -7693,13 +7694,13 @@
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
    "2026-08-14": 5.8,
-   "2026-08-15": -18.9
+   "2026-08-15": -17.9
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRGG",
+   "tipo": "odd",
+   "chave": "1.8",
    "n": 10,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
