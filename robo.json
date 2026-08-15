@@ -382,13 +382,19 @@
   }
  },
  "o25": {
-  "saldo": -141.1,
-  "ciclos": 1277,
+  "saldo": -148.1,
+  "ciclos": 1278,
   "greens": 801,
-  "redsCiclo": 196,
+  "redsCiclo": 197,
   "aborts": 0,
   "descartes": 280,
   "historico": [
+   {
+    "quando": "2026-08-15T05:40:22.923Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: time Porto Alegre"
+   },
    {
     "quando": "2026-08-15T03:35:52.221Z",
     "resultado": "GREEN",
@@ -3982,59 +3988,17 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "copa · França x Iraque @2.45 (tiro 1) · gatilho: seq RRGRR"
-   },
-   {
-    "quando": "2026-07-30T13:50:41.691Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho coluna :54) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "05:13",
-     "jogo": "Agua Branca x Belo Horizonte",
-     "odd": 2.02
-    },
-    {
-     "h": "05:16",
-     "jogo": "Porto Alegre x Guayaquil",
-     "odd": 2.45
-    },
-    {
-     "h": "05:19",
-     "jogo": "Lima x Santos",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "time Porto Alegre",
-   "alvo": null,
-   "iniciadoEm": 1786766725732,
-   "tiros": [
-    {
-     "h": "05:13",
-     "jogo": "Agua Branca x Belo Horizonte",
-     "odd": 2.02,
-     "unidades": 1
-    },
-    {
-     "h": "05:16",
-     "jogo": "Porto Alegre x Guayaquil",
-     "odd": 2.45,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "super": 1786772422729
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786760483832,
    "premier": 1786764952020,
    "euro": 1786744587629,
-   "super": 1786761407031
+   "super": 1786772422729
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4068,24 +4032,36 @@
    "2026-08-12": -8.2,
    "2026-08-13": 2.5,
    "2026-08-14": -6.5,
-   "2026-08-15": 1.1
+   "2026-08-15": -5.9
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Everton",
-   "n": 9,
-   "start": 2
+   "n": 11,
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -139.8,
-  "ciclos": 1288,
+  "ciclos": 1290,
   "greens": 877,
   "redsCiclo": 146,
   "aborts": 0,
-  "descartes": 265,
+  "descartes": 267,
   "historico": [
+   {
+    "quando": "2026-08-15T05:36:15.622Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho time Everton) — liga REARMADA"
+   },
+   {
+    "quando": "2026-08-15T05:36:12.729Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-08-15T04:21:22.923Z",
     "resultado": "GREEN_OBS",
@@ -7673,55 +7649,39 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "copa · República Tcheca x Tunísia @2.2 (tiro 1) · gatilho: time Cabo Verde"
-   },
-   {
-    "quando": "2026-07-29T19:43:28.000Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho time Cabo Verde) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-29T19:43:24.397Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
-  "consumidas": {
-   "copa": 1786765829422,
-   "euro": 1786766369329,
-   "super": 1786767028130
-  },
+  "consumidas": {},
   "ciclo": {
-   "liga": "premier",
+   "liga": "super",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "05:27",
-     "jogo": "Burnley x Brentford",
-     "odd": 1.93
+     "h": "06:37",
+     "jogo": "Belo Horizonte x Medellin",
+     "odd": 2.05
     },
     {
-     "h": "05:30",
-     "jogo": "City x Everton",
-     "odd": 1.87
+     "h": "06:40",
+     "jogo": "Buenos Aires x Santiago",
+     "odd": 1.85
     },
     {
-     "h": "05:33",
-     "jogo": "Burnley x United",
-     "odd": 1.9
+     "h": "06:43",
+     "jogo": "Agua Branca x Sao Paulo",
+     "odd": 1.83
     }
    ],
-   "gatilho": "time Everton",
+   "gatilho": "time Buenos Aires",
    "alvo": {
-    "h": "05:27",
-    "jogo": "Burnley x Brentford",
-    "odd": 1.93,
+    "h": "06:37",
+    "jogo": "Belo Horizonte x Medellin",
+    "odd": 2.05,
     "unidades": 1,
-    "desde": 1786767685128
+    "desde": 1786772175626
    },
-   "iniciadoEm": 1786767685128
+   "iniciadoEm": 1786772175626
   },
   "cooldown": {
    "euro": 1786766369329,
@@ -7764,10 +7724,15 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Everton",
-   "n": 9,
-   "start": 2
+   "chave": "Brighton",
+   "n": 11,
+   "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1786772175626,
+    "gatilho": "time Haiti"
+   }
+  }
  }
 }
