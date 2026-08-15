@@ -3993,7 +3993,37 @@
   "consumidas": {
    "copa": 1786825103258
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:27",
+     "jogo": "West Ham x Newcastle",
+     "odd": 2.3
+    },
+    {
+     "h": "22:30",
+     "jogo": "Norwich x Palace",
+     "odd": 2.2
+    },
+    {
+     "h": "22:33",
+     "jogo": "Tottenham x Liverpool",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "coluna :30",
+   "alvo": {
+    "h": "22:27",
+    "jogo": "West Ham x Newcastle",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1786828697263
+   },
+   "iniciadoEm": 1786828697263
+  },
   "cooldown": {
    "copa": 1786825103258,
    "premier": 1786822336259,
@@ -4035,10 +4065,10 @@
    "2026-08-15": -23
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Curação",
-   "n": 21,
-   "start": 2
+   "tipo": "coluna",
+   "chave": ":30",
+   "n": 22,
+   "start": 3
   },
   "_obs": {}
  },
