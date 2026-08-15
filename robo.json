@@ -383,12 +383,18 @@
  },
  "o25": {
   "saldo": -155.1,
-  "ciclos": 1279,
+  "ciclos": 1280,
   "greens": 801,
   "redsCiclo": 198,
   "aborts": 0,
-  "descartes": 280,
+  "descartes": 281,
   "historico": [
+   {
+    "quando": "2026-08-15T17:18:30.958Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho coluna :30) — liga REARMADA"
+   },
    {
     "quando": "2026-08-15T06:07:23.826Z",
     "resultado": "RED_CICLO",
@@ -3982,12 +3988,6 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "copa · Bélgica x Haiti @2.2 (tiro 2) · gatilho: seq RRRG"
-   },
-   {
-    "quando": "2026-07-30T13:56:55.893Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "premier · Newcastle x Norwich @2.07 (tiro 1) · gatilho: coluna :54"
    }
   ],
   "consumidas": {},
@@ -4038,7 +4038,12 @@
    "n": 8,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1786814310958,
+    "gatilho": "coluna :30"
+   }
+  }
  },
  "ambas": {
   "saldo": -143.7,
@@ -7724,9 +7729,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":17",
+   "chave": ":22",
    "n": 18,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
