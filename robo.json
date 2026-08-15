@@ -327,7 +327,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:42",
+     "jogo": "Wolverhampton x Leicester",
+     "odd": 4
+    },
+    {
+     "h": "03:45",
+     "jogo": "Chelsea x Palace",
+     "odd": 4.33
+    },
+    {
+     "h": "03:48",
+     "jogo": "Burnley x City",
+     "odd": 3.75
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-1)",
+   "alvo": {
+    "h": "03:42",
+    "jogo": "Wolverhampton x Leicester",
+    "odd": 4,
+    "unidades": 1,
+    "desde": 1786761524431
+   },
+   "iniciadoEm": 1786761524431
+  },
   "cooldown": {
    "copa": 1786370517941,
    "premier": 1786142860082,
@@ -355,9 +385,9 @@
    "2026-08-10": -7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "África do Sul",
-   "n": 11,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 8,
    "start": 1
   },
   "_obs": {
