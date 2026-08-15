@@ -7655,7 +7655,45 @@
    "super": 1786815235757,
    "euro": 1786816765155
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "19:10",
+     "jogo": "Uruguai x México",
+     "odd": 1.93
+    },
+    {
+     "h": "19:13",
+     "jogo": "Qatar x Cabo Verde",
+     "odd": 1.98
+    },
+    {
+     "h": "19:16",
+     "jogo": "Uruguai x Austrália",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "coluna :13",
+   "alvo": {
+    "h": "19:13",
+    "jogo": "Qatar x Cabo Verde",
+    "odd": 1.98,
+    "unidades": 2,
+    "desde": 1786817607265
+   },
+   "iniciadoEm": 1786817309561,
+   "tiros": [
+    {
+     "h": "19:10",
+     "jogo": "Uruguai x México",
+     "odd": 1.93,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1786816765155,
    "super": 1786815235757,
@@ -7696,9 +7734,9 @@
    "2026-08-15": -7.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":57",
-   "n": 18,
+   "tipo": "seq",
+   "chave": "RRGGR",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
