@@ -3993,8 +3993,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "19:40",
@@ -4014,13 +4014,21 @@
    ],
    "gatilho": "seq GGGG",
    "alvo": {
-    "h": "19:40",
-    "jogo": "Bogota x Rio de Janeiro",
-    "odd": 2.45,
-    "unidades": 1,
-    "desde": 1786819294457
+    "h": "19:43",
+    "jogo": "Penarol x Guayaquil",
+    "odd": 2.3,
+    "unidades": 2,
+    "desde": 1786819471965
    },
-   "iniciadoEm": 1786819294457
+   "iniciadoEm": 1786819294457,
+   "tiros": [
+    {
+     "h": "19:40",
+     "jogo": "Bogota x Rio de Janeiro",
+     "odd": 2.45,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786760483832,
@@ -4064,8 +4072,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GGGG",
-   "n": 11,
+   "chave": "GGGGR",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
