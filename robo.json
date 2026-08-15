@@ -4085,13 +4085,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -143.7,
-  "ciclos": 1298,
-  "greens": 881,
+  "saldo": -143.3,
+  "ciclos": 1299,
+  "greens": 882,
   "redsCiclo": 147,
   "aborts": 0,
   "descartes": 270,
   "historico": [
+   {
+    "quando": "2026-08-15T17:33:56.258Z",
+    "resultado": "GREEN",
+    "unidades": 0.4,
+    "detalhe": "super · Lima x Belo Horizonte @1.86 (tiro 3) · gatilho: odd 1.8"
+   },
    {
     "quando": "2026-08-15T17:23:33.362Z",
     "resultado": "GREEN_OBS",
@@ -7685,65 +7691,16 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · Romênia x Sérvia @2 (tiro 2) · gatilho: seq RGRGG"
-   },
-   {
-    "quando": "2026-07-29T21:32:31.794Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "super · Guayaquil x Santos @1.95 (tiro 1) · gatilho: odd 1.95"
    }
   ],
   "consumidas": {
-   "copa": 1786813706661
+   "copa": 1786813706661,
+   "super": 1786815235757
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "18:25",
-     "jogo": "Quito x La Boca",
-     "odd": 2.05
-    },
-    {
-     "h": "18:28",
-     "jogo": "Montevideo x Santiago",
-     "odd": 1.8
-    },
-    {
-     "h": "18:31",
-     "jogo": "Lima x Belo Horizonte",
-     "odd": 1.86
-    }
-   ],
-   "gatilho": "odd 1.8",
-   "alvo": {
-    "h": "18:31",
-    "jogo": "Lima x Belo Horizonte",
-    "odd": 1.86,
-    "unidades": 4,
-    "desde": 1786815084759
-   },
-   "iniciadoEm": 1786814613366,
-   "tiros": [
-    {
-     "h": "18:25",
-     "jogo": "Quito x La Boca",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "18:28",
-     "jogo": "Montevideo x Santiago",
-     "odd": 1.8,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786774643025,
-   "super": 1786772758424,
+   "super": 1786815235757,
    "premier": 1786774043926,
    "copa": 1786813706661
   },
@@ -7778,7 +7735,7 @@
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
    "2026-08-14": 5.8,
-   "2026-08-15": -8.9
+   "2026-08-15": -8.5
   },
   "_gatilhoAtual": {
    "tipo": "odd",
@@ -7786,6 +7743,11 @@
    "n": 12,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1786815211163,
+    "gatilho": "odd 1.8"
+   }
+  }
  }
 }
