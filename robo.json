@@ -7682,7 +7682,45 @@
   "consumidas": {
    "copa": 1786813706661
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "18:25",
+     "jogo": "Quito x La Boca",
+     "odd": 2.05
+    },
+    {
+     "h": "18:28",
+     "jogo": "Montevideo x Santiago",
+     "odd": 1.8
+    },
+    {
+     "h": "18:31",
+     "jogo": "Lima x Belo Horizonte",
+     "odd": 1.86
+    }
+   ],
+   "gatilho": "odd 1.8",
+   "alvo": {
+    "h": "18:28",
+    "jogo": "Montevideo x Santiago",
+    "odd": 1.8,
+    "unidades": 2,
+    "desde": 1786814912360
+   },
+   "iniciadoEm": 1786814613366,
+   "tiros": [
+    {
+     "h": "18:25",
+     "jogo": "Quito x La Boca",
+     "odd": 2.05,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1786774643025,
    "super": 1786772758424,
@@ -7726,13 +7764,8 @@
    "tipo": "odd",
    "chave": "1.8",
    "n": 12,
-   "start": 2
+   "start": 1
   },
-  "_obs": {
-   "euro": {
-    "desde": 1786814613362,
-    "gatilho": "coluna :17"
-   }
-  }
+  "_obs": {}
  }
 }
