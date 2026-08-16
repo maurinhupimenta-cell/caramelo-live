@@ -4044,12 +4044,18 @@
  },
  "ambas": {
   "saldo": -152.7,
-  "ciclos": 1316,
+  "ciclos": 1317,
   "greens": 893,
   "redsCiclo": 150,
   "aborts": 0,
-  "descartes": 273,
+  "descartes": 274,
   "historico": [
+   {
+    "quando": "2026-08-16T01:59:22.761Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho placar empate 1-1) — liga REARMADA"
+   },
    {
     "quando": "2026-08-15T23:09:26.956Z",
     "resultado": "GREEN",
@@ -7643,12 +7649,6 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · Portugal x Croácia @1.95 (tiro 1) · gatilho: time Albânia"
-   },
-   {
-    "quando": "2026-07-30T07:49:28.291Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "super · Buenos Aires x Penarol @2.02 (tiro 1) · gatilho: coluna :49"
    }
   ],
   "consumidas": {},
@@ -7728,6 +7728,11 @@
    "n": 8,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1786845562761,
+    "gatilho": "placar empate 1-1"
+   }
+  }
  }
 }
