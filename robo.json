@@ -7652,7 +7652,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:00",
+     "jogo": "West Ham x Chelsea",
+     "odd": 2.1
+    },
+    {
+     "h": "03:03",
+     "jogo": "City x Wolverhampton",
+     "odd": 1.83
+    },
+    {
+     "h": "03:06",
+     "jogo": "Aston x Norwich",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-1)",
+   "alvo": {
+    "h": "03:00",
+    "jogo": "West Ham x Chelsea",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1786845443759
+   },
+   "iniciadoEm": 1786845443759
+  },
   "cooldown": {
    "euro": 1786824629060,
    "super": 1786832970261,
@@ -7693,10 +7723,10 @@
    "2026-08-15": -17.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.8",
-   "n": 10,
-   "start": 3
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
+   "n": 8,
+   "start": 1
   },
   "_obs": {}
  }
