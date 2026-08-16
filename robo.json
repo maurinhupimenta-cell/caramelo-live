@@ -3990,9 +3990,7 @@
     "detalhe": "copa · Equador x Arábia Saudita @2.07 (tiro 1) · gatilho: odd 2.07"
    }
   ],
-  "consumidas": {
-   "premier": 1786842307660
-  },
+  "consumidas": {},
   "ciclo": null,
   "cooldown": {
    "copa": 1786832249259,
@@ -4043,13 +4041,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -152.7,
-  "ciclos": 1317,
-  "greens": 893,
+  "saldo": -152,
+  "ciclos": 1318,
+  "greens": 894,
   "redsCiclo": 150,
   "aborts": 0,
   "descartes": 274,
   "historico": [
+   {
+    "quando": "2026-08-16T02:05:13.358Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "premier · City x Wolverhampton @1.83 (tiro 2) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-08-16T01:59:22.761Z",
     "resultado": "GREEN_OBS",
@@ -7643,58 +7647,16 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "premier · Liverpool x Tottenham @2.07 (tiro 1) · gatilho: coluna :00"
-   },
-   {
-    "quando": "2026-07-30T07:55:42.396Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · Portugal x Croácia @1.95 (tiro 1) · gatilho: time Albânia"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "03:00",
-     "jogo": "West Ham x Chelsea",
-     "odd": 2.1
-    },
-    {
-     "h": "03:03",
-     "jogo": "City x Wolverhampton",
-     "odd": 1.83
-    },
-    {
-     "h": "03:06",
-     "jogo": "Aston x Norwich",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-1)",
-   "alvo": {
-    "h": "03:03",
-    "jogo": "City x Wolverhampton",
-    "odd": 1.83,
-    "unidades": 2,
-    "desde": 1786845767755
-   },
-   "iniciadoEm": 1786845443759,
-   "tiros": [
-    {
-     "h": "03:00",
-     "jogo": "West Ham x Chelsea",
-     "odd": 2.1,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "premier": 1786845913254
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786824629060,
    "super": 1786832970261,
-   "premier": 1786835366758,
+   "premier": 1786845913254,
    "copa": 1786832249763
   },
   "dias": {
@@ -7728,12 +7690,12 @@
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
    "2026-08-14": 5.8,
-   "2026-08-15": -17.9
+   "2026-08-15": -17.2
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 12,
+   "chave": "acima de 1-0 (2-1)",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
