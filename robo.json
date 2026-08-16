@@ -3991,7 +3991,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:03",
+     "jogo": "Leeds x City",
+     "odd": 2.3
+    },
+    {
+     "h": "02:06",
+     "jogo": "Leicester x Watford",
+     "odd": 2.35
+    },
+    {
+     "h": "02:09",
+     "jogo": "Brighton x Leeds",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-0)",
+   "alvo": {
+    "h": "02:03",
+    "jogo": "Leeds x City",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1786841983563
+   },
+   "iniciadoEm": 1786841983563
+  },
   "cooldown": {
    "copa": 1786832249259,
    "premier": 1786829565762,
@@ -4033,9 +4063,9 @@
    "2026-08-15": -17.6
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Equador",
-   "n": 14,
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-0)",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
