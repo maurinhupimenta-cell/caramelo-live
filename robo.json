@@ -7654,8 +7654,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "03:00",
@@ -7675,13 +7675,21 @@
    ],
    "gatilho": "placar acima de 1-0 (2-1)",
    "alvo": {
-    "h": "03:00",
-    "jogo": "West Ham x Chelsea",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1786845443759
+    "h": "03:03",
+    "jogo": "City x Wolverhampton",
+    "odd": 1.83,
+    "unidades": 2,
+    "desde": 1786845767755
    },
-   "iniciadoEm": 1786845443759
+   "iniciadoEm": 1786845443759,
+   "tiros": [
+    {
+     "h": "03:00",
+     "jogo": "West Ham x Chelsea",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1786824629060,
@@ -7724,15 +7732,10 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "acima de 1-0 (2-1)",
-   "n": 8,
+   "chave": "empate 1-1",
+   "n": 12,
    "start": 1
   },
-  "_obs": {
-   "euro": {
-    "desde": 1786845562761,
-    "gatilho": "placar empate 1-1"
-   }
-  }
+  "_obs": {}
  }
 }
