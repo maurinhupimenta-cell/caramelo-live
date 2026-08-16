@@ -382,13 +382,19 @@
   }
  },
  "o25": {
-  "saldo": -159.8,
-  "ciclos": 1292,
-  "greens": 808,
+  "saldo": -158.5,
+  "ciclos": 1293,
+  "greens": 809,
   "redsCiclo": 200,
   "aborts": 0,
   "descartes": 284,
   "historico": [
+   {
+    "quando": "2026-08-16T01:05:07.854Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "premier · Leeds x City @2.3 (tiro 1) · gatilho: placar acima de 1-0 (2-0)"
+   },
    {
     "quando": "2026-08-15T22:17:29.453Z",
     "resultado": "GREEN",
@@ -3982,49 +3988,15 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "copa · Equador x Arábia Saudita @2.07 (tiro 1) · gatilho: odd 2.07"
-   },
-   {
-    "quando": "2026-07-30T17:57:27.396Z",
-    "resultado": "GREEN",
-    "unidades": 1.9,
-    "detalhe": "premier · West Ham x Liverpool @2.45 (tiro 2) · gatilho: coluna :54"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "02:03",
-     "jogo": "Leeds x City",
-     "odd": 2.3
-    },
-    {
-     "h": "02:06",
-     "jogo": "Leicester x Watford",
-     "odd": 2.35
-    },
-    {
-     "h": "02:09",
-     "jogo": "Brighton x Leeds",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-0)",
-   "alvo": {
-    "h": "02:03",
-    "jogo": "Leeds x City",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1786841983563
-   },
-   "iniciadoEm": 1786841983563
+  "consumidas": {
+   "premier": 1786842307660
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786832249259,
-   "premier": 1786829565762,
+   "premier": 1786842307660,
    "euro": 1786830446763,
    "super": 1786829849756
   },
@@ -4060,7 +4032,7 @@
    "2026-08-12": -8.2,
    "2026-08-13": 2.5,
    "2026-08-14": -6.5,
-   "2026-08-15": -17.6
+   "2026-08-15": -16.3
   },
   "_gatilhoAtual": {
    "tipo": "placar",
