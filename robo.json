@@ -4042,12 +4042,18 @@
  },
  "ambas": {
   "saldo": -152,
-  "ciclos": 1318,
+  "ciclos": 1319,
   "greens": 894,
   "redsCiclo": 150,
   "aborts": 0,
-  "descartes": 274,
+  "descartes": 275,
   "historico": [
+   {
+    "quando": "2026-08-17T23:36:25.023Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-08-16T02:05:13.358Z",
     "resultado": "GREEN",
@@ -7641,12 +7647,6 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "super · Porto Alegre x La Boca @2.25 (tiro 1) · gatilho: coluna :52"
-   },
-   {
-    "quando": "2026-07-30T08:02:36.895Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "premier · Liverpool x Tottenham @2.07 (tiro 1) · gatilho: coluna :00"
    }
   ],
   "consumidas": {
@@ -7720,7 +7720,8 @@
    "2026-08-12": -3.4,
    "2026-08-13": 8.6,
    "2026-08-14": 5.8,
-   "2026-08-15": -17.2
+   "2026-08-15": -17.2,
+   "2026-08-17": 0
   },
   "_gatilhoAtual": {
    "tipo": "placar",
