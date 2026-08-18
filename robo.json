@@ -403,13 +403,19 @@
   }
  },
  "o25": {
-  "saldo": -166.2,
-  "ciclos": 1300,
-  "greens": 813,
+  "saldo": -164.5,
+  "ciclos": 1301,
+  "greens": 814,
   "redsCiclo": 202,
   "aborts": 0,
   "descartes": 285,
   "historico": [
+   {
+    "quando": "2026-08-18T05:29:45.028Z",
+    "resultado": "GREEN",
+    "unidades": 1.7,
+    "detalhe": "premier · Liverpool x Aston @2.35 (tiro 2) · gatilho: time Aston"
+   },
    {
     "quando": "2026-08-18T04:26:31.425Z",
     "resultado": "GREEN",
@@ -4003,57 +4009,15 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "copa · Equador x Costa do Marfim @2.07 (tiro 2) · gatilho: time Egito"
-   },
-   {
-    "quando": "2026-07-30T20:11:57.427Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: time Tottenham"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "06:24",
-     "jogo": "United x Palace",
-     "odd": 2.2
-    },
-    {
-     "h": "06:27",
-     "jogo": "Liverpool x Aston",
-     "odd": 2.35
-    },
-    {
-     "h": "06:30",
-     "jogo": "Watford x Newcastle",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "time Aston",
-   "alvo": {
-    "h": "06:27",
-    "jogo": "Liverpool x Aston",
-    "odd": 2.35,
-    "unidades": 2,
-    "desde": 1787030858528
-   },
-   "iniciadoEm": 1787030369933,
-   "tiros": [
-    {
-     "h": "06:24",
-     "jogo": "United x Palace",
-     "odd": 2.2,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "premier": 1787030984832
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787026955423,
-   "premier": 1787022882330,
+   "premier": 1787030984832,
    "euro": 1787027191229,
    "super": 1787023716021
   },
@@ -4091,13 +4055,13 @@
    "2026-08-14": -6.5,
    "2026-08-15": -16.3,
    "2026-08-17": -5.2,
-   "2026-08-18": -2.5
+   "2026-08-18": -0.8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.3",
    "n": 13,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
