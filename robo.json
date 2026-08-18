@@ -4061,13 +4061,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -153.7,
-  "ciclos": 1327,
-  "greens": 899,
+  "saldo": -152.7,
+  "ciclos": 1328,
+  "greens": 900,
   "redsCiclo": 151,
   "aborts": 0,
   "descartes": 277,
   "historico": [
+   {
+    "quando": "2026-08-18T03:42:28.724Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Santos x Santiago @1.98 (tiro 1) · gatilho: time Santos"
+   },
    {
     "quando": "2026-08-18T03:38:31.327Z",
     "resultado": "GREEN",
@@ -7661,52 +7667,17 @@
     "resultado": "GREEN",
     "unidades": 0.7,
     "detalhe": "copa · Áustria x Equador @1.87 (tiro 2) · gatilho: time Equador"
-   },
-   {
-    "quando": "2026-07-30T13:02:56.690Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Wolverhampton x West Ham @2.02 (tiro 2) · gatilho: coluna :00"
    }
   ],
   "consumidas": {
    "euro": 1787021307929,
-   "copa": 1787024311139
+   "copa": 1787024311139,
+   "super": 1787024548438
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:37",
-     "jogo": "Santos x Santiago",
-     "odd": 1.98
-    },
-    {
-     "h": "04:40",
-     "jogo": "Buenos Aires x Montevideo",
-     "odd": 1.86
-    },
-    {
-     "h": "04:43",
-     "jogo": "Avellaneda x Rio de Janeiro",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "time Santos",
-   "alvo": {
-    "h": "04:37",
-    "jogo": "Santos x Santiago",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1787024313632
-   },
-   "iniciadoEm": 1787024313632
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787021307929,
-   "super": 1787020410329,
+   "super": 1787024548438,
    "premier": 1786845913254,
    "copa": 1787024311139
   },
@@ -7743,7 +7714,7 @@
    "2026-08-14": 5.8,
    "2026-08-15": -17.2,
    "2026-08-17": -2.9,
-   "2026-08-18": 1.2
+   "2026-08-18": 2.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
