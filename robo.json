@@ -4045,13 +4045,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -149.8,
-  "ciclos": 1321,
-  "greens": 896,
+  "saldo": -148.8,
+  "ciclos": 1322,
+  "greens": 897,
   "redsCiclo": 150,
   "aborts": 0,
   "descartes": 275,
   "historico": [
+   {
+    "quando": "2026-08-18T02:16:28.427Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Qatar x Argélia @2 (tiro 1) · gatilho: seq RRRR"
+   },
    {
     "quando": "2026-08-18T01:23:31.329Z",
     "resultado": "GREEN",
@@ -7645,53 +7651,18 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · Burnley x Tottenham @2.02 (tiro 1) · gatilho: odd 2.07"
-   },
-   {
-    "quando": "2026-07-30T10:04:47.594Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "super · Buenos Aires x Porto Alegre @2.1 (tiro 1) · gatilho: coluna :04"
    }
   ],
   "consumidas": {
-   "super": 1787016211132
+   "super": 1787016211132,
+   "copa": 1787019388226
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:13",
-     "jogo": "Qatar x Argélia",
-     "odd": 2
-    },
-    {
-     "h": "03:16",
-     "jogo": "Jordânia x Haiti",
-     "odd": 1.87
-    },
-    {
-     "h": "03:19",
-     "jogo": "Argentina x Países Baixos",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "seq RRRR",
-   "alvo": {
-    "h": "03:13",
-    "jogo": "Qatar x Argélia",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1787018973126
-   },
-   "iniciadoEm": 1787018973126
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1786824629060,
    "super": 1787016211132,
    "premier": 1786845913254,
-   "copa": 1787014415121
+   "copa": 1787019388226
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7725,7 +7696,7 @@
    "2026-08-13": 8.6,
    "2026-08-14": 5.8,
    "2026-08-15": -17.2,
-   "2026-08-17": 2.2
+   "2026-08-17": 3.2
   },
   "_gatilhoAtual": {
    "tipo": "seq",
