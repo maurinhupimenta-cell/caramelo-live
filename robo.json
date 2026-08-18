@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -124,
-  "ciclos": 213,
-  "greens": 72,
+  "saldo": -120,
+  "ciclos": 214,
+  "greens": 73,
   "redsCiclo": 88,
   "aborts": 0,
   "descartes": 53,
   "historico": [
+   {
+    "quando": "2026-08-18T05:00:35.727Z",
+    "resultado": "GREEN",
+    "unidades": 4,
+    "detalhe": "premier · Southampton x Brentford @5 (tiro 1) · gatilho: time City"
+   },
    {
     "quando": "2026-08-18T03:35:53.939Z",
     "resultado": "GREEN",
@@ -350,41 +356,13 @@
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:57",
-     "jogo": "Southampton x Brentford",
-     "odd": 5
-    },
-    {
-     "h": "06:00",
-     "jogo": "United x City",
-     "odd": 4
-    },
-    {
-     "h": "06:03",
-     "jogo": "Wolverhampton x Leeds",
-     "odd": 4.75
-    }
-   ],
-   "gatilho": "time City",
-   "alvo": {
-    "h": "05:57",
-    "jogo": "Southampton x Brentford",
-    "odd": 5,
-    "unidades": 1,
-    "desde": 1787028489034
-   },
-   "iniciadoEm": 1787028489034
+  "consumidas": {
+   "premier": 1787029235622
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786370517941,
-   "premier": 1787024153729,
+   "premier": 1787029235622,
    "euro": 1785464913993,
    "super": 1786764145328
   },
@@ -409,7 +387,7 @@
    "2026-08-10": -7,
    "2026-08-14": -7,
    "2026-08-15": -7,
-   "2026-08-18": 9
+   "2026-08-18": 13
   },
   "_gatilhoAtual": {
    "tipo": "time",
@@ -7788,9 +7766,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Eslováquia",
-   "n": 9,
-   "start": 1
+   "chave": "Bélgica",
+   "n": 10,
+   "start": 3
   },
   "_obs": {}
  }
