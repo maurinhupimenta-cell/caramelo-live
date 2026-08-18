@@ -4061,13 +4061,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -152.7,
-  "ciclos": 1328,
-  "greens": 900,
+  "saldo": -151.6,
+  "ciclos": 1329,
+  "greens": 901,
   "redsCiclo": 151,
   "aborts": 0,
   "descartes": 277,
   "historico": [
+   {
+    "quando": "2026-08-18T03:55:30.622Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "euro · Sérvia x Croácia @2.05 (tiro 2) · gatilho: time Bélgica"
+   },
    {
     "quando": "2026-08-18T03:42:28.724Z",
     "resultado": "GREEN",
@@ -7661,21 +7667,16 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "super · Medellin x Montevideo @1.95 (tiro 1) · gatilho: seq RRGGR"
-   },
-   {
-    "quando": "2026-07-30T13:16:05.191Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "copa · Áustria x Equador @1.87 (tiro 2) · gatilho: time Equador"
    }
   ],
   "consumidas": {
    "copa": 1787024311139,
-   "super": 1787024548438
+   "super": 1787024548438,
+   "euro": 1787025330327
   },
   "ciclo": null,
   "cooldown": {
-   "euro": 1787021307929,
+   "euro": 1787025330327,
    "super": 1787024548438,
    "premier": 1786845913254,
    "copa": 1787024311139
@@ -7713,13 +7714,13 @@
    "2026-08-14": 5.8,
    "2026-08-15": -17.2,
    "2026-08-17": -2.9,
-   "2026-08-18": 2.2
+   "2026-08-18": 3.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Santos",
-   "n": 14,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.05",
+   "n": 10,
+   "start": 2
   },
   "_obs": {}
  }
