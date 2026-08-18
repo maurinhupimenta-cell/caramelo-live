@@ -1,12 +1,18 @@
 {
  "o35": {
   "saldo": -133,
-  "ciclos": 211,
+  "ciclos": 212,
   "greens": 71,
   "redsCiclo": 88,
   "aborts": 0,
-  "descartes": 52,
+  "descartes": 53,
   "historico": [
+   {
+    "quando": "2026-08-18T03:18:09.927Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho time City) — liga REARMADA"
+   },
    {
     "quando": "2026-08-15T03:22:25.525Z",
     "resultado": "RED_CICLO",
@@ -366,7 +372,8 @@
    "2026-08-07": 34.5,
    "2026-08-10": -7,
    "2026-08-14": -7,
-   "2026-08-15": -7
+   "2026-08-15": -7,
+   "2026-08-18": 0
   },
   "_gatilhoAtual": {
    "tipo": "time",
@@ -378,6 +385,10 @@
    "euro": {
     "desde": 1785463711484,
     "gatilho": "time Eslovênia"
+   },
+   "premier": {
+    "desde": 1787023089927,
+    "gatilho": "time City"
    }
   }
  },
