@@ -403,13 +403,19 @@
   }
  },
  "o25": {
-  "saldo": -164.5,
-  "ciclos": 1301,
-  "greens": 814,
+  "saldo": -163.2,
+  "ciclos": 1302,
+  "greens": 815,
   "redsCiclo": 202,
   "aborts": 0,
   "descartes": 285,
   "historico": [
+   {
+    "quando": "2026-08-18T05:40:34.226Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "super · Avellaneda x Santiago @2.15 (tiro 2) · gatilho: time Santiago"
+   },
    {
     "quando": "2026-08-18T05:29:45.028Z",
     "resultado": "GREEN",
@@ -4003,61 +4009,18 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "copa · Curação x Argélia @2.2 (tiro 2) · gatilho: seq RRGRR"
-   },
-   {
-    "quando": "2026-07-30T21:02:46.426Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "copa · Equador x Costa do Marfim @2.07 (tiro 2) · gatilho: time Egito"
    }
   ],
   "consumidas": {
-   "premier": 1787030984832
+   "premier": 1787030984832,
+   "super": 1787031634020
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "06:31",
-     "jogo": "Belo Horizonte x Guayaquil",
-     "odd": 2.05
-    },
-    {
-     "h": "06:34",
-     "jogo": "Avellaneda x Santiago",
-     "odd": 2.15
-    },
-    {
-     "h": "06:37",
-     "jogo": "Rio de Janeiro x Penarol",
-     "odd": 2.45
-    }
-   ],
-   "gatilho": "time Santiago",
-   "alvo": {
-    "h": "06:34",
-    "jogo": "Avellaneda x Santiago",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1787031270427
-   },
-   "iniciadoEm": 1787031008822,
-   "tiros": [
-    {
-     "h": "06:31",
-     "jogo": "Belo Horizonte x Guayaquil",
-     "odd": 2.05,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787026955423,
    "premier": 1787030984832,
    "euro": 1787027191229,
-   "super": 1787023716021
+   "super": 1787031634020
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4093,13 +4056,13 @@
    "2026-08-14": -6.5,
    "2026-08-15": -16.3,
    "2026-08-17": -5.2,
-   "2026-08-18": -0.8
+   "2026-08-18": 0.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "França",
-   "n": 10,
-   "start": 1
+   "chave": "Medellin",
+   "n": 14,
+   "start": 3
   },
   "_obs": {}
  },
