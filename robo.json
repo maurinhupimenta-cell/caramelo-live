@@ -4015,7 +4015,37 @@
    "premier": 1787030984832,
    "super": 1787031634020
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:47",
+     "jogo": "Polônia x Turquia",
+     "odd": 2.7
+    },
+    {
+     "h": "06:50",
+     "jogo": "França x Sérvia",
+     "odd": 2.3
+    },
+    {
+     "h": "06:53",
+     "jogo": "República Tcheca x Países Baixos",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "time França",
+   "alvo": {
+    "h": "06:47",
+    "jogo": "Polônia x Turquia",
+    "odd": 2.7,
+    "unidades": 1,
+    "desde": 1787031749621
+   },
+   "iniciadoEm": 1787031749621
+  },
   "cooldown": {
    "copa": 1787026955423,
    "premier": 1787030984832,
@@ -4060,8 +4090,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Medellin",
-   "n": 14,
+   "chave": "França",
+   "n": 11,
    "start": 3
   },
   "_obs": {}
