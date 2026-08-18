@@ -4067,13 +4067,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -149.4,
-  "ciclos": 1331,
-  "greens": 903,
+  "saldo": -148.4,
+  "ciclos": 1332,
+  "greens": 904,
   "redsCiclo": 151,
   "aborts": 0,
   "descartes": 277,
   "historico": [
+   {
+    "quando": "2026-08-18T05:13:30.825Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Geórgia x Bélgica @1.98 (tiro 2) · gatilho: time Bélgica"
+   },
    {
     "quando": "2026-08-18T05:02:27.927Z",
     "resultado": "GREEN",
@@ -7667,21 +7673,16 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "super · Belo Horizonte x Medellin @2.05 (tiro 2) · gatilho: seq RRRGG"
-   },
-   {
-    "quando": "2026-07-30T14:20:49.692Z",
-    "resultado": "GREEN",
-    "unidades": 0.8,
-    "detalhe": "premier · Leicester x Newcastle @1.9 (tiro 2) · gatilho: placar empate 2-2"
    }
   ],
   "consumidas": {
    "copa": 1787028090623,
-   "super": 1787029347822
+   "super": 1787029347822,
+   "euro": 1787030010624
   },
   "ciclo": null,
   "cooldown": {
-   "euro": 1787025330327,
+   "euro": 1787030010624,
    "super": 1787029347822,
    "premier": 1786845913254,
    "copa": 1787028090623
@@ -7719,13 +7720,13 @@
    "2026-08-14": 5.8,
    "2026-08-15": -17.2,
    "2026-08-17": -2.9,
-   "2026-08-18": 5.5
+   "2026-08-18": 6.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Bélgica",
    "n": 10,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
