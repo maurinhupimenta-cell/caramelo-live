@@ -4092,18 +4092,24 @@
    "tipo": "time",
    "chave": "França",
    "n": 11,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -148.4,
-  "ciclos": 1332,
-  "greens": 904,
+  "saldo": -147.4,
+  "ciclos": 1333,
+  "greens": 905,
   "redsCiclo": 151,
   "aborts": 0,
   "descartes": 277,
   "historico": [
+   {
+    "quando": "2026-08-18T05:49:28.721Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Inglaterra x Curaçao @2.02 (tiro 1) · gatilho: seq RRRG"
+   },
    {
     "quando": "2026-08-18T05:13:30.825Z",
     "resultado": "GREEN",
@@ -7697,54 +7703,19 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "premier · Chelsea x West Ham @2.15 (tiro 1) · gatilho: placar empate 2-2"
-   },
-   {
-    "quando": "2026-07-30T14:56:33.597Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "super · Belo Horizonte x Medellin @2.05 (tiro 2) · gatilho: seq RRRGG"
    }
   ],
   "consumidas": {
    "super": 1787029347822,
-   "euro": 1787030010624
+   "euro": 1787030010624,
+   "copa": 1787032168521
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:46",
-     "jogo": "Inglaterra x Curaçao",
-     "odd": 2.02
-    },
-    {
-     "h": "06:49",
-     "jogo": "Áustria x Países Baixos",
-     "odd": 1.98
-    },
-    {
-     "h": "06:52",
-     "jogo": "Noruega x África do Sul",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "seq RRRG",
-   "alvo": {
-    "h": "06:46",
-    "jogo": "Inglaterra x Curaçao",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1787031807821
-   },
-   "iniciadoEm": 1787031807821
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787030010624,
    "super": 1787029347822,
    "premier": 1786845913254,
-   "copa": 1787028090623
+   "copa": 1787032168521
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7779,7 +7750,7 @@
    "2026-08-14": 5.8,
    "2026-08-15": -17.2,
    "2026-08-17": -2.9,
-   "2026-08-18": 6.5
+   "2026-08-18": 7.5
   },
   "_gatilhoAtual": {
    "tipo": "seq",
