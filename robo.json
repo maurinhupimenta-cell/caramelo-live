@@ -7709,7 +7709,37 @@
    "super": 1787029347822,
    "euro": 1787030010624
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:46",
+     "jogo": "Inglaterra x Curaçao",
+     "odd": 2.02
+    },
+    {
+     "h": "06:49",
+     "jogo": "Áustria x Países Baixos",
+     "odd": 1.98
+    },
+    {
+     "h": "06:52",
+     "jogo": "Noruega x África do Sul",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "seq RRRG",
+   "alvo": {
+    "h": "06:46",
+    "jogo": "Inglaterra x Curaçao",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1787031807821
+   },
+   "iniciadoEm": 1787031807821
+  },
   "cooldown": {
    "euro": 1787030010624,
    "super": 1787029347822,
@@ -7752,9 +7782,9 @@
    "2026-08-18": 6.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Bélgica",
-   "n": 10,
+   "tipo": "seq",
+   "chave": "RRRG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
