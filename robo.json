@@ -7649,39 +7649,37 @@
     "detalhe": "super · Porto Alegre x La Boca @2.25 (tiro 1) · gatilho: coluna :52"
    }
   ],
-  "consumidas": {
-   "premier": 1786845913254
-  },
+  "consumidas": {},
   "ciclo": {
-   "liga": "euro",
+   "liga": "copa",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "03:11",
-     "jogo": "Suíça x Eslovênia",
-     "odd": 2.15
-    },
-    {
-     "h": "03:14",
-     "jogo": "Eslováquia x Sérvia",
-     "odd": 2.1
-    },
-    {
-     "h": "03:17",
-     "jogo": "Croácia x Países Baixos",
+     "h": "01:43",
+     "jogo": "Alemanha x Portugal",
      "odd": 1.85
+    },
+    {
+     "h": "01:46",
+     "jogo": "Cabo Verde x Espanha",
+     "odd": 1.93
+    },
+    {
+     "h": "01:49",
+     "jogo": "Áustria x Equador",
+     "odd": 1.87
     }
    ],
-   "gatilho": "placar empate 1-1",
+   "gatilho": "placar goleada (3+)",
    "alvo": {
-    "h": "03:11",
-    "jogo": "Suíça x Eslovênia",
-    "odd": 2.15,
+    "h": "01:43",
+    "jogo": "Alemanha x Portugal",
+    "odd": 1.85,
     "unidades": 1,
-    "desde": 1786846105754
+    "desde": 1787013748925
    },
-   "iniciadoEm": 1786846105754
+   "iniciadoEm": 1787013748925
   },
   "cooldown": {
    "euro": 1786824629060,
@@ -7725,8 +7723,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "empate 1-1",
-   "n": 13,
+   "chave": "goleada (3+)",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
