@@ -347,8 +347,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "04:27",
@@ -368,13 +368,21 @@
    ],
    "gatilho": "time City",
    "alvo": {
-    "h": "04:27",
-    "jogo": "Palace x Liverpool",
-    "odd": 4.2,
-    "unidades": 1,
-    "desde": 1787023107929
+    "h": "04:30",
+    "jogo": "Norwich x City",
+    "odd": 3.8,
+    "unidades": 2,
+    "desde": 1787023782025
    },
-   "iniciadoEm": 1787023107929
+   "iniciadoEm": 1787023107929,
+   "tiros": [
+    {
+     "h": "04:27",
+     "jogo": "Palace x Liverpool",
+     "odd": 4.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786370517941,
@@ -7770,7 +7778,7 @@
    "tipo": "odd",
    "chave": "2.1",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
