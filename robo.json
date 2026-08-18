@@ -403,13 +403,19 @@
   }
  },
  "o25": {
-  "saldo": -163.2,
-  "ciclos": 1302,
-  "greens": 815,
+  "saldo": -161.5,
+  "ciclos": 1303,
+  "greens": 816,
   "redsCiclo": 202,
   "aborts": 0,
   "descartes": 285,
   "historico": [
+   {
+    "quando": "2026-08-18T05:50:30.422Z",
+    "resultado": "GREEN",
+    "unidades": 1.7,
+    "detalhe": "euro · Polônia x Turquia @2.7 (tiro 1) · gatilho: time França"
+   },
    {
     "quando": "2026-08-18T05:40:34.226Z",
     "resultado": "GREEN",
@@ -4003,53 +4009,18 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "euro · Áustria x Países Baixos @2.15 (tiro 1) · gatilho: seq GGGRG"
-   },
-   {
-    "quando": "2026-07-30T22:10:00.330Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "copa · Curação x Argélia @2.2 (tiro 2) · gatilho: seq RRGRR"
    }
   ],
   "consumidas": {
    "premier": 1787030984832,
-   "super": 1787031634020
+   "super": 1787031634020,
+   "euro": 1787032230224
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:47",
-     "jogo": "Polônia x Turquia",
-     "odd": 2.7
-    },
-    {
-     "h": "06:50",
-     "jogo": "França x Sérvia",
-     "odd": 2.3
-    },
-    {
-     "h": "06:53",
-     "jogo": "República Tcheca x Países Baixos",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "time França",
-   "alvo": {
-    "h": "06:47",
-    "jogo": "Polônia x Turquia",
-    "odd": 2.7,
-    "unidades": 1,
-    "desde": 1787031749621
-   },
-   "iniciadoEm": 1787031749621
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787026955423,
    "premier": 1787030984832,
-   "euro": 1787027191229,
+   "euro": 1787032230224,
    "super": 1787031634020
   },
   "dias": {
@@ -4086,7 +4057,7 @@
    "2026-08-14": -6.5,
    "2026-08-15": -16.3,
    "2026-08-17": -5.2,
-   "2026-08-18": 0.5
+   "2026-08-18": 2.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
