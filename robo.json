@@ -4059,13 +4059,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -151.6,
-  "ciclos": 1329,
-  "greens": 901,
+  "saldo": -150.6,
+  "ciclos": 1330,
+  "greens": 902,
   "redsCiclo": 151,
   "aborts": 0,
   "descartes": 277,
   "historico": [
+   {
+    "quando": "2026-08-18T04:41:30.824Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Paraguai x Marrocos @2.05 (tiro 1) · gatilho: odd 2.1"
+   },
    {
     "quando": "2026-08-18T03:55:30.622Z",
     "resultado": "GREEN",
@@ -7659,54 +7665,19 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: odd 2.2"
-   },
-   {
-    "quando": "2026-07-30T13:19:06.695Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "super · Medellin x Montevideo @1.95 (tiro 1) · gatilho: seq RRGGR"
    }
   ],
   "consumidas": {
    "super": 1787024548438,
-   "euro": 1787025330327
+   "euro": 1787025330327,
+   "copa": 1787028090623
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:37",
-     "jogo": "Paraguai x Marrocos",
-     "odd": 2.05
-    },
-    {
-     "h": "05:40",
-     "jogo": "Argentina x Escócia",
-     "odd": 2.1
-    },
-    {
-     "h": "05:43",
-     "jogo": "Bélgica x Equador",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "odd 2.1",
-   "alvo": {
-    "h": "05:37",
-    "jogo": "Paraguai x Marrocos",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1787027912521
-   },
-   "iniciadoEm": 1787027912521
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787025330327,
    "super": 1787024548438,
    "premier": 1786845913254,
-   "copa": 1787024311139
+   "copa": 1787028090623
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7741,7 +7712,7 @@
    "2026-08-14": 5.8,
    "2026-08-15": -17.2,
    "2026-08-17": -2.9,
-   "2026-08-18": 3.3
+   "2026-08-18": 4.3
   },
   "_gatilhoAtual": {
    "tipo": "odd",
