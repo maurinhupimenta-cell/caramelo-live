@@ -7674,8 +7674,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "04:31",
@@ -7695,13 +7695,21 @@
    ],
    "gatilho": "odd 2.1",
    "alvo": {
-    "h": "04:31",
-    "jogo": "Brasil x Uruguai",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1787023468721
+    "h": "04:34",
+    "jogo": "Marrocos x Senegal",
+    "odd": 2.1,
+    "unidades": 2,
+    "desde": 1787024189325
    },
-   "iniciadoEm": 1787023468721
+   "iniciadoEm": 1787023468721,
+   "tiros": [
+    {
+     "h": "04:31",
+     "jogo": "Brasil x Uruguai",
+     "odd": 1.95,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1787021307929,
@@ -7745,9 +7753,9 @@
    "2026-08-18": 0
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.1",
-   "n": 9,
+   "tipo": "time",
+   "chave": "Santos",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
