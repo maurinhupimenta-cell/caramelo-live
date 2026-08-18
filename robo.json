@@ -398,12 +398,18 @@
  },
  "o25": {
   "saldo": -161,
-  "ciclos": 1297,
+  "ciclos": 1298,
   "greens": 812,
   "redsCiclo": 201,
   "aborts": 0,
-  "descartes": 284,
+  "descartes": 285,
   "historico": [
+   {
+    "quando": "2026-08-18T04:01:30.325Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho odd 2.3) — liga REARMADA"
+   },
    {
     "quando": "2026-08-18T03:28:36.225Z",
     "resultado": "GREEN",
@@ -3997,19 +4003,43 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "copa · Qatar x Egito @2.2 (tiro 2) · gatilho: seq RRRGR"
-   },
-   {
-    "quando": "2026-07-30T19:45:42.526Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: odd 2.55"
    }
   ],
   "consumidas": {
    "premier": 1787022882330,
    "super": 1787023716021
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:10",
+     "jogo": "Bélgica x EUA",
+     "odd": 2.25
+    },
+    {
+     "h": "05:13",
+     "jogo": "Coreia do Sul x RD Congo",
+     "odd": 2.3
+    },
+    {
+     "h": "05:16",
+     "jogo": "Inglaterra x Iraque",
+     "odd": 2.45
+    }
+   ],
+   "gatilho": "odd 2.3",
+   "alvo": {
+    "h": "05:10",
+    "jogo": "Bélgica x EUA",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1787025692627
+   },
+   "iniciadoEm": 1787025692627
+  },
   "cooldown": {
    "copa": 1787019148229,
    "premier": 1787022882330,
@@ -4053,9 +4083,9 @@
    "2026-08-18": 2.7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Santos",
-   "n": 13,
+   "tipo": "odd",
+   "chave": "2.3",
+   "n": 8,
    "start": 3
   },
   "_obs": {}
