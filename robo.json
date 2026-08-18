@@ -4016,8 +4016,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "06:31",
@@ -4037,13 +4037,21 @@
    ],
    "gatilho": "time Santiago",
    "alvo": {
-    "h": "06:31",
-    "jogo": "Belo Horizonte x Guayaquil",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1787031008822
+    "h": "06:34",
+    "jogo": "Avellaneda x Santiago",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1787031270427
    },
-   "iniciadoEm": 1787031008822
+   "iniciadoEm": 1787031008822,
+   "tiros": [
+    {
+     "h": "06:31",
+     "jogo": "Belo Horizonte x Guayaquil",
+     "odd": 2.05,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1787026955423,
@@ -4089,9 +4097,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Santiago",
-   "n": 13,
-   "start": 2
+   "chave": "França",
+   "n": 10,
+   "start": 1
   },
   "_obs": {}
  },
