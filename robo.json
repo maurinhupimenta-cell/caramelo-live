@@ -4045,13 +4045,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -155.8,
-  "ciclos": 1324,
-  "greens": 897,
+  "saldo": -154.9,
+  "ciclos": 1325,
+  "greens": 898,
   "redsCiclo": 151,
   "aborts": 0,
   "descartes": 276,
   "historico": [
+   {
+    "quando": "2026-08-18T02:48:28.426Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · Portugal x Espanha @1.85 (tiro 1) · gatilho: time Alemanha"
+   },
    {
     "quando": "2026-08-18T02:35:28.331Z",
     "resultado": "GREEN_OBS",
@@ -7645,21 +7651,16 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · West Ham x Everton @2.05 (tiro 1) · gatilho: odd 2.05"
-   },
-   {
-    "quando": "2026-07-30T11:51:45.200Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "super · Guayaquil x Avellaneda @1.93 (tiro 2) · gatilho: coluna :49"
    }
   ],
   "consumidas": {
    "copa": 1787019388226,
-   "super": 1787020410329
+   "super": 1787020410329,
+   "euro": 1787021307929
   },
   "ciclo": null,
   "cooldown": {
-   "euro": 1786824629060,
+   "euro": 1787021307929,
    "super": 1787020410329,
    "premier": 1786845913254,
    "copa": 1787019388226
@@ -7696,19 +7697,14 @@
    "2026-08-13": 8.6,
    "2026-08-14": 5.8,
    "2026-08-15": -17.2,
-   "2026-08-17": -3.8
+   "2026-08-17": -2.9
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Avellaneda",
-   "n": 9,
+   "chave": "Alemanha",
+   "n": 8,
    "start": 1
   },
-  "_obs": {
-   "euro": {
-    "desde": 1787020528331,
-    "gatilho": "time Alemanha"
-   }
-  }
+  "_obs": {}
  }
 }
