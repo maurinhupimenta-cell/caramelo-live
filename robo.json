@@ -409,7 +409,7 @@
    "tipo": "time",
    "chave": "City",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {
    "euro": {
@@ -7724,7 +7724,37 @@
    "super": 1787020410329,
    "euro": 1787021307929
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:31",
+     "jogo": "Brasil x Uruguai",
+     "odd": 1.95
+    },
+    {
+     "h": "04:34",
+     "jogo": "Marrocos x Senegal",
+     "odd": 2.1
+    },
+    {
+     "h": "04:37",
+     "jogo": "França x Curaçao",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "odd 2.1",
+   "alvo": {
+    "h": "04:31",
+    "jogo": "Brasil x Uruguai",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1787023468721
+   },
+   "iniciadoEm": 1787023468721
+  },
   "cooldown": {
    "euro": 1787021307929,
    "super": 1787020410329,
@@ -7766,10 +7796,10 @@
    "2026-08-17": -2.9
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Alemanha",
-   "n": 8,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.1",
+   "n": 9,
+   "start": 3
   },
   "_obs": {}
  }
