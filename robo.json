@@ -351,7 +351,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:57",
+     "jogo": "Southampton x Brentford",
+     "odd": 5
+    },
+    {
+     "h": "06:00",
+     "jogo": "United x City",
+     "odd": 4
+    },
+    {
+     "h": "06:03",
+     "jogo": "Wolverhampton x Leeds",
+     "odd": 4.75
+    }
+   ],
+   "gatilho": "time City",
+   "alvo": {
+    "h": "05:57",
+    "jogo": "Southampton x Brentford",
+    "odd": 5,
+    "unidades": 1,
+    "desde": 1787028489034
+   },
+   "iniciadoEm": 1787028489034
+  },
   "cooldown": {
    "copa": 1786370517941,
    "premier": 1787024153729,
@@ -384,8 +414,8 @@
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "City",
-   "n": 8,
-   "start": 1
+   "n": 14,
+   "start": 3
   },
   "_obs": {
    "euro": {
