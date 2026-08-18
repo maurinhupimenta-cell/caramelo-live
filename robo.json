@@ -4098,12 +4098,18 @@
  },
  "ambas": {
   "saldo": -154.9,
-  "ciclos": 1325,
+  "ciclos": 1326,
   "greens": 898,
   "redsCiclo": 151,
   "aborts": 0,
-  "descartes": 276,
+  "descartes": 277,
   "historico": [
+   {
+    "quando": "2026-08-18T03:33:31.722Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho time Santos) — liga REARMADA"
+   },
    {
     "quando": "2026-08-18T02:48:28.426Z",
     "resultado": "GREEN",
@@ -7697,16 +7703,9 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · Espanha x Geórgia @2.02 (tiro 2) · gatilho: odd 2.02"
-   },
-   {
-    "quando": "2026-07-30T11:56:48.394Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · West Ham x Everton @2.05 (tiro 1) · gatilho: odd 2.05"
    }
   ],
   "consumidas": {
-   "super": 1787020410329,
    "euro": 1787021307929
   },
   "ciclo": {
@@ -7778,7 +7777,8 @@
    "2026-08-13": 8.6,
    "2026-08-14": 5.8,
    "2026-08-15": -17.2,
-   "2026-08-17": -2.9
+   "2026-08-17": -2.9,
+   "2026-08-18": 0
   },
   "_gatilhoAtual": {
    "tipo": "odd",
@@ -7786,6 +7786,11 @@
    "n": 9,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1787024011722,
+    "gatilho": "time Santos"
+   }
+  }
  }
 }
