@@ -3993,8 +3993,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "02:54",
@@ -4014,11 +4014,11 @@
    ],
    "gatilho": "time Leicester",
    "alvo": {
-    "h": "02:57",
-    "jogo": "Leicester x United",
-    "odd": 2.25,
-    "unidades": 2,
-    "desde": 1787018252528
+    "h": "03:00",
+    "jogo": "Wolverhampton x Aston",
+    "odd": 2.2,
+    "unidades": 4,
+    "desde": 1787018389221
    },
    "iniciadoEm": 1787017507223,
    "tiros": [
@@ -4027,6 +4027,12 @@
      "jogo": "Palace x Burnley",
      "odd": 2.1,
      "unidades": 1
+    },
+    {
+     "h": "02:57",
+     "jogo": "Leicester x United",
+     "odd": 2.25,
+     "unidades": 2
     }
    ]
   },
@@ -4071,10 +4077,10 @@
    "2026-08-15": -16.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Leicester",
+   "tipo": "odd",
+   "chave": "2.15",
    "n": 8,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  },
