@@ -3990,10 +3990,38 @@
     "detalhe": "premier · Brentford x Brighton @2.1 (tiro 1) · gatilho: time Tottenham"
    }
   ],
-  "consumidas": {
-   "copa": 1787019148229
+  "consumidas": {},
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:12",
+     "jogo": "Southampton x Norwich",
+     "odd": 2.3
+    },
+    {
+     "h": "04:15",
+     "jogo": "Leicester x Chelsea",
+     "odd": 2.25
+    },
+    {
+     "h": "04:18",
+     "jogo": "Palace x Wolverhampton",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "time Leicester",
+   "alvo": {
+    "h": "04:12",
+    "jogo": "Southampton x Norwich",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1787022208523
+   },
+   "iniciadoEm": 1787022208523
   },
-  "ciclo": null,
   "cooldown": {
    "copa": 1787019148229,
    "premier": 1787018607928,
@@ -4036,9 +4064,9 @@
    "2026-08-17": -5.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.15",
-   "n": 9,
+   "tipo": "time",
+   "chave": "Leicester",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
