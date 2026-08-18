@@ -382,13 +382,19 @@
   }
  },
  "o25": {
-  "saldo": -158.5,
-  "ciclos": 1293,
-  "greens": 809,
+  "saldo": -156.7,
+  "ciclos": 1294,
+  "greens": 810,
   "redsCiclo": 200,
   "aborts": 0,
   "descartes": 284,
   "historico": [
+   {
+    "quando": "2026-08-18T02:03:28.422Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "premier · Wolverhampton x Aston @2.2 (tiro 3) · gatilho: time Leicester"
+   },
    {
     "quando": "2026-08-16T01:05:07.854Z",
     "resultado": "GREEN",
@@ -3982,63 +3988,15 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "euro · Países Baixos x Escócia @2.07 (tiro 2) · gatilho: coluna :41"
-   },
-   {
-    "quando": "2026-07-30T18:34:46.791Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "copa · Equador x Arábia Saudita @2.07 (tiro 1) · gatilho: odd 2.07"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "02:54",
-     "jogo": "Palace x Burnley",
-     "odd": 2.1
-    },
-    {
-     "h": "02:57",
-     "jogo": "Leicester x United",
-     "odd": 2.25
-    },
-    {
-     "h": "03:00",
-     "jogo": "Wolverhampton x Aston",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Leicester",
-   "alvo": {
-    "h": "03:00",
-    "jogo": "Wolverhampton x Aston",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1787018389221
-   },
-   "iniciadoEm": 1787017507223,
-   "tiros": [
-    {
-     "h": "02:54",
-     "jogo": "Palace x Burnley",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "02:57",
-     "jogo": "Leicester x United",
-     "odd": 2.25,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1787018607928
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786832249259,
-   "premier": 1786842307660,
+   "premier": 1787018607928,
    "euro": 1786830446763,
    "super": 1786829849756
   },
@@ -4074,13 +4032,14 @@
    "2026-08-12": -8.2,
    "2026-08-13": 2.5,
    "2026-08-14": -6.5,
-   "2026-08-15": -16.3
+   "2026-08-15": -16.3,
+   "2026-08-17": 1.8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.15",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
