@@ -7668,11 +7668,40 @@
    }
   ],
   "consumidas": {
-   "copa": 1787024311139,
    "super": 1787024548438,
    "euro": 1787025330327
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:37",
+     "jogo": "Paraguai x Marrocos",
+     "odd": 2.05
+    },
+    {
+     "h": "05:40",
+     "jogo": "Argentina x Escócia",
+     "odd": 2.1
+    },
+    {
+     "h": "05:43",
+     "jogo": "Bélgica x Equador",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "odd 2.1",
+   "alvo": {
+    "h": "05:37",
+    "jogo": "Paraguai x Marrocos",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1787027912521
+   },
+   "iniciadoEm": 1787027912521
+  },
   "cooldown": {
    "euro": 1787025330327,
    "super": 1787024548438,
@@ -7716,9 +7745,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.05",
+   "chave": "2.1",
    "n": 10,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
