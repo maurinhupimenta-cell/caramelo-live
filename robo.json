@@ -4014,7 +4014,37 @@
   "consumidas": {
    "premier": 1787030984832
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:31",
+     "jogo": "Belo Horizonte x Guayaquil",
+     "odd": 2.05
+    },
+    {
+     "h": "06:34",
+     "jogo": "Avellaneda x Santiago",
+     "odd": 2.15
+    },
+    {
+     "h": "06:37",
+     "jogo": "Rio de Janeiro x Penarol",
+     "odd": 2.45
+    }
+   ],
+   "gatilho": "time Santiago",
+   "alvo": {
+    "h": "06:31",
+    "jogo": "Belo Horizonte x Guayaquil",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1787031008822
+   },
+   "iniciadoEm": 1787031008822
+  },
   "cooldown": {
    "copa": 1787026955423,
    "premier": 1787030984832,
@@ -4058,10 +4088,10 @@
    "2026-08-18": -0.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.3",
+   "tipo": "time",
+   "chave": "Santiago",
    "n": 13,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  },
