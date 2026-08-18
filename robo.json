@@ -415,7 +415,7 @@
    "tipo": "time",
    "chave": "City",
    "n": 14,
-   "start": 3
+   "start": 1
   },
   "_obs": {
    "euro": {
@@ -7698,13 +7698,12 @@
    }
   ],
   "consumidas": {
-   "euro": 1787025330327,
    "copa": 1787028090623
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:52",
@@ -7724,13 +7723,21 @@
    ],
    "gatilho": "odd 1.98",
    "alvo": {
-    "h": "05:52",
-    "jogo": "Belo Horizonte x Medellin",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1787028533034
+    "h": "05:55",
+    "jogo": "Montevideo x La Boca",
+    "odd": 1.98,
+    "unidades": 2,
+    "desde": 1787028931933
    },
-   "iniciadoEm": 1787028533034
+   "iniciadoEm": 1787028533034,
+   "tiros": [
+    {
+     "h": "05:52",
+     "jogo": "Belo Horizonte x Medellin",
+     "odd": 2.05,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1787025330327,
@@ -7777,7 +7784,7 @@
    "tipo": "odd",
    "chave": "1.98",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
