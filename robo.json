@@ -7656,7 +7656,45 @@
   "consumidas": {
    "copa": 1787019388226
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "03:22",
+     "jogo": "Santiago x Penarol",
+     "odd": 1.95
+    },
+    {
+     "h": "03:25",
+     "jogo": "Avellaneda x Belo Horizonte",
+     "odd": 1.9
+    },
+    {
+     "h": "03:28",
+     "jogo": "Buenos Aires x Rio de Janeiro",
+     "odd": 1.85
+    }
+   ],
+   "gatilho": "time Avellaneda",
+   "alvo": {
+    "h": "03:25",
+    "jogo": "Avellaneda x Belo Horizonte",
+    "odd": 1.9,
+    "unidades": 2,
+    "desde": 1787019928531
+   },
+   "iniciadoEm": 1787019811934,
+   "tiros": [
+    {
+     "h": "03:22",
+     "jogo": "Santiago x Penarol",
+     "odd": 1.95,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1786824629060,
    "super": 1787016211132,
@@ -7698,9 +7736,9 @@
    "2026-08-17": 3.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRR",
-   "n": 8,
+   "tipo": "time",
+   "chave": "Avellaneda",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
