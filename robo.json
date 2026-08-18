@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -133,
-  "ciclos": 212,
-  "greens": 71,
+  "saldo": -124,
+  "ciclos": 213,
+  "greens": 72,
   "redsCiclo": 88,
   "aborts": 0,
   "descartes": 53,
   "historico": [
+   {
+    "quando": "2026-08-18T03:35:53.939Z",
+    "resultado": "GREEN",
+    "unidades": 9,
+    "detalhe": "premier · Watford x Brighton @4 (tiro 3) · gatilho: time City"
+   },
    {
     "quando": "2026-08-18T03:18:09.927Z",
     "resultado": "GREEN_OBS",
@@ -344,55 +350,13 @@
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "04:27",
-     "jogo": "Palace x Liverpool",
-     "odd": 4.2
-    },
-    {
-     "h": "04:30",
-     "jogo": "Norwich x City",
-     "odd": 3.8
-    },
-    {
-     "h": "04:33",
-     "jogo": "Watford x Brighton",
-     "odd": 4
-    }
-   ],
-   "gatilho": "time City",
-   "alvo": {
-    "h": "04:33",
-    "jogo": "Watford x Brighton",
-    "odd": 4,
-    "unidades": 4,
-    "desde": 1787023959127
-   },
-   "iniciadoEm": 1787023107929,
-   "tiros": [
-    {
-     "h": "04:27",
-     "jogo": "Palace x Liverpool",
-     "odd": 4.2,
-     "unidades": 1
-    },
-    {
-     "h": "04:30",
-     "jogo": "Norwich x City",
-     "odd": 3.8,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1787024153729
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786370517941,
-   "premier": 1786762303323,
+   "premier": 1787024153729,
    "euro": 1785464913993,
    "super": 1786764145328
   },
@@ -417,7 +381,7 @@
    "2026-08-10": -7,
    "2026-08-14": -7,
    "2026-08-15": -7,
-   "2026-08-18": 0
+   "2026-08-18": 9
   },
   "_gatilhoAtual": {
    "tipo": "time",
@@ -7786,11 +7750,6 @@
    "n": 9,
    "start": 1
   },
-  "_obs": {
-   "super": {
-    "desde": 1787024011722,
-    "gatilho": "time Santos"
-   }
-  }
+  "_obs": {}
  }
 }
