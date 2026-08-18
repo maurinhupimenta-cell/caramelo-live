@@ -3993,7 +3993,45 @@
   "consumidas": {
    "premier": 1787018607928
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "03:04",
+     "jogo": "Iraque x Haiti",
+     "odd": 2.3
+    },
+    {
+     "h": "03:07",
+     "jogo": "Brasil x Arábia Saudita",
+     "odd": 2.15
+    },
+    {
+     "h": "03:10",
+     "jogo": "Haiti x Colômbia",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "odd 2.15",
+   "alvo": {
+    "h": "03:07",
+    "jogo": "Brasil x Arábia Saudita",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1787018972830
+   },
+   "iniciadoEm": 1787018610122,
+   "tiros": [
+    {
+     "h": "03:04",
+     "jogo": "Iraque x Haiti",
+     "odd": 2.3,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1786832249259,
    "premier": 1787018607928,
@@ -4038,7 +4076,7 @@
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.15",
-   "n": 8,
+   "n": 9,
    "start": 1
   },
   "_obs": {}
@@ -7655,7 +7693,37 @@
   "consumidas": {
    "super": 1787016211132
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:13",
+     "jogo": "Qatar x Argélia",
+     "odd": 2
+    },
+    {
+     "h": "03:16",
+     "jogo": "Jordânia x Haiti",
+     "odd": 1.87
+    },
+    {
+     "h": "03:19",
+     "jogo": "Argentina x Países Baixos",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "seq RRRR",
+   "alvo": {
+    "h": "03:13",
+    "jogo": "Qatar x Argélia",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1787018973126
+   },
+   "iniciadoEm": 1787018973126
+  },
   "cooldown": {
    "euro": 1786824629060,
    "super": 1787016211132,
@@ -7697,10 +7765,10 @@
    "2026-08-17": 2.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Santos",
+   "tipo": "seq",
+   "chave": "RRRR",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
