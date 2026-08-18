@@ -7652,7 +7652,37 @@
   "consumidas": {
    "copa": 1787014415121
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:16",
+     "jogo": "Penarol x Bogota",
+     "odd": 2.25
+    },
+    {
+     "h": "02:19",
+     "jogo": "Quito x Santos",
+     "odd": 2.05
+    },
+    {
+     "h": "02:22",
+     "jogo": "Santiago x Bogota",
+     "odd": 2
+    }
+   ],
+   "gatilho": "time Santos",
+   "alvo": {
+    "h": "02:16",
+    "jogo": "Penarol x Bogota",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1787015489227
+   },
+   "iniciadoEm": 1787015489227
+  },
   "cooldown": {
    "euro": 1786824629060,
    "super": 1786832970261,
@@ -7694,10 +7724,10 @@
    "2026-08-17": 0.9
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 10,
-   "start": 1
+   "tipo": "time",
+   "chave": "Santos",
+   "n": 8,
+   "start": 3
   },
   "_obs": {}
  }
