@@ -4061,13 +4061,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -154.9,
-  "ciclos": 1326,
-  "greens": 898,
+  "saldo": -153.7,
+  "ciclos": 1327,
+  "greens": 899,
   "redsCiclo": 151,
   "aborts": 0,
   "descartes": 277,
   "historico": [
+   {
+    "quando": "2026-08-18T03:38:31.327Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Marrocos x Senegal @2.1 (tiro 2) · gatilho: odd 2.1"
+   },
    {
     "quando": "2026-08-18T03:33:31.722Z",
     "resultado": "GREEN_OBS",
@@ -7661,61 +7667,48 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · Wolverhampton x West Ham @2.02 (tiro 2) · gatilho: coluna :00"
-   },
-   {
-    "quando": "2026-07-30T12:35:09.302Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · Espanha x Geórgia @2.02 (tiro 2) · gatilho: odd 2.02"
    }
   ],
   "consumidas": {
-   "euro": 1787021307929
+   "euro": 1787021307929,
+   "copa": 1787024311139
   },
   "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "04:31",
-     "jogo": "Brasil x Uruguai",
-     "odd": 1.95
-    },
-    {
-     "h": "04:34",
-     "jogo": "Marrocos x Senegal",
-     "odd": 2.1
-    },
-    {
      "h": "04:37",
-     "jogo": "França x Curaçao",
-     "odd": 2.02
+     "jogo": "Santos x Santiago",
+     "odd": 1.98
+    },
+    {
+     "h": "04:40",
+     "jogo": "Buenos Aires x Montevideo",
+     "odd": 1.86
+    },
+    {
+     "h": "04:43",
+     "jogo": "Avellaneda x Rio de Janeiro",
+     "odd": 1.98
     }
    ],
-   "gatilho": "odd 2.1",
+   "gatilho": "time Santos",
    "alvo": {
-    "h": "04:34",
-    "jogo": "Marrocos x Senegal",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1787024189325
+    "h": "04:37",
+    "jogo": "Santos x Santiago",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1787024313632
    },
-   "iniciadoEm": 1787023468721,
-   "tiros": [
-    {
-     "h": "04:31",
-     "jogo": "Brasil x Uruguai",
-     "odd": 1.95,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1787024313632
   },
   "cooldown": {
    "euro": 1787021307929,
    "super": 1787020410329,
    "premier": 1786845913254,
-   "copa": 1787019388226
+   "copa": 1787024311139
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7750,7 +7743,7 @@
    "2026-08-14": 5.8,
    "2026-08-15": -17.2,
    "2026-08-17": -2.9,
-   "2026-08-18": 0
+   "2026-08-18": 1.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
