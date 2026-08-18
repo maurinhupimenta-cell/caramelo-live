@@ -382,13 +382,19 @@
   }
  },
  "o25": {
-  "saldo": -156.7,
-  "ciclos": 1294,
+  "saldo": -163.7,
+  "ciclos": 1295,
   "greens": 810,
-  "redsCiclo": 200,
+  "redsCiclo": 201,
   "aborts": 0,
   "descartes": 284,
   "historico": [
+   {
+    "quando": "2026-08-18T02:12:28.426Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: odd 2.15"
+   },
    {
     "quando": "2026-08-18T02:03:28.422Z",
     "resultado": "GREEN",
@@ -3982,58 +3988,15 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "premier · Brentford x Brighton @2.1 (tiro 1) · gatilho: time Tottenham"
-   },
-   {
-    "quando": "2026-07-30T18:43:56.503Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "euro · Países Baixos x Escócia @2.07 (tiro 2) · gatilho: coluna :41"
    }
   ],
   "consumidas": {
-   "premier": 1787018607928
+   "premier": 1787018607928,
+   "copa": 1787019148229
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "03:04",
-     "jogo": "Iraque x Haiti",
-     "odd": 2.3
-    },
-    {
-     "h": "03:07",
-     "jogo": "Brasil x Arábia Saudita",
-     "odd": 2.15
-    },
-    {
-     "h": "03:10",
-     "jogo": "Haiti x Colômbia",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "odd 2.15",
-   "alvo": {
-    "h": "03:07",
-    "jogo": "Brasil x Arábia Saudita",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1787018972830
-   },
-   "iniciadoEm": 1787018610122,
-   "tiros": [
-    {
-     "h": "03:04",
-     "jogo": "Iraque x Haiti",
-     "odd": 2.3,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1786832249259,
+   "copa": 1787019148229,
    "premier": 1787018607928,
    "euro": 1786830446763,
    "super": 1786829849756
@@ -4071,7 +4034,7 @@
    "2026-08-13": 2.5,
    "2026-08-14": -6.5,
    "2026-08-15": -16.3,
-   "2026-08-17": 1.8
+   "2026-08-17": -5.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
