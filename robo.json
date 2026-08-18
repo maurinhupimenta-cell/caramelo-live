@@ -4046,12 +4046,18 @@
  },
  "ambas": {
   "saldo": -155.8,
-  "ciclos": 1323,
+  "ciclos": 1324,
   "greens": 897,
   "redsCiclo": 151,
   "aborts": 0,
-  "descartes": 275,
+  "descartes": 276,
   "historico": [
+   {
+    "quando": "2026-08-18T02:35:28.331Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho time Alemanha) — liga REARMADA"
+   },
    {
     "quando": "2026-08-18T02:33:30.528Z",
     "resultado": "RED_CICLO",
@@ -7645,12 +7651,6 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "super · Guayaquil x Avellaneda @1.93 (tiro 2) · gatilho: coluna :49"
-   },
-   {
-    "quando": "2026-07-30T11:37:09.692Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "copa · Uzbequistão x Costa do Marfim @1.9 (tiro 1) · gatilho: odd 2.15"
    }
   ],
   "consumidas": {
@@ -7704,6 +7704,11 @@
    "n": 9,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1787020528331,
+    "gatilho": "time Alemanha"
+   }
+  }
  }
 }
