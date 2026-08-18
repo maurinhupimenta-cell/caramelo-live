@@ -4015,7 +4015,37 @@
    "copa": 1787026955423,
    "euro": 1787027191229
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:24",
+     "jogo": "United x Palace",
+     "odd": 2.2
+    },
+    {
+     "h": "06:27",
+     "jogo": "Liverpool x Aston",
+     "odd": 2.35
+    },
+    {
+     "h": "06:30",
+     "jogo": "Watford x Newcastle",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time Aston",
+   "alvo": {
+    "h": "06:24",
+    "jogo": "United x Palace",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1787030369933
+   },
+   "iniciadoEm": 1787030369933
+  },
   "cooldown": {
    "copa": 1787026955423,
    "premier": 1787022882330,
@@ -4060,9 +4090,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "França",
-   "n": 8,
-   "start": 1
+   "chave": "Aston",
+   "n": 12,
+   "start": 2
   },
   "_obs": {}
  },
