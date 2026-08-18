@@ -4067,13 +4067,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -150.6,
-  "ciclos": 1330,
-  "greens": 902,
+  "saldo": -149.4,
+  "ciclos": 1331,
+  "greens": 903,
   "redsCiclo": 151,
   "aborts": 0,
   "descartes": 277,
   "historico": [
+   {
+    "quando": "2026-08-18T05:02:27.927Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "super · Medellin x Avellaneda @2.05 (tiro 3) · gatilho: odd 1.98"
+   },
    {
     "quando": "2026-08-18T04:41:30.824Z",
     "resultado": "GREEN",
@@ -7667,65 +7673,16 @@
     "resultado": "GREEN",
     "unidades": 0.8,
     "detalhe": "premier · Leicester x Newcastle @1.9 (tiro 2) · gatilho: placar empate 2-2"
-   },
-   {
-    "quando": "2026-07-30T13:58:41.999Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: odd 2.2"
    }
   ],
   "consumidas": {
-   "copa": 1787028090623
+   "copa": 1787028090623,
+   "super": 1787029347822
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "05:52",
-     "jogo": "Belo Horizonte x Medellin",
-     "odd": 2.05
-    },
-    {
-     "h": "05:55",
-     "jogo": "Montevideo x La Boca",
-     "odd": 1.98
-    },
-    {
-     "h": "05:58",
-     "jogo": "Medellin x Avellaneda",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "odd 1.98",
-   "alvo": {
-    "h": "05:58",
-    "jogo": "Medellin x Avellaneda",
-    "odd": 2.05,
-    "unidades": 4,
-    "desde": 1787029113425
-   },
-   "iniciadoEm": 1787028533034,
-   "tiros": [
-    {
-     "h": "05:52",
-     "jogo": "Belo Horizonte x Medellin",
-     "odd": 2.05,
-     "unidades": 1
-    },
-    {
-     "h": "05:55",
-     "jogo": "Montevideo x La Boca",
-     "odd": 1.98,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787025330327,
-   "super": 1787024548438,
+   "super": 1787029347822,
    "premier": 1786845913254,
    "copa": 1787028090623
   },
@@ -7762,7 +7719,7 @@
    "2026-08-14": 5.8,
    "2026-08-15": -17.2,
    "2026-08-17": -2.9,
-   "2026-08-18": 4.3
+   "2026-08-18": 5.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
