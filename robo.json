@@ -4066,13 +4066,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -147.4,
-  "ciclos": 1333,
-  "greens": 905,
+  "saldo": -146.5,
+  "ciclos": 1334,
+  "greens": 906,
   "redsCiclo": 151,
   "aborts": 0,
   "descartes": 277,
   "historico": [
+   {
+    "quando": "2026-08-19T21:10:33.669Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · Costa do Marfim x Cabo Verde @1.93 (tiro 1) · gatilho: coluna :07"
+   },
    {
     "quando": "2026-08-18T05:49:28.721Z",
     "resultado": "GREEN",
@@ -7666,51 +7672,17 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "copa · Bósnia e Herzegovina x Brasil @1.9 (tiro 1) · gatilho: time Espanha"
-   },
-   {
-    "quando": "2026-07-30T15:32:49.997Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "premier · Chelsea x West Ham @2.15 (tiro 1) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:04",
-     "jogo": "Costa do Marfim x Cabo Verde",
-     "odd": 1.93
-    },
-    {
-     "h": "22:07",
-     "jogo": "Noruega x Senegal",
-     "odd": 2.02
-    },
-    {
-     "h": "22:10",
-     "jogo": "Bélgica x EUA",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "coluna :07",
-   "alvo": {
-    "h": "22:04",
-    "jogo": "Costa do Marfim x Cabo Verde",
-    "odd": 1.93,
-    "unidades": 1,
-    "desde": 1787173292761
-   },
-   "iniciadoEm": 1787173292761
+  "consumidas": {
+   "copa": 1787173833476
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787030010624,
    "super": 1787029347822,
    "premier": 1786845913254,
-   "copa": 1787032168521
+   "copa": 1787173833476
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7745,13 +7717,14 @@
    "2026-08-14": 5.8,
    "2026-08-15": -17.2,
    "2026-08-17": -2.9,
-   "2026-08-18": 7.5
+   "2026-08-18": 7.5,
+   "2026-08-19": 0.9
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":07",
    "n": 22,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
