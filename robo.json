@@ -4066,13 +4066,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -146.5,
-  "ciclos": 1334,
-  "greens": 906,
+  "saldo": -145.6,
+  "ciclos": 1335,
+  "greens": 907,
   "redsCiclo": 151,
   "aborts": 0,
   "descartes": 277,
   "historico": [
+   {
+    "quando": "2026-08-19T22:13:29.963Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · França x Costa do Marfim @1.93 (tiro 2) · gatilho: coluna :07"
+   },
    {
     "quando": "2026-08-19T21:10:33.669Z",
     "resultado": "GREEN",
@@ -7666,59 +7672,17 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "premier · City x West Ham @2.1 (tiro 3) · gatilho: odd 1.8"
-   },
-   {
-    "quando": "2026-07-30T15:59:28.896Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "copa · Bósnia e Herzegovina x Brasil @1.9 (tiro 1) · gatilho: time Espanha"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "23:07",
-     "jogo": "Países Baixos x Paraguai",
-     "odd": 2.07
-    },
-    {
-     "h": "23:10",
-     "jogo": "França x Costa do Marfim",
-     "odd": 1.93
-    },
-    {
-     "h": "23:13",
-     "jogo": "Coreia do Sul x Países Baixos",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "coluna :07",
-   "alvo": {
-    "h": "23:10",
-    "jogo": "França x Costa do Marfim",
-    "odd": 1.93,
-    "unidades": 2,
-    "desde": 1787177489168
-   },
-   "iniciadoEm": 1787177435864,
-   "tiros": [
-    {
-     "h": "23:07",
-     "jogo": "Países Baixos x Paraguai",
-     "odd": 2.07,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "copa": 1787177609767
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787030010624,
    "super": 1787029347822,
    "premier": 1786845913254,
-   "copa": 1787173833476
+   "copa": 1787177609767
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7754,7 +7718,7 @@
    "2026-08-15": -17.2,
    "2026-08-17": -2.9,
    "2026-08-18": 7.5,
-   "2026-08-19": 0.9
+   "2026-08-19": 1.8
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
