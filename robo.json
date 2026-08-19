@@ -401,13 +401,19 @@
   }
  },
  "o25": {
-  "saldo": -161.5,
-  "ciclos": 1304,
-  "greens": 816,
+  "saldo": -160.3,
+  "ciclos": 1305,
+  "greens": 817,
   "redsCiclo": 202,
   "aborts": 0,
   "descartes": 286,
   "historico": [
+   {
+    "quando": "2026-08-19T20:34:36.074Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "copa · Argentina x Bélgica @2.2 (tiro 1) · gatilho: time Suécia"
+   },
    {
     "quando": "2026-08-19T20:22:13.170Z",
     "resultado": "GREEN_OBS",
@@ -4001,18 +4007,44 @@
     "resultado": "GREEN",
     "unidades": 2,
     "detalhe": "euro · Áustria x Polônia @2.5 (tiro 2) · gatilho: placar acima de 1-0 (2-1)"
-   },
-   {
-    "quando": "2026-07-31T01:44:54.485Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho odd 2.2) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": null,
+  "consumidas": {
+   "copa": 1787171675962
+  },
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:31",
+     "jogo": "Quito x Santiago",
+     "odd": 2.1
+    },
+    {
+     "h": "21:34",
+     "jogo": "Penarol x Santos",
+     "odd": 2.55
+    },
+    {
+     "h": "21:37",
+     "jogo": "Itaquera x Sao Paulo",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "odd 2.55",
+   "alvo": {
+    "h": "21:31",
+    "jogo": "Quito x Santiago",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1787171678967
+   },
+   "iniciadoEm": 1787171678967
+  },
   "cooldown": {
-   "copa": 1787026955423,
+   "copa": 1787171675962,
    "premier": 1787030984832,
    "euro": 1787032230224,
    "super": 1787031634020
@@ -4052,20 +4084,15 @@
    "2026-08-15": -16.3,
    "2026-08-17": -5.2,
    "2026-08-18": 2.2,
-   "2026-08-19": 0
+   "2026-08-19": 1.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "França",
+   "tipo": "odd",
+   "chave": "2.05",
    "n": 11,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1787170933166,
-    "gatilho": "time Suécia"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -147.4,
