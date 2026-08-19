@@ -401,13 +401,19 @@
   }
  },
  "o25": {
-  "saldo": -165.2,
-  "ciclos": 1307,
-  "greens": 818,
+  "saldo": -164.2,
+  "ciclos": 1308,
+  "greens": 819,
   "redsCiclo": 203,
   "aborts": 0,
   "descartes": 286,
   "historico": [
+   {
+    "quando": "2026-08-19T22:10:46.863Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Buenos Aires x Santiago @1.98 (tiro 1) · gatilho: odd 2.55"
+   },
    {
     "quando": "2026-08-19T21:35:32.764Z",
     "resultado": "RED_CICLO",
@@ -4001,53 +4007,18 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho time Belo Horizonte) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-31T02:53:27.092Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "copa · RD Congo x Bélgica @2.2 (tiro 1) · gatilho: odd 2.2"
    }
   ],
   "consumidas": {
-   "copa": 1787175332564
+   "copa": 1787175332564,
+   "super": 1787177446670
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:07",
-     "jogo": "Buenos Aires x Santiago",
-     "odd": 1.98
-    },
-    {
-     "h": "23:10",
-     "jogo": "Quito x La Plata",
-     "odd": 2.55
-    },
-    {
-     "h": "23:13",
-     "jogo": "Bogota x Buenos Aires",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "odd 2.55",
-   "alvo": {
-    "h": "23:07",
-    "jogo": "Buenos Aires x Santiago",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1787176953074
-   },
-   "iniciadoEm": 1787176953074
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787175332564,
    "premier": 1787030984832,
    "euro": 1787032230224,
-   "super": 1787171972768
+   "super": 1787177446670
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4084,7 +4055,7 @@
    "2026-08-15": -16.3,
    "2026-08-17": -5.2,
    "2026-08-18": 2.2,
-   "2026-08-19": -3.7
+   "2026-08-19": -2.7
   },
   "_gatilhoAtual": {
    "tipo": "odd",
