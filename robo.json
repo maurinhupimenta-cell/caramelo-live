@@ -4010,10 +4010,39 @@
    }
   ],
   "consumidas": {
-   "copa": 1787171675962,
    "super": 1787171972768
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:25",
+     "jogo": "Suécia x Turquia",
+     "odd": 2.55
+    },
+    {
+     "h": "22:28",
+     "jogo": "Suíça x EUA",
+     "odd": 2.25
+    },
+    {
+     "h": "22:31",
+     "jogo": "Equador x Qatar",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time Suécia",
+   "alvo": {
+    "h": "22:25",
+    "jogo": "Suécia x Turquia",
+    "odd": 2.55,
+    "unidades": 1,
+    "desde": 1787175316763
+   },
+   "iniciadoEm": 1787175316763
+  },
   "cooldown": {
    "copa": 1787171675962,
    "premier": 1787030984832,
@@ -4058,9 +4087,9 @@
    "2026-08-19": 3.3
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.55",
-   "n": 13,
+   "tipo": "time",
+   "chave": "Suécia",
+   "n": 16,
    "start": 1
   },
   "_obs": {}
