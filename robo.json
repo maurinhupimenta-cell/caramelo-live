@@ -4066,13 +4066,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -145.6,
-  "ciclos": 1335,
-  "greens": 907,
+  "saldo": -144.6,
+  "ciclos": 1336,
+  "greens": 908,
   "redsCiclo": 151,
   "aborts": 0,
   "descartes": 277,
   "historico": [
+   {
+    "quando": "2026-08-19T22:20:54.662Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Everton x Tottenham @2 (tiro 1) · gatilho: seq GRGRG"
+   },
    {
     "quando": "2026-08-19T22:13:29.963Z",
     "resultado": "GREEN",
@@ -7666,52 +7672,17 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "copa · Egito x Brasil @1.9 (tiro 1) · gatilho: coluna :19"
-   },
-   {
-    "quando": "2026-07-30T16:51:31.493Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "premier · City x West Ham @2.1 (tiro 3) · gatilho: odd 1.8"
    }
   ],
   "consumidas": {
-   "copa": 1787177609767
+   "copa": 1787177609767,
+   "premier": 1787178054370
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "23:18",
-     "jogo": "Everton x Tottenham",
-     "odd": 2
-    },
-    {
-     "h": "23:21",
-     "jogo": "Chelsea x Wolverhampton",
-     "odd": 1.86
-    },
-    {
-     "h": "23:24",
-     "jogo": "Burnley x Leeds",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "seq GRGRG",
-   "alvo": {
-    "h": "23:18",
-    "jogo": "Everton x Tottenham",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1787177685067
-   },
-   "iniciadoEm": 1787177685067
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787030010624,
    "super": 1787029347822,
-   "premier": 1786845913254,
+   "premier": 1787178054370,
    "copa": 1787177609767
   },
   "dias": {
@@ -7748,7 +7719,7 @@
    "2026-08-15": -17.2,
    "2026-08-17": -2.9,
    "2026-08-18": 7.5,
-   "2026-08-19": 1.8
+   "2026-08-19": 2.8
   },
   "_gatilhoAtual": {
    "tipo": "seq",
