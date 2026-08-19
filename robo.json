@@ -4012,7 +4012,37 @@
   "consumidas": {
    "copa": 1787175332564
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:07",
+     "jogo": "Buenos Aires x Santiago",
+     "odd": 1.98
+    },
+    {
+     "h": "23:10",
+     "jogo": "Quito x La Plata",
+     "odd": 2.55
+    },
+    {
+     "h": "23:13",
+     "jogo": "Bogota x Buenos Aires",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "odd 2.55",
+   "alvo": {
+    "h": "23:07",
+    "jogo": "Buenos Aires x Santiago",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1787176953074
+   },
+   "iniciadoEm": 1787176953074
+  },
   "cooldown": {
    "copa": 1787175332564,
    "premier": 1787030984832,
@@ -4057,10 +4087,10 @@
    "2026-08-19": -3.7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Suécia",
-   "n": 16,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.55",
+   "n": 14,
+   "start": 3
   },
   "_obs": {}
  },
