@@ -401,13 +401,19 @@
   }
  },
  "o25": {
-  "saldo": -160.3,
-  "ciclos": 1305,
-  "greens": 817,
+  "saldo": -158.2,
+  "ciclos": 1306,
+  "greens": 818,
   "redsCiclo": 202,
   "aborts": 0,
   "descartes": 286,
   "historico": [
+   {
+    "quando": "2026-08-19T20:39:33.168Z",
+    "resultado": "GREEN",
+    "unidades": 2.1,
+    "detalhe": "super · Penarol x Santos @2.55 (tiro 2) · gatilho: odd 2.55"
+   },
    {
     "quando": "2026-08-19T20:34:36.074Z",
     "resultado": "GREEN",
@@ -4001,53 +4007,18 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "premier · Palace x Leicester @2.25 (tiro 1) · gatilho: time Brighton"
-   },
-   {
-    "quando": "2026-07-31T02:04:12.838Z",
-    "resultado": "GREEN",
-    "unidades": 2,
-    "detalhe": "euro · Áustria x Polônia @2.5 (tiro 2) · gatilho: placar acima de 1-0 (2-1)"
    }
   ],
   "consumidas": {
-   "copa": 1787171675962
+   "copa": 1787171675962,
+   "super": 1787171972768
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:31",
-     "jogo": "Quito x Santiago",
-     "odd": 2.1
-    },
-    {
-     "h": "21:34",
-     "jogo": "Penarol x Santos",
-     "odd": 2.55
-    },
-    {
-     "h": "21:37",
-     "jogo": "Itaquera x Sao Paulo",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "odd 2.55",
-   "alvo": {
-    "h": "21:31",
-    "jogo": "Quito x Santiago",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1787171678967
-   },
-   "iniciadoEm": 1787171678967
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787171675962,
    "premier": 1787030984832,
    "euro": 1787032230224,
-   "super": 1787031634020
+   "super": 1787171972768
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4084,12 +4055,12 @@
    "2026-08-15": -16.3,
    "2026-08-17": -5.2,
    "2026-08-18": 2.2,
-   "2026-08-19": 1.2
+   "2026-08-19": 3.3
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.05",
-   "n": 11,
+   "chave": "2.55",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
