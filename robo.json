@@ -401,13 +401,19 @@
   }
  },
  "o25": {
-  "saldo": -158.2,
-  "ciclos": 1306,
+  "saldo": -165.2,
+  "ciclos": 1307,
   "greens": 818,
-  "redsCiclo": 202,
+  "redsCiclo": 203,
   "aborts": 0,
   "descartes": 286,
   "historico": [
+   {
+    "quando": "2026-08-19T21:35:32.764Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Suécia"
+   },
    {
     "quando": "2026-08-19T20:39:33.168Z",
     "resultado": "GREEN",
@@ -4001,64 +4007,14 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "copa · RD Congo x Bélgica @2.2 (tiro 1) · gatilho: odd 2.2"
-   },
-   {
-    "quando": "2026-07-31T02:17:49.187Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "premier · Palace x Leicester @2.25 (tiro 1) · gatilho: time Brighton"
    }
   ],
   "consumidas": {
-   "super": 1787171972768
+   "copa": 1787175332564
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "22:25",
-     "jogo": "Suécia x Turquia",
-     "odd": 2.55
-    },
-    {
-     "h": "22:28",
-     "jogo": "Suíça x EUA",
-     "odd": 2.25
-    },
-    {
-     "h": "22:31",
-     "jogo": "Equador x Qatar",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Suécia",
-   "alvo": {
-    "h": "22:31",
-    "jogo": "Equador x Qatar",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1787175329766
-   },
-   "iniciadoEm": 1787175316763,
-   "tiros": [
-    {
-     "h": "22:25",
-     "jogo": "Suécia x Turquia",
-     "odd": 2.55,
-     "unidades": 1
-    },
-    {
-     "h": "22:28",
-     "jogo": "Suíça x EUA",
-     "odd": 2.25,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1787171675962,
+   "copa": 1787175332564,
    "premier": 1787030984832,
    "euro": 1787032230224,
    "super": 1787171972768
@@ -4098,7 +4054,7 @@
    "2026-08-15": -16.3,
    "2026-08-17": -5.2,
    "2026-08-18": 2.2,
-   "2026-08-19": 3.3
+   "2026-08-19": -3.7
   },
   "_gatilhoAtual": {
    "tipo": "time",
