@@ -402,12 +402,18 @@
  },
  "o25": {
   "saldo": -161.5,
-  "ciclos": 1303,
+  "ciclos": 1304,
   "greens": 816,
   "redsCiclo": 202,
   "aborts": 0,
-  "descartes": 285,
+  "descartes": 286,
   "historico": [
+   {
+    "quando": "2026-08-19T20:22:13.170Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Suécia) — liga REARMADA"
+   },
    {
     "quando": "2026-08-18T05:50:30.422Z",
     "resultado": "GREEN",
@@ -4001,12 +4007,6 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho odd 2.2) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-30T22:23:20.525Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "euro · Áustria x Países Baixos @2.15 (tiro 1) · gatilho: seq GGGRG"
    }
   ],
   "consumidas": {},
@@ -4051,7 +4051,8 @@
    "2026-08-14": -6.5,
    "2026-08-15": -16.3,
    "2026-08-17": -5.2,
-   "2026-08-18": 2.2
+   "2026-08-18": 2.2,
+   "2026-08-19": 0
   },
   "_gatilhoAtual": {
    "tipo": "time",
@@ -4059,7 +4060,12 @@
    "n": 11,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1787170933166,
+    "gatilho": "time Suécia"
+   }
+  }
  },
  "ambas": {
   "saldo": -147.4,
@@ -7670,9 +7676,7 @@
     "detalhe": "premier · Chelsea x West Ham @2.15 (tiro 1) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {
-   "euro": 1787030010624
-  },
+  "consumidas": {},
   "ciclo": null,
   "cooldown": {
    "euro": 1787030010624,
