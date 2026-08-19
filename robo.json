@@ -7677,7 +7677,37 @@
   "consumidas": {
    "copa": 1787177609767
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "23:18",
+     "jogo": "Everton x Tottenham",
+     "odd": 2
+    },
+    {
+     "h": "23:21",
+     "jogo": "Chelsea x Wolverhampton",
+     "odd": 1.86
+    },
+    {
+     "h": "23:24",
+     "jogo": "Burnley x Leeds",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "seq GRGRG",
+   "alvo": {
+    "h": "23:18",
+    "jogo": "Everton x Tottenham",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1787177685067
+   },
+   "iniciadoEm": 1787177685067
+  },
   "cooldown": {
    "euro": 1787030010624,
    "super": 1787029347822,
@@ -7721,9 +7751,9 @@
    "2026-08-19": 1.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":07",
-   "n": 23,
+   "tipo": "seq",
+   "chave": "GRGRG",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
