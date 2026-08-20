@@ -4021,7 +4021,6 @@
    }
   ],
   "consumidas": {
-   "super": 1787248180158,
    "premier": 1787249673168,
    "copa": 1787250309666
   },
@@ -4080,12 +4079,18 @@
  },
  "ambas": {
   "saldo": -145.9,
-  "ciclos": 1352,
+  "ciclos": 1353,
   "greens": 920,
   "redsCiclo": 153,
   "aborts": 0,
-  "descartes": 279,
+  "descartes": 280,
   "historico": [
+   {
+    "quando": "2026-08-20T18:51:02.259Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-08-20T18:24:09.962Z",
     "resultado": "GREEN",
@@ -7679,12 +7684,6 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "euro · Croácia x Eslovênia @2.2 (tiro 2) · gatilho: time Croácia"
-   },
-   {
-    "quando": "2026-07-31T03:08:27.892Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "copa · Suécia x Suíça @2.15 (tiro 1) · gatilho: placar goleada (3+)"
    }
   ],
   "consumidas": {
@@ -7766,10 +7765,10 @@
    "2026-08-20": -6
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":41",
-   "n": 19,
-   "start": 3
+   "tipo": "seq",
+   "chave": "RRRGR",
+   "n": 13,
+   "start": 1
   },
   "_obs": {}
  }
