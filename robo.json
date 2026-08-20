@@ -4076,13 +4076,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -142.7,
-  "ciclos": 1338,
-  "greens": 910,
+  "saldo": -141.7,
+  "ciclos": 1339,
+  "greens": 911,
   "redsCiclo": 151,
   "aborts": 0,
   "descartes": 277,
   "historico": [
+   {
+    "quando": "2026-08-20T02:04:31.062Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Itaquera x Montevideo @1.98 (tiro 1) · gatilho: seq RRRR"
+   },
    {
     "quando": "2026-08-20T01:50:38.669Z",
     "resultado": "GREEN",
@@ -7676,52 +7682,17 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "euro · Albânia x Países Baixos @2.05 (tiro 2) · gatilho: placar empate 2-2"
-   },
-   {
-    "quando": "2026-07-30T17:44:25.093Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho placar empate 2-2) — liga REARMADA"
    }
   ],
   "consumidas": {
    "copa": 1787188111470,
-   "premier": 1787190638563
+   "premier": 1787190638563,
+   "super": 1787191470865
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:01",
-     "jogo": "Itaquera x Montevideo",
-     "odd": 1.98
-    },
-    {
-     "h": "03:04",
-     "jogo": "La Plata x Santos",
-     "odd": 2.2
-    },
-    {
-     "h": "03:07",
-     "jogo": "Buenos Aires x Rio de Janeiro",
-     "odd": 1.85
-    }
-   ],
-   "gatilho": "seq RRRR",
-   "alvo": {
-    "h": "03:01",
-    "jogo": "Itaquera x Montevideo",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1787191109473
-   },
-   "iniciadoEm": 1787191109473
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787030010624,
-   "super": 1787029347822,
+   "super": 1787191470865,
    "premier": 1787190638563,
    "copa": 1787188111470
   },
@@ -7759,7 +7730,7 @@
    "2026-08-15": -17.2,
    "2026-08-17": -2.9,
    "2026-08-18": 7.5,
-   "2026-08-19": 4.7
+   "2026-08-19": 5.7
   },
   "_gatilhoAtual": {
    "tipo": "seq",
