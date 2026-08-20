@@ -412,13 +412,19 @@
   }
  },
  "o25": {
-  "saldo": -169.7,
-  "ciclos": 1312,
-  "greens": 820,
+  "saldo": -168.4,
+  "ciclos": 1313,
+  "greens": 821,
   "redsCiclo": 204,
   "aborts": 0,
   "descartes": 288,
   "historico": [
+   {
+    "quando": "2026-08-20T04:25:47.667Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "euro · Espanha x Itália @2.15 (tiro 2) · gatilho: seq GRRR"
+   },
    {
     "quando": "2026-08-20T04:03:06.970Z",
     "resultado": "GREEN",
@@ -4012,60 +4018,17 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "super · La Boca x Lima @2.25 (tiro 1) · gatilho: time Belo Horizonte"
-   },
-   {
-    "quando": "2026-07-31T04:17:26.491Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "copa · África do Sul x Áustria @2.4 (tiro 1) · gatilho: time Marrocos"
    }
   ],
   "consumidas": {
-   "premier": 1787198586866
+   "premier": 1787198586866,
+   "euro": 1787199947469
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "05:20",
-     "jogo": "Romênia x Bélgica",
-     "odd": 2.07
-    },
-    {
-     "h": "05:23",
-     "jogo": "Espanha x Itália",
-     "odd": 2.15
-    },
-    {
-     "h": "05:26",
-     "jogo": "Áustria x Eslováquia",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "seq GRRR",
-   "alvo": {
-    "h": "05:23",
-    "jogo": "Espanha x Itália",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1787199770062
-   },
-   "iniciadoEm": 1787199467868,
-   "tiros": [
-    {
-     "h": "05:20",
-     "jogo": "Romênia x Bélgica",
-     "odd": 2.07,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787175332564,
    "premier": 1787198586866,
-   "euro": 1787032230224,
+   "euro": 1787199947469,
    "super": 1787187659772
   },
   "dias": {
@@ -4104,7 +4067,7 @@
    "2026-08-17": -5.2,
    "2026-08-18": 2.2,
    "2026-08-19": -9.7,
-   "2026-08-20": 1.5
+   "2026-08-20": 2.8
   },
   "_gatilhoAtual": {
    "tipo": "seq",
