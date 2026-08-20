@@ -413,12 +413,18 @@
  },
  "o25": {
   "saldo": -163.9,
-  "ciclos": 1319,
+  "ciclos": 1320,
   "greens": 824,
   "redsCiclo": 204,
   "aborts": 0,
-  "descartes": 291,
+  "descartes": 292,
   "historico": [
+   {
+    "quando": "2026-08-20T16:01:10.061Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Equador) — liga REARMADA"
+   },
    {
     "quando": "2026-08-20T15:41:20.560Z",
     "resultado": "GREEN",
@@ -4012,12 +4018,6 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho coluna :04) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-31T05:59:43.189Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "premier · Aston x Newcastle @2.2 (tiro 2) · gatilho: seq GGGG"
    }
   ],
   "consumidas": {
@@ -4074,7 +4074,12 @@
    "n": 20,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1787241670060,
+    "gatilho": "time Equador"
+   }
+  }
  },
  "ambas": {
   "saldo": -150.4,
