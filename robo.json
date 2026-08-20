@@ -4079,12 +4079,18 @@
  },
  "ambas": {
   "saldo": -148.7,
-  "ciclos": 1359,
+  "ciclos": 1360,
   "greens": 924,
   "redsCiclo": 154,
   "aborts": 0,
-  "descartes": 281,
+  "descartes": 282,
   "historico": [
+   {
+    "quando": "2026-08-20T20:51:34.565Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho seq GGGRR) — liga REARMADA"
+   },
    {
     "quando": "2026-08-20T20:36:34.862Z",
     "resultado": "GREEN",
@@ -7678,19 +7684,51 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "super · Santiago x Santos @1.93 (tiro 2) · gatilho: time Santiago"
-   },
-   {
-    "quando": "2026-07-31T07:46:06.738Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "copa · EUA x Escócia @2.15 (tiro 1) · gatilho: odd 2.1"
    }
   ],
   "consumidas": {
    "copa": 1787256395067,
    "euro": 1787258194661
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "21:52",
+     "jogo": "Avellaneda x Belo Horizonte",
+     "odd": 1.9
+    },
+    {
+     "h": "21:55",
+     "jogo": "Buenos Aires x Medellin",
+     "odd": 1.98
+    },
+    {
+     "h": "21:58",
+     "jogo": "La Boca x Santiago",
+     "odd": 2
+    }
+   ],
+   "gatilho": "seq GGGRR",
+   "alvo": {
+    "h": "21:55",
+    "jogo": "Buenos Aires x Medellin",
+    "odd": 1.98,
+    "unidades": 2,
+    "desde": 1787259386367
+   },
+   "iniciadoEm": 1787259096060,
+   "tiros": [
+    {
+     "h": "21:52",
+     "jogo": "Avellaneda x Belo Horizonte",
+     "odd": 1.9,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1787258194661,
    "super": 1787255493760,
@@ -7735,9 +7773,9 @@
    "2026-08-20": -8.8
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":41",
-   "n": 21,
+   "tipo": "odd",
+   "chave": "1.87",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
