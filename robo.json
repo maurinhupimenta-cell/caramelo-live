@@ -412,13 +412,19 @@
   }
  },
  "o25": {
-  "saldo": -161.4,
-  "ciclos": 1322,
-  "greens": 826,
+  "saldo": -159.2,
+  "ciclos": 1323,
+  "greens": 827,
   "redsCiclo": 204,
   "aborts": 0,
   "descartes": 292,
   "historico": [
+   {
+    "quando": "2026-08-20T16:50:53.658Z",
+    "resultado": "GREEN",
+    "unidades": 2.2,
+    "detalhe": "premier · West Ham x Southampton @2.62 (tiro 2) · gatilho: odd 2.07"
+   },
    {
     "quando": "2026-08-20T16:19:05.066Z",
     "resultado": "GREEN",
@@ -4012,60 +4018,17 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: placar acima de 1-0 (2-0)"
-   },
-   {
-    "quando": "2026-07-31T07:07:28.223Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "super · Itaquera x Sao Paulo @2.15 (tiro 2) · gatilho: coluna :04"
    }
   ],
   "consumidas": {
    "copa": 1787242263959,
-   "super": 1787242744860
+   "super": 1787242744860,
+   "premier": 1787244653366
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:45",
-     "jogo": "Liverpool x Wolverhampton",
-     "odd": 2.07
-    },
-    {
-     "h": "17:48",
-     "jogo": "West Ham x Southampton",
-     "odd": 2.62
-    },
-    {
-     "h": "17:51",
-     "jogo": "Leeds x United",
-     "odd": 2.45
-    }
-   ],
-   "gatilho": "odd 2.07",
-   "alvo": {
-    "h": "17:48",
-    "jogo": "West Ham x Southampton",
-    "odd": 2.62,
-    "unidades": 2,
-    "desde": 1787244469472
-   },
-   "iniciadoEm": 1787244112068,
-   "tiros": [
-    {
-     "h": "17:45",
-     "jogo": "Liverpool x Wolverhampton",
-     "odd": 2.07,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787242263959,
-   "premier": 1787240480357,
+   "premier": 1787244653366,
    "euro": 1787199947469,
    "super": 1787242744860
   },
@@ -4105,13 +4068,13 @@
    "2026-08-17": -5.2,
    "2026-08-18": 2.2,
    "2026-08-19": -9.7,
-   "2026-08-20": 9.8
+   "2026-08-20": 12
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.07",
-   "n": 23,
-   "start": 2
+   "n": 24,
+   "start": 1
   },
   "_obs": {}
  },
