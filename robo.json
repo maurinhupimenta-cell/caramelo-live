@@ -7690,7 +7690,37 @@
    "copa": 1787188111470,
    "premier": 1787190638563
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:01",
+     "jogo": "Itaquera x Montevideo",
+     "odd": 1.98
+    },
+    {
+     "h": "03:04",
+     "jogo": "La Plata x Santos",
+     "odd": 2.2
+    },
+    {
+     "h": "03:07",
+     "jogo": "Buenos Aires x Rio de Janeiro",
+     "odd": 1.85
+    }
+   ],
+   "gatilho": "seq RRRR",
+   "alvo": {
+    "h": "03:01",
+    "jogo": "Itaquera x Montevideo",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1787191109473
+   },
+   "iniciadoEm": 1787191109473
+  },
   "cooldown": {
    "euro": 1787030010624,
    "super": 1787029347822,
@@ -7734,9 +7764,9 @@
    "2026-08-19": 4.7
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 9,
+   "tipo": "seq",
+   "chave": "RRRR",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
