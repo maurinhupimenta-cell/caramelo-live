@@ -412,13 +412,19 @@
   }
  },
  "o25": {
-  "saldo": -166.7,
-  "ciclos": 1330,
-  "greens": 831,
+  "saldo": -165.4,
+  "ciclos": 1331,
+  "greens": 832,
   "redsCiclo": 206,
   "aborts": 0,
   "descartes": 293,
   "historico": [
+   {
+    "quando": "2026-08-20T20:44:54.065Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "premier · Aston x Everton @2.25 (tiro 1) · gatilho: odd 2.05"
+   },
    {
     "quando": "2026-08-20T20:33:04.968Z",
     "resultado": "GREEN_OBS",
@@ -4012,51 +4018,16 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :53) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-31T09:06:43.539Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq RRGG"
    }
   ],
   "consumidas": {
-   "super": 1787257110160
+   "super": 1787257110160,
+   "premier": 1787258693861
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:42",
-     "jogo": "Aston x Everton",
-     "odd": 2.25
-    },
-    {
-     "h": "21:45",
-     "jogo": "Norwich x Brighton",
-     "odd": 2.05
-    },
-    {
-     "h": "21:48",
-     "jogo": "Watford x Leeds",
-     "odd": 2.55
-    }
-   ],
-   "gatilho": "odd 2.05",
-   "alvo": {
-    "h": "21:42",
-    "jogo": "Aston x Everton",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1787257995856
-   },
-   "iniciadoEm": 1787257995856
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787250309666,
-   "premier": 1787253789957,
+   "premier": 1787258693861,
    "euro": 1787199947469,
    "super": 1787257110160
   },
@@ -4096,13 +4067,13 @@
    "2026-08-17": -5.2,
    "2026-08-18": 2.2,
    "2026-08-19": -9.7,
-   "2026-08-20": 4.5
+   "2026-08-20": 5.8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.05",
-   "n": 17,
-   "start": 2
+   "chave": "2.55",
+   "n": 16,
+   "start": 1
   },
   "_obs": {}
  },
