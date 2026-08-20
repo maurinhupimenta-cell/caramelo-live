@@ -4078,13 +4078,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -145.9,
-  "ciclos": 1354,
-  "greens": 920,
+  "saldo": -144.9,
+  "ciclos": 1355,
+  "greens": 921,
   "redsCiclo": 153,
   "aborts": 0,
   "descartes": 281,
   "historico": [
+   {
+    "quando": "2026-08-20T19:02:03.360Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Suíça x Sérvia @2.02 (tiro 1) · gatilho: seq RRRGR"
+   },
    {
     "quando": "2026-08-20T18:56:02.563Z",
     "resultado": "GREEN_OBS",
@@ -7678,50 +7684,45 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "euro · Ucrânia x Alemanha @1.93 (tiro 1) · gatilho: time França"
-   },
-   {
-    "quando": "2026-07-31T05:06:30.990Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · França x Geórgia @2.05 (tiro 1) · gatilho: time França"
    }
   ],
   "consumidas": {
-   "super": 1787250249764
+   "super": 1787250249764,
+   "euro": 1787252523066
   },
   "ciclo": {
-   "liga": "euro",
+   "liga": "copa",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "19:59",
-     "jogo": "Suíça x Sérvia",
-     "odd": 2.02
+     "h": "19:58",
+     "jogo": "Uruguai x Turquia",
+     "odd": 2
     },
     {
-     "h": "20:02",
-     "jogo": "Portugal x Hungria",
-     "odd": 2.05
+     "h": "20:01",
+     "jogo": "Austrália x Paraguai",
+     "odd": 2
     },
     {
-     "h": "20:05",
-     "jogo": "Ucrânia x Espanha",
-     "odd": 1.87
+     "h": "20:04",
+     "jogo": "Portugal x Marrocos",
+     "odd": 1.95
     }
    ],
-   "gatilho": "seq RRRGR",
+   "gatilho": "time Turquia",
    "alvo": {
-    "h": "19:59",
-    "jogo": "Suíça x Sérvia",
-    "odd": 2.02,
+    "h": "19:58",
+    "jogo": "Uruguai x Turquia",
+    "odd": 2,
     "unidades": 1,
-    "desde": 1787252164860
+    "desde": 1787252525568
    },
-   "iniciadoEm": 1787252164860
+   "iniciadoEm": 1787252525568
   },
   "cooldown": {
-   "euro": 1787244730560,
+   "euro": 1787252523066,
    "super": 1787250249764,
    "premier": 1787190638563,
    "copa": 1787248868658
@@ -7761,11 +7762,11 @@
    "2026-08-17": -2.9,
    "2026-08-18": 7.5,
    "2026-08-19": 7.5,
-   "2026-08-20": -6
+   "2026-08-20": -5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRGR",
+   "tipo": "time",
+   "chave": "Turquia",
    "n": 14,
    "start": 1
   },
