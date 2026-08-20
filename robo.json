@@ -4102,18 +4102,24 @@
    "tipo": "odd",
    "chave": "2.05",
    "n": 17,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -149.7,
-  "ciclos": 1358,
-  "greens": 923,
+  "saldo": -148.7,
+  "ciclos": 1359,
+  "greens": 924,
   "redsCiclo": 154,
   "aborts": 0,
   "descartes": 281,
   "historico": [
+   {
+    "quando": "2026-08-20T20:36:34.862Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "euro · Espanha x Sérvia @2 (tiro 3) · gatilho: seq GGRGG"
+   },
    {
     "quando": "2026-08-20T20:06:35.264Z",
     "resultado": "GREEN",
@@ -7707,65 +7713,16 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "copa · EUA x Escócia @2.15 (tiro 1) · gatilho: odd 2.1"
-   },
-   {
-    "quando": "2026-07-31T07:37:47.142Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: time Romênia"
    }
   ],
   "consumidas": {
    "super": 1787255493760,
-   "copa": 1787256395067
+   "copa": 1787256395067,
+   "euro": 1787258194661
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "21:26",
-     "jogo": "Dinamarca x Alemanha",
-     "odd": 1.98
-    },
-    {
-     "h": "21:29",
-     "jogo": "Escócia x Itália",
-     "odd": 1.98
-    },
-    {
-     "h": "21:32",
-     "jogo": "Espanha x Sérvia",
-     "odd": 2
-    }
-   ],
-   "gatilho": "seq GGRGG",
-   "alvo": {
-    "h": "21:32",
-    "jogo": "Espanha x Sérvia",
-    "odd": 2,
-    "unidades": 4,
-    "desde": 1787257957267
-   },
-   "iniciadoEm": 1787257355259,
-   "tiros": [
-    {
-     "h": "21:26",
-     "jogo": "Dinamarca x Alemanha",
-     "odd": 1.98,
-     "unidades": 1
-    },
-    {
-     "h": "21:29",
-     "jogo": "Escócia x Itália",
-     "odd": 1.98,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1787252523066,
+   "euro": 1787258194661,
    "super": 1787255493760,
    "premier": 1787190638563,
    "copa": 1787256395067
@@ -7805,13 +7762,13 @@
    "2026-08-17": -2.9,
    "2026-08-18": 7.5,
    "2026-08-19": 7.5,
-   "2026-08-20": -9.8
+   "2026-08-20": -8.8
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
    "chave": ":41",
    "n": 21,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
