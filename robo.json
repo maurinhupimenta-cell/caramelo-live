@@ -4020,41 +4020,37 @@
     "detalhe": "euro · Escócia x República Tcheca @2.5 (tiro 1) · gatilho: time Áustria"
    }
   ],
-  "consumidas": {
-   "euro": 1787199947469,
-   "super": 1787201339672,
-   "premier": 1787202741167
-  },
+  "consumidas": {},
   "ciclo": {
-   "liga": "copa",
+   "liga": "premier",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "06:16",
-     "jogo": "Bósnia e Herzegovina x Curaçao",
-     "odd": 2.05
-    },
-    {
-     "h": "06:19",
-     "jogo": "Brasil x Países Baixos",
+     "h": "16:36",
+     "jogo": "Aston x Palace",
      "odd": 2.3
     },
     {
-     "h": "06:22",
-     "jogo": "Turquia x Portugal",
-     "odd": 2.2
+     "h": "16:39",
+     "jogo": "Leeds x Brentford",
+     "odd": 2.55
+    },
+    {
+     "h": "16:42",
+     "jogo": "Chelsea x Everton",
+     "odd": 2.15
     }
    ],
-   "gatilho": "odd 2.3",
+   "gatilho": "odd 2.55",
    "alvo": {
-    "h": "06:16",
-    "jogo": "Bósnia e Herzegovina x Curaçao",
-    "odd": 2.05,
+    "h": "16:36",
+    "jogo": "Aston x Palace",
+    "odd": 2.3,
     "unidades": 1,
-    "desde": 1787202758176
+    "desde": 1787239622465
    },
-   "iniciadoEm": 1787202758176
+   "iniciadoEm": 1787239622465
   },
   "cooldown": {
    "copa": 1787175332564,
@@ -4102,9 +4098,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.3",
-   "n": 8,
-   "start": 2
+   "chave": "2.55",
+   "n": 14,
+   "start": 3
   },
   "_obs": {}
  },
@@ -7717,11 +7713,38 @@
     "detalhe": "super · Medellin x Quito @2.05 (tiro 2) · gatilho: seq RRGGR"
    }
   ],
-  "consumidas": {
-   "euro": 1787199468161,
-   "super": 1787201151771
+  "consumidas": {},
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:31",
+     "jogo": "Senegal x Inglaterra",
+     "odd": 2.05
+    },
+    {
+     "h": "16:34",
+     "jogo": "Irã x Paraguai",
+     "odd": 2.2
+    },
+    {
+     "h": "16:37",
+     "jogo": "Haiti x Austrália",
+     "odd": 1.87
+    }
+   ],
+   "gatilho": "coluna :34",
+   "alvo": {
+    "h": "16:31",
+    "jogo": "Senegal x Inglaterra",
+    "odd": 2.05,
+    "unidades": 1,
+    "desde": 1787239346566
+   },
+   "iniciadoEm": 1787239346566
   },
-  "ciclo": null,
   "cooldown": {
    "euro": 1787199468161,
    "super": 1787201151771,
@@ -7766,10 +7789,10 @@
    "2026-08-20": -6.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Guayaquil",
-   "n": 9,
-   "start": 2
+   "tipo": "seq",
+   "chave": "GGGRR",
+   "n": 11,
+   "start": 1
   },
   "_obs": {}
  }
