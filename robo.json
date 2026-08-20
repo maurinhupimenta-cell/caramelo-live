@@ -4079,12 +4079,18 @@
  },
  "ambas": {
   "saldo": -145.9,
-  "ciclos": 1353,
+  "ciclos": 1354,
   "greens": 920,
   "redsCiclo": 153,
   "aborts": 0,
-  "descartes": 280,
+  "descartes": 281,
   "historico": [
+   {
+    "quando": "2026-08-20T18:56:02.563Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho seq RRRGR) — liga REARMADA"
+   },
    {
     "quando": "2026-08-20T18:51:02.259Z",
     "resultado": "DESCARTADO",
@@ -7678,12 +7684,6 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · França x Geórgia @2.05 (tiro 1) · gatilho: time França"
-   },
-   {
-    "quando": "2026-07-31T04:02:33.093Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "euro · Croácia x Eslovênia @2.2 (tiro 2) · gatilho: time Croácia"
    }
   ],
   "consumidas": {
@@ -7696,30 +7696,30 @@
    "apostado": 0,
    "plano": [
     {
-     "h": "19:38",
-     "jogo": "Hungria x Alemanha",
-     "odd": 1.98
+     "h": "19:59",
+     "jogo": "Suíça x Sérvia",
+     "odd": 2.02
     },
     {
-     "h": "19:41",
-     "jogo": "Albânia x Eslovênia",
-     "odd": 2.5
+     "h": "20:02",
+     "jogo": "Portugal x Hungria",
+     "odd": 2.05
     },
     {
-     "h": "19:44",
-     "jogo": "Itália x Croácia",
-     "odd": 1.98
+     "h": "20:05",
+     "jogo": "Ucrânia x Espanha",
+     "odd": 1.87
     }
    ],
-   "gatilho": "coluna :41",
+   "gatilho": "seq RRRGR",
    "alvo": {
-    "h": "19:38",
-    "jogo": "Hungria x Alemanha",
-    "odd": 1.98,
+    "h": "19:59",
+    "jogo": "Suíça x Sérvia",
+    "odd": 2.02,
     "unidades": 1,
-    "desde": 1787250661868
+    "desde": 1787252164860
    },
-   "iniciadoEm": 1787250661868
+   "iniciadoEm": 1787252164860
   },
   "cooldown": {
    "euro": 1787244730560,
@@ -7767,7 +7767,7 @@
   "_gatilhoAtual": {
    "tipo": "seq",
    "chave": "RRRGR",
-   "n": 13,
+   "n": 14,
    "start": 1
   },
   "_obs": {}
