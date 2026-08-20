@@ -4026,8 +4026,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "18:40",
@@ -4047,13 +4047,21 @@
    ],
    "gatilho": "seq GGRRG",
    "alvo": {
-    "h": "18:40",
-    "jogo": "Santiago x Guayaquil",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1787247483063
+    "h": "18:43",
+    "jogo": "Montevideo x Medellin",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1787247781662
    },
-   "iniciadoEm": 1787247483063
+   "iniciadoEm": 1787247483063,
+   "tiros": [
+    {
+     "h": "18:40",
+     "jogo": "Santiago x Guayaquil",
+     "odd": 2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1787246227865,
