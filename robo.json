@@ -7693,8 +7693,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:44",
@@ -7714,13 +7714,21 @@
    ],
    "gatilho": "coluna :44",
    "alvo": {
-    "h": "17:44",
-    "jogo": "Áustria x Inglaterra",
+    "h": "17:47",
+    "jogo": "Croácia x Bélgica",
     "odd": 1.9,
-    "unidades": 1,
-    "desde": 1787244469867
+    "unidades": 2,
+    "desde": 1787244728056
    },
-   "iniciadoEm": 1787244469867
+   "iniciadoEm": 1787244469867,
+   "tiros": [
+    {
+     "h": "17:44",
+     "jogo": "Áustria x Inglaterra",
+     "odd": 1.9,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1787240866968,
@@ -7766,9 +7774,9 @@
    "2026-08-20": -9.6
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":44",
-   "n": 17,
+   "tipo": "seq",
+   "chave": "RGRRG",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
