@@ -4079,13 +4079,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -149.5,
-  "ciclos": 1347,
-  "greens": 916,
+  "saldo": -148.7,
+  "ciclos": 1348,
+  "greens": 917,
   "redsCiclo": 153,
   "aborts": 0,
   "descartes": 278,
   "historico": [
+   {
+    "quando": "2026-08-20T16:52:10.758Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "euro · Croácia x Bélgica @1.9 (tiro 2) · gatilho: coluna :44"
+   },
    {
     "quando": "2026-08-20T16:40:04.063Z",
     "resultado": "GREEN",
@@ -7679,59 +7685,15 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "super · Porto Alegre x Lima @2.15 (tiro 1) · gatilho: odd 1.83"
-   },
-   {
-    "quando": "2026-07-30T21:23:54.128Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Chelsea x Brentford @2.05 (tiro 1) · gatilho: odd 2.07"
    }
   ],
   "consumidas": {
-   "super": 1787241659260,
-   "copa": 1787244003866
+   "copa": 1787244003866,
+   "euro": 1787244730560
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:44",
-     "jogo": "Áustria x Inglaterra",
-     "odd": 1.9
-    },
-    {
-     "h": "17:47",
-     "jogo": "Croácia x Bélgica",
-     "odd": 1.9
-    },
-    {
-     "h": "17:50",
-     "jogo": "Escócia x República Tcheca",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "coluna :44",
-   "alvo": {
-    "h": "17:47",
-    "jogo": "Croácia x Bélgica",
-    "odd": 1.9,
-    "unidades": 2,
-    "desde": 1787244728056
-   },
-   "iniciadoEm": 1787244469867,
-   "tiros": [
-    {
-     "h": "17:44",
-     "jogo": "Áustria x Inglaterra",
-     "odd": 1.9,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1787240866968,
+   "euro": 1787244730560,
    "super": 1787241659260,
    "premier": 1787190638563,
    "copa": 1787244003866
@@ -7771,7 +7733,7 @@
    "2026-08-17": -2.9,
    "2026-08-18": 7.5,
    "2026-08-19": 7.5,
-   "2026-08-20": -9.6
+   "2026-08-20": -8.8
   },
   "_gatilhoAtual": {
    "tipo": "seq",
