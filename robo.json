@@ -7693,8 +7693,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "05:08",
@@ -7714,11 +7714,11 @@
    ],
    "gatilho": "time Eslováquia",
    "alvo": {
-    "h": "05:11",
-    "jogo": "Bélgica x Dinamarca",
-    "odd": 1.98,
-    "unidades": 2,
-    "desde": 1787199170263
+    "h": "05:14",
+    "jogo": "República Tcheca x Sérvia",
+    "odd": 2.25,
+    "unidades": 4,
+    "desde": 1787199349371
    },
    "iniciadoEm": 1787198721863,
    "tiros": [
@@ -7727,6 +7727,12 @@
      "jogo": "Eslováquia x Turquia",
      "odd": 2.1,
      "unidades": 1
+    },
+    {
+     "h": "05:11",
+     "jogo": "Bélgica x Dinamarca",
+     "odd": 1.98,
+     "unidades": 2
     }
    ]
   },
@@ -7773,10 +7779,10 @@
    "2026-08-19": 7.5
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "0-0",
+   "tipo": "time",
+   "chave": "Eslováquia",
    "n": 8,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
