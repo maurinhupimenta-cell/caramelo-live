@@ -4021,11 +4021,40 @@
    }
   ],
   "consumidas": {
-   "copa": 1787242263959,
    "super": 1787242744860,
    "premier": 1787244653366
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:07",
+     "jogo": "República Tcheca x Paraguai",
+     "odd": 2.5
+    },
+    {
+     "h": "18:10",
+     "jogo": "Uzbequistão x Equador",
+     "odd": 2.2
+    },
+    {
+     "h": "18:13",
+     "jogo": "México x Canadá",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "time Equador",
+   "alvo": {
+    "h": "18:07",
+    "jogo": "República Tcheca x Paraguai",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1787245864457
+   },
+   "iniciadoEm": 1787245864457
+  },
   "cooldown": {
    "copa": 1787242263959,
    "premier": 1787244653366,
@@ -4071,9 +4100,9 @@
    "2026-08-20": 12
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.07",
-   "n": 24,
+   "tipo": "time",
+   "chave": "Equador",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
