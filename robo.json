@@ -412,13 +412,19 @@
   }
  },
  "o25": {
-  "saldo": -154,
-  "ciclos": 1326,
-  "greens": 830,
+  "saldo": -152.7,
+  "ciclos": 1327,
+  "greens": 831,
   "redsCiclo": 204,
   "aborts": 0,
   "descartes": 292,
   "historico": [
+   {
+    "quando": "2026-08-20T18:25:09.861Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "copa · Cabo Verde x Bélgica @2.25 (tiro 1) · gatilho: time Equador"
+   },
    {
     "quando": "2026-08-20T18:14:33.366Z",
     "resultado": "GREEN",
@@ -4012,51 +4018,16 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho odd 2.35) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-31T08:24:47.843Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: coluna :19"
    }
   ],
   "consumidas": {
    "super": 1787248180158,
-   "premier": 1787249673168
+   "premier": 1787249673168,
+   "copa": 1787250309666
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "19:22",
-     "jogo": "Cabo Verde x Bélgica",
-     "odd": 2.25
-    },
-    {
-     "h": "19:25",
-     "jogo": "Equador x Coreia do Sul",
-     "odd": 2.35
-    },
-    {
-     "h": "19:28",
-     "jogo": "Senegal x Costa do Marfim",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "time Equador",
-   "alvo": {
-    "h": "19:22",
-    "jogo": "Cabo Verde x Bélgica",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1787249830664
-   },
-   "iniciadoEm": 1787249830664
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1787246227865,
+   "copa": 1787250309666,
    "premier": 1787249673168,
    "euro": 1787199947469,
    "super": 1787248180158
@@ -4097,7 +4068,7 @@
    "2026-08-17": -5.2,
    "2026-08-18": 2.2,
    "2026-08-19": -9.7,
-   "2026-08-20": 17.2
+   "2026-08-20": 18.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
