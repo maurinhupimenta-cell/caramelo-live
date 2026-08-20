@@ -4074,13 +4074,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -141.7,
-  "ciclos": 1339,
-  "greens": 911,
+  "saldo": -139.9,
+  "ciclos": 1340,
+  "greens": 912,
   "redsCiclo": 151,
   "aborts": 0,
   "descartes": 277,
   "historico": [
+   {
+    "quando": "2026-08-20T02:23:28.166Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "euro · Geórgia x República Tcheca @2.2 (tiro 3) · gatilho: placar acima de 1-0 (2-1)"
+   },
    {
     "quando": "2026-08-20T02:04:31.062Z",
     "resultado": "GREEN",
@@ -7674,65 +7680,16 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "premier · Wolverhampton x Islington @1.85 (tiro 1) · gatilho: coluna :00"
-   },
-   {
-    "quando": "2026-07-30T17:54:26.300Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "euro · Albânia x Países Baixos @2.05 (tiro 2) · gatilho: placar empate 2-2"
    }
   ],
   "consumidas": {
    "premier": 1787190638563,
-   "super": 1787191470865
+   "super": 1787191470865,
+   "euro": 1787192608063
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "03:14",
-     "jogo": "Alemanha x Espanha",
-     "odd": 1.83
-    },
-    {
-     "h": "03:17",
-     "jogo": "Áustria x Turquia",
-     "odd": 2.1
-    },
-    {
-     "h": "03:20",
-     "jogo": "Geórgia x República Tcheca",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "placar acima de 1-0 (2-1)",
-   "alvo": {
-    "h": "03:20",
-    "jogo": "Geórgia x República Tcheca",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1787192426367
-   },
-   "iniciadoEm": 1787191948568,
-   "tiros": [
-    {
-     "h": "03:14",
-     "jogo": "Alemanha x Espanha",
-     "odd": 1.83,
-     "unidades": 1
-    },
-    {
-     "h": "03:17",
-     "jogo": "Áustria x Turquia",
-     "odd": 2.1,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1787030010624,
+   "euro": 1787192608063,
    "super": 1787191470865,
    "premier": 1787190638563,
    "copa": 1787188111470
@@ -7771,7 +7728,7 @@
    "2026-08-15": -17.2,
    "2026-08-17": -2.9,
    "2026-08-18": 7.5,
-   "2026-08-19": 5.7
+   "2026-08-19": 7.5
   },
   "_gatilhoAtual": {
    "tipo": "placar",
