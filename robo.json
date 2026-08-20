@@ -413,12 +413,18 @@
  },
  "o25": {
   "saldo": -168.4,
-  "ciclos": 1314,
+  "ciclos": 1315,
   "greens": 821,
   "redsCiclo": 204,
   "aborts": 0,
-  "descartes": 289,
+  "descartes": 290,
   "historico": [
+   {
+    "quando": "2026-08-20T04:40:49.671Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho seq RRRG) — liga REARMADA"
+   },
    {
     "quando": "2026-08-20T04:37:27.261Z",
     "resultado": "GREEN_OBS",
@@ -4012,19 +4018,43 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "super · ciclo perdido (3 tiros) · gatilho: time Belo Horizonte"
-   },
-   {
-    "quando": "2026-07-31T04:47:32.688Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: seq RRGG"
    }
   ],
   "consumidas": {
    "premier": 1787198586866,
    "euro": 1787199947469
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:46",
+     "jogo": "Santos x Quito",
+     "odd": 2.4
+    },
+    {
+     "h": "05:49",
+     "jogo": "Montevideo x Medellin",
+     "odd": 2.25
+    },
+    {
+     "h": "05:52",
+     "jogo": "Avellaneda x Agua Branca",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "odd 2.25",
+   "alvo": {
+    "h": "05:46",
+    "jogo": "Santos x Quito",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1787200648674
+   },
+   "iniciadoEm": 1787200648674
+  },
   "cooldown": {
    "copa": 1787175332564,
    "premier": 1787198586866,
@@ -4070,15 +4100,15 @@
    "2026-08-20": 2.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRR",
+   "tipo": "odd",
+   "chave": "2.25",
    "n": 9,
-   "start": 1
+   "start": 2
   },
   "_obs": {
-   "super": {
-    "desde": 1787198580164,
-    "gatilho": "odd 2.25"
+   "copa": {
+    "desde": 1787200849670,
+    "gatilho": "seq RRRG"
    }
   }
  },
@@ -7772,7 +7802,7 @@
    "tipo": "time",
    "chave": "Guayaquil",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
