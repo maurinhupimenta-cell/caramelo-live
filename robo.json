@@ -7689,7 +7689,37 @@
    "copa": 1787240151956,
    "euro": 1787240866968
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:52",
+     "jogo": "Bogota x Quito",
+     "odd": 2.15
+    },
+    {
+     "h": "16:55",
+     "jogo": "Buenos Aires x Porto Alegre",
+     "odd": 2.1
+    },
+    {
+     "h": "16:58",
+     "jogo": "La Boca x Lima",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "seq GRRGR",
+   "alvo": {
+    "h": "16:52",
+    "jogo": "Bogota x Quito",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1787240924568
+   },
+   "iniciadoEm": 1787240924568
+  },
   "cooldown": {
    "euro": 1787240866968,
    "super": 1787201151771,
@@ -7735,8 +7765,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRGG",
-   "n": 15,
+   "chave": "GRRGR",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
