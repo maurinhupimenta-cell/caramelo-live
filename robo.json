@@ -4100,18 +4100,24 @@
    "tipo": "odd",
    "chave": "2.55",
    "n": 14,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -146,
-  "ciclos": 1342,
+  "ciclos": 1343,
   "greens": 913,
   "redsCiclo": 152,
   "aborts": 0,
-  "descartes": 277,
+  "descartes": 278,
   "historico": [
+   {
+    "quando": "2026-08-20T15:30:51.659Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :41) — liga REARMADA"
+   },
    {
     "quando": "2026-08-20T04:45:51.966Z",
     "resultado": "GREEN",
@@ -7705,12 +7711,6 @@
     "resultado": "GREEN",
     "unidades": 0.2,
     "detalhe": "euro · França x Espanha @1.8 (tiro 3) · gatilho: placar empate 2-2"
-   },
-   {
-    "quando": "2026-07-30T18:38:46.002Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "super · Medellin x Quito @2.05 (tiro 2) · gatilho: seq RRGGR"
    }
   ],
   "consumidas": {},
@@ -7789,11 +7789,16 @@
    "2026-08-20": -6.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGRR",
-   "n": 11,
+   "tipo": "coluna",
+   "chave": ":34",
+   "n": 16,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "euro": {
+    "desde": 1787239851658,
+    "gatilho": "coluna :41"
+   }
+  }
  }
 }
