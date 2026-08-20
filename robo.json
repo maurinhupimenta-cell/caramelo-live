@@ -4079,13 +4079,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -148.7,
-  "ciclos": 1349,
-  "greens": 917,
+  "saldo": -147.7,
+  "ciclos": 1350,
+  "greens": 918,
   "redsCiclo": 153,
   "aborts": 0,
   "descartes": 279,
   "historico": [
+   {
+    "quando": "2026-08-20T17:10:02.256Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · La Plata x Agua Branca @2.05 (tiro 1) · gatilho: odd 1.87"
+   },
    {
     "quando": "2026-08-20T17:06:06.557Z",
     "resultado": "GREEN_OBS",
@@ -7679,22 +7685,17 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "super · Porto Alegre x Rio de Janeiro @2.15 (tiro 1) · gatilho: odd 1.83"
-   },
-   {
-    "quando": "2026-07-30T22:08:20.927Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · França x Bélgica @1.98 (tiro 1) · gatilho: time Argélia"
    }
   ],
   "consumidas": {
    "copa": 1787244003866,
-   "euro": 1787244730560
+   "euro": 1787244730560,
+   "super": 1787245801767
   },
   "ciclo": null,
   "cooldown": {
    "euro": 1787244730560,
-   "super": 1787241659260,
+   "super": 1787245801767,
    "premier": 1787190638563,
    "copa": 1787244003866
   },
@@ -7733,19 +7734,14 @@
    "2026-08-17": -2.9,
    "2026-08-18": 7.5,
    "2026-08-19": 7.5,
-   "2026-08-20": -8.8
+   "2026-08-20": -7.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRRG",
-   "n": 9,
+   "tipo": "odd",
+   "chave": "1.87",
+   "n": 8,
    "start": 1
   },
-  "_obs": {
-   "super": {
-    "desde": 1787245566557,
-    "gatilho": "odd 1.87"
-   }
-  }
+  "_obs": {}
  }
 }
