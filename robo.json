@@ -412,13 +412,19 @@
   }
  },
  "o25": {
-  "saldo": -152.7,
-  "ciclos": 1327,
+  "saldo": -159.7,
+  "ciclos": 1328,
   "greens": 831,
-  "redsCiclo": 204,
+  "redsCiclo": 205,
   "aborts": 0,
   "descartes": 292,
   "historico": [
+   {
+    "quando": "2026-08-20T19:23:10.063Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: odd 2.07"
+   },
    {
     "quando": "2026-08-20T18:25:09.861Z",
     "resultado": "GREEN",
@@ -4012,65 +4018,16 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: time Áustria"
-   },
-   {
-    "quando": "2026-07-31T08:26:38.939Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho odd 2.35) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "copa": 1787250309666
+   "copa": 1787250309666,
+   "premier": 1787253789957
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "20:15",
-     "jogo": "West Ham x Burnley",
-     "odd": 2.4
-    },
-    {
-     "h": "20:18",
-     "jogo": "Liverpool x Newcastle",
-     "odd": 2.07
-    },
-    {
-     "h": "20:21",
-     "jogo": "West Ham x Norwich",
-     "odd": 2.45
-    }
-   ],
-   "gatilho": "odd 2.07",
-   "alvo": {
-    "h": "20:21",
-    "jogo": "West Ham x Norwich",
-    "odd": 2.45,
-    "unidades": 4,
-    "desde": 1787253662857
-   },
-   "iniciadoEm": 1787253302467,
-   "tiros": [
-    {
-     "h": "20:15",
-     "jogo": "West Ham x Burnley",
-     "odd": 2.4,
-     "unidades": 1
-    },
-    {
-     "h": "20:18",
-     "jogo": "Liverpool x Newcastle",
-     "odd": 2.07,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787250309666,
-   "premier": 1787249673168,
+   "premier": 1787253789957,
    "euro": 1787199947469,
    "super": 1787248180158
   },
@@ -4110,7 +4067,7 @@
    "2026-08-17": -5.2,
    "2026-08-18": 2.2,
    "2026-08-19": -9.7,
-   "2026-08-20": 18.5
+   "2026-08-20": 11.5
   },
   "_gatilhoAtual": {
    "tipo": "odd",
