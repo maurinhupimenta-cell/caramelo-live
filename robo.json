@@ -4021,11 +4021,40 @@
    }
   ],
   "consumidas": {
-   "copa": 1787246227865,
    "super": 1787248180158,
    "premier": 1787249673168
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:22",
+     "jogo": "Cabo Verde x Bélgica",
+     "odd": 2.25
+    },
+    {
+     "h": "19:25",
+     "jogo": "Equador x Coreia do Sul",
+     "odd": 2.35
+    },
+    {
+     "h": "19:28",
+     "jogo": "Senegal x Costa do Marfim",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "time Equador",
+   "alvo": {
+    "h": "19:22",
+    "jogo": "Cabo Verde x Bélgica",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1787249830664
+   },
+   "iniciadoEm": 1787249830664
+  },
   "cooldown": {
    "copa": 1787246227865,
    "premier": 1787249673168,
@@ -4071,10 +4100,10 @@
    "2026-08-20": 17.2
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.07",
-   "n": 26,
-   "start": 1
+   "tipo": "time",
+   "chave": "Equador",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  },
