@@ -357,7 +357,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:00",
+     "jogo": "Southampton x Norwich",
+     "odd": 4.75
+    },
+    {
+     "h": "02:03",
+     "jogo": "Liverpool x Everton",
+     "odd": 4
+    },
+    {
+     "h": "02:06",
+     "jogo": "Southampton x Islington",
+     "odd": 4.75
+    }
+   ],
+   "gatilho": "odd 4",
+   "alvo": {
+    "h": "02:00",
+    "jogo": "Southampton x Norwich",
+    "odd": 4.75,
+    "unidades": 1,
+    "desde": 1787187067071
+   },
+   "iniciadoEm": 1787187067071
+  },
   "cooldown": {
    "copa": 1786370517941,
    "premier": 1787029235622,
@@ -388,10 +418,10 @@
    "2026-08-18": 13
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "City",
-   "n": 14,
-   "start": 1
+   "tipo": "odd",
+   "chave": "4",
+   "n": 9,
+   "start": 3
   },
   "_obs": {
    "euro": {
