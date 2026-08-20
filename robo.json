@@ -7691,8 +7691,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "21:26",
@@ -7712,13 +7712,21 @@
    ],
    "gatilho": "seq GGRGG",
    "alvo": {
-    "h": "21:26",
-    "jogo": "Dinamarca x Alemanha",
+    "h": "21:29",
+    "jogo": "Escócia x Itália",
     "odd": 1.98,
-    "unidades": 1,
-    "desde": 1787257355259
+    "unidades": 2,
+    "desde": 1787257836162
    },
-   "iniciadoEm": 1787257355259
+   "iniciadoEm": 1787257355259,
+   "tiros": [
+    {
+     "h": "21:26",
+     "jogo": "Dinamarca x Alemanha",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1787252523066,
@@ -7764,10 +7772,10 @@
    "2026-08-20": -9.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRGG",
-   "n": 14,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":41",
+   "n": 21,
+   "start": 3
   },
   "_obs": {}
  }
