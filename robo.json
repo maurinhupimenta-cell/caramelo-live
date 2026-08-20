@@ -4021,11 +4021,40 @@
    }
   ],
   "consumidas": {
-   "premier": 1787240480357,
    "copa": 1787242263959,
    "super": 1787242744860
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:45",
+     "jogo": "Liverpool x Wolverhampton",
+     "odd": 2.07
+    },
+    {
+     "h": "17:48",
+     "jogo": "West Ham x Southampton",
+     "odd": 2.62
+    },
+    {
+     "h": "17:51",
+     "jogo": "Leeds x United",
+     "odd": 2.45
+    }
+   ],
+   "gatilho": "odd 2.07",
+   "alvo": {
+    "h": "17:45",
+    "jogo": "Liverpool x Wolverhampton",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1787244112068
+   },
+   "iniciadoEm": 1787244112068
+  },
   "cooldown": {
    "copa": 1787242263959,
    "premier": 1787240480357,
@@ -4071,9 +4100,9 @@
    "2026-08-20": 9.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGGR",
-   "n": 11,
+   "tipo": "odd",
+   "chave": "2.07",
+   "n": 23,
    "start": 1
   },
   "_obs": {}
