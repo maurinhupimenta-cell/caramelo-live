@@ -4100,18 +4100,24 @@
    "tipo": "odd",
    "chave": "2.55",
    "n": 14,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -146,
-  "ciclos": 1343,
-  "greens": 913,
+  "saldo": -145,
+  "ciclos": 1344,
+  "greens": 914,
   "redsCiclo": 152,
   "aborts": 0,
   "descartes": 278,
   "historico": [
+   {
+    "quando": "2026-08-20T15:35:52.156Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Senegal x Inglaterra @2.05 (tiro 1) · gatilho: coluna :34"
+   },
    {
     "quando": "2026-08-20T15:30:51.659Z",
     "resultado": "GREEN_OBS",
@@ -7705,51 +7711,17 @@
     "resultado": "GREEN",
     "unidades": 0.7,
     "detalhe": "copa · RD Congo x Jordânia @1.87 (tiro 2) · gatilho: time Equador"
-   },
-   {
-    "quando": "2026-07-30T19:25:52.001Z",
-    "resultado": "GREEN",
-    "unidades": 0.2,
-    "detalhe": "euro · França x Espanha @1.8 (tiro 3) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:31",
-     "jogo": "Senegal x Inglaterra",
-     "odd": 2.05
-    },
-    {
-     "h": "16:34",
-     "jogo": "Irã x Paraguai",
-     "odd": 2.2
-    },
-    {
-     "h": "16:37",
-     "jogo": "Haiti x Austrália",
-     "odd": 1.87
-    }
-   ],
-   "gatilho": "coluna :34",
-   "alvo": {
-    "h": "16:31",
-    "jogo": "Senegal x Inglaterra",
-    "odd": 2.05,
-    "unidades": 1,
-    "desde": 1787239346566
-   },
-   "iniciadoEm": 1787239346566
+  "consumidas": {
+   "copa": 1787240151956
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787199468161,
    "super": 1787201151771,
    "premier": 1787190638563,
-   "copa": 1787188111470
+   "copa": 1787240151956
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7786,19 +7758,14 @@
    "2026-08-17": -2.9,
    "2026-08-18": 7.5,
    "2026-08-19": 7.5,
-   "2026-08-20": -6.1
+   "2026-08-20": -5.1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":34",
-   "n": 16,
-   "start": 1
+   "tipo": "time",
+   "chave": "Noruega",
+   "n": 14,
+   "start": 3
   },
-  "_obs": {
-   "euro": {
-    "desde": 1787239851658,
-    "gatilho": "coluna :41"
-   }
-  }
+  "_obs": {}
  }
 }
