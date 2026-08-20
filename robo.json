@@ -4077,13 +4077,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -145,
-  "ciclos": 1344,
-  "greens": 914,
+  "saldo": -143.4,
+  "ciclos": 1345,
+  "greens": 915,
   "redsCiclo": 152,
   "aborts": 0,
   "descartes": 278,
   "historico": [
+   {
+    "quando": "2026-08-20T15:47:47.263Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "euro · Polônia x Dinamarca @2.15 (tiro 3) · gatilho: coluna :41"
+   },
    {
     "quando": "2026-08-20T15:35:52.156Z",
     "resultado": "GREEN",
@@ -7677,58 +7683,15 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "super · Lima x Medellin @1.95 (tiro 1) · gatilho: seq RRGGR"
-   },
-   {
-    "quando": "2026-07-30T19:41:54.128Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "copa · RD Congo x Jordânia @1.87 (tiro 2) · gatilho: time Equador"
    }
   ],
   "consumidas": {
-   "copa": 1787240151956
+   "copa": 1787240151956,
+   "euro": 1787240866968
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "16:38",
-     "jogo": "Bélgica x Albânia",
-     "odd": 2.15
-    },
-    {
-     "h": "16:41",
-     "jogo": "Portugal x Sérvia",
-     "odd": 2.1
-    },
-    {
-     "h": "16:44",
-     "jogo": "Polônia x Dinamarca",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "coluna :41",
-   "alvo": {
-    "h": "16:41",
-    "jogo": "Portugal x Sérvia",
-    "odd": 2.1,
-    "unidades": 2,
-    "desde": 1787240627762
-   },
-   "iniciadoEm": 1787240154161,
-   "tiros": [
-    {
-     "h": "16:38",
-     "jogo": "Bélgica x Albânia",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1787199468161,
+   "euro": 1787240866968,
    "super": 1787201151771,
    "premier": 1787190638563,
    "copa": 1787240151956
@@ -7768,7 +7731,7 @@
    "2026-08-17": -2.9,
    "2026-08-18": 7.5,
    "2026-08-19": 7.5,
-   "2026-08-20": -5.1
+   "2026-08-20": -3.5
   },
   "_gatilhoAtual": {
    "tipo": "seq",
