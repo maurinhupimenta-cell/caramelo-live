@@ -4078,13 +4078,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -143.5,
-  "ciclos": 1337,
-  "greens": 909,
+  "saldo": -142.7,
+  "ciclos": 1338,
+  "greens": 910,
   "redsCiclo": 151,
   "aborts": 0,
   "descartes": 277,
   "historico": [
+   {
+    "quando": "2026-08-20T01:50:38.669Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "premier · Norwich x United @1.95 (tiro 3) · gatilho: placar goleada (3+)"
+   },
    {
     "quando": "2026-08-20T01:08:31.762Z",
     "resultado": "GREEN",
@@ -7678,66 +7684,17 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho placar empate 2-2) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-30T17:27:25.596Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "super · Buenos Aires x Rio de Janeiro @1.85 (tiro 1) · gatilho: seq RRRGG"
    }
   ],
   "consumidas": {
-   "copa": 1787188111470
+   "copa": 1787188111470,
+   "premier": 1787190638563
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "02:42",
-     "jogo": "Palace x Watford",
-     "odd": 1.98
-    },
-    {
-     "h": "02:45",
-     "jogo": "Chelsea x West Ham",
-     "odd": 2.15
-    },
-    {
-     "h": "02:48",
-     "jogo": "Norwich x United",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "placar goleada (3+)",
-   "alvo": {
-    "h": "02:48",
-    "jogo": "Norwich x United",
-    "odd": 1.95,
-    "unidades": 4,
-    "desde": 1787190469966
-   },
-   "iniciadoEm": 1787189928967,
-   "tiros": [
-    {
-     "h": "02:42",
-     "jogo": "Palace x Watford",
-     "odd": 1.98,
-     "unidades": 1
-    },
-    {
-     "h": "02:45",
-     "jogo": "Chelsea x West Ham",
-     "odd": 2.15,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787030010624,
    "super": 1787029347822,
-   "premier": 1787178054370,
+   "premier": 1787190638563,
    "copa": 1787188111470
   },
   "dias": {
@@ -7774,7 +7731,7 @@
    "2026-08-15": -17.2,
    "2026-08-17": -2.9,
    "2026-08-18": 7.5,
-   "2026-08-19": 3.9
+   "2026-08-19": 4.7
   },
   "_gatilhoAtual": {
    "tipo": "placar",
