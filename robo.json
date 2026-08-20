@@ -4080,12 +4080,18 @@
  },
  "ambas": {
   "saldo": -148.7,
-  "ciclos": 1348,
+  "ciclos": 1349,
   "greens": 917,
   "redsCiclo": 153,
   "aborts": 0,
-  "descartes": 278,
+  "descartes": 279,
   "historico": [
+   {
+    "quando": "2026-08-20T17:06:06.557Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho odd 1.87) — liga REARMADA"
+   },
    {
     "quando": "2026-08-20T16:52:10.758Z",
     "resultado": "GREEN",
@@ -7679,12 +7685,6 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · França x Bélgica @1.98 (tiro 1) · gatilho: time Argélia"
-   },
-   {
-    "quando": "2026-07-30T21:51:56.927Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "super · Porto Alegre x Lima @2.15 (tiro 1) · gatilho: odd 1.83"
    }
   ],
   "consumidas": {
@@ -7741,6 +7741,11 @@
    "n": 9,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1787245566557,
+    "gatilho": "odd 1.87"
+   }
+  }
  }
 }
