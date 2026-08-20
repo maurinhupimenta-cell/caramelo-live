@@ -412,13 +412,31 @@
   }
  },
  "o25": {
-  "saldo": -171.2,
-  "ciclos": 1309,
-  "greens": 819,
+  "saldo": -169.7,
+  "ciclos": 1312,
+  "greens": 820,
   "redsCiclo": 204,
   "aborts": 0,
-  "descartes": 286,
+  "descartes": 288,
   "historico": [
+   {
+    "quando": "2026-08-20T04:03:06.970Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "premier · Watford x West Ham @2.55 (tiro 1) · gatilho: time Aston"
+   },
+   {
+    "quando": "2026-08-20T04:03:02.473Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho time Aston) — liga REARMADA"
+   },
+   {
+    "quando": "2026-08-20T04:03:00.169Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "premier · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-08-20T01:00:59.969Z",
     "resultado": "RED_CICLO",
@@ -4000,61 +4018,15 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "copa · África do Sul x Áustria @2.4 (tiro 1) · gatilho: time Marrocos"
-   },
-   {
-    "quando": "2026-07-31T03:53:39.292Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "premier · Watford x Aston @2.4 (tiro 2) · gatilho: time Aston"
-   },
-   {
-    "quando": "2026-07-31T03:17:30.694Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "euro · República Tcheca x Romênia @2.4 (tiro 1) · gatilho: placar acima de 1-0 (2-1)"
-   },
-   {
-    "quando": "2026-07-31T03:12:04.988Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "super · Belo Horizonte x Avellaneda @2.15 (tiro 2) · gatilho: time Belo Horizonte"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:30",
-     "jogo": "Watford x West Ham",
-     "odd": 2.55
-    },
-    {
-     "h": "03:33",
-     "jogo": "Islington x Aston",
-     "odd": 2.35
-    },
-    {
-     "h": "03:36",
-     "jogo": "Southampton x City",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Aston",
-   "alvo": {
-    "h": "03:30",
-    "jogo": "Watford x West Ham",
-    "odd": 2.55,
-    "unidades": 1,
-    "desde": 1787192641062
-   },
-   "iniciadoEm": 1787192641062
+  "consumidas": {
+   "premier": 1787198586866
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787175332564,
-   "premier": 1787030984832,
+   "premier": 1787198586866,
    "euro": 1787032230224,
    "super": 1787187659772
   },
@@ -4093,15 +4065,21 @@
    "2026-08-15": -16.3,
    "2026-08-17": -5.2,
    "2026-08-18": 2.2,
-   "2026-08-19": -9.7
+   "2026-08-19": -9.7,
+   "2026-08-20": 1.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Aston",
+   "tipo": "odd",
+   "chave": "2.4",
    "n": 8,
-   "start": 2
+   "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1787198580164,
+    "gatilho": "odd 2.25"
+   }
+  }
  },
  "ambas": {
   "saldo": -139.9,
@@ -7712,11 +7690,7 @@
     "detalhe": "premier · Wolverhampton x Islington @1.85 (tiro 1) · gatilho: coluna :00"
    }
   ],
-  "consumidas": {
-   "premier": 1787190638563,
-   "super": 1787191470865,
-   "euro": 1787192608063
-  },
+  "consumidas": {},
   "ciclo": null,
   "cooldown": {
    "euro": 1787192608063,
