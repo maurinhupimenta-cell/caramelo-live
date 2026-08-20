@@ -4078,13 +4078,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -148.7,
-  "ciclos": 1360,
-  "greens": 924,
+  "saldo": -147.7,
+  "ciclos": 1361,
+  "greens": 925,
   "redsCiclo": 154,
   "aborts": 0,
   "descartes": 282,
   "historico": [
+   {
+    "quando": "2026-08-20T20:59:33.066Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Buenos Aires x Medellin @1.98 (tiro 2) · gatilho: seq GGGRR"
+   },
    {
     "quando": "2026-08-20T20:51:34.565Z",
     "resultado": "GREEN_OBS",
@@ -7678,60 +7684,17 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho odd 1.93) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-31T07:57:48.639Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "super · Santiago x Santos @1.93 (tiro 2) · gatilho: time Santiago"
    }
   ],
   "consumidas": {
    "copa": 1787256395067,
-   "euro": 1787258194661
+   "euro": 1787258194661,
+   "super": 1787259572956
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "21:52",
-     "jogo": "Avellaneda x Belo Horizonte",
-     "odd": 1.9
-    },
-    {
-     "h": "21:55",
-     "jogo": "Buenos Aires x Medellin",
-     "odd": 1.98
-    },
-    {
-     "h": "21:58",
-     "jogo": "La Boca x Santiago",
-     "odd": 2
-    }
-   ],
-   "gatilho": "seq GGGRR",
-   "alvo": {
-    "h": "21:55",
-    "jogo": "Buenos Aires x Medellin",
-    "odd": 1.98,
-    "unidades": 2,
-    "desde": 1787259386367
-   },
-   "iniciadoEm": 1787259096060,
-   "tiros": [
-    {
-     "h": "21:52",
-     "jogo": "Avellaneda x Belo Horizonte",
-     "odd": 1.9,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787258194661,
-   "super": 1787255493760,
+   "super": 1787259572956,
    "premier": 1787190638563,
    "copa": 1787256395067
   },
@@ -7770,7 +7733,7 @@
    "2026-08-17": -2.9,
    "2026-08-18": 7.5,
    "2026-08-19": 7.5,
-   "2026-08-20": -8.8
+   "2026-08-20": -7.8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
