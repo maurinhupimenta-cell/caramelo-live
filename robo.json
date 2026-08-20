@@ -4023,7 +4023,37 @@
   "consumidas": {
    "premier": 1787253789957
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:10",
+     "jogo": "Sao Paulo x Itaquera",
+     "odd": 2.15
+    },
+    {
+     "h": "21:13",
+     "jogo": "Guayaquil x Santiago",
+     "odd": 2.02
+    },
+    {
+     "h": "21:16",
+     "jogo": "Asuncion x Bogota",
+     "odd": 2.55
+    }
+   ],
+   "gatilho": "seq RRGGR",
+   "alvo": {
+    "h": "21:10",
+    "jogo": "Sao Paulo x Itaquera",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1787256452962
+   },
+   "iniciadoEm": 1787256452962
+  },
   "cooldown": {
    "copa": 1787250309666,
    "premier": 1787253789957,
@@ -4069,9 +4099,9 @@
    "2026-08-20": 11.5
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.07",
-   "n": 27,
+   "tipo": "seq",
+   "chave": "RRGGR",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
