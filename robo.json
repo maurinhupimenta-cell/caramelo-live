@@ -4024,7 +4024,37 @@
    "copa": 1787246227865,
    "super": 1787248180158
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:12",
+     "jogo": "Newcastle x Aston",
+     "odd": 2.2
+    },
+    {
+     "h": "19:15",
+     "jogo": "Wolverhampton x Chelsea",
+     "odd": 2.07
+    },
+    {
+     "h": "19:18",
+     "jogo": "Everton x Southampton",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "odd 2.07",
+   "alvo": {
+    "h": "19:12",
+    "jogo": "Newcastle x Aston",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1787248993070
+   },
+   "iniciadoEm": 1787248993070
+  },
   "cooldown": {
    "copa": 1787246227865,
    "premier": 1787244653366,
@@ -4070,10 +4100,10 @@
    "2026-08-20": 16
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRRG",
-   "n": 8,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.07",
+   "n": 26,
+   "start": 3
   },
   "_obs": {}
  },
