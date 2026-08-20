@@ -4078,13 +4078,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -144.9,
-  "ciclos": 1355,
-  "greens": 921,
+  "saldo": -143.9,
+  "ciclos": 1356,
+  "greens": 922,
   "redsCiclo": 153,
   "aborts": 0,
   "descartes": 281,
   "historico": [
+   {
+    "quando": "2026-08-20T19:03:03.457Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Uruguai x Turquia @2 (tiro 1) · gatilho: time Turquia"
+   },
    {
     "quando": "2026-08-20T19:02:03.360Z",
     "resultado": "GREEN",
@@ -7678,54 +7684,19 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · Bélgica x RD Congo @2 (tiro 2) · gatilho: time RD Congo"
-   },
-   {
-    "quando": "2026-07-31T06:20:26.689Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "euro · Ucrânia x Alemanha @1.93 (tiro 1) · gatilho: time França"
    }
   ],
   "consumidas": {
    "super": 1787250249764,
-   "euro": 1787252523066
+   "euro": 1787252523066,
+   "copa": 1787252583079
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "19:58",
-     "jogo": "Uruguai x Turquia",
-     "odd": 2
-    },
-    {
-     "h": "20:01",
-     "jogo": "Austrália x Paraguai",
-     "odd": 2
-    },
-    {
-     "h": "20:04",
-     "jogo": "Portugal x Marrocos",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "time Turquia",
-   "alvo": {
-    "h": "19:58",
-    "jogo": "Uruguai x Turquia",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1787252525568
-   },
-   "iniciadoEm": 1787252525568
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787252523066,
    "super": 1787250249764,
    "premier": 1787190638563,
-   "copa": 1787248868658
+   "copa": 1787252583079
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7762,13 +7733,13 @@
    "2026-08-17": -2.9,
    "2026-08-18": 7.5,
    "2026-08-19": 7.5,
-   "2026-08-20": -5
+   "2026-08-20": -4
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Turquia",
    "n": 14,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
