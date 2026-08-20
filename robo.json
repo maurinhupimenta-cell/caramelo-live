@@ -412,13 +412,19 @@
   }
  },
  "o25": {
-  "saldo": -168.4,
-  "ciclos": 1315,
-  "greens": 821,
+  "saldo": -167,
+  "ciclos": 1316,
+  "greens": 822,
   "redsCiclo": 204,
   "aborts": 0,
   "descartes": 290,
   "historico": [
+   {
+    "quando": "2026-08-20T04:48:59.867Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "super · Santos x Quito @2.4 (tiro 1) · gatilho: odd 2.25"
+   },
    {
     "quando": "2026-08-20T04:40:49.671Z",
     "resultado": "GREEN_OBS",
@@ -4012,54 +4018,19 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "euro · green OBSERVADO no papel (gatilho time Áustria) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-31T05:40:29.888Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: time Belo Horizonte"
    }
   ],
   "consumidas": {
    "premier": 1787198586866,
-   "euro": 1787199947469
+   "euro": 1787199947469,
+   "super": 1787201339672
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:46",
-     "jogo": "Santos x Quito",
-     "odd": 2.4
-    },
-    {
-     "h": "05:49",
-     "jogo": "Montevideo x Medellin",
-     "odd": 2.25
-    },
-    {
-     "h": "05:52",
-     "jogo": "Avellaneda x Agua Branca",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "odd 2.25",
-   "alvo": {
-    "h": "05:46",
-    "jogo": "Santos x Quito",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1787200648674
-   },
-   "iniciadoEm": 1787200648674
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787175332564,
    "premier": 1787198586866,
    "euro": 1787199947469,
-   "super": 1787187659772
+   "super": 1787201339672
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4097,7 +4068,7 @@
    "2026-08-17": -5.2,
    "2026-08-18": 2.2,
    "2026-08-19": -9.7,
-   "2026-08-20": 2.8
+   "2026-08-20": 4.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
