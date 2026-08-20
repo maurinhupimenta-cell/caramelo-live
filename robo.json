@@ -412,13 +412,19 @@
   }
  },
  "o25": {
-  "saldo": -157.8,
-  "ciclos": 1324,
-  "greens": 828,
+  "saldo": -155.2,
+  "ciclos": 1325,
+  "greens": 829,
   "redsCiclo": 204,
   "aborts": 0,
   "descartes": 292,
   "historico": [
+   {
+    "quando": "2026-08-20T17:49:40.361Z",
+    "resultado": "GREEN",
+    "unidades": 2.6,
+    "detalhe": "super · Asuncion x La Boca @2.4 (tiro 3) · gatilho: seq GGRRG"
+   },
    {
     "quando": "2026-08-20T17:17:08.067Z",
     "resultado": "GREEN",
@@ -4012,68 +4018,19 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "copa · EUA x Noruega @2.15 (tiro 2) · gatilho: odd 2.5"
-   },
-   {
-    "quando": "2026-07-31T07:22:45.144Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "euro · Países Baixos x Escócia @2.07 (tiro 1) · gatilho: seq GRGR"
    }
   ],
   "consumidas": {
    "premier": 1787244653366,
-   "copa": 1787246227865
+   "copa": 1787246227865,
+   "super": 1787248180158
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "18:40",
-     "jogo": "Santiago x Guayaquil",
-     "odd": 2
-    },
-    {
-     "h": "18:43",
-     "jogo": "Montevideo x Medellin",
-     "odd": 2.25
-    },
-    {
-     "h": "18:46",
-     "jogo": "Asuncion x La Boca",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "seq GGRRG",
-   "alvo": {
-    "h": "18:46",
-    "jogo": "Asuncion x La Boca",
-    "odd": 2.4,
-    "unidades": 4,
-    "desde": 1787248084265
-   },
-   "iniciadoEm": 1787247483063,
-   "tiros": [
-    {
-     "h": "18:40",
-     "jogo": "Santiago x Guayaquil",
-     "odd": 2,
-     "unidades": 1
-    },
-    {
-     "h": "18:43",
-     "jogo": "Montevideo x Medellin",
-     "odd": 2.25,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787246227865,
    "premier": 1787244653366,
    "euro": 1787199947469,
-   "super": 1787242744860
+   "super": 1787248180158
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4111,7 +4068,7 @@
    "2026-08-17": -5.2,
    "2026-08-18": 2.2,
    "2026-08-19": -9.7,
-   "2026-08-20": 13.4
+   "2026-08-20": 16
   },
   "_gatilhoAtual": {
    "tipo": "seq",
