@@ -4103,18 +4103,24 @@
    "tipo": "time",
    "chave": "Equador",
    "n": 11,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -146.7,
-  "ciclos": 1351,
-  "greens": 919,
+  "saldo": -145.9,
+  "ciclos": 1352,
+  "greens": 920,
   "redsCiclo": 153,
   "aborts": 0,
   "descartes": 279,
   "historico": [
+   {
+    "quando": "2026-08-20T18:24:09.962Z",
+    "resultado": "GREEN",
+    "unidades": 0.8,
+    "detalhe": "super · Santiago x Lima @1.8 (tiro 1) · gatilho: seq GGGRR"
+   },
    {
     "quando": "2026-08-20T18:01:08.863Z",
     "resultado": "GREEN",
@@ -7708,51 +7714,16 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "copa · Suécia x Suíça @2.15 (tiro 1) · gatilho: placar goleada (3+)"
-   },
-   {
-    "quando": "2026-07-31T02:04:03.036Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Argélia x Áustria @1.95 (tiro 1) · gatilho: placar goleada (3+)"
    }
   ],
   "consumidas": {
-   "copa": 1787248868658
+   "copa": 1787248868658,
+   "super": 1787250249764
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "19:19",
-     "jogo": "Santiago x Lima",
-     "odd": 1.8
-    },
-    {
-     "h": "19:22",
-     "jogo": "Agua Branca x Rio de Janeiro",
-     "odd": 1.9
-    },
-    {
-     "h": "19:25",
-     "jogo": "Guayaquil x Santos",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "seq GGGRR",
-   "alvo": {
-    "h": "19:19",
-    "jogo": "Santiago x Lima",
-    "odd": 1.8,
-    "unidades": 1,
-    "desde": 1787249710860
-   },
-   "iniciadoEm": 1787249710860
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787244730560,
-   "super": 1787245801767,
+   "super": 1787250249764,
    "premier": 1787190638563,
    "copa": 1787248868658
   },
@@ -7791,7 +7762,7 @@
    "2026-08-17": -2.9,
    "2026-08-18": 7.5,
    "2026-08-19": 7.5,
-   "2026-08-20": -6.8
+   "2026-08-20": -6
   },
   "_gatilhoAtual": {
    "tipo": "seq",
