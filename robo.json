@@ -7686,7 +7686,37 @@
    "premier": 1787190638563,
    "super": 1787191470865
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:14",
+     "jogo": "Alemanha x Espanha",
+     "odd": 1.83
+    },
+    {
+     "h": "03:17",
+     "jogo": "Áustria x Turquia",
+     "odd": 2.1
+    },
+    {
+     "h": "03:20",
+     "jogo": "Geórgia x República Tcheca",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "placar acima de 1-0 (2-1)",
+   "alvo": {
+    "h": "03:14",
+    "jogo": "Alemanha x Espanha",
+    "odd": 1.83,
+    "unidades": 1,
+    "desde": 1787191948568
+   },
+   "iniciadoEm": 1787191948568
+  },
   "cooldown": {
    "euro": 1787030010624,
    "super": 1787191470865,
@@ -7730,8 +7760,8 @@
    "2026-08-19": 5.7
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRR",
+   "tipo": "placar",
+   "chave": "acima de 1-0 (2-1)",
    "n": 8,
    "start": 1
   },
