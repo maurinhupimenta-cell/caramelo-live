@@ -7691,8 +7691,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "20:37",
@@ -7712,13 +7712,21 @@
    ],
    "gatilho": "seq GGGRR",
    "alvo": {
-    "h": "20:37",
-    "jogo": "Bogota x Rio de Janeiro",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1787254396063
+    "h": "20:40",
+    "jogo": "Agua Branca x Quito",
+    "odd": 1.98,
+    "unidades": 2,
+    "desde": 1787254813559
    },
-   "iniciadoEm": 1787254396063
+   "iniciadoEm": 1787254396063,
+   "tiros": [
+    {
+     "h": "20:37",
+     "jogo": "Bogota x Rio de Janeiro",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1787252523066,
@@ -7765,8 +7773,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GGGRR",
-   "n": 10,
+   "chave": "GRRGR",
+   "n": 17,
    "start": 1
   },
   "_obs": {}
