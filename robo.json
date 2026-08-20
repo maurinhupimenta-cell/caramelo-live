@@ -397,6 +397,10 @@
    "euro": {
     "desde": 1785463711484,
     "gatilho": "time Eslovênia"
+   },
+   "super": {
+    "desde": 1787186969067,
+    "gatilho": "placar 1-0 / 0-1"
    }
   }
  },
@@ -4010,7 +4014,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "01:52",
+     "jogo": "Avellaneda x Medellin",
+     "odd": 2.4
+    },
+    {
+     "h": "01:55",
+     "jogo": "Bogota x La Plata",
+     "odd": 2.87
+    },
+    {
+     "h": "01:58",
+     "jogo": "Buenos Aires x Lima",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "placar 1-0 / 0-1",
+   "alvo": {
+    "h": "01:52",
+    "jogo": "Avellaneda x Medellin",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1787186969073
+   },
+   "iniciadoEm": 1787186969073
+  },
   "cooldown": {
    "copa": 1787175332564,
    "premier": 1787030984832,
@@ -4055,9 +4089,9 @@
    "2026-08-19": -2.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.55",
-   "n": 14,
+   "tipo": "placar",
+   "chave": "1-0 / 0-1",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
