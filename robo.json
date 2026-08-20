@@ -412,13 +412,19 @@
   }
  },
  "o25": {
-  "saldo": -159.2,
-  "ciclos": 1323,
-  "greens": 827,
+  "saldo": -157.8,
+  "ciclos": 1324,
+  "greens": 828,
   "redsCiclo": 204,
   "aborts": 0,
   "descartes": 292,
   "historico": [
+   {
+    "quando": "2026-08-20T17:17:08.067Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "copa · Uzbequistão x Equador @2.2 (tiro 2) · gatilho: time Equador"
+   },
    {
     "quando": "2026-08-20T16:50:53.658Z",
     "resultado": "GREEN",
@@ -4012,51 +4018,16 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "euro · Países Baixos x Escócia @2.07 (tiro 1) · gatilho: seq GRGR"
-   },
-   {
-    "quando": "2026-07-31T07:18:32.541Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: placar acima de 1-0 (2-0)"
    }
   ],
   "consumidas": {
    "super": 1787242744860,
-   "premier": 1787244653366
+   "premier": 1787244653366,
+   "copa": 1787246227865
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:07",
-     "jogo": "República Tcheca x Paraguai",
-     "odd": 2.5
-    },
-    {
-     "h": "18:10",
-     "jogo": "Uzbequistão x Equador",
-     "odd": 2.2
-    },
-    {
-     "h": "18:13",
-     "jogo": "México x Canadá",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "time Equador",
-   "alvo": {
-    "h": "18:07",
-    "jogo": "República Tcheca x Paraguai",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1787245864457
-   },
-   "iniciadoEm": 1787245864457
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1787242263959,
+   "copa": 1787246227865,
    "premier": 1787244653366,
    "euro": 1787199947469,
    "super": 1787242744860
@@ -4097,7 +4068,7 @@
    "2026-08-17": -5.2,
    "2026-08-18": 2.2,
    "2026-08-19": -9.7,
-   "2026-08-20": 12
+   "2026-08-20": 13.4
   },
   "_gatilhoAtual": {
    "tipo": "time",
