@@ -7691,7 +7691,45 @@
    "euro": 1787240866968,
    "super": 1787241659260
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "17:34",
+     "jogo": "Países Baixos x Egito",
+     "odd": 1.95
+    },
+    {
+     "h": "17:37",
+     "jogo": "Nova Zelândia x Brasil",
+     "odd": 1.93
+    },
+    {
+     "h": "17:40",
+     "jogo": "Costa do Marfim x Coreia do Sul",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "seq RGRRR",
+   "alvo": {
+    "h": "17:37",
+    "jogo": "Nova Zelândia x Brasil",
+    "odd": 1.93,
+    "unidades": 2,
+    "desde": 1787243826257
+   },
+   "iniciadoEm": 1787243757261,
+   "tiros": [
+    {
+     "h": "17:34",
+     "jogo": "Países Baixos x Egito",
+     "odd": 1.95,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1787240866968,
    "super": 1787241659260,
@@ -7737,8 +7775,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRRGR",
-   "n": 14,
+   "chave": "RRRRR",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
