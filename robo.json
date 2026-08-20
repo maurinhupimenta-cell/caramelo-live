@@ -7689,7 +7689,37 @@
   "consumidas": {
    "super": 1787245801767
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:55",
+     "jogo": "Países Baixos x Tunísia",
+     "odd": 2.2
+    },
+    {
+     "h": "18:58",
+     "jogo": "Croácia x Arábia Saudita",
+     "odd": 2
+    },
+    {
+     "h": "19:01",
+     "jogo": "Argentina x República Tcheca",
+     "odd": 2.02
+    }
+   ],
+   "gatilho": "seq GRRGG",
+   "alvo": {
+    "h": "18:55",
+    "jogo": "Países Baixos x Tunísia",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1787248625762
+   },
+   "iniciadoEm": 1787248625762
+  },
   "cooldown": {
    "euro": 1787244730560,
    "super": 1787245801767,
@@ -7734,9 +7764,9 @@
    "2026-08-20": -7.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.87",
-   "n": 8,
+   "tipo": "seq",
+   "chave": "GRRGG",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
