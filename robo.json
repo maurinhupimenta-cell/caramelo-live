@@ -359,8 +359,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "02:00",
@@ -380,13 +380,21 @@
    ],
    "gatilho": "odd 4",
    "alvo": {
-    "h": "02:00",
-    "jogo": "Southampton x Norwich",
-    "odd": 4.75,
-    "unidades": 1,
-    "desde": 1787187067071
+    "h": "02:03",
+    "jogo": "Liverpool x Everton",
+    "odd": 4,
+    "unidades": 2,
+    "desde": 1787187808669
    },
-   "iniciadoEm": 1787187067071
+   "iniciadoEm": 1787187067071,
+   "tiros": [
+    {
+     "h": "02:00",
+     "jogo": "Southampton x Norwich",
+     "odd": 4.75,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786370517941,
@@ -421,7 +429,7 @@
    "tipo": "odd",
    "chave": "4",
    "n": 9,
-   "start": 1
+   "start": 2
   },
   "_obs": {
    "euro": {
