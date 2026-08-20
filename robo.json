@@ -413,12 +413,18 @@
  },
  "o25": {
   "saldo": -168.4,
-  "ciclos": 1313,
+  "ciclos": 1314,
   "greens": 821,
   "redsCiclo": 204,
   "aborts": 0,
-  "descartes": 288,
+  "descartes": 289,
   "historico": [
+   {
+    "quando": "2026-08-20T04:37:27.261Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho odd 2.25) — liga REARMADA"
+   },
    {
     "quando": "2026-08-20T04:25:47.667Z",
     "resultado": "GREEN",
@@ -4012,12 +4018,6 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: seq RRGG"
-   },
-   {
-    "quando": "2026-07-31T04:28:32.491Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "super · La Boca x Lima @2.25 (tiro 1) · gatilho: time Belo Horizonte"
    }
   ],
   "consumidas": {
@@ -7772,7 +7772,7 @@
    "tipo": "time",
    "chave": "Guayaquil",
    "n": 9,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
