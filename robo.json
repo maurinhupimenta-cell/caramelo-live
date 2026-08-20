@@ -4021,10 +4021,39 @@
    }
   ],
   "consumidas": {
-   "premier": 1787249673168,
    "copa": 1787250309666
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:15",
+     "jogo": "West Ham x Burnley",
+     "odd": 2.4
+    },
+    {
+     "h": "20:18",
+     "jogo": "Liverpool x Newcastle",
+     "odd": 2.07
+    },
+    {
+     "h": "20:21",
+     "jogo": "West Ham x Norwich",
+     "odd": 2.45
+    }
+   ],
+   "gatilho": "odd 2.07",
+   "alvo": {
+    "h": "20:15",
+    "jogo": "West Ham x Burnley",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1787253302467
+   },
+   "iniciadoEm": 1787253302467
+  },
   "cooldown": {
    "copa": 1787250309666,
    "premier": 1787249673168,
@@ -4070,9 +4099,9 @@
    "2026-08-20": 18.5
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Equador",
-   "n": 11,
+   "tipo": "odd",
+   "chave": "2.07",
+   "n": 27,
    "start": 1
   },
   "_obs": {}
