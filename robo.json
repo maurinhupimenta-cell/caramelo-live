@@ -4108,13 +4108,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -146.9,
-  "ciclos": 1341,
-  "greens": 912,
+  "saldo": -146,
+  "ciclos": 1342,
+  "greens": 913,
   "redsCiclo": 152,
   "aborts": 0,
   "descartes": 277,
   "historico": [
+   {
+    "quando": "2026-08-20T04:45:51.966Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Avellaneda x Guayaquil @1.93 (tiro 2) · gatilho: time Guayaquil"
+   },
    {
     "quando": "2026-08-20T04:17:48.269Z",
     "resultado": "RED_CICLO",
@@ -7708,59 +7714,16 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "super · Medellin x Quito @2.05 (tiro 2) · gatilho: seq RRGGR"
-   },
-   {
-    "quando": "2026-07-30T18:34:46.990Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "copa · Equador x Arábia Saudita @1.87 (tiro 2) · gatilho: time Equador"
    }
   ],
   "consumidas": {
-   "euro": 1787199468161
+   "euro": 1787199468161,
+   "super": 1787201151771
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "05:40",
-     "jogo": "Buenos Aires x La Plata",
-     "odd": 2.02
-    },
-    {
-     "h": "05:43",
-     "jogo": "Avellaneda x Guayaquil",
-     "odd": 1.93
-    },
-    {
-     "h": "05:46",
-     "jogo": "Santos x Quito",
-     "odd": 2.07
-    }
-   ],
-   "gatilho": "time Guayaquil",
-   "alvo": {
-    "h": "05:43",
-    "jogo": "Avellaneda x Guayaquil",
-    "odd": 1.93,
-    "unidades": 2,
-    "desde": 1787201034666
-   },
-   "iniciadoEm": 1787200359567,
-   "tiros": [
-    {
-     "h": "05:40",
-     "jogo": "Buenos Aires x La Plata",
-     "odd": 2.02,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787199468161,
-   "super": 1787191470865,
+   "super": 1787201151771,
    "premier": 1787190638563,
    "copa": 1787188111470
   },
@@ -7799,13 +7762,13 @@
    "2026-08-17": -2.9,
    "2026-08-18": 7.5,
    "2026-08-19": 7.5,
-   "2026-08-20": -7
+   "2026-08-20": -6.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRR",
+   "tipo": "time",
+   "chave": "Guayaquil",
    "n": 9,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  }
