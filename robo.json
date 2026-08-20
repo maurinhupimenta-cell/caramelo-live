@@ -412,13 +412,19 @@
   }
  },
  "o25": {
-  "saldo": -167,
-  "ciclos": 1316,
-  "greens": 822,
+  "saldo": -166,
+  "ciclos": 1317,
+  "greens": 823,
   "redsCiclo": 204,
   "aborts": 0,
   "descartes": 290,
   "historico": [
+   {
+    "quando": "2026-08-20T05:12:21.462Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Wolverhampton x Brighton @1.98 (tiro 2) · gatilho: time Brighton"
+   },
    {
     "quando": "2026-08-20T04:48:59.867Z",
     "resultado": "GREEN",
@@ -4012,60 +4018,17 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: odd 2.3"
-   },
-   {
-    "quando": "2026-07-31T05:47:41.997Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho time Áustria) — liga REARMADA"
    }
   ],
   "consumidas": {
    "euro": 1787199947469,
-   "super": 1787201339672
+   "super": 1787201339672,
+   "premier": 1787202741167
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "06:06",
-     "jogo": "Everton x Islington",
-     "odd": 2.15
-    },
-    {
-     "h": "06:09",
-     "jogo": "Wolverhampton x Brighton",
-     "odd": 1.98
-    },
-    {
-     "h": "06:12",
-     "jogo": "City x Southampton",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "time Brighton",
-   "alvo": {
-    "h": "06:09",
-    "jogo": "Wolverhampton x Brighton",
-    "odd": 1.98,
-    "unidades": 2,
-    "desde": 1787202521570
-   },
-   "iniciadoEm": 1787202287565,
-   "tiros": [
-    {
-     "h": "06:06",
-     "jogo": "Everton x Islington",
-     "odd": 2.15,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787175332564,
-   "premier": 1787198586866,
+   "premier": 1787202741167,
    "euro": 1787199947469,
    "super": 1787201339672
   },
@@ -4105,13 +4068,13 @@
    "2026-08-17": -5.2,
    "2026-08-18": 2.2,
    "2026-08-19": -9.7,
-   "2026-08-20": 4.2
+   "2026-08-20": 5.2
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.3",
    "n": 8,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
