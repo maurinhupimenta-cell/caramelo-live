@@ -7694,7 +7694,37 @@
   "consumidas": {
    "euro": 1787199468161
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:40",
+     "jogo": "Buenos Aires x La Plata",
+     "odd": 2.02
+    },
+    {
+     "h": "05:43",
+     "jogo": "Avellaneda x Guayaquil",
+     "odd": 1.93
+    },
+    {
+     "h": "05:46",
+     "jogo": "Santos x Quito",
+     "odd": 2.07
+    }
+   ],
+   "gatilho": "time Guayaquil",
+   "alvo": {
+    "h": "05:40",
+    "jogo": "Buenos Aires x La Plata",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1787200359567
+   },
+   "iniciadoEm": 1787200359567
+  },
   "cooldown": {
    "euro": 1787199468161,
    "super": 1787191470865,
@@ -7740,9 +7770,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Eslováquia",
+   "chave": "Guayaquil",
    "n": 9,
-   "start": 2
+   "start": 3
   },
   "_obs": {}
  }
