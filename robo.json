@@ -413,12 +413,18 @@
  },
  "o25": {
   "saldo": -166.7,
-  "ciclos": 1329,
+  "ciclos": 1330,
   "greens": 831,
   "redsCiclo": 206,
   "aborts": 0,
-  "descartes": 292,
+  "descartes": 293,
   "historico": [
+   {
+    "quando": "2026-08-20T20:33:04.968Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho odd 2.05) — liga REARMADA"
+   },
    {
     "quando": "2026-08-20T20:18:30.364Z",
     "resultado": "RED_CICLO",
@@ -4012,12 +4018,6 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq RRGG"
-   },
-   {
-    "quando": "2026-07-31T08:46:04.947Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "copa · Qatar x Canadá @2.4 (tiro 2) · gatilho: time Canadá"
    }
   ],
   "consumidas": {
@@ -4074,7 +4074,12 @@
    "n": 15,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1787257984967,
+    "gatilho": "odd 2.05"
+   }
+  }
  },
  "ambas": {
   "saldo": -149.7,
