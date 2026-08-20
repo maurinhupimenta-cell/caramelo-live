@@ -412,13 +412,19 @@
   }
  },
  "o25": {
-  "saldo": -163.9,
-  "ciclos": 1320,
-  "greens": 824,
+  "saldo": -162.4,
+  "ciclos": 1321,
+  "greens": 825,
   "redsCiclo": 204,
   "aborts": 0,
   "descartes": 292,
   "historico": [
+   {
+    "quando": "2026-08-20T16:11:04.256Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "copa · Escócia x Colômbia @2.5 (tiro 1) · gatilho: time Equador"
+   },
    {
     "quando": "2026-08-20T16:01:10.061Z",
     "resultado": "GREEN_OBS",
@@ -4012,20 +4018,15 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho seq RGGG) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-31T06:52:31.052Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho coluna :04) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "premier": 1787240480357
+   "premier": 1787240480357,
+   "copa": 1787242263959
   },
   "ciclo": null,
   "cooldown": {
-   "copa": 1787175332564,
+   "copa": 1787242263959,
    "premier": 1787240480357,
    "euro": 1787199947469,
    "super": 1787201339672
@@ -4066,20 +4067,15 @@
    "2026-08-17": -5.2,
    "2026-08-18": 2.2,
    "2026-08-19": -9.7,
-   "2026-08-20": 7.3
+   "2026-08-20": 8.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.07",
-   "n": 20,
+   "tipo": "time",
+   "chave": "Equador",
+   "n": 9,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1787241670060,
-    "gatilho": "time Equador"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -150.4,
