@@ -4024,7 +4024,37 @@
    "premier": 1787240480357,
    "copa": 1787242263959
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:16",
+     "jogo": "Belo Horizonte x Sao Paulo",
+     "odd": 1.98
+    },
+    {
+     "h": "17:19",
+     "jogo": "Agua Branca x Penarol",
+     "odd": 2.35
+    },
+    {
+     "h": "17:22",
+     "jogo": "Medellin x Itaquera",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "seq RRGGR",
+   "alvo": {
+    "h": "17:16",
+    "jogo": "Belo Horizonte x Sao Paulo",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1787242388259
+   },
+   "iniciadoEm": 1787242388259
+  },
   "cooldown": {
    "copa": 1787242263959,
    "premier": 1787240480357,
@@ -4070,9 +4100,9 @@
    "2026-08-20": 8.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Equador",
-   "n": 9,
+   "tipo": "seq",
+   "chave": "RRGGR",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
