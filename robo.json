@@ -7689,7 +7689,37 @@
   "consumidas": {
    "copa": 1787188111470
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:42",
+     "jogo": "Palace x Watford",
+     "odd": 1.98
+    },
+    {
+     "h": "02:45",
+     "jogo": "Chelsea x West Ham",
+     "odd": 2.15
+    },
+    {
+     "h": "02:48",
+     "jogo": "Norwich x United",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "placar goleada (3+)",
+   "alvo": {
+    "h": "02:42",
+    "jogo": "Palace x Watford",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1787189928967
+   },
+   "iniciadoEm": 1787189928967
+  },
   "cooldown": {
    "euro": 1787030010624,
    "super": 1787029347822,
@@ -7734,7 +7764,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "placar",
-   "chave": "1-0 / 0-1",
+   "chave": "goleada (3+)",
    "n": 8,
    "start": 1
   },
