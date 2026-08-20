@@ -7690,7 +7690,37 @@
    "super": 1787255493760,
    "copa": 1787256395067
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:26",
+     "jogo": "Dinamarca x Alemanha",
+     "odd": 1.98
+    },
+    {
+     "h": "21:29",
+     "jogo": "Escócia x Itália",
+     "odd": 1.98
+    },
+    {
+     "h": "21:32",
+     "jogo": "Espanha x Sérvia",
+     "odd": 2
+    }
+   ],
+   "gatilho": "seq GGRGG",
+   "alvo": {
+    "h": "21:26",
+    "jogo": "Dinamarca x Alemanha",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1787257355259
+   },
+   "iniciadoEm": 1787257355259
+  },
   "cooldown": {
    "euro": 1787252523066,
    "super": 1787255493760,
@@ -7735,9 +7765,9 @@
    "2026-08-20": -9.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Coreia do Sul",
-   "n": 20,
+   "tipo": "seq",
+   "chave": "GGRGG",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
