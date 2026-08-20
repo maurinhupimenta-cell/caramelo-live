@@ -7691,8 +7691,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "02:42",
@@ -7712,13 +7712,21 @@
    ],
    "gatilho": "placar goleada (3+)",
    "alvo": {
-    "h": "02:42",
-    "jogo": "Palace x Watford",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1787189928967
+    "h": "02:45",
+    "jogo": "Chelsea x West Ham",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1787190326468
    },
-   "iniciadoEm": 1787189928967
+   "iniciadoEm": 1787189928967,
+   "tiros": [
+    {
+     "h": "02:42",
+     "jogo": "Palace x Watford",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1787030010624,
@@ -7765,7 +7773,7 @@
   "_gatilhoAtual": {
    "tipo": "placar",
    "chave": "goleada (3+)",
-   "n": 8,
+   "n": 9,
    "start": 1
   },
   "_obs": {}
