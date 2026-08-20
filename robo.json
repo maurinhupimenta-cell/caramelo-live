@@ -4023,8 +4023,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "16:36",
@@ -4044,13 +4044,21 @@
    ],
    "gatilho": "odd 2.55",
    "alvo": {
-    "h": "16:36",
-    "jogo": "Aston x Palace",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1787239622465
+    "h": "16:39",
+    "jogo": "Leeds x Brentford",
+    "odd": 2.55,
+    "unidades": 2,
+    "desde": 1787240326863
    },
-   "iniciadoEm": 1787239622465
+   "iniciadoEm": 1787239622465,
+   "tiros": [
+    {
+     "h": "16:36",
+     "jogo": "Aston x Palace",
+     "odd": 2.3,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1787175332564,
@@ -4098,9 +4106,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "odd",
-   "chave": "2.55",
-   "n": 14,
-   "start": 1
+   "chave": "2.07",
+   "n": 20,
+   "start": 2
   },
   "_obs": {}
  },
@@ -7716,7 +7724,37 @@
   "consumidas": {
    "copa": 1787240151956
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:38",
+     "jogo": "Bélgica x Albânia",
+     "odd": 2.15
+    },
+    {
+     "h": "16:41",
+     "jogo": "Portugal x Sérvia",
+     "odd": 2.1
+    },
+    {
+     "h": "16:44",
+     "jogo": "Polônia x Dinamarca",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "coluna :41",
+   "alvo": {
+    "h": "16:38",
+    "jogo": "Bélgica x Albânia",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1787240154161
+   },
+   "iniciadoEm": 1787240154161
+  },
   "cooldown": {
    "euro": 1787199468161,
    "super": 1787201151771,
@@ -7761,10 +7799,10 @@
    "2026-08-20": -5.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Noruega",
-   "n": 14,
-   "start": 3
+   "tipo": "seq",
+   "chave": "GRGG",
+   "n": 15,
+   "start": 1
   },
   "_obs": {}
  }
