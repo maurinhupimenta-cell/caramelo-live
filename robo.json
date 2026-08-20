@@ -4026,8 +4026,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:45",
@@ -4047,13 +4047,21 @@
    ],
    "gatilho": "odd 2.07",
    "alvo": {
-    "h": "17:45",
-    "jogo": "Liverpool x Wolverhampton",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1787244112068
+    "h": "17:48",
+    "jogo": "West Ham x Southampton",
+    "odd": 2.62,
+    "unidades": 2,
+    "desde": 1787244469472
    },
-   "iniciadoEm": 1787244112068
+   "iniciadoEm": 1787244112068,
+   "tiros": [
+    {
+     "h": "17:45",
+     "jogo": "Liverpool x Wolverhampton",
+     "odd": 2.07,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1787242263959,
@@ -4103,7 +4111,7 @@
    "tipo": "odd",
    "chave": "2.07",
    "n": 23,
-   "start": 1
+   "start": 2
   },
   "_obs": {}
  },
@@ -7717,11 +7725,40 @@
    }
   ],
   "consumidas": {
-   "euro": 1787240866968,
    "super": 1787241659260,
    "copa": 1787244003866
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:44",
+     "jogo": "Áustria x Inglaterra",
+     "odd": 1.9
+    },
+    {
+     "h": "17:47",
+     "jogo": "Croácia x Bélgica",
+     "odd": 1.9
+    },
+    {
+     "h": "17:50",
+     "jogo": "Escócia x República Tcheca",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "coluna :44",
+   "alvo": {
+    "h": "17:44",
+    "jogo": "Áustria x Inglaterra",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1787244469867
+   },
+   "iniciadoEm": 1787244469867
+  },
   "cooldown": {
    "euro": 1787240866968,
    "super": 1787241659260,
@@ -7766,9 +7803,9 @@
    "2026-08-20": -9.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.15",
-   "n": 18,
+   "tipo": "coluna",
+   "chave": ":44",
+   "n": 17,
    "start": 1
   },
   "_obs": {}
