@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -120,
-  "ciclos": 214,
-  "greens": 73,
+  "saldo": -115,
+  "ciclos": 215,
+  "greens": 74,
   "redsCiclo": 88,
   "aborts": 0,
   "descartes": 53,
   "historico": [
+   {
+    "quando": "2026-08-20T01:06:32.362Z",
+    "resultado": "GREEN",
+    "unidades": 5,
+    "detalhe": "premier · Liverpool x Everton @4 (tiro 2) · gatilho: odd 4"
+   },
    {
     "quando": "2026-08-18T05:00:35.727Z",
     "resultado": "GREEN",
@@ -356,49 +362,13 @@
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "02:00",
-     "jogo": "Southampton x Norwich",
-     "odd": 4.75
-    },
-    {
-     "h": "02:03",
-     "jogo": "Liverpool x Everton",
-     "odd": 4
-    },
-    {
-     "h": "02:06",
-     "jogo": "Southampton x Islington",
-     "odd": 4.75
-    }
-   ],
-   "gatilho": "odd 4",
-   "alvo": {
-    "h": "02:03",
-    "jogo": "Liverpool x Everton",
-    "odd": 4,
-    "unidades": 2,
-    "desde": 1787187808669
-   },
-   "iniciadoEm": 1787187067071,
-   "tiros": [
-    {
-     "h": "02:00",
-     "jogo": "Southampton x Norwich",
-     "odd": 4.75,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "premier": 1787187992166
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786370517941,
-   "premier": 1787029235622,
+   "premier": 1787187992166,
    "euro": 1785464913993,
    "super": 1786764145328
   },
@@ -423,13 +393,14 @@
    "2026-08-10": -7,
    "2026-08-14": -7,
    "2026-08-15": -7,
-   "2026-08-18": 13
+   "2026-08-18": 13,
+   "2026-08-19": 5
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "4",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {
    "euro": {
@@ -7716,7 +7687,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:04",
+     "jogo": "Irã x Bósnia e Herzegovina",
+     "odd": 2.07
+    },
+    {
+     "h": "02:07",
+     "jogo": "Costa do Marfim x Bélgica",
+     "odd": 1.93
+    },
+    {
+     "h": "02:10",
+     "jogo": "México x Marrocos",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "placar 1-0 / 0-1",
+   "alvo": {
+    "h": "02:04",
+    "jogo": "Irã x Bósnia e Herzegovina",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1787187813168
+   },
+   "iniciadoEm": 1787187813168
+  },
   "cooldown": {
    "euro": 1787030010624,
    "super": 1787029347822,
@@ -7760,9 +7761,9 @@
    "2026-08-19": 2.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRGRG",
-   "n": 13,
+   "tipo": "placar",
+   "chave": "1-0 / 0-1",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
