@@ -4023,7 +4023,45 @@
   "consumidas": {
    "euro": 1787325092679
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "16:10",
+     "jogo": "Noruega x Gana",
+     "odd": 2.25
+    },
+    {
+     "h": "16:13",
+     "jogo": "EUA x Qatar",
+     "odd": 2.25
+    },
+    {
+     "h": "16:16",
+     "jogo": "Japão x Inglaterra",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "seq RGRRG",
+   "alvo": {
+    "h": "16:13",
+    "jogo": "EUA x Qatar",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1787325212372
+   },
+   "iniciadoEm": 1787325094677,
+   "tiros": [
+    {
+     "h": "16:10",
+     "jogo": "Noruega x Gana",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1787250309666,
    "premier": 1787258693861,
@@ -4071,8 +4109,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GGGG",
-   "n": 14,
+   "chave": "RGRRG",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
@@ -7762,10 +7800,10 @@
    "2026-08-20": -7.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.85",
-   "n": 18,
-   "start": 3
+   "tipo": "seq",
+   "chave": "GRRG",
+   "n": 13,
+   "start": 1
   },
   "_obs": {}
  }
