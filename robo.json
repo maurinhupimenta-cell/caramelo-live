@@ -412,13 +412,19 @@
   }
  },
  "o25": {
-  "saldo": -165.4,
-  "ciclos": 1333,
-  "greens": 832,
+  "saldo": -164,
+  "ciclos": 1334,
+  "greens": 833,
   "redsCiclo": 206,
   "aborts": 0,
   "descartes": 295,
   "historico": [
+   {
+    "quando": "2026-08-21T15:11:32.879Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "euro · Áustria x Eslováquia @2.35 (tiro 1) · gatilho: seq GGGG"
+   },
    {
     "quando": "2026-08-21T15:10:38.678Z",
     "resultado": "GREEN_OBS",
@@ -4012,50 +4018,16 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "copa · Canadá x México @2.35 (tiro 1) · gatilho: time Canadá"
-   },
-   {
-    "quando": "2026-07-31T09:55:46.742Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "euro · Sérvia x Portugal @2.4 (tiro 2) · gatilho: coluna :53"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:08",
-     "jogo": "Áustria x Eslováquia",
-     "odd": 2.35
-    },
-    {
-     "h": "16:11",
-     "jogo": "Dinamarca x Inglaterra",
-     "odd": 2.2
-    },
-    {
-     "h": "16:14",
-     "jogo": "Bélgica x Geórgia",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "seq GGGG",
-   "alvo": {
-    "h": "16:08",
-    "jogo": "Áustria x Eslováquia",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1787324716480
-   },
-   "iniciadoEm": 1787324716480
+  "consumidas": {
+   "euro": 1787325092679
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787250309666,
    "premier": 1787258693861,
-   "euro": 1787199947469,
+   "euro": 1787325092679,
    "super": 1787257110160
   },
   "dias": {
@@ -4095,7 +4067,7 @@
    "2026-08-18": 2.2,
    "2026-08-19": -9.7,
    "2026-08-20": 5.8,
-   "2026-08-21": 0
+   "2026-08-21": 1.4
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -4103,12 +4075,7 @@
    "n": 14,
    "start": 1
   },
-  "_obs": {
-   "copa": {
-    "desde": 1787325038677,
-    "gatilho": "seq RGRRG"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -147.7,
