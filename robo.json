@@ -4114,13 +4114,19 @@
   }
  },
  "ambas": {
-  "saldo": -147.7,
-  "ciclos": 1361,
-  "greens": 925,
+  "saldo": -146.8,
+  "ciclos": 1362,
+  "greens": 926,
   "redsCiclo": 154,
   "aborts": 0,
   "descartes": 282,
   "historico": [
+   {
+    "quando": "2026-08-21T15:27:39.671Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Brentford x Liverpool @1.98 (tiro 3) · gatilho: odd 1.85"
+   },
    {
     "quando": "2026-08-20T20:59:33.066Z",
     "resultado": "GREEN",
@@ -7714,64 +7720,46 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "euro · República Tcheca x Hungria @2.2 (tiro 1) · gatilho: odd 1.93"
-   },
-   {
-    "quando": "2026-07-31T08:38:07.343Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho odd 1.93) — liga REARMADA"
    }
   ],
-  "consumidas": {},
+  "consumidas": {
+   "premier": 1787326059471
+  },
   "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "16:18",
-     "jogo": "Brentford x Newcastle",
-     "odd": 1.87
+     "h": "16:31",
+     "jogo": "Portugal x Paraguai",
+     "odd": 2
     },
     {
-     "h": "16:21",
-     "jogo": "Wolverhampton x United",
-     "odd": 1.85
+     "h": "16:34",
+     "jogo": "Uzbequistão x Turquia",
+     "odd": 2
     },
     {
-     "h": "16:24",
-     "jogo": "Brentford x Liverpool",
-     "odd": 1.98
+     "h": "16:37",
+     "jogo": "Brasil x Senegal",
+     "odd": 2.1
     }
    ],
-   "gatilho": "odd 1.85",
+   "gatilho": "coluna :34",
    "alvo": {
-    "h": "16:24",
-    "jogo": "Brentford x Liverpool",
-    "odd": 1.98,
-    "unidades": 4,
-    "desde": 1787325830971
+    "h": "16:31",
+    "jogo": "Portugal x Paraguai",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1787326115279
    },
-   "iniciadoEm": 1787324940977,
-   "tiros": [
-    {
-     "h": "16:18",
-     "jogo": "Brentford x Newcastle",
-     "odd": 1.87,
-     "unidades": 1
-    },
-    {
-     "h": "16:21",
-     "jogo": "Wolverhampton x United",
-     "odd": 1.85,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1787326115279
   },
   "cooldown": {
    "euro": 1787258194661,
    "super": 1787259572956,
-   "premier": 1787190638563,
+   "premier": 1787326059471,
    "copa": 1787256395067
   },
   "dias": {
@@ -7809,7 +7797,8 @@
    "2026-08-17": -2.9,
    "2026-08-18": 7.5,
    "2026-08-19": 7.5,
-   "2026-08-20": -7.8
+   "2026-08-20": -7.8,
+   "2026-08-21": 0.9
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
