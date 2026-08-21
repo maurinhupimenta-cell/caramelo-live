@@ -413,12 +413,18 @@
  },
  "o25": {
   "saldo": -171,
-  "ciclos": 1335,
+  "ciclos": 1336,
   "greens": 833,
   "redsCiclo": 207,
   "aborts": 0,
-  "descartes": 295,
+  "descartes": 296,
   "historico": [
+   {
+    "quando": "2026-08-21T15:31:31.078Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho seq RRRRR) — liga REARMADA"
+   },
    {
     "quando": "2026-08-21T15:19:32.973Z",
     "resultado": "RED_CICLO",
@@ -4012,12 +4018,6 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "premier · City x Aston @2.2 (tiro 2) · gatilho: seq RRGG"
-   },
-   {
-    "quando": "2026-07-31T10:06:44.748Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho seq RRGG) — liga REARMADA"
    }
   ],
   "consumidas": {
@@ -7801,9 +7801,9 @@
    "2026-08-21": 0.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":34",
-   "n": 16,
+   "tipo": "odd",
+   "chave": "2.07",
+   "n": 19,
    "start": 3
   },
   "_obs": {}
