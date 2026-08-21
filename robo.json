@@ -413,12 +413,18 @@
  },
  "o25": {
   "saldo": -167.9,
-  "ciclos": 1338,
+  "ciclos": 1339,
   "greens": 835,
   "redsCiclo": 207,
   "aborts": 0,
-  "descartes": 296,
+  "descartes": 297,
   "historico": [
+   {
+    "quando": "2026-08-21T16:23:20.681Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho time Bélgica) — liga REARMADA"
+   },
    {
     "quando": "2026-08-21T15:42:32.776Z",
     "resultado": "GREEN",
@@ -4012,17 +4018,9 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq RRRRR"
-   },
-   {
-    "quando": "2026-07-31T11:19:04.842Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "copa · Japão x Costa do Marfim @2.25 (tiro 2) · gatilho: time Canadá"
    }
   ],
   "consumidas": {
-   "euro": 1787325092679,
-   "copa": 1787325572678,
    "premier": 1787326372677,
    "super": 1787326952471
   },
@@ -4081,13 +4079,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -145.8,
-  "ciclos": 1363,
-  "greens": 927,
+  "saldo": -144.7,
+  "ciclos": 1364,
+  "greens": 928,
   "redsCiclo": 154,
   "aborts": 0,
   "descartes": 282,
   "historico": [
+   {
+    "quando": "2026-08-21T15:42:33.377Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "super · Belo Horizonte x Penarol @2.07 (tiro 1) · gatilho: odd 2.07"
+   },
    {
     "quando": "2026-08-21T15:38:32.778Z",
     "resultado": "GREEN",
@@ -7681,52 +7685,17 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "euro · Albânia x Suíça @2.1 (tiro 1) · gatilho: odd 2"
-   },
-   {
-    "quando": "2026-07-31T09:07:26.137Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "super · Belo Horizonte x Porto Alegre @2.15 (tiro 1) · gatilho: coluna :07"
    }
   ],
   "consumidas": {
    "premier": 1787326059471,
-   "copa": 1787326712583
+   "copa": 1787326712583,
+   "super": 1787326953172
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:37",
-     "jogo": "Belo Horizonte x Penarol",
-     "odd": 2.07
-    },
-    {
-     "h": "16:40",
-     "jogo": "La Boca x Buenos Aires",
-     "odd": 1.93
-    },
-    {
-     "h": "16:43",
-     "jogo": "Medellin x Belo Horizonte",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "odd 2.07",
-   "alvo": {
-    "h": "16:37",
-    "jogo": "Belo Horizonte x Penarol",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1787326715080
-   },
-   "iniciadoEm": 1787326715080
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787258194661,
-   "super": 1787259572956,
+   "super": 1787326953172,
    "premier": 1787326059471,
    "copa": 1787326712583
   },
@@ -7766,12 +7735,12 @@
    "2026-08-18": 7.5,
    "2026-08-19": 7.5,
    "2026-08-20": -7.8,
-   "2026-08-21": 1.9
+   "2026-08-21": 3
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.07",
-   "n": 19,
+   "tipo": "coluna",
+   "chave": ":40",
+   "n": 16,
    "start": 1
   },
   "_obs": {}
