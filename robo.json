@@ -412,13 +412,19 @@
   }
  },
  "o25": {
-  "saldo": -171,
-  "ciclos": 1336,
-  "greens": 833,
+  "saldo": -169.2,
+  "ciclos": 1337,
+  "greens": 834,
   "redsCiclo": 207,
   "aborts": 0,
   "descartes": 296,
   "historico": [
+   {
+    "quando": "2026-08-21T15:32:52.879Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "premier · Tottenham x West Ham @2.8 (tiro 1) · gatilho: seq RGRRG"
+   },
    {
     "quando": "2026-08-21T15:31:31.078Z",
     "resultado": "GREEN_OBS",
@@ -4012,52 +4018,47 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "euro · Romênia x Escócia @2.15 (tiro 2) · gatilho: coluna :11"
-   },
-   {
-    "quando": "2026-07-31T10:14:59.241Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "premier · City x Aston @2.2 (tiro 2) · gatilho: seq RRGG"
    }
   ],
   "consumidas": {
    "euro": 1787325092679,
-   "copa": 1787325572678
+   "copa": 1787325572678,
+   "premier": 1787326372677
   },
   "ciclo": {
-   "liga": "premier",
+   "liga": "super",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "16:30",
-     "jogo": "Tottenham x West Ham",
-     "odd": 2.8
+     "h": "16:37",
+     "jogo": "Belo Horizonte x Penarol",
+     "odd": 2.3
     },
     {
-     "h": "16:33",
-     "jogo": "Brentford x Chelsea",
-     "odd": 2.25
+     "h": "16:40",
+     "jogo": "La Boca x Buenos Aires",
+     "odd": 2.2
     },
     {
-     "h": "16:36",
-     "jogo": "Burnley x Aston",
-     "odd": 2.25
+     "h": "16:43",
+     "jogo": "Medellin x Belo Horizonte",
+     "odd": 2.2
     }
    ],
-   "gatilho": "seq RGRRG",
+   "gatilho": "coluna :40",
    "alvo": {
-    "h": "16:30",
-    "jogo": "Tottenham x West Ham",
-    "odd": 2.8,
+    "h": "16:37",
+    "jogo": "Belo Horizonte x Penarol",
+    "odd": 2.3,
     "unidades": 1,
-    "desde": 1787326059081
+    "desde": 1787326387180
    },
-   "iniciadoEm": 1787326059081
+   "iniciadoEm": 1787326387180
   },
   "cooldown": {
    "copa": 1787325572678,
-   "premier": 1787258693861,
+   "premier": 1787326372677,
    "euro": 1787325092679,
    "super": 1787257110160
   },
@@ -4098,20 +4099,15 @@
    "2026-08-18": 2.2,
    "2026-08-19": -9.7,
    "2026-08-20": 5.8,
-   "2026-08-21": -5.6
+   "2026-08-21": -3.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RGRRG",
-   "n": 11,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":40",
+   "n": 16,
+   "start": 3
   },
-  "_obs": {
-   "super": {
-    "desde": 1787325540281,
-    "gatilho": "seq RRRRR"
-   }
-  }
+  "_obs": {}
  },
  "ambas": {
   "saldo": -146.8,
@@ -7804,7 +7800,7 @@
    "tipo": "odd",
    "chave": "2.07",
    "n": 19,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
