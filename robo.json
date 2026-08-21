@@ -4105,18 +4105,24 @@
    "tipo": "coluna",
    "chave": ":40",
    "n": 16,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -146.8,
-  "ciclos": 1362,
-  "greens": 926,
+  "saldo": -145.8,
+  "ciclos": 1363,
+  "greens": 927,
   "redsCiclo": 154,
   "aborts": 0,
   "descartes": 282,
   "historico": [
+   {
+    "quando": "2026-08-21T15:38:32.778Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Uzbequistão x Turquia @2 (tiro 2) · gatilho: coluna :34"
+   },
    {
     "quando": "2026-08-21T15:27:39.671Z",
     "resultado": "GREEN",
@@ -7710,61 +7716,48 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "super · Belo Horizonte x Porto Alegre @2.15 (tiro 1) · gatilho: coluna :07"
-   },
-   {
-    "quando": "2026-07-31T08:50:05.139Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "euro · República Tcheca x Hungria @2.2 (tiro 1) · gatilho: odd 1.93"
    }
   ],
   "consumidas": {
-   "premier": 1787326059471
+   "premier": 1787326059471,
+   "copa": 1787326712583
   },
   "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "16:31",
-     "jogo": "Portugal x Paraguai",
-     "odd": 2
-    },
-    {
-     "h": "16:34",
-     "jogo": "Uzbequistão x Turquia",
-     "odd": 2
-    },
-    {
      "h": "16:37",
-     "jogo": "Brasil x Senegal",
-     "odd": 2.1
+     "jogo": "Belo Horizonte x Penarol",
+     "odd": 2.07
+    },
+    {
+     "h": "16:40",
+     "jogo": "La Boca x Buenos Aires",
+     "odd": 1.93
+    },
+    {
+     "h": "16:43",
+     "jogo": "Medellin x Belo Horizonte",
+     "odd": 1.95
     }
    ],
-   "gatilho": "coluna :34",
+   "gatilho": "odd 2.07",
    "alvo": {
-    "h": "16:34",
-    "jogo": "Uzbequistão x Turquia",
-    "odd": 2,
-    "unidades": 2,
-    "desde": 1787326475775
+    "h": "16:37",
+    "jogo": "Belo Horizonte x Penarol",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1787326715080
    },
-   "iniciadoEm": 1787326115279,
-   "tiros": [
-    {
-     "h": "16:31",
-     "jogo": "Portugal x Paraguai",
-     "odd": 2,
-     "unidades": 1
-    }
-   ]
+   "iniciadoEm": 1787326715080
   },
   "cooldown": {
    "euro": 1787258194661,
    "super": 1787259572956,
    "premier": 1787326059471,
-   "copa": 1787256395067
+   "copa": 1787326712583
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7802,13 +7795,13 @@
    "2026-08-18": 7.5,
    "2026-08-19": 7.5,
    "2026-08-20": -7.8,
-   "2026-08-21": 0.9
+   "2026-08-21": 1.9
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "2.07",
    "n": 19,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
