@@ -413,12 +413,18 @@
  },
  "o25": {
   "saldo": -165.4,
-  "ciclos": 1331,
+  "ciclos": 1332,
   "greens": 832,
   "redsCiclo": 206,
   "aborts": 0,
-  "descartes": 293,
+  "descartes": 294,
   "historico": [
+   {
+    "quando": "2026-08-21T15:05:14.119Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-08-20T20:44:54.065Z",
     "resultado": "GREEN",
@@ -4012,47 +4018,41 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "super · green OBSERVADO no papel (gatilho seq RGGG) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-31T09:41:06.539Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "euro · green OBSERVADO no papel (gatilho coluna :53) — liga REARMADA"
    }
   ],
   "consumidas": {
    "premier": 1787258693861
   },
   "ciclo": {
-   "liga": "copa",
+   "liga": "euro",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "22:25",
-     "jogo": "Suécia x Panamá",
-     "odd": 2.7
+     "h": "16:08",
+     "jogo": "Áustria x Eslováquia",
+     "odd": 2.35
     },
     {
-     "h": "22:28",
-     "jogo": "Equador x Haiti",
-     "odd": 2.07
-    },
-    {
-     "h": "22:31",
-     "jogo": "Costa do Marfim x Uzbequistão",
+     "h": "16:11",
+     "jogo": "Dinamarca x Inglaterra",
      "odd": 2.2
+    },
+    {
+     "h": "16:14",
+     "jogo": "Bélgica x Geórgia",
+     "odd": 2.3
     }
    ],
-   "gatilho": "time Equador",
+   "gatilho": "seq GGGG",
    "alvo": {
-    "h": "22:25",
-    "jogo": "Suécia x Panamá",
-    "odd": 2.7,
+    "h": "16:08",
+    "jogo": "Áustria x Eslováquia",
+    "odd": 2.35,
     "unidades": 1,
-    "desde": 1787260728568
+    "desde": 1787324716480
    },
-   "iniciadoEm": 1787260728568
+   "iniciadoEm": 1787324716480
   },
   "cooldown": {
    "copa": 1787250309666,
@@ -4096,12 +4096,13 @@
    "2026-08-17": -5.2,
    "2026-08-18": 2.2,
    "2026-08-19": -9.7,
-   "2026-08-20": 5.8
+   "2026-08-20": 5.8,
+   "2026-08-21": 0
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Equador",
-   "n": 13,
+   "tipo": "seq",
+   "chave": "GGGG",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
