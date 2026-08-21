@@ -4024,7 +4024,37 @@
    "euro": 1787325092679,
    "copa": 1787325572678
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:30",
+     "jogo": "Tottenham x West Ham",
+     "odd": 2.8
+    },
+    {
+     "h": "16:33",
+     "jogo": "Brentford x Chelsea",
+     "odd": 2.25
+    },
+    {
+     "h": "16:36",
+     "jogo": "Burnley x Aston",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "seq RGRRG",
+   "alvo": {
+    "h": "16:30",
+    "jogo": "Tottenham x West Ham",
+    "odd": 2.8,
+    "unidades": 1,
+    "desde": 1787326059081
+   },
+   "iniciadoEm": 1787326059081
+  },
   "cooldown": {
    "copa": 1787325572678,
    "premier": 1787258693861,
@@ -4072,8 +4102,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RRRGR",
-   "n": 12,
+   "chave": "RGRRG",
+   "n": 11,
    "start": 1
   },
   "_obs": {
@@ -7782,10 +7812,10 @@
    "2026-08-20": -7.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "1.85",
-   "n": 18,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":34",
+   "n": 16,
+   "start": 3
   },
   "_obs": {}
  }
