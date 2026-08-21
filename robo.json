@@ -412,13 +412,19 @@
   }
  },
  "o25": {
-  "saldo": -164,
-  "ciclos": 1334,
+  "saldo": -171,
+  "ciclos": 1335,
   "greens": 833,
-  "redsCiclo": 206,
+  "redsCiclo": 207,
   "aborts": 0,
   "descartes": 295,
   "historico": [
+   {
+    "quando": "2026-08-21T15:19:32.973Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: seq RGRRG"
+   },
    {
     "quando": "2026-08-21T15:11:32.879Z",
     "resultado": "GREEN",
@@ -4012,64 +4018,15 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho seq RRGG) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-31T09:57:47.237Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "copa · Canadá x México @2.35 (tiro 1) · gatilho: time Canadá"
    }
   ],
   "consumidas": {
-   "euro": 1787325092679
+   "euro": 1787325092679,
+   "copa": 1787325572678
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "16:10",
-     "jogo": "Noruega x Gana",
-     "odd": 2.25
-    },
-    {
-     "h": "16:13",
-     "jogo": "EUA x Qatar",
-     "odd": 2.25
-    },
-    {
-     "h": "16:16",
-     "jogo": "Japão x Inglaterra",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "seq RGRRG",
-   "alvo": {
-    "h": "16:16",
-    "jogo": "Japão x Inglaterra",
-    "odd": 2.35,
-    "unidades": 4,
-    "desde": 1787325395077
-   },
-   "iniciadoEm": 1787325094677,
-   "tiros": [
-    {
-     "h": "16:10",
-     "jogo": "Noruega x Gana",
-     "odd": 2.25,
-     "unidades": 1
-    },
-    {
-     "h": "16:13",
-     "jogo": "EUA x Qatar",
-     "odd": 2.25,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1787250309666,
+   "copa": 1787325572678,
    "premier": 1787258693861,
    "euro": 1787325092679,
    "super": 1787257110160
@@ -4111,7 +4068,7 @@
    "2026-08-18": 2.2,
    "2026-08-19": -9.7,
    "2026-08-20": 5.8,
-   "2026-08-21": 1.4
+   "2026-08-21": -5.6
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -4119,7 +4076,12 @@
    "n": 12,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1787325540281,
+    "gatilho": "seq RRRRR"
+   }
+  }
  },
  "ambas": {
   "saldo": -147.7,
@@ -7806,9 +7768,9 @@
    "2026-08-20": -7.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRGR",
-   "n": 8,
+   "tipo": "odd",
+   "chave": "1.85",
+   "n": 18,
    "start": 1
   },
   "_obs": {}
