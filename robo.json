@@ -413,12 +413,18 @@
  },
  "o25": {
   "saldo": -165.4,
-  "ciclos": 1332,
+  "ciclos": 1333,
   "greens": 832,
   "redsCiclo": 206,
   "aborts": 0,
-  "descartes": 294,
+  "descartes": 295,
   "historico": [
+   {
+    "quando": "2026-08-21T15:10:38.678Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho seq RGRRG) — liga REARMADA"
+   },
    {
     "quando": "2026-08-21T15:05:14.119Z",
     "resultado": "DESCARTADO",
@@ -4012,12 +4018,6 @@
     "resultado": "GREEN",
     "unidades": 1.8,
     "detalhe": "euro · Sérvia x Portugal @2.4 (tiro 2) · gatilho: coluna :53"
-   },
-   {
-    "quando": "2026-07-31T09:49:08.636Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "super · green OBSERVADO no papel (gatilho seq RGGG) — liga REARMADA"
    }
   ],
   "consumidas": {},
@@ -4103,7 +4103,12 @@
    "n": 14,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1787325038677,
+    "gatilho": "seq RGRRG"
+   }
+  }
  },
  "ambas": {
   "saldo": -147.7,
