@@ -4023,7 +4023,37 @@
   "consumidas": {
    "premier": 1787258693861
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:25",
+     "jogo": "Suécia x Panamá",
+     "odd": 2.7
+    },
+    {
+     "h": "22:28",
+     "jogo": "Equador x Haiti",
+     "odd": 2.07
+    },
+    {
+     "h": "22:31",
+     "jogo": "Costa do Marfim x Uzbequistão",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time Equador",
+   "alvo": {
+    "h": "22:25",
+    "jogo": "Suécia x Panamá",
+    "odd": 2.7,
+    "unidades": 1,
+    "desde": 1787260728568
+   },
+   "iniciadoEm": 1787260728568
+  },
   "cooldown": {
    "copa": 1787250309666,
    "premier": 1787258693861,
@@ -4069,9 +4099,9 @@
    "2026-08-20": 5.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.55",
-   "n": 16,
+   "tipo": "time",
+   "chave": "Equador",
+   "n": 13,
    "start": 1
   },
   "_obs": {}
@@ -7686,7 +7716,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1787258194661,
    "super": 1787259572956
   },
   "ciclo": null,
