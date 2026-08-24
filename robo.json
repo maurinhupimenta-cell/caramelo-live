@@ -4026,8 +4026,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "16:36",
@@ -4047,13 +4047,21 @@
    ],
    "gatilho": "seq RRGGR",
    "alvo": {
-    "h": "16:36",
-    "jogo": "Liverpool x Leicester",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1787585620672
+    "h": "16:39",
+    "jogo": "Wolverhampton x Islington",
+    "odd": 2.07,
+    "unidades": 2,
+    "desde": 1787585924269
    },
-   "iniciadoEm": 1787585620672
+   "iniciadoEm": 1787585620672,
+   "tiros": [
+    {
+     "h": "16:36",
+     "jogo": "Liverpool x Leicester",
+     "odd": 2.25,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1787585438178,
@@ -7812,8 +7820,8 @@
    "2026-08-24": 1
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.2",
+   "tipo": "seq",
+   "chave": "RRRRR",
    "n": 12,
    "start": 1
   },
