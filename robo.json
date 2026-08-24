@@ -416,13 +416,19 @@
   }
  },
  "o25": {
-  "saldo": -160.1,
-  "ciclos": 1352,
-  "greens": 844,
+  "saldo": -158.8,
+  "ciclos": 1353,
+  "greens": 845,
   "redsCiclo": 208,
   "aborts": 0,
   "descartes": 300,
   "historico": [
+   {
+    "quando": "2026-08-24T19:11:56.771Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "copa · Argentina x Austrália @2.15 (tiro 2) · gatilho: time Austrália"
+   },
    {
     "quando": "2026-08-24T18:47:36.968Z",
     "resultado": "GREEN",
@@ -4016,59 +4022,16 @@
     "resultado": "GREEN",
     "unidades": 2.1,
     "detalhe": "euro · Eslovênia x Escócia @2.55 (tiro 2) · gatilho: coluna :11"
-   },
-   {
-    "quando": "2026-07-31T16:05:49.215Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: odd 2.35"
    }
   ],
   "consumidas": {
    "super": 1787595755474,
-   "euro": 1787597256770
+   "euro": 1787597256770,
+   "copa": 1787598716572
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "20:04",
-     "jogo": "Noruega x Alemanha",
-     "odd": 2.07
-    },
-    {
-     "h": "20:07",
-     "jogo": "Argentina x Austrália",
-     "odd": 2.15
-    },
-    {
-     "h": "20:10",
-     "jogo": "Arábia Saudita x Cabo Verde",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "time Austrália",
-   "alvo": {
-    "h": "20:07",
-    "jogo": "Argentina x Austrália",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1787598453569
-   },
-   "iniciadoEm": 1787597973474,
-   "tiros": [
-    {
-     "h": "20:04",
-     "jogo": "Noruega x Alemanha",
-     "odd": 2.07,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1787593832975,
+   "copa": 1787598716572,
    "premier": 1787586286576,
    "euro": 1787597256770,
    "super": 1787595755474
@@ -4111,13 +4074,13 @@
    "2026-08-19": -9.7,
    "2026-08-20": 5.8,
    "2026-08-21": -2.5,
-   "2026-08-24": 7.8
+   "2026-08-24": 9.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Austrália",
-   "n": 16,
-   "start": 1
+   "chave": "Nova Zelândia",
+   "n": 14,
+   "start": 2
   },
   "_obs": {}
  },
