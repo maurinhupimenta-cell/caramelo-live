@@ -416,13 +416,19 @@
   }
  },
  "o25": {
-  "saldo": -169.6,
-  "ciclos": 1343,
-  "greens": 838,
+  "saldo": -168.3,
+  "ciclos": 1344,
+  "greens": 839,
   "redsCiclo": 208,
   "aborts": 0,
   "descartes": 297,
   "historico": [
+   {
+    "quando": "2026-08-24T16:38:33.873Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "copa · República Tcheca x Bósnia e Herzegovina @2.25 (tiro 1) · gatilho: coluna :28"
+   },
    {
     "quando": "2026-08-24T16:19:32.071Z",
     "resultado": "GREEN",
@@ -4016,51 +4022,16 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq GGGG"
-   },
-   {
-    "quando": "2026-07-31T12:30:24.845Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho seq GGGG) — liga REARMADA"
    }
   ],
   "consumidas": {
    "premier": 1787586286576,
-   "super": 1787588371869
+   "super": 1787588371869,
+   "copa": 1787589513668
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:28",
-     "jogo": "República Tcheca x Bósnia e Herzegovina",
-     "odd": 2.25
-    },
-    {
-     "h": "17:31",
-     "jogo": "Senegal x Uzbequistão",
-     "odd": 2.5
-    },
-    {
-     "h": "17:34",
-     "jogo": "Canadá x EUA",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "coluna :28",
-   "alvo": {
-    "h": "17:28",
-    "jogo": "República Tcheca x Bósnia e Herzegovina",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1787589038975
-   },
-   "iniciadoEm": 1787589038975
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1787585438178,
+   "copa": 1787589513668,
    "premier": 1787586286576,
    "euro": 1787585511167,
    "super": 1787588371869
@@ -4103,7 +4074,7 @@
    "2026-08-19": -9.7,
    "2026-08-20": 5.8,
    "2026-08-21": -2.5,
-   "2026-08-24": -1.7
+   "2026-08-24": -0.4
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
@@ -7804,10 +7775,10 @@
    "2026-08-24": 3.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Brentford",
-   "n": 29,
-   "start": 3
+   "tipo": "seq",
+   "chave": "GGRR",
+   "n": 19,
+   "start": 1
   },
   "_obs": {}
  }
