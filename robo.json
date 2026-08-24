@@ -4025,10 +4025,47 @@
    }
   ],
   "consumidas": {
-   "super": 1787591974275,
    "copa": 1787593832975
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "19:16",
+     "jogo": "Santiago x Buenos Aires",
+     "odd": 1.95
+    },
+    {
+     "h": "19:19",
+     "jogo": "Asuncion x Penarol",
+     "odd": 2.45
+    },
+    {
+     "h": "19:22",
+     "jogo": "Rio de Janeiro x Medellin",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "coluna :16",
+   "alvo": {
+    "h": "19:19",
+    "jogo": "Asuncion x Penarol",
+    "odd": 2.45,
+    "unidades": 2,
+    "desde": 1787595585573
+   },
+   "iniciadoEm": 1787595583077,
+   "tiros": [
+    {
+     "h": "19:16",
+     "jogo": "Santiago x Buenos Aires",
+     "odd": 1.95,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "copa": 1787593832975,
    "premier": 1787586286576,
@@ -4076,9 +4113,9 @@
    "2026-08-24": 4.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Austrália",
-   "n": 15,
+   "tipo": "odd",
+   "chave": "2.62",
+   "n": 12,
    "start": 3
   },
   "_obs": {}
@@ -7697,7 +7734,37 @@
    "euro": 1787594015670,
    "premier": 1787594568481
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "19:19",
+     "jogo": "Marrocos x Bósnia e Herzegovina",
+     "odd": 1.98
+    },
+    {
+     "h": "19:22",
+     "jogo": "Nova Zelândia x Argélia",
+     "odd": 1.95
+    },
+    {
+     "h": "19:25",
+     "jogo": "Uzbequistão x Suécia",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time Nova Zelândia",
+   "alvo": {
+    "h": "19:19",
+    "jogo": "Marrocos x Bósnia e Herzegovina",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1787595273878
+   },
+   "iniciadoEm": 1787595273878
+  },
   "cooldown": {
    "euro": 1787594015670,
    "super": 1787592877971,
@@ -7745,8 +7812,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Brentford",
-   "n": 32,
+   "chave": "Nova Zelândia",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
