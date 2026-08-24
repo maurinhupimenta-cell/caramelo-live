@@ -4028,7 +4028,37 @@
    "copa": 1787598716572,
    "super": 1787599913869
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:47",
+     "jogo": "República Tcheca x Romênia",
+     "odd": 2.4
+    },
+    {
+     "h": "20:50",
+     "jogo": "Espanha x Itália",
+     "odd": 2.15
+    },
+    {
+     "h": "20:53",
+     "jogo": "Dinamarca x Eslováquia",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "seq GGGRR",
+   "alvo": {
+    "h": "20:47",
+    "jogo": "República Tcheca x Romênia",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1787600973870
+   },
+   "iniciadoEm": 1787600973870
+  },
   "cooldown": {
    "copa": 1787598716572,
    "premier": 1787586286576,
@@ -4077,8 +4107,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGGG",
-   "n": 16,
+   "chave": "GGGRR",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
