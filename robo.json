@@ -4085,13 +4085,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -146.6,
-  "ciclos": 1371,
-  "greens": 934,
+  "saldo": -145.9,
+  "ciclos": 1372,
+  "greens": 935,
   "redsCiclo": 155,
   "aborts": 0,
   "descartes": 282,
   "historico": [
+   {
+    "quando": "2026-08-24T17:53:35.972Z",
+    "resultado": "GREEN",
+    "unidades": 0.7,
+    "detalhe": "euro · Países Baixos x Croácia @1.85 (tiro 2) · gatilho: seq RRRRR"
+   },
    {
     "quando": "2026-08-24T17:34:38.171Z",
     "resultado": "RED_CICLO",
@@ -7685,51 +7691,46 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "copa · Tunísia x Senegal @2.25 (tiro 2) · gatilho: coluna :55"
-   },
-   {
-    "quando": "2026-07-31T12:55:08.343Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "super · Belo Horizonte x Guayaquil @1.9 (tiro 1) · gatilho: coluna :55"
    }
   ],
   "consumidas": {
    "copa": 1787591643680,
-   "super": 1787592877971
+   "super": 1787592877971,
+   "euro": 1787594015670
   },
   "ciclo": {
-   "liga": "euro",
+   "liga": "premier",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "18:47",
-     "jogo": "Ucrânia x Alemanha",
+     "h": "19:00",
+     "jogo": "Watford x Brighton",
+     "odd": 1.87
+    },
+    {
+     "h": "19:03",
+     "jogo": "Brentford x Southampton",
+     "odd": 2.05
+    },
+    {
+     "h": "19:06",
+     "jogo": "Chelsea x United",
      "odd": 1.93
-    },
-    {
-     "h": "18:50",
-     "jogo": "Países Baixos x Croácia",
-     "odd": 1.85
-    },
-    {
-     "h": "18:53",
-     "jogo": "Eslovênia x Bélgica",
-     "odd": 2.1
     }
    ],
-   "gatilho": "seq RRRRR",
+   "gatilho": "time Brentford",
    "alvo": {
-    "h": "18:47",
-    "jogo": "Ucrânia x Alemanha",
-    "odd": 1.93,
+    "h": "19:00",
+    "jogo": "Watford x Brighton",
+    "odd": 1.87,
     "unidades": 1,
-    "desde": 1787593773570
+    "desde": 1787594019069
    },
-   "iniciadoEm": 1787593773570
+   "iniciadoEm": 1787594019069
   },
   "cooldown": {
-   "euro": 1787586093470,
+   "euro": 1787594015670,
    "super": 1787592877971,
    "premier": 1787589707974,
    "copa": 1787591643680
@@ -7771,13 +7772,13 @@
    "2026-08-19": 7.5,
    "2026-08-20": -7.8,
    "2026-08-21": 3,
-   "2026-08-24": -1.9
+   "2026-08-24": -1.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRR",
-   "n": 14,
-   "start": 1
+   "tipo": "time",
+   "chave": "Brentford",
+   "n": 32,
+   "start": 3
   },
   "_obs": {}
  }
