@@ -4024,7 +4024,37 @@
    "copa": 1787585438178,
    "euro": 1787585511167
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:36",
+     "jogo": "Liverpool x Leicester",
+     "odd": 2.25
+    },
+    {
+     "h": "16:39",
+     "jogo": "Wolverhampton x Islington",
+     "odd": 2.07
+    },
+    {
+     "h": "16:42",
+     "jogo": "Everton x Leicester",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "seq RRGGR",
+   "alvo": {
+    "h": "16:36",
+    "jogo": "Liverpool x Leicester",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1787585620672
+   },
+   "iniciadoEm": 1787585620672
+  },
   "cooldown": {
    "copa": 1787585438178,
    "premier": 1787326372677,
@@ -4073,8 +4103,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GGRRR",
-   "n": 10,
+   "chave": "RRGGR",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
