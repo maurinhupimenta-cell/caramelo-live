@@ -416,13 +416,19 @@
   }
  },
  "o25": {
-  "saldo": -161.9,
-  "ciclos": 1351,
-  "greens": 843,
+  "saldo": -160.1,
+  "ciclos": 1352,
+  "greens": 844,
   "redsCiclo": 208,
   "aborts": 0,
   "descartes": 300,
   "historico": [
+   {
+    "quando": "2026-08-24T18:47:36.968Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "euro · Hungria x Itália @2.4 (tiro 2) · gatilho: seq GGGRR"
+   },
    {
     "quando": "2026-08-24T18:22:35.767Z",
     "resultado": "GREEN",
@@ -4016,61 +4022,18 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: odd 2.35"
-   },
-   {
-    "quando": "2026-07-31T16:04:27.213Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho time Canadá) — liga REARMADA"
    }
   ],
   "consumidas": {
    "copa": 1787593832975,
-   "super": 1787595755474
+   "super": 1787595755474,
+   "euro": 1787597256770
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "19:41",
-     "jogo": "Dinamarca x França",
-     "odd": 2.2
-    },
-    {
-     "h": "19:44",
-     "jogo": "Hungria x Itália",
-     "odd": 2.4
-    },
-    {
-     "h": "19:47",
-     "jogo": "Alemanha x Inglaterra",
-     "odd": 2.02
-    }
-   ],
-   "gatilho": "seq GGGRR",
-   "alvo": {
-    "h": "19:44",
-    "jogo": "Hungria x Itália",
-    "odd": 2.4,
-    "unidades": 2,
-    "desde": 1787597078678
-   },
-   "iniciadoEm": 1787596956372,
-   "tiros": [
-    {
-     "h": "19:41",
-     "jogo": "Dinamarca x França",
-     "odd": 2.2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787593832975,
    "premier": 1787586286576,
-   "euro": 1787590593573,
+   "euro": 1787597256770,
    "super": 1787595755474
   },
   "dias": {
@@ -4111,7 +4074,7 @@
    "2026-08-19": -9.7,
    "2026-08-20": 5.8,
    "2026-08-21": -2.5,
-   "2026-08-24": 6
+   "2026-08-24": 7.8
   },
   "_gatilhoAtual": {
    "tipo": "seq",
