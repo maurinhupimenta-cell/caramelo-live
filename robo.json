@@ -4118,13 +4118,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -143.5,
-  "ciclos": 1366,
-  "greens": 930,
+  "saldo": -142.6,
+  "ciclos": 1367,
+  "greens": 931,
   "redsCiclo": 154,
   "aborts": 0,
   "descartes": 282,
   "historico": [
+   {
+    "quando": "2026-08-24T15:41:33.672Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "euro · França x Romênia @1.87 (tiro 1) · gatilho: seq RRRRR"
+   },
    {
     "quando": "2026-08-24T15:39:32.284Z",
     "resultado": "GREEN",
@@ -7718,51 +7724,16 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "euro · Inglaterra x Itália @1.93 (tiro 1) · gatilho: odd 1.93"
-   },
-   {
-    "quando": "2026-07-31T10:28:05.044Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "copa · México x África do Sul @2.1 (tiro 1) · gatilho: coluna :28"
    }
   ],
   "consumidas": {
    "premier": 1787585428678,
-   "super": 1787585972068
+   "super": 1787585972068,
+   "euro": 1787586093470
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:38",
-     "jogo": "França x Romênia",
-     "odd": 1.87
-    },
-    {
-     "h": "16:41",
-     "jogo": "Eslovênia x Alemanha",
-     "odd": 2.1
-    },
-    {
-     "h": "16:44",
-     "jogo": "Albânia x Polônia",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "seq RRRRR",
-   "alvo": {
-    "h": "16:38",
-    "jogo": "França x Romênia",
-    "odd": 1.87,
-    "unidades": 1,
-    "desde": 1787585973967
-   },
-   "iniciadoEm": 1787585973967
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1787258194661,
+   "euro": 1787586093470,
    "super": 1787585972068,
    "premier": 1787585428678,
    "copa": 1787326712583
@@ -7804,7 +7775,7 @@
    "2026-08-19": 7.5,
    "2026-08-20": -7.8,
    "2026-08-21": 3,
-   "2026-08-24": 1.2
+   "2026-08-24": 2.1
   },
   "_gatilhoAtual": {
    "tipo": "seq",
