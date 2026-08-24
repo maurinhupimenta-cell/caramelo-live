@@ -4030,8 +4030,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "20:04",
@@ -4051,13 +4051,21 @@
    ],
    "gatilho": "time Austrália",
    "alvo": {
-    "h": "20:04",
-    "jogo": "Noruega x Alemanha",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1787597973474
+    "h": "20:07",
+    "jogo": "Argentina x Austrália",
+    "odd": 2.15,
+    "unidades": 2,
+    "desde": 1787598453569
    },
-   "iniciadoEm": 1787597973474
+   "iniciadoEm": 1787597973474,
+   "tiros": [
+    {
+     "h": "20:04",
+     "jogo": "Noruega x Alemanha",
+     "odd": 2.07,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1787593832975,
@@ -4109,7 +4117,7 @@
    "tipo": "time",
    "chave": "Austrália",
    "n": 16,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
