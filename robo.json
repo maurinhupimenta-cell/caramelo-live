@@ -4118,13 +4118,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -143.7,
-  "ciclos": 1365,
-  "greens": 929,
+  "saldo": -143.5,
+  "ciclos": 1366,
+  "greens": 930,
   "redsCiclo": 154,
   "aborts": 0,
   "descartes": 282,
   "historico": [
+   {
+    "quando": "2026-08-24T15:39:32.284Z",
+    "resultado": "GREEN",
+    "unidades": 0.2,
+    "detalhe": "super · Santiago x Guayaquil @1.8 (tiro 3) · gatilho: coluna :28"
+   },
    {
     "quando": "2026-08-24T15:30:28.971Z",
     "resultado": "GREEN",
@@ -7718,65 +7724,46 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "copa · México x África do Sul @2.1 (tiro 1) · gatilho: coluna :28"
-   },
-   {
-    "quando": "2026-07-31T10:18:48.540Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "super · Agua Branca x Buenos Aires @1.83 (tiro 2) · gatilho: odd 1.83"
    }
   ],
   "consumidas": {
-   "premier": 1787585428678
+   "premier": 1787585428678,
+   "super": 1787585972068
   },
   "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
    "plano": [
     {
-     "h": "16:28",
-     "jogo": "Rio de Janeiro x La Boca",
-     "odd": 2.02
+     "h": "16:38",
+     "jogo": "França x Romênia",
+     "odd": 1.87
     },
     {
-     "h": "16:31",
-     "jogo": "Quito x Itaquera",
-     "odd": 2
+     "h": "16:41",
+     "jogo": "Eslovênia x Alemanha",
+     "odd": 2.1
     },
     {
-     "h": "16:34",
-     "jogo": "Santiago x Guayaquil",
-     "odd": 1.8
+     "h": "16:44",
+     "jogo": "Albânia x Polônia",
+     "odd": 2.35
     }
    ],
-   "gatilho": "coluna :28",
+   "gatilho": "seq RRRRR",
    "alvo": {
-    "h": "16:34",
-    "jogo": "Santiago x Guayaquil",
-    "odd": 1.8,
-    "unidades": 4,
-    "desde": 1787585670378
+    "h": "16:38",
+    "jogo": "França x Romênia",
+    "odd": 1.87,
+    "unidades": 1,
+    "desde": 1787585973967
    },
-   "iniciadoEm": 1787585432174,
-   "tiros": [
-    {
-     "h": "16:28",
-     "jogo": "Rio de Janeiro x La Boca",
-     "odd": 2.02,
-     "unidades": 1
-    },
-    {
-     "h": "16:31",
-     "jogo": "Quito x Itaquera",
-     "odd": 2,
-     "unidades": 2
-    }
-   ]
+   "iniciadoEm": 1787585973967
   },
   "cooldown": {
    "euro": 1787258194661,
-   "super": 1787326953172,
+   "super": 1787585972068,
    "premier": 1787585428678,
    "copa": 1787326712583
   },
@@ -7817,7 +7804,7 @@
    "2026-08-19": 7.5,
    "2026-08-20": -7.8,
    "2026-08-21": 3,
-   "2026-08-24": 1
+   "2026-08-24": 1.2
   },
   "_gatilhoAtual": {
    "tipo": "seq",
