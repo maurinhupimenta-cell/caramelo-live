@@ -4025,8 +4025,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "16:23",
@@ -4046,13 +4046,27 @@
    ],
    "gatilho": "seq GGRRR",
    "alvo": {
-    "h": "16:23",
-    "jogo": "Romênia x Itália",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1787585470278
+    "h": "16:29",
+    "jogo": "Eslovênia x Eslováquia",
+    "odd": 2.62,
+    "unidades": 4,
+    "desde": 1787585483673
    },
-   "iniciadoEm": 1787585470278
+   "iniciadoEm": 1787585470278,
+   "tiros": [
+    {
+     "h": "16:23",
+     "jogo": "Romênia x Itália",
+     "odd": 2.2,
+     "unidades": 1
+    },
+    {
+     "h": "16:26",
+     "jogo": "Croácia x Dinamarca",
+     "odd": 2.35,
+     "unidades": 2
+    }
+   ]
   },
   "cooldown": {
    "copa": 1787585438178,
@@ -7722,8 +7736,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "16:28",
@@ -7743,13 +7757,21 @@
    ],
    "gatilho": "coluna :28",
    "alvo": {
-    "h": "16:28",
-    "jogo": "Rio de Janeiro x La Boca",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1787585432174
+    "h": "16:31",
+    "jogo": "Quito x Itaquera",
+    "odd": 2,
+    "unidades": 2,
+    "desde": 1787585491971
    },
-   "iniciadoEm": 1787585432174
+   "iniciadoEm": 1787585432174,
+   "tiros": [
+    {
+     "h": "16:28",
+     "jogo": "Rio de Janeiro x La Boca",
+     "odd": 2.02,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1787258194661,
@@ -7797,9 +7819,9 @@
    "2026-08-24": 1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":28",
-   "n": 16,
+   "tipo": "odd",
+   "chave": "2.2",
+   "n": 12,
    "start": 1
   },
   "_obs": {}
