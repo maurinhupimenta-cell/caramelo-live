@@ -4085,13 +4085,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -144,
-  "ciclos": 1375,
+  "saldo": -151,
+  "ciclos": 1376,
   "greens": 937,
-  "redsCiclo": 155,
+  "redsCiclo": 156,
   "aborts": 0,
   "descartes": 283,
   "historico": [
+   {
+    "quando": "2026-08-24T19:37:37.470Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: time Nova Zelândia"
+   },
    {
     "quando": "2026-08-24T19:28:35.171Z",
     "resultado": "GREEN_OBS",
@@ -7685,65 +7691,17 @@
     "resultado": "GREEN",
     "unidades": 0.7,
     "detalhe": "euro · Bélgica x Espanha @1.83 (tiro 2) · gatilho: odd 1.83"
-   },
-   {
-    "quando": "2026-07-31T14:20:59.147Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Costa do Marfim x Escócia @2.05 (tiro 1) · gatilho: seq RGGG"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "20:28",
-     "jogo": "Escócia x Coreia do Sul",
-     "odd": 2.3
-    },
-    {
-     "h": "20:31",
-     "jogo": "Jordânia x Nova Zelândia",
-     "odd": 1.9
-    },
-    {
-     "h": "20:34",
-     "jogo": "Arábia Saudita x Equador",
-     "odd": 1.85
-    }
-   ],
-   "gatilho": "time Nova Zelândia",
-   "alvo": {
-    "h": "20:34",
-    "jogo": "Arábia Saudita x Equador",
-    "odd": 1.85,
-    "unidades": 4,
-    "desde": 1787600133877
-   },
-   "iniciadoEm": 1787599417971,
-   "tiros": [
-    {
-     "h": "20:28",
-     "jogo": "Escócia x Coreia do Sul",
-     "odd": 2.3,
-     "unidades": 1
-    },
-    {
-     "h": "20:31",
-     "jogo": "Jordânia x Nova Zelândia",
-     "odd": 1.9,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "copa": 1787600257271
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787594015670,
    "super": 1787592877971,
    "premier": 1787594568481,
-   "copa": 1787595816873
+   "copa": 1787600257271
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7782,7 +7740,7 @@
    "2026-08-19": 7.5,
    "2026-08-20": -7.8,
    "2026-08-21": 3,
-   "2026-08-24": 0.7
+   "2026-08-24": -6.3
   },
   "_gatilhoAtual": {
    "tipo": "time",
