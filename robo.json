@@ -4115,13 +4115,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -141.6,
-  "ciclos": 1368,
-  "greens": 932,
+  "saldo": -140.7,
+  "ciclos": 1369,
+  "greens": 933,
   "redsCiclo": 154,
   "aborts": 0,
   "descartes": 282,
   "historico": [
+   {
+    "quando": "2026-08-24T16:41:48.172Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Liverpool x Newcastle @1.9 (tiro 1) · gatilho: time Brentford"
+   },
    {
     "quando": "2026-08-24T15:58:36.975Z",
     "resultado": "GREEN",
@@ -7715,52 +7721,17 @@
     "resultado": "GREEN",
     "unidades": 0.8,
     "detalhe": "copa · RD Congo x Arábia Saudita @1.83 (tiro 1) · gatilho: coluna :40"
-   },
-   {
-    "quando": "2026-07-31T11:28:08.842Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "super · Belo Horizonte x Penarol @2.07 (tiro 2) · gatilho: odd 2.07"
    }
   ],
   "consumidas": {
-   "copa": 1787587116773
+   "copa": 1787587116773,
+   "premier": 1787589707974
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:39",
-     "jogo": "Liverpool x Newcastle",
-     "odd": 1.9
-    },
-    {
-     "h": "17:42",
-     "jogo": "Brentford x United",
-     "odd": 1.98
-    },
-    {
-     "h": "17:45",
-     "jogo": "Islington x Burnley",
-     "odd": 1.95
-    }
-   ],
-   "gatilho": "time Brentford",
-   "alvo": {
-    "h": "17:39",
-    "jogo": "Liverpool x Newcastle",
-    "odd": 1.9,
-    "unidades": 1,
-    "desde": 1787589031676
-   },
-   "iniciadoEm": 1787589031676
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787586093470,
    "super": 1787585972068,
-   "premier": 1787585428678,
+   "premier": 1787589707974,
    "copa": 1787587116773
   },
   "dias": {
@@ -7800,7 +7771,7 @@
    "2026-08-19": 7.5,
    "2026-08-20": -7.8,
    "2026-08-21": 3,
-   "2026-08-24": 3.1
+   "2026-08-24": 4
   },
   "_gatilhoAtual": {
    "tipo": "time",
