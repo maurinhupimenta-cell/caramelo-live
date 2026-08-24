@@ -4101,18 +4101,24 @@
    "tipo": "coluna",
    "chave": ":28",
    "n": 16,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -144.7,
-  "ciclos": 1364,
-  "greens": 928,
+  "saldo": -143.7,
+  "ciclos": 1365,
+  "greens": 929,
   "redsCiclo": 154,
   "aborts": 0,
   "descartes": 282,
   "historico": [
+   {
+    "quando": "2026-08-24T15:30:28.971Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Newcastle x Leeds @2 (tiro 1) · gatilho: seq RRRRR"
+   },
    {
     "quando": "2026-08-21T15:42:33.377Z",
     "resultado": "GREEN",
@@ -7706,50 +7712,16 @@
     "resultado": "GREEN",
     "unidades": 0.7,
     "detalhe": "super · Agua Branca x Buenos Aires @1.83 (tiro 2) · gatilho: odd 1.83"
-   },
-   {
-    "quando": "2026-07-31T09:59:27.044Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "euro · Albânia x Suíça @2.1 (tiro 1) · gatilho: odd 2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:27",
-     "jogo": "Newcastle x Leeds",
-     "odd": 2
-    },
-    {
-     "h": "16:30",
-     "jogo": "United x Brentford",
-     "odd": 2.07
-    },
-    {
-     "h": "16:33",
-     "jogo": "Newcastle x Wolverhampton",
-     "odd": 1.76
-    }
-   ],
-   "gatilho": "seq RRRRR",
-   "alvo": {
-    "h": "16:27",
-    "jogo": "Newcastle x Leeds",
-    "odd": 2,
-    "unidades": 1,
-    "desde": 1787585057177
-   },
-   "iniciadoEm": 1787585057177
+  "consumidas": {
+   "premier": 1787585428678
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787258194661,
    "super": 1787326953172,
-   "premier": 1787326059471,
+   "premier": 1787585428678,
    "copa": 1787326712583
   },
   "dias": {
@@ -7788,12 +7760,13 @@
    "2026-08-18": 7.5,
    "2026-08-19": 7.5,
    "2026-08-20": -7.8,
-   "2026-08-21": 3
+   "2026-08-21": 3,
+   "2026-08-24": 1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRR",
-   "n": 11,
+   "tipo": "coluna",
+   "chave": ":25",
+   "n": 16,
    "start": 1
   },
   "_obs": {}
