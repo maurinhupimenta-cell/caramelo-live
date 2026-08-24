@@ -4085,13 +4085,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -139.6,
-  "ciclos": 1370,
+  "saldo": -146.6,
+  "ciclos": 1371,
   "greens": 934,
-  "redsCiclo": 154,
+  "redsCiclo": 155,
   "aborts": 0,
   "descartes": 282,
   "historico": [
+   {
+    "quando": "2026-08-24T17:34:38.171Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "super · ciclo perdido (3 tiros) · gatilho: coluna :28"
+   },
    {
     "quando": "2026-08-24T17:14:03.970Z",
     "resultado": "GREEN",
@@ -7685,66 +7691,17 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "super · Belo Horizonte x Guayaquil @1.9 (tiro 1) · gatilho: coluna :55"
-   },
-   {
-    "quando": "2026-07-31T12:41:47.140Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "euro · Escócia x Países Baixos @1.85 (tiro 2) · gatilho: odd 1.85"
    }
   ],
   "consumidas": {
    "premier": 1787589707974,
-   "copa": 1787591643680
+   "copa": 1787591643680,
+   "super": 1787592877971
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "18:25",
-     "jogo": "Avellaneda x Montevideo",
-     "odd": 1.95
-    },
-    {
-     "h": "18:28",
-     "jogo": "Bogota x La Plata",
-     "odd": 2.3
-    },
-    {
-     "h": "18:31",
-     "jogo": "Sao Paulo x Santos",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "coluna :28",
-   "alvo": {
-    "h": "18:31",
-    "jogo": "Sao Paulo x Santos",
-    "odd": 1.93,
-    "unidades": 4,
-    "desde": 1787592670977
-   },
-   "iniciadoEm": 1787591974569,
-   "tiros": [
-    {
-     "h": "18:25",
-     "jogo": "Avellaneda x Montevideo",
-     "odd": 1.95,
-     "unidades": 1
-    },
-    {
-     "h": "18:28",
-     "jogo": "Bogota x La Plata",
-     "odd": 2.3,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787586093470,
-   "super": 1787585972068,
+   "super": 1787592877971,
    "premier": 1787589707974,
    "copa": 1787591643680
   },
@@ -7785,7 +7742,7 @@
    "2026-08-19": 7.5,
    "2026-08-20": -7.8,
    "2026-08-21": 3,
-   "2026-08-24": 5.1
+   "2026-08-24": -1.9
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
