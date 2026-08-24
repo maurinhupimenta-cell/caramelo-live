@@ -7697,7 +7697,45 @@
    "premier": 1787589707974,
    "copa": 1787591643680
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "18:25",
+     "jogo": "Avellaneda x Montevideo",
+     "odd": 1.95
+    },
+    {
+     "h": "18:28",
+     "jogo": "Bogota x La Plata",
+     "odd": 2.3
+    },
+    {
+     "h": "18:31",
+     "jogo": "Sao Paulo x Santos",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "coluna :28",
+   "alvo": {
+    "h": "18:28",
+    "jogo": "Bogota x La Plata",
+    "odd": 2.3,
+    "unidades": 2,
+    "desde": 1787592574468
+   },
+   "iniciadoEm": 1787591974569,
+   "tiros": [
+    {
+     "h": "18:25",
+     "jogo": "Avellaneda x Montevideo",
+     "odd": 1.95,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1787586093470,
    "super": 1787585972068,
@@ -7744,9 +7782,9 @@
    "2026-08-24": 5.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Nova Zelândia",
-   "n": 9,
+   "tipo": "coluna",
+   "chave": ":28",
+   "n": 18,
    "start": 1
   },
   "_obs": {}
