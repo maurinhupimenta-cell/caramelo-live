@@ -408,6 +408,10 @@
    "super": {
     "desde": 1787186969067,
     "gatilho": "placar 1-0 / 0-1"
+   },
+   "copa": {
+    "desde": 1787588797568,
+    "gatilho": "time República Tcheca"
    }
   }
  },
@@ -4021,12 +4025,41 @@
    }
   ],
   "consumidas": {
-   "copa": 1787585438178,
    "euro": 1787585511167,
    "premier": 1787586286576,
    "super": 1787588371869
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:28",
+     "jogo": "República Tcheca x Bósnia e Herzegovina",
+     "odd": 2.25
+    },
+    {
+     "h": "17:31",
+     "jogo": "Senegal x Uzbequistão",
+     "odd": 2.5
+    },
+    {
+     "h": "17:34",
+     "jogo": "Canadá x EUA",
+     "odd": 2.35
+    }
+   ],
+   "gatilho": "coluna :28",
+   "alvo": {
+    "h": "17:28",
+    "jogo": "República Tcheca x Bósnia e Herzegovina",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1787589038975
+   },
+   "iniciadoEm": 1787589038975
+  },
   "cooldown": {
    "copa": 1787585438178,
    "premier": 1787586286576,
@@ -4075,7 +4108,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":19",
+   "chave": ":28",
    "n": 17,
    "start": 1
   },
@@ -7691,12 +7724,41 @@
    }
   ],
   "consumidas": {
-   "premier": 1787585428678,
    "super": 1787585972068,
    "euro": 1787586093470,
    "copa": 1787587116773
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:39",
+     "jogo": "Liverpool x Newcastle",
+     "odd": 1.9
+    },
+    {
+     "h": "17:42",
+     "jogo": "Brentford x United",
+     "odd": 1.98
+    },
+    {
+     "h": "17:45",
+     "jogo": "Islington x Burnley",
+     "odd": 1.95
+    }
+   ],
+   "gatilho": "time Brentford",
+   "alvo": {
+    "h": "17:39",
+    "jogo": "Liverpool x Newcastle",
+    "odd": 1.9,
+    "unidades": 1,
+    "desde": 1787589031676
+   },
+   "iniciadoEm": 1787589031676
+  },
   "cooldown": {
    "euro": 1787586093470,
    "super": 1787585972068,
@@ -7744,9 +7806,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Curaçao",
-   "n": 10,
-   "start": 1
+   "chave": "Brentford",
+   "n": 29,
+   "start": 3
   },
   "_obs": {}
  }
