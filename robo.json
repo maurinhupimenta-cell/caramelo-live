@@ -4085,13 +4085,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -140.7,
-  "ciclos": 1369,
-  "greens": 933,
+  "saldo": -139.6,
+  "ciclos": 1370,
+  "greens": 934,
   "redsCiclo": 154,
   "aborts": 0,
   "descartes": 282,
   "historico": [
+   {
+    "quando": "2026-08-24T17:14:03.970Z",
+    "resultado": "GREEN",
+    "unidades": 1.1,
+    "detalhe": "copa · Japão x Turquia @2.07 (tiro 1) · gatilho: time Nova Zelândia"
+   },
    {
     "quando": "2026-08-24T16:41:48.172Z",
     "resultado": "GREEN",
@@ -7685,53 +7691,18 @@
     "resultado": "GREEN",
     "unidades": 0.7,
     "detalhe": "euro · Escócia x Países Baixos @1.85 (tiro 2) · gatilho: odd 1.85"
-   },
-   {
-    "quando": "2026-07-31T11:39:45.141Z",
-    "resultado": "GREEN",
-    "unidades": 0.8,
-    "detalhe": "copa · RD Congo x Arábia Saudita @1.83 (tiro 1) · gatilho: coluna :40"
    }
   ],
   "consumidas": {
-   "premier": 1787589707974
+   "premier": 1787589707974,
+   "copa": 1787591643680
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "18:10",
-     "jogo": "Japão x Turquia",
-     "odd": 2.07
-    },
-    {
-     "h": "18:13",
-     "jogo": "Nova Zelândia x Austrália",
-     "odd": 1.9
-    },
-    {
-     "h": "18:16",
-     "jogo": "Gana x República Tcheca",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "time Nova Zelândia",
-   "alvo": {
-    "h": "18:10",
-    "jogo": "Japão x Turquia",
-    "odd": 2.07,
-    "unidades": 1,
-    "desde": 1787591075867
-   },
-   "iniciadoEm": 1787591075867
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787586093470,
    "super": 1787585972068,
    "premier": 1787589707974,
-   "copa": 1787587116773
+   "copa": 1787591643680
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7770,13 +7741,13 @@
    "2026-08-19": 7.5,
    "2026-08-20": -7.8,
    "2026-08-21": 3,
-   "2026-08-24": 4
+   "2026-08-24": 5.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Nova Zelândia",
    "n": 9,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  }
