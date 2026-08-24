@@ -4028,7 +4028,37 @@
    "euro": 1787597256770,
    "copa": 1787598716572
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:28",
+     "jogo": "Guayaquil x La Boca",
+     "odd": 2.25
+    },
+    {
+     "h": "20:31",
+     "jogo": "Itaquera x Quito",
+     "odd": 2.35
+    },
+    {
+     "h": "20:34",
+     "jogo": "Lima x Santiago",
+     "odd": 2
+    }
+   ],
+   "gatilho": "seq RGGG",
+   "alvo": {
+    "h": "20:28",
+    "jogo": "Guayaquil x La Boca",
+    "odd": 2.25,
+    "unidades": 1,
+    "desde": 1787599714674
+   },
+   "iniciadoEm": 1787599714674
+  },
   "cooldown": {
    "copa": 1787598716572,
    "premier": 1787586286576,
@@ -4076,21 +4106,27 @@
    "2026-08-24": 9.1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Nova Zelândia",
-   "n": 14,
-   "start": 2
+   "tipo": "seq",
+   "chave": "RGGG",
+   "n": 16,
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -144,
-  "ciclos": 1374,
+  "ciclos": 1375,
   "greens": 937,
   "redsCiclo": 155,
   "aborts": 0,
-  "descartes": 282,
+  "descartes": 283,
   "historico": [
+   {
+    "quando": "2026-08-24T19:28:35.171Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "super · green OBSERVADO no papel (gatilho seq GRGGG) — liga REARMADA"
+   },
    {
     "quando": "2026-08-24T18:23:37.072Z",
     "resultado": "GREEN",
@@ -7684,16 +7720,40 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · Costa do Marfim x Escócia @2.05 (tiro 1) · gatilho: seq RGGG"
-   },
-   {
-    "quando": "2026-07-31T14:10:20.546Z",
-    "resultado": "GREEN",
-    "unidades": 0.8,
-    "detalhe": "super · Sao Paulo x Medellin @1.95 (tiro 3) · gatilho: odd 1.83"
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:28",
+     "jogo": "Escócia x Coreia do Sul",
+     "odd": 2.3
+    },
+    {
+     "h": "20:31",
+     "jogo": "Jordânia x Nova Zelândia",
+     "odd": 1.9
+    },
+    {
+     "h": "20:34",
+     "jogo": "Arábia Saudita x Equador",
+     "odd": 1.85
+    }
+   ],
+   "gatilho": "time Nova Zelândia",
+   "alvo": {
+    "h": "20:28",
+    "jogo": "Escócia x Coreia do Sul",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1787599417971
+   },
+   "iniciadoEm": 1787599417971
+  },
   "cooldown": {
    "euro": 1787594015670,
    "super": 1787592877971,
@@ -7740,11 +7800,16 @@
    "2026-08-24": 0.7
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Nova Zelândia",
-   "n": 12,
+   "tipo": "seq",
+   "chave": "RGRRG",
+   "n": 19,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "super": {
+    "desde": 1787599715171,
+    "gatilho": "seq GRGGG"
+   }
+  }
  }
 }
