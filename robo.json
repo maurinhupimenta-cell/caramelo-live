@@ -7697,7 +7697,37 @@
    "copa": 1787600257271,
    "super": 1787600976075
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:09",
+     "jogo": "Leicester x United",
+     "odd": 1.98
+    },
+    {
+     "h": "21:12",
+     "jogo": "Southampton x Islington",
+     "odd": 2
+    },
+    {
+     "h": "21:15",
+     "jogo": "Watford x Brentford",
+     "odd": 2
+    }
+   ],
+   "gatilho": "seq GGRRR",
+   "alvo": {
+    "h": "21:09",
+    "jogo": "Leicester x United",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1787601986168
+   },
+   "iniciadoEm": 1787601986168
+  },
   "cooldown": {
    "euro": 1787594015670,
    "super": 1787600976075,
@@ -7745,8 +7775,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GRGRR",
-   "n": 11,
+   "chave": "GGRRR",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
