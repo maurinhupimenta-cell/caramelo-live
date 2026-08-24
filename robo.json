@@ -412,13 +412,19 @@
   }
  },
  "o25": {
-  "saldo": -171.8,
-  "ciclos": 1342,
-  "greens": 837,
+  "saldo": -169.6,
+  "ciclos": 1343,
+  "greens": 838,
   "redsCiclo": 208,
   "aborts": 0,
   "descartes": 297,
   "historico": [
+   {
+    "quando": "2026-08-24T16:19:32.071Z",
+    "resultado": "GREEN",
+    "unidades": 2.2,
+    "detalhe": "super · Avellaneda x Bogota @2.6 (tiro 2) · gatilho: coluna :16"
+   },
    {
     "quando": "2026-08-24T15:44:46.772Z",
     "resultado": "GREEN",
@@ -4012,63 +4018,20 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho seq GGGG) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-31T12:21:44.643Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "copa · Argélia x Países Baixos @2.35 (tiro 1) · gatilho: seq RGGG"
    }
   ],
   "consumidas": {
    "copa": 1787585438178,
    "euro": 1787585511167,
-   "premier": 1787586286576
+   "premier": 1787586286576,
+   "super": 1787588371869
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:13",
-     "jogo": "Agua Branca x Sao Paulo",
-     "odd": 2.02
-    },
-    {
-     "h": "17:16",
-     "jogo": "Avellaneda x Bogota",
-     "odd": 2.6
-    },
-    {
-     "h": "17:19",
-     "jogo": "Itaquera x La Plata",
-     "odd": 2.6
-    }
-   ],
-   "gatilho": "coluna :16",
-   "alvo": {
-    "h": "17:16",
-    "jogo": "Avellaneda x Bogota",
-    "odd": 2.6,
-    "unidades": 2,
-    "desde": 1787588194470
-   },
-   "iniciadoEm": 1787587657969,
-   "tiros": [
-    {
-     "h": "17:13",
-     "jogo": "Agua Branca x Sao Paulo",
-     "odd": 2.02,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787585438178,
    "premier": 1787586286576,
    "euro": 1787585511167,
-   "super": 1787326952471
+   "super": 1787588371869
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4108,11 +4071,11 @@
    "2026-08-19": -9.7,
    "2026-08-20": 5.8,
    "2026-08-21": -2.5,
-   "2026-08-24": -3.9
+   "2026-08-24": -1.7
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":16",
+   "chave": ":19",
    "n": 17,
    "start": 1
   },
