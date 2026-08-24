@@ -4084,13 +4084,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -147.2,
-  "ciclos": 1381,
-  "greens": 941,
+  "saldo": -146,
+  "ciclos": 1382,
+  "greens": 942,
   "redsCiclo": 156,
   "aborts": 0,
   "descartes": 284,
   "historico": [
+   {
+    "quando": "2026-08-24T21:05:38.775Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "euro · Albânia x Áustria @2.2 (tiro 1) · gatilho: seq RRRRR"
+   },
    {
     "quando": "2026-08-24T21:02:37.771Z",
     "resultado": "GREEN",
@@ -7684,52 +7690,17 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho time Equador) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-31T16:37:09.408Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: odd 2.2"
    }
   ],
   "consumidas": {
    "premier": 1787602341880,
    "copa": 1787605115468,
-   "super": 1787605357574
+   "super": 1787605357574,
+   "euro": 1787605538575
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "22:02",
-     "jogo": "Albânia x Áustria",
-     "odd": 2.2
-    },
-    {
-     "h": "22:05",
-     "jogo": "Ucrânia x Turquia",
-     "odd": 2.1
-    },
-    {
-     "h": "22:08",
-     "jogo": "Geórgia x Dinamarca",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "seq RRRRR",
-   "alvo": {
-    "h": "22:02",
-    "jogo": "Albânia x Áustria",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1787605414777
-   },
-   "iniciadoEm": 1787605414777
-  },
+  "ciclo": null,
   "cooldown": {
-   "euro": 1787594015670,
+   "euro": 1787605538575,
    "super": 1787605357574,
    "premier": 1787602341880,
    "copa": 1787605115468
@@ -7771,7 +7742,7 @@
    "2026-08-19": 7.5,
    "2026-08-20": -7.8,
    "2026-08-21": 3,
-   "2026-08-24": -2.5
+   "2026-08-24": -1.3
   },
   "_gatilhoAtual": {
    "tipo": "seq",
