@@ -416,13 +416,19 @@
   }
  },
  "o25": {
-  "saldo": -168.3,
-  "ciclos": 1347,
-  "greens": 839,
+  "saldo": -166.8,
+  "ciclos": 1348,
+  "greens": 840,
   "redsCiclo": 208,
   "aborts": 0,
   "descartes": 300,
   "historico": [
+   {
+    "quando": "2026-08-24T16:56:33.771Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "euro · Alemanha x Eslovênia @2.55 (tiro 1) · gatilho: odd 2.02"
+   },
    {
     "quando": "2026-08-24T16:53:39.472Z",
     "resultado": "GREEN_OBS",
@@ -4016,53 +4022,18 @@
     "resultado": "GREEN",
     "unidades": 2.2,
     "detalhe": "premier · Aston x Leeds @2.62 (tiro 2) · gatilho: odd 2.62"
-   },
-   {
-    "quando": "2026-07-31T14:24:44.845Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho seq RRRRR) — liga REARMADA"
    }
   ],
   "consumidas": {
    "super": 1787588371869,
-   "copa": 1787589513668
+   "copa": 1787589513668,
+   "euro": 1787590593573
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:44",
-     "jogo": "Alemanha x Eslovênia",
-     "odd": 2.55
-    },
-    {
-     "h": "17:47",
-     "jogo": "Suíça x Inglaterra",
-     "odd": 2.02
-    },
-    {
-     "h": "17:50",
-     "jogo": "Croácia x Eslovênia",
-     "odd": 2.6
-    }
-   ],
-   "gatilho": "odd 2.02",
-   "alvo": {
-    "h": "17:44",
-    "jogo": "Alemanha x Eslovênia",
-    "odd": 2.55,
-    "unidades": 1,
-    "desde": 1787590423575
-   },
-   "iniciadoEm": 1787590423575
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787589513668,
    "premier": 1787586286576,
-   "euro": 1787585511167,
+   "euro": 1787590593573,
    "super": 1787588371869
   },
   "dias": {
@@ -4103,7 +4074,7 @@
    "2026-08-19": -9.7,
    "2026-08-20": 5.8,
    "2026-08-21": -2.5,
-   "2026-08-24": -0.4
+   "2026-08-24": 1.1
   },
   "_gatilhoAtual": {
    "tipo": "odd",
