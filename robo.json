@@ -4081,13 +4081,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -142.6,
-  "ciclos": 1367,
-  "greens": 931,
+  "saldo": -141.6,
+  "ciclos": 1368,
+  "greens": 932,
   "redsCiclo": 154,
   "aborts": 0,
   "descartes": 282,
   "historico": [
+   {
+    "quando": "2026-08-24T15:58:36.975Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Curaçao x Gana @1.95 (tiro 1) · gatilho: time Curaçao"
+   },
    {
     "quando": "2026-08-24T15:41:33.672Z",
     "resultado": "GREEN",
@@ -7681,55 +7687,20 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "super · Belo Horizonte x Penarol @2.07 (tiro 2) · gatilho: odd 2.07"
-   },
-   {
-    "quando": "2026-07-31T11:05:06.446Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "euro · Inglaterra x Itália @1.93 (tiro 1) · gatilho: odd 1.93"
    }
   ],
   "consumidas": {
    "premier": 1787585428678,
    "super": 1787585972068,
-   "euro": 1787586093470
+   "euro": 1787586093470,
+   "copa": 1787587116773
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "16:52",
-     "jogo": "Curaçao x Gana",
-     "odd": 1.95
-    },
-    {
-     "h": "16:55",
-     "jogo": "Alemanha x Noruega",
-     "odd": 1.86
-    },
-    {
-     "h": "16:58",
-     "jogo": "Gana x EUA",
-     "odd": 2
-    }
-   ],
-   "gatilho": "time Curaçao",
-   "alvo": {
-    "h": "16:52",
-    "jogo": "Curaçao x Gana",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1787586811970
-   },
-   "iniciadoEm": 1787586811970
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787586093470,
    "super": 1787585972068,
    "premier": 1787585428678,
-   "copa": 1787326712583
+   "copa": 1787587116773
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7768,7 +7739,7 @@
    "2026-08-19": 7.5,
    "2026-08-20": -7.8,
    "2026-08-21": 3,
-   "2026-08-24": 2.1
+   "2026-08-24": 3.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
