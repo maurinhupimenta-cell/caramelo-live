@@ -416,13 +416,19 @@
   }
  },
  "o25": {
-  "saldo": -166.8,
-  "ciclos": 1348,
-  "greens": 840,
+  "saldo": -165.3,
+  "ciclos": 1349,
+  "greens": 841,
   "redsCiclo": 208,
   "aborts": 0,
   "descartes": 300,
   "historico": [
+   {
+    "quando": "2026-08-24T17:19:34.474Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "super · La Plata x Avellaneda @2.55 (tiro 1) · gatilho: coluna :16"
+   },
    {
     "quando": "2026-08-24T16:56:33.771Z",
     "resultado": "GREEN",
@@ -4016,25 +4022,19 @@
     "resultado": "GREEN",
     "unidades": 1.2,
     "detalhe": "euro · Inglaterra x Croácia @2.1 (tiro 2) · gatilho: seq RGGGG"
-   },
-   {
-    "quando": "2026-07-31T14:39:05.648Z",
-    "resultado": "GREEN",
-    "unidades": 2.2,
-    "detalhe": "premier · Aston x Leeds @2.62 (tiro 2) · gatilho: odd 2.62"
    }
   ],
   "consumidas": {
-   "super": 1787588371869,
    "copa": 1787589513668,
-   "euro": 1787590593573
+   "euro": 1787590593573,
+   "super": 1787591974275
   },
   "ciclo": null,
   "cooldown": {
    "copa": 1787589513668,
    "premier": 1787586286576,
    "euro": 1787590593573,
-   "super": 1787588371869
+   "super": 1787591974275
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4074,12 +4074,12 @@
    "2026-08-19": -9.7,
    "2026-08-20": 5.8,
    "2026-08-21": -2.5,
-   "2026-08-24": 1.1
+   "2026-08-24": 2.6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.02",
-   "n": 11,
+   "tipo": "coluna",
+   "chave": ":19",
+   "n": 18,
    "start": 1
   },
   "_obs": {}
