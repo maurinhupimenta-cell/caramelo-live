@@ -416,13 +416,19 @@
   }
  },
  "o25": {
-  "saldo": -152.8,
-  "ciclos": 1357,
+  "saldo": -159.8,
+  "ciclos": 1358,
   "greens": 849,
-  "redsCiclo": 208,
+  "redsCiclo": 209,
   "aborts": 0,
   "descartes": 300,
   "historico": [
+   {
+    "quando": "2026-08-24T21:41:35.272Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: coluna :28"
+   },
    {
     "quando": "2026-08-24T20:58:37.272Z",
     "resultado": "GREEN",
@@ -4016,64 +4022,15 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho seq RGGGG) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-31T18:00:25.814Z",
-    "resultado": "GREEN",
-    "unidades": 1.8,
-    "detalhe": "copa · Tunísia x Coreia do Sul @2.75 (tiro 1) · gatilho: seq RGRG"
    }
   ],
   "consumidas": {
-   "super": 1787605117076
+   "super": 1787605117076,
+   "copa": 1787607695074
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "22:25",
-     "jogo": "Bósnia e Herzegovina x Colômbia",
-     "odd": 2.1
-    },
-    {
-     "h": "22:28",
-     "jogo": "África do Sul x Japão",
-     "odd": 2.55
-    },
-    {
-     "h": "22:31",
-     "jogo": "Haiti x Canadá",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "coluna :28",
-   "alvo": {
-    "h": "22:31",
-    "jogo": "Haiti x Canadá",
-    "odd": 2.25,
-    "unidades": 4,
-    "desde": 1787607093268
-   },
-   "iniciadoEm": 1787606734268,
-   "tiros": [
-    {
-     "h": "22:25",
-     "jogo": "Bósnia e Herzegovina x Colômbia",
-     "odd": 2.1,
-     "unidades": 1
-    },
-    {
-     "h": "22:28",
-     "jogo": "África do Sul x Japão",
-     "odd": 2.55,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1787603133079,
+   "copa": 1787607695074,
    "premier": 1787586286576,
    "euro": 1787601092772,
    "super": 1787605117076
@@ -4116,7 +4073,7 @@
    "2026-08-19": -9.7,
    "2026-08-20": 5.8,
    "2026-08-21": -2.5,
-   "2026-08-24": 15.1
+   "2026-08-24": 8.1
   },
   "_gatilhoAtual": {
    "tipo": "seq",
