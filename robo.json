@@ -416,13 +416,19 @@
   }
  },
  "o25": {
-  "saldo": -165.3,
-  "ciclos": 1349,
-  "greens": 841,
+  "saldo": -163.8,
+  "ciclos": 1350,
+  "greens": 842,
   "redsCiclo": 208,
   "aborts": 0,
   "descartes": 300,
   "historico": [
+   {
+    "quando": "2026-08-24T17:50:33.170Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "copa · Suíça x Austrália @2.25 (tiro 2) · gatilho: time Austrália"
+   },
    {
     "quando": "2026-08-24T17:19:34.474Z",
     "resultado": "GREEN",
@@ -4016,59 +4022,16 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: seq GRRRG"
-   },
-   {
-    "quando": "2026-07-31T14:47:01.440Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "euro · Inglaterra x Croácia @2.1 (tiro 2) · gatilho: seq RGGGG"
    }
   ],
   "consumidas": {
    "euro": 1787590593573,
-   "super": 1787591974275
+   "super": 1787591974275,
+   "copa": 1787593832975
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "18:37",
-     "jogo": "Qatar x Bélgica",
-     "odd": 2.3
-    },
-    {
-     "h": "18:40",
-     "jogo": "Suíça x Austrália",
-     "odd": 2.25
-    },
-    {
-     "h": "18:43",
-     "jogo": "Iraque x Nova Zelândia",
-     "odd": 2.4
-    }
-   ],
-   "gatilho": "time Austrália",
-   "alvo": {
-    "h": "18:40",
-    "jogo": "Suíça x Austrália",
-    "odd": 2.25,
-    "unidades": 2,
-    "desde": 1787593353275
-   },
-   "iniciadoEm": 1787593115373,
-   "tiros": [
-    {
-     "h": "18:37",
-     "jogo": "Qatar x Bélgica",
-     "odd": 2.3,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1787589513668,
+   "copa": 1787593832975,
    "premier": 1787586286576,
    "euro": 1787590593573,
    "super": 1787591974275
@@ -4111,13 +4074,13 @@
    "2026-08-19": -9.7,
    "2026-08-20": 5.8,
    "2026-08-21": -2.5,
-   "2026-08-24": 2.6
+   "2026-08-24": 4.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Austrália",
-   "n": 14,
-   "start": 1
+   "n": 15,
+   "start": 3
   },
   "_obs": {}
  },
