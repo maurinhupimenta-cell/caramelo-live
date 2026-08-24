@@ -4025,10 +4025,39 @@
    }
   ],
   "consumidas": {
-   "euro": 1787601092772,
    "copa": 1787603133079
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:49",
+     "jogo": "Santos x Asuncion",
+     "odd": 2.4
+    },
+    {
+     "h": "21:52",
+     "jogo": "Itaquera x Avellaneda",
+     "odd": 2.35
+    },
+    {
+     "h": "21:55",
+     "jogo": "Montevideo x Asuncion",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "seq RGGG",
+   "alvo": {
+    "h": "21:49",
+    "jogo": "Santos x Asuncion",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1787604578178
+   },
+   "iniciadoEm": 1787604578178
+  },
   "cooldown": {
    "copa": 1787603133079,
    "premier": 1787586286576,
@@ -4076,9 +4105,9 @@
    "2026-08-24": 13.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":28",
-   "n": 21,
+   "tipo": "seq",
+   "chave": "RGGG",
+   "n": 18,
    "start": 1
   },
   "_obs": {}
