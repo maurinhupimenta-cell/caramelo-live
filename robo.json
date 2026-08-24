@@ -4028,7 +4028,37 @@
    "super": 1787595755474,
    "euro": 1787597256770
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "20:04",
+     "jogo": "Noruega x Alemanha",
+     "odd": 2.07
+    },
+    {
+     "h": "20:07",
+     "jogo": "Argentina x Austrália",
+     "odd": 2.15
+    },
+    {
+     "h": "20:10",
+     "jogo": "Arábia Saudita x Cabo Verde",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time Austrália",
+   "alvo": {
+    "h": "20:04",
+    "jogo": "Noruega x Alemanha",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1787597973474
+   },
+   "iniciadoEm": 1787597973474
+  },
   "cooldown": {
    "copa": 1787593832975,
    "premier": 1787586286576,
@@ -4076,10 +4106,10 @@
    "2026-08-24": 7.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGRR",
-   "n": 8,
-   "start": 1
+   "tipo": "time",
+   "chave": "Austrália",
+   "n": 16,
+   "start": 3
   },
   "_obs": {}
  },
