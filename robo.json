@@ -417,12 +417,18 @@
  },
  "o25": {
   "saldo": -168.3,
-  "ciclos": 1344,
+  "ciclos": 1345,
   "greens": 839,
   "redsCiclo": 208,
   "aborts": 0,
-  "descartes": 297,
+  "descartes": 298,
   "historico": [
+   {
+    "quando": "2026-08-24T16:38:35.874Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho odd 2.02) — liga REARMADA"
+   },
    {
     "quando": "2026-08-24T16:38:33.873Z",
     "resultado": "GREEN",
@@ -4016,12 +4022,6 @@
     "resultado": "GREEN",
     "unidades": 1.3,
     "detalhe": "euro · Escócia x Suíça @2.15 (tiro 2) · gatilho: coluna :11"
-   },
-   {
-    "quando": "2026-07-31T12:41:53.640Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq GGGG"
    }
   ],
   "consumidas": {
@@ -4029,7 +4029,37 @@
    "super": 1787588371869,
    "copa": 1787589513668
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:44",
+     "jogo": "Alemanha x Eslovênia",
+     "odd": 2.55
+    },
+    {
+     "h": "17:47",
+     "jogo": "Suíça x Inglaterra",
+     "odd": 2.02
+    },
+    {
+     "h": "17:50",
+     "jogo": "Croácia x Eslovênia",
+     "odd": 2.6
+    }
+   ],
+   "gatilho": "odd 2.02",
+   "alvo": {
+    "h": "17:44",
+    "jogo": "Alemanha x Eslovênia",
+    "odd": 2.55,
+    "unidades": 1,
+    "desde": 1787589517276
+   },
+   "iniciadoEm": 1787589517276
+  },
   "cooldown": {
    "copa": 1787589513668,
    "premier": 1787586286576,
@@ -4077,10 +4107,10 @@
    "2026-08-24": -0.4
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":28",
-   "n": 17,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.02",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  },
@@ -7694,7 +7724,6 @@
    }
   ],
   "consumidas": {
-   "super": 1787585972068,
    "euro": 1787586093470,
    "copa": 1787587116773
   },
@@ -7775,9 +7804,9 @@
    "2026-08-24": 3.1
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGRR",
-   "n": 19,
+   "tipo": "time",
+   "chave": "Brentford",
+   "n": 29,
    "start": 1
   },
   "_obs": {}
