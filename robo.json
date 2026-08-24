@@ -4029,8 +4029,8 @@
   },
   "ciclo": {
    "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
+   "degrau": 2,
+   "apostado": 3,
    "plano": [
     {
      "h": "22:25",
@@ -4050,11 +4050,11 @@
    ],
    "gatilho": "coluna :28",
    "alvo": {
-    "h": "22:28",
-    "jogo": "África do Sul x Japão",
-    "odd": 2.55,
-    "unidades": 2,
-    "desde": 1787606914178
+    "h": "22:31",
+    "jogo": "Haiti x Canadá",
+    "odd": 2.25,
+    "unidades": 4,
+    "desde": 1787607093268
    },
    "iniciadoEm": 1787606734268,
    "tiros": [
@@ -4063,6 +4063,12 @@
      "jogo": "Bósnia e Herzegovina x Colômbia",
      "odd": 2.1,
      "unidades": 1
+    },
+    {
+     "h": "22:28",
+     "jogo": "África do Sul x Japão",
+     "odd": 2.55,
+     "unidades": 2
     }
    ]
   },
@@ -4113,9 +4119,9 @@
    "2026-08-24": 15.1
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":28",
-   "n": 22,
+   "tipo": "seq",
+   "chave": "GGGRR",
+   "n": 10,
    "start": 1
   },
   "_obs": {}
