@@ -7734,7 +7734,37 @@
    "copa": 1787591643680,
    "super": 1787592877971
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:47",
+     "jogo": "Ucrânia x Alemanha",
+     "odd": 1.93
+    },
+    {
+     "h": "18:50",
+     "jogo": "Países Baixos x Croácia",
+     "odd": 1.85
+    },
+    {
+     "h": "18:53",
+     "jogo": "Eslovênia x Bélgica",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "seq RRRRR",
+   "alvo": {
+    "h": "18:47",
+    "jogo": "Ucrânia x Alemanha",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1787593773570
+   },
+   "iniciadoEm": 1787593773570
+  },
   "cooldown": {
    "euro": 1787586093470,
    "super": 1787592877971,
@@ -7781,9 +7811,9 @@
    "2026-08-24": -1.9
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":28",
-   "n": 18,
+   "tipo": "seq",
+   "chave": "RRRRR",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
