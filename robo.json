@@ -4025,11 +4025,40 @@
    }
   ],
   "consumidas": {
-   "copa": 1787589513668,
    "euro": 1787590593573,
    "super": 1787591974275
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:37",
+     "jogo": "Qatar x Bélgica",
+     "odd": 2.3
+    },
+    {
+     "h": "18:40",
+     "jogo": "Suíça x Austrália",
+     "odd": 2.25
+    },
+    {
+     "h": "18:43",
+     "jogo": "Iraque x Nova Zelândia",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "time Austrália",
+   "alvo": {
+    "h": "18:37",
+    "jogo": "Qatar x Bélgica",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1787593115373
+   },
+   "iniciadoEm": 1787593115373
+  },
   "cooldown": {
    "copa": 1787589513668,
    "premier": 1787586286576,
@@ -4077,9 +4106,9 @@
    "2026-08-24": 2.6
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":19",
-   "n": 18,
+   "tipo": "time",
+   "chave": "Austrália",
+   "n": 14,
    "start": 1
   },
   "_obs": {}
