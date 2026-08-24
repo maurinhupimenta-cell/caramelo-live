@@ -4128,12 +4128,18 @@
  },
  "ambas": {
   "saldo": -149,
-  "ciclos": 1378,
+  "ciclos": 1379,
   "greens": 939,
   "redsCiclo": 156,
   "aborts": 0,
-  "descartes": 283,
+  "descartes": 284,
   "historico": [
+   {
+    "quando": "2026-08-24T20:55:34.570Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho seq RRRRG) — liga REARMADA"
+   },
    {
     "quando": "2026-08-24T20:12:22.073Z",
     "resultado": "GREEN",
@@ -7727,12 +7733,6 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "euro · Turquia x Escócia @2.05 (tiro 2) · gatilho: coluna :59"
-   },
-   {
-    "quando": "2026-07-31T15:32:27.009Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Gana x EUA @2 (tiro 1) · gatilho: time Equador"
    }
   ],
   "consumidas": {
@@ -7790,6 +7790,11 @@
    "n": 10,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "copa": {
+    "desde": 1787604934569,
+    "gatilho": "seq RRRRG"
+   }
+  }
  }
 }
