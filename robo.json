@@ -416,13 +416,19 @@
   }
  },
  "o25": {
-  "saldo": -156.1,
-  "ciclos": 1355,
-  "greens": 847,
+  "saldo": -154.6,
+  "ciclos": 1356,
+  "greens": 848,
   "redsCiclo": 208,
   "aborts": 0,
   "descartes": 300,
   "historico": [
+   {
+    "quando": "2026-08-24T20:25:33.275Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "copa · Argélia x Nova Zelândia @2.25 (tiro 2) · gatilho: time Nova Zelândia"
+   },
    {
     "quando": "2026-08-24T19:51:32.874Z",
     "resultado": "GREEN",
@@ -4016,51 +4022,16 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho seq RGRG) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-31T17:20:28.611Z",
-    "resultado": "GREEN",
-    "unidades": 2.8,
-    "detalhe": "euro · Turquia x Eslovênia @2.9 (tiro 2) · gatilho: seq RGGRG"
    }
   ],
   "consumidas": {
    "super": 1787599913869,
-   "euro": 1787601092772
+   "euro": 1787601092772,
+   "copa": 1787603133079
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:19",
-     "jogo": "Escócia x Cabo Verde",
-     "odd": 2.5
-    },
-    {
-     "h": "21:22",
-     "jogo": "Argélia x Nova Zelândia",
-     "odd": 2.25
-    },
-    {
-     "h": "21:25",
-     "jogo": "Gana x Uruguai",
-     "odd": 2.3
-    }
-   ],
-   "gatilho": "time Nova Zelândia",
-   "alvo": {
-    "h": "21:19",
-    "jogo": "Escócia x Cabo Verde",
-    "odd": 2.5,
-    "unidades": 1,
-    "desde": 1787602414080
-   },
-   "iniciadoEm": 1787602414080
-  },
+  "ciclo": null,
   "cooldown": {
-   "copa": 1787598716572,
+   "copa": 1787603133079,
    "premier": 1787586286576,
    "euro": 1787601092772,
    "super": 1787599913869
@@ -4103,13 +4074,13 @@
    "2026-08-19": -9.7,
    "2026-08-20": 5.8,
    "2026-08-21": -2.5,
-   "2026-08-24": 11.8
+   "2026-08-24": 13.3
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Nova Zelândia",
-   "n": 16,
-   "start": 3
+   "tipo": "coluna",
+   "chave": ":28",
+   "n": 21,
+   "start": 1
   },
   "_obs": {}
  },
