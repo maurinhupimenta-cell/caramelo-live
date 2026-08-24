@@ -416,13 +416,19 @@
   }
  },
  "o25": {
-  "saldo": -163.8,
-  "ciclos": 1350,
-  "greens": 842,
+  "saldo": -161.9,
+  "ciclos": 1351,
+  "greens": 843,
   "redsCiclo": 208,
   "aborts": 0,
   "descartes": 300,
   "historico": [
+   {
+    "quando": "2026-08-24T18:22:35.767Z",
+    "resultado": "GREEN",
+    "unidades": 1.9,
+    "detalhe": "super · Asuncion x Penarol @2.45 (tiro 2) · gatilho: coluna :16"
+   },
    {
     "quando": "2026-08-24T17:50:33.170Z",
     "resultado": "GREEN",
@@ -4016,61 +4022,18 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "copa · green OBSERVADO no papel (gatilho time Canadá) — liga REARMADA"
-   },
-   {
-    "quando": "2026-07-31T15:04:15.949Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "copa · ciclo perdido (3 tiros) · gatilho: seq GRRRG"
    }
   ],
   "consumidas": {
-   "copa": 1787593832975
+   "copa": 1787593832975,
+   "super": 1787595755474
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "19:16",
-     "jogo": "Santiago x Buenos Aires",
-     "odd": 1.95
-    },
-    {
-     "h": "19:19",
-     "jogo": "Asuncion x Penarol",
-     "odd": 2.45
-    },
-    {
-     "h": "19:22",
-     "jogo": "Rio de Janeiro x Medellin",
-     "odd": 2.35
-    }
-   ],
-   "gatilho": "coluna :16",
-   "alvo": {
-    "h": "19:19",
-    "jogo": "Asuncion x Penarol",
-    "odd": 2.45,
-    "unidades": 2,
-    "desde": 1787595585573
-   },
-   "iniciadoEm": 1787595583077,
-   "tiros": [
-    {
-     "h": "19:16",
-     "jogo": "Santiago x Buenos Aires",
-     "odd": 1.95,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787593832975,
    "premier": 1787586286576,
    "euro": 1787590593573,
-   "super": 1787591974275
+   "super": 1787595755474
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4110,24 +4073,30 @@
    "2026-08-19": -9.7,
    "2026-08-20": 5.8,
    "2026-08-21": -2.5,
-   "2026-08-24": 4.1
+   "2026-08-24": 6
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.62",
-   "n": 12,
-   "start": 3
+   "tipo": "seq",
+   "chave": "RRRRG",
+   "n": 16,
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -145,
-  "ciclos": 1373,
-  "greens": 936,
+  "saldo": -144,
+  "ciclos": 1374,
+  "greens": 937,
   "redsCiclo": 155,
   "aborts": 0,
   "descartes": 282,
   "historico": [
+   {
+    "quando": "2026-08-24T18:23:37.072Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Marrocos x Bósnia e Herzegovina @1.98 (tiro 1) · gatilho: time Nova Zelândia"
+   },
    {
     "quando": "2026-08-24T18:02:48.767Z",
     "resultado": "GREEN",
@@ -7721,55 +7690,20 @@
     "resultado": "GREEN",
     "unidades": 0.8,
     "detalhe": "super · Sao Paulo x Medellin @1.95 (tiro 3) · gatilho: odd 1.83"
-   },
-   {
-    "quando": "2026-07-31T13:46:58.745Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "euro · Geórgia x Países Baixos @1.93 (tiro 1) · gatilho: odd 1.93"
    }
   ],
   "consumidas": {
    "super": 1787592877971,
    "euro": 1787594015670,
-   "premier": 1787594568481
+   "premier": 1787594568481,
+   "copa": 1787595816873
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "19:19",
-     "jogo": "Marrocos x Bósnia e Herzegovina",
-     "odd": 1.98
-    },
-    {
-     "h": "19:22",
-     "jogo": "Nova Zelândia x Argélia",
-     "odd": 1.95
-    },
-    {
-     "h": "19:25",
-     "jogo": "Uzbequistão x Suécia",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "time Nova Zelândia",
-   "alvo": {
-    "h": "19:19",
-    "jogo": "Marrocos x Bósnia e Herzegovina",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1787595273878
-   },
-   "iniciadoEm": 1787595273878
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787594015670,
    "super": 1787592877971,
    "premier": 1787594568481,
-   "copa": 1787591643680
+   "copa": 1787595816873
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7808,7 +7742,7 @@
    "2026-08-19": 7.5,
    "2026-08-20": -7.8,
    "2026-08-21": 3,
-   "2026-08-24": -0.3
+   "2026-08-24": 0.7
   },
   "_gatilhoAtual": {
    "tipo": "time",
