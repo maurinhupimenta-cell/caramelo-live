@@ -4021,7 +4021,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:25",
+     "jogo": "Qatar x Suíça",
+     "odd": 2.3
+    },
+    {
+     "h": "16:28",
+     "jogo": "Portugal x Coreia do Sul",
+     "odd": 2.35
+    },
+    {
+     "h": "16:31",
+     "jogo": "Irã x RD Congo",
+     "odd": 2.4
+    }
+   ],
+   "gatilho": "coluna :28",
+   "alvo": {
+    "h": "16:25",
+    "jogo": "Qatar x Suíça",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1787585053770
+   },
+   "iniciadoEm": 1787585053770
+  },
   "cooldown": {
    "copa": 1787325572678,
    "premier": 1787326372677,
@@ -4069,9 +4099,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
-   "chave": ":55",
+   "chave": ":28",
    "n": 16,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  },
@@ -7687,7 +7717,37 @@
   "consumidas": {
    "super": 1787326953172
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:27",
+     "jogo": "Newcastle x Leeds",
+     "odd": 2
+    },
+    {
+     "h": "16:30",
+     "jogo": "United x Brentford",
+     "odd": 2.07
+    },
+    {
+     "h": "16:33",
+     "jogo": "Newcastle x Wolverhampton",
+     "odd": 1.76
+    }
+   ],
+   "gatilho": "seq RRRRR",
+   "alvo": {
+    "h": "16:27",
+    "jogo": "Newcastle x Leeds",
+    "odd": 2,
+    "unidades": 1,
+    "desde": 1787585057177
+   },
+   "iniciadoEm": 1787585057177
+  },
   "cooldown": {
    "euro": 1787258194661,
    "super": 1787326953172,
@@ -7733,9 +7793,9 @@
    "2026-08-21": 3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":40",
-   "n": 16,
+   "tipo": "seq",
+   "chave": "RRRRR",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
