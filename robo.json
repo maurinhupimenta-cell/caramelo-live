@@ -7725,8 +7725,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "20:28",
@@ -7746,13 +7746,21 @@
    ],
    "gatilho": "time Nova Zelândia",
    "alvo": {
-    "h": "20:28",
-    "jogo": "Escócia x Coreia do Sul",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1787599417971
+    "h": "20:31",
+    "jogo": "Jordânia x Nova Zelândia",
+    "odd": 1.9,
+    "unidades": 2,
+    "desde": 1787599891076
    },
-   "iniciadoEm": 1787599417971
+   "iniciadoEm": 1787599417971,
+   "tiros": [
+    {
+     "h": "20:28",
+     "jogo": "Escócia x Coreia do Sul",
+     "odd": 2.3,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1787594015670,
@@ -7801,15 +7809,10 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGRRG",
-   "n": 19,
+   "chave": "GRRGR",
+   "n": 18,
    "start": 1
   },
-  "_obs": {
-   "super": {
-    "desde": 1787599715171,
-    "gatilho": "seq GRGGG"
-   }
-  }
+  "_obs": {}
  }
 }
