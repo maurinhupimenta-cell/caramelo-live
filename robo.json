@@ -7696,7 +7696,37 @@
   "consumidas": {
    "premier": 1787589707974
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:10",
+     "jogo": "Japão x Turquia",
+     "odd": 2.07
+    },
+    {
+     "h": "18:13",
+     "jogo": "Nova Zelândia x Austrália",
+     "odd": 1.9
+    },
+    {
+     "h": "18:16",
+     "jogo": "Gana x República Tcheca",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "time Nova Zelândia",
+   "alvo": {
+    "h": "18:10",
+    "jogo": "Japão x Turquia",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1787591075867
+   },
+   "iniciadoEm": 1787591075867
+  },
   "cooldown": {
    "euro": 1787586093470,
    "super": 1787585972068,
@@ -7744,9 +7774,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Brentford",
-   "n": 29,
-   "start": 1
+   "chave": "Nova Zelândia",
+   "n": 9,
+   "start": 3
   },
   "_obs": {}
  }
