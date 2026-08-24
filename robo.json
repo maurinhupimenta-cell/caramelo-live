@@ -4028,7 +4028,37 @@
    "super": 1787599913869,
    "euro": 1787601092772
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "21:19",
+     "jogo": "Escócia x Cabo Verde",
+     "odd": 2.5
+    },
+    {
+     "h": "21:22",
+     "jogo": "Argélia x Nova Zelândia",
+     "odd": 2.25
+    },
+    {
+     "h": "21:25",
+     "jogo": "Gana x Uruguai",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "time Nova Zelândia",
+   "alvo": {
+    "h": "21:19",
+    "jogo": "Escócia x Cabo Verde",
+    "odd": 2.5,
+    "unidades": 1,
+    "desde": 1787602414080
+   },
+   "iniciadoEm": 1787602414080
+  },
   "cooldown": {
    "copa": 1787598716572,
    "premier": 1787586286576,
@@ -4076,21 +4106,27 @@
    "2026-08-24": 11.8
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGRR",
-   "n": 9,
-   "start": 1
+   "tipo": "time",
+   "chave": "Nova Zelândia",
+   "n": 16,
+   "start": 3
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -150,
-  "ciclos": 1377,
-  "greens": 938,
+  "saldo": -149,
+  "ciclos": 1378,
+  "greens": 939,
   "redsCiclo": 156,
   "aborts": 0,
   "descartes": 283,
   "historico": [
+   {
+    "quando": "2026-08-24T20:12:22.073Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Leicester x United @1.98 (tiro 1) · gatilho: seq GGRRR"
+   },
    {
     "quando": "2026-08-24T19:49:36.272Z",
     "resultado": "GREEN",
@@ -7684,53 +7720,18 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "copa · Gana x EUA @2 (tiro 1) · gatilho: time Equador"
-   },
-   {
-    "quando": "2026-07-31T15:26:29.213Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "super · Montevideo x La Plata @2.05 (tiro 1) · gatilho: odd 2.02"
    }
   ],
   "consumidas": {
    "copa": 1787600257271,
-   "super": 1787600976075
+   "super": 1787600976075,
+   "premier": 1787602341880
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "21:09",
-     "jogo": "Leicester x United",
-     "odd": 1.98
-    },
-    {
-     "h": "21:12",
-     "jogo": "Southampton x Islington",
-     "odd": 2
-    },
-    {
-     "h": "21:15",
-     "jogo": "Watford x Brentford",
-     "odd": 2
-    }
-   ],
-   "gatilho": "seq GGRRR",
-   "alvo": {
-    "h": "21:09",
-    "jogo": "Leicester x United",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1787601986168
-   },
-   "iniciadoEm": 1787601986168
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787594015670,
    "super": 1787600976075,
-   "premier": 1787594568481,
+   "premier": 1787602341880,
    "copa": 1787600257271
   },
   "dias": {
@@ -7770,7 +7771,7 @@
    "2026-08-19": 7.5,
    "2026-08-20": -7.8,
    "2026-08-21": 3,
-   "2026-08-24": -5.3
+   "2026-08-24": -4.3
   },
   "_gatilhoAtual": {
    "tipo": "seq",
