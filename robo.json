@@ -412,13 +412,19 @@
   }
  },
  "o25": {
-  "saldo": -173.6,
-  "ciclos": 1341,
-  "greens": 836,
+  "saldo": -171.8,
+  "ciclos": 1342,
+  "greens": 837,
   "redsCiclo": 208,
   "aborts": 0,
   "descartes": 297,
   "historico": [
+   {
+    "quando": "2026-08-24T15:44:46.772Z",
+    "resultado": "GREEN",
+    "unidades": 1.8,
+    "detalhe": "premier · Everton x Leicester @2.2 (tiro 3) · gatilho: seq RRGGR"
+   },
    {
     "quando": "2026-08-24T15:31:51.368Z",
     "resultado": "RED_CICLO",
@@ -4012,66 +4018,17 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "copa · Argélia x Países Baixos @2.35 (tiro 1) · gatilho: seq RGGG"
-   },
-   {
-    "quando": "2026-07-31T12:19:46.738Z",
-    "resultado": "GREEN",
-    "unidades": 1.3,
-    "detalhe": "euro · Polônia x Países Baixos @2.25 (tiro 1) · gatilho: seq GGRRR"
    }
   ],
   "consumidas": {
    "copa": 1787585438178,
-   "euro": 1787585511167
+   "euro": 1787585511167,
+   "premier": 1787586286576
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "16:36",
-     "jogo": "Liverpool x Leicester",
-     "odd": 2.25
-    },
-    {
-     "h": "16:39",
-     "jogo": "Wolverhampton x Islington",
-     "odd": 2.07
-    },
-    {
-     "h": "16:42",
-     "jogo": "Everton x Leicester",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "seq RRGGR",
-   "alvo": {
-    "h": "16:42",
-    "jogo": "Everton x Leicester",
-    "odd": 2.2,
-    "unidades": 4,
-    "desde": 1787586107372
-   },
-   "iniciadoEm": 1787585620672,
-   "tiros": [
-    {
-     "h": "16:36",
-     "jogo": "Liverpool x Leicester",
-     "odd": 2.25,
-     "unidades": 1
-    },
-    {
-     "h": "16:39",
-     "jogo": "Wolverhampton x Islington",
-     "odd": 2.07,
-     "unidades": 2
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787585438178,
-   "premier": 1787326372677,
+   "premier": 1787586286576,
    "euro": 1787585511167,
    "super": 1787326952471
   },
@@ -4113,7 +4070,7 @@
    "2026-08-19": -9.7,
    "2026-08-20": 5.8,
    "2026-08-21": -2.5,
-   "2026-08-24": -5.7
+   "2026-08-24": -3.9
   },
   "_gatilhoAtual": {
    "tipo": "seq",
