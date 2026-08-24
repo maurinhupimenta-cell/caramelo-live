@@ -7697,7 +7697,37 @@
    "copa": 1787605115468,
    "super": 1787605357574
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:02",
+     "jogo": "Albânia x Áustria",
+     "odd": 2.2
+    },
+    {
+     "h": "22:05",
+     "jogo": "Ucrânia x Turquia",
+     "odd": 2.1
+    },
+    {
+     "h": "22:08",
+     "jogo": "Geórgia x Dinamarca",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "seq RRRRR",
+   "alvo": {
+    "h": "22:02",
+    "jogo": "Albânia x Áustria",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1787605414777
+   },
+   "iniciadoEm": 1787605414777
+  },
   "cooldown": {
    "euro": 1787594015670,
    "super": 1787605357574,
