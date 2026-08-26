@@ -4027,7 +4027,37 @@
   "consumidas": {
    "copa": 1787759918030
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:07",
+     "jogo": "Lima x Asuncion",
+     "odd": 2.2
+    },
+    {
+     "h": "17:10",
+     "jogo": "La Plata x Santiago",
+     "odd": 2.3
+    },
+    {
+     "h": "17:13",
+     "jogo": "Agua Branca x Avellaneda",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "seq RRRRR",
+   "alvo": {
+    "h": "17:07",
+    "jogo": "Lima x Asuncion",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1787760310131
+   },
+   "iniciadoEm": 1787760310131
+  },
   "cooldown": {
    "copa": 1787759918030,
    "premier": 1787586286576,
@@ -4077,8 +4107,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGRRG",
-   "n": 11,
+   "chave": "RRRRR",
+   "n": 29,
    "start": 1
   },
   "_obs": {}
@@ -7695,7 +7725,37 @@
   "consumidas": {
    "copa": 1787760276440
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:09",
+     "jogo": "City x Wolverhampton",
+     "odd": 1.83
+    },
+    {
+     "h": "17:12",
+     "jogo": "Southampton x Chelsea",
+     "odd": 2
+    },
+    {
+     "h": "17:15",
+     "jogo": "Liverpool x Norwich",
+     "odd": 2
+    }
+   ],
+   "gatilho": "coluna :12",
+   "alvo": {
+    "h": "17:09",
+    "jogo": "City x Wolverhampton",
+    "odd": 1.83,
+    "unidades": 1,
+    "desde": 1787760278139
+   },
+   "iniciadoEm": 1787760278139
+  },
   "cooldown": {
    "euro": 1787605538575,
    "super": 1787605357574,
