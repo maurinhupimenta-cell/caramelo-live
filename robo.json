@@ -7727,7 +7727,37 @@
    "copa": 1787760276440,
    "premier": 1787760891341
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:19",
+     "jogo": "Medellin x La Boca",
+     "odd": 2.1
+    },
+    {
+     "h": "17:22",
+     "jogo": "Avellaneda x Guayaquil",
+     "odd": 1.93
+    },
+    {
+     "h": "17:25",
+     "jogo": "Santiago x Montevideo",
+     "odd": 1.8
+    }
+   ],
+   "gatilho": "seq GRRGG",
+   "alvo": {
+    "h": "17:19",
+    "jogo": "Medellin x La Boca",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1787761052933
+   },
+   "iniciadoEm": 1787761052933
+  },
   "cooldown": {
    "euro": 1787605538575,
    "super": 1787605357574,
@@ -7775,9 +7805,9 @@
    "2026-08-26": 2
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":12",
-   "n": 17,
+   "tipo": "seq",
+   "chave": "GRRGG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
