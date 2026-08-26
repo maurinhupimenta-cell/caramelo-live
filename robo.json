@@ -7695,8 +7695,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "16:58",
@@ -7716,13 +7716,21 @@
    ],
    "gatilho": "time Croácia",
    "alvo": {
-    "h": "16:58",
-    "jogo": "França x Panamá",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1787759736931
+    "h": "17:01",
+    "jogo": "Croácia x Equador",
+    "odd": 1.98,
+    "unidades": 2,
+    "desde": 1787760213830
    },
-   "iniciadoEm": 1787759736931
+   "iniciadoEm": 1787759736931,
+   "tiros": [
+    {
+     "h": "16:58",
+     "jogo": "França x Panamá",
+     "odd": 2.1,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1787605538575,
@@ -7773,7 +7781,7 @@
    "tipo": "time",
    "chave": "Croácia",
    "n": 14,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
