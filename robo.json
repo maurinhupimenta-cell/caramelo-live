@@ -416,13 +416,25 @@
   }
  },
  "o25": {
-  "saldo": -159.8,
-  "ciclos": 1358,
-  "greens": 849,
+  "saldo": -158.3,
+  "ciclos": 1360,
+  "greens": 850,
   "redsCiclo": 209,
   "aborts": 0,
-  "descartes": 300,
+  "descartes": 301,
   "historico": [
+   {
+    "quando": "2026-08-26T15:58:38.136Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "copa · EUA x Irã @2.5 (tiro 1) · gatilho: seq RGRRG"
+   },
+   {
+    "quando": "2026-08-26T15:55:36.833Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho seq RGRRG) — liga REARMADA"
+   },
    {
     "quando": "2026-08-24T21:41:35.272Z",
     "resultado": "RED_CICLO",
@@ -4010,26 +4022,14 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "copa · Portugal x RD Congo @2.07 (tiro 2) · gatilho: seq RGRG"
-   },
-   {
-    "quando": "2026-07-31T19:45:20.910Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: seq RGGGG"
-   },
-   {
-    "quando": "2026-07-31T19:34:29.817Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho seq RGGGG) — liga REARMADA"
    }
   ],
   "consumidas": {
-   "copa": 1787607695074
+   "copa": 1787759918030
   },
   "ciclo": null,
   "cooldown": {
-   "copa": 1787607695074,
+   "copa": 1787759918030,
    "premier": 1787586286576,
    "euro": 1787601092772,
    "super": 1787605117076
@@ -4072,12 +4072,13 @@
    "2026-08-19": -9.7,
    "2026-08-20": 5.8,
    "2026-08-21": -2.5,
-   "2026-08-24": 8.1
+   "2026-08-24": 8.1,
+   "2026-08-26": 1.5
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "GGGRR",
-   "n": 10,
+   "chave": "RGRRG",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
@@ -7691,11 +7692,38 @@
     "detalhe": "copa · green OBSERVADO no papel (gatilho time Equador) — liga REARMADA"
    }
   ],
-  "consumidas": {
-   "copa": 1787605115468,
-   "super": 1787605357574
+  "consumidas": {},
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "16:58",
+     "jogo": "França x Panamá",
+     "odd": 2.1
+    },
+    {
+     "h": "17:01",
+     "jogo": "Croácia x Equador",
+     "odd": 1.98
+    },
+    {
+     "h": "17:04",
+     "jogo": "Paraguai x Nova Zelândia",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "time Croácia",
+   "alvo": {
+    "h": "16:58",
+    "jogo": "França x Panamá",
+    "odd": 2.1,
+    "unidades": 1,
+    "desde": 1787759736931
+   },
+   "iniciadoEm": 1787759736931
   },
-  "ciclo": null,
   "cooldown": {
    "euro": 1787605538575,
    "super": 1787605357574,
@@ -7742,10 +7770,10 @@
    "2026-08-24": -1.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRR",
-   "n": 16,
-   "start": 1
+   "tipo": "time",
+   "chave": "Croácia",
+   "n": 14,
+   "start": 2
   },
   "_obs": {}
  }
