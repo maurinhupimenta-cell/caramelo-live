@@ -7733,12 +7733,41 @@
    }
   ],
   "consumidas": {
-   "copa": 1787760276440,
    "premier": 1787760891341,
    "super": 1787761624842,
    "euro": 1787763035240
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:04",
+     "jogo": "Croácia x Curaçao",
+     "odd": 2.07
+    },
+    {
+     "h": "18:07",
+     "jogo": "Espanha x Argentina",
+     "odd": 1.86
+    },
+    {
+     "h": "18:10",
+     "jogo": "Arábia Saudita x Bélgica",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "time Croácia",
+   "alvo": {
+    "h": "18:04",
+    "jogo": "Croácia x Curaçao",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1787763876737
+   },
+   "iniciadoEm": 1787763876737
+  },
   "cooldown": {
    "euro": 1787763035240,
    "super": 1787761624842,
@@ -7786,9 +7815,9 @@
    "2026-08-26": -3.3
   },
   "_gatilhoAtual": {
-   "tipo": "coluna",
-   "chave": ":47",
-   "n": 17,
+   "tipo": "time",
+   "chave": "Croácia",
+   "n": 15,
    "start": 1
   },
   "_obs": {}
