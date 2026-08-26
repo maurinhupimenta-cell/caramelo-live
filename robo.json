@@ -4084,13 +4084,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -146,
-  "ciclos": 1382,
-  "greens": 942,
+  "saldo": -145,
+  "ciclos": 1383,
+  "greens": 943,
   "redsCiclo": 156,
   "aborts": 0,
   "descartes": 284,
   "historico": [
+   {
+    "quando": "2026-08-26T16:04:36.731Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Croácia x Equador @1.98 (tiro 2) · gatilho: time Croácia"
+   },
    {
     "quando": "2026-08-24T21:05:38.775Z",
     "resultado": "GREEN",
@@ -7684,59 +7690,17 @@
     "resultado": "GREEN",
     "unidades": 0.7,
     "detalhe": "euro · Inglaterra x Alemanha @1.83 (tiro 2) · gatilho: odd 1.83"
-   },
-   {
-    "quando": "2026-07-31T17:37:27.909Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "copa · green OBSERVADO no papel (gatilho time Equador) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "16:58",
-     "jogo": "França x Panamá",
-     "odd": 2.1
-    },
-    {
-     "h": "17:01",
-     "jogo": "Croácia x Equador",
-     "odd": 1.98
-    },
-    {
-     "h": "17:04",
-     "jogo": "Paraguai x Nova Zelândia",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "time Croácia",
-   "alvo": {
-    "h": "17:01",
-    "jogo": "Croácia x Equador",
-    "odd": 1.98,
-    "unidades": 2,
-    "desde": 1787760213830
-   },
-   "iniciadoEm": 1787759736931,
-   "tiros": [
-    {
-     "h": "16:58",
-     "jogo": "França x Panamá",
-     "odd": 2.1,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "copa": 1787760276440
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787605538575,
    "super": 1787605357574,
    "premier": 1787602341880,
-   "copa": 1787605115468
+   "copa": 1787760276440
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7775,13 +7739,14 @@
    "2026-08-19": 7.5,
    "2026-08-20": -7.8,
    "2026-08-21": 3,
-   "2026-08-24": -1.3
+   "2026-08-24": -1.3,
+   "2026-08-26": 1
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Croácia",
-   "n": 14,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":12",
+   "n": 17,
+   "start": 2
   },
   "_obs": {}
  }
