@@ -4031,8 +4031,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:41",
@@ -4052,13 +4052,21 @@
    ],
    "gatilho": "seq RGGRR",
    "alvo": {
-    "h": "17:41",
-    "jogo": "Eslovênia x Polônia",
-    "odd": 2.87,
-    "unidades": 1,
-    "desde": 1787762430729
+    "h": "17:44",
+    "jogo": "Áustria x Croácia",
+    "odd": 2.25,
+    "unidades": 2,
+    "desde": 1787762674537
    },
-   "iniciadoEm": 1787762430729
+   "iniciadoEm": 1787762430729,
+   "tiros": [
+    {
+     "h": "17:41",
+     "jogo": "Eslovênia x Polônia",
+     "odd": 2.87,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1787759918030,
@@ -7729,7 +7737,37 @@
    "premier": 1787760891341,
    "super": 1787761624842
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:44",
+     "jogo": "Áustria x Croácia",
+     "odd": 1.98
+    },
+    {
+     "h": "17:47",
+     "jogo": "Sérvia x Albânia",
+     "odd": 2.37
+    },
+    {
+     "h": "17:50",
+     "jogo": "República Tcheca x Itália",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "coluna :47",
+   "alvo": {
+    "h": "17:44",
+    "jogo": "Áustria x Croácia",
+    "odd": 1.98,
+    "unidades": 1,
+    "desde": 1787762430935
+   },
+   "iniciadoEm": 1787762430935
+  },
   "cooldown": {
    "euro": 1787605538575,
    "super": 1787761624842,
@@ -7777,10 +7815,10 @@
    "2026-08-26": -5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GRRGG",
-   "n": 8,
-   "start": 1
+   "tipo": "coluna",
+   "chave": ":47",
+   "n": 17,
+   "start": 2
   },
   "_obs": {}
  }
