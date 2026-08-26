@@ -4029,7 +4029,37 @@
    "super": 1787760751541,
    "premier": 1787761114829
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:41",
+     "jogo": "Eslovênia x Polônia",
+     "odd": 2.87
+    },
+    {
+     "h": "17:44",
+     "jogo": "Áustria x Croácia",
+     "odd": 2.25
+    },
+    {
+     "h": "17:47",
+     "jogo": "Sérvia x Albânia",
+     "odd": 2.9
+    }
+   ],
+   "gatilho": "seq RGGRR",
+   "alvo": {
+    "h": "17:41",
+    "jogo": "Eslovênia x Polônia",
+    "odd": 2.87,
+    "unidades": 1,
+    "desde": 1787762430729
+   },
+   "iniciadoEm": 1787762430729
+  },
   "cooldown": {
    "copa": 1787759918030,
    "premier": 1787761114829,
@@ -4078,9 +4108,9 @@
    "2026-08-26": 4.3
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.35",
-   "n": 16,
+   "tipo": "seq",
+   "chave": "RGGRR",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
