@@ -4029,8 +4029,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:07",
@@ -4050,13 +4050,21 @@
    ],
    "gatilho": "seq RRRRR",
    "alvo": {
-    "h": "17:07",
-    "jogo": "Lima x Asuncion",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1787760310131
+    "h": "17:10",
+    "jogo": "La Plata x Santiago",
+    "odd": 2.3,
+    "unidades": 2,
+    "desde": 1787760556633
    },
-   "iniciadoEm": 1787760310131
+   "iniciadoEm": 1787760310131,
+   "tiros": [
+    {
+     "h": "17:07",
+     "jogo": "Lima x Asuncion",
+     "odd": 2.2,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1787759918030,
@@ -4106,10 +4114,10 @@
    "2026-08-26": 1.5
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRRRR",
-   "n": 29,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.35",
+   "n": 16,
+   "start": 3
   },
   "_obs": {}
  },
@@ -7806,7 +7814,7 @@
    "tipo": "coluna",
    "chave": ":12",
    "n": 17,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
