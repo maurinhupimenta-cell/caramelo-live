@@ -4025,7 +4025,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "22:00",
+     "jogo": "United x Newcastle",
+     "odd": 2.07
+    },
+    {
+     "h": "22:03",
+     "jogo": "Wolverhampton x Brentford",
+     "odd": 2.15
+    },
+    {
+     "h": "22:06",
+     "jogo": "Chelsea x West Ham",
+     "odd": 2.5
+    }
+   ],
+   "gatilho": "time United",
+   "alvo": {
+    "h": "22:00",
+    "jogo": "United x Newcastle",
+    "odd": 2.07,
+    "unidades": 1,
+    "desde": 1787777841729
+   },
+   "iniciadoEm": 1787777841729
+  },
   "cooldown": {
    "copa": 1787764831340,
    "premier": 1787761114829,
@@ -4074,9 +4104,9 @@
    "2026-08-26": 7.3
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "GGGRG",
-   "n": 8,
+   "tipo": "time",
+   "chave": "United",
+   "n": 31,
    "start": 1
   },
   "_obs": {}
