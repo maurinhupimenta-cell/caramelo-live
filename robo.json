@@ -4029,7 +4029,37 @@
    "premier": 1787761114829,
    "euro": 1787762851643
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "18:01",
+     "jogo": "República Tcheca x Suíça",
+     "odd": 2.4
+    },
+    {
+     "h": "18:04",
+     "jogo": "Croácia x Curaçao",
+     "odd": 2.25
+    },
+    {
+     "h": "18:07",
+     "jogo": "Espanha x Argentina",
+     "odd": 2.1
+    }
+   ],
+   "gatilho": "seq GGGRG",
+   "alvo": {
+    "h": "18:01",
+    "jogo": "República Tcheca x Suíça",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1787763695337
+   },
+   "iniciadoEm": 1787763695337
+  },
   "cooldown": {
    "copa": 1787759918030,
    "premier": 1787761114829,
@@ -4079,8 +4109,8 @@
   },
   "_gatilhoAtual": {
    "tipo": "seq",
-   "chave": "RGGRR",
-   "n": 11,
+   "chave": "GGGRG",
+   "n": 8,
    "start": 1
   },
   "_obs": {}
