@@ -416,13 +416,19 @@
   }
  },
  "o25": {
-  "saldo": -158.3,
-  "ciclos": 1360,
-  "greens": 850,
+  "saldo": -156.7,
+  "ciclos": 1361,
+  "greens": 851,
   "redsCiclo": 209,
   "aborts": 0,
   "descartes": 301,
   "historico": [
+   {
+    "quando": "2026-08-26T16:12:31.829Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "super · La Plata x Santiago @2.3 (tiro 2) · gatilho: seq RRRRR"
+   },
    {
     "quando": "2026-08-26T15:58:38.136Z",
     "resultado": "GREEN",
@@ -4016,61 +4022,18 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "euro · Bélgica x Países Baixos @2.02 (tiro 2) · gatilho: odd 2.02"
-   },
-   {
-    "quando": "2026-07-31T19:58:27.014Z",
-    "resultado": "GREEN",
-    "unidades": 1.1,
-    "detalhe": "copa · Portugal x RD Congo @2.07 (tiro 2) · gatilho: seq RGRG"
    }
   ],
   "consumidas": {
-   "copa": 1787759918030
+   "copa": 1787759918030,
+   "super": 1787760751541
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:07",
-     "jogo": "Lima x Asuncion",
-     "odd": 2.2
-    },
-    {
-     "h": "17:10",
-     "jogo": "La Plata x Santiago",
-     "odd": 2.3
-    },
-    {
-     "h": "17:13",
-     "jogo": "Agua Branca x Avellaneda",
-     "odd": 2.2
-    }
-   ],
-   "gatilho": "seq RRRRR",
-   "alvo": {
-    "h": "17:10",
-    "jogo": "La Plata x Santiago",
-    "odd": 2.3,
-    "unidades": 2,
-    "desde": 1787760556633
-   },
-   "iniciadoEm": 1787760310131,
-   "tiros": [
-    {
-     "h": "17:07",
-     "jogo": "Lima x Asuncion",
-     "odd": 2.2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787759918030,
    "premier": 1787586286576,
    "euro": 1787601092772,
-   "super": 1787605117076
+   "super": 1787760751541
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4111,7 +4074,7 @@
    "2026-08-20": 5.8,
    "2026-08-21": -2.5,
    "2026-08-24": 8.1,
-   "2026-08-26": 1.5
+   "2026-08-26": 3.1
   },
   "_gatilhoAtual": {
    "tipo": "odd",
