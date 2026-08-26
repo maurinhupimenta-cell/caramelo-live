@@ -416,13 +416,19 @@
   }
  },
  "o25": {
-  "saldo": -155.5,
-  "ciclos": 1362,
-  "greens": 852,
+  "saldo": -154,
+  "ciclos": 1363,
+  "greens": 853,
   "redsCiclo": 209,
   "aborts": 0,
   "descartes": 301,
   "historico": [
+   {
+    "quando": "2026-08-26T16:47:31.836Z",
+    "resultado": "GREEN",
+    "unidades": 1.5,
+    "detalhe": "euro · Áustria x Croácia @2.25 (tiro 2) · gatilho: seq RGGRR"
+   },
    {
     "quando": "2026-08-26T16:18:35.030Z",
     "resultado": "GREEN",
@@ -4016,62 +4022,19 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "super · Lima x Montevideo @2.05 (tiro 2) · gatilho: odd 2.05"
-   },
-   {
-    "quando": "2026-07-31T22:43:27.077Z",
-    "resultado": "GREEN",
-    "unidades": 2,
-    "detalhe": "copa · Gana x Canadá @2.5 (tiro 2) · gatilho: time Canadá"
    }
   ],
   "consumidas": {
    "copa": 1787759918030,
    "super": 1787760751541,
-   "premier": 1787761114829
+   "premier": 1787761114829,
+   "euro": 1787762851643
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:41",
-     "jogo": "Eslovênia x Polônia",
-     "odd": 2.87
-    },
-    {
-     "h": "17:44",
-     "jogo": "Áustria x Croácia",
-     "odd": 2.25
-    },
-    {
-     "h": "17:47",
-     "jogo": "Sérvia x Albânia",
-     "odd": 2.9
-    }
-   ],
-   "gatilho": "seq RGGRR",
-   "alvo": {
-    "h": "17:44",
-    "jogo": "Áustria x Croácia",
-    "odd": 2.25,
-    "unidades": 2,
-    "desde": 1787762674537
-   },
-   "iniciadoEm": 1787762430729,
-   "tiros": [
-    {
-     "h": "17:41",
-     "jogo": "Eslovênia x Polônia",
-     "odd": 2.87,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787759918030,
    "premier": 1787761114829,
-   "euro": 1787601092772,
+   "euro": 1787762851643,
    "super": 1787760751541
   },
   "dias": {
@@ -4113,7 +4076,7 @@
    "2026-08-20": 5.8,
    "2026-08-21": -2.5,
    "2026-08-24": 8.1,
-   "2026-08-26": 4.3
+   "2026-08-26": 5.8
   },
   "_gatilhoAtual": {
    "tipo": "seq",
@@ -7739,8 +7702,8 @@
   },
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "17:44",
@@ -7760,13 +7723,21 @@
    ],
    "gatilho": "coluna :47",
    "alvo": {
-    "h": "17:44",
-    "jogo": "Áustria x Croácia",
-    "odd": 1.98,
-    "unidades": 1,
-    "desde": 1787762430935
+    "h": "17:47",
+    "jogo": "Sérvia x Albânia",
+    "odd": 2.37,
+    "unidades": 2,
+    "desde": 1787762851936
    },
-   "iniciadoEm": 1787762430935
+   "iniciadoEm": 1787762430935,
+   "tiros": [
+    {
+     "h": "17:44",
+     "jogo": "Áustria x Croácia",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "euro": 1787605538575,
@@ -7818,7 +7789,7 @@
    "tipo": "coluna",
    "chave": ":47",
    "n": 17,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
