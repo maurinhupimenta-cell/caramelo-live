@@ -4028,7 +4028,37 @@
    "copa": 1787759918030,
    "super": 1787760751541
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "17:15",
+     "jogo": "Liverpool x Norwich",
+     "odd": 2.2
+    },
+    {
+     "h": "17:18",
+     "jogo": "Leicester x Watford",
+     "odd": 2.35
+    },
+    {
+     "h": "17:21",
+     "jogo": "Burnley x Everton",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "odd 2.35",
+   "alvo": {
+    "h": "17:15",
+    "jogo": "Liverpool x Norwich",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1787760753733
+   },
+   "iniciadoEm": 1787760753733
+  },
   "cooldown": {
    "copa": 1787759918030,
    "premier": 1787586286576,
@@ -4085,13 +4115,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -145,
-  "ciclos": 1383,
-  "greens": 943,
+  "saldo": -144,
+  "ciclos": 1384,
+  "greens": 944,
   "redsCiclo": 156,
   "aborts": 0,
   "descartes": 284,
   "historico": [
+   {
+    "quando": "2026-08-26T16:14:51.633Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "premier · Southampton x Chelsea @2 (tiro 2) · gatilho: coluna :12"
+   },
    {
     "quando": "2026-08-26T16:04:36.731Z",
     "resultado": "GREEN",
@@ -7685,60 +7721,17 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "copa · Equador x Turquia @1.93 (tiro 2) · gatilho: seq RGGGR"
-   },
-   {
-    "quando": "2026-07-31T17:40:26.911Z",
-    "resultado": "GREEN",
-    "unidades": 0.7,
-    "detalhe": "euro · Inglaterra x Alemanha @1.83 (tiro 2) · gatilho: odd 1.83"
    }
   ],
   "consumidas": {
-   "copa": 1787760276440
+   "copa": 1787760276440,
+   "premier": 1787760891341
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "17:09",
-     "jogo": "City x Wolverhampton",
-     "odd": 1.83
-    },
-    {
-     "h": "17:12",
-     "jogo": "Southampton x Chelsea",
-     "odd": 2
-    },
-    {
-     "h": "17:15",
-     "jogo": "Liverpool x Norwich",
-     "odd": 2
-    }
-   ],
-   "gatilho": "coluna :12",
-   "alvo": {
-    "h": "17:12",
-    "jogo": "Southampton x Chelsea",
-    "odd": 2,
-    "unidades": 2,
-    "desde": 1787760707139
-   },
-   "iniciadoEm": 1787760278139,
-   "tiros": [
-    {
-     "h": "17:09",
-     "jogo": "City x Wolverhampton",
-     "odd": 1.83,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787605538575,
    "super": 1787605357574,
-   "premier": 1787602341880,
+   "premier": 1787760891341,
    "copa": 1787760276440
   },
   "dias": {
@@ -7779,7 +7772,7 @@
    "2026-08-20": -7.8,
    "2026-08-21": 3,
    "2026-08-24": -1.3,
-   "2026-08-26": 1
+   "2026-08-26": 2
   },
   "_gatilhoAtual": {
    "tipo": "coluna",
