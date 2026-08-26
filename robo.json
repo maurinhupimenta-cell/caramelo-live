@@ -416,13 +416,19 @@
   }
  },
  "o25": {
-  "saldo": -152.5,
-  "ciclos": 1364,
+  "saldo": -159.5,
+  "ciclos": 1365,
   "greens": 854,
-  "redsCiclo": 209,
+  "redsCiclo": 210,
   "aborts": 0,
   "descartes": 301,
   "historico": [
+   {
+    "quando": "2026-08-26T21:08:53.130Z",
+    "resultado": "RED_CICLO",
+    "unidades": -7,
+    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: time United"
+   },
    {
     "quando": "2026-08-26T17:20:31.629Z",
     "resultado": "GREEN",
@@ -4016,63 +4022,15 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho odd 2.25) — liga REARMADA"
-   },
-   {
-    "quando": "2026-08-01T01:11:26.059Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "euro · Países Baixos x Ucrânia @2.15 (tiro 1) · gatilho: seq RRRR"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 2,
-   "apostado": 3,
-   "plano": [
-    {
-     "h": "22:00",
-     "jogo": "United x Newcastle",
-     "odd": 2.07
-    },
-    {
-     "h": "22:03",
-     "jogo": "Wolverhampton x Brentford",
-     "odd": 2.15
-    },
-    {
-     "h": "22:06",
-     "jogo": "Chelsea x West Ham",
-     "odd": 2.5
-    }
-   ],
-   "gatilho": "time United",
-   "alvo": {
-    "h": "22:06",
-    "jogo": "Chelsea x West Ham",
-    "odd": 2.5,
-    "unidades": 4,
-    "desde": 1787778323339
-   },
-   "iniciadoEm": 1787777841729,
-   "tiros": [
-    {
-     "h": "22:00",
-     "jogo": "United x Newcastle",
-     "odd": 2.07,
-     "unidades": 1
-    },
-    {
-     "h": "22:03",
-     "jogo": "Wolverhampton x Brentford",
-     "odd": 2.15,
-     "unidades": 2
-    }
-   ]
+  "consumidas": {
+   "premier": 1787778532837
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787764831340,
-   "premier": 1787761114829,
+   "premier": 1787778532837,
    "euro": 1787762851643,
    "super": 1787760751541
   },
@@ -4115,7 +4073,7 @@
    "2026-08-20": 5.8,
    "2026-08-21": -2.5,
    "2026-08-24": 8.1,
-   "2026-08-26": 7.3
+   "2026-08-26": 0.3
   },
   "_gatilhoAtual": {
    "tipo": "time",
