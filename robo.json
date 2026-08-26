@@ -416,13 +416,19 @@
   }
  },
  "o25": {
-  "saldo": -156.7,
-  "ciclos": 1361,
-  "greens": 851,
+  "saldo": -155.5,
+  "ciclos": 1362,
+  "greens": 852,
   "redsCiclo": 209,
   "aborts": 0,
   "descartes": 301,
   "historico": [
+   {
+    "quando": "2026-08-26T16:18:35.030Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · Liverpool x Norwich @2.2 (tiro 1) · gatilho: odd 2.35"
+   },
    {
     "quando": "2026-08-26T16:12:31.829Z",
     "resultado": "GREEN",
@@ -4016,52 +4022,17 @@
     "resultado": "GREEN",
     "unidades": 2,
     "detalhe": "copa · Gana x Canadá @2.5 (tiro 2) · gatilho: time Canadá"
-   },
-   {
-    "quando": "2026-07-31T20:53:33.311Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "euro · Bélgica x Países Baixos @2.02 (tiro 2) · gatilho: odd 2.02"
    }
   ],
   "consumidas": {
    "copa": 1787759918030,
-   "super": 1787760751541
+   "super": 1787760751541,
+   "premier": 1787761114829
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "17:15",
-     "jogo": "Liverpool x Norwich",
-     "odd": 2.2
-    },
-    {
-     "h": "17:18",
-     "jogo": "Leicester x Watford",
-     "odd": 2.35
-    },
-    {
-     "h": "17:21",
-     "jogo": "Burnley x Everton",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "odd 2.35",
-   "alvo": {
-    "h": "17:15",
-    "jogo": "Liverpool x Norwich",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1787760753733
-   },
-   "iniciadoEm": 1787760753733
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787759918030,
-   "premier": 1787586286576,
+   "premier": 1787761114829,
    "euro": 1787601092772,
    "super": 1787760751541
   },
@@ -4104,7 +4075,7 @@
    "2026-08-20": 5.8,
    "2026-08-21": -2.5,
    "2026-08-24": 8.1,
-   "2026-08-26": 3.1
+   "2026-08-26": 4.3
   },
   "_gatilhoAtual": {
    "tipo": "odd",
