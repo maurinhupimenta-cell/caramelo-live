@@ -7703,7 +7703,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "02:16",
+     "jogo": "La Plata x Asuncion",
+     "odd": 2.2
+    },
+    {
+     "h": "02:19",
+     "jogo": "Montevideo x Penarol",
+     "odd": 2
+    },
+    {
+     "h": "02:22",
+     "jogo": "Lima x Agua Branca",
+     "odd": 1.86
+    }
+   ],
+   "gatilho": "placar goleada (3+)",
+   "alvo": {
+    "h": "02:16",
+    "jogo": "La Plata x Asuncion",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1788311949033
+   },
+   "iniciadoEm": 1788311949033
+  },
   "cooldown": {
    "euro": 1787763035240,
    "super": 1787761624842,
@@ -7751,9 +7781,9 @@
    "2026-08-26": -2.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Croácia",
-   "n": 16,
+   "tipo": "placar",
+   "chave": "goleada (3+)",
+   "n": 11,
    "start": 1
   },
   "_obs": {}
