@@ -426,12 +426,18 @@
  },
  "o25": {
   "saldo": -158.2,
-  "ciclos": 1366,
+  "ciclos": 1367,
   "greens": 855,
   "redsCiclo": 210,
   "aborts": 0,
-  "descartes": 301,
+  "descartes": 302,
   "historico": [
+   {
+    "quando": "2026-09-02T01:35:47.428Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "premier · green OBSERVADO no papel (gatilho odd 2.2) — liga REARMADA"
+   },
    {
     "quando": "2026-09-02T01:03:15.245Z",
     "resultado": "GREEN",
@@ -4025,12 +4031,6 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "euro · Croácia x República Tcheca @2.5 (tiro 1) · gatilho: seq RRRR"
-   },
-   {
-    "quando": "2026-08-01T02:11:43.559Z",
-    "resultado": "GREEN",
-    "unidades": 1.6,
-    "detalhe": "premier · Leicester x Leeds @2.6 (tiro 1) · gatilho: odd 2.25"
    }
   ],
   "consumidas": {
@@ -4091,7 +4091,12 @@
    "n": 9,
    "start": 1
   },
-  "_obs": {}
+  "_obs": {
+   "premier": {
+    "desde": 1788312947428,
+    "gatilho": "odd 2.2"
+   }
+  }
  },
  "ambas": {
   "saldo": -147.2,
