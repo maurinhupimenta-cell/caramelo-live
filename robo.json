@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -115,
-  "ciclos": 215,
-  "greens": 74,
+  "saldo": -111.2,
+  "ciclos": 216,
+  "greens": 75,
   "redsCiclo": 88,
   "aborts": 0,
   "descartes": 53,
   "historico": [
+   {
+    "quando": "2026-09-02T01:14:43.728Z",
+    "resultado": "GREEN",
+    "unidades": 3.8,
+    "detalhe": "premier · Brentford x Aston @4.75 (tiro 1) · gatilho: odd 4.33"
+   },
    {
     "quando": "2026-08-20T01:06:32.362Z",
     "resultado": "GREEN",
@@ -362,41 +368,13 @@
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "02:12",
-     "jogo": "Brentford x Aston",
-     "odd": 4.75
-    },
-    {
-     "h": "02:15",
-     "jogo": "Watford x Liverpool",
-     "odd": 4.33
-    },
-    {
-     "h": "02:18",
-     "jogo": "West Ham x Brentford",
-     "odd": 5.5
-    }
-   ],
-   "gatilho": "odd 4.33",
-   "alvo": {
-    "h": "02:12",
-    "jogo": "Brentford x Aston",
-    "odd": 4.75,
-    "unidades": 1,
-    "desde": 1788311496834
-   },
-   "iniciadoEm": 1788311496834
+  "consumidas": {
+   "premier": 1788311683528
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786370517941,
-   "premier": 1787187992166,
+   "premier": 1788311683528,
    "euro": 1785464913993,
    "super": 1786764145328
   },
@@ -422,18 +400,19 @@
    "2026-08-14": -7,
    "2026-08-15": -7,
    "2026-08-18": 13,
-   "2026-08-19": 5
+   "2026-08-19": 5,
+   "2026-09-01": 3.8
   },
   "_gatilhoAtual": {
    "tipo": "odd",
    "chave": "4.33",
    "n": 8,
-   "start": 3
+   "start": 2
   },
   "_obs": {
    "euro": {
-    "desde": 1785463711484,
-    "gatilho": "time Eslovênia"
+    "desde": 1788311651529,
+    "gatilho": "seq RRRRR"
    },
    "super": {
     "desde": 1787186969067,
