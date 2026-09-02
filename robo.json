@@ -4094,13 +4094,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -148.2,
-  "ciclos": 1390,
-  "greens": 946,
+  "saldo": -147.2,
+  "ciclos": 1391,
+  "greens": 947,
   "redsCiclo": 157,
   "aborts": 0,
   "descartes": 287,
   "historico": [
+   {
+    "quando": "2026-09-02T01:25:12.328Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Montevideo x Penarol @2 (tiro 2) · gatilho: placar goleada (3+)"
+   },
    {
     "quando": "2026-08-26T17:27:31.635Z",
     "resultado": "GREEN_OBS",
@@ -7694,49 +7700,15 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "super · La Plata x Medellin @2.25 (tiro 2) · gatilho: odd 2.25"
-   },
-   {
-    "quando": "2026-07-31T20:08:30.011Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "copa · Marrocos x Brasil @1.98 (tiro 2) · gatilho: time Brasil"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "02:16",
-     "jogo": "La Plata x Asuncion",
-     "odd": 2.2
-    },
-    {
-     "h": "02:19",
-     "jogo": "Montevideo x Penarol",
-     "odd": 2
-    },
-    {
-     "h": "02:22",
-     "jogo": "Lima x Agua Branca",
-     "odd": 1.86
-    }
-   ],
-   "gatilho": "placar goleada (3+)",
-   "alvo": {
-    "h": "02:16",
-    "jogo": "La Plata x Asuncion",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1788311949033
-   },
-   "iniciadoEm": 1788311949033
+  "consumidas": {
+   "super": 1788312312035
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787763035240,
-   "super": 1787761624842,
+   "super": 1788312312035,
    "premier": 1787760891341,
    "copa": 1787765131931
   },
@@ -7778,7 +7750,8 @@
    "2026-08-20": -7.8,
    "2026-08-21": 3,
    "2026-08-24": -1.3,
-   "2026-08-26": -2.2
+   "2026-08-26": -2.2,
+   "2026-09-01": 1
   },
   "_gatilhoAtual": {
    "tipo": "placar",
