@@ -416,13 +416,19 @@
   }
  },
  "o25": {
-  "saldo": -159.5,
-  "ciclos": 1365,
-  "greens": 854,
+  "saldo": -158.2,
+  "ciclos": 1366,
+  "greens": 855,
   "redsCiclo": 210,
   "aborts": 0,
   "descartes": 301,
   "historico": [
+   {
+    "quando": "2026-09-02T01:03:15.245Z",
+    "resultado": "GREEN",
+    "unidades": 1.3,
+    "detalhe": "super · Lima x Santos @2.25 (tiro 1) · gatilho: placar goleada (3+)"
+   },
    {
     "quando": "2026-08-26T21:08:53.130Z",
     "resultado": "RED_CICLO",
@@ -4016,51 +4022,17 @@
     "resultado": "GREEN",
     "unidades": 1.6,
     "detalhe": "premier · Leicester x Leeds @2.6 (tiro 1) · gatilho: odd 2.25"
-   },
-   {
-    "quando": "2026-08-01T02:02:59.165Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho odd 2.25) — liga REARMADA"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "01:58",
-     "jogo": "Lima x Santos",
-     "odd": 2.25
-    },
-    {
-     "h": "02:01",
-     "jogo": "La Plata x Buenos Aires",
-     "odd": 2.3
-    },
-    {
-     "h": "02:04",
-     "jogo": "Bogota x Penarol",
-     "odd": 2.75
-    }
-   ],
-   "gatilho": "placar goleada (3+)",
-   "alvo": {
-    "h": "01:58",
-    "jogo": "Lima x Santos",
-    "odd": 2.25,
-    "unidades": 1,
-    "desde": 1788310782726
-   },
-   "iniciadoEm": 1788310782726
+  "consumidas": {
+   "super": 1788310994933
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787764831340,
    "premier": 1787778532837,
    "euro": 1787762851643,
-   "super": 1787760751541
+   "super": 1788310994933
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4101,7 +4073,8 @@
    "2026-08-20": 5.8,
    "2026-08-21": -2.5,
    "2026-08-24": 8.1,
-   "2026-08-26": 0.3
+   "2026-08-26": 0.3,
+   "2026-09-01": 1.3
   },
   "_gatilhoAtual": {
    "tipo": "placar",
