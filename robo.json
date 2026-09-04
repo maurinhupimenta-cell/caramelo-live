@@ -4154,13 +4154,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -145,
-  "ciclos": 1395,
-  "greens": 949,
+  "saldo": -144.1,
+  "ciclos": 1396,
+  "greens": 950,
   "redsCiclo": 157,
   "aborts": 0,
   "descartes": 289,
   "historico": [
+   {
+    "quando": "2026-09-04T03:19:43.075Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "copa · Costa do Marfim x Turquia @1.93 (tiro 2) · gatilho: odd 2.1"
+   },
    {
     "quando": "2026-09-04T03:16:41.180Z",
     "resultado": "GREEN_OBS",
@@ -7754,54 +7760,19 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "euro · Áustria x Alemanha @1.93 (tiro 2) · gatilho: odd 1.93"
-   },
-   {
-    "quando": "2026-07-31T22:40:28.075Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "super · Guayaquil x Santos @1.95 (tiro 2) · gatilho: seq GRRRG"
    }
   ],
   "consumidas": {
    "premier": 1788490058289,
-   "super": 1788490666075
+   "super": 1788490666075,
+   "copa": 1788491982875
   },
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:07",
-     "jogo": "Irã x Nova Zelândia",
-     "odd": 2.1
-    },
-    {
-     "h": "04:10",
-     "jogo": "Costa do Marfim x Turquia",
-     "odd": 1.93
-    },
-    {
-     "h": "04:13",
-     "jogo": "República Tcheca x Gana",
-     "odd": 2.1
-    }
-   ],
-   "gatilho": "odd 2.1",
-   "alvo": {
-    "h": "04:07",
-    "jogo": "Irã x Nova Zelândia",
-    "odd": 2.1,
-    "unidades": 1,
-    "desde": 1788491855270
-   },
-   "iniciadoEm": 1788491855270
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787763035240,
    "super": 1788490666075,
    "premier": 1788490058289,
-   "copa": 1787765131931
+   "copa": 1788491982875
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7844,7 +7815,7 @@
    "2026-08-26": -2.2,
    "2026-09-01": 1,
    "2026-09-03": 2.2,
-   "2026-09-04": 0
+   "2026-09-04": 0.9
   },
   "_gatilhoAtual": {
    "tipo": "odd",
