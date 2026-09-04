@@ -4062,11 +4062,40 @@
    }
   ],
   "consumidas": {
-   "super": 1788493421677,
    "euro": 1788494352074,
    "premier": 1788496434773
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:52",
+     "jogo": "Rio de Janeiro x Agua Branca",
+     "odd": 2.15
+    },
+    {
+     "h": "05:55",
+     "jogo": "Montevideo x Guayaquil",
+     "odd": 2.05
+    },
+    {
+     "h": "05:58",
+     "jogo": "La Boca x Sao Paulo",
+     "odd": 2.2
+    }
+   ],
+   "gatilho": "time Montevideo",
+   "alvo": {
+    "h": "05:52",
+    "jogo": "Rio de Janeiro x Agua Branca",
+    "odd": 2.15,
+    "unidades": 1,
+    "desde": 1788497030573
+   },
+   "iniciadoEm": 1788497030573
+  },
   "cooldown": {
    "copa": 1787764831340,
    "premier": 1788496434773,
@@ -4119,9 +4148,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Watford",
-   "n": 9,
-   "start": 1
+   "chave": "Montevideo",
+   "n": 11,
+   "start": 3
   },
   "_obs": {}
  },
