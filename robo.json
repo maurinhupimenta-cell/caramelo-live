@@ -7744,7 +7744,37 @@
    "copa": 1788499000882,
    "super": 1788499541671
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:36",
+     "jogo": "West Ham x Leeds",
+     "odd": 2.35
+    },
+    {
+     "h": "06:39",
+     "jogo": "Palace x Burnley",
+     "odd": 1.87
+    },
+    {
+     "h": "06:42",
+     "jogo": "Newcastle x West Ham",
+     "odd": 2
+    }
+   ],
+   "gatilho": "odd 1.87",
+   "alvo": {
+    "h": "06:36",
+    "jogo": "West Ham x Leeds",
+    "odd": 2.35,
+    "unidades": 1,
+    "desde": 1788499659783
+   },
+   "iniciadoEm": 1788499659783
+  },
   "cooldown": {
    "euro": 1787763035240,
    "super": 1788499541671,
@@ -7795,10 +7825,10 @@
    "2026-09-04": -3.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Avellaneda",
-   "n": 13,
-   "start": 2
+   "tipo": "odd",
+   "chave": "1.87",
+   "n": 10,
+   "start": 3
   },
   "_obs": {}
  }
