@@ -4065,7 +4065,37 @@
    "super": 1788493421677,
    "euro": 1788494352074
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:27",
+     "jogo": "Chelsea x Tottenham",
+     "odd": 2.4
+    },
+    {
+     "h": "05:30",
+     "jogo": "Southampton x Watford",
+     "odd": 2.4
+    },
+    {
+     "h": "05:33",
+     "jogo": "United x Everton",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time Watford",
+   "alvo": {
+    "h": "05:27",
+    "jogo": "Chelsea x Tottenham",
+    "odd": 2.4,
+    "unidades": 1,
+    "desde": 1788495701071
+   },
+   "iniciadoEm": 1788495701071
+  },
   "cooldown": {
    "copa": 1787764831340,
    "premier": 1788492040072,
@@ -4118,9 +4148,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Eslováquia",
+   "chave": "Watford",
    "n": 9,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
