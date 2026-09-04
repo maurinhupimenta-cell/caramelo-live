@@ -4126,13 +4126,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -143.2,
-  "ciclos": 1397,
-  "greens": 951,
+  "saldo": -142.2,
+  "ciclos": 1398,
+  "greens": 952,
   "redsCiclo": 157,
   "aborts": 0,
   "descartes": 289,
   "historico": [
+   {
+    "quando": "2026-09-04T04:06:40.468Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "super · Guayaquil x Santos @1.95 (tiro 1) · gatilho: time Lima"
+   },
    {
     "quando": "2026-09-04T04:05:38.772Z",
     "resultado": "GREEN",
@@ -7726,52 +7732,17 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "premier · Brighton x Chelsea @1.85 (tiro 1) · gatilho: odd 1.95"
-   },
-   {
-    "quando": "2026-08-01T01:50:26.857Z",
-    "resultado": "GREEN",
-    "unidades": 1.4,
-    "detalhe": "euro · Croácia x Eslovênia @2.2 (tiro 2) · gatilho: time Eslovênia"
    }
   ],
   "consumidas": {
    "copa": 1788491982875,
-   "premier": 1788494738572
+   "premier": 1788494738572,
+   "super": 1788494800181
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:04",
-     "jogo": "Guayaquil x Santos",
-     "odd": 1.95
-    },
-    {
-     "h": "05:07",
-     "jogo": "Lima x Penarol",
-     "odd": 2
-    },
-    {
-     "h": "05:10",
-     "jogo": "Itaquera x La Boca",
-     "odd": 2.05
-    }
-   ],
-   "gatilho": "time Lima",
-   "alvo": {
-    "h": "05:04",
-    "jogo": "Guayaquil x Santos",
-    "odd": 1.95,
-    "unidades": 1,
-    "desde": 1788494739672
-   },
-   "iniciadoEm": 1788494739672
-  },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787763035240,
-   "super": 1788490666075,
+   "super": 1788494800181,
    "premier": 1788494738572,
    "copa": 1788491982875
   },
@@ -7816,13 +7787,13 @@
    "2026-08-26": -2.2,
    "2026-09-01": 1,
    "2026-09-03": 2.2,
-   "2026-09-04": 1.8
+   "2026-09-04": 2.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Lima",
-   "n": 12,
-   "start": 1
+   "chave": "Montevideo",
+   "n": 10,
+   "start": 2
   },
   "_obs": {}
  }
