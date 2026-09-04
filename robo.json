@@ -453,13 +453,19 @@
   }
  },
  "o25": {
-  "saldo": -151.9,
-  "ciclos": 1374,
-  "greens": 860,
+  "saldo": -150.5,
+  "ciclos": 1375,
+  "greens": 861,
   "redsCiclo": 210,
   "aborts": 0,
   "descartes": 304,
   "historico": [
+   {
+    "quando": "2026-09-04T04:33:55.068Z",
+    "resultado": "GREEN",
+    "unidades": 1.4,
+    "detalhe": "premier · Chelsea x Tottenham @2.4 (tiro 1) · gatilho: time Watford"
+   },
    {
     "quando": "2026-09-04T03:59:12.276Z",
     "resultado": "GREEN",
@@ -4053,52 +4059,17 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "premier · Burnley x Norwich @2.1 (tiro 1) · gatilho: seq GRGRR"
-   },
-   {
-    "quando": "2026-08-01T06:29:48.660Z",
-    "resultado": "GREEN_OBS",
-    "unidades": 0,
-    "detalhe": "premier · green OBSERVADO no papel (gatilho seq GRGRR) — liga REARMADA"
    }
   ],
   "consumidas": {
    "super": 1788493421677,
-   "euro": 1788494352074
+   "euro": 1788494352074,
+   "premier": 1788496434773
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "05:27",
-     "jogo": "Chelsea x Tottenham",
-     "odd": 2.4
-    },
-    {
-     "h": "05:30",
-     "jogo": "Southampton x Watford",
-     "odd": 2.4
-    },
-    {
-     "h": "05:33",
-     "jogo": "United x Everton",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "time Watford",
-   "alvo": {
-    "h": "05:27",
-    "jogo": "Chelsea x Tottenham",
-    "odd": 2.4,
-    "unidades": 1,
-    "desde": 1788495701071
-   },
-   "iniciadoEm": 1788495701071
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787764831340,
-   "premier": 1788492040072,
+   "premier": 1788496434773,
    "euro": 1788494352074,
    "super": 1788493421677
   },
@@ -4144,13 +4115,13 @@
    "2026-08-26": 0.3,
    "2026-09-01": 2.7,
    "2026-09-03": 1.2,
-   "2026-09-04": 3.7
+   "2026-09-04": 5.1
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Watford",
    "n": 9,
-   "start": 3
+   "start": 1
   },
   "_obs": {}
  },
