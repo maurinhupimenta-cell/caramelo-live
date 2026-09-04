@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -102.5,
-  "ciclos": 221,
-  "greens": 77,
+  "saldo": -96,
+  "ciclos": 222,
+  "greens": 78,
   "redsCiclo": 88,
   "aborts": 0,
   "descartes": 56,
   "historico": [
+   {
+    "quando": "2026-09-04T05:09:44.175Z",
+    "resultado": "GREEN",
+    "unidades": 6.5,
+    "detalhe": "euro · Eslováquia x Áustria @4.75 (tiro 2) · gatilho: time Eslováquia"
+   },
    {
     "quando": "2026-09-04T03:59:12.070Z",
     "resultado": "GREEN",
@@ -398,50 +404,14 @@
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "06:02",
-     "jogo": "Países Baixos x Turquia",
-     "odd": 4.5
-    },
-    {
-     "h": "06:05",
-     "jogo": "Eslováquia x Áustria",
-     "odd": 4.75
-    },
-    {
-     "h": "06:08",
-     "jogo": "Dinamarca x Suíça",
-     "odd": 4.5
-    }
-   ],
-   "gatilho": "time Eslováquia",
-   "alvo": {
-    "h": "06:05",
-    "jogo": "Eslováquia x Áustria",
-    "odd": 4.75,
-    "unidades": 2,
-    "desde": 1788498399680
-   },
-   "iniciadoEm": 1788497979680,
-   "tiros": [
-    {
-     "h": "06:02",
-     "jogo": "Países Baixos x Turquia",
-     "odd": 4.5,
-     "unidades": 1
-    }
-   ]
+  "consumidas": {
+   "euro": 1788498583970
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786370517941,
    "premier": 1788311683528,
-   "euro": 1788494351870,
+   "euro": 1788498583970,
    "super": 1786764145328
   },
   "dias": {
@@ -469,13 +439,13 @@
    "2026-08-19": 5,
    "2026-09-01": 3.8,
    "2026-09-03": 3.2,
-   "2026-09-04": 5.5
+   "2026-09-04": 12
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Eslováquia",
    "n": 12,
-   "start": 1
+   "start": 3
   },
   "_obs": {
    "super": {
@@ -489,13 +459,19 @@
   }
  },
  "o25": {
-  "saldo": -149.4,
-  "ciclos": 1376,
-  "greens": 862,
+  "saldo": -147.8,
+  "ciclos": 1377,
+  "greens": 863,
   "redsCiclo": 210,
   "aborts": 0,
   "descartes": 304,
   "historico": [
+   {
+    "quando": "2026-09-04T05:09:44.477Z",
+    "resultado": "GREEN",
+    "unidades": 1.6,
+    "detalhe": "euro · Eslováquia x Áustria @2.3 (tiro 2) · gatilho: time Eslováquia"
+   },
    {
     "quando": "2026-09-04T04:58:44.874Z",
     "resultado": "GREEN",
@@ -4089,53 +4065,18 @@
     "resultado": "RED_CICLO",
     "unidades": -7,
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: coluna :14"
-   },
-   {
-    "quando": "2026-08-01T06:42:55.456Z",
-    "resultado": "GREEN",
-    "unidades": 1.2,
-    "detalhe": "super · Buenos Aires x Santos @2.2 (tiro 1) · gatilho: seq RGGG"
    }
   ],
   "consumidas": {
    "premier": 1788496434773,
-   "super": 1788497924673
+   "super": 1788497924673,
+   "euro": 1788498584269
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:02",
-     "jogo": "Países Baixos x Turquia",
-     "odd": 2.3
-    },
-    {
-     "h": "06:05",
-     "jogo": "Eslováquia x Áustria",
-     "odd": 2.3
-    },
-    {
-     "h": "06:08",
-     "jogo": "Dinamarca x Suíça",
-     "odd": 2.25
-    }
-   ],
-   "gatilho": "time Eslováquia",
-   "alvo": {
-    "h": "06:02",
-    "jogo": "Países Baixos x Turquia",
-    "odd": 2.3,
-    "unidades": 1,
-    "desde": 1788497980171
-   },
-   "iniciadoEm": 1788497980171
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787764831340,
    "premier": 1788496434773,
-   "euro": 1788494352074,
+   "euro": 1788498584269,
    "super": 1788497924673
   },
   "dias": {
@@ -4180,13 +4121,13 @@
    "2026-08-26": 0.3,
    "2026-09-01": 2.7,
    "2026-09-03": 1.2,
-   "2026-09-04": 6.2
+   "2026-09-04": 7.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Eslováquia",
    "n": 12,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  },
@@ -7799,9 +7740,7 @@
     "detalhe": "premier · Brighton x Chelsea @1.85 (tiro 1) · gatilho: odd 1.95"
    }
   ],
-  "consumidas": {
-   "super": 1788494800181
-  },
+  "consumidas": {},
   "ciclo": {
    "liga": "copa",
    "degrau": 0,
@@ -7883,10 +7822,10 @@
    "2026-09-04": 2.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Watford",
-   "n": 11,
-   "start": 1
+   "tipo": "odd",
+   "chave": "2.1",
+   "n": 12,
+   "start": 2
   },
   "_obs": {}
  }
