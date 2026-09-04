@@ -4086,7 +4086,37 @@
    "premier": 1788492040072,
    "super": 1788493421677
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:56",
+     "jogo": "Albânia x Turquia",
+     "odd": 2.87
+    },
+    {
+     "h": "04:59",
+     "jogo": "França x Países Baixos",
+     "odd": 1.98
+    },
+    {
+     "h": "05:02",
+     "jogo": "Polônia x Albânia",
+     "odd": 2.87
+    }
+   ],
+   "gatilho": "time Países Baixos",
+   "alvo": {
+    "h": "04:56",
+    "jogo": "Albânia x Turquia",
+    "odd": 2.87,
+    "unidades": 1,
+    "desde": 1788494197169
+   },
+   "iniciadoEm": 1788494197169
+  },
   "cooldown": {
    "copa": 1787764831340,
    "premier": 1788492040072,
@@ -4139,7 +4169,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Montevideo",
+   "chave": "Países Baixos",
    "n": 9,
    "start": 1
   },
@@ -7755,7 +7785,6 @@
    }
   ],
   "consumidas": {
-   "super": 1788490666075,
    "copa": 1788491982875
   },
   "ciclo": {
@@ -7842,7 +7871,7 @@
    "tipo": "time",
    "chave": "Burnley",
    "n": 10,
-   "start": 3
+   "start": 2
   },
   "_obs": {}
  }
