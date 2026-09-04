@@ -7743,7 +7743,45 @@
   "consumidas": {
    "copa": 1788499000882
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 1,
+   "apostado": 1,
+   "plano": [
+    {
+     "h": "06:16",
+     "jogo": "Penarol x Belo Horizonte",
+     "odd": 1.98
+    },
+    {
+     "h": "06:19",
+     "jogo": "Montevideo x Itaquera",
+     "odd": 1.93
+    },
+    {
+     "h": "06:22",
+     "jogo": "Penarol x Porto Alegre",
+     "odd": 2.3
+    }
+   ],
+   "gatilho": "time Montevideo",
+   "alvo": {
+    "h": "06:19",
+    "jogo": "Montevideo x Itaquera",
+    "odd": 1.93,
+    "unidades": 2,
+    "desde": 1788499118578
+   },
+   "iniciadoEm": 1788499002168,
+   "tiros": [
+    {
+     "h": "06:16",
+     "jogo": "Penarol x Belo Horizonte",
+     "odd": 1.98,
+     "unidades": 1
+    }
+   ]
+  },
   "cooldown": {
    "euro": 1787763035240,
    "super": 1788494800181,
@@ -7797,7 +7835,7 @@
    "tipo": "time",
    "chave": "Watford",
    "n": 13,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  }
