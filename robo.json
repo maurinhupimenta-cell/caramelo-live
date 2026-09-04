@@ -446,13 +446,19 @@
   }
  },
  "o25": {
-  "saldo": -154.7,
-  "ciclos": 1372,
-  "greens": 858,
+  "saldo": -153.8,
+  "ciclos": 1373,
+  "greens": 859,
   "redsCiclo": 210,
   "aborts": 0,
   "descartes": 304,
   "historico": [
+   {
+    "quando": "2026-09-04T03:43:41.877Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "super · Buenos Aires x Sao Paulo @1.98 (tiro 3) · gatilho: time Montevideo"
+   },
    {
     "quando": "2026-09-04T03:20:40.276Z",
     "resultado": "GREEN",
@@ -4046,62 +4052,19 @@
     "resultado": "GREEN",
     "unidades": 1.9,
     "detalhe": "super · Porto Alegre x Guayaquil @2.45 (tiro 2) · gatilho: time Guayaquil"
-   },
-   {
-    "quando": "2026-08-01T05:09:30.360Z",
-    "resultado": "GREEN",
-    "unidades": 2.6,
-    "detalhe": "euro · Hungria x Áustria @2.4 (tiro 3) · gatilho: seq RRRR"
    }
   ],
   "consumidas": {
    "euro": 1788490541076,
-   "premier": 1788492040072
+   "premier": 1788492040072,
+   "super": 1788493421677
   },
-  "ciclo": {
-   "liga": "super",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "04:31",
-     "jogo": "Montevideo x Avellaneda",
-     "odd": 2.2
-    },
-    {
-     "h": "04:34",
-     "jogo": "Rio de Janeiro x Guayaquil",
-     "odd": 2.15
-    },
-    {
-     "h": "04:37",
-     "jogo": "Buenos Aires x Sao Paulo",
-     "odd": 1.98
-    }
-   ],
-   "gatilho": "time Montevideo",
-   "alvo": {
-    "h": "04:34",
-    "jogo": "Rio de Janeiro x Guayaquil",
-    "odd": 2.15,
-    "unidades": 2,
-    "desde": 1788493060579
-   },
-   "iniciadoEm": 1788492458176,
-   "tiros": [
-    {
-     "h": "04:31",
-     "jogo": "Montevideo x Avellaneda",
-     "odd": 2.2,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787764831340,
    "premier": 1788492040072,
    "euro": 1788490541076,
-   "super": 1788310994933
+   "super": 1788493421677
   },
   "dias": {
    "2026-07-15": -19.6,
@@ -4145,13 +4108,13 @@
    "2026-08-26": 0.3,
    "2026-09-01": 2.7,
    "2026-09-03": 1.2,
-   "2026-09-04": 0.9
+   "2026-09-04": 1.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Montevideo",
    "n": 9,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
