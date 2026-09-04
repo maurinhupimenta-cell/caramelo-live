@@ -4059,8 +4059,8 @@
   },
   "ciclo": {
    "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "04:15",
@@ -4080,13 +4080,21 @@
    ],
    "gatilho": "time Newcastle",
    "alvo": {
-    "h": "04:15",
-    "jogo": "United x Aston",
-    "odd": 2.35,
-    "unidades": 1,
-    "desde": 1788491502770
+    "h": "04:18",
+    "jogo": "Newcastle x Wolverhampton",
+    "odd": 1.95,
+    "unidades": 2,
+    "desde": 1788491854972
    },
-   "iniciadoEm": 1788491502770
+   "iniciadoEm": 1788491502770,
+   "tiros": [
+    {
+     "h": "04:15",
+     "jogo": "United x Aston",
+     "odd": 2.35,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1787764831340,
@@ -4147,12 +4155,18 @@
  },
  "ambas": {
   "saldo": -145,
-  "ciclos": 1394,
+  "ciclos": 1395,
   "greens": 949,
   "redsCiclo": 157,
   "aborts": 0,
-  "descartes": 288,
+  "descartes": 289,
   "historico": [
+   {
+    "quando": "2026-09-04T03:16:41.180Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "copa · green OBSERVADO no papel (gatilho odd 2.1) — liga REARMADA"
+   },
    {
     "quando": "2026-09-04T03:16:39.974Z",
     "resultado": "DESCARTADO",
@@ -7746,12 +7760,6 @@
     "resultado": "GREEN",
     "unidades": 0.9,
     "detalhe": "super · Guayaquil x Santos @1.95 (tiro 2) · gatilho: seq GRRRG"
-   },
-   {
-    "quando": "2026-07-31T22:25:36.110Z",
-    "resultado": "DESCARTADO",
-    "unidades": 0,
-    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
    }
   ],
   "consumidas": {
@@ -7764,11 +7772,6 @@
    "apostado": 0,
    "plano": [
     {
-     "h": "04:04",
-     "jogo": "Brasil x México",
-     "odd": 1.95
-    },
-    {
      "h": "04:07",
      "jogo": "Irã x Nova Zelândia",
      "odd": 2.1
@@ -7777,17 +7780,22 @@
      "h": "04:10",
      "jogo": "Costa do Marfim x Turquia",
      "odd": 1.93
+    },
+    {
+     "h": "04:13",
+     "jogo": "República Tcheca x Gana",
+     "odd": 2.1
     }
    ],
    "gatilho": "odd 2.1",
    "alvo": {
-    "h": "04:04",
-    "jogo": "Brasil x México",
-    "odd": 1.95,
+    "h": "04:07",
+    "jogo": "Irã x Nova Zelândia",
+    "odd": 2.1,
     "unidades": 1,
-    "desde": 1788490841376
+    "desde": 1788491855270
    },
-   "iniciadoEm": 1788490841376
+   "iniciadoEm": 1788491855270
   },
   "cooldown": {
    "euro": 1787763035240,
