@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -111.2,
-  "ciclos": 219,
-  "greens": 75,
+  "saldo": -108,
+  "ciclos": 220,
+  "greens": 76,
   "redsCiclo": 88,
   "aborts": 0,
   "descartes": 56,
   "historico": [
+   {
+    "quando": "2026-09-04T02:55:41.069Z",
+    "resultado": "GREEN",
+    "unidades": 3.2,
+    "detalhe": "euro · Eslováquia x Alemanha @4.2 (tiro 1) · gatilho: time Ucrânia"
+   },
    {
     "quando": "2026-09-04T02:51:41.169Z",
     "resultado": "GREEN_OBS",
@@ -386,42 +392,14 @@
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:44",
-     "jogo": "Eslováquia x Alemanha",
-     "odd": 4.2
-    },
-    {
-     "h": "03:47",
-     "jogo": "Eslovênia x Ucrânia",
-     "odd": 5.5
-    },
-    {
-     "h": "03:50",
-     "jogo": "Geórgia x Polônia",
-     "odd": 5.5
-    }
-   ],
-   "gatilho": "time Ucrânia",
-   "alvo": {
-    "h": "03:44",
-    "jogo": "Eslováquia x Alemanha",
-    "odd": 4.2,
-    "unidades": 1,
-    "desde": 1788490302477
-   },
-   "iniciadoEm": 1788490302477
+  "consumidas": {
+   "euro": 1788490540779
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786370517941,
    "premier": 1788311683528,
-   "euro": 1785464913993,
+   "euro": 1788490540779,
    "super": 1786764145328
   },
   "dias": {
@@ -448,7 +426,7 @@
    "2026-08-18": 13,
    "2026-08-19": 5,
    "2026-09-01": 3.8,
-   "2026-09-03": 0
+   "2026-09-03": 3.2
   },
   "_gatilhoAtual": {
    "tipo": "time",
