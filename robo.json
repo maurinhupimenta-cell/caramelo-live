@@ -392,10 +392,38 @@
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {
-   "euro": 1788490540779
+  "consumidas": {},
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:56",
+     "jogo": "Albânia x Turquia",
+     "odd": 6.5
+    },
+    {
+     "h": "04:59",
+     "jogo": "França x Países Baixos",
+     "odd": 3.6
+    },
+    {
+     "h": "05:02",
+     "jogo": "Polônia x Albânia",
+     "odd": 6.5
+    }
+   ],
+   "gatilho": "time Países Baixos",
+   "alvo": {
+    "h": "04:56",
+    "jogo": "Albânia x Turquia",
+    "odd": 6.5,
+    "unidades": 1,
+    "desde": 1788494196777
+   },
+   "iniciadoEm": 1788494196777
   },
-  "ciclo": null,
   "cooldown": {
    "copa": 1786370517941,
    "premier": 1788311683528,
@@ -430,9 +458,9 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Ucrânia",
-   "n": 10,
-   "start": 2
+   "chave": "Países Baixos",
+   "n": 9,
+   "start": 1
   },
   "_obs": {
    "super": {
@@ -4055,7 +4083,6 @@
    }
   ],
   "consumidas": {
-   "euro": 1788490541076,
    "premier": 1788492040072,
    "super": 1788493421677
   },
