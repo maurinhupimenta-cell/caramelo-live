@@ -7731,7 +7731,37 @@
    "super": 1788490666075,
    "copa": 1788491982875
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "05:03",
+     "jogo": "Brentford x City",
+     "odd": 1.93
+    },
+    {
+     "h": "05:06",
+     "jogo": "Burnley x United",
+     "odd": 1.9
+    },
+    {
+     "h": "05:09",
+     "jogo": "Leicester x Southampton",
+     "odd": 2.05
+    }
+   ],
+   "gatilho": "time Burnley",
+   "alvo": {
+    "h": "05:03",
+    "jogo": "Brentford x City",
+    "odd": 1.93,
+    "unidades": 1,
+    "desde": 1788494031976
+   },
+   "iniciadoEm": 1788494031976
+  },
   "cooldown": {
    "euro": 1787763035240,
    "super": 1788490666075,
@@ -7782,10 +7812,10 @@
    "2026-09-04": 0.9
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.1",
+   "tipo": "time",
+   "chave": "Burnley",
    "n": 10,
-   "start": 1
+   "start": 3
   },
   "_obs": {}
  }
