@@ -446,13 +446,19 @@
   }
  },
  "o25": {
-  "saldo": -155.6,
-  "ciclos": 1371,
-  "greens": 857,
+  "saldo": -154.7,
+  "ciclos": 1372,
+  "greens": 858,
   "redsCiclo": 210,
   "aborts": 0,
   "descartes": 304,
   "historico": [
+   {
+    "quando": "2026-09-04T03:20:40.276Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Newcastle x Wolverhampton @1.95 (tiro 2) · gatilho: time Newcastle"
+   },
    {
     "quando": "2026-09-04T02:55:41.371Z",
     "resultado": "GREEN",
@@ -4046,59 +4052,16 @@
     "resultado": "GREEN",
     "unidades": 2.6,
     "detalhe": "euro · Hungria x Áustria @2.4 (tiro 3) · gatilho: seq RRRR"
-   },
-   {
-    "quando": "2026-08-01T04:32:58.560Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "premier · ciclo perdido (3 tiros) · gatilho: time Chelsea"
    }
   ],
   "consumidas": {
-   "euro": 1788490541076
+   "euro": 1788490541076,
+   "premier": 1788492040072
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "04:15",
-     "jogo": "United x Aston",
-     "odd": 2.35
-    },
-    {
-     "h": "04:18",
-     "jogo": "Newcastle x Wolverhampton",
-     "odd": 1.95
-    },
-    {
-     "h": "04:21",
-     "jogo": "Leeds x Tottenham",
-     "odd": 2.75
-    }
-   ],
-   "gatilho": "time Newcastle",
-   "alvo": {
-    "h": "04:18",
-    "jogo": "Newcastle x Wolverhampton",
-    "odd": 1.95,
-    "unidades": 2,
-    "desde": 1788491854972
-   },
-   "iniciadoEm": 1788491502770,
-   "tiros": [
-    {
-     "h": "04:15",
-     "jogo": "United x Aston",
-     "odd": 2.35,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787764831340,
-   "premier": 1788313581725,
+   "premier": 1788492040072,
    "euro": 1788490541076,
    "super": 1788310994933
   },
@@ -4143,7 +4106,8 @@
    "2026-08-24": 8.1,
    "2026-08-26": 0.3,
    "2026-09-01": 2.7,
-   "2026-09-03": 1.2
+   "2026-09-03": 1.2,
+   "2026-09-04": 0.9
   },
   "_gatilhoAtual": {
    "tipo": "time",
