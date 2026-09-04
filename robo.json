@@ -7728,7 +7728,37 @@
    "premier": 1788490058289,
    "super": 1788490666075
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:04",
+     "jogo": "Brasil x México",
+     "odd": 1.95
+    },
+    {
+     "h": "04:07",
+     "jogo": "Irã x Nova Zelândia",
+     "odd": 2.1
+    },
+    {
+     "h": "04:10",
+     "jogo": "Costa do Marfim x Turquia",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "odd 2.1",
+   "alvo": {
+    "h": "04:04",
+    "jogo": "Brasil x México",
+    "odd": 1.95,
+    "unidades": 1,
+    "desde": 1788490841376
+   },
+   "iniciadoEm": 1788490841376
+  },
   "cooldown": {
    "euro": 1787763035240,
    "super": 1788490666075,
@@ -7778,8 +7808,8 @@
    "2026-09-03": 2.2
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Lima",
+   "tipo": "odd",
+   "chave": "2.1",
    "n": 10,
    "start": 2
   },
