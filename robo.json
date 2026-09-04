@@ -375,7 +375,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:44",
+     "jogo": "Eslováquia x Alemanha",
+     "odd": 4.2
+    },
+    {
+     "h": "03:47",
+     "jogo": "Eslovênia x Ucrânia",
+     "odd": 5.5
+    },
+    {
+     "h": "03:50",
+     "jogo": "Geórgia x Polônia",
+     "odd": 5.5
+    }
+   ],
+   "gatilho": "time Ucrânia",
+   "alvo": {
+    "h": "03:44",
+    "jogo": "Eslováquia x Alemanha",
+    "odd": 4.2,
+    "unidades": 1,
+    "desde": 1788489386273
+   },
+   "iniciadoEm": 1788489386273
+  },
   "cooldown": {
    "copa": 1786370517941,
    "premier": 1788311683528,
@@ -409,16 +439,12 @@
    "2026-09-03": 0
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "4.33",
-   "n": 8,
+   "tipo": "time",
+   "chave": "Ucrânia",
+   "n": 10,
    "start": 2
   },
   "_obs": {
-   "euro": {
-    "desde": 1788489384572,
-    "gatilho": "time Ucrânia"
-   },
    "super": {
     "desde": 1787186969067,
     "gatilho": "placar 1-0 / 0-1"
@@ -4039,7 +4065,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:44",
+     "jogo": "Eslováquia x Alemanha",
+     "odd": 2.2
+    },
+    {
+     "h": "03:47",
+     "jogo": "Eslovênia x Ucrânia",
+     "odd": 2.62
+    },
+    {
+     "h": "03:50",
+     "jogo": "Geórgia x Polônia",
+     "odd": 2.55
+    }
+   ],
+   "gatilho": "time Ucrânia",
+   "alvo": {
+    "h": "03:44",
+    "jogo": "Eslováquia x Alemanha",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1788489384582
+   },
+   "iniciadoEm": 1788489384582
+  },
   "cooldown": {
    "copa": 1787764831340,
    "premier": 1788313581725,
@@ -4089,9 +4145,9 @@
    "2026-09-01": 2.7
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.2",
-   "n": 8,
+   "tipo": "time",
+   "chave": "Ucrânia",
+   "n": 10,
    "start": 2
   },
   "_obs": {}
@@ -7706,7 +7762,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "premier",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:45",
+     "jogo": "Aston x Leeds",
+     "odd": 2.2
+    },
+    {
+     "h": "03:48",
+     "jogo": "Palace x Chelsea",
+     "odd": 1.93
+    },
+    {
+     "h": "03:51",
+     "jogo": "West Ham x Wolverhampton",
+     "odd": 2
+    }
+   ],
+   "gatilho": "seq RRGR",
+   "alvo": {
+    "h": "03:45",
+    "jogo": "Aston x Leeds",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1788489699171
+   },
+   "iniciadoEm": 1788489699171
+  },
   "cooldown": {
    "euro": 1787763035240,
    "super": 1788312312035,
@@ -7755,9 +7841,9 @@
    "2026-09-01": 1
   },
   "_gatilhoAtual": {
-   "tipo": "placar",
-   "chave": "goleada (3+)",
-   "n": 11,
+   "tipo": "seq",
+   "chave": "RRGR",
+   "n": 9,
    "start": 1
   },
   "_obs": {}
