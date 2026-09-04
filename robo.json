@@ -401,8 +401,8 @@
   "consumidas": {},
   "ciclo": {
    "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "06:02",
@@ -422,13 +422,21 @@
    ],
    "gatilho": "time Eslováquia",
    "alvo": {
-    "h": "06:02",
-    "jogo": "Países Baixos x Turquia",
-    "odd": 4.5,
-    "unidades": 1,
-    "desde": 1788497979680
+    "h": "06:05",
+    "jogo": "Eslováquia x Áustria",
+    "odd": 4.75,
+    "unidades": 2,
+    "desde": 1788498399680
    },
-   "iniciadoEm": 1788497979680
+   "iniciadoEm": 1788497979680,
+   "tiros": [
+    {
+     "h": "06:02",
+     "jogo": "Países Baixos x Turquia",
+     "odd": 4.5,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1786370517941,
@@ -7875,10 +7883,10 @@
    "2026-09-04": 2.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.1",
-   "n": 12,
-   "start": 3
+   "tipo": "time",
+   "chave": "Watford",
+   "n": 11,
+   "start": 1
   },
   "_obs": {}
  }
