@@ -4141,18 +4141,24 @@
    "tipo": "time",
    "chave": "Newcastle",
    "n": 8,
-   "start": 2
+   "start": 1
   },
   "_obs": {}
  },
  "ambas": {
   "saldo": -145,
-  "ciclos": 1393,
+  "ciclos": 1394,
   "greens": 949,
   "redsCiclo": 157,
   "aborts": 0,
-  "descartes": 287,
+  "descartes": 288,
   "historico": [
+   {
+    "quando": "2026-09-04T03:16:39.974Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-09-04T02:57:46.374Z",
     "resultado": "GREEN",
@@ -7746,12 +7752,6 @@
     "resultado": "DESCARTADO",
     "unidades": 0,
     "detalhe": "copa · alvo sem fechamento em 15min antes da 1a aposta"
-   },
-   {
-    "quando": "2026-07-31T20:41:27.521Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "euro · Itália x Alemanha @1.93 (tiro 1) · gatilho: odd 1.93"
    }
   ],
   "consumidas": {
@@ -7835,7 +7835,8 @@
    "2026-08-24": -1.3,
    "2026-08-26": -2.2,
    "2026-09-01": 1,
-   "2026-09-03": 2.2
+   "2026-09-03": 2.2,
+   "2026-09-04": 0
   },
   "_gatilhoAtual": {
    "tipo": "odd",
