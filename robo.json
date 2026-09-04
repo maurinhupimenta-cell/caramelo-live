@@ -399,7 +399,37 @@
    }
   ],
   "consumidas": {},
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:02",
+     "jogo": "Países Baixos x Turquia",
+     "odd": 4.5
+    },
+    {
+     "h": "06:05",
+     "jogo": "Eslováquia x Áustria",
+     "odd": 4.75
+    },
+    {
+     "h": "06:08",
+     "jogo": "Dinamarca x Suíça",
+     "odd": 4.5
+    }
+   ],
+   "gatilho": "time Eslováquia",
+   "alvo": {
+    "h": "06:02",
+    "jogo": "Países Baixos x Turquia",
+    "odd": 4.5,
+    "unidades": 1,
+    "desde": 1788497979680
+   },
+   "iniciadoEm": 1788497979680
+  },
   "cooldown": {
    "copa": 1786370517941,
    "premier": 1788311683528,
@@ -436,7 +466,7 @@
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Eslováquia",
-   "n": 9,
+   "n": 12,
    "start": 1
   },
   "_obs": {
@@ -4060,11 +4090,40 @@
    }
   ],
   "consumidas": {
-   "euro": 1788494352074,
    "premier": 1788496434773,
    "super": 1788497924673
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "euro",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:02",
+     "jogo": "Países Baixos x Turquia",
+     "odd": 2.3
+    },
+    {
+     "h": "06:05",
+     "jogo": "Eslováquia x Áustria",
+     "odd": 2.3
+    },
+    {
+     "h": "06:08",
+     "jogo": "Dinamarca x Suíça",
+     "odd": 2.25
+    }
+   ],
+   "gatilho": "time Eslováquia",
+   "alvo": {
+    "h": "06:02",
+    "jogo": "Países Baixos x Turquia",
+    "odd": 2.3,
+    "unidades": 1,
+    "desde": 1788497980171
+   },
+   "iniciadoEm": 1788497980171
+  },
   "cooldown": {
    "copa": 1787764831340,
    "premier": 1788496434773,
@@ -4117,7 +4176,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Montevideo",
+   "chave": "Eslováquia",
    "n": 12,
    "start": 1
   },
@@ -7736,7 +7795,37 @@
    "premier": 1788494738572,
    "super": 1788494800181
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "copa",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "06:13",
+     "jogo": "Paraguai x Austrália",
+     "odd": 2.02
+    },
+    {
+     "h": "06:16",
+     "jogo": "África do Sul x Suíça",
+     "odd": 2.1
+    },
+    {
+     "h": "06:19",
+     "jogo": "Portugal x Bélgica",
+     "odd": 1.93
+    }
+   ],
+   "gatilho": "odd 2.1",
+   "alvo": {
+    "h": "06:13",
+    "jogo": "Paraguai x Austrália",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1788498282274
+   },
+   "iniciadoEm": 1788498282274
+  },
   "cooldown": {
    "euro": 1787763035240,
    "super": 1788494800181,
@@ -7787,10 +7876,10 @@
    "2026-09-04": 2.8
   },
   "_gatilhoAtual": {
-   "tipo": "time",
-   "chave": "Montevideo",
-   "n": 10,
-   "start": 2
+   "tipo": "odd",
+   "chave": "2.1",
+   "n": 12,
+   "start": 3
   },
   "_obs": {}
  }
