@@ -4067,8 +4067,8 @@
   },
   "ciclo": {
    "liga": "super",
-   "degrau": 0,
-   "apostado": 0,
+   "degrau": 1,
+   "apostado": 1,
    "plano": [
     {
      "h": "05:52",
@@ -4088,13 +4088,21 @@
    ],
    "gatilho": "time Montevideo",
    "alvo": {
-    "h": "05:52",
-    "jogo": "Rio de Janeiro x Agua Branca",
-    "odd": 2.15,
-    "unidades": 1,
-    "desde": 1788497030573
+    "h": "05:55",
+    "jogo": "Montevideo x Guayaquil",
+    "odd": 2.05,
+    "unidades": 2,
+    "desde": 1788497923177
    },
-   "iniciadoEm": 1788497030573
+   "iniciadoEm": 1788497030573,
+   "tiros": [
+    {
+     "h": "05:52",
+     "jogo": "Rio de Janeiro x Agua Branca",
+     "odd": 2.15,
+     "unidades": 1
+    }
+   ]
   },
   "cooldown": {
    "copa": 1787764831340,
@@ -4149,8 +4157,8 @@
   "_gatilhoAtual": {
    "tipo": "time",
    "chave": "Montevideo",
-   "n": 11,
-   "start": 3
+   "n": 12,
+   "start": 1
   },
   "_obs": {}
  },
