@@ -459,13 +459,19 @@
   }
  },
  "o25": {
-  "saldo": -147.8,
-  "ciclos": 1377,
-  "greens": 863,
+  "saldo": -146.1,
+  "ciclos": 1378,
+  "greens": 864,
   "redsCiclo": 210,
   "aborts": 0,
   "descartes": 304,
   "historico": [
+   {
+    "quando": "2026-09-04T05:44:38.071Z",
+    "resultado": "GREEN",
+    "unidades": 1.7,
+    "detalhe": "premier · Newcastle x West Ham @2.35 (tiro 2) · gatilho: time Newcastle"
+   },
    {
     "quando": "2026-09-04T05:09:44.477Z",
     "resultado": "GREEN",
@@ -4059,60 +4065,17 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · Palace x Brighton @2.05 (tiro 1) · gatilho: odd 2.05"
-   },
-   {
-    "quando": "2026-08-01T07:20:13.563Z",
-    "resultado": "RED_CICLO",
-    "unidades": -7,
-    "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: coluna :14"
    }
   ],
   "consumidas": {
    "super": 1788497924673,
-   "euro": 1788498584269
+   "euro": 1788498584269,
+   "premier": 1788500677871
   },
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 1,
-   "apostado": 1,
-   "plano": [
-    {
-     "h": "06:39",
-     "jogo": "Palace x Burnley",
-     "odd": 2.1
-    },
-    {
-     "h": "06:42",
-     "jogo": "Newcastle x West Ham",
-     "odd": 2.35
-    },
-    {
-     "h": "06:45",
-     "jogo": "Leicester x City",
-     "odd": 2.15
-    }
-   ],
-   "gatilho": "time Newcastle",
-   "alvo": {
-    "h": "06:42",
-    "jogo": "Newcastle x West Ham",
-    "odd": 2.35,
-    "unidades": 2,
-    "desde": 1788500496671
-   },
-   "iniciadoEm": 1788500080069,
-   "tiros": [
-    {
-     "h": "06:39",
-     "jogo": "Palace x Burnley",
-     "odd": 2.1,
-     "unidades": 1
-    }
-   ]
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787764831340,
-   "premier": 1788496434773,
+   "premier": 1788500677871,
    "euro": 1788498584269,
    "super": 1788497924673
   },
@@ -4158,7 +4121,7 @@
    "2026-08-26": 0.3,
    "2026-09-01": 2.7,
    "2026-09-03": 1.2,
-   "2026-09-04": 7.8
+   "2026-09-04": 9.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
