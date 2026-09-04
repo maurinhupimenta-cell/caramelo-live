@@ -1,12 +1,18 @@
 {
  "o35": {
-  "saldo": -108,
-  "ciclos": 220,
-  "greens": 76,
+  "saldo": -102.5,
+  "ciclos": 221,
+  "greens": 77,
   "redsCiclo": 88,
   "aborts": 0,
   "descartes": 56,
   "historico": [
+   {
+    "quando": "2026-09-04T03:59:12.070Z",
+    "resultado": "GREEN",
+    "unidades": 5.5,
+    "detalhe": "euro · Albânia x Turquia @6.5 (tiro 1) · gatilho: time Países Baixos"
+   },
    {
     "quando": "2026-09-04T02:55:41.069Z",
     "resultado": "GREEN",
@@ -392,42 +398,14 @@
     "detalhe": "euro · ciclo perdido (3 tiros) · gatilho: placar empate 2-2"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:56",
-     "jogo": "Albânia x Turquia",
-     "odd": 6.5
-    },
-    {
-     "h": "04:59",
-     "jogo": "França x Países Baixos",
-     "odd": 3.6
-    },
-    {
-     "h": "05:02",
-     "jogo": "Polônia x Albânia",
-     "odd": 6.5
-    }
-   ],
-   "gatilho": "time Países Baixos",
-   "alvo": {
-    "h": "04:56",
-    "jogo": "Albânia x Turquia",
-    "odd": 6.5,
-    "unidades": 1,
-    "desde": 1788494196777
-   },
-   "iniciadoEm": 1788494196777
+  "consumidas": {
+   "euro": 1788494351870
   },
+  "ciclo": null,
   "cooldown": {
    "copa": 1786370517941,
    "premier": 1788311683528,
-   "euro": 1788490540779,
+   "euro": 1788494351870,
    "super": 1786764145328
   },
   "dias": {
@@ -454,11 +432,12 @@
    "2026-08-18": 13,
    "2026-08-19": 5,
    "2026-09-01": 3.8,
-   "2026-09-03": 3.2
+   "2026-09-03": 3.2,
+   "2026-09-04": 5.5
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Países Baixos",
+   "chave": "Eslováquia",
    "n": 9,
    "start": 1
   },
@@ -474,13 +453,19 @@
   }
  },
  "o25": {
-  "saldo": -153.8,
-  "ciclos": 1373,
-  "greens": 859,
+  "saldo": -151.9,
+  "ciclos": 1374,
+  "greens": 860,
   "redsCiclo": 210,
   "aborts": 0,
   "descartes": 304,
   "historico": [
+   {
+    "quando": "2026-09-04T03:59:12.276Z",
+    "resultado": "GREEN",
+    "unidades": 1.9,
+    "detalhe": "euro · Albânia x Turquia @2.87 (tiro 1) · gatilho: time Países Baixos"
+   },
    {
     "quando": "2026-09-04T03:43:41.877Z",
     "resultado": "GREEN",
@@ -4074,53 +4059,18 @@
     "resultado": "GREEN_OBS",
     "unidades": 0,
     "detalhe": "premier · green OBSERVADO no papel (gatilho seq GRGRR) — liga REARMADA"
-   },
-   {
-    "quando": "2026-08-01T05:28:29.461Z",
-    "resultado": "GREEN",
-    "unidades": 1.9,
-    "detalhe": "super · Porto Alegre x Guayaquil @2.45 (tiro 2) · gatilho: time Guayaquil"
    }
   ],
   "consumidas": {
    "premier": 1788492040072,
-   "super": 1788493421677
+   "super": 1788493421677,
+   "euro": 1788494352074
   },
-  "ciclo": {
-   "liga": "euro",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "04:56",
-     "jogo": "Albânia x Turquia",
-     "odd": 2.87
-    },
-    {
-     "h": "04:59",
-     "jogo": "França x Países Baixos",
-     "odd": 1.98
-    },
-    {
-     "h": "05:02",
-     "jogo": "Polônia x Albânia",
-     "odd": 2.87
-    }
-   ],
-   "gatilho": "time Países Baixos",
-   "alvo": {
-    "h": "04:56",
-    "jogo": "Albânia x Turquia",
-    "odd": 2.87,
-    "unidades": 1,
-    "desde": 1788494197169
-   },
-   "iniciadoEm": 1788494197169
-  },
+  "ciclo": null,
   "cooldown": {
    "copa": 1787764831340,
    "premier": 1788492040072,
-   "euro": 1788490541076,
+   "euro": 1788494352074,
    "super": 1788493421677
   },
   "dias": {
@@ -4165,24 +4115,30 @@
    "2026-08-26": 0.3,
    "2026-09-01": 2.7,
    "2026-09-03": 1.2,
-   "2026-09-04": 1.8
+   "2026-09-04": 3.7
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Países Baixos",
+   "chave": "Eslováquia",
    "n": 9,
    "start": 1
   },
   "_obs": {}
  },
  "ambas": {
-  "saldo": -144.1,
-  "ciclos": 1396,
-  "greens": 950,
+  "saldo": -143.2,
+  "ciclos": 1397,
+  "greens": 951,
   "redsCiclo": 157,
   "aborts": 0,
   "descartes": 289,
   "historico": [
+   {
+    "quando": "2026-09-04T04:05:38.772Z",
+    "resultado": "GREEN",
+    "unidades": 0.9,
+    "detalhe": "premier · Brentford x City @1.93 (tiro 1) · gatilho: time Burnley"
+   },
    {
     "quando": "2026-09-04T03:19:43.075Z",
     "resultado": "GREEN",
@@ -7776,52 +7732,47 @@
     "resultado": "GREEN",
     "unidades": 1.4,
     "detalhe": "euro · Croácia x Eslovênia @2.2 (tiro 2) · gatilho: time Eslovênia"
-   },
-   {
-    "quando": "2026-07-31T23:05:26.260Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "euro · Áustria x Alemanha @1.93 (tiro 2) · gatilho: odd 1.93"
    }
   ],
   "consumidas": {
-   "copa": 1788491982875
+   "copa": 1788491982875,
+   "premier": 1788494738572
   },
   "ciclo": {
-   "liga": "premier",
+   "liga": "super",
    "degrau": 0,
    "apostado": 0,
    "plano": [
     {
-     "h": "05:03",
-     "jogo": "Brentford x City",
-     "odd": 1.93
+     "h": "05:04",
+     "jogo": "Guayaquil x Santos",
+     "odd": 1.95
     },
     {
-     "h": "05:06",
-     "jogo": "Burnley x United",
-     "odd": 1.9
+     "h": "05:07",
+     "jogo": "Lima x Penarol",
+     "odd": 2
     },
     {
-     "h": "05:09",
-     "jogo": "Leicester x Southampton",
+     "h": "05:10",
+     "jogo": "Itaquera x La Boca",
      "odd": 2.05
     }
    ],
-   "gatilho": "time Burnley",
+   "gatilho": "time Lima",
    "alvo": {
-    "h": "05:03",
-    "jogo": "Brentford x City",
-    "odd": 1.93,
+    "h": "05:04",
+    "jogo": "Guayaquil x Santos",
+    "odd": 1.95,
     "unidades": 1,
-    "desde": 1788494031976
+    "desde": 1788494739672
    },
-   "iniciadoEm": 1788494031976
+   "iniciadoEm": 1788494739672
   },
   "cooldown": {
    "euro": 1787763035240,
    "super": 1788490666075,
-   "premier": 1788490058289,
+   "premier": 1788494738572,
    "copa": 1788491982875
   },
   "dias": {
@@ -7865,13 +7816,13 @@
    "2026-08-26": -2.2,
    "2026-09-01": 1,
    "2026-09-03": 2.2,
-   "2026-09-04": 0.9
+   "2026-09-04": 1.8
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Burnley",
-   "n": 10,
-   "start": 2
+   "chave": "Lima",
+   "n": 12,
+   "start": 1
   },
   "_obs": {}
  }
