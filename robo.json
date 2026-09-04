@@ -4132,13 +4132,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -142.2,
-  "ciclos": 1398,
-  "greens": 952,
+  "saldo": -141.2,
+  "ciclos": 1399,
+  "greens": 953,
   "redsCiclo": 157,
   "aborts": 0,
   "descartes": 289,
   "historico": [
+   {
+    "quando": "2026-09-04T05:16:41.170Z",
+    "resultado": "GREEN",
+    "unidades": 1,
+    "detalhe": "copa · Paraguai x Austrália @2.02 (tiro 1) · gatilho: odd 2.1"
+   },
    {
     "quando": "2026-09-04T04:06:40.468Z",
     "resultado": "GREEN",
@@ -7732,51 +7738,17 @@
     "resultado": "GREEN",
     "unidades": 1.5,
     "detalhe": "euro · Áustria x Eslovênia @2.25 (tiro 2) · gatilho: time Eslovênia"
-   },
-   {
-    "quando": "2026-08-01T01:56:46.260Z",
-    "resultado": "GREEN",
-    "unidades": 0.9,
-    "detalhe": "premier · Brighton x Chelsea @1.85 (tiro 1) · gatilho: odd 1.95"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "copa",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "06:13",
-     "jogo": "Paraguai x Austrália",
-     "odd": 2.02
-    },
-    {
-     "h": "06:16",
-     "jogo": "África do Sul x Suíça",
-     "odd": 2.1
-    },
-    {
-     "h": "06:19",
-     "jogo": "Portugal x Bélgica",
-     "odd": 1.93
-    }
-   ],
-   "gatilho": "odd 2.1",
-   "alvo": {
-    "h": "06:13",
-    "jogo": "Paraguai x Austrália",
-    "odd": 2.02,
-    "unidades": 1,
-    "desde": 1788498282274
-   },
-   "iniciadoEm": 1788498282274
+  "consumidas": {
+   "copa": 1788499000882
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787763035240,
    "super": 1788494800181,
    "premier": 1788494738572,
-   "copa": 1788491982875
+   "copa": 1788499000882
   },
   "dias": {
    "2026-07-15": 2.2,
@@ -7819,12 +7791,12 @@
    "2026-08-26": -2.2,
    "2026-09-01": 1,
    "2026-09-03": 2.2,
-   "2026-09-04": 2.8
+   "2026-09-04": 3.8
   },
   "_gatilhoAtual": {
-   "tipo": "odd",
-   "chave": "2.1",
-   "n": 12,
+   "tipo": "time",
+   "chave": "Watford",
+   "n": 13,
    "start": 2
   },
   "_obs": {}
