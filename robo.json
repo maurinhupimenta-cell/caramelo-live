@@ -4153,13 +4153,19 @@
   "_obs": {}
  },
  "ambas": {
-  "saldo": -147.2,
-  "ciclos": 1391,
-  "greens": 947,
+  "saldo": -146,
+  "ciclos": 1392,
+  "greens": 948,
   "redsCiclo": 157,
   "aborts": 0,
   "descartes": 287,
   "historico": [
+   {
+    "quando": "2026-09-04T02:47:38.673Z",
+    "resultado": "GREEN",
+    "unidades": 1.2,
+    "detalhe": "premier · Aston x Leeds @2.2 (tiro 1) · gatilho: seq RRGR"
+   },
    {
     "quando": "2026-09-02T01:25:12.328Z",
     "resultado": "GREEN",
@@ -7753,50 +7759,16 @@
     "resultado": "GREEN",
     "unidades": 1,
     "detalhe": "premier · Watford x Aston @2.05 (tiro 1) · gatilho: odd 2.02"
-   },
-   {
-    "quando": "2026-07-31T20:26:27.305Z",
-    "resultado": "GREEN",
-    "unidades": 1.5,
-    "detalhe": "super · La Plata x Medellin @2.25 (tiro 2) · gatilho: odd 2.25"
    }
   ],
-  "consumidas": {},
-  "ciclo": {
-   "liga": "premier",
-   "degrau": 0,
-   "apostado": 0,
-   "plano": [
-    {
-     "h": "03:45",
-     "jogo": "Aston x Leeds",
-     "odd": 2.2
-    },
-    {
-     "h": "03:48",
-     "jogo": "Palace x Chelsea",
-     "odd": 1.93
-    },
-    {
-     "h": "03:51",
-     "jogo": "West Ham x Wolverhampton",
-     "odd": 2
-    }
-   ],
-   "gatilho": "seq RRGR",
-   "alvo": {
-    "h": "03:45",
-    "jogo": "Aston x Leeds",
-    "odd": 2.2,
-    "unidades": 1,
-    "desde": 1788489699171
-   },
-   "iniciadoEm": 1788489699171
+  "consumidas": {
+   "premier": 1788490058289
   },
+  "ciclo": null,
   "cooldown": {
    "euro": 1787763035240,
    "super": 1788312312035,
-   "premier": 1787760891341,
+   "premier": 1788490058289,
    "copa": 1787765131931
   },
   "dias": {
@@ -7838,13 +7810,14 @@
    "2026-08-21": 3,
    "2026-08-24": -1.3,
    "2026-08-26": -2.2,
-   "2026-09-01": 1
+   "2026-09-01": 1,
+   "2026-09-03": 1.2
   },
   "_gatilhoAtual": {
-   "tipo": "seq",
-   "chave": "RRGR",
-   "n": 9,
-   "start": 1
+   "tipo": "time",
+   "chave": "Lima",
+   "n": 10,
+   "start": 2
   },
   "_obs": {}
  }
