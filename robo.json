@@ -1,12 +1,24 @@
 {
  "o35": {
   "saldo": -111.2,
-  "ciclos": 217,
+  "ciclos": 219,
   "greens": 75,
   "redsCiclo": 88,
   "aborts": 0,
-  "descartes": 54,
+  "descartes": 56,
   "historico": [
+   {
+    "quando": "2026-09-04T02:51:41.169Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho time Ucrânia) — liga REARMADA"
+   },
+   {
+    "quando": "2026-09-04T02:51:39.578Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-09-04T02:36:24.574Z",
     "resultado": "GREEN_OBS",
@@ -402,9 +414,9 @@
     "jogo": "Eslováquia x Alemanha",
     "odd": 4.2,
     "unidades": 1,
-    "desde": 1788489386273
+    "desde": 1788490302477
    },
-   "iniciadoEm": 1788489386273
+   "iniciadoEm": 1788490302477
   },
   "cooldown": {
    "copa": 1786370517941,
@@ -457,12 +469,24 @@
  },
  "o25": {
   "saldo": -156.8,
-  "ciclos": 1368,
+  "ciclos": 1370,
   "greens": 856,
   "redsCiclo": 210,
   "aborts": 0,
-  "descartes": 302,
+  "descartes": 304,
   "historico": [
+   {
+    "quando": "2026-09-04T02:51:41.174Z",
+    "resultado": "GREEN_OBS",
+    "unidades": 0,
+    "detalhe": "euro · green OBSERVADO no papel (gatilho time Ucrânia) — liga REARMADA"
+   },
+   {
+    "quando": "2026-09-04T02:51:39.673Z",
+    "resultado": "DESCARTADO",
+    "unidades": 0,
+    "detalhe": "euro · alvo sem fechamento em 15min antes da 1a aposta"
+   },
    {
     "quando": "2026-09-02T01:46:21.926Z",
     "resultado": "GREEN",
@@ -4050,18 +4074,6 @@
     "resultado": "GREEN",
     "unidades": 1.1,
     "detalhe": "super · Guayaquil x Montevideo @2.07 (tiro 2) · gatilho: time Guayaquil"
-   },
-   {
-    "quando": "2026-08-01T03:48:25.857Z",
-    "resultado": "GREEN",
-    "unidades": 2.4,
-    "detalhe": "euro · Itália x Áustria @2.35 (tiro 3) · gatilho: seq RRRR"
-   },
-   {
-    "quando": "2026-08-01T03:17:47.758Z",
-    "resultado": "GREEN",
-    "unidades": 1,
-    "detalhe": "premier · Everton x Wolverhampton @2.02 (tiro 1) · gatilho: time Palace"
    }
   ],
   "consumidas": {},
@@ -4092,9 +4104,9 @@
     "jogo": "Eslováquia x Alemanha",
     "odd": 2.2,
     "unidades": 1,
-    "desde": 1788489384582
+    "desde": 1788490302775
    },
-   "iniciadoEm": 1788489384582
+   "iniciadoEm": 1788490302775
   },
   "cooldown": {
    "copa": 1787764831340,
@@ -4142,7 +4154,8 @@
    "2026-08-21": -2.5,
    "2026-08-24": 8.1,
    "2026-08-26": 0.3,
-   "2026-09-01": 2.7
+   "2026-09-01": 2.7,
+   "2026-09-03": 0
   },
   "_gatilhoAtual": {
    "tipo": "time",
@@ -7764,7 +7777,37 @@
   "consumidas": {
    "premier": 1788490058289
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "03:52",
+     "jogo": "Rio de Janeiro x La Boca",
+     "odd": 2.02
+    },
+    {
+     "h": "03:55",
+     "jogo": "Buenos Aires x Lima",
+     "odd": 1.9
+    },
+    {
+     "h": "03:58",
+     "jogo": "Medellin x Penarol",
+     "odd": 2.15
+    }
+   ],
+   "gatilho": "time Lima",
+   "alvo": {
+    "h": "03:52",
+    "jogo": "Rio de Janeiro x La Boca",
+    "odd": 2.02,
+    "unidades": 1,
+    "desde": 1788490060479
+   },
+   "iniciadoEm": 1788490060479
+  },
   "cooldown": {
    "euro": 1787763035240,
    "super": 1788312312035,
