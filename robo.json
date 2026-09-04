@@ -4058,7 +4058,37 @@
    "euro": 1788490541076,
    "premier": 1788492040072
   },
-  "ciclo": null,
+  "ciclo": {
+   "liga": "super",
+   "degrau": 0,
+   "apostado": 0,
+   "plano": [
+    {
+     "h": "04:31",
+     "jogo": "Montevideo x Avellaneda",
+     "odd": 2.2
+    },
+    {
+     "h": "04:34",
+     "jogo": "Rio de Janeiro x Guayaquil",
+     "odd": 2.15
+    },
+    {
+     "h": "04:37",
+     "jogo": "Buenos Aires x Sao Paulo",
+     "odd": 1.98
+    }
+   ],
+   "gatilho": "time Montevideo",
+   "alvo": {
+    "h": "04:31",
+    "jogo": "Montevideo x Avellaneda",
+    "odd": 2.2,
+    "unidades": 1,
+    "desde": 1788492458176
+   },
+   "iniciadoEm": 1788492458176
+  },
   "cooldown": {
    "copa": 1787764831340,
    "premier": 1788492040072,
@@ -4111,7 +4141,7 @@
   },
   "_gatilhoAtual": {
    "tipo": "time",
-   "chave": "Newcastle",
+   "chave": "Montevideo",
    "n": 8,
    "start": 1
   },
